@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aws-bg: #0F1923;
+  --color-aws-surface: #1B2836;
+  --color-aws-border: #2D3F50;
+  --color-aws-text: #FFFFFF;
+  --color-aws-text-muted: #8B9BAA;
+  --color-aws-orange: #FF9900;
+  --color-aws-blue: #00A1C9;
+  --color-aws-green: #1A9C3E;
+  --color-aws-red: #BF0816;
+}
