@@ -2,8 +2,8 @@
  * @param {{
  *   darkMode: boolean,
  *   onToggleDark: () => void,
- *   globeDesign: 'classic' | 'cobe',
- *   onGlobeDesignChange: (design: 'classic' | 'cobe') => void
+ *   globeDesign: 'classic' | 'cobe' | 'flat',
+ *   onGlobeDesignChange: (design: 'classic' | 'cobe' | 'flat') => void
  * }} props
  */
 export default function Header({ darkMode, onToggleDark, globeDesign, onGlobeDesignChange }) {
@@ -61,6 +61,14 @@ export default function Header({ darkMode, onToggleDark, globeDesign, onGlobeDes
           style={designButtonStyles('cobe')}
         >
           Sleek
+        </button>
+        <button
+          type="button"
+          onClick={() => onGlobeDesignChange('flat')}
+          className="px-3 py-1 text-xs font-semibold rounded-full transition-colors"
+          style={designButtonStyles('flat')}
+        >
+          Flat
         </button>
       </div>
 

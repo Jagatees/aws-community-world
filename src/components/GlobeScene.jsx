@@ -131,6 +131,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   const idleTimerRef = useRef(null);
   const autoRotateEnabledRef = useRef(true);
   const markerFocusLockedRef = useRef(false);
+  const isHoveringMarkerRef = useRef(false);
   const pauseRotationRef = useRef(cardOpen);
   const pointerStateRef = useRef({
     active: false,
@@ -212,8 +213,8 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       diffuse: themeRef.current.darkMode ? 1.1 : 1.35,
       mapSamples: 16000,
       mapBrightness: themeRef.current.darkMode ? 5 : 6,
-      mapBaseBrightness: themeRef.current.darkMode ? 0.05 : 0.25,
-      baseColor: themeRef.current.darkMode ? [0.06, 0.1, 0.16] : [0.8, 0.88, 0.94],
+      mapBaseBrightness: themeRef.current.darkMode ? 0.05 : 0.18,
+      baseColor: themeRef.current.darkMode ? [0.06, 0.1, 0.16] : [0.33, 0.42, 0.5],
       markerColor: themeRef.current.markerRgb,
       glowColor: themeRef.current.darkMode ? [0.29, 0.56, 0.85] : [0.67, 0.82, 0.94],
       scale: scaleRef.current,
@@ -247,8 +248,8 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         state.dark = theme.darkMode ? 1 : 0;
         state.diffuse = theme.darkMode ? 1.1 : 1.35;
         state.mapBrightness = theme.darkMode ? 5 : 6;
-        state.mapBaseBrightness = theme.darkMode ? 0.05 : 0.25;
-        state.baseColor = theme.darkMode ? [0.06, 0.1, 0.16] : [0.8, 0.88, 0.94];
+        state.mapBaseBrightness = theme.darkMode ? 0.05 : 0.18;
+        state.baseColor = theme.darkMode ? [0.06, 0.1, 0.16] : [0.33, 0.42, 0.5];
         state.scale = scaleRef.current;
         state.markerColor = theme.markerRgb;
         state.glowColor = theme.darkMode ? [0.29, 0.56, 0.85] : [0.67, 0.82, 0.94];
@@ -332,6 +333,14 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   }
 
   function handlePointerMove(event) {
+    const hitMarker = findHitMarker(event);
+    isHoveringMarkerRef.current = !!hitMarker;
+    event.currentTarget.style.cursor = pointerStateRef.current.active
+      ? 'grabbing'
+      : hitMarker
+        ? 'pointer'
+        : 'grab';
+
     if (!pointerStateRef.current.active || pointerStateRef.current.pointerId !== event.pointerId) return;
 
     const deltaX = event.clientX - pointerStateRef.current.startX;
@@ -377,10 +386,19 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
 
   function handlePointerUp(event) {
     finishPointerInteraction(event, { allowClick: true });
+    event.currentTarget.style.cursor = isHoveringMarkerRef.current ? 'pointer' : 'grab';
   }
 
   function handlePointerCancel(event) {
     finishPointerInteraction(event, { allowClick: false });
+    isHoveringMarkerRef.current = false;
+    event.currentTarget.style.cursor = 'grab';
+  }
+
+  function handlePointerLeave(event) {
+    if (pointerStateRef.current.active) return;
+    isHoveringMarkerRef.current = false;
+    event.currentTarget.style.cursor = 'grab';
   }
 
   return (
@@ -397,6 +415,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerCancel}
+        onPointerLeave={handlePointerLeave}
         onWheel={handleWheel}
       />
     </div>
