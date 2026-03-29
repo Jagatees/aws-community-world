@@ -9,7 +9,6 @@
 export default function TagFilter({ tags, selected, onChange, darkMode }) {
   if (!tags.length) return null;
 
-  const bg = darkMode ? '#0F1923' : '#e8f0f7';
   const inactiveColor = darkMode ? '#8B9BAA' : '#5a7a99';
   const inactiveBorder = darkMode ? '#2D3F50' : '#b0c8e0';
 
@@ -21,17 +20,14 @@ export default function TagFilter({ tags, selected, onChange, darkMode }) {
     cursor: 'pointer',
     whiteSpace: 'nowrap',
     transition: 'background 0.15s, color 0.15s',
+    flexShrink: 0,
   };
 
   const activeStyle = { ...btnBase, backgroundColor: '#FF9900', color: '#0F1923', border: '1px solid #FF9900' };
   const inactiveStyle = { ...btnBase, backgroundColor: 'transparent', color: inactiveColor, border: `1px solid ${inactiveBorder}` };
 
   return (
-    <div
-      className="flex gap-2 px-4 py-2 overflow-x-auto"
-      style={{ backgroundColor: bg, scrollbarWidth: 'none' }}
-      aria-label="Filter by tag"
-    >
+    <>
       <button style={selected === null ? activeStyle : inactiveStyle} onClick={() => onChange(null)}>
         All
       </button>
@@ -44,6 +40,6 @@ export default function TagFilter({ tags, selected, onChange, darkMode }) {
           {tag}
         </button>
       ))}
-    </div>
+    </>
   );
 }

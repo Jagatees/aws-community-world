@@ -37,7 +37,7 @@ function clusterMembers(members) {
  *   darkMode: boolean
  * }} props
  */
-export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode }) {
+export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget }) {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
   const { startLoop, stopLoop, onPointerEvent, pause, resume } = useAutoRotate(globeRef);
@@ -86,6 +86,15 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
+
+  // Fly to country when selected
+  useEffect(() => {
+    if (!globeRef.current || !flyToTarget) return;
+    globeRef.current.pointOfView(
+      { lat: flyToTarget.lat, lng: flyToTarget.lng, altitude: 1.5 },
+      1000
+    );
+  }, [flyToTarget]);
 
   // Update globe background when dark mode changes
   useEffect(() => {

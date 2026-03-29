@@ -103,8 +103,8 @@ function ClusterListView({ members, darkMode }) {
               />
             )}
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold truncate" style={{ color: nameColor }}>{m.name}</p>
-              <p className="text-xs truncate" style={{ color: mutedColor }}>{m.location}</p>
+              <p className="text-sm font-semibold" style={{ color: nameColor }}>{m.name}</p>
+              <p className="text-xs" style={{ color: mutedColor }}>{m.location}</p>
             </div>
             {(m.profileUrl || m.joinUrl) && (
               <a
@@ -158,7 +158,7 @@ export default function ProfileCard({ member, onClose, darkMode }) {
     >
       <div
         ref={cardRef}
-        className="relative p-5 w-72"
+        className="relative p-5 w-96"
         style={{ backgroundColor: cardBg, border: `1px solid ${cardBorder}`, borderRadius: '12px' }}
         role="dialog"
         aria-modal="true"
