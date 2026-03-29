@@ -9,12 +9,11 @@ const CATEGORY_LABELS = {
 };
 
 /**
- * Fallback avatar when image fails to load (Req 5.2 / error handling)
+ * Hide avatar entirely if it fails to load
  * @param {React.SyntheticEvent<HTMLImageElement>} e
  */
 function handleAvatarError(e) {
-  e.currentTarget.src =
-    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232D3F50'/%3E%3Ccircle cx='32' cy='26' r='12' fill='%238B9BAA'/%3E%3Cellipse cx='32' cy='54' rx='20' ry='14' fill='%238B9BAA'/%3E%3C/svg%3E";
+  e.currentTarget.style.display = 'none';
 }
 
 /**
@@ -24,14 +23,16 @@ function handleAvatarError(e) {
 function SingleMemberView({ member }) {
   return (
     <div className="flex flex-col items-center gap-3 pt-2">
-      {/* Avatar */}
-      <img
-        src={member.avatarUrl}
-        alt={member.name}
-        onError={handleAvatarError}
-        className="w-16 h-16 rounded-full object-cover border-2"
-        style={{ borderColor: '#FF9900' }}
-      />
+      {/* Avatar — only render if URL exists */}
+      {member.avatarUrl && (
+        <img
+          src={member.avatarUrl}
+          alt={member.name}
+          onError={handleAvatarError}
+          className="w-16 h-16 rounded-full object-cover border-2"
+          style={{ borderColor: '#FF9900' }}
+        />
+      )}
 
       {/* Name */}
       <h2 className="text-white text-lg font-bold text-center leading-tight">
