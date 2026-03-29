@@ -1,16 +1,35 @@
 /**
- * @param {{ darkMode: boolean, onToggleDark: () => void }} props
+ * @param {{
+ *   darkMode: boolean,
+ *   onToggleDark: () => void,
+ *   globeDesign: 'classic' | 'cobe',
+ *   onGlobeDesignChange: (design: 'classic' | 'cobe') => void
+ * }} props
  */
-export default function Header({ darkMode, onToggleDark }) {
-  const surface = darkMode ? '#1B2836' : '#ffffff';
-  const border = darkMode ? '#2D3F50' : '#d0dce8';
+export default function Header({ darkMode, onToggleDark, globeDesign, onGlobeDesignChange }) {
+  const surface = darkMode ? 'rgba(27, 40, 54, 0.7)' : 'rgba(255, 255, 255, 0.78)';
+  const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.95)';
   const text = darkMode ? '#FFFFFF' : '#0F1923';
   const muted = darkMode ? '#8B9BAA' : '#5a7a99';
+  const switchBg = darkMode ? 'rgba(10, 18, 28, 0.78)' : 'rgba(240, 247, 255, 0.9)';
+
+  function designButtonStyles(design) {
+    const active = globeDesign === design;
+    return {
+      backgroundColor: active ? '#FF9900' : 'transparent',
+      color: active ? '#0F1923' : muted,
+    };
+  }
 
   return (
     <header
       className="w-full px-4 py-2 flex items-center gap-3"
-      style={{ backgroundColor: surface, borderBottom: `1px solid ${border}` }}
+      style={{
+        backgroundColor: surface,
+        borderBottom: `1px solid ${border}`,
+        backdropFilter: 'blur(18px)',
+        WebkitBackdropFilter: 'blur(18px)',
+      }}
     >
       <span style={{ color: '#FF9900' }} className="font-bold text-lg tracking-tight">AWS</span>
       <span style={{ color: border }} className="text-lg select-none">|</span>
@@ -19,8 +38,31 @@ export default function Header({ darkMode, onToggleDark }) {
       <div className="flex-1" />
 
       <span className="text-xs hidden sm:block" style={{ color: muted }}>
-        Created by AWS Cloud Club @ SIT
+        AWS Cloud Club @ SIT created by Jagatees
       </span>
+
+      <div
+        className="flex items-center rounded-full p-1"
+        style={{ backgroundColor: switchBg, border: `1px solid ${border}` }}
+        aria-label="Globe design switcher"
+      >
+        <button
+          type="button"
+          onClick={() => onGlobeDesignChange('classic')}
+          className="px-3 py-1 text-xs font-semibold rounded-full transition-colors"
+          style={designButtonStyles('classic')}
+        >
+          Classic
+        </button>
+        <button
+          type="button"
+          onClick={() => onGlobeDesignChange('cobe')}
+          className="px-3 py-1 text-xs font-semibold rounded-full transition-colors"
+          style={designButtonStyles('cobe')}
+        >
+          Sleek
+        </button>
+      </div>
 
       {/* GitHub link */}
       <a

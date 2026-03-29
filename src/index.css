@@ -11,3 +11,68 @@
   --color-aws-green: #1A9C3E;
   --color-aws-red: #BF0816;
 }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #09131c;
+  font-family: "Segoe UI", "Inter", sans-serif;
+}
+
+.aws-shell-bg-dark {
+  background-image:
+    radial-gradient(circle at 14% 16%, rgba(255, 153, 0, 0.18), transparent 0 18%),
+    radial-gradient(circle at 84% 8%, rgba(0, 161, 201, 0.2), transparent 0 22%),
+    radial-gradient(circle at 78% 76%, rgba(26, 156, 62, 0.12), transparent 0 16%),
+    linear-gradient(145deg, #07111a 0%, #0d1823 38%, #132839 100%);
+}
+
+.aws-shell-bg-light {
+  background-image:
+    radial-gradient(circle at 10% 14%, rgba(255, 153, 0, 0.12), transparent 0 18%),
+    radial-gradient(circle at 86% 10%, rgba(0, 161, 201, 0.16), transparent 0 20%),
+    linear-gradient(155deg, #f7fbff 0%, #edf5fb 42%, #dfeef9 100%);
+}
+
+.aws-shell-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.7;
+  background-image:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.05) 0, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 56px),
+    linear-gradient(25deg, rgba(0, 161, 201, 0.08) 0, rgba(0, 161, 201, 0.08) 1px, transparent 1px, transparent 40px),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0 1px, transparent 1px 100%);
+  background-size: auto, auto, 24px 24px;
+  background-position: 0 0, 0 0, 0 0;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.55));
+}
+
+.aws-globe-bg-dark {
+  background-image:
+    radial-gradient(circle at 18% 20%, rgba(255, 153, 0, 0.18), transparent 0 18%),
+    radial-gradient(circle at 82% 18%, rgba(0, 161, 201, 0.2), transparent 0 22%),
+    radial-gradient(circle at 76% 78%, rgba(26, 156, 62, 0.1), transparent 0 18%),
+    linear-gradient(165deg, rgba(6, 12, 18, 0.98) 0%, rgba(10, 21, 31, 0.96) 48%, rgba(16, 33, 48, 0.96) 100%);
+}
+
+.aws-globe-bg-light {
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(255, 153, 0, 0.12), transparent 0 18%),
+    radial-gradient(circle at 84% 18%, rgba(0, 161, 201, 0.15), transparent 0 20%),
+    linear-gradient(165deg, rgba(245, 250, 255, 0.98) 0%, rgba(231, 242, 250, 0.96) 100%);
+}
+
+.aws-globe-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.55;
+  background-image:
+    linear-gradient(125deg, rgba(255, 255, 255, 0.06) 0, rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 46px),
+    linear-gradient(35deg, rgba(0, 161, 201, 0.09) 0, rgba(0, 161, 201, 0.09) 1px, transparent 1px, transparent 32px);
+  mask-image: radial-gradient(circle at center, black 38%, transparent 88%);
+}

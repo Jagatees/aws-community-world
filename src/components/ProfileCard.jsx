@@ -137,8 +137,8 @@ export default function ProfileCard({ member, onClose, darkMode }) {
   const cardRef = useRef(null);
   const isCluster = Array.isArray(member);
 
-  const cardBg = darkMode ? '#1B2836' : '#ffffff';
-  const cardBorder = darkMode ? '#2D3F50' : '#d0dce8';
+  const cardBg = darkMode ? 'rgba(27, 40, 54, 0.88)' : 'rgba(255, 255, 255, 0.94)';
+  const cardBorder = darkMode ? 'rgba(45, 63, 80, 0.8)' : 'rgba(208, 220, 232, 0.95)';
 
   // Close on outside click (Req 5.4)
   useEffect(() => {
@@ -159,7 +159,14 @@ export default function ProfileCard({ member, onClose, darkMode }) {
       <div
         ref={cardRef}
         className="relative p-5 w-96"
-        style={{ backgroundColor: cardBg, border: `1px solid ${cardBorder}`, borderRadius: '12px' }}
+        style={{
+          backgroundColor: cardBg,
+          border: `1px solid ${cardBorder}`,
+          borderRadius: '12px',
+          backdropFilter: 'blur(18px)',
+          WebkitBackdropFilter: 'blur(18px)',
+          boxShadow: darkMode ? '0 24px 60px rgba(0, 0, 0, 0.45)' : '0 24px 60px rgba(80, 112, 145, 0.18)',
+        }}
         role="dialog"
         aria-modal="true"
         aria-label={isCluster ? 'Cluster members' : (member.name ?? 'Member profile')}

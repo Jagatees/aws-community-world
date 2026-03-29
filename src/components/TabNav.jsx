@@ -21,12 +21,12 @@ const TABS = [
  * }} props
  */
 export default function TabNav({ activeCategory, onChange, darkMode, countries, selectedCountry, onCountryChange }) {
-  const surface = darkMode ? '#1B2836' : '#ffffff';
-  const border = darkMode ? '#2D3F50' : '#d0dce8';
-  const activeBg = darkMode ? '#243447' : '#f0f7ff';
+  const surface = darkMode ? 'rgba(27, 40, 54, 0.62)' : 'rgba(255, 255, 255, 0.72)';
+  const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.92)';
+  const activeBg = darkMode ? 'rgba(36, 52, 71, 0.88)' : 'rgba(240, 247, 255, 0.94)';
   const activeText = darkMode ? '#FFFFFF' : '#0F1923';
   const inactiveText = darkMode ? '#8B9BAA' : '#5a7a99';
-  const selectBg = darkMode ? '#0F1923' : '#f0f7ff';
+  const selectBg = darkMode ? 'rgba(10, 18, 28, 0.78)' : 'rgba(240, 247, 255, 0.95)';
 
   return (
     <nav
@@ -35,6 +35,8 @@ export default function TabNav({ activeCategory, onChange, darkMode, countries, 
       style={{
         backgroundColor: surface,
         borderBottom: `1px solid ${border}`,
+        backdropFilter: 'blur(18px)',
+        WebkitBackdropFilter: 'blur(18px)',
         display: 'flex',
         alignItems: 'center',
         overflowX: 'auto',

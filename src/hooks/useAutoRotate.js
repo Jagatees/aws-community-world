@@ -6,26 +6,27 @@ const ROTATION_SPEED = 0.15;
 export function useAutoRotate(globeRef) {
   const idleTimerRef = useRef(null);
   const isIdleRef = useRef(true);
-  const isPausedRef = useRef(false); // hard pause while card is open
+  const isPausedRef = useRef(false);
   const rafRef = useRef(null);
-
-  const rotate = useCallback(() => {
-    if (isIdleRef.current && !isPausedRef.current && globeRef.current) {
-      const pov = globeRef.current.pointOfView();
-      globeRef.current.pointOfView({
-        lat: pov.lat,
-        lng: pov.lng + ROTATION_SPEED,
-        altitude: pov.altitude,
-      });
-    }
-    rafRef.current = requestAnimationFrame(rotate);
-  }, [globeRef]);
 
   const startLoop = useCallback(() => {
     if (!rafRef.current) {
-      rafRef.current = requestAnimationFrame(rotate);
+      const tick = () => {
+        if (isIdleRef.current && !isPausedRef.current && globeRef.current) {
+          const pov = globeRef.current.pointOfView();
+          globeRef.current.pointOfView({
+            lat: pov.lat,
+            lng: pov.lng + ROTATION_SPEED,
+            altitude: pov.altitude,
+          });
+        }
+
+        rafRef.current = requestAnimationFrame(tick);
+      };
+
+      rafRef.current = requestAnimationFrame(tick);
     }
-  }, [rotate]);
+  }, [globeRef]);
 
   const stopLoop = useCallback(() => {
     if (rafRef.current) {

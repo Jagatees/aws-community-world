@@ -1,7 +1,8 @@
 import { useState, useCallback, useMemo } from 'react';
 import Header from './components/Header';
 import TabNav from './components/TabNav';
-import GlobeScene from './components/GlobeScene';
+import CobeGlobeScene from './components/GlobeScene';
+import ClassicGlobeScene from './components/ClassicGlobeScene';
 import ProfileCard from './components/ProfileCard';
 import TagFilter from './components/TagFilter';
 import { useCategory } from './hooks/useCategory';
@@ -12,8 +13,10 @@ export default function App() {
   const [selectedTag, setSelectedTag] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [darkMode, setDarkMode] = useState(true);
+  const [globeDesign, setGlobeDesign] = useState('cobe');
 
   const { error, members, loading } = useCategory(activeCategory);
+  const ActiveGlobeScene = globeDesign === 'classic' ? ClassicGlobeScene : CobeGlobeScene;
 
   const tags = useMemo(() => {
     const set = new Set(members.map((m) => m.tag).filter(Boolean));
@@ -77,14 +80,30 @@ export default function App() {
     setActiveCategory(category);
   }, []);
 
-  const bg = darkMode ? '#0F1923' : '#e8f0f7';
+  const filterBarBg = darkMode ? 'rgba(15, 25, 35, 0.55)' : 'rgba(255, 255, 255, 0.58)';
 
   return (
     <div
-      className="flex flex-col"
-      style={{ height: '100dvh', backgroundColor: bg, overflow: 'hidden' }}
+      className={`relative flex flex-col ${darkMode ? 'aws-shell-bg-dark' : 'aws-shell-bg-light'}`}
+      style={{ height: '100dvh', overflow: 'hidden' }}
     >
-      <Header darkMode={darkMode} onToggleDark={() => setDarkMode((d) => !d)} />
+      <div className="aws-shell-pattern" />
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: darkMode
+            ? 'linear-gradient(180deg, rgba(9, 17, 26, 0.08) 0%, rgba(9, 17, 26, 0.36) 100%)'
+            : 'linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(214, 229, 241, 0.22) 100%)',
+        }}
+      />
+
+      <div className="relative z-10 flex flex-col min-h-0 flex-1">
+      <Header
+        darkMode={darkMode}
+        onToggleDark={() => setDarkMode((d) => !d)}
+        globeDesign={globeDesign}
+        onGlobeDesignChange={setGlobeDesign}
+      />
       <TabNav
         activeCategory={activeCategory}
         onChange={handleCategoryChange}
@@ -97,7 +116,14 @@ export default function App() {
       {/* Filter bar — tag pills only */}
       <div
         className="flex items-center gap-2 px-4 py-2 overflow-x-auto"
-        style={{ backgroundColor: darkMode ? '#0F1923' : '#e8f0f7', scrollbarWidth: 'none', flexShrink: 0 }}
+        style={{
+          backgroundColor: filterBarBg,
+          backdropFilter: 'blur(18px)',
+          WebkitBackdropFilter: 'blur(18px)',
+          scrollbarWidth: 'none',
+          flexShrink: 0,
+          borderBottom: darkMode ? '1px solid rgba(45, 63, 80, 0.55)' : '1px solid rgba(208, 220, 232, 0.8)',
+        }}
       >
         <TagFilter tags={tags} selected={selectedTag} onChange={setSelectedTag} darkMode={darkMode} />
       </div>
@@ -113,7 +139,7 @@ export default function App() {
       )}
 
       <div className="flex-1 relative" style={{ minHeight: 0 }}>
-        <GlobeScene
+        <ActiveGlobeScene
           category={activeCategory}
           members={filteredMembers}
           onMarkerClick={handleMarkerClick}
@@ -135,6 +161,7 @@ export default function App() {
       {selectedMember && (
         <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
       )}
+      </div>
     </div>
   );
 }
