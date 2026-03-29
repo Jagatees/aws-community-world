@@ -13,7 +13,6 @@ export default function Header({ darkMode, onToggleDark }) {
       style={{ backgroundColor: surface, borderBottom: `1px solid ${border}` }}
     >
       {/* Logo + title */}
-      <img src="/favicon.png" alt="AWS Community Globe" className="w-7 h-7 rounded-full" />
       <span style={{ color: '#FF9900' }} className="font-bold text-lg tracking-tight">AWS</span>
       <span style={{ color: border }} className="text-lg select-none">|</span>
       <span style={{ color: text }} className="font-semibold text-base">Community Globe</span>
