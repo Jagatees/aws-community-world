@@ -6,30 +6,19 @@ import ProfileCard from './components/ProfileCard';
 import TagFilter from './components/TagFilter';
 import { useCategory } from './hooks/useCategory';
 
-/**
- * Root application component.
- * Manages active category and selected member state (Req 3.2, 5.1, 6.2).
- */
 export default function App() {
-  /** @type {[import('./types').CategoryKey, Function]} */
   const [activeCategory, setActiveCategory] = useState('heroes');
-
-  /** @type {[import('./types').Member | import('./types').Member[] | null, Function]} */
   const [selectedMember, setSelectedMember] = useState(null);
-
-  /** @type {[string | null, Function]} */
   const [selectedTag, setSelectedTag] = useState(null);
+  const [darkMode, setDarkMode] = useState(true);
 
-  // Surface data load errors from the active category (Req 6.2)
   const { error, members, loading } = useCategory(activeCategory);
 
-  // Derive unique tags from current category members
   const tags = useMemo(() => {
     const set = new Set(members.map((m) => m.tag).filter(Boolean));
     return [...set].sort();
   }, [members]);
 
-  // Apply tag filter, and drop members with no real coordinates (lat/lng 0,0)
   const filteredMembers = useMemo(() => {
     return members.filter((m) => {
       if (m.lat === 0 && m.lng === 0) return false;
@@ -54,16 +43,17 @@ export default function App() {
     setActiveCategory(category);
   }, []);
 
+  const bg = darkMode ? '#0F1923' : '#e8f0f7';
+
   return (
     <div
       className="flex flex-col"
-      style={{ height: '100dvh', backgroundColor: '#0F1923', overflow: 'hidden' }}
+      style={{ height: '100dvh', backgroundColor: bg, overflow: 'hidden' }}
     >
-      <Header />
-      <TabNav activeCategory={activeCategory} onChange={handleCategoryChange} />
-      <TagFilter tags={tags} selected={selectedTag} onChange={setSelectedTag} />
+      <Header darkMode={darkMode} onToggleDark={() => setDarkMode((d) => !d)} />
+      <TabNav activeCategory={activeCategory} onChange={handleCategoryChange} darkMode={darkMode} />
+      <TagFilter tags={tags} selected={selectedTag} onChange={setSelectedTag} darkMode={darkMode} />
 
-      {/* Error banner (Req 6.2) */}
       {error && (
         <div
           role="alert"
@@ -74,12 +64,12 @@ export default function App() {
         </div>
       )}
 
-      {/* Globe fills remaining space */}
       <div className="flex-1 relative" style={{ minHeight: 0 }}>
         <GlobeScene
           category={activeCategory}
           members={filteredMembers}
           onMarkerClick={handleMarkerClick}
+          cardOpen={!!selectedMember}
         />
         {isEmpty && (
           <div
@@ -92,9 +82,8 @@ export default function App() {
         )}
       </div>
 
-      {/* Profile card overlay (Req 5.1) */}
       {selectedMember && (
-        <ProfileCard member={selectedMember} onClose={handleClose} />
+        <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
       )}
     </div>
   );

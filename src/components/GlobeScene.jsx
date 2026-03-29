@@ -2,7 +2,6 @@ import { useEffect, useRef, useCallback } from 'react';
 import Globe from 'globe.gl';
 import { useAutoRotate } from '../hooks/useAutoRotate';
 
-/** Per-category marker colors (Req 4.2) */
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
   'community-builders': '#1A9C3E',
@@ -10,18 +9,10 @@ const CATEGORY_COLORS = {
   'cloud-clubs': '#BF0816',
 };
 
-const CLUSTER_TOLERANCE = 0.5; // degrees (Req 4.4)
+const CLUSTER_TOLERANCE = 0.5;
 
-/**
- * Groups members that are within CLUSTER_TOLERANCE degrees of each other.
- * Returns an array of cluster objects: { lat, lng, members[] }
- *
- * @param {import('../types.js').Member[]} members
- * @returns {{ lat: number, lng: number, members: import('../types.js').Member[] }[]}
- */
 function clusterMembers(members) {
   const clusters = [];
-
   for (const member of members) {
     const existing = clusters.find(
       (c) =>
@@ -34,7 +25,6 @@ function clusterMembers(members) {
       clusters.push({ lat: member.lat, lng: member.lng, members: [member] });
     }
   }
-
   return clusters;
 }
 
@@ -42,20 +32,26 @@ function clusterMembers(members) {
  * @param {{
  *   category: import('../types.js').CategoryKey,
  *   members: import('../types.js').Member[],
- *   onMarkerClick: (member: import('../types.js').Member | import('../types.js').Member[]) => void
+ *   onMarkerClick: (member: import('../types.js').Member | import('../types.js').Member[]) => void,
+ *   cardOpen: boolean
  * }} props
  */
-export default function GlobeScene({ category, members, onMarkerClick }) {
+export default function GlobeScene({ category, members, onMarkerClick, cardOpen }) {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
-  const { startLoop, stopLoop, onPointerEvent } = useAutoRotate(globeRef);
+  const { startLoop, stopLoop, onPointerEvent, pause, resume } = useAutoRotate(globeRef);
 
-  // Initialize globe once on mount (Req 1.1, 7.1)
+  // Pause rotation while card is open
+  useEffect(() => {
+    if (cardOpen) pause();
+    else resume();
+  }, [cardOpen, pause, resume]);
+
+  // Initialize globe once
   useEffect(() => {
     if (!containerRef.current) return;
 
     const globe = Globe()(containerRef.current);
-
     globe
       .backgroundColor('#0F1923')
       .showAtmosphere(true)
@@ -63,10 +59,7 @@ export default function GlobeScene({ category, members, onMarkerClick }) {
       .atmosphereAltitude(0.15)
       .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
       .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
-      .showGraticules(false);
-
-    // Use dot-matrix tiles via built-in dotted land
-    globe
+      .showGraticules(false)
       .pointOfView({ lat: 20, lng: 0, altitude: 2.5 });
 
     globeRef.current = globe;
@@ -74,18 +67,14 @@ export default function GlobeScene({ category, members, onMarkerClick }) {
 
     return () => {
       stopLoop();
-      // globe.gl doesn't expose a destroy method; clear the container
-      if (containerRef.current) {
-        containerRef.current.innerHTML = '';
-      }
+      if (containerRef.current) containerRef.current.innerHTML = '';
       globeRef.current = null;
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Resize globe when container resizes
+  // Resize observer
   useEffect(() => {
     if (!globeRef.current || !containerRef.current) return;
-
     const observer = new ResizeObserver(() => {
       if (globeRef.current && containerRef.current) {
         globeRef.current
@@ -93,15 +82,13 @@ export default function GlobeScene({ category, members, onMarkerClick }) {
           .height(containerRef.current.clientHeight);
       }
     });
-
     observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
 
-  // Update markers when members or category changes (Req 4.1, 4.2, 4.3, 4.4, 5.1)
+  // Update markers
   useEffect(() => {
     if (!globeRef.current) return;
-
     const clusters = clusterMembers(members);
     const color = CATEGORY_COLORS[category] ?? '#FF9900';
 
@@ -109,13 +96,16 @@ export default function GlobeScene({ category, members, onMarkerClick }) {
       .pointsData(clusters)
       .pointLat((d) => d.lat)
       .pointLng((d) => d.lng)
-      // Larger dot for clusters (Req 4.4)
       .pointRadius((d) => (d.members.length > 1 ? 0.6 : 0.4))
       .pointColor(() => color)
       .pointAltitude(0.01)
-      // Wire click handler (Req 5.1)
       .onPointClick((point) => {
         if (!point) return;
+        // Fly to the clicked point
+        globeRef.current.pointOfView(
+          { lat: point.lat, lng: point.lng, altitude: 1.8 },
+          800 // ms transition
+        );
         const payload = point.members.length === 1 ? point.members[0] : point.members;
         onMarkerClick(payload);
       });

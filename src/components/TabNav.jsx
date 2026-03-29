@@ -11,14 +11,20 @@ const TABS = [
 ];
 
 /**
- * @param {{ activeCategory: CategoryKey; onChange: (category: CategoryKey) => void }} props
+ * @param {{ activeCategory: CategoryKey; onChange: (category: CategoryKey) => void; darkMode: boolean }} props
  */
-export default function TabNav({ activeCategory, onChange }) {
+export default function TabNav({ activeCategory, onChange, darkMode }) {
+  const surface = darkMode ? '#1B2836' : '#ffffff';
+  const border = darkMode ? '#2D3F50' : '#d0dce8';
+  const activeBg = darkMode ? '#243447' : '#f0f7ff';
+  const activeText = darkMode ? '#FFFFFF' : '#0F1923';
+  const inactiveText = darkMode ? '#8B9BAA' : '#5a7a99';
+
   return (
     <nav
       role="tablist"
       aria-label="Community categories"
-      style={{ backgroundColor: '#1B2836', borderBottom: '1px solid #2D3F50', display: 'flex' }}
+      style={{ backgroundColor: surface, borderBottom: `1px solid ${border}`, display: 'flex' }}
     >
       {TABS.map(({ label, key }) => {
         const isActive = key === activeCategory;
@@ -30,8 +36,8 @@ export default function TabNav({ activeCategory, onChange }) {
             onClick={() => onChange(key)}
             style={{
               padding: '12px 20px',
-              background: isActive ? '#243447' : 'transparent',
-              color: isActive ? '#FFFFFF' : '#8B9BAA',
+              background: isActive ? activeBg : 'transparent',
+              color: isActive ? activeText : inactiveText,
               border: 'none',
               borderBottom: isActive ? '3px solid #FF9900' : '3px solid transparent',
               cursor: 'pointer',
