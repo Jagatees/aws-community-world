@@ -51,41 +51,35 @@ function SingleMemberView({ member }) {
         📍 {member.location}
       </p>
 
-      {/* Follow button */}
-      {member.profileUrl ? (
-        <a
-          href={member.profileUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-1 px-5 py-1.5 rounded text-sm font-semibold border transition-colors"
-          style={{ borderColor: '#FF9900', color: '#FF9900' }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = '#FF9900';
-            e.currentTarget.style.color = '#0F1923';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = 'transparent';
-            e.currentTarget.style.color = '#FF9900';
-          }}
-        >
-          Follow
-        </a>
-      ) : (
-        <button
-          className="mt-1 px-5 py-1.5 rounded text-sm font-semibold border transition-colors"
-          style={{ borderColor: '#FF9900', color: '#FF9900' }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = '#FF9900';
-            e.currentTarget.style.color = '#0F1923';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = 'transparent';
-            e.currentTarget.style.color = '#FF9900';
-          }}
-        >
-          Follow
-        </button>
-      )}
+      {/* CTA button — "Join" for groups/clubs, "Follow" for people */}
+      {(() => {
+        const isGroup = member.category === 'user-groups' || member.category === 'cloud-clubs';
+        const label = isGroup ? 'Join' : 'Follow';
+        const url = member.profileUrl || member.joinUrl;
+        const btnStyle = {
+          borderColor: '#FF9900',
+          color: '#FF9900',
+        };
+        return url ? (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 px-5 py-1.5 rounded text-sm font-semibold border transition-colors"
+            style={btnStyle}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#FF9900';
+              e.currentTarget.style.color = '#0F1923';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+              e.currentTarget.style.color = '#FF9900';
+            }}
+          >
+            {label}
+          </a>
+        ) : null;
+      })()}
     </div>
   );
 }
@@ -122,15 +116,15 @@ function ClusterListView({ members }) {
                 {m.location}
               </p>
             </div>
-            {m.profileUrl && (
+            {(m.profileUrl || m.joinUrl) && (
               <a
-                href={m.profileUrl}
+                href={m.profileUrl || m.joinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-semibold px-3 py-1 rounded border flex-shrink-0"
                 style={{ borderColor: '#FF9900', color: '#FF9900' }}
               >
-                Follow
+                {m.category === 'user-groups' || m.category === 'cloud-clubs' ? 'Join' : 'Follow'}
               </a>
             )}
           </li>

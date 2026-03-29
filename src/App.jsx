@@ -29,10 +29,13 @@ export default function App() {
     return [...set].sort();
   }, [members]);
 
-  // Apply tag filter
+  // Apply tag filter, and drop members with no real coordinates (lat/lng 0,0)
   const filteredMembers = useMemo(() => {
-    if (!selectedTag) return members;
-    return members.filter((m) => m.tag === selectedTag);
+    return members.filter((m) => {
+      if (m.lat === 0 && m.lng === 0) return false;
+      if (selectedTag && m.tag !== selectedTag) return false;
+      return true;
+    });
   }, [members, selectedTag]);
 
   const isEmpty = !loading && !error && filteredMembers.length === 0;
