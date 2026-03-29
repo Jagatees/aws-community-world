@@ -33,10 +33,11 @@ function clusterMembers(members) {
  *   category: import('../types.js').CategoryKey,
  *   members: import('../types.js').Member[],
  *   onMarkerClick: (member: import('../types.js').Member | import('../types.js').Member[]) => void,
- *   cardOpen: boolean
+ *   cardOpen: boolean,
+ *   darkMode: boolean
  * }} props
  */
-export default function GlobeScene({ category, members, onMarkerClick, cardOpen }) {
+export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode }) {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
   const { startLoop, stopLoop, onPointerEvent, pause, resume } = useAutoRotate(globeRef);
@@ -86,6 +87,12 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen 
     return () => observer.disconnect();
   }, []);
 
+  // Update globe background when dark mode changes
+  useEffect(() => {
+    if (!globeRef.current) return;
+    globeRef.current.backgroundColor(darkMode ? '#0F1923' : '#c8dff0');
+  }, [darkMode]);
+
   // Update markers
   useEffect(() => {
     if (!globeRef.current) return;
@@ -119,7 +126,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen 
     <div
       ref={containerRef}
       className="w-full h-full"
-      style={{ background: '#0F1923' }}
+      style={{ background: darkMode ? '#0F1923' : '#c8dff0' }}
       onPointerDown={handlePointer}
       onPointerMove={handlePointer}
     />

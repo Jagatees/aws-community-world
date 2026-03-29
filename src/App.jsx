@@ -70,6 +70,7 @@ export default function App() {
           members={filteredMembers}
           onMarkerClick={handleMarkerClick}
           cardOpen={!!selectedMember}
+          darkMode={darkMode}
         />
         {isEmpty && (
           <div
