@@ -12,7 +12,6 @@ export default function App() {
   const [selectedTag, setSelectedTag] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [darkMode, setDarkMode] = useState(true);
-  const [globeStyle, setGlobeStyle] = useState('realistic');
 
   const { error, members, loading } = useCategory(activeCategory);
 
@@ -85,7 +84,7 @@ export default function App() {
       className="flex flex-col"
       style={{ height: '100dvh', backgroundColor: bg, overflow: 'hidden' }}
     >
-      <Header darkMode={darkMode} onToggleDark={() => setDarkMode((d) => !d)} globeStyle={globeStyle} onToggleGlobeStyle={() => setGlobeStyle((s) => s === 'realistic' ? 'neon' : 'realistic')} />
+      <Header darkMode={darkMode} onToggleDark={() => setDarkMode((d) => !d)} />
       <TabNav
         activeCategory={activeCategory}
         onChange={handleCategoryChange}
@@ -121,7 +120,6 @@ export default function App() {
           cardOpen={!!selectedMember}
           darkMode={darkMode}
           flyToTarget={flyToTarget}
-          globeStyle={globeStyle}
         />
         {isEmpty && (
           <div

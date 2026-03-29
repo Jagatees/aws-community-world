@@ -28,17 +28,10 @@ function clusterMembers(members) {
   return clusters;
 }
 
-// Solid black 1x1 pixel data URL for the neon globe texture
-const BLACK_TEXTURE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==';
-
-export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, globeStyle }) {
+export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget }) {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
-  const countriesRef = useRef([]);
-  const hoveredRef = useRef(null);
   const { startLoop, stopLoop, onPointerEvent, pause, resume } = useAutoRotate(globeRef);
-
-  const isNeon = globeStyle === 'neon';
 
   useEffect(() => {
     if (cardOpen) pause();
@@ -55,21 +48,13 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       .showAtmosphere(true)
       .atmosphereColor('#4a90d9')
       .atmosphereAltitude(0.15)
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+      .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
       .showGraticules(false)
       .pointOfView({ lat: 20, lng: 0, altitude: 2.5 });
 
     globeRef.current = globe;
     startLoop();
-
-    // Load country GeoJSON for neon polygon layer
-    fetch('https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson')
-      .then((r) => r.json())
-      .then((geo) => {
-        countriesRef.current = geo.features;
-        // Apply polygons if already in neon mode
-        if (globeRef.current) applyPolygons(globeRef.current, false);
-      })
-      .catch(() => {});
 
     return () => {
       stopLoop();
@@ -77,25 +62,6 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       globeRef.current = null;
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  function applyPolygons(globe, neon) {
-    if (neon && countriesRef.current.length) {
-      globe
-        .polygonsData(countriesRef.current)
-        .polygonCapColor((d) => d === hoveredRef.current ? 'rgba(255,153,0,0.25)' : 'rgba(0,0,0,0)')
-        .polygonSideColor(() => 'rgba(0,0,0,0)')
-        .polygonStrokeColor(() => '#FF9900')
-        .polygonAltitude((d) => d === hoveredRef.current ? 0.02 : 0.005)
-        .onPolygonHover((d) => {
-          hoveredRef.current = d;
-          // Re-apply to trigger color update
-          globe.polygonCapColor((feat) => feat === hoveredRef.current ? 'rgba(255,153,0,0.25)' : 'rgba(0,0,0,0)');
-          globe.polygonAltitude((feat) => feat === hoveredRef.current ? 0.02 : 0.005);
-        });
-    } else {
-      globe.polygonsData([]);
-    }
-  }
 
   // Resize observer
   useEffect(() => {
@@ -117,33 +83,11 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     globeRef.current.pointOfView({ lat: flyToTarget.lat, lng: flyToTarget.lng, altitude: 1.5 }, 1000);
   }, [flyToTarget]);
 
-  // Switch globe style
+  // Update globe background when dark mode changes
   useEffect(() => {
     if (!globeRef.current) return;
-    if (isNeon) {
-      globeRef.current
-        .globeImageUrl(BLACK_TEXTURE)
-        .bumpImageUrl(null)
-        .backgroundColor('#000000')
-        .atmosphereColor('#FF9900')
-        .atmosphereAltitude(0.12);
-      applyPolygons(globeRef.current, true);
-    } else {
-      globeRef.current
-        .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
-        .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
-        .backgroundColor(darkMode ? '#0F1923' : '#c8dff0')
-        .atmosphereColor('#4a90d9')
-        .atmosphereAltitude(0.15);
-      applyPolygons(globeRef.current, false);
-    }
-  }, [isNeon]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // Dark mode background (only in realistic mode)
-  useEffect(() => {
-    if (!globeRef.current || isNeon) return;
     globeRef.current.backgroundColor(darkMode ? '#0F1923' : '#c8dff0');
-  }, [darkMode, isNeon]);
+  }, [darkMode]);
 
   // Update markers
   useEffect(() => {
@@ -172,7 +116,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     <div
       ref={containerRef}
       className="w-full h-full"
-      style={{ background: isNeon ? '#000000' : (darkMode ? '#0F1923' : '#c8dff0') }}
+      style={{ background: darkMode ? '#0F1923' : '#c8dff0' }}
       onPointerDown={handlePointer}
       onPointerMove={handlePointer}
     />
