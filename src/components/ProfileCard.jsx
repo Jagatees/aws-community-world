@@ -23,6 +23,10 @@ function handleAvatarError(e) {
 function SingleMemberView({ member, darkMode }) {
   const nameColor = darkMode ? '#FFFFFF' : '#0F1923';
   const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
+  const isGroup = member.category === 'user-groups' || member.category === 'cloud-clubs';
+  const isHero = member.category === 'heroes';
+  const label = isGroup ? 'Join' : isHero ? 'View Profile' : 'Follow';
+  const url = member.profileUrl || member.joinUrl;
   return (
     <div className="flex flex-col items-center gap-3 pt-2">
       {member.avatarUrl && (
@@ -43,33 +47,35 @@ function SingleMemberView({ member, darkMode }) {
       >
         {CATEGORY_LABELS[member.category] ?? member.category}
       </span>
-      <p className="text-sm" style={{ color: mutedColor }}>
-        📍 {member.location}
-      </p>
-      {(() => {
-        const isGroup = member.category === 'user-groups' || member.category === 'cloud-clubs';
-        const label = isGroup ? 'Join' : 'Follow';
-        const url = member.profileUrl || member.joinUrl;
-        return url ? (
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-1 px-5 py-1.5 rounded text-sm font-semibold border transition-colors"
-            style={{ borderColor: '#FF9900', color: '#FF9900' }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#FF9900';
-              e.currentTarget.style.color = '#0F1923';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'transparent';
-              e.currentTarget.style.color = '#FF9900';
-            }}
-          >
-            {label}
-          </a>
-        ) : null;
-      })()}
+      {isHero && member.heroType && (
+        <span className="text-xs font-medium" style={{ color: mutedColor }}>
+          {member.heroType}
+        </span>
+      )}
+      {member.location && (
+        <p className="text-sm" style={{ color: mutedColor }}>
+          📍 {member.location}
+        </p>
+      )}
+      {url && (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-1 px-5 py-1.5 rounded text-sm font-semibold border transition-colors"
+          style={{ borderColor: '#FF9900', color: '#FF9900' }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#FF9900';
+            e.currentTarget.style.color = '#0F1923';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+            e.currentTarget.style.color = '#FF9900';
+          }}
+        >
+          {label}
+        </a>
+      )}
     </div>
   );
 }
@@ -104,6 +110,9 @@ function ClusterListView({ members, darkMode }) {
             )}
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold" style={{ color: nameColor }}>{m.name}</p>
+              {m.heroType && (
+                <p className="text-xs font-medium" style={{ color: '#FF9900' }}>{m.heroType}</p>
+              )}
               <p className="text-xs" style={{ color: mutedColor }}>{m.location}</p>
             </div>
             {(m.profileUrl || m.joinUrl) && (

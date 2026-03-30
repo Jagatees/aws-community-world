@@ -1,6 +1,27 @@
 import { useState, useEffect } from 'react';
 
 /**
+ * Normalize raw JSON entries into the common Member shape.
+ * @param {any[]} raw
+ * @param {string} category
+ * @returns {import('../types').Member[]}
+ */
+function normalizeMembers(raw, category) {
+  return raw.map((item, i) => ({
+    id: item.id ?? `${category}-${i}`,
+    name: item.name ?? '',
+    avatarUrl: item.avatarUrl ?? item.image_url ?? '',
+    profileUrl: item.profileUrl ?? item.hero_page_url ?? item.joinUrl ?? '',
+    location: item.location ?? '',
+    lat: item.lat ?? 0,
+    lng: item.lng ?? 0,
+    category,
+    tag: item.tag ?? item.hero_type ?? item.specialty ?? '',
+    heroType: item.hero_type ?? '',
+  }));
+}
+
+/**
  * Loads community member data for the given category key.
  *
  * @param {import('../types').CategoryKey} category
@@ -21,7 +42,7 @@ export function useCategory(category) {
     import(`../data/${category}.json`)
       .then((mod) => {
         if (!cancelled) {
-          setMembers(mod.default);
+          setMembers(normalizeMembers(mod.default, category));
           setLoading(false);
         }
       })

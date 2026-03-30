@@ -1,3 +1,5 @@
+import { formatCountryWithFlag } from '../utils/countryFlags';
+
 /**
  * @typedef {import('../types.js').CategoryKey} CategoryKey
  */
@@ -98,7 +100,9 @@ export default function TabNav({ activeCategory, onChange, darkMode, countries, 
       >
         <option value="">🌍 All Countries</option>
         {countries.map((c) => (
-          <option key={c} value={c}>{c}</option>
+          <option key={c} value={c}>
+            {formatCountryWithFlag(c)}
+          </option>
         ))}
       </select>
     </nav>

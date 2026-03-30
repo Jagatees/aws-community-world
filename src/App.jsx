@@ -32,6 +32,7 @@ export default function App() {
     const set = new Set(members.map((m) => m.tag).filter(Boolean));
     return [...set].sort();
   }, [members]);
+  const hasTagFilters = tags.length > 0;
 
   // Derive country list from the last segment of location string (e.g. "Tokyo, Japan" → "Japan")
   const countries = useMemo(() => {
@@ -207,20 +208,21 @@ export default function App() {
         onCountryChange={setSelectedCountry}
       />
 
-      {/* Filter bar — tag pills only */}
-      <div
-        className="flex items-center gap-2 px-4 py-2 overflow-x-auto"
-        style={{
-          backgroundColor: filterBarBg,
-          backdropFilter: 'blur(18px)',
-          WebkitBackdropFilter: 'blur(18px)',
-          scrollbarWidth: 'none',
-          flexShrink: 0,
-          borderBottom: darkMode ? '1px solid rgba(45, 63, 80, 0.55)' : '1px solid rgba(208, 220, 232, 0.8)',
-        }}
-      >
-        <TagFilter tags={tags} selected={selectedTag} onChange={setSelectedTag} darkMode={darkMode} />
-      </div>
+      {hasTagFilters && (
+        <div
+          className="flex items-center gap-2 px-4 py-2 overflow-x-auto"
+          style={{
+            backgroundColor: filterBarBg,
+            backdropFilter: 'blur(18px)',
+            WebkitBackdropFilter: 'blur(18px)',
+            scrollbarWidth: 'none',
+            flexShrink: 0,
+            borderBottom: darkMode ? '1px solid rgba(45, 63, 80, 0.55)' : '1px solid rgba(208, 220, 232, 0.8)',
+          }}
+        >
+          <TagFilter tags={tags} selected={selectedTag} onChange={setSelectedTag} darkMode={darkMode} />
+        </div>
+      )}
 
       {error && (
         <div
