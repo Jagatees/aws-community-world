@@ -50,6 +50,16 @@ function normalizeAngle(angle) {
   return next;
 }
 
+function getResponsiveScale(scale, width, height) {
+  const aspectRatio = width / Math.max(height, 1);
+  const landscapeFactor =
+    aspectRatio > 1.45
+      ? Math.max(0.72, 1 - (aspectRatio - 1.45) * 0.16)
+      : 1;
+
+  return scale * landscapeFactor;
+}
+
 function hexToRgb01(hex) {
   const normalized = hex.replace('#', '');
   const value = normalized.length === 3
@@ -209,15 +219,15 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
 
     const updateSize = () => {
       if (!containerRef.current) return;
-      const width = Math.max(1, Math.round(containerRef.current.clientWidth * window.devicePixelRatio));
-      const height = Math.max(1, Math.round(containerRef.current.clientHeight * window.devicePixelRatio));
+      const width = Math.max(1, Math.round(containerRef.current.clientWidth));
+      const height = Math.max(1, Math.round(containerRef.current.clientHeight));
       sizeRef.current = { width, height };
     };
 
     updateSize();
 
     const globe = createGlobe(canvasRef.current, {
-      devicePixelRatio: 1,
+      devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
       width: sizeRef.current.width,
       height: sizeRef.current.height,
       phi: phiRef.current,
@@ -230,7 +240,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       baseColor: themeRef.current.darkMode ? [0.06, 0.1, 0.16] : [0.33, 0.42, 0.5],
       markerColor: themeRef.current.markerRgb,
       glowColor: themeRef.current.darkMode ? [0.29, 0.56, 0.85] : [0.67, 0.82, 0.94],
-      scale: scaleRef.current,
+      scale: getResponsiveScale(scaleRef.current, sizeRef.current.width, sizeRef.current.height),
       offset: [0, 0],
       markers: clustersRef.current,
       opacity: 1,
@@ -263,7 +273,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         state.mapBrightness = theme.darkMode ? 5 : 6;
         state.mapBaseBrightness = theme.darkMode ? 0.05 : 0.18;
         state.baseColor = theme.darkMode ? [0.06, 0.1, 0.16] : [0.33, 0.42, 0.5];
-        state.scale = scaleRef.current;
+        state.scale = getResponsiveScale(scaleRef.current, sizeRef.current.width, sizeRef.current.height);
         state.markerColor = theme.markerRgb;
         state.glowColor = theme.darkMode ? [0.29, 0.56, 0.85] : [0.67, 0.82, 0.94];
         state.markers = currentClusters;
@@ -276,7 +286,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
               thetaRef.current,
               sizeRef.current.width,
               sizeRef.current.height,
-              scaleRef.current
+              getResponsiveScale(scaleRef.current, sizeRef.current.width, sizeRef.current.height)
             )
           )
           .filter(Boolean)
@@ -320,8 +330,8 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     if (!canvasRef.current) return null;
 
     const rect = canvasRef.current.getBoundingClientRect();
-    const x = (event.clientX - rect.left) * window.devicePixelRatio;
-    const y = (event.clientY - rect.top) * window.devicePixelRatio;
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
 
     return projectedMarkersRef.current.find((marker) => {
       const dx = marker.x - x;
