@@ -1,25 +1,41 @@
 import { useEffect, useRef } from 'react';
 
-/** Category label map for the badge */
 const CATEGORY_LABELS = {
-  'heroes': 'Hero',
+  heroes: 'Hero',
   'community-builders': 'Community Builder',
   'user-groups': 'User Group',
   'cloud-clubs': 'Cloud Club',
 };
 
-/**
- * Hide avatar entirely if it fails to load
- * @param {React.SyntheticEvent<HTMLImageElement>} e
- */
 function handleAvatarError(e) {
   e.currentTarget.style.display = 'none';
 }
 
-/**
- * Single member card body
- * @param {{ member: import('../types.js').Member, darkMode: boolean }} props
- */
+function CommunityBuilderMeta({ member, darkMode, compact = false }) {
+  if (member.category !== 'community-builders') {
+    return null;
+  }
+
+  const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
+  const accentColor = '#FF9900';
+  const className = compact ? 'mt-1 flex flex-col gap-0.5' : 'flex flex-col items-center gap-1 text-center';
+
+  return (
+    <div className={className}>
+      {member.tag && (
+        <p className="text-xs font-semibold" style={{ color: accentColor }}>
+          {member.tag}
+        </p>
+      )}
+      {member.specialization && (
+        <p className="text-xs" style={{ color: mutedColor }}>
+          Specialization: {member.specialization}
+        </p>
+      )}
+    </div>
+  );
+}
+
 function SingleMemberView({ member, darkMode }) {
   const nameColor = darkMode ? '#FFFFFF' : '#0F1923';
   const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
@@ -27,6 +43,7 @@ function SingleMemberView({ member, darkMode }) {
   const isHero = member.category === 'heroes';
   const label = isGroup ? 'Join' : isHero ? 'View Profile' : 'Follow';
   const url = member.profileUrl || member.joinUrl;
+
   return (
     <div className="flex flex-col items-center gap-3 pt-2">
       {member.avatarUrl && (
@@ -34,15 +51,15 @@ function SingleMemberView({ member, darkMode }) {
           src={member.avatarUrl}
           alt={member.name}
           onError={handleAvatarError}
-          className="w-16 h-16 rounded-full object-cover border-2"
+          className="h-16 w-16 rounded-full border-2 object-cover"
           style={{ borderColor: '#FF9900' }}
         />
       )}
-      <h2 className="text-lg font-bold text-center leading-tight" style={{ color: nameColor }}>
+      <h2 className="text-center text-lg font-bold leading-tight" style={{ color: nameColor }}>
         {member.name}
       </h2>
       <span
-        className="text-xs font-semibold px-3 py-1 rounded-full"
+        className="rounded-full px-3 py-1 text-xs font-semibold"
         style={{ backgroundColor: '#FF9900', color: '#0F1923' }}
       >
         {CATEGORY_LABELS[member.category] ?? member.category}
@@ -52,9 +69,10 @@ function SingleMemberView({ member, darkMode }) {
           {member.heroType}
         </span>
       )}
+      <CommunityBuilderMeta member={member} darkMode={darkMode} />
       {member.location && (
         <p className="text-sm" style={{ color: mutedColor }}>
-          📍 {member.location}
+          {member.location}
         </p>
       )}
       {url && (
@@ -62,7 +80,7 @@ function SingleMemberView({ member, darkMode }) {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-1 px-5 py-1.5 rounded text-sm font-semibold border transition-colors"
+          className="mt-1 rounded border px-5 py-1.5 text-sm font-semibold transition-colors"
           style={{ borderColor: '#FF9900', color: '#FF9900' }}
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = '#FF9900';
@@ -80,20 +98,17 @@ function SingleMemberView({ member, darkMode }) {
   );
 }
 
-/**
- * Cluster list view
- * @param {{ members: import('../types.js').Member[], darkMode: boolean }} props
- */
 function ClusterListView({ members, darkMode }) {
   const nameColor = darkMode ? '#FFFFFF' : '#0F1923';
   const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
   const itemBg = darkMode ? '#0F1923' : '#f0f7ff';
+
   return (
-    <div className="flex flex-col gap-1 w-full">
-      <h2 className="text-base font-bold mb-2 text-center" style={{ color: nameColor }}>
+    <div className="flex w-full flex-col gap-1">
+      <h2 className="mb-2 text-center text-base font-bold" style={{ color: nameColor }}>
         {members.length} members at this location
       </h2>
-      <ul className="overflow-y-auto flex flex-col gap-2 pr-1" style={{ maxHeight: '260px' }}>
+      <ul className="flex max-h-[260px] flex-col gap-2 overflow-y-auto pr-1">
         {members.map((m) => (
           <li
             key={m.id}
@@ -105,22 +120,29 @@ function ClusterListView({ members, darkMode }) {
                 src={m.avatarUrl}
                 alt={m.name}
                 onError={handleAvatarError}
-                className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                className="h-10 w-10 flex-shrink-0 rounded-full object-cover"
               />
             )}
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold" style={{ color: nameColor }}>{m.name}</p>
+              <p className="text-sm font-semibold" style={{ color: nameColor }}>
+                {m.name}
+              </p>
               {m.heroType && (
-                <p className="text-xs font-medium" style={{ color: '#FF9900' }}>{m.heroType}</p>
+                <p className="text-xs font-medium" style={{ color: '#FF9900' }}>
+                  {m.heroType}
+                </p>
               )}
-              <p className="text-xs" style={{ color: mutedColor }}>{m.location}</p>
+              <CommunityBuilderMeta member={m} darkMode={darkMode} compact />
+              <p className="text-xs" style={{ color: mutedColor }}>
+                {m.location}
+              </p>
             </div>
             {(m.profileUrl || m.joinUrl) && (
               <a
                 href={m.profileUrl || m.joinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs font-semibold px-3 py-1 rounded border flex-shrink-0"
+                className="flex-shrink-0 rounded border px-3 py-1 text-xs font-semibold"
                 style={{ borderColor: '#FF9900', color: '#FF9900' }}
               >
                 {m.category === 'user-groups' || m.category === 'cloud-clubs' ? 'Join' : 'Follow'}
@@ -133,15 +155,6 @@ function ClusterListView({ members, darkMode }) {
   );
 }
 
-/**
- * ProfileCard — overlay card for a clicked marker (Req 5.1–5.5, 7.5)
- *
- * @param {{
- *   member: import('../types.js').Member | import('../types.js').Member[],
- *   onClose: () => void,
- *   darkMode: boolean
- * }} props
- */
 export default function ProfileCard({ member, onClose, darkMode }) {
   const cardRef = useRef(null);
   const isCluster = Array.isArray(member);
@@ -149,13 +162,13 @@ export default function ProfileCard({ member, onClose, darkMode }) {
   const cardBg = darkMode ? 'rgba(27, 40, 54, 0.88)' : 'rgba(255, 255, 255, 0.94)';
   const cardBorder = darkMode ? 'rgba(45, 63, 80, 0.8)' : 'rgba(208, 220, 232, 0.95)';
 
-  // Close on outside click (Req 5.4)
   useEffect(() => {
     function handleOutsideClick(e) {
       if (cardRef.current && !cardRef.current.contains(e.target)) {
         onClose();
       }
     }
+
     document.addEventListener('mousedown', handleOutsideClick);
     return () => document.removeEventListener('mousedown', handleOutsideClick);
   }, [onClose]);
@@ -167,14 +180,16 @@ export default function ProfileCard({ member, onClose, darkMode }) {
     >
       <div
         ref={cardRef}
-        className="relative p-5 w-96"
+        className="relative w-96 p-5"
         style={{
           backgroundColor: cardBg,
           border: `1px solid ${cardBorder}`,
           borderRadius: '12px',
           backdropFilter: 'blur(18px)',
           WebkitBackdropFilter: 'blur(18px)',
-          boxShadow: darkMode ? '0 24px 60px rgba(0, 0, 0, 0.45)' : '0 24px 60px rgba(80, 112, 145, 0.18)',
+          boxShadow: darkMode
+            ? '0 24px 60px rgba(0, 0, 0, 0.45)'
+            : '0 24px 60px rgba(80, 112, 145, 0.18)',
         }}
         role="dialog"
         aria-modal="true"
@@ -182,13 +197,17 @@ export default function ProfileCard({ member, onClose, darkMode }) {
       >
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-lg leading-none transition-colors"
+          className="absolute right-3 top-3 text-lg leading-none transition-colors"
           style={{ color: '#8B9BAA' }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = darkMode ? '#FFFFFF' : '#0F1923')}
-          onMouseLeave={(e) => (e.currentTarget.style.color = '#8B9BAA')}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = darkMode ? '#FFFFFF' : '#0F1923';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = '#8B9BAA';
+          }}
           aria-label="Close"
         >
-          ×
+          x
         </button>
 
         {isCluster ? (

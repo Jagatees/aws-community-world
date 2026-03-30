@@ -18,6 +18,8 @@ function normalizeMembers(raw, category) {
     category,
     tag: item.tag ?? item.hero_type ?? item.specialty ?? '',
     heroType: item.hero_type ?? '',
+    builderType: item.builderType ?? item.builder_type ?? '',
+    specialization: item.specialization ?? item.tag ?? '',
   }));
 }
 

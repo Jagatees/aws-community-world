@@ -12,6 +12,10 @@
  * @property {number} lat       - Geographic latitude
  * @property {number} lng       - Geographic longitude
  * @property {string} [profileUrl]
+ * @property {string} [tag]
+ * @property {string} [heroType]
+ * @property {string} [builderType]
+ * @property {string} [specialization]
  */
 
 /**
