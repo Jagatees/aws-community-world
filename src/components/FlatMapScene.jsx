@@ -14,6 +14,7 @@ const MAP_WIDTH = 1000;
 const MAP_HEIGHT = 540;
 const MAP_PADDING = 28;
 const FOCUS_SCALE = 2.2;
+const MAX_CLUSTER_AVATARS = 3;
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 12;
 const ZOOM_STEP = 1.35;
@@ -21,6 +22,15 @@ const WHEEL_ZOOM_SENSITIVITY = 0.0015;
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
+}
+
+function getMemberImage(member) {
+  if (member.avatarUrl) return member.avatarUrl;
+  if (Array.isArray(member.ledBy)) {
+    const leaderImage = member.ledBy.find((leader) => leader?.imageUrl)?.imageUrl;
+    if (leaderImage) return leaderImage;
+  }
+  return '';
 }
 
 function getPanBounds(zoomLevel) {
@@ -300,37 +310,142 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
               <g>
               {markers.map((marker) => {
                 const payload = marker.members.length === 1 ? marker.members[0] : marker.members;
+                const visibleImages = marker.members
+                  .map((member) => ({ src: getMemberImage(member), name: member.name }))
+                  .filter((member) => member.src)
+                  .slice(0, MAX_CLUSTER_AVATARS);
+                const markerId = `${marker.lat}-${marker.lng}-${marker.members.length}`.replace(/[^a-zA-Z0-9_-]/g, '-');
+                const singleAvatarSize = marker.size * 2.05;
+                const clusterAvatarSize = Math.max(16, marker.size * 1.18);
+                const clusterSpacing = clusterAvatarSize * 0.58;
+                const stackWidth = visibleImages.length > 0
+                  ? clusterAvatarSize + (visibleImages.length - 1) * clusterSpacing
+                  : 0;
+                const stackOffsetX = visibleImages.length > 1 ? stackWidth / 2 : clusterAvatarSize / 2;
+                const badgeCount = Math.max(0, marker.members.length - visibleImages.length);
+
                 return (
                   <g key={`${marker.lat}-${marker.lng}-${marker.members.length}`} transform={`translate(${marker.x} ${marker.y})`}>
-                    <circle
-                      r={marker.size * 0.88}
-                      fill={markerColor}
-                      opacity="0.28"
-                      filter="url(#flat-marker-glow)"
-                      pointerEvents="none"
-                    />
-                    <circle
-                      r={marker.size}
-                      fill={markerColor}
-                      stroke={darkMode ? '#09131c' : '#ffffff'}
-                      strokeWidth="2.5"
-                      pointerEvents="none"
-                    />
-                    {marker.members.length > 1 && (
-                      <text
-                        y="1"
-                        textAnchor="middle"
-                        dominantBaseline="middle"
-                        fill="#0F1923"
-                        fontSize={marker.members.length > 9 ? '10' : '11'}
-                        fontWeight="800"
-                        pointerEvents="none"
-                      >
-                        {marker.members.length}
-                      </text>
+                    {visibleImages.length > 0 ? (
+                      <>
+                        <ellipse
+                          cx={visibleImages.length > 1 ? -stackOffsetX / 2 + clusterAvatarSize / 2 : 0}
+                          cy="0"
+                          rx={visibleImages.length > 1 ? stackWidth * 0.56 : singleAvatarSize * 0.6}
+                          ry={visibleImages.length > 1 ? clusterAvatarSize * 0.9 : singleAvatarSize * 0.6}
+                          fill={markerColor}
+                          opacity="0.22"
+                          filter="url(#flat-marker-glow)"
+                          pointerEvents="none"
+                        />
+                        {visibleImages.length === 1 ? (
+                          <>
+                            <clipPath id={`flat-avatar-clip-${markerId}`}>
+                              <circle r={singleAvatarSize / 2} />
+                            </clipPath>
+                            <image
+                              href={visibleImages[0].src}
+                              x={-singleAvatarSize / 2}
+                              y={-singleAvatarSize / 2}
+                              width={singleAvatarSize}
+                              height={singleAvatarSize}
+                              preserveAspectRatio="xMidYMid slice"
+                              clipPath={`url(#flat-avatar-clip-${markerId})`}
+                              pointerEvents="none"
+                            />
+                            <circle
+                              r={singleAvatarSize / 2}
+                              fill="transparent"
+                              stroke={darkMode ? '#09131c' : '#ffffff'}
+                              strokeWidth="2.5"
+                              pointerEvents="none"
+                            />
+                          </>
+                        ) : (
+                          visibleImages.map((member, index) => {
+                            const x = index * clusterSpacing - stackOffsetX;
+                            return (
+                              <g key={`${markerId}-${index}`} transform={`translate(${x} ${index % 2 === 0 ? -2 : 2})`}>
+                                <clipPath id={`flat-avatar-clip-${markerId}-${index}`}>
+                                  <circle r={clusterAvatarSize / 2} />
+                                </clipPath>
+                                <image
+                                  href={member.src}
+                                  x={-clusterAvatarSize / 2}
+                                  y={-clusterAvatarSize / 2}
+                                  width={clusterAvatarSize}
+                                  height={clusterAvatarSize}
+                                  preserveAspectRatio="xMidYMid slice"
+                                  clipPath={`url(#flat-avatar-clip-${markerId}-${index})`}
+                                  pointerEvents="none"
+                                />
+                                <circle
+                                  r={clusterAvatarSize / 2}
+                                  fill="transparent"
+                                  stroke={darkMode ? '#09131c' : '#ffffff'}
+                                  strokeWidth="2.2"
+                                  pointerEvents="none"
+                                />
+                              </g>
+                            );
+                          })
+                        )}
+                        {badgeCount > 0 && (
+                          <g transform={`translate(${stackOffsetX - clusterAvatarSize * 0.12} ${clusterAvatarSize * 0.45})`}>
+                            <circle
+                              r={clusterAvatarSize * 0.36}
+                              fill={markerColor}
+                              stroke={darkMode ? '#09131c' : '#ffffff'}
+                              strokeWidth="2"
+                              pointerEvents="none"
+                            />
+                            <text
+                              y="1"
+                              textAnchor="middle"
+                              dominantBaseline="middle"
+                              fill="#0F1923"
+                              fontSize="10"
+                              fontWeight="800"
+                              pointerEvents="none"
+                            >
+                              +{badgeCount}
+                            </text>
+                          </g>
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        <circle
+                          r={marker.size * 0.88}
+                          fill={markerColor}
+                          opacity="0.28"
+                          filter="url(#flat-marker-glow)"
+                          pointerEvents="none"
+                        />
+                        <circle
+                          r={marker.size}
+                          fill={markerColor}
+                          stroke={darkMode ? '#09131c' : '#ffffff'}
+                          strokeWidth="2.5"
+                          pointerEvents="none"
+                        />
+                        {marker.members.length > 1 && (
+                          <text
+                            y="1"
+                            textAnchor="middle"
+                            dominantBaseline="middle"
+                            fill="#0F1923"
+                            fontSize={marker.members.length > 9 ? '10' : '11'}
+                            fontWeight="800"
+                            pointerEvents="none"
+                          >
+                            {marker.members.length}
+                          </text>
+                        )}
+                      </>
                     )}
                     <circle
-                      r={marker.size + 12}
+                      r={Math.max(marker.size + 12, singleAvatarSize * 0.8, clusterAvatarSize + 12)}
                       fill="transparent"
                       data-marker-interactive="true"
                       pointerEvents="all"
