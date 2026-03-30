@@ -1,3 +1,5 @@
+import { formatCountryWithFlag } from '../utils/countryFlags';
+
 /**
  * CountryFilter — a dropdown to filter members by country.
  *
@@ -40,7 +42,7 @@ export default function CountryFilter({ countries, selected, onChange, darkMode 
       <option value="">🌍 All Countries</option>
       {countries.map((c) => (
         <option key={c} value={c}>
-          {c}
+          {formatCountryWithFlag(c)}
         </option>
       ))}
     </select>

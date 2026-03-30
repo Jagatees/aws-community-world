@@ -1,10 +1,7 @@
-import { formatCountryWithFlag } from '../utils/countryFlags';
+import CountryDropdown from './CountryDropdown';
 
-/**
- * @typedef {import('../types.js').CategoryKey} CategoryKey
- */
+/** @typedef {import('../types.js').CategoryKey} CategoryKey */
 
-/** @type {{ label: string; key: CategoryKey }[]} */
 const TABS = [
   { label: 'Heroes', key: 'heroes' },
   { label: 'Community Builders', key: 'community-builders' },
@@ -18,93 +15,82 @@ const TABS = [
  *   onChange: (category: CategoryKey) => void;
  *   darkMode: boolean;
  *   countries: string[];
+ *   countryCounts: Record<string, number>;
  *   selectedCountry: string | null;
  *   onCountryChange: (country: string | null) => void;
  * }} props
  */
-export default function TabNav({ activeCategory, onChange, darkMode, countries, selectedCountry, onCountryChange }) {
+export default function TabNav({
+  activeCategory,
+  onChange,
+  darkMode,
+  countries,
+  countryCounts = {},
+  selectedCountry,
+  onCountryChange,
+}) {
   const surface = darkMode ? 'rgba(27, 40, 54, 0.62)' : 'rgba(255, 255, 255, 0.72)';
   const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.92)';
   const activeBg = darkMode ? 'rgba(36, 52, 71, 0.88)' : 'rgba(240, 247, 255, 0.94)';
   const activeText = darkMode ? '#FFFFFF' : '#0F1923';
   const inactiveText = darkMode ? '#8B9BAA' : '#5a7a99';
-  const selectBg = darkMode ? 'rgba(10, 18, 28, 0.78)' : 'rgba(240, 247, 255, 0.95)';
 
   return (
-    <nav
-      role="tablist"
-      aria-label="Community categories"
+    <div
       style={{
         backgroundColor: surface,
-        borderBottom: `1px solid ${border}`,
         backdropFilter: 'blur(18px)',
         WebkitBackdropFilter: 'blur(18px)',
-        display: 'flex',
-        alignItems: 'center',
-        overflowX: 'auto',
-        scrollbarWidth: 'none',
-        WebkitOverflowScrolling: 'touch',
+        borderBottom: `1px solid ${border}`,
       }}
     >
-      {TABS.map(({ label, key }) => {
-        const isActive = key === activeCategory;
-        return (
-          <button
-            key={key}
-            role="tab"
-            aria-selected={isActive}
-            onClick={() => onChange(key)}
-            style={{
-              padding: '12px 20px',
-              background: isActive ? activeBg : 'transparent',
-              color: isActive ? activeText : inactiveText,
-              border: 'none',
-              borderBottom: isActive ? '3px solid #FF9900' : '3px solid transparent',
-              cursor: 'pointer',
-              fontSize: '14px',
-              fontWeight: isActive ? '600' : '400',
-              transition: 'color 0.2s, background 0.2s',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {label}
-          </button>
-        );
-      })}
-
-      {/* Divider */}
-      <span style={{ width: '1px', height: '20px', backgroundColor: border, margin: '0 8px', flexShrink: 0 }} />
-
-      {/* Global country filter */}
-      <select
-        value={selectedCountry ?? ''}
-        onChange={(e) => onCountryChange(e.target.value || null)}
-        aria-label="Filter by country"
-        style={{
-          backgroundColor: selectBg,
-          color: selectedCountry ? '#FF9900' : inactiveText,
-          border: `1px solid ${selectedCountry ? '#FF9900' : border}`,
-          borderRadius: '999px',
-          padding: '4px 28px 4px 12px',
-          fontSize: '0.75rem',
-          fontWeight: 600,
-          cursor: 'pointer',
-          outline: 'none',
-          flexShrink: 0,
-          marginRight: '12px',
-          appearance: 'none',
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238B9BAA' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'right 8px center',
-        }}
+      <nav
+        role="tablist"
+        aria-label="Community categories"
+        style={{ display: 'flex', alignItems: 'center', overflowX: 'auto', scrollbarWidth: 'none' }}
       >
-        <option value="">🌍 All Countries</option>
-        {countries.map((c) => (
-          <option key={c} value={c}>
-            {formatCountryWithFlag(c)}
-          </option>
-        ))}
-      </select>
-    </nav>
+        {TABS.map(({ label, key }) => {
+          const isActive = key === activeCategory;
+          return (
+            <button
+              key={key}
+              role="tab"
+              aria-selected={isActive}
+              onClick={() => onChange(key)}
+              style={{
+                padding: '12px 20px',
+                background: isActive ? activeBg : 'transparent',
+                color: isActive ? activeText : inactiveText,
+                border: 'none',
+                borderBottom: isActive ? '3px solid #FF9900' : '3px solid transparent',
+                cursor: 'pointer',
+                fontSize: '14px',
+                fontWeight: isActive ? '600' : '400',
+                transition: 'color 0.2s, background 0.2s',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {label}
+            </button>
+          );
+        })}
+        {!!countries.length && (
+          <div style={{ marginLeft: '8px', marginRight: '12px', flexShrink: 0 }}>
+            <CountryDropdown
+              darkMode={darkMode}
+              countries={countries}
+              countryCounts={countryCounts}
+              selectedCountry={selectedCountry}
+              onCountryChange={onCountryChange}
+              className="px-3 py-1 text-xs"
+              buttonStyle={{
+                color: selectedCountry ? '#FF9900' : inactiveText,
+                background: selectedCountry ? 'rgba(255,153,0,0.12)' : 'transparent',
+              }}
+            />
+          </div>
+        )}
+      </nav>
+    </div>
   );
 }

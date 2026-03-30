@@ -70,6 +70,14 @@ function countryCodeToFlag(code) {
     .join('');
 }
 
+export function getCountryCode(country) {
+  if (!country) return null;
+  const normalized = normalizeCountryName(country);
+  return COUNTRY_ALIASES[normalized] ?? countryNameToCode.get(normalized) ?? null;
+}
+
+export { countryCodeToFlag };
+
 export function formatCountryWithFlag(country) {
   if (!country) return country;
 

@@ -20,6 +20,7 @@ function normalizeMembers(raw, category) {
     heroType: item.hero_type ?? '',
     builderType: item.builderType ?? item.builder_type ?? '',
     specialization: item.specialization ?? item.tag ?? '',
+    ledBy: Array.isArray(item.ledBy) ? item.ledBy : [],
   }));
 }
 

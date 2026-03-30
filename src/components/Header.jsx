@@ -2,24 +2,13 @@
  * @param {{
  *   darkMode: boolean,
  *   onToggleDark: () => void,
- *   globeDesign: 'classic' | 'cobe' | 'flat',
- *   onGlobeDesignChange: (design: 'classic' | 'cobe' | 'flat') => void
  * }} props
  */
-export default function Header({ darkMode, onToggleDark, globeDesign, onGlobeDesignChange }) {
+export default function Header({ darkMode, onToggleDark }) {
   const surface = darkMode ? 'rgba(27, 40, 54, 0.7)' : 'rgba(255, 255, 255, 0.78)';
   const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.95)';
   const text = darkMode ? '#FFFFFF' : '#0F1923';
   const muted = darkMode ? '#8B9BAA' : '#5a7a99';
-  const switchBg = darkMode ? 'rgba(10, 18, 28, 0.78)' : 'rgba(240, 247, 255, 0.9)';
-
-  function designButtonStyles(design) {
-    const active = globeDesign === design;
-    return {
-      backgroundColor: active ? '#FF9900' : 'transparent',
-      color: active ? '#0F1923' : muted,
-    };
-  }
 
   return (
     <header
@@ -40,37 +29,6 @@ export default function Header({ darkMode, onToggleDark, globeDesign, onGlobeDes
       <span className="text-xs hidden sm:block" style={{ color: muted }}>
         AWS Cloud Club @ SIT created by Jagatees
       </span>
-
-      <div
-        className="flex items-center rounded-full p-1"
-        style={{ backgroundColor: switchBg, border: `1px solid ${border}` }}
-        aria-label="Globe design switcher"
-      >
-        <button
-          type="button"
-          onClick={() => onGlobeDesignChange('classic')}
-          className="px-3 py-1 text-xs font-semibold rounded-full transition-colors"
-          style={designButtonStyles('classic')}
-        >
-          Classic
-        </button>
-        <button
-          type="button"
-          onClick={() => onGlobeDesignChange('cobe')}
-          className="px-3 py-1 text-xs font-semibold rounded-full transition-colors"
-          style={designButtonStyles('cobe')}
-        >
-          Sleek
-        </button>
-        <button
-          type="button"
-          onClick={() => onGlobeDesignChange('flat')}
-          className="px-3 py-1 text-xs font-semibold rounded-full transition-colors"
-          style={designButtonStyles('flat')}
-        >
-          Flat
-        </button>
-      </div>
 
       {/* GitHub link */}
       <a

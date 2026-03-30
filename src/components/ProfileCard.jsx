@@ -11,6 +11,60 @@ function handleAvatarError(e) {
   e.currentTarget.style.display = 'none';
 }
 
+function getPrimaryLeader(member) {
+  return Array.isArray(member.ledBy) ? member.ledBy.find((leader) => leader?.name || leader?.imageUrl) ?? null : null;
+}
+
+function getLeaderNames(member) {
+  return Array.isArray(member.ledBy)
+    ? member.ledBy.map((leader) => leader?.name).filter(Boolean)
+    : [];
+}
+
+function getLeaderImages(member) {
+  return Array.isArray(member.ledBy)
+    ? member.ledBy.map((leader) => leader?.imageUrl).filter(Boolean)
+    : [];
+}
+
+function LeaderAvatarStack({ member, fallbackName, fallbackImageUrl, size = 'md' }) {
+  const leaderImages = getLeaderImages(member).slice(0, 2);
+  const avatarSizeClass = size === 'sm' ? 'h-10 w-10' : 'h-12 w-12';
+  const overlapClass = size === 'sm' ? '-ml-3' : '-ml-4';
+
+  if (leaderImages.length >= 2) {
+    return (
+      <div className="flex flex-shrink-0 items-center">
+        {leaderImages.map((imageUrl, index) => (
+          <img
+            key={`${imageUrl}-${index}`}
+            src={imageUrl}
+            alt={getLeaderNames(member)[index] || fallbackName}
+            onError={handleAvatarError}
+            className={`${avatarSizeClass} ${index > 0 ? overlapClass : ''} rounded-full object-cover`}
+            style={{ border: '2px solid #FF9900', backgroundColor: '#0F1923', zIndex: leaderImages.length - index }}
+          />
+        ))}
+      </div>
+    );
+  }
+
+  const imageUrl = leaderImages[0] || fallbackImageUrl;
+  if (!imageUrl) {
+    return null;
+  }
+
+  return (
+    <img
+      src={imageUrl}
+      alt={getPrimaryLeader(member)?.name || fallbackName}
+      onError={handleAvatarError}
+      className={`${avatarSizeClass} flex-shrink-0 rounded-full object-cover`}
+      style={{ border: '2px solid #FF9900' }}
+    />
+  );
+}
+
 function CommunityBuilderMeta({ member, darkMode, compact = false }) {
   if (member.category !== 'community-builders') {
     return null;
@@ -36,6 +90,101 @@ function CommunityBuilderMeta({ member, darkMode, compact = false }) {
   );
 }
 
+function LedByMeta({ member, darkMode, compact = false }) {
+  const leaders = Array.isArray(member.ledBy) ? member.ledBy.filter((leader) => leader?.name || leader?.imageUrl) : [];
+  if (!leaders.length) {
+    return null;
+  }
+
+  const labelColor = darkMode ? '#DCE7F0' : '#17324B';
+  const cardBg = darkMode ? 'rgba(15, 25, 35, 0.55)' : 'rgba(240, 247, 255, 0.9)';
+  const borderColor = darkMode ? 'rgba(62, 95, 123, 0.42)' : 'rgba(150, 179, 205, 0.55)';
+  const wrapperClassName = compact ? 'mt-1 flex flex-col gap-1.5' : 'flex w-full flex-col gap-2 text-left';
+  const avatarSize = compact ? 'h-7 w-7' : 'h-9 w-9';
+
+  return (
+    <div className={wrapperClassName}>
+      {leaders.map((leader, index) => (
+        <div
+          key={`${leader.name || 'leader'}-${index}`}
+          className="flex items-start gap-2 rounded-lg px-2 py-2"
+          style={{ backgroundColor: cardBg, border: `1px solid ${borderColor}` }}
+        >
+          {leader.imageUrl ? (
+            <img
+              src={leader.imageUrl}
+              alt={leader.name || 'Cloud Club leader'}
+              onError={handleAvatarError}
+              className={`${avatarSize} flex-shrink-0 rounded-full object-cover`}
+            />
+          ) : null}
+          <div className="min-w-0 flex-1">
+            {leader.name ? (
+              <p className={compact ? 'text-xs font-semibold' : 'text-sm font-semibold'} style={{ color: labelColor }}>
+                {leader.name}
+              </p>
+            ) : null}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function CloudClubSingleView({ member, darkMode, url }) {
+  const nameColor = darkMode ? '#FFFFFF' : '#0F1923';
+  const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
+  const leaderColor = '#FF9900';
+  const leaderNames = getLeaderNames(member);
+  const cardBg = darkMode ? 'rgba(15, 25, 35, 0.55)' : 'rgba(240, 247, 255, 0.9)';
+  const borderColor = darkMode ? 'rgba(62, 95, 123, 0.42)' : 'rgba(150, 179, 205, 0.55)';
+
+  return (
+    <div className="flex flex-col gap-3 pt-2">
+      <div
+        className="flex items-start gap-3 rounded-xl p-3"
+        style={{ backgroundColor: cardBg, border: `1px solid ${borderColor}` }}
+      >
+        <LeaderAvatarStack member={member} fallbackName={member.name} fallbackImageUrl={member.avatarUrl} />
+        <div className="min-w-0 flex-1">
+          <h2 className="text-sm font-bold leading-tight" style={{ color: nameColor }}>
+            {member.name}
+          </h2>
+          {leaderNames.length > 0 && (
+            <p className="mt-1 text-sm font-semibold" style={{ color: leaderColor }}>
+              Led by {leaderNames.join(', ')}
+            </p>
+          )}
+          {member.location && (
+            <p className="mt-0.5 text-sm" style={{ color: mutedColor }}>
+              {member.location}
+            </p>
+          )}
+        </div>
+        {url && (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 rounded border px-4 py-1.5 text-sm font-semibold transition-colors"
+            style={{ borderColor: '#FF9900', color: '#FF9900' }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#FF9900';
+              e.currentTarget.style.color = '#0F1923';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+              e.currentTarget.style.color = '#FF9900';
+            }}
+          >
+            Join
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SingleMemberView({ member, darkMode }) {
   const nameColor = darkMode ? '#FFFFFF' : '#0F1923';
   const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
@@ -43,6 +192,10 @@ function SingleMemberView({ member, darkMode }) {
   const isHero = member.category === 'heroes';
   const label = isGroup ? 'Join' : isHero ? 'View Profile' : 'Follow';
   const url = member.profileUrl || member.joinUrl;
+
+  if (member.category === 'cloud-clubs') {
+    return <CloudClubSingleView member={member} darkMode={darkMode} url={url} />;
+  }
 
   return (
     <div className="flex flex-col items-center gap-3 pt-2">
@@ -70,6 +223,7 @@ function SingleMemberView({ member, darkMode }) {
         </span>
       )}
       <CommunityBuilderMeta member={member} darkMode={darkMode} />
+      <LedByMeta member={member} darkMode={darkMode} />
       {member.location && (
         <p className="text-sm" style={{ color: mutedColor }}>
           {member.location}
@@ -115,24 +269,23 @@ function ClusterListView({ members, darkMode }) {
             className="flex items-center gap-3 rounded-lg p-2"
             style={{ backgroundColor: itemBg }}
           >
-            {m.avatarUrl && (
-              <img
-                src={m.avatarUrl}
-                alt={m.name}
-                onError={handleAvatarError}
-                className="h-10 w-10 flex-shrink-0 rounded-full object-cover"
-              />
-            )}
+            <LeaderAvatarStack member={m} fallbackName={m.name} fallbackImageUrl={m.avatarUrl} size="sm" />
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold" style={{ color: nameColor }}>
                 {m.name}
               </p>
+              {m.category === 'cloud-clubs' && getLeaderNames(m).length > 0 && (
+                <p className="text-xs font-medium" style={{ color: '#FF9900' }}>
+                  Led by {getLeaderNames(m).join(', ')}
+                </p>
+              )}
               {m.heroType && (
                 <p className="text-xs font-medium" style={{ color: '#FF9900' }}>
                   {m.heroType}
                 </p>
               )}
               <CommunityBuilderMeta member={m} darkMode={darkMode} compact />
+              {m.category !== 'cloud-clubs' && <LedByMeta member={m} darkMode={darkMode} compact />}
               <p className="text-xs" style={{ color: mutedColor }}>
                 {m.location}
               </p>
