@@ -10,6 +10,11 @@ const CATEGORY_COLORS = {
 };
 
 const CLUSTER_TOLERANCE = 0.5;
+const MAX_CLUSTER_AVATARS = 4;
+const MARKER_ALTITUDE = 0.06;
+const MIN_CAMERA_DISTANCE_FACTOR = 1.01;
+const CLASSIC_ZOOM_SPEED = 0.65;
+const CLASSIC_DAMPING_FACTOR = 0.14;
 
 function clusterMembers(members) {
   const clusters = [];
@@ -30,6 +35,117 @@ function clusterMembers(members) {
   return clusters;
 }
 
+function getMemberImage(member) {
+  if (member.avatarUrl) return member.avatarUrl;
+  if (Array.isArray(member.ledBy)) {
+    const leaderImage = member.ledBy.find((leader) => leader?.imageUrl)?.imageUrl;
+    if (leaderImage) return leaderImage;
+  }
+  return '';
+}
+
+function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.setAttribute('aria-label', `${cluster.members.length} member${cluster.members.length > 1 ? 's' : ''} at this location`);
+  button.style.display = 'flex';
+  button.style.alignItems = 'center';
+  button.style.justifyContent = 'center';
+  button.style.position = 'relative';
+  button.style.padding = '0';
+  button.style.border = '0';
+  button.style.background = 'transparent';
+  button.style.cursor = 'pointer';
+  button.style.pointerEvents = 'auto';
+  button.style.transform = 'translate(-50%, -50%)';
+  button.style.filter = darkMode
+    ? 'drop-shadow(0 8px 16px rgba(0, 0, 0, 0.45))'
+    : 'drop-shadow(0 8px 16px rgba(23, 50, 75, 0.22))';
+
+  const frame = document.createElement('div');
+  frame.style.display = 'flex';
+  frame.style.alignItems = 'center';
+  frame.style.justifyContent = 'center';
+  frame.style.position = 'relative';
+  frame.style.minWidth = cluster.members.length > 1 ? '52px' : '34px';
+  frame.style.minHeight = cluster.members.length > 1 ? '40px' : '34px';
+
+  const images = cluster.members
+    .map((member) => ({ src: getMemberImage(member), name: member.name }))
+    .filter((member) => member.src)
+    .slice(0, MAX_CLUSTER_AVATARS);
+
+  if (images.length > 0) {
+    images.forEach((member, index) => {
+      const img = document.createElement('img');
+      img.src = member.src;
+      img.alt = member.name;
+      img.width = images.length > 1 ? 24 : 30;
+      img.height = images.length > 1 ? 24 : 30;
+      img.draggable = false;
+      img.style.width = `${img.width}px`;
+      img.style.height = `${img.height}px`;
+      img.style.objectFit = 'cover';
+      img.style.borderRadius = '999px';
+      img.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+      img.style.background = darkMode ? '#152534' : '#F0F7FF';
+      img.style.marginLeft = index === 0 ? '0' : '-10px';
+      img.style.transform = `translateY(${index % 2 === 0 ? '-2px' : '2px'})`;
+      img.style.zIndex = String(images.length - index);
+      frame.appendChild(img);
+    });
+  } else {
+    const dot = document.createElement('div');
+    dot.style.width = cluster.members.length > 1 ? '28px' : '22px';
+    dot.style.height = dot.style.width;
+    dot.style.borderRadius = '999px';
+    dot.style.background = color;
+    dot.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+    frame.appendChild(dot);
+  }
+
+  if (cluster.members.length > MAX_CLUSTER_AVATARS) {
+    const badge = document.createElement('div');
+    badge.textContent = `+${cluster.members.length - MAX_CLUSTER_AVATARS}`;
+    badge.style.position = 'absolute';
+    badge.style.right = '-4px';
+    badge.style.bottom = '-4px';
+    badge.style.minWidth = '20px';
+    badge.style.height = '20px';
+    badge.style.padding = '0 5px';
+    badge.style.borderRadius = '999px';
+    badge.style.display = 'flex';
+    badge.style.alignItems = 'center';
+    badge.style.justifyContent = 'center';
+    badge.style.background = color;
+    badge.style.color = '#0F1923';
+    badge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+    badge.style.fontSize = '10px';
+    badge.style.fontWeight = '800';
+    badge.style.lineHeight = '1';
+    frame.appendChild(badge);
+  }
+
+  button.appendChild(frame);
+  button.onpointerdown = (event) => {
+    event.stopPropagation();
+  };
+  button.onpointerup = (event) => {
+    event.stopPropagation();
+  };
+  button.onwheel = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    onWheel?.(event);
+  };
+  button.onclick = (event) => {
+    event.stopPropagation();
+    onClick();
+  };
+
+  return button;
+}
+
 export default function ClassicGlobeScene({
   category,
   members,
@@ -37,6 +153,7 @@ export default function ClassicGlobeScene({
   cardOpen,
   darkMode,
   flyToTarget,
+  zoomCommand,
 }) {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
@@ -62,8 +179,25 @@ export default function ClassicGlobeScene({
       .showGraticules(false)
       .pointOfView({ lat: 20, lng: 0, altitude: 2.5 });
 
+    const controls = globe.controls();
+    if (controls) {
+      controls.minDistance = globe.getGlobeRadius() * MIN_CAMERA_DISTANCE_FACTOR;
+      controls.zoomSpeed = CLASSIC_ZOOM_SPEED;
+      controls.enableDamping = true;
+      controls.dampingFactor = CLASSIC_DAMPING_FACTOR;
+      controls.zoomToCursor = false;
+    }
+
     globeRef.current = globe;
     startLoop();
+
+    // Keep the CSS2D avatar overlay below app popups/cards.
+    requestAnimationFrame(() => {
+      const overlayLayers = container.querySelectorAll('div[style*="pointer-events: none"]');
+      overlayLayers.forEach((layer) => {
+        layer.style.zIndex = '1';
+      });
+    });
 
     return () => {
       stopLoop();
@@ -93,6 +227,21 @@ export default function ClassicGlobeScene({
   }, [flyToTarget]);
 
   useEffect(() => {
+    if (!globeRef.current || !zoomCommand?.direction) return;
+    const controls = globeRef.current.controls();
+    if (!controls) return;
+
+    if (zoomCommand.direction === 'in' && typeof controls.dollyIn === 'function') {
+      controls.dollyIn(1.25);
+    } else if (zoomCommand.direction === 'out' && typeof controls.dollyOut === 'function') {
+      controls.dollyOut(1.25);
+    }
+
+    controls.update?.();
+    onPointerEvent();
+  }, [zoomCommand, onPointerEvent]);
+
+  useEffect(() => {
     if (!globeRef.current) return;
     globeRef.current.backgroundColor('rgba(0,0,0,0)');
   }, [darkMode]);
@@ -104,19 +253,37 @@ export default function ClassicGlobeScene({
     const color = CATEGORY_COLORS[category] ?? '#FF9900';
 
     globeRef.current
-      .pointsData(clusters)
-      .pointLat((point) => point.lat)
-      .pointLng((point) => point.lng)
-      .pointRadius((point) => (point.members.length > 1 ? 0.6 : 0.4))
-      .pointColor(() => color)
-      .pointAltitude(0.01)
-      .onPointClick((point) => {
-        if (!point) return;
-        globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.8 }, 800);
-        const payload = point.members.length === 1 ? point.members[0] : point.members;
-        onMarkerClick(payload);
-      });
-  }, [members, category, onMarkerClick]);
+      .pointsData([])
+      .htmlElementsData(clusters)
+      .htmlLat((point) => point.lat)
+      .htmlLng((point) => point.lng)
+      .htmlAltitude(() => MARKER_ALTITUDE)
+      .htmlTransitionDuration(0)
+      .htmlElement((point) =>
+        createClusterElement(point, {
+          color,
+          darkMode,
+          onWheel: (event) => {
+            const wheelTarget = container.querySelector('canvas');
+            if (!wheelTarget) return;
+            wheelTarget.dispatchEvent(new WheelEvent('wheel', {
+              deltaX: event.deltaX,
+              deltaY: event.deltaY,
+              deltaMode: event.deltaMode,
+              clientX: event.clientX,
+              clientY: event.clientY,
+              bubbles: true,
+              cancelable: true,
+            }));
+          },
+          onClick: () => {
+            globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.8 }, 800);
+            const payload = point.members.length === 1 ? point.members[0] : point.members;
+            onMarkerClick(payload);
+          },
+        })
+      );
+  }, [members, category, darkMode, onMarkerClick]);
 
   const handlePointer = useCallback(() => onPointerEvent(), [onPointerEvent]);
 

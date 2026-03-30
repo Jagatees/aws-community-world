@@ -15,6 +15,7 @@ export default function App() {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [darkMode, setDarkMode] = useState(true);
   const [globeDesign, setGlobeDesign] = useState('classic');
+  const [zoomCommand, setZoomCommand] = useState({ direction: null, nonce: 0 });
 
   const { error, members, loading } = useCategory(activeCategory);
   const ActiveGlobeScene =
@@ -112,6 +113,10 @@ export default function App() {
     setActiveCategory(category);
   }, []);
 
+  const triggerZoom = useCallback((direction) => {
+    setZoomCommand((current) => ({ direction, nonce: current.nonce + 1 }));
+  }, []);
+
   return (
     <div
       className={`relative flex flex-col ${darkMode ? 'aws-shell-bg-dark' : 'aws-shell-bg-light'}`}
@@ -176,6 +181,7 @@ export default function App() {
             cardOpen={!!selectedMember}
             darkMode={darkMode}
             flyToTarget={flyToTarget}
+            zoomCommand={zoomCommand}
           />
           <div className="absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
             <div
@@ -188,6 +194,15 @@ export default function App() {
               }}
               aria-label="Globe design switcher"
             >
+              <button
+                type="button"
+                onClick={() => triggerZoom('out')}
+                className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                style={{ color: styleControlText }}
+                aria-label="Zoom out"
+              >
+                -
+              </button>
               <button
                 type="button"
                 onClick={() => setGlobeDesign('classic')}
@@ -211,6 +226,15 @@ export default function App() {
                 style={designButtonStyles('flat')}
               >
                 Flat
+              </button>
+              <button
+                type="button"
+                onClick={() => triggerZoom('in')}
+                className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                style={{ color: styleControlText }}
+                aria-label="Zoom in"
+              >
+                +
               </button>
             </div>
           </div>

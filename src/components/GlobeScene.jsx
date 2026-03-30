@@ -117,7 +117,7 @@ function projectMarker(cluster, phi, theta, width, height, scale) {
   };
 }
 
-export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget }) {
+export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand }) {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
   const sizeRef = useRef({ width: 1, height: 1 });
@@ -190,6 +190,19 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       targetTheta: clamp(target.theta, -MAX_TILT, MAX_TILT),
     };
   }, [flyToTarget]);
+
+  useEffect(() => {
+    if (!zoomCommand?.direction) return;
+
+    if (zoomCommand.direction === 'in') {
+      scaleRef.current = clamp(scaleRef.current * 1.14, MIN_SCALE, MAX_SCALE);
+    } else if (zoomCommand.direction === 'out') {
+      scaleRef.current = clamp(scaleRef.current / 1.14, MIN_SCALE, MAX_SCALE);
+    }
+
+    autoRotateEnabledRef.current = false;
+    if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+  }, [zoomCommand]);
 
   useEffect(() => {
     if (!canvasRef.current || !containerRef.current) return;

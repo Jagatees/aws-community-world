@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { geoGraticule10, geoNaturalEarth1, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import countriesTopo from 'world-atlas/countries-110m.json';
@@ -91,7 +91,7 @@ function buildProjection(activeTarget) {
   return projection;
 }
 
-export default function FlatMapScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget }) {
+export default function FlatMapScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand }) {
   const [focusedTarget, setFocusedTarget] = useState(null);
   const [manualZoom, setManualZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
@@ -165,6 +165,15 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
     event.preventDefault();
     setManualZoom((zoom) => clamp(zoom - event.deltaY * WHEEL_ZOOM_SENSITIVITY, MIN_ZOOM, MAX_ZOOM));
   }
+
+  useEffect(() => {
+    if (!zoomCommand?.direction) return;
+    if (zoomCommand.direction === 'in') {
+      setManualZoom((zoom) => clamp(zoom * ZOOM_STEP, MIN_ZOOM, MAX_ZOOM));
+    } else if (zoomCommand.direction === 'out') {
+      setManualZoom((zoom) => clamp(zoom / ZOOM_STEP, MIN_ZOOM, MAX_ZOOM));
+    }
+  }, [zoomCommand]);
 
   function handlePointerDown(event) {
     const target = event.target;
