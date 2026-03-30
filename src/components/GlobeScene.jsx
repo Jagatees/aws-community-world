@@ -219,8 +219,9 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
 
     const updateSize = () => {
       if (!containerRef.current) return;
-      const width = Math.max(1, Math.round(containerRef.current.clientWidth));
-      const height = Math.max(1, Math.round(containerRef.current.clientHeight));
+      const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+      const width = Math.max(1, Math.round(containerRef.current.clientWidth * pixelRatio));
+      const height = Math.max(1, Math.round(containerRef.current.clientHeight * pixelRatio));
       sizeRef.current = { width, height };
     };
 
@@ -330,8 +331,9 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     if (!canvasRef.current) return null;
 
     const rect = canvasRef.current.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
+    const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+    const x = (event.clientX - rect.left) * pixelRatio;
+    const y = (event.clientY - rect.top) * pixelRatio;
 
     return projectedMarkersRef.current.find((marker) => {
       const dx = marker.x - x;
