@@ -66,7 +66,7 @@ export default function Header({ darkMode, onToggleDark }) {
 
       {/* Telegram link */}
       <a
-        href="https://t.me/awspulse"
+        href="https://t.me/awsomeupdates"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Join the Telegram group"
