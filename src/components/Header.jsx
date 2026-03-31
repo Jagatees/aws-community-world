@@ -30,6 +30,40 @@ export default function Header({ darkMode, onToggleDark }) {
         AWS Cloud Club @ SIT created by Jagatees
       </span>
 
+      {/* Article link */}
+      <a
+        href="https://builder.aws.com/content/3BhQvOPyvUmq9BJPXlu37vFryfm/aws-community-globe"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Read the AWS Community Globe article"
+        className="p-1.5 rounded transition-colors"
+        style={{ color: muted }}
+        onMouseEnter={(e) => (e.currentTarget.style.color = '#FF9900')}
+        onMouseLeave={(e) => (e.currentTarget.style.color = muted)}
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="2" y1="12" x2="22" y2="12" />
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+        </svg>
+      </a>
+
+      {/* Telegram link */}
+      <a
+        href="https://t.me/awspulse"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Join the Telegram group"
+        className="p-1.5 rounded transition-colors"
+        style={{ color: muted }}
+        onMouseEnter={(e) => (e.currentTarget.style.color = '#FF9900')}
+        onMouseLeave={(e) => (e.currentTarget.style.color = muted)}
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z" />
+        </svg>
+      </a>
+
       {/* GitHub link */}
       <a
         href="https://github.com/Jagatees/aws-community-world"
