@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
+    "@vercel/analytics": "^2.0.1",
     "cobe": "^0.6.4",
     "d3-geo": "^3.1.1",
     "globe.gl": "^2.45.1",
