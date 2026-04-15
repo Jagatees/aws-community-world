@@ -1,6 +1,7 @@
 import { useEffect, useRef, useCallback } from 'react';
 import Globe from 'globe.gl';
 import { useAutoRotate } from '../hooks/useAutoRotate';
+import { getMemberBadgeLabel, getMemberImage } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -33,15 +34,6 @@ function clusterMembers(members) {
   }
 
   return clusters;
-}
-
-function getMemberImage(member) {
-  if (member.avatarUrl) return member.avatarUrl;
-  if (Array.isArray(member.ledBy)) {
-    const leaderImage = member.ledBy.find((leader) => leader?.imageUrl)?.imageUrl;
-    if (leaderImage) return leaderImage;
-  }
-  return '';
 }
 
 function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
@@ -95,13 +87,45 @@ function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
       frame.appendChild(img);
     });
   } else {
-    const dot = document.createElement('div');
-    dot.style.width = cluster.members.length > 1 ? '28px' : '22px';
-    dot.style.height = dot.style.width;
-    dot.style.borderRadius = '999px';
-    dot.style.background = color;
-    dot.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
-    frame.appendChild(dot);
+    const extraCount = Math.max(0, cluster.members.length - 1);
+    const badge = document.createElement('div');
+    badge.textContent = getMemberBadgeLabel(cluster.members[0]);
+    badge.style.width = '34px';
+    badge.style.height = '34px';
+    badge.style.borderRadius = '999px';
+    badge.style.background = color;
+    badge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+    badge.style.display = 'flex';
+    badge.style.alignItems = 'center';
+    badge.style.justifyContent = 'center';
+    badge.style.color = '#0F1923';
+    badge.style.fontSize = '10px';
+    badge.style.fontWeight = '800';
+    badge.style.lineHeight = '1';
+    badge.style.letterSpacing = '0.04em';
+    frame.appendChild(badge);
+
+    if (extraCount > 0) {
+      const countBadge = document.createElement('div');
+      countBadge.textContent = `+${extraCount}`;
+      countBadge.style.position = 'absolute';
+      countBadge.style.right = '-4px';
+      countBadge.style.bottom = '-4px';
+      countBadge.style.minWidth = '20px';
+      countBadge.style.height = '20px';
+      countBadge.style.padding = '0 5px';
+      countBadge.style.borderRadius = '999px';
+      countBadge.style.display = 'flex';
+      countBadge.style.alignItems = 'center';
+      countBadge.style.justifyContent = 'center';
+      countBadge.style.background = color;
+      countBadge.style.color = '#0F1923';
+      countBadge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+      countBadge.style.fontSize = '10px';
+      countBadge.style.fontWeight = '800';
+      countBadge.style.lineHeight = '1';
+      frame.appendChild(countBadge);
+    }
   }
 
   if (cluster.members.length > MAX_CLUSTER_AVATARS) {

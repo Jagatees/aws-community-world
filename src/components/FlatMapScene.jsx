@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { geoGraticule10, geoNaturalEarth1, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import countriesTopo from 'world-atlas/countries-110m.json';
+import { getMemberBadgeLabel, getMemberImage } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -22,15 +23,6 @@ const WHEEL_ZOOM_SENSITIVITY = 0.0015;
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
-}
-
-function getMemberImage(member) {
-  if (member.avatarUrl) return member.avatarUrl;
-  if (Array.isArray(member.ledBy)) {
-    const leaderImage = member.ledBy.find((leader) => leader?.imageUrl)?.imageUrl;
-    if (leaderImage) return leaderImage;
-  }
-  return '';
 }
 
 function getPanBounds(zoomLevel) {
@@ -415,6 +407,11 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                       </>
                     ) : (
                       <>
+                        {(() => {
+                          const extraCount = Math.max(0, marker.members.length - 1);
+                          const label = getMemberBadgeLabel(marker.members[0]);
+                          return (
+                            <>
                         <circle
                           r={marker.size * 0.88}
                           fill={markerColor}
@@ -429,19 +426,43 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                           strokeWidth="2.5"
                           pointerEvents="none"
                         />
-                        {marker.members.length > 1 && (
-                          <text
-                            y="1"
-                            textAnchor="middle"
-                            dominantBaseline="middle"
-                            fill="#0F1923"
-                            fontSize={marker.members.length > 9 ? '10' : '11'}
-                            fontWeight="800"
-                            pointerEvents="none"
-                          >
-                            {marker.members.length}
-                          </text>
+                        <text
+                          y="1"
+                          textAnchor="middle"
+                          dominantBaseline="middle"
+                          fill="#0F1923"
+                          fontSize="9"
+                          fontWeight="800"
+                          letterSpacing="0.04em"
+                          pointerEvents="none"
+                        >
+                          {label}
+                        </text>
+                        {extraCount > 0 && (
+                          <g transform={`translate(${marker.size * 0.62} ${marker.size * 0.62})`}>
+                            <circle
+                              r={Math.max(7, marker.size * 0.44)}
+                              fill={markerColor}
+                              stroke={darkMode ? '#09131c' : '#ffffff'}
+                              strokeWidth="2"
+                              pointerEvents="none"
+                            />
+                            <text
+                              y="1"
+                              textAnchor="middle"
+                              dominantBaseline="middle"
+                              fill="#0F1923"
+                              fontSize="8"
+                              fontWeight="800"
+                              pointerEvents="none"
+                            >
+                              +{extraCount}
+                            </text>
+                          </g>
                         )}
+                            </>
+                          );
+                        })()}
                       </>
                     )}
                     <circle
