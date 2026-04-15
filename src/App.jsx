@@ -184,58 +184,86 @@ export default function App() {
             zoomCommand={zoomCommand}
           />
           <div className="absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
-            <div
-              className="flex items-center rounded-full p-1"
-              style={{
-                background: styleControlBg,
-                border: `1px solid ${styleControlBorder}`,
-                backdropFilter: 'blur(14px)',
-                WebkitBackdropFilter: 'blur(14px)',
-              }}
-              aria-label="Globe design switcher"
-            >
-              <button
-                type="button"
-                onClick={() => triggerZoom('out')}
-                className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                style={{ color: styleControlText }}
-                aria-label="Zoom out"
+            <div className="flex items-stretch gap-3">
+              <div
+                className="flex items-center rounded-full p-1"
+                style={{
+                  background: styleControlBg,
+                  border: `1px solid ${styleControlBorder}`,
+                  backdropFilter: 'blur(14px)',
+                  WebkitBackdropFilter: 'blur(14px)',
+                }}
+                aria-label="Globe design switcher"
               >
-                -
-              </button>
-              <button
-                type="button"
-                onClick={() => setGlobeDesign('classic')}
-                className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                style={designButtonStyles('classic')}
+                <button
+                  type="button"
+                  onClick={() => setGlobeDesign('classic')}
+                  className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                  style={designButtonStyles('classic')}
+                >
+                  Classic
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setGlobeDesign('cobe')}
+                  className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                  style={designButtonStyles('cobe')}
+                >
+                  Sleek
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setGlobeDesign('flat')}
+                  className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                  style={designButtonStyles('flat')}
+                >
+                  Flat
+                </button>
+              </div>
+
+              <div
+                className="flex items-center rounded-full p-1"
+                style={{
+                  background: styleControlBg,
+                  border: `1px solid ${styleControlBorder}`,
+                  backdropFilter: 'blur(14px)',
+                  WebkitBackdropFilter: 'blur(14px)',
+                }}
+                aria-label="Zoom controls"
               >
-                Classic
-              </button>
-              <button
-                type="button"
-                onClick={() => setGlobeDesign('cobe')}
-                className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                style={designButtonStyles('cobe')}
-              >
-                Sleek
-              </button>
-              <button
-                type="button"
-                onClick={() => setGlobeDesign('flat')}
-                className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                style={designButtonStyles('flat')}
-              >
-                Flat
-              </button>
-              <button
-                type="button"
-                onClick={() => triggerZoom('in')}
-                className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                style={{ color: styleControlText }}
-                aria-label="Zoom in"
-              >
-                +
-              </button>
+                <button
+                  type="button"
+                  onClick={() => triggerZoom('out')}
+                  className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
+                  style={{
+                    color: styleControlText,
+                    minWidth: '2.5rem',
+                    minHeight: '2.1rem',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                  aria-label="Zoom out"
+                >
+                  -
+                </button>
+                <button
+                  type="button"
+                  onClick={() => triggerZoom('in')}
+                  className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
+                  style={{
+                    color: styleControlText,
+                    minWidth: '2.5rem',
+                    minHeight: '2.1rem',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                  aria-label="Zoom in"
+                >
+                  +
+                </button>
+              </div>
             </div>
           </div>
           {isEmpty && (

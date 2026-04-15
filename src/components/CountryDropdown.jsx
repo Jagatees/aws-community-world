@@ -46,9 +46,6 @@ export default function CountryDropdown({
   const menuBg = darkMode ? '#1B2836' : '#ffffff';
   const menuHover = darkMode ? 'rgba(255,153,0,0.1)' : 'rgba(255,153,0,0.08)';
   const menuText = darkMode ? '#DCE7F0' : '#17324B';
-  const selectedCode = selectedCountry ? getCountryCode(selectedCountry) : null;
-  const selectedFlag = selectedCode ? countryCodeToFlag(selectedCode) : null;
-
   const menu = open && createPortal(
     <ul
       ref={menuRef}
@@ -58,14 +55,14 @@ export default function CountryDropdown({
         top: menuPos.top,
         left: menuPos.left,
         zIndex: 9999,
-        minWidth: '220px',
+        minWidth: '240px',
         maxHeight: '300px',
         overflowY: 'auto',
         backgroundColor: menuBg,
         border: `1px solid ${border}`,
-        borderRadius: '10px',
-        boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
-        padding: '4px',
+        borderRadius: '14px',
+        boxShadow: '0 18px 36px rgba(0,0,0,0.28)',
+        padding: '6px',
         margin: 0,
         listStyle: 'none',
       }}
@@ -81,8 +78,8 @@ export default function CountryDropdown({
           display: 'flex',
           alignItems: 'center',
           gap: '8px',
-          padding: '7px 10px',
-          borderRadius: '6px',
+          padding: '10px 12px',
+          borderRadius: '10px',
           cursor: 'pointer',
           fontSize: '0.8rem',
           fontWeight: !selectedCountry ? 700 : 500,
@@ -119,8 +116,8 @@ export default function CountryDropdown({
               display: 'flex',
               alignItems: 'center',
               gap: '8px',
-              padding: '7px 10px',
-              borderRadius: '6px',
+              padding: '10px 12px',
+              borderRadius: '10px',
               cursor: 'pointer',
               fontSize: '0.8rem',
               fontWeight: isSelected ? 700 : 500,
@@ -159,17 +156,19 @@ export default function CountryDropdown({
           display: 'inline-flex',
           alignItems: 'center',
           gap: '8px',
-          borderRadius: '999px',
-          border: `1px solid ${selectedCountry ? '#FF9900' : border}`,
-          background: selectedCountry ? 'rgba(255,153,0,0.12)' : 'transparent',
+          minHeight: '40px',
+          padding: '0 12px',
+          borderRadius: 0,
+          border: 'none',
+          background: 'transparent',
           color: selectedCountry ? '#FF9900' : inactiveText,
           fontWeight: 600,
           whiteSpace: 'nowrap',
           cursor: 'pointer',
+          boxShadow: 'none',
           ...buttonStyle,
         }}
       >
-        <span style={{ fontSize: '1rem', lineHeight: 1 }}>{selectedFlag ?? '🌍'}</span>
         <span>{selectedCountry || buttonLabel}</span>
         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
           <polyline points="6 9 12 15 18 9" />

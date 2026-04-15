@@ -34,6 +34,7 @@ export default function TabNav({
   const activeBg = darkMode ? 'rgba(36, 52, 71, 0.88)' : 'rgba(240, 247, 255, 0.94)';
   const activeText = darkMode ? '#FFFFFF' : '#0F1923';
   const inactiveText = darkMode ? '#8B9BAA' : '#5a7a99';
+  const divider = darkMode ? 'rgba(115, 145, 171, 0.34)' : 'rgba(134, 162, 190, 0.5)';
 
   return (
     <div
@@ -75,7 +76,18 @@ export default function TabNav({
           );
         })}
         {!!countries.length && (
-          <div style={{ marginLeft: '8px', marginRight: '12px', flexShrink: 0 }}>
+          <div
+            style={{
+              marginLeft: '10px',
+              marginRight: '12px',
+              paddingLeft: '14px',
+              flexShrink: 0,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0',
+              borderLeft: `1px solid ${divider}`,
+            }}
+          >
             <CountryDropdown
               darkMode={darkMode}
               countries={countries}
@@ -85,7 +97,7 @@ export default function TabNav({
               className="px-3 py-1 text-xs"
               buttonStyle={{
                 color: selectedCountry ? '#FF9900' : inactiveText,
-                background: selectedCountry ? 'rgba(255,153,0,0.12)' : 'transparent',
+                background: 'transparent',
               }}
             />
           </div>
