@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 
+const categoryCache = new Map();
+const categoryRequestCache = new Map();
+
 /**
  * Normalize raw JSON entries into the common Member shape.
  * @param {any[]} raw
@@ -39,17 +42,39 @@ export function useCategory(category) {
     if (!category) return;
 
     let cancelled = false;
+    const cachedMembers = categoryCache.get(category);
+
+    if (cachedMembers) {
+      setMembers(cachedMembers);
+      setLoading(false);
+      setError(null);
+      return () => {
+        cancelled = true;
+      };
+    }
+
     setLoading(true);
     setError(null);
 
-    import(`../data/${category}.json`)
-      .then((mod) => {
+    let request = categoryRequestCache.get(category);
+    if (!request) {
+      request = import(`../data/${category}.json`).then((mod) => {
+        const normalized = normalizeMembers(mod.default, category);
+        categoryCache.set(category, normalized);
+        return normalized;
+      });
+      categoryRequestCache.set(category, request);
+    }
+
+    request
+      .then((normalized) => {
         if (!cancelled) {
-          setMembers(normalizeMembers(mod.default, category));
+          setMembers(normalized);
           setLoading(false);
         }
       })
       .catch(() => {
+        categoryRequestCache.delete(category);
         if (!cancelled) {
           setError('Could not load community data.');
           setMembers([]);

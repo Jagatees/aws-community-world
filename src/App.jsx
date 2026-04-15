@@ -1,12 +1,13 @@
-import { useState, useCallback, useMemo } from 'react';
+import { lazy, Suspense, useState, useCallback, useMemo } from 'react';
 import Header from './components/Header';
 import TabNav from './components/TabNav';
-import CobeGlobeScene from './components/GlobeScene';
-import ClassicGlobeScene from './components/ClassicGlobeScene';
-import FlatMapScene from './components/FlatMapScene';
 import ProfileCard from './components/ProfileCard';
 import TagFilter from './components/TagFilter';
 import { useCategory } from './hooks/useCategory';
+
+const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
+const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
+const FlatMapScene = lazy(() => import('./components/FlatMapScene'));
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('heroes');
@@ -89,6 +90,9 @@ export default function App() {
   const styleControlBg = darkMode ? 'rgba(8, 16, 24, 0.78)' : 'rgba(255, 255, 255, 0.86)';
   const styleControlBorder = darkMode ? 'rgba(76, 109, 138, 0.45)' : 'rgba(160, 187, 212, 0.85)';
   const styleControlText = darkMode ? '#DCE7F0' : '#17324B';
+  const globeLoadingBg = darkMode ? 'rgba(7, 16, 25, 0.76)' : 'rgba(255, 255, 255, 0.8)';
+  const globeLoadingBorder = darkMode ? 'rgba(62, 95, 123, 0.4)' : 'rgba(160, 187, 212, 0.72)';
+  const globeLoadingText = darkMode ? '#A7BDCF' : '#537190';
 
   function designButtonStyles(design) {
     const active = globeDesign === design;
@@ -174,15 +178,37 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          <ActiveGlobeScene
-            category={activeCategory}
-            members={filteredMembers}
-            onMarkerClick={handleMarkerClick}
-            cardOpen={!!selectedMember}
-            darkMode={darkMode}
-            flyToTarget={flyToTarget}
-            zoomCommand={zoomCommand}
-          />
+          <Suspense
+            fallback={(
+              <div
+                className={`relative flex h-full w-full items-center justify-center overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}
+              >
+                <div className="aws-globe-pattern" />
+                <div
+                  className="relative z-10 rounded-full px-4 py-2 text-sm font-semibold"
+                  style={{
+                    color: globeLoadingText,
+                    background: globeLoadingBg,
+                    border: `1px solid ${globeLoadingBorder}`,
+                    backdropFilter: 'blur(14px)',
+                    WebkitBackdropFilter: 'blur(14px)',
+                  }}
+                >
+                  Loading globe...
+                </div>
+              </div>
+            )}
+          >
+            <ActiveGlobeScene
+              category={activeCategory}
+              members={filteredMembers}
+              onMarkerClick={handleMarkerClick}
+              cardOpen={!!selectedMember}
+              darkMode={darkMode}
+              flyToTarget={flyToTarget}
+              zoomCommand={zoomCommand}
+            />
+          </Suspense>
           <div className="absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
             <div className="flex items-stretch gap-3">
               <div
