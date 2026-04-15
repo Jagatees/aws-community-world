@@ -1,15 +1,78 @@
 {
-  "updatedAt": "2026-04-15T20:18:33.141Z",
+  "updatedAt": "2026-04-15T21:18:36.714Z",
   "latest": [
     {
+      "id": "/content/3CPTKltkSqUWjJkBIrs2wIDyDv5",
+      "title": "The Cloud Isn't Complicated!",
+      "description": "Cloud Computing sounds scary and technical, but I promise it is a lot more simple than it sounds.",
+      "url": "https://builder.aws.com/content/3CPTKltkSqUWjJkBIrs2wIDyDv5",
+      "imageUrl": "",
+      "authorName": "Blake Stewart",
+      "authorAlias": "blakestwrt",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-04-15T20:50:28.590Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3AZ7oMkuqLFyUYN46XfeVayJtKl",
+      "title": "AIdeas Finalist: VIGIA, The RoadIntelligence IDE",
+      "description": "VIGIA is the nervous system of the sentient city. By transforming everyday vehicles into a decentralized sensor network, it feeds the pulse of the road into an autonomous AI brain. VIGIA doesn’t just detect hazards, it actively plans repair logistics and dispatches city crews, turning static concrete into a living, self-healing ecosystem.",
+      "url": "https://builder.aws.com/content/3AZ7oMkuqLFyUYN46XfeVayJtKl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CJlHMBfy4H1eincEllBGkaVvLP/Whats.webp",
+      "authorName": "Ben Biju",
+      "authorAlias": "benbiju",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AgKXVm6IPN1QQ10B0Anjmf6KJB.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "APJC",
+        "aideas-2025",
+        "commercial-solutions"
+      ],
+      "publishedAt": "2026-04-15T20:45:50.045Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CPQb8qWvb17sgJP5gwqGGHwLdE",
+      "title": "Building an Internal Developer Platform with Kubernetes, Docker, and GitOps on AWS",
+      "description": "Modern engineering teams are under constant pressure to deliver faster without compromising reliability. One of the most effective ways to achieve this is by implementing an Internal Developer Platform (IDP)—a self-service layer that abstracts infrastructure complexity and empowers developers to focus on building features.",
+      "url": "https://builder.aws.com/content/3CPQb8qWvb17sgJP5gwqGGHwLdE",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CPR07ykkz2rffEQVmqUQHfH8oK/Scre.webp",
+      "authorName": "Yevgeni Shapiro",
+      "authorAlias": "yevgenis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CPPxeMUxyOCP5kGVNNZjTBZF8m.webp",
+      "location": "IL",
+      "lat": 30.8124247,
+      "lng": 34.8594762,
+      "tags": [
+        "amazon-ec2",
+        "docker",
+        "kubernetes",
+        "gitops",
+        "github"
+      ],
+      "publishedAt": "2026-04-15T20:35:27.112Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CPHm7YVEvVnMSaHZGW61ZJ8QYX",
-      "title": "Building a Multi-Tenant Platform with vCluster on AWS",
+      "title": "Building a Multi-Tenant Platform with vCluster on EKS",
       "description": "Model Once, Run Anywhere with Shared Kubernetes Infrastructure",
       "url": "https://builder.aws.com/content/3CPHm7YVEvVnMSaHZGW61ZJ8QYX",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CPInNhCNcDh1wfhMguyAFXghGl/yevg.webp",
       "authorName": "Yevgeni Shapiro",
       "authorAlias": "yevgenis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COiNGapAS6X2d4iUmxWv8EgWPf.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CPPxeMUxyOCP5kGVNNZjTBZF8m.webp",
       "location": "IL",
       "lat": 30.8124247,
       "lng": 34.8594762,
@@ -118,7 +181,7 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CP2OipZMjIbDMLbrUJ47YfWOxW/2cc5.webp",
       "authorName": "Yevgeni Shapiro",
       "authorAlias": "yevgenis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COiNGapAS6X2d4iUmxWv8EgWPf.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CPPxeMUxyOCP5kGVNNZjTBZF8m.webp",
       "location": "IL",
       "lat": 30.8124247,
       "lng": 34.8594762,
@@ -153,75 +216,6 @@
         "object-storage"
       ],
       "publishedAt": "2026-04-15T16:51:56.085Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C4g8JKvUVkuhCkzeEakRIjUAvM",
-      "title": "[ES] S3 Files: un complemento detallado",
-      "description": "Notas técnicas importantes relevantes y complementarias basado en el anuncio de la funcionalidad de S3 Files en el servicio de S3 para entenderlo: una nueva forma de acceder objetos de S3 como archivos y carpetas",
-      "url": "https://builder.aws.com/content/3C4g8JKvUVkuhCkzeEakRIjUAvM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COxwMECSDPbi8YY3E1iknAZyb2/ES-p.webp",
-      "authorName": "Carlos Chicata",
-      "authorAlias": "ferchicata49",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B9gO2DnQ9yhcrz6FLvZUPz6pdJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [
-        "amazon-s3",
-        "cloud-storage",
-        "data-integration",
-        "spanish",
-        "amazon-efs"
-      ],
-      "publishedAt": "2026-04-15T16:51:54.173Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3COsQ0LZd2VKBlID2jjltVC5W9S",
-      "title": "Building a Scalable Serverless Workflow on AWS",
-      "description": "Modern applications demand scalability, resilience, and cost efficiency—and serverless architecture delivers exactly that. In this post, we’ll walk through a powerful event-driven workflow built entirely on Amazon Web Services using core managed services.",
-      "url": "https://builder.aws.com/content/3COsQ0LZd2VKBlID2jjltVC5W9S",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COuWX3dxXddPQ9ZeBK1rTIjoGB/Scre.webp",
-      "authorName": "Yevgeni Shapiro",
-      "authorAlias": "yevgenis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COiNGapAS6X2d4iUmxWv8EgWPf.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "aws-lambda",
-        "amazon-api-gateway",
-        "amazon-sqs",
-        "amazon-sns",
-        "terraform"
-      ],
-      "publishedAt": "2026-04-15T15:59:58.511Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3COmFutoK2su0bH2RcdJpi4oByl",
-      "title": "The Art of Hybrid Development: Optimizing Application Lifecycles with Kiro Pro and AWS",
-      "description": "A technical deep-dive based on real-world implementation experiences, detailing a high-performance workflow using Kiro Pro. We explore how to effectively segment the development process: from architecture and code generation in IDE environments (Windows) to rigorous deployment, least-privilege analysis, and automated technical documentation via CLI (Linux). This is designed for engineers looking to maximize the efficiency of AWS MCPs and advanced LLMs.",
-      "url": "https://builder.aws.com/content/3COmFutoK2su0bH2RcdJpi4oByl",
-      "imageUrl": "",
-      "authorName": "Exegol",
-      "authorAlias": "luiszuniga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C3Da0li0bePuHXisvoaRBKWQq0.webp",
-      "location": "CR",
-      "lat": 10.2735633,
-      "lng": -84.0739102,
-      "tags": [
-        "kiro",
-        "kiro-with-pro",
-        "developer-productivity",
-        "developer-tools",
-        "development"
-      ],
-      "publishedAt": "2026-04-15T15:28:01.008Z",
       "likesCount": 0,
       "commentsCount": 0
     }
@@ -328,28 +322,6 @@
       "commentsCount": 71
     },
     {
-      "id": "/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
-      "title": "Amazon S3 Files: from Kafka to S3 via NFS",
-      "description": "A hands-on demo of Amazon S3 Files with Confluent Cloud Kafka, Lambda, and AWS CDK. I show how Kafka events can be written to an S3-backed NFS mount using normal filesystem calls, what CDK still gets wrong today, and how cold vs warm reads behave for small and large files in real runs.",
-      "url": "https://builder.aws.com/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COBOROdPSfCENWGuVxOjPl5hlB/kafk.webp",
-      "authorName": "Alexander Smirnoff",
-      "authorAlias": "dobeerman555",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38QNnUPycSxHx0qbwCCdgHratOh.webp",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [
-        "amazon-s3",
-        "apache-kafka",
-        "amazon-efs",
-        "event-driven"
-      ],
-      "publishedAt": "2026-04-15T09:57:05.491Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CLVOwyXmwoVCAhyUmlLqjgAEJH",
       "title": "El problema de los Small Files: Guía de optimización en S3",
       "description": "Descubre por qué el exceso de archivos pequeños destruye el rendimiento de Spark, Glue y Athena. Aprende estrategias de compactación, control de particionamiento y optimización de tamaño (128MB-512MB) para reducir costos y acelerar tus pipelines de datos hasta 10 veces.",
@@ -370,6 +342,28 @@
       "publishedAt": "2026-04-14T11:14:07.306Z",
       "likesCount": 6,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
+      "title": "Amazon S3 Files: from Kafka to S3 via NFS",
+      "description": "A hands-on demo of Amazon S3 Files with Confluent Cloud Kafka, Lambda, and AWS CDK. I show how Kafka events can be written to an S3-backed NFS mount using normal filesystem calls, what CDK still gets wrong today, and how cold vs warm reads behave for small and large files in real runs.",
+      "url": "https://builder.aws.com/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COBOROdPSfCENWGuVxOjPl5hlB/kafk.webp",
+      "authorName": "Alexander Smirnoff",
+      "authorAlias": "dobeerman555",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38QNnUPycSxHx0qbwCCdgHratOh.webp",
+      "location": "DE",
+      "lat": 51.1638175,
+      "lng": 10.4478313,
+      "tags": [
+        "amazon-s3",
+        "apache-kafka",
+        "amazon-efs",
+        "event-driven"
+      ],
+      "publishedAt": "2026-04-15T09:57:05.491Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
@@ -411,21 +405,27 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3COGFhIVG4uUogF5XYRTfTMd6OM",
-      "title": "Agentic Branding: Let Kiro Turn Your CV into a Cloud-Native Website",
-      "description": "In this guide, I am going to use AWS Kiro (the intelligent AI agent) to automate a professional transformation. I'll take your existing LinkedIn profile data and, with just three prompts, have Kiro build a modern, cloud-native static portfolio website using Next.js and Tailwind CSS and deploy it on S3.",
-      "url": "https://builder.aws.com/content/3COGFhIVG4uUogF5XYRTfTMd6OM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COK56pB6xxUPeebwlK26ymynit/fina.webp",
-      "authorName": "Shaista Aman",
-      "authorAlias": "shaistaaman",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2bjP6kr6pFbaP0QVf3PkuxzXoxt.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [],
-      "publishedAt": "2026-04-15T11:17:58.049Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "id": "/content/3C849AI6lTrLJQG0bBFo1UdO20o",
+      "title": "AI won't replace developers — but ignoring it will cost you",
+      "description": "Practical insights and a live demo on how AI tools like Kiro are reshaping the daily workflow of tech professionals, presented at the AWS User Group Rio Grande do Sul meetup.",
+      "url": "https://builder.aws.com/content/3C849AI6lTrLJQG0bBFo1UdO20o",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C84ErfkJqQQ65a6EjrOglvO933/IMG_3.webp",
+      "authorName": "Flavio Pimenta",
+      "authorAlias": "pimenta",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2dTZyQaqevtXxqApiFIHKWK2qfj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "kiro",
+        "kiro-heroes",
+        "cli",
+        "vibe-coding",
+        "spec-drivien-development"
+      ],
+      "publishedAt": "2026-04-09T16:57:00.738Z",
+      "likesCount": 18,
+      "commentsCount": 7
     }
   ]
 }
