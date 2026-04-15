@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-15T17:24:40.100Z",
+  "updatedAt": "2026-04-15T18:25:07.743Z",
   "latest": [
+    {
+      "id": "/content/3CMHk24QscXfCrCJRaMuZh0EMDI",
+      "title": "Secure Agent Sandboxes for Programmatic Tool Calling on AWS: Firecracker and gVisor on EKS",
+      "description": "Building isolated code execution environments for AI agents that write and run untrusted Python with inline tool calling",
+      "url": "https://builder.aws.com/content/3CMHk24QscXfCrCJRaMuZh0EMDI",
+      "imageUrl": "",
+      "authorName": "Anuj Dewangan",
+      "authorAlias": "anujdewangan",
+      "authorAvatarUrl": "",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "agentic-ai",
+        "agentic-interactions",
+        "amazon-eks",
+        "ai-agents",
+        "kubernetes"
+      ],
+      "publishedAt": "2026-04-15T17:43:13.839Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3BqGkOg2X6mEl25kJqU6gqgQR51",
       "title": "Beyond the Pilot: Why the \"Frontier Firm\" Needs a Graph Intelligence Layer",
@@ -368,7 +391,7 @@
         "event-driven"
       ],
       "publishedAt": "2026-04-15T09:57:05.491Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -409,29 +432,6 @@
       "publishedAt": "2026-04-15T09:27:47.021Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3C5nIPALjytgWN2IkT2oJsd2zPu",
-      "title": "Como Rastrear Logins de Usuários no AWS Cognito Usando o Trigger Post Authentication",
-      "description": "Estratégia em duas fases que combina uma chamada de API pré-autenticação para capturar o IP do cliente com o trigger Lambda Post Authentication do Cognito para construir uma trilha de auditoria completa no DynamoDB.",
-      "url": "https://builder.aws.com/content/3C5nIPALjytgWN2IkT2oJsd2zPu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C5nTwIiUfURwj3g8O4pxDESgyO/Chat.webp",
-      "authorName": "Carlos Biagolini",
-      "authorAlias": "cbiagolini",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "amazon-cognito",
-        "serverless",
-        "amazon-dynamodb",
-        "aws-lambda",
-        "security"
-      ],
-      "publishedAt": "2026-04-15T09:01:14.703Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -452,7 +452,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 33,
+      "likesCount": 34,
       "commentsCount": 6
     },
     {
@@ -469,31 +469,8 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 8,
+      "likesCount": 9,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
-      "title": "AIdeas Finalist: RTC — Runtime Trust Calibrator",
-      "description": "Most AI failures aren’t wrong answers—they’re confident answers given under uncertainty. RTC introduces a runtime layer that calibrates how strongly AI systems commit to what they say.",
-      "url": "https://builder.aws.com/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C5Q8R09Qg9YBQXql3eru38ddYT/rtc_.webp",
-      "authorName": "Arijit Chatterjee",
-      "authorAlias": "arijitchatterjee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ZjAZjAcD1SLCBSEJdRJM9ZSQU.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aideas-2025",
-        "APJC",
-        "commercial-solutions",
-        "responsible-ai",
-        "governance"
-      ],
-      "publishedAt": "2026-04-08T18:15:47.018Z",
-      "likesCount": 50,
-      "commentsCount": 15
     },
     {
       "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
@@ -515,7 +492,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-13T17:12:02.757Z",
-      "likesCount": 18,
+      "likesCount": 19,
       "commentsCount": 2
     },
     {
@@ -538,24 +515,29 @@
         "amazon-q"
       ],
       "publishedAt": "2025-07-22T11:19:00.233Z",
-      "likesCount": 439,
+      "likesCount": 440,
       "commentsCount": 71
     },
     {
-      "id": "/content/3COGFhIVG4uUogF5XYRTfTMd6OM",
-      "title": "Agentic Branding: Let Kiro Turn Your CV into a Cloud-Native Website",
-      "description": "In this guide, I am going to use AWS Kiro (the intelligent AI agent) to automate a professional transformation. I'll take your existing LinkedIn profile data and, with just three prompts, have Kiro build a modern, cloud-native static portfolio website using Next.js and Tailwind CSS and deploy it on S3.",
-      "url": "https://builder.aws.com/content/3COGFhIVG4uUogF5XYRTfTMd6OM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COK56pB6xxUPeebwlK26ymynit/fina.webp",
-      "authorName": "Shaista Aman",
-      "authorAlias": "shaistaaman",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2bjP6kr6pFbaP0QVf3PkuxzXoxt.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [],
-      "publishedAt": "2026-04-15T11:17:58.049Z",
-      "likesCount": 2,
+      "id": "/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
+      "title": "Amazon S3 Files: from Kafka to S3 via NFS",
+      "description": "A hands-on demo of Amazon S3 Files with Confluent Cloud Kafka, Lambda, and AWS CDK. I show how Kafka events can be written to an S3-backed NFS mount using normal filesystem calls, what CDK still gets wrong today, and how cold vs warm reads behave for small and large files in real runs.",
+      "url": "https://builder.aws.com/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COBOROdPSfCENWGuVxOjPl5hlB/kafk.webp",
+      "authorName": "Alexander Smirnoff",
+      "authorAlias": "dobeerman555",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38QNnUPycSxHx0qbwCCdgHratOh.webp",
+      "location": "DE",
+      "lat": 51.1638175,
+      "lng": 10.4478313,
+      "tags": [
+        "amazon-s3",
+        "apache-kafka",
+        "amazon-efs",
+        "event-driven"
+      ],
+      "publishedAt": "2026-04-15T09:57:05.491Z",
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -577,29 +559,41 @@
         "data-engineering"
       ],
       "publishedAt": "2026-04-14T11:14:07.306Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 2
     },
     {
-      "id": "/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
-      "title": "Amazon S3 Files: from Kafka to S3 via NFS",
-      "description": "A hands-on demo of Amazon S3 Files with Confluent Cloud Kafka, Lambda, and AWS CDK. I show how Kafka events can be written to an S3-backed NFS mount using normal filesystem calls, what CDK still gets wrong today, and how cold vs warm reads behave for small and large files in real runs.",
-      "url": "https://builder.aws.com/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COBOROdPSfCENWGuVxOjPl5hlB/kafk.webp",
-      "authorName": "Alexander Smirnoff",
-      "authorAlias": "dobeerman555",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38QNnUPycSxHx0qbwCCdgHratOh.webp",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [
-        "amazon-s3",
-        "apache-kafka",
-        "amazon-efs",
-        "event-driven"
-      ],
-      "publishedAt": "2026-04-15T09:57:05.491Z",
+      "id": "/content/3COGFhIVG4uUogF5XYRTfTMd6OM",
+      "title": "Agentic Branding: Let Kiro Turn Your CV into a Cloud-Native Website",
+      "description": "In this guide, I am going to use AWS Kiro (the intelligent AI agent) to automate a professional transformation. I'll take your existing LinkedIn profile data and, with just three prompts, have Kiro build a modern, cloud-native static portfolio website using Next.js and Tailwind CSS and deploy it on S3.",
+      "url": "https://builder.aws.com/content/3COGFhIVG4uUogF5XYRTfTMd6OM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COK56pB6xxUPeebwlK26ymynit/fina.webp",
+      "authorName": "Shaista Aman",
+      "authorAlias": "shaistaaman",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2bjP6kr6pFbaP0QVf3PkuxzXoxt.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [],
+      "publishedAt": "2026-04-15T11:17:58.049Z",
       "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
+      "title": "10,000 AIdeas Competition Terms (Spanish)",
+      "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
+      "url": "https://builder.aws.com/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
+      "imageUrl": "",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-04-13T22:37:57.853Z",
+      "likesCount": 11,
       "commentsCount": 0
     },
     {
@@ -625,20 +619,25 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
-      "title": "10,000 AIdeas Competition Terms (Spanish)",
-      "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
-      "url": "https://builder.aws.com/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
-      "imageUrl": "",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-13T22:37:57.853Z",
-      "likesCount": 10,
+      "id": "/content/3CO3bh5vYaHmiPuQHDnpH4bRBDD",
+      "title": "The Git habits that made reviewers trust me before they read a single line of code",
+      "description": "How a structured branching strategy, conventional commits, and knowing when to use cherry-pick instead of a full merge helped me stand out when contributing to projects on GitHub, GitLab, Azure DevOps, and AWS CodeCommit.",
+      "url": "https://builder.aws.com/content/3CO3bh5vYaHmiPuQHDnpH4bRBDD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CO54brNR8oQ5tTwQIqErS1FuR9/git-.webp",
+      "authorName": "Amaan Ul Haq Siddiqui",
+      "authorAlias": "amaan100x",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37waBq6EplcHFvpfRxc3ShuVlZg.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "git",
+        "open-source",
+        "career",
+        "devops"
+      ],
+      "publishedAt": "2026-04-15T09:00:33.957Z",
+      "likesCount": 2,
       "commentsCount": 0
     }
   ]
