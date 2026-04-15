@@ -8,6 +8,7 @@ const CATEGORY_COLORS = {
   'community-builders': '#1A9C3E',
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
+  'news': '#FF9900',
 };
 
 const CLUSTER_TOLERANCE = 0.5;

@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "scrape": "node scripts/scrape-community.mjs"
+    "scrape": "node scripts/scrape-community.mjs",
+    "update:news": "node scripts/update-builder-news.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",

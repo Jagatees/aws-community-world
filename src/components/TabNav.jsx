@@ -7,6 +7,7 @@ const TABS = [
   { label: 'Community Builders', key: 'community-builders' },
   { label: 'User Groups', key: 'user-groups' },
   { label: 'Cloud Clubs', key: 'cloud-clubs' },
+  { label: 'News', key: 'news' },
 ];
 
 /**

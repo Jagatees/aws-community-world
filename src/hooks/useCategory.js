@@ -40,6 +40,12 @@ export function useCategory(category) {
 
   useEffect(() => {
     if (!category) return;
+    if (category === 'news') {
+      setMembers([]);
+      setLoading(false);
+      setError(null);
+      return;
+    }
 
     let cancelled = false;
     const cachedMembers = categoryCache.get(category);

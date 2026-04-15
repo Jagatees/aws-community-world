@@ -1,5 +1,5 @@
 /**
- * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs'} CategoryKey
+ * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'news'} CategoryKey
  */
 
 /**
@@ -23,6 +23,32 @@
  * @typedef {Object} CategoryData
  * @property {CategoryKey} category
  * @property {Member[]} members
+ */
+
+/**
+ * @typedef {Object} NewsItem
+ * @property {string} id
+ * @property {string} title
+ * @property {string} description
+ * @property {string} url
+ * @property {string} imageUrl
+ * @property {string} authorName
+ * @property {string} authorAlias
+ * @property {string} authorAvatarUrl
+ * @property {string} location
+ * @property {number} lat
+ * @property {number} lng
+ * @property {string[]} tags
+ * @property {string} publishedAt
+ * @property {number} likesCount
+ * @property {number} commentsCount
+ */
+
+/**
+ * @typedef {Object} NewsData
+ * @property {string} updatedAt
+ * @property {NewsItem[]} latest
+ * @property {NewsItem[]} trending
  */
 
 export {};
