@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15T22:15:19.351Z",
+  "updatedAt": "2026-04-15T23:16:41.696Z",
   "latest": [
     {
       "id": "/content/3CPYEt7O0naYIAqZgRa9DVTqYaN",
@@ -158,7 +158,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-15T18:55:00.727Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 1
     },
     {
@@ -226,7 +226,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 39,
+      "likesCount": 40,
       "commentsCount": 6
     },
     {
@@ -243,7 +243,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-15T18:55:00.727Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 1
     },
     {
@@ -260,8 +260,30 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 10,
+      "likesCount": 11,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
+      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
+      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
+      "authorName": "Hazel Sáenz",
+      "authorAlias": "hsaenzg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "open-source",
+        "strands-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-14T17:19:53.908Z",
+      "likesCount": 10,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
@@ -310,28 +332,6 @@
       "commentsCount": 71
     },
     {
-      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
-      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
-      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
-      "authorName": "Hazel Sáenz",
-      "authorAlias": "hsaenzg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "agentic-ai",
-        "open-source",
-        "strands-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 9,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3CLVOwyXmwoVCAhyUmlLqjgAEJH",
       "title": "El problema de los Small Files: Guía de optimización en S3",
       "description": "Descubre por qué el exceso de archivos pequeños destruye el rendimiento de Spark, Glue y Athena. Aprende estrategias de compactación, control de particionamiento y optimización de tamaño (128MB-512MB) para reducir costos y acelerar tus pipelines de datos hasta 10 veces.",
@@ -352,6 +352,23 @@
       "publishedAt": "2026-04-14T11:14:07.306Z",
       "likesCount": 6,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
+      "title": "10,000 AIdeas Competition Terms (Spanish)",
+      "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
+      "url": "https://builder.aws.com/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
+      "imageUrl": "",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-04-13T22:37:57.853Z",
+      "likesCount": 12,
+      "commentsCount": 0
     },
     {
       "id": "/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
@@ -376,23 +393,6 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
-      "title": "10,000 AIdeas Competition Terms (Spanish)",
-      "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
-      "url": "https://builder.aws.com/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
-      "imageUrl": "",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-13T22:37:57.853Z",
-      "likesCount": 11,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3C849AI6lTrLJQG0bBFo1UdO20o",
       "title": "AI won't replace developers — but ignoring it will cost you",
       "description": "Practical insights and a live demo on how AI tools like Kiro are reshaping the daily workflow of tech professionals, presented at the AWS User Group Rio Grande do Sul meetup.",
@@ -412,7 +412,7 @@
         "spec-drivien-development"
       ],
       "publishedAt": "2026-04-09T16:57:00.738Z",
-      "likesCount": 18,
+      "likesCount": 19,
       "commentsCount": 7
     }
   ]
