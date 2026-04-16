@@ -1,6 +1,45 @@
 {
-  "updatedAt": "2026-04-16T22:14:35.581Z",
+  "updatedAt": "2026-04-16T23:15:22.872Z",
   "latest": [
+    {
+      "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
+      "title": "OpenClaw on AWS Lightsail: Live Demo, Real Findings and the Security Gap No Framework Models Yet — Part 4",
+      "description": "Live demo closing a 4-part security series on OpenClaw deployed on AWS Lightsail. Real setup obstacles, 13 validated findings across IaaS and application layers, and prompt injection + memory poisoning tested against Claude Sonnet 4.6. Includes the security gap MITRE ATLAS and OWASP Top 10 for Agentic Applications 2026 don't cover yet: how IaaS configuration decisions activate or disable application-layer threat vectors.",
+      "url": "https://builder.aws.com/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSUJGUQT3aQhb9gZZPyPI3lwvG/cove.webp",
+      "authorName": "Gerardo Castro Arica",
+      "authorAlias": "gerardokaztro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-16T22:32:23.442Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CSSb7AXB6M3JspQfGjxQEQkC6U",
+      "title": "Building an Event-Driven, AI-Powered Driver Monitoring System on AWS with Amazon Bedrock",
+      "description": "Driver fatigue and distraction are among the leading causes of accidents in the logistics and transportation sectors. While traditional fleet management systems track vehicle location and speed, they often fail to monitor the most critical component: the driver’s real-time state.\n",
+      "url": "https://builder.aws.com/content/3CSSb7AXB6M3JspQfGjxQEQkC6U",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSSoksIHxnpSZOd0HMh8Enmk3q/AWS-.webp",
+      "authorName": "Suleyman Akman",
+      "authorAlias": "suleymanakman",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37qhJjuzqf9HsT4pbiZ8qCbDAYj.webp",
+      "location": "TR",
+      "lat": 39.294076,
+      "lng": 35.2316631,
+      "tags": [
+        "amazon-bedrock",
+        "ai",
+        "amazon-rds",
+        "amazon-s3"
+      ],
+      "publishedAt": "2026-04-16T22:17:02.366Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CSOKPJ37zSCVDDE7zfjbWxAfu1",
       "title": "A SECURE BUILD: EC2 (Ubuntu) + IAM + Security + Billing",
@@ -366,45 +405,6 @@
       "publishedAt": "2026-04-16T15:11:35.556Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
-      "title": "Investigate Azure Infrastructure Failures with AWS DevOps Agent",
-      "description": "Walk through the complete flow to set up the AWS DevOps Agent integration with Azure, deploy a sample banking API, introduce a PostgreSQL network failure, and launch an autonomous cross-cloud investigation that identifies the root cause in minutes — with no stored credentials or agents in Azure.",
-      "url": "https://builder.aws.com/content/3CRUAkIkGxQEXDO1kvL164WigEq",
-      "imageUrl": "",
-      "authorName": "Frank",
-      "authorAlias": "frankbpr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zmvEoQenPerxrH8Yt6gCCTfPjJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [],
-      "publishedAt": "2026-04-16T14:35:54.869Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CRTjb5hElYSLMIOOB4s7jmgSEp",
-      "title": "Automação de Testes Web com Amazon Nova Act e Kiro IDE",
-      "description": "Criando testes de interfaces web usando o Amazon Nova Act",
-      "url": "https://builder.aws.com/content/3CRTjb5hElYSLMIOOB4s7jmgSEp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRUJ1Cd70Wf7IgDeFDbvAYV75O/Scre.webp",
-      "authorName": "Carlos Marangon",
-      "authorAlias": "marangon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/385KNbm76TYQ1BuAElBYNhB3mN4.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "agentic-ide",
-        "generative-ai",
-        "gen-ai",
-        "amazon-nova"
-      ],
-      "publishedAt": "2026-04-16T13:59:36.633Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -447,13 +447,13 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 27,
+      "likesCount": 29,
       "commentsCount": 8
     },
     {
       "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
       "title": "Investigate Azure Infrastructure Failures with AWS DevOps Agent",
-      "description": "Walk through the complete flow to set up the AWS DevOps Agent integration with Azure, deploy a sample banking API, introduce a PostgreSQL network failure, and launch an autonomous cross-cloud investigation that identifies the root cause in minutes — with no stored credentials or agents in Azure.",
+      "description": "Set up the AWS DevOps Agent integration with Azure using Outbound Identity Federation, introduce a PostgreSQL server failure, and trigger an autonomous cross-cloud investigation that identifies the root cause in minutes — with no stored credentials or agents in Azure.",
       "url": "https://builder.aws.com/content/3CRUAkIkGxQEXDO1kvL164WigEq",
       "imageUrl": "",
       "authorName": "Frank",
@@ -464,8 +464,30 @@
       "lng": -75.0458515,
       "tags": [],
       "publishedAt": "2026-04-16T14:35:54.869Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 5,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -483,23 +505,6 @@
       "publishedAt": "2026-04-14T22:12:52.358Z",
       "likesCount": 15,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
-      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
-      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
-      "authorName": "Abdul-hakeem Akinsile",
-      "authorAlias": "akinsilecloudops",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-16T17:24:37.233Z",
-      "likesCount": 2,
-      "commentsCount": 0
     },
     {
       "id": "/content/30DjHlCMNAEjsXW238QPx35rEqo",
@@ -525,29 +530,6 @@
       "commentsCount": 71
     },
     {
-      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
-      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
-      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
-      "authorName": "Gabriel Fortunate",
-      "authorAlias": "fortunate",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2",
-        "aws-cloud-clubs",
-        "cloud-concepts",
-        "tech-journey",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-04-16T17:16:29.386Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
       "title": "AIdeas Finalist: Caligo Dynamics - AI Powered Autonomous Drone Swarm for Emergency Response",
       "description": "When a fire breaks out, firefighters often enter buildings blindly, unable to see victims, hazards, or even the way out. This project uses AI-powered drone swarms built with ROS2, PX4, Kiro, and Amazon Bedrock to detect fires, locate civilians, map dangerous environments, and help emergency teams contain fires before lives are lost.",
@@ -571,6 +553,46 @@
       "commentsCount": 2
     },
     {
+      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
+      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
+      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
+      "authorName": "Abdul-hakeem Akinsile",
+      "authorAlias": "akinsilecloudops",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-16T17:24:37.233Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
+      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
+      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
+      "authorName": "Gabriel Fortunate",
+      "authorAlias": "fortunate",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-ec2",
+        "aws-cloud-clubs",
+        "cloud-concepts",
+        "tech-journey",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-04-16T17:16:29.386Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
       "title": "What I Wish I Knew Before Learning AWS as a College Student",
       "description": "Starting AWS can feel overwhelming. Here are the key things I wish I knew earlier that would have saved me time and helped me build real projects faster.",
@@ -589,28 +611,6 @@
       ],
       "publishedAt": "2026-04-16T18:54:22.356Z",
       "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 2,
       "commentsCount": 0
     }
   ]
