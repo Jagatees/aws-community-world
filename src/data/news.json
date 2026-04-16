@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-16T08:34:17.626Z",
+  "updatedAt": "2026-04-16T09:32:14.304Z",
   "latest": [
+    {
+      "id": "/content/3CQtGOJLlmx2qR6a3Z351T3CNnc",
+      "title": "🚀 From Beginner to Deploying a Live Web Server on AWS (My Week 3 Bootcamp Experience)",
+      "description": "🚀 Just published my Week 3 bootcamp project where I deployed my first live web server on AWS!\n\nFrom setting up IAM policies to launching an EC2 instance and hosting a web page with Nginx, this project gave me real hands-on experience in cloud computing.\n\nWould love your feedback 🙌\n\n#AWS #CloudComputing #DevOps #LearningJourney",
+      "url": "https://builder.aws.com/content/3CQtGOJLlmx2qR6a3Z351T3CNnc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQtoZHm88mUM8IPH6CAbqPaTPp/1001.webp",
+      "authorName": "Abdul kabir mubarak",
+      "authorAlias": "sheikhbrilliant",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aws-cloud-clubs"
+      ],
+      "publishedAt": "2026-04-16T08:57:12.313Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
+      "title": "AIdeas Finalist: CareLens AI — Transparent Care Guidance When It Matters Most.",
+      "description": "CareLens is a privacy-first AI platform that helps people understand healthcare costs before seeking treatment. By analyzing de-identified symptoms, location, and optional insurance details, it compares care options like ER, urgent care, or specialists and surfaces real-world price ranges using hospital transparency and CMS data. It doesn’t diagnose—it delivers clear, grounded cost, bill analyzing and care guidance so users can make confident decisions without surprise bills.",
+      "url": "https://builder.aws.com/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQpXsD0JnjTgsz5OtwkvL8Wtzr/Scre.webp",
+      "authorName": "Daniel Lambo",
+      "authorAlias": "daniellambo",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "NAMER",
+        "aideas-2025",
+        "north-america",
+        "social-good",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-16T08:35:54.943Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CQpXEUJi4ETa9krCZlYVbT0vhA",
       "title": "Data Warehouse Design: Concepts, Architecture & Best Practices",
@@ -33,8 +75,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "agents",
         "agentic-ai",
@@ -63,7 +105,7 @@
         "tables"
       ],
       "publishedAt": "2026-04-16T00:39:34.783Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -317,52 +359,6 @@
       "publishedAt": "2026-04-15T17:09:20.083Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CMAWXLnpV59h33cmDxtkOKiVv8",
-      "title": "[EN] S3 Files: a detailed add-on",
-      "description": "Important technical notes, relevant and supplementary, based on the announcement of the S3 Files functionality in the S3 service to understand it: a new way to access",
-      "url": "https://builder.aws.com/content/3CMAWXLnpV59h33cmDxtkOKiVv8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COy5vH7KOTE360N9IjuBmdU1Qx/EN-p.webp",
-      "authorName": "Carlos Chicata",
-      "authorAlias": "ferchicata49",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B9gO2DnQ9yhcrz6FLvZUPz6pdJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [
-        "amazon-s3",
-        "data-integration",
-        "amazon-efs",
-        "cloud-storage",
-        "object-storage"
-      ],
-      "publishedAt": "2026-04-15T16:51:56.085Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C4g8JKvUVkuhCkzeEakRIjUAvM",
-      "title": "[ES] S3 Files: un complemento detallado",
-      "description": "Notas técnicas importantes relevantes y complementarias basado en el anuncio de la funcionalidad de S3 Files en el servicio de S3 para entenderlo: una nueva forma de acceder objetos de S3 como archivos y carpetas",
-      "url": "https://builder.aws.com/content/3C4g8JKvUVkuhCkzeEakRIjUAvM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COxwMECSDPbi8YY3E1iknAZyb2/ES-p.webp",
-      "authorName": "Carlos Chicata",
-      "authorAlias": "ferchicata49",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B9gO2DnQ9yhcrz6FLvZUPz6pdJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [
-        "amazon-s3",
-        "cloud-storage",
-        "data-integration",
-        "spanish",
-        "amazon-efs"
-      ],
-      "publishedAt": "2026-04-15T16:51:54.173Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -384,7 +380,7 @@
         "LATAM"
       ],
       "publishedAt": "2026-04-12T06:12:58.400Z",
-      "likesCount": 8,
+      "likesCount": 9,
       "commentsCount": 3
     },
     {
@@ -404,7 +400,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 43,
+      "likesCount": 44,
       "commentsCount": 7
     },
     {
@@ -423,6 +419,25 @@
       "publishedAt": "2026-04-15T18:55:00.727Z",
       "likesCount": 14,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CQtGOJLlmx2qR6a3Z351T3CNnc",
+      "title": "🚀 From Beginner to Deploying a Live Web Server on AWS (My Week 3 Bootcamp Experience)",
+      "description": "🚀 Just published my Week 3 bootcamp project where I deployed my first live web server on AWS!\n\nFrom setting up IAM policies to launching an EC2 instance and hosting a web page with Nginx, this project gave me real hands-on experience in cloud computing.\n\nWould love your feedback 🙌\n\n#AWS #CloudComputing #DevOps #LearningJourney",
+      "url": "https://builder.aws.com/content/3CQtGOJLlmx2qR6a3Z351T3CNnc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQtoZHm88mUM8IPH6CAbqPaTPp/1001.webp",
+      "authorName": "Abdul kabir mubarak",
+      "authorAlias": "sheikhbrilliant",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aws-cloud-clubs"
+      ],
+      "publishedAt": "2026-04-16T08:57:12.313Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -456,8 +471,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "agents",
         "agentic-ai",
@@ -552,23 +567,6 @@
       ],
       "publishedAt": "2026-04-15T09:57:05.491Z",
       "likesCount": 5,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
-      "title": "10,000 AIdeas Competition Terms (Spanish)",
-      "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
-      "url": "https://builder.aws.com/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
-      "imageUrl": "",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-13T22:37:57.853Z",
-      "likesCount": 12,
       "commentsCount": 0
     }
   ]
