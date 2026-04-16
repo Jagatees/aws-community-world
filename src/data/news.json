@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-16T09:32:14.304Z",
+  "updatedAt": "2026-04-16T10:29:18.786Z",
   "latest": [
+    {
+      "id": "/content/3CQtINOjIHdDYxVc3rRTGzPhz24",
+      "title": "AWS Bootcamp (UNILORIN)",
+      "description": "This article provides a brief, hands-on overview of essential cloud setup tasks on Amazon Web Services. It walks through cost monitoring, identity management, secure server deployment, and basic application hosting using Amazon EC2.",
+      "url": "https://builder.aws.com/content/3CQtINOjIHdDYxVc3rRTGzPhz24",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQzyBOXU5QzK2UtWLlEhCs45W8/IMG-.webp",
+      "authorName": "Itz omoade",
+      "authorAlias": "omoade17",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aws-cloud-clubs",
+        "aws-community-builders",
+        "aws-identity-and-access-management",
+        "aws-builders",
+        "aws-certificate-manager"
+      ],
+      "publishedAt": "2026-04-16T09:47:56.729Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CQtGOJLlmx2qR6a3Z351T3CNnc",
       "title": "🚀 From Beginner to Deploying a Live Web Server on AWS (My Week 3 Bootcamp Experience)",
@@ -17,7 +40,7 @@
         "aws-cloud-clubs"
       ],
       "publishedAt": "2026-04-16T08:57:12.313Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -336,29 +359,6 @@
       "publishedAt": "2026-04-15T17:14:05.025Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CP26ckAsaT0nxGGFq9YWPt3qh5",
-      "title": "Building a Secure, Scalable Platform on AWS",
-      "description": "Modern cloud-native applications demand automation, security, and scalability from day one. This architecture demonstrates how to combine GitOps, Infrastructure as Code, and managed Kubernetes to build a production-ready delivery platform on AWS.",
-      "url": "https://builder.aws.com/content/3CP26ckAsaT0nxGGFq9YWPt3qh5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CP2OipZMjIbDMLbrUJ47YfWOxW/2cc5.webp",
-      "authorName": "Yevgeni Shapiro",
-      "authorAlias": "yevgenis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CPv2Xiv7DtRZpYB0pLODsCzs03.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "amazon-eks",
-        "github",
-        "terraform",
-        "amazon-rds",
-        "amazon-elasticache"
-      ],
-      "publishedAt": "2026-04-15T17:09:20.083Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -400,8 +400,8 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 44,
-      "commentsCount": 7
+      "likesCount": 46,
+      "commentsCount": 9
     },
     {
       "id": "/content/3C8MzeDQev8nE8Uo5w4IkHsNQik",
@@ -436,6 +436,29 @@
         "aws-cloud-clubs"
       ],
       "publishedAt": "2026-04-16T08:57:12.313Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CQtINOjIHdDYxVc3rRTGzPhz24",
+      "title": "AWS Bootcamp (UNILORIN)",
+      "description": "This article provides a brief, hands-on overview of essential cloud setup tasks on Amazon Web Services. It walks through cost monitoring, identity management, secure server deployment, and basic application hosting using Amazon EC2.",
+      "url": "https://builder.aws.com/content/3CQtINOjIHdDYxVc3rRTGzPhz24",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQzyBOXU5QzK2UtWLlEhCs45W8/IMG-.webp",
+      "authorName": "Itz omoade",
+      "authorAlias": "omoade17",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aws-cloud-clubs",
+        "aws-community-builders",
+        "aws-identity-and-access-management",
+        "aws-builders",
+        "aws-certificate-manager"
+      ],
+      "publishedAt": "2026-04-16T09:47:56.729Z",
       "likesCount": 1,
       "commentsCount": 0
     },
@@ -485,23 +508,6 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 12,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/30DjHlCMNAEjsXW238QPx35rEqo",
       "title": "Revolutionizing Email Productivity with AI-Powered Automation through CLI",
       "description": "As a developer facing email overload, I built a solution for the Q Developer Challenge #1: email management. What began as a simple CLI tool grew into an AI-powered system that has transformed my workflow.",
@@ -525,6 +531,23 @@
       "commentsCount": 71
     },
     {
+      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
+      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
+      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-04-14T22:12:52.358Z",
+      "likesCount": 12,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
       "title": "AIdeas Finalist: Caligo Dynamics - AI Powered Autonomous Drone Swarm for Emergency Response",
       "description": "When a fire breaks out, firefighters often enter buildings blindly, unable to see victims, hazards, or even the way out. This project uses AI-powered drone swarms built with ROS2, PX4, Kiro, and Amazon Bedrock to detect fires, locate civilians, map dangerous environments, and help emergency teams contain fires before lives are lost.",
@@ -546,28 +569,6 @@
       "publishedAt": "2026-04-13T17:12:02.757Z",
       "likesCount": 20,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
-      "title": "Amazon S3 Files: from Kafka to S3 via NFS",
-      "description": "A hands-on demo of Amazon S3 Files with Confluent Cloud Kafka, Lambda, and AWS CDK. I show how Kafka events can be written to an S3-backed NFS mount using normal filesystem calls, what CDK still gets wrong today, and how cold vs warm reads behave for small and large files in real runs.",
-      "url": "https://builder.aws.com/content/3COAqu4wLfBnAcS9YYEu1cSUZ32",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COBOROdPSfCENWGuVxOjPl5hlB/kafk.webp",
-      "authorName": "Alexander Smirnoff",
-      "authorAlias": "dobeerman555",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38QNnUPycSxHx0qbwCCdgHratOh.webp",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [
-        "amazon-s3",
-        "apache-kafka",
-        "amazon-efs",
-        "event-driven"
-      ],
-      "publishedAt": "2026-04-15T09:57:05.491Z",
-      "likesCount": 5,
-      "commentsCount": 0
     }
   ]
 }
