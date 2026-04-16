@@ -1,6 +1,52 @@
 {
-  "updatedAt": "2026-04-16T20:16:20.565Z",
+  "updatedAt": "2026-04-16T21:16:37.326Z",
   "latest": [
+    {
+      "id": "/content/3CSDSWZNYyNtDxLbaV5YUgMnXb0",
+      "title": "Long Live MCP - the Dev Summit recap",
+      "description": "Running remote MCP servers on Lambda, Workers, or any horizontally-scaled runtime just got meaningfully easier. A field report of the latest MCP Dev Summit in NY for AWS builders.",
+      "url": "https://builder.aws.com/content/3CSDSWZNYyNtDxLbaV5YUgMnXb0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSFNPGWLBrqzDexaLxd6LROC54/IMG_3.webp",
+      "authorName": "Ross Williams",
+      "authorAlias": "rosscomp1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BH5iGJogHCLq3MCd2SnkRWL2xb.webp",
+      "location": "FL, US",
+      "lat": 27.7567667,
+      "lng": -81.4639835,
+      "tags": [
+        "agentic-ai",
+        "mcp",
+        "ai",
+        "mcp-integration",
+        "mcp-server"
+      ],
+      "publishedAt": "2026-04-16T20:36:27.163Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
+      "title": "How to Install Kiro on Windows: From Download to Your First Agentic Interaction",
+      "description": " A practical, step-by-step guide for Windows developers installing both Kiro IDE and Kiro CLI. Covers the full flow from downloading  the installer to running your first agentic coding session in Windows Terminal, with Windows-specific gotchas around PATH  configuration, terminal choice, WSL, and proxy setup.",
+      "url": "https://builder.aws.com/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
+      "imageUrl": "",
+      "authorName": "ophedde",
+      "authorAlias": "oph",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "windows",
+        "developer-tools",
+        "cli",
+        "getting-started"
+      ],
+      "publishedAt": "2026-04-16T20:21:41.075Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3BUttUz594q52F82e4pXODGeC9L",
       "title": "AWS Bootcamp Project: Mastering EC2, IAM, and Cloud Security (Weeks 1-3)",
@@ -20,7 +66,7 @@
         "amazon-aurora"
       ],
       "publishedAt": "2026-04-16T19:56:28.828Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -143,7 +189,7 @@
       "lng": 7.9999721,
       "tags": [],
       "publishedAt": "2026-04-16T17:24:37.233Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -166,7 +212,7 @@
         "cloud-security"
       ],
       "publishedAt": "2026-04-16T17:16:29.386Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -361,50 +407,6 @@
       "publishedAt": "2026-04-16T12:34:44.491Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRDvUyGcccNN8bj1BdxGRt0A5n",
-      "title": "Securing the Cloud: My Week 3 AWS Bootcamp Deep Dive into EC2, IAM, and Billing",
-      "description": "Just published a deep dive into my Week 3 progress with the AWS Cloud Club Unilorin Bootcamp 2026! This week was all about moving beyond basic setups to implement production-ready security and governance.\n\nCheck out the full article to see the terminal configurations and the final live deployment. ☁️ #AWS #CloudComputing #DevOps",
-      "url": "https://builder.aws.com/content/3CRDvUyGcccNN8bj1BdxGRt0A5n",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CREQd4g4fKdRP6mEUgzxvlQ9Af/Whats.webp",
-      "authorName": "Faiz-Ahmad Abdur-Rasheed",
-      "authorAlias": "normid",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2",
-        "aws-iam-identity-center",
-        "billing"
-      ],
-      "publishedAt": "2026-04-16T11:57:18.088Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CQtINOjIHdDYxVc3rRTGzPhz24",
-      "title": "AWS Bootcamp (UNILORIN)",
-      "description": "This article provides a brief, hands-on overview of essential cloud setup tasks on Amazon Web Services. It walks through cost monitoring, identity management, secure server deployment, and basic application hosting using Amazon EC2.",
-      "url": "https://builder.aws.com/content/3CQtINOjIHdDYxVc3rRTGzPhz24",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQzyBOXU5QzK2UtWLlEhCs45W8/IMG-.webp",
-      "authorName": "Itz omoade",
-      "authorAlias": "omoade17",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aws-cloud-clubs",
-        "aws-community-builders",
-        "aws-identity-and-access-management",
-        "aws-builders",
-        "aws-certificate-manager"
-      ],
-      "publishedAt": "2026-04-16T09:47:56.729Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -468,24 +470,43 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
-      "title": "What I Wish I Knew Before Learning AWS as a College Student",
-      "description": "Starting AWS can feel overwhelming. Here are the key things I wish I knew earlier that would have saved me time and helped me build real projects faster.",
-      "url": "https://builder.aws.com/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
-      "imageUrl": "",
-      "authorName": "Bodie Gebhardt",
-      "authorAlias": "bodiegeb",
+      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
+      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
+      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
+      "authorName": "Abdul-hakeem Akinsile",
+      "authorAlias": "akinsilecloudops",
       "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-16T17:24:37.233Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
+      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
+      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
+      "authorName": "Gabriel Fortunate",
+      "authorAlias": "fortunate",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
       "tags": [
-        "students",
-        "learning-and-development",
-        "beginner-projects"
+        "amazon-ec2",
+        "aws-cloud-clubs",
+        "cloud-concepts",
+        "tech-journey",
+        "cloud-security"
       ],
-      "publishedAt": "2026-04-16T18:54:22.356Z",
-      "likesCount": 1,
+      "publishedAt": "2026-04-16T17:16:29.386Z",
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -529,6 +550,27 @@
       "commentsCount": 71
     },
     {
+      "id": "/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
+      "title": "What I Wish I Knew Before Learning AWS as a College Student",
+      "description": "Starting AWS can feel overwhelming. Here are the key things I wish I knew earlier that would have saved me time and helped me build real projects faster.",
+      "url": "https://builder.aws.com/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
+      "imageUrl": "",
+      "authorName": "Bodie Gebhardt",
+      "authorAlias": "bodiegeb",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students",
+        "learning-and-development",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-04-16T18:54:22.356Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
       "title": "AIdeas Finalist: Caligo Dynamics - AI Powered Autonomous Drone Swarm for Emergency Response",
       "description": "When a fire breaks out, firefighters often enter buildings blindly, unable to see victims, hazards, or even the way out. This project uses AI-powered drone swarms built with ROS2, PX4, Kiro, and Amazon Bedrock to detect fires, locate civilians, map dangerous environments, and help emergency teams contain fires before lives are lost.",
@@ -552,46 +594,6 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
-      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
-      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
-      "authorName": "Abdul-hakeem Akinsile",
-      "authorAlias": "akinsilecloudops",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-16T17:24:37.233Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
-      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
-      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
-      "authorName": "Gabriel Fortunate",
-      "authorAlias": "fortunate",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2",
-        "aws-cloud-clubs",
-        "cloud-concepts",
-        "tech-journey",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-04-16T17:16:29.386Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3BUttUz594q52F82e4pXODGeC9L",
       "title": "AWS Bootcamp Project: Mastering EC2, IAM, and Cloud Security (Weeks 1-3)",
       "description": "Deployment of Scalable Web Infrastructure & IAM Security Framework",
@@ -610,7 +612,7 @@
         "amazon-aurora"
       ],
       "publishedAt": "2026-04-16T19:56:28.828Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     }
   ]
