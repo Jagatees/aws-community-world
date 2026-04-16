@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-04-16T21:16:37.326Z",
+  "updatedAt": "2026-04-16T22:14:35.581Z",
   "latest": [
+    {
+      "id": "/content/3CSOKPJ37zSCVDDE7zfjbWxAfu1",
+      "title": "A SECURE BUILD: EC2 (Ubuntu) + IAM + Security + Billing",
+      "description": "From Zero to Deployed: Securing AWS with IAM, EC2, and Nginx on Ubuntu [AWS Cloud Club Unilorin Bootcamp 2026]",
+      "url": "https://builder.aws.com/content/3CSOKPJ37zSCVDDE7zfjbWxAfu1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSRe7eJ1b6JFkA8REI7HWyX3wZ/Whats.webp",
+      "authorName": "DevBash",
+      "authorAlias": "bashashy",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-16T22:01:57.891Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CSLGwHsqrWKXehCuaKFceMeEsi",
+      "title": "Claude Code on EC2: Network Isolation for Regulated Environments",
+      "description": "How to deploy Claude Code on a shared Amazon EC2 instance with defense-in-depth security, per-user identity, and Amazon Bedrock — designed for healthcare, finance, and other regulated industries.\n",
+      "url": "https://builder.aws.com/content/3CSLGwHsqrWKXehCuaKFceMeEsi",
+      "imageUrl": "",
+      "authorName": "Aidin Khosrowshahi",
+      "authorAlias": "kaidin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ynHLXPvhY5096ZDTU0tMiDh2tH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "anthropic-claude",
+        "agentic-ai",
+        "ai-security",
+        "security",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-16T21:28:34.033Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CSDSWZNYyNtDxLbaV5YUgMnXb0",
       "title": "Long Live MCP - the Dev Summit recap",
@@ -341,7 +381,7 @@
       "lng": -75.0458515,
       "tags": [],
       "publishedAt": "2026-04-16T14:35:54.869Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 1
     },
     {
@@ -363,48 +403,6 @@
         "amazon-nova"
       ],
       "publishedAt": "2026-04-16T13:59:36.633Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRGlPkLMWUy3sPY3lDtSqyj4I6",
-      "title": "Conquering Week 3 of the AWS Cloud Club Unilorin Bootcamp: EC2, IAM, Security, and Billing",
-      "description": "Welcome to my recap of Week 3 of the AWS Cloud Club Unilorin Bootcamp 2026! This week was an incredibly hands-on experience where we dove into some of the most fundamental and crucial services in AWS: Elastic Compute Cloud (EC2), Identity and Access Management (IAM), Security Groups, and Billing.\n",
-      "url": "https://builder.aws.com/content/3CRGlPkLMWUy3sPY3lDtSqyj4I6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRHQB8GZEbpKfe1Z7hWJdr5Fpw/1001.webp",
-      "authorName": "Abdulmujeeb Usman",
-      "authorAlias": "cloudstrife08",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "iam",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-04-16T12:34:44.491Z",
       "likesCount": 0,
       "commentsCount": 0
     }
@@ -466,48 +464,8 @@
       "lng": -75.0458515,
       "tags": [],
       "publishedAt": "2026-04-16T14:35:54.869Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
-      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
-      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
-      "authorName": "Abdul-hakeem Akinsile",
-      "authorAlias": "akinsilecloudops",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-16T17:24:37.233Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
-      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
-      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
-      "authorName": "Gabriel Fortunate",
-      "authorAlias": "fortunate",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2",
-        "aws-cloud-clubs",
-        "cloud-concepts",
-        "tech-journey",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-04-16T17:16:29.386Z",
-      "likesCount": 2,
-      "commentsCount": 0
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -525,6 +483,23 @@
       "publishedAt": "2026-04-14T22:12:52.358Z",
       "likesCount": 15,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
+      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
+      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
+      "authorName": "Abdul-hakeem Akinsile",
+      "authorAlias": "akinsilecloudops",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-16T17:24:37.233Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/30DjHlCMNAEjsXW238QPx35rEqo",
@@ -550,24 +525,26 @@
       "commentsCount": 71
     },
     {
-      "id": "/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
-      "title": "What I Wish I Knew Before Learning AWS as a College Student",
-      "description": "Starting AWS can feel overwhelming. Here are the key things I wish I knew earlier that would have saved me time and helped me build real projects faster.",
-      "url": "https://builder.aws.com/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
-      "imageUrl": "",
-      "authorName": "Bodie Gebhardt",
-      "authorAlias": "bodiegeb",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
+      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
+      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
+      "authorName": "Gabriel Fortunate",
+      "authorAlias": "fortunate",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
       "tags": [
-        "students",
-        "learning-and-development",
-        "beginner-projects"
+        "amazon-ec2",
+        "aws-cloud-clubs",
+        "cloud-concepts",
+        "tech-journey",
+        "cloud-security"
       ],
-      "publishedAt": "2026-04-16T18:54:22.356Z",
-      "likesCount": 1,
+      "publishedAt": "2026-04-16T17:16:29.386Z",
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -594,24 +571,45 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3BUttUz594q52F82e4pXODGeC9L",
-      "title": "AWS Bootcamp Project: Mastering EC2, IAM, and Cloud Security (Weeks 1-3)",
-      "description": "Deployment of Scalable Web Infrastructure & IAM Security Framework",
-      "url": "https://builder.aws.com/content/3BUttUz594q52F82e4pXODGeC9L",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSC2Av73PidkpcSYrQrCPewF8n/3628.webp",
-      "authorName": "Olawuyi Rotimi",
-      "authorAlias": "shefarina",
+      "id": "/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
+      "title": "What I Wish I Knew Before Learning AWS as a College Student",
+      "description": "Starting AWS can feel overwhelming. Here are the key things I wish I knew earlier that would have saved me time and helped me build real projects faster.",
+      "url": "https://builder.aws.com/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
+      "imageUrl": "",
+      "authorName": "Bodie Gebhardt",
+      "authorAlias": "bodiegeb",
       "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
-        "aws-cloud-clubs",
-        "aws-identity-and-access-management",
-        "amazon-elastic-container-registry",
-        "amazon-aurora"
+        "students",
+        "learning-and-development",
+        "beginner-projects"
       ],
-      "publishedAt": "2026-04-16T19:56:28.828Z",
+      "publishedAt": "2026-04-16T18:54:22.356Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 2,
       "commentsCount": 0
     }
