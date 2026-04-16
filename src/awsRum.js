@@ -6,6 +6,7 @@ const APPLICATION_REGION = import.meta.env.VITE_AWS_RUM_APP_REGION ?? 'ap-southe
 const ENDPOINT = import.meta.env.VITE_AWS_RUM_ENDPOINT ?? 'https://dataplane.rum.ap-southeast-1.amazonaws.com';
 const IDENTITY_POOL_ID = import.meta.env.VITE_AWS_RUM_IDENTITY_POOL_ID;
 const GUEST_ROLE_ARN = import.meta.env.VITE_AWS_RUM_GUEST_ROLE_ARN;
+const USE_CLASSIC_FLOW = import.meta.env.VITE_AWS_RUM_USE_CLASSIC_FLOW === 'true';
 const RUM_ENABLED = import.meta.env.VITE_AWS_RUM_ENABLED !== 'false';
 const SIGNING_ENABLED = import.meta.env.VITE_AWS_RUM_SIGNING !== 'false';
 
@@ -25,12 +26,23 @@ function initRum() {
   };
 
   if (SIGNING_ENABLED) {
-    if (IDENTITY_POOL_ID) config.identityPoolId = IDENTITY_POOL_ID;
-    if (GUEST_ROLE_ARN) config.guestRoleArn = GUEST_ROLE_ARN;
+    if (IDENTITY_POOL_ID) {
+      config.identityPoolId = IDENTITY_POOL_ID;
+    }
 
-    if (!IDENTITY_POOL_ID || !GUEST_ROLE_ARN) {
+    if (USE_CLASSIC_FLOW && GUEST_ROLE_ARN) {
+      config.guestRoleArn = GUEST_ROLE_ARN;
+    }
+
+    if (!IDENTITY_POOL_ID) {
       console.warn(
-        '[AWS RUM] Missing identity config. Set VITE_AWS_RUM_IDENTITY_POOL_ID and VITE_AWS_RUM_GUEST_ROLE_ARN.'
+        '[AWS RUM] Missing identity config. Set VITE_AWS_RUM_IDENTITY_POOL_ID.'
+      );
+    }
+
+    if (USE_CLASSIC_FLOW && !GUEST_ROLE_ARN) {
+      console.warn(
+        '[AWS RUM] Classic flow enabled but VITE_AWS_RUM_GUEST_ROLE_ARN is missing.'
       );
     }
   }
@@ -42,6 +54,7 @@ function initRum() {
       region: APPLICATION_REGION,
       endpoint: ENDPOINT,
       signing: SIGNING_ENABLED,
+      classicFlow: USE_CLASSIC_FLOW,
       hasIdentityPoolId: Boolean(IDENTITY_POOL_ID),
       hasGuestRoleArn: Boolean(GUEST_ROLE_ARN),
     });
