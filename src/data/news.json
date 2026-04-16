@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-16T05:01:18.357Z",
+  "updatedAt": "2026-04-16T06:37:59.010Z",
   "latest": [
     {
       "id": "/content/3CQFzc91nM9sGkfHRbpjo4eXojf",
@@ -21,7 +21,7 @@
         "open-source"
       ],
       "publishedAt": "2026-04-16T04:13:02.128Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -201,7 +201,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-15T18:55:00.727Z",
-      "likesCount": 12,
+      "likesCount": 14,
       "commentsCount": 1
     },
     {
@@ -364,71 +364,30 @@
       "publishedAt": "2026-04-15T15:59:58.511Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3COmFutoK2su0bH2RcdJpi4oByl",
-      "title": "The Art of Hybrid Development: Optimizing Application Lifecycles with Kiro Pro and AWS",
-      "description": "A technical deep-dive based on real-world implementation experiences, detailing a high-performance workflow using Kiro Pro. We explore how to effectively segment the development process: from architecture and code generation in IDE environments (Windows) to rigorous deployment, least-privilege analysis, and automated technical documentation via CLI (Linux). This is designed for engineers looking to maximize the efficiency of AWS MCPs and advanced LLMs.",
-      "url": "https://builder.aws.com/content/3COmFutoK2su0bH2RcdJpi4oByl",
-      "imageUrl": "",
-      "authorName": "Exegol",
-      "authorAlias": "luiszuniga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C3Da0li0bePuHXisvoaRBKWQq0.webp",
-      "location": "CR",
-      "lat": 10.2735633,
-      "lng": -84.0739102,
-      "tags": [
-        "kiro",
-        "kiro-with-pro",
-        "developer-productivity",
-        "developer-tools",
-        "development"
-      ],
-      "publishedAt": "2026-04-15T15:28:01.008Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3COpQKPeeUN97oMATEOd2D4iUkx",
-      "title": "Builder Challenge: May 2026",
-      "description": "Will you be one of the three lucky winners who submits the hidden AWS service in the word cloud?",
-      "url": "https://builder.aws.com/content/3COpQKPeeUN97oMATEOd2D4iUkx",
-      "imageUrl": "",
-      "authorName": "Sean Boult",
-      "authorAlias": "sboult",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38nvgZ2QTvtzvi8AiyOiYTdbkxK.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-15T15:22:28.777Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3B59uMLYFgrrxsr6XoKGw5t3jU2",
-      "title": "Updating encryption in S3 replication using newly released UpdateObjectEncryption API",
-      "description": "In S3 replication and batch replication, if data in source bucket is under SSE-S3, the replica in the destination bucket will still be under SSE-S3 even if the destination bucket has SSE-KMS encryption enabled. What if your customer requires that data in destination bucket must be encrypted with SSE-KMS while the source bucket is owned by another entity and cannot switch to  SSE-KMS? This article addresses such scenario using the newly released S3 API: UpdateObjectEncryption.",
-      "url": "https://builder.aws.com/content/3B59uMLYFgrrxsr6XoKGw5t3jU2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3B84sftLqx4IwP0kBMhlBA6OyD6/Marc.webp",
-      "authorName": "William Zhang",
-      "authorAlias": "wwz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qopIh8X1ZtmF4jgiDLAKcHnDI.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-kms",
-        "encryption",
-        "iam",
-        "aws-cdk"
-      ],
-      "publishedAt": "2026-04-15T15:22:04.393Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3CF43pwavQ0MFccaX269jpGJsCF",
+      "title": "AIdeas Finalist: VERA, A Multi-Agent Triage System for Healthcare in Chile",
+      "description": "A multi-agent healthcare triage system that screens patients in Chilean Spanish, detects crisis signals, and generates clinical reports. Built by two people on AWS for $17/month, designed to integrate with Chile's public health system via HL7 FHIR.",
+      "url": "https://builder.aws.com/content/3CF43pwavQ0MFccaX269jpGJsCF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CF4KZhH0HaV4DPbochmhhwZBdX/vera.webp",
+      "authorName": "Julissa Rodriguez",
+      "authorAlias": "julissarparco",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArZ0Bk4aLdCXQ1YeLiDcu25Ia9.webp",
+      "location": "CL",
+      "lat": -31.7613365,
+      "lng": -71.3187697,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "LATAM"
+      ],
+      "publishedAt": "2026-04-12T06:12:58.400Z",
+      "likesCount": 8,
+      "commentsCount": 3
+    },
     {
       "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
       "title": "Introducing Article View Counts on AWS Builder Center",
@@ -446,7 +405,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 42,
+      "likesCount": 43,
       "commentsCount": 7
     },
     {
@@ -463,7 +422,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-15T18:55:00.727Z",
-      "likesCount": 12,
+      "likesCount": 14,
       "commentsCount": 1
     },
     {
@@ -486,7 +445,7 @@
         "open-source"
       ],
       "publishedAt": "2026-04-16T04:13:02.128Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -529,29 +488,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
-      "title": "AIdeas Finalist: Caligo Dynamics - AI Powered Autonomous Drone Swarm for Emergency Response",
-      "description": "When a fire breaks out, firefighters often enter buildings blindly, unable to see victims, hazards, or even the way out. This project uses AI-powered drone swarms built with ROS2, PX4, Kiro, and Amazon Bedrock to detect fires, locate civilians, map dangerous environments, and help emergency teams contain fires before lives are lost.",
-      "url": "https://builder.aws.com/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CIy8y44P0ggSGtPO3uWQ5xCETz/Calig.webp",
-      "authorName": "Siva Abishikth Mylavarapu",
-      "authorAlias": "abi12386",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsFS6IKVmwuzwlSN5L3Pst9aS7.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "NAMER",
-        "amazon-bedrock",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-13T17:12:02.757Z",
-      "likesCount": 20,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/30DjHlCMNAEjsXW238QPx35rEqo",
       "title": "Revolutionizing Email Productivity with AI-Powered Automation through CLI",
       "description": "As a developer facing email overload, I built a solution for the Q Developer Challenge #1: email management. What began as a simple CLI tool grew into an AI-powered system that has transformed my workflow.",
@@ -575,42 +511,26 @@
       "commentsCount": 71
     },
     {
-      "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
-      "title": "10,000 AIdeas Competition Terms (Spanish)",
-      "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
-      "url": "https://builder.aws.com/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
-      "imageUrl": "",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-13T22:37:57.853Z",
-      "likesCount": 12,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CLVOwyXmwoVCAhyUmlLqjgAEJH",
-      "title": "El problema de los Small Files: Guía de optimización en S3",
-      "description": "Descubre por qué el exceso de archivos pequeños destruye el rendimiento de Spark, Glue y Athena. Aprende estrategias de compactación, control de particionamiento y optimización de tamaño (128MB-512MB) para reducir costos y acelerar tus pipelines de datos hasta 10 veces.",
-      "url": "https://builder.aws.com/content/3CLVOwyXmwoVCAhyUmlLqjgAEJH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CLW5DHTyqixBFP976tzkDtcPlU/hidd.webp",
-      "authorName": "Rocio Baigorria",
-      "authorAlias": "tuni56",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALq8aLtJOKkgJxQFPbrpOGR92B.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
+      "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
+      "title": "AIdeas Finalist: Caligo Dynamics - AI Powered Autonomous Drone Swarm for Emergency Response",
+      "description": "When a fire breaks out, firefighters often enter buildings blindly, unable to see victims, hazards, or even the way out. This project uses AI-powered drone swarms built with ROS2, PX4, Kiro, and Amazon Bedrock to detect fires, locate civilians, map dangerous environments, and help emergency teams contain fires before lives are lost.",
+      "url": "https://builder.aws.com/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CIy8y44P0ggSGtPO3uWQ5xCETz/Calig.webp",
+      "authorName": "Siva Abishikth Mylavarapu",
+      "authorAlias": "abi12386",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsFS6IKVmwuzwlSN5L3Pst9aS7.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
-        "data-lakes",
-        "aws-glue",
-        "amazon-athena",
-        "data-engineering"
+        "aideas-2025",
+        "social-impact",
+        "NAMER",
+        "amazon-bedrock",
+        "kiro"
       ],
-      "publishedAt": "2026-04-14T11:14:07.306Z",
-      "likesCount": 6,
+      "publishedAt": "2026-04-13T17:12:02.757Z",
+      "likesCount": 20,
       "commentsCount": 2
     },
     {
@@ -632,192 +552,25 @@
         "event-driven"
       ],
       "publishedAt": "2026-04-15T09:57:05.491Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 0
     },
     {
-      "id": "/content/3C849AI6lTrLJQG0bBFo1UdO20o",
-      "title": "AI won't replace developers — but ignoring it will cost you",
-      "description": "Practical insights and a live demo on how AI tools like Kiro are reshaping the daily workflow of tech professionals, presented at the AWS User Group Rio Grande do Sul meetup.",
-      "url": "https://builder.aws.com/content/3C849AI6lTrLJQG0bBFo1UdO20o",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C84ErfkJqQQ65a6EjrOglvO933/IMG_3.webp",
-      "authorName": "Flavio Pimenta",
-      "authorAlias": "pimenta",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2dTZyQaqevtXxqApiFIHKWK2qfj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "kiro",
-        "kiro-heroes",
-        "cli",
-        "vibe-coding",
-        "spec-drivien-development"
-      ],
-      "publishedAt": "2026-04-09T16:57:00.738Z",
-      "likesCount": 19,
-      "commentsCount": 7
-    },
-    {
-      "id": "/content/3CJ46VRteYg1vg0FIqbvcQBrGt8",
-      "title": "Strands Agents & AgentCore: Two Pieces of the Same Puzzle",
-      "description": "A practical breakdown of two complementary AWS tools for building AI agents: Strands Agents, the open-source SDK for writing agent logic, and Amazon Bedrock AgentCore, the managed platform for running agents securely in production.",
-      "url": "https://builder.aws.com/content/3CJ46VRteYg1vg0FIqbvcQBrGt8",
+      "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
+      "title": "10,000 AIdeas Competition Terms (Spanish)",
+      "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
+      "url": "https://builder.aws.com/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
       "imageUrl": "",
-      "authorName": "Dan",
-      "authorAlias": "doolaugh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CJOuWglfC5NVkYi7ElP0KKXAZT.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
       "tags": [],
-      "publishedAt": "2026-04-13T16:53:24.974Z",
-      "likesCount": 10,
+      "publishedAt": "2026-04-13T22:37:57.853Z",
+      "likesCount": 12,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CHQEgBtLb4lGfXquuuIflMtqPM",
-      "title": "I Had No Idea AWS Certifications Could Open This Many Doors. Here's What I've Learned So Far.",
-      "description": "This article shares my personal journey of discovering how AWS certifications can set students apart in the job market, breaking down the certification roadmap from Cloud Practitioner to specialty levels and the free resources available to get started. Whether you're a CS major or just curious about cloud, the best time to start is now.",
-      "url": "https://builder.aws.com/content/3CHQEgBtLb4lGfXquuuIflMtqPM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CHRIh09bLsKhriWuD38ydi5q2p/head.webp",
-      "authorName": "Bryce Dancy",
-      "authorAlias": "i3ryce",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ba5IYLpDHWrrtzmhy12impTg2H.webp",
-      "location": "NC, US",
-      "lat": 35.6729639,
-      "lng": -79.0392919,
-      "tags": [
-        "aws-certification",
-        "students",
-        "cloud-concepts",
-        "aws-educate"
-      ],
-      "publishedAt": "2026-04-13T00:34:38.268Z",
-      "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3COGFhIVG4uUogF5XYRTfTMd6OM",
-      "title": "Agentic Branding: Let Kiro Turn Your CV into a Cloud-Native Website",
-      "description": "In this guide, I am going to use AWS Kiro (the intelligent AI agent) to automate a professional transformation. I'll take your existing LinkedIn profile data and, with just three prompts, have Kiro build a modern, cloud-native static portfolio website using Next.js and Tailwind CSS and deploy it on S3.",
-      "url": "https://builder.aws.com/content/3COGFhIVG4uUogF5XYRTfTMd6OM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3COK56pB6xxUPeebwlK26ymynit/fina.webp",
-      "authorName": "Shaista Aman",
-      "authorAlias": "shaistaaman",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2bjP6kr6pFbaP0QVf3PkuxzXoxt.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [],
-      "publishedAt": "2026-04-15T11:17:58.049Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CO3bh5vYaHmiPuQHDnpH4bRBDD",
-      "title": "The Git habits that made reviewers trust me before they read a single line of code",
-      "description": "How a structured branching strategy, conventional commits, and knowing when to use cherry-pick instead of a full merge helped me stand out when contributing to projects on GitHub, GitLab, Azure DevOps, and AWS CodeCommit.",
-      "url": "https://builder.aws.com/content/3CO3bh5vYaHmiPuQHDnpH4bRBDD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CO54brNR8oQ5tTwQIqErS1FuR9/git-.webp",
-      "authorName": "Amaan Ul Haq Siddiqui",
-      "authorAlias": "amaan100x",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37waBq6EplcHFvpfRxc3ShuVlZg.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "git",
-        "open-source",
-        "career",
-        "devops"
-      ],
-      "publishedAt": "2026-04-15T09:00:33.957Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CM7TOqPrmnKhn1IU6Mcg6WQnRq",
-      "title": "Everything AWS Gives Students for Free (And How I Actually Used It)",
-      "description": "A practical breakdown of every AWS tool available to students for free: $200 credits, Amazon Bedrock, Q Developer, Builder Center workshops, and Cloud Clubs. Includes real code snippets and how I've used each one in projects at Michigan State.",
-      "url": "https://builder.aws.com/content/3CM7TOqPrmnKhn1IU6Mcg6WQnRq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CM8y0ETl1YQmL2gvf03ejbipi9/aws_.webp",
-      "authorName": "Daniel Helo Puccini",
-      "authorAlias": "danhelo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BXqXhWKcMlO75ct4wZcbI01RDf.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-14T16:53:06.097Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CLjvOk8OPPeuW24EJTBIqEOpKc",
-      "title": "Build Address Autocomplete and Store Locator Features for Your Retail Application with Amazon Location Service",
-      "description": "Learn how to build checkout address autocomplete and store locator features for retail applications using Amazon Location Service and ASP.NET Core. This post walks through the Suggest, GetPlace, and ReverseGeocode APIs with a working BFF architecture that keeps credentials server-side and serves a clean API to your storefront.",
-      "url": "https://builder.aws.com/content/3CLjvOk8OPPeuW24EJTBIqEOpKc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CM8noGGvbwXQAov2Wv4JSDSIk9/Scre.webp",
-      "authorName": "Mauricio Trunfio",
-      "authorAlias": "mtrunfio",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CM8NC3w4yXKuhDDVeDF0MGVaR7.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-location-service",
-        "location-service",
-        "asp-dotnet-core",
-        "retail",
-        "retail-consumer-goods-industry"
-      ],
-      "publishedAt": "2026-04-14T16:26:29.039Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CMQo0WclJU6D864t8oj9dPtD5R",
-      "title": "S3 Vectors: How to build a RAG without a vector database",
-      "description": "Amazon S3 now stores and queries vectors natively. Here's how to build a RAG pipeline with just S3 and Bedrock, no Pinecone, no OpenSearch, no infrastructure",
-      "url": "https://builder.aws.com/content/3CMQo0WclJU6D864t8oj9dPtD5R",
-      "imageUrl": "",
-      "authorName": "Jubin Soni",
-      "authorAlias": "jubinsoni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38YZJOEQWdxIpvKuXVOhZBUNBC0.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "amazon-s3",
-        "rag",
-        "amazon-s3-vectors",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-04-14T19:27:45.362Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C98WVeKJiOlTPeYx4zHDoEq4LG",
-      "title": "Powertools for AWS Lambda - Best Practices By Default",
-      "description": "Boost Lambda efficiency with AWS Powertools: structured logs, tracing, metrics, and more. Essential for serverless observability.",
-      "url": "https://builder.aws.com/content/3C98WVeKJiOlTPeYx4zHDoEq4LG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C98deJkUcDSEp3MoLQVrsPLsHu/blog.webp",
-      "authorName": "Darryl Ruggles",
-      "authorAlias": "darrylr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32xvtRCXz0BUNb5YZMIdzX1KHT8.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-lambda",
-        "observability",
-        "serverless"
-      ],
-      "publishedAt": "2026-04-11T17:36:43.052Z",
-      "likesCount": 8,
-      "commentsCount": 1
     }
   ]
 }
