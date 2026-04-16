@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-16T14:36:25.145Z",
+  "updatedAt": "2026-04-16T15:33:23.898Z",
   "latest": [
+    {
+      "id": "/content/3CQWBseB9oau1Ag5VOr82Ic7nQ0",
+      "title": "How We Built a Virtual Team of 10+ AI Agents",
+      "description": "Last Monday evening, over 300 people walked into the AWS office in Singapore for the largest OpenClaw community meetup in Southeast Asia. Engineers, founders, C-suite leaders, students — all in the same room. About half had never attended before.\n\nWe were two of the speakers. Annie shared how she runs a team of 10+ AI agents through Telegram. Melanie presented the technical architecture for deploying OpenClaw safely on AWS at scale. This blog is our attempt to put the full story down in writing.",
+      "url": "https://builder.aws.com/content/3CQWBseB9oau1Ag5VOr82Ic7nQ0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRdArBunQ99enf9211U1XkILAE/1772.webp",
+      "authorName": "Annie Dongmei",
+      "authorAlias": "annieandongmei",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRdow5WiGyJxbCdiPBQwDYFGHk.webp",
+      "location": "SG",
+      "lat": 1.357107,
+      "lng": 103.8194992,
+      "tags": [
+        "agentic-ai",
+        "agentic-interactions",
+        "agent-to-agent",
+        "ai-agents",
+        "open-source"
+      ],
+      "publishedAt": "2026-04-16T15:11:35.556Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
       "title": "Investigue fallas de infraestructura en Azure con AWS DevOps Agent",
@@ -15,7 +38,7 @@
       "lng": -75.0458515,
       "tags": [],
       "publishedAt": "2026-04-16T14:35:54.869Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -189,232 +212,6 @@
       "publishedAt": "2026-04-16T08:25:50.402Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CQFzc91nM9sGkfHRbpjo4eXojf",
-      "title": "Deploying OpenClaw on AWS EC2 - A Developer's Perspective",
-      "description": "OpenClaw is a personal AI assistant that you can deploy on your own infrastructure. This post documents the complete process of deploying OpenClaw on AWS EC2: using a single CloudFormation template, you can have it running in about 15 minutes, integrated with the latest Claude models like Opus 4.6 via Amazon Bedrock. US regions offer one-click deployment; other regions require a few additional configuration steps, all covered in this guide.",
-      "url": "https://builder.aws.com/content/3CQFzc91nM9sGkfHRbpjo4eXojf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQImMyPBUnSdcwtFnTM60OUivi/Cyber.webp",
-      "authorName": "Haowen Huang",
-      "authorAlias": "popkee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
-      "tags": [
-        "agents",
-        "agentic-ai",
-        "claude",
-        "amazon-bedrock",
-        "open-source"
-      ],
-      "publishedAt": "2026-04-16T04:13:02.128Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CPqS1NXosN920VbW4hl2A4MKRm",
-      "title": "Exploring Amazon S3 Tables with PyIceberg - Part 3: Schema Evolution and Table Maintenance",
-      "description": "Learn how to perform Iceberg schema evolution, adding columns, renaming fields, widening types, and dropping columns entirely through metadata-only operations using PyIceberg and Amazon S3 Tables, with no Spark cluster or data rewrites required. Discover how S3 Tables automatically handles critical table maintenance like compaction, snapshot expiry, and orphan file cleanup, keeping your Iceberg tables healthy without manual intervention.",
-      "url": "https://builder.aws.com/content/3CPqS1NXosN920VbW4hl2A4MKRm",
-      "imageUrl": "",
-      "authorName": "Steven Cook",
-      "authorAlias": "sjcook",
-      "authorAvatarUrl": "",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "amazon-s3",
-        "tables"
-      ],
-      "publishedAt": "2026-04-16T00:39:34.783Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CPYEt7O0naYIAqZgRa9DVTqYaN",
-      "title": "What Designing a 135-Tool Architecture Taught Me About AWS (and Myself)",
-      "description": "I built an AI-powered game generator with eight agents and 135 tool functions, and it forced me to confront the gap between a working prototype and a scalable system. AWS Builder Center's workshops and community helped me bridge it.",
-      "url": "https://builder.aws.com/content/3CPYEt7O0naYIAqZgRa9DVTqYaN",
-      "imageUrl": "",
-      "authorName": "Markandeya Yalamanchi",
-      "authorAlias": "markandeya",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-15T21:31:12.063Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CNDznMh9icBpWy9fuMYqDkmyz8",
-      "title": "From Localhost to the Cloud: How My First AWS Architecture Changed the Way I Think About Code",
-      "description": "I share how deploying my satellite imagery ML platform on AWS transformed the way I think about software engineering, from writing my first Terraform configuration to discovering that cloud architecture actually makes you write better application code.",
-      "url": "https://builder.aws.com/content/3CNDznMh9icBpWy9fuMYqDkmyz8",
-      "imageUrl": "",
-      "authorName": "Markandeya Yalamanchi",
-      "authorAlias": "markandeya",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "students",
-        "aws-ambassador",
-        "aws-builders",
-        "aws-capabilities"
-      ],
-      "publishedAt": "2026-04-15T21:28:21.463Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BUiJLPfFUDmZmA7qojvlgTlu3L",
-      "title": "Hide regions and services in the AWS console",
-      "description": "You can now show only the regions and services on the AWS management console",
-      "url": "https://builder.aws.com/content/3BUiJLPfFUDmZmA7qojvlgTlu3L",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CPUCTJQC2DrbjQm6iG5mgaPZVP/gggg.webp",
-      "authorName": "Sean Boult",
-      "authorAlias": "sboult",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38nvgZ2QTvtzvi8AiyOiYTdbkxK.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-15T21:24:54.419Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CPTKltkSqUWjJkBIrs2wIDyDv5",
-      "title": "The Cloud Isn't Complicated!",
-      "description": "Cloud Computing sounds scary and technical, but I promise it is a lot more simple than it sounds.",
-      "url": "https://builder.aws.com/content/3CPTKltkSqUWjJkBIrs2wIDyDv5",
-      "imageUrl": "",
-      "authorName": "Blake Stewart",
-      "authorAlias": "blakestwrt",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-15T20:50:28.590Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3AZ7oMkuqLFyUYN46XfeVayJtKl",
-      "title": "AIdeas Finalist: VIGIA, The RoadIntelligence IDE",
-      "description": "VIGIA is the nervous system of the sentient city. By transforming everyday vehicles into a decentralized sensor network, it feeds the pulse of the road into an autonomous AI brain. VIGIA doesn’t just detect hazards, it actively plans repair logistics and dispatches city crews, turning static concrete into a living, self-healing ecosystem.",
-      "url": "https://builder.aws.com/content/3AZ7oMkuqLFyUYN46XfeVayJtKl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CJlHMBfy4H1eincEllBGkaVvLP/Whats.webp",
-      "authorName": "Ben Biju",
-      "authorAlias": "benbiju",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AgKXVm6IPN1QQ10B0Anjmf6KJB.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "APJC",
-        "aideas-2025",
-        "commercial-solutions"
-      ],
-      "publishedAt": "2026-04-15T20:45:50.045Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CPQb8qWvb17sgJP5gwqGGHwLdE",
-      "title": "Building an Internal Developer Platform with Kubernetes, Docker, and GitOps on AWS",
-      "description": "Modern engineering teams are under constant pressure to deliver faster without compromising reliability. One of the most effective ways to achieve this is by implementing an Internal Developer Platform (IDP)—a self-service layer that abstracts infrastructure complexity and empowers developers to focus on building features.",
-      "url": "https://builder.aws.com/content/3CPQb8qWvb17sgJP5gwqGGHwLdE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CPR07ykkz2rffEQVmqUQHfH8oK/Scre.webp",
-      "authorName": "Yevgeni Shapiro",
-      "authorAlias": "yevgenis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CPv2Xiv7DtRZpYB0pLODsCzs03.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "amazon-ec2",
-        "docker",
-        "kubernetes",
-        "gitops",
-        "github"
-      ],
-      "publishedAt": "2026-04-15T20:35:27.112Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CPHm7YVEvVnMSaHZGW61ZJ8QYX",
-      "title": "Building a Multi-Tenant Platform with vCluster on EKS",
-      "description": "Model Once, Run Anywhere with Shared Kubernetes Infrastructure",
-      "url": "https://builder.aws.com/content/3CPHm7YVEvVnMSaHZGW61ZJ8QYX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CPInNhCNcDh1wfhMguyAFXghGl/yevg.webp",
-      "authorName": "Yevgeni Shapiro",
-      "authorAlias": "yevgenis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CPv2Xiv7DtRZpYB0pLODsCzs03.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "amazon-eks",
-        "github",
-        "gitlab",
-        "apache-kafka",
-        "api-gateway"
-      ],
-      "publishedAt": "2026-04-15T19:27:00.316Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C8MzeDQev8nE8Uo5w4IkHsNQik",
-      "title": "AWS Community Builders Spotlight: Week of April 6, 2026",
-      "description": "Weekly digest of AWS Community Builders' best content from April 6-12, 2026. Technical guides on Lambda, Bedrock, MCP servers, Valkey, and more.",
-      "url": "https://builder.aws.com/content/3C8MzeDQev8nE8Uo5w4IkHsNQik",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CP1IHZFqFuqhu07w8oEUeExv0x/Scre.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-15T18:55:00.727Z",
-      "likesCount": 15,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CPCab8RX0BWr1578dqgtuvx8xn",
-      "title": "Beyond the Classroom: What Every Student Needs to Know About Building on AWS",
-      "description": "A guide for student developers on navigating the AWS ecosystem, from managing the Free Tier to leveraging student-specific resources like AWS Educate.",
-      "url": "https://builder.aws.com/content/3CPCab8RX0BWr1578dqgtuvx8xn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CPE5NuSgYTGyCzjhsm0OwI4ewH/downl.webp",
-      "authorName": "Joban Singh",
-      "authorAlias": "jbs",
-      "authorAvatarUrl": "",
-      "location": "NJ, US",
-      "lat": 40.0757384,
-      "lng": -74.4041622,
-      "tags": [
-        "getting-started",
-        "career",
-        "development",
-        "amazon-bedrock",
-        "students"
-      ],
-      "publishedAt": "2026-04-15T18:50:05.593Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -456,7 +253,7 @@
         "LATAM"
       ],
       "publishedAt": "2026-04-12T06:12:58.400Z",
-      "likesCount": 10,
+      "likesCount": 11,
       "commentsCount": 3
     },
     {
@@ -477,6 +274,23 @@
       "commentsCount": 2
     },
     {
+      "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
+      "title": "Investigue fallas de infraestructura en Azure con AWS DevOps Agent",
+      "description": "Recorre el flujo completo para configurar la integración de AWS DevOps Agent con Azure, desplegar una API bancaria de ejemplo, introducir una falla de red en PostgreSQL y lanzar una investigación autónoma cross-\ncloud que identifica la causa raíz en minutos — sin credenciales almacenadas ni agentes en Azure.",
+      "url": "https://builder.aws.com/content/3CRUAkIkGxQEXDO1kvL164WigEq",
+      "imageUrl": "",
+      "authorName": "Frank",
+      "authorAlias": "frankbpr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zmvEoQenPerxrH8Yt6gCCTfPjJ.webp",
+      "location": "PE",
+      "lat": -6.8699697,
+      "lng": -75.0458515,
+      "tags": [],
+      "publishedAt": "2026-04-16T14:35:54.869Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
       "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
       "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
@@ -495,7 +309,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 24,
+      "likesCount": 25,
       "commentsCount": 4
     },
     {
@@ -601,29 +415,6 @@
       ],
       "publishedAt": "2026-04-16T04:13:02.128Z",
       "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CQtINOjIHdDYxVc3rRTGzPhz24",
-      "title": "AWS Bootcamp (UNILORIN)",
-      "description": "This article provides a brief, hands-on overview of essential cloud setup tasks on Amazon Web Services. It walks through cost monitoring, identity management, secure server deployment, and basic application hosting using Amazon EC2.",
-      "url": "https://builder.aws.com/content/3CQtINOjIHdDYxVc3rRTGzPhz24",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQzyBOXU5QzK2UtWLlEhCs45W8/IMG-.webp",
-      "authorName": "Itz omoade",
-      "authorAlias": "omoade17",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aws-cloud-clubs",
-        "aws-community-builders",
-        "aws-identity-and-access-management",
-        "aws-builders",
-        "aws-certificate-manager"
-      ],
-      "publishedAt": "2026-04-16T09:47:56.729Z",
-      "likesCount": 1,
       "commentsCount": 0
     }
   ]
