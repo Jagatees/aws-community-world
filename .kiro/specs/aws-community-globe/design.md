@@ -2,9 +2,7 @@
 
 ## Overview
 
-A single-page web application built with React and Three.js (via `react-globe.gl` or `three-globe`) that renders an interactive 3D globe visualizing AWS Builder community members. The app uses the AWS brand color palette and allows users to explore Heroes, Community Builders, User Groups, and Cloud Clubs via tab navigation. Clicking a location marker opens a profile card with member details.
-
-The data layer uses static JSON files seeded with mock community data (with real geographic coordinates), since the AWS Builder community pages do not expose a public API. The architecture is designed so the data source can be swapped to a real API later.
+A single-page React + Vite application that renders an interactive 3D globe visualising the global AWS Builder community. Users can explore Heroes, Community Builders, User Groups, Cloud Clubs, and AWS news via tab navigation. Clicking a location marker opens a rich profile card. The app supports three globe styles, country/tag filtering, a news feed panel, dark/light mode, and social header links.
 
 ---
 
@@ -14,155 +12,202 @@ The data layer uses static JSON files seeded with mock community data (with real
 graph TD
   App --> Header
   App --> TabNav
+  App --> TagFilter
   App --> GlobeScene
   App --> ProfileCard
+  App --> NewsPanel
 
-  GlobeScene --> GlobeRenderer
-  GlobeScene --> MarkerLayer
-  GlobeScene --> AutoRotateController
+  TabNav --> CountryDropdown
 
-  TabNav -->|category change| GlobeScene
-  MarkerLayer -->|marker click| ProfileCard
+  GlobeScene -->|classic| ClassicGlobeScene
+  GlobeScene -->|sleek| CobeGlobeScene
+  GlobeScene -->|flat| FlatMapScene
 
-  DataLayer --> HeroesData
-  DataLayer --> BuildersData
-  DataLayer --> UserGroupsData
-  DataLayer --> CloudClubsData
+  App -->|useCategory| DataLayer
+  App -->|useNews| NewsData
 
-  GlobeScene --> DataLayer
+  DataLayer --> heroes.json
+  DataLayer --> community-builders.json
+  DataLayer --> user-groups.json
+  DataLayer --> cloud-clubs.json
+  NewsData --> news.json
 ```
 
 **Tech Stack:**
-- React 18 (Vite)
-- `globe.gl` — WebGL globe with dot-matrix land rendering, marker support, and built-in drag/rotation
-- Tailwind CSS — utility-first styling for AWS color palette
-- Static JSON — community member data with lat/lng coordinates
+- React 18 + Vite
+- `globe.gl` — WebGL classic globe
+- `cobe` — lightweight WebGL sleek globe
+- Leaflet / custom canvas — flat map scene
+- Tailwind CSS — utility-first styling
+- Static JSON — community data with lat/lng coordinates
+- AWS RUM — real user monitoring
 
 ---
 
-## Components and Interfaces
+## Components
 
 ### `App`
-Root component. Manages active category state and profile card visibility.
+Root component. Manages all global state.
 
 ```ts
 interface AppState {
-  activeCategory: 'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs';
-  selectedMember: Member | null;
+  activeCategory: CategoryKey;
+  selectedMember: Member | Member[] | null;
+  selectedNewsItems: NewsItem[];
+  selectedTag: string | null;
+  selectedCountry: string | null;
+  darkMode: boolean;
+  globeDesign: 'classic' | 'cobe' | 'flat';
+  zoomCommand: { direction: 'in' | 'out' | null; nonce: number };
+  newsPanelOpen: boolean;
+  flyToOverride: { lat: number; lng: number; nonce: number } | null;
 }
 ```
 
 ---
 
 ### `Header`
-Top bar with AWS wordmark/logo and app title "AWS Community Globe".
+Top bar with AWS wordmark, app title, creator credit, and icon links.
+
+Icon links (left to right): LinkedIn → AWS Builder article → Telegram → GitHub → Dark/Light toggle.
 
 ---
 
 ### `TabNav`
-Four tab buttons. Active tab highlighted with AWS Orange underline/background.
+Tab bar with five tabs + country dropdown.
 
-```ts
-interface TabNavProps {
-  activeCategory: CategoryKey;
-  onChange: (category: CategoryKey) => void;
-}
-```
+Tabs: Heroes | Community Builders | User Groups | Cloud Clubs | News
 
-Tabs:
-| Label | Key |
-|---|---|
-| Heroes | `heroes` |
-| Community Builders | `community-builders` |
-| User Groups | `user-groups` |
-| Cloud Clubs | `cloud-clubs` |
+The `CountryDropdown` renders immediately after the Cloud Clubs tab, separated by a subtle divider. It is hidden when the News tab is active.
 
 ---
 
-### `GlobeScene`
-Wraps the `globe.gl` instance. Handles:
-- Rendering the dot-matrix globe
-- Placing markers from the active category data
-- Auto-rotation logic
-- Forwarding marker click events
+### `CountryDropdown`
+Custom dropdown (not a native `<select>`) rendered via `ReactDOM.createPortal` on `document.body` to avoid overflow clipping. Positions itself using `getBoundingClientRect` on the trigger button.
 
+Each option shows: flag emoji + country name + member count.
+
+---
+
+### `TagFilter`
+Horizontal scrollable strip of tag pill buttons. Shown below the tab bar when the active category has tagged members. Hidden on the News tab.
+
+---
+
+### `GlobeScene` (lazy)
+Switches between three globe implementations based on `globeDesign` prop:
+- `ClassicGlobeScene` — `globe.gl` WebGL globe
+- `CobeGlobeScene` — `cobe` lightweight globe
+- `FlatMapScene` — 2D flat map
+
+All three accept the same props interface:
 ```ts
 interface GlobeSceneProps {
   category: CategoryKey;
-  onMarkerClick: (member: Member) => void;
+  members: Member[];
+  onMarkerClick: (member: Member | Member[]) => void;
+  cardOpen: boolean;
+  darkMode: boolean;
+  flyToTarget: { lat: number; lng: number; nonce?: number } | null;
+  zoomCommand: { direction: 'in' | 'out' | null; nonce: number };
 }
 ```
-
-Auto-rotation is implemented by incrementing the globe's `pointOfView` longitude on each animation frame. A 3-second idle timer resets on any pointer interaction.
-
----
-
-### `MarkerLayer`
-Handled internally by `globe.gl` via its `pointsData`, `pointLat`, `pointLng`, `pointColor`, and `pointRadius` props. Each category has a distinct marker color:
-
-| Category | Marker Color |
-|---|---|
-| Heroes | `#FF9900` (AWS Orange) |
-| Community Builders | `#1A9C3E` (Green) |
-| User Groups | `#00A1C9` (AWS Blue) |
-| Cloud Clubs | `#BF0816` (Red) |
 
 ---
 
 ### `ProfileCard`
-Overlay card displayed on marker click. Dismisses on outside click or close button.
+Overlay card. Renders two views:
 
-```ts
-interface ProfileCardProps {
-  member: Member | Member[];  // array for clusters
-  onClose: () => void;
-}
-```
+**SingleMemberView** — for Heroes, Community Builders, User Groups:
+- Avatar (64px circular), name, category badge
+- Heroes: hero type label (e.g. "Serverless Hero") + "View Profile" link
+- Community Builders: specialisation tag
+- Location with 📍 prefix
+- Action button: "View Profile" / "Follow" / "Join"
 
-Card layout:
-- Avatar image (circular, 64px)
-- Member name (white, 18px bold)
-- Category badge (AWS Orange pill)
-- Location name (gray, 14px)
-- Follow button (AWS Orange, outlined style)
-- Close (×) button top-right
+**CloudClubSingleView** — for Cloud Clubs:
+- Leader avatar stack (up to 2 overlapping avatars)
+- Club name, leader name(s), location
+- "Join" button inline
+
+**ClusterListView** — when multiple members share a location:
+- Scrollable list, each row: avatar, name, hero type / tag, location, action button
+
+Dismisses on outside click or × button.
+
+---
+
+### `NewsPanel`
+Slide-in panel (right side, `min(460px, 100vw)` wide). Shows latest and trending AWS Builder news.
+
+Each card: article image/avatar, title, author, tags, publish date, likes, comments, "Locate" button.
+
+Toggled by a floating button that repositions based on panel open state.
 
 ---
 
 ## Data Models
 
 ```ts
-type CategoryKey = 'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs';
+type CategoryKey = 'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'news';
 
 interface Member {
   id: string;
   name: string;
-  avatarUrl: string;
+  avatarUrl: string;           // normalised from image_url for heroes
+  profileUrl: string;          // normalised from hero_page_url / joinUrl
   category: CategoryKey;
-  location: string;       // human-readable city/country
-  lat: number;            // geographic latitude
-  lng: number;            // geographic longitude
-  profileUrl?: string;
+  location: string;
+  lat: number;
+  lng: number;
+  tag: string;                 // hero_type for heroes, specialisation for builders
+  heroType: string;            // heroes only
+  builderType: string;         // community builders only
+  specialization: string;      // community builders only
+  ledBy: { name: string; imageUrl: string }[];  // cloud clubs only
 }
 
-interface CategoryData {
-  category: CategoryKey;
-  members: Member[];
+interface NewsItem {
+  id: string;
+  title: string;
+  description: string;
+  url: string;
+  imageUrl: string;
+  authorName: string;
+  authorAlias: string;
+  authorAvatarUrl: string;
+  location: string;
+  lat: number;
+  lng: number;
+  tags: string[];
+  publishedAt: string;
+  likesCount: number;
+  commentsCount: number;
 }
 ```
 
-Data files live at `src/data/{category}.json`. Each file exports an array of `Member` objects.
+---
+
+## Data Normalisation (`useCategory`)
+
+Heroes JSON uses different field names. `normalizeMembers()` maps them:
+
+| Raw field | Normalised field |
+|---|---|
+| `image_url` | `avatarUrl` |
+| `hero_page_url` | `profileUrl` |
+| `hero_type` | `heroType` + `tag` |
+
+All categories are cached in memory after first load. Switching tabs does not re-fetch.
 
 ---
 
-## Error Handling
+## Country Flag Utility (`countryFlags.js`)
 
-| Scenario | Behavior |
-|---|---|
-| Data file fails to load | Globe renders without markers; toast/banner: "Could not load community data." |
-| Avatar image 404 | Fallback to a generic AWS-branded avatar placeholder SVG |
-| Globe WebGL not supported | Render a static fallback message: "Your browser does not support WebGL." |
-| Cluster click (multiple members at same lat/lng) | ProfileCard renders a scrollable list of member entries |
+- Builds a `Map<normalizedName, ISO2Code>` by iterating all AA–ZZ codes via `Intl.DisplayNames`.
+- `COUNTRY_ALIASES` handles edge cases (Bosnia, Hong Kong, Türkiye, etc.).
+- `countryCodeToFlag(code)` converts ISO2 → regional indicator emoji pair.
+- `getCountryCode(country)` returns the ISO2 code for a country name string.
 
 ---
 
@@ -177,29 +222,35 @@ Text Primary:   #FFFFFF
 Text Secondary: #8B9BAA
 AWS Orange:     #FF9900
 AWS Blue:       #00A1C9
+AWS Red:        #BF0816
 ```
 
-### Globe Style
-- Land dots: `#2D3F50` (muted blue-gray)
-- Globe atmosphere: subtle `#FF9900` glow at 0.1 opacity
-- Background: `#0F1923`
+### Globe Styles
+- Classic: land dots `#2D3F50`, atmosphere glow `#FF9900` at low opacity
+- Sleek (cobe): minimal, dark background
+- Flat: 2D canvas/Leaflet map
 
-### Tab Style
-- Inactive: dark surface, white text, no border
-- Active: AWS Orange bottom border (3px), white text, slightly lighter background
+### Marker Colors
+| Category | Color |
+|---|---|
+| Heroes | `#FF9900` |
+| Community Builders | `#1A9C3E` |
+| User Groups | `#00A1C9` |
+| Cloud Clubs | `#BF0816` |
+| News | `#A78BFA` |
 
 ### Profile Card
-- Background: `#1B2836`
-- Border: 1px `#2D3F50`
-- Border-radius: 12px
-- Follow button: outlined, `#FF9900` border and text, fills orange on hover
+- Backdrop blur, semi-transparent dark/light surface
+- AWS Orange accents on badges, borders, hover states
+- 12px border-radius, 60px box-shadow
 
 ---
 
-## Testing Strategy
+## Error Handling
 
-- Unit tests for data loading utilities (invalid JSON, missing fields)
-- Unit tests for the idle-timer / auto-rotation logic (pure function)
-- Component tests for `TabNav` (tab switching, active state)
-- Component tests for `ProfileCard` (renders member data, close behavior, cluster list)
-- Integration smoke test: globe renders without crashing with mock data for each category
+| Scenario | Behaviour |
+|---|---|
+| Data file fails to load | Error banner above globe; empty marker set |
+| Avatar image 404 | `onError` hides the `<img>` element |
+| Members with lat/lng = 0,0 | Excluded from filtered members |
+| Globe WebGL not supported | Fallback loading state shown |
