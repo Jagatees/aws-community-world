@@ -1,6 +1,84 @@
 {
-  "updatedAt": "2026-04-17T17:17:43.897Z",
+  "updatedAt": "2026-04-17T18:17:50.316Z",
   "latest": [
+    {
+      "id": "/content/3AiVAgV9sh4C2Si39FRcUVmT5H4",
+      "title": "AIdeas Finalist: TruthLayer — The Five-Signal AI Verification Engine",
+      "description": "TruthLayer is a production-ready AI verification engine that intercepts hallucinations before they reach users. Five independent signals. Platt-calibrated confidence. Proven via McNemar's test (p < 0.001). 95.33% precision on 300 adversarial cases. 873ms. $1.50/month Zero external ML dependencies. One API call. No model changes required.",
+      "url": "https://builder.aws.com/content/3AiVAgV9sh4C2Si39FRcUVmT5H4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CS3FDSsiZXv6g1TGztKLeDu48j/trut.webp",
+      "authorName": "Prakhar Shukla",
+      "authorAlias": "prakhar20",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39Z25lsrE4qKzrx3FnHePzG2PMx.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "APJC",
+        "amazon-bedrock",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T18:13:53.342Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CUJAemicRw7HJGBRDyW3NABoWQ",
+      "title": "AIdeas Finalist: Vibe Matching — Before the First Meeting",
+      "description": "AI digital twins talk in advance to reduce uncertainty and psychological friction in first meetings. \nThrough validation, this emerged not as a compatibility predictor, but as a \"Conversation Catalyst\" that helps people take the first step.",
+      "url": "https://builder.aws.com/content/3CUJAemicRw7HJGBRDyW3NABoWQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUPDur07ZnLz40oOnK2q5ewfNG/4-jp.webp",
+      "authorName": "Tomotada Sonoda",
+      "authorAlias": "sonoda",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wFoKQE0eqcs5ZTtccSSUgpta7L.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T18:13:33.393Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3BjBGjWVehUA3jEm1dVMfPMa3Oz",
+      "title": "Hands-On AWS: From Cost Control to Compute.",
+      "description": "An article of an educational hands-on project, covering everything from Billing alarms to deploying on EC2 instances.",
+      "url": "https://builder.aws.com/content/3BjBGjWVehUA3jEm1dVMfPMa3Oz",
+      "imageUrl": "",
+      "authorName": "Etudaiye-Muhtar Abdullah",
+      "authorAlias": "adeizethebuilder",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-17T17:48:27.360Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CUhzfQ0Vf3ICDrNPi9Z1PAy948",
+      "title": "A Guide to Deploying Secure EC2 Web Servers Using IAM Guardrails",
+      "description": "Follow my journey through the AWS Cloud Club Unilorin Bootcamp as I transition from basic cloud concepts to managing secure, production ready infrastructure. I share how I navigated AWS to build a resilient web server protected by custom IAM JSON policies and billing alerts.\n",
+      "url": "https://builder.aws.com/content/3CUhzfQ0Vf3ICDrNPi9Z1PAy948",
+      "imageUrl": "",
+      "authorName": "Caleb Ogbole",
+      "authorAlias": "kebocaleb",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-17T17:33:15.189Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CEhHz3w9iLWQJ8vYf59tl7AVKE",
       "title": "AI Context Window Overflow: Memory Pointer Fix",
@@ -123,84 +201,6 @@
       "publishedAt": "2026-04-17T16:19:21.317Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTow8wVK3UmNyqA9DpOwHCG8TH",
-      "title": "AIdeas Finalist: Qleam AI - A Self-Learning Baby Cry Intelligence",
-      "description": "Qleam AI is an AI-powered early childhood communication platform for smart parenting. It analyzes baby vocal signals into clear and structured insights. \nIts self-learning model learns from day-based data across babies of the same age, building a growing intelligence layer that reveals how communication patterns develop over time.",
-      "url": "https://builder.aws.com/content/3CTow8wVK3UmNyqA9DpOwHCG8TH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CULU1gBD2R7B3cShiTPBMfGJMk/1-Ql.webp",
-      "authorName": "Tanvir Ahmed",
-      "authorAlias": "tanvirahmed",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3An3rSR2E5ywNaIXidqQMFyBZh1.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aideas-2025",
-        "daily-life-enhancement",
-        "APJC",
-        "ai-ml",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-17T16:17:56.047Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
-      "title": "AIdeas Finalist: Anukriti – What If Drug Trials Included Everyone?",
-      "description": "Simulating drug safety across diverse genomes to detect population-specific risks before clinical trials begin.",
-      "url": "https://builder.aws.com/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CURnoXuxeApI9C1srVHnCu7o2Y/Anuk.webp",
-      "authorName": "Abhimanyu",
-      "authorAlias": "abhimanyurb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ZTFhWxtLV7lKccPuR1WVt1bar.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CURQtNZVWsXO7IUTNuSGZ8bwub",
-      "title": "Building Secure Multi-Party Data Collaboration with AWS Clean Rooms",
-      "description": "Learn how to implement privacy-preserving analytics that enables organizations to collaborate on data insights without sharing raw data",
-      "url": "https://builder.aws.com/content/3CURQtNZVWsXO7IUTNuSGZ8bwub",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUTdqTGq7LQXEaORZIEdNHqugy/aws_.webp",
-      "authorName": "Douglas",
-      "authorAlias": "douglim",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUSBgSYKxpPTb6LZpnFyX0shm7.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-17T15:07:24.001Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CUOzyeeDauC2iqYU9h46xRLq69",
-      "title": "My manager asked if it could run itself. Here's how I automated iam-audit with Fargate, EventBridge and Terraform. Part 3",
-      "description": "From running a script manually every Monday to receiving it automatically at 9am — this post covers how I automated iam-audit using ECS Fargate, EventBridge Scheduler, and Terraform. No persistent infrastructure, no idle costs. Just an ephemeral task that spins up, audits 20+ AWS accounts, uploads the report to S3, sends a Slack notification with a presigned URL, and disappears. Includes design decisions, the partial backend pattern, and why secrets belong in Secrets Manager — not environment variables.",
-      "url": "https://builder.aws.com/content/3CUOzyeeDauC2iqYU9h46xRLq69",
-      "imageUrl": "",
-      "authorName": "Gerardo Castro Arica",
-      "authorAlias": "gerardokaztro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-04-17T14:58:40.822Z",
-      "likesCount": 3,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -218,7 +218,7 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 239,
+      "likesCount": 270,
       "commentsCount": 6
     },
     {
@@ -285,28 +285,6 @@
       "commentsCount": 11
     },
     {
-      "id": "/content/3CEhHz3w9iLWQJ8vYf59tl7AVKE",
-      "title": "AI Context Window Overflow: Memory Pointer Fix",
-      "description": "AI agents fail silently when tool outputs exceed the context window. The Memory Pointer Pattern stores data externally and passes references.",
-      "url": "https://builder.aws.com/content/3CEhHz3w9iLWQJ8vYf59tl7AVKE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUgVH3NO6J0Qxpp5lMxN8vEBb7/porta.webp",
-      "authorName": "Elizabeth Fuentes",
-      "authorAlias": "elizabethfuentes12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "agentic-ai",
-        "ai-engineering",
-        "strands-agents",
-        "data-strategy"
-      ],
-      "publishedAt": "2026-04-17T17:07:18.028Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
       "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
       "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
@@ -325,7 +303,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 59,
+      "likesCount": 60,
       "commentsCount": 9
     },
     {
@@ -343,23 +321,6 @@
       "tags": [],
       "publishedAt": "2026-04-17T14:58:40.822Z",
       "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3COm56j3wrCFy38H9nJ82OVJIwX",
-      "title": "Per-User Cost Attribution for Claude Code on Amazon Bedrock",
-      "description": "How to track Bedrock inference costs by individual developer using IAM principal cost allocation, CUR 2.0, and Okta session tags.",
-      "url": "https://builder.aws.com/content/3COm56j3wrCFy38H9nJ82OVJIwX",
-      "imageUrl": "",
-      "authorName": "Aidin Khosrowshahi",
-      "authorAlias": "kaidin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ynHLXPvhY5096ZDTU0tMiDh2tH.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-04-17T16:50:15.506Z",
-      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -385,6 +346,28 @@
       "commentsCount": 1
     },
     {
+      "id": "/content/3CEhHz3w9iLWQJ8vYf59tl7AVKE",
+      "title": "AI Context Window Overflow: Memory Pointer Fix",
+      "description": "AI agents fail silently when tool outputs exceed the context window. The Memory Pointer Pattern stores data externally and passes references.",
+      "url": "https://builder.aws.com/content/3CEhHz3w9iLWQJ8vYf59tl7AVKE",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUgVH3NO6J0Qxpp5lMxN8vEBb7/porta.webp",
+      "authorName": "Elizabeth Fuentes",
+      "authorAlias": "elizabethfuentes12",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "agentic-ai",
+        "ai-engineering",
+        "strands-agents",
+        "data-strategy"
+      ],
+      "publishedAt": "2026-04-17T17:07:18.028Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CURQtNZVWsXO7IUTNuSGZ8bwub",
       "title": "Building Secure Multi-Party Data Collaboration with AWS Clean Rooms",
       "description": "Learn how to implement privacy-preserving analytics that enables organizations to collaborate on data insights without sharing raw data",
@@ -399,6 +382,23 @@
       "tags": [],
       "publishedAt": "2026-04-17T15:07:24.001Z",
       "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3COm56j3wrCFy38H9nJ82OVJIwX",
+      "title": "Per-User Cost Attribution for Claude Code on Amazon Bedrock",
+      "description": "How to track Bedrock inference costs by individual developer using IAM principal cost allocation, CUR 2.0, and Okta session tags.",
+      "url": "https://builder.aws.com/content/3COm56j3wrCFy38H9nJ82OVJIwX",
+      "imageUrl": "",
+      "authorName": "Aidin Khosrowshahi",
+      "authorAlias": "kaidin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ynHLXPvhY5096ZDTU0tMiDh2tH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-17T16:50:15.506Z",
+      "likesCount": 1,
       "commentsCount": 0
     }
   ]
