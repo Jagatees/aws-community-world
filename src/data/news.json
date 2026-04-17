@@ -1,6 +1,52 @@
 {
-  "updatedAt": "2026-04-17T03:04:30.619Z",
+  "updatedAt": "2026-04-17T04:59:39.204Z",
   "latest": [
+    {
+      "id": "/content/3A36fMDgXASqlAzvmw1BuGLrt00",
+      "title": "AIdeas Finalist: LikenessGuard - World’s First Multi-Agent, Edge-Capable Consent Enforcement Platform with Cross-Platform Integration and Cryptographic Proof-of-Face",
+      "description": "LikenessGuard enforces consent before any AI generates or edits an image involving a real person’s likeness. Built with multi-agent Bedrock, edge enforcement, Proof-of-Face, and live integrations with Claude and Grok, it prevents harm at the source and will be open-sourced after April 30, 2026, so platforms and regulators can adopt it as a responsible AI framework.\n\n",
+      "url": "https://builder.aws.com/content/3A36fMDgXASqlAzvmw1BuGLrt00",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSllmvaPCS6TUhEQmOE1f46a2I/down.webp",
+      "authorName": "Samuel Jesse",
+      "authorAlias": "samueljesse",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39c7aUQPuChFLyEvivOmE90rd2e.webp",
+      "location": "AU",
+      "lat": -24.7761086,
+      "lng": 134.755,
+      "tags": [
+        "aideas-2025",
+        "ANZ",
+        "social-impact",
+        "responsible-ai",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-04-17T03:48:45.438Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/34eZZ9HcYqIMw8e6428TCf4IXwM",
+      "title": "Migrate your containerized application from AWS App Runner to Amazon ECS Express Mode",
+      "description": "A step-by-step guide to migrating containerized workloads from AWS App Runner to Amazon ECS Express Mode, with IAM roles, CLI commands, and DNS cutover.",
+      "url": "https://builder.aws.com/content/34eZZ9HcYqIMw8e6428TCf4IXwM",
+      "imageUrl": "",
+      "authorName": "Shahani, Aditya",
+      "authorAlias": "theadi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSwxNkfqPYQngWpbv7MU0ttHDA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-ecs",
+        "containers",
+        "app-runner",
+        "aws-app-runner",
+        "aws-cli"
+      ],
+      "publishedAt": "2026-04-17T03:15:40.649Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CSqR2TiDguv0Pg6EKn1LLswZ5i",
       "title": "Building Production-Ready Agents with Kiro: Steering, Powers, Hooks, Specs, and Skills",
@@ -153,55 +199,29 @@
       "publishedAt": "2026-04-16T21:28:34.033Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CSDSWZNYyNtDxLbaV5YUgMnXb0",
-      "title": "Long Live MCP - the Dev Summit recap",
-      "description": "Running remote MCP servers on Lambda, Workers, or any horizontally-scaled runtime just got meaningfully easier. A field report of the latest MCP Dev Summit in NY for AWS builders.",
-      "url": "https://builder.aws.com/content/3CSDSWZNYyNtDxLbaV5YUgMnXb0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSFNPGWLBrqzDexaLxd6LROC54/IMG_3.webp",
-      "authorName": "Ross Williams",
-      "authorAlias": "rosscomp1",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BH5iGJogHCLq3MCd2SnkRWL2xb.webp",
-      "location": "FL, US",
-      "lat": 27.7567667,
-      "lng": -81.4639835,
-      "tags": [
-        "agentic-ai",
-        "mcp",
-        "ai",
-        "mcp-integration",
-        "mcp-server"
-      ],
-      "publishedAt": "2026-04-16T20:36:27.163Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
-      "title": "How to Install Kiro on Windows: From Download to Your First Agentic Interaction",
-      "description": " A practical, step-by-step guide for Windows developers installing both Kiro IDE and Kiro CLI. Covers the full flow from downloading  the installer to running your first agentic coding session in Windows Terminal, with Windows-specific gotchas around PATH  configuration, terminal choice, WSL, and proxy setup.",
-      "url": "https://builder.aws.com/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
-      "imageUrl": "",
-      "authorName": "ophedde",
-      "authorAlias": "oph",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro",
-        "windows",
-        "developer-tools",
-        "cli",
-        "getting-started"
-      ],
-      "publishedAt": "2026-04-16T20:21:41.075Z",
-      "likesCount": 1,
-      "commentsCount": 1
     }
   ],
   "trending": [
+    {
+      "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
+      "title": "Introducing Article View Counts on AWS Builder Center",
+      "description": "You can now see how many builders are reading your articles, giving you a real metric to understand the reach of your content.",
+      "url": "https://builder.aws.com/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMeLtqYwaG7gHyTTDqojgjnAmj/aws-a.webp",
+      "authorName": "Rick Suttles",
+      "authorAlias": "ricksuttles",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "aws-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-14T22:01:35.905Z",
+      "likesCount": 50,
+      "commentsCount": 10
+    },
     {
       "id": "/content/3CSS8xPU7MWG1oRO46ywnaorISz",
       "title": "Breaking the Glass Ceiling of Low-Code: Migrating Automations to AWS",
@@ -226,48 +246,6 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
-      "title": "Introducing Article View Counts on AWS Builder Center",
-      "description": "You can now see how many builders are reading your articles, giving you a real metric to understand the reach of your content.",
-      "url": "https://builder.aws.com/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMeLtqYwaG7gHyTTDqojgjnAmj/aws-a.webp",
-      "authorName": "Rick Suttles",
-      "authorAlias": "ricksuttles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "aws-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 50,
-      "commentsCount": 10
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 8,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
       "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
       "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
@@ -290,21 +268,26 @@
       "commentsCount": 8
     },
     {
-      "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
-      "title": "OpenClaw on AWS Lightsail: Live Demo, Real Findings and the Security Gap No Framework Models Yet — Part 4",
-      "description": "Live demo closing a 4-part security series on OpenClaw deployed on AWS Lightsail. Real setup obstacles, 13 validated findings across IaaS and application layers, and prompt injection + memory poisoning tested against Claude Sonnet 4.6. Includes the security gap MITRE ATLAS and OWASP Top 10 for Agentic Applications 2026 don't cover yet: how IaaS configuration decisions activate or disable application-layer threat vectors.",
-      "url": "https://builder.aws.com/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSUJGUQT3aQhb9gZZPyPI3lwvG/cove.webp",
-      "authorName": "Gerardo Castro Arica",
-      "authorAlias": "gerardokaztro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-04-16T22:32:23.442Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 8,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
@@ -362,6 +345,23 @@
       "publishedAt": "2026-04-14T22:12:52.358Z",
       "likesCount": 15,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
+      "title": "OpenClaw on AWS Lightsail: Live Demo, Real Findings and the Security Gap No Framework Models Yet — Part 4",
+      "description": "Live demo closing a 4-part security series on OpenClaw deployed on AWS Lightsail. Real setup obstacles, 13 validated findings across IaaS and application layers, and prompt injection + memory poisoning tested against Claude Sonnet 4.6. Includes the security gap MITRE ATLAS and OWASP Top 10 for Agentic Applications 2026 don't cover yet: how IaaS configuration decisions activate or disable application-layer threat vectors.",
+      "url": "https://builder.aws.com/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSUJGUQT3aQhb9gZZPyPI3lwvG/cove.webp",
+      "authorName": "Gerardo Castro Arica",
+      "authorAlias": "gerardokaztro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-16T22:32:23.442Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
