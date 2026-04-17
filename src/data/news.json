@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-04-17T19:24:43.316Z",
+  "updatedAt": "2026-04-17T20:14:30.525Z",
   "latest": [
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CUZHL2FfEkpQnU3iYG2LHlcS8I",
+      "title": "From Zero to Deployed☁️: Securing AWS with IAM, EC2, and Nginx on Ubuntu",
+      "description": "As part of the AWS Cloud Club Unilorin Bootcamp(Week 3), 2026, I recently completed a hands-on project focused on a critical cloud reality: building is easy, but building securely and efficiently requires intention.\nMy mission was to deploy a live web server while maintaining a strict security posture and total cost visibility. Here’s how I built a secure, cost-aware environment using IAM, EC2, and Billing tools.",
+      "url": "https://builder.aws.com/content/3CUZHL2FfEkpQnU3iYG2LHlcS8I",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV1Yl0VAh8Q05N8vaRYljdsYV7/aws-.webp",
+      "authorName": "Agbaje David",
+      "authorAlias": "agbaje",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BgXufrIvXRUKjXkJ1NiPFXpidp.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aws-cloud-clubs",
+        "aws-community",
+        "aws-community-builders",
+        "aws-community-day-2026",
+        "aws-community-day-recaps-2026"
+      ],
+      "publishedAt": "2026-04-17T20:03:19.325Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CUuy8BhNR0F7s02HpXtpIemuYQ",
       "title": "Hands-On Lab: Scaling Infrastructure with EC2, IAM, and Security",
@@ -155,70 +199,9 @@
       "publishedAt": "2026-04-17T17:00:09.798Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3COm56j3wrCFy38H9nJ82OVJIwX",
-      "title": "Per-User Cost Attribution for Claude Code on Amazon Bedrock",
-      "description": "How to track Bedrock inference costs by individual developer using IAM principal cost allocation, CUR 2.0, and Okta session tags.",
-      "url": "https://builder.aws.com/content/3COm56j3wrCFy38H9nJ82OVJIwX",
-      "imageUrl": "",
-      "authorName": "Aidin Khosrowshahi",
-      "authorAlias": "kaidin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ynHLXPvhY5096ZDTU0tMiDh2tH.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-04-17T16:50:15.506Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CUdPXMk0vDyn0S834axb4VLmB2",
-      "title": "Want to Learn AWS? Start Your Cloud Journey the Right Way",
-      "description": "A beginner-friendly guide to getting started with AWS, including core services, hands-on projects, and the best resources to build real cloud skills.",
-      "url": "https://builder.aws.com/content/3CUdPXMk0vDyn0S834axb4VLmB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUdcOOARjjFVfBKztiA78Mp09D/gett.webp",
-      "authorName": "Aryan Vijaykar",
-      "authorAlias": "aryanvijaykar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2LkVcVAtIJ93HLtFBvLv9KL5R.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "learn",
-        "learning-and-development",
-        "aws-community",
-        "aws-community-builders",
-        "aws-cloud-clubs"
-      ],
-      "publishedAt": "2026-04-17T16:44:47.934Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/39dtibaRIjRqgxkoddUkHSTj2yS",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
-      "url": "https://builder.aws.com/content/39dtibaRIjRqgxkoddUkHSTj2yS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C9PY89kVQH9ZnyCF1usCaLhxQt/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "APJC",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-10T08:54:55.638Z",
-      "likesCount": 56,
-      "commentsCount": 32
-    },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
       "title": "Construye con Strands Agents en Nerdearla Chile 2026",
@@ -233,8 +216,8 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 328,
-      "commentsCount": 7
+      "likesCount": 387,
+      "commentsCount": 8
     },
     {
       "id": "/content/3CF43pwavQ0MFccaX269jpGJsCF",
@@ -298,7 +281,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 64,
+      "likesCount": 74,
       "commentsCount": 9
     },
     {
@@ -359,6 +342,29 @@
       "publishedAt": "2026-04-17T13:10:13.485Z",
       "likesCount": 2,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CSS8xPU7MWG1oRO46ywnaorISz",
+      "title": "Breaking the Glass Ceiling of Low-Code: Migrating Automations to AWS",
+      "description": "Outgrowing low-code/no-code platforms? Learn how to migrate your workflows to AWS. We explore mapping webhooks and actions to API Gateway, Lambda, and Step Functions as an example.",
+      "url": "https://builder.aws.com/content/3CSS8xPU7MWG1oRO46ywnaorISz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CShkg4YwZjFCZTJqm4xXv89JX6/Gemi.webp",
+      "authorName": "Brian Ford",
+      "authorAlias": "bford",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BM32CjdNVTMA0bEw1o7TKLqAjO.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "low-code-no-code",
+        "data-automation-api",
+        "cost-control-automation",
+        "api-operations",
+        "rapid-security-deployment"
+      ],
+      "publishedAt": "2026-04-17T00:21:07.281Z",
+      "likesCount": 7,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CURQtNZVWsXO7IUTNuSGZ8bwub",
