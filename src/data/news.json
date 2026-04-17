@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-17T09:32:16.985Z",
+  "updatedAt": "2026-04-17T10:27:03.312Z",
   "latest": [
+    {
+      "id": "/content/3CTgLgZWEoANiPWN45gSottbQQk",
+      "title": "The Agentic Shift: Why Enterprises Will Need Fewer Applications  —  But also Different Ones",
+      "description": "How Agentic AI has potential to rationalize the bloated enterprise application portfolio.",
+      "url": "https://builder.aws.com/content/3CTgLgZWEoANiPWN45gSottbQQk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTtIP3VzMm2EnxHfBqO8Nuof5t/blog.webp",
+      "authorName": "Sauveer Ketan",
+      "authorAlias": "sauveerketan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqaDTo98mK2CjTH32UyDhMjcpM.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "agentic-ai",
+        "amazon-bedrock",
+        "amazon-bedrock-agentcore",
+        "strands-agents",
+        "generative-ai"
+      ],
+      "publishedAt": "2026-04-17T10:22:45.721Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CTgr5o0rEawDyxdcNdBFYwGGBB",
       "title": "Week 3 Assignment: EC2 (Ubuntu) + IAM + Security + Billing | AWS Cloud Club Unilorin Bootcamp 2026",
@@ -365,9 +388,53 @@
       "publishedAt": "2026-04-16T22:01:57.891Z",
       "likesCount": 1,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3CSLGwHsqrWKXehCuaKFceMeEsi",
+      "title": "Claude Code on EC2: Network Isolation for Regulated Environments",
+      "description": "How to deploy Claude Code on a shared Amazon EC2 instance with defense-in-depth security, per-user identity, and Amazon Bedrock — designed for healthcare, finance, and other regulated industries.\n",
+      "url": "https://builder.aws.com/content/3CSLGwHsqrWKXehCuaKFceMeEsi",
+      "imageUrl": "",
+      "authorName": "Aidin Khosrowshahi",
+      "authorAlias": "kaidin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ynHLXPvhY5096ZDTU0tMiDh2tH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "anthropic-claude",
+        "agentic-ai",
+        "ai-security",
+        "security",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-16T21:28:34.033Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3CF43pwavQ0MFccaX269jpGJsCF",
+      "title": "AIdeas Finalist: VERA, A Multi-Agent Triage System for Healthcare in Chile",
+      "description": "A multi-agent healthcare triage system that screens patients in Chilean Spanish, detects crisis signals, and generates clinical reports. Built by two people on AWS for $17/month, designed to integrate with Chile's public health system via HL7 FHIR.",
+      "url": "https://builder.aws.com/content/3CF43pwavQ0MFccaX269jpGJsCF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CF4KZhH0HaV4DPbochmhhwZBdX/vera.webp",
+      "authorName": "Julissa Rodriguez",
+      "authorAlias": "julissarparco",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArZ0Bk4aLdCXQ1YeLiDcu25Ia9.webp",
+      "location": "CL",
+      "lat": -31.7613365,
+      "lng": -71.3187697,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "LATAM"
+      ],
+      "publishedAt": "2026-04-12T06:12:58.400Z",
+      "likesCount": 11,
+      "commentsCount": 3
+    },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
@@ -387,8 +454,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 17,
-      "commentsCount": 6
+      "likesCount": 20,
+      "commentsCount": 7
     },
     {
       "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
@@ -409,25 +476,6 @@
       "publishedAt": "2026-04-14T22:01:35.905Z",
       "likesCount": 50,
       "commentsCount": 10
-    },
-    {
-      "id": "/content/3CTgr5o0rEawDyxdcNdBFYwGGBB",
-      "title": "Week 3 Assignment: EC2 (Ubuntu) + IAM + Security + Billing | AWS Cloud Club Unilorin Bootcamp 2026",
-      "description": "Completed Week 3 Hands-On Assignment for AWS Cloud Club Unilorin Bootcamp 2026!\nBuilt a fully secure Ubuntu EC2 web server with Nginx, created IAM users + group with custom least-privilege policy (allow start/stop/reboot, deny terminate), set up $5 monthly billing alerts, attached IAM role, and validated permissions with Access Denied proof.\n#AWS #CloudClubUnilorin #Bootcamp2026 #EC2 #IAM",
-      "url": "https://builder.aws.com/content/3CTgr5o0rEawDyxdcNdBFYwGGBB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CThH4q99U2mzYV8tdSaZRz9npZ/imag.webp",
-      "authorName": "Zuluquarnain Sulaiman",
-      "authorAlias": "bytebug64",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-04-17T08:46:28.070Z",
-      "likesCount": 1,
-      "commentsCount": 0
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -475,6 +523,25 @@
       "commentsCount": 0
     },
     {
+      "id": "/content/3CTgr5o0rEawDyxdcNdBFYwGGBB",
+      "title": "Week 3 Assignment: EC2 (Ubuntu) + IAM + Security + Billing | AWS Cloud Club Unilorin Bootcamp 2026",
+      "description": "Completed Week 3 Hands-On Assignment for AWS Cloud Club Unilorin Bootcamp 2026!\nBuilt a fully secure Ubuntu EC2 web server with Nginx, created IAM users + group with custom least-privilege policy (allow start/stop/reboot, deny terminate), set up $5 monthly billing alerts, attached IAM role, and validated permissions with Access Denied proof.\n#AWS #CloudClubUnilorin #Bootcamp2026 #EC2 #IAM",
+      "url": "https://builder.aws.com/content/3CTgr5o0rEawDyxdcNdBFYwGGBB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CThH4q99U2mzYV8tdSaZRz9npZ/imag.webp",
+      "authorName": "Zuluquarnain Sulaiman",
+      "authorAlias": "bytebug64",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-04-17T08:46:28.070Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
       "title": "AIdeas Finalist: NeuroPath AI",
       "description": "An Adaptive Learning Ecosystem for the Neurodivergent Mind",
@@ -493,27 +560,6 @@
       ],
       "publishedAt": "2026-04-17T05:13:59.045Z",
       "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTTN0fBqINbv1Zvw5cCmGXZYyn",
-      "title": "AIdeas Finalist：Remember Me — An Intelligent Memory Support System for Alzheimer’s Disease",
-      "description": "Remember Me is an AI-powered assistive system dedicated to restoring dignity, independence, and emotional connection for people living with Alzheimer’s disease and dementia. Through gentle, intuitive, human-centered design, it turns confusion into clarity, loneliness into comfort, and dependence into confidence — delivering real, sustainable social good for vulnerable communities worldwide.",
-      "url": "https://builder.aws.com/content/3CTTN0fBqINbv1Zvw5cCmGXZYyn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTXEY5g20bxINHyxMLH5BrWOCx/0-web.webp",
-      "authorName": "cabala",
-      "authorAlias": "cabala",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApmlyOzU9K1tlD0LZXIgvoKQdv.webp",
-      "location": "CN",
-      "lat": 35.000074,
-      "lng": 104.999927,
-      "tags": [
-        "aideas-2025",
-        "GCR",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-17T07:26:59.228Z",
-      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -557,21 +603,27 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
-      "title": "Investigate Azure Infrastructure Failures with AWS DevOps Agent",
-      "description": "Set up the AWS DevOps Agent integration with Azure using Outbound Identity Federation, introduce a PostgreSQL server failure, and trigger an autonomous cross-cloud investigation that identifies the root cause in minutes — with no stored credentials or agents in Azure.",
-      "url": "https://builder.aws.com/content/3CRUAkIkGxQEXDO1kvL164WigEq",
-      "imageUrl": "",
-      "authorName": "Frank",
-      "authorAlias": "frankbpr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zmvEoQenPerxrH8Yt6gCCTfPjJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [],
-      "publishedAt": "2026-04-16T14:35:54.869Z",
-      "likesCount": 4,
-      "commentsCount": 1
+      "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
+      "title": "AIdeas Finalist: Caligo Dynamics - AI Powered Autonomous Drone Swarm for Emergency Response",
+      "description": "When a fire breaks out, firefighters often enter buildings blindly, unable to see victims, hazards, or even the way out. This project uses AI-powered drone swarms built with ROS2, PX4, Kiro, and Amazon Bedrock to detect fires, locate civilians, map dangerous environments, and help emergency teams contain fires before lives are lost.",
+      "url": "https://builder.aws.com/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CIy8y44P0ggSGtPO3uWQ5xCETz/Calig.webp",
+      "authorName": "Siva Abishikth Mylavarapu",
+      "authorAlias": "abi12386",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsFS6IKVmwuzwlSN5L3Pst9aS7.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "NAMER",
+        "amazon-bedrock",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-13T17:12:02.757Z",
+      "likesCount": 22,
+      "commentsCount": 2
     }
   ]
 }
