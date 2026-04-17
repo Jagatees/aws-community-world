@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-17T01:34:38.772Z",
+  "updatedAt": "2026-04-17T03:04:30.619Z",
   "latest": [
     {
       "id": "/content/3CSqR2TiDguv0Pg6EKn1LLswZ5i",
@@ -38,7 +38,7 @@
         "rapid-security-deployment"
       ],
       "publishedAt": "2026-04-17T00:21:07.281Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 0
     },
     {
@@ -197,8 +197,8 @@
         "getting-started"
       ],
       "publishedAt": "2026-04-16T20:21:41.075Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     }
   ],
   "trending": [
@@ -222,7 +222,7 @@
         "rapid-security-deployment"
       ],
       "publishedAt": "2026-04-17T00:21:07.281Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 0
     },
     {
@@ -246,28 +246,6 @@
       "commentsCount": 10
     },
     {
-      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
-      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
-      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
-      "authorName": "Hazel Sáenz",
-      "authorAlias": "hsaenzg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "agentic-ai",
-        "open-source",
-        "strands-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 30,
-      "commentsCount": 8
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -286,8 +264,30 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 7,
-      "commentsCount": 1
+      "likesCount": 8,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
+      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
+      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
+      "authorName": "Hazel Sáenz",
+      "authorAlias": "hsaenzg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "open-source",
+        "strands-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-14T17:19:53.908Z",
+      "likesCount": 31,
+      "commentsCount": 8
     },
     {
       "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
@@ -324,23 +324,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 15,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/30DjHlCMNAEjsXW238QPx35rEqo",
       "title": "Revolutionizing Email Productivity with AI-Powered Automation through CLI",
       "description": "As a developer facing email overload, I built a solution for the Q Developer Challenge #1: email management. What began as a simple CLI tool grew into an AI-powered system that has transformed my workflow.",
@@ -364,6 +347,46 @@
       "commentsCount": 71
     },
     {
+      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
+      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
+      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-04-14T22:12:52.358Z",
+      "likesCount": 15,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
+      "title": "How to Install Kiro on Windows: From Download to Your First Agentic Interaction",
+      "description": " A practical, step-by-step guide for Windows developers installing both Kiro IDE and Kiro CLI. Covers the full flow from downloading  the installer to running your first agentic coding session in Windows Terminal, with Windows-specific gotchas around PATH  configuration, terminal choice, WSL, and proxy setup.",
+      "url": "https://builder.aws.com/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
+      "imageUrl": "",
+      "authorName": "ophedde",
+      "authorAlias": "oph",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "windows",
+        "developer-tools",
+        "cli",
+        "getting-started"
+      ],
+      "publishedAt": "2026-04-16T20:21:41.075Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
       "title": "AIdeas Finalist: Caligo Dynamics - AI Powered Autonomous Drone Swarm for Emergency Response",
       "description": "When a fire breaks out, firefighters often enter buildings blindly, unable to see victims, hazards, or even the way out. This project uses AI-powered drone swarms built with ROS2, PX4, Kiro, and Amazon Bedrock to detect fires, locate civilians, map dangerous environments, and help emergency teams contain fires before lives are lost.",
@@ -385,23 +408,6 @@
       "publishedAt": "2026-04-13T17:12:02.757Z",
       "likesCount": 21,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
-      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
-      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
-      "authorName": "Abdul-hakeem Akinsile",
-      "authorAlias": "akinsilecloudops",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-16T17:24:37.233Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ]
 }
