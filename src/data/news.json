@@ -1,6 +1,44 @@
 {
-  "updatedAt": "2026-04-17T18:17:50.316Z",
+  "updatedAt": "2026-04-17T19:24:43.316Z",
   "latest": [
+    {
+      "id": "/content/3CUuy8BhNR0F7s02HpXtpIemuYQ",
+      "title": "Hands-On Lab: Scaling Infrastructure with EC2, IAM, and Security",
+      "description": "In this technical lab, I moved beyond basic instance launching to implement a secure, monitored web environment. This project focused on the intersection of Compute (EC2), Identity and Access Management (IAM), and Operational Excellence through billing alerts",
+      "url": "https://builder.aws.com/content/3CUuy8BhNR0F7s02HpXtpIemuYQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUvMzyiIIQKMVLlbCL4kek7ueO/Scre.webp",
+      "authorName": "Sholadoye Najib Adebisi",
+      "authorAlias": "natech4040",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-17T19:09:53.821Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3C2USakkAY23f3ICepPtL7dzngW",
+      "title": "AIdeas Finalist: Afrifashion 3D - From Fashion Images to Sewing Patterns with AI",
+      "description": "Afrifashion 3D is an AI-powered platform that analyzes garment images to identify clothing components, generate sewing pattern diagrams, and produce explainer videos that guide garment production. By combining generative AI with a scalable cloud architecture on AWS, the system helps designers and fashion businesses accelerate the process of turning garment ideas into manufacturable designs.",
+      "url": "https://builder.aws.com/content/3C2USakkAY23f3ICepPtL7dzngW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CU26lwikU0NdKb8lBJ7c53Z5pq/6da3.webp",
+      "authorName": "Ayodele Adedayo",
+      "authorAlias": "eahisayodele",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T18:32:53.861Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3AiVAgV9sh4C2Si39FRcUVmT5H4",
       "title": "AIdeas Finalist: TruthLayer — The Five-Signal AI Verification Engine",
@@ -26,7 +64,7 @@
     },
     {
       "id": "/content/3CUJAemicRw7HJGBRDyW3NABoWQ",
-      "title": "AIdeas Finalist: Vibe Matching — Before the First Meeting",
+      "title": "AIdeas Finalist: Vibe Matching — Fix the First 5 Minutes of Human Connection",
       "description": "AI digital twins talk in advance to reduce uncertainty and psychological friction in first meetings. \nThrough validation, this emerged not as a compatibility predictor, but as a \"Conversation Catalyst\" that helps people take the first step.",
       "url": "https://builder.aws.com/content/3CUJAemicRw7HJGBRDyW3NABoWQ",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUPDur07ZnLz40oOnK2q5ewfNG/4-jp.webp",
@@ -157,53 +195,30 @@
       "publishedAt": "2026-04-17T16:44:47.934Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CUbtsllKwsgy6coEC0c5uoL2P4",
-      "title": "Mi experiencia con Kiro, lo bueno, lo malo.",
-      "description": "Una breve historia sobre kiro, como fue mi experiencia viendo lo bueno, lo malo y lo que puede mejorar.",
-      "url": "https://builder.aws.com/content/3CUbtsllKwsgy6coEC0c5uoL2P4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUcmusBr5gcGXAuf18aJpXzlKg/amaz.webp",
-      "authorName": "Ricardo Vallejo Sánchez",
-      "authorAlias": "ricardovs",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUbPfmeydVoF2HeYwOvdbVetn4.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "kiro",
-        "kiro-agent",
-        "kiro-with-pro-plus"
-      ],
-      "publishedAt": "2026-04-17T16:36:19.814Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CUZNWF5xbsUhbOgbMSYai9PAcF",
-      "title": "Docker Networking Explained: How Containers Actually Talk to Each Other",
-      "description": "Perfect Dockerfiles mean nothing if your containers can't communicate. Here's the mental model that finally made Docker networking click for me, built from a real multi-service AWS deployment.",
-      "url": "https://builder.aws.com/content/3CUZNWF5xbsUhbOgbMSYai9PAcF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUaWEt9KpYlrfYedR0hnTDsNI2/IMG_2.webp",
-      "authorName": "Somidotun",
-      "authorAlias": "oluwasomidotun",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BLR89yY9qquXWriso0xa8QMVyS.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "docker-network",
-        "docker",
-        "devops",
-        "amazon-ec2",
-        "containers"
-      ],
-      "publishedAt": "2026-04-17T16:19:21.317Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/39dtibaRIjRqgxkoddUkHSTj2yS",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/39dtibaRIjRqgxkoddUkHSTj2yS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C9PY89kVQH9ZnyCF1usCaLhxQt/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "APJC",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-10T08:54:55.638Z",
+      "likesCount": 56,
+      "commentsCount": 32
+    },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
       "title": "Construye con Strands Agents en Nerdearla Chile 2026",
@@ -218,8 +233,8 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 270,
-      "commentsCount": 6
+      "likesCount": 328,
+      "commentsCount": 7
     },
     {
       "id": "/content/3CF43pwavQ0MFccaX269jpGJsCF",
@@ -265,26 +280,6 @@
       "commentsCount": 9
     },
     {
-      "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
-      "title": "Introducing Article View Counts on AWS Builder Center",
-      "description": "You can now see how many builders are reading your articles, giving you a real metric to understand the reach of your content.",
-      "url": "https://builder.aws.com/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMeLtqYwaG7gHyTTDqojgjnAmj/aws-a.webp",
-      "authorName": "Rick Suttles",
-      "authorAlias": "ricksuttles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "aws-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 53,
-      "commentsCount": 11
-    },
-    {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
       "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
       "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
@@ -303,8 +298,28 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 60,
+      "likesCount": 64,
       "commentsCount": 9
+    },
+    {
+      "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
+      "title": "Introducing Article View Counts on AWS Builder Center",
+      "description": "You can now see how many builders are reading your articles, giving you a real metric to understand the reach of your content.",
+      "url": "https://builder.aws.com/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMeLtqYwaG7gHyTTDqojgjnAmj/aws-a.webp",
+      "authorName": "Rick Suttles",
+      "authorAlias": "ricksuttles",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "aws-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-14T22:01:35.905Z",
+      "likesCount": 53,
+      "commentsCount": 11
     },
     {
       "id": "/content/3CUOzyeeDauC2iqYU9h46xRLq69",
@@ -346,28 +361,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3CEhHz3w9iLWQJ8vYf59tl7AVKE",
-      "title": "AI Context Window Overflow: Memory Pointer Fix",
-      "description": "AI agents fail silently when tool outputs exceed the context window. The Memory Pointer Pattern stores data externally and passes references.",
-      "url": "https://builder.aws.com/content/3CEhHz3w9iLWQJ8vYf59tl7AVKE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUgVH3NO6J0Qxpp5lMxN8vEBb7/porta.webp",
-      "authorName": "Elizabeth Fuentes",
-      "authorAlias": "elizabethfuentes12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "agentic-ai",
-        "ai-engineering",
-        "strands-agents",
-        "data-strategy"
-      ],
-      "publishedAt": "2026-04-17T17:07:18.028Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CURQtNZVWsXO7IUTNuSGZ8bwub",
       "title": "Building Secure Multi-Party Data Collaboration with AWS Clean Rooms",
       "description": "Learn how to implement privacy-preserving analytics that enables organizations to collaborate on data insights without sharing raw data",
@@ -385,20 +378,24 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3COm56j3wrCFy38H9nJ82OVJIwX",
-      "title": "Per-User Cost Attribution for Claude Code on Amazon Bedrock",
-      "description": "How to track Bedrock inference costs by individual developer using IAM principal cost allocation, CUR 2.0, and Okta session tags.",
-      "url": "https://builder.aws.com/content/3COm56j3wrCFy38H9nJ82OVJIwX",
-      "imageUrl": "",
-      "authorName": "Aidin Khosrowshahi",
-      "authorAlias": "kaidin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ynHLXPvhY5096ZDTU0tMiDh2tH.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-04-17T16:50:15.506Z",
-      "likesCount": 1,
+      "id": "/content/3CU410utziGk4O1m6h2x1WEFPL3",
+      "title": "SAP BDC Certification: Latest Exam Updates 2026",
+      "description": "Stay informed on SAP BDC Certification (C_BCBDC) with the latest exam updates. Understand the syllabus, difficulty, and benefits for professionals.",
+      "url": "https://builder.aws.com/content/3CU410utziGk4O1m6h2x1WEFPL3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CU62V5rLDVBZAH50pdj7omY794/sap-.webp",
+      "authorName": "Alexis Habig",
+      "authorAlias": "alexishabig",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38W3066RsBbjeHlW8V2HSbg7Sal.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "educational",
+        "sap",
+        "exam-prep"
+      ],
+      "publishedAt": "2026-04-17T12:08:24.816Z",
+      "likesCount": 3,
       "commentsCount": 0
     }
   ]
