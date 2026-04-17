@@ -1,6 +1,73 @@
 {
-  "updatedAt": "2026-04-17T15:23:21.512Z",
+  "updatedAt": "2026-04-17T16:20:51.865Z",
   "latest": [
+    {
+      "id": "/content/3CUZNWF5xbsUhbOgbMSYai9PAcF",
+      "title": "Docker Networking Explained: How Containers Actually Talk to Each Other",
+      "description": "Perfect Dockerfiles mean nothing if your containers can't communicate. Here's the mental model that finally made Docker networking click for me, built from a real multi-service AWS deployment.",
+      "url": "https://builder.aws.com/content/3CUZNWF5xbsUhbOgbMSYai9PAcF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUaWEt9KpYlrfYedR0hnTDsNI2/IMG_2.webp",
+      "authorName": "Somidotun",
+      "authorAlias": "oluwasomidotun",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BLR89yY9qquXWriso0xa8QMVyS.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "docker-network",
+        "docker",
+        "devops",
+        "amazon-ec2",
+        "containers"
+      ],
+      "publishedAt": "2026-04-17T16:19:21.317Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CTow8wVK3UmNyqA9DpOwHCG8TH",
+      "title": "AIdeas Finalist: Qleam AI - A Self-Learning Baby Cry Intelligence",
+      "description": "Qleam AI is an AI-powered early childhood communication platform for smart parenting. It analyzes baby vocal signals into clear and structured insights. \nIts self-learning model learns from day-based data across babies of the same age, building a growing intelligence layer that reveals how communication patterns develop over time.",
+      "url": "https://builder.aws.com/content/3CTow8wVK3UmNyqA9DpOwHCG8TH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CULU1gBD2R7B3cShiTPBMfGJMk/1-Ql.webp",
+      "authorName": "Tanvir Ahmed",
+      "authorAlias": "tanvirahmed",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3An3rSR2E5ywNaIXidqQMFyBZh1.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aideas-2025",
+        "daily-life-enhancement",
+        "APJC",
+        "ai-ml",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-17T16:17:56.047Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
+      "title": "AIdeas Finalist: Anukriti – What If Drug Trials Included Everyone?",
+      "description": "Simulating drug safety across diverse genomes to detect population-specific risks before clinical trials begin.",
+      "url": "https://builder.aws.com/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CURnoXuxeApI9C1srVHnCu7o2Y/Anuk.webp",
+      "authorName": "Abhimanyu",
+      "authorAlias": "abhimanyurb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ZTFhWxtLV7lKccPuR1WVt1bar.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T16:05:36.978Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CURQtNZVWsXO7IUTNuSGZ8bwub",
       "title": "Building Secure Multi-Party Data Collaboration with AWS Clean Rooms",
@@ -15,7 +82,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-17T15:07:24.001Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -32,7 +99,7 @@
       "lng": 0,
       "tags": [],
       "publishedAt": "2026-04-17T14:58:40.822Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -141,259 +208,26 @@
       "publishedAt": "2026-04-17T12:43:33.323Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CU410utziGk4O1m6h2x1WEFPL3",
-      "title": "SAP BDC Certification: Latest Exam Updates 2026",
-      "description": "Stay informed on SAP BDC Certification (C_BCBDC) with the latest exam updates. Understand the syllabus, difficulty, and benefits for professionals.",
-      "url": "https://builder.aws.com/content/3CU410utziGk4O1m6h2x1WEFPL3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CU62V5rLDVBZAH50pdj7omY794/sap-.webp",
-      "authorName": "Alexis Habig",
-      "authorAlias": "alexishabig",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38W3066RsBbjeHlW8V2HSbg7Sal.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "educational",
-        "sap",
-        "exam-prep"
-      ],
-      "publishedAt": "2026-04-17T12:08:24.816Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CU10616YwgOmJvdj3vx6BicP5Q",
-      "title": "Improve WordPress Core Web Vitals for Better SEO Rankings",
-      "description": "Improve WordPress Core Web Vitals for better SEO rankings. Boost site speed, enhance UX, and optimize LCP, CLS, and INP with proven performance techniques.",
-      "url": "https://builder.aws.com/content/3CU10616YwgOmJvdj3vx6BicP5Q",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CU1HIoOZ8apOUnuK3UJvtBv3EX/Impr.webp",
-      "authorName": "Harper Elise Callahan",
-      "authorAlias": "harperelisecallahan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/381OZkwcmCz2Q9uM2fSAQK2sEAL.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "wordpress",
-        "educational",
-        "SEO"
-      ],
-      "publishedAt": "2026-04-17T11:28:15.076Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTxJduUaeXbPqgEnXtJjXSUxCa",
-      "title": "AIdeas Finalist: Whispurr — A Safe AI Mental Health Space for Teenagers",
-      "description": "What if the most dangerous thing about teenage mental health isn’t the crisis — but the silence before it?",
-      "url": "https://builder.aws.com/content/3CTxJduUaeXbPqgEnXtJjXSUxCa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CU0cHgp3Os3rKDyNpeOVFK2wW8/Gemi.webp",
-      "authorName": "heejin",
-      "authorAlias": "ellie0914",
-      "authorAvatarUrl": "",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T11:21:38.209Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C8YHMMAkXINlrbl3bc00ETLSKh",
-      "title": "Understanding OpenStack Ironic: How Bare Metal Becomes Cloud-Managed",
-      "description": "OpenStack Ironic (the Bare Metal service) is the OpenStack service for managing physical machines as cloud resources. Before this task,",
-      "url": "https://builder.aws.com/content/3C8YHMMAkXINlrbl3bc00ETLSKh",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTzDgvhYoYmjYDXh9SSUYCelem/grap.webp",
-      "authorName": "Habeeb Babasulaiman",
-      "authorAlias": "freemanboss",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32KkG08lZwpZvSN5wgLE1DJzJoU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T11:11:52.364Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTgLgZWEoANiPWN45gSottbQQk",
-      "title": "The Agentic Shift: Why Enterprises Will Need Fewer Applications  —  But also Different Ones",
-      "description": "How Agentic AI has potential to rationalize the bloated enterprise application portfolio.",
-      "url": "https://builder.aws.com/content/3CTgLgZWEoANiPWN45gSottbQQk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTtIP3VzMm2EnxHfBqO8Nuof5t/blog.webp",
-      "authorName": "Sauveer Ketan",
-      "authorAlias": "sauveerketan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqaDTo98mK2CjTH32UyDhMjcpM.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "agentic-ai",
-        "amazon-bedrock",
-        "amazon-bedrock-agentcore",
-        "strands-agents",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-04-17T10:22:45.721Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTgr5o0rEawDyxdcNdBFYwGGBB",
-      "title": "Week 3 Assignment: EC2 (Ubuntu) + IAM + Security + Billing | AWS Cloud Club Unilorin Bootcamp 2026",
-      "description": "Completed Week 3 Hands-On Assignment for AWS Cloud Club Unilorin Bootcamp 2026!\nBuilt a fully secure Ubuntu EC2 web server with Nginx, created IAM users + group with custom least-privilege policy (allow start/stop/reboot, deny terminate), set up $5 monthly billing alerts, attached IAM role, and validated permissions with Access Denied proof.\n#AWS #CloudClubUnilorin #Bootcamp2026 #EC2 #IAM",
-      "url": "https://builder.aws.com/content/3CTgr5o0rEawDyxdcNdBFYwGGBB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CThH4q99U2mzYV8tdSaZRz9npZ/imag.webp",
-      "authorName": "Zuluquarnain Sulaiman",
-      "authorAlias": "bytebug64",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-04-17T08:46:28.070Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CSENmzFDBQu3E9hLAcG6yJKIJ9",
-      "title": "AIdeas Finalist: AI Runtime Assurance",
-      "description": "AI Runtime Assurance is a black-box recorder for AI agents on AWS. It captures HTTP requests, AWS API actions, and file operations, then turns them into one session-level security report with evidence, severity scores, and plain-English explanations. It uses Amazon Bedrock when available and falls back cleanly when it is not.",
-      "url": "https://builder.aws.com/content/3CSENmzFDBQu3E9hLAcG6yJKIJ9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSFcicLXS39uq52qCMb3mipMEG/grok.webp",
-      "authorName": "Borys",
-      "authorAlias": "tsyrulb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtjjHJYPa0v8aL2AZEIgBqruWq.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "aideas-2025",
-        "workplace-efficiency",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T08:43:36.736Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTcwuMEeOF81IJDQcYw6X24DWu",
-      "title": "Implement monthly data refresh for an Amazon Aurora PostgreSQL database with reduced downtime",
-      "description": "Explained how to automate the completely fresh data loading of an Aurora database at the end of each month, which is essential for maintaining an up-to-date and accurate database ",
-      "url": "https://builder.aws.com/content/3CTcwuMEeOF81IJDQcYw6X24DWu",
-      "imageUrl": "",
-      "authorName": "Kanai Dutta",
-      "authorAlias": "kanai15",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38b3D97qlyqxoQImIQSCJ43uQ3C.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-04-17T08:29:39.631Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CR0kq53p3zVe22KfQOGr92ccZQ",
-      "title": "Performing internal Vulnerability Assessment on a private EC2 instance using Tenable Nessus in AWS",
-      "description": "This guide demonstrates how to deploy and scan a target EC2 instance inside a private subnet using Tenable Nessus. It covers instance configuration, application deployment using user data, secure access via AWS Systems Manager, hostname resolution, and credentialed scanning setup.\n\nBy the end of this lab, you will have a working internal scanning setup that reflects common cloud security practices in AWS environments.",
-      "url": "https://builder.aws.com/content/3CR0kq53p3zVe22KfQOGr92ccZQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTZuUtlyMz2VXLlglMIWzrTzVF/Chat.webp",
-      "authorName": "J.R. De Guzman",
-      "authorAlias": "jrmagician",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xBc0PIVtxPMIyZaKpWiaKaWkKT.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "cloud-security",
-        "cybersecurity",
-        "network-security",
-        "security-best-practices",
-        "application-security"
-      ],
-      "publishedAt": "2026-04-17T07:46:45.463Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTYtshyI9EnbSGCGp2HKHQ3VZm",
-      "title": "AWS Interconnect- last mile, streamlining private connectivity to AWS.",
-      "description": "BUT, didn’t we have that service capability already?",
-      "url": "https://builder.aws.com/content/3CTYtshyI9EnbSGCGp2HKHQ3VZm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTZokYCajFGn9tEtqOflfyWZsq/Chat.webp",
-      "authorName": "Ansley Adrian Moyo",
-      "authorAlias": "enziety",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B1cVVKUxqvJMOq6CwnGdKlNW16.webp",
-      "location": "ZW",
-      "lat": -18.4554963,
-      "lng": 29.7468414,
-      "tags": [
-        "multi-cloud",
-        "cloud-networking",
-        "networking-content-delivery",
-        "amazon-vpc",
-        "vpc"
-      ],
-      "publishedAt": "2026-04-17T07:41:59.123Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTTN0fBqINbv1Zvw5cCmGXZYyn",
-      "title": "AIdeas Finalist：Remember Me — An Intelligent Memory Support System for Alzheimer’s Disease",
-      "description": "Remember Me is an AI-powered assistive system dedicated to restoring dignity, independence, and emotional connection for people living with Alzheimer’s disease and dementia. Through gentle, intuitive, human-centered design, it turns confusion into clarity, loneliness into comfort, and dependence into confidence — delivering real, sustainable social good for vulnerable communities worldwide.",
-      "url": "https://builder.aws.com/content/3CTTN0fBqINbv1Zvw5cCmGXZYyn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTXEY5g20bxINHyxMLH5BrWOCx/0-web.webp",
-      "authorName": "cabala",
-      "authorAlias": "cabala",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApmlyOzU9K1tlD0LZXIgvoKQdv.webp",
-      "location": "CN",
-      "lat": 35.000074,
-      "lng": 104.999927,
-      "tags": [
-        "aideas-2025",
-        "GCR",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-17T07:26:59.228Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
+      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
+      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-04-14T22:12:52.358Z",
+      "likesCount": 198,
+      "commentsCount": 6
+    },
     {
       "id": "/content/3CF43pwavQ0MFccaX269jpGJsCF",
       "title": "AIdeas Finalist: VERA, A Multi-Agent Triage System for Healthcare in Chile",
@@ -416,23 +250,6 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 148,
-      "commentsCount": 6
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -451,7 +268,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 23,
+      "likesCount": 24,
       "commentsCount": 8
     },
     {
@@ -473,6 +290,28 @@
       "publishedAt": "2026-04-14T22:01:35.905Z",
       "likesCount": 52,
       "commentsCount": 10
+    },
+    {
+      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
+      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
+      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
+      "authorName": "Hazel Sáenz",
+      "authorAlias": "hsaenzg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "open-source",
+        "strands-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-14T17:19:53.908Z",
+      "likesCount": 50,
+      "commentsCount": 8
     },
     {
       "id": "/content/3CTkcvMpskSnxP8aXckowxZCcZY",
@@ -497,67 +336,37 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
-      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
-      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
-      "authorName": "Hazel Sáenz",
-      "authorAlias": "hsaenzg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "agentic-ai",
-        "open-source",
-        "strands-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 45,
-      "commentsCount": 8
-    },
-    {
-      "id": "/content/3CU410utziGk4O1m6h2x1WEFPL3",
-      "title": "SAP BDC Certification: Latest Exam Updates 2026",
-      "description": "Stay informed on SAP BDC Certification (C_BCBDC) with the latest exam updates. Understand the syllabus, difficulty, and benefits for professionals.",
-      "url": "https://builder.aws.com/content/3CU410utziGk4O1m6h2x1WEFPL3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CU62V5rLDVBZAH50pdj7omY794/sap-.webp",
-      "authorName": "Alexis Habig",
-      "authorAlias": "alexishabig",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38W3066RsBbjeHlW8V2HSbg7Sal.webp",
+      "id": "/content/3CURQtNZVWsXO7IUTNuSGZ8bwub",
+      "title": "Building Secure Multi-Party Data Collaboration with AWS Clean Rooms",
+      "description": "Learn how to implement privacy-preserving analytics that enables organizations to collaborate on data insights without sharing raw data",
+      "url": "https://builder.aws.com/content/3CURQtNZVWsXO7IUTNuSGZ8bwub",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUTdqTGq7LQXEaORZIEdNHqugy/aws_.webp",
+      "authorName": "Douglas",
+      "authorAlias": "douglim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUSBgSYKxpPTb6LZpnFyX0shm7.webp",
       "location": "US",
       "lat": 39.7837304,
       "lng": -100.445882,
-      "tags": [
-        "educational",
-        "sap",
-        "exam-prep"
-      ],
-      "publishedAt": "2026-04-17T12:08:24.816Z",
-      "likesCount": 2,
+      "tags": [],
+      "publishedAt": "2026-04-17T15:07:24.001Z",
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
-      "id": "/content/3CU10616YwgOmJvdj3vx6BicP5Q",
-      "title": "Improve WordPress Core Web Vitals for Better SEO Rankings",
-      "description": "Improve WordPress Core Web Vitals for better SEO rankings. Boost site speed, enhance UX, and optimize LCP, CLS, and INP with proven performance techniques.",
-      "url": "https://builder.aws.com/content/3CU10616YwgOmJvdj3vx6BicP5Q",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CU1HIoOZ8apOUnuK3UJvtBv3EX/Impr.webp",
-      "authorName": "Harper Elise Callahan",
-      "authorAlias": "harperelisecallahan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/381OZkwcmCz2Q9uM2fSAQK2sEAL.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "wordpress",
-        "educational",
-        "SEO"
-      ],
-      "publishedAt": "2026-04-17T11:28:15.076Z",
-      "likesCount": 2,
+      "id": "/content/3CUOzyeeDauC2iqYU9h46xRLq69",
+      "title": "My manager asked if it could run itself. Here's how I automated iam-audit with Fargate, EventBridge and Terraform. Part 3",
+      "description": "From running a script manually every Monday to receiving it automatically at 9am — this post covers how I automated iam-audit using ECS Fargate, EventBridge Scheduler, and Terraform. No persistent infrastructure, no idle costs. Just an ephemeral task that spins up, audits 20+ AWS accounts, uploads the report to S3, sends a Slack notification with a presigned URL, and disappears. Includes design decisions, the partial backend pattern, and why secrets belong in Secrets Manager — not environment variables.",
+      "url": "https://builder.aws.com/content/3CUOzyeeDauC2iqYU9h46xRLq69",
+      "imageUrl": "",
+      "authorName": "Gerardo Castro Arica",
+      "authorAlias": "gerardokaztro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-17T14:58:40.822Z",
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -580,28 +389,28 @@
         "rapid-security-deployment"
       ],
       "publishedAt": "2026-04-17T00:21:07.281Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 0
     },
     {
-      "id": "/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
-      "title": "AIdeas Finalist: NeuroPath AI",
-      "description": "An Adaptive Learning Ecosystem for the Neurodivergent Mind",
-      "url": "https://builder.aws.com/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTE8VeK7zJ1TzJXprGEh4kKB8C/Scre.webp",
-      "authorName": "Khadija Sajid",
-      "authorAlias": "khadijasajid",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AxBeKpkfzA4UWCMYhDoPoi0tAl.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
+      "id": "/content/3CU410utziGk4O1m6h2x1WEFPL3",
+      "title": "SAP BDC Certification: Latest Exam Updates 2026",
+      "description": "Stay informed on SAP BDC Certification (C_BCBDC) with the latest exam updates. Understand the syllabus, difficulty, and benefits for professionals.",
+      "url": "https://builder.aws.com/content/3CU410utziGk4O1m6h2x1WEFPL3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CU62V5rLDVBZAH50pdj7omY794/sap-.webp",
+      "authorName": "Alexis Habig",
+      "authorAlias": "alexishabig",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38W3066RsBbjeHlW8V2HSbg7Sal.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
+        "educational",
+        "sap",
+        "exam-prep"
       ],
-      "publishedAt": "2026-04-17T05:13:59.045Z",
-      "likesCount": 4,
+      "publishedAt": "2026-04-17T12:08:24.816Z",
+      "likesCount": 2,
       "commentsCount": 0
     }
   ]
