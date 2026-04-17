@@ -1,6 +1,69 @@
 {
-  "updatedAt": "2026-04-17T07:33:45.506Z",
+  "updatedAt": "2026-04-17T08:34:23.350Z",
   "latest": [
+    {
+      "id": "/content/3CTcwuMEeOF81IJDQcYw6X24DWu",
+      "title": "Implement monthly data refresh for an Amazon Aurora PostgreSQL database with reduced downtime",
+      "description": "Explained how to automate the completely fresh data loading of an Aurora database at the end of each month, which is essential for maintaining an up-to-date and accurate database ",
+      "url": "https://builder.aws.com/content/3CTcwuMEeOF81IJDQcYw6X24DWu",
+      "imageUrl": "",
+      "authorName": "Kanai Dutta",
+      "authorAlias": "kanai15",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38b3D97qlyqxoQImIQSCJ43uQ3C.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-17T08:29:39.631Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CR0kq53p3zVe22KfQOGr92ccZQ",
+      "title": "Performing internal Vulnerability Assessment on a private EC2 instance using Tenable Nessus in AWS",
+      "description": "This guide demonstrates how to deploy and scan a target EC2 instance inside a private subnet using Tenable Nessus. It covers instance configuration, application deployment using user data, secure access via AWS Systems Manager, hostname resolution, and credentialed scanning setup.\n\nBy the end of this lab, you will have a working internal scanning setup that reflects common cloud security practices in AWS environments.",
+      "url": "https://builder.aws.com/content/3CR0kq53p3zVe22KfQOGr92ccZQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTZuUtlyMz2VXLlglMIWzrTzVF/Chat.webp",
+      "authorName": "J.R. De Guzman",
+      "authorAlias": "jrmagician",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xBc0PIVtxPMIyZaKpWiaKaWkKT.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "cloud-security",
+        "cybersecurity",
+        "network-security",
+        "security-best-practices",
+        "application-security"
+      ],
+      "publishedAt": "2026-04-17T07:46:45.463Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CTYtshyI9EnbSGCGp2HKHQ3VZm",
+      "title": "AWS Interconnect- last mile, streamlining private connectivity to AWS.",
+      "description": "BUT, didn’t we have that service capability already?",
+      "url": "https://builder.aws.com/content/3CTYtshyI9EnbSGCGp2HKHQ3VZm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTZokYCajFGn9tEtqOflfyWZsq/Chat.webp",
+      "authorName": "Ansley Adrian Moyo",
+      "authorAlias": "enziety",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B1cVVKUxqvJMOq6CwnGdKlNW16.webp",
+      "location": "ZW",
+      "lat": -18.4554963,
+      "lng": 29.7468414,
+      "tags": [
+        "multi-cloud",
+        "cloud-networking",
+        "networking-content-delivery",
+        "amazon-vpc",
+        "vpc"
+      ],
+      "publishedAt": "2026-04-17T07:41:59.123Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CTTN0fBqINbv1Zvw5cCmGXZYyn",
       "title": "AIdeas Finalist：Remember Me — An Intelligent Memory Support System for Alzheimer’s Disease",
@@ -19,7 +82,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-17T07:26:59.228Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -107,7 +170,7 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-04-17T03:48:45.438Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -260,7 +323,7 @@
       "lng": 7.9999721,
       "tags": [],
       "publishedAt": "2026-04-16T22:01:57.891Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -308,71 +371,6 @@
       "publishedAt": "2026-04-16T20:36:27.163Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
-      "title": "How to Install Kiro on Windows: From Download to Your First Agentic Interaction",
-      "description": " A practical, step-by-step guide for Windows developers installing both Kiro IDE and Kiro CLI. Covers the full flow from downloading  the installer to running your first agentic coding session in Windows Terminal, with Windows-specific gotchas around PATH  configuration, terminal choice, WSL, and proxy setup.",
-      "url": "https://builder.aws.com/content/3CSC6FqkajiOElX4Xkw7jdVKlqb",
-      "imageUrl": "",
-      "authorName": "ophedde",
-      "authorAlias": "oph",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro",
-        "windows",
-        "developer-tools",
-        "cli",
-        "getting-started"
-      ],
-      "publishedAt": "2026-04-16T20:21:41.075Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CPN5eC4gzYepjWG85I7tREtVUP",
-      "title": "Amazon Web Services on Campus!",
-      "description": "AWS builder center can be used my individual students and student ran organizations. Not only for a technology based club but for any club desired. AWS offers many services for all sorts of endeavors clubs do. ",
-      "url": "https://builder.aws.com/content/3CPN5eC4gzYepjWG85I7tREtVUP",
-      "imageUrl": "",
-      "authorName": "Prema Mavuleti",
-      "authorAlias": "premamav",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOc2GKcpuFEyoLPoAR2BLiJ428.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "agentic-ai",
-        "students"
-      ],
-      "publishedAt": "2026-04-16T19:57:33.648Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BUttUz594q52F82e4pXODGeC9L",
-      "title": "AWS Bootcamp Project: Mastering EC2, IAM, and Cloud Security (Weeks 1-3)",
-      "description": "Deployment of Scalable Web Infrastructure & IAM Security Framework",
-      "url": "https://builder.aws.com/content/3BUttUz594q52F82e4pXODGeC9L",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSC2Av73PidkpcSYrQrCPewF8n/3628.webp",
-      "authorName": "Olawuyi Rotimi",
-      "authorAlias": "shefarina",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aws-cloud-clubs",
-        "aws-identity-and-access-management",
-        "amazon-elastic-container-registry",
-        "amazon-aurora"
-      ],
-      "publishedAt": "2026-04-16T19:56:28.828Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -415,29 +413,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 12,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
-      "title": "AIdeas Finalist: NeuroPath AI",
-      "description": "An Adaptive Learning Ecosystem for the Neurodivergent Mind",
-      "url": "https://builder.aws.com/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTE8VeK7zJ1TzJXprGEh4kKB8C/Scre.webp",
-      "authorName": "Khadija Sajid",
-      "authorAlias": "khadijasajid",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AxBeKpkfzA4UWCMYhDoPoi0tAl.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T05:13:59.045Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "likesCount": 15,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -485,6 +462,48 @@
       "commentsCount": 0
     },
     {
+      "id": "/content/3CTTN0fBqINbv1Zvw5cCmGXZYyn",
+      "title": "AIdeas Finalist：Remember Me — An Intelligent Memory Support System for Alzheimer’s Disease",
+      "description": "Remember Me is an AI-powered assistive system dedicated to restoring dignity, independence, and emotional connection for people living with Alzheimer’s disease and dementia. Through gentle, intuitive, human-centered design, it turns confusion into clarity, loneliness into comfort, and dependence into confidence — delivering real, sustainable social good for vulnerable communities worldwide.",
+      "url": "https://builder.aws.com/content/3CTTN0fBqINbv1Zvw5cCmGXZYyn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTXEY5g20bxINHyxMLH5BrWOCx/0-web.webp",
+      "authorName": "cabala",
+      "authorAlias": "cabala",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApmlyOzU9K1tlD0LZXIgvoKQdv.webp",
+      "location": "CN",
+      "lat": 35.000074,
+      "lng": 104.999927,
+      "tags": [
+        "aideas-2025",
+        "GCR",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-17T07:26:59.228Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
+      "title": "AIdeas Finalist: NeuroPath AI",
+      "description": "An Adaptive Learning Ecosystem for the Neurodivergent Mind",
+      "url": "https://builder.aws.com/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTE8VeK7zJ1TzJXprGEh4kKB8C/Scre.webp",
+      "authorName": "Khadija Sajid",
+      "authorAlias": "khadijasajid",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AxBeKpkfzA4UWCMYhDoPoi0tAl.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T05:13:59.045Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/30DjHlCMNAEjsXW238QPx35rEqo",
       "title": "Revolutionizing Email Productivity with AI-Powered Automation through CLI",
       "description": "As a developer facing email overload, I built a solution for the Q Developer Challenge #1: email management. What began as a simple CLI tool grew into an AI-powered system that has transformed my workflow.",
@@ -508,21 +527,21 @@
       "commentsCount": 71
     },
     {
-      "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
-      "title": "OpenClaw on AWS Lightsail: Live Demo, Real Findings and the Security Gap No Framework Models Yet — Part 4",
-      "description": "Live demo closing a 4-part security series on OpenClaw deployed on AWS Lightsail. Real setup obstacles, 13 validated findings across IaaS and application layers, and prompt injection + memory poisoning tested against Claude Sonnet 4.6. Includes the security gap MITRE ATLAS and OWASP Top 10 for Agentic Applications 2026 don't cover yet: how IaaS configuration decisions activate or disable application-layer threat vectors.",
-      "url": "https://builder.aws.com/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSUJGUQT3aQhb9gZZPyPI3lwvG/cove.webp",
-      "authorName": "Gerardo Castro Arica",
-      "authorAlias": "gerardokaztro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
+      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
+      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
+      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
       "tags": [],
-      "publishedAt": "2026-04-16T22:32:23.442Z",
-      "likesCount": 3,
-      "commentsCount": 0
+      "publishedAt": "2026-04-14T22:12:52.358Z",
+      "likesCount": 15,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
@@ -542,21 +561,21 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
+      "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
+      "title": "OpenClaw on AWS Lightsail: Live Demo, Real Findings and the Security Gap No Framework Models Yet — Part 4",
+      "description": "Live demo closing a 4-part security series on OpenClaw deployed on AWS Lightsail. Real setup obstacles, 13 validated findings across IaaS and application layers, and prompt injection + memory poisoning tested against Claude Sonnet 4.6. Includes the security gap MITRE ATLAS and OWASP Top 10 for Agentic Applications 2026 don't cover yet: how IaaS configuration decisions activate or disable application-layer threat vectors.",
+      "url": "https://builder.aws.com/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSUJGUQT3aQhb9gZZPyPI3lwvG/cove.webp",
+      "authorName": "Gerardo Castro Arica",
+      "authorAlias": "gerardokaztro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 15,
-      "commentsCount": 2
+      "publishedAt": "2026-04-16T22:32:23.442Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CIwbC67qvAhRT7ID3vWVjwyYyj",
@@ -578,7 +597,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-13T17:12:02.757Z",
-      "likesCount": 21,
+      "likesCount": 22,
       "commentsCount": 2
     },
     {
@@ -605,6 +624,23 @@
       "commentsCount": 1
     },
     {
+      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
+      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
+      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
+      "authorName": "Abdul-hakeem Akinsile",
+      "authorAlias": "akinsilecloudops",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-16T17:24:37.233Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
       "title": "10,000 AIdeas Competition Terms (Spanish)",
       "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
@@ -619,46 +655,6 @@
       "tags": [],
       "publishedAt": "2026-04-13T22:37:57.853Z",
       "likesCount": 13,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
-      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
-      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
-      "authorName": "Abdul-hakeem Akinsile",
-      "authorAlias": "akinsilecloudops",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-16T17:24:37.233Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
-      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
-      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
-      "authorName": "Gabriel Fortunate",
-      "authorAlias": "fortunate",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2",
-        "aws-cloud-clubs",
-        "cloud-concepts",
-        "tech-journey",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-04-16T17:16:29.386Z",
-      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -682,6 +678,29 @@
       "publishedAt": "2026-04-14T11:14:07.306Z",
       "likesCount": 6,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
+      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
+      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
+      "authorName": "Gabriel Fortunate",
+      "authorAlias": "fortunate",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-ec2",
+        "aws-cloud-clubs",
+        "cloud-concepts",
+        "tech-journey",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-04-16T17:16:29.386Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CMgTMtoT7Z2SVDml20197gZ2AL",
@@ -745,28 +764,6 @@
       "publishedAt": "2026-04-16T15:11:35.556Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CHQEgBtLb4lGfXquuuIflMtqPM",
-      "title": "I Had No Idea AWS Certifications Could Open This Many Doors. Here's What I've Learned So Far.",
-      "description": "This article shares my personal journey of discovering how AWS certifications can set students apart in the job market, breaking down the certification roadmap from Cloud Practitioner to specialty levels and the free resources available to get started. Whether you're a CS major or just curious about cloud, the best time to start is now.",
-      "url": "https://builder.aws.com/content/3CHQEgBtLb4lGfXquuuIflMtqPM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CHRIh09bLsKhriWuD38ydi5q2p/head.webp",
-      "authorName": "Bryce Dancy",
-      "authorAlias": "i3ryce",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ba5IYLpDHWrrtzmhy12impTg2H.webp",
-      "location": "NC, US",
-      "lat": 35.6729639,
-      "lng": -79.0392919,
-      "tags": [
-        "aws-certification",
-        "students",
-        "cloud-concepts",
-        "aws-educate"
-      ],
-      "publishedAt": "2026-04-13T00:34:38.268Z",
-      "likesCount": 7,
-      "commentsCount": 3
     }
   ]
 }
