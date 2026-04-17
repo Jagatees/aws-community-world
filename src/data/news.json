@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-04-17T05:49:53.471Z",
+  "updatedAt": "2026-04-17T06:37:46.549Z",
   "latest": [
+    {
+      "id": "/content/3CTCrQIEGHH70FCX8bwf3TarKUe",
+      "title": "My Journey Through EC2, IAM and Cost Governance",
+      "description": "Using the billing and cost management feature for creating budgets with multiple alerts; launching an Ubuntu server; giving proper permissions to IAM groups, and users, through IAM policies; attaching a custom IAM role to the Ubuntu server and finally deploying a webpage on the Ubuntu server.",
+      "url": "https://builder.aws.com/content/3CTCrQIEGHH70FCX8bwf3TarKUe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTHy1xm4GfjWE5CWu9uHvQ8U2X/Buil.webp",
+      "authorName": "Ishaq Ishaq",
+      "authorAlias": "ishaqishaq",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-ec2",
+        "aws-iam-identity-center",
+        "billing",
+        "students"
+      ],
+      "publishedAt": "2026-04-17T06:14:44.732Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CTNUs2BXO5JZvsN3qDTa9hrJXF",
+      "title": "Agentic AI with Claude on AWS Hands-on Builder Workshop - Automotive/Manufacturing Industry Edition",
+      "description": "Unlock the Power of Claude Code in Amazon Bedrock — an immersive workshop for builders, architects, and technical leaders. Limited to 100 qualified builders.\n\nThis hands-on workshop is crafted with the deliberate goal to build your understanding of Claude Code progressively, showing you not just what it can do, but how and why it works. It is designed to give you both the strategic context and technical depth to get started with Claude today.\n",
+      "url": "https://builder.aws.com/content/3CTNUs2BXO5JZvsN3qDTa9hrJXF",
+      "imageUrl": "",
+      "authorName": "bill liu",
+      "authorAlias": "billaicamp",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai-agents",
+        "agentic-ai",
+        "ai",
+        "ai-for-developers"
+      ],
+      "publishedAt": "2026-04-17T06:05:45.665Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
       "title": "AIdeas Finalist: NeuroPath AI",
@@ -19,7 +63,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T05:13:59.045Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -327,73 +371,6 @@
       "publishedAt": "2026-04-16T19:19:50.349Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CS1jTWHngGW3IxFXCjcP2T9l8B",
-      "title": "Govern MCP Tools at Scale with Kiro and AgentCore Gateway",
-      "description": "Learn to govern MCP tools at scale using Kiro and Amazon Bedrock AgentCore Gateway with identity-aware authentication and Cedar policy enforcement.",
-      "url": "https://builder.aws.com/content/3CS1jTWHngGW3IxFXCjcP2T9l8B",
-      "imageUrl": "",
-      "authorName": "Alexander",
-      "authorAlias": "alexkro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CS1vpsDyEwR3rA80HBqMQsxOuy.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "kiro",
-        "mcp",
-        "amazon-bedrock-agentcore",
-        "ai-security",
-        "governance"
-      ],
-      "publishedAt": "2026-04-16T19:17:36.907Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
-      "title": "What I Wish I Knew Before Learning AWS as a College Student",
-      "description": "Starting AWS can feel overwhelming. Here are the key things I wish I knew earlier that would have saved me time and helped me build real projects faster.",
-      "url": "https://builder.aws.com/content/3CS1BdgUVQFap6Im2OtSa2IXHOZ",
-      "imageUrl": "",
-      "authorName": "Bodie Gebhardt",
-      "authorAlias": "bodiegeb",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students",
-        "learning-and-development",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-16T18:54:22.356Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CCgy6gVWrgGi9F8NJhUtFaFUq2",
-      "title": "AIdeas Finalist:  Social Ace - Unlocking Connection for Autistic Youth through AI on AWS",
-      "description": "Social Ace is an AI-driven social skills trainer transforming how autistic youth practice communication. As a Top 50 Finalist in the AWS 10,000 AIdeas Challenge, this project combines gamified dialogue with a high-performance AWS architecture—including Bedrock AgentCore and Nova Sonic 2. Our goal is simple: to provide an affordable, engaging, and secure \"Social Gymnasium\" where every child can build the confidence to thrive in the real world.",
-      "url": "https://builder.aws.com/content/3CCgy6gVWrgGi9F8NJhUtFaFUq2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CR782FleH3i5kZ4cU849pNVpSg/Bann.webp",
-      "authorName": "Boris Lam",
-      "authorAlias": "borislam",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2x9vsb8XSpSgxLrvVPexFMfmXbh.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC",
-        "GCR",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-04-16T18:16:34.524Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -416,6 +393,28 @@
       "publishedAt": "2026-04-14T22:01:35.905Z",
       "likesCount": 50,
       "commentsCount": 10
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 11,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CSS8xPU7MWG1oRO46ywnaorISz",
@@ -441,28 +440,6 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 10,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
       "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
       "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
@@ -485,6 +462,27 @@
       "commentsCount": 8
     },
     {
+      "id": "/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
+      "title": "AIdeas Finalist: NeuroPath AI",
+      "description": "An Adaptive Learning Ecosystem for the Neurodivergent Mind",
+      "url": "https://builder.aws.com/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTE8VeK7zJ1TzJXprGEh4kKB8C/Scre.webp",
+      "authorName": "Khadija Sajid",
+      "authorAlias": "khadijasajid",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AxBeKpkfzA4UWCMYhDoPoi0tAl.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T05:13:59.045Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
       "title": "OpenClaw on AWS Lightsail: Live Demo, Real Findings and the Security Gap No Framework Models Yet — Part 4",
       "description": "Live demo closing a 4-part security series on OpenClaw deployed on AWS Lightsail. Real setup obstacles, 13 validated findings across IaaS and application layers, and prompt injection + memory poisoning tested against Claude Sonnet 4.6. Includes the security gap MITRE ATLAS and OWASP Top 10 for Agentic Applications 2026 don't cover yet: how IaaS configuration decisions activate or disable application-layer threat vectors.",
@@ -500,23 +498,6 @@
       "publishedAt": "2026-04-16T22:32:23.442Z",
       "likesCount": 3,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
-      "title": "Investigate Azure Infrastructure Failures with AWS DevOps Agent",
-      "description": "Set up the AWS DevOps Agent integration with Azure using Outbound Identity Federation, introduce a PostgreSQL server failure, and trigger an autonomous cross-cloud investigation that identifies the root cause in minutes — with no stored credentials or agents in Azure.",
-      "url": "https://builder.aws.com/content/3CRUAkIkGxQEXDO1kvL164WigEq",
-      "imageUrl": "",
-      "authorName": "Frank",
-      "authorAlias": "frankbpr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zmvEoQenPerxrH8Yt6gCCTfPjJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [],
-      "publishedAt": "2026-04-16T14:35:54.869Z",
-      "likesCount": 4,
-      "commentsCount": 1
     },
     {
       "id": "/content/30DjHlCMNAEjsXW238QPx35rEqo",
@@ -540,6 +521,23 @@
       "publishedAt": "2025-07-22T11:19:00.233Z",
       "likesCount": 441,
       "commentsCount": 71
+    },
+    {
+      "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
+      "title": "Investigate Azure Infrastructure Failures with AWS DevOps Agent",
+      "description": "Set up the AWS DevOps Agent integration with Azure using Outbound Identity Federation, introduce a PostgreSQL server failure, and trigger an autonomous cross-cloud investigation that identifies the root cause in minutes — with no stored credentials or agents in Azure.",
+      "url": "https://builder.aws.com/content/3CRUAkIkGxQEXDO1kvL164WigEq",
+      "imageUrl": "",
+      "authorName": "Frank",
+      "authorAlias": "frankbpr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zmvEoQenPerxrH8Yt6gCCTfPjJ.webp",
+      "location": "PE",
+      "lat": -6.8699697,
+      "lng": -75.0458515,
+      "tags": [],
+      "publishedAt": "2026-04-16T14:35:54.869Z",
+      "likesCount": 4,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -603,6 +601,170 @@
       "publishedAt": "2026-04-16T20:21:41.075Z",
       "likesCount": 1,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
+      "title": "10,000 AIdeas Competition Terms (Spanish)",
+      "description": "Terms for the 10,000 AIdeas Competition, in Spanish Language",
+      "url": "https://builder.aws.com/content/3CK1mRsBtq7ckZbcGX9VVOlysEn",
+      "imageUrl": "",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-04-13T22:37:57.853Z",
+      "likesCount": 13,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "title": "AWS Unilorin Project (Week 1–3): EC2 + IAM + Security + Billing",
+      "description": "This project showcases my practical implementation of IAM and EC2 services on AWS, including access control, server deployment, security configuration, billing monitoring, and permission validation through hands-on learning",
+      "url": "https://builder.aws.com/content/3CRorYABuEgQTyJNtVGUCbngyc4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRtUCtkOEmgPe9DDQJ6hEiPKC9/Brow.webp",
+      "authorName": "Abdul-hakeem Akinsile",
+      "authorAlias": "akinsilecloudops",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-16T17:24:37.233Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
+      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
+      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
+      "authorName": "Gabriel Fortunate",
+      "authorAlias": "fortunate",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-ec2",
+        "aws-cloud-clubs",
+        "cloud-concepts",
+        "tech-journey",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-04-16T17:16:29.386Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CLVOwyXmwoVCAhyUmlLqjgAEJH",
+      "title": "El problema de los Small Files: Guía de optimización en S3",
+      "description": "Descubre por qué el exceso de archivos pequeños destruye el rendimiento de Spark, Glue y Athena. Aprende estrategias de compactación, control de particionamiento y optimización de tamaño (128MB-512MB) para reducir costos y acelerar tus pipelines de datos hasta 10 veces.",
+      "url": "https://builder.aws.com/content/3CLVOwyXmwoVCAhyUmlLqjgAEJH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CLW5DHTyqixBFP976tzkDtcPlU/hidd.webp",
+      "authorName": "Rocio Baigorria",
+      "authorAlias": "tuni56",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALq8aLtJOKkgJxQFPbrpOGR92B.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "data-lakes",
+        "aws-glue",
+        "amazon-athena",
+        "data-engineering"
+      ],
+      "publishedAt": "2026-04-14T11:14:07.306Z",
+      "likesCount": 6,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CMgTMtoT7Z2SVDml20197gZ2AL",
+      "title": "Más allá del Check-in: Usando IA y Vibe Coding para asombrar a nuestra comunidad",
+      "description": "Todo gran MeetUp empieza desde la llegada, así usamos vibe coding para sorprender a nuestra comunidad geek",
+      "url": "https://builder.aws.com/content/3CMgTMtoT7Z2SVDml20197gZ2AL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMl75G9kIi4ugM9rqBebRAQsSq/Scre.webp",
+      "authorName": "Hector David Martinez Montilla",
+      "authorAlias": "hectormtz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rJAgK0qrFTeCn0IGMGOiA9Ad6L.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "ai",
+        "ai-services",
+        "all-builders-welcome",
+        "serverless",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-14T22:03:25.821Z",
+      "likesCount": 3,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3CJ46VRteYg1vg0FIqbvcQBrGt8",
+      "title": "Strands Agents & AgentCore: Two Pieces of the Same Puzzle",
+      "description": "A practical breakdown of two complementary AWS tools for building AI agents: Strands Agents, the open-source SDK for writing agent logic, and Amazon Bedrock AgentCore, the managed platform for running agents securely in production.",
+      "url": "https://builder.aws.com/content/3CJ46VRteYg1vg0FIqbvcQBrGt8",
+      "imageUrl": "",
+      "authorName": "Dan",
+      "authorAlias": "doolaugh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CJOuWglfC5NVkYi7ElP0KKXAZT.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-13T16:53:24.974Z",
+      "likesCount": 11,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CQWBseB9oau1Ag5VOr82Ic7nQ0",
+      "title": "How We Built a Virtual Team of 10+ AI Agents",
+      "description": "Last Monday evening, over 300 people walked into the AWS office in Singapore for the largest OpenClaw community meetup in Southeast Asia. Engineers, founders, C-suite leaders, students — all in the same room. About half had never attended before.\n\nWe were two of the speakers. Annie shared how she runs a team of 10+ AI agents through Telegram. Melanie presented the technical architecture for deploying OpenClaw safely on AWS at scale. This blog is our attempt to put the full story down in writing.",
+      "url": "https://builder.aws.com/content/3CQWBseB9oau1Ag5VOr82Ic7nQ0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRdArBunQ99enf9211U1XkILAE/1772.webp",
+      "authorName": "Annie Dongmei",
+      "authorAlias": "annieandongmei",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRdow5WiGyJxbCdiPBQwDYFGHk.webp",
+      "location": "SG",
+      "lat": 1.357107,
+      "lng": 103.8194992,
+      "tags": [
+        "agentic-ai",
+        "agentic-interactions",
+        "agent-to-agent",
+        "ai-agents",
+        "open-source"
+      ],
+      "publishedAt": "2026-04-16T15:11:35.556Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CSSb7AXB6M3JspQfGjxQEQkC6U",
+      "title": "Building an Event-Driven, AI-Powered Driver Monitoring System on AWS with Amazon Bedrock",
+      "description": "Driver fatigue and distraction are among the leading causes of accidents in the logistics and transportation sectors. While traditional fleet management systems track vehicle location and speed, they often fail to monitor the most critical component: the driver’s real-time state.\n",
+      "url": "https://builder.aws.com/content/3CSSb7AXB6M3JspQfGjxQEQkC6U",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSSoksIHxnpSZOd0HMh8Enmk3q/AWS-.webp",
+      "authorName": "Suleyman Akman",
+      "authorAlias": "suleymanakman",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37qhJjuzqf9HsT4pbiZ8qCbDAYj.webp",
+      "location": "TR",
+      "lat": 39.294076,
+      "lng": 35.2316631,
+      "tags": [
+        "amazon-bedrock",
+        "ai",
+        "amazon-rds",
+        "amazon-s3"
+      ],
+      "publishedAt": "2026-04-16T22:17:02.366Z",
+      "likesCount": 1,
+      "commentsCount": 0
     }
   ]
 }
