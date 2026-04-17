@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-17T00:27:30.424Z",
+  "updatedAt": "2026-04-17T01:34:38.772Z",
   "latest": [
+    {
+      "id": "/content/3CSqR2TiDguv0Pg6EKn1LLswZ5i",
+      "title": "Building Production-Ready Agents with Kiro: Steering, Powers, Hooks, Specs, and Skills",
+      "description": "Learn how Kiro's five core features work together to give AI agents persistent context, on-demand tooling, and automated guardrails with a real-time fraud detection walkthrough for financial services.",
+      "url": "https://builder.aws.com/content/3CSqR2TiDguv0Pg6EKn1LLswZ5i",
+      "imageUrl": "",
+      "authorName": "Nayan Karumuri",
+      "authorAlias": "nayanpk",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-17T01:33:51.038Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CSS8xPU7MWG1oRO46ywnaorISz",
       "title": "Breaking the Glass Ceiling of Low-Code: Migrating Automations to AWS",
@@ -21,7 +38,7 @@
         "rapid-security-deployment"
       ],
       "publishedAt": "2026-04-17T00:21:07.281Z",
-      "likesCount": 0,
+      "likesCount": 4,
       "commentsCount": 0
     },
     {
@@ -72,7 +89,7 @@
       "lng": 0,
       "tags": [],
       "publishedAt": "2026-04-16T22:32:23.442Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -182,29 +199,32 @@
       "publishedAt": "2026-04-16T20:21:41.075Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CPN5eC4gzYepjWG85I7tREtVUP",
-      "title": "Amazon Web Services on Campus!",
-      "description": "AWS builder center can be used my individual students and student ran organizations. Not only for a technology based club but for any club desired. AWS offers many services for all sorts of endeavors clubs do. ",
-      "url": "https://builder.aws.com/content/3CPN5eC4gzYepjWG85I7tREtVUP",
-      "imageUrl": "",
-      "authorName": "Prema Mavuleti",
-      "authorAlias": "premamav",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOc2GKcpuFEyoLPoAR2BLiJ428.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "agentic-ai",
-        "students"
-      ],
-      "publishedAt": "2026-04-16T19:57:33.648Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3CSS8xPU7MWG1oRO46ywnaorISz",
+      "title": "Breaking the Glass Ceiling of Low-Code: Migrating Automations to AWS",
+      "description": "Outgrowing low-code/no-code platforms? Learn how to migrate your workflows to AWS. We explore mapping webhooks and actions to API Gateway, Lambda, and Step Functions as an example.",
+      "url": "https://builder.aws.com/content/3CSS8xPU7MWG1oRO46ywnaorISz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CShkg4YwZjFCZTJqm4xXv89JX6/Gemi.webp",
+      "authorName": "Brian Ford",
+      "authorAlias": "bford",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BM32CjdNVTMA0bEw1o7TKLqAjO.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "low-code-no-code",
+        "data-automation-api",
+        "cost-control-automation",
+        "api-operations",
+        "rapid-security-deployment"
+      ],
+      "publishedAt": "2026-04-17T00:21:07.281Z",
+      "likesCount": 4,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
       "title": "Introducing Article View Counts on AWS Builder Center",
@@ -270,6 +290,23 @@
       "commentsCount": 1
     },
     {
+      "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
+      "title": "OpenClaw on AWS Lightsail: Live Demo, Real Findings and the Security Gap No Framework Models Yet — Part 4",
+      "description": "Live demo closing a 4-part security series on OpenClaw deployed on AWS Lightsail. Real setup obstacles, 13 validated findings across IaaS and application layers, and prompt injection + memory poisoning tested against Claude Sonnet 4.6. Includes the security gap MITRE ATLAS and OWASP Top 10 for Agentic Applications 2026 don't cover yet: how IaaS configuration decisions activate or disable application-layer threat vectors.",
+      "url": "https://builder.aws.com/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSUJGUQT3aQhb9gZZPyPI3lwvG/cove.webp",
+      "authorName": "Gerardo Castro Arica",
+      "authorAlias": "gerardokaztro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-16T22:32:23.442Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CRUAkIkGxQEXDO1kvL164WigEq",
       "title": "Investigate Azure Infrastructure Failures with AWS DevOps Agent",
       "description": "Set up the AWS DevOps Agent integration with Azure using Outbound Identity Federation, introduce a PostgreSQL server failure, and trigger an autonomous cross-cloud investigation that identifies the root cause in minutes — with no stored credentials or agents in Azure.",
@@ -285,23 +322,6 @@
       "publishedAt": "2026-04-16T14:35:54.869Z",
       "likesCount": 4,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
-      "title": "OpenClaw on AWS Lightsail: Live Demo, Real Findings and the Security Gap No Framework Models Yet — Part 4",
-      "description": "Live demo closing a 4-part security series on OpenClaw deployed on AWS Lightsail. Real setup obstacles, 13 validated findings across IaaS and application layers, and prompt injection + memory poisoning tested against Claude Sonnet 4.6. Includes the security gap MITRE ATLAS and OWASP Top 10 for Agentic Applications 2026 don't cover yet: how IaaS configuration decisions activate or disable application-layer threat vectors.",
-      "url": "https://builder.aws.com/content/3CSTnwNvUC70bpQ2IqimNYibl2p",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSUJGUQT3aQhb9gZZPyPI3lwvG/cove.webp",
-      "authorName": "Gerardo Castro Arica",
-      "authorAlias": "gerardokaztro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AUftb5EfAV7FxvC3B3NYN6ZKHV.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-04-16T22:32:23.442Z",
-      "likesCount": 1,
-      "commentsCount": 0
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -380,29 +400,6 @@
       "lng": 7.9999721,
       "tags": [],
       "publishedAt": "2026-04-16T17:24:37.233Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "title": "Week 2 of My Cloud Computing Journey: Exploring AWS Compute Services",
-      "description": "Week 2 of my cloud journey focused on AWS Compute Services, where I explored Amazon EC2, learned to launch and connect to a Linux server via SSH, and understood key concepts like security groups, key pairs, and cost management. A practical step forward in building my cloud and security foundation. ",
-      "url": "https://builder.aws.com/content/3CRr5uFXQoFjyjVhYFxUtOowkGP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRrsqqJUCFzgLuqnBcJTNu4TeC/1001.webp",
-      "authorName": "Gabriel Fortunate",
-      "authorAlias": "fortunate",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2",
-        "aws-cloud-clubs",
-        "cloud-concepts",
-        "tech-journey",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-04-16T17:16:29.386Z",
       "likesCount": 2,
       "commentsCount": 0
     }
