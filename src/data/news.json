@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-04-18T15:14:17.420Z",
+  "updatedAt": "2026-04-18T16:11:15.505Z",
   "latest": [
+    {
+      "id": "/content/3CXORjRynZRsehEbZ2AoqMdctad",
+      "title": "La transportación cuántica y la radiación ionizante",
+      "description": "Transportar, crear, ionizar, descomponer, componer, integrar, calcular. ",
+      "url": "https://builder.aws.com/content/3CXORjRynZRsehEbZ2AoqMdctad",
+      "imageUrl": "",
+      "authorName": "Francisco Ibáñez",
+      "authorAlias": "franxixco619",
+      "authorAvatarUrl": "",
+      "location": "CL",
+      "lat": -31.7613365,
+      "lng": -71.3187697,
+      "tags": [
+        "agentic-ide",
+        "agent-hooks",
+        "ai"
+      ],
+      "publishedAt": "2026-04-18T16:09:43.092Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/38awDAJHBn8JeWSRu6dYFPTh1pw",
       "title": "When CoreDNS Becomes the Bottleneck: A Stress-Testing Story on EKS with kube-burner",
@@ -40,7 +61,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-18T14:21:47.039Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -57,7 +78,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-18T13:14:41.067Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 2
     },
     {
@@ -206,8 +227,8 @@
         "daily-life-enhancement"
       ],
       "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 3,
-      "commentsCount": 4
+      "likesCount": 6,
+      "commentsCount": 8
     },
     {
       "id": "/content/3CW9vQDM0MUqt8o84A2lTt1IUwD",
@@ -228,7 +249,7 @@
       ],
       "publishedAt": "2026-04-18T07:00:07.517Z",
       "likesCount": 2,
-      "commentsCount": 1
+      "commentsCount": 2
     },
     {
       "id": "/content/3AxfdqajqyADeFBaQtROLen1DcG",
@@ -248,8 +269,8 @@
         "daily-life-enhancement"
       ],
       "publishedAt": "2026-04-18T06:59:05.013Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "likesCount": 2,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CWBr5UwtA6fo6enNzfk5MEaHq1",
@@ -313,8 +334,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-18T06:03:31.124Z",
-      "likesCount": 5,
-      "commentsCount": 1
+      "likesCount": 7,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CUVB4OQ16OJWyHMQpl45a3Cx5Q",
@@ -334,7 +355,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-18T05:49:59.036Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -354,46 +375,6 @@
       ],
       "publishedAt": "2026-04-18T05:29:44.908Z",
       "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CEDkM0k22cy5agavNPFi6UQs2t",
-      "title": "AIdeas Finalist: FTL, a Zero-trust Execution Layer for Coding Agents",
-      "description": "FTL is THE zero-trust execution layer for AI coding agents. Run your coding agent inside a sandbox environment with shadow credentials, parallel adversarial testing, and human-in-the-loop approval without ever giving the agent access to your real secrets or filesystem. Security, faster than light.",
-      "url": "https://builder.aws.com/content/3CEDkM0k22cy5agavNPFi6UQs2t",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVza5Gkd5NeW18yMTXlxBFylOs/Scre.webp",
-      "authorName": "Vishnu Vennelakanti",
-      "authorAlias": "vvennela",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39YZ1PRUkzLGbd8xiUGdP0wBjPb.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "NAMER"
-      ],
-      "publishedAt": "2026-04-18T04:20:03.085Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BSIyuMmkNKQ0Ri0u5gQ1c9LiDi",
-      "title": "AWS Builder Loft: Writing Clear, Searchable, Outcome-Driven Event Articles!",
-      "description": "This is an example article for future event organizers at the AWS Builder Loft! Use this as inspiration when creating your Event article! Focus on making a clear, structured, and outcome-driven article. \nWhen done well, your article makes it easy for the right audience to quickly understand the value of your event and all the fun logistics behind it. :)",
-      "url": "https://builder.aws.com/content/3BSIyuMmkNKQ0Ri0u5gQ1c9LiDi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVvmuyGN49eArwp6fvv1IQn0pi/aws-.webp",
-      "authorName": "Trong",
-      "authorAlias": "tptran",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BSKoOtVahnLH7XmgtlEKhP0RLN.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "builder-loft"
-      ],
-      "publishedAt": "2026-04-18T03:57:31.396Z",
-      "likesCount": 1,
       "commentsCount": 0
     }
   ],
@@ -416,8 +397,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 127,
-      "commentsCount": 86
+      "likesCount": 138,
+      "commentsCount": 89
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -433,7 +414,7 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 493,
+      "likesCount": 528,
       "commentsCount": 9
     },
     {
@@ -455,7 +436,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 162,
+      "likesCount": 168,
       "commentsCount": 57
     },
     {
@@ -476,7 +457,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 40,
+      "likesCount": 45,
       "commentsCount": 10
     },
     {
@@ -497,7 +478,29 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 29,
+      "likesCount": 34,
+      "commentsCount": 11
+    },
+    {
+      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
+      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
+      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
+      "authorName": "Hazel Sáenz",
+      "authorAlias": "hsaenzg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "open-source",
+        "strands-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-14T17:19:53.908Z",
+      "likesCount": 171,
       "commentsCount": 10
     },
     {
@@ -520,8 +523,29 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 194,
-      "commentsCount": 56
+      "likesCount": 204,
+      "commentsCount": 58
+    },
+    {
+      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "title": "AIdeas Finalist: Mornist",
+      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
+      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
+      "authorName": "Noa Dev",
+      "authorAlias": "nurmyrat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
+      "location": "GE",
+      "lat": 41.6808672,
+      "lng": 44.0287806,
+      "tags": [
+        "EMEA",
+        "aideas-2025",
+        "daily-life-enhancement"
+      ],
+      "publishedAt": "2026-04-18T07:01:02.978Z",
+      "likesCount": 6,
+      "commentsCount": 8
     },
     {
       "id": "/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
@@ -537,51 +561,8 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-18T13:14:41.067Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
-      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
-      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
-      "authorName": "Hazel Sáenz",
-      "authorAlias": "hsaenzg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "agentic-ai",
-        "open-source",
-        "strands-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 140,
-      "commentsCount": 10
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 90,
-      "commentsCount": 57
     },
     {
       "id": "/content/3AG8rSPutiXyXls7XZaC7tLepnP",
@@ -601,8 +582,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T22:22:38.296Z",
-      "likesCount": 56,
-      "commentsCount": 42
+      "likesCount": 60,
+      "commentsCount": 46
     }
   ]
 }
