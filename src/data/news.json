@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-18T12:11:45.907Z",
+  "updatedAt": "2026-04-18T13:27:55.199Z",
   "latest": [
+    {
+      "id": "/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
+      "title": "The AWS Cloud Infrastructure: A Comprehensive Technical Analysis of Distributed Systems, Formal Verification, and Next-Generation Compute Architectures",
+      "description": "This analysis examines AWS infrastructure innovations: the Nitro System's secret-free hypervisors, S3's formally verified strong consistency, DynamoDB's distributed transactions, and Lambda SnapStart's 91% cold start reduction. AWS employs lightweight formal methods (TLA+/P), custom Graviton silicon with 63% better price-performance, and chaos engineering for resilience. These systems support millions of workloads across 33 regions through hardware-software co-design and continuous verification.",
+      "url": "https://builder.aws.com/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
+      "imageUrl": "",
+      "authorName": "Alam Ahmed",
+      "authorAlias": "techghost",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2v8LJaJkEFjOnlBYzUZWzKHE4BH.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-18T13:14:41.067Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CWrqk8rQQVWbsgl35yYXVkDgRh",
       "title": "From IAM to EC2: Building a Secure AWS Mini-Architecture with Billing Control and Access Governance",
@@ -212,6 +229,174 @@
       "publishedAt": "2026-04-18T06:54:38.827Z",
       "likesCount": 2,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CW4MsiPB4IOGsAe1xi3YXfXvkZ",
+      "title": "AIdeas Finalist: NagrikAI - AI-Powered Government Benefits Navigator",
+      "description": "Conversational AI-powered platform for discovering and accessing government benefits, designed for inclusive access via mobile, voice, and feature phones",
+      "url": "https://builder.aws.com/content/3CW4MsiPB4IOGsAe1xi3YXfXvkZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWHkvhpWyw9fzkGMAf9J9r0THi/Nagr.webp",
+      "authorName": "InnerAstitva",
+      "authorAlias": "innerastitva",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "social-impact",
+        "aideas-2025",
+        "APJC",
+        "amazon-nova",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-18T06:39:16.098Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3BwChAzvUtvN1kq4uw1JfpuCEL5",
+      "title": "AIdeas Finalist: REGAIN - Your Professional Edge.",
+      "description": "A campaign driven career platform for veterans and AI displaced workers, built around evidence instead of enrollment and a voice native coach instead of another chat box. The output is a machine readable, evidence linked profile designed for a hiring environment moving toward agents.",
+      "url": "https://builder.aws.com/content/3BwChAzvUtvN1kq4uw1JfpuCEL5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWBOL1MNUx0aG0eOF2FtusfECl/Unti.webp",
+      "authorName": "Christian Perez",
+      "authorAlias": "chrisgrey0321",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33kByuRaGaQfqwc41T52Ws9w4v1.webp",
+      "location": "TN, US",
+      "lat": 35.7730076,
+      "lng": -86.2820081,
+      "tags": [
+        "aideas-2025",
+        "NAMER",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-18T06:03:31.124Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3CUVB4OQ16OJWyHMQpl45a3Cx5Q",
+      "title": "AIdeas Finalist: ReadEase AI",
+      "description": "ReadEase AI is a browser extension that combines dyslexia-friendly formatting with on-demand AI comprehension tools. It reduces visual stress and helps readers understand dense content directly on the page, without breaking flow. Designed for students and everyday readers, it lowers the effort required to read, so more energy goes into understanding, not decoding.",
+      "url": "https://builder.aws.com/content/3CUVB4OQ16OJWyHMQpl45a3Cx5Q",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV9rtdsJfkWuRXIhlWNseejgoo/cove.webp",
+      "authorName": "Anas Hossain",
+      "authorAlias": "anas13",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Au6m887sz652aNXdGkRP3jQFCg.webp",
+      "location": "BD",
+      "lat": 24.4769288,
+      "lng": 90.2934413,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-18T05:49:59.036Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/374Cbmk2UwA2wlPpsSrwfXzQHxr",
+      "title": "“Getting Started with Amazon Web Services: My Learning and Project Experience”",
+      "description": "Student at Ratan Tata Maharashtra State Skills University | Event & Operations Lead | Cloud enthusiast exploring Amazon Web Services | Building projects with EC2, S3 & Lambda 🚀",
+      "url": "https://builder.aws.com/content/374Cbmk2UwA2wlPpsSrwfXzQHxr",
+      "imageUrl": "",
+      "authorName": "Chetna",
+      "authorAlias": "chetnasakarde",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C1Zmcu0mtOCoAPXPoan5GvFmW4.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-cloud-clubs"
+      ],
+      "publishedAt": "2026-04-18T05:29:44.908Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CEDkM0k22cy5agavNPFi6UQs2t",
+      "title": "AIdeas Finalist: FTL, a Zero-trust Execution Layer for Coding Agents",
+      "description": "FTL is THE zero-trust execution layer for AI coding agents. Run your coding agent inside a sandbox environment with shadow credentials, parallel adversarial testing, and human-in-the-loop approval without ever giving the agent access to your real secrets or filesystem. Security, faster than light.",
+      "url": "https://builder.aws.com/content/3CEDkM0k22cy5agavNPFi6UQs2t",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVza5Gkd5NeW18yMTXlxBFylOs/Scre.webp",
+      "authorName": "Vishnu Vennelakanti",
+      "authorAlias": "vvennela",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39YZ1PRUkzLGbd8xiUGdP0wBjPb.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "NAMER"
+      ],
+      "publishedAt": "2026-04-18T04:20:03.085Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3BSIyuMmkNKQ0Ri0u5gQ1c9LiDi",
+      "title": "AWS Builder Loft: Writing Clear, Searchable, Outcome-Driven Event Articles!",
+      "description": "This is an example article for future event organizers at the AWS Builder Loft! Use this as inspiration when creating your Event article! Focus on making a clear, structured, and outcome-driven article. \nWhen done well, your article makes it easy for the right audience to quickly understand the value of your event and all the fun logistics behind it. :)",
+      "url": "https://builder.aws.com/content/3BSIyuMmkNKQ0Ri0u5gQ1c9LiDi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVvmuyGN49eArwp6fvv1IQn0pi/aws-.webp",
+      "authorName": "Trong",
+      "authorAlias": "tptran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BSKoOtVahnLH7XmgtlEKhP0RLN.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "builder-loft"
+      ],
+      "publishedAt": "2026-04-18T03:57:31.396Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3AdOAKdvPdNLz3PylEu43Dx0jpj",
+      "title": "AIdeas Finalist: CivicGuardian AI — A Digital Safeguarding Advocate for Vulnerable Adults",
+      "description": "CivicGuardian AI is a multi-agent AI safeguarding platform built on Amazon Bedrock Nova that protects vulnerable adults from missing critical deadlines in housing, benefits, and healthcare correspondence. Top 50 finalist in the AWS 10,000 AIdeas Global Competition.",
+      "url": "https://builder.aws.com/content/3AdOAKdvPdNLz3PylEu43Dx0jpj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVTxqzKxbERpAcjdNrLz5Ztinv/civi.webp",
+      "authorName": "1Legend",
+      "authorAlias": "deeplomataws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AV77KMAdpSnzPKuHsyv5VJaMIU.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "amazon-bedrock-agents",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-18T03:12:21.273Z",
+      "likesCount": 0,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
+      "title": "AIdeas Finalist: SenseSync - The Third Channel",
+      "description": "For 187 years, digital communication has wired up exactly two of the five human senses. SenseSync opens the third. A real-time haptic communication app built on AWS IoT Core, Lambda, Bedrock, and DynamoDB that lets people send rhythm and presence across any distance. Zero dollars a month. The haptic channel, finally online.",
+      "url": "https://builder.aws.com/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CERsXfzKfvEYgJx5QpeCJJ6TLn/Sens.webp",
+      "authorName": "Harish Muthyala",
+      "authorAlias": "harosh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39bTeHE7KJdS9mprR43EEygRIBp.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aideas-2025",
+        "NAMER",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-18T02:50:35.064Z",
+      "likesCount": 1,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -233,8 +418,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 104,
-      "commentsCount": 59
+      "likesCount": 115,
+      "commentsCount": 82
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -272,8 +457,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 126,
-      "commentsCount": 43
+      "likesCount": 149,
+      "commentsCount": 47
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -293,8 +478,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 23,
-      "commentsCount": 5
+      "likesCount": 26,
+      "commentsCount": 6
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -316,8 +501,29 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 146,
-      "commentsCount": 46
+      "likesCount": 172,
+      "commentsCount": 47
+    },
+    {
+      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "title": "AIdeas Finalist: RetainIQ",
+      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
+      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
+      "authorName": "Samyak Jain",
+      "authorAlias": "samyakj05",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T20:29:28.119Z",
+      "likesCount": 22,
+      "commentsCount": 4
     },
     {
       "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
@@ -341,27 +547,6 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
-      "title": "AIdeas Finalist: RetainIQ",
-      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
-      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
-      "authorName": "Samyak Jain",
-      "authorAlias": "samyakj05",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aideas-2025",
-        "workplace-efficiency",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 18,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -379,7 +564,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 86,
+      "likesCount": 88,
       "commentsCount": 55
     },
     {
@@ -422,8 +607,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T22:22:38.296Z",
-      "likesCount": 39,
-      "commentsCount": 30
+      "likesCount": 41,
+      "commentsCount": 32
     }
   ]
 }
