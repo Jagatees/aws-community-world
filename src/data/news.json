@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18T08:14:44.524Z",
+  "updatedAt": "2026-04-18T09:17:08.710Z",
   "latest": [
     {
       "id": "/content/3CGkJamPUqkR4pqgCQcFHSNKOFs",
@@ -85,8 +85,8 @@
         "daily-life-enhancement"
       ],
       "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 1,
-      "commentsCount": 2
+      "likesCount": 2,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CW9vQDM0MUqt8o84A2lTt1IUwD",
@@ -213,28 +213,11 @@
         "APJC"
       ],
       "publishedAt": "2026-04-18T05:49:59.036Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 450,
-      "commentsCount": 9
-    },
     {
       "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
       "title": "AIdeas Finalist: Anukriti – What If Drug Trials Included Everyone?",
@@ -253,29 +236,25 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 34,
-      "commentsCount": 21
+      "likesCount": 56,
+      "commentsCount": 39
     },
     {
-      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "title": "AIdeas Finalist: Mornist",
-      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
-      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
-      "authorName": "Noa Dev",
-      "authorAlias": "nurmyrat",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
-      "location": "GE",
-      "lat": 41.6808672,
-      "lng": 44.0287806,
-      "tags": [
-        "EMEA",
-        "aideas-2025",
-        "daily-life-enhancement"
-      ],
-      "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 1,
-      "commentsCount": 2
+      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
+      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
+      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-04-14T22:12:52.358Z",
+      "likesCount": 450,
+      "commentsCount": 9
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -296,8 +275,71 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 40,
-      "commentsCount": 12
+      "likesCount": 66,
+      "commentsCount": 20
+    },
+    {
+      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "title": "AIdeas Finalist: Mornist",
+      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
+      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
+      "authorName": "Noa Dev",
+      "authorAlias": "nurmyrat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
+      "location": "GE",
+      "lat": 41.6808672,
+      "lng": 44.0287806,
+      "tags": [
+        "EMEA",
+        "aideas-2025",
+        "daily-life-enhancement"
+      ],
+      "publishedAt": "2026-04-18T07:01:02.978Z",
+      "likesCount": 2,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
+      "title": "AIdeas Finalist: Perspective",
+      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
+      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
+      "authorName": "Alwoch Sophia",
+      "authorAlias": "salwoch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
+      "location": "UG",
+      "lat": 1.5333554,
+      "lng": 32.2166578,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T23:31:03.702Z",
+      "likesCount": 12,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 72,
+      "commentsCount": 46
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -322,25 +364,27 @@
       "commentsCount": 10
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
         "aideas-2025",
-        "social-impact",
-        "EMEA"
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
       ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 60,
-      "commentsCount": 38
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 91,
+      "commentsCount": 10
     },
     {
       "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
@@ -363,69 +407,25 @@
       "commentsCount": 11
     },
     {
-      "id": "/content/3CF43pwavQ0MFccaX269jpGJsCF",
-      "title": "AIdeas Finalist: VERA, A Multi-Agent Triage System for Healthcare in Chile",
-      "description": "A multi-agent healthcare triage system that screens patients in Chilean Spanish, detects crisis signals, and generates clinical reports. Built by two people on AWS for $17/month, designed to integrate with Chile's public health system via HL7 FHIR.",
-      "url": "https://builder.aws.com/content/3CF43pwavQ0MFccaX269jpGJsCF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CF4KZhH0HaV4DPbochmhhwZBdX/vera.webp",
-      "authorName": "Julissa Rodriguez",
-      "authorAlias": "julissarparco",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArZ0Bk4aLdCXQ1YeLiDcu25Ia9.webp",
-      "location": "CL",
-      "lat": -31.7613365,
-      "lng": -71.3187697,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "LATAM"
-      ],
-      "publishedAt": "2026-04-12T06:12:58.400Z",
-      "likesCount": 13,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "title": "AIdeas Finalist: Perspective",
-      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
-      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
-      "authorName": "Alwoch Sophia",
-      "authorAlias": "salwoch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
-      "location": "UG",
-      "lat": 1.5333554,
-      "lng": 32.2166578,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 7,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "id": "/content/3AG8rSPutiXyXls7XZaC7tLepnP",
+      "title": "AIdeas Finalist: MaatriSahayak",
+      "description": "Every year, thousands of Indian mothers die not because medicine failed them — but because the right information never reached the right person in time. MaatriSahayak fixes that with AI that thinks in Hindi, predicts danger before it peaks, and coordinates a full emergency response in under 60 seconds.",
+      "url": "https://builder.aws.com/content/3AG8rSPutiXyXls7XZaC7tLepnP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWC5nmKJHXJYGtXDn01VdWUOZo/1000.webp",
+      "authorName": "Krishna Tripathi",
+      "authorAlias": "krux2dev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHoHw2Ei0xIWCv6f3QQrsgp3dg.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
         "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
+        "social-impact",
+        "APJC"
       ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 64,
-      "commentsCount": 9
+      "publishedAt": "2026-04-17T22:22:38.296Z",
+      "likesCount": 26,
+      "commentsCount": 21
     }
   ]
 }
