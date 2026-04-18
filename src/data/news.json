@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-18T00:24:50.845Z",
+  "updatedAt": "2026-04-18T01:34:33.695Z",
   "latest": [
+    {
+      "id": "/content/3C8hBRTcsRuQrHzE3Pq243yhXTF",
+      "title": "AIdeas Finalist: AgriNexus AI",
+      "description": "A closed-loop WhatsApp advisor for 100M+ Indian smallholder farmers — pest diagnosis via photo, voice in 4 dialects, and weather-timed nudges that follow up until the farmer confirms action. 100% serverless on AWS.     ",
+      "url": "https://builder.aws.com/content/3C8hBRTcsRuQrHzE3Pq243yhXTF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRwGCPwinlf1PM9GhX7FJQNhz7/cove.webp",
+      "authorName": "Prasad",
+      "authorAlias": "prasadt1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3At5t7vVdxZFMZLlvXq03i9GDFv.webp",
+      "location": "DE",
+      "lat": 51.1638175,
+      "lng": 10.4478313,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "amazon-bedrock",
+        "serverless"
+      ],
+      "publishedAt": "2026-04-18T01:03:14.302Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3AwjpgXZzjMVewbc7exEP8sUhmU",
       "title": "AIdeas Finalist: DermAI Hope - Bringing Dermatology to 2.5 Billion People Without a Doctor",
@@ -176,23 +199,6 @@
       "publishedAt": "2026-04-17T22:22:38.296Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVIP2h8rYRumwhmS07WZfeE2bz",
-      "title": "Hands-On Implementation of Core AWS Services: A Bootcamp Experience",
-      "description": "Learning AWS through hands-on tasks and collaborative problem-solving.",
-      "url": "https://builder.aws.com/content/3CVIP2h8rYRumwhmS07WZfeE2bz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVIttNURWNLPiqxLlqOXLQI8pe/0146e.webp",
-      "authorName": "Azeezat Aderounmu",
-      "authorAlias": "adejokezee1",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T22:22:32.648Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -212,44 +218,6 @@
       "publishedAt": "2026-04-14T22:12:52.358Z",
       "likesCount": 449,
       "commentsCount": 9
-    },
-    {
-      "id": "/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
-      "title": "Zero to Deployed ☁️: My AWS Journey",
-      "description": "Deploying a secure and cost-efficient web server using IAM, EC2, and Nginx on Ubuntu.",
-      "url": "https://builder.aws.com/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVG0x13zKyjPcDrv705aqKvUM2/IMG-.webp",
-      "authorName": "Ameerah Asalejo",
-      "authorAlias": "asalejoameeroh",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T21:59:01.845Z",
-      "likesCount": 5,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVDBGE7JWxpFcgoPK4lwUlNsog",
-      "title": "Creating my first AWS Deployment",
-      "description": "I deployed a live web server as part of a hands-on cloud project, focusing on strong security and cost awareness. I used IAM to manage access, EC2 to host the server, and AWS billing tools to track and control spending.",
-      "url": "https://builder.aws.com/content/3CVDBGE7JWxpFcgoPK4lwUlNsog",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVHPMc240RrBC5z973qJbIelaU/IMG-.webp",
-      "authorName": "Suleiman Halimah",
-      "authorAlias": "suleimanhalimah",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "deployment",
-        "cloud-security",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-17T22:11:42.436Z",
-      "likesCount": 4,
-      "commentsCount": 0
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -272,6 +240,23 @@
       "publishedAt": "2026-04-14T17:19:53.908Z",
       "likesCount": 88,
       "commentsCount": 10
+    },
+    {
+      "id": "/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
+      "title": "Zero to Deployed ☁️: My AWS Journey",
+      "description": "Deploying a secure and cost-efficient web server using IAM, EC2, and Nginx on Ubuntu.",
+      "url": "https://builder.aws.com/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVG0x13zKyjPcDrv705aqKvUM2/IMG-.webp",
+      "authorName": "Ameerah Asalejo",
+      "authorAlias": "asalejoameeroh",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-17T21:59:01.845Z",
+      "likesCount": 5,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -317,6 +302,27 @@
       "commentsCount": 3
     },
     {
+      "id": "/content/3CVDBGE7JWxpFcgoPK4lwUlNsog",
+      "title": "Creating my first AWS Deployment",
+      "description": "I deployed a live web server as part of a hands-on cloud project, focusing on strong security and cost awareness. I used IAM to manage access, EC2 to host the server, and AWS billing tools to track and control spending.",
+      "url": "https://builder.aws.com/content/3CVDBGE7JWxpFcgoPK4lwUlNsog",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVHPMc240RrBC5z973qJbIelaU/IMG-.webp",
+      "authorName": "Suleiman Halimah",
+      "authorAlias": "suleimanhalimah",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "deployment",
+        "cloud-security",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-04-17T22:11:42.436Z",
+      "likesCount": 4,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
       "title": "Introducing Article View Counts on AWS Builder Center",
       "description": "You can now see how many builders are reading your articles, giving you a real metric to understand the reach of your content.",
@@ -359,25 +365,6 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3CVCgXdjUe2X7wxJg78pvxvLv3m",
-      "title": "3 Must-Knows as a First-Gen Tech Student - and How to Leverage AWS Builder Center",
-      "description": "Being a first generation student in STEM certainly isn't easy; and there is a lot of things they don't tell you. Using tools like AWS Builder Center will give you the step you need to go from first-gen to your dream career.",
-      "url": "https://builder.aws.com/content/3CVCgXdjUe2X7wxJg78pvxvLv3m",
-      "imageUrl": "",
-      "authorName": "Zayda Townsend",
-      "authorAlias": "zaydazt",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVWfv5ZTkiIlcXOGtjVvBZsBRH.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-17T23:47:01.271Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CUZHL2FfEkpQnU3iYG2LHlcS8I",
       "title": "From Zero to Deployed☁️: Securing AWS with IAM, EC2, and Nginx on Ubuntu",
       "description": "As part of the AWS Cloud Club Unilorin Bootcamp(Week 3), 2026, I recently completed a hands-on project focused on a critical cloud reality: building is easy, but building securely and efficiently requires intention.\nMy mission was to deploy a live web server while maintaining a strict security posture and total cost visibility. Here’s how I built a secure, cost-aware environment using IAM, EC2, and Billing tools.",
@@ -398,6 +385,25 @@
       ],
       "publishedAt": "2026-04-17T20:03:19.325Z",
       "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CVCgXdjUe2X7wxJg78pvxvLv3m",
+      "title": "3 Must-Knows as a First-Gen Tech Student - and How to Leverage AWS Builder Center",
+      "description": "Being a first generation student in STEM certainly isn't easy; and there is a lot of things they don't tell you. Using tools like AWS Builder Center will give you the step you need to go from first-gen to your dream career.",
+      "url": "https://builder.aws.com/content/3CVCgXdjUe2X7wxJg78pvxvLv3m",
+      "imageUrl": "",
+      "authorName": "Zayda Townsend",
+      "authorAlias": "zaydazt",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVWfv5ZTkiIlcXOGtjVvBZsBRH.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-04-17T23:47:01.271Z",
+      "likesCount": 1,
       "commentsCount": 0
     }
   ]
