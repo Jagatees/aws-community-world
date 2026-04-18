@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18T16:11:15.505Z",
+  "updatedAt": "2026-04-18T17:12:40.820Z",
   "latest": [
     {
       "id": "/content/3CXORjRynZRsehEbZ2AoqMdctad",
@@ -79,7 +79,7 @@
       "tags": [],
       "publishedAt": "2026-04-18T13:14:41.067Z",
       "likesCount": 3,
-      "commentsCount": 2
+      "commentsCount": 3
     },
     {
       "id": "/content/3CWrqk8rQQVWbsgl35yYXVkDgRh",
@@ -98,7 +98,7 @@
         "amazon-ec2"
       ],
       "publishedAt": "2026-04-18T12:02:59.871Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 2
     },
     {
@@ -227,8 +227,8 @@
         "daily-life-enhancement"
       ],
       "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 6,
-      "commentsCount": 8
+      "likesCount": 7,
+      "commentsCount": 9
     },
     {
       "id": "/content/3CW9vQDM0MUqt8o84A2lTt1IUwD",
@@ -249,7 +249,7 @@
       ],
       "publishedAt": "2026-04-18T07:00:07.517Z",
       "likesCount": 2,
-      "commentsCount": 2
+      "commentsCount": 3
     },
     {
       "id": "/content/3AxfdqajqyADeFBaQtROLen1DcG",
@@ -334,7 +334,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-18T06:03:31.124Z",
-      "likesCount": 7,
+      "likesCount": 8,
       "commentsCount": 2
     },
     {
@@ -374,7 +374,7 @@
         "aws-cloud-clubs"
       ],
       "publishedAt": "2026-04-18T05:29:44.908Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     }
   ],
@@ -397,8 +397,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 138,
-      "commentsCount": 89
+      "likesCount": 149,
+      "commentsCount": 91
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -414,8 +414,8 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 528,
-      "commentsCount": 9
+      "likesCount": 560,
+      "commentsCount": 10
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -436,29 +436,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 168,
-      "commentsCount": 57
-    },
-    {
-      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
-      "title": "AIdeas Finalist: RetainIQ",
-      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
-      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
-      "authorName": "Samyak Jain",
-      "authorAlias": "samyakj05",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aideas-2025",
-        "workplace-efficiency",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 45,
-      "commentsCount": 10
+      "likesCount": 174,
+      "commentsCount": 58
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -478,8 +457,29 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 34,
-      "commentsCount": 11
+      "likesCount": 45,
+      "commentsCount": 12
+    },
+    {
+      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "title": "AIdeas Finalist: RetainIQ",
+      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
+      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
+      "authorName": "Samyak Jain",
+      "authorAlias": "samyakj05",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T20:29:28.119Z",
+      "likesCount": 48,
+      "commentsCount": 12
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -500,8 +500,29 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 171,
+      "likesCount": 201,
       "commentsCount": 10
+    },
+    {
+      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "title": "AIdeas Finalist: Mornist",
+      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
+      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
+      "authorName": "Noa Dev",
+      "authorAlias": "nurmyrat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
+      "location": "GE",
+      "lat": 41.6808672,
+      "lng": 44.0287806,
+      "tags": [
+        "EMEA",
+        "aideas-2025",
+        "daily-life-enhancement"
+      ],
+      "publishedAt": "2026-04-18T07:01:02.978Z",
+      "likesCount": 7,
+      "commentsCount": 9
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -523,29 +544,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 204,
-      "commentsCount": 58
-    },
-    {
-      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "title": "AIdeas Finalist: Mornist",
-      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
-      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
-      "authorName": "Noa Dev",
-      "authorAlias": "nurmyrat",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
-      "location": "GE",
-      "lat": 41.6808672,
-      "lng": 44.0287806,
-      "tags": [
-        "EMEA",
-        "aideas-2025",
-        "daily-life-enhancement"
-      ],
-      "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 6,
-      "commentsCount": 8
+      "likesCount": 206,
+      "commentsCount": 61
     },
     {
       "id": "/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
@@ -562,28 +562,28 @@
       "tags": [],
       "publishedAt": "2026-04-18T13:14:41.067Z",
       "likesCount": 3,
-      "commentsCount": 2
+      "commentsCount": 3
     },
     {
-      "id": "/content/3AG8rSPutiXyXls7XZaC7tLepnP",
-      "title": "AIdeas Finalist: MaatriSahayak",
-      "description": "Every year, thousands of Indian mothers die not because medicine failed them — but because the right information never reached the right person in time. MaatriSahayak fixes that with AI that thinks in Hindi, predicts danger before it peaks, and coordinates a full emergency response in under 60 seconds.",
-      "url": "https://builder.aws.com/content/3AG8rSPutiXyXls7XZaC7tLepnP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWC5nmKJHXJYGtXDn01VdWUOZo/1000.webp",
-      "authorName": "Krishna Tripathi",
-      "authorAlias": "krux2dev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHoHw2Ei0xIWCv6f3QQrsgp3dg.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "title": "AIdeas Finalist: LuminaLog — Privacy-First Observability",
+      "description": "LuminaLog is a serverless, privacy-first observability platform. It features SmartScrub™, a Kinesis-driven engine that replaces PII with realistic synthetic data before storage, preserving both data privacy and debuggability. Combined with real-time WebSocket live tailing and automated Gemini 2.5 Flash error analysis, it gives startups in regulated markets enterprise-grade compliance and insights without the enterprise price tag.",
+      "url": "https://builder.aws.com/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTmJ8Z5NxG2NmFXBrlPTyekL9c/Gemi.webp",
+      "authorName": "Moses Michael Idiong",
+      "authorAlias": "mozman777",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AZKAiQY35hpsBxlLeu4LVQ2w6i.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
       "tags": [
         "aideas-2025",
-        "social-impact",
-        "APJC"
+        "EMEA",
+        "commercial-solutions"
       ],
-      "publishedAt": "2026-04-17T22:22:38.296Z",
-      "likesCount": 60,
-      "commentsCount": 46
+      "publishedAt": "2026-04-17T20:29:18.574Z",
+      "likesCount": 72,
+      "commentsCount": 60
     }
   ]
 }
