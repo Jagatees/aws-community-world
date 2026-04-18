@@ -1,6 +1,179 @@
 {
-  "updatedAt": "2026-04-18T06:26:02.829Z",
+  "updatedAt": "2026-04-18T07:27:07.910Z",
   "latest": [
+    {
+      "id": "/content/3CGkJamPUqkR4pqgCQcFHSNKOFs",
+      "title": "RDS vs DynamoDB: How to Think About Data in the Cloud",
+      "description": "RDS and DynamoDB solve different problems. Learn the mental model for choosing between them based on your data and access patterns.",
+      "url": "https://builder.aws.com/content/3CGkJamPUqkR4pqgCQcFHSNKOFs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWLa9xwHMin2KFqQOAn0eY5coy/cove.webp",
+      "authorName": "Rashindu Tharinda",
+      "authorAlias": "rash522",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAXrueNTFAH8WtVtH75cydfLaF.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "amazon-rds",
+        "amazon-dynamodb",
+        "databases",
+        "aws-educate",
+        "amazon-aurora"
+      ],
+      "publishedAt": "2026-04-18T07:15:08.268Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CWJlcdaZ3FEYZgI1NVpBBSmOT6",
+      "title": "AWS Nitro and CPU Graviton Meets Unikernels",
+      "description": "Rethink the cloud with Nanos Unikernel...",
+      "url": "https://builder.aws.com/content/3CWJlcdaZ3FEYZgI1NVpBBSmOT6",
+      "imageUrl": "",
+      "authorName": "Angelo",
+      "authorAlias": "angelorubini",
+      "authorAvatarUrl": "",
+      "location": "IT",
+      "lat": 42.6384261,
+      "lng": 12.674297,
+      "tags": [
+        "aws-nitro-system",
+        "graviton"
+      ],
+      "publishedAt": "2026-04-18T07:06:11.828Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CWIOKJRvyPy8qouSSD7FnCeQja",
+      "title": "Deploying a Secure Ubuntu EC2 Web Server with IAM, Billing Alerts, and Access Control on AWS",
+      "description": "As part of my AWS Cloud Club Unilorin Bootcamp 2026 lab, I completed a practical cloud deployment that combined core AWS foundations with hands-on implementation. The project covered billing control, IAM administration, EC2 provisioning, security group configuration, role-based access, and web server deployment on an Ubuntu instance.",
+      "url": "https://builder.aws.com/content/3CWIOKJRvyPy8qouSSD7FnCeQja",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWJRTlnXWhFDvxsBtAU7IjUbDG/imag.webp",
+      "authorName": "Temitope Olawole",
+      "authorAlias": "temmytee",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-ec2",
+        "ubuntu",
+        "aws-cloud-clubs",
+        "iam",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-18T07:03:38.670Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "title": "AIdeas Finalist: Mornist",
+      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone — because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training. The judges had five challenges for me. This article is my answer to all five.",
+      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWJrRBzUUtJntQisHDx7Gk88fY/IMG_.webp",
+      "authorName": "Noa Dev",
+      "authorAlias": "nurmyrat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
+      "location": "GE",
+      "lat": 41.6808672,
+      "lng": 44.0287806,
+      "tags": [
+        "EMEA",
+        "aideas-2025",
+        "daily-life-enhancement"
+      ],
+      "publishedAt": "2026-04-18T07:01:02.978Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CW9vQDM0MUqt8o84A2lTt1IUwD",
+      "title": "AIdeas Finalist: Rakshak",
+      "description": "Rakshak (\"protector\" in Sanskrit) predicts women's safety risk in Indian cities *before* it happens, then connects that intelligence to police action.\n\n**Unlike reactive SOS apps** (Nirbhaya, Himmat+), Rakshak's Random Forest model (17 Chennai-specific features) scores your location's risk live via AWS SageMaker. The SHO dashboard + Patrol Route Optimizer deploys units to 44 high-risk zones. After 8 PM, proactive Wellness Checks alert stationary users in danger zones.",
+      "url": "https://builder.aws.com/content/3CW9vQDM0MUqt8o84A2lTt1IUwD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWAfwyMWJeyJoFkz589uIAiXzh/unna.webp",
+      "authorName": "Vishal Ganesan",
+      "authorAlias": "vishakg06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AvEP63A5JcgdesuQh9YRr3Qqey.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "APJC",
+        "aideas-2025",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-18T07:00:07.517Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3AxfdqajqyADeFBaQtROLen1DcG",
+      "title": "AIdeas Finalist - Diverge — AI-Powered Decision Intelligence",
+      "description": "Diverge takes a life decision you are stuck on and runs it through a structured AI debate. You type something like \"Stay at my job vs. take the offer\" or \"Stay in Boston vs. move to Austin.\" The app spawns two agents, each one representing your future self on one side of that choice. They argue it out across five rounds while pulling from Monte Carlo financial simulations, real salary data, and cost-of-living numbers.",
+      "url": "https://builder.aws.com/content/3AxfdqajqyADeFBaQtROLen1DcG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWJbWjQNpJ6eY6KsJnAOaz5hOY/Dive.webp",
+      "authorName": "Roshan Shetty",
+      "authorAlias": "roshanshetty271",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ATTlwXU2xR4IobdSP7Caqi8D5N.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "NAMER",
+        "aideas-2025",
+        "daily-life-enhancement"
+      ],
+      "publishedAt": "2026-04-18T06:59:05.013Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CWBr5UwtA6fo6enNzfk5MEaHq1",
+      "title": "AIdeas Finalist: VoiceAid – Bridging the Digital Divide for the Non-Literate and Elderly",
+      "description": "VoiceAid reimagines digital access through an orality-first approach, enabling non-literate and elderly users to interact with technology using natural speech instead of text. Powered by Amazon Bedrock and Nova Sonic, it delivers real-time, localized, and offline-capable assistance for critical needs like healthcare, farming, and scam prevention.",
+      "url": "https://builder.aws.com/content/3CWBr5UwtA6fo6enNzfk5MEaHq1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWGo94JNijfIhO4B7WrX04dvj3/voic.webp",
+      "authorName": "Pawan Joshi",
+      "authorAlias": "pawanjoshidev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39v60kcWXpO6cRSHvemaqLyJvUN.webp",
+      "location": "Uttrakhand, IN",
+      "lat": 30.0797976,
+      "lng": 78.3045766,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-18T06:54:38.827Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CW4MsiPB4IOGsAe1xi3YXfXvkZ",
+      "title": "AIdeas Finalist: NagrikAI - AI-Powered Government Benefits Navigator",
+      "description": "Conversational AI-powered platform for discovering and accessing government benefits, designed for inclusive access via mobile, voice, and feature phones",
+      "url": "https://builder.aws.com/content/3CW4MsiPB4IOGsAe1xi3YXfXvkZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWHkvhpWyw9fzkGMAf9J9r0THi/Nagr.webp",
+      "authorName": "InnerAstitva",
+      "authorAlias": "innerastitva",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "social-impact",
+        "aideas-2025",
+        "APJC",
+        "amazon-nova",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-18T06:39:16.098Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3BwChAzvUtvN1kq4uw1JfpuCEL5",
       "title": "AIdeas Finalist: REGAIN - Your Professional Edge.",
@@ -40,351 +213,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-18T05:49:59.036Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/374Cbmk2UwA2wlPpsSrwfXzQHxr",
-      "title": "“Getting Started with Amazon Web Services: My Learning and Project Experience”",
-      "description": "Student at Ratan Tata Maharashtra State Skills University | Event & Operations Lead | Cloud enthusiast exploring Amazon Web Services | Building projects with EC2, S3 & Lambda 🚀",
-      "url": "https://builder.aws.com/content/374Cbmk2UwA2wlPpsSrwfXzQHxr",
-      "imageUrl": "",
-      "authorName": "Chetna",
-      "authorAlias": "chetnasakarde",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C1Zmcu0mtOCoAPXPoan5GvFmW4.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-cloud-clubs"
-      ],
-      "publishedAt": "2026-04-18T05:29:44.908Z",
       "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CEDkM0k22cy5agavNPFi6UQs2t",
-      "title": "AIdeas Finalist: FTL, a Zero-trust Execution Layer for Coding Agents",
-      "description": "FTL is THE zero-trust execution layer for AI coding agents. Run your coding agent inside a sandbox environment with shadow credentials, parallel adversarial testing, and human-in-the-loop approval without ever giving the agent access to your real secrets or filesystem. Security, faster than light.",
-      "url": "https://builder.aws.com/content/3CEDkM0k22cy5agavNPFi6UQs2t",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVza5Gkd5NeW18yMTXlxBFylOs/Scre.webp",
-      "authorName": "Vishnu Vennelakanti",
-      "authorAlias": "vvennela",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39YZ1PRUkzLGbd8xiUGdP0wBjPb.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "NAMER"
-      ],
-      "publishedAt": "2026-04-18T04:20:03.085Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BSIyuMmkNKQ0Ri0u5gQ1c9LiDi",
-      "title": "AWS Builder Loft: Writing Clear, Searchable, Outcome-Driven Event Articles!",
-      "description": "This is an example article for future event organizers at the AWS Builder Loft! Use this as inspiration when creating your Event article! Focus on making a clear, structured, and outcome-driven article. \nWhen done well, your article makes it easy for the right audience to quickly understand the value of your event and all the fun logistics behind it. :)",
-      "url": "https://builder.aws.com/content/3BSIyuMmkNKQ0Ri0u5gQ1c9LiDi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVvmuyGN49eArwp6fvv1IQn0pi/aws-.webp",
-      "authorName": "Trong",
-      "authorAlias": "tptran",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BSKoOtVahnLH7XmgtlEKhP0RLN.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "builder-loft"
-      ],
-      "publishedAt": "2026-04-18T03:57:31.396Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3AdOAKdvPdNLz3PylEu43Dx0jpj",
-      "title": "AIdeas Finalist: CivicGuardian AI — A Digital Safeguarding Advocate for Vulnerable Adults",
-      "description": "CivicGuardian AI is a multi-agent AI safeguarding platform built on Amazon Bedrock Nova that protects vulnerable adults from missing critical deadlines in housing, benefits, and healthcare correspondence. Top 50 finalist in the AWS 10,000 AIdeas Global Competition.",
-      "url": "https://builder.aws.com/content/3AdOAKdvPdNLz3PylEu43Dx0jpj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVTxqzKxbERpAcjdNrLz5Ztinv/civi.webp",
-      "authorName": "1Legend",
-      "authorAlias": "deeplomataws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AV77KMAdpSnzPKuHsyv5VJaMIU.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "amazon-bedrock-agents",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-18T03:12:21.273Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
-      "title": "AIdeas Finalist: SenseSync - The Third Channel",
-      "description": "For 187 years, digital communication has wired up exactly two of the five human senses. SenseSync opens the third. A real-time haptic communication app built on AWS IoT Core, Lambda, Bedrock, and DynamoDB that lets people send rhythm and presence across any distance. Zero dollars a month. The haptic channel, finally online.",
-      "url": "https://builder.aws.com/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CERsXfzKfvEYgJx5QpeCJJ6TLn/Sens.webp",
-      "authorName": "Harish Muthyala",
-      "authorAlias": "harosh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39bTeHE7KJdS9mprR43EEygRIBp.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aideas-2025",
-        "NAMER",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-18T02:50:35.064Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3B5n19jnSCfSKN6WqDvm1K1H5FK",
-      "title": "AIdeas Finalist: Predict-Epidem",
-      "description": "Predict-Epidem is an epidemiological intelligence system designed to monitor and predict outbreaks in Latin America. Through a high-fidelity dashboard, it provides real-time data visualization, risk prediction, and critical alerts that transform crisis management into a precision strategy. By integrating climate data, clinical reports, and social media signals, it identifies contagion patterns, allowing healthcare systems to act before medical units reach their limit.",
-      "url": "https://builder.aws.com/content/3B5n19jnSCfSKN6WqDvm1K1H5FK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CSYD2xycY4Sx5BjS9fXRQZD6zL/Gemi.webp",
-      "authorName": "Vicente G. Guzmán Lucio",
-      "authorAlias": "luciomsp",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2vKp0LsOZvoWgSJoHfe25Kmoue5.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "LATAM"
-      ],
-      "publishedAt": "2026-04-18T01:47:47.120Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C8hBRTcsRuQrHzE3Pq243yhXTF",
-      "title": "AIdeas Finalist: AgriNexus AI",
-      "description": "A closed-loop WhatsApp advisor for 100M+ Indian smallholder farmers — pest diagnosis via photo, voice in 4 dialects, and weather-timed nudges that follow up until the farmer confirms action. 100% serverless on AWS.     ",
-      "url": "https://builder.aws.com/content/3C8hBRTcsRuQrHzE3Pq243yhXTF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRwGCPwinlf1PM9GhX7FJQNhz7/cove.webp",
-      "authorName": "Prasad",
-      "authorAlias": "prasadt1",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3At5t7vVdxZFMZLlvXq03i9GDFv.webp",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "amazon-bedrock",
-        "serverless"
-      ],
-      "publishedAt": "2026-04-18T01:03:14.302Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3AwjpgXZzjMVewbc7exEP8sUhmU",
-      "title": "AIdeas Finalist: DermAI Hope - Bringing Dermatology to 2.5 Billion People Without a Doctor",
-      "description": "DermAI Hope puts AI-powered skin screening in your pocket: free, private, offline-capable, in 10+ languages. Photograph the affected area, answer a few quick questions, and receive a diagnosis with confidence score, severity rating, care protocol, and urgent care alerts, in seconds, no account required. Built for the 2.5 billion people living without access to a dermatologist, DermAI Hope runs on any phone, works on 2G, and deletes your photo after 24 hours.",
-      "url": "https://builder.aws.com/content/3AwjpgXZzjMVewbc7exEP8sUhmU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVzVxBDRoPgEKycYzxPOHO6QmF/Derm.webp",
-      "authorName": "Ransford Genesis",
-      "authorAlias": "ransfordgenesis",
-      "authorAvatarUrl": "",
-      "location": "GH",
-      "lat": 8.0300284,
-      "lng": -1.0800271,
-      "tags": [
-        "aideas-2025",
-        "EMEA",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-17T23:56:37.343Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVStuSRFCfI9LpXSbFv2cSQRrs",
-      "title": "Week 3 Lab Completed: EC2 + IAM + Billing + Security\nAWS Cloud Club Unilorin Bootcamp 2026 | Team 19",
-      "description": "This week's lab was all about getting hands-on with core AWS services — Identity and Access Management (IAM), Elastic Compute Cloud (EC2), Billing, and Security. As part of the AWS Cloud Club Unilorin Bootcamp 2026, our team worked through seven tasks that covered everything from setting up billing alerts to deploying a live web page on Ubuntu. Here's a full breakdown of what we did.",
-      "url": "https://builder.aws.com/content/3CVStuSRFCfI9LpXSbFv2cSQRrs",
-      "imageUrl": "",
-      "authorName": "Adekola oluwajomiloju joy",
-      "authorAlias": "joycel",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T23:50:52.598Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVCgXdjUe2X7wxJg78pvxvLv3m",
-      "title": "3 Must-Knows as a First-Gen Tech Student - and How to Leverage AWS Builder Center",
-      "description": "Being a first generation student in STEM certainly isn't easy; and there is a lot of things they don't tell you. Using tools like AWS Builder Center will give you the step you need to go from first-gen to your dream career.",
-      "url": "https://builder.aws.com/content/3CVCgXdjUe2X7wxJg78pvxvLv3m",
-      "imageUrl": "",
-      "authorName": "Zayda Townsend",
-      "authorAlias": "zaydazt",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVWfv5ZTkiIlcXOGtjVvBZsBRH.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-17T23:47:01.271Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "title": "AIdeas Finalist: Perspective",
-      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
-      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
-      "authorName": "Alwoch Sophia",
-      "authorAlias": "salwoch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
-      "location": "UG",
-      "lat": 1.5333554,
-      "lng": 32.2166578,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVEOVEpND9lOU4ZFM8HCnPylF2",
-      "title": "FROM LEARNING TO BUILDING: DEPLOYING A SECURE WEB SERVER ON AWS",
-      "description": "As part of the AWS Cloud Club Unilorin Bootcamp, I applied my knowledge by deploying a live web server. This experience strengthened my understanding of cloud security, access control, and cost management using AWS tools.",
-      "url": "https://builder.aws.com/content/3CVEOVEpND9lOU4ZFM8HCnPylF2",
-      "imageUrl": "",
-      "authorName": "Mariam Saka",
-      "authorAlias": "damilola1",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aws-cloud-clubs"
-      ],
-      "publishedAt": "2026-04-17T23:11:47.375Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVLAioG5fMKWwZsDobS1vS7ZXT",
-      "title": "AWS Cloud Club Bootcamp: EC2, IAM, and Security Implementation",
-      "description": "This project, completed as part of the AWS Cloud Club Unilorin Bootcamp 2026, focuses on deploying a secure Ubuntu-based web server while implementing robust Identity and Access Management (IAM) and cost-control measures.",
-      "url": "https://builder.aws.com/content/3CVLAioG5fMKWwZsDobS1vS7ZXT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVMa4zXm3bXhxK9jFmaBucAhGp/1000.webp",
-      "authorName": "Cisse Alpha Oumar",
-      "authorAlias": "alphacisse",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T22:52:42.428Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVIARBawHFnETtS88RPtgwQvZO",
-      "title": "From ideas to deployment: first AWS project",
-      "description": "\nSecure Cloud Deployment and Access Management using AWS (EC2, IAM, and Billing Monitoring)",
-      "url": "https://builder.aws.com/content/3CVIARBawHFnETtS88RPtgwQvZO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVLPsS4orO2Olqabh5zFtmZvvi/IMG-.webp",
-      "authorName": "abubakarhameedah9",
-      "authorAlias": "monisola07",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aws-builders",
-        "aws-cloud-clubs",
-        "first-cloud-project-challenge-1",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-17T22:44:21.654Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BzM2TZzM7RnsPFR7bzO7qlORUv",
-      "title": "AIdeas Finalist: MockNest Serverless",
-      "description": "MockNest Serverless is an open-source, serverless, AI-assisted API mocking platform for AWS that helps teams test integrations faster when external APIs are unavailable, unstable, or hard to control. It uses a lightweight mock runtime in the customer’s own AWS account and AI-generated mocks from API specifications and natural-language instructions to cut setup time and reduce manual mock maintenance.",
-      "url": "https://builder.aws.com/content/3BzM2TZzM7RnsPFR7bzO7qlORUv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CAN6KAcqjN72B3wb3ijNRahzsG/Mock.webp",
-      "authorName": "Elena van Engelen - Maslova",
-      "authorAlias": "elenavanengelen",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uENrgSUyPcERmzE79GReGYWod3.webp",
-      "location": "NL",
-      "lat": 52.2434979,
-      "lng": 5.6343227,
-      "tags": [
-        "aideas-2025",
-        "workplace-efficiency",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T22:35:49.677Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3AG8rSPutiXyXls7XZaC7tLepnP",
-      "title": "AIdeas Finalist: MaatriSahayak",
-      "description": "Every year, thousands of Indian mothers die not because medicine failed them — but because the right information never reached the right person in time. MaatriSahayak fixes that with AI that thinks in Hindi, predicts danger before it peaks, and coordinates a full emergency response in under 60 seconds.",
-      "url": "https://builder.aws.com/content/3AG8rSPutiXyXls7XZaC7tLepnP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWC5nmKJHXJYGtXDn01VdWUOZo/1000.webp",
-      "authorName": "Krishna Tripathi",
-      "authorAlias": "krux2dev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHoHw2Ei0xIWCv6f3QQrsgp3dg.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC",
-        "ai-ml",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-04-17T22:22:38.296Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVIP2h8rYRumwhmS07WZfeE2bz",
-      "title": "Hands-On Implementation of Core AWS Services: A Bootcamp Experience",
-      "description": "Learning AWS through hands-on tasks and collaborative problem-solving.",
-      "url": "https://builder.aws.com/content/3CVIP2h8rYRumwhmS07WZfeE2bz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVIttNURWNLPiqxLlqOXLQI8pe/0146e.webp",
-      "authorName": "Azeezat Aderounmu",
-      "authorAlias": "adejokezee1",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T22:22:32.648Z",
-      "likesCount": 1,
       "commentsCount": 0
     }
   ],
@@ -407,25 +236,25 @@
       "commentsCount": 9
     },
     {
-      "id": "/content/3CUVB4OQ16OJWyHMQpl45a3Cx5Q",
-      "title": "AIdeas Finalist: ReadEase AI",
-      "description": "ReadEase AI is a browser extension that combines dyslexia-friendly formatting with on-demand AI comprehension tools. It reduces visual stress and helps readers understand dense content directly on the page, without breaking flow. Designed for students and everyday readers, it lowers the effort required to read, so more energy goes into understanding, not decoding.",
-      "url": "https://builder.aws.com/content/3CUVB4OQ16OJWyHMQpl45a3Cx5Q",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV9rtdsJfkWuRXIhlWNseejgoo/cove.webp",
-      "authorName": "Anas Hossain",
-      "authorAlias": "anas13",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Au6m887sz652aNXdGkRP3jQFCg.webp",
-      "location": "BD",
-      "lat": 24.4769288,
-      "lng": 90.2934413,
+      "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
+      "title": "AIdeas Finalist: Anukriti – What If Drug Trials Included Everyone?",
+      "description": "Simulating drug safety across diverse genomes to detect population-specific risks before clinical trials begin.",
+      "url": "https://builder.aws.com/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CURnoXuxeApI9C1srVHnCu7o2Y/Anuk.webp",
+      "authorName": "Abhimanyu",
+      "authorAlias": "abhimanyurb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ZTFhWxtLV7lKccPuR1WVt1bar.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
         "aideas-2025",
         "social-impact",
         "APJC"
       ],
-      "publishedAt": "2026-04-18T05:49:59.036Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "publishedAt": "2026-04-17T16:05:36.978Z",
+      "likesCount": 13,
+      "commentsCount": 5
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -468,7 +297,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 30,
+      "likesCount": 31,
       "commentsCount": 9
     },
     {
@@ -492,6 +321,27 @@
       "commentsCount": 11
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 48,
+      "commentsCount": 28
+    },
+    {
       "id": "/content/3CF43pwavQ0MFccaX269jpGJsCF",
       "title": "AIdeas Finalist: VERA, A Multi-Agent Triage System for Healthcare in Chile",
       "description": "A multi-agent healthcare triage system that screens patients in Chilean Spanish, detects crisis signals, and generates clinical reports. Built by two people on AWS for $17/month, designed to integrate with Chile's public health system via HL7 FHIR.",
@@ -511,6 +361,27 @@
       "publishedAt": "2026-04-12T06:12:58.400Z",
       "likesCount": 13,
       "commentsCount": 3
+    },
+    {
+      "id": "/content/3CWBr5UwtA6fo6enNzfk5MEaHq1",
+      "title": "AIdeas Finalist: VoiceAid – Bridging the Digital Divide for the Non-Literate and Elderly",
+      "description": "VoiceAid reimagines digital access through an orality-first approach, enabling non-literate and elderly users to interact with technology using natural speech instead of text. Powered by Amazon Bedrock and Nova Sonic, it delivers real-time, localized, and offline-capable assistance for critical needs like healthcare, farming, and scam prevention.",
+      "url": "https://builder.aws.com/content/3CWBr5UwtA6fo6enNzfk5MEaHq1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWGo94JNijfIhO4B7WrX04dvj3/voic.webp",
+      "authorName": "Pawan Joshi",
+      "authorAlias": "pawanjoshidev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39v60kcWXpO6cRSHvemaqLyJvUN.webp",
+      "location": "Uttrakhand, IN",
+      "lat": 30.0797976,
+      "lng": 78.3045766,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-18T06:54:38.827Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
@@ -548,50 +419,6 @@
       ],
       "publishedAt": "2026-04-17T22:11:42.436Z",
       "likesCount": 5,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35yOTh3vkhvN23US1muS1uEM7Ra.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 23,
-      "commentsCount": 11
-    },
-    {
-      "id": "/content/3CUZHL2FfEkpQnU3iYG2LHlcS8I",
-      "title": "From Zero to Deployed☁️: Securing AWS with IAM, EC2, and Nginx on Ubuntu",
-      "description": "As part of the AWS Cloud Club Unilorin Bootcamp(Week 3), 2026, I recently completed a hands-on project focused on a critical cloud reality: building is easy, but building securely and efficiently requires intention.\nMy mission was to deploy a live web server while maintaining a strict security posture and total cost visibility. Here’s how I built a secure, cost-aware environment using IAM, EC2, and Billing tools.",
-      "url": "https://builder.aws.com/content/3CUZHL2FfEkpQnU3iYG2LHlcS8I",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV1Yl0VAh8Q05N8vaRYljdsYV7/aws-.webp",
-      "authorName": "Agbaje David",
-      "authorAlias": "agbaje",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BgXufrIvXRUKjXkJ1NiPFXpidp.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aws-cloud-clubs",
-        "aws-community",
-        "aws-community-builders",
-        "aws-community-day-2026",
-        "aws-community-day-recaps-2026"
-      ],
-      "publishedAt": "2026-04-17T20:03:19.325Z",
-      "likesCount": 4,
       "commentsCount": 0
     }
   ]
