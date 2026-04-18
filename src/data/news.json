@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-04-18T09:17:08.710Z",
+  "updatedAt": "2026-04-18T10:15:07.175Z",
   "latest": [
+    {
+      "id": "/content/3CWgsWRB1mc1DABHUaGhcJ0Xv2h",
+      "title": "My First AWS Hands-On Project — EC2, IAM, Security & Billing\nAWS Cloud Club University of Ilorin Bootcamp 2026 | Week 3 | Team 11 — Trusted Roles",
+      "description": "When they handed us the assignment document, my first reaction was honest — where do I even start?\nThe tasks looked like a lot. EC2 instances, IAM users, groups, roles, policies, billing alerts, deploying a web page, validating permissions. All in one assignment.\nBut I made a decision. Stop staring at it. Start doing it.\nAnd that changed everything.",
+      "url": "https://builder.aws.com/content/3CWgsWRB1mc1DABHUaGhcJ0Xv2h",
+      "imageUrl": "",
+      "authorName": "Abiodun Olabisi",
+      "authorAlias": "abbeyboy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BXMBBcLM0G3BBhQyZiKWq1IA7G.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aws-academy",
+        "aws-educate"
+      ],
+      "publishedAt": "2026-04-18T10:11:42.553Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CGkJamPUqkR4pqgCQcFHSNKOFs",
       "title": "RDS vs DynamoDB: How to Think About Data in the Cloud",
@@ -85,8 +105,8 @@
         "daily-life-enhancement"
       ],
       "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 2,
-      "commentsCount": 3
+      "likesCount": 3,
+      "commentsCount": 4
     },
     {
       "id": "/content/3CW9vQDM0MUqt8o84A2lTt1IUwD",
@@ -194,27 +214,6 @@
       "publishedAt": "2026-04-18T06:03:31.124Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CUVB4OQ16OJWyHMQpl45a3Cx5Q",
-      "title": "AIdeas Finalist: ReadEase AI",
-      "description": "ReadEase AI is a browser extension that combines dyslexia-friendly formatting with on-demand AI comprehension tools. It reduces visual stress and helps readers understand dense content directly on the page, without breaking flow. Designed for students and everyday readers, it lowers the effort required to read, so more energy goes into understanding, not decoding.",
-      "url": "https://builder.aws.com/content/3CUVB4OQ16OJWyHMQpl45a3Cx5Q",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV9rtdsJfkWuRXIhlWNseejgoo/cove.webp",
-      "authorName": "Anas Hossain",
-      "authorAlias": "anas13",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Au6m887sz652aNXdGkRP3jQFCg.webp",
-      "location": "BD",
-      "lat": 24.4769288,
-      "lng": 90.2934413,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-18T05:49:59.036Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -236,8 +235,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 56,
-      "commentsCount": 39
+      "likesCount": 77,
+      "commentsCount": 50
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -275,8 +274,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 66,
-      "commentsCount": 20
+      "likesCount": 86,
+      "commentsCount": 33
     },
     {
       "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
@@ -296,8 +295,8 @@
         "daily-life-enhancement"
       ],
       "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 2,
-      "commentsCount": 3
+      "likesCount": 3,
+      "commentsCount": 4
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -317,8 +316,31 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 12,
-      "commentsCount": 2
+      "likesCount": 17,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 123,
+      "commentsCount": 17
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -338,8 +360,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 72,
-      "commentsCount": 46
+      "likesCount": 79,
+      "commentsCount": 50
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -364,47 +386,24 @@
       "commentsCount": 10
     },
     {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3CWgsWRB1mc1DABHUaGhcJ0Xv2h",
+      "title": "My First AWS Hands-On Project — EC2, IAM, Security & Billing\nAWS Cloud Club University of Ilorin Bootcamp 2026 | Week 3 | Team 11 — Trusted Roles",
+      "description": "When they handed us the assignment document, my first reaction was honest — where do I even start?\nThe tasks looked like a lot. EC2 instances, IAM users, groups, roles, policies, billing alerts, deploying a web page, validating permissions. All in one assignment.\nBut I made a decision. Stop staring at it. Start doing it.\nAnd that changed everything.",
+      "url": "https://builder.aws.com/content/3CWgsWRB1mc1DABHUaGhcJ0Xv2h",
+      "imageUrl": "",
+      "authorName": "Abiodun Olabisi",
+      "authorAlias": "abbeyboy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BXMBBcLM0G3BBhQyZiKWq1IA7G.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
       "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
+        "aws-academy",
+        "aws-educate"
       ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 91,
-      "commentsCount": 10
-    },
-    {
-      "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
-      "title": "Introducing Article View Counts on AWS Builder Center",
-      "description": "You can now see how many builders are reading your articles, giving you a real metric to understand the reach of your content.",
-      "url": "https://builder.aws.com/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMeLtqYwaG7gHyTTDqojgjnAmj/aws-a.webp",
-      "authorName": "Rick Suttles",
-      "authorAlias": "ricksuttles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "aws-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 55,
-      "commentsCount": 11
+      "publishedAt": "2026-04-18T10:11:42.553Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3AG8rSPutiXyXls7XZaC7tLepnP",
@@ -424,8 +423,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T22:22:38.296Z",
-      "likesCount": 26,
-      "commentsCount": 21
+      "likesCount": 35,
+      "commentsCount": 27
     }
   ]
 }
