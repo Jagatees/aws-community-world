@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18T13:27:55.199Z",
+  "updatedAt": "2026-04-18T14:15:42.099Z",
   "latest": [
     {
       "id": "/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
@@ -15,8 +15,8 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-18T13:14:41.067Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CWrqk8rQQVWbsgl35yYXVkDgRh",
@@ -35,8 +35,8 @@
         "amazon-ec2"
       ],
       "publishedAt": "2026-04-18T12:02:59.871Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CWj1UnTpiL56D1g9FaUZ7vglNU",
@@ -57,8 +57,8 @@
         "aws-user-groups"
       ],
       "publishedAt": "2026-04-18T11:16:11.682Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CWgsWRB1mc1DABHUaGhcJ0Xv2h",
@@ -77,8 +77,8 @@
         "aws-educate"
       ],
       "publishedAt": "2026-04-18T10:11:42.553Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CGkJamPUqkR4pqgCQcFHSNKOFs",
@@ -271,7 +271,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-18T06:03:31.124Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 1
     },
     {
@@ -418,8 +418,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 115,
-      "commentsCount": 82
+      "likesCount": 122,
+      "commentsCount": 86
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -435,7 +435,7 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 451,
+      "likesCount": 463,
       "commentsCount": 9
     },
     {
@@ -457,8 +457,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 149,
-      "commentsCount": 47
+      "likesCount": 153,
+      "commentsCount": 48
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -478,8 +478,29 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 26,
-      "commentsCount": 6
+      "likesCount": 27,
+      "commentsCount": 8
+    },
+    {
+      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "title": "AIdeas Finalist: RetainIQ",
+      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
+      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
+      "authorName": "Samyak Jain",
+      "authorAlias": "samyakj05",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T20:29:28.119Z",
+      "likesCount": 30,
+      "commentsCount": 7
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -501,29 +522,68 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 172,
-      "commentsCount": 47
+      "likesCount": 181,
+      "commentsCount": 56
     },
     {
-      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
-      "title": "AIdeas Finalist: RetainIQ",
-      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
-      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
-      "authorName": "Samyak Jain",
-      "authorAlias": "samyakj05",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
+      "id": "/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
+      "title": "The AWS Cloud Infrastructure: A Comprehensive Technical Analysis of Distributed Systems, Formal Verification, and Next-Generation Compute Architectures",
+      "description": "This analysis examines AWS infrastructure innovations: the Nitro System's secret-free hypervisors, S3's formally verified strong consistency, DynamoDB's distributed transactions, and Lambda SnapStart's 91% cold start reduction. AWS employs lightweight formal methods (TLA+/P), custom Graviton silicon with 63% better price-performance, and chaos engineering for resilience. These systems support millions of workloads across 33 regions through hardware-software co-design and continuous verification.",
+      "url": "https://builder.aws.com/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
+      "imageUrl": "",
+      "authorName": "Alam Ahmed",
+      "authorAlias": "techghost",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2v8LJaJkEFjOnlBYzUZWzKHE4BH.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-18T13:14:41.067Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
+      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
+      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
+      "authorName": "Hazel Sáenz",
+      "authorAlias": "hsaenzg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "open-source",
+        "strands-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-14T17:19:53.908Z",
+      "likesCount": 103,
+      "commentsCount": 10
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
       "tags": [
         "aideas-2025",
-        "workplace-efficiency",
-        "APJC"
+        "social-impact",
+        "EMEA"
       ],
-      "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 22,
-      "commentsCount": 4
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 88,
+      "commentsCount": 56
     },
     {
       "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
@@ -545,70 +605,6 @@
       "publishedAt": "2026-04-18T07:01:02.978Z",
       "likesCount": 3,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 88,
-      "commentsCount": 55
-    },
-    {
-      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
-      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
-      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
-      "authorName": "Hazel Sáenz",
-      "authorAlias": "hsaenzg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "agentic-ai",
-        "open-source",
-        "strands-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 90,
-      "commentsCount": 10
-    },
-    {
-      "id": "/content/3AG8rSPutiXyXls7XZaC7tLepnP",
-      "title": "AIdeas Finalist: MaatriSahayak",
-      "description": "Every year, thousands of Indian mothers die not because medicine failed them — but because the right information never reached the right person in time. MaatriSahayak fixes that with AI that thinks in Hindi, predicts danger before it peaks, and coordinates a full emergency response in under 60 seconds.",
-      "url": "https://builder.aws.com/content/3AG8rSPutiXyXls7XZaC7tLepnP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWC5nmKJHXJYGtXDn01VdWUOZo/1000.webp",
-      "authorName": "Krishna Tripathi",
-      "authorAlias": "krux2dev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHoHw2Ei0xIWCv6f3QQrsgp3dg.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T22:22:38.296Z",
-      "likesCount": 41,
-      "commentsCount": 32
     }
   ]
 }
