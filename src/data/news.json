@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-04-18T04:47:30.068Z",
+  "updatedAt": "2026-04-18T05:33:08.475Z",
   "latest": [
+    {
+      "id": "/content/374Cbmk2UwA2wlPpsSrwfXzQHxr",
+      "title": "“Getting Started with Amazon Web Services: My Learning and Project Experience”",
+      "description": "Student at Ratan Tata Maharashtra State Skills University | Event & Operations Lead | Cloud enthusiast exploring Amazon Web Services | Building projects with EC2, S3 & Lambda 🚀",
+      "url": "https://builder.aws.com/content/374Cbmk2UwA2wlPpsSrwfXzQHxr",
+      "imageUrl": "",
+      "authorName": "Chetna",
+      "authorAlias": "chetnasakarde",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C1Zmcu0mtOCoAPXPoan5GvFmW4.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-cloud-clubs"
+      ],
+      "publishedAt": "2026-04-18T05:29:44.908Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CEDkM0k22cy5agavNPFi6UQs2t",
       "title": "AIdeas Finalist: FTL, a Zero-trust Execution Layer for Coding Agents",
@@ -134,14 +153,18 @@
       "title": "AIdeas Finalist: DermAI Hope - Bringing Dermatology to 2.5 Billion People Without a Doctor",
       "description": "DermAI Hope puts AI-powered skin screening in your pocket: free, private, offline-capable, in 10+ languages. Photograph the affected area, answer a few quick questions, and receive a diagnosis with confidence score, severity rating, care protocol, and urgent care alerts, in seconds, no account required. Built for the 2.5 billion people living without access to a dermatologist, DermAI Hope runs on any phone, works on 2G, and deletes your photo after 24 hours.",
       "url": "https://builder.aws.com/content/3AwjpgXZzjMVewbc7exEP8sUhmU",
-      "imageUrl": "",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVzVxBDRoPgEKycYzxPOHO6QmF/Derm.webp",
       "authorName": "Ransford Genesis",
       "authorAlias": "ransfordgenesis",
       "authorAvatarUrl": "",
       "location": "GH",
       "lat": 8.0300284,
       "lng": -1.0800271,
-      "tags": [],
+      "tags": [
+        "aideas-2025",
+        "EMEA",
+        "social-impact"
+      ],
       "publishedAt": "2026-04-17T23:56:37.343Z",
       "likesCount": 0,
       "commentsCount": 0
@@ -340,7 +363,7 @@
         "beginner-projects"
       ],
       "publishedAt": "2026-04-17T22:11:42.436Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 0
     },
     {
@@ -365,23 +388,6 @@
       "publishedAt": "2026-04-17T22:00:18.917Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
-      "title": "Zero to Deployed ☁️: My AWS Journey",
-      "description": "Deploying a secure and cost-efficient web server using IAM, EC2, and Nginx on Ubuntu.",
-      "url": "https://builder.aws.com/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVG0x13zKyjPcDrv705aqKvUM2/IMG-.webp",
-      "authorName": "Ameerah Asalejo",
-      "authorAlias": "asalejoameeroh",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T21:59:01.845Z",
-      "likesCount": 5,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -399,7 +405,7 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 449,
+      "likesCount": 450,
       "commentsCount": 9
     },
     {
@@ -421,7 +427,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 88,
+      "likesCount": 89,
       "commentsCount": 10
     },
     {
@@ -443,7 +449,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 28,
+      "likesCount": 30,
       "commentsCount": 9
     },
     {
@@ -463,7 +469,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 54,
+      "likesCount": 55,
       "commentsCount": 11
     },
     {
@@ -484,7 +490,7 @@
         "LATAM"
       ],
       "publishedAt": "2026-04-12T06:12:58.400Z",
-      "likesCount": 12,
+      "likesCount": 13,
       "commentsCount": 3
     },
     {
@@ -501,7 +507,7 @@
       "lng": 7.9999721,
       "tags": [],
       "publishedAt": "2026-04-17T21:59:01.845Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 0
     },
     {
@@ -522,7 +528,7 @@
         "beginner-projects"
       ],
       "publishedAt": "2026-04-17T22:11:42.436Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 0
     },
     {
@@ -566,30 +572,31 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 18,
+      "likesCount": 20,
       "commentsCount": 8
     },
     {
-      "id": "/content/3CVIARBawHFnETtS88RPtgwQvZO",
-      "title": "From ideas to deployment: first AWS project",
-      "description": "\nSecure Cloud Deployment and Access Management using AWS (EC2, IAM, and Billing Monitoring)",
-      "url": "https://builder.aws.com/content/3CVIARBawHFnETtS88RPtgwQvZO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVLPsS4orO2Olqabh5zFtmZvvi/IMG-.webp",
-      "authorName": "abubakarhameedah9",
-      "authorAlias": "monisola07",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
+      "id": "/content/30DjHlCMNAEjsXW238QPx35rEqo",
+      "title": "Revolutionizing Email Productivity with AI-Powered Automation through CLI",
+      "description": "As a developer facing email overload, I built a solution for the Q Developer Challenge #1: email management. What began as a simple CLI tool grew into an AI-powered system that has transformed my workflow.",
+      "url": "https://builder.aws.com/content/30DjHlCMNAEjsXW238QPx35rEqo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/30E3l87HOBUXBSte64I4knZdAxN/bann.webp",
+      "authorName": "Harshendra M",
+      "authorAlias": "harshendra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BCQZlNwddNrYwlJMaN0ZIYcdm0.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
       "tags": [
-        "aws-builders",
-        "aws-cloud-clubs",
-        "first-cloud-project-challenge-1",
-        "beginner-projects"
+        "amazon-q-developer",
+        "q-developer-challenge-1",
+        "amazon-bedrock",
+        "generative-ai",
+        "amazon-q"
       ],
-      "publishedAt": "2026-04-17T22:44:21.654Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "publishedAt": "2025-07-22T11:19:00.233Z",
+      "likesCount": 441,
+      "commentsCount": 71
     }
   ]
 }
