@@ -1,6 +1,69 @@
 {
-  "updatedAt": "2026-04-18T03:03:21.394Z",
+  "updatedAt": "2026-04-18T04:47:30.068Z",
   "latest": [
+    {
+      "id": "/content/3CEDkM0k22cy5agavNPFi6UQs2t",
+      "title": "AIdeas Finalist: FTL, a Zero-trust Execution Layer for Coding Agents",
+      "description": "FTL is THE zero-trust execution layer for AI coding agents. Run your coding agent inside a sandbox environment with shadow credentials, parallel adversarial testing, and human-in-the-loop approval without ever giving the agent access to your real secrets or filesystem. Security, faster than light.",
+      "url": "https://builder.aws.com/content/3CEDkM0k22cy5agavNPFi6UQs2t",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVza5Gkd5NeW18yMTXlxBFylOs/Scre.webp",
+      "authorName": "Vishnu Vennelakanti",
+      "authorAlias": "vvennela",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39YZ1PRUkzLGbd8xiUGdP0wBjPb.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "NAMER"
+      ],
+      "publishedAt": "2026-04-18T04:20:03.085Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3BSIyuMmkNKQ0Ri0u5gQ1c9LiDi",
+      "title": "AWS Builder Loft: Writing Clear, Searchable, Outcome-Driven Event Articles!",
+      "description": "This is an example article for future event organizers at the AWS Builder Loft! Use this as inspiration when creating your Event article! Focus on making a clear, structured, and outcome-driven article. \nWhen done well, your article makes it easy for the right audience to quickly understand the value of your event and all the fun logistics behind it. :)",
+      "url": "https://builder.aws.com/content/3BSIyuMmkNKQ0Ri0u5gQ1c9LiDi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVvmuyGN49eArwp6fvv1IQn0pi/aws-.webp",
+      "authorName": "Trong",
+      "authorAlias": "tptran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BSKoOtVahnLH7XmgtlEKhP0RLN.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "builder-loft"
+      ],
+      "publishedAt": "2026-04-18T03:57:31.396Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3AdOAKdvPdNLz3PylEu43Dx0jpj",
+      "title": "AIdeas Finalist: CivicGuardian AI — A Digital Safeguarding Advocate for Vulnerable Adults",
+      "description": "CivicGuardian AI is a multi-agent AI safeguarding platform built on Amazon Bedrock Nova that protects vulnerable adults from missing critical deadlines in housing, benefits, and healthcare correspondence. Top 50 finalist in the AWS 10,000 AIdeas Global Competition.",
+      "url": "https://builder.aws.com/content/3AdOAKdvPdNLz3PylEu43Dx0jpj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVTxqzKxbERpAcjdNrLz5Ztinv/civi.webp",
+      "authorName": "1Legend",
+      "authorAlias": "deeplomataws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AV77KMAdpSnzPKuHsyv5VJaMIU.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "amazon-bedrock-agents",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-18T03:12:21.273Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
       "title": "AIdeas Finalist: SenseSync - The Third Channel",
@@ -319,67 +382,6 @@
       "publishedAt": "2026-04-17T21:59:01.845Z",
       "likesCount": 5,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVFIevf5pdNpx7L2uG2GV7G27g",
-      "title": "The unexpected start",
-      "description": "From a reluctant first-timer to deploying a fully functional cloud infrastructure—this experience captures my introduction to AWS, where I built, secured, and validated a live web server in a single bootcamp session.",
-      "url": "https://builder.aws.com/content/3CVFIevf5pdNpx7L2uG2GV7G27g",
-      "imageUrl": "",
-      "authorName": "Awwal Adepoju",
-      "authorAlias": "waltz",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T21:54:43.731Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BUGRqQqRb0TNmH5dAQSClEjTqq",
-      "title": "My experience of the first hand-on task",
-      "description": "How I carried out my first AWS practical task on IAM",
-      "url": "https://builder.aws.com/content/3BUGRqQqRb0TNmH5dAQSClEjTqq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVE6FVVaPbdO41dPrFixh7sQVf/1000.webp",
-      "authorName": "Siyanbola Taiwo",
-      "authorAlias": "literati",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-a2i",
-        "amazon-ec2",
-        "aws-community-day-2026"
-      ],
-      "publishedAt": "2026-04-17T21:45:08.931Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CV8kxKZPYRHCfyijaScWRAkWXR",
-      "title": "🚀 From Zero to Live: Deploying a Webpage on Ubuntu Using an EC2 Instance",
-      "description": "A step-by-step walkthrough of launching an EC2 instance, configuring Ubuntu, and deploying a live webpage using a secure and scalable AWS environment.",
-      "url": "https://builder.aws.com/content/3CV8kxKZPYRHCfyijaScWRAkWXR",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV9ytm0jNypU5cb3zU3fTuMrqh/imag.webp",
-      "authorName": "Oyewale Abdulzahir",
-      "authorAlias": "gentle26",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2",
-        "auto-scaling",
-        "aws-codedeploy",
-        "iam",
-        "deployment"
-      ],
-      "publishedAt": "2026-04-17T21:13:04.098Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -445,21 +447,24 @@
       "commentsCount": 9
     },
     {
-      "id": "/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
-      "title": "Zero to Deployed ☁️: My AWS Journey",
-      "description": "Deploying a secure and cost-efficient web server using IAM, EC2, and Nginx on Ubuntu.",
-      "url": "https://builder.aws.com/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVG0x13zKyjPcDrv705aqKvUM2/IMG-.webp",
-      "authorName": "Ameerah Asalejo",
-      "authorAlias": "asalejoameeroh",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-04-17T21:59:01.845Z",
-      "likesCount": 5,
-      "commentsCount": 0
+      "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
+      "title": "Introducing Article View Counts on AWS Builder Center",
+      "description": "You can now see how many builders are reading your articles, giving you a real metric to understand the reach of your content.",
+      "url": "https://builder.aws.com/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMeLtqYwaG7gHyTTDqojgjnAmj/aws-a.webp",
+      "authorName": "Rick Suttles",
+      "authorAlias": "ricksuttles",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "aws-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-14T22:01:35.905Z",
+      "likesCount": 54,
+      "commentsCount": 11
     },
     {
       "id": "/content/3CF43pwavQ0MFccaX269jpGJsCF",
@@ -483,24 +488,21 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
-      "title": "Introducing Article View Counts on AWS Builder Center",
-      "description": "You can now see how many builders are reading your articles, giving you a real metric to understand the reach of your content.",
-      "url": "https://builder.aws.com/content/3CMYAXmISvTHwjSrGEaDkaN5Mof",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMeLtqYwaG7gHyTTDqojgjnAmj/aws-a.webp",
-      "authorName": "Rick Suttles",
-      "authorAlias": "ricksuttles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "aws-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-14T22:01:35.905Z",
-      "likesCount": 54,
-      "commentsCount": 11
+      "id": "/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
+      "title": "Zero to Deployed ☁️: My AWS Journey",
+      "description": "Deploying a secure and cost-efficient web server using IAM, EC2, and Nginx on Ubuntu.",
+      "url": "https://builder.aws.com/content/3CVFeGQb3U3LTTILzvUGXXCdALm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVG0x13zKyjPcDrv705aqKvUM2/IMG-.webp",
+      "authorName": "Ameerah Asalejo",
+      "authorAlias": "asalejoameeroh",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-04-17T21:59:01.845Z",
+      "likesCount": 5,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CVDBGE7JWxpFcgoPK4lwUlNsog",
@@ -547,6 +549,27 @@
       "commentsCount": 0
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35yOTh3vkhvN23US1muS1uEM7Ra.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 18,
+      "commentsCount": 8
+    },
+    {
       "id": "/content/3CVIARBawHFnETtS88RPtgwQvZO",
       "title": "From ideas to deployment: first AWS project",
       "description": "\nSecure Cloud Deployment and Access Management using AWS (EC2, IAM, and Billing Monitoring)",
@@ -567,27 +590,6 @@
       "publishedAt": "2026-04-17T22:44:21.654Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35yOTh3vkhvN23US1muS1uEM7Ra.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 16,
-      "commentsCount": 7
     }
   ]
 }
