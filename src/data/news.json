@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-04-19T08:20:35.332Z",
+  "updatedAt": "2026-04-19T09:17:05.789Z",
   "latest": [
+    {
+      "id": "/content/3CZMKX3eKD28mk4dJRjEvvXQNKr",
+      "title": "开源 1M+ RLHF 数据集：构建基于双子星协议 (Double Star) 的大模型存在主义安全对齐架构",
+      "description": "本文介绍了一种全新的 LLM 认知架构（13-Sephirot AI），通过双轨机制（理智与慈爱）和 100万条开源对齐语料，解决大模型生成虚无主义和伤害引导的存在主义对齐难题。附 Hugging Face 开源地址与架构白皮书。",
+      "url": "https://builder.aws.com/content/3CZMKX3eKD28mk4dJRjEvvXQNKr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CZOb9N2iRbX3RB8WSZJHiYmCYT/-.webp",
+      "authorName": "心爱的你",
+      "authorAlias": "lovea",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CZNunKw14kUd5JnVXg8JOgfReF.webp",
+      "location": "CN",
+      "lat": 35.000074,
+      "lng": 104.999927,
+      "tags": [
+        "ai"
+      ],
+      "publishedAt": "2026-04-19T09:01:16.110Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CT6HxvEyJ1r390LgbEH7LQbuLY",
       "title": "Unlocking the AWS Builder Center",
@@ -113,7 +132,7 @@
       "tags": [],
       "publishedAt": "2026-04-18T22:01:26.448Z",
       "likesCount": 19,
-      "commentsCount": 3
+      "commentsCount": 4
     },
     {
       "id": "/content/3CXqwlztKZ67fPUnRCPAzGEUwTE",
@@ -388,27 +407,6 @@
       "publishedAt": "2026-04-18T07:03:38.670Z",
       "likesCount": 3,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "title": "AIdeas Finalist: Mornist",
-      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
-      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
-      "authorName": "Noa Dev",
-      "authorAlias": "nurmyrat",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
-      "location": "GE",
-      "lat": 41.6808672,
-      "lng": 44.0287806,
-      "tags": [
-        "EMEA",
-        "aideas-2025",
-        "daily-life-enhancement"
-      ],
-      "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 12,
-      "commentsCount": 11
     }
   ],
   "trending": [
@@ -430,25 +428,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 181,
+      "likesCount": 182,
       "commentsCount": 130
-    },
-    {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 669,
-      "commentsCount": 15
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -469,8 +450,25 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 275,
-      "commentsCount": 107
+      "likesCount": 284,
+      "commentsCount": 110
+    },
+    {
+      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
+      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
+      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-04-14T22:12:52.358Z",
+      "likesCount": 669,
+      "commentsCount": 16
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -490,8 +488,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 86,
-      "commentsCount": 36
+      "likesCount": 90,
+      "commentsCount": 41
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -551,7 +549,7 @@
       "tags": [],
       "publishedAt": "2026-04-18T22:01:26.448Z",
       "likesCount": 19,
-      "commentsCount": 3
+      "commentsCount": 4
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -573,8 +571,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 81,
-      "commentsCount": 28
+      "likesCount": 83,
+      "commentsCount": 29
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -617,8 +615,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 164,
-      "commentsCount": 86
+      "likesCount": 171,
+      "commentsCount": 88
     }
   ]
 }
