@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18T23:11:09.800Z",
+  "updatedAt": "2026-04-19T00:26:26.136Z",
   "latest": [
     {
       "id": "/content/3CY7CaQVWzGNdApjV4IMGz4lPNZ",
@@ -7,7 +7,7 @@
       "description": "Before you sprint into your first hackathon, get hands-on with the three AWS services that can take your build from idea to working demo — fast. Based on real experience at the Colorado State University Hackathon.",
       "url": "https://builder.aws.com/content/3CY7CaQVWzGNdApjV4IMGz4lPNZ",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY907whB2rFSKQlTkh1UvB5cL9/Hack.webp",
-      "authorName": "JimmyG",
+      "authorName": "James Guadagnoli",
       "authorAlias": "yimmybuilds",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYBfWfnzhTjXQ4xs2MrDcC1Kzh.webp",
       "location": "US",
@@ -21,8 +21,8 @@
         "amazon-bedrock"
       ],
       "publishedAt": "2026-04-18T23:01:40.461Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
@@ -38,7 +38,7 @@
       "lng": -120.737257,
       "tags": [],
       "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 3,
+      "likesCount": 6,
       "commentsCount": 0
     },
     {
@@ -84,7 +84,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-18T19:18:45.606Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 1
     },
     {
@@ -375,7 +375,7 @@
         "daily-life-enhancement"
       ],
       "publishedAt": "2026-04-18T06:59:05.013Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 7
     },
     {
@@ -481,8 +481,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 220,
-      "commentsCount": 75
+      "likesCount": 227,
+      "commentsCount": 77
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -549,25 +549,44 @@
       "commentsCount": 13
     },
     {
-      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "title": "AIdeas Finalist: Mornist",
-      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
-      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
-      "authorName": "Noa Dev",
-      "authorAlias": "nurmyrat",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
-      "location": "GE",
-      "lat": 41.6808672,
-      "lng": 44.0287806,
+      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
+      "title": "Our 10k AIdeas Finalists - vote by April 23!",
+      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
+      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-04-18T22:01:26.448Z",
+      "likesCount": 6,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CY7CaQVWzGNdApjV4IMGz4lPNZ",
+      "title": "AWS Tools to Know Before Your First Hackathon",
+      "description": "Before you sprint into your first hackathon, get hands-on with the three AWS services that can take your build from idea to working demo — fast. Based on real experience at the Colorado State University Hackathon.",
+      "url": "https://builder.aws.com/content/3CY7CaQVWzGNdApjV4IMGz4lPNZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY907whB2rFSKQlTkh1UvB5cL9/Hack.webp",
+      "authorName": "James Guadagnoli",
+      "authorAlias": "yimmybuilds",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYBfWfnzhTjXQ4xs2MrDcC1Kzh.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
-        "EMEA",
-        "aideas-2025",
-        "daily-life-enhancement"
+        "hackathon",
+        "generative-ai",
+        "students",
+        "amazon-s3",
+        "amazon-bedrock"
       ],
-      "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 11,
-      "commentsCount": 11
+      "publishedAt": "2026-04-18T23:01:40.461Z",
+      "likesCount": 1,
+      "commentsCount": 2
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -593,44 +612,25 @@
       "commentsCount": 64
     },
     {
-      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "title": "Our 10k AIdeas Finalists - vote by April 23!",
-      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
-      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
-      "title": "AIdeas Finalist: CareLens AI — Transparent Care Guidance When It Matters Most.",
-      "description": "CareLens is a privacy-first AI platform that helps people understand healthcare costs before seeking treatment. By analyzing de-identified symptoms, location, and optional insurance details, it compares care options like ER, urgent care, or specialists and surfaces real-world price ranges using hospital transparency and CMS data. It doesn’t diagnose—it delivers clear, grounded cost, bill analyzing and care guidance so users can make confident decisions without surprise bills.",
-      "url": "https://builder.aws.com/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQpXsD0JnjTgsz5OtwkvL8Wtzr/Scre.webp",
-      "authorName": "Daniel Lambo",
-      "authorAlias": "daniellambo",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "title": "AIdeas Finalist: Mornist",
+      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
+      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
+      "authorName": "Noa Dev",
+      "authorAlias": "nurmyrat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
+      "location": "GE",
+      "lat": 41.6808672,
+      "lng": 44.0287806,
       "tags": [
-        "NAMER",
+        "EMEA",
         "aideas-2025",
-        "north-america",
-        "social-good",
-        "social-impact"
+        "daily-life-enhancement"
       ],
-      "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 57,
-      "commentsCount": 19
+      "publishedAt": "2026-04-18T07:01:02.978Z",
+      "likesCount": 11,
+      "commentsCount": 11
     }
   ]
 }
