@@ -1,6 +1,45 @@
 {
-  "updatedAt": "2026-04-19T19:16:43.894Z",
+  "updatedAt": "2026-04-19T20:10:33.532Z",
   "latest": [
+    {
+      "id": "/content/3CaY3B4u9KSOHUbmIY8Kt4WG5oi",
+      "title": "Kiro for Logging: Generating Structured Logging Code",
+      "description": "Using Kiro to generate proper structured logging in Python, step by step. No prior logging experience needed.",
+      "url": "https://builder.aws.com/content/3CaY3B4u9KSOHUbmIY8Kt4WG5oi",
+      "imageUrl": "",
+      "authorName": "Rajat Antil",
+      "authorAlias": "rajatantil",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BnXieRBpuvDtSDQ6k606owktif.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-19T19:37:11.772Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3B6uh76GlgnwzAVPhHswEMM4XhX",
+      "title": "Join the AWS AI League 2026",
+      "description": "Learn agentic and LLM skills while competing for the prizes and glory",
+      "url": "https://builder.aws.com/content/3B6uh76GlgnwzAVPhHswEMM4XhX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CabRTzrspN3lIjC1tQrbfxxBwL/20260.webp",
+      "authorName": "Tomasz Ptak",
+      "authorAlias": "tptak",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3175TKyuZUzxZgPJBxTIZMkQWd8.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "aws-ai-league",
+        "llm",
+        "agents",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-19T19:26:04.898Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CaYTfzqmg4dNQ66Z19fdemrUDI",
       "title": "The Structural Advantage: Why Industry-Connecting Clubs Matter More Than Most CS Majors Realize",
@@ -168,45 +207,31 @@
       "publishedAt": "2026-04-19T10:47:43.976Z",
       "likesCount": 2,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CZMKX3eKD28mk4dJRjEvvXQNKr",
-      "title": "开源 1M+ RLHF 数据集：构建基于双子星协议 (Double Star) 的大模型存在主义安全对齐架构",
-      "description": "本文介绍了一种全新的 LLM 认知架构（13-Sephirot AI），通过双轨机制（理智与慈爱）和 100万条开源对齐语料，解决大模型生成虚无主义和伤害引导的存在主义对齐难题。附 Hugging Face 开源地址与架构白皮书。",
-      "url": "https://builder.aws.com/content/3CZMKX3eKD28mk4dJRjEvvXQNKr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CZOb9N2iRbX3RB8WSZJHiYmCYT/-.webp",
-      "authorName": "心爱的你",
-      "authorAlias": "lovea",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CZNunKw14kUd5JnVXg8JOgfReF.webp",
-      "location": "CN",
-      "lat": 35.000074,
-      "lng": 104.999927,
-      "tags": [
-        "ai"
-      ],
-      "publishedAt": "2026-04-19T09:01:16.110Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CT6HxvEyJ1r390LgbEH7LQbuLY",
-      "title": "Unlocking the AWS Builder Center",
-      "description": "Your New Home for Cloud Innovation",
-      "url": "https://builder.aws.com/content/3CT6HxvEyJ1r390LgbEH7LQbuLY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CYnQ6kikt9CjP2mHN3FATkCjQ4/image.webp",
-      "authorName": "Ignacia Heyer",
-      "authorAlias": "yova",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-19T04:04:21.911Z",
-      "likesCount": 2,
-      "commentsCount": 2
     }
   ],
   "trending": [
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 422,
+      "commentsCount": 142
+    },
     {
       "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
       "title": "AIdeas Finalist: Anukriti – What If Drug Trials Included Everyone?",
@@ -227,28 +252,6 @@
       "publishedAt": "2026-04-17T16:05:36.978Z",
       "likesCount": 217,
       "commentsCount": 136
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 404,
-      "commentsCount": 139
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -285,8 +288,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 139,
-      "commentsCount": 62
+      "likesCount": 142,
+      "commentsCount": 64
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -351,7 +354,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 114,
+      "likesCount": 116,
       "commentsCount": 41
     },
     {
@@ -395,8 +398,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 333,
-      "commentsCount": 56
+      "likesCount": 335,
+      "commentsCount": 57
     },
     {
       "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
