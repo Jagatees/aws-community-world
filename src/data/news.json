@@ -1,6 +1,71 @@
 {
-  "updatedAt": "2026-04-19T17:13:06.328Z",
+  "updatedAt": "2026-04-19T18:13:11.261Z",
   "latest": [
+    {
+      "id": "/content/3CaRhVNIc5KbIdgdnqPNhZIk4a5",
+      "title": "Reducing token burn with a Lambda Troubleshooter, Anthropic Mythos, How I use AI for pentesting",
+      "description": "Latest stories on AI, vibe coding, AI security, and AI for security research",
+      "url": "https://builder.aws.com/content/3CaRhVNIc5KbIdgdnqPNhZIk4a5",
+      "imageUrl": "",
+      "authorName": "Teri Radichel",
+      "authorAlias": "teriradichel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "ai",
+        "cybersecurity",
+        "artificial-intelligence",
+        "kiro",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-04-19T18:09:38.802Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CaPBym9yzsyJE9Y2ZDMok7LmlE",
+      "title": "Looking to build your resume/portfolio? Here's 3 cool project ideas that uses AWS!",
+      "description": "Starter ideas on projects utilizing AWS EC2, SQS, S3, and DynamoDB, and how to build them.",
+      "url": "https://builder.aws.com/content/3CaPBym9yzsyJE9Y2ZDMok7LmlE",
+      "imageUrl": "",
+      "authorName": "Jaden Seangmany",
+      "authorAlias": "jadenseangmany",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bg63yPyoYjPTWyWmMqicOHzbIU.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "diy-project",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-04-19T17:48:43.610Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CaMO38ZEvZe7aVBibNx5JIULEF",
+      "title": "What is Observability in the context of MLOps",
+      "description": "This article provides information about how is Observability important in the context of MLOps",
+      "url": "https://builder.aws.com/content/3CaMO38ZEvZe7aVBibNx5JIULEF",
+      "imageUrl": "",
+      "authorName": "Sergii Levshchanov",
+      "authorAlias": "sadboy",
+      "authorAvatarUrl": "",
+      "location": "UA",
+      "lat": 49.4871968,
+      "lng": 31.2718321,
+      "tags": [
+        "ai-ml",
+        "monitoring-observability",
+        "amazon-cloudwatch",
+        "amazon-sagemaker-ai"
+      ],
+      "publishedAt": "2026-04-19T17:46:52.150Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CDn1F5HUfGQS3JXLHPMxpnwpTw",
       "title": "Amazon Aurora DSQL: A Practical Guide to AWS's Distributed SQL Database",
@@ -19,7 +84,7 @@
         "databases"
       ],
       "publishedAt": "2026-04-19T16:43:01.889Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -65,7 +130,7 @@
         "claude"
       ],
       "publishedAt": "2026-04-19T10:47:43.976Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 1
     },
     {
@@ -137,277 +202,6 @@
       "publishedAt": "2026-04-19T01:35:43.077Z",
       "likesCount": 3,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3CYR1t0KGAOQAxtSvtH2vq34pZF",
-      "title": "Building Is What Makes It Real",
-      "description": "At Cal Poly Pomona, I have built my foundation through coursework in data structures, algorithms, system programming, computer architecture, and object-oriented programming. But the moments that shaped me most came when I started applying what I learned outside the classroom.",
-      "url": "https://builder.aws.com/content/3CYR1t0KGAOQAxtSvtH2vq34pZF",
-      "imageUrl": "",
-      "authorName": "Jason Le",
-      "authorAlias": "jasonle248",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-builders",
-        "aws-community",
-        "saas",
-        "machine-learning",
-        "ai"
-      ],
-      "publishedAt": "2026-04-19T01:28:00.177Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CY7CaQVWzGNdApjV4IMGz4lPNZ",
-      "title": "AWS Tools to Know Before Your First Hackathon",
-      "description": "Before you sprint into your first hackathon, get hands-on with the three AWS services that can take your build from idea to working demo — fast. Based on real experience at the Colorado State University Hackathon.",
-      "url": "https://builder.aws.com/content/3CY7CaQVWzGNdApjV4IMGz4lPNZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY907whB2rFSKQlTkh1UvB5cL9/Hack.webp",
-      "authorName": "James Guadagnoli",
-      "authorAlias": "yimmybuilds",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYBfWfnzhTjXQ4xs2MrDcC1Kzh.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "hackathon",
-        "generative-ai",
-        "students",
-        "amazon-s3",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-04-18T23:01:40.461Z",
-      "likesCount": 2,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "title": "Our 10k AIdeas Finalists - vote by April 23!",
-      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
-      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 22,
-      "commentsCount": 5
-    },
-    {
-      "id": "/content/3CXqwlztKZ67fPUnRCPAzGEUwTE",
-      "title": "Your Degree Is The Gym - AWS Builder Center Is The Weights",
-      "description": "IT DevOps student and AWS Student Builder Campus Leader sharing how AWS Builder Center bridges the gap between a college degree and a real cloud career, one click at a time.\n\n",
-      "url": "https://builder.aws.com/content/3CXqwlztKZ67fPUnRCPAzGEUwTE",
-      "imageUrl": "",
-      "authorName": "Joaquin Porter Jr",
-      "authorAlias": "wakeensito",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36JjwzMQ5fToeZdKbz9nsZbQour.webp",
-      "location": "FL, US",
-      "lat": 27.7567667,
-      "lng": -81.4639835,
-      "tags": [
-        "students",
-        "ai",
-        "aws-skill-builder",
-        "devops",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-18T20:24:16.009Z",
-      "likesCount": 3,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/35cLFnKM6DJMgRzdZQ7XPZkJmoz",
-      "title": "Automate Reviews in GitHub Actions with Kiro Headless Mode",
-      "description": "A step-by-step guide to adding AI-powered infrastructure review to your CI/CD pipeline using Kiro CLI with read-only permissions. Includes a working GitHub Actions workflow and real results from an NVIDIA NIM on EKS deployment.",
-      "url": "https://builder.aws.com/content/35cLFnKM6DJMgRzdZQ7XPZkJmoz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CXlg292ArlrTCs9FAUxR1TyMwC/Scre.webp",
-      "authorName": "Keerthi",
-      "authorAlias": "keerthisreenivas7",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CXm2QtaWfUNncF2quG15feGi5k.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "ai",
-        "github",
-        "agentic-ai",
-        "agents"
-      ],
-      "publishedAt": "2026-04-18T19:18:45.606Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CXfIT2cJAvANtKutrztwVCFcJD",
-      "title": "Launching AWS Cloud Club at BSIOTR: From Exploration to Leadership 🚀",
-      "description": "The journey into cloud computing often starts with curiosity—but sometimes, it quickly turns into something much bigger.\n\nI’m excited to share that we have officially inaugurated the AWS Cloud Club at BSIOTR, marking the beginning of a new tech-driven community focused on learning, building, and growing together.\n\nAs part of the global AWS Cloud Clubs initiative, our goal is to empower students with cloud skills and real-world exposure to modern technologies.",
-      "url": "https://builder.aws.com/content/3CXfIT2cJAvANtKutrztwVCFcJD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CXh9Hx6vzsWsIHLlcGa81cxuMu/grou.webp",
-      "authorName": "Prasad Limbekar",
-      "authorAlias": "prasad14",
-      "authorAvatarUrl": "",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-cloud-clubs",
-        "community"
-      ],
-      "publishedAt": "2026-04-18T18:48:48.914Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CXORjRynZRsehEbZ2AoqMdctad",
-      "title": "La transportación cuántica y la radiación ionizante",
-      "description": "Transportar, crear, ionizar, descomponer, componer, integrar, calcular. ",
-      "url": "https://builder.aws.com/content/3CXORjRynZRsehEbZ2AoqMdctad",
-      "imageUrl": "",
-      "authorName": "Francisco Ibáñez",
-      "authorAlias": "franxixco619",
-      "authorAvatarUrl": "",
-      "location": "CL",
-      "lat": -31.7613365,
-      "lng": -71.3187697,
-      "tags": [
-        "agentic-ide",
-        "agent-hooks",
-        "ai"
-      ],
-      "publishedAt": "2026-04-18T16:09:43.092Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/38awDAJHBn8JeWSRu6dYFPTh1pw",
-      "title": "When CoreDNS Becomes the Bottleneck: A Stress-Testing Story on EKS with kube-burner",
-      "description": "A heavy upload/download workload on EKS exposed CoreDNS as the real bottleneck. This post shows how kube-burner helped stress-test DNS and plan capacity.",
-      "url": "https://builder.aws.com/content/38awDAJHBn8JeWSRu6dYFPTh1pw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CXDvEf73as2tzvWB8tdylehPEH/user.webp",
-      "authorName": "Aadhith",
-      "authorAlias": "aadhith",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AScvDhHFVpWD7edABksuXSLPBo.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "kubernetes",
-        "amazon-eks",
-        "load-testing"
-      ],
-      "publishedAt": "2026-04-18T14:52:23.046Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
-      "title": "AIdeas Finalist: CarbonZero",
-      "description": "AI-Powered Carbon Accounting & Gamified Compliance for African Businesses and Individuals. Built with Kiro and AWS, CarbonZero helps African SMEs and exporters track emissions, achieve EU CBAM compliance, and turn sustainability into a competitive advantage — now with the audit trails, carbon passports, and accounting sync to make it real.",
-      "url": "https://builder.aws.com/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CX9btdGulNLoahJOU5lbD7WoqB/02_i.webp",
-      "authorName": "Oluwasegun Adedigba",
-      "authorAlias": "cloudsege",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30Az8sg0UYREelhXEzrNbsPJ1eJ.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-18T14:21:47.039Z",
-      "likesCount": 7,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
-      "title": "The AWS Cloud Infrastructure: A Comprehensive Technical Analysis of Distributed Systems, Formal Verification, and Next-Generation Compute Architectures",
-      "description": "This analysis examines AWS infrastructure innovations: the Nitro System's secret-free hypervisors, S3's formally verified strong consistency, DynamoDB's distributed transactions, and Lambda SnapStart's 91% cold start reduction. AWS employs lightweight formal methods (TLA+/P), custom Graviton silicon with 63% better price-performance, and chaos engineering for resilience. These systems support millions of workloads across 33 regions through hardware-software co-design and continuous verification.",
-      "url": "https://builder.aws.com/content/3CX2EjZL7KJpe6vAM1oFb4aQkSX",
-      "imageUrl": "",
-      "authorName": "Alam Ahmed",
-      "authorAlias": "techghost",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2v8LJaJkEFjOnlBYzUZWzKHE4BH.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-18T13:14:41.067Z",
-      "likesCount": 3,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CWrqk8rQQVWbsgl35yYXVkDgRh",
-      "title": "From IAM to EC2: Building a Secure AWS Mini-Architecture with Billing Control and Access Governance",
-      "description": "Learning AWS becomes meaningful when you stop treating services as isolated tools and start seeing them as layers of a system: identity, compute, network, and cost governance working together.\nThis hands-on exercise builds a minimal but realistic AWS environment that reflects how cloud infrastructure is structured in production systems — with controlled access, monitored spending, and a deployed service running on EC2.",
-      "url": "https://builder.aws.com/content/3CWrqk8rQQVWbsgl35yYXVkDgRh",
-      "imageUrl": "",
-      "authorName": "Mustapha Abdullah",
-      "authorAlias": "chuabdul",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "bootcamp",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-04-18T12:02:59.871Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CWj1UnTpiL56D1g9FaUZ7vglNU",
-      "title": "From Spend Blindness to Cost Accountability: An Architect's Guide to Governing Amazon Bedrock at Scale",
-      "description": "A practical framework for platform engineers, cloud financial management teams, and AI governance leaders who need to turn Bedrock consumption into something the business can see, explain, and own.",
-      "url": "https://builder.aws.com/content/3CWj1UnTpiL56D1g9FaUZ7vglNU",
-      "imageUrl": "",
-      "authorName": "Mayinchen",
-      "authorAlias": "yincma",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31ttOyRTdxo3ybFpwh98vOoNY3o.webp",
-      "location": "Beijing, CN",
-      "lat": 39.9057136,
-      "lng": 116.3912972,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-bedrock-agents",
-        "GCR",
-        "aws-user-groups"
-      ],
-      "publishedAt": "2026-04-18T11:16:11.682Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CWgsWRB1mc1DABHUaGhcJ0Xv2h",
-      "title": "My First AWS Hands-On Project — EC2, IAM, Security & Billing\nAWS Cloud Club University of Ilorin Bootcamp 2026 | Week 3 | Team 11 — Trusted Roles",
-      "description": "When they handed us the assignment document, my first reaction was honest — where do I even start?\nThe tasks looked like a lot. EC2 instances, IAM users, groups, roles, policies, billing alerts, deploying a web page, validating permissions. All in one assignment.\nBut I made a decision. Stop staring at it. Start doing it.\nAnd that changed everything.",
-      "url": "https://builder.aws.com/content/3CWgsWRB1mc1DABHUaGhcJ0Xv2h",
-      "imageUrl": "",
-      "authorName": "Abiodun Olabisi",
-      "authorAlias": "abbeyboy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BXMBBcLM0G3BBhQyZiKWq1IA7G.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aws-academy",
-        "aws-educate"
-      ],
-      "publishedAt": "2026-04-18T10:11:42.553Z",
-      "likesCount": 3,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -429,8 +223,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 204,
-      "commentsCount": 135
+      "likesCount": 217,
+      "commentsCount": 136
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -451,8 +245,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 340,
-      "commentsCount": 129
+      "likesCount": 363,
+      "commentsCount": 134
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -489,8 +283,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 116,
-      "commentsCount": 50
+      "likesCount": 124,
+      "commentsCount": 53
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -511,7 +305,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 354,
+      "likesCount": 355,
       "commentsCount": 11
     },
     {
@@ -532,7 +326,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 74,
+      "likesCount": 75,
       "commentsCount": 20
     },
     {
@@ -555,8 +349,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 105,
-      "commentsCount": 40
+      "likesCount": 112,
+      "commentsCount": 41
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -578,8 +372,25 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 318,
-      "commentsCount": 102
+      "likesCount": 322,
+      "commentsCount": 103
+    },
+    {
+      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
+      "title": "Our 10k AIdeas Finalists - vote by April 23!",
+      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
+      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-04-18T22:01:26.448Z",
+      "likesCount": 23,
+      "commentsCount": 6
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -603,23 +414,6 @@
       "publishedAt": "2026-04-18T01:59:16.140Z",
       "likesCount": 22,
       "commentsCount": 25
-    },
-    {
-      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "title": "Our 10k AIdeas Finalists - vote by April 23!",
-      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
-      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 22,
-      "commentsCount": 5
     }
   ]
 }
