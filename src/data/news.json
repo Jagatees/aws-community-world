@@ -1,6 +1,49 @@
 {
-  "updatedAt": "2026-04-19T22:09:15.335Z",
+  "updatedAt": "2026-04-19T23:11:40.248Z",
   "latest": [
+    {
+      "id": "/content/3Cb2dycE4irVQ2ILN5f7irmERIK",
+      "title": "ランタイム EOL 前に全リージョンの Lambda 関数を棚卸しする npm製 CLI lambda-function-search を作りました",
+      "description": "ランタイム更新が必要なLambda関数のリストアップをコマンド１つで実現したい。それを実現するためのnpmから利用できるCLIを公開しています。",
+      "url": "https://builder.aws.com/content/3Cb2dycE4irVQ2ILN5f7irmERIK",
+      "imageUrl": "",
+      "authorName": "Hidetaka Okamoto",
+      "authorAlias": "hidetaka",
+      "authorAvatarUrl": "",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "open-source",
+        "aws-lambda",
+        "developer-productivity",
+        "developer-tools"
+      ],
+      "publishedAt": "2026-04-19T23:09:28.781Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Caz6oPXeOvuLDUanO3qH3ZfgxG",
+      "title": "Agentic Patterns: Elements of Reusable Context-Oriented Determinism",
+      "description": "While not as exhaustive as the title might indicate but aligned with my focus on enforcing as much determinism as possible from any given LLM ala Article let's take a look at exploiting tool using LLMs as a process instead of as a conversation. As I posed in the linked article much of the failures we experience are related to attention and confusion which is the progressive noise we introduce as we try to convince the model to perform an action.",
+      "url": "https://builder.aws.com/content/3Caz6oPXeOvuLDUanO3qH3ZfgxG",
+      "imageUrl": "",
+      "authorName": "Paul Scarrone",
+      "authorAlias": "paulscoder",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqrcoLi9C5eZgDNU4SGefvBnev.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "agentic-interactions",
+        "software-engineering"
+      ],
+      "publishedAt": "2026-04-19T22:40:33.007Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CasY209TquJ1u1WKxt06UycRVx",
       "title": "5 AWS Services that every College Student needs to Hear About",
@@ -38,7 +81,7 @@
       "lng": 78.6677428,
       "tags": [],
       "publishedAt": "2026-04-19T19:37:11.772Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -163,50 +206,6 @@
       "publishedAt": "2026-04-19T17:46:52.150Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CDn1F5HUfGQS3JXLHPMxpnwpTw",
-      "title": "Amazon Aurora DSQL: A Practical Guide to AWS's Distributed SQL Database",
-      "description": "Discover why Aurora DSQL, AWS's serverless SQL database, is a game-changer. Learn its features, setup, and real-world applications.",
-      "url": "https://builder.aws.com/content/3CDn1F5HUfGQS3JXLHPMxpnwpTw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CaHWp6h7p9IKHkWpXo8GdeZs8S/dsql.webp",
-      "authorName": "Darryl Ruggles",
-      "authorAlias": "darrylr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32xvtRCXz0BUNb5YZMIdzX1KHT8.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "amazon-aurora",
-        "postgresql",
-        "databases"
-      ],
-      "publishedAt": "2026-04-19T16:43:01.889Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CaDNZUQvcArwzibowrf3TB1vWc",
-      "title": "AWS Community Day Bay Area 2026 (Security Edition): Session Recordings and Key Takeaways",
-      "description": "A full-day recap of the sessions, speakers, and security patterns every AWS builder should know heading into 2026.",
-      "url": "https://builder.aws.com/content/3CaDNZUQvcArwzibowrf3TB1vWc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CaDhqEhDgNHKsz3arsEZSLgBD3/2026-.webp",
-      "authorName": "Shravanth",
-      "authorAlias": "shravanthv",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CaEa3U92vIrV6OA1KyKtnwZIIy.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai-security",
-        "amazon-bedrock",
-        "aws-community-day-recaps-2026",
-        "aws-community-day-2026",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-04-19T16:10:24.828Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -229,8 +228,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 452,
-      "commentsCount": 148
+      "likesCount": 458,
+      "commentsCount": 149
     },
     {
       "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
@@ -250,7 +249,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 220,
+      "likesCount": 221,
       "commentsCount": 137
     },
     {
@@ -288,8 +287,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 143,
-      "commentsCount": 65
+      "likesCount": 145,
+      "commentsCount": 66
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -314,27 +313,6 @@
       "commentsCount": 11
     },
     {
-      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
-      "title": "AIdeas Finalist: RetainIQ",
-      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
-      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
-      "authorName": "Samyak Jain",
-      "authorAlias": "samyakj05",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aideas-2025",
-        "workplace-efficiency",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 79,
-      "commentsCount": 21
-    },
-    {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
       "title": "AIdeas Finalist: CareLens AI — Transparent Care Guidance When It Matters Most.",
       "description": "CareLens is a privacy-first AI platform that helps people understand healthcare costs before seeking treatment. By analyzing de-identified symptoms, location, and optional insurance details, it compares care options like ER, urgent care, or specialists and surfaces real-world price ranges using hospital transparency and CMS data. It doesn’t diagnose—it delivers clear, grounded cost, bill analyzing and care guidance so users can make confident decisions without surprise bills.",
@@ -354,8 +332,29 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 124,
-      "commentsCount": 43
+      "likesCount": 127,
+      "commentsCount": 45
+    },
+    {
+      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "title": "AIdeas Finalist: RetainIQ",
+      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
+      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
+      "authorName": "Samyak Jain",
+      "authorAlias": "samyakj05",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T20:29:28.119Z",
+      "likesCount": 79,
+      "commentsCount": 21
     },
     {
       "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
@@ -398,25 +397,27 @@
       "commentsCount": 103
     },
     {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
+      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
+      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
+      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
+      "authorName": "Sivadharshan V",
+      "authorAlias": "sivadharshan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
         "aideas-2025",
-        "social-impact",
-        "APJC"
+        "commercial-solutions",
+        "APJC",
+        "amazon-nova",
+        "serverless"
       ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 336,
-      "commentsCount": 57
+      "publishedAt": "2026-04-18T01:59:16.140Z",
+      "likesCount": 23,
+      "commentsCount": 28
     }
   ]
 }
