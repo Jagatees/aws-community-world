@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19T06:35:03.825Z",
+  "updatedAt": "2026-04-19T07:31:40.824Z",
   "latest": [
     {
       "id": "/content/3CT6HxvEyJ1r390LgbEH7LQbuLY",
@@ -430,7 +430,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 179,
+      "likesCount": 181,
       "commentsCount": 128
     },
     {
@@ -469,8 +469,29 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 262,
-      "commentsCount": 97
+      "likesCount": 271,
+      "commentsCount": 101
+    },
+    {
+      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
+      "title": "AIdeas Finalist: Perspective",
+      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
+      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
+      "authorName": "Alwoch Sophia",
+      "authorAlias": "salwoch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
+      "location": "UG",
+      "lat": 1.5333554,
+      "lng": 32.2166578,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T23:31:03.702Z",
+      "likesCount": 72,
+      "commentsCount": 27
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -495,27 +516,6 @@
       "commentsCount": 11
     },
     {
-      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "title": "AIdeas Finalist: Perspective",
-      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
-      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
-      "authorName": "Alwoch Sophia",
-      "authorAlias": "salwoch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
-      "location": "UG",
-      "lat": 1.5333554,
-      "lng": 32.2166578,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 67,
-      "commentsCount": 24
-    },
-    {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
       "title": "AIdeas Finalist: RetainIQ",
       "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
@@ -533,7 +533,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 63,
+      "likesCount": 66,
       "commentsCount": 18
     },
     {
@@ -573,7 +573,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 74,
+      "likesCount": 78,
       "commentsCount": 26
     },
     {
@@ -596,7 +596,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 243,
+      "likesCount": 245,
       "commentsCount": 76
     },
     {
