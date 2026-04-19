@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-19T10:14:50.639Z",
+  "updatedAt": "2026-04-19T11:13:47.955Z",
   "latest": [
+    {
+      "id": "/content/3CZN188YsxcrfF7GNYHdhcSAGiA",
+      "title": "Connect Any MCP Client to Your Bedrock AgentCore Runtime hosted MCP Server",
+      "description": "MCP servers hosted on Bedrock AgentCore Runtime require AWS IAM SigV4 signing, but MCP clients like Kiro IDE, Claude Desktop, Cursor, and Cline don't support it natively. This tutorial walks through setting up mcp-proxy-for-aws — a lightweight local bridge that handles SigV4 automatically. Covers three install options (pip, uvx, Docker), client-specific JSON configs and proxy tuning parameters.",
+      "url": "https://builder.aws.com/content/3CZN188YsxcrfF7GNYHdhcSAGiA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CZXEk4tzHPH4NZvDVkftIXS4uP/arti.webp",
+      "authorName": "Ayush_S",
+      "authorAlias": "ayushsh11",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYtHlZQQVLT8Y1pp67ZOzIYAjy.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "amazon-bedrock-agentcore",
+        "ai-dlc",
+        "mcp-server",
+        "claude"
+      ],
+      "publishedAt": "2026-04-19T10:47:43.976Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CZMKX3eKD28mk4dJRjEvvXQNKr",
       "title": "开源 1M+ RLHF 数据集：构建基于双子星协议 (Double Star) 的大模型存在主义安全对齐架构",
@@ -384,29 +407,6 @@
       "publishedAt": "2026-04-18T07:06:11.828Z",
       "likesCount": 2,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3CWIOKJRvyPy8qouSSD7FnCeQja",
-      "title": "Deploying a Secure Ubuntu EC2 Web Server with IAM, Billing Alerts, and Access Control on AWS",
-      "description": "As part of my AWS Cloud Club Unilorin Bootcamp 2026 lab, I completed a practical cloud deployment that combined core AWS foundations with hands-on implementation. The project covered billing control, IAM administration, EC2 provisioning, security group configuration, role-based access, and web server deployment on an Ubuntu instance.",
-      "url": "https://builder.aws.com/content/3CWIOKJRvyPy8qouSSD7FnCeQja",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWJRTlnXWhFDvxsBtAU7IjUbDG/imag.webp",
-      "authorName": "Temitope Olawole",
-      "authorAlias": "temmytee",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-ec2",
-        "ubuntu",
-        "aws-cloud-clubs",
-        "iam",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-18T07:03:38.670Z",
-      "likesCount": 3,
-      "commentsCount": 3
     }
   ],
   "trending": [
@@ -428,7 +428,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 185,
+      "likesCount": 188,
       "commentsCount": 130
     },
     {
@@ -450,7 +450,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 293,
+      "likesCount": 301,
       "commentsCount": 117
     },
     {
@@ -488,8 +488,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 92,
-      "commentsCount": 42
+      "likesCount": 94,
+      "commentsCount": 43
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -531,7 +531,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 66,
+      "likesCount": 67,
       "commentsCount": 18
     },
     {
@@ -550,6 +550,29 @@
       "publishedAt": "2026-04-18T22:01:26.448Z",
       "likesCount": 20,
       "commentsCount": 5
+    },
+    {
+      "id": "/content/3CZN188YsxcrfF7GNYHdhcSAGiA",
+      "title": "Connect Any MCP Client to Your Bedrock AgentCore Runtime hosted MCP Server",
+      "description": "MCP servers hosted on Bedrock AgentCore Runtime require AWS IAM SigV4 signing, but MCP clients like Kiro IDE, Claude Desktop, Cursor, and Cline don't support it natively. This tutorial walks through setting up mcp-proxy-for-aws — a lightweight local bridge that handles SigV4 automatically. Covers three install options (pip, uvx, Docker), client-specific JSON configs and proxy tuning parameters.",
+      "url": "https://builder.aws.com/content/3CZN188YsxcrfF7GNYHdhcSAGiA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CZXEk4tzHPH4NZvDVkftIXS4uP/arti.webp",
+      "authorName": "Ayush_S",
+      "authorAlias": "ayushsh11",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYtHlZQQVLT8Y1pp67ZOzIYAjy.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "amazon-bedrock-agentcore",
+        "ai-dlc",
+        "mcp-server",
+        "claude"
+      ],
+      "publishedAt": "2026-04-19T10:47:43.976Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -571,7 +594,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 86,
+      "likesCount": 87,
       "commentsCount": 34
     },
     {
@@ -594,29 +617,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 253,
-      "commentsCount": 78
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 177,
-      "commentsCount": 90
+      "likesCount": 256,
+      "commentsCount": 81
     }
   ]
 }
