@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-04-19T16:11:25.429Z",
+  "updatedAt": "2026-04-19T17:13:06.328Z",
   "latest": [
+    {
+      "id": "/content/3CDn1F5HUfGQS3JXLHPMxpnwpTw",
+      "title": "Amazon Aurora DSQL: A Practical Guide to AWS's Distributed SQL Database",
+      "description": "Discover why Aurora DSQL, AWS's serverless SQL database, is a game-changer. Learn its features, setup, and real-world applications.",
+      "url": "https://builder.aws.com/content/3CDn1F5HUfGQS3JXLHPMxpnwpTw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CaHWp6h7p9IKHkWpXo8GdeZs8S/dsql.webp",
+      "authorName": "Darryl Ruggles",
+      "authorAlias": "darrylr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32xvtRCXz0BUNb5YZMIdzX1KHT8.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "amazon-aurora",
+        "postgresql",
+        "databases"
+      ],
+      "publishedAt": "2026-04-19T16:43:01.889Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CaDNZUQvcArwzibowrf3TB1vWc",
       "title": "AWS Community Day Bay Area 2026 (Security Edition): Session Recordings and Key Takeaways",
@@ -9,7 +30,7 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CaDhqEhDgNHKsz3arsEZSLgBD3/2026-.webp",
       "authorName": "Shravanth",
       "authorAlias": "shravanthv",
-      "authorAvatarUrl": "",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CaEa3U92vIrV6OA1KyKtnwZIIy.webp",
       "location": "US",
       "lat": 39.7837304,
       "lng": -100.445882,
@@ -387,29 +408,6 @@
       "publishedAt": "2026-04-18T10:11:42.553Z",
       "likesCount": 3,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3CGkJamPUqkR4pqgCQcFHSNKOFs",
-      "title": "RDS vs DynamoDB: How to Think About Data in the Cloud",
-      "description": "RDS and DynamoDB solve different problems. Learn the mental model for choosing between them based on your data and access patterns.",
-      "url": "https://builder.aws.com/content/3CGkJamPUqkR4pqgCQcFHSNKOFs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWLa9xwHMin2KFqQOAn0eY5coy/cove.webp",
-      "authorName": "Rashindu Tharinda",
-      "authorAlias": "rash522",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAXrueNTFAH8WtVtH75cydfLaF.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "amazon-rds",
-        "amazon-dynamodb",
-        "databases",
-        "aws-educate",
-        "amazon-aurora"
-      ],
-      "publishedAt": "2026-04-18T07:15:08.268Z",
-      "likesCount": 2,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -431,8 +429,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 202,
-      "commentsCount": 132
+      "likesCount": 204,
+      "commentsCount": 135
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -453,8 +451,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 337,
-      "commentsCount": 126
+      "likesCount": 340,
+      "commentsCount": 129
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -491,8 +489,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 107,
-      "commentsCount": 48
+      "likesCount": 116,
+      "commentsCount": 50
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -534,8 +532,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 70,
-      "commentsCount": 19
+      "likesCount": 74,
+      "commentsCount": 20
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -557,7 +555,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 99,
+      "likesCount": 105,
       "commentsCount": 40
     },
     {
@@ -580,25 +578,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 313,
-      "commentsCount": 101
-    },
-    {
-      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "title": "Our 10k AIdeas Finalists - vote by April 23!",
-      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
-      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 22,
-      "commentsCount": 5
+      "likesCount": 318,
+      "commentsCount": 102
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -622,6 +603,23 @@
       "publishedAt": "2026-04-18T01:59:16.140Z",
       "likesCount": 22,
       "commentsCount": 25
+    },
+    {
+      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
+      "title": "Our 10k AIdeas Finalists - vote by April 23!",
+      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
+      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-04-18T22:01:26.448Z",
+      "likesCount": 22,
+      "commentsCount": 5
     }
   ]
 }
