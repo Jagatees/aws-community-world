@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-19T21:11:04.894Z",
+  "updatedAt": "2026-04-19T22:09:15.335Z",
   "latest": [
+    {
+      "id": "/content/3CasY209TquJ1u1WKxt06UycRVx",
+      "title": "5 AWS Services that every College Student needs to Hear About",
+      "description": "A quick guide highlighting five essential AWS services every college student should know. This article breaks down how these tools can be used to build projects, develop real-world tech skills, and get hands-on experience with cloud computing—without needing advanced knowledge to get started.",
+      "url": "https://builder.aws.com/content/3CasY209TquJ1u1WKxt06UycRVx",
+      "imageUrl": "",
+      "authorName": "Jackson Wiseman",
+      "authorAlias": "jwise",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "amazon-cloudfront",
+        "aws-lambda",
+        "students",
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-04-19T21:52:51.693Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CaY3B4u9KSOHUbmIY8Kt4WG5oi",
       "title": "Kiro for Logging: Generating Structured Logging Code",
@@ -184,29 +207,6 @@
       "publishedAt": "2026-04-19T16:10:24.828Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CZN188YsxcrfF7GNYHdhcSAGiA",
-      "title": "Connect Any MCP Client to Your Bedrock AgentCore Runtime hosted MCP Server",
-      "description": "MCP servers hosted on Bedrock AgentCore Runtime require AWS IAM SigV4 signing, but MCP clients like Kiro IDE, Claude Desktop, Cursor, and Cline don't support it natively. This tutorial walks through setting up mcp-proxy-for-aws — a lightweight local bridge that handles SigV4 automatically. Covers three install options (pip, uvx, Docker), client-specific JSON configs and proxy tuning parameters.",
-      "url": "https://builder.aws.com/content/3CZN188YsxcrfF7GNYHdhcSAGiA",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CZXEk4tzHPH4NZvDVkftIXS4uP/arti.webp",
-      "authorName": "Ayush_S",
-      "authorAlias": "ayushsh11",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYtHlZQQVLT8Y1pp67ZOzIYAjy.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro",
-        "amazon-bedrock-agentcore",
-        "ai-dlc",
-        "mcp-server",
-        "claude"
-      ],
-      "publishedAt": "2026-04-19T10:47:43.976Z",
-      "likesCount": 2,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -229,8 +229,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 442,
-      "commentsCount": 143
+      "likesCount": 452,
+      "commentsCount": 148
     },
     {
       "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
@@ -250,8 +250,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 219,
-      "commentsCount": 136
+      "likesCount": 220,
+      "commentsCount": 137
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -354,8 +354,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 119,
-      "commentsCount": 42
+      "likesCount": 124,
+      "commentsCount": 43
     },
     {
       "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
@@ -372,7 +372,7 @@
       "tags": [],
       "publishedAt": "2026-04-18T22:01:26.448Z",
       "likesCount": 23,
-      "commentsCount": 12
+      "commentsCount": 13
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -415,7 +415,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 335,
+      "likesCount": 336,
       "commentsCount": 57
     }
   ]
