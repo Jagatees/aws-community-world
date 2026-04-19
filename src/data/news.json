@@ -1,6 +1,40 @@
 {
-  "updatedAt": "2026-04-19T03:04:43.626Z",
+  "updatedAt": "2026-04-19T05:00:45.919Z",
   "latest": [
+    {
+      "id": "/content/3CT6HxvEyJ1r390LgbEH7LQbuLY",
+      "title": "Unlocking the AWS Builder Center",
+      "description": "Your New Home for Cloud Innovation",
+      "url": "https://builder.aws.com/content/3CT6HxvEyJ1r390LgbEH7LQbuLY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CYnQ6kikt9CjP2mHN3FATkCjQ4/image.webp",
+      "authorName": "Ignacia Heyer",
+      "authorAlias": "yova",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-19T04:04:21.911Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3CYipUfMK1VmsBVKZtFPR2fAO90",
+      "title": "How I Passed the AWS AI Practitioner Exam in 10 Days Using AWS Skill Builder",
+      "description": "Last summer, I booked the AWS AI Practitioner exam and gave myself 10 days to learn everything from scratch - zero AI background, just a goal and a deadline. Internship season was coming up and I wanted something concrete on my resume.\nHere's exactly how I did it.",
+      "url": "https://builder.aws.com/content/3CYipUfMK1VmsBVKZtFPR2fAO90",
+      "imageUrl": "",
+      "authorName": "R MZ",
+      "authorAlias": "rzzz",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-19T03:28:57.268Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CYVAeUZQ8kaWbvzECyvAr9D5GY",
       "title": "From Learning to Building: My First AWS Project as a Student",
@@ -15,7 +49,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-19T01:35:43.077Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -78,8 +112,8 @@
       "lng": -120.737257,
       "tags": [],
       "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 13,
-      "commentsCount": 0
+      "likesCount": 17,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CXqwlztKZ67fPUnRCPAzGEUwTE",
@@ -124,7 +158,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-18T19:18:45.606Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 1
     },
     {
@@ -375,48 +409,6 @@
       "publishedAt": "2026-04-18T07:01:02.978Z",
       "likesCount": 12,
       "commentsCount": 11
-    },
-    {
-      "id": "/content/3CW9vQDM0MUqt8o84A2lTt1IUwD",
-      "title": "AIdeas Finalist: Rakshak",
-      "description": "Rakshak (\"protector\" in Sanskrit) predicts women's safety risk in Indian cities before it happens, then connects that intelligence to police action.\n\n**Unlike reactive SOS apps** (Nirbhaya, Himmat+), Rakshak's Random Forest model (17 Chennai-specific features) scores your location's risk live via AWS SageMaker. The SHO dashboard + Patrol Route Optimizer deploys units to 44 high-risk zones. After 8 PM, proactive Wellness Checks alert stationary users in danger zones.",
-      "url": "https://builder.aws.com/content/3CW9vQDM0MUqt8o84A2lTt1IUwD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWAfwyMWJeyJoFkz589uIAiXzh/unna.webp",
-      "authorName": "Vishal Ganesan",
-      "authorAlias": "vishakg06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AvEP63A5JcgdesuQh9YRr3Qqey.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "APJC",
-        "aideas-2025",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-18T07:00:07.517Z",
-      "likesCount": 4,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3AxfdqajqyADeFBaQtROLen1DcG",
-      "title": "AIdeas Finalist - Diverge — AI-Powered Decision Intelligence",
-      "description": "Diverge takes a life decision you are stuck on and runs it through a structured AI debate. You type something like \"Stay at my job vs. take the offer\" or \"Stay in Boston vs. move to Austin.\" The app spawns two agents, each one representing your future self on one side of that choice. They argue it out across five rounds while pulling from Monte Carlo financial simulations, real salary data, and cost-of-living numbers.",
-      "url": "https://builder.aws.com/content/3AxfdqajqyADeFBaQtROLen1DcG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWJbWjQNpJ6eY6KsJnAOaz5hOY/Dive.webp",
-      "authorName": "Roshan Shetty",
-      "authorAlias": "roshanshetty271",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ATTlwXU2xR4IobdSP7Caqi8D5N.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "NAMER",
-        "aideas-2025",
-        "daily-life-enhancement"
-      ],
-      "publishedAt": "2026-04-18T06:59:05.013Z",
-      "likesCount": 13,
-      "commentsCount": 7
     }
   ],
   "trending": [
@@ -438,8 +430,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 167,
-      "commentsCount": 124
+      "likesCount": 171,
+      "commentsCount": 125
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -477,8 +469,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 242,
-      "commentsCount": 89
+      "likesCount": 251,
+      "commentsCount": 90
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -520,8 +512,25 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 60,
-      "commentsCount": 20
+      "likesCount": 63,
+      "commentsCount": 22
+    },
+    {
+      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
+      "title": "Our 10k AIdeas Finalists - vote by April 23!",
+      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
+      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-04-18T22:01:26.448Z",
+      "likesCount": 17,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -541,25 +550,25 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 60,
-      "commentsCount": 16
+      "likesCount": 62,
+      "commentsCount": 18
     },
     {
-      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "title": "Our 10k AIdeas Finalists - vote by April 23!",
-      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
-      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
+      "id": "/content/3CT6HxvEyJ1r390LgbEH7LQbuLY",
+      "title": "Unlocking the AWS Builder Center",
+      "description": "Your New Home for Cloud Innovation",
+      "url": "https://builder.aws.com/content/3CT6HxvEyJ1r390LgbEH7LQbuLY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CYnQ6kikt9CjP2mHN3FATkCjQ4/image.webp",
+      "authorName": "Ignacia Heyer",
+      "authorAlias": "yova",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [],
-      "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 13,
-      "commentsCount": 0
+      "publishedAt": "2026-04-19T04:04:21.911Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -581,29 +590,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 229,
-      "commentsCount": 66
-    },
-    {
-      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "title": "AIdeas Finalist: Mornist",
-      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
-      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
-      "authorName": "Noa Dev",
-      "authorAlias": "nurmyrat",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
-      "location": "GE",
-      "lat": 41.6808672,
-      "lng": 44.0287806,
-      "tags": [
-        "EMEA",
-        "aideas-2025",
-        "daily-life-enhancement"
-      ],
-      "publishedAt": "2026-04-18T07:01:02.978Z",
-      "likesCount": 12,
-      "commentsCount": 11
+      "likesCount": 237,
+      "commentsCount": 75
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -625,8 +613,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 61,
-      "commentsCount": 21
+      "likesCount": 62,
+      "commentsCount": 22
     }
   ]
 }
