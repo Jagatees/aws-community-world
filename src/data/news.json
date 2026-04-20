@@ -1,6 +1,92 @@
 {
-  "updatedAt": "2026-04-20T01:34:46.281Z",
+  "updatedAt": "2026-04-20T03:04:51.489Z",
   "latest": [
+    {
+      "id": "/content/3BXjc3sQjkRXhHL9wnGoJ4wXymZ",
+      "title": "Gotta Store 'Em All: Building a Pokédex on AWS with S3, DynamoDB, and Python",
+      "description": "A proof of concept that's surprisingly cheap and hilarious",
+      "url": "https://builder.aws.com/content/3BXjc3sQjkRXhHL9wnGoJ4wXymZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CbSBBdscKyFF5etg92ZDmihlAy/Unti.webp",
+      "authorName": "Adan Rojas Rojas",
+      "authorAlias": "adanrojas",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ah5UYskH1WnVenDEy7f7Ux5no2.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-s3",
+        "amazon-dynamodb",
+        "builder-center",
+        "python"
+      ],
+      "publishedAt": "2026-04-20T02:38:42.953Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CbPmneT1nB4KXJpTa53MsTy8LF",
+      "title": "在 AWS EC2 上部署 OpenClaw - 开发者实战手记",
+      "description": "OpenClaw 是一个可以部署在你自己基础设施上的私人 AI 助手。本文记录了在 AWS EC2 上部署 OpenClaw 的完整过程：使用一个 CloudFormation 模板，约 15 分钟即可完成部署，并通过 Amazon Bedrock 接入 Claude Opus 4.6 等最新模型。美国区域可一键部署；其他区域需要额外几步配置调整，本文会带你走完全程。",
+      "url": "https://builder.aws.com/content/3CbPmneT1nB4KXJpTa53MsTy8LF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CbPtS6FGZf13UQ8aIiwgaKZRUP/Cyber.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
+      "tags": [
+        "agents",
+        "ai-agents",
+        "agentic-ai",
+        "claude",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-20T02:23:16.460Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CbLOMnkPLbbFmdxmoztWPZprj9",
+      "title": "The Fastest-Growing Data Problem in the World Might Be DNA",
+      "description": "Biology is a computer science problem",
+      "url": "https://builder.aws.com/content/3CbLOMnkPLbbFmdxmoztWPZprj9",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CbLqzqo1FE3AavRtZG2p7tgHpU/360_F.webp",
+      "authorName": "Summer Malik",
+      "authorAlias": "summerm",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students",
+        "data"
+      ],
+      "publishedAt": "2026-04-20T01:47:33.649Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CXOVWhy1k4erDLCgT44I2qTtUu",
+      "title": "Remote MCP with API Gateway + AgentCore Gateway for Multi-Tenant SaaS",
+      "description": "Turn your existing authenticated REST APIs into a secure, multi-tenant remote MCP server using Amazon Bedrock AgentCore Gateway - so IDE clients connect with just a URL",
+      "url": "https://builder.aws.com/content/3CXOVWhy1k4erDLCgT44I2qTtUu",
+      "imageUrl": "",
+      "authorName": "Lester",
+      "authorAlias": "lestersim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BpB9KSx0bxSSYJzyt8ZStvvk73.webp",
+      "location": "SG",
+      "lat": 1.357107,
+      "lng": 103.8194992,
+      "tags": [
+        "mcp",
+        "saas",
+        "amazon-bedrock-agentcore"
+      ],
+      "publishedAt": "2026-04-20T01:45:19.153Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CbDU1duPkIAL2iKoBwD8Tg7iPh",
       "title": "What F1 Taught Me About Data - And How AWS Skill Builder Helped Me Go Deeper  🏎️",
@@ -179,8 +265,8 @@
         "marketplace"
       ],
       "publishedAt": "2026-04-19T18:44:44.823Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CaRhVNIc5KbIdgdnqPNhZIk4a5",
@@ -204,6 +290,115 @@
       "publishedAt": "2026-04-19T18:09:38.802Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3CaPBym9yzsyJE9Y2ZDMok7LmlE",
+      "title": "Looking to build your resume/portfolio? Here's 3 cool project ideas that uses AWS!",
+      "description": "Starter ideas on projects utilizing AWS EC2, SQS, S3, and DynamoDB, and how to build them.",
+      "url": "https://builder.aws.com/content/3CaPBym9yzsyJE9Y2ZDMok7LmlE",
+      "imageUrl": "",
+      "authorName": "Jaden Seangmany",
+      "authorAlias": "jadenseangmany",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bg63yPyoYjPTWyWmMqicOHzbIU.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "diy-project",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-04-19T17:48:43.610Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CaMO38ZEvZe7aVBibNx5JIULEF",
+      "title": "What is Observability in the context of MLOps",
+      "description": "This article provides information about how is Observability important in the context of MLOps",
+      "url": "https://builder.aws.com/content/3CaMO38ZEvZe7aVBibNx5JIULEF",
+      "imageUrl": "",
+      "authorName": "Sergii Levshchanov",
+      "authorAlias": "sadboy",
+      "authorAvatarUrl": "",
+      "location": "UA",
+      "lat": 49.4871968,
+      "lng": 31.2718321,
+      "tags": [
+        "ai-ml",
+        "monitoring-observability",
+        "amazon-cloudwatch",
+        "amazon-sagemaker-ai"
+      ],
+      "publishedAt": "2026-04-19T17:46:52.150Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CDn1F5HUfGQS3JXLHPMxpnwpTw",
+      "title": "Amazon Aurora DSQL: A Practical Guide to AWS's Distributed SQL Database",
+      "description": "Discover why Aurora DSQL, AWS's serverless SQL database, is a game-changer. Learn its features, setup, and real-world applications.",
+      "url": "https://builder.aws.com/content/3CDn1F5HUfGQS3JXLHPMxpnwpTw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CaHWp6h7p9IKHkWpXo8GdeZs8S/dsql.webp",
+      "authorName": "Darryl Ruggles",
+      "authorAlias": "darrylr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32xvtRCXz0BUNb5YZMIdzX1KHT8.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "amazon-aurora",
+        "postgresql",
+        "databases"
+      ],
+      "publishedAt": "2026-04-19T16:43:01.889Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CaDNZUQvcArwzibowrf3TB1vWc",
+      "title": "AWS Community Day Bay Area 2026 (Security Edition): Session Recordings and Key Takeaways",
+      "description": "A full-day recap of the sessions, speakers, and security patterns every AWS builder should know heading into 2026.",
+      "url": "https://builder.aws.com/content/3CaDNZUQvcArwzibowrf3TB1vWc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CaDhqEhDgNHKsz3arsEZSLgBD3/2026-.webp",
+      "authorName": "Shravanth",
+      "authorAlias": "shravanthv",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CaEa3U92vIrV6OA1KyKtnwZIIy.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai-security",
+        "amazon-bedrock",
+        "aws-community-day-recaps-2026",
+        "aws-community-day-2026",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-04-19T16:10:24.828Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CZN188YsxcrfF7GNYHdhcSAGiA",
+      "title": "Connect Any MCP Client to Your Bedrock AgentCore Runtime hosted MCP Server",
+      "description": "MCP servers hosted on Bedrock AgentCore Runtime require AWS IAM SigV4 signing, but MCP clients like Kiro IDE, Claude Desktop, Cursor, and Cline don't support it natively. This tutorial walks through setting up mcp-proxy-for-aws — a lightweight local bridge that handles SigV4 automatically. Covers three install options (pip, uvx, Docker), client-specific JSON configs and proxy tuning parameters.",
+      "url": "https://builder.aws.com/content/3CZN188YsxcrfF7GNYHdhcSAGiA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CZXEk4tzHPH4NZvDVkftIXS4uP/arti.webp",
+      "authorName": "Ayush_S",
+      "authorAlias": "ayushsh11",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYtHlZQQVLT8Y1pp67ZOzIYAjy.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "amazon-bedrock-agentcore",
+        "ai-dlc",
+        "mcp-server",
+        "claude"
+      ],
+      "publishedAt": "2026-04-19T10:47:43.976Z",
+      "likesCount": 2,
+      "commentsCount": 1
     }
   ],
   "trending": [
@@ -226,8 +421,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 469,
-      "commentsCount": 151
+      "likesCount": 483,
+      "commentsCount": 154
     },
     {
       "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
@@ -247,7 +442,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 223,
+      "likesCount": 224,
       "commentsCount": 137
     },
     {
@@ -330,7 +525,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 130,
+      "likesCount": 131,
       "commentsCount": 47
     },
     {
@@ -351,7 +546,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 79,
+      "likesCount": 81,
       "commentsCount": 21
     },
     {
@@ -368,8 +563,31 @@
       "lng": -120.737257,
       "tags": [],
       "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 23,
+      "likesCount": 24,
       "commentsCount": 13
+    },
+    {
+      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
+      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
+      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
+      "authorName": "Sivadharshan V",
+      "authorAlias": "sivadharshan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "amazon-nova",
+        "serverless"
+      ],
+      "publishedAt": "2026-04-18T01:59:16.140Z",
+      "likesCount": 25,
+      "commentsCount": 29
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -395,27 +613,195 @@
       "commentsCount": 103
     },
     {
-      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
-      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
-      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
-      "authorName": "Sivadharshan V",
-      "authorAlias": "sivadharshan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
         "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "amazon-nova",
-        "serverless"
+        "social-impact",
+        "APJC"
       ],
-      "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 24,
-      "commentsCount": 28
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 341,
+      "commentsCount": 57
+    },
+    {
+      "id": "/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "title": "AIdeas Finalist: LuminaLog — Privacy-First Observability",
+      "description": "LuminaLog is a serverless, privacy-first observability platform. It features SmartScrub™, a Kinesis-driven engine that replaces PII with realistic synthetic data before storage, preserving both data privacy and debuggability. Combined with real-time WebSocket live tailing and automated Gemini 2.5 Flash error analysis, it gives startups in regulated markets enterprise-grade compliance and insights without the enterprise price tag.",
+      "url": "https://builder.aws.com/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTmJ8Z5NxG2NmFXBrlPTyekL9c/Gemi.webp",
+      "authorName": "Moses Michael Idiong",
+      "authorAlias": "mozman777",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AZKAiQY35hpsBxlLeu4LVQ2w6i.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aideas-2025",
+        "EMEA",
+        "commercial-solutions"
+      ],
+      "publishedAt": "2026-04-17T20:29:18.574Z",
+      "likesCount": 191,
+      "commentsCount": 160
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 246,
+      "commentsCount": 114
+    },
+    {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 316,
+      "commentsCount": 166
+    },
+    {
+      "id": "/content/3AG8rSPutiXyXls7XZaC7tLepnP",
+      "title": "AIdeas Finalist: MaatriSahayak",
+      "description": "Every year, thousands of Indian mothers die not because medicine failed them — but because the right information never reached the right person in time. MaatriSahayak fixes that with AI that thinks in Hindi, predicts danger before it peaks, and coordinates a full emergency response in under 60 seconds.",
+      "url": "https://builder.aws.com/content/3AG8rSPutiXyXls7XZaC7tLepnP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWC5nmKJHXJYGtXDn01VdWUOZo/1000.webp",
+      "authorName": "Krishna Tripathi",
+      "authorAlias": "krux2dev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHoHw2Ei0xIWCv6f3QQrsgp3dg.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T22:22:38.296Z",
+      "likesCount": 154,
+      "commentsCount": 89
+    },
+    {
+      "id": "/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
+      "title": "AIdeas Finalist: NeuroPath AI",
+      "description": "An Adaptive Learning Ecosystem for the Neurodivergent Mind",
+      "url": "https://builder.aws.com/content/3CRyUjBKHkRlAVTp1hIm9rOSi8a",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTE8VeK7zJ1TzJXprGEh4kKB8C/Scre.webp",
+      "authorName": "Khadija Sajid",
+      "authorAlias": "khadijasajid",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CZOlzaAKcZH4p9l9AJR2Z4tHph.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T05:13:59.045Z",
+      "likesCount": 34,
+      "commentsCount": 16
+    },
+    {
+      "id": "/content/3ArgMKKBSTwhUnPWjV2qiV715xg",
+      "title": "AIdeas Finalist: Beyond The Box",
+      "description": "A multi-modal sensing system that leverages smartphone magnetometers and BLE signals to classify materials inside closed containers, combining physical signal analysis with a cloud-based learning pipeline.",
+      "url": "https://builder.aws.com/content/3ArgMKKBSTwhUnPWjV2qiV715xg",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTdxjvQyvikorntCzkNepz6foZ/cover.webp",
+      "authorName": "Idongesit Otong",
+      "authorAlias": "idong",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BC058bI0iOsmsZAyMXd8xEEGzm.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "EMEA",
+        "aideas-2025",
+        "commercial-solutions"
+      ],
+      "publishedAt": "2026-04-17T20:19:45.844Z",
+      "likesCount": 98,
+      "commentsCount": 109
+    },
+    {
+      "id": "/content/3CbPmneT1nB4KXJpTa53MsTy8LF",
+      "title": "在 AWS EC2 上部署 OpenClaw - 开发者实战手记",
+      "description": "OpenClaw 是一个可以部署在你自己基础设施上的私人 AI 助手。本文记录了在 AWS EC2 上部署 OpenClaw 的完整过程：使用一个 CloudFormation 模板，约 15 分钟即可完成部署，并通过 Amazon Bedrock 接入 Claude Opus 4.6 等最新模型。美国区域可一键部署；其他区域需要额外几步配置调整，本文会带你走完全程。",
+      "url": "https://builder.aws.com/content/3CbPmneT1nB4KXJpTa53MsTy8LF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CbPtS6FGZf13UQ8aIiwgaKZRUP/Cyber.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
+      "tags": [
+        "agents",
+        "ai-agents",
+        "agentic-ai",
+        "claude",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-20T02:23:16.460Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "title": "AIdeas Finalist: Mornist",
+      "description": "Six months ago I could not wake before 9 AM. Today I wake at 5:40 without an alarm. Not because I found a louder ringtone. Because I stopped treating waking up as a sound problem and started treating it as a training problem. Mornist is the AI coach I built to do that training.",
+      "url": "https://builder.aws.com/content/3CWJA6eawuovbT8iiKLFQdiwYlv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CWRVTtbnKPdNeLWHpYQDOpEj2Y/Morn.webp",
+      "authorName": "Noa Dev",
+      "authorAlias": "nurmyrat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAGfpvLrMsXnRZoZFUdfLxnHQ0.webp",
+      "location": "GE",
+      "lat": 41.6808672,
+      "lng": 44.0287806,
+      "tags": [
+        "EMEA",
+        "aideas-2025",
+        "daily-life-enhancement"
+      ],
+      "publishedAt": "2026-04-18T07:01:02.978Z",
+      "likesCount": 13,
+      "commentsCount": 11
     }
   ]
 }
