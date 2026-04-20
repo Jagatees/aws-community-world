@@ -1,6 +1,75 @@
 {
-  "updatedAt": "2026-04-20T15:30:19.551Z",
+  "updatedAt": "2026-04-20T16:26:41.864Z",
   "latest": [
+    {
+      "id": "/content/3Cd3UdN9gkCf3G9EGRNnoshI89A",
+      "title": "Hidden Costs in AWS: What My ₹0 Free Tier Project Taught Me",
+      "description": "A breakdown of unexpected AWS costs, billing traps, and how to build projects without getting surprised.",
+      "url": "https://builder.aws.com/content/3Cd3UdN9gkCf3G9EGRNnoshI89A",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cd4OMYibSYfB4FVjEJqUfStZWW/1-pn.webp",
+      "authorName": "Om Keswani",
+      "authorAlias": "omiee24",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3894gFCupwDcSCBhlVUHtta7riL.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "ai",
+        "ai-for-developers",
+        "ai-for-bharat",
+        "ai-ml",
+        "ai-managed"
+      ],
+      "publishedAt": "2026-04-20T16:21:44.397Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CVbC714LFaQQyvdk3d7TunbKFM",
+      "title": "Do Código Local à Nuvem: Meus Primeiros Passos com AWS até a Certificação",
+      "description": "Um relato real de como superei a complexidade da infraestrutura e comecei a usar os serviços da AWS nos meus projetos e na minha carreira de TI.",
+      "url": "https://builder.aws.com/content/3CVbC714LFaQQyvdk3d7TunbKFM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cd0WV8EBXwPVSWyY3N0AjZuaZE/Gemi.webp",
+      "authorName": "Matheus Dev",
+      "authorAlias": "omaatheus",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUQGDA3OIFXIYFTk7BaAz8AOuH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-ec2",
+        "amazon-s3",
+        "all-builders-welcome",
+        "aws-builders",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-20T15:49:57.195Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CcyQS06VblbBkVj6T7sv7w9XTP",
+      "title": "Unlocking Cost Efficiency and Security Synergies with FinOps at Nubank",
+      "description": "Join Stephanie Gooch, Senior Optimization Solutions Architect Advocate, and guest Mike from Nubank as they dive into the intersection of FinOps and security. This episode explores how financial operations data can enhance security measures within the AWS cloud environment.",
+      "url": "https://builder.aws.com/content/3CcyQS06VblbBkVj6T7sv7w9XTP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcybaSfJtmGovJikCom1nksX3B/Scre.webp",
+      "authorName": "Steph Gooch",
+      "authorAlias": "stephgooch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/374Zqzv0e7QeksFYZ7GR5FiQRuO.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "finops",
+        "cloud-security",
+        "security",
+        "security-and-compliance",
+        "security-best-practices"
+      ],
+      "publishedAt": "2026-04-20T15:34:09.297Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Ccl1dhO4yAsAB8vdUkJW3Cv1Tm",
       "title": "AWS AI League 2026 Championship Kicks Off: Build Agents, Fine-Tune Models, Compete Globally",
@@ -185,7 +254,7 @@
         "observability"
       ],
       "publishedAt": "2026-04-20T13:22:05.629Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -266,7 +335,7 @@
         "machine-learning"
       ],
       "publishedAt": "2026-04-20T08:54:06.640Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -287,7 +356,7 @@
         "ai-ide"
       ],
       "publishedAt": "2026-04-20T06:26:56.203Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -329,71 +398,6 @@
       "publishedAt": "2026-04-20T04:17:04.387Z",
       "likesCount": 1,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3Cb16HHM6RuvO93VWRuM4GjpCIq",
-      "title": "My First Taste of Actually Deploying a Web App",
-      "description": "Finally getting hands-on experience with cloud deployment and building a web app for the first time!",
-      "url": "https://builder.aws.com/content/3Cb16HHM6RuvO93VWRuM4GjpCIq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CbbAZWFioqYYOSByDQ7DFWwGKC/aws_.webp",
-      "authorName": "Fellip Mikael Oflas",
-      "authorAlias": "fellipoflas",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C0AnszAht2YhW0puwqzV3VC4yb.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "amazon-dynamodb",
-        "aws-amplify",
-        "react",
-        "all-builders-welcome",
-        "aspiring-builders"
-      ],
-      "publishedAt": "2026-04-20T03:53:42.582Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CbTe592Bd6OnmqP3mpyZahIR4b",
-      "title": "Why Starting Small Is The Best Advice For Learning AWS",
-      "description": "A short reflection on how starting with small, simple tasks makes learning AWS more manageable, less overwhelming, and more effective for beginners.",
-      "url": "https://builder.aws.com/content/3CbTe592Bd6OnmqP3mpyZahIR4b",
-      "imageUrl": "",
-      "authorName": "Kaitlyn Davis",
-      "authorAlias": "kynn",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-builders",
-        "students"
-      ],
-      "publishedAt": "2026-04-20T03:12:56.209Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CbUummPkUnUKT4s4ECpft3IVbX",
-      "title": "AWS Certifications vs. Real Projects: What Actually Matters?",
-      "description": "Certifications can help you get noticed, but real projects are what actually prove you can apply your skills in real-world scenarios. The most effective approach is combining both, using structured learning from Amazon Web Services certifications while actively building and documenting projects.",
-      "url": "https://builder.aws.com/content/3CbUummPkUnUKT4s4ECpft3IVbX",
-      "imageUrl": "",
-      "authorName": "Kaylin Landrum",
-      "authorAlias": "kaylinlandrum",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "challenge",
-        "cloud-practitioner",
-        "career",
-        "devops"
-      ],
-      "publishedAt": "2026-04-20T03:11:42.829Z",
-      "likesCount": 2,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -416,8 +420,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 743,
-      "commentsCount": 203
+      "likesCount": 754,
+      "commentsCount": 205
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -437,8 +441,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 223,
-      "commentsCount": 93
+      "likesCount": 228,
+      "commentsCount": 95
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -477,8 +481,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 174,
-      "commentsCount": 68
+      "likesCount": 180,
+      "commentsCount": 69
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -520,8 +524,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 710,
-      "commentsCount": 421
+      "likesCount": 745,
+      "commentsCount": 443
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -543,8 +547,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 99,
-      "commentsCount": 29
+      "likesCount": 105,
+      "commentsCount": 30
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -564,31 +568,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 555,
-      "commentsCount": 85
-    },
-    {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 470,
-      "commentsCount": 138
+      "likesCount": 586,
+      "commentsCount": 88
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -610,8 +591,31 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 38,
-      "commentsCount": 40
+      "likesCount": 45,
+      "commentsCount": 44
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 483,
+      "commentsCount": 139
     }
   ]
 }
