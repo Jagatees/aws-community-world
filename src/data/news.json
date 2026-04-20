@@ -1,6 +1,90 @@
 {
-  "updatedAt": "2026-04-20T20:15:32.101Z",
+  "updatedAt": "2026-04-20T21:17:13.978Z",
   "latest": [
+    {
+      "id": "/content/3AxZid6tlXFGtpIkNWZ8rIwASx6",
+      "title": "From Community to Impact",
+      "description": "My Journey as a Cloud Club Captain & AWS Community Builder",
+      "url": "https://builder.aws.com/content/3AxZid6tlXFGtpIkNWZ8rIwASx6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CdcWzXewfgD4sh7yAMkMSasUd7/IMG_1.webp",
+      "authorName": "David Sebastián Barrera Gaona",
+      "authorAlias": "sebasgao",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CPxRvFLLIKXfM8QH2LO3SkCTom.webp",
+      "location": "CO",
+      "lat": 4.099917,
+      "lng": -72.9088133,
+      "tags": [
+        "aws-cloud-clubs",
+        "aws-community-builders",
+        "students"
+      ],
+      "publishedAt": "2026-04-20T21:02:49.115Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CdXHgrHLvkOTpn5FThwNLSyM8p",
+      "title": "AI-Powered Database Migration with AWS DMS and Amazon Q",
+      "description": "Database migrations fail not from lack of tools, but from cognitive overload — engineers waste hours toggling consoles, parsing logs, and chasing config issues AI can solve in seconds. Amazon Q embeds intelligence into AWS DMS, validating configs pre-flight, diagnosing failures across multiple layers, and translating errors into exact fixes — all within your IAM context. The result: faster, more reliable migrations, democratized for every team.",
+      "url": "https://builder.aws.com/content/3CdXHgrHLvkOTpn5FThwNLSyM8p",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CdZVbnavxgDlGUiOGU1h9AH3oh/Scre.webp",
+      "authorName": "Umesh",
+      "authorAlias": "cumesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3A4eLjalOyDT7B5gMuVRIneG2ph.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "agentic-ai",
+        "ai-agents",
+        "aws-dms",
+        "amazon-q"
+      ],
+      "publishedAt": "2026-04-20T20:43:34.181Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CdWYQVnCvWSJ1tuASel5VuPIbW",
+      "title": "Apply to start an AWS Cloud Club on your campus!",
+      "description": "Join a growing network of student cloud & AI enthusiasts by becoming an AWS Cloud Club Captain! As a Captain you'll get to organize events and build community while developing leadership skills. ",
+      "url": "https://builder.aws.com/content/3CdWYQVnCvWSJ1tuASel5VuPIbW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CdZ1GgwVYZn60pyBLBNN0laXcs/IMG_.webp",
+      "authorName": "Nayoung Miller Won",
+      "authorAlias": "nwon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31WME6Rd00dIikddfGREvatiZyy.webp",
+      "location": "WA, US",
+      "lat": 47.2868352,
+      "lng": -120.212613,
+      "tags": [
+        "aws-cloud-clubs",
+        "students"
+      ],
+      "publishedAt": "2026-04-20T20:42:47.343Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CdR7lZYh23Ey8Zd2CUHKog2ha8",
+      "title": "Distribuindo uma SPA através de uma CDN de alta disponibilidade e segurança na AWS",
+      "description": "Distribuição de uma SPA na AWS usando CDN para alta disponibilidade, desempenho e segurança, com entrega eficiente de conteúdo e práticas modernas de arquitetura em nuvem.",
+      "url": "https://builder.aws.com/content/3CdR7lZYh23Ey8Zd2CUHKog2ha8",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CdR9IYmZDe71ccCVrYux59A6H7/1__6d.webp",
+      "authorName": "João Emboaba",
+      "authorAlias": "jemboaba",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdDJXihuH1FOmAZcXSvNV1MSUt.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-cloudfront",
+        "amazon-s3",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-04-20T20:30:55.300Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CbCYXhe0utHEwM1R03IZ1lunuz",
       "title": "From Months to Days with AWS Transform",
@@ -38,7 +122,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-20T19:45:56.606Z",
-      "likesCount": 1,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -209,6 +293,134 @@
       "publishedAt": "2026-04-20T15:49:57.195Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3CcyQS06VblbBkVj6T7sv7w9XTP",
+      "title": "Unlocking Cost Efficiency and Security Synergies with FinOps at Nubank",
+      "description": "Join Stephanie Gooch, Senior Optimization Solutions Architect Advocate, and guest Mike from Nubank as they dive into the intersection of FinOps and security. This episode explores how financial operations data can enhance security measures within the AWS cloud environment.",
+      "url": "https://builder.aws.com/content/3CcyQS06VblbBkVj6T7sv7w9XTP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcybaSfJtmGovJikCom1nksX3B/Scre.webp",
+      "authorName": "Steph Gooch",
+      "authorAlias": "stephgooch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/374Zqzv0e7QeksFYZ7GR5FiQRuO.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "finops",
+        "cloud-security",
+        "security",
+        "security-and-compliance",
+        "security-best-practices"
+      ],
+      "publishedAt": "2026-04-20T15:34:09.297Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Ccl1dhO4yAsAB8vdUkJW3Cv1Tm",
+      "title": "AWS AI League 2026 Championship Kicks Off: Build Agents, Fine-Tune Models, Compete Globally",
+      "description": "Compete at AWS Summits worldwide by building AI agents with Amazon Bedrock AgentCore and fine-tuning models on Amazon SageMaker AI. Top builders advance to the Grand Finale at re:Invent for a $50,000 prize pool",
+      "url": "https://builder.aws.com/content/3Ccl1dhO4yAsAB8vdUkJW3Cv1Tm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcpmxZLigODJhq28VugB0yCmEg/AILe.webp",
+      "authorName": "Natasya Idries",
+      "authorAlias": "natasya",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362ZiuS9x2n2f4ai8mNSd4zibWs.webp",
+      "location": "WA, US",
+      "lat": 47.2868352,
+      "lng": -120.212613,
+      "tags": [],
+      "publishedAt": "2026-04-20T14:40:31.086Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CVj2WYBCQvvQ2Rae1plfcNLbXd",
+      "title": "Build Knowledge Graph-powered AI Agents For Your Use Case | Databases for AI",
+      "description": "Learn when graph databases belong in your AI stack, how to implement knowledge graphs for security, fraud, and customer intelligence use cases on Amazon Neptune, and how to make them accessible through AI agents — no graph query expertise required. This post is part of the Databases for AI series.",
+      "url": "https://builder.aws.com/content/3CVj2WYBCQvvQ2Rae1plfcNLbXd",
+      "imageUrl": "",
+      "authorName": "Veeresham Gande",
+      "authorAlias": "veegande",
+      "authorAvatarUrl": "",
+      "location": "CA",
+      "lat": 61.0666922,
+      "lng": -107.991707,
+      "tags": [
+        "amazon-neptune",
+        "generative-ai",
+        "rag",
+        "ai-agents",
+        "livestreaming"
+      ],
+      "publishedAt": "2026-04-20T14:38:41.692Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CcpWuonaNTcFUXySXIjZDGJSwx",
+      "title": "Building an Enterprise Support Chatbot with Amazon Q Business: A RAG-First Architecture That Cut Repetitive Tickets by 70%",
+      "description": "How we built a RAG-powered support chatbot on Amazon Q Business that cut repetitive tickets by 70% in four weeks, architecture, trade-offs, and what I'd do differently.",
+      "url": "https://builder.aws.com/content/3CcpWuonaNTcFUXySXIjZDGJSwx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcpqtrG2a4zqI2ZwCb2vLywnUa/1_m_c.webp",
+      "authorName": "Thiago Souza",
+      "authorAlias": "thiagoxsouza",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CcpEwCaQ2JVx9MGm8xBugcynUR.webp",
+      "location": "FL, US",
+      "lat": 27.7567667,
+      "lng": -81.4639835,
+      "tags": [
+        "amazon-q-business",
+        "generative-ai",
+        "rag",
+        "aws-lambda",
+        "chatbots"
+      ],
+      "publishedAt": "2026-04-20T14:28:04.403Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CUZdtB80adMXU9g6vgbL2n9aX1",
+      "title": "DynamoDB Event Readiness, Part 4: SDK Configuration, Load Testing & Day-of Execution",
+      "description": "The last 10% is where events still fail. This final part covers SDK configuration, load testing strategy, and a day-of execution runbook — plus the full series checklist you can print and run before every major event. Part 4 of a 4-part DynamoDB event readiness series.",
+      "url": "https://builder.aws.com/content/3CUZdtB80adMXU9g6vgbL2n9aX1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUZkhwrXtuqDdG6I7pBOXIagI8/cove.webp",
+      "authorName": "Vijayraghavan, Karthik",
+      "authorAlias": "karthik",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-dynamodb",
+        "sdk",
+        "load-testing",
+        "observability"
+      ],
+      "publishedAt": "2026-04-20T13:27:57.898Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CUZGu7J3FYkmmBL0n0GKjNJtgK",
+      "title": "DynamoDB Event Readiness, Part 3: Warm Throughput & Backup/DR Posture",
+      "description": "Warm throughput and backup/DR are the two areas teams most consistently skip — and both have day-of consequences. This part covers how to pre-provision partition capacity and build a rollback plan you can execute under pressure. Part 3 of a 4-part DynamoDB event readiness series.",
+      "url": "https://builder.aws.com/content/3CUZGu7J3FYkmmBL0n0GKjNJtgK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUZTTeZizHJOYlfrfwSsySVAiw/cove.webp",
+      "authorName": "Vijayraghavan, Karthik",
+      "authorAlias": "karthik",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-dynamodb",
+        "disaster-recovery"
+      ],
+      "publishedAt": "2026-04-20T13:27:32.603Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -231,7 +443,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 783,
+      "likesCount": 784,
       "commentsCount": 206
     },
     {
@@ -252,8 +464,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 235,
-      "commentsCount": 94
+      "likesCount": 237,
+      "commentsCount": 95
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -315,8 +527,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 190,
-      "commentsCount": 73
+      "likesCount": 193,
+      "commentsCount": 74
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -358,8 +570,28 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 766,
-      "commentsCount": 466
+      "likesCount": 767,
+      "commentsCount": 469
+    },
+    {
+      "id": "/content/3CdWYQVnCvWSJ1tuASel5VuPIbW",
+      "title": "Apply to start an AWS Cloud Club on your campus!",
+      "description": "Join a growing network of student cloud & AI enthusiasts by becoming an AWS Cloud Club Captain! As a Captain you'll get to organize events and build community while developing leadership skills. ",
+      "url": "https://builder.aws.com/content/3CdWYQVnCvWSJ1tuASel5VuPIbW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CdZ1GgwVYZn60pyBLBNN0laXcs/IMG_.webp",
+      "authorName": "Nayoung Miller Won",
+      "authorAlias": "nwon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31WME6Rd00dIikddfGREvatiZyy.webp",
+      "location": "WA, US",
+      "lat": 47.2868352,
+      "lng": -120.212613,
+      "tags": [
+        "aws-cloud-clubs",
+        "students"
+      ],
+      "publishedAt": "2026-04-20T20:42:47.343Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -402,31 +634,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 632,
-      "commentsCount": 95
-    },
-    {
-      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
-      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
-      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
-      "authorName": "Sivadharshan V",
-      "authorAlias": "sivadharshan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "amazon-nova",
-        "serverless"
-      ],
-      "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 45,
-      "commentsCount": 44
+      "likesCount": 633,
+      "commentsCount": 96
     }
   ]
 }
