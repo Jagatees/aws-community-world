@@ -1,6 +1,74 @@
 {
-  "updatedAt": "2026-04-20T16:26:41.864Z",
+  "updatedAt": "2026-04-20T17:23:56.772Z",
   "latest": [
+    {
+      "id": "/content/3CclipRhlON0JDKqEgnvCgOQbjQ",
+      "title": "I Built a Real-Time Attendance System on AWS as a Student - Here’s What Changed",
+      "description": "I transformed a simple Raspberry Pi project into a scalable cloud system using AWS. Here’s how AWS Builder ID helped me move from learning to building real-world applications.",
+      "url": "https://builder.aws.com/content/3CclipRhlON0JDKqEgnvCgOQbjQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcnJ2Fd2sGS30KHkwkQjrXxa3J/AWS-.webp",
+      "authorName": "Mrigank Jaiswal",
+      "authorAlias": "mrigank06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33I6d26YXYE3wFtQx0kbi6B2jof.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "students",
+        "aws-iot",
+        "aws-iot-analytics",
+        "aws-iot-builder-tools",
+        "iot"
+      ],
+      "publishedAt": "2026-04-20T17:02:08.656Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cd8N9ivrThU64md8kHV1UXxxlj",
+      "title": "Build YC's Next Unicorn - Agent Hack Day at AWS Loft",
+      "description": "​If you're in the current YC orbit or preparing to apply to YC while building with AI agents, this is the kind of room you want to earn your way into.",
+      "url": "https://builder.aws.com/content/3Cd8N9ivrThU64md8kHV1UXxxlj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cd8vwGsiJh5qwIW8Bl9Os6yicX/apri.webp",
+      "authorName": "Adam Chan",
+      "authorAlias": "hackersquad",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "agent-to-agent",
+        "ai",
+        "ai-agents",
+        "builder-loft"
+      ],
+      "publishedAt": "2026-04-20T16:58:57.770Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cd5952EqnkC0EIs5VetgXdTINP",
+      "title": "Building AI-Powered Business Solutions for Latin America with Amazon Quick: A Hands-on Technical Guide",
+      "description": "Learn how to deploy a full-scale Agentic AI digital workspace using Amazon Quick (formerly QuickSight). This technical deep dive covers 5 real-world use cases for the LATAM market, Infrastructure as Code (CloudFormation) patterns, and critical lessons learned from automating reporting pipelines.",
+      "url": "https://builder.aws.com/content/3Cd5952EqnkC0EIs5VetgXdTINP",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "CR",
+      "lat": 10.2735633,
+      "lng": -84.0739102,
+      "tags": [
+        "amazon-quicksight",
+        "amazon-quick-suite",
+        "developer-productivity",
+        "developer"
+      ],
+      "publishedAt": "2026-04-20T16:28:58.925Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cd3UdN9gkCf3G9EGRNnoshI89A",
       "title": "Hidden Costs in AWS: What My ₹0 Free Tier Project Taught Me",
@@ -107,7 +175,7 @@
         "livestreaming"
       ],
       "publishedAt": "2026-04-20T14:38:41.692Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -337,70 +405,32 @@
       "publishedAt": "2026-04-20T08:54:06.640Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cbkfmo9YanHbRyRheyVhmMgEos",
-      "title": "¿Tu primer AI coding tool debería ser Kiro o Copilot? Cometí el error de no elegir bien",
-      "description": "Abordaremos lo pros y contra de Kiro y Github Copilot",
-      "url": "https://builder.aws.com/content/3Cbkfmo9YanHbRyRheyVhmMgEos",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cbu28y2ZorgpuUCGRT0uSqIE45/Agre.webp",
-      "authorName": "Antonia",
-      "authorAlias": "antitopy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
-      "location": "CL",
-      "lat": -31.7613365,
-      "lng": -71.3187697,
-      "tags": [
-        "kiro",
-        "kiro-agent",
-        "ai-ide"
-      ],
-      "publishedAt": "2026-04-20T06:26:56.203Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cbk654mcGCtAREF1jRP7cAE885",
-      "title": "Build your own blog post view counter on AWS Free Tier",
-      "description": "Your blog deserves to know it's being read. A Lambda function counts the views, DynamoDB remembers them, and it's all eligible for the Free Tier.  ",
-      "url": "https://builder.aws.com/content/3Cbk654mcGCtAREF1jRP7cAE885",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cbp1GfdsF9clCzrPCOIxfw3BoK/Buil.webp",
-      "authorName": "Esin Saribudak",
-      "authorAlias": "esincodes",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38AcOfXlqmdO9jed8Le5x5xEIAB.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [],
-      "publishedAt": "2026-04-20T06:03:29.366Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CbcvN4PvZTVz0cgOoW4UL69JZY",
-      "title": "How Learning AWS Can Help You Get Your First Tech Internship",
-      "description": "A beginner-friendly guide to how learning cloud computing with Amazon Web Services can help students stand out, build real projects, and prepare for tech internships.",
-      "url": "https://builder.aws.com/content/3CbcvN4PvZTVz0cgOoW4UL69JZY",
-      "imageUrl": "",
-      "authorName": "Gabby",
-      "authorAlias": "gabbycodez",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-s3",
-        "amazon-ec2",
-        "amazon-cloudfront",
-        "agile",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-20T04:17:04.387Z",
-      "likesCount": 1,
-      "commentsCount": 1
     }
   ],
   "trending": [
+    {
+      "id": "/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
+      "title": "AIdeas Finalist: RTC — Runtime Trust Calibrator",
+      "description": "Most dangerous AI failures are failures of commitment governance — systems committing too strongly, too early, or too inconsistently under uncertainty. RTC is an inference-time layer that governs whether, what, and how AI systems commit before responses reach users.",
+      "url": "https://builder.aws.com/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C5Q8R09Qg9YBQXql3eru38ddYT/rtc_.webp",
+      "authorName": "Arijit Chatterjee",
+      "authorAlias": "arijitchatterjee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ZjAZjAcD1SLCBSEJdRJM9ZSQU.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aideas-2025",
+        "APJC",
+        "commercial-solutions",
+        "responsible-ai",
+        "governance"
+      ],
+      "publishedAt": "2026-04-08T18:15:47.018Z",
+      "likesCount": 65,
+      "commentsCount": 23
+    },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
@@ -420,8 +450,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 754,
-      "commentsCount": 205
+      "likesCount": 759,
+      "commentsCount": 204
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -441,8 +471,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 228,
-      "commentsCount": 95
+      "likesCount": 230,
+      "commentsCount": 94
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -481,8 +511,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 180,
-      "commentsCount": 69
+      "likesCount": 181,
+      "commentsCount": 72
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -524,8 +554,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 745,
-      "commentsCount": 443
+      "likesCount": 751,
+      "commentsCount": 453
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -547,8 +577,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 105,
-      "commentsCount": 30
+      "likesCount": 107,
+      "commentsCount": 32
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -568,8 +598,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 586,
-      "commentsCount": 88
+      "likesCount": 616,
+      "commentsCount": 91
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -591,31 +621,8 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 45,
-      "commentsCount": 44
-    },
-    {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 483,
-      "commentsCount": 139
+      "likesCount": 44,
+      "commentsCount": 45
     }
   ]
 }
