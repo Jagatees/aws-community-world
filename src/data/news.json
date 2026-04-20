@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-19T23:11:40.248Z",
+  "updatedAt": "2026-04-20T00:26:43.307Z",
   "latest": [
+    {
+      "id": "/content/3CW6SCVkJs9qmPGe290ILByHdbN",
+      "title": "Week 3 of my Cloud Computing Bootcamp",
+      "description": "Week 3 of my Cloud Computing Bootcamp ",
+      "url": "https://builder.aws.com/content/3CW6SCVkJs9qmPGe290ILByHdbN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cb3O8xR4oYnV5GZLh5mG2Zexc0/1001.webp",
+      "authorName": "Gabriel Fortunate",
+      "authorAlias": "fortunate",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "iam",
+        "aws-cloud-clubs",
+        "cloud-security",
+        "cloud-networking",
+        "cloud-concepts"
+      ],
+      "publishedAt": "2026-04-19T23:23:11.562Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cb2dycE4irVQ2ILN5f7irmERIK",
       "title": "ランタイム EOL 前に全リージョンの Lambda 関数を棚卸しする npm製 CLI lambda-function-search を作りました",
@@ -184,28 +207,6 @@
       "publishedAt": "2026-04-19T17:48:43.610Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CaMO38ZEvZe7aVBibNx5JIULEF",
-      "title": "What is Observability in the context of MLOps",
-      "description": "This article provides information about how is Observability important in the context of MLOps",
-      "url": "https://builder.aws.com/content/3CaMO38ZEvZe7aVBibNx5JIULEF",
-      "imageUrl": "",
-      "authorName": "Sergii Levshchanov",
-      "authorAlias": "sadboy",
-      "authorAvatarUrl": "",
-      "location": "UA",
-      "lat": 49.4871968,
-      "lng": 31.2718321,
-      "tags": [
-        "ai-ml",
-        "monitoring-observability",
-        "amazon-cloudwatch",
-        "amazon-sagemaker-ai"
-      ],
-      "publishedAt": "2026-04-19T17:46:52.150Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -228,7 +229,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 458,
+      "likesCount": 464,
       "commentsCount": 149
     },
     {
@@ -374,6 +375,29 @@
       "commentsCount": 13
     },
     {
+      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
+      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
+      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
+      "authorName": "Sivadharshan V",
+      "authorAlias": "sivadharshan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "amazon-nova",
+        "serverless"
+      ],
+      "publishedAt": "2026-04-18T01:59:16.140Z",
+      "likesCount": 24,
+      "commentsCount": 28
+    },
+    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -395,29 +419,6 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 323,
       "commentsCount": 103
-    },
-    {
-      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
-      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
-      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
-      "authorName": "Sivadharshan V",
-      "authorAlias": "sivadharshan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "amazon-nova",
-        "serverless"
-      ],
-      "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 23,
-      "commentsCount": 28
     }
   ]
 }
