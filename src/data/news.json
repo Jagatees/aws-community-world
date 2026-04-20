@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20T17:23:56.772Z",
+  "updatedAt": "2026-04-20T18:20:37.202Z",
   "latest": [
     {
       "id": "/content/3CclipRhlON0JDKqEgnvCgOQbjQ",
@@ -21,8 +21,8 @@
         "iot"
       ],
       "publishedAt": "2026-04-20T17:02:08.656Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Cd8N9ivrThU64md8kHV1UXxxlj",
@@ -259,7 +259,7 @@
         "aws-lambda"
       ],
       "publishedAt": "2026-04-20T13:27:27.751Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -409,6 +409,28 @@
   ],
   "trending": [
     {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 768,
+      "commentsCount": 205
+    },
+    {
       "id": "/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
       "title": "AIdeas Finalist: RTC — Runtime Trust Calibrator",
       "description": "Most dangerous AI failures are failures of commitment governance — systems committing too strongly, too early, or too inconsistently under uncertainty. RTC is an inference-time layer that governs whether, what, and how AI systems commit before responses reach users.",
@@ -429,29 +451,7 @@
       ],
       "publishedAt": "2026-04-08T18:15:47.018Z",
       "likesCount": 65,
-      "commentsCount": 23
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 759,
-      "commentsCount": 204
+      "commentsCount": 24
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -471,7 +471,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 230,
+      "likesCount": 231,
       "commentsCount": 94
     },
     {
@@ -511,7 +511,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 181,
+      "likesCount": 182,
       "commentsCount": 72
     },
     {
@@ -554,8 +554,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 751,
-      "commentsCount": 453
+      "likesCount": 760,
+      "commentsCount": 462
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -577,8 +577,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 107,
-      "commentsCount": 32
+      "likesCount": 108,
+      "commentsCount": 31
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -598,8 +598,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 616,
-      "commentsCount": 91
+      "likesCount": 629,
+      "commentsCount": 92
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -622,7 +622,7 @@
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
       "likesCount": 44,
-      "commentsCount": 45
+      "commentsCount": 44
     }
   ]
 }
