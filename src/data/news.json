@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-20T00:26:43.307Z",
+  "updatedAt": "2026-04-20T01:34:46.281Z",
   "latest": [
+    {
+      "id": "/content/3CbDU1duPkIAL2iKoBwD8Tg7iPh",
+      "title": "What F1 Taught Me About Data - And How AWS Skill Builder Helped Me Go Deeper  🏎️",
+      "description": "If you watch Formula 1, you already know it's not just about who drives fastest. Every race is a data problem. Each F1 car has 300 sensors generating over 1 million telemetry data points per second - and that data is being processed in real time to make split-second strategy calls.",
+      "url": "https://builder.aws.com/content/3CbDU1duPkIAL2iKoBwD8Tg7iPh",
+      "imageUrl": "",
+      "authorName": "R MZ",
+      "authorAlias": "rzzz",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-20T00:38:58.450Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CW6SCVkJs9qmPGe290ILByHdbN",
       "title": "Week 3 of my Cloud Computing Bootcamp",
@@ -187,26 +204,6 @@
       "publishedAt": "2026-04-19T18:09:38.802Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CaPBym9yzsyJE9Y2ZDMok7LmlE",
-      "title": "Looking to build your resume/portfolio? Here's 3 cool project ideas that uses AWS!",
-      "description": "Starter ideas on projects utilizing AWS EC2, SQS, S3, and DynamoDB, and how to build them.",
-      "url": "https://builder.aws.com/content/3CaPBym9yzsyJE9Y2ZDMok7LmlE",
-      "imageUrl": "",
-      "authorName": "Jaden Seangmany",
-      "authorAlias": "jadenseangmany",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bg63yPyoYjPTWyWmMqicOHzbIU.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "diy-project",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-19T17:48:43.610Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -229,8 +226,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 464,
-      "commentsCount": 149
+      "likesCount": 469,
+      "commentsCount": 151
     },
     {
       "id": "/content/3CI3ifHLmdgd91wIPPoSL7nTWI4",
@@ -250,7 +247,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T16:05:36.978Z",
-      "likesCount": 221,
+      "likesCount": 223,
       "commentsCount": 137
     },
     {
@@ -288,8 +285,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 145,
-      "commentsCount": 66
+      "likesCount": 148,
+      "commentsCount": 68
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -333,8 +330,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 127,
-      "commentsCount": 45
+      "likesCount": 130,
+      "commentsCount": 47
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -375,29 +372,6 @@
       "commentsCount": 13
     },
     {
-      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
-      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
-      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
-      "authorName": "Sivadharshan V",
-      "authorAlias": "sivadharshan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "amazon-nova",
-        "serverless"
-      ],
-      "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 24,
-      "commentsCount": 28
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -419,6 +393,29 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 323,
       "commentsCount": 103
+    },
+    {
+      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
+      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
+      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
+      "authorName": "Sivadharshan V",
+      "authorAlias": "sivadharshan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "amazon-nova",
+        "serverless"
+      ],
+      "publishedAt": "2026-04-18T01:59:16.140Z",
+      "likesCount": 24,
+      "commentsCount": 28
     }
   ]
 }
