@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20T06:44:52.219Z",
+  "updatedAt": "2026-04-20T07:36:18.002Z",
   "latest": [
     {
       "id": "/content/3Cbkfmo9YanHbRyRheyVhmMgEos",
@@ -83,7 +83,7 @@
       ],
       "publishedAt": "2026-04-20T03:53:42.582Z",
       "likesCount": 2,
-      "commentsCount": 1
+      "commentsCount": 2
     },
     {
       "id": "/content/3CbTe592Bd6OnmqP3mpyZahIR4b",
@@ -415,8 +415,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 577,
-      "commentsCount": 163
+      "likesCount": 602,
+      "commentsCount": 170
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -432,8 +432,8 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 671,
-      "commentsCount": 16
+      "likesCount": 672,
+      "commentsCount": 17
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -453,8 +453,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 155,
-      "commentsCount": 73
+      "likesCount": 167,
+      "commentsCount": 75
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -498,8 +498,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 136,
-      "commentsCount": 48
+      "likesCount": 141,
+      "commentsCount": 51
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -521,6 +521,27 @@
       "publishedAt": "2026-04-17T20:29:28.119Z",
       "likesCount": 84,
       "commentsCount": 22
+    },
+    {
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 420,
+      "commentsCount": 61
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -546,27 +567,6 @@
       "commentsCount": 32
     },
     {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 388,
-      "commentsCount": 61
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -584,25 +584,31 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 363,
-      "commentsCount": 208
+      "likesCount": 384,
+      "commentsCount": 217
     },
     {
-      "id": "/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "title": "Our 10k AIdeas Finalists - vote by April 23!",
-      "description": "Here is a full list of all 10k aideas finalist articles. These articles (and their apps) have been revised from their originals based on AWS judging and community feedback. Please cast your votes by April 23, 4:59 PM Pacific Time",
-      "url": "https://builder.aws.com/content/3CXrGCG8csMPicVcmOtu5uM2Vk7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CY5pkG3x0WIK4bIWHFiGuEDYmv/10k-a.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-04-18T22:01:26.448Z",
-      "likesCount": 24,
-      "commentsCount": 13
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 343,
+      "commentsCount": 105
     }
   ]
 }
