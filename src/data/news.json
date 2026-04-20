@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-20T08:45:42.422Z",
+  "updatedAt": "2026-04-20T09:36:18.517Z",
   "latest": [
+    {
+      "id": "/content/3CcA8u1UUlFqDRXOAovCe7wavz6",
+      "title": "Learn AWS AI and Cloud with me: 40+ courses across Bedrock, SageMaker, Lambda, and MLOps",
+      "description": "A curated path through my AWS-focused Coursera content — 20 AI Tooling courses centered on Amazon Bedrock and Amazon Q, plus specializations on Databricks, MLOps, LLMOps, cloud engineering, and Rust. Built for engineers who want to ship production systems, not just experiment. Everything is hands-on, test-driven, and grounded in real AWS workloads.",
+      "url": "https://builder.aws.com/content/3CcA8u1UUlFqDRXOAovCe7wavz6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcAn68LqK6FPa8c5dIqaAqYyJO/aws-.webp",
+      "authorName": "Noah Gift",
+      "authorAlias": "noahgift",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cc9TXU03Q3spK1fzZl9gIUzOQv.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "amazon-bedrock",
+        "agentic-ai",
+        "devops",
+        "aws-lambda",
+        "machine-learning"
+      ],
+      "publishedAt": "2026-04-20T08:54:06.640Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cbkfmo9YanHbRyRheyVhmMgEos",
       "title": "¿Tu primer AI coding tool debería ser Kiro o Copilot? Cometí el error de no elegir bien",
@@ -374,25 +397,6 @@
       "publishedAt": "2026-04-19T19:13:34.328Z",
       "likesCount": 1,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CaWTIGfE948FZMXWxabyrJTQB7",
-      "title": "How to create a Car Dealership Marketplace?",
-      "description": "A car dealership marketplace is a platform where buyers, individual sellers, and dealers connect to buy and sell vehicles efficiently. Sharing how such platforms are built based on real implementation experience. Covering tech stack (React, Next.js, Node.js, AWS), core features like listings and lead management, and practical revenue models. The key focus is not just development, but creating a scalable system that balances supply, builds trust, and generates consistent revenue.",
-      "url": "https://builder.aws.com/content/3CaWTIGfE948FZMXWxabyrJTQB7",
-      "imageUrl": "",
-      "authorName": "Ashish Pandey",
-      "authorAlias": "pandeyashish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWt1XVDZUwFciRFeeemmiJwbBq.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "marketplace"
-      ],
-      "publishedAt": "2026-04-19T18:44:44.823Z",
-      "likesCount": 2,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -415,25 +419,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 639,
-      "commentsCount": 176
-    },
-    {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 672,
-      "commentsCount": 17
+      "likesCount": 666,
+      "commentsCount": 177
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -453,8 +440,25 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 184,
-      "commentsCount": 82
+      "likesCount": 189,
+      "commentsCount": 83
+    },
+    {
+      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
+      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
+      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-04-14T22:12:52.358Z",
+      "likesCount": 672,
+      "commentsCount": 17
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -498,8 +502,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 148,
-      "commentsCount": 52
+      "likesCount": 154,
+      "commentsCount": 56
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -519,7 +523,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 84,
+      "likesCount": 87,
       "commentsCount": 22
     },
     {
@@ -540,8 +544,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 431,
-      "commentsCount": 251
+      "likesCount": 495,
+      "commentsCount": 283
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -561,8 +565,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 449,
-      "commentsCount": 68
+      "likesCount": 466,
+      "commentsCount": 70
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -584,8 +588,8 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 30,
-      "commentsCount": 32
+      "likesCount": 31,
+      "commentsCount": 33
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -607,8 +611,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 347,
-      "commentsCount": 106
+      "likesCount": 354,
+      "commentsCount": 108
     }
   ]
 }
