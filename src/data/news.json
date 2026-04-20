@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-20T13:34:32.794Z",
+  "updatedAt": "2026-04-20T14:35:29.679Z",
   "latest": [
+    {
+      "id": "/content/3CcpWuonaNTcFUXySXIjZDGJSwx",
+      "title": "Building an Enterprise Support Chatbot with Amazon Q Business: A RAG-First Architecture That Cut Repetitive Tickets by 70%",
+      "description": "How we built a RAG-powered support chatbot on Amazon Q Business that cut repetitive tickets by 70% in four weeks, architecture, trade-offs, and what I'd do differently.",
+      "url": "https://builder.aws.com/content/3CcpWuonaNTcFUXySXIjZDGJSwx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcpqtrG2a4zqI2ZwCb2vLywnUa/1_m_c.webp",
+      "authorName": "Thiago Souza",
+      "authorAlias": "thiagoxsouza",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CcpEwCaQ2JVx9MGm8xBugcynUR.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-q-business",
+        "generative-ai",
+        "rag",
+        "aws-lambda",
+        "chatbots"
+      ],
+      "publishedAt": "2026-04-20T14:28:04.403Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CUZdtB80adMXU9g6vgbL2n9aX1",
       "title": "DynamoDB Event Readiness, Part 4: SDK Configuration, Load Testing & Day-of Execution",
@@ -145,27 +168,6 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3Cccb8roRphL4jOMKNQBbZ1aKrF",
-      "title": "Minha Primeira Vez na Nuvem: Como o AWS Builder Center Começou a Definir Quem Eu Sou como Dev",
-      "description": "Como estudante de TI, meu primeiro contato com cloud computing foi uma mistura de encantamento e confusão. Neste artigo, compartilho como o AWS Builder Center me ajudou a encontrar minha identidade como desenvolvedor.",
-      "url": "https://builder.aws.com/content/3Cccb8roRphL4jOMKNQBbZ1aKrF",
-      "imageUrl": "",
-      "authorName": "Elivelton Moura",
-      "authorAlias": "eliveltonmoura10",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-educate",
-        "aws-cloudformation",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-20T12:55:15.909Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CcOeKmT7pjLz4MmTvEcagp5hAU",
       "title": "Your Data Warehouse Just Became a Data Lake Writer — Apache Iceberg + Amazon Redshift",
       "description": "Amazon Redshift can write directly to Apache Iceberg tables in S3. ACID-compliant. No ETL. No data copies. And the same data is immediately queryable by Athena, EMR, or Spark.",
@@ -225,8 +227,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 705,
-      "commentsCount": 194
+      "likesCount": 725,
+      "commentsCount": 200
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -246,8 +248,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 216,
-      "commentsCount": 90
+      "likesCount": 219,
+      "commentsCount": 91
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -263,30 +265,8 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 674,
+      "likesCount": 676,
       "commentsCount": 17
-    },
-    {
-      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
-      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
-      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
-      "authorName": "Hazel Sáenz",
-      "authorAlias": "hsaenzg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "agentic-ai",
-        "open-source",
-        "strands-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 358,
-      "commentsCount": 11
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -308,8 +288,30 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 166,
-      "commentsCount": 65
+      "likesCount": 170,
+      "commentsCount": 68
+    },
+    {
+      "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "title": "Cómo crear un agente de IA desde cero. Open source, local y gratis.",
+      "description": "De un modelo que solo responde a uno que busca, razona y recuerda. Todo con código que puedes leer, forkear y contribuir.",
+      "url": "https://builder.aws.com/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMQunGlkEGPoQlQA0LkfVdZK7p/cove.webp",
+      "authorName": "Hazel Sáenz",
+      "authorAlias": "hsaenzg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/378EyLcehM4iJ9oayCGgocd6nnu.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "open-source",
+        "strands-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-14T17:19:53.908Z",
+      "likesCount": 359,
+      "commentsCount": 11
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -329,8 +331,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 639,
-      "commentsCount": 365
+      "likesCount": 666,
+      "commentsCount": 386
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -352,7 +354,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 94,
+      "likesCount": 96,
       "commentsCount": 28
     },
     {
@@ -373,7 +375,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 513,
+      "likesCount": 521,
       "commentsCount": 80
     },
     {
@@ -396,8 +398,8 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 36,
-      "commentsCount": 39
+      "likesCount": 38,
+      "commentsCount": 40
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -419,8 +421,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 414,
-      "commentsCount": 128
+      "likesCount": 451,
+      "commentsCount": 130
     }
   ]
 }
