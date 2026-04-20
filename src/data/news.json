@@ -1,6 +1,61 @@
 {
-  "updatedAt": "2026-04-20T18:20:37.202Z",
+  "updatedAt": "2026-04-20T19:25:57.974Z",
   "latest": [
+    {
+      "id": "/content/3CdFLv8AbUtZfFswHEddeEF2xtj",
+      "title": "Realizando o upload de arquivos no S3 utilizando URLs pré assinadas com Serverless Framework",
+      "description": "Este artigo explora como realizar o upload de arquivos para o Amazon S3 utilizando URLs pré-assinadas, implementadas com o Serverless Framework. Aborda desde a geração segura das URLs até o envio direto do cliente, destacando benefícios como escalabilidade, redução de carga no backend e boas práticas de segurança em arquiteturas serverless.",
+      "url": "https://builder.aws.com/content/3CdFLv8AbUtZfFswHEddeEF2xtj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CdHIoJRcmLvYYeVmXmmUnJC4DO/0_Bw8.webp",
+      "authorName": "João Emboaba",
+      "authorAlias": "jemboaba",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdDJXihuH1FOmAZcXSvNV1MSUt.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-s3",
+        "aws-cloudformation",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-04-20T19:06:07.517Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CdN6NRi4qP4sjhHPWC0pLG6HXu",
+      "title": "Cost breakdown for an idle Sagemaker Unified Studio Domain and Project",
+      "description": "This article explains cost incurred by an SMUS domain and a project created using  \"all capabilities\" project profile when its unused or idle. ",
+      "url": "https://builder.aws.com/content/3CdN6NRi4qP4sjhHPWC0pLG6HXu",
+      "imageUrl": "",
+      "authorName": "Gaurav Sharma",
+      "authorAlias": "gsharma",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-20T19:01:28.395Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3BzvD7rBvI1mdF37GK54911wWhD",
+      "title": "Replaying and Validating Browser Automations with Amazon Nova Act",
+      "description": "Discover how you can replay trajectories with Amazon Nova Act to bring testing rigor to AI-powered browser automation. Record browser sessions as JSON artifacts, replay them in fresh environments, and automatically validate URLs, screenshots, and DOM structures — without re-invoking the AI model. With configurable tolerances, strict/permissive modes, and an interactive HTML report, catch UI regressions, detect flakiness, and verify environment parity across deployments.",
+      "url": "https://builder.aws.com/content/3BzvD7rBvI1mdF37GK54911wWhD",
+      "imageUrl": "",
+      "authorName": "Shruti Arora",
+      "authorAlias": "sarora",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33KyBgcu4pinVzRGzdLDdfHTE81.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-20T18:29:13.697Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CclipRhlON0JDKqEgnvCgOQbjQ",
       "title": "I Built a Real-Time Attendance System on AWS as a Student - Here’s What Changed",
@@ -343,68 +398,6 @@
       "publishedAt": "2026-04-20T12:57:37.103Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CcOeKmT7pjLz4MmTvEcagp5hAU",
-      "title": "Your Data Warehouse Just Became a Data Lake Writer — Apache Iceberg + Amazon Redshift",
-      "description": "Amazon Redshift can write directly to Apache Iceberg tables in S3. ACID-compliant. No ETL. No data copies. And the same data is immediately queryable by Athena, EMR, or Spark.",
-      "url": "https://builder.aws.com/content/3CcOeKmT7pjLz4MmTvEcagp5hAU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcOnr7xVBEzeYSNmLD6J4gkWzG/Gemi.webp",
-      "authorName": "Santhosh P",
-      "authorAlias": "santhosh0908",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CcOHtqKj4ebbxeqBinjyPMWgvS.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "amazon-redshift",
-        "amazon-sagemaker-lakehouse",
-        "amazon-s3",
-        "amazon-athena"
-      ],
-      "publishedAt": "2026-04-20T10:43:36.729Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cc2CB2poZneBrsHENeH1ndo4wg",
-      "title": "Optimize WCU consumption of your AWS WAF WebACL",
-      "description": "AWS WAF costs scale directly with WebACL Capacity Units (WCUs), making rule optimization essential for high-traffic applications. ",
-      "url": "https://builder.aws.com/content/3Cc2CB2poZneBrsHENeH1ndo4wg",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcJIMK0rK1uB4KnPnUyeucFY4L/WCU-.webp",
-      "authorName": "Achraf Souk",
-      "authorAlias": "achrafsouk",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2w9oQvKRweKaS01XBb4fmPfmdZf.webp",
-      "location": "AE",
-      "lat": 24.0002488,
-      "lng": 53.9994829,
-      "tags": [],
-      "publishedAt": "2026-04-20T09:54:20.855Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CcA8u1UUlFqDRXOAovCe7wavz6",
-      "title": "Learn AWS AI and Cloud with me: 40+ courses across Bedrock, SageMaker, Lambda, and MLOps",
-      "description": "A curated path through my AWS-focused Coursera content — 20 AI Tooling courses centered on Amazon Bedrock and Amazon Q, plus specializations on Databricks, MLOps, LLMOps, cloud engineering, and Rust. Built for engineers who want to ship production systems, not just experiment. Everything is hands-on, test-driven, and grounded in real AWS workloads.",
-      "url": "https://builder.aws.com/content/3CcA8u1UUlFqDRXOAovCe7wavz6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcAn68LqK6FPa8c5dIqaAqYyJO/aws-.webp",
-      "authorName": "Noah Gift",
-      "authorAlias": "noahgift",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cc9TXU03Q3spK1fzZl9gIUzOQv.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "amazon-bedrock",
-        "agentic-ai",
-        "devops",
-        "aws-lambda",
-        "machine-learning"
-      ],
-      "publishedAt": "2026-04-20T08:54:06.640Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -427,8 +420,46 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 768,
+      "likesCount": 778,
       "commentsCount": 205
+    },
+    {
+      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
+      "title": "AIdeas Finalist: Perspective",
+      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
+      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
+      "authorName": "Alwoch Sophia",
+      "authorAlias": "salwoch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
+      "location": "UG",
+      "lat": 1.5333554,
+      "lng": 32.2166578,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T23:31:03.702Z",
+      "likesCount": 234,
+      "commentsCount": 94
+    },
+    {
+      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
+      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
+      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-04-14T22:12:52.358Z",
+      "likesCount": 677,
+      "commentsCount": 17
     },
     {
       "id": "/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
@@ -450,46 +481,8 @@
         "governance"
       ],
       "publishedAt": "2026-04-08T18:15:47.018Z",
-      "likesCount": 65,
+      "likesCount": 66,
       "commentsCount": 24
-    },
-    {
-      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "title": "AIdeas Finalist: Perspective",
-      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
-      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
-      "authorName": "Alwoch Sophia",
-      "authorAlias": "salwoch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
-      "location": "UG",
-      "lat": 1.5333554,
-      "lng": 32.2166578,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 231,
-      "commentsCount": 94
-    },
-    {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 676,
-      "commentsCount": 17
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -511,7 +504,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 182,
+      "likesCount": 187,
       "commentsCount": 72
     },
     {
@@ -533,7 +526,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 359,
+      "likesCount": 361,
       "commentsCount": 11
     },
     {
@@ -554,7 +547,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 760,
+      "likesCount": 762,
       "commentsCount": 462
     },
     {
@@ -577,7 +570,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 108,
+      "likesCount": 109,
       "commentsCount": 31
     },
     {
@@ -598,8 +591,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 629,
-      "commentsCount": 92
+      "likesCount": 631,
+      "commentsCount": 93
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -621,7 +614,7 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 44,
+      "likesCount": 45,
       "commentsCount": 44
     }
   ]
