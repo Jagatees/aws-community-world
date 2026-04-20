@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-20T09:36:18.517Z",
+  "updatedAt": "2026-04-20T10:35:01.111Z",
   "latest": [
+    {
+      "id": "/content/3Cc2CB2poZneBrsHENeH1ndo4wg",
+      "title": "Optimize WCU consumption of your AWS WAF WebACL",
+      "description": "AWS WAF costs scale directly with WebACL Capacity Units (WCUs), making rule optimization essential for high-traffic applications. ",
+      "url": "https://builder.aws.com/content/3Cc2CB2poZneBrsHENeH1ndo4wg",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CcJIMK0rK1uB4KnPnUyeucFY4L/WCU-.webp",
+      "authorName": "Achraf Souk",
+      "authorAlias": "achrafsouk",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2w9oQvKRweKaS01XBb4fmPfmdZf.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [],
+      "publishedAt": "2026-04-20T09:54:20.855Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CcA8u1UUlFqDRXOAovCe7wavz6",
       "title": "Learn AWS AI and Cloud with me: 40+ courses across Bedrock, SageMaker, Lambda, and MLOps",
@@ -194,209 +211,6 @@
       "publishedAt": "2026-04-20T02:23:16.460Z",
       "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CbLOMnkPLbbFmdxmoztWPZprj9",
-      "title": "The Fastest-Growing Data Problem in the World Might Be DNA",
-      "description": "Biology is a computer science problem",
-      "url": "https://builder.aws.com/content/3CbLOMnkPLbbFmdxmoztWPZprj9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CbLqzqo1FE3AavRtZG2p7tgHpU/360_F.webp",
-      "authorName": "Summer Malik",
-      "authorAlias": "summerm",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students",
-        "data"
-      ],
-      "publishedAt": "2026-04-20T01:47:33.649Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CXOVWhy1k4erDLCgT44I2qTtUu",
-      "title": "Remote MCP with API Gateway + AgentCore Gateway for Multi-Tenant SaaS",
-      "description": "Turn your existing authenticated REST APIs into a secure, multi-tenant remote MCP server using Amazon Bedrock AgentCore Gateway - so IDE clients connect with just a URL",
-      "url": "https://builder.aws.com/content/3CXOVWhy1k4erDLCgT44I2qTtUu",
-      "imageUrl": "",
-      "authorName": "Lester",
-      "authorAlias": "lestersim",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BpB9KSx0bxSSYJzyt8ZStvvk73.webp",
-      "location": "SG",
-      "lat": 1.357107,
-      "lng": 103.8194992,
-      "tags": [
-        "mcp",
-        "saas",
-        "amazon-bedrock-agentcore"
-      ],
-      "publishedAt": "2026-04-20T01:45:19.153Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CbDU1duPkIAL2iKoBwD8Tg7iPh",
-      "title": "What F1 Taught Me About Data - And How AWS Skill Builder Helped Me Go Deeper  🏎️",
-      "description": "If you watch Formula 1, you already know it's not just about who drives fastest. Every race is a data problem. Each F1 car has 300 sensors generating over 1 million telemetry data points per second - and that data is being processed in real time to make split-second strategy calls.",
-      "url": "https://builder.aws.com/content/3CbDU1duPkIAL2iKoBwD8Tg7iPh",
-      "imageUrl": "",
-      "authorName": "R MZ",
-      "authorAlias": "rzzz",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-20T00:38:58.450Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CW6SCVkJs9qmPGe290ILByHdbN",
-      "title": "Week 3 of my Cloud Computing Bootcamp",
-      "description": "Week 3 of my Cloud Computing Bootcamp ",
-      "url": "https://builder.aws.com/content/3CW6SCVkJs9qmPGe290ILByHdbN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cb3O8xR4oYnV5GZLh5mG2Zexc0/1001.webp",
-      "authorName": "Gabriel Fortunate",
-      "authorAlias": "fortunate",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "iam",
-        "aws-cloud-clubs",
-        "cloud-security",
-        "cloud-networking",
-        "cloud-concepts"
-      ],
-      "publishedAt": "2026-04-19T23:23:11.562Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Cb2dycE4irVQ2ILN5f7irmERIK",
-      "title": "ランタイム EOL 前に全リージョンの Lambda 関数を棚卸しする npm製 CLI lambda-function-search を作りました",
-      "description": "ランタイム更新が必要なLambda関数のリストアップをコマンド１つで実現したい。それを実現するためのnpmから利用できるCLIを公開しています。",
-      "url": "https://builder.aws.com/content/3Cb2dycE4irVQ2ILN5f7irmERIK",
-      "imageUrl": "",
-      "authorName": "Hidetaka Okamoto",
-      "authorAlias": "hidetaka",
-      "authorAvatarUrl": "",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "open-source",
-        "aws-lambda",
-        "developer-productivity",
-        "developer-tools"
-      ],
-      "publishedAt": "2026-04-19T23:09:28.781Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Caz6oPXeOvuLDUanO3qH3ZfgxG",
-      "title": "Agentic Patterns: Elements of Reusable Context-Oriented Determinism",
-      "description": "While not as exhaustive as the title might indicate but aligned with my focus on enforcing as much determinism as possible from any given LLM ala Article let's take a look at exploiting tool using LLMs as a process instead of as a conversation. As I posed in the linked article much of the failures we experience are related to attention and confusion which is the progressive noise we introduce as we try to convince the model to perform an action.",
-      "url": "https://builder.aws.com/content/3Caz6oPXeOvuLDUanO3qH3ZfgxG",
-      "imageUrl": "",
-      "authorName": "Paul Scarrone",
-      "authorAlias": "paulscoder",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqrcoLi9C5eZgDNU4SGefvBnev.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "agentic-interactions",
-        "software-engineering"
-      ],
-      "publishedAt": "2026-04-19T22:40:33.007Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CasY209TquJ1u1WKxt06UycRVx",
-      "title": "5 AWS Services that every College Student needs to Hear About",
-      "description": "A quick guide highlighting five essential AWS services every college student should know. This article breaks down how these tools can be used to build projects, develop real-world tech skills, and get hands-on experience with cloud computing—without needing advanced knowledge to get started.",
-      "url": "https://builder.aws.com/content/3CasY209TquJ1u1WKxt06UycRVx",
-      "imageUrl": "",
-      "authorName": "Jackson Wiseman",
-      "authorAlias": "jwise",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "amazon-cloudfront",
-        "aws-lambda",
-        "students",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-04-19T21:52:51.693Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CaY3B4u9KSOHUbmIY8Kt4WG5oi",
-      "title": "Kiro for Logging: Generating Structured Logging Code",
-      "description": "Using Kiro to generate proper structured logging in Python, step by step. No prior logging experience needed.",
-      "url": "https://builder.aws.com/content/3CaY3B4u9KSOHUbmIY8Kt4WG5oi",
-      "imageUrl": "",
-      "authorName": "Rajat Antil",
-      "authorAlias": "rajatantil",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BnXieRBpuvDtSDQ6k606owktif.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-19T19:37:11.772Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3B6uh76GlgnwzAVPhHswEMM4XhX",
-      "title": "Join the AWS AI League 2026",
-      "description": "Learn agentic and LLM skills while competing for the prizes and glory",
-      "url": "https://builder.aws.com/content/3B6uh76GlgnwzAVPhHswEMM4XhX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CabRTzrspN3lIjC1tQrbfxxBwL/20260.webp",
-      "authorName": "Tomasz Ptak",
-      "authorAlias": "tptak",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3175TKyuZUzxZgPJBxTIZMkQWd8.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "aws-ai-league",
-        "llm",
-        "agents",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-19T19:26:04.898Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CaYTfzqmg4dNQ66Z19fdemrUDI",
-      "title": "The Structural Advantage: Why Industry-Connecting Clubs Matter More Than Most CS Majors Realize",
-      "description": "A research-style examination of how student organizations that bridge university and industry shape early-career outcomes in computer science.",
-      "url": "https://builder.aws.com/content/3CaYTfzqmg4dNQ66Z19fdemrUDI",
-      "imageUrl": "",
-      "authorName": "Abhi A",
-      "authorAlias": "abhiala",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-19T19:13:34.328Z",
-      "likesCount": 1,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -419,8 +233,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 666,
-      "commentsCount": 177
+      "likesCount": 682,
+      "commentsCount": 179
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -440,8 +254,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 189,
-      "commentsCount": 83
+      "likesCount": 194,
+      "commentsCount": 84
     },
     {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
@@ -502,8 +316,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 154,
-      "commentsCount": 56
+      "likesCount": 159,
+      "commentsCount": 60
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -524,7 +338,7 @@
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
       "likesCount": 87,
-      "commentsCount": 22
+      "commentsCount": 23
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -544,29 +358,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 495,
-      "commentsCount": 283
-    },
-    {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 466,
-      "commentsCount": 70
+      "likesCount": 532,
+      "commentsCount": 316
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -588,8 +381,29 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 31,
-      "commentsCount": 33
+      "likesCount": 34,
+      "commentsCount": 38
+    },
+    {
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 473,
+      "commentsCount": 73
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -611,7 +425,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 354,
+      "likesCount": 358,
       "commentsCount": 108
     }
   ]
