@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21T00:27:59.192Z",
+  "updatedAt": "2026-04-21T01:34:42.329Z",
   "latest": [
     {
       "id": "/content/3CdeSLSAfKLlVCRKMDsbnEXvX4S",
@@ -19,8 +19,8 @@
         "tech"
       ],
       "publishedAt": "2026-04-21T00:03:00.787Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "likesCount": 2,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CdipIPpiqS0rYVZBQ47dKbJrBj",
@@ -189,8 +189,8 @@
     },
     {
       "id": "/content/3CdN6NRi4qP4sjhHPWC0pLG6HXu",
-      "title": "Cost breakdown for an idle Sagemaker Unified Studio Domain and Project",
-      "description": "This article explains cost incurred by an SMUS domain and a project created using  \"all capabilities\" project profile when its unused or idle. ",
+      "title": "Cost breakdown for Sagemaker Unified Studio Domain and Project",
+      "description": "This article explains cost incurred by an IDC based SMUS domain and a project created using  \"all capabilities\" project profile when its unused or idle. ",
       "url": "https://builder.aws.com/content/3CdN6NRi4qP4sjhHPWC0pLG6HXu",
       "imageUrl": "",
       "authorName": "Gaurav Sharma",
@@ -480,7 +480,7 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 677,
+      "likesCount": 678,
       "commentsCount": 17
     },
     {
@@ -503,7 +503,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 197,
+      "likesCount": 198,
       "commentsCount": 76
     },
     {
@@ -525,7 +525,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 361,
+      "likesCount": 362,
       "commentsCount": 11
     },
     {
@@ -546,8 +546,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 767,
-      "commentsCount": 470
+      "likesCount": 770,
+      "commentsCount": 472
     },
     {
       "id": "/content/3CdeSLSAfKLlVCRKMDsbnEXvX4S",
@@ -567,8 +567,8 @@
         "tech"
       ],
       "publishedAt": "2026-04-21T00:03:00.787Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "likesCount": 2,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -617,27 +617,25 @@
       "commentsCount": 51
     },
     {
-      "id": "/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
-      "title": "AIdeas Finalist: RTC — Runtime Trust Calibrator",
-      "description": "Most dangerous AI failures are failures of commitment governance — systems committing too strongly, too early, or too inconsistently under uncertainty. RTC is an inference-time layer that governs whether, what, and how AI systems commit before responses reach users.",
-      "url": "https://builder.aws.com/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C5Q8R09Qg9YBQXql3eru38ddYT/rtc_.webp",
-      "authorName": "Arijit Chatterjee",
-      "authorAlias": "arijitchatterjee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ZjAZjAcD1SLCBSEJdRJM9ZSQU.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
         "aideas-2025",
-        "APJC",
-        "commercial-solutions",
-        "responsible-ai",
-        "governance"
+        "social-impact",
+        "APJC"
       ],
-      "publishedAt": "2026-04-08T18:15:47.018Z",
-      "likesCount": 66,
-      "commentsCount": 24
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 637,
+      "commentsCount": 98
     }
   ]
 }
