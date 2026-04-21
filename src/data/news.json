@@ -1,12 +1,120 @@
 {
-  "updatedAt": "2026-04-21T17:23:02.617Z",
+  "updatedAt": "2026-04-21T18:23:10.867Z",
   "latest": [
+    {
+      "id": "/content/3Cg6SiJbmAmPLbSab6fTxqbCs8x",
+      "title": "Reflecting on the final 48 hours: A massive \"Thank You\" from Ethiopia 🇪🇹",
+      "description": " Taking a moment to step back and say thank you to this amazing community and the AWS team",
+      "url": "https://builder.aws.com/content/3Cg6SiJbmAmPLbSab6fTxqbCs8x",
+      "imageUrl": "",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [],
+      "publishedAt": "2026-04-21T18:14:28.008Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cg6Gs7sVBrA6Io1TNmf4ur5coj",
+      "title": "SLO Design for Agentic AI Systems on AWS: Beyond Uptime Metrics",
+      "description": "Service Level Objectives work well for stateless APIs and microservices. They break — quietly and dangerously — when applied without modification to agentic AI systems.\nThis post documents the reliability signal framework I've developed over the past quarter running agentic AI pipelines in a regulated cloud-native environment on AWS. It is intended for SRE teams and platform engineers deploying AI agents that interact with production infrastructure.",
+      "url": "https://builder.aws.com/content/3Cg6Gs7sVBrA6Io1TNmf4ur5coj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cg6MfbCWHPXS2SH8lKnFU3ByGi/dev-.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "sre",
+        "devops-pro",
+        "aws-academy",
+        "ai-ml"
+      ],
+      "publishedAt": "2026-04-21T18:09:52.848Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cg50G0qoIpBd5aCBUXu8HtIcFI",
+      "title": "Democratizing Sports Analytics: A Reusable GenAI Architecture Pattern for Text-to-SQL in Professional Sports",
+      "description": "How an NHL franchise eliminated the data engineering bottleneck by deploying a production-grade GenAI text-to-SQL agent on AWS",
+      "url": "https://builder.aws.com/content/3Cg50G0qoIpBd5aCBUXu8HtIcFI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cg7IBLJOsEopziVxLwFRYcYd6p/demo.webp",
+      "authorName": "Douglas",
+      "authorAlias": "douglim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUSBgSYKxpPTb6LZpnFyX0shm7.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-21T18:09:28.466Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cg4vq7dNVUrjifYzA0QaryfyLQ",
+      "title": "Using Amazon Redshift Enhanced VPC Routing with AWS Network Firewall and IAM Identity Center",
+      "description": "When you flip on Enhanced VPC Routing, Redshift stops routing its own traffic and you're in charge. Here's a reference implementation with two approaches — SNAT and firewall-protected — plus a validated domain allowlist for running Redshift with Identity Center and S3 Access Grants.",
+      "url": "https://builder.aws.com/content/3Cg4vq7dNVUrjifYzA0QaryfyLQ",
+      "imageUrl": "",
+      "authorName": "Jared",
+      "authorAlias": "jaredwarren",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35l2rDIIQMkCRZWF3j5aabB3Sha.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-21T17:56:36.483Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CUOiAaJhEuB1uu5cAPwRKqz9hP",
+      "title": "5 AWS Services Every Student Should Know",
+      "description": "In this article student will learn the top and most useful aws service that can be very useful.",
+      "url": "https://builder.aws.com/content/3CUOiAaJhEuB1uu5cAPwRKqz9hP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cd9D5QeKGBDrDqEQiquQ1T7AYg/AWS-.webp",
+      "authorName": "Abhishek Kumar Yadav",
+      "authorAlias": "abhishekk007",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33VsMB7ANL7cnFXIrWYaaNpIaxC.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-21T17:41:56.297Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cfwfe3Ki72MevYLu48WAInnThq",
+      "title": "From Role ARNs to Real Humans: Identity-Aware Data Pipelines on AWS",
+      "description": "Role ARNs don't answer 'who loaded that data?' — humans do. A three-account reference implementation showing how trusted identity propagation flows a corporate identity through S3 Access Grants and Amazon Redshift, end to end.",
+      "url": "https://builder.aws.com/content/3Cfwfe3Ki72MevYLu48WAInnThq",
+      "imageUrl": "",
+      "authorName": "Jared",
+      "authorAlias": "jaredwarren",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35l2rDIIQMkCRZWF3j5aabB3Sha.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-21T17:31:40.862Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3AEGjymaA1xUqDAPgoK0uLn1SRy",
       "title": "Built on Bedrock · SF May 12th",
       "description": "Built on Bedrock Demo Night in May",
       "url": "https://builder.aws.com/content/3AEGjymaA1xUqDAPgoK0uLn1SRy",
-      "imageUrl": "",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cg0lFGecqSTgTJKw1JgQfXvfHR/Buil.webp",
       "authorName": "Jean Malha",
       "authorAlias": "jeanmalha",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34CVgGL0eX0ufim1vFBcRWf07VM.webp",
@@ -32,7 +140,7 @@
       "lng": -75.8449946,
       "tags": [],
       "publishedAt": "2026-04-21T16:37:21.001Z",
-      "likesCount": 3,
+      "likesCount": 5,
       "commentsCount": 0
     },
     {
@@ -77,132 +185,6 @@
       "publishedAt": "2026-04-21T15:50:50.577Z",
       "likesCount": 10,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3CfjV9MKBvge35LrYTPS1f8MZws",
-      "title": "Financial Document Processing Automation with Amazon Quick Automate",
-      "description": "Learn how to build an end-to-end financial document processing pipeline using Amazon Quick Automate. This step-by-step guide walks through a 6-step workflow that automates document retrieval from investor relations websites, AI-powered data extraction, financial analysis with KPI calculations, and report distribution — all with no custom code required.",
-      "url": "https://builder.aws.com/content/3CfjV9MKBvge35LrYTPS1f8MZws",
-      "imageUrl": "",
-      "authorName": "George",
-      "authorAlias": "ngeorgek",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-quick-suite"
-      ],
-      "publishedAt": "2026-04-21T15:10:33.863Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CfTDBX4dfQdP20Ra0K9NSLb4IG",
-      "title": "Unlocking the true potential of Route 53 Global Resolver",
-      "description": "This article explores a few real life use cases of how AWS customers can leverage Route 53 Global Resolver.",
-      "url": "https://builder.aws.com/content/3CfTDBX4dfQdP20Ra0K9NSLb4IG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfdwtIdBCRMUc8wbW6qJIXjb7t/gene.webp",
-      "authorName": "Alex Iliev",
-      "authorAlias": "alexiaws",
-      "authorAvatarUrl": "",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "dns",
-        "external-dns",
-        "amazon-route53"
-      ],
-      "publishedAt": "2026-04-21T14:36:03.035Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3B23AyzcMXytaneQsi8zasir6kW",
-      "title": "I Built an AI Bracket Predictor on AWS. Here's How It Performed Against the Real Tournament.",
-      "description": "My AWS-powered bracket predictor picked Duke to win it all. Michigan had other plans. Here's what the model got right, what it missed, and what I learned.",
-      "url": "https://builder.aws.com/content/3B23AyzcMXytaneQsi8zasir6kW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CYdxus0YveVacJQeAhd5s6kh6x/arti.webp",
-      "authorName": "Thompson, JaQuan",
-      "authorAlias": "jaquath",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdMOcSBXE8fLTDf1AKqgjBZ6Dw.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-sagemaker-ai",
-        "serverless",
-        "generative-ai",
-        "machine-learning"
-      ],
-      "publishedAt": "2026-04-21T14:20:38.756Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CfNe6u1tkt2ITpdw7PvwXaXhMw",
-      "title": "Stop Paying Too Much for CloudWatch Logs — Auto-Archive to S3 via Firehose",
-      "description": "Keeping logs in CloudWatch Logs long-term costs over $1,000 for 18 months. Learn how the Subscription → Firehose → S3 (Deep Archive) architecture cuts that cost by ~85% with fully automated operations.",
-      "url": "https://builder.aws.com/content/3CfNe6u1tkt2ITpdw7PvwXaXhMw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfNxgJ6CoFQzIxOcBNlpWAbbdg/0rp1.webp",
-      "authorName": "Yuichi Sato",
-      "authorAlias": "sassssan68",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37vbz8F67dKFtus7N8RqGSKb2Ef.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "amazon-cloudwatch",
-        "amazon-s3",
-        "cost-optimization",
-        "aws-cloudwatch",
-        "amazon-s3-glacier"
-      ],
-      "publishedAt": "2026-04-21T12:12:19.245Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CfLbRnHmZ07Y9MeMzH5xoT0J1G",
-      "title": "The Architecture of Trust: Building Secure-by-Design AI Agents",
-      "description": "A Guide to the New Frontier of Agentic Security and Autonomous Development",
-      "url": "https://builder.aws.com/content/3CfLbRnHmZ07Y9MeMzH5xoT0J1G",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfLuGEtDsaxzUe6FxUTr7CSAY4/1_dwX.webp",
-      "authorName": "RamMohanReddy",
-      "authorAlias": "rammohanreddy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CfLRMbC8MGO8vksBBpY26JzI8t.webp",
-      "location": "MY",
-      "lat": 4.5693754,
-      "lng": 102.2656823,
-      "tags": [
-        "agentic-ai",
-        "ai",
-        "agents",
-        "ai-security",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-21T11:47:59.659Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CfC43BfNJdnkA82PhRVPGid1wy",
-      "title": "Who Spent the Tokens? Rethinking Bedrock Cost Governance with IAM Principal-Based Cost Allocation",
-      "description": "When enterprises can finally attribute generative AI costs to caller identity, what gets restructured isn't just the reports — it's platform governance itself.",
-      "url": "https://builder.aws.com/content/3CfC43BfNJdnkA82PhRVPGid1wy",
-      "imageUrl": "",
-      "authorName": "Mayinchen",
-      "authorAlias": "yincma",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31ttOyRTdxo3ybFpwh98vOoNY3o.webp",
-      "location": "Beijing, CN",
-      "lat": 39.9057136,
-      "lng": 116.3912972,
-      "tags": [],
-      "publishedAt": "2026-04-21T10:32:17.204Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -225,8 +207,29 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 964,
+      "likesCount": 974,
       "commentsCount": 232
+    },
+    {
+      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
+      "title": "AIdeas Finalist: Perspective",
+      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
+      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
+      "authorName": "Alwoch Sophia",
+      "authorAlias": "salwoch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
+      "location": "UG",
+      "lat": 1.5333554,
+      "lng": 32.2166578,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T23:31:03.702Z",
+      "likesCount": 260,
+      "commentsCount": 99
     },
     {
       "id": "/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
@@ -249,27 +252,6 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "title": "AIdeas Finalist: Perspective",
-      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
-      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
-      "authorName": "Alwoch Sophia",
-      "authorAlias": "salwoch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
-      "location": "UG",
-      "lat": 1.5333554,
-      "lng": 32.2166578,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 258,
-      "commentsCount": 99
-    },
-    {
       "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
       "title": "Construye con Strands Agents en Nerdearla Chile 2026",
       "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
@@ -285,6 +267,27 @@
       "publishedAt": "2026-04-14T22:12:52.358Z",
       "likesCount": 682,
       "commentsCount": 17
+    },
+    {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 1224,
+      "commentsCount": 824
     },
     {
       "id": "/content/3Cfdj8vqf4BRTWwtG7dOGGIPTyl",
@@ -310,25 +313,27 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
+      "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
+      "title": "AIdeas Finalist: CareLens AI — Transparent Care Guidance When It Matters Most.",
+      "description": "CareLens is a privacy-first AI platform that helps people understand healthcare costs before seeking treatment. By analyzing de-identified symptoms, location, and optional insurance details, it compares care options like ER, urgent care, or specialists and surfaces real-world price ranges using hospital transparency and CMS data. It doesn’t diagnose—it delivers clear, grounded cost, bill analyzing and care guidance so users can make confident decisions without surprise bills.",
+      "url": "https://builder.aws.com/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQpXsD0JnjTgsz5OtwkvL8Wtzr/Scre.webp",
+      "authorName": "Daniel Lambo",
+      "authorAlias": "daniellambo",
       "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
+        "NAMER",
         "aideas-2025",
-        "social-impact",
-        "APJC"
+        "north-america",
+        "social-good",
+        "social-impact"
       ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1216,
-      "commentsCount": 814
+      "publishedAt": "2026-04-16T08:35:54.943Z",
+      "likesCount": 216,
+      "commentsCount": 82
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -350,31 +355,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1134,
+      "likesCount": 1138,
       "commentsCount": 197
-    },
-    {
-      "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
-      "title": "AIdeas Finalist: CareLens AI — Transparent Care Guidance When It Matters Most.",
-      "description": "CareLens is a privacy-first AI platform that helps people understand healthcare costs before seeking treatment. By analyzing de-identified symptoms, location, and optional insurance details, it compares care options like ER, urgent care, or specialists and surfaces real-world price ranges using hospital transparency and CMS data. It doesn’t diagnose—it delivers clear, grounded cost, bill analyzing and care guidance so users can make confident decisions without surprise bills.",
-      "url": "https://builder.aws.com/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQpXsD0JnjTgsz5OtwkvL8Wtzr/Scre.webp",
-      "authorName": "Daniel Lambo",
-      "authorAlias": "daniellambo",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "NAMER",
-        "aideas-2025",
-        "north-america",
-        "social-good",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 214,
-      "commentsCount": 82
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -396,8 +378,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 139,
-      "commentsCount": 39
+      "likesCount": 143,
+      "commentsCount": 41
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -417,7 +399,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 881,
+      "likesCount": 891,
       "commentsCount": 157
     }
   ]
