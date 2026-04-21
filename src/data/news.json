@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21T09:33:27.497Z",
+  "updatedAt": "2026-04-21T10:30:53.241Z",
   "latest": [
     {
       "id": "/content/3CeykbdXc5vUgEa8fzNub4YuZM2",
@@ -442,8 +442,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 926,
-      "commentsCount": 226
+      "likesCount": 935,
+      "commentsCount": 227
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -463,7 +463,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 246,
+      "likesCount": 247,
       "commentsCount": 97
     },
     {
@@ -501,8 +501,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1017,
-      "commentsCount": 686
+      "likesCount": 1034,
+      "commentsCount": 693
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -524,7 +524,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 202,
+      "likesCount": 205,
       "commentsCount": 78
     },
     {
@@ -550,50 +550,6 @@
       "commentsCount": 11
     },
     {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 751,
-      "commentsCount": 125
-    },
-    {
-      "id": "/content/3CeykbdXc5vUgEa8fzNub4YuZM2",
-      "title": "Your Data Team Is Broken by Design - AWS Just Fixed It!!⚡",
-      "description": "AWS quietly shipped something in 2025 that data teams have been asking for since 2015.",
-      "url": "https://builder.aws.com/content/3CeykbdXc5vUgEa8fzNub4YuZM2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CezZIfkkulQpc7Efcgoq7QObFW/cove.webp",
-      "authorName": "Ganesh Kumar P",
-      "authorAlias": "ganeshkumarp",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ceya0FP542FY6aufQxKifNpwtF.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "amazon-sagemaker-lakehouse",
-        "amazon-datazone",
-        "data-engineering",
-        "data-lakes",
-        "machine-learning"
-      ],
-      "publishedAt": "2026-04-21T08:46:16.882Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -613,8 +569,29 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 712,
-      "commentsCount": 152
+      "likesCount": 781,
+      "commentsCount": 153
+    },
+    {
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 771,
+      "commentsCount": 127
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -638,6 +615,29 @@
       "publishedAt": "2026-04-17T20:29:28.119Z",
       "likesCount": 110,
       "commentsCount": 31
+    },
+    {
+      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
+      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
+      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
+      "authorName": "Sivadharshan V",
+      "authorAlias": "sivadharshan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "amazon-nova",
+        "serverless"
+      ],
+      "publishedAt": "2026-04-18T01:59:16.140Z",
+      "likesCount": 59,
+      "commentsCount": 52
     }
   ]
 }
