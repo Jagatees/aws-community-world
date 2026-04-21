@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-04-21T14:35:31.774Z",
+  "updatedAt": "2026-04-21T15:29:42.734Z",
   "latest": [
+    {
+      "id": "/content/3CfjV9MKBvge35LrYTPS1f8MZws",
+      "title": "Financial Document Processing Automation with Amazon Quick Automate",
+      "description": "Learn how to build an end-to-end financial document processing pipeline using Amazon Quick Automate. This step-by-step guide walks through a 6-step workflow that automates document retrieval from investor relations websites, AI-powered data extraction, financial analysis with KPI calculations, and report distribution — all with no custom code required.",
+      "url": "https://builder.aws.com/content/3CfjV9MKBvge35LrYTPS1f8MZws",
+      "imageUrl": "",
+      "authorName": "George",
+      "authorAlias": "ngeorgek",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-quick-suite"
+      ],
+      "publishedAt": "2026-04-21T15:10:33.863Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CfTDBX4dfQdP20Ra0K9NSLb4IG",
+      "title": "Unlocking the true potential of Route 53 Global Resolver",
+      "description": "This article explores a few real life use cases of how AWS customers can leverage Route 53 Global Resolver.",
+      "url": "https://builder.aws.com/content/3CfTDBX4dfQdP20Ra0K9NSLb4IG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfdwtIdBCRMUc8wbW6qJIXjb7t/gene.webp",
+      "authorName": "Alex Iliev",
+      "authorAlias": "alexiaws",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "dns",
+        "external-dns",
+        "amazon-route53"
+      ],
+      "publishedAt": "2026-04-21T14:36:03.035Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3B23AyzcMXytaneQsi8zasir6kW",
       "title": "I Built an AI Bracket Predictor on AWS. Here's How It Performed Against the Real Tournament.",
@@ -67,7 +107,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-21T11:47:59.659Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -107,7 +147,7 @@
         "machine-learning"
       ],
       "publishedAt": "2026-04-21T08:46:16.882Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 1
     },
     {
@@ -130,8 +170,8 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-21T03:47:14.483Z",
-      "likesCount": 2,
-      "commentsCount": 1
+      "likesCount": 3,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CeJTWk9wroGT1OLGKAuaa7xgzm",
@@ -208,7 +248,7 @@
         "tech"
       ],
       "publishedAt": "2026-04-21T00:03:00.787Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 2
     },
     {
@@ -249,7 +289,7 @@
         "students"
       ],
       "publishedAt": "2026-04-20T21:02:49.115Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -375,46 +415,6 @@
       "publishedAt": "2026-04-20T19:06:07.517Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CdN6NRi4qP4sjhHPWC0pLG6HXu",
-      "title": "Cost breakdown for Sagemaker Unified Studio Domain and Project",
-      "description": "This article explains cost incurred by an IDC based SMUS domain and a project created using  \"all capabilities\" project profile when its unused or idle. ",
-      "url": "https://builder.aws.com/content/3CdN6NRi4qP4sjhHPWC0pLG6HXu",
-      "imageUrl": "",
-      "authorName": "Gaurav Sharma",
-      "authorAlias": "gsharma",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-20T19:01:28.395Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BzvD7rBvI1mdF37GK54911wWhD",
-      "title": "Replaying and Validating Browser Automations with Amazon Nova Act",
-      "description": "Discover how you can replay trajectories with Amazon Nova Act to bring testing rigor to AI-powered browser automation. Record browser sessions as JSON artifacts, replay them in fresh environments, and automatically validate URLs, screenshots, and DOM structures — without re-invoking the AI model. With configurable tolerances, strict/permissive modes, and an interactive HTML report, catch UI regressions, detect flakiness, and verify environment parity across deployments.",
-      "url": "https://builder.aws.com/content/3BzvD7rBvI1mdF37GK54911wWhD",
-      "imageUrl": "",
-      "authorName": "Shruti Arora",
-      "authorAlias": "sarora",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33KyBgcu4pinVzRGzdLDdfHTE81.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agents",
-        "agentic-ai",
-        "ai",
-        "llm",
-        "all-builders-welcome"
-      ],
-      "publishedAt": "2026-04-20T18:29:13.697Z",
-      "likesCount": 3,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -437,7 +437,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 952,
+      "likesCount": 955,
       "commentsCount": 230
     },
     {
@@ -458,7 +458,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 255,
+      "likesCount": 257,
       "commentsCount": 99
     },
     {
@@ -475,7 +475,7 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 681,
+      "likesCount": 682,
       "commentsCount": 17
     },
     {
@@ -496,8 +496,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1111,
-      "commentsCount": 739
+      "likesCount": 1137,
+      "commentsCount": 753
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -519,7 +519,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 212,
+      "likesCount": 213,
       "commentsCount": 82
     },
     {
@@ -542,8 +542,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1084,
-      "commentsCount": 193
+      "likesCount": 1087,
+      "commentsCount": 194
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -564,7 +564,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-04-14T17:19:53.908Z",
-      "likesCount": 362,
+      "likesCount": 363,
       "commentsCount": 11
     },
     {
@@ -585,8 +585,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 801,
-      "commentsCount": 137
+      "likesCount": 832,
+      "commentsCount": 142
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -608,8 +608,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 116,
-      "commentsCount": 32
+      "likesCount": 125,
+      "commentsCount": 35
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
@@ -631,8 +631,8 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 60,
-      "commentsCount": 52
+      "likesCount": 61,
+      "commentsCount": 53
     }
   ]
 }
