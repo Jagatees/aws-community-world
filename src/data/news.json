@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-04-20T23:15:46.603Z",
+  "updatedAt": "2026-04-21T00:27:59.192Z",
   "latest": [
+    {
+      "id": "/content/3CdeSLSAfKLlVCRKMDsbnEXvX4S",
+      "title": "Como comecei a aprender tecnologia sem ser da área",
+      "description": "Sou estudante de Engenharia Química e decidi começar a aprender mais sobre tecnologia. Nesse artigo, compartilho como dei os primeiros passos e o que tem me ajudado nessa jornada.",
+      "url": "https://builder.aws.com/content/3CdeSLSAfKLlVCRKMDsbnEXvX4S",
+      "imageUrl": "",
+      "authorName": "Andrey Andrade e Souza",
+      "authorAlias": "andreysouza",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSgABXZpQs7p6oBmWTLR01x5X2.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "students",
+        "tech"
+      ],
+      "publishedAt": "2026-04-21T00:03:00.787Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CdipIPpiqS0rYVZBQ47dKbJrBj",
       "title": "Agentic AI Hackathon - SF",
@@ -81,7 +102,7 @@
         "students"
       ],
       "publishedAt": "2026-04-20T20:42:47.343Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 0
     },
     {
@@ -399,28 +420,6 @@
       "publishedAt": "2026-04-20T14:28:04.403Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CUZdtB80adMXU9g6vgbL2n9aX1",
-      "title": "DynamoDB Event Readiness, Part 4: SDK Configuration, Load Testing & Day-of Execution",
-      "description": "The last 10% is where events still fail. This final part covers SDK configuration, load testing strategy, and a day-of execution runbook — plus the full series checklist you can print and run before every major event. Part 4 of a 4-part DynamoDB event readiness series.",
-      "url": "https://builder.aws.com/content/3CUZdtB80adMXU9g6vgbL2n9aX1",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUZkhwrXtuqDdG6I7pBOXIagI8/cove.webp",
-      "authorName": "Vijayraghavan, Karthik",
-      "authorAlias": "karthik",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-dynamodb",
-        "sdk",
-        "load-testing",
-        "observability"
-      ],
-      "publishedAt": "2026-04-20T13:27:57.898Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -443,8 +442,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 788,
-      "commentsCount": 207
+      "likesCount": 792,
+      "commentsCount": 209
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -551,27 +550,25 @@
       "commentsCount": 470
     },
     {
-      "id": "/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
-      "title": "AIdeas Finalist: RTC — Runtime Trust Calibrator",
-      "description": "Most dangerous AI failures are failures of commitment governance — systems committing too strongly, too early, or too inconsistently under uncertainty. RTC is an inference-time layer that governs whether, what, and how AI systems commit before responses reach users.",
-      "url": "https://builder.aws.com/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C5Q8R09Qg9YBQXql3eru38ddYT/rtc_.webp",
-      "authorName": "Arijit Chatterjee",
-      "authorAlias": "arijitchatterjee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ZjAZjAcD1SLCBSEJdRJM9ZSQU.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
+      "id": "/content/3CdeSLSAfKLlVCRKMDsbnEXvX4S",
+      "title": "Como comecei a aprender tecnologia sem ser da área",
+      "description": "Sou estudante de Engenharia Química e decidi começar a aprender mais sobre tecnologia. Nesse artigo, compartilho como dei os primeiros passos e o que tem me ajudado nessa jornada.",
+      "url": "https://builder.aws.com/content/3CdeSLSAfKLlVCRKMDsbnEXvX4S",
+      "imageUrl": "",
+      "authorName": "Andrey Andrade e Souza",
+      "authorAlias": "andreysouza",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSgABXZpQs7p6oBmWTLR01x5X2.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "aideas-2025",
-        "APJC",
-        "commercial-solutions",
-        "responsible-ai",
-        "governance"
+        "aws-builders",
+        "students",
+        "tech"
       ],
-      "publishedAt": "2026-04-08T18:15:47.018Z",
-      "likesCount": 66,
-      "commentsCount": 24
+      "publishedAt": "2026-04-21T00:03:00.787Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -616,29 +613,31 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 57,
+      "likesCount": 58,
       "commentsCount": 51
     },
     {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
+      "title": "AIdeas Finalist: RTC — Runtime Trust Calibrator",
+      "description": "Most dangerous AI failures are failures of commitment governance — systems committing too strongly, too early, or too inconsistently under uncertainty. RTC is an inference-time layer that governs whether, what, and how AI systems commit before responses reach users.",
+      "url": "https://builder.aws.com/content/3C5MBpdh8oCJRoVybWWvHAPo0YP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C5Q8R09Qg9YBQXql3eru38ddYT/rtc_.webp",
+      "authorName": "Arijit Chatterjee",
+      "authorAlias": "arijitchatterjee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ZjAZjAcD1SLCBSEJdRJM9ZSQU.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
       "tags": [
         "aideas-2025",
-        "social-impact",
-        "APJC"
+        "APJC",
+        "commercial-solutions",
+        "responsible-ai",
+        "governance"
       ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 633,
-      "commentsCount": 96
+      "publishedAt": "2026-04-08T18:15:47.018Z",
+      "likesCount": 66,
+      "commentsCount": 24
     }
   ]
 }
