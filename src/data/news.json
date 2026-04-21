@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-21T20:18:41.033Z",
+  "updatedAt": "2026-04-21T21:16:52.236Z",
   "latest": [
+    {
+      "id": "/content/3CgHqHjdNtIUN7nJR1nKoT2giJM",
+      "title": "O TCU questionou o MEC sobre a AWS, mas precisamos ver o outro lado da moeda",
+      "description": "Vi muita gente compartilhando a notícia do TCU sobre a \"dependência excessiva\" do MEC em relação à AWS. O Tribunal está certo em cobrar governança, mas como alguém que estuda e curte cloud, eu sinto que precisamos defender o lado técnico dessa escolha também.\n\nPor que o MEC (e tantas empresas) aceitam esse \"risco\" de ficar na AWS?",
+      "url": "https://builder.aws.com/content/3CgHqHjdNtIUN7nJR1nKoT2giJM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgOsjhnXWPgDL9lFgATBfuQ8X9/a04e.webp",
+      "authorName": "Gabriel Campos Seemann",
+      "authorAlias": "gseemann",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-community-builders",
+        "students",
+        "builder-center",
+        "community"
+      ],
+      "publishedAt": "2026-04-21T20:41:12.982Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CL9hccJUhwVv8sNm8G9H1wljo3",
       "title": "The power of knowing",
@@ -168,23 +191,6 @@
       "publishedAt": "2026-04-21T17:31:40.862Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3AEGjymaA1xUqDAPgoK0uLn1SRy",
-      "title": "Built on Bedrock · SF May 12th",
-      "description": "Built on Bedrock Demo Night in May",
-      "url": "https://builder.aws.com/content/3AEGjymaA1xUqDAPgoK0uLn1SRy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cg0lFGecqSTgTJKw1JgQfXvfHR/Buil.webp",
-      "authorName": "Jean Malha",
-      "authorAlias": "jeanmalha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34CVgGL0eX0ufim1vFBcRWf07VM.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-21T17:10:12.222Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -207,7 +213,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 995,
+      "likesCount": 1003,
       "commentsCount": 233
     },
     {
@@ -245,7 +251,7 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 682,
+      "likesCount": 683,
       "commentsCount": 17
     },
     {
@@ -266,28 +272,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1228,
+      "likesCount": 1229,
       "commentsCount": 826
-    },
-    {
-      "id": "/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
-      "title": "Top 3 recursos interessantes da AWS para estudantes de tecnologia",
-      "description": "Amazon EC2, Amazon S3 e AWS IAM estão entre os principais serviços da AWS. Juntos, eles ensinam fundamentos de servidores, armazenamento em nuvem e segurança, áreas essenciais para quem deseja crescer na tecnologia.\n",
-      "url": "https://builder.aws.com/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
-      "imageUrl": "",
-      "authorName": "Yan Pettene Pinto",
-      "authorAlias": "yan027",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "tech",
-        "aws-academy"
-      ],
-      "publishedAt": "2026-04-21T15:50:50.577Z",
-      "likesCount": 11,
-      "commentsCount": 3
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -334,6 +320,26 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1142,
       "commentsCount": 197
+    },
+    {
+      "id": "/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "title": "Top 3 recursos interessantes da AWS para estudantes de tecnologia",
+      "description": "Amazon EC2, Amazon S3 e AWS IAM estão entre os principais serviços da AWS. Juntos, eles ensinam fundamentos de servidores, armazenamento em nuvem e segurança, áreas essenciais para quem deseja crescer na tecnologia.\n",
+      "url": "https://builder.aws.com/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "imageUrl": "",
+      "authorName": "Yan Pettene Pinto",
+      "authorAlias": "yan027",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "tech",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-04-21T15:50:50.577Z",
+      "likesCount": 11,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -397,7 +403,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 785,
+      "likesCount": 792,
       "commentsCount": 149
     }
   ]
