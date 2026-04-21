@@ -1,6 +1,49 @@
 {
-  "updatedAt": "2026-04-21T15:29:42.734Z",
+  "updatedAt": "2026-04-21T16:25:22.974Z",
   "latest": [
+    {
+      "id": "/content/3Cfdj8vqf4BRTWwtG7dOGGIPTyl",
+      "title": "De Calouro à Líder Estudantil Builder AWS: Minha Jornada na Nuvem e AWS Builder Center",
+      "description": "Quando cheguei a Limeira para cursar Sistemas de Informação na Unicamp, minha bagagem cabia em algumas caixas dentro de uma kitnet recém-alugada. Eu trazia comigo o diploma de técnico do IFSP e uma série de experiências que eu chamava de \"meus pontos\" (dots): projetos inacabados, participações em feiras e horas de código em linguagens diferentes.",
+      "url": "https://builder.aws.com/content/3Cfdj8vqf4BRTWwtG7dOGGIPTyl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfprSjU6jEMLCv4SyS4b7nj4fV/cove.webp",
+      "authorName": "Thomas Henrique de Souza Santos",
+      "authorAlias": "othomhenrique",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CfkYLTwUbPWDv1YKsyjQXoDlXp.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "students",
+        "builder-center",
+        "aws-community-builders",
+        "community"
+      ],
+      "publishedAt": "2026-04-21T16:15:02.169Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "title": "Top 3 recursos interessantes da AWS para estudantes de tecnologia",
+      "description": "Amazon EC2, Amazon S3 e AWS IAM estão entre os principais serviços da AWS. Juntos, eles ensinam fundamentos de servidores, armazenamento em nuvem e segurança, áreas essenciais para quem deseja crescer na tecnologia.\n",
+      "url": "https://builder.aws.com/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "imageUrl": "",
+      "authorName": "Yan Pettene Pinto",
+      "authorAlias": "yan027",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "tech",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-04-21T15:50:50.577Z",
+      "likesCount": 7,
+      "commentsCount": 2
+    },
     {
       "id": "/content/3CfjV9MKBvge35LrYTPS1f8MZws",
       "title": "Financial Document Processing Automation with Amazon Quick Automate",
@@ -170,8 +213,8 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-21T03:47:14.483Z",
-      "likesCount": 3,
-      "commentsCount": 2
+      "likesCount": 11,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CeJTWk9wroGT1OLGKAuaa7xgzm",
@@ -248,7 +291,7 @@
         "tech"
       ],
       "publishedAt": "2026-04-21T00:03:00.787Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 2
     },
     {
@@ -331,7 +374,7 @@
         "students"
       ],
       "publishedAt": "2026-04-20T20:42:47.343Z",
-      "likesCount": 9,
+      "likesCount": 10,
       "commentsCount": 0
     },
     {
@@ -377,44 +420,6 @@
       "publishedAt": "2026-04-20T19:50:20.456Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CdPQEc3wmufUFrucplG7wdQeh5",
-      "title": "The 4x4: Cloud Ops from AWS and Your Community",
-      "description": "4 AWS picks, 4 community picks on Cloud Ops",
-      "url": "https://builder.aws.com/content/3CdPQEc3wmufUFrucplG7wdQeh5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CdPXmYEa6TvfTT6xdhTKtauHgt/Scre.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-20T19:45:56.606Z",
-      "likesCount": 7,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CdFLv8AbUtZfFswHEddeEF2xtj",
-      "title": "Realizando o upload de arquivos no S3 utilizando URLs pré assinadas com Serverless Framework",
-      "description": "Este artigo explora como realizar o upload de arquivos para o Amazon S3 utilizando URLs pré-assinadas, implementadas com o Serverless Framework. Aborda desde a geração segura das URLs até o envio direto do cliente, destacando benefícios como escalabilidade, redução de carga no backend e boas práticas de segurança em arquiteturas serverless.",
-      "url": "https://builder.aws.com/content/3CdFLv8AbUtZfFswHEddeEF2xtj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CdHIoJRcmLvYYeVmXmmUnJC4DO/0_Bw8.webp",
-      "authorName": "João Emboaba",
-      "authorAlias": "jemboaba",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdDJXihuH1FOmAZcXSvNV1MSUt.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-s3",
-        "aws-cloudformation",
-        "aws-lambda"
-      ],
-      "publishedAt": "2026-04-20T19:06:07.517Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -439,6 +444,26 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 955,
       "commentsCount": 230
+    },
+    {
+      "id": "/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "title": "Top 3 recursos interessantes da AWS para estudantes de tecnologia",
+      "description": "Amazon EC2, Amazon S3 e AWS IAM estão entre os principais serviços da AWS. Juntos, eles ensinam fundamentos de servidores, armazenamento em nuvem e segurança, áreas essenciais para quem deseja crescer na tecnologia.\n",
+      "url": "https://builder.aws.com/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "imageUrl": "",
+      "authorName": "Yan Pettene Pinto",
+      "authorAlias": "yan027",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "tech",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-04-21T15:50:50.577Z",
+      "likesCount": 7,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -496,8 +521,31 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1137,
-      "commentsCount": 753
+      "likesCount": 1180,
+      "commentsCount": 787
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1131,
+      "commentsCount": 195
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -521,29 +569,6 @@
       "publishedAt": "2026-04-16T08:35:54.943Z",
       "likesCount": 213,
       "commentsCount": 82
-    },
-    {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1087,
-      "commentsCount": 194
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -585,8 +610,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 832,
-      "commentsCount": 142
+      "likesCount": 854,
+      "commentsCount": 152
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -608,31 +633,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 125,
-      "commentsCount": 35
-    },
-    {
-      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
-      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
-      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
-      "authorName": "Sivadharshan V",
-      "authorAlias": "sivadharshan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "amazon-nova",
-        "serverless"
-      ],
-      "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 61,
-      "commentsCount": 53
+      "likesCount": 131,
+      "commentsCount": 37
     }
   ]
 }
