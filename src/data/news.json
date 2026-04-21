@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-04-21T21:16:52.236Z",
+  "updatedAt": "2026-04-21T22:15:44.721Z",
   "latest": [
+    {
+      "id": "/content/3CgS2qMmo7S6NUAHtAk1KkyV64T",
+      "title": "Automate Code Modernization with AWS Transform and Kiro",
+      "description": "Run enterprise-scale code transformations, version upgrades, and SDK migrations directly from Kiro — with job state synced across IDE and web console.",
+      "url": "https://builder.aws.com/content/3CgS2qMmo7S6NUAHtAk1KkyV64T",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgUpOry1neFsvra5Izt3XaqgT3/kiro.webp",
+      "authorName": "Shashiraj Jeripotula",
+      "authorAlias": "shashiv",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xNN8mCLnzqJL13FLeuusLa8zCj.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "aws-transform",
+        "mcp",
+        "kiro-agent"
+      ],
+      "publishedAt": "2026-04-21T21:29:29.675Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CYaEOTqsCPmUqgRaupEKDeACL0",
+      "title": "Technical Deep Dive: How I Delivered Zero Trust Security for a Client’s Legacy PHP System — Without Rewrites, Downtime, or Big Costs (Part 2)",
+      "description": "This section expands on the technical architecture and implementation behind my recent Zero Trust case study. ",
+      "url": "https://builder.aws.com/content/3CYaEOTqsCPmUqgRaupEKDeACL0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgU9wwt92dbCSUOK0Of4zjH554/imag.webp",
+      "authorName": "Jonathan Wong",
+      "authorAlias": "jonanata",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdiLMbcx1U8Emj177eurPoDLV5.webp",
+      "location": "CA",
+      "lat": 61.0666922,
+      "lng": -107.991707,
+      "tags": [
+        "cybersecurity",
+        "network-security",
+        "cloud-security",
+        "security-identity",
+        "zero-trust"
+      ],
+      "publishedAt": "2026-04-21T21:24:49.876Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CgHqHjdNtIUN7nJR1nKoT2giJM",
       "title": "O TCU questionou o MEC sobre a AWS, mas precisamos ver o outro lado da moeda",
@@ -157,40 +202,6 @@
       "publishedAt": "2026-04-21T17:56:36.483Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CUOiAaJhEuB1uu5cAPwRKqz9hP",
-      "title": "5 AWS Services Every Student Should Know",
-      "description": "In this article student will learn the top and most useful aws service that can be very useful.",
-      "url": "https://builder.aws.com/content/3CUOiAaJhEuB1uu5cAPwRKqz9hP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cd9D5QeKGBDrDqEQiquQ1T7AYg/AWS-.webp",
-      "authorName": "Abhishek Kumar Yadav",
-      "authorAlias": "abhishekk007",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33VsMB7ANL7cnFXIrWYaaNpIaxC.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-21T17:41:56.297Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cfwfe3Ki72MevYLu48WAInnThq",
-      "title": "From Role ARNs to Real Humans: Identity-Aware Data Pipelines on AWS",
-      "description": "Role ARNs don't answer 'who loaded that data?' — humans do. A three-account reference implementation showing how trusted identity propagation flows a corporate identity through S3 Access Grants and Amazon Redshift, end to end.",
-      "url": "https://builder.aws.com/content/3Cfwfe3Ki72MevYLu48WAInnThq",
-      "imageUrl": "",
-      "authorName": "Jared",
-      "authorAlias": "jaredwarren",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35l2rDIIQMkCRZWF3j5aabB3Sha.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-21T17:31:40.862Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -213,8 +224,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1003,
-      "commentsCount": 233
+      "likesCount": 1008,
+      "commentsCount": 236
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -238,23 +249,6 @@
       "commentsCount": 99
     },
     {
-      "id": "/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "title": "Construye con Strands Agents en Nerdearla Chile 2026",
-      "description": "Crea tu primer proyecto con Strands Agents en Nerdearla del 17 y 18 de Abril 2026 en Centro GAM, Santiago, Chile.",
-      "url": "https://builder.aws.com/content/3CMloU3lKMTG4s1RAUVFXBuZStT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CMnz81OecHrjILVoj5h7tcIUjC/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 683,
-      "commentsCount": 17
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -272,8 +266,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1229,
-      "commentsCount": 826
+      "likesCount": 1231,
+      "commentsCount": 827
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -361,7 +355,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 146,
+      "likesCount": 147,
       "commentsCount": 41
     },
     {
@@ -403,8 +397,29 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 792,
+      "likesCount": 834,
       "commentsCount": 149
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 653,
+      "commentsCount": 227
     }
   ]
 }
