@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-21T22:15:44.721Z",
+  "updatedAt": "2026-04-21T23:13:55.931Z",
   "latest": [
+    {
+      "id": "/content/3CDSoojn3cpLd7Ge9Cu7wNlfGyS",
+      "title": "Minha primeira semana com o AWS Builder Center: o que eu aprendi (e o que ninguém me contou antes)",
+      "description": "Tudo que eu pude perceber no primeiro contato com AWS.",
+      "url": "https://builder.aws.com/content/3CDSoojn3cpLd7Ge9Cu7wNlfGyS",
+      "imageUrl": "",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "community",
+        "beginner-projects",
+        "students",
+        "cloud-concepts",
+        "career"
+      ],
+      "publishedAt": "2026-04-21T22:46:13.264Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CgS2qMmo7S6NUAHtAk1KkyV64T",
       "title": "Automate Code Modernization with AWS Transform and Kiro",
@@ -185,23 +208,6 @@
       "publishedAt": "2026-04-21T18:09:28.466Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cg4vq7dNVUrjifYzA0QaryfyLQ",
-      "title": "Using Amazon Redshift Enhanced VPC Routing with AWS Network Firewall and IAM Identity Center",
-      "description": "When you flip on Enhanced VPC Routing, Redshift stops routing its own traffic and you're in charge. Here's a reference implementation with two approaches — SNAT and firewall-protected — plus a validated domain allowlist for running Redshift with Identity Center and S3 Access Grants.",
-      "url": "https://builder.aws.com/content/3Cg4vq7dNVUrjifYzA0QaryfyLQ",
-      "imageUrl": "",
-      "authorName": "Jared",
-      "authorAlias": "jaredwarren",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35l2rDIIQMkCRZWF3j5aabB3Sha.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-21T17:56:36.483Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -224,7 +230,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1008,
+      "likesCount": 1011,
       "commentsCount": 236
     },
     {
@@ -266,8 +272,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1231,
-      "commentsCount": 827
+      "likesCount": 1235,
+      "commentsCount": 832
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -289,7 +295,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 216,
+      "likesCount": 217,
       "commentsCount": 82
     },
     {
@@ -312,28 +318,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1142,
+      "likesCount": 1143,
       "commentsCount": 197
-    },
-    {
-      "id": "/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
-      "title": "Top 3 recursos interessantes da AWS para estudantes de tecnologia",
-      "description": "Amazon EC2, Amazon S3 e AWS IAM estão entre os principais serviços da AWS. Juntos, eles ensinam fundamentos de servidores, armazenamento em nuvem e segurança, áreas essenciais para quem deseja crescer na tecnologia.\n",
-      "url": "https://builder.aws.com/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
-      "imageUrl": "",
-      "authorName": "Yan Pettene Pinto",
-      "authorAlias": "yan027",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "tech",
-        "aws-academy"
-      ],
-      "publishedAt": "2026-04-21T15:50:50.577Z",
-      "likesCount": 11,
-      "commentsCount": 3
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -359,6 +345,27 @@
       "commentsCount": 41
     },
     {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 887,
+      "commentsCount": 149
+    },
+    {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
       "title": "AIdeas Finalist: Aether Health",
       "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
@@ -380,25 +387,24 @@
       "commentsCount": 157
     },
     {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "title": "Top 3 recursos interessantes da AWS para estudantes de tecnologia",
+      "description": "Amazon EC2, Amazon S3 e AWS IAM estão entre os principais serviços da AWS. Juntos, eles ensinam fundamentos de servidores, armazenamento em nuvem e segurança, áreas essenciais para quem deseja crescer na tecnologia.\n",
+      "url": "https://builder.aws.com/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "imageUrl": "",
+      "authorName": "Yan Pettene Pinto",
+      "authorAlias": "yan027",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
+        "tech",
+        "aws-academy"
       ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 834,
-      "commentsCount": 149
+      "publishedAt": "2026-04-21T15:50:50.577Z",
+      "likesCount": 11,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -418,7 +424,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 653,
+      "likesCount": 655,
       "commentsCount": 227
     }
   ]
