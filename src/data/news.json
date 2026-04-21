@@ -1,6 +1,52 @@
 {
-  "updatedAt": "2026-04-21T11:26:26.980Z",
+  "updatedAt": "2026-04-21T12:22:05.130Z",
   "latest": [
+    {
+      "id": "/content/3CfNe6u1tkt2ITpdw7PvwXaXhMw",
+      "title": "Stop Paying Too Much for CloudWatch Logs — Auto-Archive to S3 via Firehose",
+      "description": "Keeping logs in CloudWatch Logs long-term costs over $1,000 for 18 months. Learn how the Subscription → Firehose → S3 (Deep Archive) architecture cuts that cost by ~85% with fully automated operations.",
+      "url": "https://builder.aws.com/content/3CfNe6u1tkt2ITpdw7PvwXaXhMw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfNxgJ6CoFQzIxOcBNlpWAbbdg/0rp1.webp",
+      "authorName": "Yuichi Sato",
+      "authorAlias": "sassssan68",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37vbz8F67dKFtus7N8RqGSKb2Ef.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "amazon-cloudwatch",
+        "amazon-s3",
+        "cost-optimization",
+        "aws-cloudwatch",
+        "amazon-s3-glacier"
+      ],
+      "publishedAt": "2026-04-21T12:12:19.245Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CfLbRnHmZ07Y9MeMzH5xoT0J1G",
+      "title": "The Architecture of Trust: Building Secure-by-Design AI Agents",
+      "description": "A Guide to the New Frontier of Agentic Security and Autonomous Development",
+      "url": "https://builder.aws.com/content/3CfLbRnHmZ07Y9MeMzH5xoT0J1G",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfLuGEtDsaxzUe6FxUTr7CSAY4/1_dwX.webp",
+      "authorName": "RamMohanReddy",
+      "authorAlias": "rammohanreddy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CfLRMbC8MGO8vksBBpY26JzI8t.webp",
+      "location": "MY",
+      "lat": 4.5693754,
+      "lng": 102.2656823,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "agents",
+        "ai-security",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-21T11:47:59.659Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CfC43BfNJdnkA82PhRVPGid1wy",
       "title": "Who Spent the Tokens? Rethinking Bedrock Cost Governance with IAM Principal-Based Cost Allocation",
@@ -369,51 +415,6 @@
       "publishedAt": "2026-04-20T17:02:08.656Z",
       "likesCount": 2,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3Cd8N9ivrThU64md8kHV1UXxxlj",
-      "title": "Build YC's Next Unicorn - Agent Hack Day at AWS Loft",
-      "description": "​If you're in the current YC orbit or preparing to apply to YC while building with AI agents, this is the kind of room you want to earn your way into.",
-      "url": "https://builder.aws.com/content/3Cd8N9ivrThU64md8kHV1UXxxlj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cd8vwGsiJh5qwIW8Bl9Os6yicX/apri.webp",
-      "authorName": "Adam Chan",
-      "authorAlias": "hackersquad",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "agent-to-agent",
-        "ai",
-        "ai-agents",
-        "builder-loft"
-      ],
-      "publishedAt": "2026-04-20T16:58:57.770Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cd5952EqnkC0EIs5VetgXdTINP",
-      "title": "Building AI-Powered Business Solutions for Latin America with Amazon Quick: A Hands-on Technical Guide",
-      "description": "Learn how to deploy a full-scale Agentic AI digital workspace using Amazon Quick (formerly QuickSight). This technical deep dive covers 5 real-world use cases for the LATAM market, Infrastructure as Code (CloudFormation) patterns, and critical lessons learned from automating reporting pipelines.",
-      "url": "https://builder.aws.com/content/3Cd5952EqnkC0EIs5VetgXdTINP",
-      "imageUrl": "",
-      "authorName": "Exegol",
-      "authorAlias": "luiszuniga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
-      "location": "CR",
-      "lat": 10.2735633,
-      "lng": -84.0739102,
-      "tags": [
-        "amazon-quicksight",
-        "amazon-quick-suite",
-        "developer-productivity",
-        "developer"
-      ],
-      "publishedAt": "2026-04-20T16:28:58.925Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -436,7 +437,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 939,
+      "likesCount": 942,
       "commentsCount": 229
     },
     {
@@ -457,7 +458,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 249,
+      "likesCount": 250,
       "commentsCount": 98
     },
     {
@@ -495,8 +496,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1052,
-      "commentsCount": 701
+      "likesCount": 1056,
+      "commentsCount": 704
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -518,8 +519,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 206,
-      "commentsCount": 78
+      "likesCount": 209,
+      "commentsCount": 81
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -541,8 +542,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1034,
-      "commentsCount": 164
+      "likesCount": 1061,
+      "commentsCount": 173
     },
     {
       "id": "/content/3CM7pfa65G4sfLy1X1J0a3aIxPC",
@@ -584,8 +585,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 778,
-      "commentsCount": 129
+      "likesCount": 783,
+      "commentsCount": 135
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
