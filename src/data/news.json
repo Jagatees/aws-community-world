@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-21T08:36:52.869Z",
+  "updatedAt": "2026-04-21T09:33:27.497Z",
   "latest": [
+    {
+      "id": "/content/3CeykbdXc5vUgEa8fzNub4YuZM2",
+      "title": "Your Data Team Is Broken by Design - AWS Just Fixed It!!⚡",
+      "description": "AWS quietly shipped something in 2025 that data teams have been asking for since 2015.",
+      "url": "https://builder.aws.com/content/3CeykbdXc5vUgEa8fzNub4YuZM2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CezZIfkkulQpc7Efcgoq7QObFW/cove.webp",
+      "authorName": "Ganesh Kumar P",
+      "authorAlias": "ganeshkumarp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ceya0FP542FY6aufQxKifNpwtF.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-sagemaker-lakehouse",
+        "amazon-datazone",
+        "data-engineering",
+        "data-lakes",
+        "machine-learning"
+      ],
+      "publishedAt": "2026-04-21T08:46:16.882Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3Ce6WCJEPpICK2zgpSE3DNmGrDc",
       "title": "AWS Builder Center 101: Como dar os primeiros passos na nuvem sem gastar nada",
@@ -397,29 +420,6 @@
       "publishedAt": "2026-04-20T16:21:44.397Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CVbC714LFaQQyvdk3d7TunbKFM",
-      "title": "Do Código Local à Nuvem: Meus Primeiros Passos com AWS até a Certificação",
-      "description": "Um relato real de como superei a complexidade da infraestrutura e comecei a usar os serviços da AWS nos meus projetos e na minha carreira de TI.",
-      "url": "https://builder.aws.com/content/3CVbC714LFaQQyvdk3d7TunbKFM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cd0WV8EBXwPVSWyY3N0AjZuaZE/Gemi.webp",
-      "authorName": "Matheus Dev",
-      "authorAlias": "omaatheus",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUQGDA3OIFXIYFTk7BaAz8AOuH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-ec2",
-        "amazon-s3",
-        "all-builders-welcome",
-        "aws-builders",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-20T15:49:57.195Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -442,8 +442,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 899,
-      "commentsCount": 223
+      "likesCount": 926,
+      "commentsCount": 226
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -480,7 +480,7 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-04-14T22:12:52.358Z",
-      "likesCount": 679,
+      "likesCount": 680,
       "commentsCount": 17
     },
     {
@@ -501,8 +501,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 985,
-      "commentsCount": 652
+      "likesCount": 1017,
+      "commentsCount": 686
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -567,8 +567,54 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 734,
-      "commentsCount": 121
+      "likesCount": 751,
+      "commentsCount": 125
+    },
+    {
+      "id": "/content/3CeykbdXc5vUgEa8fzNub4YuZM2",
+      "title": "Your Data Team Is Broken by Design - AWS Just Fixed It!!⚡",
+      "description": "AWS quietly shipped something in 2025 that data teams have been asking for since 2015.",
+      "url": "https://builder.aws.com/content/3CeykbdXc5vUgEa8fzNub4YuZM2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CezZIfkkulQpc7Efcgoq7QObFW/cove.webp",
+      "authorName": "Ganesh Kumar P",
+      "authorAlias": "ganeshkumarp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ceya0FP542FY6aufQxKifNpwtF.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-sagemaker-lakehouse",
+        "amazon-datazone",
+        "data-engineering",
+        "data-lakes",
+        "machine-learning"
+      ],
+      "publishedAt": "2026-04-21T08:46:16.882Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 712,
+      "commentsCount": 152
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -592,52 +638,6 @@
       "publishedAt": "2026-04-17T20:29:28.119Z",
       "likesCount": 110,
       "commentsCount": 31
-    },
-    {
-      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
-      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
-      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
-      "authorName": "Sivadharshan V",
-      "authorAlias": "sivadharshan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "amazon-nova",
-        "serverless"
-      ],
-      "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 59,
-      "commentsCount": 52
-    },
-    {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 575,
-      "commentsCount": 147
     }
   ]
 }
