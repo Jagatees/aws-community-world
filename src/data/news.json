@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-04-22T01:34:31.028Z",
+  "updatedAt": "2026-04-22T03:04:32.092Z",
   "latest": [
+    {
+      "id": "/content/3B76CLg0IEmLTN9gdnThnVmykm5",
+      "title": "IRSA vs Pod Identity: Rethinking Workload Identity in Amazon EKS",
+      "description": "A deep dive into architecture, security models, and Terraform implementations for secure AWS access from Kubernetes workloads",
+      "url": "https://builder.aws.com/content/3B76CLg0IEmLTN9gdnThnVmykm5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ch8voMirW4X40hyNIGX38ldOtW/IRSA.webp",
+      "authorName": "Anish Kumar",
+      "authorAlias": "kumaryts",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B767ElJ4OoKWxx3V9kRtXOdy7j.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "amazon-eks",
+        "cloud-security",
+        "devops",
+        "iam",
+        "kubernetes"
+      ],
+      "publishedAt": "2026-04-22T02:59:17.529Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CgxgvYkWYL2MhFbzFtO4uY232N",
+      "title": "Establishing AI Agent Guardrails on AWS: A Framework for Safe Production Deployment",
+      "description": "AI agents have rapidly evolved from experimental chatbots to autonomous systems handling critical business operations. Today, these agents approve financial transactions, process insurance claims, and make healthcare decisions—often in milliseconds. While this autonomy drives competitive advantage, it also introduces significant risks that demand systematic safeguards. ",
+      "url": "https://builder.aws.com/content/3CgxgvYkWYL2MhFbzFtO4uY232N",
+      "imageUrl": "",
+      "authorName": "Varma Gottumukkala",
+      "authorAlias": "varmagottumukkala",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-22T02:00:53.501Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CfpEyZlktoI8MG0LmGBOlynD5R",
       "title": "Why You Need an AI Harness Before You Scale Agents",
@@ -21,7 +61,7 @@
         "meta"
       ],
       "publishedAt": "2026-04-22T01:26:00.462Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -38,7 +78,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-22T01:24:23.260Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -58,7 +98,7 @@
         "outposts"
       ],
       "publishedAt": "2026-04-22T00:59:31.258Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -75,7 +115,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -97,7 +137,7 @@
         "women-in-tech"
       ],
       "publishedAt": "2026-04-21T23:45:03.790Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -165,51 +205,6 @@
       "publishedAt": "2026-04-21T22:46:13.264Z",
       "likesCount": 2,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CgS2qMmo7S6NUAHtAk1KkyV64T",
-      "title": "Automate Code Modernization with AWS Transform and Kiro",
-      "description": "Run enterprise-scale code transformations, version upgrades, and SDK migrations directly from Kiro — with job state synced across IDE and web console.",
-      "url": "https://builder.aws.com/content/3CgS2qMmo7S6NUAHtAk1KkyV64T",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgUpOry1neFsvra5Izt3XaqgT3/kiro.webp",
-      "authorName": "Shashiraj Jeripotula",
-      "authorAlias": "shashiv",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xNN8mCLnzqJL13FLeuusLa8zCj.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "aws-transform",
-        "mcp",
-        "kiro-agent"
-      ],
-      "publishedAt": "2026-04-21T21:29:29.675Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CYaEOTqsCPmUqgRaupEKDeACL0",
-      "title": "Technical Deep Dive: How I Delivered Zero Trust Security for a Client’s Legacy PHP System — Without Rewrites, Downtime, or Big Costs (Part 2)",
-      "description": "This section expands on the technical architecture and implementation behind my recent Zero Trust case study. ",
-      "url": "https://builder.aws.com/content/3CYaEOTqsCPmUqgRaupEKDeACL0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgU9wwt92dbCSUOK0Of4zjH554/imag.webp",
-      "authorName": "Jonathan Wong",
-      "authorAlias": "jonanata",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdiLMbcx1U8Emj177eurPoDLV5.webp",
-      "location": "CA",
-      "lat": 61.0666922,
-      "lng": -107.991707,
-      "tags": [
-        "cybersecurity",
-        "network-security",
-        "cloud-security",
-        "security-identity",
-        "zero-trust"
-      ],
-      "publishedAt": "2026-04-21T21:24:49.876Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -232,7 +227,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1015,
+      "likesCount": 1019,
       "commentsCount": 236
     },
     {
@@ -274,8 +269,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1245,
-      "commentsCount": 841
+      "likesCount": 1294,
+      "commentsCount": 858
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -320,7 +315,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1143,
+      "likesCount": 1145,
       "commentsCount": 197
     },
     {
@@ -343,8 +338,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 148,
-      "commentsCount": 41
+      "likesCount": 150,
+      "commentsCount": 42
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -364,7 +359,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 887,
+      "likesCount": 888,
       "commentsCount": 149
     },
     {
@@ -385,7 +380,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 900,
+      "likesCount": 905,
       "commentsCount": 157
     },
     {
@@ -406,30 +401,31 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 673,
+      "likesCount": 681,
       "commentsCount": 229
     },
     {
-      "id": "/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
-      "title": "O que é ser um Líder Estudantil Builder AWS na prática.",
-      "description": "Ser Builder Leader é levar o conhecimento de cloud computing para dentro da universidade ,organizando comunidades, eventos e conexões que transformam a trajetória de outros estudantes.\n\nUma experiência que une liderança, tecnologia e comunidade, tudo dentro da própria universidade.",
-      "url": "https://builder.aws.com/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
-      "imageUrl": "",
-      "authorName": "Matheus Augusto Lemos de Sousa",
-      "authorAlias": "lemos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CgibhceZsLPeboXOlp3fUqHes7.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
+      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
+      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
+      "authorName": "Sivadharshan V",
+      "authorAlias": "sivadharshan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "all-builders-welcome",
-        "aws-builders",
-        "aws-community-builders",
-        "builder-center"
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "amazon-nova",
+        "serverless"
       ],
-      "publishedAt": "2026-04-21T23:23:12.899Z",
-      "likesCount": 1,
-      "commentsCount": 2
+      "publishedAt": "2026-04-18T01:59:16.140Z",
+      "likesCount": 65,
+      "commentsCount": 54
     }
   ]
 }
