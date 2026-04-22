@@ -1,6 +1,83 @@
 {
-  "updatedAt": "2026-04-22T00:24:39.238Z",
+  "updatedAt": "2026-04-22T01:34:31.028Z",
   "latest": [
+    {
+      "id": "/content/3CfpEyZlktoI8MG0LmGBOlynD5R",
+      "title": "Why You Need an AI Harness Before You Scale Agents",
+      "description": "I built a small AI harness over a weekend to solve a real problem: agent workflows were fast, but hard to control. This article shares the AWS blueprint I used to add guardrails, observability, and safe rollout gates before scaling.",
+      "url": "https://builder.aws.com/content/3CfpEyZlktoI8MG0LmGBOlynD5R",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfpOKVdkgWx3yGMjFTWhkbOylW/Scre.webp",
+      "authorName": "Sam Godson",
+      "authorAlias": "thesamgodson",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35VJCwt6tuZzgZiptmz9dZ7PPbw.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "agentic-ai",
+        "agent-hooks",
+        "agent-to-agent",
+        "ai-agents",
+        "meta"
+      ],
+      "publishedAt": "2026-04-22T01:26:00.462Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CgkihkBVf6xmGiUPf2QP3D3Ob2",
+      "title": "Implementing Database Guardrails to Prevent Prompt Injection in AI Agents",
+      "description": "AI agents that access production databases introduce a new class of security risk: prompt injection. Unlike traditional vulnerabilities that require technical expertise to exploit, prompt injection attacks use plain language to manipulate an AI agent into bypassing its instructions and accessing unauthorized data. In this post, you learn how to implement a three-layer defense architecture on AWS that makes unauthorized data access architecturally impossible, regardless of what prompts an attacker sends. ",
+      "url": "https://builder.aws.com/content/3CgkihkBVf6xmGiUPf2QP3D3Ob2",
+      "imageUrl": "",
+      "authorName": "Varma Gottumukkala",
+      "authorAlias": "varmagottumukkala",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-22T01:24:23.260Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CguD9dkncxkIzipmwDBPhQKNBl",
+      "title": "Norfolk State University Outreach Experience",
+      "description": "My journey in outreaching to different professors within the university and connecting with students. I had the opportunity to connect with a lot of individuals on campus that enhanced my knowledge and awareness.",
+      "url": "https://builder.aws.com/content/3CguD9dkncxkIzipmwDBPhQKNBl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CguQNr7lXrPePq1aJlHxzjcFGI/IMG_.webp",
+      "authorName": "Christian J. Baker",
+      "authorAlias": "christianjb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CKfNkG7T0Y4n3AotXqw4GcUPws.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "experience",
+        "outposts"
+      ],
+      "publishedAt": "2026-04-22T00:59:31.258Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CgjKrx2hxoz90rG5fGQnzwf6Ng",
       "title": "Minha primeira semana como Líder Estudantil AWS Builder na UNIESP: O que aprendi no AWS Builder Center",
@@ -133,89 +210,6 @@
       "publishedAt": "2026-04-21T21:24:49.876Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CgHqHjdNtIUN7nJR1nKoT2giJM",
-      "title": "O TCU questionou o MEC sobre a AWS, mas precisamos ver o outro lado da moeda",
-      "description": "Vi muita gente compartilhando a notícia do TCU sobre a \"dependência excessiva\" do MEC em relação à AWS. O Tribunal está certo em cobrar governança, mas como alguém que estuda e curte cloud, eu sinto que precisamos defender o lado técnico dessa escolha também.\n\nPor que o MEC (e tantas empresas) aceitam esse \"risco\" de ficar na AWS?",
-      "url": "https://builder.aws.com/content/3CgHqHjdNtIUN7nJR1nKoT2giJM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgOsjhnXWPgDL9lFgATBfuQ8X9/a04e.webp",
-      "authorName": "Gabriel Campos Seemann",
-      "authorAlias": "gseemann",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-community-builders",
-        "students",
-        "builder-center",
-        "community"
-      ],
-      "publishedAt": "2026-04-21T20:41:12.982Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CL9hccJUhwVv8sNm8G9H1wljo3",
-      "title": "The power of knowing",
-      "description": "On why AWS is such a powerful tool, and how you can take advantage of it as a college student. ",
-      "url": "https://builder.aws.com/content/3CL9hccJUhwVv8sNm8G9H1wljo3",
-      "imageUrl": "",
-      "authorName": "Eva Lesko",
-      "authorAlias": "evaletsgooo",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "cloud-concepts",
-        "aws-community",
-        "builder-center",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-21T19:33:19.292Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CgDGH8w65aafOQubW8NunAIfmQ",
-      "title": "Create tailored interview questions",
-      "description": "Amazon Quick's chat assistant helps hiring managers and HR teams generate tailored, role-specific interview questions by simply providing a job title and description. It produces behavioral, technical, situational, and cultural fit questions with follow-up probes — ensuring structured, consistent, and legally compliant interviews every time.",
-      "url": "https://builder.aws.com/content/3CgDGH8w65aafOQubW8NunAIfmQ",
-      "imageUrl": "",
-      "authorName": "Ajay",
-      "authorAlias": "ajsraj",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-quick-suite"
-      ],
-      "publishedAt": "2026-04-21T19:16:12.920Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CgBAzz0NHtyU1S4PcAHyATUVwq",
-      "title": "Summarize meeting notes into action items: Quick Chat Assistant",
-      "description": "Amazon Quick's chat assistant transforms raw meeting notes into structured summaries with key decisions, action items, owners, due dates, and risks — all in seconds. Just paste your notes or attach a file, and get a clear, scannable output that keeps your team aligned.",
-      "url": "https://builder.aws.com/content/3CgBAzz0NHtyU1S4PcAHyATUVwq",
-      "imageUrl": "",
-      "authorName": "Ajay",
-      "authorAlias": "ajsraj",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-quick-suite"
-      ],
-      "publishedAt": "2026-04-21T19:03:14.308Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -238,7 +232,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1013,
+      "likesCount": 1015,
       "commentsCount": 236
     },
     {
@@ -280,30 +274,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1238,
-      "commentsCount": 835
-    },
-    {
-      "id": "/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
-      "title": "O que é ser um Líder Estudantil Builder AWS na prática.",
-      "description": "Ser Builder Leader é levar o conhecimento de cloud computing para dentro da universidade ,organizando comunidades, eventos e conexões que transformam a trajetória de outros estudantes.\n\nUma experiência que une liderança, tecnologia e comunidade, tudo dentro da própria universidade.",
-      "url": "https://builder.aws.com/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
-      "imageUrl": "",
-      "authorName": "Matheus Augusto Lemos de Sousa",
-      "authorAlias": "lemos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CgibhceZsLPeboXOlp3fUqHes7.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders",
-        "aws-community-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-21T23:23:12.899Z",
-      "likesCount": 1,
-      "commentsCount": 2
+      "likesCount": 1245,
+      "commentsCount": 841
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -325,7 +297,7 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 217,
+      "likesCount": 218,
       "commentsCount": 82
     },
     {
@@ -371,7 +343,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 147,
+      "likesCount": 148,
       "commentsCount": 41
     },
     {
@@ -417,24 +389,47 @@
       "commentsCount": 157
     },
     {
-      "id": "/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
-      "title": "Top 3 recursos interessantes da AWS para estudantes de tecnologia",
-      "description": "Amazon EC2, Amazon S3 e AWS IAM estão entre os principais serviços da AWS. Juntos, eles ensinam fundamentos de servidores, armazenamento em nuvem e segurança, áreas essenciais para quem deseja crescer na tecnologia.\n",
-      "url": "https://builder.aws.com/content/3CfnI9Hyy5ipFp172tfyGvyT2Cm",
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 673,
+      "commentsCount": 229
+    },
+    {
+      "id": "/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
+      "title": "O que é ser um Líder Estudantil Builder AWS na prática.",
+      "description": "Ser Builder Leader é levar o conhecimento de cloud computing para dentro da universidade ,organizando comunidades, eventos e conexões que transformam a trajetória de outros estudantes.\n\nUma experiência que une liderança, tecnologia e comunidade, tudo dentro da própria universidade.",
+      "url": "https://builder.aws.com/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
       "imageUrl": "",
-      "authorName": "Yan Pettene Pinto",
-      "authorAlias": "yan027",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
+      "authorName": "Matheus Augusto Lemos de Sousa",
+      "authorAlias": "lemos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CgibhceZsLPeboXOlp3fUqHes7.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "tech",
-        "aws-academy"
+        "all-builders-welcome",
+        "aws-builders",
+        "aws-community-builders",
+        "builder-center"
       ],
-      "publishedAt": "2026-04-21T15:50:50.577Z",
-      "likesCount": 11,
-      "commentsCount": 3
+      "publishedAt": "2026-04-21T23:23:12.899Z",
+      "likesCount": 1,
+      "commentsCount": 2
     }
   ]
 }
