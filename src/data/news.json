@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-22T03:04:32.092Z",
+  "updatedAt": "2026-04-22T04:57:40.761Z",
   "latest": [
+    {
+      "id": "/content/3ChGXgI8Iv8zhXbDqHYdsRI55Jc",
+      "title": "在 Amazon Bedrock 上运行带 Skills 的 Claude Agent SDK",
+      "description": "本文演示如何在没有 Anthropic API 密钥的情况下，在 Amazon Bedrock 上运行 Claude Agent SDK。关键配置仅需两个环境变量：`CLAUDE_CODE_USE_BEDROCK` 和 `AWS_REGION`。SDK 的所有功能——Skills、子代理（subagents）和 MCP 服务器——都可以无需修改直接使用。整个调试过程通过 Kiro 的 AI 辅助开发完成，未查阅任何外部文档，展示了对话式 AI 如何加速 SDK 集成工作。",
+      "url": "https://builder.aws.com/content/3ChGXgI8Iv8zhXbDqHYdsRI55Jc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ChI5RYYTOtvtb2nPo9xIt9OZbZ/0-A-.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.2792968,
+      "lng": 114.1628907,
+      "tags": [
+        "amazon-bedrock",
+        "claude",
+        "anthropic-claude",
+        "agentic-ai",
+        "agents"
+      ],
+      "publishedAt": "2026-04-22T04:14:44.257Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3B76CLg0IEmLTN9gdnThnVmykm5",
       "title": "IRSA vs Pod Identity: Rethinking Workload Identity in Amazon EKS",
@@ -182,29 +205,6 @@
       "publishedAt": "2026-04-21T23:18:07.491Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CDSoojn3cpLd7Ge9Cu7wNlfGyS",
-      "title": "Minha primeira semana com o AWS Builder Center: o que eu aprendi (e o que ninguém me contou antes)",
-      "description": "Tudo que eu pude perceber no primeiro contato com AWS.",
-      "url": "https://builder.aws.com/content/3CDSoojn3cpLd7Ge9Cu7wNlfGyS",
-      "imageUrl": "",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "community",
-        "beginner-projects",
-        "students",
-        "cloud-concepts",
-        "career"
-      ],
-      "publishedAt": "2026-04-21T22:46:13.264Z",
-      "likesCount": 2,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -227,8 +227,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1019,
-      "commentsCount": 236
+      "likesCount": 1024,
+      "commentsCount": 237
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -269,8 +269,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1294,
-      "commentsCount": 858
+      "likesCount": 1331,
+      "commentsCount": 878
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -315,8 +315,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1145,
-      "commentsCount": 197
+      "likesCount": 1146,
+      "commentsCount": 201
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -338,8 +338,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 150,
-      "commentsCount": 42
+      "likesCount": 153,
+      "commentsCount": 44
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -380,8 +380,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 905,
-      "commentsCount": 157
+      "likesCount": 912,
+      "commentsCount": 159
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -401,7 +401,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 681,
+      "likesCount": 725,
       "commentsCount": 229
     },
     {
@@ -424,8 +424,8 @@
         "serverless"
       ],
       "publishedAt": "2026-04-18T01:59:16.140Z",
-      "likesCount": 65,
-      "commentsCount": 54
+      "likesCount": 66,
+      "commentsCount": 58
     }
   ]
 }
