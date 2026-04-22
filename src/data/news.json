@@ -1,6 +1,47 @@
 {
-  "updatedAt": "2026-04-22T05:48:41.749Z",
+  "updatedAt": "2026-04-22T06:38:11.746Z",
   "latest": [
+    {
+      "id": "/content/3ChWmyr185vlhc1lnkzIGcOGQP5",
+      "title": "MLS-C01: Your Machine Learning Specialty Exam Path",
+      "description": "Validate advanced machine learning expertise with the AWS Certified Machine Learning – Specialty (MLS-C01) exam. Explore study guides, costs, career benefits, and preparation tips to succeed.",
+      "url": "https://builder.aws.com/content/3ChWmyr185vlhc1lnkzIGcOGQP5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ChYxUINLa5J7OqLDGWk5qaSDY8/AWS-.webp",
+      "authorName": "Colton Scotts",
+      "authorAlias": "coltonscott",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zE5uWAmIyOjhJx5Vo5DTBACYTg.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "machine-learning",
+        "aws-certification",
+        "aws-community",
+        "aws-community-day-2026"
+      ],
+      "publishedAt": "2026-04-22T06:36:06.851Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ChWMD2VxrVLwNd9PJrALGQ31Fm",
+      "title": "Sagemaker",
+      "description": "I love the sagemaker ML models",
+      "url": "https://builder.aws.com/content/3ChWMD2VxrVLwNd9PJrALGQ31Fm",
+      "imageUrl": "",
+      "authorName": "Hirak",
+      "authorAlias": "hirak",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai"
+      ],
+      "publishedAt": "2026-04-22T06:12:04.515Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3ChSTZV7Kcpe0uDTDmhBIMhY2JX",
       "title": "Powering the Cloud with AWS",
@@ -175,8 +216,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "amazon-bedrock",
         "claude",
@@ -185,6 +226,145 @@
         "agents"
       ],
       "publishedAt": "2026-04-22T04:14:44.257Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3B76CLg0IEmLTN9gdnThnVmykm5",
+      "title": "IRSA vs Pod Identity: Rethinking Workload Identity in Amazon EKS",
+      "description": "A deep dive into architecture, security models, and Terraform implementations for secure AWS access from Kubernetes workloads",
+      "url": "https://builder.aws.com/content/3B76CLg0IEmLTN9gdnThnVmykm5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ch8voMirW4X40hyNIGX38ldOtW/IRSA.webp",
+      "authorName": "Anish Kumar",
+      "authorAlias": "kumaryts",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B767ElJ4OoKWxx3V9kRtXOdy7j.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "amazon-eks",
+        "cloud-security",
+        "devops",
+        "iam",
+        "kubernetes"
+      ],
+      "publishedAt": "2026-04-22T02:59:17.529Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CgxgvYkWYL2MhFbzFtO4uY232N",
+      "title": "Establishing AI Agent Guardrails on AWS: A Framework for Safe Production Deployment",
+      "description": "AI agents have rapidly evolved from experimental chatbots to autonomous systems handling critical business operations. Today, these agents approve financial transactions, process insurance claims, and make healthcare decisions—often in milliseconds. While this autonomy drives competitive advantage, it also introduces significant risks that demand systematic safeguards. ",
+      "url": "https://builder.aws.com/content/3CgxgvYkWYL2MhFbzFtO4uY232N",
+      "imageUrl": "",
+      "authorName": "Varma Gottumukkala",
+      "authorAlias": "varmagottumukkala",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-22T02:00:53.501Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CfpEyZlktoI8MG0LmGBOlynD5R",
+      "title": "Why You Need an AI Harness Before You Scale Agents",
+      "description": "I built a small AI harness over a weekend to solve a real problem: agent workflows were fast, but hard to control. This article shares the AWS blueprint I used to add guardrails, observability, and safe rollout gates before scaling.",
+      "url": "https://builder.aws.com/content/3CfpEyZlktoI8MG0LmGBOlynD5R",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CfpOKVdkgWx3yGMjFTWhkbOylW/Scre.webp",
+      "authorName": "Sam Godson",
+      "authorAlias": "thesamgodson",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35VJCwt6tuZzgZiptmz9dZ7PPbw.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "agentic-ai",
+        "agent-hooks",
+        "agent-to-agent",
+        "ai-agents",
+        "meta"
+      ],
+      "publishedAt": "2026-04-22T01:26:00.462Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CgkihkBVf6xmGiUPf2QP3D3Ob2",
+      "title": "Implementing Database Guardrails to Prevent Prompt Injection in AI Agents",
+      "description": "AI agents that access production databases introduce a new class of security risk: prompt injection. Unlike traditional vulnerabilities that require technical expertise to exploit, prompt injection attacks use plain language to manipulate an AI agent into bypassing its instructions and accessing unauthorized data. In this post, you learn how to implement a three-layer defense architecture on AWS that makes unauthorized data access architecturally impossible, regardless of what prompts an attacker sends. ",
+      "url": "https://builder.aws.com/content/3CgkihkBVf6xmGiUPf2QP3D3Ob2",
+      "imageUrl": "",
+      "authorName": "Varma Gottumukkala",
+      "authorAlias": "varmagottumukkala",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-22T01:24:23.260Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CguD9dkncxkIzipmwDBPhQKNBl",
+      "title": "Norfolk State University Outreach Experience",
+      "description": "My journey in outreaching to different professors within the university and connecting with students. I had the opportunity to connect with a lot of individuals on campus that enhanced my knowledge and awareness.",
+      "url": "https://builder.aws.com/content/3CguD9dkncxkIzipmwDBPhQKNBl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CguQNr7lXrPePq1aJlHxzjcFGI/IMG_.webp",
+      "authorName": "Christian J. Baker",
+      "authorAlias": "christianjb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CKfNkG7T0Y4n3AotXqw4GcUPws.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "experience",
+        "outposts"
+      ],
+      "publishedAt": "2026-04-22T00:59:31.258Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CgjKrx2hxoz90rG5fGQnzwf6Ng",
+      "title": "Minha primeira semana como Líder Estudantil AWS Builder na UNIESP: O que aprendi no AWS Builder Center",
+      "description": "Acompanhe minha jornada como Líder Estudantil unindo o desenvolvimento Frontend com as ferramentas práticas do AWS Builder Center para criar impacto tecnológico real. Saiba como essa comunidade global ajuda estudantes a superarem desafios técnicos e construírem conexões duradouras no mercado.",
+      "url": "https://builder.aws.com/content/3CgjKrx2hxoz90rG5fGQnzwf6Ng",
+      "imageUrl": "",
+      "authorName": "Lanusse Helena",
+      "authorAlias": "lanussehelena",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C980eJeY0HduGfEnZ35ImoXKf1.webp",
+      "location": "PB, BR",
+      "lat": -7.1219366,
+      "lng": -36.7246845,
+      "tags": [
+        "students",
+        "tech",
+        "training",
+        "women-in-tech"
+      ],
+      "publishedAt": "2026-04-21T23:45:03.790Z",
       "likesCount": 1,
       "commentsCount": 0
     }
@@ -209,8 +389,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1032,
-      "commentsCount": 237
+      "likesCount": 1052,
+      "commentsCount": 242
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -231,7 +411,7 @@
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
       "likesCount": 261,
-      "commentsCount": 100
+      "commentsCount": 99
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -251,8 +431,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1404,
-      "commentsCount": 902
+      "likesCount": 1435,
+      "commentsCount": 925
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -274,8 +454,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1287,
-      "commentsCount": 204
+      "likesCount": 1368,
+      "commentsCount": 206
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -320,7 +500,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 153,
+      "likesCount": 154,
       "commentsCount": 44
     },
     {
@@ -362,8 +542,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 916,
-      "commentsCount": 161
+      "likesCount": 920,
+      "commentsCount": 163
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -383,8 +563,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 733,
-      "commentsCount": 229
+      "likesCount": 742,
+      "commentsCount": 230
     },
     {
       "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
