@@ -1,6 +1,71 @@
 {
-  "updatedAt": "2026-04-21T23:13:55.931Z",
+  "updatedAt": "2026-04-22T00:24:39.238Z",
   "latest": [
+    {
+      "id": "/content/3CgjKrx2hxoz90rG5fGQnzwf6Ng",
+      "title": "Minha primeira semana como Líder Estudantil AWS Builder na UNIESP: O que aprendi no AWS Builder Center",
+      "description": "Acompanhe minha jornada como Líder Estudantil unindo o desenvolvimento Frontend com as ferramentas práticas do AWS Builder Center para criar impacto tecnológico real. Saiba como essa comunidade global ajuda estudantes a superarem desafios técnicos e construírem conexões duradouras no mercado.",
+      "url": "https://builder.aws.com/content/3CgjKrx2hxoz90rG5fGQnzwf6Ng",
+      "imageUrl": "",
+      "authorName": "Lanusse Helena",
+      "authorAlias": "lanussehelena",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C980eJeY0HduGfEnZ35ImoXKf1.webp",
+      "location": "PB, BR",
+      "lat": -7.1219366,
+      "lng": -36.7246845,
+      "tags": [
+        "students",
+        "tech",
+        "training",
+        "women-in-tech"
+      ],
+      "publishedAt": "2026-04-21T23:45:03.790Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
+      "title": "O que é ser um Líder Estudantil Builder AWS na prática.",
+      "description": "Ser Builder Leader é levar o conhecimento de cloud computing para dentro da universidade ,organizando comunidades, eventos e conexões que transformam a trajetória de outros estudantes.\n\nUma experiência que une liderança, tecnologia e comunidade, tudo dentro da própria universidade.",
+      "url": "https://builder.aws.com/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
+      "imageUrl": "",
+      "authorName": "Matheus Augusto Lemos de Sousa",
+      "authorAlias": "lemos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CgibhceZsLPeboXOlp3fUqHes7.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders",
+        "aws-community-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-21T23:23:12.899Z",
+      "likesCount": 1,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CghirIMgY1MMtzpM5FIKr7LNmP",
+      "title": "Lugares do seu dia a dia que usam cloud",
+      "description": "Você provavelmente usou cloud computing hoje. Não uma vez — várias.",
+      "url": "https://builder.aws.com/content/3CghirIMgY1MMtzpM5FIKr7LNmP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgiAEQurpiyXZgK5gJ0nrCHtyz/imag.webp",
+      "authorName": "Murilo de Souza Neves",
+      "authorAlias": "muriloneves",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "cloud-operations",
+        "cloud-concepts",
+        "students"
+      ],
+      "publishedAt": "2026-04-21T23:18:07.491Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CDSoojn3cpLd7Ge9Cu7wNlfGyS",
       "title": "Minha primeira semana com o AWS Builder Center: o que eu aprendi (e o que ninguém me contou antes)",
@@ -21,7 +86,7 @@
         "career"
       ],
       "publishedAt": "2026-04-21T22:46:13.264Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 1
     },
     {
@@ -151,63 +216,6 @@
       "publishedAt": "2026-04-21T19:03:14.308Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cg6SiJbmAmPLbSab6fTxqbCs8x",
-      "title": "Reflecting on the final 48 hours: A massive \"Thank You\" from Ethiopia 🇪🇹",
-      "description": " Taking a moment to step back and say thank you to this amazing community and the AWS team",
-      "url": "https://builder.aws.com/content/3Cg6SiJbmAmPLbSab6fTxqbCs8x",
-      "imageUrl": "",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [],
-      "publishedAt": "2026-04-21T18:14:28.008Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cg6Gs7sVBrA6Io1TNmf4ur5coj",
-      "title": "SLO Design for Agentic AI Systems on AWS: Beyond Uptime Metrics",
-      "description": "Service Level Objectives work well for stateless APIs and microservices. They break — quietly and dangerously — when applied without modification to agentic AI systems.\nThis post documents the reliability signal framework I've developed over the past quarter running agentic AI pipelines in a regulated cloud-native environment on AWS. It is intended for SRE teams and platform engineers deploying AI agents that interact with production infrastructure.",
-      "url": "https://builder.aws.com/content/3Cg6Gs7sVBrA6Io1TNmf4ur5coj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cg6MfbCWHPXS2SH8lKnFU3ByGi/dev-.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "sre",
-        "devops-pro",
-        "aws-academy",
-        "ai-ml"
-      ],
-      "publishedAt": "2026-04-21T18:09:52.848Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cg50G0qoIpBd5aCBUXu8HtIcFI",
-      "title": "Democratizing Sports Analytics: A Reusable GenAI Architecture Pattern for Text-to-SQL in Professional Sports",
-      "description": "How an NHL franchise eliminated the data engineering bottleneck by deploying a production-grade GenAI text-to-SQL agent on AWS",
-      "url": "https://builder.aws.com/content/3Cg50G0qoIpBd5aCBUXu8HtIcFI",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cg7IBLJOsEopziVxLwFRYcYd6p/demo.webp",
-      "authorName": "Douglas",
-      "authorAlias": "douglim",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUSBgSYKxpPTb6LZpnFyX0shm7.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-21T18:09:28.466Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -230,7 +238,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1011,
+      "likesCount": 1013,
       "commentsCount": 236
     },
     {
@@ -272,8 +280,30 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1235,
-      "commentsCount": 832
+      "likesCount": 1238,
+      "commentsCount": 835
+    },
+    {
+      "id": "/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
+      "title": "O que é ser um Líder Estudantil Builder AWS na prática.",
+      "description": "Ser Builder Leader é levar o conhecimento de cloud computing para dentro da universidade ,organizando comunidades, eventos e conexões que transformam a trajetória de outros estudantes.\n\nUma experiência que une liderança, tecnologia e comunidade, tudo dentro da própria universidade.",
+      "url": "https://builder.aws.com/content/3CddZpo6uc8Lar3Rn7kHOQ5m5PW",
+      "imageUrl": "",
+      "authorName": "Matheus Augusto Lemos de Sousa",
+      "authorAlias": "lemos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CgibhceZsLPeboXOlp3fUqHes7.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders",
+        "aws-community-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-21T23:23:12.899Z",
+      "likesCount": 1,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -405,27 +435,6 @@
       "publishedAt": "2026-04-21T15:50:50.577Z",
       "likesCount": 11,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 655,
-      "commentsCount": 227
     }
   ]
 }
