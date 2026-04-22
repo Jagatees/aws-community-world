@@ -1,6 +1,67 @@
 {
-  "updatedAt": "2026-04-22T21:18:19.094Z",
+  "updatedAt": "2026-04-22T22:16:16.821Z",
   "latest": [
+    {
+      "id": "/content/3CjAyb0L55BTVvN2Ezs2rrNyku3",
+      "title": "How to: Auto-delete indices after a TTL with ISM policies",
+      "description": "Use OpenSearch Index State Management to delete indices automatically after a fixed age, without running a cleanup job.",
+      "url": "https://builder.aws.com/content/3CjAyb0L55BTVvN2Ezs2rrNyku3",
+      "imageUrl": "",
+      "authorName": "Arun Lakshmanan",
+      "authorAlias": "arnlaksh",
+      "authorAvatarUrl": "",
+      "location": "IL, US",
+      "lat": 40.0796606,
+      "lng": -89.4337288,
+      "tags": [
+        "opensearch",
+        "nosql",
+        "amazon-opensearch"
+      ],
+      "publishedAt": "2026-04-22T22:03:58.394Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CjLFy97Ma7OHmC6BiVDImcEJ5h",
+      "title": "The Moment It Clicked Inside AWS Builder Center",
+      "description": "I walked into Builder Center expecting another basic architecture walkthrough, and I walked out actually understanding how systems break and where to look first. One small red X turned a static diagram into a real story I could follow, and it completely changed how I think about building in the cloud.",
+      "url": "https://builder.aws.com/content/3CjLFy97Ma7OHmC6BiVDImcEJ5h",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CjNo5kCEpbzfE4H0tFClwDNb2u/Scre.webp",
+      "authorName": "Rida Karim",
+      "authorAlias": "ridakarim",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-04-22T21:52:08.667Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CJY1wf4O5tQvAV6jju2z2mWP05",
+      "title": "Managing PostgreSQL Extensions During Aurora Version Upgrades",
+      "description": "Automate PostgreSQL extension discovery and compatibility validation across Aurora clusters to prevent upgrade failures and streamline version planning. ",
+      "url": "https://builder.aws.com/content/3CJY1wf4O5tQvAV6jju2z2mWP05",
+      "imageUrl": "",
+      "authorName": "Noorul Mahajabeen Mustafa",
+      "authorAlias": "noorulmu",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-aurora",
+        "postgresql",
+        "databases"
+      ],
+      "publishedAt": "2026-04-22T21:46:44.391Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CjASPWLknEMtKYVc56SEv2YoS1",
       "title": "Harness Engineering: New Trend in Agentic AI",
@@ -147,74 +208,6 @@
       "publishedAt": "2026-04-22T19:29:13.437Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CizxJ7V6VjxEGB6ayb2vekEexJ",
-      "title": "From Confusion to the Cloud: What Sem Servidor Conf Taught Me About Cloud Computing and Why I Joined the AWS Student Leader Program",
-      "description": "How a serverless conference in Florianópolis/SC introduced me to the \"cloud world\" — and why I decided to continue this journey at the AWS Student Leader Program.",
-      "url": "https://builder.aws.com/content/3CizxJ7V6VjxEGB6ayb2vekEexJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cj1cegIoR1yyczQxYKnQfnnjh7/Whats.webp",
-      "authorName": "Victor Schappo",
-      "authorAlias": "schappo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cj3aN2Meq21X4lrZyYuSsm5Mlr.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "serverless",
-        "career",
-        "community"
-      ],
-      "publishedAt": "2026-04-22T19:11:29.349Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/39x0QxVCmPVx82gektlDFv5RN47",
-      "title": "Unlocking Kiro Powers for SAP",
-      "description": "SAP developers lose productivity switching between their IDE, documentation, and wikis when working with CAP, SAPUI5, and ABAP. SAP Power is a custom Kiro power that brings persistent, context-aware SAP expertise directly into your development environment — activating automatically based on file types, no manual configuration needed. Learn how to install and use SAP Power to accelerate SAP application development across CAP, SAPUI5, ABAP, and SAP BTP, all from within Kiro IDE.",
-      "url": "https://builder.aws.com/content/39x0QxVCmPVx82gektlDFv5RN47",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ciwcz52RpyG69OzJJv1LrVMHvp/kiro.webp",
-      "authorName": "Miguel Figueiredo",
-      "authorAlias": "mfaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qpfuCLnV72cEXSJQX2fTrlpPC.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "kiro",
-        "kiro-agent",
-        "sap",
-        "mcp"
-      ],
-      "publishedAt": "2026-04-22T18:56:56.075Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CizbfhOAAimrSY0qnVllAsMdvo",
-      "title": "Achieving an Agentic Back Office in Retail: A Prescriptive Guide to 10X Productivity with AI",
-      "description": "Back-office processing costs Fortune 2000 retailers 4–10.5% of total revenue, with 45–50% of employee activities being repetitive and manual. AWS customers are achieving 10X productivity gains by applying Agentic AI to processes like invoice processing, three-way matching, and month-end close. This guide provides a prescriptive framework for prioritizing automation across six mega-processes, starting with Purchase-to-Pay and Record-to-Report for the highest value at lowest risk.",
-      "url": "https://builder.aws.com/content/3CizbfhOAAimrSY0qnVllAsMdvo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cj0rlGYDraEk5iia1xH6o8cLQD/imag.webp",
-      "authorName": "Swami Natarajan",
-      "authorAlias": "swamiaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yNNwuwZgyTEaJNHqFPVkEspxGm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "ai-agents",
-        "retail-consumer-goods-industry",
-        "retail",
-        "sap"
-      ],
-      "publishedAt": "2026-04-22T18:56:27.600Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -232,7 +225,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 9,
+      "likesCount": 11,
       "commentsCount": 166
     },
     {
@@ -254,7 +247,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1221,
+      "likesCount": 1228,
       "commentsCount": 286
     },
     {
@@ -298,28 +291,6 @@
       "publishedAt": "2026-04-17T23:31:03.702Z",
       "likesCount": 266,
       "commentsCount": 100
-    },
-    {
-      "id": "/content/3AtZUzAZOkK0JhJRuh0hFZOJciY",
-      "title": "AIdeas: SpainPilot",
-      "description": "An AI relocation agent for Spain that helps people decide where to live using conversational matching, location scoring, risk analysis, and property intelligence. Built with Amazon Bedrock AgentCore, Nova, Knowledge Bases, S3 Vectors, and Rekognition.",
-      "url": "https://builder.aws.com/content/3AtZUzAZOkK0JhJRuh0hFZOJciY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Atgzoxbm7k2ZnjDLg69DQrn1Bm/Gemi.webp",
-      "authorName": "Igor",
-      "authorAlias": "igorrise",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Atmt7j0E2KWmY10tXKFODJeKpg.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "aideas-2025",
-        "daily-life-enhancement",
-        "EMEA",
-        "ai"
-      ],
-      "publishedAt": "2026-03-13T16:14:22.475Z",
-      "likesCount": 75,
-      "commentsCount": 44
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -366,6 +337,28 @@
       "commentsCount": 241
     },
     {
+      "id": "/content/3AtZUzAZOkK0JhJRuh0hFZOJciY",
+      "title": "AIdeas: SpainPilot",
+      "description": "An AI relocation agent for Spain that helps people decide where to live using conversational matching, location scoring, risk analysis, and property intelligence. Built with Amazon Bedrock AgentCore, Nova, Knowledge Bases, S3 Vectors, and Rekognition.",
+      "url": "https://builder.aws.com/content/3AtZUzAZOkK0JhJRuh0hFZOJciY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Atgzoxbm7k2ZnjDLg69DQrn1Bm/Gemi.webp",
+      "authorName": "Igor",
+      "authorAlias": "igorrise",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Atmt7j0E2KWmY10tXKFODJeKpg.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "aideas-2025",
+        "daily-life-enhancement",
+        "EMEA",
+        "ai"
+      ],
+      "publishedAt": "2026-03-13T16:14:22.475Z",
+      "likesCount": 75,
+      "commentsCount": 44
+    },
+    {
       "id": "/content/3CbnVT2gTVWMnVSmhwywBYB6dvT",
       "title": "Meus primeiros passos na nuvem",
       "description": "Um artigo para você entender que não está sozinho(a), aqui na AWS Builder Center temos pessoas que querem te ajudar, te motivar, te fazer entender que com o suporte certo você pode sim ser capaz de entender coisas que você achou que nunca entenderia.",
@@ -389,6 +382,27 @@
       "commentsCount": 5
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 1252,
+      "commentsCount": 264
+    },
+    {
       "id": "/content/3Cip1fqGoBym4ZcSCL208hzu0Jc",
       "title": "Da Engenharia Civil na Universidade Federal do Tocantins para a Nuvem com o AWS Builder Center",
       "description": "Familiarizando-se com Builder Center e o futuro da Cloud e IA na Engenharia Civil",
@@ -410,27 +424,6 @@
       "publishedAt": "2026-04-22T17:33:54.497Z",
       "likesCount": 7,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 1238,
-      "commentsCount": 263
     }
   ]
 }
