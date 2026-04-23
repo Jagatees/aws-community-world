@@ -1,6 +1,65 @@
 {
-  "updatedAt": "2026-04-23T11:25:38.642Z",
+  "updatedAt": "2026-04-23T12:25:05.835Z",
   "latest": [
+    {
+      "id": "/content/3Cl3JcMzhZxicPGfl1Mb8dGE9gc",
+      "title": "Meu início no Programa de Líderes Estudantis da AWS Builder Center",
+      "description": "Estou iniciando no Programa de Líderes Estudantis da Amazon Web Services para desenvolver habilidades em tecnologia, liderança e comunicação.",
+      "url": "https://builder.aws.com/content/3Cl3JcMzhZxicPGfl1Mb8dGE9gc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cl4CDbt5HYL91NBa9a0RzbtLkN/Whats.webp",
+      "authorName": "Rayane Araújo",
+      "authorAlias": "rayanearaujo",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-23T12:21:20.276Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/32VZUBx1igULoilXRk6XLmqWijo",
+      "title": "Introducing the Amazon Nova Act MCP Server for AI Agents",
+      "description": "A practical guide to running Amazon Nova Act through MCP, from quick API key setup to advanced AWS-native browser automation.",
+      "url": "https://builder.aws.com/content/32VZUBx1igULoilXRk6XLmqWijo",
+      "imageUrl": "",
+      "authorName": "Baizel, Emile",
+      "authorAlias": "ebaizel",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "mcp",
+        "ai-agents",
+        "agents"
+      ],
+      "publishedAt": "2026-04-23T11:55:50.169Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CU1XlfraktftGzNIzSy5gG8X7Y",
+      "title": "How to integrate AWS DevOps Agent with GitHub",
+      "description": "This guide walks you through integrating GitHub with AWS DevOps Agent so that the agent can access your code repositories and receive deployment events during incident investigations. The integration enables AWS DevOps Agent to correlate code changes with operational incidents, reducing mean time to resolution (MTTR) for any GitHub workflow failures.",
+      "url": "https://builder.aws.com/content/3CU1XlfraktftGzNIzSy5gG8X7Y",
+      "imageUrl": "",
+      "authorName": "Purushotham G K",
+      "authorAlias": "prushok",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-23T11:42:37.986Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CkoPeL84mPSAClud5JcNaQBDw3",
       "title": "How AWS Free Tier helped me learn by doing",
@@ -318,65 +377,6 @@
       "publishedAt": "2026-04-23T02:50:39.876Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cjnj0SFQEgfrMuBDkIAyJbMf0r",
-      "title": "Nuvem sem barreiras: A tecnologia como ferramenta de protagonismo para estudantes de todas as áreas e não só computação.",
-      "description": "Neste artigo, mostro que a nuvem não é exclusividade da TI e como ela é essencial em áreas como a engenharia biomédica. Compartilho minha jornada no programa de líder estudantil da AWS para apresentar como qualquer estudante pode aprender tecnologia do zero com cursos gratuitos. Também discuto a importância da representatividade feminina para motivar mais mulheres nesse espaço. ",
-      "url": "https://builder.aws.com/content/3Cjnj0SFQEgfrMuBDkIAyJbMf0r",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cjr9oOr7GG8452m1lHe4Vrt06u/arti.webp",
-      "authorName": "Larissa Souza Mafra",
-      "authorAlias": "larissamafra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C9MTctiwdRaRptLrX0ysYCFtga.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "women-in-tech"
-      ],
-      "publishedAt": "2026-04-23T02:47:25.628Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CiqLEZ05gwxwSArGnm0z247et6",
-      "title": "Minha primeira semana como Líder Estudantil na AWS Builder Center: O que eu aprendi?",
-      "description": "Como eu lidei com meus primeiros desafios do projeto e de que forma isso pode ajudar você.",
-      "url": "https://builder.aws.com/content/3CiqLEZ05gwxwSArGnm0z247et6",
-      "imageUrl": "",
-      "authorName": "Gabriel Sampaio Santos",
-      "authorAlias": "gabrielss",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CMO2yDKsV1sow1gVfifvc6H3Mh.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-23T02:09:25.706Z",
-      "likesCount": 5,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CjoFNKnYgQYMlnNVppCLGr76tj",
-      "title": "Minha primeira semana no AWS Builder Center: O que eu aprendi?",
-      "description": "Esse artigo busca descrever uma primeira experiência no Builder Center e explorar brevemente a plataforma. ",
-      "url": "https://builder.aws.com/content/3CjoFNKnYgQYMlnNVppCLGr76tj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CjoQO1sleMJkh9FXWUpzi7wBzf/capa.webp",
-      "authorName": "Julia",
-      "authorAlias": "fmju",
-      "authorAvatarUrl": "",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "aws-ambassador",
-        "women-in-tech",
-        "students",
-        "portuguese"
-      ],
-      "publishedAt": "2026-04-23T01:45:55.149Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -394,7 +394,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 20,
+      "likesCount": 21,
       "commentsCount": 167
     },
     {
@@ -415,8 +415,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 2671,
-      "commentsCount": 1640
+      "likesCount": 2689,
+      "commentsCount": 1650
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -436,8 +436,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 2571,
-      "commentsCount": 229
+      "likesCount": 2691,
+      "commentsCount": 261
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -480,7 +480,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1868,
+      "likesCount": 1884,
       "commentsCount": 260
     },
     {
@@ -501,8 +501,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 1550,
-      "commentsCount": 280
+      "likesCount": 1703,
+      "commentsCount": 282
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -546,8 +546,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1307,
-      "commentsCount": 304
+      "likesCount": 1311,
+      "commentsCount": 305
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
