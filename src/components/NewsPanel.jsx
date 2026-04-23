@@ -13,21 +13,6 @@ function formatPublishedAt(value) {
   }
 }
 
-function isToday(dateString) {
-  if (!dateString) return false;
-  try {
-    const date = new Date(dateString);
-    const now = new Date();
-    return (
-      date.getFullYear() === now.getFullYear() &&
-      date.getMonth() === now.getMonth() &&
-      date.getDate() === now.getDate()
-    );
-  } catch {
-    return false;
-  }
-}
-
 function NewsCard({ item, darkMode, selected, onSelect, cardRef }) {
   const cardBg = darkMode ? 'rgba(12, 21, 31, 0.76)' : 'rgba(255, 255, 255, 0.9)';
   const cardBorder = selected ? '#FF9900' : darkMode ? 'rgba(62, 95, 123, 0.42)' : 'rgba(160, 187, 212, 0.72)';
@@ -150,7 +135,7 @@ function EmptyFeed({ darkMode }) {
     <div className="flex flex-col items-center justify-center gap-3 py-12 text-center">
       <span style={{ fontSize: '2rem' }}>📭</span>
       <p className="text-sm font-semibold" style={{ color: mutedColor }}>
-        No stories published today yet.
+        No stories available yet.
       </p>
       <p className="text-xs" style={{ color: mutedColor }}>
         Check back later — the feed refreshes every hour.
@@ -172,29 +157,23 @@ export default function NewsPanel({ darkMode, news, loading, selectedItems = [],
 
   const selectedId = selectedItems[0]?.id ?? null;
 
-  const todayLatest = useMemo(
-    () => (news?.latest ?? []).filter((item) => isToday(item.publishedAt)),
-    [news],
-  );
-  const todayTrending = useMemo(
-    () => (news?.trending ?? []).filter((item) => isToday(item.publishedAt)),
-    [news],
-  );
+  const latestItems = useMemo(() => news?.latest ?? [], [news]);
+  const trendingItems = useMemo(() => news?.trending ?? [], [news]);
 
-  const activeItems = activeTab === 'latest' ? todayLatest : todayTrending;
+  const activeItems = activeTab === 'latest' ? latestItems : trendingItems;
 
   // Switch tab to one that contains the selected item (if current tab doesn't have it)
   useEffect(() => {
     if (!selectedId) return;
-    const inLatest = todayLatest.some((i) => i.id === selectedId);
-    const inTrending = todayTrending.some((i) => i.id === selectedId);
+    const inLatest = latestItems.some((i) => i.id === selectedId);
+    const inTrending = trendingItems.some((i) => i.id === selectedId);
     if (!inLatest && !inTrending) return;
     const currentHasIt = activeTab === 'latest' ? inLatest : inTrending;
     if (!currentHasIt) {
       setActiveTab(inLatest ? 'latest' : 'trending');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedId, todayLatest, todayTrending]);
+  }, [selectedId, latestItems, trendingItems]);
 
   // Scroll selected card into view after it renders (including after tab switch)
   useEffect(() => {
@@ -269,7 +248,7 @@ export default function NewsPanel({ darkMode, news, loading, selectedItems = [],
 
         {/* Tabs */}
         <div className="mt-4 flex gap-2">
-          {[['latest', todayLatest.length], ['trending', todayTrending.length]].map(([tab, count]) => (
+          {[['latest', latestItems.length], ['trending', trendingItems.length]].map(([tab, count]) => (
             <button
               key={tab}
               type="button"

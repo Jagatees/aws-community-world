@@ -54,7 +54,6 @@ function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
   button.style.filter = darkMode
     ? 'drop-shadow(0 8px 16px rgba(0, 0, 0, 0.45))'
     : 'drop-shadow(0 8px 16px rgba(23, 50, 75, 0.22))';
-
   const frame = document.createElement('div');
   frame.style.display = 'flex';
   frame.style.alignItems = 'center';

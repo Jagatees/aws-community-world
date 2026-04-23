@@ -7,9 +7,9 @@ import TagFilter from './components/TagFilter';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 
-const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
 const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
-const FlatMapScene = lazy(() => import('./components/FlatMapScene'));
+const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
+const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('heroes');
@@ -22,6 +22,9 @@ export default function App() {
   const [zoomCommand, setZoomCommand] = useState({ direction: null, nonce: 0 });
   const [newsPanelOpen, setNewsPanelOpen] = useState(true);
   const [flyToOverride, setFlyToOverride] = useState(null);
+  const [nearMeTarget, setNearMeTarget] = useState(null);
+  const [nearMeLoading, setNearMeLoading] = useState(false);
+  const [nearMeError, setNearMeError] = useState(null);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isNewsView = activeCategory === 'news';
@@ -30,10 +33,10 @@ export default function App() {
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
   const ActiveGlobeScene =
     globeDesign === 'classic'
-      ? ClassicGlobeScene
+      ? MapboxGlobeScene
       : globeDesign === 'flat'
-        ? FlatMapScene
-        : CobeGlobeScene;
+        ? MapboxFlatScene
+        : ClassicGlobeScene;
 
   const tags = useMemo(() => {
     const set = new Set(members.map((member) => member.tag).filter(Boolean));
@@ -93,6 +96,7 @@ export default function App() {
     const lng = matching.reduce((sum, member) => sum + member.lng, 0) / matching.length;
     return { lat, lng };
   }, [selectedCountry, members]);
+  const resolvedFlyToTarget = nearMeTarget ?? flyToTarget;
 
   const isEmpty = !loading && !error && filteredMembers.length === 0;
   const activeError = isNewsView ? newsError : error;
@@ -136,6 +140,12 @@ export default function App() {
     };
   }
 
+  function designButtonLabel(design) {
+    if (design === 'classic') return 'Mapbox';
+    if (design === 'orbit') return 'Orbit';
+    return design.charAt(0).toUpperCase() + design.slice(1);
+  }
+
   const handleMarkerClick = useCallback((member) => {
     setSelectedMember(member);
   }, []);
@@ -163,6 +173,32 @@ export default function App() {
 
   const triggerZoom = useCallback((direction) => {
     setZoomCommand((current) => ({ direction, nonce: current.nonce + 1 }));
+  }, []);
+
+  const handleNearMe = useCallback(() => {
+    if (!navigator.geolocation) {
+      setNearMeError('Geolocation is not available in this browser.');
+      return;
+    }
+
+    setNearMeLoading(true);
+    setNearMeError(null);
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setNearMeTarget({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+          nonce: Date.now(),
+        });
+        setNearMeLoading(false);
+      },
+      (error) => {
+        setNearMeError(error?.message || 'Could not get your location.');
+        setNearMeLoading(false);
+      },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+    );
   }, []);
 
   // Highlight only — no globe fly (used when clicking title/image in panel)
@@ -266,7 +302,7 @@ export default function App() {
                     onMarkerClick={handleNewsMarkerClick}
                     cardOpen={selectedNewsItems.length > 0}
                     darkMode={darkMode}
-                    flyToTarget={selectedNewsFlyTarget}
+                    flyToTarget={selectedNewsFlyTarget ?? resolvedFlyToTarget}
                     zoomCommand={zoomCommand}
                   />
                 </Suspense>
@@ -287,7 +323,7 @@ export default function App() {
                       }}
                       aria-label="Globe design switcher"
                     >
-                      {['classic', 'cobe', 'flat'].map((d) => (
+                      {['orbit', 'classic', 'flat'].map((d) => (
                         <button
                           key={d}
                           type="button"
@@ -295,7 +331,7 @@ export default function App() {
                           className="rounded-full px-3 py-1 text-xs font-semibold transition-colors capitalize"
                           style={designButtonStyles(d)}
                         >
-                          {d === 'cobe' ? 'Sleek' : d.charAt(0).toUpperCase() + d.slice(1)}
+                          {designButtonLabel(d)}
                         </button>
                       ))}
                     </div>
@@ -330,6 +366,21 @@ export default function App() {
                         </button>
                       ))}
                     </div>
+
+                    <button
+                      type="button"
+                      onClick={handleNearMe}
+                      className="rounded-full px-4 py-1 text-xs font-semibold transition-colors"
+                      style={{
+                        backgroundColor: nearMeLoading ? '#53657A' : '#FF9900',
+                        color: '#0F1923',
+                        minHeight: '2.1rem',
+                        border: '1px solid rgba(255,255,255,0.12)',
+                      }}
+                      aria-label="Near me"
+                    >
+                      {nearMeLoading ? 'Locating...' : 'Near Me'}
+                    </button>
                   </div>
                 </div>
 
@@ -429,7 +480,7 @@ export default function App() {
                   onMarkerClick={handleMarkerClick}
                   cardOpen={!!selectedMember}
                   darkMode={darkMode}
-                  flyToTarget={flyToTarget}
+                  flyToTarget={resolvedFlyToTarget}
                   zoomCommand={zoomCommand}
                 />
               </Suspense>
@@ -448,19 +499,19 @@ export default function App() {
                   >
                     <button
                       type="button"
+                      onClick={() => setGlobeDesign('orbit')}
+                      className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                      style={designButtonStyles('orbit')}
+                    >
+                      Orbit
+                    </button>
+                    <button
+                      type="button"
                       onClick={() => setGlobeDesign('classic')}
                       className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
                       style={designButtonStyles('classic')}
                     >
-                      Classic
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setGlobeDesign('cobe')}
-                      className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                      style={designButtonStyles('cobe')}
-                    >
-                      Sleek
+                      {designButtonLabel('classic')}
                     </button>
                     <button
                       type="button"
@@ -515,6 +566,21 @@ export default function App() {
                       +
                     </button>
                   </div>
+
+                  <button
+                    type="button"
+                    onClick={handleNearMe}
+                    className="rounded-full px-4 py-1 text-xs font-semibold transition-colors"
+                    style={{
+                      backgroundColor: nearMeLoading ? '#53657A' : '#FF9900',
+                      color: '#0F1923',
+                      minHeight: '2.1rem',
+                      border: '1px solid rgba(255,255,255,0.12)',
+                    }}
+                    aria-label="Near me"
+                  >
+                    {nearMeLoading ? 'Locating...' : 'Near Me'}
+                  </button>
                 </div>
               </div>
 
@@ -533,6 +599,19 @@ export default function App() {
 
         {!isNewsView && selectedMember && (
           <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
+        )}
+
+        {nearMeError && (
+          <div
+            className="absolute bottom-6 left-1/2 z-30 -translate-x-1/2 rounded-full px-4 py-2 text-xs font-semibold"
+            style={{
+              background: 'rgba(191, 8, 22, 0.92)',
+              color: '#FFFFFF',
+              boxShadow: '0 10px 22px rgba(0, 0, 0, 0.28)',
+            }}
+          >
+            {nearMeError}
+          </div>
         )}
       </div>
     </div>
