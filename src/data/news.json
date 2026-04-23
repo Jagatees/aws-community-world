@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-04-23T16:33:37.340Z",
+  "updatedAt": "2026-04-23T17:31:59.849Z",
   "latest": [
+    {
+      "id": "/content/3CjbomHXVw0hPgDLBol8XoogiAk",
+      "title": "Which Foundation Model Is Best at Empathetic Decision-Making in High-Stakes Conversations?",
+      "description": "This article evaluates a range of foundation models based on how well they can formulate solutions. By considering intangible, qualitative factors such as relationships, past experiences, empathy, leverage, and realism, we can more clearly see what each model focuses on in a prompt.\n\nUsing controlled prompts across multiple AWS Bedrock models, the study compares how effectively each handles emotional nuance, financial constraints, and negotiation strategy to determine which is most \"empathy oriented.\"",
+      "url": "https://builder.aws.com/content/3CjbomHXVw0hPgDLBol8XoogiAk",
+      "imageUrl": "",
+      "authorName": "Jacob Condrell",
+      "authorAlias": "jacobcondrell",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CMREHsvDAb9QKRt2vwN1VZwPQe.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "amazon-bedrock",
+        "analytics",
+        "chatbots"
+      ],
+      "publishedAt": "2026-04-23T17:21:09.930Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3ClQTfJwXEPdOINoYbcoL202tdP",
       "title": "Your Cloud Journey Starts Here—With AWS",
@@ -17,7 +39,7 @@
         "students"
       ],
       "publishedAt": "2026-04-23T15:34:32.246Z",
-      "likesCount": 13,
+      "likesCount": 14,
       "commentsCount": 0
     },
     {
@@ -260,8 +282,8 @@
         "tutorials"
       ],
       "publishedAt": "2026-04-23T13:12:54.490Z",
-      "likesCount": 6,
-      "commentsCount": 0
+      "likesCount": 7,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Cl3JcMzhZxicPGfl1Mb8dGE9gc",
@@ -379,45 +401,9 @@
       "publishedAt": "2026-04-23T09:16:56.852Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CkalU2ctS3QWqARywzTi4MFdcz",
-      "title": "Test",
-      "description": "This is my first post",
-      "url": "https://builder.aws.com/content/3CkalU2ctS3QWqARywzTi4MFdcz",
-      "imageUrl": "",
-      "authorName": "Rohit Raj",
-      "authorAlias": "deathlord",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-23T08:17:11.482Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3ClQTfJwXEPdOINoYbcoL202tdP",
-      "title": "Your Cloud Journey Starts Here—With AWS",
-      "description": "🚀 Ready to start your cloud journey?\nExplore how Amazon Web Services can help you build real-world skills, work on projects, and unlock new opportunities.\nStart small, stay consistent, and grow with the cloud ☁️\n\n#students #https://builder.aws.com/start?trk=7cff29b7-5b80-4b00-adf1-e79ab5ac6509&sc_channel=el",
-      "url": "https://builder.aws.com/content/3ClQTfJwXEPdOINoYbcoL202tdP",
-      "imageUrl": "",
-      "authorName": "Ruthvik Reddy Devidi",
-      "authorAlias": "ruthvikreddydevidi",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWymmy8JFxJlKe5gJhJBxY6Icn.webp",
-      "location": " Telangana, IN",
-      "lat": 17.8495919,
-      "lng": 79.1151663,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-23T15:34:32.246Z",
-      "likesCount": 13,
-      "commentsCount": 0
-    },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
       "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
@@ -453,8 +439,27 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 2954,
-      "commentsCount": 1801
+      "likesCount": 3104,
+      "commentsCount": 1831
+    },
+    {
+      "id": "/content/3ClQTfJwXEPdOINoYbcoL202tdP",
+      "title": "Your Cloud Journey Starts Here—With AWS",
+      "description": "🚀 Ready to start your cloud journey?\nExplore how Amazon Web Services can help you build real-world skills, work on projects, and unlock new opportunities.\nStart small, stay consistent, and grow with the cloud ☁️\n\n#students #https://builder.aws.com/start?trk=7cff29b7-5b80-4b00-adf1-e79ab5ac6509&sc_channel=el",
+      "url": "https://builder.aws.com/content/3ClQTfJwXEPdOINoYbcoL202tdP",
+      "imageUrl": "",
+      "authorName": "Ruthvik Reddy Devidi",
+      "authorAlias": "ruthvikreddydevidi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWymmy8JFxJlKe5gJhJBxY6Icn.webp",
+      "location": " Telangana, IN",
+      "lat": 17.8495919,
+      "lng": 79.1151663,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-04-23T15:34:32.246Z",
+      "likesCount": 14,
+      "commentsCount": 0
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -474,28 +479,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 2944,
-      "commentsCount": 311
-    },
-    {
-      "id": "/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
-      "title": "Nuvem sem barreiras: A tecnologia como ferramenta de protagonismo para estudantes de todas as áreas e não só computação.",
-      "description": "Neste artigo, mostro que a nuvem não é exclusividade da TI e como ela é essencial em áreas como a engenharia biomédica. Compartilho minha jornada no programa de líder estudantil da AWS para apresentar como qualquer estudante pode aprender tecnologia do zero com cursos gratuitos. Também discuto a importância da representatividade feminina para motivar mais mulheres nesse espaço.",
-      "url": "https://builder.aws.com/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClKxbgwfhe2moWl3HTRzGUmquw/arti.webp",
-      "authorName": "Larissa Souza Mafra",
-      "authorAlias": "larimafra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClKbTf0xfBjMZWMhnVzeTTbwNp.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "women-in-tech"
-      ],
-      "publishedAt": "2026-04-23T14:36:59.431Z",
-      "likesCount": 5,
-      "commentsCount": 2
+      "likesCount": 3029,
+      "commentsCount": 316
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -515,8 +500,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2051,
-      "commentsCount": 292
+      "likesCount": 2099,
+      "commentsCount": 294
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -559,25 +544,28 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1908,
-      "commentsCount": 266
+      "likesCount": 1911,
+      "commentsCount": 267
     },
     {
-      "id": "/content/3ClLkdk0fTJralX55z5BqyiPg0x",
-      "title": "Da raiz ao futuro: A Nuvem como fonte de crescimento",
-      "description": "A nuvem da AWS abre caminhos de inclusão e aprendizado, transformando desafios em oportunidades e raízes em futuros possíveis.",
-      "url": "https://builder.aws.com/content/3ClLkdk0fTJralX55z5BqyiPg0x",
-      "imageUrl": "",
-      "authorName": "Calebe da Rocha Santos Ferreira",
-      "authorAlias": "calebeferreira",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClLZMUhOmY845J97fljFcHdpc5.webp",
+      "id": "/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
+      "title": "Nuvem sem barreiras: A tecnologia como ferramenta de protagonismo para estudantes de todas as áreas e não só computação.",
+      "description": "Neste artigo, mostro que a nuvem não é exclusividade da TI e como ela é essencial em áreas como a engenharia biomédica. Compartilho minha jornada no programa de líder estudantil da AWS para apresentar como qualquer estudante pode aprender tecnologia do zero com cursos gratuitos. Também discuto a importância da representatividade feminina para motivar mais mulheres nesse espaço.",
+      "url": "https://builder.aws.com/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClKxbgwfhe2moWl3HTRzGUmquw/arti.webp",
+      "authorName": "Larissa Souza Mafra",
+      "authorAlias": "larimafra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClKbTf0xfBjMZWMhnVzeTTbwNp.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-23T15:08:37.692Z",
+      "tags": [
+        "aws-community-builders",
+        "women-in-tech"
+      ],
+      "publishedAt": "2026-04-23T14:36:59.431Z",
       "likesCount": 5,
-      "commentsCount": 0
+      "commentsCount": 2
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -599,8 +587,30 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 180,
+      "likesCount": 181,
       "commentsCount": 94
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1334,
+      "commentsCount": 309
     }
   ]
 }
