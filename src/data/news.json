@@ -1,6 +1,150 @@
 {
-  "updatedAt": "2026-04-23T13:33:53.661Z",
+  "updatedAt": "2026-04-23T14:46:06.805Z",
   "latest": [
+    {
+      "id": "/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
+      "title": "Nuvem sem barreiras: A tecnologia como ferramenta de protagonismo para estudantes de todas as áreas e não só computação.",
+      "description": "Neste artigo, mostro que a nuvem não é exclusividade da TI e como ela é essencial em áreas como a engenharia biomédica. Compartilho minha jornada no programa de líder estudantil da AWS para apresentar como qualquer estudante pode aprender tecnologia do zero com cursos gratuitos. Também discuto a importância da representatividade feminina para motivar mais mulheres nesse espaço.",
+      "url": "https://builder.aws.com/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClKxbgwfhe2moWl3HTRzGUmquw/arti.webp",
+      "authorName": "Larissa Souza Mafra",
+      "authorAlias": "larimafra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClKbTf0xfBjMZWMhnVzeTTbwNp.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-community-builders",
+        "women-in-tech"
+      ],
+      "publishedAt": "2026-04-23T14:36:59.431Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG",
+      "title": "Claude Opus 4.7 on Amazon Bedrock: APIs, Features, and Migration Guide",
+      "description": "\"A practical walkthrough of every API path for Claude Opus 4.7 on Bedrock — Messages API, InvokeModel, and Converse — with code examples, feature comparison, and breaking changes to watch for when upgrading from Opus 4.6.\"  ",
+      "url": "https://builder.aws.com/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG",
+      "imageUrl": "",
+      "authorName": "boudboub, Sid Ahmed",
+      "authorAlias": "sidahmedb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31WHtgFTa3hfpnvP8mprnSXUL97.webp",
+      "location": "FR",
+      "lat": 46.603354,
+      "lng": 1.8883335,
+      "tags": [
+        "agentic-ai",
+        "llm",
+        "anthropic-claude",
+        "claude",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-23T14:31:21.525Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ClEpc2qrTVJXK8tevfvgt1CPvX",
+      "title": "5 ferramentas e recursos da AWS que todo universitário deveria conhecer",
+      "description": "Sou estudante de Ciência da Computação e, quando decidi que queria aprender sobre cloud, me senti um pouco perdido. \nA área de tecnologia muda muito rápido e, às vezes, a sala de aula não dá conta de mostrar todas as ferramentas práticas que o mercado exige. \nFoi quando descobri o AWS Builder Center, um espaço que reúne tudo o que um estudante precisa para começar.\n Hoje, quero compartilhar 5 recursos dessa plataforma que mudaram a minha forma de estudar e que todo universitário precisa conhecer.",
+      "url": "https://builder.aws.com/content/3ClEpc2qrTVJXK8tevfvgt1CPvX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClJaI9GYU6aUZUS4NVIeN6IdA6/Fund.webp",
+      "authorName": "Davi Marinho cordeiro",
+      "authorAlias": "davimarinho",
+      "authorAvatarUrl": "",
+      "location": "CE, BR",
+      "lat": -5.3264703,
+      "lng": -39.7156073,
+      "tags": [
+        "aws-builders",
+        "students",
+        "career",
+        "training"
+      ],
+      "publishedAt": "2026-04-23T14:27:02.771Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cl92TMwKvh8UidZoHTcRuOj2hN",
+      "title": "A Convergência entre Academia e Mercado: Arquitetando o Futuro com o AWS Builder Center",
+      "description": "Uma análise sobre como a integração entre o ensino superior, a prática profissional em órgãos públicos e o ecossistema AWS acelera a formação de desenvolvedores de alta performance.",
+      "url": "https://builder.aws.com/content/3Cl92TMwKvh8UidZoHTcRuOj2hN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClIFIVXOAuAt4k9STmwNbMrKQ7/WA_17.webp",
+      "authorName": "Cristiano Xavier",
+      "authorAlias": "cristianoxavier",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiX3O3AcYfMkK6BuFxhlGUI4me.webp",
+      "location": "TO, BR",
+      "lat": -10.8855129,
+      "lng": -48.3716912,
+      "tags": [
+        "aws-academy",
+        "aws-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-23T14:17:37.020Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3BoAj1YVVS3rGZXIGIYKVQwuQkN",
+      "title": "AWS Global Accelerators are preffered over Route 53 for Multi-Region Failover why?",
+      "description": "Understanding how real production systems use Internal Backbone Network, Edge Network and Anycast IP work and routing through Regional ALB’s! ",
+      "url": "https://builder.aws.com/content/3BoAj1YVVS3rGZXIGIYKVQwuQkN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClHsN7Iixh18uFTNVxHssMinwE/1776.webp",
+      "authorName": "Arokia Martin N",
+      "authorAlias": "arokiamartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClH2K26vEVEpj2cxV59pbuyBXw.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-global-accelerator",
+        "amazon-route53",
+        "failure"
+      ],
+      "publishedAt": "2026-04-23T14:11:05.578Z",
+      "likesCount": 0,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3ClGjGqCgQGAORumvJbiGz4A3Z9",
+      "title": "How I Used My Freshman Engineering Skills to Build My First Personal AWS Project",
+      "description": "A behind-the-scenes look at how I built my first personal AWS project, an IoT availability display for my research professor's office door using Swift, API Gateway, Lambda, and an Arduino with a 3D printed enclosure. As well as why I wish I'd had AWS Builder Center while figuring it all out, and why engineering students shouldn't wait to explore it.",
+      "url": "https://builder.aws.com/content/3ClGjGqCgQGAORumvJbiGz4A3Z9",
+      "imageUrl": "",
+      "authorName": "Nathan Jones",
+      "authorAlias": "njinferno",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5Lsh4AWaw87u2WlwyphIraWeI.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-23T14:06:56.983Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CBRlTyg5DNgAqUTNL9OM5Itq4F",
+      "title": "O que é computação em nuvem e por que você precisa saber?",
+      "description": "Neste artigo, entenda o que é computação em nuvem, por que esse modelo transformou a forma como empresas e desenvolvedores trabalham, e por que você — mesmo estudante ou profissional iniciante — precisa saber disso para não ficar para trás em 2026.",
+      "url": "https://builder.aws.com/content/3CBRlTyg5DNgAqUTNL9OM5Itq4F",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClGXXEXFiU34Euv4AsvjZOO3fn/1000.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "amazon-ec2",
+        "aws-cloudformation"
+      ],
+      "publishedAt": "2026-04-23T14:05:43.202Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CiifVOyxoCFnE1ePRyDvK9e8jZ",
       "title": "Cloud Computing e Minha Experiência Com o AWS Builder Center",
@@ -19,7 +163,7 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-04-23T13:13:34.920Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -60,7 +204,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-23T12:21:20.276Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -119,7 +263,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-23T10:22:21.644Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -253,129 +397,6 @@
       "publishedAt": "2026-04-23T06:24:37.124Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CkLy6Dld7qoJvJ0DpCI7i2QkqZ",
-      "title": "Antropic models in Bedrock",
-      "description": "Using claude code in aws bedrock",
-      "url": "https://builder.aws.com/content/3CkLy6Dld7qoJvJ0DpCI7i2QkqZ",
-      "imageUrl": "",
-      "authorName": "KETAN KUMAR",
-      "authorAlias": "ketank619",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-23T06:17:46.120Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CkHkFvd5Dix0WZ2NTMXgmVGiEU",
-      "title": "Getting Started with AWS for Beginners",
-      "description": "AWS is a cloud platform that lets you build and run applications without owning physical servers. Instead of buying hardware, you use online services like virtual machines, storage, and databases, and pay only for what you use. It helps developers quickly deploy apps, scale easily, and focus more on coding rather than managing infrastructure.",
-      "url": "https://builder.aws.com/content/3CkHkFvd5Dix0WZ2NTMXgmVGiEU",
-      "imageUrl": "",
-      "authorName": "Dishant Kumar Kushwaha",
-      "authorAlias": "dishantkkk",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-23T05:44:12.718Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CkEkczGrXsUulKl0XMfGmWhEr6",
-      "title": "GIDS 2026 AWS corner",
-      "description": "Excited to keep learning and building with the AWS Community! ☁️\nGrateful to be part of such an amazing space where people share knowledge, ideas, and real-world experiences with AWS. Looking forward to contributing, learning new things, and connecting with fellow cloud enthusiasts. 🚀",
-      "url": "https://builder.aws.com/content/3CkEkczGrXsUulKl0XMfGmWhEr6",
-      "imageUrl": "",
-      "authorName": "kruttika behere",
-      "authorAlias": "kruttika",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-23T05:16:26.381Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CkEYsn4j7kMEIsKLCxpH7Dg9ik",
-      "title": "Excited to keep learning and building with the AWS Community! ☁️\nGrateful to be part of such an amazing space where people share knowledge, ideas, and real-world experiences with AWS. Looking forward to contributing, learning new things,",
-      "description": "Aws builder",
-      "url": "https://builder.aws.com/content/3CkEYsn4j7kMEIsKLCxpH7Dg9ik",
-      "imageUrl": "",
-      "authorName": "Khushi Aggarwal",
-      "authorAlias": "khushi090234",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-23T05:15:07.432Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CjxuUH1ctxWqarHrYVEjJm7yDZ",
-      "title": "Do Campo à Cloud: A jornada de um Líder Estudantil da AWS",
-      "description": "Troquei o trabalho na fazenda pelos códigos e pela nuvem. Veja como a nossa origem é o combustível para alcançarmos lugares que nunca imaginamos.",
-      "url": "https://builder.aws.com/content/3CjxuUH1ctxWqarHrYVEjJm7yDZ",
-      "imageUrl": "",
-      "authorName": "Wendell Santos",
-      "authorAlias": "wendelldev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7eXxO4ROI2inHkZ0RU72SM0vI.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-23T03:05:40.910Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CjtdENnJeLovlhPU8bptwybGgS",
-      "title": "Deploying my first AWS Project",
-      "description": "For a student, getting started with AWS can seem like a daunting task. However, in this article, I uncover the steps I took to utilize AWS to its fullest extent to host my first web deployment for a personal project.",
-      "url": "https://builder.aws.com/content/3CjtdENnJeLovlhPU8bptwybGgS",
-      "imageUrl": "",
-      "authorName": "Agastya Mishra",
-      "authorAlias": "amishra1234",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-23T03:04:29.620Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CjxhYo7aC33evVxEL0BycVltoc",
-      "title": "Building in Public: Why Your Journey Matters More Than Your Code",
-      "description": "You are not alone if you have felt a gap between university coding and real-world infrastructure. The AWS Builder Center bridges that gap through its focus on community. What sets a student apart in today’s industry is not just the code they write, but the way they engage with the global community of creators. ",
-      "url": "https://builder.aws.com/content/3CjxhYo7aC33evVxEL0BycVltoc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CjynDWQHshOyKBGF2fbrNaQqeA/imag.webp",
-      "authorName": "Ariana Avina",
-      "authorAlias": "arianaavina16",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjsZlTag4hrafIuDTRrJzwpVFg.webp",
-      "location": "WA, US",
-      "lat": 47.2868352,
-      "lng": -120.212613,
-      "tags": [
-        "students",
-        "aws-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-23T03:04:19.237Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -414,8 +435,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 2708,
-      "commentsCount": 1655
+      "likesCount": 2785,
+      "commentsCount": 1719
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -435,8 +456,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 2782,
-      "commentsCount": 265
+      "likesCount": 2809,
+      "commentsCount": 288
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -460,6 +481,27 @@
       "commentsCount": 100
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 1871,
+      "commentsCount": 287
+    },
+    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -479,29 +521,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1888,
-      "commentsCount": 261
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 1786,
-      "commentsCount": 284
+      "likesCount": 1895,
+      "commentsCount": 263
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -545,7 +566,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1317,
+      "likesCount": 1321,
       "commentsCount": 305
     },
     {
@@ -566,30 +587,31 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1115,
-      "commentsCount": 200
+      "likesCount": 1118,
+      "commentsCount": 201
     },
     {
-      "id": "/content/3Cb2hN8X4GvJni11D6Jd7dLwsFU",
-      "title": "AWS Builder Center 101: Guia do Aluno",
-      "description": "Chegou a hora de entender de uma vez por todas O QUE é o AWS Builder Center, COMO tirar o máximo de proveito daqui e os próximos passos para o estudante interessado nesse mundo!",
-      "url": "https://builder.aws.com/content/3Cb2hN8X4GvJni11D6Jd7dLwsFU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClAOrBHhYJfmHEIBD3l3MqQNb6/arti.webp",
-      "authorName": "Pedro Milani ",
-      "authorAlias": "phvmilani",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUSal49Bg8qJ4oS2EjD5bI3Gux.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
+      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
+      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
+      "authorName": "Sivadharshan V",
+      "authorAlias": "sivadharshan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "all-builders-welcome",
-        "aws-builders",
-        "aspiring-builders",
-        "tutorials"
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "amazon-nova",
+        "serverless"
       ],
-      "publishedAt": "2026-04-23T13:12:54.490Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "publishedAt": "2026-04-18T01:59:16.140Z",
+      "likesCount": 85,
+      "commentsCount": 77
     }
   ]
 }
