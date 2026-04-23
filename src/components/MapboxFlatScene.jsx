@@ -187,6 +187,7 @@ export default function MapboxFlatScene({
   const overlayRef = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef([]);
+  const resizeTimerRef = useRef(null);
 
   const clusters = useMemo(() => clusterMembers(members), [members]);
 
@@ -211,13 +212,75 @@ export default function MapboxFlatScene({
     map.dragRotate.disable();
     map.touchZoomRotate.disableRotation();
 
+    const scheduleResize = () => {
+      if (resizeTimerRef.current) {
+        window.clearTimeout(resizeTimerRef.current);
+      }
+
+      let raf1 = 0;
+      let raf2 = 0;
+
+      const runResize = () => {
+        map.resize();
+        map.triggerRepaint();
+      };
+
+      raf1 = window.requestAnimationFrame(() => {
+        runResize();
+        raf2 = window.requestAnimationFrame(runResize);
+      });
+
+      resizeTimerRef.current = window.setTimeout(runResize, 120);
+
+      return () => {
+        window.cancelAnimationFrame(raf1);
+        window.cancelAnimationFrame(raf2);
+        if (resizeTimerRef.current) {
+          window.clearTimeout(resizeTimerRef.current);
+          resizeTimerRef.current = null;
+        }
+      };
+    };
+
+    const resizeObserver = new ResizeObserver(() => {
+      map.resize();
+      map.triggerRepaint();
+    });
+    resizeObserver.observe(containerRef.current);
+    const cleanupResize = scheduleResize();
+
     return () => {
+      cleanupResize();
+      resizeObserver.disconnect();
       markersRef.current.forEach(({ element }) => element.remove());
       markersRef.current = [];
       map.remove();
       mapRef.current = null;
     };
   }, []);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    let raf1 = 0;
+    let raf2 = 0;
+
+    const resizeMap = () => {
+      map.resize();
+      map.triggerRepaint();
+    };
+
+    raf1 = window.requestAnimationFrame(() => {
+      resizeMap();
+      raf2 = window.requestAnimationFrame(resizeMap);
+    });
+
+    return () => {
+      window.cancelAnimationFrame(raf1);
+      window.cancelAnimationFrame(raf2);
+    };
+  }, [category, members.length, darkMode, heatmapEnabled]);
 
   useEffect(() => {
     const overlay = overlayRef.current;
