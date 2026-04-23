@@ -14,10 +14,10 @@ const AUTO_ROTATE_SPEED = 0.003;
 const DRAG_SENSITIVITY = 0.005;
 const MAX_TILT = Math.PI / 3;
 const IDLE_TIMEOUT_MS = 3000;
-const SINGLE_MARKER_SIZE = 0.02;
-const CLUSTER_MARKER_BASE_SIZE = 0.028;
-const CLUSTER_MARKER_STEP = 0.004;
-const CLUSTER_MARKER_MAX_SIZE = 0.042;
+const SINGLE_MARKER_SIZE = 0.028;
+const CLUSTER_MARKER_BASE_SIZE = 0.038;
+const CLUSTER_MARKER_STEP = 0.006;
+const CLUSTER_MARKER_MAX_SIZE = 0.06;
 const BASE_SCALE = 0.95;
 const MIN_SCALE = 0.8;
 const MAX_SCALE = 1.85;
@@ -124,7 +124,7 @@ function projectMarker(cluster, phi, theta, width, height, scale) {
     x: ((ndcX + 1) / 2) * width,
     y: ((1 - ndcY) / 2) * height,
     z: cameraPoint.z,
-    radius: Math.max(10, cluster.size * radiusBase * 1.4),
+    radius: Math.max(14, cluster.size * radiusBase * 1.9),
   };
 }
 

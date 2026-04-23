@@ -7,6 +7,7 @@ import TagFilter from './components/TagFilter';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 
+const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
 const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
@@ -36,7 +37,9 @@ export default function App() {
       ? MapboxGlobeScene
       : globeDesign === 'flat'
         ? MapboxFlatScene
-        : ClassicGlobeScene;
+        : globeDesign === 'sleek'
+          ? CobeGlobeScene
+          : ClassicGlobeScene;
 
   const tags = useMemo(() => {
     const set = new Set(members.map((member) => member.tag).filter(Boolean));
@@ -143,6 +146,7 @@ export default function App() {
   function designButtonLabel(design) {
     if (design === 'classic') return 'Mapbox';
     if (design === 'orbit') return 'Orbit';
+    if (design === 'sleek') return 'Sleek';
     return design.charAt(0).toUpperCase() + design.slice(1);
   }
 
@@ -323,7 +327,7 @@ export default function App() {
                       }}
                       aria-label="Globe design switcher"
                     >
-                      {['orbit', 'classic', 'flat'].map((d) => (
+                      {['orbit', 'classic', 'sleek', 'flat'].map((d) => (
                         <button
                           key={d}
                           type="button"
@@ -512,6 +516,14 @@ export default function App() {
                       style={designButtonStyles('classic')}
                     >
                       {designButtonLabel('classic')}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setGlobeDesign('sleek')}
+                      className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                      style={designButtonStyles('sleek')}
+                    >
+                      Sleek
                     </button>
                     <button
                       type="button"
