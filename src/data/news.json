@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-22T23:18:07.195Z",
+  "updatedAt": "2026-04-23T00:30:12.174Z",
   "latest": [
+    {
+      "id": "/content/3CjUybzJJWkfTYE0QhDEMcyYPZP",
+      "title": "Hospedagem de projetos técnicos na AWS: arquitetura com S3, CloudFront e Route 53",
+      "description": "Aprenda a hospedar sites estáticos, interfaces de modelos de IA e documentação técnica na AWS usando Amazon S3, CloudFront e Route 53. Este guia cobre configuração de bucket, distribuição CDN com HTTPS, DNS personalizado, pipeline CI/CD com GitHub Actions e limpeza de recursos — com custo estimado inferior a R$5/mês para projetos de pequeno e médio porte. Inclui boas práticas de segurança com IAM de menor privilégio e Origin Access Control.",
+      "url": "https://builder.aws.com/content/3CjUybzJJWkfTYE0QhDEMcyYPZP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CjY6NWO3d0UJIl7v0sDpV2dhyQ/0001.webp",
+      "authorName": "Ivisson Alves - LLMs • RAG • Multi-Agents",
+      "authorAlias": "ivipn",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8qtokMTlc8mNgzVCCYEgpbb3t.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-s3",
+        "amazon-cloudfront",
+        "aws-skill-builder",
+        "amazon-route53",
+        "aws-iam-identity-center"
+      ],
+      "publishedAt": "2026-04-22T23:25:26.323Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CjUwXXLh6jNzFh0hEvWuLIDVar",
       "title": "How to get started with AWS",
@@ -181,49 +204,9 @@
       "publishedAt": "2026-04-22T20:51:31.362Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CjBz99UAWWP0xTc1hFqx582cx4",
-      "title": "Hack Day: Context Graphs for Multi-Agent AI",
-      "description": "Join us for a Neo4j + AWS Strands Hack Day, taking you from architectural concepts to smart agents",
-      "url": "https://builder.aws.com/content/3CjBz99UAWWP0xTc1hFqx582cx4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CjEBdxZtV26Y6uYhXYbGuAwisa/AWS-.webp",
-      "authorName": "Yolande Poirier",
-      "authorAlias": "yolande",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "strands-agents",
-        "ai-agents",
-        "ai-engineering",
-        "neo4j",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-22T20:45:48.616Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 12,
-      "commentsCount": 166
-    },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
@@ -243,8 +226,25 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1232,
+      "likesCount": 1237,
       "commentsCount": 286
+    },
+    {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 14,
+      "commentsCount": 166
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -264,8 +264,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 1825,
-      "commentsCount": 1150
+      "likesCount": 1833,
+      "commentsCount": 1152
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -306,7 +306,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 1808,
+      "likesCount": 1809,
       "commentsCount": 164
     },
     {
@@ -329,47 +329,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1714,
+      "likesCount": 1715,
       "commentsCount": 241
-    },
-    {
-      "id": "/content/3CjULyApfJ0r99WdZr7nZ4lR4PH",
-      "title": "Como conseguir oportunidades de emprego em ambientes de ensino",
-      "description": "Este artigo mostra como se destacar no ambiente de ensino pode abrir portas para o primeiro emprego, destacando a importância da atitude, participação em projetos e reconhecimento por professores, além de como isso pode gerar oportunidades profissionais ainda durante os estudos.",
-      "url": "https://builder.aws.com/content/3CjULyApfJ0r99WdZr7nZ4lR4PH",
-      "imageUrl": "",
-      "authorName": "Pedro Filipe Borges",
-      "authorAlias": "pedroborgesdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-22T22:57:19.137Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3AtZUzAZOkK0JhJRuh0hFZOJciY",
-      "title": "AIdeas: SpainPilot",
-      "description": "An AI relocation agent for Spain that helps people decide where to live using conversational matching, location scoring, risk analysis, and property intelligence. Built with Amazon Bedrock AgentCore, Nova, Knowledge Bases, S3 Vectors, and Rekognition.",
-      "url": "https://builder.aws.com/content/3AtZUzAZOkK0JhJRuh0hFZOJciY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Atgzoxbm7k2ZnjDLg69DQrn1Bm/Gemi.webp",
-      "authorName": "Igor",
-      "authorAlias": "igorrise",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Atmt7j0E2KWmY10tXKFODJeKpg.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "aideas-2025",
-        "daily-life-enhancement",
-        "EMEA",
-        "ai"
-      ],
-      "publishedAt": "2026-03-13T16:14:22.475Z",
-      "likesCount": 75,
-      "commentsCount": 44
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -389,8 +350,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 1253,
-      "commentsCount": 265
+      "likesCount": 1295,
+      "commentsCount": 268
     },
     {
       "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
@@ -412,8 +373,51 @@
         "social-impact"
       ],
       "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 221,
-      "commentsCount": 83
+      "likesCount": 222,
+      "commentsCount": 84
+    },
+    {
+      "id": "/content/3AtZUzAZOkK0JhJRuh0hFZOJciY",
+      "title": "AIdeas: SpainPilot",
+      "description": "An AI relocation agent for Spain that helps people decide where to live using conversational matching, location scoring, risk analysis, and property intelligence. Built with Amazon Bedrock AgentCore, Nova, Knowledge Bases, S3 Vectors, and Rekognition.",
+      "url": "https://builder.aws.com/content/3AtZUzAZOkK0JhJRuh0hFZOJciY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Atgzoxbm7k2ZnjDLg69DQrn1Bm/Gemi.webp",
+      "authorName": "Igor",
+      "authorAlias": "igorrise",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Atmt7j0E2KWmY10tXKFODJeKpg.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "aideas-2025",
+        "daily-life-enhancement",
+        "EMEA",
+        "ai"
+      ],
+      "publishedAt": "2026-03-13T16:14:22.475Z",
+      "likesCount": 76,
+      "commentsCount": 44
+    },
+    {
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 1102,
+      "commentsCount": 198
     }
   ]
 }
