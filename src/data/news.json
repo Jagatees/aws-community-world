@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-23T07:34:51.398Z",
+  "updatedAt": "2026-04-23T08:36:37.745Z",
   "latest": [
+    {
+      "id": "/content/3CkalU2ctS3QWqARywzTi4MFdcz",
+      "title": "Test",
+      "description": "This is my first post",
+      "url": "https://builder.aws.com/content/3CkalU2ctS3QWqARywzTi4MFdcz",
+      "imageUrl": "",
+      "authorName": "Rohit Raj",
+      "authorAlias": "deathlord",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-23T08:17:11.482Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CkRzzVvpzD5vUJ0qPOaMUxAFp2",
       "title": "What is AWS Cloud Club? And Why Every Campus Should Have One",
@@ -278,7 +295,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-04-23T02:09:25.706Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 0
     },
     {
@@ -302,52 +319,6 @@
       "publishedAt": "2026-04-23T01:45:55.149Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cjhe6a2lMhp5tFaBdUKk7VNeQL",
-      "title": "Como o Amazon Q Transformou Minha Jornada de Aprendizado em Cloud e Arquitetura de Sistemas",
-      "description": "Descubra como o Amazon Q pode acelerar seu aprendizado em cloud computing, ajudando estudantes a entender arquiteturas de sistemas e analisar código de forma prática e eficiente.",
-      "url": "https://builder.aws.com/content/3Cjhe6a2lMhp5tFaBdUKk7VNeQL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CjkumRvuue4am2YaKaqHl0J01f/bann.webp",
-      "authorName": "Gabriel Macedo",
-      "authorAlias": "gabrielmaced",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cjm5asFPzpSf0RDYxQlOWef5oA.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-q",
-        "amazon-q-developer",
-        "ai",
-        "ai-for-developers",
-        "learning-and-development"
-      ],
-      "publishedAt": "2026-04-23T01:18:47.563Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CjUybzJJWkfTYE0QhDEMcyYPZP",
-      "title": "Hospedagem de projetos técnicos na AWS: arquitetura com S3, CloudFront e Route 53",
-      "description": "Aprenda a hospedar sites estáticos, interfaces de modelos de IA e documentação técnica na AWS usando Amazon S3, CloudFront e Route 53. Este guia cobre configuração de bucket, distribuição CDN com HTTPS, DNS personalizado, pipeline CI/CD com GitHub Actions e limpeza de recursos — com custo estimado inferior a R$5/mês para projetos de pequeno e médio porte. Inclui boas práticas de segurança com IAM de menor privilégio e Origin Access Control.",
-      "url": "https://builder.aws.com/content/3CjUybzJJWkfTYE0QhDEMcyYPZP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CjY6NWO3d0UJIl7v0sDpV2dhyQ/0001.webp",
-      "authorName": "Ivisson Alves - LLMs • RAG • Multi-Agents",
-      "authorAlias": "ivipn",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8qtokMTlc8mNgzVCCYEgpbb3t.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-s3",
-        "amazon-cloudfront",
-        "aws-skill-builder",
-        "amazon-route53",
-        "aws-iam-identity-center"
-      ],
-      "publishedAt": "2026-04-22T23:25:26.323Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -365,8 +336,8 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 15,
-      "commentsCount": 166
+      "likesCount": 18,
+      "commentsCount": 167
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -386,8 +357,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 2336,
-      "commentsCount": 1494
+      "likesCount": 2464,
+      "commentsCount": 1575
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -407,8 +378,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 2216,
-      "commentsCount": 169
+      "likesCount": 2254,
+      "commentsCount": 177
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -428,7 +399,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 267,
+      "likesCount": 269,
       "commentsCount": 100
     },
     {
@@ -451,8 +422,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1825,
-      "commentsCount": 250
+      "likesCount": 1832,
+      "commentsCount": 259
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -472,31 +443,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 1391,
-      "commentsCount": 275
-    },
-    {
-      "id": "/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
-      "title": "AIdeas Finalist: CareLens AI — Transparent Care Guidance When It Matters Most.",
-      "description": "CareLens is a privacy-first AI platform that helps people understand healthcare costs before seeking treatment. By analyzing de-identified symptoms, location, and optional insurance details, it compares care options like ER, urgent care, or specialists and surfaces real-world price ranges using hospital transparency and CMS data. It doesn’t diagnose—it delivers clear, grounded cost, bill analyzing and care guidance so users can make confident decisions without surprise bills.",
-      "url": "https://builder.aws.com/content/3CQl2COkOpSO9O04XR8S9BuqVTt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQpXsD0JnjTgsz5OtwkvL8Wtzr/Scre.webp",
-      "authorName": "Daniel Lambo",
-      "authorAlias": "daniellambo",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "NAMER",
-        "aideas-2025",
-        "north-america",
-        "social-good",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-16T08:35:54.943Z",
-      "likesCount": 223,
-      "commentsCount": 84
+      "likesCount": 1419,
+      "commentsCount": 276
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -517,8 +465,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1282,
-      "commentsCount": 299
+      "likesCount": 1288,
+      "commentsCount": 300
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -538,7 +486,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1109,
+      "likesCount": 1111,
       "commentsCount": 200
     },
     {
@@ -561,8 +509,31 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T20:29:28.119Z",
-      "likesCount": 176,
+      "likesCount": 177,
       "commentsCount": 49
+    },
+    {
+      "id": "/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "title": "AIdeas Finalist: Infinite Storefront – Eradicating the E-Commerce Return Crisis",
+      "description": "Infinite Storefront is a decentralized B2B2C sizing infrastructure eradicating the $890B e-commerce return crisis. Using a Multi-Axis Matrix and Amazon Bedrock, it proves garment fit mathematically before visual rendering. Built on 100% AWS serverless architecture, it equips independent boutiques with enterprise AI in under 4 minutes. By routing shoppers to local inventory for pickup, it bypasses reverse logistics entirely, turning retail margin protection into global climate action.",
+      "url": "https://builder.aws.com/content/3CV3DwYYSfdFhgyXOm6IjLFgGHZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CV3UuHW6f0oh6HpHYYg98aDiQj/Hero-.webp",
+      "authorName": "Sivadharshan V",
+      "authorAlias": "sivadharshan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AJvz90L9Bw7x9LzAgO5HKTeB1C.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "amazon-nova",
+        "serverless"
+      ],
+      "publishedAt": "2026-04-18T01:59:16.140Z",
+      "likesCount": 80,
+      "commentsCount": 72
     }
   ]
 }
