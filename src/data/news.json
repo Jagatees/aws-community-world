@@ -1,6 +1,205 @@
 {
-  "updatedAt": "2026-04-23T18:24:39.367Z",
+  "updatedAt": "2026-04-23T19:30:14.522Z",
   "latest": [
+    {
+      "id": "/content/3CltmDPylHPm38jN8o3yhTmOSud",
+      "title": "Minha primeira semana com o AWS Builder Center: Como foi praticar a coragem de encarar algo novo?",
+      "description": "Minha primeira semana no programa de líderes estudantis da AWS foi um mix de frio na barriga, muito estudo sobre Cloud e a alegria de conectar com pessoas do Brasil inteiro. Escrevi um breve relato sobre essa experiência, minha transição acadêmica e como estou unindo cérebro e coração para criar conteúdos tech com a minha cara. Vem ler! 🚀",
+      "url": "https://builder.aws.com/content/3CltmDPylHPm38jN8o3yhTmOSud",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CluHe39YESbuFdkfHSZVrOHJvh/C-pi.webp",
+      "authorName": "Camille Moraes de Paula Faria",
+      "authorAlias": "millinha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CihKdtoBgScZBwvonwThBQDJDA.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "learn",
+        "learning-and-development",
+        "experience"
+      ],
+      "publishedAt": "2026-04-23T19:29:26.194Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CATWXEFh5oS2UEho0GryVARWmB",
+      "title": "Por que engenheiros industriais deveriam aprender cloud computing",
+      "description": "Uma análise sobre como cloud vem ganhando espaço dentro da engenharia industrial e por que isso está se tornando cada vez mais relevante.",
+      "url": "https://builder.aws.com/content/3CATWXEFh5oS2UEho0GryVARWmB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Clt8EMeeV32Q1OpVUZ02Pz2ygo/Bann.webp",
+      "authorName": "Alfeu Valente",
+      "authorAlias": "feuvalente",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUOO4gnjWZft1kSpTNj4EuO0Sq.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
+      "tags": [
+        "industrial-industry",
+        "manufacturing-industry",
+        "aws-industries-live"
+      ],
+      "publishedAt": "2026-04-23T19:23:10.901Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ClqkecTXn2RK6Rz8Vmc8ag1kXj",
+      "title": "Taming the Deduction Beast: Automating the CPG Back Office with Agentic AI",
+      "description": "For Fortune 2000 CPG companies, back-office processing consumes 4.2–7.35% of revenue—among the highest of any industry. Fragmented global markets, complex retail channels, and billions in trade promotions drive immense complexity. With 60–70% of activities being repetitive and manual, the Agentic AI opportunity is extraordinary. AWS customers already achieve 5–10X productivity gains in deductions, reconciliation, and vendor onboarding.",
+      "url": "https://builder.aws.com/content/3ClqkecTXn2RK6Rz8Vmc8ag1kXj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClrncoJeriXiMAKFRtz6bkOLow/imag.webp",
+      "authorName": "Rob",
+      "authorAlias": "rgirvan",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "finance"
+      ],
+      "publishedAt": "2026-04-23T19:07:16.248Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Clq4t5v7aHgIrmpUDJb1H2VHDJ",
+      "title": "Multi-Agent Reliability on AWS: Building SRE Infrastructure for A2A + MCP Production Systems",
+      "description": "Amazon Bedrock AgentCore now supports A2A natively. That means multi-agent systems — where orchestrator agents delegate to specialist sub-agents via the Agent-to-Agent protocol — are a first-class deployment pattern on AWS.hat also means the reliability engineering challenge I've been anticipating for the past year is now a production problem for AWS customers. ",
+      "url": "https://builder.aws.com/content/3Clq4t5v7aHgIrmpUDJb1H2VHDJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClrKEV18gTHrcEiJ8BUFusftmM/Copi.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "sre",
+        "devops-pro",
+        "agent-to-agent",
+        "agent-hooks"
+      ],
+      "publishedAt": "2026-04-23T19:03:26.067Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ClYPW92skUBbYEWZY6UqYtQNil",
+      "title": "AWS Builder Center HELP: Guia do aluno",
+      "description": "Um breve tutorial de como utilizar a plataforma para alavancar seu potencial tech e três lições que gostaria do compartilhar sobre o AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3ClYPW92skUBbYEWZY6UqYtQNil",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClrpljARMMOI84EzWKEbJKOP57/Gemi.webp",
+      "authorName": "Rayssa Resende",
+      "authorAlias": "rayssaresende",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUwO8ZKqb0R86TY0cmPKbr5Rct.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
+      "tags": [
+        "aws-community-builders",
+        "builder-center",
+        "educational",
+        "tech",
+        "portuguese"
+      ],
+      "publishedAt": "2026-04-23T18:55:33.216Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Clk02euZlNcpt4Xl4atnc8npM1",
+      "title": "Como estou montando meu portfólio de TI sem gastar nada",
+      "description": "Cansada de só ver teoria na faculdade? Eu também. Nesse artigo, eu mostro como estou usando as abas de Workshops e Spaces da AWS para construir meu primeiro portfólio de Cloud sem risco de cobranças no cartão e com foco total no que o mercado pede.",
+      "url": "https://builder.aws.com/content/3Clk02euZlNcpt4Xl4atnc8npM1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Clq5wMGfXfjIQsOJrDGxuTmGiq/Desi.webp",
+      "authorName": "Vitória Valença",
+      "authorAlias": "vitoriavalencac",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClrmoeTEbmGRwWnUkEgRDtaoLL.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
+      "tags": [
+        "aws-cloudformation",
+        "portuguese",
+        "students",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-23T18:53:31.864Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3Cibp7Odv1cGosSZsg8b7Tt5B9Z",
+      "title": "AWS MCP Servers Part 3: Build Smarter, Query Faster",
+      "description": "From raw data to intelligent insights — How AWS MCP Servers are transforming AI/ML workflows and data engineering",
+      "url": "https://builder.aws.com/content/3Cibp7Odv1cGosSZsg8b7Tt5B9Z",
+      "imageUrl": "",
+      "authorName": "Ajaykumar K V",
+      "authorAlias": "ajaydekevin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35L8Jbp5ZUqbxjijEIcICbK0OaT.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "agentic-ai",
+        "agentic-interactions",
+        "kiro",
+        "mcp",
+        "mcp-server"
+      ],
+      "publishedAt": "2026-04-23T18:44:25.134Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ClfxKfQNxKvqDEC9vQhlGkj9KY",
+      "title": "Three ML Concepts Every AWS Builder Should Actually Understand",
+      "description": "A technical breakdown of 3 ML concepts often covered in AWS MLE interviews: gradient descent, random forests, and flash-attention–and their applications in production-side AWS tools.",
+      "url": "https://builder.aws.com/content/3ClfxKfQNxKvqDEC9vQhlGkj9KY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClnEGiNUkMlxPRXy0JMQenJLIG/aws-a.webp",
+      "authorName": "Amir Valizadeh",
+      "authorAlias": "amirbakeslab",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai-ml",
+        "interview-prep",
+        "transformer-architecture",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-04-23T18:39:29.874Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CllwhhtksiAr9fIT1YqP4S0aMT",
+      "title": "Kiro - Gerenciamento e Governança",
+      "description": "Galera... vamos falar mais um pouco sobre o Kiro e dessa vez o tema é gerenciamento e governança. Que eu vejo ser um grande diferencial que temos aqui.\n\n#BRLink #IngramMicro #aws #awsambassador #awscommunitybuilder #kiro #agenticai",
+      "url": "https://builder.aws.com/content/3CllwhhtksiAr9fIT1YqP4S0aMT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClmSDiZFuf4WLQ07SWrYclq91o/Scre.webp",
+      "authorName": "Carlos Marangon",
+      "authorAlias": "marangon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/385KNbm76TYQ1BuAElBYNhB3mN4.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "agentic-ide",
+        "agent-hooks",
+        "kiro",
+        "governance"
+      ],
+      "publishedAt": "2026-04-23T18:30:33.568Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Clez5c1lSfvdwmOWtXcVwFeMBs",
       "title": "Engenharia de Software, carreira e cloud: por que decidi olhar para AWS ainda na faculdade",
@@ -19,390 +218,8 @@
         "aws-networking"
       ],
       "publishedAt": "2026-04-23T17:34:24.174Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CjbomHXVw0hPgDLBol8XoogiAk",
-      "title": "Which Foundation Model Is Best at Empathetic Decision-Making in High-Stakes Conversations?",
-      "description": "This article evaluates a range of foundation models based on how well they can formulate solutions. By considering intangible, qualitative factors such as relationships, past experiences, empathy, leverage, and realism, we can more clearly see what each model focuses on in a prompt.\n\nUsing controlled prompts across multiple AWS Bedrock models, the study compares how effectively each handles emotional nuance, financial constraints, and negotiation strategy to determine which is most \"empathy oriented.\"",
-      "url": "https://builder.aws.com/content/3CjbomHXVw0hPgDLBol8XoogiAk",
-      "imageUrl": "",
-      "authorName": "Jacob Condrell",
-      "authorAlias": "jacobcondrell",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CMREHsvDAb9QKRt2vwN1VZwPQe.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "amazon-bedrock",
-        "analytics",
-        "chatbots"
-      ],
-      "publishedAt": "2026-04-23T17:21:09.930Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClQTfJwXEPdOINoYbcoL202tdP",
-      "title": "Your Cloud Journey Starts Here—With AWS",
-      "description": "🚀 Ready to start your cloud journey?\nExplore how Amazon Web Services can help you build real-world skills, work on projects, and unlock new opportunities.\nStart small, stay consistent, and grow with the cloud ☁️\n\n#students #https://builder.aws.com/start?trk=7cff29b7-5b80-4b00-adf1-e79ab5ac6509&sc_channel=el",
-      "url": "https://builder.aws.com/content/3ClQTfJwXEPdOINoYbcoL202tdP",
-      "imageUrl": "",
-      "authorName": "Ruthvik Reddy Devidi",
-      "authorAlias": "ruthvikreddydevidi",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWymmy8JFxJlKe5gJhJBxY6Icn.webp",
-      "location": " Telangana, IN",
-      "lat": 17.8495919,
-      "lng": 79.1151663,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-23T15:34:32.246Z",
-      "likesCount": 15,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CSKptBFUjmPjRvL6B2l9OuCC0u",
-      "title": "Deploying MongoDB MCP Server on AWS Bedrock AgentCore",
-      "description": "Learn how to deploy the MongoDB MCP Server as a managed container on AWS Bedrock AgentCore, giving your AI agents direct access to MongoDB databases and Atlas through the Model Context Protocol.",
-      "url": "https://builder.aws.com/content/3CSKptBFUjmPjRvL6B2l9OuCC0u",
-      "imageUrl": "",
-      "authorName": "Igor",
-      "authorAlias": "ialek36",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClOoPSrK8iiPA1UZNg27Pz8qqv.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-23T15:25:35.736Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClETzknRsnvY80K3E0rcfwGSDG",
-      "title": "AWS: A Nuvem que Você já Usa (Mesmo sem Saber)",
-      "description": " Descubra como a AWS domina 28% do mercado global de nuvem e por que essa tecnologia não é exclusiva para especialistas de TI. Este artigo desmistifica a computação em nuvem, revelando sua presença invisível em nosso cotidiano — do streaming ao banco digital. Se você é iniciante, confira o guia prático com os primeiros cursos essenciais (como o Cloud Practitioner) para dominar a infraestrutura que move o mundo moderno. A nuvem é para todos; aprenda por onde começar sua jornada.",
-      "url": "https://builder.aws.com/content/3ClETzknRsnvY80K3E0rcfwGSDG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClPcaGyzdjKrKUQwiYzRmiYgGT/IMG_2.webp",
-      "authorName": "Gabriel Zago de Carvalho",
-      "authorAlias": "zagodecarvalho",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cb3ONKDNNAgqUZe8MTKaa8vm9J.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aideas-2025",
-        "advertising-marketing-industry",
-        "active-directory",
-        "advanced-networking"
-      ],
-      "publishedAt": "2026-04-23T15:20:20.396Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClLkdk0fTJralX55z5BqyiPg0x",
-      "title": "Da raiz ao futuro: A Nuvem como fonte de crescimento",
-      "description": "A nuvem da AWS abre caminhos de inclusão e aprendizado, transformando desafios em oportunidades e raízes em futuros possíveis.",
-      "url": "https://builder.aws.com/content/3ClLkdk0fTJralX55z5BqyiPg0x",
-      "imageUrl": "",
-      "authorName": "Calebe da Rocha Santos Ferreira",
-      "authorAlias": "calebeferreira",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClLZMUhOmY845J97fljFcHdpc5.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-23T15:08:37.692Z",
       "likesCount": 5,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
-      "title": "Nuvem sem barreiras: A tecnologia como ferramenta de protagonismo para estudantes de todas as áreas e não só computação.",
-      "description": "Neste artigo, mostro que a nuvem não é exclusividade da TI e como ela é essencial em áreas como a engenharia biomédica. Compartilho minha jornada no programa de líder estudantil da AWS para apresentar como qualquer estudante pode aprender tecnologia do zero com cursos gratuitos. Também discuto a importância da representatividade feminina para motivar mais mulheres nesse espaço.",
-      "url": "https://builder.aws.com/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClKxbgwfhe2moWl3HTRzGUmquw/arti.webp",
-      "authorName": "Larissa Souza Mafra",
-      "authorAlias": "larimafra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClKbTf0xfBjMZWMhnVzeTTbwNp.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "women-in-tech"
-      ],
-      "publishedAt": "2026-04-23T14:36:59.431Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG",
-      "title": "Claude Opus 4.7 on Amazon Bedrock: APIs, Features, and Migration Guide",
-      "description": "\"A practical walkthrough of every API path for Claude Opus 4.7 on Bedrock — Messages API, InvokeModel, and Converse — with code examples, feature comparison, and breaking changes to watch for when upgrading from Opus 4.6.\"  ",
-      "url": "https://builder.aws.com/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG",
-      "imageUrl": "",
-      "authorName": "boudboub, Sid Ahmed",
-      "authorAlias": "sidahmedb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31WHtgFTa3hfpnvP8mprnSXUL97.webp",
-      "location": "FR",
-      "lat": 46.603354,
-      "lng": 1.8883335,
-      "tags": [
-        "agentic-ai",
-        "llm",
-        "anthropic-claude",
-        "claude",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-04-23T14:31:21.525Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClEpc2qrTVJXK8tevfvgt1CPvX",
-      "title": "5 ferramentas e recursos da AWS que todo universitário deveria conhecer",
-      "description": "Sou estudante de Ciência da Computação e, quando decidi que queria aprender sobre cloud, me senti um pouco perdido. \nA área de tecnologia muda muito rápido e, às vezes, a sala de aula não dá conta de mostrar todas as ferramentas práticas que o mercado exige. \nFoi quando descobri o AWS Builder Center, um espaço que reúne tudo o que um estudante precisa para começar.\n Hoje, quero compartilhar 5 recursos dessa plataforma que mudaram a minha forma de estudar e que todo universitário precisa conhecer.",
-      "url": "https://builder.aws.com/content/3ClEpc2qrTVJXK8tevfvgt1CPvX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClJaI9GYU6aUZUS4NVIeN6IdA6/Fund.webp",
-      "authorName": "Davi Marinho cordeiro",
-      "authorAlias": "davimarinho",
-      "authorAvatarUrl": "",
-      "location": "CE, BR",
-      "lat": -5.3264703,
-      "lng": -39.7156073,
-      "tags": [
-        "aws-builders",
-        "students",
-        "career",
-        "training"
-      ],
-      "publishedAt": "2026-04-23T14:27:02.771Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cl92TMwKvh8UidZoHTcRuOj2hN",
-      "title": "A Convergência entre Academia e Mercado: Arquitetando o Futuro com o AWS Builder Center",
-      "description": "Uma análise sobre como a integração entre o ensino superior, a prática profissional em órgãos públicos e o ecossistema AWS acelera a formação de desenvolvedores de alta performance.",
-      "url": "https://builder.aws.com/content/3Cl92TMwKvh8UidZoHTcRuOj2hN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClIFIVXOAuAt4k9STmwNbMrKQ7/WA_17.webp",
-      "authorName": "Cristiano Xavier",
-      "authorAlias": "cristianoxavier",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiX3O3AcYfMkK6BuFxhlGUI4me.webp",
-      "location": "TO, BR",
-      "lat": -10.8855129,
-      "lng": -48.3716912,
-      "tags": [
-        "aws-academy",
-        "aws-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-23T14:17:37.020Z",
-      "likesCount": 4,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BoAj1YVVS3rGZXIGIYKVQwuQkN",
-      "title": "AWS Global Accelerators are preffered over Route 53 for Multi-Region Failover why?",
-      "description": "Understanding how real production systems use Internal Backbone Network, Edge Network and Anycast IP work and routing through Regional ALB’s! ",
-      "url": "https://builder.aws.com/content/3BoAj1YVVS3rGZXIGIYKVQwuQkN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClHsN7Iixh18uFTNVxHssMinwE/1776.webp",
-      "authorName": "Arokia Martin N",
-      "authorAlias": "arokiamartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClH2K26vEVEpj2cxV59pbuyBXw.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-global-accelerator",
-        "amazon-route53",
-        "failure"
-      ],
-      "publishedAt": "2026-04-23T14:11:05.578Z",
-      "likesCount": 0,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3ClGjGqCgQGAORumvJbiGz4A3Z9",
-      "title": "How I Used My Freshman Engineering Skills to Build My First Personal AWS Project",
-      "description": "A behind-the-scenes look at how I built my first personal AWS project, an IoT availability display for my research professor's office door using Swift, API Gateway, Lambda, and an Arduino with a 3D printed enclosure. As well as why I wish I'd had AWS Builder Center while figuring it all out, and why engineering students shouldn't wait to explore it.",
-      "url": "https://builder.aws.com/content/3ClGjGqCgQGAORumvJbiGz4A3Z9",
-      "imageUrl": "",
-      "authorName": "Nathan Jones",
-      "authorAlias": "njinferno",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5Lsh4AWaw87u2WlwyphIraWeI.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-23T14:06:56.983Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CBRlTyg5DNgAqUTNL9OM5Itq4F",
-      "title": "O que é computação em nuvem e por que você precisa saber?",
-      "description": "Neste artigo, entenda o que é computação em nuvem, por que esse modelo transformou a forma como empresas e desenvolvedores trabalham, e por que você — mesmo estudante ou profissional iniciante — precisa saber disso para não ficar para trás em 2026.",
-      "url": "https://builder.aws.com/content/3CBRlTyg5DNgAqUTNL9OM5Itq4F",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClGXXEXFiU34Euv4AsvjZOO3fn/1000.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "amazon-ec2",
-        "aws-cloudformation"
-      ],
-      "publishedAt": "2026-04-23T14:05:43.202Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CiifVOyxoCFnE1ePRyDvK9e8jZ",
-      "title": "Cloud Computing e Minha Experiência Com o AWS Builder Center",
-      "description": "Neste artigo compartilho como estou começando minha jornada na computação em nuvem e por que esse tema se tornou tão importante para mim como estudante. Explico de forma simples o que é cloud, como ela já faz parte do nosso dia a dia e como o AWS Builder Center tem me ajudado a aprender, ganhar confiança e dar meus primeiros passos na área. É um texto pensado especialmente para quem também está começando e quer entender por onde iniciar.",
-      "url": "https://builder.aws.com/content/3CiifVOyxoCFnE1ePRyDvK9e8jZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClAKdxWngPWeC2CQGfE22L4YGa/imag.webp",
-      "authorName": "Pedro Costard Oliveira",
-      "authorAlias": "costard",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "career",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-23T13:13:34.920Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cb2hN8X4GvJni11D6Jd7dLwsFU",
-      "title": "AWS Builder Center 101: Guia do Aluno",
-      "description": "Chegou a hora de entender de uma vez por todas O QUE é o AWS Builder Center, COMO tirar o máximo de proveito daqui e os próximos passos para o estudante interessado nesse mundo!",
-      "url": "https://builder.aws.com/content/3Cb2hN8X4GvJni11D6Jd7dLwsFU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClAOrBHhYJfmHEIBD3l3MqQNb6/arti.webp",
-      "authorName": "Pedro Milani ",
-      "authorAlias": "phvmilani",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUSal49Bg8qJ4oS2EjD5bI3Gux.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders",
-        "aspiring-builders",
-        "tutorials"
-      ],
-      "publishedAt": "2026-04-23T13:12:54.490Z",
-      "likesCount": 8,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Cl3JcMzhZxicPGfl1Mb8dGE9gc",
-      "title": "Meu início no Programa de Líderes Estudantis da AWS Builder Center",
-      "description": "Estou iniciando no Programa de Líderes Estudantis da Amazon Web Services para desenvolver habilidades em tecnologia, liderança e comunicação.",
-      "url": "https://builder.aws.com/content/3Cl3JcMzhZxicPGfl1Mb8dGE9gc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cl4CDbt5HYL91NBa9a0RzbtLkN/Whats.webp",
-      "authorName": "Rayane Araújo",
-      "authorAlias": "rayanearaujo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClBKpQOKwFtX5Z4CxR7p3U83LJ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-23T12:21:20.276Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/32VZUBx1igULoilXRk6XLmqWijo",
-      "title": "Introducing the Amazon Nova Act MCP Server for AI Agents",
-      "description": "A practical guide to running Amazon Nova Act through MCP, from quick API key setup to advanced AWS-native browser automation.",
-      "url": "https://builder.aws.com/content/32VZUBx1igULoilXRk6XLmqWijo",
-      "imageUrl": "",
-      "authorName": "Baizel, Emile",
-      "authorAlias": "ebaizel",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "ai",
-        "mcp",
-        "ai-agents",
-        "agents"
-      ],
-      "publishedAt": "2026-04-23T11:55:50.169Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CU1XlfraktftGzNIzSy5gG8X7Y",
-      "title": "How to integrate AWS DevOps Agent with GitHub",
-      "description": "This guide walks you through integrating GitHub with AWS DevOps Agent so that the agent can access your code repositories and receive deployment events during incident investigations. The integration enables AWS DevOps Agent to correlate code changes with operational incidents, reducing mean time to resolution (MTTR) for any GitHub workflow failures.",
-      "url": "https://builder.aws.com/content/3CU1XlfraktftGzNIzSy5gG8X7Y",
-      "imageUrl": "",
-      "authorName": "Purushotham G K",
-      "authorAlias": "prushok",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-23T11:42:37.986Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CkoPeL84mPSAClud5JcNaQBDw3",
-      "title": "How AWS Free Tier helped me learn by doing",
-      "description": "#students",
-      "url": "https://builder.aws.com/content/3CkoPeL84mPSAClud5JcNaQBDw3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ckpz7e8UWfRq04ma6fda4VxnKE/2025.webp",
-      "authorName": "Vedant Uekey",
-      "authorAlias": "vedantuekey",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRBhNiWQWK053bAgRECaU2lNxB.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-23T10:22:21.644Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CkkO3BTQxQvuIfpostRjLjlHTA",
-      "title": "Amazon Web Services (AWS): Powering the Future of Cloud Computing",
-      "description": "Amazon Web Services (AWS) is a leading cloud platform by Amazon that provides scalable, on-demand computing services over the internet. From virtual servers like Amazon EC2 to storage solutions such as Amazon S3, AWS enables businesses to build, deploy, and manage applications efficiently without the need for physical infrastructure. Its flexibility, global reach, and pay-as-you-go pricing model have made it a backbone of modern digital innovation.",
-      "url": "https://builder.aws.com/content/3CkkO3BTQxQvuIfpostRjLjlHTA",
-      "imageUrl": "",
-      "authorName": "Ameen K B",
-      "authorAlias": "ameenkb",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-api",
-        "aws-cli"
-      ],
-      "publishedAt": "2026-04-23T09:37:38.287Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -420,7 +237,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 26,
+      "likesCount": 27,
       "commentsCount": 168
     },
     {
@@ -441,8 +258,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3217,
-      "commentsCount": 1845
+      "likesCount": 3279,
+      "commentsCount": 1854
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -462,8 +279,51 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3081,
+      "likesCount": 3136,
       "commentsCount": 320
+    },
+    {
+      "id": "/content/3Clk02euZlNcpt4Xl4atnc8npM1",
+      "title": "Como estou montando meu portfólio de TI sem gastar nada",
+      "description": "Cansada de só ver teoria na faculdade? Eu também. Nesse artigo, eu mostro como estou usando as abas de Workshops e Spaces da AWS para construir meu primeiro portfólio de Cloud sem risco de cobranças no cartão e com foco total no que o mercado pede.",
+      "url": "https://builder.aws.com/content/3Clk02euZlNcpt4Xl4atnc8npM1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Clq5wMGfXfjIQsOJrDGxuTmGiq/Desi.webp",
+      "authorName": "Vitória Valença",
+      "authorAlias": "vitoriavalencac",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClrmoeTEbmGRwWnUkEgRDtaoLL.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
+      "tags": [
+        "aws-cloudformation",
+        "portuguese",
+        "students",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-23T18:53:31.864Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2236,
+      "commentsCount": 296
     },
     {
       "id": "/content/3ClQTfJwXEPdOINoYbcoL202tdP",
@@ -485,27 +345,6 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2139,
-      "commentsCount": 294
-    },
-    {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
       "title": "AIdeas Finalist: Perspective",
       "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
@@ -523,7 +362,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 273,
+      "likesCount": 274,
       "commentsCount": 101
     },
     {
@@ -550,6 +389,27 @@
       "commentsCount": 267
     },
     {
+      "id": "/content/3Clez5c1lSfvdwmOWtXcVwFeMBs",
+      "title": "Engenharia de Software, carreira e cloud: por que decidi olhar para AWS ainda na faculdade",
+      "description": "Sou Vithor Torelli, estudante de Engenharia de Software, e neste artigo compartilho por que decidi começar a olhar para cloud computing ainda durante a faculdade.\n\nPercebi cedo que tecnologia vai muito além do código e que entender infraestrutura, escalabilidade e mercado pode fazer diferença na carreira. Talvez essa reflexão também faça sentido para quem está começando agora.\n\n#AWS #CloudComputing #EngenhariaDeSoftware #CarreiraTech #Tecnologia #AWSBuilderCenter",
+      "url": "https://builder.aws.com/content/3Clez5c1lSfvdwmOWtXcVwFeMBs",
+      "imageUrl": "",
+      "authorName": "Vitor Torelli",
+      "authorAlias": "vithortorelli",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CldMUGPN6wi904M58xhUB5QAdY.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "backend",
+        "students",
+        "aws-networking"
+      ],
+      "publishedAt": "2026-04-23T17:34:24.174Z",
+      "likesCount": 5,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
       "title": "AIdeas Finalist: RetainIQ",
       "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
@@ -571,48 +431,6 @@
       "publishedAt": "2026-04-17T20:29:28.119Z",
       "likesCount": 181,
       "commentsCount": 94
-    },
-    {
-      "id": "/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
-      "title": "Nuvem sem barreiras: A tecnologia como ferramenta de protagonismo para estudantes de todas as áreas e não só computação.",
-      "description": "Neste artigo, mostro que a nuvem não é exclusividade da TI e como ela é essencial em áreas como a engenharia biomédica. Compartilho minha jornada no programa de líder estudantil da AWS para apresentar como qualquer estudante pode aprender tecnologia do zero com cursos gratuitos. Também discuto a importância da representatividade feminina para motivar mais mulheres nesse espaço.",
-      "url": "https://builder.aws.com/content/3ClKk3UqYNzoYd93wzbx7pMXKKs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClKxbgwfhe2moWl3HTRzGUmquw/arti.webp",
-      "authorName": "Larissa Souza Mafra",
-      "authorAlias": "larimafra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClKbTf0xfBjMZWMhnVzeTTbwNp.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "women-in-tech"
-      ],
-      "publishedAt": "2026-04-23T14:36:59.431Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1335,
-      "commentsCount": 310
     }
   ]
 }
