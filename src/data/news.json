@@ -1,6 +1,159 @@
 {
-  "updatedAt": "2026-04-24T07:36:13.355Z",
+  "updatedAt": "2026-04-24T08:41:32.853Z",
   "latest": [
+    {
+      "id": "/content/3CnRaTXydrUC6WFQKRtAHMHI1jk",
+      "title": "First Article",
+      "description": "Trying out new IDE provided by AWS…",
+      "url": "https://builder.aws.com/content/3CnRaTXydrUC6WFQKRtAHMHI1jk",
+      "imageUrl": "",
+      "authorName": "Ruchika kachhawa",
+      "authorAlias": "ruchika3295",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-24T08:32:19.498Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnRNbqGQkcUe8nAVSFVXXw96wZ",
+      "title": "Using kiro for the first time",
+      "description": "Exploring Agent ai development",
+      "url": "https://builder.aws.com/content/3CnRNbqGQkcUe8nAVSFVXXw96wZ",
+      "imageUrl": "",
+      "authorName": "Chaths CD",
+      "authorAlias": "chaths",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-24T08:31:23.301Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnReYmPyeY0WY3ZQ7Se4eseSjy",
+      "title": "Hello",
+      "description": "This is the first push",
+      "url": "https://builder.aws.com/content/3CnReYmPyeY0WY3ZQ7Se4eseSjy",
+      "imageUrl": "",
+      "authorName": "ADITI MISHRA",
+      "authorAlias": "aditi1911",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-24T08:31:21.316Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnQZIN3ftXo2Ngfub9O1q4ztXA",
+      "title": "Being an AWS Cloud Captain is More Than Organizing Events",
+      "description": "A reflection on how being an AWS Cloud Captain goes beyond organizing events and focuses on building a community that supports learning and growth.",
+      "url": "https://builder.aws.com/content/3CnQZIN3ftXo2Ngfub9O1q4ztXA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnQfXHIEmJBi8MQTDXklyqOzjK/Whats.webp",
+      "authorName": "Shashank Pandey",
+      "authorAlias": "shashankpandey04",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHTaHlwIdIstMASl9t52rkKOvM.webp",
+      "location": "Punjab, IN",
+      "lat": 30.9293211,
+      "lng": 75.5004841,
+      "tags": [
+        "aws-cloud-clubs",
+        "students"
+      ],
+      "publishedAt": "2026-04-24T08:26:20.520Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnLl15HPgjeDyxPCMWQeMXx3Fv",
+      "title": "Getting Started with AWS: A Beginner’s Guide to Cloud Computing",
+      "description": "A beginner-friendly guide to understanding Amazon Web Services (AWS) and taking your first step into cloud computing. Learn the basics, explore key services, and start building with confidence.\n\nhttps://builder.aws.com/start?trk=a4881785-9947-4708-8d12-14522fdd9b00&sc_channel=el",
+      "url": "https://builder.aws.com/content/3CnLl15HPgjeDyxPCMWQeMXx3Fv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnNOCKylWPJTSs8kriMM6VDBG6/ACP1.webp",
+      "authorName": "Monica R",
+      "authorAlias": "monicaravi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3A4ppNK9t4ZiJBHiL5hR7sdrV72.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "learning-and-development",
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-04-24T08:25:36.235Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnMzREbuB3HEhPbxN2akaTyDa0",
+      "title": "Como estudar AWS: o método que usei para tirar minha primeira certificação e continuo usando",
+      "description": "Uma dica ou outra de como estudar AWS :)",
+      "url": "https://builder.aws.com/content/3CnMzREbuB3HEhPbxN2akaTyDa0",
+      "imageUrl": "",
+      "authorName": "Hyan Costa Schibelsky",
+      "authorAlias": "hyansky",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "learn",
+        "development",
+        "devops",
+        "aws-builders",
+        "training-and-certification"
+      ],
+      "publishedAt": "2026-04-24T08:17:33.836Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnP6jleubRXowdBPb0EMLRaRpQ",
+      "title": "Cost Optimization Best Practices for Amazon EMR on EKS",
+      "description": "A practical guide to reducing compute costs while maintaining job reliability.",
+      "url": "https://builder.aws.com/content/3CnP6jleubRXowdBPb0EMLRaRpQ",
+      "imageUrl": "",
+      "authorName": "Gaurav Sharma",
+      "authorAlias": "gsharma",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-24T08:11:54.468Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnM24W01WwYb1ZAOrjZkjgGFwS",
+      "title": "Getting Started with AWS Builder ID",
+      "description": "AWS Builder ID gives students an easy and practical way to start learning cloud computing without setup complexity. It helps build real skills through hands-on learning, guided resources, and community interaction.",
+      "url": "https://builder.aws.com/content/3CnM24W01WwYb1ZAOrjZkjgGFwS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnNDdRf7DsZrndK2gvv1KmVNMN/Scre.webp",
+      "authorName": "Aditya Singh",
+      "authorAlias": "adityapranu1",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-skill-builder",
+        "aws-ambassador",
+        "aws-cloud-clubs",
+        "builder-id"
+      ],
+      "publishedAt": "2026-04-24T08:03:26.819Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CnDiZgqHqjgNPv1N4J2iEda0kT",
       "title": "From Demo to Deployment: Solving Agentic AI's Toughest Challenges",
@@ -243,130 +396,6 @@
       "publishedAt": "2026-04-24T02:09:17.331Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmZbxiiDIWbupD87pWEXKPvqxL",
-      "title": "Why Every Engineer Needs to Know Cloud: The New Industrial Revolution",
-      "description": "As the boundary between physical hardware and digital intelligence blurs, traditional engineering disciplines are undergoing a fundamental shift toward cloud-integrated systems. This transition enables practitioners to leverage elastic compute, real-time IoT monitoring, and generative design to solve complex physical problems with unprecedented speed and scale.",
-      "url": "https://builder.aws.com/content/3CmZbxiiDIWbupD87pWEXKPvqxL",
-      "imageUrl": "",
-      "authorName": "Reese Miller",
-      "authorAlias": "reesemiller",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BoroDviz2fd7DZpIdvgKzTwM1u.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-24T01:13:48.718Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmR0i3BNlsbcmLAIYE5UtffZbD",
-      "title": "🚀 Building an Intelligent Document Processing System with AI on AWS: From YAML to Production with Kiro",
-      "description": "We designed, implemented, and deployed a fully serverless intelligent document processing system leveraging Amazon Bedrock, Textract, Lambda, SQS, and OpenSearch Serverless. The entire ecosystem was orchestrated through CloudFormation in a three-tier architecture and developed using Kiro as an AI-driven development co-pilot. This post explores the technical architecture, real-world implementation challenges, troubleshooting workflows, and the industry best practices we applied.",
-      "url": "https://builder.aws.com/content/3CmR0i3BNlsbcmLAIYE5UtffZbD",
-      "imageUrl": "",
-      "authorName": "Exegol",
-      "authorAlias": "luiszuniga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
-      "location": "CR",
-      "lat": 10.2735633,
-      "lng": -84.0739102,
-      "tags": [
-        "kiro",
-        "ai-for-developers"
-      ],
-      "publishedAt": "2026-04-23T23:56:48.995Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmPAqBj1Wnp3gonKhYRHlydvj7",
-      "title": "Serving Models on Trainium with Triton Inference Server Neuron Python Backend",
-      "description": "Using Triton Inference Server on Trainium with the Neuron SDK and a Python backend.",
-      "url": "https://builder.aws.com/content/3CmPAqBj1Wnp3gonKhYRHlydvj7",
-      "imageUrl": "",
-      "authorName": "Burtoft, Jim",
-      "authorAlias": "neuronjim",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qmzp4T2NaSodRe64J5nUhFZON.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-23T23:48:28.466Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
-      "title": "Criando e hospedando seu site pessoal com AWS Amplify, Kiro e AWS Builder Center",
-      "description": "\"Quem não é visto, não é lembrado\". É com esta frase que descrevo o artigo de hoje.\nHoje, num mundo totalmente globalizado e conectado pela internet, ter uma presença digital forte não é mais uma escolha, é a sua chave para conseguir ir além na carreira.\nEste é um passo a passo para você criar e hospedar seu próprio site pessoal usando AWS Amplify, com apoio do Kiro para construir o código e do AWS Builder Center como hub de identidade, comunidade e aprendizado.",
-      "url": "https://builder.aws.com/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmP1ggNiwiPxeuPj7EZ9eU7Ngu/AWS-.webp",
-      "authorName": "Jorge Hermes",
-      "authorAlias": "jhermesn",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdpzfqjzzANdQ5L8FzOO6z6MmX.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "kiro",
-        "aws-amplify",
-        "website",
-        "builder-center",
-        "vibe-coding"
-      ],
-      "publishedAt": "2026-04-23T23:42:37.772Z",
-      "likesCount": 7,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CmGLv0JKPrkiFv8uht6WBHneby",
-      "title": "Do \"Qualquer Coisa, Menos T.I.\" ao AWS Builder Center: meu caminho de descoberta no mundo da tecnologia.",
-      "description": "Muitas vezes, o caminho para a tecnologia não é linear. Eu achava que informática não era pra mim, mas descobri que era a ferramenta para construir o mundo, e que eu poderia trabalhar com ela. Hoje, como Líder Estudantil Builder AWS, estou no caminho para compartilhar minhas iniciativas de Cloud na minha universidade, inovando o sertão paraibano através do conhecimento.",
-      "url": "https://builder.aws.com/content/3CmGLv0JKPrkiFv8uht6WBHneby",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmMwuPPNCnySNsI5EWNaKFP3py/Do-Q.webp",
-      "authorName": "Monick Evelyn",
-      "authorAlias": "monick",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C92wo9FzPfR5sICJN3ah3Ijimi.webp",
-      "location": "PB, BR",
-      "lat": -7.1219366,
-      "lng": -36.7246845,
-      "tags": [
-        "aws-builders",
-        "aws-community-builders",
-        "students",
-        "tech",
-        "portuguese"
-      ],
-      "publishedAt": "2026-04-23T23:37:16.065Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CmH0ZVvalXVxK64hpm5CtvXjSf",
-      "title": "How to Replace Your LLM-Based Safety Agent with Amazon Bedrock Guardrails",
-      "description": "A practical guide to implementing content filters, jailbreak detection, PII redaction, and denied topics — with code, cost analysis, and real test results from a customer-facing chatbot.",
-      "url": "https://builder.aws.com/content/3CmH0ZVvalXVxK64hpm5CtvXjSf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmIQDUa5KTTjph8ejACyHJ2FO3/Scre.webp",
-      "authorName": "Mauricio Trunfio",
-      "authorAlias": "mtrunfio",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CM8NC3w4yXKuhDDVeDF0MGVaR7.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-bedrock-agents",
-        "amazon-bedrock-agentcore",
-        "llm"
-      ],
-      "publishedAt": "2026-04-23T22:58:41.411Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -388,8 +417,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3375,
-      "commentsCount": 1892
+      "likesCount": 3376,
+      "commentsCount": 1893
     },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
@@ -447,7 +476,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2828,
+      "likesCount": 2829,
       "commentsCount": 312
     },
     {
@@ -495,25 +524,6 @@
       "commentsCount": 268
     },
     {
-      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
-      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
-      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "imageUrl": "",
-      "authorName": "João Emanuel de Souza",
-      "authorAlias": "joaoposka",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "feedback"
-      ],
-      "publishedAt": "2026-04-24T04:01:57.761Z",
-      "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
       "title": "AIdeas Finalist: RetainIQ",
       "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
@@ -535,6 +545,25 @@
       "publishedAt": "2026-04-17T20:29:28.119Z",
       "likesCount": 183,
       "commentsCount": 94
+    },
+    {
+      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
+      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
+      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "imageUrl": "",
+      "authorName": "João Emanuel de Souza",
+      "authorAlias": "joaoposka",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "feedback"
+      ],
+      "publishedAt": "2026-04-24T04:01:57.761Z",
+      "likesCount": 6,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -559,23 +588,25 @@
       "commentsCount": 316
     },
     {
-      "id": "/content/3CmUxoHbJ7Tjt99ROgQYXtDMsvB",
-      "title": "Do Zero A Líder Estudantil builder AWS: Um novo capítulo na minha vida.",
-      "description": "Eu decidir ano passado me arriscar, mudei de curso e fui pra ADS na FBUNI, foi maior paço que eu dei na minha vida, um tiro no escuro, não sabia o que esperar, passei por tanta coisa e tantas decepções de carreia e nunca me imaginei estando aqui como Líder Estudantil builder AWS, é como se o destino tivesse me guiado e me recompensado por todas as horas de estudo e dedicação, agora quero compartilhar minha jornada nesse mundo de computação em nuvem com AWS.",
-      "url": "https://builder.aws.com/content/3CmUxoHbJ7Tjt99ROgQYXtDMsvB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmddqNER8pMkLRzoVHrFAiUbHp/Bann-.webp",
-      "authorName": "Daniel Moura de Souza",
-      "authorAlias": "danaws12",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
+      "title": "AIdeas Finalist: CarbonZero",
+      "description": "AI-Powered Carbon Accounting & Gamified Compliance for African Businesses and Individuals. Built with Kiro and AWS, CarbonZero helps African SMEs and exporters track emissions, achieve EU CBAM compliance, and turn sustainability into a competitive advantage — now with the audit trails, carbon passports, and accounting sync to make it real.",
+      "url": "https://builder.aws.com/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CX9btdGulNLoahJOU5lbD7WoqB/02_i.webp",
+      "authorName": "Oluwasegun Adedigba",
+      "authorAlias": "cloudsege",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30Az8sg0UYREelhXEzrNbsPJ1eJ.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
-        "personal-expression"
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
       ],
-      "publishedAt": "2026-04-24T02:13:28.319Z",
-      "likesCount": 7,
-      "commentsCount": 2
+      "publishedAt": "2026-04-18T14:21:47.039Z",
+      "likesCount": 128,
+      "commentsCount": 74
     }
   ]
 }
