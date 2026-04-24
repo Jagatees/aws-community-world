@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-04-24T10:31:55.722Z",
+  "updatedAt": "2026-04-24T11:26:12.272Z",
   "latest": [
+    {
+      "id": "/content/3CnjcuxJZvhhqqBuZkrqetQyZUs",
+      "title": "Unlocking AWS Cost Efficiency with the DevOps Agent",
+      "description": "Join Stephanie Gooch and her guests, as they explore the AWS DevOps Agent and its role in enhancing cost efficiency through automated incident management and FinOps integration.\n",
+      "url": "https://builder.aws.com/content/3CnjcuxJZvhhqqBuZkrqetQyZUs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnjjPWEVsTZBwdTiArA2NuKDnd/Scre.webp",
+      "authorName": "Steph Gooch",
+      "authorAlias": "stephgooch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/374Zqzv0e7QeksFYZ7GR5FiQRuO.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "devops",
+        "agentic-ai",
+        "finops",
+        "livestreaming"
+      ],
+      "publishedAt": "2026-04-24T10:59:53.151Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cki9BwtcC3jHdBeKm4uPNUClpC",
+      "title": "Improve Application Quality and Differentiation with Model Customization on AWS Services",
+      "description": "This article outlines the spectrum of AWS model customization techniques, from prompt engineering and RAG to fine-tuning and bespoke model building, with guidance on selecting the right approach. It includes a decision framework, an overview of relevant AWS services, and best practices for driving measurable business outcomes.",
+      "url": "https://builder.aws.com/content/3Cki9BwtcC3jHdBeKm4uPNUClpC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CngvWfbjvEbXGMN76iA99Hlamw/abstr.webp",
+      "authorName": "Ester Koilis",
+      "authorAlias": "ekoilis",
+      "authorAvatarUrl": "",
+      "location": "IL",
+      "lat": 30.8124247,
+      "lng": 34.8594762,
+      "tags": [
+        "model-choice",
+        "large-language-model",
+        "ai",
+        "amazon-sagemaker-hyperpod",
+        "amazon-sagemaker-ai"
+      ],
+      "publishedAt": "2026-04-24T10:53:30.545Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cnf7NhJyDV3hP2yyVGjN1I8Wnd",
       "title": "AWS Kiro",
@@ -359,49 +404,6 @@
       "publishedAt": "2026-04-24T04:01:57.761Z",
       "likesCount": 6,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3CmlSDniaGB1sytO3jfMbF2F7UU",
-      "title": "Amazon Connect Monthly Newsletter - April 2026",
-      "description": "The latest issue of the Amazon Connect Newsletter is here! Stay current on Amazon Connect! Don't miss out on these key insights!",
-      "url": "https://builder.aws.com/content/3CmlSDniaGB1sytO3jfMbF2F7UU",
-      "imageUrl": "",
-      "authorName": "Adams, George",
-      "authorAlias": "gadamsiv",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3114Oroav9dvl8NKCKnWChnZguZ.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-connect",
-        "newsletter",
-        "amazon-lex",
-        "agentic-ai",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-24T02:45:32.529Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmjZtK8GKjeBNAqzLaDRjYfd1p",
-      "title": "Minha primeira semana com o AWS Builder Center: o que eu aprendi",
-      "description": "Neste artigo, compartilho o que aprendi na minha primeira semana com o AWS Builder Center e como essa experiência tem me ajudado a enxergar cloud, comunidade e crescimento profissional de forma mais clara.",
-      "url": "https://builder.aws.com/content/3CmjZtK8GKjeBNAqzLaDRjYfd1p",
-      "imageUrl": "",
-      "authorName": "Kaua Almeida",
-      "authorAlias": "kauatech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVepJX70rpOFxJjw2T9EdpZ1F6.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "builder-center",
-        "tech"
-      ],
-      "publishedAt": "2026-04-24T02:40:28.625Z",
-      "likesCount": 3,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -423,7 +425,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3378,
+      "likesCount": 3379,
       "commentsCount": 1894
     },
     {
@@ -596,23 +598,25 @@
       "commentsCount": 202
     },
     {
-      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
-      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
-      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "imageUrl": "",
-      "authorName": "João Emanuel de Souza",
-      "authorAlias": "joaoposka",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
+      "id": "/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "title": "AIdeas Finalist: LuminaLog — Privacy-First Observability",
+      "description": "LuminaLog is a serverless, privacy-first observability platform. It features SmartScrub™, a Kinesis-driven engine that replaces PII with realistic synthetic data before storage, preserving both data privacy and debuggability. Combined with real-time WebSocket live tailing and automated Gemini 2.5 Flash error analysis, it gives startups in regulated markets enterprise-grade compliance and insights without the enterprise price tag.",
+      "url": "https://builder.aws.com/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTmJ8Z5NxG2NmFXBrlPTyekL9c/Gemi.webp",
+      "authorName": "Moses Michael Idiong",
+      "authorAlias": "mozman777",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AZKAiQY35hpsBxlLeu4LVQ2w6i.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
       "tags": [
-        "feedback"
+        "aideas-2025",
+        "EMEA",
+        "commercial-solutions"
       ],
-      "publishedAt": "2026-04-24T04:01:57.761Z",
-      "likesCount": 6,
-      "commentsCount": 3
+      "publishedAt": "2026-04-17T20:29:18.574Z",
+      "likesCount": 496,
+      "commentsCount": 585
     }
   ]
 }
