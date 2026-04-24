@@ -1,6 +1,66 @@
 {
-  "updatedAt": "2026-04-24T11:26:12.272Z",
+  "updatedAt": "2026-04-24T12:21:27.004Z",
   "latest": [
+    {
+      "id": "/content/3CnslIAKeZ9WpKj5oUsVCjdKnJk",
+      "title": "How to Secure a WordPress Site: 10 Proven Security Tips",
+      "description": "Learn how to secure a WordPress site with 10 proven tips. Protect your website from hackers, malware, and threats using this simple guide.",
+      "url": "https://builder.aws.com/content/3CnslIAKeZ9WpKj5oUsVCjdKnJk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cnt7AyO9faOegjWBgFSSq4vArR/How-.webp",
+      "authorName": "Harper Elise Callahan",
+      "authorAlias": "harperelisecallahan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/381OZkwcmCz2Q9uM2fSAQK2sEAL.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "wordpress",
+        "security-best-practices"
+      ],
+      "publishedAt": "2026-04-24T12:17:24.203Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CmnUvhu2Z92FQcEDso2Oq5ywxc",
+      "title": "5 Coisas que Todo Universitário Pode Aprender no AWS Builder Center ☁️",
+      "description": "Quando eu entrei no AWS Builder Center pela primeira vez, não sabia exatamente o que esperar. Achei que seria uma plataforma técnica demais, cheia de conteúdo difícil, feita só pra quem já trabalha na área. Mas me surpreendi.",
+      "url": "https://builder.aws.com/content/3CmnUvhu2Z92FQcEDso2Oq5ywxc",
+      "imageUrl": "",
+      "authorName": "Daniel Moura de Souza",
+      "authorAlias": "danaws12",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-24T12:06:33.545Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
+      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
+      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
+      "authorName": "Marcus Vinicius",
+      "authorAlias": "mvrga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "amazon-sqs",
+        "backend",
+        "distributed-systems",
+        "scalability"
+      ],
+      "publishedAt": "2026-04-24T11:49:38.292Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CnjcuxJZvhhqqBuZkrqetQyZUs",
       "title": "Unlocking AWS Cost Efficiency with the DevOps Agent",
@@ -266,7 +326,7 @@
         "training-and-certification"
       ],
       "publishedAt": "2026-04-24T08:17:33.836Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -343,67 +403,6 @@
       "publishedAt": "2026-04-24T05:28:56.961Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cn3aovuGgMy3dCfwdefTRQS2ia",
-      "title": "AWS Cloud Practitioner",
-      "description": "This Certification gives overall knowledge on how the aws Infra &cost effective",
-      "url": "https://builder.aws.com/content/3Cn3aovuGgMy3dCfwdefTRQS2ia",
-      "imageUrl": "",
-      "authorName": "Sekhar",
-      "authorAlias": "sekhar01",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-cloudformation"
-      ],
-      "publishedAt": "2026-04-24T05:15:45.922Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmzT28e5b7rrVCsghUao5qhBpK",
-      "title": "Building Green Architectures on AWS: A Practical Guide to the Sustainability Pillar",
-      "description": "Most teams optimize for cost and latency but ignore sustainability entirely. This article tests the AWS Sustainability Pillar recommendations hands-on — benchmarking Lambda ARM64 vs x86, applying S3 lifecycle policies, and right-sizing compute — with real results from a live AWS account. Every sustainability win here is also a cost win.",
-      "url": "https://builder.aws.com/content/3CmzT28e5b7rrVCsghUao5qhBpK",
-      "imageUrl": "",
-      "authorName": "V Chowdary",
-      "authorAlias": "vthubati",
-      "authorAvatarUrl": "",
-      "location": "WA, US",
-      "lat": 47.2868352,
-      "lng": -120.212613,
-      "tags": [
-        "sustainability-optimization",
-        "graviton",
-        "aws-lambda",
-        "aws-well-architected",
-        "cost-optimization"
-      ],
-      "publishedAt": "2026-04-24T04:59:57.040Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
-      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
-      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "imageUrl": "",
-      "authorName": "João Emanuel de Souza",
-      "authorAlias": "joaoposka",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "feedback"
-      ],
-      "publishedAt": "2026-04-24T04:01:57.761Z",
-      "likesCount": 6,
-      "commentsCount": 3
     }
   ],
   "trending": [
@@ -425,7 +424,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3379,
+      "likesCount": 3380,
       "commentsCount": 1894
     },
     {
@@ -486,6 +485,29 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2830,
       "commentsCount": 313
+    },
+    {
+      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
+      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
+      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
+      "authorName": "Marcus Vinicius",
+      "authorAlias": "mvrga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "amazon-sqs",
+        "backend",
+        "distributed-systems",
+        "scalability"
+      ],
+      "publishedAt": "2026-04-24T11:49:38.292Z",
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -552,7 +574,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1356,
+      "likesCount": 1357,
       "commentsCount": 316
     },
     {
@@ -577,46 +599,23 @@
       "commentsCount": 76
     },
     {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
+      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
+      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "imageUrl": "",
+      "authorName": "João Emanuel de Souza",
+      "authorAlias": "joaoposka",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
+        "feedback"
       ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1123,
-      "commentsCount": 202
-    },
-    {
-      "id": "/content/3Af988zLy1hRACEVFnzVuEeU5rz",
-      "title": "AIdeas Finalist: LuminaLog — Privacy-First Observability",
-      "description": "LuminaLog is a serverless, privacy-first observability platform. It features SmartScrub™, a Kinesis-driven engine that replaces PII with realistic synthetic data before storage, preserving both data privacy and debuggability. Combined with real-time WebSocket live tailing and automated Gemini 2.5 Flash error analysis, it gives startups in regulated markets enterprise-grade compliance and insights without the enterprise price tag.",
-      "url": "https://builder.aws.com/content/3Af988zLy1hRACEVFnzVuEeU5rz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTmJ8Z5NxG2NmFXBrlPTyekL9c/Gemi.webp",
-      "authorName": "Moses Michael Idiong",
-      "authorAlias": "mozman777",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AZKAiQY35hpsBxlLeu4LVQ2w6i.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aideas-2025",
-        "EMEA",
-        "commercial-solutions"
-      ],
-      "publishedAt": "2026-04-17T20:29:18.574Z",
-      "likesCount": 496,
-      "commentsCount": 585
+      "publishedAt": "2026-04-24T04:01:57.761Z",
+      "likesCount": 9,
+      "commentsCount": 4
     }
   ]
 }
