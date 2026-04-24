@@ -1,6 +1,49 @@
 {
-  "updatedAt": "2026-04-24T13:33:10.193Z",
+  "updatedAt": "2026-04-24T14:34:03.432Z",
   "latest": [
+    {
+      "id": "/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
+      "title": "AWS Builder Center: perspectivas e oportunidades",
+      "description": "Como está sendo minha experiência e o que a plataforma oferece, não só a mim, mas a qualquer um disposto a aprender",
+      "url": "https://builder.aws.com/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Co7ev425mDTjS4SDPLD8teeJyM/logo.webp",
+      "authorName": "alexandre",
+      "authorAlias": "alexandreaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Co32sHp5OWLbzbQN2VO697MOqd.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "identity",
+        "all-builders-welcome",
+        "announcements"
+      ],
+      "publishedAt": "2026-04-24T14:19:13.861Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/31Btt39X2RpvtBzDWHhreQOutOg",
+      "title": "Configure Zscaler on Amazon WorkSpaces Personal",
+      "description": "This guide explains how to forward traffic to Zscaler Internet Access (ZIA) on Amazon WorkSpaces while maintaining WorkSpace health and connectivity.",
+      "url": "https://builder.aws.com/content/31Btt39X2RpvtBzDWHhreQOutOg",
+      "imageUrl": "",
+      "authorName": "Filippa, Dayne",
+      "authorAlias": "filippad",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/318S0Am4lc6CeVP9VgzjL0F5hrf.webp",
+      "location": "ZA",
+      "lat": -28.8166236,
+      "lng": 24.991639,
+      "tags": [
+        "amazon-workspaces",
+        "workspaces",
+        "end-user-computing",
+        "firewall"
+      ],
+      "publishedAt": "2026-04-24T13:43:29.917Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CnvNAZaOCPbFNNvA5GbOs6YqxX",
       "title": "Minha primeira semana com o AWS Builder Center: o que eu aprendi.",
@@ -13,7 +56,12 @@
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
-      "tags": [],
+      "tags": [
+        "aws-certification",
+        "aws-community",
+        "aws-builders",
+        "aws-community-builders"
+      ],
       "publishedAt": "2026-04-24T13:07:46.187Z",
       "likesCount": 1,
       "commentsCount": 0
@@ -143,7 +191,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-04-24T12:06:33.545Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 1
     },
     {
@@ -166,53 +214,8 @@
         "scalability"
       ],
       "publishedAt": "2026-04-24T11:49:38.292Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CnjcuxJZvhhqqBuZkrqetQyZUs",
-      "title": "Unlocking AWS Cost Efficiency with the DevOps Agent",
-      "description": "Join Stephanie Gooch and her guests, as they explore the AWS DevOps Agent and its role in enhancing cost efficiency through automated incident management and FinOps integration.\n",
-      "url": "https://builder.aws.com/content/3CnjcuxJZvhhqqBuZkrqetQyZUs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnjjPWEVsTZBwdTiArA2NuKDnd/Scre.webp",
-      "authorName": "Steph Gooch",
-      "authorAlias": "stephgooch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/374Zqzv0e7QeksFYZ7GR5FiQRuO.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "devops",
-        "agentic-ai",
-        "finops",
-        "livestreaming"
-      ],
-      "publishedAt": "2026-04-24T10:59:53.151Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cki9BwtcC3jHdBeKm4uPNUClpC",
-      "title": "Improve Application Quality and Differentiation with Model Customization on AWS Services",
-      "description": "This article outlines the spectrum of AWS model customization techniques, from prompt engineering and RAG to fine-tuning and bespoke model building, with guidance on selecting the right approach. It includes a decision framework, an overview of relevant AWS services, and best practices for driving measurable business outcomes.",
-      "url": "https://builder.aws.com/content/3Cki9BwtcC3jHdBeKm4uPNUClpC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CngvWfbjvEbXGMN76iA99Hlamw/abstr.webp",
-      "authorName": "Ester Koilis",
-      "authorAlias": "ekoilis",
-      "authorAvatarUrl": "",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "model-choice",
-        "large-language-model",
-        "ai",
-        "amazon-sagemaker-hyperpod",
-        "amazon-sagemaker-ai"
-      ],
-      "publishedAt": "2026-04-24T10:53:30.545Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 4,
+      "commentsCount": 2
     }
   ],
   "trending": [
@@ -234,25 +237,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3381,
+      "likesCount": 3382,
       "commentsCount": 1895
-    },
-    {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 36,
-      "commentsCount": 168
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -272,8 +258,25 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3455,
+      "likesCount": 3468,
       "commentsCount": 321
+    },
+    {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 36,
+      "commentsCount": 168
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -293,7 +296,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2830,
+      "likesCount": 2831,
       "commentsCount": 313
     },
     {
@@ -343,6 +346,29 @@
       "commentsCount": 94
     },
     {
+      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
+      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
+      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
+      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
+      "authorAlias": "mvrga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "amazon-sqs",
+        "backend",
+        "distributed-systems",
+        "scalability"
+      ],
+      "publishedAt": "2026-04-24T11:49:38.292Z",
+      "likesCount": 4,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -361,8 +387,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1358,
-      "commentsCount": 316
+      "likesCount": 1360,
+      "commentsCount": 317
     },
     {
       "id": "/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
@@ -382,8 +408,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-18T14:21:47.039Z",
-      "likesCount": 132,
-      "commentsCount": 76
+      "likesCount": 133,
+      "commentsCount": 77
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -405,29 +431,6 @@
       "publishedAt": "2026-04-17T14:32:53.936Z",
       "likesCount": 1123,
       "commentsCount": 202
-    },
-    {
-      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
-      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
-      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
-      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
-      "authorAlias": "mvrga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "amazon-sqs",
-        "backend",
-        "distributed-systems",
-        "scalability"
-      ],
-      "publishedAt": "2026-04-24T11:49:38.292Z",
-      "likesCount": 2,
-      "commentsCount": 1
     }
   ]
 }
