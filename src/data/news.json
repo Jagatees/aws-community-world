@@ -1,6 +1,66 @@
 {
-  "updatedAt": "2026-04-23T23:17:22.101Z",
+  "updatedAt": "2026-04-24T00:29:44.709Z",
   "latest": [
+    {
+      "id": "/content/3CmR0i3BNlsbcmLAIYE5UtffZbD",
+      "title": "🚀 Building an Intelligent Document Processing System with AI on AWS: From YAML to Production with Kiro",
+      "description": "We designed, implemented, and deployed a fully serverless intelligent document processing system leveraging Amazon Bedrock, Textract, Lambda, SQS, and OpenSearch Serverless. The entire ecosystem was orchestrated through CloudFormation in a three-tier architecture and developed using Kiro as an AI-driven development co-pilot. This post explores the technical architecture, real-world implementation challenges, troubleshooting workflows, and the industry best practices we applied.",
+      "url": "https://builder.aws.com/content/3CmR0i3BNlsbcmLAIYE5UtffZbD",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "CR",
+      "lat": 10.2735633,
+      "lng": -84.0739102,
+      "tags": [
+        "kiro",
+        "ai-for-developers"
+      ],
+      "publishedAt": "2026-04-23T23:56:48.995Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CmPAqBj1Wnp3gonKhYRHlydvj7",
+      "title": "Serving Models on Trainium with Triton Inference Server Neuron Python Backend",
+      "description": "Using Triton Inference Server on Trainium with the Neuron SDK and a Python backend.",
+      "url": "https://builder.aws.com/content/3CmPAqBj1Wnp3gonKhYRHlydvj7",
+      "imageUrl": "",
+      "authorName": "Burtoft, Jim",
+      "authorAlias": "neuronjim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qmzp4T2NaSodRe64J5nUhFZON.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-23T23:48:28.466Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
+      "title": "Criando e hospedando seu site pessoal com AWS Amplify, Kiro e AWS Builder Center",
+      "description": "\"Quem não é visto, não é lembrado\". É com esta frase que descrevo o artigo de hoje.\nHoje, num mundo totalmente globalizado e conectado pela internet, ter uma presença digital forte não é mais uma escolha, é a sua chave para conseguir ir além na carreira.\nEste é um passo a passo para você criar e hospedar seu próprio site pessoal usando AWS Amplify, com apoio do Kiro para construir o código e do AWS Builder Center como hub de identidade, comunidade e aprendizado.",
+      "url": "https://builder.aws.com/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmP1ggNiwiPxeuPj7EZ9eU7Ngu/AWS-.webp",
+      "authorName": "Jorge Hermes",
+      "authorAlias": "jhermesn",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdpzfqjzzANdQ5L8FzOO6z6MmX.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "kiro",
+        "aws-amplify",
+        "website",
+        "builder-center",
+        "vibe-coding"
+      ],
+      "publishedAt": "2026-04-23T23:42:37.772Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CmH0ZVvalXVxK64hpm5CtvXjSf",
       "title": "How to Replace Your LLM-Based Safety Agent with Amazon Bedrock Guardrails",
@@ -106,7 +166,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-23T21:03:57.137Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -151,67 +211,6 @@
       "publishedAt": "2026-04-23T20:18:34.926Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cly7xaPIA1lPZcgGft6wMOoSXK",
-      "title": "Build a RAG Bot with Amazon Bedrock in 30 Minutes",
-      "description": "No ML expertise needed. Connect S3 docs to Claude 3 via Bedrock Knowledge Bases and get cited answers in 30 minutes. Code and diagram included.",
-      "url": "https://builder.aws.com/content/3Cly7xaPIA1lPZcgGft6wMOoSXK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cm1i0cEvLykaTw9IQ9hMtEIZfm/aws1.webp",
-      "authorName": "meghana rajagopal",
-      "authorAlias": "meghanarajagopal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cm0nLn6wk71SoeU4k6NpqdEhZo.webp",
-      "location": "AE",
-      "lat": 24.0002488,
-      "lng": 53.9994829,
-      "tags": [
-        "amazon-bedrock",
-        "generative-ai",
-        "rag",
-        "serverless",
-        "knowledge-bases-for-bedrock"
-      ],
-      "publishedAt": "2026-04-23T20:14:09.718Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClzBpdhiP6Y1UgLaWWPKApgKSa",
-      "title": "Want to Learn AWS? Start Your Cloud Journey the Right Way",
-      "description": "A beginner-friendly guide to getting started with AWS, including core services, hands-on projects, and the best resources to build real cloud skills.",
-      "url": "https://builder.aws.com/content/3ClzBpdhiP6Y1UgLaWWPKApgKSa",
-      "imageUrl": "",
-      "authorName": "Aryan Vijaykar",
-      "authorAlias": "aryanvijaykar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2LkVcVAtIJ93HLtFBvLv9KL5R.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [],
-      "publishedAt": "2026-04-23T20:08:05.534Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Clqec9xAOBWFVbZ9G6YQFJDtRa",
-      "title": "Como Empreender com AWS: a jornada real de quem começou do zero",
-      "description": "Do primeiro erro de configuração ao primeiro produto no ar o que ninguém te conta sobre construir uma solução na nuvem quando você está começando.",
-      "url": "https://builder.aws.com/content/3Clqec9xAOBWFVbZ9G6YQFJDtRa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ClvW7CSInBmVQ2X2oDQKcICnmJ/Guia.webp",
-      "authorName": "José Nóbrega",
-      "authorAlias": "josenobregaufrn",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C832Axio3mQIMLXJRD6gShPtbX.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-credits",
-        "aws-deeplens",
-        "aws-cloud-map"
-      ],
-      "publishedAt": "2026-04-23T19:39:26.583Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -233,7 +232,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3329,
+      "likesCount": 3331,
       "commentsCount": 1857
     },
     {
@@ -250,7 +249,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 30,
+      "likesCount": 31,
       "commentsCount": 168
     },
     {
@@ -271,7 +270,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3452,
+      "likesCount": 3453,
       "commentsCount": 321
     },
     {
@@ -292,7 +291,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2666,
+      "likesCount": 2820,
       "commentsCount": 311
     },
     {
@@ -313,7 +312,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 274,
+      "likesCount": 275,
       "commentsCount": 101
     },
     {
@@ -340,6 +339,29 @@
       "commentsCount": 267
     },
     {
+      "id": "/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
+      "title": "Criando e hospedando seu site pessoal com AWS Amplify, Kiro e AWS Builder Center",
+      "description": "\"Quem não é visto, não é lembrado\". É com esta frase que descrevo o artigo de hoje.\nHoje, num mundo totalmente globalizado e conectado pela internet, ter uma presença digital forte não é mais uma escolha, é a sua chave para conseguir ir além na carreira.\nEste é um passo a passo para você criar e hospedar seu próprio site pessoal usando AWS Amplify, com apoio do Kiro para construir o código e do AWS Builder Center como hub de identidade, comunidade e aprendizado.",
+      "url": "https://builder.aws.com/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmP1ggNiwiPxeuPj7EZ9eU7Ngu/AWS-.webp",
+      "authorName": "Jorge Hermes",
+      "authorAlias": "jhermesn",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdpzfqjzzANdQ5L8FzOO6z6MmX.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "kiro",
+        "aws-amplify",
+        "website",
+        "builder-center",
+        "vibe-coding"
+      ],
+      "publishedAt": "2026-04-23T23:42:37.772Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
       "title": "AIdeas Finalist: RetainIQ",
       "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
@@ -363,25 +385,6 @@
       "commentsCount": 94
     },
     {
-      "id": "/content/3ClQTfJwXEPdOINoYbcoL202tdP",
-      "title": "Your Cloud Journey Starts Here—With AWS",
-      "description": "🚀 Ready to start your cloud journey?\nExplore how Amazon Web Services can help you build real-world skills, work on projects, and unlock new opportunities.\nStart small, stay consistent, and grow with the cloud ☁️\n\n#students #https://builder.aws.com/start?trk=7cff29b7-5b80-4b00-adf1-e79ab5ac6509&sc_channel=el",
-      "url": "https://builder.aws.com/content/3ClQTfJwXEPdOINoYbcoL202tdP",
-      "imageUrl": "",
-      "authorName": "Ruthvik Reddy Devidi",
-      "authorAlias": "ruthvikreddydevidi",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWymmy8JFxJlKe5gJhJBxY6Icn.webp",
-      "location": " Telangana, IN",
-      "lat": 17.8495919,
-      "lng": 79.1151663,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-23T15:34:32.246Z",
-      "likesCount": 16,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -400,8 +403,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1340,
-      "commentsCount": 310
+      "likesCount": 1342,
+      "commentsCount": 312
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
