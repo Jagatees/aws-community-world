@@ -1,6 +1,126 @@
 {
-  "updatedAt": "2026-04-24T16:21:13.245Z",
+  "updatedAt": "2026-04-24T17:20:56.898Z",
   "latest": [
+    {
+      "id": "/content/3CoOFKocMgZmgjq4dnrRF9HU8Vg",
+      "title": "From Confusion to Cloud: My First Real AWS Build",
+      "description": "AWS felt overwhelming at first, until I built something small. This blog shares how I went from zero to a working serverless app using AWS Lambda and Amazon DynamoDB.",
+      "url": "https://builder.aws.com/content/3CoOFKocMgZmgjq4dnrRF9HU8Vg",
+      "imageUrl": "",
+      "authorName": "Sanjay S",
+      "authorAlias": "ssanjay",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35sMBIaDWCoPi8AcU2LHk0Aijen.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [],
+      "publishedAt": "2026-04-24T16:49:20.460Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CoKlEn3QWuDkVSQxaiYKgXmK5Y",
+      "title": "Why Every Student Should Care About AWS Builder ID (Even If You’re Not Into Cloud Yet)",
+      "description": "AWS Builder ID is more than just an account, it’s a gateway to learning, building, and connecting with a global tech community. Even if you’re not focused on cloud computing, here’s why it’s worth your attention as a student.",
+      "url": "https://builder.aws.com/content/3CoKlEn3QWuDkVSQxaiYKgXmK5Y",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoPSUkqEr2JGAEVybVsVzPicOu/AWS-.webp",
+      "authorName": "Ankit kumar singh",
+      "authorAlias": "unkeet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COIxeiZyHDGz8arOysIOfC7o1j.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-builders",
+        "aws-tech-tales"
+      ],
+      "publishedAt": "2026-04-24T16:47:50.151Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CoPEHtds5aJ9i1EwI3XQ7GsKtr",
+      "title": "AWS Builder Center: O Guia Definitivo para sua Jornada na Nuvem",
+      "description": "Descubra o que é essa plataforma e como ela pode acelerar seu aprendizado prático em AWS.",
+      "url": "https://builder.aws.com/content/3CoPEHtds5aJ9i1EwI3XQ7GsKtr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoPnLFi0iRd1wuHhGzhN8U78AW/Clou.webp",
+      "authorName": "Rayelen Oliveira",
+      "authorAlias": "rayelen",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUFyyMiHSndK2PklJ8g2ZfrqqV.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-academy",
+        "aws-ambassador",
+        "all-builders-welcome",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-24T16:46:19.261Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnWJgik3XhKYud12CNVkvJHntb",
+      "title": "Stepping into Leadership: Starting my Journey as an AWS Student Builder Campus Leader!!!",
+      "description": "A brief summary of my appointment as an AWS Student Builder Campus Leader and my vision for fostering a cloud-learning culture at Karpagam College of Engineering.",
+      "url": "https://builder.aws.com/content/3CnWJgik3XhKYud12CNVkvJHntb",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoNNC6Tr1uDvNkp87Mh37QbnES/Indi.webp",
+      "authorName": "Aalavandhaan Rajasekaran V",
+      "authorAlias": "aalavandhaan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34t8GY4zVtNmvXPvYkxXKOLsRVO.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-24T16:45:48.378Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CgQOi9YBU6FEUWqPgestzVWdLi",
+      "title": "Minha experiência iniciando na AWS Builder Center",
+      "description": "Experiência pessoal e opinião sobre a primeira impressão que tive do AWS Builder Center",
+      "url": "https://builder.aws.com/content/3CgQOi9YBU6FEUWqPgestzVWdLi",
+      "imageUrl": "",
+      "authorName": "Gabriel da Silva Chaves",
+      "authorAlias": "gab9082",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmeglTzCGqmp3uZGSSpzB811dP.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "learning-and-development",
+        "students",
+        "aws-educate"
+      ],
+      "publishedAt": "2026-04-24T16:31:06.389Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CneBCunLoeeSb5MMouYe6K8PXR",
+      "title": "Starting My Cloud Journey with AWS Builder Center: A Student’s First Step into AWS",
+      "description": "A beginner-friendly guide to starting cloud computing with AWS Builder Center, exploring learning resources, hands-on labs, and real-world opportunities for students.",
+      "url": "https://builder.aws.com/content/3CneBCunLoeeSb5MMouYe6K8PXR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoGnJpUVLrseiUs8e5jRua3EKM/Scre.webp",
+      "authorName": "Tanush Balachandra Naik",
+      "authorAlias": "tanush9",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39J5a8LOIXAWNTXklKpqazA5ZOB.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "students",
+        "aws-builders",
+        "learn",
+        "learning-and-development"
+      ],
+      "publishedAt": "2026-04-24T16:22:37.519Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
     {
       "id": "/content/32eMjB0jj8vtGyY0ZfBDCR4GkBo",
       "title": "Configuring Claude Cowork with Amazon Bedrock",
@@ -15,7 +135,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-24T16:18:40.788Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -80,129 +200,6 @@
       "publishedAt": "2026-04-24T16:01:59.126Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CoHn8MDex2SzKLPhC2ItfjQ4LK",
-      "title": "Solving the AWS Awareness Gap: My First Week as a Student Builder Campus Leader",
-      "description": "This article captures my first week as an AWS Student Builder Campus Leader, focused on identifying the awareness gap around AWS among students and taking initial steps to address it. Through early outreach, conversations, and planning activities like awareness sessions, pitching, and tabling events, I began building the foundation for a 6-week community growth initiative",
-      "url": "https://builder.aws.com/content/3CoHn8MDex2SzKLPhC2ItfjQ4LK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoJYjSs9kMKrjhvVPE3b9qM2NA/Whats.webp",
-      "authorName": "Rehan Poonia",
-      "authorAlias": "rehanpoonia",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34rbP3xBE4jEnzDeveuNHWMtqlU.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-ambassador",
-        "aws-skill-builder"
-      ],
-      "publishedAt": "2026-04-24T15:55:10.914Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CoIZe3WMbbhX97bE9NYZFiCD3h",
-      "title": "Primeiros passos na Nuvem: O que o estudante precisa de saber sobre a AWS",
-      "description": "Uma introdução aos conceitos de computação em nuvem e como o AWS Builder Center serve como porta de entrada para estudantes que desejam alinhar o conhecimento acadêmico às práticas da indústria de tecnologia.",
-      "url": "https://builder.aws.com/content/3CoIZe3WMbbhX97bE9NYZFiCD3h",
-      "imageUrl": "",
-      "authorName": "Matheus Knevitz Morsolin",
-      "authorAlias": "matheusmorsolin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmARPma8i7ig093zUk21n9MdAD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-academy"
-      ],
-      "publishedAt": "2026-04-24T15:54:29.539Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmJ3eaL8g49bAYhZEhRvrP344s",
-      "title": "Minha jornada na tecnologia e o impacto do AWS Builder Center na minha carreira",
-      "description": "Neste artigo, compartilho minha trajetória na área de tecnologia, desde as incertezas do início até minha atuação como desenvolvedor. Mostro como projetos práticos, aliados aos recursos e à comunidade do AWS Builder Center, contribuíram para o meu crescimento, aprimoraram minhas habilidades e foram fundamentais para conquistar meu estágio e impulsionar minha carreira.",
-      "url": "https://builder.aws.com/content/3CmJ3eaL8g49bAYhZEhRvrP344s",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoG1rFfl0J5UrIShprfRzvT1F6/AWS_.webp",
-      "authorName": "João Victor Farah",
-      "authorAlias": "joaovfarah",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmJ3U0cD1WEY1iRfoJ8WpbXjfW.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-q-developer",
-        "amazon-q-business",
-        "analytics",
-        "application",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-24T15:54:28.823Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CoGa9T9i84OD5JbABtsobtDDC6",
-      "title": "Building an Incremental ETL Pipeline with AWS Glue Job Bookmarks — A Production-Grade Education Management System",
-      "description": "Imagine a university where teachers mark attendance and enter marks throughout the day. This data lands in S3 as JSON/CSV files. A naive ETL approach would reprocess everything on every run:",
-      "url": "https://builder.aws.com/content/3CoGa9T9i84OD5JbABtsobtDDC6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoIS8DaYt7a5D4USZniUYJVqtW/imag.webp",
-      "authorName": "DHILIP S E",
-      "authorAlias": "dhilip4",
-      "authorAvatarUrl": "",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [],
-      "publishedAt": "2026-04-24T15:44:01.775Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClhG5ByOllcKciCjxVZAOQU1M8",
-      "title": "From SBCL to AWS Heroes: Understanding AWS Student Programs",
-      "description": "A simple, no-confusion breakdown of AWS student programs like SBCL, Community Builders, and AWS Heroes—explained from a real student perspective.",
-      "url": "https://builder.aws.com/content/3ClhG5ByOllcKciCjxVZAOQU1M8",
-      "imageUrl": "",
-      "authorName": "Tejasvi Shekhat",
-      "authorAlias": "tejasvipatel",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35lqU7rFAmjx65PT8IodfD95Q8y.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-community-builders",
-        "cloud-networking",
-        "cloud-concepts"
-      ],
-      "publishedAt": "2026-04-24T15:38:20.756Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnX2E21AQZUHoCIEP5dJbRDgR9",
-      "title": "Key Takeaways from AWS Summit Bengaluru: Generative AI Orchestration",
-      "description": "Discover essential builder takeaways from AWS Summit Bengaluru 2026. This recap dives into Amazon Bedrock AgentCore updates, showing how the new managed harness and CLI streamline generative AI orchestration. We explore AWS Kiro's evolution into a powerful agentic IDE that boosts developer productivity. Uncover real-world enterprise AI ROI stories from companies like Apollo Tyres, alongside critical FinOps benchmarks for Trainium3 and Graviton5 silicon to accelerate your cloud workloads.",
-      "url": "https://builder.aws.com/content/3CnX2E21AQZUHoCIEP5dJbRDgR9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cnl1S8yaM04TiCSer9LCEb87i0/unna.webp",
-      "authorName": "Sarab Bose",
-      "authorAlias": "sarabbose",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35qEKvv5GLcGZ8sbwYsuYelB6I5.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "agentic-ide",
-        "students",
-        "finops",
-        "compute"
-      ],
-      "publishedAt": "2026-04-24T15:31:59.591Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -224,8 +221,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3383,
-      "commentsCount": 1896
+      "likesCount": 3384,
+      "commentsCount": 1897
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -287,6 +284,28 @@
       "commentsCount": 313
     },
     {
+      "id": "/content/3CneBCunLoeeSb5MMouYe6K8PXR",
+      "title": "Starting My Cloud Journey with AWS Builder Center: A Student’s First Step into AWS",
+      "description": "A beginner-friendly guide to starting cloud computing with AWS Builder Center, exploring learning resources, hands-on labs, and real-world opportunities for students.",
+      "url": "https://builder.aws.com/content/3CneBCunLoeeSb5MMouYe6K8PXR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoGnJpUVLrseiUs8e5jRua3EKM/Scre.webp",
+      "authorName": "Tanush Balachandra Naik",
+      "authorAlias": "tanush9",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39J5a8LOIXAWNTXklKpqazA5ZOB.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "students",
+        "aws-builders",
+        "learn",
+        "learning-and-development"
+      ],
+      "publishedAt": "2026-04-24T16:22:37.519Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -306,7 +325,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1919,
+      "likesCount": 1921,
       "commentsCount": 269
     },
     {
@@ -376,45 +395,20 @@
       "commentsCount": 77
     },
     {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1125,
-      "commentsCount": 202
-    },
-    {
-      "id": "/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
-      "title": "AWS Builder Center: perspectivas e oportunidades",
-      "description": "Como está sendo minha experiência e o que a plataforma oferece, não só a mim, mas a qualquer um disposto a aprender",
-      "url": "https://builder.aws.com/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Co7ev425mDTjS4SDPLD8teeJyM/logo.webp",
-      "authorName": "alexandre",
-      "authorAlias": "alexandreaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Co32sHp5OWLbzbQN2VO697MOqd.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "identity",
-        "all-builders-welcome",
-        "announcements"
-      ],
-      "publishedAt": "2026-04-24T14:19:13.861Z",
-      "likesCount": 4,
+      "id": "/content/3CoOFKocMgZmgjq4dnrRF9HU8Vg",
+      "title": "From Confusion to Cloud: My First Real AWS Build",
+      "description": "AWS felt overwhelming at first, until I built something small. This blog shares how I went from zero to a working serverless app using AWS Lambda and Amazon DynamoDB.",
+      "url": "https://builder.aws.com/content/3CoOFKocMgZmgjq4dnrRF9HU8Vg",
+      "imageUrl": "",
+      "authorName": "Sanjay S",
+      "authorAlias": "ssanjay",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35sMBIaDWCoPi8AcU2LHk0Aijen.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [],
+      "publishedAt": "2026-04-24T16:49:20.460Z",
+      "likesCount": 2,
       "commentsCount": 0
     }
   ]
