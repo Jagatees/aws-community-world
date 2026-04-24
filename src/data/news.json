@@ -1,6 +1,63 @@
 {
-  "updatedAt": "2026-04-24T05:02:34.167Z",
+  "updatedAt": "2026-04-24T06:39:32.632Z",
   "latest": [
+    {
+      "id": "/content/3Cn5Nl7ElrDDlqrvEqnsqBplWYR",
+      "title": "Great sponsor for GIds",
+      "description": "Aws is one of the best sponsor in gids event ",
+      "url": "https://builder.aws.com/content/3Cn5Nl7ElrDDlqrvEqnsqBplWYR",
+      "imageUrl": "",
+      "authorName": "Venkata Sunitha",
+      "authorAlias": "sunitha1238",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-assisted"
+      ],
+      "publishedAt": "2026-04-24T05:28:56.961Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cn3aovuGgMy3dCfwdefTRQS2ia",
+      "title": "AWS Cloud Practitioner",
+      "description": "This Certification gives overall knowledge on how the aws Infra &cost effective",
+      "url": "https://builder.aws.com/content/3Cn3aovuGgMy3dCfwdefTRQS2ia",
+      "imageUrl": "",
+      "authorName": "Sekhar",
+      "authorAlias": "sekhar01",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-cloudformation"
+      ],
+      "publishedAt": "2026-04-24T05:15:45.922Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cn2v7agpNnZGNvKUmfo9OzrMyW",
+      "title": "Spl",
+      "description": "Tindak lanjut  spl",
+      "url": "https://builder.aws.com/content/3Cn2v7agpNnZGNvKUmfo9OzrMyW",
+      "imageUrl": "",
+      "authorName": "Wirno Bae",
+      "authorAlias": "wirno",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CGZRVwQZ4QtT7TEZA6zVJQ6YSL.webp",
+      "location": "ID",
+      "lat": -2.4833826,
+      "lng": 117.8902853,
+      "tags": [
+        "ai-chips"
+      ],
+      "publishedAt": "2026-04-24T05:10:29.913Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CmzT28e5b7rrVCsghUao5qhBpK",
       "title": "Building Green Architectures on AWS: A Practical Guide to the Sustainability Pillar",
@@ -10,9 +67,9 @@
       "authorName": "V Chowdary",
       "authorAlias": "vthubati",
       "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "location": "WA, US",
+      "lat": 47.2868352,
+      "lng": -120.212613,
       "tags": [
         "sustainability-optimization",
         "graviton",
@@ -21,7 +78,7 @@
         "cost-optimization"
       ],
       "publishedAt": "2026-04-24T04:59:57.040Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -40,7 +97,7 @@
         "feedback"
       ],
       "publishedAt": "2026-04-24T04:01:57.761Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 3
     },
     {
@@ -207,28 +264,136 @@
       "publishedAt": "2026-04-24T01:13:48.718Z",
       "likesCount": 1,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3CmR0i3BNlsbcmLAIYE5UtffZbD",
+      "title": "🚀 Building an Intelligent Document Processing System with AI on AWS: From YAML to Production with Kiro",
+      "description": "We designed, implemented, and deployed a fully serverless intelligent document processing system leveraging Amazon Bedrock, Textract, Lambda, SQS, and OpenSearch Serverless. The entire ecosystem was orchestrated through CloudFormation in a three-tier architecture and developed using Kiro as an AI-driven development co-pilot. This post explores the technical architecture, real-world implementation challenges, troubleshooting workflows, and the industry best practices we applied.",
+      "url": "https://builder.aws.com/content/3CmR0i3BNlsbcmLAIYE5UtffZbD",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "CR",
+      "lat": 10.2735633,
+      "lng": -84.0739102,
+      "tags": [
+        "kiro",
+        "ai-for-developers"
+      ],
+      "publishedAt": "2026-04-23T23:56:48.995Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CmPAqBj1Wnp3gonKhYRHlydvj7",
+      "title": "Serving Models on Trainium with Triton Inference Server Neuron Python Backend",
+      "description": "Using Triton Inference Server on Trainium with the Neuron SDK and a Python backend.",
+      "url": "https://builder.aws.com/content/3CmPAqBj1Wnp3gonKhYRHlydvj7",
+      "imageUrl": "",
+      "authorName": "Burtoft, Jim",
+      "authorAlias": "neuronjim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qmzp4T2NaSodRe64J5nUhFZON.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-23T23:48:28.466Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
+      "title": "Criando e hospedando seu site pessoal com AWS Amplify, Kiro e AWS Builder Center",
+      "description": "\"Quem não é visto, não é lembrado\". É com esta frase que descrevo o artigo de hoje.\nHoje, num mundo totalmente globalizado e conectado pela internet, ter uma presença digital forte não é mais uma escolha, é a sua chave para conseguir ir além na carreira.\nEste é um passo a passo para você criar e hospedar seu próprio site pessoal usando AWS Amplify, com apoio do Kiro para construir o código e do AWS Builder Center como hub de identidade, comunidade e aprendizado.",
+      "url": "https://builder.aws.com/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmP1ggNiwiPxeuPj7EZ9eU7Ngu/AWS-.webp",
+      "authorName": "Jorge Hermes",
+      "authorAlias": "jhermesn",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdpzfqjzzANdQ5L8FzOO6z6MmX.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "kiro",
+        "aws-amplify",
+        "website",
+        "builder-center",
+        "vibe-coding"
+      ],
+      "publishedAt": "2026-04-23T23:42:37.772Z",
+      "likesCount": 7,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3CmGLv0JKPrkiFv8uht6WBHneby",
+      "title": "Do \"Qualquer Coisa, Menos T.I.\" ao AWS Builder Center: meu caminho de descoberta no mundo da tecnologia.",
+      "description": "Muitas vezes, o caminho para a tecnologia não é linear. Eu achava que informática não era pra mim, mas descobri que era a ferramenta para construir o mundo, e que eu poderia trabalhar com ela. Hoje, como Líder Estudantil Builder AWS, estou no caminho para compartilhar minhas iniciativas de Cloud na minha universidade, inovando o sertão paraibano através do conhecimento.",
+      "url": "https://builder.aws.com/content/3CmGLv0JKPrkiFv8uht6WBHneby",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmMwuPPNCnySNsI5EWNaKFP3py/Do-Q.webp",
+      "authorName": "Monick Evelyn",
+      "authorAlias": "monick",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C92wo9FzPfR5sICJN3ah3Ijimi.webp",
+      "location": "PB, BR",
+      "lat": -7.1219366,
+      "lng": -36.7246845,
+      "tags": [
+        "aws-builders",
+        "aws-community-builders",
+        "students",
+        "tech",
+        "portuguese"
+      ],
+      "publishedAt": "2026-04-23T23:37:16.065Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3CmH0ZVvalXVxK64hpm5CtvXjSf",
+      "title": "How to Replace Your LLM-Based Safety Agent with Amazon Bedrock Guardrails",
+      "description": "A practical guide to implementing content filters, jailbreak detection, PII redaction, and denied topics — with code, cost analysis, and real test results from a customer-facing chatbot.",
+      "url": "https://builder.aws.com/content/3CmH0ZVvalXVxK64hpm5CtvXjSf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmIQDUa5KTTjph8ejACyHJ2FO3/Scre.webp",
+      "authorName": "Mauricio Trunfio",
+      "authorAlias": "mtrunfio",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CM8NC3w4yXKuhDDVeDF0MGVaR7.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-bedrock-agents",
+        "amazon-bedrock-agentcore",
+        "llm"
+      ],
+      "publishedAt": "2026-04-23T22:58:41.411Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CmDyv6vBhVEYC2YTcYv9Penqn9",
+      "title": "Configurando uma base de conhecimentos no Amazon Bedrock utilizando o Aurora PostgreSQL e Terraform",
+      "description": "Configuração de uma base de conhecimento no Amazon Bedrock integrada ao Aurora PostgreSQL, utilizando Terraform para provisionamento automatizado, escalável e seguro da infraestrutura na AWS.",
+      "url": "https://builder.aws.com/content/3CmDyv6vBhVEYC2YTcYv9Penqn9",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmECA2Jh0o2adIvZcGqF91N1rj/0_BqF.webp",
+      "authorName": "João Emboaba",
+      "authorAlias": "jemboaba",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdDJXihuH1FOmAZcXSvNV1MSUt.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-bedrock",
+        "ai",
+        "amazon-rds",
+        "amazon-aurora"
+      ],
+      "publishedAt": "2026-04-23T22:25:47.852Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
-      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
-      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "imageUrl": "",
-      "authorName": "João Emanuel de Souza",
-      "authorAlias": "joaoposka",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "feedback"
-      ],
-      "publishedAt": "2026-04-24T04:01:57.761Z",
-      "likesCount": 5,
-      "commentsCount": 3
-    },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
@@ -247,8 +412,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3368,
-      "commentsCount": 1890
+      "likesCount": 3374,
+      "commentsCount": 1892
     },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
@@ -264,7 +429,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 33,
+      "likesCount": 34,
       "commentsCount": 168
     },
     {
@@ -306,65 +471,27 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2821,
-      "commentsCount": 311
+      "likesCount": 2827,
+      "commentsCount": 312
     },
     {
-      "id": "/content/3CmjABRY5pqZNB1Z9winWoHyoms",
-      "title": "Minha primeira semana como AWS Builder: entendendo Cloud Computing na prática",
-      "description": "Nesta primeira semana como AWS Builder, compartilho como comecei a entender o conceito de Cloud Computing e por que ele é essencial para quem está entrando na área de tecnologia.",
-      "url": "https://builder.aws.com/content/3CmjABRY5pqZNB1Z9winWoHyoms",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cmk5iOo9C7NoCmytE9s6ZCDiOd/6aa3a.webp",
-      "authorName": "Nicolle Maia",
-      "authorAlias": "niccmaia",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "personal-expression"
-      ],
-      "publishedAt": "2026-04-24T02:32:55.089Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CmUxoHbJ7Tjt99ROgQYXtDMsvB",
-      "title": "Do Zero A Líder Estudantil builder AWS: Um novo capítulo na minha vida.",
-      "description": "Eu decidir ano passado me arriscar, mudei de curso e fui pra ADS na FBUNI, foi maior paço que eu dei na minha vida, um tiro no escuro, não sabia o que esperar, passei por tanta coisa e tantas decepções de carreia e nunca me imaginei estando aqui como Líder Estudantil builder AWS, é como se o destino tivesse me guiado e me recompensado por todas as horas de estudo e dedicação, agora quero compartilhar minha jornada nesse mundo de computação em nuvem com AWS.",
-      "url": "https://builder.aws.com/content/3CmUxoHbJ7Tjt99ROgQYXtDMsvB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmddqNER8pMkLRzoVHrFAiUbHp/Bann-.webp",
-      "authorName": "Daniel Moura de Souza",
-      "authorAlias": "danaws12",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "personal-expression"
-      ],
-      "publishedAt": "2026-04-24T02:13:28.319Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Ck0U9R0ymi37IPgDRSXFfjfXkK",
-      "title": "Minha primeira semana com o AWS Builder Center: O que eu aprendi?",
-      "description": "Começando na AWS e se sentindo perdido? Neste artigo, conto quem eu sou e minha trajetória e como foi minha primeira semana no AWS Builder Center e as funcionalidades que mais me ajudaram a entender cloud na prática.",
-      "url": "https://builder.aws.com/content/3Ck0U9R0ymi37IPgDRSXFfjfXkK",
+      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
+      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
+      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
       "imageUrl": "",
-      "authorName": "Keteli Lino",
-      "authorAlias": "keteli",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C95pZYcMfe616ulwe8z3dWCIAe.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "authorName": "João Emanuel de Souza",
+      "authorAlias": "joaoposka",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
       "tags": [
-        "builder-center"
+        "feedback"
       ],
-      "publishedAt": "2026-04-24T02:26:48.352Z",
+      "publishedAt": "2026-04-24T04:01:57.761Z",
       "likesCount": 6,
-      "commentsCount": 2
+      "commentsCount": 3
     },
     {
       "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
@@ -407,8 +534,69 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1915,
+      "likesCount": 1916,
       "commentsCount": 268
+    },
+    {
+      "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "title": "AIdeas Finalist: RetainIQ",
+      "description": "Detect knowledge concentration risk before it costs you. RetainIQ scores every critical topic 0–100 and triggers AI interventions. Zero docs effort required.",
+      "url": "https://builder.aws.com/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CVlDi3ZALhCxOu19cpBACBEB7x/reta.webp",
+      "authorName": "Samyak Jain",
+      "authorAlias": "samyakj05",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AhaCQaSGeA2ODUAiH16junoNqT.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "APJC",
+        "amazon-bedrock",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T20:29:28.119Z",
+      "likesCount": 183,
+      "commentsCount": 94
+    },
+    {
+      "id": "/content/3CmUxoHbJ7Tjt99ROgQYXtDMsvB",
+      "title": "Do Zero A Líder Estudantil builder AWS: Um novo capítulo na minha vida.",
+      "description": "Eu decidir ano passado me arriscar, mudei de curso e fui pra ADS na FBUNI, foi maior paço que eu dei na minha vida, um tiro no escuro, não sabia o que esperar, passei por tanta coisa e tantas decepções de carreia e nunca me imaginei estando aqui como Líder Estudantil builder AWS, é como se o destino tivesse me guiado e me recompensado por todas as horas de estudo e dedicação, agora quero compartilhar minha jornada nesse mundo de computação em nuvem com AWS.",
+      "url": "https://builder.aws.com/content/3CmUxoHbJ7Tjt99ROgQYXtDMsvB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmddqNER8pMkLRzoVHrFAiUbHp/Bann-.webp",
+      "authorName": "Daniel Moura de Souza",
+      "authorAlias": "danaws12",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "personal-expression"
+      ],
+      "publishedAt": "2026-04-24T02:13:28.319Z",
+      "likesCount": 7,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CmjABRY5pqZNB1Z9winWoHyoms",
+      "title": "Minha primeira semana como AWS Builder: entendendo Cloud Computing na prática",
+      "description": "Nesta primeira semana como AWS Builder, compartilho como comecei a entender o conceito de Cloud Computing e por que ele é essencial para quem está entrando na área de tecnologia.",
+      "url": "https://builder.aws.com/content/3CmjABRY5pqZNB1Z9winWoHyoms",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cmk5iOo9C7NoCmytE9s6ZCDiOd/6aa3a.webp",
+      "authorName": "Nicolle Maia",
+      "authorAlias": "niccmaia",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "personal-expression"
+      ],
+      "publishedAt": "2026-04-24T02:32:55.089Z",
+      "likesCount": 6,
+      "commentsCount": 2
     }
   ]
 }
