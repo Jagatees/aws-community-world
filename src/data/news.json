@@ -1,6 +1,114 @@
 {
-  "updatedAt": "2026-04-24T12:21:27.004Z",
+  "updatedAt": "2026-04-24T13:33:10.193Z",
   "latest": [
+    {
+      "id": "/content/3CnvNAZaOCPbFNNvA5GbOs6YqxX",
+      "title": "Minha primeira semana com o AWS Builder Center: o que eu aprendi.",
+      "description": "Uma experiência inicial em computação em nuvem, destacando o aprendizado prático.",
+      "url": "https://builder.aws.com/content/3CnvNAZaOCPbFNNvA5GbOs6YqxX",
+      "imageUrl": "",
+      "authorName": "Juliana Freire de Oliveira",
+      "authorAlias": "julianaintech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-24T13:07:46.187Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cj1zX4QpBwesQA3fmlAl23xrTl",
+      "title": "How I Earned AWS Certified Cloud Practitioner Using Builder Center and Cloud Clubs",
+      "description": "A beginner-friendly journey of how structured learning through AWS Builder Center and consistent support from AWS Cloud Clubs helped me achieve my first AWS certification.",
+      "url": "https://builder.aws.com/content/3Cj1zX4QpBwesQA3fmlAl23xrTl",
+      "imageUrl": "",
+      "authorName": "Aditya Kumar",
+      "authorAlias": "adityakr",
+      "authorAvatarUrl": "",
+      "location": "Madhya Pradesh, IN",
+      "lat": 23.8143419,
+      "lng": 77.5340719,
+      "tags": [
+        "aws-cloud-clubs",
+        "builder-center",
+        "aws-certification",
+        "training-and-certification",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-24T12:58:01.653Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnMknyHkkcyDOcp6W6dcz0WVS2",
+      "title": "Mastering AWS Network Observability: A Practical Guide",
+      "description": "A practical guide to building end-to-end network observability on AWS — covering the key metrics, alarms, and tools across EC2, VPC Flow Logs, NAT Gateway, Network Firewall, PrivateLink, and the CloudWatch Network Monitoring suite to help you detect, diagnose, and resolve network issues before they impact your customers.",
+      "url": "https://builder.aws.com/content/3CnMknyHkkcyDOcp6W6dcz0WVS2",
+      "imageUrl": "",
+      "authorName": "Dexter Moyo",
+      "authorAlias": "dmoyo",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CnwB14Uxfv9mBispoTjA7yAhDm.webp",
+      "location": "SE",
+      "lat": 59.6749712,
+      "lng": 14.5208584,
+      "tags": [
+        "aws-networking",
+        "networking",
+        "amazon-vpc",
+        "aws-network-firewall",
+        "monitoring-observability"
+      ],
+      "publishedAt": "2026-04-24T12:38:24.802Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnfCpLltCMKrI1DQdZDHyfk0Vo",
+      "title": "How to Use Kiro for Network Operations",
+      "description": "How to use Kiro CLI as an AI-powered network operations tool — replacing manual console hopping and CLI memorization with natural language prompts that discover your architecture, validate routes, analyze firewall logs, and run full operational health checks in seconds.",
+      "url": "https://builder.aws.com/content/3CnfCpLltCMKrI1DQdZDHyfk0Vo",
+      "imageUrl": "",
+      "authorName": "Dexter Moyo",
+      "authorAlias": "dmoyo",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CnwB14Uxfv9mBispoTjA7yAhDm.webp",
+      "location": "SE",
+      "lat": 59.6749712,
+      "lng": 14.5208584,
+      "tags": [
+        "kiro",
+        "advanced-networking",
+        "networking",
+        "cloud-operations"
+      ],
+      "publishedAt": "2026-04-24T12:38:00.226Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ClVnhuTrzWDMNrjcFYrdzt6ayA",
+      "title": "Durable Handoff Multi-Agent Workflow",
+      "description": "Durable handoff multi-agent workflow with Amazon Simple Storage Service (S3)",
+      "url": "https://builder.aws.com/content/3ClVnhuTrzWDMNrjcFYrdzt6ayA",
+      "imageUrl": "",
+      "authorName": "msumari",
+      "authorAlias": "msumari",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bfg2n4AXgWDDjeoASgNkwqvte8.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "agentic-ai",
+        "ai-engineering",
+        "amazon-s3",
+        "strands-agents",
+        "multi-agent-orchestrator"
+      ],
+      "publishedAt": "2026-04-24T12:33:50.970Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CnslIAKeZ9WpKj5oUsVCjdKnJk",
       "title": "How to Secure a WordPress Site: 10 Proven Security Tips",
@@ -18,7 +126,7 @@
         "security-best-practices"
       ],
       "publishedAt": "2026-04-24T12:17:24.203Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -35,8 +143,8 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-04-24T12:06:33.545Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
@@ -44,7 +152,7 @@
       "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
       "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
-      "authorName": "Marcus Vinicius",
+      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
       "authorAlias": "mvrga",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
       "location": "BR",
@@ -105,304 +213,6 @@
       "publishedAt": "2026-04-24T10:53:30.545Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cnf7NhJyDV3hP2yyVGjN1I8Wnd",
-      "title": "AWS Kiro",
-      "description": "Kiro",
-      "url": "https://builder.aws.com/content/3Cnf7NhJyDV3hP2yyVGjN1I8Wnd",
-      "imageUrl": "",
-      "authorName": "AMITH RAJ",
-      "authorAlias": "amith2205",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-24T10:22:22.028Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CncT4bFIr1sGm56Kadxkn3C3Jn",
-      "title": "Building an Autonomous FinOps Engine: Leveraging AWS Serverless, Slack, and GenAI for Cost Optimization",
-      "description": "Cloud waste is a silent budget killer. Idle EBS volumes, unassociated Elastic IPs, and orphan snapshots can inflate AWS bills by thousands of dollars without adding a single cent of business value.",
-      "url": "https://builder.aws.com/content/3CncT4bFIr1sGm56Kadxkn3C3Jn",
-      "imageUrl": "",
-      "authorName": "Suleyman Akman",
-      "authorAlias": "suleymanakman",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37qhJjuzqf9HsT4pbiZ8qCbDAYj.webp",
-      "location": "TR",
-      "lat": 39.294076,
-      "lng": 35.2316631,
-      "tags": [
-        "finops",
-        "finops-culture",
-        "serverless",
-        "aws-lambda",
-        "aws-api"
-      ],
-      "publishedAt": "2026-04-24T10:16:52.319Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cn0ivwSzQYNzaXxzL3xT7chXKt",
-      "title": "AWS EKS version upgrade from 1.33 to 1.34 using Terraform",
-      "description": "In this article I have covered AWS EKS version cluster in-place from 1.33 to 1.34, ec2 instance type update using Terraform for self-managed nodes.",
-      "url": "https://builder.aws.com/content/3Cn0ivwSzQYNzaXxzL3xT7chXKt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnVhYc4BZWCOPTFe9zhziyfEDI/1752.webp",
-      "authorName": "Naveena Ravi",
-      "authorAlias": "brnaveena",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30lN7JzXYSD1PZ8ZEfuMcxXoMxs.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "terraform",
-        "kubernetes",
-        "amazon-eks",
-        "containers",
-        "IaC"
-      ],
-      "publishedAt": "2026-04-24T09:07:23.536Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Chrlu6gicYy4tteaN9p2pvebAy",
-      "title": "From DeepRacer to Agentic AI: A 1st Runner‑Up's View on AWS AI League 2025 & Top Tips for 2026.",
-      "description": "This post tells the story of Ross Williams’ journey from DeepRacer to the AWS AI League, highlighting how iteration, preparation and hands‑on experimentation carried him to the re:Invent stage. It closes with practical advice for future competitors and an invitation to embrace the challenge, the learning and the joy of building.",
-      "url": "https://builder.aws.com/content/3Chrlu6gicYy4tteaN9p2pvebAy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnRQGdkuogI21tAMx2a1pE9twO/AI_L.webp",
-      "authorName": "Leena Kaur",
-      "authorAlias": "l33nak4ur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsrIQ7PUmDYiKC9J2cBpiuGKGt.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "aws-ai-league",
-        "aws-deepracer",
-        "amazon-bedrock-agentcore",
-        "amazon-sagemaker",
-        "ai"
-      ],
-      "publishedAt": "2026-04-24T08:58:49.462Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnTx94bmzYEb6TDBnZB6HlF7uk",
-      "title": "Turn Your AI IDE into an Agent Factory with Kiro Powers",
-      "description": "Build code reviewer agent using Strands agent Kiro Powers",
-      "url": "https://builder.aws.com/content/3CnTx94bmzYEb6TDBnZB6HlF7uk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnUIEIBXCijWvhFghSgxIyyqck/Chat.webp",
-      "authorName": "Manoj Kumar S",
-      "authorAlias": "manoj2690",
-      "authorAvatarUrl": "",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "ai",
-        "agentic-ai",
-        "agentic-ide",
-        "kiro-agent"
-      ],
-      "publishedAt": "2026-04-24T08:53:52.765Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnRaTXydrUC6WFQKRtAHMHI1jk",
-      "title": "First Article",
-      "description": "Trying out new IDE provided by AWS…",
-      "url": "https://builder.aws.com/content/3CnRaTXydrUC6WFQKRtAHMHI1jk",
-      "imageUrl": "",
-      "authorName": "Ruchika kachhawa",
-      "authorAlias": "ruchika3295",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-24T08:32:19.498Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnRNbqGQkcUe8nAVSFVXXw96wZ",
-      "title": "Using kiro for the first time",
-      "description": "Exploring Agent ai development",
-      "url": "https://builder.aws.com/content/3CnRNbqGQkcUe8nAVSFVXXw96wZ",
-      "imageUrl": "",
-      "authorName": "Chaths CD",
-      "authorAlias": "chaths",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-24T08:31:23.301Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnReYmPyeY0WY3ZQ7Se4eseSjy",
-      "title": "Hello",
-      "description": "This is the first push",
-      "url": "https://builder.aws.com/content/3CnReYmPyeY0WY3ZQ7Se4eseSjy",
-      "imageUrl": "",
-      "authorName": "ADITI MISHRA",
-      "authorAlias": "aditi1911",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-24T08:31:21.316Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnQZIN3ftXo2Ngfub9O1q4ztXA",
-      "title": "Being an AWS Cloud Captain is More Than Organizing Events",
-      "description": "A reflection on how being an AWS Cloud Captain goes beyond organizing events and focuses on building a community that supports learning and growth.",
-      "url": "https://builder.aws.com/content/3CnQZIN3ftXo2Ngfub9O1q4ztXA",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnQfXHIEmJBi8MQTDXklyqOzjK/Whats.webp",
-      "authorName": "Shashank Pandey",
-      "authorAlias": "shashankpandey04",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHTaHlwIdIstMASl9t52rkKOvM.webp",
-      "location": "Punjab, IN",
-      "lat": 30.9293211,
-      "lng": 75.5004841,
-      "tags": [
-        "aws-cloud-clubs",
-        "students"
-      ],
-      "publishedAt": "2026-04-24T08:26:20.520Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnLl15HPgjeDyxPCMWQeMXx3Fv",
-      "title": "Getting Started with AWS: A Beginner’s Guide to Cloud Computing",
-      "description": "A beginner-friendly guide to understanding Amazon Web Services (AWS) and taking your first step into cloud computing. Learn the basics, explore key services, and start building with confidence.\n\nhttps://builder.aws.com/start?trk=a4881785-9947-4708-8d12-14522fdd9b00&sc_channel=el",
-      "url": "https://builder.aws.com/content/3CnLl15HPgjeDyxPCMWQeMXx3Fv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnNOCKylWPJTSs8kriMM6VDBG6/ACP1.webp",
-      "authorName": "Monica R",
-      "authorAlias": "monicaravi",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3A4ppNK9t4ZiJBHiL5hR7sdrV72.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "learning-and-development",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-04-24T08:25:36.235Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnMzREbuB3HEhPbxN2akaTyDa0",
-      "title": "Como estudar AWS: o método que usei para tirar minha primeira certificação e continuo usando",
-      "description": "Uma dica ou outra de como estudar AWS :)",
-      "url": "https://builder.aws.com/content/3CnMzREbuB3HEhPbxN2akaTyDa0",
-      "imageUrl": "",
-      "authorName": "Hyan Costa Schibelsky",
-      "authorAlias": "hyansky",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "learn",
-        "development",
-        "devops",
-        "aws-builders",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-04-24T08:17:33.836Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnP6jleubRXowdBPb0EMLRaRpQ",
-      "title": "Cost Optimization Best Practices for Amazon EMR on EKS",
-      "description": "A practical guide to reducing compute costs while maintaining job reliability.",
-      "url": "https://builder.aws.com/content/3CnP6jleubRXowdBPb0EMLRaRpQ",
-      "imageUrl": "",
-      "authorName": "Gaurav Sharma",
-      "authorAlias": "gsharma",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-24T08:11:54.468Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnM24W01WwYb1ZAOrjZkjgGFwS",
-      "title": "Getting Started with AWS Builder ID",
-      "description": "AWS Builder ID gives students an easy and practical way to start learning cloud computing without setup complexity. It helps build real skills through hands-on learning, guided resources, and community interaction.",
-      "url": "https://builder.aws.com/content/3CnM24W01WwYb1ZAOrjZkjgGFwS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnNDdRf7DsZrndK2gvv1KmVNMN/Scre.webp",
-      "authorName": "Aditya Singh",
-      "authorAlias": "adityapranu1",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-skill-builder",
-        "aws-ambassador",
-        "aws-cloud-clubs",
-        "builder-id"
-      ],
-      "publishedAt": "2026-04-24T08:03:26.819Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnDiZgqHqjgNPv1N4J2iEda0kT",
-      "title": "From Demo to Deployment: Solving Agentic AI's Toughest Challenges",
-      "description": "A small description of the keynote I attended at the AWS Summit 2026 Bengaluru",
-      "url": "https://builder.aws.com/content/3CnDiZgqHqjgNPv1N4J2iEda0kT",
-      "imageUrl": "",
-      "authorName": "Kushagra Verma",
-      "authorAlias": "kushagra4647",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34rTWrgKqKhTlIRpwCH4kNWAaUR.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-24T06:44:21.073Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cn5Nl7ElrDDlqrvEqnsqBplWYR",
-      "title": "Great sponsor for GIds",
-      "description": "Aws is one of the best sponsor in gids event ",
-      "url": "https://builder.aws.com/content/3Cn5Nl7ElrDDlqrvEqnsqBplWYR",
-      "imageUrl": "",
-      "authorName": "Venkata Sunitha",
-      "authorAlias": "sunitha1238",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai-assisted"
-      ],
-      "publishedAt": "2026-04-24T05:28:56.961Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -424,8 +234,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3380,
-      "commentsCount": 1894
+      "likesCount": 3381,
+      "commentsCount": 1895
     },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
@@ -462,7 +272,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3454,
+      "likesCount": 3455,
       "commentsCount": 321
     },
     {
@@ -485,29 +295,6 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2830,
       "commentsCount": 313
-    },
-    {
-      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
-      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
-      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
-      "authorName": "Marcus Vinicius",
-      "authorAlias": "mvrga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "amazon-sqs",
-        "backend",
-        "distributed-systems",
-        "scalability"
-      ],
-      "publishedAt": "2026-04-24T11:49:38.292Z",
-      "likesCount": 2,
-      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -574,7 +361,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1357,
+      "likesCount": 1358,
       "commentsCount": 316
     },
     {
@@ -595,27 +382,52 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-18T14:21:47.039Z",
-      "likesCount": 131,
+      "likesCount": 132,
       "commentsCount": 76
     },
     {
-      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
-      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
-      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "imageUrl": "",
-      "authorName": "João Emanuel de Souza",
-      "authorAlias": "joaoposka",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "feedback"
+        "aideas-2025",
+        "social-impact",
+        "APJC"
       ],
-      "publishedAt": "2026-04-24T04:01:57.761Z",
-      "likesCount": 9,
-      "commentsCount": 4
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 1123,
+      "commentsCount": 202
+    },
+    {
+      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
+      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
+      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
+      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
+      "authorAlias": "mvrga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "amazon-sqs",
+        "backend",
+        "distributed-systems",
+        "scalability"
+      ],
+      "publishedAt": "2026-04-24T11:49:38.292Z",
+      "likesCount": 2,
+      "commentsCount": 1
     }
   ]
 }
