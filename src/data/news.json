@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-24T14:34:03.432Z",
+  "updatedAt": "2026-04-24T15:27:23.932Z",
   "latest": [
+    {
+      "id": "/content/39THU1cWKWoZ2xfEkK0OeZTnHlM",
+      "title": "Multi-Region Disaster Recovery with Amazon Aurora Global Database Failover and Amazon ECS on AWS Fargate behind Application Load Balancer",
+      "description": "Imagine you're running a business-critical service — an authentication backend, or a payment gateway — where even seconds of downtime translate directly into lost revenue and broken customer trust. Your users are spread across Europe, and they expect the service to just work, always. This architecture addresses exactly that: a multi-region deployment that survives both (a) Availability Zone failures and (b) full regional outages — automatically, with zero manual intervention.",
+      "url": "https://builder.aws.com/content/39THU1cWKWoZ2xfEkK0OeZTnHlM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoG6ROMqkTJLeyATIsn8GanVk5/arch.webp",
+      "authorName": "Mehdi Yosofie",
+      "authorAlias": "yosofie",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eXaMroB2U35ugHeDj9pqdnVjgs.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "startups",
+        "disaster-recovery",
+        "multi-region",
+        "amazon-aurora",
+        "aws-fargate"
+      ],
+      "publishedAt": "2026-04-24T15:26:55.216Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Co8y6VirI7Dr5BYnTUIBTz6S5W",
+      "title": "A ponte entre a sala de aula e o mercado: O papel do AWS Builder Center na formação técnica",
+      "description": "Explorando o impacto do AWS Builder Center na formação de novos desenvolvedores e o papel da computação em nuvem como padrão indispensável para a inovação universitária.",
+      "url": "https://builder.aws.com/content/3Co8y6VirI7Dr5BYnTUIBTz6S5W",
+      "imageUrl": "",
+      "authorName": "Matheus Knevitz Morsolin",
+      "authorAlias": "matheusmorsolin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmARPma8i7ig093zUk21n9MdAD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-academy"
+      ],
+      "publishedAt": "2026-04-24T14:44:21.754Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
       "title": "AWS Builder Center: perspectivas e oportunidades",
@@ -19,7 +61,7 @@
         "announcements"
       ],
       "publishedAt": "2026-04-24T14:19:13.861Z",
-      "likesCount": 1,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -176,46 +218,6 @@
       "publishedAt": "2026-04-24T12:17:24.203Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmnUvhu2Z92FQcEDso2Oq5ywxc",
-      "title": "5 Coisas que Todo Universitário Pode Aprender no AWS Builder Center ☁️",
-      "description": "Quando eu entrei no AWS Builder Center pela primeira vez, não sabia exatamente o que esperar. Achei que seria uma plataforma técnica demais, cheia de conteúdo difícil, feita só pra quem já trabalha na área. Mas me surpreendi.",
-      "url": "https://builder.aws.com/content/3CmnUvhu2Z92FQcEDso2Oq5ywxc",
-      "imageUrl": "",
-      "authorName": "Daniel Moura de Souza",
-      "authorAlias": "danaws12",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-24T12:06:33.545Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
-      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
-      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
-      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
-      "authorAlias": "mvrga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "amazon-sqs",
-        "backend",
-        "distributed-systems",
-        "scalability"
-      ],
-      "publishedAt": "2026-04-24T11:49:38.292Z",
-      "likesCount": 4,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -238,7 +240,7 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3382,
-      "commentsCount": 1895
+      "commentsCount": 1896
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -319,7 +321,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1917,
+      "likesCount": 1918,
       "commentsCount": 269
     },
     {
@@ -346,29 +348,6 @@
       "commentsCount": 94
     },
     {
-      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
-      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
-      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
-      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
-      "authorAlias": "mvrga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "amazon-sqs",
-        "backend",
-        "distributed-systems",
-        "scalability"
-      ],
-      "publishedAt": "2026-04-24T11:49:38.292Z",
-      "likesCount": 4,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -387,7 +366,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1360,
+      "likesCount": 1361,
       "commentsCount": 317
     },
     {
@@ -412,25 +391,48 @@
       "commentsCount": 77
     },
     {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
+      "title": "AWS Builder Center: perspectivas e oportunidades",
+      "description": "Como está sendo minha experiência e o que a plataforma oferece, não só a mim, mas a qualquer um disposto a aprender",
+      "url": "https://builder.aws.com/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Co7ev425mDTjS4SDPLD8teeJyM/logo.webp",
+      "authorName": "alexandre",
+      "authorAlias": "alexandreaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Co32sHp5OWLbzbQN2VO697MOqd.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
+        "identity",
+        "all-builders-welcome",
+        "announcements"
       ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1123,
-      "commentsCount": 202
+      "publishedAt": "2026-04-24T14:19:13.861Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
+      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
+      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
+      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
+      "authorAlias": "mvrga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "amazon-sqs",
+        "backend",
+        "distributed-systems",
+        "scalability"
+      ],
+      "publishedAt": "2026-04-24T11:49:38.292Z",
+      "likesCount": 4,
+      "commentsCount": 2
     }
   ]
 }
