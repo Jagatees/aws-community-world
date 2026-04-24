@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-04-24T09:34:10.487Z",
+  "updatedAt": "2026-04-24T10:31:55.722Z",
   "latest": [
+    {
+      "id": "/content/3Cnf7NhJyDV3hP2yyVGjN1I8Wnd",
+      "title": "AWS Kiro",
+      "description": "Kiro",
+      "url": "https://builder.aws.com/content/3Cnf7NhJyDV3hP2yyVGjN1I8Wnd",
+      "imageUrl": "",
+      "authorName": "AMITH RAJ",
+      "authorAlias": "amith2205",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-24T10:22:22.028Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CncT4bFIr1sGm56Kadxkn3C3Jn",
+      "title": "Building an Autonomous FinOps Engine: Leveraging AWS Serverless, Slack, and GenAI for Cost Optimization",
+      "description": "Cloud waste is a silent budget killer. Idle EBS volumes, unassociated Elastic IPs, and orphan snapshots can inflate AWS bills by thousands of dollars without adding a single cent of business value.",
+      "url": "https://builder.aws.com/content/3CncT4bFIr1sGm56Kadxkn3C3Jn",
+      "imageUrl": "",
+      "authorName": "Suleyman Akman",
+      "authorAlias": "suleymanakman",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37qhJjuzqf9HsT4pbiZ8qCbDAYj.webp",
+      "location": "TR",
+      "lat": 39.294076,
+      "lng": 35.2316631,
+      "tags": [
+        "finops",
+        "finops-culture",
+        "serverless",
+        "aws-lambda",
+        "aws-api"
+      ],
+      "publishedAt": "2026-04-24T10:16:52.319Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cn0ivwSzQYNzaXxzL3xT7chXKt",
       "title": "AWS EKS version upgrade from 1.33 to 1.34 using Terraform",
@@ -362,44 +402,6 @@
       "publishedAt": "2026-04-24T02:40:28.625Z",
       "likesCount": 3,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CmjABRY5pqZNB1Z9winWoHyoms",
-      "title": "Minha primeira semana como AWS Builder: entendendo Cloud Computing na prática",
-      "description": "Nesta primeira semana como AWS Builder, compartilho como comecei a entender o conceito de Cloud Computing e por que ele é essencial para quem está entrando na área de tecnologia.",
-      "url": "https://builder.aws.com/content/3CmjABRY5pqZNB1Z9winWoHyoms",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cmk5iOo9C7NoCmytE9s6ZCDiOd/6aa3a.webp",
-      "authorName": "Nicolle Maia",
-      "authorAlias": "niccmaia",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "personal-expression"
-      ],
-      "publishedAt": "2026-04-24T02:32:55.089Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Ck0U9R0ymi37IPgDRSXFfjfXkK",
-      "title": "Minha primeira semana com o AWS Builder Center: O que eu aprendi?",
-      "description": "Começando na AWS e se sentindo perdido? Neste artigo, conto quem eu sou e minha trajetória e como foi minha primeira semana no AWS Builder Center e as funcionalidades que mais me ajudaram a entender cloud na prática.",
-      "url": "https://builder.aws.com/content/3Ck0U9R0ymi37IPgDRSXFfjfXkK",
-      "imageUrl": "",
-      "authorName": "Keteli Lino",
-      "authorAlias": "keteli",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C95pZYcMfe616ulwe8z3dWCIAe.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-24T02:26:48.352Z",
-      "likesCount": 6,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -422,7 +424,7 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3378,
-      "commentsCount": 1893
+      "commentsCount": 1894
     },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
@@ -480,8 +482,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2829,
-      "commentsCount": 312
+      "likesCount": 2830,
+      "commentsCount": 313
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -503,7 +505,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1916,
+      "likesCount": 1917,
       "commentsCount": 269
     },
     {
@@ -548,7 +550,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1355,
+      "likesCount": 1356,
       "commentsCount": 316
     },
     {
@@ -569,27 +571,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-18T14:21:47.039Z",
-      "likesCount": 130,
+      "likesCount": 131,
       "commentsCount": 76
-    },
-    {
-      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
-      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
-      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "imageUrl": "",
-      "authorName": "João Emanuel de Souza",
-      "authorAlias": "joaoposka",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "feedback"
-      ],
-      "publishedAt": "2026-04-24T04:01:57.761Z",
-      "likesCount": 6,
-      "commentsCount": 3
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -611,6 +594,25 @@
       "publishedAt": "2026-04-17T14:32:53.936Z",
       "likesCount": 1123,
       "commentsCount": 202
+    },
+    {
+      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
+      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
+      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "imageUrl": "",
+      "authorName": "João Emanuel de Souza",
+      "authorAlias": "joaoposka",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "feedback"
+      ],
+      "publishedAt": "2026-04-24T04:01:57.761Z",
+      "likesCount": 6,
+      "commentsCount": 3
     }
   ]
 }
