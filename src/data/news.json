@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-04-24T00:29:44.709Z",
+  "updatedAt": "2026-04-24T01:34:57.406Z",
   "latest": [
+    {
+      "id": "/content/3CmZbxiiDIWbupD87pWEXKPvqxL",
+      "title": "Why Every Engineer Needs to Know Cloud: The New Industrial Revolution",
+      "description": "As the boundary between physical hardware and digital intelligence blurs, traditional engineering disciplines are undergoing a fundamental shift toward cloud-integrated systems. This transition enables practitioners to leverage elastic compute, real-time IoT monitoring, and generative design to solve complex physical problems with unprecedented speed and scale.",
+      "url": "https://builder.aws.com/content/3CmZbxiiDIWbupD87pWEXKPvqxL",
+      "imageUrl": "",
+      "authorName": "Reese Miller",
+      "authorAlias": "reesemiller",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BoroDviz2fd7DZpIdvgKzTwM1u.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-04-24T01:13:48.718Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CmR0i3BNlsbcmLAIYE5UtffZbD",
       "title": "🚀 Building an Intelligent Document Processing System with AI on AWS: From YAML to Production with Kiro",
@@ -58,7 +77,7 @@
         "vibe-coding"
       ],
       "publishedAt": "2026-04-23T23:42:37.772Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 1
     },
     {
@@ -190,27 +209,6 @@
       "publishedAt": "2026-04-23T20:49:08.344Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Clxx1fAQcZuY7C4koaSX8RqjMy",
-      "title": "O início da minha jornada no programa builder da AWS: Elevando o desenvolvimento de jogos para a nuvem",
-      "description": "Como a paixão por games e liderança de comunidades me levou a mergulhar no ecossistema de nuvem da AWS. Um relato sobre sair da zona de conforto, organizar workshops e conectar desenvolvedores.",
-      "url": "https://builder.aws.com/content/3Clxx1fAQcZuY7C4koaSX8RqjMy",
-      "imageUrl": "",
-      "authorName": "João Constantino",
-      "authorAlias": "joaoconstantino",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClwMRcDXNjftXwgk7kxUL747uL.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "career",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-23T20:18:34.926Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -232,7 +230,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3331,
+      "likesCount": 3332,
       "commentsCount": 1857
     },
     {
@@ -249,7 +247,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 31,
+      "likesCount": 32,
       "commentsCount": 168
     },
     {
@@ -335,31 +333,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1913,
-      "commentsCount": 267
-    },
-    {
-      "id": "/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
-      "title": "Criando e hospedando seu site pessoal com AWS Amplify, Kiro e AWS Builder Center",
-      "description": "\"Quem não é visto, não é lembrado\". É com esta frase que descrevo o artigo de hoje.\nHoje, num mundo totalmente globalizado e conectado pela internet, ter uma presença digital forte não é mais uma escolha, é a sua chave para conseguir ir além na carreira.\nEste é um passo a passo para você criar e hospedar seu próprio site pessoal usando AWS Amplify, com apoio do Kiro para construir o código e do AWS Builder Center como hub de identidade, comunidade e aprendizado.",
-      "url": "https://builder.aws.com/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmP1ggNiwiPxeuPj7EZ9eU7Ngu/AWS-.webp",
-      "authorName": "Jorge Hermes",
-      "authorAlias": "jhermesn",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdpzfqjzzANdQ5L8FzOO6z6MmX.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "kiro",
-        "aws-amplify",
-        "website",
-        "builder-center",
-        "vibe-coding"
-      ],
-      "publishedAt": "2026-04-23T23:42:37.772Z",
-      "likesCount": 2,
-      "commentsCount": 1
+      "likesCount": 1914,
+      "commentsCount": 268
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -385,6 +360,29 @@
       "commentsCount": 94
     },
     {
+      "id": "/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
+      "title": "Criando e hospedando seu site pessoal com AWS Amplify, Kiro e AWS Builder Center",
+      "description": "\"Quem não é visto, não é lembrado\". É com esta frase que descrevo o artigo de hoje.\nHoje, num mundo totalmente globalizado e conectado pela internet, ter uma presença digital forte não é mais uma escolha, é a sua chave para conseguir ir além na carreira.\nEste é um passo a passo para você criar e hospedar seu próprio site pessoal usando AWS Amplify, com apoio do Kiro para construir o código e do AWS Builder Center como hub de identidade, comunidade e aprendizado.",
+      "url": "https://builder.aws.com/content/3CmACZSsCDHLUMn2z6Xrtkyzbdz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmP1ggNiwiPxeuPj7EZ9eU7Ngu/AWS-.webp",
+      "authorName": "Jorge Hermes",
+      "authorAlias": "jhermesn",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdpzfqjzzANdQ5L8FzOO6z6MmX.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "kiro",
+        "aws-amplify",
+        "website",
+        "builder-center",
+        "vibe-coding"
+      ],
+      "publishedAt": "2026-04-23T23:42:37.772Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -403,8 +401,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1342,
-      "commentsCount": 312
+      "likesCount": 1343,
+      "commentsCount": 313
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
