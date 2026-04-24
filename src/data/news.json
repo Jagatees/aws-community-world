@@ -1,6 +1,75 @@
 {
-  "updatedAt": "2026-04-24T08:41:32.853Z",
+  "updatedAt": "2026-04-24T09:34:10.487Z",
   "latest": [
+    {
+      "id": "/content/3Cn0ivwSzQYNzaXxzL3xT7chXKt",
+      "title": "AWS EKS version upgrade from 1.33 to 1.34 using Terraform",
+      "description": "In this article I have covered AWS EKS version cluster in-place from 1.33 to 1.34, ec2 instance type update using Terraform for self-managed nodes.",
+      "url": "https://builder.aws.com/content/3Cn0ivwSzQYNzaXxzL3xT7chXKt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnVhYc4BZWCOPTFe9zhziyfEDI/1752.webp",
+      "authorName": "Naveena Ravi",
+      "authorAlias": "brnaveena",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30lN7JzXYSD1PZ8ZEfuMcxXoMxs.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "terraform",
+        "kubernetes",
+        "amazon-eks",
+        "containers",
+        "IaC"
+      ],
+      "publishedAt": "2026-04-24T09:07:23.536Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Chrlu6gicYy4tteaN9p2pvebAy",
+      "title": "From DeepRacer to Agentic AI: A 1st Runner‑Up's View on AWS AI League 2025 & Top Tips for 2026.",
+      "description": "This post tells the story of Ross Williams’ journey from DeepRacer to the AWS AI League, highlighting how iteration, preparation and hands‑on experimentation carried him to the re:Invent stage. It closes with practical advice for future competitors and an invitation to embrace the challenge, the learning and the joy of building.",
+      "url": "https://builder.aws.com/content/3Chrlu6gicYy4tteaN9p2pvebAy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnRQGdkuogI21tAMx2a1pE9twO/AI_L.webp",
+      "authorName": "Leena Kaur",
+      "authorAlias": "l33nak4ur",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsrIQ7PUmDYiKC9J2cBpiuGKGt.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "aws-ai-league",
+        "aws-deepracer",
+        "amazon-bedrock-agentcore",
+        "amazon-sagemaker",
+        "ai"
+      ],
+      "publishedAt": "2026-04-24T08:58:49.462Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnTx94bmzYEb6TDBnZB6HlF7uk",
+      "title": "Turn Your AI IDE into an Agent Factory with Kiro Powers",
+      "description": "Build code reviewer agent using Strands agent Kiro Powers",
+      "url": "https://builder.aws.com/content/3CnTx94bmzYEb6TDBnZB6HlF7uk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnUIEIBXCijWvhFghSgxIyyqck/Chat.webp",
+      "authorName": "Manoj Kumar S",
+      "authorAlias": "manoj2690",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "ai",
+        "agentic-ai",
+        "agentic-ide",
+        "kiro-agent"
+      ],
+      "publishedAt": "2026-04-24T08:53:52.765Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CnRaTXydrUC6WFQKRtAHMHI1jk",
       "title": "First Article",
@@ -331,71 +400,6 @@
       "publishedAt": "2026-04-24T02:26:48.352Z",
       "likesCount": 6,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3ClFrsoyl6Kc3tTyJFa0c5Fgxy0",
-      "title": "O itinerário do aprendizado: por que a Tecnologia exige Persistência",
-      "description": "Um pouco da minha perspectiva sobre a área da tecnologia e como devemos trilhar nosso processo em meio aos códigos, um breve aquecimento sobre as futuras conversas que teremos por aqui, para além de aprender conteúdo precisamos aprender a ser seres vivos.",
-      "url": "https://builder.aws.com/content/3ClFrsoyl6Kc3tTyJFa0c5Fgxy0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cmfjp2QLtYcyEI2AyvOSRHyyh2/1473.webp",
-      "authorName": "Thais Camila do Nascimento",
-      "authorAlias": "millameazza",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CULsfjRcQURNxsZWeV41DCyjab.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "virtual-machine",
-        "tech-journey",
-        "soft-skills",
-        "social-impact",
-        "social-good"
-      ],
-      "publishedAt": "2026-04-24T02:18:22.709Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CmUxoHbJ7Tjt99ROgQYXtDMsvB",
-      "title": "Do Zero A Líder Estudantil builder AWS: Um novo capítulo na minha vida.",
-      "description": "Eu decidir ano passado me arriscar, mudei de curso e fui pra ADS na FBUNI, foi maior paço que eu dei na minha vida, um tiro no escuro, não sabia o que esperar, passei por tanta coisa e tantas decepções de carreia e nunca me imaginei estando aqui como Líder Estudantil builder AWS, é como se o destino tivesse me guiado e me recompensado por todas as horas de estudo e dedicação, agora quero compartilhar minha jornada nesse mundo de computação em nuvem com AWS.",
-      "url": "https://builder.aws.com/content/3CmUxoHbJ7Tjt99ROgQYXtDMsvB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CmddqNER8pMkLRzoVHrFAiUbHp/Bann-.webp",
-      "authorName": "Daniel Moura de Souza",
-      "authorAlias": "danaws12",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "personal-expression"
-      ],
-      "publishedAt": "2026-04-24T02:13:28.319Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CmgYnhw9aVmGO8dQ6wn9BLJefl",
-      "title": "Minha primeira semana no AWS Builder Center: o que eu aprendi",
-      "description": "Um relato honesto sobre meu primeiro contato com o AWS Builder Center, os aprendizados iniciais e dicas para estudantes que querem começar em cloud.",
-      "url": "https://builder.aws.com/content/3CmgYnhw9aVmGO8dQ6wn9BLJefl",
-      "imageUrl": "",
-      "authorName": "Alex Lira",
-      "authorAlias": "alexdlira",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmhYnPoMfzd1D4hY7BIYZPoLnx.webp",
-      "location": "BA, BR",
-      "lat": -12.285251,
-      "lng": -41.9294776,
-      "tags": [
-        "aws-builders",
-        "cloud-networking",
-        "cloud-operations",
-        "beginner-projects",
-        "students"
-      ],
-      "publishedAt": "2026-04-24T02:09:17.331Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -417,7 +421,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3376,
+      "likesCount": 3378,
       "commentsCount": 1893
     },
     {
@@ -434,7 +438,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 34,
+      "likesCount": 36,
       "commentsCount": 168
     },
     {
@@ -480,27 +484,6 @@
       "commentsCount": 312
     },
     {
-      "id": "/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "title": "AIdeas Finalist: Perspective",
-      "description": "Perspective is an AI-powered mental health companion that extracts clinical insight from free-form speech — no mood scales required. Using 4-cluster parallel extraction on Amazon Bedrock, validated against the Subjective Units of Distress Scale (SUDS), Work and Social Adjustment Scale (WSAS), PHQ-9, and GAD-7, it serves undiagnosed users and diagnosed patients alike. Clinician-validated by three practising doctors. Built on AWS serverless with Kiro.",
-      "url": "https://builder.aws.com/content/3CTjhQLT4IQgGZz65kY8o3O2JP3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTljgGwf5rQlCftTWVIfaUCwnl/Pers.webp",
-      "authorName": "Alwoch Sophia",
-      "authorAlias": "salwoch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WOZBZce10x82zIPENRYwNw1FY.webp",
-      "location": "UG",
-      "lat": 1.5333554,
-      "lng": 32.2166578,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T23:31:03.702Z",
-      "likesCount": 275,
-      "commentsCount": 101
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -521,7 +504,7 @@
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1916,
-      "commentsCount": 268
+      "commentsCount": 269
     },
     {
       "id": "/content/3CV2aFroWhni2e6MGlj8kLSDbCY",
@@ -545,25 +528,6 @@
       "publishedAt": "2026-04-17T20:29:28.119Z",
       "likesCount": 183,
       "commentsCount": 94
-    },
-    {
-      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
-      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
-      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
-      "imageUrl": "",
-      "authorName": "João Emanuel de Souza",
-      "authorAlias": "joaoposka",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "feedback"
-      ],
-      "publishedAt": "2026-04-24T04:01:57.761Z",
-      "likesCount": 6,
-      "commentsCount": 3
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -605,8 +569,48 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-18T14:21:47.039Z",
-      "likesCount": 128,
-      "commentsCount": 74
+      "likesCount": 130,
+      "commentsCount": 76
+    },
+    {
+      "id": "/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "title": "Um pouco de mim e como aprendi T.I. sem gastar nada",
+      "description": "Um breve apanhado da minha trajetória acadêmica e profissional: mais de 4 anos de foco, desde o ensino médio técnico até as primeiras oportunidades. Uma jornada que partiu da periferia da Zona Sul de São Paulo rumo às maiores empresas do país, construída com disciplina e recursos 100% gratuitos.",
+      "url": "https://builder.aws.com/content/3Cms8ttxsUjtuWnL25nfbQmnQQl",
+      "imageUrl": "",
+      "authorName": "João Emanuel de Souza",
+      "authorAlias": "joaoposka",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cg7bs5tm0QxriuHRfU9QYgUWSH.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "feedback"
+      ],
+      "publishedAt": "2026-04-24T04:01:57.761Z",
+      "likesCount": 6,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 1123,
+      "commentsCount": 202
     }
   ]
 }
