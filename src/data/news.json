@@ -1,34 +1,111 @@
 {
-  "updatedAt": "2026-04-24T15:27:23.932Z",
+  "updatedAt": "2026-04-24T16:21:13.245Z",
   "latest": [
     {
-      "id": "/content/39THU1cWKWoZ2xfEkK0OeZTnHlM",
-      "title": "Multi-Region Disaster Recovery with Amazon Aurora Global Database Failover and Amazon ECS on AWS Fargate behind Application Load Balancer",
-      "description": "Imagine you're running a business-critical service — an authentication backend, or a payment gateway — where even seconds of downtime translate directly into lost revenue and broken customer trust. Your users are spread across Europe, and they expect the service to just work, always. This architecture addresses exactly that: a multi-region deployment that survives both (a) Availability Zone failures and (b) full regional outages — automatically, with zero manual intervention.",
-      "url": "https://builder.aws.com/content/39THU1cWKWoZ2xfEkK0OeZTnHlM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoG6ROMqkTJLeyATIsn8GanVk5/arch.webp",
-      "authorName": "Mehdi Yosofie",
-      "authorAlias": "yosofie",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eXaMroB2U35ugHeDj9pqdnVjgs.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "startups",
-        "disaster-recovery",
-        "multi-region",
-        "amazon-aurora",
-        "aws-fargate"
-      ],
-      "publishedAt": "2026-04-24T15:26:55.216Z",
+      "id": "/content/32eMjB0jj8vtGyY0ZfBDCR4GkBo",
+      "title": "Configuring Claude Cowork with Amazon Bedrock",
+      "description": "A macOS walkthrough for configuring Claude Cowork on Amazon Bedrock (research preview) — full desktop Claude, inference inside your own AWS account.",
+      "url": "https://builder.aws.com/content/32eMjB0jj8vtGyY0ZfBDCR4GkBo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoK4AAnpGhhSgDwLOfppzfDQgY/clau.webp",
+      "authorName": "Jason Salcido",
+      "authorAlias": "skyjason",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39Gc4wyIRn7uP42QhSsy8NkEMgy.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-24T16:18:40.788Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3Co8y6VirI7Dr5BYnTUIBTz6S5W",
-      "title": "A ponte entre a sala de aula e o mercado: O papel do AWS Builder Center na formação técnica",
-      "description": "Explorando o impacto do AWS Builder Center na formação de novos desenvolvedores e o papel da computação em nuvem como padrão indispensável para a inovação universitária.",
-      "url": "https://builder.aws.com/content/3Co8y6VirI7Dr5BYnTUIBTz6S5W",
+      "id": "/content/3CoGDzxIfQUnqtXPVvuh8HZjasI",
+      "title": "Build an AI Agent That Takes Action with Amazon Bedrock",
+      "description": "Beyond chatbots — build an AI that checks orders, creates tickets, and sends emails from one instruction. Full code and architecture included.",
+      "url": "https://builder.aws.com/content/3CoGDzxIfQUnqtXPVvuh8HZjasI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoMiDabKzZPSV1mfOWyEXYvEGU/aws2.webp",
+      "authorName": "meghana rajagopal",
+      "authorAlias": "meghanarajagopal",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cm0nLn6wk71SoeU4k6NpqdEhZo.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-bedrock-agents",
+        "serverless",
+        "gen-ai",
+        "react"
+      ],
+      "publishedAt": "2026-04-24T16:17:37.112Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Co5SbyjLrnfI0n74YIuHKQgHjL",
+      "title": "5 AWS Services Every College Student Should Know",
+      "description": "This article highlights five essential AWS services (S3, Lambda, EC2, RDS, and IAM) that college students can learn using the AWS Free Tier, with practical project ideas to become job‑ready.",
+      "url": "https://builder.aws.com/content/3Co5SbyjLrnfI0n74YIuHKQgHjL",
+      "imageUrl": "",
+      "authorName": "Laxmi Chandrahaas Donthula",
+      "authorAlias": "chandrahaasdl",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClHHesw5s21qmiUqngorIKg24t.webp",
+      "location": "Telangana, IN",
+      "lat": 17.8495919,
+      "lng": 79.1151663,
+      "tags": [],
+      "publishedAt": "2026-04-24T16:12:46.479Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CoFyKDlRNd8UpwogwkNaStPrul",
+      "title": "Roadmap to Become an AWS Cloud Club Captain: A Beginner-Friendly Guide for Students",
+      "description": "How Students Can Prepare for AWS Cloud Club Captain: Learning, Blogging, Faculty Support, and Application Roadmap",
+      "url": "https://builder.aws.com/content/3CoFyKDlRNd8UpwogwkNaStPrul",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoKP9aNzlYZpymVt6uHvxEAd45/Blue.webp",
+      "authorName": "Zaynul Abedin Miah",
+      "authorAlias": "zaynul10",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2bBbQ80WLobXxE8qNl0hhfbuoy3.webp",
+      "location": "BD",
+      "lat": 24.4769288,
+      "lng": 90.2934413,
+      "tags": [
+        "aws-cloud-clubs",
+        "aws-builders",
+        "aws-educate",
+        "aws-skill-builder",
+        "students"
+      ],
+      "publishedAt": "2026-04-24T16:01:59.126Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CoHn8MDex2SzKLPhC2ItfjQ4LK",
+      "title": "Solving the AWS Awareness Gap: My First Week as a Student Builder Campus Leader",
+      "description": "This article captures my first week as an AWS Student Builder Campus Leader, focused on identifying the awareness gap around AWS among students and taking initial steps to address it. Through early outreach, conversations, and planning activities like awareness sessions, pitching, and tabling events, I began building the foundation for a 6-week community growth initiative",
+      "url": "https://builder.aws.com/content/3CoHn8MDex2SzKLPhC2ItfjQ4LK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoJYjSs9kMKrjhvVPE3b9qM2NA/Whats.webp",
+      "authorName": "Rehan Poonia",
+      "authorAlias": "rehanpoonia",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34rbP3xBE4jEnzDeveuNHWMtqlU.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-ambassador",
+        "aws-skill-builder"
+      ],
+      "publishedAt": "2026-04-24T15:55:10.914Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CoIZe3WMbbhX97bE9NYZFiCD3h",
+      "title": "Primeiros passos na Nuvem: O que o estudante precisa de saber sobre a AWS",
+      "description": "Uma introdução aos conceitos de computação em nuvem e como o AWS Builder Center serve como porta de entrada para estudantes que desejam alinhar o conhecimento acadêmico às práticas da indústria de tecnologia.",
+      "url": "https://builder.aws.com/content/3CoIZe3WMbbhX97bE9NYZFiCD3h",
       "imageUrl": "",
       "authorName": "Matheus Knevitz Morsolin",
       "authorAlias": "matheusmorsolin",
@@ -39,184 +116,92 @@
       "tags": [
         "aws-academy"
       ],
-      "publishedAt": "2026-04-24T14:44:21.754Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
-      "title": "AWS Builder Center: perspectivas e oportunidades",
-      "description": "Como está sendo minha experiência e o que a plataforma oferece, não só a mim, mas a qualquer um disposto a aprender",
-      "url": "https://builder.aws.com/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Co7ev425mDTjS4SDPLD8teeJyM/logo.webp",
-      "authorName": "alexandre",
-      "authorAlias": "alexandreaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Co32sHp5OWLbzbQN2VO697MOqd.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "identity",
-        "all-builders-welcome",
-        "announcements"
-      ],
-      "publishedAt": "2026-04-24T14:19:13.861Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/31Btt39X2RpvtBzDWHhreQOutOg",
-      "title": "Configure Zscaler on Amazon WorkSpaces Personal",
-      "description": "This guide explains how to forward traffic to Zscaler Internet Access (ZIA) on Amazon WorkSpaces while maintaining WorkSpace health and connectivity.",
-      "url": "https://builder.aws.com/content/31Btt39X2RpvtBzDWHhreQOutOg",
-      "imageUrl": "",
-      "authorName": "Filippa, Dayne",
-      "authorAlias": "filippad",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/318S0Am4lc6CeVP9VgzjL0F5hrf.webp",
-      "location": "ZA",
-      "lat": -28.8166236,
-      "lng": 24.991639,
-      "tags": [
-        "amazon-workspaces",
-        "workspaces",
-        "end-user-computing",
-        "firewall"
-      ],
-      "publishedAt": "2026-04-24T13:43:29.917Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnvNAZaOCPbFNNvA5GbOs6YqxX",
-      "title": "Minha primeira semana com o AWS Builder Center: o que eu aprendi.",
-      "description": "Uma experiência inicial em computação em nuvem, destacando o aprendizado prático.",
-      "url": "https://builder.aws.com/content/3CnvNAZaOCPbFNNvA5GbOs6YqxX",
-      "imageUrl": "",
-      "authorName": "Juliana Freire de Oliveira",
-      "authorAlias": "julianaintech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-certification",
-        "aws-community",
-        "aws-builders",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-24T13:07:46.187Z",
+      "publishedAt": "2026-04-24T15:54:29.539Z",
       "likesCount": 1,
       "commentsCount": 0
     },
     {
-      "id": "/content/3Cj1zX4QpBwesQA3fmlAl23xrTl",
-      "title": "How I Earned AWS Certified Cloud Practitioner Using Builder Center and Cloud Clubs",
-      "description": "A beginner-friendly journey of how structured learning through AWS Builder Center and consistent support from AWS Cloud Clubs helped me achieve my first AWS certification.",
-      "url": "https://builder.aws.com/content/3Cj1zX4QpBwesQA3fmlAl23xrTl",
-      "imageUrl": "",
-      "authorName": "Aditya Kumar",
-      "authorAlias": "adityakr",
+      "id": "/content/3CmJ3eaL8g49bAYhZEhRvrP344s",
+      "title": "Minha jornada na tecnologia e o impacto do AWS Builder Center na minha carreira",
+      "description": "Neste artigo, compartilho minha trajetória na área de tecnologia, desde as incertezas do início até minha atuação como desenvolvedor. Mostro como projetos práticos, aliados aos recursos e à comunidade do AWS Builder Center, contribuíram para o meu crescimento, aprimoraram minhas habilidades e foram fundamentais para conquistar meu estágio e impulsionar minha carreira.",
+      "url": "https://builder.aws.com/content/3CmJ3eaL8g49bAYhZEhRvrP344s",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoG1rFfl0J5UrIShprfRzvT1F6/AWS_.webp",
+      "authorName": "João Victor Farah",
+      "authorAlias": "joaovfarah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmJ3U0cD1WEY1iRfoJ8WpbXjfW.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-q-developer",
+        "amazon-q-business",
+        "analytics",
+        "application",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-24T15:54:28.823Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CoGa9T9i84OD5JbABtsobtDDC6",
+      "title": "Building an Incremental ETL Pipeline with AWS Glue Job Bookmarks — A Production-Grade Education Management System",
+      "description": "Imagine a university where teachers mark attendance and enter marks throughout the day. This data lands in S3 as JSON/CSV files. A naive ETL approach would reprocess everything on every run:",
+      "url": "https://builder.aws.com/content/3CoGa9T9i84OD5JbABtsobtDDC6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoIS8DaYt7a5D4USZniUYJVqtW/imag.webp",
+      "authorName": "DHILIP S E",
+      "authorAlias": "dhilip4",
       "authorAvatarUrl": "",
-      "location": "Madhya Pradesh, IN",
-      "lat": 23.8143419,
-      "lng": 77.5340719,
-      "tags": [
-        "aws-cloud-clubs",
-        "builder-center",
-        "aws-certification",
-        "training-and-certification",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-24T12:58:01.653Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnMknyHkkcyDOcp6W6dcz0WVS2",
-      "title": "Mastering AWS Network Observability: A Practical Guide",
-      "description": "A practical guide to building end-to-end network observability on AWS — covering the key metrics, alarms, and tools across EC2, VPC Flow Logs, NAT Gateway, Network Firewall, PrivateLink, and the CloudWatch Network Monitoring suite to help you detect, diagnose, and resolve network issues before they impact your customers.",
-      "url": "https://builder.aws.com/content/3CnMknyHkkcyDOcp6W6dcz0WVS2",
-      "imageUrl": "",
-      "authorName": "Dexter Moyo",
-      "authorAlias": "dmoyo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CnwB14Uxfv9mBispoTjA7yAhDm.webp",
-      "location": "SE",
-      "lat": 59.6749712,
-      "lng": 14.5208584,
-      "tags": [
-        "aws-networking",
-        "networking",
-        "amazon-vpc",
-        "aws-network-firewall",
-        "monitoring-observability"
-      ],
-      "publishedAt": "2026-04-24T12:38:24.802Z",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [],
+      "publishedAt": "2026-04-24T15:44:01.775Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3CnfCpLltCMKrI1DQdZDHyfk0Vo",
-      "title": "How to Use Kiro for Network Operations",
-      "description": "How to use Kiro CLI as an AI-powered network operations tool — replacing manual console hopping and CLI memorization with natural language prompts that discover your architecture, validate routes, analyze firewall logs, and run full operational health checks in seconds.",
-      "url": "https://builder.aws.com/content/3CnfCpLltCMKrI1DQdZDHyfk0Vo",
+      "id": "/content/3ClhG5ByOllcKciCjxVZAOQU1M8",
+      "title": "From SBCL to AWS Heroes: Understanding AWS Student Programs",
+      "description": "A simple, no-confusion breakdown of AWS student programs like SBCL, Community Builders, and AWS Heroes—explained from a real student perspective.",
+      "url": "https://builder.aws.com/content/3ClhG5ByOllcKciCjxVZAOQU1M8",
       "imageUrl": "",
-      "authorName": "Dexter Moyo",
-      "authorAlias": "dmoyo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CnwB14Uxfv9mBispoTjA7yAhDm.webp",
-      "location": "SE",
-      "lat": 59.6749712,
-      "lng": 14.5208584,
+      "authorName": "Tejasvi Shekhat",
+      "authorAlias": "tejasvipatel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35lqU7rFAmjx65PT8IodfD95Q8y.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "kiro",
-        "advanced-networking",
-        "networking",
-        "cloud-operations"
+        "aws-community-builders",
+        "cloud-networking",
+        "cloud-concepts"
       ],
-      "publishedAt": "2026-04-24T12:38:00.226Z",
+      "publishedAt": "2026-04-24T15:38:20.756Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3ClVnhuTrzWDMNrjcFYrdzt6ayA",
-      "title": "Durable Handoff Multi-Agent Workflow",
-      "description": "Durable handoff multi-agent workflow with Amazon Simple Storage Service (S3)",
-      "url": "https://builder.aws.com/content/3ClVnhuTrzWDMNrjcFYrdzt6ayA",
-      "imageUrl": "",
-      "authorName": "msumari",
-      "authorAlias": "msumari",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bfg2n4AXgWDDjeoASgNkwqvte8.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
+      "id": "/content/3CnX2E21AQZUHoCIEP5dJbRDgR9",
+      "title": "Key Takeaways from AWS Summit Bengaluru: Generative AI Orchestration",
+      "description": "Discover essential builder takeaways from AWS Summit Bengaluru 2026. This recap dives into Amazon Bedrock AgentCore updates, showing how the new managed harness and CLI streamline generative AI orchestration. We explore AWS Kiro's evolution into a powerful agentic IDE that boosts developer productivity. Uncover real-world enterprise AI ROI stories from companies like Apollo Tyres, alongside critical FinOps benchmarks for Trainium3 and Graviton5 silicon to accelerate your cloud workloads.",
+      "url": "https://builder.aws.com/content/3CnX2E21AQZUHoCIEP5dJbRDgR9",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cnl1S8yaM04TiCSer9LCEb87i0/unna.webp",
+      "authorName": "Sarab Bose",
+      "authorAlias": "sarabbose",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35qEKvv5GLcGZ8sbwYsuYelB6I5.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
         "agentic-ai",
-        "ai-engineering",
-        "amazon-s3",
-        "strands-agents",
-        "multi-agent-orchestrator"
+        "agentic-ide",
+        "students",
+        "finops",
+        "compute"
       ],
-      "publishedAt": "2026-04-24T12:33:50.970Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnslIAKeZ9WpKj5oUsVCjdKnJk",
-      "title": "How to Secure a WordPress Site: 10 Proven Security Tips",
-      "description": "Learn how to secure a WordPress site with 10 proven tips. Protect your website from hackers, malware, and threats using this simple guide.",
-      "url": "https://builder.aws.com/content/3CnslIAKeZ9WpKj5oUsVCjdKnJk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cnt7AyO9faOegjWBgFSSq4vArR/How-.webp",
-      "authorName": "Harper Elise Callahan",
-      "authorAlias": "harperelisecallahan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/381OZkwcmCz2Q9uM2fSAQK2sEAL.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "wordpress",
-        "security-best-practices"
-      ],
-      "publishedAt": "2026-04-24T12:17:24.203Z",
-      "likesCount": 2,
+      "publishedAt": "2026-04-24T15:31:59.591Z",
+      "likesCount": 1,
       "commentsCount": 0
     }
   ],
@@ -239,7 +224,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3382,
+      "likesCount": 3383,
       "commentsCount": 1896
     },
     {
@@ -298,7 +283,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2831,
+      "likesCount": 2832,
       "commentsCount": 313
     },
     {
@@ -321,7 +306,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1918,
+      "likesCount": 1919,
       "commentsCount": 269
     },
     {
@@ -366,7 +351,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1361,
+      "likesCount": 1362,
       "commentsCount": 317
     },
     {
@@ -391,6 +376,27 @@
       "commentsCount": 77
     },
     {
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 1125,
+      "commentsCount": 202
+    },
+    {
       "id": "/content/3Co4yOcifE9S53zPCAXIxZpVe7D",
       "title": "AWS Builder Center: perspectivas e oportunidades",
       "description": "Como está sendo minha experiência e o que a plataforma oferece, não só a mim, mas a qualquer um disposto a aprender",
@@ -408,31 +414,8 @@
         "announcements"
       ],
       "publishedAt": "2026-04-24T14:19:13.861Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "title": "It Works on My Machine… Until It Doesn’t: Why Backends Break in Production and How to Fix It with Queues",
-      "description": "Learn why backend systems fail when moving from local development to production and how to use AWS SQS to build more resilient and scalable architectures.",
-      "url": "https://builder.aws.com/content/3Cj1KYBq2MsFDAMhe0cxHip6WHv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CnpTEpuh1J6ACGzXZC87MxpdCd/img_.webp",
-      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
-      "authorAlias": "mvrga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "amazon-sqs",
-        "backend",
-        "distributed-systems",
-        "scalability"
-      ],
-      "publishedAt": "2026-04-24T11:49:38.292Z",
       "likesCount": 4,
-      "commentsCount": 2
+      "commentsCount": 0
     }
   ]
 }
