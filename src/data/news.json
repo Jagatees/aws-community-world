@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-25T08:20:24.626Z",
+  "updatedAt": "2026-04-25T09:18:53.661Z",
   "latest": [
+    {
+      "id": "/content/3CdKgqAQsczamH1cJjuXFofqF5u",
+      "title": "Começando na AWS: o que ninguém me explicou (de forma simples)",
+      "description": "Você acha que nuvem é coisa de empresa grande, de desenvolvedor sênior, de quem já sabe tudo? Eu também achava. Até o dia em que percebi que estava usando de graça, sem ter percebido o quanto era simples chegar até lá.",
+      "url": "https://builder.aws.com/content/3CdKgqAQsczamH1cJjuXFofqF5u",
+      "imageUrl": "",
+      "authorName": "Vinícius Amâncio Martins Pereira",
+      "authorAlias": "viniciusawscc",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYEOZ7NePUZ1JxC7zV5kK9uoFn.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-s3",
+        "students",
+        "free-tier-projects",
+        "beginner-projects",
+        "experience"
+      ],
+      "publishedAt": "2026-04-25T08:35:05.264Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CqCXpfg8Eau3FuIbhL1Vfx9Jp1",
       "title": "Eu escolho você",
@@ -102,7 +125,7 @@
         "amazon-ec2"
       ],
       "publishedAt": "2026-04-25T06:16:27.062Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 1
     },
     {
@@ -192,29 +215,6 @@
       "publishedAt": "2026-04-25T03:36:09.337Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cn5EtD69CMkFvmt6yiHDNz4M0J",
-      "title": "Da área de suporte ao desenvolvimento: como o AWS Builder Center fortalece minha evolução em Engenharia de Software",
-      "description": "Sou estudante de Engenharia de Software e venho construindo minha jornada entre desenvolvimento, automação, IA e cloud. Neste artigo, compartilho como o AWS Builder Center fortaleceu minha visão de carreira e minha confiança para continuar evoluindo na tecnologia.",
-      "url": "https://builder.aws.com/content/3Cn5EtD69CMkFvmt6yiHDNz4M0J",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cpc6XhmKHXgfm9J3P1N7lOQQrA/Buil.webp",
-      "authorName": "Abinadabe Gomes de Oliveira",
-      "authorAlias": "devabinadabe",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSGjfRlLHupGVQTXkm41tsoSOo.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "students",
-        "cloud-networking",
-        "software-engineering",
-        "aws-builders",
-        "aws-academy"
-      ],
-      "publishedAt": "2026-04-25T03:10:38.070Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -236,8 +236,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3394,
-      "commentsCount": 1902
+      "likesCount": 3396,
+      "commentsCount": 1904
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -274,7 +274,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 38,
+      "likesCount": 39,
       "commentsCount": 168
     },
     {
@@ -295,7 +295,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2835,
+      "likesCount": 2836,
       "commentsCount": 314
     },
     {
@@ -322,6 +322,27 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
+      "title": "AIdeas Finalist: CarbonZero",
+      "description": "AI-Powered Carbon Accounting & Gamified Compliance for African Businesses and Individuals. Built with Kiro and AWS, CarbonZero helps African SMEs and exporters track emissions, achieve EU CBAM compliance, and turn sustainability into a competitive advantage — now with the audit trails, carbon passports, and accounting sync to make it real.",
+      "url": "https://builder.aws.com/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CX9btdGulNLoahJOU5lbD7WoqB/02_i.webp",
+      "authorName": "Oluwasegun Adedigba",
+      "authorAlias": "cloudsege",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30Az8sg0UYREelhXEzrNbsPJ1eJ.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-18T14:21:47.039Z",
+      "likesCount": 141,
+      "commentsCount": 80
+    },
+    {
       "id": "/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
       "title": "Não foi só sobre aprender tecnologia, Foi sobre se conectar!",
       "description": "Minha primeira semana como Líder Estudantil Builder AWS e uma reflexão: a faculdade te dá a base, mas a comunidade te dá o mapa. No artigo de hoje, falo sobre a importância de explorar áreas além da sua bolha para descobrir quem você realmente quer ser na tecnologia",
@@ -342,27 +363,6 @@
       "publishedAt": "2026-04-25T00:58:24.436Z",
       "likesCount": 7,
       "commentsCount": 5
-    },
-    {
-      "id": "/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
-      "title": "AIdeas Finalist: CarbonZero",
-      "description": "AI-Powered Carbon Accounting & Gamified Compliance for African Businesses and Individuals. Built with Kiro and AWS, CarbonZero helps African SMEs and exporters track emissions, achieve EU CBAM compliance, and turn sustainability into a competitive advantage — now with the audit trails, carbon passports, and accounting sync to make it real.",
-      "url": "https://builder.aws.com/content/3CX594TxkLpLGrjaJuFQb0C4E9O",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CX9btdGulNLoahJOU5lbD7WoqB/02_i.webp",
-      "authorName": "Oluwasegun Adedigba",
-      "authorAlias": "cloudsege",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30Az8sg0UYREelhXEzrNbsPJ1eJ.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-18T14:21:47.039Z",
-      "likesCount": 141,
-      "commentsCount": 80
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
