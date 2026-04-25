@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-25T05:36:04.758Z",
+  "updatedAt": "2026-04-25T06:31:03.838Z",
   "latest": [
+    {
+      "id": "/content/3CpzQBI9WQ6XzHAzlniJscBiu6G",
+      "title": "Do Quarto para a Nuvem: O que meu Home Lab está me ensinando sobre a AWS",
+      "description": "Aprender computação em nuvem pode parecer assustador no começo. Mas e se a infraestrutura da AWS for muito parecida com o computador que você usa no seu próprio quarto? Neste artigo, de estudante para estudante, faço um paralelo prático entre os desafios do meu Home Lab caseiro e os serviços da nuvem. Descubra como EC2, VPC, S3 e ECS funcionam na prática e aprenda a tirar seus projetos do \"localhost\"!",
+      "url": "https://builder.aws.com/content/3CpzQBI9WQ6XzHAzlniJscBiu6G",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpzZ3JfRJP4nN015s4Psw2BJsa/Yell.webp",
+      "authorName": "Luizlfc-dev",
+      "authorAlias": "luizlfcdev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBrqOXXYiLW3ftSKze2LxQ9tpp.webp",
+      "location": "PB, BR",
+      "lat": -7.1219366,
+      "lng": -36.7246845,
+      "tags": [
+        "personal-expression",
+        "experience",
+        "aws-cloud-development-kit",
+        "amazon-s3",
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-04-25T06:16:27.062Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CprVbgo9LtkgYSvnQk7UVWcyaY",
       "title": "Actionable Packages — paqueteAction: AWS Account Hardening Playbook",
@@ -52,7 +75,7 @@
       "title": "Using Kiro to Build Refined Contacts for Field Prospecting - From Raw Third-Party Vendor Data to Sales-Ready Intelligence",
       "description": "This article explores how Kiro, AWS's spec-driven agentic IDE that can be used as a field enablement tool to automate the refinement of large third-party vendor datafeeds into accurate, compliant, sales-ready contact intelligence in under two minutes per batch.",
       "url": "https://builder.aws.com/content/3CpTaYLITjfjGPJvRQezHTutO4f",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cpm5I8bJTRCr8FeZZSEihpniFJ/812d.webp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cpw9tElPI9WMLY7D4ydBgSkOIP/kiro.webp",
       "authorName": "Bhanuja",
       "authorAlias": "nagoreb",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpRUdh9LtHxWYAZjxEvVvld0lx.webp",
@@ -191,27 +214,6 @@
       "publishedAt": "2026-04-25T01:21:59.490Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CitrOa7zuySmXOh9bTd51R4ghi",
-      "title": "Saúde mental na TI: por que a área ainda finge que esse problema não existe?",
-      "description": "O aprendizado em TI não precisa ser isolado: o AWS Builder Center mostra como a colaboração e a comunidade fortalecem essa jornada.",
-      "url": "https://builder.aws.com/content/3CitrOa7zuySmXOh9bTd51R4ghi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpQ0cJcpF7D1xP12LuBBygHcKL/Estu.webp",
-      "authorName": "Deborah Viana",
-      "authorAlias": "deborahx",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpNX5DWAARP9NW8HMY0YtZYvkH.webp",
-      "location": "AM, BR",
-      "lat": -4.479925,
-      "lng": -63.5185396,
-      "tags": [
-        "support",
-        "tech",
-        "aws-tech-u"
-      ],
-      "publishedAt": "2026-04-25T01:21:45.954Z",
-      "likesCount": 3,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -233,8 +235,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3392,
-      "commentsCount": 1900
+      "likesCount": 3393,
+      "commentsCount": 1901
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
