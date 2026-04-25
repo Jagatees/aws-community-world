@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-25T07:30:52.520Z",
+  "updatedAt": "2026-04-25T08:20:24.626Z",
   "latest": [
+    {
+      "id": "/content/3CqCXpfg8Eau3FuIbhL1Vfx9Jp1",
+      "title": "Eu escolho você",
+      "description": "Sabe aquele sentimento de gostar de uma tecnologia ou desafio que ninguém ao seu redor entende? Este artigo é sobre isso. É um guia de como deixei meu \"mundinho\" local e escolhi o AWS Builder Center para escalar não apenas meus projetos, mas minhas conexões. Se você quer saber como dar o primeiro passo na nuvem e encontrar a sua comunidade, esse texto é para você.",
+      "url": "https://builder.aws.com/content/3CqCXpfg8Eau3FuIbhL1Vfx9Jp1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CqD2S56dGl6cYCYX0H9IK4qtOK/Capa.webp",
+      "authorName": "Paulo Victor Souto de Andrade",
+      "authorAlias": "paulovsandrade",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqCVwvSnJgkNhW7RBnvSr2Tjir.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "personal-expression",
+        "experience",
+        "all-builders-welcome"
+      ],
+      "publishedAt": "2026-04-25T08:04:36.205Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CqAvQIUtbv3TbYaWitncAz9TGQ",
+      "title": "Beyond Prompt-to-Code: Why Enterprise AI Coding Needs Spec-Driven Development",
+      "description": "AI coding is no longer only about generating code faster. For enterprise teams, the harder challenge is making AI-assisted development traceable, reviewable, consistent, and governable. This article explores how Kiro’s spec-driven workflow — with specs, steering, hooks, headless mode, and governance controls — points toward a more structured operating model for enterprise AI coding.",
+      "url": "https://builder.aws.com/content/3CqAvQIUtbv3TbYaWitncAz9TGQ",
+      "imageUrl": "",
+      "authorName": "Mayinchen",
+      "authorAlias": "yincma",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31ttOyRTdxo3ybFpwh98vOoNY3o.webp",
+      "location": "Beijing, CN",
+      "lat": 39.9057136,
+      "lng": 116.3912972,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "spec-drivien-development"
+      ],
+      "publishedAt": "2026-04-25T07:53:16.685Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cq63zc9e9FCJHBpUAwXFr2sCBn",
       "title": "What is AWS Kiro and Why it Matters for Agentic Development",
@@ -172,50 +214,6 @@
       ],
       "publishedAt": "2026-04-25T03:10:38.070Z",
       "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CpUe5LGsvwRJxrsh5oQiWJftBj",
-      "title": "The 70% Rule",
-      "description": "Most ideas never become reality because of the idea of perfection. The 70% rule applies even more with today's technology available. ",
-      "url": "https://builder.aws.com/content/3CpUe5LGsvwRJxrsh5oQiWJftBj",
-      "imageUrl": "",
-      "authorName": "Ashwin Benegal",
-      "authorAlias": "ashwinbenegal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArL5AmBAVmdNuCGZawU5knonUw.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "nobody-is-perfect",
-        "ai",
-        "aspiring-builders",
-        "aws-builders",
-        "aws-skill-builder"
-      ],
-      "publishedAt": "2026-04-25T01:57:58.856Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CpKJiFjmxxl86uaeViiz1jw50J",
-      "title": "AWS Builder Center para iniciantes: um guia prático para começar em cloud",
-      "description": "Começar em cloud pode ser desafiador, principalmente para quem está no início da jornada em tecnologia. Neste artigo, compartilho um guia prático sobre o AWS Builder Center e como ele pode ajudar estudantes a dar os primeiros passos em computação em nuvem.",
-      "url": "https://builder.aws.com/content/3CpKJiFjmxxl86uaeViiz1jw50J",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpQ2gRwWrrkfnRHpqFCf1IdiPL/Arti.webp",
-      "authorName": "Nicolle Maia",
-      "authorAlias": "niccmaia",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "students",
-        "learning-and-development"
-      ],
-      "publishedAt": "2026-04-25T01:31:04.503Z",
-      "likesCount": 2,
       "commentsCount": 0
     }
   ],
@@ -410,27 +408,25 @@
       "commentsCount": 202
     },
     {
-      "id": "/content/3CpzQBI9WQ6XzHAzlniJscBiu6G",
-      "title": "Do Quarto para a Nuvem: O que meu Home Lab está me ensinando sobre a AWS",
-      "description": "Aprender computação em nuvem pode parecer assustador no começo. Mas e se a infraestrutura da AWS for muito parecida com o computador que você usa no seu próprio quarto? Neste artigo, de estudante para estudante, faço um paralelo prático entre os desafios do meu Home Lab caseiro e os serviços da nuvem. Descubra como EC2, VPC, S3 e ECS funcionam na prática e aprenda a tirar seus projetos do \"localhost\"!",
-      "url": "https://builder.aws.com/content/3CpzQBI9WQ6XzHAzlniJscBiu6G",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpzZ3JfRJP4nN015s4Psw2BJsa/Yell.webp",
-      "authorName": "Luizlfc-dev",
-      "authorAlias": "luizlfcdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBrqOXXYiLW3ftSKze2LxQ9tpp.webp",
-      "location": "PB, BR",
-      "lat": -7.1219366,
-      "lng": -36.7246845,
+      "id": "/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "title": "AIdeas Finalist: LuminaLog — Privacy-First Observability",
+      "description": "LuminaLog is a serverless, privacy-first observability platform. It features SmartScrub™, a Kinesis-driven engine that replaces PII with realistic synthetic data before storage, preserving both data privacy and debuggability. Combined with real-time WebSocket live tailing and automated Gemini 2.5 Flash error analysis, it gives startups in regulated markets enterprise-grade compliance and insights without the enterprise price tag.",
+      "url": "https://builder.aws.com/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTmJ8Z5NxG2NmFXBrlPTyekL9c/Gemi.webp",
+      "authorName": "Moses Michael Idiong",
+      "authorAlias": "mozman777",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AZKAiQY35hpsBxlLeu4LVQ2w6i.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
       "tags": [
-        "personal-expression",
-        "experience",
-        "aws-cloud-development-kit",
-        "amazon-s3",
-        "amazon-ec2"
+        "aideas-2025",
+        "EMEA",
+        "commercial-solutions"
       ],
-      "publishedAt": "2026-04-25T06:16:27.062Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "publishedAt": "2026-04-17T20:29:18.574Z",
+      "likesCount": 497,
+      "commentsCount": 585
     }
   ]
 }
