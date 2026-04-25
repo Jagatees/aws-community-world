@@ -1,6 +1,71 @@
 {
-  "updatedAt": "2026-04-25T03:03:23.611Z",
+  "updatedAt": "2026-04-25T04:50:05.892Z",
   "latest": [
+    {
+      "id": "/content/3CpTaYLITjfjGPJvRQezHTutO4f",
+      "title": "Using Kiro to Build Refined Contacts for Field Prospecting - From Raw Third-Party Vendor Data to Sales-Ready Intelligence",
+      "description": "This article explores how Kiro, AWS's spec-driven agentic IDE that can be used as a field enablement tool to automate the refinement of large third-party vendor datafeeds into accurate, compliant, sales-ready contact intelligence in under two minutes per batch.",
+      "url": "https://builder.aws.com/content/3CpTaYLITjfjGPJvRQezHTutO4f",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cpm5I8bJTRCr8FeZZSEihpniFJ/812d.webp",
+      "authorName": "Bhanuja",
+      "authorAlias": "nagoreb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpRUdh9LtHxWYAZjxEvVvld0lx.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "kiro-agent",
+        "data-strategy"
+      ],
+      "publishedAt": "2026-04-25T04:02:42.483Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cpamxp3Fdin8dq3XKdMT3U8Dh1",
+      "title": "Como o AWS Builder Center pode impactar no meu desenvolvimento?",
+      "description": "Descubra como a participação em ligas acadêmicas, hackathons e programas de liderança em conjunto com a AWS Builder Center pode acelerar sua maturidade profissional e facilitar a transição entre a universidade e o mercado de tecnologia",
+      "url": "https://builder.aws.com/content/3Cpamxp3Fdin8dq3XKdMT3U8Dh1",
+      "imageUrl": "",
+      "authorName": "Ana Carolina de Jesus Pacheco da Silva",
+      "authorAlias": "analina",
+      "authorAvatarUrl": "",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "self-development",
+        "soft-skills",
+        "career"
+      ],
+      "publishedAt": "2026-04-25T03:36:09.337Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cn5EtD69CMkFvmt6yiHDNz4M0J",
+      "title": "Da área de suporte ao desenvolvimento: como o AWS Builder Center fortalece minha evolução em Engenharia de Software",
+      "description": "Sou estudante de Engenharia de Software e venho construindo minha jornada entre desenvolvimento, automação, IA e cloud. Neste artigo, compartilho como o AWS Builder Center fortaleceu minha visão de carreira e minha confiança para continuar evoluindo na tecnologia.",
+      "url": "https://builder.aws.com/content/3Cn5EtD69CMkFvmt6yiHDNz4M0J",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cpc6XhmKHXgfm9J3P1N7lOQQrA/Buil.webp",
+      "authorName": "Abinadabe Gomes de Oliveira",
+      "authorAlias": "devabinadabe",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSGjfRlLHupGVQTXkm41tsoSOo.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
+      "tags": [
+        "students",
+        "cloud-networking",
+        "software-engineering",
+        "aws-builders",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-04-25T03:10:38.070Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CpUe5LGsvwRJxrsh5oQiWJftBj",
       "title": "The 70% Rule",
@@ -73,9 +138,9 @@
       "authorName": "Myllena Lins",
       "authorAlias": "mylins22",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdTAgYVNaK7Je7Tp42hJytfifo.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "location": "PE, BR",
+      "lat": -8.4116316,
+      "lng": -37.5919699,
       "tags": [],
       "publishedAt": "2026-04-25T01:21:59.490Z",
       "likesCount": 0,
@@ -145,98 +210,9 @@
       "publishedAt": "2026-04-25T00:46:51.818Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cok6nZgnIKGYJkYTqVqK1Kjpli",
-      "title": "🚀 Produção não é Playground: Realidade AWS com Mariana Borges",
-      "description": "Um guia direto da teoria à prática na AWS, mostrando o que realmente importa para sair de projetos acadêmicos e construir sistemas que aguentam o mundo real. Com insights de quem vive produção todos os dias, o foco é em decisões que garantem escala, segurança e resiliência.",
-      "url": "https://builder.aws.com/content/3Cok6nZgnIKGYJkYTqVqK1Kjpli",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpJdYFtbhZLA2sEVnslOWIUBMy/1000.webp",
-      "authorName": "Grazielly Sabino",
-      "authorAlias": "sabinoograzielly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7exODb3EDejDfKPuXUue0CQtn.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "architecture",
-        "iam",
-        "terraform",
-        "aws-cloudwatch"
-      ],
-      "publishedAt": "2026-04-25T00:40:17.439Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CpK1XBIH0sP5Oxst14NRGFFtb4",
-      "title": "Turn Playwright into AI Test Factory - Custom Kiro Powers",
-      "description": "Build Once, Test Everywhere with Playwright Kiro Custom Power",
-      "url": "https://builder.aws.com/content/3CpK1XBIH0sP5Oxst14NRGFFtb4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpKBzzDGvyaI5W3n1HZk7HykTL/Chat.webp",
-      "authorName": "Manoj Kumar S",
-      "authorAlias": "manoj2690",
-      "authorAvatarUrl": "",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "agentic-ai",
-        "ai",
-        "kiro",
-        "kiro-agent",
-        "ai-ide"
-      ],
-      "publishedAt": "2026-04-25T00:31:16.197Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CpGYpT1BfUdytDshLZLvE3pJrn",
-      "title": "Principais serviços da AWS que todo estudante deveria conhecer",
-      "description": "Computação em nuvem é o uso de recursos de TI pela internet, como servidores, armazenamento e bancos de dados. A Amazon Web Services (AWS) popularizou esse modelo com serviços sob demanda. Entre os principais estão EC2 (máquinas virtuais), S3 (armazenamento), Lambda (serverless), RDS (bancos de dados), IAM (segurança), VPC (rede) e CloudWatch (monitoramento). O aprendizado envolve entender como esses serviços se integram para criar aplicações escaláveis, seguras e eficientes.",
-      "url": "https://builder.aws.com/content/3CpGYpT1BfUdytDshLZLvE3pJrn",
-      "imageUrl": "",
-      "authorName": "Alfredo Macutunda",
-      "authorAlias": "alfredomac",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "aws-educate",
-        "aws-service-catalog"
-      ],
-      "publishedAt": "2026-04-25T00:02:55.228Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
-      "title": "Não foi só sobre aprender tecnologia, Foi sobre se conectar!",
-      "description": "Minha primeira semana como Líder Estudantil Builder AWS e uma reflexão: a faculdade te dá a base, mas a comunidade te dá o mapa. No artigo de hoje, falo sobre a importância de explorar áreas além da sua bolha para descobrir quem você realmente quer ser na tecnologia",
-      "url": "https://builder.aws.com/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpI2fvEcVHg7BCwll4qQz30XNE/Whats.webp",
-      "authorName": "MARIA PAULA DE CASTRO REIS",
-      "authorAlias": "sert7",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUJowI5X54UqGGsJjNQ44dLuUx.webp",
-      "location": "GO, BR",
-      "lat": -15.9323662,
-      "lng": -50.1392928,
-      "tags": [
-        "builder-center",
-        "aws-cloud-clubs",
-        "tech",
-        "network"
-      ],
-      "publishedAt": "2026-04-25T00:58:24.436Z",
-      "likesCount": 7,
-      "commentsCount": 5
-    },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
@@ -256,7 +232,7 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3390,
-      "commentsCount": 1898
+      "commentsCount": 1899
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -297,6 +273,28 @@
       "commentsCount": 168
     },
     {
+      "id": "/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
+      "title": "Não foi só sobre aprender tecnologia, Foi sobre se conectar!",
+      "description": "Minha primeira semana como Líder Estudantil Builder AWS e uma reflexão: a faculdade te dá a base, mas a comunidade te dá o mapa. No artigo de hoje, falo sobre a importância de explorar áreas além da sua bolha para descobrir quem você realmente quer ser na tecnologia",
+      "url": "https://builder.aws.com/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpI2fvEcVHg7BCwll4qQz30XNE/Whats.webp",
+      "authorName": "MARIA PAULA DE CASTRO REIS",
+      "authorAlias": "sert7",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUJowI5X54UqGGsJjNQ44dLuUx.webp",
+      "location": "GO, BR",
+      "lat": -15.9323662,
+      "lng": -50.1392928,
+      "tags": [
+        "builder-center",
+        "aws-cloud-clubs",
+        "tech",
+        "network"
+      ],
+      "publishedAt": "2026-04-25T00:58:24.436Z",
+      "likesCount": 7,
+      "commentsCount": 5
+    },
+    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -316,27 +314,6 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2834,
       "commentsCount": 314
-    },
-    {
-      "id": "/content/3CitrOa7zuySmXOh9bTd51R4ghi",
-      "title": "Saúde mental na TI: por que a área ainda finge que esse problema não existe?",
-      "description": "O aprendizado em TI não precisa ser isolado: o AWS Builder Center mostra como a colaboração e a comunidade fortalecem essa jornada.",
-      "url": "https://builder.aws.com/content/3CitrOa7zuySmXOh9bTd51R4ghi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpQ0cJcpF7D1xP12LuBBygHcKL/Estu.webp",
-      "authorName": "Deborah Viana",
-      "authorAlias": "deborahx",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpNX5DWAARP9NW8HMY0YtZYvkH.webp",
-      "location": "AM, BR",
-      "lat": -4.479925,
-      "lng": -63.5185396,
-      "tags": [
-        "support",
-        "tech",
-        "aws-tech-u"
-      ],
-      "publishedAt": "2026-04-25T01:21:45.954Z",
-      "likesCount": 3,
-      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -401,8 +378,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1373,
-      "commentsCount": 319
+      "likesCount": 1375,
+      "commentsCount": 320
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
@@ -424,6 +401,27 @@
       "publishedAt": "2026-04-17T14:32:53.936Z",
       "likesCount": 1128,
       "commentsCount": 202
+    },
+    {
+      "id": "/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "title": "AIdeas Finalist: LuminaLog — Privacy-First Observability",
+      "description": "LuminaLog is a serverless, privacy-first observability platform. It features SmartScrub™, a Kinesis-driven engine that replaces PII with realistic synthetic data before storage, preserving both data privacy and debuggability. Combined with real-time WebSocket live tailing and automated Gemini 2.5 Flash error analysis, it gives startups in regulated markets enterprise-grade compliance and insights without the enterprise price tag.",
+      "url": "https://builder.aws.com/content/3Af988zLy1hRACEVFnzVuEeU5rz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTmJ8Z5NxG2NmFXBrlPTyekL9c/Gemi.webp",
+      "authorName": "Moses Michael Idiong",
+      "authorAlias": "mozman777",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AZKAiQY35hpsBxlLeu4LVQ2w6i.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "aideas-2025",
+        "EMEA",
+        "commercial-solutions"
+      ],
+      "publishedAt": "2026-04-17T20:29:18.574Z",
+      "likesCount": 497,
+      "commentsCount": 585
     }
   ]
 }
