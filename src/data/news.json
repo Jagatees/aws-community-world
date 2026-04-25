@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-04-25T17:14:36.122Z",
+  "updatedAt": "2026-04-25T18:13:56.054Z",
   "latest": [
+    {
+      "id": "/content/3CrLVsqCxVwTtoAVZlWcMnQORh0",
+      "title": "AWS Student Community Day Delhi NCR 2026: A Community-Driven Learning Experience",
+      "description": "Some of the most meaningful learning experiences don’t happen in classrooms or through structured courses. They happen in environments where people come together to share, question, and build collectively.",
+      "url": "https://builder.aws.com/content/3CrLVsqCxVwTtoAVZlWcMnQORh0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrM1ILk5qo1PC9VC7cKOPb021x/_DSC1.webp",
+      "authorName": "Utkarsh Gaur",
+      "authorAlias": "ugaurx",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ws60JnGdYjVQHJn5j7uLPzZbP7.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-community-builders",
+        "aws-community-day",
+        "aws-community-day-2026",
+        "aws-community-day-recaps-2026",
+        "aws-community-day-recaps"
+      ],
+      "publishedAt": "2026-04-25T17:45:07.825Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CqrSaSUHHNbSevBxvEV8tmUndQ",
+      "title": "AWS Well-Architected Framework - Quem Domina os Fundamentos, Avança Mais Rápido",
+      "description": "Aws well-architected framework é um manual de boas práticas e perguntas estratégicas para o planejamento de arquiteturas de nuvem assertivas e eficientes. Mas como dominar esses fundamentos podem te ajudar a evoluir mais rápido?",
+      "url": "https://builder.aws.com/content/3CqrSaSUHHNbSevBxvEV8tmUndQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrJ2nRvhtdtxyHDUR8EB9fj9rn/853d.webp",
+      "authorName": "Gabriel Gonçalves",
+      "authorAlias": "gbdev79",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C6ADPa8FEH5LXLlVPZd9tQvGYW.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "architecture",
+        "architecture-patterns",
+        "aws-well-architected",
+        "well-arch-framework"
+      ],
+      "publishedAt": "2026-04-25T17:22:36.124Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/36FmErOCnIenqE5GEuzp7MAYv5L",
       "title": "Legal",
@@ -38,8 +83,8 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-04-25T16:40:09.141Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Cfip7XkxFH4J8tgy9QtWJTHuVt",
@@ -49,7 +94,7 @@
       "imageUrl": "",
       "authorName": "Matheus David",
       "authorAlias": "matdavidbs",
-      "authorAvatarUrl": "",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CrJD5W0gIhIsaW1Y2FFBjDKfRg.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
@@ -81,8 +126,8 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-04-25T16:37:41.006Z",
-      "likesCount": 5,
-      "commentsCount": 0
+      "likesCount": 6,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CrBnwjMM1VhgVscNU96X1SJt9r",
@@ -168,48 +213,6 @@
       "publishedAt": "2026-04-25T16:04:00.910Z",
       "likesCount": 8,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cr6F1MbDPn6MQYh6MlIyX4N4cD",
-      "title": "Afinal o que é computação em nuvem?",
-      "description": "Entendendo a Nuvem: Muito Além de \"Guardar Arquivos\"",
-      "url": "https://builder.aws.com/content/3Cr6F1MbDPn6MQYh6MlIyX4N4cD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr7AMv1GPfABxB8m8YEQXnNMXx/IMG_.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "students",
-        "tech",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-25T15:55:37.391Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cr0Nlmr07j6gwviVxt813d3FhB",
-      "title": "Guia de Sobrevivência para Iniciantes no AWS Builder Center",
-      "description": "Se você está chegando agora e se sente perdido, fique tranquilo. O AWS Builder Center foi desenhado justamente para ser o seu campo de treinamento. Então, vem comigo que preparei algumas dicas para você começar com o pé direito:",
-      "url": "https://builder.aws.com/content/3Cr0Nlmr07j6gwviVxt813d3FhB",
-      "imageUrl": "",
-      "authorName": "Vitor Tinelli",
-      "authorAlias": "vitortinelli",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CAfiBOx4NKP5Jcoog9ehi1IkVB.webp",
-      "location": "SC, BR",
-      "lat": -27.0628367,
-      "lng": -51.114965,
-      "tags": [
-        "all-builders-welcome",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-25T15:50:51.143Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -230,8 +233,8 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-25T15:49:36.607Z",
-      "likesCount": 11,
-      "commentsCount": 5
+      "likesCount": 12,
+      "commentsCount": 6
     },
     {
       "id": "/content/3Cr2sP5Yc06eL0KfHDHx4dep0cV",
@@ -252,6 +255,90 @@
       ],
       "publishedAt": "2026-04-25T15:23:58.296Z",
       "likesCount": 9,
+      "commentsCount": 6
+    },
+    {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3401,
+      "commentsCount": 1908
+    },
+    {
+      "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "title": "Coragem para Começar: se envolva em novos projetos!",
+      "description": "Começar é o passo mais difícil, mas também o mais transformador. Neste artigo, compartilho como a coragem de enfrentar novos desafios moldou minha trajetória na tecnologia e por que ela pode ser o diferencial que faltava na sua também.",
+      "url": "https://builder.aws.com/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CplqZbYwiiZxKTMSmsbEWlYXBg/imag.webp",
+      "authorName": "Márcio Lopes",
+      "authorAlias": "spidermarcim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
+      "location": "AM, BR",
+      "lat": -4.479925,
+      "lng": -63.5185396,
+      "tags": [
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-25T15:50:22.827Z",
+      "likesCount": 8,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3498,
+      "commentsCount": 321
+    },
+    {
+      "id": "/content/3Cr0QOrEBLxyWlB8Y8Ez6V7egmI",
+      "title": "Se sente perdido? Como o AWS Builder Center pode acelerar a carreira de estudantes de TI",
+      "description": "Conheça a plataforma da AWS que reúne cursos gratuitos, laboratórios práticos, comunidade, artigos e recursos que ajudam estudantes de tecnologia a desenvolver habilidades reais para o mercado.",
+      "url": "https://builder.aws.com/content/3Cr0QOrEBLxyWlB8Y8Ez6V7egmI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3TunRSbXV2KDsnGLUN8g3pma/AWS-.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "workshop",
+        "soft-skills",
+        "roadmap",
+        "project",
+        "networking"
+      ],
+      "publishedAt": "2026-04-25T15:18:50.551Z",
+      "likesCount": 6,
       "commentsCount": 6
     },
     {
@@ -278,29 +365,6 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3Cr0QOrEBLxyWlB8Y8Ez6V7egmI",
-      "title": "Se sente perdido? Como o AWS Builder Center pode acelerar a carreira de estudantes de TI",
-      "description": "Conheça a plataforma da AWS que reúne cursos gratuitos, laboratórios práticos, comunidade, artigos e recursos que ajudam estudantes de tecnologia a desenvolver habilidades reais para o mercado.",
-      "url": "https://builder.aws.com/content/3Cr0QOrEBLxyWlB8Y8Ez6V7egmI",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3TunRSbXV2KDsnGLUN8g3pma/AWS-.webp",
-      "authorName": "Maria Eduarda",
-      "authorAlias": "cloudmadu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "workshop",
-        "soft-skills",
-        "roadmap",
-        "project",
-        "networking"
-      ],
-      "publishedAt": "2026-04-25T15:18:50.551Z",
-      "likesCount": 6,
-      "commentsCount": 6
-    },
-    {
       "id": "/content/3CqxWtX1hnfDt7IC2RahKBWufyU",
       "title": "Por que estudantes de TI deveriam conhecer o AWS Builder Center?",
       "description": "O AWS Builder Center reúne cursos gratuitos, laboratórios práticos, artigos da comunidade, networking e conteúdo colaborativo para ajudar estudantes a desenvolver habilidades reais em tecnologia. A plataforma conecta aprendizado, prática e comunidade em um só lugar, permitindo que iniciantes aprendam cloud computing, inteligência artificial e outras áreas da TI enquanto constroem experiência, portfólio e presença profissional desde o início da carreira.",
@@ -324,110 +388,42 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 40,
+      "commentsCount": 168
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
       "tags": [
         "aideas-2025",
         "social-impact",
-        "APJC"
+        "EMEA"
       ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3401,
-      "commentsCount": 1908
-    },
-    {
-      "id": "/content/3Cr6F1MbDPn6MQYh6MlIyX4N4cD",
-      "title": "Afinal o que é computação em nuvem?",
-      "description": "Entendendo a Nuvem: Muito Além de \"Guardar Arquivos\"",
-      "url": "https://builder.aws.com/content/3Cr6F1MbDPn6MQYh6MlIyX4N4cD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr7AMv1GPfABxB8m8YEQXnNMXx/IMG_.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "students",
-        "tech",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-25T15:55:37.391Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cr7kcFWNiJ5JVJCyyspmUP1DRC",
-      "title": "Como os sites de esportes que acompanhamos usam AWS sem que a gente perceba",
-      "description": "Descubra como os sites de esportes que acompanhamos utilizam soluções da Amazon Web Services para lidar com picos de acesso, atualizações em tempo real e distribuição global de conteúdo. Entenda, de forma prática, como serviços como Amazon EC2, Amazon S3 e Amazon CloudFront tornam essas plataformas rápidas, escaláveis e confiáveis, e como o AWS Builder Center pode ajudar estudantes a aprender tudo isso na prática.",
-      "url": "https://builder.aws.com/content/3Cr7kcFWNiJ5JVJCyyspmUP1DRC",
-      "imageUrl": "",
-      "authorName": "Kauã Ferraz Aragão",
-      "authorAlias": "k1ferraz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7mErdqoUP5X8fdY2TpWElP87h.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-cloudfront",
-        "aws-cloud9",
-        "amazon-swf",
-        "aws-in-sports",
-        "sports"
-      ],
-      "publishedAt": "2026-04-25T15:48:20.470Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3498,
-      "commentsCount": 321
-    },
-    {
-      "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
-      "title": "Coragem para Começar: se envolva em novos projetos!",
-      "description": "Começar é o passo mais difícil, mas também o mais transformador. Neste artigo, compartilho como a coragem de enfrentar novos desafios moldou minha trajetória na tecnologia e por que ela pode ser o diferencial que faltava na sua também.",
-      "url": "https://builder.aws.com/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CplqZbYwiiZxKTMSmsbEWlYXBg/imag.webp",
-      "authorName": "Márcio Lopes",
-      "authorAlias": "spidermarcim",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
-      "location": "AM, BR",
-      "lat": -4.479925,
-      "lng": -63.5185396,
-      "tags": [
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-25T15:50:22.827Z",
-      "likesCount": 6,
-      "commentsCount": 2
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2836,
+      "commentsCount": 314
     }
   ]
 }
