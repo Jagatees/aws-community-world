@@ -1,6 +1,52 @@
 {
-  "updatedAt": "2026-04-25T04:50:05.892Z",
+  "updatedAt": "2026-04-25T05:36:04.758Z",
   "latest": [
+    {
+      "id": "/content/3CprVbgo9LtkgYSvnQk7UVWcyaY",
+      "title": "Actionable Packages — paqueteAction: AWS Account Hardening Playbook",
+      "description": "paquetes en accion - paqueteAction is a CloudFormation suite designed to automate AWS hardening. Covering Identity Center, Security Hub, GuardDuty, and centralized logging, it ensures every account starts with a high security baseline. Each template is validated via cfn-lint and checkov to ensure compliance before deployment.",
+      "url": "https://builder.aws.com/content/3CprVbgo9LtkgYSvnQk7UVWcyaY",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "CR",
+      "lat": 10.2735633,
+      "lng": -84.0739102,
+      "tags": [
+        "aws-cloudformation",
+        "kiro-with-pro",
+        "ai-security",
+        "cybersecurity",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-04-25T05:06:34.714Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CjD3UsKAjPwhrPbSaeFLzHD8Eq",
+      "title": "Construindo uma carreira internacional em computação em nuvem com AWS",
+      "description": "Saiba como a computação em nuvem e a AWS estão moldando o futuro das carreiras em tecnologia e criando oportunidades no mercado global.",
+      "url": "https://builder.aws.com/content/3CjD3UsKAjPwhrPbSaeFLzHD8Eq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CprIV3TUQE7TpuCQIZxrxEM4F0/imag.webp",
+      "authorName": "Nicole Lobo",
+      "authorAlias": "devnicolelobo",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mFBivBsBjDlpUVG7P8XMKMTH.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "developer",
+        "devops",
+        "software-architecture",
+        "career",
+        "software-engineering"
+      ],
+      "publishedAt": "2026-04-25T04:59:00.961Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CpTaYLITjfjGPJvRQezHTutO4f",
       "title": "Using Kiro to Build Refined Contacts for Field Prospecting - From Raw Third-Party Vendor Data to Sales-Ready Intelligence",
@@ -19,7 +65,7 @@
         "data-strategy"
       ],
       "publishedAt": "2026-04-25T04:02:42.483Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -63,7 +109,7 @@
         "aws-academy"
       ],
       "publishedAt": "2026-04-25T03:10:38.070Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -166,50 +212,6 @@
       "publishedAt": "2026-04-25T01:21:45.954Z",
       "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
-      "title": "Não foi só sobre aprender tecnologia, Foi sobre se conectar!",
-      "description": "Minha primeira semana como Líder Estudantil Builder AWS e uma reflexão: a faculdade te dá a base, mas a comunidade te dá o mapa. No artigo de hoje, falo sobre a importância de explorar áreas além da sua bolha para descobrir quem você realmente quer ser na tecnologia",
-      "url": "https://builder.aws.com/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpI2fvEcVHg7BCwll4qQz30XNE/Whats.webp",
-      "authorName": "MARIA PAULA DE CASTRO REIS",
-      "authorAlias": "sert7",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUJowI5X54UqGGsJjNQ44dLuUx.webp",
-      "location": "GO, BR",
-      "lat": -15.9323662,
-      "lng": -50.1392928,
-      "tags": [
-        "builder-center",
-        "aws-cloud-clubs",
-        "tech",
-        "network"
-      ],
-      "publishedAt": "2026-04-25T00:58:24.436Z",
-      "likesCount": 7,
-      "commentsCount": 5
-    },
-    {
-      "id": "/content/3CpIleV3VajzlFeisbyCwPikYo8",
-      "title": "Interoperabilidade Spark: Como Criar uma Abstração Agnóstica entre AWS Glue e Databricks",
-      "description": "Gerenciar centenas de jobs Spark entre diferentes plataformas não precisa ser um pesadelo de migração. Este artigo detalha como implementar uma camada de abstração utilizando o padrão Factory para desacoplar a lógica de dados dos SDKs proprietários do AWS Glue e Databricks. Descubra como alcançar a interoperabilidade real, permitindo que o mesmo código rode de forma transparente em qualquer runtime, facilitando testes locais e otimização de custos.",
-      "url": "https://builder.aws.com/content/3CpIleV3VajzlFeisbyCwPikYo8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpKQGFJv81e6GxuIftyJGaE4q6/Gemi.webp",
-      "authorName": "Rafael Floriano Sousa Sales",
-      "authorAlias": "rfsales",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3As90rZYCCmGB3fT8CBWMhjj4wZ.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "aws-glue",
-        "apache-spark",
-        "python",
-        "big-data"
-      ],
-      "publishedAt": "2026-04-25T00:46:51.818Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -231,8 +233,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3390,
-      "commentsCount": 1899
+      "likesCount": 3392,
+      "commentsCount": 1900
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -273,6 +275,27 @@
       "commentsCount": 168
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2834,
+      "commentsCount": 314
+    },
+    {
       "id": "/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
       "title": "Não foi só sobre aprender tecnologia, Foi sobre se conectar!",
       "description": "Minha primeira semana como Líder Estudantil Builder AWS e uma reflexão: a faculdade te dá a base, mas a comunidade te dá o mapa. No artigo de hoje, falo sobre a importância de explorar áreas além da sua bolha para descobrir quem você realmente quer ser na tecnologia",
@@ -293,27 +316,6 @@
       "publishedAt": "2026-04-25T00:58:24.436Z",
       "likesCount": 7,
       "commentsCount": 5
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2834,
-      "commentsCount": 314
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
