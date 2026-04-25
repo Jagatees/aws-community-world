@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-25T19:18:11.731Z",
+  "updatedAt": "2026-04-25T20:12:04.553Z",
   "latest": [
+    {
+      "id": "/content/3CrZGYYabTILOIIUZm2JmD7qmcI",
+      "title": "Minha primeira semana com AWS: primeiras descobertas na computação em nuvem",
+      "description": "Relato da minha primeira semana no AWS Builder Center, destacando aprendizados iniciais, dificuldades e como a computação em nuvem pode impactar minha formação em Ciência da Computação.",
+      "url": "https://builder.aws.com/content/3CrZGYYabTILOIIUZm2JmD7qmcI",
+      "imageUrl": "",
+      "authorName": "Pedro Arruda",
+      "authorAlias": "pedroarruda10",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai-security",
+        "aws-builders",
+        "experience",
+        "beginner-projects",
+        "amazon-s3"
+      ],
+      "publishedAt": "2026-04-25T19:39:08.866Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
       "title": "Essa tal de nuvem... fica muito distante do chão?",
@@ -44,7 +67,7 @@
         "students"
       ],
       "publishedAt": "2026-04-25T19:07:42.013Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 1
     },
     {
@@ -65,8 +88,8 @@
         "data-protection"
       ],
       "publishedAt": "2026-04-25T19:02:13.973Z",
-      "likesCount": 5,
-      "commentsCount": 2
+      "likesCount": 7,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
@@ -88,7 +111,7 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 1
     },
     {
@@ -197,29 +220,6 @@
       "publishedAt": "2026-04-25T17:22:36.124Z",
       "likesCount": 1,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/36FmErOCnIenqE5GEuzp7MAYv5L",
-      "title": "Legal",
-      "description": "Privacy Policy and Terms of Services and Cookie Policy ",
-      "url": "https://builder.aws.com/content/36FmErOCnIenqE5GEuzp7MAYv5L",
-      "imageUrl": "",
-      "authorName": "Ferdinand Icatlo",
-      "authorAlias": "idreffz25",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BH3S1PMix4K6d3GUn5q1DLNQm1.webp",
-      "location": "IT",
-      "lat": 42.6384261,
-      "lng": 12.674297,
-      "tags": [
-        "active-directory",
-        "advanced-networking",
-        "advertising-marketing-industry",
-        "ai-managed",
-        "amazon-cloud-directory"
-      ],
-      "publishedAt": "2026-04-25T16:58:20.222Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -241,51 +241,8 @@
         "data-protection"
       ],
       "publishedAt": "2026-04-25T19:02:13.973Z",
-      "likesCount": 5,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
-      "title": "Como assim? A Manu líder estudantil da AWS?",
-      "description": "Um relato sobre minha evolução na tecnologia e como a AWS contribuiu para o meu desenvolvimento até me tornar líder estudantil.",
-      "url": "https://builder.aws.com/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr7TxtjZGhdg3yVZcNkMscNNQF/imag.webp",
-      "authorName": "Manuela Florença",
-      "authorAlias": "manuflorenca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CAXejflygEeUZ4zd0pooQ3vJrA.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-25T15:49:36.607Z",
-      "likesCount": 13,
-      "commentsCount": 6
-    },
-    {
-      "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
-      "title": "Minha primeira semana no AWS Builder Center",
-      "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
-      "url": "https://builder.aws.com/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrUlPl8fphZ0CPvxoeDyfCEmip/Arti.webp",
-      "authorName": "Luiz Corbelli",
-      "authorAlias": "luizcorbelli",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CB7iejvw3lTUebPY9EoxPjhnn9.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "security",
-        "security-best-practices",
-        "iam",
-        "IaC",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 5,
-      "commentsCount": 1
+      "likesCount": 7,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -309,27 +266,24 @@
       "commentsCount": 1908
     },
     {
-      "id": "/content/3CrVO28EulkLk4BHq7qFZ3mwAPl",
-      "title": "Começando do zero em tecnologia: minha primeira experiência com computação em nuvem",
-      "description": "Neste artigo irei contar a minha experiência e o meu primeiro contato com a computação em nuvem.",
-      "url": "https://builder.aws.com/content/3CrVO28EulkLk4BHq7qFZ3mwAPl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrVrIqfXBJIp6IWEwbMFltzuxI/IMG_1.webp",
-      "authorName": "Marcos Vinicius Simplicio",
-      "authorAlias": "mvsimplicio",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CldE58qP5oJxdZfbjXvss4YS70.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
+      "title": "Como assim? A Manu líder estudantil da AWS?",
+      "description": "Um relato sobre minha evolução na tecnologia e como a AWS contribuiu para o meu desenvolvimento até me tornar líder estudantil.",
+      "url": "https://builder.aws.com/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr7TxtjZGhdg3yVZcNkMscNNQF/imag.webp",
+      "authorName": "Manuela Florença",
+      "authorAlias": "manuflorenca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CAXejflygEeUZ4zd0pooQ3vJrA.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "experience",
-        "builder-center",
-        "aws-cloudformation",
-        "the-first-tee",
-        "students"
+        "aws-community-builders",
+        "aws-community"
       ],
-      "publishedAt": "2026-04-25T19:07:42.013Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "publishedAt": "2026-04-25T15:49:36.607Z",
+      "likesCount": 13,
+      "commentsCount": 6
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -353,6 +307,29 @@
       "commentsCount": 321
     },
     {
+      "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
+      "title": "Minha primeira semana no AWS Builder Center",
+      "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
+      "url": "https://builder.aws.com/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrUlPl8fphZ0CPvxoeDyfCEmip/Arti.webp",
+      "authorName": "Luiz Corbelli",
+      "authorAlias": "luizcorbelli",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CB7iejvw3lTUebPY9EoxPjhnn9.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "security",
+        "security-best-practices",
+        "iam",
+        "IaC",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-25T18:55:47.989Z",
+      "likesCount": 6,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3Cr2sP5Yc06eL0KfHDHx4dep0cV",
       "title": "Faculdades podem até ensinar a construir, mas a AWS ensina onde hospedar o futuro.",
       "description": "Me formando em Desenvolvimento de Sistemas pelo SENAI, no primeiro semestre de ADS na UCSAL e trabalhando com webdesign — não cheguei no AWS Builder Center como iniciante. Cheguei como alguém que sabe construir, mas que ainda não entendia o que acontece quando o que você constrói precisa escalar. Esse artigo é sobre esse gap — e como a cloud começou a preenchê-lo.",
@@ -370,8 +347,25 @@
         "career"
       ],
       "publishedAt": "2026-04-25T15:23:58.296Z",
-      "likesCount": 9,
+      "likesCount": 10,
       "commentsCount": 6
+    },
+    {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 40,
+      "commentsCount": 168
     },
     {
       "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
@@ -389,8 +383,29 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-25T15:50:22.827Z",
-      "likesCount": 8,
+      "likesCount": 9,
       "commentsCount": 5
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2836,
+      "commentsCount": 314
     },
     {
       "id": "/content/3Cr0QOrEBLxyWlB8Y8Ez6V7egmI",
@@ -412,25 +427,8 @@
         "networking"
       ],
       "publishedAt": "2026-04-25T15:18:50.551Z",
-      "likesCount": 7,
+      "likesCount": 8,
       "commentsCount": 6
-    },
-    {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 40,
-      "commentsCount": 168
     }
   ]
 }
