@@ -7,25 +7,29 @@ import TagFilter from './components/TagFilter';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 
+const SplashScreen = lazy(() => import('./components/SplashScreen'));
 const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
 const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
 
 export default function App() {
+  const [showSplash, setShowSplash] = useState(true);
+  const [splashExiting, setSplashExiting] = useState(false);
   const [activeCategory, setActiveCategory] = useState('heroes');
   const [selectedMember, setSelectedMember] = useState(null);
   const [selectedNewsItems, setSelectedNewsItems] = useState([]);
   const [selectedTag, setSelectedTag] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [darkMode, setDarkMode] = useState(true);
-  const [globeDesign, setGlobeDesign] = useState('classic');
+  const [globeDesign, setGlobeDesign] = useState('orbit');
   const [zoomCommand, setZoomCommand] = useState({ direction: null, nonce: 0 });
   const [newsPanelOpen, setNewsPanelOpen] = useState(true);
   const [flyToOverride, setFlyToOverride] = useState(null);
   const [nearMeTarget, setNearMeTarget] = useState(null);
   const [nearMeLoading, setNearMeLoading] = useState(false);
   const [nearMeError, setNearMeError] = useState(null);
+  const [nearMeHover, setNearMeHover] = useState(false);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isNewsView = activeCategory === 'news';
@@ -150,6 +154,11 @@ export default function App() {
     return design.charAt(0).toUpperCase() + design.slice(1);
   }
 
+  const handleSplashStart = useCallback(() => {
+    setSplashExiting(true);
+    setTimeout(() => setShowSplash(false), 700);
+  }, []);
+
   const handleMarkerClick = useCallback((member) => {
     setSelectedMember(member);
   }, []);
@@ -219,6 +228,7 @@ export default function App() {
   }, []);
 
   return (
+    <div style={{ height: '100dvh', overflow: 'hidden', position: 'relative' }}>
     <div
       className={`relative flex flex-col ${darkMode ? 'aws-shell-bg-dark' : 'aws-shell-bg-light'}`}
       style={{ height: '100dvh', overflow: 'hidden' }}
@@ -374,12 +384,15 @@ export default function App() {
                     <button
                       type="button"
                       onClick={handleNearMe}
-                      className="rounded-full px-4 py-1 text-xs font-semibold transition-colors"
+                      onMouseEnter={() => setNearMeHover(true)}
+                      onMouseLeave={() => setNearMeHover(false)}
+                      className="rounded-full px-4 py-1 text-xs font-semibold"
                       style={{
-                        backgroundColor: nearMeLoading ? '#53657A' : '#FF9900',
-                        color: '#0F1923',
+                        backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
+                        color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
                         minHeight: '2.1rem',
-                        border: '1px solid rgba(255,255,255,0.12)',
+                        border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
+                        transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
                       }}
                       aria-label="Near me"
                     >
@@ -582,12 +595,15 @@ export default function App() {
                   <button
                     type="button"
                     onClick={handleNearMe}
-                    className="rounded-full px-4 py-1 text-xs font-semibold transition-colors"
+                    onMouseEnter={() => setNearMeHover(true)}
+                    onMouseLeave={() => setNearMeHover(false)}
+                    className="rounded-full px-4 py-1 text-xs font-semibold"
                     style={{
-                      backgroundColor: nearMeLoading ? '#53657A' : '#FF9900',
-                      color: '#0F1923',
+                      backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
+                      color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
                       minHeight: '2.1rem',
-                      border: '1px solid rgba(255,255,255,0.12)',
+                      border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
+                      transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
                     }}
                     aria-label="Near me"
                   >
@@ -626,6 +642,13 @@ export default function App() {
           </div>
         )}
       </div>
+    </div>
+
+    {showSplash && (
+      <Suspense fallback={<div style={{ position: 'absolute', inset: 0, background: '#07111a' }} />}>
+        <SplashScreen onStart={handleSplashStart} exiting={splashExiting} />
+      </Suspense>
+    )}
     </div>
   );
 }

@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { getCountryCode, countryCodeToFlag } from '../utils/countryFlags';
 
+const MENU_WIDTH = 240;
+const VIEWPORT_GUTTER = 12;
+const MENU_HEIGHT = 300;
+
 export default function CountryDropdown({
   darkMode,
   countries,
@@ -20,9 +24,13 @@ export default function CountryDropdown({
   useEffect(() => {
     if (open && triggerRef.current) {
       const rect = triggerRef.current.getBoundingClientRect();
+      const maxLeft = Math.max(VIEWPORT_GUTTER, window.innerWidth - MENU_WIDTH - VIEWPORT_GUTTER);
+      const belowTop = rect.bottom + 6;
+      const aboveTop = rect.top - 6 - MENU_HEIGHT;
+      const fitsBelow = belowTop + MENU_HEIGHT + VIEWPORT_GUTTER <= window.innerHeight;
       setMenuPos({
-        top: rect.bottom + 6,
-        left: rect.left,
+        top: fitsBelow ? belowTop : Math.max(VIEWPORT_GUTTER, aboveTop),
+        left: Math.min(Math.max(VIEWPORT_GUTTER, rect.left), maxLeft),
       });
     }
   }, [open]);
@@ -50,14 +58,14 @@ export default function CountryDropdown({
     <ul
       ref={menuRef}
       role="listbox"
-      style={{
-        position: 'fixed',
-        top: menuPos.top,
-        left: menuPos.left,
-        zIndex: 9999,
-        minWidth: '240px',
-        maxHeight: '300px',
-        overflowY: 'auto',
+        style={{
+          position: 'fixed',
+          top: menuPos.top,
+          left: menuPos.left,
+          zIndex: 9999,
+        minWidth: `${MENU_WIDTH}px`,
+          maxHeight: `${MENU_HEIGHT}px`,
+          overflowY: 'auto',
         backgroundColor: menuBg,
         border: `1px solid ${border}`,
         borderRadius: '14px',
