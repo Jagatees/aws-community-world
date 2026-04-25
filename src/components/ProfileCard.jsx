@@ -329,7 +329,11 @@ export default function ProfileCard({ member, onClose, darkMode }) {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center"
-      style={{ backgroundColor: 'rgba(0,0,0,0.4)', zIndex: 2000 }}
+      style={{
+        backgroundColor: 'rgba(0,0,0,0.4)',
+        zIndex: 2000,
+        animation: 'backdrop-in 0.2s ease both',
+      }}
     >
       <div
         ref={cardRef}
@@ -343,6 +347,7 @@ export default function ProfileCard({ member, onClose, darkMode }) {
           boxShadow: darkMode
             ? '0 24px 60px rgba(0, 0, 0, 0.45)'
             : '0 24px 60px rgba(80, 112, 145, 0.18)',
+          animation: 'modal-in 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) both',
         }}
         role="dialog"
         aria-modal="true"

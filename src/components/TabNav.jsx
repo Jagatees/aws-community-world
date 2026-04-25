@@ -1,3 +1,4 @@
+import { useRef, useLayoutEffect, useEffect } from 'react';
 import CountryDropdown from './CountryDropdown';
 
 /** @typedef {import('../types.js').CategoryKey} CategoryKey */
@@ -37,6 +38,49 @@ export default function TabNav({
   const inactiveText = darkMode ? '#8B9BAA' : '#5a7a99';
   const divider = darkMode ? 'rgba(115, 145, 171, 0.34)' : 'rgba(134, 162, 190, 0.5)';
 
+  const navRef = useRef(null);
+  const indicatorRef = useRef(null);
+  const buttonRefs = useRef({});
+  const isFirstRender = useRef(true);
+
+  useLayoutEffect(() => {
+    const activeBtn = buttonRefs.current[activeCategory];
+    const nav = navRef.current;
+    const indicator = indicatorRef.current;
+    if (!activeBtn || !nav || !indicator) return;
+
+    const btnRect = activeBtn.getBoundingClientRect();
+    const navRect = nav.getBoundingClientRect();
+    const left = btnRect.left - navRect.left + nav.scrollLeft;
+    const width = btnRect.width;
+
+    if (isFirstRender.current) {
+      // Snap into place on first render — no animation
+      indicator.style.transition = 'none';
+      indicator.style.left = `${left}px`;
+      indicator.style.width = `${width}px`;
+      isFirstRender.current = false;
+    } else {
+      indicator.style.transition = 'left 0.28s cubic-bezier(0.4, 0, 0.2, 1), width 0.28s cubic-bezier(0.4, 0, 0.2, 1)';
+      indicator.style.left = `${left}px`;
+      indicator.style.width = `${width}px`;
+    }
+  }, [activeCategory]);
+
+  // Re-measure on darkMode change (fonts/sizes can shift)
+  useEffect(() => {
+    const activeBtn = buttonRefs.current[activeCategory];
+    const nav = navRef.current;
+    const indicator = indicatorRef.current;
+    if (!activeBtn || !nav || !indicator) return;
+
+    const btnRect = activeBtn.getBoundingClientRect();
+    const navRect = nav.getBoundingClientRect();
+    indicator.style.transition = 'none';
+    indicator.style.left = `${btnRect.left - navRect.left + nav.scrollLeft}px`;
+    indicator.style.width = `${btnRect.width}px`;
+  }, [darkMode, activeCategory]);
+
   return (
     <div
       style={{
@@ -47,15 +91,32 @@ export default function TabNav({
       }}
     >
       <nav
+        ref={navRef}
         role="tablist"
         aria-label="Community categories"
-        style={{ display: 'flex', alignItems: 'center', overflowX: 'auto', scrollbarWidth: 'none' }}
+        style={{ display: 'flex', alignItems: 'center', overflowX: 'auto', scrollbarWidth: 'none', position: 'relative' }}
       >
+        {/* Sliding indicator bar */}
+        <div
+          ref={indicatorRef}
+          aria-hidden="true"
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            height: '3px',
+            backgroundColor: '#FF9900',
+            borderRadius: '2px 2px 0 0',
+            pointerEvents: 'none',
+            boxShadow: '0 0 8px rgba(255, 153, 0, 0.55)',
+          }}
+        />
+
         {TABS.map(({ label, key }) => {
           const isActive = key === activeCategory;
           return (
             <button
               key={key}
+              ref={(el) => { buttonRefs.current[key] = el; }}
               role="tab"
               aria-selected={isActive}
               onClick={() => onChange(key)}
@@ -64,7 +125,7 @@ export default function TabNav({
                 background: isActive ? activeBg : 'transparent',
                 color: isActive ? activeText : inactiveText,
                 border: 'none',
-                borderBottom: isActive ? '3px solid #FF9900' : '3px solid transparent',
+                borderBottom: '3px solid transparent',
                 cursor: 'pointer',
                 fontSize: '14px',
                 fontWeight: isActive ? '600' : '400',
@@ -76,6 +137,7 @@ export default function TabNav({
             </button>
           );
         })}
+
         {!!countries.length && (
           <div
             style={{

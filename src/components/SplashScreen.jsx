@@ -9,34 +9,6 @@ const STATS = [
 
 const TOTAL = 3988;
 
-const GLOBE_MARKERS = [
-  { lat: 40.7128, lng: -74.006 }, { lat: 37.7749, lng: -122.4194 },
-  { lat: 47.6062, lng: -122.3321 }, { lat: 43.6532, lng: -79.3832 },
-  { lat: 19.4326, lng: -99.1332 }, { lat: 33.749, lng: -84.388 },
-  { lat: 41.8781, lng: -87.6298 }, { lat: 29.7604, lng: -95.3698 },
-  { lat: 45.5017, lng: -73.5673 }, { lat: 51.5074, lng: -0.1278 },
-  { lat: 48.8566, lng: 2.3522 }, { lat: 52.52, lng: 13.405 },
-  { lat: 41.9028, lng: 12.4964 }, { lat: 40.4168, lng: -3.7038 },
-  { lat: 52.3676, lng: 4.9041 }, { lat: 59.3293, lng: 18.0686 },
-  { lat: 48.2082, lng: 16.3738 }, { lat: 50.0755, lng: 14.4378 },
-  { lat: 53.3498, lng: -6.2603 }, { lat: 55.9533, lng: -3.1883 },
-  { lat: 47.3769, lng: 8.5417 }, { lat: 50.8503, lng: 4.3517 },
-  { lat: 60.1699, lng: 24.9384 }, { lat: 55.7558, lng: 37.6173 },
-  { lat: 35.6762, lng: 139.6503 }, { lat: 31.2304, lng: 121.4737 },
-  { lat: 22.3193, lng: 114.1694 }, { lat: 1.3521, lng: 103.8198 },
-  { lat: 28.6139, lng: 77.209 }, { lat: 12.9716, lng: 77.5946 },
-  { lat: 19.076, lng: 72.8777 }, { lat: 37.5665, lng: 126.978 },
-  { lat: 25.2048, lng: 55.2708 }, { lat: 24.774, lng: 46.7388 },
-  { lat: 3.139, lng: 101.6869 }, { lat: 13.7563, lng: 100.5018 },
-  { lat: -33.8688, lng: 151.2093 }, { lat: -37.8136, lng: 144.9631 },
-  { lat: -36.8485, lng: 174.7633 }, { lat: -23.5505, lng: -46.6333 },
-  { lat: -34.6037, lng: -58.3816 }, { lat: -12.0464, lng: -77.0428 },
-  { lat: 4.711, lng: -74.0721 }, { lat: -0.1807, lng: -78.4678 },
-  { lat: -26.2041, lng: 28.0473 }, { lat: 6.5244, lng: 3.3792 },
-  { lat: 30.0444, lng: 31.2357 }, { lat: -1.2921, lng: 36.8219 },
-  { lat: 33.9716, lng: -6.8498 }, { lat: 59.9139, lng: 10.7522 },
-];
-
 function AnimatedNumber({ target, duration = 1800, delay = 0 }) {
   const [value, setValue] = useState(0);
 
@@ -64,6 +36,29 @@ function AnimatedNumber({ target, duration = 1800, delay = 0 }) {
   return <span>{value.toLocaleString()}</span>;
 }
 
+function createAvatarElement(hero) {
+  const wrapper = document.createElement('div');
+  wrapper.style.cssText = `
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #FF9900;
+    overflow: hidden;
+    pointer-events: none;
+    background: #0d1e2e;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,153,0,0.25);
+    transform: translate(-50%, -50%);
+  `;
+  const img = document.createElement('img');
+  img.src = hero.image_url;
+  img.alt = hero.name;
+  img.draggable = false;
+  img.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;';
+  img.onerror = () => { wrapper.style.display = 'none'; };
+  wrapper.appendChild(img);
+  return wrapper;
+}
+
 function OrbitGlobe() {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
@@ -73,9 +68,18 @@ function OrbitGlobe() {
     if (!containerRef.current) return;
     const container = containerRef.current;
 
-    // Dynamic import keeps globe.gl out of the main bundle
-    import('globe.gl').then(({ default: Globe }) => {
+    // Load globe.gl and heroes data in parallel — both are separate lazy chunks
+    Promise.all([
+      import('globe.gl'),
+      import('../data/heroes.json'),
+    ]).then(([{ default: Globe }, { default: heroesRaw }]) => {
       if (!containerRef.current) return;
+
+      // Take a geographically spread sample: every 3rd hero, up to 80
+      const markers = heroesRaw
+        .filter(h => h.image_url && h.lat && h.lng && !(h.lat === 0 && h.lng === 0))
+        .filter((_, i) => i % 3 === 0)
+        .slice(0, 80);
 
       const globe = Globe()(container);
       globe
@@ -87,12 +91,12 @@ function OrbitGlobe() {
         .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
         .showGraticules(false)
         .pointOfView({ lat: 20, lng: 0, altitude: 2.2 })
-        .pointsData(GLOBE_MARKERS)
-        .pointLat('lat')
-        .pointLng('lng')
-        .pointColor(() => '#FF9900')
-        .pointAltitude(0.012)
-        .pointRadius(0.38);
+        .htmlElementsData(markers)
+        .htmlLat('lat')
+        .htmlLng('lng')
+        .htmlAltitude(0.06)
+        .htmlTransitionDuration(0)
+        .htmlElement(createAvatarElement);
 
       const controls = globe.controls();
       if (controls) {
@@ -101,6 +105,13 @@ function OrbitGlobe() {
         controls.enableRotate = false;
         controls.minDistance = globe.getGlobeRadius() * 1.01;
       }
+
+      // Keep the avatar overlay layer below app z-index
+      requestAnimationFrame(() => {
+        container.querySelectorAll('div[style*="pointer-events: none"]').forEach((el) => {
+          el.style.zIndex = '1';
+        });
+      });
 
       globeRef.current = globe;
 
@@ -125,7 +136,6 @@ function OrbitGlobe() {
         }
       });
       observer.observe(container);
-
       globeRef.current._observer = observer;
     });
 
@@ -306,7 +316,7 @@ export default function SplashScreen({ onStart, exiting }) {
         </div>
       </div>
 
-      {/* Right panel — orbit globe */}
+      {/* Right panel — orbit globe with real hero avatars */}
       <div
         className="relative flex-1"
         style={{

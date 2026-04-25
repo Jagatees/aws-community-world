@@ -32,6 +32,22 @@ function NewsCard({ item, darkMode, selected, onSelect, cardRef }) {
           onSelect?.(item);
         }
       }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = 'translateY(-3px)';
+        e.currentTarget.style.boxShadow = selected
+          ? (darkMode ? '0 0 0 3px rgba(255,153,0,0.18), 0 16px 36px rgba(0,0,0,0.32)' : '0 0 0 3px rgba(255,153,0,0.14), 0 16px 36px rgba(86,116,145,0.18)')
+          : (darkMode ? '0 16px 36px rgba(0,0,0,0.32)' : '0 16px 36px rgba(86,116,145,0.15)');
+        if (!selected) {
+          e.currentTarget.style.borderColor = darkMode ? 'rgba(255,153,0,0.4)' : 'rgba(255,153,0,0.32)';
+        }
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = '';
+        e.currentTarget.style.boxShadow = selected
+          ? (darkMode ? '0 0 0 3px rgba(255,153,0,0.18)' : '0 0 0 3px rgba(255,153,0,0.14)')
+          : 'none';
+        e.currentTarget.style.borderColor = cardBorder;
+      }}
       className="overflow-hidden rounded-2xl"
       style={{
         background: cardBg,
@@ -43,7 +59,7 @@ function NewsCard({ item, darkMode, selected, onSelect, cardRef }) {
             ? '0 0 0 3px rgba(255,153,0,0.18)'
             : '0 0 0 3px rgba(255,153,0,0.14)'
           : 'none',
-        transition: 'border-color 0.2s, box-shadow 0.2s',
+        transition: 'border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease',
         cursor: 'pointer',
       }}
     >

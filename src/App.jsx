@@ -8,6 +8,21 @@ import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 
 const SplashScreen = lazy(() => import('./components/SplashScreen'));
+
+const CATEGORY_COLORS = {
+  heroes: '#FF9900',
+  'community-builders': '#1A9C3E',
+  'user-groups': '#00A1C9',
+  'cloud-clubs': '#BF0816',
+};
+
+const CATEGORY_LABELS = {
+  heroes: 'Heroes',
+  'community-builders': 'Community Builders',
+  'user-groups': 'User Groups',
+  'cloud-clubs': 'Cloud Clubs',
+};
+
 const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
 const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
@@ -310,15 +325,17 @@ export default function App() {
                     </div>
                   )}
                 >
-                  <ActiveGlobeScene
-                    category="news"
-                    members={newsMarkers}
-                    onMarkerClick={handleNewsMarkerClick}
-                    cardOpen={selectedNewsItems.length > 0}
-                    darkMode={darkMode}
-                    flyToTarget={selectedNewsFlyTarget ?? resolvedFlyToTarget}
-                    zoomCommand={zoomCommand}
-                  />
+                  <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
+                    <ActiveGlobeScene
+                      category="news"
+                      members={newsMarkers}
+                      onMarkerClick={handleNewsMarkerClick}
+                      cardOpen={selectedNewsItems.length > 0}
+                      darkMode={darkMode}
+                      flyToTarget={selectedNewsFlyTarget ?? resolvedFlyToTarget}
+                      zoomCommand={zoomCommand}
+                    />
+                  </div>
                 </Suspense>
 
                 {/* Globe controls */}
@@ -491,16 +508,80 @@ export default function App() {
                   </div>
                 )}
               >
-                <ActiveGlobeScene
-                  category={activeCategory}
-                  members={filteredMembers}
-                  onMarkerClick={handleMarkerClick}
-                  cardOpen={!!selectedMember}
-                  darkMode={darkMode}
-                  flyToTarget={resolvedFlyToTarget}
-                  zoomCommand={zoomCommand}
-                />
+                <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
+                  <ActiveGlobeScene
+                    category={activeCategory}
+                    members={filteredMembers}
+                    onMarkerClick={handleMarkerClick}
+                    cardOpen={!!selectedMember}
+                    darkMode={darkMode}
+                    flyToTarget={resolvedFlyToTarget}
+                    zoomCommand={zoomCommand}
+                  />
+                </div>
               </Suspense>
+
+              {/* Globe HUD — live member count */}
+              <div
+                className="absolute top-4 left-4 z-20 pointer-events-none"
+                style={{
+                  background: darkMode ? 'rgba(8, 16, 24, 0.78)' : 'rgba(255, 255, 255, 0.86)',
+                  border: `1px solid ${darkMode ? 'rgba(62, 95, 123, 0.4)' : 'rgba(160, 187, 212, 0.72)'}`,
+                  borderRadius: '12px',
+                  padding: '10px 14px',
+                  backdropFilter: 'blur(14px)',
+                  WebkitBackdropFilter: 'blur(14px)',
+                  minWidth: '110px',
+                }}
+              >
+                {/* Category label with live dot */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '6px' }}>
+                  <span style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '10px', height: '10px', flexShrink: 0 }}>
+                    <span style={{
+                      position: 'absolute',
+                      width: '10px', height: '10px',
+                      borderRadius: '50%',
+                      backgroundColor: CATEGORY_COLORS[activeCategory] ?? '#FF9900',
+                      animation: 'live-ring 2s ease-out infinite',
+                    }} />
+                    <span style={{
+                      width: '8px', height: '8px',
+                      borderRadius: '50%',
+                      backgroundColor: CATEGORY_COLORS[activeCategory] ?? '#FF9900',
+                      display: 'block',
+                      position: 'relative',
+                    }} />
+                  </span>
+                  <span style={{ color: darkMode ? '#A7BDCF' : '#537190', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                    {CATEGORY_LABELS[activeCategory] ?? activeCategory}
+                  </span>
+                </div>
+
+                {/* Member count */}
+                {loading ? (
+                  <div style={{ width: '3.5rem', height: '1.8rem', borderRadius: '4px', background: darkMode ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.06)' }} />
+                ) : (
+                  <div
+                    key={filteredMembers.length}
+                    style={{
+                      color: darkMode ? '#FFFFFF' : '#0F1923',
+                      fontSize: '1.55rem',
+                      fontWeight: 900,
+                      letterSpacing: '-0.02em',
+                      lineHeight: 1,
+                      animation: 'count-pop 0.35s ease both',
+                      fontVariantNumeric: 'tabular-nums',
+                    }}
+                  >
+                    {filteredMembers.length.toLocaleString()}
+                  </div>
+                )}
+
+                {/* Sub-label */}
+                <div style={{ color: darkMode ? '#536475' : '#7a9ab8', fontSize: '0.68rem', marginTop: '3px', fontWeight: 500 }}>
+                  {selectedTag || selectedCountry ? `filtered · ${members.length.toLocaleString()} total` : 'members worldwide'}
+                </div>
+              </div>
 
               <div className="absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
                 <div className="flex items-stretch gap-3">
