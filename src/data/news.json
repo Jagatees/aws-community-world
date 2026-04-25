@@ -1,6 +1,86 @@
 {
-  "updatedAt": "2026-04-25T12:13:36.490Z",
+  "updatedAt": "2026-04-25T13:29:09.160Z",
   "latest": [
+    {
+      "id": "/content/3CqmSvs3CohltggVbua20nV3jLe",
+      "title": "Por que você deveria estar no AWS Builder Center hoje mesmo?",
+      "description": "Aprenda como utilizar o AWS Builder Center para documentar seus estudos e construir um portfólio de peso no mercado de tecnologia.",
+      "url": "https://builder.aws.com/content/3CqmSvs3CohltggVbua20nV3jLe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cqr08ryvJzi7DWgL8RusM18wbC/bann.webp",
+      "authorName": "Saimon Ruan",
+      "authorAlias": "saimonkss",
+      "authorAvatarUrl": "",
+      "location": "SE, BR",
+      "lat": -10.6743911,
+      "lng": -37.3773519,
+      "tags": [
+        "aws-ambassador",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-25T13:14:35.467Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CqjaqXDL6Y9JrNWw0w4zZoYxJz",
+      "title": "Começando o aprendizado",
+      "description": "Entendendo os primeiros passos na AWS Builder Center",
+      "url": "https://builder.aws.com/content/3CqjaqXDL6Y9JrNWw0w4zZoYxJz",
+      "imageUrl": "",
+      "authorName": "Felipe Matheus",
+      "authorAlias": "felipemgg95",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoGYP3dmL6PNpUybuOqrRx17Nn.webp",
+      "location": "BA, BR",
+      "lat": -12.285251,
+      "lng": -41.9294776,
+      "tags": [],
+      "publishedAt": "2026-04-25T13:05:39.085Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CqjZvGgF3fVqiLKWPIgA5hlz51",
+      "title": "Explorando o AWS Builder Center: um hub essencial para quem quer evoluir na nuvem",
+      "description": "Um panorama completo do AWS Builder Center como um hub de aprendizado em cloud computing, destacando sua abordagem prática, trilhas personalizadas, uso de ferramentas reais da AWS e a importância da comunidade e dos projetos para o desenvolvimento profissional.",
+      "url": "https://builder.aws.com/content/3CqjZvGgF3fVqiLKWPIgA5hlz51",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CqkWqHUeO1FxKIbnJWP35o0WH9/1002.webp",
+      "authorName": "Adailton Keven Guimarães",
+      "authorAlias": "kevinguimaraes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5zriErfFmn9DLKgK1jXMQwLzL.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "builder-center",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-25T12:37:57.778Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CqhIZ9VpPdfddhOamhDBHScC1g",
+      "title": "AWS Lambda Explained: The Event-Driven Model",
+      "description": "How AWS Lambda actually works: execution environments, cold starts, concurrency, and the security decisions that matter in production.",
+      "url": "https://builder.aws.com/content/3CqhIZ9VpPdfddhOamhDBHScC1g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CqhfYemfmolyj3A0rMGfk3II7S/cove.webp",
+      "authorName": "Rashindu Tharinda",
+      "authorAlias": "rash522",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAXrueNTFAH8WtVtH75cydfLaF.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "aws-lambda",
+        "serverless",
+        "event-driven",
+        "aws-educate",
+        "architecture"
+      ],
+      "publishedAt": "2026-04-25T12:21:38.401Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CqddIE0hsylABFZl0KrNpEB8Fc",
       "title": "Desafio Aceito: Minha primeira semana como Líder estudantil Builder AWS",
@@ -102,7 +182,7 @@
         "all-builders-welcome"
       ],
       "publishedAt": "2026-04-25T08:04:36.205Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -123,91 +203,6 @@
         "spec-drivien-development"
       ],
       "publishedAt": "2026-04-25T07:53:16.685Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cq63zc9e9FCJHBpUAwXFr2sCBn",
-      "title": "What is AWS Kiro and Why it Matters for Agentic Development",
-      "description": "Explore how AWS Kiro revolutionizes agentic development by providing high-performance networking and orchestration for autonomous AI agents on the cloud.",
-      "url": "https://builder.aws.com/content/3Cq63zc9e9FCJHBpUAwXFr2sCBn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cq68nVrQGLYLoTsVOBGRoeUb4B/cc-we.webp",
-      "authorName": "Jubin Soni",
-      "authorAlias": "jubinsoni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38YZJOEQWdxIpvKuXVOhZBUNBC0.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "kiro",
-        "agentic-ai",
-        "ai",
-        "workflows"
-      ],
-      "publishedAt": "2026-04-25T07:08:37.535Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cq1W1UWCdUCei74sNFf5gIOa8E",
-      "title": "AWS Summit Bengaluru 2026 - My Experience",
-      "description": "A personal experience of attending AWS Summit Bengaluru 2026, highlighting keynotes, networking, and the overall event experience.",
-      "url": "https://builder.aws.com/content/3Cq1W1UWCdUCei74sNFf5gIOa8E",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cq4p9RoDbngTxGnZgn52wTULdH/awss.webp",
-      "authorName": "Jyothish Nalinakshan",
-      "authorAlias": "gunner",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BYZnyURafNQc5ZgQ7gFUo3MqtJ.webp",
-      "location": "Kerala, IN",
-      "lat": 10.3528744,
-      "lng": 76.5120396,
-      "tags": [],
-      "publishedAt": "2026-04-25T06:53:38.818Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CpzQBI9WQ6XzHAzlniJscBiu6G",
-      "title": "Do Quarto para a Nuvem: O que meu Home Lab está me ensinando sobre a AWS",
-      "description": "Aprender computação em nuvem pode parecer assustador no começo. Mas e se a infraestrutura da AWS for muito parecida com o computador que você usa no seu próprio quarto? Neste artigo, de estudante para estudante, faço um paralelo prático entre os desafios do meu Home Lab caseiro e os serviços da nuvem. Descubra como EC2, VPC, S3 e ECS funcionam na prática e aprenda a tirar seus projetos do \"localhost\"!",
-      "url": "https://builder.aws.com/content/3CpzQBI9WQ6XzHAzlniJscBiu6G",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpzZ3JfRJP4nN015s4Psw2BJsa/Yell.webp",
-      "authorName": "Luizlfc-dev",
-      "authorAlias": "luizlfcdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBrqOXXYiLW3ftSKze2LxQ9tpp.webp",
-      "location": "PB, BR",
-      "lat": -7.1219366,
-      "lng": -36.7246845,
-      "tags": [
-        "personal-expression",
-        "experience",
-        "aws-cloud-development-kit",
-        "amazon-s3",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-04-25T06:16:27.062Z",
-      "likesCount": 4,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CprVbgo9LtkgYSvnQk7UVWcyaY",
-      "title": "Actionable Packages — paqueteAction: AWS Account Hardening Playbook",
-      "description": "paquetes en accion - paqueteAction is a CloudFormation suite designed to automate AWS hardening. Covering Identity Center, Security Hub, GuardDuty, and centralized logging, it ensures every account starts with a high security baseline. Each template is validated via cfn-lint and checkov to ensure compliance before deployment.",
-      "url": "https://builder.aws.com/content/3CprVbgo9LtkgYSvnQk7UVWcyaY",
-      "imageUrl": "",
-      "authorName": "Exegol",
-      "authorAlias": "luiszuniga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
-      "location": "CR",
-      "lat": 10.2735633,
-      "lng": -84.0739102,
-      "tags": [
-        "aws-cloudformation",
-        "kiro-with-pro",
-        "ai-security",
-        "cybersecurity",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-04-25T05:06:34.714Z",
       "likesCount": 1,
       "commentsCount": 0
     }
@@ -269,7 +264,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 39,
+      "likesCount": 40,
       "commentsCount": 168
     },
     {
@@ -356,7 +351,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1379,
+      "likesCount": 1380,
       "commentsCount": 322
     },
     {
@@ -381,6 +376,29 @@
       "commentsCount": 202
     },
     {
+      "id": "/content/3CpzQBI9WQ6XzHAzlniJscBiu6G",
+      "title": "Do Quarto para a Nuvem: O que meu Home Lab está me ensinando sobre a AWS",
+      "description": "Aprender computação em nuvem pode parecer assustador no começo. Mas e se a infraestrutura da AWS for muito parecida com o computador que você usa no seu próprio quarto? Neste artigo, de estudante para estudante, faço um paralelo prático entre os desafios do meu Home Lab caseiro e os serviços da nuvem. Descubra como EC2, VPC, S3 e ECS funcionam na prática e aprenda a tirar seus projetos do \"localhost\"!",
+      "url": "https://builder.aws.com/content/3CpzQBI9WQ6XzHAzlniJscBiu6G",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CpzZ3JfRJP4nN015s4Psw2BJsa/Yell.webp",
+      "authorName": "Luizlfc-dev",
+      "authorAlias": "luizlfcdev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBrqOXXYiLW3ftSKze2LxQ9tpp.webp",
+      "location": "PB, BR",
+      "lat": -7.1219366,
+      "lng": -36.7246845,
+      "tags": [
+        "personal-expression",
+        "experience",
+        "aws-cloud-development-kit",
+        "amazon-s3",
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-04-25T06:16:27.062Z",
+      "likesCount": 5,
+      "commentsCount": 3
+    },
+    {
       "id": "/content/3CpDgd8xT0YB2Z2y8oLF2koCzBs",
       "title": "Não foi só sobre aprender tecnologia, Foi sobre se conectar!",
       "description": "Minha primeira semana como Líder Estudantil Builder AWS e uma reflexão: a faculdade te dá a base, mas a comunidade te dá o mapa. No artigo de hoje, falo sobre a importância de explorar áreas além da sua bolha para descobrir quem você realmente quer ser na tecnologia",
@@ -399,29 +417,8 @@
         "network"
       ],
       "publishedAt": "2026-04-25T00:58:24.436Z",
-      "likesCount": 7,
+      "likesCount": 8,
       "commentsCount": 5
-    },
-    {
-      "id": "/content/3Af988zLy1hRACEVFnzVuEeU5rz",
-      "title": "AIdeas Finalist: LuminaLog — Privacy-First Observability",
-      "description": "LuminaLog is a serverless, privacy-first observability platform. It features SmartScrub™, a Kinesis-driven engine that replaces PII with realistic synthetic data before storage, preserving both data privacy and debuggability. Combined with real-time WebSocket live tailing and automated Gemini 2.5 Flash error analysis, it gives startups in regulated markets enterprise-grade compliance and insights without the enterprise price tag.",
-      "url": "https://builder.aws.com/content/3Af988zLy1hRACEVFnzVuEeU5rz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CTmJ8Z5NxG2NmFXBrlPTyekL9c/Gemi.webp",
-      "authorName": "Moses Michael Idiong",
-      "authorAlias": "mozman777",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AZKAiQY35hpsBxlLeu4LVQ2w6i.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "aideas-2025",
-        "EMEA",
-        "commercial-solutions"
-      ],
-      "publishedAt": "2026-04-17T20:29:18.574Z",
-      "likesCount": 497,
-      "commentsCount": 585
     }
   ]
 }
