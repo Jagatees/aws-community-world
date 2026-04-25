@@ -1,6 +1,66 @@
 {
-  "updatedAt": "2026-04-25T11:16:20.209Z",
+  "updatedAt": "2026-04-25T12:13:36.490Z",
   "latest": [
+    {
+      "id": "/content/3CqddIE0hsylABFZl0KrNpEB8Fc",
+      "title": "Desafio Aceito: Minha primeira semana como Líder estudantil Builder AWS",
+      "description": "Um resuminho de como foi Essa primeira semana como Líder estudantil Builder AWS",
+      "url": "https://builder.aws.com/content/3CqddIE0hsylABFZl0KrNpEB8Fc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CqhXBgsjk8X0u6PvfzwqrFTxRt/Bann.webp",
+      "authorName": "Adriano Praxedes",
+      "authorAlias": "adrianopraxedes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CcrQetz4CcVto3jVA9iPv6HSkK.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-25T12:11:10.953Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cqd1TfvYK47iacLUJXv4X3vKzX",
+      "title": "O Liso Aprende AWS: Free Tier, LocalStack e Comunidade\"",
+      "description": "Tá duro? Dorme, mas também aprende AWS. Dá uma lida aí, que eu te dou o caminho das pedras.",
+      "url": "https://builder.aws.com/content/3Cqd1TfvYK47iacLUJXv4X3vKzX",
+      "imageUrl": "",
+      "authorName": "Hyan Costa Schibelsky",
+      "authorAlias": "hyansky",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "free-tier-projects",
+        "documentation",
+        "aws-skill-builder"
+      ],
+      "publishedAt": "2026-04-25T11:47:35.955Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cq57yZN8hoPrnmgHQps8ZTHDi3",
+      "title": "How I Built a Serverless Cloud Resume using AWS S3, CloudFront, Lambda, and DynamoDB",
+      "description": "A step-by-step breakdown of my journey building a highly available, serverless resume website. Learn how I combined AWS frontend and backend services to create a cost-effective professional portfolio.",
+      "url": "https://builder.aws.com/content/3Cq57yZN8hoPrnmgHQps8ZTHDi3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CqbO0tYPQdbyTRvGDIfO8aOquf/diag.webp",
+      "authorName": "Ridham pokiya",
+      "authorAlias": "ridhampokiya10",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "serverless",
+        "architecture",
+        "web-development",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-04-25T11:20:52.998Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CdKgqAQsczamH1cJjuXFofqF5u",
       "title": "Começando na AWS: o que ninguém me explicou (de forma simples)",
@@ -21,7 +81,7 @@
         "experience"
       ],
       "publishedAt": "2026-04-25T08:35:05.264Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -125,8 +185,8 @@
         "amazon-ec2"
       ],
       "publishedAt": "2026-04-25T06:16:27.062Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "likesCount": 4,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CprVbgo9LtkgYSvnQk7UVWcyaY",
@@ -149,71 +209,6 @@
       ],
       "publishedAt": "2026-04-25T05:06:34.714Z",
       "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CjD3UsKAjPwhrPbSaeFLzHD8Eq",
-      "title": "Construindo uma carreira internacional em computação em nuvem com AWS",
-      "description": "Saiba como a computação em nuvem e a AWS estão moldando o futuro das carreiras em tecnologia e criando oportunidades no mercado global.",
-      "url": "https://builder.aws.com/content/3CjD3UsKAjPwhrPbSaeFLzHD8Eq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CprIV3TUQE7TpuCQIZxrxEM4F0/imag.webp",
-      "authorName": "Nicole Lobo",
-      "authorAlias": "devnicolelobo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mFBivBsBjDlpUVG7P8XMKMTH.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "developer",
-        "devops",
-        "software-architecture",
-        "career",
-        "software-engineering"
-      ],
-      "publishedAt": "2026-04-25T04:59:00.961Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CpTaYLITjfjGPJvRQezHTutO4f",
-      "title": "Using Kiro to Build Refined Contacts for Field Prospecting - From Raw Third-Party Vendor Data to Sales-Ready Intelligence",
-      "description": "This article explores how Kiro, AWS's spec-driven agentic IDE that can be used as a field enablement tool to automate the refinement of large third-party vendor datafeeds into accurate, compliant, sales-ready contact intelligence in under two minutes per batch.",
-      "url": "https://builder.aws.com/content/3CpTaYLITjfjGPJvRQezHTutO4f",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cpw9tElPI9WMLY7D4ydBgSkOIP/kiro.webp",
-      "authorName": "Bhanuja",
-      "authorAlias": "nagoreb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpRUdh9LtHxWYAZjxEvVvld0lx.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "kiro-agent",
-        "data-strategy"
-      ],
-      "publishedAt": "2026-04-25T04:02:42.483Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cpamxp3Fdin8dq3XKdMT3U8Dh1",
-      "title": "Como o AWS Builder Center pode impactar no meu desenvolvimento?",
-      "description": "Descubra como a participação em ligas acadêmicas, hackathons e programas de liderança em conjunto com a AWS Builder Center pode acelerar sua maturidade profissional e facilitar a transição entre a universidade e o mercado de tecnologia",
-      "url": "https://builder.aws.com/content/3Cpamxp3Fdin8dq3XKdMT3U8Dh1",
-      "imageUrl": "",
-      "authorName": "Ana Carolina de Jesus Pacheco da Silva",
-      "authorAlias": "analina",
-      "authorAvatarUrl": "",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "self-development",
-        "soft-skills",
-        "career"
-      ],
-      "publishedAt": "2026-04-25T03:36:09.337Z",
-      "likesCount": 0,
       "commentsCount": 0
     }
   ],
