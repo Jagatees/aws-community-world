@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-04-26T03:04:52.750Z",
+  "updatedAt": "2026-04-26T05:02:50.043Z",
   "latest": [
+    {
+      "id": "/content/3CsdxhB7GMFhpCZXr0wD9iKO7Q2",
+      "title": "Stop Overloading Context: Design Agent Capabilities the Right Way with Kiro",
+      "description": "Design Steering, Skills, Kiro Powers, MCP with KIRO",
+      "url": "https://builder.aws.com/content/3CsdxhB7GMFhpCZXr0wD9iKO7Q2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CseCq6kIUKRUiLQ1qM7bvV0ctt/Chat.webp",
+      "authorName": "Manoj Kumar S",
+      "authorAlias": "manoj2690",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "agentic-ide",
+        "kiro-agent",
+        "ai",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-26T04:44:09.211Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CeKsarJlwg5GdOwFqC2CxYLeIp",
+      "title": "How to Build an Amazon Bedrock Knowledge Base with S3 Vectors Using CDK TypeScript",
+      "description": "Learn how to deploy an Amazon Bedrock Knowledge Base backed by S3 Vectors using CDK TypeScript. This walkthrough covers the full stack IAM roles, vector index configuration, chunking strategy, and live retrieval testing with Amazon Nova Pro.",
+      "url": "https://builder.aws.com/content/3CeKsarJlwg5GdOwFqC2CxYLeIp",
+      "imageUrl": "",
+      "authorName": "TC",
+      "authorAlias": "tafadc",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CeKpBnnoRLQCb7kKw2nbIQkBcD.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "amazon-s3-vectors",
+        "amazon-s3",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-26T04:04:29.880Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CsNpYfG793kIJ6x40rViI4tQyp",
       "title": "Minha semana aprendendo AWS do zero: IAM, S3 e meu primeiro vídeo",
@@ -15,7 +60,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-04-26T02:46:05.457Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -36,8 +81,8 @@
         "storage"
       ],
       "publishedAt": "2026-04-26T02:45:34.009Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Crmm6ZfZGIbm1AgyBJFaHGRHiO",
@@ -57,7 +102,7 @@
         "amazon-ecs"
       ],
       "publishedAt": "2026-04-26T02:39:30.020Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -103,7 +148,7 @@
         "community"
       ],
       "publishedAt": "2026-04-26T01:56:31.953Z",
-      "likesCount": 4,
+      "likesCount": 3,
       "commentsCount": 2
     },
     {
@@ -125,7 +170,7 @@
         "cloud-security"
       ],
       "publishedAt": "2026-04-26T00:51:05.530Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 2
     },
     {
@@ -167,55 +212,30 @@
       "publishedAt": "2026-04-26T00:28:15.044Z",
       "likesCount": 6,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3CivF6cWERVJMcL00sLVCyn2o1B",
-      "title": "Iniciando em Cloud da melhor forma possível, me tornando Líder Estudantil Builder AWS!",
-      "description": "Uma breve apresentação sobre mim e o que eu espero alcançar fazendo parte do Programa de Líderes Estudantis AWS.",
-      "url": "https://builder.aws.com/content/3CivF6cWERVJMcL00sLVCyn2o1B",
-      "imageUrl": "",
-      "authorName": "Taylanne Mendes",
-      "authorAlias": "taylannw",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs0rWxKpx7GkLLjSlnesF8C5lQ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community",
-        "aws-community-builders",
-        "all-builders-welcome",
-        "self-development",
-        "portuguese"
-      ],
-      "publishedAt": "2026-04-26T00:18:19.292Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cs3ts7l8cY6fqKDRBi36FFqelv",
-      "title": "O Elo Perdido: Como a nuvem uniu minha graduação e minha carreira",
-      "description": "Entenda como a Amazon Web Services preencheu a lacuna entre minha jornada acadêmica e o desenvolvimento de soluções reais. Venha aprender a explorar o AWS Builder Center para construir o próximo capítulo da sua carreira com recursos exclusivos para estudantes.",
-      "url": "https://builder.aws.com/content/3Cs3ts7l8cY6fqKDRBi36FFqelv",
-      "imageUrl": "",
-      "authorName": "Matheus Fonseca",
-      "authorAlias": "mfalmeida",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7VBStjQoTuCQZrjHCw40gAriC.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "ai-assisted",
-        "students",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-26T00:10:06.159Z",
-      "likesCount": 5,
-      "commentsCount": 1
     }
   ],
   "trending": [
+    {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3401,
+      "commentsCount": 1908
+    },
     {
       "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
       "title": "Minha primeira semana no AWS Builder Center",
@@ -240,67 +260,27 @@
       "commentsCount": 16
     },
     {
-      "id": "/content/3CsDzRXeuVoCNGduOpPQSxAqahf",
-      "title": "Como é ser AWS Cloud Club Captain e AWS Builder Student Leader na faculdade",
-      "description": "Uma reflexão sobre como tem sido representar a AWS na universidade de duas formas diferentes, conciliando comunidade, liderança, comunicação e propósito.",
-      "url": "https://builder.aws.com/content/3CsDzRXeuVoCNGduOpPQSxAqahf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CsEty6jnIHLjxzBk6x7i7lIrBU/Co-p.webp",
-      "authorName": "Marcos Menezes",
-      "authorAlias": "marcosmenezes",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRunHKE2Aj4UUm8FzNcUycw6XZ.webp",
-      "location": "BA, BR",
-      "lat": -12.285251,
-      "lng": -41.9294776,
-      "tags": [
-        "aws-cloud-clubs",
-        "students",
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-04-26T01:56:31.953Z",
-      "likesCount": 4,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
+      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "title": "Essa tal de nuvem... fica muito distante do chão?",
+      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
+      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
+      "authorName": "Amanda Y.",
+      "authorAlias": "yuminhercodedays",
       "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3401,
-      "commentsCount": 1908
-    },
-    {
-      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
-      "description": "Facilidade",
-      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
-      "authorName": "Aslan White",
-      "authorAlias": "luizarthur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "ai-engineering"
+        "aws-builders",
+        "aspiring-builders",
+        "architecture",
+        "cloud-adoption-framework",
+        "tips"
       ],
-      "publishedAt": "2026-04-26T00:28:15.044Z",
-      "likesCount": 6,
-      "commentsCount": 3
+      "publishedAt": "2026-04-25T19:08:26.188Z",
+      "likesCount": 18,
+      "commentsCount": 18
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -322,71 +302,6 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3498,
       "commentsCount": 321
-    },
-    {
-      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "title": "Essa tal de nuvem... fica muito distante do chão?",
-      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
-      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
-      "authorName": "Amanda Y.",
-      "authorAlias": "yuminhercodedays",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aspiring-builders",
-        "architecture",
-        "cloud-adoption-framework",
-        "tips"
-      ],
-      "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 17,
-      "commentsCount": 9
-    },
-    {
-      "id": "/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
-      "title": "Do interior do Amazonas ao AWS Builder Center: como a tecnologia transformou minha vida.",
-      "description": "Quando eu era estudante no IFAM, no município de Eirunepe — uma cidade a mais de 1.100 km de Manaus, no coração do Amazonas — eu não imaginava que um dia estaria escrevendo um artigo sobre liderança e tecnologia em nuvem para uma plataforma global da AWS.\nMas foi exatamente lá, naquele interior que muita gente nunca ouviu falar, que tudo começou.",
-      "url": "https://builder.aws.com/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CsCQ4Q5pLY1V5mOotcDlUn407h/IMG-.webp",
-      "authorName": "LUANA PINHEIRO",
-      "authorAlias": "lupinheiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-academy",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-26T00:03:55.775Z",
-      "likesCount": 5,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3Cs36151uCixMrEpIlICKbLs5Lv",
-      "title": "Minha primeira semana como AWS Student Builder Leader — e por que isso importa pra mim",
-      "description": "Minha primeira semana como AWS Student Builder",
-      "url": "https://builder.aws.com/content/3Cs36151uCixMrEpIlICKbLs5Lv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs4iKHDKpRt6YtcqkLDTEs4mCt/APRE.webp",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "all-builders-welcome",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-25T23:53:14.492Z",
-      "likesCount": 7,
-      "commentsCount": 2
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -425,6 +340,85 @@
       "publishedAt": "2026-04-22T00:31:45.195Z",
       "likesCount": 40,
       "commentsCount": 168
+    },
+    {
+      "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "title": "Coragem para Começar: se envolva em novos projetos!",
+      "description": "Começar é o passo mais difícil, mas também o mais transformador. Neste artigo, compartilho como a coragem de enfrentar novos desafios moldou minha trajetória na tecnologia e por que ela pode ser o diferencial que faltava na sua também.",
+      "url": "https://builder.aws.com/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CplqZbYwiiZxKTMSmsbEWlYXBg/imag.webp",
+      "authorName": "Márcio Lopes",
+      "authorAlias": "spidermarcim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
+      "location": "AM, BR",
+      "lat": -4.479925,
+      "lng": -63.5185396,
+      "tags": [
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-25T15:50:22.827Z",
+      "likesCount": 17,
+      "commentsCount": 11
+    },
+    {
+      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
+      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
+      "description": "Facilidade",
+      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
+      "authorName": "Aslan White",
+      "authorAlias": "luizarthur",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai-engineering"
+      ],
+      "publishedAt": "2026-04-26T00:28:15.044Z",
+      "likesCount": 6,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
+      "title": "Do interior do Amazonas ao AWS Builder Center: como a tecnologia transformou minha vida.",
+      "description": "Quando eu era estudante no IFAM, no município de Eirunepe — uma cidade a mais de 1.100 km de Manaus, no coração do Amazonas — eu não imaginava que um dia estaria escrevendo um artigo sobre liderança e tecnologia em nuvem para uma plataforma global da AWS.\nMas foi exatamente lá, naquele interior que muita gente nunca ouviu falar, que tudo começou.",
+      "url": "https://builder.aws.com/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CsCQ4Q5pLY1V5mOotcDlUn407h/IMG-.webp",
+      "authorName": "LUANA PINHEIRO",
+      "authorAlias": "lupinheiro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-academy",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-26T00:03:55.775Z",
+      "likesCount": 5,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
+      "title": "Como assim? A Manu líder estudantil da AWS?",
+      "description": "Um relato sobre minha evolução na tecnologia e como a AWS contribuiu para o meu desenvolvimento até me tornar líder estudantil.",
+      "url": "https://builder.aws.com/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr7TxtjZGhdg3yVZcNkMscNNQF/imag.webp",
+      "authorName": "Manuela Florença",
+      "authorAlias": "manuflorenca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CAXejflygEeUZ4zd0pooQ3vJrA.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-community-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-25T15:49:36.607Z",
+      "likesCount": 15,
+      "commentsCount": 9
     }
   ]
 }
