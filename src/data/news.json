@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-26T06:38:20.863Z",
+  "updatedAt": "2026-04-26T07:32:40.405Z",
   "latest": [
+    {
+      "id": "/content/3CswHVhuOCyp5x6DD6MsxHk91u9",
+      "title": "Building a High-Performance Serverless URL Shortener with AWS",
+      "description": "A step-by-step guide to creating a scalable, cost-effective URL shortener using AWS Lambda, DynamoDB, and API Gateway. Learn to architect essential backend services.",
+      "url": "https://builder.aws.com/content/3CswHVhuOCyp5x6DD6MsxHk91u9",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CswdNKSo5CcsruiCgYrmtysZFi/Gemi.webp",
+      "authorName": "Ridham pokiya",
+      "authorAlias": "ridhampokiya10",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-lambda",
+        "amazon-dynamodb",
+        "serverless",
+        "api-gateway",
+        "architecture"
+      ],
+      "publishedAt": "2026-04-26T07:16:36.591Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Csl878Puc5EuMxPb7JP0T8aK4J",
       "title": "Remote Kiro: A Serverless Control Plane for Kiro",
@@ -189,27 +212,6 @@
       "publishedAt": "2026-04-26T00:51:05.530Z",
       "likesCount": 4,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cs7ufPYBaWVSnou0aNdPhiwdrv",
-      "title": "Do Zero à Nuvem: Como o AWS Builder Center virou minha principal ferramenta de estudo",
-      "description": "Minha trajetória até o AWS Builder",
-      "url": "https://builder.aws.com/content/3Cs7ufPYBaWVSnou0aNdPhiwdrv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs9iRjViEMdyqbehnt9THaxxNV/Whats.webp",
-      "authorName": "Leandro Ronchi",
-      "authorAlias": "khufra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8yn70ntW2xHvaKBBSoNKW9HeW.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "students",
-        "aws-restart",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-26T00:39:58.508Z",
-      "likesCount": 4,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -231,8 +233,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3401,
-      "commentsCount": 1908
+      "likesCount": 3403,
+      "commentsCount": 1910
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -402,23 +404,27 @@
       "commentsCount": 9
     },
     {
-      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
-      "description": "Facilidade",
-      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
-      "authorName": "Aslan White",
-      "authorAlias": "luizarthur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
+      "id": "/content/3CqxWtX1hnfDt7IC2RahKBWufyU",
+      "title": "Por que estudantes de TI deveriam conhecer o AWS Builder Center?",
+      "description": "O AWS Builder Center reúne cursos gratuitos, laboratórios práticos, artigos da comunidade, networking e conteúdo colaborativo para ajudar estudantes a desenvolver habilidades reais em tecnologia. A plataforma conecta aprendizado, prática e comunidade em um só lugar, permitindo que iniciantes aprendam cloud computing, inteligência artificial e outras áreas da TI enquanto constroem experiência, portfólio e presença profissional desde o início da carreira.",
+      "url": "https://builder.aws.com/content/3CqxWtX1hnfDt7IC2RahKBWufyU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr0lem4T7z6BdzcFKg6I8c6e2L/rede.webp",
+      "authorName": "Gabriel Araújo dos Santos Pereira",
+      "authorAlias": "gabrielaraujoaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr6BNcfP2ciODj4v29aM3ZsTuU.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "ai-engineering"
+        "students",
+        "training",
+        "networking",
+        "soft-skills",
+        "roadmap"
       ],
-      "publishedAt": "2026-04-26T00:28:15.044Z",
-      "likesCount": 6,
-      "commentsCount": 3
+      "publishedAt": "2026-04-25T15:27:56.862Z",
+      "likesCount": 11,
+      "commentsCount": 8
     }
   ]
 }
