@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-26T15:15:43.959Z",
+  "updatedAt": "2026-04-26T16:13:54.557Z",
   "latest": [
+    {
+      "id": "/content/3CtxUEjict5O0EFgAiBi7bRF6g4",
+      "title": "Orchestrating agentic workflows with AWS Lambda durable functions",
+      "description": "Build fault-tolerant agentic workflows with AWS Lambda durable functions. Checkpoint LLM results to avoid duplicate costs on retry, suspend for human review at zero compute cost, and fan out to parallel agents with independent checkpointing - all as sequential code in a Lambda function.",
+      "url": "https://builder.aws.com/content/3CtxUEjict5O0EFgAiBi7bRF6g4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CtxlfNEY3d16tTqzMQwnnpoTtX/Scre.webp",
+      "authorName": "Rohan Mehta",
+      "authorAlias": "merohan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37OOopLHdgxbn8PF9hJcezik3r7.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-26T15:55:22.396Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CtosQvLsSaJ4E5C623wZddI27l",
       "title": "Fine-Tuning vs RAG on AWS: How to Choose",
@@ -334,50 +351,6 @@
       "publishedAt": "2026-04-26T00:18:19.292Z",
       "likesCount": 2,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cs3ts7l8cY6fqKDRBi36FFqelv",
-      "title": "O Elo Perdido: Como a nuvem uniu minha graduação e minha carreira",
-      "description": "Entenda como a Amazon Web Services preencheu a lacuna entre minha jornada acadêmica e o desenvolvimento de soluções reais. Venha aprender a explorar o AWS Builder Center para construir o próximo capítulo da sua carreira com recursos exclusivos para estudantes.",
-      "url": "https://builder.aws.com/content/3Cs3ts7l8cY6fqKDRBi36FFqelv",
-      "imageUrl": "",
-      "authorName": "Matheus Fonseca",
-      "authorAlias": "mfalmeida",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7VBStjQoTuCQZrjHCw40gAriC.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "ai-assisted",
-        "students",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-26T00:10:06.159Z",
-      "likesCount": 5,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
-      "title": "Do interior do Amazonas ao AWS Builder Center: como a tecnologia transformou minha vida.",
-      "description": "Quando eu era estudante no IFAM, no município de Eirunepe — uma cidade a mais de 1.100 km de Manaus, no coração do Amazonas — eu não imaginava que um dia estaria escrevendo um artigo sobre liderança e tecnologia em nuvem para uma plataforma global da AWS.\nMas foi exatamente lá, naquele interior que muita gente nunca ouviu falar, que tudo começou.",
-      "url": "https://builder.aws.com/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CsCQ4Q5pLY1V5mOotcDlUn407h/IMG-.webp",
-      "authorName": "LUANA PINHEIRO",
-      "authorAlias": "lupinheiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-academy",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-26T00:03:55.775Z",
-      "likesCount": 5,
-      "commentsCount": 4
     }
   ],
   "trending": [
@@ -481,8 +454,8 @@
         "tips"
       ],
       "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 20,
-      "commentsCount": 18
+      "likesCount": 21,
+      "commentsCount": 19
     },
     {
       "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
@@ -568,7 +541,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1396,
+      "likesCount": 1398,
       "commentsCount": 323
     },
     {
