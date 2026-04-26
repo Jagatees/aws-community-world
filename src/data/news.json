@@ -1,6 +1,49 @@
 {
-  "updatedAt": "2026-04-26T00:28:45.309Z",
+  "updatedAt": "2026-04-26T01:34:49.683Z",
   "latest": [
+    {
+      "id": "/content/3Cp8S7Qe80qxSSSZTt1SRdLyEC6",
+      "title": "Patrones de acceso seguro a S3 🌐",
+      "description": "Este análisis se propone clarificar algunos casos de uso donde se requiere servir contenido de S3 de manera segura, identificando las brechas de seguridad a las que debemos enfrentarnos y explorar posibles mejoras. El desafío real no está en analizar cada servicio por separado, sino en combinarlos correctamente.",
+      "url": "https://builder.aws.com/content/3Cp8S7Qe80qxSSSZTt1SRdLyEC6",
+      "imageUrl": "",
+      "authorName": "Laura Lorena Bolaños",
+      "authorAlias": "reinalau",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArxGdg16CQ5zjRp0lniE3ULgUM.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "amazon-s3",
+        "serverless",
+        "amazon-cloudfront",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-04-26T00:51:05.530Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3Cs7ufPYBaWVSnou0aNdPhiwdrv",
+      "title": "Do Zero à Nuvem: Como o AWS Builder Center virou minha principal ferramenta de estudo",
+      "description": "Minha trajetória até o AWS Builder",
+      "url": "https://builder.aws.com/content/3Cs7ufPYBaWVSnou0aNdPhiwdrv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs9iRjViEMdyqbehnt9THaxxNV/Whats.webp",
+      "authorName": "Leandro Ronchi",
+      "authorAlias": "khufra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8yn70ntW2xHvaKBBSoNKW9HeW.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "students",
+        "aws-restart",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-26T00:39:58.508Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
       "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
@@ -17,8 +60,8 @@
         "ai-engineering"
       ],
       "publishedAt": "2026-04-26T00:28:15.044Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 6,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CivF6cWERVJMcL00sLVCyn2o1B",
@@ -40,8 +83,8 @@
         "portuguese"
       ],
       "publishedAt": "2026-04-26T00:18:19.292Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 2,
+      "commentsCount": 2
     },
     {
       "id": "/content/3Cs3ts7l8cY6fqKDRBi36FFqelv",
@@ -63,15 +106,15 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-26T00:10:06.159Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "likesCount": 4,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
-      "title": "Do interior do Amanazonas ao AWS Builder Center: como a tecnologia transformou minha vida.",
+      "title": "Do interior do Amazonas ao AWS Builder Center: como a tecnologia transformou minha vida.",
       "description": "Quando eu era estudante no IFAM, no município de Eirunepe — uma cidade a mais de 1.100 km de Manaus, no coração do Amazonas — eu não imaginava que um dia estaria escrevendo um artigo sobre liderança e tecnologia em nuvem para uma plataforma global da AWS.\nMas foi exatamente lá, naquele interior que muita gente nunca ouviu falar, que tudo começou.",
       "url": "https://builder.aws.com/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
-      "imageUrl": "",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CsCQ4Q5pLY1V5mOotcDlUn407h/IMG-.webp",
       "authorName": "LUANA PINHEIRO",
       "authorAlias": "lupinheiro",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
@@ -84,8 +127,8 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-04-26T00:03:55.775Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 5,
+      "commentsCount": 4
     },
     {
       "id": "/content/3Cs36151uCixMrEpIlICKbLs5Lv",
@@ -105,8 +148,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-25T23:53:14.492Z",
-      "likesCount": 5,
-      "commentsCount": 1
+      "likesCount": 7,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CrjEXFmP4ylt9pGPqFwOu01EX5",
@@ -125,7 +168,7 @@
         "network"
       ],
       "publishedAt": "2026-04-25T23:45:22.366Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 3
     },
     {
@@ -144,7 +187,7 @@
         "startups"
       ],
       "publishedAt": "2026-04-25T23:37:30.778Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 2
     },
     {
@@ -169,50 +212,6 @@
       "publishedAt": "2026-04-25T23:29:55.358Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CrwfCav2Ox8HEuUBBIPhf1r0Bg",
-      "title": "Começando na Nuvem: O Guia Prático do AWS Builder Center para Estudantes",
-      "description": "Descubra como navegar na plataforma com confiança, acessando cursos gratuitos e garantindo o controle total de seus custos. Um roteiro essencial para transformar sua curiosidade em experiência real.",
-      "url": "https://builder.aws.com/content/3CrwfCav2Ox8HEuUBBIPhf1r0Bg",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrygEcz5LZQlwefFcbn5iZ6PCb/aws-.webp",
-      "authorName": "Karol Guimarães ",
-      "authorAlias": "karolguimaraes",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8OZfxWl6KAb6hTiaLqiyU8mhB.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "aws-certification",
-        "all-builders-welcome",
-        "builder-id"
-      ],
-      "publishedAt": "2026-04-25T23:03:10.849Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CriVeQewAjQTn3d86X7Ws7a9aB",
-      "title": "Como a AWS DeepRacer e Cloud Clubs expandiram os meus horizontes para a nuvem!",
-      "description": "Como saí do pódio no AWS DeepRacer para fundar a maior comunidade estudantil de AWS do país. Um relato sobre trajetória, carreira e o poder da comunidade.",
-      "url": "https://builder.aws.com/content/3CriVeQewAjQTn3d86X7Ws7a9aB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CruFS3brxOdACB6UedsY0vdZlH/aws_.webp",
-      "authorName": "Daniel Oliveira",
-      "authorAlias": "danimont",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/327oiepI8Ywz9BBmgodTUnyS4kP.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "students",
-        "aws-cloud-clubs",
-        "aws-deepracer",
-        "career",
-        "community"
-      ],
-      "publishedAt": "2026-04-25T22:43:35.750Z",
-      "likesCount": 6,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -236,27 +235,26 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 17,
-      "commentsCount": 14
+      "likesCount": 20,
+      "commentsCount": 15
     },
     {
-      "id": "/content/3CrjEXFmP4ylt9pGPqFwOu01EX5",
-      "title": "Por que o futuro da tecnologia é a \"Construção\" coletiva?",
-      "description": "De Sistemas Embarcados ao ecossistema AWS. Explore como a experiência prática com microcontroladores e gamificação moldou minha visão como Líder Estudantil Builder. Um papo sobre por que o código sozinho não escala e como a comunidade é a verdadeira âncora para o progresso em IoT e Nuvem.",
-      "url": "https://builder.aws.com/content/3CrjEXFmP4ylt9pGPqFwOu01EX5",
-      "imageUrl": "",
-      "authorName": "KAUE FREITAS RABESCO",
-      "authorAlias": "kauef",
-      "authorAvatarUrl": "",
+      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
+      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
+      "description": "Facilidade",
+      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
+      "authorName": "Aslan White",
+      "authorAlias": "luizarthur",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "advanced-networking",
-        "network"
+        "ai-engineering"
       ],
-      "publishedAt": "2026-04-25T23:45:22.366Z",
-      "likesCount": 2,
+      "publishedAt": "2026-04-26T00:28:15.044Z",
+      "likesCount": 6,
       "commentsCount": 3
     },
     {
@@ -281,6 +279,27 @@
       "commentsCount": 1908
     },
     {
+      "id": "/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
+      "title": "Do interior do Amazonas ao AWS Builder Center: como a tecnologia transformou minha vida.",
+      "description": "Quando eu era estudante no IFAM, no município de Eirunepe — uma cidade a mais de 1.100 km de Manaus, no coração do Amazonas — eu não imaginava que um dia estaria escrevendo um artigo sobre liderança e tecnologia em nuvem para uma plataforma global da AWS.\nMas foi exatamente lá, naquele interior que muita gente nunca ouviu falar, que tudo começou.",
+      "url": "https://builder.aws.com/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CsCQ4Q5pLY1V5mOotcDlUn407h/IMG-.webp",
+      "authorName": "LUANA PINHEIRO",
+      "authorAlias": "lupinheiro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-academy",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-26T00:03:55.775Z",
+      "likesCount": 5,
+      "commentsCount": 4
+    },
+    {
       "id": "/content/3Cs36151uCixMrEpIlICKbLs5Lv",
       "title": "Minha primeira semana como AWS Student Builder Leader — e por que isso importa pra mim",
       "description": "Minha primeira semana como AWS Student Builder",
@@ -298,27 +317,31 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-25T23:53:14.492Z",
-      "likesCount": 5,
-      "commentsCount": 1
+      "likesCount": 7,
+      "commentsCount": 2
     },
     {
-      "id": "/content/3Crxdgf6lIN7rjr6FgtJWDjwMiw",
-      "title": "Como startups crescem rápido usando a nuvem e como você pode fazer o mesmo desde a faculdade",
-      "description": "A computação em nuvem tornou possível escalar soluções com baixo custo e alta flexibilidade. Neste artigo, você aprende como aplicar esse conceito na prática e dar os primeiros passos ainda como estudante.",
-      "url": "https://builder.aws.com/content/3Crxdgf6lIN7rjr6FgtJWDjwMiw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs2xPTvccPKwHuNFeODd6D2P10/Como.webp",
-      "authorName": "João Vitor Oliveira Gomes",
-      "authorAlias": "pontoengjoao",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs3ArzwskXWeNYEQljawTQPbmc.webp",
+      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "title": "Essa tal de nuvem... fica muito distante do chão?",
+      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
+      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
+      "authorName": "Amanda Y.",
+      "authorAlias": "yuminhercodedays",
+      "authorAvatarUrl": "",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "startups"
+        "aws-builders",
+        "aspiring-builders",
+        "architecture",
+        "cloud-adoption-framework",
+        "tips"
       ],
-      "publishedAt": "2026-04-25T23:37:30.778Z",
-      "likesCount": 3,
-      "commentsCount": 2
+      "publishedAt": "2026-04-25T19:08:26.188Z",
+      "likesCount": 15,
+      "commentsCount": 9
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -342,88 +365,64 @@
       "commentsCount": 321
     },
     {
-      "id": "/content/3CriVeQewAjQTn3d86X7Ws7a9aB",
-      "title": "Como a AWS DeepRacer e Cloud Clubs expandiram os meus horizontes para a nuvem!",
-      "description": "Como saí do pódio no AWS DeepRacer para fundar a maior comunidade estudantil de AWS do país. Um relato sobre trajetória, carreira e o poder da comunidade.",
-      "url": "https://builder.aws.com/content/3CriVeQewAjQTn3d86X7Ws7a9aB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CruFS3brxOdACB6UedsY0vdZlH/aws_.webp",
-      "authorName": "Daniel Oliveira",
-      "authorAlias": "danimont",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/327oiepI8Ywz9BBmgodTUnyS4kP.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "students",
-        "aws-cloud-clubs",
-        "aws-deepracer",
-        "career",
-        "community"
-      ],
-      "publishedAt": "2026-04-25T22:43:35.750Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CrnMMxhA8s7z55EPDSl2SXUfva",
-      "title": "De \"Cair de Paraquedas\" à Nuvem: Minha Jornada até o AWS Builder Center",
-      "description": "Conheça minha trajetória desde o ensino médio técnico até me tornar Líder Estudantil Builder AWS, explorando como a comunidade do Builder Center me ajudou a ganhar confiança para resolver problemas reais com tecnologia.",
-      "url": "https://builder.aws.com/content/3CrnMMxhA8s7z55EPDSl2SXUfva",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Crrjdvu9yl10yemGnXc9l9z1YC/Subt.webp",
-      "authorName": "Karol Guimarães ",
-      "authorAlias": "karolguimaraes",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8OZfxWl6KAb6hTiaLqiyU8mhB.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "aws-certification",
-        "tech",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-25T22:05:22.971Z",
-      "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CrgE3PGALYYoiEjKK63muhuQmG",
-      "title": "Sobre a AWS Certified Cloud Practitioner",
-      "description": "Uma visão geral clara dos principais conceitos, serviços essenciais da AWS, modelos de cobrança e princípios de segurança abordados na certificação Cloud Practitioner. Ideal para iniciantes que desejam entender computação em nuvem e se preparar para o primeiro exame da AWS.",
-      "url": "https://builder.aws.com/content/3CrgE3PGALYYoiEjKK63muhuQmG",
+      "id": "/content/3CrjEXFmP4ylt9pGPqFwOu01EX5",
+      "title": "Por que o futuro da tecnologia é a \"Construção\" coletiva?",
+      "description": "De Sistemas Embarcados ao ecossistema AWS. Explore como a experiência prática com microcontroladores e gamificação moldou minha visão como Líder Estudantil Builder. Um papo sobre por que o código sozinho não escala e como a comunidade é a verdadeira âncora para o progresso em IoT e Nuvem.",
+      "url": "https://builder.aws.com/content/3CrjEXFmP4ylt9pGPqFwOu01EX5",
       "imageUrl": "",
-      "authorName": "Andre Veras Fernandes",
-      "authorAlias": "andreverasfernandes",
+      "authorName": "KAUE FREITAS RABESCO",
+      "authorAlias": "kauef",
       "authorAvatarUrl": "",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "learn",
-        "learning-and-development",
-        "development",
-        "training-and-certification",
-        "training"
+        "advanced-networking",
+        "network"
       ],
-      "publishedAt": "2026-04-25T20:54:24.206Z",
-      "likesCount": 4,
-      "commentsCount": 6
+      "publishedAt": "2026-04-25T23:45:22.366Z",
+      "likesCount": 3,
+      "commentsCount": 3
     },
     {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 40,
-      "commentsCount": 168
+      "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "title": "Coragem para Começar: se envolva em novos projetos!",
+      "description": "Começar é o passo mais difícil, mas também o mais transformador. Neste artigo, compartilho como a coragem de enfrentar novos desafios moldou minha trajetória na tecnologia e por que ela pode ser o diferencial que faltava na sua também.",
+      "url": "https://builder.aws.com/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CplqZbYwiiZxKTMSmsbEWlYXBg/imag.webp",
+      "authorName": "Márcio Lopes",
+      "authorAlias": "spidermarcim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
+      "location": "AM, BR",
+      "lat": -4.479925,
+      "lng": -63.5185396,
+      "tags": [
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-25T15:50:22.827Z",
+      "likesCount": 16,
+      "commentsCount": 10
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2836,
+      "commentsCount": 314
     }
   ]
 }
