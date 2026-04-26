@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-04-26T07:32:40.405Z",
+  "updatedAt": "2026-04-26T08:27:23.485Z",
   "latest": [
+    {
+      "id": "/content/3ClOiVU4ZKa6b0DCsERRhGJBsdd",
+      "title": "Beyond Code: The Next 100 Years of Software From Builders to Co-Creators",
+      "description": "How AI, cloud computing, and human intent will redefine what it means to \"build software\"",
+      "url": "https://builder.aws.com/content/3ClOiVU4ZKa6b0DCsERRhGJBsdd",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ct15GdU5RMOAZjiKCawRsPQNP7/7a90.webp",
+      "authorName": "Zubeda Yasmeen",
+      "authorAlias": "zubaidayasmeen",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CezcuVa9c4YxNFCb0gtZbJJVXC.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "ai",
+        "students"
+      ],
+      "publishedAt": "2026-04-26T07:51:39.016Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CswHVhuOCyp5x6DD6MsxHk91u9",
       "title": "Building a High-Performance Serverless URL Shortener with AWS",
@@ -190,28 +210,6 @@
       "publishedAt": "2026-04-26T01:56:31.953Z",
       "likesCount": 3,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3Cp8S7Qe80qxSSSZTt1SRdLyEC6",
-      "title": "Patrones de acceso seguro a S3 🌐",
-      "description": "Este análisis se propone clarificar algunos casos de uso donde se requiere servir contenido de S3 de manera segura, identificando las brechas de seguridad a las que debemos enfrentarnos y explorar posibles mejoras. El desafío real no está en analizar cada servicio por separado, sino en combinarlos correctamente.",
-      "url": "https://builder.aws.com/content/3Cp8S7Qe80qxSSSZTt1SRdLyEC6",
-      "imageUrl": "",
-      "authorName": "Laura Lorena Bolaños",
-      "authorAlias": "reinalau",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArxGdg16CQ5zjRp0lniE3ULgUM.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
-      "tags": [
-        "amazon-s3",
-        "serverless",
-        "amazon-cloudfront",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-04-26T00:51:05.530Z",
-      "likesCount": 4,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -233,7 +231,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3403,
+      "likesCount": 3404,
       "commentsCount": 1910
     },
     {
@@ -342,25 +340,6 @@
       "commentsCount": 168
     },
     {
-      "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
-      "title": "Coragem para Começar: se envolva em novos projetos!",
-      "description": "Começar é o passo mais difícil, mas também o mais transformador. Neste artigo, compartilho como a coragem de enfrentar novos desafios moldou minha trajetória na tecnologia e por que ela pode ser o diferencial que faltava na sua também.",
-      "url": "https://builder.aws.com/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CplqZbYwiiZxKTMSmsbEWlYXBg/imag.webp",
-      "authorName": "Márcio Lopes",
-      "authorAlias": "spidermarcim",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
-      "location": "AM, BR",
-      "lat": -4.479925,
-      "lng": -63.5185396,
-      "tags": [
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-25T15:50:22.827Z",
-      "likesCount": 17,
-      "commentsCount": 11
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -384,6 +363,25 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "title": "Coragem para Começar: se envolva em novos projetos!",
+      "description": "Começar é o passo mais difícil, mas também o mais transformador. Neste artigo, compartilho como a coragem de enfrentar novos desafios moldou minha trajetória na tecnologia e por que ela pode ser o diferencial que faltava na sua também.",
+      "url": "https://builder.aws.com/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CplqZbYwiiZxKTMSmsbEWlYXBg/imag.webp",
+      "authorName": "Márcio Lopes",
+      "authorAlias": "spidermarcim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
+      "location": "AM, BR",
+      "lat": -4.479925,
+      "lng": -63.5185396,
+      "tags": [
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-25T15:50:22.827Z",
+      "likesCount": 17,
+      "commentsCount": 11
+    },
+    {
       "id": "/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
       "title": "Como assim? A Manu líder estudantil da AWS?",
       "description": "Um relato sobre minha evolução na tecnologia e como a AWS contribuiu para o meu desenvolvimento até me tornar líder estudantil.",
@@ -404,27 +402,26 @@
       "commentsCount": 9
     },
     {
-      "id": "/content/3CqxWtX1hnfDt7IC2RahKBWufyU",
-      "title": "Por que estudantes de TI deveriam conhecer o AWS Builder Center?",
-      "description": "O AWS Builder Center reúne cursos gratuitos, laboratórios práticos, artigos da comunidade, networking e conteúdo colaborativo para ajudar estudantes a desenvolver habilidades reais em tecnologia. A plataforma conecta aprendizado, prática e comunidade em um só lugar, permitindo que iniciantes aprendam cloud computing, inteligência artificial e outras áreas da TI enquanto constroem experiência, portfólio e presença profissional desde o início da carreira.",
-      "url": "https://builder.aws.com/content/3CqxWtX1hnfDt7IC2RahKBWufyU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr0lem4T7z6BdzcFKg6I8c6e2L/rede.webp",
-      "authorName": "Gabriel Araújo dos Santos Pereira",
-      "authorAlias": "gabrielaraujoaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr6BNcfP2ciODj4v29aM3ZsTuU.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
       "tags": [
-        "students",
-        "training",
-        "networking",
-        "soft-skills",
-        "roadmap"
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
       ],
-      "publishedAt": "2026-04-25T15:27:56.862Z",
-      "likesCount": 11,
-      "commentsCount": 8
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1392,
+      "commentsCount": 323
     }
   ]
 }
