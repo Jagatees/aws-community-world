@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-26T05:02:50.043Z",
+  "updatedAt": "2026-04-26T06:38:20.863Z",
   "latest": [
+    {
+      "id": "/content/3Csl878Puc5EuMxPb7JP0T8aK4J",
+      "title": "Remote Kiro: A Serverless Control Plane for Kiro",
+      "description": "Built Remote Kiro, a serverless control plane for Kiro on AWS. It lets me create and approve jobs from anywhere, while a remote agent running on my machine uses Kiro ACP to generate specs, implement code, and open pull requests.",
+      "url": "https://builder.aws.com/content/3Csl878Puc5EuMxPb7JP0T8aK4J",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cslpw4ITEYCrjvzBfyPpOQqdxr/00-h.webp",
+      "authorName": "Jaya Ganesh",
+      "authorAlias": "jayaganesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ASdQkLQ86x8dK9TtW14q6WuTMl.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [],
+      "publishedAt": "2026-04-26T05:47:58.553Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CsdxhB7GMFhpCZXr0wD9iKO7Q2",
       "title": "Stop Overloading Context: Design Agent Capabilities the Right Way with Kiro",
@@ -193,25 +210,6 @@
       "publishedAt": "2026-04-26T00:39:58.508Z",
       "likesCount": 4,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
-      "description": "Facilidade",
-      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
-      "authorName": "Aslan White",
-      "authorAlias": "luizarthur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai-engineering"
-      ],
-      "publishedAt": "2026-04-26T00:28:15.044Z",
-      "likesCount": 6,
-      "commentsCount": 3
     }
   ],
   "trending": [
@@ -237,27 +235,25 @@
       "commentsCount": 1908
     },
     {
-      "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
-      "title": "Minha primeira semana no AWS Builder Center",
-      "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
-      "url": "https://builder.aws.com/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrUlPl8fphZ0CPvxoeDyfCEmip/Arti.webp",
-      "authorName": "Luiz Corbelli",
-      "authorAlias": "luizcorbelli",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CB7iejvw3lTUebPY9EoxPjhnn9.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "security",
-        "security-best-practices",
-        "iam",
-        "IaC",
-        "aws-community-builders"
+        "social-impact",
+        "APJC",
+        "aideas-2025"
       ],
-      "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 21,
-      "commentsCount": 16
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3498,
+      "commentsCount": 321
     },
     {
       "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
@@ -283,25 +279,27 @@
       "commentsCount": 18
     },
     {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
+      "title": "Minha primeira semana no AWS Builder Center",
+      "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
+      "url": "https://builder.aws.com/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrUlPl8fphZ0CPvxoeDyfCEmip/Arti.webp",
+      "authorName": "Luiz Corbelli",
+      "authorAlias": "luizcorbelli",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CB7iejvw3lTUebPY9EoxPjhnn9.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
       "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
+        "security",
+        "security-best-practices",
+        "iam",
+        "IaC",
+        "aws-community-builders"
       ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3498,
-      "commentsCount": 321
+      "publishedAt": "2026-04-25T18:55:47.989Z",
+      "likesCount": 21,
+      "commentsCount": 16
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -361,44 +359,27 @@
       "commentsCount": 11
     },
     {
-      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
-      "description": "Facilidade",
-      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
-      "authorName": "Aslan White",
-      "authorAlias": "luizarthur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "ai-engineering"
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
       ],
-      "publishedAt": "2026-04-26T00:28:15.044Z",
-      "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
-      "title": "Do interior do Amazonas ao AWS Builder Center: como a tecnologia transformou minha vida.",
-      "description": "Quando eu era estudante no IFAM, no município de Eirunepe — uma cidade a mais de 1.100 km de Manaus, no coração do Amazonas — eu não imaginava que um dia estaria escrevendo um artigo sobre liderança e tecnologia em nuvem para uma plataforma global da AWS.\nMas foi exatamente lá, naquele interior que muita gente nunca ouviu falar, que tudo começou.",
-      "url": "https://builder.aws.com/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CsCQ4Q5pLY1V5mOotcDlUn407h/IMG-.webp",
-      "authorName": "LUANA PINHEIRO",
-      "authorAlias": "lupinheiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-academy",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-26T00:03:55.775Z",
-      "likesCount": 5,
-      "commentsCount": 4
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1924,
+      "commentsCount": 269
     },
     {
       "id": "/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
@@ -419,6 +400,25 @@
       "publishedAt": "2026-04-25T15:49:36.607Z",
       "likesCount": 15,
       "commentsCount": 9
+    },
+    {
+      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
+      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
+      "description": "Facilidade",
+      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
+      "authorName": "Aslan White",
+      "authorAlias": "luizarthur",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai-engineering"
+      ],
+      "publishedAt": "2026-04-26T00:28:15.044Z",
+      "likesCount": 6,
+      "commentsCount": 3
     }
   ]
 }
