@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T12:14:40.250Z",
+  "updatedAt": "2026-04-26T13:29:43.822Z",
   "latest": [
     {
       "id": "/content/3ClOiVU4ZKa6b0DCsERRhGJBsdd",
@@ -210,6 +210,195 @@
       "publishedAt": "2026-04-26T01:56:31.953Z",
       "likesCount": 4,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3Cp8S7Qe80qxSSSZTt1SRdLyEC6",
+      "title": "Patrones de acceso seguro a S3 🌐",
+      "description": "Este análisis se propone clarificar algunos casos de uso donde se requiere servir contenido de S3 de manera segura, identificando las brechas de seguridad a las que debemos enfrentarnos y explorar posibles mejoras. El desafío real no está en analizar cada servicio por separado, sino en combinarlos correctamente.",
+      "url": "https://builder.aws.com/content/3Cp8S7Qe80qxSSSZTt1SRdLyEC6",
+      "imageUrl": "",
+      "authorName": "Laura Lorena Bolaños",
+      "authorAlias": "reinalau",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArxGdg16CQ5zjRp0lniE3ULgUM.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "amazon-s3",
+        "serverless",
+        "amazon-cloudfront",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-04-26T00:51:05.530Z",
+      "likesCount": 4,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3Cs7ufPYBaWVSnou0aNdPhiwdrv",
+      "title": "Do Zero à Nuvem: Como o AWS Builder Center virou minha principal ferramenta de estudo",
+      "description": "Minha trajetória até o AWS Builder",
+      "url": "https://builder.aws.com/content/3Cs7ufPYBaWVSnou0aNdPhiwdrv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs9iRjViEMdyqbehnt9THaxxNV/Whats.webp",
+      "authorName": "Leandro Ronchi",
+      "authorAlias": "khufra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8yn70ntW2xHvaKBBSoNKW9HeW.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "students",
+        "aws-restart",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-26T00:39:58.508Z",
+      "likesCount": 5,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
+      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
+      "description": "Facilidade",
+      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
+      "authorName": "Aslan White",
+      "authorAlias": "luizarthur",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai-engineering"
+      ],
+      "publishedAt": "2026-04-26T00:28:15.044Z",
+      "likesCount": 6,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3CivF6cWERVJMcL00sLVCyn2o1B",
+      "title": "Iniciando em Cloud da melhor forma possível, me tornando Líder Estudantil Builder AWS!",
+      "description": "Uma breve apresentação sobre mim e o que eu espero alcançar fazendo parte do Programa de Líderes Estudantis AWS.",
+      "url": "https://builder.aws.com/content/3CivF6cWERVJMcL00sLVCyn2o1B",
+      "imageUrl": "",
+      "authorName": "Taylanne Mendes",
+      "authorAlias": "taylannw",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs0rWxKpx7GkLLjSlnesF8C5lQ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-community",
+        "aws-community-builders",
+        "all-builders-welcome",
+        "self-development",
+        "portuguese"
+      ],
+      "publishedAt": "2026-04-26T00:18:19.292Z",
+      "likesCount": 2,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3Cs3ts7l8cY6fqKDRBi36FFqelv",
+      "title": "O Elo Perdido: Como a nuvem uniu minha graduação e minha carreira",
+      "description": "Entenda como a Amazon Web Services preencheu a lacuna entre minha jornada acadêmica e o desenvolvimento de soluções reais. Venha aprender a explorar o AWS Builder Center para construir o próximo capítulo da sua carreira com recursos exclusivos para estudantes.",
+      "url": "https://builder.aws.com/content/3Cs3ts7l8cY6fqKDRBi36FFqelv",
+      "imageUrl": "",
+      "authorName": "Matheus Fonseca",
+      "authorAlias": "mfalmeida",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7VBStjQoTuCQZrjHCw40gAriC.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-ambassador",
+        "ai-assisted",
+        "students",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-26T00:10:06.159Z",
+      "likesCount": 5,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
+      "title": "Do interior do Amazonas ao AWS Builder Center: como a tecnologia transformou minha vida.",
+      "description": "Quando eu era estudante no IFAM, no município de Eirunepe — uma cidade a mais de 1.100 km de Manaus, no coração do Amazonas — eu não imaginava que um dia estaria escrevendo um artigo sobre liderança e tecnologia em nuvem para uma plataforma global da AWS.\nMas foi exatamente lá, naquele interior que muita gente nunca ouviu falar, que tudo começou.",
+      "url": "https://builder.aws.com/content/3Cs58VwhRTfbyqlRZ5zKmatRHjQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CsCQ4Q5pLY1V5mOotcDlUn407h/IMG-.webp",
+      "authorName": "LUANA PINHEIRO",
+      "authorAlias": "lupinheiro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-academy",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-26T00:03:55.775Z",
+      "likesCount": 5,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3Cs36151uCixMrEpIlICKbLs5Lv",
+      "title": "Minha primeira semana como AWS Student Builder Leader — e por que isso importa pra mim",
+      "description": "Minha primeira semana como AWS Student Builder",
+      "url": "https://builder.aws.com/content/3Cs36151uCixMrEpIlICKbLs5Lv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs4iKHDKpRt6YtcqkLDTEs4mCt/APRE.webp",
+      "authorName": "Edna Cristina Durans Santos",
+      "authorAlias": "ednadurans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-community-builders",
+        "all-builders-welcome",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-25T23:53:14.492Z",
+      "likesCount": 7,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CrjEXFmP4ylt9pGPqFwOu01EX5",
+      "title": "Por que o futuro da tecnologia é a \"Construção\" coletiva?",
+      "description": "De Sistemas Embarcados ao ecossistema AWS. Explore como a experiência prática com microcontroladores e gamificação moldou minha visão como Líder Estudantil Builder. Um papo sobre por que o código sozinho não escala e como a comunidade é a verdadeira âncora para o progresso em IoT e Nuvem.",
+      "url": "https://builder.aws.com/content/3CrjEXFmP4ylt9pGPqFwOu01EX5",
+      "imageUrl": "",
+      "authorName": "KAUE FREITAS RABESCO",
+      "authorAlias": "kauef",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "advanced-networking",
+        "network"
+      ],
+      "publishedAt": "2026-04-25T23:45:22.366Z",
+      "likesCount": 3,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3Crxdgf6lIN7rjr6FgtJWDjwMiw",
+      "title": "Como startups crescem rápido usando a nuvem e como você pode fazer o mesmo desde a faculdade",
+      "description": "A computação em nuvem tornou possível escalar soluções com baixo custo e alta flexibilidade. Neste artigo, você aprende como aplicar esse conceito na prática e dar os primeiros passos ainda como estudante.",
+      "url": "https://builder.aws.com/content/3Crxdgf6lIN7rjr6FgtJWDjwMiw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs2xPTvccPKwHuNFeODd6D2P10/Como.webp",
+      "authorName": "João Vitor Oliveira Gomes",
+      "authorAlias": "pontoengjoao",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs3ArzwskXWeNYEQljawTQPbmc.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "startups"
+      ],
+      "publishedAt": "2026-04-25T23:37:30.778Z",
+      "likesCount": 4,
+      "commentsCount": 2
     }
   ],
   "trending": [
@@ -378,28 +567,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-25T15:50:22.827Z",
-      "likesCount": 17,
-      "commentsCount": 11
-    },
-    {
-      "id": "/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
-      "title": "Como assim? A Manu líder estudantil da AWS?",
-      "description": "Um relato sobre minha evolução na tecnologia e como a AWS contribuiu para o meu desenvolvimento até me tornar líder estudantil.",
-      "url": "https://builder.aws.com/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr7TxtjZGhdg3yVZcNkMscNNQF/imag.webp",
-      "authorName": "Manuela Florença",
-      "authorAlias": "manuflorenca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CAXejflygEeUZ4zd0pooQ3vJrA.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-25T15:49:36.607Z",
-      "likesCount": 15,
-      "commentsCount": 9
+      "likesCount": 18,
+      "commentsCount": 12
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -422,6 +591,26 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1392,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
+      "title": "Como assim? A Manu líder estudantil da AWS?",
+      "description": "Um relato sobre minha evolução na tecnologia e como a AWS contribuiu para o meu desenvolvimento até me tornar líder estudantil.",
+      "url": "https://builder.aws.com/content/3Cr66Ao0LmMM6oHEPPzgDlruzRB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr7TxtjZGhdg3yVZcNkMscNNQF/imag.webp",
+      "authorName": "Manuela Florença",
+      "authorAlias": "manuflorenca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CAXejflygEeUZ4zd0pooQ3vJrA.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-community-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-25T15:49:36.607Z",
+      "likesCount": 15,
+      "commentsCount": 9
     }
   ]
 }
