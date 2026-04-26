@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-26T16:13:54.557Z",
+  "updatedAt": "2026-04-26T17:14:44.689Z",
   "latest": [
+    {
+      "id": "/content/3CtzgHntRaZHD5WlcRfmuhnVhIV",
+      "title": "An Introduction about Severless",
+      "description": "This blog discusses the key concepts of serverless computing and how it solves common challenges .\nA beginner-friendly introduction.",
+      "url": "https://builder.aws.com/content/3CtzgHntRaZHD5WlcRfmuhnVhIV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cu5HPx91JyORJ9igeWA5ctTifT/Chat.webp",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "serverless",
+        "aws-lambda",
+        "multi-cloud"
+      ],
+      "publishedAt": "2026-04-26T16:57:19.711Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CtzHJs3yVS4Jb2w5rBNAKh1gDH",
+      "title": "Serverless vs. Serverfull: Choosing the Right Architecture for Your Project",
+      "description": "Analyze the technical trade-offs between managing virtual machines and utilizing event-driven execution to optimize your workload. This guide breaks down scaling mechanics, management responsibility, and cost models to help you choose the right infrastructure.",
+      "url": "https://builder.aws.com/content/3CtzHJs3yVS4Jb2w5rBNAKh1gDH",
+      "imageUrl": "",
+      "authorName": "Kossi",
+      "authorAlias": "kossi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BoA8AJPUtUxdYyq2gIqEM6OwlG.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "serverless",
+        "amazon-ec2",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-04-26T16:28:08.893Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CtxUEjict5O0EFgAiBi7bRF6g4",
       "title": "Orchestrating agentic workflows with AWS Lambda durable functions",
@@ -309,48 +351,6 @@
       "publishedAt": "2026-04-26T00:39:58.508Z",
       "likesCount": 5,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "title": "O QUE É A AWS BUILDER CENTER E COMO USA-LÁ PARA COMO FERRAMENTA PARA TRABALHOS NA ENGENHARIA MECANICA?",
-      "description": "Facilidade",
-      "url": "https://builder.aws.com/content/3Cry6YQJJPTLI8YTSNl8aD3h8dx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cs8nAvsSrg3Jm2ZN5PLPLdvF1W/imag.webp",
-      "authorName": "Aslan White",
-      "authorAlias": "luizarthur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai-engineering"
-      ],
-      "publishedAt": "2026-04-26T00:28:15.044Z",
-      "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CivF6cWERVJMcL00sLVCyn2o1B",
-      "title": "Iniciando em Cloud da melhor forma possível, me tornando Líder Estudantil Builder AWS!",
-      "description": "Uma breve apresentação sobre mim e o que eu espero alcançar fazendo parte do Programa de Líderes Estudantis AWS.",
-      "url": "https://builder.aws.com/content/3CivF6cWERVJMcL00sLVCyn2o1B",
-      "imageUrl": "",
-      "authorName": "Taylanne Mendes",
-      "authorAlias": "taylannw",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs0rWxKpx7GkLLjSlnesF8C5lQ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community",
-        "aws-community-builders",
-        "all-builders-welcome",
-        "self-development",
-        "portuguese"
-      ],
-      "publishedAt": "2026-04-26T00:18:19.292Z",
-      "likesCount": 2,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -414,8 +414,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2836,
-      "commentsCount": 314
+      "likesCount": 2837,
+      "commentsCount": 315
     },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
@@ -519,7 +519,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-25T15:50:22.827Z",
-      "likesCount": 18,
+      "likesCount": 19,
       "commentsCount": 12
     },
     {
