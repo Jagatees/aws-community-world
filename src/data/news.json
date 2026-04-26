@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-26T20:12:16.396Z",
+  "updatedAt": "2026-04-26T21:12:00.530Z",
   "latest": [
+    {
+      "id": "/content/3BBGcslGH8s5x2Be4RLvHZN0aUq",
+      "title": "How I Built ResumeIQ: My First Full-Stack AWS Project as a Sophomore Computer Information Systems Student",
+      "description": "How I built a resume analysis web app with Next.js, OpenAI, and most importantly Amazon S3 and RDS—and what I wish I'd known before I started. ",
+      "url": "https://builder.aws.com/content/3BBGcslGH8s5x2Be4RLvHZN0aUq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuYYSzE100ownlEPjMi5cesifH/Scre.webp",
+      "authorName": "Christopher Feuchter",
+      "authorAlias": "chrisf",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BBGZnlFW8JgPKI57qN5fbmbz47.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-04-26T20:57:19.784Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CuMcCh8jz6tIAWFEaehy58ATHU",
+      "title": "AWS Backup Restore Testing for Aurora provisioned: Zero Lambda, Full Automation",
+      "description": "How to validate Aurora provisioned backups automatically using only Step Functions SDK integrations and the RDS Data API",
+      "url": "https://builder.aws.com/content/3CuMcCh8jz6tIAWFEaehy58ATHU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuOCNztyHHYAaLw7VVBNQ76HNu/awsb.webp",
+      "authorName": "Frank Pimienta",
+      "authorAlias": "frankpimienta",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2araHqCMPT5MrG24ZEV7WOPYH5C.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "aws-backup",
+        "aws-step-functions",
+        "amazon-aurora",
+        "cloud-operations"
+      ],
+      "publishedAt": "2026-04-26T20:29:26.285Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CuQC7jbShM3MhNauZbAl7Y7xCS",
       "title": "Why Every Student Builder Needs a Global Community",
@@ -276,7 +318,7 @@
         "ai"
       ],
       "publishedAt": "2026-04-26T13:55:00.828Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -360,45 +402,6 @@
       ],
       "publishedAt": "2026-04-26T04:44:09.211Z",
       "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CeKsarJlwg5GdOwFqC2CxYLeIp",
-      "title": "How to Build an Amazon Bedrock Knowledge Base with S3 Vectors Using CDK TypeScript",
-      "description": "Learn how to deploy an Amazon Bedrock Knowledge Base backed by S3 Vectors using CDK TypeScript. This walkthrough covers the full stack IAM roles, vector index configuration, chunking strategy, and live retrieval testing with Amazon Nova Pro.",
-      "url": "https://builder.aws.com/content/3CeKsarJlwg5GdOwFqC2CxYLeIp",
-      "imageUrl": "",
-      "authorName": "TC",
-      "authorAlias": "tafadc",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CeKpBnnoRLQCb7kKw2nbIQkBcD.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "amazon-s3-vectors",
-        "amazon-s3",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-04-26T04:04:29.880Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CsNpYfG793kIJ6x40rViI4tQyp",
-      "title": "Minha semana aprendendo AWS do zero: IAM, S3 e meu primeiro vídeo",
-      "description": "Uma semana real de quem está começando em cloud — aprendi IAM, entendi S3 na prática e criei meu primeiro vídeo falando sobre isso. Aqui está o que ninguém me contou antes.",
-      "url": "https://builder.aws.com/content/3CsNpYfG793kIJ6x40rViI4tQyp",
-      "imageUrl": "",
-      "authorName": "Davi Cezar",
-      "authorAlias": "davicezar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COXUZ9DkMg6HnQkOBBk9E3HTsZ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-26T02:46:05.457Z",
-      "likesCount": 2,
       "commentsCount": 0
     }
   ],
@@ -484,29 +487,6 @@
       "commentsCount": 168
     },
     {
-      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "title": "Essa tal de nuvem... fica muito distante do chão?",
-      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
-      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
-      "authorName": "Amanda Y.",
-      "authorAlias": "yuminhercodedays",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aspiring-builders",
-        "architecture",
-        "cloud-adoption-framework",
-        "tips"
-      ],
-      "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 21,
-      "commentsCount": 19
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -528,6 +508,29 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1924,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "title": "Essa tal de nuvem... fica muito distante do chão?",
+      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
+      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
+      "authorName": "Amanda Y.",
+      "authorAlias": "yuminhercodedays",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aspiring-builders",
+        "architecture",
+        "cloud-adoption-framework",
+        "tips"
+      ],
+      "publishedAt": "2026-04-25T19:08:26.188Z",
+      "likesCount": 21,
+      "commentsCount": 19
     },
     {
       "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
