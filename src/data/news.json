@@ -1,6 +1,47 @@
 {
-  "updatedAt": "2026-04-26T22:11:27.604Z",
+  "updatedAt": "2026-04-26T23:13:56.191Z",
   "latest": [
+    {
+      "id": "/content/3CumG8G7z78VGFgxm0VKGJJIjEL",
+      "title": "Amazon Inspector Code Security: Shifting Left with Automated Vulnerability Detection",
+      "description": "In today’s fast-paced development world, security can’t wait until deployment. It has to start at the code level. That’s exactly where Amazon Inspector Code Security comes in—bringing automated vulnerability detection directly into your development workflow so issues are caught early, not after release.",
+      "url": "https://builder.aws.com/content/3CumG8G7z78VGFgxm0VKGJJIjEL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CumMB4MobliKeT83RdO9r6zItG/Amaz.webp",
+      "authorName": "Kugan",
+      "authorAlias": "nkg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rYdBum4aFvqs7kDbYMIbTdegii.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "security",
+        "cloud-security",
+        "security-hub"
+      ],
+      "publishedAt": "2026-04-26T22:55:01.850Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CpaUa4eWYvZrjLtRtLi8dky4UO",
+      "title": "Automating Patch Management with AWS Systems Manager",
+      "description": "AWS Systems Manager (SSM) becomes a powerful solution.",
+      "url": "https://builder.aws.com/content/3CpaUa4eWYvZrjLtRtLi8dky4UO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CulcBg8tc4EhYYJA17FZwFWLRE/AWS-S.webp",
+      "authorName": "Kugan",
+      "authorAlias": "nkg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rYdBum4aFvqs7kDbYMIbTdegii.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "systems-manager",
+        "aws-systems-manager"
+      ],
+      "publishedAt": "2026-04-26T22:45:04.570Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3BlWy91esJ9YYmVY0H90DbouDP3",
       "title": "Learning Cloud Through Real Experience",
@@ -158,49 +199,6 @@
       "publishedAt": "2026-04-26T19:41:31.368Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CuKNklw8cDhXjreLYoznoj6dyx",
-      "title": "Amazon Kiro: Use cases and introduction",
-      "description": "An in-depth and student first view of Amazon Kiro and its potential in helping students build with AWS.",
-      "url": "https://builder.aws.com/content/3CuKNklw8cDhXjreLYoznoj6dyx",
-      "imageUrl": "",
-      "authorName": "Agastya Mishra",
-      "authorAlias": "amishra1234",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agents",
-        "agentic-ide",
-        "kiro-agent",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-26T19:37:26.535Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cu8RS1eTkCzO08BdLFjJAAV96n",
-      "title": "Breaking Down Barriers: AWS as a Tool For Advancement!",
-      "description": "Amazon Web Services (AWS) breaks down barriers in tech by giving anyone with internet access powerful, scalable tools to build, test, and launch ideas without expensive infrastructure.",
-      "url": "https://builder.aws.com/content/3Cu8RS1eTkCzO08BdLFjJAAV96n",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuESxvAlAtOWGIMIc5XF5PUcTa/Unti.webp",
-      "authorName": "Toni Dismuke",
-      "authorAlias": "t0nii",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxNCupXwFkPgfHItSoHI426BoG.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-community-builders",
-        "students",
-        "aspiring-builders"
-      ],
-      "publishedAt": "2026-04-26T18:47:24.695Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -354,25 +352,6 @@
       "commentsCount": 17
     },
     {
-      "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
-      "title": "Coragem para Começar: se envolva em novos projetos!",
-      "description": "Começar é o passo mais difícil, mas também o mais transformador. Neste artigo, compartilho como a coragem de enfrentar novos desafios moldou minha trajetória na tecnologia e por que ela pode ser o diferencial que faltava na sua também.",
-      "url": "https://builder.aws.com/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CplqZbYwiiZxKTMSmsbEWlYXBg/imag.webp",
-      "authorName": "Márcio Lopes",
-      "authorAlias": "spidermarcim",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
-      "location": "AM, BR",
-      "lat": -4.479925,
-      "lng": -63.5185396,
-      "tags": [
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-25T15:50:22.827Z",
-      "likesCount": 20,
-      "commentsCount": 13
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -393,6 +372,25 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1398,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "title": "Coragem para Começar: se envolva em novos projetos!",
+      "description": "Começar é o passo mais difícil, mas também o mais transformador. Neste artigo, compartilho como a coragem de enfrentar novos desafios moldou minha trajetória na tecnologia e por que ela pode ser o diferencial que faltava na sua também.",
+      "url": "https://builder.aws.com/content/3Cpf6HnHU0RouZUV8OrhYBdEgAH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CplqZbYwiiZxKTMSmsbEWlYXBg/imag.webp",
+      "authorName": "Márcio Lopes",
+      "authorAlias": "spidermarcim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
+      "location": "AM, BR",
+      "lat": -4.479925,
+      "lng": -63.5185396,
+      "tags": [
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-25T15:50:22.827Z",
+      "likesCount": 20,
+      "commentsCount": 13
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
