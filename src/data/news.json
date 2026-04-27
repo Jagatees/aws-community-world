@@ -1,6 +1,97 @@
 {
-  "updatedAt": "2026-04-27T12:32:04.696Z",
+  "updatedAt": "2026-04-27T13:34:29.237Z",
   "latest": [
+    {
+      "id": "/content/3CiNNWakf1xkG9htQyKDhlYew30",
+      "title": "De Estudante para Estudante: Por que você deve começar na AWS hoje?",
+      "description": "Este artigo apresenta o AWS Builder Center como uma ferramenta essencial de desenvolvimento pessoal e técnico para estudantes de Engenharia, conectando a teoria da sala de aula à prática na nuvem. Através de um guia de boas-vindas, compartilho minha visão como aluna do IBMEC sobre como o acesso gratuito a recursos globais da AWS pode ser o grande diferencial na jornada de quem está começando em tecnologia.",
+      "url": "https://builder.aws.com/content/3CiNNWakf1xkG9htQyKDhlYew30",
+      "imageUrl": "",
+      "authorName": "Sarah Ferrari",
+      "authorAlias": "sarahferrarir",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8QgucvHX3pTf588mtju107Ddw.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "ai-engineering",
+        "software-engineering",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-04-27T13:26:34.427Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CwSVeqV1bV5Kl00e0VsDVXGTpT",
+      "title": "How AWS Free Tier Can Replace Most Paid Courses for Beginners",
+      "description": "This blog explores how the Amazon Web Services Free Tier can be a powerful, hands-on alternative to traditional paid courses for beginners. It focuses on learning by building real projects, avoiding common pitfalls, and using practical roadmaps to gain real-world cloud skills.",
+      "url": "https://builder.aws.com/content/3CwSVeqV1bV5Kl00e0VsDVXGTpT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwTcu7QPmiMLxZSMIeOyqIxJbl/boar.webp",
+      "authorName": "Manvendra Singh 🥑",
+      "authorAlias": "manvendra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39YwvWH5WMWRTfqMaDkMQ5UPrKN.webp",
+      "location": "Rajasthan, IN",
+      "lat": 26.8105777,
+      "lng": 73.7684549,
+      "tags": [
+        "students",
+        "amazon-ec2",
+        "beginner-projects",
+        "amazon-s3",
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T13:11:16.080Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CwQbrhAB1maerkpU06lL04ovbP",
+      "title": "AWS Bedrock AgentCore: The Infrastructure Layer Every Agent Platform Needs First",
+      "description": "The infrastructure layer is the foundation everything else runs on. This post covers the three AWS Bedrock AgentCore components every enterprise agent deployment needs before anything else: Runtime for managed agent hosting, Identity for integrating your existing IdP, and Gateway for a governed integration layer between agents and the tools they call. For architects making the decisions that are expensive to change later. ",
+      "url": "https://builder.aws.com/content/3CwQbrhAB1maerkpU06lL04ovbP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwSQ5VSt52N7GPHOuOVT5hhN75/59ca.webp",
+      "authorName": "Geethika Guruge",
+      "authorAlias": "geethika",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
+      "location": "NZ",
+      "lat": -41.5000831,
+      "lng": 172.8344077,
+      "tags": [
+        "ai-agents",
+        "amazon-bedrock-agentcore",
+        "mcp-integration",
+        "mcp",
+        "agents"
+      ],
+      "publishedAt": "2026-04-27T13:06:04.682Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CwHozu5zp3UUsCWW4qL0eQMfMN",
+      "title": "Before You Ship AI Agents at Enterprise Scale, Get the Foundations Right",
+      "description": "Building an AI agent is easy. Building an enterprise AI agent platform is not. This post makes the strategic case for getting foundations right before use cases: what enterprise readiness actually requires, how AWS Bedrock AgentCore addresses each concern as a suite of managed primitives, and why the sequencing of this investment matters as much as the investment itself. For technology leaders evaluating where to start with AI agents at scale. ",
+      "url": "https://builder.aws.com/content/3CwHozu5zp3UUsCWW4qL0eQMfMN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwOzxGgeAMc9Qvx026dEkc4XCM/Chat.webp",
+      "authorName": "Geethika Guruge",
+      "authorAlias": "geethika",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
+      "location": "NZ",
+      "lat": -41.5000831,
+      "lng": 172.8344077,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai-engineering",
+        "amazon-bedrock-agentcore",
+        "mcp-integration"
+      ],
+      "publishedAt": "2026-04-27T12:49:02.164Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CwLBd55j84UoWtnCtayPbOf9fB",
       "title": "O que é esse tal de AWS Builder Center? (Dicas de quem também tá na jornada) ☁️🚀",
@@ -19,8 +110,8 @@
         "builder-spaces"
       ],
       "publishedAt": "2026-04-27T12:22:47.772Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CwGtLWXdlWyubyzdqX8IyPGPDN",
@@ -62,7 +153,7 @@
         "devops"
       ],
       "publishedAt": "2026-04-27T09:28:22.246Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -252,92 +343,6 @@
       "publishedAt": "2026-04-27T04:07:56.815Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
-      "title": "From Stuck to Shipped: How Amazon Q Developer Can Supercharge Your CS Coursework",
-      "description": "A beginner-friendly tutorial for CS students on using Amazon Q Developer in VS Code to debug code, understand concepts, and work through programming assignments more efficiently — without skipping the learning.\n",
-      "url": "https://builder.aws.com/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
-      "imageUrl": "",
-      "authorName": "Ali Soliman",
-      "authorAlias": "atsoli",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "amazon-q",
-        "amazon-q-developer"
-      ],
-      "publishedAt": "2026-04-27T02:32:18.619Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
-      "title": "From Curious to Building: How I Used AWS to Start Exploring AI",
-      "description": "As a computer science student passionate about AI, I discovered how AWS Builder Center and Amazon Bedrock made it possible to build real AI applications without training models from scratch. Here is what I explored and how you can get started too.",
-      "url": "https://builder.aws.com/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
-      "imageUrl": "",
-      "authorName": "Anurag Pokala",
-      "authorAlias": "anurag34",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-27T02:29:55.242Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
-      "title": "How Criminal Justice Students can use the AWS Builder Center and Other Resources",
-      "description": "Not having known much about cloud computing or AWS resources in general, here are some things I have learned about AWS and how I can share my knowledge so other criminal justice students, like myself,  can use it to their advantage. ",
-      "url": "https://builder.aws.com/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
-      "imageUrl": "",
-      "authorName": "Sophia Sidler",
-      "authorAlias": "sidlersk12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bxv9yNRShjLiLmPInHJsjJCzpm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students",
-        "cybersecurity",
-        "data-storage",
-        "cloud-storage",
-        "policy"
-      ],
-      "publishedAt": "2026-04-27T02:16:49.605Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
-      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
-      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
-      "authorName": "Clay Zeballos",
-      "authorAlias": "clayzeballos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "linux",
-        "terminal",
-        "students",
-        "aws-cloud-clubs",
-        "builder-spaces"
-      ],
-      "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 7,
-      "commentsCount": 5
     }
   ],
   "trending": [
@@ -359,7 +364,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3407,
+      "likesCount": 3408,
       "commentsCount": 1911
     },
     {
@@ -421,8 +426,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2839,
-      "commentsCount": 315
+      "likesCount": 2840,
+      "commentsCount": 316
     },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
@@ -465,6 +470,50 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3CwLBd55j84UoWtnCtayPbOf9fB",
+      "title": "O que é esse tal de AWS Builder Center? (Dicas de quem também tá na jornada) ☁️🚀",
+      "description": "Muita gente me pergunta por onde começar na AWS sem ficar doido com tanto serviço. Se você nunca ouviu falar do AWS Builder Center, para tudo e presta atenção aqui, porque ele é o caminho mais curto pra você sair do zero.\n\nSe eu tivesse que te explicar ele hoje, sendo bem direto, eu diria o seguinte:",
+      "url": "https://builder.aws.com/content/3CwLBd55j84UoWtnCtayPbOf9fB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwLm1s9JJWkxOQgrnZLQ05huK0/f37b.webp",
+      "authorName": "Gabriel Campos Seemann",
+      "authorAlias": "gseemann",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "students",
+        "builder-spaces"
+      ],
+      "publishedAt": "2026-04-27T12:22:47.772Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
+      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
+      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
+      "authorName": "Clay Zeballos",
+      "authorAlias": "clayzeballos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
+      "location": "DF, BR",
+      "lat": -15.7754462,
+      "lng": -47.7970891,
+      "tags": [
+        "linux",
+        "terminal",
+        "students",
+        "aws-cloud-clubs",
+        "builder-spaces"
+      ],
+      "publishedAt": "2026-04-27T02:00:16.783Z",
+      "likesCount": 9,
+      "commentsCount": 6
+    },
+    {
       "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
       "title": "Minha primeira semana no AWS Builder Center",
       "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
@@ -488,29 +537,6 @@
       "commentsCount": 19
     },
     {
-      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
-      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
-      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
-      "authorName": "Clay Zeballos",
-      "authorAlias": "clayzeballos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "linux",
-        "terminal",
-        "students",
-        "aws-cloud-clubs",
-        "builder-spaces"
-      ],
-      "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 7,
-      "commentsCount": 5
-    },
-    {
       "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
       "title": "Essa tal de nuvem... fica muito distante do chão?",
       "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
@@ -532,28 +558,6 @@
       "publishedAt": "2026-04-25T19:08:26.188Z",
       "likesCount": 22,
       "commentsCount": 21
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AAJmjDxTzCEpX3XvlA3kb72BtG.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1407,
-      "commentsCount": 323
     }
   ]
 }
