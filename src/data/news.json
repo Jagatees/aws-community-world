@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-27T08:51:25.743Z",
+  "updatedAt": "2026-04-27T09:46:35.993Z",
   "latest": [
+    {
+      "id": "/content/38bxoFbKHA1j7TZ4iNYwCCFBD0F",
+      "title": "From Infrastructure as Code to Infrastructure as Intent: How GenAI is reshaping the way we build",
+      "description": "The way we build cloud infrastructure is changing. For years, IaC gave us repeatability, governance, and speed through templating. However, in the era of GenAI, we must adopt a new paradigm: describing what you want rather than defining it. This post explores that shift - from IaC templates to Infrastructure as Intent (IaI). But LLMs are probabilistic, this probability poses governance risks. To solve this, we can use Kiro Steering to encode organizational standards and OPA to validate AI output.",
+      "url": "https://builder.aws.com/content/38bxoFbKHA1j7TZ4iNYwCCFBD0F",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CvTTTGfaCJ16Q2t52azqxbkDbc/Gemi.webp",
+      "authorName": "Paolo Latella",
+      "authorAlias": "paolol",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2dSS3lr28x30VWIjlVxuZ3qvXZj.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "aws-cloudformation",
+        "IaC",
+        "terraform",
+        "devops"
+      ],
+      "publishedAt": "2026-04-27T09:28:22.246Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CvulM76n3HC2nrVYhtlouXjRGD",
       "title": "What is AWS, and why does everyone keep talking about it?",
@@ -188,27 +211,6 @@
       "publishedAt": "2026-04-27T04:07:56.815Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
-      "title": "From Stuck to Shipped: How Amazon Q Developer Can Supercharge Your CS Coursework",
-      "description": "A beginner-friendly tutorial for CS students on using Amazon Q Developer in VS Code to debug code, understand concepts, and work through programming assignments more efficiently — without skipping the learning.\n",
-      "url": "https://builder.aws.com/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
-      "imageUrl": "",
-      "authorName": "Ali Soliman",
-      "authorAlias": "atsoli",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "amazon-q",
-        "amazon-q-developer"
-      ],
-      "publishedAt": "2026-04-27T02:32:18.619Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -313,29 +315,6 @@
       "commentsCount": 168
     },
     {
-      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
-      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
-      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
-      "authorName": "Clay Zeballos",
-      "authorAlias": "clayzeballos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "linux",
-        "terminal",
-        "students",
-        "aws-cloud-clubs",
-        "builder-spaces"
-      ],
-      "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 6,
-      "commentsCount": 5
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -357,6 +336,29 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1924,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
+      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
+      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
+      "authorName": "Clay Zeballos",
+      "authorAlias": "clayzeballos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
+      "location": "DF, BR",
+      "lat": -15.7754462,
+      "lng": -47.7970891,
+      "tags": [
+        "linux",
+        "terminal",
+        "students",
+        "aws-cloud-clubs",
+        "builder-spaces"
+      ],
+      "publishedAt": "2026-04-27T02:00:16.783Z",
+      "likesCount": 6,
+      "commentsCount": 5
     },
     {
       "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
