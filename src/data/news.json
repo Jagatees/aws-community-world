@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-27T07:48:11.650Z",
+  "updatedAt": "2026-04-27T08:51:25.743Z",
   "latest": [
+    {
+      "id": "/content/3CvulM76n3HC2nrVYhtlouXjRGD",
+      "title": "What is AWS, and why does everyone keep talking about it?",
+      "description": "You have probably heard engineers throw around \"AWS\" like it is obvious. Here is what it actually means.",
+      "url": "https://builder.aws.com/content/3CvulM76n3HC2nrVYhtlouXjRGD",
+      "imageUrl": "",
+      "authorName": "Jaden Seangmany",
+      "authorAlias": "jadenseangmany",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bg63yPyoYjPTWyWmMqicOHzbIU.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-04-27T08:35:50.422Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CvpNXHFYwM5LGAfp1EqJ9cdMo6",
+      "title": "Scaffolding a Monorepo with Kiro: From Zero to Two Apps and a Shared Library",
+      "description": "Use Kiro to set up a Turborepo monorepo from scratch, wire up shared libraries across apps, and learn the core concepts that keep builds fast as the repo grows.",
+      "url": "https://builder.aws.com/content/3CvpNXHFYwM5LGAfp1EqJ9cdMo6",
+      "imageUrl": "",
+      "authorName": "Kartik Koul",
+      "authorAlias": "kartikkoul",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "kiro-heroes",
+        "kiro-with-pro",
+        "kiro-with-pro-plus"
+      ],
+      "publishedAt": "2026-04-27T08:05:48.329Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CaPlJy3SB4i4xFcUf4ITUgAu7f",
       "title": "Skills vs Tools vs Rules vs MCP Tools: Implementing Agent & Skills with Langchain, AWS Bedrock Nova",
@@ -165,48 +207,6 @@
         "amazon-q-developer"
       ],
       "publishedAt": "2026-04-27T02:32:18.619Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
-      "title": "From Curious to Building: How I Used AWS to Start Exploring AI",
-      "description": "As a computer science student passionate about AI, I discovered how AWS Builder Center and Amazon Bedrock made it possible to build real AI applications without training models from scratch. Here is what I explored and how you can get started too.",
-      "url": "https://builder.aws.com/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
-      "imageUrl": "",
-      "authorName": "Anurag Pokala",
-      "authorAlias": "anurag34",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-27T02:29:55.242Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
-      "title": "How Criminal Justice Students can use the AWS Builder Center and Other Resources",
-      "description": "Not having known much about cloud computing or AWS resources in general, here are some things I have learned about AWS and how I can share my knowledge so other criminal justice students, like myself,  can use it to their advantage. ",
-      "url": "https://builder.aws.com/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
-      "imageUrl": "",
-      "authorName": "Sophia Sidler",
-      "authorAlias": "sidlersk12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bxv9yNRShjLiLmPInHJsjJCzpm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students",
-        "cybersecurity",
-        "data-storage",
-        "cloud-storage",
-        "policy"
-      ],
-      "publishedAt": "2026-04-27T02:16:49.605Z",
       "likesCount": 0,
       "commentsCount": 0
     }
