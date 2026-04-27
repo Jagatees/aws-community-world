@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T18:27:58.137Z",
+  "updatedAt": "2026-04-27T19:32:06.099Z",
   "latest": [
     {
       "id": "/content/3Cx39VRdRkKQyKIxgSWgjLvE0Fk",
@@ -115,8 +115,8 @@
         "amazon-s3"
       ],
       "publishedAt": "2026-04-27T16:59:45.472Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "likesCount": 5,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CwsK9bgvwcCKuKvxT0zME2rsKe",
@@ -180,7 +180,7 @@
         "personal-expression"
       ],
       "publishedAt": "2026-04-27T15:35:00.089Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 1
     },
     {
@@ -224,8 +224,8 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 16,
-      "commentsCount": 2
+      "likesCount": 17,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -245,7 +245,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3409,
+      "likesCount": 3410,
       "commentsCount": 1912
     },
     {
@@ -266,8 +266,49 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3498,
+      "likesCount": 3510,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
+      "title": "Erros de segurança que iniciantes cometem na AWS (e como evitar)",
+      "description": "Começar a utilizar a AWS é um processo ágil e acessível, porém essa facilidade pode levar à negligência de aspectos fundamentais de segurança. Este conteúdo apresenta os principais erros cometidos por iniciantes e orienta sobre como evitá-los na prática, desde o uso inadequado do usuário root até a exposição de credenciais e a ausência de monitoramento. Trata-se de um guia objetivo para fortalecer a segurança da sua conta desde o início e prevenir riscos operacionais e financeiros",
+      "url": "https://builder.aws.com/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
+      "imageUrl": "",
+      "authorName": "João Lucca Rodrigues e Silva",
+      "authorAlias": "lucca11",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5xS8rPbmruTM9mI7CGqcHF3Rs.webp",
+      "location": "GO, BR",
+      "lat": -15.9323662,
+      "lng": -50.1392928,
+      "tags": [
+        "cybersecurity",
+        "amazon-s3"
+      ],
+      "publishedAt": "2026-04-27T16:59:45.472Z",
+      "likesCount": 5,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2840,
+      "commentsCount": 316
     },
     {
       "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
@@ -290,27 +331,6 @@
       "publishedAt": "2026-04-27T13:57:07.015Z",
       "likesCount": 10,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2840,
-      "commentsCount": 316
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
@@ -348,26 +368,6 @@
       "publishedAt": "2026-04-22T00:31:45.195Z",
       "likesCount": 41,
       "commentsCount": 168
-    },
-    {
-      "id": "/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
-      "title": "Erros de segurança que iniciantes cometem na AWS (e como evitar)",
-      "description": "Começar a utilizar a AWS é um processo ágil e acessível, porém essa facilidade pode levar à negligência de aspectos fundamentais de segurança. Este conteúdo apresenta os principais erros cometidos por iniciantes e orienta sobre como evitá-los na prática, desde o uso inadequado do usuário root até a exposição de credenciais e a ausência de monitoramento. Trata-se de um guia objetivo para fortalecer a segurança da sua conta desde o início e prevenir riscos operacionais e financeiros",
-      "url": "https://builder.aws.com/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
-      "imageUrl": "",
-      "authorName": "João Lucca Rodrigues e Silva",
-      "authorAlias": "lucca11",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5xS8rPbmruTM9mI7CGqcHF3Rs.webp",
-      "location": "GO, BR",
-      "lat": -15.9323662,
-      "lng": -50.1392928,
-      "tags": [
-        "cybersecurity",
-        "amazon-s3"
-      ],
-      "publishedAt": "2026-04-27T16:59:45.472Z",
-      "likesCount": 3,
-      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -408,7 +408,7 @@
         "personal-expression"
       ],
       "publishedAt": "2026-04-27T15:35:00.089Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 1
     }
   ]
