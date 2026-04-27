@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-04-27T10:40:00.019Z",
+  "updatedAt": "2026-04-27T11:33:54.891Z",
   "latest": [
+    {
+      "id": "/content/3CwGtLWXdlWyubyzdqX8IyPGPDN",
+      "title": "AWS API のレート制限に引っかからないバッチ処理を chunk-processで実装する",
+      "description": "chunk-processというnpmのライブラリをMITで公開しています。バッチ処理を実施する際のチャンク作成やバッチサイズの調整などをサポートします。",
+      "url": "https://builder.aws.com/content/3CwGtLWXdlWyubyzdqX8IyPGPDN",
+      "imageUrl": "",
+      "authorName": "Hidetaka Okamoto",
+      "authorAlias": "hidetaka",
+      "authorAvatarUrl": "",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "developer-productivity",
+        "open-source"
+      ],
+      "publishedAt": "2026-04-27T11:32:26.220Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/38bxoFbKHA1j7TZ4iNYwCCFBD0F",
       "title": "From Infrastructure as Code to Infrastructure as Intent: How GenAI is reshaping the way we build",
@@ -295,7 +315,7 @@
         "builder-spaces"
       ],
       "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 5
     },
     {
@@ -360,27 +380,6 @@
         "amazon-bedrock"
       ],
       "publishedAt": "2026-04-27T00:15:30.936Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CumG8G7z78VGFgxm0VKGJJIjEL",
-      "title": "Amazon Inspector Code Security: Shifting Left with Automated Vulnerability Detection",
-      "description": "In today’s fast-paced development world, security can’t wait until deployment. It has to start at the code level. That’s exactly where Amazon Inspector Code Security comes in—bringing automated vulnerability detection directly into your development workflow so issues are caught early, not after release.",
-      "url": "https://builder.aws.com/content/3CumG8G7z78VGFgxm0VKGJJIjEL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CumMB4MobliKeT83RdO9r6zItG/Amaz.webp",
-      "authorName": "Kugan",
-      "authorAlias": "nkg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rYdBum4aFvqs7kDbYMIbTdegii.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "security",
-        "cloud-security",
-        "security-hub"
-      ],
-      "publishedAt": "2026-04-26T22:55:01.850Z",
       "likesCount": 1,
       "commentsCount": 1
     }
@@ -529,7 +528,7 @@
         "builder-spaces"
       ],
       "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 5
     },
     {
@@ -552,8 +551,8 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 27,
-      "commentsCount": 18
+      "likesCount": 28,
+      "commentsCount": 19
     },
     {
       "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
