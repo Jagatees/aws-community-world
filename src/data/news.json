@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-27T19:32:06.099Z",
+  "updatedAt": "2026-04-27T20:24:28.651Z",
   "latest": [
+    {
+      "id": "/content/3CxFmDQNaPS7hiCrgDXkPcljhfN",
+      "title": "Como funciona um site na internet",
+      "description": "Você já parou pra pensar no que acontece entre digitar um endereço no navegador e ver a página carregada na sua tela? Como algo que pode ter sido criado em qualquer lugar no mundo chega tão rápido até a gente? Nesse artigo, vamos desvendar juntos o caminho que um site percorre até chegar até você.",
+      "url": "https://builder.aws.com/content/3CxFmDQNaPS7hiCrgDXkPcljhfN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxFxK4QQJ3p02vzxt60KmJzDir/Capa.webp",
+      "authorName": "Giovana Armani",
+      "authorAlias": "giarmani",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3573GdqSAu7L5eoooCmwJRVlAGq.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-27T20:02:49.407Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cx39VRdRkKQyKIxgSWgjLvE0Fk",
       "title": "Kodai Kondattam: How Madurai Hosted One of India's Most Memorable Tech Meetups",
@@ -20,8 +37,8 @@
     },
     {
       "id": "/content/39FtCLxgo9hXOly3NtwlC91wBNz",
-      "title": "Create a phased credential migration path with IAM Access Analyzer",
-      "description": "This article outlines a four-phase approach - discover, deactivate, delete, and replace -for migrating away from static AWS IAM access keys using IAM Access Analyzer and automated Step Functions workflows. It provides practical guidance on safely identifying unused credentials, eliminating security risks through reversible deactivation and human-approved deletion, and transitioning to temporary credential mechanisms like IAM roles and IAM Identity Center.",
+      "title": "Automate IAM Access keys lifecycle with Human-in-the-loop",
+      "description": "Learn how to migrate away from static unused AWS IAM access keys using a three-phase approach- discover, deactivate and delete- with IAM Access Analyzer and Step Functions. This solution also includes a human-in-the-loop approval step before permanent deletion.",
       "url": "https://builder.aws.com/content/39FtCLxgo9hXOly3NtwlC91wBNz",
       "imageUrl": "",
       "authorName": "Aniket",
@@ -115,7 +132,7 @@
         "amazon-s3"
       ],
       "publishedAt": "2026-04-27T16:59:45.472Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 2
     },
     {
@@ -180,53 +197,11 @@
         "personal-expression"
       ],
       "publishedAt": "2026-04-27T15:35:00.089Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CwhZWqHShgGR1fK7f3imbrEPsa",
-      "title": "Como Construir Software Quando Humanos Direcionam e Agentes de IA Executam",
-      "description": "Uma análise de Harness Engineering: as skills, documentação, regras de lint, agentes de revisão e loops de feedback que permitem que agentes de código entreguem código pronto para produção com minima intervenção humana.",
-      "url": "https://builder.aws.com/content/3CwhZWqHShgGR1fK7f3imbrEPsa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwhumSifMm4dAIxBwY5yq88ax0/Chat.webp",
-      "authorName": "Carlos Biagolini",
-      "authorAlias": "cbiagolini",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "ai",
-        "developer-tools",
-        "kiro",
-        "self-development",
-        "spec-drivien-development"
-      ],
-      "publishedAt": "2026-04-27T15:25:49.789Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 17,
-      "commentsCount": 3
-    },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
@@ -247,6 +222,25 @@
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3410,
       "commentsCount": 1912
+    },
+    {
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 18,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -270,24 +264,26 @@
       "commentsCount": 323
     },
     {
-      "id": "/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
-      "title": "Erros de segurança que iniciantes cometem na AWS (e como evitar)",
-      "description": "Começar a utilizar a AWS é um processo ágil e acessível, porém essa facilidade pode levar à negligência de aspectos fundamentais de segurança. Este conteúdo apresenta os principais erros cometidos por iniciantes e orienta sobre como evitá-los na prática, desde o uso inadequado do usuário root até a exposição de credenciais e a ausência de monitoramento. Trata-se de um guia objetivo para fortalecer a segurança da sua conta desde o início e prevenir riscos operacionais e financeiros",
-      "url": "https://builder.aws.com/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
-      "imageUrl": "",
-      "authorName": "João Lucca Rodrigues e Silva",
-      "authorAlias": "lucca11",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5xS8rPbmruTM9mI7CGqcHF3Rs.webp",
-      "location": "GO, BR",
-      "lat": -15.9323662,
-      "lng": -50.1392928,
+      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
+      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
-        "cybersecurity",
-        "amazon-s3"
+        "ai",
+        "social-impact",
+        "aideas-2025",
+        "students"
       ],
-      "publishedAt": "2026-04-27T16:59:45.472Z",
-      "likesCount": 5,
-      "commentsCount": 2
+      "publishedAt": "2026-04-27T13:57:07.015Z",
+      "likesCount": 12,
+      "commentsCount": 4
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -311,26 +307,24 @@
       "commentsCount": 316
     },
     {
-      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
-      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
+      "title": "Erros de segurança que iniciantes cometem na AWS (e como evitar)",
+      "description": "Começar a utilizar a AWS é um processo ágil e acessível, porém essa facilidade pode levar à negligência de aspectos fundamentais de segurança. Este conteúdo apresenta os principais erros cometidos por iniciantes e orienta sobre como evitá-los na prática, desde o uso inadequado do usuário root até a exposição de credenciais e a ausência de monitoramento. Trata-se de um guia objetivo para fortalecer a segurança da sua conta desde o início e prevenir riscos operacionais e financeiros",
+      "url": "https://builder.aws.com/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
+      "imageUrl": "",
+      "authorName": "João Lucca Rodrigues e Silva",
+      "authorAlias": "lucca11",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5xS8rPbmruTM9mI7CGqcHF3Rs.webp",
+      "location": "GO, BR",
+      "lat": -15.9323662,
+      "lng": -50.1392928,
       "tags": [
-        "ai",
-        "social-impact",
-        "aideas-2025",
-        "students"
+        "cybersecurity",
+        "amazon-s3"
       ],
-      "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 10,
-      "commentsCount": 3
+      "publishedAt": "2026-04-27T16:59:45.472Z",
+      "likesCount": 6,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
@@ -378,9 +372,9 @@
       "authorName": "Athelesh Balachandran",
       "authorAlias": "athelesh",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
       "tags": [
         "aideas-2025",
         "commercial-solutions",
@@ -408,7 +402,7 @@
         "personal-expression"
       ],
       "publishedAt": "2026-04-27T15:35:00.089Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 1
     }
   ]
