@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-04-26T23:13:56.191Z",
+  "updatedAt": "2026-04-27T00:29:01.144Z",
   "latest": [
+    {
+      "id": "/content/3CrcNNA4hBSIEcCxKVyO1bVt2JC",
+      "title": "What Building with AWS Looks Like, and Resources Available for Curious Learners",
+      "description": "This article dives into some of the resources in the Build section of the Builder Center, such as the Toolbox, Workshops, Capabilities, and plenty more!",
+      "url": "https://builder.aws.com/content/3CrcNNA4hBSIEcCxKVyO1bVt2JC",
+      "imageUrl": "",
+      "authorName": "Henry Hare",
+      "authorAlias": "dreadfall",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5jMtU2VNiKxqFUJMIDwtHeX6S.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-builders",
+        "aws-community-builders",
+        "builder-center",
+        "workshop"
+      ],
+      "publishedAt": "2026-04-27T00:28:52.284Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CuvRVmbvmB0YYX2ekY1BCcFRJ5",
+      "title": "Give Kiro CLI Memory That Survives Sessions",
+      "description": "Stop re-explaining your project to Kiro CLI every day. A lightweight MCP server + async daemon for filesystem persistent session memory.",
+      "url": "https://builder.aws.com/content/3CuvRVmbvmB0YYX2ekY1BCcFRJ5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuxFU8GXICsOoTfOJsbFjFikn2/Gemi.webp",
+      "authorName": "Thiago",
+      "authorAlias": "verney",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
+      "location": "TX, US",
+      "lat": 31.2638905,
+      "lng": -98.5456116,
+      "tags": [
+        "kiro",
+        "mcp",
+        "ai-agents",
+        "kiro-agent",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-27T00:15:30.936Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CumG8G7z78VGFgxm0VKGJJIjEL",
       "title": "Amazon Inspector Code Security: Shifting Left with Automated Vulnerability Detection",
@@ -19,8 +64,8 @@
         "security-hub"
       ],
       "publishedAt": "2026-04-26T22:55:01.850Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CpaUa4eWYvZrjLtRtLi8dky4UO",
@@ -140,7 +185,7 @@
         "beginner-projects"
       ],
       "publishedAt": "2026-04-26T20:04:45.850Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -157,46 +202,6 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-04-26T19:52:41.773Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cs0IaF84wIWPyp9wuzLLPgXWoI",
-      "title": "How AWS Builder Center Helped Me Get Hands-On with Cloud Security",
-      "description": "Sharing how joining AWS Builder Center helped me gain hands-on experience, connect with like-minded students, and strengthen my understanding of cloud security through real-world labs.",
-      "url": "https://builder.aws.com/content/3Cs0IaF84wIWPyp9wuzLLPgXWoI",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuQFgXfhcAGopGKJ7U3bCQJPD2/maxr.webp",
-      "authorName": "Joshua Martinez",
-      "authorAlias": "joshmartinez1031",
-      "authorAvatarUrl": "",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-04-26T19:44:38.594Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CsL3aKKZ4YXQBkcdbJQlpd7Kvz",
-      "title": "Why Am I Learning to Code Anymore?",
-      "description": "In the age of AI, where do we stand as students? Is there even a position to have for something so new? Should we be railguarding it while we still can or should watch where the rocket takes us?",
-      "url": "https://builder.aws.com/content/3CsL3aKKZ4YXQBkcdbJQlpd7Kvz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuPRh77Cu8BxeW22XhZk9DvpmS/best.webp",
-      "authorName": "Corwin Lee",
-      "authorAlias": "cordub",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "learn",
-        "career",
-        "developer",
-        "students"
-      ],
-      "publishedAt": "2026-04-26T19:41:31.368Z",
       "likesCount": 0,
       "commentsCount": 0
     }
@@ -283,6 +288,29 @@
       "commentsCount": 168
     },
     {
+      "id": "/content/3CuvRVmbvmB0YYX2ekY1BCcFRJ5",
+      "title": "Give Kiro CLI Memory That Survives Sessions",
+      "description": "Stop re-explaining your project to Kiro CLI every day. A lightweight MCP server + async daemon for filesystem persistent session memory.",
+      "url": "https://builder.aws.com/content/3CuvRVmbvmB0YYX2ekY1BCcFRJ5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuxFU8GXICsOoTfOJsbFjFikn2/Gemi.webp",
+      "authorName": "Thiago",
+      "authorAlias": "verney",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
+      "location": "TX, US",
+      "lat": 31.2638905,
+      "lng": -98.5456116,
+      "tags": [
+        "kiro",
+        "mcp",
+        "ai-agents",
+        "kiro-agent",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-27T00:15:30.936Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -348,7 +376,7 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 22,
+      "likesCount": 23,
       "commentsCount": 17
     },
     {
@@ -370,7 +398,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1398,
+      "likesCount": 1400,
       "commentsCount": 323
     },
     {
@@ -391,27 +419,6 @@
       "publishedAt": "2026-04-25T15:50:22.827Z",
       "likesCount": 20,
       "commentsCount": 13
-    },
-    {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1129,
-      "commentsCount": 202
     }
   ]
 }
