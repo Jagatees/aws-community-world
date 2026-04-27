@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T22:17:48.312Z",
+  "updatedAt": "2026-04-27T23:19:07.322Z",
   "latest": [
     {
       "id": "/content/3CxKesR62aPuZHM3qQzqCGzOW00",
@@ -216,7 +216,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3412,
+      "likesCount": 3413,
       "commentsCount": 1912
     },
     {
@@ -256,30 +256,8 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 19,
+      "likesCount": 21,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
-      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "ai",
-        "social-impact",
-        "aideas-2025",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 13,
-      "commentsCount": 6
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -301,6 +279,28 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2840,
       "commentsCount": 316
+    },
+    {
+      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
+      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "social-impact",
+        "aideas-2025",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T13:57:07.015Z",
+      "likesCount": 14,
+      "commentsCount": 6
     },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
@@ -382,30 +382,31 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 29,
+      "likesCount": 30,
       "commentsCount": 20
     },
     {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxELt4JqtRZe8WXnoA2UbT4pl3.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
+      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "title": "Essa tal de nuvem... fica muito distante do chão?",
+      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
+      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
+      "authorName": "Amanda Y.",
+      "authorAlias": "yuminhercodedays",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
+        "aws-builders",
+        "aspiring-builders",
+        "architecture",
+        "cloud-adoption-framework",
+        "tips"
       ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1410,
-      "commentsCount": 325
+      "publishedAt": "2026-04-25T19:08:26.188Z",
+      "likesCount": 26,
+      "commentsCount": 22
     }
   ]
 }
