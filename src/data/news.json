@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-04-27T05:05:20.835Z",
+  "updatedAt": "2026-04-27T06:53:17.831Z",
   "latest": [
+    {
+      "id": "/content/3CvTSenARoN6NKSPkWWW9X6AuTh",
+      "title": "What I Learned by Mapping a Real Problem to AWS",
+      "description": "A non-CS student rebuilds the operations system for a campus dispenser network by mapping each pain point to an AWS service through Builder Center. Cloud architecture stopped being a mysterious concept and started being a checklist.",
+      "url": "https://builder.aws.com/content/3CvTSenARoN6NKSPkWWW9X6AuTh",
+      "imageUrl": "",
+      "authorName": "Juan Garcia Fuentes",
+      "authorAlias": "juanagf22",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students",
+        "agile"
+      ],
+      "publishedAt": "2026-04-27T05:27:40.431Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CvQMN4tsO1J3mHhIPgasmv9Iq2",
       "title": "Why Business Students Can't Afford to Ignore AI and the Cloud Anymore — And Where I'm Learning About Both",
@@ -188,28 +208,8 @@
         "builder-spaces"
       ],
       "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 5
-    },
-    {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cv00mJFibVOyvHdQqZKfOskrgE/Imag.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 20,
-      "commentsCount": 14
     }
   ],
   "trending": [
@@ -230,7 +230,7 @@
         "students"
       ],
       "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 20,
+      "likesCount": 23,
       "commentsCount": 14
     },
     {
@@ -255,29 +255,6 @@
       "commentsCount": 1911
     },
     {
-      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
-      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
-      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
-      "authorName": "Clay Zeballos",
-      "authorAlias": "clayzeballos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "linux",
-        "terminal",
-        "students",
-        "aws-cloud-clubs",
-        "builder-spaces"
-      ],
-      "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 5,
-      "commentsCount": 5
-    },
-    {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
       "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
@@ -297,6 +274,29 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3498,
       "commentsCount": 321
+    },
+    {
+      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
+      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
+      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
+      "authorName": "Clay Zeballos",
+      "authorAlias": "clayzeballos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
+      "location": "DF, BR",
+      "lat": -15.7754462,
+      "lng": -47.7970891,
+      "tags": [
+        "linux",
+        "terminal",
+        "students",
+        "aws-cloud-clubs",
+        "builder-spaces"
+      ],
+      "publishedAt": "2026-04-27T02:00:16.783Z",
+      "likesCount": 6,
+      "commentsCount": 5
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
