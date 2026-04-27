@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-04-27T14:41:58.869Z",
+  "updatedAt": "2026-04-27T15:34:47.170Z",
   "latest": [
+    {
+      "id": "/content/3CwhZWqHShgGR1fK7f3imbrEPsa",
+      "title": "Como Construir Software Quando Humanos Direcionam e Agentes de IA Executam",
+      "description": "Uma análise de Harness Engineering: as skills, documentação, regras de lint, agentes de revisão e loops de feedback que permitem que agentes de código entreguem código pronto para produção com minima intervenção humana.",
+      "url": "https://builder.aws.com/content/3CwhZWqHShgGR1fK7f3imbrEPsa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwhumSifMm4dAIxBwY5yq88ax0/Chat.webp",
+      "authorName": "Carlos Biagolini",
+      "authorAlias": "cbiagolini",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "ai",
+        "developer-tools",
+        "kiro",
+        "self-development",
+        "spec-drivien-development"
+      ],
+      "publishedAt": "2026-04-27T15:25:49.789Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CwdHkDbqRp1lULaI7MDB72wJV4",
+      "title": "Building an AI-Powered Document Processing Pipeline on AWS",
+      "description": "A hands-on workshop: Amazon Textract + Amazon Bedrock + DynamoDB for intelligent document classification",
+      "url": "https://builder.aws.com/content/3CwdHkDbqRp1lULaI7MDB72wJV4",
+      "imageUrl": "",
+      "authorName": "Chandramouli Pitchaiyappan",
+      "authorAlias": "mouli15",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WIfN8hG5HKkIzs0QYfFj5jePT.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [
+        "ai",
+        "ai-services",
+        "amazon-bedrock",
+        "amazon-dynamodb"
+      ],
+      "publishedAt": "2026-04-27T14:51:15.906Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 11,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
       "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
@@ -20,8 +84,8 @@
         "students"
       ],
       "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "likesCount": 6,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CiNNWakf1xkG9htQyKDhlYew30",
@@ -365,72 +429,28 @@
       "publishedAt": "2026-04-27T04:07:56.815Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
-      "title": "From Stuck to Shipped: How Amazon Q Developer Can Supercharge Your CS Coursework",
-      "description": "A beginner-friendly tutorial for CS students on using Amazon Q Developer in VS Code to debug code, understand concepts, and work through programming assignments more efficiently — without skipping the learning.\n",
-      "url": "https://builder.aws.com/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
-      "imageUrl": "",
-      "authorName": "Ali Soliman",
-      "authorAlias": "atsoli",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "amazon-q",
-        "amazon-q-developer"
-      ],
-      "publishedAt": "2026-04-27T02:32:18.619Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
-      "title": "From Curious to Building: How I Used AWS to Start Exploring AI",
-      "description": "As a computer science student passionate about AI, I discovered how AWS Builder Center and Amazon Bedrock made it possible to build real AI applications without training models from scratch. Here is what I explored and how you can get started too.",
-      "url": "https://builder.aws.com/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
-      "imageUrl": "",
-      "authorName": "Anurag Pokala",
-      "authorAlias": "anurag34",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-27T02:29:55.242Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
-      "title": "How Criminal Justice Students can use the AWS Builder Center and Other Resources",
-      "description": "Not having known much about cloud computing or AWS resources in general, here are some things I have learned about AWS and how I can share my knowledge so other criminal justice students, like myself,  can use it to their advantage. ",
-      "url": "https://builder.aws.com/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
-      "imageUrl": "",
-      "authorName": "Sophia Sidler",
-      "authorAlias": "sidlersk12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bxv9yNRShjLiLmPInHJsjJCzpm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students",
-        "cybersecurity",
-        "data-storage",
-        "cloud-storage",
-        "policy"
-      ],
-      "publishedAt": "2026-04-27T02:16:49.605Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 11,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
@@ -451,6 +471,28 @@
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3408,
       "commentsCount": 1912
+    },
+    {
+      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
+      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "social-impact",
+        "aideas-2025",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T13:57:07.015Z",
+      "likesCount": 6,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -492,28 +534,6 @@
       "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 23,
       "commentsCount": 14
-    },
-    {
-      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
-      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "ai",
-        "social-impact",
-        "aideas-2025",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 3,
-      "commentsCount": 1
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -621,29 +641,6 @@
       "publishedAt": "2026-04-25T18:55:47.989Z",
       "likesCount": 28,
       "commentsCount": 19
-    },
-    {
-      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "title": "Essa tal de nuvem... fica muito distante do chão?",
-      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
-      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
-      "authorName": "Amanda Y.",
-      "authorAlias": "yuminhercodedays",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aspiring-builders",
-        "architecture",
-        "cloud-adoption-framework",
-        "tips"
-      ],
-      "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 22,
-      "commentsCount": 21
     }
   ]
 }
