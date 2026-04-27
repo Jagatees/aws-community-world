@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-04-27T11:33:54.891Z",
+  "updatedAt": "2026-04-27T12:32:04.696Z",
   "latest": [
+    {
+      "id": "/content/3CwLBd55j84UoWtnCtayPbOf9fB",
+      "title": "O que é esse tal de AWS Builder Center? (Dicas de quem também tá na jornada) ☁️🚀",
+      "description": "Muita gente me pergunta por onde começar na AWS sem ficar doido com tanto serviço. Se você nunca ouviu falar do AWS Builder Center, para tudo e presta atenção aqui, porque ele é o caminho mais curto pra você sair do zero.\n\nSe eu tivesse que te explicar ele hoje, sendo bem direto, eu diria o seguinte:",
+      "url": "https://builder.aws.com/content/3CwLBd55j84UoWtnCtayPbOf9fB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwLm1s9JJWkxOQgrnZLQ05huK0/f37b.webp",
+      "authorName": "Gabriel Campos Seemann",
+      "authorAlias": "gseemann",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "students",
+        "builder-spaces"
+      ],
+      "publishedAt": "2026-04-27T12:22:47.772Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CwGtLWXdlWyubyzdqX8IyPGPDN",
       "title": "AWS API のレート制限に引っかからないバッチ処理を chunk-processで実装する",
@@ -317,94 +338,9 @@
       "publishedAt": "2026-04-27T02:00:16.783Z",
       "likesCount": 7,
       "commentsCount": 5
-    },
-    {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cv00mJFibVOyvHdQqZKfOskrgE/Imag.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 23,
-      "commentsCount": 14
-    },
-    {
-      "id": "/content/3CrcNNA4hBSIEcCxKVyO1bVt2JC",
-      "title": "What Building with AWS Looks Like, and Resources Available for Curious Learners",
-      "description": "This article dives into some of the resources in the Build section of the Builder Center, such as the Toolbox, Workshops, Capabilities, and plenty more!",
-      "url": "https://builder.aws.com/content/3CrcNNA4hBSIEcCxKVyO1bVt2JC",
-      "imageUrl": "",
-      "authorName": "Henry Hare",
-      "authorAlias": "dreadfall",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5jMtU2VNiKxqFUJMIDwtHeX6S.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-builders",
-        "aws-community-builders",
-        "builder-center",
-        "workshop"
-      ],
-      "publishedAt": "2026-04-27T00:28:52.284Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CuvRVmbvmB0YYX2ekY1BCcFRJ5",
-      "title": "Give Kiro CLI Memory That Survives Sessions",
-      "description": "Stop re-explaining your project to Kiro CLI every day. A lightweight MCP server + async daemon for filesystem persistent session memory.",
-      "url": "https://builder.aws.com/content/3CuvRVmbvmB0YYX2ekY1BCcFRJ5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuxFU8GXICsOoTfOJsbFjFikn2/Gemi.webp",
-      "authorName": "Thiago",
-      "authorAlias": "verney",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "kiro",
-        "mcp",
-        "ai-agents",
-        "kiro-agent",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-04-27T00:15:30.936Z",
-      "likesCount": 1,
-      "commentsCount": 1
     }
   ],
   "trending": [
-    {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cv00mJFibVOyvHdQqZKfOskrgE/Imag.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 23,
-      "commentsCount": 14
-    },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
@@ -425,6 +361,26 @@
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3407,
       "commentsCount": 1911
+    },
+    {
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cv00mJFibVOyvHdQqZKfOskrgE/Imag.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "advertising-marketing-industry",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T00:44:34.853Z",
+      "likesCount": 23,
+      "commentsCount": 14
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -465,7 +421,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2838,
+      "likesCount": 2839,
       "commentsCount": 315
     },
     {
@@ -482,7 +438,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 40,
+      "likesCount": 41,
       "commentsCount": 168
     },
     {
@@ -509,29 +465,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
-      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
-      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
-      "authorName": "Clay Zeballos",
-      "authorAlias": "clayzeballos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "linux",
-        "terminal",
-        "students",
-        "aws-cloud-clubs",
-        "builder-spaces"
-      ],
-      "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 7,
-      "commentsCount": 5
-    },
-    {
       "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
       "title": "Minha primeira semana no AWS Builder Center",
       "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
@@ -555,6 +488,29 @@
       "commentsCount": 19
     },
     {
+      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
+      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
+      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
+      "authorName": "Clay Zeballos",
+      "authorAlias": "clayzeballos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
+      "location": "DF, BR",
+      "lat": -15.7754462,
+      "lng": -47.7970891,
+      "tags": [
+        "linux",
+        "terminal",
+        "students",
+        "aws-cloud-clubs",
+        "builder-spaces"
+      ],
+      "publishedAt": "2026-04-27T02:00:16.783Z",
+      "likesCount": 7,
+      "commentsCount": 5
+    },
+    {
       "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
       "title": "Essa tal de nuvem... fica muito distante do chão?",
       "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
@@ -574,8 +530,8 @@
         "tips"
       ],
       "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 21,
-      "commentsCount": 20
+      "likesCount": 22,
+      "commentsCount": 21
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -596,7 +552,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1406,
+      "likesCount": 1407,
       "commentsCount": 323
     }
   ]
