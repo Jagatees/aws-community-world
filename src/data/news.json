@@ -1,6 +1,92 @@
 {
-  "updatedAt": "2026-04-27T01:35:21.266Z",
+  "updatedAt": "2026-04-27T03:05:45.627Z",
   "latest": [
+    {
+      "id": "/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
+      "title": "From Stuck to Shipped: How Amazon Q Developer Can Supercharge Your CS Coursework",
+      "description": "A beginner-friendly tutorial for CS students on using Amazon Q Developer in VS Code to debug code, understand concepts, and work through programming assignments more efficiently — without skipping the learning.\n",
+      "url": "https://builder.aws.com/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
+      "imageUrl": "",
+      "authorName": "Ali Soliman",
+      "authorAlias": "atsoli",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "amazon-q",
+        "amazon-q-developer"
+      ],
+      "publishedAt": "2026-04-27T02:32:18.619Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
+      "title": "From Curious to Building: How I Used AWS to Start Exploring AI",
+      "description": "As a computer science student passionate about AI, I discovered how AWS Builder Center and Amazon Bedrock made it possible to build real AI applications without training models from scratch. Here is what I explored and how you can get started too.",
+      "url": "https://builder.aws.com/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
+      "imageUrl": "",
+      "authorName": "Anurag Pokala",
+      "authorAlias": "anurag34",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-04-27T02:29:55.242Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
+      "title": "How Criminal Justice Students can use the AWS Builder Center and Other Resources",
+      "description": "Not having known much about cloud computing or AWS resources in general, here are some things I have learned about AWS and how I can share my knowledge so other criminal justice students, like myself,  can use it to their advantage. ",
+      "url": "https://builder.aws.com/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
+      "imageUrl": "",
+      "authorName": "Sophia Sidler",
+      "authorAlias": "sidlersk12",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bxv9yNRShjLiLmPInHJsjJCzpm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students",
+        "cybersecurity",
+        "data-storage",
+        "cloud-storage",
+        "policy"
+      ],
+      "publishedAt": "2026-04-27T02:16:49.605Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
+      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
+      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
+      "authorName": "Clay Zeballos",
+      "authorAlias": "clayzeballos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
+      "location": "DF, BR",
+      "lat": -15.7754462,
+      "lng": -47.7970891,
+      "tags": [
+        "linux",
+        "terminal",
+        "students",
+        "aws-cloud-clubs",
+        "builder-spaces"
+      ],
+      "publishedAt": "2026-04-27T02:00:16.783Z",
+      "likesCount": 3,
+      "commentsCount": 3
+    },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
       "title": "The Study Break That Gave Me Direction Again",
@@ -18,8 +104,8 @@
         "students"
       ],
       "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 3,
-      "commentsCount": 2
+      "likesCount": 16,
+      "commentsCount": 11
     },
     {
       "id": "/content/3CrcNNA4hBSIEcCxKVyO1bVt2JC",
@@ -123,90 +209,6 @@
       "publishedAt": "2026-04-26T21:13:04.771Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3BBGcslGH8s5x2Be4RLvHZN0aUq",
-      "title": "How I Built ResumeIQ: My First Full-Stack AWS Project as a Sophomore Computer Information Systems Student",
-      "description": "How I built a resume analysis web app with Next.js, OpenAI, and most importantly Amazon S3 and RDS—and what I wish I'd known before I started. ",
-      "url": "https://builder.aws.com/content/3BBGcslGH8s5x2Be4RLvHZN0aUq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuYYSzE100ownlEPjMi5cesifH/Scre.webp",
-      "authorName": "Christopher Feuchter",
-      "authorAlias": "chrisf",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BBGZnlFW8JgPKI57qN5fbmbz47.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-26T20:57:19.784Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CuMcCh8jz6tIAWFEaehy58ATHU",
-      "title": "AWS Backup Restore Testing for Aurora provisioned: Zero Lambda, Full Automation",
-      "description": "How to validate Aurora provisioned backups automatically using only Step Functions SDK integrations and the RDS Data API",
-      "url": "https://builder.aws.com/content/3CuMcCh8jz6tIAWFEaehy58ATHU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuOCNztyHHYAaLw7VVBNQ76HNu/awsb.webp",
-      "authorName": "Frank Pimienta",
-      "authorAlias": "frankpimienta",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2araHqCMPT5MrG24ZEV7WOPYH5C.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "aws-backup",
-        "aws-step-functions",
-        "amazon-aurora",
-        "cloud-operations"
-      ],
-      "publishedAt": "2026-04-26T20:29:26.285Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CuQC7jbShM3MhNauZbAl7Y7xCS",
-      "title": "Why Every Student Builder Needs a Global Community",
-      "description": "AWS Builder Center is the global hub where student builders connect, learn, and grow together. Through Spaces, you can ask questions, share projects, and get feedback from peers worldwide. Guided by AWS Heroes like Darrel Ruggles, who inspire with their innovative thinking and real-world creations, Builder Center empowers students to build communities, develop portfolio-ready projects, and shape their cloud journey without barriers.",
-      "url": "https://builder.aws.com/content/3CuQC7jbShM3MhNauZbAl7Y7xCS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuSRVlZyJ1JbqwthnpDstxmAm2/AWS-.webp",
-      "authorName": "Aniket Kumar",
-      "authorAlias": "ayk20aniket",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3A2P5z6GwdeAyZC8lNuc7qN191q.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "advertising-marketing-industry",
-        "advanced-networking",
-        "aspiring-builders",
-        "aws-ambassador",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-26T20:10:37.491Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/35ihzDiwv03fONkRRe34HT1UBhr",
-      "title": "My First Article on AWS Builder Center",
-      "description": "A personal introduction to my journey into cloud computing, how I discovered AWS, and where I’m starting from as an aspiring cloud-driven developer",
-      "url": "https://builder.aws.com/content/35ihzDiwv03fONkRRe34HT1UBhr",
-      "imageUrl": "",
-      "authorName": "Habiba Jibril Yahaya",
-      "authorAlias": "barbex88",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CuRBFwK8UVz0xeIYjldNIUZgta.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-26T20:04:45.850Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -227,8 +229,8 @@
         "students"
       ],
       "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 3,
-      "commentsCount": 2
+      "likesCount": 16,
+      "commentsCount": 11
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -250,6 +252,29 @@
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3406,
       "commentsCount": 1911
+    },
+    {
+      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
+      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
+      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
+      "authorName": "Clay Zeballos",
+      "authorAlias": "clayzeballos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
+      "location": "DF, BR",
+      "lat": -15.7754462,
+      "lng": -47.7970891,
+      "tags": [
+        "linux",
+        "terminal",
+        "students",
+        "aws-cloud-clubs",
+        "builder-spaces"
+      ],
+      "publishedAt": "2026-04-27T02:00:16.783Z",
+      "likesCount": 3,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -376,31 +401,8 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 23,
+      "likesCount": 24,
       "commentsCount": 17
-    },
-    {
-      "id": "/content/3CuvRVmbvmB0YYX2ekY1BCcFRJ5",
-      "title": "Give Kiro CLI Memory That Survives Sessions",
-      "description": "Stop re-explaining your project to Kiro CLI every day. A lightweight MCP server + async daemon for filesystem persistent session memory.",
-      "url": "https://builder.aws.com/content/3CuvRVmbvmB0YYX2ekY1BCcFRJ5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuxFU8GXICsOoTfOJsbFjFikn2/Gemi.webp",
-      "authorName": "Thiago",
-      "authorAlias": "verney",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "kiro",
-        "mcp",
-        "ai-agents",
-        "kiro-agent",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-04-27T00:15:30.936Z",
-      "likesCount": 1,
-      "commentsCount": 1
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
