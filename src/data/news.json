@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-04-27T06:53:17.831Z",
+  "updatedAt": "2026-04-27T07:48:11.650Z",
   "latest": [
+    {
+      "id": "/content/3CaPlJy3SB4i4xFcUf4ITUgAu7f",
+      "title": "Skills vs Tools vs Rules vs MCP Tools: Implementing Agent & Skills with Langchain, AWS Bedrock Nova",
+      "description": "Differences between Skills, Tools, Rules, and MCP tools; Implementing 3 different skills (tools.py + markdown file) for different purposes; Agent can list, decide, load related skills; Sample Codes with AWS Bedrock and Langchain",
+      "url": "https://builder.aws.com/content/3CaPlJy3SB4i4xFcUf4ITUgAu7f",
+      "imageUrl": "",
+      "authorName": "Ömer Berat Sezer",
+      "authorAlias": "omerberatsezer",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38R7i0Zu7ieX899yEbzZAQzXCyp.webp",
+      "location": "Bavaria, DE",
+      "lat": 48.9467562,
+      "lng": 11.4038717,
+      "tags": [
+        "agents",
+        "langchain",
+        "amazon-bedrock",
+        "amazon-nova"
+      ],
+      "publishedAt": "2026-04-27T06:59:15.950Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CvTSenARoN6NKSPkWWW9X6AuTh",
       "title": "What I Learned by Mapping a Real Problem to AWS",
@@ -187,29 +209,6 @@
       "publishedAt": "2026-04-27T02:16:49.605Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
-      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
-      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
-      "authorName": "Clay Zeballos",
-      "authorAlias": "clayzeballos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "linux",
-        "terminal",
-        "students",
-        "aws-cloud-clubs",
-        "builder-spaces"
-      ],
-      "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 6,
-      "commentsCount": 5
     }
   ],
   "trending": [
@@ -276,6 +275,44 @@
       "commentsCount": 321
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2838,
+      "commentsCount": 315
+    },
+    {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 40,
+      "commentsCount": 168
+    },
+    {
       "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
       "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
       "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
@@ -297,44 +334,6 @@
       "publishedAt": "2026-04-27T02:00:16.783Z",
       "likesCount": 6,
       "commentsCount": 5
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2837,
-      "commentsCount": 315
-    },
-    {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 40,
-      "commentsCount": 168
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -424,7 +423,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1403,
+      "likesCount": 1404,
       "commentsCount": 323
     }
   ]
