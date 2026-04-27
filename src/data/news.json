@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T21:23:28.491Z",
+  "updatedAt": "2026-04-27T22:17:48.312Z",
   "latest": [
     {
       "id": "/content/3CxKesR62aPuZHM3qQzqCGzOW00",
@@ -216,7 +216,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3410,
+      "likesCount": 3412,
       "commentsCount": 1912
     },
     {
@@ -256,8 +256,30 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 18,
-      "commentsCount": 3
+      "likesCount": 19,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
+      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "social-impact",
+        "aideas-2025",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T13:57:07.015Z",
+      "likesCount": 13,
+      "commentsCount": 6
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -281,48 +303,6 @@
       "commentsCount": 316
     },
     {
-      "id": "/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
-      "title": "Erros de segurança que iniciantes cometem na AWS (e como evitar)",
-      "description": "Começar a utilizar a AWS é um processo ágil e acessível, porém essa facilidade pode levar à negligência de aspectos fundamentais de segurança. Este conteúdo apresenta os principais erros cometidos por iniciantes e orienta sobre como evitá-los na prática, desde o uso inadequado do usuário root até a exposição de credenciais e a ausência de monitoramento. Trata-se de um guia objetivo para fortalecer a segurança da sua conta desde o início e prevenir riscos operacionais e financeiros",
-      "url": "https://builder.aws.com/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
-      "imageUrl": "",
-      "authorName": "João Lucca Rodrigues e Silva",
-      "authorAlias": "lucca11",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5xS8rPbmruTM9mI7CGqcHF3Rs.webp",
-      "location": "GO, BR",
-      "lat": -15.9323662,
-      "lng": -50.1392928,
-      "tags": [
-        "cybersecurity",
-        "amazon-s3"
-      ],
-      "publishedAt": "2026-04-27T16:59:45.472Z",
-      "likesCount": 7,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
-      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "ai",
-        "social-impact",
-        "aideas-2025",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 12,
-      "commentsCount": 4
-    },
-    {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
       "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
       "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
@@ -336,7 +316,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 41,
+      "likesCount": 42,
       "commentsCount": 168
     },
     {
@@ -404,6 +384,28 @@
       "publishedAt": "2026-04-25T18:55:47.989Z",
       "likesCount": 29,
       "commentsCount": 20
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxELt4JqtRZe8WXnoA2UbT4pl3.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1410,
+      "commentsCount": 325
     }
   ]
 }
