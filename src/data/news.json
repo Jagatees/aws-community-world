@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-04-27T13:34:29.237Z",
+  "updatedAt": "2026-04-27T14:41:58.869Z",
   "latest": [
+    {
+      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
+      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "social-impact",
+        "aideas-2025",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T13:57:07.015Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3CiNNWakf1xkG9htQyKDhlYew30",
       "title": "De Estudante para Estudante: Por que você deve começar na AWS hoje?",
@@ -43,7 +65,7 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-27T13:11:16.080Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -173,7 +195,7 @@
       ],
       "publishedAt": "2026-04-27T08:35:50.422Z",
       "likesCount": 0,
-      "commentsCount": 0
+      "commentsCount": 1
     },
     {
       "id": "/content/3CvpNXHFYwM5LGAfp1EqJ9cdMo6",
@@ -343,6 +365,69 @@
       "publishedAt": "2026-04-27T04:07:56.815Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
+      "title": "From Stuck to Shipped: How Amazon Q Developer Can Supercharge Your CS Coursework",
+      "description": "A beginner-friendly tutorial for CS students on using Amazon Q Developer in VS Code to debug code, understand concepts, and work through programming assignments more efficiently — without skipping the learning.\n",
+      "url": "https://builder.aws.com/content/3BzpanE2ceHDbC6Hg2Kft3FydUy",
+      "imageUrl": "",
+      "authorName": "Ali Soliman",
+      "authorAlias": "atsoli",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "amazon-q",
+        "amazon-q-developer"
+      ],
+      "publishedAt": "2026-04-27T02:32:18.619Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
+      "title": "From Curious to Building: How I Used AWS to Start Exploring AI",
+      "description": "As a computer science student passionate about AI, I discovered how AWS Builder Center and Amazon Bedrock made it possible to build real AI applications without training models from scratch. Here is what I explored and how you can get started too.",
+      "url": "https://builder.aws.com/content/3CvBUorhDWT0n9TGOijwQYTQTSv",
+      "imageUrl": "",
+      "authorName": "Anurag Pokala",
+      "authorAlias": "anurag34",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-04-27T02:29:55.242Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
+      "title": "How Criminal Justice Students can use the AWS Builder Center and Other Resources",
+      "description": "Not having known much about cloud computing or AWS resources in general, here are some things I have learned about AWS and how I can share my knowledge so other criminal justice students, like myself,  can use it to their advantage. ",
+      "url": "https://builder.aws.com/content/3Cg8e8xe8OrErksmMiWbQBvOx5y",
+      "imageUrl": "",
+      "authorName": "Sophia Sidler",
+      "authorAlias": "sidlersk12",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bxv9yNRShjLiLmPInHJsjJCzpm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students",
+        "cybersecurity",
+        "data-storage",
+        "cloud-storage",
+        "policy"
+      ],
+      "publishedAt": "2026-04-27T02:16:49.605Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -365,7 +450,28 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3408,
-      "commentsCount": 1911
+      "commentsCount": 1912
+    },
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3498,
+      "commentsCount": 322
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
@@ -388,25 +494,26 @@
       "commentsCount": 14
     },
     {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
+      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
+        "ai",
         "social-impact",
-        "APJC",
-        "aideas-2025"
+        "aideas-2025",
+        "students"
       ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3498,
-      "commentsCount": 321
+      "publishedAt": "2026-04-27T13:57:07.015Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -470,27 +577,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3CwLBd55j84UoWtnCtayPbOf9fB",
-      "title": "O que é esse tal de AWS Builder Center? (Dicas de quem também tá na jornada) ☁️🚀",
-      "description": "Muita gente me pergunta por onde começar na AWS sem ficar doido com tanto serviço. Se você nunca ouviu falar do AWS Builder Center, para tudo e presta atenção aqui, porque ele é o caminho mais curto pra você sair do zero.\n\nSe eu tivesse que te explicar ele hoje, sendo bem direto, eu diria o seguinte:",
-      "url": "https://builder.aws.com/content/3CwLBd55j84UoWtnCtayPbOf9fB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwLm1s9JJWkxOQgrnZLQ05huK0/f37b.webp",
-      "authorName": "Gabriel Campos Seemann",
-      "authorAlias": "gseemann",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "students",
-        "builder-spaces"
-      ],
-      "publishedAt": "2026-04-27T12:22:47.772Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
       "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
       "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
@@ -511,7 +597,7 @@
       ],
       "publishedAt": "2026-04-27T02:00:16.783Z",
       "likesCount": 9,
-      "commentsCount": 6
+      "commentsCount": 7
     },
     {
       "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
