@@ -1,6 +1,72 @@
 {
-  "updatedAt": "2026-04-27T16:33:10.466Z",
+  "updatedAt": "2026-04-27T17:31:05.152Z",
   "latest": [
+    {
+      "id": "/content/3CwrHn1j3xKPpL0DYcngaVDEifl",
+      "title": "Kodai Kondattam: A Summer Celebration That Brought the Future to Madurai",
+      "description": "A half-day meetup that felt like a full conference. Kodai Kondattam by AWS User Group Madurai brought together Generative AI fundamentals, a history-making AI DeepRacer named Bumblebee — the first non-human chief guest at an AWS community meetup in India — and a creative AI storytelling session powered by Amazon Nova. Here's what made it unforgettable.",
+      "url": "https://builder.aws.com/content/3CwrHn1j3xKPpL0DYcngaVDEifl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwydcPn92jknHo9jJsc4Lipbzx/k2-j.webp",
+      "authorName": "KANISKASRI T S P",
+      "authorAlias": "kani272006",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "llm",
+        "amazon-nova",
+        "generative-ai",
+        "mcp",
+        "agents"
+      ],
+      "publishedAt": "2026-04-27T17:30:31.030Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
+      "title": "Erros de segurança que iniciantes cometem na AWS (e como evitar)",
+      "description": "Começar a utilizar a AWS é um processo ágil e acessível, porém essa facilidade pode levar à negligência de aspectos fundamentais de segurança. Este conteúdo apresenta os principais erros cometidos por iniciantes e orienta sobre como evitá-los na prática, desde o uso inadequado do usuário root até a exposição de credenciais e a ausência de monitoramento. Trata-se de um guia objetivo para fortalecer a segurança da sua conta desde o início e prevenir riscos operacionais e financeiros",
+      "url": "https://builder.aws.com/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
+      "imageUrl": "",
+      "authorName": "João Lucca Rodrigues e Silva",
+      "authorAlias": "lucca11",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5xS8rPbmruTM9mI7CGqcHF3Rs.webp",
+      "location": "GO, BR",
+      "lat": -15.9323662,
+      "lng": -50.1392928,
+      "tags": [
+        "cybersecurity",
+        "amazon-s3"
+      ],
+      "publishedAt": "2026-04-27T16:59:45.472Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CwsK9bgvwcCKuKvxT0zME2rsKe",
+      "title": "How I Delivered a Cross‑Account, Cross‑Region, Multilingual, Multi‑Modal AWS Bedrock Solution in a Zero Trust Environment",
+      "description": "This extension of the project enables the Zero Trust platform to become fully AI‑ready.  ",
+      "url": "https://builder.aws.com/content/3CwsK9bgvwcCKuKvxT0zME2rsKe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwsbKI2mCDtxvwSIbe0LRuaS27/Copi.webp",
+      "authorName": "Jonathan Wong",
+      "authorAlias": "jonanata",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdiLMbcx1U8Emj177eurPoDLV5.webp",
+      "location": "CA",
+      "lat": 61.0666922,
+      "lng": -107.991707,
+      "tags": [
+        "ai",
+        "aws-lambda",
+        "amazon-bedrock",
+        "cybersecurity",
+        "zero-trust"
+      ],
+      "publishedAt": "2026-04-27T16:47:08.754Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CwabvLB3DdXa0EqwJcxwPdXNxK",
       "title": "Bridging the AI Adoption Gap: From Early Adopters to Enterprise-Wide\nAI-Assisted Workflows with Amazon Kiro CLI",
@@ -104,7 +170,7 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 12,
+      "likesCount": 14,
       "commentsCount": 1
     },
     {
@@ -126,7 +192,7 @@
         "students"
       ],
       "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 2
     },
     {
@@ -150,75 +216,6 @@
       "publishedAt": "2026-04-27T13:26:34.427Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CwSVeqV1bV5Kl00e0VsDVXGTpT",
-      "title": "How AWS Free Tier Can Replace Most Paid Courses for Beginners",
-      "description": "This blog explores how the Amazon Web Services Free Tier can be a powerful, hands-on alternative to traditional paid courses for beginners. It focuses on learning by building real projects, avoiding common pitfalls, and using practical roadmaps to gain real-world cloud skills.",
-      "url": "https://builder.aws.com/content/3CwSVeqV1bV5Kl00e0VsDVXGTpT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwTcu7QPmiMLxZSMIeOyqIxJbl/boar.webp",
-      "authorName": "Manvendra Singh 🥑",
-      "authorAlias": "manvendra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39YwvWH5WMWRTfqMaDkMQ5UPrKN.webp",
-      "location": "Rajasthan, IN",
-      "lat": 26.8105777,
-      "lng": 73.7684549,
-      "tags": [
-        "students",
-        "amazon-ec2",
-        "beginner-projects",
-        "amazon-s3",
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T13:11:16.080Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CwQbrhAB1maerkpU06lL04ovbP",
-      "title": "AWS Bedrock AgentCore: The Infrastructure Layer Every Agent Platform Needs First",
-      "description": "The infrastructure layer is the foundation everything else runs on. This post covers the three AWS Bedrock AgentCore components every enterprise agent deployment needs before anything else: Runtime for managed agent hosting, Identity for integrating your existing IdP, and Gateway for a governed integration layer between agents and the tools they call. For architects making the decisions that are expensive to change later. ",
-      "url": "https://builder.aws.com/content/3CwQbrhAB1maerkpU06lL04ovbP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwSQ5VSt52N7GPHOuOVT5hhN75/59ca.webp",
-      "authorName": "Geethika Guruge",
-      "authorAlias": "geethika",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
-      "location": "NZ",
-      "lat": -41.5000831,
-      "lng": 172.8344077,
-      "tags": [
-        "ai-agents",
-        "amazon-bedrock-agentcore",
-        "mcp-integration",
-        "mcp",
-        "agents"
-      ],
-      "publishedAt": "2026-04-27T13:06:04.682Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CwHozu5zp3UUsCWW4qL0eQMfMN",
-      "title": "Before You Ship AI Agents at Enterprise Scale, Get the Foundations Right",
-      "description": "Building an AI agent is easy. Building an enterprise AI agent platform is not. This post makes the strategic case for getting foundations right before use cases: what enterprise readiness actually requires, how AWS Bedrock AgentCore addresses each concern as a suite of managed primitives, and why the sequencing of this investment matters as much as the investment itself. For technology leaders evaluating where to start with AI agents at scale. ",
-      "url": "https://builder.aws.com/content/3CwHozu5zp3UUsCWW4qL0eQMfMN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwOzxGgeAMc9Qvx026dEkc4XCM/Chat.webp",
-      "authorName": "Geethika Guruge",
-      "authorAlias": "geethika",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
-      "location": "NZ",
-      "lat": -41.5000831,
-      "lng": 172.8344077,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "ai-engineering",
-        "amazon-bedrock-agentcore",
-        "mcp-integration"
-      ],
-      "publishedAt": "2026-04-27T12:49:02.164Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -238,7 +235,7 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 12,
+      "likesCount": 14,
       "commentsCount": 1
     },
     {
@@ -284,28 +281,6 @@
       "commentsCount": 322
     },
     {
-      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
-      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "ai",
-        "social-impact",
-        "aideas-2025",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
       "title": "The Study Break That Gave Me Direction Again",
       "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
@@ -347,6 +322,28 @@
       "commentsCount": 316
     },
     {
+      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
+      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "social-impact",
+        "aideas-2025",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T13:57:07.015Z",
+      "likesCount": 7,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
       "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
       "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
@@ -362,25 +359,6 @@
       "publishedAt": "2026-04-22T00:31:45.195Z",
       "likesCount": 41,
       "commentsCount": 168
-    },
-    {
-      "id": "/content/3CoJPi0YeKs4wqI232ZgHeh5yXq",
-      "title": "Minha jornada começando no AWS Builder Center e como a Cloud está mudando o mercado",
-      "description": "Um relato inicial sobre aprendizado em cloud, mostrando como a computação em nuvem está transformando a forma como empresas desenvolvem e escalam suas soluções no mercado atual.",
-      "url": "https://builder.aws.com/content/3CoJPi0YeKs4wqI232ZgHeh5yXq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwkM2iyimw0R72S9vhVHnKTwhc/Inse.webp",
-      "authorName": "Miguel Ochoa",
-      "authorAlias": "ochoa",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cd7CjCVPjnLf4rx1ynrlC3abyK.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "personal-expression"
-      ],
-      "publishedAt": "2026-04-27T15:35:00.089Z",
-      "likesCount": 3,
-      "commentsCount": 0
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -427,6 +405,29 @@
       "publishedAt": "2026-04-27T02:00:16.783Z",
       "likesCount": 10,
       "commentsCount": 7
+    },
+    {
+      "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
+      "title": "Minha primeira semana no AWS Builder Center",
+      "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
+      "url": "https://builder.aws.com/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrUlPl8fphZ0CPvxoeDyfCEmip/Arti.webp",
+      "authorName": "Luiz Corbelli",
+      "authorAlias": "luizcorbelli",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CB7iejvw3lTUebPY9EoxPjhnn9.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "security",
+        "security-best-practices",
+        "iam",
+        "IaC",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-25T18:55:47.989Z",
+      "likesCount": 29,
+      "commentsCount": 20
     }
   ]
 }
