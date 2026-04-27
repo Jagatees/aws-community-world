@@ -1,6 +1,67 @@
 {
-  "updatedAt": "2026-04-27T20:24:28.651Z",
+  "updatedAt": "2026-04-27T21:23:28.491Z",
   "latest": [
+    {
+      "id": "/content/3CxKesR62aPuZHM3qQzqCGzOW00",
+      "title": "🚀 Elevating the Standard: From ASCII Diagrams to Visual Architectures with Kiro 101 and AWS MCP",
+      "description": "In the world of Cloud Engineering, precision is paramount. Recently, I migrated to a high-performance, cost-optimized environment under strict resource monitoring, which has enabled greater agility in my operations. After installing the Kiro IDE and CLI on Ubuntu, I consolidated what I consider a \"one possible professional workflow\" applicable to cloud architecture",
+      "url": "https://builder.aws.com/content/3CxKesR62aPuZHM3qQzqCGzOW00",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "CR",
+      "lat": 10.2735633,
+      "lng": -84.0739102,
+      "tags": [
+        "kiro",
+        "ai-for-developers"
+      ],
+      "publishedAt": "2026-04-27T20:43:32.572Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxIn4m2L7CtCcg84ABiLAglaqk",
+      "title": "Building Intelligence with AWS",
+      "description": "This is how I built the ACCIPITER: ALTUM branch in AWS AI Playground, and how AWS helped me push the frontiers of code.",
+      "url": "https://builder.aws.com/content/3CxIn4m2L7CtCcg84ABiLAglaqk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxKEDE6XJUB4IfXJM7EhYgN4qS/altu.webp",
+      "authorName": "Peter Loud",
+      "authorAlias": "pcl",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "amazon-bedrock",
+        "playgrounds"
+      ],
+      "publishedAt": "2026-04-27T20:31:54.431Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ClgBp137pv986TpQeOS22AmDUI",
+      "title": "Build a Live Streaming Application With Amazon IVS and Stream Chat",
+      "description": "Learn how to combine Amazon IVS low-latency and real-time streaming with Stream Chat to build a production-ready app featuring live video playback and interactive chat",
+      "url": "https://builder.aws.com/content/3ClgBp137pv986TpQeOS22AmDUI",
+      "imageUrl": "",
+      "authorName": "Tony Vu",
+      "authorAlias": "eanthovu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2l1xA0z8sfF6zHC084LNMwW5Obv.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "livestreaming",
+        "amazon-ivs"
+      ],
+      "publishedAt": "2026-04-27T20:26:34.794Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CxFmDQNaPS7hiCrgDXkPcljhfN",
       "title": "Como funciona um site na internet",
@@ -132,73 +193,8 @@
         "amazon-s3"
       ],
       "publishedAt": "2026-04-27T16:59:45.472Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CwsK9bgvwcCKuKvxT0zME2rsKe",
-      "title": "How I Delivered a Cross‑Account, Cross‑Region, Multilingual, Multi‑Modal AWS Bedrock Solution in a Zero Trust Environment",
-      "description": "This extension of the project enables the Zero Trust platform to become fully AI‑ready.  ",
-      "url": "https://builder.aws.com/content/3CwsK9bgvwcCKuKvxT0zME2rsKe",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwsbKI2mCDtxvwSIbe0LRuaS27/Copi.webp",
-      "authorName": "Jonathan Wong",
-      "authorAlias": "jonanata",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdiLMbcx1U8Emj177eurPoDLV5.webp",
-      "location": "CA",
-      "lat": 61.0666922,
-      "lng": -107.991707,
-      "tags": [
-        "ai",
-        "aws-lambda",
-        "amazon-bedrock",
-        "cybersecurity",
-        "zero-trust"
-      ],
-      "publishedAt": "2026-04-27T16:47:08.754Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CwabvLB3DdXa0EqwJcxwPdXNxK",
-      "title": "Bridging the AI Adoption Gap: From Early Adopters to Enterprise-Wide\nAI-Assisted Workflows with Amazon Kiro CLI",
-      "description": "How a managed profile and workspace system transforms Amazon Kiro CLI from a\nsearch engine replacement into a contextually-optimized AI workflow platform for\nenterprise teams",
-      "url": "https://builder.aws.com/content/3CwabvLB3DdXa0EqwJcxwPdXNxK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwmZsriVnOmhU2No1jC7vwJho2/k-mg.webp",
-      "authorName": "Tom",
-      "authorAlias": "wtromano",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRqZ9bKqr10mtvizLX0CiFSn8j.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "agentic-interactions",
-        "ai-dlc",
-        "sdlc",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-27T16:03:48.293Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CoJPi0YeKs4wqI232ZgHeh5yXq",
-      "title": "Minha jornada começando no AWS Builder Center e como a Cloud está mudando o mercado",
-      "description": "Um relato inicial sobre aprendizado em cloud, mostrando como a computação em nuvem está transformando a forma como empresas desenvolvem e escalam suas soluções no mercado atual.",
-      "url": "https://builder.aws.com/content/3CoJPi0YeKs4wqI232ZgHeh5yXq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwkM2iyimw0R72S9vhVHnKTwhc/Inse.webp",
-      "authorName": "Miguel Ochoa",
-      "authorAlias": "ochoa",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cd7CjCVPjnLf4rx1ynrlC3abyK.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "personal-expression"
-      ],
-      "publishedAt": "2026-04-27T15:35:00.089Z",
-      "likesCount": 6,
-      "commentsCount": 1
+      "likesCount": 7,
+      "commentsCount": 3
     }
   ],
   "trending": [
@@ -224,25 +220,6 @@
       "commentsCount": 1912
     },
     {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 18,
-      "commentsCount": 3
-    },
-    {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
       "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
@@ -264,26 +241,23 @@
       "commentsCount": 323
     },
     {
-      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
-      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
       "tags": [
-        "ai",
-        "social-impact",
-        "aideas-2025",
-        "students"
+        "free-tier-projects"
       ],
-      "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 12,
-      "commentsCount": 4
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 18,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -323,8 +297,47 @@
         "amazon-s3"
       ],
       "publishedAt": "2026-04-27T16:59:45.472Z",
-      "likesCount": 6,
-      "commentsCount": 2
+      "likesCount": 7,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "title": "AWS na Universidade: Aprenda, Conquiste Certificações e Abra Portas para o Mercado",
+      "description": "Como se destacar ainda na universidade com AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CwXKnCQjiRWlYnjyC1Tr8KeDPY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwYfO7V1FvvmV9Mz2AQxFGSZfC/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "social-impact",
+        "aideas-2025",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T13:57:07.015Z",
+      "likesCount": 12,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 41,
+      "commentsCount": 168
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
@@ -345,23 +358,6 @@
       "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 23,
       "commentsCount": 14
-    },
-    {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 41,
-      "commentsCount": 168
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -387,23 +383,27 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3CoJPi0YeKs4wqI232ZgHeh5yXq",
-      "title": "Minha jornada começando no AWS Builder Center e como a Cloud está mudando o mercado",
-      "description": "Um relato inicial sobre aprendizado em cloud, mostrando como a computação em nuvem está transformando a forma como empresas desenvolvem e escalam suas soluções no mercado atual.",
-      "url": "https://builder.aws.com/content/3CoJPi0YeKs4wqI232ZgHeh5yXq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwkM2iyimw0R72S9vhVHnKTwhc/Inse.webp",
-      "authorName": "Miguel Ochoa",
-      "authorAlias": "ochoa",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cd7CjCVPjnLf4rx1ynrlC3abyK.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
+      "title": "Minha primeira semana no AWS Builder Center",
+      "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
+      "url": "https://builder.aws.com/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrUlPl8fphZ0CPvxoeDyfCEmip/Arti.webp",
+      "authorName": "Luiz Corbelli",
+      "authorAlias": "luizcorbelli",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CB7iejvw3lTUebPY9EoxPjhnn9.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
       "tags": [
-        "personal-expression"
+        "security",
+        "security-best-practices",
+        "iam",
+        "IaC",
+        "aws-community-builders"
       ],
-      "publishedAt": "2026-04-27T15:35:00.089Z",
-      "likesCount": 6,
-      "commentsCount": 1
+      "publishedAt": "2026-04-25T18:55:47.989Z",
+      "likesCount": 29,
+      "commentsCount": 20
     }
   ]
 }
