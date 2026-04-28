@@ -1,6 +1,73 @@
 {
-  "updatedAt": "2026-04-28T21:24:28.572Z",
+  "updatedAt": "2026-04-28T22:20:26.194Z",
   "latest": [
+    {
+      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
+      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
+      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "aws-builders",
+        "aws-community",
+        "aws-service-catalog",
+        "students"
+      ],
+      "publishedAt": "2026-04-28T22:03:28.221Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
+      "title": "From Commit to Cloud Artifact: Enterprise GitHub Automation with AWS CodeArtifact",
+      "description": "A GitHub repository with automated releases, dependency updates and validation workflows improves the software development process. Integrating it with AWS makes it even more powerful.",
+      "url": "https://builder.aws.com/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CtkUB7jFyF1zgHXEJHFzvoa4W5/gith.webp",
+      "authorName": "Julian Michel",
+      "authorAlias": "jumic",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z2hEdqJNcDW9Q7TeJOzfDhSCTn.webp",
+      "location": "DE",
+      "lat": 51.1638175,
+      "lng": 10.4478313,
+      "tags": [
+        "devops",
+        "aws-cdk",
+        "software-development",
+        "aws-codeartifact",
+        "github"
+      ],
+      "publishedAt": "2026-04-28T21:50:13.416Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
+      "title": "Kiro Specs: Deja de Improvisar y Empieza a Planificar Features con IA",
+      "description": "Si alguna vez arrancaste a codear una feature \"porque ya sabes lo que hay que hacer\" y terminaste reescribiendo todo a mitad del camino... este post es para ti.\nKiro Specs es una de las funcionalidades más poderosas del IDE Kiro, y la mayoría de los devs la ignora porque suena a burocracia. Spoiler: no lo es. Es la diferencia entre vibe coding y desarrollo estructurado con IA.",
+      "url": "https://builder.aws.com/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0Fx9gqtT18lYKonAmqlOedL01/KIRO.webp",
+      "authorName": "Antonia",
+      "authorAlias": "antitopy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
+      "location": "CL",
+      "lat": -31.7613365,
+      "lng": -71.3187697,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "ai-ide",
+        "agentic-ide"
+      ],
+      "publishedAt": "2026-04-28T21:33:52.608Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
       "title": "RAG and MCP in Agentic AI Systems on AWS: Architecture, Boundaries, and Reliability Implications",
@@ -151,264 +218,6 @@
       "publishedAt": "2026-04-28T19:46:11.488Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CzzB6C6l61ygXdGdlTnzUeYRhI",
-      "title": "How I Went From No AWS Knowledge to Campus Leader",
-      "description": "From zero cloud experience to AWS Campus Leader, all starting with AWS Builder Center",
-      "url": "https://builder.aws.com/content/3CzzB6C6l61ygXdGdlTnzUeYRhI",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D03jWScgF9Nb3MIapnG39Fk8MV/AWS_.webp",
-      "authorName": "Philemon Agyemang",
-      "authorAlias": "p2ao",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-28T19:38:29.869Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
-      "title": "A AWS não é um bicho de sete cabeças",
-      "description": "Abrir a AWS não é tipo abrir o Instagram; é tipo tentar pilotar um avião sem nunca ter visto um cockpit. Não é um guia técnico chato, é um papo real sobre o que eu gostaria que tivessem me avisado antes de eu sair clicando em tudo. Pra quem tá no zero e só quer entender o que está acontecendo.",
-      "url": "https://builder.aws.com/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D02swH7mO9aW7ITbdDKgUaoAj2/T-tu.webp",
-      "authorName": "Vitória Valença",
-      "authorAlias": "vitoriavalencac",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClrmoeTEbmGRwWnUkEgRDtaoLL.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
-      "tags": [
-        "aws-cloud9",
-        "aws-prescriptive-guidance",
-        "students"
-      ],
-      "publishedAt": "2026-04-28T19:35:34.511Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Czz3pnlo6MHI2CmsxGuQh959CS",
-      "title": "Bypassing Cloudflare for True Origin Health Checks with Blackbox Exporter and CoreDNS",
-      "description": "When Cloudflare masks origin failures, your health checks lie to you. A CoreDNS sidecar that overrides DNS resolution lets Blackbox Exporter probe origins directly while keeping TLS and Host headers intact.",
-      "url": "https://builder.aws.com/content/3Czz3pnlo6MHI2CmsxGuQh959CS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Czz9pTRjYNKHJALDxjhKVXvPIF/core.webp",
-      "authorName": "Amaan Ul Haq Siddiqui",
-      "authorAlias": "amaan100x",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37waBq6EplcHFvpfRxc3ShuVlZg.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "monitoring-observability",
-        "devops",
-        "open-source",
-        "sre"
-      ],
-      "publishedAt": "2026-04-28T19:05:01.944Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CzvgkWC3l2Ux1ftrvR1wGBfi6m",
-      "title": "Como se encontrar na tecnologia através da Cloud Computing",
-      "description": "Entrar no mundo da tecnologia pode ser empolgante… mas também extremamente confuso.\nSão muitas áreas, muitas linguagens, muitas possibilidades, front-end, back-end, dados, segurança, mobile, IA… e no meio disso tudo, uma dúvida constante:\n“Será que eu estou no caminho certo?”\nSe você já se sentiu assim, saiba que isso é mais comum do que parece.\n",
-      "url": "https://builder.aws.com/content/3CzvgkWC3l2Ux1ftrvR1wGBfi6m",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzyUhE3JeNGuwOYJwABj9ceMjs/Chat.webp",
-      "authorName": "Guilherme Pinheiro",
-      "authorAlias": "guilhermepinheiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVSDKry6Mtm2yQS57GqhV0wiM3.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "aws-builders",
-        "students",
-        "getting-started"
-      ],
-      "publishedAt": "2026-04-28T18:59:12.987Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CzT8nN9vfjgmBBqF1JjjL6rqqK",
-      "title": "Dê o primeiro passo hoje: Começando com AWS Builder Center",
-      "description": "Venha conhecer as principais ferramentas do AWS Builder Center que irão permitir o desenvolvimento de suas habilidades com computação em nuvem. Uma plataforma colaborativa, com foco em comunidade e aprendizado.",
-      "url": "https://builder.aws.com/content/3CzT8nN9vfjgmBBqF1JjjL6rqqK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CztRaEIzcJLYDCdQrpqxQ0O5Zt/Bann.webp",
-      "authorName": "Beatriz Moura",
-      "authorAlias": "biamoul",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzuEDx20cwizWRcrWgIzbLfBfd.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "amazon-workspaces",
-        "aws-networking",
-        "aws-organizations",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-28T18:19:02.492Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
-      "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzsTULc2TwLvvEIaujGH7fU4iH/Desi.webp",
-      "authorName": "Emanuel Felipe",
-      "authorAlias": "omanuca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
-      "location": "RN, BR",
-      "lat": -5.6781175,
-      "lng": -36.4781776,
-      "tags": [
-        "aws-builders",
-        "students",
-        "getting-started"
-      ],
-      "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 12,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CzZc4kplWiLr3qNqEXnCJoDQ0B",
-      "title": "Achieving an Agentic Back-Office in Manufacturing: A Prescriptive Guide to 5–10X Productivity Gains",
-      "description": "Manufacturing back-office operations consume 1.5%–5.0% of total revenue in manual transactional processing — from hand-keying invoices to reconciling inventory in spreadsheets. This prescriptive guide shows you exactly where to deploy Agentic AI across five critical mega-processes to achieve 5–10X productivity gains, with a clear risk-value framework, AWS services to get started, and production-ready partner platforms already delivering results.",
-      "url": "https://builder.aws.com/content/3CzZc4kplWiLr3qNqEXnCJoDQ0B",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzlSOf8SEQQYo7Be6zvqWTTqYx/agen.webp",
-      "authorName": "Rob Girvan",
-      "authorAlias": "rgirvan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzpWtpfHQnOBMOgiwfyT5eHOxf.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "manufacturing"
-      ],
-      "publishedAt": "2026-04-28T17:46:59.263Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
-      "title": "De estudante curiosa a Embaixadora AWS: construindo meu caminho na nuvem e além",
-      "description": "Neste artigo, compartilho minha trajetória na tecnologia — desde os primeiros contatos ainda no ensino médio até me tornar Líder Estudantil Builder AWS. Ao longo do caminho, falo sobre aprendizados, desafios e como a comunidade e o AWS Builder Center têm sido fundamentais para desenvolver minhas habilidades, fortalecer minha confiança e ampliar minha visão sobre o futuro na computação em nuvem. Mais do que uma conquista, essa jornada representa crescimento, conexão e propósito.",
-      "url": "https://builder.aws.com/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Czo25t8bmIjnwmZzxSaRap57oy/Whats.webp",
-      "authorName": "Sara Ferreira",
-      "authorAlias": "sarinha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "aws-academy"
-      ],
-      "publishedAt": "2026-04-28T17:37:22.555Z",
-      "likesCount": 15,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
-      "title": "AWS é para todos.",
-      "description": "AWS NÃO É SÓ PARA TI, E CURSOS DE EXATAS ESTÃO NO CENTRO DISSO!\n",
-      "url": "https://builder.aws.com/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
-      "imageUrl": "",
-      "authorName": "Eduardo Saraiva",
-      "authorAlias": "kamijax",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjC729UwUJeBh7RBBaWcJX7W3I.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "aws-cloud-clubs",
-        "multi-cloud"
-      ],
-      "publishedAt": "2026-04-28T17:14:02.635Z",
-      "likesCount": 10,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CzUL5MAMxBEyGhlDJgikdmmozk",
-      "title": "Building a Graph Studio with AI: The Full Stack Story",
-      "description": "Whether you're building multi-agent AI systems, wrestling with serverless orchestration, or just curious about what happens when you try to use AI to build an AI tool — there's something here for you.",
-      "url": "https://builder.aws.com/content/3CzUL5MAMxBEyGhlDJgikdmmozk",
-      "imageUrl": "",
-      "authorName": "Kevin",
-      "authorAlias": "kvphil",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AGHGIzclmJPG3QlTEx0OOAITbo.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "ai-assisted",
-        "ai-agents",
-        "amazon-neptune",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-04-28T16:07:14.990Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CzcQin5EUktIaaN8blvpJmCBNg",
-      "title": "I Built My First Cloud Project on AWS—and Broke It 5 Times",
-      "description": "My first AWS project failed in ways I didn’t expect—from networking mistakes to permission errors and surprise costs. Here’s what those failures taught me about understanding the cloud.",
-      "url": "https://builder.aws.com/content/3CzcQin5EUktIaaN8blvpJmCBNg",
-      "imageUrl": "",
-      "authorName": "Om Keswani",
-      "authorAlias": "omiee24",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3894gFCupwDcSCBhlVUHtta7riL.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
-      "tags": [
-        "aws-cli",
-        "agentic-ai",
-        "agentic-ide",
-        "ai-agents",
-        "ai-assisted"
-      ],
-      "publishedAt": "2026-04-28T16:04:43.402Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CzbH3CgbkzyyULF4CDxhgVlSjk",
-      "title": "Cut AWS AI Costs by 60% — 6 Practical Tips",
-      "description": "OpenSearch too expensive? Sonnet on every query? Here are 6 changes that cut our Bedrock workload costs by over 60% — with real code.",
-      "url": "https://builder.aws.com/content/3CzbH3CgbkzyyULF4CDxhgVlSjk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzcwAL2wCIquargJO3hN84W1Hb/aws-.webp",
-      "authorName": "meghana rajagopal",
-      "authorAlias": "meghanarajagopal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cm0nLn6wk71SoeU4k6NpqdEhZo.webp",
-      "location": "AE",
-      "lat": 24.0002488,
-      "lng": 53.9994829,
-      "tags": [
-        "amazon-bedrock",
-        "cost-optimization",
-        "generative-ai",
-        "serverless",
-        "cloud-adoption-framework"
-      ],
-      "publishedAt": "2026-04-28T16:01:49.777Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -430,8 +239,8 @@
         "aws-academy"
       ],
       "publishedAt": "2026-04-28T17:37:22.555Z",
-      "likesCount": 15,
-      "commentsCount": 3
+      "likesCount": 16,
+      "commentsCount": 4
     },
     {
       "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
@@ -451,8 +260,30 @@
         "getting-started"
       ],
       "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 12,
+      "likesCount": 14,
       "commentsCount": 3
+    },
+    {
+      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
+      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
+      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "aws-builders",
+        "aws-community",
+        "aws-service-catalog",
+        "students"
+      ],
+      "publishedAt": "2026-04-28T22:03:28.221Z",
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -493,8 +324,8 @@
         "multi-cloud"
       ],
       "publishedAt": "2026-04-28T17:14:02.635Z",
-      "likesCount": 10,
-      "commentsCount": 3
+      "likesCount": 11,
+      "commentsCount": 4
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -539,23 +370,6 @@
       "commentsCount": 316
     },
     {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 43,
-      "commentsCount": 169
-    },
-    {
       "id": "/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
       "title": "A AWS não é um bicho de sete cabeças",
       "description": "Abrir a AWS não é tipo abrir o Instagram; é tipo tentar pilotar um avião sem nunca ter visto um cockpit. Não é um guia técnico chato, é um papo real sobre o que eu gostaria que tivessem me avisado antes de eu sair clicando em tudo. Pra quem tá no zero e só quer entender o que está acontecendo.",
@@ -573,8 +387,25 @@
         "students"
       ],
       "publishedAt": "2026-04-28T19:35:34.511Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "likesCount": 4,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 43,
+      "commentsCount": 169
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -598,25 +429,6 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1927,
       "commentsCount": 269
-    },
-    {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 25,
-      "commentsCount": 12
     }
   ]
 }
