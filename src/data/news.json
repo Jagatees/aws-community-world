@@ -1,6 +1,120 @@
 {
-  "updatedAt": "2026-04-28T05:07:58.461Z",
+  "updatedAt": "2026-04-28T06:54:40.252Z",
   "latest": [
+    {
+      "id": "/content/39C3zpfDDSXN8yLjfF4wSIiI6WE",
+      "title": "☁️ 𝐀𝐖𝐒 𝐒𝐮𝐦𝐦𝐢𝐭 𝐁𝐞𝐧𝐠𝐚𝐥𝐮𝐫𝐮 𝟐𝟎𝟐𝟔 𝐀 𝐃𝐞𝐯𝐎𝐩𝐬 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫’𝐬 𝐏𝐞𝐫𝐬𝐩𝐞𝐜𝐭𝐢𝐯𝐞",
+      "description": "𝐀𝐖𝐒 𝐒𝐮𝐦𝐦𝐢𝐭 𝐁𝐞𝐧𝐠𝐚𝐥𝐮𝐫𝐮 𝟐𝟎𝟐𝟔 ",
+      "url": "https://builder.aws.com/content/39C3zpfDDSXN8yLjfF4wSIiI6WE",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyVxWLeRwFASxDcvVPko2WQ8jH/6294.webp",
+      "authorName": "MOJAHID-UL HAQUE (Δ𝓓𝔦𝐋)",
+      "authorAlias": "mojahid",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2x57YbVL0m9kZkJHZeeAqt7v6Jc.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "devops",
+        "devops-pro",
+        "ai-agents",
+        "agents",
+        "amazon-ecs"
+      ],
+      "publishedAt": "2026-04-28T06:37:22.875Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/37PfzP3O6fu9MwT1xq8bRMEwWYj",
+      "title": "Deploy your own production-ready Jenkins in AWS ECS",
+      "description": "This article walks through deploying a production-ready Jenkins platform on AWS ECS using Fargate and CloudFormation. It covers Jenkins architecture, ECS design choices, secure ingress with ALB, persistent storage using Amazon EFS, and automated recovery across Availability Zones—helping you build a resilient, secure, and cloud-native CI/CD setup suitable for real-world workloads.",
+      "url": "https://builder.aws.com/content/37PfzP3O6fu9MwT1xq8bRMEwWYj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/37PirZTGUcbMnW2WZMOP0z3kemY/AWS-.webp",
+      "authorName": "Piyush Chaudhari",
+      "authorAlias": "cpiyush151",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCZKaeeEMclW3B5gnosrAUZJRa.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "amazon-ecs",
+        "aws-fargate",
+        "amazon-efs",
+        "devops",
+        "jenkins"
+      ],
+      "publishedAt": "2026-04-28T06:26:47.633Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/36EOyCuDwpzP7xqOnkzUs3UD74h",
+      "title": "AWS EKS Auto Mode",
+      "description": "AWS EKS Auto Mode delivers a fully managed, production-ready Kubernetes environment by automating compute, scaling, networking, and node lifecycle operations. It simplifies cluster management, enhances security, optimizes costs, and reduces operational burden—letting teams focus on applications while AWS handles the infrastructure.",
+      "url": "https://builder.aws.com/content/36EOyCuDwpzP7xqOnkzUs3UD74h",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/36HN9FYLJ2ZdGSkU2vroNqx9PRU/AWS-.webp",
+      "authorName": "Piyush Chaudhari",
+      "authorAlias": "cpiyush151",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCZKaeeEMclW3B5gnosrAUZJRa.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "amazon-eks",
+        "kubernetes",
+        "compute",
+        "containers"
+      ],
+      "publishedAt": "2026-04-28T06:14:22.447Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/362qdPIdMVGPuNc1ZsZnxN5Qp4f",
+      "title": "Deploying SonarQube on AWS Using ECS Fargate, AWS EFS, RDS PostgreSQL and AWS CloudFormation (IaC)",
+      "description": "SonarQube on AWS delivers a scalable, secure, and fully automated code-quality platform using ECS Fargate, RDS PostgreSQL, and EFS. With CloudFormation, the entire architecture becomes reproducible and consistent across environments, providing a resilient, serverless deployment that simplifies operations while supporting modern DevSecOps practices.",
+      "url": "https://builder.aws.com/content/362qdPIdMVGPuNc1ZsZnxN5Qp4f",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/363C6bkqXjp9VgZkRT1c28d9rNO/AWS-.webp",
+      "authorName": "Piyush Chaudhari",
+      "authorAlias": "cpiyush151",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCZKaeeEMclW3B5gnosrAUZJRa.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "devops",
+        "cloud-security",
+        "amazon-ecs",
+        "amazon-rds",
+        "amazon-efs"
+      ],
+      "publishedAt": "2026-04-28T05:55:28.264Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CyNmIxTDuYPTlY3He08duGMD3s",
+      "title": "Production AWS Web App with CDK: Fargate, Aurora, CloudFront and the Quiet Failures Nobody Warns You About",
+      "description": "Most CDK tutorials stop at \"it deployed.\" This walks through the full production stack - VPC tiers, Fargate on private subnets, Aurora with KMS encryption, Secrets Manager rotation, CloudFront with OAC - and the silent failure modes that wake you up at 2 AM. Includes a real cost breakdown, the NAT Gateway trap, and what I would do differently next time.",
+      "url": "https://builder.aws.com/content/3CyNmIxTDuYPTlY3He08duGMD3s",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyQ8pJ4DXyxDDTH1HpeZgPdzW2/Clea.webp",
+      "authorName": "Rahul ladumor [Serverless Expert]",
+      "authorAlias": "rahulladumor",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36dpGWG5gmSqyVlsIh0P2zGgCKm.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "aws-cdk",
+        "aws-fargate",
+        "amazon-aurora",
+        "devops",
+        "serverless"
+      ],
+      "publishedAt": "2026-04-28T05:46:35.052Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
       "title": "🚀 Getting Started with AWS Lambda: Build Your First Serverless Project",
@@ -103,107 +217,6 @@
       "publishedAt": "2026-04-27T23:33:00.288Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxdK923PyXJk2sXloeImoBYLGy",
-      "title": "From Campus to Community: AWS Cloud Club at UH at AWS Community on Tour Houston",
-      "description": "The AWS Cloud Club at the University of Houston attended the AWS Community Day on Tour Houston stop and walked away with hands-on Kiro experience, a new mental model for building with AI, and real connections in the AWS community.",
-      "url": "https://builder.aws.com/content/3CxdK923PyXJk2sXloeImoBYLGy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxfeZVX00QahwJaD7sY0Xayfor/Comm.webp",
-      "authorName": "Perry",
-      "authorAlias": "agentpierre",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdmQtP50V9syu04k2BfNZkgzlE.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-community",
-        "ai",
-        "event-recap",
-        "prompt-engineering",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-27T23:30:11.168Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxKesR62aPuZHM3qQzqCGzOW00",
-      "title": "🚀 Elevating the Standard: From ASCII Diagrams to Visual Architectures with Kiro 101 and AWS MCP",
-      "description": "In the world of Cloud Engineering, precision is paramount. Recently, I migrated to a high-performance, cost-optimized environment under strict resource monitoring, which has enabled greater agility in my operations. After installing the Kiro IDE and CLI on Ubuntu, I consolidated what I consider a \"one possible professional workflow\" applicable to cloud architecture",
-      "url": "https://builder.aws.com/content/3CxKesR62aPuZHM3qQzqCGzOW00",
-      "imageUrl": "",
-      "authorName": "Exegol",
-      "authorAlias": "luiszuniga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
-      "location": "CR",
-      "lat": 10.2735633,
-      "lng": -84.0739102,
-      "tags": [
-        "kiro",
-        "ai-for-developers"
-      ],
-      "publishedAt": "2026-04-27T20:43:32.572Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxIn4m2L7CtCcg84ABiLAglaqk",
-      "title": "Building Intelligence with AWS",
-      "description": "This is how I built the ACCIPITER: ALTUM branch in AWS AI Playground, and how AWS helped me push the frontiers of code.",
-      "url": "https://builder.aws.com/content/3CxIn4m2L7CtCcg84ABiLAglaqk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxKEDE6XJUB4IfXJM7EhYgN4qS/altu.webp",
-      "authorName": "Peter Loud",
-      "authorAlias": "pcl",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "amazon-bedrock",
-        "playgrounds"
-      ],
-      "publishedAt": "2026-04-27T20:31:54.431Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClgBp137pv986TpQeOS22AmDUI",
-      "title": "Build a Live Streaming Application With Amazon IVS and Stream Chat",
-      "description": "Learn how to combine Amazon IVS low-latency and real-time streaming with Stream Chat to build a production-ready app featuring live video playback and interactive chat",
-      "url": "https://builder.aws.com/content/3ClgBp137pv986TpQeOS22AmDUI",
-      "imageUrl": "",
-      "authorName": "Tony Vu",
-      "authorAlias": "eanthovu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2l1xA0z8sfF6zHC084LNMwW5Obv.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "livestreaming",
-        "amazon-ivs"
-      ],
-      "publishedAt": "2026-04-27T20:26:34.794Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxFmDQNaPS7hiCrgDXkPcljhfN",
-      "title": "Como funciona um site na internet",
-      "description": "Você já parou pra pensar no que acontece entre digitar um endereço no navegador e ver a página carregada na sua tela? Como algo que pode ter sido criado em qualquer lugar no mundo chega tão rápido até a gente? Nesse artigo, vamos desvendar juntos o caminho que um site percorre até chegar até você.",
-      "url": "https://builder.aws.com/content/3CxFmDQNaPS7hiCrgDXkPcljhfN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxFxK4QQJ3p02vzxt60KmJzDir/Capa.webp",
-      "authorName": "Giovana Armani",
-      "authorAlias": "giarmani",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3573GdqSAu7L5eoooCmwJRVlAGq.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-27T20:02:49.407Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -236,10 +249,10 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
       "authorName": "Om Singh",
       "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39sbBuCdx8TlQgwb3T8pZgZ00Bo.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
       "tags": [
         "social-impact",
         "APJC",
@@ -290,6 +303,23 @@
       "commentsCount": 316
     },
     {
+      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-04-22T00:31:45.195Z",
+      "likesCount": 42,
+      "commentsCount": 168
+    },
+    {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
       "title": "The Study Break That Gave Me Direction Again",
       "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
@@ -308,23 +338,6 @@
       "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 23,
       "commentsCount": 24
-    },
-    {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 42,
-      "commentsCount": 168
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -372,29 +385,6 @@
       "commentsCount": 6
     },
     {
-      "id": "/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
-      "title": "Como minha trajetória mudou em poucas semanas (e o papel do AWS Builder Center nisso)",
-      "description": "Mudanças recentes na minha trajetória me levaram a explorar a área de arquitetura ao mesmo tempo em que iniciei no AWS Builder Center. Vamos ver onde isso vai dar?",
-      "url": "https://builder.aws.com/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
-      "imageUrl": "",
-      "authorName": "Noah",
-      "authorAlias": "noahfreitas13",
-      "authorAvatarUrl": "",
-      "location": "SC, BR",
-      "lat": -27.0628367,
-      "lng": -51.114965,
-      "tags": [
-        "architecture",
-        "learning-and-development",
-        "career",
-        "agile",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-28T01:09:44.330Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
       "title": "Essa tal de nuvem... fica muito distante do chão?",
       "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
@@ -416,6 +406,28 @@
       "publishedAt": "2026-04-25T19:08:26.188Z",
       "likesCount": 29,
       "commentsCount": 26
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxELt4JqtRZe8WXnoA2UbT4pl3.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1410,
+      "commentsCount": 325
     }
   ]
 }
