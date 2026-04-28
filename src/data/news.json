@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-28T08:50:02.203Z",
+  "updatedAt": "2026-04-28T09:47:39.071Z",
   "latest": [
     {
       "id": "/content/3CyhewEzLIdBZZrbSatRSE3jPeH",
@@ -213,6 +213,193 @@
         "serverless"
       ],
       "publishedAt": "2026-04-28T05:46:35.052Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
+      "title": "🚀 Getting Started with AWS Lambda: Build Your First Serverless Project",
+      "description": "In this article, I’ll walk through what Lambda is, why it’s useful, and how you can build a simple project to get started.",
+      "url": "https://builder.aws.com/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
+      "imageUrl": "",
+      "authorName": "Shagun Khare",
+      "authorAlias": "shagunk917",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-28T02:22:38.424Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxoC0H5uu2EqwGJC4XIFHgmjnq",
+      "title": "The Architecture Review Board Is Not What It Used To Be",
+      "description": "AI-driven development is breaking the traditional Architecture Review Board. The fix is not to slow AI down or give up on EA. It is to turn architectural intent into executable artefacts: fitness functions, tiered AI review, and AGENTS.md treated as a runtime spec, not documentation.",
+      "url": "https://builder.aws.com/content/3CxoC0H5uu2EqwGJC4XIFHgmjnq",
+      "imageUrl": "",
+      "authorName": "Steven Cook",
+      "authorAlias": "sjcook",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "architecture"
+      ],
+      "publishedAt": "2026-04-28T01:36:03.783Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
+      "title": "Como minha trajetória mudou em poucas semanas (e o papel do AWS Builder Center nisso)",
+      "description": "Mudanças recentes na minha trajetória me levaram a explorar a área de arquitetura ao mesmo tempo em que iniciei no AWS Builder Center. Vamos ver onde isso vai dar?",
+      "url": "https://builder.aws.com/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
+      "imageUrl": "",
+      "authorName": "Noah",
+      "authorAlias": "noahfreitas13",
+      "authorAvatarUrl": "",
+      "location": "SC, BR",
+      "lat": -27.0628367,
+      "lng": -51.114965,
+      "tags": [
+        "architecture",
+        "learning-and-development",
+        "career",
+        "agile",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-04-28T01:09:44.330Z",
+      "likesCount": 3,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
+      "title": "AI Coaching Notes + Video Sync with AWS (PlayTicks)",
+      "description": "PlayTicks is a real-time soccer coaching annotation tool that converts short voice notes into structured match events. Built with Amazon S3, AWS Lambda, Amazon Transcribe, Amazon Bedrock, and Amazon ECS, it automatically transcribes and classifies coaching notes and syncs them to game timestamps for faster post-game video review.",
+      "url": "https://builder.aws.com/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
+      "imageUrl": "",
+      "authorName": "Banele",
+      "authorAlias": "bndlovu",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "aws-in-sports",
+        "transcribe",
+        "video"
+      ],
+      "publishedAt": "2026-04-28T00:28:43.512Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxgOuLZ2bX4wrGo25gCRpsjsIN",
+      "title": "Minha primeira aplicação na nuvem: o que aprendi hospedando um sistema real na AWS",
+      "description": "Construir um sistema na faculdade é uma coisa. Colocar um sistema real no ar, com usuários de verdade, é outra bem diferente. Neste artigo, compartilho os desafios, erros e aprendizados que tive ao hospedar minha primeira aplicação na AWS — um sistema de gestão para clínicas de estética. Das dores de configuração ao medo da fatura no fim do mês, passando pelo papel da IA como aliada nos momentos de travamento. Um relato sincero sobre o que a faculdade não ensina, mas a prática entrega.",
+      "url": "https://builder.aws.com/content/3CxgOuLZ2bX4wrGo25gCRpsjsIN",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "aws-skill-builder",
+        "soft-skills",
+        "value-of-skills"
+      ],
+      "publishedAt": "2026-04-27T23:33:00.288Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxdK923PyXJk2sXloeImoBYLGy",
+      "title": "From Campus to Community: AWS Cloud Club at UH at AWS Community on Tour Houston",
+      "description": "The AWS Cloud Club at the University of Houston attended the AWS Community Day on Tour Houston stop and walked away with hands-on Kiro experience, a new mental model for building with AI, and real connections in the AWS community.",
+      "url": "https://builder.aws.com/content/3CxdK923PyXJk2sXloeImoBYLGy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxfeZVX00QahwJaD7sY0Xayfor/Comm.webp",
+      "authorName": "Perry",
+      "authorAlias": "agentpierre",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdmQtP50V9syu04k2BfNZkgzlE.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-community",
+        "ai",
+        "event-recap",
+        "prompt-engineering",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-27T23:30:11.168Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxKesR62aPuZHM3qQzqCGzOW00",
+      "title": "🚀 Elevating the Standard: From ASCII Diagrams to Visual Architectures with Kiro 101 and AWS MCP",
+      "description": "In the world of Cloud Engineering, precision is paramount. Recently, I migrated to a high-performance, cost-optimized environment under strict resource monitoring, which has enabled greater agility in my operations. After installing the Kiro IDE and CLI on Ubuntu, I consolidated what I consider a \"one possible professional workflow\" applicable to cloud architecture",
+      "url": "https://builder.aws.com/content/3CxKesR62aPuZHM3qQzqCGzOW00",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "CR",
+      "lat": 10.2735633,
+      "lng": -84.0739102,
+      "tags": [
+        "kiro",
+        "ai-for-developers"
+      ],
+      "publishedAt": "2026-04-27T20:43:32.572Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxIn4m2L7CtCcg84ABiLAglaqk",
+      "title": "Building Intelligence with AWS",
+      "description": "This is how I built the ACCIPITER: ALTUM branch in AWS AI Playground, and how AWS helped me push the frontiers of code.",
+      "url": "https://builder.aws.com/content/3CxIn4m2L7CtCcg84ABiLAglaqk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxKEDE6XJUB4IfXJM7EhYgN4qS/altu.webp",
+      "authorName": "Peter Loud",
+      "authorAlias": "pcl",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "amazon-bedrock",
+        "playgrounds"
+      ],
+      "publishedAt": "2026-04-27T20:31:54.431Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ClgBp137pv986TpQeOS22AmDUI",
+      "title": "Build a Live Streaming Application With Amazon IVS and Stream Chat",
+      "description": "Learn how to combine Amazon IVS low-latency and real-time streaming with Stream Chat to build a production-ready app featuring live video playback and interactive chat",
+      "url": "https://builder.aws.com/content/3ClgBp137pv986TpQeOS22AmDUI",
+      "imageUrl": "",
+      "authorName": "Tony Vu",
+      "authorAlias": "eanthovu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2l1xA0z8sfF6zHC084LNMwW5Obv.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "livestreaming",
+        "amazon-ivs"
+      ],
+      "publishedAt": "2026-04-27T20:26:34.794Z",
       "likesCount": 0,
       "commentsCount": 0
     }
