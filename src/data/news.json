@@ -1,6 +1,87 @@
 {
-  "updatedAt": "2026-04-28T12:35:49.720Z",
+  "updatedAt": "2026-04-28T13:36:15.351Z",
   "latest": [
+    {
+      "id": "/content/3CzHzD61RRjqVUCEnYT41jQTzE0",
+      "title": "Construindo o Futuro: Como a Nuvem da AWS e a IA Estão Mudando a Engenharia Civil na Prática",
+      "description": "Uma visão prática e descomplicada de como a computação em nuvem da AWS e a Inteligência Artificial deixaram de ser ficção científica para se tornarem os novos alicerces da Engenharia Civil, otimizando desde simulações de grandes obras até a gestão inteligente de licitações.",
+      "url": "https://builder.aws.com/content/3CzHzD61RRjqVUCEnYT41jQTzE0",
+      "imageUrl": "",
+      "authorName": "Gustavo Alves",
+      "authorAlias": "gustavoalves07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7Pg5qnQih9yjka5m2128LurKP.webp",
+      "location": "TO, BR",
+      "lat": -10.8855129,
+      "lng": -48.3716912,
+      "tags": [
+        "builder-center",
+        "aws-builders",
+        "network",
+        "networking"
+      ],
+      "publishedAt": "2026-04-28T13:12:39.553Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CzFHryJMaVYQeNb4WC4Zx8QOED",
+      "title": "What I Learned from Interacting with Students About AWS",
+      "description": "Insights from interacting with students about AWS, highlighting common challenges beginners face and how to approach learning cloud more effectively.",
+      "url": "https://builder.aws.com/content/3CzFHryJMaVYQeNb4WC4Zx8QOED",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzG6VVVl4ij96xB8a6JScUvHuv/AWS-.webp",
+      "authorName": "Shashank Pandey",
+      "authorAlias": "shashankpandey04",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHTaHlwIdIstMASl9t52rkKOvM.webp",
+      "location": "Punjab, IN",
+      "lat": 30.9293211,
+      "lng": 75.5004841,
+      "tags": [
+        "students",
+        "learning-and-development"
+      ],
+      "publishedAt": "2026-04-28T12:53:49.522Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cz5uNG9mhrLtJ5i2U1t0MQ7QtI",
+      "title": "Agentic AI in the Real World: A Technical Deep Dive into Kodai Cloud Kondattam !!",
+      "description": "Discover how we moved beyond LLM chat interfaces to experiencing \"Physical AI\" built with Strands Agents and Amazon Nova",
+      "url": "https://builder.aws.com/content/3Cz5uNG9mhrLtJ5i2U1t0MQ7QtI",
+      "imageUrl": "",
+      "authorName": "Madhumithaa",
+      "authorAlias": "madhu08",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOmAHLoGEzgWrJF8IFW2mRmczp.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-28T12:47:46.875Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CylfBCpZLvp9ec4bPyiHrOt3B2",
+      "title": "FeedSense",
+      "description": "AI-Powered Feedback Collection and Sentiment Analysis Platform",
+      "url": "https://builder.aws.com/content/3CylfBCpZLvp9ec4bPyiHrOt3B2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzBDdEzgUGi88C0bnTlWxQBsN3/Chat.webp",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-lambda",
+        "amazon-bedrock",
+        "amazon-dynamodb",
+        "aws-amplify"
+      ],
+      "publishedAt": "2026-04-28T12:39:28.500Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/36z9zKznZWxYDaOp34784ytueyf",
       "title": "Building Personalized Marketing Campaigns with Bria AI Powers in Kiro",
@@ -104,8 +185,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-28T08:19:55.689Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CyaeIzqgVVl7RK8YOT0Np4q7O3",
@@ -122,7 +203,7 @@
       "tags": [],
       "publishedAt": "2026-04-28T07:19:45.363Z",
       "likesCount": 0,
-      "commentsCount": 0
+      "commentsCount": 1
     },
     {
       "id": "/content/3CyakN288WupRygqDXVbt9ICaMQ",
@@ -277,88 +358,6 @@
       "publishedAt": "2026-04-28T05:46:35.052Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
-      "title": "🚀 Getting Started with AWS Lambda: Build Your First Serverless Project",
-      "description": "In this article, I’ll walk through what Lambda is, why it’s useful, and how you can build a simple project to get started.",
-      "url": "https://builder.aws.com/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
-      "imageUrl": "",
-      "authorName": "Shagun Khare",
-      "authorAlias": "shagunk917",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-28T02:22:38.424Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxoC0H5uu2EqwGJC4XIFHgmjnq",
-      "title": "The Architecture Review Board Is Not What It Used To Be",
-      "description": "AI-driven development is breaking the traditional Architecture Review Board. The fix is not to slow AI down or give up on EA. It is to turn architectural intent into executable artefacts: fitness functions, tiered AI review, and AGENTS.md treated as a runtime spec, not documentation.",
-      "url": "https://builder.aws.com/content/3CxoC0H5uu2EqwGJC4XIFHgmjnq",
-      "imageUrl": "",
-      "authorName": "Steven Cook",
-      "authorAlias": "sjcook",
-      "authorAvatarUrl": "",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "architecture"
-      ],
-      "publishedAt": "2026-04-28T01:36:03.783Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
-      "title": "Como minha trajetória mudou em poucas semanas (e o papel do AWS Builder Center nisso)",
-      "description": "Mudanças recentes na minha trajetória me levaram a explorar a área de arquitetura ao mesmo tempo em que iniciei no AWS Builder Center. Vamos ver onde isso vai dar?",
-      "url": "https://builder.aws.com/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
-      "imageUrl": "",
-      "authorName": "Noah",
-      "authorAlias": "noahfreitas13",
-      "authorAvatarUrl": "",
-      "location": "SC, BR",
-      "lat": -27.0628367,
-      "lng": -51.114965,
-      "tags": [
-        "architecture",
-        "learning-and-development",
-        "career",
-        "agile",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-28T01:09:44.330Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
-      "title": "AI Coaching Notes + Video Sync with AWS (PlayTicks)",
-      "description": "PlayTicks is a real-time soccer coaching annotation tool that converts short voice notes into structured match events. Built with Amazon S3, AWS Lambda, Amazon Transcribe, Amazon Bedrock, and Amazon ECS, it automatically transcribes and classifies coaching notes and syncs them to game timestamps for faster post-game video review.",
-      "url": "https://builder.aws.com/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
-      "imageUrl": "",
-      "authorName": "Banele",
-      "authorAlias": "bndlovu",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aideas-2025",
-        "workplace-efficiency",
-        "aws-in-sports",
-        "transcribe",
-        "video"
-      ],
-      "publishedAt": "2026-04-28T00:28:43.512Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -403,6 +402,28 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3512,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3CzHzD61RRjqVUCEnYT41jQTzE0",
+      "title": "Construindo o Futuro: Como a Nuvem da AWS e a IA Estão Mudando a Engenharia Civil na Prática",
+      "description": "Uma visão prática e descomplicada de como a computação em nuvem da AWS e a Inteligência Artificial deixaram de ser ficção científica para se tornarem os novos alicerces da Engenharia Civil, otimizando desde simulações de grandes obras até a gestão inteligente de licitações.",
+      "url": "https://builder.aws.com/content/3CzHzD61RRjqVUCEnYT41jQTzE0",
+      "imageUrl": "",
+      "authorName": "Gustavo Alves",
+      "authorAlias": "gustavoalves07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7Pg5qnQih9yjka5m2128LurKP.webp",
+      "location": "TO, BR",
+      "lat": -10.8855129,
+      "lng": -48.3716912,
+      "tags": [
+        "builder-center",
+        "aws-builders",
+        "network",
+        "networking"
+      ],
+      "publishedAt": "2026-04-28T13:12:39.553Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -523,7 +544,7 @@
         "students"
       ],
       "publishedAt": "2026-04-27T13:57:07.015Z",
-      "likesCount": 15,
+      "likesCount": 16,
       "commentsCount": 12
     },
     {
@@ -547,29 +568,6 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1413,
       "commentsCount": 325
-    },
-    {
-      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "title": "Essa tal de nuvem... fica muito distante do chão?",
-      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
-      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
-      "authorName": "Amanda Y.",
-      "authorAlias": "yuminhercodedays",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aspiring-builders",
-        "architecture",
-        "cloud-adoption-framework",
-        "tips"
-      ],
-      "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 30,
-      "commentsCount": 26
     }
   ]
 }
