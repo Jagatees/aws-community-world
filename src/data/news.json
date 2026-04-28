@@ -1,6 +1,63 @@
 {
-  "updatedAt": "2026-04-28T06:54:40.252Z",
+  "updatedAt": "2026-04-28T07:48:04.882Z",
   "latest": [
+    {
+      "id": "/content/3CyaeIzqgVVl7RK8YOT0Np4q7O3",
+      "title": "Cloud Bombing",
+      "description": "It's an article about cloud bombing ",
+      "url": "https://builder.aws.com/content/3CyaeIzqgVVl7RK8YOT0Np4q7O3",
+      "imageUrl": "",
+      "authorName": "Aswin Gabrio",
+      "authorAlias": "frostop",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-28T07:19:45.363Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CyakN288WupRygqDXVbt9ICaMQ",
+      "title": "My First Step into Cloud Computing with AWS",
+      "description": "Attended an AWS Club workshop where I explored cloud computing fundamentals and got hands-on experience with core AWS services like EC2 and S3.",
+      "url": "https://builder.aws.com/content/3CyakN288WupRygqDXVbt9ICaMQ",
+      "imageUrl": "",
+      "authorName": "Abinash RL",
+      "authorAlias": "abi2619",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-28T07:14:42.695Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cya26i2MgQraUg4JxXAO310qOQ",
+      "title": "How I Cut My AWS Bill by 70% Without Touching a Single Line of Application Code",
+      "description": "Most cloud cost problems aren't code problems — they're architecture and configuration problems. Here's a practical, battle-tested playbook that saved my team thousands of dollars a month.",
+      "url": "https://builder.aws.com/content/3Cya26i2MgQraUg4JxXAO310qOQ",
+      "imageUrl": "",
+      "authorName": "Mukesh Y",
+      "authorAlias": "mukesh2006",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai",
+        "agile",
+        "agent-to-agent",
+        "agents",
+        "agentic-interactions"
+      ],
+      "publishedAt": "2026-04-28T07:10:18.658Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/39C3zpfDDSXN8yLjfF4wSIiI6WE",
       "title": "☁️ 𝐀𝐖𝐒 𝐒𝐮𝐦𝐦𝐢𝐭 𝐁𝐞𝐧𝐠𝐚𝐥𝐮𝐫𝐮 𝟐𝟎𝟐𝟔 𝐀 𝐃𝐞𝐯𝐎𝐩𝐬 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫’𝐬 𝐏𝐞𝐫𝐬𝐩𝐞𝐜𝐭𝐢𝐯𝐞",
@@ -150,73 +207,6 @@
       "publishedAt": "2026-04-28T01:36:03.783Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
-      "title": "Como minha trajetória mudou em poucas semanas (e o papel do AWS Builder Center nisso)",
-      "description": "Mudanças recentes na minha trajetória me levaram a explorar a área de arquitetura ao mesmo tempo em que iniciei no AWS Builder Center. Vamos ver onde isso vai dar?",
-      "url": "https://builder.aws.com/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
-      "imageUrl": "",
-      "authorName": "Noah",
-      "authorAlias": "noahfreitas13",
-      "authorAvatarUrl": "",
-      "location": "SC, BR",
-      "lat": -27.0628367,
-      "lng": -51.114965,
-      "tags": [
-        "architecture",
-        "learning-and-development",
-        "career",
-        "agile",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-04-28T01:09:44.330Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
-      "title": "AI Coaching Notes + Video Sync with AWS (PlayTicks)",
-      "description": "PlayTicks is a real-time soccer coaching annotation tool that converts short voice notes into structured match events. Built with Amazon S3, AWS Lambda, Amazon Transcribe, Amazon Bedrock, and Amazon ECS, it automatically transcribes and classifies coaching notes and syncs them to game timestamps for faster post-game video review.",
-      "url": "https://builder.aws.com/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
-      "imageUrl": "",
-      "authorName": "Banele",
-      "authorAlias": "bndlovu",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aideas-2025",
-        "workplace-efficiency",
-        "aws-in-sports",
-        "transcribe",
-        "video"
-      ],
-      "publishedAt": "2026-04-28T00:28:43.512Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxgOuLZ2bX4wrGo25gCRpsjsIN",
-      "title": "Minha primeira aplicação na nuvem: o que aprendi hospedando um sistema real na AWS",
-      "description": "Construir um sistema na faculdade é uma coisa. Colocar um sistema real no ar, com usuários de verdade, é outra bem diferente. Neste artigo, compartilho os desafios, erros e aprendizados que tive ao hospedar minha primeira aplicação na AWS — um sistema de gestão para clínicas de estética. Das dores de configuração ao medo da fatura no fim do mês, passando pelo papel da IA como aliada nos momentos de travamento. Um relato sincero sobre o que a faculdade não ensina, mas a prática entrega.",
-      "url": "https://builder.aws.com/content/3CxgOuLZ2bX4wrGo25gCRpsjsIN",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "aws-skill-builder",
-        "soft-skills",
-        "value-of-skills"
-      ],
-      "publishedAt": "2026-04-27T23:33:00.288Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -238,7 +228,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3416,
+      "likesCount": 3418,
       "commentsCount": 1912
     },
     {
@@ -259,7 +249,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3511,
+      "likesCount": 3512,
       "commentsCount": 323
     },
     {
