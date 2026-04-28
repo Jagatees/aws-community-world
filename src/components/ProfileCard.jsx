@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const CATEGORY_LABELS = {
   heroes: 'Hero',
@@ -7,8 +7,73 @@ const CATEGORY_LABELS = {
   'cloud-clubs': 'Cloud Club',
 };
 
-function handleAvatarError(e) {
-  e.currentTarget.style.display = 'none';
+function LoadingSpinner({ size = 16 }) {
+  return (
+    <span
+      aria-hidden="true"
+      style={{
+        width: `${size}px`,
+        height: `${size}px`,
+        borderRadius: '999px',
+        border: '2px solid rgba(255, 153, 0, 0.24)',
+        borderTopColor: '#FF9900',
+        animation: 'aws-spinner 0.75s linear infinite',
+      }}
+    />
+  );
+}
+
+function LoadingAvatarImage({ src, alt, className, style, wrapperClassName = '', spinnerSize = 16 }) {
+  if (!src) return null;
+
+  return (
+    <LoadingAvatarImageContent
+      key={src}
+      src={src}
+      alt={alt}
+      className={className}
+      style={style}
+      wrapperClassName={wrapperClassName}
+      spinnerSize={spinnerSize}
+    />
+  );
+}
+
+function LoadingAvatarImageContent({ src, alt, className, style, wrapperClassName = '', spinnerSize = 16 }) {
+  const [loading, setLoading] = useState(Boolean(src));
+  const [failed, setFailed] = useState(false);
+
+  if (failed) return null;
+
+  return (
+    <span
+      className={`relative inline-flex flex-shrink-0 items-center justify-center overflow-hidden rounded-full ${wrapperClassName}`}
+      style={{
+        backgroundColor: '#0F1923',
+        ...style,
+      }}
+    >
+      {loading && (
+        <span className="absolute inset-0 flex items-center justify-center">
+          <LoadingSpinner size={spinnerSize} />
+        </span>
+      )}
+      <img
+        src={src}
+        alt={alt}
+        onLoad={() => setLoading(false)}
+        onError={() => {
+          setFailed(true);
+          setLoading(false);
+        }}
+        className={className}
+        style={{
+          opacity: loading ? 0 : 1,
+          transition: 'opacity 0.18s ease',
+        }}
+      />
+    </span>
+  );
 }
 
 function getPrimaryLeader(member) {
@@ -36,13 +101,13 @@ function LeaderAvatarStack({ member, fallbackName, fallbackImageUrl, size = 'md'
     return (
       <div className="flex flex-shrink-0 items-center">
         {leaderImages.map((imageUrl, index) => (
-          <img
+          <LoadingAvatarImage
             key={`${imageUrl}-${index}`}
             src={imageUrl}
             alt={getLeaderNames(member)[index] || fallbackName}
-            onError={handleAvatarError}
-            className={`${avatarSizeClass} ${index > 0 ? overlapClass : ''} rounded-full object-cover`}
-            style={{ border: '2px solid #FF9900', backgroundColor: '#0F1923', zIndex: leaderImages.length - index }}
+            className={`${avatarSizeClass} rounded-full object-cover`}
+            wrapperClassName={index > 0 ? overlapClass : ''}
+            style={{ border: '2px solid #FF9900', zIndex: leaderImages.length - index }}
           />
         ))}
       </div>
@@ -55,11 +120,10 @@ function LeaderAvatarStack({ member, fallbackName, fallbackImageUrl, size = 'md'
   }
 
   return (
-    <img
+    <LoadingAvatarImage
       src={imageUrl}
       alt={getPrimaryLeader(member)?.name || fallbackName}
-      onError={handleAvatarError}
-      className={`${avatarSizeClass} flex-shrink-0 rounded-full object-cover`}
+      className={`${avatarSizeClass} rounded-full object-cover`}
       style={{ border: '2px solid #FF9900' }}
     />
   );
@@ -111,11 +175,11 @@ function LedByMeta({ member, darkMode, compact = false }) {
           style={{ backgroundColor: cardBg, border: `1px solid ${borderColor}` }}
         >
           {leader.imageUrl ? (
-            <img
+            <LoadingAvatarImage
               src={leader.imageUrl}
               alt={leader.name || 'Cloud Club leader'}
-              onError={handleAvatarError}
-              className={`${avatarSize} flex-shrink-0 rounded-full object-cover`}
+              className={`${avatarSize} rounded-full object-cover`}
+              spinnerSize={14}
             />
           ) : null}
           <div className="min-w-0 flex-1">
@@ -200,12 +264,12 @@ function SingleMemberView({ member, darkMode }) {
   return (
     <div className="flex flex-col items-center gap-3 pt-2">
       {member.avatarUrl && (
-        <img
+        <LoadingAvatarImage
           src={member.avatarUrl}
           alt={member.name}
-          onError={handleAvatarError}
-          className="h-16 w-16 rounded-full border-2 object-cover"
-          style={{ borderColor: '#FF9900' }}
+          className="h-16 w-16 rounded-full object-cover"
+          style={{ border: '2px solid #FF9900' }}
+          spinnerSize={18}
         />
       )}
       <h2 className="text-center text-lg font-bold leading-tight" style={{ color: nameColor }}>

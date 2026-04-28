@@ -36,9 +36,12 @@ export function useNews(enabled) {
 
   useEffect(() => {
     if (!enabled) {
-      setLoading(false);
-      setError(null);
-      return;
+      const frame = window.requestAnimationFrame(() => {
+        setLoading(false);
+        setError(null);
+      });
+
+      return () => window.cancelAnimationFrame(frame);
     }
 
     let cancelled = false;

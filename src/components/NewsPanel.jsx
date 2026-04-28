@@ -246,7 +246,11 @@ export default function NewsPanel({ darkMode, news, loading, selectedItems = [],
               type="button"
               onClick={onClose}
               className="mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full transition-colors"
-              style={{ color: bodyColor, background: darkMode ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)' }}
+              style={{
+                color: bodyColor,
+                background: darkMode ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)',
+                cursor: 'pointer',
+              }}
               aria-label="Close news panel"
             >
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -270,7 +274,7 @@ export default function NewsPanel({ darkMode, news, loading, selectedItems = [],
               type="button"
               onClick={() => setActiveTab(tab)}
               className="flex-1 rounded-full px-4 py-2 text-sm capitalize transition-colors"
-              style={tabStyle(tab)}
+              style={{ ...tabStyle(tab), cursor: 'pointer' }}
             >
               {tab}
               {count > 0 && (

@@ -271,8 +271,9 @@ export default function ClassicGlobeScene({
   }, [darkMode]);
 
   useEffect(() => {
-    if (!globeRef.current) return;
+    if (!globeRef.current || !containerRef.current) return;
 
+    const container = containerRef.current;
     const clusters = clusterMembers(members);
     const color = CATEGORY_COLORS[category] ?? '#FF9900';
 

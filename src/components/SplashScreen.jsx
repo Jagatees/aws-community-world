@@ -8,6 +8,11 @@ const STATS = [
 ];
 
 const TOTAL = 3988;
+const SPLASH_GLOBE_ROTATION_SPEED = 0.035;
+const SPLASH_MARKER_COUNT = 80;
+const SPLASH_MARKER_REVEAL_DELAY_MS = 450;
+const SPLASH_MARKER_REVEAL_INTERVAL_MS = 140;
+const SPLASH_MARKER_REVEAL_BATCH = 4;
 
 function AnimatedNumber({ target, duration = 1800, delay = 0 }) {
   const [value, setValue] = useState(0);
@@ -47,7 +52,9 @@ function createAvatarElement(hero) {
     pointer-events: none;
     background: #0d1e2e;
     box-shadow: 0 4px 12px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,153,0,0.25);
-    transform: translate(-50%, -50%);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.55);
+    transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
   `;
   const img = document.createElement('img');
   img.src = hero.image_url;
@@ -56,13 +63,27 @@ function createAvatarElement(hero) {
   img.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;';
   img.onerror = () => { wrapper.style.display = 'none'; };
   wrapper.appendChild(img);
+  requestAnimationFrame(() => {
+    wrapper.style.opacity = '1';
+    wrapper.style.transform = 'translate(-50%, -50%) scale(1)';
+  });
   return wrapper;
+}
+
+function shuffled(values) {
+  const next = [...values];
+  for (let index = next.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [next[index], next[swapIndex]] = [next[swapIndex], next[index]];
+  }
+  return next;
 }
 
 function OrbitGlobe() {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
   const rafRef = useRef(null);
+  const timersRef = useRef([]);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -75,11 +96,11 @@ function OrbitGlobe() {
     ]).then(([{ default: Globe }, { default: heroesRaw }]) => {
       if (!containerRef.current) return;
 
-      // Take a geographically spread sample: every 3rd hero, up to 80
-      const markers = heroesRaw
+      // Take a geographically spread sample, then randomize the reveal order.
+      const markers = shuffled(heroesRaw
         .filter(h => h.image_url && h.lat && h.lng && !(h.lat === 0 && h.lng === 0))
         .filter((_, i) => i % 3 === 0)
-        .slice(0, 80);
+        .slice(0, SPLASH_MARKER_COUNT));
 
       const globe = Globe()(container);
       globe
@@ -91,7 +112,7 @@ function OrbitGlobe() {
         .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
         .showGraticules(false)
         .pointOfView({ lat: 20, lng: 0, altitude: 2.2 })
-        .htmlElementsData(markers)
+        .htmlElementsData([])
         .htmlLat('lat')
         .htmlLng('lng')
         .htmlAltitude(0.06)
@@ -114,13 +135,30 @@ function OrbitGlobe() {
       });
 
       globeRef.current = globe;
+      let visibleMarkerCount = 0;
+      const revealMarkers = () => {
+        if (!globeRef.current) return;
+        visibleMarkerCount = Math.min(visibleMarkerCount + SPLASH_MARKER_REVEAL_BATCH, markers.length);
+        globeRef.current.htmlElementsData(markers.slice(0, visibleMarkerCount));
+        if (visibleMarkerCount >= markers.length) {
+          timersRef.current.forEach((timerId) => window.clearInterval(timerId));
+          timersRef.current = [];
+        }
+      };
+
+      const revealDelay = window.setTimeout(() => {
+        revealMarkers();
+        const revealInterval = window.setInterval(revealMarkers, SPLASH_MARKER_REVEAL_INTERVAL_MS);
+        timersRef.current.push(revealInterval);
+      }, SPLASH_MARKER_REVEAL_DELAY_MS);
+      timersRef.current.push(revealDelay);
 
       const tick = () => {
         if (globeRef.current) {
           const pov = globeRef.current.pointOfView();
           globeRef.current.pointOfView({
             lat: pov.lat,
-            lng: pov.lng + 0.15,
+            lng: pov.lng + SPLASH_GLOBE_ROTATION_SPEED,
             altitude: pov.altitude,
           });
         }
@@ -141,6 +179,11 @@ function OrbitGlobe() {
 
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      timersRef.current.forEach((timerId) => {
+        window.clearTimeout(timerId);
+        window.clearInterval(timerId);
+      });
+      timersRef.current = [];
       if (globeRef.current?._observer) globeRef.current._observer.disconnect();
       container.innerHTML = '';
       globeRef.current = null;
@@ -156,6 +199,32 @@ function OrbitGlobe() {
 }
 
 export default function SplashScreen({ onStart, exiting }) {
+  const [showGlobe, setShowGlobe] = useState(false);
+
+  useEffect(() => {
+    if (exiting) return undefined;
+
+    let cancelled = false;
+    let timeoutId = 0;
+    const show = () => {
+      if (!cancelled) setShowGlobe(true);
+    };
+
+    if ('requestIdleCallback' in window) {
+      const idleId = window.requestIdleCallback(show, { timeout: 1200 });
+      return () => {
+        cancelled = true;
+        window.cancelIdleCallback(idleId);
+      };
+    }
+
+    timeoutId = window.setTimeout(show, 650);
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timeoutId);
+    };
+  }, [exiting]);
+
   return (
     <div
       className="absolute inset-0 z-50 flex overflow-hidden aws-shell-bg-dark"
@@ -325,7 +394,19 @@ export default function SplashScreen({ onStart, exiting }) {
           transform: exiting ? 'scale(1.06)' : 'scale(1)',
         }}
       >
-        <OrbitGlobe />
+        {showGlobe && !exiting ? <OrbitGlobe /> : (
+          <div
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              inset: '12%',
+              borderRadius: '50%',
+              background: 'radial-gradient(circle at 38% 30%, rgba(74, 144, 217, 0.38), rgba(8, 18, 30, 0.96) 58%, rgba(2, 6, 12, 1) 72%)',
+              boxShadow: 'inset -42px -30px 80px rgba(0, 0, 0, 0.68), 0 0 70px rgba(74, 144, 217, 0.2)',
+              opacity: 0.82,
+            }}
+          />
+        )}
       </div>
     </div>
   );

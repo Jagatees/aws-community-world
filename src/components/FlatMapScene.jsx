@@ -171,11 +171,15 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
 
   useEffect(() => {
     if (!zoomCommand?.direction) return;
-    if (zoomCommand.direction === 'in') {
-      setManualZoom((zoom) => clamp(zoom * ZOOM_STEP, MIN_ZOOM, MAX_ZOOM));
-    } else if (zoomCommand.direction === 'out') {
-      setManualZoom((zoom) => clamp(zoom / ZOOM_STEP, MIN_ZOOM, MAX_ZOOM));
-    }
+    const frame = window.requestAnimationFrame(() => {
+      if (zoomCommand.direction === 'in') {
+        setManualZoom((zoom) => clamp(zoom * ZOOM_STEP, MIN_ZOOM, MAX_ZOOM));
+      } else if (zoomCommand.direction === 'out') {
+        setManualZoom((zoom) => clamp(zoom / ZOOM_STEP, MIN_ZOOM, MAX_ZOOM));
+      }
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, [zoomCommand]);
 
   function handlePointerDown(event) {

@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { getCountryCode, countryCodeToFlag } from '../utils/countryFlags';
 
-const MENU_WIDTH = 240;
+const MENU_WIDTH = 260;
 const VIEWPORT_GUTTER = 12;
-const MENU_HEIGHT = 300;
+const MENU_HEIGHT = 330;
 
 export default function CountryDropdown({
   darkMode,
@@ -17,9 +17,11 @@ export default function CountryDropdown({
   buttonStyle = {},
 }) {
   const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState('');
   const [menuPos, setMenuPos] = useState({ top: 0, left: 0 });
   const triggerRef = useRef(null);
   const menuRef = useRef(null);
+  const searchRef = useRef(null);
 
   useEffect(() => {
     if (open && triggerRef.current) {
@@ -33,6 +35,14 @@ export default function CountryDropdown({
         left: Math.min(Math.max(VIEWPORT_GUTTER, rect.left), maxLeft),
       });
     }
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const frame = window.requestAnimationFrame(() => {
+      searchRef.current?.focus();
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, [open]);
 
   useEffect(() => {
@@ -54,100 +64,153 @@ export default function CountryDropdown({
   const menuBg = darkMode ? '#1B2836' : '#ffffff';
   const menuHover = darkMode ? 'rgba(255,153,0,0.1)' : 'rgba(255,153,0,0.08)';
   const menuText = darkMode ? '#DCE7F0' : '#17324B';
+  const inputBg = darkMode ? 'rgba(9, 19, 28, 0.72)' : 'rgba(240, 247, 255, 0.95)';
+  const inputBorder = darkMode ? 'rgba(115, 145, 171, 0.32)' : 'rgba(160, 187, 212, 0.72)';
+  const inputPlaceholder = darkMode ? '#7E93A7' : '#6C879F';
+
+  const filteredCountries = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+    if (!normalizedQuery) return countries;
+
+    return countries.filter((country) => {
+      const code = getCountryCode(country);
+      return (
+        country.toLowerCase().includes(normalizedQuery) ||
+        code?.toLowerCase().includes(normalizedQuery)
+      );
+    });
+  }, [countries, query]);
+
+  function closeMenu() {
+    setQuery('');
+    setOpen(false);
+  }
+
+  function selectCountry(country) {
+    onCountryChange(country);
+    closeMenu();
+  }
+
   const menu = open && createPortal(
-    <ul
+    <div
       ref={menuRef}
-      role="listbox"
-        style={{
-          position: 'fixed',
-          top: menuPos.top,
-          left: menuPos.left,
-          zIndex: 9999,
+      style={{
+        position: 'fixed',
+        top: menuPos.top,
+        left: menuPos.left,
+        zIndex: 9999,
         minWidth: `${MENU_WIDTH}px`,
-          maxHeight: `${MENU_HEIGHT}px`,
-          overflowY: 'auto',
+        maxHeight: `${MENU_HEIGHT}px`,
+        overflow: 'hidden',
         backgroundColor: menuBg,
         border: `1px solid ${border}`,
         borderRadius: '14px',
         boxShadow: '0 18px 36px rgba(0,0,0,0.28)',
         padding: '6px',
-        margin: 0,
-        listStyle: 'none',
       }}
     >
-      <li
-        role="option"
-        aria-selected={!selectedCountry}
-        onClick={() => {
-          onCountryChange(null);
-          setOpen(false);
-        }}
+      <label
         style={{
           display: 'flex',
           alignItems: 'center',
           gap: '8px',
-          padding: '10px 12px',
+          marginBottom: '6px',
+          padding: '8px 10px',
           borderRadius: '10px',
-          cursor: 'pointer',
-          fontSize: '0.8rem',
-          fontWeight: !selectedCountry ? 700 : 500,
-          color: !selectedCountry ? '#FF9900' : menuText,
-          background: !selectedCountry ? 'rgba(255,153,0,0.1)' : 'transparent',
-        }}
-        onMouseEnter={(e) => {
-          if (selectedCountry) e.currentTarget.style.background = menuHover;
-        }}
-        onMouseLeave={(e) => {
-          if (selectedCountry) e.currentTarget.style.background = 'transparent';
+          background: inputBg,
+          border: `1px solid ${inputBorder}`,
         }}
       >
-        <span style={{ fontSize: '1.1rem', lineHeight: 1 }}>🌍</span>
-        <span>All Countries</span>
-      </li>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={inputPlaceholder} strokeWidth="2.4" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m16 16 4 4" />
+        </svg>
+        <input
+          ref={searchRef}
+          type="search"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape') {
+              closeMenu();
+              triggerRef.current?.focus();
+            }
+          }}
+          placeholder="Search country..."
+          aria-label="Search countries"
+          style={{
+            flex: 1,
+            minWidth: 0,
+            border: 0,
+            outline: 0,
+            background: 'transparent',
+            color: menuText,
+            fontSize: '0.8rem',
+            fontWeight: 600,
+          }}
+        />
+      </label>
 
-      {countries.map((country) => {
-        const code = getCountryCode(country);
-        const flag = code ? countryCodeToFlag(code) : '';
-        const count = countryCounts[country] ?? 0;
-        const isSelected = selectedCountry === country;
+      <ul
+        role="listbox"
+        style={{
+          maxHeight: `${MENU_HEIGHT - 58}px`,
+          overflowY: 'auto',
+          padding: 0,
+          margin: 0,
+          listStyle: 'none',
+        }}
+      >
+        <CountryOption
+          selected={!selectedCountry}
+          color={!selectedCountry ? '#FF9900' : menuText}
+          menuHover={menuHover}
+          selectedCountry={selectedCountry}
+          onClick={() => selectCountry(null)}
+        >
+          <span style={{ fontSize: '1.1rem', lineHeight: 1 }}>🌍</span>
+          <span>All Countries</span>
+        </CountryOption>
 
-        return (
+        {filteredCountries.map((country) => {
+          const code = getCountryCode(country);
+          const flag = code ? countryCodeToFlag(code) : '';
+          const count = countryCounts[country] ?? 0;
+          const isSelected = selectedCountry === country;
+
+          return (
+            <CountryOption
+              key={country}
+              selected={isSelected}
+              color={isSelected ? '#FF9900' : menuText}
+              menuHover={menuHover}
+              selectedCountry={selectedCountry}
+              onClick={() => selectCountry(isSelected ? null : country)}
+            >
+              <span style={{ fontSize: '1.1rem', lineHeight: 1, minWidth: '1.4rem', textAlign: 'center' }}>
+                {flag}
+              </span>
+              <span style={{ flex: 1 }}>{country}</span>
+              {count > 0 && <span style={{ fontSize: '0.7rem', opacity: 0.55 }}>{count}</span>}
+            </CountryOption>
+          );
+        })}
+
+        {filteredCountries.length === 0 && (
           <li
-            key={country}
-            role="option"
-            aria-selected={isSelected}
-            onClick={() => {
-              onCountryChange(isSelected ? null : country);
-              setOpen(false);
-            }}
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '10px 12px',
-              borderRadius: '10px',
-              cursor: 'pointer',
+              padding: '14px 12px',
+              color: inputPlaceholder,
               fontSize: '0.8rem',
-              fontWeight: isSelected ? 700 : 500,
-              color: isSelected ? '#FF9900' : menuText,
-              background: isSelected ? 'rgba(255,153,0,0.1)' : 'transparent',
-            }}
-            onMouseEnter={(e) => {
-              if (!isSelected) e.currentTarget.style.background = menuHover;
-            }}
-            onMouseLeave={(e) => {
-              if (!isSelected) e.currentTarget.style.background = 'transparent';
+              fontWeight: 600,
+              textAlign: 'center',
             }}
           >
-            <span style={{ fontSize: '1.1rem', lineHeight: 1, minWidth: '1.4rem', textAlign: 'center' }}>
-              {flag}
-            </span>
-            <span style={{ flex: 1 }}>{country}</span>
-            {count > 0 && <span style={{ fontSize: '0.7rem', opacity: 0.55 }}>{count}</span>}
+            No countries found
           </li>
-        );
-      })}
-    </ul>,
+        )}
+      </ul>
+    </div>,
     document.body
   );
 
@@ -156,7 +219,10 @@ export default function CountryDropdown({
       <button
         ref={triggerRef}
         type="button"
-        onClick={() => setOpen((value) => !value)}
+        onClick={() => {
+          setQuery('');
+          setOpen((value) => !value);
+        }}
         aria-haspopup="listbox"
         aria-expanded={open}
         className={className}
@@ -184,5 +250,35 @@ export default function CountryDropdown({
       </button>
       {menu}
     </>
+  );
+}
+
+function CountryOption({ selected, color, menuHover, selectedCountry, onClick, children }) {
+  return (
+    <li
+      role="option"
+      aria-selected={selected}
+      onClick={onClick}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        padding: '10px 12px',
+        borderRadius: '10px',
+        cursor: 'pointer',
+        fontSize: '0.8rem',
+        fontWeight: selected ? 700 : 500,
+        color,
+        background: selected ? 'rgba(255,153,0,0.1)' : 'transparent',
+      }}
+      onMouseEnter={(e) => {
+        if (!selected || selectedCountry) e.currentTarget.style.background = menuHover;
+      }}
+      onMouseLeave={(e) => {
+        if (!selected) e.currentTarget.style.background = 'transparent';
+      }}
+    >
+      {children}
+    </li>
   );
 }

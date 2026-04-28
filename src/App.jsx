@@ -48,6 +48,7 @@ export default function App() {
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isNewsView = activeCategory === 'news';
+  const globeReady = !showSplash;
 
   const { error, members, loading } = useCategory(activeCategory);
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
@@ -159,6 +160,7 @@ export default function App() {
     return {
       backgroundColor: active ? '#FF9900' : 'transparent',
       color: active ? '#0F1923' : styleControlText,
+      cursor: 'pointer',
     };
   }
 
@@ -167,6 +169,45 @@ export default function App() {
     if (design === 'orbit') return 'Orbit';
     if (design === 'sleek') return 'Sleek';
     return design.charAt(0).toUpperCase() + design.slice(1);
+  }
+
+  function renderLoadingSpinner(size = 20) {
+    return (
+      <span
+        aria-hidden="true"
+        style={{
+          width: `${size}px`,
+          height: `${size}px`,
+          borderRadius: '999px',
+          border: '2px solid rgba(255, 153, 0, 0.24)',
+          borderTopColor: '#FF9900',
+          animation: 'aws-spinner 0.75s linear infinite',
+        }}
+      />
+    );
+  }
+
+  function renderGlobeLoading(message = 'Loading globe...') {
+    return (
+      <div
+        className={`relative flex h-full w-full items-center justify-center overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}
+      >
+        <div className="aws-globe-pattern" />
+        <div
+          className="relative z-10 flex items-center gap-3 rounded-full px-4 py-2 text-sm font-semibold"
+          style={{
+            color: globeLoadingText,
+            background: globeLoadingBg,
+            border: `1px solid ${globeLoadingBorder}`,
+            backdropFilter: 'blur(14px)',
+            WebkitBackdropFilter: 'blur(14px)',
+          }}
+        >
+          {renderLoadingSpinner(18)}
+          {message}
+        </div>
+      </div>
+    );
   }
 
   const handleSplashStart = useCallback(() => {
@@ -304,39 +345,45 @@ export default function App() {
             <div className="relative h-full min-h-0">
               {/* Globe — always fills the full area */}
               <div className="absolute inset-0">
-                <Suspense
-                  fallback={(
-                    <div
-                      className={`relative flex h-full w-full items-center justify-center overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}
-                    >
-                      <div className="aws-globe-pattern" />
-                      <div
-                        className="relative z-10 rounded-full px-4 py-2 text-sm font-semibold"
-                        style={{
-                          color: globeLoadingText,
-                          background: globeLoadingBg,
-                          border: `1px solid ${globeLoadingBorder}`,
-                          backdropFilter: 'blur(14px)',
-                          WebkitBackdropFilter: 'blur(14px)',
-                        }}
-                      >
-                        Loading globe...
-                      </div>
+                {globeReady ? (
+                  <Suspense
+                    fallback={renderGlobeLoading()}
+                  >
+                    <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
+                      <ActiveGlobeScene
+                        category="news"
+                        members={newsMarkers}
+                        onMarkerClick={handleNewsMarkerClick}
+                        cardOpen={selectedNewsItems.length > 0}
+                        darkMode={darkMode}
+                        flyToTarget={selectedNewsFlyTarget ?? resolvedFlyToTarget}
+                        zoomCommand={zoomCommand}
+                      />
                     </div>
-                  )}
-                >
-                  <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
-                    <ActiveGlobeScene
-                      category="news"
-                      members={newsMarkers}
-                      onMarkerClick={handleNewsMarkerClick}
-                      cardOpen={selectedNewsItems.length > 0}
-                      darkMode={darkMode}
-                      flyToTarget={selectedNewsFlyTarget ?? resolvedFlyToTarget}
-                      zoomCommand={zoomCommand}
-                    />
+                  </Suspense>
+                ) : (
+                  <div className={`relative h-full w-full overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}>
+                    <div className="aws-globe-pattern" />
                   </div>
-                </Suspense>
+                )}
+
+                {globeReady && newsLoading && (
+                  <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
+                    <div
+                      className="flex items-center gap-3 rounded-full px-4 py-2 text-sm font-semibold"
+                      style={{
+                        color: globeLoadingText,
+                        background: globeLoadingBg,
+                        border: `1px solid ${globeLoadingBorder}`,
+                        backdropFilter: 'blur(14px)',
+                        WebkitBackdropFilter: 'blur(14px)',
+                      }}
+                    >
+                      {renderLoadingSpinner(18)}
+                      Loading news...
+                    </div>
+                  </div>
+                )}
 
                 {/* Globe controls */}
                 <div
@@ -390,6 +437,7 @@ export default function App() {
                             display: 'inline-flex',
                             alignItems: 'center',
                             justifyContent: 'center',
+                            cursor: 'pointer',
                           }}
                           aria-label={`Zoom ${dir}`}
                         >
@@ -410,6 +458,7 @@ export default function App() {
                         minHeight: '2.1rem',
                         border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
                         transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
+                        cursor: nearMeLoading ? 'wait' : 'pointer',
                       }}
                       aria-label="Near me"
                     >
@@ -443,6 +492,7 @@ export default function App() {
                   backdropFilter: 'blur(14px)',
                   WebkitBackdropFilter: 'blur(14px)',
                   transition: 'right 0.3s ease',
+                  cursor: 'pointer',
                 }}
                 aria-label={newsPanelOpen ? 'Close news panel' : 'Open news panel'}
               >
@@ -487,39 +537,45 @@ export default function App() {
             </div>
           ) : (
             <>
-              <Suspense
-                fallback={(
-                  <div
-                    className={`relative flex h-full w-full items-center justify-center overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}
-                  >
-                    <div className="aws-globe-pattern" />
-                    <div
-                      className="relative z-10 rounded-full px-4 py-2 text-sm font-semibold"
-                      style={{
-                        color: globeLoadingText,
-                        background: globeLoadingBg,
-                        border: `1px solid ${globeLoadingBorder}`,
-                        backdropFilter: 'blur(14px)',
-                        WebkitBackdropFilter: 'blur(14px)',
-                      }}
-                    >
-                      Loading globe...
-                    </div>
+              {globeReady ? (
+                <Suspense
+                  fallback={renderGlobeLoading()}
+                >
+                  <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
+                    <ActiveGlobeScene
+                      category={activeCategory}
+                      members={filteredMembers}
+                      onMarkerClick={handleMarkerClick}
+                      cardOpen={!!selectedMember}
+                      darkMode={darkMode}
+                      flyToTarget={resolvedFlyToTarget}
+                      zoomCommand={zoomCommand}
+                    />
                   </div>
-                )}
-              >
-                <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
-                  <ActiveGlobeScene
-                    category={activeCategory}
-                    members={filteredMembers}
-                    onMarkerClick={handleMarkerClick}
-                    cardOpen={!!selectedMember}
-                    darkMode={darkMode}
-                    flyToTarget={resolvedFlyToTarget}
-                    zoomCommand={zoomCommand}
-                  />
+                </Suspense>
+              ) : (
+                <div className={`relative h-full w-full overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}>
+                  <div className="aws-globe-pattern" />
                 </div>
-              </Suspense>
+              )}
+
+              {globeReady && loading && (
+                <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
+                  <div
+                    className="flex items-center gap-3 rounded-full px-4 py-2 text-sm font-semibold"
+                    style={{
+                      color: globeLoadingText,
+                      background: globeLoadingBg,
+                      border: `1px solid ${globeLoadingBorder}`,
+                      backdropFilter: 'blur(14px)',
+                      WebkitBackdropFilter: 'blur(14px)',
+                    }}
+                  >
+                    {renderLoadingSpinner(18)}
+                    Loading people...
+                  </div>
+                </div>
+              )}
 
               {/* Globe HUD — live member count */}
               <div
@@ -650,6 +706,7 @@ export default function App() {
                         display: 'inline-flex',
                         alignItems: 'center',
                         justifyContent: 'center',
+                        cursor: 'pointer',
                       }}
                       aria-label="Zoom out"
                     >
@@ -666,6 +723,7 @@ export default function App() {
                         display: 'inline-flex',
                         alignItems: 'center',
                         justifyContent: 'center',
+                        cursor: 'pointer',
                       }}
                       aria-label="Zoom in"
                     >
@@ -685,6 +743,7 @@ export default function App() {
                       minHeight: '2.1rem',
                       border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
                       transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
+                      cursor: nearMeLoading ? 'wait' : 'pointer',
                     }}
                     aria-label="Near me"
                   >
