@@ -1,6 +1,73 @@
 {
-  "updatedAt": "2026-04-27T23:19:07.322Z",
+  "updatedAt": "2026-04-28T00:32:07.525Z",
   "latest": [
+    {
+      "id": "/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
+      "title": "AI Coaching Notes + Video Sync with AWS (PlayTicks)",
+      "description": "PlayTicks is a real-time soccer coaching annotation tool that converts short voice notes into structured match events. Built with Amazon S3, AWS Lambda, Amazon Transcribe, Amazon Bedrock, and Amazon ECS, it automatically transcribes and classifies coaching notes and syncs them to game timestamps for faster post-game video review.",
+      "url": "https://builder.aws.com/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
+      "imageUrl": "",
+      "authorName": "Banele",
+      "authorAlias": "bndlovu",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aideas-2025",
+        "workplace-efficiency",
+        "aws-in-sports",
+        "transcribe",
+        "video"
+      ],
+      "publishedAt": "2026-04-28T00:28:43.512Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxgOuLZ2bX4wrGo25gCRpsjsIN",
+      "title": "Minha primeira aplicação na nuvem: o que aprendi hospedando um sistema real na AWS",
+      "description": "Construir um sistema na faculdade é uma coisa. Colocar um sistema real no ar, com usuários de verdade, é outra bem diferente. Neste artigo, compartilho os desafios, erros e aprendizados que tive ao hospedar minha primeira aplicação na AWS — um sistema de gestão para clínicas de estética. Das dores de configuração ao medo da fatura no fim do mês, passando pelo papel da IA como aliada nos momentos de travamento. Um relato sincero sobre o que a faculdade não ensina, mas a prática entrega.",
+      "url": "https://builder.aws.com/content/3CxgOuLZ2bX4wrGo25gCRpsjsIN",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "aws-skill-builder",
+        "soft-skills",
+        "value-of-skills"
+      ],
+      "publishedAt": "2026-04-27T23:33:00.288Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxdK923PyXJk2sXloeImoBYLGy",
+      "title": "From Campus to Community: AWS Cloud Club at UH at AWS Community on Tour Houston",
+      "description": "The AWS Cloud Club at the University of Houston attended the AWS Community Day on Tour Houston stop and walked away with hands-on Kiro experience, a new mental model for building with AI, and real connections in the AWS community.",
+      "url": "https://builder.aws.com/content/3CxdK923PyXJk2sXloeImoBYLGy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxfeZVX00QahwJaD7sY0Xayfor/Comm.webp",
+      "authorName": "Perry",
+      "authorAlias": "agentpierre",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdmQtP50V9syu04k2BfNZkgzlE.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-community",
+        "ai",
+        "event-recap",
+        "prompt-engineering",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-27T23:30:11.168Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CxKesR62aPuZHM3qQzqCGzOW00",
       "title": "🚀 Elevating the Standard: From ASCII Diagrams to Visual Architectures with Kiro 101 and AWS MCP",
@@ -129,72 +196,6 @@
       "publishedAt": "2026-04-27T18:01:36.586Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cx1C5OdAsi2GrICxlYsKMQfY7j",
-      "title": "My Journey in Cloud Computing with AWS Cloud Club",
-      "description": "I am a student learning Cloud Computing through AWS Cloud Club and building my skills to become a DevOps Engineer.",
-      "url": "https://builder.aws.com/content/3Cx1C5OdAsi2GrICxlYsKMQfY7j",
-      "imageUrl": "",
-      "authorName": "Muhammad Luqman",
-      "authorAlias": "muhammadluqman",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CvzB8ZvQwhGvdalacWupKLkYQd.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "aws-cloud-clubs",
-        "aws-community",
-        "aws-educate",
-        "aws-partners",
-        "challenge"
-      ],
-      "publishedAt": "2026-04-27T17:58:18.501Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CwrHn1j3xKPpL0DYcngaVDEifl",
-      "title": "Kodai Kondattam: A Summer Celebration That Brought the Future to Madurai",
-      "description": "A half-day meetup that felt like a full conference. Kodai Kondattam by AWS User Group Madurai brought together Generative AI fundamentals, a history-making AI DeepRacer named Bumblebee — the first non-human chief guest at an AWS community meetup in India — and a creative AI storytelling session powered by Amazon Nova. Here's what made it unforgettable.",
-      "url": "https://builder.aws.com/content/3CwrHn1j3xKPpL0DYcngaVDEifl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwydcPn92jknHo9jJsc4Lipbzx/k2-j.webp",
-      "authorName": "KANISKASRI T S P",
-      "authorAlias": "kani272006",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "llm",
-        "amazon-nova",
-        "generative-ai",
-        "mcp",
-        "agents"
-      ],
-      "publishedAt": "2026-04-27T17:30:31.030Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
-      "title": "Erros de segurança que iniciantes cometem na AWS (e como evitar)",
-      "description": "Começar a utilizar a AWS é um processo ágil e acessível, porém essa facilidade pode levar à negligência de aspectos fundamentais de segurança. Este conteúdo apresenta os principais erros cometidos por iniciantes e orienta sobre como evitá-los na prática, desde o uso inadequado do usuário root até a exposição de credenciais e a ausência de monitoramento. Trata-se de um guia objetivo para fortalecer a segurança da sua conta desde o início e prevenir riscos operacionais e financeiros",
-      "url": "https://builder.aws.com/content/3Cdgjlyd3M5eBixdohubnWSEFRe",
-      "imageUrl": "",
-      "authorName": "João Lucca Rodrigues e Silva",
-      "authorAlias": "lucca11",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5xS8rPbmruTM9mI7CGqcHF3Rs.webp",
-      "location": "GO, BR",
-      "lat": -15.9323662,
-      "lng": -50.1392928,
-      "tags": [
-        "cybersecurity",
-        "amazon-s3"
-      ],
-      "publishedAt": "2026-04-27T16:59:45.472Z",
-      "likesCount": 7,
-      "commentsCount": 3
     }
   ],
   "trending": [
@@ -220,6 +221,25 @@
       "commentsCount": 1912
     },
     {
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 22,
+      "commentsCount": 9
+    },
+    {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
       "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
@@ -239,25 +259,6 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3510,
       "commentsCount": 323
-    },
-    {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 21,
-      "commentsCount": 4
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -386,27 +387,26 @@
       "commentsCount": 20
     },
     {
-      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "title": "Essa tal de nuvem... fica muito distante do chão?",
-      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
-      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
-      "authorName": "Amanda Y.",
-      "authorAlias": "yuminhercodedays",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxELt4JqtRZe8WXnoA2UbT4pl3.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
       "tags": [
-        "aws-builders",
-        "aspiring-builders",
-        "architecture",
-        "cloud-adoption-framework",
-        "tips"
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
       ],
-      "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 26,
-      "commentsCount": 22
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1410,
+      "commentsCount": 325
     }
   ]
 }
