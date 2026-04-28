@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-04-28T10:40:39.564Z",
+  "updatedAt": "2026-04-28T11:34:16.442Z",
   "latest": [
+    {
+      "id": "/content/3Cz0AmR2bmkf9qOCP2xD2TGtgfP",
+      "title": "Building an Event-Driven Transaction Processor with S3, Lambda, and DynamoDB",
+      "description": "A practical guide to building and securing a serverless transaction processing pipeline using AWS event triggers and Terraform",
+      "url": "https://builder.aws.com/content/3Cz0AmR2bmkf9qOCP2xD2TGtgfP",
+      "imageUrl": "",
+      "authorName": "Logeswaran Vinayagam",
+      "authorAlias": "logeswaran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xzSzPqjspDqzvCaECHOijJYs7g.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [],
+      "publishedAt": "2026-04-28T11:08:25.513Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CyX35ulMAgnFiI8sAW9o7kE1LQ",
+      "title": "Scale-Driven Architecture: Lessons from a Hyperscale Multi-Tenant Agent Platform on EKS — Part 1: Networking and Pod Density",
+      "description": "Running 100k+ tenants on a single EKS cluster is not a larger version of running 100 — it's a different problem entirely. This first part walks the capacity layer where the walls show up first: how VPC IP space becomes capacity planning, two fundamentally different paths to expanding the pod IP pool, and the layered ceilings that decide how many pods a node will really take.",
+      "url": "https://builder.aws.com/content/3CyX35ulMAgnFiI8sAW9o7kE1LQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cz1p9p3Jwv0glFdHaO5aBKmsBp/01-p.webp",
+      "authorName": "Shawn Zhang",
+      "authorAlias": "shawnzh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "infrastructure",
+        "multi-tenant",
+        "agentic-ai",
+        "kubernetes",
+        "architecture"
+      ],
+      "publishedAt": "2026-04-28T10:59:43.924Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CyhewEzLIdBZZrbSatRSE3jPeH",
       "title": "Building Bulletproof PostgreSQL: High Availability with Aurora Global Database & RDS Proxy",
@@ -361,47 +401,6 @@
       "publishedAt": "2026-04-27T20:43:32.572Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxIn4m2L7CtCcg84ABiLAglaqk",
-      "title": "Building Intelligence with AWS",
-      "description": "This is how I built the ACCIPITER: ALTUM branch in AWS AI Playground, and how AWS helped me push the frontiers of code.",
-      "url": "https://builder.aws.com/content/3CxIn4m2L7CtCcg84ABiLAglaqk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CxKEDE6XJUB4IfXJM7EhYgN4qS/altu.webp",
-      "authorName": "Peter Loud",
-      "authorAlias": "pcl",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "amazon-bedrock",
-        "playgrounds"
-      ],
-      "publishedAt": "2026-04-27T20:31:54.431Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ClgBp137pv986TpQeOS22AmDUI",
-      "title": "Build a Live Streaming Application With Amazon IVS and Stream Chat",
-      "description": "Learn how to combine Amazon IVS low-latency and real-time streaming with Stream Chat to build a production-ready app featuring live video playback and interactive chat",
-      "url": "https://builder.aws.com/content/3ClgBp137pv986TpQeOS22AmDUI",
-      "imageUrl": "",
-      "authorName": "Tony Vu",
-      "authorAlias": "eanthovu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2l1xA0z8sfF6zHC084LNMwW5Obv.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "livestreaming",
-        "amazon-ivs"
-      ],
-      "publishedAt": "2026-04-27T20:26:34.794Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -502,7 +501,7 @@
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
       "likesCount": 42,
-      "commentsCount": 168
+      "commentsCount": 169
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
@@ -570,6 +569,28 @@
       "commentsCount": 12
     },
     {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxELt4JqtRZe8WXnoA2UbT4pl3.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1413,
+      "commentsCount": 325
+    },
+    {
       "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
       "title": "Essa tal de nuvem... fica muito distante do chão?",
       "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
@@ -591,28 +612,6 @@
       "publishedAt": "2026-04-25T19:08:26.188Z",
       "likesCount": 29,
       "commentsCount": 26
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxELt4JqtRZe8WXnoA2UbT4pl3.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1413,
-      "commentsCount": 325
     }
   ]
 }
