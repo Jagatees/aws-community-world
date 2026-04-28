@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-04-28T07:48:04.882Z",
+  "updatedAt": "2026-04-28T08:50:02.203Z",
   "latest": [
+    {
+      "id": "/content/3CyhewEzLIdBZZrbSatRSE3jPeH",
+      "title": "Building Bulletproof PostgreSQL: High Availability with Aurora Global Database & RDS Proxy",
+      "description": "Hands-on deep dive into building highly available PostgreSQL architectures on AWS! In this episode, we explore how Amazon Aurora PostgreSQL Global Database and RDS Proxy work together to deliver enterprise-grade availability and performance.",
+      "url": "https://builder.aws.com/content/3CyhewEzLIdBZZrbSatRSE3jPeH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cyi5ayzHwe2qpagzEWUwX01HdW/Scre.webp",
+      "authorName": "Ibrahim Emara",
+      "authorAlias": "emarai",
+      "authorAvatarUrl": "",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "amazon-aurora",
+        "amazon-rds",
+        "availability"
+      ],
+      "publishedAt": "2026-04-28T08:22:23.852Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CyhxO5GRqPlDPa4jXF2nFuXmHO",
+      "title": "Kodai Kondattam: A Summer Celebration of AI, Agents, and Community",
+      "description": "The event was thoughtfully organized at a great venue, and the user group leaders — Vivek Raja, Lokesh, and Poobalan — elevated the entire experience 🌟 This stands out as one of the best meetups with real learning and practical, real-world exposure — bringing cutting-edge technology to a Tier-2 city like Madurai and empowering the community 💛 Looking forward to many more such events in Madurai. Grateful for this one-of-a-kind experience 🙌",
+      "url": "https://builder.aws.com/content/3CyhxO5GRqPlDPa4jXF2nFuXmHO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyiZrUoBE016jq2pucuq9xDJZU/Whats.webp",
+      "authorName": "SONALI",
+      "authorAlias": "sonali21",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "llm",
+        "aws-deepracer",
+        "amazon-nova",
+        "mcp",
+        "agents"
+      ],
+      "publishedAt": "2026-04-28T08:19:55.689Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CyaeIzqgVVl7RK8YOT0Np4q7O3",
       "title": "Cloud Bombing",
@@ -171,42 +215,6 @@
       "publishedAt": "2026-04-28T05:46:35.052Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
-      "title": "🚀 Getting Started with AWS Lambda: Build Your First Serverless Project",
-      "description": "In this article, I’ll walk through what Lambda is, why it’s useful, and how you can build a simple project to get started.",
-      "url": "https://builder.aws.com/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
-      "imageUrl": "",
-      "authorName": "Shagun Khare",
-      "authorAlias": "shagunk917",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-28T02:22:38.424Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxoC0H5uu2EqwGJC4XIFHgmjnq",
-      "title": "The Architecture Review Board Is Not What It Used To Be",
-      "description": "AI-driven development is breaking the traditional Architecture Review Board. The fix is not to slow AI down or give up on EA. It is to turn architectural intent into executable artefacts: fitness functions, tiered AI review, and AGENTS.md treated as a runtime spec, not documentation.",
-      "url": "https://builder.aws.com/content/3CxoC0H5uu2EqwGJC4XIFHgmjnq",
-      "imageUrl": "",
-      "authorName": "Steven Cook",
-      "authorAlias": "sjcook",
-      "authorAvatarUrl": "",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "architecture"
-      ],
-      "publishedAt": "2026-04-28T01:36:03.783Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -253,25 +261,6 @@
       "commentsCount": 323
     },
     {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 25,
-      "commentsCount": 11
-    },
-    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -291,6 +280,25 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2840,
       "commentsCount": 316
+    },
+    {
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 25,
+      "commentsCount": 11
     },
     {
       "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
@@ -416,7 +424,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1410,
+      "likesCount": 1413,
       "commentsCount": 325
     }
   ]
