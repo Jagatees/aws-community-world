@@ -1,6 +1,42 @@
 {
-  "updatedAt": "2026-04-28T01:35:30.994Z",
+  "updatedAt": "2026-04-28T03:05:56.513Z",
   "latest": [
+    {
+      "id": "/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
+      "title": "🚀 Getting Started with AWS Lambda: Build Your First Serverless Project",
+      "description": "In this article, I’ll walk through what Lambda is, why it’s useful, and how you can build a simple project to get started.",
+      "url": "https://builder.aws.com/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
+      "imageUrl": "",
+      "authorName": "Shagun Khare",
+      "authorAlias": "shagunk917",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-04-28T02:22:38.424Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxoC0H5uu2EqwGJC4XIFHgmjnq",
+      "title": "The Architecture Review Board Is Not What It Used To Be",
+      "description": "AI-driven development is breaking the traditional Architecture Review Board. The fix is not to slow AI down or give up on EA. It is to turn architectural intent into executable artefacts: fitness functions, tiered AI review, and AGENTS.md treated as a runtime spec, not documentation.",
+      "url": "https://builder.aws.com/content/3CxoC0H5uu2EqwGJC4XIFHgmjnq",
+      "imageUrl": "",
+      "authorName": "Steven Cook",
+      "authorAlias": "sjcook",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "architecture"
+      ],
+      "publishedAt": "2026-04-28T01:36:03.783Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
       "title": "Como minha trajetória mudou em poucas semanas (e o papel do AWS Builder Center nisso)",
@@ -21,8 +57,8 @@
         "beginner-projects"
       ],
       "publishedAt": "2026-04-28T01:09:44.330Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CwxGS7OKAZteNEsOxTlbLXR2PD",
@@ -168,40 +204,6 @@
       "publishedAt": "2026-04-27T20:02:49.407Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cx39VRdRkKQyKIxgSWgjLvE0Fk",
-      "title": "Kodai Kondattam: How Madurai Hosted One of India's Most Memorable Tech Meetups",
-      "description": "A fantastic summer tech meetup that featured sessions on Generative AI, a live demo by an Agentic AI-powered robot as the world's first non-human chief guest, and a creative AI storytelling session. A brilliant example of how strong communities can bring cutting-edge technology to any city!",
-      "url": "https://builder.aws.com/content/3Cx39VRdRkKQyKIxgSWgjLvE0Fk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cx3ZbpgCex4w2U73tsIYts5W8I/k2-j.webp",
-      "authorName": "DHILIP S E",
-      "authorAlias": "dhilip4",
-      "authorAvatarUrl": "",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [],
-      "publishedAt": "2026-04-27T18:12:53.797Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/39FtCLxgo9hXOly3NtwlC91wBNz",
-      "title": "Automate IAM Access keys lifecycle with Human-in-the-loop",
-      "description": "Learn how to migrate away from static unused AWS IAM access keys using a three-phase approach- discover, deactivate and delete- with IAM Access Analyzer and Step Functions. This solution also includes a human-in-the-loop approval step before permanent deletion.",
-      "url": "https://builder.aws.com/content/39FtCLxgo9hXOly3NtwlC91wBNz",
-      "imageUrl": "",
-      "authorName": "Aniket",
-      "authorAlias": "aniketb",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-27T18:03:02.815Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -242,8 +244,31 @@
         "free-tier-projects"
       ],
       "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 23,
-      "commentsCount": 10
+      "likesCount": 25,
+      "commentsCount": 11
+    },
+    {
+      "id": "/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
+      "title": "Como minha trajetória mudou em poucas semanas (e o papel do AWS Builder Center nisso)",
+      "description": "Mudanças recentes na minha trajetória me levaram a explorar a área de arquitetura ao mesmo tempo em que iniciei no AWS Builder Center. Vamos ver onde isso vai dar?",
+      "url": "https://builder.aws.com/content/3Cxq3zaXrgAbtsLItsX2ApZbTI8",
+      "imageUrl": "",
+      "authorName": "Noah",
+      "authorAlias": "noahfreitas13",
+      "authorAvatarUrl": "",
+      "location": "SC, BR",
+      "lat": -27.0628367,
+      "lng": -51.114965,
+      "tags": [
+        "architecture",
+        "learning-and-development",
+        "career",
+        "agile",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-04-28T01:09:44.330Z",
+      "likesCount": 3,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -370,29 +395,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "title": "CRON: O Guia Definitivo Para Agendar Tarefas No Linux (Até Minha Vó Entende!)",
-      "description": "Imagine que você tem um ajudante pessoal 24 horas por dia, 7 dias por semana. Você diz para ele: “Toda segunda-feira às 8 da manhã, me lembre de regar as plantas”. E ele faz, sem falhar!",
-      "url": "https://builder.aws.com/content/3CuUwZisQmHvd91nLlemXccl3LK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CuWfYrmFSDffQVThuwhzV2mtYx/5494.webp",
-      "authorName": "Clay Zeballos",
-      "authorAlias": "clayzeballos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zNZ3WdoJRyFlZ5Ao1Aiqe5rONZ.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "linux",
-        "terminal",
-        "students",
-        "aws-cloud-clubs",
-        "builder-spaces"
-      ],
-      "publishedAt": "2026-04-27T02:00:16.783Z",
-      "likesCount": 12,
-      "commentsCount": 11
-    },
-    {
       "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
       "title": "Essa tal de nuvem... fica muito distante do chão?",
       "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
@@ -412,8 +414,8 @@
         "tips"
       ],
       "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 27,
-      "commentsCount": 23
+      "likesCount": 28,
+      "commentsCount": 26
     }
   ]
 }
