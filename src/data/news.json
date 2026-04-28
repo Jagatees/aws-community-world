@@ -1,12 +1,102 @@
 {
-  "updatedAt": "2026-04-28T15:48:41.036Z",
+  "updatedAt": "2026-04-28T16:36:38.718Z",
   "latest": [
+    {
+      "id": "/content/3CzUL5MAMxBEyGhlDJgikdmmozk",
+      "title": "Building a Graph Studio with AI: The Full Stack Story",
+      "description": "Whether you're building multi-agent AI systems, wrestling with serverless orchestration, or just curious about what happens when you try to use AI to build an AI tool — there's something here for you.",
+      "url": "https://builder.aws.com/content/3CzUL5MAMxBEyGhlDJgikdmmozk",
+      "imageUrl": "",
+      "authorName": "Kevin",
+      "authorAlias": "kvphil",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AGHGIzclmJPG3QlTEx0OOAITbo.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "ai-assisted",
+        "ai-agents",
+        "amazon-neptune",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-04-28T16:07:14.990Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CzcQin5EUktIaaN8blvpJmCBNg",
+      "title": "I Built My First Cloud Project on AWS—and Broke It 5 Times",
+      "description": "My first AWS project failed in ways I didn’t expect—from networking mistakes to permission errors and surprise costs. Here’s what those failures taught me about understanding the cloud.",
+      "url": "https://builder.aws.com/content/3CzcQin5EUktIaaN8blvpJmCBNg",
+      "imageUrl": "",
+      "authorName": "Om Keswani",
+      "authorAlias": "omiee24",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3894gFCupwDcSCBhlVUHtta7riL.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "aws-cli",
+        "agentic-ai",
+        "agentic-ide",
+        "ai-agents",
+        "ai-assisted"
+      ],
+      "publishedAt": "2026-04-28T16:04:43.402Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CzbH3CgbkzyyULF4CDxhgVlSjk",
+      "title": "Cut AWS AI Costs by 60% — 6 Practical Tips",
+      "description": "OpenSearch too expensive? Sonnet on every query? Here are 6 changes that cut our Bedrock workload costs by over 60% — with real code.",
+      "url": "https://builder.aws.com/content/3CzbH3CgbkzyyULF4CDxhgVlSjk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzcwAL2wCIquargJO3hN84W1Hb/aws-.webp",
+      "authorName": "meghana rajagopal",
+      "authorAlias": "meghanarajagopal",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cm0nLn6wk71SoeU4k6NpqdEhZo.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [
+        "amazon-bedrock",
+        "cost-optimization",
+        "generative-ai",
+        "serverless",
+        "cloud-adoption-framework"
+      ],
+      "publishedAt": "2026-04-28T16:01:49.777Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3A897gqJPLoQiwhdyt1lQBgMNcV",
+      "title": "How to install the latest cid-cmd (Cloud Intelligence Dashboards CLI) in AWS CloudShell",
+      "description": "Learn how to upgrade Python in AWS CloudShell so you can install and run the latest cid-cmd CLI for deploying Cloud Intelligence Dashboards. This step-by-step guide uses pyenv to build Python 3.12 in CloudShell's persistent storage — no EC2 instance or local setup required.",
+      "url": "https://builder.aws.com/content/3A897gqJPLoQiwhdyt1lQBgMNcV",
+      "imageUrl": "",
+      "authorName": "Heverin, Stephen",
+      "authorAlias": "awsbobcat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qkMovs6xs0FTie1eltbRyJJaN.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "python",
+        "aws-cloudshell",
+        "cost-optimization"
+      ],
+      "publishedAt": "2026-04-28T16:01:38.323Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CzQfQgfjJ9ILPxX77hFEmVftRW",
       "title": "My Experience Conducting AWS Awareness Sessions in My College",
       "description": "Sharing my experience of organizing AWS awareness sessions and helping students explore cloud and AI opportunities",
       "url": "https://builder.aws.com/content/3CzQfQgfjJ9ILPxX77hFEmVftRW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzUXQM8Xt3lNX8WdiBz93nhr8B/Whats.webp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzgwhzKyOAJ0qHl5pJb6e6b1Xp/Whats.webp",
       "authorName": "Rohit Lamani",
       "authorAlias": "rohitslamani",
       "authorAvatarUrl": "",
@@ -118,300 +208,6 @@
       "publishedAt": "2026-04-28T12:39:28.500Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/36z9zKznZWxYDaOp34784ytueyf",
-      "title": "Building Personalized Marketing Campaigns with Bria AI Powers in Kiro",
-      "description": "How three new Kiro Powers bring enterprise-grade AI image generation, structured visual control, and classic image manipulation directly into your development workflow",
-      "url": "https://builder.aws.com/content/36z9zKznZWxYDaOp34784ytueyf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoQwu6WwvjpuBaFOFCxGdRFjyY/gene.webp",
-      "authorName": "Daniele Stroppa",
-      "authorAlias": "stroppadaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClUuxEUC7ELU5sBxLONoy1oLZY.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "kiro",
-        "retail-consumer-goods-industry",
-        "advertising-marketing-industry",
-        "aws-partners"
-      ],
-      "publishedAt": "2026-04-28T12:16:11.364Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cz0AmR2bmkf9qOCP2xD2TGtgfP",
-      "title": "Building an Event-Driven Transaction Processor with S3, Lambda, and DynamoDB",
-      "description": "A practical guide to building and securing a serverless transaction processing pipeline using AWS event triggers and Terraform",
-      "url": "https://builder.aws.com/content/3Cz0AmR2bmkf9qOCP2xD2TGtgfP",
-      "imageUrl": "",
-      "authorName": "Logeswaran Vinayagam",
-      "authorAlias": "logeswaran",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xzSzPqjspDqzvCaECHOijJYs7g.webp",
-      "location": "AE",
-      "lat": 24.0002488,
-      "lng": 53.9994829,
-      "tags": [],
-      "publishedAt": "2026-04-28T11:08:25.513Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CyX35ulMAgnFiI8sAW9o7kE1LQ",
-      "title": "Scale-Driven Architecture: Lessons from a Hyperscale Multi-Tenant Agent Platform on EKS — Part 1: Networking and Pod Density",
-      "description": "Running 100k+ tenants on a single EKS cluster is not a larger version of running 100 — it's a different problem entirely. This first part walks the capacity layer where the walls show up first: how VPC IP space becomes capacity planning, two fundamentally different paths to expanding the pod IP pool, and the layered ceilings that decide how many pods a node will really take.",
-      "url": "https://builder.aws.com/content/3CyX35ulMAgnFiI8sAW9o7kE1LQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cz1p9p3Jwv0glFdHaO5aBKmsBp/01-p.webp",
-      "authorName": "Shawn Zhang",
-      "authorAlias": "shawnzh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "infrastructure",
-        "multi-tenant",
-        "agentic-ai",
-        "kubernetes",
-        "architecture"
-      ],
-      "publishedAt": "2026-04-28T10:59:43.924Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CyhewEzLIdBZZrbSatRSE3jPeH",
-      "title": "Building Bulletproof PostgreSQL: High Availability with Aurora Global Database & RDS Proxy",
-      "description": "Hands-on deep dive into building highly available PostgreSQL architectures on AWS! In this episode, we explore how Amazon Aurora PostgreSQL Global Database and RDS Proxy work together to deliver enterprise-grade availability and performance.",
-      "url": "https://builder.aws.com/content/3CyhewEzLIdBZZrbSatRSE3jPeH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cyi5ayzHwe2qpagzEWUwX01HdW/Scre.webp",
-      "authorName": "Ibrahim Emara",
-      "authorAlias": "emarai",
-      "authorAvatarUrl": "",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "amazon-aurora",
-        "amazon-rds",
-        "availability"
-      ],
-      "publishedAt": "2026-04-28T08:22:23.852Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CyhxO5GRqPlDPa4jXF2nFuXmHO",
-      "title": "Kodai Kondattam: A Summer Celebration of AI, Agents, and Community",
-      "description": "The event was thoughtfully organized at a great venue, and the user group leaders — Vivek Raja, Lokesh, and Poobalan — elevated the entire experience 🌟 This stands out as one of the best meetups with real learning and practical, real-world exposure — bringing cutting-edge technology to a Tier-2 city like Madurai and empowering the community 💛 Looking forward to many more such events in Madurai. Grateful for this one-of-a-kind experience 🙌",
-      "url": "https://builder.aws.com/content/3CyhxO5GRqPlDPa4jXF2nFuXmHO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyiZrUoBE016jq2pucuq9xDJZU/Whats.webp",
-      "authorName": "SONALI",
-      "authorAlias": "sonali21",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "llm",
-        "aws-deepracer",
-        "amazon-nova",
-        "mcp",
-        "agents"
-      ],
-      "publishedAt": "2026-04-28T08:19:55.689Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CyaeIzqgVVl7RK8YOT0Np4q7O3",
-      "title": "Cloud Bombing",
-      "description": "It's an article about cloud bombing ",
-      "url": "https://builder.aws.com/content/3CyaeIzqgVVl7RK8YOT0Np4q7O3",
-      "imageUrl": "",
-      "authorName": "Aswin Gabrio",
-      "authorAlias": "frostop",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-28T07:19:45.363Z",
-      "likesCount": 0,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CyakN288WupRygqDXVbt9ICaMQ",
-      "title": "My First Step into Cloud Computing with AWS",
-      "description": "Attended an AWS Club workshop where I explored cloud computing fundamentals and got hands-on experience with core AWS services like EC2 and S3.",
-      "url": "https://builder.aws.com/content/3CyakN288WupRygqDXVbt9ICaMQ",
-      "imageUrl": "",
-      "authorName": "Abinash RL",
-      "authorAlias": "abi2619",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-28T07:14:42.695Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cya26i2MgQraUg4JxXAO310qOQ",
-      "title": "How I Cut My AWS Bill by 70% Without Touching a Single Line of Application Code",
-      "description": "Most cloud cost problems aren't code problems — they're architecture and configuration problems. Here's a practical, battle-tested playbook that saved my team thousands of dollars a month.",
-      "url": "https://builder.aws.com/content/3Cya26i2MgQraUg4JxXAO310qOQ",
-      "imageUrl": "",
-      "authorName": "Mukesh Y",
-      "authorAlias": "mukesh2006",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai",
-        "agile",
-        "agent-to-agent",
-        "agents",
-        "agentic-interactions"
-      ],
-      "publishedAt": "2026-04-28T07:10:18.658Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/39C3zpfDDSXN8yLjfF4wSIiI6WE",
-      "title": "☁️ 𝐀𝐖𝐒 𝐒𝐮𝐦𝐦𝐢𝐭 𝐁𝐞𝐧𝐠𝐚𝐥𝐮𝐫𝐮 𝟐𝟎𝟐𝟔 𝐀 𝐃𝐞𝐯𝐎𝐩𝐬 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫’𝐬 𝐏𝐞𝐫𝐬𝐩𝐞𝐜𝐭𝐢𝐯𝐞",
-      "description": "𝐀𝐖𝐒 𝐒𝐮𝐦𝐦𝐢𝐭 𝐁𝐞𝐧𝐠𝐚𝐥𝐮𝐫𝐮 𝟐𝟎𝟐𝟔 ",
-      "url": "https://builder.aws.com/content/39C3zpfDDSXN8yLjfF4wSIiI6WE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyVxWLeRwFASxDcvVPko2WQ8jH/6294.webp",
-      "authorName": "MOJAHID-UL HAQUE (Δ𝓓𝔦𝐋)",
-      "authorAlias": "mojahid",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2x57YbVL0m9kZkJHZeeAqt7v6Jc.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "devops",
-        "devops-pro",
-        "ai-agents",
-        "agents",
-        "amazon-ecs"
-      ],
-      "publishedAt": "2026-04-28T06:37:22.875Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/37PfzP3O6fu9MwT1xq8bRMEwWYj",
-      "title": "Deploy your own production-ready Jenkins in AWS ECS",
-      "description": "This article walks through deploying a production-ready Jenkins platform on AWS ECS using Fargate and CloudFormation. It covers Jenkins architecture, ECS design choices, secure ingress with ALB, persistent storage using Amazon EFS, and automated recovery across Availability Zones—helping you build a resilient, secure, and cloud-native CI/CD setup suitable for real-world workloads.",
-      "url": "https://builder.aws.com/content/37PfzP3O6fu9MwT1xq8bRMEwWYj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/37PirZTGUcbMnW2WZMOP0z3kemY/AWS-.webp",
-      "authorName": "Piyush Chaudhari",
-      "authorAlias": "cpiyush151",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCZKaeeEMclW3B5gnosrAUZJRa.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "amazon-ecs",
-        "aws-fargate",
-        "amazon-efs",
-        "devops",
-        "jenkins"
-      ],
-      "publishedAt": "2026-04-28T06:26:47.633Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/36EOyCuDwpzP7xqOnkzUs3UD74h",
-      "title": "AWS EKS Auto Mode",
-      "description": "AWS EKS Auto Mode delivers a fully managed, production-ready Kubernetes environment by automating compute, scaling, networking, and node lifecycle operations. It simplifies cluster management, enhances security, optimizes costs, and reduces operational burden—letting teams focus on applications while AWS handles the infrastructure.",
-      "url": "https://builder.aws.com/content/36EOyCuDwpzP7xqOnkzUs3UD74h",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/36HN9FYLJ2ZdGSkU2vroNqx9PRU/AWS-.webp",
-      "authorName": "Piyush Chaudhari",
-      "authorAlias": "cpiyush151",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCZKaeeEMclW3B5gnosrAUZJRa.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "amazon-eks",
-        "kubernetes",
-        "compute",
-        "containers"
-      ],
-      "publishedAt": "2026-04-28T06:14:22.447Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/362qdPIdMVGPuNc1ZsZnxN5Qp4f",
-      "title": "Deploying SonarQube on AWS Using ECS Fargate, AWS EFS, RDS PostgreSQL and AWS CloudFormation (IaC)",
-      "description": "SonarQube on AWS delivers a scalable, secure, and fully automated code-quality platform using ECS Fargate, RDS PostgreSQL, and EFS. With CloudFormation, the entire architecture becomes reproducible and consistent across environments, providing a resilient, serverless deployment that simplifies operations while supporting modern DevSecOps practices.",
-      "url": "https://builder.aws.com/content/362qdPIdMVGPuNc1ZsZnxN5Qp4f",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/363C6bkqXjp9VgZkRT1c28d9rNO/AWS-.webp",
-      "authorName": "Piyush Chaudhari",
-      "authorAlias": "cpiyush151",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCZKaeeEMclW3B5gnosrAUZJRa.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "devops",
-        "cloud-security",
-        "amazon-ecs",
-        "amazon-rds",
-        "amazon-efs"
-      ],
-      "publishedAt": "2026-04-28T05:55:28.264Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CyNmIxTDuYPTlY3He08duGMD3s",
-      "title": "Production AWS Web App with CDK: Fargate, Aurora, CloudFront and the Quiet Failures Nobody Warns You About",
-      "description": "Most CDK tutorials stop at \"it deployed.\" This walks through the full production stack - VPC tiers, Fargate on private subnets, Aurora with KMS encryption, Secrets Manager rotation, CloudFront with OAC - and the silent failure modes that wake you up at 2 AM. Includes a real cost breakdown, the NAT Gateway trap, and what I would do differently next time.",
-      "url": "https://builder.aws.com/content/3CyNmIxTDuYPTlY3He08duGMD3s",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyQ8pJ4DXyxDDTH1HpeZgPdzW2/Clea.webp",
-      "authorName": "Rahul ladumor [Serverless Expert]",
-      "authorAlias": "rahulladumor",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36dpGWG5gmSqyVlsIh0P2zGgCKm.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
-      "tags": [
-        "aws-cdk",
-        "aws-fargate",
-        "amazon-aurora",
-        "devops",
-        "serverless"
-      ],
-      "publishedAt": "2026-04-28T05:46:35.052Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
-      "title": "🚀 Getting Started with AWS Lambda: Build Your First Serverless Project",
-      "description": "In this article, I’ll walk through what Lambda is, why it’s useful, and how you can build a simple project to get started.",
-      "url": "https://builder.aws.com/content/3Cy17hGFDQL0GSvdrkh8zGkHrOz",
-      "imageUrl": "",
-      "authorName": "Shagun Khare",
-      "authorAlias": "shagunk917",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-28T02:22:38.424Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -454,7 +250,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3527,
+      "likesCount": 3528,
       "commentsCount": 323
     },
     {
@@ -492,7 +288,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 42,
+      "likesCount": 43,
       "commentsCount": 169
     },
     {
@@ -554,7 +350,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1925,
+      "likesCount": 1926,
       "commentsCount": 269
     },
     {
@@ -580,28 +376,6 @@
       "commentsCount": 12
     },
     {
-      "id": "/content/3CzHzD61RRjqVUCEnYT41jQTzE0",
-      "title": "Construindo o Futuro: Como a Nuvem da AWS e a IA Estão Mudando a Engenharia Civil na Prática",
-      "description": "Uma visão prática e descomplicada de como a computação em nuvem da AWS e a Inteligência Artificial deixaram de ser ficção científica para se tornarem os novos alicerces da Engenharia Civil, otimizando desde simulações de grandes obras até a gestão inteligente de licitações.",
-      "url": "https://builder.aws.com/content/3CzHzD61RRjqVUCEnYT41jQTzE0",
-      "imageUrl": "",
-      "authorName": "Gustavo Alves",
-      "authorAlias": "gustavoalves07",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7Pg5qnQih9yjka5m2128LurKP.webp",
-      "location": "TO, BR",
-      "lat": -10.8855129,
-      "lng": -48.3716912,
-      "tags": [
-        "builder-center",
-        "aws-builders",
-        "network",
-        "networking"
-      ],
-      "publishedAt": "2026-04-28T13:12:39.553Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -622,6 +396,29 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1413,
       "commentsCount": 325
+    },
+    {
+      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "title": "Essa tal de nuvem... fica muito distante do chão?",
+      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
+      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
+      "authorName": "Amanda Y.",
+      "authorAlias": "yuminhercodedays",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aspiring-builders",
+        "architecture",
+        "cloud-adoption-framework",
+        "tips"
+      ],
+      "publishedAt": "2026-04-25T19:08:26.188Z",
+      "likesCount": 30,
+      "commentsCount": 26
     }
   ]
 }
