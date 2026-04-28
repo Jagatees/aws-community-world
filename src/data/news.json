@@ -1,6 +1,49 @@
 {
-  "updatedAt": "2026-04-28T18:32:26.742Z",
+  "updatedAt": "2026-04-28T19:33:06.438Z",
   "latest": [
+    {
+      "id": "/content/3Czz3pnlo6MHI2CmsxGuQh959CS",
+      "title": "Bypassing Cloudflare for True Origin Health Checks with Blackbox Exporter and CoreDNS",
+      "description": "When Cloudflare masks origin failures, your health checks lie to you. A CoreDNS sidecar that overrides DNS resolution lets Blackbox Exporter probe origins directly while keeping TLS and Host headers intact.",
+      "url": "https://builder.aws.com/content/3Czz3pnlo6MHI2CmsxGuQh959CS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Czz9pTRjYNKHJALDxjhKVXvPIF/core.webp",
+      "authorName": "Amaan Ul Haq Siddiqui",
+      "authorAlias": "amaan100x",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37waBq6EplcHFvpfRxc3ShuVlZg.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "monitoring-observability",
+        "devops",
+        "open-source",
+        "sre"
+      ],
+      "publishedAt": "2026-04-28T19:05:01.944Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CzvgkWC3l2Ux1ftrvR1wGBfi6m",
+      "title": "Como se encontrar na tecnologia através da Cloud Computing",
+      "description": "Entrar no mundo da tecnologia pode ser empolgante… mas também extremamente confuso.\nSão muitas áreas, muitas linguagens, muitas possibilidades, front-end, back-end, dados, segurança, mobile, IA… e no meio disso tudo, uma dúvida constante:\n“Será que eu estou no caminho certo?”\nSe você já se sentiu assim, saiba que isso é mais comum do que parece.\n",
+      "url": "https://builder.aws.com/content/3CzvgkWC3l2Ux1ftrvR1wGBfi6m",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzyUhE3JeNGuwOYJwABj9ceMjs/Chat.webp",
+      "authorName": "Guilherme Pinheiro",
+      "authorAlias": "guilhermepinheiro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVSDKry6Mtm2yQS57GqhV0wiM3.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
+      "tags": [
+        "aws-builders",
+        "students",
+        "getting-started"
+      ],
+      "publishedAt": "2026-04-28T18:59:12.987Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CzT8nN9vfjgmBBqF1JjjL6rqqK",
       "title": "Dê o primeiro passo hoje: Começando com AWS Builder Center",
@@ -42,7 +85,7 @@
         "getting-started"
       ],
       "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 3,
+      "likesCount": 5,
       "commentsCount": 1
     },
     {
@@ -104,7 +147,7 @@
         "multi-cloud"
       ],
       "publishedAt": "2026-04-28T17:14:02.635Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 2
     },
     {
@@ -213,6 +256,169 @@
       "publishedAt": "2026-04-28T14:57:36.033Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cr68nD3q9Fo8dPQepemVSJ8TAs",
+      "title": "De gamer a profissional de T.I: minha jornada começou no controle 🎮",
+      "description": "Passei de horas jogando por diversão a descobrir uma paixão pela tecnologia. Neste artigo, conto como os games despertaram meu interesse por T.I e foram o ponto de partida para iniciar minha carreira na área.",
+      "url": "https://builder.aws.com/content/3Cr68nD3q9Fo8dPQepemVSJ8TAs",
+      "imageUrl": "",
+      "authorName": "Yan Pettene Pinto",
+      "authorAlias": "yan027",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "tech",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-28T14:33:08.986Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CzHzD61RRjqVUCEnYT41jQTzE0",
+      "title": "Construindo o Futuro: Como a Nuvem da AWS e a IA Estão Mudando a Engenharia Civil na Prática",
+      "description": "Uma visão prática e descomplicada de como a computação em nuvem da AWS e a Inteligência Artificial deixaram de ser ficção científica para se tornarem os novos alicerces da Engenharia Civil, otimizando desde simulações de grandes obras até a gestão inteligente de licitações.",
+      "url": "https://builder.aws.com/content/3CzHzD61RRjqVUCEnYT41jQTzE0",
+      "imageUrl": "",
+      "authorName": "Gustavo Alves",
+      "authorAlias": "gustavoalves07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7Pg5qnQih9yjka5m2128LurKP.webp",
+      "location": "TO, BR",
+      "lat": -10.8855129,
+      "lng": -48.3716912,
+      "tags": [
+        "builder-center",
+        "aws-builders",
+        "network",
+        "networking"
+      ],
+      "publishedAt": "2026-04-28T13:12:39.553Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CzFHryJMaVYQeNb4WC4Zx8QOED",
+      "title": "What I Learned from Interacting with Students About AWS",
+      "description": "Insights from interacting with students about AWS, highlighting common challenges beginners face and how to approach learning cloud more effectively.",
+      "url": "https://builder.aws.com/content/3CzFHryJMaVYQeNb4WC4Zx8QOED",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzG6VVVl4ij96xB8a6JScUvHuv/AWS-.webp",
+      "authorName": "Shashank Pandey",
+      "authorAlias": "shashankpandey04",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AHTaHlwIdIstMASl9t52rkKOvM.webp",
+      "location": "Punjab, IN",
+      "lat": 30.9293211,
+      "lng": 75.5004841,
+      "tags": [
+        "students",
+        "learning-and-development"
+      ],
+      "publishedAt": "2026-04-28T12:53:49.522Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cz5uNG9mhrLtJ5i2U1t0MQ7QtI",
+      "title": "Agentic AI in the Real World: A Technical Deep Dive into Kodai Cloud Kondattam !!",
+      "description": "Discover how we moved beyond LLM chat interfaces to experiencing \"Physical AI\" built with Strands Agents and Amazon Nova",
+      "url": "https://builder.aws.com/content/3Cz5uNG9mhrLtJ5i2U1t0MQ7QtI",
+      "imageUrl": "",
+      "authorName": "Madhumithaa",
+      "authorAlias": "madhu08",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOmAHLoGEzgWrJF8IFW2mRmczp.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-04-28T12:47:46.875Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CylfBCpZLvp9ec4bPyiHrOt3B2",
+      "title": "FeedSense",
+      "description": "AI-Powered Feedback Collection and Sentiment Analysis Platform",
+      "url": "https://builder.aws.com/content/3CylfBCpZLvp9ec4bPyiHrOt3B2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzBDdEzgUGi88C0bnTlWxQBsN3/Chat.webp",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-lambda",
+        "amazon-bedrock",
+        "amazon-dynamodb",
+        "aws-amplify"
+      ],
+      "publishedAt": "2026-04-28T12:39:28.500Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/36z9zKznZWxYDaOp34784ytueyf",
+      "title": "Building Personalized Marketing Campaigns with Bria AI Powers in Kiro",
+      "description": "How three new Kiro Powers bring enterprise-grade AI image generation, structured visual control, and classic image manipulation directly into your development workflow",
+      "url": "https://builder.aws.com/content/36z9zKznZWxYDaOp34784ytueyf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CoQwu6WwvjpuBaFOFCxGdRFjyY/gene.webp",
+      "authorName": "Daniele Stroppa",
+      "authorAlias": "stroppadaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClUuxEUC7ELU5sBxLONoy1oLZY.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "kiro",
+        "retail-consumer-goods-industry",
+        "advertising-marketing-industry",
+        "aws-partners"
+      ],
+      "publishedAt": "2026-04-28T12:16:11.364Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cz0AmR2bmkf9qOCP2xD2TGtgfP",
+      "title": "Building an Event-Driven Transaction Processor with S3, Lambda, and DynamoDB",
+      "description": "A practical guide to building and securing a serverless transaction processing pipeline using AWS event triggers and Terraform",
+      "url": "https://builder.aws.com/content/3Cz0AmR2bmkf9qOCP2xD2TGtgfP",
+      "imageUrl": "",
+      "authorName": "Logeswaran Vinayagam",
+      "authorAlias": "logeswaran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xzSzPqjspDqzvCaECHOijJYs7g.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [],
+      "publishedAt": "2026-04-28T11:08:25.513Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CyX35ulMAgnFiI8sAW9o7kE1LQ",
+      "title": "Scale-Driven Architecture: Lessons from a Hyperscale Multi-Tenant Agent Platform on EKS — Part 1: Networking and Pod Density",
+      "description": "Running 100k+ tenants on a single EKS cluster is not a larger version of running 100 — it's a different problem entirely. This first part walks the capacity layer where the walls show up first: how VPC IP space becomes capacity planning, two fundamentally different paths to expanding the pod IP pool, and the layered ceilings that decide how many pods a node will really take.",
+      "url": "https://builder.aws.com/content/3CyX35ulMAgnFiI8sAW9o7kE1LQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cz1p9p3Jwv0glFdHaO5aBKmsBp/01-p.webp",
+      "authorName": "Shawn Zhang",
+      "authorAlias": "shawnzh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "infrastructure",
+        "multi-tenant",
+        "agentic-ai",
+        "kubernetes",
+        "architecture"
+      ],
+      "publishedAt": "2026-04-28T10:59:43.924Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -255,7 +461,7 @@
         "multi-cloud"
       ],
       "publishedAt": "2026-04-28T17:14:02.635Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 2
     },
     {
@@ -276,7 +482,7 @@
         "getting-started"
       ],
       "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 3,
+      "likesCount": 5,
       "commentsCount": 1
     },
     {
@@ -360,25 +566,6 @@
       "commentsCount": 169
     },
     {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 25,
-      "commentsCount": 12
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -402,6 +589,25 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 25,
+      "commentsCount": 12
+    },
+    {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
       "title": "The Study Break That Gave Me Direction Again",
       "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
@@ -418,7 +624,7 @@
         "students"
       ],
       "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 24,
+      "likesCount": 25,
       "commentsCount": 24
     }
   ]
