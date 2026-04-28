@@ -1,6 +1,90 @@
 {
-  "updatedAt": "2026-04-28T20:30:07.076Z",
+  "updatedAt": "2026-04-28T21:24:28.572Z",
   "latest": [
+    {
+      "id": "/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
+      "title": "RAG and MCP in Agentic AI Systems on AWS: Architecture, Boundaries, and Reliability Implications",
+      "description": "The field is debating \"RAG vs MCP\" as if they are alternatives. They are not. RAG (Retrieval-Augmented Generation) and MCP (Model Context Protocol) operate at different architectural layers in an agentic system and serve fundamentally different functions. Conflating them leads to architecture mistakes with direct production reliability consequences.",
+      "url": "https://builder.aws.com/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0FBV2DoEWPwkv170JQIaoum4I/Rag-.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "sre",
+        "rag",
+        "aws-knowledge-mcp",
+        "devops-pro"
+      ],
+      "publishedAt": "2026-04-28T21:17:12.349Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxHW4mko7LqnlIpujmHc46hoqF",
+      "title": "AWS Bedrock AgentCore: Controls, Governance, and the Architectural Decisions That Shape Everything Else",
+      "description": "Once agents are running, the harder questions begin. This post covers the controls, governance, and architectural decisions that determine whether an enterprise agent platform operates safely at scale: Policy for deterministic tool enforcement, Guardrails for compliant model outputs, Memory, Observability, Registry, cost governance through Application Inference Profiles, and when a dedicated model gateway is worth the overhead. For practitioners building in production.",
+      "url": "https://builder.aws.com/content/3CxHW4mko7LqnlIpujmHc46hoqF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0DdrMojMuHu6pRoffjcreOYGL/0bad.webp",
+      "authorName": "Geethika Guruge",
+      "authorAlias": "geethika",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
+      "location": "NZ",
+      "lat": -41.5000831,
+      "lng": 172.8344077,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-28T20:55:42.768Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D09cAvqRW3Ad8ydcKFVmCGZNOn",
+      "title": "Agentic AI for the Automotive Back Office: Where to Start",
+      "description": "50–60% of automotive back-office work is manual. This guide provides a prescriptive framework for applying Agentic AI to cut costs by up to 3.78% of revenue",
+      "url": "https://builder.aws.com/content/3D09cAvqRW3Ad8ydcKFVmCGZNOn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0AKPZI3mqKa8BHXFQ7Wfj02RS/Imag.webp",
+      "authorName": "Swami Natarajan",
+      "authorAlias": "swamiaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yNNwuwZgyTEaJNHqFPVkEspxGm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "automotive-industry",
+        "sap"
+      ],
+      "publishedAt": "2026-04-28T20:41:32.962Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D064uIOZZsaZNCLtht4U0HzC0e",
+      "title": "AWS Builder Center: o guia completo para quem quer começar na nuvem",
+      "description": "A computação em nuvem passou de uma tendência para se consolidar como a base da tecnologia atual. A Amazon Web Services (AWS), a plataforma mais usada e completa do mundo, está no centro desta mudança. Com mais de 200 serviços em datacenters ao redor do mundo, a AWS permite que as empresas selecionem infraestrutura de TI de acordo com a demanda, pagando apenas pelo que gastam e evitando altos gastos fixos com aparelhos físicos. Mas como começar nesse mundo tão grande? A resposta está no AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3D064uIOZZsaZNCLtht4U0HzC0e",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D09N3E4F24mKcc0UUQR8190iMM/Whats.webp",
+      "authorName": "Yuri Neres",
+      "authorAlias": "yurimadune",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C9E1lXP99zJ1WniQ5TgPfXSeb5.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-28T20:29:25.347Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D03zzo37OYZBdPUYuRJ9CV8q0N",
       "title": "Using Custom Endpoints with Amazon DocumentDB",
@@ -105,8 +189,8 @@
         "students"
       ],
       "publishedAt": "2026-04-28T19:35:34.511Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Czz3pnlo6MHI2CmsxGuQh959CS",
@@ -192,8 +276,8 @@
         "getting-started"
       ],
       "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 7,
-      "commentsCount": 2
+      "likesCount": 12,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CzZc4kplWiLr3qNqEXnCJoDQ0B",
@@ -233,7 +317,7 @@
         "aws-academy"
       ],
       "publishedAt": "2026-04-28T17:37:22.555Z",
-      "likesCount": 13,
+      "likesCount": 15,
       "commentsCount": 3
     },
     {
@@ -254,7 +338,7 @@
         "multi-cloud"
       ],
       "publishedAt": "2026-04-28T17:14:02.635Z",
-      "likesCount": 9,
+      "likesCount": 10,
       "commentsCount": 3
     },
     {
@@ -325,64 +409,6 @@
       "publishedAt": "2026-04-28T16:01:49.777Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3A897gqJPLoQiwhdyt1lQBgMNcV",
-      "title": "How to install the latest cid-cmd (Cloud Intelligence Dashboards CLI) in AWS CloudShell",
-      "description": "Learn how to upgrade Python in AWS CloudShell so you can install and run the latest cid-cmd CLI for deploying Cloud Intelligence Dashboards. This step-by-step guide uses pyenv to build Python 3.12 in CloudShell's persistent storage — no EC2 instance or local setup required.",
-      "url": "https://builder.aws.com/content/3A897gqJPLoQiwhdyt1lQBgMNcV",
-      "imageUrl": "",
-      "authorName": "Heverin, Stephen",
-      "authorAlias": "awsbobcat",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qkMovs6xs0FTie1eltbRyJJaN.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "python",
-        "aws-cloudshell",
-        "cost-optimization"
-      ],
-      "publishedAt": "2026-04-28T16:01:38.323Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CzQfQgfjJ9ILPxX77hFEmVftRW",
-      "title": "My Experience Conducting AWS Awareness Sessions in My College",
-      "description": "Sharing my experience of organizing AWS awareness sessions and helping students explore cloud and AI opportunities",
-      "url": "https://builder.aws.com/content/3CzQfQgfjJ9ILPxX77hFEmVftRW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzgwhzKyOAJ0qHl5pJb6e6b1Xp/Whats.webp",
-      "authorName": "Rohit Lamani",
-      "authorAlias": "rohitslamani",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-04-28T14:57:36.033Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cr68nD3q9Fo8dPQepemVSJ8TAs",
-      "title": "De gamer a profissional de T.I: minha jornada começou no controle 🎮",
-      "description": "Passei de horas jogando por diversão a descobrir uma paixão pela tecnologia. Neste artigo, conto como os games despertaram meu interesse por T.I e foram o ponto de partida para iniciar minha carreira na área.",
-      "url": "https://builder.aws.com/content/3Cr68nD3q9Fo8dPQepemVSJ8TAs",
-      "imageUrl": "",
-      "authorName": "Yan Pettene Pinto",
-      "authorAlias": "yan027",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUleSy2bJeVW9ZrJpoG5jt6hv0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "tech",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-28T14:33:08.986Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -404,28 +430,7 @@
         "aws-academy"
       ],
       "publishedAt": "2026-04-28T17:37:22.555Z",
-      "likesCount": 13,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
-      "title": "AWS é para todos.",
-      "description": "AWS NÃO É SÓ PARA TI, E CURSOS DE EXATAS ESTÃO NO CENTRO DISSO!\n",
-      "url": "https://builder.aws.com/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
-      "imageUrl": "",
-      "authorName": "Eduardo Saraiva",
-      "authorAlias": "kamijax",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjC729UwUJeBh7RBBaWcJX7W3I.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "aws-cloud-clubs",
-        "multi-cloud"
-      ],
-      "publishedAt": "2026-04-28T17:14:02.635Z",
-      "likesCount": 9,
+      "likesCount": 15,
       "commentsCount": 3
     },
     {
@@ -446,8 +451,8 @@
         "getting-started"
       ],
       "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 7,
-      "commentsCount": 2
+      "likesCount": 12,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -469,6 +474,27 @@
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3420,
       "commentsCount": 1912
+    },
+    {
+      "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
+      "title": "AWS é para todos.",
+      "description": "AWS NÃO É SÓ PARA TI, E CURSOS DE EXATAS ESTÃO NO CENTRO DISSO!\n",
+      "url": "https://builder.aws.com/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
+      "imageUrl": "",
+      "authorName": "Eduardo Saraiva",
+      "authorAlias": "kamijax",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjC729UwUJeBh7RBBaWcJX7W3I.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "aws-cloud-clubs",
+        "multi-cloud"
+      ],
+      "publishedAt": "2026-04-28T17:14:02.635Z",
+      "likesCount": 10,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -530,6 +556,27 @@
       "commentsCount": 169
     },
     {
+      "id": "/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
+      "title": "A AWS não é um bicho de sete cabeças",
+      "description": "Abrir a AWS não é tipo abrir o Instagram; é tipo tentar pilotar um avião sem nunca ter visto um cockpit. Não é um guia técnico chato, é um papo real sobre o que eu gostaria que tivessem me avisado antes de eu sair clicando em tudo. Pra quem tá no zero e só quer entender o que está acontecendo.",
+      "url": "https://builder.aws.com/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D02swH7mO9aW7ITbdDKgUaoAj2/T-tu.webp",
+      "authorName": "Vitória Valença",
+      "authorAlias": "vitoriavalencac",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClrmoeTEbmGRwWnUkEgRDtaoLL.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
+      "tags": [
+        "aws-cloud9",
+        "aws-prescriptive-guidance",
+        "students"
+      ],
+      "publishedAt": "2026-04-28T19:35:34.511Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -570,26 +617,6 @@
       "publishedAt": "2026-04-27T14:48:33.100Z",
       "likesCount": 25,
       "commentsCount": 12
-    },
-    {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 25,
-      "commentsCount": 24
     }
   ]
 }
