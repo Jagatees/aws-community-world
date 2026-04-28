@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-28T22:20:26.194Z",
+  "updatedAt": "2026-04-28T23:19:22.038Z",
   "latest": [
     {
       "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
@@ -20,8 +20,8 @@
         "students"
       ],
       "publishedAt": "2026-04-28T22:03:28.221Z",
-      "likesCount": 2,
-      "commentsCount": 1
+      "likesCount": 4,
+      "commentsCount": 3
     },
     {
       "id": "/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
@@ -222,6 +222,28 @@
   ],
   "trending": [
     {
+      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
+      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
+      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "aws-builders",
+        "aws-community",
+        "aws-service-catalog",
+        "students"
+      ],
+      "publishedAt": "2026-04-28T22:03:28.221Z",
+      "likesCount": 4,
+      "commentsCount": 3
+    },
+    {
       "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
       "title": "De estudante curiosa a Embaixadora AWS: construindo meu caminho na nuvem e além",
       "description": "Neste artigo, compartilho minha trajetória na tecnologia — desde os primeiros contatos ainda no ensino médio até me tornar Líder Estudantil Builder AWS. Ao longo do caminho, falo sobre aprendizados, desafios e como a comunidade e o AWS Builder Center têm sido fundamentais para desenvolver minhas habilidades, fortalecer minha confiança e ampliar minha visão sobre o futuro na computação em nuvem. Mais do que uma conquista, essa jornada representa crescimento, conexão e propósito.",
@@ -264,28 +286,6 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
-      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
-      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
-      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
-      "authorName": "Maria Eduarda",
-      "authorAlias": "cloudmadu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "aws-builders",
-        "aws-community",
-        "aws-service-catalog",
-        "students"
-      ],
-      "publishedAt": "2026-04-28T22:03:28.221Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -307,27 +307,6 @@
       "commentsCount": 1912
     },
     {
-      "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
-      "title": "AWS é para todos.",
-      "description": "AWS NÃO É SÓ PARA TI, E CURSOS DE EXATAS ESTÃO NO CENTRO DISSO!\n",
-      "url": "https://builder.aws.com/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
-      "imageUrl": "",
-      "authorName": "Eduardo Saraiva",
-      "authorAlias": "kamijax",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjC729UwUJeBh7RBBaWcJX7W3I.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "aws-cloud-clubs",
-        "multi-cloud"
-      ],
-      "publishedAt": "2026-04-28T17:14:02.635Z",
-      "likesCount": 11,
-      "commentsCount": 4
-    },
-    {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
       "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
@@ -347,6 +326,27 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3529,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
+      "title": "AWS é para todos.",
+      "description": "AWS NÃO É SÓ PARA TI, E CURSOS DE EXATAS ESTÃO NO CENTRO DISSO!\n",
+      "url": "https://builder.aws.com/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
+      "imageUrl": "",
+      "authorName": "Eduardo Saraiva",
+      "authorAlias": "kamijax",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjC729UwUJeBh7RBBaWcJX7W3I.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "aws-cloud-clubs",
+        "multi-cloud"
+      ],
+      "publishedAt": "2026-04-28T17:14:02.635Z",
+      "likesCount": 11,
+      "commentsCount": 4
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -391,23 +391,6 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "title": "AWS Summit London Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in London, come say hi at the Developer Community Zone in the Expo and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CgfJO3GtRDZr0PMoJmGJnmYBYT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CgsHtfaFkbtt7yAuICF79zzUM2/AWS_.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-04-22T00:31:45.195Z",
-      "likesCount": 43,
-      "commentsCount": 169
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -429,6 +412,25 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1927,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 25,
+      "commentsCount": 12
     }
   ]
 }
