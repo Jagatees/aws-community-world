@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-04-29T03:05:48.511Z",
+  "updatedAt": "2026-04-29T05:05:52.902Z",
   "latest": [
+    {
+      "id": "/content/3D0wqDh1ho7EWnDXTjBLX6l2x80",
+      "title": "The Art of Un-Kafkaesque-ing: How Amazon Quick Transformed 3P Data Due Diligence and Vendor Renewal",
+      "description": "Managing 3P data vendor renewals was always rigorous — but painfully slow. Here's how Amazon Quick helped me un-Kafkaesque the entire process: same due diligence, same thoroughness, now structured and fast.",
+      "url": "https://builder.aws.com/content/3D0wqDh1ho7EWnDXTjBLX6l2x80",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D17yarl08YvpsIrFEeqtEaudee/un_k.webp",
+      "authorName": "Bhanuja",
+      "authorAlias": "nagoreb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpRUdh9LtHxWYAZjxEvVvld0lx.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-quick-suite",
+        "agentic-ai",
+        "data-strategy"
+      ],
+      "publishedAt": "2026-04-29T04:11:47.501Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D0xma88rUtbPEYaQIeTCxXgYyG",
+      "title": "My Journey into Cloud Computing with AWS",
+      "description": "Learning AWS changed how I see software development. It taught me that building an application is only one part of the process—deployment, scalability, security, and monitoring matter just as much. Through AWS, I gained hands-on exposure to real-world cloud architecture and developed a deeper understanding of how modern applications are built and managed.",
+      "url": "https://builder.aws.com/content/3D0xma88rUtbPEYaQIeTCxXgYyG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0zNTrL7cJNzHYMYHTgziX5iaQ/9197.webp",
+      "authorName": "Aswin Gabrio",
+      "authorAlias": "frostop",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-community",
+        "tech-journey",
+        "aws-builders",
+        "aws-cloud-clubs",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-29T03:36:17.308Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CwuNIbnWmkXyJ27jKxxKWs1OUM",
       "title": "Trustworthy AI Agents: A Builder's Guide",
@@ -20,7 +64,7 @@
         "ai-engineering"
       ],
       "publishedAt": "2026-04-29T02:39:58.584Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -40,7 +84,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-29T01:58:19.394Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -57,7 +101,7 @@
       "lng": -75.0458515,
       "tags": [],
       "publishedAt": "2026-04-29T01:02:21.843Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -117,8 +161,8 @@
         "amazon-connect"
       ],
       "publishedAt": "2026-04-29T00:30:54.801Z",
-      "likesCount": 3,
-      "commentsCount": 3
+      "likesCount": 5,
+      "commentsCount": 4
     },
     {
       "id": "/content/3D0YrbwOmGbD8Yro2WAaEaNnmzP",
@@ -158,51 +202,6 @@
       "publishedAt": "2026-04-28T22:03:28.221Z",
       "likesCount": 6,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
-      "title": "From Commit to Cloud Artifact: Enterprise GitHub Automation with AWS CodeArtifact",
-      "description": "A GitHub repository with automated releases, dependency updates and validation workflows improves the software development process. Integrating it with AWS makes it even more powerful.",
-      "url": "https://builder.aws.com/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CtkUB7jFyF1zgHXEJHFzvoa4W5/gith.webp",
-      "authorName": "Julian Michel",
-      "authorAlias": "jumic",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z2hEdqJNcDW9Q7TeJOzfDhSCTn.webp",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [
-        "devops",
-        "aws-cdk",
-        "software-development",
-        "aws-codeartifact",
-        "github"
-      ],
-      "publishedAt": "2026-04-28T21:50:13.416Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
-      "title": "Kiro Specs: Deja de Improvisar y Empieza a Planificar Features con IA",
-      "description": "Si alguna vez arrancaste a codear una feature \"porque ya sabes lo que hay que hacer\" y terminaste reescribiendo todo a mitad del camino... este post es para ti.\nKiro Specs es una de las funcionalidades más poderosas del IDE Kiro, y la mayoría de los devs la ignora porque suena a burocracia. Spoiler: no lo es. Es la diferencia entre vibe coding y desarrollo estructurado con IA.",
-      "url": "https://builder.aws.com/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0Fx9gqtT18lYKonAmqlOedL01/KIRO.webp",
-      "authorName": "Antonia",
-      "authorAlias": "antitopy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
-      "location": "CL",
-      "lat": -31.7613365,
-      "lng": -71.3187697,
-      "tags": [
-        "kiro",
-        "kiro-agent",
-        "ai-ide",
-        "agentic-ide"
-      ],
-      "publishedAt": "2026-04-28T21:33:52.608Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -225,30 +224,7 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3420,
-      "commentsCount": 1912
-    },
-    {
-      "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
-      "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
-      "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
-      "url": "https://builder.aws.com/content/3D0bBC7EorB26NPkS78r1GnqHUK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0cdTFaIdy1SLRkhFkmGs3jsRv/bann.webp",
-      "authorName": "Pedro Filipe Borges",
-      "authorAlias": "pedroborgesdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "cloud-concepts",
-        "active-directory",
-        "advanced-networking",
-        "amazon-connect"
-      ],
-      "publishedAt": "2026-04-29T00:30:54.801Z",
-      "likesCount": 3,
-      "commentsCount": 3
+      "commentsCount": 1913
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -272,6 +248,50 @@
       "commentsCount": 323
     },
     {
+      "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
+      "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
+      "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
+      "url": "https://builder.aws.com/content/3D0bBC7EorB26NPkS78r1GnqHUK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0cdTFaIdy1SLRkhFkmGs3jsRv/bann.webp",
+      "authorName": "Pedro Filipe Borges",
+      "authorAlias": "pedroborgesdev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "cloud-concepts",
+        "active-directory",
+        "advanced-networking",
+        "amazon-connect"
+      ],
+      "publishedAt": "2026-04-29T00:30:54.801Z",
+      "likesCount": 5,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2842,
+      "commentsCount": 317
+    },
+    {
       "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
       "title": "De estudante curiosa a Embaixadora AWS: construindo meu caminho na nuvem e além",
       "description": "Neste artigo, compartilho minha trajetória na tecnologia — desde os primeiros contatos ainda no ensino médio até me tornar Líder Estudantil Builder AWS. Ao longo do caminho, falo sobre aprendizados, desafios e como a comunidade e o AWS Builder Center têm sido fundamentais para desenvolver minhas habilidades, fortalecer minha confiança e ampliar minha visão sobre o futuro na computação em nuvem. Mais do que uma conquista, essa jornada representa crescimento, conexão e propósito.",
@@ -293,25 +313,25 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
+      "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
+      "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
+      "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzsTULc2TwLvvEIaujGH7fU4iH/Desi.webp",
+      "authorName": "Emanuel Felipe",
+      "authorAlias": "omanuca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
+      "location": "RN, BR",
+      "lat": -5.6781175,
+      "lng": -36.4781776,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
+        "aws-builders",
+        "students",
+        "getting-started"
       ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2841,
-      "commentsCount": 316
+      "publishedAt": "2026-04-28T18:11:55.555Z",
+      "likesCount": 15,
+      "commentsCount": 3
     },
     {
       "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
@@ -333,27 +353,6 @@
       ],
       "publishedAt": "2026-04-28T22:03:28.221Z",
       "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
-      "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzsTULc2TwLvvEIaujGH7fU4iH/Desi.webp",
-      "authorName": "Emanuel Felipe",
-      "authorAlias": "omanuca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
-      "location": "RN, BR",
-      "lat": -5.6781175,
-      "lng": -36.4781776,
-      "tags": [
-        "aws-builders",
-        "students",
-        "getting-started"
-      ],
-      "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 14,
       "commentsCount": 3
     },
     {
