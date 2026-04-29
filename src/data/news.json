@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-29T08:46:44.393Z",
+  "updatedAt": "2026-04-29T09:42:39.587Z",
   "latest": [
     {
       "id": "/content/3D1XRoex1FftkAbbywbmS5he5bF",
@@ -21,7 +21,7 @@
         "aws-community-day-recaps-2026"
       ],
       "publishedAt": "2026-04-29T08:41:03.611Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -52,7 +52,7 @@
       "title": "Verbis Graph Engine for Pharma & Life Sciences: Turning Fragmented Documents into Connected Knowledge",
       "description": "In many Pharma and Life Sciences organizations, critical knowledge exists, but it is scattered across documents, teams, and systems, making it difficult to access quickly and use effectively. When knowledge is fragmented, it becomes harder for teams to stay aligned and move efficiently across regulatory, clinical, quality, scientific, and operational work.",
       "url": "https://builder.aws.com/content/3D1UngVJyi1EjtVEc6dF7sxhh20",
-      "imageUrl": "",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1bFujshgH5y1rSFo9UwNBAVba/Chat.webp",
       "authorName": "Alena",
       "authorAlias": "prodigyaisolutions",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BqFqD1Z1c7hNsSJV26sSvVpya1.webp",
@@ -383,53 +383,9 @@
       "publishedAt": "2026-04-28T20:55:42.768Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D09cAvqRW3Ad8ydcKFVmCGZNOn",
-      "title": "Agentic AI for the Automotive Back Office: Where to Start",
-      "description": "50–60% of automotive back-office work is manual. This guide provides a prescriptive framework for applying Agentic AI to cut costs by up to 3.78% of revenue",
-      "url": "https://builder.aws.com/content/3D09cAvqRW3Ad8ydcKFVmCGZNOn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0AKPZI3mqKa8BHXFQ7Wfj02RS/Imag.webp",
-      "authorName": "Swami Natarajan",
-      "authorAlias": "swamiaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yNNwuwZgyTEaJNHqFPVkEspxGm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "automotive-industry",
-        "sap"
-      ],
-      "publishedAt": "2026-04-28T20:41:32.962Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
-      "title": "From ECE Student to Cloud Enthusiast: My Journey into AWS & AI",
-      "description": "An honest journey of how I transitioned from core electronics to cloud computing and AI, building real-world skills through certifications, hands-on learning, and community programs.",
-      "url": "https://builder.aws.com/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1YMXGmAkeNRbPtJuYQjx8cZ0K/Chat.webp",
-      "authorName": "Avishek Dutta",
-      "authorAlias": "avishek1601",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1XP6k8Fdznq2evLd4D5WmSL12.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "advanced-networking",
-        "agentic-ai",
-        "agents",
-        "ai",
-        "agent-to-agent"
-      ],
-      "publishedAt": "2026-04-29T08:23:32.521Z",
-      "likesCount": 1,
-      "commentsCount": 2
-    },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
@@ -473,6 +429,29 @@
       "commentsCount": 323
     },
     {
+      "id": "/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
+      "title": "From ECE Student to Cloud Enthusiast: My Journey into AWS & AI",
+      "description": "An honest journey of how I transitioned from core electronics to cloud computing and AI, building real-world skills through certifications, hands-on learning, and community programs.",
+      "url": "https://builder.aws.com/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1YMXGmAkeNRbPtJuYQjx8cZ0K/Chat.webp",
+      "authorName": "Avishek Dutta",
+      "authorAlias": "avishek1601",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1XP6k8Fdznq2evLd4D5WmSL12.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "advanced-networking",
+        "agentic-ai",
+        "agents",
+        "ai",
+        "agent-to-agent"
+      ],
+      "publishedAt": "2026-04-29T08:23:32.521Z",
+      "likesCount": 1,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -492,27 +471,6 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2842,
       "commentsCount": 317
-    },
-    {
-      "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
-      "title": "De estudante curiosa a Embaixadora AWS: construindo meu caminho na nuvem e além",
-      "description": "Neste artigo, compartilho minha trajetória na tecnologia — desde os primeiros contatos ainda no ensino médio até me tornar Líder Estudantil Builder AWS. Ao longo do caminho, falo sobre aprendizados, desafios e como a comunidade e o AWS Builder Center têm sido fundamentais para desenvolver minhas habilidades, fortalecer minha confiança e ampliar minha visão sobre o futuro na computação em nuvem. Mais do que uma conquista, essa jornada representa crescimento, conexão e propósito.",
-      "url": "https://builder.aws.com/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Czo25t8bmIjnwmZzxSaRap57oy/Whats.webp",
-      "authorName": "Sara Ferreira",
-      "authorAlias": "sarinha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "aws-academy"
-      ],
-      "publishedAt": "2026-04-28T17:37:22.555Z",
-      "likesCount": 16,
-      "commentsCount": 4
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -536,6 +494,27 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1927,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
+      "title": "De estudante curiosa a Embaixadora AWS: construindo meu caminho na nuvem e além",
+      "description": "Neste artigo, compartilho minha trajetória na tecnologia — desde os primeiros contatos ainda no ensino médio até me tornar Líder Estudantil Builder AWS. Ao longo do caminho, falo sobre aprendizados, desafios e como a comunidade e o AWS Builder Center têm sido fundamentais para desenvolver minhas habilidades, fortalecer minha confiança e ampliar minha visão sobre o futuro na computação em nuvem. Mais do que uma conquista, essa jornada representa crescimento, conexão e propósito.",
+      "url": "https://builder.aws.com/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Czo25t8bmIjnwmZzxSaRap57oy/Whats.webp",
+      "authorName": "Sara Ferreira",
+      "authorAlias": "sarinha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-ambassador",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-04-28T17:37:22.555Z",
+      "likesCount": 16,
+      "commentsCount": 4
     },
     {
       "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
