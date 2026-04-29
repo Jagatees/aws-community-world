@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-04-29T10:37:02.469Z",
+  "updatedAt": "2026-04-29T11:32:03.710Z",
   "latest": [
+    {
+      "id": "/content/3D0Xx8kBSyseSfeDJov30NeJ4OQ",
+      "title": "Lambda: ¿Síncrono o Asíncrono? Optimiza tus Data Pipelines",
+      "description": "¿Síncrono o asíncrono? Analizo cómo invocar Lambdas eficientemente. Uso --invocation-type para escalar pipelines de datos y mejorar la resiliencia. ☁️ De las bases de AWS SAA a la práctica real entre mates, código y rock de los Ramones. 🎸⚡",
+      "url": "https://builder.aws.com/content/3D0Xx8kBSyseSfeDJov30NeJ4OQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0YpVgPc13artelCYMJT87D6oz/invo.webp",
+      "authorName": "Rocio Baigorria",
+      "authorAlias": "tuni56",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALq8aLtJOKkgJxQFPbrpOGR92B.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "aws-lambda",
+        "async",
+        "aws-data-pipeline",
+        "solutions-architect"
+      ],
+      "publishedAt": "2026-04-29T11:24:02.416Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CnlTubMuokoH8msnN97vWkcLwJ",
+      "title": "5 AWS Services Every College Student Should Know",
+      "description": "Cloud competency is positioned as the new professional literacy for students graduating in 2026, crucial for bridging theoretical knowledge with practical, deployable applications. The proposed roadmap focuses on five core Amazon Web Services - EC2, S3, Lambda, RDS and CloudFront - designed to accelerate project development and minimize infrastructure management overhead by covering scalable computing, durable storage, serverless execution and performance optimization via a CDN. ",
+      "url": "https://builder.aws.com/content/3CnlTubMuokoH8msnN97vWkcLwJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1qYaFPjZgE9T1fy6EeNmYlVuY/Whats.webp",
+      "authorName": "Sarab Bose",
+      "authorAlias": "sarabbose",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35qEKvv5GLcGZ8sbwYsuYelB6I5.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "students",
+        "builder-center",
+        "amazon-ec2",
+        "amazon-s3",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-04-29T11:00:52.542Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D1dBsa8h6PQ89D22DDeCUSp6yz",
       "title": "Kiro — The Importance of Steering",
@@ -65,7 +110,7 @@
         "agent-to-agent"
       ],
       "publishedAt": "2026-04-29T08:23:32.521Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 2
     },
     {
@@ -272,7 +317,7 @@
         "amazon-connect"
       ],
       "publishedAt": "2026-04-29T00:30:54.801Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 4
     },
     {
@@ -336,51 +381,6 @@
       "publishedAt": "2026-04-28T21:50:13.416Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
-      "title": "Kiro Specs: Deja de Improvisar y Empieza a Planificar Features con IA",
-      "description": "Si alguna vez arrancaste a codear una feature \"porque ya sabes lo que hay que hacer\" y terminaste reescribiendo todo a mitad del camino... este post es para ti.\nKiro Specs es una de las funcionalidades más poderosas del IDE Kiro, y la mayoría de los devs la ignora porque suena a burocracia. Spoiler: no lo es. Es la diferencia entre vibe coding y desarrollo estructurado con IA.",
-      "url": "https://builder.aws.com/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0Fx9gqtT18lYKonAmqlOedL01/KIRO.webp",
-      "authorName": "Antonia",
-      "authorAlias": "antitopy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
-      "location": "CL",
-      "lat": -31.7613365,
-      "lng": -71.3187697,
-      "tags": [
-        "kiro",
-        "kiro-agent",
-        "ai-ide",
-        "agentic-ide"
-      ],
-      "publishedAt": "2026-04-28T21:33:52.608Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
-      "title": "RAG and MCP in Agentic AI Systems on AWS: Architecture, Boundaries, and Reliability Implications",
-      "description": "The field is debating \"RAG vs MCP\" as if they are alternatives. They are not. RAG (Retrieval-Augmented Generation) and MCP (Model Context Protocol) operate at different architectural layers in an agentic system and serve fundamentally different functions. Conflating them leads to architecture mistakes with direct production reliability consequences.",
-      "url": "https://builder.aws.com/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0FBV2DoEWPwkv170JQIaoum4I/Rag-.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "sre",
-        "rag",
-        "aws-knowledge-mcp",
-        "devops-pro"
-      ],
-      "publishedAt": "2026-04-28T21:17:12.349Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -402,7 +402,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3422,
+      "likesCount": 3424,
       "commentsCount": 1914
     },
     {
@@ -423,7 +423,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3529,
+      "likesCount": 3530,
       "commentsCount": 323
     },
     {
@@ -444,31 +444,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2842,
+      "likesCount": 2843,
       "commentsCount": 317
-    },
-    {
-      "id": "/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
-      "title": "From ECE Student to Cloud Enthusiast: My Journey into AWS & AI",
-      "description": "An honest journey of how I transitioned from core electronics to cloud computing and AI, building real-world skills through certifications, hands-on learning, and community programs.",
-      "url": "https://builder.aws.com/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1YMXGmAkeNRbPtJuYQjx8cZ0K/Chat.webp",
-      "authorName": "Avishek Dutta",
-      "authorAlias": "avishek1601",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1XP6k8Fdznq2evLd4D5WmSL12.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "advanced-networking",
-        "agentic-ai",
-        "agents",
-        "ai",
-        "agent-to-agent"
-      ],
-      "publishedAt": "2026-04-29T08:23:32.521Z",
-      "likesCount": 1,
-      "commentsCount": 2
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -511,8 +488,31 @@
         "aws-academy"
       ],
       "publishedAt": "2026-04-28T17:37:22.555Z",
-      "likesCount": 16,
+      "likesCount": 17,
       "commentsCount": 4
+    },
+    {
+      "id": "/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
+      "title": "From ECE Student to Cloud Enthusiast: My Journey into AWS & AI",
+      "description": "An honest journey of how I transitioned from core electronics to cloud computing and AI, building real-world skills through certifications, hands-on learning, and community programs.",
+      "url": "https://builder.aws.com/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1YMXGmAkeNRbPtJuYQjx8cZ0K/Chat.webp",
+      "authorName": "Avishek Dutta",
+      "authorAlias": "avishek1601",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1XP6k8Fdznq2evLd4D5WmSL12.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "advanced-networking",
+        "agentic-ai",
+        "agents",
+        "ai",
+        "agent-to-agent"
+      ],
+      "publishedAt": "2026-04-29T08:23:32.521Z",
+      "likesCount": 2,
+      "commentsCount": 2
     },
     {
       "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
@@ -532,7 +532,7 @@
         "getting-started"
       ],
       "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 15,
+      "likesCount": 16,
       "commentsCount": 3
     },
     {
@@ -552,7 +552,7 @@
         "students"
       ],
       "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 26,
+      "likesCount": 27,
       "commentsCount": 24
     },
     {
@@ -575,27 +575,30 @@
         "amazon-connect"
       ],
       "publishedAt": "2026-04-29T00:30:54.801Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 4
     },
     {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
       "tags": [
-        "free-tier-projects"
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
       ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 25,
-      "commentsCount": 12
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1418,
+      "commentsCount": 325
     }
   ]
 }
