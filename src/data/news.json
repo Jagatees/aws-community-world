@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-04-29T18:30:49.168Z",
+  "updatedAt": "2026-04-29T19:32:24.653Z",
   "latest": [
+    {
+      "id": "/content/3D2MG3pRC3TzU5svoCxjxpolpVa",
+      "title": "A Nuvem não tem Dono: Por que a AWS quer você (mesmo que você não seja da TI)",
+      "description": "Descrição: Descubra como a escassez global de talentos em Cloud abriu as portas para engenheiros, administradores e cientistas. Um guia prático sobre carreira, o impacto do Builder Center e como sair do zero ao cargo de Arquiteto.",
+      "url": "https://builder.aws.com/content/3D2MG3pRC3TzU5svoCxjxpolpVa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2l5f6DUwltwoeXyA1nuNF7oLo/Capt.webp",
+      "authorName": "Gabriel Zago de Carvalho",
+      "authorAlias": "zagodecarvalho",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2N2m3D6bXGQJZhLBKU7fIfTTm.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "active-directory",
+        "advanced-networking",
+        "agentic-ai",
+        "advertising-marketing-industry"
+      ],
+      "publishedAt": "2026-04-29T18:38:16.575Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D2jHiWqVGgpk4BOZaKM74jWcwc",
       "title": "Stop Learning Randomly: A Structured Roadmap for AI/ML + Cloud (2026)",
@@ -61,7 +83,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T17:05:00.035Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 2
     },
     {
@@ -74,7 +96,7 @@
       "authorAlias": "shawnzh",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
       "location": "Hong Kong Island, HK",
-      "lat": 22.2534635,
+      "lat": 22.2534634,
       "lng": 114.190975,
       "tags": [
         "ai-engineering",
@@ -129,8 +151,8 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 6,
-      "commentsCount": 6
+      "likesCount": 8,
+      "commentsCount": 7
     },
     {
       "id": "/content/3CHISkY57gUwjEGRoMvrrU0YJLx",
@@ -192,23 +214,6 @@
       "publishedAt": "2026-04-29T14:07:53.859Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D2C7BlVnxkjX2xIUvjjfHGeOWM",
-      "title": "Split Cost Allocation Data (SCAD) Demystified: See Exactly Where Your EKS Cost Goes",
-      "description": "Runnable Athena queries for per-pod EKS cost analysis with SCAD — chargeback, waste, right-sizing, and a reconciliation proof that the numbers tie out.",
-      "url": "https://builder.aws.com/content/3D2C7BlVnxkjX2xIUvjjfHGeOWM",
-      "imageUrl": "",
-      "authorName": "Mehdi",
-      "authorAlias": "mehdiaws",
-      "authorAvatarUrl": "",
-      "location": "BE",
-      "lat": 50.6402809,
-      "lng": 4.6667145,
-      "tags": [],
-      "publishedAt": "2026-04-29T13:59:01.470Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -232,8 +237,29 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 6,
-      "commentsCount": 6
+      "likesCount": 8,
+      "commentsCount": 7
+    },
+    {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzZ6Um9BJskfblWQxSn9uCejGw.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3426,
+      "commentsCount": 1915
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
@@ -259,50 +285,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
-      "title": "Os melhores artigos que li essa semana no AWS Builder Center",
-      "description": "Minhas primeiras semanas no Builder Center foram marcadas com muitas leituras interessantes. Decidi então, compartilhar com a comunidade os melhores artigos que li! ",
-      "url": "https://builder.aws.com/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
-      "imageUrl": "",
-      "authorName": "Libarino",
-      "authorAlias": "libarino",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjLRayZ00c7HTWmMzsNjvz1WhD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "artificial-intelligence",
-        "aws-cloud-clubs",
-        "students",
-        "aws-builders",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-29T17:05:00.035Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzZ6Um9BJskfblWQxSn9uCejGw.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3426,
-      "commentsCount": 1915
-    },
-    {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
       "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
@@ -322,6 +304,29 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3530,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
+      "title": "Os melhores artigos que li essa semana no AWS Builder Center",
+      "description": "Minhas primeiras semanas no Builder Center foram marcadas com muitas leituras interessantes. Decidi então, compartilhar com a comunidade os melhores artigos que li! ",
+      "url": "https://builder.aws.com/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
+      "imageUrl": "",
+      "authorName": "Libarino",
+      "authorAlias": "libarino",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjLRayZ00c7HTWmMzsNjvz1WhD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "artificial-intelligence",
+        "aws-cloud-clubs",
+        "students",
+        "aws-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-29T17:05:00.035Z",
+      "likesCount": 4,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -384,8 +389,8 @@
         "students"
       ],
       "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 27,
-      "commentsCount": 24
+      "likesCount": 28,
+      "commentsCount": 25
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
