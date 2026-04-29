@@ -1,6 +1,130 @@
 {
-  "updatedAt": "2026-04-29T13:35:17.425Z",
+  "updatedAt": "2026-04-29T14:45:54.981Z",
   "latest": [
+    {
+      "id": "/content/3D2CQf2XGPYOWjiuIPKnn5v18zW",
+      "title": "O que fazer nos primeiros 7 dias no AWS Builder Center — guia prático para iniciantes",
+      "description": "Criou sua conta no AWS Builder Center e não sabe por onde começar? Este guia prático mostra exatamente o que fazer nos primeiros 7 dias — do perfil ao Cloud Quest, do Skill Builder ao Kiro. Em uma semana de ações simples, você já faz parte de uma comunidade global de builders da Amazon. Gratuito, para qualquer curso universitário.",
+      "url": "https://builder.aws.com/content/3D2CQf2XGPYOWjiuIPKnn5v18zW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2G1YivbfjrPW62KtanVqKr5UO/Whis.webp",
+      "authorName": "Gabriel Zago de Carvalho",
+      "authorAlias": "zagodecarvalho",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cb3ONKDNNAgqUZe8MTKaa8vm9J.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "agile",
+        "agents",
+        "ai-practitioner"
+      ],
+      "publishedAt": "2026-04-29T14:22:41.300Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D2CKxsRIZzAQxVdBEaUxHeg56m",
+      "title": "How to Configure Claude Cowork with Amazon Bedrock: A Step-by-Step Guide",
+      "description": "In this guide, I'll walk you through the complete process of configuring Claude Cowork to use Amazon Bedrock as your inference backend.",
+      "url": "https://builder.aws.com/content/3D2CKxsRIZzAQxVdBEaUxHeg56m",
+      "imageUrl": "",
+      "authorName": "Chandramouli Pitchaiyappan",
+      "authorAlias": "mouli15",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38WIfN8hG5HKkIzs0QYfFj5jePT.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [],
+      "publishedAt": "2026-04-29T14:07:53.859Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D2C7BlVnxkjX2xIUvjjfHGeOWM",
+      "title": "Split Cost Allocation Data (SCAD) Demystified: See Exactly Where Your EKS Cost Goes",
+      "description": "Runnable Athena queries for per-pod EKS cost analysis with SCAD — chargeback, waste, right-sizing, and a reconciliation proof that the numbers tie out.",
+      "url": "https://builder.aws.com/content/3D2C7BlVnxkjX2xIUvjjfHGeOWM",
+      "imageUrl": "",
+      "authorName": "Mehdi",
+      "authorAlias": "mehdiaws",
+      "authorAvatarUrl": "",
+      "location": "BE",
+      "lat": 50.6402809,
+      "lng": 4.6667145,
+      "tags": [],
+      "publishedAt": "2026-04-29T13:59:01.470Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D2BcTmYAXpXcnmmnNjo62ZXtAN",
+      "title": "Deterministic-First: GenAI Governance Without Hallucination",
+      "description": "Most GenAI governance asks the LLM before checking the rules. This piece flips that order: deterministic checks first, FM invocation second.",
+      "url": "https://builder.aws.com/content/3D2BcTmYAXpXcnmmnNjo62ZXtAN",
+      "imageUrl": "",
+      "authorName": "Erick Mancz",
+      "authorAlias": "imancz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "amazon-bedrock",
+        "generative-ai",
+        "ai-engineering",
+        "amazon-cloudwatch",
+        "machine-learning"
+      ],
+      "publishedAt": "2026-04-29T13:56:54.863Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CoBXK4suLu7Ta1Z7xtwYqIQ7Wd",
+      "title": "From Fear to Confidence: Using AI Agents to Tame SCP Enforcement at Scale",
+      "description": "If you manage AWS accounts at scale, you know the dilemma: Service Control Policies are the right way to enforce security guardrails, but one misconfigured SCP can break production the moment you attach it. Teams avoid them out of fear — and that fear leaves organizations unprotected. This post shows you how the SCP Analyzer agent cross-references your IAM roles, CloudTrail activity, and service configurations to tell you exactly what would break — before you enforce anything.",
+      "url": "https://builder.aws.com/content/3CoBXK4suLu7Ta1Z7xtwYqIQ7Wd",
+      "imageUrl": "",
+      "authorName": "Roger",
+      "authorAlias": "rfc",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/352Cp1LhPvQxvdBZnCNH4VBGFHJ.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "kiro-agent",
+        "agents",
+        "ai-agents",
+        "security",
+        "sre"
+      ],
+      "publishedAt": "2026-04-29T13:36:48.220Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "title": "🌩️ Getting Started with AWS Builder Center",
+      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
+      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "imageUrl": "",
+      "authorName": "G Monish Reddy",
+      "authorAlias": "technicalmonish",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "getting-started",
+        "students",
+        "learn",
+        "builder-center",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-04-29T13:07:42.542Z",
+      "likesCount": 13,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D1wfhwPRT5Lx2wgOZULwvnyb2d",
       "title": "Week 1-3 AWS Bootcamp Lab – Hands-On Cloud Implementation",
@@ -299,136 +423,32 @@
       "publishedAt": "2026-04-29T00:49:49.371Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0eUG4Uvf8SpFXWUGunmyD0WqZ",
-      "title": "Norfolk State University Communications and Journalism Outreach",
-      "description": "Week, making announcements and pitches for communications and journalism students at Norfolk State University",
-      "url": "https://builder.aws.com/content/3D0eUG4Uvf8SpFXWUGunmyD0WqZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0eb15mZHujfAr0aOfRgZsTZJm/IMG_.webp",
-      "authorName": "Christian J. Baker",
-      "authorAlias": "christianjb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CKfNkG7T0Y4n3AotXqw4GcUPws.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "outposts",
-        "lets-talk-about-data"
-      ],
-      "publishedAt": "2026-04-29T00:45:31.637Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
-      "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
-      "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
-      "url": "https://builder.aws.com/content/3D0bBC7EorB26NPkS78r1GnqHUK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0cdTFaIdy1SLRkhFkmGs3jsRv/bann.webp",
-      "authorName": "Pedro Filipe Borges",
-      "authorAlias": "pedroborgesdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "cloud-concepts",
-        "active-directory",
-        "advanced-networking",
-        "amazon-connect"
-      ],
-      "publishedAt": "2026-04-29T00:30:54.801Z",
-      "likesCount": 7,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3D0YrbwOmGbD8Yro2WAaEaNnmzP",
-      "title": "De “funciona aqui” para “funciona de verdade”: evoluindo na forma de construir",
-      "description": "Um relato pessoal sobre a transição de soluções locais e improvisadas para uma abordagem mais estruturada, explorando como práticas modernas e a cloud ajudam a construir aplicações mais seguras, escaláveis e confiáveis no dia a dia.",
-      "url": "https://builder.aws.com/content/3D0YrbwOmGbD8Yro2WAaEaNnmzP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0ZAHgFzTFMtnDZwVVO0YJex1c/Post.webp",
-      "authorName": "Matheus Lazarotto",
-      "authorAlias": "matheuslzdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cp7N9WnWqs1ZXrrA45AnX2Z4TK.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-29T00:00:23.837Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
-      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
-      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
-      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
-      "authorName": "Maria Eduarda",
-      "authorAlias": "cloudmadu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "aws-builders",
-        "aws-community",
-        "aws-service-catalog",
-        "students"
-      ],
-      "publishedAt": "2026-04-28T22:03:28.221Z",
-      "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
-      "title": "From Commit to Cloud Artifact: Enterprise GitHub Automation with AWS CodeArtifact",
-      "description": "A GitHub repository with automated releases, dependency updates and validation workflows improves the software development process. Integrating it with AWS makes it even more powerful.",
-      "url": "https://builder.aws.com/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CtkUB7jFyF1zgHXEJHFzvoa4W5/gith.webp",
-      "authorName": "Julian Michel",
-      "authorAlias": "jumic",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z2hEdqJNcDW9Q7TeJOzfDhSCTn.webp",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [
-        "devops",
-        "aws-cdk",
-        "software-development",
-        "aws-codeartifact",
-        "github"
-      ],
-      "publishedAt": "2026-04-28T21:50:13.416Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
-      "title": "Kiro Specs: Deja de Improvisar y Empieza a Planificar Features con IA",
-      "description": "Si alguna vez arrancaste a codear una feature \"porque ya sabes lo que hay que hacer\" y terminaste reescribiendo todo a mitad del camino... este post es para ti.\nKiro Specs es una de las funcionalidades más poderosas del IDE Kiro, y la mayoría de los devs la ignora porque suena a burocracia. Spoiler: no lo es. Es la diferencia entre vibe coding y desarrollo estructurado con IA.",
-      "url": "https://builder.aws.com/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0Fx9gqtT18lYKonAmqlOedL01/KIRO.webp",
-      "authorName": "Antonia",
-      "authorAlias": "antitopy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
-      "location": "CL",
-      "lat": -31.7613365,
-      "lng": -71.3187697,
-      "tags": [
-        "kiro",
-        "kiro-agent",
-        "ai-ide",
-        "agentic-ide"
-      ],
-      "publishedAt": "2026-04-28T21:33:52.608Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "title": "🌩️ Getting Started with AWS Builder Center",
+      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
+      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "imageUrl": "",
+      "authorName": "G Monish Reddy",
+      "authorAlias": "technicalmonish",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "getting-started",
+        "students",
+        "learn",
+        "builder-center",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-04-29T13:07:42.542Z",
+      "likesCount": 13,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
@@ -479,7 +499,7 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
       "authorName": "Jerry Davis NDJANA MENGUE",
       "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
       "location": "CM",
       "lat": 4.6125522,
       "lng": 13.1535811,
@@ -489,8 +509,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2843,
-      "commentsCount": 317
+      "likesCount": 2844,
+      "commentsCount": 318
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -537,27 +557,24 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3D1wfhwPRT5Lx2wgOZULwvnyb2d",
-      "title": "Week 1-3 AWS Bootcamp Lab – Hands-On Cloud Implementation",
-      "description": "As part of the AWS Cloud Club Unilorin Bootcamp 2026, I completed a practical lab focused on core cloud operations, security, and cost management using Amazon Web Services.\nThis lab covered real-world implementation of Identity and Access Management (IAM), EC2 provisioning, billing control, and web deployment.",
-      "url": "https://builder.aws.com/content/3D1wfhwPRT5Lx2wgOZULwvnyb2d",
-      "imageUrl": "",
-      "authorName": "Gabriel Fortunate",
-      "authorAlias": "fortunate",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
-        "iam",
-        "amazon-ec2",
-        "trust-policy",
-        "ubuntu",
-        "first-cloud-project-challenge-1"
+        "advertising-marketing-industry",
+        "students"
       ],
-      "publishedAt": "2026-04-29T12:18:08.860Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "publishedAt": "2026-04-27T00:44:34.853Z",
+      "likesCount": 27,
+      "commentsCount": 24
     },
     {
       "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
@@ -581,24 +598,26 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
       "tags": [
-        "advertising-marketing-industry",
-        "students"
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
       ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 27,
-      "commentsCount": 24
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1418,
+      "commentsCount": 325
     },
     {
       "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
@@ -622,28 +641,6 @@
       "publishedAt": "2026-04-29T00:30:54.801Z",
       "likesCount": 7,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1418,
-      "commentsCount": 325
     }
   ]
 }
