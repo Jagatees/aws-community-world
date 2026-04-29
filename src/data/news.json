@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-04-29T09:42:39.587Z",
+  "updatedAt": "2026-04-29T10:37:02.469Z",
   "latest": [
+    {
+      "id": "/content/3D1dBsa8h6PQ89D22DDeCUSp6yz",
+      "title": "Kiro — The Importance of Steering",
+      "description": "Steering files are the difference between an AI assistant that writes generic code and one that follows your team's conventions from the first generation. This post covers the why, the proof, and a step-by-step approach to building a steering package that cuts always-on context by 67% while producing code that passes PR review on the first try.",
+      "url": "https://builder.aws.com/content/3D1dBsa8h6PQ89D22DDeCUSp6yz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1eAhYqrGvqw3VwdpiySq2ptMm/7fef.webp",
+      "authorName": "robbrad",
+      "authorAlias": "robbrad182",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qo8l3mB5G3UuRbaeyX1sPp1Jz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "ai-dlc",
+        "ai-engineering",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-29T10:34:15.435Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D1XRoex1FftkAbbywbmS5he5bF",
       "title": "My First AWS Student Community Day Experience in Sri Lanka",
@@ -360,29 +381,6 @@
       "publishedAt": "2026-04-28T21:17:12.349Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxHW4mko7LqnlIpujmHc46hoqF",
-      "title": "AWS Bedrock AgentCore: Controls, Governance, and the Architectural Decisions That Shape Everything Else",
-      "description": "Once agents are running, the harder questions begin. This post covers the controls, governance, and architectural decisions that determine whether an enterprise agent platform operates safely at scale: Policy for deterministic tool enforcement, Guardrails for compliant model outputs, Memory, Observability, Registry, cost governance through Application Inference Profiles, and when a dedicated model gateway is worth the overhead. For practitioners building in production.",
-      "url": "https://builder.aws.com/content/3CxHW4mko7LqnlIpujmHc46hoqF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0DdrMojMuHu6pRoffjcreOYGL/0bad.webp",
-      "authorName": "Geethika Guruge",
-      "authorAlias": "geethika",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
-      "location": "NZ",
-      "lat": -41.5000831,
-      "lng": 172.8344077,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-28T20:55:42.768Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -404,7 +402,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3421,
+      "likesCount": 3422,
       "commentsCount": 1914
     },
     {
@@ -429,6 +427,27 @@
       "commentsCount": 323
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2842,
+      "commentsCount": 317
+    },
+    {
       "id": "/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
       "title": "From ECE Student to Cloud Enthusiast: My Journey into AWS & AI",
       "description": "An honest journey of how I transitioned from core electronics to cloud computing and AI, building real-world skills through certifications, hands-on learning, and community programs.",
@@ -450,27 +469,6 @@
       "publishedAt": "2026-04-29T08:23:32.521Z",
       "likesCount": 1,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2842,
-      "commentsCount": 317
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -538,6 +536,26 @@
       "commentsCount": 3
     },
     {
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "advertising-marketing-industry",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T00:44:34.853Z",
+      "likesCount": 26,
+      "commentsCount": 24
+    },
+    {
       "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
       "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
       "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
@@ -561,45 +579,23 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 26,
-      "commentsCount": 24
-    },
-    {
-      "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
-      "title": "AWS é para todos.",
-      "description": "AWS NÃO É SÓ PARA TI, E CURSOS DE EXATAS ESTÃO NO CENTRO DISSO!\n",
-      "url": "https://builder.aws.com/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
       "imageUrl": "",
-      "authorName": "Eduardo Saraiva",
-      "authorAlias": "kamijax",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjC729UwUJeBh7RBBaWcJX7W3I.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
       "tags": [
-        "aws-ambassador",
-        "aws-cloud-clubs",
-        "multi-cloud"
+        "free-tier-projects"
       ],
-      "publishedAt": "2026-04-28T17:14:02.635Z",
-      "likesCount": 11,
-      "commentsCount": 4
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 25,
+      "commentsCount": 12
     }
   ]
 }
