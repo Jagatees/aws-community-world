@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-29T01:35:56.131Z",
+  "updatedAt": "2026-04-29T03:05:48.511Z",
   "latest": [
+    {
+      "id": "/content/3CwuNIbnWmkXyJ27jKxxKWs1OUM",
+      "title": "Trustworthy AI Agents: A Builder's Guide",
+      "description": "From Cedar policies to Bedrock Guardrails to CloudWatch observability — a builder's guide to shipping trustworthy AI agents on AWS.",
+      "url": "https://builder.aws.com/content/3CwuNIbnWmkXyJ27jKxxKWs1OUM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0vLjHSpo2GqYQm1ESVsaaILE0/trus.webp",
+      "authorName": "Akshatha",
+      "authorAlias": "aniranj",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "responsible-ai",
+        "security",
+        "ai-engineering"
+      ],
+      "publishedAt": "2026-04-29T02:39:58.584Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D0mgdyF5nv1q3RzVWb846EkvT6",
+      "title": "COMO ESTÁ SENDO LÍDER ESTUDANTIL DA AWS?",
+      "description": "Hoje quero compartilhar com vocês a minha experiência sendo líder estudantil da AWS.",
+      "url": "https://builder.aws.com/content/3D0mgdyF5nv1q3RzVWb846EkvT6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0myLBAHdVGOxKFaxMTpOATeCI/POST.webp",
+      "authorName": "lara",
+      "authorAlias": "bastosdev08",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-skill-builder",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-29T01:58:19.394Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D0gNhfWuqqBnL0Quxfh2QmsFcn",
       "title": "How I Deployed CrewAI Multi-Agent Teams on Amazon Bedrock AgentCore Without Writing a Single Dockerfile",
@@ -161,55 +203,30 @@
       "publishedAt": "2026-04-28T21:33:52.608Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
-      "title": "RAG and MCP in Agentic AI Systems on AWS: Architecture, Boundaries, and Reliability Implications",
-      "description": "The field is debating \"RAG vs MCP\" as if they are alternatives. They are not. RAG (Retrieval-Augmented Generation) and MCP (Model Context Protocol) operate at different architectural layers in an agentic system and serve fundamentally different functions. Conflating them leads to architecture mistakes with direct production reliability consequences.",
-      "url": "https://builder.aws.com/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0FBV2DoEWPwkv170JQIaoum4I/Rag-.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "sre",
-        "rag",
-        "aws-knowledge-mcp",
-        "devops-pro"
-      ],
-      "publishedAt": "2026-04-28T21:17:12.349Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CxHW4mko7LqnlIpujmHc46hoqF",
-      "title": "AWS Bedrock AgentCore: Controls, Governance, and the Architectural Decisions That Shape Everything Else",
-      "description": "Once agents are running, the harder questions begin. This post covers the controls, governance, and architectural decisions that determine whether an enterprise agent platform operates safely at scale: Policy for deterministic tool enforcement, Guardrails for compliant model outputs, Memory, Observability, Registry, cost governance through Application Inference Profiles, and when a dedicated model gateway is worth the overhead. For practitioners building in production.",
-      "url": "https://builder.aws.com/content/3CxHW4mko7LqnlIpujmHc46hoqF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0DdrMojMuHu6pRoffjcreOYGL/0bad.webp",
-      "authorName": "Geethika Guruge",
-      "authorAlias": "geethika",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
-      "location": "NZ",
-      "lat": -41.5000831,
-      "lng": 172.8344077,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-28T20:55:42.768Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzZ6Um9BJskfblWQxSn9uCejGw.webp",
+      "location": "Haryana, IN",
+      "lat": 29,
+      "lng": 76,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3420,
+      "commentsCount": 1912
+    },
     {
       "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
       "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
@@ -232,27 +249,6 @@
       "publishedAt": "2026-04-29T00:30:54.801Z",
       "likesCount": 3,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzZ6Um9BJskfblWQxSn9uCejGw.webp",
-      "location": "Haryana, IN",
-      "lat": 29,
-      "lng": 76,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3420,
-      "commentsCount": 1912
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -297,6 +293,27 @@
       "commentsCount": 4
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2841,
+      "commentsCount": 316
+    },
+    {
       "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
       "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
       "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
@@ -338,27 +355,6 @@
       "publishedAt": "2026-04-28T18:11:55.555Z",
       "likesCount": 14,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2841,
-      "commentsCount": 316
     },
     {
       "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
