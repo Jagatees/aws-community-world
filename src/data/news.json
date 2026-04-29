@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-04-29T17:32:49.508Z",
+  "updatedAt": "2026-04-29T18:30:49.168Z",
   "latest": [
+    {
+      "id": "/content/3D2jHiWqVGgpk4BOZaKM74jWcwc",
+      "title": "Stop Learning Randomly: A Structured Roadmap for AI/ML + Cloud (2026)",
+      "description": "A practical roadmap to help students move from scattered learning to building real-world AI/ML and cloud projects with clarity and direction.",
+      "url": "https://builder.aws.com/content/3D2jHiWqVGgpk4BOZaKM74jWcwc",
+      "imageUrl": "",
+      "authorName": "Zubeda Yasmeen",
+      "authorAlias": "zubaidayasmeen",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CezcuVa9c4YxNFCb0gtZbJJVXC.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "ai",
+        "ai-ml",
+        "ai-practitioner"
+      ],
+      "publishedAt": "2026-04-29T18:28:48.493Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CehE3K225kElzgIQmnJVAzSiqm",
       "title": "QA Automation Using Kiro Custom Powers",
@@ -40,8 +61,8 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T17:05:00.035Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 2
     },
     {
       "id": "/content/3D2W4njwjbbwOog5cT6jGucKR1Y",
@@ -85,7 +106,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T16:43:19.502Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -109,7 +130,7 @@
       ],
       "publishedAt": "2026-04-29T16:36:55.845Z",
       "likesCount": 6,
-      "commentsCount": 5
+      "commentsCount": 6
     },
     {
       "id": "/content/3CHISkY57gUwjEGRoMvrrU0YJLx",
@@ -188,29 +209,6 @@
       "publishedAt": "2026-04-29T13:59:01.470Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D2BcTmYAXpXcnmmnNjo62ZXtAN",
-      "title": "Deterministic-First: GenAI Governance Without Hallucination",
-      "description": "Most GenAI governance asks the LLM before checking the rules. This piece flips that order: deterministic checks first, FM invocation second.",
-      "url": "https://builder.aws.com/content/3D2BcTmYAXpXcnmmnNjo62ZXtAN",
-      "imageUrl": "",
-      "authorName": "Erick Mancz",
-      "authorAlias": "imancz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "amazon-bedrock",
-        "generative-ai",
-        "ai-engineering",
-        "amazon-cloudwatch",
-        "machine-learning"
-      ],
-      "publishedAt": "2026-04-29T13:56:54.863Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -235,7 +233,7 @@
       ],
       "publishedAt": "2026-04-29T16:36:55.845Z",
       "likesCount": 6,
-      "commentsCount": 5
+      "commentsCount": 6
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
@@ -259,6 +257,29 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 17,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
+      "title": "Os melhores artigos que li essa semana no AWS Builder Center",
+      "description": "Minhas primeiras semanas no Builder Center foram marcadas com muitas leituras interessantes. Decidi então, compartilhar com a comunidade os melhores artigos que li! ",
+      "url": "https://builder.aws.com/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
+      "imageUrl": "",
+      "authorName": "Libarino",
+      "authorAlias": "libarino",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjLRayZ00c7HTWmMzsNjvz1WhD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "artificial-intelligence",
+        "aws-cloud-clubs",
+        "students",
+        "aws-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-29T17:05:00.035Z",
+      "likesCount": 3,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -367,27 +388,6 @@
       "commentsCount": 24
     },
     {
-      "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
-      "title": "De estudante curiosa a Embaixadora AWS: construindo meu caminho na nuvem e além",
-      "description": "Neste artigo, compartilho minha trajetória na tecnologia — desde os primeiros contatos ainda no ensino médio até me tornar Líder Estudantil Builder AWS. Ao longo do caminho, falo sobre aprendizados, desafios e como a comunidade e o AWS Builder Center têm sido fundamentais para desenvolver minhas habilidades, fortalecer minha confiança e ampliar minha visão sobre o futuro na computação em nuvem. Mais do que uma conquista, essa jornada representa crescimento, conexão e propósito.",
-      "url": "https://builder.aws.com/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Czo25t8bmIjnwmZzxSaRap57oy/Whats.webp",
-      "authorName": "Sara Ferreira",
-      "authorAlias": "sarinha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "aws-academy"
-      ],
-      "publishedAt": "2026-04-28T17:37:22.555Z",
-      "likesCount": 17,
-      "commentsCount": 4
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -410,25 +410,25 @@
       "commentsCount": 325
     },
     {
-      "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
-      "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzsTULc2TwLvvEIaujGH7fU4iH/Desi.webp",
-      "authorName": "Emanuel Felipe",
-      "authorAlias": "omanuca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
-      "location": "RN, BR",
-      "lat": -5.6781175,
-      "lng": -36.4781776,
+      "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
+      "title": "De estudante curiosa a Embaixadora AWS: construindo meu caminho na nuvem e além",
+      "description": "Neste artigo, compartilho minha trajetória na tecnologia — desde os primeiros contatos ainda no ensino médio até me tornar Líder Estudantil Builder AWS. Ao longo do caminho, falo sobre aprendizados, desafios e como a comunidade e o AWS Builder Center têm sido fundamentais para desenvolver minhas habilidades, fortalecer minha confiança e ampliar minha visão sobre o futuro na computação em nuvem. Mais do que uma conquista, essa jornada representa crescimento, conexão e propósito.",
+      "url": "https://builder.aws.com/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Czo25t8bmIjnwmZzxSaRap57oy/Whats.webp",
+      "authorName": "Sara Ferreira",
+      "authorAlias": "sarinha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
         "aws-builders",
-        "students",
-        "getting-started"
+        "aws-ambassador",
+        "aws-academy"
       ],
-      "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 16,
-      "commentsCount": 3
+      "publishedAt": "2026-04-28T17:37:22.555Z",
+      "likesCount": 17,
+      "commentsCount": 4
     }
   ]
 }
