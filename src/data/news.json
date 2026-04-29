@@ -1,6 +1,116 @@
 {
-  "updatedAt": "2026-04-29T16:33:52.057Z",
+  "updatedAt": "2026-04-29T17:32:49.508Z",
   "latest": [
+    {
+      "id": "/content/3CehE3K225kElzgIQmnJVAzSiqm",
+      "title": "QA Automation Using Kiro Custom Powers",
+      "description": "UI Test Automation using Kiro custom powers",
+      "url": "https://builder.aws.com/content/3CehE3K225kElzgIQmnJVAzSiqm",
+      "imageUrl": "",
+      "authorName": "Natasha_S",
+      "authorAlias": "sahnatas",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro"
+      ],
+      "publishedAt": "2026-04-29T17:29:21.186Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
+      "title": "Os melhores artigos que li essa semana no AWS Builder Center",
+      "description": "Minhas primeiras semanas no Builder Center foram marcadas com muitas leituras interessantes. Decidi então, compartilhar com a comunidade os melhores artigos que li! ",
+      "url": "https://builder.aws.com/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
+      "imageUrl": "",
+      "authorName": "Libarino",
+      "authorAlias": "libarino",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjLRayZ00c7HTWmMzsNjvz1WhD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "artificial-intelligence",
+        "aws-cloud-clubs",
+        "students",
+        "aws-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-29T17:05:00.035Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D2W4njwjbbwOog5cT6jGucKR1Y",
+      "title": "Scale-Driven Architecture: Lessons from a Hyperscale Multi-Tenant Agent Platform on EKS - Part 2: Isolation and Storage Trade-offs",
+      "description": "Part 2 explores two decisions that quotas alone can't answer: VM-level tenant isolation with Kata Containers (and the cost/config tradeoffs across bare metal, Graviton, and nested virt), and why EFS won the storage path after EBS, S3 sync, and provisioning speed each hit their own wall at 100k+ pod density.",
+      "url": "https://builder.aws.com/content/3D2W4njwjbbwOog5cT6jGucKR1Y",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2YtGnKesXnDZvohmKLFPsLilF/cove.webp",
+      "authorName": "Shawn Zhang",
+      "authorAlias": "shawnzh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
+      "location": "Hong Kong Island, HK",
+      "lat": 22.2534635,
+      "lng": 114.190975,
+      "tags": [
+        "ai-engineering",
+        "agentic-ai",
+        "kubernetes",
+        "cloud-storage",
+        "multi-tenant"
+      ],
+      "publishedAt": "2026-04-29T17:00:43.540Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cx2x4C2gHfena1soKDOGrXzNWZ",
+      "title": "OpenClaw on AWS: A Curated Collection of AWS Builder Center articles",
+      "description": "Interested in OpenClaw on AWS? We've got you covered! We've put together a list of articles covering everything from basic EC2 deploys to multi-tenant setups, security audits, and agents that build their own tools.",
+      "url": "https://builder.aws.com/content/3Cx2x4C2gHfena1soKDOGrXzNWZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cx7AX0CglX8YwvEMW2l3cVK8TM/Open.webp",
+      "authorName": "Maria Encinar",
+      "authorAlias": "mariaencinar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeFXvCgByaB2SlVFIGnDG7RoSS.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "agents",
+        "open-source",
+        "agentic-ai",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-29T16:43:19.502Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
+      "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
+      "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
+      "url": "https://builder.aws.com/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2V3IFCtABEY9xiC5MAs5k2D81/Capa.webp",
+      "authorName": "Igor Galindo",
+      "authorAlias": "igorgalind0",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-ambassador",
+        "aws-academy",
+        "aws-networking",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-29T16:36:55.845Z",
+      "likesCount": 6,
+      "commentsCount": 5
+    },
     {
       "id": "/content/3CHISkY57gUwjEGRoMvrrU0YJLx",
       "title": "Becoming an AWS Student Builder Campus Leader",
@@ -101,338 +211,33 @@
       "publishedAt": "2026-04-29T13:56:54.863Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CoBXK4suLu7Ta1Z7xtwYqIQ7Wd",
-      "title": "From Fear to Confidence: Using AI Agents to Tame SCP Enforcement at Scale",
-      "description": "If you manage AWS accounts at scale, you know the dilemma: Service Control Policies are the right way to enforce security guardrails, but one misconfigured SCP can break production the moment you attach it. Teams avoid them out of fear — and that fear leaves organizations unprotected. This post shows you how the SCP Analyzer agent cross-references your IAM roles, CloudTrail activity, and service configurations to tell you exactly what would break — before you enforce anything.",
-      "url": "https://builder.aws.com/content/3CoBXK4suLu7Ta1Z7xtwYqIQ7Wd",
-      "imageUrl": "",
-      "authorName": "Roger",
-      "authorAlias": "rfc",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/352Cp1LhPvQxvdBZnCNH4VBGFHJ.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "kiro-agent",
-        "agents",
-        "ai-agents",
-        "security",
-        "sre"
-      ],
-      "publishedAt": "2026-04-29T13:36:48.220Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 15,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D1wfhwPRT5Lx2wgOZULwvnyb2d",
-      "title": "Week 1-3 AWS Bootcamp Lab – Hands-On Cloud Implementation",
-      "description": "As part of the AWS Cloud Club Unilorin Bootcamp 2026, I completed a practical lab focused on core cloud operations, security, and cost management using Amazon Web Services.\nThis lab covered real-world implementation of Identity and Access Management (IAM), EC2 provisioning, billing control, and web deployment.",
-      "url": "https://builder.aws.com/content/3D1wfhwPRT5Lx2wgOZULwvnyb2d",
-      "imageUrl": "",
-      "authorName": "Gabriel Fortunate",
-      "authorAlias": "fortunate",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "iam",
-        "amazon-ec2",
-        "trust-policy",
-        "ubuntu",
-        "first-cloud-project-challenge-1"
-      ],
-      "publishedAt": "2026-04-29T12:18:08.860Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0Xx8kBSyseSfeDJov30NeJ4OQ",
-      "title": "Lambda: ¿Síncrono o Asíncrono? Optimiza tus Data Pipelines",
-      "description": "¿Síncrono o asíncrono? Analizo cómo invocar Lambdas eficientemente. Uso --invocation-type para escalar pipelines de datos y mejorar la resiliencia. ☁️ De las bases de AWS SAA a la práctica real entre mates, código y rock de los Ramones. 🎸⚡",
-      "url": "https://builder.aws.com/content/3D0Xx8kBSyseSfeDJov30NeJ4OQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0YpVgPc13artelCYMJT87D6oz/invo.webp",
-      "authorName": "Rocio Baigorria",
-      "authorAlias": "tuni56",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALq8aLtJOKkgJxQFPbrpOGR92B.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
-      "tags": [
-        "aws-lambda",
-        "async",
-        "aws-data-pipeline",
-        "solutions-architect"
-      ],
-      "publishedAt": "2026-04-29T11:24:02.416Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CnlTubMuokoH8msnN97vWkcLwJ",
-      "title": "5 AWS Services Every College Student Should Know",
-      "description": "Cloud competency is positioned as the new professional literacy for students graduating in 2026, crucial for bridging theoretical knowledge with practical, deployable applications. The proposed roadmap focuses on five core Amazon Web Services - EC2, S3, Lambda, RDS and CloudFront - designed to accelerate project development and minimize infrastructure management overhead by covering scalable computing, durable storage, serverless execution and performance optimization via a CDN. ",
-      "url": "https://builder.aws.com/content/3CnlTubMuokoH8msnN97vWkcLwJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1qYaFPjZgE9T1fy6EeNmYlVuY/Whats.webp",
-      "authorName": "Sarab Bose",
-      "authorAlias": "sarabbose",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35qEKvv5GLcGZ8sbwYsuYelB6I5.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "students",
-        "builder-center",
-        "amazon-ec2",
-        "amazon-s3",
-        "aws-lambda"
-      ],
-      "publishedAt": "2026-04-29T11:00:52.542Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D1dBsa8h6PQ89D22DDeCUSp6yz",
-      "title": "Kiro — The Importance of Steering",
-      "description": "Steering files are the difference between an AI assistant that writes generic code and one that follows your team's conventions from the first generation. This post covers the why, the proof, and a step-by-step approach to building a steering package that cuts always-on context by 67% while producing code that passes PR review on the first try.",
-      "url": "https://builder.aws.com/content/3D1dBsa8h6PQ89D22DDeCUSp6yz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1eAhYqrGvqw3VwdpiySq2ptMm/7fef.webp",
-      "authorName": "robbrad",
-      "authorAlias": "robbrad182",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qo8l3mB5G3UuRbaeyX1sPp1Jz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "ai-dlc",
-        "ai-engineering",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-29T10:34:15.435Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D1XRoex1FftkAbbywbmS5he5bF",
-      "title": "My First AWS Student Community Day Experience in Sri Lanka",
-      "description": "I share my experience at SCD 2026 Colombo, the first SCD event in Sri Lanka and key lessons from sessions, networking and community discussions.",
-      "url": "https://builder.aws.com/content/3D1XRoex1FftkAbbywbmS5he5bF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1aOkT7qUwfOzjBjT5R9OXnn13/6849.webp",
-      "authorName": "Pamuda U. de A. Goonatilake",
-      "authorAlias": "pamudauposath",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38zLpXUVfhXypEbkaRLO4H6KaVk.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "aws-community-day-2026",
-        "community",
-        "aws-community",
-        "aws-community-day",
-        "aws-community-day-recaps-2026"
-      ],
-      "publishedAt": "2026-04-29T08:41:03.611Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
-      "title": "From ECE Student to Cloud Enthusiast: My Journey into AWS & AI",
-      "description": "An honest journey of how I transitioned from core electronics to cloud computing and AI, building real-world skills through certifications, hands-on learning, and community programs.",
-      "url": "https://builder.aws.com/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1YMXGmAkeNRbPtJuYQjx8cZ0K/Chat.webp",
-      "authorName": "Avishek Dutta",
-      "authorAlias": "avishek1601",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1XP6k8Fdznq2evLd4D5WmSL12.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "advanced-networking",
-        "agentic-ai",
-        "agents",
-        "ai",
-        "agent-to-agent"
-      ],
-      "publishedAt": "2026-04-29T08:23:32.521Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3D1UngVJyi1EjtVEc6dF7sxhh20",
-      "title": "Verbis Graph Engine for Pharma & Life Sciences: Turning Fragmented Documents into Connected Knowledge",
-      "description": "In many Pharma and Life Sciences organizations, critical knowledge exists, but it is scattered across documents, teams, and systems, making it difficult to access quickly and use effectively. When knowledge is fragmented, it becomes harder for teams to stay aligned and move efficiently across regulatory, clinical, quality, scientific, and operational work.",
-      "url": "https://builder.aws.com/content/3D1UngVJyi1EjtVEc6dF7sxhh20",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1bFujshgH5y1rSFo9UwNBAVba/Chat.webp",
-      "authorName": "Alena",
-      "authorAlias": "prodigyaisolutions",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BqFqD1Z1c7hNsSJV26sSvVpya1.webp",
-      "location": "IT",
-      "lat": 42.6384261,
-      "lng": 12.674297,
-      "tags": [
-        "rag",
-        "intelligent-document-processing",
-        "retreival-augmented-generation",
-        "generative-ai",
-        "amazon-elastic-container-registry"
-      ],
-      "publishedAt": "2026-04-29T08:11:52.317Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D1GXffXJ14LPgkAuBGNKy1infO",
-      "title": "Talk to Your Graph: Natural Language Queries on Amazon Neptune via MCP Server in Amazon Quick",
-      "description": "Querying graph databases has traditionally required specialized languages like Gremlin or opencypher. In this blog, I show how the Neptune MCP Server bridges Amazon Neptune with Amazon Quick, enabling users to explore complex graph relationships, traverse connected data, and uncover hidden insights — all through simple, natural language questions. No query language expertise required.",
-      "url": "https://builder.aws.com/content/3D1GXffXJ14LPgkAuBGNKy1infO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1KNkyIeJr6sSoOOWUspc8dHqg/Blog.webp",
-      "authorName": "Yogish Kutkunje Pai",
-      "authorAlias": "yogishkutkunjepai",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "amazon-neptune",
-        "neptune",
-        "amazon-quick-suite"
-      ],
-      "publishedAt": "2026-04-29T06:14:18.466Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0wqDh1ho7EWnDXTjBLX6l2x80",
-      "title": "The Art of Un-Kafkaesque-ing: How Amazon Quick Transformed 3P Data Due Diligence and Vendor Renewal",
-      "description": "Managing 3P data vendor renewals was always rigorous and slow. Here's how Amazon Quick helped me un-Kafkaesque the entire process: same due diligence, same thoroughness, now structured and fast.",
-      "url": "https://builder.aws.com/content/3D0wqDh1ho7EWnDXTjBLX6l2x80",
-      "imageUrl": "",
-      "authorName": "Bhanuja",
-      "authorAlias": "nagoreb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpRUdh9LtHxWYAZjxEvVvld0lx.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-quick-suite",
-        "agentic-ai",
-        "data-strategy"
-      ],
-      "publishedAt": "2026-04-29T04:11:47.501Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3D0xma88rUtbPEYaQIeTCxXgYyG",
-      "title": "My Journey into Cloud Computing with AWS",
-      "description": "Learning AWS changed how I see software development. It taught me that building an application is only one part of the process—deployment, scalability, security, and monitoring matter just as much. Through AWS, I gained hands-on exposure to real-world cloud architecture and developed a deeper understanding of how modern applications are built and managed.",
-      "url": "https://builder.aws.com/content/3D0xma88rUtbPEYaQIeTCxXgYyG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0zNTrL7cJNzHYMYHTgziX5iaQ/9197.webp",
-      "authorName": "Aswin Gabrio",
-      "authorAlias": "frostop",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-community",
-        "tech-journey",
-        "aws-builders",
-        "aws-cloud-clubs",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-29T03:36:17.308Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CwuNIbnWmkXyJ27jKxxKWs1OUM",
-      "title": "Trustworthy AI Agents: A Builder's Guide",
-      "description": "From Cedar policies to Bedrock Guardrails to CloudWatch observability — a builder's guide to shipping trustworthy AI agents on AWS.",
-      "url": "https://builder.aws.com/content/3CwuNIbnWmkXyJ27jKxxKWs1OUM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0vLjHSpo2GqYQm1ESVsaaILE0/trus.webp",
-      "authorName": "Akshatha",
-      "authorAlias": "aniranj",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "responsible-ai",
-        "security",
-        "ai-engineering"
-      ],
-      "publishedAt": "2026-04-29T02:39:58.584Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0mgdyF5nv1q3RzVWb846EkvT6",
-      "title": "COMO ESTÁ SENDO LÍDER ESTUDANTIL DA AWS?",
-      "description": "Hoje quero compartilhar com vocês a minha experiência sendo líder estudantil da AWS.",
-      "url": "https://builder.aws.com/content/3D0mgdyF5nv1q3RzVWb846EkvT6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0myLBAHdVGOxKFaxMTpOATeCI/POST.webp",
-      "authorName": "lara",
-      "authorAlias": "bastosdev08",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-skill-builder",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-29T01:58:19.394Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0gNhfWuqqBnL0Quxfh2QmsFcn",
-      "title": "How I Deployed CrewAI Multi-Agent Teams on Amazon Bedrock AgentCore Without Writing a Single Dockerfile",
-      "description": "How I Deployed CrewAI Multi-Agent Teams on Amazon Bedrock AgentCore Without Writing a Single Dockerfile",
-      "url": "https://builder.aws.com/content/3D0gNhfWuqqBnL0Quxfh2QmsFcn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0geeVPDT6NCsTEXmsSfq7Hdfr/-cre.webp",
-      "authorName": "Carlos Cortez Bazan",
-      "authorAlias": "breakinthecloud",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zenWTW1TkkOGNDuvufm5IQmCys.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [],
-      "publishedAt": "2026-04-29T01:02:21.843Z",
-      "likesCount": 3,
-      "commentsCount": 0
     }
   ],
   "trending": [
     {
+      "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
+      "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
+      "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
+      "url": "https://builder.aws.com/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2V3IFCtABEY9xiC5MAs5k2D81/Capa.webp",
+      "authorName": "Igor Galindo",
+      "authorAlias": "igorgalind0",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-ambassador",
+        "aws-academy",
+        "aws-networking",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-29T16:36:55.845Z",
+      "likesCount": 6,
+      "commentsCount": 5
+    },
+    {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
       "title": "🌩️ Getting Started with AWS Builder Center",
       "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
@@ -452,8 +257,8 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 15,
-      "commentsCount": 0
+      "likesCount": 17,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -542,6 +347,26 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "advertising-marketing-industry",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T00:44:34.853Z",
+      "likesCount": 27,
+      "commentsCount": 24
+    },
+    {
       "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
       "title": "De estudante curiosa a Embaixadora AWS: construindo meu caminho na nuvem e além",
       "description": "Neste artigo, compartilho minha trajetória na tecnologia — desde os primeiros contatos ainda no ensino médio até me tornar Líder Estudantil Builder AWS. Ao longo do caminho, falo sobre aprendizados, desafios e como a comunidade e o AWS Builder Center têm sido fundamentais para desenvolver minhas habilidades, fortalecer minha confiança e ampliar minha visão sobre o futuro na computação em nuvem. Mais do que uma conquista, essa jornada representa crescimento, conexão e propósito.",
@@ -561,26 +386,6 @@
       "publishedAt": "2026-04-28T17:37:22.555Z",
       "likesCount": 17,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 27,
-      "commentsCount": 24
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -624,25 +429,6 @@
       "publishedAt": "2026-04-28T18:11:55.555Z",
       "likesCount": 16,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 25,
-      "commentsCount": 12
     }
   ]
 }
