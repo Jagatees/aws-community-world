@@ -1,27 +1,6 @@
 {
-  "updatedAt": "2026-04-29T12:32:35.102Z",
+  "updatedAt": "2026-04-29T13:35:17.425Z",
   "latest": [
-    {
-      "id": "/content/3D1zx3Y473m08kmiIjFT7tlDiGB",
-      "title": "Android Architecture: Components, Patterns & Best Practices Guide",
-      "description": "Learn Android architecture with components, patterns, and best practices to build mobile apps that are scalable, easy to maintain, and high-performing.",
-      "url": "https://builder.aws.com/content/3D1zx3Y473m08kmiIjFT7tlDiGB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D21e8BKzNqOX2FhiZduONr8fL1/Andr.webp",
-      "authorName": "Harper Elise Callahan",
-      "authorAlias": "harperelisecallahan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/381OZkwcmCz2Q9uM2fSAQK2sEAL.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "architecture",
-        "application",
-        "best-practices"
-      ],
-      "publishedAt": "2026-04-29T12:31:37.833Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
     {
       "id": "/content/3D1wfhwPRT5Lx2wgOZULwvnyb2d",
       "title": "Week 1-3 AWS Bootcamp Lab – Hands-On Cloud Implementation",
@@ -42,7 +21,7 @@
         "first-cloud-project-challenge-1"
       ],
       "publishedAt": "2026-04-29T12:18:08.860Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -64,7 +43,7 @@
         "solutions-architect"
       ],
       "publishedAt": "2026-04-29T11:24:02.416Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -219,8 +198,8 @@
         "data-strategy"
       ],
       "publishedAt": "2026-04-29T04:11:47.501Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3D0xma88rUtbPEYaQIeTCxXgYyG",
@@ -301,7 +280,7 @@
       "lng": -75.0458515,
       "tags": [],
       "publishedAt": "2026-04-29T01:02:21.843Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -361,7 +340,7 @@
         "amazon-connect"
       ],
       "publishedAt": "2026-04-29T00:30:54.801Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 4
     },
     {
@@ -425,6 +404,28 @@
       "publishedAt": "2026-04-28T21:50:13.416Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
+      "title": "Kiro Specs: Deja de Improvisar y Empieza a Planificar Features con IA",
+      "description": "Si alguna vez arrancaste a codear una feature \"porque ya sabes lo que hay que hacer\" y terminaste reescribiendo todo a mitad del camino... este post es para ti.\nKiro Specs es una de las funcionalidades más poderosas del IDE Kiro, y la mayoría de los devs la ignora porque suena a burocracia. Spoiler: no lo es. Es la diferencia entre vibe coding y desarrollo estructurado con IA.",
+      "url": "https://builder.aws.com/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0Fx9gqtT18lYKonAmqlOedL01/KIRO.webp",
+      "authorName": "Antonia",
+      "authorAlias": "antitopy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
+      "location": "CL",
+      "lat": -31.7613365,
+      "lng": -71.3187697,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "ai-ide",
+        "agentic-ide"
+      ],
+      "publishedAt": "2026-04-28T21:33:52.608Z",
+      "likesCount": 2,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -446,7 +447,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3424,
+      "likesCount": 3425,
       "commentsCount": 1914
     },
     {
@@ -536,6 +537,29 @@
       "commentsCount": 4
     },
     {
+      "id": "/content/3D1wfhwPRT5Lx2wgOZULwvnyb2d",
+      "title": "Week 1-3 AWS Bootcamp Lab – Hands-On Cloud Implementation",
+      "description": "As part of the AWS Cloud Club Unilorin Bootcamp 2026, I completed a practical lab focused on core cloud operations, security, and cost management using Amazon Web Services.\nThis lab covered real-world implementation of Identity and Access Management (IAM), EC2 provisioning, billing control, and web deployment.",
+      "url": "https://builder.aws.com/content/3D1wfhwPRT5Lx2wgOZULwvnyb2d",
+      "imageUrl": "",
+      "authorName": "Gabriel Fortunate",
+      "authorAlias": "fortunate",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRsqsUX8o9Vmu0xoUFwftxdgsU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "iam",
+        "amazon-ec2",
+        "trust-policy",
+        "ubuntu",
+        "first-cloud-project-challenge-1"
+      ],
+      "publishedAt": "2026-04-29T12:18:08.860Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
       "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
       "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
@@ -555,29 +579,6 @@
       "publishedAt": "2026-04-28T18:11:55.555Z",
       "likesCount": 16,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
-      "title": "From ECE Student to Cloud Enthusiast: My Journey into AWS & AI",
-      "description": "An honest journey of how I transitioned from core electronics to cloud computing and AI, building real-world skills through certifications, hands-on learning, and community programs.",
-      "url": "https://builder.aws.com/content/3D1XrbzvfXRa7q48GqqfFxWRuHa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1YMXGmAkeNRbPtJuYQjx8cZ0K/Chat.webp",
-      "authorName": "Avishek Dutta",
-      "authorAlias": "avishek1601",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1XP6k8Fdznq2evLd4D5WmSL12.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "advanced-networking",
-        "agentic-ai",
-        "agents",
-        "ai",
-        "agent-to-agent"
-      ],
-      "publishedAt": "2026-04-29T08:23:32.521Z",
-      "likesCount": 2,
-      "commentsCount": 2
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
@@ -600,6 +601,29 @@
       "commentsCount": 24
     },
     {
+      "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
+      "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
+      "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
+      "url": "https://builder.aws.com/content/3D0bBC7EorB26NPkS78r1GnqHUK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0cdTFaIdy1SLRkhFkmGs3jsRv/bann.webp",
+      "authorName": "Pedro Filipe Borges",
+      "authorAlias": "pedroborgesdev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "cloud-concepts",
+        "active-directory",
+        "advanced-networking",
+        "amazon-connect"
+      ],
+      "publishedAt": "2026-04-29T00:30:54.801Z",
+      "likesCount": 7,
+      "commentsCount": 4
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -620,29 +644,6 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1418,
       "commentsCount": 325
-    },
-    {
-      "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
-      "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
-      "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
-      "url": "https://builder.aws.com/content/3D0bBC7EorB26NPkS78r1GnqHUK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0cdTFaIdy1SLRkhFkmGs3jsRv/bann.webp",
-      "authorName": "Pedro Filipe Borges",
-      "authorAlias": "pedroborgesdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "cloud-concepts",
-        "active-directory",
-        "advanced-networking",
-        "amazon-connect"
-      ],
-      "publishedAt": "2026-04-29T00:30:54.801Z",
-      "likesCount": 6,
-      "commentsCount": 4
     }
   ]
 }
