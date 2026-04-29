@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-29T14:45:54.981Z",
+  "updatedAt": "2026-04-29T15:39:39.148Z",
   "latest": [
     {
       "id": "/content/3D2CQf2XGPYOWjiuIPKnn5v18zW",
@@ -9,7 +9,7 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2G1YivbfjrPW62KtanVqKr5UO/Whis.webp",
       "authorName": "Gabriel Zago de Carvalho",
       "authorAlias": "zagodecarvalho",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cb3ONKDNNAgqUZe8MTKaa8vm9J.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2N2m3D6bXGQJZhLBKU7fIfTTm.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
@@ -211,7 +211,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-29T10:34:15.435Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -367,7 +367,7 @@
         "ai-engineering"
       ],
       "publishedAt": "2026-04-29T02:39:58.584Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -509,7 +509,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2844,
+      "likesCount": 2845,
       "commentsCount": 318
     },
     {
@@ -577,27 +577,6 @@
       "commentsCount": 24
     },
     {
-      "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
-      "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzsTULc2TwLvvEIaujGH7fU4iH/Desi.webp",
-      "authorName": "Emanuel Felipe",
-      "authorAlias": "omanuca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
-      "location": "RN, BR",
-      "lat": -5.6781175,
-      "lng": -36.4781776,
-      "tags": [
-        "aws-builders",
-        "students",
-        "getting-started"
-      ],
-      "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 16,
-      "commentsCount": 3
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -620,27 +599,44 @@
       "commentsCount": 325
     },
     {
-      "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
-      "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
-      "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
-      "url": "https://builder.aws.com/content/3D0bBC7EorB26NPkS78r1GnqHUK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0cdTFaIdy1SLRkhFkmGs3jsRv/bann.webp",
-      "authorName": "Pedro Filipe Borges",
-      "authorAlias": "pedroborgesdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
+      "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
+      "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzsTULc2TwLvvEIaujGH7fU4iH/Desi.webp",
+      "authorName": "Emanuel Felipe",
+      "authorAlias": "omanuca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
+      "location": "RN, BR",
+      "lat": -5.6781175,
+      "lng": -36.4781776,
       "tags": [
         "aws-builders",
-        "cloud-concepts",
-        "active-directory",
-        "advanced-networking",
-        "amazon-connect"
+        "students",
+        "getting-started"
       ],
-      "publishedAt": "2026-04-29T00:30:54.801Z",
-      "likesCount": 7,
-      "commentsCount": 4
+      "publishedAt": "2026-04-28T18:11:55.555Z",
+      "likesCount": 16,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "title": "Como começar na AWS de graça: um guia prático para estudantes",
+      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
+      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "likesCount": 25,
+      "commentsCount": 12
     }
   ]
 }
