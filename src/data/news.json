@@ -1,12 +1,33 @@
 {
-  "updatedAt": "2026-04-29T05:05:52.902Z",
+  "updatedAt": "2026-04-29T06:50:02.541Z",
   "latest": [
+    {
+      "id": "/content/3D1GXffXJ14LPgkAuBGNKy1infO",
+      "title": "Talk to Your Graph: Natural Language Queries on Amazon Neptune via MCP Server in Amazon Quick",
+      "description": "Querying graph databases has traditionally required specialized languages like Gremlin or opencypher. In this blog, I show how the Neptune MCP Server bridges Amazon Neptune with Amazon Quick, enabling users to explore complex graph relationships, traverse connected data, and uncover hidden insights — all through simple, natural language questions. No query language expertise required.",
+      "url": "https://builder.aws.com/content/3D1GXffXJ14LPgkAuBGNKy1infO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1KNkyIeJr6sSoOOWUspc8dHqg/Blog.webp",
+      "authorName": "Yogish Kutkunje Pai",
+      "authorAlias": "yogishkutkunjepai",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-neptune",
+        "neptune",
+        "amazon-quick-suite"
+      ],
+      "publishedAt": "2026-04-29T06:14:18.466Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D0wqDh1ho7EWnDXTjBLX6l2x80",
       "title": "The Art of Un-Kafkaesque-ing: How Amazon Quick Transformed 3P Data Due Diligence and Vendor Renewal",
-      "description": "Managing 3P data vendor renewals was always rigorous — but painfully slow. Here's how Amazon Quick helped me un-Kafkaesque the entire process: same due diligence, same thoroughness, now structured and fast.",
+      "description": "Managing 3P data vendor renewals was always rigorous and slow. Here's how Amazon Quick helped me un-Kafkaesque the entire process: same due diligence, same thoroughness, now structured and fast.",
       "url": "https://builder.aws.com/content/3D0wqDh1ho7EWnDXTjBLX6l2x80",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D17yarl08YvpsIrFEeqtEaudee/un_k.webp",
+      "imageUrl": "",
       "authorName": "Bhanuja",
       "authorAlias": "nagoreb",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpRUdh9LtHxWYAZjxEvVvld0lx.webp",
@@ -202,6 +223,179 @@
       "publishedAt": "2026-04-28T22:03:28.221Z",
       "likesCount": 6,
       "commentsCount": 3
+    },
+    {
+      "id": "/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
+      "title": "From Commit to Cloud Artifact: Enterprise GitHub Automation with AWS CodeArtifact",
+      "description": "A GitHub repository with automated releases, dependency updates and validation workflows improves the software development process. Integrating it with AWS makes it even more powerful.",
+      "url": "https://builder.aws.com/content/3BaaWbl3EcnrQxEuUXnlKIQgSGC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CtkUB7jFyF1zgHXEJHFzvoa4W5/gith.webp",
+      "authorName": "Julian Michel",
+      "authorAlias": "jumic",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z2hEdqJNcDW9Q7TeJOzfDhSCTn.webp",
+      "location": "DE",
+      "lat": 51.1638175,
+      "lng": 10.4478313,
+      "tags": [
+        "devops",
+        "aws-cdk",
+        "software-development",
+        "aws-codeartifact",
+        "github"
+      ],
+      "publishedAt": "2026-04-28T21:50:13.416Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
+      "title": "Kiro Specs: Deja de Improvisar y Empieza a Planificar Features con IA",
+      "description": "Si alguna vez arrancaste a codear una feature \"porque ya sabes lo que hay que hacer\" y terminaste reescribiendo todo a mitad del camino... este post es para ti.\nKiro Specs es una de las funcionalidades más poderosas del IDE Kiro, y la mayoría de los devs la ignora porque suena a burocracia. Spoiler: no lo es. Es la diferencia entre vibe coding y desarrollo estructurado con IA.",
+      "url": "https://builder.aws.com/content/3D0FndnIEQX8lRlQnfh0eUBU7V4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0Fx9gqtT18lYKonAmqlOedL01/KIRO.webp",
+      "authorName": "Antonia",
+      "authorAlias": "antitopy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
+      "location": "CL",
+      "lat": -31.7613365,
+      "lng": -71.3187697,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "ai-ide",
+        "agentic-ide"
+      ],
+      "publishedAt": "2026-04-28T21:33:52.608Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
+      "title": "RAG and MCP in Agentic AI Systems on AWS: Architecture, Boundaries, and Reliability Implications",
+      "description": "The field is debating \"RAG vs MCP\" as if they are alternatives. They are not. RAG (Retrieval-Augmented Generation) and MCP (Model Context Protocol) operate at different architectural layers in an agentic system and serve fundamentally different functions. Conflating them leads to architecture mistakes with direct production reliability consequences.",
+      "url": "https://builder.aws.com/content/3D0F1pNZ0fFLLkizH2rkRqs4aps",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0FBV2DoEWPwkv170JQIaoum4I/Rag-.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "sre",
+        "rag",
+        "aws-knowledge-mcp",
+        "devops-pro"
+      ],
+      "publishedAt": "2026-04-28T21:17:12.349Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CxHW4mko7LqnlIpujmHc46hoqF",
+      "title": "AWS Bedrock AgentCore: Controls, Governance, and the Architectural Decisions That Shape Everything Else",
+      "description": "Once agents are running, the harder questions begin. This post covers the controls, governance, and architectural decisions that determine whether an enterprise agent platform operates safely at scale: Policy for deterministic tool enforcement, Guardrails for compliant model outputs, Memory, Observability, Registry, cost governance through Application Inference Profiles, and when a dedicated model gateway is worth the overhead. For practitioners building in production.",
+      "url": "https://builder.aws.com/content/3CxHW4mko7LqnlIpujmHc46hoqF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0DdrMojMuHu6pRoffjcreOYGL/0bad.webp",
+      "authorName": "Geethika Guruge",
+      "authorAlias": "geethika",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
+      "location": "NZ",
+      "lat": -41.5000831,
+      "lng": 172.8344077,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-28T20:55:42.768Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D09cAvqRW3Ad8ydcKFVmCGZNOn",
+      "title": "Agentic AI for the Automotive Back Office: Where to Start",
+      "description": "50–60% of automotive back-office work is manual. This guide provides a prescriptive framework for applying Agentic AI to cut costs by up to 3.78% of revenue",
+      "url": "https://builder.aws.com/content/3D09cAvqRW3Ad8ydcKFVmCGZNOn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0AKPZI3mqKa8BHXFQ7Wfj02RS/Imag.webp",
+      "authorName": "Swami Natarajan",
+      "authorAlias": "swamiaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yNNwuwZgyTEaJNHqFPVkEspxGm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "automotive-industry",
+        "sap"
+      ],
+      "publishedAt": "2026-04-28T20:41:32.962Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D064uIOZZsaZNCLtht4U0HzC0e",
+      "title": "AWS Builder Center: o guia completo para quem quer começar na nuvem",
+      "description": "A computação em nuvem passou de uma tendência para se consolidar como a base da tecnologia atual. A Amazon Web Services (AWS), a plataforma mais usada e completa do mundo, está no centro desta mudança. Com mais de 200 serviços em datacenters ao redor do mundo, a AWS permite que as empresas selecionem infraestrutura de TI de acordo com a demanda, pagando apenas pelo que gastam e evitando altos gastos fixos com aparelhos físicos. Mas como começar nesse mundo tão grande? A resposta está no AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3D064uIOZZsaZNCLtht4U0HzC0e",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D09N3E4F24mKcc0UUQR8190iMM/Whats.webp",
+      "authorName": "Yuri Neres",
+      "authorAlias": "yurimadune",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C9E1lXP99zJ1WniQ5TgPfXSeb5.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-28T20:29:25.347Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D03zzo37OYZBdPUYuRJ9CV8q0N",
+      "title": "Using Custom Endpoints with Amazon DocumentDB",
+      "description": "Learn how to use custom endpoints, an Amazon Aurora feature, with Amazon DocumentDB.",
+      "url": "https://builder.aws.com/content/3D03zzo37OYZBdPUYuRJ9CV8q0N",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D08p1MBl7hOQoxggRbWPrGeWbS/docd.webp",
+      "authorName": "Cody_A",
+      "authorAlias": "allcoaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38G2Z8c8yyapcWXQeKVHjlbYIV9.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-documentdb",
+        "security",
+        "encryption",
+        "nosql",
+        "databases"
+      ],
+      "publishedAt": "2026-04-28T20:24:42.704Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D04ZJmhHX4cDGGYikFcStergSu",
+      "title": "How Agentic AI is More than a Buzzword for Companies",
+      "description": "Agentic AI is more than a tech buzzword. From building study games to creating websites and apps, Samuel Quarles shares how college students can use agentic AI and AWS tools to move from ideas to execution faster.",
+      "url": "https://builder.aws.com/content/3D04ZJmhHX4cDGGYikFcStergSu",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D06LFEtj74Z5daMa6WReLT68ZN/work.webp",
+      "authorName": "Samuel Quarles",
+      "authorAlias": "samqua",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cmd2WN4HoKfEyiZR69ZUipGmFI.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai-ml",
+        "agents",
+        "strands-agents"
+      ],
+      "publishedAt": "2026-04-28T20:04:09.238Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -223,8 +417,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3420,
-      "commentsCount": 1913
+      "likesCount": 3421,
+      "commentsCount": 1914
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -248,6 +442,27 @@
       "commentsCount": 323
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2842,
+      "commentsCount": 317
+    },
+    {
       "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
       "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
       "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
@@ -269,27 +484,6 @@
       "publishedAt": "2026-04-29T00:30:54.801Z",
       "likesCount": 5,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWLHQUElot8uo3WZddczQDN76p.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2842,
-      "commentsCount": 317
     },
     {
       "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
@@ -334,26 +528,27 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
-      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
-      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
-      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
-      "authorName": "Maria Eduarda",
-      "authorAlias": "cloudmadu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
       "tags": [
-        "aws-builders",
-        "aws-community",
-        "aws-service-catalog",
-        "students"
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
       ],
-      "publishedAt": "2026-04-28T22:03:28.221Z",
-      "likesCount": 6,
-      "commentsCount": 3
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1927,
+      "commentsCount": 269
     },
     {
       "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
@@ -377,27 +572,26 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
+      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
+      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
+      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
+        "aws-builders",
+        "aws-community",
+        "aws-service-catalog",
+        "students"
       ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1927,
-      "commentsCount": 269
+      "publishedAt": "2026-04-28T22:03:28.221Z",
+      "likesCount": 6,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
