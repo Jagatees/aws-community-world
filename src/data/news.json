@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-04-28T23:19:22.038Z",
+  "updatedAt": "2026-04-29T00:33:24.564Z",
   "latest": [
+    {
+      "id": "/content/3D0bBC7EorB26NPkS78r1GnqHUK",
+      "title": "Utilizando o AWS BUILDER CENTER para ALAVANCAR seu CONHECIMENTO",
+      "description": "Este artigo apresenta como o AWS Builder Center tem ampliado meus conhecimentos em tecnologia, cloud computing e desenvolvimento prático. Compartilho como a plataforma fortaleceu minha confiança, conectou meu aprendizado à comunidade e complementou minha formação acadêmica. Também mostro como essa experiência está acelerando minha preparação para futuras oportunidades profissionais.",
+      "url": "https://builder.aws.com/content/3D0bBC7EorB26NPkS78r1GnqHUK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0cdTFaIdy1SLRkhFkmGs3jsRv/bann.webp",
+      "authorName": "Pedro Filipe Borges",
+      "authorAlias": "pedroborgesdev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "cloud-concepts",
+        "active-directory",
+        "advanced-networking",
+        "amazon-connect"
+      ],
+      "publishedAt": "2026-04-29T00:30:54.801Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D0YrbwOmGbD8Yro2WAaEaNnmzP",
+      "title": "De “funciona aqui” para “funciona de verdade”: evoluindo na forma de construir",
+      "description": "Um relato pessoal sobre a transição de soluções locais e improvisadas para uma abordagem mais estruturada, explorando como práticas modernas e a cloud ajudam a construir aplicações mais seguras, escaláveis e confiáveis no dia a dia.",
+      "url": "https://builder.aws.com/content/3D0YrbwOmGbD8Yro2WAaEaNnmzP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0ZAHgFzTFMtnDZwVVO0YJex1c/Post.webp",
+      "authorName": "Matheus Lazarotto",
+      "authorAlias": "matheuslzdev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cp7N9WnWqs1ZXrrA45AnX2Z4TK.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-29T00:00:23.837Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
       "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
@@ -174,74 +214,29 @@
       "publishedAt": "2026-04-28T20:24:42.704Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D04ZJmhHX4cDGGYikFcStergSu",
-      "title": "How Agentic AI is More than a Buzzword for Companies",
-      "description": "Agentic AI is more than a tech buzzword. From building study games to creating websites and apps, Samuel Quarles shares how college students can use agentic AI and AWS tools to move from ideas to execution faster.",
-      "url": "https://builder.aws.com/content/3D04ZJmhHX4cDGGYikFcStergSu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D06LFEtj74Z5daMa6WReLT68ZN/work.webp",
-      "authorName": "Samuel Quarles",
-      "authorAlias": "samqua",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cmd2WN4HoKfEyiZR69ZUipGmFI.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai-ml",
-        "agents",
-        "strands-agents"
-      ],
-      "publishedAt": "2026-04-28T20:04:09.238Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D0099F9Gm6bbzWFJBJbW1kdqfC",
-      "title": "Agentes de IA na AWS: Amazon Bedrock, Knowledge Bases e Agents do conceito à produção",
-      "description": "Entenda como o Amazon Bedrock, Knowledge Bases e Bedrock Agents formam a base de aplicações de IA generativa em produção, com implementação passo a passo, exemplos de código e análise de custos reais.",
-      "url": "https://builder.aws.com/content/3D0099F9Gm6bbzWFJBJbW1kdqfC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D04FC2AyUEwwTClqfIsgGYq22E/Mini.webp",
-      "authorName": "Ivisson Alves - LLMs • RAG • Multi-Agents",
-      "authorAlias": "ivipn",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8qtokMTlc8mNgzVCCYEgpbb3t.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock-agents",
-        "knowledge-bases-for-bedrock",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-04-28T19:46:11.488Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
     {
-      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
-      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
-      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
-      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
-      "authorName": "Maria Eduarda",
-      "authorAlias": "cloudmadu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzZ6Um9BJskfblWQxSn9uCejGw.webp",
+      "location": "Haryana, IN",
+      "lat": 29,
+      "lng": 76,
       "tags": [
-        "aws-builders",
-        "aws-community",
-        "aws-service-catalog",
-        "students"
+        "aideas-2025",
+        "social-impact",
+        "APJC"
       ],
-      "publishedAt": "2026-04-28T22:03:28.221Z",
-      "likesCount": 4,
-      "commentsCount": 3
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3420,
+      "commentsCount": 1912
     },
     {
       "id": "/content/3Czl9oh0a7E7ZAN9Hxj2lydsg8l",
@@ -265,46 +260,26 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
-      "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzsTULc2TwLvvEIaujGH7fU4iH/Desi.webp",
-      "authorName": "Emanuel Felipe",
-      "authorAlias": "omanuca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
-      "location": "RN, BR",
-      "lat": -5.6781175,
-      "lng": -36.4781776,
+      "id": "/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "title": "Como a AWS organiza seus serviços: um mapa mental para iniciantes",
+      "description": "Perdido diante de centenas de serviços AWS? Neste artigo você vai entender a lógica por trás da organização da AWS e sair com um mapa mental claro para navegar na nuvem com confiança.",
+      "url": "https://builder.aws.com/content/3D0JdzLtCPlLb1w2l0a6v2iAtXt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D0KXm6RhnaMQK1zk0x1WgKXuyo/Aws-.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8lr6tlXRooPdI8QSRDchGijx8.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
         "aws-builders",
-        "students",
-        "getting-started"
+        "aws-community",
+        "aws-service-catalog",
+        "students"
       ],
-      "publishedAt": "2026-04-28T18:11:55.555Z",
-      "likesCount": 14,
+      "publishedAt": "2026-04-28T22:03:28.221Z",
+      "likesCount": 4,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzZ6Um9BJskfblWQxSn9uCejGw.webp",
-      "location": "Haryana, IN",
-      "lat": 29,
-      "lng": 76,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3420,
-      "commentsCount": 1912
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -326,6 +301,27 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3529,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
+      "title": "Por que eu espalhei panfletos com uma capivara pela universidade?",
+      "description": "Uma reflexão sobre aprendizado em tecnologia, explorando como ir além da teoria por meio de prática, comunidade e iniciativas criativas dentro do AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3CzrUnh0MzKUM5i8olsYvJVtAQQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CzsTULc2TwLvvEIaujGH7fU4iH/Desi.webp",
+      "authorName": "Emanuel Felipe",
+      "authorAlias": "omanuca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
+      "location": "RN, BR",
+      "lat": -5.6781175,
+      "lng": -36.4781776,
+      "tags": [
+        "aws-builders",
+        "students",
+        "getting-started"
+      ],
+      "publishedAt": "2026-04-28T18:11:55.555Z",
+      "likesCount": 14,
+      "commentsCount": 3
     },
     {
       "id": "/content/3CzXepZoD9l3dQCzwCj4fzh3Hax",
@@ -370,27 +366,6 @@
       "commentsCount": 316
     },
     {
-      "id": "/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
-      "title": "A AWS não é um bicho de sete cabeças",
-      "description": "Abrir a AWS não é tipo abrir o Instagram; é tipo tentar pilotar um avião sem nunca ter visto um cockpit. Não é um guia técnico chato, é um papo real sobre o que eu gostaria que tivessem me avisado antes de eu sair clicando em tudo. Pra quem tá no zero e só quer entender o que está acontecendo.",
-      "url": "https://builder.aws.com/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D02swH7mO9aW7ITbdDKgUaoAj2/T-tu.webp",
-      "authorName": "Vitória Valença",
-      "authorAlias": "vitoriavalencac",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClrmoeTEbmGRwWnUkEgRDtaoLL.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
-      "tags": [
-        "aws-cloud9",
-        "aws-prescriptive-guidance",
-        "students"
-      ],
-      "publishedAt": "2026-04-28T19:35:34.511Z",
-      "likesCount": 4,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -414,23 +389,45 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
+      "id": "/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
+      "title": "A AWS não é um bicho de sete cabeças",
+      "description": "Abrir a AWS não é tipo abrir o Instagram; é tipo tentar pilotar um avião sem nunca ter visto um cockpit. Não é um guia técnico chato, é um papo real sobre o que eu gostaria que tivessem me avisado antes de eu sair clicando em tudo. Pra quem tá no zero e só quer entender o que está acontecendo.",
+      "url": "https://builder.aws.com/content/3CzpiCsGBQIZAxue9TLHp3UEkxy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D02swH7mO9aW7ITbdDKgUaoAj2/T-tu.webp",
+      "authorName": "Vitória Valença",
+      "authorAlias": "vitoriavalencac",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClrmoeTEbmGRwWnUkEgRDtaoLL.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
       "tags": [
-        "free-tier-projects"
+        "aws-cloud9",
+        "aws-prescriptive-guidance",
+        "students"
       ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
+      "publishedAt": "2026-04-28T19:35:34.511Z",
+      "likesCount": 4,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "advertising-marketing-industry",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 25,
-      "commentsCount": 12
+      "commentsCount": 24
     }
   ]
 }
