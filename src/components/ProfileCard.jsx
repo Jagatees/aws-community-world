@@ -4,7 +4,7 @@ const CATEGORY_LABELS = {
   heroes: 'Hero',
   'community-builders': 'Community Builder',
   'user-groups': 'User Group',
-  'cloud-clubs': 'Cloud Club',
+  'cloud-clubs': 'Student Builder Group',
 };
 
 function LoadingSpinner({ size = 16 }) {
@@ -177,7 +177,7 @@ function LedByMeta({ member, darkMode, compact = false }) {
           {leader.imageUrl ? (
             <LoadingAvatarImage
               src={leader.imageUrl}
-              alt={leader.name || 'Cloud Club leader'}
+              alt={leader.name || 'Student Builder Group leader'}
               className={`${avatarSize} rounded-full object-cover`}
               spinnerSize={14}
             />

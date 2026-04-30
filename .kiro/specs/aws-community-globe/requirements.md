@@ -2,7 +2,7 @@
 
 ## Overview
 
-An interactive 3D globe web application that visualises the global AWS Builder community — Heroes, Community Builders, User Groups, Cloud Clubs, and AWS news — on a real-time, explorable globe. Built with React + Vite, styled with Tailwind CSS and AWS brand tokens.
+An interactive 3D globe web application that visualises the global AWS Builder community — Heroes, Community Builders, User Groups, Student Builder Groups, and AWS news — on a real-time, explorable globe. Built with React + Vite, styled with Tailwind CSS and AWS brand tokens.
 
 ---
 
@@ -19,7 +19,7 @@ An interactive 3D globe web application that visualises the global AWS Builder c
 
 ### 2. Category Navigation
 
-- **2.1** A tab bar shall provide navigation between: Heroes, Community Builders, User Groups, Cloud Clubs, and News.
+- **2.1** A tab bar shall provide navigation between: Heroes, Community Builders, User Groups, Student Builder Groups, and News.
 - **2.2** Switching tabs shall clear the active member selection, tag filter, and country filter.
 - **2.3** The active tab shall be visually highlighted with an AWS Orange bottom border.
 
@@ -30,7 +30,7 @@ An interactive 3D globe web application that visualises the global AWS Builder c
   - Heroes → AWS Orange `#FF9900`
   - Community Builders → Green `#1A9C3E`
   - User Groups → AWS Blue `#00A1C9`
-  - Cloud Clubs → Red `#BF0816`
+  - Student Builder Groups → Red `#BF0816`
 - **3.3** Members sharing the same coordinates shall be clustered into a single larger marker.
 - **3.4** Clicking a marker shall open a profile card for that member or cluster.
 
@@ -39,14 +39,14 @@ An interactive 3D globe web application that visualises the global AWS Builder c
 - **4.1** The profile card shall display: avatar, name, category badge, location, and a link button.
 - **4.2** For Heroes, the card shall additionally show the hero type (e.g. "Serverless Hero") and a "View Profile" link to their AWS Builder page.
 - **4.3** For Community Builders, the card shall show their specialisation tag.
-- **4.4** For Cloud Clubs, the card shall show the club leader(s) with avatar(s) and a "Join" link.
+- **4.4** For Student Builder Groups, the card shall show the club leader(s) with avatar(s) and a "Join" link.
 - **4.5** For User Groups, the card shall show a "Join" link.
 - **4.6** When a cluster is clicked, the card shall show a scrollable list of all members at that location, each with avatar, name, hero type / tag, and location.
 - **4.7** The card shall close when the × button is clicked or when the user clicks outside it.
 
 ### 5. Country Filter
 
-- **5.1** A custom dropdown shall appear in the tab bar, next to the Cloud Clubs tab, listing all countries present in the active category.
+- **5.1** A custom dropdown shall appear in the tab bar, next to the Student Builder Groups tab, listing all countries present in the active category.
 - **5.2** Each country option shall display its flag emoji and full country name.
 - **5.3** Selecting a country shall filter markers to that country and fly the globe to the centroid of matching members.
 - **5.4** The dropdown shall render via a portal so it is never clipped by parent overflow containers.

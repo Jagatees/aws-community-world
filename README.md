@@ -2,7 +2,7 @@
 
 An interactive experience for discovering the AWS community around the world.
 
-This project helps people explore AWS Community Heroes, Community Builders, User Groups, and Cloud Clubs across countries and regions through a more visual and interactive map experience.
+This project helps people explore AWS Community Heroes, Community Builders, User Groups, and Student Builder Groups across countries and regions through a more visual and interactive map experience.
 
 ## Why I Built This
 
@@ -22,7 +22,7 @@ Whether someone wants to find a local AWS User Group, discover Community Builder
 ## What It Does
 
 - Browse AWS community members and groups through an interactive world experience
-- Explore AWS Community Heroes, Community Builders, User Groups, and Cloud Clubs
+- Explore AWS Community Heroes, Community Builders, User Groups, and Student Builder Groups
 - Filter by country and tag
 - Switch between multiple map experiences: Classic globe, Sleek globe, and Flat map
 - Open profile cards for people and communities

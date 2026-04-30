@@ -2,7 +2,7 @@
 
 ## Overview
 
-A single-page React + Vite application that renders an interactive 3D globe visualising the global AWS Builder community. Users can explore Heroes, Community Builders, User Groups, Cloud Clubs, and AWS news via tab navigation. Clicking a location marker opens a rich profile card. The app supports three globe styles, country/tag filtering, a news feed panel, dark/light mode, and social header links.
+A single-page React + Vite application that renders an interactive 3D globe visualising the global AWS Builder community. Users can explore Heroes, Community Builders, User Groups, Student Builder Groups, and AWS news via tab navigation. Clicking a location marker opens a rich profile card. The app supports three globe styles, country/tag filtering, a news feed panel, dark/light mode, and social header links.
 
 ---
 
@@ -76,9 +76,9 @@ Icon links (left to right): LinkedIn → AWS Builder article → Telegram → Gi
 ### `TabNav`
 Tab bar with five tabs + country dropdown.
 
-Tabs: Heroes | Community Builders | User Groups | Cloud Clubs | News
+Tabs: Heroes | Community Builders | User Groups | Student Builder Groups | News
 
-The `CountryDropdown` renders immediately after the Cloud Clubs tab, separated by a subtle divider. It is hidden when the News tab is active.
+The `CountryDropdown` renders immediately after the Student Builder Groups tab, separated by a subtle divider. It is hidden when the News tab is active.
 
 ---
 
@@ -125,7 +125,7 @@ Overlay card. Renders two views:
 - Location with 📍 prefix
 - Action button: "View Profile" / "Follow" / "Join"
 
-**CloudClubSingleView** — for Cloud Clubs:
+**CloudClubSingleView** — for Student Builder Groups:
 - Leader avatar stack (up to 2 overlapping avatars)
 - Club name, leader name(s), location
 - "Join" button inline
@@ -164,7 +164,7 @@ interface Member {
   heroType: string;            // heroes only
   builderType: string;         // community builders only
   specialization: string;      // community builders only
-  ledBy: { name: string; imageUrl: string }[];  // cloud clubs only
+  ledBy: { name: string; imageUrl: string }[];  // student builder groups only
 }
 
 interface NewsItem {
@@ -236,7 +236,7 @@ AWS Red:        #BF0816
 | Heroes | `#FF9900` |
 | Community Builders | `#1A9C3E` |
 | User Groups | `#00A1C9` |
-| Cloud Clubs | `#BF0816` |
+| Student Builder Groups | `#BF0816` |
 | News | `#A78BFA` |
 
 ### Profile Card

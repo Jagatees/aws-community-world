@@ -20,7 +20,7 @@ const CATEGORY_LABELS = {
   heroes: 'Heroes',
   'community-builders': 'Community Builders',
   'user-groups': 'User Groups',
-  'cloud-clubs': 'Cloud Clubs',
+  'cloud-clubs': 'Student Builder Groups',
 };
 
 const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));

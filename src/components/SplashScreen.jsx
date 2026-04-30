@@ -4,7 +4,7 @@ const STATS = [
   { label: 'Heroes', count: 263, color: '#FF9900' },
   { label: 'Community Builders', count: 2494, color: '#1A9C3E' },
   { label: 'User Groups', count: 608, color: '#00A1C9' },
-  { label: 'Cloud Clubs', count: 623, color: '#BF0816' },
+  { label: 'Student Builder Groups', count: 623, color: '#BF0816' },
 ];
 
 const TOTAL = 3988;

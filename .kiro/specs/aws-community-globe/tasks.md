@@ -12,7 +12,7 @@
   - `src/data/heroes.json` — real AWS Heroes with `image_url`, `hero_page_url`, `hero_type`, lat/lng
   - `src/data/community-builders.json` — real Community Builders with tags and coordinates
   - `src/data/user-groups.json` — real User Groups with `joinUrl` and coordinates
-  - `src/data/cloud-clubs.json` — real Cloud Clubs with `ledBy` leader array and coordinates
+  - `src/data/cloud-clubs.json` — real Student Builder Groups with `ledBy` leader array and coordinates
   - `src/data/news.json` — AWS Builder news items with coordinates
   - `src/hooks/useCategory.js` — loads + normalises JSON, in-memory cache, `{ members, loading, error }`
   - `src/hooks/useNews.js` — loads news data
@@ -29,9 +29,9 @@
   - Dark/light mode toggle button
 
 - [x] 5. Tab navigation (`src/components/TabNav.jsx`)
-  - Five tabs: Heroes, Community Builders, User Groups, Cloud Clubs, News
+  - Five tabs: Heroes, Community Builders, User Groups, Student Builder Groups, News
   - Active tab: AWS Orange bottom border, lighter background
-  - `CountryDropdown` rendered inline after Cloud Clubs tab
+  - `CountryDropdown` rendered inline after Student Builder Groups tab
   - Country filter hidden when News tab is active
 
 - [x] 6. Country filter (`src/components/CountryDropdown.jsx`)
@@ -83,7 +83,7 @@
   - [ ] 12.1 `useCategory` hook — load, error, loading states, normalisation
   - [ ] 12.2 `useAutoRotate` hook — rotation, pause on interaction, resume after 3s
   - [ ] 12.3 `TabNav` — tab switching, active state, country dropdown visibility
-  - [ ] 12.4 `ProfileCard` — single member, cluster list, cloud club view, close behaviour
+  - [ ] 12.4 `ProfileCard` — single member, cluster list, student builder group view, close behaviour
   - [ ] 12.5 `countryFlags` utility — flag emoji output, alias resolution, edge cases
 
 - [ ] 13. Enhancements (optional)

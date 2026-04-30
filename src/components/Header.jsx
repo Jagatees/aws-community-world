@@ -27,7 +27,7 @@ export default function Header({ darkMode, onToggleDark }) {
       <div className="flex-1" />
 
       <span className="text-xs hidden sm:block" style={{ color: muted }}>
-        AWS Cloud Club @ SIT created by Jagatees
+        AWS Student Builder Group @ SIT created by Jagatees
       </span>
 
       {/* LinkedIn link */}
