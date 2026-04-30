@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-30T08:46:44.442Z",
+  "updatedAt": "2026-04-30T09:42:06.096Z",
   "latest": [
+    {
+      "id": "/content/3AhUQwsagNYcNcTAGa7X9aqDUAD",
+      "title": "10 Best Practices to Secure MCP Servers",
+      "description": "This guide presents 10 best practices for securing MCP servers, with concrete examples, threat scenarios, and implementation guidance. Whether you are a security architect, a platform engineer, or a CISO evaluating your organization's agentic AI posture, these practices form the foundation of a defensible MCP deployment.",
+      "url": "https://builder.aws.com/content/3AhUQwsagNYcNcTAGa7X9aqDUAD",
+      "imageUrl": "",
+      "authorName": "Akram Al Sheikh",
+      "authorAlias": "akram1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qlUltHlvV6ug2NMsR1m0DtspQ.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-30T09:35:22.486Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D4NnDQ3jkK6QC9jWPuiFTICtFP",
       "title": "OpenAI GPT-5.5 Is Now on Amazon Bedrock",
@@ -19,7 +36,7 @@
         "generative-ai"
       ],
       "publishedAt": "2026-04-30T08:32:56.419Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -42,7 +59,7 @@
         "ai"
       ],
       "publishedAt": "2026-04-30T08:06:41.691Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -375,29 +392,6 @@
       "publishedAt": "2026-04-29T22:03:04.696Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Bl58QC80ISb84FaIxwuYeebYcD",
-      "title": "From Germany to Cameroon: One Trip, Every Hat, and a Room Full of Future Cloud Engineers",
-      "description": "When I stood before over 30 aspiring DevOps engineers in Cameroon, I saw something no slide deck could capture. I saw hunger. I saw curiosity. I saw a room full of young people who had already decided that their future would be built on cloud technology. They just needed someone to show them the path.  And it was one of the most fulfilling moments of my entire AWS Community Builder journey.",
-      "url": "https://builder.aws.com/content/3Bl58QC80ISb84FaIxwuYeebYcD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D32kRkTtpeR9Iehl5CFniRVzAC/2026.webp",
-      "authorName": "Endah Bongo-Awah",
-      "authorAlias": "endahba",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wOzIWVPjlreS7y0Bqs4N1aGfmG.webp",
-      "location": "Rhineland-Palatinate, DE",
-      "lat": 49.9531599,
-      "lng": 7.310646,
-      "tags": [
-        "aws-community-builders",
-        "devops",
-        "aws-cloud-clubs",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-04-29T21:25:01.076Z",
-      "likesCount": 2,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -484,31 +478,8 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 15,
+      "likesCount": 16,
       "commentsCount": 8
-    },
-    {
-      "id": "/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
-      "title": "Minha segunda semana com o AWS Builder Center: explorando IA Generativa e novas possibilidades.",
-      "description": "Reflexões sobre aplicações práticas de IA generativa, destacando aprendizados e novas possibilidades dentro da tecnologia.",
-      "url": "https://builder.aws.com/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
-      "imageUrl": "",
-      "authorName": "Juliana Freire de Oliveira",
-      "authorAlias": "julianaintech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai",
-        "all-builders-welcome",
-        "ai-ml",
-        "aws-academy",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-29T23:57:50.156Z",
-      "likesCount": 7,
-      "commentsCount": 3
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -532,6 +503,29 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1928,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
+      "title": "Minha segunda semana com o AWS Builder Center: explorando IA Generativa e novas possibilidades.",
+      "description": "Reflexões sobre aplicações práticas de IA generativa, destacando aprendizados e novas possibilidades dentro da tecnologia.",
+      "url": "https://builder.aws.com/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
+      "imageUrl": "",
+      "authorName": "Juliana Freire de Oliveira",
+      "authorAlias": "julianaintech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai",
+        "all-builders-welcome",
+        "ai-ml",
+        "aws-academy",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-29T23:57:50.156Z",
+      "likesCount": 7,
+      "commentsCount": 3
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
