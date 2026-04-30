@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-30T12:32:14.806Z",
+  "updatedAt": "2026-04-30T13:34:51.467Z",
   "latest": [
+    {
+      "id": "/content/3D4yiMngw4o6Ueo9X1EgpmELYrc",
+      "title": "CloudFront の distribution 設定をコードで一括更新する — cloudfront-updator",
+      "description": "CloudFrontのDistributionを一括更新するバッチを作るためのライブラリをnodejsで作りました。",
+      "url": "https://builder.aws.com/content/3D4yiMngw4o6Ueo9X1EgpmELYrc",
+      "imageUrl": "",
+      "authorName": "Hidetaka Okamoto",
+      "authorAlias": "hidetaka",
+      "authorAvatarUrl": "",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "open-source",
+        "developer-tools"
+      ],
+      "publishedAt": "2026-04-30T13:30:58.391Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D4x1ht99miRbzsIEqwj65jcqrY",
+      "title": "AWS na prática: por que aprender computação em nuvem pode mudar sua trajetória",
+      "description": "Uma visão sobre como a computação em nuvem, especialmente com a AWS, pode impulsionar sua carreira, destacando aplicações práticas, oportunidades no mercado e a importância de aprender tecnologia de forma acessível e estratégica.",
+      "url": "https://builder.aws.com/content/3D4x1ht99miRbzsIEqwj65jcqrY",
+      "imageUrl": "",
+      "authorName": "Adailton Keven Guimarães",
+      "authorAlias": "kevinguimaraes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5zriErfFmn9DLKgK1jXMQwLzL.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "aws-cloud9",
+        "aws-certification",
+        "aws-api",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-04-30T13:19:24.688Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
       "title": "Eu esperava complexidade. Encontrei pessoas.",
@@ -19,7 +61,7 @@
         "web-development"
       ],
       "publishedAt": "2026-04-30T11:35:59.674Z",
-      "likesCount": 3,
+      "likesCount": 5,
       "commentsCount": 2
     },
     {
@@ -65,8 +107,8 @@
         "kiro"
       ],
       "publishedAt": "2026-04-30T11:20:27.052Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3D4i8jcQKg85DCxBeohifvrJsEo",
@@ -162,7 +204,7 @@
         "ai"
       ],
       "publishedAt": "2026-04-30T08:06:41.691Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -362,52 +404,6 @@
       "publishedAt": "2026-04-30T02:04:42.716Z",
       "likesCount": 9,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/32SGih4AQIvJXsNUXgrRaHXcYbV",
-      "title": "1000 Formas para entender la nube",
-      "description": "En este artículo se compartirán formas  para aprender sobre la nube que probablemente desconocías, diferentes formatos, plataformas e incluso juegos. ¡Toma la que más te guste y adéntrate sin miedo! ",
-      "url": "https://builder.aws.com/content/32SGih4AQIvJXsNUXgrRaHXcYbV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3a35DnsK94ev6LIsXKhpBVsfb/Scre.webp",
-      "authorName": "Joselyn Lagunas",
-      "authorAlias": "shel",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCv0m1xQWFdHfHOOWPW91YxhIN.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "cloud-concepts",
-        "cloud-practitioner",
-        "cloud-quest",
-        "aws-cloud-clubs",
-        "aws-academy"
-      ],
-      "publishedAt": "2026-04-30T01:54:28.636Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3D3MDYZtVyDOgtRvTUhGdSmbNyY",
-      "title": "Palavras que me confundiam na nuvem, e o que elas realmente significam.",
-      "description": "Aqui eu falo sobre quando entrei no AWS Builder Center e me senti perdido em meio aos jargões técnicos.",
-      "url": "https://builder.aws.com/content/3D3MDYZtVyDOgtRvTUhGdSmbNyY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3Zo2OoRCRhEIyXc8mZs4HvJfP/capa.webp",
-      "authorName": "Gabriel Sales Machado de Souza",
-      "authorAlias": "salles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CrNtEWyZoFVowXCED8jDYaNhcA.webp",
-      "location": "MS, BR",
-      "lat": -19.5852564,
-      "lng": -54.4794731,
-      "tags": [
-        "aws-academy",
-        "aws-ambassador",
-        "students",
-        "aws-builders",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-30T01:27:42.524Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -429,7 +425,7 @@
         "web-development"
       ],
       "publishedAt": "2026-04-30T11:35:59.674Z",
-      "likesCount": 3,
+      "likesCount": 5,
       "commentsCount": 2
     },
     {
@@ -515,7 +511,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 16,
+      "likesCount": 17,
       "commentsCount": 8
     },
     {
@@ -542,6 +538,29 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
+      "title": "Minha segunda semana com o AWS Builder Center: explorando IA Generativa e novas possibilidades.",
+      "description": "Reflexões sobre aplicações práticas de IA generativa, destacando aprendizados e novas possibilidades dentro da tecnologia.",
+      "url": "https://builder.aws.com/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
+      "imageUrl": "",
+      "authorName": "Juliana Freire de Oliveira",
+      "authorAlias": "julianaintech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai",
+        "all-builders-welcome",
+        "ai-ml",
+        "aws-academy",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-29T23:57:50.156Z",
+      "likesCount": 9,
+      "commentsCount": 4
+    },
+    {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
       "title": "🌩️ Getting Started with AWS Builder Center",
       "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
@@ -563,29 +582,6 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 21,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
-      "title": "Minha segunda semana com o AWS Builder Center: explorando IA Generativa e novas possibilidades.",
-      "description": "Reflexões sobre aplicações práticas de IA generativa, destacando aprendizados e novas possibilidades dentro da tecnologia.",
-      "url": "https://builder.aws.com/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
-      "imageUrl": "",
-      "authorName": "Juliana Freire de Oliveira",
-      "authorAlias": "julianaintech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai",
-        "all-builders-welcome",
-        "ai-ml",
-        "aws-academy",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-29T23:57:50.156Z",
-      "likesCount": 7,
-      "commentsCount": 3
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -629,7 +625,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T17:05:00.035Z",
-      "likesCount": 11,
+      "likesCount": 12,
       "commentsCount": 4
     }
   ]
