@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-04-30T11:31:49.499Z",
+  "updatedAt": "2026-04-30T12:32:14.806Z",
   "latest": [
+    {
+      "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
+      "title": "Eu esperava complexidade. Encontrei pessoas.",
+      "description": "Entrei no AWS Builder Center esperando documentação pesada e interface confusa. O que encontrei foi uma comunidade ativa de estudantes e devs em estágios completamente diferentes — todos no mesmo espaço, sem hierarquia não escrita. Esse artigo é sobre essa surpresa.",
+      "url": "https://builder.aws.com/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
+      "imageUrl": "",
+      "authorName": "Arthur Ramos",
+      "authorAlias": "arthurramos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8EeAbHx8TzXx7Dra6CCF1Onvd.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "learn",
+        "web-development"
+      ],
+      "publishedAt": "2026-04-30T11:35:59.674Z",
+      "likesCount": 3,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3D4S3gLlwuTm5tOUyuh1yCpc52I",
+      "title": "5 AWS Services every college student should know",
+      "description": "A beginner-friendly overview of essential AWS services that help students build, deploy, and scale applications in the cloud. Learn how these core tools can strengthen your practical skills and prepare you for real-world tech opportunities.",
+      "url": "https://builder.aws.com/content/3D4S3gLlwuTm5tOUyuh1yCpc52I",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D4Uj1nZ5hPkhLAdyksk50cjndw/unam.webp",
+      "authorName": "Velkuru Goutham",
+      "authorAlias": "velkurugoutham",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-ec2",
+        "amazon-s3",
+        "aws-lambda",
+        "amazon-rds",
+        "amazon-cloudfront"
+      ],
+      "publishedAt": "2026-04-30T11:35:48.680Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/32IBb29euv4sdtxYr4XcfC9ECFF",
       "title": "How I Built a Full Serverless Platform in 72 Hours Using Kiro — Without Writing Code",
@@ -257,7 +301,7 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-04-30T03:08:43.545Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -364,30 +408,30 @@
       "publishedAt": "2026-04-30T01:27:42.524Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
+    }
+  ],
+  "trending": [
     {
-      "id": "/content/3D3IegTlt4mVGfb8cn28uNL4lNB",
-      "title": "🚀 O Guia Definitivo para Decolar com AWS EC2!",
-      "description": "Do zero absoluto até a sua primeira máquina virtual rodando na infraestrutura da Amazon.",
-      "url": "https://builder.aws.com/content/3D3IegTlt4mVGfb8cn28uNL4lNB",
+      "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
+      "title": "Eu esperava complexidade. Encontrei pessoas.",
+      "description": "Entrei no AWS Builder Center esperando documentação pesada e interface confusa. O que encontrei foi uma comunidade ativa de estudantes e devs em estágios completamente diferentes — todos no mesmo espaço, sem hierarquia não escrita. Esse artigo é sobre essa surpresa.",
+      "url": "https://builder.aws.com/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
       "imageUrl": "",
-      "authorName": "Rober Araujo Trindade",
-      "authorAlias": "rober122",
-      "authorAvatarUrl": "",
+      "authorName": "Arthur Ramos",
+      "authorAlias": "arthurramos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8EeAbHx8TzXx7Dra6CCF1Onvd.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "aws-academy",
-        "aws-ambassador",
-        "amazon-ec2"
+        "students",
+        "learn",
+        "web-development"
       ],
-      "publishedAt": "2026-04-30T00:04:08.323Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    }
-  ],
-  "trending": [
+      "publishedAt": "2026-04-30T11:35:59.674Z",
+      "likesCount": 3,
+      "commentsCount": 2
+    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -544,29 +588,6 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
-      "title": "Os melhores artigos que li essa semana no AWS Builder Center",
-      "description": "Minhas primeiras semanas no Builder Center foram marcadas com muitas leituras interessantes. Decidi então, compartilhar com a comunidade os melhores artigos que li! ",
-      "url": "https://builder.aws.com/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
-      "imageUrl": "",
-      "authorName": "Libarino",
-      "authorAlias": "libarino",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjLRayZ00c7HTWmMzsNjvz1WhD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "artificial-intelligence",
-        "aws-cloud-clubs",
-        "students",
-        "aws-builders",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-29T17:05:00.035Z",
-      "likesCount": 11,
-      "commentsCount": 4
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -589,24 +610,27 @@
       "commentsCount": 325
     },
     {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
+      "title": "Os melhores artigos que li essa semana no AWS Builder Center",
+      "description": "Minhas primeiras semanas no Builder Center foram marcadas com muitas leituras interessantes. Decidi então, compartilhar com a comunidade os melhores artigos que li! ",
+      "url": "https://builder.aws.com/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
+      "imageUrl": "",
+      "authorName": "Libarino",
+      "authorAlias": "libarino",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjLRayZ00c7HTWmMzsNjvz1WhD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "advertising-marketing-industry",
-        "students"
+        "artificial-intelligence",
+        "aws-cloud-clubs",
+        "students",
+        "aws-builders",
+        "aws-community"
       ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 30,
-      "commentsCount": 25
+      "publishedAt": "2026-04-29T17:05:00.035Z",
+      "likesCount": 11,
+      "commentsCount": 4
     }
   ]
 }
