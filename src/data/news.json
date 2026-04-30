@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-04-30T07:46:22.930Z",
+  "updatedAt": "2026-04-30T08:46:44.442Z",
   "latest": [
+    {
+      "id": "/content/3D4NnDQ3jkK6QC9jWPuiFTICtFP",
+      "title": "OpenAI GPT-5.5 Is Now on Amazon Bedrock",
+      "description": "AWS and OpenAI just partnered. GPT-5.5 and Codex are coming to Bedrock — same APIs, same security, same billing. Here's what changes.",
+      "url": "https://builder.aws.com/content/3D4NnDQ3jkK6QC9jWPuiFTICtFP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D4OXgJWNSRoSwEjq8xCTF85Oj0/aws5.webp",
+      "authorName": "meghana rajagopal",
+      "authorAlias": "meghanarajagopal",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cm0nLn6wk71SoeU4k6NpqdEhZo.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [
+        "amazon-bedrock",
+        "openai-gpt",
+        "generative-ai"
+      ],
+      "publishedAt": "2026-04-30T08:32:56.419Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D4KKpRf2w8t59kT5jtPTgQBovo",
+      "title": "I got paged at 3 AM and the alert said \"task stopped.\"\nThat was it. No reason. No context. Just vibes.",
+      "description": "This project is an AWS Lambda-based ECS notifier that keeps an eye on container services and sends real-time updates to Google Chat. It alerts when deployments succeed or fail, tasks stop unexpectedly, services recover, or scaling looks unusual. It is a small DevOps automation, but it helps reduce manual checks and gives quick visibility into what is happening inside ECS.\n",
+      "url": "https://builder.aws.com/content/3D4KKpRf2w8t59kT5jtPTgQBovo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D4LEqosKYCaJiv8fxF8KpkCB2X/Scre.webp",
+      "authorName": "MOJAHID-UL HAQUE (Δ𝓓𝔦𝐋)",
+      "authorAlias": "mojahid",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D49WcfJsZ0PyDGgevVxWQmzhgw.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-ecs",
+        "aws-lambda",
+        "amazon-eventbridge",
+        "aws-fargate",
+        "ai"
+      ],
+      "publishedAt": "2026-04-30T08:06:41.691Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D447iHSl69hxLAkj3z24OXxRIs",
       "title": "Migrating Unmanaged IAM Resources into Terraform Modules Using tfquery",
@@ -196,8 +240,8 @@
         "students"
       ],
       "publishedAt": "2026-04-30T02:04:42.716Z",
-      "likesCount": 7,
-      "commentsCount": 3
+      "likesCount": 8,
+      "commentsCount": 4
     },
     {
       "id": "/content/32SGih4AQIvJXsNUXgrRaHXcYbV",
@@ -308,7 +352,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-29T23:57:50.156Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 3
     },
     {
@@ -354,44 +398,6 @@
       "publishedAt": "2026-04-29T21:25:01.076Z",
       "likesCount": 2,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3D3341SWrw6DQKk29EK31T5EtZh",
-      "title": "Do zero em cloud à primeira entrevista técnica: como usei recursos gratuitos da AWS",
-      "description": "Aqui compartilho como saí do zero em cloud até minha primeira entrevista técnica usando apenas recursos gratuitos da AWS, com foco em trilhas de estudo e pequenos projetos.",
-      "url": "https://builder.aws.com/content/3D3341SWrw6DQKk29EK31T5EtZh",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D341ciCuxI615UDF7SGrTIvP5L/Purp.webp",
-      "authorName": "Brenda Bren",
-      "authorAlias": "brenner00",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CaGCO3Ma0lNAbW3OTZ5GS1dQnZ.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
-      "tags": [
-        "career",
-        "aws-ambassador",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-29T21:19:39.915Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D33Enao2umOgf3VcHrUhFoM8K3",
-      "title": "🚀 Começando do Zero na AWS: Meu Primeiro Passo no Mundo Cloud",
-      "description": "Se você está entrando agora no mundo da tecnologia, provavelmente já ouviu falar da Amazon Web Services (AWS). Mas afinal, por onde começar?\n\nEssa foi exatamente a pergunta que eu me fiz quando decidi aprender sobre computação em nuvem.",
-      "url": "https://builder.aws.com/content/3D33Enao2umOgf3VcHrUhFoM8K3",
-      "imageUrl": "",
-      "authorName": "Henry Medeiros da Silveira Monteiro",
-      "authorAlias": "henrymedeiros",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-29T21:10:33.869Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -455,7 +461,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2845,
+      "likesCount": 2846,
       "commentsCount": 318
     },
     {
@@ -478,7 +484,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 14,
+      "likesCount": 15,
       "commentsCount": 8
     },
     {
@@ -501,7 +507,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-04-29T23:57:50.156Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 3
     },
     {
@@ -524,7 +530,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1927,
+      "likesCount": 1928,
       "commentsCount": 269
     },
     {
@@ -547,7 +553,7 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 18,
+      "likesCount": 20,
       "commentsCount": 2
     },
     {
@@ -570,7 +576,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-04-29T17:05:00.035Z",
-      "likesCount": 10,
+      "likesCount": 11,
       "commentsCount": 4
     },
     {
@@ -592,7 +598,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1418,
+      "likesCount": 1419,
       "commentsCount": 325
     },
     {
@@ -612,7 +618,7 @@
         "students"
       ],
       "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 28,
+      "likesCount": 30,
       "commentsCount": 25
     }
   ]
