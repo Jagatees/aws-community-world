@@ -1,6 +1,71 @@
 {
-  "updatedAt": "2026-04-30T19:31:44.485Z",
+  "updatedAt": "2026-04-30T20:25:01.825Z",
   "latest": [
+    {
+      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
+      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
+      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-30T20:13:50.660Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
+      "title": "Minha jornada inicial com AWS: aprendizados, desafios e descobertas ☁️",
+      "description": "O que aprendi nas duas semanas utilizando o AWS Builder Center e como isso pode influenciar seu desenvolvimento profissional.",
+      "url": "https://builder.aws.com/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5hOuxgRpR0ntBWGtdsqfDDPsd/foto.webp",
+      "authorName": "Alice Barroso",
+      "authorAlias": "alicevbarroso",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "amazon-s3",
+        "aws-ambassador",
+        "aws-academy",
+        "amazon-ec2",
+        "amazon-cloudfront"
+      ],
+      "publishedAt": "2026-04-30T19:42:36.065Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
+      "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
+      "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
+      "url": "https://builder.aws.com/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D530AGjHQWz0By3PD8XHQbAMAu/Bann.webp",
+      "authorName": "Pedro Cardoso",
+      "authorAlias": "printfpedro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwWhW84y4gmNGAxVx4SLIrZKM0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "aws-ambassador",
+        "aws-builders",
+        "aws-cloud-clubs",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-30T19:34:21.906Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3D5SFGOVkHevIWNPVSIpv3nn8sg",
       "title": "Stop Writing Runbooks. Start Building Self-Healing Systems.",
@@ -136,68 +201,32 @@
       "publishedAt": "2026-04-30T16:07:33.096Z",
       "likesCount": 4,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3D5HLPTWkX8UTs54xvV7r0NHla2",
-      "title": "Reference Architecture: Claude Code on Amazon Bedrock",
-      "description": "Reference architecture for deploying Claude Code with Amazon Bedrock in enterprise environments. Covers identity federation (Okta/Entra ID), MDM-enforced settings, per-user cost attribution via CUR 2.0, prompt caching, compliance logging, and developer productivity metrics via OpenTelemetry. Built on the open-source guidance-for-claude-code-with-amazon-bedrock solution.",
-      "url": "https://builder.aws.com/content/3D5HLPTWkX8UTs54xvV7r0NHla2",
-      "imageUrl": "",
-      "authorName": "Aidin Khosrowshahi",
-      "authorAlias": "kaidin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ynHLXPvhY5096ZDTU0tMiDh2tH.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-04-30T16:06:50.607Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D57H3YWsIzooKSspA2ItlWsw5L",
-      "title": "How Millions Watch IPL Without Crashing Apps, And How You Can Learn the Same Tech",
-      "description": "The AWS Builder Center lets students explore real cloud technology hands-on with free, risk-free environments and guided workshops.\nIt’s a simple way to understand how platforms like Amazon Web Services power massive real-time experiences like IPL streaming.",
-      "url": "https://builder.aws.com/content/3D57H3YWsIzooKSspA2ItlWsw5L",
-      "imageUrl": "",
-      "authorName": "Shreya Sherikar ",
-      "authorAlias": "shreysherikar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36orkea7dXG61kQxpAuIS7hJoPh.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-04-30T15:54:15.809Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D582FnSMkYWMNRwaVFokwQgUJa",
-      "title": "Um guia prático no AWS Builder Center",
-      "description": "Entrou no AWS Builder Center e está perdido? Ao decorrer desse artigo, vou te mostrar como você pode aproveitar tudo que essa plataforma proporciona.",
-      "url": "https://builder.aws.com/content/3D582FnSMkYWMNRwaVFokwQgUJa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5C4PRZ7n0bXuXqRgLLop75rqh/-AWS.webp",
-      "authorName": "Monick Evelyn",
-      "authorAlias": "monick",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C92wo9FzPfR5sICJN3ah3Ijimi.webp",
-      "location": "PB, BR",
-      "lat": -7.1219366,
-      "lng": -36.7246845,
-      "tags": [
-        "aws-builders",
-        "builder-center",
-        "students",
-        "aws-community-builders",
-        "all-builders-welcome"
-      ],
-      "publishedAt": "2026-04-30T15:36:39.945Z",
-      "likesCount": 1,
-      "commentsCount": 1
     }
   ],
   "trending": [
+    {
+      "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
+      "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
+      "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
+      "url": "https://builder.aws.com/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D530AGjHQWz0By3PD8XHQbAMAu/Bann.webp",
+      "authorName": "Pedro Cardoso",
+      "authorAlias": "printfpedro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwWhW84y4gmNGAxVx4SLIrZKM0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "aws-ambassador",
+        "aws-builders",
+        "aws-cloud-clubs",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-30T19:34:21.906Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -238,7 +267,7 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3433,
-      "commentsCount": 1917
+      "commentsCount": 1918
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -283,40 +312,6 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3D52rxAZuhJYbcuDWtywvNp0F4Z",
-      "title": "Do PET para a comunidade acadêmica: Como estruturamos o PET Interview para vencer o medo do Live Coding",
-      "description": "A trajetória do PET Interview - um grupo de estudos criado por mim dentro do Programa de Educação Tutorial de Engenharia de Computação na Universidade Federal do Ceará (UFC) - Campus Sobral",
-      "url": "https://builder.aws.com/content/3D52rxAZuhJYbcuDWtywvNp0F4Z",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5HrQNBzvdVfQwfcRl5MEtHM1c/PET-.webp",
-      "authorName": "Vitória Emilly",
-      "authorAlias": "vitsantos",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-30T16:07:33.096Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3D5C3CYYkdIvYM7phXVr4nGI44q",
-      "title": "AWS Builder Center: Como o Ecossistema Está Redefinindo o Aprendizado em Cloud Computing",
-      "description": "  Começar na área de tecnologia pode parecer desafiador, especialmente quando o assunto é computação em nuvem. Com tantos serviços, conceitos e possibilidades, é comum não saber por onde iniciar. É exatamente nesse cenário que surge o AWS Builder Center, uma plataforma pensada para guiar desenvolvedores, estudantes e entusiastas desde os primeiros passos até níveis mais avançados de construção na nuvem.",
-      "url": "https://builder.aws.com/content/3D5C3CYYkdIvYM7phXVr4nGI44q",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5Dqba6lAMsIDIyLrktevLmd0l/AWS-.webp",
-      "authorName": "Gabriel Christino",
-      "authorAlias": "christino",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjDMwSo4YWxfzfcVArAqTG67GY.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-30T16:23:23.992Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -340,23 +335,36 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3D551pdSd2HAlRtc0AbMNsQXiZf",
-      "title": "Como tirar e estudar para as certificações de forma gratuita?",
-      "description": "Certificações AWS são formas para provar seu conhecimento sobre a Nuvem, mas, infelizmente, elas tem um preço, não somente para estudos como o preço para realiza-las. Neste artigo, te ensino como fazer tudo isso de forma 100% gratuita.",
-      "url": "https://builder.aws.com/content/3D551pdSd2HAlRtc0AbMNsQXiZf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5DBWhW054m0rWIBVqkXyy2JNE/AWS-.webp",
-      "authorName": "Lucca",
-      "authorAlias": "luccalmo629",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzEgoqjzT5QsRsxQA0Ik7vv1AX.webp",
+      "id": "/content/3D5C3CYYkdIvYM7phXVr4nGI44q",
+      "title": "AWS Builder Center: Como o Ecossistema Está Redefinindo o Aprendizado em Cloud Computing",
+      "description": "  Começar na área de tecnologia pode parecer desafiador, especialmente quando o assunto é computação em nuvem. Com tantos serviços, conceitos e possibilidades, é comum não saber por onde iniciar. É exatamente nesse cenário que surge o AWS Builder Center, uma plataforma pensada para guiar desenvolvedores, estudantes e entusiastas desde os primeiros passos até níveis mais avançados de construção na nuvem.",
+      "url": "https://builder.aws.com/content/3D5C3CYYkdIvYM7phXVr4nGI44q",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5Dqba6lAMsIDIyLrktevLmd0l/AWS-.webp",
+      "authorName": "Gabriel Christino",
+      "authorAlias": "christino",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjDMwSo4YWxfzfcVArAqTG67GY.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
-      "tags": [
-        "aws-certification",
-        "training-and-certification",
-        "students"
-      ],
-      "publishedAt": "2026-04-30T15:29:17.741Z",
+      "tags": [],
+      "publishedAt": "2026-04-30T16:23:23.992Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3D52rxAZuhJYbcuDWtywvNp0F4Z",
+      "title": "Do PET para a comunidade acadêmica: Como estruturamos o PET Interview para vencer o medo do Live Coding",
+      "description": "A trajetória do PET Interview - um grupo de estudos criado por mim dentro do Programa de Educação Tutorial de Engenharia de Computação na Universidade Federal do Ceará (UFC) - Campus Sobral",
+      "url": "https://builder.aws.com/content/3D52rxAZuhJYbcuDWtywvNp0F4Z",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5HrQNBzvdVfQwfcRl5MEtHM1c/PET-.webp",
+      "authorName": "Vitória Emilly",
+      "authorAlias": "vitsantos",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-30T16:07:33.096Z",
       "likesCount": 4,
       "commentsCount": 1
     },
@@ -384,27 +392,25 @@
       "commentsCount": 8
     },
     {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
+      "id": "/content/3D551pdSd2HAlRtc0AbMNsQXiZf",
+      "title": "Como tirar e estudar para as certificações de forma gratuita?",
+      "description": "Certificações AWS são formas para provar seu conhecimento sobre a Nuvem, mas, infelizmente, elas tem um preço, não somente para estudos como o preço para realiza-las. Neste artigo, te ensino como fazer tudo isso de forma 100% gratuita.",
+      "url": "https://builder.aws.com/content/3D551pdSd2HAlRtc0AbMNsQXiZf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5DBWhW054m0rWIBVqkXyy2JNE/AWS-.webp",
+      "authorName": "Lucca",
+      "authorAlias": "luccalmo629",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzEgoqjzT5QsRsxQA0Ik7vv1AX.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
+        "aws-certification",
+        "training-and-certification",
+        "students"
       ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 26,
-      "commentsCount": 3
+      "publishedAt": "2026-04-30T15:29:17.741Z",
+      "likesCount": 4,
+      "commentsCount": 1
     }
   ]
 }
