@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-30T09:42:06.096Z",
+  "updatedAt": "2026-04-30T10:35:29.411Z",
   "latest": [
+    {
+      "id": "/content/3D2ZWgg7QLq8cv4PcatEbrP9IJD",
+      "title": "Resilience is not availability: a vocabulary for cloud network design",
+      "description": "Highly available is not resilient, and resilient is not disaster-recoverable. This article builds a precise vocabulary for cloud network design — anchored in the 2017 S3 us-east-1 incident and the 2025 DORA requirements, grounded in three concrete AWS patterns (Multi-AZ, cells with ARC, Aurora Global Database), and closing with a three-question architecture test you can run on any diagram in under a minute.",
+      "url": "https://builder.aws.com/content/3D2ZWgg7QLq8cv4PcatEbrP9IJD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D4cguIH15q887Amyu5g7hWPU96/arti.webp",
+      "authorName": "Cristian",
+      "authorAlias": "criscrit",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2f8p5NTa9BXO2qv8Tfo6DjZXF0K.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-30T10:33:08.888Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3AhUQwsagNYcNcTAGa7X9aqDUAD",
       "title": "10 Best Practices to Secure MCP Servers",
@@ -158,8 +175,8 @@
         "community"
       ],
       "publishedAt": "2026-04-30T04:40:41.324Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3D32nbi5KtqemFN6jrjCQtyLrNs",
@@ -257,7 +274,7 @@
         "students"
       ],
       "publishedAt": "2026-04-30T02:04:42.716Z",
-      "likesCount": 8,
+      "likesCount": 9,
       "commentsCount": 4
     },
     {
@@ -371,27 +388,6 @@
       "publishedAt": "2026-04-29T23:57:50.156Z",
       "likesCount": 7,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3ClvP7sGzlxRepejzSZbrypPsIL",
-      "title": "Minha primeira semana como Líder Estudantil Builder AWS: o que eu aprendi",
-      "description": "Sou aluno de engenharia na UTFPR de Ponta Grossa. Antes do programa, eu era a mesma pessoa que entrava no Bloco de Engenharia carregando café e a mesma dúvida silenciosa de muito colega: \"o que eu estudo aqui dentro vira trabalho de verdade lá fora?\".\nEu já tinha ouvido falar de AWS, mas pra mim era uma palavra distante, do mundo da empresa grande. Não era pra estudante. Pelo menos era assim que eu enxergava.",
-      "url": "https://builder.aws.com/content/3ClvP7sGzlxRepejzSZbrypPsIL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3A1x6UpI0kShNZEub5Aab9GVS/bann.webp",
-      "authorName": "Alfeu Valente",
-      "authorAlias": "feuvalente",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUOO4gnjWZft1kSpTNj4EuO0Sq.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-29T22:03:04.696Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -505,6 +501,29 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "title": "🌩️ Getting Started with AWS Builder Center",
+      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
+      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
+      "authorName": "G Monish Reddy",
+      "authorAlias": "technicalmonish",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "getting-started",
+        "students",
+        "learn",
+        "builder-center",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-04-29T13:07:42.542Z",
+      "likesCount": 21,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
       "title": "Minha segunda semana com o AWS Builder Center: explorando IA Generativa e novas possibilidades.",
       "description": "Reflexões sobre aplicações práticas de IA generativa, destacando aprendizados e novas possibilidades dentro da tecnologia.",
@@ -526,29 +545,6 @@
       "publishedAt": "2026-04-29T23:57:50.156Z",
       "likesCount": 7,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 20,
-      "commentsCount": 2
     },
     {
       "id": "/content/3CzPlSn7vUmIBiZ2c2VMCgclX34",
@@ -592,7 +588,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1419,
+      "likesCount": 1420,
       "commentsCount": 325
     },
     {
