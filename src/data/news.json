@@ -1,6 +1,44 @@
 {
-  "updatedAt": "2026-04-30T05:07:59.780Z",
+  "updatedAt": "2026-04-30T06:52:46.778Z",
   "latest": [
+    {
+      "id": "/content/3Cv0iSfPJsNB1bJ9b8IlJjQk6bb",
+      "title": "From \"Cloud-Curious\" to \"Cloud-Capable\": 5 Advanced AWS Services to Scale Your Projects",
+      "description": "This article provides a roadmap for students to transition from foundational cloud concepts to professional-grade architecture. While many beginners focus on basic compute and storage, this guide highlights five advanced AWS services—Amplify, SageMaker, AppSync, CloudFront, and CloudFormation—that enable the creation of automated, scalable, and intelligent applications.",
+      "url": "https://builder.aws.com/content/3Cv0iSfPJsNB1bJ9b8IlJjQk6bb",
+      "imageUrl": "",
+      "authorName": "Shreyas S V",
+      "authorAlias": "shreyasvav",
+      "authorAvatarUrl": "",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [],
+      "publishedAt": "2026-04-30T05:53:07.730Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D3ykjUpOR36AkIQSGzGXnQvd5M",
+      "title": "Amazon EC2: Scalable Virtual Computing in the Cloud",
+      "description": "Amazon EC2 (Elastic Compute Cloud) is a cloud computing service that provides on-demand virtual servers, allowing users to run applications without managing physical hardware. It offers flexible resource customization, scalability, and a pay-as-you-go pricing model for efficient and cost-effective computing.\n",
+      "url": "https://builder.aws.com/content/3D3ykjUpOR36AkIQSGzGXnQvd5M",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D40WtA1Lb1j2SFDWbJv4bLmGP1/Scre.webp",
+      "authorName": "Aditya Singh",
+      "authorAlias": "adityapranu1",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-ec2",
+        "aws-cloud-clubs",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-30T05:19:16.210Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D3p8KZOrJrSIqlJ75d7aOZRNcf",
       "title": "AWS Badge-Dex: La guía casi completa para 2026",
@@ -141,7 +179,7 @@
         "students"
       ],
       "publishedAt": "2026-04-30T02:04:42.716Z",
-      "likesCount": 4,
+      "likesCount": 6,
       "commentsCount": 2
     },
     {
@@ -166,50 +204,6 @@
       "publishedAt": "2026-04-30T01:54:28.636Z",
       "likesCount": 1,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3D3MDYZtVyDOgtRvTUhGdSmbNyY",
-      "title": "Palavras que me confundiam na nuvem, e o que elas realmente significam.",
-      "description": "Aqui eu falo sobre quando entrei no AWS Builder Center e me senti perdido em meio aos jargões técnicos.",
-      "url": "https://builder.aws.com/content/3D3MDYZtVyDOgtRvTUhGdSmbNyY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3Zo2OoRCRhEIyXc8mZs4HvJfP/capa.webp",
-      "authorName": "Gabriel Sales Machado de Souza",
-      "authorAlias": "salles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CrNtEWyZoFVowXCED8jDYaNhcA.webp",
-      "location": "MS, BR",
-      "lat": -19.5852564,
-      "lng": -54.4794731,
-      "tags": [
-        "aws-academy",
-        "aws-ambassador",
-        "students",
-        "aws-builders",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-30T01:27:42.524Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D3IegTlt4mVGfb8cn28uNL4lNB",
-      "title": "🚀 O Guia Definitivo para Decolar com AWS EC2!",
-      "description": "Do zero absoluto até a sua primeira máquina virtual rodando na infraestrutura da Amazon.",
-      "url": "https://builder.aws.com/content/3D3IegTlt4mVGfb8cn28uNL4lNB",
-      "imageUrl": "",
-      "authorName": "Rober Araujo Trindade",
-      "authorAlias": "rober122",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-academy",
-        "aws-ambassador",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-04-30T00:04:08.323Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -231,8 +225,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3428,
-      "commentsCount": 1916
+      "likesCount": 3430,
+      "commentsCount": 1917
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -256,6 +250,27 @@
       "commentsCount": 323
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2845,
+      "commentsCount": 318
+    },
+    {
       "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
       "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
       "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
@@ -277,27 +292,6 @@
       "publishedAt": "2026-04-29T16:36:55.845Z",
       "likesCount": 14,
       "commentsCount": 8
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2845,
-      "commentsCount": 318
     },
     {
       "id": "/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
