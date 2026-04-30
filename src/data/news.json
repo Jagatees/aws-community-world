@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-04-30T06:52:46.778Z",
+  "updatedAt": "2026-04-30T07:46:22.930Z",
   "latest": [
+    {
+      "id": "/content/3D447iHSl69hxLAkj3z24OXxRIs",
+      "title": "Migrating Unmanaged IAM Resources into Terraform Modules Using tfquery",
+      "description": "Unmanaged IAM roles and policies cluttering your account? This walks through using tfquery to discover them in bulk and migrate them into terraform-aws-modules/iam without the manual import grind.",
+      "url": "https://builder.aws.com/content/3D447iHSl69hxLAkj3z24OXxRIs",
+      "imageUrl": "",
+      "authorName": "Barron Joshua Volante",
+      "authorAlias": "volantebjb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4Gmkw3DmDsaR3ySXdi4VsCY9x.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-04-30T07:27:25.483Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cv0iSfPJsNB1bJ9b8IlJjQk6bb",
       "title": "From \"Cloud-Curious\" to \"Cloud-Capable\": 5 Advanced AWS Services to Scale Your Projects",
@@ -179,8 +196,8 @@
         "students"
       ],
       "publishedAt": "2026-04-30T02:04:42.716Z",
-      "likesCount": 6,
-      "commentsCount": 2
+      "likesCount": 7,
+      "commentsCount": 3
     },
     {
       "id": "/content/32SGih4AQIvJXsNUXgrRaHXcYbV",
@@ -204,30 +221,180 @@
       "publishedAt": "2026-04-30T01:54:28.636Z",
       "likesCount": 1,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3D3MDYZtVyDOgtRvTUhGdSmbNyY",
+      "title": "Palavras que me confundiam na nuvem, e o que elas realmente significam.",
+      "description": "Aqui eu falo sobre quando entrei no AWS Builder Center e me senti perdido em meio aos jargões técnicos.",
+      "url": "https://builder.aws.com/content/3D3MDYZtVyDOgtRvTUhGdSmbNyY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3Zo2OoRCRhEIyXc8mZs4HvJfP/capa.webp",
+      "authorName": "Gabriel Sales Machado de Souza",
+      "authorAlias": "salles",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CrNtEWyZoFVowXCED8jDYaNhcA.webp",
+      "location": "MS, BR",
+      "lat": -19.5852564,
+      "lng": -54.4794731,
+      "tags": [
+        "aws-academy",
+        "aws-ambassador",
+        "students",
+        "aws-builders",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-30T01:27:42.524Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D3IegTlt4mVGfb8cn28uNL4lNB",
+      "title": "🚀 O Guia Definitivo para Decolar com AWS EC2!",
+      "description": "Do zero absoluto até a sua primeira máquina virtual rodando na infraestrutura da Amazon.",
+      "url": "https://builder.aws.com/content/3D3IegTlt4mVGfb8cn28uNL4lNB",
+      "imageUrl": "",
+      "authorName": "Rober Araujo Trindade",
+      "authorAlias": "rober122",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-academy",
+        "aws-ambassador",
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-04-30T00:04:08.323Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CpKDUj8WvCgBNrDxWAgDfyKYmL",
+      "title": "Por onde começar no AWS Builder Center: um guia easy para iniciantes",
+      "description": "Se você acabou de descobrir a plataforma e não sabe o que ler primeiro (fica de boas), esse guia vai te ajudar a dar os primeiros passos de forma simples, prática e sem complicação.",
+      "url": "https://builder.aws.com/content/3CpKDUj8WvCgBNrDxWAgDfyKYmL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3Nqm9Sr4DiYtRQH6RP7dUOsbB/Capt.webp",
+      "authorName": "Deborah Viana",
+      "authorAlias": "deborahx",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpNX5DWAARP9NW8HMY0YtZYvkH.webp",
+      "location": "AM, BR",
+      "lat": -4.479925,
+      "lng": -63.5185396,
+      "tags": [
+        "aws-builders",
+        "cloud-networking",
+        "aws-cloud-clubs",
+        "ai"
+      ],
+      "publishedAt": "2026-04-29T23:58:16.975Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
+      "title": "Minha segunda semana com o AWS Builder Center: explorando IA Generativa e novas possibilidades.",
+      "description": "Reflexões sobre aplicações práticas de IA generativa, destacando aprendizados e novas possibilidades dentro da tecnologia.",
+      "url": "https://builder.aws.com/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
+      "imageUrl": "",
+      "authorName": "Juliana Freire de Oliveira",
+      "authorAlias": "julianaintech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai",
+        "all-builders-welcome",
+        "ai-ml",
+        "aws-academy",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-29T23:57:50.156Z",
+      "likesCount": 6,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3ClvP7sGzlxRepejzSZbrypPsIL",
+      "title": "Minha primeira semana como Líder Estudantil Builder AWS: o que eu aprendi",
+      "description": "Sou aluno de engenharia na UTFPR de Ponta Grossa. Antes do programa, eu era a mesma pessoa que entrava no Bloco de Engenharia carregando café e a mesma dúvida silenciosa de muito colega: \"o que eu estudo aqui dentro vira trabalho de verdade lá fora?\".\nEu já tinha ouvido falar de AWS, mas pra mim era uma palavra distante, do mundo da empresa grande. Não era pra estudante. Pelo menos era assim que eu enxergava.",
+      "url": "https://builder.aws.com/content/3ClvP7sGzlxRepejzSZbrypPsIL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3A1x6UpI0kShNZEub5Aab9GVS/bann.webp",
+      "authorName": "Alfeu Valente",
+      "authorAlias": "feuvalente",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUOO4gnjWZft1kSpTNj4EuO0Sq.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-29T22:03:04.696Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Bl58QC80ISb84FaIxwuYeebYcD",
+      "title": "From Germany to Cameroon: One Trip, Every Hat, and a Room Full of Future Cloud Engineers",
+      "description": "When I stood before over 30 aspiring DevOps engineers in Cameroon, I saw something no slide deck could capture. I saw hunger. I saw curiosity. I saw a room full of young people who had already decided that their future would be built on cloud technology. They just needed someone to show them the path.  And it was one of the most fulfilling moments of my entire AWS Community Builder journey.",
+      "url": "https://builder.aws.com/content/3Bl58QC80ISb84FaIxwuYeebYcD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D32kRkTtpeR9Iehl5CFniRVzAC/2026.webp",
+      "authorName": "Endah Bongo-Awah",
+      "authorAlias": "endahba",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wOzIWVPjlreS7y0Bqs4N1aGfmG.webp",
+      "location": "Rhineland-Palatinate, DE",
+      "lat": 49.9531599,
+      "lng": 7.310646,
+      "tags": [
+        "aws-community-builders",
+        "devops",
+        "aws-cloud-clubs",
+        "aws-community",
+        "community"
+      ],
+      "publishedAt": "2026-04-29T21:25:01.076Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3D3341SWrw6DQKk29EK31T5EtZh",
+      "title": "Do zero em cloud à primeira entrevista técnica: como usei recursos gratuitos da AWS",
+      "description": "Aqui compartilho como saí do zero em cloud até minha primeira entrevista técnica usando apenas recursos gratuitos da AWS, com foco em trilhas de estudo e pequenos projetos.",
+      "url": "https://builder.aws.com/content/3D3341SWrw6DQKk29EK31T5EtZh",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D341ciCuxI615UDF7SGrTIvP5L/Purp.webp",
+      "authorName": "Brenda Bren",
+      "authorAlias": "brenner00",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CaGCO3Ma0lNAbW3OTZ5GS1dQnZ.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
+      "tags": [
+        "career",
+        "aws-ambassador",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-04-29T21:19:39.915Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D33Enao2umOgf3VcHrUhFoM8K3",
+      "title": "🚀 Começando do Zero na AWS: Meu Primeiro Passo no Mundo Cloud",
+      "description": "Se você está entrando agora no mundo da tecnologia, provavelmente já ouviu falar da Amazon Web Services (AWS). Mas afinal, por onde começar?\n\nEssa foi exatamente a pergunta que eu me fiz quando decidi aprender sobre computação em nuvem.",
+      "url": "https://builder.aws.com/content/3D33Enao2umOgf3VcHrUhFoM8K3",
+      "imageUrl": "",
+      "authorName": "Henry Medeiros da Silveira Monteiro",
+      "authorAlias": "henrymedeiros",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-04-29T21:10:33.869Z",
+      "likesCount": 1,
+      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzZ6Um9BJskfblWQxSn9uCejGw.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3430,
-      "commentsCount": 1917
-    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -248,6 +415,27 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3530,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzZ6Um9BJskfblWQxSn9uCejGw.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3431,
+      "commentsCount": 1917
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
