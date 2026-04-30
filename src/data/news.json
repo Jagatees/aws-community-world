@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-04-30T10:35:29.411Z",
+  "updatedAt": "2026-04-30T11:31:49.499Z",
   "latest": [
+    {
+      "id": "/content/32IBb29euv4sdtxYr4XcfC9ECFF",
+      "title": "How I Built a Full Serverless Platform in 72 Hours Using Kiro — Without Writing Code",
+      "description": "A TAM with no dev background used Kiro to build a complete community platform with S3, CloudFront, Cognito, Lambda, and API Gateway — all through conversation with AI. Here's the architecture, the problems, and what broke in production.",
+      "url": "https://builder.aws.com/content/32IBb29euv4sdtxYr4XcfC9ECFF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D4id9mNaqVXlKo2HL2cj6kFbBA/arti.webp",
+      "authorName": "Ricardo Gulias",
+      "authorAlias": "gulias",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4ggCPpfr9XqbMdvHfIhKVMObN.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "amazon-s3",
+        "amazon-cloudfront",
+        "amazon-cognito",
+        "aws-lambda",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-30T11:20:27.052Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D4i8jcQKg85DCxBeohifvrJsEo",
+      "title": "AWS - Integrating Services",
+      "description": "An example of the scope of things that can be built using AWS Services, and how they all relate to each other.",
+      "url": "https://builder.aws.com/content/3D4i8jcQKg85DCxBeohifvrJsEo",
+      "imageUrl": "",
+      "authorName": "Anne George",
+      "authorAlias": "annegeorge",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-dynamodb"
+      ],
+      "publishedAt": "2026-04-30T11:17:53.501Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D2ZWgg7QLq8cv4PcatEbrP9IJD",
       "title": "Resilience is not availability: a vocabulary for cloud network design",
@@ -343,51 +385,6 @@
       "publishedAt": "2026-04-30T00:04:08.323Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CpKDUj8WvCgBNrDxWAgDfyKYmL",
-      "title": "Por onde começar no AWS Builder Center: um guia easy para iniciantes",
-      "description": "Se você acabou de descobrir a plataforma e não sabe o que ler primeiro (fica de boas), esse guia vai te ajudar a dar os primeiros passos de forma simples, prática e sem complicação.",
-      "url": "https://builder.aws.com/content/3CpKDUj8WvCgBNrDxWAgDfyKYmL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3Nqm9Sr4DiYtRQH6RP7dUOsbB/Capt.webp",
-      "authorName": "Deborah Viana",
-      "authorAlias": "deborahx",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpNX5DWAARP9NW8HMY0YtZYvkH.webp",
-      "location": "AM, BR",
-      "lat": -4.479925,
-      "lng": -63.5185396,
-      "tags": [
-        "aws-builders",
-        "cloud-networking",
-        "aws-cloud-clubs",
-        "ai"
-      ],
-      "publishedAt": "2026-04-29T23:58:16.975Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
-      "title": "Minha segunda semana com o AWS Builder Center: explorando IA Generativa e novas possibilidades.",
-      "description": "Reflexões sobre aplicações práticas de IA generativa, destacando aprendizados e novas possibilidades dentro da tecnologia.",
-      "url": "https://builder.aws.com/content/3Co9Ni9snh8fNenS8Ep90iazyNm",
-      "imageUrl": "",
-      "authorName": "Juliana Freire de Oliveira",
-      "authorAlias": "julianaintech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai",
-        "all-builders-welcome",
-        "ai-ml",
-        "aws-academy",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-04-29T23:57:50.156Z",
-      "likesCount": 7,
-      "commentsCount": 3
     }
   ],
   "trending": [
@@ -409,7 +406,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3530,
+      "likesCount": 3535,
       "commentsCount": 323
     },
     {
