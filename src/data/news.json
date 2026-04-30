@@ -1,6 +1,92 @@
 {
-  "updatedAt": "2026-04-30T22:19:21.603Z",
+  "updatedAt": "2026-04-30T23:19:25.741Z",
   "latest": [
+    {
+      "id": "/content/3D65mbaffozNrpbK1evBKgRJZAH",
+      "title": "Amazon Bedrock: The Platform That's Quietly Powering the Generative AI Revolution",
+      "description": "Amazon Bedrock is AWS's fully managed platform for building production-grade generative AI applications using the best foundation models in the industry - all through a single, secure API. Whether you're building intelligent agents, RAG pipelines, or fine-tuned models, Bedrock gives you the flexibility, compliance, and scale to ship AI that actually works in the real world.",
+      "url": "https://builder.aws.com/content/3D65mbaffozNrpbK1evBKgRJZAH",
+      "imageUrl": "",
+      "authorName": "Srinivas",
+      "authorAlias": "srinivas45",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39LREVwaVHx0iaaeiWEhtaS3hHs.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-30T23:11:38.645Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D5DAfyn7bIEEoXhqDa5hndvgaW",
+      "title": "From Runway to ROI: How Agentic AI Is Eliminating Fashion's Back-Office Burden",
+      "description": "For Fortune 2000 fashion brands, manual back-office processing silently consumes up to 9% of total revenue. Discover how leading apparel companies are deploying Agentic AI on AWS to slash costs, accelerate operations, and unlock 4–7% revenue impact — starting with the five highest-burden workflows in the industry.",
+      "url": "https://builder.aws.com/content/3D5DAfyn7bIEEoXhqDa5hndvgaW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D64v9canoROVT3r7AUwbwdmnWz/agen.webp",
+      "authorName": "Neha",
+      "authorAlias": "nehabhsh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D60NMXGAVKAV478WyrhttyQwXt.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "ai-ml",
+        "retail-consumer-goods-industry",
+        "retail",
+        "sap"
+      ],
+      "publishedAt": "2026-04-30T22:59:47.116Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D5ziai5aT2So39Ufj6t3kjnuLb",
+      "title": "O S3 tem quase 20 anos — e provavelmente está guardando mais coisas suas do que você imagina",
+      "description": "Fui pesquisar a história do Amazon S3 por curiosidade e fiquei genuinamente surpreso com o que encontrei. Esse serviço é mais velho do que muita coisa que a gente usa hoje.",
+      "url": "https://builder.aws.com/content/3D5ziai5aT2So39Ufj6t3kjnuLb",
+      "imageUrl": "",
+      "authorName": "Vinícius Amâncio Martins Pereira",
+      "authorAlias": "viniciusawscc",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYEOZ7NePUZ1JxC7zV5kK9uoFn.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "cloud-storage",
+        "amazon-s3",
+        "data-engineering",
+        "students"
+      ],
+      "publishedAt": "2026-04-30T22:36:47.656Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D2EMtGWUbeKzusETh6pVreUdK4",
+      "title": "Sub-clipping in Vision Data Engineering Using MediaConvert",
+      "description": "In vision data engineering, we often need to sub-clip source videos with frame accuracy from multiple synchronized cameras. MediaConvert supports the so-called assembly workflow configuration which can be used to perform sub-clipping with frame accuracy. In this document we share certain design considerations and implementation details of such sub-clipping.",
+      "url": "https://builder.aws.com/content/3D2EMtGWUbeKzusETh6pVreUdK4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3BVtgFd5hW5IFNVyiLiXRw6Jd/aws-.webp",
+      "authorName": "William Zhang",
+      "authorAlias": "wwz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qopIh8X1ZtmF4jgiDLAKcHnDI.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-elemental-mediaconvert"
+      ],
+      "publishedAt": "2026-04-30T22:32:45.813Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D5HDnLQCMT2UMIlzPq9OqFbTbi",
       "title": "AWS Lambda: The Essential Tool for Student Web Developers",
@@ -53,7 +139,7 @@
       "lng": -120.212613,
       "tags": [],
       "publishedAt": "2026-04-30T21:04:06.861Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -72,8 +158,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 11,
-      "commentsCount": 3
+      "likesCount": 12,
+      "commentsCount": 4
     },
     {
       "id": "/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
@@ -118,93 +204,8 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-30T19:34:21.906Z",
-      "likesCount": 4,
+      "likesCount": 6,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3D5SFGOVkHevIWNPVSIpv3nn8sg",
-      "title": "Stop Writing Runbooks. Start Building Self-Healing Systems.",
-      "description": "A Practical Guide to Autonomous AWS Infrastructure Using EventBridge, Lambda, and SSM Automation",
-      "url": "https://builder.aws.com/content/3D5SFGOVkHevIWNPVSIpv3nn8sg",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5W2IFdwvt4p6aDnMwcTLybopM/Chat.webp",
-      "authorName": "Sreesanth R",
-      "authorAlias": "sreesanth",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D5PzCY66rmzRVEjpQXfHpAFSiy.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "serverless",
-        "architecture",
-        "amazon-eventbridge",
-        "aws-lambda",
-        "cloud-operations"
-      ],
-      "publishedAt": "2026-04-30T18:04:24.955Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D5S65bAyAkabLMvucxvKlaTFzG",
-      "title": "Minha primeira semana com o AWS Builder Center: o que aprendi sendo estudante, embaixadora e criadora de conteúdo ao mesmo tempo",
-      "description": "Quando entrei no curso de Ciência da Computação no UniCEUB, eu já sabia que queria mais do que só aprender a programar. Queria entender como a tecnologia pode transformar vidas — e mais do que isso, queria fazer parte dessa transformação.\nFoi nesse contexto que o AWS Builder Center chegou na minha vida — e eu quero te contar com honestidade o que encontrei por lá.",
-      "url": "https://builder.aws.com/content/3D5S65bAyAkabLMvucxvKlaTFzG",
-      "imageUrl": "",
-      "authorName": "Ana Júlia Moura",
-      "authorAlias": "anamoura",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-30T17:36:09.555Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D54w2LpWanJnwXjFEoavxjRGXu",
-      "title": "WELCOME TO THE ELITE CIRCLE OF CLOUD INNOVATION!!!",
-      "description": "The AWS Builder Center is where the next generation of Cloud Architects is forged. You aren't just a student here—you are a Builder. You have the tools, the network, and the \"Inner Circle\" access to dominate the industry.",
-      "url": "https://builder.aws.com/content/3D54w2LpWanJnwXjFEoavxjRGXu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5ROWPzHLAVteMTIFct8skGylu/Scre.webp",
-      "authorName": "Aalavandhaan Rajasekaran V",
-      "authorAlias": "aalavandhaan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34t8GY4zVtNmvXPvYkxXKOLsRVO.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "students",
-        "aws-cloud-clubs",
-        "all-builders-welcome",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-30T17:29:19.473Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D3890U2niEPp5gxlssoI9HVvWm",
-      "title": "What is an Agent Harness? A Hands-On Guide With AgentCore harness",
-      "description": "An agent harness is the runtime that turns a model into an autonomous agent. I built one with Amazon Bedrock AgentCore Harness using only configuration. Here's what a harness is, how AgentCore harness works, and code you can run today.",
-      "url": "https://builder.aws.com/content/3D3890U2niEPp5gxlssoI9HVvWm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D38JG5pgZCCnqxVEgBlfImUtMm/DREA.webp",
-      "authorName": "Morgan",
-      "authorAlias": "willismt",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36fURtaIL8OuqVDMH7jfGYQPKN1.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "amazon-bedrock-agentcore",
-        "strands-agents",
-        "strands",
-        "agents"
-      ],
-      "publishedAt": "2026-04-30T17:23:15.214Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -224,8 +225,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 11,
-      "commentsCount": 3
+      "likesCount": 12,
+      "commentsCount": 4
     },
     {
       "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
@@ -247,7 +248,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-30T19:34:21.906Z",
-      "likesCount": 4,
+      "likesCount": 6,
       "commentsCount": 3
     },
     {
@@ -268,7 +269,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3536,
+      "likesCount": 3537,
       "commentsCount": 323
     },
     {
@@ -312,29 +313,6 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2847,
       "commentsCount": 318
-    },
-    {
-      "id": "/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
-      "title": "Minha jornada inicial com AWS: aprendizados, desafios e descobertas ☁️",
-      "description": "O que aprendi nas duas semanas utilizando o AWS Builder Center e como isso pode influenciar seu desenvolvimento profissional.",
-      "url": "https://builder.aws.com/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5hOuxgRpR0ntBWGtdsqfDDPsd/foto.webp",
-      "authorName": "Alice Barroso",
-      "authorAlias": "alicevbarroso",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "amazon-s3",
-        "aws-ambassador",
-        "aws-academy",
-        "amazon-ec2",
-        "amazon-cloudfront"
-      ],
-      "publishedAt": "2026-04-30T19:42:36.065Z",
-      "likesCount": 2,
-      "commentsCount": 2
     },
     {
       "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
@@ -381,6 +359,51 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
+      "title": "Minha jornada inicial com AWS: aprendizados, desafios e descobertas ☁️",
+      "description": "O que aprendi nas duas semanas utilizando o AWS Builder Center e como isso pode influenciar seu desenvolvimento profissional.",
+      "url": "https://builder.aws.com/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5hOuxgRpR0ntBWGtdsqfDDPsd/foto.webp",
+      "authorName": "Alice Barroso",
+      "authorAlias": "alicevbarroso",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "amazon-s3",
+        "aws-ambassador",
+        "aws-academy",
+        "amazon-ec2",
+        "amazon-cloudfront"
+      ],
+      "publishedAt": "2026-04-30T19:42:36.065Z",
+      "likesCount": 2,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3D65mbaffozNrpbK1evBKgRJZAH",
+      "title": "Amazon Bedrock: The Platform That's Quietly Powering the Generative AI Revolution",
+      "description": "Amazon Bedrock is AWS's fully managed platform for building production-grade generative AI applications using the best foundation models in the industry - all through a single, secure API. Whether you're building intelligent agents, RAG pipelines, or fine-tuned models, Bedrock gives you the flexibility, compliance, and scale to ship AI that actually works in the real world.",
+      "url": "https://builder.aws.com/content/3D65mbaffozNrpbK1evBKgRJZAH",
+      "imageUrl": "",
+      "authorName": "Srinivas",
+      "authorAlias": "srinivas45",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39LREVwaVHx0iaaeiWEhtaS3hHs.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-04-30T23:11:38.645Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
       "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
       "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
@@ -402,29 +425,6 @@
       "publishedAt": "2026-04-29T16:36:55.845Z",
       "likesCount": 18,
       "commentsCount": 8
-    },
-    {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 26,
-      "commentsCount": 3
     }
   ]
 }
