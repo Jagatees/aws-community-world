@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-04-30T00:32:59.137Z",
+  "updatedAt": "2026-04-30T01:35:41.597Z",
   "latest": [
+    {
+      "id": "/content/3D3MDYZtVyDOgtRvTUhGdSmbNyY",
+      "title": "Palavras que me confundiam na nuvem, e o que elas realmente significam.",
+      "description": "Aqui eu falo sobre quando entrei no AWS Builder Center e me senti perdido em meio aos jargões técnicos.",
+      "url": "https://builder.aws.com/content/3D3MDYZtVyDOgtRvTUhGdSmbNyY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3Zo2OoRCRhEIyXc8mZs4HvJfP/capa.webp",
+      "authorName": "Gabriel Sales Machado de Souza",
+      "authorAlias": "salles",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CrNtEWyZoFVowXCED8jDYaNhcA.webp",
+      "location": "MS, BR",
+      "lat": -19.5852564,
+      "lng": -54.4794731,
+      "tags": [
+        "aws-academy",
+        "aws-ambassador",
+        "students",
+        "aws-builders",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-04-30T01:27:42.524Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D3IegTlt4mVGfb8cn28uNL4lNB",
       "title": "🚀 O Guia Definitivo para Decolar com AWS EC2!",
@@ -188,28 +211,6 @@
       "publishedAt": "2026-04-29T20:24:07.082Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D2uuURqEA1GcSVVSJKPzFJVFmu",
-      "title": "🚀 5 AWS Services Every College Student Should Know (Before Graduating)",
-      "description": "This article highlights the 5 most important AWS services every college student should learn to build real-world cloud projects. Instead of focusing on theory or multiple courses, it emphasizes hands-on learning using core AWS services like EC2, S3, RDS, Lambda, and IAM. A practical roadmap is included to help beginners start building immediately.",
-      "url": "https://builder.aws.com/content/3D2uuURqEA1GcSVVSJKPzFJVFmu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2x1YaADlw5dlMPcHMyUgvvdUX/IMG_.webp",
-      "authorName": "Ritik Dhanotiya",
-      "authorAlias": "ritikdhanotiya07",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "amazon-s3",
-        "iam",
-        "amazon-ec2",
-        "aws-lambda"
-      ],
-      "publishedAt": "2026-04-29T20:17:15.716Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -392,26 +393,6 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 28,
-      "commentsCount": 25
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -432,6 +413,26 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1418,
       "commentsCount": 325
+    },
+    {
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "advertising-marketing-industry",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T00:44:34.853Z",
+      "likesCount": 28,
+      "commentsCount": 25
     }
   ]
 }
