@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-05-01T00:34:57.558Z",
+  "updatedAt": "2026-05-01T01:36:09.001Z",
   "latest": [
+    {
+      "id": "/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
+      "title": "Governing Agent Sprawl on AWS: Fleet Inventory, Framework Canary, and Deprecation Alerting for Multi-Model Bedrock Deployments",
+      "description": "Datadog's State of AI Engineering 2026 reports that more than 70% of organizations now run three or more AI models in production, with framework adoption doubling year over year. For teams running Amazon Bedrock Agents, this means one thing: you are operating a model fleet, not a single agent. And almost certainly, you do not have SLO owners assigned to every model in that fleet",
+      "url": "https://builder.aws.com/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6NXUYfYwUaq6AXmAK7eb4FFPB/data.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "agentic-ai",
+        "sre",
+        "devops",
+        "ai-ml"
+      ],
+      "publishedAt": "2026-05-01T01:26:03.623Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
       "title": "AWS Finally Understood That Nobody Likes Surprise Bills",
@@ -184,23 +207,6 @@
       "publishedAt": "2026-04-30T21:15:05.354Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D5pIgNB1T5BBcHPzxWRaNmT17d",
-      "title": "Two AWS Student Builder Group Leaders Win Regional Champion Titles in the AWS 10,000 AIdeas Competition",
-      "description": "Two AWS Student Builder Group Leaders won Regional Champion titles in the AWS 10,000 AIdeas Competition. Misael Calisaya from Argentina created CogniPath, an adaptive learning platform for Latin America. Jerry Davis NDJANA MENGUE from Cameroon built Global Impact AI Navigator, a strategic planning tool. Both projects were built with Kiro and AWS Free Tier, proving that purpose and skill are all you need to build something meaningful with AI.",
-      "url": "https://builder.aws.com/content/3D5pIgNB1T5BBcHPzxWRaNmT17d",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6Fx9wqDw6dsK4O4YmqFbtNhyB/Scre.webp",
-      "authorName": "Lisa Bagley",
-      "authorAlias": "lrbagley",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BEgcG3gfSwRqqx4Q28H6Ux4V2C.webp",
-      "location": "WA, US",
-      "lat": 47.2868352,
-      "lng": -120.212613,
-      "tags": [],
-      "publishedAt": "2026-04-30T21:04:06.861Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -220,8 +226,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 17,
-      "commentsCount": 6
+      "likesCount": 22,
+      "commentsCount": 9
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -266,6 +272,27 @@
       "commentsCount": 1918
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2847,
+      "commentsCount": 318
+    },
+    {
       "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
       "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
       "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
@@ -287,27 +314,6 @@
       "publishedAt": "2026-04-30T19:34:21.906Z",
       "likesCount": 6,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2847,
-      "commentsCount": 318
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -354,29 +360,6 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
-      "title": "Minha jornada inicial com AWS: aprendizados, desafios e descobertas ☁️",
-      "description": "O que aprendi nas duas semanas utilizando o AWS Builder Center e como isso pode influenciar seu desenvolvimento profissional.",
-      "url": "https://builder.aws.com/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5hOuxgRpR0ntBWGtdsqfDDPsd/foto.webp",
-      "authorName": "Alice Barroso",
-      "authorAlias": "alicevbarroso",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "amazon-s3",
-        "aws-ambassador",
-        "aws-academy",
-        "amazon-ec2",
-        "amazon-cloudfront"
-      ],
-      "publishedAt": "2026-04-30T19:42:36.065Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
       "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
       "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
@@ -421,6 +404,28 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 26,
       "commentsCount": 3
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1421,
+      "commentsCount": 325
     }
   ]
 }
