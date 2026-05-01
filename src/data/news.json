@@ -1,6 +1,44 @@
 {
-  "updatedAt": "2026-05-01T19:28:47.432Z",
+  "updatedAt": "2026-05-01T20:18:39.546Z",
   "latest": [
+    {
+      "id": "/content/3D8XBIJuVx3ZEJpRo7wR1ORSa5A",
+      "title": "Carreira TI: Reflexão de seus Desafios",
+      "description": "Uma reflexão sobre os principais desafios do mercado de tecnologia, da pressão por atualização constante ao impacto humano por trás da inovação.",
+      "url": "https://builder.aws.com/content/3D8XBIJuVx3ZEJpRo7wR1ORSa5A",
+      "imageUrl": "",
+      "authorName": "Vitor Ochoa",
+      "authorAlias": "ochoavitu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3hbyP2KsoEaWv6oP4BbzirScx.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-01T20:15:01.787Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8Kw8OPgMmTmtOgGzaCdapnasB",
+      "title": "Optimizing Amazon Bedrock Guardrails: A Test Harness for False Positives, Latency, and Filter Tuning",
+      "description": "In this post, I walk through a test harness I built for optimizing Bedrock Guardrails. It automates three things: false positive detection, latency benchmarking across invocation strategies, and filter strength tuning to find the optimal configuration.",
+      "url": "https://builder.aws.com/content/3D8Kw8OPgMmTmtOgGzaCdapnasB",
+      "imageUrl": "",
+      "authorName": "rePost-VijayKr",
+      "authorAlias": "vijaykrs",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "testing",
+        "optimization",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-01T19:40:02.881Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D6D6sERqXefrI0qhzXcRqjGS71",
       "title": "Monte Seu Servidor de Minecraft na Nuvem com EC2! ⛏️☁️",
@@ -160,48 +198,6 @@
       "publishedAt": "2026-05-01T16:45:06.594Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D82RapFlzCisZnVn612uX9NuRL",
-      "title": "S3 Files: The End of Download-Process-Upload (with Terraform)",
-      "description": "Discover AWS S3 Files: Revolutionize your Lambda functions with a local file system interface. Deploy with Terraform and see the difference.",
-      "url": "https://builder.aws.com/content/3D82RapFlzCisZnVn612uX9NuRL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D82uFVbfoCk5A0FjH4mAnpzzfx/cove.webp",
-      "authorName": "Darryl Ruggles",
-      "authorAlias": "darrylr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32xvtRCXz0BUNb5YZMIdzX1KHT8.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "amazon-s3",
-        "aws-lambda",
-        "serverless"
-      ],
-      "publishedAt": "2026-05-01T15:34:49.400Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6lrxtUnxAisY05qYEWhtcx4pv",
-      "title": "The New Era of AI",
-      "description": "The new era of AI is here, bringing smarter workflows, faster development, and better business outcomes.",
-      "url": "https://builder.aws.com/content/3D6lrxtUnxAisY05qYEWhtcx4pv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D81WySIUTGFvQWNqKXd8Vm3fYP/1000.webp",
-      "authorName": "Ankit",
-      "authorAlias": "ankit01",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D7z4ArjJBK5YBsoVHSD9tZhXXz.webp",
-      "location": "Punjab, IN",
-      "lat": 30.9293211,
-      "lng": 75.5004841,
-      "tags": [
-        "agentic-ai",
-        "ai",
-        "ai-security"
-      ],
-      "publishedAt": "2026-05-01T15:24:49.152Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -221,7 +217,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 43,
+      "likesCount": 45,
       "commentsCount": 17
     },
     {
@@ -242,7 +238,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3538,
+      "likesCount": 3539,
       "commentsCount": 323
     },
     {
@@ -263,7 +259,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3436,
+      "likesCount": 3437,
       "commentsCount": 1919
     },
     {
@@ -351,8 +347,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1425,
-      "commentsCount": 325
+      "likesCount": 1426,
+      "commentsCount": 326
     },
     {
       "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
@@ -397,8 +393,8 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 29,
-      "commentsCount": 5
+      "likesCount": 30,
+      "commentsCount": 6
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
