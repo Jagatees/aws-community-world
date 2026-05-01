@@ -1,6 +1,94 @@
 {
-  "updatedAt": "2026-05-01T05:16:58.026Z",
+  "updatedAt": "2026-05-01T06:54:45.110Z",
   "latest": [
+    {
+      "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
+      "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
+      "description": "Protect your wallet from unexpected cloud costs. This quick tutorial shows beginners how to configure a Zero Spend Budget and receive instant email alerts before any charges accumulate.",
+      "url": "https://builder.aws.com/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6zwsuqel3sX2jyl7y1DcrNXtY/1764.webp",
+      "authorName": "Abdullah bin Amin",
+      "authorAlias": "abdullahbinamin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36V7Al29DXQxvHMtIlJpvlJIMnZ.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "aws-builders",
+        "aws-community",
+        "aws-community-builders",
+        "aws-community-day",
+        "aws-community-day-2026"
+      ],
+      "publishedAt": "2026-05-01T06:42:09.422Z",
+      "likesCount": 0,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3D6vPnXsHXKKsmP0FMcerCebfh8",
+      "title": "What Students Need to Know About Building with AWS",
+      "description": "#students",
+      "url": "https://builder.aws.com/content/3D6vPnXsHXKKsmP0FMcerCebfh8",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6wwIMKUELQoH415l4lEOph8cN/Chat.webp",
+      "authorName": "Vedant Uekey",
+      "authorAlias": "vedantuekey",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRBhNiWQWK053bAgRECaU2lNxB.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-01T06:17:02.326Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6tDaRkgPQdUSA9U6smoAVYhNW",
+      "title": "The AWS DOP-C02 Exam: Essential Guide for Professional Upskilling",
+      "description": "Unpack the real-world skills validated by the AWS Certified DevOps Engineer Professional (DOP-C02) exam. Explore its structure, key domains, and practical application for advanced cloud careers.",
+      "url": "https://builder.aws.com/content/3D6tDaRkgPQdUSA9U6smoAVYhNW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6udajEuZqnaU78Rnh9HiAbqd4/Unlo.webp",
+      "authorName": "Elenan Fielding",
+      "authorAlias": "elenanfielding",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApbhbxiY8b1LZxlHSXeoKBAVVe.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "devops",
+        "devops-pro",
+        "aws-certification",
+        "development",
+        "developer-tools"
+      ],
+      "publishedAt": "2026-05-01T06:03:44.441Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6k7XuiDBD9kGNjwptQaZ59Oh1",
+      "title": "AWS Builder Center: A Launchpad for the Next Generation of Cloud Builders",
+      "description": "AWS Builder Center offers a powerful platform to learn, build, and showcase cloud skills in a structured way. This article highlights how you can leverage its resources to gain practical experience and accelerate your cloud journey. Turn your learning into real-world impact.",
+      "url": "https://builder.aws.com/content/3D6k7XuiDBD9kGNjwptQaZ59Oh1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6rIvJxYIHWCzMIgu7haGUp7rl/AWS-.webp",
+      "authorName": "MANAV PANDEY",
+      "authorAlias": "manavpandey",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CfHWrubVhYko0aoKY9dKrljulm.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "learn",
+        "aws-builders",
+        "aws-ambassador",
+        "students",
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-01T05:33:02.849Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D6cF34QTRHmDIw6ifySsNQOPbY",
       "title": "Cómo limité el acceso SSH a una sola IP en AWS — mi primera implementación de Least Privilege",
@@ -61,7 +149,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-05-01T03:06:34.487Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -126,89 +214,6 @@
       "publishedAt": "2026-05-01T01:57:54.545Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6N19ceqk5FkeeSdz6wkakGS0y",
-      "title": "Saindo do Localhost: Como o AWS Builder Center destravou meus projetos em Laravel e React",
-      "description": "Sabe quando você termina de configurar seus containers no Docker, o seu backend em Laravel está rodando lisinho e o seu frontend em React está consumindo a API perfeitamente? A sensação de ver a tela funcionar é incrível. Mas, logo em seguida, bate aquela dúvida clássica que assombra todo estudante: \"E agora? Como eu tiro tudo isso do meu localhost e coloco no ar para o mundo acessar?\"",
-      "url": "https://builder.aws.com/content/3D6N19ceqk5FkeeSdz6wkakGS0y",
-      "imageUrl": "",
-      "authorName": "Jonatas Candido",
-      "authorAlias": "jonatascr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUQQXWy6led2REUrIbC6rxfRo0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "web-development",
-        "php"
-      ],
-      "publishedAt": "2026-05-01T01:46:46.019Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
-      "title": "Governing Agent Sprawl on AWS: Fleet Inventory, Framework Canary, and Deprecation Alerting for Multi-Model Bedrock Deployments",
-      "description": "Datadog's State of AI Engineering 2026 reports that more than 70% of organizations now run three or more AI models in production, with framework adoption doubling year over year. For teams running Amazon Bedrock Agents, this means one thing: you are operating a model fleet, not a single agent. And almost certainly, you do not have SLO owners assigned to every model in that fleet",
-      "url": "https://builder.aws.com/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6NXUYfYwUaq6AXmAK7eb4FFPB/data.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "agentic-ai",
-        "sre",
-        "devops",
-        "ai-ml"
-      ],
-      "publishedAt": "2026-05-01T01:26:03.623Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
-      "title": "AWS Finally Understood That Nobody Likes Surprise Bills",
-      "description": "A deep dive into CloudFront's flat-rate pricing plans launched in November 2025 — what's included, the math that matters, who benefits, and why this signals a bigger shift in how AWS thinks about pricing.",
-      "url": "https://builder.aws.com/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
-      "imageUrl": "",
-      "authorName": "Ricardo Gulias",
-      "authorAlias": "gulias",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4ggCPpfr9XqbMdvHfIhKVMObN.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-05-01T00:13:16.691Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D66nNCvLVAhW8IgEiHuWyg4zEV",
-      "title": "Caching Public Container Images with ECR Pull Through Cache",
-      "description": "How to mirror Docker Hub and Public ECR into your private registry using AWS-native tools and official Terraform modules",
-      "url": "https://builder.aws.com/content/3D66nNCvLVAhW8IgEiHuWyg4zEV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D699blLdnZniGclng0AiFOV9R2/bann.webp",
-      "authorName": "Frank Pimienta",
-      "authorAlias": "frankpimienta",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2araHqCMPT5MrG24ZEV7WOPYH5C.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "amazon-ecr",
-        "docker",
-        "terraform",
-        "cloud-operations",
-        "containers"
-      ],
-      "publishedAt": "2026-04-30T23:30:56.897Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -228,8 +233,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 29,
-      "commentsCount": 11
+      "likesCount": 30,
+      "commentsCount": 12
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -270,8 +275,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3433,
-      "commentsCount": 1918
+      "likesCount": 3434,
+      "commentsCount": 1919
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -293,6 +298,29 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2847,
       "commentsCount": 318
+    },
+    {
+      "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
+      "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
+      "description": "Protect your wallet from unexpected cloud costs. This quick tutorial shows beginners how to configure a Zero Spend Budget and receive instant email alerts before any charges accumulate.",
+      "url": "https://builder.aws.com/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6zwsuqel3sX2jyl7y1DcrNXtY/1764.webp",
+      "authorName": "Abdullah bin Amin",
+      "authorAlias": "abdullahbinamin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36V7Al29DXQxvHMtIlJpvlJIMnZ.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "aws-builders",
+        "aws-community",
+        "aws-community-builders",
+        "aws-community-day",
+        "aws-community-day-2026"
+      ],
+      "publishedAt": "2026-05-01T06:42:09.422Z",
+      "likesCount": 0,
+      "commentsCount": 1
     },
     {
       "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
@@ -405,29 +433,6 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 27,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
-      "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
-      "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
-      "url": "https://builder.aws.com/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2V3IFCtABEY9xiC5MAs5k2D81/Capa.webp",
-      "authorName": "Igor Galindo",
-      "authorAlias": "igorgalind0",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "aws-academy",
-        "aws-networking",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 18,
-      "commentsCount": 8
     }
   ]
 }
