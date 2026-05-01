@@ -1,6 +1,69 @@
 {
-  "updatedAt": "2026-05-01T03:05:56.145Z",
+  "updatedAt": "2026-05-01T05:16:58.026Z",
   "latest": [
+    {
+      "id": "/content/3D6cF34QTRHmDIw6ifySsNQOPbY",
+      "title": "Cómo limité el acceso SSH a una sola IP en AWS — mi primera implementación de Least Privilege",
+      "description": "Security Group en AWS configurado bajo el principio de Least Privilege",
+      "url": "https://builder.aws.com/content/3D6cF34QTRHmDIw6ifySsNQOPbY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6nd6ykXw2JVIe1Y0qNWMXGQwd/Leas.webp",
+      "authorName": "Jann Carlo Martinez",
+      "authorAlias": "jannkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D6nzTOPWAvzdApD7V1iFTHVIaU.webp",
+      "location": "CO",
+      "lat": 4.099917,
+      "lng": -72.9088133,
+      "tags": [
+        "security-group",
+        "amazon-vpc"
+      ],
+      "publishedAt": "2026-05-01T04:58:26.260Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6a4r50WoPHNBFDuXnp2TebZCw",
+      "title": "Getting onboard AWS Builder Center",
+      "description": "Learn how to get started with AWS Builder Center and what it offers.",
+      "url": "https://builder.aws.com/content/3D6a4r50WoPHNBFDuXnp2TebZCw",
+      "imageUrl": "",
+      "authorName": "Soham Shelke",
+      "authorAlias": "sohamshelke",
+      "authorAvatarUrl": "",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-ambassador",
+        "quick-start",
+        "getting-started"
+      ],
+      "publishedAt": "2026-05-01T03:14:00.912Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/36Z3FxYcJECtsQ547cpHm8Zygld",
+      "title": "How AWS Helps Students Start Building",
+      "description": "Most students have access to plenty of learning resources, yet still struggle to build real projects. This article explains how Amazon Web Services and the AWS Builder Platform help students start building with clear direction and free, practical learning.",
+      "url": "https://builder.aws.com/content/36Z3FxYcJECtsQ547cpHm8Zygld",
+      "imageUrl": "",
+      "authorName": "Arpna",
+      "authorAlias": "arpnak",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38BkXZTKPNPt9qPQSjeO14bUhUu.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-builders",
+        "aws-ambassador",
+        "aws-community",
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-01T03:06:34.487Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
       "title": "Do Localhost pro Mundo: Como subi minha primeira API Serverless",
@@ -19,7 +82,7 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-05-01T02:38:44.102Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -146,71 +209,6 @@
       "publishedAt": "2026-04-30T23:30:56.897Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D60x2QyBwMkFgo8OKKUnjIQDea",
-      "title": "What They Don't Tell You About Technical Interviews",
-      "description": "We all know how we feel when we get a technical interview. It's time to pop open LeetCode! And yes, it is very important to have those hard skills locked down and ready. But what if I told you that will only get you halfway there?",
-      "url": "https://builder.aws.com/content/3D60x2QyBwMkFgo8OKKUnjIQDea",
-      "imageUrl": "",
-      "authorName": "Zayda Townsend",
-      "authorAlias": "zaydazt",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVWfv5ZTkiIlcXOGtjVvBZsBRH.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students",
-        "interview-prep"
-      ],
-      "publishedAt": "2026-04-30T23:23:05.124Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D65mbaffozNrpbK1evBKgRJZAH",
-      "title": "Amazon Bedrock: The Platform That's Quietly Powering the Generative AI Revolution",
-      "description": "Amazon Bedrock is AWS's fully managed platform for building production-grade generative AI applications using the best foundation models in the industry - all through a single, secure API. Whether you're building intelligent agents, RAG pipelines, or fine-tuned models, Bedrock gives you the flexibility, compliance, and scale to ship AI that actually works in the real world.",
-      "url": "https://builder.aws.com/content/3D65mbaffozNrpbK1evBKgRJZAH",
-      "imageUrl": "",
-      "authorName": "Srinivas",
-      "authorAlias": "srinivas45",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39LREVwaVHx0iaaeiWEhtaS3hHs.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-30T23:11:38.645Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D5DAfyn7bIEEoXhqDa5hndvgaW",
-      "title": "From Runway to ROI: How Agentic AI Is Eliminating Fashion's Back-Office Burden",
-      "description": "For Fortune 2000 fashion brands, manual back-office processing silently consumes up to 9% of total revenue. Discover how leading apparel companies are deploying Agentic AI on AWS to slash costs, accelerate operations, and unlock 4–7% revenue impact — starting with the five highest-burden workflows in the industry.",
-      "url": "https://builder.aws.com/content/3D5DAfyn7bIEEoXhqDa5hndvgaW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D64v9canoROVT3r7AUwbwdmnWz/agen.webp",
-      "authorName": "Neha",
-      "authorAlias": "nehabhsh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D60NMXGAVKAV478WyrhttyQwXt.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "ai-ml",
-        "retail-consumer-goods-industry",
-        "retail",
-        "sap"
-      ],
-      "publishedAt": "2026-04-30T22:59:47.116Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -230,8 +228,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 25,
-      "commentsCount": 10
+      "likesCount": 29,
+      "commentsCount": 11
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -317,7 +315,7 @@
       ],
       "publishedAt": "2026-04-30T19:34:21.906Z",
       "likesCount": 6,
-      "commentsCount": 3
+      "commentsCount": 6
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -364,48 +362,26 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
-      "title": "Quando cloud deixou de ser conceito e passou a ser prática",
-      "description": "Neste artigo, compartilho minha experiência ao sair da teoria e ter meu primeiro contato prático com cloud computing através do EC2, explorando como esse processo me ajudou a entender melhor a AWS na prática.",
-      "url": "https://builder.aws.com/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6RfneCqzaTrxRQcgt6R9cHYhF/Arti.webp",
-      "authorName": "Nicolle Maia",
-      "authorAlias": "niccmaia",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
       "tags": [
-        "amazon-ec2",
-        "cloud-concepts",
-        "beginner-projects"
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
       ],
-      "publishedAt": "2026-05-01T01:57:54.545Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
-      "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
-      "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
-      "url": "https://builder.aws.com/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2V3IFCtABEY9xiC5MAs5k2D81/Capa.webp",
-      "authorName": "Igor Galindo",
-      "authorAlias": "igorgalind0",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "aws-academy",
-        "aws-networking",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 18,
-      "commentsCount": 8
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1422,
+      "commentsCount": 325
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
@@ -429,6 +405,29 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 27,
       "commentsCount": 4
+    },
+    {
+      "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
+      "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
+      "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
+      "url": "https://builder.aws.com/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2V3IFCtABEY9xiC5MAs5k2D81/Capa.webp",
+      "authorName": "Igor Galindo",
+      "authorAlias": "igorgalind0",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-ambassador",
+        "aws-academy",
+        "aws-networking",
+        "aws-community"
+      ],
+      "publishedAt": "2026-04-29T16:36:55.845Z",
+      "likesCount": 18,
+      "commentsCount": 8
     }
   ]
 }
