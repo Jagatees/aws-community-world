@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T10:31:15.931Z",
+  "updatedAt": "2026-05-01T11:25:47.163Z",
   "latest": [
     {
       "id": "/content/2ybATgGEXb3pzHfnqViiSbuJo8o",
@@ -354,46 +354,6 @@
       "publishedAt": "2026-05-01T01:46:46.019Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
-      "title": "Governing Agent Sprawl on AWS: Fleet Inventory, Framework Canary, and Deprecation Alerting for Multi-Model Bedrock Deployments",
-      "description": "Datadog's State of AI Engineering 2026 reports that more than 70% of organizations now run three or more AI models in production, with framework adoption doubling year over year. For teams running Amazon Bedrock Agents, this means one thing: you are operating a model fleet, not a single agent. And almost certainly, you do not have SLO owners assigned to every model in that fleet",
-      "url": "https://builder.aws.com/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6NXUYfYwUaq6AXmAK7eb4FFPB/data.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "agentic-ai",
-        "sre",
-        "devops",
-        "ai-ml"
-      ],
-      "publishedAt": "2026-05-01T01:26:03.623Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
-      "title": "AWS Finally Understood That Nobody Likes Surprise Bills",
-      "description": "A deep dive into CloudFront's flat-rate pricing plans launched in November 2025 — what's included, the math that matters, who benefits, and why this signals a bigger shift in how AWS thinks about pricing.",
-      "url": "https://builder.aws.com/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
-      "imageUrl": "",
-      "authorName": "Ricardo Gulias",
-      "authorAlias": "gulias",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4ggCPpfr9XqbMdvHfIhKVMObN.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-05-01T00:13:16.691Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -526,6 +486,28 @@
       "commentsCount": 6
     },
     {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1424,
+      "commentsCount": 325
+    },
+    {
       "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
       "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
       "description": "Protect your wallet from unexpected cloud costs. This quick tutorial shows beginners how to configure a Zero Spend Budget and receive instant email alerts before any charges accumulate.",
@@ -547,28 +529,6 @@
       "publishedAt": "2026-05-01T06:42:09.422Z",
       "likesCount": 1,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1423,
-      "commentsCount": 325
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
