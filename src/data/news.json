@@ -1,6 +1,52 @@
 {
-  "updatedAt": "2026-05-01T09:33:53.446Z",
+  "updatedAt": "2026-05-01T10:31:15.931Z",
   "latest": [
+    {
+      "id": "/content/2ybATgGEXb3pzHfnqViiSbuJo8o",
+      "title": "Building Interactive UIs Inside Claude with MCP Apps",
+      "description": "My wife asked if we could move our todos into Claude. Turns out we could with MCP Apps, and the implications go way beyond a household chore list.",
+      "url": "https://builder.aws.com/content/2ybATgGEXb3pzHfnqViiSbuJo8o",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7PEixkclE5U1dXJHm63QDarVu/A-car.webp",
+      "authorName": "Alexis Philippart de Foy",
+      "authorAlias": "apdf",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2cfPus93LFQipFlLmDCPJvZr6vb.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [
+        "mcp",
+        "claude",
+        "agentic-ai",
+        "generative-ai",
+        "startups"
+      ],
+      "publishedAt": "2026-05-01T10:15:45.583Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D7MN3JR1sEGo4f1vrHvQ3f8p5r",
+      "title": "From Cloud Clubs to Builders: Building a Stronger Student Tech Community",
+      "description": "The transition from AWS Cloud Clubs to AWS Student Builder Groups marks a shift toward hands-on learning, collaboration, and real-world building empowering students to grow as developers and community leaders.",
+      "url": "https://builder.aws.com/content/3D7MN3JR1sEGo4f1vrHvQ3f8p5r",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7Mq6zKLOIj3cCC3dUNYo6XY2i/Arti.webp",
+      "authorName": "Zubeda Yasmeen",
+      "authorAlias": "zubaidayasmeen",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CezcuVa9c4YxNFCb0gtZbJJVXC.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "ai",
+        "aws-cloud-clubs",
+        "aws-community-builders",
+        "aws-community",
+        "aws-tech-tales"
+      ],
+      "publishedAt": "2026-05-01T09:47:54.650Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D73BHvFsmxX8X5ytyyR8XXa6au",
       "title": "AWS Services That You Need to Learn to Prevent\nUnemployment in 2030",
@@ -203,6 +249,151 @@
       "publishedAt": "2026-05-01T03:14:00.912Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/36Z3FxYcJECtsQ547cpHm8Zygld",
+      "title": "How AWS Helps Students Start Building",
+      "description": "Most students have access to plenty of learning resources, yet still struggle to build real projects. This article explains how Amazon Web Services and the AWS Builder Platform help students start building with clear direction and free, practical learning.",
+      "url": "https://builder.aws.com/content/36Z3FxYcJECtsQ547cpHm8Zygld",
+      "imageUrl": "",
+      "authorName": "Arpna",
+      "authorAlias": "arpnak",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38BkXZTKPNPt9qPQSjeO14bUhUu.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-builders",
+        "aws-ambassador",
+        "aws-community",
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-01T03:06:34.487Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
+      "title": "Do Localhost pro Mundo: Como subi minha primeira API Serverless",
+      "description": "Sair do localhost:3000 é o primeiro grande passo de qualquer dev. Eu decidi ir pelo caminho Serverless e, nesse texto, abro o jogo sobre como fiz meu primeiro deploy do meu jeito. Se você quer ver como simplificar esse processo na nuvem, vem comigo.",
+      "url": "https://builder.aws.com/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6WG4eG9E6wcoyGoV7T2ogTe9p/b37c.webp",
+      "authorName": "Gabriel Campos Seemann",
+      "authorAlias": "gseemann",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-api-gateway",
+        "aws-sam",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-05-01T02:38:44.102Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6UGAVHoYdlYAD6SIKVpzfzMHl",
+      "title": "Amazon SES Deliverability: a practical guide to keeping your email reputation healthy",
+      "description": "Learn how to protect your email deliverability on Amazon SES with practical tips on SPF, DKIM, and DMARC setup, list hygiene, transactional vs. marketing separation, unsubscribe handling, and reputation monitoring. A hands-on guide based on CloudFaster's real-world experience with AWS clients.",
+      "url": "https://builder.aws.com/content/3D6UGAVHoYdlYAD6SIKVpzfzMHl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6UajRvC4d8QG3eOw6Oejtq3Jo/ses-.webp",
+      "authorName": "Dan Rezende",
+      "authorAlias": "danrezende",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D6KdP3scsrO0ttlLFmgrrHDyxz.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-ses",
+        "security",
+        "security-and-compliance"
+      ],
+      "publishedAt": "2026-05-01T02:31:06.412Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
+      "title": "Quando cloud deixou de ser conceito e passou a ser prática",
+      "description": "Neste artigo, compartilho minha experiência ao sair da teoria e ter meu primeiro contato prático com cloud computing através do EC2, explorando como esse processo me ajudou a entender melhor a AWS na prática.",
+      "url": "https://builder.aws.com/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6RfneCqzaTrxRQcgt6R9cHYhF/Arti.webp",
+      "authorName": "Nicolle Maia",
+      "authorAlias": "niccmaia",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-ec2",
+        "cloud-concepts",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-05-01T01:57:54.545Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6N19ceqk5FkeeSdz6wkakGS0y",
+      "title": "Saindo do Localhost: Como o AWS Builder Center destravou meus projetos em Laravel e React",
+      "description": "Sabe quando você termina de configurar seus containers no Docker, o seu backend em Laravel está rodando lisinho e o seu frontend em React está consumindo a API perfeitamente? A sensação de ver a tela funcionar é incrível. Mas, logo em seguida, bate aquela dúvida clássica que assombra todo estudante: \"E agora? Como eu tiro tudo isso do meu localhost e coloco no ar para o mundo acessar?\"",
+      "url": "https://builder.aws.com/content/3D6N19ceqk5FkeeSdz6wkakGS0y",
+      "imageUrl": "",
+      "authorName": "Jonatas Candido",
+      "authorAlias": "jonatascr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUQQXWy6led2REUrIbC6rxfRo0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "web-development",
+        "php"
+      ],
+      "publishedAt": "2026-05-01T01:46:46.019Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
+      "title": "Governing Agent Sprawl on AWS: Fleet Inventory, Framework Canary, and Deprecation Alerting for Multi-Model Bedrock Deployments",
+      "description": "Datadog's State of AI Engineering 2026 reports that more than 70% of organizations now run three or more AI models in production, with framework adoption doubling year over year. For teams running Amazon Bedrock Agents, this means one thing: you are operating a model fleet, not a single agent. And almost certainly, you do not have SLO owners assigned to every model in that fleet",
+      "url": "https://builder.aws.com/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6NXUYfYwUaq6AXmAK7eb4FFPB/data.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "agentic-ai",
+        "sre",
+        "devops",
+        "ai-ml"
+      ],
+      "publishedAt": "2026-05-01T01:26:03.623Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
+      "title": "AWS Finally Understood That Nobody Likes Surprise Bills",
+      "description": "A deep dive into CloudFront's flat-rate pricing plans launched in November 2025 — what's included, the math that matters, who benefits, and why this signals a bigger shift in how AWS thinks about pricing.",
+      "url": "https://builder.aws.com/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
+      "imageUrl": "",
+      "authorName": "Ricardo Gulias",
+      "authorAlias": "gulias",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4ggCPpfr9XqbMdvHfIhKVMObN.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-01T00:13:16.691Z",
+      "likesCount": 1,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -222,7 +413,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 33,
+      "likesCount": 34,
       "commentsCount": 13
     },
     {
@@ -289,29 +480,6 @@
       "commentsCount": 318
     },
     {
-      "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
-      "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
-      "description": "Protect your wallet from unexpected cloud costs. This quick tutorial shows beginners how to configure a Zero Spend Budget and receive instant email alerts before any charges accumulate.",
-      "url": "https://builder.aws.com/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6zwsuqel3sX2jyl7y1DcrNXtY/1764.webp",
-      "authorName": "Abdullah bin Amin",
-      "authorAlias": "abdullahbinamin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36V7Al29DXQxvHMtIlJpvlJIMnZ.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "aws-builders",
-        "aws-community",
-        "aws-community-builders",
-        "aws-community-day",
-        "aws-community-day-2026"
-      ],
-      "publishedAt": "2026-05-01T06:42:09.422Z",
-      "likesCount": 1,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -358,6 +526,29 @@
       "commentsCount": 6
     },
     {
+      "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
+      "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
+      "description": "Protect your wallet from unexpected cloud costs. This quick tutorial shows beginners how to configure a Zero Spend Budget and receive instant email alerts before any charges accumulate.",
+      "url": "https://builder.aws.com/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6zwsuqel3sX2jyl7y1DcrNXtY/1764.webp",
+      "authorName": "Abdullah bin Amin",
+      "authorAlias": "abdullahbinamin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36V7Al29DXQxvHMtIlJpvlJIMnZ.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "aws-builders",
+        "aws-community",
+        "aws-community-builders",
+        "aws-community-day",
+        "aws-community-day-2026"
+      ],
+      "publishedAt": "2026-05-01T06:42:09.422Z",
+      "likesCount": 1,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -376,7 +567,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1422,
+      "likesCount": 1423,
       "commentsCount": 325
     },
     {
