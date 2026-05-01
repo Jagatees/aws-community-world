@@ -1,6 +1,65 @@
 {
-  "updatedAt": "2026-05-01T22:17:07.422Z",
+  "updatedAt": "2026-05-01T23:18:12.590Z",
   "latest": [
+    {
+      "id": "/content/3D8vDF9Oo70gNGFvmZY8btuOgE9",
+      "title": "Don’t Just Learn AWS - Build Something That Matters",
+      "description": "Move beyond tutorials and start building real world projects using AWS as a students. This guide shows how to turn your learning into practical, deployed applications that stand out in academics and careers.",
+      "url": "https://builder.aws.com/content/3D8vDF9Oo70gNGFvmZY8btuOgE9",
+      "imageUrl": "",
+      "authorName": "Nischal S Tumbeti",
+      "authorAlias": "nischalst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AL5C9TUX7gXtzTqrD5rjJHAggf.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-01T23:15:50.683Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8tkQVwOHAbkrphXd251NX7FZJ",
+      "title": "Agentes de IA: o que são, como funcionam e por que a AWS está na vanguarda dessa revolução",
+      "description": "Neste artigo, você vai entender o que são agentes de IA, como eles funcionam por dentro com planejamento, ferramentas e memória, e como a AWS, através do Amazon Bedrock e outros serviços, coloca essa tecnologia ao alcance de quem está começando. Do conceito até um exemplo prático de agente de suporte ao cliente, tudo explicado do zero.",
+      "url": "https://builder.aws.com/content/3D8tkQVwOHAbkrphXd251NX7FZJ",
+      "imageUrl": "",
+      "authorName": "julia rocha",
+      "authorAlias": "juliarocha",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "agentic-ai",
+        "ai-agents",
+        "ai-engineering",
+        "ai-for-developers",
+        "ai-ml"
+      ],
+      "publishedAt": "2026-05-01T22:56:19.724Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8n0o53xdQB3tXhpG2frlj0y5F",
+      "title": "AWS Unilorin Project : EC2, IAM, Security and Billing",
+      "description": "This project involved launching and configuring a virtual server using Amazon EC2, setting up secure access and permissions with AWS IAM, and deploying a web server with a custom web page. Permission validation was also performed by allowing and denying specific EC2 actions to ensure proper access control.",
+      "url": "https://builder.aws.com/content/3D8n0o53xdQB3tXhpG2frlj0y5F",
+      "imageUrl": "",
+      "authorName": "Tosin Okeshola",
+      "authorAlias": "queet",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-05-01T22:37:03.613Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D8mFIP6a3yv2n0NEu13CEmEcsH",
       "title": "How to Automate Your daily Workflow with Agents in Amazon Quick Desktop",
@@ -41,8 +100,8 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-01T21:37:37.925Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3BhDwffVCcz6QcoAUqmUAJUQvnG",
@@ -137,7 +196,7 @@
       "imageUrl": "",
       "authorName": "Vitor Ochoa",
       "authorAlias": "ochoavitu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8kTlJh4fmtMaPIpv4eEVehfuv.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8wsDBDLXPnRVSgmTl3qvp43c0.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
@@ -187,8 +246,8 @@
         "minecraft"
       ],
       "publishedAt": "2026-05-01T19:24:15.465Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "likesCount": 4,
+      "commentsCount": 2
     },
     {
       "id": "/content/3D8RxvLnpdBZ8Q8PqoPFEkM7OxL",
@@ -205,6 +264,126 @@
       "tags": [],
       "publishedAt": "2026-05-01T19:07:21.720Z",
       "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8R1WMzcNVSBzAa3M7je9fJcBB",
+      "title": "AWS IAM Explained: Least Privilege in Practice",
+      "description": "What AWS IAM actually does, how policy evaluation works, and why least privilege is the most important architectural decision you make on AWS.",
+      "url": "https://builder.aws.com/content/3D8R1WMzcNVSBzAa3M7je9fJcBB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8RQu2h8UbNeJoxek0PVGENOEf/cove.webp",
+      "authorName": "Rashindu Tharinda",
+      "authorAlias": "rash522",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAXrueNTFAH8WtVtH75cydfLaF.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "iam",
+        "aws-educate",
+        "cloud-security",
+        "devops",
+        "aws-identity-and-access-management"
+      ],
+      "publishedAt": "2026-05-01T19:04:32.760Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8K4bcL8J3CppHfEGz9RmczwIH",
+      "title": "Closing the Evaluation Gap for Multi-Agent Systems on Strands",
+      "description": "Your CI/CD pipeline is green but your agent returns wrong answers in production. Traditional tests can't catch routing, faithfulness, or multi-turn failures. This post covers how to evaluate multi-agent systems on Strands using Strands Evals and AgentCore Evaluations across the full lifecycle.",
+      "url": "https://builder.aws.com/content/3D8K4bcL8J3CppHfEGz9RmczwIH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8KDw10ttT24PHCfv5bVKmG15g/eval.webp",
+      "authorName": "Anand Komandooru",
+      "authorAlias": "akomandooru",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2j0YwdrzEkq52Msa3pUAl5IEm8o.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-01T18:53:56.649Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8FAAuBSXKnsoXrqpLopNPWhUl",
+      "title": "Meu Primeiro Passo na Nuvem: Como o AWS Builder Center está abrindo portas para mim (e pode abrir para você!)",
+      "description": "Descubra como o AWS Builder Center pode ajudar você a dar seus primeiros passos e evoluir na área.",
+      "url": "https://builder.aws.com/content/3D8FAAuBSXKnsoXrqpLopNPWhUl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8HlhQJSZgO4wfySjUcLVNXroz/mbhj.webp",
+      "authorName": "Gabrielle Soares",
+      "authorAlias": "gabistech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIrm2Uafy4bUUbzHnlXC4P7l0k.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-01T17:31:35.662Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8DVHtv8QtgHoG8cOqChjH69zs",
+      "title": "AWS Agents of Impact: Build Production-Ready AI Agents | San Francisco, June 1",
+      "description": "A full-day, hands-on builder event at the AWS GenAI Loft in San Francisco. Join AWS Solution Architects for interactive labs, live demos, and deep dives on building and operationalizing agentic AI systems. Designed for software engineers, engineering managers, and senior technical leaders.",
+      "url": "https://builder.aws.com/content/3D8DVHtv8QtgHoG8cOqChjH69zs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8G5zkPt5uNC8YWzK8nsTzsgBO/Agen.webp",
+      "authorName": "Melanie",
+      "authorAlias": "melanwin",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "builder-loft",
+        "generative-ai",
+        "agentic-ai",
+        "agents"
+      ],
+      "publishedAt": "2026-05-01T17:20:18.049Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8ADCdxGYdq1roctsD4DeBXf9b",
+      "title": "A Nuvem Além do Visível: Como a AWS Sustenta nossa Rotina",
+      "description": "Neste artigo, apresento uma visão crítica sobre como a computação em nuvem deixou de ser um conceito abstrato para se tornar o alicerce invisível das nossas ações cotidianas, desde o login acadêmico até a entrega global de conteúdo.",
+      "url": "https://builder.aws.com/content/3D8ADCdxGYdq1roctsD4DeBXf9b",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8DI1WKLbI4SVE3vJGeL77u2rU/Capt.webp",
+      "authorName": "Adriano Praxedes",
+      "authorAlias": "adrianopraxedes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CcrQetz4CcVto3jVA9iPv6HSkK.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-cloudfront",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-05-01T17:01:42.383Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D741qzraId1EC9xYFet80pZPGk",
+      "title": "I Couldn't Articulate Clearly. So I Built This.",
+      "description": "I couldn't articulate clearly, so I built an app. Learn how I used Flutter, Amazon Kiro, and Spec-Driven Development to gamify speech drills with Articulately.",
+      "url": "https://builder.aws.com/content/3D741qzraId1EC9xYFet80pZPGk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8BHSnqCnKu0khiQzIBUgk3wKR/ksjd.webp",
+      "authorName": "John Lexter Reyes",
+      "authorAlias": "lextech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34udd76uLfDn7ednrVTZGxCUBIL.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "kiro",
+        "ai",
+        "students"
+      ],
+      "publishedAt": "2026-05-01T16:45:06.594Z",
+      "likesCount": 1,
       "commentsCount": 0
     }
   ],
@@ -225,7 +404,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 45,
+      "likesCount": 46,
       "commentsCount": 17
     },
     {
@@ -246,7 +425,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3539,
+      "likesCount": 3540,
       "commentsCount": 323
     },
     {
@@ -292,6 +471,29 @@
       "commentsCount": 318
     },
     {
+      "id": "/content/3D6D6sERqXefrI0qhzXcRqjGS71",
+      "title": "Monte Seu Servidor de Minecraft na Nuvem com EC2! ⛏️☁️",
+      "description": "Aprenda a criar um servidor simples e avançado com máquinas EC2 na AWS!",
+      "url": "https://builder.aws.com/content/3D6D6sERqXefrI0qhzXcRqjGS71",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8UfqJv23PLLYywzu401hryBZQ/arti.webp",
+      "authorName": "Rober Araujo Trindade",
+      "authorAlias": "rober122",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-academy",
+        "aws-ambassador",
+        "aws-builders",
+        "amazon-ec2",
+        "minecraft"
+      ],
+      "publishedAt": "2026-05-01T19:24:15.465Z",
+      "likesCount": 4,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -315,6 +517,28 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3D8ivrNseHoEaSGbWvihmU6Bv1F",
+      "title": "Como começar a usar a AWS de graça (e sem medo de receber uma fatura surpresa)",
+      "description": "O Free Tier da AWS é uma das melhores formas de aprender nuvem sem gastar nada, mas tem regras que você precisa conhecer antes de começar. Neste artigo, você aprende a criar sua conta, ativar os alertas certos e explorar a AWS com segurança.",
+      "url": "https://builder.aws.com/content/3D8ivrNseHoEaSGbWvihmU6Bv1F",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8k1gAlFXnFGxvYhYFxuxugIf4/FREE.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8GruDZpqspZ5fii1irvazGHZq.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "aws-builders",
+        "free-tier-projects",
+        "students",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-01T21:37:37.925Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -333,8 +557,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1427,
-      "commentsCount": 326
+      "likesCount": 1428,
+      "commentsCount": 327
     },
     {
       "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
@@ -360,70 +584,21 @@
       "commentsCount": 6
     },
     {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 30,
-      "commentsCount": 6
-    },
-    {
-      "id": "/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
-      "title": "From AWS Cloud Club to AWS Student Builder Group — A New Era of Builders",
-      "description": "AWS Cloud Clubs → AWS Student Builder Groups 🚀\n\nThis isn’t just a rebrand.\nIt’s a shift from learning to building.\n\nStudents are now creators, innovators, and future leaders in cloud & AI.\n\nTime to build something real. 💡\n\n#AWS #AWSSBCL #ad #AWSStudentBuilderGroup #Cloud #AI #Students #BuildInPublic #",
-      "url": "https://builder.aws.com/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7lnR0eFtDUAQT5mKa6q4DHrHi/1000.webp",
-      "authorName": "Pranav Shinde",
-      "authorAlias": "iampranav009",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34zgoUW6HtgmQh5Fm510eDYXTCr.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-cloud-clubs",
-        "ai",
-        "aws-community",
-        "developer"
-      ],
-      "publishedAt": "2026-05-01T13:21:02.701Z",
-      "likesCount": 5,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxINBe97cOwR6iVYNh0hVyR9Q0.webp",
-      "location": "West Bengal, IN",
-      "lat": 22.9964948,
-      "lng": 87.6855882,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1129,
-      "commentsCount": 202
+      "id": "/content/3D8n0o53xdQB3tXhpG2frlj0y5F",
+      "title": "AWS Unilorin Project : EC2, IAM, Security and Billing",
+      "description": "This project involved launching and configuring a virtual server using Amazon EC2, setting up secure access and permissions with AWS IAM, and deploying a web server with a custom web page. Permission validation was also performed by allowing and denying specific EC2 actions to ensure proper access control.",
+      "url": "https://builder.aws.com/content/3D8n0o53xdQB3tXhpG2frlj0y5F",
+      "imageUrl": "",
+      "authorName": "Tosin Okeshola",
+      "authorAlias": "queet",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-05-01T22:37:03.613Z",
+      "likesCount": 1,
+      "commentsCount": 0
     }
   ]
 }
