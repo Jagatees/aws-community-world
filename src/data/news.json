@@ -1,6 +1,86 @@
 {
-  "updatedAt": "2026-05-01T18:24:31.597Z",
+  "updatedAt": "2026-05-01T19:28:47.432Z",
   "latest": [
+    {
+      "id": "/content/3D6D6sERqXefrI0qhzXcRqjGS71",
+      "title": "Monte Seu Servidor de Minecraft na Nuvem com EC2! ⛏️☁️",
+      "description": "Aprenda a criar um servidor simples e avançado com máquinas EC2 na AWS!",
+      "url": "https://builder.aws.com/content/3D6D6sERqXefrI0qhzXcRqjGS71",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8UfqJv23PLLYywzu401hryBZQ/arti.webp",
+      "authorName": "Rober Araujo Trindade",
+      "authorAlias": "rober122",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-academy",
+        "aws-ambassador",
+        "aws-builders",
+        "amazon-ec2",
+        "minecraft"
+      ],
+      "publishedAt": "2026-05-01T19:24:15.465Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8RxvLnpdBZ8Q8PqoPFEkM7OxL",
+      "title": "O que explica a liderança da AWS no mercado global de cloud?",
+      "description": "Explico os principais fatores que fazem a AWS ser líder no mercado global de cloud e por que esse tema é importante para quem estuda ou trabalha com tecnologia.",
+      "url": "https://builder.aws.com/content/3D8RxvLnpdBZ8Q8PqoPFEkM7OxL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8TUKSoQti3VrsSunOKzAzgRca/Capt.webp",
+      "authorName": "Mathias Petry Peixoto",
+      "authorAlias": "mathiaspetry",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8998jPR0b2osKaco5sU3mCcOq.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-01T19:07:21.720Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8R1WMzcNVSBzAa3M7je9fJcBB",
+      "title": "AWS IAM Explained: Least Privilege in Practice",
+      "description": "What AWS IAM actually does, how policy evaluation works, and why least privilege is the most important architectural decision you make on AWS.",
+      "url": "https://builder.aws.com/content/3D8R1WMzcNVSBzAa3M7je9fJcBB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8RQu2h8UbNeJoxek0PVGENOEf/cove.webp",
+      "authorName": "Rashindu Tharinda",
+      "authorAlias": "rash522",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAXrueNTFAH8WtVtH75cydfLaF.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "iam",
+        "aws-educate",
+        "cloud-security",
+        "devops",
+        "aws-identity-and-access-management"
+      ],
+      "publishedAt": "2026-05-01T19:04:32.760Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8K4bcL8J3CppHfEGz9RmczwIH",
+      "title": "Closing the Evaluation Gap for Multi-Agent Systems on Strands",
+      "description": "Your CI/CD pipeline is green but your agent returns wrong answers in production. Traditional tests can't catch routing, faithfulness, or multi-turn failures. This post covers how to evaluate multi-agent systems on Strands using Strands Evals and AgentCore Evaluations across the full lifecycle.",
+      "url": "https://builder.aws.com/content/3D8K4bcL8J3CppHfEGz9RmczwIH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8KDw10ttT24PHCfv5bVKmG15g/eval.webp",
+      "authorName": "Anand Komandooru",
+      "authorAlias": "akomandooru",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2j0YwdrzEkq52Msa3pUAl5IEm8o.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-01T18:53:56.649Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D8FAAuBSXKnsoXrqpLopNPWhUl",
       "title": "Meu Primeiro Passo na Nuvem: Como o AWS Builder Center está abrindo portas para mim (e pode abrir para você!)",
@@ -122,89 +202,6 @@
       "publishedAt": "2026-05-01T15:24:49.152Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D7q89NXCa8JsrjXSoVtOF6N1AG",
-      "title": "A IA está dificultando o mercado de trabalho dev? Como você pode sair por cima",
-      "description": "Por que a porta de entrada para devs juniores está mais estreita e por que cloud, DevOps e IA são o atalho que ninguém está te contando.",
-      "url": "https://builder.aws.com/content/3D7q89NXCa8JsrjXSoVtOF6N1AG",
-      "imageUrl": "",
-      "authorName": "Murilo de Souza Neves",
-      "authorAlias": "muriloneves",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai",
-        "career",
-        "devops"
-      ],
-      "publishedAt": "2026-05-01T13:55:27.268Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3D7lxXVtRWAJFyYtq8w27fxKURU",
-      "title": "How AWS Powers Modern Applications Behind the Scenes",
-      "description": "Modern applications need to be fast, scalable, secure, and available at all times. From streaming platforms and gaming services to AI tools and mobile apps, many of today’s digital experiences rely on cloud computing infrastructure to operate smoothly. This article explores how AWS powers modern applications behind the scenes using services like EC2, S3, Lambda, RDS, and CloudFront, while helping developers build and scale applications efficiently.",
-      "url": "https://builder.aws.com/content/3D7lxXVtRWAJFyYtq8w27fxKURU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7naUsGx32Kyv3G5B0QA13cx4V/Chat.webp",
-      "authorName": "Ankit kumar singh",
-      "authorAlias": "unkeet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COIxeiZyHDGz8arOysIOfC7o1j.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-01T13:27:54.329Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Co58JMRlJJIBThGOJPEtZHYWN6",
-      "title": "Por que aprender Amazon Web Services pode facilitar sua vida na faculdade",
-      "description": "Veja como a utilização Amazon Web Services pode reduzir dificuldades comuns que alunos enfrentam no meio universitário e aproximar você da realidade do mercado.",
-      "url": "https://builder.aws.com/content/3Co58JMRlJJIBThGOJPEtZHYWN6",
-      "imageUrl": "",
-      "authorName": "Felipe Mareque",
-      "authorAlias": "felipemareque",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CohMtpmTyzwjHQ5CrBgywxD1HH.webp",
-      "location": "RS, BR",
-      "lat": -29.8425284,
-      "lng": -53.7680577,
-      "tags": [
-        "aws-educate",
-        "aws-solutions",
-        "claude",
-        "compute",
-        "experience"
-      ],
-      "publishedAt": "2026-05-01T13:21:50.740Z",
-      "likesCount": 5,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
-      "title": "From AWS Cloud Club to AWS Student Builder Group — A New Era of Builders",
-      "description": "AWS Cloud Clubs → AWS Student Builder Groups 🚀\n\nThis isn’t just a rebrand.\nIt’s a shift from learning to building.\n\nStudents are now creators, innovators, and future leaders in cloud & AI.\n\nTime to build something real. 💡\n\n#AWS #AWSSBCL #ad #AWSStudentBuilderGroup #Cloud #AI #Students #BuildInPublic #",
-      "url": "https://builder.aws.com/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7lnR0eFtDUAQT5mKa6q4DHrHi/1000.webp",
-      "authorName": "Pranav Shinde",
-      "authorAlias": "iampranav009",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34zgoUW6HtgmQh5Fm510eDYXTCr.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-cloud-clubs",
-        "ai",
-        "aws-community",
-        "developer"
-      ],
-      "publishedAt": "2026-05-01T13:21:02.701Z",
-      "likesCount": 5,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -287,30 +284,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2849,
+      "likesCount": 2850,
       "commentsCount": 318
-    },
-    {
-      "id": "/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
-      "title": "From AWS Cloud Club to AWS Student Builder Group — A New Era of Builders",
-      "description": "AWS Cloud Clubs → AWS Student Builder Groups 🚀\n\nThis isn’t just a rebrand.\nIt’s a shift from learning to building.\n\nStudents are now creators, innovators, and future leaders in cloud & AI.\n\nTime to build something real. 💡\n\n#AWS #AWSSBCL #ad #AWSStudentBuilderGroup #Cloud #AI #Students #BuildInPublic #",
-      "url": "https://builder.aws.com/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7lnR0eFtDUAQT5mKa6q4DHrHi/1000.webp",
-      "authorName": "Pranav Shinde",
-      "authorAlias": "iampranav009",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34zgoUW6HtgmQh5Fm510eDYXTCr.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-cloud-clubs",
-        "ai",
-        "aws-community",
-        "developer"
-      ],
-      "publishedAt": "2026-05-01T13:21:02.701Z",
-      "likesCount": 5,
-      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -336,27 +311,26 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
-      "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
-      "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
-      "url": "https://builder.aws.com/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D530AGjHQWz0By3PD8XHQbAMAu/Bann.webp",
-      "authorName": "Pedro Cardoso",
-      "authorAlias": "printfpedro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwWhW84y4gmNGAxVx4SLIrZKM0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
+      "title": "From AWS Cloud Club to AWS Student Builder Group — A New Era of Builders",
+      "description": "AWS Cloud Clubs → AWS Student Builder Groups 🚀\n\nThis isn’t just a rebrand.\nIt’s a shift from learning to building.\n\nStudents are now creators, innovators, and future leaders in cloud & AI.\n\nTime to build something real. 💡\n\n#AWS #AWSSBCL #ad #AWSStudentBuilderGroup #Cloud #AI #Students #BuildInPublic #",
+      "url": "https://builder.aws.com/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7lnR0eFtDUAQT5mKa6q4DHrHi/1000.webp",
+      "authorName": "Pranav Shinde",
+      "authorAlias": "iampranav009",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34zgoUW6HtgmQh5Fm510eDYXTCr.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
       "tags": [
-        "students",
-        "aws-ambassador",
-        "aws-builders",
         "aws-cloud-clubs",
-        "builder-center"
+        "ai",
+        "aws-community",
+        "developer"
       ],
-      "publishedAt": "2026-04-30T19:34:21.906Z",
-      "likesCount": 10,
-      "commentsCount": 6
+      "publishedAt": "2026-05-01T13:21:02.701Z",
+      "likesCount": 5,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -381,25 +355,27 @@
       "commentsCount": 325
     },
     {
-      "id": "/content/3D7q89NXCa8JsrjXSoVtOF6N1AG",
-      "title": "A IA está dificultando o mercado de trabalho dev? Como você pode sair por cima",
-      "description": "Por que a porta de entrada para devs juniores está mais estreita e por que cloud, DevOps e IA são o atalho que ninguém está te contando.",
-      "url": "https://builder.aws.com/content/3D7q89NXCa8JsrjXSoVtOF6N1AG",
-      "imageUrl": "",
-      "authorName": "Murilo de Souza Neves",
-      "authorAlias": "muriloneves",
-      "authorAvatarUrl": "",
+      "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
+      "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
+      "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
+      "url": "https://builder.aws.com/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D530AGjHQWz0By3PD8XHQbAMAu/Bann.webp",
+      "authorName": "Pedro Cardoso",
+      "authorAlias": "printfpedro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwWhW84y4gmNGAxVx4SLIrZKM0.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "ai",
-        "career",
-        "devops"
+        "students",
+        "aws-ambassador",
+        "aws-builders",
+        "aws-cloud-clubs",
+        "builder-center"
       ],
-      "publishedAt": "2026-05-01T13:55:27.268Z",
-      "likesCount": 2,
-      "commentsCount": 1
+      "publishedAt": "2026-04-30T19:34:21.906Z",
+      "likesCount": 10,
+      "commentsCount": 6
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
@@ -423,6 +399,27 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 29,
       "commentsCount": 5
+    },
+    {
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxINBe97cOwR6iVYNh0hVyR9Q0.webp",
+      "location": "West Bengal, IN",
+      "lat": 22.9964948,
+      "lng": 87.6855882,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 1129,
+      "commentsCount": 202
     }
   ]
 }
