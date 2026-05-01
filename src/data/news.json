@@ -1,6 +1,66 @@
 {
-  "updatedAt": "2026-04-30T23:19:25.741Z",
+  "updatedAt": "2026-05-01T00:34:57.558Z",
   "latest": [
+    {
+      "id": "/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
+      "title": "AWS Finally Understood That Nobody Likes Surprise Bills",
+      "description": "A deep dive into CloudFront's flat-rate pricing plans launched in November 2025 — what's included, the math that matters, who benefits, and why this signals a bigger shift in how AWS thinks about pricing.",
+      "url": "https://builder.aws.com/content/3D6DxKr47HkYZkCY7d2efzYTu1B",
+      "imageUrl": "",
+      "authorName": "Ricardo Gulias",
+      "authorAlias": "gulias",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4ggCPpfr9XqbMdvHfIhKVMObN.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-01T00:13:16.691Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D66nNCvLVAhW8IgEiHuWyg4zEV",
+      "title": "Caching Public Container Images with ECR Pull Through Cache",
+      "description": "How to mirror Docker Hub and Public ECR into your private registry using AWS-native tools and official Terraform modules",
+      "url": "https://builder.aws.com/content/3D66nNCvLVAhW8IgEiHuWyg4zEV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D699blLdnZniGclng0AiFOV9R2/bann.webp",
+      "authorName": "Frank Pimienta",
+      "authorAlias": "frankpimienta",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2araHqCMPT5MrG24ZEV7WOPYH5C.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "amazon-ecr",
+        "docker",
+        "terraform",
+        "cloud-operations",
+        "containers"
+      ],
+      "publishedAt": "2026-04-30T23:30:56.897Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D60x2QyBwMkFgo8OKKUnjIQDea",
+      "title": "What They Don't Tell You About Technical Interviews",
+      "description": "We all know how we feel when we get a technical interview. It's time to pop open LeetCode! And yes, it is very important to have those hard skills locked down and ready. But what if I told you that will only get you halfway there?",
+      "url": "https://builder.aws.com/content/3D60x2QyBwMkFgo8OKKUnjIQDea",
+      "imageUrl": "",
+      "authorName": "Zayda Townsend",
+      "authorAlias": "zaydazt",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVWfv5ZTkiIlcXOGtjVvBZsBRH.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students",
+        "interview-prep"
+      ],
+      "publishedAt": "2026-04-30T23:23:05.124Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D65mbaffozNrpbK1evBKgRJZAH",
       "title": "Amazon Bedrock: The Platform That's Quietly Powering the Generative AI Revolution",
@@ -130,7 +190,7 @@
       "title": "Two AWS Student Builder Group Leaders Win Regional Champion Titles in the AWS 10,000 AIdeas Competition",
       "description": "Two AWS Student Builder Group Leaders won Regional Champion titles in the AWS 10,000 AIdeas Competition. Misael Calisaya from Argentina created CogniPath, an adaptive learning platform for Latin America. Jerry Davis NDJANA MENGUE from Cameroon built Global Impact AI Navigator, a strategic planning tool. Both projects were built with Kiro and AWS Free Tier, proving that purpose and skill are all you need to build something meaningful with AI.",
       "url": "https://builder.aws.com/content/3D5pIgNB1T5BBcHPzxWRaNmT17d",
-      "imageUrl": "",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6Fx9wqDw6dsK4O4YmqFbtNhyB/Scre.webp",
       "authorName": "Lisa Bagley",
       "authorAlias": "lrbagley",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BEgcG3gfSwRqqx4Q28H6Ux4V2C.webp",
@@ -141,71 +201,6 @@
       "publishedAt": "2026-04-30T21:04:06.861Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 12,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
-      "title": "Minha jornada inicial com AWS: aprendizados, desafios e descobertas ☁️",
-      "description": "O que aprendi nas duas semanas utilizando o AWS Builder Center e como isso pode influenciar seu desenvolvimento profissional.",
-      "url": "https://builder.aws.com/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5hOuxgRpR0ntBWGtdsqfDDPsd/foto.webp",
-      "authorName": "Alice Barroso",
-      "authorAlias": "alicevbarroso",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "amazon-s3",
-        "aws-ambassador",
-        "aws-academy",
-        "amazon-ec2",
-        "amazon-cloudfront"
-      ],
-      "publishedAt": "2026-04-30T19:42:36.065Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
-      "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
-      "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
-      "url": "https://builder.aws.com/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D530AGjHQWz0By3PD8XHQbAMAu/Bann.webp",
-      "authorName": "Pedro Cardoso",
-      "authorAlias": "printfpedro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwWhW84y4gmNGAxVx4SLIrZKM0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "aws-ambassador",
-        "aws-builders",
-        "aws-cloud-clubs",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-30T19:34:21.906Z",
-      "likesCount": 6,
-      "commentsCount": 3
     }
   ],
   "trending": [
@@ -225,31 +220,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 12,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
-      "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
-      "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
-      "url": "https://builder.aws.com/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D530AGjHQWz0By3PD8XHQbAMAu/Bann.webp",
-      "authorName": "Pedro Cardoso",
-      "authorAlias": "printfpedro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwWhW84y4gmNGAxVx4SLIrZKM0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "aws-ambassador",
-        "aws-builders",
-        "aws-cloud-clubs",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-30T19:34:21.906Z",
-      "likesCount": 6,
-      "commentsCount": 3
+      "likesCount": 17,
+      "commentsCount": 6
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -294,6 +266,29 @@
       "commentsCount": 1918
     },
     {
+      "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
+      "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
+      "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
+      "url": "https://builder.aws.com/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D530AGjHQWz0By3PD8XHQbAMAu/Bann.webp",
+      "authorName": "Pedro Cardoso",
+      "authorAlias": "printfpedro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwWhW84y4gmNGAxVx4SLIrZKM0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "aws-ambassador",
+        "aws-builders",
+        "aws-cloud-clubs",
+        "builder-center"
+      ],
+      "publishedAt": "2026-04-30T19:34:21.906Z",
+      "likesCount": 6,
+      "commentsCount": 3
+    },
+    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -313,27 +308,6 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2847,
       "commentsCount": 318
-    },
-    {
-      "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
-      "title": "Eu esperava complexidade. Encontrei pessoas.",
-      "description": "Entrei no AWS Builder Center esperando documentação pesada e interface confusa. O que encontrei foi uma comunidade ativa de estudantes e devs em estágios completamente diferentes — todos no mesmo espaço, sem hierarquia não escrita. Esse artigo é sobre essa surpresa.",
-      "url": "https://builder.aws.com/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
-      "imageUrl": "",
-      "authorName": "Arthur Ramos",
-      "authorAlias": "arthurramos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8EeAbHx8TzXx7Dra6CCF1Onvd.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "learn",
-        "web-development"
-      ],
-      "publishedAt": "2026-04-30T11:35:59.674Z",
-      "likesCount": 10,
-      "commentsCount": 4
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -359,6 +333,27 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
+      "title": "Eu esperava complexidade. Encontrei pessoas.",
+      "description": "Entrei no AWS Builder Center esperando documentação pesada e interface confusa. O que encontrei foi uma comunidade ativa de estudantes e devs em estágios completamente diferentes — todos no mesmo espaço, sem hierarquia não escrita. Esse artigo é sobre essa surpresa.",
+      "url": "https://builder.aws.com/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
+      "imageUrl": "",
+      "authorName": "Arthur Ramos",
+      "authorAlias": "arthurramos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8EeAbHx8TzXx7Dra6CCF1Onvd.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "learn",
+        "web-development"
+      ],
+      "publishedAt": "2026-04-30T11:35:59.674Z",
+      "likesCount": 10,
+      "commentsCount": 4
+    },
+    {
       "id": "/content/3D5gyErLoD2HJuChdgW4iLpPEsq",
       "title": "Minha jornada inicial com AWS: aprendizados, desafios e descobertas ☁️",
       "description": "O que aprendi nas duas semanas utilizando o AWS Builder Center e como isso pode influenciar seu desenvolvimento profissional.",
@@ -382,28 +377,6 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3D65mbaffozNrpbK1evBKgRJZAH",
-      "title": "Amazon Bedrock: The Platform That's Quietly Powering the Generative AI Revolution",
-      "description": "Amazon Bedrock is AWS's fully managed platform for building production-grade generative AI applications using the best foundation models in the industry - all through a single, secure API. Whether you're building intelligent agents, RAG pipelines, or fine-tuned models, Bedrock gives you the flexibility, compliance, and scale to ship AI that actually works in the real world.",
-      "url": "https://builder.aws.com/content/3D65mbaffozNrpbK1evBKgRJZAH",
-      "imageUrl": "",
-      "authorName": "Srinivas",
-      "authorAlias": "srinivas45",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39LREVwaVHx0iaaeiWEhtaS3hHs.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock-agents",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-04-30T23:11:38.645Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
       "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
       "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
@@ -425,6 +398,29 @@
       "publishedAt": "2026-04-29T16:36:55.845Z",
       "likesCount": 18,
       "commentsCount": 8
+    },
+    {
+      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "title": "🌩️ Getting Started with AWS Builder Center",
+      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
+      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
+      "authorName": "G Monish Reddy",
+      "authorAlias": "technicalmonish",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "getting-started",
+        "students",
+        "learn",
+        "builder-center",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-04-29T13:07:42.542Z",
+      "likesCount": 26,
+      "commentsCount": 3
     }
   ]
 }
