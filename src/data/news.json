@@ -1,6 +1,63 @@
 {
-  "updatedAt": "2026-05-01T06:54:45.110Z",
+  "updatedAt": "2026-05-01T07:46:17.951Z",
   "latest": [
+    {
+      "id": "/content/3D73Pl9fZuSepucQRrnJW0vs9VX",
+      "title": "AWS Builder Center: The Ultimate Platform for Students to Learn, Build, and Grow",
+      "description": "A complete guide to understanding AWS Builder Center beyond cloud,how students can learn, build, create a tech identity, and grow in the global ecosystem.",
+      "url": "https://builder.aws.com/content/3D73Pl9fZuSepucQRrnJW0vs9VX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D744dywNYUfC1kvYFXCqpwVFsQ/Scre.webp",
+      "authorName": "Fathima rasha",
+      "authorAlias": "fathimarasha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ByT2mh5dq8GUgh4DLyI4TBcLmi.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-builders",
+        "aws-community-builders",
+        "students",
+        "aws-ambassador",
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-01T07:30:49.972Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D74FX8orR5Y3oFjHadoukN5JKw",
+      "title": "From Student to Community Leader: How AWS Builder Center Helped Me Become an AWS Student Builder Group Leader",
+      "description": "When I started building on AWS, I had the same problem most CS students have — I knew the theory, but had no community around me that was actually shipping things on the cloud. No one to ask when my Lambda function threw a cold start error at 2am. No one to show me what a real serverless architecture looks like beyond a textbook diagram.\nThat changed when I found the AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3D74FX8orR5Y3oFjHadoukN5JKw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D74vZbTg4n0VL2mTA2bo5Fqwj8/Link.webp",
+      "authorName": "Ram Surya Chelluboyina",
+      "authorAlias": "ramsuryach",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D764dNlKRn4VPdBiUvD4kgTA70.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-01T07:20:55.638Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D712pawdfyxDtLR7FBGzr7ZMv2",
+      "title": "Qual certificação AWS escolher no começo?",
+      "description": "Entenda as principais certificações da AWS, descubra para quais perfis cada uma é indicada e escolha a melhor rota para acelerar sua carreira em computação em nuvem de forma estratégica.",
+      "url": "https://builder.aws.com/content/3D712pawdfyxDtLR7FBGzr7ZMv2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D71jRpZkptwg178rQxGHEHAvI5/10990.webp",
+      "authorName": "Andrey Andrade e Souza",
+      "authorAlias": "andreysouza",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSgABXZpQs7p6oBmWTLR01x5X2.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-01T06:55:13.999Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
       "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
@@ -21,8 +78,8 @@
         "aws-community-day-2026"
       ],
       "publishedAt": "2026-05-01T06:42:09.422Z",
-      "likesCount": 0,
-      "commentsCount": 1
+      "likesCount": 1,
+      "commentsCount": 2
     },
     {
       "id": "/content/3D6vPnXsHXKKsmP0FMcerCebfh8",
@@ -151,69 +208,6 @@
       "publishedAt": "2026-05-01T03:06:34.487Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
-      "title": "Do Localhost pro Mundo: Como subi minha primeira API Serverless",
-      "description": "Sair do localhost:3000 é o primeiro grande passo de qualquer dev. Eu decidi ir pelo caminho Serverless e, nesse texto, abro o jogo sobre como fiz meu primeiro deploy do meu jeito. Se você quer ver como simplificar esse processo na nuvem, vem comigo.",
-      "url": "https://builder.aws.com/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6WG4eG9E6wcoyGoV7T2ogTe9p/b37c.webp",
-      "authorName": "Gabriel Campos Seemann",
-      "authorAlias": "gseemann",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-api-gateway",
-        "aws-sam",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-05-01T02:38:44.102Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6UGAVHoYdlYAD6SIKVpzfzMHl",
-      "title": "Amazon SES Deliverability: a practical guide to keeping your email reputation healthy",
-      "description": "Learn how to protect your email deliverability on Amazon SES with practical tips on SPF, DKIM, and DMARC setup, list hygiene, transactional vs. marketing separation, unsubscribe handling, and reputation monitoring. A hands-on guide based on CloudFaster's real-world experience with AWS clients.",
-      "url": "https://builder.aws.com/content/3D6UGAVHoYdlYAD6SIKVpzfzMHl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6UajRvC4d8QG3eOw6Oejtq3Jo/ses-.webp",
-      "authorName": "Dan Rezende",
-      "authorAlias": "danrezende",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D6KdP3scsrO0ttlLFmgrrHDyxz.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-ses",
-        "security",
-        "security-and-compliance"
-      ],
-      "publishedAt": "2026-05-01T02:31:06.412Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
-      "title": "Quando cloud deixou de ser conceito e passou a ser prática",
-      "description": "Neste artigo, compartilho minha experiência ao sair da teoria e ter meu primeiro contato prático com cloud computing através do EC2, explorando como esse processo me ajudou a entender melhor a AWS na prática.",
-      "url": "https://builder.aws.com/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6RfneCqzaTrxRQcgt6R9cHYhF/Arti.webp",
-      "authorName": "Nicolle Maia",
-      "authorAlias": "niccmaia",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-ec2",
-        "cloud-concepts",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-05-01T01:57:54.545Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -233,8 +227,31 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 30,
+      "likesCount": 31,
       "commentsCount": 12
+    },
+    {
+      "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
+      "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
+      "description": "Protect your wallet from unexpected cloud costs. This quick tutorial shows beginners how to configure a Zero Spend Budget and receive instant email alerts before any charges accumulate.",
+      "url": "https://builder.aws.com/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6zwsuqel3sX2jyl7y1DcrNXtY/1764.webp",
+      "authorName": "Abdullah bin Amin",
+      "authorAlias": "abdullahbinamin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36V7Al29DXQxvHMtIlJpvlJIMnZ.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "aws-builders",
+        "aws-community",
+        "aws-community-builders",
+        "aws-community-day",
+        "aws-community-day-2026"
+      ],
+      "publishedAt": "2026-05-01T06:42:09.422Z",
+      "likesCount": 1,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -300,29 +317,6 @@
       "commentsCount": 318
     },
     {
-      "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
-      "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
-      "description": "Protect your wallet from unexpected cloud costs. This quick tutorial shows beginners how to configure a Zero Spend Budget and receive instant email alerts before any charges accumulate.",
-      "url": "https://builder.aws.com/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6zwsuqel3sX2jyl7y1DcrNXtY/1764.webp",
-      "authorName": "Abdullah bin Amin",
-      "authorAlias": "abdullahbinamin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36V7Al29DXQxvHMtIlJpvlJIMnZ.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "aws-builders",
-        "aws-community",
-        "aws-community-builders",
-        "aws-community-day",
-        "aws-community-day-2026"
-      ],
-      "publishedAt": "2026-05-01T06:42:09.422Z",
-      "likesCount": 0,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
       "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
       "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
@@ -369,25 +363,27 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
-      "title": "Eu esperava complexidade. Encontrei pessoas.",
-      "description": "Entrei no AWS Builder Center esperando documentação pesada e interface confusa. O que encontrei foi uma comunidade ativa de estudantes e devs em estágios completamente diferentes — todos no mesmo espaço, sem hierarquia não escrita. Esse artigo é sobre essa surpresa.",
-      "url": "https://builder.aws.com/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
-      "imageUrl": "",
-      "authorName": "Arthur Ramos",
-      "authorAlias": "arthurramos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8EeAbHx8TzXx7Dra6CCF1Onvd.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3D73Pl9fZuSepucQRrnJW0vs9VX",
+      "title": "AWS Builder Center: The Ultimate Platform for Students to Learn, Build, and Grow",
+      "description": "A complete guide to understanding AWS Builder Center beyond cloud,how students can learn, build, create a tech identity, and grow in the global ecosystem.",
+      "url": "https://builder.aws.com/content/3D73Pl9fZuSepucQRrnJW0vs9VX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D744dywNYUfC1kvYFXCqpwVFsQ/Scre.webp",
+      "authorName": "Fathima rasha",
+      "authorAlias": "fathimarasha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ByT2mh5dq8GUgh4DLyI4TBcLmi.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
+        "aws-builders",
+        "aws-community-builders",
         "students",
-        "learn",
-        "web-development"
+        "aws-ambassador",
+        "builder-center"
       ],
-      "publishedAt": "2026-04-30T11:35:59.674Z",
-      "likesCount": 10,
-      "commentsCount": 4
+      "publishedAt": "2026-05-01T07:30:49.972Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -412,26 +408,24 @@
       "commentsCount": 325
     },
     {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
+      "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
+      "title": "Eu esperava complexidade. Encontrei pessoas.",
+      "description": "Entrei no AWS Builder Center esperando documentação pesada e interface confusa. O que encontrei foi uma comunidade ativa de estudantes e devs em estágios completamente diferentes — todos no mesmo espaço, sem hierarquia não escrita. Esse artigo é sobre essa surpresa.",
+      "url": "https://builder.aws.com/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
+      "imageUrl": "",
+      "authorName": "Arthur Ramos",
+      "authorAlias": "arthurramos",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8EeAbHx8TzXx7Dra6CCF1Onvd.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "getting-started",
         "students",
         "learn",
-        "builder-center",
-        "aws-ambassador"
+        "web-development"
       ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 27,
+      "publishedAt": "2026-04-30T11:35:59.674Z",
+      "likesCount": 10,
       "commentsCount": 4
     }
   ]
