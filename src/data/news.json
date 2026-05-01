@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-05-01T13:31:37.778Z",
+  "updatedAt": "2026-05-01T14:25:02.551Z",
   "latest": [
+    {
+      "id": "/content/3D7q89NXCa8JsrjXSoVtOF6N1AG",
+      "title": "A IA está dificultando o mercado de trabalho dev? Como você pode sair por cima",
+      "description": "Por que a porta de entrada para devs juniores está mais estreita e por que cloud, DevOps e IA são o atalho que ninguém está te contando.",
+      "url": "https://builder.aws.com/content/3D7q89NXCa8JsrjXSoVtOF6N1AG",
+      "imageUrl": "",
+      "authorName": "Murilo de Souza Neves",
+      "authorAlias": "muriloneves",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai",
+        "career",
+        "devops"
+      ],
+      "publishedAt": "2026-05-01T13:55:27.268Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D7lxXVtRWAJFyYtq8w27fxKURU",
       "title": "How AWS Powers Modern Applications Behind the Scenes",
@@ -38,8 +59,8 @@
         "experience"
       ],
       "publishedAt": "2026-05-01T13:21:50.740Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 4,
+      "commentsCount": 1
     },
     {
       "id": "/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
@@ -60,7 +81,30 @@
         "developer"
       ],
       "publishedAt": "2026-05-01T13:21:02.701Z",
-      "likesCount": 2,
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3D7elYO52iTYdbGdrDvcgvqYwLv",
+      "title": "How I Went From Learning AWS Basics to Understanding Real-World AI Systems Using Amazon Bedrock (A Student’s Perspective on Building Beyond Tutorials)",
+      "description": "As a student exploring AWS, I realized that learning cloud is not just about services but about building real systems. This article shares my experience understanding Amazon Bedrock, how it simplifies working with AI models, and what it taught me about scalability, cost, and real-world problem solving.\n#awsstudentStudent Builder Campus Leader and #ad",
+      "url": "https://builder.aws.com/content/3D7elYO52iTYdbGdrDvcgvqYwLv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7l8ExuwFIeW0gXRGWoJ8pgg1j/cover.webp",
+      "authorName": "Deepika Gowda",
+      "authorAlias": "deepika06",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-management-console",
+        "aws-certificate-manager",
+        "amazon-bedrock-agentcore",
+        "amazon-api-gateway",
+        "aws-toolkit"
+      ],
+      "publishedAt": "2026-05-01T13:07:30.741Z",
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -106,8 +150,8 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-05-01T12:21:18.533Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 2
     },
     {
       "id": "/content/3D7fCx5ePYcu2jzMvupHLW6kGn3",
@@ -380,52 +424,31 @@
       "publishedAt": "2026-05-01T03:14:00.912Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/36Z3FxYcJECtsQ547cpHm8Zygld",
-      "title": "How AWS Helps Students Start Building",
-      "description": "Most students have access to plenty of learning resources, yet still struggle to build real projects. This article explains how Amazon Web Services and the AWS Builder Platform help students start building with clear direction and free, practical learning.",
-      "url": "https://builder.aws.com/content/36Z3FxYcJECtsQ547cpHm8Zygld",
-      "imageUrl": "",
-      "authorName": "Arpna",
-      "authorAlias": "arpnak",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38BkXZTKPNPt9qPQSjeO14bUhUu.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "aws-community",
-        "builder-center"
-      ],
-      "publishedAt": "2026-05-01T03:06:34.487Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
-      "title": "Do Localhost pro Mundo: Como subi minha primeira API Serverless",
-      "description": "Sair do localhost:3000 é o primeiro grande passo de qualquer dev. Eu decidi ir pelo caminho Serverless e, nesse texto, abro o jogo sobre como fiz meu primeiro deploy do meu jeito. Se você quer ver como simplificar esse processo na nuvem, vem comigo.",
-      "url": "https://builder.aws.com/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6WG4eG9E6wcoyGoV7T2ogTe9p/b37c.webp",
-      "authorName": "Gabriel Campos Seemann",
-      "authorAlias": "gseemann",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-api-gateway",
-        "aws-sam",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-05-01T02:38:44.102Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
+      "title": "From AWS Cloud Club to AWS Student Builder Group — A New Era of Builders",
+      "description": "AWS Cloud Clubs → AWS Student Builder Groups 🚀\n\nThis isn’t just a rebrand.\nIt’s a shift from learning to building.\n\nStudents are now creators, innovators, and future leaders in cloud & AI.\n\nTime to build something real. 💡\n\n#AWS #AWSSBCL #ad #AWSStudentBuilderGroup #Cloud #AI #Students #BuildInPublic #",
+      "url": "https://builder.aws.com/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7lnR0eFtDUAQT5mKa6q4DHrHi/1000.webp",
+      "authorName": "Pranav Shinde",
+      "authorAlias": "iampranav009",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34zgoUW6HtgmQh5Fm510eDYXTCr.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-cloud-clubs",
+        "ai",
+        "aws-community",
+        "developer"
+      ],
+      "publishedAt": "2026-05-01T13:21:02.701Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
       "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
@@ -442,7 +465,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 37,
+      "likesCount": 38,
       "commentsCount": 13
     },
     {
@@ -488,28 +511,6 @@
       "commentsCount": 1919
     },
     {
-      "id": "/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
-      "title": "From AWS Cloud Club to AWS Student Builder Group — A New Era of Builders",
-      "description": "AWS Cloud Clubs → AWS Student Builder Groups 🚀\n\nThis isn’t just a rebrand.\nIt’s a shift from learning to building.\n\nStudents are now creators, innovators, and future leaders in cloud & AI.\n\nTime to build something real. 💡\n\n#AWS #AWSSBCL #ad #AWSStudentBuilderGroup #Cloud #AI #Students #BuildInPublic #",
-      "url": "https://builder.aws.com/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7lnR0eFtDUAQT5mKa6q4DHrHi/1000.webp",
-      "authorName": "Pranav Shinde",
-      "authorAlias": "iampranav009",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34zgoUW6HtgmQh5Fm510eDYXTCr.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-cloud-clubs",
-        "ai",
-        "aws-community",
-        "developer"
-      ],
-      "publishedAt": "2026-05-01T13:21:02.701Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -529,6 +530,29 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2848,
       "commentsCount": 318
+    },
+    {
+      "id": "/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
+      "title": "AWS Builder Center - Starting Point for Students in AWS",
+      "description": "Many Students Start their Cloud Journey with passion, motivation and curiosity but they often struggle to find Good Resources. That's where AWS Builder Center Comes into the picture.",
+      "url": "https://builder.aws.com/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5rrz1xXXgH1MwcgsCLeh86xh8/Chat.webp",
+      "authorName": "Hardik Bandhiya",
+      "authorAlias": "bandhiyahardik",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35nfmRFVAxOmh2VSfQOiOamj3an.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "aws-community",
+        "aws-builders",
+        "getting-started",
+        "students",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-05-01T12:21:18.533Z",
+      "likesCount": 1,
+      "commentsCount": 2
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -596,7 +620,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-04-30T19:34:21.906Z",
-      "likesCount": 7,
+      "likesCount": 8,
       "commentsCount": 6
     },
     {
@@ -620,219 +644,6 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1425,
       "commentsCount": 325
-    },
-    {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 29,
-      "commentsCount": 5
-    },
-    {
-      "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
-      "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
-      "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
-      "url": "https://builder.aws.com/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2V3IFCtABEY9xiC5MAs5k2D81/Capa.webp",
-      "authorName": "Igor Galindo",
-      "authorAlias": "igorgalind0",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "aws-academy",
-        "aws-networking",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 19,
-      "commentsCount": 8
-    },
-    {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxINBe97cOwR6iVYNh0hVyR9Q0.webp",
-      "location": "West Bengal, IN",
-      "lat": 22.9964948,
-      "lng": 87.6855882,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1129,
-      "commentsCount": 202
-    },
-    {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 34,
-      "commentsCount": 26
-    },
-    {
-      "id": "/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "title": "Essa tal de nuvem... fica muito distante do chão?",
-      "description": "Certificações, diversos serviços com documentações, tutoriais e muitas abas abertas. \nNo meio de tantos pré-requisitos, quando é que a gente se sente, finalmente, 'pronto' para começar?",
-      "url": "https://builder.aws.com/content/3CpTcECS989aiaV7xhKMRxMTZLs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Cr3qDj6Ri7Ud8izbohKMcI5HSU/bann.webp",
-      "authorName": "Amanda Y.",
-      "authorAlias": "yuminhercodedays",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aspiring-builders",
-        "architecture",
-        "cloud-adoption-framework",
-        "tips"
-      ],
-      "publishedAt": "2026-04-25T19:08:26.188Z",
-      "likesCount": 38,
-      "commentsCount": 36
-    },
-    {
-      "id": "/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
-      "title": "Eu esperava complexidade. Encontrei pessoas.",
-      "description": "Entrei no AWS Builder Center esperando documentação pesada e interface confusa. O que encontrei foi uma comunidade ativa de estudantes e devs em estágios completamente diferentes — todos no mesmo espaço, sem hierarquia não escrita. Esse artigo é sobre essa surpresa.",
-      "url": "https://builder.aws.com/content/3D4k9EnLyMprmIezu4sGi6Tt2Wc",
-      "imageUrl": "",
-      "authorName": "Arthur Ramos",
-      "authorAlias": "arthurramos",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8EeAbHx8TzXx7Dra6CCF1Onvd.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "learn",
-        "web-development"
-      ],
-      "publishedAt": "2026-04-30T11:35:59.674Z",
-      "likesCount": 10,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3D5C3CYYkdIvYM7phXVr4nGI44q",
-      "title": "AWS Builder Center: Como o Ecossistema Está Redefinindo o Aprendizado em Cloud Computing",
-      "description": "  Começar na área de tecnologia pode parecer desafiador, especialmente quando o assunto é computação em nuvem. Com tantos serviços, conceitos e possibilidades, é comum não saber por onde iniciar. É exatamente nesse cenário que surge o AWS Builder Center, uma plataforma pensada para guiar desenvolvedores, estudantes e entusiastas desde os primeiros passos até níveis mais avançados de construção na nuvem.",
-      "url": "https://builder.aws.com/content/3D5C3CYYkdIvYM7phXVr4nGI44q",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5Dqba6lAMsIDIyLrktevLmd0l/AWS-.webp",
-      "authorName": "Gabriel Christino",
-      "authorAlias": "christino",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjDMwSo4YWxfzfcVArAqTG67GY.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-04-30T16:23:23.992Z",
-      "likesCount": 8,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3D7aYxLtxhQ0oQP98prXrRn9tmK",
-      "title": "A Practical Approach to Learning Cloud Using AWS Free Tier",
-      "description": "This post explores why learning cloud through hands-on building is more effective than only watching tutorials. Using the Amazon Web Services Free Tier, beginners can gain real-world experience, solve practical problems, and develop strong cloud skills.",
-      "url": "https://builder.aws.com/content/3D7aYxLtxhQ0oQP98prXrRn9tmK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7cPZmgv1gfuuW1SOdtMz9ttHc/Scre.webp",
-      "authorName": "Mohammed Jumail",
-      "authorAlias": "jumail29",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D5C4ROLfu6NBqzVcxJ3oOEzu2i.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "all-builders-welcome",
-        "amazon-cloudwatch",
-        "amazon-connect",
-        "aws-academy",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-05-01T11:57:29.594Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "title": "Como começar na AWS de graça: um guia prático para estudantes",
-      "description": "Neste guia prático para estudantes, você vai aprender passo a passo como criar sua conta gratuita na AWS, quais serviços pode usar sem gastar um centavo, e o que fazer nos primeiros 30 minutos para sair do zero com segurança. Inclui um mapa mental para organizar seus estudos e um roteiro de 4 semanas para evoluir do absoluto iniciante ao primeiro projeto real rodando na nuvem.",
-      "url": "https://builder.aws.com/content/3CwegHZJXclD0OhMDHvl36rVk0U",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-04-27T14:48:33.100Z",
-      "likesCount": 25,
-      "commentsCount": 12
-    },
-    {
-      "id": "/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
-      "title": "Minha primeira semana no AWS Builder Center",
-      "description": "Ingressar no ecossistema da AWS como Student Builder Leader mudou minha pesrpectiva. Como graduando em Segurança da Informação, meu foco era 'como proteger'; o AWS Builder Center me ensina a 'construir com segurança'.\n\nMinha meta era alinhar a agilidade da nuvem à proteção de dados, mas essa primeira semana provou que a segurança não é um bloqueio, e sim o alicerce da inovação. O conceito de Security by Design nunca fez tanto sentido.",
-      "url": "https://builder.aws.com/content/3CqnvuWMZKq0LJF2RWlHMjJmcvS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CrUlPl8fphZ0CPvxoeDyfCEmip/Arti.webp",
-      "authorName": "Luiz Corbelli",
-      "authorAlias": "luizcorbelli",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CB7iejvw3lTUebPY9EoxPjhnn9.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "security",
-        "security-best-practices",
-        "iam",
-        "IaC",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-04-25T18:55:47.989Z",
-      "likesCount": 30,
-      "commentsCount": 20
     }
   ]
 }
