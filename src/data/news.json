@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-05-01T17:22:45.450Z",
+  "updatedAt": "2026-05-01T18:24:31.597Z",
   "latest": [
+    {
+      "id": "/content/3D8FAAuBSXKnsoXrqpLopNPWhUl",
+      "title": "Meu Primeiro Passo na Nuvem: Como o AWS Builder Center está abrindo portas para mim (e pode abrir para você!)",
+      "description": "Descubra como o AWS Builder Center pode ajudar você a dar seus primeiros passos e evoluir na área.",
+      "url": "https://builder.aws.com/content/3D8FAAuBSXKnsoXrqpLopNPWhUl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8HlhQJSZgO4wfySjUcLVNXroz/mbhj.webp",
+      "authorName": "Gabrielle Soares",
+      "authorAlias": "gabistech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIrm2Uafy4bUUbzHnlXC4P7l0k.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-01T17:31:35.662Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D8DVHtv8QtgHoG8cOqChjH69zs",
       "title": "AWS Agents of Impact: Build Production-Ready AI Agents | San Francisco, June 1",
@@ -40,7 +57,7 @@
         "aws-lambda"
       ],
       "publishedAt": "2026-05-01T17:01:42.383Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -82,7 +99,7 @@
         "serverless"
       ],
       "publishedAt": "2026-05-01T15:34:49.400Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -124,8 +141,8 @@
         "devops"
       ],
       "publishedAt": "2026-05-01T13:55:27.268Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
       "id": "/content/3D7lxXVtRWAJFyYtq8w27fxKURU",
@@ -188,29 +205,6 @@
       "publishedAt": "2026-05-01T13:21:02.701Z",
       "likesCount": 5,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3D7elYO52iTYdbGdrDvcgvqYwLv",
-      "title": "How I Went From Learning AWS Basics to Understanding Real-World AI Systems Using Amazon Bedrock (A Student’s Perspective on Building Beyond Tutorials)",
-      "description": "As a student exploring AWS, I realized that learning cloud is not just about services but about building real systems. This article shares my experience understanding Amazon Bedrock, how it simplifies working with AI models, and what it taught me about scalability, cost, and real-world problem solving.\n#awsstudentStudent Builder Campus Leader and #ad",
-      "url": "https://builder.aws.com/content/3D7elYO52iTYdbGdrDvcgvqYwLv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7l8ExuwFIeW0gXRGWoJ8pgg1j/cover.webp",
-      "authorName": "Deepika Gowda",
-      "authorAlias": "deepika06",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-management-console",
-        "aws-certificate-manager",
-        "amazon-bedrock-agentcore",
-        "amazon-api-gateway",
-        "aws-toolkit"
-      ],
-      "publishedAt": "2026-05-01T13:07:30.741Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -387,48 +381,48 @@
       "commentsCount": 325
     },
     {
-      "id": "/content/3D741qzraId1EC9xYFet80pZPGk",
-      "title": "I Couldn't Articulate Clearly. So I Built This.",
-      "description": "I couldn't articulate clearly, so I built an app. Learn how I used Flutter, Amazon Kiro, and Spec-Driven Development to gamify speech drills with Articulately.",
-      "url": "https://builder.aws.com/content/3D741qzraId1EC9xYFet80pZPGk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8BHSnqCnKu0khiQzIBUgk3wKR/ksjd.webp",
-      "authorName": "John Lexter Reyes",
-      "authorAlias": "lextech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34udd76uLfDn7ednrVTZGxCUBIL.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
+      "id": "/content/3D7q89NXCa8JsrjXSoVtOF6N1AG",
+      "title": "A IA está dificultando o mercado de trabalho dev? Como você pode sair por cima",
+      "description": "Por que a porta de entrada para devs juniores está mais estreita e por que cloud, DevOps e IA são o atalho que ninguém está te contando.",
+      "url": "https://builder.aws.com/content/3D7q89NXCa8JsrjXSoVtOF6N1AG",
+      "imageUrl": "",
+      "authorName": "Murilo de Souza Neves",
+      "authorAlias": "muriloneves",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "kiro",
         "ai",
-        "students"
+        "career",
+        "devops"
       ],
-      "publishedAt": "2026-05-01T16:45:06.594Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-05-01T13:55:27.268Z",
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
-      "id": "/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
-      "title": "AWS Builder Center - Starting Point for Students in AWS",
-      "description": "Many Students Start their Cloud Journey with passion, motivation and curiosity but they often struggle to find Good Resources. That's where AWS Builder Center Comes into the picture.",
-      "url": "https://builder.aws.com/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5rrz1xXXgH1MwcgsCLeh86xh8/Chat.webp",
-      "authorName": "Hardik Bandhiya",
-      "authorAlias": "bandhiyahardik",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35nfmRFVAxOmh2VSfQOiOamj3an.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
+      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "title": "🌩️ Getting Started with AWS Builder Center",
+      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
+      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
+      "authorName": "G Monish Reddy",
+      "authorAlias": "technicalmonish",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
       "tags": [
-        "aws-community",
-        "aws-builders",
         "getting-started",
         "students",
+        "learn",
+        "builder-center",
         "aws-ambassador"
       ],
-      "publishedAt": "2026-05-01T12:21:18.533Z",
-      "likesCount": 1,
-      "commentsCount": 2
+      "publishedAt": "2026-04-29T13:07:42.542Z",
+      "likesCount": 29,
+      "commentsCount": 5
     }
   ]
 }
