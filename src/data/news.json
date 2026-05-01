@@ -1,6 +1,69 @@
 {
-  "updatedAt": "2026-05-01T16:21:16.463Z",
+  "updatedAt": "2026-05-01T17:22:45.450Z",
   "latest": [
+    {
+      "id": "/content/3D8DVHtv8QtgHoG8cOqChjH69zs",
+      "title": "AWS Agents of Impact: Build Production-Ready AI Agents | San Francisco, June 1",
+      "description": "A full-day, hands-on builder event at the AWS GenAI Loft in San Francisco. Join AWS Solution Architects for interactive labs, live demos, and deep dives on building and operationalizing agentic AI systems. Designed for software engineers, engineering managers, and senior technical leaders.",
+      "url": "https://builder.aws.com/content/3D8DVHtv8QtgHoG8cOqChjH69zs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8G5zkPt5uNC8YWzK8nsTzsgBO/Agen.webp",
+      "authorName": "Melanie",
+      "authorAlias": "melanwin",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "builder-loft",
+        "generative-ai",
+        "agentic-ai",
+        "agents"
+      ],
+      "publishedAt": "2026-05-01T17:20:18.049Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D8ADCdxGYdq1roctsD4DeBXf9b",
+      "title": "A Nuvem Além do Visível: Como a AWS Sustenta nossa Rotina",
+      "description": "Neste artigo, apresento uma visão crítica sobre como a computação em nuvem deixou de ser um conceito abstrato para se tornar o alicerce invisível das nossas ações cotidianas, desde o login acadêmico até a entrega global de conteúdo.",
+      "url": "https://builder.aws.com/content/3D8ADCdxGYdq1roctsD4DeBXf9b",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8DI1WKLbI4SVE3vJGeL77u2rU/Capt.webp",
+      "authorName": "Adriano Praxedes",
+      "authorAlias": "adrianopraxedes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CcrQetz4CcVto3jVA9iPv6HSkK.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-cloudfront",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-05-01T17:01:42.383Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D741qzraId1EC9xYFet80pZPGk",
+      "title": "I Couldn't Articulate Clearly. So I Built This.",
+      "description": "I couldn't articulate clearly, so I built an app. Learn how I used Flutter, Amazon Kiro, and Spec-Driven Development to gamify speech drills with Articulately.",
+      "url": "https://builder.aws.com/content/3D741qzraId1EC9xYFet80pZPGk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8BHSnqCnKu0khiQzIBUgk3wKR/ksjd.webp",
+      "authorName": "John Lexter Reyes",
+      "authorAlias": "lextech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34udd76uLfDn7ednrVTZGxCUBIL.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "kiro",
+        "ai",
+        "students"
+      ],
+      "publishedAt": "2026-05-01T16:45:06.594Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D82RapFlzCisZnVn612uX9NuRL",
       "title": "S3 Files: The End of Download-Process-Upload (with Terraform)",
@@ -148,75 +211,6 @@
       "publishedAt": "2026-05-01T13:07:30.741Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D7iB19NGGj5qxH3POaH6AglcKb",
-      "title": "S3 Files: What 20 Years of “You Can’t Mount S3” Looks Like When It Finally Ships",
-      "description": "My hands on experience about the new S3 Files.",
-      "url": "https://builder.aws.com/content/3D7iB19NGGj5qxH3POaH6AglcKb",
-      "imageUrl": "",
-      "authorName": "Erick Mancz",
-      "authorAlias": "imancz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "amazon-s3",
-        "amazon-s3-metadata",
-        "amazon-s3-vectors",
-        "amazon-efs",
-        "amazon-ebs"
-      ],
-      "publishedAt": "2026-05-01T12:55:25.401Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
-      "title": "AWS Builder Center - Starting Point for Students in AWS",
-      "description": "Many Students Start their Cloud Journey with passion, motivation and curiosity but they often struggle to find Good Resources. That's where AWS Builder Center Comes into the picture.",
-      "url": "https://builder.aws.com/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5rrz1xXXgH1MwcgsCLeh86xh8/Chat.webp",
-      "authorName": "Hardik Bandhiya",
-      "authorAlias": "bandhiyahardik",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35nfmRFVAxOmh2VSfQOiOamj3an.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
-      "tags": [
-        "aws-community",
-        "aws-builders",
-        "getting-started",
-        "students",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-05-01T12:21:18.533Z",
-      "likesCount": 1,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3D7fCx5ePYcu2jzMvupHLW6kGn3",
-      "title": "Building Interactive UIs Inside AI Assistants with MCP Apps",
-      "description": "My wife asked if we could move our todos into Claude. Turns out we could with MCP Apps, and the implications go way beyond a household chore list. This post showcases how this is possible on AWS using Serverless technologies. ",
-      "url": "https://builder.aws.com/content/3D7fCx5ePYcu2jzMvupHLW6kGn3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D7fOTWOyD7zecx7jAceDnhzOUL/A-car.webp",
-      "authorName": "Alexis Philippart de Foy",
-      "authorAlias": "aphilippartd",
-      "authorAvatarUrl": "",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "mcp",
-        "serverless",
-        "startups",
-        "generative-ai",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-01T12:21:00.052Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -236,8 +230,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 41,
-      "commentsCount": 16
+      "likesCount": 43,
+      "commentsCount": 17
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -282,6 +276,27 @@
       "commentsCount": 1919
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2849,
+      "commentsCount": 318
+    },
+    {
       "id": "/content/3D7ljjjAcyfI7TMvlg0D2fowqJo",
       "title": "From AWS Cloud Club to AWS Student Builder Group — A New Era of Builders",
       "description": "AWS Cloud Clubs → AWS Student Builder Groups 🚀\n\nThis isn’t just a rebrand.\nIt’s a shift from learning to building.\n\nStudents are now creators, innovators, and future leaders in cloud & AI.\n\nTime to build something real. 💡\n\n#AWS #AWSSBCL #ad #AWSStudentBuilderGroup #Cloud #AI #Students #BuildInPublic #",
@@ -302,27 +317,6 @@
       "publishedAt": "2026-05-01T13:21:02.701Z",
       "likesCount": 5,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2849,
-      "commentsCount": 318
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -371,29 +365,6 @@
       "commentsCount": 6
     },
     {
-      "id": "/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
-      "title": "AWS Builder Center - Starting Point for Students in AWS",
-      "description": "Many Students Start their Cloud Journey with passion, motivation and curiosity but they often struggle to find Good Resources. That's where AWS Builder Center Comes into the picture.",
-      "url": "https://builder.aws.com/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5rrz1xXXgH1MwcgsCLeh86xh8/Chat.webp",
-      "authorName": "Hardik Bandhiya",
-      "authorAlias": "bandhiyahardik",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35nfmRFVAxOmh2VSfQOiOamj3an.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
-      "tags": [
-        "aws-community",
-        "aws-builders",
-        "getting-started",
-        "students",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-05-01T12:21:18.533Z",
-      "likesCount": 1,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -416,27 +387,48 @@
       "commentsCount": 325
     },
     {
-      "id": "/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
-      "title": "How to Set Up AWS Free Tier Bill Alerts (Step-by-Step Guide for Beginners)",
-      "description": "Protect your wallet from unexpected cloud costs. This quick tutorial shows beginners how to configure a Zero Spend Budget and receive instant email alerts before any charges accumulate.",
-      "url": "https://builder.aws.com/content/3D6yrMUT3xAtaidOugCfjZrGj2u",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6zwsuqel3sX2jyl7y1DcrNXtY/1764.webp",
-      "authorName": "Abdullah bin Amin",
-      "authorAlias": "abdullahbinamin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36V7Al29DXQxvHMtIlJpvlJIMnZ.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
+      "id": "/content/3D741qzraId1EC9xYFet80pZPGk",
+      "title": "I Couldn't Articulate Clearly. So I Built This.",
+      "description": "I couldn't articulate clearly, so I built an app. Learn how I used Flutter, Amazon Kiro, and Spec-Driven Development to gamify speech drills with Articulately.",
+      "url": "https://builder.aws.com/content/3D741qzraId1EC9xYFet80pZPGk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8BHSnqCnKu0khiQzIBUgk3wKR/ksjd.webp",
+      "authorName": "John Lexter Reyes",
+      "authorAlias": "lextech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34udd76uLfDn7ednrVTZGxCUBIL.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
       "tags": [
-        "aws-builders",
-        "aws-community",
-        "aws-community-builders",
-        "aws-community-day",
-        "aws-community-day-2026"
+        "kiro",
+        "ai",
+        "students"
       ],
-      "publishedAt": "2026-05-01T06:42:09.422Z",
-      "likesCount": 3,
-      "commentsCount": 3
+      "publishedAt": "2026-05-01T16:45:06.594Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
+      "title": "AWS Builder Center - Starting Point for Students in AWS",
+      "description": "Many Students Start their Cloud Journey with passion, motivation and curiosity but they often struggle to find Good Resources. That's where AWS Builder Center Comes into the picture.",
+      "url": "https://builder.aws.com/content/3D5qdgadsJ9B1PrQCf9ZK74yYfy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5rrz1xXXgH1MwcgsCLeh86xh8/Chat.webp",
+      "authorName": "Hardik Bandhiya",
+      "authorAlias": "bandhiyahardik",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35nfmRFVAxOmh2VSfQOiOamj3an.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "aws-community",
+        "aws-builders",
+        "getting-started",
+        "students",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-05-01T12:21:18.533Z",
+      "likesCount": 1,
+      "commentsCount": 2
     }
   ]
 }
