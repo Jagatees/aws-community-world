@@ -1,6 +1,89 @@
 {
-  "updatedAt": "2026-05-01T01:36:09.001Z",
+  "updatedAt": "2026-05-01T03:05:56.145Z",
   "latest": [
+    {
+      "id": "/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
+      "title": "Do Localhost pro Mundo: Como subi minha primeira API Serverless",
+      "description": "Sair do localhost:3000 é o primeiro grande passo de qualquer dev. Eu decidi ir pelo caminho Serverless e, nesse texto, abro o jogo sobre como fiz meu primeiro deploy do meu jeito. Se você quer ver como simplificar esse processo na nuvem, vem comigo.",
+      "url": "https://builder.aws.com/content/3D6UKX73FGQYzqHesXvGMXs7F7Q",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6WG4eG9E6wcoyGoV7T2ogTe9p/b37c.webp",
+      "authorName": "Gabriel Campos Seemann",
+      "authorAlias": "gseemann",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-api-gateway",
+        "aws-sam",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-05-01T02:38:44.102Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6UGAVHoYdlYAD6SIKVpzfzMHl",
+      "title": "Amazon SES Deliverability: a practical guide to keeping your email reputation healthy",
+      "description": "Learn how to protect your email deliverability on Amazon SES with practical tips on SPF, DKIM, and DMARC setup, list hygiene, transactional vs. marketing separation, unsubscribe handling, and reputation monitoring. A hands-on guide based on CloudFaster's real-world experience with AWS clients.",
+      "url": "https://builder.aws.com/content/3D6UGAVHoYdlYAD6SIKVpzfzMHl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6UajRvC4d8QG3eOw6Oejtq3Jo/ses-.webp",
+      "authorName": "Dan Rezende",
+      "authorAlias": "danrezende",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D6KdP3scsrO0ttlLFmgrrHDyxz.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-ses",
+        "security",
+        "security-and-compliance"
+      ],
+      "publishedAt": "2026-05-01T02:31:06.412Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
+      "title": "Quando cloud deixou de ser conceito e passou a ser prática",
+      "description": "Neste artigo, compartilho minha experiência ao sair da teoria e ter meu primeiro contato prático com cloud computing através do EC2, explorando como esse processo me ajudou a entender melhor a AWS na prática.",
+      "url": "https://builder.aws.com/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6RfneCqzaTrxRQcgt6R9cHYhF/Arti.webp",
+      "authorName": "Nicolle Maia",
+      "authorAlias": "niccmaia",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-ec2",
+        "cloud-concepts",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-05-01T01:57:54.545Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D6N19ceqk5FkeeSdz6wkakGS0y",
+      "title": "Saindo do Localhost: Como o AWS Builder Center destravou meus projetos em Laravel e React",
+      "description": "Sabe quando você termina de configurar seus containers no Docker, o seu backend em Laravel está rodando lisinho e o seu frontend em React está consumindo a API perfeitamente? A sensação de ver a tela funcionar é incrível. Mas, logo em seguida, bate aquela dúvida clássica que assombra todo estudante: \"E agora? Como eu tiro tudo isso do meu localhost e coloco no ar para o mundo acessar?\"",
+      "url": "https://builder.aws.com/content/3D6N19ceqk5FkeeSdz6wkakGS0y",
+      "imageUrl": "",
+      "authorName": "Jonatas Candido",
+      "authorAlias": "jonatascr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUQQXWy6led2REUrIbC6rxfRo0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "web-development",
+        "php"
+      ],
+      "publishedAt": "2026-05-01T01:46:46.019Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D6NGmNr6iymtUqZn6lSWcvY09X",
       "title": "Governing Agent Sprawl on AWS: Fleet Inventory, Framework Canary, and Deprecation Alerting for Multi-Model Bedrock Deployments",
@@ -38,7 +121,7 @@
       "lng": 0,
       "tags": [],
       "publishedAt": "2026-05-01T00:13:16.691Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -128,85 +211,6 @@
       "publishedAt": "2026-04-30T22:59:47.116Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D5ziai5aT2So39Ufj6t3kjnuLb",
-      "title": "O S3 tem quase 20 anos — e provavelmente está guardando mais coisas suas do que você imagina",
-      "description": "Fui pesquisar a história do Amazon S3 por curiosidade e fiquei genuinamente surpreso com o que encontrei. Esse serviço é mais velho do que muita coisa que a gente usa hoje.",
-      "url": "https://builder.aws.com/content/3D5ziai5aT2So39Ufj6t3kjnuLb",
-      "imageUrl": "",
-      "authorName": "Vinícius Amâncio Martins Pereira",
-      "authorAlias": "viniciusawscc",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CYEOZ7NePUZ1JxC7zV5kK9uoFn.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "cloud-storage",
-        "amazon-s3",
-        "data-engineering",
-        "students"
-      ],
-      "publishedAt": "2026-04-30T22:36:47.656Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D2EMtGWUbeKzusETh6pVreUdK4",
-      "title": "Sub-clipping in Vision Data Engineering Using MediaConvert",
-      "description": "In vision data engineering, we often need to sub-clip source videos with frame accuracy from multiple synchronized cameras. MediaConvert supports the so-called assembly workflow configuration which can be used to perform sub-clipping with frame accuracy. In this document we share certain design considerations and implementation details of such sub-clipping.",
-      "url": "https://builder.aws.com/content/3D2EMtGWUbeKzusETh6pVreUdK4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D3BVtgFd5hW5IFNVyiLiXRw6Jd/aws-.webp",
-      "authorName": "William Zhang",
-      "authorAlias": "wwz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qopIh8X1ZtmF4jgiDLAKcHnDI.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-elemental-mediaconvert"
-      ],
-      "publishedAt": "2026-04-30T22:32:45.813Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D5HDnLQCMT2UMIlzPq9OqFbTbi",
-      "title": "AWS Lambda: The Essential Tool for Student Web Developers",
-      "description": "How AWS Lambda can Upgrade your Backend Development",
-      "url": "https://builder.aws.com/content/3D5HDnLQCMT2UMIlzPq9OqFbTbi",
-      "imageUrl": "",
-      "authorName": "Anika Parkhi",
-      "authorAlias": "aparkhi",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students",
-        "backend",
-        "aws-lambda"
-      ],
-      "publishedAt": "2026-04-30T22:09:36.414Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D5miPJjNFrW4iRWaqhAzGXrKMf",
-      "title": "The Business Case for an Agentic Back-Office in CPG",
-      "description": "For a $25B CPG company, Agentic AI back-office automation can deliver $750M–$2.4B in annual operating impact (margin plus recovered net revenue) plus $400M–$900M in one-time working capital release. For a CPG company running $3B–$4B in current operating income, this is a transformational opportunity, not an incremental one.",
-      "url": "https://builder.aws.com/content/3D5miPJjNFrW4iRWaqhAzGXrKMf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5t9cebXNXFvsn2VL1pBFgZ0Qf/aws_.webp",
-      "authorName": "Rob Girvan",
-      "authorAlias": "rgirvan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzpWtpfHQnOBMOgiwfyT5eHOxf.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-04-30T21:15:05.354Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -226,8 +230,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 22,
-      "commentsCount": 9
+      "likesCount": 25,
+      "commentsCount": 10
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -360,6 +364,27 @@
       "commentsCount": 4
     },
     {
+      "id": "/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
+      "title": "Quando cloud deixou de ser conceito e passou a ser prática",
+      "description": "Neste artigo, compartilho minha experiência ao sair da teoria e ter meu primeiro contato prático com cloud computing através do EC2, explorando como esse processo me ajudou a entender melhor a AWS na prática.",
+      "url": "https://builder.aws.com/content/3D6Q8FiXn00zfA05LhrPfAgRe4V",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D6RfneCqzaTrxRQcgt6R9cHYhF/Arti.webp",
+      "authorName": "Nicolle Maia",
+      "authorAlias": "niccmaia",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-ec2",
+        "cloud-concepts",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-05-01T01:57:54.545Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
       "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
       "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
@@ -402,30 +427,8 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 26,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1421,
-      "commentsCount": 325
+      "likesCount": 27,
+      "commentsCount": 4
     }
   ]
 }
