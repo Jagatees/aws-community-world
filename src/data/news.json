@@ -1,6 +1,95 @@
 {
-  "updatedAt": "2026-05-02T17:16:53.944Z",
+  "updatedAt": "2026-05-02T18:18:14.451Z",
   "latest": [
+    {
+      "id": "/content/3D9Q3xBKwf48w07AeBy8EjhTIgj",
+      "title": "AWS documentation now serves Markdown — save tokens, time, and your sanity",
+      "description": "Service guide content is now available in a simple text based format, markdown, making it easier for agents and other systems to use.",
+      "url": "https://builder.aws.com/content/3D9Q3xBKwf48w07AeBy8EjhTIgj",
+      "imageUrl": "",
+      "authorName": "Duncan Mackenzie",
+      "authorAlias": "duncanmackenzie",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CimZTioFwXyGW51sS2XbGIXbLZ.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "documentation",
+        "markdown",
+        "llm",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-02T18:04:09.235Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DB7nn0KSKGSShZKNEGWDy67EpB",
+      "title": "S3 vs Cloudflare R2: compatibilidade, diferenças e trade-offs na prática",
+      "description": "O armazenamento de objetos se consolidou como o padrão de fato para aplicações modernas distribuídas, e o Amazon S3 lidera esse modelo há mais de uma década. A proposta do Cloudflare R2 entra exatamente nesse espaço: oferecer um armazenamento compatível com a API do S3, mas com uma estrutura de custos e integração voltada para workloads globais e distribuídos.",
+      "url": "https://builder.aws.com/content/3DB7nn0KSKGSShZKNEGWDy67EpB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DB8rQCtACs3etsjOW76jyyHrhH/Scre.webp",
+      "authorName": "Joao Emboaba",
+      "authorAlias": "jemboaba",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdDJXihuH1FOmAZcXSvNV1MSUt.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-s3",
+        "aws-builders",
+        "aws-community-builders",
+        "builder-center",
+        "ai-dlc"
+      ],
+      "publishedAt": "2026-05-02T17:52:45.605Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DB4Og2Bl3WqkGf58pb2bMtb61H",
+      "title": "A transição da teoria para a prática: OS primeiros passos no AWS Builder Center",
+      "description": "Veja como saí da teoria acadêmica para a prática na nuvem. Neste artigo, compartilho meus maiores aprendizados recentes e mostro como o AWS Builder Center ajuda a transformar a curiosidade técnica em confiança real, conectando estudantes e soluções aplicáveis ao mercado.",
+      "url": "https://builder.aws.com/content/3DB4Og2Bl3WqkGf58pb2bMtb61H",
+      "imageUrl": "",
+      "authorName": "Daniel Oliveira",
+      "authorAlias": "danimont",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/327oiepI8Ywz9BBmgodTUnyS4kP.webp",
+      "location": "DF, BR",
+      "lat": -15.7754462,
+      "lng": -47.7970891,
+      "tags": [
+        "first-cloud-project-challenge-1",
+        "aws-community-builders",
+        "career",
+        "students"
+      ],
+      "publishedAt": "2026-05-02T17:41:00.714Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DAUkOiF3F8mQlDt6AJlPs4hesD",
+      "title": "Da Infraestrutura Física à Nuvem: O Que Mudou para os Profissionais de TI",
+      "description": "A computação em nuvem transformou completamente a forma como profissionais de TI constroem, operam e pensam em tecnologia. Neste artigo, você vai entender o que realmente mudou ao sair da infraestrutura física tradicional para a nuvem, quais conceitos surgiram nesse caminho e por que a AWS se tornou referência nesse novo modelo. Um conteúdo ideal para quem está começando na área ou dando os primeiros passos no mundo cloud.",
+      "url": "https://builder.aws.com/content/3DAUkOiF3F8mQlDt6AJlPs4hesD",
+      "imageUrl": "",
+      "authorName": "Breno Frederico Gonzalez Groba de Azevedo",
+      "authorAlias": "brenogroba",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DB6epQEaFa3XuqAcZ66EUx9OEs.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "all-builders-welcome",
+        "aws-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-02T17:31:37.887Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DB0kcWxbZLuRTAGNF7GfeRbSTx",
       "title": "3 Serviços AWS que Todo Iniciante Deveria Conhecer ☁️",
@@ -59,8 +148,8 @@
         "amazon-sns"
       ],
       "publishedAt": "2026-05-02T16:31:25.268Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
       "id": "/content/3DAx9dmvOxXhPvbcpMTF8OJOSES",
@@ -78,7 +167,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-02T16:31:07.118Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -95,7 +184,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-05-02T16:06:52.591Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -114,106 +203,9 @@
       "publishedAt": "2026-05-02T14:57:58.558Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DAjQmZ8hb9QReOcYf3BGAAzgSa",
-      "title": "Construindo automações na prática: os desafios reais e o poder da comunidade!",
-      "description": "Automações em comunidade",
-      "url": "https://builder.aws.com/content/3DAjQmZ8hb9QReOcYf3BGAAzgSa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAmZQ5P3gVLcWvtiZrGqMKoMQ4/Desi.webp",
-      "authorName": "Júlia Campos",
-      "authorAlias": "jcamposs",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjkulOX0lRv21UtH0HAy96RNS1.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-02T14:49:29.137Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DAbRQPAck5ZJ30iiJcEivQoatl",
-      "title": "AIdeas 10K Winners Audit & Fairness Review",
-      "description": "This is a follow-up to Eugene Garrison's 50-finalists compliance audit, which reviewed all 50 finalists against the published article requirements. This audit focuses on the 20 winners specifically — checking compliance, claim feasibility, and award fairness.",
-      "url": "https://builder.aws.com/content/3DAbRQPAck5ZJ30iiJcEivQoatl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAeqGu1dy9vBetPNQ0CDeHgq7T/Scre.webp",
-      "authorName": "Cameroon John",
-      "authorAlias": "cameroon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D9MuTmkFtIXuGmg5ezTdxqHqcB.webp",
-      "location": "CH",
-      "lat": 46.7985624,
-      "lng": 8.2319736,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "daily-life-enhancement",
-        "workplace-efficiency",
-        "commercial-solutions"
-      ],
-      "publishedAt": "2026-05-02T14:22:35.695Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DAclW99ud86TLZrHA0eipFe4rv",
-      "title": "Cloud não é o futuro — é o presente (e você já pode começar)",
-      "description": "Enquanto muita gente ainda acha que cloud é algo distante, empresas já estão migrando tudo. Entenda por que começar agora pode mudar seu caminho na tecnologia.",
-      "url": "https://builder.aws.com/content/3DAclW99ud86TLZrHA0eipFe4rv",
-      "imageUrl": "",
-      "authorName": "Iokio Cainã Hirai Rocha",
-      "authorAlias": "iokiohirai",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdD9mH9ypTyIqs2b14VZTLUlFQ.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
-      "tags": [
-        "amazon-cloudsearch"
-      ],
-      "publishedAt": "2026-05-02T13:34:14.628Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D974I5ubo0GCzhevpigJH951uO",
-      "title": "Além da Teoria: Implementando Laboratórios de Nuvem para Disciplinas de Hardware",
-      "description": "Uma exploração sobre como integrar serviços de computação em nuvem para superar as limitações físicas dos laboratórios acadêmicos. Descubra como o AWS Builder Center serve de combustível para essa inovação, conectando estudantes ao que há de mais avançado na tecnologia.",
-      "url": "https://builder.aws.com/content/3D974I5ubo0GCzhevpigJH951uO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAMn0Ael3dYxWWbwaXjkAn9Y8k/e670.webp",
-      "authorName": "Gabriel Sampaio Santos",
-      "authorAlias": "gabrielss",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CMO2yDKsV1sow1gVfifvc6H3Mh.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-02T11:17:57.665Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 53,
-      "commentsCount": 26
-    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -234,6 +226,25 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3542,
       "commentsCount": 324
+    },
+    {
+      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
+      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
+      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-30T20:13:50.660Z",
+      "likesCount": 53,
+      "commentsCount": 26
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -276,6 +287,28 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2851,
       "commentsCount": 318
+    },
+    {
+      "id": "/content/3DAytwxOIHqkCYnU6ic7DPKU4Vr",
+      "title": "Como apps de esportes enviam notificações de gol em segundos usando AWS",
+      "description": "Notificações de gol parecem simples — mas por trás de cada alerta existe uma arquitetura preparada para lidar com milhões de usuários ao mesmo tempo.\n\nNeste artigo, explico como apps de esportes utilizam serviços da Amazon Web Services, como Amazon SQS, AWS Lambda e Amazon SNS, para organizar eventos, processar dados em escala e entregar notificações em segundos.\n\nUma visão prática de como sistemas modernos lidam com alta demanda sem comprometer a experiência do usuário.",
+      "url": "https://builder.aws.com/content/3DAytwxOIHqkCYnU6ic7DPKU4Vr",
+      "imageUrl": "",
+      "authorName": "Kauã Ferraz Aragão",
+      "authorAlias": "k1ferraz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7mErdqoUP5X8fdY2TpWElP87h.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-lambda",
+        "aws-ambassador",
+        "amazon-sqs",
+        "amazon-sns"
+      ],
+      "publishedAt": "2026-05-02T16:31:25.268Z",
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -323,6 +356,23 @@
       "commentsCount": 327
     },
     {
+      "id": "/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
+      "title": "FinOps Hands-On: AWS Costs + CO_2e  in Every PR with Infracost & Terraform",
+      "description": "In this article, I'll walk you through a hands-on project where I integrated Infracost directly into my CI/CD pipeline.",
+      "url": "https://builder.aws.com/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
+      "imageUrl": "",
+      "authorName": "Jessica Aparecida Bueno",
+      "authorAlias": "jehbueno1990",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar8S9WC1BcAxvsi27qF6154xPB.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T16:06:52.591Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
       "title": "AIdeas Finalist: Aether Health",
       "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
@@ -341,7 +391,7 @@
       ],
       "publishedAt": "2026-04-17T14:32:53.936Z",
       "likesCount": 1129,
-      "commentsCount": 202
+      "commentsCount": 203
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
@@ -362,51 +412,6 @@
       "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 38,
       "commentsCount": 27
-    },
-    {
-      "id": "/content/3D6D6sERqXefrI0qhzXcRqjGS71",
-      "title": "Monte Seu Servidor de Minecraft na Nuvem com EC2! ⛏️☁️",
-      "description": "Aprenda a criar um servidor simples e avançado com máquinas EC2 na AWS!",
-      "url": "https://builder.aws.com/content/3D6D6sERqXefrI0qhzXcRqjGS71",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8UfqJv23PLLYywzu401hryBZQ/arti.webp",
-      "authorName": "Rober Araujo Trindade",
-      "authorAlias": "rober122",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-academy",
-        "aws-ambassador",
-        "aws-builders",
-        "amazon-ec2",
-        "minecraft"
-      ],
-      "publishedAt": "2026-05-01T19:24:15.465Z",
-      "likesCount": 6,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
-      "title": "Entender computação em nuvem pode ser o diferencial para se destacar na área da tecnologia, mas por quê?",
-      "description": "Aplicativos, plataformas de streaming, inteligência artificial, bancos digitais, jogos online e milhares de sistemas modernos dependem diariamente da computação em nuvem. Com empresas migrando cada vez mais para infraestruturas cloud, profissionais que entendem esse ecossistema vêm se tornando mais valorizados no mercado de tecnologia. Mas por que isso está acontecendo, mas como começar a aprender cloud na prática? Acompanhe o artigo para entender.",
-      "url": "https://builder.aws.com/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9NB5CR0OizU9Y2lvxr8f1mEXq/Desi.webp",
-      "authorName": "Gabriel Araújo",
-      "authorAlias": "gabrielaraujoaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr6BNcfP2ciODj4v29aM3ZsTuU.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "students",
-        "cloud-networking",
-        "cloud-practitioner",
-        "networking"
-      ],
-      "publishedAt": "2026-05-02T02:55:40.054Z",
-      "likesCount": 2,
-      "commentsCount": 4
     }
   ]
 }
