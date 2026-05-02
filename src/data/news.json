@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-05-02T15:16:11.232Z",
+  "updatedAt": "2026-05-02T16:16:26.268Z",
   "latest": [
+    {
+      "id": "/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
+      "title": "FinOps Hands-On: AWS Costs + CO e in Every PR with Infracost & Terraform",
+      "description": "In this article, I'll walk you through a hands-on project where I integrated Infracost directly into my CI/CD pipeline.",
+      "url": "https://builder.aws.com/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
+      "imageUrl": "",
+      "authorName": "Jessica Aparecida Bueno",
+      "authorAlias": "jehbueno1990",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar8S9WC1BcAxvsi27qF6154xPB.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T16:06:52.591Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DAlnO3f2qsaJvmb1DVKaEWiDme",
       "title": "This Is Where Builders Are Made",
@@ -168,29 +185,6 @@
       "publishedAt": "2026-05-02T02:55:40.054Z",
       "likesCount": 2,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
-      "title": "Generating Certification Practice Questions at Scale with Parallel AI Agents",
-      "description": "A walkthrough of the parallel-agent pipeline behind a free, browser-based practice platform that covers eleven certification tracks across AWS, CompTIA, and Python Institute. Includes the three-layer configuration, the quality test suite, the distractor-construction rules, and the lessons learned across eight generation waves of building 8,825 practice questions.",
-      "url": "https://builder.aws.com/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9JiAPpegUsNaAhf0CM3y6QB5E/Scre.webp",
-      "authorName": "bashadmin",
-      "authorAlias": "bashadmin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eSxhOX9Qy0NEqgHWVliwL6gKEz.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "training-and-certification",
-        "ai",
-        "website",
-        "ai-agents",
-        "workflows"
-      ],
-      "publishedAt": "2026-05-02T02:25:52.127Z",
-      "likesCount": 2,
-      "commentsCount": 2
     }
   ],
   "trending": [
@@ -210,7 +204,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 51,
+      "likesCount": 53,
       "commentsCount": 26
     },
     {
@@ -343,6 +337,26 @@
       "commentsCount": 202
     },
     {
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "advertising-marketing-industry",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T00:44:34.853Z",
+      "likesCount": 38,
+      "commentsCount": 27
+    },
+    {
       "id": "/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
       "title": "Entender computação em nuvem pode ser o diferencial para se destacar na área da tecnologia, mas por quê?",
       "description": "Aplicativos, plataformas de streaming, inteligência artificial, bancos digitais, jogos online e milhares de sistemas modernos dependem diariamente da computação em nuvem. Com empresas migrando cada vez mais para infraestruturas cloud, profissionais que entendem esse ecossistema vêm se tornando mais valorizados no mercado de tecnologia. Mas por que isso está acontecendo, mas como começar a aprender cloud na prática? Acompanhe o artigo para entender.",
@@ -386,26 +400,6 @@
       "publishedAt": "2026-05-01T19:24:15.465Z",
       "likesCount": 6,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 38,
-      "commentsCount": 27
     }
   ]
 }
