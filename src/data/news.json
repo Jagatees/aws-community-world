@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-02T07:32:57.375Z",
+  "updatedAt": "2026-05-02T08:31:17.857Z",
   "latest": [
     {
       "id": "/content/3D9fdf6ua27JJCFakuIv4pPIwMY",
@@ -15,7 +15,7 @@
       "lng": -44.1588654,
       "tags": [],
       "publishedAt": "2026-05-02T05:28:19.169Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -69,10 +69,16 @@
       "location": "",
       "lat": 0,
       "lng": 0,
-      "tags": [],
+      "tags": [
+        "training-and-certification",
+        "ai",
+        "website",
+        "ai-agents",
+        "workflows"
+      ],
       "publishedAt": "2026-05-02T02:25:52.127Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "likesCount": 2,
+      "commentsCount": 2
     },
     {
       "id": "/content/3D8yhqAkMdXKF9DAdkJWjGMKonU",
@@ -209,7 +215,7 @@
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
       "likesCount": 51,
-      "commentsCount": 25
+      "commentsCount": 26
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -343,23 +349,26 @@
       "commentsCount": 327
     },
     {
-      "id": "/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
-      "title": "Da desconfiança à nuvem: como a AWS mudou minha trajetória",
-      "description": "Uma breve história do início da minha carreira e onde a AWS está me levando.",
-      "url": "https://builder.aws.com/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
-      "imageUrl": "",
-      "authorName": "Artur Borst",
-      "authorAlias": "arturbb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8iWcDd4kSglSwgHvNH3Ty9Smh.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
+      "title": "Generating Certification Practice Questions at Scale with Parallel AI Agents",
+      "description": "A walkthrough of the parallel-agent pipeline behind a free, browser-based practice platform that covers eleven certification tracks across AWS, CompTIA, and Python Institute. Includes the three-layer configuration, the quality test suite, the distractor-construction rules, and the lessons learned across eight generation waves of building 8,825 practice questions.",
+      "url": "https://builder.aws.com/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9JiAPpegUsNaAhf0CM3y6QB5E/Scre.webp",
+      "authorName": "bashadmin",
+      "authorAlias": "bashadmin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eSxhOX9Qy0NEqgHWVliwL6gKEz.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
-        "career",
-        "healthcare-life-sciences-industry"
+        "training-and-certification",
+        "ai",
+        "website",
+        "ai-agents",
+        "workflows"
       ],
-      "publishedAt": "2026-05-01T21:11:39.026Z",
-      "likesCount": 4,
+      "publishedAt": "2026-05-02T02:25:52.127Z",
+      "likesCount": 2,
       "commentsCount": 2
     },
     {
