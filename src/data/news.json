@@ -1,9 +1,89 @@
 {
-  "updatedAt": "2026-05-02T16:16:26.268Z",
+  "updatedAt": "2026-05-02T17:16:53.944Z",
   "latest": [
     {
+      "id": "/content/3DB0kcWxbZLuRTAGNF7GfeRbSTx",
+      "title": "3 Serviços AWS que Todo Iniciante Deveria Conhecer ☁️",
+      "description": "Quando você abre o console da AWS pela primeira vez, a sensação é de estar perdido num aeroporto enorme sem saber pra qual portão ir.\n\nSão mais de 200 serviços disponíveis. EC2, S3, Lambda, RDS, IAM, VPC, CloudFront, DynamoDB... parece uma sopa de letrinhas sem fim.\n\nExistem 3 serviços que são a base de quase tudo que se constrói na AWS. Entender esses 3 já te dá uma visão real de como a nuvem funciona — e te prepara pra ir muito mais longe.",
+      "url": "https://builder.aws.com/content/3DB0kcWxbZLuRTAGNF7GfeRbSTx",
+      "imageUrl": "",
+      "authorName": "Daniel Moura de Souza",
+      "authorAlias": "danaws12",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-academy",
+        "students"
+      ],
+      "publishedAt": "2026-05-02T17:07:13.829Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DAsDeZp3bDq8JWddVm7XrS12dK",
+      "title": "O melhor momento para aprender Cloud não é amanhã, é agora!",
+      "description": "Grandes negócio migraram para a infraestrutura em nuvem, que tornou-se a espinha dorsal do mundo moderno. Aprenda o que sustenta o mundo moderno e toda a “bolha da IA” e se torne insubstituível pelos Chatbot’s.",
+      "url": "https://builder.aws.com/content/3DAsDeZp3bDq8JWddVm7XrS12dK",
+      "imageUrl": "",
+      "authorName": "Vitor Teodoro Correa",
+      "authorAlias": "ovitorteodoro",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-cloud9"
+      ],
+      "publishedAt": "2026-05-02T16:54:44.280Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DAytwxOIHqkCYnU6ic7DPKU4Vr",
+      "title": "Como apps de esportes enviam notificações de gol em segundos usando AWS",
+      "description": "Notificações de gol parecem simples — mas por trás de cada alerta existe uma arquitetura preparada para lidar com milhões de usuários ao mesmo tempo.\n\nNeste artigo, explico como apps de esportes utilizam serviços da Amazon Web Services, como Amazon SQS, AWS Lambda e Amazon SNS, para organizar eventos, processar dados em escala e entregar notificações em segundos.\n\nUma visão prática de como sistemas modernos lidam com alta demanda sem comprometer a experiência do usuário.",
+      "url": "https://builder.aws.com/content/3DAytwxOIHqkCYnU6ic7DPKU4Vr",
+      "imageUrl": "",
+      "authorName": "Kauã Ferraz Aragão",
+      "authorAlias": "k1ferraz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7mErdqoUP5X8fdY2TpWElP87h.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-lambda",
+        "aws-ambassador",
+        "amazon-sqs",
+        "amazon-sns"
+      ],
+      "publishedAt": "2026-05-02T16:31:25.268Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DAx9dmvOxXhPvbcpMTF8OJOSES",
+      "title": "Do Rascunho ao Produto: Como a Prototipagem Transforma Ideias em Soluções Reais",
+      "description": "Descubra como a prototipagem, aplicada de forma estratégica e iterativa, pode transformar ideias simples em soluções digitais eficientes, reduzindo erros, melhorando a experiência do usuário e acelerando o desenvolvimento de sistemas.",
+      "url": "https://builder.aws.com/content/3DAx9dmvOxXhPvbcpMTF8OJOSES",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAyzbEcAkgEUWewqXE0n9Dz0Fj/imag.webp",
+      "authorName": "Matheus Carvalho da Silva",
+      "authorAlias": "nortedevops",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CAXdussgN8sAVIg7YLZuWd0MOO.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-02T16:31:07.118Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
-      "title": "FinOps Hands-On: AWS Costs + CO e in Every PR with Infracost & Terraform",
+      "title": "FinOps Hands-On: AWS Costs + CO_2e  in Every PR with Infracost & Terraform",
       "description": "In this article, I'll walk you through a hands-on project where I integrated Infracost directly into my CI/CD pipeline.",
       "url": "https://builder.aws.com/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
       "imageUrl": "",
@@ -15,7 +95,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-05-02T16:06:52.591Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -112,79 +192,6 @@
       "publishedAt": "2026-05-02T11:17:57.665Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DAAwRtwVgMRsgjxJxvoRJzbdE5",
-      "title": "Mastering Structured Repository Audits: A Guide for AWS Builders (with Production-Ready Prompts)",
-      "description": "A practical guide for AWS developers to perform structured, evidence-based repository audits using staged workflows and CLI automation. Includes production-ready prompts that turn complex codebases into clear architectural insights, risks, and actionable next steps.",
-      "url": "https://builder.aws.com/content/3DAAwRtwVgMRsgjxJxvoRJzbdE5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAEpG9zlWZhihiOT1T7g5t7hQW/code.webp",
-      "authorName": "Animesh Wani",
-      "authorAlias": "animeshwani",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-02T10:11:46.939Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D9fdf6ua27JJCFakuIv4pPIwMY",
-      "title": "A Evolução da Comunidade: Do AWS Cloud Club ao AWS Student Builder Groups",
-      "description": "A tecnologia avança rápido e nossa comunidade evolui junto! A partir de 30 de abril de 2026, os AWS Cloud Clubs tornam-se AWS Student Builder Groups. Esta mudança foca em IA Generativa e desenvolvimento prático, utilizando o AWS Builder Center como hub central para conectar estudantes builders ao mercado global. É a sua chance de dominar a nuvem direto da fonte e construir autoridade técnica desde o primeiro dia.",
-      "url": "https://builder.aws.com/content/3D9fdf6ua27JJCFakuIv4pPIwMY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9gPp4F84tXcf5sTYZvhmT7lTW/Do-I.webp",
-      "authorName": "Ana Eliza Gonçalves",
-      "authorAlias": "anaeliza",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiBjIXCotYIumLm6CKv60JO0cW.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [],
-      "publishedAt": "2026-05-02T05:28:19.169Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D9bOR5oHGyGvPR9ltuUISQ56Yr",
-      "title": "AWS student builder group",
-      "description": "AWS Student builders group at RTMSSU",
-      "url": "https://builder.aws.com/content/3D9bOR5oHGyGvPR9ltuUISQ56Yr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9bzS2MZQnnFZiTn5awTkjk6hI/file.webp",
-      "authorName": "Chetna",
-      "authorAlias": "chetnasakarde",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1I5q8T9IuLfmCO1maoMVJHuaQ.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [],
-      "publishedAt": "2026-05-02T04:59:12.699Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
-      "title": "Entender computação em nuvem pode ser o diferencial para se destacar na área da tecnologia, mas por quê?",
-      "description": "Aplicativos, plataformas de streaming, inteligência artificial, bancos digitais, jogos online e milhares de sistemas modernos dependem diariamente da computação em nuvem. Com empresas migrando cada vez mais para infraestruturas cloud, profissionais que entendem esse ecossistema vêm se tornando mais valorizados no mercado de tecnologia. Mas por que isso está acontecendo, mas como começar a aprender cloud na prática? Acompanhe o artigo para entender.",
-      "url": "https://builder.aws.com/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9NB5CR0OizU9Y2lvxr8f1mEXq/Desi.webp",
-      "authorName": "Gabriel Araújo",
-      "authorAlias": "gabrielaraujoaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr6BNcfP2ciODj4v29aM3ZsTuU.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "students",
-        "cloud-networking",
-        "cloud-practitioner",
-        "networking"
-      ],
-      "publishedAt": "2026-05-02T02:55:40.054Z",
-      "likesCount": 2,
-      "commentsCount": 4
     }
   ],
   "trending": [
@@ -225,7 +232,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3541,
+      "likesCount": 3542,
       "commentsCount": 324
     },
     {
@@ -357,28 +364,6 @@
       "commentsCount": 27
     },
     {
-      "id": "/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
-      "title": "Entender computação em nuvem pode ser o diferencial para se destacar na área da tecnologia, mas por quê?",
-      "description": "Aplicativos, plataformas de streaming, inteligência artificial, bancos digitais, jogos online e milhares de sistemas modernos dependem diariamente da computação em nuvem. Com empresas migrando cada vez mais para infraestruturas cloud, profissionais que entendem esse ecossistema vêm se tornando mais valorizados no mercado de tecnologia. Mas por que isso está acontecendo, mas como começar a aprender cloud na prática? Acompanhe o artigo para entender.",
-      "url": "https://builder.aws.com/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9NB5CR0OizU9Y2lvxr8f1mEXq/Desi.webp",
-      "authorName": "Gabriel Araújo",
-      "authorAlias": "gabrielaraujoaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr6BNcfP2ciODj4v29aM3ZsTuU.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "students",
-        "cloud-networking",
-        "cloud-practitioner",
-        "networking"
-      ],
-      "publishedAt": "2026-05-02T02:55:40.054Z",
-      "likesCount": 2,
-      "commentsCount": 4
-    },
-    {
       "id": "/content/3D6D6sERqXefrI0qhzXcRqjGS71",
       "title": "Monte Seu Servidor de Minecraft na Nuvem com EC2! ⛏️☁️",
       "description": "Aprenda a criar um servidor simples e avançado com máquinas EC2 na AWS!",
@@ -399,6 +384,28 @@
       ],
       "publishedAt": "2026-05-01T19:24:15.465Z",
       "likesCount": 6,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
+      "title": "Entender computação em nuvem pode ser o diferencial para se destacar na área da tecnologia, mas por quê?",
+      "description": "Aplicativos, plataformas de streaming, inteligência artificial, bancos digitais, jogos online e milhares de sistemas modernos dependem diariamente da computação em nuvem. Com empresas migrando cada vez mais para infraestruturas cloud, profissionais que entendem esse ecossistema vêm se tornando mais valorizados no mercado de tecnologia. Mas por que isso está acontecendo, mas como começar a aprender cloud na prática? Acompanhe o artigo para entender.",
+      "url": "https://builder.aws.com/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9NB5CR0OizU9Y2lvxr8f1mEXq/Desi.webp",
+      "authorName": "Gabriel Araújo",
+      "authorAlias": "gabrielaraujoaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr6BNcfP2ciODj4v29aM3ZsTuU.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "students",
+        "cloud-networking",
+        "cloud-practitioner",
+        "networking"
+      ],
+      "publishedAt": "2026-05-02T02:55:40.054Z",
+      "likesCount": 2,
       "commentsCount": 4
     }
   ]
