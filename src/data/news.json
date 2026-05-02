@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-05-02T19:22:55.870Z",
+  "updatedAt": "2026-05-02T20:12:06.944Z",
   "latest": [
+    {
+      "id": "/content/3DBN5imelF8nm9LadOPm7yhFikU",
+      "title": "Como começar em cloud e IA sem ficar perdido: um caminho prático para estudantes",
+      "description": "Um guia direto para quem quer dar os primeiros passos em cloud e inteligência artificial sem se perder em excesso de conteúdo. Neste artigo, mostro uma rota simples para estudar com mais clareza, praticar desde o início e usar o AWS Builder Center como apoio na sua jornada de aprendizado.",
+      "url": "https://builder.aws.com/content/3DBN5imelF8nm9LadOPm7yhFikU",
+      "imageUrl": "",
+      "authorName": "Bruno de Paula Moreto Santos",
+      "authorAlias": "brunomoreto",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T19:55:43.827Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DBHvKL03HCsyGx5T30DPJ8zHC0",
       "title": "O que estou aprendendo como AWS Student Builder Leader (e por onde começar em Cloud e IA)",
@@ -115,7 +132,7 @@
       "title": "A transição da teoria para a prática: OS primeiros passos no AWS Builder Center",
       "description": "Veja como saí da teoria acadêmica para a prática na nuvem. Neste artigo, compartilho meus maiores aprendizados recentes e mostro como o AWS Builder Center ajuda a transformar a curiosidade técnica em confiança real, conectando estudantes e soluções aplicáveis ao mercado.",
       "url": "https://builder.aws.com/content/3DB4Og2Bl3WqkGf58pb2bMtb61H",
-      "imageUrl": "",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBN9bponbIJQDAb8LmnNefA9eF/2026.webp",
       "authorName": "Daniel Oliveira",
       "authorAlias": "danimont",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/327oiepI8Ywz9BBmgodTUnyS4kP.webp",
@@ -126,7 +143,8 @@
         "first-cloud-project-challenge-1",
         "aws-community-builders",
         "career",
-        "students"
+        "students",
+        "amazon-s3"
       ],
       "publishedAt": "2026-05-02T17:41:00.714Z",
       "likesCount": 0,
@@ -192,28 +210,6 @@
       "publishedAt": "2026-05-02T16:54:44.280Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DAytwxOIHqkCYnU6ic7DPKU4Vr",
-      "title": "Como apps de esportes enviam notificações de gol em segundos usando AWS",
-      "description": "Notificações de gol parecem simples — mas por trás de cada alerta existe uma arquitetura preparada para lidar com milhões de usuários ao mesmo tempo.\n\nNeste artigo, explico como apps de esportes utilizam serviços da Amazon Web Services, como Amazon SQS, AWS Lambda e Amazon SNS, para organizar eventos, processar dados em escala e entregar notificações em segundos.\n\nUma visão prática de como sistemas modernos lidam com alta demanda sem comprometer a experiência do usuário.",
-      "url": "https://builder.aws.com/content/3DAytwxOIHqkCYnU6ic7DPKU4Vr",
-      "imageUrl": "",
-      "authorName": "Kauã Ferraz Aragão",
-      "authorAlias": "k1ferraz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7mErdqoUP5X8fdY2TpWElP87h.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-lambda",
-        "aws-ambassador",
-        "amazon-sqs",
-        "amazon-sns"
-      ],
-      "publishedAt": "2026-05-02T16:31:25.268Z",
-      "likesCount": 2,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -345,23 +341,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
-      "title": "FinOps Hands-On: AWS Costs + CO_2e  in Every PR with Infracost & Terraform",
-      "description": "In this article, I'll walk you through a hands-on project where I integrated Infracost directly into my CI/CD pipeline.",
-      "url": "https://builder.aws.com/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
-      "imageUrl": "",
-      "authorName": "Jessica Aparecida Bueno",
-      "authorAlias": "jehbueno1990",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar8S9WC1BcAxvsi27qF6154xPB.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-02T16:06:52.591Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -403,6 +382,23 @@
       "publishedAt": "2026-04-17T14:32:53.936Z",
       "likesCount": 1129,
       "commentsCount": 203
+    },
+    {
+      "id": "/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
+      "title": "FinOps Hands-On: AWS Costs + CO_2e  in Every PR with Infracost & Terraform",
+      "description": "In this article, I'll walk you through a hands-on project where I integrated Infracost directly into my CI/CD pipeline.",
+      "url": "https://builder.aws.com/content/3DAuhh6eFZCKwL3PWZTts7pOn7D",
+      "imageUrl": "",
+      "authorName": "Jessica Aparecida Bueno",
+      "authorAlias": "jehbueno1990",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar8S9WC1BcAxvsi27qF6154xPB.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T16:06:52.591Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
