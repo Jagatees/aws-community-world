@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-05-02T13:30:46.086Z",
+  "updatedAt": "2026-05-02T14:19:52.953Z",
   "latest": [
+    {
+      "id": "/content/3DAclW99ud86TLZrHA0eipFe4rv",
+      "title": "Cloud não é o futuro — é o presente (e você já pode começar)",
+      "description": "Enquanto muita gente ainda acha que cloud é algo distante, empresas já estão migrando tudo. Entenda por que começar agora pode mudar seu caminho na tecnologia.",
+      "url": "https://builder.aws.com/content/3DAclW99ud86TLZrHA0eipFe4rv",
+      "imageUrl": "",
+      "authorName": "Iokio Cainã Hirai Rocha",
+      "authorAlias": "iokiohirai",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdD9mH9ypTyIqs2b14VZTLUlFQ.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
+      "tags": [
+        "amazon-cloudsearch"
+      ],
+      "publishedAt": "2026-05-02T13:34:14.628Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D974I5ubo0GCzhevpigJH951uO",
       "title": "Além da Teoria: Implementando Laboratórios de Nuvem para Disciplinas de Hardware",
@@ -17,7 +36,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-02T11:17:57.665Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -170,29 +189,6 @@
       "publishedAt": "2026-05-01T23:15:50.683Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D8tkQVwOHAbkrphXd251NX7FZJ",
-      "title": "Agentes de IA: o que são, como funcionam e por que a AWS está na vanguarda dessa revolução",
-      "description": "Neste artigo, você vai entender o que são agentes de IA, como eles funcionam por dentro com planejamento, ferramentas e memória, e como a AWS, através do Amazon Bedrock e outros serviços, coloca essa tecnologia ao alcance de quem está começando. Do conceito até um exemplo prático de agente de suporte ao cliente, tudo explicado do zero.",
-      "url": "https://builder.aws.com/content/3D8tkQVwOHAbkrphXd251NX7FZJ",
-      "imageUrl": "",
-      "authorName": "julia rocha",
-      "authorAlias": "juliarocha",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "agentic-ai",
-        "ai-agents",
-        "ai-engineering",
-        "ai-for-developers",
-        "ai-ml"
-      ],
-      "publishedAt": "2026-05-01T22:56:19.724Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -324,6 +320,27 @@
       "commentsCount": 327
     },
     {
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxINBe97cOwR6iVYNh0hVyR9Q0.webp",
+      "location": "West Bengal, IN",
+      "lat": 22.9964948,
+      "lng": 87.6855882,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 1129,
+      "commentsCount": 202
+    },
+    {
       "id": "/content/3D6D6sERqXefrI0qhzXcRqjGS71",
       "title": "Monte Seu Servidor de Minecraft na Nuvem com EC2! ⛏️☁️",
       "description": "Aprenda a criar um servidor simples e avançado com máquinas EC2 na AWS!",
@@ -347,27 +364,6 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "title": "AIdeas Finalist: Aether Health",
-      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
-      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
-      "authorName": "Debadrit Nag",
-      "authorAlias": "debadritnag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxINBe97cOwR6iVYNh0hVyR9Q0.webp",
-      "location": "West Bengal, IN",
-      "lat": 22.9964948,
-      "lng": 87.6855882,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-17T14:32:53.936Z",
-      "likesCount": 1129,
-      "commentsCount": 202
-    },
-    {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
       "title": "The Study Break That Gave Me Direction Again",
       "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
@@ -388,27 +384,23 @@
       "commentsCount": 27
     },
     {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
+      "id": "/content/3D974I5ubo0GCzhevpigJH951uO",
+      "title": "Além da Teoria: Implementando Laboratórios de Nuvem para Disciplinas de Hardware",
+      "description": "Uma exploração sobre como integrar serviços de computação em nuvem para superar as limitações físicas dos laboratórios acadêmicos. Descubra como o AWS Builder Center serve de combustível para essa inovação, conectando estudantes ao que há de mais avançado na tecnologia.",
+      "url": "https://builder.aws.com/content/3D974I5ubo0GCzhevpigJH951uO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAMn0Ael3dYxWWbwaXjkAn9Y8k/e670.webp",
+      "authorName": "Gabriel Sampaio Santos",
+      "authorAlias": "gabrielss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CMO2yDKsV1sow1gVfifvc6H3Mh.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
+        "aws-builders"
       ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 30,
-      "commentsCount": 6
+      "publishedAt": "2026-05-02T11:17:57.665Z",
+      "likesCount": 2,
+      "commentsCount": 0
     }
   ]
 }
