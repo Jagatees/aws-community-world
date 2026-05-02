@@ -1,6 +1,63 @@
 {
-  "updatedAt": "2026-05-02T14:19:52.953Z",
+  "updatedAt": "2026-05-02T15:16:11.232Z",
   "latest": [
+    {
+      "id": "/content/3DAlnO3f2qsaJvmb1DVKaEWiDme",
+      "title": "This Is Where Builders Are Made",
+      "description": "This is where learning turns into legacy. What you build here doesn’t just end with you—it continues, scales, and makes an impact even when you’re not around",
+      "url": "https://builder.aws.com/content/3DAlnO3f2qsaJvmb1DVKaEWiDme",
+      "imageUrl": "",
+      "authorName": "Tharun DV",
+      "authorAlias": "neuralforger",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AuurufhOCz6Pwmww17w9WXymkj.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-02T14:57:58.558Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DAjQmZ8hb9QReOcYf3BGAAzgSa",
+      "title": "Construindo automações na prática: os desafios reais e o poder da comunidade!",
+      "description": "Automações em comunidade",
+      "url": "https://builder.aws.com/content/3DAjQmZ8hb9QReOcYf3BGAAzgSa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAmZQ5P3gVLcWvtiZrGqMKoMQ4/Desi.webp",
+      "authorName": "Júlia Campos",
+      "authorAlias": "jcamposs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjkulOX0lRv21UtH0HAy96RNS1.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T14:49:29.137Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DAbRQPAck5ZJ30iiJcEivQoatl",
+      "title": "AIdeas 10K Winners Audit & Fairness Review",
+      "description": "This is a follow-up to Eugene Garrison's 50-finalists compliance audit, which reviewed all 50 finalists against the published article requirements. This audit focuses on the 20 winners specifically — checking compliance, claim feasibility, and award fairness.",
+      "url": "https://builder.aws.com/content/3DAbRQPAck5ZJ30iiJcEivQoatl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAeqGu1dy9vBetPNQ0CDeHgq7T/Scre.webp",
+      "authorName": "Cameroon John",
+      "authorAlias": "cameroon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D9MuTmkFtIXuGmg5ezTdxqHqcB.webp",
+      "location": "CH",
+      "lat": 46.7985624,
+      "lng": 8.2319736,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "daily-life-enhancement",
+        "workplace-efficiency",
+        "commercial-solutions"
+      ],
+      "publishedAt": "2026-05-02T14:22:35.695Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DAclW99ud86TLZrHA0eipFe4rv",
       "title": "Cloud não é o futuro — é o presente (e você já pode começar)",
@@ -109,8 +166,8 @@
         "networking"
       ],
       "publishedAt": "2026-05-02T02:55:40.054Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "likesCount": 2,
+      "commentsCount": 4
     },
     {
       "id": "/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
@@ -134,61 +191,6 @@
       "publishedAt": "2026-05-02T02:25:52.127Z",
       "likesCount": 2,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3D8yhqAkMdXKF9DAdkJWjGMKonU",
-      "title": "Amazon Quick: The Agentic AI That Finally Understands How You Actually Work",
-      "description": "Amazon Quick is AWS's agentic AI desktop assistant that runs continuously in the background, connecting all your work apps - Slack, Gmail, Teams, Jira, Salesforce, and more - into one place. Unlike reactive AI tools, Quick proactively surfaces what you need before you ask, automates multi-step workflows, and creates presentations, dashboards, and apps from plain English. Built on Amazon Bedrock with enterprise-grade AWS security.",
-      "url": "https://builder.aws.com/content/3D8yhqAkMdXKF9DAdkJWjGMKonU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8zWTJEnZQcuqYKbsTknUX5IS3/quic.webp",
-      "authorName": "Naveen G",
-      "authorAlias": "naveen15",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36t9Fs5MA6HnbMaOoRbR87lw00D.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-01T23:35:54.332Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D8x4hk5IBGURWjathDQFxdx2ya",
-      "title": "Ferramentas de Planilha e Dashboard ainda são uteis?",
-      "description": "Este artigo discute a relevância atual das soluções de planilhas eletrônicas e plataformas de visualização de dados interativos.  abordando suas vantagens, limitações e o papel que desempenham na integração de informações e na automação de processos, refletindo sobre sua importância no mercado de trabalho contemporâneo.",
-      "url": "https://builder.aws.com/content/3D8x4hk5IBGURWjathDQFxdx2ya",
-      "imageUrl": "",
-      "authorName": "Vitor Ochoa",
-      "authorAlias": "ochoavitu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8wsDBDLXPnRVSgmTl3qvp43c0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-01T23:21:40.970Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D8vDF9Oo70gNGFvmZY8btuOgE9",
-      "title": "Don’t Just Learn AWS - Build Something That Matters",
-      "description": "Move beyond tutorials and start building real world projects using AWS as a students. This guide shows how to turn your learning into practical, deployed applications that stand out in academics and careers.",
-      "url": "https://builder.aws.com/content/3D8vDF9Oo70gNGFvmZY8btuOgE9",
-      "imageUrl": "",
-      "authorName": "Nischal S Tumbeti",
-      "authorAlias": "nischalst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AL5C9TUX7gXtzTqrD5rjJHAggf.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-05-01T23:15:50.683Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -341,6 +343,28 @@
       "commentsCount": 202
     },
     {
+      "id": "/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
+      "title": "Entender computação em nuvem pode ser o diferencial para se destacar na área da tecnologia, mas por quê?",
+      "description": "Aplicativos, plataformas de streaming, inteligência artificial, bancos digitais, jogos online e milhares de sistemas modernos dependem diariamente da computação em nuvem. Com empresas migrando cada vez mais para infraestruturas cloud, profissionais que entendem esse ecossistema vêm se tornando mais valorizados no mercado de tecnologia. Mas por que isso está acontecendo, mas como começar a aprender cloud na prática? Acompanhe o artigo para entender.",
+      "url": "https://builder.aws.com/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9NB5CR0OizU9Y2lvxr8f1mEXq/Desi.webp",
+      "authorName": "Gabriel Araújo",
+      "authorAlias": "gabrielaraujoaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr6BNcfP2ciODj4v29aM3ZsTuU.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "students",
+        "cloud-networking",
+        "cloud-practitioner",
+        "networking"
+      ],
+      "publishedAt": "2026-05-02T02:55:40.054Z",
+      "likesCount": 2,
+      "commentsCount": 4
+    },
+    {
       "id": "/content/3D6D6sERqXefrI0qhzXcRqjGS71",
       "title": "Monte Seu Servidor de Minecraft na Nuvem com EC2! ⛏️☁️",
       "description": "Aprenda a criar um servidor simples e avançado com máquinas EC2 na AWS!",
@@ -382,25 +406,6 @@
       "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 38,
       "commentsCount": 27
-    },
-    {
-      "id": "/content/3D974I5ubo0GCzhevpigJH951uO",
-      "title": "Além da Teoria: Implementando Laboratórios de Nuvem para Disciplinas de Hardware",
-      "description": "Uma exploração sobre como integrar serviços de computação em nuvem para superar as limitações físicas dos laboratórios acadêmicos. Descubra como o AWS Builder Center serve de combustível para essa inovação, conectando estudantes ao que há de mais avançado na tecnologia.",
-      "url": "https://builder.aws.com/content/3D974I5ubo0GCzhevpigJH951uO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAMn0Ael3dYxWWbwaXjkAn9Y8k/e670.webp",
-      "authorName": "Gabriel Sampaio Santos",
-      "authorAlias": "gabrielss",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CMO2yDKsV1sow1gVfifvc6H3Mh.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-02T11:17:57.665Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ]
 }
