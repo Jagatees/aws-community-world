@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-05-02T11:17:17.433Z",
+  "updatedAt": "2026-05-02T12:18:31.132Z",
   "latest": [
+    {
+      "id": "/content/3D974I5ubo0GCzhevpigJH951uO",
+      "title": "Além da Teoria: Implementando Laboratórios de Nuvem para Disciplinas de Hardware",
+      "description": "Uma exploração sobre como integrar serviços de computação em nuvem para superar as limitações físicas dos laboratórios acadêmicos. Descubra como o AWS Builder Center serve de combustível para essa inovação, conectando estudantes ao que há de mais avançado na tecnologia.",
+      "url": "https://builder.aws.com/content/3D974I5ubo0GCzhevpigJH951uO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAMn0Ael3dYxWWbwaXjkAn9Y8k/e670.webp",
+      "authorName": "Gabriel Sampaio Santos",
+      "authorAlias": "gabrielss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CMO2yDKsV1sow1gVfifvc6H3Mh.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-02T11:17:57.665Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DAAwRtwVgMRsgjxJxvoRJzbdE5",
       "title": "Mastering Structured Repository Audits: A Guide for AWS Builders (with Production-Ready Prompts)",
@@ -173,23 +192,6 @@
       ],
       "publishedAt": "2026-05-01T22:56:19.724Z",
       "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D8n0o53xdQB3tXhpG2frlj0y5F",
-      "title": "AWS Unilorin Project : EC2, IAM, Security and Billing",
-      "description": "This project involved launching and configuring a virtual server using Amazon EC2, setting up secure access and permissions with AWS IAM, and deploying a web server with a custom web page. Permission validation was also performed by allowing and denying specific EC2 actions to ensure proper access control.",
-      "url": "https://builder.aws.com/content/3D8n0o53xdQB3tXhpG2frlj0y5F",
-      "imageUrl": "",
-      "authorName": "Tosin Okeshola",
-      "authorAlias": "queet",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-05-01T22:37:03.613Z",
-      "likesCount": 1,
       "commentsCount": 0
     }
   ],
