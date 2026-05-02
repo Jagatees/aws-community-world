@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-05-02T09:25:51.209Z",
+  "updatedAt": "2026-05-02T10:19:46.556Z",
   "latest": [
+    {
+      "id": "/content/3DAAwRtwVgMRsgjxJxvoRJzbdE5",
+      "title": "Mastering Structured Repository Audits: A Guide for AWS Builders (with Production-Ready Prompts)",
+      "description": "A practical guide for AWS developers to perform structured, evidence-based repository audits using staged workflows and CLI automation. Includes production-ready prompts that turn complex codebases into clear architectural insights, risks, and actionable next steps.",
+      "url": "https://builder.aws.com/content/3DAAwRtwVgMRsgjxJxvoRJzbdE5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DAEpG9zlWZhihiOT1T7g5t7hQW/code.webp",
+      "authorName": "Animesh Wani",
+      "authorAlias": "animeshwani",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-02T10:11:46.939Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D9fdf6ua27JJCFakuIv4pPIwMY",
       "title": "A Evolução da Comunidade: Do AWS Cloud Club ao AWS Student Builder Groups",
@@ -174,27 +191,6 @@
       "publishedAt": "2026-05-01T22:37:03.613Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D8mFIP6a3yv2n0NEu13CEmEcsH",
-      "title": "How to Automate Your daily Workflow with Agents in Amazon Quick Desktop",
-      "description": "Learn how to create scheduled agents in Amazon Quick Desktop that automate your morning briefings, meeting prep, and weekly accomplishment tracking — all running in the background before you even open your laptop.",
-      "url": "https://builder.aws.com/content/3D8mFIP6a3yv2n0NEu13CEmEcsH",
-      "imageUrl": "",
-      "authorName": "Ismael Murillo",
-      "authorAlias": "murili",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-quick-suite",
-        "amazon-quicksight",
-        "ai-ml"
-      ],
-      "publishedAt": "2026-05-01T22:12:02.602Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -349,29 +345,6 @@
       "commentsCount": 327
     },
     {
-      "id": "/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
-      "title": "Generating Certification Practice Questions at Scale with Parallel AI Agents",
-      "description": "A walkthrough of the parallel-agent pipeline behind a free, browser-based practice platform that covers eleven certification tracks across AWS, CompTIA, and Python Institute. Includes the three-layer configuration, the quality test suite, the distractor-construction rules, and the lessons learned across eight generation waves of building 8,825 practice questions.",
-      "url": "https://builder.aws.com/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9JiAPpegUsNaAhf0CM3y6QB5E/Scre.webp",
-      "authorName": "bashadmin",
-      "authorAlias": "bashadmin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eSxhOX9Qy0NEqgHWVliwL6gKEz.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "training-and-certification",
-        "ai",
-        "website",
-        "ai-agents",
-        "workflows"
-      ],
-      "publishedAt": "2026-05-02T02:25:52.127Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
       "title": "AIdeas Finalist: Aether Health",
       "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
@@ -411,6 +384,29 @@
       "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 38,
       "commentsCount": 27
+    },
+    {
+      "id": "/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
+      "title": "Generating Certification Practice Questions at Scale with Parallel AI Agents",
+      "description": "A walkthrough of the parallel-agent pipeline behind a free, browser-based practice platform that covers eleven certification tracks across AWS, CompTIA, and Python Institute. Includes the three-layer configuration, the quality test suite, the distractor-construction rules, and the lessons learned across eight generation waves of building 8,825 practice questions.",
+      "url": "https://builder.aws.com/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9JiAPpegUsNaAhf0CM3y6QB5E/Scre.webp",
+      "authorName": "bashadmin",
+      "authorAlias": "bashadmin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eSxhOX9Qy0NEqgHWVliwL6gKEz.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "training-and-certification",
+        "ai",
+        "website",
+        "ai-agents",
+        "workflows"
+      ],
+      "publishedAt": "2026-05-02T02:25:52.127Z",
+      "likesCount": 2,
+      "commentsCount": 2
     }
   ]
 }
