@@ -1,25 +1,44 @@
 {
-  "updatedAt": "2026-05-02T01:35:03.586Z",
+  "updatedAt": "2026-05-02T03:04:51.790Z",
   "latest": [
     {
-      "id": "/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
-      "title": "Líder Estudantil do AWS Builder: bastidores, propósito e a arte de fazer acontecer! 🚀☁️",
-      "description": "A minha segunda semana como Líder Estudantil do AWS Builder",
-      "url": "https://builder.aws.com/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9CBYIGdErvQujjptGYY5Hps7I/Whats.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
+      "title": "Entender computação em nuvem pode ser o diferencial para se destacar na área da tecnologia, mas por quê?",
+      "description": "Aplicativos, plataformas de streaming, inteligência artificial, bancos digitais, jogos online e milhares de sistemas modernos dependem diariamente da computação em nuvem. Com empresas migrando cada vez mais para infraestruturas cloud, profissionais que entendem esse ecossistema vêm se tornando mais valorizados no mercado de tecnologia. Mas por que isso está acontecendo, mas como começar a aprender cloud na prática? Acompanhe o artigo para entender.",
+      "url": "https://builder.aws.com/content/3D9746nd4Wh9ESLiZLNAVSTnzVK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9NB5CR0OizU9Y2lvxr8f1mEXq/Desi.webp",
+      "authorName": "Gabriel Araújo",
+      "authorAlias": "gabrielaraujoaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr6BNcfP2ciODj4v29aM3ZsTuU.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
-        "aws-builders",
-        "tech"
+        "students",
+        "cloud-networking",
+        "cloud-practitioner",
+        "networking"
       ],
-      "publishedAt": "2026-05-02T01:20:25.552Z",
+      "publishedAt": "2026-05-02T02:55:40.054Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
+      "title": "Generating Certification Practice Questions at Scale with Parallel AI Agents",
+      "description": "A walkthrough of the parallel-agent pipeline behind a free, browser-based practice platform that covers eleven certification tracks across AWS, CompTIA, and Python Institute. Includes the three-layer configuration, the quality test suite, the distractor-construction rules, and the lessons learned across eight generation waves of building 8,825 practice questions.",
+      "url": "https://builder.aws.com/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9JiAPpegUsNaAhf0CM3y6QB5E/Scre.webp",
+      "authorName": "bashadmin",
+      "authorAlias": "bashadmin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eSxhOX9Qy0NEqgHWVliwL6gKEz.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-02T02:25:52.127Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3D8yhqAkMdXKF9DAdkJWjGMKonU",
@@ -73,7 +92,7 @@
         "students"
       ],
       "publishedAt": "2026-05-01T23:15:50.683Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -177,29 +196,6 @@
       "publishedAt": "2026-05-01T21:34:21.371Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D6O9G0MFGxRcErcSPzTpaALPyV",
-      "title": "Bedrock Managed Agents, OpenAI on AWS, and Cursor Nukes PocketOS",
-      "description": "AWS shipped AgentCore Managed Harness with filesystem persistence and put OpenAI on Bedrock the same week. Plus Cursor's nine-second production-DB wipe at PocketOS — what happens when guardrails lag capability.",
-      "url": "https://builder.aws.com/content/3D6O9G0MFGxRcErcSPzTpaALPyV",
-      "imageUrl": "",
-      "authorName": "Brett Gillett",
-      "authorAlias": "brettco098",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wMUUBTsyCmdzLMmHpvHmnmsJaE.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai",
-        "agentic-ai",
-        "amazon-bedrock",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock-agents"
-      ],
-      "publishedAt": "2026-05-01T21:32:33.295Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -219,7 +215,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 48,
+      "likesCount": 49,
       "commentsCount": 19
     },
     {
@@ -242,6 +238,23 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3541,
       "commentsCount": 323
+    },
+    {
+      "id": "/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
+      "title": "Generating Certification Practice Questions at Scale with Parallel AI Agents",
+      "description": "A walkthrough of the parallel-agent pipeline behind a free, browser-based practice platform that covers eleven certification tracks across AWS, CompTIA, and Python Institute. Includes the three-layer configuration, the quality test suite, the distractor-construction rules, and the lessons learned across eight generation waves of building 8,825 practice questions.",
+      "url": "https://builder.aws.com/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9JiAPpegUsNaAhf0CM3y6QB5E/Scre.webp",
+      "authorName": "bashadmin",
+      "authorAlias": "bashadmin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eSxhOX9Qy0NEqgHWVliwL6gKEz.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-02T02:25:52.127Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -309,26 +322,6 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
-      "title": "Da desconfiança à nuvem: como a AWS mudou minha trajetória",
-      "description": "Uma breve história do início da minha carreira e onde a AWS está me levando.",
-      "url": "https://builder.aws.com/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
-      "imageUrl": "",
-      "authorName": "Artur Borst",
-      "authorAlias": "arturbb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8iWcDd4kSglSwgHvNH3Ty9Smh.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "career",
-        "healthcare-life-sciences-industry"
-      ],
-      "publishedAt": "2026-05-01T21:11:39.026Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -352,6 +345,26 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
+      "title": "Da desconfiança à nuvem: como a AWS mudou minha trajetória",
+      "description": "Uma breve história do início da minha carreira e onde a AWS está me levando.",
+      "url": "https://builder.aws.com/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
+      "imageUrl": "",
+      "authorName": "Artur Borst",
+      "authorAlias": "arturbb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8iWcDd4kSglSwgHvNH3Ty9Smh.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "career",
+        "healthcare-life-sciences-industry"
+      ],
+      "publishedAt": "2026-05-01T21:11:39.026Z",
+      "likesCount": 3,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -372,29 +385,6 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1428,
       "commentsCount": 327
-    },
-    {
-      "id": "/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
-      "title": "De Estudante a Builder: Como o AWS Builder Center Pode Acelerar Sua Carreira na Nuvem ☁️",
-      "description": "Começar na área de tecnologia raramente é uma linha reta. Muitas vezes, a gente se vê lidando com sistemas complexos e sente que precisa abraçar o mundo para dar o próximo passo. E um dos maiores saltos que um estudante precisa dar é tirar seus projetos do localhost e entender como as coisas rodam de verdade no mercado. Nisso, o AWS Builder Center pode te ajudar.",
-      "url": "https://builder.aws.com/content/3D2FLyWZUvIFnHzRgjBTKspFfSj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D530AGjHQWz0By3PD8XHQbAMAu/Bann.webp",
-      "authorName": "Pedro Cardoso",
-      "authorAlias": "printfpedro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwWhW84y4gmNGAxVx4SLIrZKM0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "aws-ambassador",
-        "aws-builders",
-        "aws-cloud-clubs",
-        "builder-center"
-      ],
-      "publishedAt": "2026-04-30T19:34:21.906Z",
-      "likesCount": 11,
-      "commentsCount": 6
     },
     {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
