@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-05-02T05:02:53.735Z",
+  "updatedAt": "2026-05-02T06:39:14.212Z",
   "latest": [
+    {
+      "id": "/content/3D9fdf6ua27JJCFakuIv4pPIwMY",
+      "title": "A Evolução da Comunidade: Do AWS Cloud Club ao AWS Student Builder Groups",
+      "description": "A tecnologia avança rápido e nossa comunidade evolui junto! A partir de 30 de abril de 2026, os AWS Cloud Clubs tornam-se AWS Student Builder Groups. Esta mudança foca em IA Generativa e desenvolvimento prático, utilizando o AWS Builder Center como hub central para conectar estudantes builders ao mercado global. É a sua chance de dominar a nuvem direto da fonte e construir autoridade técnica desde o primeiro dia.",
+      "url": "https://builder.aws.com/content/3D9fdf6ua27JJCFakuIv4pPIwMY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9gPp4F84tXcf5sTYZvhmT7lTW/Do-I.webp",
+      "authorName": "Ana Eliza Gonçalves",
+      "authorAlias": "anaeliza",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiBjIXCotYIumLm6CKv60JO0cW.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
+      "tags": [],
+      "publishedAt": "2026-05-02T05:28:19.169Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D9bOR5oHGyGvPR9ltuUISQ56Yr",
       "title": "AWS student builder group",
@@ -172,28 +189,6 @@
       "publishedAt": "2026-05-01T22:12:02.602Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3D8ivrNseHoEaSGbWvihmU6Bv1F",
-      "title": "Como começar a usar a AWS de graça (e sem medo de receber uma fatura surpresa)",
-      "description": "O Free Tier da AWS é uma das melhores formas de aprender nuvem sem gastar nada, mas tem regras que você precisa conhecer antes de começar. Neste artigo, você aprende a criar sua conta, ativar os alertas certos e explorar a AWS com segurança.",
-      "url": "https://builder.aws.com/content/3D8ivrNseHoEaSGbWvihmU6Bv1F",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8k1gAlFXnFGxvYhYFxuxugIf4/FREE.webp",
-      "authorName": "Maria Eduarda",
-      "authorAlias": "cloudmadu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8GruDZpqspZ5fii1irvazGHZq.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "aws-builders",
-        "free-tier-projects",
-        "students",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-01T21:37:37.925Z",
-      "likesCount": 1,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -213,8 +208,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 50,
-      "commentsCount": 24
+      "likesCount": 51,
+      "commentsCount": 25
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -326,43 +321,6 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
-      "title": "Generating Certification Practice Questions at Scale with Parallel AI Agents",
-      "description": "A walkthrough of the parallel-agent pipeline behind a free, browser-based practice platform that covers eleven certification tracks across AWS, CompTIA, and Python Institute. Includes the three-layer configuration, the quality test suite, the distractor-construction rules, and the lessons learned across eight generation waves of building 8,825 practice questions.",
-      "url": "https://builder.aws.com/content/3D9JFD8OOwO38GQE6P0RjaVuzXL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9JiAPpegUsNaAhf0CM3y6QB5E/Scre.webp",
-      "authorName": "bashadmin",
-      "authorAlias": "bashadmin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eSxhOX9Qy0NEqgHWVliwL6gKEz.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-05-02T02:25:52.127Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
-      "title": "Da desconfiança à nuvem: como a AWS mudou minha trajetória",
-      "description": "Uma breve história do início da minha carreira e onde a AWS está me levando.",
-      "url": "https://builder.aws.com/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
-      "imageUrl": "",
-      "authorName": "Artur Borst",
-      "authorAlias": "arturbb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8iWcDd4kSglSwgHvNH3Ty9Smh.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "career",
-        "healthcare-life-sciences-industry"
-      ],
-      "publishedAt": "2026-05-01T21:11:39.026Z",
-      "likesCount": 4,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -385,6 +343,26 @@
       "commentsCount": 327
     },
     {
+      "id": "/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
+      "title": "Da desconfiança à nuvem: como a AWS mudou minha trajetória",
+      "description": "Uma breve história do início da minha carreira e onde a AWS está me levando.",
+      "url": "https://builder.aws.com/content/3D7xGL5qkLuQdzwFGxNqTjGqldM",
+      "imageUrl": "",
+      "authorName": "Artur Borst",
+      "authorAlias": "arturbb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8iWcDd4kSglSwgHvNH3Ty9Smh.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "career",
+        "healthcare-life-sciences-industry"
+      ],
+      "publishedAt": "2026-05-01T21:11:39.026Z",
+      "likesCount": 4,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
       "title": "AIdeas Finalist: Aether Health",
       "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
@@ -404,6 +382,26 @@
       "publishedAt": "2026-04-17T14:32:53.936Z",
       "likesCount": 1129,
       "commentsCount": 202
+    },
+    {
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "advertising-marketing-industry",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T00:44:34.853Z",
+      "likesCount": 38,
+      "commentsCount": 27
     }
   ]
 }
