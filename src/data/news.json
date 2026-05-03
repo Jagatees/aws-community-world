@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-05-03T18:18:05.431Z",
+  "updatedAt": "2026-05-03T19:23:16.534Z",
   "latest": [
+    {
+      "id": "/content/3DDxCrS5hFbSXjG6QHKMFtSHrEA",
+      "title": "MCP IDE Integration Patterns with Okta 3LO Authentication",
+      "description": "Two production-ready patterns for connecting MCP-compatible IDEs (Claude Code, Kiro, VS Code) to remote MCP servers on Amazon Bedrock AgentCore, with Okta OAuth 2.0 3LO authentication (Authorization Code + PKCE). Covers local proxy implementation, Okta setup, and deployment for both container-based (Runtime) and serverless (Gateway) patterns.",
+      "url": "https://builder.aws.com/content/3DDxCrS5hFbSXjG6QHKMFtSHrEA",
+      "imageUrl": "",
+      "authorName": "Mallik Panchumarthy",
+      "authorAlias": "mpanchum",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DE2q5mL3iUwoyIWdeJj5bGhVqz.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-03T18:41:38.503Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DE193fyhsstpiuELPkLoLfgtVy",
+      "title": "Enforcing Preventative Controls in a Multi-Account Environment",
+      "description": "Learn how to enforce governance at scale in AWS Organizations using Service Control Policies (SCPs), Resource Control Policies (RCPs), and Declarative Policies to enhance security and compliance across multiple accounts.",
+      "url": "https://builder.aws.com/content/3DE193fyhsstpiuELPkLoLfgtVy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DE1kYhhwsFt7M1sn6zm0GkmMtO/featu.webp",
+      "authorName": "Sergio Cambelo",
+      "authorAlias": "scambelo",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3668vuG0zkQVZ27v6LkYVaigjPg.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aws-organizations",
+        "security-and-compliance",
+        "governance",
+        "iam",
+        "service-control-policies"
+      ],
+      "publishedAt": "2026-05-03T18:34:28.445Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DDoSoustlREXWwB9qT0FxXWQAx",
       "title": "How I Cleared the AWS Cloud Practitioner Exam in Under 8 Hours",
@@ -171,50 +211,6 @@
       "publishedAt": "2026-05-03T08:38:28.872Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
-      "title": "7 Ways to Maximize Video Encoding Performance on AWS Graviton",
-      "description": "AWS Graviton processors are purpose-built for video encoding workloads - but only a tuned build fully realizes that potential. This article walks through 7 practical optimizations, from compiler flags to SIMD acceleration, that unlock Graviton's full performance for FFmpeg and OpenCV pipelines.",
-      "url": "https://builder.aws.com/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwSC0VOxqSEzDDgJtqXO6wnltY/Pict.webp",
-      "authorName": "Ziv Klempner",
-      "authorAlias": "zivklemp",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zDerN4dHMw2oM8z1ogOlx4GO7B.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "graviton",
-        "video",
-        "performance",
-        "amazon-ec2",
-        "open-source"
-      ],
-      "publishedAt": "2026-05-03T07:09:56.186Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DCax04M9o7gBpAMttstsLjmPUD",
-      "title": "Multi-Agent Architecture Patterns with Amazon Bedrock AgentCore Runtime",
-      "description": "A practical guide to deploying multi‑agent architectures on Amazon Bedrock AgentCore Runtime, covering Agents‑as‑Tools (subagents), Agent‑as‑MCP, and Agent‑to‑Agent (A2A) patterns with guidance on runtime topology, security boundaries, and shared context.",
-      "url": "https://builder.aws.com/content/3DCax04M9o7gBpAMttstsLjmPUD",
-      "imageUrl": "",
-      "authorName": "Doron Bleiberg",
-      "authorAlias": "doronbl",
-      "authorAvatarUrl": "",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [
-        "startups",
-        "amazon-bedrock-agentcore",
-        "multi-agent-orchestrator"
-      ],
-      "publishedAt": "2026-05-03T06:30:07.876Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -297,31 +293,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 58,
-      "commentsCount": 28
-    },
-    {
-      "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
-      "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
-      "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
-      "url": "https://builder.aws.com/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDcJ4KuJM8OjdldeK5UE05uapw/llm2-.webp",
-      "authorName": "Raj Jain",
-      "authorAlias": "rajjain",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qqEoWsWzCxi7y8olOdS1UP2JG.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro",
-        "ai-agents",
-        "ai-engineering",
-        "ai-ide",
-        "llm"
-      ],
-      "publishedAt": "2026-05-03T14:54:30.617Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "likesCount": 59,
+      "commentsCount": 29
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -365,8 +338,31 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 12,
+      "likesCount": 13,
       "commentsCount": 6
+    },
+    {
+      "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
+      "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
+      "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
+      "url": "https://builder.aws.com/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDcJ4KuJM8OjdldeK5UE05uapw/llm2-.webp",
+      "authorName": "Raj Jain",
+      "authorAlias": "rajjain",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qqEoWsWzCxi7y8olOdS1UP2JG.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "ai-agents",
+        "ai-engineering",
+        "ai-ide",
+        "llm"
+      ],
+      "publishedAt": "2026-05-03T14:54:30.617Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
