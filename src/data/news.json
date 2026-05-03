@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-05-03T08:35:10.032Z",
+  "updatedAt": "2026-05-03T09:31:00.455Z",
   "latest": [
+    {
+      "id": "/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
+      "title": "From Idea to Impact: Building a Real Event-Driven Security Pipeline on AWS",
+      "description": "How I designed and presented a production-minded EventBridge + Lambda + SQS architecture that reacts in real time, scales independently, and survives failure gracefully.",
+      "url": "https://builder.aws.com/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCqRhk1AbQoAMw2hkpYpZKt6Vm/Scre.webp",
+      "authorName": "Habeeb Babasulaiman",
+      "authorAlias": "freemanboss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32KkG08lZwpZvSN5wgLE1DJzJoU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "event-driven",
+        "amazon-eventbridge",
+        "architecture-patterns",
+        "aws-lambda",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-05-03T08:38:28.872Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
       "title": "7 Ways to Maximize Video Encoding Performance on AWS Graviton",
@@ -195,29 +218,6 @@
       "publishedAt": "2026-05-03T02:17:18.200Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DBWntGfKdlT4rXPmNSvpRwpYLx",
-      "title": "Minha primeira vez com AWS: Como o Builder Center cria a rede de apoio que todo estudante precisa",
-      "description": "Começar na nuvem pode ser intimidador. Neste artigo, conto como o apoio de colegas de trabalho foi essencial no meu início e como o AWS Builder Center entrega essa mesma rede para estudantes que ainda não estão no mercado.",
-      "url": "https://builder.aws.com/content/3DBWntGfKdlT4rXPmNSvpRwpYLx",
-      "imageUrl": "",
-      "authorName": "Felipe Farias Ribeiro Filho",
-      "authorAlias": "felipefrf",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "aws-builders",
-        "aws-cloud-clubs",
-        "aws-tech-tales",
-        "first-cloud-project-challenge-1"
-      ],
-      "publishedAt": "2026-05-03T02:15:58.232Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -264,6 +264,25 @@
       "commentsCount": 1919
     },
     {
+      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
+      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
+      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-30T20:13:50.660Z",
+      "likesCount": 56,
+      "commentsCount": 28
+    },
+    {
       "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
       "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
       "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
@@ -284,25 +303,6 @@
       "publishedAt": "2026-05-02T19:59:43.068Z",
       "likesCount": 12,
       "commentsCount": 6
-    },
-    {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 55,
-      "commentsCount": 27
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -388,6 +388,29 @@
       "commentsCount": 328
     },
     {
+      "id": "/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
+      "title": "From Idea to Impact: Building a Real Event-Driven Security Pipeline on AWS",
+      "description": "How I designed and presented a production-minded EventBridge + Lambda + SQS architecture that reacts in real time, scales independently, and survives failure gracefully.",
+      "url": "https://builder.aws.com/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCqRhk1AbQoAMw2hkpYpZKt6Vm/Scre.webp",
+      "authorName": "Habeeb Babasulaiman",
+      "authorAlias": "freemanboss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32KkG08lZwpZvSN5wgLE1DJzJoU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "event-driven",
+        "amazon-eventbridge",
+        "architecture-patterns",
+        "aws-lambda",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-05-03T08:38:28.872Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
       "title": "AIdeas Finalist: Aether Health",
       "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
@@ -407,26 +430,6 @@
       "publishedAt": "2026-04-17T14:32:53.936Z",
       "likesCount": 1129,
       "commentsCount": 203
-    },
-    {
-      "id": "/content/3DBCMzKwsbilIoTc3jbjtxus81t",
-      "title": "Antes x Depois: como o AWS Builder Center mudou minha visão sobre cloud computing",
-      "description": "Sou estudante de Engenharia da Computação na USP e não sabia por onde começar em cloud. Aqui está o que mudou depois que entrei no AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3DBCMzKwsbilIoTc3jbjtxus81t",
-      "imageUrl": "",
-      "authorName": "Rafael Bramont",
-      "authorAlias": "rafaelbramont",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "getting-started",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-02T18:48:06.645Z",
-      "likesCount": 3,
-      "commentsCount": 3
     }
   ]
 }
