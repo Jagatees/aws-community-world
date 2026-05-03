@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-03T03:05:38.622Z",
+  "updatedAt": "2026-05-03T05:08:29.201Z",
   "latest": [
     {
       "id": "/content/3DCBEYIYcTfKhzPbVXSJxoAImlb",
@@ -59,7 +59,7 @@
         "containers"
       ],
       "publishedAt": "2026-05-03T02:39:40.741Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -232,8 +232,8 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 10,
-      "commentsCount": 5
+      "likesCount": 12,
+      "commentsCount": 6
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -253,25 +253,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3542,
+      "likesCount": 3544,
       "commentsCount": 324
-    },
-    {
-      "id": "/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
-      "title": "Descomplicando o Horizonte: Como a Nuvem Redefine o Nosso Potencial",
-      "description": "Descubra como a computação em nuvem democratiza o acesso à inovação e se torna o diferencial estratégico para estudantes que desejam construir o futuro da tecnologia.",
-      "url": "https://builder.aws.com/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBn6xAGX9ekgCDhnQXzViAGc2a/2023.webp",
-      "authorName": "LUANA PINHEIRO",
-      "authorAlias": "lupinheiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-02T23:24:47.780Z",
-      "likesCount": 4,
-      "commentsCount": 2
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -291,7 +274,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3439,
+      "likesCount": 3440,
       "commentsCount": 1919
     },
     {
@@ -310,8 +293,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 54,
-      "commentsCount": 26
+      "likesCount": 55,
+      "commentsCount": 27
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -331,8 +314,25 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2851,
+      "likesCount": 2852,
       "commentsCount": 318
+    },
+    {
+      "id": "/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
+      "title": "Descomplicando o Horizonte: Como a Nuvem Redefine o Nosso Potencial",
+      "description": "Descubra como a computação em nuvem democratiza o acesso à inovação e se torna o diferencial estratégico para estudantes que desejam construir o futuro da tecnologia.",
+      "url": "https://builder.aws.com/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBn6xAGX9ekgCDhnQXzViAGc2a/2023.webp",
+      "authorName": "LUANA PINHEIRO",
+      "authorAlias": "lupinheiro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T23:24:47.780Z",
+      "likesCount": 5,
+      "commentsCount": 2
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -358,6 +358,28 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1429,
+      "commentsCount": 327
+    },
+    {
       "id": "/content/3DBT0MeJnME4dIG2sOyebgq6kfo",
       "title": "Entrei no AWS Builder Center, e agora? O Guia de Sobrevivência para Estudantes.",
       "description": "Descubra como navegar pelos primeiros passos na nuvem e transformar suas ideias acadêmicas em projetos reais utilizando as ferramentas acessíveis do AWS Builder Center. Este guia prático desmistifica a tecnologia para estudantes de todas as áreas, oferecendo dicas essenciais para começar a construir sem medo de custos ou complexidade.",
@@ -379,38 +401,24 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3DCBEYIYcTfKhzPbVXSJxoAImlb",
-      "title": "Os 4 projetos do AWS Labs que estão redefinindo o que significa trabalhar com cloud em 2026",
-      "description": "Em 2026, a AWS deixou de falar de servidores e passou a falar de agentes autônomos. Neste artigo, analiso os 4 projetos do AWS Labs que estão redefinindo o que significa trabalhar com cloud e IA na prática — com o que cada um resolve, onde brilha e onde tem limitações reais.",
-      "url": "https://builder.aws.com/content/3DCBEYIYcTfKhzPbVXSJxoAImlb",
+      "id": "/content/3DBCMzKwsbilIoTc3jbjtxus81t",
+      "title": "Antes x Depois: como o AWS Builder Center mudou minha visão sobre cloud computing",
+      "description": "Sou estudante de Engenharia da Computação na USP e não sabia por onde começar em cloud. Aqui está o que mudou depois que entrei no AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3DBCMzKwsbilIoTc3jbjtxus81t",
       "imageUrl": "",
-      "authorName": "Davi Cezar",
-      "authorAlias": "davicezar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COXUZ9DkMg6HnQkOBBk9E3HTsZ.webp",
+      "authorName": "Rafael Bramont",
+      "authorAlias": "rafaelbramont",
+      "authorAvatarUrl": "",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-03T02:48:40.751Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DC373vt5EoCTYB1KOqZxaCvVVJ",
-      "title": "Tchau, localhost! 🚀 Como levar seu projeto para a AWS (Guia prático para estudantes)",
-      "description": "Afinal como é que eu vou subir meu projeto nessa nuvem??",
-      "url": "https://builder.aws.com/content/3DC373vt5EoCTYB1KOqZxaCvVVJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DC4rY9KRrYUs5eVCuEvjZox3Ig/Whats.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-03T01:50:38.334Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "tags": [
+        "getting-started",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-02T18:48:06.645Z",
+      "likesCount": 3,
+      "commentsCount": 3
     }
   ]
 }
