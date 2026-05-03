@@ -1,6 +1,52 @@
 {
-  "updatedAt": "2026-05-03T14:19:55.628Z",
+  "updatedAt": "2026-05-03T15:15:49.221Z",
   "latest": [
+    {
+      "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
+      "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
+      "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
+      "url": "https://builder.aws.com/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDcJ4KuJM8OjdldeK5UE05uapw/llm2-.webp",
+      "authorName": "Raj Jain",
+      "authorAlias": "rajjain",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qqEoWsWzCxi7y8olOdS1UP2JG.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "ai-agents",
+        "ai-engineering",
+        "ai-ide",
+        "llm"
+      ],
+      "publishedAt": "2026-05-03T14:54:30.617Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Ccu2kfaCVfmCZzueXBWWlq9GAw",
+      "title": "Building AI Agents with Real-Time ML Predictions: How Amazon Bedrock AgentCore Unifies AI and ML at Scale",
+      "description": "Discover how to bridge conversational AI and production ML by combining Amazon Bedrock AgentCore with Amazon SageMaker. This post walks through an architecture where an AI agent, secured by a single AgentCore Gateway, dynamically routes requests across four MCP servers — querying RDS, invoking SageMaker endpoints for real-time predictions, and retrieving documents from a Bedrock Knowledge Base, all through natural language",
+      "url": "https://builder.aws.com/content/3Ccu2kfaCVfmCZzueXBWWlq9GAw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDbNHfUP38lUEcTnoUsNlRpXeG/cove.webp",
+      "authorName": "w.saideni",
+      "authorAlias": "waelsaideni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30SEw1L3lAv1j0GoNxsPOLeROU9.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "machine-learning",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock",
+        "financial-services-industry"
+      ],
+      "publishedAt": "2026-05-03T14:47:54.725Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
       "title": "コンソールを使わずに Lambda@Edge 関数を CloudFront へ着脱する — lambda-edge-controller",
@@ -170,45 +216,6 @@
       "publishedAt": "2026-05-03T06:07:35.300Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DCXpMLs6zXJ3DhagFPZdvV7BwV",
-      "title": "LLM on EKS: Serving with vLLM",
-      "description": "Serve Large Language Model on Elastic Kubernetes Service using Virtual Large Language Model",
-      "url": "https://builder.aws.com/content/3DCXpMLs6zXJ3DhagFPZdvV7BwV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCXsTRxHg6wuJaGZ4Lpow57aLm/llm-.webp",
-      "authorName": "Daniel Pepuho",
-      "authorAlias": "danielcristho19",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ClO6M2RuHWefN0cBpVRKEW9ir.webp",
-      "location": "ID",
-      "lat": -2.4833826,
-      "lng": 117.8902853,
-      "tags": [
-        "amazon-eks",
-        "llm",
-        "kubernetes",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-03T05:53:10.642Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DCBEYIYcTfKhzPbVXSJxoAImlb",
-      "title": "Os 4 projetos do AWS Labs que estão redefinindo o que significa trabalhar com cloud em 2026",
-      "description": "Em 2026, a AWS deixou de falar de servidores e passou a falar de agentes autônomos. Neste artigo, analiso os 4 projetos do AWS Labs que estão redefinindo o que significa trabalhar com cloud e IA na prática — com o que cada um resolve, onde brilha e onde tem limitações reais.",
-      "url": "https://builder.aws.com/content/3DCBEYIYcTfKhzPbVXSJxoAImlb",
-      "imageUrl": "",
-      "authorName": "Davi Cezar",
-      "authorAlias": "davicezar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COXUZ9DkMg6HnQkOBBk9E3HTsZ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-03T02:48:40.751Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -291,7 +298,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 57,
+      "likesCount": 58,
       "commentsCount": 28
     },
     {
@@ -383,23 +390,6 @@
       "commentsCount": 203
     },
     {
-      "id": "/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
-      "title": "Descomplicando o Horizonte: Como a Nuvem Redefine o Nosso Potencial",
-      "description": "Descubra como a computação em nuvem democratiza o acesso à inovação e se torna o diferencial estratégico para estudantes que desejam construir o futuro da tecnologia.",
-      "url": "https://builder.aws.com/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBn6xAGX9ekgCDhnQXzViAGc2a/2023.webp",
-      "authorName": "LUANA PINHEIRO",
-      "authorAlias": "lupinheiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-02T23:24:47.780Z",
-      "likesCount": 5,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
       "title": "The Study Break That Gave Me Direction Again",
       "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
@@ -418,6 +408,23 @@
       "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 39,
       "commentsCount": 27
+    },
+    {
+      "id": "/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
+      "title": "Descomplicando o Horizonte: Como a Nuvem Redefine o Nosso Potencial",
+      "description": "Descubra como a computação em nuvem democratiza o acesso à inovação e se torna o diferencial estratégico para estudantes que desejam construir o futuro da tecnologia.",
+      "url": "https://builder.aws.com/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBn6xAGX9ekgCDhnQXzViAGc2a/2023.webp",
+      "authorName": "LUANA PINHEIRO",
+      "authorAlias": "lupinheiro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T23:24:47.780Z",
+      "likesCount": 5,
+      "commentsCount": 2
     }
   ]
 }
