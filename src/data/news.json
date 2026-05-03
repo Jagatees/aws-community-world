@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-05-03T20:13:21.195Z",
+  "updatedAt": "2026-05-03T21:15:51.273Z",
   "latest": [
+    {
+      "id": "/content/3DEEuodA3f3idRor0En97md1rDy",
+      "title": "Get Started with Kiro + MCP in Minutes. Go Deeper with Kiro powers.",
+      "description": "Kiro, the agentic development environment from AWS, offers three powerful ways to extend your workflow — from one-click MCP server installation to Custom and Curated Kiro powers. This guide walks you through each integration path, helping you start fast and go deeper as your needs grow.",
+      "url": "https://builder.aws.com/content/3DEEuodA3f3idRor0En97md1rDy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DEF0ic411psEu517Hyx3Rwn6dY/kiro_.webp",
+      "authorName": "Shashiraj Jeripotula",
+      "authorAlias": "shashiv",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xNN8mCLnzqJL13FLeuusLa8zCj.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "kiro-heroes",
+        "mcp",
+        "mcp-server",
+        "mcp-integration"
+      ],
+      "publishedAt": "2026-05-03T20:15:40.621Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DDxCrS5hFbSXjG6QHKMFtSHrEA",
       "title": "MCP IDE Integration Patterns with Okta 3LO Authentication",
@@ -188,29 +211,6 @@
       "publishedAt": "2026-05-03T09:53:48.204Z",
       "likesCount": 1,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
-      "title": "From Idea to Impact: Building a Real Event-Driven Security Pipeline on AWS",
-      "description": "How I designed and presented a production-minded EventBridge + Lambda + SQS architecture that reacts in real time, scales independently, and survives failure gracefully.",
-      "url": "https://builder.aws.com/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCqRhk1AbQoAMw2hkpYpZKt6Vm/Scre.webp",
-      "authorName": "Habeeb Babasulaiman",
-      "authorAlias": "freemanboss",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32KkG08lZwpZvSN5wgLE1DJzJoU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "event-driven",
-        "amazon-eventbridge",
-        "architecture-patterns",
-        "aws-lambda",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-05-03T08:38:28.872Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -294,7 +294,7 @@
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
       "likesCount": 59,
-      "commentsCount": 29
+      "commentsCount": 30
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -342,6 +342,28 @@
       "commentsCount": 6
     },
     {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1430,
+      "commentsCount": 328
+    },
+    {
       "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
       "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
       "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
@@ -363,28 +385,6 @@
       "publishedAt": "2026-05-03T14:54:30.617Z",
       "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1430,
-      "commentsCount": 328
     },
     {
       "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
