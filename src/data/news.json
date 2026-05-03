@@ -1,6 +1,71 @@
 {
-  "updatedAt": "2026-05-03T05:08:29.201Z",
+  "updatedAt": "2026-05-03T06:51:34.505Z",
   "latest": [
+    {
+      "id": "/content/3DCax04M9o7gBpAMttstsLjmPUD",
+      "title": "Multi-Agent Architecture Patterns with Amazon Bedrock AgentCore Runtime",
+      "description": "A practical guide to deploying multi‑agent architectures on Amazon Bedrock AgentCore Runtime, covering Agents‑as‑Tools (subagents), Agent‑as‑MCP, and Agent‑to‑Agent (A2A) patterns with guidance on runtime topology, security boundaries, and shared context.",
+      "url": "https://builder.aws.com/content/3DCax04M9o7gBpAMttstsLjmPUD",
+      "imageUrl": "",
+      "authorName": "Doron Bleiberg",
+      "authorAlias": "doronbl",
+      "authorAvatarUrl": "",
+      "location": "DE",
+      "lat": 51.1638175,
+      "lng": 10.4478313,
+      "tags": [
+        "startups",
+        "amazon-bedrock-agentcore",
+        "multi-agent-orchestrator"
+      ],
+      "publishedAt": "2026-05-03T06:30:07.876Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DCa9l6gUNojip3I3CfV2s4SrUq",
+      "title": "Exploring AWS builder Center",
+      "description": "Trying to learn more about this fabulous website, and all the tools that are being used in the industry to develop new technology",
+      "url": "https://builder.aws.com/content/3DCa9l6gUNojip3I3CfV2s4SrUq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCaDu17UzLwlUyUQlpxZl42QX5/1775-.webp",
+      "authorName": "Dennis Escobar",
+      "authorAlias": "alexred",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-builders",
+        "students",
+        "advertising-marketing-industry",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-03T06:07:35.300Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DCXpMLs6zXJ3DhagFPZdvV7BwV",
+      "title": "LLM on EKS: Serving with vLLM",
+      "description": "Serve Large Language Model on Elastic Kubernetes Service using Virtual Large Language Model",
+      "url": "https://builder.aws.com/content/3DCXpMLs6zXJ3DhagFPZdvV7BwV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCXsTRxHg6wuJaGZ4Lpow57aLm/llm-.webp",
+      "authorName": "Daniel Pepuho",
+      "authorAlias": "danielcristho19",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ClO6M2RuHWefN0cBpVRKEW9ir.webp",
+      "location": "ID",
+      "lat": -2.4833826,
+      "lng": 117.8902853,
+      "tags": [
+        "amazon-eks",
+        "llm",
+        "kubernetes",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-03T05:53:10.642Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DCBEYIYcTfKhzPbVXSJxoAImlb",
       "title": "Os 4 projetos do AWS Labs que estão redefinindo o que significa trabalhar com cloud em 2026",
@@ -153,63 +218,6 @@
       "publishedAt": "2026-05-03T01:54:17.496Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DC373vt5EoCTYB1KOqZxaCvVVJ",
-      "title": "Tchau, localhost! 🚀 Como levar seu projeto para a AWS (Guia prático para estudantes)",
-      "description": "Afinal como é que eu vou subir meu projeto nessa nuvem??",
-      "url": "https://builder.aws.com/content/3DC373vt5EoCTYB1KOqZxaCvVVJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DC4rY9KRrYUs5eVCuEvjZox3Ig/Whats.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-03T01:50:38.334Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DByw7OqRlPCtQt8A2Odjs0JGH0",
-      "title": "7 Lições que Aprendi usando o AWS Builder Center",
-      "description": "7 aprendizados no AWS BC",
-      "url": "https://builder.aws.com/content/3DByw7OqRlPCtQt8A2Odjs0JGH0",
-      "imageUrl": "",
-      "authorName": "Gabriel da Silva Chaves",
-      "authorAlias": "gab9082",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmeglTzCGqmp3uZGSSpzB811dP.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-03T01:11:51.168Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DBthg6nqn7cCpyybP9fIoo2gkO",
-      "title": "Afinal, o que é o AWS Builder Center?",
-      "description": "Um pouco sobre o que seria a AWS Builder Center",
-      "url": "https://builder.aws.com/content/3DBthg6nqn7cCpyybP9fIoo2gkO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBtnQ3Ev4KUVhDueLdnRqdEXkK/Desi.webp",
-      "authorName": "Myllena Lins",
-      "authorAlias": "mylins22",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdTAgYVNaK7Je7Tp42hJytfifo.webp",
-      "location": "PE, BR",
-      "lat": -8.4116316,
-      "lng": -37.5919699,
-      "tags": [
-        "ai",
-        "aws-builders",
-        "aws-cloud-clubs",
-        "aws-community-day",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-05-03T00:20:03.074Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -358,6 +366,49 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3DCax04M9o7gBpAMttstsLjmPUD",
+      "title": "Multi-Agent Architecture Patterns with Amazon Bedrock AgentCore Runtime",
+      "description": "A practical guide to deploying multi‑agent architectures on Amazon Bedrock AgentCore Runtime, covering Agents‑as‑Tools (subagents), Agent‑as‑MCP, and Agent‑to‑Agent (A2A) patterns with guidance on runtime topology, security boundaries, and shared context.",
+      "url": "https://builder.aws.com/content/3DCax04M9o7gBpAMttstsLjmPUD",
+      "imageUrl": "",
+      "authorName": "Doron Bleiberg",
+      "authorAlias": "doronbl",
+      "authorAvatarUrl": "",
+      "location": "DE",
+      "lat": 51.1638175,
+      "lng": 10.4478313,
+      "tags": [
+        "startups",
+        "amazon-bedrock-agentcore",
+        "multi-agent-orchestrator"
+      ],
+      "publishedAt": "2026-05-03T06:30:07.876Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DCXpMLs6zXJ3DhagFPZdvV7BwV",
+      "title": "LLM on EKS: Serving with vLLM",
+      "description": "Serve Large Language Model on Elastic Kubernetes Service using Virtual Large Language Model",
+      "url": "https://builder.aws.com/content/3DCXpMLs6zXJ3DhagFPZdvV7BwV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCXsTRxHg6wuJaGZ4Lpow57aLm/llm-.webp",
+      "authorName": "Daniel Pepuho",
+      "authorAlias": "danielcristho19",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ClO6M2RuHWefN0cBpVRKEW9ir.webp",
+      "location": "ID",
+      "lat": -2.4833826,
+      "lng": 117.8902853,
+      "tags": [
+        "amazon-eks",
+        "llm",
+        "kubernetes",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-03T05:53:10.642Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -378,47 +429,6 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1429,
       "commentsCount": 327
-    },
-    {
-      "id": "/content/3DBT0MeJnME4dIG2sOyebgq6kfo",
-      "title": "Entrei no AWS Builder Center, e agora? O Guia de Sobrevivência para Estudantes.",
-      "description": "Descubra como navegar pelos primeiros passos na nuvem e transformar suas ideias acadêmicas em projetos reais utilizando as ferramentas acessíveis do AWS Builder Center. Este guia prático desmistifica a tecnologia para estudantes de todas as áreas, oferecendo dicas essenciais para começar a construir sem medo de custos ou complexidade.",
-      "url": "https://builder.aws.com/content/3DBT0MeJnME4dIG2sOyebgq6kfo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBWxD4KcjQoTJfYI4SYZSUgCQr/AWS-.webp",
-      "authorName": "Samara Victória de Souza Oliveira",
-      "authorAlias": "samarasouza",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "training",
-        "tutorials"
-      ],
-      "publishedAt": "2026-05-02T21:15:09.771Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3DBCMzKwsbilIoTc3jbjtxus81t",
-      "title": "Antes x Depois: como o AWS Builder Center mudou minha visão sobre cloud computing",
-      "description": "Sou estudante de Engenharia da Computação na USP e não sabia por onde começar em cloud. Aqui está o que mudou depois que entrei no AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3DBCMzKwsbilIoTc3jbjtxus81t",
-      "imageUrl": "",
-      "authorName": "Rafael Bramont",
-      "authorAlias": "rafaelbramont",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "getting-started",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-02T18:48:06.645Z",
-      "likesCount": 3,
-      "commentsCount": 3
     }
   ]
 }
