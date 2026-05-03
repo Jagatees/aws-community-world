@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-05-03T00:32:25.966Z",
+  "updatedAt": "2026-05-03T01:35:00.575Z",
   "latest": [
+    {
+      "id": "/content/3DByw7OqRlPCtQt8A2Odjs0JGH0",
+      "title": "7 Lições que Aprendi usando o AWS Builder Center",
+      "description": "7 aprendizados no AWS BC",
+      "url": "https://builder.aws.com/content/3DByw7OqRlPCtQt8A2Odjs0JGH0",
+      "imageUrl": "",
+      "authorName": "Gabriel da Silva Chaves",
+      "authorAlias": "gab9082",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmeglTzCGqmp3uZGSSpzB811dP.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-03T01:11:51.168Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DBthg6nqn7cCpyybP9fIoo2gkO",
       "title": "Afinal, o que é o AWS Builder Center?",
@@ -192,23 +209,6 @@
       "publishedAt": "2026-05-02T21:48:24.443Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DBJ7SpM3DUbITyw7knHyKYi8au",
-      "title": "Minha história com Computação em Nuvem",
-      "description": "Neste artigo, compartilho a minha trajetória na tecnologia, desde o curso técnico até o choque de realidade que tive no meu primeiro estágio. Detalho também como a graduação, os projetos práticos e a experiência ao longo dos anos desmistificaram a área.",
-      "url": "https://builder.aws.com/content/3DBJ7SpM3DUbITyw7knHyKYi8au",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBbBroKKzBz329s0axC4L42DAj/Gemi.webp",
-      "authorName": "Tássyla Lima",
-      "authorAlias": "tassy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBKRkcFoI9L6xllCIjAVYWj646.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [],
-      "publishedAt": "2026-05-02T21:39:52.525Z",
-      "likesCount": 1,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -231,7 +231,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 9,
+      "likesCount": 10,
       "commentsCount": 5
     },
     {
@@ -313,27 +313,6 @@
       "commentsCount": 26
     },
     {
-      "id": "/content/3DBT0MeJnME4dIG2sOyebgq6kfo",
-      "title": "Entrei no AWS Builder Center, e agora? O Guia de Sobrevivência para Estudantes.",
-      "description": "Descubra como navegar pelos primeiros passos na nuvem e transformar suas ideias acadêmicas em projetos reais utilizando as ferramentas acessíveis do AWS Builder Center. Este guia prático desmistifica a tecnologia para estudantes de todas as áreas, oferecendo dicas essenciais para começar a construir sem medo de custos ou complexidade.",
-      "url": "https://builder.aws.com/content/3DBT0MeJnME4dIG2sOyebgq6kfo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBWxD4KcjQoTJfYI4SYZSUgCQr/AWS-.webp",
-      "authorName": "Samara Victória de Souza Oliveira",
-      "authorAlias": "samarasouza",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "training",
-        "tutorials"
-      ],
-      "publishedAt": "2026-05-02T21:15:09.771Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -355,21 +334,25 @@
       "commentsCount": 318
     },
     {
-      "id": "/content/3DBW2fatMx7gY7MxOcMlfjhZ9nZ",
-      "title": "O papel de um AWS Student Leader: desafios e aprendizados",
-      "description": "Ser AWS Student Leader vai além da técnica: envolve liderar, engajar e ensinar. Apesar dos desafios, desenvolve comunicação, networking e crescimento pessoal, impactando carreira e comunidade.",
-      "url": "https://builder.aws.com/content/3DBW2fatMx7gY7MxOcMlfjhZ9nZ",
-      "imageUrl": "",
-      "authorName": "Alfredo Macutunda",
-      "authorAlias": "alfredomac",
+      "id": "/content/3DBT0MeJnME4dIG2sOyebgq6kfo",
+      "title": "Entrei no AWS Builder Center, e agora? O Guia de Sobrevivência para Estudantes.",
+      "description": "Descubra como navegar pelos primeiros passos na nuvem e transformar suas ideias acadêmicas em projetos reais utilizando as ferramentas acessíveis do AWS Builder Center. Este guia prático desmistifica a tecnologia para estudantes de todas as áreas, oferecendo dicas essenciais para começar a construir sem medo de custos ou complexidade.",
+      "url": "https://builder.aws.com/content/3DBT0MeJnME4dIG2sOyebgq6kfo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBWxD4KcjQoTJfYI4SYZSUgCQr/AWS-.webp",
+      "authorName": "Samara Victória de Souza Oliveira",
+      "authorAlias": "samarasouza",
       "authorAvatarUrl": "",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-02T21:12:25.014Z",
+      "tags": [
+        "students",
+        "training",
+        "tutorials"
+      ],
+      "publishedAt": "2026-05-02T21:15:09.771Z",
       "likesCount": 3,
-      "commentsCount": 1
+      "commentsCount": 2
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -393,6 +376,23 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1930,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3DBW2fatMx7gY7MxOcMlfjhZ9nZ",
+      "title": "O papel de um AWS Student Leader: desafios e aprendizados",
+      "description": "Ser AWS Student Leader vai além da técnica: envolve liderar, engajar e ensinar. Apesar dos desafios, desenvolve comunicação, networking e crescimento pessoal, impactando carreira e comunidade.",
+      "url": "https://builder.aws.com/content/3DBW2fatMx7gY7MxOcMlfjhZ9nZ",
+      "imageUrl": "",
+      "authorName": "Alfredo Macutunda",
+      "authorAlias": "alfredomac",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T21:12:25.014Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3DBCMzKwsbilIoTc3jbjtxus81t",
