@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-05-03T21:15:51.273Z",
+  "updatedAt": "2026-05-03T22:14:16.359Z",
   "latest": [
+    {
+      "id": "/content/3DES5ckfyLa76avOSeOxlCXuapf",
+      "title": "KiroHub: Generate a Kiro Skill in 60 Seconds Built With Bedrock Registry and AgentCore Harness",
+      "description": "I used two Amazon Bedrock AgentCore capabilities, Amazon Bedrock Registry for hybrid search over 10k+ Kiro resources, and AgentCore Harness for testing generated skills against a real agent, to build an AI-powered skill generator for Kiro Hub. Try it at [kirohub.dev/generate](https://kirohub.dev/generate).",
+      "url": "https://builder.aws.com/content/3DES5ckfyLa76avOSeOxlCXuapf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DESMqeqWCV3ZjtLWeEeScII6ex/Chat.webp",
+      "authorName": "Alvaro",
+      "authorAlias": "amllamojha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36lSWjJLRjPjMuaVZMdQtsWTe20.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "ai-engineering",
+        "kiro",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-03T22:07:33.074Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DEEuodA3f3idRor0En97md1rDy",
       "title": "Get Started with Kiro + MCP in Minutes. Go Deeper with Kiro powers.",
@@ -188,29 +210,6 @@
       "publishedAt": "2026-05-03T12:05:37.166Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DD1QSZtXXduTN7lSICh6CtP0e9",
-      "title": "I Built It, It Worked… But I Still Didn’t Understand It",
-      "description": "My first AWS project worked exactly as expected—but I struggled to explain how or why. This is what I learned about the gap between building something and truly understanding it.",
-      "url": "https://builder.aws.com/content/3DD1QSZtXXduTN7lSICh6CtP0e9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DD1oOmoS1U5LtzHo63yDoOdDpR/1-pn.webp",
-      "authorName": "Om Keswani",
-      "authorAlias": "omiee24",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3894gFCupwDcSCBhlVUHtta7riL.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
-      "tags": [
-        "ai",
-        "ai-services",
-        "all-builders-welcome",
-        "amazon-a2i",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-03T09:53:48.204Z",
-      "likesCount": 1,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -253,7 +252,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3442,
+      "likesCount": 3443,
       "commentsCount": 1919
     },
     {
@@ -360,7 +359,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1430,
+      "likesCount": 1431,
       "commentsCount": 328
     },
     {
