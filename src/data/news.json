@@ -1,12 +1,29 @@
 {
-  "updatedAt": "2026-05-03T12:17:02.526Z",
+  "updatedAt": "2026-05-03T13:31:14.696Z",
   "latest": [
+    {
+      "id": "/content/3DDJ0nZH7JGCvXi82zYE4ZcaEWi",
+      "title": "From Data to Insights: Integrating Amazon Redshift with Amazon Quick Suite",
+      "description": " Learn how to build an end-to-end business intelligence solution by connecting Amazon Redshift Serverless to Amazon Quick Suite  from loading sample data to generating AI-powered analyses, enabling natural-language Q&A, and automating reporting workflows.",
+      "url": "https://builder.aws.com/content/3DDJ0nZH7JGCvXi82zYE4ZcaEWi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDOeZbX5ahtbcS0TZ7PZ4fTCEa/Cove.webp",
+      "authorName": "Shabna",
+      "authorAlias": "shabnmt",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-03T12:37:03.722Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DDDWktssazMAv6uKWqLVofifsp",
       "title": "Transforming HR Operations with No-Code Automation Using Amazon Quick Flows",
       "description": "Learn how to build a fully automated, no-code HR training compliance workflow using Amazon Quick Flows and Microsoft Outlook  from data integration to scheduled email notifications, all without writing a single line of code.",
       "url": "https://builder.aws.com/content/3DDDWktssazMAv6uKWqLVofifsp",
-      "imageUrl": "",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDOE6jIEPgS1r7tn0pT9KqHQ0D/Cove.webp",
       "authorName": "Shabna",
       "authorAlias": "shabnmt",
       "authorAvatarUrl": "",
@@ -41,7 +58,7 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-05-03T09:53:48.204Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -64,7 +81,7 @@
         "cloud-security"
       ],
       "publishedAt": "2026-05-03T08:38:28.872Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -191,29 +208,6 @@
       ],
       "publishedAt": "2026-05-03T02:47:41.810Z",
       "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DCA5GYdrFAnzRftXOOwCHBf1iV",
-      "title": "Stateful MCP Servers on ECS Fargate: What Happens When You Deploy",
-      "description": "This article investigates running a stateful MCP (Model Control Plane) server on AWS ECS Fargate. After outlining hosting options like Bedrock AgentCore, Lambda, and Fargate and I run a PoC that performs rolling deployments while sessions are active to see real-world behaviour. The post compares trade-offs, surfaces unexpected results, and provides practical guidance for architects deciding how to host MCP servers on AWS.",
-      "url": "https://builder.aws.com/content/3DCA5GYdrFAnzRftXOOwCHBf1iV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCAZI8jy9xisOxhuXy0qiuQ5mD/larg.webp",
-      "authorName": "Avinash Shashikant Dalvi",
-      "authorAlias": "aviboy2006",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32rL0VHFPCbktusBiPtjNGGdmR7.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "mcp-server",
-        "mcp",
-        "amazon-ecs",
-        "aws-fargate",
-        "containers"
-      ],
-      "publishedAt": "2026-05-03T02:39:40.741Z",
-      "likesCount": 1,
       "commentsCount": 0
     }
   ],
