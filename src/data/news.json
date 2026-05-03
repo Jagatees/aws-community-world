@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-05-03T16:16:08.672Z",
+  "updatedAt": "2026-05-03T17:17:33.431Z",
   "latest": [
+    {
+      "id": "/content/3DDoSoustlREXWwB9qT0FxXWQAx",
+      "title": "How I Cleared the AWS Cloud Practitioner Exam in Under 8 Hours",
+      "description": "I started from knowing almost nothing about what I needed for the exam, to passing in only 8 hours of study time. Come learn about my certification exam strategy!",
+      "url": "https://builder.aws.com/content/3DDoSoustlREXWwB9qT0FxXWQAx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDpZXLQNaSkQsif6BbosOTA0Gp/AWS-.webp",
+      "authorName": "Ricky Liang",
+      "authorAlias": "rickyxliang",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BgaEuv5zF9F4SpCbCGrAp6a61H.webp",
+      "location": "LA, US",
+      "lat": 34.0536909,
+      "lng": -118.242766,
+      "tags": [
+        "cloud-practitioner",
+        "aws-certification",
+        "aws-skill-builder"
+      ],
+      "publishedAt": "2026-05-03T16:44:01.995Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
       "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
@@ -21,8 +42,8 @@
         "llm"
       ],
       "publishedAt": "2026-05-03T14:54:30.617Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Ccu2kfaCVfmCZzueXBWWlq9GAw",
@@ -194,28 +215,6 @@
       "publishedAt": "2026-05-03T06:30:07.876Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DCa9l6gUNojip3I3CfV2s4SrUq",
-      "title": "Exploring AWS builder Center",
-      "description": "Trying to learn more about this fabulous website, and all the tools that are being used in the industry to develop new technology",
-      "url": "https://builder.aws.com/content/3DCa9l6gUNojip3I3CfV2s4SrUq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCaDu17UzLwlUyUQlpxZl42QX5/1775-.webp",
-      "authorName": "Dennis Escobar",
-      "authorAlias": "alexred",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-builders",
-        "students",
-        "advertising-marketing-industry",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-03T06:07:35.300Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -237,7 +236,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3545,
+      "likesCount": 3546,
       "commentsCount": 324
     },
     {
@@ -302,26 +301,27 @@
       "commentsCount": 28
     },
     {
-      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
-      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
-      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "imageUrl": "",
-      "authorName": "Leandro UTFPR",
-      "authorAlias": "leandronogarotto",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
+      "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
+      "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
+      "url": "https://builder.aws.com/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDcJ4KuJM8OjdldeK5UE05uapw/llm2-.webp",
+      "authorName": "Raj Jain",
+      "authorAlias": "rajjain",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qqEoWsWzCxi7y8olOdS1UP2JG.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "aws-builders",
-        "students",
-        "cloud-practitioner",
-        "aws-community"
+        "kiro",
+        "ai-agents",
+        "ai-engineering",
+        "ai-ide",
+        "llm"
       ],
-      "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 12,
-      "commentsCount": 6
+      "publishedAt": "2026-05-03T14:54:30.617Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -343,8 +343,30 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1931,
+      "likesCount": 1932,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
+      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
+      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "imageUrl": "",
+      "authorName": "Leandro UTFPR",
+      "authorAlias": "leandronogarotto",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "students",
+        "cloud-practitioner",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-02T19:59:43.068Z",
+      "likesCount": 12,
+      "commentsCount": 6
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -408,29 +430,6 @@
       "publishedAt": "2026-04-27T00:44:34.853Z",
       "likesCount": 39,
       "commentsCount": 27
-    },
-    {
-      "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
-      "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
-      "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
-      "url": "https://builder.aws.com/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDcJ4KuJM8OjdldeK5UE05uapw/llm2-.webp",
-      "authorName": "Raj Jain",
-      "authorAlias": "rajjain",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qqEoWsWzCxi7y8olOdS1UP2JG.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro",
-        "ai-agents",
-        "ai-engineering",
-        "ai-ide",
-        "llm"
-      ],
-      "publishedAt": "2026-05-03T14:54:30.617Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ]
 }
