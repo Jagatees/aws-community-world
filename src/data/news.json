@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-05-03T06:51:34.505Z",
+  "updatedAt": "2026-05-03T07:36:49.657Z",
   "latest": [
+    {
+      "id": "/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
+      "title": "7 Ways to Maximize Video Encoding Performance on AWS Graviton",
+      "description": "AWS Graviton processors are purpose-built for video encoding workloads - but only a tuned build fully realizes that potential. This article walks through 7 practical optimizations, from compiler flags to SIMD acceleration, that unlock Graviton's full performance for FFmpeg and OpenCV pipelines.",
+      "url": "https://builder.aws.com/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwSC0VOxqSEzDDgJtqXO6wnltY/Pict.webp",
+      "authorName": "Ziv Klempner",
+      "authorAlias": "zivklemp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zDerN4dHMw2oM8z1ogOlx4GO7B.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "graviton",
+        "video",
+        "performance",
+        "amazon-ec2",
+        "open-source"
+      ],
+      "publishedAt": "2026-05-03T07:09:56.186Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DCax04M9o7gBpAMttstsLjmPUD",
       "title": "Multi-Agent Architecture Patterns with Amazon Bedrock AgentCore Runtime",
@@ -195,32 +218,30 @@
       "publishedAt": "2026-05-03T02:15:58.232Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DC41VBBGkBJuSuiinOr6e521Nl",
-      "title": "Quando eu descobri que a AWS vai muito além do site no ar",
-      "description": "A AWS deixou de parecer só um lugar para hospedar aplicações e passou a surgir como uma plataforma para criar sistemas completos. O texto destaca usos fora do óbvio, como copiloto de estudos com IA, transcrição, leitura de PDFs e base própria de conhecimento; projetos físicos com IoT, gêmeos digitais e estado persistente; e renderização em nuvem para trabalhos criativos. A ideia central é que a AWS amplia o que um estudante consegue testar, integrando automação, escala, mídia e hardware.",
-      "url": "https://builder.aws.com/content/3DC41VBBGkBJuSuiinOr6e521Nl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DC5WYgGex4cvPiqL63ouqjfxMj/8b73.webp",
-      "authorName": "Alex Lira",
-      "authorAlias": "alexdlira",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmhYnPoMfzd1D4hY7BIYZPoLnx.webp",
-      "location": "BA, BR",
-      "lat": -12.285251,
-      "lng": -41.9294776,
-      "tags": [
-        "agentic-interactions",
-        "agile",
-        "ai-services",
-        "rag",
-        "amazon-textract"
-      ],
-      "publishedAt": "2026-05-03T01:54:17.496Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3544,
+      "commentsCount": 324
+    },
     {
       "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
       "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
@@ -244,27 +265,6 @@
       "commentsCount": 6
     },
     {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3544,
-      "commentsCount": 324
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -282,7 +282,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3440,
+      "likesCount": 3441,
       "commentsCount": 1919
     },
     {
@@ -326,23 +326,6 @@
       "commentsCount": 318
     },
     {
-      "id": "/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
-      "title": "Descomplicando o Horizonte: Como a Nuvem Redefine o Nosso Potencial",
-      "description": "Descubra como a computação em nuvem democratiza o acesso à inovação e se torna o diferencial estratégico para estudantes que desejam construir o futuro da tecnologia.",
-      "url": "https://builder.aws.com/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBn6xAGX9ekgCDhnQXzViAGc2a/2023.webp",
-      "authorName": "LUANA PINHEIRO",
-      "authorAlias": "lupinheiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-02T23:24:47.780Z",
-      "likesCount": 5,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -366,6 +349,45 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
+      "title": "Descomplicando o Horizonte: Como a Nuvem Redefine o Nosso Potencial",
+      "description": "Descubra como a computação em nuvem democratiza o acesso à inovação e se torna o diferencial estratégico para estudantes que desejam construir o futuro da tecnologia.",
+      "url": "https://builder.aws.com/content/3DBm6wYXMkFgepnlnMXXRGXFjFv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DBn6xAGX9ekgCDhnQXzViAGc2a/2023.webp",
+      "authorName": "LUANA PINHEIRO",
+      "authorAlias": "lupinheiro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs9E2SFnHHYEsxQTvLXJs8wXzS.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-02T23:24:47.780Z",
+      "likesCount": 5,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1430,
+      "commentsCount": 328
+    },
+    {
       "id": "/content/3DCax04M9o7gBpAMttstsLjmPUD",
       "title": "Multi-Agent Architecture Patterns with Amazon Bedrock AgentCore Runtime",
       "description": "A practical guide to deploying multi‑agent architectures on Amazon Bedrock AgentCore Runtime, covering Agents‑as‑Tools (subagents), Agent‑as‑MCP, and Agent‑to‑Agent (A2A) patterns with guidance on runtime topology, security boundaries, and shared context.",
@@ -387,48 +409,25 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3DCXpMLs6zXJ3DhagFPZdvV7BwV",
-      "title": "LLM on EKS: Serving with vLLM",
-      "description": "Serve Large Language Model on Elastic Kubernetes Service using Virtual Large Language Model",
-      "url": "https://builder.aws.com/content/3DCXpMLs6zXJ3DhagFPZdvV7BwV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCXsTRxHg6wuJaGZ4Lpow57aLm/llm-.webp",
-      "authorName": "Daniel Pepuho",
-      "authorAlias": "danielcristho19",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39ClO6M2RuHWefN0cBpVRKEW9ir.webp",
-      "location": "ID",
-      "lat": -2.4833826,
-      "lng": 117.8902853,
-      "tags": [
-        "amazon-eks",
-        "llm",
-        "kubernetes",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-03T05:53:10.642Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
+      "id": "/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "title": "AIdeas Finalist: Aether Health",
+      "description": "Discover how our AI-powered platform reimagines the last mile of healthcare by focusing on empathetic symptom checking and prescription decoding. We provide verified, calming tools to combat health anxiety and prevent dangerous medication errors for vulnerable populations.",
+      "url": "https://builder.aws.com/content/3CA4eEevGwFTJAAiDDFUCJe2z50",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUNulDdnIX1K4es7IfXdNSKyzZ/aaf6.webp",
+      "authorName": "Debadrit Nag",
+      "authorAlias": "debadritnag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxINBe97cOwR6iVYNh0hVyR9Q0.webp",
+      "location": "West Bengal, IN",
+      "lat": 22.9964948,
+      "lng": 87.6855882,
       "tags": [
         "aideas-2025",
         "social-impact",
-        "EMEA",
-        "agents"
+        "APJC"
       ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1429,
-      "commentsCount": 327
+      "publishedAt": "2026-04-17T14:32:53.936Z",
+      "likesCount": 1129,
+      "commentsCount": 203
     }
   ]
 }
