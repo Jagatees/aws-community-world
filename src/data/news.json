@@ -1,20 +1,45 @@
 {
-  "updatedAt": "2026-05-04T14:45:02.699Z",
+  "updatedAt": "2026-05-04T15:40:15.471Z",
   "latest": [
     {
-      "id": "/content/3DGNTIndzKCzZLKVYZcrGeWjqBf",
-      "title": "The Ultimate Resume Builder? Why AWS Student Builder Groups Set You Apart",
-      "description": "Discover how AWS Student Builder Groups help students go beyond the classroom by building real skills, gaining industry exposure, and standing out in a competitive tech landscape.",
-      "url": "https://builder.aws.com/content/3DGNTIndzKCzZLKVYZcrGeWjqBf",
-      "imageUrl": "",
-      "authorName": "Pavithra",
-      "authorAlias": "pavithrasm",
-      "authorAvatarUrl": "",
+      "id": "/content/3DGVoghgQVJkqvwll1eUHMEkrtz",
+      "title": "How to figure out EC2 instance type names (it’s easier than you think)",
+      "description": "What do the letters in EC2 instance type names actually mean? The naming convention explained, with a decision tree for choosing the right one.",
+      "url": "https://builder.aws.com/content/3DGVoghgQVJkqvwll1eUHMEkrtz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGVvFK6QJZRwcOUJzjbGavwvwC/How-t.webp",
+      "authorName": "Brooke Jamieson",
+      "authorAlias": "brooooke",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ZUbTytXQQwPc4RCbHV6ceF7xya.webp",
       "location": "US",
       "lat": 39.7837304,
       "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-04T14:23:43.988Z",
+      "tags": [
+        "amazon-ec2",
+        "getting-started",
+        "fundamentals",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-05-04T15:35:11.609Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGR4dU0qVjIaEN6wPXbyt2lQCE",
+      "title": "Do zero ao deploy: criando seu primeiro projeto na nuvem com AWS",
+      "description": "Neste artigo, vou mostrar como desenvolvi meu primeiro projeto na AWS, do zero ao deploy, utilizando uma arquitetura simples, moderna e totalmente baseada em serviços serverless.",
+      "url": "https://builder.aws.com/content/3DGR4dU0qVjIaEN6wPXbyt2lQCE",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGTW8bF4QkSyNri9mrH5bkRoeh/Como.webp",
+      "authorName": "João Vitor Oliveira Gomes",
+      "authorAlias": "pontoengjoao",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs3ArzwskXWeNYEQljawTQPbmc.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-s3",
+        "aws-cloud9"
+      ],
+      "publishedAt": "2026-05-04T15:11:49.996Z",
       "likesCount": 0,
       "commentsCount": 0
     },
@@ -354,7 +379,7 @@
       "authorAlias": "shawnzh",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
       "location": "Hong Kong Island, HK",
-      "lat": 22.2534634,
+      "lat": 22.2534635,
       "lng": 114.190975,
       "tags": [
         "ai-engineering",
@@ -407,29 +432,6 @@
       "publishedAt": "2026-05-03T22:07:33.074Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DEEuodA3f3idRor0En97md1rDy",
-      "title": "Get Started with Kiro + MCP in Minutes. Go Deeper with Kiro powers.",
-      "description": "Kiro, the agentic development environment from AWS, offers three powerful ways to extend your workflow — from one-click MCP server installation to Custom and Curated Kiro powers. This guide walks you through each integration path, helping you start fast and go deeper as your needs grow.",
-      "url": "https://builder.aws.com/content/3DEEuodA3f3idRor0En97md1rDy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DEF0ic411psEu517Hyx3Rwn6dY/kiro_.webp",
-      "authorName": "Shashiraj Jeripotula",
-      "authorAlias": "shashiv",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xNN8mCLnzqJL13FLeuusLa8zCj.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "kiro-heroes",
-        "mcp",
-        "mcp-server",
-        "mcp-integration"
-      ],
-      "publishedAt": "2026-05-03T20:15:40.621Z",
-      "likesCount": 2,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -472,7 +474,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3444,
+      "likesCount": 3445,
       "commentsCount": 1919
     },
     {
@@ -493,7 +495,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2855,
+      "likesCount": 2856,
       "commentsCount": 319
     },
     {
@@ -557,28 +559,30 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1433,
+      "likesCount": 1434,
       "commentsCount": 328
     },
     {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
+      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
+      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "imageUrl": "",
+      "authorName": "Leandro UTFPR",
+      "authorAlias": "leandronogarotto",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "social-impact",
-        "aideas-2025"
+        "aws-builders",
+        "students",
+        "cloud-practitioner",
+        "aws-community"
       ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-05-02T19:59:43.068Z",
+      "likesCount": 16,
+      "commentsCount": 7
     },
     {
       "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
@@ -601,26 +605,24 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
-      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
-      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "imageUrl": "",
-      "authorName": "Leandro UTFPR",
-      "authorAlias": "leandronogarotto",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
-        "aws-builders",
-        "students",
-        "cloud-practitioner",
-        "aws-community"
+        "social-impact",
+        "aideas-2025"
       ],
-      "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 15,
-      "commentsCount": 7
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
