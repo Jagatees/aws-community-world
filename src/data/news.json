@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-05-04T11:35:10.179Z",
+  "updatedAt": "2026-05-04T12:33:44.555Z",
   "latest": [
+    {
+      "id": "/content/3DG9GpzbxgQX5EPN438SoMSyHMm",
+      "title": "Amazon Bedrock Guardrails — Production AI Safety",
+      "description": "Ship AI that users can't break. Bedrock Guardrails blocks harmful content, filters PII, and stops hallucinations — setup guide with full code.",
+      "url": "https://builder.aws.com/content/3DG9GpzbxgQX5EPN438SoMSyHMm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGA9fYjuc2e5FYMAM3Gmaj5zjG/aws6.webp",
+      "authorName": "meghana rajagopal",
+      "authorAlias": "meghanarajagopal",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cm0nLn6wk71SoeU4k6NpqdEhZo.webp",
+      "location": "AE",
+      "lat": 24.0002488,
+      "lng": 53.9994829,
+      "tags": [
+        "agentic-ai",
+        "ai-ml",
+        "amazon-bedrock",
+        "ai-security",
+        "security"
+      ],
+      "publishedAt": "2026-05-04T12:31:40.705Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
       "title": "Title: Deploying a 3-Tier Architecture on AWS using Kubernetes & GitHub Actions.",
@@ -175,7 +198,7 @@
         "best-practices"
       ],
       "publishedAt": "2026-05-04T05:07:21.113Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -235,7 +258,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 3
     },
     {
@@ -408,29 +431,6 @@
       "publishedAt": "2026-05-03T14:54:30.617Z",
       "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3Ccu2kfaCVfmCZzueXBWWlq9GAw",
-      "title": "Building AI Agents with Real-Time ML Predictions: How Amazon Bedrock AgentCore Unifies AI and ML at Scale",
-      "description": "Discover how to bridge conversational AI and production ML by combining Amazon Bedrock AgentCore with Amazon SageMaker. This post walks through an architecture where an AI agent, secured by a single AgentCore Gateway, dynamically routes requests across four MCP servers — querying RDS, invoking SageMaker endpoints for real-time predictions, and retrieving documents from a Bedrock Knowledge Base, all through natural language",
-      "url": "https://builder.aws.com/content/3Ccu2kfaCVfmCZzueXBWWlq9GAw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDbNHfUP38lUEcTnoUsNlRpXeG/cove.webp",
-      "authorName": "w.saideni",
-      "authorAlias": "waelsaideni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30SEw1L3lAv1j0GoNxsPOLeROU9.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "agentic-ai",
-        "machine-learning",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock",
-        "financial-services-industry"
-      ],
-      "publishedAt": "2026-05-03T14:47:54.725Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -540,29 +540,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
-      "title": "Title: Deploying a 3-Tier Architecture on AWS using Kubernetes & GitHub Actions.",
-      "description": "A complete, step-by-step guide on how I deployed a highly available 3-tier application on Amazon EKS using automated CI/CD pipelines.",
-      "url": "https://builder.aws.com/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFxTNFDiGS29axlE4idG8WOlWd/ridh.webp",
-      "authorName": "Ridham pokiya",
-      "authorAlias": "ridhampokiya10",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kubernetes",
-        "devops",
-        "github",
-        "ci-cd",
-        "amazon-eks"
-      ],
-      "publishedAt": "2026-05-04T10:49:26.725Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
       "title": "O que acontece quando você para de aprender sozinho",
       "description": "Desenvolvimento em comunidade",
@@ -579,7 +556,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 3
     },
     {
@@ -625,6 +602,29 @@
       "publishedAt": "2026-05-02T19:59:43.068Z",
       "likesCount": 15,
       "commentsCount": 7
+    },
+    {
+      "id": "/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
+      "title": "Title: Deploying a 3-Tier Architecture on AWS using Kubernetes & GitHub Actions.",
+      "description": "A complete, step-by-step guide on how I deployed a highly available 3-tier application on Amazon EKS using automated CI/CD pipelines.",
+      "url": "https://builder.aws.com/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFxTNFDiGS29axlE4idG8WOlWd/ridh.webp",
+      "authorName": "Ridham pokiya",
+      "authorAlias": "ridhampokiya10",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kubernetes",
+        "devops",
+        "github",
+        "ci-cd",
+        "amazon-eks"
+      ],
+      "publishedAt": "2026-05-04T10:49:26.725Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
