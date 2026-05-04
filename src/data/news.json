@@ -1,6 +1,85 @@
 {
-  "updatedAt": "2026-05-04T16:34:01.125Z",
+  "updatedAt": "2026-05-04T17:32:54.374Z",
   "latest": [
+    {
+      "id": "/content/3DGbcEzWqGUFib7QM9TdYrjeEXM",
+      "title": "Driving Innovation with HPC: Our Commitment to the AWS Builder Community",
+      "description": "Through the IT4LIA AI Factory, our commitment to the AWS builder community centers on providing the \"heavy machinery\" and expert guidance needed to transform complex AI concepts into scalable, trustworthy enterprise solutions. By leveraging the Leonardo supercomputer - one of the world's most powerful pre-exascale systems - we empower developers to optimize advanced architectures like the Verbis Graph Engine.",
+      "url": "https://builder.aws.com/content/3DGbcEzWqGUFib7QM9TdYrjeEXM",
+      "imageUrl": "",
+      "authorName": "Alena",
+      "authorAlias": "prodigyaisolutions",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BqFqD1Z1c7hNsSJV26sSvVpya1.webp",
+      "location": "IT",
+      "lat": 42.6384261,
+      "lng": 12.674297,
+      "tags": [
+        "rag",
+        "compute",
+        "data-engineering",
+        "data-processing"
+      ],
+      "publishedAt": "2026-05-04T17:25:31.778Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGj510ke0KGhC49oFvdueZMmBL",
+      "title": "🚀 Bridge to the Cloud: A Tactical Guide to Hybrid Resilience with Nutanix NC2 on AWS",
+      "description": "The Challenge: Beyond the \"Lift and Shift\" Fatigue\nIn Latin America, organizations face a \"hybrid paradox\": craving AWS elasticity while tethered to on-premises legacy workloads on vCenter or Hyper-V. The true fear isn’t migration, but operational fragmentation—disparate tools and failure modes. Success requires moving beyond just migrating VMs toward achieving operational symmetry. This is where Nutanix NC2 on AWS becomes a game-changer.",
+      "url": "https://builder.aws.com/content/3DGj510ke0KGhC49oFvdueZMmBL",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "CR",
+      "lat": 10.2735633,
+      "lng": -84.0739102,
+      "tags": [],
+      "publishedAt": "2026-05-04T17:25:02.898Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "title": "Por que e onde começar sua jornada em Cloud Computing",
+      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
+      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
+      "authorName": "Pedro Costard Oliveira",
+      "authorAlias": "costard",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-04T17:01:43.943Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGel1sQFnWuVlmQe8jMXqwBOSB",
+      "title": "Building a Multilingual, Multi‑Modal Document Analysis Pipeline with AWS Lambda and Claude Sonnet 4.6",
+      "description": "Master the future of AI infrastructure with this guide on building a multilingual, multi-modal document analysis pipeline.   ",
+      "url": "https://builder.aws.com/content/3DGel1sQFnWuVlmQe8jMXqwBOSB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGfCA1eUscJWWGcy0KJxd2GasV/Copi.webp",
+      "authorName": "Jonathan Wong",
+      "authorAlias": "jonanata",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdiLMbcx1U8Emj177eurPoDLV5.webp",
+      "location": "CA",
+      "lat": 61.0666922,
+      "lng": -107.991707,
+      "tags": [
+        "generative-ai",
+        "aws-lambda",
+        "amazon-bedrock",
+        "multi-language",
+        "multi-modal"
+      ],
+      "publishedAt": "2026-05-04T16:49:17.800Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DGb0OrvFf1S5HtnTJieHzSfhEN",
       "title": "Fix MCP Timeouts: Async HandleId Pattern",
@@ -38,7 +117,7 @@
         "soft-skills"
       ],
       "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 1,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -55,7 +134,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-05-04T15:53:37.256Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -122,309 +201,6 @@
       "publishedAt": "2026-05-04T14:13:41.452Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGJkGcJQup5qXhh96rNw1Zc2Ew",
-      "title": "allowedTools do Kiro CLI: De Flags de Sessão à Configurações Persistentes de Agente",
-      "description": "Guia passo a passo para criar uma configuração de agente persistente que auto-aprova ferramentas seguras como read, grep e servidores MCP, enquanto mantém write, shell e use_aws atrás de confirmação manual.",
-      "url": "https://builder.aws.com/content/3DGJkGcJQup5qXhh96rNw1Zc2Ew",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGK3OwEOOzVfRdRW6otozcK8BJ/Chat.webp",
-      "authorName": "Carlos Biagolini",
-      "authorAlias": "cbiagolini",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "kiro",
-        "ai",
-        "ai-for-developers",
-        "devops",
-        "developer"
-      ],
-      "publishedAt": "2026-05-04T13:54:41.102Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DG9GpzbxgQX5EPN438SoMSyHMm",
-      "title": "Build a Production GenAI Gateway on AWS",
-      "description": "One FastAPI gateway on ECS Fargate routing to Bedrock and Azure OpenAI — with Guardrails, Secrets Manager, and full observability. Architecture + code.",
-      "url": "https://builder.aws.com/content/3DG9GpzbxgQX5EPN438SoMSyHMm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGA9fYjuc2e5FYMAM3Gmaj5zjG/aws6.webp",
-      "authorName": "meghana rajagopal",
-      "authorAlias": "meghanarajagopal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cm0nLn6wk71SoeU4k6NpqdEhZo.webp",
-      "location": "AE",
-      "lat": 24.0002488,
-      "lng": 53.9994829,
-      "tags": [
-        "agentic-ai",
-        "ai-ml",
-        "amazon-bedrock",
-        "ai-security",
-        "security"
-      ],
-      "publishedAt": "2026-05-04T12:31:40.705Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
-      "title": "Title: Deploying a 3-Tier Architecture on AWS using Kubernetes & GitHub Actions.",
-      "description": "A complete, step-by-step guide on how I deployed a highly available 3-tier application on Amazon EKS using automated CI/CD pipelines.",
-      "url": "https://builder.aws.com/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFxTNFDiGS29axlE4idG8WOlWd/ridh.webp",
-      "authorName": "Ridham pokiya",
-      "authorAlias": "ridhampokiya10",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kubernetes",
-        "devops",
-        "github",
-        "ci-cd",
-        "amazon-eks"
-      ],
-      "publishedAt": "2026-05-04T10:49:26.725Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DFgOxFdHYMvgkyEY4p73xunr6j",
-      "title": "The Invisible Architecture: How Policies and Power Shape the Lives of Nigerian Students",
-      "description": "When Systems Fail People: The Cost in Human Life",
-      "url": "https://builder.aws.com/content/3DFgOxFdHYMvgkyEY4p73xunr6j",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFhmu8duKv5ddplC8pSgAXrBzf/IMG_1.webp",
-      "authorName": "Temilade Aladeokin",
-      "authorAlias": "ambtemmy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DFg5oGAUV6rWmGNH65vjksGIZ9.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "educational",
-        "healthcare-life-sciences-industry"
-      ],
-      "publishedAt": "2026-05-04T08:39:44.937Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DFaiNfTOBGRJsDQ469ThixVRx6",
-      "title": "AWS DevOps Agent: Beyond the Runbook",
-      "description": "What does it look like when an autonomous agent investigates a real multi-region failure? I deployed a serverless payment ledger across Singapore and Tokyo, injected three simultaneous faults, and watched AWS DevOps Agent untangle all of them from a single alarm. This is the overview of the 2-part build series on dev.to.",
-      "url": "https://builder.aws.com/content/3DFaiNfTOBGRJsDQ469ThixVRx6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFhluvQZlqAWU9EDiZ413Hxuqn/aws-.webp",
-      "authorName": "Romar Cablao",
-      "authorAlias": "romarcablao",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BwVnfdoRLWLVbo0xxW9LxktnFI.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "devops",
-        "ai-agents",
-        "disaster-recovery",
-        "chaos-engineering",
-        "multi-region"
-      ],
-      "publishedAt": "2026-05-04T08:36:09.370Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DFOZvfmi3ZcEXF5UZhEuxVvlpU",
-      "title": "Running Claude Code and Claude Desktop on Amazon Bedrock",
-      "description": "This article walks through configuring both Claude Code (terminal CLI) and Claude Desktop (Cowork) to use Amazon Bedrock as the inference backend — no Anthropic API key or subscription required. Claude Code needs two environment variables in ~/.claude/settings.json. Claude Desktop needs a few fields in the built-in Setup UI. Both share the same AWS credentials and Bedrock model access. The entire setup, including troubleshooting, was done through AI-assisted development with Kiro.",
-      "url": "https://builder.aws.com/content/3DFOZvfmi3ZcEXF5UZhEuxVvlpU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFSNny6oIw6P24p7e2YU8i2hG1/A-sle.webp",
-      "authorName": "Haowen Huang",
-      "authorAlias": "popkee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
-      "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
-      "tags": [
-        "claude",
-        "amazon-bedrock",
-        "agentic-ai",
-        "ai-ide",
-        "agentic-ide"
-      ],
-      "publishedAt": "2026-05-04T06:37:58.784Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DFKnLTAGiVT933eH7duCGcdgnG",
-      "title": "From Learning Alone to Building Together:\nHow helpful AWS Student Builder Groups are",
-      "description": "Learn about the multiple benefits",
-      "url": "https://builder.aws.com/content/3DFKnLTAGiVT933eH7duCGcdgnG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFNXAS7k6mYxL5VW6Tre2pIJLS/artic.webp",
-      "authorName": "Dennis Escobar",
-      "authorAlias": "alexred",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-community",
-        "students"
-      ],
-      "publishedAt": "2026-05-04T05:59:07.808Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DFMLutqcrhO8Nh4aPpPTPQe3wo",
-      "title": "The Problem with Being a Marketing Major in 2026",
-      "description": " The gap between business students and tech is not a gap of ability; it's a gap of access, and nobody talks about it. Here's what changed when I stopped assuming the cloud wasn't for me, and why every college student should pay attention to where their future careers are actually being built.",
-      "url": "https://builder.aws.com/content/3DFMLutqcrhO8Nh4aPpPTPQe3wo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFOHL7lgHDNzvtQgpiR3wTWRzX/The-.webp",
-      "authorName": "Katlynne Britosalas",
-      "authorAlias": "katwyat",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CvQHju3Cws9x42UUFiV04zJFGI.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "students",
-        "aws-networking",
-        "ai",
-        "advertising-marketing-industry"
-      ],
-      "publishedAt": "2026-05-04T05:57:55.201Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DFJW7PqCFg9XNem3LATwjdvwKH",
-      "title": "8 días con CVEs críticos en producción que Amazon Inspector no me mostró",
-      "description": "Teníamos una Lambda en producción con vulnerabilidades críticas en aiohttp. Inspector las detectó el 2 de abril. Las vimos el 9 de abril, solo porque hicimos un deploy. Abrí un caso de soporte, escalé con el service team y encontré algo que la documentación oficial no explica claramente. ",
-      "url": "https://builder.aws.com/content/3DFJW7PqCFg9XNem3LATwjdvwKH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFOMWebHSyhIbDNyHL0ZZqwYR3/Imag.webp",
-      "authorName": "Carlos Zambrano",
-      "authorAlias": "czam",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2y5lQ1SqtIBF1mUliZe5beqy7IF.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-lambda",
-        "cloud-security",
-        "best-practices",
-        "security-best-practices",
-        "application-security"
-      ],
-      "publishedAt": "2026-05-04T05:57:12.841Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CUfSn95hIJuj5E1ZSMXyJfGCQX",
-      "title": "Runtime EOL en Lambda: Proceso de actualización antes que AWS te recuerde.",
-      "description": "Cuando vemos el EOL de nuestras funciones Lambda suena lejano, hasta que revisas cuántas tienes con runtimes próximos a expirar. Este es el proceso que armé para inventariar, validar y migrar sin afectar nada en producción.",
-      "url": "https://builder.aws.com/content/3CUfSn95hIJuj5E1ZSMXyJfGCQX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFHWtpoGMn8c72PxN9cpV8rnlT/7-pn.webp",
-      "authorName": "Carlos Zambrano",
-      "authorAlias": "czam",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2y5lQ1SqtIBF1mUliZe5beqy7IF.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-lambda",
-        "serverless",
-        "aws-config",
-        "python",
-        "best-practices"
-      ],
-      "publishedAt": "2026-05-04T05:07:21.113Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/391jPQIWuvd3UbvK1Z6ZogpJdjm",
-      "title": "With Great Power(AgentCore), Comes Great Responsibility...Till Now",
-      "description": "You’re Not Building AI Agents,You’re Building Their Runtime (Until Now). Understanding Managed harness on Agentcore",
-      "url": "https://builder.aws.com/content/391jPQIWuvd3UbvK1Z6ZogpJdjm",
-      "imageUrl": "",
-      "authorName": "Farah Abdirahman",
-      "authorAlias": "farahabdi24",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uFiNMtIVoM8TBH09xmmGNtfBUt.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-04T05:06:32.307Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DF9dBkjZoGhEccLjvaTjKzOw9g",
-      "title": "AWS Skill Builder - The Data Engineering Track",
-      "description": "A little deep dive into data engineering and what I learned on this track in skill builder...",
-      "url": "https://builder.aws.com/content/3DF9dBkjZoGhEccLjvaTjKzOw9g",
-      "imageUrl": "",
-      "authorName": "Trinity Chatmon",
-      "authorAlias": "tchatmon",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "big-data",
-        "data",
-        "data-engineer",
-        "data-engineering",
-        "data-lakes"
-      ],
-      "publishedAt": "2026-05-04T04:05:12.229Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "title": "O que acontece quando você para de aprender sozinho",
-      "description": "Desenvolvimento em comunidade",
-      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "imageUrl": "",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 3,
-      "commentsCount": 3
     }
   ],
   "trending": [
@@ -467,8 +243,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3445,
-      "commentsCount": 1919
+      "likesCount": 3446,
+      "commentsCount": 1920
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -490,6 +266,42 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2856,
       "commentsCount": 319
+    },
+    {
+      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "title": "Por que e onde começar sua jornada em Cloud Computing",
+      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
+      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
+      "authorName": "Pedro Costard Oliveira",
+      "authorAlias": "costard",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-04T17:01:43.943Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
+      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
+      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "soft-skills"
+      ],
+      "publishedAt": "2026-05-04T15:54:09.861Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
@@ -534,44 +346,24 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DGb0OrvFf1S5HtnTJieHzSfhEN",
-      "title": "Fix MCP Timeouts: Async HandleId Pattern",
-      "description": "MCP tools freeze AI agents when external APIs are slow, causing 424 errors. The async handleId pattern returns immediately with a job ID and polls for results without blocking",
-      "url": "https://builder.aws.com/content/3DGb0OrvFf1S5HtnTJieHzSfhEN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGbh4jirYvEpEDGv7ezf0hdCj7/porta.webp",
-      "authorName": "Elizabeth Fuentes",
-      "authorAlias": "elizabethfuentes12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
-        "agentic-ai",
-        "mcp-integration",
-        "strands-agents"
+        "social-impact",
+        "aideas-2025"
       ],
-      "publishedAt": "2026-05-04T16:20:44.320Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
-      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
-      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "soft-skills"
-      ],
-      "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -616,26 +408,6 @@
       "publishedAt": "2026-05-02T19:59:43.068Z",
       "likesCount": 16,
       "commentsCount": 7
-    },
-    {
-      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "title": "O que acontece quando você para de aprender sozinho",
-      "description": "Desenvolvimento em comunidade",
-      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "imageUrl": "",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 3,
-      "commentsCount": 3
     }
   ]
 }
