@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-03T23:16:06.872Z",
+  "updatedAt": "2026-05-04T00:32:19.741Z",
   "latest": [
     {
       "id": "/content/3DES5ckfyLa76avOSeOxlCXuapf",
@@ -43,7 +43,7 @@
         "mcp-integration"
       ],
       "publishedAt": "2026-05-03T20:15:40.621Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -363,6 +363,26 @@
       "commentsCount": 328
     },
     {
+      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "title": "The Study Break That Gave Me Direction Again",
+      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
+      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
+      "authorName": "Shine Gerkariah",
+      "authorAlias": "shineshine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "advertising-marketing-industry",
+        "students"
+      ],
+      "publishedAt": "2026-04-27T00:44:34.853Z",
+      "likesCount": 40,
+      "commentsCount": 27
+    },
+    {
       "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
       "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
       "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
@@ -384,26 +404,6 @@
       "publishedAt": "2026-05-03T14:54:30.617Z",
       "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 40,
-      "commentsCount": 27
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
