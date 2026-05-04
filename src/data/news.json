@@ -1,6 +1,69 @@
 {
-  "updatedAt": "2026-05-04T13:35:25.517Z",
+  "updatedAt": "2026-05-04T14:45:02.699Z",
   "latest": [
+    {
+      "id": "/content/3DGNTIndzKCzZLKVYZcrGeWjqBf",
+      "title": "The Ultimate Resume Builder? Why AWS Student Builder Groups Set You Apart",
+      "description": "Discover how AWS Student Builder Groups help students go beyond the classroom by building real skills, gaining industry exposure, and standing out in a competitive tech landscape.",
+      "url": "https://builder.aws.com/content/3DGNTIndzKCzZLKVYZcrGeWjqBf",
+      "imageUrl": "",
+      "authorName": "Pavithra",
+      "authorAlias": "pavithrasm",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-04T14:23:43.988Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DB1jFaPVDMpjoWROizyFzlIA58",
+      "title": "Building hybrid retrieval for AI agents with Bedrock and DynamoDB",
+      "description": "Combine vector search with structured entity queries across two data stores, letting an AI agent decide which retrieval path fits each query.",
+      "url": "https://builder.aws.com/content/3DB1jFaPVDMpjoWROizyFzlIA58",
+      "imageUrl": "",
+      "authorName": "Kajal",
+      "authorAlias": "kajipan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DB1AW26GtfXofaWFKYwiPqYFl1.webp",
+      "location": "CA",
+      "lat": 61.0666922,
+      "lng": -107.991707,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-dynamodb",
+        "retreival-augmented-generation",
+        "ai-agents",
+        "strands-agents"
+      ],
+      "publishedAt": "2026-05-04T14:13:41.452Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGJkGcJQup5qXhh96rNw1Zc2Ew",
+      "title": "allowedTools do Kiro CLI: De Flags de Sessão à Configurações Persistentes de Agente",
+      "description": "Guia passo a passo para criar uma configuração de agente persistente que auto-aprova ferramentas seguras como read, grep e servidores MCP, enquanto mantém write, shell e use_aws atrás de confirmação manual.",
+      "url": "https://builder.aws.com/content/3DGJkGcJQup5qXhh96rNw1Zc2Ew",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGK3OwEOOzVfRdRW6otozcK8BJ/Chat.webp",
+      "authorName": "Carlos Biagolini",
+      "authorAlias": "cbiagolini",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "kiro",
+        "ai",
+        "ai-for-developers",
+        "devops",
+        "developer"
+      ],
+      "publishedAt": "2026-05-04T13:54:41.102Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
       "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
@@ -120,8 +183,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
+      "lat": 22.3492155,
+      "lng": 114.1857978,
       "tags": [
         "claude",
         "amazon-bedrock",
@@ -367,67 +430,6 @@
       "publishedAt": "2026-05-03T20:15:40.621Z",
       "likesCount": 2,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3DDxCrS5hFbSXjG6QHKMFtSHrEA",
-      "title": "MCP IDE Integration Patterns with Okta 3LO Authentication",
-      "description": "Two production-ready patterns for connecting MCP-compatible IDEs (Claude Code, Kiro, VS Code) to remote MCP servers on Amazon Bedrock AgentCore, with Okta OAuth 2.0 3LO authentication (Authorization Code + PKCE). Covers local proxy implementation, Okta setup, and deployment for both container-based (Runtime) and serverless (Gateway) patterns.",
-      "url": "https://builder.aws.com/content/3DDxCrS5hFbSXjG6QHKMFtSHrEA",
-      "imageUrl": "",
-      "authorName": "Mallik Panchumarthy",
-      "authorAlias": "mpanchum",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DE2q5mL3iUwoyIWdeJj5bGhVqz.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-05-03T18:41:38.503Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DE193fyhsstpiuELPkLoLfgtVy",
-      "title": "Enforcing Preventative Controls in a Multi-Account Environment",
-      "description": "Learn how to enforce governance at scale in AWS Organizations using Service Control Policies (SCPs), Resource Control Policies (RCPs), and Declarative Policies to enhance security and compliance across multiple accounts.",
-      "url": "https://builder.aws.com/content/3DE193fyhsstpiuELPkLoLfgtVy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DE1kYhhwsFt7M1sn6zm0GkmMtO/featu.webp",
-      "authorName": "Sergio Cambelo",
-      "authorAlias": "scambelo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3668vuG0zkQVZ27v6LkYVaigjPg.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-organizations",
-        "security-and-compliance",
-        "governance",
-        "iam",
-        "service-control-policies"
-      ],
-      "publishedAt": "2026-05-03T18:34:28.445Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DDoSoustlREXWwB9qT0FxXWQAx",
-      "title": "How I Cleared the AWS Cloud Practitioner Exam in Under 8 Hours",
-      "description": "I started from knowing almost nothing about what I needed for the exam, to passing in only 8 hours of study time. Come learn about my certification exam strategy!",
-      "url": "https://builder.aws.com/content/3DDoSoustlREXWwB9qT0FxXWQAx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDpZXLQNaSkQsif6BbosOTA0Gp/AWS-.webp",
-      "authorName": "Ricky Liang",
-      "authorAlias": "rickyxliang",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BgaEuv5zF9F4SpCbCGrAp6a61H.webp",
-      "location": "LA, US",
-      "lat": 34.0536909,
-      "lng": -118.242766,
-      "tags": [
-        "cloud-practitioner",
-        "aws-certification",
-        "aws-skill-builder"
-      ],
-      "publishedAt": "2026-05-03T16:44:01.995Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -510,28 +512,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 59,
-      "commentsCount": 30
-    },
-    {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 60,
+      "commentsCount": 31
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -577,6 +559,26 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1433,
       "commentsCount": 328
+    },
+    {
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "social-impact",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
