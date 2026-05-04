@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-05-04T10:40:43.903Z",
+  "updatedAt": "2026-05-04T11:35:10.179Z",
   "latest": [
+    {
+      "id": "/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
+      "title": "Title: Deploying a 3-Tier Architecture on AWS using Kubernetes & GitHub Actions.",
+      "description": "A complete, step-by-step guide on how I deployed a highly available 3-tier application on Amazon EKS using automated CI/CD pipelines.",
+      "url": "https://builder.aws.com/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFxTNFDiGS29axlE4idG8WOlWd/ridh.webp",
+      "authorName": "Ridham pokiya",
+      "authorAlias": "ridhampokiya10",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kubernetes",
+        "devops",
+        "github",
+        "ci-cd",
+        "amazon-eks"
+      ],
+      "publishedAt": "2026-05-04T10:49:26.725Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DFgOxFdHYMvgkyEY4p73xunr6j",
       "title": "The Invisible Architecture: How Policies and Power Shape the Lives of Nigerian Students",
@@ -54,8 +77,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
+      "lat": 22.3492155,
+      "lng": 114.1857978,
       "tags": [
         "claude",
         "amazon-bedrock",
@@ -408,27 +431,6 @@
       "publishedAt": "2026-05-03T14:47:54.725Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
-      "title": "コンソールを使わずに Lambda@Edge 関数を CloudFront へ着脱する — lambda-edge-controller",
-      "description": "Lambda@edgeの関数をプログラマブルに操作できるnpmライブラリを公開しています。",
-      "url": "https://builder.aws.com/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
-      "imageUrl": "",
-      "authorName": "Hidetaka Okamoto",
-      "authorAlias": "hidetaka",
-      "authorAvatarUrl": "",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "aws-edge-services",
-        "open-source",
-        "developer-productivity"
-      ],
-      "publishedAt": "2026-05-03T13:55:30.246Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -450,7 +452,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3546,
+      "likesCount": 3547,
       "commentsCount": 324
     },
     {
@@ -538,6 +540,29 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
+      "title": "Title: Deploying a 3-Tier Architecture on AWS using Kubernetes & GitHub Actions.",
+      "description": "A complete, step-by-step guide on how I deployed a highly available 3-tier application on Amazon EKS using automated CI/CD pipelines.",
+      "url": "https://builder.aws.com/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFxTNFDiGS29axlE4idG8WOlWd/ridh.webp",
+      "authorName": "Ridham pokiya",
+      "authorAlias": "ridhampokiya10",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kubernetes",
+        "devops",
+        "github",
+        "ci-cd",
+        "amazon-eks"
+      ],
+      "publishedAt": "2026-05-04T10:49:26.725Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
       "title": "O que acontece quando você para de aprender sozinho",
       "description": "Desenvolvimento em comunidade",
@@ -623,27 +648,6 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 31,
       "commentsCount": 7
-    },
-    {
-      "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
-      "title": "AIdeas Finalist: SenseSync - The Third Channel",
-      "description": "For 187 years, digital communication has wired up exactly two of the five human senses. SenseSync opens the third. A real-time haptic communication app built on AWS IoT Core, Lambda, Bedrock, and DynamoDB that lets people send rhythm and presence across any distance. Zero dollars a month. The haptic channel, finally online.",
-      "url": "https://builder.aws.com/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CERsXfzKfvEYgJx5QpeCJJ6TLn/Sens.webp",
-      "authorName": "Harish Muthyala",
-      "authorAlias": "harosh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39bTeHE7KJdS9mprR43EEygRIBp.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "aideas-2025",
-        "NAMER",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-18T02:50:35.064Z",
-      "likesCount": 625,
-      "commentsCount": 111
     }
   ]
 }
