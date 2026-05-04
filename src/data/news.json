@@ -1,10 +1,30 @@
 {
-  "updatedAt": "2026-05-04T12:33:44.555Z",
+  "updatedAt": "2026-05-04T13:35:25.517Z",
   "latest": [
     {
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "social-impact",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3DG9GpzbxgQX5EPN438SoMSyHMm",
-      "title": "Amazon Bedrock Guardrails — Production AI Safety",
-      "description": "Ship AI that users can't break. Bedrock Guardrails blocks harmful content, filters PII, and stops hallucinations — setup guide with full code.",
+      "title": "Build a Production GenAI Gateway on AWS",
+      "description": "One FastAPI gateway on ECS Fargate routing to Bedrock and Azure OpenAI — with Guardrails, Secrets Manager, and full observability. Architecture + code.",
       "url": "https://builder.aws.com/content/3DG9GpzbxgQX5EPN438SoMSyHMm",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGA9fYjuc2e5FYMAM3Gmaj5zjG/aws6.webp",
       "authorName": "meghana rajagopal",
@@ -100,8 +120,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "claude",
         "amazon-bedrock",
@@ -199,7 +219,7 @@
       ],
       "publishedAt": "2026-05-04T05:07:21.113Z",
       "likesCount": 1,
-      "commentsCount": 0
+      "commentsCount": 1
     },
     {
       "id": "/content/391jPQIWuvd3UbvK1Z6ZogpJdjm",
@@ -408,29 +428,6 @@
       "publishedAt": "2026-05-03T16:44:01.995Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
-      "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
-      "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
-      "url": "https://builder.aws.com/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDcJ4KuJM8OjdldeK5UE05uapw/llm2-.webp",
-      "authorName": "Raj Jain",
-      "authorAlias": "rajjain",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qqEoWsWzCxi7y8olOdS1UP2JG.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro",
-        "ai-agents",
-        "ai-engineering",
-        "ai-ide",
-        "llm"
-      ],
-      "publishedAt": "2026-05-03T14:54:30.617Z",
-      "likesCount": 3,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -452,7 +449,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3547,
+      "likesCount": 3548,
       "commentsCount": 324
     },
     {
@@ -473,7 +470,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3443,
+      "likesCount": 3444,
       "commentsCount": 1919
     },
     {
@@ -494,7 +491,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2854,
+      "likesCount": 2855,
       "commentsCount": 319
     },
     {
@@ -515,6 +512,26 @@
       "publishedAt": "2026-04-30T20:13:50.660Z",
       "likesCount": 59,
       "commentsCount": 30
+    },
+    {
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "social-impact",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -540,26 +557,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "title": "O que acontece quando você para de aprender sozinho",
-      "description": "Desenvolvimento em comunidade",
-      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "imageUrl": "",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 3,
-      "commentsCount": 3
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -578,8 +575,28 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1432,
+      "likesCount": 1433,
       "commentsCount": 328
+    },
+    {
+      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "title": "O que acontece quando você para de aprender sozinho",
+      "description": "Desenvolvimento em comunidade",
+      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "imageUrl": "",
+      "authorName": "Edna Cristina Durans Santos",
+      "authorAlias": "ednadurans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-04T02:36:01.211Z",
+      "likesCount": 3,
+      "commentsCount": 3
     },
     {
       "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
@@ -602,29 +619,6 @@
       "publishedAt": "2026-05-02T19:59:43.068Z",
       "likesCount": 15,
       "commentsCount": 7
-    },
-    {
-      "id": "/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
-      "title": "Title: Deploying a 3-Tier Architecture on AWS using Kubernetes & GitHub Actions.",
-      "description": "A complete, step-by-step guide on how I deployed a highly available 3-tier application on Amazon EKS using automated CI/CD pipelines.",
-      "url": "https://builder.aws.com/content/3DFw06gi8TDJCFevZpz9OMfLDZi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFxTNFDiGS29axlE4idG8WOlWd/ridh.webp",
-      "authorName": "Ridham pokiya",
-      "authorAlias": "ridhampokiya10",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kubernetes",
-        "devops",
-        "github",
-        "ci-cd",
-        "amazon-eks"
-      ],
-      "publishedAt": "2026-05-04T10:49:26.725Z",
-      "likesCount": 1,
-      "commentsCount": 0
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
