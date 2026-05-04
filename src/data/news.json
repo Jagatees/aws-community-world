@@ -1,6 +1,69 @@
 {
-  "updatedAt": "2026-05-04T03:05:55.155Z",
+  "updatedAt": "2026-05-04T05:10:01.191Z",
   "latest": [
+    {
+      "id": "/content/3CUfSn95hIJuj5E1ZSMXyJfGCQX",
+      "title": "Runtime EOL en Lambda: Proceso de actualización antes que AWS te recuerde.",
+      "description": "Cuando vemos el EOL de nuestras funciones Lambda suena lejano, hasta que revisas cuántas tienes con runtimes próximos a expirar. Este es el proceso que armé para inventariar, validar y migrar sin afectar nada en producción.",
+      "url": "https://builder.aws.com/content/3CUfSn95hIJuj5E1ZSMXyJfGCQX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFHWtpoGMn8c72PxN9cpV8rnlT/7-pn.webp",
+      "authorName": "Carlos Zambrano",
+      "authorAlias": "czam",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2y5lQ1SqtIBF1mUliZe5beqy7IF.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aws-lambda",
+        "serverless",
+        "aws-config",
+        "python",
+        "best-practices"
+      ],
+      "publishedAt": "2026-05-04T05:07:21.113Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/391jPQIWuvd3UbvK1Z6ZogpJdjm",
+      "title": "With Great Power(AgentCore), Comes Great Responsibility...Till Now",
+      "description": "You’re Not Building AI Agents,You’re Building Their Runtime (Until Now). Understanding Managed harness on Agentcore",
+      "url": "https://builder.aws.com/content/391jPQIWuvd3UbvK1Z6ZogpJdjm",
+      "imageUrl": "",
+      "authorName": "Farah Abdirahman",
+      "authorAlias": "farahabdi24",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uFiNMtIVoM8TBH09xmmGNtfBUt.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-04T05:06:32.307Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DF9dBkjZoGhEccLjvaTjKzOw9g",
+      "title": "AWS Skill Builder - The Data Engineering Track",
+      "description": "A little deep dive into data engineering and what I learned on this track in skill builder...",
+      "url": "https://builder.aws.com/content/3DF9dBkjZoGhEccLjvaTjKzOw9g",
+      "imageUrl": "",
+      "authorName": "Trinity Chatmon",
+      "authorAlias": "tchatmon",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "big-data",
+        "data",
+        "data-engineer",
+        "data-engineering",
+        "data-lakes"
+      ],
+      "publishedAt": "2026-05-04T04:05:12.229Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
       "title": "O que acontece quando você para de aprender sozinho",
@@ -18,8 +81,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "likesCount": 2,
+      "commentsCount": 3
     },
     {
       "id": "/content/3D3r7SSoA0Fv73cJZ4oym7QZPMV",
@@ -105,8 +168,8 @@
         "mcp-integration"
       ],
       "publishedAt": "2026-05-03T20:15:40.621Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
       "id": "/content/3DDxCrS5hFbSXjG6QHKMFtSHrEA",
@@ -214,6 +277,133 @@
       "publishedAt": "2026-05-03T14:47:54.725Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
+      "title": "コンソールを使わずに Lambda@Edge 関数を CloudFront へ着脱する — lambda-edge-controller",
+      "description": "Lambda@edgeの関数をプログラマブルに操作できるnpmライブラリを公開しています。",
+      "url": "https://builder.aws.com/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
+      "imageUrl": "",
+      "authorName": "Hidetaka Okamoto",
+      "authorAlias": "hidetaka",
+      "authorAvatarUrl": "",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "aws-edge-services",
+        "open-source",
+        "developer-productivity"
+      ],
+      "publishedAt": "2026-05-03T13:55:30.246Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DDJ0nZH7JGCvXi82zYE4ZcaEWi",
+      "title": "From Data to Insights: Integrating Amazon Redshift with Amazon Quick Suite",
+      "description": " Learn how to build an end-to-end business intelligence solution by connecting Amazon Redshift Serverless to Amazon Quick Suite  from loading sample data to generating AI-powered analyses, enabling natural-language Q&A, and automating reporting workflows.",
+      "url": "https://builder.aws.com/content/3DDJ0nZH7JGCvXi82zYE4ZcaEWi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDOeZbX5ahtbcS0TZ7PZ4fTCEa/Cove.webp",
+      "authorName": "Shabna",
+      "authorAlias": "shabnmt",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-03T12:37:03.722Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DDDWktssazMAv6uKWqLVofifsp",
+      "title": "Transforming HR Operations with No-Code Automation Using Amazon Quick Flows",
+      "description": "Learn how to build a fully automated, no-code HR training compliance workflow using Amazon Quick Flows and Microsoft Outlook  from data integration to scheduled email notifications, all without writing a single line of code.",
+      "url": "https://builder.aws.com/content/3DDDWktssazMAv6uKWqLVofifsp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDOE6jIEPgS1r7tn0pT9KqHQ0D/Cove.webp",
+      "authorName": "Shabna",
+      "authorAlias": "shabnmt",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-quick-suite",
+        "workflows"
+      ],
+      "publishedAt": "2026-05-03T12:05:37.166Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DD1QSZtXXduTN7lSICh6CtP0e9",
+      "title": "I Built It, It Worked… But I Still Didn’t Understand It",
+      "description": "My first AWS project worked exactly as expected—but I struggled to explain how or why. This is what I learned about the gap between building something and truly understanding it.",
+      "url": "https://builder.aws.com/content/3DD1QSZtXXduTN7lSICh6CtP0e9",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DD1oOmoS1U5LtzHo63yDoOdDpR/1-pn.webp",
+      "authorName": "Om Keswani",
+      "authorAlias": "omiee24",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3894gFCupwDcSCBhlVUHtta7riL.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "ai",
+        "ai-services",
+        "all-builders-welcome",
+        "amazon-a2i",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-03T09:53:48.204Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
+      "title": "From Idea to Impact: Building a Real Event-Driven Security Pipeline on AWS",
+      "description": "How I designed and presented a production-minded EventBridge + Lambda + SQS architecture that reacts in real time, scales independently, and survives failure gracefully.",
+      "url": "https://builder.aws.com/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCqRhk1AbQoAMw2hkpYpZKt6Vm/Scre.webp",
+      "authorName": "Habeeb Babasulaiman",
+      "authorAlias": "freemanboss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32KkG08lZwpZvSN5wgLE1DJzJoU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "event-driven",
+        "amazon-eventbridge",
+        "architecture-patterns",
+        "aws-lambda",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-05-03T08:38:28.872Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
+      "title": "7 Ways to Maximize Video Encoding Performance on AWS Graviton",
+      "description": "AWS Graviton processors are purpose-built for video encoding workloads - but only a tuned build fully realizes that potential. This article walks through 7 practical optimizations, from compiler flags to SIMD acceleration, that unlock Graviton's full performance for FFmpeg and OpenCV pipelines.",
+      "url": "https://builder.aws.com/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwSC0VOxqSEzDDgJtqXO6wnltY/Pict.webp",
+      "authorName": "Ziv Klempner",
+      "authorAlias": "zivklemp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zDerN4dHMw2oM8z1ogOlx4GO7B.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "graviton",
+        "video",
+        "performance",
+        "amazon-ec2",
+        "open-source"
+      ],
+      "publishedAt": "2026-05-03T07:09:56.186Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -234,8 +424,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "likesCount": 2,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -361,8 +551,8 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 14,
-      "commentsCount": 6
+      "likesCount": 15,
+      "commentsCount": 7
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -387,26 +577,26 @@
       "commentsCount": 328
     },
     {
-      "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
-      "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
-      "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
-      "url": "https://builder.aws.com/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDcJ4KuJM8OjdldeK5UE05uapw/llm2-.webp",
-      "authorName": "Raj Jain",
-      "authorAlias": "rajjain",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qqEoWsWzCxi7y8olOdS1UP2JG.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3DEEuodA3f3idRor0En97md1rDy",
+      "title": "Get Started with Kiro + MCP in Minutes. Go Deeper with Kiro powers.",
+      "description": "Kiro, the agentic development environment from AWS, offers three powerful ways to extend your workflow — from one-click MCP server installation to Custom and Curated Kiro powers. This guide walks you through each integration path, helping you start fast and go deeper as your needs grow.",
+      "url": "https://builder.aws.com/content/3DEEuodA3f3idRor0En97md1rDy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DEF0ic411psEu517Hyx3Rwn6dY/kiro_.webp",
+      "authorName": "Shashiraj Jeripotula",
+      "authorAlias": "shashiv",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xNN8mCLnzqJL13FLeuusLa8zCj.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
         "kiro",
-        "ai-agents",
-        "ai-engineering",
-        "ai-ide",
-        "llm"
+        "kiro-heroes",
+        "mcp",
+        "mcp-server",
+        "mcp-integration"
       ],
-      "publishedAt": "2026-05-03T14:54:30.617Z",
-      "likesCount": 3,
+      "publishedAt": "2026-05-03T20:15:40.621Z",
+      "likesCount": 2,
       "commentsCount": 1
     },
     {
