@@ -1,6 +1,94 @@
 {
-  "updatedAt": "2026-05-04T05:10:01.191Z",
+  "updatedAt": "2026-05-04T07:01:42.352Z",
   "latest": [
+    {
+      "id": "/content/3DFOZvfmi3ZcEXF5UZhEuxVvlpU",
+      "title": "Running Claude Code and Claude Desktop on Amazon Bedrock",
+      "description": "This article walks through configuring both Claude Code (terminal CLI) and Claude Desktop (Cowork) to use Amazon Bedrock as the inference backend — no Anthropic API key or subscription required. Claude Code needs two environment variables in ~/.claude/settings.json. Claude Desktop needs a few fields in the built-in Setup UI. Both share the same AWS credentials and Bedrock model access. The entire setup, including troubleshooting, was done through AI-assisted development with Kiro.",
+      "url": "https://builder.aws.com/content/3DFOZvfmi3ZcEXF5UZhEuxVvlpU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFSNny6oIw6P24p7e2YU8i2hG1/A-sle.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
+      "tags": [
+        "claude",
+        "amazon-bedrock",
+        "agentic-ai",
+        "ai-ide",
+        "agentic-ide"
+      ],
+      "publishedAt": "2026-05-04T06:37:58.784Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DFKnLTAGiVT933eH7duCGcdgnG",
+      "title": "From Learning Alone to Building Together:\nHow helpful AWS Student Builder Groups are",
+      "description": "Learn about the multiple benefits",
+      "url": "https://builder.aws.com/content/3DFKnLTAGiVT933eH7duCGcdgnG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFNXAS7k6mYxL5VW6Tre2pIJLS/artic.webp",
+      "authorName": "Dennis Escobar",
+      "authorAlias": "alexred",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-community",
+        "students"
+      ],
+      "publishedAt": "2026-05-04T05:59:07.808Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DFMLutqcrhO8Nh4aPpPTPQe3wo",
+      "title": "The Problem with Being a Marketing Major in 2026",
+      "description": " The gap between business students and tech is not a gap of ability; it's a gap of access, and nobody talks about it. Here's what changed when I stopped assuming the cloud wasn't for me, and why every college student should pay attention to where their future careers are actually being built.",
+      "url": "https://builder.aws.com/content/3DFMLutqcrhO8Nh4aPpPTPQe3wo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFOHL7lgHDNzvtQgpiR3wTWRzX/The-.webp",
+      "authorName": "Katlynne Britosalas",
+      "authorAlias": "katwyat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CvQHju3Cws9x42UUFiV04zJFGI.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "students",
+        "aws-networking",
+        "ai",
+        "advertising-marketing-industry"
+      ],
+      "publishedAt": "2026-05-04T05:57:55.201Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DFJW7PqCFg9XNem3LATwjdvwKH",
+      "title": "8 días con CVEs críticos en producción que Amazon Inspector no me mostró",
+      "description": "Teníamos una Lambda en producción con vulnerabilidades críticas en aiohttp. Inspector las detectó el 2 de abril. Las vimos el 9 de abril, solo porque hicimos un deploy. Abrí un caso de soporte, escalé con el service team y encontré algo que la documentación oficial no explica claramente. ",
+      "url": "https://builder.aws.com/content/3DFJW7PqCFg9XNem3LATwjdvwKH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFOMWebHSyhIbDNyHL0ZZqwYR3/Imag.webp",
+      "authorName": "Carlos Zambrano",
+      "authorAlias": "czam",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2y5lQ1SqtIBF1mUliZe5beqy7IF.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aws-lambda",
+        "cloud-security",
+        "best-practices",
+        "security-best-practices",
+        "application-security"
+      ],
+      "publishedAt": "2026-05-04T05:57:12.841Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CUfSn95hIJuj5E1ZSMXyJfGCQX",
       "title": "Runtime EOL en Lambda: Proceso de actualización antes que AWS te recuerde.",
@@ -94,7 +182,7 @@
       "authorAlias": "shawnzh",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
       "location": "Hong Kong Island, HK",
-      "lat": 22.2534634,
+      "lat": 22.2534635,
       "lng": 114.190975,
       "tags": [
         "ai-engineering",
@@ -103,7 +191,7 @@
         "iam"
       ],
       "publishedAt": "2026-05-04T02:28:11.385Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -315,118 +403,9 @@
       "publishedAt": "2026-05-03T12:37:03.722Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DDDWktssazMAv6uKWqLVofifsp",
-      "title": "Transforming HR Operations with No-Code Automation Using Amazon Quick Flows",
-      "description": "Learn how to build a fully automated, no-code HR training compliance workflow using Amazon Quick Flows and Microsoft Outlook  from data integration to scheduled email notifications, all without writing a single line of code.",
-      "url": "https://builder.aws.com/content/3DDDWktssazMAv6uKWqLVofifsp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDOE6jIEPgS1r7tn0pT9KqHQ0D/Cove.webp",
-      "authorName": "Shabna",
-      "authorAlias": "shabnmt",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "amazon-quick-suite",
-        "workflows"
-      ],
-      "publishedAt": "2026-05-03T12:05:37.166Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DD1QSZtXXduTN7lSICh6CtP0e9",
-      "title": "I Built It, It Worked… But I Still Didn’t Understand It",
-      "description": "My first AWS project worked exactly as expected—but I struggled to explain how or why. This is what I learned about the gap between building something and truly understanding it.",
-      "url": "https://builder.aws.com/content/3DD1QSZtXXduTN7lSICh6CtP0e9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DD1oOmoS1U5LtzHo63yDoOdDpR/1-pn.webp",
-      "authorName": "Om Keswani",
-      "authorAlias": "omiee24",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3894gFCupwDcSCBhlVUHtta7riL.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
-      "tags": [
-        "ai",
-        "ai-services",
-        "all-builders-welcome",
-        "amazon-a2i",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-03T09:53:48.204Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
-      "title": "From Idea to Impact: Building a Real Event-Driven Security Pipeline on AWS",
-      "description": "How I designed and presented a production-minded EventBridge + Lambda + SQS architecture that reacts in real time, scales independently, and survives failure gracefully.",
-      "url": "https://builder.aws.com/content/3DChWPr1GhaH0QouPbNPvyfrxeA",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DCqRhk1AbQoAMw2hkpYpZKt6Vm/Scre.webp",
-      "authorName": "Habeeb Babasulaiman",
-      "authorAlias": "freemanboss",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32KkG08lZwpZvSN5wgLE1DJzJoU.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "event-driven",
-        "amazon-eventbridge",
-        "architecture-patterns",
-        "aws-lambda",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-05-03T08:38:28.872Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
-      "title": "7 Ways to Maximize Video Encoding Performance on AWS Graviton",
-      "description": "AWS Graviton processors are purpose-built for video encoding workloads - but only a tuned build fully realizes that potential. This article walks through 7 practical optimizations, from compiler flags to SIMD acceleration, that unlock Graviton's full performance for FFmpeg and OpenCV pipelines.",
-      "url": "https://builder.aws.com/content/3CtRt4gmJCqrY7f4tIlhKKsanga",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CwSC0VOxqSEzDDgJtqXO6wnltY/Pict.webp",
-      "authorName": "Ziv Klempner",
-      "authorAlias": "zivklemp",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zDerN4dHMw2oM8z1ogOlx4GO7B.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "graviton",
-        "video",
-        "performance",
-        "amazon-ec2",
-        "open-source"
-      ],
-      "publishedAt": "2026-05-03T07:09:56.186Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "title": "O que acontece quando você para de aprender sozinho",
-      "description": "Desenvolvimento em comunidade",
-      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "imageUrl": "",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 2,
-      "commentsCount": 3
-    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -470,6 +449,26 @@
       "commentsCount": 1919
     },
     {
+      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "title": "O que acontece quando você para de aprender sozinho",
+      "description": "Desenvolvimento em comunidade",
+      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "imageUrl": "",
+      "authorName": "Edna Cristina Durans Santos",
+      "authorAlias": "ednadurans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-04T02:36:01.211Z",
+      "likesCount": 2,
+      "commentsCount": 3
+    },
+    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -508,6 +507,29 @@
       "publishedAt": "2026-04-30T20:13:50.660Z",
       "likesCount": 59,
       "commentsCount": 30
+    },
+    {
+      "id": "/content/3DFOZvfmi3ZcEXF5UZhEuxVvlpU",
+      "title": "Running Claude Code and Claude Desktop on Amazon Bedrock",
+      "description": "This article walks through configuring both Claude Code (terminal CLI) and Claude Desktop (Cowork) to use Amazon Bedrock as the inference backend — no Anthropic API key or subscription required. Claude Code needs two environment variables in ~/.claude/settings.json. Claude Desktop needs a few fields in the built-in Setup UI. Both share the same AWS credentials and Bedrock model access. The entire setup, including troubleshooting, was done through AI-assisted development with Kiro.",
+      "url": "https://builder.aws.com/content/3DFOZvfmi3ZcEXF5UZhEuxVvlpU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFSNny6oIw6P24p7e2YU8i2hG1/A-sle.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
+      "tags": [
+        "claude",
+        "amazon-bedrock",
+        "agentic-ai",
+        "ai-ide",
+        "agentic-ide"
+      ],
+      "publishedAt": "2026-05-04T06:37:58.784Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -577,29 +599,6 @@
       "commentsCount": 328
     },
     {
-      "id": "/content/3DEEuodA3f3idRor0En97md1rDy",
-      "title": "Get Started with Kiro + MCP in Minutes. Go Deeper with Kiro powers.",
-      "description": "Kiro, the agentic development environment from AWS, offers three powerful ways to extend your workflow — from one-click MCP server installation to Custom and Curated Kiro powers. This guide walks you through each integration path, helping you start fast and go deeper as your needs grow.",
-      "url": "https://builder.aws.com/content/3DEEuodA3f3idRor0En97md1rDy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DEF0ic411psEu517Hyx3Rwn6dY/kiro_.webp",
-      "authorName": "Shashiraj Jeripotula",
-      "authorAlias": "shashiv",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xNN8mCLnzqJL13FLeuusLa8zCj.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "kiro-heroes",
-        "mcp",
-        "mcp-server",
-        "mcp-integration"
-      ],
-      "publishedAt": "2026-05-03T20:15:40.621Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
       "title": "🌩️ Getting Started with AWS Builder Center",
       "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
@@ -619,8 +618,8 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 30,
-      "commentsCount": 6
+      "likesCount": 31,
+      "commentsCount": 7
     }
   ]
 }
