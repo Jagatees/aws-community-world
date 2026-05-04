@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-05-04T17:32:54.374Z",
+  "updatedAt": "2026-05-04T18:32:31.623Z",
   "latest": [
+    {
+      "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
+      "title": "Disambiguating Claude on AWS",
+      "description": "This article clarifies the different ways AWS supports each of Anthropic's Claude offerings (Claude Platform, Claude Code, and Claude Cowork) and when you should use each one.",
+      "url": "https://builder.aws.com/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
+      "imageUrl": "",
+      "authorName": "Dan",
+      "authorAlias": "doolaugh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CJOuWglfC5NVkYi7ElP0KKXAZT.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "anthropic",
+        "anthropic-claude",
+        "claude",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-04T17:39:14.217Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGl2tXd5fAp31E1rb3USxw1sj9",
+      "title": "I Built a Kanban to Learn Autonomous Development on AWS",
+      "description": "Built a kanban with AI agents on AWS to learn autonomous development. What broke, what worked, how I run it under $5/month.",
+      "url": "https://builder.aws.com/content/3DGl2tXd5fAp31E1rb3USxw1sj9",
+      "imageUrl": "",
+      "authorName": "Brett Gillett",
+      "authorAlias": "brettco098",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wMUUBTsyCmdzLMmHpvHmnmsJaE.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "serverless",
+        "autonomous-agents"
+      ],
+      "publishedAt": "2026-05-04T17:38:46.614Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DGbcEzWqGUFib7QM9TdYrjeEXM",
       "title": "Driving Innovation with HPC: Our Commitment to the AWS Builder Community",
@@ -117,8 +161,8 @@
         "soft-skills"
       ],
       "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 3,
-      "commentsCount": 0
+      "likesCount": 4,
+      "commentsCount": 1
     },
     {
       "id": "/content/3DGXYWlOpwc7UXhTGoxUioza08c",
@@ -158,52 +202,31 @@
       "publishedAt": "2026-05-04T15:35:11.609Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGR4dU0qVjIaEN6wPXbyt2lQCE",
-      "title": "Do zero ao deploy: criando seu primeiro projeto na nuvem com AWS",
-      "description": "Neste artigo, vou mostrar como desenvolvi meu primeiro projeto na AWS, do zero ao deploy, utilizando uma arquitetura simples, moderna e totalmente baseada em serviços serverless.",
-      "url": "https://builder.aws.com/content/3DGR4dU0qVjIaEN6wPXbyt2lQCE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGTW8bF4QkSyNri9mrH5bkRoeh/Como.webp",
-      "authorName": "João Vitor Oliveira Gomes",
-      "authorAlias": "pontoengjoao",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs3ArzwskXWeNYEQljawTQPbmc.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-s3",
-        "aws-cloud9"
-      ],
-      "publishedAt": "2026-05-04T15:11:49.996Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DB1jFaPVDMpjoWROizyFzlIA58",
-      "title": "Building hybrid retrieval for AI agents with Bedrock and DynamoDB",
-      "description": "Combine vector search with structured entity queries across two data stores, letting an AI agent decide which retrieval path fits each query.",
-      "url": "https://builder.aws.com/content/3DB1jFaPVDMpjoWROizyFzlIA58",
-      "imageUrl": "",
-      "authorName": "Kajal",
-      "authorAlias": "kajipan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DB1AW26GtfXofaWFKYwiPqYFl1.webp",
-      "location": "CA",
-      "lat": 61.0666922,
-      "lng": -107.991707,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-dynamodb",
-        "retreival-augmented-generation",
-        "ai-agents",
-        "strands-agents"
-      ],
-      "publishedAt": "2026-05-04T14:13:41.452Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
+      "title": "Disambiguating Claude on AWS",
+      "description": "This article clarifies the different ways AWS supports each of Anthropic's Claude offerings (Claude Platform, Claude Code, and Claude Cowork) and when you should use each one.",
+      "url": "https://builder.aws.com/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
+      "imageUrl": "",
+      "authorName": "Dan",
+      "authorAlias": "doolaugh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CJOuWglfC5NVkYi7ElP0KKXAZT.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "anthropic",
+        "anthropic-claude",
+        "claude",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-04T17:39:14.217Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -247,6 +270,25 @@
       "commentsCount": 1920
     },
     {
+      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
+      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
+      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "soft-skills"
+      ],
+      "publishedAt": "2026-05-04T15:54:09.861Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -268,40 +310,24 @@
       "commentsCount": 319
     },
     {
-      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "title": "Por que e onde começar sua jornada em Cloud Computing",
-      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
-      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
-      "authorName": "Pedro Costard Oliveira",
-      "authorAlias": "costard",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-04T17:01:43.943Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
-      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
-      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
-        "soft-skills"
+        "social-impact",
+        "aideas-2025"
       ],
-      "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 3,
-      "commentsCount": 0
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 4,
+      "commentsCount": 2
     },
     {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
@@ -321,6 +347,23 @@
       "publishedAt": "2026-04-30T20:13:50.660Z",
       "likesCount": 60,
       "commentsCount": 31
+    },
+    {
+      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "title": "Por que e onde começar sua jornada em Cloud Computing",
+      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
+      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
+      "authorName": "Pedro Costard Oliveira",
+      "authorAlias": "costard",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-04T17:01:43.943Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -346,26 +389,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -386,28 +409,6 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1434,
       "commentsCount": 328
-    },
-    {
-      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
-      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
-      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "imageUrl": "",
-      "authorName": "Leandro UTFPR",
-      "authorAlias": "leandronogarotto",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "students",
-        "cloud-practitioner",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 16,
-      "commentsCount": 7
     }
   ]
 }
