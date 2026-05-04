@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-05-04T18:32:31.623Z",
+  "updatedAt": "2026-05-04T19:33:21.776Z",
   "latest": [
+    {
+      "id": "/content/3DGtqSaLANjcTxyEX9tyQWZ7AVk",
+      "title": "Ensinar para aprender: como um AWS Student Builder Group pode transformar um campus",
+      "description": "Como o ensino e a aws se unem.",
+      "url": "https://builder.aws.com/content/3DGtqSaLANjcTxyEX9tyQWZ7AVk",
+      "imageUrl": "",
+      "authorName": "Henry Medeiros da Silveira Monteiro",
+      "authorAlias": "henrymedeiros",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-04T18:48:01.339Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGqrMSRlS7leXjfoYUp9O80dDY",
+      "title": "\"Which Agent Is Costing Me the Most?\" — Per-Agent Cost Attribution for Amazon Bedrock AgentCore",
+      "description": "Calculate per-agent cost on Amazon Bedrock AgentCore by correlating each runtime's IAM role with Bedrock model invocation logs — no code changes or Application Inference Profiles needed. Walks through the three-step logic (list runtimes, query logs by role, pull CloudWatch metrics), the gotchas, and how to turn it into a live CloudWatch dashboard with hourly custom metrics, alarms, and anomaly detection.\n",
+      "url": "https://builder.aws.com/content/3DGqrMSRlS7leXjfoYUp9O80dDY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGv7RcOGhwjiIG6k78YyvNliWf/agen.webp",
+      "authorName": "Kirankumar Chandrashekar",
+      "authorAlias": "kirankumar",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai-agents",
+        "amazon-bedrock-agentcore",
+        "strands-agents"
+      ],
+      "publishedAt": "2026-05-04T18:41:59.937Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
       "title": "Disambiguating Claude on AWS",
@@ -20,8 +60,8 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-05-04T17:39:14.217Z",
-      "likesCount": 3,
-      "commentsCount": 0
+      "likesCount": 8,
+      "commentsCount": 1
     },
     {
       "id": "/content/3DGl2tXd5fAp31E1rb3USxw1sj9",
@@ -98,7 +138,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-05-04T17:01:43.943Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -142,7 +182,7 @@
         "strands-agents"
       ],
       "publishedAt": "2026-05-04T16:20:44.320Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -163,45 +203,6 @@
       "publishedAt": "2026-05-04T15:54:09.861Z",
       "likesCount": 4,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3DGXYWlOpwc7UXhTGoxUioza08c",
-      "title": "A base que o mercado esqueceu",
-      "description": "Valorizamos o conhecimento, mas abandonamos quem o constrói. Sem docência e pesquisa, só resta superficialidade.",
-      "url": "https://builder.aws.com/content/3DGXYWlOpwc7UXhTGoxUioza08c",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGaogkoHKyho9bs0qQGWkbFBru/5361.webp",
-      "authorName": "Vitor Ochoa",
-      "authorAlias": "ochoavitu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8wsDBDLXPnRVSgmTl3qvp43c0.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-04T15:53:37.256Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGVoghgQVJkqvwll1eUHMEkrtz",
-      "title": "How to figure out EC2 instance type names (it’s easier than you think)",
-      "description": "What do the letters in EC2 instance type names actually mean? The naming convention explained, with a decision tree for choosing the right one.",
-      "url": "https://builder.aws.com/content/3DGVoghgQVJkqvwll1eUHMEkrtz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGVvFK6QJZRwcOUJzjbGavwvwC/How-t.webp",
-      "authorName": "Brooke Jamieson",
-      "authorAlias": "brooooke",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ZUbTytXQQwPc4RCbHV6ceF7xya.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-ec2",
-        "getting-started",
-        "fundamentals",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-04T15:35:11.609Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -224,8 +225,8 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-05-04T17:39:14.217Z",
-      "likesCount": 3,
-      "commentsCount": 0
+      "likesCount": 8,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -270,25 +271,6 @@
       "commentsCount": 1920
     },
     {
-      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
-      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
-      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "soft-skills"
-      ],
-      "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -310,24 +292,23 @@
       "commentsCount": 319
     },
     {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
+      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
+      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
       "tags": [
-        "social-impact",
-        "aideas-2025"
+        "soft-skills"
       ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "publishedAt": "2026-05-04T15:54:09.861Z",
       "likesCount": 4,
-      "commentsCount": 2
+      "commentsCount": 1
     },
     {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
@@ -349,21 +330,24 @@
       "commentsCount": 31
     },
     {
-      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "title": "Por que e onde começar sua jornada em Cloud Computing",
-      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
-      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
-      "authorName": "Pedro Costard Oliveira",
-      "authorAlias": "costard",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-04T17:01:43.943Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "social-impact",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 4,
+      "commentsCount": 2
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -387,6 +371,23 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1932,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "title": "Por que e onde começar sua jornada em Cloud Computing",
+      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
+      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
+      "authorName": "Pedro Costard Oliveira",
+      "authorAlias": "costard",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-04T17:01:43.943Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
