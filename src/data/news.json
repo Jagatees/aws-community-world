@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-05-04T00:32:19.741Z",
+  "updatedAt": "2026-05-04T01:35:45.799Z",
   "latest": [
+    {
+      "id": "/content/3DEjQo8AFmsfdYfqZJbgiwvVqcR",
+      "title": "Getting Back Into AWS With AWS Builder Center",
+      "description": "I used AWS at a summer camp last year, then did not touch it again until a class project this semester. Here is how AWS Builder Center helped me get back into it.",
+      "url": "https://builder.aws.com/content/3DEjQo8AFmsfdYfqZJbgiwvVqcR",
+      "imageUrl": "",
+      "authorName": "Kenny",
+      "authorAlias": "kennygarcia",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-ec2",
+        "amazon-sns"
+      ],
+      "publishedAt": "2026-05-04T01:24:00.859Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DES5ckfyLa76avOSeOxlCXuapf",
       "title": "KiroHub: Generate a Kiro Skill in 60 Seconds Built With Bedrock Registry and AgentCore Harness",
@@ -190,26 +210,6 @@
       "publishedAt": "2026-05-03T12:37:03.722Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DDDWktssazMAv6uKWqLVofifsp",
-      "title": "Transforming HR Operations with No-Code Automation Using Amazon Quick Flows",
-      "description": "Learn how to build a fully automated, no-code HR training compliance workflow using Amazon Quick Flows and Microsoft Outlook  from data integration to scheduled email notifications, all without writing a single line of code.",
-      "url": "https://builder.aws.com/content/3DDDWktssazMAv6uKWqLVofifsp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDOE6jIEPgS1r7tn0pT9KqHQ0D/Cove.webp",
-      "authorName": "Shabna",
-      "authorAlias": "shabnmt",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "amazon-quick-suite",
-        "workflows"
-      ],
-      "publishedAt": "2026-05-03T12:05:37.166Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -273,8 +273,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2853,
-      "commentsCount": 318
+      "likesCount": 2854,
+      "commentsCount": 319
     },
     {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
@@ -363,26 +363,6 @@
       "commentsCount": 328
     },
     {
-      "id": "/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "title": "The Study Break That Gave Me Direction Again",
-      "description": "In the middle of studying, I paused and rethought my direction. That break turned into a shift in how I approach what I’m building and what I want to learn next. Now I’m turning that clarity into focused goals for the summer and you can too! ",
-      "url": "https://builder.aws.com/content/3CuxWNmoEbGUE0lkIGvsQve5KhO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CyB5RU1ivs8WQOxr6wfhGB3kj1/CF481.webp",
-      "authorName": "Shine Gerkariah",
-      "authorAlias": "shineshine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ButxJPhZjurCOPQ2Bkt5EJdApA.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "advertising-marketing-industry",
-        "students"
-      ],
-      "publishedAt": "2026-04-27T00:44:34.853Z",
-      "likesCount": 40,
-      "commentsCount": 27
-    },
-    {
       "id": "/content/3DDSTQuCtKJgJg0GMhAaaY9RTUj",
       "title": "Turning Karpathy's LLM Wiki idea into Kiro setup",
       "description": "Karpathy's LLM Wiki pattern — an LLM maintaining its own compounding knowledge base over immutable sources — mapped cleanly onto Kiro. Steering files become the schema, hooks handle ingest and lint, and the whole thing runs as configuration, no code.",
@@ -427,6 +407,27 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 30,
       "commentsCount": 6
+    },
+    {
+      "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
+      "title": "AIdeas Finalist: SenseSync - The Third Channel",
+      "description": "For 187 years, digital communication has wired up exactly two of the five human senses. SenseSync opens the third. A real-time haptic communication app built on AWS IoT Core, Lambda, Bedrock, and DynamoDB that lets people send rhythm and presence across any distance. Zero dollars a month. The haptic channel, finally online.",
+      "url": "https://builder.aws.com/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CERsXfzKfvEYgJx5QpeCJJ6TLn/Sens.webp",
+      "authorName": "Harish Muthyala",
+      "authorAlias": "harosh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39bTeHE7KJdS9mprR43EEygRIBp.webp",
+      "location": "TX, US",
+      "lat": 31.2638905,
+      "lng": -98.5456116,
+      "tags": [
+        "aideas-2025",
+        "NAMER",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-18T02:50:35.064Z",
+      "likesCount": 625,
+      "commentsCount": 111
     }
   ]
 }
