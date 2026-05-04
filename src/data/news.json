@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-04T09:45:50.838Z",
+  "updatedAt": "2026-05-04T10:40:43.903Z",
   "latest": [
     {
       "id": "/content/3DFgOxFdHYMvgkyEY4p73xunr6j",
@@ -385,6 +385,50 @@
       "publishedAt": "2026-05-03T14:54:30.617Z",
       "likesCount": 3,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3Ccu2kfaCVfmCZzueXBWWlq9GAw",
+      "title": "Building AI Agents with Real-Time ML Predictions: How Amazon Bedrock AgentCore Unifies AI and ML at Scale",
+      "description": "Discover how to bridge conversational AI and production ML by combining Amazon Bedrock AgentCore with Amazon SageMaker. This post walks through an architecture where an AI agent, secured by a single AgentCore Gateway, dynamically routes requests across four MCP servers — querying RDS, invoking SageMaker endpoints for real-time predictions, and retrieving documents from a Bedrock Knowledge Base, all through natural language",
+      "url": "https://builder.aws.com/content/3Ccu2kfaCVfmCZzueXBWWlq9GAw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDbNHfUP38lUEcTnoUsNlRpXeG/cove.webp",
+      "authorName": "w.saideni",
+      "authorAlias": "waelsaideni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30SEw1L3lAv1j0GoNxsPOLeROU9.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "machine-learning",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock",
+        "financial-services-industry"
+      ],
+      "publishedAt": "2026-05-03T14:47:54.725Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
+      "title": "コンソールを使わずに Lambda@Edge 関数を CloudFront へ着脱する — lambda-edge-controller",
+      "description": "Lambda@edgeの関数をプログラマブルに操作できるnpmライブラリを公開しています。",
+      "url": "https://builder.aws.com/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
+      "imageUrl": "",
+      "authorName": "Hidetaka Okamoto",
+      "authorAlias": "hidetaka",
+      "authorAvatarUrl": "",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "aws-edge-services",
+        "open-source",
+        "developer-productivity"
+      ],
+      "publishedAt": "2026-05-03T13:55:30.246Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -514,28 +558,6 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
-      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
-      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "imageUrl": "",
-      "authorName": "Leandro UTFPR",
-      "authorAlias": "leandronogarotto",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "students",
-        "cloud-practitioner",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 15,
-      "commentsCount": 7
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -556,6 +578,28 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1432,
       "commentsCount": 328
+    },
+    {
+      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
+      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
+      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "imageUrl": "",
+      "authorName": "Leandro UTFPR",
+      "authorAlias": "leandronogarotto",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "students",
+        "cloud-practitioner",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-02T19:59:43.068Z",
+      "likesCount": 15,
+      "commentsCount": 7
     },
     {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
