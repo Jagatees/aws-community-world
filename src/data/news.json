@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-05-04T01:35:45.799Z",
+  "updatedAt": "2026-05-04T03:05:55.155Z",
   "latest": [
+    {
+      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "title": "O que acontece quando você para de aprender sozinho",
+      "description": "Desenvolvimento em comunidade",
+      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "imageUrl": "",
+      "authorName": "Edna Cristina Durans Santos",
+      "authorAlias": "ednadurans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-04T02:36:01.211Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3D3r7SSoA0Fv73cJZ4oym7QZPMV",
+      "title": "Scale-Driven Architecture: Lessons from a Hyperscale Multi-Tenant Agent Platform on EKS: Part 3 — Scaling and IAM",
+      "description": "Part 3 covers two problems at 100k+ tenants: control-plane scaling — why pod scheduling degrades non-linearly and etcd is a fixed ceiling no tier upgrade can raise — and IAM isolation, where only one of three common patterns survives the quota walls at this scale. Both share the same lesson: the binding constraint is rarely the one you expected.",
+      "url": "https://builder.aws.com/content/3D3r7SSoA0Fv73cJZ4oym7QZPMV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DEyhfds8IiPQabT4QBqj7YSTpb/new-.webp",
+      "authorName": "Shawn Zhang",
+      "authorAlias": "shawnzh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
+      "location": "Hong Kong Island, HK",
+      "lat": 22.2534634,
+      "lng": 114.190975,
+      "tags": [
+        "ai-engineering",
+        "agentic-ai",
+        "kubernetes",
+        "iam"
+      ],
+      "publishedAt": "2026-05-04T02:28:11.385Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DEjQo8AFmsfdYfqZJbgiwvVqcR",
       "title": "Getting Back Into AWS With AWS Builder Center",
@@ -172,47 +214,29 @@
       "publishedAt": "2026-05-03T14:47:54.725Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
-      "title": "コンソールを使わずに Lambda@Edge 関数を CloudFront へ着脱する — lambda-edge-controller",
-      "description": "Lambda@edgeの関数をプログラマブルに操作できるnpmライブラリを公開しています。",
-      "url": "https://builder.aws.com/content/3DDV6zSptHYyAU20mj9cHrL9Fk2",
-      "imageUrl": "",
-      "authorName": "Hidetaka Okamoto",
-      "authorAlias": "hidetaka",
-      "authorAvatarUrl": "",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "aws-edge-services",
-        "open-source",
-        "developer-productivity"
-      ],
-      "publishedAt": "2026-05-03T13:55:30.246Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DDJ0nZH7JGCvXi82zYE4ZcaEWi",
-      "title": "From Data to Insights: Integrating Amazon Redshift with Amazon Quick Suite",
-      "description": " Learn how to build an end-to-end business intelligence solution by connecting Amazon Redshift Serverless to Amazon Quick Suite  from loading sample data to generating AI-powered analyses, enabling natural-language Q&A, and automating reporting workflows.",
-      "url": "https://builder.aws.com/content/3DDJ0nZH7JGCvXi82zYE4ZcaEWi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DDOeZbX5ahtbcS0TZ7PZ4fTCEa/Cove.webp",
-      "authorName": "Shabna",
-      "authorAlias": "shabnmt",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-03T12:37:03.722Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "title": "O que acontece quando você para de aprender sozinho",
+      "description": "Desenvolvimento em comunidade",
+      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "imageUrl": "",
+      "authorName": "Edna Cristina Durans Santos",
+      "authorAlias": "ednadurans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-04T02:36:01.211Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -337,7 +361,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 13,
+      "likesCount": 14,
       "commentsCount": 6
     },
     {
@@ -407,27 +431,6 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 30,
       "commentsCount": 6
-    },
-    {
-      "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
-      "title": "AIdeas Finalist: SenseSync - The Third Channel",
-      "description": "For 187 years, digital communication has wired up exactly two of the five human senses. SenseSync opens the third. A real-time haptic communication app built on AWS IoT Core, Lambda, Bedrock, and DynamoDB that lets people send rhythm and presence across any distance. Zero dollars a month. The haptic channel, finally online.",
-      "url": "https://builder.aws.com/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CERsXfzKfvEYgJx5QpeCJJ6TLn/Sens.webp",
-      "authorName": "Harish Muthyala",
-      "authorAlias": "harosh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39bTeHE7KJdS9mprR43EEygRIBp.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "aideas-2025",
-        "NAMER",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-18T02:50:35.064Z",
-      "likesCount": 625,
-      "commentsCount": 111
     }
   ]
 }
