@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-05-04T22:21:23.441Z",
+  "updatedAt": "2026-05-04T23:18:54.036Z",
   "latest": [
+    {
+      "id": "/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
+      "title": "De professora de inglês à tecnologia: minha jornada até aqui",
+      "description": "Uma transição de carreira que não começou do zero, mas sim com tudo o que eu já sabia. \nDa sala de aula para a tecnologia, essa é uma história sobre aprendizado, adaptação e novos caminhos.",
+      "url": "https://builder.aws.com/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHLhNwg6j5Dv2k0fl9ETBstUVU/foto.webp",
+      "authorName": "Alice Barroso",
+      "authorAlias": "alicevbarroso",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "aws-ambassador",
+        "aws-builders",
+        "aws-community",
+        "aws-academy",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-05-04T22:38:31.757Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
       "title": "Beyond the Dashboard: The Mental and Technical Grind of Mastering AWS Databases",
@@ -186,26 +209,30 @@
       "publishedAt": "2026-05-04T17:25:02.898Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "title": "Por que e onde começar sua jornada em Cloud Computing",
-      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
-      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
-      "authorName": "Pedro Costard Oliveira",
-      "authorAlias": "costard",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-04T17:01:43.943Z",
-      "likesCount": 4,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3548,
+      "commentsCount": 324
+    },
     {
       "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
       "title": "Disambiguating Claude on AWS",
@@ -229,27 +256,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3548,
-      "commentsCount": 324
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -269,23 +275,6 @@
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3447,
       "commentsCount": 1920
-    },
-    {
-      "id": "/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
-      "title": "Beyond the Dashboard: The Mental and Technical Grind of Mastering AWS Databases",
-      "description": "I almost didn't finish this project.\n\nNot because the tasks were too hard. Not because I didn't understand the concepts. But because at some point during the night, the light went out.\n\nNo power. Laptop battery draining. AWS CLI still open. Project half done.\n\nThat is the reality of building in Nigeria. You don't just fight the technology — you fight the environment around you too.\n\nBut I found somewhere to charge. Sat back down. Opened the terminal again. And kept going.",
-      "url": "https://builder.aws.com/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHGIqtnVUYa3UjVrN9RCGRajUv/Finn.webp",
-      "authorName": "Abiodun Olabisi",
-      "authorAlias": "abbeyboy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BXMBBcLM0G3BBhQyZiKWq1IA7G.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-05-04T21:51:59.970Z",
-      "likesCount": 2,
-      "commentsCount": 0
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -324,7 +313,86 @@
         "soft-skills"
       ],
       "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 5,
+      "likesCount": 7,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
+      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
+      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-30T20:13:50.660Z",
+      "likesCount": 60,
+      "commentsCount": 31
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1932,
+      "commentsCount": 269
+    },
+    {
+      "id": "/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
+      "title": "Beyond the Dashboard: The Mental and Technical Grind of Mastering AWS Databases",
+      "description": "I almost didn't finish this project.\n\nNot because the tasks were too hard. Not because I didn't understand the concepts. But because at some point during the night, the light went out.\n\nNo power. Laptop battery draining. AWS CLI still open. Project half done.\n\nThat is the reality of building in Nigeria. You don't just fight the technology — you fight the environment around you too.\n\nBut I found somewhere to charge. Sat back down. Opened the terminal again. And kept going.",
+      "url": "https://builder.aws.com/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHGIqtnVUYa3UjVrN9RCGRajUv/Finn.webp",
+      "authorName": "Abiodun Olabisi",
+      "authorAlias": "abbeyboy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BXMBBcLM0G3BBhQyZiKWq1IA7G.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-05-04T21:51:59.970Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "social-impact",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 6,
       "commentsCount": 2
     },
     {
@@ -349,68 +417,6 @@
       "publishedAt": "2026-05-04T19:53:53.990Z",
       "likesCount": 2,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 60,
-      "commentsCount": 31
-    },
-    {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1932,
-      "commentsCount": 269
     }
   ]
 }
