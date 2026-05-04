@@ -1,6 +1,63 @@
 {
-  "updatedAt": "2026-05-04T15:40:15.471Z",
+  "updatedAt": "2026-05-04T16:34:01.125Z",
   "latest": [
+    {
+      "id": "/content/3DGb0OrvFf1S5HtnTJieHzSfhEN",
+      "title": "Fix MCP Timeouts: Async HandleId Pattern",
+      "description": "MCP tools freeze AI agents when external APIs are slow, causing 424 errors. The async handleId pattern returns immediately with a job ID and polls for results without blocking",
+      "url": "https://builder.aws.com/content/3DGb0OrvFf1S5HtnTJieHzSfhEN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGbh4jirYvEpEDGv7ezf0hdCj7/porta.webp",
+      "authorName": "Elizabeth Fuentes",
+      "authorAlias": "elizabethfuentes12",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "agentic-ai",
+        "mcp-integration",
+        "strands-agents"
+      ],
+      "publishedAt": "2026-05-04T16:20:44.320Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
+      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
+      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "soft-skills"
+      ],
+      "publishedAt": "2026-05-04T15:54:09.861Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGXYWlOpwc7UXhTGoxUioza08c",
+      "title": "A base que o mercado esqueceu",
+      "description": "Valorizamos o conhecimento, mas abandonamos quem o constrói. Sem docência e pesquisa, só resta superficialidade.",
+      "url": "https://builder.aws.com/content/3DGXYWlOpwc7UXhTGoxUioza08c",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGaogkoHKyho9bs0qQGWkbFBru/5361.webp",
+      "authorName": "Vitor Ochoa",
+      "authorAlias": "ochoavitu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8wsDBDLXPnRVSgmTl3qvp43c0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-04T15:53:37.256Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DGVoghgQVJkqvwll1eUHMEkrtz",
       "title": "How to figure out EC2 instance type names (it’s easier than you think)",
@@ -40,7 +97,7 @@
         "aws-cloud9"
       ],
       "publishedAt": "2026-05-04T15:11:49.996Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -208,8 +265,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "claude",
         "amazon-bedrock",
@@ -283,7 +340,7 @@
         "application-security"
       ],
       "publishedAt": "2026-05-04T05:57:12.841Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -368,70 +425,6 @@
       "publishedAt": "2026-05-04T02:36:01.211Z",
       "likesCount": 3,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3D3r7SSoA0Fv73cJZ4oym7QZPMV",
-      "title": "Scale-Driven Architecture: Lessons from a Hyperscale Multi-Tenant Agent Platform on EKS: Part 3 — Scaling and IAM",
-      "description": "Part 3 covers two problems at 100k+ tenants: control-plane scaling — why pod scheduling degrades non-linearly and etcd is a fixed ceiling no tier upgrade can raise — and IAM isolation, where only one of three common patterns survives the quota walls at this scale. Both share the same lesson: the binding constraint is rarely the one you expected.",
-      "url": "https://builder.aws.com/content/3D3r7SSoA0Fv73cJZ4oym7QZPMV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DEyhfds8IiPQabT4QBqj7YSTpb/new-.webp",
-      "authorName": "Shawn Zhang",
-      "authorAlias": "shawnzh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2qK6tUfRW3r2c97Z7X6tCSpr3AQ.webp",
-      "location": "Hong Kong Island, HK",
-      "lat": 22.2534635,
-      "lng": 114.190975,
-      "tags": [
-        "ai-engineering",
-        "agentic-ai",
-        "kubernetes",
-        "iam"
-      ],
-      "publishedAt": "2026-05-04T02:28:11.385Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DEjQo8AFmsfdYfqZJbgiwvVqcR",
-      "title": "Getting Back Into AWS With AWS Builder Center",
-      "description": "I used AWS at a summer camp last year, then did not touch it again until a class project this semester. Here is how AWS Builder Center helped me get back into it.",
-      "url": "https://builder.aws.com/content/3DEjQo8AFmsfdYfqZJbgiwvVqcR",
-      "imageUrl": "",
-      "authorName": "Kenny",
-      "authorAlias": "kennygarcia",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-ec2",
-        "amazon-sns"
-      ],
-      "publishedAt": "2026-05-04T01:24:00.859Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DES5ckfyLa76avOSeOxlCXuapf",
-      "title": "KiroHub: Generate a Kiro Skill in 60 Seconds Built With Bedrock Registry and AgentCore Harness",
-      "description": "I used two Amazon Bedrock AgentCore capabilities, Amazon Bedrock Registry for hybrid search over 10k+ Kiro resources, and AgentCore Harness for testing generated skills against a real agent, to build an AI-powered skill generator for Kiro Hub. Try it at [kirohub.dev/generate](https://kirohub.dev/generate).",
-      "url": "https://builder.aws.com/content/3DES5ckfyLa76avOSeOxlCXuapf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DESMqeqWCV3ZjtLWeEeScII6ex/Chat.webp",
-      "authorName": "Alvaro",
-      "authorAlias": "amllamojha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36lSWjJLRjPjMuaVZMdQtsWTe20.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "ai-engineering",
-        "kiro",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-03T22:07:33.074Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -541,6 +534,46 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3DGb0OrvFf1S5HtnTJieHzSfhEN",
+      "title": "Fix MCP Timeouts: Async HandleId Pattern",
+      "description": "MCP tools freeze AI agents when external APIs are slow, causing 424 errors. The async handleId pattern returns immediately with a job ID and polls for results without blocking",
+      "url": "https://builder.aws.com/content/3DGb0OrvFf1S5HtnTJieHzSfhEN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGbh4jirYvEpEDGv7ezf0hdCj7/porta.webp",
+      "authorName": "Elizabeth Fuentes",
+      "authorAlias": "elizabethfuentes12",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "agentic-ai",
+        "mcp-integration",
+        "strands-agents"
+      ],
+      "publishedAt": "2026-05-04T16:20:44.320Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
+      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
+      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "soft-skills"
+      ],
+      "publishedAt": "2026-05-04T15:54:09.861Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -603,49 +636,6 @@
       "publishedAt": "2026-05-04T02:36:01.211Z",
       "likesCount": 3,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 31,
-      "commentsCount": 7
     }
   ]
 }
