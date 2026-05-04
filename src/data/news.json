@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-04T08:50:28.169Z",
+  "updatedAt": "2026-05-04T09:45:50.838Z",
   "latest": [
     {
       "id": "/content/3DFgOxFdHYMvgkyEY4p73xunr6j",
@@ -471,26 +471,6 @@
       "commentsCount": 30
     },
     {
-      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "title": "O que acontece quando você para de aprender sozinho",
-      "description": "Desenvolvimento em comunidade",
-      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "imageUrl": "",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 2,
-      "commentsCount": 3
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -512,6 +492,26 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1932,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "title": "O que acontece quando você para de aprender sozinho",
+      "description": "Desenvolvimento em comunidade",
+      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "imageUrl": "",
+      "authorName": "Edna Cristina Durans Santos",
+      "authorAlias": "ednadurans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-04T02:36:01.211Z",
+      "likesCount": 2,
+      "commentsCount": 3
     },
     {
       "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
@@ -558,29 +558,6 @@
       "commentsCount": 328
     },
     {
-      "id": "/content/3DFOZvfmi3ZcEXF5UZhEuxVvlpU",
-      "title": "Running Claude Code and Claude Desktop on Amazon Bedrock",
-      "description": "This article walks through configuring both Claude Code (terminal CLI) and Claude Desktop (Cowork) to use Amazon Bedrock as the inference backend — no Anthropic API key or subscription required. Claude Code needs two environment variables in ~/.claude/settings.json. Claude Desktop needs a few fields in the built-in Setup UI. Both share the same AWS credentials and Bedrock model access. The entire setup, including troubleshooting, was done through AI-assisted development with Kiro.",
-      "url": "https://builder.aws.com/content/3DFOZvfmi3ZcEXF5UZhEuxVvlpU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DFSNny6oIw6P24p7e2YU8i2hG1/A-sle.webp",
-      "authorName": "Haowen Huang",
-      "authorAlias": "popkee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
-      "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
-      "tags": [
-        "claude",
-        "amazon-bedrock",
-        "agentic-ai",
-        "ai-ide",
-        "agentic-ide"
-      ],
-      "publishedAt": "2026-05-04T06:37:58.784Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
       "title": "🌩️ Getting Started with AWS Builder Center",
       "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
@@ -602,6 +579,27 @@
       "publishedAt": "2026-04-29T13:07:42.542Z",
       "likesCount": 31,
       "commentsCount": 7
+    },
+    {
+      "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
+      "title": "AIdeas Finalist: SenseSync - The Third Channel",
+      "description": "For 187 years, digital communication has wired up exactly two of the five human senses. SenseSync opens the third. A real-time haptic communication app built on AWS IoT Core, Lambda, Bedrock, and DynamoDB that lets people send rhythm and presence across any distance. Zero dollars a month. The haptic channel, finally online.",
+      "url": "https://builder.aws.com/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CERsXfzKfvEYgJx5QpeCJJ6TLn/Sens.webp",
+      "authorName": "Harish Muthyala",
+      "authorAlias": "harosh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39bTeHE7KJdS9mprR43EEygRIBp.webp",
+      "location": "TX, US",
+      "lat": 31.2638905,
+      "lng": -98.5456116,
+      "tags": [
+        "aideas-2025",
+        "NAMER",
+        "social-impact"
+      ],
+      "publishedAt": "2026-04-18T02:50:35.064Z",
+      "likesCount": 625,
+      "commentsCount": 111
     }
   ]
 }
