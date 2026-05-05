@@ -1,6 +1,82 @@
 {
-  "updatedAt": "2026-05-05T17:33:02.571Z",
+  "updatedAt": "2026-05-05T18:30:28.678Z",
   "latest": [
+    {
+      "id": "/content/3DIqvOJp4M5mjMKHtb7hPUCydyi",
+      "title": "Pare De Estudar E Coloque Em Prática",
+      "description": "Este artigo explora como o excesso de conteúdo pode acabar travando o aprendizado em tecnologia e por que a prática é o verdadeiro diferencial para evoluir na área. Ao longo do texto, é apresentada uma reflexão sobre a importância de sair da teoria, começar a construir projetos e buscar ambientes que incentivem o aprendizado prático, como o AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3DIqvOJp4M5mjMKHtb7hPUCydyi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJgotuhClOqo9vFPnPn8qBAhen/PARE.webp",
+      "authorName": "Emanuel Felipe",
+      "authorAlias": "omanuca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
+      "location": "RN, BR",
+      "lat": -5.6781175,
+      "lng": -36.4781776,
+      "tags": [],
+      "publishedAt": "2026-05-05T18:30:11.852Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/2vXfFTjCvy3w1obcCedWarzleul",
+      "title": "Amazon SES Unwrapped: Building Robust Email Systems",
+      "description": "Key Lessons & Testing Tips for Building Robust Email Systems using Amazon SES",
+      "url": "https://builder.aws.com/content/2vXfFTjCvy3w1obcCedWarzleul",
+      "imageUrl": "https://assets.community.aws/a/2vXgVx32Ty1BeGYJ6h6ILfPaVGq/Amaz.webp?imgSize=994x561",
+      "authorName": "Ayhan Setirekli",
+      "authorAlias": "ayhansetirekli",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uEQb8TLJ1acwdDIWqSpVWP2OGK.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-05T18:21:19.004Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJbvXToBzrGeyakcMDIzv4kLKz",
+      "title": "Modern Container Builds and WebSocket APIs Come to AWS SAM",
+      "description": "Learn how SAM CLI's new BuildKit support and WebSocket API resource type simplify container builds and real-time APIs with fewer lines of YAML.",
+      "url": "https://builder.aws.com/content/3DJbvXToBzrGeyakcMDIzv4kLKz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJdEvqOp1aKmj3oh2JPziEa9OE/cove.webp",
+      "authorName": "Eric Johnson",
+      "authorAlias": "edjgeek",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362KKSJeuBDKWgSiptk3oJKDBze.webp",
+      "location": "CO, US",
+      "lat": 38.7251776,
+      "lng": -105.607716,
+      "tags": [
+        "aws-sam",
+        "websockets",
+        "aws-lambda",
+        "amazon-api-gateway",
+        "docker"
+      ],
+      "publishedAt": "2026-05-05T18:03:26.104Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJZP6BEUgfdCB1AVj1QXM5Iyvl",
+      "title": "They Called It \"Too Good to Be True\" So I Built Mandya's First AWS Student Builder Group",
+      "description": "From JEE rejection to AWS national 3rd and leading Mandya's first AWS Student Builder Group. One engineer's proof: Effort crushes ceilings. #AWSBuilders #StudentSuccess",
+      "url": "https://builder.aws.com/content/3DJZP6BEUgfdCB1AVj1QXM5Iyvl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJZuyv92oQqph4fW1Dd6oUV4Nj/Arti.webp",
+      "authorName": "Zubeda Yasmeen",
+      "authorAlias": "zubaidayasmeen",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CezcuVa9c4YxNFCb0gtZbJJVXC.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-05T17:35:11.893Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DJSNGamSYWiVFJRHS4qJMHXFz4",
       "title": "I Built an AI Content Analyzer using Kiro",
@@ -21,7 +97,7 @@
         "saas"
       ],
       "publishedAt": "2026-05-05T17:28:59.906Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -118,84 +194,6 @@
       "publishedAt": "2026-05-05T16:35:04.303Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJRRyyA8ui8OWYptbZIqJntgxM",
-      "title": "The Next Frontier in IAM: Manufacturing Identity Context\nFrom \"Who Are You?\" to \"Where Are You Coming From?\" — Building Verifiable Network Perimeters with AWS VPC Endpoint Condition Keys",
-      "description": "IAM is shifting from who you are to where you're coming from. Since late 2025, AWS has released a set of powerful, and often misunderstood, IAM condition keys. deep on: aws:SourceVpc, aws:SourceVpcArn, aws:VpceAccount, aws:VpceOrgID, and aws:VpceOrgPaths.",
-      "url": "https://builder.aws.com/content/3DJRRyyA8ui8OWYptbZIqJntgxM",
-      "imageUrl": "",
-      "authorName": "Alam Ahmed",
-      "authorAlias": "techghost",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2v8LJaJkEFjOnlBYzUZWzKHE4BH.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-05-05T16:25:09.744Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJMjpSBn91yHTwvyr9hiqRgNxX",
-      "title": "How I Used Amazon Quick to Run a Full Security Audit on My SaaS — and Fixed 11 Vulnerabilities in One Session",
-      "description": "I've been building solo for a few months. 30+ serverless functions, 94 internal HTTP calls, and not a single deep security audit yet. I kept telling myself \"next sprint.\"\n\nLast week I finally did it, I used Amazon Quick Desktop to run a full audit. 15 minutes. 11 findings. 94 patches across 28 files in one session.",
-      "url": "https://builder.aws.com/content/3DJMjpSBn91yHTwvyr9hiqRgNxX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJMnNmC0Bm36y7WsIe18bEVQDR/imag.webp",
-      "authorName": "Asad marcus",
-      "authorAlias": "asadmohiuddin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxckYK8gptsmw60yD9Il6hVqKD.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "ai",
-        "amazon-quicksight",
-        "agentic-ai",
-        "ai-security",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-05-05T15:56:10.221Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJNUSQEZcIJTmN47EDbHYNa2iX",
-      "title": "How I Added AI to My Portfolio Using AWS as a CS Student",
-      "description": "I rebuilt my basic portfolio into a fully deployed cloud app using Amazon Web Services, adding S3 hosting, CloudFront, and a GitHub Actions pipeline to automate everything. I also integrated a serverless AI assistant powered by Amazon Bedrock, while putting guardrails in place for cost control, security, and easy rollback with feature flags.",
-      "url": "https://builder.aws.com/content/3DJNUSQEZcIJTmN47EDbHYNa2iX",
-      "imageUrl": "",
-      "authorName": "ade ade",
-      "authorAlias": "adedmla",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai"
-      ],
-      "publishedAt": "2026-05-05T15:54:59.080Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJNIPP3DmGwVvv4eTh78E4is49",
-      "title": "Beyond Certifications: The Real Path to AWS Mastery",
-      "description": "Leaning the cloud the right way",
-      "url": "https://builder.aws.com/content/3DJNIPP3DmGwVvv4eTh78E4is49",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJNoXdwuON3dPO73nBcgTckopH/debu.webp",
-      "authorName": "Esperance  Brooks",
-      "authorAlias": "hopeb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36wCswo1FeklYblmuaqiIlipvTq.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-05T15:54:04.895Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -218,29 +216,6 @@
       "publishedAt": "2026-05-05T10:45:07.589Z",
       "likesCount": 19,
       "commentsCount": 14
-    },
-    {
-      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
-      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
-      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
-      "authorName": "Ishaq Ishaq",
-      "authorAlias": "ishaqishaq",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-aurora",
-        "amazon-dynamodb",
-        "students",
-        "relational-database",
-        "non-relational-database"
-      ],
-      "publishedAt": "2026-05-05T16:52:57.854Z",
-      "likesCount": 1,
-      "commentsCount": 1
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -285,29 +260,6 @@
       "commentsCount": 1920
     },
     {
-      "id": "/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
-      "title": "🚀 From AWS Cloud Clubs to AWS Student Builder Groups: A New Era of Student Innovation",
-      "description": "AWS Cloud Clubs are evolving into AWS Student Builder Groups, empowering students to build real-world skills, lead communities, and innovate with cloud and AI technologies.",
-      "url": "https://builder.aws.com/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJ0fJxiRHtBfk0k8ihEPwMyqFi/Whats.webp",
-      "authorName": "Tanush Balachandra Naik",
-      "authorAlias": "tanush9",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39J5a8LOIXAWNTXklKpqazA5ZOB.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-cloud-clubs",
-        "students",
-        "aws-builders",
-        "aws-community",
-        "ai"
-      ],
-      "publishedAt": "2026-05-05T14:12:01.962Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
       "title": "How to Survive Your First 90 Days as a Developer",
       "description": "Landing your first role is only the beginning. The first 90 days as a developer are a different kind of challenge, one built on ambiguity, real systems and team dynamics that no bootcamp covers. This is your guide to navigating that transition with clarity and intention.",
@@ -324,7 +276,7 @@
         "career"
       ],
       "publishedAt": "2026-05-05T08:23:09.383Z",
-      "likesCount": 8,
+      "likesCount": 9,
       "commentsCount": 4
     },
     {
@@ -349,6 +301,94 @@
       "commentsCount": 319
     },
     {
+      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
+      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
+      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
+      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
+      "authorName": "Ishaq Ishaq",
+      "authorAlias": "ishaqishaq",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-aurora",
+        "amazon-dynamodb",
+        "students",
+        "relational-database",
+        "non-relational-database"
+      ],
+      "publishedAt": "2026-05-05T16:52:57.854Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
+      "title": "🚀 From AWS Cloud Clubs to AWS Student Builder Groups: A New Era of Student Innovation",
+      "description": "AWS Cloud Clubs are evolving into AWS Student Builder Groups, empowering students to build real-world skills, lead communities, and innovate with cloud and AI technologies.",
+      "url": "https://builder.aws.com/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJ0fJxiRHtBfk0k8ihEPwMyqFi/Whats.webp",
+      "authorName": "Tanush Balachandra Naik",
+      "authorAlias": "tanush9",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39J5a8LOIXAWNTXklKpqazA5ZOB.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aws-cloud-clubs",
+        "students",
+        "aws-builders",
+        "aws-community",
+        "ai"
+      ],
+      "publishedAt": "2026-05-05T14:12:01.962Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
+      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
+      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-30T20:13:50.660Z",
+      "likesCount": 64,
+      "commentsCount": 33
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1933,
+      "commentsCount": 269
+    },
+    {
       "id": "/content/3DJKZPOHEN4G3FZIxknA0PPQAsO",
       "title": "Getting Started with AWS as a Student: A Practical Beginner’s Guide",
       "description": "A simple, hands-on guide for students to start their AWS journey, build real projects, and develop industry-ready cloud skills.",
@@ -370,48 +410,6 @@
       "publishedAt": "2026-05-05T15:30:51.634Z",
       "likesCount": 1,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 63,
-      "commentsCount": 31
-    },
-    {
-      "id": "/content/3DJMjpSBn91yHTwvyr9hiqRgNxX",
-      "title": "How I Used Amazon Quick to Run a Full Security Audit on My SaaS — and Fixed 11 Vulnerabilities in One Session",
-      "description": "I've been building solo for a few months. 30+ serverless functions, 94 internal HTTP calls, and not a single deep security audit yet. I kept telling myself \"next sprint.\"\n\nLast week I finally did it, I used Amazon Quick Desktop to run a full audit. 15 minutes. 11 findings. 94 patches across 28 files in one session.",
-      "url": "https://builder.aws.com/content/3DJMjpSBn91yHTwvyr9hiqRgNxX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJMnNmC0Bm36y7WsIe18bEVQDR/imag.webp",
-      "authorName": "Asad marcus",
-      "authorAlias": "asadmohiuddin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxckYK8gptsmw60yD9Il6hVqKD.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "ai",
-        "amazon-quicksight",
-        "agentic-ai",
-        "ai-security",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-05-05T15:56:10.221Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ]
 }
