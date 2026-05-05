@@ -1,6 +1,210 @@
 {
-  "updatedAt": "2026-05-05T18:30:28.678Z",
+  "updatedAt": "2026-05-05T19:32:06.774Z",
   "latest": [
+    {
+      "id": "/content/3Aslly0I0cZtW9z1xHPefXP19zD",
+      "title": "Building Continuous Compliance on AWS: A Practical, System-Level Approach",
+      "description": "A practical, system-level approach to implementing continuous compliance on AWS using preventive guardrails, real-time detection, and automated remediation. This article breaks down how modern cloud teams can move from periodic audits to always-on compliance using native AWS services like AWS Organizations, Config, Security Hub, GuardDuty, EventBridge, and CloudTrail.",
+      "url": "https://builder.aws.com/content/3Aslly0I0cZtW9z1xHPefXP19zD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJo0Xv5uYAM3Ef73GsGuyBNBDw/Chat.webp",
+      "authorName": "Khansa Rahim",
+      "authorAlias": "khansa",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AslT4tl7TVkavGjBm4j8sUmoXl.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "security-and-compliance",
+        "security-best-practices",
+        "cybersecurity",
+        "security-hub",
+        "amazon-guardduty"
+      ],
+      "publishedAt": "2026-05-05T19:31:18.710Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJl6TJJNjYqwvi65zLVYM1lp9a",
+      "title": "Amazon EC2 I8ge instances are now generally available in additional AWS regions",
+      "description": "Amazon EC2 (Elastic Compute Cloud) is a core service from Amazon Web Services that lets you run virtual servers (called instances) in the cloud. Instead of buying physical hardware, you can launch, manage, and scale servers on demand.",
+      "url": "https://builder.aws.com/content/3DJl6TJJNjYqwvi65zLVYM1lp9a",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmeXs0NUbQUjtA6kDik0NmQJO/file.webp",
+      "authorName": "Chetna Sakarde",
+      "authorAlias": "chetnasakarde",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1I5q8T9IuLfmCO1maoMVJHuaQ.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-cdk",
+        "aws-builders",
+        "aws-cli",
+        "amazon-ec2",
+        "instances"
+      ],
+      "publishedAt": "2026-05-05T19:24:27.530Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
+      "title": "Aprender tecnologia construindo: Por que o primeiro projeto vale mais do que esperar estar pronto",
+      "description": "Este artigo mostra como o primeiro projeto pode ser o ponto de virada para quem está começando em tecnologia. A ideia central é que aprender construindo torna o estudo mais prático, dá direção ao aprendizado e ajuda estudantes a ganharem confiança para transformar teoria em experiência real.",
+      "url": "https://builder.aws.com/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJnd6zDyd6AuFzetngWtSWzphS/Chat.webp",
+      "authorName": "Kaua Almeida",
+      "authorAlias": "kauatech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVepJX70rpOFxJjw2T9EdpZ1F6.webp",
+      "location": "CE, BR",
+      "lat": -5.3264703,
+      "lng": -39.7156073,
+      "tags": [
+        "aws-builders",
+        "project",
+        "tech",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-05T19:21:39.496Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJjTKoH0j13GG2Ir32IBe5qxDb",
+      "title": "Responsible AI: Principles, Practices, and the Path Forward",
+      "description": "Let’s take a deep dive into what Responsible AI really means, why it matters, and how you can implement it using real-world examples.",
+      "url": "https://builder.aws.com/content/3DJjTKoH0j13GG2Ir32IBe5qxDb",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJlcmwbddczHYVdmfsAHa9cugF/imag.webp",
+      "authorName": "Kanta",
+      "authorAlias": "kantgarg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "generative-ai",
+        "machine-learning",
+        "large-language-model",
+        "responsible-ai",
+        "tech-ethics"
+      ],
+      "publishedAt": "2026-05-05T18:52:56.246Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJjGEpKVXUUnw0JVEJQpIOZtka",
+      "title": "Mastering Prompt Engineering for AI Language Models: Best Practices and Techniques",
+      "description": "Explore the power of prompt engineering in AI, learn strategies to enhance model performance and create smarter solutions.",
+      "url": "https://builder.aws.com/content/3DJjGEpKVXUUnw0JVEJQpIOZtka",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmC4D4MtTdToMQnBMVSshAyDb/imag.webp",
+      "authorName": "Kanta",
+      "authorAlias": "kantgarg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "generative-ai",
+        "machine-learning",
+        "vector-database",
+        "prompt-engineering",
+        "large-language-model"
+      ],
+      "publishedAt": "2026-05-05T18:50:56.718Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJirEG987jrESqcBSGdEXcxbjs",
+      "title": "Building Agentic AI Systems: A Practical Guide for Solutions Architects",
+      "description": "A practical guide for Solutions Architects on building AI systems that amplify human decision-making, not replace it.",
+      "url": "https://builder.aws.com/content/3DJirEG987jrESqcBSGdEXcxbjs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmSfIX8bQd3YL0rYEFo2yMQCW/imag.webp",
+      "authorName": "Kanta",
+      "authorAlias": "kantgarg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai-agents",
+        "generative-ai",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-05T18:47:32.140Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJicmXJhK0JyJjOuegbQWqERjm",
+      "title": "Prompt Engineering for RAG: Building Smarter Document-Aware Chatbots",
+      "description": "Unlocking the power of your organization’s documents with AI",
+      "url": "https://builder.aws.com/content/3DJicmXJhK0JyJjOuegbQWqERjm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmij3PepS5l9zysHiZofoqyDg/imag.webp",
+      "authorName": "Kanta",
+      "authorAlias": "kantgarg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "machine-learning",
+        "generative-ai",
+        "prompt-engineering",
+        "amazon-bedrock",
+        "retreival-augmented-generation"
+      ],
+      "publishedAt": "2026-05-05T18:45:47.442Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJfK8UxWyLN6Km9D8abKujAoJg",
+      "title": "Choosing the Right AWS Generative AI Service for Your Business",
+      "description": "Cut through the noise and find the best GenAI tool for your needs — whether you’re building apps, writing code, or scaling AI infrastructure.",
+      "url": "https://builder.aws.com/content/3DJfK8UxWyLN6Km9D8abKujAoJg",
+      "imageUrl": "",
+      "authorName": "Kanta",
+      "authorAlias": "kantgarg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "machine-learning",
+        "generative-ai",
+        "amazon-bedrock",
+        "amazon-sagemaker",
+        "amazon-q"
+      ],
+      "publishedAt": "2026-05-05T18:43:52.680Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CG9KJ40xVtMRnh88cywjTjr1z1",
+      "title": "Control Your Tesla from the Terminal with a Kiro CLI Skill",
+      "description": "🚗 Built a Kiro CLI skill that lets me control my Tesla from the terminal — because grabbing my phone and switching to the Tesla app during a CDK refactor felt like too much effort 😄",
+      "url": "https://builder.aws.com/content/3CG9KJ40xVtMRnh88cywjTjr1z1",
+      "imageUrl": "",
+      "authorName": "Jérôme GUYON",
+      "authorAlias": "jeromeguyon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/383rv69prRuFB7MPKUa4gnqROKU.webp",
+      "location": "FR",
+      "lat": 46.603354,
+      "lng": 1.8883335,
+      "tags": [
+        "kiro",
+        "vibe-coding",
+        "mcp"
+      ],
+      "publishedAt": "2026-05-05T18:40:39.353Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DIqvOJp4M5mjMKHtb7hPUCydyi",
       "title": "Pare De Estudar E Coloque Em Prática",
@@ -15,184 +219,7 @@
       "lng": -36.4781776,
       "tags": [],
       "publishedAt": "2026-05-05T18:30:11.852Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/2vXfFTjCvy3w1obcCedWarzleul",
-      "title": "Amazon SES Unwrapped: Building Robust Email Systems",
-      "description": "Key Lessons & Testing Tips for Building Robust Email Systems using Amazon SES",
-      "url": "https://builder.aws.com/content/2vXfFTjCvy3w1obcCedWarzleul",
-      "imageUrl": "https://assets.community.aws/a/2vXgVx32Ty1BeGYJ6h6ILfPaVGq/Amaz.webp?imgSize=994x561",
-      "authorName": "Ayhan Setirekli",
-      "authorAlias": "ayhansetirekli",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uEQb8TLJ1acwdDIWqSpVWP2OGK.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-05-05T18:21:19.004Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJbvXToBzrGeyakcMDIzv4kLKz",
-      "title": "Modern Container Builds and WebSocket APIs Come to AWS SAM",
-      "description": "Learn how SAM CLI's new BuildKit support and WebSocket API resource type simplify container builds and real-time APIs with fewer lines of YAML.",
-      "url": "https://builder.aws.com/content/3DJbvXToBzrGeyakcMDIzv4kLKz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJdEvqOp1aKmj3oh2JPziEa9OE/cove.webp",
-      "authorName": "Eric Johnson",
-      "authorAlias": "edjgeek",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362KKSJeuBDKWgSiptk3oJKDBze.webp",
-      "location": "CO, US",
-      "lat": 38.7251776,
-      "lng": -105.607716,
-      "tags": [
-        "aws-sam",
-        "websockets",
-        "aws-lambda",
-        "amazon-api-gateway",
-        "docker"
-      ],
-      "publishedAt": "2026-05-05T18:03:26.104Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJZP6BEUgfdCB1AVj1QXM5Iyvl",
-      "title": "They Called It \"Too Good to Be True\" So I Built Mandya's First AWS Student Builder Group",
-      "description": "From JEE rejection to AWS national 3rd and leading Mandya's first AWS Student Builder Group. One engineer's proof: Effort crushes ceilings. #AWSBuilders #StudentSuccess",
-      "url": "https://builder.aws.com/content/3DJZP6BEUgfdCB1AVj1QXM5Iyvl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJZuyv92oQqph4fW1Dd6oUV4Nj/Arti.webp",
-      "authorName": "Zubeda Yasmeen",
-      "authorAlias": "zubaidayasmeen",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CezcuVa9c4YxNFCb0gtZbJJVXC.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-05-05T17:35:11.893Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJSNGamSYWiVFJRHS4qJMHXFz4",
-      "title": "I Built an AI Content Analyzer using Kiro",
-      "description": "My experience building GoViral, an AI virality scorer for short form content, using Amazon's Kiro IDE on a free tier budget.",
-      "url": "https://builder.aws.com/content/3DJSNGamSYWiVFJRHS4qJMHXFz4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJYScpZooaHdoY74jlrymJ8WaR/Scre.webp",
-      "authorName": "SAKTHIVEL E",
-      "authorAlias": "sakthivel28",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai-dlc",
-        "website",
-        "web-development",
-        "kiro",
-        "saas"
-      ],
-      "publishedAt": "2026-05-05T17:28:59.906Z",
       "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJVryHQqpJhMV6e93KzOybMKd3",
-      "title": "Underrated AWS Services Every CS Student Should Know About",
-      "description": "I wrote this to highlight a few underrated AWS services that go beyond the usual S3 and EC2, the kind you are expected to already understand once you step into a real internship. These tools like Amplify, Rekognition, and Step Functions are not just nice to know, they are practical and production relevant shortcuts that can quietly set you apart early in your career.",
-      "url": "https://builder.aws.com/content/3DJVryHQqpJhMV6e93KzOybMKd3",
-      "imageUrl": "",
-      "authorName": "ade ade",
-      "authorAlias": "adedmla",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-05T17:03:06.441Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
-      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
-      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
-      "authorName": "Ishaq Ishaq",
-      "authorAlias": "ishaqishaq",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-aurora",
-        "amazon-dynamodb",
-        "students",
-        "relational-database",
-        "non-relational-database"
-      ],
-      "publishedAt": "2026-05-05T16:52:57.854Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DIqWZ9G6otT3zYt6cJUK4h6miq",
-      "title": "🚀 Complete Guide to AWS: Registration, $200 Free Credits & Real Project Ideas (Step-by-Step)",
-      "description": "Start your cloud journey with Amazon Web Services using this complete beginner-friendly guide. Learn how to create your AWS account, claim up to $200 in free credits, complete tasks to earn more credits, and build real-world projects like portfolio websites, APIs, and AI apps. Perfect for students, developers, and anyone looking to enter cloud computing with hands-on experience.",
-      "url": "https://builder.aws.com/content/3DIqWZ9G6otT3zYt6cJUK4h6miq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJUeZNWTRn2fnhC0QYaFfoqkBL/bran.webp",
-      "authorName": "Ritik Dhanotiya",
-      "authorAlias": "ritikdhanotiya07",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-05T16:49:47.673Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DH49VZUGFip0UGNSKNLCurKQ7h",
-      "title": "🚀 From Chaos to 360° Control: My Hybrid FinOps Strategy with AWS and Kiro Pro",
-      "description": "The Challenge: Beyond the \"Hidden Costs\" Frustration \n\nIn the cloud ecosystem, agility is a double-edged sword. Organizations often struggle with FinOps, sacrificing performance for savings or facing uncontrollable bills. In the trenches, I have learned that savings is an architectural habit, not a one-time event. It is about achieving operational symmetry between business requirements and cloud consumption, rather than simply turning resources off.",
-      "url": "https://builder.aws.com/content/3DH49VZUGFip0UGNSKNLCurKQ7h",
-      "imageUrl": "",
-      "authorName": "Exegol",
-      "authorAlias": "luiszuniga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro-agent",
-        "finops",
-        "finops-culture"
-      ],
-      "publishedAt": "2026-05-05T16:35:32.043Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C2M0jR5FRCopx3BUwTL1KM0VO2",
-      "title": "Integrating AWS MCP Servers with Quick - Data Processing Example",
-      "description": "This article provides a comprehensive guide for extending Amazon Quick capabilities by integrating custom action connectors using the Model Context Protocol (MCP) with Amazon Agent Core Runtime. It explains how to connect Quick to custom or third-party systems, using the AWS Data Processing MCP Server as a reference implementation. The solution enables natural language SQL queries over LakeHouse data and Glue Catalog awareness for autonomous schema introspection.",
-      "url": "https://builder.aws.com/content/3C2M0jR5FRCopx3BUwTL1KM0VO2",
-      "imageUrl": "",
-      "authorName": "Enrique_S",
-      "authorAlias": "enriquh",
-      "authorAvatarUrl": "",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [],
-      "publishedAt": "2026-05-05T16:35:04.303Z",
-      "likesCount": 0,
       "commentsCount": 0
     }
   ],
@@ -211,11 +238,36 @@
       "lng": 76.4164557,
       "tags": [
         "students",
-        "aws-builders"
+        "aws-builders",
+        "ai-for-developers",
+        "aws-user-groups",
+        "ai-assisted"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 19,
-      "commentsCount": 14
+      "likesCount": 21,
+      "commentsCount": 15
+    },
+    {
+      "id": "/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
+      "title": "Aprender tecnologia construindo: Por que o primeiro projeto vale mais do que esperar estar pronto",
+      "description": "Este artigo mostra como o primeiro projeto pode ser o ponto de virada para quem está começando em tecnologia. A ideia central é que aprender construindo torna o estudo mais prático, dá direção ao aprendizado e ajuda estudantes a ganharem confiança para transformar teoria em experiência real.",
+      "url": "https://builder.aws.com/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJnd6zDyd6AuFzetngWtSWzphS/Chat.webp",
+      "authorName": "Kaua Almeida",
+      "authorAlias": "kauatech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVepJX70rpOFxJjw2T9EdpZ1F6.webp",
+      "location": "CE, BR",
+      "lat": -5.3264703,
+      "lng": -39.7156073,
+      "tags": [
+        "aws-builders",
+        "project",
+        "tech",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-05T19:21:39.496Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -235,7 +287,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3550,
+      "likesCount": 3551,
       "commentsCount": 324
     },
     {
@@ -256,8 +308,29 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3448,
+      "likesCount": 3449,
       "commentsCount": 1920
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2860,
+      "commentsCount": 319
     },
     {
       "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
@@ -280,48 +353,23 @@
       "commentsCount": 4
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
+      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
+      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
+      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
+        "aideas-2025"
       ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2859,
-      "commentsCount": 319
-    },
-    {
-      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
-      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
-      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
-      "authorName": "Ishaq Ishaq",
-      "authorAlias": "ishaqishaq",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-aurora",
-        "amazon-dynamodb",
-        "students",
-        "relational-database",
-        "non-relational-database"
-      ],
-      "publishedAt": "2026-05-05T16:52:57.854Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "publishedAt": "2026-04-30T20:13:50.660Z",
+      "likesCount": 64,
+      "commentsCount": 33
     },
     {
       "id": "/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
@@ -347,25 +395,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 64,
-      "commentsCount": 33
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -389,25 +418,25 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DJKZPOHEN4G3FZIxknA0PPQAsO",
-      "title": "Getting Started with AWS as a Student: A Practical Beginner’s Guide",
-      "description": "A simple, hands-on guide for students to start their AWS journey, build real projects, and develop industry-ready cloud skills.",
-      "url": "https://builder.aws.com/content/3DJKZPOHEN4G3FZIxknA0PPQAsO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJL46qk2fjeWz3GXruQerEpf4c/Chat.webp",
-      "authorName": "Loganth",
-      "authorAlias": "loganthdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DJIVWWLRb6m4LMxXQPwh07fobR.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
+      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
+      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
+      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
+      "authorName": "Ishaq Ishaq",
+      "authorAlias": "ishaqishaq",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
       "tags": [
-        "aws-api",
-        "cloud-concepts",
-        "aws-cloud-clubs",
+        "amazon-aurora",
+        "amazon-dynamodb",
         "students",
-        "beginner-projects"
+        "relational-database",
+        "non-relational-database"
       ],
-      "publishedAt": "2026-05-05T15:30:51.634Z",
+      "publishedAt": "2026-05-05T16:52:57.854Z",
       "likesCount": 1,
       "commentsCount": 1
     }
