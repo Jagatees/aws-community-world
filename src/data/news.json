@@ -1,6 +1,105 @@
 {
-  "updatedAt": "2026-05-05T19:32:06.774Z",
+  "updatedAt": "2026-05-05T20:24:26.328Z",
   "latest": [
+    {
+      "id": "/content/3DJsLOkRtyQAi6bsgaauFUGB52A",
+      "title": "Not All Tokens Are Created Equal: A Progressive Observability Framework for Enterprise AI Coding Tools",
+      "description": "The fastest-growing software category no one is measuring.",
+      "url": "https://builder.aws.com/content/3DJsLOkRtyQAi6bsgaauFUGB52A",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJtCBLsNmlFiDCARt5Kfb82IPZ/data.webp",
+      "authorName": "Karthik",
+      "authorAlias": "kmokashi",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-05T20:16:42.879Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cm47SufWrIJdwFdkMp6mFVRcoI",
+      "title": "Como o Amazon Rekognition me mostrou que IA pode ser mais acessível para estudantes",
+      "description": "Neste artigo, compartilho como o Amazon Rekognition me mostrou que é possível começar a explorar inteligência artificial de forma mais acessível e prática. Mostro como esse serviço pode ajudar estudantes a experimentar visão computacional, entender integrações na AWS e ganhar confiança para criar projetos reais sem começar por uma complexidade excessiva.",
+      "url": "https://builder.aws.com/content/3Cm47SufWrIJdwFdkMp6mFVRcoI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJsckgwTMDfm8sQN5WzwK672AE/9051.webp",
+      "authorName": "ArthurBCG",
+      "authorAlias": "arthurbcg",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai",
+        "aws-builders",
+        "students",
+        "amazon-rekognition",
+        "ai-services"
+      ],
+      "publishedAt": "2026-05-05T20:06:51.795Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJn5MT7ON5OxlEaF2cVPYDDVtA",
+      "title": "Kubernetes at Scale with EKS Auto Mode: One Click to Production AI",
+      "description": "Amazon EKS Auto Mode lets you go from zero to a production-grade Kubernetes cluster with a single click. No infrastructure expertise required. In this post, we break down what Auto Mode actually does, how it handles AI workloads, and why it might mean you don't need a dedicated platform team.",
+      "url": "https://builder.aws.com/content/3DJn5MT7ON5OxlEaF2cVPYDDVtA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJokbHs8Kx7AB3pUgW3Gd25t8q/Nano.webp",
+      "authorName": "John",
+      "authorAlias": "jplynd",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "kubernetes",
+        "amazon-eks"
+      ],
+      "publishedAt": "2026-05-05T19:57:55.015Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJqvR48JRogM7b8td6MtiShRNp",
+      "title": "How to Connect Enterprise Systems to Amazon Quick Desktop with MCP",
+      "description": "This article walks you through connecting enterprise systems (like Salesforce, Jira, or internal databases) to Amazon Quick Desktop using MCP (Model Context Protocol), covering the full setup from adding a local or remote connection to querying data with natural language. It then shows how to go beyond simple lookups by building interactive dashboards from live MCP-sourced data and creating scheduled agents that automatically pull cross-system insights on a recurring basis.",
+      "url": "https://builder.aws.com/content/3DJqvR48JRogM7b8td6MtiShRNp",
+      "imageUrl": "",
+      "authorName": "Ismael Murillo",
+      "authorAlias": "murili",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-05T19:56:24.069Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJRHJEbg57Pu0M98BvPhUdf5gh",
+      "title": "From Prompt Engineering to Context Engineering: Building Agents That Actually Work at Scale",
+      "description": "Building an AI agent that demos well is easy. Keeping it reliable in production is not. When agents break at scale, the model is rarely the problem — what the model receives is. Part 1 of this series introduces context engineering: the discipline of managing what information reaches your agent, when, and in what form — and why it changes everything",
+      "url": "https://builder.aws.com/content/3DJRHJEbg57Pu0M98BvPhUdf5gh",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJoT0UmwS4Wgq4G3XCYbjivzUe/Gemi.webp",
+      "authorName": "Ayman ElSayed",
+      "authorAlias": "ayemam",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DJoifbEKvd3S6n1JpfubXHH21J.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "amazon-bedrock-agentcore"
+      ],
+      "publishedAt": "2026-05-05T19:33:23.568Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Aslly0I0cZtW9z1xHPefXP19zD",
       "title": "Building Continuous Compliance on AWS: A Practical, System-Level Approach",
@@ -21,7 +120,7 @@
         "amazon-guardduty"
       ],
       "publishedAt": "2026-05-05T19:31:18.710Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -66,7 +165,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-05T19:21:39.496Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 0
     },
     {
@@ -113,114 +212,7 @@
       ],
       "publishedAt": "2026-05-05T18:50:56.718Z",
       "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJirEG987jrESqcBSGdEXcxbjs",
-      "title": "Building Agentic AI Systems: A Practical Guide for Solutions Architects",
-      "description": "A practical guide for Solutions Architects on building AI systems that amplify human decision-making, not replace it.",
-      "url": "https://builder.aws.com/content/3DJirEG987jrESqcBSGdEXcxbjs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmSfIX8bQd3YL0rYEFo2yMQCW/imag.webp",
-      "authorName": "Kanta",
-      "authorAlias": "kantgarg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai-agents",
-        "generative-ai",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock-agents",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-05T18:47:32.140Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJicmXJhK0JyJjOuegbQWqERjm",
-      "title": "Prompt Engineering for RAG: Building Smarter Document-Aware Chatbots",
-      "description": "Unlocking the power of your organization’s documents with AI",
-      "url": "https://builder.aws.com/content/3DJicmXJhK0JyJjOuegbQWqERjm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmij3PepS5l9zysHiZofoqyDg/imag.webp",
-      "authorName": "Kanta",
-      "authorAlias": "kantgarg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "machine-learning",
-        "generative-ai",
-        "prompt-engineering",
-        "amazon-bedrock",
-        "retreival-augmented-generation"
-      ],
-      "publishedAt": "2026-05-05T18:45:47.442Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJfK8UxWyLN6Km9D8abKujAoJg",
-      "title": "Choosing the Right AWS Generative AI Service for Your Business",
-      "description": "Cut through the noise and find the best GenAI tool for your needs — whether you’re building apps, writing code, or scaling AI infrastructure.",
-      "url": "https://builder.aws.com/content/3DJfK8UxWyLN6Km9D8abKujAoJg",
-      "imageUrl": "",
-      "authorName": "Kanta",
-      "authorAlias": "kantgarg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "machine-learning",
-        "generative-ai",
-        "amazon-bedrock",
-        "amazon-sagemaker",
-        "amazon-q"
-      ],
-      "publishedAt": "2026-05-05T18:43:52.680Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CG9KJ40xVtMRnh88cywjTjr1z1",
-      "title": "Control Your Tesla from the Terminal with a Kiro CLI Skill",
-      "description": "🚗 Built a Kiro CLI skill that lets me control my Tesla from the terminal — because grabbing my phone and switching to the Tesla app during a CDK refactor felt like too much effort 😄",
-      "url": "https://builder.aws.com/content/3CG9KJ40xVtMRnh88cywjTjr1z1",
-      "imageUrl": "",
-      "authorName": "Jérôme GUYON",
-      "authorAlias": "jeromeguyon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/383rv69prRuFB7MPKUa4gnqROKU.webp",
-      "location": "FR",
-      "lat": 46.603354,
-      "lng": 1.8883335,
-      "tags": [
-        "kiro",
-        "vibe-coding",
-        "mcp"
-      ],
-      "publishedAt": "2026-05-05T18:40:39.353Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DIqvOJp4M5mjMKHtb7hPUCydyi",
-      "title": "Pare De Estudar E Coloque Em Prática",
-      "description": "Este artigo explora como o excesso de conteúdo pode acabar travando o aprendizado em tecnologia e por que a prática é o verdadeiro diferencial para evoluir na área. Ao longo do texto, é apresentada uma reflexão sobre a importância de sair da teoria, começar a construir projetos e buscar ambientes que incentivem o aprendizado prático, como o AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3DIqvOJp4M5mjMKHtb7hPUCydyi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJgotuhClOqo9vFPnPn8qBAhen/PARE.webp",
-      "authorName": "Emanuel Felipe",
-      "authorAlias": "omanuca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
-      "location": "RN, BR",
-      "lat": -5.6781175,
-      "lng": -36.4781776,
-      "tags": [],
-      "publishedAt": "2026-05-05T18:30:11.852Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "commentsCount": 1
     }
   ],
   "trending": [
@@ -266,7 +258,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-05T19:21:39.496Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 0
     },
     {
@@ -287,7 +279,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3551,
+      "likesCount": 3552,
       "commentsCount": 324
     },
     {
@@ -372,29 +364,6 @@
       "commentsCount": 33
     },
     {
-      "id": "/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
-      "title": "🚀 From AWS Cloud Clubs to AWS Student Builder Groups: A New Era of Student Innovation",
-      "description": "AWS Cloud Clubs are evolving into AWS Student Builder Groups, empowering students to build real-world skills, lead communities, and innovate with cloud and AI technologies.",
-      "url": "https://builder.aws.com/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJ0fJxiRHtBfk0k8ihEPwMyqFi/Whats.webp",
-      "authorName": "Tanush Balachandra Naik",
-      "authorAlias": "tanush9",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39J5a8LOIXAWNTXklKpqazA5ZOB.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-cloud-clubs",
-        "students",
-        "aws-builders",
-        "aws-community",
-        "ai"
-      ],
-      "publishedAt": "2026-05-05T14:12:01.962Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -418,26 +387,49 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
-      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
-      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
-      "authorName": "Ishaq Ishaq",
-      "authorAlias": "ishaqishaq",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
+      "id": "/content/3DJjGEpKVXUUnw0JVEJQpIOZtka",
+      "title": "Mastering Prompt Engineering for AI Language Models: Best Practices and Techniques",
+      "description": "Explore the power of prompt engineering in AI, learn strategies to enhance model performance and create smarter solutions.",
+      "url": "https://builder.aws.com/content/3DJjGEpKVXUUnw0JVEJQpIOZtka",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmC4D4MtTdToMQnBMVSshAyDb/imag.webp",
+      "authorName": "Kanta",
+      "authorAlias": "kantgarg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
-        "amazon-aurora",
-        "amazon-dynamodb",
-        "students",
-        "relational-database",
-        "non-relational-database"
+        "generative-ai",
+        "machine-learning",
+        "vector-database",
+        "prompt-engineering",
+        "large-language-model"
       ],
-      "publishedAt": "2026-05-05T16:52:57.854Z",
-      "likesCount": 1,
+      "publishedAt": "2026-05-05T18:50:56.718Z",
+      "likesCount": 0,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
+      "title": "🚀 From AWS Cloud Clubs to AWS Student Builder Groups: A New Era of Student Innovation",
+      "description": "AWS Cloud Clubs are evolving into AWS Student Builder Groups, empowering students to build real-world skills, lead communities, and innovate with cloud and AI technologies.",
+      "url": "https://builder.aws.com/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJ0fJxiRHtBfk0k8ihEPwMyqFi/Whats.webp",
+      "authorName": "Tanush Balachandra Naik",
+      "authorAlias": "tanush9",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39J5a8LOIXAWNTXklKpqazA5ZOB.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aws-cloud-clubs",
+        "students",
+        "aws-builders",
+        "aws-community",
+        "ai"
+      ],
+      "publishedAt": "2026-05-05T14:12:01.962Z",
+      "likesCount": 4,
       "commentsCount": 1
     }
   ]
