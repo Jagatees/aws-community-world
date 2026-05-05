@@ -1,6 +1,62 @@
 {
-  "updatedAt": "2026-05-05T01:34:59.641Z",
+  "updatedAt": "2026-05-05T03:05:02.578Z",
   "latest": [
+    {
+      "id": "/content/3DHoetuT91U5UeMJJwDD0XuKRbd",
+      "title": "Is the AWS Certified Cloud Practitioner (CLF-C02) Worth It? Real Value and Benefits",
+      "description": "An honest look at the real value of the AWS CLF-C02 certification, its career impact, and why it remains a strong starting point in cloud computing.",
+      "url": "https://builder.aws.com/content/3DHoetuT91U5UeMJJwDD0XuKRbd",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHpTRXcgEwzbPwLJsZyw88P6k7/Chat.webp",
+      "authorName": "Ricardo Vallejo Sánchez",
+      "authorAlias": "ricardovs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUbPfmeydVoF2HeYwOvdbVetn4.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "aws-certification",
+        "aws-cloudformation"
+      ],
+      "publishedAt": "2026-05-05T02:41:11.327Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DHm7NM9z4T9lku1GrU93xbopdp",
+      "title": "Ninguém precisa aprender sozinho",
+      "description": "Aprender sobre cloud sozinha pode ser frustrante quando o conhecimento está espalhado por todo lugar e foi exatamente isso que senti antes de descobrir o AWS Builder Center. Neste artigo, conto como um ambiente centralizado e focado mudou minha forma de aprender e por que comunidade é a chave para quem está começando no mundo tech.",
+      "url": "https://builder.aws.com/content/3DHm7NM9z4T9lku1GrU93xbopdp",
+      "imageUrl": "",
+      "authorName": "Bárbara Neri",
+      "authorAlias": "barbaraarneri",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cca7xllYku56Utef5YVHvRpOHw.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
+      "tags": [
+        "experience"
+      ],
+      "publishedAt": "2026-05-05T02:30:30.714Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DHaoi0jkRhA3rHwJ25bX03lpC4",
+      "title": "AWS Student Builder Groups: Onde a Fundação da Nuvem Encontra o Poder da Construção",
+      "description": "De Cloud Clubs para Student Builder Groups: entenda o que mudou, por que a base técnica continua sendo o coração do programa e como a evolução para um mindset de Builder está transformando estudantes em arquitetos de soluções reais em 63 países.",
+      "url": "https://builder.aws.com/content/3DHaoi0jkRhA3rHwJ25bX03lpC4",
+      "imageUrl": "",
+      "authorName": "Davi Cezar",
+      "authorAlias": "davicezar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COXUZ9DkMg6HnQkOBBk9E3HTsZ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-05T01:59:13.192Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DHfllJD6J5AjKawjBU44QsZb3r",
       "title": "Governing the Agent Control Plane on AWS: RAR, RSI, and DCS — The Three SLIs Amazon Bedrock Orchestration Needs",
@@ -150,68 +206,6 @@
       "publishedAt": "2026-05-04T19:53:53.990Z",
       "likesCount": 2,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3DGtqSaLANjcTxyEX9tyQWZ7AVk",
-      "title": "Ensinar para aprender: como um AWS Student Builder Group pode transformar um campus",
-      "description": "Como o ensino e a aws se unem.",
-      "url": "https://builder.aws.com/content/3DGtqSaLANjcTxyEX9tyQWZ7AVk",
-      "imageUrl": "",
-      "authorName": "Henry Medeiros da Silveira Monteiro",
-      "authorAlias": "henrymedeiros",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-04T18:48:01.339Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGqrMSRlS7leXjfoYUp9O80dDY",
-      "title": "\"Which Agent Is Costing Me the Most?\" — Per-Agent Cost Attribution for Amazon Bedrock AgentCore",
-      "description": "Calculate per-agent cost on Amazon Bedrock AgentCore by correlating each runtime's IAM role with Bedrock model invocation logs — no code changes or Application Inference Profiles needed. Walks through the three-step logic (list runtimes, query logs by role, pull CloudWatch metrics), the gotchas, and how to turn it into a live CloudWatch dashboard with hourly custom metrics, alarms, and anomaly detection.\n",
-      "url": "https://builder.aws.com/content/3DGqrMSRlS7leXjfoYUp9O80dDY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGv7RcOGhwjiIG6k78YyvNliWf/agen.webp",
-      "authorName": "Kirankumar Chandrashekar",
-      "authorAlias": "kirankumar",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "ai-agents",
-        "amazon-bedrock-agentcore",
-        "strands-agents"
-      ],
-      "publishedAt": "2026-05-04T18:41:59.937Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
-      "title": "Disambiguating Claude on AWS",
-      "description": "This article clarifies the different ways AWS supports each of Anthropic's Claude offerings (Claude Platform, Claude Code, and Claude Cowork) and when you should use each one.",
-      "url": "https://builder.aws.com/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
-      "imageUrl": "",
-      "authorName": "Dan",
-      "authorAlias": "doolaugh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CJOuWglfC5NVkYi7ElP0KKXAZT.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "anthropic",
-        "anthropic-claude",
-        "claude",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-04T17:39:14.217Z",
-      "likesCount": 9,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -279,6 +273,23 @@
       "commentsCount": 319
     },
     {
+      "id": "/content/3DHaoi0jkRhA3rHwJ25bX03lpC4",
+      "title": "AWS Student Builder Groups: Onde a Fundação da Nuvem Encontra o Poder da Construção",
+      "description": "De Cloud Clubs para Student Builder Groups: entenda o que mudou, por que a base técnica continua sendo o coração do programa e como a evolução para um mindset de Builder está transformando estudantes em arquitetos de soluções reais em 63 países.",
+      "url": "https://builder.aws.com/content/3DHaoi0jkRhA3rHwJ25bX03lpC4",
+      "imageUrl": "",
+      "authorName": "Davi Cezar",
+      "authorAlias": "davicezar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COXUZ9DkMg6HnQkOBBk9E3HTsZ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-05T01:59:13.192Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
       "title": "Disambiguating Claude on AWS",
       "description": "This article clarifies the different ways AWS supports each of Anthropic's Claude offerings (Claude Platform, Claude Code, and Claude Cowork) and when you should use each one.",
@@ -320,25 +331,6 @@
       "commentsCount": 31
     },
     {
-      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
-      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
-      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "soft-skills"
-      ],
-      "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -362,6 +354,44 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
+      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
+      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "soft-skills"
+      ],
+      "publishedAt": "2026-05-04T15:54:09.861Z",
+      "likesCount": 7,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3DHm7NM9z4T9lku1GrU93xbopdp",
+      "title": "Ninguém precisa aprender sozinho",
+      "description": "Aprender sobre cloud sozinha pode ser frustrante quando o conhecimento está espalhado por todo lugar e foi exatamente isso que senti antes de descobrir o AWS Builder Center. Neste artigo, conto como um ambiente centralizado e focado mudou minha forma de aprender e por que comunidade é a chave para quem está começando no mundo tech.",
+      "url": "https://builder.aws.com/content/3DHm7NM9z4T9lku1GrU93xbopdp",
+      "imageUrl": "",
+      "authorName": "Bárbara Neri",
+      "authorAlias": "barbaraarneri",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cca7xllYku56Utef5YVHvRpOHw.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
+      "tags": [
+        "experience"
+      ],
+      "publishedAt": "2026-05-05T02:30:30.714Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
       "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
       "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
@@ -380,51 +410,6 @@
       "publishedAt": "2026-05-04T13:27:41.540Z",
       "likesCount": 6,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1434,
-      "commentsCount": 328
-    },
-    {
-      "id": "/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
-      "title": "De professora de inglês à tecnologia: minha jornada até aqui",
-      "description": "Uma transição de carreira que não começou do zero, mas sim com tudo o que eu já sabia. \nDa sala de aula para a tecnologia, essa é uma história sobre aprendizado, adaptação e novos caminhos.",
-      "url": "https://builder.aws.com/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHLhNwg6j5Dv2k0fl9ETBstUVU/foto.webp",
-      "authorName": "Alice Barroso",
-      "authorAlias": "alicevbarroso",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "aws-ambassador",
-        "aws-builders",
-        "aws-community",
-        "aws-academy",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-05-04T22:38:31.757Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ]
 }
