@@ -1,6 +1,52 @@
 {
-  "updatedAt": "2026-05-05T05:03:40.384Z",
+  "updatedAt": "2026-05-05T06:46:18.996Z",
   "latest": [
+    {
+      "id": "/content/3D0qEVCskQsOaRgA8tSHFYkcwCo",
+      "title": "From prompt to production in minutes: Kiro and the Nx Plugin for AWS",
+      "description": "Pair the Nx Plugin for AWS with Kiro CLI to go from empty terminal to a running full-stack agentic app - all scaffolded by AI and runnable locally with a single command.",
+      "url": "https://builder.aws.com/content/3D0qEVCskQsOaRgA8tSHFYkcwCo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1Rz3yuxpUMncVEZMI02i6PL40/cove.webp",
+      "authorName": "Jack Stevenson",
+      "authorAlias": "jackstevenson",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D0pjVGGkvuwnnzNn8iRCAdhXfY.webp",
+      "location": "NSW, AU",
+      "lat": -31.8759835,
+      "lng": 147.2869493,
+      "tags": [
+        "agentic-ai",
+        "kiro",
+        "developer-tools",
+        "full-stack",
+        "infrastructure-as-code"
+      ],
+      "publishedAt": "2026-05-05T05:54:22.099Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGk9t9k9tXZp8CwDLkjvbBbeSC",
+      "title": "From Paper Pile to Patient Priority: Building a Clinical Document Triage Agent with Amazon Bedrock and Textract",
+      "description": "This article walks through how to build a Clinical Document Triage Agent using Amazon Textract and Amazon Comprehend Medical, orchestrated by an Amazon Bedrock Agent. The result: instead of reading forty documents, a nurse reviews a ranked worklist with plain-English rationale for each patient — generated automatically as documents arrive.",
+      "url": "https://builder.aws.com/content/3DGk9t9k9tXZp8CwDLkjvbBbeSC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGr3rRuUO7iwNLjTREPwfXMMjX/Scre.webp",
+      "authorName": "Abhishek V",
+      "authorAlias": "iabv",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "healthcare-life-sciences-industry",
+        "amazon-bedrock-agents",
+        "amazon-bedrock",
+        "amazon-comprehend-medical",
+        "amazon-textract"
+      ],
+      "publishedAt": "2026-05-05T05:15:19.289Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DHuKfNfvfFa1nNBHnCY6NsXCdY",
       "title": "Women in AI Hackathon at the AWS Builder Loft, San Francisco",
@@ -201,7 +247,153 @@
         "aws-environment"
       ],
       "publishedAt": "2026-05-04T21:01:38.460Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
+      "title": "Bootstrapping Strands Agents TypeScript Projects in Seconds",
+      "description": "Scaffold production-ready Strands Agents TypeScript projects with one command. Includes memory, guardrails, A2A protocol, and AgentCore deployment.",
+      "url": "https://builder.aws.com/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DH1oVVvT77gnmkmzKr1OEnL2ge/Gemi.webp",
+      "authorName": "Thiago",
+      "authorAlias": "verney",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
+      "location": "TX, US",
+      "lat": 31.2638905,
+      "lng": -98.5456116,
+      "tags": [
+        "strands-agents",
+        "typescript",
+        "cli",
+        "ai-agents",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-04T19:53:53.990Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DGtqSaLANjcTxyEX9tyQWZ7AVk",
+      "title": "Ensinar para aprender: como um AWS Student Builder Group pode transformar um campus",
+      "description": "Como o ensino e a aws se unem.",
+      "url": "https://builder.aws.com/content/3DGtqSaLANjcTxyEX9tyQWZ7AVk",
+      "imageUrl": "",
+      "authorName": "Henry Medeiros da Silveira Monteiro",
+      "authorAlias": "henrymedeiros",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-04T18:48:01.339Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGqrMSRlS7leXjfoYUp9O80dDY",
+      "title": "\"Which Agent Is Costing Me the Most?\" — Per-Agent Cost Attribution for Amazon Bedrock AgentCore",
+      "description": "Calculate per-agent cost on Amazon Bedrock AgentCore by correlating each runtime's IAM role with Bedrock model invocation logs — no code changes or Application Inference Profiles needed. Walks through the three-step logic (list runtimes, query logs by role, pull CloudWatch metrics), the gotchas, and how to turn it into a live CloudWatch dashboard with hourly custom metrics, alarms, and anomaly detection.\n",
+      "url": "https://builder.aws.com/content/3DGqrMSRlS7leXjfoYUp9O80dDY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGv7RcOGhwjiIG6k78YyvNliWf/agen.webp",
+      "authorName": "Kirankumar Chandrashekar",
+      "authorAlias": "kirankumar",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai-agents",
+        "amazon-bedrock-agentcore",
+        "strands-agents"
+      ],
+      "publishedAt": "2026-05-04T18:41:59.937Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
+      "title": "Disambiguating Claude on AWS",
+      "description": "This article clarifies the different ways AWS supports each of Anthropic's Claude offerings (Claude Platform, Claude Code, and Claude Cowork) and when you should use each one.",
+      "url": "https://builder.aws.com/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
+      "imageUrl": "",
+      "authorName": "Dan",
+      "authorAlias": "doolaugh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CJOuWglfC5NVkYi7ElP0KKXAZT.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "anthropic",
+        "anthropic-claude",
+        "claude",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-04T17:39:14.217Z",
+      "likesCount": 9,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DGl2tXd5fAp31E1rb3USxw1sj9",
+      "title": "I Built a Kanban to Learn Autonomous Development on AWS",
+      "description": "Built a kanban with AI agents on AWS to learn autonomous development. What broke, what worked, how I run it under $5/month.",
+      "url": "https://builder.aws.com/content/3DGl2tXd5fAp31E1rb3USxw1sj9",
+      "imageUrl": "",
+      "authorName": "Brett Gillett",
+      "authorAlias": "brettco098",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wMUUBTsyCmdzLMmHpvHmnmsJaE.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "serverless",
+        "autonomous-agents"
+      ],
+      "publishedAt": "2026-05-04T17:38:46.614Z",
       "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGbcEzWqGUFib7QM9TdYrjeEXM",
+      "title": "Driving Innovation with HPC: Our Commitment to the AWS Builder Community",
+      "description": "Through the IT4LIA AI Factory, our commitment to the AWS builder community centers on providing the \"heavy machinery\" and expert guidance needed to transform complex AI concepts into scalable, trustworthy enterprise solutions. By leveraging the Leonardo supercomputer - one of the world's most powerful pre-exascale systems - we empower developers to optimize advanced architectures like the Verbis Graph Engine.",
+      "url": "https://builder.aws.com/content/3DGbcEzWqGUFib7QM9TdYrjeEXM",
+      "imageUrl": "",
+      "authorName": "Alena",
+      "authorAlias": "prodigyaisolutions",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BqFqD1Z1c7hNsSJV26sSvVpya1.webp",
+      "location": "IT",
+      "lat": 42.6384261,
+      "lng": 12.674297,
+      "tags": [
+        "rag",
+        "compute",
+        "data-engineering",
+        "data-processing"
+      ],
+      "publishedAt": "2026-05-04T17:25:31.778Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGj510ke0KGhC49oFvdueZMmBL",
+      "title": "🚀 Bridge to the Cloud: A Tactical Guide to Hybrid Resilience with Nutanix NC2 on AWS",
+      "description": "The Challenge: Beyond the \"Lift and Shift\" Fatigue\nIn Latin America, organizations face a \"hybrid paradox\": craving AWS elasticity while tethered to on-premises legacy workloads on vCenter or Hyper-V. The true fear isn’t migration, but operational fragmentation—disparate tools and failure modes. Success requires moving beyond just migrating VMs toward achieving operational symmetry. This is where Nutanix NC2 on AWS becomes a game-changer.",
+      "url": "https://builder.aws.com/content/3DGj510ke0KGhC49oFvdueZMmBL",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-04T17:25:02.898Z",
+      "likesCount": 0,
       "commentsCount": 0
     }
   ],
@@ -224,7 +416,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3548,
+      "likesCount": 3549,
       "commentsCount": 324
     },
     {
@@ -289,6 +481,29 @@
       "commentsCount": 31
     },
     {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1933,
+      "commentsCount": 269
+    },
+    {
       "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
       "title": "Disambiguating Claude on AWS",
       "description": "This article clarifies the different ways AWS supports each of Anthropic's Claude offerings (Claude Platform, Claude Code, and Claude Cowork) and when you should use each one.",
@@ -311,29 +526,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1932,
-      "commentsCount": 269
-    },
-    {
       "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
       "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
       "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
@@ -351,46 +543,6 @@
       "publishedAt": "2026-05-04T15:54:09.861Z",
       "likesCount": 7,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3DHfllJD6J5AjKawjBU44QsZb3r",
-      "title": "Governing the Agent Control Plane on AWS: RAR, RSI, and DCS — The Three SLIs Amazon Bedrock Orchestration Needs",
-      "description": "Amazon Bedrock Agents now supports multi-agent collaboration, enabling orchestrator agents to decompose tasks and route subtasks across specialist agents. This architecture introduces a new reliability layer: the agent control plane the orchestration logic that manages task decomposition, agent routing, retry behavior, and priority queuing across your entire Bedrock agent fleet.",
-      "url": "https://builder.aws.com/content/3DHfllJD6J5AjKawjBU44QsZb3r",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHgB1CIbNAxr9K7Gad2cJhTIrF/Ibmaj.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "sre",
-        "devops-pro",
-        "ai-agents",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-05T01:27:05.213Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DHaoi0jkRhA3rHwJ25bX03lpC4",
-      "title": "AWS Student Builder Groups: Onde a Fundação da Nuvem Encontra o Poder da Construção",
-      "description": "De Cloud Clubs para Student Builder Groups: entenda o que mudou, por que a base técnica continua sendo o coração do programa e como a evolução para um mindset de Builder está transformando estudantes em arquitetos de soluções reais em 63 países.",
-      "url": "https://builder.aws.com/content/3DHaoi0jkRhA3rHwJ25bX03lpC4",
-      "imageUrl": "",
-      "authorName": "Davi Cezar",
-      "authorAlias": "davicezar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COXUZ9DkMg6HnQkOBBk9E3HTsZ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-05T01:59:13.192Z",
-      "likesCount": 2,
-      "commentsCount": 0
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -411,8 +563,54 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1436,
+      "likesCount": 1437,
       "commentsCount": 328
+    },
+    {
+      "id": "/content/3D0qEVCskQsOaRgA8tSHFYkcwCo",
+      "title": "From prompt to production in minutes: Kiro and the Nx Plugin for AWS",
+      "description": "Pair the Nx Plugin for AWS with Kiro CLI to go from empty terminal to a running full-stack agentic app - all scaffolded by AI and runnable locally with a single command.",
+      "url": "https://builder.aws.com/content/3D0qEVCskQsOaRgA8tSHFYkcwCo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1Rz3yuxpUMncVEZMI02i6PL40/cove.webp",
+      "authorName": "Jack Stevenson",
+      "authorAlias": "jackstevenson",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D0pjVGGkvuwnnzNn8iRCAdhXfY.webp",
+      "location": "NSW, AU",
+      "lat": -31.8759835,
+      "lng": 147.2869493,
+      "tags": [
+        "agentic-ai",
+        "kiro",
+        "developer-tools",
+        "full-stack",
+        "infrastructure-as-code"
+      ],
+      "publishedAt": "2026-05-05T05:54:22.099Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DGk9t9k9tXZp8CwDLkjvbBbeSC",
+      "title": "From Paper Pile to Patient Priority: Building a Clinical Document Triage Agent with Amazon Bedrock and Textract",
+      "description": "This article walks through how to build a Clinical Document Triage Agent using Amazon Textract and Amazon Comprehend Medical, orchestrated by an Amazon Bedrock Agent. The result: instead of reading forty documents, a nurse reviews a ranked worklist with plain-English rationale for each patient — generated automatically as documents arrive.",
+      "url": "https://builder.aws.com/content/3DGk9t9k9tXZp8CwDLkjvbBbeSC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGr3rRuUO7iwNLjTREPwfXMMjX/Scre.webp",
+      "authorName": "Abhishek V",
+      "authorAlias": "iabv",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "healthcare-life-sciences-industry",
+        "amazon-bedrock-agents",
+        "amazon-bedrock",
+        "amazon-comprehend-medical",
+        "amazon-textract"
+      ],
+      "publishedAt": "2026-05-05T05:15:19.289Z",
+      "likesCount": 1,
+      "commentsCount": 0
     }
   ]
 }
