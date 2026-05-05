@@ -1,6 +1,64 @@
 {
-  "updatedAt": "2026-05-05T10:33:58.076Z",
+  "updatedAt": "2026-05-05T11:28:35.247Z",
   "latest": [
+    {
+      "id": "/content/3DIi0dqA9gWI4g6LkKEdaIiDrHT",
+      "title": "AWS Summit Singapore Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in Singapore, drop by the Developer Community Zone in the Expo and join in on our Builder Question of the Day challenge!",
+      "url": "https://builder.aws.com/content/3DIi0dqA9gWI4g6LkKEdaIiDrHT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIos7ZS2bZ6nVBukwYPHgHJzxf/Sing.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-05-05T10:59:17.736Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
+      "title": "Why Your Campus Needs an AWS Student Builder Group (From a Student’s POV)",
+      "description": "Most campuses teach technology but very few help students build with it. Here’s why AWS Student Builder Groups can bridge that gap and transform how students learn, collaborate, and grow.",
+      "url": "https://builder.aws.com/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DImFgd4cODLX2cctanu9P2Vflj/bran.webp",
+      "authorName": "Aryan Vijaykar",
+      "authorAlias": "aryanvijaykar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2LkVcVAtIJ93HLtFBvLv9KL5R.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "students",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-05T10:45:07.589Z",
+      "likesCount": 7,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3DIYzXtsMwvVh1jsn1CSpa8k2rL",
+      "title": "Limiting Bedrock Usage and Controlling Costs",
+      "description": "This post compares three approaches to controlling Bedrock costs — critical for agentic development — including CloudWatch Alarms with Lambda for near-real-time IAM-based blocking, AWS Budgets with cost allocation tags for lightweight alerting and forecasting, and an app-layer gateway for synchronous per-user enforcement before a single token is consumed.",
+      "url": "https://builder.aws.com/content/3DIYzXtsMwvVh1jsn1CSpa8k2rL",
+      "imageUrl": "",
+      "authorName": "Yaakov",
+      "authorAlias": "yaakovtayeb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DIlrW5FlcmO4g2O2HTMSikiOo3.webp",
+      "location": "IL",
+      "lat": 30.8124247,
+      "lng": 34.8594762,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-bedrock-agentcore",
+        "cost-allocation"
+      ],
+      "publishedAt": "2026-05-05T10:38:32.841Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3CNuc41cYvQI9H7ePaMmNPiQQeJ",
       "title": "AWS Summit Warsaw Attendee Exclusive: Builder Question of the Day",
@@ -33,8 +91,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
+      "lat": 22.3492155,
+      "lng": 114.1857978,
       "tags": [
         "anthropic-claude",
         "amazon-bedrock",
@@ -308,72 +366,29 @@
       "publishedAt": "2026-05-04T21:51:59.970Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DH5eFZTKFbZ4q3hGUYh16JdVss",
-      "title": "What Students Need to Know About Building with AWS: How AWS Free Tier Helped Me Learn by Doing",
-      "description": "AWS Free Tier opened the door for me to learn cloud by doing—risk‑free, hands‑on, and without financial barriers. From hosting websites to experimenting with serverless functions, I built real projects that shaped my skills and portfolio. Combined with the AWS Builder Center community, Free Tier gave me confidence, global connections, and inspiration to grow as a student builder and lead my own AWS journey.",
-      "url": "https://builder.aws.com/content/3DH5eFZTKFbZ4q3hGUYh16JdVss",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHAAke3vZDg07nKRUitOlZKRP4/Free.webp",
-      "authorName": "Aniket Kumar",
-      "authorAlias": "ayk20aniket",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3A2P5z6GwdeAyZC8lNuc7qN191q.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-academy",
-        "aws-ambassador",
-        "aws-builders",
-        "aws-community",
-        "aws-environment"
-      ],
-      "publishedAt": "2026-05-04T21:01:38.460Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
-      "title": "Bootstrapping Strands Agents TypeScript Projects in Seconds",
-      "description": "Scaffold production-ready Strands Agents TypeScript projects with one command. Includes memory, guardrails, A2A protocol, and AgentCore deployment.",
-      "url": "https://builder.aws.com/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DH1oVVvT77gnmkmzKr1OEnL2ge/Gemi.webp",
-      "authorName": "Thiago",
-      "authorAlias": "verney",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "strands-agents",
-        "typescript",
-        "cli",
-        "ai-agents",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-04T19:53:53.990Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DGtqSaLANjcTxyEX9tyQWZ7AVk",
-      "title": "Ensinar para aprender: como um AWS Student Builder Group pode transformar um campus",
-      "description": "Como o ensino e a aws se unem.",
-      "url": "https://builder.aws.com/content/3DGtqSaLANjcTxyEX9tyQWZ7AVk",
-      "imageUrl": "",
-      "authorName": "Henry Medeiros da Silveira Monteiro",
-      "authorAlias": "henrymedeiros",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-04T18:48:01.339Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
+      "title": "Why Your Campus Needs an AWS Student Builder Group (From a Student’s POV)",
+      "description": "Most campuses teach technology but very few help students build with it. Here’s why AWS Student Builder Groups can bridge that gap and transform how students learn, collaborate, and grow.",
+      "url": "https://builder.aws.com/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DImFgd4cODLX2cctanu9P2Vflj/bran.webp",
+      "authorName": "Aryan Vijaykar",
+      "authorAlias": "aryanvijaykar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2LkVcVAtIJ93HLtFBvLv9KL5R.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "students",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-05T10:45:07.589Z",
+      "likesCount": 7,
+      "commentsCount": 3
+    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -434,7 +449,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2857,
+      "likesCount": 2858,
       "commentsCount": 319
     },
     {
@@ -455,49 +470,6 @@
       "publishedAt": "2026-04-30T20:13:50.660Z",
       "likesCount": 61,
       "commentsCount": 31
-    },
-    {
-      "id": "/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
-      "title": "Running OpenClaw and Hermes Agent on a Single Amazon EC2 - A Developer's Guide",
-      "description": "A step-by-step guide to running OpenClaw and Hermes Agent simultaneously on a single Amazon EC2 t4g.xlarge instance, each connected to a separate WeChat account and sharing the same Amazon Bedrock backend (Claude Opus 4.6). Covers instance upgrade, Hermes installation, WeChat configuration, and key gotchas — including user authorization and token limit fixes.",
-      "url": "https://builder.aws.com/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIhPMLth8CKtezzSbNRzjdEaWf/Cyber.webp",
-      "authorName": "Haowen Huang",
-      "authorAlias": "popkee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
-      "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
-      "tags": [
-        "anthropic-claude",
-        "amazon-bedrock",
-        "agentic-ai",
-        "claude",
-        "ai"
-      ],
-      "publishedAt": "2026-05-05T10:02:37.211Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
-      "title": "How to Survive Your First 90 Days as a Developer",
-      "description": "Landing your first role is only the beginning. The first 90 days as a developer are a different kind of challenge, one built on ambiguity, real systems and team dynamics that no bootcamp covers. This is your guide to navigating that transition with clarity and intention.",
-      "url": "https://builder.aws.com/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIUDVE0s4A5IggmYvGDhp9bTF7/IMG_.webp",
-      "authorName": "Ifeanyi O",
-      "authorAlias": "rexify",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qe0NOkG2CTZNcXKs61RHSa9O4.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "developer",
-        "career"
-      ],
-      "publishedAt": "2026-05-05T08:23:09.383Z",
-      "likesCount": 1,
-      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -523,6 +495,26 @@
       "commentsCount": 269
     },
     {
+      "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
+      "title": "How to Survive Your First 90 Days as a Developer",
+      "description": "Landing your first role is only the beginning. The first 90 days as a developer are a different kind of challenge, one built on ambiguity, real systems and team dynamics that no bootcamp covers. This is your guide to navigating that transition with clarity and intention.",
+      "url": "https://builder.aws.com/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIUDVE0s4A5IggmYvGDhp9bTF7/IMG_.webp",
+      "authorName": "Ifeanyi O",
+      "authorAlias": "rexify",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qe0NOkG2CTZNcXKs61RHSa9O4.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "developer",
+        "career"
+      ],
+      "publishedAt": "2026-05-05T08:23:09.383Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -541,8 +533,8 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1437,
-      "commentsCount": 328
+      "likesCount": 1438,
+      "commentsCount": 329
     },
     {
       "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
@@ -586,6 +578,29 @@
       "commentsCount": 2
     },
     {
+      "id": "/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
+      "title": "Running OpenClaw and Hermes Agent on a Single Amazon EC2 - A Developer's Guide",
+      "description": "A step-by-step guide to running OpenClaw and Hermes Agent simultaneously on a single Amazon EC2 t4g.xlarge instance, each connected to a separate WeChat account and sharing the same Amazon Bedrock backend (Claude Opus 4.6). Covers instance upgrade, Hermes installation, WeChat configuration, and key gotchas — including user authorization and token limit fixes.",
+      "url": "https://builder.aws.com/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIhPMLth8CKtezzSbNRzjdEaWf/Cyber.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
+      "tags": [
+        "anthropic-claude",
+        "amazon-bedrock",
+        "agentic-ai",
+        "claude",
+        "ai"
+      ],
+      "publishedAt": "2026-05-05T10:02:37.211Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
       "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
       "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
@@ -626,6 +641,26 @@
       "publishedAt": "2026-05-04T13:27:41.540Z",
       "likesCount": 6,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "title": "O que acontece quando você para de aprender sozinho",
+      "description": "Desenvolvimento em comunidade",
+      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
+      "imageUrl": "",
+      "authorName": "Edna Cristina Durans Santos",
+      "authorAlias": "ednadurans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "all-builders-welcome",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-04T02:36:01.211Z",
+      "likesCount": 6,
+      "commentsCount": 3
     },
     {
       "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
@@ -672,26 +707,6 @@
       "commentsCount": 7
     },
     {
-      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "title": "O que acontece quando você para de aprender sozinho",
-      "description": "Desenvolvimento em comunidade",
-      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "imageUrl": "",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 5,
-      "commentsCount": 3
-    },
-    {
       "id": "/content/3DHfllJD6J5AjKawjBU44QsZb3r",
       "title": "Governing the Agent Control Plane on AWS: RAR, RSI, and DCS — The Three SLIs Amazon Bedrock Orchestration Needs",
       "description": "Amazon Bedrock Agents now supports multi-agent collaboration, enabling orchestrator agents to decompose tasks and route subtasks across specialist agents. This architecture introduces a new reliability layer: the agent control plane the orchestration logic that manages task decomposition, agent routing, retry behavior, and priority queuing across your entire Bedrock agent fleet.",
@@ -712,29 +727,6 @@
       ],
       "publishedAt": "2026-05-05T01:27:05.213Z",
       "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
-      "title": "Bootstrapping Strands Agents TypeScript Projects in Seconds",
-      "description": "Scaffold production-ready Strands Agents TypeScript projects with one command. Includes memory, guardrails, A2A protocol, and AgentCore deployment.",
-      "url": "https://builder.aws.com/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DH1oVVvT77gnmkmzKr1OEnL2ge/Gemi.webp",
-      "authorName": "Thiago",
-      "authorAlias": "verney",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "strands-agents",
-        "typescript",
-        "cli",
-        "ai-agents",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-04T19:53:53.990Z",
-      "likesCount": 2,
       "commentsCount": 1
     },
     {
@@ -761,21 +753,27 @@
       "commentsCount": 8
     },
     {
-      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "title": "Por que e onde começar sua jornada em Cloud Computing",
-      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
-      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
-      "authorName": "Pedro Costard Oliveira",
-      "authorAlias": "costard",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-04T17:01:43.943Z",
-      "likesCount": 4,
-      "commentsCount": 0
+      "id": "/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
+      "title": "Bootstrapping Strands Agents TypeScript Projects in Seconds",
+      "description": "Scaffold production-ready Strands Agents TypeScript projects with one command. Includes memory, guardrails, A2A protocol, and AgentCore deployment.",
+      "url": "https://builder.aws.com/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DH1oVVvT77gnmkmzKr1OEnL2ge/Gemi.webp",
+      "authorName": "Thiago",
+      "authorAlias": "verney",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
+      "location": "TX, US",
+      "lat": 31.2638905,
+      "lng": -98.5456116,
+      "tags": [
+        "strands-agents",
+        "typescript",
+        "cli",
+        "ai-agents",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-04T19:53:53.990Z",
+      "likesCount": 2,
+      "commentsCount": 1
     }
   ]
 }
