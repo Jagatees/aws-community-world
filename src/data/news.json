@@ -1,6 +1,141 @@
 {
-  "updatedAt": "2026-05-05T12:25:49.684Z",
+  "updatedAt": "2026-05-05T13:36:10.680Z",
   "latest": [
+    {
+      "id": "/content/3DJ3yuR9IqGXCGXtkoaKCPFYgAN",
+      "title": "Strengthening Cloud Response Gamified Tabletop Exercises with Tabletop Trials",
+      "description": "This article explains how Tabletop Trials uses gamified tabletop exercises to help organizations improve their cloud resilience and security posture across multi-customer events. The article covers the program's design, its three core modules, how it complements existing AWS proactive engagements like SCRaM, and best practices you can apply today.",
+      "url": "https://builder.aws.com/content/3DJ3yuR9IqGXCGXtkoaKCPFYgAN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJ4l09tAZqjh2bCveHbTTSBpeN/PXL_.webp",
+      "authorName": "Tarrenl",
+      "authorAlias": "tarrenl",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qaZdI0wYzmqs4J9p91eXahd5p.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "security",
+        "resilience",
+        "shared-responsibility",
+        "incident-response"
+      ],
+      "publishedAt": "2026-05-05T13:18:59.729Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJ1PTHdTlouUzufSY2W9T7CoT8",
+      "title": "Guía de AWS VPC Endpoints: Seguridad y Eficiencia Cloud",
+      "description": "Aprende a configurar VPC Endpoints en AWS para proteger tus datos, optimizar costos de NAT Gateway y construir arquitecturas secure-by-design.",
+      "url": "https://builder.aws.com/content/3DJ1PTHdTlouUzufSY2W9T7CoT8",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJ2pEoBIJgoQsljMkrLkA5iB2C/vpce.webp",
+      "authorName": "Rocio Baigorria",
+      "authorAlias": "tuni56",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALq8aLtJOKkgJxQFPbrpOGR92B.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "vpc-endpoint",
+        "data-engineering",
+        "solutions-architect",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-05-05T13:04:02.461Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DIgpWuSWDzgN41XCUOqiVTdyEb",
+      "title": "Syncwork - A Collaborative Todo List to Manage Team Projects",
+      "description": "I built a Syncwork to solve the problem in a small team \"did you update that yet?\" while discuss about the project works.",
+      "url": "https://builder.aws.com/content/3DIgpWuSWDzgN41XCUOqiVTdyEb",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJ2Hxw1ViIGxGCAFDMmIYE7OJE/Scre.webp",
+      "authorName": "PAVITHRAN G",
+      "authorAlias": "pavithran007",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-dlc",
+        "web-development",
+        "aws-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-05T12:59:59.642Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DHccycyGk4ifoWHWINZD2lHAtH",
+      "title": "Kiro: a IDE da AWS com IA que vai mudar como você escreve código",
+      "description": "Conheça o Kiro, o ambiente de desenvolvimento com agente de IA integrado da, e entenda por que o Spec-Driven Development pode ser o maior salto de produtividade da sua carreira.",
+      "url": "https://builder.aws.com/content/3DHccycyGk4ifoWHWINZD2lHAtH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHgRCSfijfcMI17VmDtXjdrQnZ/1000.webp",
+      "authorName": "Thomas Henrique de Souza Santos",
+      "authorAlias": "othomhenrique",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CfkYLTwUbPWDv1YKsyjQXoDlXp.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "builder-center",
+        "aws-community-builders",
+        "kiro-agent",
+        "kiro"
+      ],
+      "publishedAt": "2026-05-05T12:43:48.272Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJ02IUgWfOqmnxnda3eY77Hw5Y",
+      "title": "Event-Driven Architecture: Building a Serverless AI Image Auditor on AWS 🔍",
+      "description": "Moving beyond basic CRUD apps! Here is a breakdown of how I built an automated, real-time AI Image Auditor using Amazon S3 Event Notifications, AWS Lambda, and DynamoDB.",
+      "url": "https://builder.aws.com/content/3DJ02IUgWfOqmnxnda3eY77Hw5Y",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJ0TI6S1LE21YEizLxDzwp2iGK/1-jp.webp",
+      "authorName": "Ridham pokiya",
+      "authorAlias": "ridhampokiya10",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "serverless",
+        "aws-academy",
+        "event-driven",
+        "amazon-s3",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-05-05T12:41:33.310Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DIxoOSFNpRg1hdLEbH8X9ncyug",
+      "title": "The AWS Agentic Stack Explained: Strands, AgentCore, MCP, and A2A.",
+      "description": "Differences between: Strands, Agentcore, MCP and A2A.",
+      "url": "https://builder.aws.com/content/3DIxoOSFNpRg1hdLEbH8X9ncyug",
+      "imageUrl": "",
+      "authorName": "Erick Mancz",
+      "authorAlias": "imancz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents",
+        "agentic-ai",
+        "amazon-bedrock",
+        "rag"
+      ],
+      "publishedAt": "2026-05-05T12:26:23.374Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DIy4SfnM1tyfjWKv5AfpwXjDxd",
       "title": "Por Onde Começar em Cloud? Um Guia Prático para Estudantes",
@@ -15,7 +150,7 @@
       "lng": -48.4333875,
       "tags": [],
       "publishedAt": "2026-05-05T12:25:33.465Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -96,7 +231,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 12,
+      "likesCount": 13,
       "commentsCount": 11
     },
     {
@@ -199,7 +334,7 @@
         "career"
       ],
       "publishedAt": "2026-05-05T08:23:09.383Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 2
     },
     {
@@ -287,129 +422,6 @@
       "publishedAt": "2026-05-05T02:41:11.327Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DHm7NM9z4T9lku1GrU93xbopdp",
-      "title": "Ninguém precisa aprender sozinho",
-      "description": "Aprender sobre cloud sozinha pode ser frustrante quando o conhecimento está espalhado por todo lugar e foi exatamente isso que senti antes de descobrir o AWS Builder Center. Neste artigo, conto como um ambiente centralizado e focado mudou minha forma de aprender e por que comunidade é a chave para quem está começando no mundo tech.",
-      "url": "https://builder.aws.com/content/3DHm7NM9z4T9lku1GrU93xbopdp",
-      "imageUrl": "",
-      "authorName": "Bárbara Neri",
-      "authorAlias": "barbaraarneri",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cca7xllYku56Utef5YVHvRpOHw.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "experience"
-      ],
-      "publishedAt": "2026-05-05T02:30:30.714Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DHaoi0jkRhA3rHwJ25bX03lpC4",
-      "title": "AWS Student Builder Groups: Onde a Fundação da Nuvem Encontra o Poder da Construção",
-      "description": "De Cloud Clubs para Student Builder Groups: entenda o que mudou, por que a base técnica continua sendo o coração do programa e como a evolução para um mindset de Builder está transformando estudantes em arquitetos de soluções reais em 63 países.",
-      "url": "https://builder.aws.com/content/3DHaoi0jkRhA3rHwJ25bX03lpC4",
-      "imageUrl": "",
-      "authorName": "Davi Cezar",
-      "authorAlias": "davicezar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COXUZ9DkMg6HnQkOBBk9E3HTsZ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-05T01:59:13.192Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DHfllJD6J5AjKawjBU44QsZb3r",
-      "title": "Governing the Agent Control Plane on AWS: RAR, RSI, and DCS — The Three SLIs Amazon Bedrock Orchestration Needs",
-      "description": "Amazon Bedrock Agents now supports multi-agent collaboration, enabling orchestrator agents to decompose tasks and route subtasks across specialist agents. This architecture introduces a new reliability layer: the agent control plane the orchestration logic that manages task decomposition, agent routing, retry behavior, and priority queuing across your entire Bedrock agent fleet.",
-      "url": "https://builder.aws.com/content/3DHfllJD6J5AjKawjBU44QsZb3r",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHgB1CIbNAxr9K7Gad2cJhTIrF/Ibmaj.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "sre",
-        "devops-pro",
-        "ai-agents",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-05T01:27:05.213Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DHcV9RbcIOwwf0q9sT2oQPHPRx",
-      "title": "Se a AWS Builder Center fosse uma biblioteca",
-      "description": "Aprenda a desmistificar a nuvem através de uma analogia com bibliotecas, onde você domina o armazenamento e o processamento de dados de forma simples. O AWS Builder Center oferece capacitação gratuita para estudantes que desejam ingressar no mercado de tecnologia agora mesmo.",
-      "url": "https://builder.aws.com/content/3DHcV9RbcIOwwf0q9sT2oQPHPRx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHdFzWK0fHr41irni7l8VwrpOm/aws-.webp",
-      "authorName": "Rayane",
-      "authorAlias": "rayanebonheur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRhk4m7gkGnQNATS6p6hmrS2QU.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "builder-center"
-      ],
-      "publishedAt": "2026-05-05T01:02:16.247Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DHaOAYpq7AimvJYZv8gxaFgKnr",
-      "title": "From QA to Cloud: Why I chose Serverless to improve my tests",
-      "description": "A QA engineer's perspective on why understanding cloud infrastructure makes you better at your job — and how a Serverless project on AWS became the starting point for that journey.",
-      "url": "https://builder.aws.com/content/3DHaOAYpq7AimvJYZv8gxaFgKnr",
-      "imageUrl": "",
-      "authorName": "Jose Masiero",
-      "authorAlias": "josemasiero",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DHaKv2KLDuPTjaAtUWcxiV4kDm.webp",
-      "location": "SC, BR",
-      "lat": -27.0628367,
-      "lng": -51.114965,
-      "tags": [
-        "serverless",
-        "quality-assurance",
-        "amazon-cloudwatch",
-        "aws-lambda"
-      ],
-      "publishedAt": "2026-05-05T00:47:54.218Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
-      "title": "De professora de inglês à tecnologia: minha jornada até aqui",
-      "description": "Uma transição de carreira que não começou do zero, mas sim com tudo o que eu já sabia. \nDa sala de aula para a tecnologia, essa é uma história sobre aprendizado, adaptação e novos caminhos.",
-      "url": "https://builder.aws.com/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHLhNwg6j5Dv2k0fl9ETBstUVU/foto.webp",
-      "authorName": "Alice Barroso",
-      "authorAlias": "alicevbarroso",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "aws-ambassador",
-        "aws-builders",
-        "aws-community",
-        "aws-academy",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-05-04T22:38:31.757Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -430,7 +442,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 12,
+      "likesCount": 13,
       "commentsCount": 11
     },
     {
@@ -451,7 +463,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3549,
+      "likesCount": 3550,
       "commentsCount": 324
     },
     {
@@ -495,6 +507,23 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2858,
       "commentsCount": 319
+    },
+    {
+      "id": "/content/3DIy4SfnM1tyfjWKv5AfpwXjDxd",
+      "title": "Por Onde Começar em Cloud? Um Guia Prático para Estudantes",
+      "description": "Um relato direto e motivador sobre como dar os primeiros passos em cloud computing com a AWS sem se perder no caminho. Como o AWS Builder Center ajuda estudantes a transformar teoria em projetos reais, desenvolver disciplina e ganhar experiência valorizada pelo mercado?",
+      "url": "https://builder.aws.com/content/3DIy4SfnM1tyfjWKv5AfpwXjDxd",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIyHz9f8uQ6hu7O6XNsdQg1kM0/imag.webp",
+      "authorName": "Lucas Ibanez",
+      "authorAlias": "lucasibanez",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8yykt1TcfO0IR3iSjNwl8gTI6.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [],
+      "publishedAt": "2026-05-05T12:25:33.465Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
@@ -555,7 +584,7 @@
         "career"
       ],
       "publishedAt": "2026-05-05T08:23:09.383Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 2
     },
     {
@@ -601,240 +630,6 @@
       "publishedAt": "2026-05-04T17:39:14.217Z",
       "likesCount": 10,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
-      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
-      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "soft-skills"
-      ],
-      "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
-      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
-      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
-      "imageUrl": "",
-      "authorName": "Leandro UTFPR",
-      "authorAlias": "leandronogarotto",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "students",
-        "cloud-practitioner",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-02T19:59:43.068Z",
-      "likesCount": 17,
-      "commentsCount": 8
-    },
-    {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
-      "title": "Running OpenClaw and Hermes Agent on a Single Amazon EC2 - A Developer's Guide",
-      "description": "A step-by-step guide to running OpenClaw and Hermes Agent simultaneously on a single Amazon EC2 t4g.xlarge instance, each connected to a separate WeChat account and sharing the same Amazon Bedrock backend (Claude Opus 4.6). Covers instance upgrade, Hermes installation, WeChat configuration, and key gotchas — including user authorization and token limit fixes.",
-      "url": "https://builder.aws.com/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIhPMLth8CKtezzSbNRzjdEaWf/Cyber.webp",
-      "authorName": "Haowen Huang",
-      "authorAlias": "popkee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
-      "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
-      "tags": [
-        "anthropic-claude",
-        "amazon-bedrock",
-        "agentic-ai",
-        "claude",
-        "ai"
-      ],
-      "publishedAt": "2026-05-05T10:02:37.211Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "title": "O que acontece quando você para de aprender sozinho",
-      "description": "Desenvolvimento em comunidade",
-      "url": "https://builder.aws.com/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
-      "imageUrl": "",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-04T02:36:01.211Z",
-      "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
-      "title": "AIdeas Finalist: SenseSync - The Third Channel",
-      "description": "For 187 years, digital communication has wired up exactly two of the five human senses. SenseSync opens the third. A real-time haptic communication app built on AWS IoT Core, Lambda, Bedrock, and DynamoDB that lets people send rhythm and presence across any distance. Zero dollars a month. The haptic channel, finally online.",
-      "url": "https://builder.aws.com/content/3AnyBb1qMjmiVK64sTCsYPG80f0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CERsXfzKfvEYgJx5QpeCJJ6TLn/Sens.webp",
-      "authorName": "Harish Muthyala",
-      "authorAlias": "harosh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39bTeHE7KJdS9mprR43EEygRIBp.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "aideas-2025",
-        "NAMER",
-        "social-impact"
-      ],
-      "publishedAt": "2026-04-18T02:50:35.064Z",
-      "likesCount": 627,
-      "commentsCount": 111
-    },
-    {
-      "id": "/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "title": "🌩️ Getting Started with AWS Builder Center",
-      "description": "Many Students/Builder Face Problem in Navigating through the Builder Center, So here is the perfect place to know all the capabilities of the AWS Builder Center",
-      "url": "https://builder.aws.com/content/3D25Bj8dZVmBAx8DJZuGixjoKMn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2UHlT6QhvASZgK082qAsZEx6G/Gemi.webp",
-      "authorName": "G Monish Reddy",
-      "authorAlias": "technicalmonish",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39wkLOYTOeNQmhx8XJtAV7HEn7w.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "getting-started",
-        "students",
-        "learn",
-        "builder-center",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-04-29T13:07:42.542Z",
-      "likesCount": 32,
-      "commentsCount": 7
-    },
-    {
-      "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
-      "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
-      "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
-      "url": "https://builder.aws.com/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D2V3IFCtABEY9xiC5MAs5k2D81/Capa.webp",
-      "authorName": "Igor Galindo",
-      "authorAlias": "igorgalind0",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador",
-        "aws-academy",
-        "aws-networking",
-        "aws-community"
-      ],
-      "publishedAt": "2026-04-29T16:36:55.845Z",
-      "likesCount": 19,
-      "commentsCount": 8
-    },
-    {
-      "id": "/content/3DHfllJD6J5AjKawjBU44QsZb3r",
-      "title": "Governing the Agent Control Plane on AWS: RAR, RSI, and DCS — The Three SLIs Amazon Bedrock Orchestration Needs",
-      "description": "Amazon Bedrock Agents now supports multi-agent collaboration, enabling orchestrator agents to decompose tasks and route subtasks across specialist agents. This architecture introduces a new reliability layer: the agent control plane the orchestration logic that manages task decomposition, agent routing, retry behavior, and priority queuing across your entire Bedrock agent fleet.",
-      "url": "https://builder.aws.com/content/3DHfllJD6J5AjKawjBU44QsZb3r",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHgB1CIbNAxr9K7Gad2cJhTIrF/Ibmaj.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "sre",
-        "devops-pro",
-        "ai-agents",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-05T01:27:05.213Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
-      "title": "Bootstrapping Strands Agents TypeScript Projects in Seconds",
-      "description": "Scaffold production-ready Strands Agents TypeScript projects with one command. Includes memory, guardrails, A2A protocol, and AgentCore deployment.",
-      "url": "https://builder.aws.com/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DH1oVVvT77gnmkmzKr1OEnL2ge/Gemi.webp",
-      "authorName": "Thiago",
-      "authorAlias": "verney",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "strands-agents",
-        "typescript",
-        "cli",
-        "ai-agents",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-04T19:53:53.990Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "title": "Por que e onde começar sua jornada em Cloud Computing",
-      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
-      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
-      "authorName": "Pedro Costard Oliveira",
-      "authorAlias": "costard",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-04T17:01:43.943Z",
-      "likesCount": 4,
-      "commentsCount": 0
     }
   ]
 }
