@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-04T23:18:54.036Z",
+  "updatedAt": "2026-05-05T00:32:13.334Z",
   "latest": [
     {
       "id": "/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
@@ -21,7 +21,7 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-05-04T22:38:31.757Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -202,9 +202,9 @@
       "authorName": "Exegol",
       "authorAlias": "luiszuniga",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
-      "location": "CR",
-      "lat": 10.2735633,
-      "lng": -84.0739102,
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [],
       "publishedAt": "2026-05-04T17:25:02.898Z",
       "likesCount": 0,
@@ -234,6 +234,27 @@
       "commentsCount": 324
     },
     {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DAMRFH0OdcmtsQD5RHMraMWGBU.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3447,
+      "commentsCount": 1920
+    },
+    {
       "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
       "title": "Disambiguating Claude on AWS",
       "description": "This article clarifies the different ways AWS supports each of Anthropic's Claude offerings (Claude Platform, Claude Code, and Claude Cowork) and when you should use each one.",
@@ -254,27 +275,6 @@
       "publishedAt": "2026-05-04T17:39:14.217Z",
       "likesCount": 9,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DAMRFH0OdcmtsQD5RHMraMWGBU.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3447,
-      "commentsCount": 1920
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -359,23 +359,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
-      "title": "Beyond the Dashboard: The Mental and Technical Grind of Mastering AWS Databases",
-      "description": "I almost didn't finish this project.\n\nNot because the tasks were too hard. Not because I didn't understand the concepts. But because at some point during the night, the light went out.\n\nNo power. Laptop battery draining. AWS CLI still open. Project half done.\n\nThat is the reality of building in Nigeria. You don't just fight the technology — you fight the environment around you too.\n\nBut I found somewhere to charge. Sat back down. Opened the terminal again. And kept going.",
-      "url": "https://builder.aws.com/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHGIqtnVUYa3UjVrN9RCGRajUv/Finn.webp",
-      "authorName": "Abiodun Olabisi",
-      "authorAlias": "abbeyboy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BXMBBcLM0G3BBhQyZiKWq1IA7G.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-05-04T21:51:59.970Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
       "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
       "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
@@ -417,6 +400,28 @@
       "publishedAt": "2026-05-04T19:53:53.990Z",
       "likesCount": 2,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1434,
+      "commentsCount": 328
     }
   ]
 }
