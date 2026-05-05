@@ -1,6 +1,94 @@
 {
-  "updatedAt": "2026-05-05T22:20:42.110Z",
+  "updatedAt": "2026-05-05T23:19:13.462Z",
   "latest": [
+    {
+      "id": "/content/3D8bt4OTkEv9188vn5nKtsdXJj7",
+      "title": "Como Sair do Zero com os Melhores Cursos Gratuitos AWS",
+      "description": "Como líder estudantil AWS, vejo muitos estudantes perdidos entre tantos cursos e serviços. Neste artigo, compartilho minha curadoria pessoal das melhores trilhas gratuitas dentro do AWS Skill Builder para você dominar a nuvem em 2026, com foco em prática, gamificação e certificações",
+      "url": "https://builder.aws.com/content/3D8bt4OTkEv9188vn5nKtsdXJj7",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKFQIVXcA4e1EhCJJ9Goc83IQG/unna.webp",
+      "authorName": "Gabriel Campos Seemann",
+      "authorAlias": "gseemann",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "aws-skill-builder"
+      ],
+      "publishedAt": "2026-05-05T23:14:10.614Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKC3mp7WOJ8vVcVV0N48VIMqEz",
+      "title": "Do Localhost à Escala Global: O Limite do \"Funciona na Minha Máquina\"",
+      "description": "Descubra como transformar o seu código local em soluções de alto impacto na nuvem. Entenda a importância de escalar as suas aplicações e saiba como a comunidade do AWS Builder Center pode acelerar a sua carreira como programador.",
+      "url": "https://builder.aws.com/content/3DKC3mp7WOJ8vVcVV0N48VIMqEz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKD0hVko4IxTHD9mSAlaNlPsSs/Scre.webp",
+      "authorName": "Matheus Dev",
+      "authorAlias": "omaatheus",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUQGDA3OIFXIYFTk7BaAz8AOuH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-ec2",
+        "amazon-s3",
+        "students",
+        "visual-studio"
+      ],
+      "publishedAt": "2026-05-05T22:56:18.496Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKAkkkcnuX2ztbmx793EWLLtqe",
+      "title": "Desvendando Conteiners: A Receita para Aplicativos Portáteis e Eficientes.",
+      "description": "De forma simples e didática, o conceito de contêineres na tecnologia, explicado como eles permitem empacotar aplicações com todas as suas dependências para garantir portabilidade, consistência e eficiência em qualquer ambiente.\n\nAlém disso, o texto explora as ferramentas fundamentais como Docker e Kubernetes, e  como elas simplificam a criação, execução e orquestração de aplicações em escala.",
+      "url": "https://builder.aws.com/content/3DKAkkkcnuX2ztbmx793EWLLtqe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKBFrsW5Zf61MR7cx4f6YyTglD/1_v3.webp",
+      "authorName": "Victor Romário Silva",
+      "authorAlias": "romario88",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36tu5yFPTit28D1zMgoYn4jqMVF.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "containers",
+        "amazon-ecs",
+        "amazon-eks",
+        "amazon-ecr",
+        "aws-fargate"
+      ],
+      "publishedAt": "2026-05-05T22:42:38.445Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKAKluL6L1hzXzcZYWThQLRtRM",
+      "title": "Building a Serverless DynamoDB MCP Server - Making Your AI Talk to Your Database",
+      "description": "Built a fully serverless MCP backend on AWS that lets AI assistants interact \nwith DynamoDB conversationally - using Lambda, API Gateway, IAM SigV4, and \nTerraform. Zero servers. Ten tools. One natural language prompt.",
+      "url": "https://builder.aws.com/content/3DKAKluL6L1hzXzcZYWThQLRtRM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKAyoGLeRJRHGc63Q016r25J2l/dfghj.webp",
+      "authorName": "Naveen G",
+      "authorAlias": "naveen15",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36t9Fs5MA6HnbMaOoRbR87lw00D.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "serverless",
+        "kiro",
+        "mcp",
+        "mcp-server",
+        "ai"
+      ],
+      "publishedAt": "2026-05-05T22:38:44.338Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DK5sFN16d1uES1EB9cxaZ3CvMM",
       "title": "Como fundei o 1º AWS Student Builder Group de Minas Gerais (e dicas para você fazer o mesmo)",
@@ -130,91 +218,6 @@
       "publishedAt": "2026-05-05T19:57:55.015Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJqvR48JRogM7b8td6MtiShRNp",
-      "title": "How to Connect Enterprise Systems to Amazon Quick Desktop with MCP",
-      "description": "This article walks you through connecting enterprise systems (like Salesforce, Jira, or internal databases) to Amazon Quick Desktop using MCP (Model Context Protocol), covering the full setup from adding a local or remote connection to querying data with natural language. It then shows how to go beyond simple lookups by building interactive dashboards from live MCP-sourced data and creating scheduled agents that automatically pull cross-system insights on a recurring basis.",
-      "url": "https://builder.aws.com/content/3DJqvR48JRogM7b8td6MtiShRNp",
-      "imageUrl": "",
-      "authorName": "Ismael Murillo",
-      "authorAlias": "murili",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-05T19:56:24.069Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJRHJEbg57Pu0M98BvPhUdf5gh",
-      "title": "From Prompt Engineering to Context Engineering: Building Agents That Actually Work at Scale",
-      "description": "Building an AI agent that demos well is easy. Keeping it reliable in production is not. When agents break at scale, the model is rarely the problem — what the model receives is. Part 1 of this series introduces context engineering: the discipline of managing what information reaches your agent, when, and in what form — and why it changes everything",
-      "url": "https://builder.aws.com/content/3DJRHJEbg57Pu0M98BvPhUdf5gh",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJoT0UmwS4Wgq4G3XCYbjivzUe/Gemi.webp",
-      "authorName": "Ayman ElSayed",
-      "authorAlias": "ayemam",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DJoifbEKvd3S6n1JpfubXHH21J.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "ai",
-        "amazon-bedrock-agentcore"
-      ],
-      "publishedAt": "2026-05-05T19:33:23.568Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Aslly0I0cZtW9z1xHPefXP19zD",
-      "title": "Building Continuous Compliance on AWS: A Practical, System-Level Approach",
-      "description": "A practical, system-level approach to implementing continuous compliance on AWS using preventive guardrails, real-time detection, and automated remediation. This article breaks down how modern cloud teams can move from periodic audits to always-on compliance using native AWS services like AWS Organizations, Config, Security Hub, GuardDuty, EventBridge, and CloudTrail.",
-      "url": "https://builder.aws.com/content/3Aslly0I0cZtW9z1xHPefXP19zD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJo0Xv5uYAM3Ef73GsGuyBNBDw/Chat.webp",
-      "authorName": "Khansa Rahim",
-      "authorAlias": "khansa",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AslT4tl7TVkavGjBm4j8sUmoXl.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "security-and-compliance",
-        "security-best-practices",
-        "cybersecurity",
-        "security-hub",
-        "amazon-guardduty"
-      ],
-      "publishedAt": "2026-05-05T19:31:18.710Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJl6TJJNjYqwvi65zLVYM1lp9a",
-      "title": "Amazon EC2 I8ge instances are now generally available in additional AWS regions",
-      "description": "Amazon EC2 (Elastic Compute Cloud) is a core service from Amazon Web Services that lets you run virtual servers (called instances) in the cloud. Instead of buying physical hardware, you can launch, manage, and scale servers on demand.",
-      "url": "https://builder.aws.com/content/3DJl6TJJNjYqwvi65zLVYM1lp9a",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmeXs0NUbQUjtA6kDik0NmQJO/file.webp",
-      "authorName": "Chetna Sakarde",
-      "authorAlias": "chetnasakarde",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1I5q8T9IuLfmCO1maoMVJHuaQ.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-cdk",
-        "aws-builders",
-        "aws-cli",
-        "amazon-ec2",
-        "instances"
-      ],
-      "publishedAt": "2026-05-05T19:24:27.530Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -306,6 +309,27 @@
       "commentsCount": 1920
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2860,
+      "commentsCount": 319
+    },
+    {
       "id": "/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
       "title": "Aprender tecnologia construindo: Por que o primeiro projeto vale mais do que esperar estar pronto",
       "description": "Este artigo mostra como o primeiro projeto pode ser o ponto de virada para quem está começando em tecnologia. A ideia central é que aprender construindo torna o estudo mais prático, dá direção ao aprendizado e ajuda estudantes a ganharem confiança para transformar teoria em experiência real.",
@@ -328,27 +352,6 @@
       "commentsCount": 0
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2860,
-      "commentsCount": 319
-    },
-    {
       "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
       "title": "How to Survive Your First 90 Days as a Developer",
       "description": "Landing your first role is only the beginning. The first 90 days as a developer are a different kind of challenge, one built on ambiguity, real systems and team dynamics that no bootcamp covers. This is your guide to navigating that transition with clarity and intention.",
@@ -367,28 +370,6 @@
       "publishedAt": "2026-05-05T08:23:09.383Z",
       "likesCount": 10,
       "commentsCount": 4
-    },
-    {
-      "id": "/content/3DK5sFN16d1uES1EB9cxaZ3CvMM",
-      "title": "Como fundei o 1º AWS Student Builder Group de Minas Gerais (e dicas para você fazer o mesmo)",
-      "description": "Confira o passo a passo para estruturar uma comunidade de tecnologia no campus e veja como o AWS Builder Center ajuda a conectar estudantes ao ecossistema global da AWS. Compartilho os aprendizados reais de fundar o primeiro AWS Student Builder Group de Minas Gerais para inspirar novos líderes estudantis.  ",
-      "url": "https://builder.aws.com/content/3DK5sFN16d1uES1EB9cxaZ3CvMM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DK7FBPOZiw59TYArAF0zTY0JdK/Cano.webp",
-      "authorName": "Derick Lucas Alves Rodrigues",
-      "authorAlias": "derickrodrigues",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BmI2Vex6SIkNApLP7x1BvO6wXN.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-community-builders",
-        "aws-cloud-clubs",
-        "students"
-      ],
-      "publishedAt": "2026-05-05T22:07:59.742Z",
-      "likesCount": 1,
-      "commentsCount": 0
     },
     {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
@@ -431,6 +412,28 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1933,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1438,
+      "commentsCount": 329
     }
   ]
 }
