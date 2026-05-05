@@ -1,19 +1,45 @@
 {
-  "updatedAt": "2026-05-05T20:24:26.328Z",
+  "updatedAt": "2026-05-05T21:22:44.394Z",
   "latest": [
+    {
+      "id": "/content/3DHUEfM5oAXCFwjnUvgRUIwiKLZ",
+      "title": "Export AWS Security Agent findings to CSV",
+      "description": "This tutorial shows you how to get penetration test findings from AWS Security Agent and export them to a CSV file. You use the AWS CLI to explore the data model, and then you run a Python script that automates the export.",
+      "url": "https://builder.aws.com/content/3DHUEfM5oAXCFwjnUvgRUIwiKLZ",
+      "imageUrl": "",
+      "authorName": "Jeremy Schiefer",
+      "authorAlias": "schiefj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DJwVj4tsU1V5JhCwUytWmw03wl.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "security",
+        "ai-security",
+        "application-security",
+        "cloud-security",
+        "security-and-compliance"
+      ],
+      "publishedAt": "2026-05-05T20:35:57.131Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DJsLOkRtyQAi6bsgaauFUGB52A",
       "title": "Not All Tokens Are Created Equal: A Progressive Observability Framework for Enterprise AI Coding Tools",
       "description": "The fastest-growing software category no one is measuring.",
       "url": "https://builder.aws.com/content/3DJsLOkRtyQAi6bsgaauFUGB52A",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJtCBLsNmlFiDCARt5Kfb82IPZ/data.webp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DK1iSCqNldp3qki0IqSBs10vRZ/Scre.webp",
       "authorName": "Karthik",
       "authorAlias": "kmokashi",
       "authorAvatarUrl": "",
       "location": "US",
       "lat": 39.7837304,
       "lng": -100.445882,
-      "tags": [],
+      "tags": [
+        "agents",
+        "claude"
+      ],
       "publishedAt": "2026-05-05T20:16:42.879Z",
       "likesCount": 0,
       "commentsCount": 0
@@ -190,29 +216,6 @@
       "publishedAt": "2026-05-05T18:52:56.246Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJjGEpKVXUUnw0JVEJQpIOZtka",
-      "title": "Mastering Prompt Engineering for AI Language Models: Best Practices and Techniques",
-      "description": "Explore the power of prompt engineering in AI, learn strategies to enhance model performance and create smarter solutions.",
-      "url": "https://builder.aws.com/content/3DJjGEpKVXUUnw0JVEJQpIOZtka",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmC4D4MtTdToMQnBMVSshAyDb/imag.webp",
-      "authorName": "Kanta",
-      "authorAlias": "kantgarg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "generative-ai",
-        "machine-learning",
-        "vector-database",
-        "prompt-engineering",
-        "large-language-model"
-      ],
-      "publishedAt": "2026-05-05T18:50:56.718Z",
-      "likesCount": 0,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -238,28 +241,6 @@
       "publishedAt": "2026-05-05T10:45:07.589Z",
       "likesCount": 21,
       "commentsCount": 15
-    },
-    {
-      "id": "/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
-      "title": "Aprender tecnologia construindo: Por que o primeiro projeto vale mais do que esperar estar pronto",
-      "description": "Este artigo mostra como o primeiro projeto pode ser o ponto de virada para quem está começando em tecnologia. A ideia central é que aprender construindo torna o estudo mais prático, dá direção ao aprendizado e ajuda estudantes a ganharem confiança para transformar teoria em experiência real.",
-      "url": "https://builder.aws.com/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJnd6zDyd6AuFzetngWtSWzphS/Chat.webp",
-      "authorName": "Kaua Almeida",
-      "authorAlias": "kauatech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVepJX70rpOFxJjw2T9EdpZ1F6.webp",
-      "location": "CE, BR",
-      "lat": -5.3264703,
-      "lng": -39.7156073,
-      "tags": [
-        "aws-builders",
-        "project",
-        "tech",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-05T19:21:39.496Z",
-      "likesCount": 4,
-      "commentsCount": 0
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -302,6 +283,28 @@
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3449,
       "commentsCount": 1920
+    },
+    {
+      "id": "/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
+      "title": "Aprender tecnologia construindo: Por que o primeiro projeto vale mais do que esperar estar pronto",
+      "description": "Este artigo mostra como o primeiro projeto pode ser o ponto de virada para quem está começando em tecnologia. A ideia central é que aprender construindo torna o estudo mais prático, dá direção ao aprendizado e ajuda estudantes a ganharem confiança para transformar teoria em experiência real.",
+      "url": "https://builder.aws.com/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJnd6zDyd6AuFzetngWtSWzphS/Chat.webp",
+      "authorName": "Kaua Almeida",
+      "authorAlias": "kauatech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVepJX70rpOFxJjw2T9EdpZ1F6.webp",
+      "location": "CE, BR",
+      "lat": -5.3264703,
+      "lng": -39.7156073,
+      "tags": [
+        "aws-builders",
+        "project",
+        "tech",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-05T19:21:39.496Z",
+      "likesCount": 4,
+      "commentsCount": 0
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -387,29 +390,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DJjGEpKVXUUnw0JVEJQpIOZtka",
-      "title": "Mastering Prompt Engineering for AI Language Models: Best Practices and Techniques",
-      "description": "Explore the power of prompt engineering in AI, learn strategies to enhance model performance and create smarter solutions.",
-      "url": "https://builder.aws.com/content/3DJjGEpKVXUUnw0JVEJQpIOZtka",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmC4D4MtTdToMQnBMVSshAyDb/imag.webp",
-      "authorName": "Kanta",
-      "authorAlias": "kantgarg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35wLz5fLeKSjHcQnb17X58SLX2M.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "generative-ai",
-        "machine-learning",
-        "vector-database",
-        "prompt-engineering",
-        "large-language-model"
-      ],
-      "publishedAt": "2026-05-05T18:50:56.718Z",
-      "likesCount": 0,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3DIyW38yxzo85kuJ6sPP0noxwuw",
       "title": "🚀 From AWS Cloud Clubs to AWS Student Builder Groups: A New Era of Student Innovation",
       "description": "AWS Cloud Clubs are evolving into AWS Student Builder Groups, empowering students to build real-world skills, lead communities, and innovate with cloud and AI technologies.",
@@ -431,6 +411,28 @@
       "publishedAt": "2026-05-05T14:12:01.962Z",
       "likesCount": 4,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1438,
+      "commentsCount": 329
     }
   ]
 }
