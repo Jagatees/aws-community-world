@@ -1,6 +1,67 @@
 {
-  "updatedAt": "2026-05-05T11:28:35.247Z",
+  "updatedAt": "2026-05-05T12:25:49.684Z",
   "latest": [
+    {
+      "id": "/content/3DIy4SfnM1tyfjWKv5AfpwXjDxd",
+      "title": "Por Onde Começar em Cloud? Um Guia Prático para Estudantes",
+      "description": "Um relato direto e motivador sobre como dar os primeiros passos em cloud computing com a AWS sem se perder no caminho. Como o AWS Builder Center ajuda estudantes a transformar teoria em projetos reais, desenvolver disciplina e ganhar experiência valorizada pelo mercado?",
+      "url": "https://builder.aws.com/content/3DIy4SfnM1tyfjWKv5AfpwXjDxd",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIyHz9f8uQ6hu7O6XNsdQg1kM0/imag.webp",
+      "authorName": "Lucas Ibanez",
+      "authorAlias": "lucasibanez",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8yykt1TcfO0IR3iSjNwl8gTI6.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [],
+      "publishedAt": "2026-05-05T12:25:33.465Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D7r1CfjRCPG0sMPezRhiYPHUIJ",
+      "title": "AWS Summit Stockholm Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in Stockholm, come say hi at the Developer Community Zone and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3D7r1CfjRCPG0sMPezRhiYPHUIJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D82wowulvSXcrsKkqO74W6dtAT/5-pn.webp",
+      "authorName": "Francesca",
+      "authorAlias": "sasfran",
+      "authorAvatarUrl": "",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "agentic-ai",
+        "aws-community-builders",
+        "builder-center",
+        "aws-skill-builder",
+        "databases"
+      ],
+      "publishedAt": "2026-05-05T12:00:57.216Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DIu7qJthFjQJ6xCGHkOFhUXO8I",
+      "title": "API Gateway のレスポンス構築を毎回手書きするのをやめる — aws-api-responsebuilder",
+      "description": "API Gatewayと接続しているLambdaで、レスポンスオブジェクトを気軽に作れるビルダーライブラリです。",
+      "url": "https://builder.aws.com/content/3DIu7qJthFjQJ6xCGHkOFhUXO8I",
+      "imageUrl": "",
+      "authorName": "Hidetaka Okamoto",
+      "authorAlias": "hidetaka",
+      "authorAvatarUrl": "",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "open-source",
+        "developer-tools",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-05-05T11:50:07.841Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DIi0dqA9gWI4g6LkKEdaIiDrHT",
       "title": "AWS Summit Singapore Attendee Exclusive: Builder Question of the Day",
@@ -35,8 +96,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 7,
-      "commentsCount": 3
+      "likesCount": 12,
+      "commentsCount": 11
     },
     {
       "id": "/content/3DIYzXtsMwvVh1jsn1CSpa8k2rL",
@@ -91,8 +152,8 @@
       "authorAlias": "popkee",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "anthropic-claude",
         "amazon-bedrock",
@@ -139,7 +200,7 @@
       ],
       "publishedAt": "2026-05-05T08:23:09.383Z",
       "likesCount": 1,
-      "commentsCount": 1
+      "commentsCount": 2
     },
     {
       "id": "/content/3D0qEVCskQsOaRgA8tSHFYkcwCo",
@@ -349,23 +410,6 @@
       "publishedAt": "2026-05-04T22:38:31.757Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
-      "title": "Beyond the Dashboard: The Mental and Technical Grind of Mastering AWS Databases",
-      "description": "I almost didn't finish this project.\n\nNot because the tasks were too hard. Not because I didn't understand the concepts. But because at some point during the night, the light went out.\n\nNo power. Laptop battery draining. AWS CLI still open. Project half done.\n\nThat is the reality of building in Nigeria. You don't just fight the technology — you fight the environment around you too.\n\nBut I found somewhere to charge. Sat back down. Opened the terminal again. And kept going.",
-      "url": "https://builder.aws.com/content/3DHEPhliMzFYyZTV0ILRA0x3Kvq",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHGIqtnVUYa3UjVrN9RCGRajUv/Finn.webp",
-      "authorName": "Abiodun Olabisi",
-      "authorAlias": "abbeyboy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BXMBBcLM0G3BBhQyZiKWq1IA7G.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-05-04T21:51:59.970Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -386,8 +430,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 7,
-      "commentsCount": 3
+      "likesCount": 12,
+      "commentsCount": 11
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -512,7 +556,7 @@
       ],
       "publishedAt": "2026-05-05T08:23:09.383Z",
       "likesCount": 1,
-      "commentsCount": 1
+      "commentsCount": 2
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -555,7 +599,7 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-05-04T17:39:14.217Z",
-      "likesCount": 9,
+      "likesCount": 10,
       "commentsCount": 1
     },
     {
@@ -576,29 +620,6 @@
       "publishedAt": "2026-05-04T15:54:09.861Z",
       "likesCount": 7,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
-      "title": "Running OpenClaw and Hermes Agent on a Single Amazon EC2 - A Developer's Guide",
-      "description": "A step-by-step guide to running OpenClaw and Hermes Agent simultaneously on a single Amazon EC2 t4g.xlarge instance, each connected to a separate WeChat account and sharing the same Amazon Bedrock backend (Claude Opus 4.6). Covers instance upgrade, Hermes installation, WeChat configuration, and key gotchas — including user authorization and token limit fixes.",
-      "url": "https://builder.aws.com/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIhPMLth8CKtezzSbNRzjdEaWf/Cyber.webp",
-      "authorName": "Haowen Huang",
-      "authorAlias": "popkee",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
-      "tags": [
-        "anthropic-claude",
-        "amazon-bedrock",
-        "agentic-ai",
-        "claude",
-        "ai"
-      ],
-      "publishedAt": "2026-05-05T10:02:37.211Z",
-      "likesCount": 1,
-      "commentsCount": 0
     },
     {
       "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
@@ -641,6 +662,29 @@
       "publishedAt": "2026-05-04T13:27:41.540Z",
       "likesCount": 6,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
+      "title": "Running OpenClaw and Hermes Agent on a Single Amazon EC2 - A Developer's Guide",
+      "description": "A step-by-step guide to running OpenClaw and Hermes Agent simultaneously on a single Amazon EC2 t4g.xlarge instance, each connected to a separate WeChat account and sharing the same Amazon Bedrock backend (Claude Opus 4.6). Covers instance upgrade, Hermes installation, WeChat configuration, and key gotchas — including user authorization and token limit fixes.",
+      "url": "https://builder.aws.com/content/3DIbUV5mwNgBWejPsUW3qw8hX8h",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIhPMLth8CKtezzSbNRzjdEaWf/Cyber.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.2792968,
+      "lng": 114.1628907,
+      "tags": [
+        "anthropic-claude",
+        "amazon-bedrock",
+        "agentic-ai",
+        "claude",
+        "ai"
+      ],
+      "publishedAt": "2026-05-05T10:02:37.211Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3DExv0cXfvRTQTbxlYJhRYIC8Ym",
@@ -707,29 +751,6 @@
       "commentsCount": 7
     },
     {
-      "id": "/content/3DHfllJD6J5AjKawjBU44QsZb3r",
-      "title": "Governing the Agent Control Plane on AWS: RAR, RSI, and DCS — The Three SLIs Amazon Bedrock Orchestration Needs",
-      "description": "Amazon Bedrock Agents now supports multi-agent collaboration, enabling orchestrator agents to decompose tasks and route subtasks across specialist agents. This architecture introduces a new reliability layer: the agent control plane the orchestration logic that manages task decomposition, agent routing, retry behavior, and priority queuing across your entire Bedrock agent fleet.",
-      "url": "https://builder.aws.com/content/3DHfllJD6J5AjKawjBU44QsZb3r",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHgB1CIbNAxr9K7Gad2cJhTIrF/Ibmaj.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "sre",
-        "devops-pro",
-        "ai-agents",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-05T01:27:05.213Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3D2TfAiSJvoHEgFx1Y2FCGzJMLc",
       "title": "Testei aprender Cloud por 7 dias seguidos: resultado honesto de um estudante",
       "description": "Relato honesto de um estudante que decidiu aprender Cloud por 7 dias seguidos para entender se realmente vale a pena entrar nessa área. Descubra os desafios iniciais, os principais aprendizados e como Cloud deixou de parecer algo distante para se tornar uma oportunidade real na tecnologia.",
@@ -753,6 +774,29 @@
       "commentsCount": 8
     },
     {
+      "id": "/content/3DHfllJD6J5AjKawjBU44QsZb3r",
+      "title": "Governing the Agent Control Plane on AWS: RAR, RSI, and DCS — The Three SLIs Amazon Bedrock Orchestration Needs",
+      "description": "Amazon Bedrock Agents now supports multi-agent collaboration, enabling orchestrator agents to decompose tasks and route subtasks across specialist agents. This architecture introduces a new reliability layer: the agent control plane the orchestration logic that manages task decomposition, agent routing, retry behavior, and priority queuing across your entire Bedrock agent fleet.",
+      "url": "https://builder.aws.com/content/3DHfllJD6J5AjKawjBU44QsZb3r",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHgB1CIbNAxr9K7Gad2cJhTIrF/Ibmaj.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "sre",
+        "devops-pro",
+        "ai-agents",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-05T01:27:05.213Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
       "title": "Bootstrapping Strands Agents TypeScript Projects in Seconds",
       "description": "Scaffold production-ready Strands Agents TypeScript projects with one command. Includes memory, guardrails, A2A protocol, and AgentCore deployment.",
@@ -774,6 +818,23 @@
       "publishedAt": "2026-05-04T19:53:53.990Z",
       "likesCount": 2,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "title": "Por que e onde começar sua jornada em Cloud Computing",
+      "description": "Este artigo explora por que a computação em nuvem se tornou uma das habilidades mais importantes do mercado atual e mostra onde estudantes podem começar sua jornada de forma estruturada e acessível.",
+      "url": "https://builder.aws.com/content/3DGgYAvto52gANkY3hBUcAmKdcY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGgqNuR68L7x7NaN8O56gisR9U/Scre.webp",
+      "authorName": "Pedro Costard Oliveira",
+      "authorAlias": "costard",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C65Bgq1giwuNGTtzgs6P1MyHwD.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-04T17:01:43.943Z",
+      "likesCount": 4,
+      "commentsCount": 0
     }
   ]
 }
