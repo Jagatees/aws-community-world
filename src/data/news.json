@@ -1,6 +1,84 @@
 {
-  "updatedAt": "2026-05-05T15:35:18.822Z",
+  "updatedAt": "2026-05-05T16:33:17.807Z",
   "latest": [
+    {
+      "id": "/content/3DJRRyyA8ui8OWYptbZIqJntgxM",
+      "title": "The Next Frontier in IAM: Manufacturing Identity Context\nFrom \"Who Are You?\" to \"Where Are You Coming From?\" — Building Verifiable Network Perimeters with AWS VPC Endpoint Condition Keys",
+      "description": "IAM is shifting from who you are to where you're coming from. Since late 2025, AWS has released a set of powerful, and often misunderstood, IAM condition keys. deep on: aws:SourceVpc, aws:SourceVpcArn, aws:VpceAccount, aws:VpceOrgID, and aws:VpceOrgPaths.",
+      "url": "https://builder.aws.com/content/3DJRRyyA8ui8OWYptbZIqJntgxM",
+      "imageUrl": "",
+      "authorName": "Alam Ahmed",
+      "authorAlias": "techghost",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2v8LJaJkEFjOnlBYzUZWzKHE4BH.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-05-05T16:25:09.744Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJMjpSBn91yHTwvyr9hiqRgNxX",
+      "title": "How I Used Amazon Quick to Run a Full Security Audit on My SaaS — and Fixed 11 Vulnerabilities in One Session",
+      "description": "I've been building solo for a few months. 30+ serverless functions, 94 internal HTTP calls, and not a single deep security audit yet. I kept telling myself \"next sprint.\"\n\nLast week I finally did it, I used Amazon Quick Desktop to run a full audit. 15 minutes. 11 findings. 94 patches across 28 files in one session.",
+      "url": "https://builder.aws.com/content/3DJMjpSBn91yHTwvyr9hiqRgNxX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJMnNmC0Bm36y7WsIe18bEVQDR/imag.webp",
+      "authorName": "Asad marcus",
+      "authorAlias": "asadmohiuddin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxckYK8gptsmw60yD9Il6hVqKD.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "ai",
+        "amazon-quicksight",
+        "agentic-ai",
+        "ai-security",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-05-05T15:56:10.221Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJNUSQEZcIJTmN47EDbHYNa2iX",
+      "title": "How I Added AI to My Portfolio Using AWS as a CS Student",
+      "description": "I rebuilt my basic portfolio into a fully deployed cloud app using Amazon Web Services, adding S3 hosting, CloudFront, and a GitHub Actions pipeline to automate everything. I also integrated a serverless AI assistant powered by Amazon Bedrock, while putting guardrails in place for cost control, security, and easy rollback with feature flags.",
+      "url": "https://builder.aws.com/content/3DJNUSQEZcIJTmN47EDbHYNa2iX",
+      "imageUrl": "",
+      "authorName": "ade ade",
+      "authorAlias": "adedmla",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai"
+      ],
+      "publishedAt": "2026-05-05T15:54:59.080Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJNIPP3DmGwVvv4eTh78E4is49",
+      "title": "Beyond Certifications: The Real Path to AWS Mastery",
+      "description": "Leaning the cloud the right way",
+      "url": "https://builder.aws.com/content/3DJNIPP3DmGwVvv4eTh78E4is49",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJNoXdwuON3dPO73nBcgTckopH/debu.webp",
+      "authorName": "Esperance  Brooks",
+      "authorAlias": "hopeb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36wCswo1FeklYblmuaqiIlipvTq.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "aws-certification"
+      ],
+      "publishedAt": "2026-05-05T15:54:04.895Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DJKZPOHEN4G3FZIxknA0PPQAsO",
       "title": "Getting Started with AWS as a Student: A Practical Beginner’s Guide",
@@ -67,7 +145,7 @@
         "knowledge-bases-for-bedrock"
       ],
       "publishedAt": "2026-05-05T14:23:45.098Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -352,86 +430,6 @@
       "publishedAt": "2026-05-05T11:50:07.841Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DIi0dqA9gWI4g6LkKEdaIiDrHT",
-      "title": "AWS Summit Singapore Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in Singapore, drop by the Developer Community Zone in the Expo and join in on our Builder Question of the Day challenge!",
-      "url": "https://builder.aws.com/content/3DIi0dqA9gWI4g6LkKEdaIiDrHT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIos7ZS2bZ6nVBukwYPHgHJzxf/Sing.webp",
-      "authorName": "Iliyana Ilieva-Gulamerian",
-      "authorAlias": "iliyanag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-05-05T10:59:17.736Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
-      "title": "Why Your Campus Needs an AWS Student Builder Group (From a Student’s POV)",
-      "description": "Most campuses teach technology but very few help students build with it. Here’s why AWS Student Builder Groups can bridge that gap and transform how students learn, collaborate, and grow.",
-      "url": "https://builder.aws.com/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DImFgd4cODLX2cctanu9P2Vflj/bran.webp",
-      "authorName": "Aryan Vijaykar",
-      "authorAlias": "aryanvijaykar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2LkVcVAtIJ93HLtFBvLv9KL5R.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "students",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 17,
-      "commentsCount": 12
-    },
-    {
-      "id": "/content/3DIYzXtsMwvVh1jsn1CSpa8k2rL",
-      "title": "Limiting Bedrock Usage and Controlling Costs",
-      "description": "This post compares three approaches to controlling Bedrock costs — critical for agentic development — including CloudWatch Alarms with Lambda for near-real-time IAM-based blocking, AWS Budgets with cost allocation tags for lightweight alerting and forecasting, and an app-layer gateway for synchronous per-user enforcement before a single token is consumed.",
-      "url": "https://builder.aws.com/content/3DIYzXtsMwvVh1jsn1CSpa8k2rL",
-      "imageUrl": "",
-      "authorName": "Yaakov",
-      "authorAlias": "yaakovtayeb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DIlrW5FlcmO4g2O2HTMSikiOo3.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-bedrock-agentcore",
-        "cost-allocation"
-      ],
-      "publishedAt": "2026-05-05T10:38:32.841Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CNuc41cYvQI9H7ePaMmNPiQQeJ",
-      "title": "AWS Summit Warsaw Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in Warsaw, come say hi at the Developer Community Zone and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3CNuc41cYvQI9H7ePaMmNPiQQeJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8159TFC9kcKg6JlvGBadXcUDh/4-pn.webp",
-      "authorName": "Francesca",
-      "authorAlias": "sasfran",
-      "authorAvatarUrl": "",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "aws-skill-builder",
-        "agentic-ai",
-        "aws-community-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-05-05T10:20:40.806Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -452,8 +450,29 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 17,
-      "commentsCount": 12
+      "likesCount": 18,
+      "commentsCount": 14
+    },
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3550,
+      "commentsCount": 324
     },
     {
       "id": "/content/3DJKZPOHEN4G3FZIxknA0PPQAsO",
@@ -500,27 +519,6 @@
       "publishedAt": "2026-05-05T14:12:01.962Z",
       "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3550,
-      "commentsCount": 324
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -585,6 +583,29 @@
       "commentsCount": 319
     },
     {
+      "id": "/content/3DJMjpSBn91yHTwvyr9hiqRgNxX",
+      "title": "How I Used Amazon Quick to Run a Full Security Audit on My SaaS — and Fixed 11 Vulnerabilities in One Session",
+      "description": "I've been building solo for a few months. 30+ serverless functions, 94 internal HTTP calls, and not a single deep security audit yet. I kept telling myself \"next sprint.\"\n\nLast week I finally did it, I used Amazon Quick Desktop to run a full audit. 15 minutes. 11 findings. 94 patches across 28 files in one session.",
+      "url": "https://builder.aws.com/content/3DJMjpSBn91yHTwvyr9hiqRgNxX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJMnNmC0Bm36y7WsIe18bEVQDR/imag.webp",
+      "authorName": "Asad marcus",
+      "authorAlias": "asadmohiuddin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxckYK8gptsmw60yD9Il6hVqKD.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "ai",
+        "amazon-quicksight",
+        "agentic-ai",
+        "ai-security",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-05-05T15:56:10.221Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
       "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
       "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
@@ -625,23 +646,6 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1933,
       "commentsCount": 269
-    },
-    {
-      "id": "/content/3DIy4SfnM1tyfjWKv5AfpwXjDxd",
-      "title": "Por Onde Começar em Cloud? Um Guia Prático para Estudantes",
-      "description": "Um relato direto e motivador sobre como dar os primeiros passos em cloud computing com a AWS sem se perder no caminho. Como o AWS Builder Center ajuda estudantes a transformar teoria em projetos reais, desenvolver disciplina e ganhar experiência valorizada pelo mercado?",
-      "url": "https://builder.aws.com/content/3DIy4SfnM1tyfjWKv5AfpwXjDxd",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIyHz9f8uQ6hu7O6XNsdQg1kM0/imag.webp",
-      "authorName": "Lucas Ibanez",
-      "authorAlias": "lucasibanez",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8yykt1TcfO0IR3iSjNwl8gTI6.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [],
-      "publishedAt": "2026-05-05T12:25:33.465Z",
-      "likesCount": 3,
-      "commentsCount": 0
     }
   ]
 }
