@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-05T06:46:18.996Z",
+  "updatedAt": "2026-05-05T07:39:02.491Z",
   "latest": [
     {
       "id": "/content/3D0qEVCskQsOaRgA8tSHFYkcwCo",
@@ -477,7 +477,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 60,
+      "likesCount": 61,
       "commentsCount": 31
     },
     {
@@ -526,25 +526,6 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
-      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
-      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "soft-skills"
-      ],
-      "publishedAt": "2026-05-04T15:54:09.861Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -567,50 +548,65 @@
       "commentsCount": 328
     },
     {
-      "id": "/content/3D0qEVCskQsOaRgA8tSHFYkcwCo",
-      "title": "From prompt to production in minutes: Kiro and the Nx Plugin for AWS",
-      "description": "Pair the Nx Plugin for AWS with Kiro CLI to go from empty terminal to a running full-stack agentic app - all scaffolded by AI and runnable locally with a single command.",
-      "url": "https://builder.aws.com/content/3D0qEVCskQsOaRgA8tSHFYkcwCo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D1Rz3yuxpUMncVEZMI02i6PL40/cove.webp",
-      "authorName": "Jack Stevenson",
-      "authorAlias": "jackstevenson",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D0pjVGGkvuwnnzNn8iRCAdhXfY.webp",
-      "location": "NSW, AU",
-      "lat": -31.8759835,
-      "lng": 147.2869493,
+      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
+      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
+      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
       "tags": [
-        "agentic-ai",
-        "kiro",
-        "developer-tools",
-        "full-stack",
-        "infrastructure-as-code"
+        "soft-skills"
       ],
-      "publishedAt": "2026-05-05T05:54:22.099Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-05-04T15:54:09.861Z",
+      "likesCount": 7,
+      "commentsCount": 2
     },
     {
-      "id": "/content/3DGk9t9k9tXZp8CwDLkjvbBbeSC",
-      "title": "From Paper Pile to Patient Priority: Building a Clinical Document Triage Agent with Amazon Bedrock and Textract",
-      "description": "This article walks through how to build a Clinical Document Triage Agent using Amazon Textract and Amazon Comprehend Medical, orchestrated by an Amazon Bedrock Agent. The result: instead of reading forty documents, a nurse reviews a ranked worklist with plain-English rationale for each patient — generated automatically as documents arrive.",
-      "url": "https://builder.aws.com/content/3DGk9t9k9tXZp8CwDLkjvbBbeSC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGr3rRuUO7iwNLjTREPwfXMMjX/Scre.webp",
-      "authorName": "Abhishek V",
-      "authorAlias": "iabv",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
+      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
+      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "imageUrl": "",
+      "authorName": "Leandro UTFPR",
+      "authorAlias": "leandronogarotto",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "healthcare-life-sciences-industry",
-        "amazon-bedrock-agents",
-        "amazon-bedrock",
-        "amazon-comprehend-medical",
-        "amazon-textract"
+        "aws-builders",
+        "students",
+        "cloud-practitioner",
+        "aws-community"
       ],
-      "publishedAt": "2026-05-05T05:15:19.289Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-05-02T19:59:43.068Z",
+      "likesCount": 17,
+      "commentsCount": 8
+    },
+    {
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "social-impact",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 6,
+      "commentsCount": 2
     }
   ]
 }
