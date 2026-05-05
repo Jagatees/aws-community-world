@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-05-05T00:32:13.334Z",
+  "updatedAt": "2026-05-05T01:34:59.641Z",
   "latest": [
+    {
+      "id": "/content/3DHfllJD6J5AjKawjBU44QsZb3r",
+      "title": "Governing the Agent Control Plane on AWS: RAR, RSI, and DCS — The Three SLIs Amazon Bedrock Orchestration Needs",
+      "description": "Amazon Bedrock Agents now supports multi-agent collaboration, enabling orchestrator agents to decompose tasks and route subtasks across specialist agents. This architecture introduces a new reliability layer: the agent control plane the orchestration logic that manages task decomposition, agent routing, retry behavior, and priority queuing across your entire Bedrock agent fleet.",
+      "url": "https://builder.aws.com/content/3DHfllJD6J5AjKawjBU44QsZb3r",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHgB1CIbNAxr9K7Gad2cJhTIrF/Ibmaj.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "sre",
+        "devops-pro",
+        "ai-agents",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-05T01:27:05.213Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DHcV9RbcIOwwf0q9sT2oQPHPRx",
+      "title": "Se a AWS Builder Center fosse uma biblioteca",
+      "description": "Aprenda a desmistificar a nuvem através de uma analogia com bibliotecas, onde você domina o armazenamento e o processamento de dados de forma simples. O AWS Builder Center oferece capacitação gratuita para estudantes que desejam ingressar no mercado de tecnologia agora mesmo.",
+      "url": "https://builder.aws.com/content/3DHcV9RbcIOwwf0q9sT2oQPHPRx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHdFzWK0fHr41irni7l8VwrpOm/aws-.webp",
+      "authorName": "Rayane",
+      "authorAlias": "rayanebonheur",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRhk4m7gkGnQNATS6p6hmrS2QU.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-05T01:02:16.247Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DHaOAYpq7AimvJYZv8gxaFgKnr",
+      "title": "From QA to Cloud: Why I chose Serverless to improve my tests",
+      "description": "A QA engineer's perspective on why understanding cloud infrastructure makes you better at your job — and how a Serverless project on AWS became the starting point for that journey.",
+      "url": "https://builder.aws.com/content/3DHaOAYpq7AimvJYZv8gxaFgKnr",
+      "imageUrl": "",
+      "authorName": "Jose Masiero",
+      "authorAlias": "josemasiero",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DHaKv2KLDuPTjaAtUWcxiV4kDm.webp",
+      "location": "SC, BR",
+      "lat": -27.0628367,
+      "lng": -51.114965,
+      "tags": [
+        "serverless",
+        "quality-assurance",
+        "amazon-cloudwatch",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-05-05T00:47:54.218Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
       "title": "De professora de inglês à tecnologia: minha jornada até aqui",
@@ -21,7 +85,7 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-05-04T22:38:31.757Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -61,7 +125,7 @@
         "aws-environment"
       ],
       "publishedAt": "2026-05-04T21:01:38.460Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -148,67 +212,6 @@
       "publishedAt": "2026-05-04T17:39:14.217Z",
       "likesCount": 9,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3DGl2tXd5fAp31E1rb3USxw1sj9",
-      "title": "I Built a Kanban to Learn Autonomous Development on AWS",
-      "description": "Built a kanban with AI agents on AWS to learn autonomous development. What broke, what worked, how I run it under $5/month.",
-      "url": "https://builder.aws.com/content/3DGl2tXd5fAp31E1rb3USxw1sj9",
-      "imageUrl": "",
-      "authorName": "Brett Gillett",
-      "authorAlias": "brettco098",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wMUUBTsyCmdzLMmHpvHmnmsJaE.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "agentic-ai",
-        "ai",
-        "serverless",
-        "autonomous-agents"
-      ],
-      "publishedAt": "2026-05-04T17:38:46.614Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGbcEzWqGUFib7QM9TdYrjeEXM",
-      "title": "Driving Innovation with HPC: Our Commitment to the AWS Builder Community",
-      "description": "Through the IT4LIA AI Factory, our commitment to the AWS builder community centers on providing the \"heavy machinery\" and expert guidance needed to transform complex AI concepts into scalable, trustworthy enterprise solutions. By leveraging the Leonardo supercomputer - one of the world's most powerful pre-exascale systems - we empower developers to optimize advanced architectures like the Verbis Graph Engine.",
-      "url": "https://builder.aws.com/content/3DGbcEzWqGUFib7QM9TdYrjeEXM",
-      "imageUrl": "",
-      "authorName": "Alena",
-      "authorAlias": "prodigyaisolutions",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BqFqD1Z1c7hNsSJV26sSvVpya1.webp",
-      "location": "IT",
-      "lat": 42.6384261,
-      "lng": 12.674297,
-      "tags": [
-        "rag",
-        "compute",
-        "data-engineering",
-        "data-processing"
-      ],
-      "publishedAt": "2026-05-04T17:25:31.778Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGj510ke0KGhC49oFvdueZMmBL",
-      "title": "🚀 Bridge to the Cloud: A Tactical Guide to Hybrid Resilience with Nutanix NC2 on AWS",
-      "description": "The Challenge: Beyond the \"Lift and Shift\" Fatigue\nIn Latin America, organizations face a \"hybrid paradox\": craving AWS elasticity while tethered to on-premises legacy workloads on vCenter or Hyper-V. The true fear isn’t migration, but operational fragmentation—disparate tools and failure modes. Success requires moving beyond just migrating VMs toward achieving operational symmetry. This is where Nutanix NC2 on AWS becomes a game-changer.",
-      "url": "https://builder.aws.com/content/3DGj510ke0KGhC49oFvdueZMmBL",
-      "imageUrl": "",
-      "authorName": "Exegol",
-      "authorAlias": "luiszuniga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-05-04T17:25:02.898Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -255,6 +258,27 @@
       "commentsCount": 1920
     },
     {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2857,
+      "commentsCount": 319
+    },
+    {
       "id": "/content/3DGcwKQJMiDFbWkrMdRxAgGfKC2",
       "title": "Disambiguating Claude on AWS",
       "description": "This article clarifies the different ways AWS supports each of Anthropic's Claude offerings (Claude Platform, Claude Code, and Claude Cowork) and when you should use each one.",
@@ -277,25 +301,23 @@
       "commentsCount": 1
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
+      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
+      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
+      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
+        "aideas-2025"
       ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2857,
-      "commentsCount": 319
+      "publishedAt": "2026-04-30T20:13:50.660Z",
+      "likesCount": 60,
+      "commentsCount": 31
     },
     {
       "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
@@ -315,25 +337,6 @@
       "publishedAt": "2026-05-04T15:54:09.861Z",
       "likesCount": 7,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 60,
-      "commentsCount": 31
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -379,29 +382,6 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
-      "title": "Bootstrapping Strands Agents TypeScript Projects in Seconds",
-      "description": "Scaffold production-ready Strands Agents TypeScript projects with one command. Includes memory, guardrails, A2A protocol, and AgentCore deployment.",
-      "url": "https://builder.aws.com/content/3DH1Sd4km77l9fQJh7L37PKoIuZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DH1oVVvT77gnmkmzKr1OEnL2ge/Gemi.webp",
-      "authorName": "Thiago",
-      "authorAlias": "verney",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BUwSTegJGbSGAC1Tn7AGuykla7.webp",
-      "location": "TX, US",
-      "lat": 31.2638905,
-      "lng": -98.5456116,
-      "tags": [
-        "strands-agents",
-        "typescript",
-        "cli",
-        "ai-agents",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-04T19:53:53.990Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
       "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
       "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
@@ -422,6 +402,29 @@
       "publishedAt": "2026-04-16T13:19:47.813Z",
       "likesCount": 1434,
       "commentsCount": 328
+    },
+    {
+      "id": "/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
+      "title": "De professora de inglês à tecnologia: minha jornada até aqui",
+      "description": "Uma transição de carreira que não começou do zero, mas sim com tudo o que eu já sabia. \nDa sala de aula para a tecnologia, essa é uma história sobre aprendizado, adaptação e novos caminhos.",
+      "url": "https://builder.aws.com/content/3D9s1J0UWg0OQHwb44UjVZdkFyI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DHLhNwg6j5Dv2k0fl9ETBstUVU/foto.webp",
+      "authorName": "Alice Barroso",
+      "authorAlias": "alicevbarroso",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "aws-ambassador",
+        "aws-builders",
+        "aws-community",
+        "aws-academy",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-05-04T22:38:31.757Z",
+      "likesCount": 2,
+      "commentsCount": 0
     }
   ]
 }
