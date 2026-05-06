@@ -2,17 +2,14 @@ import { useEffect, useRef, useState } from 'react';
 
 const STATS = [
   { label: 'Heroes', count: 263, color: '#FF9900' },
-  { label: 'Community Builders', count: 2494, color: '#1A9C3E' },
+  { label: 'Community Builders', count: 3546, color: '#1A9C3E' },
   { label: 'User Groups', count: 608, color: '#00A1C9' },
   { label: 'Student Builder Groups', count: 623, color: '#BF0816' },
 ];
 
-const TOTAL = 3988;
+const TOTAL = 5040;
 const SPLASH_GLOBE_ROTATION_SPEED = 0.035;
 const SPLASH_MARKER_COUNT = 80;
-const SPLASH_MARKER_REVEAL_DELAY_MS = 450;
-const SPLASH_MARKER_REVEAL_INTERVAL_MS = 140;
-const SPLASH_MARKER_REVEAL_BATCH = 4;
 
 function AnimatedNumber({ target, duration = 1800, delay = 0 }) {
   const [value, setValue] = useState(0);
@@ -52,9 +49,8 @@ function createAvatarElement(hero) {
     pointer-events: none;
     background: #0d1e2e;
     box-shadow: 0 4px 12px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,153,0,0.25);
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.55);
-    transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   `;
   const img = document.createElement('img');
   img.src = hero.image_url;
@@ -63,10 +59,6 @@ function createAvatarElement(hero) {
   img.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;';
   img.onerror = () => { wrapper.style.display = 'none'; };
   wrapper.appendChild(img);
-  requestAnimationFrame(() => {
-    wrapper.style.opacity = '1';
-    wrapper.style.transform = 'translate(-50%, -50%) scale(1)';
-  });
   return wrapper;
 }
 
@@ -112,7 +104,7 @@ function OrbitGlobe() {
         .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
         .showGraticules(false)
         .pointOfView({ lat: 20, lng: 0, altitude: 2.2 })
-        .htmlElementsData([])
+        .htmlElementsData(markers)
         .htmlLat('lat')
         .htmlLng('lng')
         .htmlAltitude(0.06)
@@ -135,23 +127,6 @@ function OrbitGlobe() {
       });
 
       globeRef.current = globe;
-      let visibleMarkerCount = 0;
-      const revealMarkers = () => {
-        if (!globeRef.current) return;
-        visibleMarkerCount = Math.min(visibleMarkerCount + SPLASH_MARKER_REVEAL_BATCH, markers.length);
-        globeRef.current.htmlElementsData(markers.slice(0, visibleMarkerCount));
-        if (visibleMarkerCount >= markers.length) {
-          timersRef.current.forEach((timerId) => window.clearInterval(timerId));
-          timersRef.current = [];
-        }
-      };
-
-      const revealDelay = window.setTimeout(() => {
-        revealMarkers();
-        const revealInterval = window.setInterval(revealMarkers, SPLASH_MARKER_REVEAL_INTERVAL_MS);
-        timersRef.current.push(revealInterval);
-      }, SPLASH_MARKER_REVEAL_DELAY_MS);
-      timersRef.current.push(revealDelay);
 
       const tick = () => {
         if (globeRef.current) {

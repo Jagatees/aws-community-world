@@ -1,7 +1,7 @@
 import { useEffect, useRef, useCallback } from 'react';
 import Globe from 'globe.gl';
 import { useAutoRotate } from '../hooks/useAutoRotate';
-import { getMemberBadgeLabel, getMemberImage } from '../utils/memberMarkers';
+import { createNewMemberBadgeElement, getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -148,6 +148,10 @@ function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
     badge.style.fontWeight = '800';
     badge.style.lineHeight = '1';
     frame.appendChild(badge);
+  }
+
+  if (hasNewMember(cluster.members)) {
+    frame.appendChild(createNewMemberBadgeElement(darkMode));
   }
 
   button.appendChild(frame);

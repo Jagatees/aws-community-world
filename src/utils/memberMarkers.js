@@ -62,3 +62,34 @@ export function getMemberBadgeLabel(member) {
     .join('')
     .toUpperCase();
 }
+
+export function hasNewMember(value) {
+  const members = Array.isArray(value) ? value : [value];
+  return members.some((member) => member?.isNew);
+}
+
+export function createNewMemberBadgeElement(darkMode) {
+  const badge = document.createElement('span');
+  badge.textContent = 'NEW';
+  badge.title = 'New community builder';
+  badge.style.position = 'absolute';
+  badge.style.right = '-8px';
+  badge.style.top = '-8px';
+  badge.style.minWidth = '28px';
+  badge.style.height = '16px';
+  badge.style.padding = '0 6px';
+  badge.style.borderRadius = '999px';
+  badge.style.display = 'inline-flex';
+  badge.style.alignItems = 'center';
+  badge.style.justifyContent = 'center';
+  badge.style.background = '#FF9900';
+  badge.style.color = '#0F1923';
+  badge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+  badge.style.fontSize = '8px';
+  badge.style.fontWeight = '900';
+  badge.style.lineHeight = '1';
+  badge.style.letterSpacing = '0.04em';
+  badge.style.zIndex = '20';
+  badge.style.pointerEvents = 'none';
+  return badge;
+}

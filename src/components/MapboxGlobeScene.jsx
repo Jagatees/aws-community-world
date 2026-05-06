@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { getMemberBadgeLabel, getMemberImage } from '../utils/memberMarkers';
+import { createNewMemberBadgeElement, getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -174,6 +174,10 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
     badge.style.fontWeight = '800';
     badge.style.lineHeight = '1';
     frame.appendChild(badge);
+  }
+
+  if (hasNewMember(cluster.members)) {
+    frame.appendChild(createNewMemberBadgeElement(darkMode));
   }
 
   button.appendChild(frame);

@@ -17,6 +17,7 @@
  * @property {string} [builderType]
  * @property {string} [specialization]
  * @property {{ name: string, imageUrl: string }[]} [ledBy]
+ * @property {boolean} [isNew]
  */
 
 /**

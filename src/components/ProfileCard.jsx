@@ -76,6 +76,22 @@ function LoadingAvatarImageContent({ src, alt, className, style, wrapperClassNam
   );
 }
 
+function NewMemberBadge({ compact = false }) {
+  return (
+    <span
+      title="New community builder"
+      className={`inline-flex items-center justify-center rounded-full font-black leading-none ${compact ? 'px-1.5 py-0.5 text-[8px]' : 'px-2 py-1 text-[10px]'}`}
+      style={{
+        backgroundColor: '#FF9900',
+        color: '#0F1923',
+        letterSpacing: '0.04em',
+      }}
+    >
+      NEW
+    </span>
+  );
+}
+
 function getPrimaryLeader(member) {
   return Array.isArray(member.ledBy) ? member.ledBy.find((leader) => leader?.name || leader?.imageUrl) ?? null : null;
 }
@@ -275,6 +291,7 @@ function SingleMemberView({ member, darkMode }) {
       <h2 className="text-center text-lg font-bold leading-tight" style={{ color: nameColor }}>
         {member.name}
       </h2>
+      {member.isNew && <NewMemberBadge />}
       <span
         className="rounded-full px-3 py-1 text-xs font-semibold"
         style={{ backgroundColor: '#FF9900', color: '#0F1923' }}
@@ -336,7 +353,10 @@ function ClusterListView({ members, darkMode }) {
             <LeaderAvatarStack member={m} fallbackName={m.name} fallbackImageUrl={m.avatarUrl} size="sm" />
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold" style={{ color: nameColor }}>
-                {m.name}
+                <span className="inline-flex min-w-0 items-center gap-1.5">
+                  <span className="truncate">{m.name}</span>
+                  {m.isNew && <NewMemberBadge compact />}
+                </span>
               </p>
               {m.category === 'cloud-clubs' && getLeaderNames(m).length > 0 && (
                 <p className="text-xs font-medium" style={{ color: '#FF9900' }}>

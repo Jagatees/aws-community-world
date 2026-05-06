@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { geoGraticule10, geoNaturalEarth1, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import countriesTopo from 'world-atlas/countries-110m.json';
-import { getMemberBadgeLabel, getMemberImage } from '../utils/memberMarkers';
+import { getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -320,6 +320,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                   : 0;
                 const stackOffsetX = visibleImages.length > 1 ? stackWidth / 2 : clusterAvatarSize / 2;
                 const badgeCount = Math.max(0, marker.members.length - visibleImages.length);
+                const markerHasNewMember = hasNewMember(marker.members);
 
                 return (
                   <g key={`${marker.lat}-${marker.lng}-${marker.members.length}`} transform={`translate(${marker.x} ${marker.y})`}>
@@ -469,6 +470,33 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                           );
                         })()}
                       </>
+                    )}
+                    {markerHasNewMember && (
+                      <g transform={`translate(${Math.max(marker.size, singleAvatarSize / 2, clusterAvatarSize / 2) + 10} -14)`}>
+                        <rect
+                          x="-15"
+                          y="-8"
+                          width="30"
+                          height="16"
+                          rx="8"
+                          fill="#FF9900"
+                          stroke={darkMode ? '#09131c' : '#ffffff'}
+                          strokeWidth="2"
+                          pointerEvents="none"
+                        />
+                        <text
+                          y="1"
+                          textAnchor="middle"
+                          dominantBaseline="middle"
+                          fill="#0F1923"
+                          fontSize="8"
+                          fontWeight="900"
+                          letterSpacing="0.04em"
+                          pointerEvents="none"
+                        >
+                          NEW
+                        </text>
+                      </g>
                     )}
                     <circle
                       r={Math.max(marker.size + 12, singleAvatarSize * 0.8, clusterAvatarSize + 12)}
