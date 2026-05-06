@@ -1,6 +1,94 @@
 {
-  "updatedAt": "2026-05-06T03:05:58.193Z",
+  "updatedAt": "2026-05-06T05:05:59.692Z",
   "latest": [
+    {
+      "id": "/content/3DJjbxyGOiOoCui6QRHZEuaJkIf",
+      "title": "Building Skill2Hire with AIDLC: My First Structured AI-DLC Project Journey",
+      "description": "I share my experience building an AI placement prediction system using the AI-Development Lifecycle  methodology, highlighting how structured development improved my workflow, patience, and understanding .",
+      "url": "https://builder.aws.com/content/3DJjbxyGOiOoCui6QRHZEuaJkIf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmYB1C6EALOW3Byu2FKWVBMZU/img-.webp",
+      "authorName": "Sundara Raghav G",
+      "authorAlias": "sundararaghav",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "software-development",
+        "kiro",
+        "aws-community-builders",
+        "ai-dlc",
+        "ai-ml"
+      ],
+      "publishedAt": "2026-05-06T04:56:23.694Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKiyTRukenbe75k8r3ecWOeY0u",
+      "title": "測試標題",
+      "description": "測試描述",
+      "url": "https://builder.aws.com/content/3DKiyTRukenbe75k8r3ecWOeY0u",
+      "imageUrl": "",
+      "authorName": "JUNG-KUANG FU",
+      "authorAlias": "gloryfu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uULC51HeoM00zSfbDMVUAGqngV.webp",
+      "location": "TW",
+      "lat": 23.9739374,
+      "lng": 120.9820179,
+      "tags": [
+        "databases",
+        "amazon-aurora"
+      ],
+      "publishedAt": "2026-05-06T03:26:55.224Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKjaeMaDvA9XBOiNrmXbQ261fV",
+      "title": "Troubleshoot RDS Oracle to Aurora PostgreSQL DMS Migrations with AWS DevOps Agent",
+      "description": "Use AWS DevOps Agent to automatically investigate and remediate common AWS DMS issues when migrating from RDS Oracle to Aurora PostgreSQL — CDC latency, data type conversion failures, and more.",
+      "url": "https://builder.aws.com/content/3DKjaeMaDvA9XBOiNrmXbQ261fV",
+      "imageUrl": "",
+      "authorName": "Chetan Nandikanti",
+      "authorAlias": "chetannk",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33FmXHAkBxXejqG5b3UvsJsqP0s.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-dms",
+        "devops",
+        "amazon-aurora",
+        "oracle"
+      ],
+      "publishedAt": "2026-05-06T03:24:25.014Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKfdYeiMa6HzBHb1rS61n95HUD",
+      "title": "Release Update: OpenArchFlow v0.7.0",
+      "description": "O Open Ark Flow v0.7.0 chegou transformando seus diagramas em código! Agora você gera infraestrutura Terraform (AWS) direto do desenho, com precisão garantida pela IA do Gemini 2.5 Flash. \n\nA nova versão inclui colaboração P2P em tempo real com criptografia E2EE, editor de código integrado e painéis de métricas com injeção de falhas. Unindo design visual e rigor técnico, a ferramenta 100% open-source prepara terreno para o multicloud. Acesse e experimente hoje mesmo: openarchflow.cloud!\n",
+      "url": "https://builder.aws.com/content/3DKfdYeiMa6HzBHb1rS61n95HUD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKhjrYLbSLuAUAtefTfZtz0shd/scre.webp",
+      "authorName": "Rafael Floriano Sousa Sales",
+      "authorAlias": "rfsales",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3As90rZYCCmGB3fT8CBWMhjj4wZ.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "terraform",
+        "ai",
+        "mcp",
+        "aws-capabilities",
+        "aws-innovations"
+      ],
+      "publishedAt": "2026-05-06T03:09:18.051Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DKeQDjmyrtJDapiVJBlzHauZvu",
       "title": "AWS Builder Center — Mais que uma plataforma de cursos",
@@ -41,7 +129,7 @@
     {
       "id": "/content/3DITR4CtN49XKiH10D5i2s5fd8x",
       "title": "Building a Local AI Assistant (JARVIS) Using AI-DLC Workflow in AWS Kiro",
-      "description": "A practical walkthrough of building a fully local AI-powered assistant using FastAPI, React, and Ollama, guided by the AI-DLC workflow in AWS Kiro, with insights on architecture, real-time systems.",
+      "description": "A hands-on journey of building a local AI assistant using FastAPI, React, and Ollama with the AI-DLC workflow in AWS Kiro, covering architecture, real-time communication, and key development learnings.",
       "url": "https://builder.aws.com/content/3DITR4CtN49XKiH10D5i2s5fd8x",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIwfj4rkyneLorlTPENz3Lc9pw/Scre.webp",
       "authorName": "Kaviyarasu P",
@@ -54,8 +142,7 @@
         "ai-dlc",
         "kiro",
         "ai",
-        "aws-community",
-        "agents"
+        "aws-community"
       ],
       "publishedAt": "2026-05-06T02:27:25.160Z",
       "likesCount": 1,
@@ -80,7 +167,7 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-05-06T02:12:23.818Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -137,8 +224,8 @@
         "social-impact"
       ],
       "publishedAt": "2026-05-06T01:09:58.083Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3D8bt4OTkEv9188vn5nKtsdXJj7",
@@ -204,6 +291,116 @@
       "publishedAt": "2026-05-05T22:42:38.445Z",
       "likesCount": 0,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKAKluL6L1hzXzcZYWThQLRtRM",
+      "title": "Building a Serverless DynamoDB MCP Server - Making Your AI Talk to Your Database",
+      "description": "Built a fully serverless MCP backend on AWS that lets AI assistants interact \nwith DynamoDB conversationally - using Lambda, API Gateway, IAM SigV4, and \nTerraform. Zero servers. Ten tools. One natural language prompt.",
+      "url": "https://builder.aws.com/content/3DKAKluL6L1hzXzcZYWThQLRtRM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKAyoGLeRJRHGc63Q016r25J2l/dfghj.webp",
+      "authorName": "Naveen G",
+      "authorAlias": "naveen15",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36t9Fs5MA6HnbMaOoRbR87lw00D.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "serverless",
+        "kiro",
+        "mcp",
+        "mcp-server",
+        "ai"
+      ],
+      "publishedAt": "2026-05-05T22:38:44.338Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DK5sFN16d1uES1EB9cxaZ3CvMM",
+      "title": "Como fundei o 1º AWS Student Builder Group de Minas Gerais (e dicas para você fazer o mesmo)",
+      "description": "Confira o passo a passo para estruturar uma comunidade de tecnologia no campus e veja como o AWS Builder Center ajuda a conectar estudantes ao ecossistema global da AWS. Compartilho os aprendizados reais de fundar o primeiro AWS Student Builder Group de Minas Gerais para inspirar novos líderes estudantis.  ",
+      "url": "https://builder.aws.com/content/3DK5sFN16d1uES1EB9cxaZ3CvMM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DK7FBPOZiw59TYArAF0zTY0JdK/Cano.webp",
+      "authorName": "Derick Lucas Alves Rodrigues",
+      "authorAlias": "derickrodrigues",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BmI2Vex6SIkNApLP7x1BvO6wXN.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-community-builders",
+        "aws-cloud-clubs",
+        "students"
+      ],
+      "publishedAt": "2026-05-05T22:07:59.742Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DK00auYeOihOBW2pvAl8gT0l1o",
+      "title": "Chicago Showed Up: A Recap of AWS Community on Tour",
+      "description": "A recap and reflection on the AWS Community on Tour stop in Chicago on April 29, 2026. Around 100 attendees, a hands-on Kiro spec-driven workshop where students out-shipped the room, and a reminder that the Chicago AWS community is alive and well. Written from the perspective of one of the co-hosting User Group leaders.",
+      "url": "https://builder.aws.com/content/3DK00auYeOihOBW2pvAl8gT0l1o",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DK1rgD0q3fSXdxCQx13w376Mzc/chica.webp",
+      "authorName": "Scott Burgholzer",
+      "authorAlias": "scottwx",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yTW1ixurIW9UsCRnWbnyUVXYS3.webp",
+      "location": "IL, US",
+      "lat": 40.0796606,
+      "lng": -89.4337288,
+      "tags": [
+        "aws-community",
+        "aws-community-builders",
+        "aws-heroes",
+        "aws-user-groups"
+      ],
+      "publishedAt": "2026-05-05T21:43:06.140Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DHUEfM5oAXCFwjnUvgRUIwiKLZ",
+      "title": "Export AWS Security Agent findings to CSV",
+      "description": "This tutorial shows you how to get penetration test findings from AWS Security Agent and export them to a CSV file. You use the AWS CLI to explore the data model, and then you run a Python script that automates the export.",
+      "url": "https://builder.aws.com/content/3DHUEfM5oAXCFwjnUvgRUIwiKLZ",
+      "imageUrl": "",
+      "authorName": "Jeremy Schiefer",
+      "authorAlias": "schiefj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DJwVj4tsU1V5JhCwUytWmw03wl.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "security",
+        "ai-security",
+        "application-security",
+        "cloud-security",
+        "security-and-compliance"
+      ],
+      "publishedAt": "2026-05-05T20:35:57.131Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJsLOkRtyQAi6bsgaauFUGB52A",
+      "title": "Not All Tokens Are Created Equal: A Progressive Observability Framework for Enterprise AI Coding Tools",
+      "description": "The fastest-growing software category no one is measuring.",
+      "url": "https://builder.aws.com/content/3DJsLOkRtyQAi6bsgaauFUGB52A",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DK1iSCqNldp3qki0IqSBs10vRZ/Scre.webp",
+      "authorName": "Karthik",
+      "authorAlias": "kmokashi",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agents",
+        "claude"
+      ],
+      "publishedAt": "2026-05-05T20:16:42.879Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -221,8 +418,8 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-05T10:59:17.736Z",
-      "likesCount": 5,
-      "commentsCount": 147
+      "likesCount": 9,
+      "commentsCount": 404
     },
     {
       "id": "/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
@@ -264,8 +461,8 @@
         "ai-assisted"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 25,
-      "commentsCount": 17
+      "likesCount": 26,
+      "commentsCount": 18
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -310,23 +507,44 @@
       "commentsCount": 1921
     },
     {
-      "id": "/content/3DKWCP0Kfj36qN1fENIBwmxTJr8",
-      "title": "Cloud não é só tecnologia: como a AWS impacta negócios?",
-      "description": "Quando falamos em computação em nuvem, é comum pensar primeiro em servidores, bancos de dados e arquitetura. Mas essa visão é limitada.\n\nA verdade é que a nuvem — especialmente plataformas como a Amazon Web Services — não é apenas uma mudança tecnológica.\nEla representa uma transformação direta na forma como empresas operam, inovam e crescem.\n\nNeste artigo, quero trazer uma visão além do técnico: como a AWS impacta negócios na prática.",
-      "url": "https://builder.aws.com/content/3DKWCP0Kfj36qN1fENIBwmxTJr8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKY7N3mCr9dcOaPZfJlvy56Nlu/clou.webp",
-      "authorName": "Sara Ferreira",
-      "authorAlias": "sarinha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
       "tags": [
-        "aws-builders",
-        "aws-ambassador"
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
       ],
-      "publishedAt": "2026-05-06T01:45:35.028Z",
-      "likesCount": 1,
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2860,
+      "commentsCount": 319
+    },
+    {
+      "id": "/content/3DKQbH3zIanh5JgguBqau2BG40p",
+      "title": "CogniPath Won LATAM. Then Didn't. Here's What Happens Next.",
+      "description": "I built CogniPath to help students with visual impairments, dyslexia, and ADHD access STEM content in Latin American public schools. We reached LATAM Regional Champion. Then Argentina disqualified us. Here's what I learned — and what comes next.",
+      "url": "https://builder.aws.com/content/3DKQbH3zIanh5JgguBqau2BG40p",
+      "imageUrl": "",
+      "authorName": "Misael Calisaya",
+      "authorAlias": "misaelcalisaya",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxOpmzKe504TGsNim2zQVfnXiN.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "LATAM",
+        "social-impact"
+      ],
+      "publishedAt": "2026-05-06T01:09:58.083Z",
+      "likesCount": 3,
       "commentsCount": 1
     },
     {
@@ -352,46 +570,25 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2860,
-      "commentsCount": 319
-    },
-    {
-      "id": "/content/3DITR4CtN49XKiH10D5i2s5fd8x",
-      "title": "Building a Local AI Assistant (JARVIS) Using AI-DLC Workflow in AWS Kiro",
-      "description": "A practical walkthrough of building a fully local AI-powered assistant using FastAPI, React, and Ollama, guided by the AI-DLC workflow in AWS Kiro, with insights on architecture, real-time systems.",
-      "url": "https://builder.aws.com/content/3DITR4CtN49XKiH10D5i2s5fd8x",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIwfj4rkyneLorlTPENz3Lc9pw/Scre.webp",
-      "authorName": "Kaviyarasu P",
-      "authorAlias": "kaviyarasup2411",
+      "id": "/content/3DJjbxyGOiOoCui6QRHZEuaJkIf",
+      "title": "Building Skill2Hire with AIDLC: My First Structured AI-DLC Project Journey",
+      "description": "I share my experience building an AI placement prediction system using the AI-Development Lifecycle  methodology, highlighting how structured development improved my workflow, patience, and understanding .",
+      "url": "https://builder.aws.com/content/3DJjbxyGOiOoCui6QRHZEuaJkIf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJmYB1C6EALOW3Byu2FKWVBMZU/img-.webp",
+      "authorName": "Sundara Raghav G",
+      "authorAlias": "sundararaghav",
       "authorAvatarUrl": "",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
-        "ai-dlc",
+        "software-development",
         "kiro",
-        "ai",
-        "aws-community",
-        "agents"
+        "aws-community-builders",
+        "ai-dlc",
+        "ai-ml"
       ],
-      "publishedAt": "2026-05-06T02:27:25.160Z",
+      "publishedAt": "2026-05-06T04:56:23.694Z",
       "likesCount": 1,
       "commentsCount": 0
     },
@@ -411,8 +608,199 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 64,
+      "likesCount": 63,
       "commentsCount": 33
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1933,
+      "commentsCount": 269
+    },
+    {
+      "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
+      "title": "How to Survive Your First 90 Days as a Developer",
+      "description": "Landing your first role is only the beginning. The first 90 days as a developer are a different kind of challenge, one built on ambiguity, real systems and team dynamics that no bootcamp covers. This is your guide to navigating that transition with clarity and intention.",
+      "url": "https://builder.aws.com/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIUDVE0s4A5IggmYvGDhp9bTF7/IMG_.webp",
+      "authorName": "Ifeanyi O",
+      "authorAlias": "rexify",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qe0NOkG2CTZNcXKs61RHSa9O4.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "developer",
+        "career"
+      ],
+      "publishedAt": "2026-05-05T08:23:09.383Z",
+      "likesCount": 10,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3DKWCP0Kfj36qN1fENIBwmxTJr8",
+      "title": "Cloud não é só tecnologia: como a AWS impacta negócios?",
+      "description": "Quando falamos em computação em nuvem, é comum pensar primeiro em servidores, bancos de dados e arquitetura. Mas essa visão é limitada.\n\nA verdade é que a nuvem — especialmente plataformas como a Amazon Web Services — não é apenas uma mudança tecnológica.\nEla representa uma transformação direta na forma como empresas operam, inovam e crescem.\n\nNeste artigo, quero trazer uma visão além do técnico: como a AWS impacta negócios na prática.",
+      "url": "https://builder.aws.com/content/3DKWCP0Kfj36qN1fENIBwmxTJr8",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKY7N3mCr9dcOaPZfJlvy56Nlu/clou.webp",
+      "authorName": "Sara Ferreira",
+      "authorAlias": "sarinha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-05-06T01:45:35.028Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1438,
+      "commentsCount": 330
+    },
+    {
+      "id": "/content/3DK00auYeOihOBW2pvAl8gT0l1o",
+      "title": "Chicago Showed Up: A Recap of AWS Community on Tour",
+      "description": "A recap and reflection on the AWS Community on Tour stop in Chicago on April 29, 2026. Around 100 attendees, a hands-on Kiro spec-driven workshop where students out-shipped the room, and a reminder that the Chicago AWS community is alive and well. Written from the perspective of one of the co-hosting User Group leaders.",
+      "url": "https://builder.aws.com/content/3DK00auYeOihOBW2pvAl8gT0l1o",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DK1rgD0q3fSXdxCQx13w376Mzc/chica.webp",
+      "authorName": "Scott Burgholzer",
+      "authorAlias": "scottwx",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yTW1ixurIW9UsCRnWbnyUVXYS3.webp",
+      "location": "IL, US",
+      "lat": 40.0796606,
+      "lng": -89.4337288,
+      "tags": [
+        "aws-community",
+        "aws-community-builders",
+        "aws-heroes",
+        "aws-user-groups"
+      ],
+      "publishedAt": "2026-05-05T21:43:06.140Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
+      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
+      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
+      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
+      "authorName": "Ishaq Ishaq",
+      "authorAlias": "ishaqishaq",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-aurora",
+        "amazon-dynamodb",
+        "students",
+        "relational-database",
+        "non-relational-database"
+      ],
+      "publishedAt": "2026-05-05T16:52:57.854Z",
+      "likesCount": 2,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "title": "Soft skills e hard skills: o que são, por que importam e como equilibrar na prática",
+      "description": "Neste artigo, explico a diferença entre habilidades técnicas e comportamentais usando uma metáfora simples: a construção de uma casa. Mostro por que as hard skills (os tijolos) são essenciais no início da carreira, mas as soft skills (a capacidade de conversar, negociar e ouvir) se tornam cada vez mais decisivas com o tempo. Também compartilho um exercício prático de duas colunas para você identificar o que precisa estudar e o que precisa praticar no dia a dia.",
+      "url": "https://builder.aws.com/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGYjKTKI2Szp743eEUaT4dMoak/soft.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "soft-skills"
+      ],
+      "publishedAt": "2026-05-04T15:54:09.861Z",
+      "likesCount": 9,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
+      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
+      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "social-impact",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-05-04T13:27:41.540Z",
+      "likesCount": 9,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "title": "5 coisas que eu gostaria de saber antes de começar minha jornada no AWS Builder Center",
+      "description": "Começar a estudar AWS pode parecer confuso no início. Neste artigo, compartilho 5 aprendizados que teriam tornado minha jornada mais leve, mostrando como o AWS Builder Center pode ajudar estudantes a aprender cloud com mais direção, prática e comunidade.",
+      "url": "https://builder.aws.com/content/3DBKBJJN7pR5ODglLhSsz3TstdB",
+      "imageUrl": "",
+      "authorName": "Leandro UTFPR",
+      "authorAlias": "leandronogarotto",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBK9NvvwMdImOFQsqQ04UCGukH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "students",
+        "cloud-practitioner",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-02T19:59:43.068Z",
+      "likesCount": 18,
+      "commentsCount": 8
     }
   ]
 }
