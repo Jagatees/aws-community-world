@@ -1,6 +1,116 @@
 {
-  "updatedAt": "2026-05-06T16:32:57.213Z",
+  "updatedAt": "2026-05-06T18:37:54.825Z",
   "latest": [
+    {
+      "id": "/content/3CJIjeJeBGBYXWS5elwWGyUq6he",
+      "title": "Amazon Bedrock Agents vs. Bedrock Managed Agents vs. AgentCore: What's What and Which to Pick",
+      "description": "A practical guide to the three distinct agent paths in Amazon Bedrock — what each one does, how they relate, and when to choose which.",
+      "url": "https://builder.aws.com/content/3CJIjeJeBGBYXWS5elwWGyUq6he",
+      "imageUrl": "",
+      "authorName": "Shashi Kiran",
+      "authorAlias": "brskiran",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agents",
+        "agentic-ai",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-05-06T18:31:01.892Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DMPiYVYmoymFSGk3yNV1JHgdkd",
+      "title": "What is the AWS Builder Center? + Other Opportunities!",
+      "description": "Learn more about what the AWS Builder Center and the many opportunities that it hosts!",
+      "url": "https://builder.aws.com/content/3DMPiYVYmoymFSGk3yNV1JHgdkd",
+      "imageUrl": "",
+      "authorName": "Mehek",
+      "authorAlias": "mehekniwas",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BvO84WpkgRDrG5qqcCYtzG3Lic.webp",
+      "location": "FL, US",
+      "lat": 27.7567667,
+      "lng": -81.4639835,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-06T17:55:38.071Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DM2qt9LQFPEvCrbH6MyAPhWSa0",
+      "title": "Cross-Document Filtering in OpenSearch: A Two-Phase Pattern with Roaring Bitmaps",
+      "description": "When your filters live on sibling documents that share a parent — a case and its notes, an order and its line items — a single bool query can't express the constraint. This article walks through a two-phase pattern that intersects parent IDs in memory and uses OpenSearch 2.17+ native roaring bitmap filters to scale the final search past max_result_window.",
+      "url": "https://builder.aws.com/content/3DM2qt9LQFPEvCrbH6MyAPhWSa0",
+      "imageUrl": "",
+      "authorName": "Arun Lakshmanan",
+      "authorAlias": "arnlaksh",
+      "authorAvatarUrl": "",
+      "location": "IL, US",
+      "lat": 40.0796606,
+      "lng": -89.4337288,
+      "tags": [
+        "amazon-opensearch",
+        "opensearch",
+        "architecture-patterns",
+        "nosql"
+      ],
+      "publishedAt": "2026-05-06T17:22:29.908Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DM5beYqfWro34GJc6Wj2xdV0Ln",
+      "title": "How I Built a Team of AI Agents I Can Finally Trust (and the Conformance System That Made It Possible)",
+      "description": "My agents kept passing code that confidently missed the point. The fix was never a better model or more agents. It was four structural artifacts that hold every agent accountable to what was actually approved, and a conformance system that finally made multi-agent output trustworthy.",
+      "url": "https://builder.aws.com/content/3DM5beYqfWro34GJc6Wj2xdV0Ln",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMDhPwgQA8ug8txPDu8dfUbNWz/cove.webp",
+      "authorName": "Oren Weiss",
+      "authorAlias": "orenw",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DM4Qlqe4vuHHuwbrdi9Rj0myQB.webp",
+      "location": "IL",
+      "lat": 30.8124247,
+      "lng": 34.8594762,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "agentic-interactions",
+        "ai-for-developers",
+        "multi-agent-orchestrator"
+      ],
+      "publishedAt": "2026-05-06T17:14:19.331Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DMF6TeEGvpSoBC9tAXSQVsoStf",
+      "title": "Você não precisa de mais um curso. Precisa do ambiente certo.",
+      "description": "Se você sente que está estudando tecnologia, mas não está evoluindo como gostaria, talvez o problema não seja falta de esforço, e sim o ambiente onde você está aprendendo.\n\nNeste artigo, compartilho uma reflexão sobre como a forma de aprender pode impactar diretamente sua evolução e por que estar conectado a um ecossistema como o AWS Builder Center pode fazer diferença na sua jornada.",
+      "url": "https://builder.aws.com/content/3DMF6TeEGvpSoBC9tAXSQVsoStf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMJ4sFxmE6qfkJHcZDRcFCp77L/Capa.webp",
+      "authorName": "Igor Galindo",
+      "authorAlias": "igorgalind0",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aspiring-builders",
+        "aspiring-developer",
+        "aws-builders",
+        "aws-community-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-06T16:44:52.504Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3DJX4F5ZXk1DxtWKwfOoyz1xzsO",
       "title": "Building Snake.io with AI-DLC: My First Structured Project Journey with Kiro",
@@ -44,7 +154,7 @@
         "aws-educate"
       ],
       "publishedAt": "2026-05-06T15:52:41.821Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -101,101 +211,6 @@
       "publishedAt": "2026-05-06T14:03:30.503Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DLsQEwWydIyEvGQ6XHedYHjn7X",
-      "title": "Mastering AWS Databases: A Hands-On Guide to Amazon DynamoDB and Aurora PostgreSQL",
-      "description": "My journey into the cloud through UNILORIN AWS Student Builder Group",
-      "url": "https://builder.aws.com/content/3DLsQEwWydIyEvGQ6XHedYHjn7X",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DLxZrJkzrJ4ulKkrqlycWuR1NM/Whats.webp",
-      "authorName": "Faiz-Ahmad Abdur-Rasheed",
-      "authorAlias": "normid",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "postgresql",
-        "nosql",
-        "amazon-dynamodb",
-        "amazon-aurora"
-      ],
-      "publishedAt": "2026-05-06T13:48:57.100Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DLtEbvhqqBckalH1cVWZkKkP9f",
-      "title": "Building an E-Commerce Backend with DynamoDB and Aurora PostgreSQL",
-      "description": "A comprehensive walkthrough of building e-commerce infrastructure on AWS. This guide explores the CLI-driven deployment of DynamoDB and Aurora PostgreSQL, offering lessons learned from the moments of cloud networking and database optimization.",
-      "url": "https://builder.aws.com/content/3DLtEbvhqqBckalH1cVWZkKkP9f",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DLxULZIVQgJyH0yJDLyRv030We/Scre.webp",
-      "authorName": "Caleb Ogbole",
-      "authorAlias": "kebocaleb",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-05-06T13:46:19.845Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DLwPzBBhWBZdQhGu7MrY1Dg8Rw",
-      "title": "My Hands-On Journey with AWS: Databases, EC2, CLI, and Real Troubleshooting Lessons",
-      "description": "Over the past few days, I’ve been working through several AWS concepts in a practical lab environment. From databases to compute services and command-line tools, I ran into real issues—and learned how AWS actually behaves beyond theory. This article summarizes my experience, challenges, and key lessons.",
-      "url": "https://builder.aws.com/content/3DLwPzBBhWBZdQhGu7MrY1Dg8Rw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DLwrWDz1SQptAc9j2tZ5hem6MI/IMG-.webp",
-      "authorName": "Itz omoade",
-      "authorAlias": "omoade17",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-05-06T13:41:22.893Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D2VMn6Eb3F6n1fZUH5ezp7kIM5",
-      "title": "Uma única decisão pode mudar sua trajetória de vida: De iniciante perdida à ganhadora de feira e líder estudantil",
-      "description": "Uma única coisa é capaz de transfromar a trajetória de nossas vidas. No meu caso, foi a questão que me apresentou ao mundo da tecnologia e me levou ao capítulo que estou agora: Líder Estudantil AWS.",
-      "url": "https://builder.aws.com/content/3D2VMn6Eb3F6n1fZUH5ezp7kIM5",
-      "imageUrl": "",
-      "authorName": "Libarino",
-      "authorAlias": "libarino",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjLRayZ00c7HTWmMzsNjvz1WhD.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "aws-builders",
-        "aws-community-builders",
-        "women-in-tech"
-      ],
-      "publishedAt": "2026-05-06T13:41:10.387Z",
-      "likesCount": 7,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3DLtNThawsqUM6b6NAhJI64OM1k",
-      "title": "Win an AWS Certification Voucher – AWS Summit Stockholm Student Giveaway 2026",
-      "description": " AWS Summits Stockholm: Student Voucher giveaway  & Career Resources ",
-      "url": "https://builder.aws.com/content/3DLtNThawsqUM6b6NAhJI64OM1k",
-      "imageUrl": "",
-      "authorName": "Deontae Murphy",
-      "authorAlias": "deontaemurphy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-05-06T13:18:24.322Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -213,30 +228,31 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-05T10:59:17.736Z",
-      "likesCount": 18,
+      "likesCount": 19,
       "commentsCount": 406
     },
     {
-      "id": "/content/3D2VMn6Eb3F6n1fZUH5ezp7kIM5",
-      "title": "Uma única decisão pode mudar sua trajetória de vida: De iniciante perdida à ganhadora de feira e líder estudantil",
-      "description": "Uma única coisa é capaz de transfromar a trajetória de nossas vidas. No meu caso, foi a questão que me apresentou ao mundo da tecnologia e me levou ao capítulo que estou agora: Líder Estudantil AWS.",
-      "url": "https://builder.aws.com/content/3D2VMn6Eb3F6n1fZUH5ezp7kIM5",
-      "imageUrl": "",
-      "authorName": "Libarino",
-      "authorAlias": "libarino",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjLRayZ00c7HTWmMzsNjvz1WhD.webp",
+      "id": "/content/3DMF6TeEGvpSoBC9tAXSQVsoStf",
+      "title": "Você não precisa de mais um curso. Precisa do ambiente certo.",
+      "description": "Se você sente que está estudando tecnologia, mas não está evoluindo como gostaria, talvez o problema não seja falta de esforço, e sim o ambiente onde você está aprendendo.\n\nNeste artigo, compartilho uma reflexão sobre como a forma de aprender pode impactar diretamente sua evolução e por que estar conectado a um ecossistema como o AWS Builder Center pode fazer diferença na sua jornada.",
+      "url": "https://builder.aws.com/content/3DMF6TeEGvpSoBC9tAXSQVsoStf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMJ4sFxmE6qfkJHcZDRcFCp77L/Capa.webp",
+      "authorName": "Igor Galindo",
+      "authorAlias": "igorgalind0",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cwis51QstbPPoTTEndQChmkIUf.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
       "tags": [
-        "students",
+        "aspiring-builders",
+        "aspiring-developer",
         "aws-builders",
         "aws-community-builders",
-        "women-in-tech"
+        "aws-community"
       ],
-      "publishedAt": "2026-05-06T13:41:10.387Z",
-      "likesCount": 7,
-      "commentsCount": 2
+      "publishedAt": "2026-05-06T16:44:52.504Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
@@ -367,29 +383,6 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DMC5yEpgAmyNYe0uY2Thorn8lc",
-      "title": "Building Snake.io with AI-DLC: My First Structured Project Journey with Kiro",
-      "description": "I share my experience of learning AI-DLC in the AWS Bengaluru workshop, being selected as one of the 20 students in Project Kalam, and building my first structured game project Snake.io from requirements to deployment using Kiro with the same methodology.",
-      "url": "https://builder.aws.com/content/3DMC5yEpgAmyNYe0uY2Thorn8lc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMCT2skmqkKXfDFmeVGv6U2aP3/Chat.webp",
-      "authorName": "Mythra Rajasekar",
-      "authorAlias": "mythrarajasekar22",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai-dlc",
-        "kiro",
-        "games-industry",
-        "software-development",
-        "aws-educate"
-      ],
-      "publishedAt": "2026-05-06T15:52:41.821Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3CNuc41cYvQI9H7ePaMmNPiQQeJ",
       "title": "AWS Summit Warsaw Attendee Exclusive: Builder Question of the Day",
       "description": "If you're attending the AWS Summit in Warsaw, come say hi at the Developer Community Zone and get involved in our Builder Question of the Day challenge! ",
@@ -410,6 +403,26 @@
       "publishedAt": "2026-05-05T10:20:40.806Z",
       "likesCount": 0,
       "commentsCount": 121
+    },
+    {
+      "id": "/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
+      "title": "Líder Estudantil do AWS Builder: bastidores, propósito e a arte de fazer acontecer! 🚀☁️",
+      "description": "A minha segunda semana como Líder Estudantil do AWS Builder",
+      "url": "https://builder.aws.com/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9CBYIGdErvQujjptGYY5Hps7I/Whats.webp",
+      "authorName": "Yuri Oliveira Santana",
+      "authorAlias": "ysantana",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "tech"
+      ],
+      "publishedAt": "2026-05-02T01:20:25.552Z",
+      "likesCount": 5,
+      "commentsCount": 4
     }
   ]
 }
