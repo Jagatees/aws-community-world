@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-05T23:19:13.462Z",
+  "updatedAt": "2026-05-06T00:31:26.964Z",
   "latest": [
     {
       "id": "/content/3D8bt4OTkEv9188vn5nKtsdXJj7",
@@ -245,28 +245,6 @@
       "commentsCount": 15
     },
     {
-      "id": "/content/3DK00auYeOihOBW2pvAl8gT0l1o",
-      "title": "Chicago Showed Up: A Recap of AWS Community on Tour",
-      "description": "A recap and reflection on the AWS Community on Tour stop in Chicago on April 29, 2026. Around 100 attendees, a hands-on Kiro spec-driven workshop where students out-shipped the room, and a reminder that the Chicago AWS community is alive and well. Written from the perspective of one of the co-hosting User Group leaders.",
-      "url": "https://builder.aws.com/content/3DK00auYeOihOBW2pvAl8gT0l1o",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DK1rgD0q3fSXdxCQx13w376Mzc/chica.webp",
-      "authorName": "Scott Burgholzer",
-      "authorAlias": "scottwx",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yTW1ixurIW9UsCRnWbnyUVXYS3.webp",
-      "location": "IL, US",
-      "lat": 40.0796606,
-      "lng": -89.4337288,
-      "tags": [
-        "aws-community",
-        "aws-community-builders",
-        "aws-heroes",
-        "aws-user-groups"
-      ],
-      "publishedAt": "2026-05-05T21:43:06.140Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
       "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
@@ -309,25 +287,26 @@
       "commentsCount": 1920
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
+      "id": "/content/3DK00auYeOihOBW2pvAl8gT0l1o",
+      "title": "Chicago Showed Up: A Recap of AWS Community on Tour",
+      "description": "A recap and reflection on the AWS Community on Tour stop in Chicago on April 29, 2026. Around 100 attendees, a hands-on Kiro spec-driven workshop where students out-shipped the room, and a reminder that the Chicago AWS community is alive and well. Written from the perspective of one of the co-hosting User Group leaders.",
+      "url": "https://builder.aws.com/content/3DK00auYeOihOBW2pvAl8gT0l1o",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DK1rgD0q3fSXdxCQx13w376Mzc/chica.webp",
+      "authorName": "Scott Burgholzer",
+      "authorAlias": "scottwx",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yTW1ixurIW9UsCRnWbnyUVXYS3.webp",
+      "location": "IL, US",
+      "lat": 40.0796606,
+      "lng": -89.4337288,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
+        "aws-community",
+        "aws-community-builders",
+        "aws-heroes",
+        "aws-user-groups"
       ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2860,
-      "commentsCount": 319
+      "publishedAt": "2026-05-05T21:43:06.140Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
@@ -348,8 +327,29 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-05T19:21:39.496Z",
-      "likesCount": 5,
-      "commentsCount": 0
+      "likesCount": 6,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2860,
+      "commentsCount": 319
     },
     {
       "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
