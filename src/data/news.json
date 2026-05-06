@@ -1,6 +1,103 @@
 {
-  "updatedAt": "2026-05-06T06:54:54.961Z",
+  "updatedAt": "2026-05-06T07:49:06.072Z",
   "latest": [
+    {
+      "id": "/content/3DKpfKPUspnRvCxx0PqExr32fEl",
+      "title": "Smart Face Recognition Attendance System",
+      "description": "A web-based attendance system that uses face recognition to automatically identify the students and record attendance in realtime using Python and Flask.",
+      "url": "https://builder.aws.com/content/3DKpfKPUspnRvCxx0PqExr32fEl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DLCPd0NRt6jkCSpeghBlmsWWJg/Smar.webp",
+      "authorName": "Arul Murugan K",
+      "authorAlias": "arul2013",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai",
+        "ai-dlc",
+        "architecture",
+        "authorization",
+        "encryption"
+      ],
+      "publishedAt": "2026-05-06T07:45:17.253Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DLEkjP4cLYqoSPk1UkrdBdzkNi",
+      "title": "Hands-On with AWS Databases: Building with DynamoDB & Aurora PostgreSQL from Scratch",
+      "description": "As part of my AWS Cloud Club Unilorin Bootcamp Week 5, \nI completed a hands-on lab project exploring two of AWS's \nmost powerful managed database services Amazon DynamoDB \nand Amazon Aurora PostgreSQL. This post documents my \njourney, challenges, and key takeaways from the experience.",
+      "url": "https://builder.aws.com/content/3DLEkjP4cLYqoSPk1UkrdBdzkNi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DLFAs3T5H9PW2isnseolw61iTG/Scre.webp",
+      "authorName": "Zuluquarnain Sulaiman",
+      "authorAlias": "bytebug64",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-05-06T07:42:26.124Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKw9wqTivEkkoVkdkAovq0jNgl",
+      "title": "My AWS Summit Bengaluru 2026 Experience",
+      "description": "My  experience this year was less about the stage and more about the people, moments, and community behind it all. From the AWS community leaders dinner and keynote announcements to exploring the Developer Lounge, reconnecting with friends, and an emotional Golden Jacket celebration, this summit reminded me why I love being part of the AWS community.\n",
+      "url": "https://builder.aws.com/content/3DKw9wqTivEkkoVkdkAovq0jNgl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DLDLmXGwTNkZGdwHNfip4kcrgO/6db6.webp",
+      "authorName": "Omshree Butani",
+      "authorAlias": "omshree",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eqnFkIPsqWdH22eq0i09Gl3ryt.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [],
+      "publishedAt": "2026-05-06T07:27:21.948Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKqOlUo5gJUpMiyvFLoNqEt2Hs",
+      "title": "Launchpilot AI : Startup Blueprint Generator",
+      "description": "Launchpilot AI is a full stack web application that generates starup blueprint, technology recommendations and deployment process for the user idea.",
+      "url": "https://builder.aws.com/content/3DKqOlUo5gJUpMiyvFLoNqEt2Hs",
+      "imageUrl": "",
+      "authorName": "Karuppannan S",
+      "authorAlias": "karuppannan",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-06T07:06:38.107Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKqSoXUo7Nvn2ByyskVUi6RDgR",
+      "title": "Smart Farming App Built During My Project Kalam Journey",
+      "description": "Built a Smart Farming web app during Project Kalam applying the AWS open source methodology for building smarter software with AI at its core.",
+      "url": "https://builder.aws.com/content/3DKqSoXUo7Nvn2ByyskVUi6RDgR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DL9OBqCFArajoR6OqzaLuHa7EG/Scre.webp",
+      "authorName": "PRAVEEN S",
+      "authorAlias": "codewithpraveen",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "aws-builders",
+        "ai-dlc",
+        "web-development",
+        "machine-learning"
+      ],
+      "publishedAt": "2026-05-06T06:59:16.405Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DKz67Mwce2Ih6o2BsC19OTHSdt",
       "title": "Sports Analytics Hub",
@@ -110,297 +207,6 @@
       "publishedAt": "2026-05-06T04:56:23.694Z",
       "likesCount": 3,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKiyTRukenbe75k8r3ecWOeY0u",
-      "title": "測試標題",
-      "description": "測試描述",
-      "url": "https://builder.aws.com/content/3DKiyTRukenbe75k8r3ecWOeY0u",
-      "imageUrl": "",
-      "authorName": "JUNG-KUANG FU",
-      "authorAlias": "gloryfu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uULC51HeoM00zSfbDMVUAGqngV.webp",
-      "location": "TW",
-      "lat": 23.9739374,
-      "lng": 120.9820179,
-      "tags": [
-        "databases",
-        "amazon-aurora"
-      ],
-      "publishedAt": "2026-05-06T03:26:55.224Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKjaeMaDvA9XBOiNrmXbQ261fV",
-      "title": "Troubleshoot RDS Oracle to Aurora PostgreSQL DMS Migrations with AWS DevOps Agent",
-      "description": "Use AWS DevOps Agent to automatically investigate and remediate common AWS DMS issues when migrating from RDS Oracle to Aurora PostgreSQL — CDC latency, data type conversion failures, and more.",
-      "url": "https://builder.aws.com/content/3DKjaeMaDvA9XBOiNrmXbQ261fV",
-      "imageUrl": "",
-      "authorName": "Chetan Nandikanti",
-      "authorAlias": "chetannk",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33FmXHAkBxXejqG5b3UvsJsqP0s.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-dms",
-        "devops",
-        "amazon-aurora",
-        "oracle"
-      ],
-      "publishedAt": "2026-05-06T03:24:25.014Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKfdYeiMa6HzBHb1rS61n95HUD",
-      "title": "Release Update: OpenArchFlow v0.7.0",
-      "description": "O Open Ark Flow v0.7.0 chegou transformando seus diagramas em código! Agora você gera infraestrutura Terraform (AWS) direto do desenho, com precisão garantida pela IA do Gemini 2.5 Flash. \n\nA nova versão inclui colaboração P2P em tempo real com criptografia E2EE, editor de código integrado e painéis de métricas com injeção de falhas. Unindo design visual e rigor técnico, a ferramenta 100% open-source prepara terreno para o multicloud. Acesse e experimente hoje mesmo: openarchflow.cloud!\n",
-      "url": "https://builder.aws.com/content/3DKfdYeiMa6HzBHb1rS61n95HUD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKhjrYLbSLuAUAtefTfZtz0shd/scre.webp",
-      "authorName": "Rafael Floriano Sousa Sales",
-      "authorAlias": "rfsales",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3As90rZYCCmGB3fT8CBWMhjj4wZ.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "terraform",
-        "ai",
-        "mcp",
-        "aws-capabilities",
-        "aws-innovations"
-      ],
-      "publishedAt": "2026-05-06T03:09:18.051Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKeQDjmyrtJDapiVJBlzHauZvu",
-      "title": "AWS Builder Center — Mais que uma plataforma de cursos",
-      "description": "Uma visão prática e pessoal sobre o AWS Builder Center, mostrando como a plataforma vai além de cursos e funciona como um hub completo para aprender, praticar, se conectar com a comunidade e construir sua identidade como desenvolvedor dentro do ecossistema AWS.",
-      "url": "https://builder.aws.com/content/3DKeQDjmyrtJDapiVJBlzHauZvu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKfGffdoXS0NvoiyIZKtaT1ETt/bann.webp",
-      "authorName": "Pedro Filipe Borges",
-      "authorAlias": "pedroborgesdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjV06Ksz2BC4LUdopCgLP6GmSn.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-06T02:47:11.596Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKboWnp4bf4cqwP8yTd2slzSkd",
-      "title": "🚀 Como Ter um Mentor de Código com Inteligência Artificial 24/7 (E de Graça!)",
-      "description": "a infraestrutura está pronta e a inovação não para. Tony Stark que se cuide, a concorrência chegou pesada",
-      "url": "https://builder.aws.com/content/3DKboWnp4bf4cqwP8yTd2slzSkd",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKdkStJgBpE4VqngRCYqM7wjmT/Whats.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "tech"
-      ],
-      "publishedAt": "2026-05-06T02:42:55.657Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DITR4CtN49XKiH10D5i2s5fd8x",
-      "title": "Building a Local AI Assistant (JARVIS) Using AI-DLC Workflow in AWS Kiro",
-      "description": "A hands-on journey of building a local AI assistant using FastAPI, React, and Ollama with the AI-DLC workflow in AWS Kiro, covering architecture, real-time communication, and key development learnings.",
-      "url": "https://builder.aws.com/content/3DITR4CtN49XKiH10D5i2s5fd8x",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIwfj4rkyneLorlTPENz3Lc9pw/Scre.webp",
-      "authorName": "Kaviyarasu P",
-      "authorAlias": "kaviyarasup2411",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai-dlc",
-        "kiro",
-        "ai",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-06T02:27:25.160Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKUm10xdqaQhrZn7hU5Oj0yFU0",
-      "title": "5 Ferramentas do AWS Builder Center que vão salvar o seu currículo na Engenharia",
-      "description": "Deixe os métodos tradicionais no passado e traga os seus projetos universitários para o mundo digital. Conheça as plataformas gratuitas ideais para transformar conceitos complexos em competências tecnológicas altamente procuradas pelos recrutadores.",
-      "url": "https://builder.aws.com/content/3DKUm10xdqaQhrZn7hU5Oj0yFU0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKV1QsUFZBvwKJR7VV0fkqJdhc/Gemi.webp",
-      "authorName": "Giovana de Oliveira Simões",
-      "authorAlias": "giovanasimoes",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiJ4Sv3DafFkPHIhDea1VGeUYg.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "students",
-        "engineering-practices",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-05-06T02:12:23.818Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKWCP0Kfj36qN1fENIBwmxTJr8",
-      "title": "Cloud não é só tecnologia: como a AWS impacta negócios?",
-      "description": "Quando falamos em computação em nuvem, é comum pensar primeiro em servidores, bancos de dados e arquitetura. Mas essa visão é limitada.\n\nA verdade é que a nuvem — especialmente plataformas como a Amazon Web Services — não é apenas uma mudança tecnológica.\nEla representa uma transformação direta na forma como empresas operam, inovam e crescem.\n\nNeste artigo, quero trazer uma visão além do técnico: como a AWS impacta negócios na prática.",
-      "url": "https://builder.aws.com/content/3DKWCP0Kfj36qN1fENIBwmxTJr8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKY7N3mCr9dcOaPZfJlvy56Nlu/clou.webp",
-      "authorName": "Sara Ferreira",
-      "authorAlias": "sarinha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-05-06T01:45:35.028Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DKOwf5avWmT9dHW3WlcXwUWRwN",
-      "title": "Hospedagem Serverless: Como publiquei meu primeiro site estático no Amazon S3",
-      "description": "\n",
-      "url": "https://builder.aws.com/content/3DKOwf5avWmT9dHW3WlcXwUWRwN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKV69BKAH4Q3RsUEzZYON2UAPn/AWS-.webp",
-      "authorName": "Jhenefer Amorim",
-      "authorAlias": "jhene",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8WaVaQqM0efMuWxNDX1KsK30M.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-06T01:29:25.209Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKQbH3zIanh5JgguBqau2BG40p",
-      "title": "CogniPath Won LATAM. Then Didn't. Here's What Happens Next.",
-      "description": "I built CogniPath to help students with visual impairments, dyslexia, and ADHD access STEM content in Latin American public schools. We reached LATAM Regional Champion. Then Argentina disqualified us. Here's what I learned — and what comes next.",
-      "url": "https://builder.aws.com/content/3DKQbH3zIanh5JgguBqau2BG40p",
-      "imageUrl": "",
-      "authorName": "Misael Calisaya",
-      "authorAlias": "misaelcalisaya",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxOpmzKe504TGsNim2zQVfnXiN.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
-      "tags": [
-        "LATAM",
-        "social-impact"
-      ],
-      "publishedAt": "2026-05-06T01:09:58.083Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3D8bt4OTkEv9188vn5nKtsdXJj7",
-      "title": "Como Sair do Zero com os Melhores Cursos Gratuitos AWS",
-      "description": "Como líder estudantil AWS, vejo muitos estudantes perdidos entre tantos cursos e serviços. Neste artigo, compartilho minha curadoria pessoal das melhores trilhas gratuitas dentro do AWS Skill Builder para você dominar a nuvem em 2026, com foco em prática, gamificação e certificações",
-      "url": "https://builder.aws.com/content/3D8bt4OTkEv9188vn5nKtsdXJj7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKFQIVXcA4e1EhCJJ9Goc83IQG/unna.webp",
-      "authorName": "Gabriel Campos Seemann",
-      "authorAlias": "gseemann",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "aws-skill-builder"
-      ],
-      "publishedAt": "2026-05-05T23:14:10.614Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKC3mp7WOJ8vVcVV0N48VIMqEz",
-      "title": "Do Localhost à Escala Global: O Limite do \"Funciona na Minha Máquina\"",
-      "description": "Descubra como transformar o seu código local em soluções de alto impacto na nuvem. Entenda a importância de escalar as suas aplicações e saiba como a comunidade do AWS Builder Center pode acelerar a sua carreira como programador.",
-      "url": "https://builder.aws.com/content/3DKC3mp7WOJ8vVcVV0N48VIMqEz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKD0hVko4IxTHD9mSAlaNlPsSs/Scre.webp",
-      "authorName": "Matheus Dev",
-      "authorAlias": "omaatheus",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUQGDA3OIFXIYFTk7BaAz8AOuH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-ec2",
-        "amazon-s3",
-        "students",
-        "visual-studio"
-      ],
-      "publishedAt": "2026-05-05T22:56:18.496Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKAkkkcnuX2ztbmx793EWLLtqe",
-      "title": "Desvendando Conteiners: A Receita para Aplicativos Portáteis e Eficientes.",
-      "description": "De forma simples e didática, o conceito de contêineres na tecnologia, explicado como eles permitem empacotar aplicações com todas as suas dependências para garantir portabilidade, consistência e eficiência em qualquer ambiente.\n\nAlém disso, o texto explora as ferramentas fundamentais como Docker e Kubernetes, e  como elas simplificam a criação, execução e orquestração de aplicações em escala.",
-      "url": "https://builder.aws.com/content/3DKAkkkcnuX2ztbmx793EWLLtqe",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKBFrsW5Zf61MR7cx4f6YyTglD/1_v3.webp",
-      "authorName": "Victor Romário Silva",
-      "authorAlias": "romario88",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36tu5yFPTit28D1zMgoYn4jqMVF.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "containers",
-        "amazon-ecs",
-        "amazon-eks",
-        "amazon-ecr",
-        "aws-fargate"
-      ],
-      "publishedAt": "2026-05-05T22:42:38.445Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DKAKluL6L1hzXzcZYWThQLRtRM",
-      "title": "Building a Serverless DynamoDB MCP Server - Making Your AI Talk to Your Database",
-      "description": "Built a fully serverless MCP backend on AWS that lets AI assistants interact \nwith DynamoDB conversationally - using Lambda, API Gateway, IAM SigV4, and \nTerraform. Zero servers. Ten tools. One natural language prompt.",
-      "url": "https://builder.aws.com/content/3DKAKluL6L1hzXzcZYWThQLRtRM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKAyoGLeRJRHGc63Q016r25J2l/dfghj.webp",
-      "authorName": "Naveen G",
-      "authorAlias": "naveen15",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36t9Fs5MA6HnbMaOoRbR87lw00D.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "serverless",
-        "kiro",
-        "mcp",
-        "mcp-server",
-        "ai"
-      ],
-      "publishedAt": "2026-05-05T22:38:44.338Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -445,26 +251,6 @@
       "commentsCount": 18
     },
     {
-      "id": "/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
-      "title": "Líder Estudantil do AWS Builder: bastidores, propósito e a arte de fazer acontecer! 🚀☁️",
-      "description": "A minha segunda semana como Líder Estudantil do AWS Builder",
-      "url": "https://builder.aws.com/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9CBYIGdErvQujjptGYY5Hps7I/Whats.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "tech"
-      ],
-      "publishedAt": "2026-05-02T01:20:25.552Z",
-      "likesCount": 3,
-      "commentsCount": 3
-    },
-    {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
       "description": "ASET (Academic Safety and Evidencing Truth) is an AI-powered claim verification platform built on AWS that verifies scientific claims against 1.2M+ peer-reviewed papers across 8 domains — and automatically fetches and permanently stores new papers from arXiv, PubMed, etc. when gaps are found, making the knowledge base self-growing with every query. From typed claims to YouTube videos and uploaded documents, ASET delivers evidence-backed trust scores in under 10 seconds.",
@@ -486,6 +272,26 @@
       "commentsCount": 326
     },
     {
+      "id": "/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
+      "title": "Líder Estudantil do AWS Builder: bastidores, propósito e a arte de fazer acontecer! 🚀☁️",
+      "description": "A minha segunda semana como Líder Estudantil do AWS Builder",
+      "url": "https://builder.aws.com/content/3D99RQJ8f2y7IrMyI4C7jSN4Zc3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D9CBYIGdErvQujjptGYY5Hps7I/Whats.webp",
+      "authorName": "Yuri Oliveira Santana",
+      "authorAlias": "ysantana",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "tech"
+      ],
+      "publishedAt": "2026-05-02T01:20:25.552Z",
+      "likesCount": 3,
+      "commentsCount": 3
+    },
+    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -503,7 +309,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3449,
+      "likesCount": 3450,
       "commentsCount": 1921
     },
     {
@@ -615,24 +421,24 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3DKQbH3zIanh5JgguBqau2BG40p",
-      "title": "CogniPath Won LATAM. Then Didn't. Here's What Happens Next.",
-      "description": "I built CogniPath to help students with visual impairments, dyslexia, and ADHD access STEM content in Latin American public schools. We reached LATAM Regional Champion. Then Argentina disqualified us. Here's what I learned — and what comes next.",
-      "url": "https://builder.aws.com/content/3DKQbH3zIanh5JgguBqau2BG40p",
-      "imageUrl": "",
-      "authorName": "Misael Calisaya",
-      "authorAlias": "misaelcalisaya",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxOpmzKe504TGsNim2zQVfnXiN.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
+      "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
+      "title": "How to Survive Your First 90 Days as a Developer",
+      "description": "Landing your first role is only the beginning. The first 90 days as a developer are a different kind of challenge, one built on ambiguity, real systems and team dynamics that no bootcamp covers. This is your guide to navigating that transition with clarity and intention.",
+      "url": "https://builder.aws.com/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIUDVE0s4A5IggmYvGDhp9bTF7/IMG_.webp",
+      "authorName": "Ifeanyi O",
+      "authorAlias": "rexify",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qe0NOkG2CTZNcXKs61RHSa9O4.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
-        "LATAM",
-        "social-impact"
+        "developer",
+        "career"
       ],
-      "publishedAt": "2026-05-06T01:09:58.083Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "publishedAt": "2026-05-05T08:23:09.383Z",
+      "likesCount": 10,
+      "commentsCount": 4
     },
     {
       "id": "/content/3DK00auYeOihOBW2pvAl8gT0l1o",
@@ -657,24 +463,24 @@
       "commentsCount": 2
     },
     {
-      "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
-      "title": "How to Survive Your First 90 Days as a Developer",
-      "description": "Landing your first role is only the beginning. The first 90 days as a developer are a different kind of challenge, one built on ambiguity, real systems and team dynamics that no bootcamp covers. This is your guide to navigating that transition with clarity and intention.",
-      "url": "https://builder.aws.com/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIUDVE0s4A5IggmYvGDhp9bTF7/IMG_.webp",
-      "authorName": "Ifeanyi O",
-      "authorAlias": "rexify",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qe0NOkG2CTZNcXKs61RHSa9O4.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
+      "id": "/content/3DKQbH3zIanh5JgguBqau2BG40p",
+      "title": "CogniPath Won LATAM. Then Didn't. Here's What Happens Next.",
+      "description": "I built CogniPath to help students with visual impairments, dyslexia, and ADHD access STEM content in Latin American public schools. We reached LATAM Regional Champion. Then Argentina disqualified us. Here's what I learned — and what comes next.",
+      "url": "https://builder.aws.com/content/3DKQbH3zIanh5JgguBqau2BG40p",
+      "imageUrl": "",
+      "authorName": "Misael Calisaya",
+      "authorAlias": "misaelcalisaya",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxOpmzKe504TGsNim2zQVfnXiN.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
       "tags": [
-        "developer",
-        "career"
+        "LATAM",
+        "social-impact"
       ],
-      "publishedAt": "2026-05-05T08:23:09.383Z",
-      "likesCount": 10,
-      "commentsCount": 4
+      "publishedAt": "2026-05-06T01:09:58.083Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -699,6 +505,29 @@
       "commentsCount": 330
     },
     {
+      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
+      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
+      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
+      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
+      "authorName": "Ishaq Ishaq",
+      "authorAlias": "ishaqishaq",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "amazon-aurora",
+        "amazon-dynamodb",
+        "students",
+        "relational-database",
+        "non-relational-database"
+      ],
+      "publishedAt": "2026-05-05T16:52:57.854Z",
+      "likesCount": 2,
+      "commentsCount": 3
+    },
+    {
       "id": "/content/3DKWCP0Kfj36qN1fENIBwmxTJr8",
       "title": "Cloud não é só tecnologia: como a AWS impacta negócios?",
       "description": "Quando falamos em computação em nuvem, é comum pensar primeiro em servidores, bancos de dados e arquitetura. Mas essa visão é limitada.\n\nA verdade é que a nuvem — especialmente plataformas como a Amazon Web Services — não é apenas uma mudança tecnológica.\nEla representa uma transformação direta na forma como empresas operam, inovam e crescem.\n\nNeste artigo, quero trazer uma visão além do técnico: como a AWS impacta negócios na prática.",
@@ -717,6 +546,28 @@
       "publishedAt": "2026-05-06T01:45:35.028Z",
       "likesCount": 1,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3CNuc41cYvQI9H7ePaMmNPiQQeJ",
+      "title": "AWS Summit Warsaw Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in Warsaw, come say hi at the Developer Community Zone and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3CNuc41cYvQI9H7ePaMmNPiQQeJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D8159TFC9kcKg6JlvGBadXcUDh/4-pn.webp",
+      "authorName": "Francesca",
+      "authorAlias": "sasfran",
+      "authorAvatarUrl": "",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "aws-skill-builder",
+        "agentic-ai",
+        "aws-community-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-05T10:20:40.806Z",
+      "likesCount": 0,
+      "commentsCount": 42
     },
     {
       "id": "/content/3DGXx5ZuHprgqbQhb6nhxv3yO5k",
@@ -758,49 +609,6 @@
       "publishedAt": "2026-05-02T19:59:43.068Z",
       "likesCount": 18,
       "commentsCount": 8
-    },
-    {
-      "id": "/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "title": "Do Zero ao Primeiro Projeto na AWS: Um Guia Realista para Universitários",
-      "description": "A verdade é simples: na nuvem, você só aprende de verdade quando constrói.",
-      "url": "https://builder.aws.com/content/3DGERSsymibqQwea5jdUKcF1MB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DGFTerQi39UWhIN5u3ukNveOpd/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-05-04T13:27:41.540Z",
-      "likesCount": 9,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "title": "Scaling Up: Mastering DynamoDB and Aurora PostgreSQL on AWS",
-      "description": "Mastering AWS databases: From troubleshooting multi-line terminal errors to executing ACID transactions. This article explores the practical differences between DynamoDB and Aurora, featuring my strategies for cost control and data integrity.",
-      "url": "https://builder.aws.com/content/3DJMCWoUgGTYpzCK64Gv6U0rQNi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJOLUPZY9BXyNfH5ynOFxrZgEF/Gemi.webp",
-      "authorName": "Ishaq Ishaq",
-      "authorAlias": "ishaqishaq",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-aurora",
-        "amazon-dynamodb",
-        "students",
-        "relational-database",
-        "non-relational-database"
-      ],
-      "publishedAt": "2026-05-05T16:52:57.854Z",
-      "likesCount": 2,
-      "commentsCount": 2
     }
   ]
 }
