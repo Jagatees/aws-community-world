@@ -1,6 +1,43 @@
 {
-  "updatedAt": "2026-05-06T00:31:26.964Z",
+  "updatedAt": "2026-05-06T01:35:08.647Z",
   "latest": [
+    {
+      "id": "/content/3DKOwf5avWmT9dHW3WlcXwUWRwN",
+      "title": "Hospedagem Serverless: Como publiquei meu primeiro site estático no Amazon S3",
+      "description": "\n",
+      "url": "https://builder.aws.com/content/3DKOwf5avWmT9dHW3WlcXwUWRwN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DKV69BKAH4Q3RsUEzZYON2UAPn/AWS-.webp",
+      "authorName": "Jhenefer Amorim",
+      "authorAlias": "jhene",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8WaVaQqM0efMuWxNDX1KsK30M.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-06T01:29:25.209Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DKQbH3zIanh5JgguBqau2BG40p",
+      "title": "CogniPath Won LATAM. Then Didn't. Here's What Happens Next.",
+      "description": "I built CogniPath to help students with visual impairments, dyslexia, and ADHD access STEM content in Latin American public schools. We reached LATAM Regional Champion. Then Argentina disqualified us. Here's what I learned — and what comes next.",
+      "url": "https://builder.aws.com/content/3DKQbH3zIanh5JgguBqau2BG40p",
+      "imageUrl": "",
+      "authorName": "Misael Calisaya",
+      "authorAlias": "misaelcalisaya",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxOpmzKe504TGsNim2zQVfnXiN.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "LATAM",
+        "social-impact"
+      ],
+      "publishedAt": "2026-05-06T01:09:58.083Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3D8bt4OTkEv9188vn5nKtsdXJj7",
       "title": "Como Sair do Zero com os Melhores Cursos Gratuitos AWS",
@@ -18,7 +55,7 @@
         "aws-skill-builder"
       ],
       "publishedAt": "2026-05-05T23:14:10.614Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -175,52 +212,26 @@
       "publishedAt": "2026-05-05T20:16:42.879Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3Cm47SufWrIJdwFdkMp6mFVRcoI",
-      "title": "Como o Amazon Rekognition me mostrou que IA pode ser mais acessível para estudantes",
-      "description": "Neste artigo, compartilho como o Amazon Rekognition me mostrou que é possível começar a explorar inteligência artificial de forma mais acessível e prática. Mostro como esse serviço pode ajudar estudantes a experimentar visão computacional, entender integrações na AWS e ganhar confiança para criar projetos reais sem começar por uma complexidade excessiva.",
-      "url": "https://builder.aws.com/content/3Cm47SufWrIJdwFdkMp6mFVRcoI",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJsckgwTMDfm8sQN5WzwK672AE/9051.webp",
-      "authorName": "ArthurBCG",
-      "authorAlias": "arthurbcg",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai",
-        "aws-builders",
-        "students",
-        "amazon-rekognition",
-        "ai-services"
-      ],
-      "publishedAt": "2026-05-05T20:06:51.795Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DJn5MT7ON5OxlEaF2cVPYDDVtA",
-      "title": "Kubernetes at Scale with EKS Auto Mode: One Click to Production AI",
-      "description": "Amazon EKS Auto Mode lets you go from zero to a production-grade Kubernetes cluster with a single click. No infrastructure expertise required. In this post, we break down what Auto Mode actually does, how it handles AI workloads, and why it might mean you don't need a dedicated platform team.",
-      "url": "https://builder.aws.com/content/3DJn5MT7ON5OxlEaF2cVPYDDVtA",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJokbHs8Kx7AB3pUgW3Gd25t8q/Nano.webp",
-      "authorName": "John",
-      "authorAlias": "jplynd",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "kubernetes",
-        "amazon-eks"
-      ],
-      "publishedAt": "2026-05-05T19:57:55.015Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3DIi0dqA9gWI4g6LkKEdaIiDrHT",
+      "title": "AWS Summit Singapore Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in Singapore, drop by the Developer Community Zone in the Expo and join in on our Builder Question of the Day challenge!",
+      "url": "https://builder.aws.com/content/3DIi0dqA9gWI4g6LkKEdaIiDrHT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DIos7ZS2bZ6nVBukwYPHgHJzxf/Sing.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-05-05T10:59:17.736Z",
+      "likesCount": 3,
+      "commentsCount": 53
+    },
     {
       "id": "/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
       "title": "Why Your Campus Needs an AWS Student Builder Group (From a Student’s POV)",
@@ -241,8 +252,8 @@
         "ai-assisted"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 23,
-      "commentsCount": 15
+      "likesCount": 25,
+      "commentsCount": 16
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -284,7 +295,50 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3449,
-      "commentsCount": 1920
+      "commentsCount": 1921
+    },
+    {
+      "id": "/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
+      "title": "Aprender tecnologia construindo: Por que o primeiro projeto vale mais do que esperar estar pronto",
+      "description": "Este artigo mostra como o primeiro projeto pode ser o ponto de virada para quem está começando em tecnologia. A ideia central é que aprender construindo torna o estudo mais prático, dá direção ao aprendizado e ajuda estudantes a ganharem confiança para transformar teoria em experiência real.",
+      "url": "https://builder.aws.com/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJnd6zDyd6AuFzetngWtSWzphS/Chat.webp",
+      "authorName": "Kaua Almeida",
+      "authorAlias": "kauatech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVepJX70rpOFxJjw2T9EdpZ1F6.webp",
+      "location": "CE, BR",
+      "lat": -5.3264703,
+      "lng": -39.7156073,
+      "tags": [
+        "aws-builders",
+        "project",
+        "tech",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-05T19:21:39.496Z",
+      "likesCount": 7,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2860,
+      "commentsCount": 319
     },
     {
       "id": "/content/3DK00auYeOihOBW2pvAl8gT0l1o",
@@ -307,49 +361,6 @@
       "publishedAt": "2026-05-05T21:43:06.140Z",
       "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
-      "title": "Aprender tecnologia construindo: Por que o primeiro projeto vale mais do que esperar estar pronto",
-      "description": "Este artigo mostra como o primeiro projeto pode ser o ponto de virada para quem está começando em tecnologia. A ideia central é que aprender construindo torna o estudo mais prático, dá direção ao aprendizado e ajuda estudantes a ganharem confiança para transformar teoria em experiência real.",
-      "url": "https://builder.aws.com/content/3DJmj38d6t5XFMEFjjPNxqr4txP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJnd6zDyd6AuFzetngWtSWzphS/Chat.webp",
-      "authorName": "Kaua Almeida",
-      "authorAlias": "kauatech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVepJX70rpOFxJjw2T9EdpZ1F6.webp",
-      "location": "CE, BR",
-      "lat": -5.3264703,
-      "lng": -39.7156073,
-      "tags": [
-        "aws-builders",
-        "project",
-        "tech",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-05T19:21:39.496Z",
-      "likesCount": 6,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2860,
-      "commentsCount": 319
     },
     {
       "id": "/content/3DEc8XidkcKoc8SrIiY4MMdaQbw",
@@ -412,28 +423,6 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1933,
       "commentsCount": 269
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1438,
-      "commentsCount": 329
     }
   ]
 }
