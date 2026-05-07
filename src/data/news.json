@@ -1,6 +1,278 @@
 {
-  "updatedAt": "2026-05-07T12:42:41.141Z",
+  "updatedAt": "2026-05-07T18:38:05.191Z",
   "latest": [
+    {
+      "id": "/content/3DPIUlJLFKee18GvFgfNLkCAbjN",
+      "title": "Além da teoria: aprendendo cloud com comunidade, prática e propósito",
+      "description": "Neste artigo, compartilho como o AWS Builder Center pode ajudar estudantes a construírem uma jornada em cloud além da sala de aula, conectando aprendizado, comunidade e prática.",
+      "url": "https://builder.aws.com/content/3DPIUlJLFKee18GvFgfNLkCAbjN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPJ7whzHzA4HOfuwGmzhjAFGOa/Chat.webp",
+      "authorName": "Nicolle Maia",
+      "authorAlias": "niccmaia",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "learning-and-development",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-05-07T18:16:38.704Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPFwigPo7gENxGmjdhCr5a66p1",
+      "title": "Importing Historical Contact Center Data to Amazon Connect with Kiro",
+      "description": "Using conversational Kiro session (Vibe coding) to easily convert thousands of rows of historical contact center data to Connect import format.",
+      "url": "https://builder.aws.com/content/3DPFwigPo7gENxGmjdhCr5a66p1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPGUGeeZx8jKRLxQpsdAFYevsU/imag.webp",
+      "authorName": "Alex Iliev",
+      "authorAlias": "alexiaws",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-07T18:04:33.362Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D1dYOYynMHfhqiIRoEYV89LgSH",
+      "title": "Building Near Real-Time Data Pipelines with AWS DMS: Full Load + CDC",
+      "description": "A technical recap of my AWS Summit Bangalore 2026 demo showing how RDS MySQL, AWS DMS, binlog-based CDC, and monitoring fit together in a near real-time data pipeline.\n",
+      "url": "https://builder.aws.com/content/3D1dYOYynMHfhqiIRoEYV89LgSH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOtc3BSA32l2NNXKdtcZauYmCm/PHOT.webp",
+      "authorName": "Nirmal Chhodvadiya",
+      "authorAlias": "nirmalpatel008",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DOrlpm2iG0UtTuiLFodDjJXpca.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-dms",
+        "amazon-rds",
+        "intuitive-dashboards",
+        "real-time"
+      ],
+      "publishedAt": "2026-05-07T17:32:20.778Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPBOhy4joWxCHuheHgufDJiW8i",
+      "title": "AWS Community Globe: New Builders, News Updates Tab, and Better Maps",
+      "description": "AWS Community Globe now welcomes 1,069 new AWS Community Builders, adds Builder Center news, new map views, improved 2D navigation, Student Builder Groups naming, new markers, and a refreshed splash screen.",
+      "url": "https://builder.aws.com/content/3DPBOhy4joWxCHuheHgufDJiW8i",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPEPaDq2prrWLT4GlmMovNkCWz/Chat.webp",
+      "authorName": "Jagatees",
+      "authorAlias": "jagatees",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32SoiS66MlJxjIlofqCZDnRbLsm.webp",
+      "location": "SG",
+      "lat": 1.357107,
+      "lng": 103.8194992,
+      "tags": [
+        "kiro",
+        "amazon-route53",
+        "aws-amplify"
+      ],
+      "publishedAt": "2026-05-07T17:30:07.844Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPB8ulxetk1ZJcyHLQ5r90e8q2",
+      "title": "Fraud Detection in Reward Points",
+      "description": "Loyalty program serves millions of members worldwide. Every month, Loyalty & Revenue Integrity Team review fraudulent activity, fake employee enrollments, suspicious point accumulation, manual point manipulation, and dormant account takeovers. This system will automate this work flow.",
+      "url": "https://builder.aws.com/content/3DPB8ulxetk1ZJcyHLQ5r90e8q2",
+      "imageUrl": "",
+      "authorName": "Nav",
+      "authorAlias": "navvenu",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai-ml",
+        "amazon-sagemaker",
+        "amazon-neptune"
+      ],
+      "publishedAt": "2026-05-07T17:14:59.300Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DP7LFdWkKnr7rZEdTm9RfQ9dt4",
+      "title": "IA \"Plug and Play\": Como usei AWS SDK para transformar meus projetos de faculdade",
+      "description": "O meu artigo explora como estudantes podem elevar o nível de projetos acadêmicos usando IA como serviço da AWS via Boto3. Eu demonstro, com scripts simples, o uso do Amazon Rekognition para identificar objetos e do Amazon Polly para criar áudio natural. focando na agilidade de prototipagem, integração de sistemas e no poder da nuvem para transformar ideias em soluções reais.",
+      "url": "https://builder.aws.com/content/3DP7LFdWkKnr7rZEdTm9RfQ9dt4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPAPBMWiRDDmBEPhJ8ukIuegHl/6bc9.webp",
+      "authorName": "Gabriel Campos Seemann",
+      "authorAlias": "gseemann",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-sdk",
+        "amazon-rekognition",
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-05-07T17:03:22.514Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DP29JD6wQzN0ldcl76KuKn8uVk",
+      "title": "Amazon Builder Center, AWS e Carreira: Como Entender Onde Você se Encaixa no Mercado de Tecnologia",
+      "description": "Um artigo sobre carreira em tecnologia, mentalidade builder e o papel da AWS na construção profissional moderna. O texto explora como encontrar seu espaço dentro do ecossistema cloud, entender diferentes trilhas de carreira",
+      "url": "https://builder.aws.com/content/3DP29JD6wQzN0ldcl76KuKn8uVk",
+      "imageUrl": "",
+      "authorName": "Andre Veras Fernandes",
+      "authorAlias": "andreverasfernandes",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "learning-and-development",
+        "training",
+        "learn"
+      ],
+      "publishedAt": "2026-05-07T16:31:54.133Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Czo3bWh80tdOUAlhawYJZSoMNj",
+      "title": "Como o AWS Lambda me mostrou que dá para automatizar sem complicar",
+      "description": "Neste artigo, mostro como o AWS Lambda me ajudou a entender que automatizar na nuvem pode ser simples e acessível para estudantes. Compartilho como o modelo serverless facilita a criação de soluções práticas, reduz a complexidade de infraestrutura e abre novas possibilidades para construir projetos com mais agilidade e confiança.",
+      "url": "https://builder.aws.com/content/3Czo3bWh80tdOUAlhawYJZSoMNj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJt6CKJbgZhMEcgDDpzG3tsn07/gene.webp",
+      "authorName": "ArthurBCG",
+      "authorAlias": "arthurbcg",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-lambda",
+        "aws-builders",
+        "students",
+        "ai"
+      ],
+      "publishedAt": "2026-05-07T16:15:46.735Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DNpCyXcpT4Y6ENRNZAAP7c8PUE",
+      "title": "FocusHub - A Virtual Study Room",
+      "description": "I made FocusHub, a virutual study room platform, where students can go to study together on online . FocusHub is like a room where students can work on their schoolwork without getting distracted. Students can join a study room, colloborate  and keep track of how long they study. this helps students stay motivated and focused on their schoolwork because they are all studying together in an online space. ",
+      "url": "https://builder.aws.com/content/3DNpCyXcpT4Y6ENRNZAAP7c8PUE",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOxIBCcLASY1H4ml9wIpRRfmPZ/Scre.webp",
+      "authorName": "kaviyamurugesan02",
+      "authorAlias": "kaviya21",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "kiro-agent"
+      ],
+      "publishedAt": "2026-05-07T15:43:34.008Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DOs2YLuK5tOXhPV0NYwoLDTe9W",
+      "title": "Inteligência Artificial e AWS",
+      "description": "“IA vai acabar com os programadores.” Será?",
+      "url": "https://builder.aws.com/content/3DOs2YLuK5tOXhPV0NYwoLDTe9W",
+      "imageUrl": "",
+      "authorName": "Lucca",
+      "authorAlias": "luccalmo629",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzEgoqjzT5QsRsxQA0Ik7vv1AX.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai",
+        "students"
+      ],
+      "publishedAt": "2026-05-07T14:43:27.506Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DOoCE0ETBgqO7WGnqTqxRgVjvh",
+      "title": "Beginner to Advanced AWS Data Analyst Projects Using AWS Cloud",
+      "description": "Here are some strong Data Analyst projects using AWS Cloud that are good for resumes, portfolios, internships, and interviews.",
+      "url": "https://builder.aws.com/content/3DOoCE0ETBgqO7WGnqTqxRgVjvh",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOoqTQlccKdPKxyKEnh5301fko/Chat.webp",
+      "authorName": "Abinesh M",
+      "authorAlias": "abineshm",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36FU9fzncaqmd1Ot6MAKgL6wEa9.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "data",
+        "aws-data-pipeline",
+        "aws-certification",
+        "aws-cli",
+        "aws-cloud9"
+      ],
+      "publishedAt": "2026-05-07T14:05:21.636Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DOm2NMySJakwgNjGBSxadTnAYz",
+      "title": "Counting on an EU AI Act Delay? That Bet Got Riskier Last Week: Why FSI Needs a Bias for Action",
+      "description": "Negotiations to postpone the August 2nd, EU AI Act compliance deadline for high-risk AI systems collapsed after 12 hours of talks. If your FSI customers’ CISOs and CROs were planning around a postponement, they need to know that assumption is no longer safe.",
+      "url": "https://builder.aws.com/content/3DOm2NMySJakwgNjGBSxadTnAYz",
+      "imageUrl": "",
+      "authorName": "Nick",
+      "authorAlias": "nkotakis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DOoJoaT6kBTeC2sWF9fhu8B7Fm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "security-and-compliance",
+        "financial-services-industry"
+      ],
+      "publishedAt": "2026-05-07T13:51:01.879Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DOj66CFOoXhCRAniLyNb8xjLwZ",
+      "title": "The AWS Generative AI Professional Exam: What the Blueprint Doesn’t Reveal",
+      "description": "Tips about the AWS Generative AI Professional exam",
+      "url": "https://builder.aws.com/content/3DOj66CFOoXhCRAniLyNb8xjLwZ",
+      "imageUrl": "",
+      "authorName": "Erick Mancz",
+      "authorAlias": "imancz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "exam-prep",
+        "aws-certification",
+        "training-and-certification",
+        "generative-ai",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-07T13:22:41.389Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DObWmsPk02gyq7Tap4rYcXw3Fy",
       "title": "Testing AI-Generated Code in Seconds with Code Interpreter: A PySpark Case Study (and Beyond)",
@@ -15,7 +287,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-05-07T12:28:54.704Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -117,8 +389,8 @@
       "authorAlias": "danmartin",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
       "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
+      "lat": 22.3492155,
+      "lng": 114.1857978,
       "tags": [
         "training-and-certification",
         "aws-certification"
@@ -147,282 +419,6 @@
       "publishedAt": "2026-05-07T08:57:38.679Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DLqvth3fZlcjVSMSWB5VkScB6F",
-      "title": "Resume Builder Using Kiro",
-      "description": "A web app built with python to create resumes and portfolio instantly .Build using Kiro with AI-DLC.",
-      "url": "https://builder.aws.com/content/3DLqvth3fZlcjVSMSWB5VkScB6F",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNz0QBekGAerTAi3K7Be0t5WiS/Scre.webp",
-      "authorName": "Amirtha Anitha R",
-      "authorAlias": "anitha12",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai-dlc",
-        "python",
-        "flask",
-        "ai",
-        "project"
-      ],
-      "publishedAt": "2026-05-07T08:27:44.100Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNxmGFkY8zleRtVo2rN0av45on",
-      "title": "I Thought Cloud Was Only for “Advanced Engineers”",
-      "description": "Talking about my learn experience evolution in aws builder centre and tips for a good start.",
-      "url": "https://builder.aws.com/content/3DNxmGFkY8zleRtVo2rN0av45on",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DO8Nd6aTHLMMwueZC0padafW1O/arti.webp",
-      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
-      "authorAlias": "mvrga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "amazon-s3",
-        "awsreinvent2024",
-        "aws-user-groups"
-      ],
-      "publishedAt": "2026-05-07T08:18:31.666Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DO6IISxwgGf0ImfXPgTUILSUvy",
-      "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 4]",
-      "description": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 4]",
-      "url": "https://builder.aws.com/content/3DO6IISxwgGf0ImfXPgTUILSUvy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DO6ROchKT8ibQI41u7F45tAorN/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-07T07:59:40.120Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/2xCBIAy7KWpmeXxij2TDOkxfW03",
-      "title": "Terraform Your AWS AgentCore",
-      "description": "There is no shortage of content on agentic workflows and AI today. But most of it stops at the concept. Today we focus on what actually matters in production: the right platform to host your non-deterministic workloads and the right way to ship it. Enter Amazon Bedrock AgentCore and Terraform.",
-      "url": "https://builder.aws.com/content/2xCBIAy7KWpmeXxij2TDOkxfW03",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DO5aNVyYBgeCNkGwak2ott8LiP/https.webp",
-      "authorName": "Tarlan Huseynov",
-      "authorAlias": "tarlan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37i7I3UjyXtImHfrrh8pPwIFZr6.webp",
-      "location": "AZ",
-      "lat": 40.3936294,
-      "lng": 47.7872508,
-      "tags": [
-        "amazon-bedrock-agentcore",
-        "terraform",
-        "agentic-ai",
-        "strands-agents",
-        "mcp"
-      ],
-      "publishedAt": "2026-05-07T07:54:39.012Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNrzbPUHl69brVOKRhBOLjyJz6",
-      "title": "10000  AIdeas 2025 Update — What \"Eligibility Verified\" Means in Practice",
-      "description": "AWS confirmed eligibility for all current AIdeas winners \"per our official terms.\" A documented look at what that means: the Terms text in four languages, the new LATAM Regional Champion team's public AWS affiliations (an Amazon employee, an AWS Community Builder, an AWS User Group co-leader), and a publicly documented LinkedIn channel between a participant and an AWS organizer.",
-      "url": "https://builder.aws.com/content/3DNrzbPUHl69brVOKRhBOLjyJz6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNtw7AyYI8oi9shczYQsPX72jq/cove.webp",
-      "authorName": "Cameroon John",
-      "authorAlias": "cameroon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D9MuTmkFtIXuGmg5ezTdxqHqcB.webp",
-      "location": "CH",
-      "lat": 46.7985624,
-      "lng": 8.2319736,
-      "tags": [],
-      "publishedAt": "2026-05-07T07:33:29.104Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNwVfKc7kRZg7VPfGuN1j56M7T",
-      "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 3]",
-      "description": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 3]",
-      "url": "https://builder.aws.com/content/3DNwVfKc7kRZg7VPfGuN1j56M7T",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNwarTqsInTYMOuQmoeoY6unC8/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-07T06:38:39.443Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3D47QuOCFhBnRnOqh2ZO216oE2n",
-      "title": "The Best Decision I Made in College Was Joining an AWS Student Builder Group",
-      "description": "What Actually Happens Inside an AWS Student Builder Group",
-      "url": "https://builder.aws.com/content/3D47QuOCFhBnRnOqh2ZO216oE2n",
-      "imageUrl": "",
-      "authorName": "Patel Devang",
-      "authorAlias": "devangpatel",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "students",
-        "aws-builders",
-        "aws-community-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-05-07T06:20:39.135Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNmman5Vod5W1WA6EwNl5HgENV",
-      "title": "When to Use EventBridge, SQS, and Step Functions in a Multi-Tenant SaaS on AWS",
-      "description": "A practical guide to building multi-tenant SaaS on AWS using EventBridge, SQS, Lambda, and Step Functions with a focus on fan-out, retries, tenant isolation, and observability.",
-      "url": "https://builder.aws.com/content/3DNmman5Vod5W1WA6EwNl5HgENV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNrHYYEZHYBkGNYhmzvl5KLa2u/When.webp",
-      "authorName": "Gayla Smith",
-      "authorAlias": "gaylaa",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "serverless",
-        "aws-lambda",
-        "ai-assisted",
-        "amazon-eventbridge",
-        "amazon-sqs"
-      ],
-      "publishedAt": "2026-05-07T05:56:13.141Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNkayTACcn6zKMQlitTQGPli89",
-      "title": "From pandas to Polars on AWS Lambda: the cold-start and memory math that changed my mind",
-      "description": "A migration story with real numbers — Lambda memory ceilings, cold starts, and per-invocation costs all bend in your favor when you trade pandas for Polars. Code, benchmarks, and where to learn the on-ramp.",
-      "url": "https://builder.aws.com/content/3DNkayTACcn6zKMQlitTQGPli89",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNr8Jw7OMniOYdQTAczmmGebcu/post.webp",
-      "authorName": "Noah Gift",
-      "authorAlias": "noahgift",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cc9TXU03Q3spK1fzZl9gIUzOQv.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "aws-lambda",
-        "data-engineering",
-        "python",
-        "serverless",
-        "machine-learning"
-      ],
-      "publishedAt": "2026-05-07T05:54:08.811Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNnHIlvftBTBw1IwYEUpu0W1xm",
-      "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 2]",
-      "description": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 2]",
-      "url": "https://builder.aws.com/content/3DNnHIlvftBTBw1IwYEUpu0W1xm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNoIdGFk7O6z2P2q5mTB3o62A9/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-07T05:30:32.315Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNkLRuTqWRe3DTHskM7dcSTbG5",
-      "title": "Hands On with AWS Bottlerocket: Evaluating the Security of Amazon's Hardened OS",
-      "description": "AWS Bottlerocket is well-known as a secure, minimalist operating system, often used to provide a reliable container hosting environment through enhanced security features and reduced attack surface. But how does it actually work when faced with common container escape techniques? Read on to find out!",
-      "url": "https://builder.aws.com/content/3DNkLRuTqWRe3DTHskM7dcSTbG5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNl2folPgjPtK3i1Td8y4ARAu0/post.webp",
-      "authorName": "Terry Franklin",
-      "authorAlias": "terryf82",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DNlth81TYvtVelqpFg8It1M8Lr.webp",
-      "location": "AU",
-      "lat": -24.7761086,
-      "lng": 134.755,
-      "tags": [
-        "security",
-        "amazon-eks",
-        "containers"
-      ],
-      "publishedAt": "2026-05-07T05:04:48.344Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNapDfdFmUymoS2b6xkTvWYJIk",
-      "title": "PhishShield AI: Real-Time Cyber Threat Detection System",
-      "description": "PhishShield AI is a comprehensive full stack cybersecurity product which helps detect any phishing threats along with malicious URLs and SQL injections. Constructed using React and FastAPI, PhishShield AI applies rule-based and pattern recognition algorithms for risk scoring purposes as well as classifying the inputs as being either SAFE, SUSPICIOUS, or PHISHING. Input validations, rate limiting, secure headers, and structured logs add on to the overall security architecture.",
-      "url": "https://builder.aws.com/content/3DNapDfdFmUymoS2b6xkTvWYJIk",
-      "imageUrl": "",
-      "authorName": "Sangameshwaran",
-      "authorAlias": "sangamesh8203",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai",
-        "ai-dlc",
-        "authorization",
-        "kiro"
-      ],
-      "publishedAt": "2026-05-07T05:00:01.245Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNfFrWVpjB0LQvfY9Fz9P8Vh3R",
-      "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 1]",
-      "description": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 1]",
-      "url": "https://builder.aws.com/content/3DNfFrWVpjB0LQvfY9Fz9P8Vh3R",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNo88ipBlJBbuzqzY8ey74RuRX/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.2792968,
-      "lng": 114.1628907,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-07T04:17:42.691Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -440,7 +436,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-05T10:59:17.736Z",
-      "likesCount": 23,
+      "likesCount": 26,
       "commentsCount": 407
     },
     {
@@ -463,8 +459,8 @@
         "databases"
       ],
       "publishedAt": "2026-05-05T12:00:57.216Z",
-      "likesCount": 2,
-      "commentsCount": 177
+      "likesCount": 6,
+      "commentsCount": 187
     },
     {
       "id": "/content/3DLtNThawsqUM6b6NAhJI64OM1k",
@@ -480,8 +476,8 @@
       "lng": -75.8449946,
       "tags": [],
       "publishedAt": "2026-05-06T13:18:24.322Z",
-      "likesCount": 2,
-      "commentsCount": 48
+      "likesCount": 5,
+      "commentsCount": 54
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -566,48 +562,8 @@
         "ai-assisted"
       ],
       "publishedAt": "2026-05-05T10:45:07.589Z",
-      "likesCount": 30,
-      "commentsCount": 18
-    },
-    {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 68,
-      "commentsCount": 51
-    },
-    {
-      "id": "/content/3DMnx8lwoUma9MicfdNnuSCOgXc",
-      "title": "The 4x4: Networking & Content Delivery Community Highlights",
-      "description": "4 AWS picks, 4 community picks on Networking & Content Delivery",
-      "url": "https://builder.aws.com/content/3DMnx8lwoUma9MicfdNnuSCOgXc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMo8PC2Gh9vDzo3bMHnEncgSq3/Scre.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-05-06T21:26:50.042Z",
-      "likesCount": 7,
-      "commentsCount": 4
+      "likesCount": 31,
+      "commentsCount": 19
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -631,6 +587,46 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1934,
       "commentsCount": 269
+    },
+    {
+      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
+      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
+      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-30T20:13:50.660Z",
+      "likesCount": 69,
+      "commentsCount": 42
+    },
+    {
+      "id": "/content/3DMnx8lwoUma9MicfdNnuSCOgXc",
+      "title": "The 4x4: Networking & Content Delivery Community Highlights",
+      "description": "4 AWS picks, 4 community picks on Networking & Content Delivery",
+      "url": "https://builder.aws.com/content/3DMnx8lwoUma9MicfdNnuSCOgXc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMo8PC2Gh9vDzo3bMHnEncgSq3/Scre.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "aws-community-builders",
+        "aws-community",
+        "community"
+      ],
+      "publishedAt": "2026-05-06T21:26:50.042Z",
+      "likesCount": 8,
+      "commentsCount": 4
     }
   ]
 }
