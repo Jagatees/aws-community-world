@@ -1,6 +1,258 @@
 {
-  "updatedAt": "2026-05-07T07:04:25.127Z",
+  "updatedAt": "2026-05-07T12:42:41.141Z",
   "latest": [
+    {
+      "id": "/content/3DObWmsPk02gyq7Tap4rYcXw3Fy",
+      "title": "Testing AI-Generated Code in Seconds with Code Interpreter: A PySpark Case Study (and Beyond)",
+      "description": "Using Amazon Bedrock AgentCore Code Interpreter as a universal validation sandbox — from PySpark to SQL to Lambda handlers",
+      "url": "https://builder.aws.com/content/3DObWmsPk02gyq7Tap4rYcXw3Fy",
+      "imageUrl": "",
+      "authorName": "Mike Brouwers",
+      "authorAlias": "brouwem",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DMhGdJg3XyzJQwZRH2OGhRf6dT.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-07T12:28:54.704Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DOT0j1uMv0lOs2n51bBynmx1n9",
+      "title": "Connecting the AWSMCP Server to AWS DevOps Agent",
+      "description": "AWS DevOps Agent can be extended with external tools via the Model Context Protocol (MCP). This guide walks through exactly how we connected the AWS Billing and Cost Management MCP server to a DevOps Agent, including all the infrastructure code, IAM permissions, and the gotchas we hit along the way.",
+      "url": "https://builder.aws.com/content/3DOT0j1uMv0lOs2n51bBynmx1n9",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOZ6TRbKGJGsOTEN3JiUJazj33/Scre.webp",
+      "authorName": "Steph Gooch",
+      "authorAlias": "stephgooch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/374Zqzv0e7QeksFYZ7GR5FiQRuO.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "devops",
+        "agents",
+        "agent-hooks",
+        "cost-optimization"
+      ],
+      "publishedAt": "2026-05-07T11:55:22.889Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DOS48L9JmhSA4VXq1sDnQsz6WD",
+      "title": "Enhancing AI Security Strategy with Pinterest",
+      "description": "Introduction:\nWelcome back to \"How to Build with AWS.\" In this episode, host Steph Gooch, Senior Optimization Solutions Architect Advocate at AWS, delves into AI security strategy with Ali from Pinterest. Ali, a member of Pinterest's platform security team, shares valuable insights on securing AI applications and discusses Pinterest's approach to AI development and network security.",
+      "url": "https://builder.aws.com/content/3DOS48L9JmhSA4VXq1sDnQsz6WD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOSH02YwrzQ9ZMrrOpvKwRGBeb/Scre.webp",
+      "authorName": "Steph Gooch",
+      "authorAlias": "stephgooch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/374Zqzv0e7QeksFYZ7GR5FiQRuO.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "livestreaming",
+        "ai",
+        "ai-security",
+        "network-security"
+      ],
+      "publishedAt": "2026-05-07T10:59:17.347Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DONRkW1cp4EgeAwUlvRQvNuPfJ",
+      "title": "AWS AppSync - Serverless",
+      "description": "An Introduction about AWS AppSync",
+      "url": "https://builder.aws.com/content/3DONRkW1cp4EgeAwUlvRQvNuPfJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DORcmnlk07FmQFgW2zAodIOoWL/Chat.webp",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "serverless",
+        "graphql",
+        "full-stack",
+        "amazon-appsync"
+      ],
+      "publishedAt": "2026-05-07T10:55:06.332Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DLKDRt4VdTmMmI20rTJHjrEvo2",
+      "title": "Decision Maker for Overthinkers",
+      "description": "I built a smart decision making web app using kiro that helps users to make a decision between two options according to their personality , vibe and their interests . It actually delievers fast and personlised results for everyday activities. ",
+      "url": "https://builder.aws.com/content/3DLKDRt4VdTmMmI20rTJHjrEvo2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DONqVFDugyEMggrL216iplX97k/Scre.webp",
+      "authorName": "Pavithra S",
+      "authorAlias": "pavithrasivalingam",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-dlc",
+        "front-end",
+        "web-development",
+        "kiro",
+        "ai"
+      ],
+      "publishedAt": "2026-05-07T10:31:28.165Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DOG1fvBbMn0c5cVMd69oI9Ezst",
+      "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 5]",
+      "description": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 5]",
+      "url": "https://builder.aws.com/content/3DOG1fvBbMn0c5cVMd69oI9Ezst",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOGAfcmtOZYGplAh7pP2A8K0wY/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "HK",
+      "lat": 22.2792968,
+      "lng": 114.1628907,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-05-07T09:19:44.649Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3C0DlDndyk5GVsyZT0yn8MD5RwO",
+      "title": "AWS DevOps Agent: Worth It?",
+      "description": "AWS DevOps Agent is now GA and available in Sydney. But what does it actually do, what does it cost, and is it worth using in real-world operations? In this post, I break down how it works, share hands-on insights from a real environment, and explore where it fits in modern AWS ops.",
+      "url": "https://builder.aws.com/content/3C0DlDndyk5GVsyZT0yn8MD5RwO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C0G42hFLgYTFAQOj3xwMJISGK4/DevO.webp",
+      "authorName": "Jason Wood",
+      "authorAlias": "jwood",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DKEUDXsb2jUXcomScJhdXq77eQ.webp",
+      "location": "VIC, AU",
+      "lat": -36.5986096,
+      "lng": 144.6780052,
+      "tags": [
+        "ai",
+        "ai-assisted",
+        "sysops"
+      ],
+      "publishedAt": "2026-05-07T08:57:38.679Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DLqvth3fZlcjVSMSWB5VkScB6F",
+      "title": "Resume Builder Using Kiro",
+      "description": "A web app built with python to create resumes and portfolio instantly .Build using Kiro with AI-DLC.",
+      "url": "https://builder.aws.com/content/3DLqvth3fZlcjVSMSWB5VkScB6F",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNz0QBekGAerTAi3K7Be0t5WiS/Scre.webp",
+      "authorName": "Amirtha Anitha R",
+      "authorAlias": "anitha12",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-dlc",
+        "python",
+        "flask",
+        "ai",
+        "project"
+      ],
+      "publishedAt": "2026-05-07T08:27:44.100Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DNxmGFkY8zleRtVo2rN0av45on",
+      "title": "I Thought Cloud Was Only for “Advanced Engineers”",
+      "description": "Talking about my learn experience evolution in aws builder centre and tips for a good start.",
+      "url": "https://builder.aws.com/content/3DNxmGFkY8zleRtVo2rN0av45on",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DO8Nd6aTHLMMwueZC0padafW1O/arti.webp",
+      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
+      "authorAlias": "mvrga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "amazon-s3",
+        "awsreinvent2024",
+        "aws-user-groups"
+      ],
+      "publishedAt": "2026-05-07T08:18:31.666Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DO6IISxwgGf0ImfXPgTUILSUvy",
+      "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 4]",
+      "description": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 4]",
+      "url": "https://builder.aws.com/content/3DO6IISxwgGf0ImfXPgTUILSUvy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DO6ROchKT8ibQI41u7F45tAorN/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "HK",
+      "lat": 22.2792968,
+      "lng": 114.1628907,
+      "tags": [
+        "aws-certification",
+        "training-and-certification"
+      ],
+      "publishedAt": "2026-05-07T07:59:40.120Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/2xCBIAy7KWpmeXxij2TDOkxfW03",
+      "title": "Terraform Your AWS AgentCore",
+      "description": "There is no shortage of content on agentic workflows and AI today. But most of it stops at the concept. Today we focus on what actually matters in production: the right platform to host your non-deterministic workloads and the right way to ship it. Enter Amazon Bedrock AgentCore and Terraform.",
+      "url": "https://builder.aws.com/content/2xCBIAy7KWpmeXxij2TDOkxfW03",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DO5aNVyYBgeCNkGwak2ott8LiP/https.webp",
+      "authorName": "Tarlan Huseynov",
+      "authorAlias": "tarlan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37i7I3UjyXtImHfrrh8pPwIFZr6.webp",
+      "location": "AZ",
+      "lat": 40.3936294,
+      "lng": 47.7872508,
+      "tags": [
+        "amazon-bedrock-agentcore",
+        "terraform",
+        "agentic-ai",
+        "strands-agents",
+        "mcp"
+      ],
+      "publishedAt": "2026-05-07T07:54:39.012Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DNrzbPUHl69brVOKRhBOLjyJz6",
+      "title": "10000  AIdeas 2025 Update — What \"Eligibility Verified\" Means in Practice",
+      "description": "AWS confirmed eligibility for all current AIdeas winners \"per our official terms.\" A documented look at what that means: the Terms text in four languages, the new LATAM Regional Champion team's public AWS affiliations (an Amazon employee, an AWS Community Builder, an AWS User Group co-leader), and a publicly documented LinkedIn channel between a participant and an AWS organizer.",
+      "url": "https://builder.aws.com/content/3DNrzbPUHl69brVOKRhBOLjyJz6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNtw7AyYI8oi9shczYQsPX72jq/cove.webp",
+      "authorName": "Cameroon John",
+      "authorAlias": "cameroon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D9MuTmkFtIXuGmg5ezTdxqHqcB.webp",
+      "location": "CH",
+      "lat": 46.7985624,
+      "lng": 8.2319736,
+      "tags": [],
+      "publishedAt": "2026-05-07T07:33:29.104Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DNwVfKc7kRZg7VPfGuN1j56M7T",
       "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 3]",
@@ -9,10 +261,10 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNwarTqsInTYMOuQmoeoY6unC8/AWS-.webp",
       "authorName": "Dan Martin",
       "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BjqdWI3UWz7GJ66xrljIqEi6rk.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "aws-certification",
         "training-and-certification"
@@ -97,10 +349,10 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNoIdGFk7O6z2P2q5mTB3o62A9/AWS-.webp",
       "authorName": "Dan Martin",
       "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BjqdWI3UWz7GJ66xrljIqEi6rk.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "aws-certification",
         "training-and-certification"
@@ -160,58 +412,16 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNo88ipBlJBbuzqzY8ey74RuRX/AWS-.webp",
       "authorName": "Dan Martin",
       "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BjqdWI3UWz7GJ66xrljIqEi6rk.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
       "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "lat": 22.2792968,
+      "lng": 114.1628907,
       "tags": [
         "aws-certification",
         "training-and-certification"
       ],
       "publishedAt": "2026-05-07T04:17:42.691Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNdArvxWv48FwNaL4IX9gtET7w",
-      "title": "CDK - Using The Central Register Pattern For Resource Sharing",
-      "description": "The Central Register Pattern for AWS CDK improves resource sharing by using a central registry to track ARNs and IDs, preventing deployment deadlocks and simplifying CI/CD updates. This approach offers an efficient alternative to traditional resource sharing methods",
-      "url": "https://builder.aws.com/content/3DNdArvxWv48FwNaL4IX9gtET7w",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNeXX7Oi1kAzXFZuNPbmF7F7wP/cover.webp",
-      "authorName": "Tycko Franklin",
-      "authorAlias": "thetyckoman",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wILSxgUkkuB8SdTAB5YPr3u1Al.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-cdk",
-        "devops",
-        "architecture-patterns"
-      ],
-      "publishedAt": "2026-05-07T04:15:33.727Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DN96AyAZxFQcxGfdtH7XEsKJSw",
-      "title": "A Novel Pattern for Documenting DynamoDB Access Patterns",
-      "description": "The article proposes documenting DynamoDB access patterns using a structured JSON format to enhance integration with code and version control. This method facilitates managing complex relationships in single-table designs by prioritizing data access patterns over traditional, static documentation methods.",
-      "url": "https://builder.aws.com/content/3DN96AyAZxFQcxGfdtH7XEsKJSw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNdpzOmHrXcUQvXoCpE7Uug2rX/cover.webp",
-      "authorName": "Tycko Franklin",
-      "authorAlias": "thetyckoman",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wILSxgUkkuB8SdTAB5YPr3u1Al.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "serverless",
-        "amazon-dynamodb",
-        "documentation"
-      ],
-      "publishedAt": "2026-05-07T04:05:35.042Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     }
   ],
@@ -230,28 +440,48 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-05T10:59:17.736Z",
-      "likesCount": 20,
+      "likesCount": 23,
       "commentsCount": 407
     },
     {
-      "id": "/content/3DNwVfKc7kRZg7VPfGuN1j56M7T",
-      "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 3]",
-      "description": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 3]",
-      "url": "https://builder.aws.com/content/3DNwVfKc7kRZg7VPfGuN1j56M7T",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNwarTqsInTYMOuQmoeoY6unC8/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BjqdWI3UWz7GJ66xrljIqEi6rk.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
+      "id": "/content/3D7r1CfjRCPG0sMPezRhiYPHUIJ",
+      "title": "AWS Summit Stockholm Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in Stockholm, come say hi at the Developer Community Zone and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3D7r1CfjRCPG0sMPezRhiYPHUIJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D82wowulvSXcrsKkqO74W6dtAT/5-pn.webp",
+      "authorName": "Francesca",
+      "authorAlias": "sasfran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DLS39q86Uz620ebCkEyW9am9kJ.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
       "tags": [
-        "aws-certification",
-        "training-and-certification"
+        "agentic-ai",
+        "aws-community-builders",
+        "builder-center",
+        "aws-skill-builder",
+        "databases"
       ],
-      "publishedAt": "2026-05-07T06:38:39.443Z",
+      "publishedAt": "2026-05-05T12:00:57.216Z",
       "likesCount": 2,
-      "commentsCount": 0
+      "commentsCount": 177
+    },
+    {
+      "id": "/content/3DLtNThawsqUM6b6NAhJI64OM1k",
+      "title": "Win an AWS Certification Voucher – AWS Summit Stockholm Student Giveaway 2026",
+      "description": " AWS Summits Stockholm: Student Voucher giveaway  & Career Resources ",
+      "url": "https://builder.aws.com/content/3DLtNThawsqUM6b6NAhJI64OM1k",
+      "imageUrl": "",
+      "authorName": "Deontae Murphy",
+      "authorAlias": "deontaemurphy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-06T13:18:24.322Z",
+      "likesCount": 2,
+      "commentsCount": 48
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -271,7 +501,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3552,
+      "likesCount": 3554,
       "commentsCount": 327
     },
     {
@@ -292,8 +522,29 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3451,
+      "likesCount": 3452,
       "commentsCount": 1921
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2864,
+      "commentsCount": 320
     },
     {
       "id": "/content/3DIlQEUb2gLJaMkVe7puWtvIlp1",
@@ -319,93 +570,6 @@
       "commentsCount": 18
     },
     {
-      "id": "/content/3D7r1CfjRCPG0sMPezRhiYPHUIJ",
-      "title": "AWS Summit Stockholm Attendee Exclusive: Builder Question of the Day",
-      "description": "If you're attending the AWS Summit in Stockholm, come say hi at the Developer Community Zone and get involved in our Builder Question of the Day challenge! ",
-      "url": "https://builder.aws.com/content/3D7r1CfjRCPG0sMPezRhiYPHUIJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D82wowulvSXcrsKkqO74W6dtAT/5-pn.webp",
-      "authorName": "Francesca",
-      "authorAlias": "sasfran",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DLS39q86Uz620ebCkEyW9am9kJ.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "agentic-ai",
-        "aws-community-builders",
-        "builder-center",
-        "aws-skill-builder",
-        "databases"
-      ],
-      "publishedAt": "2026-05-05T12:00:57.216Z",
-      "likesCount": 1,
-      "commentsCount": 36
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2863,
-      "commentsCount": 320
-    },
-    {
-      "id": "/content/3DMisuk8a7gMGLn4CF1e86LKZMU",
-      "title": "AIdeas 2025: Selective Enforcement & a Senior AWS Manager's Deleted LinkedIn Post",
-      "description": "Two AWS Student Builder Group Leaders won Regional Champion titles in the AWS 10,000 AIdeas Competition, publicly celebrated together by a Senior AWS Program Manager on LinkedIn and on AWS Builder Center. After community concerns were raised, one was quietly removed from the winners list and the celebrating LinkedIn post was deleted — both without any public explanation. The other remains the EMEA Regional Champion. The documented evidence, with screenshots, is inside. ",
-      "url": "https://builder.aws.com/content/3DMisuk8a7gMGLn4CF1e86LKZMU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNBeW8XQPwQss6gwpbXx33g2rm/cove.webp",
-      "authorName": "Cameroon John",
-      "authorAlias": "cameroon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D9MuTmkFtIXuGmg5ezTdxqHqcB.webp",
-      "location": "CH",
-      "lat": 46.7985624,
-      "lng": 8.2319736,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "builders-fair"
-      ],
-      "publishedAt": "2026-05-06T23:38:37.225Z",
-      "likesCount": 3,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3DFPoU7RmRnjqNHRVxVF1HEMKoE",
-      "title": "S3: para iniciantes",
-      "description": "O S3 é um serviço de armazenamento em nuvem. Neste artigo, você entende como ele funciona na prática, seus conceitos principais e por que ele é uma peça importante dentro de arquiteturas Cloud.",
-      "url": "https://builder.aws.com/content/3DFPoU7RmRnjqNHRVxVF1HEMKoE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMo4VEsNkjpAVWbEgujWYqY5CI/Capa.webp",
-      "authorName": "Laís Farias",
-      "authorAlias": "laaay",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Coozfr3l1X7RB9FtL6gWALKK57.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "amazon-s3",
-        "aws-educate",
-        "aws-community",
-        "fundamentals"
-      ],
-      "publishedAt": "2026-05-06T19:45:03.811Z",
-      "likesCount": 6,
-      "commentsCount": 3
-    },
-    {
       "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
       "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
       "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
@@ -422,7 +586,51 @@
       ],
       "publishedAt": "2026-04-30T20:13:50.660Z",
       "likesCount": 68,
-      "commentsCount": 50
+      "commentsCount": 51
+    },
+    {
+      "id": "/content/3DMnx8lwoUma9MicfdNnuSCOgXc",
+      "title": "The 4x4: Networking & Content Delivery Community Highlights",
+      "description": "4 AWS picks, 4 community picks on Networking & Content Delivery",
+      "url": "https://builder.aws.com/content/3DMnx8lwoUma9MicfdNnuSCOgXc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMo8PC2Gh9vDzo3bMHnEncgSq3/Scre.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-community-builders",
+        "aws-community",
+        "community"
+      ],
+      "publishedAt": "2026-05-06T21:26:50.042Z",
+      "likesCount": 7,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1934,
+      "commentsCount": 269
     }
   ]
 }
