@@ -1,6 +1,211 @@
 {
-  "updatedAt": "2026-05-07T18:38:05.191Z",
+  "updatedAt": "2026-05-08T00:43:00.668Z",
   "latest": [
+    {
+      "id": "/content/3DPyb8ROku549zeh2EqodHzPhl0",
+      "title": "5 serviços essenciais da AWS para quem está começando em cloud",
+      "description": "Conheça cinco serviços fundamentais da AWS que aparecem com frequência em arquiteturas reais e ajudam a entender, na prática, como aplicações modernas funcionam na nuvem.",
+      "url": "https://builder.aws.com/content/3DPyb8ROku549zeh2EqodHzPhl0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DQ2YVl3HGFUZOe5KXE6voTrPJk/Chat.webp",
+      "authorName": "Mathias Petry Peixoto",
+      "authorAlias": "mathiaspetry",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8998jPR0b2osKaco5sU3mCcOq.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-08T00:27:22.090Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPnWb9RdbkxslNkXTisQNrdSOP",
+      "title": "AWS MCP Server GA, Mythos Zero-Days, Mona's AI Cafe",
+      "description": "AWS rolled its scattered MCP servers into a single Agent Toolkit and put coding agents inside Workspaces. Mythos found 271 zero-days in Firefox 150 against Opus 4.6's 22. And in Stockholm, an AI agent named Mona has been running a real cafe for two weeks — including hiring two baristas through Slack.",
+      "url": "https://builder.aws.com/content/3DPnWb9RdbkxslNkXTisQNrdSOP",
+      "imageUrl": "",
+      "authorName": "Brett Gillett",
+      "authorAlias": "brettco098",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wMUUBTsyCmdzLMmHpvHmnmsJaE.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "ai",
+        "agentic-ai",
+        "mcp",
+        "aws-knowledge-mcp"
+      ],
+      "publishedAt": "2026-05-07T22:26:03.359Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPhbEdo3a6b2kO0OttZhapOnIZ",
+      "title": "How to pay Kiro Subscription with AWS Credits",
+      "description": "Pay for Kiro Subscription via AWS Credits",
+      "url": "https://builder.aws.com/content/3DPhbEdo3a6b2kO0OttZhapOnIZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPmvB4GuViMBGJGrJPwnuoBvkm/kirob.webp",
+      "authorName": "Anand Joshi",
+      "authorAlias": "anandjoshi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArDjYgJ71SS8o6soSlSrpLsBsK.webp",
+      "location": "MA, US",
+      "lat": 42.3788774,
+      "lng": -72.032366,
+      "tags": [
+        "kiro",
+        "aws-credits",
+        "aws-management-console"
+      ],
+      "publishedAt": "2026-05-07T22:19:48.531Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPhqhRk8jEullJmrE1axGL9IXQ",
+      "title": "Beyond Check-in: Using AI and Vibe Coding to Amaze Our Community",
+      "description": "Every great MeetUp starts from the moment you arrive, so we used vibe coding to surprise our geek community",
+      "url": "https://builder.aws.com/content/3DPhqhRk8jEullJmrE1axGL9IXQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPk3447Y2vc3EdQFYP2Q39pGKZ/Scre.webp",
+      "authorName": "Hector David Martinez Montilla",
+      "authorAlias": "hectormtz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rJAgK0qrFTeCn0IGMGOiA9Ad6L.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-05-07T21:55:35.186Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DPF4mE6MxIf7lQGZ8nHEOFTuBs",
+      "title": "AWS Hands-On Lab Project (DynamoDB + Aurora PostgreSQL): NoSQL & Relational Database Mastery",
+      "description": "As part of my AWS Cloud Engineering learning journey, I built a full hands-on lab experience covering both Amazon DynamoDB (NoSQL) and Amazon Aurora PostgreSQL (Relational Database) using the AWS CLI and AWS Management Console.",
+      "url": "https://builder.aws.com/content/3DPF4mE6MxIf7lQGZ8nHEOFTuBs",
+      "imageUrl": "",
+      "authorName": "Abdul-hakeem Akinsile",
+      "authorAlias": "akinsilecloudops",
+      "authorAvatarUrl": "",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [],
+      "publishedAt": "2026-05-07T21:18:03.417Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPbjVQsWa8qBZ5ButxIkmOuu2m",
+      "title": "The Crystal Bunker: Engineering a Highly Automated WAFR with Kiro and the AWS \"Nervous System\"",
+      "description": "In Latin America, engineers face a \"hybrid paradox\": craving AWS elasticity while tethered to on-premises legacy workloads on vCenter or Hyper-V. Our role is ensuring the \"Crystal Bunker\"—a transparent yet impenetrable architecture—remains sound. Using Kiro and AWS MCP Servers, we transformed a two-week manual WAFR into a two-hour deep-dive, identifying 39 findings and remediating 21 within 50 days. This strategy amplifies human judgment through AI-driven operational symmetry.",
+      "url": "https://builder.aws.com/content/3DPbjVQsWa8qBZ5ButxIkmOuu2m",
+      "imageUrl": "",
+      "authorName": "Exegol",
+      "authorAlias": "luiszuniga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVHgu5dJHtcqlDbCILPPgoX198.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro-agent",
+        "well-arch-framework",
+        "aws-well-architected",
+        "ai-for-developers",
+        "developer"
+      ],
+      "publishedAt": "2026-05-07T20:50:48.066Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DNFTXj5vb42aZYc7N5p8j7iSdS",
+      "title": "Glosario Ilustrado de AWS: 100+ servicios con analogías y mapas mentales",
+      "description": "Neurociencias aplicadas al cloud: cada servicio tiene una analogía, un color y un caso de uso concreto — para que se quede en tu memoria, no en tus notas.",
+      "url": "https://builder.aws.com/content/3DNFTXj5vb42aZYc7N5p8j7iSdS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DNQ8XQ7gTc01tY3PKsXnbdrXZR/port.webp",
+      "authorName": "AirySec",
+      "authorAlias": "airynieves",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DNVuCJdb4m3JqepfwxO06DNrfh.webp",
+      "location": "CO",
+      "lat": 4.099917,
+      "lng": -72.9088133,
+      "tags": [
+        "learn",
+        "architecture",
+        "security"
+      ],
+      "publishedAt": "2026-05-07T20:50:04.667Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPOdhohgibjsSLkMRQRUTdG3Yh",
+      "title": "Achei que IA exigia um PC potente — até conhecer a AWS",
+      "description": "Computação em nuvem, iniciantes",
+      "url": "https://builder.aws.com/content/3DPOdhohgibjsSLkMRQRUTdG3Yh",
+      "imageUrl": "",
+      "authorName": "Marilia Freitas",
+      "authorAlias": "mariliauece",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CA0Qpn5tlJcEBrS5U8QAHIkn2q.webp",
+      "location": "CE, BR",
+      "lat": -5.3264703,
+      "lng": -39.7156073,
+      "tags": [
+        "builder-center",
+        "students",
+        "aws-cloudformation"
+      ],
+      "publishedAt": "2026-05-07T20:41:52.373Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DNvU7dOLH3QbyhfowJYJcO9N5a",
+      "title": "Building MindMirror AI: AI-Powered Mental Wellness Platform Using AI-DLC Methodology By Kiro",
+      "description": "MindMirror AI is a modern web-based AI-powered mental wellness platform which helps users to analyze emotions, track their mood pattern, maintain journals and share their feelings in text form and receive emotional feedback such as stress, motivation, confidence which is mood levels based on the user input.",
+      "url": "https://builder.aws.com/content/3DNvU7dOLH3QbyhfowJYJcO9N5a",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPWkfsCZ4vqGN4ML3h9jcZLAm2/Scre.webp",
+      "authorName": "Sowmiya P",
+      "authorAlias": "sowmiya",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-dlc",
+        "kiro",
+        "website",
+        "aws-skill-builder",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-07T20:07:42.156Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DOKd98nt5eaYiogYIWogHlOhW2",
+      "title": "How AWS Free Tier Turned Cloud Curiosity Into Hands-On Learning",
+      "description": "This article explores how AWS Free Tier helped me move beyond tutorials and start learning through hands-on experimentation. From small experiments and troubleshooting to practical learning and real-world exploration, it reflects my journey of understanding AWS step by step.\n",
+      "url": "https://builder.aws.com/content/3DOKd98nt5eaYiogYIWogHlOhW2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPJbAj7PFyIll8Jn4OFyOzR7nt/Chat.webp",
+      "authorName": "Jahnavi Reddy P",
+      "authorAlias": "jahnavireddyputcha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DPIDC0Odhd8HJuse6UQdiZJJo8.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "students",
+        "builder-center",
+        "aws-ambassador",
+        "aws-community",
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-05-07T19:09:22.635Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DPIUlJLFKee18GvFgfNLkCAbjN",
       "title": "Além da teoria: aprendendo cloud com comunidade, prática e propósito",
@@ -19,6 +224,23 @@
         "beginner-projects"
       ],
       "publishedAt": "2026-05-07T18:16:38.704Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DPIVDt3OLRieyKiSv7CybD0K18",
+      "title": "Cloud e IA: por que todo estudante de tecnologia deveria se importar",
+      "description": "Cloud e Inteligência Artificial deixaram de ser tendências e já fazem parte do presente da tecnologia. Mas por que isso deveria importar para quem ainda está começando? Neste artigo, você vai entender como essas áreas estão moldando o mercado e por que começar a explorá-las agora pode fazer toda a diferença na sua trajetória. ",
+      "url": "https://builder.aws.com/content/3DPIVDt3OLRieyKiSv7CybD0K18",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPIubNGUUJYqxyjpwcHnDUu7XO/C-pi.webp",
+      "authorName": "Emanuel Felipe",
+      "authorAlias": "omanuca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
+      "location": "RN, BR",
+      "lat": -5.6781175,
+      "lng": -36.4781776,
+      "tags": [],
+      "publishedAt": "2026-05-07T18:12:28.683Z",
       "likesCount": 0,
       "commentsCount": 0
     },
@@ -121,7 +343,7 @@
         "aws-ambassador"
       ],
       "publishedAt": "2026-05-07T17:03:22.514Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -142,282 +364,7 @@
         "learn"
       ],
       "publishedAt": "2026-05-07T16:31:54.133Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Czo3bWh80tdOUAlhawYJZSoMNj",
-      "title": "Como o AWS Lambda me mostrou que dá para automatizar sem complicar",
-      "description": "Neste artigo, mostro como o AWS Lambda me ajudou a entender que automatizar na nuvem pode ser simples e acessível para estudantes. Compartilho como o modelo serverless facilita a criação de soluções práticas, reduz a complexidade de infraestrutura e abre novas possibilidades para construir projetos com mais agilidade e confiança.",
-      "url": "https://builder.aws.com/content/3Czo3bWh80tdOUAlhawYJZSoMNj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DJt6CKJbgZhMEcgDDpzG3tsn07/gene.webp",
-      "authorName": "ArthurBCG",
-      "authorAlias": "arthurbcg",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-lambda",
-        "aws-builders",
-        "students",
-        "ai"
-      ],
-      "publishedAt": "2026-05-07T16:15:46.735Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DNpCyXcpT4Y6ENRNZAAP7c8PUE",
-      "title": "FocusHub - A Virtual Study Room",
-      "description": "I made FocusHub, a virutual study room platform, where students can go to study together on online . FocusHub is like a room where students can work on their schoolwork without getting distracted. Students can join a study room, colloborate  and keep track of how long they study. this helps students stay motivated and focused on their schoolwork because they are all studying together in an online space. ",
-      "url": "https://builder.aws.com/content/3DNpCyXcpT4Y6ENRNZAAP7c8PUE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOxIBCcLASY1H4ml9wIpRRfmPZ/Scre.webp",
-      "authorName": "kaviyamurugesan02",
-      "authorAlias": "kaviya21",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro",
-        "kiro-agent"
-      ],
-      "publishedAt": "2026-05-07T15:43:34.008Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DOs2YLuK5tOXhPV0NYwoLDTe9W",
-      "title": "Inteligência Artificial e AWS",
-      "description": "“IA vai acabar com os programadores.” Será?",
-      "url": "https://builder.aws.com/content/3DOs2YLuK5tOXhPV0NYwoLDTe9W",
-      "imageUrl": "",
-      "authorName": "Lucca",
-      "authorAlias": "luccalmo629",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CzEgoqjzT5QsRsxQA0Ik7vv1AX.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai",
-        "students"
-      ],
-      "publishedAt": "2026-05-07T14:43:27.506Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DOoCE0ETBgqO7WGnqTqxRgVjvh",
-      "title": "Beginner to Advanced AWS Data Analyst Projects Using AWS Cloud",
-      "description": "Here are some strong Data Analyst projects using AWS Cloud that are good for resumes, portfolios, internships, and interviews.",
-      "url": "https://builder.aws.com/content/3DOoCE0ETBgqO7WGnqTqxRgVjvh",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOoqTQlccKdPKxyKEnh5301fko/Chat.webp",
-      "authorName": "Abinesh M",
-      "authorAlias": "abineshm",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36FU9fzncaqmd1Ot6MAKgL6wEa9.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "data",
-        "aws-data-pipeline",
-        "aws-certification",
-        "aws-cli",
-        "aws-cloud9"
-      ],
-      "publishedAt": "2026-05-07T14:05:21.636Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DOm2NMySJakwgNjGBSxadTnAYz",
-      "title": "Counting on an EU AI Act Delay? That Bet Got Riskier Last Week: Why FSI Needs a Bias for Action",
-      "description": "Negotiations to postpone the August 2nd, EU AI Act compliance deadline for high-risk AI systems collapsed after 12 hours of talks. If your FSI customers’ CISOs and CROs were planning around a postponement, they need to know that assumption is no longer safe.",
-      "url": "https://builder.aws.com/content/3DOm2NMySJakwgNjGBSxadTnAYz",
-      "imageUrl": "",
-      "authorName": "Nick",
-      "authorAlias": "nkotakis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DOoJoaT6kBTeC2sWF9fhu8B7Fm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "security-and-compliance",
-        "financial-services-industry"
-      ],
-      "publishedAt": "2026-05-07T13:51:01.879Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DOj66CFOoXhCRAniLyNb8xjLwZ",
-      "title": "The AWS Generative AI Professional Exam: What the Blueprint Doesn’t Reveal",
-      "description": "Tips about the AWS Generative AI Professional exam",
-      "url": "https://builder.aws.com/content/3DOj66CFOoXhCRAniLyNb8xjLwZ",
-      "imageUrl": "",
-      "authorName": "Erick Mancz",
-      "authorAlias": "imancz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "exam-prep",
-        "aws-certification",
-        "training-and-certification",
-        "generative-ai",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-07T13:22:41.389Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DObWmsPk02gyq7Tap4rYcXw3Fy",
-      "title": "Testing AI-Generated Code in Seconds with Code Interpreter: A PySpark Case Study (and Beyond)",
-      "description": "Using Amazon Bedrock AgentCore Code Interpreter as a universal validation sandbox — from PySpark to SQL to Lambda handlers",
-      "url": "https://builder.aws.com/content/3DObWmsPk02gyq7Tap4rYcXw3Fy",
-      "imageUrl": "",
-      "authorName": "Mike Brouwers",
-      "authorAlias": "brouwem",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DMhGdJg3XyzJQwZRH2OGhRf6dT.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-07T12:28:54.704Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DOT0j1uMv0lOs2n51bBynmx1n9",
-      "title": "Connecting the AWSMCP Server to AWS DevOps Agent",
-      "description": "AWS DevOps Agent can be extended with external tools via the Model Context Protocol (MCP). This guide walks through exactly how we connected the AWS Billing and Cost Management MCP server to a DevOps Agent, including all the infrastructure code, IAM permissions, and the gotchas we hit along the way.",
-      "url": "https://builder.aws.com/content/3DOT0j1uMv0lOs2n51bBynmx1n9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOZ6TRbKGJGsOTEN3JiUJazj33/Scre.webp",
-      "authorName": "Steph Gooch",
-      "authorAlias": "stephgooch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/374Zqzv0e7QeksFYZ7GR5FiQRuO.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "devops",
-        "agents",
-        "agent-hooks",
-        "cost-optimization"
-      ],
-      "publishedAt": "2026-05-07T11:55:22.889Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DOS48L9JmhSA4VXq1sDnQsz6WD",
-      "title": "Enhancing AI Security Strategy with Pinterest",
-      "description": "Introduction:\nWelcome back to \"How to Build with AWS.\" In this episode, host Steph Gooch, Senior Optimization Solutions Architect Advocate at AWS, delves into AI security strategy with Ali from Pinterest. Ali, a member of Pinterest's platform security team, shares valuable insights on securing AI applications and discusses Pinterest's approach to AI development and network security.",
-      "url": "https://builder.aws.com/content/3DOS48L9JmhSA4VXq1sDnQsz6WD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOSH02YwrzQ9ZMrrOpvKwRGBeb/Scre.webp",
-      "authorName": "Steph Gooch",
-      "authorAlias": "stephgooch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/374Zqzv0e7QeksFYZ7GR5FiQRuO.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [
-        "livestreaming",
-        "ai",
-        "ai-security",
-        "network-security"
-      ],
-      "publishedAt": "2026-05-07T10:59:17.347Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DONRkW1cp4EgeAwUlvRQvNuPfJ",
-      "title": "AWS AppSync - Serverless",
-      "description": "An Introduction about AWS AppSync",
-      "url": "https://builder.aws.com/content/3DONRkW1cp4EgeAwUlvRQvNuPfJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DORcmnlk07FmQFgW2zAodIOoWL/Chat.webp",
-      "authorName": "Gokul S",
-      "authorAlias": "gokul06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "serverless",
-        "graphql",
-        "full-stack",
-        "amazon-appsync"
-      ],
-      "publishedAt": "2026-05-07T10:55:06.332Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DLKDRt4VdTmMmI20rTJHjrEvo2",
-      "title": "Decision Maker for Overthinkers",
-      "description": "I built a smart decision making web app using kiro that helps users to make a decision between two options according to their personality , vibe and their interests . It actually delievers fast and personlised results for everyday activities. ",
-      "url": "https://builder.aws.com/content/3DLKDRt4VdTmMmI20rTJHjrEvo2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DONqVFDugyEMggrL216iplX97k/Scre.webp",
-      "authorName": "Pavithra S",
-      "authorAlias": "pavithrasivalingam",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai-dlc",
-        "front-end",
-        "web-development",
-        "kiro",
-        "ai"
-      ],
-      "publishedAt": "2026-05-07T10:31:28.165Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DOG1fvBbMn0c5cVMd69oI9Ezst",
-      "title": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 5]",
-      "description": "Machine Learning 20 Sample Questions - Domain 2: ML Model Development [part 5]",
-      "url": "https://builder.aws.com/content/3DOG1fvBbMn0c5cVMd69oI9Ezst",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DOGAfcmtOZYGplAh7pP2A8K0wY/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-07T09:19:44.649Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C0DlDndyk5GVsyZT0yn8MD5RwO",
-      "title": "AWS DevOps Agent: Worth It?",
-      "description": "AWS DevOps Agent is now GA and available in Sydney. But what does it actually do, what does it cost, and is it worth using in real-world operations? In this post, I break down how it works, share hands-on insights from a real environment, and explore where it fits in modern AWS ops.",
-      "url": "https://builder.aws.com/content/3C0DlDndyk5GVsyZT0yn8MD5RwO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C0G42hFLgYTFAQOj3xwMJISGK4/DevO.webp",
-      "authorName": "Jason Wood",
-      "authorAlias": "jwood",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DKEUDXsb2jUXcomScJhdXq77eQ.webp",
-      "location": "VIC, AU",
-      "lat": -36.5986096,
-      "lng": 144.6780052,
-      "tags": [
-        "ai",
-        "ai-assisted",
-        "sysops"
-      ],
-      "publishedAt": "2026-05-07T08:57:38.679Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     }
   ],
@@ -436,8 +383,8 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-05T10:59:17.736Z",
-      "likesCount": 26,
-      "commentsCount": 407
+      "likesCount": 29,
+      "commentsCount": 408
     },
     {
       "id": "/content/3D7r1CfjRCPG0sMPezRhiYPHUIJ",
@@ -459,7 +406,7 @@
         "databases"
       ],
       "publishedAt": "2026-05-05T12:00:57.216Z",
-      "likesCount": 6,
+      "likesCount": 7,
       "commentsCount": 187
     },
     {
@@ -476,8 +423,8 @@
       "lng": -75.8449946,
       "tags": [],
       "publishedAt": "2026-05-06T13:18:24.322Z",
-      "likesCount": 5,
-      "commentsCount": 54
+      "likesCount": 7,
+      "commentsCount": 55
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -497,7 +444,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3554,
+      "likesCount": 3555,
       "commentsCount": 327
     },
     {
@@ -566,6 +513,23 @@
       "commentsCount": 19
     },
     {
+      "id": "/content/3DPhqhRk8jEullJmrE1axGL9IXQ",
+      "title": "Beyond Check-in: Using AI and Vibe Coding to Amaze Our Community",
+      "description": "Every great MeetUp starts from the moment you arrive, so we used vibe coding to surprise our geek community",
+      "url": "https://builder.aws.com/content/3DPhqhRk8jEullJmrE1axGL9IXQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPk3447Y2vc3EdQFYP2Q39pGKZ/Scre.webp",
+      "authorName": "Hector David Martinez Montilla",
+      "authorAlias": "hectormtz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rJAgK0qrFTeCn0IGMGOiA9Ad6L.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-05-07T21:55:35.186Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -589,44 +553,26 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "title": "AWS 10,000 AIdeas Competition: Meet the Winners",
-      "description": "Meet the winners of the 10,000 AIdeas Competition! Fair warning, you're about to get inspired.",
-      "url": "https://builder.aws.com/content/3D5gTWIjP2zvKncBZBCs849xRqn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3D5jG7YWDwxlyhBA541PTC85Zvs/AIde.webp",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
       "tags": [
-        "aideas-2025"
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
       ],
-      "publishedAt": "2026-04-30T20:13:50.660Z",
-      "likesCount": 69,
-      "commentsCount": 42
-    },
-    {
-      "id": "/content/3DMnx8lwoUma9MicfdNnuSCOgXc",
-      "title": "The 4x4: Networking & Content Delivery Community Highlights",
-      "description": "4 AWS picks, 4 community picks on Networking & Content Delivery",
-      "url": "https://builder.aws.com/content/3DMnx8lwoUma9MicfdNnuSCOgXc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DMo8PC2Gh9vDzo3bMHnEncgSq3/Scre.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-05-06T21:26:50.042Z",
-      "likesCount": 8,
-      "commentsCount": 4
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1449,
+      "commentsCount": 332
     }
   ]
 }
