@@ -41,7 +41,7 @@ export function useCategory(category) {
 
   useEffect(() => {
     if (!category) return;
-    if (category === 'news') {
+    if (category === 'news' || category === 'kiro-ambassadors') {
       setMembers([]);
       setLoading(false);
       setError(null);

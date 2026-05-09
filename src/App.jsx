@@ -14,6 +14,7 @@ const CATEGORY_COLORS = {
   'community-builders': '#1A9C3E',
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
+  'kiro-ambassadors': '#8B5CF6',
 };
 
 const CATEGORY_LABELS = {
@@ -21,6 +22,7 @@ const CATEGORY_LABELS = {
   'community-builders': 'Community Builders',
   'user-groups': 'User Groups',
   'cloud-clubs': 'Student Builder Groups',
+  'kiro-ambassadors': 'Kiro Ambassador',
 };
 
 const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
@@ -48,6 +50,7 @@ export default function App() {
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isNewsView = activeCategory === 'news';
+  const isKiroView = activeCategory === 'kiro-ambassadors';
   const globeReady = !showSplash;
 
   const { error, members, loading } = useCategory(activeCategory);
@@ -308,13 +311,13 @@ export default function App() {
           activeCategory={activeCategory}
           onChange={handleCategoryChange}
           darkMode={darkMode}
-          countries={isNewsView ? [] : countries}
-          countryCounts={isNewsView ? {} : countryCounts}
+          countries={isNewsView || isKiroView ? [] : countries}
+          countryCounts={isNewsView || isKiroView ? {} : countryCounts}
           selectedCountry={selectedCountry}
           onCountryChange={setSelectedCountry}
         />
 
-        {!isNewsView && hasTagFilters && (
+        {!isNewsView && !isKiroView && hasTagFilters && (
           <div
             className="flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -341,7 +344,63 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          {isNewsView ? (
+          {isKiroView ? (
+            <div className="relative h-full min-h-0 overflow-hidden">
+              <div className="absolute inset-0">
+                {globeReady ? (
+                  <Suspense fallback={renderGlobeLoading()}>
+                    <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
+                      <ActiveGlobeScene
+                        category="kiro-ambassadors"
+                        members={[]}
+                        onMarkerClick={handleMarkerClick}
+                        cardOpen={false}
+                        darkMode={darkMode}
+                        flyToTarget={resolvedFlyToTarget}
+                        zoomCommand={zoomCommand}
+                      />
+                    </div>
+                  </Suspense>
+                ) : (
+                  <div className={`relative h-full w-full overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}>
+                    <div className="aws-globe-pattern" />
+                  </div>
+                )}
+              </div>
+              <div
+                className="pointer-events-none absolute inset-0 z-10"
+                style={{
+                  background: darkMode
+                    ? 'radial-gradient(circle at center, rgba(7, 17, 26, 0.22) 0%, rgba(7, 17, 26, 0.72) 72%)'
+                    : 'radial-gradient(circle at center, rgba(245, 250, 255, 0.08) 0%, rgba(230, 241, 250, 0.74) 72%)',
+                }}
+              />
+              <div
+                className="pointer-events-none relative z-20 mx-auto flex h-full max-w-md flex-col items-center justify-center px-6 text-center"
+                style={{
+                  color: darkMode ? '#DCE7F0' : '#17324B',
+                }}
+              >
+                <img
+                  src="/kiro-ambassador-icon.svg"
+                  alt="Kiro Ambassador"
+                  className="mb-5 h-24 w-24 rounded-[1.65rem]"
+                  style={{
+                    boxShadow: darkMode ? '0 18px 46px rgba(0, 0, 0, 0.35)' : '0 18px 42px rgba(80, 92, 180, 0.24)',
+                  }}
+                />
+                <h1 className="text-2xl font-bold" style={{ color: darkMode ? '#FFFFFF' : '#0F1923' }}>
+                  Kiro Ambassador
+                </h1>
+                <p className="mt-3 text-sm font-semibold" style={{ color: darkMode ? '#DCE7F0' : '#17324B' }}>
+                  Ambassador coming soon.
+                </p>
+                <p className="mt-2 max-w-sm text-sm leading-6" style={{ color: darkMode ? '#8B9BAA' : '#5a7a99' }}>
+                  Working on finding all ambassadors to add to the globe.
+                </p>
+              </div>
+            </div>
+          ) : isNewsView ? (
             <div className="relative h-full min-h-0">
               {/* Globe — always fills the full area */}
               <div className="absolute inset-0">
@@ -765,7 +824,7 @@ export default function App() {
           )}
         </div>
 
-        {!isNewsView && selectedMember && (
+        {!isNewsView && !isKiroView && selectedMember && (
           <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
         )}
 

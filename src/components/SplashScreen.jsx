@@ -5,6 +5,7 @@ const STATS = [
   { label: 'Community Builders', count: 3546, color: '#1A9C3E' },
   { label: 'User Groups', count: 608, color: '#00A1C9' },
   { label: 'Student Builder Groups', count: 623, color: '#BF0816' },
+  { label: 'Kiro Ambassadors', countLabel: '???', color: '#8B5CF6' },
 ];
 
 const TOTAL = 5040;
@@ -314,7 +315,7 @@ export default function SplashScreen({ onStart, exiting }) {
                   fontSize: '0.95rem',
                 }}
               >
-                <AnimatedNumber target={stat.count} duration={1400} delay={200 + i * 80} />
+                {stat.countLabel ?? <AnimatedNumber target={stat.count} duration={1400} delay={200 + i * 80} />}
               </span>
               <span style={{ color: '#8B9BAA', fontSize: '0.88rem' }}>{stat.label}</span>
             </div>
