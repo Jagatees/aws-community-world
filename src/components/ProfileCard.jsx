@@ -5,6 +5,7 @@ const CATEGORY_LABELS = {
   'community-builders': 'Community Builder',
   'user-groups': 'User Group',
   'cloud-clubs': 'Student Builder Group',
+  'kiro-ambassadors': 'Kiro Ambassador',
 };
 
 function LoadingSpinner({ size = 16 }) {

@@ -50,10 +50,10 @@ export default function App() {
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isNewsView = activeCategory === 'news';
-  const isKiroView = activeCategory === 'kiro-ambassadors';
   const globeReady = !showSplash;
 
   const { error, members, loading } = useCategory(activeCategory);
+  const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
   const ActiveGlobeScene =
     globeDesign === 'classic'

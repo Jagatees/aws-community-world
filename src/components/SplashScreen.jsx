@@ -5,7 +5,7 @@ const STATS = [
   { label: 'Community Builders', count: 3546, color: '#1A9C3E' },
   { label: 'User Groups', count: 608, color: '#00A1C9' },
   { label: 'Student Builder Groups', count: 623, color: '#BF0816' },
-  { label: 'Kiro Ambassadors', countLabel: '???', color: '#8B5CF6' },
+  { label: 'Kiro Ambassadors', count: 2, color: '#8B5CF6' },
 ];
 
 const TOTAL = 5040;
