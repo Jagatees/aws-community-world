@@ -1,6 +1,136 @@
 {
-  "updatedAt": "2026-05-10T06:58:50.562Z",
+  "updatedAt": "2026-05-10T12:23:10.328Z",
   "latest": [
+    {
+      "id": "/content/3DUQz7ukjUDZ3cJ6Sd2mJFuPgno",
+      "title": "Simple Blog Post Researcher & Writer Agents with LangGraph, Memory, AWS Bedrock Nova: Generator & Evaluator Pattern in Multi-Agent Graph",
+      "description": "Implementing Generator & Evaluator Pattern using LangGraph and AWS Bedrock Nova; How to use Memory.MD file by different agents; How to implement multi-agents with graph, state management, routing, nodes, conditional loops, and memory.",
+      "url": "https://builder.aws.com/content/3DUQz7ukjUDZ3cJ6Sd2mJFuPgno",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DX317T7hjf3daaLI1M6yK2OqpO/merm.webp",
+      "authorName": "Ömer Berat Sezer",
+      "authorAlias": "omerberatsezer",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38R7i0Zu7ieX899yEbzZAQzXCyp.webp",
+      "location": "Bavaria, DE",
+      "lat": 48.9467562,
+      "lng": 11.4038717,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "amazon-bedrock",
+        "langgraph"
+      ],
+      "publishedAt": "2026-05-10T11:54:48.337Z",
+      "likesCount": 0,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DWyH4akmRyQP7QjU8lvP98NCSZ",
+      "title": "A Weekend at Karukinka — Troubleshooting a 9.6 kWh Solar System with an AI Coding Partner",
+      "description": "My inverter got stuck on grid after a single evening alarm. The pack kept tripping whenever the water pump turned on. I had one weekend on-site to make progress before driving back to Santiago. Here's how I used Kiro to turn two days of observations into durable, structured knowledge I can keep working on all week — including the two times I was wrong.",
+      "url": "https://builder.aws.com/content/3DWyH4akmRyQP7QjU8lvP98NCSZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DWzZxo2ctezWnqCFuxOqSnAhPV/stuck.webp",
+      "authorName": "Gonzalo Vásquez",
+      "authorAlias": "gevs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xrJkys96lWwUrlvQ7rwzVz6loy.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "ai-assisted",
+        "solar",
+        "iot",
+        "troubleshoot"
+      ],
+      "publishedAt": "2026-05-10T11:28:08.844Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DWuWzEiav39ksiysYcXlfqAVBz",
+      "title": "Como a Computação em Nuvem Está Transformando a Carreira de Estudantes de Tecnologia",
+      "description": "Um pequeno artigo sobre como a computação em nuvem está ajudando estudantes a aprender, criar projetos e crescer na área da tecnologia através da prática.",
+      "url": "https://builder.aws.com/content/3DWuWzEiav39ksiysYcXlfqAVBz",
+      "imageUrl": "",
+      "authorName": "Gabriel da Silva Chaves",
+      "authorAlias": "gab9082",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CmeglTzCGqmp3uZGSSpzB811dP.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-10T10:56:04.179Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3BCUGwAnBJWaHQlvZW9bhhQ6F83",
+      "title": "I ran AWS Security Agent's full pipeline on my personal project: Design Review, Code Review, and Pentest",
+      "description": "Security doesn't end at launch — but ongoing validation rarely happens after a product ships. This article walks through running AWS Security Agent's full pipeline — Design Review, Code Review, and Penetration Test — on a real serverless app. Each stage catches different things: architecture gaps, PR-level issues, and a Critical hardcoded-credentials finding the others missed. Also covers cost planning, multi-account setup, and the role of human review alongside AI-driven security.",
+      "url": "https://builder.aws.com/content/3BCUGwAnBJWaHQlvZW9bhhQ6F83",
+      "imageUrl": "",
+      "authorName": "Shintaro Fukatsu",
+      "authorAlias": "shintarofukatsu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wDRnO2uhsKG2k29wlqqFRuDUMt.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "ai-security",
+        "operations-phase",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-10T08:59:30.918Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DWfmXFHGiUF33NZSnxune4QQlI",
+      "title": "3 AWS Projects That Taught Me More Than Any Course",
+      "description": "Sometimes the best way to learn cloud isn’t through courses, it’s through building real projects. In this article, I share 3 AWS projects that taught me practical skills, helped me understand cloud concepts better, and showed me how hands-on learning through AWS Builder Center can make the learning journey more effective and engaging.",
+      "url": "https://builder.aws.com/content/3DWfmXFHGiUF33NZSnxune4QQlI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DWgCvvob0dmOF6lvkeAfFB1emb/Purp.webp",
+      "authorName": "Manvendra Singh 🥑",
+      "authorAlias": "manvendra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39YwvWH5WMWRTfqMaDkMQ5UPrKN.webp",
+      "location": "Rajasthan, IN",
+      "lat": 26.8105777,
+      "lng": 73.7684549,
+      "tags": [
+        "students",
+        "aws-community",
+        "aws-community-builders",
+        "beginner-projects",
+        "free-tier-projects"
+      ],
+      "publishedAt": "2026-05-10T08:58:28.837Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DWagLjqsjIIIJ9evVne8P4ZbD6",
+      "title": "Kiro Specs: Stop Improvising and Start Planning Features with AI",
+      "description": "Kiro Specs is one of the most powerful features in Kiro IDE, yet most developers ignore it because it sounds like bureaucracy. Spoiler: it’s not. It’s the difference between vibe coding and structured AI-assisted software engineering.",
+      "url": "https://builder.aws.com/content/3DWagLjqsjIIIJ9evVne8P4ZbD6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DWblDVhxJOSTvKyRk5ikSeXuIl/imgi.webp",
+      "authorName": "Muhammad Adnan Sultan",
+      "authorAlias": "madnansultan",
+      "authorAvatarUrl": "",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "kiro-heroes",
+        "kiro-with-pro",
+        "kiro-with-pro-plus"
+      ],
+      "publishedAt": "2026-05-10T08:16:49.711Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DHuwpocBGOSr9qmh0vAM0flzZx",
       "title": "Primeiros passos no AWS Builder Center",
@@ -43,7 +173,7 @@
         "aws-lambda"
       ],
       "publishedAt": "2026-05-10T04:02:24.069Z",
-      "likesCount": 2,
+      "likesCount": 4,
       "commentsCount": 0
     },
     {
@@ -87,131 +217,6 @@
       "publishedAt": "2026-05-10T03:44:29.569Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DW0YIxhPLlpX7fmlqtXWwuCgeL",
-      "title": "Como o Free Tier e o Builder Center Desbloquearam meu Aprendizado",
-      "description": "Perder o medo de experimentar é o primeiro passo para se tornar um Builder. Neste artigo, conto como o AWS Free Tier e a comunidade me ajudaram a transformar tutoriais teóricos em prática real, sem sustos no final do mês",
-      "url": "https://builder.aws.com/content/3DW0YIxhPLlpX7fmlqtXWwuCgeL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DW44WKrbuoLI5hEtTXieQ1btkg/Gene.webp",
-      "authorName": "Daniel Oliveira",
-      "authorAlias": "danimont",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/327oiepI8Ywz9BBmgodTUnyS4kP.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "beginner-projects",
-        "career",
-        "students",
-        "free-tier-projects",
-        "ai-assisted"
-      ],
-      "publishedAt": "2026-05-10T03:39:05.326Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DL0rrNndOehdyQwqp48zTZKGKY",
-      "title": "From Cloud Infrastructure to AI-Driven Development: My First Hands-on with AI-DLC, Kiro, and Claude Code",
-      "description": "Cloud infrastructure engineer's first hands-on with AI-DLC at AWS Summit Japan 2026 Hackathon. Three AIs, three roles: Claude (claude.ai) for concept sparring, Kiro for implementation, Claude Code (CLI) for diff review. Real catches: Pinpoint EoS, Cognito x NIST gaps, cross-document drift. Why role separation surfaces what single-agent self-review misses. A solo one-week sprint over Japan's Golden Week.",
-      "url": "https://builder.aws.com/content/3DL0rrNndOehdyQwqp48zTZKGKY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DL5SXOo1z92hGNf1qvOOY27Qex/Buil.webp",
-      "authorName": "Hirokazu Ohtaka",
-      "authorAlias": "ohtaka",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zg5I7QbwxTbK2FHuuvCgS8EyzG.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "ai-dlc",
-        "hackathon",
-        "kiro",
-        "claude"
-      ],
-      "publishedAt": "2026-05-10T03:06:23.411Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DVvCAGeuijDMcvDpRuMXEOiiIV",
-      "title": "Como o AWS Builder Center me ajudou a sair do aprendizado solto para uma direção mais clara na tecnologia",
-      "description": "Sou Vithor Torelli, estudante de Engenharia de Software, e neste artigo compartilho como o AWS Builder Center começou a mudar minha forma de enxergar aprendizado, prática e direção dentro da tecnologia.\n\nMais do que consumir conteúdo, comecei a entender como conectar estudos com o mercado real e com áreas que quero seguir no futuro.\n\n#AWS #AWSBuilderCenter #CloudComputing #EngenhariaDeSoftware #CarreiraTech #Tecnologia #Estudantes",
-      "url": "https://builder.aws.com/content/3DVvCAGeuijDMcvDpRuMXEOiiIV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DVvo6YUYcIuwx3uX4t70K5vUqf/Arti.webp",
-      "authorName": "Vitor Torelli",
-      "authorAlias": "vithortorelli",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CldMUGPN6wi904M58xhUB5QAdY.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-10T02:30:46.552Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DVqNMxwx8cJyGwLUVxkibUCf9j",
-      "title": "AWS CLI HANDS ON PROJECT",
-      "description": "Hands on Project",
-      "url": "https://builder.aws.com/content/3DVqNMxwx8cJyGwLUVxkibUCf9j",
-      "imageUrl": "",
-      "authorName": "Olawuyi Rotimi",
-      "authorAlias": "shefarina",
-      "authorAvatarUrl": "",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [],
-      "publishedAt": "2026-05-10T01:47:09.619Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3CpavZX4vNfG8qHvlL0Bf8RReDF",
-      "title": "Como começar na AWS do zero: um guia simples para quem está dando o primeiro passo",
-      "description": "Começar na AWS pode parecer difícil no início, mas existe um caminho mais simples para aprender cloud passo a passo. Neste artigo, compartilho uma rota inicial para quem quer sair da curiosidade e começar a construir.",
-      "url": "https://builder.aws.com/content/3CpavZX4vNfG8qHvlL0Bf8RReDF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DVpWJWUaQ8cahzlw7mK7J12lGj/capa-.webp",
-      "authorName": "Abinadabe Gomes de Oliveira",
-      "authorAlias": "devabinadabe",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSGjfRlLHupGVQTXkm41tsoSOo.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "aws-api",
-        "builder-center",
-        "training",
-        "students",
-        "cloud-practitioner"
-      ],
-      "publishedAt": "2026-05-10T01:39:02.389Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DVeBVvyEfissvf4S8LVmucEaIU",
-      "title": "Why You Should Not Create Database Connections Inside AWS Lambda Handlers",
-      "description": "Learn why creating database connections inside AWS Lambda handlers can lead to latency, connection storms, and “too many connections” errors in Amazon RDS PostgreSQL and MySQL workloads. This article explains Lambda execution environments, cold starts, warm starts, global scope connection reuse, and how Amazon RDS Proxy helps build scalable and resilient serverless architectures.",
-      "url": "https://builder.aws.com/content/3DVeBVvyEfissvf4S8LVmucEaIU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DVp9M47F68XqJ9vGIvVh4V8L8t/arqu.webp",
-      "authorName": "Gleison",
-      "authorAlias": "strovertzz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37GmHJB0jEWsW01Xz4tnvx6HYRn.webp",
-      "location": "RS, BR",
-      "lat": -29.8425284,
-      "lng": -53.7680577,
-      "tags": [
-        "architecture",
-        "aws-lambda",
-        "amazon-rds",
-        "error",
-        "troubleshoot"
-      ],
-      "publishedAt": "2026-05-10T01:37:39.662Z",
-      "likesCount": 2,
-      "commentsCount": 1
     }
   ],
   "trending": [
@@ -250,8 +255,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3555,
-      "commentsCount": 327
+      "likesCount": 3556,
+      "commentsCount": 328
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -275,44 +280,27 @@
       "commentsCount": 1921
     },
     {
-      "id": "/content/3DLtNThawsqUM6b6NAhJI64OM1k",
-      "title": "Win an AWS Certification Voucher – AWS Summit Stockholm Student Giveaway 2026",
-      "description": " AWS Summits Stockholm: Student Voucher giveaway  & Career Resources ",
-      "url": "https://builder.aws.com/content/3DLtNThawsqUM6b6NAhJI64OM1k",
-      "imageUrl": "",
-      "authorName": "Deontae Murphy",
-      "authorAlias": "deontaemurphy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-05-06T13:18:24.322Z",
-      "likesCount": 8,
-      "commentsCount": 60
-    },
-    {
-      "id": "/content/3DHuwpocBGOSr9qmh0vAM0flzZx",
-      "title": "Primeiros passos no AWS Builder Center",
-      "description": "Se você está começando agora, entender como navegar dentro da plataforma pode fazer bastante diferença. Neste artigo, vamos explorar o que cada área do menu oferece e como usar o ambiente de forma prática.",
-      "url": "https://builder.aws.com/content/3DHuwpocBGOSr9qmh0vAM0flzZx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DW7cLdPWCi2rrn3OzVv2C4bgnb/1000.webp",
-      "authorName": "Laís Farias",
-      "authorAlias": "laaay",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Coozfr3l1X7RB9FtL6gWALKK57.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3DUQz7ukjUDZ3cJ6Sd2mJFuPgno",
+      "title": "Simple Blog Post Researcher & Writer Agents with LangGraph, Memory, AWS Bedrock Nova: Generator & Evaluator Pattern in Multi-Agent Graph",
+      "description": "Implementing Generator & Evaluator Pattern using LangGraph and AWS Bedrock Nova; How to use Memory.MD file by different agents; How to implement multi-agents with graph, state management, routing, nodes, conditional loops, and memory.",
+      "url": "https://builder.aws.com/content/3DUQz7ukjUDZ3cJ6Sd2mJFuPgno",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DX317T7hjf3daaLI1M6yK2OqpO/merm.webp",
+      "authorName": "Ömer Berat Sezer",
+      "authorAlias": "omerberatsezer",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38R7i0Zu7ieX899yEbzZAQzXCyp.webp",
+      "location": "Bavaria, DE",
+      "lat": 48.9467562,
+      "lng": 11.4038717,
       "tags": [
-        "fundamentals",
-        "educational",
-        "aws-educate",
-        "aws-community-builders",
-        "builder-center"
+        "agentic-ai",
+        "agents",
+        "ai",
+        "amazon-bedrock",
+        "langgraph"
       ],
-      "publishedAt": "2026-05-10T04:08:52.531Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "publishedAt": "2026-05-10T11:54:48.337Z",
+      "likesCount": 0,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -336,47 +324,44 @@
       "commentsCount": 321
     },
     {
-      "id": "/content/3DVCbUgmkCls9fdPxKeX4IMhKcM",
-      "title": "10 ideias de projetos para DESTACAR seu currículo",
-      "description": "Ideias de projetos usando serviços da AWS que podem incrementar seu portifólio e aumentar suas chances em boas oportunidades! :)",
-      "url": "https://builder.aws.com/content/3DVCbUgmkCls9fdPxKeX4IMhKcM",
+      "id": "/content/3DLtNThawsqUM6b6NAhJI64OM1k",
+      "title": "Win an AWS Certification Voucher – AWS Summit Stockholm Student Giveaway 2026",
+      "description": " AWS Summits Stockholm: Student Voucher giveaway  & Career Resources ",
+      "url": "https://builder.aws.com/content/3DLtNThawsqUM6b6NAhJI64OM1k",
       "imageUrl": "",
-      "authorName": "Brenda Bren",
-      "authorAlias": "brenner00",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CaGCO3Ma0lNAbW3OTZ5GS1dQnZ.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
-      "tags": [
-        "career",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-05-09T20:34:44.914Z",
-      "likesCount": 7,
-      "commentsCount": 2
+      "authorName": "Deontae Murphy",
+      "authorAlias": "deontaemurphy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-06T13:18:24.322Z",
+      "likesCount": 8,
+      "commentsCount": 61
     },
     {
-      "id": "/content/3DVJIW8ipDwplUM335Icz158CDJ",
-      "title": "Cloud não é só para quem programa: por que estudantes de várias áreas deveriam conhecer esse universo",
-      "description": "A tecnologia está cada vez mais presente em diferentes áreas do mercado, e entender conceitos como Cloud Computing pode ser um diferencial mesmo para quem não pretende seguir carreira em TI.\n\nEste artigo mostra como estudantes podem começar aos poucos, ampliar repertório e usar o AWS Builder Center como porta de entrada para aprender sobre cloud, IA, carreira e inovação.",
-      "url": "https://builder.aws.com/content/3DVJIW8ipDwplUM335Icz158CDJ",
-      "imageUrl": "",
-      "authorName": "Lícya Oliveira",
-      "authorAlias": "licyaoliveira",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3DWfmXFHGiUF33NZSnxune4QQlI",
+      "title": "3 AWS Projects That Taught Me More Than Any Course",
+      "description": "Sometimes the best way to learn cloud isn’t through courses, it’s through building real projects. In this article, I share 3 AWS projects that taught me practical skills, helped me understand cloud concepts better, and showed me how hands-on learning through AWS Builder Center can make the learning journey more effective and engaging.",
+      "url": "https://builder.aws.com/content/3DWfmXFHGiUF33NZSnxune4QQlI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DWgCvvob0dmOF6lvkeAfFB1emb/Purp.webp",
+      "authorName": "Manvendra Singh 🥑",
+      "authorAlias": "manvendra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39YwvWH5WMWRTfqMaDkMQ5UPrKN.webp",
+      "location": "Rajasthan, IN",
+      "lat": 26.8105777,
+      "lng": 73.7684549,
       "tags": [
-        "aws-cloud-clubs",
-        "artificial-intelligence",
-        "career",
         "students",
-        "aws-builders"
+        "aws-community",
+        "aws-community-builders",
+        "beginner-projects",
+        "free-tier-projects"
       ],
-      "publishedAt": "2026-05-09T21:49:18.885Z",
-      "likesCount": 6,
-      "commentsCount": 1
+      "publishedAt": "2026-05-10T08:58:28.837Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -402,26 +387,46 @@
       "commentsCount": 269
     },
     {
-      "id": "/content/3DW2fg0OKUdHm4hCesmkaBEzQPk",
-      "title": "Toolbox do Builder: As 3 ferramentas que AWS usa para virar seu projeto acadêmico em portfólio",
-      "description": "Descubra o caminho prático para tirar seus projetos do localhost e construir um portfólio de nuvem profissional e escalável. Aproveite os recursos do AWS Builder Center para dominar as ferramentas que o mercado exige sem custos iniciais.",
-      "url": "https://builder.aws.com/content/3DW2fg0OKUdHm4hCesmkaBEzQPk",
+      "id": "/content/3DVCbUgmkCls9fdPxKeX4IMhKcM",
+      "title": "10 ideias de projetos para DESTACAR seu currículo",
+      "description": "Ideias de projetos usando serviços da AWS que podem incrementar seu portifólio e aumentar suas chances em boas oportunidades! :)",
+      "url": "https://builder.aws.com/content/3DVCbUgmkCls9fdPxKeX4IMhKcM",
       "imageUrl": "",
-      "authorName": "Matheus Fonseca",
-      "authorAlias": "mfalmeida",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7VBStjQoTuCQZrjHCw40gAriC.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "authorName": "Brenda Bren",
+      "authorAlias": "brenner00",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CaGCO3Ma0lNAbW3OTZ5GS1dQnZ.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
       "tags": [
-        "students",
-        "aws-amplify",
-        "aws-skill-builder",
-        "aws-lambda"
+        "career",
+        "beginner-projects"
       ],
-      "publishedAt": "2026-05-10T04:02:24.069Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "publishedAt": "2026-05-09T20:34:44.914Z",
+      "likesCount": 7,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1459,
+      "commentsCount": 337
     }
   ]
 }
