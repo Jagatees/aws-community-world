@@ -4,6 +4,7 @@ import TabNav from './components/TabNav';
 import NewsPanel from './components/NewsPanel';
 import ProfileCard from './components/ProfileCard';
 import TagFilter from './components/TagFilter';
+import KiroAvatarOverlay from './components/KiroAvatarOverlay';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 
@@ -610,6 +611,7 @@ export default function App() {
                       flyToTarget={resolvedFlyToTarget}
                       zoomCommand={zoomCommand}
                     />
+                    {activeCategory === 'kiro-ambassadors' && !loading && <KiroAvatarOverlay />}
                   </div>
                 </Suspense>
               ) : (
