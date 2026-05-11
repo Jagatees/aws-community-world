@@ -1,6 +1,203 @@
 {
-  "updatedAt": "2026-05-11T13:04:26.596Z",
+  "updatedAt": "2026-05-11T18:41:35.314Z",
   "latest": [
+    {
+      "id": "/content/3DaVYWXtt7EAuhnsqIUZUS7c8QR",
+      "title": "The Modernization Journey: How to Take a Legacy System From Zero Trust to AI Ready Without Rewrites or Downtime and Big Costs",
+      "description": "It walks through the business case, the Zero Trust uplift, the surrounding modernization architecture, and the final AI integration using serverless and Bedrock, all delivered with no rewrites, no downtime, and no unexpected cost.  ",
+      "url": "https://builder.aws.com/content/3DaVYWXtt7EAuhnsqIUZUS7c8QR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DaYWQDobLMHSQz4CEShTjk4aUX/Copi.webp",
+      "authorName": "Jonathan Wong",
+      "authorAlias": "jonanata",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdiLMbcx1U8Emj177eurPoDLV5.webp",
+      "location": "CA",
+      "lat": 61.0666922,
+      "lng": -107.991707,
+      "tags": [
+        "ai",
+        "zero-trust",
+        "amazon-bedrock",
+        "cybersecurity"
+      ],
+      "publishedAt": "2026-05-11T17:51:33.942Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DaWdamGuC32Mb8OzOP8Zxot3ki",
+      "title": "Hooks in KIRO: How to Automate Repetitive Tasks with Smart Triggers",
+      "description": "How many times a day do you ask the agent to run linting, generate tests, or update documentation? If the answer is “many,” then Kiro’s agent hooks are for you. Instead of repeating these requests manually, you define a rule once and Kiro handles the rest automatically and consistently. In this post, we’ll explore what hooks are, how they work, the types of available triggers, and how to create your own from scratch.\n\n\n",
+      "url": "https://builder.aws.com/content/3DaWdamGuC32Mb8OzOP8Zxot3ki",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DaWtgvGzNqhagu7NQ79OM33LFT/imgi.webp",
+      "authorName": "Muhammad Adnan Sultan",
+      "authorAlias": "madnansultan",
+      "authorAvatarUrl": "",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [],
+      "publishedAt": "2026-05-11T17:39:38.696Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DaNfiTNCsYMKYAZ7V0fjH9WtDe",
+      "title": "AI Harness Engineering with KIRO",
+      "description": "Learn Harness Engineering with KIRO",
+      "url": "https://builder.aws.com/content/3DaNfiTNCsYMKYAZ7V0fjH9WtDe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DaO5bEjr7ddTF4KVv4BFOc9AfP/Chat.webp",
+      "authorName": "Manoj Kumar S",
+      "authorAlias": "manoj2690",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "kiro",
+        "kiro-agent",
+        "agents",
+        "artificial-intelligence"
+      ],
+      "publishedAt": "2026-05-11T16:23:24.954Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DaK5rxab85V4wRay5OspQVDC0E",
+      "title": "Prompt AI Coding Assistants to Build Production-Ready Agents: 8 Essential Patterns",
+      "description": "When you ask an AI assistant like Kiro, Claude Code, or ChatGPT to \"build me an agent,\" you get working code. But you don't see the architecture decisions happening behind the scenes. The agent responds to queries, but it might waste tokens in reasoning loops, hallucinate answers from incomplete data, or freeze on slow APIs. These failures are silent until production.",
+      "url": "https://builder.aws.com/content/3DaK5rxab85V4wRay5OspQVDC0E",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DaKiZdyljF5naAGRyKwDDNKiiG/porta.webp",
+      "authorName": "Elizabeth Fuentes",
+      "authorAlias": "elizabethfuentes12",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "agentic-ai",
+        "prompt-engineering",
+        "strands",
+        "strands-agents",
+        "amazon-bedrock-agentcore"
+      ],
+      "publishedAt": "2026-05-11T15:55:45.915Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DaJIoWzbdVQj8pTdhFaaCfhd7I",
+      "title": "Computação em nuvem pode ser divertida? Sim, e um jogo de labirinto me ajudou a provar isso.",
+      "description": "Aprender computação em nuvem pode ser divertido? Sim. Criei um jogo de labirinto no Scratch com os logos da Estácio e da AWS, hospedei na nuvem e usei para ensinar sobre escalabilidade, IA e arquitetura de computadores. Os alunos interagiram, torceram e entenderam na prática como a tecnologia pode ser acessível.",
+      "url": "https://builder.aws.com/content/3DaJIoWzbdVQj8pTdhFaaCfhd7I",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DaJX9j983E5dRq2la6RNDwMuxI/scrat.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "amazon-cloudfront",
+        "amazon-s3"
+      ],
+      "publishedAt": "2026-05-11T15:50:12.140Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DaB9VV1RN3fHh9PW8erMJUvHuf",
+      "title": "AI Fundamentals for the AWS AI Practitioner",
+      "description": "In this article, I’ll share the knowledge I consider essential for working with AI on AWS and preparing for the AI Practitioner certification. Before exploring services and use cases, I believe building a strong theoretical foundation is essential, since understanding the concepts first makes the practical side much easier. We’ll start with broad AI concepts and gradually move toward practical model adaptation strategies through a sequence of questions that naturally arise as the topic evolves.",
+      "url": "https://builder.aws.com/content/3DaB9VV1RN3fHh9PW8erMJUvHuf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DaPQ3Qfgv6Td6V2H0iCmF2iIKa/IMG-.webp",
+      "authorName": "Rafael Napolitano Vescovi",
+      "authorAlias": "rafaelnapolitanoo",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ADD3huv7ZYY2XlFLY3Zj1JN5WE.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "ai-engineering",
+        "ai-practitioner",
+        "algorithm"
+      ],
+      "publishedAt": "2026-05-11T14:52:32.443Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DaAaU6QO5NTAC1JJ3xpNDji5Z2",
+      "title": "AI-Assisted MAP Business Case: From Legacy .NET to Full Modernization Plan Before Lunch",
+      "description": "What happens when you point an AI agent at a real AWS MAP business case for a legacy .NET modernization? Nine structured deliverables, two architecture diagrams, a full TCO model, and a funded migration strategy — all from a single workshop session instead of the usual 2–3 weeks. This isn't chatbot territory: it's iterative, context-aware orchestration where corrections propagate across every dependent document. A practical look at agentic AI for AWS Partners building MAP cases.",
+      "url": "https://builder.aws.com/content/3DaAaU6QO5NTAC1JJ3xpNDji5Z2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DaB3YgrVvSP01rLd0h3UhEEViF/Scre.webp",
+      "authorName": "skyPurpleRoy",
+      "authorAlias": "skypurplecloud",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "cloud-migration",
+        "migration",
+        "kiro",
+        "kiro-agent",
+        "kiro-heroes"
+      ],
+      "publishedAt": "2026-05-11T14:36:55.751Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Da64he6swU3SYN2NV0jeYW5Bio",
+      "title": "Deploying EpicBook Application on AWS using Terraform (End-to-End DevOps Project)",
+      "description": "In this project, I implemented a production-style deployment of a full-stack application (EpicBook) on AWS using Terraform. The goal was to automate everything — from infrastructure provisioning to application deployment with zero manual intervention (except SSH for debugging).",
+      "url": "https://builder.aws.com/content/3Da64he6swU3SYN2NV0jeYW5Bio",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Da8ZNjB5BIgfcJfDdRt4UmwBNg/022-w.webp",
+      "authorName": "Bhupendra Bhati",
+      "authorAlias": "bhupendrabhati",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApyQhRFvikLmfdiSRyOiCBS6gL.webp",
+      "location": "Rajasthan, IN",
+      "lat": 26.8105777,
+      "lng": 73.7684549,
+      "tags": [
+        "terraform",
+        "amazon-s3",
+        "amazon-ec2",
+        "amazon-vpc",
+        "IaC"
+      ],
+      "publishedAt": "2026-05-11T14:17:26.482Z",
+      "likesCount": 3,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3DZuMPsk0Nysg9ifnDF7wP1nyyh",
+      "title": "Can You Trust Your Agent? Evaluation Strategies for AI Agents",
+      "description": "How to build confidence in your autonomous AI agents - from development through production using AgentCore Evaluations ",
+      "url": "https://builder.aws.com/content/3DZuMPsk0Nysg9ifnDF7wP1nyyh",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DZzRmf7W7WrFZRI5uVdObnwTQ8/eval.webp",
+      "authorName": "Meidan Nasi",
+      "authorAlias": "meidansi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D52DhF195FUXMvRJeuJkfShyAU.webp",
+      "location": "IL",
+      "lat": 30.8124247,
+      "lng": 34.8594762,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai-ml",
+        "ai-services",
+        "amazon-bedrock-agentcore"
+      ],
+      "publishedAt": "2026-05-11T13:21:14.607Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DZxR3I6w5VXQ5L8pSNoUuNgZeB",
       "title": "Amazon EKS Now Supports One-Click Cluster Access Through CloudShell",
@@ -21,196 +218,6 @@
       "publishedAt": "2026-05-11T12:46:31.006Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DY2f3NjhekFfNwVYiS2eqPorAs",
-      "title": "Diagnosing silent SQS → Lambda failures with AWS DevOps Agent",
-      "description": "Most SQS → Lambda failures that break production never trigger the Errors metric. This article walks through four common failure modes, what their telemetry actually looks like, and what AWS DevOps Agent catches (and misses) when pointed at each one.",
-      "url": "https://builder.aws.com/content/3DY2f3NjhekFfNwVYiS2eqPorAs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DY2gKe1B58u1qx560IXcrT7bsF/canv.webp",
-      "authorName": "Itziar",
-      "authorAlias": "itziarol",
-      "authorAvatarUrl": "",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "amazon-sqs",
-        "aws-lambda",
-        "devops",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-11T12:11:50.320Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DZbXRSj4CVRuZMekTNg1y6FOzD",
-      "title": "Automating AWS Community Onboarding with Lambda, GitHub Actions, and Cognito",
-      "description": "How Golden Jackets Brazil onboards new members in under 60 seconds — from form submission to live member card — with zero manual intervention.",
-      "url": "https://builder.aws.com/content/3DZbXRSj4CVRuZMekTNg1y6FOzD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DZeEXe33F5XFJHskEsS3QfBs4p/form.webp",
-      "authorName": "Ricardo Gulias",
-      "authorAlias": "gulias",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4ggCPpfr9XqbMdvHfIhKVMObN.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "serverless",
-        "devops",
-        "aws-lambda",
-        "community"
-      ],
-      "publishedAt": "2026-05-11T10:06:30.419Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DZbXeWQyT2BAqpBW6zZE2uZU6j",
-      "title": "AWS CloudShell Has a Hidden API. Here's How to Use It with boto3.",
-      "description": "Did you know AWS CloudShell has a full REST API behind the scenes? \n\nI built an unofficial boto3 client that lets you programmatically create environments (including VPC mode), open interactive sessions, transfer files, and manage the full lifecycle — with native retries and error handling.\n\nThink: bastion-less VPC access, disposable test environments, automation — all without spinning up EC2. 👌\n",
-      "url": "https://builder.aws.com/content/3DZbXeWQyT2BAqpBW6zZE2uZU6j",
-      "imageUrl": "",
-      "authorName": "Jérôme GUYON",
-      "authorAlias": "jeromeguyon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/383rv69prRuFB7MPKUa4gnqROKU.webp",
-      "location": "FR",
-      "lat": 46.603354,
-      "lng": 1.8883335,
-      "tags": [
-        "aws-cloudshell",
-        "sre",
-        "python",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-05-11T09:46:39.881Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DZLp7NgQ7DbptKE75kAMWfHhro",
-      "title": "Don't Break Prompts During Amazon Bedrock Model Upgrades",
-      "description": "Build an automated pipeline to catch prompt quality regressions before promoting a new foundation model version on Amazon Bedrock.",
-      "url": "https://builder.aws.com/content/3DZLp7NgQ7DbptKE75kAMWfHhro",
-      "imageUrl": "",
-      "authorName": "Alex",
-      "authorAlias": "alexkro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CS1vpsDyEwR3rA80HBqMQsxOuy.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "amazon-bedrock",
-        "generative-ai",
-        "aws-step-functions",
-        "devops",
-        "testing"
-      ],
-      "publishedAt": "2026-05-11T08:29:38.152Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DZOGc8pQW9we13k7WuzlLnJY9B",
-      "title": "AWS PrivateLink Proof of Concept (POC) - Basic Setup",
-      "description": "A month ago we started a new project for one of our customers along with a vendor providing a certain tool to be used for BI reports. The BI reports were dependent on the RDS database on our AWS account, but the vendor was hosting the tool on their account. By all means, we cannot provide them with any access to our AWS account, the only access to be provided is for the RDS database, and only RDS. That is why we thought of using AWS PrivateLink!",
-      "url": "https://builder.aws.com/content/3DZOGc8pQW9we13k7WuzlLnJY9B",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DZP2rLkcSi501oLtGoSf5ehVLh/1-Hew.webp",
-      "authorName": "Mahmoud Abdelrahman",
-      "authorAlias": "moud",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zkWBp96e2nJ4XtYluYmflQezNK.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-private-link",
-        "aws-networking"
-      ],
-      "publishedAt": "2026-05-11T08:14:49.437Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DWmuxzEhTlIQWtR8VqRiHYygoF",
-      "title": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 2]",
-      "description": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 2]",
-      "url": "https://builder.aws.com/content/3DWmuxzEhTlIQWtR8VqRiHYygoF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DZMWzDIdcb3RsZXQvYbsw112Jk/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-11T07:39:57.013Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DZFD4KIAq2LJYsbnGWz1aZK4z8",
-      "title": "Why Modern Applications Are Moving Closer to the User",
-      "description": "Understanding edge computing, latency, and the infrastructure shift behind modern cloud systems.",
-      "url": "https://builder.aws.com/content/3DZFD4KIAq2LJYsbnGWz1aZK4z8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DZL5vJlDlCGbYIyFHJEhEly6l8/isto.webp",
-      "authorName": "Firdevs Akbayır",
-      "authorAlias": "firdevsakbayir",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/353LFsewMJvwyUcwIMYQne4QLfx.webp",
-      "location": "CY",
-      "lat": 34.9823018,
-      "lng": 33.1451285,
-      "tags": [
-        "distributed-systems",
-        "aws-edge-services",
-        "edge-locations",
-        "amazon-cloudfront",
-        "latency"
-      ],
-      "publishedAt": "2026-05-11T07:36:22.516Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DZLA2KTx7UtFE1v9LdHKeZnjxz",
-      "title": "Building a Solar PV Monitoring System Using AWS Cloud",
-      "description": "Learn how a Solar PV monitoring system can be integrated with AWS Cloud to collect, process, and visualize real-time energy data. This article explores the architecture, AWS services, and key benefits of using cloud technology for smart energy monitoring.",
-      "url": "https://builder.aws.com/content/3DZLA2KTx7UtFE1v9LdHKeZnjxz",
-      "imageUrl": "",
-      "authorName": "ANJALI ",
-      "authorAlias": "anjalikumariak47",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdTkqG8WzJACMExd9fjsnK3OIE.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-11T07:31:36.521Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DZIobH0JPzSPowFLoPooMCFaH1",
-      "title": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 1]",
-      "description": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 1]",
-      "url": "https://builder.aws.com/content/3DZIobH0JPzSPowFLoPooMCFaH1",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DZKIIiEuNHAaAvcY5SfTb8LsxQ/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-11T07:21:23.945Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -228,8 +235,31 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-05T10:59:17.736Z",
-      "likesCount": 41,
-      "commentsCount": 412
+      "likesCount": 43,
+      "commentsCount": 413
+    },
+    {
+      "id": "/content/3Da64he6swU3SYN2NV0jeYW5Bio",
+      "title": "Deploying EpicBook Application on AWS using Terraform (End-to-End DevOps Project)",
+      "description": "In this project, I implemented a production-style deployment of a full-stack application (EpicBook) on AWS using Terraform. The goal was to automate everything — from infrastructure provisioning to application deployment with zero manual intervention (except SSH for debugging).",
+      "url": "https://builder.aws.com/content/3Da64he6swU3SYN2NV0jeYW5Bio",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Da8ZNjB5BIgfcJfDdRt4UmwBNg/022-w.webp",
+      "authorName": "Bhupendra Bhati",
+      "authorAlias": "bhupendrabhati",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApyQhRFvikLmfdiSRyOiCBS6gL.webp",
+      "location": "Rajasthan, IN",
+      "lat": 26.8105777,
+      "lng": 73.7684549,
+      "tags": [
+        "terraform",
+        "amazon-s3",
+        "amazon-ec2",
+        "amazon-vpc",
+        "IaC"
+      ],
+      "publishedAt": "2026-05-11T14:17:26.482Z",
+      "likesCount": 3,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -270,8 +300,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3462,
-      "commentsCount": 1923
+      "likesCount": 3464,
+      "commentsCount": 1924
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -295,6 +325,29 @@
       "commentsCount": 321
     },
     {
+      "id": "/content/3DaNfiTNCsYMKYAZ7V0fjH9WtDe",
+      "title": "AI Harness Engineering with KIRO",
+      "description": "Learn Harness Engineering with KIRO",
+      "url": "https://builder.aws.com/content/3DaNfiTNCsYMKYAZ7V0fjH9WtDe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DaO5bEjr7ddTF4KVv4BFOc9AfP/Chat.webp",
+      "authorName": "Manoj Kumar S",
+      "authorAlias": "manoj2690",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "kiro",
+        "kiro-agent",
+        "agents",
+        "artificial-intelligence"
+      ],
+      "publishedAt": "2026-05-11T16:23:24.954Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3DLtNThawsqUM6b6NAhJI64OM1k",
       "title": "Win an AWS Certification Voucher – AWS Summit Stockholm Student Giveaway 2026",
       "description": " AWS Summits Stockholm: Student Voucher giveaway  & Career Resources ",
@@ -308,7 +361,7 @@
       "lng": -75.8449946,
       "tags": [],
       "publishedAt": "2026-05-06T13:18:24.322Z",
-      "likesCount": 12,
+      "likesCount": 14,
       "commentsCount": 63
     },
     {
@@ -332,7 +385,7 @@
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1936,
-      "commentsCount": 269
+      "commentsCount": 270
     },
     {
       "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
@@ -353,7 +406,7 @@
         "agents"
       ],
       "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1462,
+      "likesCount": 1463,
       "commentsCount": 338
     },
     {
@@ -378,52 +431,6 @@
       "publishedAt": "2026-05-05T10:45:07.589Z",
       "likesCount": 33,
       "commentsCount": 20
-    },
-    {
-      "id": "/content/3DOKd98nt5eaYiogYIWogHlOhW2",
-      "title": "How AWS Free Tier Turned Cloud Curiosity Into Hands-On Learning",
-      "description": "This article explores how AWS Free Tier helped me move beyond tutorials and start learning through hands-on experimentation. From small experiments and troubleshooting to practical learning and real-world exploration, it reflects my journey of understanding AWS step by step.\n",
-      "url": "https://builder.aws.com/content/3DOKd98nt5eaYiogYIWogHlOhW2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DPJbAj7PFyIll8Jn4OFyOzR7nt/Chat.webp",
-      "authorName": "Jahnavi Reddy P",
-      "authorAlias": "jahnavireddyputcha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DPIDC0Odhd8HJuse6UQdiZJJo8.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "students",
-        "builder-center",
-        "aws-ambassador",
-        "aws-community",
-        "free-tier-projects"
-      ],
-      "publishedAt": "2026-05-07T19:09:22.635Z",
-      "likesCount": 16,
-      "commentsCount": 10
-    },
-    {
-      "id": "/content/3DZbXRSj4CVRuZMekTNg1y6FOzD",
-      "title": "Automating AWS Community Onboarding with Lambda, GitHub Actions, and Cognito",
-      "description": "How Golden Jackets Brazil onboards new members in under 60 seconds — from form submission to live member card — with zero manual intervention.",
-      "url": "https://builder.aws.com/content/3DZbXRSj4CVRuZMekTNg1y6FOzD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DZeEXe33F5XFJHskEsS3QfBs4p/form.webp",
-      "authorName": "Ricardo Gulias",
-      "authorAlias": "gulias",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4ggCPpfr9XqbMdvHfIhKVMObN.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "serverless",
-        "devops",
-        "aws-lambda",
-        "community"
-      ],
-      "publishedAt": "2026-05-11T10:06:30.419Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ]
 }
