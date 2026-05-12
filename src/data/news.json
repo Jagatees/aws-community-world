@@ -1,6 +1,372 @@
 {
-  "updatedAt": "2026-05-12T12:45:06.018Z",
+  "updatedAt": "2026-05-12T18:40:07.689Z",
   "latest": [
+    {
+      "id": "/content/3DdNwEzRTVzdUAqLfrfSGUxmEww",
+      "title": "Kiro for the Networking & Chip Industry: Your AI-Powered IDE for Switch Abstraction Interface (SAI)/SONiC Development",
+      "description": "TL;DR: Kiro isn't just for web developers. If you're building switch ASICs, implementing Switch Abstraction Interface (SAI) adapters, developing SONiC features, or working with P4 pipelines — Kiro's agentic capabilities were practically made for you.",
+      "url": "https://builder.aws.com/content/3DdNwEzRTVzdUAqLfrfSGUxmEww",
+      "imageUrl": "",
+      "authorName": "Govindhi",
+      "authorAlias": "govindhi",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "networking",
+        "kiro",
+        "advanced-networking",
+        "ai-chips"
+      ],
+      "publishedAt": "2026-05-12T18:08:41.110Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3BwK352WQJP6w4ic2IISR3XxcYd",
+      "title": "[ES] Prácticas sobre la estructuración de datos en AWS Redshift al implementar un modelo de datos de Data Vault: un compendio resumido",
+      "description": "Resumiendo documentos oficiales de las experiencias de implementar un Data Vault 2.0 dentro de AWS Redshift para encontrar prácticas que nos ayudan a estructurar mejor los datos dentro del servicio para soportar el modelo de datos eficientemente.",
+      "url": "https://builder.aws.com/content/3BwK352WQJP6w4ic2IISR3XxcYd",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DdJX182YAq0hteLn0mtGlXtJTn/Gemi.webp",
+      "authorName": "Carlos Chicata",
+      "authorAlias": "ferchicata49",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B9gO2DnQ9yhcrz6FLvZUPz6pdJ.webp",
+      "location": "PE",
+      "lat": -6.8699697,
+      "lng": -75.0458515,
+      "tags": [
+        "amazon-redshift",
+        "data-warehouses",
+        "data",
+        "big-data",
+        "spanish"
+      ],
+      "publishedAt": "2026-05-12T17:18:04.324Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dd4T4x0IcL39ykwc3ydBr7bnnN",
+      "title": "AWS Summit Sydney Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in Sydney, drop by the Developer Community Zone in the Expo and join in on our Builder Question of the Day challenge!",
+      "url": "https://builder.aws.com/content/3Dd4T4x0IcL39ykwc3ydBr7bnnN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DdHKa9eMpUbhFOxn5KjNyl53MR/AWS-.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-05-12T16:57:46.805Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/2mzUVfW9FTyzYzLOBs8is3Z7QMt",
+      "title": "Building a private agent with students using Strands Agent and Ollama",
+      "description": "This covers configuring a local AI agent course curriculum for a Windows environment using Ollama and Strands Agent, and utilizing Strands Agent's built-in tools.",
+      "url": "https://builder.aws.com/content/2mzUVfW9FTyzYzLOBs8is3Z7QMt",
+      "imageUrl": "",
+      "authorName": "Youngick Kim",
+      "authorAlias": "youngick",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2srKFv9LtvZSC7OjOG8Higd8wuk.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai-agents",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-12T16:46:29.883Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DdAXfWsmfMldQs2ma9TgMVjbdZ",
+      "title": "Data Security and Governance: Why RDS Proxy is the Gold Standard on AWS",
+      "description": "A conceptual and practical guide on why implementing Amazon RDS Proxy is more secure than using traditional database connection schemes on AWS.",
+      "url": "https://builder.aws.com/content/3DdAXfWsmfMldQs2ma9TgMVjbdZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DdCbfJQnjkwBPMlW5qfCvhDlac/6adf.webp",
+      "authorName": "Gabo Alvarez",
+      "authorAlias": "gaboalvarez",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33qHil03bIZCeBvjPbxXRobsZEK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "amazon-rds",
+        "cloud-security",
+        "aws-secrets-manager",
+        "databases"
+      ],
+      "publishedAt": "2026-05-12T16:22:55.586Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/38CQjrgGa8L9NRTBlw2gjNZnrBv",
+      "title": "Choosing the Right MSK Cluster Type: Standard vs. Express Brokers vs. Serverless",
+      "description": "A practical cost comparison of Amazon MSK Standard Brokers, Express Brokers, and Serverless — with pricing, worked calculations, and guidance on choosing the right cluster type for your workload.",
+      "url": "https://builder.aws.com/content/38CQjrgGa8L9NRTBlw2gjNZnrBv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DdCaDzK2NvSxDTe9UXEOVCMKZB/Scre.webp",
+      "authorName": "Uthman Adebanjo",
+      "authorAlias": "uadebanj",
+      "authorAvatarUrl": "",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-05-12T16:17:55.592Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/39vBseDpftee1pnEtXcfm1JYhyN",
+      "title": "The Glossary Isn't Important, Right? Lessons From My Kiro Workshop Experience",
+      "description": "A review of a hands-on Kiro workshop that turned concept art into a playable game, plus the unexpected lessons learned along the way.",
+      "url": "https://builder.aws.com/content/39vBseDpftee1pnEtXcfm1JYhyN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dc1r88HQF1CoBYMXyMMhvhZwgm/kiro.webp",
+      "authorName": "Franklin Lobb",
+      "authorAlias": "franklinlobb",
+      "authorAvatarUrl": "",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aws-user-groups",
+        "kiro"
+      ],
+      "publishedAt": "2026-05-12T16:06:16.733Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dd4PzYvNS7knkGhX5qNvtkcbkf",
+      "title": "The AWS Diagram MCP Server Was Deprecated — Here's the Updated Approach Using Agent Skills",
+      "description": "The awslabs.aws-diagram-mcp-server package has been yanked from PyPI. If you're trying to generate AWS architecture diagrams following the official blog post, it won't work anymore. The capability migrated to the Agent Skills system in\n  the deploy-on-aws plugin. I documented the updated setup: how to install the plugin, configure MCP servers, and generate professional editable .drawio diagrams with official AWS4 icons using Kiro CLI and natural language prompts.",
+      "url": "https://builder.aws.com/content/3Dd4PzYvNS7knkGhX5qNvtkcbkf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dd4y85gqNvn9DFCkM7g5aQ1AVw/Gemi.webp",
+      "authorName": "Matheus Costa",
+      "authorAlias": "matheuscostadevops",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/343qd7J3PXJro4hBAecAhcr1sVw.webp",
+      "location": "GO, BR",
+      "lat": -15.9323662,
+      "lng": -50.1392928,
+      "tags": [],
+      "publishedAt": "2026-05-12T15:17:06.156Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DczwIX5BpWKVOUl8nf33m4Hxpe",
+      "title": "Muito Além da Infraestrutura: Como a Nuvem Acelera a Inovação e o Impacto",
+      "description": "A computação em nuvem é o \"cheat code\" definitivo para quem quer inovar. Neste artigo, exploramos como a AWS vai muito além da infraestrutura, permitindo a criação de MVPs ágeis e o acesso democrático a tecnologias de ponta. Descubra como o foco no cliente e a agilidade para pivotar transformam ideias acadêmicas em startups de impacto real.",
+      "url": "https://builder.aws.com/content/3DczwIX5BpWKVOUl8nf33m4Hxpe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dd1NcSr56UiTM53ttAM7z9yKR4/aws_.webp",
+      "authorName": "Lucas Ibanez",
+      "authorAlias": "lucasibanez",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8yykt1TcfO0IR3iSjNwl8gTI6.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [],
+      "publishedAt": "2026-05-12T14:45:27.797Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dd00jHyiS6uNyJz2Ee382fNzGR",
+      "title": "Building a unified AI intelligence layer for EdTech on AWS",
+      "description": "EdTech has a data problem that generic tools alone were not built to solve. Here is how we use AWS building blocks together with Verbis Graph to address it, and how the solution can be deployed today.",
+      "url": "https://builder.aws.com/content/3Dd00jHyiS6uNyJz2Ee382fNzGR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dd03l1z5VTfLOBzA72pPXNiFVW/Scre.webp",
+      "authorName": "Alena",
+      "authorAlias": "prodigyaisolutions",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BqFqD1Z1c7hNsSJV26sSvVpya1.webp",
+      "location": "IT",
+      "lat": 42.6384261,
+      "lng": 12.674297,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-eks",
+        "retreival-augmented-generation",
+        "rag"
+      ],
+      "publishedAt": "2026-05-12T14:36:28.811Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DcxIp7HD5MK2kWqzIhd9A86TST",
+      "title": "Secure Access to Private AWS Resources with EC2 Instance Connect Endpoint",
+      "description": "How to reach RDS databases, Aurora clusters, and EC2 instances in private subnets without bastion hosts, VPNs, or static SSH keys, using only IAM credentials and a single CLI command.",
+      "url": "https://builder.aws.com/content/3DcxIp7HD5MK2kWqzIhd9A86TST",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DcyZL6mu4FODhWhmXUyVZGFLdt/ec2-.webp",
+      "authorName": "Lívia Mor",
+      "authorAlias": "liviamor",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiPMb4s1WQToj4b6enA4Lht3io.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "security",
+        "security-identity",
+        "amazon-ec2",
+        "amazon-rds",
+        "iam"
+      ],
+      "publishedAt": "2026-05-12T14:26:13.288Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DcwQrCOd4MiZEu7QTc87gGQofO",
+      "title": "Dia a Dia utilizando o Builder Center",
+      "description": "Já se sentiu perdido utilizando uma nova plataforma? se sim este é o melhor artigo pra você!",
+      "url": "https://builder.aws.com/content/3DcwQrCOd4MiZEu7QTc87gGQofO",
+      "imageUrl": "",
+      "authorName": "Victor augusto Toledo Lúcio Borghi",
+      "authorAlias": "victoraugustoborghi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CunGmIQz6ZAfwJF99bpL0Bq7HG.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador"
+      ],
+      "publishedAt": "2026-05-12T14:07:57.816Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DXmRPT7fwGAJnzf8ATgswhtJ0e",
+      "title": "Da teoria pra prática: o dia em que subi meu primeiro arquivo na AWS",
+      "description": "Gabriel Sales Machado de Souza\nAWS Builder Center · Student Leader",
+      "url": "https://builder.aws.com/content/3DXmRPT7fwGAJnzf8ATgswhtJ0e",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DcwG2tXV5P9xQysdAEWj9Sq5Pa/Fram.webp",
+      "authorName": "Gabriel Sales Machado de Souza",
+      "authorAlias": "salles",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CrNtEWyZoFVowXCED8jDYaNhcA.webp",
+      "location": "MS, BR",
+      "lat": -19.5852564,
+      "lng": -54.4794731,
+      "tags": [
+        "aws-ambassador",
+        "students",
+        "aws-builders",
+        "aws-academy",
+        "aws-educate"
+      ],
+      "publishedAt": "2026-05-12T14:00:36.594Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DctWsuNzz5VWc5i7ySUou6yexA",
+      "title": "My Experience at Buildersfest.",
+      "description": "Attended the BuildersFest and it was an inspiring experience as a first-year student. The session gave me a deeper understanding of hackathons, open-source collaboration, mentorship, and the importance of tech communities in helping students grow. Learning about overnight hackathon culture and meeting passionate developers motivated me to participate more actively in future workshops and coding events. Huge thanks to the OSEN team for organizing such an engaging and informative session.",
+      "url": "https://builder.aws.com/content/3DctWsuNzz5VWc5i7ySUou6yexA",
+      "imageUrl": "",
+      "authorName": "Ayush Anand",
+      "authorAlias": "genayu",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "open-source",
+        "hackathon",
+        "developer",
+        "tech-journey",
+        "students"
+      ],
+      "publishedAt": "2026-05-12T13:48:29.654Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DctTl5ClsBDm28zWL7UmQ5GchP",
+      "title": "baadal sangathan",
+      "description": "It starts with how we can save our time to choose for meals .",
+      "url": "https://builder.aws.com/content/3DctTl5ClsBDm28zWL7UmQ5GchP",
+      "imageUrl": "",
+      "authorName": "Bhumi Bansal",
+      "authorAlias": "bhumibansal",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-12T13:41:54.061Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DcsCt25njRwdEORcwqR0mKh3a5",
+      "title": "My Experience at Buildersfest",
+      "description": "just a review",
+      "url": "https://builder.aws.com/content/3DcsCt25njRwdEORcwqR0mKh3a5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DcshZw3DQ9SZm25aZKFxoTFMv9/Whats.webp",
+      "authorName": "Abhishek Gupta",
+      "authorAlias": "pixelnomad1856",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-12T13:33:48.760Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/2vBAVakmjhKaOutRtPMTyYKQkhE",
+      "title": "Your WAF Is Blocking the Robots You Actually Want",
+      "description": "A practical look at agent readiness — and the security blind spot hiding in plain sight - all with AWS edge services",
+      "url": "https://builder.aws.com/content/2vBAVakmjhKaOutRtPMTyYKQkhE",
+      "imageUrl": "",
+      "authorName": "Tzoori Tamam",
+      "authorAlias": "tzoorit",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2vBAS1YfqL09ZpikaT3Gq6nABx7.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "ai",
+        "aws-waf",
+        "waf",
+        "agents",
+        "SEO"
+      ],
+      "publishedAt": "2026-05-12T12:55:28.007Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DRiyFtp29ROozNQF80i9NyShlH",
+      "title": "Building a Thin DevOps Agent on AWS with Self-Hosted n8n, Lambda, and Slack",
+      "description": "The impact of a DevOps Agent is not the number of actions it can run. The real impact is whether it makes the operating model thinner: fewer dashboards, fewer paid layers, fewer places for engineers to check before they can act.",
+      "url": "https://builder.aws.com/content/3DRiyFtp29ROozNQF80i9NyShlH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DcmedDh56wuZwcbFnaDVHGkfbH/n8n-.webp",
+      "authorName": "Paul Choi",
+      "authorAlias": "cbm",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32ao47ICbxA14BXKxwjfbIHQot2.webp",
+      "location": "KR",
+      "lat": 36.638392,
+      "lng": 127.6961188,
+      "tags": [
+        "agentic-ai",
+        "strands-agents",
+        "aws-lambda",
+        "devops"
+      ],
+      "publishedAt": "2026-05-12T12:45:35.724Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cy6ljZbgqPRKBr3NYu2ubQQSjP",
       "title": "IA Generativa para Estudantes: O que você precisa saber além do chat",
@@ -21,8 +387,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-12T12:28:45.221Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 2,
+      "commentsCount": 3
     },
     {
       "id": "/content/3DcP5YaF4uScl582aNEMFrLy2kQ",
@@ -46,176 +412,26 @@
       "publishedAt": "2026-05-12T11:55:36.388Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DceWXZucqH2D9FbOL5oTJSEg4l",
-      "title": "When Rules Are Ignored and Complaints Go Unanswered –My Disappointment with Amazon’s Competition",
-      "description": "Amazon’s official competition rules clearly stated that regional champions would be selected based on the number of likes, but the Greater China region did not follow that rule. The contestant emailed a complaint afterward and has yet to receive any reply.",
-      "url": "https://builder.aws.com/content/3DceWXZucqH2D9FbOL5oTJSEg4l",
-      "imageUrl": "",
-      "authorName": "Hong Xu",
-      "authorAlias": "cabala",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2W44qIQ5QL3MsMonCTItqn6l0.webp",
-      "location": "Jiangsu, CN",
-      "lat": 33.0000001,
-      "lng": 119.9999999,
-      "tags": [
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-05-12T11:48:51.168Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DcfDDaoFj6B9iDouJgiRYukyZ0",
-      "title": "Como a AWS Está Transformando o Futuro da Tecnologia e Criando Novas Oportunidades",
-      "description": "Explorando cada vez mais o universo da computação em nuvem e entendendo como a AWS vem transformando a forma de aprender, criar e inovar na tecnologia ☁️🚀\nA nuvem deixou de ser apenas tendência e se tornou uma das bases do futuro digital. Cada serviço, projeto e aprendizado mostra como a tecnologia pode ser mais acessível e cheia de possibilidades.",
-      "url": "https://builder.aws.com/content/3DcfDDaoFj6B9iDouJgiRYukyZ0",
-      "imageUrl": "",
-      "authorName": "Adailton Keven Guimarães",
-      "authorAlias": "kevinguimaraes",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5zriErfFmn9DLKgK1jXMQwLzL.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [],
-      "publishedAt": "2026-05-12T11:44:35.014Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DcaRv1xGNisIfPnOAarzDbhbwz",
-      "title": "Building AgriNova AI Assistant using Amazon Nova Pro, Strands SDK & MCP",
-      "description": "Built AgriNova AI Assistant using Amazon Nova Pro, Strands SDK, MCP Servers, memory systems, and real-time APIs. The project helps farmers with weather forecasting, rainfall prediction, soil-based crop recommendations, market price analysis, irrigation guidance and multilingual Tamil support using Generative AI and AWS technologies.",
-      "url": "https://builder.aws.com/content/3DcaRv1xGNisIfPnOAarzDbhbwz",
-      "imageUrl": "",
-      "authorName": "Thirumalaiboobathi B",
-      "authorAlias": "thirumalaiboobathi2",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "ai-assisted",
-        "amazon-bedrock-agents"
-      ],
-      "publishedAt": "2026-05-12T11:07:38.971Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DcYiXRTVOWVD73kwcUDPJVN1VD",
-      "title": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 5]",
-      "description": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 5]",
-      "url": "https://builder.aws.com/content/3DcYiXRTVOWVD73kwcUDPJVN1VD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DcZF1yc7q2MEWogFcK6lwQTrvb/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-12T10:53:48.682Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DcVe5wy8hBXZsdisSAA5MAAXnb",
-      "title": "My First Impression of AWS as a Student Beginner",
-      "description": "I recently started exploring AWS as a beginner, and honestly, the dashboard confused me more than I expected. From strange service names to billing fears, here are a few things I struggled with and slowly started understanding.",
-      "url": "https://builder.aws.com/content/3DcVe5wy8hBXZsdisSAA5MAAXnb",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DcWUeK42KhdsSpreSGs2XbSD7E/FBF9.webp",
-      "authorName": "Amrita Malik",
-      "authorAlias": "codewithamrita",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DIAF2tfftVCS4BL9j4136hY5nE.webp",
-      "location": "Haryana, IN",
-      "lat": 29,
-      "lng": 76,
-      "tags": [
-        "ai",
-        "aws-cloud9",
-        "cybersecurity",
-        "vibe-coding",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-12T10:32:06.865Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3AEoUCHpEJlQQ4l1ZegQ7hlbBe1",
-      "title": "Move from AI-Generated Demos to Production-Minded Products with Kiro",
-      "description": "Learn how Kiro helps developers move beyond vague AI-generated demos to production-minded products. This article explores how Specs, Steering, and Hooks create a structured workflow from idea to requirements, design, implementation, and review—helping teams build with greater clarity, consistency, and engineering discipline.",
-      "url": "https://builder.aws.com/content/3AEoUCHpEJlQQ4l1ZegQ7hlbBe1",
-      "imageUrl": "",
-      "authorName": "Rajan Sharma",
-      "authorAlias": "rajansharma",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/384MwbHm9H3ujkfooVQeSBpHDrE.webp",
-      "location": "Chandigarh, IN",
-      "lat": 30.7334421,
-      "lng": 76.7797143,
-      "tags": [
-        "kiro",
-        "kiro-heroes",
-        "ai-agents",
-        "agentic-ide",
-        "ai-ide"
-      ],
-      "publishedAt": "2026-05-12T09:30:58.480Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DcLn7OJPRuyfA22ALVfByPqLbh",
-      "title": "SmartScholar AI: Revolutionizing Personalized Learning with Generative AI",
-      "description": "An inside look at how we built an intelligent learning ecosystem that transforms static study materials into dynamic, adaptive learning paths using Google Gemini and the SM-2 algorithm.",
-      "url": "https://builder.aws.com/content/3DcLn7OJPRuyfA22ALVfByPqLbh",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DcMXGKFWj4x5yGZc2EfzJXjHU0/Scre.webp",
-      "authorName": "Subham",
-      "authorAlias": "subhamkr07",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai",
-        "educational",
-        "react",
-        "python",
-        "full-stack"
-      ],
-      "publishedAt": "2026-05-12T09:09:20.534Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DZYShaLR05vV5OyjtTtrzGCVTk",
-      "title": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 4]",
-      "description": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 4]",
-      "url": "https://builder.aws.com/content/3DZYShaLR05vV5OyjtTtrzGCVTk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dc5OycWSEQfGWiKVTBMwwsm2Ro/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-12T06:48:24.664Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3Dd4T4x0IcL39ykwc3ydBr7bnnN",
+      "title": "AWS Summit Sydney Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in Sydney, drop by the Developer Community Zone in the Expo and join in on our Builder Question of the Day challenge!",
+      "url": "https://builder.aws.com/content/3Dd4T4x0IcL39ykwc3ydBr7bnnN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DdHKa9eMpUbhFOxn5KjNyl53MR/AWS-.webp",
+      "authorName": "Iliyana Ilieva-Gulamerian",
+      "authorAlias": "iliyanag",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30bC46RNI13rEsNx7hS7yZsslDz.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-05-12T16:57:46.805Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
@@ -234,8 +450,27 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3563,
-      "commentsCount": 328
+      "likesCount": 3567,
+      "commentsCount": 329
+    },
+    {
+      "id": "/content/3DceWXZucqH2D9FbOL5oTJSEg4l",
+      "title": "When Rules Are Ignored and Complaints Go Unanswered –My Disappointment with Amazon’s Competition",
+      "description": "Amazon’s official competition rules clearly stated that regional champions would be selected based on the number of likes, but the Greater China region did not follow that rule. The contestant emailed a complaint afterward and has yet to receive any reply.",
+      "url": "https://builder.aws.com/content/3DceWXZucqH2D9FbOL5oTJSEg4l",
+      "imageUrl": "",
+      "authorName": "Hong Xu",
+      "authorAlias": "cabala",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2W44qIQ5QL3MsMonCTItqn6l0.webp",
+      "location": "Jiangsu, CN",
+      "lat": 33.0000001,
+      "lng": 119.9999999,
+      "tags": [
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-05-12T11:48:51.168Z",
+      "likesCount": 4,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -255,29 +490,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3466,
+      "likesCount": 3470,
       "commentsCount": 1924
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2866,
-      "commentsCount": 321
     },
     {
       "id": "/content/3Da64he6swU3SYN2NV0jeYW5Bio",
@@ -299,8 +513,29 @@
         "IaC"
       ],
       "publishedAt": "2026-05-11T14:17:26.482Z",
-      "likesCount": 9,
-      "commentsCount": 8
+      "likesCount": 14,
+      "commentsCount": 9
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2868,
+      "commentsCount": 321
     },
     {
       "id": "/content/3DLtNThawsqUM6b6NAhJI64OM1k",
@@ -316,8 +551,30 @@
       "lng": -75.8449946,
       "tags": [],
       "publishedAt": "2026-05-06T13:18:24.322Z",
-      "likesCount": 15,
-      "commentsCount": 65
+      "likesCount": 19,
+      "commentsCount": 67
+    },
+    {
+      "id": "/content/3DdAXfWsmfMldQs2ma9TgMVjbdZ",
+      "title": "Data Security and Governance: Why RDS Proxy is the Gold Standard on AWS",
+      "description": "A conceptual and practical guide on why implementing Amazon RDS Proxy is more secure than using traditional database connection schemes on AWS.",
+      "url": "https://builder.aws.com/content/3DdAXfWsmfMldQs2ma9TgMVjbdZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DdCbfJQnjkwBPMlW5qfCvhDlac/6adf.webp",
+      "authorName": "Gabo Alvarez",
+      "authorAlias": "gaboalvarez",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33qHil03bIZCeBvjPbxXRobsZEK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "amazon-rds",
+        "cloud-security",
+        "aws-secrets-manager",
+        "databases"
+      ],
+      "publishedAt": "2026-05-12T16:22:55.586Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -339,7 +596,7 @@
         "kiro"
       ],
       "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1937,
+      "likesCount": 1938,
       "commentsCount": 270
     },
     {
@@ -358,70 +615,6 @@
       "publishedAt": "2026-05-05T10:59:17.736Z",
       "likesCount": 47,
       "commentsCount": 415
-    },
-    {
-      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
-      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
-      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
-      "authorName": "Natnael Getenew Zeleke",
-      "authorAlias": "aiet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA",
-        "agents"
-      ],
-      "publishedAt": "2026-04-16T13:19:47.813Z",
-      "likesCount": 1465,
-      "commentsCount": 338
-    },
-    {
-      "id": "/content/3DcYiXRTVOWVD73kwcUDPJVN1VD",
-      "title": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 5]",
-      "description": "Machine Learning 20 Sample Questions - Domain 1: Data Preparation [part 5]",
-      "url": "https://builder.aws.com/content/3DcYiXRTVOWVD73kwcUDPJVN1VD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DcZF1yc7q2MEWogFcK6lwQTrvb/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "HK",
-      "lat": 22.3492155,
-      "lng": 114.1857978,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-12T10:53:48.682Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DbBI7LQgNIcs6UUj7IPPvqFHOp",
-      "title": "AWS Kiro: The Agentic IDE That Makes Specs the Unit of Work",
-      "description": "AWS Kiro is a spec-driven agentic IDE that turns prompts into requirements, design docs, and code  with hooks and steering files that enforce team standards automatically.",
-      "url": "https://builder.aws.com/content/3DbBI7LQgNIcs6UUj7IPPvqFHOp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DbCDlW1blWTTNToxhKxbuF4A0d/https.webp",
-      "authorName": "Jubin Soni",
-      "authorAlias": "jubinsoni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38YZJOEQWdxIpvKuXVOhZBUNBC0.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "ai",
-        "productivity",
-        "kiro",
-        "agentic-ide"
-      ],
-      "publishedAt": "2026-05-11T23:15:25.451Z",
-      "likesCount": 2,
-      "commentsCount": 2
     }
   ]
 }
