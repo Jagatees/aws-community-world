@@ -1,10 +1,213 @@
 {
-  "updatedAt": "2026-05-14T00:48:24.578Z",
+  "updatedAt": "2026-05-14T07:05:20.262Z",
   "latest": [
+    {
+      "id": "/content/3DhcGmg5AkZCaxiQQ8CHFvcYfu6",
+      "title": "From Zero to Cloud: A Beginner's Journey with AWS Builder Labs",
+      "description": "A practical guide for students and beginners to start their cloud journey using AWS Builder Labs - featuring real-world projects, cost management tips, and career-building strategies for hands-on AWS learning.",
+      "url": "https://builder.aws.com/content/3DhcGmg5AkZCaxiQQ8CHFvcYfu6",
+      "imageUrl": "",
+      "authorName": "Vedant Uekey",
+      "authorAlias": "vedantuekey",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRBhNiWQWK053bAgRECaU2lNxB.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-14T05:59:09.839Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DhVyeLuSQ66fEyRYNbhBChznL9",
+      "title": "Is Your SAP-C02 Exam Strategy Career-Ready? Find Out Now",
+      "description": "Unlock advanced AWS architectural skills with this SAP-C02 exam plan. Learn smart preparation strategies, master key topics, and navigate the AWS Solutions Architect Professional certification effectively.",
+      "url": "https://builder.aws.com/content/3DhVyeLuSQ66fEyRYNbhBChznL9",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DhXL7o20A0Yee9le2vFcJ14ZzG/AWS-.webp",
+      "authorName": "Elenan Fielding",
+      "authorAlias": "elenanfielding",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApbhbxiY8b1LZxlHSXeoKBAVVe.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-certification",
+        "aws-certificate-manager",
+        "aws-solutions",
+        "solutions-architect",
+        "solutions"
+      ],
+      "publishedAt": "2026-05-14T05:25:08.591Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DhTC9Sf8dw4wZTLt1jEnUyypVi",
+      "title": "I Built a Self-Healing AI Agent on AWS Bedrock — It Thinks, Recovers, and Never Restarts From Zero",
+      "description": " A phased Strands agent that classifies PDFs, extracts sections with Mistral Large, summarizes with Llama 3 70B, and survives any crash by checkpointing progress to S3 after every document — no duplicate compute, no human restart needed.",
+      "url": "https://builder.aws.com/content/3DhTC9Sf8dw4wZTLt1jEnUyypVi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DhW139rd52p7exQY4Su0u19XH8/Chat.webp",
+      "authorName": "DHILIP S E",
+      "authorAlias": "dhilip4",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyoM97CSl2I5UcKRx44fc6KeFX.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "amazon-bedrock-agentcore",
+        "strands-agents",
+        "data",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-05-14T04:57:18.844Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DhVMCkR5MEBrwQEXXFW2pChm3w",
+      "title": "Designing Event-Driven Workflows on AWS for Real-Time SaaS Applications",
+      "description": "Real-time SaaS products depend on fast, reliable systems that can respond to user actions without creating bottlenecks. This article explores how event-driven workflows on AWS help teams build scalable, resilient, and more responsive applications. ",
+      "url": "https://builder.aws.com/content/3DhVMCkR5MEBrwQEXXFW2pChm3w",
+      "imageUrl": "",
+      "authorName": "Mike Wilson",
+      "authorAlias": "mikewilson",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30rBVaK3ZlCcC55J7Kuzxx8EXnL.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-14T04:52:43.326Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DhRYf98QJwjsFD6mD5uUUxTswO",
+      "title": "Run Claude Code on AWS with Amazon Bedrock: Credits, Costs, and Claude Platform on AWS",
+      "description": "I've installed Claude Code and I had a free trial week. After a while, the subscription expired and I wondered: is there a way to pay for Claude Code usage directly through my AWS bill? This post discuss about it, the possibilities to use Claude Code on AWS",
+      "url": "https://builder.aws.com/content/3DhRYf98QJwjsFD6mD5uUUxTswO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DhSD187x15aQboxhpq0Y2rcHoL/zh1q.webp",
+      "authorName": "Pablo Ezequiel Inchausti",
+      "authorAlias": "pabloinchausti",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33LHeSKSL7ISFPtSUHbKn2h23oa.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "amazon-bedrock",
+        "anthropic",
+        "anthropic-claude",
+        "devops"
+      ],
+      "publishedAt": "2026-05-14T04:24:57.689Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DhLHu8CjaGYHtXrTLsitVNPMiu",
+      "title": "A AWS está mais presente no nosso dia a dia do que muita gente imagina.",
+      "description": "Depois de começar minha jornada no AWS Builder Center, comecei a perceber como a computação em nuvem já faz parte do nosso cotidiano — mesmo que muita gente nem note isso.",
+      "url": "https://builder.aws.com/content/3DhLHu8CjaGYHtXrTLsitVNPMiu",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DhOkAOPpVkTZMkBDbLLAYLCbuP/Desi.webp",
+      "authorName": "Francisco Diássis",
+      "authorAlias": "diassiscloud",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CKHrajBr7BOiAvCEQlvsEWxocJ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "tech",
+        "student-builders",
+        "portuguese",
+        "educational"
+      ],
+      "publishedAt": "2026-05-14T03:59:44.969Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dh6NqyArd9foVRN6aZs9HwQuqa",
+      "title": "The new Agent Toolkit for AWS includes 20+ agent skills, but your agent might never load them without this one file",
+      "description": "The Agent Toolkit for AWS gives your coding agent access to the AWS MCP and curated skills, but without updating the rules file, your agent might answer from model training data instead of using its new tools. ",
+      "url": "https://builder.aws.com/content/3Dh6NqyArd9foVRN6aZs9HwQuqa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DhMXRB4320xxK1sLt8IyCbee9L/agen.webp",
+      "authorName": "Esin Saribudak",
+      "authorAlias": "esincodes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38AcOfXlqmdO9jed8Le5x5xEIAB.webp",
+      "location": "TX, US",
+      "lat": 31.2638905,
+      "lng": -98.5456116,
+      "tags": [
+        "agentic-ide",
+        "agent-toolkit",
+        "aws-mcp-server",
+        "developer-tools"
+      ],
+      "publishedAt": "2026-05-14T03:42:00.216Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DhHDon4EbBwkPyiUEdoP7svAWP",
+      "title": "Cloud Computing Não É Só Para Web: O Que Descobri Fazendo Pesquisa Científica",
+      "description": "Exploro como minha trajetória em pesquisa científica, HPC e computação paralela mudou minha visão sobre cloud computing, mostrando como AWS e o Builder Center podem ajudar estudantes a enxergar infraestrutura e escalabilidade muito além do desenvolvimento web.\n",
+      "url": "https://builder.aws.com/content/3DhHDon4EbBwkPyiUEdoP7svAWP",
+      "imageUrl": "",
+      "authorName": "mariana padilha",
+      "authorAlias": "maripadilha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8Gxf5tj7sRHehIrez8VRoI1VR.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "performance",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-05-14T02:59:57.742Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DhAn6RnELP8uLK7OsUjbxkDcbL",
+      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 1]",
+      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 1]",
+      "url": "https://builder.aws.com/content/3DhAn6RnELP8uLK7OsUjbxkDcbL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DhE6sDV4yGGvdEQBchs0WsyS3n/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
+      "tags": [
+        "aws-certification",
+        "training-and-certification"
+      ],
+      "publishedAt": "2026-05-14T02:29:29.093Z",
+      "likesCount": 3,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3Dh7QY8RmGGWCvkbjLiGZ9bSoVl",
+      "title": "Aprender cloud mudou minha forma de pensar problemas",
+      "description": "Aprender cloud não mudou apenas as ferramentas que eu utilizo, mas a forma como eu analiso problemas e tomo decisões técnicas. Ao longo desse processo, percebi que tecnologia vai muito além de “fazer funcionar”, envolve pensar em eficiência, escalabilidade, custo e impacto real.\n",
+      "url": "https://builder.aws.com/content/3Dh7QY8RmGGWCvkbjLiGZ9bSoVl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dh8c7zGWFA5bkVk76v2AKJF9Pa/Chat.webp",
+      "authorName": "Marcelly Leal Lopes",
+      "authorAlias": "marcellylopes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CapHwWBbgl65yqBhabowARhRVc.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-14T01:45:16.997Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DgbhN5LOMKftPHKxsHmI3jWmf6",
       "title": "Stop Guessing, Start Evaluating: A Conversational System for Model Selection",
-      "description": "An LLM evaluation system where you describe what you want to evaluate in natural language — an expert AI agent handles dataset generation, judge configuration, execution, and analysis end-to-end, and hands you back a PDF report.",
+      "description": "A LLM evaluation system where you describe what you want to evaluate in natural language — an expert AI agent handles dataset generation, judge configuration, execution, and analysis end-to-end, and hands you back a PDF report.",
       "url": "https://builder.aws.com/content/3DgbhN5LOMKftPHKxsHmI3jWmf6",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgfeFrpfMQGZLuwn0rhbR2blDo/Scre.webp",
       "authorName": "Andre",
@@ -20,8 +223,8 @@
         "mcp"
       ],
       "publishedAt": "2026-05-13T22:50:15.254Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "likesCount": 5,
+      "commentsCount": 2
     },
     {
       "id": "/content/3DdcaMPyL9k8anN8ICLX47nuZLO",
@@ -60,8 +263,8 @@
       "lng": -75.8449946,
       "tags": [],
       "publishedAt": "2026-05-13T21:11:31.399Z",
-      "likesCount": 6,
-      "commentsCount": 2
+      "likesCount": 9,
+      "commentsCount": 3
     },
     {
       "id": "/content/3DgbAspNbogZOG1pwSKUwHAO7uu",
@@ -131,7 +334,7 @@
         "kiro"
       ],
       "publishedAt": "2026-05-13T19:47:00.649Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -175,29 +378,6 @@
       "publishedAt": "2026-05-13T19:02:11.742Z",
       "likesCount": 4,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DgI4HeyABVRvOt1BA5OvDM6jAT",
-      "title": "Agents are Just Loops",
-      "description": "I built four AI agents to show they all run on the same mechanism: a loop. Here's the code, the mental model, and the repo so you can try it yourself.",
-      "url": "https://builder.aws.com/content/3DgI4HeyABVRvOt1BA5OvDM6jAT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgI6F8G60XoFReb9dWFYapDTuJ/thum.webp",
-      "authorName": "Brooke Jamieson",
-      "authorAlias": "brooooke",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ZUbTytXQQwPc4RCbHV6ceF7xya.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "strands-agents",
-        "strands",
-        "agentic-ai",
-        "agents",
-        "agent-hooks"
-      ],
-      "publishedAt": "2026-05-13T19:00:38.655Z",
-      "likesCount": 3,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -215,8 +395,8 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-12T16:57:46.805Z",
-      "likesCount": 16,
-      "commentsCount": 160
+      "likesCount": 17,
+      "commentsCount": 162
     },
     {
       "id": "/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
@@ -232,30 +412,28 @@
       "lng": -75.8449946,
       "tags": [],
       "publishedAt": "2026-05-13T21:11:31.399Z",
-      "likesCount": 6,
-      "commentsCount": 2
+      "likesCount": 9,
+      "commentsCount": 3
     },
     {
-      "id": "/content/3DgbhN5LOMKftPHKxsHmI3jWmf6",
-      "title": "Stop Guessing, Start Evaluating: A Conversational System for Model Selection",
-      "description": "An LLM evaluation system where you describe what you want to evaluate in natural language — an expert AI agent handles dataset generation, judge configuration, execution, and analysis end-to-end, and hands you back a PDF report.",
-      "url": "https://builder.aws.com/content/3DgbhN5LOMKftPHKxsHmI3jWmf6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgfeFrpfMQGZLuwn0rhbR2blDo/Scre.webp",
-      "authorName": "Andre",
-      "authorAlias": "andgg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dgo2DpXBHL2rJDSVq4X6fbwrcO.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3DhAn6RnELP8uLK7OsUjbxkDcbL",
+      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 1]",
+      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 1]",
+      "url": "https://builder.aws.com/content/3DhAn6RnELP8uLK7OsUjbxkDcbL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DhE6sDV4yGGvdEQBchs0WsyS3n/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
       "tags": [
-        "agents",
-        "agentic-ai",
-        "agentic-ide",
-        "mcp"
+        "aws-certification",
+        "training-and-certification"
       ],
-      "publishedAt": "2026-05-13T22:50:15.254Z",
+      "publishedAt": "2026-05-14T02:29:29.093Z",
       "likesCount": 3,
-      "commentsCount": 1
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -300,22 +478,25 @@
       "commentsCount": 1925
     },
     {
-      "id": "/content/3DgAwL0F11ooZtvl994jRnANEbp",
-      "title": "Aprender cloud é só o começo: como transformar conhecimento em portfólio",
-      "description": "Neste artigo, compartilho como o AWS Builder Center tem me ajudado a enxergar o aprendizado em cloud como parte da construção de um portfólio e de uma presença mais profissional.",
-      "url": "https://builder.aws.com/content/3DgAwL0F11ooZtvl994jRnANEbp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgBmc6TAgBWsKHIEo5v4OdKmKT/1c7b.webp",
-      "authorName": "Nicolle Maia",
-      "authorAlias": "niccmaia",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiuFZewXYqiguzRLMP7DFmtIbH.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3DgbhN5LOMKftPHKxsHmI3jWmf6",
+      "title": "Stop Guessing, Start Evaluating: A Conversational System for Model Selection",
+      "description": "A LLM evaluation system where you describe what you want to evaluate in natural language — an expert AI agent handles dataset generation, judge configuration, execution, and analysis end-to-end, and hands you back a PDF report.",
+      "url": "https://builder.aws.com/content/3DgbhN5LOMKftPHKxsHmI3jWmf6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgfeFrpfMQGZLuwn0rhbR2blDo/Scre.webp",
+      "authorName": "Andre",
+      "authorAlias": "andgg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dgo2DpXBHL2rJDSVq4X6fbwrcO.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
-        "aws-cloud-clubs"
+        "agents",
+        "agentic-ai",
+        "agentic-ide",
+        "mcp"
       ],
-      "publishedAt": "2026-05-13T17:40:34.592Z",
-      "likesCount": 4,
+      "publishedAt": "2026-05-13T22:50:15.254Z",
+      "likesCount": 5,
       "commentsCount": 2
     },
     {
@@ -340,6 +521,23 @@
       "commentsCount": 322
     },
     {
+      "id": "/content/3DhcGmg5AkZCaxiQQ8CHFvcYfu6",
+      "title": "From Zero to Cloud: A Beginner's Journey with AWS Builder Labs",
+      "description": "A practical guide for students and beginners to start their cloud journey using AWS Builder Labs - featuring real-world projects, cost management tips, and career-building strategies for hands-on AWS learning.",
+      "url": "https://builder.aws.com/content/3DhcGmg5AkZCaxiQQ8CHFvcYfu6",
+      "imageUrl": "",
+      "authorName": "Vedant Uekey",
+      "authorAlias": "vedantuekey",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRBhNiWQWK053bAgRECaU2lNxB.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-14T05:59:09.839Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3DenVrz4NSpTsJVg6wbx2hxeMRo",
       "title": "¡AWS en Platzi Conf CDMX 2026!",
       "description": "Estaremos en Platzi Conf CDMX el 16 de mayo con charlas, demos en vivo y SWAG! Pasa por el AWS Developer Lounge, aprende y gana. ",
@@ -353,49 +551,31 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-05-13T15:06:02.605Z",
-      "likesCount": 6,
-      "commentsCount": 2
+      "likesCount": 7,
+      "commentsCount": 3
     },
     {
-      "id": "/content/3Dg5TYog6vJ2GsgUA0qs26useRt",
-      "title": "Built-in Token Counting: Telemetry for Production AI Agents",
-      "description": "Building AI agents is easy. Deploying them to production is where most teams hit a wall. Strands Agents provides native telemetry and cost tracking out of the box. Stop writing custom token counters",
-      "url": "https://builder.aws.com/content/3Dg5TYog6vJ2GsgUA0qs26useRt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dg5fDXGzu6TwdcNTWSy12YoIcj/prota.webp",
-      "authorName": "Elizabeth Fuentes",
-      "authorAlias": "elizabethfuentes12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
       "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
         "agentic-ai",
-        "strands-agents",
-        "open-telemetry",
-        "observability"
+        "kiro"
       ],
-      "publishedAt": "2026-05-13T16:50:21.099Z",
-      "likesCount": 5,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DgGCHF26CPnOobU9vKhzA0xHEF",
-      "title": "Computação em Nuvem: A Tecnologia \"Invisível\" que Move o Mundo Digital",
-      "description": "A computação em nuvem transformou a forma como utilizamos tecnologia no dia a dia. Serviços como streaming, armazenamento online e inteligência artificial dependem dessa infraestrutura para funcionar de maneira rápida e escalável. Este artigo explica, de forma simples e acessível, como a nuvem funciona na prática, seus principais benefícios e por que ela se tornou essencial no mundo digital moderno.",
-      "url": "https://builder.aws.com/content/3DgGCHF26CPnOobU9vKhzA0xHEF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgLJaWuSsYKE0PB0A4Rj9mHAZn/c669.webp",
-      "authorName": "Sara Ferreira",
-      "authorAlias": "sarinha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Czm1Zfagbxa1QSwWO6SCM58Y8p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador"
-      ],
-      "publishedAt": "2026-05-13T19:02:11.742Z",
-      "likesCount": 4,
-      "commentsCount": 0
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1939,
+      "commentsCount": 270
     }
   ]
 }
