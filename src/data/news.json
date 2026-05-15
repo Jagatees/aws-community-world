@@ -1,6 +1,160 @@
 {
-  "updatedAt": "2026-05-14T18:40:58.590Z",
+  "updatedAt": "2026-05-15T00:45:16.501Z",
   "latest": [
+    {
+      "id": "/content/3DjRFXSSEFUNS6RIjPnkg3ksX2W",
+      "title": "Why AWS Builder Center Is More Than Just a Learning Platform for Students",
+      "description": "AWS Builder Center empowers students to go beyond traditional education by building real-world cloud, AI, and career-ready skills. It offers a global community and practical opportunities that help future professionals stand out in an increasingly competitive job market.",
+      "url": "https://builder.aws.com/content/3DjRFXSSEFUNS6RIjPnkg3ksX2W",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjRZsNqhdft0gFiZtb8grfkk7V/Chat.webp",
+      "authorName": "Andrey Andrade e Souza",
+      "authorAlias": "andreysouza",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSgABXZpQs7p6oBmWTLR01x5X2.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "cloud-networking",
+        "aws-certification",
+        "aws-builders",
+        "ai",
+        "students"
+      ],
+      "publishedAt": "2026-05-14T21:20:59.967Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DjLDpjJuZE2ioOmQHKiPgS4Jf6",
+      "title": "Building a Production-Grade URL Shortener: A Senior DevOps Engineer's Playbook",
+      "description": "Learn how a production-grade URL shortener with zero-downtime deployments, automated infrastructure, and comprehensive monitoring can run reliably on a single t3.micro EC2 instance using Docker Compose, Terraform, and pragmatic DevOps practices",
+      "url": "https://builder.aws.com/content/3DjLDpjJuZE2ioOmQHKiPgS4Jf6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjQXM7gmMbSpkcPSYuepvxRLYT/Scre.webp",
+      "authorName": "Habeeb Babasulaiman",
+      "authorAlias": "freemanboss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32KkG08lZwpZvSN5wgLE1DJzJoU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "ci-cd",
+        "amazon-ec2",
+        "monitoring-observability",
+        "architecture-patterns",
+        "docker"
+      ],
+      "publishedAt": "2026-05-14T21:18:26.520Z",
+      "likesCount": 3,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3DjNsumiWtozOmyZPQ60uqCfVQv",
+      "title": "Como empresas podem usar IA generativa com mais segurança?",
+      "description": "Concluí o AWS SimuLearn: IA conversacional segura com o Guardrails e explorei, na prática, como empresas podem desenvolver assistentes virtuais mais seguros, consistentes e alinhados ao ambiente corporativo dentro do AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3DjNsumiWtozOmyZPQ60uqCfVQv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjQBRGrBykNlLHZgMEtT2XhgYU/esse.webp",
+      "authorName": "Juliana Freire de Oliveira",
+      "authorAlias": "julianaintech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "student-builders",
+        "app-studio",
+        "aws-student-builders-groups",
+        "amazon-sagemaker-studio"
+      ],
+      "publishedAt": "2026-05-14T20:52:23.531Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DjEZmn7oLhxQS18PtFnaxhdzZG",
+      "title": "Bringing Snowflake Cortex Agents into Amazon QuickSuite with MCP",
+      "description": "In this post, we'll show you how to connect Snowflake Cortex agents directly to Amazon QuickSuite using the Model Context Protocol (MCP), enabling business users to perform natural language querying with text-to-SQL and receive real-time answers from your Snowflake data warehouse without any data movement or engineering bottlenecks.",
+      "url": "https://builder.aws.com/content/3DjEZmn7oLhxQS18PtFnaxhdzZG",
+      "imageUrl": "",
+      "authorName": "Alex Tarasov",
+      "authorAlias": "alexvt",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2dP63K3KTYJskorzxvdIyLAiWni.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "amazon-quick-suite",
+        "mcp",
+        "generative-ai",
+        "data-integration",
+        "aws-partners"
+      ],
+      "publishedAt": "2026-05-14T19:40:39.257Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DjDaq9o19rxghAtNduLMRtfbwG",
+      "title": "AWS para Leigos: O Guia que Ninguém te Deu",
+      "description": "Entendendo os conceitos básicos da Amazon Web Service.",
+      "url": "https://builder.aws.com/content/3DjDaq9o19rxghAtNduLMRtfbwG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjE8qaTgj5GeWxuOvKmMZVMxEk/1-pn.webp",
+      "authorName": "Lívia Mor",
+      "authorAlias": "liviamor",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CiPMb4s1WQToj4b6enA4Lht3io.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-14T19:29:01.168Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DjAxCXU47HEXATOXWRzb7N4lLn",
+      "title": "Segurança em Cloud: proteção e responsabilidade contínua",
+      "description": "À medida que a computação em nuvem se torna cada vez mais presente em empresas, projetos acadêmicos e soluções do dia a dia, discutir segurança em cloud deixou de ser apenas uma pauta técnica",
+      "url": "https://builder.aws.com/content/3DjAxCXU47HEXATOXWRzb7N4lLn",
+      "imageUrl": "",
+      "authorName": "Gabriel Daniel da Silva",
+      "authorAlias": "gabss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVeyOZANmgQnqyQnxZiBCiwyCB.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "application-security",
+        "cloud-security",
+        "cybersecurity",
+        "network-security"
+      ],
+      "publishedAt": "2026-05-14T19:07:37.689Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3Dj5mFxNuoNidTKPiLxTrJQrQsX",
+      "title": "Como se preparar para a certificação AWS Certified Cloud Practitioner(CLF-C02): guia completo para iniciantes",
+      "description": "Veja como se preparar para a certificação AWS Certified Cloud Practitioner, com dicas práticas de estudo, materiais recomendados e estratégia para aprovação.",
+      "url": "https://builder.aws.com/content/3Dj5mFxNuoNidTKPiLxTrJQrQsX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dj9fl4PKjzLuF08uxDaW6PAucG/Desi.webp",
+      "authorName": "Guilherme Augusto Benfica da Costa",
+      "authorAlias": "guilhermebenfica",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DZwtETfYacPhsetuo2iUIW858X.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "aws-cloud-map",
+        "aws-certification",
+        "cloud-practitioner",
+        "deep-learning",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-05-14T18:56:23.361Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Dj6DZSX3Ab1NzwCeuGlARYuaxa",
       "title": "Saindo da bolha: Como o AWS Builder Center Transformou Minha Visão de Universidade",
@@ -17,7 +171,7 @@
         "student-builders"
       ],
       "publishedAt": "2026-05-14T18:31:41.971Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -40,7 +194,7 @@
         "anthropic-claude"
       ],
       "publishedAt": "2026-05-14T18:27:05.868Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -57,154 +211,7 @@
       "lng": -36.4781776,
       "tags": [],
       "publishedAt": "2026-05-14T17:41:00.539Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DisYpJCXkNXUjgueFwuQy0Eaa6",
-      "title": "Why Watching Tutorials All Day Still Doesn’t Make Us Better at Tech",
-      "description": "Watching tutorials can feel productive, but real tech learning starts when you actually build, experiment, and solve problems yourself. AWS Builder Center helps students move from passive learning to hands-on practice through structured workshops and a global builder community",
-      "url": "https://builder.aws.com/content/3DisYpJCXkNXUjgueFwuQy0Eaa6",
-      "imageUrl": "",
-      "authorName": "Shreya Sherikar ",
-      "authorAlias": "shreysherikar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36orkea7dXG61kQxpAuIS7hJoPh.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-05-14T16:40:42.117Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3D7BC8RVpdMkOh5o9OV4ZIpOuyU",
-      "title": "Why Watching Tutorials All Day Still Doesn’t Make Us Better at Tech",
-      "description": "Watching tutorials can feel productive, but real tech learning starts when you actually build, experiment, and solve problems yourself. AWS Builder Center helps students move from passive learning to hands-on practice through structured workshops and a global builder community.",
-      "url": "https://builder.aws.com/content/3D7BC8RVpdMkOh5o9OV4ZIpOuyU",
-      "imageUrl": "",
-      "authorName": "Shreya Sherikar ",
-      "authorAlias": "shreysherikar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36orkea7dXG61kQxpAuIS7hJoPh.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
-      "tags": [
-        "students",
-        "student-builders",
-        "builder-center"
-      ],
-      "publishedAt": "2026-05-14T16:30:23.767Z",
       "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DilOH0OFvmOyX6emJPpNEjPk2y",
-      "title": "A verdade sobre entrar na área de Cloud em 2026",
-      "description": "Cloud computing não é um caminho único existem diversas áreas para explorar, mesmo começando do zero.\nCom fundamentos, consistência e prática, é possível construir uma carreira em cloud sem experiência prévia.\nO mais importante não é saber tudo, mas continuar aprendendo.",
-      "url": "https://builder.aws.com/content/3DilOH0OFvmOyX6emJPpNEjPk2y",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DioVc0uVFOoH9H6rmqoL5mx6hx/imag.webp",
-      "authorName": "Rayane",
-      "authorAlias": "rayanebonheur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CRhk4m7gkGnQNATS6p6hmrS2QU.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-academy",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-05-14T15:58:41.120Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DGYp6h6cHZ4JVZrDHZEpOJrhWE",
-      "title": "AWS Summit Hamburg Student Builder Zone Trivia to WIN an AWS Certification voucher",
-      "description": "Win a free AWS Certification voucher at the Hamburg AWS Summit 2026! Compete in Tech Trivia at the Student Builder Zone on May 20 for your chance to earn a foundational-level certification — comment on this article and join the competition in person",
-      "url": "https://builder.aws.com/content/3DGYp6h6cHZ4JVZrDHZEpOJrhWE",
-      "imageUrl": "",
-      "authorName": "Lindsey",
-      "authorAlias": "technicallylindsey",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35RHRzgHppmZzLaWXJEwpZ63oMR.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "students",
-        "student-builders"
-      ],
-      "publishedAt": "2026-05-14T15:51:29.761Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DiiTNt3cCQMIX7XrK4rXZxj4pc",
-      "title": "De Idea a Producción en Minutos: Desplegando una App Full-Stack con Kiro y AWS Amplify",
-      "description": "Kiro llegó para cambiar la forma en que construimos software con IA. No es solo otro IDE con autocompletado  es un entorno donde la especificación es el artefacto central, y el código es el resultado. En este artículo te muestro el flujo completo: desde una idea en lenguaje natural hasta una app desplegada en producción con AWS Amplify Gen 2.",
-      "url": "https://builder.aws.com/content/3DiiTNt3cCQMIX7XrK4rXZxj4pc",
-      "imageUrl": "",
-      "authorName": "Antonia",
-      "authorAlias": "antitopy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
-      "location": "CL",
-      "lat": -31.7613365,
-      "lng": -71.3187697,
-      "tags": [
-        "kiro",
-        "aws-amplify",
-        "amazon-bedrock",
-        "kiro-agent",
-        "web-development"
-      ],
-      "publishedAt": "2026-05-14T15:43:33.777Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DiiFA8QxbNSF3BAoe56kOGIbFt",
-      "title": "Announcing Kubernetes Dynamic Resource Allocation for Elastic Fabric Adapter",
-      "description": "A technical guide to managing EFA devices on Amazon EKS using the DRA driver (DRANET), covering how it differs from the EFA device plugin, how topology-aware allocation and device sharing work, and step-by-step setup examples including Neuron and NVIDIA GPU configurations.",
-      "url": "https://builder.aws.com/content/3DiiFA8QxbNSF3BAoe56kOGIbFt",
-      "imageUrl": "",
-      "authorName": "haruki",
-      "authorAlias": "haru1012",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ziMwHdbl0fjPRAiFh9w2jliryJ.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "amazon-eks",
-        "kubernetes",
-        "ai-ml",
-        "infrastructure"
-      ],
-      "publishedAt": "2026-05-14T15:18:41.296Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DiNYF5aO1HgbA59CxfvTTepIwc",
-      "title": "A IMPORTÂNCIA DAS COMUNIDADES TECH NO DESENVOLVIMENTO DE CARREIRA EM CLOUD COMPUTING",
-      "description": "Importância do AWS Builder Center como comunidade tech.",
-      "url": "https://builder.aws.com/content/3DiNYF5aO1HgbA59CxfvTTepIwc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DiPbQnmgaABkdp98AjKcr1zHct/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025",
-        "ai",
-        "students"
-      ],
-      "publishedAt": "2026-05-14T12:30:17.792Z",
-      "likesCount": 6,
       "commentsCount": 0
     }
   ],
@@ -223,44 +230,31 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-12T16:57:46.805Z",
-      "likesCount": 26,
+      "likesCount": 27,
       "commentsCount": 166
     },
     {
-      "id": "/content/3DisYpJCXkNXUjgueFwuQy0Eaa6",
-      "title": "Why Watching Tutorials All Day Still Doesn’t Make Us Better at Tech",
-      "description": "Watching tutorials can feel productive, but real tech learning starts when you actually build, experiment, and solve problems yourself. AWS Builder Center helps students move from passive learning to hands-on practice through structured workshops and a global builder community",
-      "url": "https://builder.aws.com/content/3DisYpJCXkNXUjgueFwuQy0Eaa6",
-      "imageUrl": "",
-      "authorName": "Shreya Sherikar ",
-      "authorAlias": "shreysherikar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36orkea7dXG61kQxpAuIS7hJoPh.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
+      "id": "/content/3DjLDpjJuZE2ioOmQHKiPgS4Jf6",
+      "title": "Building a Production-Grade URL Shortener: A Senior DevOps Engineer's Playbook",
+      "description": "Learn how a production-grade URL shortener with zero-downtime deployments, automated infrastructure, and comprehensive monitoring can run reliably on a single t3.micro EC2 instance using Docker Compose, Terraform, and pragmatic DevOps practices",
+      "url": "https://builder.aws.com/content/3DjLDpjJuZE2ioOmQHKiPgS4Jf6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjQXM7gmMbSpkcPSYuepvxRLYT/Scre.webp",
+      "authorName": "Habeeb Babasulaiman",
+      "authorAlias": "freemanboss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32KkG08lZwpZvSN5wgLE1DJzJoU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
       "tags": [
-        "students"
+        "ci-cd",
+        "amazon-ec2",
+        "monitoring-observability",
+        "architecture-patterns",
+        "docker"
       ],
-      "publishedAt": "2026-05-14T16:40:42.117Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
-      "title": "AWS Community Builders Spotlight: Deluxe Edition",
-      "description": "Weekly-ish digest of AWS Community Builders' best content from April 27- May 10, 2026",
-      "url": "https://builder.aws.com/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgT9e0Zay39VYfh5xZDm0YQyGM/aws-.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-05-13T21:11:31.399Z",
-      "likesCount": 17,
-      "commentsCount": 6
+      "publishedAt": "2026-05-14T21:18:26.520Z",
+      "likesCount": 3,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -284,6 +278,23 @@
       "commentsCount": 332
     },
     {
+      "id": "/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
+      "title": "AWS Community Builders Spotlight: Deluxe Edition",
+      "description": "Weekly-ish digest of AWS Community Builders' best content from April 27- May 10, 2026",
+      "url": "https://builder.aws.com/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgT9e0Zay39VYfh5xZDm0YQyGM/aws-.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-13T21:11:31.399Z",
+      "likesCount": 18,
+      "commentsCount": 8
+    },
+    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -305,28 +316,6 @@
       "commentsCount": 1925
     },
     {
-      "id": "/content/3DiNYF5aO1HgbA59CxfvTTepIwc",
-      "title": "A IMPORTÂNCIA DAS COMUNIDADES TECH NO DESENVOLVIMENTO DE CARREIRA EM CLOUD COMPUTING",
-      "description": "Importância do AWS Builder Center como comunidade tech.",
-      "url": "https://builder.aws.com/content/3DiNYF5aO1HgbA59CxfvTTepIwc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DiPbQnmgaABkdp98AjKcr1zHct/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "social-impact",
-        "aideas-2025",
-        "ai",
-        "students"
-      ],
-      "publishedAt": "2026-05-14T12:30:17.792Z",
-      "likesCount": 6,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -346,6 +335,25 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2872,
       "commentsCount": 322
+    },
+    {
+      "id": "/content/3DisYpJCXkNXUjgueFwuQy0Eaa6",
+      "title": "Why Watching Tutorials All Day Still Doesn’t Make Us Better at Tech",
+      "description": "Watching tutorials can feel productive, but real tech learning starts when you actually build, experiment, and solve problems yourself. AWS Builder Center helps students move from passive learning to hands-on practice through structured workshops and a global builder community",
+      "url": "https://builder.aws.com/content/3DisYpJCXkNXUjgueFwuQy0Eaa6",
+      "imageUrl": "",
+      "authorName": "Shreya Sherikar ",
+      "authorAlias": "shreysherikar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36orkea7dXG61kQxpAuIS7hJoPh.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-14T16:40:42.117Z",
+      "likesCount": 4,
+      "commentsCount": 1
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -371,43 +379,49 @@
       "commentsCount": 270
     },
     {
-      "id": "/content/3DgbhN5LOMKftPHKxsHmI3jWmf6",
-      "title": "Stop Guessing, Start Evaluating: A Conversational System for Model Selection",
-      "description": "A LLM evaluation system where you describe what you want to evaluate in natural language — an expert AI agent handles dataset generation, judge configuration, execution, and analysis end-to-end, and hands you back a PDF report.",
-      "url": "https://builder.aws.com/content/3DgbhN5LOMKftPHKxsHmI3jWmf6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgfeFrpfMQGZLuwn0rhbR2blDo/Scre.webp",
-      "authorName": "Andre",
-      "authorAlias": "andgg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dgo2DpXBHL2rJDSVq4X6fbwrcO.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3DiNYF5aO1HgbA59CxfvTTepIwc",
+      "title": "A IMPORTÂNCIA DAS COMUNIDADES TECH NO DESENVOLVIMENTO DE CARREIRA EM CLOUD COMPUTING",
+      "description": "Importância do AWS Builder Center como comunidade tech.",
+      "url": "https://builder.aws.com/content/3DiNYF5aO1HgbA59CxfvTTepIwc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DiPbQnmgaABkdp98AjKcr1zHct/Chat.webp",
+      "authorName": "Daniel Lima",
+      "authorAlias": "dnlima",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
-        "agents",
-        "agentic-ai",
-        "agentic-ide",
-        "mcp"
+        "social-impact",
+        "aideas-2025",
+        "ai",
+        "students"
       ],
-      "publishedAt": "2026-05-13T22:50:15.254Z",
-      "likesCount": 7,
-      "commentsCount": 2
+      "publishedAt": "2026-05-14T12:30:17.792Z",
+      "likesCount": 6,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3DenVrz4NSpTsJVg6wbx2hxeMRo",
-      "title": "¡AWS en Platzi Conf CDMX 2026!",
-      "description": "Estaremos en Platzi Conf CDMX el 16 de mayo con charlas, demos en vivo y SWAG! Pasa por el AWS Developer Lounge, aprende y gana. ",
-      "url": "https://builder.aws.com/content/3DenVrz4NSpTsJVg6wbx2hxeMRo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DepDVdTHB4ZQXNxWkvpsyIUz43/ABC-.webp",
-      "authorName": "Nelly",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-05-13T15:06:02.605Z",
-      "likesCount": 9,
-      "commentsCount": 3
+      "id": "/content/3DjNsumiWtozOmyZPQ60uqCfVQv",
+      "title": "Como empresas podem usar IA generativa com mais segurança?",
+      "description": "Concluí o AWS SimuLearn: IA conversacional segura com o Guardrails e explorei, na prática, como empresas podem desenvolver assistentes virtuais mais seguros, consistentes e alinhados ao ambiente corporativo dentro do AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3DjNsumiWtozOmyZPQ60uqCfVQv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjQBRGrBykNlLHZgMEtT2XhgYU/esse.webp",
+      "authorName": "Juliana Freire de Oliveira",
+      "authorAlias": "julianaintech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "student-builders",
+        "app-studio",
+        "aws-student-builders-groups",
+        "amazon-sagemaker-studio"
+      ],
+      "publishedAt": "2026-05-14T20:52:23.531Z",
+      "likesCount": 2,
+      "commentsCount": 0
     }
   ]
 }
