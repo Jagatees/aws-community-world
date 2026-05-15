@@ -1,6 +1,89 @@
 {
-  "updatedAt": "2026-05-15T00:45:16.501Z",
+  "updatedAt": "2026-05-15T07:11:49.759Z",
   "latest": [
+    {
+      "id": "/content/3DkBEm6dIsIZxzEy2ZsGhG8s5RH",
+      "title": "Como Começar na Área de Tecnologia Sem Se Perder no Caminho",
+      "description": "Entrar na área de tecnologia pode parecer assustador no começo. Você vê pessoas falando sobre programação, redes, nuvem, inteligência artificial, segurança da informação, banco de dados, suporte técnico, desenvolvimento web… e surge a dúvida: “Por onde eu começo?” ou até mesmo “Será que estou estudando a coisa certa?”",
+      "url": "https://builder.aws.com/content/3DkBEm6dIsIZxzEy2ZsGhG8s5RH",
+      "imageUrl": "",
+      "authorName": "Yvila Samea Sales Gonçalves",
+      "authorAlias": "yvilah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxLu5Mlt4pcmi3KPyEd2FmWutf.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-academy",
+        "aws-certification",
+        "community",
+        "social-impact",
+        "soft-skills"
+      ],
+      "publishedAt": "2026-05-15T03:48:53.670Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dk3bpkRCxEGMA1Ojak6pERuB3T",
+      "title": "Trying to Bedrock Advanced Prompt Optimization",
+      "description": "On May 14, 2026, Amazon Bedrock's new feature \"Advanced Prompt Optimization\" reached GA. It's a tool that automatically optimizes prompts while comparing up to five models in parallel — by specifying a reference response, it tunes prompts so the output moves closer to your target. I tried it with Claude Haiku 4.5 and Sonnet 4.5, and verbose Markdown outputs were reshaped into concise prose. It also looks useful as a way to decide which model is the right fit for a given task.",
+      "url": "https://builder.aws.com/content/3Dk3bpkRCxEGMA1Ojak6pERuB3T",
+      "imageUrl": "",
+      "authorName": "ts_pepeti",
+      "authorAlias": "tspepeti",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3guXwguXNKOyNrheBipKrSkgm.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [],
+      "publishedAt": "2026-05-15T02:41:14.941Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dk2LJDo6lP06UQolEe9E1HrVNI",
+      "title": "Three Failure Modes of GenAI Agents and how to fix it",
+      "description": "GenAI agents in high-stakes workflows fail in three predictable ways: hallucination, prompt injection at the tool boundary, and chain break with stale context. How to fix it.",
+      "url": "https://builder.aws.com/content/3Dk2LJDo6lP06UQolEe9E1HrVNI",
+      "imageUrl": "",
+      "authorName": "Erick Mancz",
+      "authorAlias": "imancz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "agentic-ai",
+        "amazon-bedrock",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents",
+        "strands-agents"
+      ],
+      "publishedAt": "2026-05-15T02:26:33.910Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DjzqAJ85sNhz8GuDy9fVJjt8ms",
+      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 3]",
+      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 3]",
+      "url": "https://builder.aws.com/content/3DjzqAJ85sNhz8GuDy9fVJjt8ms",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjzuBwBELfS7ib16ucvkxWNMfd/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "HK",
+      "lat": 22.2792968,
+      "lng": 114.1628907,
+      "tags": [
+        "aws-certification",
+        "training-and-certification"
+      ],
+      "publishedAt": "2026-05-15T02:01:44.841Z",
+      "likesCount": 1,
+      "commentsCount": 2
+    },
     {
       "id": "/content/3DjRFXSSEFUNS6RIjPnkg3ksX2W",
       "title": "Why AWS Builder Center Is More Than Just a Learning Platform for Students",
@@ -21,7 +104,7 @@
         "students"
       ],
       "publishedAt": "2026-05-14T21:20:59.967Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -44,8 +127,8 @@
         "docker"
       ],
       "publishedAt": "2026-05-14T21:18:26.520Z",
-      "likesCount": 3,
-      "commentsCount": 2
+      "likesCount": 11,
+      "commentsCount": 6
     },
     {
       "id": "/content/3DjNsumiWtozOmyZPQ60uqCfVQv",
@@ -67,7 +150,7 @@
         "amazon-sagemaker-studio"
       ],
       "publishedAt": "2026-05-14T20:52:23.531Z",
-      "likesCount": 2,
+      "likesCount": 4,
       "commentsCount": 0
     },
     {
@@ -90,7 +173,7 @@
         "aws-partners"
       ],
       "publishedAt": "2026-05-14T19:40:39.257Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -107,7 +190,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-05-14T19:29:01.168Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -129,90 +212,8 @@
         "network-security"
       ],
       "publishedAt": "2026-05-14T19:07:37.689Z",
-      "likesCount": 1,
+      "likesCount": 3,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3Dj5mFxNuoNidTKPiLxTrJQrQsX",
-      "title": "Como se preparar para a certificação AWS Certified Cloud Practitioner(CLF-C02): guia completo para iniciantes",
-      "description": "Veja como se preparar para a certificação AWS Certified Cloud Practitioner, com dicas práticas de estudo, materiais recomendados e estratégia para aprovação.",
-      "url": "https://builder.aws.com/content/3Dj5mFxNuoNidTKPiLxTrJQrQsX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dj9fl4PKjzLuF08uxDaW6PAucG/Desi.webp",
-      "authorName": "Guilherme Augusto Benfica da Costa",
-      "authorAlias": "guilhermebenfica",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DZwtETfYacPhsetuo2iUIW858X.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "aws-cloud-map",
-        "aws-certification",
-        "cloud-practitioner",
-        "deep-learning",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-05-14T18:56:23.361Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dj6DZSX3Ab1NzwCeuGlARYuaxa",
-      "title": "Saindo da bolha: Como o AWS Builder Center Transformou Minha Visão de Universidade",
-      "description": "Ser um AWS Student Builder Campus Leader redefiniu minha jornada acadêmica e me mostrou como conectar o que eu já estudava com uma experiência de comunidade pode transformar a universidade em um verdadeiro polo de inovação colaborativa e acessível.",
-      "url": "https://builder.aws.com/content/3Dj6DZSX3Ab1NzwCeuGlARYuaxa",
-      "imageUrl": "",
-      "authorName": "João Constantino",
-      "authorAlias": "joaoconstantino",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ClwMRcDXNjftXwgk7kxUL747uL.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "student-builders"
-      ],
-      "publishedAt": "2026-05-14T18:31:41.971Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dj3J6ZfrMbmuRJ4jSGQLNy2O1t",
-      "title": "Claude Code Beyond Anthropic: Lessons from Routing 15 Bedrock Models Through a Gateway",
-      "description": "Routing Claude Code to Bedrock takes two env vars. Non-Anthropic models need a gateway. We tested 15 Bedrock models via LiteLLM: 11 worked, 4 didn't.",
-      "url": "https://builder.aws.com/content/3Dj3J6ZfrMbmuRJ4jSGQLNy2O1t",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dj5aM1ujhaSdR0VJJAklfIZY8O/blog.webp",
-      "authorName": "Gonzalo Vásquez",
-      "authorAlias": "gevs",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xrJkys96lWwUrlvQ7rwzVz6loy.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "claude-code",
-        "amazon-bedrock",
-        "agentic-ai",
-        "generative-ai",
-        "anthropic-claude"
-      ],
-      "publishedAt": "2026-05-14T18:27:05.868Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DizbIFR1SSKu0xOapldeLO3mRP",
-      "title": "O erro de tentar aprender tudo ao mesmo tempo",
-      "description": "Tentar aprender tudo ao mesmo tempo pode parecer produtivo, mas, na prática, é um dos maiores erros de quem está começando em tecnologia. Neste artigo, você vai entender por que isso acontece e como uma abordagem mais simples e focada pode acelerar de verdade o seu aprendizado.",
-      "url": "https://builder.aws.com/content/3DizbIFR1SSKu0xOapldeLO3mRP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dj0qF0DZOHrq8WNpKzGVDUhi3x/Chat.webp",
-      "authorName": "Emanuel Felipe",
-      "authorAlias": "omanuca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
-      "location": "RN, BR",
-      "lat": -5.6781175,
-      "lng": -36.4781776,
-      "tags": [],
-      "publishedAt": "2026-05-14T17:41:00.539Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -230,7 +231,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-12T16:57:46.805Z",
-      "likesCount": 27,
+      "likesCount": 30,
       "commentsCount": 166
     },
     {
@@ -253,8 +254,8 @@
         "docker"
       ],
       "publishedAt": "2026-05-14T21:18:26.520Z",
-      "likesCount": 3,
-      "commentsCount": 2
+      "likesCount": 11,
+      "commentsCount": 6
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -274,25 +275,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3568,
+      "likesCount": 3569,
       "commentsCount": 332
-    },
-    {
-      "id": "/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
-      "title": "AWS Community Builders Spotlight: Deluxe Edition",
-      "description": "Weekly-ish digest of AWS Community Builders' best content from April 27- May 10, 2026",
-      "url": "https://builder.aws.com/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgT9e0Zay39VYfh5xZDm0YQyGM/aws-.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-05-13T21:11:31.399Z",
-      "likesCount": 18,
-      "commentsCount": 8
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -316,6 +300,23 @@
       "commentsCount": 1925
     },
     {
+      "id": "/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
+      "title": "AWS Community Builders Spotlight: Deluxe Edition",
+      "description": "Weekly-ish digest of AWS Community Builders' best content from April 27- May 10, 2026",
+      "url": "https://builder.aws.com/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgT9e0Zay39VYfh5xZDm0YQyGM/aws-.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-13T21:11:31.399Z",
+      "likesCount": 19,
+      "commentsCount": 8
+    },
+    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -337,6 +338,26 @@
       "commentsCount": 322
     },
     {
+      "id": "/content/3DjzqAJ85sNhz8GuDy9fVJjt8ms",
+      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 3]",
+      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 3]",
+      "url": "https://builder.aws.com/content/3DjzqAJ85sNhz8GuDy9fVJjt8ms",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjzuBwBELfS7ib16ucvkxWNMfd/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "HK",
+      "lat": 22.2792968,
+      "lng": 114.1628907,
+      "tags": [
+        "aws-certification",
+        "training-and-certification"
+      ],
+      "publishedAt": "2026-05-15T02:01:44.841Z",
+      "likesCount": 1,
+      "commentsCount": 2
+    },
+    {
       "id": "/content/3DisYpJCXkNXUjgueFwuQy0Eaa6",
       "title": "Why Watching Tutorials All Day Still Doesn’t Make Us Better at Tech",
       "description": "Watching tutorials can feel productive, but real tech learning starts when you actually build, experiment, and solve problems yourself. AWS Builder Center helps students move from passive learning to hands-on practice through structured workshops and a global builder community",
@@ -352,7 +373,7 @@
         "students"
       ],
       "publishedAt": "2026-05-14T16:40:42.117Z",
-      "likesCount": 4,
+      "likesCount": 8,
       "commentsCount": 1
     },
     {
@@ -379,49 +400,26 @@
       "commentsCount": 270
     },
     {
-      "id": "/content/3DiNYF5aO1HgbA59CxfvTTepIwc",
-      "title": "A IMPORTÂNCIA DAS COMUNIDADES TECH NO DESENVOLVIMENTO DE CARREIRA EM CLOUD COMPUTING",
-      "description": "Importância do AWS Builder Center como comunidade tech.",
-      "url": "https://builder.aws.com/content/3DiNYF5aO1HgbA59CxfvTTepIwc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DiPbQnmgaABkdp98AjKcr1zHct/Chat.webp",
-      "authorName": "Daniel Lima",
-      "authorAlias": "dnlima",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CLffIIVRIHw1orBop4QWdOfG1X.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
       "tags": [
-        "social-impact",
         "aideas-2025",
-        "ai",
-        "students"
+        "social-impact",
+        "EMEA",
+        "agents"
       ],
-      "publishedAt": "2026-05-14T12:30:17.792Z",
-      "likesCount": 6,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DjNsumiWtozOmyZPQ60uqCfVQv",
-      "title": "Como empresas podem usar IA generativa com mais segurança?",
-      "description": "Concluí o AWS SimuLearn: IA conversacional segura com o Guardrails e explorei, na prática, como empresas podem desenvolver assistentes virtuais mais seguros, consistentes e alinhados ao ambiente corporativo dentro do AWS Builder Center.",
-      "url": "https://builder.aws.com/content/3DjNsumiWtozOmyZPQ60uqCfVQv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DjQBRGrBykNlLHZgMEtT2XhgYU/esse.webp",
-      "authorName": "Juliana Freire de Oliveira",
-      "authorAlias": "julianaintech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "student-builders",
-        "app-studio",
-        "aws-student-builders-groups",
-        "amazon-sagemaker-studio"
-      ],
-      "publishedAt": "2026-05-14T20:52:23.531Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1474,
+      "commentsCount": 340
     }
   ]
 }
