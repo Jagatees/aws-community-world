@@ -1,6 +1,173 @@
 {
-  "updatedAt": "2026-05-16T00:42:45.032Z",
+  "updatedAt": "2026-05-16T06:51:13.410Z",
   "latest": [
+    {
+      "id": "/content/3DQpQMdfIVA83kjl4iytoFCMAby",
+      "title": "Troubleshooting Lambda Durable Functions with AWS DevOps Agent",
+      "description": "Learn how to use AWS DevOps Agent to autonomously investigate failures in Lambda durable function workflows. This article demonstrates how DevOps Agent correlates CloudTrail events, CloudWatch logs, metrics, and X-Ray traces to identify root causes that span multiple functions and callback suspension boundaries. Includes real investigation scenarios and effective prompting strategies.",
+      "url": "https://builder.aws.com/content/3DQpQMdfIVA83kjl4iytoFCMAby",
+      "imageUrl": "",
+      "authorName": "Surya Sai D",
+      "authorAlias": "suryadss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DQoETGfubcGmIXl9Atwte70vlJ.webp",
+      "location": "SG",
+      "lat": 1.357107,
+      "lng": 103.8194992,
+      "tags": [],
+      "publishedAt": "2026-05-16T03:53:37.062Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DmzA1ZJYT9D2SSUM0RMLDtNjiP",
+      "title": "How AWS CloudWatch Monitors Your Cloud in Real Time",
+      "description": "CloudWatch is more than dashboards. Learn how metrics, logs, alarms, and anomaly detection work together to catch AWS failures before your users do.",
+      "url": "https://builder.aws.com/content/3DmzA1ZJYT9D2SSUM0RMLDtNjiP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dn0pWAdUHHbu3ds9ZDuWLhS2Bv/cove.webp",
+      "authorName": "Rashindu Tharinda",
+      "authorAlias": "rash522",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAXrueNTFAH8WtVtH75cydfLaF.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "aws-cloudwatch",
+        "aws-educate",
+        "observability",
+        "monitoring",
+        "cloud-operations"
+      ],
+      "publishedAt": "2026-05-16T03:36:11.461Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dmvw0atXggQgOvpzTjIfIcUuwm",
+      "title": "Why I Moved from DCGAN to WGAN-GP: Building More Stable GAN Training",
+      "description": "GANs look elegant in theory, but training them in practice is far more challenging. While training a DCGAN on ~70k face images, I faced unstable optimization, long training cycles, and Colab interruptions. That experience pushed me to explore WGAN and WGAN-GP more deeply.",
+      "url": "https://builder.aws.com/content/3Dmvw0atXggQgOvpzTjIfIcUuwm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmwlKJTa2z5ewUyfZ0DhBYaL4x/wgan-.webp",
+      "authorName": "Ujjwal Gupta",
+      "authorAlias": "ujjjx",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-16T03:06:07.347Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DmrZFwojRMZFkzzixvujv6UxzJ",
+      "title": "Como Aprender Qualquer Linguagem de Programação de Forma Autodidata",
+      "description": "Muita gente entra na programação achando que precisa decorar códigos, copiar projetos prontos ou aprender dezenas de linguagens ao mesmo tempo. Mas a verdade é que programar não começa pela linguagem. Começa pela lógica.\n\nE é exatamente por isso que muita gente desiste cedo: tentam aprender “código” sem antes aprender a pensar como programador.",
+      "url": "https://builder.aws.com/content/3DmrZFwojRMZFkzzixvujv6UxzJ",
+      "imageUrl": "",
+      "authorName": "Yvila Samea Sales Gonçalves",
+      "authorAlias": "yvilah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxLu5Mlt4pcmi3KPyEd2FmWutf.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "tech-responsibility",
+        "sysdev",
+        "programming-languages",
+        "soft-skills"
+      ],
+      "publishedAt": "2026-05-16T02:37:07.000Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DmlVcRhtR3V2dTM3ztWVslOGFA",
+      "title": "アクセスキーが流出した時、何をしなければならないか再考してみる",
+      "description": "AWSから届く「Unexpected Activity Detected」通知の各ステップを読み解き、アクセスキーの無効化・ローテーション、CloudTrailによるIAMリソースの不正操作の追跡、全リージョンでの意図しないリソース作成の確認、請求調整申請までの一連の対処フローを実践的に解説します。",
+      "url": "https://builder.aws.com/content/3DmlVcRhtR3V2dTM3ztWVslOGFA",
+      "imageUrl": "",
+      "authorName": "ICHINO Kazuaki",
+      "authorAlias": "kazzpapa3",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30VMQkNGyxID9od8X4OUGS0smem.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "iam",
+        "root",
+        "security"
+      ],
+      "publishedAt": "2026-05-16T01:43:26.289Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DltNbdfCiLar5cIC0N7Qj1S9Gc",
+      "title": "The VMware Exit Playbook for State & Local Government: End-to-End Migration with AWS Transform",
+      "description": "How state agencies can move off VMware vSphere and onto AWS in weeks, not months. Includes a validated end-to-end walkthrough with RVTools discovery, automated wave planning, and production cutover using AWS Transform",
+      "url": "https://builder.aws.com/content/3DltNbdfCiLar5cIC0N7Qj1S9Gc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmiI5cXhyL8TeU7my7kQuqIZaQ/maxr.webp",
+      "authorName": "Achyutha Harish",
+      "authorAlias": "achyuthh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Alu1QD97vIJsIYJ8qBk7dcAdIN.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "transformation",
+        "vmware-cloud-aws"
+      ],
+      "publishedAt": "2026-05-16T01:06:34.087Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/2roCz6zgnpuauG8FDugi1yJTiSS",
+      "title": "How I Actually Started Learning Cloud Computing - AWS (And What Helped Most)",
+      "description": "A honest look at how I got started with AWS what I built, what actually helped, and the one community I didn't expect to learn the most from",
+      "url": "https://builder.aws.com/content/2roCz6zgnpuauG8FDugi1yJTiSS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dmjz7DUHfOzexJ8fc7zR7Ew4mp/Unti.webp",
+      "authorName": "Sujit Laware",
+      "authorAlias": "sujitlaware09",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBkzfSXKr4vHNddNbL3o4oPjFv.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-builders",
+        "cloud-concepts",
+        "amazon-ec2",
+        "ai",
+        "ai-ml"
+      ],
+      "publishedAt": "2026-05-16T01:00:49.563Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DmX1fz0sNu2uOztvs4Pwa89R9F",
+      "title": "Acelerando o Aprendizado de Programação com IA: Por que o AWS Builder Center é o seu melhor aliado?",
+      "description": "O Jogo Mudou: Muito Além do Código Gerado",
+      "url": "https://builder.aws.com/content/3DmX1fz0sNu2uOztvs4Pwa89R9F",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dn1o7K5BAlKcQTh9H47Ncypj9l/IMG_5.webp",
+      "authorName": "Yuri Oliveira Santana",
+      "authorAlias": "ysantana",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "tech",
+        "tech-journey",
+        "women-in-tech"
+      ],
+      "publishedAt": "2026-05-16T00:50:27.398Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Dhy6ATOM4ZyyLIKgqgiIPmW9Q5",
       "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 5]",
@@ -37,168 +204,6 @@
       "publishedAt": "2026-05-15T23:49:22.528Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DmWLJxnVLtyhMV0RVDeA9KlHXB",
-      "title": "Golpe do WhatsApp: como funciona e como se proteger",
-      "description": "Você já recebeu uma mensagem pedindo dinheiro urgente ou um código de verificação \"enviado por engano\"? Milhares de brasileiros perdem dinheiro assim todos os dias. Entenda como funciona a engenharia social por trás desses golpes e aprenda as medidas essenciais de proteção.",
-      "url": "https://builder.aws.com/content/3DmWLJxnVLtyhMV0RVDeA9KlHXB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmWhzXuk1titC5u1p94pRJYt4G/10001.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "ai-security",
-        "cloud-security",
-        "cybersecurity"
-      ],
-      "publishedAt": "2026-05-15T23:31:07.814Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DmMvQadcAD679aEfMhj0llVXgg",
-      "title": "アクセスキー流出時、なぜ無効化だけでは不十分といわれるのか考えてみる",
-      "description": "AWS アクセスキーが流出した際、無効化だけでは対応完了とならない理由を解説します。無効化されたキーは再有効化が可能なため、運用者の誤操作やバックドアによって再び悪用されるリスクが残ります。物理的な鍵との違いや API の認証特性を踏まえ、削除まで行う必要性を非エンジニア向けに考察しています。",
-      "url": "https://builder.aws.com/content/3DmMvQadcAD679aEfMhj0llVXgg",
-      "imageUrl": "",
-      "authorName": "ICHINO Kazuaki",
-      "authorAlias": "kazzpapa3",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30VMQkNGyxID9od8X4OUGS0smem.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "iam",
-        "root",
-        "security"
-      ],
-      "publishedAt": "2026-05-15T22:36:35.779Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
-      "title": "Celebrating Graduating AWS Student Builder Group Leaders 🎓",
-      "description": "On May 12, 2026, we honored nearly 200 graduating AWS Student Builder Group Leaders who spent 12+ months founding, growing, and leading cloud communities on campuses around the world.",
-      "url": "https://builder.aws.com/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmLuvw1Lwjw7bHWjH4VT2taYG3/bran.webp",
-      "authorName": "Nayoung Miller Won",
-      "authorAlias": "nwon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31WME6Rd00dIikddfGREvatiZyy.webp",
-      "location": "WA, US",
-      "lat": 47.2868352,
-      "lng": -120.212613,
-      "tags": [
-        "aws-student-builders-groups",
-        "students",
-        "student-builders",
-        "aws-cloud-clubs"
-      ],
-      "publishedAt": "2026-05-15T22:02:57.255Z",
-      "likesCount": 5,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DmK00XwgmvIPhMQc9Us1i8ww0y",
-      "title": "Tecnologia não é questão de perfil, é questão de querer | O que aprendi ao longo das semanas sendo Líder Estudantil Campus Builder AWS",
-      "description": "Nesse artigo explico como ser Líder Estudantil Campus Builder AWS mudou minha perspectiva sobre a área de tecnologia e o processo de me sentir parte dessa comunidade",
-      "url": "https://builder.aws.com/content/3DmK00XwgmvIPhMQc9Us1i8ww0y",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmL4HyS2TsiYwnTkKNZUlm7yQa/Whats.webp",
-      "authorName": "Camille Moraes de Paula Faria",
-      "authorAlias": "millinha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CihKdtoBgScZBwvonwThBQDJDA.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "students",
-        "student-builders",
-        "women-in-tech"
-      ],
-      "publishedAt": "2026-05-15T21:56:04.061Z",
-      "likesCount": 5,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DmBJYTr627HawrEMvQtXlZuowx",
-      "title": "Being a Cloud Engineer in 2026",
-      "description": "As AI increasingly accomplishes coding tasks end-to-end, what can juniors do to work on the cloud?",
-      "url": "https://builder.aws.com/content/3DmBJYTr627HawrEMvQtXlZuowx",
-      "imageUrl": "",
-      "authorName": "Albert Zhao",
-      "authorAlias": "albert",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39RpznQFNcJMbwelOGbxWKEq1Dr.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-15T21:26:19.661Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DmEIJZZ6ranZziqaEGWEkvHDin",
-      "title": "Understanding Amazon EC2: Instance Lifecycle, Networking, and Secure Deployment",
-      "description": "Amazon EC2 (Elastic Compute Cloud) is one of the foundational compute services in the AWS ecosystem. It provides virtual machines that developers can configure with custom operating systems, networking rules, storage volumes, and runtime environments.",
-      "url": "https://builder.aws.com/content/3DmEIJZZ6ranZziqaEGWEkvHDin",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmEbeTT4AekBIq09t2H82J9nXh/ec2-.webp",
-      "authorName": "Muhammad Adnan Sultan",
-      "authorAlias": "madnansultan",
-      "authorAvatarUrl": "",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [],
-      "publishedAt": "2026-05-15T21:02:11.008Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dm4mRk2oKOlOXeotHsdR8jzh6E",
-      "title": "Introdução ao CI/CD com AWS CodePipeline ⚙️🚀",
-      "description": "Imagina o seguinte cenário:\n\nVocê termina uma feature, faz o commit no GitHub, e automaticamente o código é testado, validado e colocado em produção — sem você precisar fazer nada manualmente.\n\nIsso é CI/CD. E com a AWS CodePipeline, você consegue montar esse fluxo completo de forma gerenciada, escalável e integrada ao ecossistema AWS.\n\nNeste artigo vou te explicar o que é CI/CD, como a CodePipeline funciona, quais serviços ela usa e como montar seu primeiro pipeline na prática.",
-      "url": "https://builder.aws.com/content/3Dm4mRk2oKOlOXeotHsdR8jzh6E",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmABuKaxVStsdr5ukJ9r9DUj21/capa.webp",
-      "authorName": "Daniel Moura de Souza",
-      "authorAlias": "danaws12",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-academy",
-        "ci-cd",
-        "aws-codepipeline"
-      ],
-      "publishedAt": "2026-05-15T20:26:15.667Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dm88kxQxZlyjIHQvVGcZR60HiZ",
-      "title": "How AWS is used in sports betting platforms: scalability, real-time data, and security",
-      "description": "This article explains how Amazon Web Services (AWS) supports sports betting platforms with scalable cloud infrastructure, real-time data processing, advanced analytics, security, and global compliance to ensure performance and reliability.",
-      "url": "https://builder.aws.com/content/3Dm88kxQxZlyjIHQvVGcZR60HiZ",
-      "imageUrl": "",
-      "authorName": "Kauã Ferraz Aragão",
-      "authorAlias": "k1ferraz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C7mErdqoUP5X8fdY2TpWElP87h.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "mlse-on-aws",
-        "nba-on-aws",
-        "nfl-on-aws",
-        "bundesliga-on-aws"
-      ],
-      "publishedAt": "2026-05-15T20:11:10.195Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -220,27 +225,6 @@
       "commentsCount": 166
     },
     {
-      "id": "/content/3DmK00XwgmvIPhMQc9Us1i8ww0y",
-      "title": "Tecnologia não é questão de perfil, é questão de querer | O que aprendi ao longo das semanas sendo Líder Estudantil Campus Builder AWS",
-      "description": "Nesse artigo explico como ser Líder Estudantil Campus Builder AWS mudou minha perspectiva sobre a área de tecnologia e o processo de me sentir parte dessa comunidade",
-      "url": "https://builder.aws.com/content/3DmK00XwgmvIPhMQc9Us1i8ww0y",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmL4HyS2TsiYwnTkKNZUlm7yQa/Whats.webp",
-      "authorName": "Camille Moraes de Paula Faria",
-      "authorAlias": "millinha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CihKdtoBgScZBwvonwThBQDJDA.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "students",
-        "student-builders",
-        "women-in-tech"
-      ],
-      "publishedAt": "2026-05-15T21:56:04.061Z",
-      "likesCount": 5,
-      "commentsCount": 1
-    },
-    {
       "id": "/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
       "title": "Celebrating Graduating AWS Student Builder Group Leaders 🎓",
       "description": "On May 12, 2026, we honored nearly 200 graduating AWS Student Builder Group Leaders who spent 12+ months founding, growing, and leading cloud communities on campuses around the world.",
@@ -259,29 +243,8 @@
         "aws-cloud-clubs"
       ],
       "publishedAt": "2026-05-15T22:02:57.255Z",
-      "likesCount": 5,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DdKXs6hhEj0qzBMMeKHSzqF8bz",
-      "title": "Tecnologia no mundo atual: A necessidade de se interessar por tecnologia e como a AWS Builder Center nutre essa sede por conhecimento",
-      "description": "Entendendo um pouco da evolução da tecnologia e as consequências diretas de se ter tanta informação sobre o assunto e não saber o que fazer ou poder começar. Em meio a tantas dúvidas, a AWS Builder Center surge como um aliado direto na democratização e na acessibilidade em se reproduzir, criar e aplicar conhecimento tecnológico.",
-      "url": "https://builder.aws.com/content/3DdKXs6hhEj0qzBMMeKHSzqF8bz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dlcu0rFSaCXOFQ2O26f2nB8UH2/C-pi.webp",
-      "authorName": "Thales Neves",
-      "authorAlias": "tnevessss",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdJBzTdjLwMth9KwqG6XG0HlnE.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "aws-builders",
-        "aws-student-builders-groups",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-05-15T15:59:05.175Z",
-      "likesCount": 9,
-      "commentsCount": 4
+      "likesCount": 15,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -305,24 +268,25 @@
       "commentsCount": 332
     },
     {
-      "id": "/content/3Dhy6ATOM4ZyyLIKgqgiIPmW9Q5",
-      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 5]",
-      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 5]",
-      "url": "https://builder.aws.com/content/3Dhy6ATOM4ZyyLIKgqgiIPmW9Q5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DkXo5o873klyeC385fcve5Il7a/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
+      "id": "/content/3DdKXs6hhEj0qzBMMeKHSzqF8bz",
+      "title": "Tecnologia no mundo atual: A necessidade de se interessar por tecnologia e como a AWS Builder Center nutre essa sede por conhecimento",
+      "description": "Entendendo um pouco da evolução da tecnologia e as consequências diretas de se ter tanta informação sobre o assunto e não saber o que fazer ou poder começar. Em meio a tantas dúvidas, a AWS Builder Center surge como um aliado direto na democratização e na acessibilidade em se reproduzir, criar e aplicar conhecimento tecnológico.",
+      "url": "https://builder.aws.com/content/3DdKXs6hhEj0qzBMMeKHSzqF8bz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dlcu0rFSaCXOFQ2O26f2nB8UH2/C-pi.webp",
+      "authorName": "Thales Neves",
+      "authorAlias": "tnevessss",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdJBzTdjLwMth9KwqG6XG0HlnE.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
       "tags": [
-        "aws-certification",
-        "training-and-certification"
+        "aws-builders",
+        "aws-student-builders-groups",
+        "aws-community-builders"
       ],
-      "publishedAt": "2026-05-16T00:33:39.662Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-05-15T15:59:05.175Z",
+      "likesCount": 9,
+      "commentsCount": 4
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -367,6 +331,27 @@
       "commentsCount": 323
     },
     {
+      "id": "/content/3DmK00XwgmvIPhMQc9Us1i8ww0y",
+      "title": "Tecnologia não é questão de perfil, é questão de querer | O que aprendi ao longo das semanas sendo Líder Estudantil Campus Builder AWS",
+      "description": "Nesse artigo explico como ser Líder Estudantil Campus Builder AWS mudou minha perspectiva sobre a área de tecnologia e o processo de me sentir parte dessa comunidade",
+      "url": "https://builder.aws.com/content/3DmK00XwgmvIPhMQc9Us1i8ww0y",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmL4HyS2TsiYwnTkKNZUlm7yQa/Whats.webp",
+      "authorName": "Camille Moraes de Paula Faria",
+      "authorAlias": "millinha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CihKdtoBgScZBwvonwThBQDJDA.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "students",
+        "student-builders",
+        "women-in-tech"
+      ],
+      "publishedAt": "2026-05-15T21:56:04.061Z",
+      "likesCount": 5,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3DjLDpjJuZE2ioOmQHKiPgS4Jf6",
       "title": "Building a Production-Grade URL Shortener: A Senior DevOps Engineer's Playbook",
       "description": "Learn how a production-grade URL shortener with zero-downtime deployments, automated infrastructure, and comprehensive monitoring can run reliably on a single t3.micro EC2 instance using Docker Compose, Terraform, and pragmatic DevOps practices",
@@ -386,25 +371,48 @@
         "docker"
       ],
       "publishedAt": "2026-05-14T21:18:26.520Z",
-      "likesCount": 12,
+      "likesCount": 13,
       "commentsCount": 6
     },
     {
-      "id": "/content/3Dk3H2DMjmRaHi24wAjWaB9SrqD",
-      "title": "A Amazônia também é Cloud: como a AWS aproxima tecnologia, sustentabilidade e inovação no Norte do Brasil",
-      "description": "A computação em nuvem já faz parte da transformação digital da Amazônia. Neste artigo, exploramos como a AWS conecta tecnologia, sustentabilidade e novas oportunidades profissionais para a Região Norte do Brasil.",
-      "url": "https://builder.aws.com/content/3Dk3H2DMjmRaHi24wAjWaB9SrqD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DlVXdja8NS43ZfjtXDhJch51Rk/5756.webp",
-      "authorName": "Nicole Lobo",
-      "authorAlias": "devnicolelobo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mFBivBsBjDlpUVG7P8XMKMTH.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
+      "id": "/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
+      "title": "AWS Community Builders Spotlight: Deluxe Edition",
+      "description": "Weekly-ish digest of AWS Community Builders' best content from April 27- May 10, 2026",
+      "url": "https://builder.aws.com/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgT9e0Zay39VYfh5xZDm0YQyGM/aws-.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
       "tags": [],
-      "publishedAt": "2026-05-15T14:54:12.566Z",
-      "likesCount": 7,
-      "commentsCount": 0
+      "publishedAt": "2026-05-13T21:11:31.399Z",
+      "likesCount": 21,
+      "commentsCount": 8
+    },
+    {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1939,
+      "commentsCount": 273
     }
   ]
 }
