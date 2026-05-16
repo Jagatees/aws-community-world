@@ -1,6 +1,192 @@
 {
-  "updatedAt": "2026-05-16T12:25:28.304Z",
+  "updatedAt": "2026-05-16T18:22:36.737Z",
   "latest": [
+    {
+      "id": "/content/3DofbAgeg2DWYRi2kBkcjaW5fD8",
+      "title": "Criando seu Primeiro Chatbot de IA com Amazon Bedrock: Guia Prático Sem Complicações",
+      "description": "Quer rodar inteligência artificial de ponta sem gastar uma fortuna e sem gerenciar servidores complexos? Descubra como criar um chatbot de IA totalmente Serverless integrando o Amazon Bedrock e o AWS Lambda em poucos minutos. Hora de sair do localhost pro mundo com GenAI!",
+      "url": "https://builder.aws.com/content/3DofbAgeg2DWYRi2kBkcjaW5fD8",
+      "imageUrl": "",
+      "authorName": "Gabriel Campos Seemann",
+      "authorAlias": "gseemann",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CIWaTrNTsYzQOW1u3CyT5a4cMe.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "amazon-bedrock",
+        "artificial-intelligence"
+      ],
+      "publishedAt": "2026-05-16T17:52:59.958Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DoVfhBwhDICJ88lZvwbdceEnal",
+      "title": "Live Canary Deployments with AWS SAM, the New WebSocket API Resource, and Lambda Durable Functions",
+      "description": "Discover live canary deployments using AWS SAM, WebSocket API, and Lambda Durable Functions. Follow a real-world example and deploy with ease.",
+      "url": "https://builder.aws.com/content/3DoVfhBwhDICJ88lZvwbdceEnal",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DoVo2APxvFKHXTf7zsALmL8wuJ/cove.webp",
+      "authorName": "Darryl Ruggles",
+      "authorAlias": "darrylr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32xvtRCXz0BUNb5YZMIdzX1KHT8.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "serverless",
+        "aws-lambda",
+        "websockets",
+        "aws-sam"
+      ],
+      "publishedAt": "2026-05-16T16:29:04.634Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DoU2h5e3KmIP1zDmii8B8wuoXa",
+      "title": "☁️ Você não precisa de servidor para mudar o mundo",
+      "description": "Como a nuvem virou o maior atalho da história para quem quer construir algo do zero",
+      "url": "https://builder.aws.com/content/3DoU2h5e3KmIP1zDmii8B8wuoXa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DoUbQLQzMYI9wle0tQGixGRSjG/Chat.webp",
+      "authorName": "Andre Veiga Osorio",
+      "authorAlias": "andreosorio",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COyacgUV0TNXl6V8cpGZjfhQ2w.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-educate"
+      ],
+      "publishedAt": "2026-05-16T16:14:01.927Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DoTqTLRQp0Q9Jx8Qn4e8Xhwab4",
+      "title": "Como a AWS está por trás dos algoritmos que cuidam do seu dinheiro",
+      "description": "Robo-advisors mudaram quem pode ter uma carteira de investimentos personalizada — mas o que está por trás dessa automação? Neste artigo, exploramos como o Amazon SageMaker viabiliza o ciclo completo de machine learning em fintechs, desde a preparação dos dados até o monitoramento em produção, usando o mercado financeiro brasileiro como caso concreto.",
+      "url": "https://builder.aws.com/content/3DoTqTLRQp0Q9Jx8Qn4e8Xhwab4",
+      "imageUrl": "",
+      "authorName": "julia rocha",
+      "authorAlias": "juliarocha",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "advertising-marketing-industry",
+        "advanced-networking",
+        "agents",
+        "agentic-interactions",
+        "aws-api"
+      ],
+      "publishedAt": "2026-05-16T16:08:49.814Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DoA44N5niSTDGc8LvFK42uPb1Q",
+      "title": "Building a Real-Time Sports Voting Platform with Serverless Architecture",
+      "description": "How I designed a fan engagement app that handles video transcoding, global streaming, real-time voting, and admin analytics — all without managing a single server. A walkthrough of eight architectural decisions, the patterns that worked, and the gotchas I hit along the way.",
+      "url": "https://builder.aws.com/content/3DoA44N5niSTDGc8LvFK42uPb1Q",
+      "imageUrl": "",
+      "authorName": "Pradeep",
+      "authorAlias": "meruva",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-16T15:41:44.686Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DlGSefOsMkHDkJzOnmQqtGxMNG",
+      "title": "How I’m Hacking My DevOps Journey with AWS Builder Center",
+      "description": "An early-career DevOps engineer shares how hands-on projects, AWS events, and Builder Center resources are turning a non-traditional background into a real cloud career.",
+      "url": "https://builder.aws.com/content/3DlGSefOsMkHDkJzOnmQqtGxMNG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DoQB6R08TRwkHWIy1YBGr7l3as/unna.webp",
+      "authorName": "Anish Tiwari",
+      "authorAlias": "anish2315",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DlDsPyt407AvWpiSOb3gcjPIQb.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "devops",
+        "aws-community-builders",
+        "asia-pacific",
+        "ci-cd",
+        "aws-community-day-2026"
+      ],
+      "publishedAt": "2026-05-16T15:39:47.151Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D65jHb8bFWhrxQ6BffrmDHi8PK",
+      "title": "🏗️ Por que investir nos fundamentos? Minha jornada desde o AWS Cloud Foundations ☁️",
+      "description": "Na pressa de aprender frameworks modernos e fazer deploy de aplicações web, muitos estudantes pulam a etapa mais importante: a base de cloud computing. Descubra como a minha certificação Cloud Foundations no ensino médio fez toda a diferença para os meus projetos em Laravel e React hoje.",
+      "url": "https://builder.aws.com/content/3D65jHb8bFWhrxQ6BffrmDHi8PK",
+      "imageUrl": "",
+      "authorName": "Jonatas Candido",
+      "authorAlias": "jonatascr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUQQXWy6led2REUrIbC6rxfRo0.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-16T14:19:15.800Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DoDpQNEYr9o11COkUSJSGmkTME",
+      "title": "Common AWS Free Tier Mistakes Beginners Make",
+      "description": "While exploring AWS services, I noticed several common mistakes beginners make with the AWS Free Tier - from leaving resources running to misunderstanding billing limits. This article covers practical lessons around cost management, IAM security, and responsible cloud usage while learning AWS.",
+      "url": "https://builder.aws.com/content/3DoDpQNEYr9o11COkUSJSGmkTME",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DoEkqR9yF0OlQ1ZHuWaqUEG6rg/cloud.webp",
+      "authorName": "Jyothish Nalinakshan",
+      "authorAlias": "gunner",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DJSYGhPkgJwN69v5mInhZtkvBU.webp",
+      "location": "Kerala, IN",
+      "lat": 10.3528744,
+      "lng": 76.5120396,
+      "tags": [
+        "aws-free-tier",
+        "amazon-cloudfront",
+        "amazon-s3",
+        "cost-optimization",
+        "security"
+      ],
+      "publishedAt": "2026-05-16T14:05:42.285Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Do3dyzorryOFoZfm2mSxFKkDDw",
+      "title": "I Built KubeMate on Amazon Bedrock.",
+      "description": "KubeMate is an AI-powered Kubernetes operations agent I built on Amazon Bedrock.",
+      "url": "https://builder.aws.com/content/3Do3dyzorryOFoZfm2mSxFKkDDw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DoARhEq1jlNT2Jjz7fKHSWcij3/Kube.webp",
+      "authorName": "Sundaramsubramanian",
+      "authorAlias": "sundarsd",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BFAFP6gUuj1px7vpqXDBew08iu.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agentic-ai",
+        "amazon-bedrock",
+        "amazon-eks",
+        "claude"
+      ],
+      "publishedAt": "2026-05-16T13:32:37.363Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DhZmkcsAnssl7gdhUTjhXbVTQY",
       "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 6]",
@@ -20,193 +206,6 @@
       "publishedAt": "2026-05-16T08:26:16.368Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DQpQMdfIVA83kjl4iytoFCMAby",
-      "title": "Troubleshooting Lambda Durable Functions with AWS DevOps Agent",
-      "description": "Learn how to use AWS DevOps Agent to autonomously investigate failures in Lambda durable function workflows. This article demonstrates how DevOps Agent correlates CloudTrail events, CloudWatch logs, metrics, and X-Ray traces to identify root causes that span multiple functions and callback suspension boundaries. Includes real investigation scenarios and effective prompting strategies.",
-      "url": "https://builder.aws.com/content/3DQpQMdfIVA83kjl4iytoFCMAby",
-      "imageUrl": "",
-      "authorName": "Surya Sai D",
-      "authorAlias": "suryadss",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DQoETGfubcGmIXl9Atwte70vlJ.webp",
-      "location": "SG",
-      "lat": 1.357107,
-      "lng": 103.8194992,
-      "tags": [],
-      "publishedAt": "2026-05-16T03:53:37.062Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DmzA1ZJYT9D2SSUM0RMLDtNjiP",
-      "title": "How AWS CloudWatch Monitors Your Cloud in Real Time",
-      "description": "CloudWatch is more than dashboards. Learn how metrics, logs, alarms, and anomaly detection work together to catch AWS failures before your users do.",
-      "url": "https://builder.aws.com/content/3DmzA1ZJYT9D2SSUM0RMLDtNjiP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dn0pWAdUHHbu3ds9ZDuWLhS2Bv/cove.webp",
-      "authorName": "Rashindu Tharinda",
-      "authorAlias": "rash522",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAXrueNTFAH8WtVtH75cydfLaF.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "aws-cloudwatch",
-        "aws-educate",
-        "observability",
-        "monitoring",
-        "cloud-operations"
-      ],
-      "publishedAt": "2026-05-16T03:36:11.461Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dmvw0atXggQgOvpzTjIfIcUuwm",
-      "title": "Why I Moved from DCGAN to WGAN-GP: Building More Stable GAN Training",
-      "description": "GANs look elegant in theory, but training them in practice is far more challenging. While training a DCGAN on ~70k face images, I faced unstable optimization, long training cycles, and Colab interruptions. That experience pushed me to explore WGAN and WGAN-GP more deeply.",
-      "url": "https://builder.aws.com/content/3Dmvw0atXggQgOvpzTjIfIcUuwm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmwlKJTa2z5ewUyfZ0DhBYaL4x/wgan-.webp",
-      "authorName": "Ujjwal Gupta",
-      "authorAlias": "ujjjx",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-16T03:06:07.347Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DmrZFwojRMZFkzzixvujv6UxzJ",
-      "title": "Como Aprender Qualquer Linguagem de Programação de Forma Autodidata",
-      "description": "Muita gente entra na programação achando que precisa decorar códigos, copiar projetos prontos ou aprender dezenas de linguagens ao mesmo tempo. Mas a verdade é que programar não começa pela linguagem. Começa pela lógica.\n\nE é exatamente por isso que muita gente desiste cedo: tentam aprender “código” sem antes aprender a pensar como programador.",
-      "url": "https://builder.aws.com/content/3DmrZFwojRMZFkzzixvujv6UxzJ",
-      "imageUrl": "",
-      "authorName": "Yvila Samea Sales Gonçalves",
-      "authorAlias": "yvilah",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxLu5Mlt4pcmi3KPyEd2FmWutf.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "tech-responsibility",
-        "sysdev",
-        "programming-languages",
-        "soft-skills"
-      ],
-      "publishedAt": "2026-05-16T02:37:07.000Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DmlVcRhtR3V2dTM3ztWVslOGFA",
-      "title": "アクセスキーが流出した時、何をしなければならないか再考してみる",
-      "description": "AWSから届く「Unexpected Activity Detected」通知の各ステップを読み解き、アクセスキーの無効化・ローテーション、CloudTrailによるIAMリソースの不正操作の追跡、全リージョンでの意図しないリソース作成の確認、請求調整申請までの一連の対処フローを実践的に解説します。",
-      "url": "https://builder.aws.com/content/3DmlVcRhtR3V2dTM3ztWVslOGFA",
-      "imageUrl": "",
-      "authorName": "ICHINO Kazuaki",
-      "authorAlias": "kazzpapa3",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30VMQkNGyxID9od8X4OUGS0smem.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "iam",
-        "root",
-        "security"
-      ],
-      "publishedAt": "2026-05-16T01:43:26.289Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DltNbdfCiLar5cIC0N7Qj1S9Gc",
-      "title": "The VMware Exit Playbook for State & Local Government: End-to-End Migration with AWS Transform",
-      "description": "How state agencies can move off VMware vSphere and onto AWS in weeks, not months. Includes a validated end-to-end walkthrough with RVTools discovery, automated wave planning, and production cutover using AWS Transform",
-      "url": "https://builder.aws.com/content/3DltNbdfCiLar5cIC0N7Qj1S9Gc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmiI5cXhyL8TeU7my7kQuqIZaQ/maxr.webp",
-      "authorName": "Achyutha Harish",
-      "authorAlias": "achyuthh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Alu1QD97vIJsIYJ8qBk7dcAdIN.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "transformation",
-        "vmware-cloud-aws"
-      ],
-      "publishedAt": "2026-05-16T01:06:34.087Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/2roCz6zgnpuauG8FDugi1yJTiSS",
-      "title": "How I Actually Started Learning Cloud Computing - AWS (And What Helped Most)",
-      "description": "A honest look at how I got started with AWS what I built, what actually helped, and the one community I didn't expect to learn the most from",
-      "url": "https://builder.aws.com/content/2roCz6zgnpuauG8FDugi1yJTiSS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dmjz7DUHfOzexJ8fc7zR7Ew4mp/Unti.webp",
-      "authorName": "Sujit Laware",
-      "authorAlias": "sujitlaware09",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBkzfSXKr4vHNddNbL3o4oPjFv.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "aws-builders",
-        "cloud-concepts",
-        "amazon-ec2",
-        "ai",
-        "ai-ml"
-      ],
-      "publishedAt": "2026-05-16T01:00:49.563Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DmX1fz0sNu2uOztvs4Pwa89R9F",
-      "title": "Acelerando o Aprendizado de Programação com IA: Por que o AWS Builder Center é o seu melhor aliado?",
-      "description": "O Jogo Mudou: Muito Além do Código Gerado",
-      "url": "https://builder.aws.com/content/3DmX1fz0sNu2uOztvs4Pwa89R9F",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dn1o7K5BAlKcQTh9H47Ncypj9l/IMG_5.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "tech",
-        "tech-journey",
-        "women-in-tech"
-      ],
-      "publishedAt": "2026-05-16T00:50:27.398Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dhy6ATOM4ZyyLIKgqgiIPmW9Q5",
-      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 5]",
-      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 5]",
-      "url": "https://builder.aws.com/content/3Dhy6ATOM4ZyyLIKgqgiIPmW9Q5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DkXo5o873klyeC385fcve5Il7a/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-16T00:33:39.662Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -224,8 +223,8 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-12T16:57:46.805Z",
-      "likesCount": 35,
-      "commentsCount": 166
+      "likesCount": 39,
+      "commentsCount": 167
     },
     {
       "id": "/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
@@ -246,8 +245,25 @@
         "aws-cloud-clubs"
       ],
       "publishedAt": "2026-05-15T22:02:57.255Z",
-      "likesCount": 15,
-      "commentsCount": 4
+      "likesCount": 20,
+      "commentsCount": 6
+    },
+    {
+      "id": "/content/3DenVrz4NSpTsJVg6wbx2hxeMRo",
+      "title": "¡AWS en Platzi Conf CDMX 2026!",
+      "description": "Estaremos en Platzi Conf CDMX el 16 de mayo con charlas, demos en vivo y SWAG! Pasa por el AWS Developer Lounge, aprende y gana. ",
+      "url": "https://builder.aws.com/content/3DenVrz4NSpTsJVg6wbx2hxeMRo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DepDVdTHB4ZQXNxWkvpsyIUz43/ABC-.webp",
+      "authorName": "Nelly",
+      "authorAlias": "nelly",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2pVIHMS8mYLRjgNQBdlRji2GPlK.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [],
+      "publishedAt": "2026-05-13T15:06:02.605Z",
+      "likesCount": 38,
+      "commentsCount": 35
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -268,7 +284,7 @@
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3570,
-      "commentsCount": 332
+      "commentsCount": 333
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -309,8 +325,8 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2874,
-      "commentsCount": 323
+      "likesCount": 2875,
+      "commentsCount": 324
     },
     {
       "id": "/content/3DdKXs6hhEj0qzBMMeKHSzqF8bz",
@@ -357,6 +373,23 @@
       "commentsCount": 273
     },
     {
+      "id": "/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
+      "title": "AWS Community Builders Spotlight: Deluxe Edition",
+      "description": "Weekly-ish digest of AWS Community Builders' best content from April 27- May 10, 2026",
+      "url": "https://builder.aws.com/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgT9e0Zay39VYfh5xZDm0YQyGM/aws-.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-13T21:11:31.399Z",
+      "likesCount": 23,
+      "commentsCount": 8
+    },
+    {
       "id": "/content/3DjLDpjJuZE2ioOmQHKiPgS4Jf6",
       "title": "Building a Production-Grade URL Shortener: A Senior DevOps Engineer's Playbook",
       "description": "Learn how a production-grade URL shortener with zero-downtime deployments, automated infrastructure, and comprehensive monitoring can run reliably on a single t3.micro EC2 instance using Docker Compose, Terraform, and pragmatic DevOps practices",
@@ -378,43 +411,6 @@
       "publishedAt": "2026-05-14T21:18:26.520Z",
       "likesCount": 13,
       "commentsCount": 6
-    },
-    {
-      "id": "/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
-      "title": "AWS Community Builders Spotlight: Deluxe Edition",
-      "description": "Weekly-ish digest of AWS Community Builders' best content from April 27- May 10, 2026",
-      "url": "https://builder.aws.com/content/3DgT7XwYXhAETURvK5z2LwtmcQ5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DgT9e0Zay39VYfh5xZDm0YQyGM/aws-.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-05-13T21:11:31.399Z",
-      "likesCount": 22,
-      "commentsCount": 8
-    },
-    {
-      "id": "/content/3DhZmkcsAnssl7gdhUTjhXbVTQY",
-      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 6]",
-      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 6]",
-      "url": "https://builder.aws.com/content/3DhZmkcsAnssl7gdhUTjhXbVTQY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DkXwFZJYogdiBwpEKa1g573WgT/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-16T08:26:16.368Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ]
 }
