@@ -1,6 +1,132 @@
 {
-  "updatedAt": "2026-05-18T00:48:02.531Z",
+  "updatedAt": "2026-05-18T07:29:03.129Z",
   "latest": [
+    {
+      "id": "/content/3DsLsRbrg10kPqhBscugVnfIMGl",
+      "title": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 2]",
+      "description": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 2]",
+      "url": "https://builder.aws.com/content/3DsLsRbrg10kPqhBscugVnfIMGl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DsVcvYLpTsvaojfbLy1bvfZ6iH/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-05-18T06:34:57.067Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CfNE6shsIjetDuLZg86hSLZDJ8",
+      "title": "Why Every Engineering Student Should Learn Cloud Before Graduation",
+      "description": "Cloud computing is no longer limited to software companies. From AI to IoT and scalable applications, cloud skills are becoming essential for engineering students across every technical branch.",
+      "url": "https://builder.aws.com/content/3CfNE6shsIjetDuLZg86hSLZDJ8",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dt0mn3G1sj14OG3jxCDakIPSqa/AWS-.webp",
+      "authorName": "Mrigank Jaiswal",
+      "authorAlias": "mrigank06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33I6d26YXYE3wFtQx0kbi6B2jof.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "students",
+        "aws-api",
+        "ai"
+      ],
+      "publishedAt": "2026-05-18T06:31:16.070Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dsi1xric5tEq4WAj56EHMbMrF4",
+      "title": "Cross‑Account Database Migration with AWS DMS: A Production‑Ready Architecture",
+      "description": "A practical engineer-first guide to cross-account database migrations with AWS DMS, including Terraform, VPC peering, troubleshooting, monitoring, and cost considerations.",
+      "url": "https://builder.aws.com/content/3Dsi1xric5tEq4WAj56EHMbMrF4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dsia3KO5W19SVAnBltPHYsMrQw/Chat.webp",
+      "authorName": "Manish Kumar",
+      "authorAlias": "manish416",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36Sk7kPyerWl0KafvuTDXmiKaDD.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aws-database-migration-service",
+        "troubleshoot"
+      ],
+      "publishedAt": "2026-05-18T04:14:30.635Z",
+      "likesCount": 1,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3DoIiANLLntoZGxYNh5tSN791Ss",
+      "title": "AWS Summit Bengaluru 2026: An Epic Ride of Networking, Cloud, and Community!",
+      "description": "Join my crazy AWS Summit Bengaluru 2026 journey! From grabbing early bird swags to insane networking with the AWS community, here's everything that went down.",
+      "url": "https://builder.aws.com/content/3DoIiANLLntoZGxYNh5tSN791Ss",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DqEOuWa1Gd3sTkUX8Ml3cu7n3b/AWS-.webp",
+      "authorName": "Soumyadeep Mandal",
+      "authorAlias": "imsampro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DJdbLuRtnOJEb12gpuK6AaDyWR.webp",
+      "location": "West Bengal, IN",
+      "lat": 22.9964948,
+      "lng": 87.6855882,
+      "tags": [
+        "aws-community",
+        "aws-community-builders",
+        "ai",
+        "kiro",
+        "aws-heroes"
+      ],
+      "publishedAt": "2026-05-18T03:04:57.516Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3Ds8J5f4yPI2zfHjSuKel3Okt7c",
+      "title": "Karpenter + ARC Zonal Shift on Amazon EKS",
+      "description": "On May 12, 2026, AWS announced that Karpenter now supports ARC zonal shift for EKS clusters. When an AZ is impaired, Karpenter stops provisioning there and prevents voluntary disruptions — workloads concentrate in healthy zones.\n\nThis article walks through enabling the feature, triggering a zonal shift, and observing Karpenter's behavior under two different scheduling strategies.",
+      "url": "https://builder.aws.com/content/3Ds8J5f4yPI2zfHjSuKel3Okt7c",
+      "imageUrl": "",
+      "authorName": "Harish Gumpalli",
+      "authorAlias": "gumpall",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-eks",
+        "kubernetes",
+        "availability-zones",
+        "simulation"
+      ],
+      "publishedAt": "2026-05-18T02:32:30.333Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DsUk8gB4n38Li3HmqcMN8k1Y0H",
+      "title": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 1]",
+      "description": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 1]",
+      "url": "https://builder.aws.com/content/3DsUk8gB4n38Li3HmqcMN8k1Y0H",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DsVJT44eFanch1FUryIK58lRsh/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-05-18T02:18:30.110Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Ds7f1BvcWlwxwf30u2wyAo6kNv",
       "title": "AWS Builder Center para iniciantes: o que eu gostaria de saber antes",
@@ -38,7 +164,7 @@
         "ai-for-developers"
       ],
       "publishedAt": "2026-05-17T22:01:57.255Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -61,8 +187,8 @@
         "amazon-route53"
       ],
       "publishedAt": "2026-05-17T21:42:31.387Z",
-      "likesCount": 3,
-      "commentsCount": 0
+      "likesCount": 5,
+      "commentsCount": 1
     },
     {
       "id": "/content/3DrNnY4Y62l0t7N4OTiCrtOVK63",
@@ -146,7 +272,7 @@
         "amazon-nova"
       ],
       "publishedAt": "2026-05-17T14:48:24.834Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -205,6 +331,46 @@
       "publishedAt": "2026-05-17T14:09:53.850Z",
       "likesCount": 4,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3DqjKnZDASy0DuTxUDqTbI2Rf1i",
+      "title": "Como Construí uma Rede Neural de Conhecimento no Notion Conectada a um Agente de IA com Strands Agents",
+      "description": "Como usei o Notion como base de conhecimento estruturada e conectei tudo a um agente de IA construído com o Strands Agents SDK da AWS, e o que aprendi ao longo desse processo como estudante de computação.",
+      "url": "https://builder.aws.com/content/3DqjKnZDASy0DuTxUDqTbI2Rf1i",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr0ZAzj3U0DNKpbDAod1xtNVZ7/IMG_.webp",
+      "authorName": "Gabriel Macedo",
+      "authorAlias": "gabrielmaced",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cjm5asFPzpSf0RDYxQlOWef5oA.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-17T13:35:44.482Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DqyuFBVbF4ue4jjr2yjsLEY09J",
+      "title": "5 motivos para começar a estudar Cloud agora (mesmo sem experiência)",
+      "description": "5 motivos para estudar Cloud e como isso impacta no seu futuro 🚀",
+      "url": "https://builder.aws.com/content/3DqyuFBVbF4ue4jjr2yjsLEY09J",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr0yEdTox98SyFuaFrdcdJbzXM/1000.webp",
+      "authorName": "Edna Cristina Durans Santos",
+      "authorAlias": "ednadurans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-builders",
+        "aws-community-builders",
+        "aws-student-builders-groups",
+        "builder-id",
+        "all-builders-welcome"
+      ],
+      "publishedAt": "2026-05-17T13:26:34.155Z",
+      "likesCount": 1,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -239,8 +405,28 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-05-13T15:06:02.605Z",
-      "likesCount": 79,
+      "likesCount": 80,
       "commentsCount": 77
+    },
+    {
+      "id": "/content/3Dsi1xric5tEq4WAj56EHMbMrF4",
+      "title": "Cross‑Account Database Migration with AWS DMS: A Production‑Ready Architecture",
+      "description": "A practical engineer-first guide to cross-account database migrations with AWS DMS, including Terraform, VPC peering, troubleshooting, monitoring, and cost considerations.",
+      "url": "https://builder.aws.com/content/3Dsi1xric5tEq4WAj56EHMbMrF4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dsia3KO5W19SVAnBltPHYsMrQw/Chat.webp",
+      "authorName": "Manish Kumar",
+      "authorAlias": "manish416",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36Sk7kPyerWl0KafvuTDXmiKaDD.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aws-database-migration-service",
+        "troubleshoot"
+      ],
+      "publishedAt": "2026-05-18T04:14:30.635Z",
+      "likesCount": 1,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -281,31 +467,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3475,
+      "likesCount": 3476,
       "commentsCount": 1929
-    },
-    {
-      "id": "/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
-      "title": "Migrating an EOL Linux Server to AWS in 8 Hours with Kiro",
-      "description": "What started as a favor to a friend became three decades of quiet mentorship — and when that friend's livelihood finally came under threat from a dying server, an AI agent and $20 worth of credits pulled off a migration that would have cost thousands in professional services.",
-      "url": "https://builder.aws.com/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DrxboIhiG2bR80C2zndwXNU6PL/Scre.webp",
-      "authorName": "Chris Miller",
-      "authorAlias": "ctodd",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "amazon-ec2",
-        "amazon-ses",
-        "amazon-rds",
-        "amazon-route53"
-      ],
-      "publishedAt": "2026-05-17T21:42:31.387Z",
-      "likesCount": 3,
-      "commentsCount": 0
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -327,6 +490,49 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2876,
       "commentsCount": 324
+    },
+    {
+      "id": "/content/3DoIiANLLntoZGxYNh5tSN791Ss",
+      "title": "AWS Summit Bengaluru 2026: An Epic Ride of Networking, Cloud, and Community!",
+      "description": "Join my crazy AWS Summit Bengaluru 2026 journey! From grabbing early bird swags to insane networking with the AWS community, here's everything that went down.",
+      "url": "https://builder.aws.com/content/3DoIiANLLntoZGxYNh5tSN791Ss",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DqEOuWa1Gd3sTkUX8Ml3cu7n3b/AWS-.webp",
+      "authorName": "Soumyadeep Mandal",
+      "authorAlias": "imsampro",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DJdbLuRtnOJEb12gpuK6AaDyWR.webp",
+      "location": "West Bengal, IN",
+      "lat": 22.9964948,
+      "lng": 87.6855882,
+      "tags": [
+        "aws-community",
+        "aws-community-builders",
+        "ai",
+        "kiro",
+        "aws-heroes"
+      ],
+      "publishedAt": "2026-05-18T03:04:57.516Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DsLsRbrg10kPqhBscugVnfIMGl",
+      "title": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 2]",
+      "description": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 2]",
+      "url": "https://builder.aws.com/content/3DsLsRbrg10kPqhBscugVnfIMGl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DsVcvYLpTsvaojfbLy1bvfZ6iH/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-05-18T06:34:57.067Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
@@ -351,61 +557,27 @@
       "commentsCount": 9
     },
     {
-      "id": "/content/3DqsCOUKfYHLt6kViIdWKBSdU8t",
-      "title": "Como automação em cloud está se conectando com a engenharia",
-      "description": "Uma análise prática de como conceitos de automação em cloud, explorados no AWS Builder Center, podem ser aplicados no contexto das engenharias.",
-      "url": "https://builder.aws.com/content/3DqsCOUKfYHLt6kViIdWKBSdU8t",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DqsJoorTH4qSAkrIBSlikDgGM4/bann.webp",
-      "authorName": "Alfeu Valente",
-      "authorAlias": "feuvalente",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUOO4gnjWZft1kSpTNj4EuO0Sq.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
+      "id": "/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
+      "title": "Migrating an EOL Linux Server to AWS in 8 Hours with Kiro",
+      "description": "What started as a favor to a friend became three decades of quiet mentorship — and when that friend's livelihood finally came under threat from a dying server, an AI agent and $20 worth of credits pulled off a migration that would have cost thousands in professional services.",
+      "url": "https://builder.aws.com/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DrxboIhiG2bR80C2zndwXNU6PL/Scre.webp",
+      "authorName": "Chris Miller",
+      "authorAlias": "ctodd",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
-        "aws-cloudformation",
-        "engineering-practices"
+        "kiro",
+        "amazon-ec2",
+        "amazon-ses",
+        "amazon-rds",
+        "amazon-route53"
       ],
-      "publishedAt": "2026-05-17T12:28:19.119Z",
-      "likesCount": 6,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3DhKGH0bvuwSb9Nsru3bSyyDAWl",
-      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 7]",
-      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 7]",
-      "url": "https://builder.aws.com/content/3DhKGH0bvuwSb9Nsru3bSyyDAWl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DkY3Bdl9iGiHwcQ1EBt9OicFOj/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-17T04:12:13.132Z",
-      "likesCount": 7,
-      "commentsCount": 5
-    },
-    {
-      "id": "/content/3Dr4RH7uI43VupS5T1Chlb57PS0",
-      "title": "Nuvem com AWS: Minha Experiência Aprendendo na Prática",
-      "description": "Falando um pouco de como tá sendo entrar nesse mundo da computação em nuvem junto da AWS, descobrindo ferramentas essenciais para diversas áreas não só dá tecnologia, mas sim do mundo.",
-      "url": "https://builder.aws.com/content/3Dr4RH7uI43VupS5T1Chlb57PS0",
-      "imageUrl": "",
-      "authorName": "Danilo Almeida",
-      "authorAlias": "daniloalmeidaz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5rLmnAeoCAUSr9k9Xq6UOU2ou.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-17T14:09:53.850Z",
-      "likesCount": 4,
-      "commentsCount": 2
+      "publishedAt": "2026-05-17T21:42:31.387Z",
+      "likesCount": 5,
+      "commentsCount": 1
     }
   ]
 }
