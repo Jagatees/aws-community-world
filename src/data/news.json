@@ -1,6 +1,149 @@
 {
-  "updatedAt": "2026-05-18T07:29:03.129Z",
+  "updatedAt": "2026-05-18T13:19:12.826Z",
   "latest": [
+    {
+      "id": "/content/3DJrTgZeQZpU9jGRfUwfmeI5vb6",
+      "title": "AWS Build Center: a plataforma da Amazon que está aproximando pessoas do mundo da tecnologia!",
+      "description": "Conheça a AWS Build Center, plataforma da Amazon que une aprendizado, comunidade e tecnologia para ensinar nuvem, IA e inovação.",
+      "url": "https://builder.aws.com/content/3DJrTgZeQZpU9jGRfUwfmeI5vb6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DtlmUKcfu9OlSIBaEdEBtXS5BV/arti-.webp",
+      "authorName": "Eduardo Saraiva",
+      "authorAlias": "kamijax",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjC729UwUJeBh7RBBaWcJX7W3I.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai"
+      ],
+      "publishedAt": "2026-05-18T13:08:50.176Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DtWkytGgSqj2YRnpdeYFOuepDI",
+      "title": "Aurora I/O-Optimized Cost Assessment Kiro-cli Agent: Automate Your Storage Configuration Decision",
+      "description": "The aurora-io-assessment Kiro-cli agent eliminates the manual effort of evaluating Aurora I/O-Optimized by automating the complete decision workflow fetching  real cluster metadata, actual CloudWatch metrics, and live pricing data via the AWS Pricing MCP server to produce an accurate, region-specific cost comparison with a clear recommendation. Whether you're managing one cluster or dozens, this agent gives you the data-driven answer in seconds instead of hours.",
+      "url": "https://builder.aws.com/content/3DtWkytGgSqj2YRnpdeYFOuepDI",
+      "imageUrl": "",
+      "authorName": "Belma",
+      "authorAlias": "belmacanik",
+      "authorAvatarUrl": "",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [],
+      "publishedAt": "2026-05-18T13:01:41.055Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dtek0fc91rqFkg0B7on86aiQkQ",
+      "title": "Access Denied: What Every AWS Beginner Gets Wrong About IAM",
+      "description": "The IAM mental model I wish someone had drawn on a whiteboard for me when I was starting out with AWS. Users, roles, policies, and the one principle that makes it all click",
+      "url": "https://builder.aws.com/content/3Dtek0fc91rqFkg0B7on86aiQkQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DtgJq0PQBhxlhpvOVf4YT6aK9s/20260.webp",
+      "authorName": "Jonathan Vogel",
+      "authorAlias": "vogejona",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30um0kAwNqT5Z0ITWogb8oXsPa3.webp",
+      "location": "NC, US",
+      "lat": 35.6729639,
+      "lng": -79.0392919,
+      "tags": [
+        "tutorials",
+        "students",
+        "security",
+        "iam"
+      ],
+      "publishedAt": "2026-05-18T12:20:13.302Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cd9ZQY8ueJVUOzCxBxjhYN2xfJ",
+      "title": "AI/ML on AWS: The Simplest Path from Zero to Working Model",
+      "description": "Stop overthinking. Here's everything an early career builder needs to know about building AI/ML projects on AWS.",
+      "url": "https://builder.aws.com/content/3Cd9ZQY8ueJVUOzCxBxjhYN2xfJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr40BsDPHCwkEs1Pm9BjdS7mpm/Scre.webp",
+      "authorName": "Abhishek Kumar Yadav",
+      "authorAlias": "abhishekk007",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DtiJbi4D40MuZmK7O0Y9YDNZQV.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-18T12:14:04.260Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DtPcTtpupwZI5GIJULMBupuZDO",
+      "title": "What Caused the AWS Outage? Here's What Happened and Why",
+      "description": "Find out what caused the AWS outage, what went wrong behind the scenes, and what it means for businesses that depend on Amazon Web Services.",
+      "url": "https://builder.aws.com/content/3DtPcTtpupwZI5GIJULMBupuZDO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DtQkWSCM1E8K31hJBd5PlT359F/AWS-.webp",
+      "authorName": "Kevin Anderson",
+      "authorAlias": "andersonkevin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bpy5IqFhxpGI0KdELekpzHT4aN.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "cloud-security",
+        "devops",
+        "developer",
+        "educational"
+      ],
+      "publishedAt": "2026-05-18T10:10:49.096Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DtBiR4ua0qy7ybZMPzPmQ2SDMj",
+      "title": "One model is a guess. Three that agree is a plan.",
+      "description": "One model planning alone sounds confident and is often quietly wrong. so I wired up \"consensus\" - GPT, Gemini and Claude review the same plan independently and argue until they actually agree (or it tells you honestly that they did not).",
+      "url": "https://builder.aws.com/content/3DtBiR4ua0qy7ybZMPzPmQ2SDMj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DtBzpenRBDKmdcmsVoBkme213k/Chat.webp",
+      "authorName": "Anton Babenko",
+      "authorAlias": "antonbabenko",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdkVXzqcvfhbEF48P8g2hG4IoR.webp",
+      "location": "NO",
+      "lat": 61.1529386,
+      "lng": 8.7876653,
+      "tags": [
+        "agentic-ai",
+        "productivity",
+        "llm",
+        "multi-modal",
+        "terraform"
+      ],
+      "publishedAt": "2026-05-18T08:11:54.067Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dt0T2xhshTvsSQxSvMR7n4rE6p",
+      "title": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 1]",
+      "description": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 1]",
+      "url": "https://builder.aws.com/content/3Dt0T2xhshTvsSQxSvMR7n4rE6p",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dt2NTObSd2hdfbjCzRuw0IwmhL/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "financial-services",
+        "financial-services-industry",
+        "finance",
+        "fintech"
+      ],
+      "publishedAt": "2026-05-18T07:43:52.789Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DsLsRbrg10kPqhBscugVnfIMGl",
       "title": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 2]",
@@ -39,7 +182,7 @@
         "ai"
       ],
       "publishedAt": "2026-05-18T06:31:16.070Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -59,7 +202,7 @@
         "troubleshoot"
       ],
       "publishedAt": "2026-05-18T04:14:30.635Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 2
     },
     {
@@ -82,8 +225,8 @@
         "aws-heroes"
       ],
       "publishedAt": "2026-05-18T03:04:57.516Z",
-      "likesCount": 2,
-      "commentsCount": 1
+      "likesCount": 5,
+      "commentsCount": 2
     },
     {
       "id": "/content/3Ds8J5f4yPI2zfHjSuKel3Okt7c",
@@ -104,7 +247,7 @@
         "simulation"
       ],
       "publishedAt": "2026-05-18T02:32:30.333Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -141,7 +284,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-05-17T23:05:15.079Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -164,7 +307,7 @@
         "ai-for-developers"
       ],
       "publishedAt": "2026-05-17T22:01:57.255Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -187,8 +330,8 @@
         "amazon-route53"
       ],
       "publishedAt": "2026-05-17T21:42:31.387Z",
-      "likesCount": 5,
-      "commentsCount": 1
+      "likesCount": 9,
+      "commentsCount": 2
     },
     {
       "id": "/content/3DrNnY4Y62l0t7N4OTiCrtOVK63",
@@ -204,7 +347,7 @@
       "lng": 78.6677428,
       "tags": [],
       "publishedAt": "2026-05-17T16:49:02.696Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -227,7 +370,7 @@
         "amazon-bedrock-agentcore"
       ],
       "publishedAt": "2026-05-17T15:53:48.949Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 1
     },
     {
@@ -249,7 +392,7 @@
         "open-source"
       ],
       "publishedAt": "2026-05-17T15:02:41.187Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -272,104 +415,7 @@
         "amazon-nova"
       ],
       "publishedAt": "2026-05-17T14:48:24.834Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dr3ne9hEYXV5GpI3Vcz8V5790C",
-      "title": "Como o AWS Builder Center pode acelerar sua evolução em cloud",
-      "description": "Neste artigo, compartilho minha experiência estudando cloud computing e como o AWS Builder Center contribuiu para acelerar meu aprendizado através de conteúdos práticos, labs, networking e troca de experiências com outros builders. Além da parte técnica, abordo como a comunidade ajuda a desenvolver uma visão mais estratégica sobre arquitetura, escalabilidade, custos e carreira em cloud.",
-      "url": "https://builder.aws.com/content/3Dr3ne9hEYXV5GpI3Vcz8V5790C",
-      "imageUrl": "",
-      "authorName": "Vinicius Rosa de Lima",
-      "authorAlias": "vinidev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpDQKTTLNfmMxXb9frMW42TAqz.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-17T14:33:44.450Z",
-      "likesCount": 4,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DlwreIda6eCrRkNjbt83MfCma9",
-      "title": "Implementando Arquitetura Celular na AWS: Isolamento de Falhas com Route 53 e API Gateway",
-      "description": "Domine a construção de sistemas resilientes ao particionar cargas de trabalho em limites de contenção rigorosos, garantindo disponibilidade máxima para operações de missão crítica. Descubra como aplicar roteamento dinâmico, validação de borda e padrões hexagonais para evitar falhas em cascata em ambientes de produção.",
-      "url": "https://builder.aws.com/content/3DlwreIda6eCrRkNjbt83MfCma9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr5IPAVb3qZpjugolwoH63TagG/Desi.webp",
-      "authorName": "Claudio Filipe Lima Raposo",
-      "authorAlias": "sertaoseracloud",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dr5xGg8jmJAuNo9td76QzELG61.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "terraform",
-        "python",
-        "amazon-route53",
-        "amazon-api-gateway"
-      ],
-      "publishedAt": "2026-05-17T14:15:05.220Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dr4RH7uI43VupS5T1Chlb57PS0",
-      "title": "Nuvem com AWS: Minha Experiência Aprendendo na Prática",
-      "description": "Falando um pouco de como tá sendo entrar nesse mundo da computação em nuvem junto da AWS, descobrindo ferramentas essenciais para diversas áreas não só dá tecnologia, mas sim do mundo.",
-      "url": "https://builder.aws.com/content/3Dr4RH7uI43VupS5T1Chlb57PS0",
-      "imageUrl": "",
-      "authorName": "Danilo Almeida",
-      "authorAlias": "daniloalmeidaz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5rLmnAeoCAUSr9k9Xq6UOU2ou.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-17T14:09:53.850Z",
-      "likesCount": 4,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3DqjKnZDASy0DuTxUDqTbI2Rf1i",
-      "title": "Como Construí uma Rede Neural de Conhecimento no Notion Conectada a um Agente de IA com Strands Agents",
-      "description": "Como usei o Notion como base de conhecimento estruturada e conectei tudo a um agente de IA construído com o Strands Agents SDK da AWS, e o que aprendi ao longo desse processo como estudante de computação.",
-      "url": "https://builder.aws.com/content/3DqjKnZDASy0DuTxUDqTbI2Rf1i",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr0ZAzj3U0DNKpbDAod1xtNVZ7/IMG_.webp",
-      "authorName": "Gabriel Macedo",
-      "authorAlias": "gabrielmaced",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cjm5asFPzpSf0RDYxQlOWef5oA.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-17T13:35:44.482Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DqyuFBVbF4ue4jjr2yjsLEY09J",
-      "title": "5 motivos para começar a estudar Cloud agora (mesmo sem experiência)",
-      "description": "5 motivos para estudar Cloud e como isso impacta no seu futuro 🚀",
-      "url": "https://builder.aws.com/content/3DqyuFBVbF4ue4jjr2yjsLEY09J",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr0yEdTox98SyFuaFrdcdJbzXM/1000.webp",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-community-builders",
-        "aws-student-builders-groups",
-        "builder-id",
-        "all-builders-welcome"
-      ],
-      "publishedAt": "2026-05-17T13:26:34.155Z",
-      "likesCount": 1,
+      "likesCount": 3,
       "commentsCount": 0
     }
   ],
@@ -388,7 +434,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-12T16:57:46.805Z",
-      "likesCount": 44,
+      "likesCount": 45,
       "commentsCount": 169
     },
     {
@@ -405,28 +451,8 @@
       "lng": -102.0077097,
       "tags": [],
       "publishedAt": "2026-05-13T15:06:02.605Z",
-      "likesCount": 80,
+      "likesCount": 82,
       "commentsCount": 77
-    },
-    {
-      "id": "/content/3Dsi1xric5tEq4WAj56EHMbMrF4",
-      "title": "Cross‑Account Database Migration with AWS DMS: A Production‑Ready Architecture",
-      "description": "A practical engineer-first guide to cross-account database migrations with AWS DMS, including Terraform, VPC peering, troubleshooting, monitoring, and cost considerations.",
-      "url": "https://builder.aws.com/content/3Dsi1xric5tEq4WAj56EHMbMrF4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dsia3KO5W19SVAnBltPHYsMrQw/Chat.webp",
-      "authorName": "Manish Kumar",
-      "authorAlias": "manish416",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36Sk7kPyerWl0KafvuTDXmiKaDD.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aws-database-migration-service",
-        "troubleshoot"
-      ],
-      "publishedAt": "2026-05-18T04:14:30.635Z",
-      "likesCount": 1,
-      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -446,7 +472,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3571,
+      "likesCount": 3574,
       "commentsCount": 333
     },
     {
@@ -467,7 +493,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3476,
+      "likesCount": 3477,
       "commentsCount": 1929
     },
     {
@@ -488,8 +514,31 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2876,
+      "likesCount": 2877,
       "commentsCount": 324
+    },
+    {
+      "id": "/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
+      "title": "Migrating an EOL Linux Server to AWS in 8 Hours with Kiro",
+      "description": "What started as a favor to a friend became three decades of quiet mentorship — and when that friend's livelihood finally came under threat from a dying server, an AI agent and $20 worth of credits pulled off a migration that would have cost thousands in professional services.",
+      "url": "https://builder.aws.com/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DrxboIhiG2bR80C2zndwXNU6PL/Scre.webp",
+      "authorName": "Chris Miller",
+      "authorAlias": "ctodd",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "amazon-ec2",
+        "amazon-ses",
+        "amazon-rds",
+        "amazon-route53"
+      ],
+      "publishedAt": "2026-05-17T21:42:31.387Z",
+      "likesCount": 9,
+      "commentsCount": 2
     },
     {
       "id": "/content/3DoIiANLLntoZGxYNh5tSN791Ss",
@@ -511,28 +560,8 @@
         "aws-heroes"
       ],
       "publishedAt": "2026-05-18T03:04:57.516Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DsLsRbrg10kPqhBscugVnfIMGl",
-      "title": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 2]",
-      "description": "CloudOps 20 Exam Questions - Domain 1 Monitor, Log, Analysis, Remediation [part 2]",
-      "url": "https://builder.aws.com/content/3DsLsRbrg10kPqhBscugVnfIMGl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DsVcvYLpTsvaojfbLy1bvfZ6iH/AWS-.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-18T06:34:57.067Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 5,
+      "commentsCount": 2
     },
     {
       "id": "/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
@@ -557,26 +586,44 @@
       "commentsCount": 9
     },
     {
-      "id": "/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
-      "title": "Migrating an EOL Linux Server to AWS in 8 Hours with Kiro",
-      "description": "What started as a favor to a friend became three decades of quiet mentorship — and when that friend's livelihood finally came under threat from a dying server, an AI agent and $20 worth of credits pulled off a migration that would have cost thousands in professional services.",
-      "url": "https://builder.aws.com/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DrxboIhiG2bR80C2zndwXNU6PL/Scre.webp",
-      "authorName": "Chris Miller",
-      "authorAlias": "ctodd",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
+      "id": "/content/3Dtek0fc91rqFkg0B7on86aiQkQ",
+      "title": "Access Denied: What Every AWS Beginner Gets Wrong About IAM",
+      "description": "The IAM mental model I wish someone had drawn on a whiteboard for me when I was starting out with AWS. Users, roles, policies, and the one principle that makes it all click",
+      "url": "https://builder.aws.com/content/3Dtek0fc91rqFkg0B7on86aiQkQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DtgJq0PQBhxlhpvOVf4YT6aK9s/20260.webp",
+      "authorName": "Jonathan Vogel",
+      "authorAlias": "vogejona",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30um0kAwNqT5Z0ITWogb8oXsPa3.webp",
+      "location": "NC, US",
+      "lat": 35.6729639,
+      "lng": -79.0392919,
       "tags": [
-        "kiro",
-        "amazon-ec2",
-        "amazon-ses",
-        "amazon-rds",
-        "amazon-route53"
+        "tutorials",
+        "students",
+        "security",
+        "iam"
       ],
-      "publishedAt": "2026-05-17T21:42:31.387Z",
-      "likesCount": 5,
+      "publishedAt": "2026-05-18T12:20:13.302Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DJrTgZeQZpU9jGRfUwfmeI5vb6",
+      "title": "AWS Build Center: a plataforma da Amazon que está aproximando pessoas do mundo da tecnologia!",
+      "description": "Conheça a AWS Build Center, plataforma da Amazon que une aprendizado, comunidade e tecnologia para ensinar nuvem, IA e inovação.",
+      "url": "https://builder.aws.com/content/3DJrTgZeQZpU9jGRfUwfmeI5vb6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DtlmUKcfu9OlSIBaEdEBtXS5BV/arti-.webp",
+      "authorName": "Eduardo Saraiva",
+      "authorAlias": "kamijax",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CjC729UwUJeBh7RBBaWcJX7W3I.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai"
+      ],
+      "publishedAt": "2026-05-18T13:08:50.176Z",
+      "likesCount": 2,
       "commentsCount": 1
     }
   ]
