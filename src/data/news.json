@@ -1,6 +1,69 @@
 {
-  "updatedAt": "2026-05-17T18:25:01.691Z",
+  "updatedAt": "2026-05-18T00:48:02.531Z",
   "latest": [
+    {
+      "id": "/content/3Ds7f1BvcWlwxwf30u2wyAo6kNv",
+      "title": "AWS Builder Center para iniciantes: o que eu gostaria de saber antes",
+      "description": "Quando a gente começa na área de tecnologia, uma das maiores dificuldades não é só aprender uma linguagem, uma ferramenta ou um conceito novo. O mais difícil, muitas vezes, é entender por onde começar.\n\nEu curso Ciência da Computação e, mesmo estando no meio universitário, sei como é comum sentir que existe informação demais e direção de menos. Cloud computing, inteligência artificial, desenvolvimento, infraestrutura, certificações, projetos, carreira… tudo parece importante ao mesmo tempo.",
+      "url": "https://builder.aws.com/content/3Ds7f1BvcWlwxwf30u2wyAo6kNv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ds7oK5d5q9dBsKd2HgevJu5Xi6/Minh.webp",
+      "authorName": "Ana Júlia",
+      "authorAlias": "anajumoura",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CouFKj21Tie7zfxmqJz0ZgOPoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-17T23:05:15.079Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DYYOpQiNo68KUtcqIqGORL1cYq",
+      "title": "Building Production-Ready Skills for AWS DevOps Agent",
+      "description": "In this post, we walk through what skills are, how to convert your existing runbooks into them, how to test them systematically, and how to get them into the agent today. The approach is practical and grounded in real results. ",
+      "url": "https://builder.aws.com/content/3DYYOpQiNo68KUtcqIqGORL1cYq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Do2dMD0Irdr2cHApLbaMqvCiDZ/Scre.webp",
+      "authorName": "Nirmal Rajan",
+      "authorAlias": "awsrajan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dq4PwZOD6IE33RKp1jjkTS1ZJD.webp",
+      "location": "AU",
+      "lat": -24.7761086,
+      "lng": 134.755,
+      "tags": [
+        "agents",
+        "devops",
+        "developer-productivity",
+        "developer-tools",
+        "ai-for-developers"
+      ],
+      "publishedAt": "2026-05-17T22:01:57.255Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
+      "title": "Migrating an EOL Linux Server to AWS in 8 Hours with Kiro",
+      "description": "What started as a favor to a friend became three decades of quiet mentorship — and when that friend's livelihood finally came under threat from a dying server, an AI agent and $20 worth of credits pulled off a migration that would have cost thousands in professional services.",
+      "url": "https://builder.aws.com/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DrxboIhiG2bR80C2zndwXNU6PL/Scre.webp",
+      "authorName": "Chris Miller",
+      "authorAlias": "ctodd",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "amazon-ec2",
+        "amazon-ses",
+        "amazon-rds",
+        "amazon-route53"
+      ],
+      "publishedAt": "2026-05-17T21:42:31.387Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DrNnY4Y62l0t7N4OTiCrtOVK63",
       "title": "Understanding AutoGrad in PyTorch and Its Role in WGAN",
@@ -38,8 +101,8 @@
         "amazon-bedrock-agentcore"
       ],
       "publishedAt": "2026-05-17T15:53:48.949Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3CRIXsIkG9WfVop3CEQvmvNgzkW",
@@ -69,7 +132,7 @@
       "description": "How to build a voice agent that observes your physical experience — not just what you say (12 min read, Part 1: Architecture)",
       "url": "https://builder.aws.com/content/3DIrS1Yh5GEGLbJQWTAFjv7c5l9",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr90XQXENBpufUYz72bH9qfTDK/them.webp",
-      "authorName": "Dror",
+      "authorName": "Dror Meiri",
       "authorAlias": "drorme",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DIm2IpKXExo0IdA79YGA4dQy5d.webp",
       "location": "IL",
@@ -123,7 +186,7 @@
         "amazon-api-gateway"
       ],
       "publishedAt": "2026-05-17T14:15:05.220Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -140,67 +203,7 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-05-17T14:09:53.850Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3DqjKnZDASy0DuTxUDqTbI2Rf1i",
-      "title": "Como Construí uma Rede Neural de Conhecimento no Notion Conectada a um Agente de IA com Strands Agents",
-      "description": "Como usei o Notion como base de conhecimento estruturada e conectei tudo a um agente de IA construído com o Strands Agents SDK da AWS, e o que aprendi ao longo desse processo como estudante de computação.",
-      "url": "https://builder.aws.com/content/3DqjKnZDASy0DuTxUDqTbI2Rf1i",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr0ZAzj3U0DNKpbDAod1xtNVZ7/IMG_.webp",
-      "authorName": "Gabriel Macedo",
-      "authorAlias": "gabrielmaced",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cjm5asFPzpSf0RDYxQlOWef5oA.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-17T13:35:44.482Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DqyuFBVbF4ue4jjr2yjsLEY09J",
-      "title": "5 motivos para começar a estudar Cloud agora (mesmo sem experiência)",
-      "description": "5 motivos para estudar Cloud e como isso impacta no seu futuro 🚀",
-      "url": "https://builder.aws.com/content/3DqyuFBVbF4ue4jjr2yjsLEY09J",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr0yEdTox98SyFuaFrdcdJbzXM/1000.webp",
-      "authorName": "Edna Cristina Durans Santos",
-      "authorAlias": "ednadurans",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs5wkw3wgPtYEQyIZ14xM2yhyj.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "aws-community-builders",
-        "aws-student-builders-groups",
-        "builder-id",
-        "all-builders-welcome"
-      ],
-      "publishedAt": "2026-05-17T13:26:34.155Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DqsCOUKfYHLt6kViIdWKBSdU8t",
-      "title": "Como automação em cloud está se conectando com a engenharia",
-      "description": "Uma análise prática de como conceitos de automação em cloud, explorados no AWS Builder Center, podem ser aplicados no contexto das engenharias.",
-      "url": "https://builder.aws.com/content/3DqsCOUKfYHLt6kViIdWKBSdU8t",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DqsJoorTH4qSAkrIBSlikDgGM4/bann.webp",
-      "authorName": "Alfeu Valente",
-      "authorAlias": "feuvalente",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUOO4gnjWZft1kSpTNj4EuO0Sq.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
-      "tags": [
-        "aws-cloudformation",
-        "engineering-practices"
-      ],
-      "publishedAt": "2026-05-17T12:28:19.119Z",
-      "likesCount": 6,
+      "likesCount": 4,
       "commentsCount": 2
     }
   ],
@@ -219,7 +222,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-05-12T16:57:46.805Z",
-      "likesCount": 43,
+      "likesCount": 44,
       "commentsCount": 169
     },
     {
@@ -238,26 +241,6 @@
       "publishedAt": "2026-05-13T15:06:02.605Z",
       "likesCount": 79,
       "commentsCount": 77
-    },
-    {
-      "id": "/content/3DqsCOUKfYHLt6kViIdWKBSdU8t",
-      "title": "Como automação em cloud está se conectando com a engenharia",
-      "description": "Uma análise prática de como conceitos de automação em cloud, explorados no AWS Builder Center, podem ser aplicados no contexto das engenharias.",
-      "url": "https://builder.aws.com/content/3DqsCOUKfYHLt6kViIdWKBSdU8t",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DqsJoorTH4qSAkrIBSlikDgGM4/bann.webp",
-      "authorName": "Alfeu Valente",
-      "authorAlias": "feuvalente",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUOO4gnjWZft1kSpTNj4EuO0Sq.webp",
-      "location": "PR, BR",
-      "lat": -24.4842187,
-      "lng": -51.8148872,
-      "tags": [
-        "aws-cloudformation",
-        "engineering-practices"
-      ],
-      "publishedAt": "2026-05-17T12:28:19.119Z",
-      "likesCount": 6,
-      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -302,38 +285,48 @@
       "commentsCount": 1929
     },
     {
-      "id": "/content/3Dr4RH7uI43VupS5T1Chlb57PS0",
-      "title": "Nuvem com AWS: Minha Experiência Aprendendo na Prática",
-      "description": "Falando um pouco de como tá sendo entrar nesse mundo da computação em nuvem junto da AWS, descobrindo ferramentas essenciais para diversas áreas não só dá tecnologia, mas sim do mundo.",
-      "url": "https://builder.aws.com/content/3Dr4RH7uI43VupS5T1Chlb57PS0",
-      "imageUrl": "",
-      "authorName": "Danilo Almeida",
-      "authorAlias": "daniloalmeidaz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5rLmnAeoCAUSr9k9Xq6UOU2ou.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-17T14:09:53.850Z",
+      "id": "/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
+      "title": "Migrating an EOL Linux Server to AWS in 8 Hours with Kiro",
+      "description": "What started as a favor to a friend became three decades of quiet mentorship — and when that friend's livelihood finally came under threat from a dying server, an AI agent and $20 worth of credits pulled off a migration that would have cost thousands in professional services.",
+      "url": "https://builder.aws.com/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DrxboIhiG2bR80C2zndwXNU6PL/Scre.webp",
+      "authorName": "Chris Miller",
+      "authorAlias": "ctodd",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "amazon-ec2",
+        "amazon-ses",
+        "amazon-rds",
+        "amazon-route53"
+      ],
+      "publishedAt": "2026-05-17T21:42:31.387Z",
       "likesCount": 3,
-      "commentsCount": 1
+      "commentsCount": 0
     },
     {
-      "id": "/content/3Dr3ne9hEYXV5GpI3Vcz8V5790C",
-      "title": "Como o AWS Builder Center pode acelerar sua evolução em cloud",
-      "description": "Neste artigo, compartilho minha experiência estudando cloud computing e como o AWS Builder Center contribuiu para acelerar meu aprendizado através de conteúdos práticos, labs, networking e troca de experiências com outros builders. Além da parte técnica, abordo como a comunidade ajuda a desenvolver uma visão mais estratégica sobre arquitetura, escalabilidade, custos e carreira em cloud.",
-      "url": "https://builder.aws.com/content/3Dr3ne9hEYXV5GpI3Vcz8V5790C",
-      "imageUrl": "",
-      "authorName": "Vinicius Rosa de Lima",
-      "authorAlias": "vinidev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpDQKTTLNfmMxXb9frMW42TAqz.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-17T14:33:44.450Z",
-      "likesCount": 4,
-      "commentsCount": 0
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2876,
+      "commentsCount": 324
     },
     {
       "id": "/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
@@ -358,46 +351,61 @@
       "commentsCount": 9
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
+      "id": "/content/3DqsCOUKfYHLt6kViIdWKBSdU8t",
+      "title": "Como automação em cloud está se conectando com a engenharia",
+      "description": "Uma análise prática de como conceitos de automação em cloud, explorados no AWS Builder Center, podem ser aplicados no contexto das engenharias.",
+      "url": "https://builder.aws.com/content/3DqsCOUKfYHLt6kViIdWKBSdU8t",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DqsJoorTH4qSAkrIBSlikDgGM4/bann.webp",
+      "authorName": "Alfeu Valente",
+      "authorAlias": "feuvalente",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUOO4gnjWZft1kSpTNj4EuO0Sq.webp",
+      "location": "PR, BR",
+      "lat": -24.4842187,
+      "lng": -51.8148872,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
+        "aws-cloudformation",
+        "engineering-practices"
       ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2876,
-      "commentsCount": 324
+      "publishedAt": "2026-05-17T12:28:19.119Z",
+      "likesCount": 6,
+      "commentsCount": 2
     },
     {
-      "id": "/content/3Dpj4na0SMv2qHD6SJEGBGQ834E",
-      "title": "Pensamento Computacional e como Alan Turing nos ajudou",
-      "description": "Uma reflexão sobre como o pensamento computacional vai além da tecnologia e está presente nas pequenas decisões do nosso dia a dia. A partir das ideias de Alan Turing e de experiências pessoais, o artigo explora como lógica, organização e resolução de problemas se conectam tanto à computação quanto à vida cotidiana.",
-      "url": "https://builder.aws.com/content/3Dpj4na0SMv2qHD6SJEGBGQ834E",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DpnQOuOQpAgcMXUp0UnTVT95zg/imag.webp",
-      "authorName": "Manuela Florença",
-      "authorAlias": "manuflorenca",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CAXejflygEeUZ4zd0pooQ3vJrA.webp",
+      "id": "/content/3DhKGH0bvuwSb9Nsru3bSyyDAWl",
+      "title": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 7]",
+      "description": "Machine Learning 20 Exam Questions - Domain 4 Monitoring, Maintenance, Security [part 7]",
+      "url": "https://builder.aws.com/content/3DhKGH0bvuwSb9Nsru3bSyyDAWl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DkY3Bdl9iGiHwcQ1EBt9OicFOj/AWS-.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "aws-certification",
+        "training-and-certification"
+      ],
+      "publishedAt": "2026-05-17T04:12:13.132Z",
+      "likesCount": 7,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3Dr4RH7uI43VupS5T1Chlb57PS0",
+      "title": "Nuvem com AWS: Minha Experiência Aprendendo na Prática",
+      "description": "Falando um pouco de como tá sendo entrar nesse mundo da computação em nuvem junto da AWS, descobrindo ferramentas essenciais para diversas áreas não só dá tecnologia, mas sim do mundo.",
+      "url": "https://builder.aws.com/content/3Dr4RH7uI43VupS5T1Chlb57PS0",
+      "imageUrl": "",
+      "authorName": "Danilo Almeida",
+      "authorAlias": "daniloalmeidaz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5rLmnAeoCAUSr9k9Xq6UOU2ou.webp",
       "location": "BR",
       "lat": -10.3333333,
       "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "compute"
-      ],
-      "publishedAt": "2026-05-17T03:19:55.067Z",
-      "likesCount": 5,
-      "commentsCount": 4
+      "tags": [],
+      "publishedAt": "2026-05-17T14:09:53.850Z",
+      "likesCount": 4,
+      "commentsCount": 2
     }
   ]
 }
