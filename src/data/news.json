@@ -1,6 +1,198 @@
 {
-  "updatedAt": "2026-05-18T18:40:11.505Z",
+  "updatedAt": "2026-05-19T00:49:07.715Z",
   "latest": [
+    {
+      "id": "/content/3Dv1nfwUceyKf73DfVcPRDJpU3M",
+      "title": "Software Design Foundation - Phase 1",
+      "description": "Understand what software design means and how HLD fits into real-world software development.",
+      "url": "https://builder.aws.com/content/3Dv1nfwUceyKf73DfVcPRDJpU3M",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dv6Ac6pb2iH16Jvu9UWS424XGw/Chat.webp",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "amazon-api-gateway",
+        "amazon-appsync",
+        "amazon-aurora",
+        "amazon-cloudwatch",
+        "amazon-cognito"
+      ],
+      "publishedAt": "2026-05-19T00:21:13.246Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dv1WETGWoenaPUFVL6zkDbtpex",
+      "title": "🚀 AWS + Claude AI = a new way to build faster with AI.",
+      "description": "AWS now offers access to the Claude Platform directly through AWS accounts, combining Anthropic’s AI capabilities with AWS security, IAM, billing, and monitoring. 🤖☁️",
+      "url": "https://builder.aws.com/content/3Dv1WETGWoenaPUFVL6zkDbtpex",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dv24O4MsKvnOUyZUo5TBywn0xm/Chat.webp",
+      "authorName": "Ricardo Vallejo Sánchez",
+      "authorAlias": "ricardovs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUbPfmeydVoF2HeYwOvdbVetn4.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "claude-code",
+        "aws-cloudformation",
+        "aws-codebuild"
+      ],
+      "publishedAt": "2026-05-18T23:47:51.587Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dut6nlEfdKdEOS7X8zX1lZvtPl",
+      "title": "How to Create Custom Images for Amazon SageMaker Studio and Unified Studio",
+      "description": "This post shows how to build a single Docker image with custom ML packages that works across both SageMaker Studio V2 and Unified Studio by using platform-specific AppImageConfigs to control the entrypoint. It walks through a PyTorch computer vision example end-to-end — from Dockerfile authoring and ECR push to SageMaker registration and domain attachment — with troubleshooting guidance for common pitfalls.",
+      "url": "https://builder.aws.com/content/3Dut6nlEfdKdEOS7X8zX1lZvtPl",
+      "imageUrl": "",
+      "authorName": "Ram Vittal",
+      "authorAlias": "rvvittal",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31YYWlW8c1Kkw1x3jiFmWgJwM5T.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-18T22:42:56.558Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DdoXUSj7uY427YKNdLVphNKRDq",
+      "title": "How Kiro was used to build Ministack",
+      "description": "A short story of how Ministack was born. ",
+      "url": "https://builder.aws.com/content/3DdoXUSj7uY427YKNdLVphNKRDq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuqR0zmqf15mqVXoBAf0sTNKlN/mini.webp",
+      "authorName": "Nahuel Alejandro Nucera",
+      "authorAlias": "nahuel990",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CdnyOO4Tjn0O86gmqjvZdONkYB.webp",
+      "location": "IE",
+      "lat": 52.865196,
+      "lng": -7.9794599,
+      "tags": [
+        "kiro",
+        "devops",
+        "development",
+        "developer-tools",
+        "testing"
+      ],
+      "publishedAt": "2026-05-18T22:23:01.878Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/2pb7Mzqgqj5SffLxl1mxZzn9XpL",
+      "title": "AWS AI League 2026: AWS Summit Sydney Qualifier",
+      "description": "A Recap of the AWS Summit Sydney Qualifier 2026",
+      "url": "https://builder.aws.com/content/2pb7Mzqgqj5SffLxl1mxZzn9XpL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dur9W58ZS0IqurUs78XU0rJ1Pa/bann.webp",
+      "authorName": "John Marshall",
+      "authorAlias": "johnnym",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BNDA0UK7TkPYE9nnNFoeRLCx91.webp",
+      "location": "WA, AU",
+      "lat": -25.2303005,
+      "lng": 121.0187246,
+      "tags": [
+        "ai",
+        "aws-ai-league",
+        "aws-deepracer",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-18T22:19:08.390Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dujid4QBzCvCrJKOfhf6O6kl5Y",
+      "title": "Hosting an MCP Server on AWS in 2026",
+      "description": "All the four Paths and How to Choose",
+      "url": "https://builder.aws.com/content/3Dujid4QBzCvCrJKOfhf6O6kl5Y",
+      "imageUrl": "",
+      "authorName": "Erick Mancz",
+      "authorAlias": "imancz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "aws-mcp-server",
+        "mcp",
+        "mcp-server",
+        "aws-knowledge-mcp",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-05-18T21:23:38.355Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DuTAXAY4CJ2svYXF3oc0hN0EQS",
+      "title": "Closed-Loop AI Delivery: Integrating Quick, Kiro, and Claude Code",
+      "description": "A best-practices guide for integrating Amazon Quick, Kiro, and Claude Code as a closed-loop delivery system. Covers the synergy model, team onboarding checklists, integration patterns (Research→Spec→Build, Context Injection, ADR Pipeline, Quality Gates), steering file templates, role-based workflow matrices, MCP extensibility, reusable Skills/commands, scheduled automation, and anti-patterns. Enables teams to eliminate context loss between tools and enforce conventions at scale.",
+      "url": "https://builder.aws.com/content/3DuTAXAY4CJ2svYXF3oc0hN0EQS",
+      "imageUrl": "",
+      "authorName": "Pavan",
+      "authorAlias": "pavanzdb",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ide",
+        "agentic-ai",
+        "amazon-quick-suite",
+        "ai-dlc",
+        "kiro"
+      ],
+      "publishedAt": "2026-05-18T20:42:10.698Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D3K6LixrgSpXz9ch5NtZe5tehW",
+      "title": "Cloud, IA e Tecnologia: por onde começar no AWS Skill Builder",
+      "description": "Se você está começando na área de tecnologia e quer aprender cloud computing, separei alguns cursos do AWS Skill Builder que podem ajudar bastante no início.",
+      "url": "https://builder.aws.com/content/3D3K6LixrgSpXz9ch5NtZe5tehW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Due4eHCZE4nZaZW83utAjzSFOq/1207.webp",
+      "authorName": "Deborah Viana",
+      "authorAlias": "deborahx",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpNX5DWAARP9NW8HMY0YtZYvkH.webp",
+      "location": "AM, BR",
+      "lat": -4.479925,
+      "lng": -63.5185396,
+      "tags": [
+        "ai",
+        "aws-skill-builder",
+        "all-builders-welcome",
+        "cloud-security",
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-18T20:31:14.158Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DuRmfbThcoy0NLZMv8uQiS2NS4",
+      "title": "O que fazer depois de terminar um curso (e por que isso importa mais do que o curso em si)",
+      "description": "Terminar um curso não significa estar pronto — e é exatamente depois dele que o aprendizado de verdade começa. Neste artigo, você vai entender como transformar conteúdo em prática, evitar um dos erros mais comuns de quem está começando em tecnologia e como ambientes como o AWS Builder Center podem acelerar esse processo através de prática, comunidade e projetos reais.",
+      "url": "https://builder.aws.com/content/3DuRmfbThcoy0NLZMv8uQiS2NS4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuSuxDJbpO1JTjMbMkMW1wxLd5/Chat.webp",
+      "authorName": "Emanuel Felipe",
+      "authorAlias": "omanuca",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mI61InnJZXvRG6rUjCgZQicB.webp",
+      "location": "RN, BR",
+      "lat": -5.6781175,
+      "lng": -36.4781776,
+      "tags": [],
+      "publishedAt": "2026-05-18T19:00:09.010Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DjxtMVFVmMC1a7BypGaQ30ZcvJ",
       "title": "The 4x4: Cloud Security (and Identity) Community Highlights",
@@ -20,215 +212,11 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-18T18:37:03.512Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DtdVZV2rBYxqYtyWHzuDq29KxD",
-      "title": "AWS Certified AI Practitioner: como iniciar sua jornada em Inteligência Artificial na AWS",
-      "description": "Conheça a certificação AWS Certified AI Practitioner e entenda como se preparar para dar os primeiros passos em Inteligência Artificial e Machine Learning na AWS.",
-      "url": "https://builder.aws.com/content/3DtdVZV2rBYxqYtyWHzuDq29KxD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuQExIc9FBfpkJcO6FBes0KDKJ/Desi.webp",
-      "authorName": "Guilherme Augusto Benfica da Costa",
-      "authorAlias": "guilhermebenfica",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DZwtETfYacPhsetuo2iUIW858X.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "aws-cloud-map",
-        "artificial-intelligence",
-        "generative-ai",
-        "aws-certification",
-        "cloud-networking"
-      ],
-      "publishedAt": "2026-05-18T18:36:44.688Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DuMYJDiSx6YswgncOuKnZFMfzv",
-      "title": "Replace AWS Access Keys and aws sso login with one YubiKey touch",
-      "description": "Vouch is an open-source credential broker that replaces long-lived AWS access keys - and the daily ritual of running aws sso login across every account - with short-lived, hardware-backed credentials. One tap on a FIDO2 key federates you into every AWS account in your Organization through AssumeRoleWithWebIdentity, and into SSH, GitHub, Docker, and EKS too. Phishing-resistant, attributable in CloudTrail, and built on the native AWS identity federation you already trust.",
-      "url": "https://builder.aws.com/content/3DuMYJDiSx6YswgncOuKnZFMfzv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuPTYjGvmrBPjVoWNRkQl4r2VB/aws-.webp",
-      "authorName": "Justin Plock",
-      "authorAlias": "jplock",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DOrD6WpUephTqy5Vwz02ukQXfI.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "security",
-        "security-identity",
-        "aws-iam-identity-center",
-        "iam"
-      ],
-      "publishedAt": "2026-05-18T18:32:36.816Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DuMZSDEE4ILdJJJeUHyWDFkmL2",
-      "title": "Construindo o Futuro na Nuvem: Minha Jornada de Aprendizado com o AWS Builder Center",
-      "description": " Neste artigo, compartilho minha experiência pessoal como estudante descobrindo o universo de Cloud Computing e Inteligência Artificial. Mostro os desafios iniciais, a importância de uma comunidade global e como o AWS Builder Center me ajudou a sair da teoria para a prática, construindo projetos reais para o meu portfólio.\n",
-      "url": "https://builder.aws.com/content/3DuMZSDEE4ILdJJJeUHyWDFkmL2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuO2sytDI4sdEStYiNfyJzsuyz/1_9j.webp",
-      "authorName": "Davi Marinho cordeiro",
-      "authorAlias": "davimarinho",
-      "authorAvatarUrl": "",
-      "location": "CE, BR",
-      "lat": -5.3264703,
-      "lng": -39.7156073,
-      "tags": [
-        "aws-builders",
-        "students",
-        "career",
-        "training"
-      ],
-      "publishedAt": "2026-05-18T18:20:44.641Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DuGU9X0Y4i8uqaEyh0ShoiElCO",
-      "title": "Building a Modular Bug Bounty Pipeline with Kiro Skills",
-      "description": "Modular AI pipeline for automated code security audits. 25+ skills, 5 phases, and open-source. found critical bugs in <35m. check out the kiro skills approach!",
-      "url": "https://builder.aws.com/content/3DuGU9X0Y4i8uqaEyh0ShoiElCO",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuMtn9lztYjRu3ulG2qsUTwU7Q/Scre.webp",
-      "authorName": "M. Habib",
-      "authorAlias": "bibib",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DuLPV1kY4Y9qV0jK55mUYJEp7o.webp",
-      "location": "ID",
-      "lat": -2.4833826,
-      "lng": 117.8902853,
-      "tags": [
-        "application-security",
-        "security-best-practices",
-        "ai-security"
-      ],
-      "publishedAt": "2026-05-18T17:41:50.209Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Du7oaMV4DBS0pgdOHNHs2BU4Yp",
-      "title": "Build Self-Correcting AI Agents with Strands Steering",
-      "description": "AI agents drift from instructions as conversations get longer. This post shows you how to build a self-correcting feedback loop using Strands Agents SDK steering hooks where a second model evaluates and corrects the first one's output before the user ever sees it.",
-      "url": "https://builder.aws.com/content/3Du7oaMV4DBS0pgdOHNHs2BU4Yp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuEg9XKelXGmK46DCRTek7LXNd/https.webp",
-      "authorName": "Morgan",
-      "authorAlias": "willismt",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DtoREQLnhwFQFClE7WQAPlvo0I.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-18T17:23:32.441Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
-      "title": "AWS Community Days: Where Builders Learn Together",
-      "description": "There's something different about an event where the speakers are your peers, the organizers are volunteers who do this out of passion, and the agenda was shaped by the community itself. That's exactly what AWS Community Days are, and they're happening in cities across every continent, every year.",
-      "url": "https://builder.aws.com/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuCzG2ylyjtELdFf9Elz6uYfyR/GNC0.webp",
-      "authorName": "Maria Encinar",
-      "authorAlias": "mariaencinar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeFXvCgByaB2SlVFIGnDG7RoSS.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "aws-community",
-        "aws-community-day",
-        "aws-user-groups"
-      ],
-      "publishedAt": "2026-05-18T17:13:19.914Z",
-      "likesCount": 4,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3DG5AhVuXBxmEFKQG99tHMC0nFi",
-      "title": "Securing Agentic AI on Amazon Bedrock AgentCore: Zero-Trust Private Networking and Identity Patterns",
-      "description": "Learn how to secure agentic AI applications on Amazon Bedrock AgentCore using VPC interface endpoints, VPC Lattice private egress, and AgentCore Identity's OAuth On-Behalf-Of token exchange. This guide covers network isolation, least-privilege access control, zero-trust identity, and observability: everything you need to deploy autonomous agents at enterprise scale.",
-      "url": "https://builder.aws.com/content/3DG5AhVuXBxmEFKQG99tHMC0nFi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuIeDlSJV3ouNE88bg5xXn6U3L/Gemi.webp",
-      "authorName": "w.saideni",
-      "authorAlias": "waelsaideni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/30SEw1L3lAv1j0GoNxsPOLeROU9.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-05-18T17:11:08.792Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DhkvQNWBoxlY4fRhd6flJPqpvT",
-      "title": "When Voice Agents Get a Screen: Building a Vocal and Visual Drive-Thru Experience",
-      "description": "We built a drive-thru app where customers order by voice while the agent controls what they see on screen in real-time. Here's how we combined Nova Sonic, Strands Agents, and a React frontend into a seamless vocal and visual experience.",
-      "url": "https://builder.aws.com/content/3DhkvQNWBoxlY4fRhd6flJPqpvT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DkfWakbrWppunHfF2zrazAmsdS/cove.webp",
-      "authorName": "Ahmed",
-      "authorAlias": "aelsenou",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zx0LOee01wELyB565Deoh6no9R.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-05-18T16:35:47.724Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DiJq5vQ2hnGq1ddBlCApT8uy6u",
-      "title": "Dynamic Looping Comes to AWS SAM",
-      "description": "AWS SAM CLI now supports CloudFormation Language Extensions, bringing Fn::ForEach, Fn::Length, Fn::ToJsonString, FindInMap with default values, and conditional deletion policies to your local development workflow. Define a resource once and generate as many as you need. Build, invoke, validate, package, deploy, and sync all work with language extensions out of the box. This post walks through each extension with working examples and shows how SAM CLI handles dynamic looping end-to-end.",
-      "url": "https://builder.aws.com/content/3DiJq5vQ2hnGq1ddBlCApT8uy6u",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DiKAtq3GrOUHLLDsLCf0f0SCnk/hero.webp",
-      "authorName": "Eric Johnson",
-      "authorAlias": "edjgeek",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362KKSJeuBDKWgSiptk3oJKDBze.webp",
-      "location": "CO, US",
-      "lat": 38.7251776,
-      "lng": -105.607716,
-      "tags": [
-        "aws-sam",
-        "serverless",
-        "aws-cloudformation",
-        "developer-tools",
-        "developer-productivity"
-      ],
-      "publishedAt": "2026-05-18T16:13:09.415Z",
-      "likesCount": 4,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 1
     }
   ],
   "trending": [
-    {
-      "id": "/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
-      "title": "AWS Community Days: Where Builders Learn Together",
-      "description": "There's something different about an event where the speakers are your peers, the organizers are volunteers who do this out of passion, and the agenda was shaped by the community itself. That's exactly what AWS Community Days are, and they're happening in cities across every continent, every year.",
-      "url": "https://builder.aws.com/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuCzG2ylyjtELdFf9Elz6uYfyR/GNC0.webp",
-      "authorName": "Maria Encinar",
-      "authorAlias": "mariaencinar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeFXvCgByaB2SlVFIGnDG7RoSS.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
-      "tags": [
-        "aws-community",
-        "aws-community-day",
-        "aws-user-groups"
-      ],
-      "publishedAt": "2026-05-18T17:13:19.914Z",
-      "likesCount": 4,
-      "commentsCount": 3
-    },
     {
       "id": "/content/3Dd4T4x0IcL39ykwc3ydBr7bnnN",
       "title": "AWS Summit Sydney Attendee Exclusive: Builder Question of the Day",
@@ -245,6 +233,27 @@
       "publishedAt": "2026-05-12T16:57:46.805Z",
       "likesCount": 45,
       "commentsCount": 169
+    },
+    {
+      "id": "/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
+      "title": "AWS Community Days: Where Builders Learn Together",
+      "description": "There's something different about an event where the speakers are your peers, the organizers are volunteers who do this out of passion, and the agenda was shaped by the community itself. That's exactly what AWS Community Days are, and they're happening in cities across every continent, every year.",
+      "url": "https://builder.aws.com/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuCzG2ylyjtELdFf9Elz6uYfyR/GNC0.webp",
+      "authorName": "Maria Encinar",
+      "authorAlias": "mariaencinar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeFXvCgByaB2SlVFIGnDG7RoSS.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "aws-community",
+        "aws-community-day",
+        "aws-user-groups"
+      ],
+      "publishedAt": "2026-05-18T17:13:19.914Z",
+      "likesCount": 7,
+      "commentsCount": 5
     },
     {
       "id": "/content/3DenVrz4NSpTsJVg6wbx2hxeMRo",
@@ -264,52 +273,6 @@
       "commentsCount": 77
     },
     {
-      "id": "/content/3DiJq5vQ2hnGq1ddBlCApT8uy6u",
-      "title": "Dynamic Looping Comes to AWS SAM",
-      "description": "AWS SAM CLI now supports CloudFormation Language Extensions, bringing Fn::ForEach, Fn::Length, Fn::ToJsonString, FindInMap with default values, and conditional deletion policies to your local development workflow. Define a resource once and generate as many as you need. Build, invoke, validate, package, deploy, and sync all work with language extensions out of the box. This post walks through each extension with working examples and shows how SAM CLI handles dynamic looping end-to-end.",
-      "url": "https://builder.aws.com/content/3DiJq5vQ2hnGq1ddBlCApT8uy6u",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DiKAtq3GrOUHLLDsLCf0f0SCnk/hero.webp",
-      "authorName": "Eric Johnson",
-      "authorAlias": "edjgeek",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362KKSJeuBDKWgSiptk3oJKDBze.webp",
-      "location": "CO, US",
-      "lat": 38.7251776,
-      "lng": -105.607716,
-      "tags": [
-        "aws-sam",
-        "serverless",
-        "aws-cloudformation",
-        "developer-tools",
-        "developer-productivity"
-      ],
-      "publishedAt": "2026-05-18T16:13:09.415Z",
-      "likesCount": 4,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DtdVZV2rBYxqYtyWHzuDq29KxD",
-      "title": "AWS Certified AI Practitioner: como iniciar sua jornada em Inteligência Artificial na AWS",
-      "description": "Conheça a certificação AWS Certified AI Practitioner e entenda como se preparar para dar os primeiros passos em Inteligência Artificial e Machine Learning na AWS.",
-      "url": "https://builder.aws.com/content/3DtdVZV2rBYxqYtyWHzuDq29KxD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuQExIc9FBfpkJcO6FBes0KDKJ/Desi.webp",
-      "authorName": "Guilherme Augusto Benfica da Costa",
-      "authorAlias": "guilhermebenfica",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DZwtETfYacPhsetuo2iUIW858X.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "aws-cloud-map",
-        "artificial-intelligence",
-        "generative-ai",
-        "aws-certification",
-        "cloud-networking"
-      ],
-      "publishedAt": "2026-05-18T18:36:44.688Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
       "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
       "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
@@ -327,7 +290,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3574,
+      "likesCount": 3575,
       "commentsCount": 333
     },
     {
@@ -373,6 +336,51 @@
       "commentsCount": 324
     },
     {
+      "id": "/content/3DiJq5vQ2hnGq1ddBlCApT8uy6u",
+      "title": "Dynamic Looping Comes to AWS SAM",
+      "description": "AWS SAM CLI now supports CloudFormation Language Extensions, bringing Fn::ForEach, Fn::Length, Fn::ToJsonString, FindInMap with default values, and conditional deletion policies to your local development workflow. Define a resource once and generate as many as you need. Build, invoke, validate, package, deploy, and sync all work with language extensions out of the box. This post walks through each extension with working examples and shows how SAM CLI handles dynamic looping end-to-end.",
+      "url": "https://builder.aws.com/content/3DiJq5vQ2hnGq1ddBlCApT8uy6u",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DiKAtq3GrOUHLLDsLCf0f0SCnk/hero.webp",
+      "authorName": "Eric Johnson",
+      "authorAlias": "edjgeek",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362KKSJeuBDKWgSiptk3oJKDBze.webp",
+      "location": "CO, US",
+      "lat": 38.7251776,
+      "lng": -105.607716,
+      "tags": [
+        "aws-sam",
+        "serverless",
+        "aws-cloudformation",
+        "developer-tools",
+        "developer-productivity"
+      ],
+      "publishedAt": "2026-05-18T16:13:09.415Z",
+      "likesCount": 5,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DjxtMVFVmMC1a7BypGaQ30ZcvJ",
+      "title": "The 4x4: Cloud Security (and Identity) Community Highlights",
+      "description": "4 community picks and 4 AWS picks on Security and Identity",
+      "url": "https://builder.aws.com/content/3DjxtMVFVmMC1a7BypGaQ30ZcvJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuNBPUddwkOabGQxThmmWowkd5/Scre.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "aws-community-builders",
+        "security",
+        "identity",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-18T18:37:03.512Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3DrwRkoYtd7StDyVvIOg0ECKXmR",
       "title": "Migrating an EOL Linux Server to AWS in 8 Hours with Kiro",
       "description": "What started as a favor to a friend became three decades of quiet mentorship — and when that friend's livelihood finally came under threat from a dying server, an AI agent and $20 worth of credits pulled off a migration that would have cost thousands in professional services.",
@@ -396,21 +404,26 @@
       "commentsCount": 3
     },
     {
-      "id": "/content/3Du7oaMV4DBS0pgdOHNHs2BU4Yp",
-      "title": "Build Self-Correcting AI Agents with Strands Steering",
-      "description": "AI agents drift from instructions as conversations get longer. This post shows you how to build a self-correcting feedback loop using Strands Agents SDK steering hooks where a second model evaluates and corrects the first one's output before the user ever sees it.",
-      "url": "https://builder.aws.com/content/3Du7oaMV4DBS0pgdOHNHs2BU4Yp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuEg9XKelXGmK46DCRTek7LXNd/https.webp",
-      "authorName": "Morgan",
-      "authorAlias": "willismt",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DtoREQLnhwFQFClE7WQAPlvo0I.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-18T17:23:32.441Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "id": "/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
+      "title": "Celebrating Graduating AWS Student Builder Group Leaders 🎓",
+      "description": "On May 12, 2026, we honored nearly 200 graduating AWS Student Builder Group Leaders who spent 12+ months founding, growing, and leading cloud communities on campuses around the world.",
+      "url": "https://builder.aws.com/content/3DmDzePTTuyS8DY5vEBf5lSki5E",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DmLuvw1Lwjw7bHWjH4VT2taYG3/bran.webp",
+      "authorName": "Nayoung Miller Won",
+      "authorAlias": "nwon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31WME6Rd00dIikddfGREvatiZyy.webp",
+      "location": "WA, US",
+      "lat": 47.2868352,
+      "lng": -120.212613,
+      "tags": [
+        "aws-student-builders-groups",
+        "students",
+        "student-builders",
+        "aws-cloud-clubs"
+      ],
+      "publishedAt": "2026-05-15T22:02:57.255Z",
+      "likesCount": 25,
+      "commentsCount": 10
     }
   ]
 }
