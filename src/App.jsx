@@ -382,14 +382,7 @@ export default function App() {
                   color: darkMode ? '#DCE7F0' : '#17324B',
                 }}
               >
-                <img
-                  src="/kiro-ambassador-icon.svg"
-                  alt="Kiro Ambassador"
-                  className="mb-5 h-24 w-24 rounded-[1.65rem]"
-                  style={{
-                    boxShadow: darkMode ? '0 18px 46px rgba(0, 0, 0, 0.35)' : '0 18px 42px rgba(80, 92, 180, 0.24)',
-                  }}
-                />
+                <div className="kiro-buddy-sprite mb-4" role="img" aria-label="Kiro Ambassador working" />
                 <h1 className="text-2xl font-bold" style={{ color: darkMode ? '#FFFFFF' : '#0F1923' }}>
                   Kiro Ambassador
                 </h1>

@@ -178,3 +178,19 @@ body {
     transform: translate3d(22vw, -22vh, 0) scale(0.9);
   }
 }
+
+.kiro-buddy-sprite {
+  width: 180px;
+  height: 170px;
+  background-image: url('/kiro_buddy_sprite_sheet_enhanced.png');
+  background-repeat: no-repeat;
+  background-size: 2508px 2508px;
+  background-position: -215px -220px;
+  animation: kiro-buddy-working 1.15s steps(11, end) infinite;
+  filter: drop-shadow(0 18px 34px rgba(80, 58, 150, 0.32));
+}
+
+@keyframes kiro-buddy-working {
+  from { background-position: -215px -220px; }
+  to   { background-position: -2327px -220px; }
+}
