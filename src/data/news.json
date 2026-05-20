@@ -1,6 +1,110 @@
 {
-  "updatedAt": "2026-05-20T07:18:42.815Z",
+  "updatedAt": "2026-05-20T12:57:16.201Z",
   "latest": [
+    {
+      "id": "/content/3DzBer654J91meEkM59TNWw8WQY",
+      "title": "From Idea to Production: Setting Up an AI Development Pipeline on AWS",
+      "description": "Learn how to build scalable AI pipelines on AWS—from data preparation and SageMaker model training to CI/CD automation, deployment, monitoring, and responsible AI governance.",
+      "url": "https://builder.aws.com/content/3DzBer654J91meEkM59TNWw8WQY",
+      "imageUrl": "",
+      "authorName": "Kevin Walker",
+      "authorAlias": "kevinwalker",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38dv0U3cLAUrykIlKOm40L5TWax.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-20T12:54:34.834Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DzLCKyErx3l6xxMaTtF2BmjBY3",
+      "title": "O que me chamou atenção na infraestrutura cloud do Nubank.",
+      "description": "Reflexão da importância de aplicações da AWS na infraestrutura cloud do Nubank.",
+      "url": "https://builder.aws.com/content/3DzLCKyErx3l6xxMaTtF2BmjBY3",
+      "imageUrl": "",
+      "authorName": "Juliana Freire de Oliveira",
+      "authorAlias": "julianaintech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "student-builders",
+        "visual-studio",
+        "amazon-sagemaker-studio",
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-05-20T12:25:18.079Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DzH0HV2R3nzMvtEjX6Gvd6fith",
+      "title": "ETL Process Optimization: How We Went From Hours to Minutes",
+      "description": "From hours to minutes, here’s the step-by-step ETL process optimization that fixed our pipeline, reduced bottlenecks, and saved our team valuable time.",
+      "url": "https://builder.aws.com/content/3DzH0HV2R3nzMvtEjX6Gvd6fith",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzK0aHIGneji9fbUA9oZuqeod0/etl-.webp",
+      "authorName": "Kevin Anderson",
+      "authorAlias": "andersonkevin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bpy5IqFhxpGI0KdELekpzHT4aN.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "etl",
+        "pipeline",
+        "optimization"
+      ],
+      "publishedAt": "2026-05-20T12:06:26.992Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DyRARYpr0zN8WwgqT3HILtEA0j",
+      "title": "Software Design Foundation - Phase 2",
+      "description": "This article contains an explanation of Requirement analysis, Functional requirements,\nNon-functional requirements. ",
+      "url": "https://builder.aws.com/content/3DyRARYpr0zN8WwgqT3HILtEA0j",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DypHyM0DRVxSttHnjWWCOqdjUm/Chat.webp",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "architecture",
+        "architecture-patterns",
+        "distributed-systems"
+      ],
+      "publishedAt": "2026-05-20T08:02:10.270Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DyffnOugloq2qj90slHQUKlx8o",
+      "title": "Build a Declarative Medallion Architecture on AWS with Glue Data Catalog Materialized Views",
+      "description": "This post describes building a Declarative Medallion Architecture on AWS Analytics services such as Sagemaker Unified Studio, S3 Tables, Athena Spark and the latest Glue Data Catalog Materialized Views. ",
+      "url": "https://builder.aws.com/content/3DyffnOugloq2qj90slHQUKlx8o",
+      "imageUrl": "",
+      "authorName": "Gaurav Sharma",
+      "authorAlias": "gsharma",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "data-analytics",
+        "big-data",
+        "data-engineering",
+        "data-lakes"
+      ],
+      "publishedAt": "2026-05-20T07:22:17.065Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DyYsJnmTQaAqSNpRaeQdiLyOsE",
       "title": "AI Terms, Simply Explained: Notes from My Learning Journey",
@@ -138,8 +242,8 @@
       "lng": 127.6961188,
       "tags": [],
       "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 15,
-      "commentsCount": 669
+      "likesCount": 17,
+      "commentsCount": 741
     },
     {
       "id": "/content/3Dxkq6UKEhbGP5x5clHzwZXE09z",
@@ -270,125 +374,6 @@
       "publishedAt": "2026-05-19T22:02:29.142Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DxbI1xTqdZtMgMGmkS3ZEUj1uR",
-      "title": "Multi-Cloud DR Infrastructure in Minutes: A Kiro Walkthrough for DevOps Engineers",
-      "description": "4 prompts. 6 minutes. 3 cloud providers. 16 files. I went from zero to multi-cloud Kubernetes infrastructure in a single Kiro session — and it was absolutely wild how well it carried context forward!",
-      "url": "https://builder.aws.com/content/3DxbI1xTqdZtMgMGmkS3ZEUj1uR",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DxcKrPxMBsIn4gOcRUSDO8HBOZ/crea.webp",
-      "authorName": "Sandeep Nalam",
-      "authorAlias": "sandynal",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "kiro",
-        "kiro-agent",
-        "devops",
-        "terraform",
-        "IaC"
-      ],
-      "publishedAt": "2026-05-19T21:57:00.816Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3B52zVM2qDhtHofSUv7W61ryhAN",
-      "title": "Good Things Happen When the Community Comes Together",
-      "description": "Reflections from the 2026 North America Developer Community Spring Tour",
-      "url": "https://builder.aws.com/content/3B52zVM2qDhtHofSUv7W61ryhAN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DxHmgrHp3qRkx60K3PomPEYsUH/IMG_.webp",
-      "authorName": "Bell, Demario",
-      "authorAlias": "belldde",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33A0oLkNogRUB01YG8eLBqWl3RI.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-community",
-        "aws-user-groups",
-        "aws-student-builders-groups",
-        "aws-heroes",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-05-19T20:11:17.479Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DxKaBnq5RmQuA8Z6EUyop8PR9v",
-      "title": "AWS Summit Amsterdam 2026 Student Voucher Giveaway",
-      "description": "Terms and Conditions – AWS Summit Amsterdam Technical Trivia\nSweepstakes\n",
-      "url": "https://builder.aws.com/content/3DxKaBnq5RmQuA8Z6EUyop8PR9v",
-      "imageUrl": "",
-      "authorName": "Deontae Murphy",
-      "authorAlias": "deontaemurphy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-05-19T19:33:41.421Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DxI7PoUOJssvLxkVgRFN6nBJvm",
-      "title": "Prompt Engineering as Code for AWS Bedrock",
-      "description": "Transition to reliable LLMOps. Discover how to version-control AI prompts, automate AWS Bedrock deployments, and prevent regressions with LLM-as-a-Judge",
-      "url": "https://builder.aws.com/content/3DxI7PoUOJssvLxkVgRFN6nBJvm",
-      "imageUrl": "",
-      "authorName": "Afif Akbar Iskandar",
-      "authorAlias": "afifai",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2diL9lNRwMZKAppB4OCHhHcplxF.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai",
-        "amazon-bedrock",
-        "ci-cd",
-        "llm"
-      ],
-      "publishedAt": "2026-05-19T19:07:52.024Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DxFgzmBtH57ZnmAfj3C3dHTJtD",
-      "title": "Why AI agents need a different kind of resilience",
-      "description": "AI agents fail differently than traditional software — not with stack traces, but with plausible-looking wrong answers, runaway tool loops, and quality regressions that surface days later. This article walks through eight architectural layers for production agentic workloads on Amazon Bedrock AgentCore: account isolation, stateless tool design, timeout budgets, cross-region inference, PrivateLink coverage, layered guardrails, per-invocation observability, and eval-gated CI/CD",
-      "url": "https://builder.aws.com/content/3DxFgzmBtH57ZnmAfj3C3dHTJtD",
-      "imageUrl": "",
-      "authorName": "Denis Demichev",
-      "authorAlias": "demichev",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-19T18:41:40.834Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/35U5qO4VsJSRcO2qIWmlqonhxhD",
-      "title": "How to Extract Agent-Ready Specs from AWS DevOps Agent and Make Them Available for Kiro",
-      "description": "Automate the extraction of agent-ready specs generated by AWS DevOps Agent using EventBridge and Lambda, storing them in S3 so developers can consume them from Kiro CLI and apply fixes with AI assistance.",
-      "url": "https://builder.aws.com/content/35U5qO4VsJSRcO2qIWmlqonhxhD",
-      "imageUrl": "",
-      "authorName": "Heriberto",
-      "authorAlias": "hmzuleta",
-      "authorAvatarUrl": "",
-      "location": "CO",
-      "lat": 4.099917,
-      "lng": -72.9088133,
-      "tags": [],
-      "publishedAt": "2026-05-19T18:34:27.864Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -406,8 +391,29 @@
       "lng": 127.6961188,
       "tags": [],
       "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 15,
-      "commentsCount": 669
+      "likesCount": 17,
+      "commentsCount": 741
+    },
+    {
+      "id": "/content/3DzH0HV2R3nzMvtEjX6Gvd6fith",
+      "title": "ETL Process Optimization: How We Went From Hours to Minutes",
+      "description": "From hours to minutes, here’s the step-by-step ETL process optimization that fixed our pipeline, reduced bottlenecks, and saved our team valuable time.",
+      "url": "https://builder.aws.com/content/3DzH0HV2R3nzMvtEjX6Gvd6fith",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzK0aHIGneji9fbUA9oZuqeod0/etl-.webp",
+      "authorName": "Kevin Anderson",
+      "authorAlias": "andersonkevin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bpy5IqFhxpGI0KdELekpzHT4aN.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "etl",
+        "pipeline",
+        "optimization"
+      ],
+      "publishedAt": "2026-05-20T12:06:26.992Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/3DwmczRvQ5ixlgoThRI6x9maFB2",
@@ -429,28 +435,30 @@
       ],
       "publishedAt": "2026-05-19T15:02:45.470Z",
       "likesCount": 17,
-      "commentsCount": 5
+      "commentsCount": 6
     },
     {
-      "id": "/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
-      "title": "AWS Community Days: Where Builders Learn Together",
-      "description": "There's something different about an event where the speakers are your peers, the organizers are volunteers who do this out of passion, and the agenda was shaped by the community itself. That's exactly what AWS Community Days are, and they're happening in cities across every continent, every year.",
-      "url": "https://builder.aws.com/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuCzG2ylyjtELdFf9Elz6uYfyR/GNC0.webp",
-      "authorName": "Maria Encinar",
-      "authorAlias": "mariaencinar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeFXvCgByaB2SlVFIGnDG7RoSS.webp",
-      "location": "ES",
-      "lat": 39.3260685,
-      "lng": -4.8379791,
+      "id": "/content/3DzLCKyErx3l6xxMaTtF2BmjBY3",
+      "title": "O que me chamou atenção na infraestrutura cloud do Nubank.",
+      "description": "Reflexão da importância de aplicações da AWS na infraestrutura cloud do Nubank.",
+      "url": "https://builder.aws.com/content/3DzLCKyErx3l6xxMaTtF2BmjBY3",
+      "imageUrl": "",
+      "authorName": "Juliana Freire de Oliveira",
+      "authorAlias": "julianaintech",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
       "tags": [
-        "aws-community",
-        "aws-community-day",
-        "aws-user-groups"
+        "students",
+        "student-builders",
+        "visual-studio",
+        "amazon-sagemaker-studio",
+        "amazon-ec2"
       ],
-      "publishedAt": "2026-05-18T17:13:19.914Z",
-      "likesCount": 19,
-      "commentsCount": 12
+      "publishedAt": "2026-05-20T12:25:18.079Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -495,24 +503,25 @@
       "commentsCount": 1929
     },
     {
-      "id": "/content/3DtpQscvYSX7VZ8Fdyr7PJofIhz",
-      "title": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 3]",
-      "description": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 3]",
-      "url": "https://builder.aws.com/content/3DtpQscvYSX7VZ8Fdyr7PJofIhz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dy8PZjxC6CXqOdx3t9zbmMvEg2/og-h.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
+      "id": "/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
+      "title": "AWS Community Days: Where Builders Learn Together",
+      "description": "There's something different about an event where the speakers are your peers, the organizers are volunteers who do this out of passion, and the agenda was shaped by the community itself. That's exactly what AWS Community Days are, and they're happening in cities across every continent, every year.",
+      "url": "https://builder.aws.com/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DuCzG2ylyjtELdFf9Elz6uYfyR/GNC0.webp",
+      "authorName": "Maria Encinar",
+      "authorAlias": "mariaencinar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeFXvCgByaB2SlVFIGnDG7RoSS.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
       "tags": [
-        "training-and-certification",
-        "aws-certification"
+        "aws-community",
+        "aws-community-day",
+        "aws-user-groups"
       ],
-      "publishedAt": "2026-05-20T02:09:04.569Z",
-      "likesCount": 2,
-      "commentsCount": 2
+      "publishedAt": "2026-05-18T17:13:19.914Z",
+      "likesCount": 19,
+      "commentsCount": 12
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -534,27 +543,6 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2879,
       "commentsCount": 324
-    },
-    {
-      "id": "/content/3Dwwb2kH3rkrOom8Qj8fyENVXPn",
-      "title": "Qual trilha da nuvem é pra você? Os principais caminhos para quem quer trabalhar com AWS",
-      "description": "A nuvem não tem um único caminho, tem vários. Neste artigo você descobre as principais trilhas de carreira na AWS, o que cada uma faz na prática e por onde começar em cada uma delas.",
-      "url": "https://builder.aws.com/content/3Dwwb2kH3rkrOom8Qj8fyENVXPn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dx0HgPigUSLDx9HXgJmgHx1Mwm/Chat.webp",
-      "authorName": "Maria Eduarda",
-      "authorAlias": "cloudmadu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8GruDZpqspZ5fii1irvazGHZq.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
-      "tags": [
-        "ai",
-        "students",
-        "roadmap"
-      ],
-      "publishedAt": "2026-05-19T16:33:46.478Z",
-      "likesCount": 7,
-      "commentsCount": 2
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -580,27 +568,25 @@
       "commentsCount": 275
     },
     {
-      "id": "/content/3DlndPKEzyHp05T8T6tZZnl7F5f",
-      "title": "Why does AI lie? Hallucinations explained simply",
-      "description": "Explains what AI hallucinations are with demos.",
-      "url": "https://builder.aws.com/content/3DlndPKEzyHp05T8T6tZZnl7F5f",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DwmMk7pLVksfP0TcqwUKLywjQL/Epis.webp",
-      "authorName": "Rohini Gaonkar",
-      "authorAlias": "rohinigaonkar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z5Kk4rOHmIm54J4SIu8tSwIyI1.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
+      "id": "/content/3Dwwb2kH3rkrOom8Qj8fyENVXPn",
+      "title": "Qual trilha da nuvem é pra você? Os principais caminhos para quem quer trabalhar com AWS",
+      "description": "A nuvem não tem um único caminho, tem vários. Neste artigo você descobre as principais trilhas de carreira na AWS, o que cada uma faz na prática e por onde começar em cada uma delas.",
+      "url": "https://builder.aws.com/content/3Dwwb2kH3rkrOom8Qj8fyENVXPn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dx0HgPigUSLDx9HXgJmgHx1Mwm/Chat.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8GruDZpqspZ5fii1irvazGHZq.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
       "tags": [
         "ai",
-        "tutorials",
-        "beginner-projects",
-        "amazon-bedrock",
-        "claude"
+        "students",
+        "roadmap"
       ],
-      "publishedAt": "2026-05-19T15:08:07.216Z",
-      "likesCount": 8,
-      "commentsCount": 0
+      "publishedAt": "2026-05-19T16:33:46.478Z",
+      "likesCount": 7,
+      "commentsCount": 2
     }
   ]
 }
