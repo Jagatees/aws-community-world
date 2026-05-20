@@ -1,6 +1,150 @@
 {
-  "updatedAt": "2026-05-20T12:57:16.201Z",
+  "updatedAt": "2026-05-20T18:51:33.817Z",
   "latest": [
+    {
+      "id": "/content/3AtkgtR3wgUU17aHllAYHYhdyi1",
+      "title": "The Dual Write Pattern: Will it work for Migrating Relational Databases to NoSQL?",
+      "description": "What is the Dual Write database migration strategy, and how well does it work? Can we use it to migrate a relational SQL database into Amazon DynamoDB?",
+      "url": "https://builder.aws.com/content/3AtkgtR3wgUU17aHllAYHYhdyi1",
+      "imageUrl": "",
+      "authorName": "Robert",
+      "authorAlias": "mccdb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39s5Lhsfz6mZxLTIWGqyiuL08UR.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "nosql",
+        "databases",
+        "sql",
+        "migration",
+        "cloud-migration"
+      ],
+      "publishedAt": "2026-05-20T17:06:32.926Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DzkqoBg14bnFzbYBR9WhUNrmpW",
+      "title": "The Storage Problem Nobody Told Public Sector About: Why AI/ML Training Fails Before the Model Does",
+      "description": "Public sector organizations are adopting AI/ML but hitting a wall most never anticipated: storage infrastructure that cannot keep pace with GPU compute. Learn why the I/O bottleneck matters more than model selection for government and education workloads, and how to architect a storage strategy that makes training infrastructure sustainable at scale.",
+      "url": "https://builder.aws.com/content/3DzkqoBg14bnFzbYBR9WhUNrmpW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzlffTYpjdZcjMS64usOMZZGkJ/unna.webp",
+      "authorName": "Sarah Smith-Barry",
+      "authorAlias": "sfsmith",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2nSGKUa72wtm8oMavMId1Dv4U.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "machine-learning",
+        "storage",
+        "amazon-s3",
+        "amazon-fsx-lustre"
+      ],
+      "publishedAt": "2026-05-20T16:04:02.110Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DuNqVDx7jW0xPTXQyiqFUmpSHU",
+      "title": "AWS Summit Japan AI-DLCハッカソン書類審査結果",
+      "description": "AWS Summit Japan 2026 AI-DLCハッカソンの書類審査を実施しました。「人をダメにするサービス」という挑戦的なテーマに対して、想定を超える117チームからエントリーがありました。審査員全員がAIを使わない縛りで、創造性・ビジネス意図・Unit分解・ドキュメント品質の4観点から全チームを人間の目で評価し、15チームが書類選考を通過しました。5/30の予選会を経て上位5チームがAWS Summit Japan 2026決勝（幕張メッセ）へ進出します。",
+      "url": "https://builder.aws.com/content/3DuNqVDx7jW0xPTXQyiqFUmpSHU",
+      "imageUrl": "",
+      "authorName": "Satsuki",
+      "authorAlias": "fsatsuki73562",
+      "authorAvatarUrl": "",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "ai-dlc"
+      ],
+      "publishedAt": "2026-05-20T14:52:27.425Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DzXSXlCztaCPBIjnLgleGKOrx5",
+      "title": "Como Armazenar Credenciais de MCP Usando macOS Keychain",
+      "description": "Combine a criptografia do macOS Keychain com variáveis de ambiente do shell para fornecer segredos aos servidores MCP do Kiro CLI em tempo de execução",
+      "url": "https://builder.aws.com/content/3DzXSXlCztaCPBIjnLgleGKOrx5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzYBHOFqYp6kLwrxZ0o8uiLcbI/Chat.webp",
+      "authorName": "Carlos Biagolini",
+      "authorAlias": "cbiagolini",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "kiro",
+        "security",
+        "developer-tools",
+        "tools",
+        "kiro-agent"
+      ],
+      "publishedAt": "2026-05-20T14:33:24.338Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3Dl1Wn3e0w5QmxCKlr4ZTnvdNRL",
+      "title": "How non-tech Students Can Use AWS to Build Smart Real-World Projects",
+      "description": "Bridging Electronics, IoT, AI, and Cloud Computing Using AWS",
+      "url": "https://builder.aws.com/content/3Dl1Wn3e0w5QmxCKlr4ZTnvdNRL",
+      "imageUrl": "",
+      "authorName": "Thanu Gowda",
+      "authorAlias": "thanushree12",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-20T14:14:04.629Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DzTdXZi06bcaonOJRqGhrTh6qV",
+      "title": "Getting Started with AWS Services: Build, Learn, and Scale in the Cloud",
+      "description": "Discover the most useful AWS services for students and beginners, and learn how to use them to build websites, host apps, store data, and explore cloud computing with hands-on projects.",
+      "url": "https://builder.aws.com/content/3DzTdXZi06bcaonOJRqGhrTh6qV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzUBPSjGYriBX9kc4UzpXuoEsw/gett.webp",
+      "authorName": "Aryan Vijaykar",
+      "authorAlias": "aryanvijaykar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2LkVcVAtIJ93HLtFBvLv9KL5R.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "ai",
+        "ai-engineering",
+        "students",
+        "aws-student-builders-groups",
+        "student-builders"
+      ],
+      "publishedAt": "2026-05-20T13:39:15.207Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DzQAal1JcYBxZPsjcQlt2pZub8",
+      "title": "Test article",
+      "description": "Test",
+      "url": "https://builder.aws.com/content/3DzQAal1JcYBxZPsjcQlt2pZub8",
+      "imageUrl": "",
+      "authorName": "Usha [C]",
+      "authorAlias": "gautayus",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-20T13:05:20.987Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3DzBer654J91meEkM59TNWw8WQY",
       "title": "From Idea to Production: Setting Up an AI Development Pipeline on AWS",
@@ -61,319 +205,6 @@
       "publishedAt": "2026-05-20T12:06:26.992Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3DyRARYpr0zN8WwgqT3HILtEA0j",
-      "title": "Software Design Foundation - Phase 2",
-      "description": "This article contains an explanation of Requirement analysis, Functional requirements,\nNon-functional requirements. ",
-      "url": "https://builder.aws.com/content/3DyRARYpr0zN8WwgqT3HILtEA0j",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DypHyM0DRVxSttHnjWWCOqdjUm/Chat.webp",
-      "authorName": "Gokul S",
-      "authorAlias": "gokul06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "architecture",
-        "architecture-patterns",
-        "distributed-systems"
-      ],
-      "publishedAt": "2026-05-20T08:02:10.270Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DyffnOugloq2qj90slHQUKlx8o",
-      "title": "Build a Declarative Medallion Architecture on AWS with Glue Data Catalog Materialized Views",
-      "description": "This post describes building a Declarative Medallion Architecture on AWS Analytics services such as Sagemaker Unified Studio, S3 Tables, Athena Spark and the latest Glue Data Catalog Materialized Views. ",
-      "url": "https://builder.aws.com/content/3DyffnOugloq2qj90slHQUKlx8o",
-      "imageUrl": "",
-      "authorName": "Gaurav Sharma",
-      "authorAlias": "gsharma",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "data-analytics",
-        "big-data",
-        "data-engineering",
-        "data-lakes"
-      ],
-      "publishedAt": "2026-05-20T07:22:17.065Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DyYsJnmTQaAqSNpRaeQdiLyOsE",
-      "title": "AI Terms, Simply Explained: Notes from My Learning Journey",
-      "description": "Shared a simple write-up on common AI and GenAI terms based on my recent learning.",
-      "url": "https://builder.aws.com/content/3DyYsJnmTQaAqSNpRaeQdiLyOsE",
-      "imageUrl": "",
-      "authorName": "Sandeep Sangu",
-      "authorAlias": "sandeepsangu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2upqipc9fbMaPh75jcUX5QDT0fQ.webp",
-      "location": "Telangana, IN",
-      "lat": 17.8495919,
-      "lng": 79.1151663,
-      "tags": [
-        "artificial-intelligence",
-        "learning-and-development",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-05-20T05:51:52.735Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DvuIeT4kgBHzDwDxXQWfob0nUz",
-      "title": "A TECNOLOGIA QUE FUNCIONA NOS BASTIDORES DA INTERNET",
-      "description": "Uma reflexão sobre a infraestrutura invisível que faz a internet funcionar todos os dias, conectando servidores, processamento de dados e tecnologia aos bastidores mostrados em Hidden Figures(Estrelas além do tempo).",
-      "url": "https://builder.aws.com/content/3DvuIeT4kgBHzDwDxXQWfob0nUz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DxWtgVKy3dB4jPWuiZUftFkRK4/hidd.webp",
-      "authorName": "Marilia Freitas",
-      "authorAlias": "mariliauece",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CA0Qpn5tlJcEBrS5U8QAHIkn2q.webp",
-      "location": "CE, BR",
-      "lat": -5.3264703,
-      "lng": -39.7156073,
-      "tags": [
-        "ai-services",
-        "builder-center",
-        "aws-ambassador",
-        "data-processing"
-      ],
-      "publishedAt": "2026-05-20T03:05:39.072Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DyD8lrvuIvEg4LUyaYnhXdrrn0",
-      "title": "A Revolução Linear vs. Exponencial",
-      "description": "Como a Computação Quântica e a AWS Estão Moldando o Futuro",
-      "url": "https://builder.aws.com/content/3DyD8lrvuIvEg4LUyaYnhXdrrn0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DyDN1cSdyMlRr64fZZv5jSZ9EJ/IMG_6.webp",
-      "authorName": "Yuri Oliveira Santana",
-      "authorAlias": "ysantana",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpaVkBHBfweNIyso2dEnieeeds.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-builders",
-        "tech",
-        "women-in-tech",
-        "quantum-solutions-lab"
-      ],
-      "publishedAt": "2026-05-20T02:51:02.876Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DtpQscvYSX7VZ8Fdyr7PJofIhz",
-      "title": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 3]",
-      "description": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 3]",
-      "url": "https://builder.aws.com/content/3DtpQscvYSX7VZ8Fdyr7PJofIhz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dy8PZjxC6CXqOdx3t9zbmMvEg2/og-h.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-20T02:09:04.569Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3DxnvZLyJSVIfFUm7MXmlVRjgwO",
-      "title": "Venha ser um Líder Estudantil Campus Builder AWS",
-      "description": "Mais do que linhas de código ou ferramentas técnicas, a tecnologia é um motor de oportunidades e liberdade. Neste texto, o autor reflete sobre sua trajetória acadêmica e profissional, a superação dos desafios ao dominar a computação em nuvem e como o aprendizado contínuo em comunidade pode transformar mentalidades, abrir portas invisíveis e moldar o futuro que queremos construir.",
-      "url": "https://builder.aws.com/content/3DxnvZLyJSVIfFUm7MXmlVRjgwO",
-      "imageUrl": "",
-      "authorName": "Murilo Wazne",
-      "authorAlias": "murilowze",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-19T23:25:42.973Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DxgwfUGlv5FRcu2LpVATwylyAb",
-      "title": "Automating the Oil & Gas Back Office with Agentic AI",
-      "description": "A Prescriptive Guide to 10X Productivity Across Upstream Production and Downstream Refining: For Fortune 2000 oil and gas companies, back-office processing quietly consumes 0.75–5.0% of total revenue — driven by volatile commodity markets, complex joint venture accounting, high-volume field operations, and rigorous regulatory compliance. With 50–60% of employee activities in functional areas consisting of repetitive, manual processes, the opportunity for Agentic AI is massive. ",
-      "url": "https://builder.aws.com/content/3DxgwfUGlv5FRcu2LpVATwylyAb",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxmt1r6bjIZgAGOJoOQhWCxa2V/imag.webp",
-      "authorName": "Swami Natarajan",
-      "authorAlias": "swamiaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yNNwuwZgyTEaJNHqFPVkEspxGm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "energy-utilities-industry",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-05-19T23:15:08.532Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
-      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
-      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
-      "authorName": "YonghoChoi",
-      "authorAlias": "yongho",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [],
-      "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 17,
-      "commentsCount": 741
-    },
-    {
-      "id": "/content/3Dxkq6UKEhbGP5x5clHzwZXE09z",
-      "title": "Achieving an Agentic Back-Office for Electricity Retailers",
-      "description": "A Prescriptive Guide to 5–10X Productivity Gains  |  $15–$45 Reduction in Cost-to-Serve per Customer",
-      "url": "https://builder.aws.com/content/3Dxkq6UKEhbGP5x5clHzwZXE09z",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxkvi7XmaMgpl9xmoc7P4Gyrwj/Scre.webp",
-      "authorName": "Jun",
-      "authorAlias": "wjunchoi",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DM0CNdwlcTgzhQSacJ0Jn28Jbq.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "sap"
-      ],
-      "publishedAt": "2026-05-19T22:56:29.608Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DxgYkmaAjQhH3lIZQJRfyGvkLK",
-      "title": "Kiro for Beginners: What It Is and Why It Matters",
-      "description": "Most AI coding tools make you faster at writing code you haven't fully thought through. This article explains how Kiro's spec-driven approach forces the thinking to happen first — turning a plain English prompt into structured requirements, design, and tasks before a single line of code is generated.",
-      "url": "https://builder.aws.com/content/3DxgYkmaAjQhH3lIZQJRfyGvkLK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DxitZM180hNgysOQCz0tPHZgQq/blog.webp",
-      "authorName": "Shivansh Singh",
-      "authorAlias": "shivanshaws",
-      "authorAvatarUrl": "",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "spec-drivien-development",
-        "ai-dlc",
-        "ai-engineering",
-        "ai-ide"
-      ],
-      "publishedAt": "2026-05-19T22:41:59.357Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DxhJcCZrG41Z7bU56cm56gExz9",
-      "title": "From Pallet to Profit: How Agentic AI is Eliminating the Food Distribution Back-Office Burden",
-      "description": "Food Distribution Guidebook for Achieving an Agentic Back-Office",
-      "url": "https://builder.aws.com/content/3DxhJcCZrG41Z7bU56cm56gExz9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DxioZ361STm3NaosmVpR34BP7f/agen.webp",
-      "authorName": "Neha",
-      "authorAlias": "nehabhsh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D60NMXGAVKAV478WyrhttyQwXt.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "retail",
-        "sap",
-        "agentic-ai",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-05-19T22:40:56.214Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DxdeIfLgIDtAp6SYbnYl9DB1ET",
-      "title": "Airlines in Transition: 5 Takeaways from the CAPA Airline Leader Summit 2026",
-      "description": "The aviation industry's most senior leaders gathered in Berlin last month. Here's what they're thinking about — and why cloud and AI infrastructure is becoming the decisive competitive lever.",
-      "url": "https://builder.aws.com/content/3DxdeIfLgIDtAp6SYbnYl9DB1ET",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DxdjhFCAWMGHXBCfciwf62QpSK/CAPA.webp",
-      "authorName": "Massimo Morin, Global Head, Travel @ AWS",
-      "authorAlias": "morinmm",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DuuX2atJIA0w4oAUZnyL1Qv22b.webp",
-      "location": "MA, US",
-      "lat": 42.3788774,
-      "lng": -72.032366,
-      "tags": [
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-05-19T22:07:05.646Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Doi7coovAgolsB3F56I7BiOOpl",
-      "title": "EDA Licensing on AWS: Vendor Models and License-Aware Scheduling",
-      "description": "A practical guide to running EDA license servers on AWS — covering vendor-specific binding methods, high-availability failover patterns, and license-aware job scheduling to prevent compute waste when licenses are exhausted.",
-      "url": "https://builder.aws.com/content/3Doi7coovAgolsB3F56I7BiOOpl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DpIirV0po1lpUeLIqROubI05VF/appli.webp",
-      "authorName": "Mario Sageth",
-      "authorAlias": "mesageth",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdrHQKGPiuK8kdaXMtcdSezWSn.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "application-resilience",
-        "scheduled-events",
-        "application-integration",
-        "architecture-patterns",
-        "commercial-solutions"
-      ],
-      "publishedAt": "2026-05-19T22:05:06.948Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dxduthf6ort2cxCpGWA0pheURj",
-      "title": "How I Saved $100+ on Kiro with a 2-Click Maneuver",
-      "description": "Kiro retroactively recalculates your credits when you upgrade mid-month. Here's how to use that to your advantage and avoid paying hundreds in overage fees.",
-      "url": "https://builder.aws.com/content/3Dxduthf6ort2cxCpGWA0pheURj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DxeKgxOzpIi416Go635LSvRjJk/kiro.webp",
-      "authorName": "Ricardo Gulias",
-      "authorAlias": "gulias",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D4ggCPpfr9XqbMdvHfIhKVMObN.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "kiro-with-pro-plus",
-        "kiro-heroes",
-        "kiro-with-pro",
-        "tips"
-      ],
-      "publishedAt": "2026-05-19T22:02:29.142Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -391,29 +222,8 @@
       "lng": 127.6961188,
       "tags": [],
       "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 17,
-      "commentsCount": 741
-    },
-    {
-      "id": "/content/3DzH0HV2R3nzMvtEjX6Gvd6fith",
-      "title": "ETL Process Optimization: How We Went From Hours to Minutes",
-      "description": "From hours to minutes, here’s the step-by-step ETL process optimization that fixed our pipeline, reduced bottlenecks, and saved our team valuable time.",
-      "url": "https://builder.aws.com/content/3DzH0HV2R3nzMvtEjX6Gvd6fith",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzK0aHIGneji9fbUA9oZuqeod0/etl-.webp",
-      "authorName": "Kevin Anderson",
-      "authorAlias": "andersonkevin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bpy5IqFhxpGI0KdELekpzHT4aN.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "etl",
-        "pipeline",
-        "optimization"
-      ],
-      "publishedAt": "2026-05-20T12:06:26.992Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "likesCount": 20,
+      "commentsCount": 743
     },
     {
       "id": "/content/3DwmczRvQ5ixlgoThRI6x9maFB2",
@@ -435,30 +245,7 @@
       ],
       "publishedAt": "2026-05-19T15:02:45.470Z",
       "likesCount": 17,
-      "commentsCount": 6
-    },
-    {
-      "id": "/content/3DzLCKyErx3l6xxMaTtF2BmjBY3",
-      "title": "O que me chamou atenção na infraestrutura cloud do Nubank.",
-      "description": "Reflexão da importância de aplicações da AWS na infraestrutura cloud do Nubank.",
-      "url": "https://builder.aws.com/content/3DzLCKyErx3l6xxMaTtF2BmjBY3",
-      "imageUrl": "",
-      "authorName": "Juliana Freire de Oliveira",
-      "authorAlias": "julianaintech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "students",
-        "student-builders",
-        "visual-studio",
-        "amazon-sagemaker-studio",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-05-20T12:25:18.079Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "commentsCount": 10
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -478,7 +265,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3578,
+      "likesCount": 3579,
       "commentsCount": 333
     },
     {
@@ -499,7 +286,7 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3480,
+      "likesCount": 3479,
       "commentsCount": 1929
     },
     {
@@ -545,6 +332,29 @@
       "commentsCount": 324
     },
     {
+      "id": "/content/3DzXSXlCztaCPBIjnLgleGKOrx5",
+      "title": "Como Armazenar Credenciais de MCP Usando macOS Keychain",
+      "description": "Combine a criptografia do macOS Keychain com variáveis de ambiente do shell para fornecer segredos aos servidores MCP do Kiro CLI em tempo de execução",
+      "url": "https://builder.aws.com/content/3DzXSXlCztaCPBIjnLgleGKOrx5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzYBHOFqYp6kLwrxZ0o8uiLcbI/Chat.webp",
+      "authorName": "Carlos Biagolini",
+      "authorAlias": "cbiagolini",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "kiro",
+        "security",
+        "developer-tools",
+        "tools",
+        "kiro-agent"
+      ],
+      "publishedAt": "2026-05-20T14:33:24.338Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
       "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
       "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
@@ -585,8 +395,30 @@
         "roadmap"
       ],
       "publishedAt": "2026-05-19T16:33:46.478Z",
-      "likesCount": 7,
+      "likesCount": 8,
       "commentsCount": 2
+    },
+    {
+      "id": "/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "title": "AIdeas Finalist: Ivy - The World's First Offline-Capable, Proactive AI Tutoring Agent",
+      "description": "A proactive AI tutoring agent powered by Amazon Bedrock that monitors student progress, initiates outbound voice calls, and runs on-device inference for offline learning addressing educational inequity for millions of Ethiopian students with intermittent connectivity.",
+      "url": "https://builder.aws.com/content/3CQJ9SY2gNvSZKWd3tEq8ny7kSr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CQJGspcDQWSjnb2sMQGuAz5rQK/crea.webp",
+      "authorName": "Natnael Getenew Zeleke",
+      "authorAlias": "aiet",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D1UN4Q2nzbKuo0JbkXqIjUy0dD.webp",
+      "location": "ET",
+      "lat": 10.2116702,
+      "lng": 38.6521203,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA",
+        "agents"
+      ],
+      "publishedAt": "2026-04-16T13:19:47.813Z",
+      "likesCount": 1482,
+      "commentsCount": 342
     }
   ]
 }
