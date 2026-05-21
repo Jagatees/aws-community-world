@@ -1,6 +1,92 @@
 {
-  "updatedAt": "2026-05-21T07:22:21.479Z",
+  "updatedAt": "2026-05-21T13:12:52.608Z",
   "latest": [
+    {
+      "id": "/content/3E2FN4qLFXoeMIAAw4Ams9DyzKD",
+      "title": "Payment Authorization on AWS: Credit Cards vs. Pix at Scale",
+      "description": "Payment Authorization on AWS: Credit Cards vs. Pix at Scale",
+      "url": "https://builder.aws.com/content/3E2FN4qLFXoeMIAAw4Ams9DyzKD",
+      "imageUrl": "",
+      "authorName": "Erick Mancz",
+      "authorAlias": "imancz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "financial-services",
+        "financial-services-industry",
+        "finance",
+        "aws-cloud-financial-management",
+        "amazon-eks"
+      ],
+      "publishedAt": "2026-05-21T13:10:14.236Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E29F8Jdl0ZLFRPksXQn396beBX",
+      "title": "From Rejection to Leadership: Why Becoming an AWS Build Leader Matters for Africa’s Tech Future",
+      "description": "I am a Computer Science major and tech entrepreneur driven by a single question: How can technology break the cycle of poverty in Africa?For me, the answer has always been clear: We must shift the African continent's narrative from digital consumption to digital creation. We need to move beyond just using tools to building the very infrastructure that powers the global economy. But believing in a vision is one thing; earning the platform to execute it is another.",
+      "url": "https://builder.aws.com/content/3E29F8Jdl0ZLFRPksXQn396beBX",
+      "imageUrl": "",
+      "authorName": "Daniel Sama",
+      "authorAlias": "chefsama",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E2AqRQEBRC8yJ5W3gOUk89P27O.webp",
+      "location": "UG",
+      "lat": 1.5333554,
+      "lng": 32.2166578,
+      "tags": [
+        "all-builders-welcome"
+      ],
+      "publishedAt": "2026-05-21T12:22:10.370Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E26DioK7mKLIn8iS8Rx6jWG3Hy",
+      "title": "High Availability on AWS with ECS and Fargate",
+      "description": "Learn how to build a highly available AWS architecture using ECS, Fargate, ALB, and Multi-AZ deployment patterns.",
+      "url": "https://builder.aws.com/content/3E26DioK7mKLIn8iS8Rx6jWG3Hy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E27sEFiEsNWCS5EpZvcnx0V6TZ/saa_.webp",
+      "authorName": "Rocio Baigorria",
+      "authorAlias": "tuni56",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALq8aLtJOKkgJxQFPbrpOGR92B.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "solutions-architect",
+        "amazon-ecs",
+        "aws-fargate",
+        "application-load-balancer"
+      ],
+      "publishedAt": "2026-05-21T12:04:20.490Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E1hmIISeEG23CAx9tDy5emaE30",
+      "title": "I built a browser-based chat UI for Kiro CLI and it complete how I use AI agents",
+      "description": "I love the Kiro CLI TUI. I love the ACP integration in JetBrains. But for research, analysis, and exploring hypotheses, I wanted a web chat experience so I built one.",
+      "url": "https://builder.aws.com/content/3E1hmIISeEG23CAx9tDy5emaE30",
+      "imageUrl": "",
+      "authorName": "Jérôme GUYON",
+      "authorAlias": "jeromeguyon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/383rv69prRuFB7MPKUa4gnqROKU.webp",
+      "location": "FR",
+      "lat": 46.603354,
+      "lng": 1.8883335,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "vibe-coding",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-21T08:57:39.654Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Cr7T95sd5RRPk4X1wu30RlF683",
       "title": "Building AI Agents from Scratch: My Journey Through AWS Builders Skill Sprint",
@@ -15,7 +101,7 @@
       "lng": 78.6677428,
       "tags": [],
       "publishedAt": "2026-05-21T07:07:07.357Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -75,7 +161,7 @@
         "ai-engineering"
       ],
       "publishedAt": "2026-05-21T04:13:33.530Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -98,7 +184,7 @@
         "financial-services"
       ],
       "publishedAt": "2026-05-21T02:13:15.213Z",
-      "likesCount": 3,
+      "likesCount": 4,
       "commentsCount": 1
     },
     {
@@ -201,42 +287,79 @@
       "publishedAt": "2026-05-20T21:43:39.819Z",
       "likesCount": 1,
       "commentsCount": 0
-    }
-  ],
-  "trending": [
-    {
-      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
-      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
-      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
-      "authorName": "YonghoChoi",
-      "authorAlias": "yongho",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [],
-      "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 25,
-      "commentsCount": 1174
     },
     {
-      "id": "/content/3E1Oce4dUZCxkT53I2DaOFv9JRb",
-      "title": "Software Design Foundation - Phase 3",
-      "description": "This article contains an explanation of System Constraints, Architecture Thinking, and Trade-off Thinking.",
-      "url": "https://builder.aws.com/content/3E1Oce4dUZCxkT53I2DaOFv9JRb",
-      "imageUrl": "",
-      "authorName": "Gokul S",
-      "authorAlias": "gokul06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [],
-      "publishedAt": "2026-05-21T06:23:00.237Z",
+      "id": "/content/3E0Cm778iLiwgERpPvcQjjL4ojc",
+      "title": "How to chargeback, right-size, and reconcile Kiro spend",
+      "description": "Step-by-step guide to per-user Kiro chargeback: enable CUR, export Kiro User Activity Report, join in Athena, reconcile against the AWS invoice.",
+      "url": "https://builder.aws.com/content/3E0Cm778iLiwgERpPvcQjjL4ojc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0MDIjAkl8nek72tryzJ4SDvUq/Gemi.webp",
+      "authorName": "Prabhu",
+      "authorAlias": "prabhugr",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xCHDEPlDRP5Wg5ve3FsLYZ44Ab.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro"
+      ],
+      "publishedAt": "2026-05-20T20:51:33.499Z",
       "likesCount": 3,
-      "commentsCount": 1
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E0Jc9edG3ajwhNa6Q5j6xKSIoy",
+      "title": "AWS Summit Milan 2026 Student Voucher Giveaway Terms & Conditions",
+      "description": "Attending AWS Summit Milan on May 28? Students can win a free AWS Certification voucher for a foundational-level exam (Cloud Practitioner or AI Practitioner). Comment below with what AWS Certification you want to earn and your favorite class you took in college. Ten winners will be chosen at random. Must be 18+, a current student, and reside in Italy. No purchase necessary. See full terms and conditions below.",
+      "url": "https://builder.aws.com/content/3E0Jc9edG3ajwhNa6Q5j6xKSIoy",
+      "imageUrl": "",
+      "authorName": "Deontae Murphy",
+      "authorAlias": "deontaemurphy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-20T20:45:54.774Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E0GxU6lFfRYfQ9aMPIyNg0cjFt",
+      "title": "Terms and Conditions – AWS Summit Madrid Student Technical Trivia Contest",
+      "description": "From June 4, 2026 10:00:00 am GMT to June 4, 2026 10:00:00 am GMT, Participants must create or have an AWS Builder Center account and comment on the official trivia article with their desired AWS Certification and favorite university class.",
+      "url": "https://builder.aws.com/content/3E0GxU6lFfRYfQ9aMPIyNg0cjFt",
+      "imageUrl": "",
+      "authorName": "Deontae Murphy",
+      "authorAlias": "deontaemurphy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-20T20:25:36.073Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E0F5CT129AYbIUmGDOwHuhbb6v",
+      "title": "AWS Summit Amsterdam Student Builder Zone Trivia to WIN an AWS Certification voucher",
+      "description": "Win a free AWS Certification voucher at the Amsterdam AWS Summit 2026! Compete in Tech Trivia at the Student Builder Zone on May 27 for your chance to earn a foundational-level certification — comment on this article and join the competition in person.",
+      "url": "https://builder.aws.com/content/3E0F5CT129AYbIUmGDOwHuhbb6v",
+      "imageUrl": "",
+      "authorName": "Lindsey",
+      "authorAlias": "technicallylindsey",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35RHRzgHppmZzLaWXJEwpZ63oMR.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "students",
+        "student-builders"
+      ],
+      "publishedAt": "2026-05-20T20:07:31.155Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3E045kLtXwdhK8Iot9WmpUJ81fd",
@@ -256,8 +379,70 @@
         "community"
       ],
       "publishedAt": "2026-05-20T19:49:15.995Z",
-      "likesCount": 15,
-      "commentsCount": 2
+      "likesCount": 16,
+      "commentsCount": 3
+    }
+  ],
+  "trending": [
+    {
+      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
+      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
+      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
+      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
+      "authorName": "YonghoChoi",
+      "authorAlias": "yongho",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
+      "location": "KR",
+      "lat": 36.638392,
+      "lng": 127.6961188,
+      "tags": [],
+      "publishedAt": "2026-05-19T23:02:34.800Z",
+      "likesCount": 28,
+      "commentsCount": 1199
+    },
+    {
+      "id": "/content/3E045kLtXwdhK8Iot9WmpUJ81fd",
+      "title": "AWS Community Builders Spotlight: May 11th edition",
+      "description": "Weekly digest of AWS Community Builders' best content from May 11-17, 2026",
+      "url": "https://builder.aws.com/content/3E045kLtXwdhK8Iot9WmpUJ81fd",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E046tK8uWtsMAJ2SOUXgVahl93/aws-.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "aws-community-builders",
+        "aws-community",
+        "community"
+      ],
+      "publishedAt": "2026-05-20T19:49:15.995Z",
+      "likesCount": 16,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3E26DioK7mKLIn8iS8Rx6jWG3Hy",
+      "title": "High Availability on AWS with ECS and Fargate",
+      "description": "Learn how to build a highly available AWS architecture using ECS, Fargate, ALB, and Multi-AZ deployment patterns.",
+      "url": "https://builder.aws.com/content/3E26DioK7mKLIn8iS8Rx6jWG3Hy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E27sEFiEsNWCS5EpZvcnx0V6TZ/saa_.webp",
+      "authorName": "Rocio Baigorria",
+      "authorAlias": "tuni56",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALq8aLtJOKkgJxQFPbrpOGR92B.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "solutions-architect",
+        "amazon-ecs",
+        "aws-fargate",
+        "application-load-balancer"
+      ],
+      "publishedAt": "2026-05-21T12:04:20.490Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -277,30 +462,8 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3579,
-      "commentsCount": 333
-    },
-    {
-      "id": "/content/3DwmczRvQ5ixlgoThRI6x9maFB2",
-      "title": "What Even Is AI? (I Took a Break & Had to Relearn Everything)",
-      "description": "I just came back from maternity leave and the AI landscape had changed completely. Here's what I learned going back to first principles with no math, no hype, just the mental model that makes everything else click.",
-      "url": "https://builder.aws.com/content/3DwmczRvQ5ixlgoThRI6x9maFB2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DwpMHU5CfFP3qwaLksBCP0adzQ/Ep-1.webp",
-      "authorName": "Rohini Gaonkar",
-      "authorAlias": "rohinigaonkar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z5Kk4rOHmIm54J4SIu8tSwIyI1.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai",
-        "beginner-projects",
-        "tutorials",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-05-19T15:02:45.470Z",
-      "likesCount": 21,
-      "commentsCount": 10
+      "likesCount": 3581,
+      "commentsCount": 334
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -324,27 +487,26 @@
       "commentsCount": 1929
     },
     {
-      "id": "/content/3E0x0VtCuMP2OtIF1RvizRmBRNC",
-      "title": "From Trading Floor to Cloud Meetups: Building Trader Builder Group Step By Step",
-      "description": "This is the story of transforming from an AWS Builder Center blogger into a Trader Builder Group (TBG) community leader, and finally into a meetup organizer. But beyond the story, this blog dives deep into the hands-on program design behind the first expert-level AWS meetup—showing you exactly how to build your own.",
-      "url": "https://builder.aws.com/content/3E0x0VtCuMP2OtIF1RvizRmBRNC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0x1jUdK6isrQshaH29atJUKa1/og-h.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
+      "id": "/content/3DwmczRvQ5ixlgoThRI6x9maFB2",
+      "title": "What Even Is AI? (I Took a Break & Had to Relearn Everything)",
+      "description": "I just came back from maternity leave and the AI landscape had changed completely. Here's what I learned going back to first principles with no math, no hype, just the mental model that makes everything else click.",
+      "url": "https://builder.aws.com/content/3DwmczRvQ5ixlgoThRI6x9maFB2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DwpMHU5CfFP3qwaLksBCP0adzQ/Ep-1.webp",
+      "authorName": "Rohini Gaonkar",
+      "authorAlias": "rohinigaonkar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z5Kk4rOHmIm54J4SIu8tSwIyI1.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
-        "aws-community",
-        "community",
-        "community-events",
-        "finance",
-        "financial-services"
+        "ai",
+        "beginner-projects",
+        "tutorials",
+        "amazon-bedrock"
       ],
-      "publishedAt": "2026-05-21T02:13:15.213Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "publishedAt": "2026-05-19T15:02:45.470Z",
+      "likesCount": 22,
+      "commentsCount": 10
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -366,6 +528,23 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2879,
       "commentsCount": 324
+    },
+    {
+      "id": "/content/3E1Oce4dUZCxkT53I2DaOFv9JRb",
+      "title": "Software Design Foundation - Phase 3",
+      "description": "This article contains an explanation of System Constraints, Architecture Thinking, and Trade-off Thinking.",
+      "url": "https://builder.aws.com/content/3E1Oce4dUZCxkT53I2DaOFv9JRb",
+      "imageUrl": "",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [],
+      "publishedAt": "2026-05-21T06:23:00.237Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs",
