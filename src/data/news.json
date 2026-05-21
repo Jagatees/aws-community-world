@@ -1,19 +1,160 @@
 {
-  "updatedAt": "2026-05-21T00:50:50.206Z",
+  "updatedAt": "2026-05-21T07:22:21.479Z",
   "latest": [
     {
-      "id": "/content/3DyV5oJnUkpKgmkbsFI07et7JqP",
-      "title": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 4]",
-      "description": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 4]",
-      "url": "https://builder.aws.com/content/3DyV5oJnUkpKgmkbsFI07et7JqP",
+      "id": "/content/3Cr7T95sd5RRPk4X1wu30RlF683",
+      "title": "Building AI Agents from Scratch: My Journey Through AWS Builders Skill Sprint",
+      "description": "A hands-on walkthrough of the AWS Builders Skill Sprint challenge organized by AWS User Group Madurai. From creating a simple local agent with Ollama to developing a sophisticated AWS Documentation Expert chatbot with MCP integration",
+      "url": "https://builder.aws.com/content/3Cr7T95sd5RRPk4X1wu30RlF683",
       "imageUrl": "",
+      "authorName": "Yugesh A",
+      "authorAlias": "yugesh003",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-21T07:07:07.357Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E1Oce4dUZCxkT53I2DaOFv9JRb",
+      "title": "Software Design Foundation - Phase 3",
+      "description": "This article contains an explanation of System Constraints, Architecture Thinking, and Trade-off Thinking.",
+      "url": "https://builder.aws.com/content/3E1Oce4dUZCxkT53I2DaOFv9JRb",
+      "imageUrl": "",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [],
+      "publishedAt": "2026-05-21T06:23:00.237Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3DhPn3H3CpfAjEaq7YsSPcELir0",
+      "title": "Lambda Execution Roles Are Quietly Breaking Your Least Privilege Policy",
+      "description": "If you are using AWS Lambda to build serverless applications and you have never stopped to look closely at the IAM roles attached to your functions, this blog is for you.\nWe are going to talk about what a Lambda execution role is, why the way most people set them up creates a security problem, and exactly what you should do instead. Every term will be explained along the way.",
+      "url": "https://builder.aws.com/content/3DhPn3H3CpfAjEaq7YsSPcELir0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E1KsNq42nlMzWgAUwoIcBrpFZI/awsl.webp",
+      "authorName": "Tanseer Khan",
+      "authorAlias": "tanseer",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsU5pTJSlfSgIaKa89U1UFR6dZ.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-lambda",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-05-21T05:37:34.130Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3E1C47cIJ4c0Cyd7JSXKX1CMd9D",
+      "title": "Amazon Quick: AWS's Agentic Workspace, Explained for Engineers",
+      "description": "A technical deep dive into Amazon Quick — how it works, how it connects to your tools via MCP, and where it sits in the AWS agent stack.",
+      "url": "https://builder.aws.com/content/3E1C47cIJ4c0Cyd7JSXKX1CMd9D",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E1CDRXlzajCj8JTSAXpifh5m9M/cc-we.webp",
+      "authorName": "Jubin Soni",
+      "authorAlias": "jubinsoni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38YZJOEQWdxIpvKuXVOhZBUNBC0.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "amazon-quick-suite",
+        "ai",
+        "ai-agents",
+        "mcp",
+        "ai-engineering"
+      ],
+      "publishedAt": "2026-05-21T04:13:33.530Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E0x0VtCuMP2OtIF1RvizRmBRNC",
+      "title": "From Trading Floor to Cloud Meetups: Building Trader Builder Group Step By Step",
+      "description": "This is the story of transforming from an AWS Builder Center blogger into a Trader Builder Group (TBG) community leader, and finally into a meetup organizer. But beyond the story, this blog dives deep into the hands-on program design behind the first expert-level AWS meetup—showing you exactly how to build your own.",
+      "url": "https://builder.aws.com/content/3E0x0VtCuMP2OtIF1RvizRmBRNC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0x1jUdK6isrQshaH29atJUKa1/og-h.webp",
       "authorName": "Dan Martin",
       "authorAlias": "danmartin",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
       "location": "PH",
       "lat": 12.7503486,
       "lng": 122.7312101,
+      "tags": [
+        "aws-community",
+        "community",
+        "community-events",
+        "finance",
+        "financial-services"
+      ],
+      "publishedAt": "2026-05-21T02:13:15.213Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3E0wl5mFjSoq3My3hp1STdJbaKh",
+      "title": "From SQL to NoSQL: A Relational Developer's Survival Guide 🗺️",
+      "description": "If you've spent years writing SQL, thinking in tables and JOINs, and normalizing data into third normal form, your first encounter with NoSQL can feel like landing on another planet. Where are the tables? Why can't I JOIN? What do you mean I have to know my queries before I design my schema?",
+      "url": "https://builder.aws.com/content/3E0wl5mFjSoq3My3hp1STdJbaKh",
+      "imageUrl": "",
+      "authorName": "Greg Krumm",
+      "authorAlias": "gkrumm",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34nZE5slccOhbBIMQfjxIcVmPN3.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-dynamodb",
+        "nosql",
+        "databases"
+      ],
+      "publishedAt": "2026-05-21T02:03:55.482Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E0b3ZFQaGm7VlWXam4XtEWlsNM",
+      "title": "A Psicologia da Tela em Branco: Como o AWS Builder Center cura a \"Síndrome do Espectador\"",
+      "description": "Um manifesto contra a passividade na tecnologia, mostrando como o AWS Builder Center te tira do vício dos tutoriais e te desafia a usar sua lógica para construir soluções de verdade.",
+      "url": "https://builder.aws.com/content/3E0b3ZFQaGm7VlWXam4XtEWlsNM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0sHmph3lcvmFj5pZdSvDCcYzn/Chat.webp",
+      "authorName": "Rayssa Resende",
+      "authorAlias": "rayssaresende",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUwO8ZKqb0R86TY0cmPKbr5Rct.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
       "tags": [],
+      "publishedAt": "2026-05-21T01:23:22.786Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DyV5oJnUkpKgmkbsFI07et7JqP",
+      "title": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 4]",
+      "description": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 4]",
+      "url": "https://builder.aws.com/content/3DyV5oJnUkpKgmkbsFI07et7JqP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0yAztVbKJmAuWRMX2FZLIPovV/og-h.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
       "publishedAt": "2026-05-21T00:33:55.265Z",
       "likesCount": 1,
       "commentsCount": 0
@@ -37,7 +178,7 @@
         "storage"
       ],
       "publishedAt": "2026-05-20T22:21:11.983Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -58,146 +199,7 @@
         "devops"
       ],
       "publishedAt": "2026-05-20T21:43:39.819Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E0Cm778iLiwgERpPvcQjjL4ojc",
-      "title": "How to chargeback, right-size, and reconcile Kiro spend",
-      "description": "Address the FinOps and finance asks that Kiro Enterprise customers hit at month-end: chargeback, right-sizing, trend analysis, and reconciliation.",
-      "url": "https://builder.aws.com/content/3E0Cm778iLiwgERpPvcQjjL4ojc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0MDIjAkl8nek72tryzJ4SDvUq/Gemi.webp",
-      "authorName": "Prabhu",
-      "authorAlias": "prabhugr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xCHDEPlDRP5Wg5ve3FsLYZ44Ab.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro"
-      ],
-      "publishedAt": "2026-05-20T20:51:33.499Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E0Jc9edG3ajwhNa6Q5j6xKSIoy",
-      "title": "AWS Summit Milan 2026 Student Voucher Giveaway Terms & Conditions",
-      "description": "Attending AWS Summit Milan on May 28? Students can win a free AWS Certification voucher for a foundational-level exam (Cloud Practitioner or AI Practitioner). Comment below with what AWS Certification you want to earn and your favorite class you took in college. Ten winners will be chosen at random. Must be 18+, a current student, and reside in Italy. No purchase necessary. See full terms and conditions below.",
-      "url": "https://builder.aws.com/content/3E0Jc9edG3ajwhNa6Q5j6xKSIoy",
-      "imageUrl": "",
-      "authorName": "Deontae Murphy",
-      "authorAlias": "deontaemurphy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-05-20T20:45:54.774Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E0GxU6lFfRYfQ9aMPIyNg0cjFt",
-      "title": "Terms and Conditions – AWS Summit Madrid Student Technical Trivia Contest",
-      "description": "From June 4, 2026 10:00:00 am GMT to June 4, 2026 10:00:00 am GMT, Participants must create or have an AWS Builder Center account and comment on the official trivia article with their desired AWS Certification and favorite university class.",
-      "url": "https://builder.aws.com/content/3E0GxU6lFfRYfQ9aMPIyNg0cjFt",
-      "imageUrl": "",
-      "authorName": "Deontae Murphy",
-      "authorAlias": "deontaemurphy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38wrQzKGoUBu38HNrmazWppayPr.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-05-20T20:25:36.073Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E0F5CT129AYbIUmGDOwHuhbb6v",
-      "title": "AWS Summit Amsterdam Student Builder Zone Trivia to WIN an AWS Certification voucher",
-      "description": "Win a free AWS Certification voucher at the Amsterdam AWS Summit 2026! Compete in Tech Trivia at the Student Builder Zone on May 27 for your chance to earn a foundational-level certification — comment on this article and join the competition in person.",
-      "url": "https://builder.aws.com/content/3E0F5CT129AYbIUmGDOwHuhbb6v",
-      "imageUrl": "",
-      "authorName": "Lindsey",
-      "authorAlias": "technicallylindsey",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35RHRzgHppmZzLaWXJEwpZ63oMR.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "students",
-        "student-builders"
-      ],
-      "publishedAt": "2026-05-20T20:07:31.155Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E045kLtXwdhK8Iot9WmpUJ81fd",
-      "title": "AWS Community Builders Spotlight: May 11th edition",
-      "description": "Weekly digest of AWS Community Builders' best content from May 11-17, 2026",
-      "url": "https://builder.aws.com/content/3E045kLtXwdhK8Iot9WmpUJ81fd",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E046tK8uWtsMAJ2SOUXgVahl93/aws-.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-05-20T19:49:15.995Z",
-      "likesCount": 8,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3AtkgtR3wgUU17aHllAYHYhdyi1",
-      "title": "The Dual Write Pattern: Will it work for Migrating Relational Databases to NoSQL?",
-      "description": "What is the Dual Write database migration strategy, and how well does it work? Can we use it to migrate a relational SQL database into Amazon DynamoDB?",
-      "url": "https://builder.aws.com/content/3AtkgtR3wgUU17aHllAYHYhdyi1",
-      "imageUrl": "",
-      "authorName": "Robert",
-      "authorAlias": "mccdb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39s5Lhsfz6mZxLTIWGqyiuL08UR.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "nosql",
-        "databases",
-        "sql",
-        "migration",
-        "cloud-migration"
-      ],
-      "publishedAt": "2026-05-20T17:06:32.926Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DzkqoBg14bnFzbYBR9WhUNrmpW",
-      "title": "The Storage Problem Nobody Told Public Sector About: Why AI/ML Training Fails Before the Model Does",
-      "description": "Public sector organizations are adopting AI/ML but hitting a wall most never anticipated: storage infrastructure that cannot keep pace with GPU compute. Learn why the I/O bottleneck matters more than model selection for government and education workloads, and how to architect a storage strategy that makes training infrastructure sustainable at scale.",
-      "url": "https://builder.aws.com/content/3DzkqoBg14bnFzbYBR9WhUNrmpW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzlffTYpjdZcjMS64usOMZZGkJ/unna.webp",
-      "authorName": "Sarah Smith-Barry",
-      "authorAlias": "sfsmith",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2nSGKUa72wtm8oMavMId1Dv4U.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "machine-learning",
-        "storage",
-        "amazon-s3",
-        "amazon-fsx-lustre"
-      ],
-      "publishedAt": "2026-05-20T16:04:02.110Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     }
   ],
@@ -216,8 +218,25 @@
       "lng": 127.6961188,
       "tags": [],
       "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 24,
-      "commentsCount": 747
+      "likesCount": 25,
+      "commentsCount": 1174
+    },
+    {
+      "id": "/content/3E1Oce4dUZCxkT53I2DaOFv9JRb",
+      "title": "Software Design Foundation - Phase 3",
+      "description": "This article contains an explanation of System Constraints, Architecture Thinking, and Trade-off Thinking.",
+      "url": "https://builder.aws.com/content/3E1Oce4dUZCxkT53I2DaOFv9JRb",
+      "imageUrl": "",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [],
+      "publishedAt": "2026-05-21T06:23:00.237Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3E045kLtXwdhK8Iot9WmpUJ81fd",
@@ -237,8 +256,29 @@
         "community"
       ],
       "publishedAt": "2026-05-20T19:49:15.995Z",
-      "likesCount": 8,
-      "commentsCount": 1
+      "likesCount": 15,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3579,
+      "commentsCount": 333
     },
     {
       "id": "/content/3DwmczRvQ5ixlgoThRI6x9maFB2",
@@ -263,44 +303,6 @@
       "commentsCount": 10
     },
     {
-      "id": "/content/3DyV5oJnUkpKgmkbsFI07et7JqP",
-      "title": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 4]",
-      "description": "AWS Financial Service 20 Exam Questions: Domain 1 Trading Desk, Sell Side [part 4]",
-      "url": "https://builder.aws.com/content/3DyV5oJnUkpKgmkbsFI07et7JqP",
-      "imageUrl": "",
-      "authorName": "Dan Martin",
-      "authorAlias": "danmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [],
-      "publishedAt": "2026-05-21T00:33:55.265Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3579,
-      "commentsCount": 333
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -318,8 +320,31 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3479,
+      "likesCount": 3480,
       "commentsCount": 1929
+    },
+    {
+      "id": "/content/3E0x0VtCuMP2OtIF1RvizRmBRNC",
+      "title": "From Trading Floor to Cloud Meetups: Building Trader Builder Group Step By Step",
+      "description": "This is the story of transforming from an AWS Builder Center blogger into a Trader Builder Group (TBG) community leader, and finally into a meetup organizer. But beyond the story, this blog dives deep into the hands-on program design behind the first expert-level AWS meetup—showing you exactly how to build your own.",
+      "url": "https://builder.aws.com/content/3E0x0VtCuMP2OtIF1RvizRmBRNC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0x1jUdK6isrQshaH29atJUKa1/og-h.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "danmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DO33USWrUjUQXRikH5W5uCh0Rc.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "aws-community",
+        "community",
+        "community-events",
+        "finance",
+        "financial-services"
+      ],
+      "publishedAt": "2026-05-21T02:13:15.213Z",
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -385,29 +410,6 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1941,
       "commentsCount": 275
-    },
-    {
-      "id": "/content/3DzXSXlCztaCPBIjnLgleGKOrx5",
-      "title": "Como Armazenar Credenciais de MCP Usando macOS Keychain",
-      "description": "Combine a criptografia do macOS Keychain com variáveis de ambiente do shell para fornecer segredos aos servidores MCP do Kiro CLI em tempo de execução",
-      "url": "https://builder.aws.com/content/3DzXSXlCztaCPBIjnLgleGKOrx5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3DzYBHOFqYp6kLwrxZ0o8uiLcbI/Chat.webp",
-      "authorName": "Carlos Biagolini",
-      "authorAlias": "cbiagolini",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "kiro",
-        "security",
-        "developer-tools",
-        "tools",
-        "kiro-agent"
-      ],
-      "publishedAt": "2026-05-20T14:33:24.338Z",
-      "likesCount": 2,
-      "commentsCount": 2
     }
   ]
 }
