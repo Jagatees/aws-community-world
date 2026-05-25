@@ -1,6 +1,180 @@
 {
-  "updatedAt": "2026-05-24T18:25:31.794Z",
+  "updatedAt": "2026-05-25T00:50:13.598Z",
   "latest": [
+    {
+      "id": "/content/3EBvoWeFheJAiuWwGIrWVvcku87",
+      "title": "Ask Your AWS Bill Anything: Building a FinOps CLI Agent with Strands SDK and Bedrock Nova Pro",
+      "description": "What if you could ask \"were there any cost anomalies this week?\" and get a real answer in seconds - no Console, no dashboards, no clicking? This post walks through building NOVA, a conversational FinOps agent backed by 8 live AWS tools, parallel execution, and Amazon Bedrock Nova Pro.",
+      "url": "https://builder.aws.com/content/3EBvoWeFheJAiuWwGIrWVvcku87",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EC4n5qA3buSWgtQ5s1nT6cbo6T/Gemi.webp",
+      "authorName": "Yogesh S",
+      "authorAlias": "yogeshs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5ONI6D5aXtURiXwrOyQKhKVL1.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "amazon-bedrock",
+        "gen-ai",
+        "ai-agents",
+        "cost-optimization",
+        "finops"
+      ],
+      "publishedAt": "2026-05-25T00:38:59.810Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DMYZroVPlZUbtXRbWTIxnVrTU3",
+      "title": "Setting Up Claude Cowork on Amazon Bedrock",
+      "description": "Switch from Anthropic's first-party (1P) inference to Amazon Bedrock keep enterprise security, data residency, and your existing AWS controls",
+      "url": "https://builder.aws.com/content/3DMYZroVPlZUbtXRbWTIxnVrTU3",
+      "imageUrl": "",
+      "authorName": "Meena Thandavarayan",
+      "authorAlias": "thandavm",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qcylOx76wM3E11e5czXYVWDnU.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-05-24T23:17:24.900Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EBj332buDPJWDv07uqiNLkDDxH",
+      "title": "Guia Prático para Treinar AWS: LocalStack e até $200 em Créditos Gratuitos",
+      "description": "Descubra como impulsionar seus estudos na AWS sem o medo de cobranças surpresas. Aprenda a clonar a nuvem no seu computador usando o LocalStack e saiba como garantir até $200 em créditos promocionais para praticar em um ambiente real.",
+      "url": "https://builder.aws.com/content/3EBj332buDPJWDv07uqiNLkDDxH",
+      "imageUrl": "",
+      "authorName": "Felipe Farias Ribeiro Filho",
+      "authorAlias": "felipefrf",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-credits",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-05-24T21:50:04.984Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EBhlcWNucL5SXA6Vmi7oXXWD6T",
+      "title": "Escaping Localhost: Why \"Serverless\" is the Ultimate Hackathon Cheat Code",
+      "description": "Tired of the \"it works on my machine\" curse? Here is a beginner-friendly breakdown of how to run your Python or Node.js code directly in the cloud using AWS Lambda—without ever touching a single server configuration. Perfect for student builders and weekend projects!",
+      "url": "https://builder.aws.com/content/3EBhlcWNucL5SXA6Vmi7oXXWD6T",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBjtAS0ydh6QOKGjXqSuaBthml/1000.webp",
+      "authorName": "Sachin",
+      "authorAlias": "sachin24sk26",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DrG1m0im6EGcBlkPV6e1DeYGgS.webp",
+      "location": "Bihar, IN",
+      "lat": 25.6440845,
+      "lng": 85.906508,
+      "tags": [
+        "aws-lambda",
+        "hackathon",
+        "serverless",
+        "tips",
+        "student-builders"
+      ],
+      "publishedAt": "2026-05-24T21:45:13.796Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EBTSuHB9q11wPrVLHSaL3mhT6a",
+      "title": "The AWS Multi-Service Synchronization Problem: How Spec-Driven Development with Kiro Prevents Architectural Drift",
+      "description": "A practical pattern for keeping DynamoDB schemas, IAM policies, and API contracts aligned when building AI agent systems. ",
+      "url": "https://builder.aws.com/content/3EBTSuHB9q11wPrVLHSaL3mhT6a",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBZlxpMNb4Oapmp11dANMlf0Oq/Gemi.webp",
+      "authorName": "Abhishek  Joshi",
+      "authorAlias": "abhishek52",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3An724WkpkAD8zK6fUcdh3TklOf.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "kiro",
+        "architecture",
+        "ai-agents",
+        "amazon-bedrock",
+        "amazon-dynamodb"
+      ],
+      "publishedAt": "2026-05-24T20:15:01.160Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Dr6obPpbCtox4Qk1k4vhostVMe",
+      "title": "Desacoplamento de Microsserviços na AWS: Arquitetura Orientada a Eventos com EventBridge e Padrões Hexagonais",
+      "description": "Descubra como eliminar gargalos de comunicação síncrona implementando uma arquitetura orientada a eventos na AWS. Este artigo detalha o uso do Amazon EventBridge como roteador de domínio, acoplado ao Amazon SQS para absorção de carga e filas Dead-Letter para resiliência. Usando Arquitetura Hexagonal em Python e AWS Lambda, demonstramos como isolar a lógica de negócios da infraestrutura, garantindo processamento idempotente, tolerância a falhas e alta disponibilidade em sistemas distribuídos.",
+      "url": "https://builder.aws.com/content/3Dr6obPpbCtox4Qk1k4vhostVMe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dr9uVOEi6X1qppMU0SLfKie9wl/Desi.webp",
+      "authorName": "Claudio Filipe Lima Raposo",
+      "authorAlias": "sertaoseracloud",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dr5xGg8jmJAuNo9td76QzELG61.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-community-builders",
+        "python",
+        "terraform",
+        "amazon-sqs",
+        "event-driven"
+      ],
+      "publishedAt": "2026-05-24T20:05:22.121Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EBMvaPgvySi8YqeAVEg5rNJYXw",
+      "title": "Building AI Agents from Zero to Hero",
+      "description": "Built AI agents with Strands SDK, Bedrock, and MCP from simple chatbots to an AWS Study Buddy with memory and tools.",
+      "url": "https://builder.aws.com/content/3EBMvaPgvySi8YqeAVEg5rNJYXw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBTkdpB4kzxZQ7RjuboktNhvZ2/Chat.webp",
+      "authorName": "Dineshraj Dhanapathy",
+      "authorAlias": "dd1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33aP9VXHRAELXa82Vqwlf5tvUuz.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "amazon-bedrock",
+        "strands-agents",
+        "python",
+        "amazon-nova",
+        "mcp"
+      ],
+      "publishedAt": "2026-05-24T19:49:35.841Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EBFSHQD6b0TBD6hJnOM8h5p1B3",
+      "title": "Building an AWS Study Buddy with MCP + Strands Agents SDK",
+      "description": "An AI-powered learning assistant that can search AWS documentation, explain cloud concepts in simple terms, track learning progress, and generate quizzes for better understanding.",
+      "url": "https://builder.aws.com/content/3EBFSHQD6b0TBD6hJnOM8h5p1B3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBIgiYtxNREZ8UYH6kx2z6w2Sj/Chat.webp",
+      "authorName": "Dineshraj Dhanapathy",
+      "authorAlias": "dd1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33aP9VXHRAELXa82Vqwlf5tvUuz.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "mcp",
+        "amazon-bedrock",
+        "strands",
+        "aws-docs"
+      ],
+      "publishedAt": "2026-05-24T18:34:03.303Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EBGlpySyyY5kbcgXKuQNztZUce",
       "title": "How We Made AWS Control Tower (CfCT) Deployments Fail Loud Instead of Silent",
@@ -15,7 +189,7 @@
       "lng": 134.755,
       "tags": [],
       "publishedAt": "2026-05-24T17:49:46.529Z",
-      "likesCount": 1,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -38,178 +212,8 @@
         "students"
       ],
       "publishedAt": "2026-05-24T17:10:37.550Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EBBJoIM1hRxJuFsJLPNrqeVOgZ",
-      "title": "The Future of AI-Powered Sustainable Agriculture: Unlocking Scalable Growth & Rural Transformation",
-      "description": "AI-driven agriculture is rapidly becoming one of the largest untapped opportunities in emerging markets. By combining regional language intelligence, sustainability, real-time advisory systems, and data-driven farming ecosystems, the sector can unlock massive economic value, improve farmer productivity, and create scalable revenue opportunities across the agricultural value chain. Open to meaningful discussions, strategic collaborations, and innovation partnerships.",
-      "url": "https://builder.aws.com/content/3EBBJoIM1hRxJuFsJLPNrqeVOgZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBCJxWLn4rLWRxEaG3N5dxzLgK/1001.webp",
-      "authorName": "Parthib Basu",
-      "authorAlias": "basu2002",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EBCXjS3jt1GiV9HnQb42WTfHuI.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "ai-assisted-workflows",
-        "ai-for-bharat",
-        "ai-for-developers",
-        "ai-services"
-      ],
-      "publishedAt": "2026-05-24T17:09:03.379Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EB4NoQDEDFXGAWy0zMkibJcrDY",
-      "title": "AWS Builders Skill Sprint Challenge - April Edition",
-      "description": "Organized by AWS User Group Madurai",
-      "url": "https://builder.aws.com/content/3EB4NoQDEDFXGAWy0zMkibJcrDY",
-      "imageUrl": "",
-      "authorName": "S Preetha",
-      "authorAlias": "preetha07",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-24T16:04:42.234Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EB0rDblQZuaW4cR93udICtK62U",
-      "title": "AWS Builders Skill Sprint April 2026 Experience",
-      "description": "Completed the AWS Builders Skill Sprint April 2026 and learned about AI Agents, Ollama, Amazon Bedrock, and Local-to-Cloud AI workflows",
-      "url": "https://builder.aws.com/content/3EB0rDblQZuaW4cR93udICtK62U",
-      "imageUrl": "",
-      "authorName": "Sivasakthivel",
-      "authorAlias": "sivasakthivel",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai",
-        "agentic-interactions",
-        "agentic-ide",
-        "agentic-ai",
-        "advertising-marketing-industry"
-      ],
-      "publishedAt": "2026-05-24T15:37:11.993Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EAwbA5ppa8ngasxoET5B81NZQ7",
-      "title": "How to Setup Pritunl VPN on AWS",
-      "description": "How to Setup Pritunl VPN on AWS ",
-      "url": "https://builder.aws.com/content/3EAwbA5ppa8ngasxoET5B81NZQ7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EB18TP0aMTBBFJXiZT6XnPC4bx/Scre.webp",
-      "authorName": "Aman Patel",
-      "authorAlias": "amanpatel",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zaeKAyPsYpjRPkIUZnfx1esgdN.webp",
-      "location": "Uttar Pradesh, IN",
-      "lat": 27.1303344,
-      "lng": 80.859666,
-      "tags": [
-        "ai-agents",
-        "aws-vpn",
-        "vpn",
-        "security",
-        "ai-security"
-      ],
-      "publishedAt": "2026-05-24T15:21:58.789Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EAsWht55BMAzhy1zoKToappHi4",
-      "title": "Como estou me aperfeiçoando em IA com o AWS Builder Center",
-      "description": "Aprender IA pode parecer desafiador no início, mas com os recursos certos é possível começar aos poucos, explorar conteúdos relevantes e transformar curiosidade em aprendizado prático.",
-      "url": "https://builder.aws.com/content/3EAsWht55BMAzhy1zoKToappHi4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EAu9kP89rEvI5GtzwCUeyuqs6a/Chat.webp",
-      "authorName": "GUSTAVO SERPA",
-      "authorAlias": "gustavofserpa",
-      "authorAvatarUrl": "",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "artificial-intelligence"
-      ],
-      "publishedAt": "2026-05-24T14:39:40.055Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EAqiI4jq3zUlQyjNml1xc7eulG",
-      "title": "Renewed with Pride!",
-      "description": "Do you feel proud to be renewed as a community builder for AWS?",
-      "url": "https://builder.aws.com/content/3EAqiI4jq3zUlQyjNml1xc7eulG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EArprm1QiDBrOhenLUWbXvvCii/3F19.webp",
-      "authorName": "Partha Sarathi Kundu",
-      "authorAlias": "kundu007",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Yx75BAPPMfTlUy5dEB94yp0GHd.webp",
-      "location": "GA, US",
-      "lat": 32.3293809,
-      "lng": -83.1137366,
-      "tags": [
-        "aws-community",
-        "aws-community-builders",
-        "aws-community-day-2026",
-        "community"
-      ],
-      "publishedAt": "2026-05-24T14:20:57.470Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EAhVVC6Gfizlmt8P8Zjr5EFAnn",
-      "title": "Building a Privacy-First CloudOps Triage Agent with Strands SDK and Ollama",
-      "description": "I built ARIA, a stateful AI triage agent that runs 100% on your laptop using Strands Agents SDK and Ollama's phi3.5, no API keys, no data leaving your machine. In this walkthrough, I'll show you how deliberate prompt engineering with XML tags, the DARA incident framework, and Strands' conversation management turns a 3.8B local model into a production-grade war-room assistant.",
-      "url": "https://builder.aws.com/content/3EAhVVC6Gfizlmt8P8Zjr5EFAnn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EAppi28hLUfryQhbMfr4Wbmo7A/Gemi.webp",
-      "authorName": "Yogesh S",
-      "authorAlias": "yogeshs",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5ONI6D5aXtURiXwrOyQKhKVL1.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "agentic-ai",
-        "strands-agents",
-        "strands",
-        "gen-ai"
-      ],
-      "publishedAt": "2026-05-24T14:14:48.370Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EAmmj8IX8mOOuqtOm9YcdbipNV",
-      "title": "O maior erro de quem começa em Cloud Computing (e como eu destravei meus estudos em AWS)",
-      "description": "Quando comecei a estudar Cloud Computing, achei que precisava aprender todos os serviços da AWS para conseguir criar projetos reais. O problema é que isso só me deixava mais perdido.\n\nNeste artigo, compartilho os erros que mais atrasaram meu aprendizado, como comecei a evoluir através de projetos práticos e por que participar da comunidade mudou completamente minha visão sobre tecnologia e carreira.",
-      "url": "https://builder.aws.com/content/3EAmmj8IX8mOOuqtOm9YcdbipNV",
-      "imageUrl": "",
-      "authorName": "Guilherme Pinheiro",
-      "authorAlias": "guilhermepinheiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CVSDKry6Mtm2yQS57GqhV0wiM3.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "aws-builders",
-        "students",
-        "getting-started"
-      ],
-      "publishedAt": "2026-05-24T14:01:56.635Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 5,
+      "commentsCount": 2
     }
   ],
   "trending": [
@@ -250,8 +254,8 @@
         "students"
       ],
       "publishedAt": "2026-05-24T17:10:37.550Z",
-      "likesCount": 2,
-      "commentsCount": 1
+      "likesCount": 5,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -275,23 +279,6 @@
       "commentsCount": 337
     },
     {
-      "id": "/content/3EBGlpySyyY5kbcgXKuQNztZUce",
-      "title": "How We Made AWS Control Tower (CfCT) Deployments Fail Loud Instead of Silent",
-      "description": "Our CI/CD pipeline turned green. The CfCT deployment had \"succeeded.\" Two weeks later, during a security review, we found that several accounts had been missing a critical baseline configuration the whole time. The pipeline wasn't lying — it just wasn't watching. This post walks through how we wrapped Customizations for AWS Control Tower (CfCT) with pre-deploy checks and post-deploy verification to close the feedback gap.",
-      "url": "https://builder.aws.com/content/3EBGlpySyyY5kbcgXKuQNztZUce",
-      "imageUrl": "",
-      "authorName": "Feng",
-      "authorAlias": "fenghe",
-      "authorAvatarUrl": "",
-      "location": "AU",
-      "lat": -24.7761086,
-      "lng": 134.755,
-      "tags": [],
-      "publishedAt": "2026-05-24T17:49:46.529Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -309,28 +296,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3487,
+      "likesCount": 3488,
       "commentsCount": 1930
-    },
-    {
-      "id": "/content/3E7RvPClRO5xPQIAhj5WrZg2d0w",
-      "title": "AWS Financial Service Engineer 10 Exam Questions Domain 2: Macro Trading [Part 4]",
-      "description": "AWS Financial Service Engineer 10 Exam Questions Domain 2: Macro Trading [Part 4]",
-      "url": "https://builder.aws.com/content/3E7RvPClRO5xPQIAhj5WrZg2d0w",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9LWnki3XeduJeqGiaQ8K7AYe1/1772.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "dmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E6km1aTxp2D2GFPfQBpX80c0Bi.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-24T08:19:51.383Z",
-      "likesCount": 4,
-      "commentsCount": 2
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -354,44 +321,49 @@
       "commentsCount": 324
     },
     {
-      "id": "/content/3E9OijKbVfZ4ogry4FRxqRNxfS6",
-      "title": "A importância da Computação em Nuvem na Atualidade ☁️",
-      "description": "Uma reflexão sobre como a computação em nuvem se tornou essencial na tecnologia moderna e transformou a forma como aprendemos, criamos e compartilhamos soluções digitais. ",
-      "url": "https://builder.aws.com/content/3E9OijKbVfZ4ogry4FRxqRNxfS6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9OkHg1l4WoxekgZDEjPRoYCe8/Chat.webp",
-      "authorName": "Alice Barroso",
-      "authorAlias": "alicevbarroso",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D3tKbB7dOKsXCeA6fFMmF4K9qM.webp",
-      "location": "RJ, BR",
-      "lat": -22.2752762,
-      "lng": -42.419415,
+      "id": "/content/3EBMvaPgvySi8YqeAVEg5rNJYXw",
+      "title": "Building AI Agents from Zero to Hero",
+      "description": "Built AI agents with Strands SDK, Bedrock, and MCP from simple chatbots to an AWS Study Buddy with memory and tools.",
+      "url": "https://builder.aws.com/content/3EBMvaPgvySi8YqeAVEg5rNJYXw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBTkdpB4kzxZQ7RjuboktNhvZ2/Chat.webp",
+      "authorName": "Dineshraj Dhanapathy",
+      "authorAlias": "dd1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33aP9VXHRAELXa82Vqwlf5tvUuz.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
       "tags": [
-        "amazon-cloudfront",
-        "aws-student-builders-groups",
-        "aws-ambassador",
-        "aws-academy",
-        "aws-builders"
+        "amazon-bedrock",
+        "strands-agents",
+        "python",
+        "amazon-nova",
+        "mcp"
       ],
-      "publishedAt": "2026-05-24T01:56:14.588Z",
-      "likesCount": 7,
-      "commentsCount": 1
+      "publishedAt": "2026-05-24T19:49:35.841Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3E9b2MMkPYbtiLBLPCl39Nx3Sx2",
-      "title": "11 Things About S3 Most AWS Developers Never Stop to Question",
-      "description": "From the myth of the folder to presigned URLs, queryable CSVs, and why S3's durability number should genuinely shock you - a deep dive into the service powering trillions of objects worldwide.",
-      "url": "https://builder.aws.com/content/3E9b2MMkPYbtiLBLPCl39Nx3Sx2",
-      "imageUrl": "",
-      "authorName": "Vivek Verma",
-      "authorAlias": "thisisvivek",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-24T03:40:20.754Z",
-      "likesCount": 4,
-      "commentsCount": 2
+      "id": "/content/3EBFSHQD6b0TBD6hJnOM8h5p1B3",
+      "title": "Building an AWS Study Buddy with MCP + Strands Agents SDK",
+      "description": "An AI-powered learning assistant that can search AWS documentation, explain cloud concepts in simple terms, track learning progress, and generate quizzes for better understanding.",
+      "url": "https://builder.aws.com/content/3EBFSHQD6b0TBD6hJnOM8h5p1B3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBIgiYtxNREZ8UYH6kx2z6w2Sj/Chat.webp",
+      "authorName": "Dineshraj Dhanapathy",
+      "authorAlias": "dd1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33aP9VXHRAELXa82Vqwlf5tvUuz.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "mcp",
+        "amazon-bedrock",
+        "strands",
+        "aws-docs"
+      ],
+      "publishedAt": "2026-05-24T18:34:03.303Z",
+      "likesCount": 3,
+      "commentsCount": 0
     },
     {
       "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
@@ -415,6 +387,43 @@
       "publishedAt": "2026-04-17T12:10:37.145Z",
       "likesCount": 1942,
       "commentsCount": 275
+    },
+    {
+      "id": "/content/3E7RvPClRO5xPQIAhj5WrZg2d0w",
+      "title": "AWS Financial Service Engineer 10 Exam Questions Domain 2: Macro Trading [Part 4]",
+      "description": "AWS Financial Service Engineer 10 Exam Questions Domain 2: Macro Trading [Part 4]",
+      "url": "https://builder.aws.com/content/3E7RvPClRO5xPQIAhj5WrZg2d0w",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9LWnki3XeduJeqGiaQ8K7AYe1/1772.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "dmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E6km1aTxp2D2GFPfQBpX80c0Bi.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-05-24T08:19:51.383Z",
+      "likesCount": 4,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3EBGlpySyyY5kbcgXKuQNztZUce",
+      "title": "How We Made AWS Control Tower (CfCT) Deployments Fail Loud Instead of Silent",
+      "description": "Our CI/CD pipeline turned green. The CfCT deployment had \"succeeded.\" Two weeks later, during a security review, we found that several accounts had been missing a critical baseline configuration the whole time. The pipeline wasn't lying — it just wasn't watching. This post walks through how we wrapped Customizations for AWS Control Tower (CfCT) with pre-deploy checks and post-deploy verification to close the feedback gap.",
+      "url": "https://builder.aws.com/content/3EBGlpySyyY5kbcgXKuQNztZUce",
+      "imageUrl": "",
+      "authorName": "Feng",
+      "authorAlias": "fenghe",
+      "authorAvatarUrl": "",
+      "location": "AU",
+      "lat": -24.7761086,
+      "lng": 134.755,
+      "tags": [],
+      "publishedAt": "2026-05-24T17:49:46.529Z",
+      "likesCount": 3,
+      "commentsCount": 0
     }
   ]
 }
