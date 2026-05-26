@@ -1,6 +1,173 @@
 {
-  "updatedAt": "2026-05-26T13:04:46.468Z",
+  "updatedAt": "2026-05-26T18:51:30.404Z",
   "latest": [
+    {
+      "id": "/content/3AiKbmIkNkxM5ICEL59W6zxwwdr",
+      "title": "Enhancing Amazon WorkSpaces and WorkSpaces Applications with Amazon FSx for NetApp ONTAP",
+      "description": "Learn how Amazon FSx for NetApp ONTAP delivers shared storage for WorkSpaces with multi-protocol access, instant clones, and built-in replication.",
+      "url": "https://builder.aws.com/content/3AiKbmIkNkxM5ICEL59W6zxwwdr",
+      "imageUrl": "",
+      "authorName": "Shantanu Nitin Padhye",
+      "authorAlias": "shaan0787",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "end-user-computing",
+        "amazon-workspaces",
+        "amazon-appstream",
+        "amazon-fsx",
+        "amazon-fsx-netapp-ontap"
+      ],
+      "publishedAt": "2026-05-26T17:36:40.290Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EGj7chmS5o6P516QJOSMLEWCIc",
+      "title": "GitAgent: What If Your AI Agent Lived in a Git Repository?",
+      "description": "Most AI agents forget everything the moment you restart them. GitAgent fixes that by turning the agent itself into a git repository. Every memory, every skill, every decision - version controlled. I cloned the repo and read the full codebase. Here is what I found.",
+      "url": "https://builder.aws.com/content/3EGj7chmS5o6P516QJOSMLEWCIc",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGjg5T2v2KmUADka3c4peGPrVW/c8e4.webp",
+      "authorName": "Amogh Sunil",
+      "authorAlias": "stealthwhiz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EGd7okBiYaVVTPt8hu5kZ4iRmw.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [],
+      "publishedAt": "2026-05-26T16:30:57.495Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EGdqqpwE63gy6Ryhn82BIIL0bd",
+      "title": "5 Features in AWS Builder Center You Must Try",
+      "description": "Most students join the AWS Builder Center for certifications but stay for the hands-on labs, community, events, and real cloud learning experience. ",
+      "url": "https://builder.aws.com/content/3EGdqqpwE63gy6Ryhn82BIIL0bd",
+      "imageUrl": "",
+      "authorName": "Kruthika D",
+      "authorAlias": "1js23ci044",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E7CRsB0gjYO1kXLmOJFjNwifez.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-26T15:26:50.827Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
+      "title": "The 4x4: Serverless Community Highlights",
+      "description": "4 community picks and 4 AWS picks on Serverless on AWS!",
+      "url": "https://builder.aws.com/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBilVcOUrygXGjcjAOa29wer9l/Scre.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "aws-community-builders",
+        "serverless",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-26T15:17:44.050Z",
+      "likesCount": 6,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3EGcBoAwfYm6xpKsdXNMhIvuPS9",
+      "title": "Mais do que aprender nuvem: o que mudou quando comecei a construir junto com a comunidade AWS",
+      "description": "Uma reflexão sobre como minha experiência como Líder no AWS Builder Center mudou minha forma de enxergar computação em nuvem — mostrando que aprender tecnologia também acontece através de comunidade, compartilhamento e construção coletiva.",
+      "url": "https://builder.aws.com/content/3EGcBoAwfYm6xpKsdXNMhIvuPS9",
+      "imageUrl": "",
+      "authorName": "Felipe Matheus",
+      "authorAlias": "felipemgg95",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoGYP3dmL6PNpUybuOqrRx17Nn.webp",
+      "location": "BA, BR",
+      "lat": -12.285251,
+      "lng": -41.9294776,
+      "tags": [
+        "cloud-networking"
+      ],
+      "publishedAt": "2026-05-26T15:15:40.776Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EGbMQuqnzzu22hIFaiqwvKCAPp",
+      "title": "Building an AI study notes generator by using Amazon bedrock.",
+      "description": "By Krupa patil / AWS student leader",
+      "url": "https://builder.aws.com/content/3EGbMQuqnzzu22hIFaiqwvKCAPp",
+      "imageUrl": "",
+      "authorName": "Krupa Patil",
+      "authorAlias": "krupa610",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-26T15:04:55.230Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
+      "description": "Whether you're prepping for HackOn with Amazon 6.0 or already deep in your build — this one's for you. We're dropping a Student Builder Challenge raffle to spark ideas, share knowledge, and celebrate the student builds across India. ",
+      "url": "https://builder.aws.com/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGaKduEmR164SvWNnAFmNlhGg4/Slid.webp",
+      "authorName": "Saha, Arkodyuti",
+      "authorAlias": "arkosaha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35uV8kcyGEbrjIXqiRRx8rPhvf0.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-26T15:00:54.657Z",
+      "likesCount": 2,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3EGYRqhUDJhUTxD8JpPM69Itws9",
+      "title": "Layered Architecture ( N- Tier Architecture )",
+      "description": "A complete explanation of Layered Architecture ( N- Tier Architecture ) .",
+      "url": "https://builder.aws.com/content/3EGYRqhUDJhUTxD8JpPM69Itws9",
+      "imageUrl": "",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [],
+      "publishedAt": "2026-05-26T14:51:21.816Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/2qQlXF9gam8O385d2g29ER0zoXh",
+      "title": "European Cloud & AI Skills Hub: Free Training and Certifications for Romania's Next Generation of Builders",
+      "description": "This program aims to offer free training and certifications resources for students, tackle real-world use cases hands on through hackathons, foster employment pathways connecting certified students with hiring opportunities, and guidance along the way.  Based now on a strong partnership between AWS (AWS T&C, AWS Academy) and Amazon Development Center Romania. ",
+      "url": "https://builder.aws.com/content/2qQlXF9gam8O385d2g29ER0zoXh",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGXrZcjOG43TrGHgWQSIu5HW2q/Unti.webp",
+      "authorName": "Andra Somesan",
+      "authorAlias": "asome",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eMC3i7SqvTwm3lk6CuOCyYwoCQ.webp",
+      "location": "RO",
+      "lat": 45.9852129,
+      "lng": 24.6859225,
+      "tags": [],
+      "publishedAt": "2026-05-26T14:39:29.625Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EGKKp93vAbUwVRLdNeT3IYQEqZ",
       "title": "O QUE 6 SEMANAS COMO AWS STUDENT LEADER ME ENSINARAM SOBRE CLOUD, CARREIRA E IMPACTO REAL",
@@ -39,26 +206,6 @@
       ],
       "publishedAt": "2026-05-26T12:03:37.182Z",
       "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E9bSyPzRs8XShaZEcnWtCqiMLz",
-      "title": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk, Sell Side [Part 5]",
-      "description": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk [Part 5]",
-      "url": "https://builder.aws.com/content/3E9bSyPzRs8XShaZEcnWtCqiMLz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9bzVbAd01d3ciCav3KXmzWqOu/1772.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "dmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E6km1aTxp2D2GFPfQBpX80c0Bi.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-26T10:56:18.927Z",
-      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -103,8 +250,8 @@
         "programming"
       ],
       "publishedAt": "2026-05-26T10:06:39.949Z",
-      "likesCount": 6,
-      "commentsCount": 5
+      "likesCount": 13,
+      "commentsCount": 9
     },
     {
       "id": "/content/3EFmwjErxEwPBBGiaC4mzbrQe5b",
@@ -185,7 +332,13 @@
       "location": "",
       "lat": 0,
       "lng": 0,
-      "tags": [],
+      "tags": [
+        "ai-dlc",
+        "ai-agents",
+        "kiro-agent",
+        "agentic-ai",
+        "agents"
+      ],
       "publishedAt": "2026-05-26T06:02:17.338Z",
       "likesCount": 0,
       "commentsCount": 0
@@ -195,7 +348,7 @@
       "title": "What the Heck is an API?",
       "description": "This blog explains APIs by walking you through a restaurant experience. You sit down, read a menu, place an order and a plate comes back, and that's the same shape every API conversation takes in software. By the end you'll know enough to read API docs and recognize what's happening behind the apps you use every day.",
       "url": "https://builder.aws.com/content/3DxPxiDY3QJ3B6AZl9oqs3cTgEk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E2m8RrnqFKO43kPZIjbsio5VYL/Scre.webp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGjT7FmDXBuc37iWVeRmFkUQZ8/Scre.webp",
       "authorName": "Ifeanyi O",
       "authorAlias": "rexify",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qe0NOkG2CTZNcXKs61RHSa9O4.webp",
@@ -208,27 +361,7 @@
         "foundational"
       ],
       "publishedAt": "2026-05-26T05:51:36.107Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E9kkWBGFNBxOORb9h7ZXjBWwZW",
-      "title": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk, Sell Side [Part 6]",
-      "description": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk, Sell Side [Part 6]",
-      "url": "https://builder.aws.com/content/3E9kkWBGFNBxOORb9h7ZXjBWwZW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EA9DvP0SuSy28U2uhp0mGMIp6r/1772.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "dmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E6km1aTxp2D2GFPfQBpX80c0Bi.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-26T05:36:23.204Z",
-      "likesCount": 1,
+      "likesCount": 5,
       "commentsCount": 0
     },
     {
@@ -270,134 +403,6 @@
       "publishedAt": "2026-05-26T03:18:54.501Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EEnpU6873A8aGsDqnmZYdvPUV5",
-      "title": "Achieving an Agentic Back-Office in Oilfield Services",
-      "description": "A Prescriptive Guide to 5–10X Productivity Gains  |  2.5%–8.0% Revenue Cost Reduction",
-      "url": "https://builder.aws.com/content/3EEnpU6873A8aGsDqnmZYdvPUV5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EEnuJtVre69vOMXzA34s3izxep/Scre.webp",
-      "authorName": "Jun",
-      "authorAlias": "wjunchoi",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DM0CNdwlcTgzhQSacJ0Jn28Jbq.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "sap"
-      ],
-      "publishedAt": "2026-05-25T23:47:45.096Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E7r0du7T9KtcnZ4PtTOj2jxBmE",
-      "title": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk, Sell Side [Part 4]",
-      "description": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk, Sell Side [Part 6]",
-      "url": "https://builder.aws.com/content/3E7r0du7T9KtcnZ4PtTOj2jxBmE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9OAR2W7tJqYOYt1SoI1psnSxn/1772.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "dmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E6km1aTxp2D2GFPfQBpX80c0Bi.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-05-25T23:28:02.938Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EEkz6BguID4PpPPEwqS9WrSgmr",
-      "title": "Do Campus à Nuvem: Como o AWS Builder Center Transformou Minha Jornada e Pode Transformar a Sua",
-      "description": "O AWS Builder Center conecta a teoria universitária à prática do mercado. Com o seu AWS Builder ID gratuito, você acessa laboratórios reais, a IA Kiro e uma comunidade global. Saia da teoria, ganhe confiança técnica e alavanque sua carreira na nuvem. ",
-      "url": "https://builder.aws.com/content/3EEkz6BguID4PpPPEwqS9WrSgmr",
-      "imageUrl": "",
-      "authorName": "Henrique Pereira Zimermann",
-      "authorAlias": "henriqzimer",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34ykwjHlwdnLJODScTqAQV40cGd.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "kiro",
-        "amazon-ec2",
-        "aws-skill-builder"
-      ],
-      "publishedAt": "2026-05-25T23:26:35.452Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3DnOKmWj9HGuTMLonzLV0Yxtyr0",
-      "title": "Building Resilient Generative AI Systems for Semiconductor EDA Workloads on AWS",
-      "description": "A Practical Guide Through Distributed Availability & Distributed Compute Tasks using the AWS Well-Architected Framework Generative AI Lens.",
-      "url": "https://builder.aws.com/content/3DnOKmWj9HGuTMLonzLV0Yxtyr0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0SBCsYhyb25H843OIkvGi2mPh/_A-wi.webp",
-      "authorName": "Mario Sageth",
-      "authorAlias": "mesageth",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdrHQKGPiuK8kdaXMtcdSezWSn.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "resilience",
-        "gen-ai",
-        "aws-well-architected",
-        "distributed-systems",
-        "architecture-patterns"
-      ],
-      "publishedAt": "2026-05-25T20:36:18.768Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EEDqc8ASoFZymOUbEtYgopqgH5",
-      "title": "Artigo: Do Zero à Nuvem: Meu Guia 101 para Dominar o AWS Builder Center",
-      "description": "O AWS Builder Center conecta universitários para impulsionar suas carreiras em nuvem. No Guia de Artigos para Líderes Estudantis, a orientação é escrever com voz própria e sem medo de expor desafios. Os textos devem focar em três pilares: Identidade (sua história), Comunidade/Aprendizado (evolução com outros alunos) e Propósito/Paixão (objetivos profissionais). A regra de ouro é simplificar conceitos técnicos, focando sempre em ajudar quem está começando do zero",
-      "url": "https://builder.aws.com/content/3EEDqc8ASoFZymOUbEtYgopqgH5",
-      "imageUrl": "",
-      "authorName": "Giulia Letícia Soares",
-      "authorAlias": "giulia06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CwMtEpk3n0YmiZCZmAeOIagPOB.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "active-directory",
-        "advanced-networking",
-        "production"
-      ],
-      "publishedAt": "2026-05-25T18:54:15.498Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3E7TSjgYisfdwEma90eB33dGRmj",
-      "title": "[ES] Defensa Contra las Artes Oscuras de los data pipelines #1: fundamentos de las caidas de un data pipeline",
-      "description": "Dando fundamentos del porque un data pipeline puede caer y como debemos entender ello para definir criterios para abordar una solución",
-      "url": "https://builder.aws.com/content/3E7TSjgYisfdwEma90eB33dGRmj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9RPyA5UK5M36Mg0X50EAtU146/S3-F.webp",
-      "authorName": "Carlos Chicata",
-      "authorAlias": "ferchicata49",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B9gO2DnQ9yhcrz6FLvZUPz6pdJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [
-        "data-engineer",
-        "pipeline",
-        "failure",
-        "spanish",
-        "data-processing"
-      ],
-      "publishedAt": "2026-05-25T18:36:22.403Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -415,7 +420,7 @@
       "lng": 127.6961188,
       "tags": [],
       "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 43,
+      "likesCount": 45,
       "commentsCount": 1201
     },
     {
@@ -438,30 +443,29 @@
         "programming"
       ],
       "publishedAt": "2026-05-26T10:06:39.949Z",
-      "likesCount": 6,
-      "commentsCount": 5
+      "likesCount": 13,
+      "commentsCount": 9
     },
     {
-      "id": "/content/3DwpTl5V8cbiIA13y1fUVXHudYz",
-      "title": "Why does AI forget what you said (and how to fix it)",
-      "description": "Why does my AI get worse the longer the conversation goes and what strategies we can use to avoid it",
-      "url": "https://builder.aws.com/content/3DwpTl5V8cbiIA13y1fUVXHudYz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EE7LBuTYI7dLefgpMzPUJUF1nT/Ep-4.webp",
-      "authorName": "Rohini Gaonkar",
-      "authorAlias": "rohinigaonkar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z5Kk4rOHmIm54J4SIu8tSwIyI1.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
+      "id": "/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
+      "title": "The 4x4: Serverless Community Highlights",
+      "description": "4 community picks and 4 AWS picks on Serverless on AWS!",
+      "url": "https://builder.aws.com/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBilVcOUrygXGjcjAOa29wer9l/Scre.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
       "tags": [
-        "ai",
-        "large-language-model",
-        "beginner-projects",
-        "agentic-ai"
+        "aws-community-builders",
+        "serverless",
+        "aws-community"
       ],
-      "publishedAt": "2026-05-25T18:06:28.109Z",
-      "likesCount": 10,
-      "commentsCount": 7
+      "publishedAt": "2026-05-26T15:17:44.050Z",
+      "likesCount": 6,
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -481,7 +485,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3587,
+      "likesCount": 3588,
       "commentsCount": 337
     },
     {
@@ -503,7 +507,7 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3489,
-      "commentsCount": 1930
+      "commentsCount": 1931
     },
     {
       "id": "/content/3EBMvaPgvySi8YqeAVEg5rNJYXw",
@@ -526,7 +530,7 @@
       ],
       "publishedAt": "2026-05-24T19:49:35.841Z",
       "likesCount": 23,
-      "commentsCount": 4
+      "commentsCount": 5
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -550,24 +554,27 @@
       "commentsCount": 324
     },
     {
-      "id": "/content/3E9bSyPzRs8XShaZEcnWtCqiMLz",
-      "title": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk, Sell Side [Part 5]",
-      "description": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk [Part 5]",
-      "url": "https://builder.aws.com/content/3E9bSyPzRs8XShaZEcnWtCqiMLz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9bzVbAd01d3ciCav3KXmzWqOu/1772.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "dmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E6km1aTxp2D2GFPfQBpX80c0Bi.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
       "tags": [
-        "training-and-certification",
-        "aws-certification"
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
       ],
-      "publishedAt": "2026-05-26T10:56:18.927Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1943,
+      "commentsCount": 275
     },
     {
       "id": "/content/3EBBP64yr1XgMhatjI9juHgarxc",
@@ -613,7 +620,7 @@
       ],
       "publishedAt": "2026-05-25T11:15:54.785Z",
       "likesCount": 8,
-      "commentsCount": 2
+      "commentsCount": 3
     }
   ]
 }
