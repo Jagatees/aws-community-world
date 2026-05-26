@@ -1,6 +1,104 @@
 {
-  "updatedAt": "2026-05-26T00:48:27.820Z",
+  "updatedAt": "2026-05-26T07:17:38.349Z",
   "latest": [
+    {
+      "id": "/content/3Cxy5OA1H9DEQv7VQfwr4o1J6fW",
+      "title": "Applying AI-DLC to a Team Project: How ARMIQ Extended It with Subagents and Custom Skills",
+      "description": "A practical case study of running two projects in parallel — a Brownfield Node.js modernization and a Greenfield TypeScript service on AWS Lambda — each through its own AI-DLC workflow, reinforced with a Main–Subagent topology, an enforced response schema, and Custom Skills for requirements generation, git merging, and per-Unit code review.",
+      "url": "https://builder.aws.com/content/3Cxy5OA1H9DEQv7VQfwr4o1J6fW",
+      "imageUrl": "",
+      "authorName": "Keehyun Jang",
+      "authorAlias": "keehyun",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EFXf4kyBeZidlBVx5uqU9u7z4k.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-26T06:02:17.338Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DxPxiDY3QJ3B6AZl9oqs3cTgEk",
+      "title": "What the Heck is an API?",
+      "description": "This blog explains APIs by walking you through a restaurant experience. You sit down, read a menu, place an order and a plate comes back, and that's the same shape every API conversation takes in software. By the end you'll know enough to read API docs and recognize what's happening behind the apps you use every day.",
+      "url": "https://builder.aws.com/content/3DxPxiDY3QJ3B6AZl9oqs3cTgEk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E2m8RrnqFKO43kPZIjbsio5VYL/Scre.webp",
+      "authorName": "Ifeanyi O",
+      "authorAlias": "rexify",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qe0NOkG2CTZNcXKs61RHSa9O4.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "api",
+        "aws-api",
+        "foundational"
+      ],
+      "publishedAt": "2026-05-26T05:51:36.107Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E9kkWBGFNBxOORb9h7ZXjBWwZW",
+      "title": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk [Part 6]",
+      "description": "AWS Financial Service Engineer 20 Exam Questions Domain 1: Trading Desk [Part 6]",
+      "url": "https://builder.aws.com/content/3E9kkWBGFNBxOORb9h7ZXjBWwZW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EA9DvP0SuSy28U2uhp0mGMIp6r/1772.webp",
+      "authorName": "Dan Martin",
+      "authorAlias": "dmartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E6km1aTxp2D2GFPfQBpX80c0Bi.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-05-26T05:36:23.204Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E7S9SANtf4iodpZ7hKKhIOBStm",
+      "title": "Less Toil, More Flow - Automating the Path from Request to Implementation",
+      "description": "How I connected Slack, Linear, and Kiro to automate ticket creation, AI-assisted triage, and implementation planning for a platform team supporting hundreds of engineers.",
+      "url": "https://builder.aws.com/content/3E7S9SANtf4iodpZ7hKKhIOBStm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EFT4E9glti6mbU69ffc6f7PNGX/Chat.webp",
+      "authorName": "Davide de Paolis",
+      "authorAlias": "ddepaolis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wD9zhaxBQZVVeUDCO2D3K2YMfE.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "ai-assisted-workflows",
+        "ai-dlc",
+        "kiro",
+        "developer-productivity",
+        "productivity"
+      ],
+      "publishedAt": "2026-05-26T05:28:25.693Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EFDXfsIpHcQTBpkQuNsDCdYnPh",
+      "title": "Building a Production Serverless URL Shortener on AWS — 21 Articles, Every Test Run for Real",
+      "description": "A lighthearted series about serverless.",
+      "url": "https://builder.aws.com/content/3EFDXfsIpHcQTBpkQuNsDCdYnPh",
+      "imageUrl": "",
+      "authorName": "Nghĩa (Kai) Huỳnh Lê Nhất",
+      "authorAlias": "kai13",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uCDnia0mH7ECJ0XPWTYaoAvmT5.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-26T03:18:54.501Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EEnpU6873A8aGsDqnmZYdvPUV5",
       "title": "Achieving an Agentic Back-Office in Oilfield Services",
@@ -18,7 +116,7 @@
         "sap"
       ],
       "publishedAt": "2026-05-25T23:47:45.096Z",
-      "likesCount": 0,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -105,52 +203,25 @@
       "publishedAt": "2026-05-25T18:54:15.498Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
+    }
+  ],
+  "trending": [
     {
-      "id": "/content/3E7TSjgYisfdwEma90eB33dGRmj",
-      "title": "[ES] Defensa Contra las Artes Oscuras de los data pipelines #1: fundamentos de las caidas de un data pipeline",
-      "description": "Dando fundamentos del porque un data pipeline puede caer y como debemos entender ello para definir criterios para abordar una solución",
-      "url": "https://builder.aws.com/content/3E7TSjgYisfdwEma90eB33dGRmj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9RPyA5UK5M36Mg0X50EAtU146/S3-F.webp",
-      "authorName": "Carlos Chicata",
-      "authorAlias": "ferchicata49",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B9gO2DnQ9yhcrz6FLvZUPz6pdJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
-      "tags": [
-        "data-engineer",
-        "pipeline",
-        "failure",
-        "spanish",
-        "data-processing"
-      ],
-      "publishedAt": "2026-05-25T18:36:22.403Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EE9qsrm96beDG6zCTfTmtaYTPn",
-      "title": "Pre-Action SRE Gate on AWS — Querying Error Budget, AQDD, and HER from CloudWatch Before Agent Execution",
-      "description": "The Pre-Action Gate needs to read your live SRE signals from CloudWatch before the agent acts. Here's the Lambda pattern that does it.",
-      "url": "https://builder.aws.com/content/3EE9qsrm96beDG6zCTfTmtaYTPn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EEA1RtpedCDijx4vE1XZPNh8Vk/lates.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "agent-to-agent",
-        "agent-hooks",
-        "sre",
-        "devops"
-      ],
-      "publishedAt": "2026-05-25T18:19:49.601Z",
-      "likesCount": 3,
-      "commentsCount": 1
+      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
+      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
+      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
+      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
+      "authorName": "YonghoChoi",
+      "authorAlias": "yongho",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
+      "location": "KR",
+      "lat": 36.638392,
+      "lng": 127.6961188,
+      "tags": [],
+      "publishedAt": "2026-05-19T23:02:34.800Z",
+      "likesCount": 41,
+      "commentsCount": 1201
     },
     {
       "id": "/content/3DwpTl5V8cbiIA13y1fUVXHudYz",
@@ -171,67 +242,50 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-05-25T18:06:28.109Z",
-      "likesCount": 1,
-      "commentsCount": 1
+      "likesCount": 4,
+      "commentsCount": 5
     },
     {
-      "id": "/content/3EE57dq83qEYsd59L8Enj6rk4JB",
-      "title": "Desmistificando a Nuvem: O Guia da AWS para Iniciantes e Veteranos",
-      "description": "Você sente que falta algo entre o que aprende na faculdade e o que o mercado de tecnologia realmente exige? 🎓 No meu novo artigo, desmistifico a jornada na nuvem e mostro por que o AWS Builder Center é o ponto de partida ideal para qualquer carreira",
-      "url": "https://builder.aws.com/content/3EE57dq83qEYsd59L8Enj6rk4JB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EE5oSEFeQRop13NexkUHeEoMC3/Chat.webp",
-      "authorName": "MARIA PAULA DE CASTRO REIS",
-      "authorAlias": "sert7",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUJowI5X54UqGGsJjNQ44dLuUx.webp",
-      "location": "GO, BR",
-      "lat": -15.9323662,
-      "lng": -50.1392928,
-      "tags": [],
-      "publishedAt": "2026-05-25T17:48:19.556Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EE3Vue45iUgGvXDwuEJXMOSy21",
-      "title": "Como a Condor está utilizando IA generativa e machine learning para transformar suporte e previsão de vendas",
-      "description": "Como a Condor está utilizando IA generativa e machine learning para transformar suporte e previsão de vendas com a tecnologia aws.",
-      "url": "https://builder.aws.com/content/3EE3Vue45iUgGvXDwuEJXMOSy21",
-      "imageUrl": "",
-      "authorName": "Juliana Freire de Oliveira",
-      "authorAlias": "julianaintech",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8STB5h3zC7Zv2aydMOpYBNOoo.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
       "tags": [
-        "students",
-        "student-builders",
-        "visual-studio-code",
-        "visual-studio",
-        "aws-student-builders-groups"
+        "social-impact",
+        "APJC",
+        "aideas-2025"
       ],
-      "publishedAt": "2026-05-25T17:27:56.958Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    }
-  ],
-  "trending": [
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3587,
+      "commentsCount": 337
+    },
     {
-      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
-      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
-      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
-      "authorName": "YonghoChoi",
-      "authorAlias": "yongho",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [],
-      "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 40,
-      "commentsCount": 1201
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DAMRFH0OdcmtsQD5RHMraMWGBU.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3489,
+      "commentsCount": 1930
     },
     {
       "id": "/content/3EBMvaPgvySi8YqeAVEg5rNJYXw",
@@ -253,73 +307,8 @@
         "mcp"
       ],
       "publishedAt": "2026-05-24T19:49:35.841Z",
-      "likesCount": 20,
+      "likesCount": 21,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3585,
-      "commentsCount": 337
-    },
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DAMRFH0OdcmtsQD5RHMraMWGBU.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3488,
-      "commentsCount": 1930
-    },
-    {
-      "id": "/content/3EE9qsrm96beDG6zCTfTmtaYTPn",
-      "title": "Pre-Action SRE Gate on AWS — Querying Error Budget, AQDD, and HER from CloudWatch Before Agent Execution",
-      "description": "The Pre-Action Gate needs to read your live SRE signals from CloudWatch before the agent acts. Here's the Lambda pattern that does it.",
-      "url": "https://builder.aws.com/content/3EE9qsrm96beDG6zCTfTmtaYTPn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EEA1RtpedCDijx4vE1XZPNh8Vk/lates.webp",
-      "authorName": "Ajay Devineni",
-      "authorAlias": "ajaydevineni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "ai",
-        "agent-to-agent",
-        "agent-hooks",
-        "sre",
-        "devops"
-      ],
-      "publishedAt": "2026-05-25T18:19:49.601Z",
-      "likesCount": 3,
-      "commentsCount": 1
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -339,27 +328,26 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2881,
+      "likesCount": 2882,
       "commentsCount": 324
     },
     {
-      "id": "/content/3E7r0du7T9KtcnZ4PtTOj2jxBmE",
-      "title": "AWS Financial Service Engineer 10 Exam Questions Domain 1: Trading Desk [Part 4]",
-      "description": "AWS Financial Service Engineer 10 Exam Questions Domain 1: Trading Desk [Part 4]",
-      "url": "https://builder.aws.com/content/3E7r0du7T9KtcnZ4PtTOj2jxBmE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E9OAR2W7tJqYOYt1SoI1psnSxn/1772.webp",
-      "authorName": "Dan Martin",
-      "authorAlias": "dmartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E6km1aTxp2D2GFPfQBpX80c0Bi.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
+      "id": "/content/3DuNqVDx7jW0xPTXQyiqFUmpSHU",
+      "title": "AWS Summit Japan AI-DLCハッカソン書類審査結果",
+      "description": "AWS Summit Japan 2026 AI-DLCハッカソンの書類審査を実施しました。「人をダメにするサービス」という挑戦的なテーマに対して、想定を超える117チームからエントリーがありました。審査員全員がAIを使わない縛りで、創造性・ビジネス意図・Unit分解・ドキュメント品質の4観点から全チームを人間の目で評価し、15チームが書類選考を通過しました。5/30の予選会を経て上位5チームがAWS Summit Japan 2026決勝（幕張メッセ）へ進出します。",
+      "url": "https://builder.aws.com/content/3DuNqVDx7jW0xPTXQyiqFUmpSHU",
+      "imageUrl": "",
+      "authorName": "Satsuki",
+      "authorAlias": "fsatsuki73562",
+      "authorAvatarUrl": "",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
       "tags": [
-        "training-and-certification",
-        "aws-certification"
+        "ai-dlc"
       ],
-      "publishedAt": "2026-05-25T23:28:02.938Z",
-      "likesCount": 1,
+      "publishedAt": "2026-05-20T14:52:27.425Z",
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -386,6 +374,29 @@
       "commentsCount": 6
     },
     {
+      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
+      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
+      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
+      "authorName": "Athelesh Balachandran",
+      "authorAlias": "athelesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aideas-2025",
+        "commercial-solutions",
+        "APJC",
+        "agentic-ai",
+        "kiro"
+      ],
+      "publishedAt": "2026-04-17T12:10:37.145Z",
+      "likesCount": 1943,
+      "commentsCount": 275
+    },
+    {
       "id": "/content/3EDGlENWvAYEncs9mTvvRNhsMTq",
       "title": "AWS Certified Cloud Practitioner Series – Part 4",
       "description": "A concise overview of key AWS concepts including Local Zones, global architectures, messaging patterns, machine learning services, monitoring, and networking fundamentals, explained in a simple and practical way for exam preparation and real-world understanding. ",
@@ -405,24 +416,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-25T11:15:54.785Z",
-      "likesCount": 6,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EAsIpPLch7qYQORH0QRLSuv8Tk",
-      "title": "Enterprise AI Agent Governance: From Prompt Safety to Action Safety on AWS",
-      "description": "A practical framework for governing enterprise AI Agents with enforceable identity, policy, tool control, runtime isolation, audit, and earned autonomy on AWS.",
-      "url": "https://builder.aws.com/content/3EAsIpPLch7qYQORH0QRLSuv8Tk",
-      "imageUrl": "",
-      "authorName": "Mayinchen",
-      "authorAlias": "yincma",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31ttOyRTdxo3ybFpwh98vOoNY3o.webp",
-      "location": "Beijing, CN",
-      "lat": 39.9057136,
-      "lng": 116.3912972,
-      "tags": [],
-      "publishedAt": "2026-05-25T15:17:58.571Z",
-      "likesCount": 3,
+      "likesCount": 7,
       "commentsCount": 1
     }
   ]
