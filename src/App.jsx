@@ -16,6 +16,7 @@ const CATEGORY_COLORS = {
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
   'kiro-ambassadors': '#8B5CF6',
+  'aws-ambassadors': '#2D72D2',
 };
 
 const CATEGORY_LABELS = {
@@ -24,6 +25,7 @@ const CATEGORY_LABELS = {
   'user-groups': 'User Groups',
   'cloud-clubs': 'Student Builder Groups',
   'kiro-ambassadors': 'Kiro Ambassador',
+  'aws-ambassadors': 'AWS Ambassador',
 };
 
 const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
@@ -55,6 +57,7 @@ export default function App() {
 
   const { error, members, loading } = useCategory(activeCategory);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading;
+  const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
   const ActiveGlobeScene =
     globeDesign === 'classic'
@@ -312,13 +315,13 @@ export default function App() {
           activeCategory={activeCategory}
           onChange={handleCategoryChange}
           darkMode={darkMode}
-          countries={isNewsView || isKiroView ? [] : countries}
-          countryCounts={isNewsView || isKiroView ? {} : countryCounts}
+          countries={isNewsView || isKiroView || isAwsAmbassadorView ? [] : countries}
+          countryCounts={isNewsView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
           selectedCountry={selectedCountry}
           onCountryChange={setSelectedCountry}
         />
 
-        {!isNewsView && !isKiroView && hasTagFilters && (
+        {!isNewsView && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -345,14 +348,14 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          {isKiroView ? (
+          {isKiroView || isAwsAmbassadorView ? (
             <div className="relative h-full min-h-0 overflow-hidden">
               <div className="absolute inset-0">
                 {globeReady ? (
                   <Suspense fallback={renderGlobeLoading()}>
                     <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
-                      <ActiveGlobeScene
-                        category="kiro-ambassadors"
+                      <CobeGlobeScene
+                        category={isAwsAmbassadorView ? 'aws-ambassadors' : 'kiro-ambassadors'}
                         members={[]}
                         onMarkerClick={handleMarkerClick}
                         cardOpen={false}
@@ -371,26 +374,34 @@ export default function App() {
               <div
                 className="pointer-events-none absolute inset-0 z-10"
                 style={{
-                  background: darkMode
-                    ? 'radial-gradient(circle at center, rgba(7, 17, 26, 0.22) 0%, rgba(7, 17, 26, 0.72) 72%)'
-                    : 'radial-gradient(circle at center, rgba(245, 250, 255, 0.08) 0%, rgba(230, 241, 250, 0.74) 72%)',
+                  background: isAwsAmbassadorView
+                    ? darkMode
+                      ? 'radial-gradient(circle at center, rgba(7, 17, 26, 0.02) 0%, rgba(7, 17, 26, 0.44) 78%)'
+                      : 'radial-gradient(circle at center, rgba(245, 250, 255, 0.02) 0%, rgba(230, 241, 250, 0.46) 78%)'
+                    : darkMode
+                      ? 'radial-gradient(circle at center, rgba(7, 17, 26, 0.22) 0%, rgba(7, 17, 26, 0.72) 72%)'
+                      : 'radial-gradient(circle at center, rgba(245, 250, 255, 0.08) 0%, rgba(230, 241, 250, 0.74) 72%)',
                 }}
               />
               <div
-                className="pointer-events-none relative z-20 mx-auto flex h-full max-w-md flex-col items-center justify-center px-6 text-center"
+                className={`pointer-events-none relative z-20 mx-auto flex h-full max-w-md flex-col items-center px-6 text-center ${isAwsAmbassadorView ? 'justify-end pb-24' : 'justify-center'}`}
                 style={{
                   color: darkMode ? '#DCE7F0' : '#17324B',
                 }}
               >
-                <div className="kiro-buddy-sprite mb-4" role="img" aria-label="Kiro Ambassador working" />
+                {!isAwsAmbassadorView && (
+                  <div className="kiro-buddy-sprite mb-4" role="img" aria-label="Kiro Ambassador working" />
+                )}
                 <h1 className="text-2xl font-bold" style={{ color: darkMode ? '#FFFFFF' : '#0F1923' }}>
-                  Kiro Ambassador
+                  {isAwsAmbassadorView ? 'AWS Ambassador' : 'Kiro Ambassador'}
                 </h1>
                 <p className="mt-3 text-sm font-semibold" style={{ color: darkMode ? '#DCE7F0' : '#17324B' }}>
-                  Ambassador coming soon.
+                  {isAwsAmbassadorView ? 'Collecting data coming soon.' : 'Ambassador coming soon.'}
                 </p>
                 <p className="mt-2 max-w-sm text-sm leading-6" style={{ color: darkMode ? '#8B9BAA' : '#5a7a99' }}>
-                  Working on finding all ambassadors to add to the globe.
+                  {isAwsAmbassadorView
+                    ? 'Working on finding AWS Ambassadors to add to the globe.'
+                    : 'Working on finding all ambassadors to add to the globe.'}
                 </p>
               </div>
             </div>
@@ -819,7 +830,7 @@ export default function App() {
           )}
         </div>
 
-        {!isNewsView && !isKiroView && selectedMember && (
+        {!isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
           <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
         )}
 

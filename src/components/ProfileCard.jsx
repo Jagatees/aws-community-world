@@ -6,6 +6,7 @@ const CATEGORY_LABELS = {
   'user-groups': 'User Group',
   'cloud-clubs': 'Student Builder Group',
   'kiro-ambassadors': 'Kiro Ambassador',
+  'aws-ambassadors': 'AWS Ambassador',
 };
 
 function LoadingSpinner({ size = 16 }) {
@@ -340,22 +341,22 @@ function ClusterListView({ members, darkMode }) {
   const itemBg = darkMode ? '#0F1923' : '#f0f7ff';
 
   return (
-    <div className="flex w-full flex-col gap-1">
+    <div className="flex w-full min-w-0 flex-col gap-1 overflow-hidden">
       <h2 className="mb-2 text-center text-base font-bold" style={{ color: nameColor }}>
         {members.length} members at this location
       </h2>
-      <ul className="flex max-h-[260px] flex-col gap-2 overflow-y-auto pr-1">
+      <ul className="flex max-h-[360px] flex-col gap-2 overflow-y-auto overflow-x-hidden pr-1">
         {members.map((m) => (
           <li
             key={m.id}
-            className="flex items-center gap-3 rounded-lg p-2"
+            className="flex items-start gap-3 rounded-lg p-3"
             style={{ backgroundColor: itemBg }}
           >
             <LeaderAvatarStack member={m} fallbackName={m.name} fallbackImageUrl={m.avatarUrl} size="sm" />
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold" style={{ color: nameColor }}>
-                <span className="inline-flex min-w-0 items-center gap-1.5">
-                  <span className="truncate">{m.name}</span>
+              <p className="text-sm font-semibold leading-tight" style={{ color: nameColor }}>
+                <span className="inline-flex min-w-0 flex-wrap items-center gap-1.5">
+                  <span className="min-w-0 break-words">{m.name}</span>
                   {m.isNew && <NewMemberBadge compact />}
                 </span>
               </p>
@@ -380,7 +381,7 @@ function ClusterListView({ members, darkMode }) {
                 href={m.profileUrl || m.joinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 rounded border px-3 py-1 text-xs font-semibold"
+                className="mt-1 flex-shrink-0 rounded border px-3 py-1 text-xs font-semibold"
                 style={{ borderColor: '#FF9900', color: '#FF9900' }}
               >
                 {m.category === 'user-groups' || m.category === 'cloud-clubs' ? 'Join' : 'Follow'}
@@ -422,7 +423,7 @@ export default function ProfileCard({ member, onClose, darkMode }) {
     >
       <div
         ref={cardRef}
-        className="relative w-96 p-5"
+        className="relative w-[min(92vw,540px)] p-5"
         style={{
           backgroundColor: cardBg,
           border: `1px solid ${cardBorder}`,

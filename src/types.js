@@ -1,5 +1,5 @@
 /**
- * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'news' | 'kiro-ambassadors'} CategoryKey
+ * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors'} CategoryKey
  */
 
 /**

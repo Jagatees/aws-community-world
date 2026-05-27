@@ -9,6 +9,7 @@ const CATEGORY_COLORS = {
   'community-builders': '#1A9C3E',
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
+  'aws-ambassadors': '#2D72D2',
   'news': '#FF9900',
 };
 
