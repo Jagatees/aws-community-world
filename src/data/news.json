@@ -1,6 +1,96 @@
 {
-  "updatedAt": "2026-05-27T07:31:36.148Z",
+  "updatedAt": "2026-05-27T13:14:56.197Z",
   "latest": [
+    {
+      "id": "/content/3EIomY0ovqCENiSoNmG0EU7eMni",
+      "title": "The Word I Heard as a Fresher and Met Again Years Later: \"Cloud\"",
+      "description": "In 2013, after passing out from college, a random conversation, introduced me to a word I barely understood - \"Cloud\". A decade later, that curiosity transformed my career from a job-seeking fresher into a Cloud Architect, 3xAWS Community Builder, and AI Infrastructure Engineer.\nThis is my journey of persistence, self-learning, and following a curiosity that refused to leave.",
+      "url": "https://builder.aws.com/content/3EIomY0ovqCENiSoNmG0EU7eMni",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJ24DqMVLVeCuVPwRqN0euioqc/thec.webp",
+      "authorName": "Mohit Mishra",
+      "authorAlias": "mohitmishra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EIpewMxsMY6jqrfcMwguBNfSTM.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "career",
+        "tech-journey",
+        "aws-tech-tales",
+        "aws-community-builders",
+        "skill"
+      ],
+      "publishedAt": "2026-05-27T11:52:30.979Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DytKOUrprpF9QWDAZhFxRzJKW9",
+      "title": "Exploring Generative AI with AWS Builder Center",
+      "description": "Learn how to easily start your AI journey and access generative AI resources through AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3DytKOUrprpF9QWDAZhFxRzJKW9",
+      "imageUrl": "",
+      "authorName": "Soham Shelke",
+      "authorAlias": "sohamshelke",
+      "authorAvatarUrl": "",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-ambassador",
+        "ai",
+        "builder-center",
+        "students"
+      ],
+      "publishedAt": "2026-05-27T08:56:40.367Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EIgYPCDFwDqoFHRyY8NF0x5whJ",
+      "title": "Infrastructure design on AWS Apache Kafka: Build Trading system",
+      "description": "Highlights market data feeds, trade surveillance, RegSCI resiliency, BC/DR, EOD processing, NYSE BQT/Pillar/OPRA-style feeds, AWS PrivateLink access in Hong Kong, and Kafka Express brokers; the MSK Q&A explains Amazon MSK managed Kafka operations, brokers, partitions, replication, Express brokers, Serverless, security, monitoring, Replicator, scaling, schema registry, and integrations.",
+      "url": "https://builder.aws.com/content/3EIgYPCDFwDqoFHRyY8NF0x5whJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EIguY7YQS3WGxkTFSdixcSKahz/og-h.webp",
+      "authorName": "Dan",
+      "authorAlias": "damartin",
+      "authorAvatarUrl": "",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "fintech",
+        "financial-services-industry",
+        "financial-services",
+        "finance"
+      ],
+      "publishedAt": "2026-05-27T08:50:26.518Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EIaBUHcJkrGlnBd6oZO95PNbs5",
+      "title": "I Googled \"How to Build an AI Agent\" for Weeks — Then Just Did This",
+      "description": "I spent weeks researching how to build an AI agent and got nowhere. Here's the simple approach that actually worked — no fluff, no PhD required.",
+      "url": "https://builder.aws.com/content/3EIaBUHcJkrGlnBd6oZO95PNbs5",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EIag5HJJfstu9J33dCWl27ZQxO/how-.webp",
+      "authorName": "Kevin Anderson",
+      "authorAlias": "andersonkevin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bpy5IqFhxpGI0KdELekpzHT4aN.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "ai-agents",
+        "agentic-ai",
+        "ai",
+        "generative-ai",
+        "artificial-intelligence"
+      ],
+      "publishedAt": "2026-05-27T07:59:06.085Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EIKvqitO7dO3mxPqKRBKAIVXHp",
       "title": "What Students Need to Know About Building with AWS",
@@ -40,8 +130,8 @@
         "amazon-cloudfront"
       ],
       "publishedAt": "2026-05-27T04:38:09.215Z",
-      "likesCount": 2,
-      "commentsCount": 2
+      "likesCount": 5,
+      "commentsCount": 3
     },
     {
       "id": "/content/3EI0s9DkofJ7y9G2rMhfjnTCn9d",
@@ -133,81 +223,32 @@
       "publishedAt": "2026-05-27T00:48:47.078Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EHi59pnHgDdHbGp9my7E3pU4Kf",
-      "title": "Senhas fortes — a base de tudo",
-      "description": "Você usa a mesma senha em vários sites? Ainda guarda suas senhas em bloco de notas ou na memória? Este artigo explica por que senhas fracas são um dos maiores riscos para sua segurança digital — e como criar e gerenciar senhas fortes de forma simples, sem precisar decorar combinações impossíveis.",
-      "url": "https://builder.aws.com/content/3EHi59pnHgDdHbGp9my7E3pU4Kf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EHiJkKlQIZB9F1GwgStqwIkZVs/5-di.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "ai-security",
-        "cloud-security",
-        "cybersecurity"
-      ],
-      "publishedAt": "2026-05-27T00:31:46.834Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EGDhTJMcPEzBjY4Ndyk18JJCa9",
-      "title": "PadippuAI — Building Tamil Nadu's First Open Engineering-Admissions MCP Server with Amazon Nova Pro",
-      "description": "Most Tamil Nadu students miss 80% of scholarships they qualify for and choose engineering colleges blind to placement data. This post walks through building a bilingual English + Tamil AI agent on Amazon Nova Pro that unifies TNEA cutoffs, scholarships, NIRF ranks, fees and career pathways behind a custom MCP server — reusable by Claude Desktop and any future agent.\n",
-      "url": "https://builder.aws.com/content/3EGDhTJMcPEzBjY4Ndyk18JJCa9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGQGHXQGhG2SJEYITVAMjBoSqW/Chat.webp",
-      "authorName": "DHILIP S E",
-      "authorAlias": "dhilip4",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyoM97CSl2I5UcKRx44fc6KeFX.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [],
-      "publishedAt": "2026-05-27T00:02:23.632Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EHa4dX9xzZmfD2Q7gJINI9Zf1G",
-      "title": "Karpenter em Produção: Guia Prático para Escalar seu Cluster Kubernetes",
-      "description": "O Karpenter observa pods Pending e provisiona o nó ideal em segundos — sem ASGs, sem node groups fixos. Ele escolhe tipo de instância, AZ e Spot/On-Demand automaticamente. Em produção, a diferença é clara: consolidação automática remove nós ociosos, diversificação de instâncias reduz interrupções Spot, e você para de pagar por capacidade parada. Neste artigo cubro instalação, NodePool, EC2NodeClass, tags e armadilhas comuns. \n\n#Kubernetes #AWS #EKS #Karpenter #DevOps",
-      "url": "https://builder.aws.com/content/3EHa4dX9xzZmfD2Q7gJINI9Zf1G",
-      "imageUrl": "",
-      "authorName": "Ismael Cabral",
-      "authorAlias": "ismael",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2jzI3VFC1zPjnpYOl2gTOkv3tqk.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [],
-      "publishedAt": "2026-05-26T23:49:00.525Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/39ntkeuvBmcDaI8YVIV7jTdS042",
-      "title": "Integrating Kiro with Databricks MCP Servers: A Complete Guide",
-      "description": "Build Agentic Applications connecting to Databricks hosted MCP servers Unity Catalog, SQL, Vector Search, and Genie Space.  ",
-      "url": "https://builder.aws.com/content/39ntkeuvBmcDaI8YVIV7jTdS042",
-      "imageUrl": "",
-      "authorName": "Venkatavaradhan Viswanathan",
-      "authorAlias": "visvenky",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CibtTFeBknEicm4NRkTcbDFhXI.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-26T23:32:53.161Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3E6WMwQSkjtXCHz68qE9nTYR1Se",
+      "title": "AWS Summit Amsterdam Attendee Exclusive: Builder Question of the Day",
+      "description": "If you're attending the AWS Summit in Amsterdam, come say hi at the Developer Community Zone and get involved in our Builder Question of the Day challenge! ",
+      "url": "https://builder.aws.com/content/3E6WMwQSkjtXCHz68qE9nTYR1Se",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E6Y7SfjCgEEjX0JLcDi41T4HSO/AWS-.webp",
+      "authorName": "Francesca Sassi",
+      "authorAlias": "sasfran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DLS39q86Uz620ebCkEyW9am9kJ.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "agentic-ai",
+        "ai-for-developers",
+        "aspiring-developer",
+        "developer-productivity",
+        "developer-tools"
+      ],
+      "publishedAt": "2026-05-23T06:27:51.195Z",
+      "likesCount": 3,
+      "commentsCount": 230
+    },
     {
       "id": "/content/3EH5yjrhmZNLypXilefNezY3s1p",
       "title": "I Coded My Portfolio From Scratch. No Templates.",
@@ -228,8 +269,27 @@
         "technology-frameworks"
       ],
       "publishedAt": "2026-05-26T19:24:14.659Z",
-      "likesCount": 15,
-      "commentsCount": 18
+      "likesCount": 16,
+      "commentsCount": 19
+    },
+    {
+      "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
+      "description": "Whether you're prepping for HackOn with Amazon 6.0 or already deep in your build — this one's for you. We're dropping a Student Builder Challenge raffle to spark ideas, share knowledge, and celebrate the student builds across India. ",
+      "url": "https://builder.aws.com/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGaKduEmR164SvWNnAFmNlhGg4/Slid.webp",
+      "authorName": "Saha, Arkodyuti",
+      "authorAlias": "arkosaha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35uV8kcyGEbrjIXqiRRx8rPhvf0.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-26T15:00:54.657Z",
+      "likesCount": 18,
+      "commentsCount": 209
     },
     {
       "id": "/content/3EFzloOszRiAWRMbI3zRdeCVREV",
@@ -252,7 +312,7 @@
       ],
       "publishedAt": "2026-05-26T10:06:39.949Z",
       "likesCount": 18,
-      "commentsCount": 21
+      "commentsCount": 22
     },
     {
       "id": "/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
@@ -274,8 +334,8 @@
         "amazon-cloudfront"
       ],
       "publishedAt": "2026-05-27T04:38:09.215Z",
-      "likesCount": 2,
-      "commentsCount": 2
+      "likesCount": 5,
+      "commentsCount": 3
     },
     {
       "id": "/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
@@ -295,8 +355,8 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-26T15:17:44.050Z",
-      "likesCount": 12,
-      "commentsCount": 1
+      "likesCount": 14,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -317,28 +377,7 @@
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3588,
-      "commentsCount": 337
-    },
-    {
-      "id": "/content/3EHi59pnHgDdHbGp9my7E3pU4Kf",
-      "title": "Senhas fortes — a base de tudo",
-      "description": "Você usa a mesma senha em vários sites? Ainda guarda suas senhas em bloco de notas ou na memória? Este artigo explica por que senhas fracas são um dos maiores riscos para sua segurança digital — e como criar e gerenciar senhas fortes de forma simples, sem precisar decorar combinações impossíveis.",
-      "url": "https://builder.aws.com/content/3EHi59pnHgDdHbGp9my7E3pU4Kf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EHiJkKlQIZB9F1GwgStqwIkZVs/5-di.webp",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "ai-security",
-        "cloud-security",
-        "cybersecurity"
-      ],
-      "publishedAt": "2026-05-27T00:31:46.834Z",
-      "likesCount": 4,
-      "commentsCount": 1
+      "commentsCount": 338
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -359,24 +398,7 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3489,
-      "commentsCount": 1932
-    },
-    {
-      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
-      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
-      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
-      "authorName": "YonghoChoi",
-      "authorAlias": "yongho",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [],
-      "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 46,
-      "commentsCount": 1201
+      "commentsCount": 1933
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -400,27 +422,21 @@
       "commentsCount": 324
     },
     {
-      "id": "/content/3EBMvaPgvySi8YqeAVEg5rNJYXw",
-      "title": "Building AI Agents from Zero to Hero",
-      "description": "Built AI agents with Strands SDK, Bedrock, and MCP from simple chatbots to an AWS Study Buddy with memory and tools.",
-      "url": "https://builder.aws.com/content/3EBMvaPgvySi8YqeAVEg5rNJYXw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBTkdpB4kzxZQ7RjuboktNhvZ2/Chat.webp",
-      "authorName": "Dineshraj Dhanapathy",
-      "authorAlias": "dd1",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33aP9VXHRAELXa82Vqwlf5tvUuz.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "amazon-bedrock",
-        "strands-agents",
-        "python",
-        "amazon-nova",
-        "mcp"
-      ],
-      "publishedAt": "2026-05-24T19:49:35.841Z",
-      "likesCount": 25,
-      "commentsCount": 5
+      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
+      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
+      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
+      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
+      "authorName": "YonghoChoi",
+      "authorAlias": "yongho",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
+      "location": "KR",
+      "lat": 36.638392,
+      "lng": 127.6961188,
+      "tags": [],
+      "publishedAt": "2026-05-19T23:02:34.800Z",
+      "likesCount": 46,
+      "commentsCount": 1201
     }
   ]
 }
