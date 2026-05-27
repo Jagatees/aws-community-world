@@ -1,10 +1,347 @@
 {
-  "updatedAt": "2026-05-27T13:14:56.197Z",
+  "updatedAt": "2026-05-27T18:50:55.849Z",
   "latest": [
     {
+      "id": "/content/3EJnXcoQ9gibR0Ci1DZyyu594wx",
+      "title": "Cómo construí mi primer Agente de IA",
+      "description": "Te muestro a un alto nivel cómo construí mi primer agente de IA usando un SDK llamado Strands Agents. Te explico los componentes principales de un agente, y lo sencillo que hace el trabajo Strands para conectar estos.",
+      "url": "https://builder.aws.com/content/3EJnXcoQ9gibR0Ci1DZyyu594wx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJq17v5ZtvWZypJE2UU7lUTmdZ/01-a.webp",
+      "authorName": "Ramses Mata",
+      "authorAlias": "rmatah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38U51jarchPyY77h36ZiGgQnGbi.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "beginner-projects",
+        "spanish"
+      ],
+      "publishedAt": "2026-05-27T18:33:51.517Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJmslt8ryIZeYQqEV0I23sMfVb",
+      "title": "¿Qué es un Agente de IA? Explicado para devs",
+      "description": "Explica qué es un agente de IA y cómo se diferencia de un modelo de un agente. Explicado como un sistema que usa un modelo como cerebro para razonar, tomar decisiones y ejecutar acciones a través de herramientas, funcionando en un loop hasta completar la tarea.",
+      "url": "https://builder.aws.com/content/3EJmslt8ryIZeYQqEV0I23sMfVb",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJqG4amT7cVYYQ4jU5s95rhS86/comp.webp",
+      "authorName": "Ramses Mata",
+      "authorAlias": "rmatah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38U51jarchPyY77h36ZiGgQnGbi.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "spanish",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-05-27T18:20:11.622Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJkBhWduOMWXicVuLPPe7XbOdy",
+      "title": "¿Qué es un Modelo de IA? Explicado para devs",
+      "description": "Explica qué es un modelo de IA desde la perspectiva de un developer, cómo funciona a un alto nivel y cómo interactuamos con uno, cómo elegir el correcto según sus capacidades, y explicar por qué no necesitas construir tu propio modelo para construir aplicaciones de IA.\n",
+      "url": "https://builder.aws.com/content/3EJkBhWduOMWXicVuLPPe7XbOdy",
+      "imageUrl": "",
+      "authorName": "Ramses Mata",
+      "authorAlias": "rmatah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38U51jarchPyY77h36ZiGgQnGbi.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "ai",
+        "machine-learning",
+        "beginner-projects",
+        "spanish"
+      ],
+      "publishedAt": "2026-05-27T18:00:25.139Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJgAuXv71YSX1EelUjt5jx9gVF",
+      "title": "A inteligência artificial mudou o valor das habilidades",
+      "description": "A IA não substituirá todas as pessoas, mas mudará profundamente quais habilidades humanas terão mais valor no futuro.",
+      "url": "https://builder.aws.com/content/3EJgAuXv71YSX1EelUjt5jx9gVF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJhLuEFPwwY49gme68dRuZiUm1/Chat.webp",
+      "authorName": "Gabriel Gonçalves",
+      "authorAlias": "gbdev79",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C6ADPa8FEH5LXLlVPZd9tQvGYW.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "career",
+        "tech"
+      ],
+      "publishedAt": "2026-05-27T17:23:25.961Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJb62b8KHocjX8UExceEnqZ3B0",
+      "title": "AWS CDK Tutorial: From Console to Infrastructure as Code",
+      "description": "Build and deploy a REST API backed by DynamoDB and Lambda using AWS CDK in Python. Covers setup through teardown with verification at each step.",
+      "url": "https://builder.aws.com/content/3EJb62b8KHocjX8UExceEnqZ3B0",
+      "imageUrl": "",
+      "authorName": "Saurabh",
+      "authorAlias": "raabdahl",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bnk93LBVm3BMqzvTxmdXHyjgrq.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-27T16:49:27.481Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJUyZQoLZ4AtIyx961HPSDlLJr",
+      "title": "Building an Agentic SDLC on Amazon Bedrock AgentCore",
+      "description": "A practical walkthrough of a multi-agent software delivery pipeline, the agents that power it, and how to deploy them on Bedrock AgentCore Runtime.",
+      "url": "https://builder.aws.com/content/3EJUyZQoLZ4AtIyx961HPSDlLJr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJWiEvL5BGYjvyCEK7bmuPZU8S/Gemi.webp",
+      "authorName": "Henry",
+      "authorAlias": "awshenry",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34A6kPXOeUOy5C7Uj0xWJ9E1CuA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai-agents",
+        "ai-dlc"
+      ],
+      "publishedAt": "2026-05-27T15:55:37.998Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJ7fexwrWCcF91CnNEVltv1OTM",
+      "title": "Tracking AWS DevOps Agent Costs: Calculate Billable Hours Using CloudWatch Metrics, Math Expressions, and Budget Alarms",
+      "description": "AWS DevOps Agent bills per second of active agent time — no upfront costs, no idle charges. But as your team scales from one agent space to many, a common question arises: *\"How much are we actually spending, and how do I prevent surprise bills?\"*",
+      "url": "https://builder.aws.com/content/3EJ7fexwrWCcF91CnNEVltv1OTM",
+      "imageUrl": "",
+      "authorName": "Thamarai meena",
+      "authorAlias": "taamarai",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "cost-optimization",
+        "devops",
+        "agents"
+      ],
+      "publishedAt": "2026-05-27T15:33:49.379Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJQXPTxXYZpABziTZseT4Zg6Y2",
+      "title": "My Learning Journey Building AI Agents with AWS Builders Skill Sprint",
+      "description": "I explored AI agents, memory, tool calling, GitHub workflows, and MCP-based chatbots through the AWS Builders Skill Sprint. This journey helped me understand practical AI development beyond theory.",
+      "url": "https://builder.aws.com/content/3EJQXPTxXYZpABziTZseT4Zg6Y2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJQpLU6VKNbMYRjVBZnzav66Wz/Scre.webp",
+      "authorName": "727824TUCS151 JOSHIKAS B P",
+      "authorAlias": "joshikasbp",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-agents",
+        "ai",
+        "machine-learning",
+        "amazon-nova",
+        "github"
+      ],
+      "publishedAt": "2026-05-27T15:08:42.511Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJJ5w5zZt84UztfbHXiNlcNDrx",
+      "title": "AI-DLC Discovery: Define What to Build Before AI Builds It",
+      "description": "AI-DLC Discovery generates the Vision and Technical Environment documents AI-DLC needs before Inception — replacing the blank page with a guided interview.",
+      "url": "https://builder.aws.com/content/3EJJ5w5zZt84UztfbHXiNlcNDrx",
+      "imageUrl": "",
+      "authorName": "Francisco Fagas",
+      "authorAlias": "frafaa",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DkCNFuYgNZoilFpJoaerwJi2KX.webp",
+      "location": "PR",
+      "lat": 50.0874654,
+      "lng": 14.4212535,
+      "tags": [
+        "ai",
+        "ai-dlc",
+        "ai-engineering",
+        "ai-for-developers",
+        "ai-ml"
+      ],
+      "publishedAt": "2026-05-27T15:01:51.718Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJOGbyWNAqZkG06Yy31LTiIasu",
+      "title": "From Vibe to Production: A Startup's Guide to Graduating from Supabase to AWS",
+      "description": "Executive summary: Supabase is the right database for your MVP. You shouldn't move until a specific trigger fires - and most startups trigger one within 12-18 months of their first enterprise customer. When it does, this guide gives you a two-step migration path that keeps your codebase intact, gets you inside a VPC in days, and positions Aurora serverless as the production target when you're ready to fully graduate.",
+      "url": "https://builder.aws.com/content/3EJOGbyWNAqZkG06Yy31LTiIasu",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJOP0lJp9f3hIXKbuzzGVHGviN/vibe.webp",
+      "authorName": "John Adelana",
+      "authorAlias": "johnadelana",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36evhj8ZNjbwb7bb1WF1RijIrHU.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "databases",
+        "startups"
+      ],
+      "publishedAt": "2026-05-27T14:48:55.931Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJKWX7eEztTCC0TSLpPQiyPZfu",
+      "title": "AWS Well-Architected Benchmark with AgriNova AI",
+      "description": "Benchmarking Cursor, Kiro, and Claude using AWS Well-Architected Skills on AgriNova AI to evaluate architecture-aware AI coding agents.",
+      "url": "https://builder.aws.com/content/3EJKWX7eEztTCC0TSLpPQiyPZfu",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJLmJvhb3bvYl26GRb4jx21eVB/Chat.webp",
+      "authorName": "Thirumalaiboobathi B",
+      "authorAlias": "thirumalaiboobathi2",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DqWrAghABgZRo2mfhDtftIh9C6.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-27T14:26:41.543Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJJYcF5uGHoGqfkizD0zx0ZuAG",
+      "title": "Back at Karukinka — Measuring, Tuning, and the Things You Only Learn On-Site",
+      "description": "Ten days after diagnosing the problem remotely, I returned to the parcela with a DC clamp meter, a plan, and my son. The pump had been serviced. The leak was fixed. Time to measure whether the theory held — and to tune the one device that could fix it.",
+      "url": "https://builder.aws.com/content/3EJJYcF5uGHoGqfkizD0zx0ZuAG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJLprBeOnMu0nhPWhHMtQBgZ8F/Whats.webp",
+      "authorName": "Gonzalo Vásquez",
+      "authorAlias": "gevs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xrJkys96lWwUrlvQ7rwzVz6loy.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "ai-assisted",
+        "solar",
+        "iot"
+      ],
+      "publishedAt": "2026-05-27T14:25:43.284Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJHcuoMv4pyPOmIozBXcQrMhJ8",
+      "title": "Construindo o Futuro na AWS: Por que a Nuvem Mudou minha Forma de Pensar",
+      "description": "Explore como a transição para o ecossistema AWS transforma a visão técnica de um desenvolvedor, indo além do uso instrumental de ferramentas para a construção de arquiteturas resilientes, escaláveis e focadas em valor de negócio.",
+      "url": "https://builder.aws.com/content/3EJHcuoMv4pyPOmIozBXcQrMhJ8",
+      "imageUrl": "",
+      "authorName": "Cristiano Xavier",
+      "authorAlias": "cristianoxavier",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DlLS5PHgvqhn5r0eHhKl12rRS3.webp",
+      "location": "TO, BR",
+      "lat": -10.8855129,
+      "lng": -48.3716912,
+      "tags": [
+        "aws-academy",
+        "aws-builders",
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-27T14:12:02.995Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJHnuEJRS33QfgB3wO6qSnXd8P",
+      "title": "CLI vs MCP: guía para agentes en producción",
+      "description": "Una de las preguntas más interesantes que me hicieron en la última clase de mi curso \"Strands Agents + AgentCore: De Cero a Agentes en Producción\".",
+      "url": "https://builder.aws.com/content/3EJHnuEJRS33QfgB3wO6qSnXd8P",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJHsUCGu75HWgpFCxa2ERS5vuY/cli_m.webp",
+      "authorName": "Ricardo Ceci",
+      "authorAlias": "ricardoceci",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2dJUL7pqLaVqfsEWhtgB49wZwbK.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "ai",
+        "mcp",
+        "agents"
+      ],
+      "publishedAt": "2026-05-27T13:53:45.984Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJGY5l3h9qDqPPtykHMfqlvKFa",
+      "title": "AI Development Services: What They Are and What to Expect",
+      "description": "Wondering what AI development services actually include? I break down what they are, how they work, and what to realistically expect before you invest.",
+      "url": "https://builder.aws.com/content/3EJGY5l3h9qDqPPtykHMfqlvKFa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJH58M1Mr1MyXvUldUh76feau2/AI-d.webp",
+      "authorName": "Elsie Rainee",
+      "authorAlias": "bijal",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOERfqbAoPrvGVxZBcPoOiFNQE.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "ai",
+        "artificial-intelligence",
+        "development",
+        "ai-services"
+      ],
+      "publishedAt": "2026-05-27T13:46:55.018Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EFqsrhtWnljQToDZAz9D84vJsp",
+      "title": "[EN] Defense Against the Dark Arts of Data Pipelines #1: Fundamentals of Data Pipeline failure",
+      "description": "Providing the fundamentals of why a data pipeline can fail and how we should understand this in order to define criteria for addressing a solution.",
+      "url": "https://builder.aws.com/content/3EFqsrhtWnljQToDZAz9D84vJsp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EFw8eidGYbG0HDXFxEjpU3tnod/S3-F.webp",
+      "authorName": "Carlos Chicata",
+      "authorAlias": "ferchicata49",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B9gO2DnQ9yhcrz6FLvZUPz6pdJ.webp",
+      "location": "PE",
+      "lat": -6.8699697,
+      "lng": -75.0458515,
+      "tags": [
+        "data-engineer",
+        "pipeline",
+        "failure",
+        "data-processing",
+        "data-engineering"
+      ],
+      "publishedAt": "2026-05-27T13:38:37.517Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3EIomY0ovqCENiSoNmG0EU7eMni",
-      "title": "The Word I Heard as a Fresher and Met Again Years Later: \"Cloud\"",
-      "description": "In 2013, after passing out from college, a random conversation, introduced me to a word I barely understood - \"Cloud\". A decade later, that curiosity transformed my career from a job-seeking fresher into a Cloud Architect, 3xAWS Community Builder, and AI Infrastructure Engineer.\nThis is my journey of persistence, self-learning, and following a curiosity that refused to leave.",
+      "title": "The Word I Heard as a Fresher and we Met Again Years Later: \"Cloud\"",
+      "description": "In 2013, after passing out from college, a random conversation, introduced me to a word I barely understood - \"Cloud\". A decade later, that curiosity transformed my career from a job-seeking fresher into a Cloud Architect.\nThis is my journey of persistence, self-learning, and following a curiosity that refused to leave.",
       "url": "https://builder.aws.com/content/3EIomY0ovqCENiSoNmG0EU7eMni",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJ24DqMVLVeCuVPwRqN0euioqc/thec.webp",
       "authorName": "Mohit Mishra",
@@ -67,162 +404,6 @@
       "publishedAt": "2026-05-27T08:50:26.518Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EIaBUHcJkrGlnBd6oZO95PNbs5",
-      "title": "I Googled \"How to Build an AI Agent\" for Weeks — Then Just Did This",
-      "description": "I spent weeks researching how to build an AI agent and got nowhere. Here's the simple approach that actually worked — no fluff, no PhD required.",
-      "url": "https://builder.aws.com/content/3EIaBUHcJkrGlnBd6oZO95PNbs5",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EIag5HJJfstu9J33dCWl27ZQxO/how-.webp",
-      "authorName": "Kevin Anderson",
-      "authorAlias": "andersonkevin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bpy5IqFhxpGI0KdELekpzHT4aN.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "ai-agents",
-        "agentic-ai",
-        "ai",
-        "generative-ai",
-        "artificial-intelligence"
-      ],
-      "publishedAt": "2026-05-27T07:59:06.085Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EIKvqitO7dO3mxPqKRBKAIVXHp",
-      "title": "What Students Need to Know About Building with AWS",
-      "description": "Before you open the AWS console, there are things nobody tells you. This article covers what students genuinely need to know — how to use the Free Tier without getting a surprise bill, which services to learn first, five realistic projects you can build today, why IAM security is non-negotiable, and how to think in cloud architecture. A practical, honest guide to building with AWS confidently.",
-      "url": "https://builder.aws.com/content/3EIKvqitO7dO3mxPqKRBKAIVXHp",
-      "imageUrl": "",
-      "authorName": "Vedant",
-      "authorAlias": "vedh333",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxCWiJdOcHVIJVVT35dpvKrEJH.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-05-27T05:58:57.688Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
-      "title": "Building a Scalable Reels Upload & Delivery System on AWS (Serverless)",
-      "description": "Short-video content (Reels, Shorts, Stories) has become one of the most demanding workloads in modern applications. Users expect instant uploads, fast processing, and ultra-low-latency playback, all at scale.\n\nIn this blog, I’ll walk you through how to build a production-grade Reels Upload & Delivery System on AWS using a serverless, event-driven architecture similar to the one shown in the diagram.",
-      "url": "https://builder.aws.com/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EICGmRX47yYKtu8ghORPv9McMc/reel.webp",
-      "authorName": "Tanseer Khan",
-      "authorAlias": "tanseer",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsU5pTJSlfSgIaKa89U1UFR6dZ.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-lambda",
-        "aws-elemental-mediaconvert",
-        "amazon-eventbridge",
-        "amazon-elasticache",
-        "amazon-cloudfront"
-      ],
-      "publishedAt": "2026-05-27T04:38:09.215Z",
-      "likesCount": 5,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3EI0s9DkofJ7y9G2rMhfjnTCn9d",
-      "title": "Kubernetes probe",
-      "description": "This article discusses the importance of properly monitoring the health of pods in eks, to prevent the end user from experiencing latency in responses when there is any saturation problem in the container.",
-      "url": "https://builder.aws.com/content/3EI0s9DkofJ7y9G2rMhfjnTCn9d",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EI2ZLVAUsQsgIG5qpnrRONNWUO/Gemi.webp",
-      "authorName": "Luis Fernando de León Ramírez",
-      "authorAlias": "luisferdeleon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar0EGAO5u8K4tSPS0S4nJNh4n8.webp",
-      "location": "GT",
-      "lat": 15.5855545,
-      "lng": -90.345759,
-      "tags": [
-        "aws-community",
-        "aws-community-builders",
-        "amazon-eks",
-        "kubernetes"
-      ],
-      "publishedAt": "2026-05-27T03:17:26.283Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EHrRYUMdE5Xm0RC2PRB18RQBx2",
-      "title": "Six Weeks In: Why Communities Matter More Than Technologies",
-      "description": "When I started this journey, I thought I would spend most of my time learning about cloud.\nAnd I did.",
-      "url": "https://builder.aws.com/content/3EHrRYUMdE5Xm0RC2PRB18RQBx2",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EHrrcTaKXa7akvKOMez9N6dC4H/artic.webp",
-      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
-      "authorAlias": "mvrga",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-ambassador",
-        "backend",
-        "ai",
-        "aws-student-builders-groups",
-        "student-builders"
-      ],
-      "publishedAt": "2026-05-27T01:52:35.195Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EHmvojejb6ytKLs8v2Pf86c0mI",
-      "title": "The Real Firewall Decision Happens in the Audit Room",
-      "description": "When to choose between a managed firewall or third party",
-      "url": "https://builder.aws.com/content/3EHmvojejb6ytKLs8v2Pf86c0mI",
-      "imageUrl": "",
-      "authorName": "Erick Mancz",
-      "authorAlias": "imancz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "aws-network-firewall",
-        "firewall",
-        "security",
-        "security-and-compliance",
-        "network-security"
-      ],
-      "publishedAt": "2026-05-27T01:12:06.116Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Dx7idLf9RmyW1WTgidoZmv4eeP",
-      "title": "Service Mesh Intercontas com Zero Trust: Roteamento de Camada 7 via Amazon VPC Lattice",
-      "description": "Uma análise arquitetônica profunda sobre a resolução da complexidade de redes leste-oeste em ecossistemas de microsserviços distribuídos. O artigo disseca a implementação do Amazon VPC Lattice para abstrair blocos CIDR sobrepostos e emparelhamentos de VPC (VPC Peering). Através da construção de redes de serviço gerenciadas, roteamento baseado em cabeçalhos (L7) e autenticação criptográfica rigorosa utilizando AWS Signature Version 4 (SigV4), a arquitetura consolida uma postura de segurança Zero Trust. ",
-      "url": "https://builder.aws.com/content/3Dx7idLf9RmyW1WTgidoZmv4eeP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EHkMBifPClqHfaVPxtzJclFu0D/Desi.webp",
-      "authorName": "Claudio Filipe Lima Raposo",
-      "authorAlias": "sertaoseracloud",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dr5xGg8jmJAuNo9td76QzELG61.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-community-builders",
-        "amazon-route53",
-        "python",
-        "terraform",
-        "aws-lambda"
-      ],
-      "publishedAt": "2026-05-27T00:48:47.078Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -246,8 +427,27 @@
         "developer-tools"
       ],
       "publishedAt": "2026-05-23T06:27:51.195Z",
-      "likesCount": 3,
-      "commentsCount": 230
+      "likesCount": 8,
+      "commentsCount": 245
+    },
+    {
+      "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
+      "description": "Whether you're prepping for HackOn with Amazon 6.0 or already deep in your build — this one's for you. We're dropping a Student Builder Challenge raffle to spark ideas, share knowledge, and celebrate the student builds across India. ",
+      "url": "https://builder.aws.com/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGaKduEmR164SvWNnAFmNlhGg4/Slid.webp",
+      "authorName": "Saha, Arkodyuti",
+      "authorAlias": "arkosaha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35uV8kcyGEbrjIXqiRRx8rPhvf0.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-26T15:00:54.657Z",
+      "likesCount": 24,
+      "commentsCount": 305
     },
     {
       "id": "/content/3EH5yjrhmZNLypXilefNezY3s1p",
@@ -269,27 +469,8 @@
         "technology-frameworks"
       ],
       "publishedAt": "2026-05-26T19:24:14.659Z",
-      "likesCount": 16,
-      "commentsCount": 19
-    },
-    {
-      "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
-      "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
-      "description": "Whether you're prepping for HackOn with Amazon 6.0 or already deep in your build — this one's for you. We're dropping a Student Builder Challenge raffle to spark ideas, share knowledge, and celebrate the student builds across India. ",
-      "url": "https://builder.aws.com/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGaKduEmR164SvWNnAFmNlhGg4/Slid.webp",
-      "authorName": "Saha, Arkodyuti",
-      "authorAlias": "arkosaha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35uV8kcyGEbrjIXqiRRx8rPhvf0.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-05-26T15:00:54.657Z",
       "likesCount": 18,
-      "commentsCount": 209
+      "commentsCount": 22
     },
     {
       "id": "/content/3EFzloOszRiAWRMbI3zRdeCVREV",
@@ -311,52 +492,8 @@
         "programming"
       ],
       "publishedAt": "2026-05-26T10:06:39.949Z",
-      "likesCount": 18,
-      "commentsCount": 22
-    },
-    {
-      "id": "/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
-      "title": "Building a Scalable Reels Upload & Delivery System on AWS (Serverless)",
-      "description": "Short-video content (Reels, Shorts, Stories) has become one of the most demanding workloads in modern applications. Users expect instant uploads, fast processing, and ultra-low-latency playback, all at scale.\n\nIn this blog, I’ll walk you through how to build a production-grade Reels Upload & Delivery System on AWS using a serverless, event-driven architecture similar to the one shown in the diagram.",
-      "url": "https://builder.aws.com/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EICGmRX47yYKtu8ghORPv9McMc/reel.webp",
-      "authorName": "Tanseer Khan",
-      "authorAlias": "tanseer",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsU5pTJSlfSgIaKa89U1UFR6dZ.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "aws-lambda",
-        "aws-elemental-mediaconvert",
-        "amazon-eventbridge",
-        "amazon-elasticache",
-        "amazon-cloudfront"
-      ],
-      "publishedAt": "2026-05-27T04:38:09.215Z",
-      "likesCount": 5,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
-      "title": "The 4x4: Serverless Community Highlights",
-      "description": "4 community picks and 4 AWS picks on Serverless on AWS!",
-      "url": "https://builder.aws.com/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBilVcOUrygXGjcjAOa29wer9l/Scre.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "aws-community-builders",
-        "serverless",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-26T15:17:44.050Z",
-      "likesCount": 14,
-      "commentsCount": 3
+      "likesCount": 20,
+      "commentsCount": 26
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -397,8 +534,52 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3489,
+      "likesCount": 3490,
       "commentsCount": 1933
+    },
+    {
+      "id": "/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
+      "title": "The 4x4: Serverless Community Highlights",
+      "description": "4 community picks and 4 AWS picks on Serverless on AWS!",
+      "url": "https://builder.aws.com/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBilVcOUrygXGjcjAOa29wer9l/Scre.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "aws-community-builders",
+        "serverless",
+        "aws-community"
+      ],
+      "publishedAt": "2026-05-26T15:17:44.050Z",
+      "likesCount": 14,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
+      "title": "Building a Scalable Reels Upload & Delivery System on AWS (Serverless)",
+      "description": "Short-video content (Reels, Shorts, Stories) has become one of the most demanding workloads in modern applications. Users expect instant uploads, fast processing, and ultra-low-latency playback, all at scale.\n\nIn this blog, I’ll walk you through how to build a production-grade Reels Upload & Delivery System on AWS using a serverless, event-driven architecture similar to the one shown in the diagram.",
+      "url": "https://builder.aws.com/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EICGmRX47yYKtu8ghORPv9McMc/reel.webp",
+      "authorName": "Tanseer Khan",
+      "authorAlias": "tanseer",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsU5pTJSlfSgIaKa89U1UFR6dZ.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-lambda",
+        "aws-elemental-mediaconvert",
+        "amazon-eventbridge",
+        "amazon-elasticache",
+        "amazon-cloudfront"
+      ],
+      "publishedAt": "2026-05-27T04:38:09.215Z",
+      "likesCount": 5,
+      "commentsCount": 3
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -418,25 +599,29 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2883,
+      "likesCount": 2884,
       "commentsCount": 324
     },
     {
-      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
-      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
-      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
-      "authorName": "YonghoChoi",
-      "authorAlias": "yongho",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [],
-      "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 46,
-      "commentsCount": 1201
+      "id": "/content/3EJgAuXv71YSX1EelUjt5jx9gVF",
+      "title": "A inteligência artificial mudou o valor das habilidades",
+      "description": "A IA não substituirá todas as pessoas, mas mudará profundamente quais habilidades humanas terão mais valor no futuro.",
+      "url": "https://builder.aws.com/content/3EJgAuXv71YSX1EelUjt5jx9gVF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJhLuEFPwwY49gme68dRuZiUm1/Chat.webp",
+      "authorName": "Gabriel Gonçalves",
+      "authorAlias": "gbdev79",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C6ADPa8FEH5LXLlVPZd9tQvGYW.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "career",
+        "tech"
+      ],
+      "publishedAt": "2026-05-27T17:23:25.961Z",
+      "likesCount": 1,
+      "commentsCount": 0
     }
   ]
 }
