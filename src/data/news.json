@@ -1,6 +1,116 @@
 {
-  "updatedAt": "2026-05-27T00:50:04.632Z",
+  "updatedAt": "2026-05-27T07:31:36.148Z",
   "latest": [
+    {
+      "id": "/content/3EIKvqitO7dO3mxPqKRBKAIVXHp",
+      "title": "What Students Need to Know About Building with AWS",
+      "description": "Before you open the AWS console, there are things nobody tells you. This article covers what students genuinely need to know — how to use the Free Tier without getting a surprise bill, which services to learn first, five realistic projects you can build today, why IAM security is non-negotiable, and how to think in cloud architecture. A practical, honest guide to building with AWS confidently.",
+      "url": "https://builder.aws.com/content/3EIKvqitO7dO3mxPqKRBKAIVXHp",
+      "imageUrl": "",
+      "authorName": "Vedant",
+      "authorAlias": "vedh333",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxCWiJdOcHVIJVVT35dpvKrEJH.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-27T05:58:57.688Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
+      "title": "Building a Scalable Reels Upload & Delivery System on AWS (Serverless)",
+      "description": "Short-video content (Reels, Shorts, Stories) has become one of the most demanding workloads in modern applications. Users expect instant uploads, fast processing, and ultra-low-latency playback, all at scale.\n\nIn this blog, I’ll walk you through how to build a production-grade Reels Upload & Delivery System on AWS using a serverless, event-driven architecture similar to the one shown in the diagram.",
+      "url": "https://builder.aws.com/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EICGmRX47yYKtu8ghORPv9McMc/reel.webp",
+      "authorName": "Tanseer Khan",
+      "authorAlias": "tanseer",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsU5pTJSlfSgIaKa89U1UFR6dZ.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-lambda",
+        "aws-elemental-mediaconvert",
+        "amazon-eventbridge",
+        "amazon-elasticache",
+        "amazon-cloudfront"
+      ],
+      "publishedAt": "2026-05-27T04:38:09.215Z",
+      "likesCount": 2,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3EI0s9DkofJ7y9G2rMhfjnTCn9d",
+      "title": "Kubernetes probe",
+      "description": "This article discusses the importance of properly monitoring the health of pods in eks, to prevent the end user from experiencing latency in responses when there is any saturation problem in the container.",
+      "url": "https://builder.aws.com/content/3EI0s9DkofJ7y9G2rMhfjnTCn9d",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EI2ZLVAUsQsgIG5qpnrRONNWUO/Gemi.webp",
+      "authorName": "Luis Fernando de León Ramírez",
+      "authorAlias": "luisferdeleon",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar0EGAO5u8K4tSPS0S4nJNh4n8.webp",
+      "location": "GT",
+      "lat": 15.5855545,
+      "lng": -90.345759,
+      "tags": [
+        "aws-community",
+        "aws-community-builders",
+        "amazon-eks",
+        "kubernetes"
+      ],
+      "publishedAt": "2026-05-27T03:17:26.283Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EHrRYUMdE5Xm0RC2PRB18RQBx2",
+      "title": "Six Weeks In: Why Communities Matter More Than Technologies",
+      "description": "When I started this journey, I thought I would spend most of my time learning about cloud.\nAnd I did.",
+      "url": "https://builder.aws.com/content/3EHrRYUMdE5Xm0RC2PRB18RQBx2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EHrrcTaKXa7akvKOMez9N6dC4H/artic.webp",
+      "authorName": "Marcus Vinicius Araujo (SHERMAN)",
+      "authorAlias": "mvrga",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKLdwlLrLc8t6dljpREr4cVsJ.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-ambassador",
+        "backend",
+        "ai",
+        "aws-student-builders-groups",
+        "student-builders"
+      ],
+      "publishedAt": "2026-05-27T01:52:35.195Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EHmvojejb6ytKLs8v2Pf86c0mI",
+      "title": "The Real Firewall Decision Happens in the Audit Room",
+      "description": "When to choose between a managed firewall or third party",
+      "url": "https://builder.aws.com/content/3EHmvojejb6ytKLs8v2Pf86c0mI",
+      "imageUrl": "",
+      "authorName": "Erick Mancz",
+      "authorAlias": "imancz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "aws-network-firewall",
+        "firewall",
+        "security",
+        "security-and-compliance",
+        "network-security"
+      ],
+      "publishedAt": "2026-05-27T01:12:06.116Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3Dx7idLf9RmyW1WTgidoZmv4eeP",
       "title": "Service Mesh Intercontas com Zero Trust: Roteamento de Camada 7 via Amazon VPC Lattice",
@@ -42,8 +152,8 @@
         "cybersecurity"
       ],
       "publishedAt": "2026-05-27T00:31:46.834Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 4,
+      "commentsCount": 1
     },
     {
       "id": "/content/3EGDhTJMcPEzBjY4Ndyk18JJCa9",
@@ -95,109 +205,6 @@
       "publishedAt": "2026-05-26T23:32:53.161Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EHOJVUmWKxtqaA6or4GfmZj6Mg",
-      "title": "Autonomous Incident Response with AWS DevOps Agent, PagerDuty, and Slack",
-      "description": "Build an automated pipeline that detects errors, creates PagerDuty incidents, alerts Slack, and runs autonomous root cause analysis with AWS DevOps Agent.",
-      "url": "https://builder.aws.com/content/3EHOJVUmWKxtqaA6or4GfmZj6Mg",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EHOnOgHIss93xvfLqWBj44cy69/cove.webp",
-      "authorName": "Godwin Vincent",
-      "authorAlias": "vgodwin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wjRtDGORorosiXig7M972lHkrw.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-26T22:18:48.867Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/30l9ZCsCxZVuRWAvDpHpFHmAWy9",
-      "title": "Serverless Mental Models: What They Don't Tell You Before You Build",
-      "description": "Most serverless tutorials teach you how to deploy a Lambda function.\nThis article teaches you how to think about serverless, so you can make good architecture decisions instead of just following steps and hoping for the best.",
-      "url": "https://builder.aws.com/content/30l9ZCsCxZVuRWAvDpHpFHmAWy9",
-      "imageUrl": "",
-      "authorName": "Joanne Skiles",
-      "authorAlias": "drjoanneskiles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dy4S355su0HZaICq9JBsbEOdrv.webp",
-      "location": "FL, US",
-      "lat": 27.7567667,
-      "lng": -81.4639835,
-      "tags": [],
-      "publishedAt": "2026-05-26T20:42:11.812Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EH5yjrhmZNLypXilefNezY3s1p",
-      "title": "I Coded My Portfolio From Scratch. No Templates.",
-      "description": "Stop copy-pasting template code. A raw, technical look under the hood of ahmershah.dev—built with zero frameworks, custom CSS, and vanilla JS.",
-      "url": "https://builder.aws.com/content/3EH5yjrhmZNLypXilefNezY3s1p",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EH716XqRj17uv5kMQmtAuFFbnb/feat.webp",
-      "authorName": "Syed Ahmer Shah",
-      "authorAlias": "syedahmershah",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dhv2ipNnrFs3VSktjQIU5rojWy.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "coding",
-        "programming",
-        "web-development",
-        "javascript",
-        "technology-frameworks"
-      ],
-      "publishedAt": "2026-05-26T19:24:14.659Z",
-      "likesCount": 12,
-      "commentsCount": 15
-    },
-    {
-      "id": "/content/3CwrR9bRRekoq0oCuAx4vq6bZEJ",
-      "title": "Cómo destacar como JR DEV en tu equipo",
-      "description": "Lo que aprendí en mis primeros años como desarrollador y me hubiera gustado saber antes.",
-      "url": "https://builder.aws.com/content/3CwrR9bRRekoq0oCuAx4vq6bZEJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EH68cSy7qc58yknGbhdHBwWuxQ/port.webp",
-      "authorName": "Axel",
-      "authorAlias": "fromchiapasdev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BMRUJTnZJW1MvVfKbB5m146pqV.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "ai",
-        "tips",
-        "tech-journey",
-        "soft-skills",
-        "productivity"
-      ],
-      "publishedAt": "2026-05-26T19:20:30.593Z",
-      "likesCount": 6,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3AiKbmIkNkxM5ICEL59W6zxwwdr",
-      "title": "Enhancing Amazon WorkSpaces and WorkSpaces Applications with Amazon FSx for NetApp ONTAP",
-      "description": "Learn how Amazon FSx for NetApp ONTAP delivers shared storage for WorkSpaces with multi-protocol access, instant clones, and built-in replication.",
-      "url": "https://builder.aws.com/content/3AiKbmIkNkxM5ICEL59W6zxwwdr",
-      "imageUrl": "",
-      "authorName": "Shantanu Nitin Padhye",
-      "authorAlias": "shaan0787",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "end-user-computing",
-        "amazon-workspaces",
-        "amazon-appstream",
-        "amazon-fsx",
-        "amazon-fsx-netapp-ontap"
-      ],
-      "publishedAt": "2026-05-26T17:36:40.290Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -221,8 +228,8 @@
         "technology-frameworks"
       ],
       "publishedAt": "2026-05-26T19:24:14.659Z",
-      "likesCount": 12,
-      "commentsCount": 15
+      "likesCount": 15,
+      "commentsCount": 18
     },
     {
       "id": "/content/3EFzloOszRiAWRMbI3zRdeCVREV",
@@ -244,25 +251,31 @@
         "programming"
       ],
       "publishedAt": "2026-05-26T10:06:39.949Z",
-      "likesCount": 16,
-      "commentsCount": 18
+      "likesCount": 18,
+      "commentsCount": 21
     },
     {
-      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
-      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
-      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
-      "authorName": "YonghoChoi",
-      "authorAlias": "yongho",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [],
-      "publishedAt": "2026-05-19T23:02:34.800Z",
-      "likesCount": 46,
-      "commentsCount": 1201
+      "id": "/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
+      "title": "Building a Scalable Reels Upload & Delivery System on AWS (Serverless)",
+      "description": "Short-video content (Reels, Shorts, Stories) has become one of the most demanding workloads in modern applications. Users expect instant uploads, fast processing, and ultra-low-latency playback, all at scale.\n\nIn this blog, I’ll walk you through how to build a production-grade Reels Upload & Delivery System on AWS using a serverless, event-driven architecture similar to the one shown in the diagram.",
+      "url": "https://builder.aws.com/content/3EIC3WEpCyEZbESZhEMXmMC2Abp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EICGmRX47yYKtu8ghORPv9McMc/reel.webp",
+      "authorName": "Tanseer Khan",
+      "authorAlias": "tanseer",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsU5pTJSlfSgIaKa89U1UFR6dZ.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-lambda",
+        "aws-elemental-mediaconvert",
+        "amazon-eventbridge",
+        "amazon-elasticache",
+        "amazon-cloudfront"
+      ],
+      "publishedAt": "2026-05-27T04:38:09.215Z",
+      "likesCount": 2,
+      "commentsCount": 2
     },
     {
       "id": "/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
@@ -282,7 +295,7 @@
         "aws-community"
       ],
       "publishedAt": "2026-05-26T15:17:44.050Z",
-      "likesCount": 9,
+      "likesCount": 12,
       "commentsCount": 1
     },
     {
@@ -307,6 +320,27 @@
       "commentsCount": 337
     },
     {
+      "id": "/content/3EHi59pnHgDdHbGp9my7E3pU4Kf",
+      "title": "Senhas fortes — a base de tudo",
+      "description": "Você usa a mesma senha em vários sites? Ainda guarda suas senhas em bloco de notas ou na memória? Este artigo explica por que senhas fracas são um dos maiores riscos para sua segurança digital — e como criar e gerenciar senhas fortes de forma simples, sem precisar decorar combinações impossíveis.",
+      "url": "https://builder.aws.com/content/3EHi59pnHgDdHbGp9my7E3pU4Kf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EHiJkKlQIZB9F1GwgStqwIkZVs/5-di.webp",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "ai-security",
+        "cloud-security",
+        "cybersecurity"
+      ],
+      "publishedAt": "2026-05-27T00:31:46.834Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -325,7 +359,24 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3489,
-      "commentsCount": 1931
+      "commentsCount": 1932
+    },
+    {
+      "id": "/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
+      "title": "AWS Summit Seoul 참석자 전용: 오늘의 빌더 퀴즈",
+      "description": "AWS Summit Seoul에 참석하신다면, Expo 내 Developer Lounge에 방문해 인사해 주시고 ‘오늘의 빌더 퀴즈’ 챌린지에 참여해 보세요!",
+      "url": "https://builder.aws.com/content/3Dxko7xRElY3SFGuCmJIKmznYCw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Dxx86YpXQnk64aVZRw0xh6wuzf/-.webp",
+      "authorName": "YonghoChoi",
+      "authorAlias": "yongho",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zf1z2Au2miXHR6rc5xxXtTRIqi.webp",
+      "location": "KR",
+      "lat": 36.638392,
+      "lng": 127.6961188,
+      "tags": [],
+      "publishedAt": "2026-05-19T23:02:34.800Z",
+      "likesCount": 46,
+      "commentsCount": 1201
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -345,7 +396,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2882,
+      "likesCount": 2883,
       "commentsCount": 324
     },
     {
@@ -368,54 +419,8 @@
         "mcp"
       ],
       "publishedAt": "2026-05-24T19:49:35.841Z",
-      "likesCount": 24,
+      "likesCount": 25,
       "commentsCount": 5
-    },
-    {
-      "id": "/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "title": "AIdeas Finalist: Veloquity - The Agentic Evidence Intelligent Platform Turning Raw Feedback into Evidence-Driven Decisions",
-      "description": "Decisions don’t fail from too little data - they fail from too much noise. Veloquity, an agentic evidence intelligence platform, filters that noise by transforming fragmented feedback into validated evidence and delivering explainable, prioritized recommendations with full source-to-decision traceability that guides human decisions. READ ON TO SEE HOW.",
-      "url": "https://builder.aws.com/content/3AzrKpJbhJwEP6EZbm87vdxufgi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRFZ1jVOteQ3C5PVnLkwH7ayQq/cove.webp",
-      "authorName": "Athelesh Balachandran",
-      "authorAlias": "athelesh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39eH0mQ8aL4lCve3H4OOpylJxz2.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "aideas-2025",
-        "commercial-solutions",
-        "APJC",
-        "agentic-ai",
-        "kiro"
-      ],
-      "publishedAt": "2026-04-17T12:10:37.145Z",
-      "likesCount": 1943,
-      "commentsCount": 275
-    },
-    {
-      "id": "/content/3EBBP64yr1XgMhatjI9juHgarxc",
-      "title": "Master S3 Pre-Signed URLs: Secure, Serverless File Uploads",
-      "description": "Stop bottlenecking your backend with heavy file uploads. Discover how to leverage pre-signed URLs to enable secure, direct-to-storage uploads that bypass server limits, reduce compute costs, and optimize your serverless architecture.",
-      "url": "https://builder.aws.com/content/3EBBP64yr1XgMhatjI9juHgarxc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBCX3wlpccxakP9BIlq0RGypxO/aws-.webp",
-      "authorName": "Pawan Joshi",
-      "authorAlias": "pawanjoshidev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DeEE7BzuCPZ12jlU5gwyymCdBN.webp",
-      "location": "Uttrakhand, IN",
-      "lat": 30.0797977,
-      "lng": 78.3045766,
-      "tags": [
-        "aws-community",
-        "amazon-s3",
-        "aws-student-builders-groups",
-        "student-builders",
-        "students"
-      ],
-      "publishedAt": "2026-05-24T17:10:37.550Z",
-      "likesCount": 11,
-      "commentsCount": 6
     }
   ]
 }
