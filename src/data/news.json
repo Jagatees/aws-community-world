@@ -1,6 +1,118 @@
 {
-  "updatedAt": "2026-05-28T00:46:04.630Z",
+  "updatedAt": "2026-05-28T07:25:34.418Z",
   "latest": [
+    {
+      "id": "/content/3ELENJSwdOpaGOg5YPAqQD4ev9E",
+      "title": "Stop Clicking Through the Billing Console: Introducing aws-cost-cli",
+      "description": "Learn how to query, compare, forecast, and monitor your AWS spend directly from the terminal using aws-cost-cli, an open-source Python CLI built for engineers and FinOps teams who need fast answers without touching the billing console.",
+      "url": "https://builder.aws.com/content/3ELENJSwdOpaGOg5YPAqQD4ev9E",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ELHEDrFPOaPkwPqDS8mWrkK2Yz/c551.webp",
+      "authorName": "Olamide Kosile",
+      "authorAlias": "kosile",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3E61B9zFLIX2ZEuDPMgyCUgwLE4.webp",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "aws-cli",
+        "cli",
+        "cost-optimization",
+        "finops",
+        "finops-culture"
+      ],
+      "publishedAt": "2026-05-28T06:48:41.522Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/32UcScOGJhEUcUCrndLoy0Zrm3k",
+      "title": "Automating Enterprise Compliance with a custom Kiro Power: Building a To-Do App Under Governance",
+      "description": "Build a Kiro Power that automates enterprise compliance for regulated environments. This post walks through creating an Enterprise Governance Power with three patterns: (1) Knowledge-augmented standards enforcement via Bedrock KB + MCP; (2) Bidirectional document conversion between DOCX/PDF/XLSX and markdown, with branded templates; (3) AI assurance walkthrough that ingests regulatory frameworks and derives structured assessments with confidence ratings. Demonstrated end-to-end by building a To-Do app.",
+      "url": "https://builder.aws.com/content/32UcScOGJhEUcUCrndLoy0Zrm3k",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ECdix2XLElmtddPLpLJxEZaJTI/LSRp.webp",
+      "authorName": "Lawton, Craig",
+      "authorAlias": "cclawton",
+      "authorAvatarUrl": "",
+      "location": "AU",
+      "lat": -24.7761086,
+      "lng": 134.755,
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-assisted",
+        "ai-ide",
+        "ai-ml"
+      ],
+      "publishedAt": "2026-05-28T06:47:40.375Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EKtqDAn3J1TcQgAnlKGqEh7PQQ",
+      "title": "AWS MSK Design for Delivering NYSE Bonds BBO Data Feed",
+      "description": "The design delivers an institutional trading desk platform supporting OMS/EMS workflows, order books, RFQs, FIX flows, fills, allocations, positions, P&L, Greeks, VaR, exposure, limits, liquidity, and surveillance. Amazon MSK (Managed Streaming for Apache Kafka) provides low-latency ingestion and topic-based distribution of market data, trades, and risk events, enabling real-time execution, blotter updates, and trade lifecycle processing via Kafka producers, consumers, partitions, and brokers with scalable.",
+      "url": "https://builder.aws.com/content/3EKtqDAn3J1TcQgAnlKGqEh7PQQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EKuq6GpnYkXP56WteVdLV3yfh1/og-h.webp",
+      "authorName": "Dan",
+      "authorAlias": "damartin",
+      "authorAvatarUrl": "",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "financial-services-industry",
+        "financial-services",
+        "finance",
+        "fintech"
+      ],
+      "publishedAt": "2026-05-28T06:43:06.811Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ELCkZG6dLaxB1QBp1ZdOk7gRyD",
+      "title": "A Founder's Perspective: Why Security is the MVP for My Diamond Industry SaaS 🔒💎",
+      "description": "As the Founder of Heeratrack, I quickly learned that when building B2B SaaS for high-value industries, features can wait, but security cannot. Here is how I am implementing a zero-trust architecture from Day 1.",
+      "url": "https://builder.aws.com/content/3ELCkZG6dLaxB1QBp1ZdOk7gRyD",
+      "imageUrl": "",
+      "authorName": "Ridham pokiya",
+      "authorAlias": "ridhampokiya10",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqbZRgO9hrzYqv5Ptkd93X1JdS.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "startups",
+        "ai-security",
+        "cloud-security",
+        "application-security",
+        "saas"
+      ],
+      "publishedAt": "2026-05-28T06:12:03.566Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EKElxnlEZmgM1JIyjtAfDWcRUC",
+      "title": "Which Intelligence is Smarter: Natural or Artificial?",
+      "description": "Artificial intelligence is evolving rapidly- but in 2026, has it surpassed humans yet? Read this article to find facts, perspectives of a wide range of people of different ages, and the point where AI will surpass humans' knowledge!    \n\nThis article is unbiased. Personal opinions are only used to support facts. ",
+      "url": "https://builder.aws.com/content/3EKElxnlEZmgM1JIyjtAfDWcRUC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EKF0CKZRrYzvQg0AsLv62o5EbK/Scre.webp",
+      "authorName": "Aunwita Jana",
+      "authorAlias": "agentai",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EKEgFIroPUUoSa8yS89OHrNRtA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "artificial-intelligence",
+        "ai"
+      ],
+      "publishedAt": "2026-05-28T01:53:00.265Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EKQCNnvDDnqlDy41ChRE0j3Lzl",
       "title": "🚀 Elevating Posture: Building an AI-Powered AWS Security Maturity Agent (Serverless & Zero-Trust)",
@@ -19,7 +131,7 @@
         "kiro-with-pro"
       ],
       "publishedAt": "2026-05-27T23:50:03.317Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -36,8 +148,8 @@
       "lng": 0,
       "tags": [],
       "publishedAt": "2026-05-27T21:59:26.232Z",
-      "likesCount": 2,
-      "commentsCount": 1
+      "likesCount": 4,
+      "commentsCount": 2
     },
     {
       "id": "/content/3EK6aRNbmM4zDKD7CDTgRfu828l",
@@ -115,8 +227,8 @@
         "aws-heroes"
       ],
       "publishedAt": "2026-05-27T20:27:53.490Z",
-      "likesCount": 8,
-      "commentsCount": 4
+      "likesCount": 13,
+      "commentsCount": 6
     },
     {
       "id": "/content/3EJxPxvYNYlU1V8huLVxrcIlhP6",
@@ -132,7 +244,7 @@
       "lng": 76.4164557,
       "tags": [],
       "publishedAt": "2026-05-27T19:36:19.503Z",
-      "likesCount": 1,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -155,7 +267,7 @@
         "aws-storage-gateway"
       ],
       "publishedAt": "2026-05-27T19:18:04.504Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 0
     },
     {
@@ -176,7 +288,7 @@
         "community"
       ],
       "publishedAt": "2026-05-27T19:14:05.389Z",
-      "likesCount": 10,
+      "likesCount": 11,
       "commentsCount": 1
     },
     {
@@ -199,6 +311,108 @@
       ],
       "publishedAt": "2026-05-27T18:33:51.517Z",
       "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJmslt8ryIZeYQqEV0I23sMfVb",
+      "title": "¿Qué es un Agente de IA? Explicado para devs",
+      "description": "Explica qué es un agente de IA y cómo se diferencia de un modelo de un agente. Explicado como un sistema que usa un modelo como cerebro para razonar, tomar decisiones y ejecutar acciones a través de herramientas, funcionando en un loop hasta completar la tarea.",
+      "url": "https://builder.aws.com/content/3EJmslt8ryIZeYQqEV0I23sMfVb",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJqG4amT7cVYYQ4jU5s95rhS86/comp.webp",
+      "authorName": "Ramses Mata",
+      "authorAlias": "rmatah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38U51jarchPyY77h36ZiGgQnGbi.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "spanish",
+        "beginner-projects"
+      ],
+      "publishedAt": "2026-05-27T18:20:11.622Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJkBhWduOMWXicVuLPPe7XbOdy",
+      "title": "¿Qué es un Modelo de IA? Explicado para devs",
+      "description": "Explica qué es un modelo de IA desde la perspectiva de un developer, cómo funciona a un alto nivel y cómo interactuamos con uno, cómo elegir el correcto según sus capacidades, y explicar por qué no necesitas construir tu propio modelo para construir aplicaciones de IA.\n",
+      "url": "https://builder.aws.com/content/3EJkBhWduOMWXicVuLPPe7XbOdy",
+      "imageUrl": "",
+      "authorName": "Ramses Mata",
+      "authorAlias": "rmatah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38U51jarchPyY77h36ZiGgQnGbi.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "ai",
+        "machine-learning",
+        "beginner-projects",
+        "spanish"
+      ],
+      "publishedAt": "2026-05-27T18:00:25.139Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJgAuXv71YSX1EelUjt5jx9gVF",
+      "title": "A inteligência artificial mudou o valor das habilidades",
+      "description": "A IA não substituirá todas as pessoas, mas mudará profundamente quais habilidades humanas terão mais valor no futuro.",
+      "url": "https://builder.aws.com/content/3EJgAuXv71YSX1EelUjt5jx9gVF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJhLuEFPwwY49gme68dRuZiUm1/Chat.webp",
+      "authorName": "Gabriel Gonçalves",
+      "authorAlias": "gbdev79",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C6ADPa8FEH5LXLlVPZd9tQvGYW.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "ai",
+        "career",
+        "tech"
+      ],
+      "publishedAt": "2026-05-27T17:23:25.961Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJb62b8KHocjX8UExceEnqZ3B0",
+      "title": "AWS CDK Tutorial: From Console to Infrastructure as Code",
+      "description": "Build and deploy a REST API backed by DynamoDB and Lambda using AWS CDK in Python. Covers setup through teardown with verification at each step.",
+      "url": "https://builder.aws.com/content/3EJb62b8KHocjX8UExceEnqZ3B0",
+      "imageUrl": "",
+      "authorName": "Saurabh",
+      "authorAlias": "raabdahl",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bnk93LBVm3BMqzvTxmdXHyjgrq.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [],
+      "publishedAt": "2026-05-27T16:49:27.481Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EJUyZQoLZ4AtIyx961HPSDlLJr",
+      "title": "Building an Agentic SDLC on Amazon Bedrock AgentCore",
+      "description": "A practical walkthrough of a multi-agent software delivery pipeline, the agents that power it, and how to deploy them on Bedrock AgentCore Runtime.",
+      "url": "https://builder.aws.com/content/3EJUyZQoLZ4AtIyx961HPSDlLJr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJWiEvL5BGYjvyCEK7bmuPZU8S/Gemi.webp",
+      "authorName": "Henry",
+      "authorAlias": "awshenry",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34A6kPXOeUOy5C7Uj0xWJ9E1CuA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai-agents",
+        "ai-dlc"
+      ],
+      "publishedAt": "2026-05-27T15:55:37.998Z",
+      "likesCount": 0,
       "commentsCount": 0
     }
   ],
@@ -223,27 +437,8 @@
         "developer-tools"
       ],
       "publishedAt": "2026-05-23T06:27:51.195Z",
-      "likesCount": 11,
+      "likesCount": 16,
       "commentsCount": 248
-    },
-    {
-      "id": "/content/3EJcio15l8cEfd5gzrCatbq9UNX",
-      "title": "Meet Our Newest AWS Heroes – May 2026",
-      "description": "Meet the four newest AWS Heroes! These community leaders are from Italy, Canada, and Argentina who are advancing AI, serverless, and cloud education through user groups, podcasts, open-source tools, and events that empower builders across Europe and Latin America.",
-      "url": "https://builder.aws.com/content/3EJcio15l8cEfd5gzrCatbq9UNX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EK3bUgK4dK0Rr8tKiPPvLZcWRr/Hero.webp",
-      "authorName": "Taylor",
-      "authorAlias": "taylorjacobsen",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ZaW6WI2TFvsadSAaamdEDFqGF1.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-heroes"
-      ],
-      "publishedAt": "2026-05-27T20:27:53.490Z",
-      "likesCount": 8,
-      "commentsCount": 4
     },
     {
       "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
@@ -261,8 +456,27 @@
         "students"
       ],
       "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 25,
-      "commentsCount": 322
+      "likesCount": 32,
+      "commentsCount": 410
+    },
+    {
+      "id": "/content/3EJcio15l8cEfd5gzrCatbq9UNX",
+      "title": "Meet Our Newest AWS Heroes – May 2026",
+      "description": "Meet the four newest AWS Heroes! These community leaders are from Italy, Canada, and Argentina who are advancing AI, serverless, and cloud education through user groups, podcasts, open-source tools, and events that empower builders across Europe and Latin America.",
+      "url": "https://builder.aws.com/content/3EJcio15l8cEfd5gzrCatbq9UNX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EK3bUgK4dK0Rr8tKiPPvLZcWRr/Hero.webp",
+      "authorName": "Taylor",
+      "authorAlias": "taylorjacobsen",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ZaW6WI2TFvsadSAaamdEDFqGF1.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-heroes"
+      ],
+      "publishedAt": "2026-05-27T20:27:53.490Z",
+      "likesCount": 13,
+      "commentsCount": 6
     },
     {
       "id": "/content/3EH5yjrhmZNLypXilefNezY3s1p",
@@ -284,29 +498,8 @@
         "technology-frameworks"
       ],
       "publishedAt": "2026-05-26T19:24:14.659Z",
-      "likesCount": 19,
+      "likesCount": 20,
       "commentsCount": 23
-    },
-    {
-      "id": "/content/3EBkyEtD0XKD2JqcnKpDLf8Nq73",
-      "title": "AWS Community Builders Spotlight: May 18th edition",
-      "description": "Weekly digest of AWS Community Builders' best content from May 18-26, 2026.",
-      "url": "https://builder.aws.com/content/3EBkyEtD0XKD2JqcnKpDLf8Nq73",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJlFqTCoVa0yKZ8Iek2yCuuHHL/aws-.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-05-27T19:14:05.389Z",
-      "likesCount": 10,
-      "commentsCount": 1
     },
     {
       "id": "/content/3EFzloOszRiAWRMbI3zRdeCVREV",
@@ -328,24 +521,28 @@
         "programming"
       ],
       "publishedAt": "2026-05-26T10:06:39.949Z",
-      "likesCount": 20,
+      "likesCount": 21,
       "commentsCount": 27
     },
     {
-      "id": "/content/3EKAYvEA9SaP3eHCoJnAA8z6DUW",
-      "title": "Software Engineers Are the New Attack Vector",
-      "description": "AI hasn't just changed how software gets built — it's changed who gets targeted. Engineers are now high-value attack surfaces, and the trust signals we've always relied on are no longer enough.",
-      "url": "https://builder.aws.com/content/3EKAYvEA9SaP3eHCoJnAA8z6DUW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EKCsp9oEUEX6XMBWpeJdEMgbn6/Chat.webp",
-      "authorName": "Chris Miller",
-      "authorAlias": "ctodd",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-05-27T21:59:26.232Z",
-      "likesCount": 2,
+      "id": "/content/3EBkyEtD0XKD2JqcnKpDLf8Nq73",
+      "title": "AWS Community Builders Spotlight: May 18th edition",
+      "description": "Weekly digest of AWS Community Builders' best content from May 18-26, 2026.",
+      "url": "https://builder.aws.com/content/3EBkyEtD0XKD2JqcnKpDLf8Nq73",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJlFqTCoVa0yKZ8Iek2yCuuHHL/aws-.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "aws-community-builders",
+        "aws-community",
+        "community"
+      ],
+      "publishedAt": "2026-05-27T19:14:05.389Z",
+      "likesCount": 11,
       "commentsCount": 1
     },
     {
@@ -370,6 +567,28 @@
       "commentsCount": 338
     },
     {
+      "id": "/content/3EKtqDAn3J1TcQgAnlKGqEh7PQQ",
+      "title": "AWS MSK Design for Delivering NYSE Bonds BBO Data Feed",
+      "description": "The design delivers an institutional trading desk platform supporting OMS/EMS workflows, order books, RFQs, FIX flows, fills, allocations, positions, P&L, Greeks, VaR, exposure, limits, liquidity, and surveillance. Amazon MSK (Managed Streaming for Apache Kafka) provides low-latency ingestion and topic-based distribution of market data, trades, and risk events, enabling real-time execution, blotter updates, and trade lifecycle processing via Kafka producers, consumers, partitions, and brokers with scalable.",
+      "url": "https://builder.aws.com/content/3EKtqDAn3J1TcQgAnlKGqEh7PQQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EKuq6GpnYkXP56WteVdLV3yfh1/og-h.webp",
+      "authorName": "Dan",
+      "authorAlias": "damartin",
+      "authorAvatarUrl": "",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "financial-services-industry",
+        "financial-services",
+        "finance",
+        "fintech"
+      ],
+      "publishedAt": "2026-05-28T06:43:06.811Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -387,29 +606,25 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3490,
+      "likesCount": 3491,
       "commentsCount": 1933
     },
     {
-      "id": "/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
-      "title": "The 4x4: Serverless Community Highlights",
-      "description": "4 community picks and 4 AWS picks on Serverless on AWS!",
-      "url": "https://builder.aws.com/content/3EBijwe9dFBw1jEBbGrKHi7aTKH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EBilVcOUrygXGjcjAOa29wer9l/Scre.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "aws-community-builders",
-        "serverless",
-        "aws-community"
-      ],
-      "publishedAt": "2026-05-26T15:17:44.050Z",
-      "likesCount": 16,
-      "commentsCount": 3
+      "id": "/content/3EKAYvEA9SaP3eHCoJnAA8z6DUW",
+      "title": "Software Engineers Are the New Attack Vector",
+      "description": "AI hasn't just changed how software gets built — it's changed who gets targeted. Engineers are now high-value attack surfaces, and the trust signals we've always relied on are no longer enough.",
+      "url": "https://builder.aws.com/content/3EKAYvEA9SaP3eHCoJnAA8z6DUW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EKCsp9oEUEX6XMBWpeJdEMgbn6/Chat.webp",
+      "authorName": "Chris Miller",
+      "authorAlias": "ctodd",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-27T21:59:26.232Z",
+      "likesCount": 4,
+      "commentsCount": 2
     }
   ]
 }
