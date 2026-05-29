@@ -1,6 +1,129 @@
 {
-  "updatedAt": "2026-05-28T18:55:52.104Z",
+  "updatedAt": "2026-05-29T00:52:35.002Z",
   "latest": [
+    {
+      "id": "/content/3ENGjbt97ARiWOEVHMCWiIRTI7w",
+      "title": "Securing Your AI Agent Infrastructure",
+      "description": "Governance, security, and cost control matter with AI more than ever. I'm writing a boot strap script to secure AI agents and your AWS Organization in general with Kiro CLI.",
+      "url": "https://builder.aws.com/content/3ENGjbt97ARiWOEVHMCWiIRTI7w",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ENGrSFfcnKgJw4ANoQXgfhU6RC/secu.webp",
+      "authorName": "Teri Radichel",
+      "authorAlias": "teriradichel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-28T23:44:10.345Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EKPVq8ysJx0oioRt57dtqCoYjk",
+      "title": "Backend for Frontend (BFF): Agregação de Microsserviços e Mitigação N+1 com AWS AppSync",
+      "description": "Uma análise profunda sobre a implementação do padrão Backend for Frontend (BFF) para resolver a latência e o acoplamento cliente-servidor em arquiteturas de microsserviços. O artigo detalha a construção de uma camada de agregação GraphQL na borda utilizando o AWS AppSync, integrando adaptadores baseados na Arquitetura Hexagonal via AWS Lambda.  O material é direcionado a arquitetos de soluções focados em otimizar e unificar a experiência de consumo de APIs em ecossistemas corporativos complexos.",
+      "url": "https://builder.aws.com/content/3EKPVq8ysJx0oioRt57dtqCoYjk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EKQFgh4UbFdFn2MAQQ36mlUqx2/Desi.webp",
+      "authorName": "Claudio Filipe Lima Raposo",
+      "authorAlias": "sertaoseracloud",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dr5xGg8jmJAuNo9td76QzELG61.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-community-builders",
+        "terraform",
+        "aws-lambda",
+        "python",
+        "appsync"
+      ],
+      "publishedAt": "2026-05-28T20:55:43.953Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EMsLvYBZqNFGyUKK5jwq5yLFcA",
+      "title": "Devlabs Momentum Demo Day",
+      "description": " Meet the Next Wave of Global Early-Stage Founders",
+      "url": "https://builder.aws.com/content/3EMsLvYBZqNFGyUKK5jwq5yLFcA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EMvOVmqqcTXwZQvo3i75hbBfxb/Unti.webp",
+      "authorName": "Devlabs Team",
+      "authorAlias": "devlabs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EMwRe2XN71ZD7cRbqMW8covpQ8.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "builder-loft",
+        "startups",
+        "ai",
+        "robotics"
+      ],
+      "publishedAt": "2026-05-28T20:47:29.091Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EMkmAylPybHwgSDy90FFR4Q4yp",
+      "title": "Build a Custom Jira Cloud Action Integration for Amazon Quick Using the OpenAPI Specification",
+      "description": "Learn how to build a custom Jira Cloud action integration for Amazon Quick using the OpenAPI Specification. This integration unifies Jira Software (project management) and Jira Service Management (ITSM) in a single connector — enabling service request creation with custom fields, JQL-based issue search, and service desk operations not available in the built-in Atlassian Jira Cloud action integration.",
+      "url": "https://builder.aws.com/content/3EMkmAylPybHwgSDy90FFR4Q4yp",
+      "imageUrl": "",
+      "authorName": "Suren Raju",
+      "authorAlias": "surenraju",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EMts67ZtU7a3v8YLCaTAYATcrM.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-05-28T20:24:58.233Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EMlLuVf7JSb1fwM8xeQfSi5cz5",
+      "title": "Deep Dive on Managing Bedrock (In. Claude Code over bedrock) with AWS Budgets + Tags",
+      "description": "A detailed manual that walks through setting up a complete per-developer cost attribution system for Amazon Bedrock, using AWS Cognito for authentication and IAM session tags for cost tracking. It is designed for teams who want to monitor how much each developer spends on Bedrock API calls (e.g., Claude model invocations), broken down by individual user identity.",
+      "url": "https://builder.aws.com/content/3EMlLuVf7JSb1fwM8xeQfSi5cz5",
+      "imageUrl": "",
+      "authorName": "Yaakov",
+      "authorAlias": "yaakovtayeb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DIlrW5FlcmO4g2O2HTMSikiOo3.webp",
+      "location": "IL",
+      "lat": 30.8124247,
+      "lng": 34.8594762,
+      "tags": [
+        "amazon-bedrock",
+        "claude-code",
+        "cost-allocation"
+      ],
+      "publishedAt": "2026-05-28T20:14:12.285Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EMR0jnX0yfBIcb9x6c51lhbaFa",
+      "title": "Do Armazenamento ao Hardware Quântico: Engenharia de Nuvem na Prática",
+      "description": "Este artigo descreve a arquitetura e casos de uso de serviços específicos da AWS para persistência de dados, execução de código stateless e computação quântica. A síntese foca em detalhar o funcionamento do Amazon S3, AWS Lambda e Amazon Braket no contexto da engenharia de software e pesquisa acadêmica.",
+      "url": "https://builder.aws.com/content/3EMR0jnX0yfBIcb9x6c51lhbaFa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EMnvXFsqeX4RqSQQhYaH5fjpFN/Desi.webp",
+      "authorName": "Theo Okagawa Rodrigues",
+      "authorAlias": "okagawatheo",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpUKw8M3TKOYYq0bz5rYGc37Uc.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "student-builders",
+        "amazon-braket",
+        "amazon-s3",
+        "aws-lambda",
+        "cloud-concepts"
+      ],
+      "publishedAt": "2026-05-28T20:05:16.281Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3EMfxyKx6LMYi0aqOuGxXpadWfk",
       "title": "What It’s Really Like Leading an AWS Student Builder Group",
@@ -59,8 +182,8 @@
       "lng": 78.6677428,
       "tags": [],
       "publishedAt": "2026-05-28T17:19:36.468Z",
-      "likesCount": 5,
-      "commentsCount": 7
+      "likesCount": 6,
+      "commentsCount": 8
     },
     {
       "id": "/content/3EMTn4fjlg8fXeBaS9X9GdIvOXP",
@@ -78,155 +201,9 @@
       "publishedAt": "2026-05-28T17:18:04.319Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3ELwZ4ftQ5jXlE19MLEa5qe9CSW",
-      "title": "Sending SMS from AWS Lambda",
-      "description": "Send SMS from AWS Lambda using the Sinch Conversation API. Complete TypeScript and Python handlers with SSM Parameter Store credentials, OAuth 2.0 auth, and SAM deployment.",
-      "url": "https://builder.aws.com/content/3ELwZ4ftQ5jXlE19MLEa5qe9CSW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EMT9kcj5tjjdqVZiiW2s7s3yaC/cove.webp",
-      "authorName": "Gunnar Grosch",
-      "authorAlias": "gunnargrosch",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALzHUgbnxi13edD9RSaDUyflIu.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "typescript",
-        "python",
-        "serverless",
-        "aws-lambda",
-        "event-driven"
-      ],
-      "publishedAt": "2026-05-28T16:59:00.172Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EKAejVqU9dlNjAy6emVsVGhac8",
-      "title": "Deploying Hermes Agent on AWS: A Quick-Start Guide",
-      "description": "In this blog post, I'll walk you through the entire process of deploying Hermes on AWS, breaking it down into simple, step-by-step instructions.",
-      "url": "https://builder.aws.com/content/3EKAejVqU9dlNjAy6emVsVGhac8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EMJHSGJibYdRXsSdzaYg16odlU/herm.webp",
-      "authorName": "Pin Xiong",
-      "authorAlias": "pinxiongcn",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2r1tQmhWa46fl22aYFir0fkxaUo.webp",
-      "location": "Shanghai, CN",
-      "lat": 31.2312707,
-      "lng": 121.4700152,
-      "tags": [
-        "agentic-ai",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-05-28T15:28:02.476Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EMDqiVbZKYE4Xuj5NmgycnHQss",
-      "title": "The bulkhead principle: cell-based architectures on AWS, end to end",
-      "description": "Cells contain failure like bulkheads contain water. How to build them on AWS — shuffle sharding, per-cell pipelines, and the anti-patterns that undo them.",
-      "url": "https://builder.aws.com/content/3EMDqiVbZKYE4Xuj5NmgycnHQss",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EME3y2vLy3wcMBg9j4ezrpiOqo/arti.webp",
-      "authorName": "Cristian",
-      "authorAlias": "criscrit",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2f8p5NTa9BXO2qv8Tfo6DjZXF0K.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "resilience",
-        "cloud-networking"
-      ],
-      "publishedAt": "2026-05-28T15:26:17.294Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BOrP6kOKVaDWebdR2OA04V2rJZ",
-      "title": "Microcredentials to prove your skills - AWS MLOps Demonstrated (New!) and AWS Agentic AI Demonstrated (Updated!)",
-      "description": "Microcredentials are free hands-on assessments on AWS Skill Builder to prove your expertise",
-      "url": "https://builder.aws.com/content/3BOrP6kOKVaDWebdR2OA04V2rJZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EMF75UebMfPOxzhJnLTW0B3Nsg/May-.webp",
-      "authorName": "thlawlor",
-      "authorAlias": "tomlawlor",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agents",
-        "ai",
-        "ai-agents",
-        "ai-ml",
-        "machine-learning"
-      ],
-      "publishedAt": "2026-05-28T15:06:33.860Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3C3mJwaTB5NWzcBfEugE7AUx59H",
-      "title": "IAM - Identity and Access Management",
-      "description": "Will explain about a AWS service that is IAM ",
-      "url": "https://builder.aws.com/content/3C3mJwaTB5NWzcBfEugE7AUx59H",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EMEoXI3QCF0w3gPIpNvw2Js2Id/What.webp",
-      "authorName": "Vishesh Singla",
-      "authorAlias": "meivishesh",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "iam",
-        "aws-iam-identity-center"
-      ],
-      "publishedAt": "2026-05-28T14:58:52.397Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EJykb5kOXZjek4Oi3ib7vsxZNv",
-      "title": "The Token COST: AI’s Free Buffet Won’t Last Forever",
-      "description": "Today you’re judged by how fast you build with AI. Tomorrow, you’ll be judged by how little tokens you wasted.",
-      "url": "https://builder.aws.com/content/3EJykb5kOXZjek4Oi3ib7vsxZNv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EMD6T0X0ACRSzeaGtTbqd3BxMz/1_8Jj.webp",
-      "authorName": "Mohit Mishra",
-      "authorAlias": "mohitmishra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EIpewMxsMY6jqrfcMwguBNfSTM.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai",
-        "career",
-        "skill",
-        "aws-community",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-05-28T14:57:31.023Z",
-      "likesCount": 2,
-      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3EMV2dSB3ZziPWudkFiPzkU3jhG",
-      "title": "The Skills Companies Actually Want — And How AWS Builder Center Helps You Build Them",
-      "description": "Build real-world tech skills beyond certifications. Discover how AWS Builder Center helps students develop hands-on experience, problem-solving ability, collaboration, and the builder mindset that modern companies truly value.",
-      "url": "https://builder.aws.com/content/3EMV2dSB3ZziPWudkFiPzkU3jhG",
-      "imageUrl": "",
-      "authorName": "Kruthika D",
-      "authorAlias": "1js23ci044",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ELE5fUYcEmM1gzxTSKY6y3s9YG.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-28T17:19:36.468Z",
-      "likesCount": 5,
-      "commentsCount": 7
-    },
     {
       "id": "/content/3E6WMwQSkjtXCHz68qE9nTYR1Se",
       "title": "AWS Summit Amsterdam Attendee Exclusive: Builder Question of the Day",
@@ -270,8 +247,25 @@
         "developer-tools"
       ],
       "publishedAt": "2026-05-23T06:28:38.069Z",
-      "likesCount": 3,
-      "commentsCount": 214
+      "likesCount": 4,
+      "commentsCount": 215
+    },
+    {
+      "id": "/content/3EMV2dSB3ZziPWudkFiPzkU3jhG",
+      "title": "The Skills Companies Actually Want — And How AWS Builder Center Helps You Build Them",
+      "description": "Build real-world tech skills beyond certifications. Discover how AWS Builder Center helps students develop hands-on experience, problem-solving ability, collaboration, and the builder mindset that modern companies truly value.",
+      "url": "https://builder.aws.com/content/3EMV2dSB3ZziPWudkFiPzkU3jhG",
+      "imageUrl": "",
+      "authorName": "Kruthika D",
+      "authorAlias": "1js23ci044",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ELE5fUYcEmM1gzxTSKY6y3s9YG.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-28T17:19:36.468Z",
+      "likesCount": 6,
+      "commentsCount": 8
     },
     {
       "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
@@ -289,8 +283,8 @@
         "students"
       ],
       "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 38,
-      "commentsCount": 573
+      "likesCount": 41,
+      "commentsCount": 585
     },
     {
       "id": "/content/3EJcio15l8cEfd5gzrCatbq9UNX",
@@ -300,7 +294,7 @@
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EK3bUgK4dK0Rr8tKiPPvLZcWRr/Hero.webp",
       "authorName": "Taylor",
       "authorAlias": "taylorjacobsen",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ZaW6WI2TFvsadSAaamdEDFqGF1.webp",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EN9JOlZrJFXWJkBDY2X03FasAs.webp",
       "location": "US",
       "lat": 39.7837304,
       "lng": -100.445882,
@@ -308,7 +302,7 @@
         "aws-heroes"
       ],
       "publishedAt": "2026-05-27T20:27:53.490Z",
-      "likesCount": 18,
+      "likesCount": 20,
       "commentsCount": 8
     },
     {
@@ -355,7 +349,7 @@
       ],
       "publishedAt": "2026-05-26T10:06:39.949Z",
       "likesCount": 21,
-      "commentsCount": 27
+      "commentsCount": 28
     },
     {
       "id": "/content/3ELI2bO2iHVSbvVimq0SCrOjaCn",
@@ -374,29 +368,8 @@
         "getting-started"
       ],
       "publishedAt": "2026-05-28T08:12:11.591Z",
-      "likesCount": 5,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3EBkyEtD0XKD2JqcnKpDLf8Nq73",
-      "title": "AWS Community Builders Spotlight: May 18th edition",
-      "description": "Weekly digest of AWS Community Builders' best content from May 18-26, 2026.",
-      "url": "https://builder.aws.com/content/3EBkyEtD0XKD2JqcnKpDLf8Nq73",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EJlFqTCoVa0yKZ8Iek2yCuuHHL/aws-.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-05-27T19:14:05.389Z",
-      "likesCount": 17,
-      "commentsCount": 2
+      "likesCount": 7,
+      "commentsCount": 5
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -418,6 +391,29 @@
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3588,
       "commentsCount": 338
+    },
+    {
+      "id": "/content/3EMR0jnX0yfBIcb9x6c51lhbaFa",
+      "title": "Do Armazenamento ao Hardware Quântico: Engenharia de Nuvem na Prática",
+      "description": "Este artigo descreve a arquitetura e casos de uso de serviços específicos da AWS para persistência de dados, execução de código stateless e computação quântica. A síntese foca em detalhar o funcionamento do Amazon S3, AWS Lambda e Amazon Braket no contexto da engenharia de software e pesquisa acadêmica.",
+      "url": "https://builder.aws.com/content/3EMR0jnX0yfBIcb9x6c51lhbaFa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EMnvXFsqeX4RqSQQhYaH5fjpFN/Desi.webp",
+      "authorName": "Theo Okagawa Rodrigues",
+      "authorAlias": "okagawatheo",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CpUKw8M3TKOYYq0bz5rYGc37Uc.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "student-builders",
+        "amazon-braket",
+        "amazon-s3",
+        "aws-lambda",
+        "cloud-concepts"
+      ],
+      "publishedAt": "2026-05-28T20:05:16.281Z",
+      "likesCount": 2,
+      "commentsCount": 1
     }
   ]
 }
