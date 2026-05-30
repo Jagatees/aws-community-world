@@ -1,6 +1,134 @@
 {
-  "updatedAt": "2026-05-30T12:29:40.048Z",
+  "updatedAt": "2026-05-30T18:26:29.354Z",
   "latest": [
+    {
+      "id": "/content/3EPy0FZd9VfOMax9U8xIuBW0xLa",
+      "title": "Code Structure For An AI Generated Infrastructure Deployment Script",
+      "description": "I saw someone asking why data structures and algorithms still matter if you can just use AI. This post has some examples of how I'm using that information as I build an AWS bootstrap script with Kiro CLI. How you structure your code makes it more maintainable and possibly consumes less tokens.",
+      "url": "https://builder.aws.com/content/3EPy0FZd9VfOMax9U8xIuBW0xLa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESDX21S6FCcN9c7lkCvHhxfWjL/orga.webp",
+      "authorName": "Teri Radichel",
+      "authorAlias": "teriradichel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "ai",
+        "kiro",
+        "software-architecture",
+        "software-engineering",
+        "software-development"
+      ],
+      "publishedAt": "2026-05-30T17:46:43.842Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ES3bGL3CxcDCYEaDCfqwfVzJsN",
+      "title": "The Biggest Blind Spot in Offensive Security? Cloud.",
+      "description": "Many aspiring red teamers focus on exploitation and privilege escalation while ignoring the environments where modern attacks actually happen. Here's why AWS knowledge matters for offensive security in 2026.",
+      "url": "https://builder.aws.com/content/3ES3bGL3CxcDCYEaDCfqwfVzJsN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ES4EFybuUidWw8U78dXuMcSnD0/8814.webp",
+      "authorName": "Karan Vaghela",
+      "authorAlias": "karanvaghela",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37pAYCKkB90uKKtaJWOhwavRN4l.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "cloud-security",
+        "ai-security",
+        "cybersecurity",
+        "security",
+        "security-best-practices"
+      ],
+      "publishedAt": "2026-05-30T16:29:43.709Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ERsoCFYq0975nuOcm7eiRf6KLk",
+      "title": "5 coisas que eu não esperava aprender como Líder Estudantil Campus Builder AWS",
+      "description": "Nas minhas primeiras 6 semanas como Líder Estudantil Campus Builder AWS, aprendi que o programa vai muito além da tecnologia. Entre desafios, criação de conteúdo, eventos e novas conexões, desenvolvi habilidades de comunicação, liderança e comunidade. Neste artigo, compartilho minha experiência, os aprendizados desse início de jornada e como participar de uma comunidade pode acelerar o crescimento pessoal e profissional.",
+      "url": "https://builder.aws.com/content/3ERsoCFYq0975nuOcm7eiRf6KLk",
+      "imageUrl": "",
+      "authorName": "João Sandri",
+      "authorAlias": "joaosandriaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CltY9bG78VPu5rDsTwoptPc2DL.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "students",
+        "soft-skills",
+        "student-builders"
+      ],
+      "publishedAt": "2026-05-30T15:11:13.913Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ERooRyh9nKv6ZZT0tofz14tzNt",
+      "title": "O que é IAM e por que ele é a base de tudo na AWS",
+      "description": "Antes de criar qualquer recurso na AWS, você precisa entender IAM. É ele que define quem pode fazer o quê, e ignorar isso desde o começo é o erro mais comum e mais perigoso de quem está aprendendo nuvem.",
+      "url": "https://builder.aws.com/content/3ERooRyh9nKv6ZZT0tofz14tzNt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ERpt4kXxI61PSOpwyLLqKxt0gN/AWS-.webp",
+      "authorName": "Maria Eduarda",
+      "authorAlias": "cloudmadu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D8GruDZpqspZ5fii1irvazGHZq.webp",
+      "location": "RJ, BR",
+      "lat": -22.2752762,
+      "lng": -42.419415,
+      "tags": [
+        "security",
+        "aws-iam-identity-center",
+        "student-builders"
+      ],
+      "publishedAt": "2026-05-30T14:40:23.834Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EOuntKCenGjIgyZqkHRnFlhUPS",
+      "title": "RAG, Fine-tuning ou Agentes? O que EU aprendi quebrando a cabeça na faculdade",
+      "description": "Com o tempo percebi que esses termos são jogados pra todo lado como se fossem a mesma coisa ou triviais, mas definitivamente não são. Nesse artigo eu tento explicar cada um deles de um jeito bem prático, usando exemplos dos meus próprios projetos e da vida real, para mostrar como cada um resolve um problema diferente, quando vale a pena usar e quando é melhor fugir deles. ",
+      "url": "https://builder.aws.com/content/3EOuntKCenGjIgyZqkHRnFlhUPS",
+      "imageUrl": "",
+      "authorName": "Marcos Menezes",
+      "authorAlias": "marcosmenezes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ERoGmLsguHibxbh4Gkw8xGyZ1S.webp",
+      "location": "BA, BR",
+      "lat": -12.285251,
+      "lng": -41.9294776,
+      "tags": [],
+      "publishedAt": "2026-05-30T14:14:09.505Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ERYd3R6Go8lWdt1yOad9pqJp6E",
+      "title": "Os pilares da AWS que todo cientista, analista e engenheiro de dados precisa conhecer",
+      "description": "Esse é um guia de aprendizado para você cientista, analista ou engenheiro de dados que quer subir de nível através dos conhecimentos em nuvem que a AWS proporciona e te ajudará a ter uma visão da realidade do mercado hoje em dia.",
+      "url": "https://builder.aws.com/content/3ERYd3R6Go8lWdt1yOad9pqJp6E",
+      "imageUrl": "",
+      "authorName": "Douglas Rodrigues",
+      "authorAlias": "douglasrod26",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSCKo66kvjOfD4N0NSRkTrzyq4.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
+      "tags": [
+        "analytics",
+        "aws-builders",
+        "data-science",
+        "data-engineering",
+        "data-analytics"
+      ],
+      "publishedAt": "2026-05-30T13:21:11.197Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3ERXo3970tdIGYC8SWa8uYJosxc",
       "title": "Vendor Picker — AI-Assisted Procurement Workflow Application",
@@ -36,7 +164,7 @@
         "agents"
       ],
       "publishedAt": "2026-05-30T08:29:16.165Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -75,8 +203,8 @@
         "foundational"
       ],
       "publishedAt": "2026-05-30T08:20:22.121Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3ER05gBEZVvAOtcWEfmUvh7Csfl",
@@ -130,7 +258,7 @@
       "lng": -100.445882,
       "tags": [],
       "publishedAt": "2026-05-30T07:01:00.084Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -192,8 +320,8 @@
         "builder-center"
       ],
       "publishedAt": "2026-05-30T03:37:40.072Z",
-      "likesCount": 12,
-      "commentsCount": 0
+      "likesCount": 13,
+      "commentsCount": 1
     },
     {
       "id": "/content/3EQPTYFEkz29WlnQ4eBXiVZzCXz",
@@ -261,134 +389,6 @@
       "publishedAt": "2026-05-30T02:30:01.658Z",
       "likesCount": 1,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQIrs6ppGwgX7XJlWWv7dXH89M",
-      "title": "Da Engenharia Mecânica à Computação em Nuvem: Minha Jornada como Líder Estudantil AWS Campus Builder",
-      "description": "Relato de experiência sobre a atuação como Líder Estudantil AWS Campus Builder, destacando como as tecnologias em nuvem da AWS contribuíram para a formação em Engenharia Mecânica, a disseminação do conhecimento tecnológico no ambiente universitário e a conexão entre engenharia, inovação e transformação digital.",
-      "url": "https://builder.aws.com/content/3EQIrs6ppGwgX7XJlWWv7dXH89M",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EQIvq2SEZorQSKx2JaOoTkyIz9/imag.webp",
-      "authorName": "Luiz Arthur",
-      "authorAlias": "luizarthur",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cs98ZrftAa0rndILdXqAZU1u9p.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai-engineering"
-      ],
-      "publishedAt": "2026-05-30T01:33:40.462Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQB3O3eJ0ter3PF0vbdjs03UCJ",
-      "title": "Minha trajetória como Líder Estudantil AWS: conectando tecnologia e pessoas",
-      "description": "Neste artigo, compartilho minha experiência como AWS Student Leader, falando sobre os aprendizados ao divulgar temas como cloud, IA e tecnologia para estudantes de diferentes áreas. Também conto como essa jornada me ajudou a desenvolver comunicação, liderança e a capacidade de traduzir conceitos técnicos de forma mais simples e acessível.",
-      "url": "https://builder.aws.com/content/3EQB3O3eJ0ter3PF0vbdjs03UCJ",
-      "imageUrl": "",
-      "authorName": "Noah",
-      "authorAlias": "noahfreitas13",
-      "authorAvatarUrl": "",
-      "location": "SC, BR",
-      "lat": -27.0628367,
-      "lng": -51.114965,
-      "tags": [
-        "all-builders-welcome",
-        "aws-builders",
-        "experience"
-      ],
-      "publishedAt": "2026-05-30T00:31:56.392Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQ7lSetfGGSbPxYnUvMjWcCXdp",
-      "title": "Lambda Managed Instances with Terraform: Multi-Concurrency, High Memory, and Compute Options",
-      "description": "Discover Lambda Managed Instances with Terraform: handle high concurrency, memory-intensive tasks, and explore AWS compute options.",
-      "url": "https://builder.aws.com/content/3EQ7lSetfGGSbPxYnUvMjWcCXdp",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EQ8EC2miFzpluKct8d2KPYYY19/lmi-.webp",
-      "authorName": "Darryl Ruggles",
-      "authorAlias": "darrylr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32xvtRCXz0BUNb5YZMIdzX1KHT8.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-lambda",
-        "serverless"
-      ],
-      "publishedAt": "2026-05-30T00:13:22.201Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQ7Djhos7RjOc0Vg73ORx9AB5B",
-      "title": "Seis Semanas que Mudaram Minha Jornada",
-      "description": "Do meu próprio mundo para o meio da comunidade",
-      "url": "https://builder.aws.com/content/3EQ7Djhos7RjOc0Vg73ORx9AB5B",
-      "imageUrl": "",
-      "authorName": "João Vieira",
-      "authorAlias": "lejinxx",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CJ0iTIVdWHffqLMSU68T2pjhsZ.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-academy",
-        "builder-center",
-        "dashboard",
-        "data"
-      ],
-      "publishedAt": "2026-05-30T00:05:49.006Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQ4xNzQ4RzVjyFGSJz9NDBCYWL",
-      "title": "HiringMadeEasy",
-      "description": "I built an AI-powered recruitment platform that can screen and rank thousands of resumes in minutes while allowing recruiters to chat with candidate data using AI. Now I’m looking to scale the platform with reliable cloud infrastructure, storage, and performance support through Amazon Web Services.",
-      "url": "https://builder.aws.com/content/3EQ4xNzQ4RzVjyFGSJz9NDBCYWL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EQ60lXYgfklpG2rggXiFpSOz8e/IMG_9.webp",
-      "authorName": "Kishan Singh",
-      "authorAlias": "kishanlko",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai-assisted",
-        "ai-assisted-workflows",
-        "ai-engineering",
-        "ai-for-developers",
-        "ai-ml"
-      ],
-      "publishedAt": "2026-05-29T23:45:44.597Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ENRYxNJpeskdxXMPCLxFxiVPQe",
-      "title": "Deploying Agents for Enterprises",
-      "description": "Focused on the real-world deployment of secure AI agents in enterprise environments",
-      "url": "https://builder.aws.com/content/3ENRYxNJpeskdxXMPCLxFxiVPQe",
-      "imageUrl": "",
-      "authorName": "kb-8553632",
-      "authorAlias": "bhatnk",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "ai",
-        "agents",
-        "security",
-        "builder-loft"
-      ],
-      "publishedAt": "2026-05-29T23:22:08.831Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -408,8 +408,8 @@
         "students"
       ],
       "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 79,
-      "commentsCount": 1066
+      "likesCount": 91,
+      "commentsCount": 1230
     },
     {
       "id": "/content/3EPFPZsYbx2Y3b3E8LAeY6oJ4Iz",
@@ -431,7 +431,7 @@
         "infrastructure"
       ],
       "publishedAt": "2026-05-29T16:51:29.277Z",
-      "likesCount": 21,
+      "likesCount": 23,
       "commentsCount": 4
     },
     {
@@ -453,8 +453,8 @@
         "builder-center"
       ],
       "publishedAt": "2026-05-30T03:37:40.072Z",
-      "likesCount": 12,
-      "commentsCount": 0
+      "likesCount": 13,
+      "commentsCount": 1
     },
     {
       "id": "/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
@@ -472,7 +472,7 @@
         "builder-center"
       ],
       "publishedAt": "2026-05-29T13:10:48.195Z",
-      "likesCount": 22,
+      "likesCount": 23,
       "commentsCount": 3
     },
     {
@@ -495,8 +495,29 @@
         "programming"
       ],
       "publishedAt": "2026-05-26T10:06:39.949Z",
-      "likesCount": 28,
-      "commentsCount": 29
+      "likesCount": 29,
+      "commentsCount": 30
+    },
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3593,
+      "commentsCount": 338
     },
     {
       "id": "/content/3EH5yjrhmZNLypXilefNezY3s1p",
@@ -522,27 +543,6 @@
       "commentsCount": 23
     },
     {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3593,
-      "commentsCount": 338
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -564,6 +564,29 @@
       "commentsCount": 1933
     },
     {
+      "id": "/content/3ERYd3R6Go8lWdt1yOad9pqJp6E",
+      "title": "Os pilares da AWS que todo cientista, analista e engenheiro de dados precisa conhecer",
+      "description": "Esse é um guia de aprendizado para você cientista, analista ou engenheiro de dados que quer subir de nível através dos conhecimentos em nuvem que a AWS proporciona e te ajudará a ter uma visão da realidade do mercado hoje em dia.",
+      "url": "https://builder.aws.com/content/3ERYd3R6Go8lWdt1yOad9pqJp6E",
+      "imageUrl": "",
+      "authorName": "Douglas Rodrigues",
+      "authorAlias": "douglasrod26",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSCKo66kvjOfD4N0NSRkTrzyq4.webp",
+      "location": "MG, BR",
+      "lat": -18.5264844,
+      "lng": -44.1588654,
+      "tags": [
+        "analytics",
+        "aws-builders",
+        "data-science",
+        "data-engineering",
+        "data-analytics"
+      ],
+      "publishedAt": "2026-05-30T13:21:11.197Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3EMV2dSB3ZziPWudkFiPzkU3jhG",
       "title": "The Skills Companies Actually Want — And How AWS Builder Center Helps You Build Them",
       "description": "Build real-world tech skills beyond certifications. Discover how AWS Builder Center helps students develop hands-on experience, problem-solving ability, collaboration, and the builder mindset that modern companies truly value.",
@@ -578,25 +601,6 @@
       "tags": [],
       "publishedAt": "2026-05-28T17:19:36.468Z",
       "likesCount": 14,
-      "commentsCount": 10
-    },
-    {
-      "id": "/content/3EJcio15l8cEfd5gzrCatbq9UNX",
-      "title": "Meet Our Newest AWS Heroes – May 2026",
-      "description": "Meet the four newest AWS Heroes! These community leaders are from Italy, Canada, and Argentina who are advancing AI, serverless, and cloud education through user groups, podcasts, open-source tools, and events that empower builders across Europe and Latin America.",
-      "url": "https://builder.aws.com/content/3EJcio15l8cEfd5gzrCatbq9UNX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EK3bUgK4dK0Rr8tKiPPvLZcWRr/Hero.webp",
-      "authorName": "Taylor",
-      "authorAlias": "taylorjacobsen",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EN9JOlZrJFXWJkBDY2X03FasAs.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "aws-heroes"
-      ],
-      "publishedAt": "2026-05-27T20:27:53.490Z",
-      "likesCount": 25,
       "commentsCount": 10
     }
   ]
