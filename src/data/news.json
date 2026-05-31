@@ -1,6 +1,229 @@
 {
-  "updatedAt": "2026-05-30T18:26:29.354Z",
+  "updatedAt": "2026-05-31T00:52:30.994Z",
   "latest": [
+    {
+      "id": "/content/3ESwC97MuDLLk4XLxHlwtae6Lub",
+      "title": "Every Line of Code is a Potential Bug",
+      "description": "How to reduce the chances of a security flaw in your application with the principle of abstraction and the DRY principle (Do not repeat yourself).",
+      "url": "https://builder.aws.com/content/3ESwC97MuDLLk4XLxHlwtae6Lub",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESyUtl3gA3MgPyvdRtXql8MvrU/bug-.webp",
+      "authorName": "Teri Radichel",
+      "authorAlias": "teriradichel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "application-security",
+        "security",
+        "software-architecture",
+        "software-development",
+        "software-engineering"
+      ],
+      "publishedAt": "2026-05-31T00:14:03.675Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3E9O4F5DC8Vj8XtScbTagIlGKSm",
+      "title": "Como o AWS Builder Center Transformou Minha Jornada na Nuvem",
+      "description": "Entrar no universo de Cloud Computing pode parecer um grande desafio no início. São centenas de serviços, conceitos teóricos pesados e, muitas vezes, bate aquela dúvida: \"Por onde eu começo a praticar sem medo de errar?\".\n\nFoi exatamente nessa busca por direcionamento que eu encontrei o AWS Builder Center, e hoje quero compartilhar como essa plataforma mudou a minha forma de aprender e evoluir na nuvem.",
+      "url": "https://builder.aws.com/content/3E9O4F5DC8Vj8XtScbTagIlGKSm",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESraLONgQkI7sT4njth5TOR14f/1283.webp",
+      "authorName": "Saimon Ruan",
+      "authorAlias": "saimonkss",
+      "authorAvatarUrl": "",
+      "location": "SE, BR",
+      "lat": -10.6743911,
+      "lng": -37.3773519,
+      "tags": [
+        "aws-academy"
+      ],
+      "publishedAt": "2026-05-30T23:19:56.437Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ESpll50BdSp9eiCEIxcfG9pGUN",
+      "title": "How we metered a SaaS product through AWS Marketplace with the AWS SDK for JavaScript v3",
+      "description": "How we metered a SaaS product through AWS Marketplace with the AWS SDK for JavaScript v3 — ResolveCustomer, MeterUsage, entitlements, and verified SNS lifecycle webhooks — and bridged it to an on-chain x402 paywall so one access check bills two ways. Real code, and the five things that bit",
+      "url": "https://builder.aws.com/content/3ESpll50BdSp9eiCEIxcfG9pGUN",
+      "imageUrl": "",
+      "authorName": "three.ws",
+      "authorAlias": "threews",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ESZlyXZ1QLQlWcyEJcWC1TxZYT.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-payment-cryptography",
+        "blockchain",
+        "metadata",
+        "agent-toolkit",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-30T23:06:35.763Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3AVKmZYIvForemIuHXg1eWqFagZ",
+      "title": "Security Measures for Amazon Bedrock's 'Monitor model invocation'",
+      "description": "I've had more opportunities to develop generative AI applications on Amazon Bedrock and to run Claude Code via Bedrock. During that work, \nI had enabled Amazon Bedrock's \"Monitor model invocation\" feature somewhat casually, just to get started. However, when I actually looked at the logs, \nI realized that information that really shouldn't be stored on a server — such as Monitor model invocation (PII) — was being saved.\nIn response, I reconsidered the security settings for \"Monitor model invocation.\"",
+      "url": "https://builder.aws.com/content/3AVKmZYIvForemIuHXg1eWqFagZ",
+      "imageUrl": "",
+      "authorName": "Kazuaki Takashima",
+      "authorAlias": "tkazuaki08202",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqQJ6q11EaOYyTZdQtuKzYUNnM.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-bedrock-agentcore",
+        "ai",
+        "security"
+      ],
+      "publishedAt": "2026-05-30T22:50:51.057Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E87j0h1xEoyCdRST0G7s9urEtW",
+      "title": "Travel Shield Assistant -Aws Nova Challenge",
+      "description": "this post is based on travel shield which i done for aws nova challenge",
+      "url": "https://builder.aws.com/content/3E87j0h1xEoyCdRST0G7s9urEtW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESiZuOIt6is5JVGvvCJWzk6xzh/ddbb.webp",
+      "authorName": "aysha dheesan banu A",
+      "authorAlias": "dhees1980",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-30T22:00:49.425Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ESeEEc4B2DxuJYDysTea2Bwbqt",
+      "title": "A Starting Point for AWS Service Control Policies",
+      "description": "A practical starting point for AWS SCPs: region control, instance limits, and protecting security services. Adapt the examples to your environment.",
+      "url": "https://builder.aws.com/content/3ESeEEc4B2DxuJYDysTea2Bwbqt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EShZEmkgmCFt3KDDR3ov6TcCf7/Gemi.webp",
+      "authorName": "Mario Gongora",
+      "authorAlias": "urikpa",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DCLbduZ1OFNvsR81hKQBk0RtLU.webp",
+      "location": "PA",
+      "lat": 8.559559,
+      "lng": -81.1308434,
+      "tags": [
+        "security-best-practices",
+        "service-control-policies",
+        "governance",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-05-30T21:45:01.687Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ESf0OwyR8XwpmCqQ3wGakWtNk7",
+      "title": "O atalho que eu não sabia que precisava: minha jornada no AWS Builder Center",
+      "description": "\nEscolhi Engenharia da Computação porque acredito no potencial dessa área — e o AWS Builder Center foi o que me deu direção real para transformar essa escolha em carreira.",
+      "url": "https://builder.aws.com/content/3ESf0OwyR8XwpmCqQ3wGakWtNk7",
+      "imageUrl": "",
+      "authorName": "Rafael Bramont",
+      "authorAlias": "rafaelbramont",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-30T21:33:13.465Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ESXW0d9tun95wHCpKmwy2ctH3F",
+      "title": "Cloud computing na prática: o guia que eu queria ter tido quando comecei",
+      "description": "Sou estudante e tentei entrar em cloud sozinho — foi frustrante. Aqui está o caminho mais claro que encontrei, com o que realmente funciona para quem está começando do zero.",
+      "url": "https://builder.aws.com/content/3ESXW0d9tun95wHCpKmwy2ctH3F",
+      "imageUrl": "",
+      "authorName": "Rafael Bramont",
+      "authorAlias": "rafaelbramont",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-30T20:34:56.376Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DBq1Ln0eXc0Iqf6kmNWlhojpTu",
+      "title": "A nuvem explicada como uma cidade: o que o AWS Builder Center me ensinou sobre cloud computing",
+      "description": "Sou estudante de Engenharia e tentei entender cloud sozinho — até que uma analogia simples (e o AWS Builder Center) mudaram tudo.",
+      "url": "https://builder.aws.com/content/3DBq1Ln0eXc0Iqf6kmNWlhojpTu",
+      "imageUrl": "",
+      "authorName": "Rafael Bramont",
+      "authorAlias": "rafaelbramont",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-30T20:25:15.114Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ESSO6DiQoy4qZwXXkrQpHnxA9Z",
+      "title": "🚀 From \"Will This Even Work?\" to Building a Knowledge-Powered AI Assistant on AWS",
+      "description": "A week of building, debugging, and learning—exploring Amazon Bedrock, Nova Pro, Strands SDK, memory systems, tool calling, and knowledge retrieval while completing all five AWS Builders Skill Sprint challenges.\n",
+      "url": "https://builder.aws.com/content/3ESSO6DiQoy4qZwXXkrQpHnxA9Z",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESTDtmn0fbHr1DnKsBG8L5uPKz/AWS-.webp",
+      "authorName": "Thamaraikannan G",
+      "authorAlias": "awsthamaraikannan15",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BlKOCM97AD0k9TKoRSavSm4Sjc.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-nova",
+        "generative-ai",
+        "ai-agents",
+        "aws-sdk"
+      ],
+      "publishedAt": "2026-05-30T19:55:58.912Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cr8AHTGZzpPoe6lsuO7q9FRntU",
+      "title": "Três usos da computação em nuvem na vida real, e como começar a construí-los hoje mesmo! 🚀",
+      "description": "Descubra como streaming, bancos digitais e telemedicina funcionam com a AWS na prática. E saiba como você, estudante, pode começar a construir suas próprias soluções na nuvem hoje mesmo, de graça, no AWS Builder Center.",
+      "url": "https://builder.aws.com/content/3Cr8AHTGZzpPoe6lsuO7q9FRntU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESR00sF5r3CT41E9KXq1BobG4W/Capa.webp",
+      "authorName": "Márcio Lopes",
+      "authorAlias": "spidermarcim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUUanbggOei6ctt1KtI9t1Yi73.webp",
+      "location": "AM, BR",
+      "lat": -4.479925,
+      "lng": -63.5185396,
+      "tags": [
+        "cloud-quest",
+        "amazon-ec2",
+        "amazon-s3",
+        "students",
+        "student-builders"
+      ],
+      "publishedAt": "2026-05-30T19:39:24.175Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EPy0FZd9VfOMax9U8xIuBW0xLa",
       "title": "Code Structure For An AI Generated Infrastructure Deployment Script",
@@ -44,8 +267,8 @@
         "security-best-practices"
       ],
       "publishedAt": "2026-05-30T16:29:43.709Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3ERsoCFYq0975nuOcm7eiRf6KLk",
@@ -65,8 +288,8 @@
         "student-builders"
       ],
       "publishedAt": "2026-05-30T15:11:13.913Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3ERooRyh9nKv6ZZT0tofz14tzNt",
@@ -181,214 +404,8 @@
       "lng": 71.745261,
       "tags": [],
       "publishedAt": "2026-05-30T08:22:07.953Z",
-      "likesCount": 2,
+      "likesCount": 3,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3ER4fOcO1ooxlRoDFmMWjSjIEFb",
-      "title": "Quantum Computing Foundation for Amazon Braket",
-      "description": "This article is about Quantum Computing foundation for users to understand and start using Amazon Braket",
-      "url": "https://builder.aws.com/content/3ER4fOcO1ooxlRoDFmMWjSjIEFb",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ER6hpPiSVaa8MXOOPVN0GHMNKw/0-GiS.webp",
-      "authorName": "Kavindu Sahan",
-      "authorAlias": "bl4ckf0xk",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36VuYrfUNbt2H2C0gTqPrlHhu1j.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "quantum-solutions-lab",
-        "amazon-braket",
-        "cloud-concepts",
-        "foundational"
-      ],
-      "publishedAt": "2026-05-30T08:20:22.121Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3ER05gBEZVvAOtcWEfmUvh7Csfl",
-      "title": "The Hidden Career Opportunities Inside AWS Builder Center",
-      "description": "AWS Builder Center offers more than cloud learning—networking, hackathons, projects, visibility, and hands-on experience that help students become industry-ready. ",
-      "url": "https://builder.aws.com/content/3ER05gBEZVvAOtcWEfmUvh7Csfl",
-      "imageUrl": "",
-      "authorName": "Kruthika D",
-      "authorAlias": "1js23ci044",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ELE5fUYcEmM1gzxTSKY6y3s9YG.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-30T07:27:36.413Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQz49XWTxVVmlGiLkFj7Hom7Ae",
-      "title": "Why Modern Developers Need a Builder Ecosystem, Not Just a Resume",
-      "description": "In today's Cloud and AI-driven world, technical growth requires more than just certifications and resumes. This article explores why modern developers need a builder ecosystem and how AWS Builder Center helps students learn, connect, build, and grow through technical content, workshops, communities, AWS Skill Builder, Builder Profiles, and hands-on learning experiences.",
-      "url": "https://builder.aws.com/content/3EQz49XWTxVVmlGiLkFj7Hom7Ae",
-      "imageUrl": "",
-      "authorName": "Aditya Kumar",
-      "authorAlias": "adityakr",
-      "authorAvatarUrl": "",
-      "location": "Madhya Pradesh, IN",
-      "lat": 23.8143419,
-      "lng": 77.5340719,
-      "tags": [
-        "builder-center",
-        "aws-certification",
-        "ai"
-      ],
-      "publishedAt": "2026-05-30T07:19:54.374Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQsGa0Y3vmA2Boo0zruKYPDM9H",
-      "title": "AWS IoT Core Direct Messaging for IoT and Physical AI",
-      "description": "Send confirmed commands to a specific device by client ID, without requiring a topic subscription.",
-      "url": "https://builder.aws.com/content/3EQsGa0Y3vmA2Boo0zruKYPDM9H",
-      "imageUrl": "",
-      "authorName": "Nitin Eusebius",
-      "authorAlias": "nitine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qbG1JspeQjBCio20995uIxdvm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-05-30T07:01:00.084Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQiq2uFPEQokKKdOf56yOcf0hE",
-      "title": "Test",
-      "description": "Test article ",
-      "url": "https://builder.aws.com/content/3EQiq2uFPEQokKKdOf56yOcf0hE",
-      "imageUrl": "",
-      "authorName": "Satyendra",
-      "authorAlias": "satya887",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-30T05:03:47.978Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQgdVkNUQEL40CBx17wWpVLG9D",
-      "title": "My Experience at AWS Summit Mumbai 2026 — Key Takeaways & Cloud Insights",
-      "description": "I recently attended AWS Summit Mumbai 2026 at Jio World Convention Centre, A massive gathering of cloud enthusiasts, builders, and industry leaders. Here are my key learnings, sessions highlights, and personal reflections from the event.",
-      "url": "https://builder.aws.com/content/3EQgdVkNUQEL40CBx17wWpVLG9D",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EQiZmaWQmpAd8B7kxkikUcDK0f/Whats.webp",
-      "authorName": "Anish Tiwari",
-      "authorAlias": "anish2315",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DlDsPyt407AvWpiSOb3gcjPIQb.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-community-builders",
-        "aws-community-day-recaps-2026",
-        "aws-community",
-        "aws-gold-jacket",
-        "aws-heroes"
-      ],
-      "publishedAt": "2026-05-30T04:59:30.862Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQQIyQhwBKK8s0r0a0RQ0X1jWS",
-      "title": "O que o DevOps me ensinou além das ferramentas ☁️",
-      "description": "Uma reflexão sobre como minha experiência com DevOps e AWS transformou conceitos como automação, entrega contínua e observabilidade em aprendizados práticos. Mais do que ferramentas, essa jornada me ensinou uma nova forma de enxergar a construção de software.",
-      "url": "https://builder.aws.com/content/3EQQIyQhwBKK8s0r0a0RQ0X1jWS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EQRA0zjgQL311p8gTmG6SMxkl2/Chat.webp",
-      "authorName": "João Lima",
-      "authorAlias": "joaovictordsl",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cr1ufyvLJsapuQNEB8qEnmSD3h.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "network-acl",
-        "aws-cloud-clubs",
-        "networking",
-        "builder-center"
-      ],
-      "publishedAt": "2026-05-30T03:37:40.072Z",
-      "likesCount": 13,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EQPTYFEkz29WlnQ4eBXiVZzCXz",
-      "title": "Builder: A Semente de Algo Novo",
-      "description": "Um texto que fala um pouco da minha tragetória como Líder Estudantil Campus Builder AWS",
-      "url": "https://builder.aws.com/content/3EQPTYFEkz29WlnQ4eBXiVZzCXz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EQRAHpa1bZvPrm7uAsRySULICx/AWS-.webp",
-      "authorName": "Paulo Victor Souto de Andrade",
-      "authorAlias": "paulovsandrade",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CqCVwvSnJgkNhW7RBnvSr2Tjir.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "all-builders-welcome",
-        "builder-center",
-        "student-builders"
-      ],
-      "publishedAt": "2026-05-30T02:40:58.500Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQP95B1eMKPn1X6Rg4Ma3G5Xzl",
-      "title": "What Machine Learning Actually Is, Before the Hype",
-      "description": "Strip away the hype. This post explains what machine learning actually does, how training and inference work, and what real ML looks like on AWS.",
-      "url": "https://builder.aws.com/content/3EQP95B1eMKPn1X6Rg4Ma3G5Xzl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EQQfNMiQ1zy8ehsc4dyG2rO2be/cove.webp",
-      "authorName": "Rashindu Tharinda",
-      "authorAlias": "rash522",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BAXrueNTFAH8WtVtH75cydfLaF.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "machine-learning",
-        "amazon-sagemaker",
-        "data-science",
-        "aws-educate",
-        "architecture"
-      ],
-      "publishedAt": "2026-05-30T02:34:10.845Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EQO7kVOZPoCZEb9EOKzChWLLgP",
-      "title": "I Didn't Write the Code. I Wrote the Architecture. Here's Why That Mattered.",
-      "description": "I built an AWS User Group dashboard by writing specs, not code, then letting an AI agent do the implementation. What I learned is that architecture matters more in the age of agents, not less. This post covers the system design behind scraping 365 Meetup groups at scale, an event-driven enrichment pipeline, and why the hardest decisions had nothing to do with AI.",
-      "url": "https://builder.aws.com/content/3EQO7kVOZPoCZEb9EOKzChWLLgP",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EQQbYaWMSgZeHKqVpFsjYQWNfv/Gemi.webp",
-      "authorName": "Geethika Guruge",
-      "authorAlias": "geethika",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yed42zk3JjAGSxUnEUybgiqxuA.webp",
-      "location": "NZ",
-      "lat": -41.5000831,
-      "lng": 172.8344077,
-      "tags": [
-        "spec-drivien-development",
-        "ai-assisted",
-        "ai-dlc",
-        "ai-for-developers",
-        "software-engineering"
-      ],
-      "publishedAt": "2026-05-30T02:30:01.658Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -408,8 +425,54 @@
         "students"
       ],
       "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 91,
-      "commentsCount": 1230
+      "likesCount": 95,
+      "commentsCount": 1249
+    },
+    {
+      "id": "/content/3ESwC97MuDLLk4XLxHlwtae6Lub",
+      "title": "Every Line of Code is a Potential Bug",
+      "description": "How to reduce the chances of a security flaw in your application with the principle of abstraction and the DRY principle (Do not repeat yourself).",
+      "url": "https://builder.aws.com/content/3ESwC97MuDLLk4XLxHlwtae6Lub",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESyUtl3gA3MgPyvdRtXql8MvrU/bug-.webp",
+      "authorName": "Teri Radichel",
+      "authorAlias": "teriradichel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "application-security",
+        "security",
+        "software-architecture",
+        "software-development",
+        "software-engineering"
+      ],
+      "publishedAt": "2026-05-31T00:14:03.675Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3ESpll50BdSp9eiCEIxcfG9pGUN",
+      "title": "How we metered a SaaS product through AWS Marketplace with the AWS SDK for JavaScript v3",
+      "description": "How we metered a SaaS product through AWS Marketplace with the AWS SDK for JavaScript v3 — ResolveCustomer, MeterUsage, entitlements, and verified SNS lifecycle webhooks — and bridged it to an on-chain x402 paywall so one access check bills two ways. Real code, and the five things that bit",
+      "url": "https://builder.aws.com/content/3ESpll50BdSp9eiCEIxcfG9pGUN",
+      "imageUrl": "",
+      "authorName": "three.ws",
+      "authorAlias": "threews",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ESZlyXZ1QLQlWcyEJcWC1TxZYT.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "aws-payment-cryptography",
+        "blockchain",
+        "metadata",
+        "agent-toolkit",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-05-30T23:06:35.763Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3EPFPZsYbx2Y3b3E8LAeY6oJ4Iz",
@@ -432,7 +495,47 @@
       ],
       "publishedAt": "2026-05-29T16:51:29.277Z",
       "likesCount": 23,
-      "commentsCount": 4
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
+      "title": "My Experience with AWS Builder Center: More Than Just Learning Cloud",
+      "description": "An overview of my experience with AWS Builder Center and how it helped me discover learning opportunities, connect with the builder community, and gain a broader perspective on cloud technologies beyond the classroom.",
+      "url": "https://builder.aws.com/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
+      "imageUrl": "",
+      "authorName": "Shardul Kolekar",
+      "authorAlias": "shardulkolekar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34sosNb0arX9wiTmUsNfs3TPv4N.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-29T13:10:48.195Z",
+      "likesCount": 23,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3593,
+      "commentsCount": 338
     },
     {
       "id": "/content/3EQQIyQhwBKK8s0r0a0RQ0X1jWS",
@@ -455,25 +558,6 @@
       "publishedAt": "2026-05-30T03:37:40.072Z",
       "likesCount": 13,
       "commentsCount": 1
-    },
-    {
-      "id": "/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
-      "title": "My Experience with AWS Builder Center: More Than Just Learning Cloud",
-      "description": "An overview of my experience with AWS Builder Center and how it helped me discover learning opportunities, connect with the builder community, and gain a broader perspective on cloud technologies beyond the classroom.",
-      "url": "https://builder.aws.com/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
-      "imageUrl": "",
-      "authorName": "Shardul Kolekar",
-      "authorAlias": "shardulkolekar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34sosNb0arX9wiTmUsNfs3TPv4N.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "builder-center"
-      ],
-      "publishedAt": "2026-05-29T13:10:48.195Z",
-      "likesCount": 23,
-      "commentsCount": 3
     },
     {
       "id": "/content/3EFzloOszRiAWRMbI3zRdeCVREV",
@@ -499,25 +583,25 @@
       "commentsCount": 30
     },
     {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DAMRFH0OdcmtsQD5RHMraMWGBU.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
       "tags": [
+        "aideas-2025",
         "social-impact",
-        "APJC",
-        "aideas-2025"
+        "APJC"
       ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3593,
-      "commentsCount": 338
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3496,
+      "commentsCount": 1933
     },
     {
       "id": "/content/3EH5yjrhmZNLypXilefNezY3s1p",
@@ -541,67 +625,6 @@
       "publishedAt": "2026-05-26T19:24:14.659Z",
       "likesCount": 29,
       "commentsCount": 23
-    },
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DAMRFH0OdcmtsQD5RHMraMWGBU.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "APJC"
-      ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3496,
-      "commentsCount": 1933
-    },
-    {
-      "id": "/content/3ERYd3R6Go8lWdt1yOad9pqJp6E",
-      "title": "Os pilares da AWS que todo cientista, analista e engenheiro de dados precisa conhecer",
-      "description": "Esse é um guia de aprendizado para você cientista, analista ou engenheiro de dados que quer subir de nível através dos conhecimentos em nuvem que a AWS proporciona e te ajudará a ter uma visão da realidade do mercado hoje em dia.",
-      "url": "https://builder.aws.com/content/3ERYd3R6Go8lWdt1yOad9pqJp6E",
-      "imageUrl": "",
-      "authorName": "Douglas Rodrigues",
-      "authorAlias": "douglasrod26",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSCKo66kvjOfD4N0NSRkTrzyq4.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "analytics",
-        "aws-builders",
-        "data-science",
-        "data-engineering",
-        "data-analytics"
-      ],
-      "publishedAt": "2026-05-30T13:21:11.197Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EMV2dSB3ZziPWudkFiPzkU3jhG",
-      "title": "The Skills Companies Actually Want — And How AWS Builder Center Helps You Build Them",
-      "description": "Build real-world tech skills beyond certifications. Discover how AWS Builder Center helps students develop hands-on experience, problem-solving ability, collaboration, and the builder mindset that modern companies truly value.",
-      "url": "https://builder.aws.com/content/3EMV2dSB3ZziPWudkFiPzkU3jhG",
-      "imageUrl": "",
-      "authorName": "Kruthika D",
-      "authorAlias": "1js23ci044",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ELE5fUYcEmM1gzxTSKY6y3s9YG.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-05-28T17:19:36.468Z",
-      "likesCount": 14,
-      "commentsCount": 10
     }
   ]
 }
