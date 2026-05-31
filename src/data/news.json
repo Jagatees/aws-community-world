@@ -1,6 +1,89 @@
 {
-  "updatedAt": "2026-05-31T07:22:50.374Z",
+  "updatedAt": "2026-05-31T12:32:52.522Z",
   "latest": [
+    {
+      "id": "/content/3EUMymoS8zrw8GnzQxQBN5tJWtb",
+      "title": "Minhas semanas como Líder Estudantil Campus Builder AWS",
+      "description": "Foram 6 semanas de muito aprendizado, troca e conexão. Uma experiência que me desafiou e me trouxe crescimento pessoal.",
+      "url": "https://builder.aws.com/content/3EUMymoS8zrw8GnzQxQBN5tJWtb",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUPs4be2A0NcdOJE3ElfgO7nyC/bann.webp",
+      "authorName": "Tássyla Lima",
+      "authorAlias": "tassy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DBKRkcFoI9L6xllCIjAVYWj646.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [],
+      "publishedAt": "2026-05-31T12:27:05.102Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EOFxiWXubHrRVj07YSKdcNwu9a",
+      "title": "“From Hello Agent to MCP: Building Five AI Agents with Strands SDK and Amazon Bedrock”",
+      "description": "A hands-on build log from the AWS User Group Madurai Builders Skill Sprint — covering five agents from a local Ollama setup to an MCP-powered AWS cost advisor, with the real engineering details including what broke and why.",
+      "url": "https://builder.aws.com/content/3EOFxiWXubHrRVj07YSKdcNwu9a",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUN8ePHXeDwSU0QyKGmzbJXlM6/Scre.webp",
+      "authorName": "sweta jha",
+      "authorAlias": "swetajha04",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "generative-ai",
+        "strands-agents",
+        "amazon-bedrock",
+        "agentic-ai",
+        "mcp"
+      ],
+      "publishedAt": "2026-05-31T12:06:47.775Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EUCEDwQk4rFjswHXkM3J01hOwr",
+      "title": "Polaris - A Kubernetes Reliability Tool",
+      "description": "Detects incidents, uses an LLM to analyze root cause, and runs automated fixes.",
+      "url": "https://builder.aws.com/content/3EUCEDwQk4rFjswHXkM3J01hOwr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUEBsMRfRiCdy64bz5wcsEBpOb/Whats.webp",
+      "authorName": "AYUSHI YADAV",
+      "authorAlias": "ayushi17",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37yZIzkNepXnvys0WMCkst5n4o5.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kubernetes",
+        "incident-response"
+      ],
+      "publishedAt": "2026-05-31T10:51:33.099Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ETp4vwa6rAXhOGuH9OyO2SHk1H",
+      "title": "Your Launchpad for Learning, Building, and Growing",
+      "description": "In today's technology-driven world, learning goes beyond the classroom. Students need hands-on experience, industry exposure, and a strong community to stay ahead. This is where the AWS Builder Center comes in—a platform designed to help students learn, build, connect, and grow using the power of Amazon Web Services (AWS).",
+      "url": "https://builder.aws.com/content/3ETp4vwa6rAXhOGuH9OyO2SHk1H",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ETqV62ZQdv4keOujkbSTkPUgdw/1000.webp",
+      "authorName": "Aalavandhaan Rajasekaran V",
+      "authorAlias": "aalavandhaan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34t8GY4zVtNmvXPvYkxXKOLsRVO.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai",
+        "amazon-q",
+        "announcements",
+        "all-builders-welcome",
+        "ai-ide"
+      ],
+      "publishedAt": "2026-05-31T07:39:39.645Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
       "title": "Experiencing My First AWS Summit Ever",
@@ -17,8 +100,8 @@
         "community-events"
       ],
       "publishedAt": "2026-05-31T06:06:45.807Z",
-      "likesCount": 3,
-      "commentsCount": 2
+      "likesCount": 6,
+      "commentsCount": 3
     },
     {
       "id": "/content/3ETaqnTOlPporxjDv1e5TpiOxaM",
@@ -57,8 +140,8 @@
       "lng": -53.2,
       "tags": [],
       "publishedAt": "2026-05-31T03:40:03.656Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3ET9Rr3vsoH47Qv3x5qw99q1toH",
@@ -95,7 +178,7 @@
         "aws-student-builders-groups"
       ],
       "publishedAt": "2026-05-31T01:41:05.404Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -202,28 +285,121 @@
       "publishedAt": "2026-05-30T23:06:35.763Z",
       "likesCount": 1,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3AVKmZYIvForemIuHXg1eWqFagZ",
+      "title": "Security Measures for Amazon Bedrock's 'Monitor model invocation'",
+      "description": "I've had more opportunities to develop generative AI applications on Amazon Bedrock and to run Claude Code via Bedrock. During that work, \nI had enabled Amazon Bedrock's \"Monitor model invocation\" feature somewhat casually, just to get started. However, when I actually looked at the logs, \nI realized that information that really shouldn't be stored on a server — such as Monitor model invocation (PII) — was being saved.\nIn response, I reconsidered the security settings for \"Monitor model invocation.\"",
+      "url": "https://builder.aws.com/content/3AVKmZYIvForemIuHXg1eWqFagZ",
+      "imageUrl": "",
+      "authorName": "Kazuaki Takashima",
+      "authorAlias": "tkazuaki08202",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqQJ6q11EaOYyTZdQtuKzYUNnM.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "amazon-bedrock",
+        "amazon-bedrock-agentcore",
+        "ai",
+        "security"
+      ],
+      "publishedAt": "2026-05-30T22:50:51.057Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E87j0h1xEoyCdRST0G7s9urEtW",
+      "title": "Travel Shield Assistant -Aws Nova Challenge",
+      "description": "this post is based on travel shield which i done for aws nova challenge",
+      "url": "https://builder.aws.com/content/3E87j0h1xEoyCdRST0G7s9urEtW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESiZuOIt6is5JVGvvCJWzk6xzh/ddbb.webp",
+      "authorName": "aysha dheesan banu A",
+      "authorAlias": "dhees1980",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-30T22:00:49.425Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ESeEEc4B2DxuJYDysTea2Bwbqt",
+      "title": "A Starting Point for AWS Service Control Policies",
+      "description": "A practical starting point for AWS SCPs: region control, instance limits, and protecting security services. Adapt the examples to your environment.",
+      "url": "https://builder.aws.com/content/3ESeEEc4B2DxuJYDysTea2Bwbqt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EShZEmkgmCFt3KDDR3ov6TcCf7/Gemi.webp",
+      "authorName": "Mario Gongora",
+      "authorAlias": "urikpa",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DCLbduZ1OFNvsR81hKQBk0RtLU.webp",
+      "location": "PA",
+      "lat": 8.559559,
+      "lng": -81.1308434,
+      "tags": [
+        "security-best-practices",
+        "service-control-policies",
+        "governance",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-05-30T21:45:01.687Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ESf0OwyR8XwpmCqQ3wGakWtNk7",
+      "title": "O atalho que eu não sabia que precisava: minha jornada no AWS Builder Center",
+      "description": "\nEscolhi Engenharia da Computação porque acredito no potencial dessa área — e o AWS Builder Center foi o que me deu direção real para transformar essa escolha em carreira.",
+      "url": "https://builder.aws.com/content/3ESf0OwyR8XwpmCqQ3wGakWtNk7",
+      "imageUrl": "",
+      "authorName": "Rafael Bramont",
+      "authorAlias": "rafaelbramont",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-30T21:33:13.465Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ESXW0d9tun95wHCpKmwy2ctH3F",
+      "title": "Cloud computing na prática: o guia que eu queria ter tido quando comecei",
+      "description": "Sou estudante e tentei entrar em cloud sozinho — foi frustrante. Aqui está o caminho mais claro que encontrei, com o que realmente funciona para quem está começando do zero.",
+      "url": "https://builder.aws.com/content/3ESXW0d9tun95wHCpKmwy2ctH3F",
+      "imageUrl": "",
+      "authorName": "Rafael Bramont",
+      "authorAlias": "rafaelbramont",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-30T20:34:56.376Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3DBq1Ln0eXc0Iqf6kmNWlhojpTu",
+      "title": "A nuvem explicada como uma cidade: o que o AWS Builder Center me ensinou sobre cloud computing",
+      "description": "Sou estudante de Engenharia e tentei entender cloud sozinho — até que uma analogia simples (e o AWS Builder Center) mudaram tudo.",
+      "url": "https://builder.aws.com/content/3DBq1Ln0eXc0Iqf6kmNWlhojpTu",
+      "imageUrl": "",
+      "authorName": "Rafael Bramont",
+      "authorAlias": "rafaelbramont",
+      "authorAvatarUrl": "",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [],
+      "publishedAt": "2026-05-30T20:25:15.114Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
-    {
-      "id": "/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
-      "title": "Experiencing My First AWS Summit Ever",
-      "description": "Curious, excited, and slightly nervous  that’s exactly how I felt while attending AWS Summit Bengaluru 2026 for the very first time as an AWS Community Builder. Come, let me share my experience of stepping into a world filled with cloud innovation, inspiring people, and endless learning.",
-      "url": "https://builder.aws.com/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ETdBk35m0lSdwIbIkCJCWwve5P/May-.webp",
-      "authorName": "Sidda Deepika Reddy",
-      "authorAlias": "deepusid",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqaIwpwelTdVOBMgk18SmXW0te.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "community-events"
-      ],
-      "publishedAt": "2026-05-31T06:06:45.807Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
     {
       "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
       "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
@@ -240,8 +416,27 @@
         "students"
       ],
       "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 98,
-      "commentsCount": 1311
+      "likesCount": 104,
+      "commentsCount": 1397
+    },
+    {
+      "id": "/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
+      "title": "Experiencing My First AWS Summit Ever",
+      "description": "Curious, excited, and slightly nervous  that’s exactly how I felt while attending AWS Summit Bengaluru 2026 for the very first time as an AWS Community Builder. Come, let me share my experience of stepping into a world filled with cloud innovation, inspiring people, and endless learning.",
+      "url": "https://builder.aws.com/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ETdBk35m0lSdwIbIkCJCWwve5P/May-.webp",
+      "authorName": "Sidda Deepika Reddy",
+      "authorAlias": "deepusid",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqaIwpwelTdVOBMgk18SmXW0te.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "community-events"
+      ],
+      "publishedAt": "2026-05-31T06:06:45.807Z",
+      "likesCount": 6,
+      "commentsCount": 3
     },
     {
       "id": "/content/3ESwC97MuDLLk4XLxHlwtae6Lub",
@@ -328,27 +523,8 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3497,
+      "likesCount": 3498,
       "commentsCount": 1933
-    },
-    {
-      "id": "/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
-      "title": "My Experience with AWS Builder Center: More Than Just Learning Cloud",
-      "description": "An overview of my experience with AWS Builder Center and how it helped me discover learning opportunities, connect with the builder community, and gain a broader perspective on cloud technologies beyond the classroom.",
-      "url": "https://builder.aws.com/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
-      "imageUrl": "",
-      "authorName": "Shardul Kolekar",
-      "authorAlias": "shardulkolekar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34sosNb0arX9wiTmUsNfs3TPv4N.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "builder-center"
-      ],
-      "publishedAt": "2026-05-29T13:10:48.195Z",
-      "likesCount": 23,
-      "commentsCount": 3
     },
     {
       "id": "/content/3EFzloOszRiAWRMbI3zRdeCVREV",
@@ -372,6 +548,25 @@
       "publishedAt": "2026-05-26T10:06:39.949Z",
       "likesCount": 29,
       "commentsCount": 30
+    },
+    {
+      "id": "/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
+      "title": "My Experience with AWS Builder Center: More Than Just Learning Cloud",
+      "description": "An overview of my experience with AWS Builder Center and how it helped me discover learning opportunities, connect with the builder community, and gain a broader perspective on cloud technologies beyond the classroom.",
+      "url": "https://builder.aws.com/content/3EOpv1LGOiRBt4W8vPaKOBYOS77",
+      "imageUrl": "",
+      "authorName": "Shardul Kolekar",
+      "authorAlias": "shardulkolekar",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34sosNb0arX9wiTmUsNfs3TPv4N.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "builder-center"
+      ],
+      "publishedAt": "2026-05-29T13:10:48.195Z",
+      "likesCount": 24,
+      "commentsCount": 3
     },
     {
       "id": "/content/3EH5yjrhmZNLypXilefNezY3s1p",
