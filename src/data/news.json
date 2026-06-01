@@ -1,10 +1,173 @@
 {
-  "updatedAt": "2026-05-31T18:27:54.741Z",
+  "updatedAt": "2026-06-01T00:55:16.213Z",
   "latest": [
     {
+      "id": "/content/3EVroFClVTDy6Y2oSi6N3b59Bty",
+      "title": "What’s New in Apache Airflow 3.0: Event-Driven Orchestration, Asset-Aware Workflows, and Scalable Architecture",
+      "description": "Apache Airflow 3.0 introduces a service-oriented architecture, event-driven workflows, DAG versioning, asset-aware orchestration, and enhanced support for AI/ML pipelines. Explore the key features, architectural improvements, and upgrade considerations that make Airflow 3.0 a major milestone for modern data engineering.",
+      "url": "https://builder.aws.com/content/3EVroFClVTDy6Y2oSi6N3b59Bty",
+      "imageUrl": "",
+      "authorName": "Santhosh K Ramurthy",
+      "authorAlias": "santoram173",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DtuYAyVvMLWIq1PmesJxDlasAN.webp",
+      "location": "ON, CA",
+      "lat": 50.000678,
+      "lng": -86.000977,
+      "tags": [],
+      "publishedAt": "2026-06-01T00:48:17.991Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EVpZoIsmt49wPkH0UYlb9YW40u",
+      "title": "Private, Sovereign Agents in Your Pocket: The Rise of USB-Deployed Local LLMs with AWS Strands",
+      "description": "The Rise of USB-Deployed Local LLMs with AWS Strands",
+      "url": "https://builder.aws.com/content/3EVpZoIsmt49wPkH0UYlb9YW40u",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EVpnQggz19wIzOfrsOnDdmljvI/Copi.webp",
+      "authorName": "Jonathan Wong",
+      "authorAlias": "jonanata",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BdiLMbcx1U8Emj177eurPoDLV5.webp",
+      "location": "CA",
+      "lat": 61.0666922,
+      "lng": -107.991707,
+      "tags": [
+        "ai",
+        "strands",
+        "llm",
+        "cybersecurity"
+      ],
+      "publishedAt": "2026-06-01T00:30:56.030Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EKkoiHDpxtE0flwhw0fQBm4ASj",
+      "title": "Distribuição Global Active-Active: Resiliência Multi-Região com AWS Global Accelerator",
+      "description": "O artigo aprofunda a supressão de problemas de cache DNS através de roteamento Anycast com o AWS Global Accelerator e detalha o gerenciamento de estado transacional assíncrono utilizando o Amazon DynamoDB Global Tables. Direcionado a engenheiros de software seniores, o material explora a resolução matemática de conflitos de gravação paralela e a implementação rigorosa de verificações de integridade profundas (Deep Health Checks) para proteção ativa contra defasagens de replicação.",
+      "url": "https://builder.aws.com/content/3EKkoiHDpxtE0flwhw0fQBm4ASj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EKlUXTyZs8EpSDzB7bWuvCLZQQ/Desi.webp",
+      "authorName": "Claudio Filipe Lima Raposo",
+      "authorAlias": "sertaoseracloud",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dr5xGg8jmJAuNo9td76QzELG61.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-community-builders",
+        "terraform",
+        "python",
+        "aws-global-accelerator",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-06-01T00:04:47.271Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EVRXj3yOtHgRRO9WRQuTvPOpX9",
+      "title": "How I Use Kiro: A Teammate, Not an Autopilot",
+      "description": "How I use Kiro: pair programming, reusable workflows, specs, agents, and documentation without giving up control.",
+      "url": "https://builder.aws.com/content/3EVRXj3yOtHgRRO9WRQuTvPOpX9",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EVRkvwxiSfaV99oJbT3prbzz41/how-.webp",
+      "authorName": "Alvaro",
+      "authorAlias": "amllamojha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36lSWjJLRjPjMuaVZMdQtsWTe20.webp",
+      "location": "ES",
+      "lat": 39.3260685,
+      "lng": -4.8379791,
+      "tags": [
+        "kiro",
+        "agentic-ai",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-05-31T21:15:36.703Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3CIohWDhbtfiPieTxhuvHvSzLfQ",
+      "title": "From Chemical Engineering to Senior DevOps Engineer at IBM: What Nobody Tells You About Switching Careers",
+      "description": "By Mohamed Sorour | Senior DevOps Engineer | AWS Community Builder",
+      "url": "https://builder.aws.com/content/3CIohWDhbtfiPieTxhuvHvSzLfQ",
+      "imageUrl": "",
+      "authorName": "Mohamed Sorour",
+      "authorAlias": "sorour",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCYIsEZVgfKlVN3YgExt4hyxjS.webp",
+      "location": "EG",
+      "lat": 26.2540493,
+      "lng": 29.2675469,
+      "tags": [],
+      "publishedAt": "2026-05-31T19:51:43.383Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EV6B9AdhrEHDettz0EbK5LUlxF",
+      "title": "Generando equipos de desarrollo de software competitivos",
+      "description": "La industria de la tecnología hoy en día está en un constante crecimiento acelerado, lo que ha generado que se requiera mucho más talento para contribuir a la construcción de los retos que surgen en cada una de las compañías; con este proceso acelerado surgen muchos problemas ligados, de los más comunes es el proceso de adaptación de nuevos miembros al equipo (del cuál luego hablaré), cómo ayudar a desarrollar la carrera de cada miembro, los retos técnicos, entre muchos más.",
+      "url": "https://builder.aws.com/content/3EV6B9AdhrEHDettz0EbK5LUlxF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EV9vGqlcODYW4kFCAAlyeszSj9/Chat.webp",
+      "authorName": "Julián Darío Luna Patiño",
+      "authorAlias": "judlup",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wE8Xeb9x3PcY64Gp6Sb9cOtrzw.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "software-engineering",
+        "soft-skills",
+        "agile",
+        "software-development",
+        "software-architecture"
+      ],
+      "publishedAt": "2026-05-31T18:47:14.612Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EUz32lQVsQyKrrdspZc2U84ZcK",
+      "title": "Building NovaSynth: a multimodal competitive-intelligence swarm on Amazon Bedrock AgentCore",
+      "description": "How I built NovaSynth, a multimodal competitive-intelligence platform, on Amazon Bedrock AgentCore - and the real-time engineering decisions behind it.",
+      "url": "https://builder.aws.com/content/3EUz32lQVsQyKrrdspZc2U84ZcK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EVIWRrsKat4z252X47hqBDs4Wq/Chat.webp",
+      "authorName": "Yogesh S",
+      "authorAlias": "yogeshs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C5ONI6D5aXtURiXwrOyQKhKVL1.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "amazon-bedrock-agentcore",
+        "amazon-nova",
+        "strands-agents",
+        "gen-ai",
+        "serverless"
+      ],
+      "publishedAt": "2026-05-31T18:46:22.946Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3BcKwNoOsCjg37nWlflCvyJUszB",
+      "title": "Building Fuji: My AWS Nova Skill Sprint Journey",
+      "description": "During the AWS Nova Month Skill Sprint, I transformed a series of AI challenges into the foundation of a larger vision—Fuji, a personal AI companion. Starting with basic conversational AI and progressing through tool integration, memory systems, and AWS-powered knowledge retrieval using MCP, each challenge contributed to Fuji's evolution. This journey helped me gain practical experience with Amazon Nova, AWS Bedrock, Strands Agents SDK, AI memory architectures, and intelligent agent development.",
+      "url": "https://builder.aws.com/content/3BcKwNoOsCjg37nWlflCvyJUszB",
+      "imageUrl": "",
+      "authorName": "Dhanush Raman B",
+      "authorAlias": "dhanushraman",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-05-31T18:30:09.183Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
       "id": "/content/3EV71VxbcgQTyHuJ3oWsNUlctSf",
-      "title": "How I Built an AI Placement Assistant in 5 Challenges Using Amazon Bedrock and Strands SDK",
-      "description": "How I Built an AI Placement Assistant in 5 Challenges Using Amazon Bedrock and Strands SDK",
+      "title": "Building a Smart Placement Mentor Agent with Amazon Bedrock, Strands SDK, and MCP",
+      "description": "Campus placements are stressful. I built an AI Placement Assistant using Amazon Bedrock Nova Pro and Strands SDK that checks eligibility, calculates CGPA, analyzes skill gaps, and remembers students across sessions. Here is how I built it in 5 progressive challenges — for AWS User Group Madurai.",
       "url": "https://builder.aws.com/content/3EV71VxbcgQTyHuJ3oWsNUlctSf",
       "imageUrl": "",
       "authorName": "KANISKASRI T S P",
@@ -40,180 +203,32 @@
       "publishedAt": "2026-05-31T18:04:22.487Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EUxmsDosGLHh8CevqZpkASSJlS",
-      "title": "Cómo Documentar un API",
-      "description": "Documentar adecuadamente un API es crucial para garantizar que sea accesible, comprensible y utilizable para otros desarrolladores. A continuación, presentamos un checklist que detalla los elementos esenciales que toda documentación de API debería incluir.",
-      "url": "https://builder.aws.com/content/3EUxmsDosGLHh8CevqZpkASSJlS",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EV5cmVQKQSY8ByZk9N37zR7BLe/Chat.webp",
-      "authorName": "Julián Darío Luna Patiño",
-      "authorAlias": "judlup",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wE8Xeb9x3PcY64Gp6Sb9cOtrzw.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "software-development",
-        "software-engineering",
-        "software-architecture",
-        "api",
-        "documentation"
-      ],
-      "publishedAt": "2026-05-31T17:08:35.287Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EUwtXQr7ZkU1DuNMw2Ww5yXExm",
-      "title": "AWS Builder Content: Docker Architecture Explained Simply",
-      "description": "Docker is one of the most important tools in modern software development, DevOps, cloud computing, and AWS deployments. In this beginner-friendly guide, we will understand what Docker is, why Docker is used, and how Docker architecture works in a simple and practical way.",
-      "url": "https://builder.aws.com/content/3EUwtXQr7ZkU1DuNMw2Ww5yXExm",
-      "imageUrl": "",
-      "authorName": "Gokul S",
-      "authorAlias": "gokul06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BWZ3GOHouRcnHaCWRuanMwLAOC.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [],
-      "publishedAt": "2026-05-31T17:06:29.521Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EUJVNYwxtHVaFuYgpzGqS1kbQZ",
-      "title": "Why Your Campus Needs an AWS Student Builder Group\n- And Why I Wish I’d Joined Sooner",
-      "description": "As a student preparing for internships and placements, I was looking for ways to build practical skills beyond the classroom. AWS Builder Center helped me discover a global community, hands-on learning opportunities, and resources that made cloud technology feel more accessible.",
-      "url": "https://builder.aws.com/content/3EUJVNYwxtHVaFuYgpzGqS1kbQZ",
-      "imageUrl": "",
-      "authorName": "MADDELA ADITI",
-      "authorAlias": "aditimaddelaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CWUmTHnx2Z4SWdlEaqfx7xZnO2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-ambassador",
-        "aws-certification",
-        "aws-student-builders-groups"
-      ],
-      "publishedAt": "2026-05-31T16:36:37.631Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EUejqNm8s6fAJnmOmWfMvMzfx8",
-      "title": "Inside AWS Summit Mumbai 2026: My Key Takeaways and Learnings",
-      "description": "What happens when you spend a day surrounded by thousands of builders, innovators, and cloud experts? Here are the key lessons, insights, and experiences I took away from AWS Summit Mumbai 2026.",
-      "url": "https://builder.aws.com/content/3EUejqNm8s6fAJnmOmWfMvMzfx8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUoZgW3PUSNOqpUu2fippHyxck/Whats.webp",
-      "authorName": "Anushka Gupta",
-      "authorAlias": "itsanushkaguptaa",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EUTvx4hI2k8YyRScsdFlANenhB.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-builders",
-        "aws-community",
-        "aws-community-builders",
-        "aws-community-day-2026",
-        "ai-for-developers"
-      ],
-      "publishedAt": "2026-05-31T15:55:42.432Z",
-      "likesCount": 4,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3EUilALh4a2AWrqbaK8pU1d7ZRv",
-      "title": "Beyond the Badge: How AWS Certifications Reshaped the Way I Think About Technology",
-      "description": "A reflective journey through my AWS certification experience : from Cloud Practitioner to Developer Associate — and how certifications are not merely resume badges, but catalysts that expand technical depth, architectural thinking, and professional maturity.",
-      "url": "https://builder.aws.com/content/3EUilALh4a2AWrqbaK8pU1d7ZRv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUoBfdOLsxQsdEFpQky92LQvct/1000.webp",
-      "authorName": "Charu",
-      "authorAlias": "charuji",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-05-31T15:46:41.280Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EFAuWx0uJ78hZYfFmbi4llNoEt",
-      "title": "The Road to Agentic AI: From Local Models to Real-World Automation",
-      "description": "The Road to Agentic AI: From Local Models to Real-World Automation explores a practical journey into building AI agents. Starting with local models and foundational concepts, the series gradually introduces tools, memory, workflows, and automation. Through hands-on challenges and real-world examples, you'll learn how AI agents evolve from simple conversational systems into intelligent assistants capable of solving meaningful problems.",
-      "url": "https://builder.aws.com/content/3EFAuWx0uJ78hZYfFmbi4llNoEt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUkSjZAVKmdO8heUrom18qyUh0/Chat.webp",
-      "authorName": "Vijayaraghavan Vashudevan",
-      "authorAlias": "vijayaraghavan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36BHgdwW4kHH36bOtQJ4ppK5CuW.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai-agents",
-        "strands-agents",
-        "tools",
-        "aws-mcp-server",
-        "aws-docs"
-      ],
-      "publishedAt": "2026-05-31T15:12:54.614Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EUiBapa5SBYsbZX8FvYUTWHSxW",
-      "title": "Guía para implementar SCRUM desde cero en un equipo de desarrollo",
-      "description": "Esta guía la he diseñado con base en mi experiencia creando equipos de desarrollo, estandarizando los procesos y sobre todo enfocado en la creación de una cultura de trabajo colaborativo, comunicación abierta y una visión general.",
-      "url": "https://builder.aws.com/content/3EUiBapa5SBYsbZX8FvYUTWHSxW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EV68K22WxP6vxYfPohbeWfK3Zm/Chat.webp",
-      "authorName": "Julián Darío Luna Patiño",
-      "authorAlias": "judlup",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wE8Xeb9x3PcY64Gp6Sb9cOtrzw.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "development",
-        "software-development",
-        "software-engineering"
-      ],
-      "publishedAt": "2026-05-31T15:11:31.344Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EUfnOXs2E6hI6UJF9vCpKf4MqA",
-      "title": "O que a engenharia de contexto me ensinou sobre programar com IA",
-      "description": "Durante meses achei que programar com IA era uma questão de escrever prompts melhores. Descobri que o verdadeiro diferencial está em fornecer contexto. Essa percepção mudou completamente a forma como desenvolvo software e como aprendo novas tecnologias.",
-      "url": "https://builder.aws.com/content/3EUfnOXs2E6hI6UJF9vCpKf4MqA",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUhyu9xYbEVS1m77jQRFN7BkmD/IMG_.webp",
-      "authorName": "Gabriel Macedo",
-      "authorAlias": "gabrielmaced",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Cjm5asFPzpSf0RDYxQlOWef5oA.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "agentic-ai",
-        "agentic-ide",
-        "agents",
-        "mcp-integration",
-        "aws-mcp-server"
-      ],
-      "publishedAt": "2026-05-31T14:55:55.391Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3EUe03tYL9pR2gxr14V2rKDdOtU",
+      "title": "Java vs C#: Optimizing Docker for Kubernetes",
+      "description": "Stop wasting cluster memory. Master Docker optimizations for Java and C# on Kubernetes—from JVM heap tuning and .NET Chiseled images to Native AOT.",
+      "url": "https://builder.aws.com/content/3EUe03tYL9pR2gxr14V2rKDdOtU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUhDqadBacFQ3sVQhi5kkbntq2/titl.webp",
+      "authorName": "Syed Ahmer Shah",
+      "authorAlias": "syedahmershah",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dhv2ipNnrFs3VSktjQIU5rojWy.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "coding",
+        "programming",
+        "java",
+        "csharp",
+        "technology-frameworks"
+      ],
+      "publishedAt": "2026-05-31T14:50:22.451Z",
+      "likesCount": 9,
+      "commentsCount": 19
+    },
     {
       "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
       "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
@@ -230,8 +245,8 @@
         "students"
       ],
       "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 109,
-      "commentsCount": 1509
+      "likesCount": 112,
+      "commentsCount": 1510
     },
     {
       "id": "/content/3EUejqNm8s6fAJnmOmWfMvMzfx8",
@@ -253,8 +268,44 @@
         "ai-for-developers"
       ],
       "publishedAt": "2026-05-31T15:55:42.432Z",
-      "likesCount": 4,
-      "commentsCount": 2
+      "likesCount": 6,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
+      "title": "Experiencing My First AWS Summit Ever",
+      "description": "Curious, excited, and slightly nervous  that’s exactly how I felt while attending AWS Summit Bengaluru 2026 for the very first time as an AWS Community Builder. Come, let me share my experience of stepping into a world filled with cloud innovation, inspiring people, and endless learning.",
+      "url": "https://builder.aws.com/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ETdBk35m0lSdwIbIkCJCWwve5P/May-.webp",
+      "authorName": "Sidda Deepika Reddy",
+      "authorAlias": "deepusid",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqaIwpwelTdVOBMgk18SmXW0te.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "community-events"
+      ],
+      "publishedAt": "2026-05-31T06:06:45.807Z",
+      "likesCount": 11,
+      "commentsCount": 6
+    },
+    {
+      "id": "/content/3EVroFClVTDy6Y2oSi6N3b59Bty",
+      "title": "What’s New in Apache Airflow 3.0: Event-Driven Orchestration, Asset-Aware Workflows, and Scalable Architecture",
+      "description": "Apache Airflow 3.0 introduces a service-oriented architecture, event-driven workflows, DAG versioning, asset-aware orchestration, and enhanced support for AI/ML pipelines. Explore the key features, architectural improvements, and upgrade considerations that make Airflow 3.0 a major milestone for modern data engineering.",
+      "url": "https://builder.aws.com/content/3EVroFClVTDy6Y2oSi6N3b59Bty",
+      "imageUrl": "",
+      "authorName": "Santhosh K Ramurthy",
+      "authorAlias": "santoram173",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DtuYAyVvMLWIq1PmesJxDlasAN.webp",
+      "location": "ON, CA",
+      "lat": 50.000678,
+      "lng": -86.000977,
+      "tags": [],
+      "publishedAt": "2026-06-01T00:48:17.991Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3EUPiAq0qXdBrW0rQEvafIlLShx",
@@ -276,26 +327,7 @@
         "aws-builders"
       ],
       "publishedAt": "2026-05-31T12:45:44.251Z",
-      "likesCount": 5,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
-      "title": "Experiencing My First AWS Summit Ever",
-      "description": "Curious, excited, and slightly nervous  that’s exactly how I felt while attending AWS Summit Bengaluru 2026 for the very first time as an AWS Community Builder. Come, let me share my experience of stepping into a world filled with cloud innovation, inspiring people, and endless learning.",
-      "url": "https://builder.aws.com/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ETdBk35m0lSdwIbIkCJCWwve5P/May-.webp",
-      "authorName": "Sidda Deepika Reddy",
-      "authorAlias": "deepusid",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqaIwpwelTdVOBMgk18SmXW0te.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "community-events"
-      ],
-      "publishedAt": "2026-05-31T06:06:45.807Z",
-      "likesCount": 9,
+      "likesCount": 6,
       "commentsCount": 4
     },
     {
@@ -316,8 +348,8 @@
         "ai-agents"
       ],
       "publishedAt": "2026-05-31T13:26:41.359Z",
-      "likesCount": 4,
-      "commentsCount": 0
+      "likesCount": 8,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -337,7 +369,7 @@
         "aideas-2025"
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3593,
+      "likesCount": 3594,
       "commentsCount": 338
     },
     {
@@ -362,29 +394,6 @@
       "commentsCount": 1933
     },
     {
-      "id": "/content/3EPFPZsYbx2Y3b3E8LAeY6oJ4Iz",
-      "title": "Servidores: onde vivem, como funcionam e por que dão tanto trabalho?",
-      "description": "Antes de mergulhar no mundo serverless, vale entender por que esse tal de servidor chama tanta atenção. Neste artigo, vamos explorar o que é um servidor, como ele funciona, o que precisa pra se manter de pé e quais são os desafios que vêm junto. Esse é o primeiro de uma série sobre fundamentos de compute e serverless, então prepara o café e bora começar pelo básico.",
-      "url": "https://builder.aws.com/content/3EPFPZsYbx2Y3b3E8LAeY6oJ4Iz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EPHZlwBmv4b76ChTHeovVHAKpn/capa.webp",
-      "authorName": "Giovana Armani",
-      "authorAlias": "giarmani",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3573GdqSAu7L5eoooCmwJRVlAGq.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "compute",
-        "serverless",
-        "amazon-ec2",
-        "development",
-        "infrastructure"
-      ],
-      "publishedAt": "2026-05-29T16:51:29.277Z",
-      "likesCount": 23,
-      "commentsCount": 5
-    },
-    {
       "id": "/content/3EFzloOszRiAWRMbI3zRdeCVREV",
       "title": "I Built a Production-Grade E-Commerce Platform in 3 Months — GitHub Copilot Was My Co-Founder",
       "description": "How a student used GitHub Copilot & Claude 4.6 to accelerate and harden a production-grade custom PHP e-commerce engine from scratch in 3 months.",
@@ -406,29 +415,6 @@
       "publishedAt": "2026-05-26T10:06:39.949Z",
       "likesCount": 30,
       "commentsCount": 31
-    },
-    {
-      "id": "/content/3ESwC97MuDLLk4XLxHlwtae6Lub",
-      "title": "Every Line of Code is a Potential Bug",
-      "description": "How to reduce the chances of a security flaw in your application with the principle of abstraction and the DRY principle (Do not repeat yourself).",
-      "url": "https://builder.aws.com/content/3ESwC97MuDLLk4XLxHlwtae6Lub",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ESyUtl3gA3MgPyvdRtXql8MvrU/bug-.webp",
-      "authorName": "Teri Radichel",
-      "authorAlias": "teriradichel",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "application-security",
-        "security",
-        "software-architecture",
-        "software-development",
-        "software-engineering"
-      ],
-      "publishedAt": "2026-05-31T00:14:03.675Z",
-      "likesCount": 8,
-      "commentsCount": 2
     }
   ]
 }
