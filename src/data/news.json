@@ -1,213 +1,219 @@
 {
-  "updatedAt": "2026-06-02T13:21:59.264Z",
+  "updatedAt": "2026-06-02T19:18:39.435Z",
   "latest": [
     {
-      "id": "/content/3Ea9AXAkDgh6PDKp32sPYc8PWBK",
-      "title": "I Connected Five MCP Servers to My IDE. My AI Agent Got Dumber",
-      "description": "How Kiro Powers works with MCP Configuration",
-      "url": "https://builder.aws.com/content/3Ea9AXAkDgh6PDKp32sPYc8PWBK",
-      "imageUrl": "",
-      "authorName": "Erick Mancz",
-      "authorAlias": "imancz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "amazon-bedrock-agentcore",
-        "amazon-bedrock-agents",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-06-02T13:11:09.648Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Ea7vsDyxLUTNbNCF85gbR1jx5D",
-      "title": "Kiro User Interview #1 - Hee In Jung from VPPLAB",
-      "description": "How a renewable energy startup adopted Kiro across their team and changed their dev culture with Spec-Driven Development",
-      "url": "https://builder.aws.com/content/3Ea7vsDyxLUTNbNCF85gbR1jx5D",
-      "imageUrl": "",
-      "authorName": "Yan So",
-      "authorAlias": "yanso",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yJrNuEUCAjqp6yYGe4XwHvgqCH.webp",
+      "id": "/content/3EaojDFlYgdiXzRqJ1e94xbkgc3",
+      "title": "Prompt Engineering is Dead. Long Live Context-as-Code",
+      "description": "In this blog post, I will explain the concept of Context-as-Code and share some coding examples.",
+      "url": "https://builder.aws.com/content/3EaojDFlYgdiXzRqJ1e94xbkgc3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaorH9QtDlL5UpY1i4Ab0dJM1M/Prom.webp",
+      "authorName": "Eyal Estrin",
+      "authorAlias": "eyalestrin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33VAGfV1IcLIc8y0JYW47JGnEob.webp",
       "location": "",
       "lat": 0,
       "lng": 0,
       "tags": [
-        "kiro",
-        "ai"
+        "ai",
+        "agentic-ai",
+        "generative-ai",
+        "llm",
+        "prompt-engineering"
       ],
-      "publishedAt": "2026-06-02T13:01:47.309Z",
+      "publishedAt": "2026-06-02T18:52:22.950Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3EYG3Qfm3qQRXb9OeyicNqLKmGZ",
-      "title": "From EC2 to Redshift: AWS's Long-Term Bet on Graviton",
-      "description": "What started as a new EC2 option has evolved into a key part of AWS infrastructure. This article explores why AWS continues expanding Graviton across compute, containers, and analytics services.",
-      "url": "https://builder.aws.com/content/3EYG3Qfm3qQRXb9OeyicNqLKmGZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ea53WDcLEvLkmbewKFo73GAGyb/reds.webp",
-      "authorName": "Firdevs Akbayır",
-      "authorAlias": "firdevsakbayir",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/353LFsewMJvwyUcwIMYQne4QLfx.webp",
-      "location": "CY",
-      "lat": 34.9823018,
-      "lng": 33.1451285,
-      "tags": [
-        "amazon-redshift",
-        "graviton",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-06-02T12:55:57.363Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
-      "title": "HTML Boilerplate Code: Full Example With Line-by-Line Explanation",
-      "description": "Get a complete HTML boilerplate code example with every line explained clearly. Perfect for beginners and quick reference.",
-      "url": "https://builder.aws.com/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ea5OynJGKSnr7fIPU8D4Ibl6Wl/HTML.webp",
-      "authorName": "Elsie Rainee",
-      "authorAlias": "bijal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOERfqbAoPrvGVxZBcPoOiFNQE.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "code-implementation",
-        "code-examples",
-        "learning-and-development",
-        "development"
-      ],
-      "publishedAt": "2026-06-02T12:39:30.267Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EZwLlULpsSJp8otJCXpDgo1h4s",
-      "title": "Building Fridge AI Health: An AI-Native Full-Stack App with Vercel and Amazon Aurora",
-      "description": "Built for the H0 Hackathon (Vercel × AWS Databases)",
-      "url": "https://builder.aws.com/content/3EZwLlULpsSJp8otJCXpDgo1h4s",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EZz9x1X4EKm5TyQT2occENsQzA/thum.webp",
-      "authorName": "Yuuki Yamashita",
-      "authorAlias": "yama3133",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BX9zysfzEzD9cGbrHj6VfC4CWE.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [],
-      "publishedAt": "2026-06-02T11:45:45.908Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EYHKSlXCr2YAzqlJ2ZSClJatB0",
-      "title": "Gerenciando Múltiplas Sessões do Kiro CLI: Temas, Agentes e Estratégias de Recuperação",
-      "description": "Aprenda a diferenciar visualmente janelas simultâneas do Kiro CLI usando KIRO_HOME para temas por projeto, agentes especializados como guardrails de domínio e o comando /rewind para recuperação.",
-      "url": "https://builder.aws.com/content/3EYHKSlXCr2YAzqlJ2ZSClJatB0",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EYHuZkltDpoHoEG5g6lKYQ79aB/Chat.webp",
-      "authorName": "Carlos Biagolini",
-      "authorAlias": "cbiagolini",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "kiro",
-        "kiro-agent",
-        "developer-tools",
-        "software-development",
-        "cli"
-      ],
-      "publishedAt": "2026-06-02T10:54:23.180Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/32BtHBmIWQ1sIfMI9jfMZbX0yYq",
-      "title": "Adding a Cost-Optimized Semantic Layer to a Transactional Data Store with Amazon S3 Vectors and Strands Agents",
-      "description": "Add semantic search, recommendations, and RAG to any application backed by a transactional database, using Amazon S3 Vectors as a serverless embedding store alongside the existing system of record. Amazon Bedrock handles embedding and inference, and the open-source Strands Agents SDK orchestrates retrieval without any re-platforming.",
-      "url": "https://builder.aws.com/content/32BtHBmIWQ1sIfMI9jfMZbX0yYq",
+      "id": "/content/3EadbUNV5hyCAmKKFPdkJI9tDsG",
+      "title": "Building Real-Time AI Agent Interfaces with AG-UI and Amazon Bedrock AgentCore",
+      "description": "Building Real-Time AI Agent Interfaces with AG-UI and Amazon Bedrock AgentCore while streaming every reasoning step, tool call, and state change from your AI agent to the user's browser.",
+      "url": "https://builder.aws.com/content/3EadbUNV5hyCAmKKFPdkJI9tDsG",
       "imageUrl": "",
-      "authorName": "Arushi Mishra",
-      "authorAlias": "arushimi",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32BwuItxSDVvZJ7OScN1mot83wv.webp",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [
-        "startups",
-        "amazon-s3-vectors",
-        "amazon-bedrock-agents",
-        "amazon-bedrock",
-        "strands"
-      ],
-      "publishedAt": "2026-06-02T09:14:21.628Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EZOXoUiSqQ3TAHpOlxPsvypban",
-      "title": "Never oversell, anywhere on Earth — building a global drop platform on Amazon Aurora DSQL",
-      "description": "Built for the H0 hackathon (Hack the Zero Stack with Vercel v0 and AWS Databases). #H0Hackathon",
-      "url": "https://builder.aws.com/content/3EZOXoUiSqQ3TAHpOlxPsvypban",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EZUZ4146Icb0E5O47XBDPOFVWa/-.webp",
-      "authorName": "Yuuki Yamashita",
-      "authorAlias": "yama3133",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BX9zysfzEzD9cGbrHj6VfC4CWE.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "amazon-aurora",
-        "vercel"
-      ],
-      "publishedAt": "2026-06-02T07:31:51.922Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EZQUbDZiUsIRIEHq4lGHs17cdX",
-      "title": "PRD to User Stories: AI-DLC Inception with Quick Desktop",
-      "description": "A custom PRD skill in Quick Desktop turns one sentence into personas, scope, and metrics. Inception Stories reads that PRD to generate traceable user stories",
-      "url": "https://builder.aws.com/content/3EZQUbDZiUsIRIEHq4lGHs17cdX",
-      "imageUrl": "",
-      "authorName": "Nitin Eusebius",
-      "authorAlias": "nitine",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qbG1JspeQjBCio20995uIxdvm.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-06-02T07:03:52.591Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EZEF5VgqILz4mOWHyNLNj6QQ84",
-      "title": "Implement Evals with Strands Agent  Evals(KIRO Powers)-Part1",
-      "description": "Write Agent Evaluations using Strands Agent Evals using KIRO",
-      "url": "https://builder.aws.com/content/3EZEF5VgqILz4mOWHyNLNj6QQ84",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EZEuqPtg3X1Ybgb3ytfMylE9Vq/cove.webp",
-      "authorName": "Manoj Kumar S",
-      "authorAlias": "manoj2690",
+      "authorName": "Chinmayi Narasimhadevara",
+      "authorAlias": "nchinmayi24",
       "authorAvatarUrl": "",
       "location": "",
       "lat": 0,
       "lng": 0,
       "tags": [
-        "agentic-ai",
+        "amazon-bedrock-agentcore",
         "agents",
-        "strands",
-        "strands-agents",
-        "kiro"
+        "agentic-ai"
       ],
-      "publishedAt": "2026-06-02T05:25:35.336Z",
-      "likesCount": 2,
+      "publishedAt": "2026-06-02T18:28:04.381Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EalYZ6ApwWUMA20ZI7mSWyUzwB",
+      "title": "Dados, Drones e Segurança Nacional: O que o Brasil pode aprender com a virada tecnológica nos EUA",
+      "description": "Em 2026, a captura do presidente da Venezuela e os ataques de precisão no Oriente Médio revelaram uma nova realidade: os Estados Unidos estão travando guerra com dados, inteligência artificial e drones baratos. Este artigo analisa como as big techs e o aparato militar americano transformaram informações pessoais em ativos estratégicos — e o que o Brasil precisa fazer para se posicionar nesse novo cenário.",
+      "url": "https://builder.aws.com/content/3EalYZ6ApwWUMA20ZI7mSWyUzwB",
+      "imageUrl": "",
+      "authorName": "rafaelcorreaj",
+      "authorAlias": "rafaelcorreaj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
+      "location": "PA, BR",
+      "lat": -4.7493933,
+      "lng": -52.8973006,
+      "tags": [
+        "cybersecurity",
+        "data-analytics",
+        "analytics"
+      ],
+      "publishedAt": "2026-06-02T18:25:03.408Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EaZj5CAiqVa2BxnaopRXH1u4Mz",
+      "title": "Beware of Fake Engagement On Social Media Platforms",
+      "description": "Taking a look at how my account and some others were recently targeted by a bot army (potentially, but most likely) and what you should look out for on social media platforms.",
+      "url": "https://builder.aws.com/content/3EaZj5CAiqVa2BxnaopRXH1u4Mz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eafw6XL94MfSOr0SXG606zkaoa/foll.webp",
+      "authorName": "Teri Radichel",
+      "authorAlias": "teriradichel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "ai-security",
+        "builder-center",
+        "ai",
+        "software-development",
+        "security"
+      ],
+      "publishedAt": "2026-06-02T18:00:48.932Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EaYQWyHxuupPXSl8x2e5qktcIw",
+      "title": "Semantic Anchors + Kiro Steering: Name It, Don't Describe It",
+      "description": "Semantic Anchors are established method names like \"Clean Architecture\" or \"Cockburn Use Case\" that trigger complete conceptual knowledge inside LLMs — no plugins needed. By embedding these terms in Kiro steering files, teams create persistent, shared conventions that saves you input tokens.",
+      "url": "https://builder.aws.com/content/3EaYQWyHxuupPXSl8x2e5qktcIw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EagApWAqDJ4STxXxZWmXw7frgG/sema.webp",
+      "authorName": "Jörn Krüger",
+      "authorAlias": "joern",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ELcnBWO4wiB00CW7Rqw4L8Z64z.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kiro",
+        "spec-drivien-development",
+        "prompt-engineering"
+      ],
+      "publishedAt": "2026-06-02T17:41:32.114Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3E0Nke5kpchzZKnu95uVW9WjaWa",
+      "title": "Game Days for AI-Assisted Chip Design: Testing Resilience Before Tape-Out",
+      "description": "Game days provide a structured approach to validate fault tolerance in AI-augmented EDA pipelines. This post provides a practical framework for testing resilience patterns under controlled conditions.",
+      "url": "https://builder.aws.com/content/3E0Nke5kpchzZKnu95uVW9WjaWa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0QDUadW3XED9msIMbvIl3wJbp/creat.webp",
+      "authorName": "Mario Sageth",
+      "authorAlias": "mesageth",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdrHQKGPiuK8kdaXMtcdSezWSn.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "resilience",
+        "chaos-engineering",
+        "aws-game-day",
+        "generative-ai"
+      ],
+      "publishedAt": "2026-06-02T17:32:21.296Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Eae1zEIoGjCy2Ecavqrh1VkdVL",
+      "title": "Amazon Web Services (AWS): Powering the Future of Cloud Computing",
+      "description": "Amazon Web Services (AWS) is a leading cloud platform that enables businesses and developers to build scalable, secure, and cost-effective applications. This article explores AWS fundamentals, key services such as EC2, S3, and Lambda, and how cloud computing drives innovation across industries. Discover why AWS remains a preferred choice for modern application development and digital transformation.",
+      "url": "https://builder.aws.com/content/3Eae1zEIoGjCy2Ecavqrh1VkdVL",
+      "imageUrl": "",
+      "authorName": "Dhanayashree M",
+      "authorAlias": "dhanya123",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-06-02T17:25:17.256Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/2z0bzj9bKkmB2eCzAstlr4WlpOj",
+      "title": "The 70/30 Rule: Balancing Tech Certifications and Real-World Projects",
+      "description": "Discover why certifications get your resume noticed by HR, while unique, hands-on engineering projects are what ultimately convince hiring managers to extend an offer. Learn how to use the 70/30 rule to bridge theory and practical execution so you can stand out in a competitive job market.",
+      "url": "https://builder.aws.com/content/2z0bzj9bKkmB2eCzAstlr4WlpOj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaaDn2PZlwu9fldElbW0DFRREH/Gemi.webp",
+      "authorName": "Hafiz Syed Ashir Hassan",
+      "authorAlias": "ashirhs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2bgzsENpLTyraiu0dQwDEMh73VK.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "project",
+        "aws-certification",
+        "training-and-certification"
+      ],
+      "publishedAt": "2026-06-02T17:24:10.440Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/31ByviJ14ychLFYK8zJeRvHrzvl",
+      "title": "The Universal Tool: Why the Desktop AI Agent Is the Spreadsheet of Our Era",
+      "description": "The desktop AI agent is the spreadsheet of our era — a universal tool absorbing the bespoke AI projects financial services firms commissioned in 2024–25. This piece explains why most enterprise agents collapse into a markdown skill plus MCP connections, the four ecosystem components (data connectivity, semantic layer, identity and governance, enablement) firms must put in place before rollout, and six concrete moves executives should make now to avoid the productivity gap forming by 2027.",
+      "url": "https://builder.aws.com/content/31ByviJ14ychLFYK8zJeRvHrzvl",
+      "imageUrl": "",
+      "authorName": "Axel Larsson",
+      "authorAlias": "alarsson",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2b5eH4AX6X9y5rgdCo6f7ertwxF.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "ai-security",
+        "ai-agents",
+        "financial-services",
+        "amazon-bedrock-agentcore"
+      ],
+      "publishedAt": "2026-06-02T16:44:56.470Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EaUbaUmVyCS6lYeztKNvWFcP9V",
+      "title": "Cloud Computing: Enabling Scalable, Secure, and On-Demand Digital Infrastructure",
+      "description": "Cloud computing delivers computing services such as storage, processing, and networking over the internet, allowing organizations to scale resources efficiently while reducing infrastructure costs. It enables flexible, on-demand access to powerful IT systems with improved reliability and security.\n",
+      "url": "https://builder.aws.com/content/3EaUbaUmVyCS6lYeztKNvWFcP9V",
+      "imageUrl": "",
+      "authorName": "Xavier Amith j",
+      "authorAlias": "x04",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "saas",
+        "cloud-networking",
+        "cloud-operations",
+        "agile",
+        "data-privacy"
+      ],
+      "publishedAt": "2026-06-02T16:13:46.856Z",
+      "likesCount": 0,
       "commentsCount": 0
     }
   ],
@@ -228,8 +234,31 @@
         "students"
       ],
       "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 118,
-      "commentsCount": 1515
+      "likesCount": 120,
+      "commentsCount": 1518
+    },
+    {
+      "id": "/content/3EaHytE8A8uqqkW6ektZcFLGz06",
+      "title": "Enforce layered, end-to-end access control for AI agents with Amazon Bedrock AgentCore, Amazon Cognito, and Cedar",
+      "description": "Learn how to implement three independent, deterministic authorization controls for AI agents—identity propagation with Amazon Cognito, per-agent tool restrictions with a Gateway interceptor, and per-user tool policies with Cedar—all enforced at the Amazon Bedrock AgentCore Gateway, outside the model's reasoning.",
+      "url": "https://builder.aws.com/content/3EaHytE8A8uqqkW6ektZcFLGz06",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaKhlXrJTu87kQjxKcpzIqRmyb/blog.webp",
+      "authorName": "Godwin Vincent",
+      "authorAlias": "vgodwin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wjRtDGORorosiXig7M972lHkrw.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "agent-to-agent",
+        "ai",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-06-02T14:29:26.205Z",
+      "likesCount": 4,
+      "commentsCount": 1
     },
     {
       "id": "/content/3EUe03tYL9pR2gxr14V2rKDdOtU",
@@ -274,8 +303,8 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-06-01T14:37:03.880Z",
-      "likesCount": 15,
-      "commentsCount": 2
+      "likesCount": 18,
+      "commentsCount": 3
     },
     {
       "id": "/content/3EUejqNm8s6fAJnmOmWfMvMzfx8",
@@ -298,29 +327,7 @@
       ],
       "publishedAt": "2026-05-31T15:55:42.432Z",
       "likesCount": 18,
-      "commentsCount": 11
-    },
-    {
-      "id": "/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
-      "title": "HTML Boilerplate Code: Full Example With Line-by-Line Explanation",
-      "description": "Get a complete HTML boilerplate code example with every line explained clearly. Perfect for beginners and quick reference.",
-      "url": "https://builder.aws.com/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ea5OynJGKSnr7fIPU8D4Ibl6Wl/HTML.webp",
-      "authorName": "Elsie Rainee",
-      "authorAlias": "bijal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOERfqbAoPrvGVxZBcPoOiFNQE.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "code-implementation",
-        "code-examples",
-        "learning-and-development",
-        "development"
-      ],
-      "publishedAt": "2026-06-02T12:39:30.267Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "commentsCount": 12
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -365,6 +372,28 @@
       "commentsCount": 1933
     },
     {
+      "id": "/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
+      "title": "HTML Boilerplate Code: Full Example With Line-by-Line Explanation",
+      "description": "Get a complete HTML boilerplate code example with every line explained clearly. Perfect for beginners and quick reference.",
+      "url": "https://builder.aws.com/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ea5OynJGKSnr7fIPU8D4Ibl6Wl/HTML.webp",
+      "authorName": "Elsie Rainee",
+      "authorAlias": "bijal",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOERfqbAoPrvGVxZBcPoOiFNQE.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "code-implementation",
+        "code-examples",
+        "learning-and-development",
+        "development"
+      ],
+      "publishedAt": "2026-06-02T12:39:30.267Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
       "title": "AIdeas Finalist: Global Impact AI Navigator",
       "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
@@ -386,25 +415,6 @@
       "commentsCount": 326
     },
     {
-      "id": "/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
-      "title": "Experiencing My First AWS Summit Ever",
-      "description": "Curious, excited, and slightly nervous  that’s exactly how I felt while attending AWS Summit Bengaluru 2026 for the very first time as an AWS Community Builder. Come, let me share my experience of stepping into a world filled with cloud innovation, inspiring people, and endless learning.",
-      "url": "https://builder.aws.com/content/3ERbSv5wQhGo8uAn0ExVYy7TXOU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ETdBk35m0lSdwIbIkCJCWwve5P/May-.webp",
-      "authorName": "Sidda Deepika Reddy",
-      "authorAlias": "deepusid",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqaIwpwelTdVOBMgk18SmXW0te.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "community-events"
-      ],
-      "publishedAt": "2026-05-31T06:06:45.807Z",
-      "likesCount": 18,
-      "commentsCount": 6
-    },
-    {
       "id": "/content/3EXjoogmJcFtpaRpkWR5mGSgMEK",
       "title": "Tracking AI Success Rate On An AWS Infrastructure Project",
       "description": "What are the metrics we really care about when it comes to writing code with AI agents and how can we track them?",
@@ -424,8 +434,8 @@
         "software-engineering"
       ],
       "publishedAt": "2026-06-01T16:44:28.173Z",
-      "likesCount": 5,
-      "commentsCount": 3
+      "likesCount": 6,
+      "commentsCount": 4
     }
   ]
 }
