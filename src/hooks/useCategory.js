@@ -3,6 +3,15 @@ import { useState, useEffect } from 'react';
 const categoryCache = new Map();
 const categoryRequestCache = new Map();
 
+const DATA_LOADERS = {
+  heroes: () => import('../data/heroes.json'),
+  'community-builders': () => import('../data/community-builders.json'),
+  'user-groups': () => import('../data/user-groups.json'),
+  'cloud-clubs': () => import('../data/cloud-clubs.json'),
+  'kiro-ambassadors': () => import('../data/kiro-ambassadors.json'),
+  'aws-ambassadors': () => import('../data/aws-ambassadors.json'),
+};
+
 /**
  * Normalize raw JSON entries into the common Member shape.
  * @param {any[]} raw
@@ -19,22 +28,54 @@ function normalizeMembers(raw, category) {
     lat: item.lat ?? 0,
     lng: item.lng ?? 0,
     category,
-    tag: item.tag ?? item.hero_type ?? item.specialty ?? '',
+    tag: item.tag ?? item.hero_type ?? item.specialty ?? (category === 'kiro-ambassadors' ? 'Ambassadors' : ''),
     heroType: item.hero_type ?? '',
     builderType: item.builderType ?? item.builder_type ?? '',
     specialization: item.specialization ?? item.tag ?? '',
     ledBy: Array.isArray(item.ledBy) ? item.ledBy : [],
     isNew: Boolean(item.isNew),
+    eventDate: item.eventDate ?? '',
+    description: item.description ?? '',
+    ctaLabel: item.ctaLabel ?? '',
+    country: item.country ?? '',
+    builderCount: item.builderCount ?? 0,
+    clusterOnly: Boolean(item.clusterOnly),
   }));
+}
+
+async function loadCategoryData(category, loadFullCommunityBuilders) {
+  if (category === 'community-builders' && !loadFullCommunityBuilders) {
+    const mod = await import('../data/community-builders-clusters.json');
+    return normalizeMembers(mod.default, category);
+  }
+
+  if (category === 'kiro-ambassadors') {
+    const [ambassadors, events] = await Promise.all([
+      import('../data/kiro-ambassadors.json'),
+      import('../data/kiro-events.json'),
+    ]);
+
+    return [
+      ...normalizeMembers(ambassadors.default, 'kiro-ambassadors'),
+      ...normalizeMembers(events.default, 'kiro-events'),
+    ];
+  }
+
+  const loader = DATA_LOADERS[category];
+  if (!loader) return [];
+
+  const mod = await loader();
+  return normalizeMembers(mod.default, category);
 }
 
 /**
  * Loads community member data for the given category key.
  *
  * @param {import('../types').CategoryKey} category
+ * @param {boolean} loadFullCommunityBuilders
  * @returns {{ members: import('../types').Member[], loading: boolean, error: string|null }}
  */
-export function useCategory(category) {
+export function useCategory(category, loadFullCommunityBuilders = false) {
   const [members, setMembers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -42,35 +83,46 @@ export function useCategory(category) {
   useEffect(() => {
     if (!category) return;
     if (category === 'news') {
-      setMembers([]);
-      setLoading(false);
-      setError(null);
-      return;
+      const frame = window.requestAnimationFrame(() => {
+        setMembers([]);
+        setLoading(false);
+        setError(null);
+      });
+
+      return () => window.cancelAnimationFrame(frame);
     }
 
     let cancelled = false;
-    const cachedMembers = categoryCache.get(category);
+    const cacheKey = `${category}:${loadFullCommunityBuilders ? 'full' : 'summary'}`;
+    const cachedMembers = categoryCache.get(cacheKey);
 
     if (cachedMembers) {
-      setMembers(cachedMembers);
-      setLoading(false);
-      setError(null);
+      const frame = window.requestAnimationFrame(() => {
+        setMembers(cachedMembers);
+        setLoading(false);
+        setError(null);
+      });
+
       return () => {
         cancelled = true;
+        window.cancelAnimationFrame(frame);
       };
     }
 
-    setLoading(true);
-    setError(null);
+    const loadingFrame = window.requestAnimationFrame(() => {
+      if (!cancelled) {
+        setLoading(true);
+        setError(null);
+      }
+    });
 
-    let request = categoryRequestCache.get(category);
+    let request = categoryRequestCache.get(cacheKey);
     if (!request) {
-      request = import(`../data/${category}.json`).then((mod) => {
-        const normalized = normalizeMembers(mod.default, category);
-        categoryCache.set(category, normalized);
+      request = loadCategoryData(category, loadFullCommunityBuilders).then((normalized) => {
+        categoryCache.set(cacheKey, normalized);
         return normalized;
       });
-      categoryRequestCache.set(category, request);
+      categoryRequestCache.set(cacheKey, request);
     }
 
     request
@@ -81,7 +133,7 @@ export function useCategory(category) {
         }
       })
       .catch(() => {
-        categoryRequestCache.delete(category);
+        categoryRequestCache.delete(cacheKey);
         if (!cancelled) {
           setError('Could not load community data.');
           setMembers([]);
@@ -91,8 +143,9 @@ export function useCategory(category) {
 
     return () => {
       cancelled = true;
+      window.cancelAnimationFrame(loadingFrame);
     };
-  }, [category]);
+  }, [category, loadFullCommunityBuilders]);
 
   return { members, loading, error };
 }

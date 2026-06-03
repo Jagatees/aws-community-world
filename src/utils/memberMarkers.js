@@ -31,6 +31,11 @@ export function getMemberImage(member) {
 }
 
 export function getMemberBadgeLabel(member) {
+  if (member?.clusterOnly && member?.builderCount) {
+    if (member.builderCount >= 1000) return `${Math.round(member.builderCount / 100) / 10}K`;
+    return String(member.builderCount);
+  }
+
   const words = tokenizeName(member?.name);
   if (!words.length) return 'AWS';
 

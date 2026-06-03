@@ -7,6 +7,7 @@ import TagFilter from './components/TagFilter';
 import KiroAvatarOverlay from './components/KiroAvatarOverlay';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
+import communityBuilderMeta from './data/community-builders-meta.json';
 
 const SplashScreen = lazy(() => import('./components/SplashScreen'));
 
@@ -16,6 +17,7 @@ const CATEGORY_COLORS = {
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
   'kiro-ambassadors': '#8B5CF6',
+  'kiro-events': '#7B61FF',
   'aws-ambassadors': '#2D72D2',
 };
 
@@ -24,9 +26,19 @@ const CATEGORY_LABELS = {
   'community-builders': 'Community Builders',
   'user-groups': 'User Groups',
   'cloud-clubs': 'Student Builder Groups',
-  'kiro-ambassadors': 'Kiro Ambassador',
+  'kiro-ambassadors': 'Kiro',
+  'kiro-events': 'Kiro Events',
   'aws-ambassadors': 'AWS Ambassador',
 };
+
+const SINGAPORE_CENTER = { lat: 1.3521, lng: 103.8198 };
+const SINGAPORE_SCHOOL_COORDS = [
+  { match: 'Nanyang Polytechnic', lat: 1.3799, lng: 103.8493 },
+  { match: 'Singapore Institute of Management', lat: 1.3297, lng: 103.7754 },
+  { match: 'Singapore Institute of Technology', lat: 1.4126, lng: 103.9101 },
+  { match: 'Singapore Management University', lat: 1.2966, lng: 103.8501 },
+  { match: 'National University of Singapore', lat: 1.2966, lng: 103.7764 },
+];
 
 const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
 const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
@@ -50,12 +62,15 @@ export default function App() {
   const [nearMeLoading, setNearMeLoading] = useState(false);
   const [nearMeError, setNearMeError] = useState(null);
   const [nearMeHover, setNearMeHover] = useState(false);
+  const [singaporeSpotlight, setSingaporeSpotlight] = useState(null);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isNewsView = activeCategory === 'news';
   const globeReady = !showSplash;
 
-  const { error, members, loading } = useCategory(activeCategory);
+  const isCommunityBuilderView = activeCategory === 'community-builders';
+  const loadFullCommunityBuilders = isCommunityBuilderView && Boolean(selectedTag || selectedCountry);
+  const { error, members, loading } = useCategory(activeCategory, loadFullCommunityBuilders);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading;
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
@@ -69,12 +84,16 @@ export default function App() {
           : ClassicGlobeScene;
 
   const tags = useMemo(() => {
+    if (isCommunityBuilderView) return communityBuilderMeta.tags ?? [];
+
     const set = new Set(members.map((member) => member.tag).filter(Boolean));
     return [...set].sort();
-  }, [members]);
+  }, [isCommunityBuilderView, members]);
   const hasTagFilters = tags.length > 0;
 
   const countries = useMemo(() => {
+    if (isCommunityBuilderView) return communityBuilderMeta.countries ?? [];
+
     const set = new Set(
       members
         .map((member) => {
@@ -85,9 +104,11 @@ export default function App() {
         .filter(Boolean)
     );
     return [...set].sort();
-  }, [members]);
+  }, [isCommunityBuilderView, members]);
 
   const countryCounts = useMemo(() => {
+    if (isCommunityBuilderView) return communityBuilderMeta.countryCounts ?? {};
+
     const counts = {};
     members.forEach((member) => {
       if (!member.location) return;
@@ -96,7 +117,7 @@ export default function App() {
       counts[country] = (counts[country] ?? 0) + 1;
     });
     return counts;
-  }, [members]);
+  }, [isCommunityBuilderView, members]);
 
   const filteredMembers = useMemo(() => {
     return members.filter((member) => {
@@ -110,6 +131,22 @@ export default function App() {
       return true;
     });
   }, [members, selectedTag, selectedCountry]);
+
+  const singaporeSpotlightMembers = useMemo(() => {
+    if (activeCategory !== 'cloud-clubs') return [];
+
+    return members
+      .filter((member) => member.location?.includes('Singapore'))
+      .map((member, index) => {
+        const school = SINGAPORE_SCHOOL_COORDS.find((entry) => member.name.includes(entry.match));
+        return {
+          ...member,
+          lat: school?.lat ?? member.lat,
+          lng: school?.lng ?? member.lng,
+          spotlightIndex: index,
+        };
+      });
+  }, [activeCategory, members]);
 
   const flyToTarget = useMemo(() => {
     if (!selectedCountry) return null;
@@ -129,6 +166,14 @@ export default function App() {
   const resolvedFlyToTarget = nearMeTarget ?? flyToTarget;
 
   const isEmpty = !loading && !error && filteredMembers.length === 0;
+  const hudCount = isCommunityBuilderView && !loadFullCommunityBuilders
+    ? (communityBuilderMeta.total ?? filteredMembers.length)
+    : filteredMembers.length;
+  const hudSubLabel = isCommunityBuilderView && !loadFullCommunityBuilders
+    ? `${(communityBuilderMeta.mappedTotal ?? filteredMembers.length).toLocaleString()} mapped across ${members.length.toLocaleString()} locations`
+    : selectedTag || selectedCountry
+      ? `filtered / ${members.length.toLocaleString()} total`
+      : 'members worldwide';
   const activeError = isNewsView ? newsError : error;
   const newsItems = useMemo(() => {
     const seen = new Set();
@@ -223,8 +268,20 @@ export default function App() {
   }, []);
 
   const handleMarkerClick = useCallback((member) => {
+    const cluster = Array.isArray(member)
+      ? member.find((entry) => entry?.clusterOnly || entry?.builderCount || entry?.name?.includes('Community Builders in'))
+      : member;
+    if (
+      activeCategory === 'community-builders' &&
+      (cluster?.clusterOnly || cluster?.builderCount || cluster?.name?.includes('Community Builders in'))
+    ) {
+      const parts = cluster.location?.split(',') ?? [];
+      setSelectedCountry(cluster.country || parts[parts.length - 1]?.trim() || cluster.location);
+      return;
+    }
+
     setSelectedMember(member);
-  }, []);
+  }, [activeCategory]);
 
   const handleNewsMarkerClick = useCallback((payload) => {
     const items = (Array.isArray(payload) ? payload : [payload])
@@ -243,6 +300,7 @@ export default function App() {
     setSelectedNewsItems([]);
     setSelectedTag(null);
     setSelectedCountry(null);
+    setSingaporeSpotlight(null);
     setActiveCategory(category);
     if (category === 'news') setNewsPanelOpen(true);
   }, []);
@@ -276,6 +334,23 @@ export default function App() {
       { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
     );
   }, []);
+
+  const handleSingaporeSpotlight = useCallback(() => {
+    if (singaporeSpotlight) {
+      setSelectedTag(null);
+      setSelectedCountry(null);
+      setNearMeTarget(null);
+      setSingaporeSpotlight(null);
+      setGlobeDesign('orbit');
+      return;
+    }
+
+    setSelectedTag(null);
+    setSelectedCountry('Singapore');
+    setNearMeTarget({ ...SINGAPORE_CENTER, nonce: Date.now() });
+    setGlobeDesign('classic');
+    setSingaporeSpotlight({ nonce: Date.now() });
+  }, [singaporeSpotlight]);
 
   // Highlight only — no globe fly (used when clicking title/image in panel)
   const handleSelectNewsItem = useCallback((item) => {
@@ -393,7 +468,7 @@ export default function App() {
                   <div className="kiro-buddy-sprite mb-4" role="img" aria-label="Kiro Ambassador working" />
                 )}
                 <h1 className="text-2xl font-bold" style={{ color: darkMode ? '#FFFFFF' : '#0F1923' }}>
-                  {isAwsAmbassadorView ? 'AWS Ambassador' : 'Kiro Ambassador'}
+                  {isAwsAmbassadorView ? 'AWS Ambassador' : 'Kiro'}
                 </h1>
                 <p className="mt-3 text-sm font-semibold" style={{ color: darkMode ? '#DCE7F0' : '#17324B' }}>
                   {isAwsAmbassadorView ? 'Collecting data coming soon.' : 'Ambassador coming soon.'}
@@ -605,7 +680,7 @@ export default function App() {
                 <Suspense
                   fallback={renderGlobeLoading()}
                 >
-                  <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
+                  <div key={`${globeDesign}-${singaporeSpotlight?.nonce ?? 'global'}`} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
                     <ActiveGlobeScene
                       category={activeCategory}
                       members={filteredMembers}
@@ -614,6 +689,10 @@ export default function App() {
                       darkMode={darkMode}
                       flyToTarget={resolvedFlyToTarget}
                       zoomCommand={zoomCommand}
+                      singaporeSpotlight={activeCategory === 'cloud-clubs' ? {
+                        ...singaporeSpotlight,
+                        members: singaporeSpotlightMembers,
+                      } : null}
                     />
                     {activeCategory === 'kiro-ambassadors' && !loading && <KiroAvatarOverlay />}
                   </div>
@@ -683,7 +762,7 @@ export default function App() {
                   <div style={{ width: '3.5rem', height: '1.8rem', borderRadius: '4px', background: darkMode ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.06)' }} />
                 ) : (
                   <div
-                    key={filteredMembers.length}
+                    key={hudCount}
                     style={{
                       color: darkMode ? '#FFFFFF' : '#0F1923',
                       fontSize: '1.55rem',
@@ -694,126 +773,176 @@ export default function App() {
                       fontVariantNumeric: 'tabular-nums',
                     }}
                   >
-                    {filteredMembers.length.toLocaleString()}
+                    {hudCount.toLocaleString()}
                   </div>
                 )}
 
                 {/* Sub-label */}
                 <div style={{ color: darkMode ? '#536475' : '#7a9ab8', fontSize: '0.68rem', marginTop: '3px', fontWeight: 500 }}>
-                  {selectedTag || selectedCountry ? `filtered · ${members.length.toLocaleString()} total` : 'members worldwide'}
+                  {hudSubLabel}
                 </div>
               </div>
 
+              {activeCategory === 'kiro-ambassadors' && (
+                <a
+                  href="https://kiro.dev/events/submit/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-4 right-4 z-20 rounded-full px-4 py-2 text-xs font-bold transition-colors"
+                  style={{
+                    background: darkMode ? 'rgba(8, 16, 24, 0.82)' : 'rgba(255, 255, 255, 0.9)',
+                    border: '1px solid #7B61FF',
+                    color: darkMode ? '#FFFFFF' : '#241A47',
+                    boxShadow: darkMode ? '0 14px 32px rgba(0, 0, 0, 0.28)' : '0 14px 30px rgba(60, 77, 120, 0.14)',
+                    backdropFilter: 'blur(14px)',
+                    WebkitBackdropFilter: 'blur(14px)',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#7B61FF';
+                    e.currentTarget.style.color = '#FFFFFF';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = darkMode ? 'rgba(8, 16, 24, 0.82)' : 'rgba(255, 255, 255, 0.9)';
+                    e.currentTarget.style.color = darkMode ? '#FFFFFF' : '#241A47';
+                  }}
+                >
+                  Submit Event Here
+                </a>
+              )}
+
               <div className="absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
                 <div className="flex items-stretch gap-3">
-                  <div
-                    className="flex items-center rounded-full p-1"
-                    style={{
-                      background: styleControlBg,
-                      border: `1px solid ${styleControlBorder}`,
-                      backdropFilter: 'blur(14px)',
-                      WebkitBackdropFilter: 'blur(14px)',
-                    }}
-                    aria-label="Globe design switcher"
-                  >
-                    <button
-                      type="button"
-                      onClick={() => setGlobeDesign('orbit')}
-                      className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                      style={designButtonStyles('orbit')}
-                    >
-                      Orbit
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setGlobeDesign('classic')}
-                      className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                      style={designButtonStyles('classic')}
-                    >
-                      {designButtonLabel('classic')}
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setGlobeDesign('sleek')}
-                      className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                      style={designButtonStyles('sleek')}
-                    >
-                      Sleek
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setGlobeDesign('flat')}
-                      className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                      style={designButtonStyles('flat')}
-                    >
-                      Flat
-                    </button>
-                  </div>
+                  {!singaporeSpotlight && (
+                    <>
+                      <div
+                        className="flex items-center rounded-full p-1"
+                        style={{
+                          background: styleControlBg,
+                          border: `1px solid ${styleControlBorder}`,
+                          backdropFilter: 'blur(14px)',
+                          WebkitBackdropFilter: 'blur(14px)',
+                        }}
+                        aria-label="Globe design switcher"
+                      >
+                        <button
+                          type="button"
+                          onClick={() => setGlobeDesign('orbit')}
+                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                          style={designButtonStyles('orbit')}
+                        >
+                          Orbit
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setGlobeDesign('classic')}
+                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                          style={designButtonStyles('classic')}
+                        >
+                          {designButtonLabel('classic')}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setGlobeDesign('sleek')}
+                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                          style={designButtonStyles('sleek')}
+                        >
+                          Sleek
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setGlobeDesign('flat')}
+                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                          style={designButtonStyles('flat')}
+                        >
+                          Flat
+                        </button>
+                      </div>
 
-                  <div
-                    className="flex items-center rounded-full p-1"
-                    style={{
-                      background: styleControlBg,
-                      border: `1px solid ${styleControlBorder}`,
-                      backdropFilter: 'blur(14px)',
-                      WebkitBackdropFilter: 'blur(14px)',
-                    }}
-                    aria-label="Zoom controls"
-                  >
+                      <div
+                        className="flex items-center rounded-full p-1"
+                        style={{
+                          background: styleControlBg,
+                          border: `1px solid ${styleControlBorder}`,
+                          backdropFilter: 'blur(14px)',
+                          WebkitBackdropFilter: 'blur(14px)',
+                        }}
+                        aria-label="Zoom controls"
+                      >
+                        <button
+                          type="button"
+                          onClick={() => triggerZoom('out')}
+                          className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
+                          style={{
+                            color: styleControlText,
+                            minWidth: '2.5rem',
+                            minHeight: '2.1rem',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                          }}
+                          aria-label="Zoom out"
+                        >
+                          -
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => triggerZoom('in')}
+                          className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
+                          style={{
+                            color: styleControlText,
+                            minWidth: '2.5rem',
+                            minHeight: '2.1rem',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                          }}
+                          aria-label="Zoom in"
+                        >
+                          +
+                        </button>
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={handleNearMe}
+                        onMouseEnter={() => setNearMeHover(true)}
+                        onMouseLeave={() => setNearMeHover(false)}
+                        className="rounded-full px-4 py-1 text-xs font-semibold"
+                        style={{
+                          backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
+                          color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
+                          minHeight: '2.1rem',
+                          border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
+                          transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
+                          cursor: nearMeLoading ? 'wait' : 'pointer',
+                        }}
+                        aria-label="Near me"
+                      >
+                        {nearMeLoading ? 'Locating...' : 'Near Me'}
+                      </button>
+                    </>
+                  )}
+
+                  {activeCategory === 'cloud-clubs' && (
                     <button
                       type="button"
-                      onClick={() => triggerZoom('out')}
-                      className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
+                      onClick={handleSingaporeSpotlight}
+                      className="rounded-full px-4 py-1 text-xs font-semibold"
                       style={{
-                        color: styleControlText,
-                        minWidth: '2.5rem',
+                        backgroundColor: singaporeSpotlight ? '#BF0816' : 'transparent',
+                        color: singaporeSpotlight ? '#FFFFFF' : styleControlText,
                         minHeight: '2.1rem',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
+                        border: `1px solid ${singaporeSpotlight ? '#BF0816' : styleControlBorder}`,
+                        transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
                         cursor: 'pointer',
                       }}
-                      aria-label="Zoom out"
+                      aria-label="Singapore 3D spotlight"
                     >
-                      -
+                      {singaporeSpotlight ? 'Global View' : 'Singapore 3D'}
                     </button>
-                    <button
-                      type="button"
-                      onClick={() => triggerZoom('in')}
-                      className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
-                      style={{
-                        color: styleControlText,
-                        minWidth: '2.5rem',
-                        minHeight: '2.1rem',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        cursor: 'pointer',
-                      }}
-                      aria-label="Zoom in"
-                    >
-                      +
-                    </button>
-                  </div>
-
-                  <button
-                    type="button"
-                    onClick={handleNearMe}
-                    onMouseEnter={() => setNearMeHover(true)}
-                    onMouseLeave={() => setNearMeHover(false)}
-                    className="rounded-full px-4 py-1 text-xs font-semibold"
-                    style={{
-                      backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
-                      color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
-                      minHeight: '2.1rem',
-                      border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
-                      transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
-                      cursor: nearMeLoading ? 'wait' : 'pointer',
-                    }}
-                    aria-label="Near me"
-                  >
-                    {nearMeLoading ? 'Locating...' : 'Near Me'}
-                  </button>
+                  )}
                 </div>
               </div>
 

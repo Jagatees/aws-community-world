@@ -7,6 +7,7 @@ const CATEGORY_LABELS = {
   'cloud-clubs': 'Student Builder Group',
   'kiro-ambassadors': 'Kiro Ambassador',
   'aws-ambassadors': 'AWS Ambassador',
+  'kiro-events': 'Kiro Event',
 };
 
 function LoadingSpinner({ size = 16 }) {
@@ -271,8 +272,9 @@ function SingleMemberView({ member, darkMode }) {
   const nameColor = darkMode ? '#FFFFFF' : '#0F1923';
   const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
   const isGroup = member.category === 'user-groups' || member.category === 'cloud-clubs';
+  const isEvent = member.category === 'kiro-events';
   const isHero = member.category === 'heroes';
-  const label = isGroup ? 'Join' : isHero ? 'View Profile' : 'Follow';
+  const label = isEvent ? (member.ctaLabel || 'Join Event') : isGroup ? 'Join' : isHero ? 'View Profile' : 'Follow';
   const url = member.profileUrl || member.joinUrl;
 
   if (member.category === 'cloud-clubs') {
@@ -307,9 +309,19 @@ function SingleMemberView({ member, darkMode }) {
       )}
       <CommunityBuilderMeta member={member} darkMode={darkMode} />
       <LedByMeta member={member} darkMode={darkMode} />
+      {isEvent && member.eventDate && (
+        <p className="text-sm font-semibold" style={{ color: '#FF9900' }}>
+          {member.eventDate}
+        </p>
+      )}
       {member.location && (
         <p className="text-sm" style={{ color: mutedColor }}>
           {member.location}
+        </p>
+      )}
+      {isEvent && member.description && (
+        <p className="max-w-sm text-center text-sm leading-6" style={{ color: mutedColor }}>
+          {member.description}
         </p>
       )}
       {url && (
@@ -384,7 +396,7 @@ function ClusterListView({ members, darkMode }) {
                 className="mt-1 flex-shrink-0 rounded border px-3 py-1 text-xs font-semibold"
                 style={{ borderColor: '#FF9900', color: '#FF9900' }}
               >
-                {m.category === 'user-groups' || m.category === 'cloud-clubs' ? 'Join' : 'Follow'}
+                {m.category === 'kiro-events' ? (m.ctaLabel || 'Join Event') : m.category === 'user-groups' || m.category === 'cloud-clubs' ? 'Join' : 'Follow'}
               </a>
             )}
           </li>

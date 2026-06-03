@@ -5,10 +5,10 @@ const STATS = [
   { label: 'Community Builders', count: 3546, color: '#1A9C3E' },
   { label: 'User Groups', count: 608, color: '#00A1C9' },
   { label: 'Student Builder Groups', count: 623, color: '#BF0816' },
-  { label: 'Kiro Ambassadors', count: 2, color: '#8B5CF6' },
+  { label: 'Kiro', count: 19, color: '#8B5CF6' },
 ];
 
-const TOTAL = 5040;
+const TOTAL = 5057;
 const SPLASH_GLOBE_ROTATION_SPEED = 0.035;
 const SPLASH_MARKER_COUNT = 80;
 

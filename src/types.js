@@ -1,5 +1,5 @@
 /**
- * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors'} CategoryKey
+ * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'kiro-events'} CategoryKey
  */
 
 /**
@@ -18,6 +18,12 @@
  * @property {string} [specialization]
  * @property {{ name: string, imageUrl: string }[]} [ledBy]
  * @property {boolean} [isNew]
+ * @property {string} [eventDate]
+ * @property {string} [description]
+ * @property {string} [ctaLabel]
+ * @property {string} [country]
+ * @property {number} [builderCount]
+ * @property {boolean} [clusterOnly]
  */
 
 /**

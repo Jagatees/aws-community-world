@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "scrape": "node scripts/scrape-community.mjs",
-    "update:news": "node scripts/update-builder-news.mjs"
+    "update:news": "node scripts/update-builder-news.mjs",
+    "update:kiro-events": "node scripts/update-kiro-events.mjs",
+    "build:community-builder-summary": "node scripts/build-community-builder-summary.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
