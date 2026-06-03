@@ -1,6 +1,120 @@
 {
-  "updatedAt": "2026-06-03T07:47:00.083Z",
+  "updatedAt": "2026-06-03T13:42:21.276Z",
   "latest": [
+    {
+      "id": "/content/3EcuvO5GFJY06xS7DyCvk6KQMKk",
+      "title": "From Blog Post to Slide Deck in Minutes — With Kiro and Slidev",
+      "description": "Hand a URL to Kiro, get a polished, themed slide deck back three minutes later — no manual layout, exportable to PowerPoint, PDF, or PNG. Built on Slidev with a custom AWS dark theme, custom Vue components for stats and timelines, and a steering file that codifies what makes a deck land.",
+      "url": "https://builder.aws.com/content/3EcuvO5GFJY06xS7DyCvk6KQMKk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EczCy7C1Sb0rUPztfAtCmdSlt8/blog.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "agentic-ai",
+        "agentic-ide",
+        "ai-ide"
+      ],
+      "publishedAt": "2026-06-03T13:18:45.519Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Ecy9zMJChdI4qnMlNxJPkLXlCT",
+      "title": "Multi-Agent, MCP, or Just More Tools? What I Learned Wiring Agents on AWS AgentCore",
+      "description": "Differences between A2A and MCP",
+      "url": "https://builder.aws.com/content/3Ecy9zMJChdI4qnMlNxJPkLXlCT",
+      "imageUrl": "",
+      "authorName": "Erick Mancz",
+      "authorAlias": "imancz",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CoiNzhFgTJImwRDnxF2pECQhvp.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "agent-to-agent",
+        "agents",
+        "agentic-ai",
+        "ai",
+        "amazon-bedrock-agentcore"
+      ],
+      "publishedAt": "2026-06-03T13:12:02.595Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Ecodd9aFqsG1SAkQKmqZ2KxPiP",
+      "title": "5 Multi-Agent Patterns in Strands Agents: Which One and When",
+      "description": "You have an agent that searches flights. Another one checks the weather. Another one enforces corporate policies. How do you make them work together?\n\nStrands Agents offers 5 patterns for coordinating multiple agents. Each one solves a different problem. The key difference: **who decides the execution order**. The model, the agents themselves, or you in code.",
+      "url": "https://builder.aws.com/content/3Ecodd9aFqsG1SAkQKmqZ2KxPiP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ecol9rvzn7k7XfwABtAEC76etY/port.webp",
+      "authorName": "Ricardo Ceci",
+      "authorAlias": "ricardoceci",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EMaVdESOtJIMWDZsOYNqIq2twa.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "strands-agents",
+        "artificial-intelligence",
+        "aws-heroes",
+        "python"
+      ],
+      "publishedAt": "2026-06-03T11:51:07.532Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EcgPNd9d2MMnKuRdrlInq7TTVt",
+      "title": "From Intent to Software: Running the AI-DLC MCP Server in Kiro",
+      "description": "A practical guide to the AI-Driven Development Life Cycle (AI-DLC), the AWS AI-DLC MCP server, and how to wire it into Kiro (or any MCP client) to drive a full Inception to Construction to Operations workflow from a single line of intent.",
+      "url": "https://builder.aws.com/content/3EcgPNd9d2MMnKuRdrlInq7TTVt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ecivd0Ll6pUkLLQo8Zblh0PvBv/cove.webp",
+      "authorName": "Naren_G",
+      "authorAlias": "gakkan",
+      "authorAvatarUrl": "",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "ai-dlc",
+        "generative-ai",
+        "mcp",
+        "kiro",
+        "amazon-q-developer"
+      ],
+      "publishedAt": "2026-06-03T10:52:26.466Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Eaq94hQW8HywInrVaQm9qNih1P",
+      "title": "Meet Deliberation: 400+ models is easy, knowing which ones earn a place is hard.",
+      "description": "A follow-up: how a three-model consensus tool grew into a configurable, measurable panel - and why I now make every model prove it pays for its slot.",
+      "url": "https://builder.aws.com/content/3Eaq94hQW8HywInrVaQm9qNih1P",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EcUqyVKtwja9dA0IOaa1P5I8sD/deli.webp",
+      "authorName": "Anton Babenko",
+      "authorAlias": "antonbabenko",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdkVXzqcvfhbEF48P8g2hG4IoR.webp",
+      "location": "NO",
+      "lat": 61.1529386,
+      "lng": 8.7876653,
+      "tags": [
+        "llm",
+        "agentic-ai",
+        "ai-agents",
+        "mcp",
+        "multi-agent-orchestrator"
+      ],
+      "publishedAt": "2026-06-03T09:08:18.820Z",
+      "likesCount": 6,
+      "commentsCount": 3
+    },
     {
       "id": "/content/3EbtA9V8Uv0dMG0ByZJ9aaWKwlk",
       "title": "AWS Generative AI Development Organization 20 Exam Question [Set 1]",
@@ -272,7 +386,7 @@
         "stream-processing"
       ],
       "publishedAt": "2026-06-02T19:26:48.166Z",
-      "likesCount": 1,
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
@@ -295,7 +409,7 @@
         "prompt-engineering"
       ],
       "publishedAt": "2026-06-02T18:52:22.950Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -318,74 +432,55 @@
       "publishedAt": "2026-06-02T18:28:04.381Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EalYZ6ApwWUMA20ZI7mSWyUzwB",
-      "title": "Dados, Drones e Segurança Nacional: O que o Brasil pode aprender com a virada tecnológica nos EUA",
-      "description": "Em 2026, a captura do presidente da Venezuela e os ataques de precisão no Oriente Médio revelaram uma nova realidade: os Estados Unidos estão travando guerra com dados, inteligência artificial e drones baratos. Este artigo analisa como as big techs e o aparato militar americano transformaram informações pessoais em ativos estratégicos — e o que o Brasil precisa fazer para se posicionar nesse novo cenário.",
-      "url": "https://builder.aws.com/content/3EalYZ6ApwWUMA20ZI7mSWyUzwB",
-      "imageUrl": "",
-      "authorName": "rafaelcorreaj",
-      "authorAlias": "rafaelcorreaj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CBQtZOrlhUNgIKpjXeiCEsY97Q.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [
-        "cybersecurity",
-        "data-analytics",
-        "analytics"
-      ],
-      "publishedAt": "2026-06-02T18:25:03.408Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EaZj5CAiqVa2BxnaopRXH1u4Mz",
-      "title": "Beware of Fake Engagement On Social Media Platforms",
-      "description": "Taking a look at how my account and some others were recently targeted by a bot army (potentially, but most likely) and what you should look out for on social media platforms.",
-      "url": "https://builder.aws.com/content/3EaZj5CAiqVa2BxnaopRXH1u4Mz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eafw6XL94MfSOr0SXG606zkaoa/foll.webp",
-      "authorName": "Teri Radichel",
-      "authorAlias": "teriradichel",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai-security",
-        "builder-center",
-        "ai",
-        "software-development",
-        "security"
-      ],
-      "publishedAt": "2026-06-02T18:00:48.932Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EaYQWyHxuupPXSl8x2e5qktcIw",
-      "title": "Semantic Anchors + Kiro Steering: Name It, Don't Describe It",
-      "description": "Semantic Anchors are established method names like \"Clean Architecture\" or \"Cockburn Use Case\" that trigger complete conceptual knowledge inside LLMs — no plugins needed. By embedding these terms in Kiro steering files, teams create persistent, shared conventions that saves you input tokens.",
-      "url": "https://builder.aws.com/content/3EaYQWyHxuupPXSl8x2e5qktcIw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EagApWAqDJ4STxXxZWmXw7frgG/sema.webp",
-      "authorName": "Jörn Krüger",
-      "authorAlias": "joern",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ELcnBWO4wiB00CW7Rqw4L8Z64z.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "kiro",
-        "spec-drivien-development",
-        "prompt-engineering"
-      ],
-      "publishedAt": "2026-06-02T17:41:32.114Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3Eaq94hQW8HywInrVaQm9qNih1P",
+      "title": "Meet Deliberation: 400+ models is easy, knowing which ones earn a place is hard.",
+      "description": "A follow-up: how a three-model consensus tool grew into a configurable, measurable panel - and why I now make every model prove it pays for its slot.",
+      "url": "https://builder.aws.com/content/3Eaq94hQW8HywInrVaQm9qNih1P",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EcUqyVKtwja9dA0IOaa1P5I8sD/deli.webp",
+      "authorName": "Anton Babenko",
+      "authorAlias": "antonbabenko",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdkVXzqcvfhbEF48P8g2hG4IoR.webp",
+      "location": "NO",
+      "lat": 61.1529386,
+      "lng": 8.7876653,
+      "tags": [
+        "llm",
+        "agentic-ai",
+        "ai-agents",
+        "mcp",
+        "multi-agent-orchestrator"
+      ],
+      "publishedAt": "2026-06-03T09:08:18.820Z",
+      "likesCount": 6,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3EcuvO5GFJY06xS7DyCvk6KQMKk",
+      "title": "From Blog Post to Slide Deck in Minutes — With Kiro and Slidev",
+      "description": "Hand a URL to Kiro, get a polished, themed slide deck back three minutes later — no manual layout, exportable to PowerPoint, PDF, or PNG. Built on Slidev with a custom AWS dark theme, custom Vue components for stats and timelines, and a steering file that codifies what makes a deck land.",
+      "url": "https://builder.aws.com/content/3EcuvO5GFJY06xS7DyCvk6KQMKk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EczCy7C1Sb0rUPztfAtCmdSlt8/blog.webp",
+      "authorName": "Haowen Huang",
+      "authorAlias": "popkee",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2eAdV7rNkvFBWcv6TEWicKNJPTy.webp",
+      "location": "HK",
+      "lat": 22.3492155,
+      "lng": 114.1857978,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "agentic-ai",
+        "agentic-ide",
+        "ai-ide"
+      ],
+      "publishedAt": "2026-06-03T13:18:45.519Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
     {
       "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
       "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
@@ -404,49 +499,6 @@
       "publishedAt": "2026-05-26T15:00:54.657Z",
       "likesCount": 123,
       "commentsCount": 1518
-    },
-    {
-      "id": "/content/3EbtA9V8Uv0dMG0ByZJ9aaWKwlk",
-      "title": "AWS Generative AI Development Organization 20 Exam Question [Set 1]",
-      "description": "Amazon Bedrock enhances multi-tenant generative AI using job isolation and dynamic GPU scheduling to optimize inference latency and utilization. AI-driven CI/CD leverages automated testing and scalable pipelines to match high commit velocity. Lifecycle policies lower costs by retiring unused models. Shift-left testing improves code quality and risk mitigation, while serverless CI/CD supports enterprise-scale deployments. Bedrock tiered service levels and context summarization improve cost efficiency.",
-      "url": "https://builder.aws.com/content/3EbtA9V8Uv0dMG0ByZJ9aaWKwlk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ebwm7xuJcHbTXDkiiJqptKAXOQ/og-h.webp",
-      "authorName": "Dan M",
-      "authorAlias": "damartin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EbghngBTifD6WRutxozeJalOLY.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "training-and-certification",
-        "aws-certification"
-      ],
-      "publishedAt": "2026-06-03T06:50:13.501Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EaHytE8A8uqqkW6ektZcFLGz06",
-      "title": "Enforce layered, end-to-end access control for AI agents with Amazon Bedrock AgentCore, Amazon Cognito, and Cedar",
-      "description": "Learn how to implement three independent, deterministic authorization controls for AI agents—identity propagation with Amazon Cognito, per-agent tool restrictions with a Gateway interceptor, and per-user tool policies with Cedar—all enforced at the Amazon Bedrock AgentCore Gateway, outside the model's reasoning.",
-      "url": "https://builder.aws.com/content/3EaHytE8A8uqqkW6ektZcFLGz06",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaKhlXrJTu87kQjxKcpzIqRmyb/blog.webp",
-      "authorName": "Godwin Vincent",
-      "authorAlias": "vgodwin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wjRtDGORorosiXig7M972lHkrw.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "agent-to-agent",
-        "ai",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-06-02T14:29:26.205Z",
-      "likesCount": 9,
-      "commentsCount": 3
     },
     {
       "id": "/content/3EUe03tYL9pR2gxr14V2rKDdOtU",
@@ -470,29 +522,6 @@
       "publishedAt": "2026-05-31T14:50:22.451Z",
       "likesCount": 18,
       "commentsCount": 19
-    },
-    {
-      "id": "/content/3EXQn5bjdpzC6hpE0aRLGapW92D",
-      "title": "The 4x4: Containers Community Highlights",
-      "description": "4 community picks and 4 AWS picks on Containers on AWS!",
-      "url": "https://builder.aws.com/content/3EXQn5bjdpzC6hpE0aRLGapW92D",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EXQul4kezVm1LQpS9X48B3i2zS/Scre.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "containers",
-        "amazon-eks",
-        "amazon-ecs",
-        "kubernetes",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-06-01T14:37:03.880Z",
-      "likesCount": 21,
-      "commentsCount": 5
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -537,6 +566,52 @@
       "commentsCount": 1933
     },
     {
+      "id": "/content/3EXQn5bjdpzC6hpE0aRLGapW92D",
+      "title": "The 4x4: Containers Community Highlights",
+      "description": "4 community picks and 4 AWS picks on Containers on AWS!",
+      "url": "https://builder.aws.com/content/3EXQn5bjdpzC6hpE0aRLGapW92D",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EXQul4kezVm1LQpS9X48B3i2zS/Scre.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "containers",
+        "amazon-eks",
+        "amazon-ecs",
+        "kubernetes",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-06-01T14:37:03.880Z",
+      "likesCount": 20,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3EaHytE8A8uqqkW6ektZcFLGz06",
+      "title": "Enforce layered, end-to-end access control for AI agents with Amazon Bedrock AgentCore, Amazon Cognito, and Cedar",
+      "description": "Learn how to implement three independent, deterministic authorization controls for AI agents—identity propagation with Amazon Cognito, per-agent tool restrictions with a Gateway interceptor, and per-user tool policies with Cedar—all enforced at the Amazon Bedrock AgentCore Gateway, outside the model's reasoning.",
+      "url": "https://builder.aws.com/content/3EaHytE8A8uqqkW6ektZcFLGz06",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaKhlXrJTu87kQjxKcpzIqRmyb/blog.webp",
+      "authorName": "Godwin Vincent",
+      "authorAlias": "vgodwin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wjRtDGORorosiXig7M972lHkrw.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "agent-to-agent",
+        "ai",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-06-02T14:29:26.205Z",
+      "likesCount": 9,
+      "commentsCount": 3
+    },
+    {
       "id": "/content/3EUejqNm8s6fAJnmOmWfMvMzfx8",
       "title": "Inside AWS Summit Mumbai 2026: My Key Takeaways and Learnings",
       "description": "What happens when you spend a day surrounded by thousands of builders, innovators, and cloud experts? Here are the key lessons, insights, and experiences I took away from AWS Summit Mumbai 2026.",
@@ -579,28 +654,6 @@
       "publishedAt": "2026-04-17T13:58:54.140Z",
       "likesCount": 2890,
       "commentsCount": 326
-    },
-    {
-      "id": "/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
-      "title": "HTML Boilerplate Code: Full Example With Line-by-Line Explanation",
-      "description": "Get a complete HTML boilerplate code example with every line explained clearly. Perfect for beginners and quick reference.",
-      "url": "https://builder.aws.com/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ea5OynJGKSnr7fIPU8D4Ibl6Wl/HTML.webp",
-      "authorName": "Elsie Rainee",
-      "authorAlias": "bijal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BOERfqbAoPrvGVxZBcPoOiFNQE.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "code-implementation",
-        "code-examples",
-        "learning-and-development",
-        "development"
-      ],
-      "publishedAt": "2026-06-02T12:39:30.267Z",
-      "likesCount": 4,
-      "commentsCount": 3
     }
   ]
 }
