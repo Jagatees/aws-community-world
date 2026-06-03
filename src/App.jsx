@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useCallback, useMemo } from 'react';
+import { lazy, Suspense, useState, useCallback, useEffect, useMemo } from 'react';
 import Header from './components/Header';
 import TabNav from './components/TabNav';
 import NewsPanel from './components/NewsPanel';
@@ -40,29 +40,79 @@ const SINGAPORE_SCHOOL_COORDS = [
   { match: 'National University of Singapore', lat: 1.2966, lng: 103.7764 },
 ];
 
+const DEFAULT_ROUTE_STATE = {
+  activeCategory: 'heroes',
+  selectedTag: null,
+  selectedCountry: null,
+  globeDesign: 'orbit',
+  darkMode: true,
+  singaporeSpotlight: false,
+};
+
+const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
+const VALID_GLOBE_DESIGNS = new Set(['orbit', 'classic', 'sleek', 'flat']);
+
+function getRouteStateFromUrl() {
+  if (typeof window === 'undefined') return DEFAULT_ROUTE_STATE;
+
+  const params = new URLSearchParams(window.location.search);
+  const tab = params.get('tab');
+  const view = params.get('view');
+  const theme = params.get('theme');
+  const spotlight = params.get('sg') === '1';
+  const hasShareState = ['tab', 'tag', 'country', 'view', 'theme', 'sg'].some((key) => params.has(key));
+
+  return {
+    activeCategory: spotlight ? 'cloud-clubs' : VALID_CATEGORIES.has(tab) ? tab : DEFAULT_ROUTE_STATE.activeCategory,
+    selectedTag: params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
+    selectedCountry: params.get('country') || (spotlight ? 'Singapore' : DEFAULT_ROUTE_STATE.selectedCountry),
+    globeDesign: spotlight ? 'classic' : VALID_GLOBE_DESIGNS.has(view) ? view : DEFAULT_ROUTE_STATE.globeDesign,
+    darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
+    singaporeSpotlight: spotlight,
+    hasShareState,
+  };
+}
+
+function writeRouteStateToUrl({ activeCategory, selectedTag, selectedCountry, globeDesign, darkMode, singaporeSpotlight }) {
+  if (typeof window === 'undefined') return;
+
+  const params = new URLSearchParams();
+  if (activeCategory !== DEFAULT_ROUTE_STATE.activeCategory) params.set('tab', activeCategory);
+  if (selectedTag) params.set('tag', selectedTag);
+  if (selectedCountry) params.set('country', selectedCountry);
+  if (globeDesign !== DEFAULT_ROUTE_STATE.globeDesign) params.set('view', globeDesign);
+  if (!darkMode) params.set('theme', 'light');
+  if (singaporeSpotlight) params.set('sg', '1');
+
+  const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}${window.location.hash}`;
+  const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+  if (nextUrl !== currentUrl) window.history.replaceState(null, '', nextUrl);
+}
+
 const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
 const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
 
 export default function App() {
-  const [showSplash, setShowSplash] = useState(true);
+  const [routeState] = useState(() => getRouteStateFromUrl());
+  const [showSplash, setShowSplash] = useState(!routeState.hasShareState);
   const [splashExiting, setSplashExiting] = useState(false);
-  const [activeCategory, setActiveCategory] = useState('heroes');
+  const [activeCategory, setActiveCategory] = useState(routeState.activeCategory);
   const [selectedMember, setSelectedMember] = useState(null);
   const [selectedNewsItems, setSelectedNewsItems] = useState([]);
-  const [selectedTag, setSelectedTag] = useState(null);
-  const [selectedCountry, setSelectedCountry] = useState(null);
-  const [darkMode, setDarkMode] = useState(true);
-  const [globeDesign, setGlobeDesign] = useState('orbit');
+  const [selectedTag, setSelectedTag] = useState(routeState.selectedTag);
+  const [selectedCountry, setSelectedCountry] = useState(routeState.selectedCountry);
+  const [darkMode, setDarkMode] = useState(routeState.darkMode);
+  const [globeDesign, setGlobeDesign] = useState(routeState.globeDesign);
   const [zoomCommand, setZoomCommand] = useState({ direction: null, nonce: 0 });
-  const [newsPanelOpen, setNewsPanelOpen] = useState(true);
+  const [newsPanelOpen, setNewsPanelOpen] = useState(routeState.activeCategory === 'news');
   const [flyToOverride, setFlyToOverride] = useState(null);
-  const [nearMeTarget, setNearMeTarget] = useState(null);
+  const [nearMeTarget, setNearMeTarget] = useState(routeState.singaporeSpotlight ? { ...SINGAPORE_CENTER, nonce: 1 } : null);
   const [nearMeLoading, setNearMeLoading] = useState(false);
   const [nearMeError, setNearMeError] = useState(null);
   const [nearMeHover, setNearMeHover] = useState(false);
-  const [singaporeSpotlight, setSingaporeSpotlight] = useState(null);
+  const [singaporeSpotlight, setSingaporeSpotlight] = useState(routeState.singaporeSpotlight ? { nonce: 1 } : null);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isNewsView = activeCategory === 'news';
@@ -363,6 +413,37 @@ export default function App() {
     if (item && Number.isFinite(item.lat) && Number.isFinite(item.lng) && (item.lat !== 0 || item.lng !== 0)) {
       setFlyToOverride({ lat: item.lat, lng: item.lng, nonce: Date.now() });
     }
+  }, []);
+
+  useEffect(() => {
+    writeRouteStateToUrl({
+      activeCategory,
+      selectedTag,
+      selectedCountry,
+      globeDesign,
+      darkMode,
+      singaporeSpotlight: Boolean(singaporeSpotlight),
+    });
+  }, [activeCategory, darkMode, globeDesign, selectedCountry, selectedTag, singaporeSpotlight]);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const nextRouteState = getRouteStateFromUrl();
+      setSelectedMember(null);
+      setSelectedNewsItems([]);
+      setActiveCategory(nextRouteState.activeCategory);
+      setSelectedTag(nextRouteState.selectedTag);
+      setSelectedCountry(nextRouteState.selectedCountry);
+      setGlobeDesign(nextRouteState.globeDesign);
+      setDarkMode(nextRouteState.darkMode);
+      setNewsPanelOpen(nextRouteState.activeCategory === 'news');
+      setNearMeTarget(nextRouteState.singaporeSpotlight ? { ...SINGAPORE_CENTER, nonce: Date.now() } : null);
+      setSingaporeSpotlight(nextRouteState.singaporeSpotlight ? { nonce: Date.now() } : null);
+      if (nextRouteState.hasShareState) setShowSplash(false);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
   return (
