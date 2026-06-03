@@ -1,6 +1,280 @@
 {
-  "updatedAt": "2026-06-02T19:18:39.435Z",
+  "updatedAt": "2026-06-03T07:47:00.083Z",
   "latest": [
+    {
+      "id": "/content/3EbtA9V8Uv0dMG0ByZJ9aaWKwlk",
+      "title": "AWS Generative AI Development Organization 20 Exam Question [Set 1]",
+      "description": "Amazon Bedrock enhances multi-tenant generative AI using job isolation and dynamic GPU scheduling to optimize inference latency and utilization. AI-driven CI/CD leverages automated testing and scalable pipelines to match high commit velocity. Lifecycle policies lower costs by retiring unused models. Shift-left testing improves code quality and risk mitigation, while serverless CI/CD supports enterprise-scale deployments. Bedrock tiered service levels and context summarization improve cost efficiency.",
+      "url": "https://builder.aws.com/content/3EbtA9V8Uv0dMG0ByZJ9aaWKwlk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ebwm7xuJcHbTXDkiiJqptKAXOQ/og-h.webp",
+      "authorName": "Dan M",
+      "authorAlias": "damartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EbghngBTifD6WRutxozeJalOLY.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-06-03T06:50:13.501Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EI6DddzgUMmucMX1lHxPA1Kcn1",
+      "title": "AWS CloudOps 20 Exam Questions: Domain 1 Monitor, Log, Analysis, Remediation, Optimization [Set 1]",
+      "description": "Amazon CloudWatch agent collects EC2 memory metrics beyond native monitoring. CloudWatch composite alarms correlate CPU latency signals to reduce noise, while CloudWatch Logs metric filters alarms detect patterns. Cross-account CloudWatch dashboards improve visibility. Systems Manager Automation with CloudWatch alarms enables remediation, and Amazon EventBridge routes events. ECS, EKS, Amazon Managed Service for Prometheus and CloudTrail enhance observability and performance overall.",
+      "url": "https://builder.aws.com/content/3EI6DddzgUMmucMX1lHxPA1Kcn1",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ebh4FbfpriYkagol3nTjQUodXe/og-h.webp",
+      "authorName": "Dan M",
+      "authorAlias": "damartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EbghngBTifD6WRutxozeJalOLY.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-06-03T03:19:19.181Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EbiiGNudvCohtathykjCAUvdBR",
+      "title": "TwainGPT: Is This AI Text Tool Worth It?",
+      "description": "TwainGPT: Is This AI Text Tool Worth It?",
+      "url": "https://builder.aws.com/content/3EbiiGNudvCohtathykjCAUvdBR",
+      "imageUrl": "",
+      "authorName": "John",
+      "authorAlias": "gpt1",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-06-03T02:33:43.116Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EbgwAQEfic3i3TdjF3rxQ2uWum",
+      "title": "Serving WordPress at Scale with Amazon CloudFront and AWS WAF",
+      "description": "A production-ready guide to solving WordPress's cookie-based caching challenges with CloudFront Functions, configuring AWS WAF to protect wp-admin without false positives, and using tag-based cache invalidation for instant content updates.",
+      "url": "https://builder.aws.com/content/3EbgwAQEfic3i3TdjF3rxQ2uWum",
+      "imageUrl": "",
+      "authorName": "Cheng",
+      "authorAlias": "chencch",
+      "authorAvatarUrl": "",
+      "location": "CN",
+      "lat": 34.5412252,
+      "lng": 108.9237067,
+      "tags": [
+        "amazon-cloudfront",
+        "aws-waf",
+        "wordpress",
+        "networking-content-delivery",
+        "security"
+      ],
+      "publishedAt": "2026-06-03T02:22:01.717Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EbfQhFUPKXv5hCH3bHLfiAa80T",
+      "title": "Closing the AI Pilot-to-Production Gap on AWS: The Three SRE Components Every Bedrock Agent Deployment Is Missing",
+      "description": "This week a startup raised $50M to help enterprises move AI agents from stalled pilots to production. The pitch: \"AI that survives contact with production.\"",
+      "url": "https://builder.aws.com/content/3EbfQhFUPKXv5hCH3bHLfiAa80T",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EbfdHKAHD4ialhpUbLYaZbY9mf/dev-1.webp",
+      "authorName": "Ajay Devineni",
+      "authorAlias": "ajaydevineni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BxPI55Pr6864eSpCclPnYJXiAm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agent-hooks",
+        "amazon-bedrock-agents",
+        "sre",
+        "devops",
+        "finops"
+      ],
+      "publishedAt": "2026-06-03T02:05:55.810Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EKWqZX22S0GQZNeb4ZgvAUclz2",
+      "title": "Scaling AWS IAM Identity Center Across Enterprise",
+      "description": "A Strategy and Best Practices Guide for Large-Scale Deployments for enterprise to scale IAM Identity Center",
+      "url": "https://builder.aws.com/content/3EKWqZX22S0GQZNeb4ZgvAUclz2",
+      "imageUrl": "",
+      "authorName": "IshitaC",
+      "authorAlias": "ishichak",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "security",
+        "aws-iam-identity-center",
+        "enterprise"
+      ],
+      "publishedAt": "2026-06-02T23:56:04.463Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EbM7cQg8Q970EMiAqHWVUtEuYI",
+      "title": "De Script Caótico a App de IA",
+      "description": "Hay un momento muy específico en el ciclo de vida de todo desarrollador que trabaja con LLMs. Es el momento en que el script de cinco líneas que escribiste un martes por la tarde se convierte en algo que nadie entiende, que falla de formas misteriosas, y que un día te manda una factura que no esperabas.\nNo voy a hablar de LangChain, ni llamadaindex, ni agentes autonomos, voy a hablar de Python Basico, de estructura de proyecto, y de tres problemas concretos que van a aprender en cualquier proyecto LLM",
+      "url": "https://builder.aws.com/content/3EbM7cQg8Q970EMiAqHWVUtEuYI",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EbOWF6aRLTy9uy0UWiY767vHhA/Temp.webp",
+      "authorName": "Antonia",
+      "authorAlias": "antitopy",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33htuwgXxkAmvYenUVrv5w3YZ7g.webp",
+      "location": "CL",
+      "lat": -31.7613365,
+      "lng": -71.3187697,
+      "tags": [
+        "python",
+        "llm",
+        "chatgpt",
+        "architecture",
+        "ai"
+      ],
+      "publishedAt": "2026-06-02T23:45:13.841Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EVxVioY97ihkMrvLv7otScGPq3",
+      "title": "The Main Flaws of Modern Day AI",
+      "description": "In this article, we will explain AI's greatest flaws that the majority of AI chatbots possess.",
+      "url": "https://builder.aws.com/content/3EVxVioY97ihkMrvLv7otScGPq3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EVyzOdeq2THBIngMmJlhTcyTeA/Scre.webp",
+      "authorName": "Aunwita Jana",
+      "authorAlias": "agentai",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EKEgFIroPUUoSa8yS89OHrNRtA.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "ai-for-developers",
+        "ai-agents",
+        "agentic-interactions"
+      ],
+      "publishedAt": "2026-06-02T23:41:34.320Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Cg5YSOg40zXIyNHe4ZhmR6CMzP",
+      "title": "Serverless AI Agent Sandboxes on EKS Fargate with Kubernetes Warm Pools",
+      "description": "Combining EKS Fargate's serverless isolation with the kubernetes-sigs/agent-sandbox operator for fast, operationally simple AI agent compute",
+      "url": "https://builder.aws.com/content/3Cg5YSOg40zXIyNHe4ZhmR6CMzP",
+      "imageUrl": "",
+      "authorName": "Anuj Dewangan",
+      "authorAlias": "anujdewangan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ChSZMWbmJE7IeDFjmD8J5heNbg.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [],
+      "publishedAt": "2026-06-02T21:50:41.380Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Eb1FplLWiYhjz6V2TEFGdLDv7d",
+      "title": "What AWS Project 2 Taught Me About Troubleshooting",
+      "description": "Completing this lab gave me more than technical knowledge. It gave me confidence that I can work through uncertainty, analyze problems, and keep moving forward even when the solution is not immediately visible.",
+      "url": "https://builder.aws.com/content/3Eb1FplLWiYhjz6V2TEFGdLDv7d",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eb1jp2CxT1qjkSnoOFxIyIj8tG/3721.webp",
+      "authorName": "Veronica “vj” Lott",
+      "authorAlias": "codedbyvj",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-ec2",
+        "labs",
+        "openai-gpt",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-06-02T20:38:07.642Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EazSPCh0nDErEbH2iR0CmDtjGj",
+      "title": "AWS Summit Ciudad de México 2026: Qué esperar, cómo prepararte y por qué no deberías perdértelo",
+      "description": "\nEl próximo 12 de agosto de 2026 se llevará a cabo uno de los eventos más importantes de la comunidad cloud en Latinoamérica: AWS Summit Ciudad de México.",
+      "url": "https://builder.aws.com/content/3EazSPCh0nDErEbH2iR0CmDtjGj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eb0d5tOd8hTYB08DTKNamUHf1b/hq72.webp",
+      "authorName": "Ricardo Vallejo Sánchez",
+      "authorAlias": "ricardovs",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CUbPfmeydVoF2HeYwOvdbVetn4.webp",
+      "location": "MX",
+      "lat": 23.6585116,
+      "lng": -102.0077097,
+      "tags": [
+        "aws-community",
+        "aws-community-day"
+      ],
+      "publishedAt": "2026-06-02T20:28:45.148Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EatWafJECqwxZ8WcDk4EA3MSp1",
+      "title": "Amazon Connect Monthly Newsletter - May 2026",
+      "description": "The latest issue of the Amazon Connect Newsletter is here! Stay current on Amazon Connect! Don't miss out on these key insights!",
+      "url": "https://builder.aws.com/content/3EatWafJECqwxZ8WcDk4EA3MSp1",
+      "imageUrl": "",
+      "authorName": "Adams, George",
+      "authorAlias": "gadamsiv",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3114Oroav9dvl8NKCKnWChnZguZ.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-connect",
+        "agentic-ai",
+        "ai-agents",
+        "newsletter",
+        "chatbots"
+      ],
+      "publishedAt": "2026-06-02T19:30:58.435Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3EasGOTbenIeIDeKyOl2m75R5JG",
+      "title": "Event-Driven Validation with DynamoDB Streams",
+      "description": "Learn how to build an event-driven data validation pipeline on AWS using DynamoDB Streams and AWS Lambda. This architecture pattern enables real-time processing, automatic scaling, and minimal operational overhead while preserving existing applications. A practical example of how Data Engineers and Cloud Architects can extend distributed systems using native AWS integrations and serverless architecture principles.",
+      "url": "https://builder.aws.com/content/3EasGOTbenIeIDeKyOl2m75R5JG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EatDCXwyNRkSSVYKUAjw4F6LlX/data.webp",
+      "authorName": "Rocio Baigorria",
+      "authorAlias": "tuni56",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALq8aLtJOKkgJxQFPbrpOGR92B.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "event-driven",
+        "amazon-dynamodb",
+        "data-engineering",
+        "stream-processing"
+      ],
+      "publishedAt": "2026-06-02T19:26:48.166Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EaojDFlYgdiXzRqJ1e94xbkgc3",
       "title": "Prompt Engineering is Dead. Long Live Context-as-Code",
@@ -86,8 +360,8 @@
         "security"
       ],
       "publishedAt": "2026-06-02T18:00:48.932Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
       "id": "/content/3EaYQWyHxuupPXSl8x2e5qktcIw",
@@ -109,112 +383,6 @@
       "publishedAt": "2026-06-02T17:41:32.114Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3E0Nke5kpchzZKnu95uVW9WjaWa",
-      "title": "Game Days for AI-Assisted Chip Design: Testing Resilience Before Tape-Out",
-      "description": "Game days provide a structured approach to validate fault tolerance in AI-augmented EDA pipelines. This post provides a practical framework for testing resilience patterns under controlled conditions.",
-      "url": "https://builder.aws.com/content/3E0Nke5kpchzZKnu95uVW9WjaWa",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3E0QDUadW3XED9msIMbvIl3wJbp/creat.webp",
-      "authorName": "Mario Sageth",
-      "authorAlias": "mesageth",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdrHQKGPiuK8kdaXMtcdSezWSn.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "resilience",
-        "chaos-engineering",
-        "aws-game-day",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-06-02T17:32:21.296Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Eae1zEIoGjCy2Ecavqrh1VkdVL",
-      "title": "Amazon Web Services (AWS): Powering the Future of Cloud Computing",
-      "description": "Amazon Web Services (AWS) is a leading cloud platform that enables businesses and developers to build scalable, secure, and cost-effective applications. This article explores AWS fundamentals, key services such as EC2, S3, and Lambda, and how cloud computing drives innovation across industries. Discover why AWS remains a preferred choice for modern application development and digital transformation.",
-      "url": "https://builder.aws.com/content/3Eae1zEIoGjCy2Ecavqrh1VkdVL",
-      "imageUrl": "",
-      "authorName": "Dhanayashree M",
-      "authorAlias": "dhanya123",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-06-02T17:25:17.256Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/2z0bzj9bKkmB2eCzAstlr4WlpOj",
-      "title": "The 70/30 Rule: Balancing Tech Certifications and Real-World Projects",
-      "description": "Discover why certifications get your resume noticed by HR, while unique, hands-on engineering projects are what ultimately convince hiring managers to extend an offer. Learn how to use the 70/30 rule to bridge theory and practical execution so you can stand out in a competitive job market.",
-      "url": "https://builder.aws.com/content/2z0bzj9bKkmB2eCzAstlr4WlpOj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaaDn2PZlwu9fldElbW0DFRREH/Gemi.webp",
-      "authorName": "Hafiz Syed Ashir Hassan",
-      "authorAlias": "ashirhs",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2bgzsENpLTyraiu0dQwDEMh73VK.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "project",
-        "aws-certification",
-        "training-and-certification"
-      ],
-      "publishedAt": "2026-06-02T17:24:10.440Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/31ByviJ14ychLFYK8zJeRvHrzvl",
-      "title": "The Universal Tool: Why the Desktop AI Agent Is the Spreadsheet of Our Era",
-      "description": "The desktop AI agent is the spreadsheet of our era — a universal tool absorbing the bespoke AI projects financial services firms commissioned in 2024–25. This piece explains why most enterprise agents collapse into a markdown skill plus MCP connections, the four ecosystem components (data connectivity, semantic layer, identity and governance, enablement) firms must put in place before rollout, and six concrete moves executives should make now to avoid the productivity gap forming by 2027.",
-      "url": "https://builder.aws.com/content/31ByviJ14ychLFYK8zJeRvHrzvl",
-      "imageUrl": "",
-      "authorName": "Axel Larsson",
-      "authorAlias": "alarsson",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2b5eH4AX6X9y5rgdCo6f7ertwxF.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "agentic-ai",
-        "ai-security",
-        "ai-agents",
-        "financial-services",
-        "amazon-bedrock-agentcore"
-      ],
-      "publishedAt": "2026-06-02T16:44:56.470Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EaUbaUmVyCS6lYeztKNvWFcP9V",
-      "title": "Cloud Computing: Enabling Scalable, Secure, and On-Demand Digital Infrastructure",
-      "description": "Cloud computing delivers computing services such as storage, processing, and networking over the internet, allowing organizations to scale resources efficiently while reducing infrastructure costs. It enables flexible, on-demand access to powerful IT systems with improved reliability and security.\n",
-      "url": "https://builder.aws.com/content/3EaUbaUmVyCS6lYeztKNvWFcP9V",
-      "imageUrl": "",
-      "authorName": "Xavier Amith j",
-      "authorAlias": "x04",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "saas",
-        "cloud-networking",
-        "cloud-operations",
-        "agile",
-        "data-privacy"
-      ],
-      "publishedAt": "2026-06-02T16:13:46.856Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -234,8 +402,28 @@
         "students"
       ],
       "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 120,
+      "likesCount": 123,
       "commentsCount": 1518
+    },
+    {
+      "id": "/content/3EbtA9V8Uv0dMG0ByZJ9aaWKwlk",
+      "title": "AWS Generative AI Development Organization 20 Exam Question [Set 1]",
+      "description": "Amazon Bedrock enhances multi-tenant generative AI using job isolation and dynamic GPU scheduling to optimize inference latency and utilization. AI-driven CI/CD leverages automated testing and scalable pipelines to match high commit velocity. Lifecycle policies lower costs by retiring unused models. Shift-left testing improves code quality and risk mitigation, while serverless CI/CD supports enterprise-scale deployments. Bedrock tiered service levels and context summarization improve cost efficiency.",
+      "url": "https://builder.aws.com/content/3EbtA9V8Uv0dMG0ByZJ9aaWKwlk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ebwm7xuJcHbTXDkiiJqptKAXOQ/og-h.webp",
+      "authorName": "Dan M",
+      "authorAlias": "damartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EbghngBTifD6WRutxozeJalOLY.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-06-03T06:50:13.501Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3EaHytE8A8uqqkW6ektZcFLGz06",
@@ -257,8 +445,8 @@
         "ai-agents"
       ],
       "publishedAt": "2026-06-02T14:29:26.205Z",
-      "likesCount": 4,
-      "commentsCount": 1
+      "likesCount": 9,
+      "commentsCount": 3
     },
     {
       "id": "/content/3EUe03tYL9pR2gxr14V2rKDdOtU",
@@ -280,7 +468,7 @@
         "technology-frameworks"
       ],
       "publishedAt": "2026-05-31T14:50:22.451Z",
-      "likesCount": 15,
+      "likesCount": 18,
       "commentsCount": 19
     },
     {
@@ -303,8 +491,50 @@
         "aws-community-builders"
       ],
       "publishedAt": "2026-06-01T14:37:03.880Z",
-      "likesCount": 18,
-      "commentsCount": 3
+      "likesCount": 21,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "social-impact",
+        "APJC",
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3595,
+      "commentsCount": 338
+    },
+    {
+      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "title": "AIdeas Finalist: NeuroVoice",
+      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
+      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
+      "authorName": "Yash Aggarwal",
+      "authorAlias": "yash4428",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DAMRFH0OdcmtsQD5RHMraMWGBU.webp",
+      "location": "Delhi, IN",
+      "lat": 28.6138954,
+      "lng": 77.2090057,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "APJC"
+      ],
+      "publishedAt": "2026-04-16T17:33:29.599Z",
+      "likesCount": 3499,
+      "commentsCount": 1933
     },
     {
       "id": "/content/3EUejqNm8s6fAJnmOmWfMvMzfx8",
@@ -326,50 +556,29 @@
         "ai-for-developers"
       ],
       "publishedAt": "2026-05-31T15:55:42.432Z",
-      "likesCount": 18,
+      "likesCount": 19,
       "commentsCount": 12
     },
     {
-      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
-      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
-      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
-      "authorName": "Om Singh",
-      "authorAlias": "jayom5797",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "social-impact",
-        "APJC",
-        "aideas-2025"
-      ],
-      "publishedAt": "2026-04-17T20:11:08.527Z",
-      "likesCount": 3594,
-      "commentsCount": 338
-    },
-    {
-      "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "title": "AIdeas Finalist: NeuroVoice",
-      "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
-      "url": "https://builder.aws.com/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CRpaQ0Rg2WXbMMcirijiZQRn1p/ea85.webp",
-      "authorName": "Yash Aggarwal",
-      "authorAlias": "yash4428",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DAMRFH0OdcmtsQD5RHMraMWGBU.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6138954,
-      "lng": 77.2090057,
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
       "tags": [
         "aideas-2025",
         "social-impact",
-        "APJC"
+        "EMEA"
       ],
-      "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3498,
-      "commentsCount": 1933
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2890,
+      "commentsCount": 326
     },
     {
       "id": "/content/3EZyqLUZ8uW7EMLGyLWD9eYB0ha",
@@ -390,52 +599,8 @@
         "development"
       ],
       "publishedAt": "2026-06-02T12:39:30.267Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
-      "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
-      ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2889,
-      "commentsCount": 326
-    },
-    {
-      "id": "/content/3EXjoogmJcFtpaRpkWR5mGSgMEK",
-      "title": "Tracking AI Success Rate On An AWS Infrastructure Project",
-      "description": "What are the metrics we really care about when it comes to writing code with AI agents and how can we track them?",
-      "url": "https://builder.aws.com/content/3EXjoogmJcFtpaRpkWR5mGSgMEK",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EXk1M82dn7TQO3P1KcJrhbnK6L/ai-t.webp",
-      "authorName": "Teri Radichel",
-      "authorAlias": "teriradichel",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai",
-        "kiro",
-        "kiro-agent",
-        "software-development",
-        "software-engineering"
-      ],
-      "publishedAt": "2026-06-01T16:44:28.173Z",
-      "likesCount": 6,
-      "commentsCount": 4
+      "likesCount": 4,
+      "commentsCount": 3
     }
   ]
 }
