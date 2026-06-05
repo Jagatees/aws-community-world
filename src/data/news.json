@@ -1,6 +1,126 @@
 {
-  "updatedAt": "2026-06-04T18:50:24.842Z",
+  "updatedAt": "2026-06-05T00:53:09.619Z",
   "latest": [
+    {
+      "id": "/content/3Eh9lgxjMNKtxCPXPSdQjqaVZfP",
+      "title": "Spec-Driven Development vs Vibe Coding: Why Kiro Bets on Writing It Down",
+      "description": "While exploratory \"vibe coding\" is excellent for fast prototyping, it relies on ephemeral chat threads that often lead to context loss and codebase bloat over time. To solve this, the AI platform Kiro champions \"spec-driven development,\" a structured approach that translates explicit intent into version-controlled requirements and designs before any code is generated.",
+      "url": "https://builder.aws.com/content/3Eh9lgxjMNKtxCPXPSdQjqaVZfP",
+      "imageUrl": "",
+      "authorName": "Poo Kuan Hoong",
+      "authorAlias": "kuanhoong",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ya9DWEgSw3vNNUC9AyA1AVvcfV.webp",
+      "location": "MY",
+      "lat": 4.5693754,
+      "lng": 102.2656823,
+      "tags": [],
+      "publishedAt": "2026-06-05T00:51:18.103Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Eh3biQbgctGOaO4jvzIgix9u5M",
+      "title": "AWS New Voices - Mi experiencia",
+      "description": "AWS New Voices es un programa de 5 semanas de entrenamiento para mejorar tus habilidades de oratoria. Es dictado por Grundei Coaching.",
+      "url": "https://builder.aws.com/content/3Eh3biQbgctGOaO4jvzIgix9u5M",
+      "imageUrl": "",
+      "authorName": "Lucas Blanco",
+      "authorAlias": "lblanco",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqqXdriApdNrAWlsqQEtzMVjCw.webp",
+      "location": "AR",
+      "lat": -34.9964963,
+      "lng": -64.9672817,
+      "tags": [
+        "spanish",
+        "tips",
+        "tech-journey",
+        "students",
+        "learning-and-development"
+      ],
+      "publishedAt": "2026-06-05T00:44:28.523Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EgvSRc7Mzn0s05QzT1DK8IT1Yo",
+      "title": "How a Single Nat Gateway Can Silently Kill Your AWS High Availability",
+      "description": "Learn how a single misconfigured Route Table can silently destroy your AWS High Availability by creating a hidden Single Point of Failure (SPOF) with your zonal NAT Gateways, and how to enforce the correct multi-AZ pattern automatically using Terraform.",
+      "url": "https://builder.aws.com/content/3EgvSRc7Mzn0s05QzT1DK8IT1Yo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eh2ywpth43c9F8bpHOd1xX4woq/IMG_2.webp",
+      "authorName": "Jeancy Joachim Mukaka",
+      "authorAlias": "jeancymukaka",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BLwIzsjbFCx2YBg7XMNFP7L1hU.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "advanced-networking",
+        "developer-tools",
+        "software-development",
+        "networking-content-delivery",
+        "nat-gateway"
+      ],
+      "publishedAt": "2026-06-04T23:46:47.574Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Egxrif8FXkOmGX5NCE2D9wQ3K0",
+      "title": "AWS Builder Center: Stop Studying Cloud. Start Building on it.",
+      "description": "Everything you need to know to get started using Builder Center today.",
+      "url": "https://builder.aws.com/content/3Egxrif8FXkOmGX5NCE2D9wQ3K0",
+      "imageUrl": "",
+      "authorName": "Jess",
+      "authorAlias": "jessgilmore",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38jK8mzDxLV4mA4MgzgB6RbDclY.webp",
+      "location": "WA, US",
+      "lat": 47.2868352,
+      "lng": -120.212613,
+      "tags": [],
+      "publishedAt": "2026-06-04T23:11:24.208Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
+      "title": "Optimizing a Customer Support Agent on AgentCore",
+      "description": "Three A/B experiments on a live AI agent using Amazon Bedrock AgentCore: testing prompts, tool descriptions, and model size.",
+      "url": "https://builder.aws.com/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EgqeW2TcdgJrm8RjrA1eaRBuP4/cove.webp",
+      "authorName": "Asako Hayase",
+      "authorAlias": "flyingotter",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar9UMWFVPKRZW9RTjQht0CJvOh.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "amazon-bedrock-agentcore",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-06-04T21:11:49.874Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3D2eETnWaTyI3XuyKX0T6flZrvq",
+      "title": "AWS Student Builder Campus Leaders",
+      "description": "Everything you need to know about the AWS Student Builder Campus Leader program (where you get paid to build, connect, and lead on your campus!) ",
+      "url": "https://builder.aws.com/content/3D2eETnWaTyI3XuyKX0T6flZrvq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EghFLc3PPfn86jGuHOv1Wyxhof/SBCL-.webp",
+      "authorName": "Jess",
+      "authorAlias": "jessgilmore",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38jK8mzDxLV4mA4MgzgB6RbDclY.webp",
+      "location": "WA, US",
+      "lat": 47.2868352,
+      "lng": -120.212613,
+      "tags": [
+        "students",
+        "student-builders"
+      ],
+      "publishedAt": "2026-06-04T20:47:33.130Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EgPbAnW3zElDjFKnEfO8dDbsJp",
       "title": "Let your Strands agent decide when to run Amazon Bedrock batch inference to save cost",
@@ -81,141 +201,6 @@
       "publishedAt": "2026-06-04T17:22:41.477Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EeJCwz1P4ddiejCLqFaJh6XWap",
-      "title": "O Desafio de Se Manter na Fronteira do Conhecimento e Como o Kiro CLI Mudou Minha Relação com Isso",
-      "description": "Quando o custo da exploração diminui, você experimenta mais. Um arquiteto de soluções compartilha como fluxos assistidos por IA no terminal mudaram seu comportamento de aprendizado e produtividade.",
-      "url": "https://builder.aws.com/content/3EeJCwz1P4ddiejCLqFaJh6XWap",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EeLKkscp4SIQKneg6iNlzC1Uma/Chat.webp",
-      "authorName": "Carlos Biagolini",
-      "authorAlias": "cbiagolini",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "kiro",
-        "productivity",
-        "students",
-        "learn",
-        "learning-and-development"
-      ],
-      "publishedAt": "2026-06-04T17:22:07.878Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EgCTlcy4YxEqbPsm3EGquFuhw7",
-      "title": "Ai Agent",
-      "description": "AI Agent Suite – 5 Challenge-Based Projects Using Strands SDK and Ollama\nKey Features\n🤖 Interactive AI chatbot powered by Llama 3.2\n🌦️ Real-time weather information retrieval\n➗ Mathematical calculations and problem solving\n💾 Memory management to store and recall user information\n🗣️ Natural conversational interaction\n🔄 Multi-turn conversations with context awareness\n🏠 Runs locally using Ollama for privacy and offline usage\nChallenges Implemented\nChallenge 1: Basic AI Chat Agent",
-      "url": "https://builder.aws.com/content/3EgCTlcy4YxEqbPsm3EGquFuhw7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EgD0L8eTH1MxieSr81YlsqO3TN/Scre.webp",
-      "authorName": "ABHISHEK M",
-      "authorAlias": "abhishek8766",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "agentic-ide",
-        "kiro",
-        "llm"
-      ],
-      "publishedAt": "2026-06-04T16:38:50.092Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EeiBJDelentmQLqFYyIOaROfCV",
-      "title": "5 Weeks That Changed\nHow I Show Up\nas an Engineer",
-      "description": "I had been building on AWS for six years. I had projects worth sharing, ideas worth discussing, and experiences worth passing on. AWS New Voices gave me the tools to finally do all three  well.",
-      "url": "https://builder.aws.com/content/3EeiBJDelentmQLqFYyIOaROfCV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eg99Zj4aRRQpmU5kaDRHlTsaJK/Scre.webp",
-      "authorName": "Rajpreet",
-      "authorAlias": "rajgill",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApHKgJYAJZeogIiXCqC4InKTx3.webp",
-      "location": "CA",
-      "lat": 61.0666922,
-      "lng": -107.991707,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "women-in-tech",
-        "career"
-      ],
-      "publishedAt": "2026-06-04T16:23:16.337Z",
-      "likesCount": 3,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3Eg6WXXkOInehOId7GEqLaUaYGz",
-      "title": "AWS-Mentor-AI",
-      "description": "Built an AI assistant using Amazon Bedrock and Nova Pro with tool calling, memory, streaming responses, and knowledge retrieval capabilities.",
-      "url": "https://builder.aws.com/content/3Eg6WXXkOInehOId7GEqLaUaYGz",
-      "imageUrl": "",
-      "authorName": "Praveen",
-      "authorAlias": "praveen007",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agents",
-        "agentic-ai",
-        "agentic-interactions",
-        "amazon-bedrock",
-        "amazon-nova"
-      ],
-      "publishedAt": "2026-06-04T15:53:52.680Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Efydy7XfGffuufpNh85hw41Kkt",
-      "title": "Building a Local AI Agent System using Strands SDK, Ollama, Mem0, and MCP",
-      "description": "A hands-on AI project where I built a smart local chatbot using Strands SDK, Ollama models, persistent memory (Mem0 + FAISS), and MCP tools for real-time tool execution like calculator, weather, and system info.",
-      "url": "https://builder.aws.com/content/3Efydy7XfGffuufpNh85hw41Kkt",
-      "imageUrl": "",
-      "authorName": "Karthikeyan",
-      "authorAlias": "karthikeyan2711",
-      "authorAvatarUrl": "",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "agentic-ai",
-        "ai",
-        "ai-assisted",
-        "ai-assisted-workflows"
-      ],
-      "publishedAt": "2026-06-04T14:49:55.473Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Efvuza92ZglgkF98oNAVX4D9qR",
-      "title": "Building AI AGENT SUN: Learning AI Agents, Memory, and MCP with Python",
-      "description": "A hands-on journey of building an AI Agent using Python, Kiro AI, memory management, and the Model Context Protocol (MCP). This project demonstrates agent development, tool integration, and practical AI concepts through a series of coding challenges",
-      "url": "https://builder.aws.com/content/3Efvuza92ZglgkF98oNAVX4D9qR",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EfxwoXoW4GhzvCW9fp0BMG1ZZk/sun-i.webp",
-      "authorName": "NAVEENSRI .V",
-      "authorAlias": "naveensri",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "python",
-        "virtual-machine",
-        "machine-learning",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-06-04T14:34:45.803Z",
-      "likesCount": 0,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -240,29 +225,7 @@
       ],
       "publishedAt": "2026-06-02T14:02:10.120Z",
       "likesCount": 11,
-      "commentsCount": 168
-    },
-    {
-      "id": "/content/3EeiBJDelentmQLqFYyIOaROfCV",
-      "title": "5 Weeks That Changed\nHow I Show Up\nas an Engineer",
-      "description": "I had been building on AWS for six years. I had projects worth sharing, ideas worth discussing, and experiences worth passing on. AWS New Voices gave me the tools to finally do all three  well.",
-      "url": "https://builder.aws.com/content/3EeiBJDelentmQLqFYyIOaROfCV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eg99Zj4aRRQpmU5kaDRHlTsaJK/Scre.webp",
-      "authorName": "Rajpreet",
-      "authorAlias": "rajgill",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApHKgJYAJZeogIiXCqC4InKTx3.webp",
-      "location": "CA",
-      "lat": 61.0666922,
-      "lng": -107.991707,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "women-in-tech",
-        "career"
-      ],
-      "publishedAt": "2026-06-04T16:23:16.337Z",
-      "likesCount": 3,
-      "commentsCount": 4
+      "commentsCount": 169
     },
     {
       "id": "/content/3EdBJT3cdRVqeOlC7EO3MTmXlhv",
@@ -284,8 +247,70 @@
         "software-engineering"
       ],
       "publishedAt": "2026-06-03T15:38:13.019Z",
-      "likesCount": 19,
-      "commentsCount": 24
+      "likesCount": 21,
+      "commentsCount": 25
+    },
+    {
+      "id": "/content/3EeiBJDelentmQLqFYyIOaROfCV",
+      "title": "5 Weeks That Changed\nHow I Show Up\nas an Engineer",
+      "description": "I had been building on AWS for six years. I had projects worth sharing, ideas worth discussing, and experiences worth passing on. AWS New Voices gave me the tools to finally do all three  well.",
+      "url": "https://builder.aws.com/content/3EeiBJDelentmQLqFYyIOaROfCV",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eg99Zj4aRRQpmU5kaDRHlTsaJK/Scre.webp",
+      "authorName": "Rajpreet",
+      "authorAlias": "rajgill",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApHKgJYAJZeogIiXCqC4InKTx3.webp",
+      "location": "CA",
+      "lat": 61.0666922,
+      "lng": -107.991707,
+      "tags": [
+        "aws-community-builders",
+        "aws-community",
+        "women-in-tech",
+        "career"
+      ],
+      "publishedAt": "2026-06-04T16:23:16.337Z",
+      "likesCount": 3,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
+      "description": "Whether you're prepping for HackOn with Amazon 6.0 or already deep in your build — this one's for you. We're dropping a Student Builder Challenge raffle to spark ideas, share knowledge, and celebrate the student builds across India. ",
+      "url": "https://builder.aws.com/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGaKduEmR164SvWNnAFmNlhGg4/Slid.webp",
+      "authorName": "Saha, Arkodyuti",
+      "authorAlias": "arkosaha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35uV8kcyGEbrjIXqiRRx8rPhvf0.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "students"
+      ],
+      "publishedAt": "2026-05-26T15:00:54.657Z",
+      "likesCount": 123,
+      "commentsCount": 1518
+    },
+    {
+      "id": "/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
+      "title": "AWS Community Builders Spotlight: May 25th Edition",
+      "description": "Weekly digest of AWS Community Builders' best content from May 25-31, 2026.",
+      "url": "https://builder.aws.com/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaaKXOYTckufES7fHyqLxBy5kk/Spot.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "aws-community-builders",
+        "aws-community",
+        "community"
+      ],
+      "publishedAt": "2026-06-03T16:19:39.051Z",
+      "likesCount": 23,
+      "commentsCount": 4
     },
     {
       "id": "/content/3Ef7tmUj1OLTlSXaJSaDOlVCBfn",
@@ -308,70 +333,7 @@
       ],
       "publishedAt": "2026-06-04T12:11:33.424Z",
       "likesCount": 6,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
-      "title": "AWS Community Builders Spotlight: May 25th Edition",
-      "description": "Weekly digest of AWS Community Builders' best content from May 25-31, 2026.",
-      "url": "https://builder.aws.com/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaaKXOYTckufES7fHyqLxBy5kk/Spot.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-06-03T16:19:39.051Z",
-      "likesCount": 22,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
-      "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
-      "description": "Whether you're prepping for HackOn with Amazon 6.0 or already deep in your build — this one's for you. We're dropping a Student Builder Challenge raffle to spark ideas, share knowledge, and celebrate the student builds across India. ",
-      "url": "https://builder.aws.com/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGaKduEmR164SvWNnAFmNlhGg4/Slid.webp",
-      "authorName": "Saha, Arkodyuti",
-      "authorAlias": "arkosaha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35uV8kcyGEbrjIXqiRRx8rPhvf0.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 123,
-      "commentsCount": 1518
-    },
-    {
-      "id": "/content/3Eaq94hQW8HywInrVaQm9qNih1P",
-      "title": "Meet Deliberation: 400+ models is easy, knowing which ones earn a place is hard.",
-      "description": "A follow-up: how a three-model consensus tool grew into a configurable, measurable panel - and why I now make every model prove it pays for its slot.",
-      "url": "https://builder.aws.com/content/3Eaq94hQW8HywInrVaQm9qNih1P",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EcUqyVKtwja9dA0IOaa1P5I8sD/deli.webp",
-      "authorName": "Anton Babenko",
-      "authorAlias": "antonbabenko",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdkVXzqcvfhbEF48P8g2hG4IoR.webp",
-      "location": "NO",
-      "lat": 61.1529386,
-      "lng": 8.7876653,
-      "tags": [
-        "llm",
-        "agentic-ai",
-        "ai-agents",
-        "mcp",
-        "multi-agent-orchestrator"
-      ],
-      "publishedAt": "2026-06-03T09:08:18.820Z",
-      "likesCount": 13,
-      "commentsCount": 6
+      "commentsCount": 2
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -416,27 +378,48 @@
       "commentsCount": 1933
     },
     {
-      "id": "/content/3EeJCwz1P4ddiejCLqFaJh6XWap",
-      "title": "O Desafio de Se Manter na Fronteira do Conhecimento e Como o Kiro CLI Mudou Minha Relação com Isso",
-      "description": "Quando o custo da exploração diminui, você experimenta mais. Um arquiteto de soluções compartilha como fluxos assistidos por IA no terminal mudaram seu comportamento de aprendizado e produtividade.",
-      "url": "https://builder.aws.com/content/3EeJCwz1P4ddiejCLqFaJh6XWap",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EeLKkscp4SIQKneg6iNlzC1Uma/Chat.webp",
-      "authorName": "Carlos Biagolini",
-      "authorAlias": "cbiagolini",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
+      "id": "/content/3Eaq94hQW8HywInrVaQm9qNih1P",
+      "title": "Meet Deliberation: 400+ models is easy, knowing which ones earn a place is hard.",
+      "description": "A follow-up: how a three-model consensus tool grew into a configurable, measurable panel - and why I now make every model prove it pays for its slot.",
+      "url": "https://builder.aws.com/content/3Eaq94hQW8HywInrVaQm9qNih1P",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EcUqyVKtwja9dA0IOaa1P5I8sD/deli.webp",
+      "authorName": "Anton Babenko",
+      "authorAlias": "antonbabenko",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DdkVXzqcvfhbEF48P8g2hG4IoR.webp",
+      "location": "NO",
+      "lat": 61.1529386,
+      "lng": 8.7876653,
       "tags": [
-        "kiro",
-        "productivity",
-        "students",
-        "learn",
-        "learning-and-development"
+        "llm",
+        "agentic-ai",
+        "ai-agents",
+        "mcp",
+        "multi-agent-orchestrator"
       ],
-      "publishedAt": "2026-06-04T17:22:07.878Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-06-03T09:08:18.820Z",
+      "likesCount": 13,
+      "commentsCount": 6
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2891,
+      "commentsCount": 326
     }
   ]
 }
