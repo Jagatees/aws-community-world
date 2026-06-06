@@ -65,6 +65,25 @@ http://localhost:5173
 - `npm run preview` previews the production build locally
 - `npm run lint` runs ESLint
 - `npm run scrape` runs the scraping pipeline entry script
+- `npm run update:community-data` scrapes the AWS Heroes, Community Builders, User Groups, and Student Builder Groups directories, handles pagination, geocodes new locations, and rebuilds the Community Builder cluster summary
+- `npm run update:news` refreshes the Builder Center news feed
+- `npm run update:kiro-events` refreshes Kiro event data
+
+## Automated Data Refresh
+
+GitHub Actions keeps the app data fresh:
+
+- Builder Center news refreshes once per day.
+- Kiro events refresh once per day.
+- AWS community directory data refreshes once per day from:
+  - `https://builder.aws.com/community/heroes`
+  - `https://builder.aws.com/community/community-builders`
+  - `https://builder.aws.com/community/user-groups`
+  - `https://builder.aws.com/community/student-builder-groups`
+
+The community-data runner loads all available directory rows before saving, including pages with "Load more", "View More", or similar pagination buttons. It preserves the JSON shapes used by the app tabs and commits updates to `src/data/*.json` plus the geocoding cache.
+
+Manual handling should only be needed if AWS changes the page markup/selectors, requires login, presents a captcha, or blocks headless browser access. In that case, inspect the failed GitHub Actions logs, update `scripts/update-community-data.mjs` selectors/extraction logic, and run the workflow manually after the fix.
 
 ## Status
 

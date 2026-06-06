@@ -3,7 +3,7 @@ name: Update Kiro Events
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * 1'
+    - cron: '0 2 * * *'
 
 permissions:
   contents: write
@@ -20,6 +20,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Refresh Kiro events
         run: npm run update:kiro-events
