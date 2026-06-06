@@ -1,6 +1,241 @@
 {
-  "updatedAt": "2026-06-06T00:50:08.695Z",
+  "updatedAt": "2026-06-06T12:31:51.615Z",
   "latest": [
+    {
+      "id": "/content/3Ek6QX9d8ea545kjglmS2UcBlsk",
+      "title": "Primeiros Passos com o Claude Platform na AWS",
+      "description": "Cobrança consolidada, controle de acesso nativo via IAM, auditoria com CloudTrail e acesso no mesmo dia a novos modelos Claude. Tudo sem sair do ecossistema AWS.",
+      "url": "https://builder.aws.com/content/3Ek6QX9d8ea545kjglmS2UcBlsk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ek9SxnlV4BhP4vS5QyT6INGUSe/Chat.webp",
+      "authorName": "Carlos Biagolini",
+      "authorAlias": "cbiagolini",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "developer-tools",
+        "anthropic-claude",
+        "claude",
+        "software-development",
+        "development"
+      ],
+      "publishedAt": "2026-06-06T11:40:15.908Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ElDNrn47wZAgHV53MhI3Ty0KWX",
+      "title": "Stop Blaming the AWS Bill. The Most Expensive Thing in Your GenAI Budget Is You",
+      "description": "Everyone blames the surprise cloud bill. The real cost is deciding by old memories instead of today's numbers. Here's how Amazon Bedrock turned GenAI into a controllable, serverless, pay per token utility, and why most teams still can't pitch the savings.",
+      "url": "https://builder.aws.com/content/3ElDNrn47wZAgHV53MhI3Ty0KWX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ElFVnRBs43jpXNmkrNTSFHClSn/Chat.webp",
+      "authorName": "Saurabh Kumar",
+      "authorAlias": "sau100rb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37wF3fpimMUJnnVytcWWTURLCWT.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agentic-ai",
+        "cost-optimization",
+        "billing",
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-agents"
+      ],
+      "publishedAt": "2026-06-06T11:28:56.557Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3El6Z2p9AFNPk9qS6yM8zFeeCMf",
+      "title": "Ai agent",
+      "description": "AI Agent Learning Project built with Python, featuring agent workflows, memory management, vector databases (FAISS and ChromaDB), and MCP server integration. The repository contains multiple hands-on challenges demonstrating AI agent development, persistent memory storage, retrieval-augmented capabilities, and tool-based interactions for building intelligent and scalable agentic systems.",
+      "url": "https://builder.aws.com/content/3El6Z2p9AFNPk9qS6yM8zFeeCMf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3El74esPNHLJQ47XkkhxpsZ6MYF/Scre.webp",
+      "authorName": "thilagavathi",
+      "authorAlias": "thilagavathi3005",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "llama",
+        "ai"
+      ],
+      "publishedAt": "2026-06-06T10:18:51.896Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3El5HNvMVzVHtsdXB7qcbB0o3vD",
+      "title": "The Day I Realized AWS Isn't About Services",
+      "description": "I thought learning AWS meant memorizing EC2, S3, IAM, and dozens of other services. Real projects taught me a different lesson: cloud engineering is really about solving problems, not collecting service names.",
+      "url": "https://builder.aws.com/content/3El5HNvMVzVHtsdXB7qcbB0o3vD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3El63x1AjeLJcke2x6U4z90jgDF/1-pn.webp",
+      "authorName": "Om Keswani",
+      "authorAlias": "omiee24",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3894gFCupwDcSCBhlVUHtta7riL.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "ai",
+        "agent-to-agent",
+        "agents",
+        "agentic-ai",
+        "agile"
+      ],
+      "publishedAt": "2026-06-06T10:07:46.647Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EktsRfPqhcmJQql85GRIGVHkFw",
+      "title": "AWS Machine Learning 20 Exam Questions: Domain 1 Data Preparation [Set 1]",
+      "description": "AWS tools optimize ML data pipelines. Amazon Data Firehose ingests real-time streams, AWS DataSync moves on-premises data, and AWS Step Functions orchestrates workflows. For storage, Apache Parquet improves Amazon Athena queries, Amazon EFS shares files, and Amazon FSx for Lustre handles distributed training. AWS Glue DataBrew cleans data visually, AWS Glue Data Quality checks schemas, and Amazon Macie discovers PII. SageMaker Feature Store manages features, while encoding, resampling handle data anomalies.",
+      "url": "https://builder.aws.com/content/3EktsRfPqhcmJQql85GRIGVHkFw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eku1dTp0Yqq91yyX08vRKaAZvj/1772.webp",
+      "authorName": "Dan M",
+      "authorAlias": "damartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EbghngBTifD6WRutxozeJalOLY.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-06-06T09:20:17.745Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3Ekua7gRWd8JBvwTbvFB3BRTZjn",
+      "title": "AI Agent",
+      "description": "Built a suite of AI agents using Strands SDK and Ollama, including a conversational chatbot, tool-enabled assistant, memory agent, and MCP-powered agent. Implemented calculator, weather, age prediction, text processing, and persistent memory features using JSON and FAISS. Enabled context-aware conversations, intelligent tool selection, memory recall across sessions, and local LLM orchestration, demonstrating practical agentic AI, MCP integration, and autonomous workflow execution.",
+      "url": "https://builder.aws.com/content/3Ekua7gRWd8JBvwTbvFB3BRTZjn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ekuqd4Fow3DMW4JgC0ZcEHy2be/Scre.webp",
+      "authorName": "JANARTH K",
+      "authorAlias": "janarth11",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-agents",
+        "ai-engineering",
+        "backup",
+        "ai",
+        "ai-for-developers"
+      ],
+      "publishedAt": "2026-06-06T08:39:44.671Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3EkfmUogxXzLzvCW39Gp1sRsWnA",
+      "title": "AI agent",
+      "description": "AI Memory Agent is  console-based intelligent assistant that leverages AI to store, retrieve, and manage contextual information across interactions. The agent maintains conversation history and user-specific memories, enabling personalized, context-aware responses and smarter decision-making. Built with Python, it demonstrates memory persistence, efficient information retrieval, and seamless command-line interaction allowing users to engage in more meaningful and productive conversations  multiple sessions.",
+      "url": "https://builder.aws.com/content/3EkfmUogxXzLzvCW39Gp1sRsWnA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ekgq5CG3gcmBHDExCdm9EV1jQM/Scre.webp",
+      "authorName": "Nithya Velu",
+      "authorAlias": "nithya11",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "kiro",
+        "kiro-agent",
+        "amazon-s3",
+        "ai",
+        "llm"
+      ],
+      "publishedAt": "2026-06-06T06:45:34.053Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EkS0EDWzEeqyBWErzVesP0hhqv",
+      "title": "AWS NAT Gateway Performance and Regional NAT Gateway Scaling",
+      "description": "This post is translated from the original Japanese blog, published on December 25, 2025.\nhttps://qiita.com/tkazuaki0820/items/7bbfeedc72c9436b9cc5",
+      "url": "https://builder.aws.com/content/3EkS0EDWzEeqyBWErzVesP0hhqv",
+      "imageUrl": "",
+      "authorName": "Kazuaki Takashima",
+      "authorAlias": "tkazuaki08202",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqQJ6q11EaOYyTZdQtuKzYUNnM.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "aws-networking",
+        "network",
+        "vpc",
+        "nat-gateway",
+        "performance"
+      ],
+      "publishedAt": "2026-06-06T04:44:23.481Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EkGP5rw3hpj8aQRFfwCYUPMbsp",
+      "title": "Day 5 Of Cloud with AWS: Security groups",
+      "description": "#100DaysOfCloud challenge using AWS",
+      "url": "https://builder.aws.com/content/3EkGP5rw3hpj8aQRFfwCYUPMbsp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EkNHMBL21vgeicqquVJfCJyXBN/secu.webp",
+      "authorName": "Adrija Mukherjee",
+      "authorAlias": "adrija",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/375uOHHB82x82b1YIMamaxDvXD2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-06-06T04:02:10.738Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EkJxBF0fua3fI5f5Il7lHl9fMX",
+      "title": "Adaptive Agentic Intelligence Framework (AAIF): SLMs are the Future of Agentic AI",
+      "description": "Adaptive Agentic Intelligence Framework (AAIF): SLMs are the Future of Agentic AI",
+      "url": "https://builder.aws.com/content/3EkJxBF0fua3fI5f5Il7lHl9fMX",
+      "imageUrl": "",
+      "authorName": "Nitin Eusebius",
+      "authorAlias": "nitine",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32qbG1JspeQjBCio20995uIxdvm.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-06-06T03:35:02.396Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EkHrg1uzrx42kJsUyId9R92wk4",
+      "title": "Serverless Doesn't Mean Secure: The State of AWS Lambda Security in 2026",
+      "description": "AWS runs the servers, but your code, IAM roles, secrets, and public function URLs are still yours. The real Lambda attack surface, and why it stays invisible.",
+      "url": "https://builder.aws.com/content/3EkHrg1uzrx42kJsUyId9R92wk4",
+      "imageUrl": "",
+      "authorName": "Tarek CHEIKH",
+      "authorAlias": "tarekcheikh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqssKX7TpslCBJERixI5xmtdMB.webp",
+      "location": "FR",
+      "lat": 46.603354,
+      "lng": 1.8883335,
+      "tags": [
+        "aws-lambda",
+        "security",
+        "serverless"
+      ],
+      "publishedAt": "2026-06-06T03:25:28.345Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EjTMMZkR4EAWheNdFx99fUQy3Q",
       "title": "Using Kiro inside VSCode with ACP",
@@ -59,7 +294,7 @@
         "security-identity"
       ],
       "publishedAt": "2026-06-05T19:35:20.978Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -78,7 +313,7 @@
         "students"
       ],
       "publishedAt": "2026-06-05T19:28:18.432Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -118,7 +353,7 @@
         "data-analytics"
       ],
       "publishedAt": "2026-06-05T18:01:19.222Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -139,8 +374,8 @@
         "student-builders"
       ],
       "publishedAt": "2026-06-05T17:57:28.618Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "likesCount": 3,
+      "commentsCount": 1
     },
     {
       "id": "/content/3Ej5W2UkQU5YmHqv8rUIZPWiJhN",
@@ -162,41 +397,7 @@
       ],
       "publishedAt": "2026-06-05T17:46:42.819Z",
       "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Ej0wSrg6N522yspaR7H4eCBZlY",
-      "title": "Make yourself redundant: How two Amazon developers think about a dev career in the AI era",
-      "description": "Career Advice from a senior developer and a junior developer at Amazon around what it takes to get hired and grow in the software developer career path in the age of AI",
-      "url": "https://builder.aws.com/content/3Ej0wSrg6N522yspaR7H4eCBZlY",
-      "imageUrl": "",
-      "authorName": "Saurabh",
-      "authorAlias": "raabdahl",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Bnk93LBVm3BMqzvTxmdXHyjgrq.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [],
-      "publishedAt": "2026-06-05T16:29:58.068Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EiqY0b4azAIQWzH9XBSxkTbflC",
-      "title": "AWS Data Center",
-      "description": "A Visual Alternative to Manage Your AWS Data Services / Una alternativa visual para gestionar tus datos en AWS",
-      "url": "https://builder.aws.com/content/3EiqY0b4azAIQWzH9XBSxkTbflC",
-      "imageUrl": "",
-      "authorName": "Emanuel Giannattasio",
-      "authorAlias": "emagianna",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Eiqgb9NA3egqhocD8wq44QVHzn.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
-      "tags": [],
-      "publishedAt": "2026-06-05T15:33:22.642Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "commentsCount": 1
     }
   ],
   "trending": [
@@ -220,7 +421,7 @@
         "productivity"
       ],
       "publishedAt": "2026-06-02T14:02:10.120Z",
-      "likesCount": 18,
+      "likesCount": 20,
       "commentsCount": 171
     },
     {
@@ -244,46 +445,7 @@
       ],
       "publishedAt": "2026-06-03T15:38:13.019Z",
       "likesCount": 21,
-      "commentsCount": 25
-    },
-    {
-      "id": "/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
-      "title": "Optimizing a Customer Support Agent on AgentCore",
-      "description": "Three A/B experiments on a live AI agent using Amazon Bedrock AgentCore: testing prompts, tool descriptions, and model size.",
-      "url": "https://builder.aws.com/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EgqeW2TcdgJrm8RjrA1eaRBuP4/cove.webp",
-      "authorName": "Asako Hayase",
-      "authorAlias": "flyingotter",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar9UMWFVPKRZW9RTjQht0CJvOh.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "amazon-bedrock-agentcore",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-06-04T21:11:49.874Z",
-      "likesCount": 7,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
-      "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
-      "description": "Whether you're prepping for HackOn with Amazon 6.0 run by UnStop or already deep in your build — this one's for you. We're dropping a Student Builder Challenge raffle to spark ideas, share knowledge, and celebrate the student builds across India. ",
-      "url": "https://builder.aws.com/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGaKduEmR164SvWNnAFmNlhGg4/Slid.webp",
-      "authorName": "Saha, Arkodyuti",
-      "authorAlias": "arkosaha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35uV8kcyGEbrjIXqiRRx8rPhvf0.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "students"
-      ],
-      "publishedAt": "2026-05-26T15:00:54.657Z",
-      "likesCount": 124,
-      "commentsCount": 1518
+      "commentsCount": 26
     },
     {
       "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
@@ -307,27 +469,6 @@
       "commentsCount": 338
     },
     {
-      "id": "/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
-      "title": "AWS Community Builders Spotlight: May 25th Edition",
-      "description": "Weekly digest of AWS Community Builders' best content from May 25-31, 2026.",
-      "url": "https://builder.aws.com/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaaKXOYTckufES7fHyqLxBy5kk/Spot.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-06-03T16:19:39.051Z",
-      "likesCount": 27,
-      "commentsCount": 4
-    },
-    {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
       "title": "AIdeas Finalist: NeuroVoice",
       "description": "Small moments, repeated daily, reveal what single snapshots never can - patterns that quietly signal neurological risk. NeuroVoice is a multimodal Parkinson’s screening platform that tracks pattern over time to detect subtle neurological changes early.",
@@ -347,6 +488,70 @@
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3500,
       "commentsCount": 1933
+    },
+    {
+      "id": "/content/3EktsRfPqhcmJQql85GRIGVHkFw",
+      "title": "AWS Machine Learning 20 Exam Questions: Domain 1 Data Preparation [Set 1]",
+      "description": "AWS tools optimize ML data pipelines. Amazon Data Firehose ingests real-time streams, AWS DataSync moves on-premises data, and AWS Step Functions orchestrates workflows. For storage, Apache Parquet improves Amazon Athena queries, Amazon EFS shares files, and Amazon FSx for Lustre handles distributed training. AWS Glue DataBrew cleans data visually, AWS Glue Data Quality checks schemas, and Amazon Macie discovers PII. SageMaker Feature Store manages features, while encoding, resampling handle data anomalies.",
+      "url": "https://builder.aws.com/content/3EktsRfPqhcmJQql85GRIGVHkFw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eku1dTp0Yqq91yyX08vRKaAZvj/1772.webp",
+      "authorName": "Dan M",
+      "authorAlias": "damartin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EbghngBTifD6WRutxozeJalOLY.webp",
+      "location": "PH",
+      "lat": 12.7503486,
+      "lng": 122.7312101,
+      "tags": [
+        "training-and-certification",
+        "aws-certification"
+      ],
+      "publishedAt": "2026-06-06T09:20:17.745Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
+      "title": "AWS Community Builders Spotlight: May 25th Edition",
+      "description": "Weekly digest of AWS Community Builders' best content from May 25-31, 2026.",
+      "url": "https://builder.aws.com/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EaaKXOYTckufES7fHyqLxBy5kk/Spot.webp",
+      "authorName": "Corey Strausman",
+      "authorAlias": "coreydst",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "aws-community-builders",
+        "aws-community",
+        "community"
+      ],
+      "publishedAt": "2026-06-03T16:19:39.051Z",
+      "likesCount": 29,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3Ekua7gRWd8JBvwTbvFB3BRTZjn",
+      "title": "AI Agent",
+      "description": "Built a suite of AI agents using Strands SDK and Ollama, including a conversational chatbot, tool-enabled assistant, memory agent, and MCP-powered agent. Implemented calculator, weather, age prediction, text processing, and persistent memory features using JSON and FAISS. Enabled context-aware conversations, intelligent tool selection, memory recall across sessions, and local LLM orchestration, demonstrating practical agentic AI, MCP integration, and autonomous workflow execution.",
+      "url": "https://builder.aws.com/content/3Ekua7gRWd8JBvwTbvFB3BRTZjn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ekuqd4Fow3DMW4JgC0ZcEHy2be/Scre.webp",
+      "authorName": "JANARTH K",
+      "authorAlias": "janarth11",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-agents",
+        "ai-engineering",
+        "backup",
+        "ai",
+        "ai-for-developers"
+      ],
+      "publishedAt": "2026-06-06T08:39:44.671Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
@@ -370,43 +575,43 @@
       "commentsCount": 326
     },
     {
-      "id": "/content/3EiotHmTZssOEr1rDBxdNEN2hII",
-      "title": "Terms and Conditions - HackOn with Amazon 6.0 - Student Builder Challenge",
-      "description": "Terms and Conditions - HackOn with Amazon 6.0 - Student Builder Challenge",
-      "url": "https://builder.aws.com/content/3EiotHmTZssOEr1rDBxdNEN2hII",
-      "imageUrl": "",
+      "id": "/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
+      "title": "Optimizing a Customer Support Agent on AgentCore",
+      "description": "Three A/B experiments on a live AI agent using Amazon Bedrock AgentCore: testing prompts, tool descriptions, and model size.",
+      "url": "https://builder.aws.com/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EgqeW2TcdgJrm8RjrA1eaRBuP4/cove.webp",
+      "authorName": "Asako Hayase",
+      "authorAlias": "flyingotter",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar9UMWFVPKRZW9RTjQht0CJvOh.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "amazon-bedrock-agentcore",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-06-04T21:11:49.874Z",
+      "likesCount": 7,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "title": "HackOn with Amazon 6.0 - Student Builder Challenge",
+      "description": "Whether you're prepping for HackOn with Amazon 6.0 run by UnStop or already deep in your build — this one's for you. We're dropping a Student Builder Challenge raffle to spark ideas, share knowledge, and celebrate the student builds across India. ",
+      "url": "https://builder.aws.com/content/39o4Vnul5AhN5XHb3SCqxD9ahTL",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EGaKduEmR164SvWNnAFmNlhGg4/Slid.webp",
       "authorName": "Saha, Arkodyuti",
       "authorAlias": "arkosaha",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35uV8kcyGEbrjIXqiRRx8rPhvf0.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-06-05T14:52:28.027Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EeiBJDelentmQLqFYyIOaROfCV",
-      "title": "5 Weeks That Changed\nHow I Show Up\nas an Engineer",
-      "description": "I had been building on AWS for six years. I had projects worth sharing, ideas worth discussing, and experiences worth passing on. AWS New Voices gave me the tools to finally do all three  well.",
-      "url": "https://builder.aws.com/content/3EeiBJDelentmQLqFYyIOaROfCV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eg99Zj4aRRQpmU5kaDRHlTsaJK/Scre.webp",
-      "authorName": "Rajpreet",
-      "authorAlias": "rajgill",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApHKgJYAJZeogIiXCqC4InKTx3.webp",
-      "location": "CA",
-      "lat": 61.0666922,
-      "lng": -107.991707,
       "tags": [
-        "aws-community-builders",
-        "aws-community",
-        "women-in-tech",
-        "career"
+        "students"
       ],
-      "publishedAt": "2026-06-04T16:23:16.337Z",
-      "likesCount": 6,
-      "commentsCount": 5
+      "publishedAt": "2026-05-26T15:00:54.657Z",
+      "likesCount": 124,
+      "commentsCount": 1518
     }
   ]
 }
