@@ -1,6 +1,73 @@
 {
-  "updatedAt": "2026-06-06T18:31:47.954Z",
+  "updatedAt": "2026-06-07T00:54:34.024Z",
   "latest": [
+    {
+      "id": "/content/3EmjTWQ19eaUsVp5aaZEfYWxGoo",
+      "title": "Model Mix: Running a Tiny AI Boardroom on Amazon Bedrock",
+      "description": "I built a tiny AI boardroom where multiple foundation models debate and synthesize the best possible answers so I don't have to. Here's how Amazon Bedrock's Converse API made my multi-model architecture tractable by unifying streaming, auth, and model-swapping under one seamless interface.",
+      "url": "https://builder.aws.com/content/3EmjTWQ19eaUsVp5aaZEfYWxGoo",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EmkdOS1usZiDKd7iwiLQsKxcgp/Scre.webp",
+      "authorName": "Priyesh Elluru Muralikrishna",
+      "authorAlias": "beast99",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CHU96FMNWV9xK9kaA5mhRZwemM.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-bedrock",
+        "generative-ai",
+        "multi-agent-orchestrator",
+        "api",
+        "llm"
+      ],
+      "publishedAt": "2026-06-07T00:17:19.058Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
+      "title": "Signal and Noise",
+      "description": "The AI hype is loud. Here's what I think actually matters underneath it.",
+      "url": "https://builder.aws.com/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
+      "imageUrl": "",
+      "authorName": "Danielle Heberling",
+      "authorAlias": "deeheber",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uuNhE6BP2QPyoPg4bZeHAQ0wr1.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [
+        "ai",
+        "career",
+        "artificial-intelligence"
+      ],
+      "publishedAt": "2026-06-06T23:07:46.298Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ElydDhkvqaHao2TrGxd3Z76BQq",
+      "title": "5 Things I Learned About Prompt Caching in Amazon Bedrock the Hard Way",
+      "description": "I enabled prompt caching expecting instant savings and instead watched my costs go up. These five lessons explain why, and how to get the 90% discount the docs promise.",
+      "url": "https://builder.aws.com/content/3ElydDhkvqaHao2TrGxd3Z76BQq",
+      "imageUrl": "",
+      "authorName": "Snehal",
+      "authorAlias": "snekalam13",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-bedrock",
+        "prompt-engineering",
+        "generative-ai",
+        "anthropic-claude",
+        "amazon-nova"
+      ],
+      "publishedAt": "2026-06-06T18:51:21.398Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3BwHbXYaBRU24pZF9djcHlSMetM",
       "title": "Aurora Serverless v2 vs DynamoDB: The architectural showdown you can't ignore",
@@ -36,7 +103,7 @@
       "tags": [],
       "publishedAt": "2026-06-06T17:39:03.469Z",
       "likesCount": 0,
-      "commentsCount": 0
+      "commentsCount": 1
     },
     {
       "id": "/content/3EljOUhelotrTau6p51ijyTl0eV",
@@ -135,69 +202,6 @@
       "publishedAt": "2026-06-06T13:33:28.815Z",
       "likesCount": 2,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3ElK2B2am34ARO2bLlzLuBJ6wuK",
-      "title": "AWS Student Builder Group Leader to be recognized on Engineering Day.",
-      "description": "The story of how being an AWS Student Builder Group Leader — built around the everyday life of an office administrator — led me to be recognized alongside researchers with global impact and professors who have spent decades shaping engineers.\n\n",
-      "url": "https://builder.aws.com/content/3ElK2B2am34ARO2bLlzLuBJ6wuK",
-      "imageUrl": "",
-      "authorName": "Misael Calisaya",
-      "authorAlias": "misaelcalisaya",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CxOpmzKe504TGsNim2zQVfnXiN.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
-      "tags": [
-        "social-impact",
-        "aws-educate",
-        "educational",
-        "aws-student-builders-groups",
-        "aws-community"
-      ],
-      "publishedAt": "2026-06-06T13:10:09.188Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ElEAnwqS18fZPBz6X9dGo51AnV",
-      "title": "AI-DLC v2 비교해보기",
-      "description": "AWS Labs의 aidlc-workflows를 v1과 v2 양쪽으로 같은 기획에 돌려보고, 산출물 구조와 거버넌스 trail이 어떻게 갈라지는지 정리한 메모.",
-      "url": "https://builder.aws.com/content/3ElEAnwqS18fZPBz6X9dGo51AnV",
-      "imageUrl": "",
-      "authorName": "Hyunwoo Kim",
-      "authorAlias": "henrykim",
-      "authorAvatarUrl": "",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [],
-      "publishedAt": "2026-06-06T13:02:50.408Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Ek6QX9d8ea545kjglmS2UcBlsk",
-      "title": "Primeiros Passos com o Claude Platform na AWS",
-      "description": "Cobrança consolidada, controle de acesso nativo via IAM, auditoria com CloudTrail e acesso no mesmo dia a novos modelos Claude. Tudo sem sair do ecossistema AWS.",
-      "url": "https://builder.aws.com/content/3Ek6QX9d8ea545kjglmS2UcBlsk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ek9SxnlV4BhP4vS5QyT6INGUSe/Chat.webp",
-      "authorName": "Carlos Biagolini",
-      "authorAlias": "cbiagolini",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
-      "location": "SP, BR",
-      "lat": -22.0702705,
-      "lng": -48.4333875,
-      "tags": [
-        "developer-tools",
-        "anthropic-claude",
-        "claude",
-        "software-development",
-        "development"
-      ],
-      "publishedAt": "2026-06-06T11:40:15.908Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -223,6 +227,27 @@
       "publishedAt": "2026-06-02T14:02:10.120Z",
       "likesCount": 20,
       "commentsCount": 171
+    },
+    {
+      "id": "/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
+      "title": "Signal and Noise",
+      "description": "The AI hype is loud. Here's what I think actually matters underneath it.",
+      "url": "https://builder.aws.com/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
+      "imageUrl": "",
+      "authorName": "Danielle Heberling",
+      "authorAlias": "deeheber",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uuNhE6BP2QPyoPg4bZeHAQ0wr1.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [
+        "ai",
+        "career",
+        "artificial-intelligence"
+      ],
+      "publishedAt": "2026-06-06T23:07:46.298Z",
+      "likesCount": 2,
+      "commentsCount": 0
     },
     {
       "id": "/content/3EdBJT3cdRVqeOlC7EO3MTmXlhv",
@@ -287,7 +312,7 @@
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
       "likesCount": 3500,
-      "commentsCount": 1933
+      "commentsCount": 1934
     },
     {
       "id": "/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
@@ -328,7 +353,7 @@
         "EMEA"
       ],
       "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2891,
+      "likesCount": 2892,
       "commentsCount": 326
     },
     {
@@ -348,7 +373,7 @@
         "ai-agents"
       ],
       "publishedAt": "2026-06-04T21:11:49.874Z",
-      "likesCount": 7,
+      "likesCount": 8,
       "commentsCount": 5
     },
     {
@@ -375,23 +400,6 @@
       "commentsCount": 19
     },
     {
-      "id": "/content/3ElShp5DBoeQCRfc5kaBhwsruIe",
-      "title": "The Unseen Pipeline: Engineering Developer Velocity with AWS DevTools in 2026",
-      "description": "Beyond CI/CD—Orchestrating the Entire Software Lifecycle\n",
-      "url": "https://builder.aws.com/content/3ElShp5DBoeQCRfc5kaBhwsruIe",
-      "imageUrl": "",
-      "authorName": "Alam Ahmed",
-      "authorAlias": "techghost",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2v8LJaJkEFjOnlBYzUZWzKHE4BH.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-06-06T13:33:28.815Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
       "id": "/content/3EipxJNZZcUsqEqH03CE8FgTbvQ",
       "title": "us-east-1 or Somewhere Closer? How to Pick an AWS Region Without Overthinking It",
       "description": "The console asks you to pick an AWS Region before you've built a single thing. Here are the four things that actually matter, and the one that catches every beginner.",
@@ -410,7 +418,7 @@
         "regions"
       ],
       "publishedAt": "2026-06-05T15:10:12.365Z",
-      "likesCount": 4,
+      "likesCount": 5,
       "commentsCount": 4
     }
   ]
