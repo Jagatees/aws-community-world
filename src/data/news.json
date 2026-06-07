@@ -1,6 +1,91 @@
 {
-  "updatedAt": "2026-06-07T07:28:03.894Z",
+  "updatedAt": "2026-06-07T12:36:53.268Z",
   "latest": [
+    {
+      "id": "/content/3EnR4ueWaS6gDNpMZ4gSKic65wH",
+      "title": "The Application I Almost Didn't Submit",
+      "description": "How a message I almost ignored led me to become the first woman AWS Cloud Captain in Sri Lanka and what I learned about community, confidence, and showing up before you feel ready.",
+      "url": "https://builder.aws.com/content/3EnR4ueWaS6gDNpMZ4gSKic65wH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eo9ruNJnajUxlh0JNdLE1FTAjF/Inaug.webp",
+      "authorName": "Kaarmugi Sureshkumar",
+      "authorAlias": "kaarmugi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39K5mJZqyNldvj4RWfDzMm6pUzz.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "aws-student-builders-groups",
+        "students",
+        "student-builders",
+        "aws-community-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-06-07T12:11:27.487Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3AqpUzrh1BLLrql5sn8LPRB614m",
+      "title": "From Testing to Trust: Building Resilient Cloud Architectures with AWS Fault Injection Simulator",
+      "description": "Modern cloud architectures are designed for high availability, but assumptions about resilience are rarely tested until a failure occurs. Learn how AWS Fault Injection Simulator (FIS) helps teams proactively validate system behavior, uncover weaknesses, and build confidence in their ability to withstand real-world disruptions.",
+      "url": "https://builder.aws.com/content/3AqpUzrh1BLLrql5sn8LPRB614m",
+      "imageUrl": "",
+      "authorName": "Midhun NS",
+      "authorAlias": "nsmidhun",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Aqprwi4qLkHJLzuhyqL8LoDPbN.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "chaos-engineering",
+        "resilience",
+        "reliability",
+        "architecture"
+      ],
+      "publishedAt": "2026-06-07T12:09:16.007Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EnInbQfAk2wET2HlPLVU1xtpga",
+      "title": "같은 작업, 같은 코드베이스에서 claude code 와 kiro-cli 다각도 비교",
+      "description": "작은/중간/큰 OSS 코드베이스에서 같은 명령을 전달했을 때 두 AI CLI 의 토큰 사용량, 도구 호출 횟수, 응답 길이, 위험 명령 위험도 파악까지 작업별로 어떻게 다르게 동작하는지 비교해본다.",
+      "url": "https://builder.aws.com/content/3EnInbQfAk2wET2HlPLVU1xtpga",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Enm4Zaz8Xw6ygTCxvMR3tPBnX9/cove.webp",
+      "authorName": "Henry Kim",
+      "authorAlias": "henrykim",
+      "authorAvatarUrl": "",
+      "location": "KR",
+      "lat": 36.638392,
+      "lng": 127.6961188,
+      "tags": [],
+      "publishedAt": "2026-06-07T09:02:59.669Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EndlwdzS57cWSfA5CmL2eFWEG9",
+      "title": "What My Network Background Taught Me That AWS Docs Never Could",
+      "description": "I spent years managing enterprise networks before touching AWS. Turns out, that background was my biggest advantage — and my biggest obstacle. Here's what the transition really taught me (and what made me question every life choice I'd made).",
+      "url": "https://builder.aws.com/content/3EndlwdzS57cWSfA5CmL2eFWEG9",
+      "imageUrl": "",
+      "authorName": "jayanthi KS",
+      "authorAlias": "jayanthikarthik",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EnrbnOe5aXPoeiRCZ8ZnekZLOJ.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-community-builders",
+        "networking",
+        "tech-journey",
+        "aws-certification",
+        "all-builders-welcome"
+      ],
+      "publishedAt": "2026-06-07T08:24:12.710Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
     {
       "id": "/content/3EnUanQQ8UpvqpD6BazDnqi6ewt",
       "title": "Running local AI LLM anywhere: from EC2 instances to Edge Devices",
@@ -36,7 +121,7 @@
       "lng": 78.6677428,
       "tags": [],
       "publishedAt": "2026-06-07T05:14:25.893Z",
-      "likesCount": 0,
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
@@ -76,26 +161,6 @@
         "advanced-networking"
       ],
       "publishedAt": "2026-06-07T03:50:46.806Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ElTpwfPbBMZfgzL04Rm5rW6Btd",
-      "title": "kiro-cli 와 claude code 에 같은 작업을 요청했다",
-      "description": "같은 task 로 두 CLI 비교해보기.",
-      "url": "https://builder.aws.com/content/3ElTpwfPbBMZfgzL04Rm5rW6Btd",
-      "imageUrl": "",
-      "authorName": "Hyunwoo Kim",
-      "authorAlias": "henrykim",
-      "authorAvatarUrl": "",
-      "location": "KR",
-      "lat": 36.638392,
-      "lng": 127.6961188,
-      "tags": [
-        "kiro",
-        "claude"
-      ],
-      "publishedAt": "2026-06-07T03:50:10.063Z",
       "likesCount": 0,
       "commentsCount": 0
     },
@@ -142,70 +207,6 @@
       "publishedAt": "2026-06-07T00:17:19.058Z",
       "likesCount": 0,
       "commentsCount": 0
-    },
-    {
-      "id": "/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
-      "title": "Signal and Noise",
-      "description": "The AI hype is loud. Here's what I think actually matters underneath it.",
-      "url": "https://builder.aws.com/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
-      "imageUrl": "",
-      "authorName": "Danielle Heberling",
-      "authorAlias": "deeheber",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uuNhE6BP2QPyoPg4bZeHAQ0wr1.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "ai",
-        "career",
-        "artificial-intelligence"
-      ],
-      "publishedAt": "2026-06-06T23:07:46.298Z",
-      "likesCount": 4,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ElydDhkvqaHao2TrGxd3Z76BQq",
-      "title": "5 Things I Learned About Prompt Caching in Amazon Bedrock the Hard Way",
-      "description": "I enabled prompt caching expecting instant savings and instead watched my costs go up. These five lessons explain why, and how to get the 90% discount the docs promise.",
-      "url": "https://builder.aws.com/content/3ElydDhkvqaHao2TrGxd3Z76BQq",
-      "imageUrl": "",
-      "authorName": "Snehal",
-      "authorAlias": "snekalam13",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-bedrock",
-        "prompt-engineering",
-        "generative-ai",
-        "anthropic-claude",
-        "amazon-nova"
-      ],
-      "publishedAt": "2026-06-06T18:51:21.398Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BwHbXYaBRU24pZF9djcHlSMetM",
-      "title": "Aurora Serverless v2 vs DynamoDB: The architectural showdown you can't ignore",
-      "description": "DynamoDB or Aurora Serverless v2? The wrong choice can break your architecture.\n\nIn this article, I break down a real-world scenario: 60 million transactions in 7 days, 2,500 req/s peak, RPO=0.\n\nUsing 8 technical dimensions, load tests, and a contingency architecture, I show you:\n-  When to choose horizontal scale (DynamoDB)\n- When to choose vertical elasticity (Aurora Serverless v2)\n- The exact trade-offs that separate senior from principal architects\n",
-      "url": "https://builder.aws.com/content/3BwHbXYaBRU24pZF9djcHlSMetM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Elz6BfRkkx0ZwfNc3QHPHvSa6H/gemi.webp",
-      "authorName": "LUIZ GUSTAVO RIBEIRO",
-      "authorAlias": "lgribeiro",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Aqy7l46S7cKZRZsbmwrrQ8CaNW.webp",
-      "location": "DF, BR",
-      "lat": -15.7754462,
-      "lng": -47.7970891,
-      "tags": [
-        "amazon-dynamodb",
-        "amazon-aurora"
-      ],
-      "publishedAt": "2026-06-06T17:46:41.301Z",
-      "likesCount": 1,
-      "commentsCount": 0
     }
   ],
   "trending": [
@@ -231,6 +232,52 @@
       "publishedAt": "2026-06-02T14:02:10.120Z",
       "likesCount": 20,
       "commentsCount": 171
+    },
+    {
+      "id": "/content/3EndlwdzS57cWSfA5CmL2eFWEG9",
+      "title": "What My Network Background Taught Me That AWS Docs Never Could",
+      "description": "I spent years managing enterprise networks before touching AWS. Turns out, that background was my biggest advantage — and my biggest obstacle. Here's what the transition really taught me (and what made me question every life choice I'd made).",
+      "url": "https://builder.aws.com/content/3EndlwdzS57cWSfA5CmL2eFWEG9",
+      "imageUrl": "",
+      "authorName": "jayanthi KS",
+      "authorAlias": "jayanthikarthik",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EnrbnOe5aXPoeiRCZ8ZnekZLOJ.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-community-builders",
+        "networking",
+        "tech-journey",
+        "aws-certification",
+        "all-builders-welcome"
+      ],
+      "publishedAt": "2026-06-07T08:24:12.710Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3EnR4ueWaS6gDNpMZ4gSKic65wH",
+      "title": "The Application I Almost Didn't Submit",
+      "description": "How a message I almost ignored led me to become the first woman AWS Cloud Captain in Sri Lanka and what I learned about community, confidence, and showing up before you feel ready.",
+      "url": "https://builder.aws.com/content/3EnR4ueWaS6gDNpMZ4gSKic65wH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eo9ruNJnajUxlh0JNdLE1FTAjF/Inaug.webp",
+      "authorName": "Kaarmugi Sureshkumar",
+      "authorAlias": "kaarmugi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39K5mJZqyNldvj4RWfDzMm6pUzz.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "aws-student-builders-groups",
+        "students",
+        "student-builders",
+        "aws-community-builders",
+        "aws-community"
+      ],
+      "publishedAt": "2026-06-07T12:11:27.487Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3EdBJT3cdRVqeOlC7EO3MTmXlhv",
@@ -358,50 +405,7 @@
       ],
       "publishedAt": "2026-06-06T23:07:46.298Z",
       "likesCount": 4,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3EUe03tYL9pR2gxr14V2rKDdOtU",
-      "title": "Java vs C#: Optimizing Docker for Kubernetes",
-      "description": "Stop wasting cluster memory. Master Docker optimizations for Java and C# on Kubernetes—from JVM heap tuning and .NET Chiseled images to Native AOT.",
-      "url": "https://builder.aws.com/content/3EUe03tYL9pR2gxr14V2rKDdOtU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EUhDqadBacFQ3sVQhi5kkbntq2/titl.webp",
-      "authorName": "Syed Ahmer Shah",
-      "authorAlias": "syedahmershah",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Dhv2ipNnrFs3VSktjQIU5rojWy.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "coding",
-        "programming",
-        "java",
-        "csharp",
-        "technology-frameworks"
-      ],
-      "publishedAt": "2026-05-31T14:50:22.451Z",
-      "likesCount": 26,
-      "commentsCount": 19
-    },
-    {
-      "id": "/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
-      "title": "Optimizing a Customer Support Agent on AgentCore",
-      "description": "Three A/B experiments on a live AI agent using Amazon Bedrock AgentCore: testing prompts, tool descriptions, and model size.",
-      "url": "https://builder.aws.com/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EgqeW2TcdgJrm8RjrA1eaRBuP4/cove.webp",
-      "authorName": "Asako Hayase",
-      "authorAlias": "flyingotter",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar9UMWFVPKRZW9RTjQht0CJvOh.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "amazon-bedrock-agentcore",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-06-04T21:11:49.874Z",
-      "likesCount": 9,
-      "commentsCount": 5
+      "commentsCount": 1
     },
     {
       "id": "/content/3EipxJNZZcUsqEqH03CE8FgTbvQ",
@@ -422,8 +426,8 @@
         "regions"
       ],
       "publishedAt": "2026-06-05T15:10:12.365Z",
-      "likesCount": 6,
-      "commentsCount": 4
+      "likesCount": 8,
+      "commentsCount": 6
     }
   ]
 }
