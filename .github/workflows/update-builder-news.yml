@@ -3,7 +3,7 @@ name: Update Builder News
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 1 * * *'
 
 permissions:
   contents: write
@@ -20,6 +20,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Refresh Builder Center news
         run: npm run update:news
