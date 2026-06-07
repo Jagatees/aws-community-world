@@ -1,6 +1,125 @@
 {
-  "updatedAt": "2026-06-07T00:54:34.024Z",
+  "updatedAt": "2026-06-07T07:28:03.894Z",
   "latest": [
+    {
+      "id": "/content/3EnUanQQ8UpvqpD6BazDnqi6ewt",
+      "title": "Running local AI LLM anywhere: from EC2 instances to Edge Devices",
+      "description": "Llama.cpp is one of the most efficient frameworks for running Large Language Models locally. Written in pure C/C++, it is optimized for performance and low resource consumption, making it a popular choice for developers who want direct control over model inference without additional runtime layers.",
+      "url": "https://builder.aws.com/content/3EnUanQQ8UpvqpD6BazDnqi6ewt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EnV5lXxXOU4ZsZBQyvT3LKbXos/pexe.webp",
+      "authorName": "Roman Tsypuk",
+      "authorAlias": "tsypuk",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2r9RUKeBDDlgGvpV6PHBX48Xglu.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "llama",
+        "edge-locations",
+        "llm"
+      ],
+      "publishedAt": "2026-06-07T06:36:21.156Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3EnJJfkKZo6DfLzGYRbruamEPsx",
+      "title": "Healthcare Copilot with Multi-Agent AI and Agentic RAG",
+      "description": "xplore how specialized AI agents retrieve, analyze, and summarize clinical information to deliver intelligent healthcare assistance.",
+      "url": "https://builder.aws.com/content/3EnJJfkKZo6DfLzGYRbruamEPsx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EnKx3kji9dbyoCvvELBLuSDpga/Chat.webp",
+      "authorName": "Thirumalaiboobathi B",
+      "authorAlias": "thirumalaiboobathi2",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DqWrAghABgZRo2mfhDtftIh9C6.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-06-07T05:14:25.893Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3En9eondFjltk5dMDOA32sh3Y3w",
+      "title": "Day 6 Of Cloud with AWS: Subnets",
+      "description": "#100DaysOfCloud challenge using AWS",
+      "url": "https://builder.aws.com/content/3En9eondFjltk5dMDOA32sh3Y3w",
+      "imageUrl": "",
+      "authorName": "Adrija Mukherjee",
+      "authorAlias": "adrija",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/375uOHHB82x82b1YIMamaxDvXD2.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-06-07T04:13:00.652Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3En9zqyOnuGMvgcNwp0inwq9aUQ",
+      "title": "กายวิภาคของระบบตัวแทนอัตโนมัติ",
+      "description": "ทำไมสถาปัตยกรรม ‘Isolated Workspace’ คือคำตอบของการผสานกลมกลืนระหว่างมนุษย์และ ",
+      "url": "https://builder.aws.com/content/3En9zqyOnuGMvgcNwp0inwq9aUQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EnAjVksrSz63WxJjvzZzpdJmvd/1000.webp",
+      "authorName": "Nuttanan Foopun",
+      "authorAlias": "nuttanan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3En5l13ahyndT5fWIfCm6niN7vG.webp",
+      "location": "TH",
+      "lat": 14.8971921,
+      "lng": 100.83273,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "agile",
+        "agents",
+        "advanced-networking"
+      ],
+      "publishedAt": "2026-06-07T03:50:46.806Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3ElTpwfPbBMZfgzL04Rm5rW6Btd",
+      "title": "kiro-cli 와 claude code 에 같은 작업을 요청했다",
+      "description": "같은 task 로 두 CLI 비교해보기.",
+      "url": "https://builder.aws.com/content/3ElTpwfPbBMZfgzL04Rm5rW6Btd",
+      "imageUrl": "",
+      "authorName": "Hyunwoo Kim",
+      "authorAlias": "henrykim",
+      "authorAvatarUrl": "",
+      "location": "KR",
+      "lat": 36.638392,
+      "lng": 127.6961188,
+      "tags": [
+        "kiro",
+        "claude"
+      ],
+      "publishedAt": "2026-06-07T03:50:10.063Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3En8S5EI5WVzcMyv5OZ2tID7CEH",
+      "title": "Detect, Alert, Search: The SIEM You Already Have on AWS",
+      "description": "You already run the services. This is how you wire them.",
+      "url": "https://builder.aws.com/content/3En8S5EI5WVzcMyv5OZ2tID7CEH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3En9p0wtJ4kHWk3EVOb1ZJWGeZh/Gemi.webp",
+      "authorName": "Mario Gongora",
+      "authorAlias": "urikpa",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DCLbduZ1OFNvsR81hKQBk0RtLU.webp",
+      "location": "PA",
+      "lat": 8.559559,
+      "lng": -81.1308434,
+      "tags": [
+        "amazon-guardduty",
+        "security-hub",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-06-07T03:41:18.264Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
     {
       "id": "/content/3EmjTWQ19eaUsVp5aaZEfYWxGoo",
       "title": "Model Mix: Running a Tiny AI Boardroom on Amazon Bedrock",
@@ -42,7 +161,7 @@
         "artificial-intelligence"
       ],
       "publishedAt": "2026-06-06T23:07:46.298Z",
-      "likesCount": 2,
+      "likesCount": 4,
       "commentsCount": 0
     },
     {
@@ -85,122 +204,7 @@
         "amazon-aurora"
       ],
       "publishedAt": "2026-06-06T17:46:41.301Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ElxZwOnqj5LvocDbxeNxHxtuZn",
-      "title": "The Skill Most Students Ignore Until It's Too Late",
-      "description": "Technical skills are important, but there's another skill that often determines who discovers opportunities, builds connections, and grows faster throughout their career.",
-      "url": "https://builder.aws.com/content/3ElxZwOnqj5LvocDbxeNxHxtuZn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ElyXUpXzgvIUOx6jFwQsvbvDF6/Chat.webp",
-      "authorName": "Ankit kumar singh",
-      "authorAlias": "unkeet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3COIxeiZyHDGz8arOysIOfC7o1j.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-06-06T17:39:03.469Z",
-      "likesCount": 0,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3EljOUhelotrTau6p51ijyTl0eV",
-      "title": "AgentAI-using kiro and Ollama",
-      "description": "A hands-on AI Agent development project series that takes you from building your first chatbot to creating advanced MCP-powered agents using AWS Bedrock, Amazon Nova Pro, Strands SDK, Ollama, memory systems, tool calling, and knowledge retrieval. Learn real-world Agentic AI through 5 practical challenges.",
-      "url": "https://builder.aws.com/content/3EljOUhelotrTau6p51ijyTl0eV",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Eljgznda2Z3uu6jqfWtDTWCg91/Scre.webp",
-      "authorName": "HARINI G",
-      "authorAlias": "hari23",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agents",
-        "ai",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-06-06T15:39:39.286Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ElirO58tOsc7ss2VYRxzvyWH67",
-      "title": "Flappy Kiro: Architecture and Design Decisions",
-      "description": "An article describing the architecture and design decisions taken while implementing the Flappy Kiro game as part of an AWS workshop. A technical deep-dive into the architecture of Flappy Kiro — a single-file browser game built with vanilla JavaScript and the Canvas 2D API.",
-      "url": "https://builder.aws.com/content/3ElirO58tOsc7ss2VYRxzvyWH67",
-      "imageUrl": "",
-      "authorName": "Sandeep Chakravartty",
-      "authorAlias": "scha54",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BcROEaxczgRlB4MDYwPmdxpheX.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "kiro",
-        "architecture"
-      ],
-      "publishedAt": "2026-06-06T15:31:58.539Z",
       "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Eldcy3frRNDzYokThEuVY1Kvhy",
-      "title": "Agent AI",
-      "description": "As part of the AWS Builders Skill Sprint, I built a series of AI agents using Strands SDK and Ollama (llama3.2:3b). Starting with a basic conversational agent, I progressively added tool calling, persistent memory using Mem0 and FAISS, and MCP integration. This project helped me gain hands-on experience with agentic AI concepts such as reasoning, tool usage, memory management, and extensible AI architectures.\n",
-      "url": "https://builder.aws.com/content/3Eldcy3frRNDzYokThEuVY1Kvhy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3ElfKKSaGYtfBPKEPh6jdb00z9h/Agen.webp",
-      "authorName": "Sahana S",
-      "authorAlias": "sahanasrinivasan",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "kiro",
-        "python",
-        "mcp",
-        "llama"
-      ],
-      "publishedAt": "2026-06-06T15:00:37.853Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ElYXAJRNisYpDHarJkkbzM2s7q",
-      "title": "Detect AI writing, then rewrite it human — Bedrock + Strands Agents + AgentCore Gateway",
-      "description": "AI Text Checker: scores your text's AI-likeness & rewrites it human. JA/EN. Bedrock + Strands + AgentCore MCP. ai-text-checker-pi.vercel.app",
-      "url": "https://builder.aws.com/content/3ElYXAJRNisYpDHarJkkbzM2s7q",
-      "imageUrl": "",
-      "authorName": "Yuuki Yamashita",
-      "authorAlias": "yama3133",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BX9zysfzEzD9cGbrHj6VfC4CWE.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [],
-      "publishedAt": "2026-06-06T14:10:15.145Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3ElShp5DBoeQCRfc5kaBhwsruIe",
-      "title": "The Unseen Pipeline: Engineering Developer Velocity with AWS DevTools in 2026",
-      "description": "Beyond CI/CD—Orchestrating the Entire Software Lifecycle\n",
-      "url": "https://builder.aws.com/content/3ElShp5DBoeQCRfc5kaBhwsruIe",
-      "imageUrl": "",
-      "authorName": "Alam Ahmed",
-      "authorAlias": "techghost",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2v8LJaJkEFjOnlBYzUZWzKHE4BH.webp",
-      "location": "GB",
-      "lat": 54.7023545,
-      "lng": -3.2765753,
-      "tags": [],
-      "publishedAt": "2026-06-06T13:33:28.815Z",
-      "likesCount": 2,
       "commentsCount": 0
     }
   ],
@@ -227,27 +231,6 @@
       "publishedAt": "2026-06-02T14:02:10.120Z",
       "likesCount": 20,
       "commentsCount": 171
-    },
-    {
-      "id": "/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
-      "title": "Signal and Noise",
-      "description": "The AI hype is loud. Here's what I think actually matters underneath it.",
-      "url": "https://builder.aws.com/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
-      "imageUrl": "",
-      "authorName": "Danielle Heberling",
-      "authorAlias": "deeheber",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uuNhE6BP2QPyoPg4bZeHAQ0wr1.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [
-        "ai",
-        "career",
-        "artificial-intelligence"
-      ],
-      "publishedAt": "2026-06-06T23:07:46.298Z",
-      "likesCount": 2,
-      "commentsCount": 0
     },
     {
       "id": "/content/3EdBJT3cdRVqeOlC7EO3MTmXlhv",
@@ -291,7 +274,7 @@
       ],
       "publishedAt": "2026-04-17T20:11:08.527Z",
       "likesCount": 3597,
-      "commentsCount": 338
+      "commentsCount": 339
     },
     {
       "id": "/content/3C6m8kDYneFBQuYVRxu1KjHN8FV",
@@ -311,8 +294,29 @@
         "APJC"
       ],
       "publishedAt": "2026-04-16T17:33:29.599Z",
-      "likesCount": 3500,
+      "likesCount": 3501,
       "commentsCount": 1934
+    },
+    {
+      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "title": "AIdeas Finalist: Global Impact AI Navigator",
+      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
+      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
+      "authorName": "Jerry Davis NDJANA MENGUE",
+      "authorAlias": "jerrydavis",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
+      "location": "CM",
+      "lat": 4.6125522,
+      "lng": 13.1535811,
+      "tags": [
+        "aideas-2025",
+        "social-impact",
+        "EMEA"
+      ],
+      "publishedAt": "2026-04-17T13:58:54.140Z",
+      "likesCount": 2891,
+      "commentsCount": 326
     },
     {
       "id": "/content/3EaZyvHB8LenGZ1FWvmIuswdEaC",
@@ -336,45 +340,25 @@
       "commentsCount": 6
     },
     {
-      "id": "/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "title": "AIdeas Finalist: Global Impact AI Navigator",
-      "description": "Global Impact AI Navigator (GIAN) is a multi-agent AI platform built on Amazon Bedrock that transforms a raw idea into a complete strategic package in under 60 seconds — SWOT diagnostic, live-grounded funding discovery, personalized roadmap, and a context-aware advisor. Designed for innovators in emerging markets, it democratizes access to the strategic guidance that usually requires expensive consultants or elite networks.",
-      "url": "https://builder.aws.com/content/3C201EvaJBZbA7oqGwJ1b644aac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3C2BEhDyzSEtTwnR9jwpCDzwv7e/aidea.webp",
-      "authorName": "Jerry Davis NDJANA MENGUE",
-      "authorAlias": "jerrydavis",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3D2C4yOKU7OIIngHfO953NGh61n.webp",
-      "location": "CM",
-      "lat": 4.6125522,
-      "lng": 13.1535811,
+      "id": "/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
+      "title": "Signal and Noise",
+      "description": "The AI hype is loud. Here's what I think actually matters underneath it.",
+      "url": "https://builder.aws.com/content/3EmcE6CSM4pht2TA0UOR7wgQBhb",
+      "imageUrl": "",
+      "authorName": "Danielle Heberling",
+      "authorAlias": "deeheber",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uuNhE6BP2QPyoPg4bZeHAQ0wr1.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
       "tags": [
-        "aideas-2025",
-        "social-impact",
-        "EMEA"
+        "ai",
+        "career",
+        "artificial-intelligence"
       ],
-      "publishedAt": "2026-04-17T13:58:54.140Z",
-      "likesCount": 2892,
-      "commentsCount": 326
-    },
-    {
-      "id": "/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
-      "title": "Optimizing a Customer Support Agent on AgentCore",
-      "description": "Three A/B experiments on a live AI agent using Amazon Bedrock AgentCore: testing prompts, tool descriptions, and model size.",
-      "url": "https://builder.aws.com/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EgqeW2TcdgJrm8RjrA1eaRBuP4/cove.webp",
-      "authorName": "Asako Hayase",
-      "authorAlias": "flyingotter",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar9UMWFVPKRZW9RTjQht0CJvOh.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "amazon-bedrock-agentcore",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-06-04T21:11:49.874Z",
-      "likesCount": 8,
-      "commentsCount": 5
+      "publishedAt": "2026-06-06T23:07:46.298Z",
+      "likesCount": 4,
+      "commentsCount": 0
     },
     {
       "id": "/content/3EUe03tYL9pR2gxr14V2rKDdOtU",
@@ -400,6 +384,26 @@
       "commentsCount": 19
     },
     {
+      "id": "/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
+      "title": "Optimizing a Customer Support Agent on AgentCore",
+      "description": "Three A/B experiments on a live AI agent using Amazon Bedrock AgentCore: testing prompts, tool descriptions, and model size.",
+      "url": "https://builder.aws.com/content/3EgUBPL98GOCTbJBiz468Wo4fqu",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3EgqeW2TcdgJrm8RjrA1eaRBuP4/cove.webp",
+      "authorName": "Asako Hayase",
+      "authorAlias": "flyingotter",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar9UMWFVPKRZW9RTjQht0CJvOh.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "amazon-bedrock-agentcore",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-06-04T21:11:49.874Z",
+      "likesCount": 9,
+      "commentsCount": 5
+    },
+    {
       "id": "/content/3EipxJNZZcUsqEqH03CE8FgTbvQ",
       "title": "us-east-1 or Somewhere Closer? How to Pick an AWS Region Without Overthinking It",
       "description": "The console asks you to pick an AWS Region before you've built a single thing. Here are the four things that actually matter, and the one that catches every beginner.",
@@ -418,7 +422,7 @@
         "regions"
       ],
       "publishedAt": "2026-06-05T15:10:12.365Z",
-      "likesCount": 5,
+      "likesCount": 6,
       "commentsCount": 4
     }
   ]
