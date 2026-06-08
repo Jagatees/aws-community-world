@@ -2,7 +2,7 @@
   {
     "name": "adam bien",
     "hero_type": "DevTools Hero",
-    "location": "Germany",
+    "location": "Bavaria, Germany",
     "image_url": "https://avatars.builderprofile.aws.dev/2etUyZKADPoTd4MbUxaCup9Vbfy.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/adambien",
     "lat": 51.1638175,
@@ -20,7 +20,7 @@
   {
     "name": "Adeline Makokha",
     "hero_type": "Community Hero",
-    "location": "Kenya",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2wgFP8OQQF2IVoiQjgp9sXvvA5u.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AdelineMakokha",
     "lat": 1.4419683,
@@ -29,7 +29,7 @@
   {
     "name": "Agustinus Nalwan",
     "hero_type": "AI Hero",
-    "location": "Australia",
+    "location": "VIC, Australia",
     "image_url": "https://avatars.builderprofile.aws.dev/2xwixOnfyAINWryCQK74WIYaEcI.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AgustinusNalwan",
     "lat": -24.7761086,
@@ -38,7 +38,7 @@
   {
     "name": "Ahmed Bebars",
     "hero_type": "Container Hero",
-    "location": "NY, United States",
+    "location": "NJ, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2txHZkGOcPLHIJePpB9WYeBQm0A.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AhmedBebars",
     "lat": 43.1561681,
@@ -56,7 +56,7 @@
   {
     "name": "Aidan Steele",
     "hero_type": "Serverless Hero",
-    "location": "Australia",
+    "location": "VIC, Australia",
     "image_url": "https://avatars.builderprofile.aws.dev/2zxLq9NAml4sVtngc4r7MMsCl8a.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AidanSteele",
     "lat": -24.7761086,
@@ -65,7 +65,7 @@
   {
     "name": "AJ Stuyvenberg",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/30h6v8e3V6W44ZhY9cXkEKwytIa.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AJStuyvenberg",
     "lat": 39.7837304,
@@ -83,29 +83,29 @@
   {
     "name": "Aleksandar Simovic",
     "hero_type": "Serverless Hero",
-    "location": "Serbia",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/36GfXv1gngfgsikqmSUAs6Nu9eB.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AleksandarSimovic",
     "lat": 44.0243229,
     "lng": 21.0765743
   },
   {
-    "name": "Alex",
-    "hero_type": "Community Hero",
-    "location": "Hong Kong Island, Hong Kong",
-    "image_url": "https://avatars.builderprofile.aws.dev/2ycwh8R6BNPlLxmGuc7ySX7O9JE.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/Alex",
-    "lat": 22.2534635,
-    "lng": 114.190975
-  },
-  {
     "name": "Alex DeBrie",
     "hero_type": "Data Hero",
-    "location": "United States",
+    "location": "NE, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xoyGxOjc5bQNbq5xPp07agCjWP.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AlexDeBrie",
     "lat": 39.7837304,
     "lng": -100.445882
+  },
+  {
+    "name": "Alex Lau",
+    "hero_type": "Community Hero",
+    "location": "Hong Kong Island, Hong Kong",
+    "image_url": "https://avatars.builderprofile.aws.dev/2ycwh8R6BNPlLxmGuc7ySX7O9JE.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/AlexLau",
+    "lat": 22.2534635,
+    "lng": 114.190975
   },
   {
     "name": "Allen Helton",
@@ -162,15 +162,6 @@
     "lng": 8.7876653
   },
   {
-    "name": "Andrew Brown",
-    "hero_type": "Community Hero",
-    "location": "Canada",
-    "image_url": "https://avatars.builderprofile.aws.dev/2n8LoY3o1rUCnlxAI4qzkapkI32.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/AndrewBrown",
-    "lat": 61.0666922,
-    "lng": -107.991707
-  },
-  {
     "name": "Angela",
     "hero_type": "Serverless Hero",
     "location": "Denmark",
@@ -182,7 +173,7 @@
   {
     "name": "Anh Ho Viet",
     "hero_type": "Community Hero",
-    "location": "Vietnam",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/32AksIiMkCiS7ZilxtvirA5TbOy.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AnhHoViet",
     "lat": 15.9266657,
@@ -191,7 +182,7 @@
   {
     "name": "Ankit Kumar Gupta",
     "hero_type": "Community Hero",
-    "location": "India",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/30ZhrxgxhtHbfEdDPn4UBznvudZ.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AnkitKumarGupta",
     "lat": 22.3511148,
@@ -210,7 +201,7 @@
     "name": "Anton Babenko",
     "hero_type": "Community Hero",
     "location": "Norway",
-    "image_url": "https://avatars.builderprofile.aws.dev/2e0ppToQ7JtPhu8iRbPQhGoH5hp.webp",
+    "image_url": "https://avatars.builderprofile.aws.dev/3DdkVXzqcvfhbEF48P8g2hG4IoR.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AntonBabenko",
     "lat": 61.1529386,
     "lng": 8.7876653
@@ -243,10 +234,19 @@
     "lng": 172.8344077
   },
   {
+    "name": "Austen Collins",
+    "hero_type": "Serverless Hero",
+    "location": "",
+    "image_url": "/assets/default-avatar-light-LR35u67I.svg",
+    "hero_page_url": "https://builder.aws.com/community/heroes/AustenCollins",
+    "lat": 0,
+    "lng": 0
+  },
+  {
     "name": "Avi Keinan",
     "hero_type": "Community Hero",
     "location": "Israel",
-    "image_url": "https://avatars.builderprofile.aws.dev/35EFzhYHUAmlEKnKoR0CnL8G5Zw.webp",
+    "image_url": "https://avatars.builderprofile.aws.dev/30EbqL7Pj3g4ZufsCrG4qYmHTXa.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AviKeinan",
     "lat": 30.8124247,
     "lng": 34.8594762
@@ -270,27 +270,9 @@
     "lng": 75.7896741
   },
   {
-    "name": "Azmi Mengu",
-    "hero_type": "Community Hero",
-    "location": "Türkiye",
-    "image_url": "https://avatars.builderprofile.aws.dev/33TvBH216gbYArKx0wKWOgwWeHz.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/AzmiMengu",
-    "lat": 39.294076,
-    "lng": 35.2316631
-  },
-  {
-    "name": "Badri Narayanan Kesavan",
-    "hero_type": "Community Hero",
-    "location": "Singapore",
-    "image_url": "https://avatars.builderprofile.aws.dev/2tNM5bOVXXbchFZbKWtTIkoEoev.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/BadriNarayananKesavan",
-    "lat": 1.357107,
-    "lng": 103.8194992
-  },
-  {
     "name": "Becky Zhang",
     "hero_type": "Community Hero",
-    "location": "China",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2yGZxjX82FC4CaVtdfolfVnrAK4.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/BeckyZhang",
     "lat": 35.000074,
@@ -308,7 +290,7 @@
   {
     "name": "Ben Kehoe",
     "hero_type": "Serverless Hero",
-    "location": "Germany",
+    "location": "Bavaria, Germany",
     "image_url": "https://avatars.builderprofile.aws.dev/2zqvzB4goAMPJ9mfrYvOQIqyYJe.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/BenKehoe",
     "lat": 51.1638175,
@@ -324,24 +306,6 @@
     "lng": 75.7896741
   },
   {
-    "name": "Bjorg",
-    "hero_type": "Community Hero",
-    "location": "United States",
-    "image_url": "https://avatars.builderprofile.aws.dev/2z35mjfmnS1wiFgiXPN0coxoLzq.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/Bjorg",
-    "lat": 39.7837304,
-    "lng": -100.445882
-  },
-  {
-    "name": "Boyan Dimitrov",
-    "hero_type": "Community Hero",
-    "location": "Germany",
-    "image_url": "https://avatars.builderprofile.aws.dev/30KfXobqZvZeK3uYOpX4TUyjFu9.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/BoyanDimitrov",
-    "lat": 51.1638175,
-    "lng": 10.4478313
-  },
-  {
     "name": "Brian H. Hough [AWS Hero]",
     "hero_type": "DevTools Hero",
     "location": "United States",
@@ -353,7 +317,7 @@
   {
     "name": "Brian LeRoux",
     "hero_type": "Serverless Hero",
-    "location": "Canada",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2zutA3NzzefvvMsk6aPnhssZYa1.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/BrianLeRoux",
     "lat": 61.0666922,
@@ -371,7 +335,7 @@
   {
     "name": "Bryan Chasko",
     "hero_type": "Community Hero",
-    "location": "United States",
+    "location": "NM, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2pBt75Hl5Kze3KoYvJXCh8fDel1.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/BryanChasko",
     "lat": 39.7837304,
@@ -389,7 +353,7 @@
   {
     "name": "Carlos Cortez Bazan",
     "hero_type": "Community Hero",
-    "location": "Peru",
+    "location": "NSW, Australia",
     "image_url": "https://avatars.builderprofile.aws.dev/2zenWTW1TkkOGNDuvufm5IQmCys.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/CarlosCortezBazan",
     "lat": -6.8699697,
@@ -407,7 +371,7 @@
   {
     "name": "chaocai",
     "hero_type": "Community Hero",
-    "location": "China",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2zlGOaii4PbpaF1pUV6jQa87xxE.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/chaocai",
     "lat": 35.000074,
@@ -425,7 +389,7 @@
   {
     "name": "Chris Miller",
     "hero_type": "AI Hero",
-    "location": "United States",
+    "location": "CA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2zeem7XoSsy0ap4a1Fyyc1obEkn.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ChrisMiller",
     "lat": 39.7837304,
@@ -434,7 +398,7 @@
   {
     "name": "Chris Williams",
     "hero_type": "Community Hero",
-    "location": "United States",
+    "location": "NH, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2bJyPEjQFVYLWC4IxXS3FTYuFUq.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ChrisWilliams",
     "lat": 39.7837304,
@@ -452,7 +416,7 @@
   {
     "name": "Colin Percival",
     "hero_type": "Community Hero",
-    "location": "Canada",
+    "location": "BC, Canada",
     "image_url": "https://avatars.builderprofile.aws.dev/2xmnTfsGwrZFo5KnmF0ASww9OAv.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ColinPercival",
     "lat": 61.0666922,
@@ -461,7 +425,7 @@
   {
     "name": "Cyril Bandolo",
     "hero_type": "AI Hero",
-    "location": "Canada",
+    "location": "Cameroon",
     "image_url": "https://avatars.builderprofile.aws.dev/2xyR001Asrkk0bPXb2ZwzO3M8GY.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/CyrilBandolo",
     "lat": 61.0666922,
@@ -477,13 +441,22 @@
     "lng": 114.0724197
   },
   {
-    "name": "Damian Antonio Gitto Olguin",
+    "name": "Damian Olguin",
     "hero_type": "Community Hero",
     "location": "Argentina",
     "image_url": "https://avatars.builderprofile.aws.dev/2dL1y4MpE6VS3mnKsOlKAF4XVYn.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/DamianAntonioGittoOlguin",
+    "hero_page_url": "https://builder.aws.com/community/heroes/DamianOlguin",
     "lat": -34.9964963,
     "lng": -64.9672817
+  },
+  {
+    "name": "Damiano Giorgi",
+    "hero_type": "AI Hero",
+    "location": "Italy",
+    "image_url": "https://avatars.builderprofile.aws.dev/2f8JrBzb7bdpxxFpuhEyZuMuONq.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/DamianoGiorgi",
+    "lat": 42.6384261,
+    "lng": 12.674297
   },
   {
     "name": "Daniel Aniszkiewicz",
@@ -513,9 +486,18 @@
     "lng": -120.737257
   },
   {
+    "name": "Darryl Ruggles",
+    "hero_type": "Serverless Hero",
+    "location": "ON, Canada",
+    "image_url": "https://avatars.builderprofile.aws.dev/32xvtRCXz0BUNb5YZMIdzX1KHT8.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/DarrylRuggles",
+    "lat": 50.000678,
+    "lng": -86.000977
+  },
+  {
     "name": "Dave Stauffacher",
     "hero_type": "Community Hero",
-    "location": "United States",
+    "location": "WI, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2yeZBVHGUXfeswzeXDEzrOyLDTV.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/DaveStauffacher",
     "lat": 39.7837304,
@@ -542,7 +524,7 @@
   {
     "name": "Dhaval Nagar",
     "hero_type": "Serverless Hero",
-    "location": "India",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2zs3LIAApmE2DwUr1d3QUhKLRgi.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/DhavalNagar",
     "lat": 22.3511148,
@@ -560,11 +542,20 @@
   {
     "name": "Dijeesh Padinharethil",
     "hero_type": "Container Hero",
-    "location": "India",
+    "location": "Kerala, India",
     "image_url": "https://avatars.builderprofile.aws.dev/2xopGRryrFlj8ffCDZENj0Z8mLv.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/DijeeshPadinharethil",
     "lat": 22.3511148,
     "lng": 78.6677428
+  },
+  {
+    "name": "Dimple Vaghela",
+    "hero_type": "Community Hero",
+    "location": "Gujarat, India",
+    "image_url": "https://avatars.builderprofile.aws.dev/2jC0CxrLU3X5NdECCHRIETVJz04.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/DimpleVaghela",
+    "lat": 22.3850051,
+    "lng": 71.745261
   },
   {
     "name": "Dipali Kulshrestha",
@@ -587,7 +578,7 @@
   {
     "name": "Drew Firment",
     "hero_type": "Community Hero",
-    "location": "United States",
+    "location": "VA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xn20LKAAFnP7AQYWIBgYPzya5C.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/DrewFirment",
     "lat": 39.7837304,
@@ -605,7 +596,7 @@
   {
     "name": "Dzenana Dzevlan",
     "hero_type": "Community Hero",
-    "location": "Bosnia & Herzegovina",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2omxjLHYWkazJUdfCckDV3G4Mqt.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/DzenanaDzevlan",
     "lat": 44.3053476,
@@ -632,7 +623,7 @@
   {
     "name": "elliott cordo",
     "hero_type": "Data Hero",
-    "location": "United States",
+    "location": "NJ, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2zeW8C1BLgRjl2NuAdtASs8VCnH.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/elliottcordo",
     "lat": 39.7837304,
@@ -657,18 +648,18 @@
     "lng": -120.212613
   },
   {
-    "name": "Eric Hammond [AWS Hero]",
+    "name": "Eric Hammond",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "CA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/33vCwXSpdxwSBdTJ8TUDXJ6fAhd.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/EricHammond[AWSHero]",
-    "lat": 39.7837304,
-    "lng": -100.445882
+    "hero_page_url": "https://builder.aws.com/community/heroes/EricHammond",
+    "lat": 36.7014631,
+    "lng": -118.755997
   },
   {
     "name": "Ernest Chiang",
     "hero_type": "Community Hero",
-    "location": "United States",
+    "location": "CA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2id0MupSKXEF4PaBjket6vztwfR.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ErnestChiang",
     "lat": 39.7837304,
@@ -695,11 +686,20 @@
   {
     "name": "Faizal Khan",
     "hero_type": "Community Hero",
-    "location": "India",
+    "location": "Haryana, India",
     "image_url": "https://avatars.builderprofile.aws.dev/2tqXgVGRwOCWPMGVaKyTuREB39k.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/FaizalKhan",
     "lat": 22.3511148,
     "lng": 78.6677428
+  },
+  {
+    "name": "FAN GUIJU",
+    "hero_type": "Community Hero",
+    "location": "Beijing, China",
+    "image_url": "https://avatars.builderprofile.aws.dev/2xz2tPagKbRC6yqugI706dnTF9Y.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/FANGUIJU",
+    "lat": 39.9057136,
+    "lng": 116.3912972
   },
   {
     "name": "Faye Ellis",
@@ -722,25 +722,16 @@
   {
     "name": "Filipe Barretto",
     "hero_type": "Community Hero",
-    "location": "Brazil",
+    "location": "SP, United States",
     "image_url": "/assets/default-avatar-light-LR35u67I.svg",
     "hero_page_url": "https://builder.aws.com/community/heroes/FilipeBarretto",
     "lat": -10.3333333,
     "lng": -53.2
   },
   {
-    "name": "Francesco Pochetti",
-    "hero_type": "AI Hero",
-    "location": "Belgium",
-    "image_url": "https://avatars.builderprofile.aws.dev/2xo3usCeOg8kdMuIYPb5rK83vLZ.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/FrancescoPochetti",
-    "lat": 50.6402809,
-    "lng": 4.6667145
-  },
-  {
     "name": "Francisco Edilton",
     "hero_type": "Community Hero",
-    "location": "Portugal",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2xmhZcQNMs4KWOYDr0h8y8Ybe7o.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/FranciscoEdilton",
     "lat": 39.6621648,
@@ -749,29 +740,11 @@
   {
     "name": "Franck Pachot",
     "hero_type": "Data Hero",
-    "location": "Switzerland",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xpMDtNYWWZpBQjn3AOKQ7nESPc.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/FranckPachot",
     "lat": 46.7985624,
     "lng": 8.2319736
-  },
-  {
-    "name": "Gabriel Ramírez",
-    "hero_type": "Community Hero",
-    "location": "Mexico",
-    "image_url": "https://avatars.builderprofile.aws.dev/2rQB4Sasm12OeEPywXnFIOpFPLg.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/GabrielRam%C3%ADrez",
-    "lat": 23.6585116,
-    "lng": -102.0077097
-  },
-  {
-    "name": "Gaurav Kamboj",
-    "hero_type": "Community Hero",
-    "location": "India",
-    "image_url": "https://avatars.builderprofile.aws.dev/2omFKX1mYhwB7O497VWRaPIyf0u.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/GauravKamboj",
-    "lat": 22.3511148,
-    "lng": 78.6677428
   },
   {
     "name": "Gerardo Castro Arica",
@@ -781,15 +754,6 @@
     "hero_page_url": "https://builder.aws.com/community/heroes/GerardoCastroArica",
     "lat": -6.8699697,
     "lng": -75.0458515
-  },
-  {
-    "name": "Gert Leenders",
-    "hero_type": "DevTools Hero",
-    "location": "Belgium",
-    "image_url": "https://avatars.builderprofile.aws.dev/2xwxd1RgOnPf0Sk4ZPHRTgK7TpR.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/GertLeenders",
-    "lat": 50.6402809,
-    "lng": 4.6667145
   },
   {
     "name": "Gillian McCann",
@@ -803,7 +767,7 @@
   {
     "name": "Gojko Adzic",
     "hero_type": "Serverless Hero",
-    "location": "United Kingdom",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2xo0yfLhRBQS3YGoAufszDsSBEB.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/GojkoAdzic",
     "lat": 54.7023545,
@@ -812,18 +776,9 @@
   {
     "name": "Goran Opacic",
     "hero_type": "Data Hero",
-    "location": "United States",
+    "location": "Serbia",
     "image_url": "https://avatars.builderprofile.aws.dev/31vKNF529hOCSxIaWGni5VIJQo1.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/GoranOpacic",
-    "lat": 39.7837304,
-    "lng": -100.445882
-  },
-  {
-    "name": "Guillermo A. Fisher",
-    "hero_type": "Data Hero",
-    "location": "United States",
-    "image_url": "https://avatars.builderprofile.aws.dev/30N3zmC1xbRU8QAxSScIwLL4lQ0.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/GuillermoA.Fisher",
     "lat": 39.7837304,
     "lng": -100.445882
   },
@@ -837,18 +792,9 @@
     "lng": 14.5208584
   },
   {
-    "name": "Hazel Saenz",
-    "hero_type": "Serverless Hero",
-    "location": "Guatemala",
-    "image_url": "https://avatars.builderprofile.aws.dev/2sVZKZ159zwNpibKWjJJYutzhWw.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/HazelSaenz",
-    "lat": 15.5855545,
-    "lng": -90.345759
-  },
-  {
     "name": "Hidetoshi Matsui",
     "hero_type": "Serverless Hero",
-    "location": "Japan",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xnThPjHM4GLBmmOqEJYR1u8JZ0.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/HidetoshiMatsui",
     "lat": 36.5748441,
@@ -866,7 +812,7 @@
   {
     "name": "Hiroko Nishimura",
     "hero_type": "Community Hero",
-    "location": "United States",
+    "location": "DC, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xoe68sWFQOR83rcbnxGadI5A4s.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/HirokoNishimura",
     "lat": 39.7837304,
@@ -902,7 +848,7 @@
   {
     "name": "Ian Mckay",
     "hero_type": "Community Hero",
-    "location": "NSW, Australia",
+    "location": "NSW,",
     "image_url": "https://avatars.builderprofile.aws.dev/2xn2sEyQKIeKCpXvHgvsDR2G5ME.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/IanMckay",
     "lat": -31.8759835,
@@ -911,7 +857,7 @@
   {
     "name": "Ilanchezhian Ganesamurthy",
     "hero_type": "Community Hero",
-    "location": "India",
+    "location": "Tamil Nadu, India",
     "image_url": "https://avatars.builderprofile.aws.dev/2ozAobl8GlBoOn4fZyWFBj63S35.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/IlanchezhianGanesamurthy",
     "lat": 22.3511148,
@@ -920,7 +866,7 @@
   {
     "name": "Ivonne Roberts",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/31pXalI1QjibAYe0INUtvUC6GaM.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/IvonneRoberts",
     "lat": 39.7837304,
@@ -945,18 +891,9 @@
     "lng": 127.6961188
   },
   {
-    "name": "James Hall",
-    "hero_type": "Community Hero",
-    "location": "United Kingdom",
-    "image_url": "https://avatars.builderprofile.aws.dev/32t3Sb8l5gu8xK5yi02XQlhbn4G.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/JamesHall",
-    "lat": 54.7023545,
-    "lng": -3.2765753
-  },
-  {
     "name": "Jared Short",
     "hero_type": "DevTools Hero",
-    "location": "United States",
+    "location": "VA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xmkgH6qEdtOLlZaWR55Bbew56E.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/JaredShort",
     "lat": 39.7837304,
@@ -974,7 +911,7 @@
   {
     "name": "Jayesh Bapu Ahire",
     "hero_type": "AI Hero",
-    "location": "United States",
+    "location": "CA, United States",
     "image_url": "/assets/default-avatar-light-LR35u67I.svg",
     "hero_page_url": "https://builder.aws.com/community/heroes/JayeshBapuAhire",
     "lat": 39.7837304,
@@ -992,7 +929,7 @@
   {
     "name": "Jeremy Daly",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/35lL7PkpNF1NFmbgKQHUSf9IFUU.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/JeremyDaly",
     "lat": 39.7837304,
@@ -1019,7 +956,7 @@
   {
     "name": "John Varghese",
     "hero_type": "Community Hero",
-    "location": "United States",
+    "location": "CA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2oluhJGFx8Mki5Zrmn0584aZD2S.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/JohnVarghese",
     "lat": 39.7837304,
@@ -1035,18 +972,18 @@
     "lng": 75.7896741
   },
   {
-    "name": "Joshua Arvin Lat",
+    "name": "Joshua Arvin Lat (ARVS)",
     "hero_type": "AI Hero",
     "location": "Philippines",
     "image_url": "https://avatars.builderprofile.aws.dev/3A7NsaeeNR8mJUpTmC7jGRGCsdC.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/JoshuaArvinLat",
+    "hero_page_url": "https://builder.aws.com/community/heroes/JoshuaArvinLat(ARVS)",
     "lat": 12.7503486,
     "lng": 122.7312101
   },
   {
     "name": "Julia Furst Morgado",
     "hero_type": "Container Hero",
-    "location": "United States",
+    "location": "NY, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2dVfObFTDQY7wSNnHmb8gncv07e.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/JuliaFurstMorgado",
     "lat": 39.7837304,
@@ -1055,7 +992,7 @@
   {
     "name": "Jungyoul Yu",
     "hero_type": "AI Hero",
-    "location": "South Korea",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/36OB4ouQT2xpQS4Sa3c66Ypr61M.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/JungyoulYu",
     "lat": 36.638392,
@@ -1073,7 +1010,7 @@
   {
     "name": "Karolina Boboli",
     "hero_type": "Community Hero",
-    "location": "Poland",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2zwr5OuAeP20p2wUzcIhcu95yjz.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/KarolinaBoboli",
     "lat": 52.215933,
@@ -1109,7 +1046,7 @@
   {
     "name": "Ken Collins",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "VA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2olrJUzuc5IcikhgBnOQ0xAQMhZ.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/KenCollins",
     "lat": 39.7837304,
@@ -1136,7 +1073,7 @@
   {
     "name": "Kesha Williams",
     "hero_type": "AI Hero",
-    "location": "United States",
+    "location": "GA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xxYxCKMstuo9ate8P1yuo6VjSk.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/KeshaWilliams",
     "lat": 39.7837304,
@@ -1145,7 +1082,7 @@
   {
     "name": "Kittaya Niennattrakul",
     "hero_type": "Community Hero",
-    "location": "Thailand",
+    "location": "",
     "image_url": "/assets/default-avatar-light-LR35u67I.svg",
     "hero_page_url": "https://builder.aws.com/community/heroes/KittayaNiennattrakul",
     "lat": 14.8971921,
@@ -1199,7 +1136,7 @@
   {
     "name": "Kyuhyun Byun",
     "hero_type": "Serverless Hero",
-    "location": "South Korea",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2ubjP9EODRtHHGab418HWwkBoj9.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/KyuhyunByun",
     "lat": 36.638392,
@@ -1226,7 +1163,7 @@
   {
     "name": "Linghui Gong",
     "hero_type": "Community Hero",
-    "location": "China",
+    "location": "Shanghai, China",
     "image_url": "https://avatars.builderprofile.aws.dev/2xnNC01uWaWmLvMyp1t2wJxEAbL.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/LinghuiGong",
     "lat": 35.000074,
@@ -1235,7 +1172,7 @@
   {
     "name": "Liz Fong-Jones",
     "hero_type": "Community Hero",
-    "location": "Australia",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/39xs1lYqV5cWdjjZsy0pkekHVUH.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/LizFong-Jones",
     "lat": -24.7761086,
@@ -1262,7 +1199,7 @@
   {
     "name": "Luca Bianchi",
     "hero_type": "Serverless Hero",
-    "location": "Italy",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xmhkxEdld9Y4V3I8Tb4lPbJbmv.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/LucaBianchi",
     "lat": 42.6384261,
@@ -1307,7 +1244,7 @@
   {
     "name": "Madhu Kumar Yeluri",
     "hero_type": "Container Hero",
-    "location": "United Kingdom",
+    "location": "Hungary",
     "image_url": "https://avatars.builderprofile.aws.dev/2rI1I6vPplMjCoKd5DAFOzv7z17.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/MadhuKumarYeluri",
     "lat": 54.7023545,
@@ -1316,7 +1253,7 @@
   {
     "name": "Manoj Fernando",
     "hero_type": "Community Hero",
-    "location": "Sri Lanka",
+    "location": "Norway",
     "image_url": "https://avatars.builderprofile.aws.dev/2xuL494fUQRUZHHb7losYjx51CF.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ManojFernando",
     "lat": 7.5554942,
@@ -1404,6 +1341,15 @@
     "lng": 139.2394179
   },
   {
+    "name": "Matias Kreder",
+    "hero_type": "AI Hero",
+    "location": "Argentina",
+    "image_url": "https://avatars.builderprofile.aws.dev/3E55k3bEBBF7FvZaKGEZXRa1MZy.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/MatiasKreder",
+    "lat": -34.9964963,
+    "lng": -64.9672817
+  },
+  {
     "name": "Matt Coulter",
     "hero_type": "DevTools Hero",
     "location": "United Kingdom",
@@ -1425,7 +1371,7 @@
     "name": "Matthew Bonig",
     "hero_type": "DevTools Hero",
     "location": "United States",
-    "image_url": "https://avatars.builderprofile.aws.dev/3858aVC3NmXEhVtfmrjNzK1FCqM.webp",
+    "image_url": "https://avatars.builderprofile.aws.dev/3EPPYdmKHUW9imCtAHjuw2xWDiI.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/MatthewBonig",
     "lat": 39.7837304,
     "lng": -100.445882
@@ -1452,19 +1398,10 @@
     "name": "Mayank Pandey",
     "hero_type": "Community Hero",
     "location": "VIC, Australia",
-    "image_url": "https://avatars.builderprofile.aws.dev/32DrB43LgzF2x2DXTDjgDk6goLw.webp",
+    "image_url": "https://avatars.builderprofile.aws.dev/3ENtkcq3HF0U6eyV2eMlkxYPvnz.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/MayankPandey",
     "lat": -36.5986096,
     "lng": 144.6780052
-  },
-  {
-    "name": "Michael Ezzell",
-    "hero_type": "Community Hero",
-    "location": "United States",
-    "image_url": "https://avatars.builderprofile.aws.dev/2xmhbQiTCsshnpXUgh7n7oL8ODC.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/MichaelEzzell",
-    "lat": 39.7837304,
-    "lng": -100.445882
   },
   {
     "name": "Michael Walmsley",
@@ -1483,15 +1420,6 @@
     "hero_page_url": "https://builder.aws.com/community/heroes/MikeFiedler",
     "lat": 43.1561681,
     "lng": -75.8449946
-  },
-  {
-    "name": "Mikey Fan",
-    "hero_type": "Community Hero",
-    "location": "China",
-    "image_url": "https://avatars.builderprofile.aws.dev/2xz2tPagKbRC6yqugI706dnTF9Y.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/MikeyFan",
-    "lat": 35.000074,
-    "lng": 104.999927
   },
   {
     "name": "Minoru Onda",
@@ -1541,7 +1469,7 @@
   {
     "name": "Nana Janashia",
     "hero_type": "Container Hero",
-    "location": "Austria",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2xy36bNt9AiGFoG4UnAg2pA9zaf.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/NanaJanashia",
     "lat": 47.59397,
@@ -1550,7 +1478,7 @@
   {
     "name": "Nathan Glover",
     "hero_type": "Community Hero",
-    "location": "Australia",
+    "location": "WA, Australia",
     "image_url": "https://avatars.builderprofile.aws.dev/2xqEAAzWZ1qeK15uNHybdoPVtGh.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/NathanGlover",
     "lat": -24.7761086,
@@ -1568,7 +1496,7 @@
   {
     "name": "Nilesh Vaghela",
     "hero_type": "Community Hero",
-    "location": "India",
+    "location": "Gujarat, India",
     "image_url": "https://avatars.builderprofile.aws.dev/2dxLaebNUVjlG84inVIaZ2rWLkn.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/NileshVaghela",
     "lat": 22.3511148,
@@ -1577,7 +1505,7 @@
   {
     "name": "Niv",
     "hero_type": "Community Hero",
-    "location": "Israel",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/31EVDDmOF4mnsD0Kzz9PjDVvoHQ.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/Niv",
     "lat": 30.8124247,
@@ -1586,16 +1514,25 @@
   {
     "name": "Noah Gift",
     "hero_type": "AI Hero",
-    "location": "United States",
-    "image_url": "/assets/default-avatar-light-LR35u67I.svg",
+    "location": "Spain",
+    "image_url": "https://avatars.builderprofile.aws.dev/3Cc9TXU03Q3spK1fzZl9gIUzOQv.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/NoahGift",
     "lat": 39.7837304,
     "lng": -100.445882
   },
   {
+    "name": "Nora Schoener (wolkencode)",
+    "hero_type": "DevTools Hero",
+    "location": "Bavaria, Germany",
+    "image_url": "https://avatars.builderprofile.aws.dev/35dpkt966iQgvNDtUmfW2X9jzro.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/NoraSchoener(wolkencode)",
+    "lat": 48.9467562,
+    "lng": 11.4038717
+  },
+  {
     "name": "Olalekan Elesin",
     "hero_type": "AI Hero",
-    "location": "Germany",
+    "location": "Berlin, Germany",
     "image_url": "https://avatars.builderprofile.aws.dev/2xo86IIxNNr1cCC5E3d3CmhOUwV.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/OlalekanElesin",
     "lat": 51.1638175,
@@ -1613,20 +1550,11 @@
   {
     "name": "Paloma Lataliza",
     "hero_type": "Community Hero",
-    "location": "Brazil",
+    "location": "MG, Brazil",
     "image_url": "https://avatars.builderprofile.aws.dev/2xmjVhiRxYIuGmpX9eHxTRt3oeE.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/PalomaLataliza",
     "lat": -10.3333333,
     "lng": -53.2
-  },
-  {
-    "name": "Pamela Gotti",
-    "hero_type": "Community Hero",
-    "location": "Italy",
-    "image_url": "https://avatars.builderprofile.aws.dev/2xmp08qkrTwivGXbOKw6FBwWcs8.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/PamelaGotti",
-    "lat": 42.6384261,
-    "lng": 12.674297
   },
   {
     "name": "Paolo Latella",
@@ -1649,27 +1577,27 @@
   {
     "name": "Parthasarathi Balasubramanian",
     "hero_type": "Community Hero",
-    "location": "United States",
+    "location": "CA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2oopvJmcPhh11rHWVxyjsGZ9BER.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ParthasarathiBalasubramanian",
     "lat": 39.7837304,
     "lng": -100.445882
   },
   {
-    "name": "Pascal MARTIN [AWS Hero]",
+    "name": "Pascal MARTIN",
     "hero_type": "Container Hero",
     "location": "France",
     "image_url": "https://avatars.builderprofile.aws.dev/2ucGKS0RnlbISDDT4vpJYzxX7RF.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/PascalMARTIN[AWSHero]",
+    "hero_page_url": "https://builder.aws.com/community/heroes/PascalMARTIN",
     "lat": 46.603354,
     "lng": 1.8883335
   },
   {
-    "name": "Pawel Zubkiewicz [AWS Hero]",
+    "name": "Pawel Zubkiewicz",
     "hero_type": "Serverless Hero",
     "location": "Poland",
     "image_url": "https://avatars.builderprofile.aws.dev/2kPjrEUNvtXa6udERO9eYrAUZhy.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/PawelZubkiewicz[AWSHero]",
+    "hero_page_url": "https://builder.aws.com/community/heroes/PawelZubkiewicz",
     "lat": 52.215933,
     "lng": 19.134422
   },
@@ -1685,7 +1613,7 @@
   {
     "name": "Peter Sbarski",
     "hero_type": "Serverless Hero",
-    "location": "Australia",
+    "location": "VIC, Australia",
     "image_url": "https://avatars.builderprofile.aws.dev/3683uy1NlM1Da5NNhCQpShuXRzX.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/PeterSbarski",
     "lat": -24.7761086,
@@ -1694,7 +1622,7 @@
   {
     "name": "Philipp Garbe",
     "hero_type": "Container Hero",
-    "location": "Bavaria, Germany",
+    "location": "Bavaria,",
     "image_url": "https://avatars.builderprofile.aws.dev/2xpdbFas1bD6DeGQrhmky1wv35r.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/PhilippGarbe",
     "lat": 48.9467562,
@@ -1703,7 +1631,7 @@
   {
     "name": "Prashanth HN",
     "hero_type": "Serverless Hero",
-    "location": "India",
+    "location": "Karnataka, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2om9roH6sKYf5A1OJEWnee8SacY.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/PrashanthHN",
     "lat": 22.3511148,
@@ -1712,18 +1640,18 @@
   {
     "name": "Rafał Mituła",
     "hero_type": "Community Hero",
-    "location": "Poland",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2tPciEOU0ZRYPWCRXMZm4hKgl4L.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/Rafa%C5%82Mitu%C5%82a",
     "lat": 52.215933,
     "lng": 19.134422
   },
   {
-    "name": "Ran Isenberg (AWS Serverless Hero)",
+    "name": "Ran Isenberg",
     "hero_type": "Serverless Hero",
     "location": "Israel",
-    "image_url": "https://avatars.builderprofile.aws.dev/2nchaLNPjG9ZeULvuTXB7jTgBTv.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/RanIsenberg(AWSServerlessHero)",
+    "image_url": "https://avatars.builderprofile.aws.dev/3ClYlBjTsqJ5wn1duKbyjPUsMmX.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/RanIsenberg",
     "lat": 30.8124247,
     "lng": 34.8594762
   },
@@ -1800,22 +1728,22 @@
     "lng": 13.3951309
   },
   {
+    "name": "Ricardo Ceci",
+    "hero_type": "AI Hero",
+    "location": "Argentina",
+    "image_url": "https://avatars.builderprofile.aws.dev/3EMaVdESOtJIMWDZsOYNqIq2twa.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/RicardoCeci",
+    "lat": -34.9964963,
+    "lng": -64.9672817
+  },
+  {
     "name": "Richard Fan",
     "hero_type": "Security Hero",
-    "location": "Hong Kong",
+    "location": "Hong Kong Island, Hong Kong",
     "image_url": "https://avatars.builderprofile.aws.dev/2ZUJk1nHjpIp75f35KboL1RizJC.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/RichardFan",
     "lat": 22.3492155,
     "lng": 114.1857978
-  },
-  {
-    "name": "Rick Hwang",
-    "hero_type": "Community Hero",
-    "location": "Taiwan",
-    "image_url": "/assets/default-avatar-light-LR35u67I.svg",
-    "hero_page_url": "https://builder.aws.com/community/heroes/RickHwang",
-    "lat": 23.9739374,
-    "lng": 120.9820179
   },
   {
     "name": "Rob Koch",
@@ -1857,7 +1785,7 @@
     "name": "Rossana Suarez 🔥Roxs🔥",
     "hero_type": "Container Hero",
     "location": "Argentina",
-    "image_url": "https://avatars.builderprofile.aws.dev/2zekTXZuqvX1sYVvA0RH6JD2882.webp",
+    "image_url": "https://avatars.builderprofile.aws.dev/3CYAkQiqXXCNCw4sy7bsP0kn6tc.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/RossanaSuarez%F0%9F%94%A5Roxs%F0%9F%94%A5",
     "lat": -34.9964963,
     "lng": -64.9672817
@@ -1870,15 +1798,6 @@
     "hero_page_url": "https://builder.aws.com/community/heroes/RowanUdell",
     "lat": -22.1646782,
     "lng": 144.5844903
-  },
-  {
-    "name": "Ruofei Ma",
-    "hero_type": "Container Hero",
-    "location": "China",
-    "image_url": "https://avatars.builderprofile.aws.dev/2yGMQ6D4mvvKa1IMsyTt4qPsu6L.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/RuofeiMa",
-    "lat": 35.000074,
-    "lng": 104.999927
   },
   {
     "name": "Rustem Feyzkhanov",
@@ -1901,8 +1820,8 @@
   {
     "name": "Sanchit Jain",
     "hero_type": "Data Hero",
-    "location": "India",
-    "image_url": "https://avatars.builderprofile.aws.dev/36daJizwMkysWTBmjtBAhbdrcng.webp",
+    "location": "Maharashtra, India",
+    "image_url": "https://avatars.builderprofile.aws.dev/3CU733S3vvwh3doZHmJZi9ozfqB.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/SanchitJain",
     "lat": 22.3511148,
     "lng": 78.6677428
@@ -1910,25 +1829,25 @@
   {
     "name": "Sandip Das",
     "hero_type": "Container Hero",
-    "location": "India",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2oq1gBSg0t70N9Ld9j9tJMjreYs.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/SandipDas",
     "lat": 22.3511148,
     "lng": 78.6677428
   },
   {
-    "name": "Sang Chris Park",
+    "name": "Sang Chris Park [AWS Hero]",
     "hero_type": "Serverless Hero",
     "location": "South Korea",
     "image_url": "https://avatars.builderprofile.aws.dev/2ojyRC6Rv6syevFHLQKT4fqKc9Z.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/SangChrisPark",
+    "hero_page_url": "https://builder.aws.com/community/heroes/SangChrisPark[AWSHero]",
     "lat": 36.638392,
     "lng": 127.6961188
   },
   {
     "name": "Sathyajith Bhat",
     "hero_type": "Container Hero",
-    "location": "Australia",
+    "location": "NSW, Australia",
     "image_url": "https://avatars.builderprofile.aws.dev/2xo5SV4JfrgltfOlEN4Lx3PBitg.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/SathyajithBhat",
     "lat": -24.7761086,
@@ -1946,18 +1865,9 @@
   {
     "name": "Sebastian Korfmann",
     "hero_type": "DevTools Hero",
-    "location": "Germany",
+    "location": "",
     "image_url": "/assets/default-avatar-light-LR35u67I.svg",
     "hero_page_url": "https://builder.aws.com/community/heroes/SebastianKorfmann",
-    "lat": 51.1638175,
-    "lng": 10.4478313
-  },
-  {
-    "name": "Sebastian Müller",
-    "hero_type": "Serverless Hero",
-    "location": "Germany",
-    "image_url": "https://avatars.builderprofile.aws.dev/2rXqS52nzbBeeGsLwFM3tGTnZkW.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/SebastianM%C3%BCller",
     "lat": 51.1638175,
     "lng": 10.4478313
   },
@@ -1973,7 +1883,7 @@
   {
     "name": "Serhat Can",
     "hero_type": "Community Hero",
-    "location": "Türkiye",
+    "location": "",
     "image_url": "/assets/default-avatar-light-LR35u67I.svg",
     "hero_page_url": "https://builder.aws.com/community/heroes/SerhatCan",
     "lat": 39.294076,
@@ -1982,7 +1892,7 @@
   {
     "name": "Serkan Özal",
     "hero_type": "Serverless Hero",
-    "location": "Türkiye",
+    "location": "",
     "image_url": "/assets/default-avatar-light-LR35u67I.svg",
     "hero_page_url": "https://builder.aws.com/community/heroes/Serkan%C3%96zal",
     "lat": 39.294076,
@@ -1991,7 +1901,7 @@
   {
     "name": "Shaoyi Li",
     "hero_type": "Community Hero",
-    "location": "FL, United States",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/344FBfVPjuinZdqOwir5wktXs28.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ShaoyiLi",
     "lat": 27.7567667,
@@ -2010,7 +1920,7 @@
     "name": "Sheyla Leacock",
     "hero_type": "Security Hero",
     "location": "Panama",
-    "image_url": "https://avatars.builderprofile.aws.dev/3AwX5yhOzErJVTktGWS4inoatNt.webp",
+    "image_url": "https://avatars.builderprofile.aws.dev/3CswBQWcJ12ojiXSEfo3EOzKGTq.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/SheylaLeacock",
     "lat": 8.559559,
     "lng": -81.1308434
@@ -2072,7 +1982,7 @@
   {
     "name": "Sridevi",
     "hero_type": "Data Hero",
-    "location": "India",
+    "location": "Tamil Nadu, India",
     "image_url": "https://avatars.builderprofile.aws.dev/2peNdQGnlD90JlFWE4RFHmLEPew.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/Sridevi",
     "lat": 22.3511148,
@@ -2081,7 +1991,7 @@
   {
     "name": "Srushith Repakula",
     "hero_type": "Serverless Hero",
-    "location": "Karnataka, India",
+    "location": "Karnataka, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/33zroPyQLeNDZjYm0V8P7APg6x6.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/SrushithRepakula",
     "lat": 14.9562045,
@@ -2135,7 +2045,7 @@
   {
     "name": "Teri Radichel",
     "hero_type": "Security Hero",
-    "location": "United States",
+    "location": "GA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/36DY54TGLrTfQFPQynxl2yxRotH.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/TeriRadichel",
     "lat": 39.7837304,
@@ -2162,7 +2072,7 @@
   {
     "name": "Tom McLaughlin",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "MA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xmj0YYtG2Zpz1E2NDdOu8KWxwN.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/TomMcLaughlin",
     "lat": 39.7837304,
@@ -2180,7 +2090,7 @@
   {
     "name": "Tomasz Lakomy",
     "hero_type": "Community Hero",
-    "location": "Poland",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/38O3QW8FkAiq9Nm9Ub0XLdKnMjU.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/TomaszLakomy",
     "lat": 52.215933,
@@ -2198,7 +2108,7 @@
   {
     "name": "Toshal Khawale",
     "hero_type": "Community Hero",
-    "location": "India",
+    "location": "Maharashtra, India",
     "image_url": "https://avatars.builderprofile.aws.dev/30vHay789Jp1wY48DWZ2ObfvS8U.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ToshalKhawale",
     "lat": 22.3511148,
@@ -2207,7 +2117,7 @@
   {
     "name": "Trista Pan",
     "hero_type": "Data Hero",
-    "location": "China",
+    "location": "",
     "image_url": "https://avatars.builderprofile.aws.dev/2yGMrIfsfxfvntsANMhnQL4xsgL.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/TristaPan",
     "lat": 35.000074,
@@ -2225,25 +2135,25 @@
   {
     "name": "Vanessa Santos",
     "hero_type": "Community Hero",
-    "location": "Brazil",
+    "location": "SP, Brazil",
     "image_url": "https://avatars.builderprofile.aws.dev/327prQNWfg2lE3s4Wvfq8B5lJd0.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/VanessaSantos",
     "lat": -10.3333333,
     "lng": -53.2
   },
   {
-    "name": "Ved Vaghela",
-    "hero_type": "Community Hero",
-    "location": "Gujarat, India",
-    "image_url": "https://avatars.builderprofile.aws.dev/2jC0CxrLU3X5NdECCHRIETVJz04.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/VedVaghela",
-    "lat": 22.3850051,
-    "lng": 71.745261
+    "name": "Vicky Seno",
+    "hero_type": "Container Hero",
+    "location": "CA, United States",
+    "image_url": "https://avatars.builderprofile.aws.dev/35ox6Xvh1ZNgz19xNfalmzwRvI5.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/VickySeno",
+    "lat": 36.7014631,
+    "lng": -118.755997
   },
   {
     "name": "Vinicius Caridá",
     "hero_type": "AI Hero",
-    "location": "Brazil",
+    "location": "SP, Brazil",
     "image_url": "https://avatars.builderprofile.aws.dev/31KRQaAUFgHCbyK5fRPicvQGupX.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/ViniciusCarid%C3%A1",
     "lat": -10.3333333,
@@ -2261,7 +2171,7 @@
   {
     "name": "Vit Niennattrakul",
     "hero_type": "Community Hero",
-    "location": "Thailand",
+    "location": "United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xs3MzER7BI6n1lRckC0K8NnXX8.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/VitNiennattrakul",
     "lat": 14.8971921,
@@ -2270,27 +2180,27 @@
   {
     "name": "Vivek Raja P S",
     "hero_type": "AI Hero",
-    "location": "India",
+    "location": "Karnataka, India",
     "image_url": "https://avatars.builderprofile.aws.dev/3AtzCHy721bhrSH5RUFS9U140dt.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/VivekRajaPS",
     "lat": 22.3511148,
     "lng": 78.6677428
   },
   {
-    "name": "Vivek Velso",
+    "name": "Vivek V [AWS Hero]",
     "hero_type": "AI Hero",
     "location": "ON, Canada",
     "image_url": "https://avatars.builderprofile.aws.dev/34DwFQJnDUppt3Mj3KMm28HvMGK.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/VivekVelso",
+    "hero_page_url": "https://builder.aws.com/community/heroes/VivekV[AWSHero]",
     "lat": 50.000678,
     "lng": -86.000977
   },
   {
-    "name": "Vlad Ionescu",
+    "name": "Vlad Ionescu (he/him)",
     "hero_type": "Container Hero",
     "location": "Romania",
     "image_url": "https://avatars.builderprofile.aws.dev/2tpY13mtbdTSchAQ7yPzXt06FZH.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/VladIonescu",
+    "hero_page_url": "https://builder.aws.com/community/heroes/VladIonescu(he/him)",
     "lat": 45.9852129,
     "lng": 24.6859225
   },
@@ -2313,18 +2223,9 @@
     "lng": 19.134422
   },
   {
-    "name": "wolkencode",
-    "hero_type": "DevTools Hero",
-    "location": "Germany",
-    "image_url": "https://avatars.builderprofile.aws.dev/35dpkt966iQgvNDtUmfW2X9jzro.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/wolkencode",
-    "lat": 51.1638175,
-    "lng": 10.4478313
-  },
-  {
     "name": "Wu Sheng",
     "hero_type": "Container Hero",
-    "location": "Hong Kong",
+    "location": "Hong Kong Island, Hong Kong",
     "image_url": "https://avatars.builderprofile.aws.dev/3AgtyAPOEA9U7IQiC3nChOcDV6A.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/WuSheng",
     "lat": 22.3492155,
@@ -2365,5 +2266,14 @@
     "hero_page_url": "https://builder.aws.com/community/heroes/YusukeKuoka",
     "lat": 36.5748441,
     "lng": 139.2394179
+  },
+  {
+    "name": "Zainab",
+    "hero_type": "Data Hero",
+    "location": "",
+    "image_url": "https://avatars.builderprofile.aws.dev/35m4yQUWdNJx8VM3BxyJhE7AKKI.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/Zainab",
+    "lat": 0,
+    "lng": 0
   }
 ]
