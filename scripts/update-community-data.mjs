@@ -198,11 +198,27 @@ function existingBy(existingRecords, key) {
   return new Map(existingRecords.filter((record) => record?.[key]).map((record) => [record[key], record]));
 }
 
+function normalizedLookupValue(value) {
+  return String(value ?? '').trim().toLowerCase();
+}
+
+function locationKey(record) {
+  return [
+    normalizedLookupValue(record?.name),
+    normalizedLookupValue(record?.location),
+  ].join('|');
+}
+
 function mergeCoordinates(records, existingRecords, key) {
   const existing = existingBy(existingRecords, key);
+  const existingByNameLocation = new Map(
+    existingRecords
+      .filter(hasCoordinates)
+      .map((record) => [locationKey(record), record]),
+  );
 
   return records.map((record) => {
-    const previous = existing.get(record[key]);
+    const previous = existing.get(record[key]) || existingByNameLocation.get(locationKey(record));
     if (!previous || !hasCoordinates(previous)) return record;
 
     return {
@@ -246,7 +262,16 @@ async function scrapeHeroes(page) {
   });
 
   const existing = readJson(join(DATA_DIR, 'heroes.json'));
-  const heroes = await addCoordinates(mergeCoordinates(rawHeroes, existing, 'hero_page_url'));
+  const existingMap = existingBy(existing, 'hero_page_url');
+  const withCoordinates = await addCoordinates(mergeCoordinates(rawHeroes, existing, 'hero_page_url'));
+  const heroes = withCoordinates.map((hero) => {
+    const previous = existingMap.get(hero.hero_page_url);
+    return {
+      id: previous?.id || stableId(hero.hero_page_url),
+      ...hero,
+      isNew: Boolean(previous?.isNew) || !previous,
+    };
+  });
   if (!DRY_RUN && heroes.length < 50) throw new Error(`Heroes scrape returned only ${heroes.length} records`);
   writeJson('heroes.json', heroes);
 }
@@ -314,6 +339,7 @@ async function scrapeCommunityBuilders(page) {
       profileUrl: builder.profile_url,
       lat: builder.lat,
       lng: builder.lng,
+      isNew: Boolean(previous?.isNew) || !previous,
     };
   });
 
@@ -409,13 +435,21 @@ function extractDirectoryGroups(kind) {
   function itemContainer(joinLink) {
     let current = joinLink.parentElement;
 
-    while (current) {
-      const hasHeading = Boolean(current.querySelector('h1, h2, h3, h4'));
+    while (current && current !== document.body) {
+      const lines = current.innerText
+        ?.split('\n')
+        .map((line) => line.trim())
+        .filter(Boolean) || [];
+      const titleCount = lines.filter((line) => /^AWS (?:(?:User|Student Builder|Cloud) (?:Group|Builder Group|Club)|SBG) at /i.test(line)).length;
       const joinCount = current.querySelectorAll('a[href]').length
         ? Array.from(current.querySelectorAll('a[href]')).filter((link) => link.textContent?.trim() === 'Join').length
         : 0;
 
-      if (hasHeading && joinCount === 1) return current;
+      if (
+        joinCount === 1
+        && lines.length >= 3
+        && (kind === 'user' || titleCount === 1)
+      ) return current;
       current = current.parentElement;
     }
 
@@ -426,15 +460,17 @@ function extractDirectoryGroups(kind) {
     const container = itemContainer(joinLink);
     if (!container) continue;
 
-    const heading = container.querySelector('h1, h2, h3, h4');
-    const name = heading?.textContent?.trim() || '';
+    const rawLines = container.innerText
+      .split('\n')
+      .map((line) => line.trim())
+      .filter(Boolean);
+    const name = rawLines.find((line) => /^AWS (?:(?:User|Student Builder|Cloud) (?:Group|Builder Group|Club)|SBG) at /i.test(line))
+      || (kind === 'user' ? rawLines.find((line) => line !== 'Join') : '')
+      || '';
     const joinUrl = joinLink.getAttribute('href') || '';
     if (!name || !joinUrl || joinUrl.startsWith('#')) continue;
 
-    const lines = container.innerText
-      .split('\n')
-      .map((line) => line.trim())
-      .filter(Boolean)
+    const lines = rawLines
       .filter((line) => line !== 'Join' && line !== 'Led by');
     const location = lines.find((line) => line !== name && !line.includes('Join')) || '';
 
@@ -477,9 +513,10 @@ async function scrapeUserGroups(page) {
   const rawGroups = await page.evaluate(extractDirectoryGroups, 'user');
   const existing = readJson(join(DATA_DIR, 'user-groups.json'));
   const existingMap = existingBy(existing, 'joinUrl');
+  const existingByNameLocation = new Map(existing.map((group) => [locationKey(group), group]));
   const withCoordinates = await addCoordinates(mergeCoordinates(rawGroups, existing, 'joinUrl'));
   const groups = withCoordinates.map((group) => {
-    const previous = existingMap.get(group.joinUrl);
+    const previous = existingMap.get(group.joinUrl) || existingByNameLocation.get(locationKey(group));
     return {
       id: previous?.id || stableId(group.joinUrl),
       name: group.name,
@@ -490,6 +527,7 @@ async function scrapeUserGroups(page) {
       profileUrl: group.profileUrl,
       lat: group.lat,
       lng: group.lng,
+      isNew: Boolean(previous?.isNew) || !previous,
     };
   });
 
@@ -504,9 +542,10 @@ async function scrapeStudentBuilderGroups(page) {
   const rawGroups = await page.evaluate(extractDirectoryGroups, 'student');
   const existing = readJson(join(DATA_DIR, 'cloud-clubs.json'));
   const existingMap = existingBy(existing, 'joinUrl');
+  const existingByNameLocation = new Map(existing.map((group) => [locationKey(group), group]));
   const withCoordinates = await addCoordinates(mergeCoordinates(rawGroups, existing, 'joinUrl'));
   const groups = withCoordinates.map((group) => {
-    const previous = existingMap.get(group.joinUrl);
+    const previous = existingMap.get(group.joinUrl) || existingByNameLocation.get(locationKey(group));
     return {
       id: previous?.id || stableId(group.joinUrl),
       name: group.name,
@@ -518,6 +557,7 @@ async function scrapeStudentBuilderGroups(page) {
       ledBy: group.ledBy,
       lat: group.lat,
       lng: group.lng,
+      isNew: Boolean(previous?.isNew) || !previous,
     };
   });
 
