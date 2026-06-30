@@ -17,6 +17,7 @@ const CATEGORY_COLORS = {
   'community-builders': '#1A9C3E',
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
+  'aws-community-day-singapore': '#FF9900',
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'aws-ambassadors': '#2D72D2',
@@ -27,6 +28,7 @@ const CATEGORY_LABELS = {
   'community-builders': 'Community Builders',
   'user-groups': 'User Groups',
   'cloud-clubs': 'Student Builder Groups',
+  'aws-community-day-singapore': 'AWS Community Day Singapore',
   'kiro-ambassadors': 'Kiro',
   'kiro-events': 'Kiro Events',
   'aws-ambassadors': 'AWS Ambassador',
@@ -51,7 +53,8 @@ const DEFAULT_ROUTE_STATE = {
 };
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
-const VALID_GLOBE_DESIGNS = new Set(['orbit', 'classic', 'sleek', 'flat']);
+const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat'];
+const VALID_GLOBE_DESIGNS = new Set(GLOBE_DESIGNS);
 
 function getRouteStateFromUrl() {
   if (typeof window === 'undefined') return DEFAULT_ROUTE_STATE;
@@ -108,6 +111,7 @@ const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
 const SvgFlatMapScene = lazy(() => import('./components/FlatMapScene'));
+const AwsCommunityDaySingaporeScene = lazy(() => import('./components/AwsCommunityDaySingaporeScene'));
 
 export default function App() {
   const [routeState] = useState(() => getRouteStateFromUrl());
@@ -131,6 +135,7 @@ export default function App() {
   const [webGlAvailable] = useState(canCreateWebGlContext);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
+  const isCommunityDayView = activeCategory === 'aws-community-day-singapore';
   const isNewsView = activeCategory === 'news';
   const globeReady = !showSplash;
 
@@ -506,13 +511,13 @@ export default function App() {
           activeCategory={activeCategory}
           onChange={handleCategoryChange}
           darkMode={darkMode}
-          countries={isNewsView || isKiroView || isAwsAmbassadorView ? [] : countries}
-          countryCounts={isNewsView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
+          countries={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? [] : countries}
+          countryCounts={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
           selectedCountry={selectedCountry}
           onCountryChange={setSelectedCountry}
         />
 
-        {!isNewsView && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
+        {!isCommunityDayView && !isNewsView && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -539,7 +544,11 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          {isKiroView || isAwsAmbassadorView ? (
+          {isCommunityDayView ? (
+            <Suspense fallback={renderGlobeLoading()}>
+              <AwsCommunityDaySingaporeScene darkMode={darkMode} />
+            </Suspense>
+          ) : isKiroView || isAwsAmbassadorView ? (
             <div className="relative h-full min-h-0 overflow-hidden">
               <div className="absolute inset-0">
                 {globeReady ? (
@@ -664,7 +673,7 @@ export default function App() {
                       }}
                       aria-label="Globe design switcher"
                     >
-                      {['orbit', 'classic', 'sleek', 'flat'].map((d) => (
+                      {GLOBE_DESIGNS.map((d) => (
                         <button
                           key={d}
                           type="button"
@@ -851,7 +860,6 @@ export default function App() {
                 </div>
               )}
 
-              {/* Globe HUD — live member count */}
               <div
                 className="absolute top-4 left-4 z-20 pointer-events-none"
                 style={{
@@ -864,7 +872,6 @@ export default function App() {
                   minWidth: '110px',
                 }}
               >
-                {/* Category label with live dot */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '6px' }}>
                   <span style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '10px', height: '10px', flexShrink: 0 }}>
                     <span style={{
@@ -887,7 +894,6 @@ export default function App() {
                   </span>
                 </div>
 
-                {/* Member count */}
                 {loading ? (
                   <div style={{ width: '3.5rem', height: '1.8rem', borderRadius: '4px', background: darkMode ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.06)' }} />
                 ) : (
@@ -907,7 +913,6 @@ export default function App() {
                   </div>
                 )}
 
-                {/* Sub-label */}
                 <div style={{ color: darkMode ? '#536475' : '#7a9ab8', fontSize: '0.68rem', marginTop: '3px', fontWeight: 500 }}>
                   {hudSubLabel}
                 </div>
@@ -954,38 +959,17 @@ export default function App() {
                         }}
                         aria-label="Globe design switcher"
                       >
-                        <button
-                          type="button"
-                          onClick={() => setGlobeDesign('orbit')}
-                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                          style={designButtonStyles('orbit')}
-                        >
-                          Orbit
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setGlobeDesign('classic')}
-                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                          style={designButtonStyles('classic')}
-                        >
-                          {designButtonLabel('classic')}
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setGlobeDesign('sleek')}
-                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                          style={designButtonStyles('sleek')}
-                        >
-                          Sleek
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setGlobeDesign('flat')}
-                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
-                          style={designButtonStyles('flat')}
-                        >
-                          Flat
-                        </button>
+                        {GLOBE_DESIGNS.map((design) => (
+                          <button
+                            key={design}
+                            type="button"
+                            onClick={() => setGlobeDesign(design)}
+                            className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                            style={designButtonStyles(design)}
+                          >
+                            {designButtonLabel(design)}
+                          </button>
+                        ))}
                       </div>
 
                       <div

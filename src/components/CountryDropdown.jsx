@@ -13,6 +13,8 @@ export default function CountryDropdown({
   selectedCountry,
   onCountryChange,
   buttonLabel = 'All Countries',
+  allLabel = 'All Countries',
+  allowAll = true,
   className = '',
   buttonStyle = {},
 }) {
@@ -161,16 +163,18 @@ export default function CountryDropdown({
           listStyle: 'none',
         }}
       >
-        <CountryOption
-          selected={!selectedCountry}
-          color={!selectedCountry ? '#FF9900' : menuText}
-          menuHover={menuHover}
-          selectedCountry={selectedCountry}
-          onClick={() => selectCountry(null)}
-        >
-          <span style={{ fontSize: '1.1rem', lineHeight: 1 }}>🌍</span>
-          <span>All Countries</span>
-        </CountryOption>
+        {allowAll && (
+          <CountryOption
+            selected={!selectedCountry}
+            color={!selectedCountry ? '#FF9900' : menuText}
+            menuHover={menuHover}
+            selectedCountry={selectedCountry}
+            onClick={() => selectCountry(null)}
+          >
+            <span style={{ fontSize: '1.1rem', lineHeight: 1 }}>🌍</span>
+            <span>{allLabel}</span>
+          </CountryOption>
+        )}
 
         {filteredCountries.map((country) => {
           const code = getCountryCode(country);
@@ -185,7 +189,7 @@ export default function CountryDropdown({
               color={isSelected ? '#FF9900' : menuText}
               menuHover={menuHover}
               selectedCountry={selectedCountry}
-              onClick={() => selectCountry(isSelected ? null : country)}
+              onClick={() => selectCountry(isSelected && allowAll ? null : country)}
             >
               <span style={{ fontSize: '1.1rem', lineHeight: 1, minWidth: '1.4rem', textAlign: 'center' }}>
                 {flag}
@@ -243,8 +247,10 @@ export default function CountryDropdown({
           ...buttonStyle,
         }}
       >
-        <span>{selectedCountry || buttonLabel}</span>
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+        <span style={{ minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis' }}>
+          {selectedCountry || buttonLabel}
+        </span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ flexShrink: 0 }}>
           <polyline points="6 9 12 15 18 9" />
         </svg>
       </button>

@@ -11,6 +11,7 @@ const CATEGORY_COLORS = {
   'cloud-clubs': '#BF0816',
   'kiro-events': '#7B61FF',
   'aws-ambassadors': '#2D72D2',
+  'aws-community-day-singapore': '#FF9900',
   'news': '#FF9900',
 };
 
@@ -96,7 +97,7 @@ function buildProjection(activeTarget) {
   return projection;
 }
 
-export default function FlatMapScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand }) {
+export default function FlatMapScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand, hideControls = false }) {
   const [focusedTarget, setFocusedTarget] = useState(null);
   const [manualZoom, setManualZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
@@ -530,75 +531,79 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
             </g>
           </svg>
 
-          <div
-            className="pointer-events-none absolute left-5 top-5 rounded-full px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase"
-            style={{
-              color: darkMode ? '#A7BDCF' : '#537190',
-              background: darkMode ? 'rgba(7, 16, 25, 0.62)' : 'rgba(255, 255, 255, 0.74)',
-              border: `1px solid ${panelBorder}`,
-              backdropFilter: 'blur(12px)',
-              WebkitBackdropFilter: 'blur(12px)',
-            }}
-          >
-            Flat Map
-          </div>
+          {!hideControls && (
+            <>
+              <div
+                className="pointer-events-none absolute left-5 top-5 rounded-full px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase"
+                style={{
+                  color: darkMode ? '#A7BDCF' : '#537190',
+                  background: darkMode ? 'rgba(7, 16, 25, 0.62)' : 'rgba(255, 255, 255, 0.74)',
+                  border: `1px solid ${panelBorder}`,
+                  backdropFilter: 'blur(12px)',
+                  WebkitBackdropFilter: 'blur(12px)',
+                }}
+              >
+                Flat Map
+              </div>
 
-          <div className="absolute right-5 top-5 flex items-center gap-2" style={{ zIndex: 20 }}>
-            <div
-              data-map-control="true"
-              className="rounded-full px-3 py-1 text-[11px] font-semibold"
-              style={{
-                color: darkMode ? '#DCE7F0' : '#23415E',
-                background: controlBg,
-                border: `1px solid ${panelBorder}`,
-                backdropFilter: 'blur(12px)',
-                WebkitBackdropFilter: 'blur(12px)',
-              }}
-            >
-              Zoom {manualZoom.toFixed(1)}x
-            </div>
-            <button
-              type="button"
-              data-map-control="true"
-              onClick={zoomOut}
-              className="h-9 w-9 rounded-full text-lg font-semibold"
-              style={{
-                color: darkMode ? '#DCE7F0' : '#23415E',
-                background: controlBg,
-                border: `1px solid ${panelBorder}`,
-              }}
-              aria-label="Zoom out flat map"
-            >
-              -
-            </button>
-            <button
-              type="button"
-              data-map-control="true"
-              onClick={zoomIn}
-              className="h-9 w-9 rounded-full text-lg font-semibold"
-              style={{
-                color: darkMode ? '#DCE7F0' : '#23415E',
-                background: controlBg,
-                border: `1px solid ${panelBorder}`,
-              }}
-              aria-label="Zoom in flat map"
-            >
-              +
-            </button>
-            <button
-              type="button"
-              data-map-control="true"
-              onClick={resetView}
-              className="rounded-full px-3 py-2 text-xs font-semibold"
-              style={{
-                color: darkMode ? '#DCE7F0' : '#23415E',
-                background: controlBg,
-                border: `1px solid ${panelBorder}`,
-              }}
-            >
-              Reset
-            </button>
-          </div>
+              <div className="absolute right-5 top-5 flex items-center gap-2" style={{ zIndex: 20 }}>
+                <div
+                  data-map-control="true"
+                  className="rounded-full px-3 py-1 text-[11px] font-semibold"
+                  style={{
+                    color: darkMode ? '#DCE7F0' : '#23415E',
+                    background: controlBg,
+                    border: `1px solid ${panelBorder}`,
+                    backdropFilter: 'blur(12px)',
+                    WebkitBackdropFilter: 'blur(12px)',
+                  }}
+                >
+                  Zoom {manualZoom.toFixed(1)}x
+                </div>
+                <button
+                  type="button"
+                  data-map-control="true"
+                  onClick={zoomOut}
+                  className="h-9 w-9 rounded-full text-lg font-semibold"
+                  style={{
+                    color: darkMode ? '#DCE7F0' : '#23415E',
+                    background: controlBg,
+                    border: `1px solid ${panelBorder}`,
+                  }}
+                  aria-label="Zoom out flat map"
+                >
+                  -
+                </button>
+                <button
+                  type="button"
+                  data-map-control="true"
+                  onClick={zoomIn}
+                  className="h-9 w-9 rounded-full text-lg font-semibold"
+                  style={{
+                    color: darkMode ? '#DCE7F0' : '#23415E',
+                    background: controlBg,
+                    border: `1px solid ${panelBorder}`,
+                  }}
+                  aria-label="Zoom in flat map"
+                >
+                  +
+                </button>
+                <button
+                  type="button"
+                  data-map-control="true"
+                  onClick={resetView}
+                  className="rounded-full px-3 py-2 text-xs font-semibold"
+                  style={{
+                    color: darkMode ? '#DCE7F0' : '#23415E',
+                    background: controlBg,
+                    border: `1px solid ${panelBorder}`,
+                  }}
+                >
+                  Reset
+                </button>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>

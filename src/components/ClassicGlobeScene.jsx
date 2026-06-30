@@ -11,6 +11,7 @@ const CATEGORY_COLORS = {
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'aws-ambassadors': '#2D72D2',
+  'aws-community-day-singapore': '#FF9900',
   'news': '#FF9900',
 };
 

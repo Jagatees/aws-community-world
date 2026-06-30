@@ -8,6 +8,7 @@ const TABS = [
   { label: 'Community Builders', key: 'community-builders' },
   { label: 'User Groups', key: 'user-groups' },
   { label: 'Student Builder Groups', key: 'cloud-clubs' },
+  { label: 'AWS Community Day Singapore', key: 'aws-community-day-singapore' },
   { label: 'Kiro', key: 'kiro-ambassadors' },
   { label: 'News', key: 'news' },
 ];
@@ -66,6 +67,8 @@ export default function TabNav({
       indicator.style.left = `${left}px`;
       indicator.style.width = `${width}px`;
     }
+
+    activeBtn.scrollIntoView({ block: 'nearest', inline: 'center' });
   }, [activeCategory]);
 
   // Re-measure on darkMode change (fonts/sizes can shift)
