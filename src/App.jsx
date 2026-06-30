@@ -5,6 +5,7 @@ import NewsPanel from './components/NewsPanel';
 import ProfileCard from './components/ProfileCard';
 import TagFilter from './components/TagFilter';
 import KiroAvatarOverlay from './components/KiroAvatarOverlay';
+import GlobeErrorBoundary from './components/GlobeErrorBoundary';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 import communityBuilderMeta from './data/community-builders-meta.json';
@@ -89,10 +90,24 @@ function writeRouteStateToUrl({ activeCategory, selectedTag, selectedCountry, gl
   if (nextUrl !== currentUrl) window.history.replaceState(null, '', nextUrl);
 }
 
+function canCreateWebGlContext() {
+  if (typeof document === 'undefined') return true;
+
+  try {
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    gl?.getExtension?.('WEBGL_lose_context')?.loseContext?.();
+    return Boolean(gl);
+  } catch {
+    return false;
+  }
+}
+
 const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
 const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
+const SvgFlatMapScene = lazy(() => import('./components/FlatMapScene'));
 
 export default function App() {
   const [routeState] = useState(() => getRouteStateFromUrl());
@@ -113,6 +128,7 @@ export default function App() {
   const [nearMeError, setNearMeError] = useState(null);
   const [nearMeHover, setNearMeHover] = useState(false);
   const [singaporeSpotlight, setSingaporeSpotlight] = useState(routeState.singaporeSpotlight ? { nonce: 1 } : null);
+  const [webGlAvailable] = useState(canCreateWebGlContext);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isNewsView = activeCategory === 'news';
@@ -125,13 +141,26 @@ export default function App() {
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
   const ActiveGlobeScene =
-    globeDesign === 'classic'
+    !webGlAvailable
+      ? SvgFlatMapScene
+      : globeDesign === 'classic'
       ? MapboxGlobeScene
       : globeDesign === 'flat'
         ? MapboxFlatScene
         : globeDesign === 'sleek'
           ? CobeGlobeScene
           : ClassicGlobeScene;
+
+  function renderInteractiveScene(Scene, props, resetKey) {
+    return (
+      <GlobeErrorBoundary
+        resetKey={resetKey}
+        fallback={<SvgFlatMapScene {...props} />}
+      >
+        <Scene {...props} />
+      </GlobeErrorBoundary>
+    );
+  }
 
   const tags = useMemo(() => {
     if (isCommunityBuilderView) return communityBuilderMeta.tags ?? [];
@@ -516,15 +545,19 @@ export default function App() {
                 {globeReady ? (
                   <Suspense fallback={renderGlobeLoading()}>
                     <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
-                      <CobeGlobeScene
-                        category={isAwsAmbassadorView ? 'aws-ambassadors' : 'kiro-ambassadors'}
-                        members={[]}
-                        onMarkerClick={handleMarkerClick}
-                        cardOpen={false}
-                        darkMode={darkMode}
-                        flyToTarget={resolvedFlyToTarget}
-                        zoomCommand={zoomCommand}
-                      />
+                      {renderInteractiveScene(
+                        webGlAvailable ? CobeGlobeScene : SvgFlatMapScene,
+                        {
+                          category: isAwsAmbassadorView ? 'aws-ambassadors' : 'kiro-ambassadors',
+                          members: [],
+                          onMarkerClick: handleMarkerClick,
+                          cardOpen: false,
+                          darkMode,
+                          flyToTarget: resolvedFlyToTarget,
+                          zoomCommand,
+                        },
+                        `${isAwsAmbassadorView ? 'aws-ambassadors' : 'kiro-ambassadors'}-${globeDesign}-${darkMode}`
+                      )}
                     </div>
                   </Suspense>
                 ) : (
@@ -576,15 +609,19 @@ export default function App() {
                     fallback={renderGlobeLoading()}
                   >
                     <div key={globeDesign} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
-                      <ActiveGlobeScene
-                        category="news"
-                        members={newsMarkers}
-                        onMarkerClick={handleNewsMarkerClick}
-                        cardOpen={selectedNewsItems.length > 0}
-                        darkMode={darkMode}
-                        flyToTarget={selectedNewsFlyTarget ?? resolvedFlyToTarget}
-                        zoomCommand={zoomCommand}
-                      />
+                      {renderInteractiveScene(
+                        ActiveGlobeScene,
+                        {
+                          category: 'news',
+                          members: newsMarkers,
+                          onMarkerClick: handleNewsMarkerClick,
+                          cardOpen: selectedNewsItems.length > 0,
+                          darkMode,
+                          flyToTarget: selectedNewsFlyTarget ?? resolvedFlyToTarget,
+                          zoomCommand,
+                        },
+                        `news-${globeDesign}-${darkMode}`
+                      )}
                     </div>
                   </Suspense>
                 ) : (
@@ -770,19 +807,23 @@ export default function App() {
                   fallback={renderGlobeLoading()}
                 >
                   <div key={`${globeDesign}-${singaporeSpotlight?.nonce ?? 'global'}`} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
-                    <ActiveGlobeScene
-                      category={activeCategory}
-                      members={filteredMembers}
-                      onMarkerClick={handleMarkerClick}
-                      cardOpen={!!selectedMember}
-                      darkMode={darkMode}
-                      flyToTarget={resolvedFlyToTarget}
-                      zoomCommand={zoomCommand}
-                      singaporeSpotlight={activeCategory === 'cloud-clubs' ? {
-                        ...singaporeSpotlight,
-                        members: singaporeSpotlightMembers,
-                      } : null}
-                    />
+                    {renderInteractiveScene(
+                      ActiveGlobeScene,
+                      {
+                        category: activeCategory,
+                        members: filteredMembers,
+                        onMarkerClick: handleMarkerClick,
+                        cardOpen: !!selectedMember,
+                        darkMode,
+                        flyToTarget: resolvedFlyToTarget,
+                        zoomCommand,
+                        singaporeSpotlight: activeCategory === 'cloud-clubs' ? {
+                          ...singaporeSpotlight,
+                          members: singaporeSpotlightMembers,
+                        } : null,
+                      },
+                      `${activeCategory}-${globeDesign}-${selectedTag ?? 'all'}-${selectedCountry ?? 'all'}-${darkMode}-${singaporeSpotlight?.nonce ?? 'global'}`
+                    )}
                     {activeCategory === 'kiro-ambassadors' && !loading && <KiroAvatarOverlay />}
                   </div>
                 </Suspense>

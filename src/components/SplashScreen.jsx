@@ -77,17 +77,19 @@ function OrbitGlobe() {
   const globeRef = useRef(null);
   const rafRef = useRef(null);
   const timersRef = useRef([]);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     if (!containerRef.current) return;
     const container = containerRef.current;
+    let cancelled = false;
 
     // Load globe.gl and heroes data in parallel — both are separate lazy chunks
     Promise.all([
       import('globe.gl'),
       import('../data/heroes.json'),
     ]).then(([{ default: Globe }, { default: heroesRaw }]) => {
-      if (!containerRef.current) return;
+      if (cancelled || !containerRef.current) return;
 
       // Take a geographically spread sample, then randomize the reveal order.
       const markers = shuffled(heroesRaw
@@ -95,7 +97,15 @@ function OrbitGlobe() {
         .filter((_, i) => i % 3 === 0)
         .slice(0, SPLASH_MARKER_COUNT));
 
-      const globe = Globe()(container);
+      let globe;
+      try {
+        globe = Globe()(container);
+      } catch (error) {
+        console.warn('Splash globe failed, using static fallback.', error);
+        if (!cancelled) setFailed(true);
+        return;
+      }
+
       globe
         .backgroundColor('rgba(0,0,0,0)')
         .showAtmosphere(true)
@@ -151,9 +161,13 @@ function OrbitGlobe() {
       });
       observer.observe(container);
       globeRef.current._observer = observer;
+    }).catch((error) => {
+      console.warn('Splash globe assets failed, using static fallback.', error);
+      if (!cancelled) setFailed(true);
     });
 
     return () => {
+      cancelled = true;
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
       timersRef.current.forEach((timerId) => {
         window.clearTimeout(timerId);
@@ -165,6 +179,20 @@ function OrbitGlobe() {
       globeRef.current = null;
     };
   }, []);
+
+  if (failed) {
+    return (
+      <div
+        aria-hidden="true"
+        style={{
+          width: '100%',
+          height: '100%',
+          overflow: 'hidden',
+          background: 'radial-gradient(circle at center, rgba(55, 97, 135, 0.34), rgba(9, 17, 26, 0.08) 58%, transparent 76%)',
+        }}
+      />
+    );
+  }
 
   return (
     <div
