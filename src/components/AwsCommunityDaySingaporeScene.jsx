@@ -66,6 +66,99 @@ const BOARD_CARD_POSITIONS = [
   { left: '31%', top: '68%', rotate: '-2deg' },
   { left: '60%', top: '69%', rotate: '3deg' },
 ];
+const PHOTO_PINS_ENDPOINT = '/api/community-day-pins';
+const MAX_PHOTO_DIMENSION = 1200;
+const PHOTO_UPLOAD_QUALITY = 0.82;
+
+function normalizeStoredPin(pin) {
+  if (!pin?.id || !pin?.avatarUrl || !pin?.country) return null;
+  const lat = Number(pin.lat);
+  const lng = Number(pin.lng);
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+
+  return {
+    id: String(pin.id),
+    name: pin.name || 'AWS Community Day Singapore guest',
+    avatarUrl: pin.avatarUrl,
+    category: 'aws-community-day-singapore',
+    location: pin.location || pin.country,
+    country: pin.country,
+    lat,
+    lng,
+    createdAt: Number(pin.createdAt) || Date.now(),
+  };
+}
+
+function addOrReplacePin(currentPins, nextPin) {
+  if (currentPins.some((pin) => pin.id === nextPin.id)) {
+    return currentPins.map((pin) => (pin.id === nextPin.id ? nextPin : pin));
+  }
+  return [...currentPins, nextPin];
+}
+
+function releaseObjectUrl(url, photoUrls) {
+  if (!url || !photoUrls.has(url)) return;
+  URL.revokeObjectURL(url);
+  photoUrls.delete(url);
+}
+
+function canvasToBlob(canvas, type, quality) {
+  return new Promise((resolve) => {
+    canvas.toBlob(resolve, type, quality);
+  });
+}
+
+function loadImageElement(file) {
+  return new Promise((resolve, reject) => {
+    const imageUrl = URL.createObjectURL(file);
+    const image = new Image();
+    image.onload = () => {
+      URL.revokeObjectURL(imageUrl);
+      resolve(image);
+    };
+    image.onerror = () => {
+      URL.revokeObjectURL(imageUrl);
+      reject(new Error('Unable to read image'));
+    };
+    image.src = imageUrl;
+  });
+}
+
+async function loadImageSource(file) {
+  if ('createImageBitmap' in window) {
+    try {
+      return createImageBitmap(file, { imageOrientation: 'from-image' });
+    } catch {
+      // Fall through to the image element path for formats unsupported by createImageBitmap.
+    }
+  }
+
+  return loadImageElement(file);
+}
+
+async function compressPhotoForUpload(file) {
+  const image = await loadImageSource(file);
+  const sourceWidth = image.width;
+  const sourceHeight = image.height;
+  const scale = Math.min(1, MAX_PHOTO_DIMENSION / Math.max(sourceWidth, sourceHeight));
+  const width = Math.max(1, Math.round(sourceWidth * scale));
+  const height = Math.max(1, Math.round(sourceHeight * scale));
+  const canvas = document.createElement('canvas');
+
+  canvas.width = width;
+  canvas.height = height;
+  const context = canvas.getContext('2d', { alpha: false });
+  if (!context) throw new Error('Unable to prepare image canvas');
+  context.drawImage(image, 0, 0, width, height);
+  image.close?.();
+
+  const webpBlob = await canvasToBlob(canvas, 'image/webp', PHOTO_UPLOAD_QUALITY);
+  const jpegBlob = webpBlob || await canvasToBlob(canvas, 'image/jpeg', 0.88);
+  if (!jpegBlob) throw new Error('Unable to prepare image');
+
+  const extension = jpegBlob.type === 'image/webp' ? 'webp' : 'jpg';
+  return new File([jpegBlob], `community-day-photo.${extension}`, { type: jpegBlob.type });
+}
 
 function createPhotoId() {
   return globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(16).slice(2)}`;
@@ -95,12 +188,55 @@ export default function AwsCommunityDaySingaporeScene({ darkMode }) {
   const [boardCountry, setBoardCountry] = useState(null);
   const [latestPinId, setLatestPinId] = useState(null);
   const [focusTarget, setFocusTarget] = useState(null);
+  const [photoStatus, setPhotoStatus] = useState('loading');
+  const [photoError, setPhotoError] = useState(null);
+  const [savingPhoto, setSavingPhoto] = useState(false);
 
   useEffect(() => {
     const photoUrls = photoUrlsRef.current;
     return () => {
       photoUrls.forEach((url) => URL.revokeObjectURL(url));
       photoUrls.clear();
+    };
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadPhotoPins() {
+      setPhotoStatus('loading');
+      try {
+        const response = await fetch(PHOTO_PINS_ENDPOINT, {
+          cache: 'no-store',
+          headers: { Accept: 'application/json' },
+        });
+        const contentType = response.headers.get('content-type') || '';
+        if (!response.ok || !contentType.includes('application/json')) {
+          throw new Error('Photo pin API unavailable');
+        }
+
+        const data = await response.json();
+        const nextPins = Array.isArray(data.pins)
+          ? data.pins.map(normalizeStoredPin).filter(Boolean)
+          : [];
+
+        if (!cancelled) {
+          setPhotoPins(nextPins);
+          setPhotoStatus('ready');
+          setPhotoError(null);
+        }
+      } catch (error) {
+        console.warn('Using local-only photo pins', error);
+        if (!cancelled) {
+          setPhotoStatus('local');
+          setPhotoError('Local preview; deployed site saves photos');
+        }
+      }
+    }
+
+    loadPhotoPins();
+    return () => {
+      cancelled = true;
     };
   }, []);
 
@@ -114,28 +250,71 @@ export default function AwsCommunityDaySingaporeScene({ darkMode }) {
     return focusTarget;
   }, [focusTarget]);
 
-  function pinDraftPhoto(countryName) {
-    const location = COUNTRY_LOCATIONS.find((country) => country.name === countryName);
-    if (!draftPhoto || !location) return;
-
-    const nextPin = {
+  function createPinFromDraft(countryName, location, avatarUrl, createdAt = Date.now()) {
+    if (!draftPhoto) return null;
+    return {
       id: draftPhoto.id,
       name: 'AWS Community Day Singapore guest',
-      avatarUrl: draftPhoto.url,
+      avatarUrl,
       category: 'aws-community-day-singapore',
       location: location.name,
       country: location.name,
       lat: location.lat,
       lng: location.lng,
-      createdAt: Date.now(),
+      createdAt,
     };
+  }
 
-    setPhotoPins((currentPins) => {
-      if (currentPins.some((pin) => pin.id === nextPin.id)) {
-        return currentPins.map((pin) => (pin.id === nextPin.id ? nextPin : pin));
-      }
-      return [...currentPins, nextPin];
+  async function savePhotoPin(countryName, location) {
+    const file = await compressPhotoForUpload(draftPhoto.file);
+    const formData = new FormData();
+    formData.set('id', draftPhoto.id);
+    formData.set('country', countryName);
+    formData.set('lat', String(location.lat));
+    formData.set('lng', String(location.lng));
+    formData.set('file', file);
+
+    const response = await fetch(PHOTO_PINS_ENDPOINT, {
+      method: 'POST',
+      body: formData,
+      headers: { Accept: 'application/json' },
     });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(data.error || 'Unable to save photo');
+    }
+
+    const savedPin = normalizeStoredPin(data.pin);
+    if (!savedPin) throw new Error('Saved photo response was incomplete');
+
+    return savedPin;
+  }
+
+  async function pinDraftPhoto(countryName) {
+    const location = COUNTRY_LOCATIONS.find((country) => country.name === countryName);
+    if (!draftPhoto || !location || savingPhoto) return;
+
+    setSavingPhoto(true);
+    setPhotoError(null);
+
+    let nextPin;
+    try {
+      nextPin = await savePhotoPin(countryName, location);
+      releaseObjectUrl(draftPhoto.url, photoUrlsRef.current);
+      setPhotoStatus('ready');
+    } catch (error) {
+      console.warn('Saving photo pin locally only', error);
+      nextPin = createPinFromDraft(countryName, location, draftPhoto.url);
+      setPhotoStatus('local');
+      setPhotoError('Saved locally only; Blob upload unavailable');
+    }
+
+    if (!nextPin) {
+      setSavingPhoto(false);
+      return;
+    }
+
+    setPhotoPins((currentPins) => addOrReplacePin(currentPins, nextPin));
     setLatestPinId(nextPin.id);
     setFocusTarget({
       lat: location.lat,
@@ -144,6 +323,7 @@ export default function AwsCommunityDaySingaporeScene({ darkMode }) {
     });
     setDraftPhoto(null);
     setSelectedCountry(null);
+    setSavingPhoto(false);
   }
 
   function handlePhotoChange(event) {
@@ -159,11 +339,13 @@ export default function AwsCommunityDaySingaporeScene({ darkMode }) {
       photoUrlsRef.current.delete(draftPhoto.url);
     }
 
-    setDraftPhoto({ id: createPhotoId(), url: nextUrl });
+    setDraftPhoto({ id: createPhotoId(), url: nextUrl, file });
     setSelectedCountry(null);
+    setPhotoError(null);
   }
 
   function resetPhoto() {
+    if (savingPhoto) return;
     if (draftPhoto) {
       URL.revokeObjectURL(draftPhoto.url);
       photoUrlsRef.current.delete(draftPhoto.url);
@@ -173,17 +355,19 @@ export default function AwsCommunityDaySingaporeScene({ darkMode }) {
   }
 
   function openPhotoPicker() {
+    if (savingPhoto) return;
     fileInputRef.current?.click();
   }
 
   function handleCountryChange(countryName) {
+    if (savingPhoto) return;
     if (!countryName) {
       setSelectedCountry(null);
       return;
     }
 
     setSelectedCountry(countryName);
-    pinDraftPhoto(countryName);
+    void pinDraftPhoto(countryName);
   }
 
   function openCountryBoard(payload) {
@@ -195,13 +379,15 @@ export default function AwsCommunityDaySingaporeScene({ darkMode }) {
   const panelBorder = darkMode ? 'rgba(76, 109, 138, 0.45)' : 'rgba(160, 187, 212, 0.85)';
   const textColor = darkMode ? '#F7FBFF' : '#0F1923';
   const mutedColor = darkMode ? '#9AAEC0' : '#5C748B';
-  const statusText = draftPhoto && selectedCountry
-    ? `Pinned in ${selectedCountry}`
-    : draftPhoto
-      ? 'Choose country to pin photo'
-      : photoPins.length
-        ? `${photoPins.length} ${photoPins.length === 1 ? 'card' : 'cards'} pinned`
-      : '2026 community photo globe';
+  const statusText = (() => {
+    if (savingPhoto) return 'Saving photo to the globe';
+    if (photoStatus === 'loading') return 'Loading community cards';
+    if (photoError) return photoError;
+    if (draftPhoto && selectedCountry) return `Pinned in ${selectedCountry}`;
+    if (draftPhoto) return 'Choose country to pin photo';
+    if (photoPins.length) return `${photoPins.length} ${photoPins.length === 1 ? 'card' : 'cards'} pinned`;
+    return '2026 community photo globe';
+  })();
   const globeProps = {
     category: 'aws-community-day-singapore',
     members: photoPins,
@@ -390,10 +576,15 @@ export default function AwsCommunityDaySingaporeScene({ darkMode }) {
           <button
             type="button"
             onClick={openPhotoPicker}
-            className="inline-flex min-h-11 cursor-pointer items-center justify-center rounded-full px-5 text-xs font-bold"
-            style={{ color: '#0F1923', background: '#FF9900', border: '1px solid #FF9900' }}
+            disabled={savingPhoto}
+            className="inline-flex min-h-11 cursor-pointer items-center justify-center rounded-full px-5 text-xs font-bold disabled:cursor-wait"
+            style={{
+              color: '#0F1923',
+              background: savingPhoto ? 'rgba(255, 153, 0, 0.62)' : '#FF9900',
+              border: '1px solid #FF9900',
+            }}
           >
-            {draftPhoto ? 'Retake Photo' : photoPins.length ? 'Take Photo Again' : 'Take Photo'}
+            {savingPhoto ? 'Saving Photo' : draftPhoto ? 'Retake Photo' : photoPins.length ? 'Take Photo Again' : 'Take Photo'}
           </button>
           <input
             ref={fileInputRef}
@@ -430,6 +621,7 @@ export default function AwsCommunityDaySingaporeScene({ darkMode }) {
             <button
               type="button"
               onClick={resetPhoto}
+              disabled={savingPhoto}
               className="min-h-11 rounded-full px-4 text-xs font-semibold"
               style={{ color: textColor, background: 'transparent', border: `1px solid ${panelBorder}` }}
             >
