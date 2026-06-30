@@ -627,7 +627,11 @@ export default function MapboxGlobeScene({
         </div>
       ) : (
         <>
-          <div ref={containerRef} className="absolute inset-0 z-10 h-full w-full" />
+          <div
+            ref={containerRef}
+            className="absolute inset-0 z-10 h-full w-full"
+            style={{ touchAction: 'none', overscrollBehavior: 'none' }}
+          />
           <div ref={overlayRef} className="pointer-events-none absolute inset-0 z-20" />
         </>
       )}

@@ -420,8 +420,8 @@ export default function ProfileCard({ member, onClose, darkMode }) {
       }
     }
 
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => document.removeEventListener('mousedown', handleOutsideClick);
+    document.addEventListener('pointerdown', handleOutsideClick);
+    return () => document.removeEventListener('pointerdown', handleOutsideClick);
   }, [onClose]);
 
   return (

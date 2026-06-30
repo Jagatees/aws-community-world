@@ -251,6 +251,8 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
           onPointerUp={finishPan}
           onPointerCancel={finishPan}
           style={{
+            touchAction: 'none',
+            overscrollBehavior: 'none',
             background: panelBg,
             border: `1px solid ${panelBorder}`,
             boxShadow: darkMode ? '0 28px 70px rgba(0, 0, 0, 0.38)' : '0 24px 60px rgba(86, 116, 145, 0.16)',

@@ -25,6 +25,7 @@ const BASE_SCALE = 0.95;
 const MIN_SCALE = 0.8;
 const MAX_SCALE = 1.85;
 const WHEEL_ZOOM_SENSITIVITY = 0.0009;
+const PINCH_MIN_DISTANCE = 24;
 
 function clusterMembers(members) {
   const clusters = [];
@@ -62,6 +63,11 @@ function getResponsiveScale(scale, width, height) {
       : 1;
 
   return scale * landscapeFactor;
+}
+
+function getPointerDistance(pointers) {
+  if (pointers.length < 2) return 0;
+  return Math.hypot(pointers[0].clientX - pointers[1].clientX, pointers[0].clientY - pointers[1].clientY);
 }
 
 function hexToRgb01(hex) {
@@ -151,11 +157,15 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     active: false,
     moved: false,
     pointerId: null,
+    mode: 'drag',
     startX: 0,
     startY: 0,
     startPhi: 0,
     startTheta: 0,
+    startDistance: 0,
+    startScale: BASE_SCALE,
   });
+  const activePointersRef = useRef(new Map());
 
   const markerColor = CATEGORY_COLORS[category] ?? '#FF9900';
   const markerRgb = useMemo(() => hexToRgb01(markerColor), [markerColor]);
@@ -331,6 +341,48 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     };
   }
 
+  function getActivePointers() {
+    return [...activePointersRef.current.values()];
+  }
+
+  function beginPinchZoom() {
+    const distance = getPointerDistance(getActivePointers());
+    if (distance < PINCH_MIN_DISTANCE) return;
+
+    pointerStateRef.current = {
+      ...pointerStateRef.current,
+      active: true,
+      moved: true,
+      pointerId: null,
+      mode: 'pinch',
+      startDistance: distance,
+      startScale: scaleRef.current,
+    };
+  }
+
+  function resumeDragFromRemainingPointer() {
+    const [remainingPointer] = activePointersRef.current.entries();
+    if (!remainingPointer) {
+      pointerStateRef.current.active = false;
+      pointerStateRef.current.pointerId = null;
+      return;
+    }
+
+    const [pointerId, pointer] = remainingPointer;
+    pointerStateRef.current = {
+      active: true,
+      moved: true,
+      pointerId,
+      mode: 'drag',
+      startX: pointer.clientX,
+      startY: pointer.clientY,
+      startPhi: phiRef.current,
+      startTheta: thetaRef.current,
+      startDistance: 0,
+      startScale: scaleRef.current,
+    };
+  }
+
   function findHitMarker(event) {
     if (!canvasRef.current) return null;
 
@@ -347,14 +399,31 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   }
 
   function handlePointerDown(event) {
+    event.preventDefault();
+    activePointersRef.current.set(event.pointerId, {
+      clientX: event.clientX,
+      clientY: event.clientY,
+    });
+
+    if (activePointersRef.current.size >= 2) {
+      beginPinchZoom();
+      animationRef.current = null;
+      markActiveInteraction();
+      event.currentTarget.setPointerCapture(event.pointerId);
+      return;
+    }
+
     pointerStateRef.current = {
       active: true,
       moved: false,
       pointerId: event.pointerId,
+      mode: 'drag',
       startX: event.clientX,
       startY: event.clientY,
       startPhi: phiRef.current,
       startTheta: thetaRef.current,
+      startDistance: 0,
+      startScale: scaleRef.current,
     };
     animationRef.current = null;
     markActiveInteraction();
@@ -362,6 +431,13 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   }
 
   function handlePointerMove(event) {
+    if (activePointersRef.current.has(event.pointerId)) {
+      activePointersRef.current.set(event.pointerId, {
+        clientX: event.clientX,
+        clientY: event.clientY,
+      });
+    }
+
     const hitMarker = findHitMarker(event);
     isHoveringMarkerRef.current = !!hitMarker;
     event.currentTarget.style.cursor = pointerStateRef.current.active
@@ -370,7 +446,28 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         ? 'pointer'
         : 'grab';
 
-    if (!pointerStateRef.current.active || pointerStateRef.current.pointerId !== event.pointerId) return;
+    if (!pointerStateRef.current.active) return;
+
+    event.preventDefault();
+
+    if (activePointersRef.current.size >= 2 || pointerStateRef.current.mode === 'pinch') {
+      if (pointerStateRef.current.mode !== 'pinch') {
+        beginPinchZoom();
+      }
+
+      const distance = getPointerDistance(getActivePointers());
+      if (distance >= PINCH_MIN_DISTANCE && pointerStateRef.current.startDistance >= PINCH_MIN_DISTANCE) {
+        scaleRef.current = clamp(
+          pointerStateRef.current.startScale * (distance / pointerStateRef.current.startDistance),
+          MIN_SCALE,
+          MAX_SCALE
+        );
+        markActiveInteraction();
+      }
+      return;
+    }
+
+    if (pointerStateRef.current.pointerId !== event.pointerId) return;
 
     const deltaX = event.clientX - pointerStateRef.current.startX;
     const deltaY = event.clientY - pointerStateRef.current.startY;
@@ -391,14 +488,25 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   }
 
   function finishPointerInteraction(event, { allowClick }) {
+    if (!activePointersRef.current.has(event.pointerId) && pointerStateRef.current.pointerId !== event.pointerId) return;
+
+    const wasPinch = pointerStateRef.current.mode === 'pinch' || activePointersRef.current.size > 1;
+    activePointersRef.current.delete(event.pointerId);
+
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+
+    if (wasPinch) {
+      resumeDragFromRemainingPointer();
+      return;
+    }
+
     if (pointerStateRef.current.pointerId !== event.pointerId) return;
 
     const wasDrag = pointerStateRef.current.moved;
     pointerStateRef.current.active = false;
     pointerStateRef.current.pointerId = null;
-    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
-      event.currentTarget.releasePointerCapture(event.pointerId);
-    }
 
     if (!allowClick || wasDrag) return;
 
@@ -426,6 +534,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
 
   function handlePointerLeave(event) {
     if (pointerStateRef.current.active) return;
+    activePointersRef.current.delete(event.pointerId);
     isHoveringMarkerRef.current = false;
     event.currentTarget.style.cursor = 'grab';
   }
@@ -439,7 +548,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       <canvas
         ref={canvasRef}
         className="relative z-10 w-full h-full"
-        style={{ touchAction: 'none', cursor: 'grab' }}
+        style={{ touchAction: 'none', overscrollBehavior: 'none', cursor: 'grab' }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}

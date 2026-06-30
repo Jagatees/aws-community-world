@@ -263,6 +263,12 @@ export default function App() {
       backgroundColor: active ? '#FF9900' : 'transparent',
       color: active ? '#0F1923' : styleControlText,
       cursor: 'pointer',
+      minWidth: '52px',
+      minHeight: '44px',
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      touchAction: 'manipulation',
     };
   }
 
@@ -652,12 +658,13 @@ export default function App() {
                           className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
                           style={{
                             color: styleControlText,
-                            minWidth: '2.5rem',
-                            minHeight: '2.1rem',
+                            minWidth: '44px',
+                            minHeight: '44px',
                             display: 'inline-flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             cursor: 'pointer',
+                            touchAction: 'manipulation',
                           }}
                           aria-label={`Zoom ${dir}`}
                         >
@@ -675,10 +682,11 @@ export default function App() {
                       style={{
                         backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
                         color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
-                        minHeight: '2.1rem',
+                        minHeight: '44px',
                         border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
                         transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
                         cursor: nearMeLoading ? 'wait' : 'pointer',
+                        touchAction: 'manipulation',
                       }}
                       aria-label="Near me"
                     >
@@ -955,12 +963,13 @@ export default function App() {
                           className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
                           style={{
                             color: styleControlText,
-                            minWidth: '2.5rem',
-                            minHeight: '2.1rem',
+                            minWidth: '44px',
+                            minHeight: '44px',
                             display: 'inline-flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             cursor: 'pointer',
+                            touchAction: 'manipulation',
                           }}
                           aria-label="Zoom out"
                         >
@@ -972,12 +981,13 @@ export default function App() {
                           className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
                           style={{
                             color: styleControlText,
-                            minWidth: '2.5rem',
-                            minHeight: '2.1rem',
+                            minWidth: '44px',
+                            minHeight: '44px',
                             display: 'inline-flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             cursor: 'pointer',
+                            touchAction: 'manipulation',
                           }}
                           aria-label="Zoom in"
                         >
@@ -994,10 +1004,11 @@ export default function App() {
                         style={{
                           backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
                           color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
-                          minHeight: '2.1rem',
+                          minHeight: '44px',
                           border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
                           transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
                           cursor: nearMeLoading ? 'wait' : 'pointer',
+                          touchAction: 'manipulation',
                         }}
                         aria-label="Near me"
                       >
@@ -1014,10 +1025,11 @@ export default function App() {
                       style={{
                         backgroundColor: singaporeSpotlight ? '#BF0816' : 'transparent',
                         color: singaporeSpotlight ? '#FFFFFF' : styleControlText,
-                        minHeight: '2.1rem',
+                        minHeight: '44px',
                         border: `1px solid ${singaporeSpotlight ? '#BF0816' : styleControlBorder}`,
                         transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
                         cursor: 'pointer',
+                        touchAction: 'manipulation',
                       }}
                       aria-label="Singapore 3D spotlight"
                     >

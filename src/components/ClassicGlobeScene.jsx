@@ -198,6 +198,8 @@ export default function ClassicGlobeScene({
   useEffect(() => {
     if (!containerRef.current) return;
     const container = containerRef.current;
+    container.style.touchAction = 'none';
+    container.style.overscrollBehavior = 'none';
 
     const globe = Globe()(container);
     globe
@@ -205,8 +207,8 @@ export default function ClassicGlobeScene({
       .showAtmosphere(true)
       .atmosphereColor('#4a90d9')
       .atmosphereAltitude(0.15)
-      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
-      .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+      .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+      .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
       .showGraticules(false)
       .pointOfView({ lat: 20, lng: 0, altitude: 2.5 });
 
@@ -224,6 +226,11 @@ export default function ClassicGlobeScene({
 
     // Keep the CSS2D avatar overlay below app popups/cards.
     requestAnimationFrame(() => {
+      const canvas = container.querySelector('canvas');
+      if (canvas) {
+        canvas.style.touchAction = 'none';
+        canvas.style.overscrollBehavior = 'none';
+      }
       const overlayLayers = container.querySelectorAll('div[style*="pointer-events: none"]');
       overlayLayers.forEach((layer) => {
         layer.style.zIndex = '1';
