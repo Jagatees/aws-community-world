@@ -58,6 +58,16 @@ Then open:
 http://localhost:5173
 ```
 
+No environment file or AWS credentials are required to run the app. The default 3D globe works without additional configuration.
+
+The Satellite and Flat map views optionally use Mapbox. To enable them, copy `.env.example` to `.env.local` and add your own public Mapbox token:
+
+```env
+VITE_MAP_BOX=pk.your_mapbox_public_token_here
+```
+
+Keep `.env.local` private; it is ignored by Git.
+
 ## Available Scripts
 
 - `npm run dev` starts the local development server

@@ -40,7 +40,6 @@ graph TD
 - Leaflet / custom canvas — flat map scene
 - Tailwind CSS — utility-first styling
 - Static JSON — community data with lat/lng coordinates
-- AWS RUM — real user monitoring
 
 ---
 

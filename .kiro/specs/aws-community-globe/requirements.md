@@ -90,4 +90,3 @@ An interactive 3D globe web application that visualises the global AWS Builder c
 
 - **11.1** Globe scenes shall be lazy-loaded to reduce initial bundle size.
 - **11.2** Members with `lat: 0, lng: 0` shall be excluded from globe rendering.
-- **11.3** AWS RUM (Real User Monitoring) shall be initialised for performance tracking.

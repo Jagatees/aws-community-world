@@ -5,7 +5,6 @@
 - [x] 1. Project scaffold
   - Vite + React 18, Tailwind CSS, AWS color tokens configured
   - `index.html` with dark background and root mount point
-  - AWS RUM initialised in `src/awsRum.js`
 
 - [x] 2. Data layer
   - `src/types.js` — `Member`, `CategoryKey`, `NewsItem`, `NewsData` types
