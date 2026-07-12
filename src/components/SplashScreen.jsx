@@ -1,14 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
+import heroes from '../data/heroes.json';
+import communityBuilders from '../data/community-builders.json';
+import userGroups from '../data/user-groups.json';
+import studentBuilderGroups from '../data/cloud-clubs.json';
+import kiroAmbassadors from '../data/kiro-ambassadors.json';
 
 const STATS = [
-  { label: 'Heroes', count: 253, color: '#FF9900' },
-  { label: 'Community Builders', count: 3034, color: '#1A9C3E' },
-  { label: 'User Groups', count: 575, color: '#00A1C9' },
-  { label: 'Student Builder Groups', count: 895, color: '#BF0816' },
-  { label: 'Kiro Ambassadors', count: 2, color: '#8B5CF6' },
+  { label: 'Heroes', count: heroes.length, color: '#FF9900' },
+  { label: 'Community Builders', count: communityBuilders.length, color: '#1A9C3E' },
+  { label: 'User Groups', count: userGroups.length, color: '#00A1C9' },
+  { label: 'Student Builder Groups', count: studentBuilderGroups.length, color: '#BF0816' },
+  { label: 'Kiro Ambassadors', count: kiroAmbassadors.length, color: '#8B5CF6' },
 ];
 
-const TOTAL = 4759;
+const TOTAL = STATS.reduce((sum, stat) => sum + stat.count, 0);
 const SPLASH_GLOBE_ROTATION_SPEED = 0.035;
 const SPLASH_MARKER_COUNT = 80;
 

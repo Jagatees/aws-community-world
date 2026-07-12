@@ -1,4 +1,5 @@
 import { createHash } from 'crypto';
+import { execFileSync } from 'child_process';
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
@@ -24,6 +25,8 @@ const ONLY = new Set(
     .filter(Boolean),
 );
 const MAX_LOAD_CLICKS = Number.parseInt(process.env.COMMUNITY_DATA_MAX_LOAD_CLICKS || '200', 10);
+const BASELINE_REF = process.env.COMMUNITY_DATA_BASELINE_REF || '';
+const INFER_BUILDER_LOCATIONS = process.env.COMMUNITY_DATA_INFER_BUILDER_LOCATIONS === '1';
 
 const geoCache = existsSync(GEO_CACHE_FILE)
   ? JSON.parse(readFileSync(GEO_CACHE_FILE, 'utf8'))
@@ -41,6 +44,21 @@ function readJson(filePath, fallback = []) {
   } catch (error) {
     console.warn(`Could not read ${filePath}: ${error.message}`);
     return fallback;
+  }
+}
+
+function readBaselineJson(fileName) {
+  if (!BASELINE_REF) return readJson(join(DATA_DIR, fileName));
+
+  try {
+    const contents = execFileSync(
+      'git',
+      ['show', `${BASELINE_REF}:src/data/${fileName}`],
+      { cwd: ROOT, encoding: 'utf8', maxBuffer: 20 * 1024 * 1024 },
+    );
+    return JSON.parse(contents.replace(/^\uFEFF/, ''));
+  } catch (error) {
+    throw new Error(`Could not read ${fileName} from baseline ${BASELINE_REF}: ${error.message}`);
   }
 }
 
@@ -153,11 +171,9 @@ async function loadAll(page, itemSelector) {
 
     await button.scrollIntoViewIfNeeded();
     await button.click();
-    await page.waitForTimeout(1_000);
     await page.waitForFunction(
-      (selector, count) => document.querySelectorAll(selector).length > count,
-      itemSelector,
-      previousCount,
+      ({ selector, count }) => document.querySelectorAll(selector).length > count,
+      { selector: itemSelector, count: previousCount },
       { timeout: 15_000 },
     ).catch(() => {});
 
@@ -207,6 +223,11 @@ function locationKey(record) {
     normalizedLookupValue(record?.name),
     normalizedLookupValue(record?.location),
   ].join('|');
+}
+
+function findPrevious(record, existingByPrimaryKey, existingByNameLocation, primaryKey) {
+  return existingByPrimaryKey.get(record[primaryKey])
+    || existingByNameLocation.get(locationKey(record));
 }
 
 function mergeCoordinates(records, existingRecords, key) {
@@ -261,15 +282,17 @@ async function scrapeHeroes(page) {
     ).sort((a, b) => a.name.localeCompare(b.name));
   });
 
-  const existing = readJson(join(DATA_DIR, 'heroes.json'));
+  const existing = readBaselineJson('heroes.json');
   const existingMap = existingBy(existing, 'hero_page_url');
+  const existingByNameLocation = new Map(existing.map((hero) => [locationKey(hero), hero]));
   const withCoordinates = await addCoordinates(mergeCoordinates(rawHeroes, existing, 'hero_page_url'));
   const heroes = withCoordinates.map((hero) => {
-    const previous = existingMap.get(hero.hero_page_url);
+    const previous = findPrevious(hero, existingMap, existingByNameLocation, 'hero_page_url');
     return {
+      ...previous,
       id: previous?.id || stableId(hero.hero_page_url),
       ...hero,
-      isNew: Boolean(previous?.isNew) || !previous,
+      isNew: !previous,
     };
   });
   if (!DRY_RUN && heroes.length < 50) throw new Error(`Heroes scrape returned only ${heroes.length} records`);
@@ -315,9 +338,16 @@ async function scrapeCommunityBuilders(page) {
     ).sort((a, b) => a.name.localeCompare(b.name));
   });
 
-  const rawBuilders = await enrichBuilderLocationsFromFilter(page, scrapedBuilders);
-  const existing = readJson(join(DATA_DIR, 'community-builders.json'));
+  const existing = readBaselineJson('community-builders.json');
   const existingMap = existingBy(existing, 'profileUrl');
+  const buildersWithKnownLocations = scrapedBuilders.map((builder) => ({
+    ...builder,
+    location: builder.location || existingMap.get(builder.profile_url)?.location || '',
+  }));
+  const rawBuilders = INFER_BUILDER_LOCATIONS
+    ? await enrichBuilderLocationsFromFilter(page, buildersWithKnownLocations)
+    : buildersWithKnownLocations;
+  const existingByNameLocation = new Map(existing.map((builder) => [locationKey(builder), builder]));
   const withCoordinates = await addCoordinates(
     mergeCoordinates(rawBuilders, existing.map((builder) => ({
       ...builder,
@@ -326,8 +356,10 @@ async function scrapeCommunityBuilders(page) {
   );
 
   const builders = withCoordinates.map((builder) => {
-    const previous = existingMap.get(builder.profile_url);
+    const previous = existingMap.get(builder.profile_url)
+      || existingByNameLocation.get(locationKey(builder));
     return {
+      ...previous,
       id: previous?.id || stableId(builder.profile_url),
       name: builder.name,
       avatarUrl: builder.image_url,
@@ -339,7 +371,7 @@ async function scrapeCommunityBuilders(page) {
       profileUrl: builder.profile_url,
       lat: builder.lat,
       lng: builder.lng,
-      isNew: Boolean(previous?.isNew) || !previous,
+      isNew: !previous,
     };
   });
 
@@ -398,8 +430,12 @@ async function getVisibleBuilderProfiles(page) {
 }
 
 async function enrichBuilderLocationsFromFilter(page, builders) {
-  const missingCount = builders.filter((builder) => !builder.location).length;
-  if (missingCount === 0) return builders;
+  const unresolvedProfiles = new Set(
+    builders.filter((builder) => !builder.location).map((builder) => builder.profile_url),
+  );
+  if (unresolvedProfiles.size === 0) return builders;
+
+  console.log(` Resolving ${unresolvedProfiles.size} missing Builder locations from the location filter...`);
 
   const locationButton = await getLocationFilterButton(page);
   await locationButton.click();
@@ -417,8 +453,17 @@ async function enrichBuilderLocationsFromFilter(page, builders) {
 
     const visibleBuilders = await getVisibleBuilderProfiles(page);
     for (const builder of visibleBuilders) {
-      inferredLocations.set(builder.profile_url, location);
+      if (unresolvedProfiles.has(builder.profile_url)) {
+        inferredLocations.set(builder.profile_url, location);
+        unresolvedProfiles.delete(builder.profile_url);
+      }
     }
+
+    if (unresolvedProfiles.size === 0) break;
+  }
+
+  if (unresolvedProfiles.size > 0) {
+    console.warn(`Could not infer locations for ${unresolvedProfiles.size} Community Builders.`);
   }
 
   return builders.map((builder) => ({
@@ -511,13 +556,14 @@ async function scrapeUserGroups(page) {
   await gotoDirectoryPage(page, PAGES.userGroups, 'a[href]');
 
   const rawGroups = await page.evaluate(extractDirectoryGroups, 'user');
-  const existing = readJson(join(DATA_DIR, 'user-groups.json'));
+  const existing = readBaselineJson('user-groups.json');
   const existingMap = existingBy(existing, 'joinUrl');
   const existingByNameLocation = new Map(existing.map((group) => [locationKey(group), group]));
   const withCoordinates = await addCoordinates(mergeCoordinates(rawGroups, existing, 'joinUrl'));
   const groups = withCoordinates.map((group) => {
     const previous = existingMap.get(group.joinUrl) || existingByNameLocation.get(locationKey(group));
     return {
+      ...previous,
       id: previous?.id || stableId(group.joinUrl),
       name: group.name,
       avatarUrl: '',
@@ -527,7 +573,7 @@ async function scrapeUserGroups(page) {
       profileUrl: group.profileUrl,
       lat: group.lat,
       lng: group.lng,
-      isNew: Boolean(previous?.isNew) || !previous,
+      isNew: !previous,
     };
   });
 
@@ -540,13 +586,14 @@ async function scrapeStudentBuilderGroups(page) {
   await gotoDirectoryPage(page, PAGES.studentBuilderGroups, 'a[href]');
 
   const rawGroups = await page.evaluate(extractDirectoryGroups, 'student');
-  const existing = readJson(join(DATA_DIR, 'cloud-clubs.json'));
+  const existing = readBaselineJson('cloud-clubs.json');
   const existingMap = existingBy(existing, 'joinUrl');
   const existingByNameLocation = new Map(existing.map((group) => [locationKey(group), group]));
   const withCoordinates = await addCoordinates(mergeCoordinates(rawGroups, existing, 'joinUrl'));
   const groups = withCoordinates.map((group) => {
     const previous = existingMap.get(group.joinUrl) || existingByNameLocation.get(locationKey(group));
     return {
+      ...previous,
       id: previous?.id || stableId(group.joinUrl),
       name: group.name,
       avatarUrl: '',
@@ -554,10 +601,10 @@ async function scrapeStudentBuilderGroups(page) {
       location: group.location,
       joinUrl: group.joinUrl,
       profileUrl: group.profileUrl,
-      ledBy: group.ledBy,
+      ledBy: previous?.ledBy?.length ? previous.ledBy : group.ledBy,
       lat: group.lat,
       lng: group.lng,
-      isNew: Boolean(previous?.isNew) || !previous,
+      isNew: !previous,
     };
   });
 
