@@ -1,407 +1,209 @@
 {
-  "updatedAt": "2026-07-12T04:23:41.901Z",
+  "updatedAt": "2026-07-13T04:28:51.302Z",
   "latest": [
     {
-      "id": "/content/3GNzLkyg6VGZQUSfTZeLNhjJAdF",
-      "title": "[Experiment] Three Ways to Connect AWS Tokyo and Osaka over a Closed Network — How Much Does Speed Actually Differ?",
-      "description": "I built VPC Peering, Transit Gateway, and PrivateLink between Tokyo and Osaka on real AWS infrastructure and measured latency and throughput with actual numbers. The fastest method for latency isn't the fastest for throughput — and getting a clean measurement turned out to be its own battle.",
-      "url": "https://builder.aws.com/content/3GNzLkyg6VGZQUSfTZeLNhjJAdF",
+      "id": "/content/3GQoE1tQUH0YecOfWNdCZBa6fu7",
+      "title": "Hello Builder Center",
+      "description": "First Article",
+      "url": "https://builder.aws.com/content/3GQoE1tQUH0YecOfWNdCZBa6fu7",
       "imageUrl": "",
-      "authorName": "Shintaro Fukatsu",
-      "authorAlias": "shintarofukatsu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wDRnO2uhsKG2k29wlqqFRuDUMt.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "multi-region",
-        "vpc",
-        "aws-transit-gateway",
-        "aws-private-link"
-      ],
-      "publishedAt": "2026-07-12T04:22:12.232Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GO2KBs4ASYgUZpZ0GN0M8AT8SN",
-      "title": "Weekend Productivity Challenge: Dv8tionAI",
-      "description": "Dv8tionAI turns messy notes, files, and task lists into an explainable AI-ranked execution plan using Amazon Bedrock and a serverless AWS architecture.",
-      "url": "https://builder.aws.com/content/3GO2KBs4ASYgUZpZ0GN0M8AT8SN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GO52Q8fZ4vHEcqHZzK8dUYABjM/05-a.webp",
-      "authorName": "Dustin Voyles",
-      "authorAlias": "dvoyles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GO28p5mOV4jZyDlZt84Hclr8GD.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "productivity"
-      ],
-      "publishedAt": "2026-07-12T04:14:00.968Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3AuwQrf4wn8WjdpFdXEY1DDgsyr",
-      "title": "Weekend Productivity Challenge: ROJAI — Building an AI Marketplace Assistant with Amazon Bedrock, AWS Amplify, and Kiro",
-      "description": "While launching my own e-commerce business, I realized that writing marketplace listings was consuming more time than growing the business itself. I built ROJAI, an AI-powered marketplace assistant using Amazon Bedrock, AWS Lambda, API Gateway, AWS Amplify, and Kiro to automate one of the most repetitive tasks for online sellers.",
-      "url": "https://builder.aws.com/content/3AuwQrf4wn8WjdpFdXEY1DDgsyr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GO5aol4UQGp6xVA71xgzLeZ5xw/RojA.webp",
-      "authorName": "Akin",
-      "authorAlias": "arslakin",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "productivity",
-        "amazon-bedrock",
-        "kiro",
-        "aws-lambda",
-        "aws-amplify"
-      ],
-      "publishedAt": "2026-07-12T04:07:39.793Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GNzo3liAI8XTuC601YGoTlXYPi",
-      "title": "Weekend Productivity Challenge: Backlog Task Prioritizer",
-      "description": "A serverless bot that scans my Backlog issues every morning, scores them by urgency × impact with Amazon Bedrock (Nova 2 Lite), and posts my top 5 priorities—each with a concrete next action—to chat.",
-      "url": "https://builder.aws.com/content/3GNzo3liAI8XTuC601YGoTlXYPi",
-      "imageUrl": "",
-      "authorName": "Tetsuya Shibao",
-      "authorAlias": "midnight480",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35rVmy70UMGI2UTLdg7NbvwJTPa.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "productivity",
-        "aws-lambda",
-        "amazon-nova"
-      ],
-      "publishedAt": "2026-07-12T03:47:06.663Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GNr75cjhVbGjcrXZrnjbn8ycac",
-      "title": "Weekend Productivity Challenge: Momentum Motivation",
-      "description": "Most productivity tools assume the hard part is organizing your tasks. For me, the hard part was always starting one. Momentum gives some motivation if you say what you have to do.",
-      "url": "https://builder.aws.com/content/3GNr75cjhVbGjcrXZrnjbn8ycac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNuTJrl2IpZGBudgSJFwPiMnNl/Mome.webp",
-      "authorName": "Bryan Lundberg",
-      "authorAlias": "rednaxela",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GNvlXusIbqgHgH2EL1TX06IiTl.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "productivity"
-      ],
-      "publishedAt": "2026-07-12T02:51:25.575Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GNpzDNrZH270EudreZrlg0FBIn",
-      "title": "Weekend Productivity Challenge: AI Study Coach",
-      "description": "I built an AI-powered study session planner using Amazon Bedrock Nova Lite, AWS Lambda, and Amplify in one evening. It generates personalized study plans, quizzes, and focus tips instantly.",
-      "url": "https://builder.aws.com/content/3GNpzDNrZH270EudreZrlg0FBIn",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNr5sfFXZb63gr61PdLFyRyY7K/Scre.webp",
-      "authorName": "Sampada Donahalli Dinesh",
-      "authorAlias": "sampadadd",
-      "authorAvatarUrl": "",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "productivity",
-        "aws-lambda",
-        "amazon-bedrock",
-        "aws-amplify",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-07-12T02:26:04.252Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GNeNIVOSFWM3gex4TTPe57ZYAW",
-      "title": "Weekend Productivity Challenge: AI Hype Checker",
-      "description": "Every day, my X (Twitter) timeline is full of posts claiming some new AI model \"changes everything\" or \"makes every other model obsolete overnight.\" Some of these claims are backed by real benchmarks and links. Many are not — they're just adrenaline-shaped sentences designed to get engagement.",
-      "url": "https://builder.aws.com/content/3GNeNIVOSFWM3gex4TTPe57ZYAW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNfyAk0RRqjt4ThEwCzdGAD6JJ/thum.webp",
-      "authorName": "Yuuki Yamashita",
-      "authorAlias": "yama3133",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3FWVCcfHbidAGAtFkxBQi8ynRB3.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "amazon-bedrock",
-        "amazon-bedrock-agentcore",
-        "iam",
-        "productivity",
-        "strands-agents"
-      ],
-      "publishedAt": "2026-07-12T00:48:30.065Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3BN27gkfQFluZCZly12JBoxMbJI",
-      "title": "AWS Vector Databases Part 1: Embeddings, Dimensions & Similarity",
-      "description": "This is Part 1 of a 3-part series explaining core concepts behind vector databases and AWS Offering for Vector databases.  In this part we cover embeddings, dimensions and similarity",
-      "url": "https://builder.aws.com/content/3BN27gkfQFluZCZly12JBoxMbJI",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNZfQhKIsBOkwULANcZ3zvvoeB/https.webp",
-      "authorName": "Sabarish Sathasivan",
-      "authorAlias": "sabinaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArmPNeqmD7F5A8waedHnFJjfCc.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "vector-database",
-        "gen-ai",
-        "knowledge-bases-for-bedrock",
-        "vector-data-stores"
-      ],
-      "publishedAt": "2026-07-11T23:55:10.453Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GNXx7vX37iG0dWY6H3DWpVruo6",
-      "title": "AWS Vector Databases – Part 2: Search, Filtering, and Chunking",
-      "description": "This is Part 2 of a 3-part series explaining core concepts behind vector databases and AWS Offering for Vector databases.  In this part we cover embeddings, dimensions and similarity",
-      "url": "https://builder.aws.com/content/3GNXx7vX37iG0dWY6H3DWpVruo6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNZIBwFPsLlEixDOj4MAQTTDeO/https.webp",
-      "authorName": "Sabarish Sathasivan",
-      "authorAlias": "sabinaws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ArmPNeqmD7F5A8waedHnFJjfCc.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "vector-database",
-        "vector-data-stores",
-        "gen-ai",
-        "knowledge-bases-for-bedrock"
-      ],
-      "publishedAt": "2026-07-11T23:53:59.272Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/35rk3qE4KjOK5xgou4ZoRqxUDfW",
-      "title": "Weekend Productivity Challenge: Pantry AI",
-      "description": "PantryAI streamlines weekly meal planning with Amazon Bedrock and serverless AWS services, turning pantry ingredients into meal plans and shopping lists.",
-      "url": "https://builder.aws.com/content/35rk3qE4KjOK5xgou4ZoRqxUDfW",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNDHGfy6T2kqvpNVjhjzJJNxdM/1-jp.webp",
-      "authorName": "Ram Thaker",
-      "authorAlias": "ramthaker123",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37QvpmfkeTmBo8elO3hPE2N9bqm.webp",
-      "location": "SE",
-      "lat": 59.6749712,
-      "lng": 14.5208584,
-      "tags": [
-        "productivity",
-        "amazon-bedrock",
-        "amazon-nova",
-        "challenge"
-      ],
-      "publishedAt": "2026-07-11T23:20:06.509Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GNG6VKOitXWh4CYdYI5MCDXczG",
-      "title": "Weekend Productivity Challenge: Smart Task Prioritizer",
-      "description": "An AI-powered task prioritizer built on Amazon Bedrock (Nova Micro) that turns a messy to-do list into a ranked, reasoned action plan in seconds — deployed serverlessly with Lambda, API Gateway, and DynamoDB.",
-      "url": "https://builder.aws.com/content/3GNG6VKOitXWh4CYdYI5MCDXczG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNHHE7OeFvJZASgLc12JmJG0EQ/smar.webp",
-      "authorName": "Rahul",
-      "authorAlias": "rahulgirdhar",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "productivity",
-        "serverless",
-        "generative-ai",
-        "amazon-bedrock",
-        "aws-lambda"
-      ],
-      "publishedAt": "2026-07-11T21:29:45.699Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GN8X9h6p8SWesgMAfT9uMF47my",
-      "title": "Weekend Productivity Challenge: HabStrack",
-      "description": "This weekend I built HabStrack! It uses Bedrock (Claude 4.5 Haiku), Lambda, and DynamoDB to smartly stack your daily tasks onto your existing habit anchors.",
-      "url": "https://builder.aws.com/content/3GN8X9h6p8SWesgMAfT9uMF47my",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GN9TRBUJZ3Z4M5Rcj9g9Hcyd09/Scre.webp",
-      "authorName": "Akinwande Tomisin",
-      "authorAlias": "tom1sin",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GNJNVyuHDMlKDyv9w53U5cB2cZ.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "productivity"
-      ],
-      "publishedAt": "2026-07-11T21:24:58.879Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GNB0aQqGX8ecl6OBOBf2TUdWfM",
-      "title": "AWS Amplify builds broken after a GitHub rename? Here’s the fix the console can’t give you",
-      "description": "Renaming your GitHub username or repo silently breaks AWS Amplify's CI/CD, the console's 'Reconnect repository' button won't fix it, and there's no UI option to update the link. Here's the exact update-app CLI command that does, plus four other scenarios it also fixes.",
-      "url": "https://builder.aws.com/content/3GNB0aQqGX8ecl6OBOBf2TUdWfM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNBBdJG4QLQv3CREshhLFnZbLJ/ampl.webp",
-      "authorName": "Suzana Melo",
-      "authorAlias": "suzanamelomoraes",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2tMNMi7TqAHyFMlNvvbpC7JMB8q.webp",
-      "location": "SE",
-      "lat": 59.6749712,
-      "lng": 14.5208584,
-      "tags": [
-        "tutorials",
-        "aws-amplify",
-        "aws-cli",
-        "github"
-      ],
-      "publishedAt": "2026-07-11T21:08:26.340Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GN5X3LAyJoK7T5ttiCt3RRqdez",
-      "title": "Weekend Productivity Challenge: AI Task Tracker",
-      "description": "Most to-do apps make you fill out forms. Title, due date, priority, category - by the time you've structured the task, you've lost the momentum that made you want to capture it in the first place.",
-      "url": "https://builder.aws.com/content/3GN5X3LAyJoK7T5ttiCt3RRqdez",
-      "imageUrl": "",
-      "authorName": "Neel",
-      "authorAlias": "neelbuids",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35yiEHDuDCQHprQlohmG3CBWIDS.webp",
-      "location": "CA",
-      "lat": 61.0666922,
-      "lng": -107.991707,
-      "tags": [
-        "productivity"
-      ],
-      "publishedAt": "2026-07-11T20:52:35.209Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GN3DXoqShKRNZVad1p1ReyKTBB",
-      "title": "Weekend Productivity Challenge: Tango 単",
-      "description": "For this weekend's productivity challenge, I created a website called Tango! Tango is your number one stop shop for building a plan to tackle vocabulary in an effective manner based on relevance that also helps you understand nuance and usage of those words by native speakers.",
-      "url": "https://builder.aws.com/content/3GN3DXoqShKRNZVad1p1ReyKTBB",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GN3u6cUu2uIiNee3FSJJv9SFuh/Scre.webp",
-      "authorName": "Johnjake",
-      "authorAlias": "jakejewsbury",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GN8Tz9N1wp4ujvg83lXFNlwfS0.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "productivity",
-        "amazon-bedrock",
-        "multi-language",
-        "amazon-ec2",
-        "kiro"
-      ],
-      "publishedAt": "2026-07-11T20:10:54.241Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GN2IkZvy1VyV0midUPcADzKZ9o",
-      "title": "Prompt Vault AI - A production-shaped, weekend-sized AI app on the AWS Free Tier",
-      "description": "Paste a prompt, and Amazon Bedrock returns a title, summary, category, tags, a 0–100 quality score, and improvement suggestions, then find any prompt later with natural-language search. The whole thing is serverless, runs on the AWS Free Tier, and is small enough to read in an afternoon.",
-      "url": "https://builder.aws.com/content/3GN2IkZvy1VyV0midUPcADzKZ9o",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GN2UQMAVmWWMpz0deyT9AR91uX/hero.webp",
-      "authorName": "Shishir",
-      "authorAlias": "shishir",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2kZ3J0O2DcIk1SGJwB055bhq1zo.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "productivity",
-        "amazon-bedrock",
-        "aws-builders",
-        "challenge",
-        "ai"
-      ],
-      "publishedAt": "2026-07-11T19:58:46.963Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/35FTHFcBsN31s89DxfZ9qIcpu6v",
-      "title": "How I Migrated VMware Servers to AWS Using AWS Transform and MGN Transform",
-      "description": "Why I'm Writing This\nI recently pulled off something that would normally take a migration team weeks, I planned and executed an end-to-end migration of 82 VMware servers to AWS in about 3 hours. The secret? I used AWS Transform for the planning and AWS MGN Transform for execution.\nThis blog covers every step, every failure, every fix, and every lesson. Whether you're evaluating AWS Transform for your organization or preparing for your own migration, this is the real-world experience no marketing fluff.",
-      "url": "https://builder.aws.com/content/35FTHFcBsN31s89DxfZ9qIcpu6v",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GN5dDr0Xd4OXbqv1IHZdbc33nP/Scre.webp",
-      "authorName": "Ramandeep Chandna",
-      "authorAlias": "rdchandna",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CehQgRysAPmiDV7kmRefnDLYZb.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
+      "authorName": "Haoxuan",
+      "authorAlias": "haoxuans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GQo5WJ2pyYs2K0MDTyo1QRbmJO.webp",
+      "location": "CN",
+      "lat": 34.5412252,
+      "lng": 108.9237067,
       "tags": [],
-      "publishedAt": "2026-07-11T19:52:44.560Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "publishedAt": "2026-07-13T03:24:51.906Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
-      "id": "/content/3GN58yxO2U3Ejz1bWnyVsL5L7Hm",
-      "title": "Weekend Productivity Challenge: PraiorAI",
-      "description": "PriorAI is an AI-powered productivity assistant that intelligently prioritizes your tasks based on their complexity and estimated completion time. It automatically creates a personalized schedule with calendar-based time slots, helping users focus on the right tasks at the right time. With built-in progress tracking for completed and pending tasks, PriorAI simplifies planning, improves productivity, and helps users stay organized with minimal effort.",
-      "url": "https://builder.aws.com/content/3GN58yxO2U3Ejz1bWnyVsL5L7Hm",
+      "id": "/content/3FXWKYXnfbyOpjwZHipIPUiIsaa",
+      "title": "Cost-Effective PII Protection in Amazon S3: Prevent, Discover with Macie, and Remediate Automatically",
+      "description": "Sensitive data scanning at scale doesn't have to break your budget. This post walks through two complementary workflows for protecting PII in Amazon S3 — masking data in the ingestion path with Amazon Comprehend and AWS Glue before it lands, and discovering PII at rest with Amazon Macie's sampled automated discovery, then remediating findings automatically through EventBridge and Step Functions. Includes a worked cost model for a 25–50 TB estate and a phased rollout plan.",
+      "url": "https://builder.aws.com/content/3FXWKYXnfbyOpjwZHipIPUiIsaa",
       "imageUrl": "",
-      "authorName": "Sai Suchir",
-      "authorAlias": "saisuchir",
+      "authorName": "Prameshwor",
+      "authorAlias": "rijalpr",
       "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [
-        "productivity"
+        "amazon-macie"
       ],
-      "publishedAt": "2026-07-11T19:47:33.081Z",
+      "publishedAt": "2026-07-13T03:05:28.734Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3GMy9R327ymgkqZGS7WLumhgK5U",
-      "title": "Weekend Productivity Challenge: Commitment Tracker",
-      "description": "A personal AI-powered productivity tool — something that genuinely helps you get more done.",
-      "url": "https://builder.aws.com/content/3GMy9R327ymgkqZGS7WLumhgK5U",
+      "id": "/content/3GQjHCE9qlJnWoiE9J4HF3k5Aqc",
+      "title": "From Retrieval to Reasoning: Building AI Agents That Actually Think",
+      "description": "Your chatbot hallucinates because it can't think. Learn how multi-agent RAG systems turn LLMs from static lookup tools into dynamic reasoning engines.",
+      "url": "https://builder.aws.com/content/3GQjHCE9qlJnWoiE9J4HF3k5Aqc",
       "imageUrl": "",
-      "authorName": "Prajwal V R",
-      "authorAlias": "pvrcloud",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GN2e93SZhlJXLYXz6bYN41wM8p.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "authorName": "Maulik",
+      "authorAlias": "bhattmaulik1991",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GQtc82wvDagIszhSP0jxum75gw.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-07-13T02:53:52.915Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GQb3eXmPUnP3Sh1DUWLJIpOAzQ",
+      "title": "Weekend Productivity Challenge: ChoreSplit - Fair Chores for Any Household",
+      "description": "I used this challenge as an excuse to finally try AWS Blocks. The result is ChoreSplit: describe your household, and Amazon Bedrock drafts the chore list and splits it fairly, with a reason for every assignment, a fairness score, and a calendar the whole house can see.",
+      "url": "https://builder.aws.com/content/3GQb3eXmPUnP3Sh1DUWLJIpOAzQ",
+      "imageUrl": "",
+      "authorName": "Karthik Subramanian",
+      "authorAlias": "karthiks3000",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31qF36cRlZVT0xVlcw6YBP6nyce.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
         "productivity",
-        "aws-amplify",
+        "ai",
         "amazon-bedrock",
         "aws-lambda",
-        "amazon-eventbridge"
+        "amazon-dynamodb"
       ],
-      "publishedAt": "2026-07-11T19:22:44.959Z",
+      "publishedAt": "2026-07-13T01:54:29.816Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GQbSfOEEUE3L91ZgPfWdYHBTSZ",
+      "title": "How I Built the re:Invent Community Planner in One Night with AI",
+      "description": "\nI run a WhatsApp group for Brazilians going to re:Invent for the first time. Same questions every edition. Answers trapped in 23 voice messages. I consolidated everything into a real app: Vue.js, PWA, 3 languages, 14 hotels with booking links, budget calculator, interactive checklist, and 18 community tips extracted from voice messages. Built in one night using Kiro CLI as copilot, with SPEC and DESIGN before any code. 18 commits, 40s deploys, open source and ready for contributions.\n",
+      "url": "https://builder.aws.com/content/3GQbSfOEEUE3L91ZgPfWdYHBTSZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GQcFBr9J3tMuo3mKNFfcudCnP2/Scre.webp",
+      "authorName": "Flavio Pimenta",
+      "authorAlias": "pimenta",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2dTZyQaqevtXxqApiFIHKWK2qfj.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "ai-for-developers",
+        "kiro",
+        "reinvent",
+        "spec-drivien-development",
+        "developer-productivity"
+      ],
+      "publishedAt": "2026-07-13T01:45:57.576Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GQZgvnwyptzJzocGMSw8XZYULa",
+      "title": "CI/CD Pipeline",
+      "description": "CI/CD Pipeline because deadline pressure is not a deployment strategy.\n",
+      "url": "https://builder.aws.com/content/3GQZgvnwyptzJzocGMSw8XZYULa",
+      "imageUrl": "",
+      "authorName": "Aishat",
+      "authorAlias": "aisholat",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GQZJidGjEOB3yhJzozaHid84UT.webp",
+      "location": "TX, US",
+      "lat": 31.2638905,
+      "lng": -98.5456116,
+      "tags": [
+        "ci-cd",
+        "aws-codepipeline"
+      ],
+      "publishedAt": "2026-07-13T01:26:55.571Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GQZ0YsPXiz0wc793F9otaFgkeG",
+      "title": "When RDS Storage Disappears and It Isn't Your Data",
+      "description": "A RDS PostgreSQL instance ran out of free space and started rejecting writes. I spent hours chasing table growth, temp spill, and WAL before finding the actual problem - which wasn’t data at all. This is a write-up of how to investigate runaway storage on RDS PostgreSQL, and how to avoid the wrong turns I took.",
+      "url": "https://builder.aws.com/content/3GQZ0YsPXiz0wc793F9otaFgkeG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GQZBXAAIp3i5Q3XoMKNdd46BtL/gizm.webp",
+      "authorName": "John Doyle",
+      "authorAlias": "johndoyle",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z9k33z1ZVTYKPjBda1Vqkmr1El.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "amazon-rds",
+        "logging",
+        "devops"
+      ],
+      "publishedAt": "2026-07-13T01:21:50.195Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GQXbRj958DFqQvucbHoZUvdvCY",
+      "title": "Weekend Productivity Challenge: Building Raven, An AI Focus Coach Powered by Amazon Bedrock",
+      "description": "Meet Raven, a personal AI focus coach that looks at your macro goals, your schedule, and how tired you are today to give you one single, actionable recommendation.",
+      "url": "https://builder.aws.com/content/3GQXbRj958DFqQvucbHoZUvdvCY",
+      "imageUrl": "",
+      "authorName": "Maurice Osoro",
+      "authorAlias": "mauriceos",
+      "authorAvatarUrl": "",
+      "location": "KE",
+      "lat": 1.4419683,
+      "lng": 38.4313975,
+      "tags": [
+        "amazon-bedrock",
+        "all-builders-welcome",
+        "serverless"
+      ],
+      "publishedAt": "2026-07-13T01:21:31.076Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GQLDCTJDyp07IUQWiimwZtQSDf",
+      "title": "Weekend Productivity Challenge: FactoryLens — AI Document Analyzer",
+      "description": "FactoryLens is a serverless AI tool that turns manufacturing paperwork such as SOPs, quality reports, incident logs, etc., into instant, structured insights: drag in a PDF or scan, and it extracts the text, classifies the document, and flags issues like non-conformances or downtime with suggested actions. Built entirely on AWS Free Tier services, it delivers results live through a simple drag-and-drop web interface, with no dashboards or manual review required.",
+      "url": "https://builder.aws.com/content/3GQLDCTJDyp07IUQWiimwZtQSDf",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GQPC8IefNSC2N5VzrUybcpG2Oe/fact.webp",
+      "authorName": "Mayowa Afolayan",
+      "authorAlias": "afolayanmayowa",
+      "authorAvatarUrl": "",
+      "location": "GB",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "tags": [
+        "amazon-s3",
+        "amazon-dynamodb",
+        "amazon-api-gateway",
+        "amazon-comprehend",
+        "amazon-textract"
+      ],
+      "publishedAt": "2026-07-13T00:16:28.535Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GQIJn3GuhQ85ZMTaRHSmaj6JeJ",
+      "title": "Weekend Productivity Challenge: Building a Serverless AI Trip Planner with Kiro & Amazon Bedrock!",
+      "description": "Built in a single weekend, AI Trip Planner showcases how Kiro and AWS serverless services can rapidly transform an idea into a production-style AI application. Users can generate personalized travel itineraries with Amazon Bedrock and share them via email using Amazon SES, all without managing servers or databases.",
+      "url": "https://builder.aws.com/content/3GQIJn3GuhQ85ZMTaRHSmaj6JeJ",
+      "imageUrl": "",
+      "authorName": "Girish Bhatia",
+      "authorAlias": "girishbhatia2023",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2u3sfNxX0NxLMD9rgr4moAK9xh6.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "productivity",
+        "kiro",
+        "amazon-bedrock",
+        "serverless"
+      ],
+      "publishedAt": "2026-07-12T23:20:45.968Z",
       "likesCount": 0,
       "commentsCount": 0
     }
@@ -423,8 +225,8 @@
         "builder-center"
       ],
       "publishedAt": "2026-07-09T19:12:00.542Z",
-      "likesCount": 56,
-      "commentsCount": 86
+      "likesCount": 66,
+      "commentsCount": 94
     },
     {
       "id": "/content/3GCjkXGc1Qrs5jGsWI5fkTLNWzU",
@@ -444,8 +246,48 @@
         "student-builders"
       ],
       "publishedAt": "2026-07-08T22:47:19.627Z",
-      "likesCount": 101,
-      "commentsCount": 33
+      "likesCount": 112,
+      "commentsCount": 37
+    },
+    {
+      "id": "/content/3GP20ZvsxHtg4iQKcPXcMvDQRaF",
+      "title": "Yells at Cloud, Episode 1: Generally Available",
+      "description": "Five AWS Heroes spend an hour on AWS' recent launches: Lambda MicroVMs and their odd pricing, CloudFormation Express Mode reporting stacks as done before they are, Cloudflare temporary accounts, AWS WAF charging AI crawlers, and why multi-agent teams underperform their smartest member.",
+      "url": "https://builder.aws.com/content/3GP20ZvsxHtg4iQKcPXcMvDQRaF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GP3gJWWax3zMAlDKKw33ZqIwLr/ep-0.webp",
+      "authorName": "Gunnar Grosch",
+      "authorAlias": "gunnargrosch",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ALzHUgbnxi13edD9RSaDUyflIu.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "podcast",
+        "aws-lambda",
+        "aws-cloudformation",
+        "aws-waf",
+        "ai"
+      ],
+      "publishedAt": "2026-07-12T12:32:36.737Z",
+      "likesCount": 15,
+      "commentsCount": 8
+    },
+    {
+      "id": "/content/3GQoE1tQUH0YecOfWNdCZBa6fu7",
+      "title": "Hello Builder Center",
+      "description": "First Article",
+      "url": "https://builder.aws.com/content/3GQoE1tQUH0YecOfWNdCZBa6fu7",
+      "imageUrl": "",
+      "authorName": "Haoxuan",
+      "authorAlias": "haoxuans",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GQo5WJ2pyYs2K0MDTyo1QRbmJO.webp",
+      "location": "CN",
+      "lat": 34.5412252,
+      "lng": 108.9237067,
+      "tags": [],
+      "publishedAt": "2026-07-13T03:24:51.906Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
       "id": "/content/3GJsgI65jiG5A6sJLGe5VouAZZ3",
@@ -461,8 +303,8 @@
       "lng": -120.737257,
       "tags": [],
       "publishedAt": "2026-07-10T16:37:14.335Z",
-      "likesCount": 24,
-      "commentsCount": 16
+      "likesCount": 35,
+      "commentsCount": 26
     },
     {
       "id": "/content/3GBH1fgU7tVkdOsYZj0K120VOiO",
@@ -484,8 +326,8 @@
         "databases"
       ],
       "publishedAt": "2026-07-07T16:18:20.300Z",
-      "likesCount": 29,
-      "commentsCount": 58
+      "likesCount": 33,
+      "commentsCount": 60
     },
     {
       "id": "/content/3GFcM59UkfV8HGO8IlMqlkZr8tV",
@@ -501,29 +343,25 @@
       "lng": -120.212613,
       "tags": [],
       "publishedAt": "2026-07-09T04:58:46.638Z",
-      "likesCount": 35,
-      "commentsCount": 17
+      "likesCount": 42,
+      "commentsCount": 21
     },
     {
-      "id": "/content/3GLibUW3b9FTY4z4ggOP1TPIe1s",
-      "title": "Weekend Productivity Challenge: SmartPriority",
-      "description": "An AI-powered productivity tool that helps students prioritize their daily tasks by urgency, impact, and effort  generating an optimal schedule using Amazon Bedrock and Nova Lite. Built to solve a real problem I see every day as a Student Placement Coordinator.",
-      "url": "https://builder.aws.com/content/3GLibUW3b9FTY4z4ggOP1TPIe1s",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GLikxeDJ6LfjfDFwODUaMtgw9K/Scre.webp",
-      "authorName": "Sankar S",
-      "authorAlias": "sankar2316",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GLuBano7Ibm6N2bvbKHwji0TLx.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "productivity",
-        "challenge",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-07-11T08:14:32.864Z",
-      "likesCount": 6,
-      "commentsCount": 6
+      "id": "/content/3GQjHCE9qlJnWoiE9J4HF3k5Aqc",
+      "title": "From Retrieval to Reasoning: Building AI Agents That Actually Think",
+      "description": "Your chatbot hallucinates because it can't think. Learn how multi-agent RAG systems turn LLMs from static lookup tools into dynamic reasoning engines.",
+      "url": "https://builder.aws.com/content/3GQjHCE9qlJnWoiE9J4HF3k5Aqc",
+      "imageUrl": "",
+      "authorName": "Maulik",
+      "authorAlias": "bhattmaulik1991",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GQtc82wvDagIszhSP0jxum75gw.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-07-13T02:53:52.915Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
       "id": "/content/3FXsGsqg6ItccU9Hmr8oG0lPo2z",
@@ -542,70 +380,29 @@
         "aws-builders"
       ],
       "publishedAt": "2026-07-10T16:40:41.964Z",
-      "likesCount": 43,
-      "commentsCount": 60
+      "likesCount": 49,
+      "commentsCount": 83
     },
     {
-      "id": "/content/3GLgfZj5ggauwoaA8yWP5dam6iD",
-      "title": "Weekend Productivity Challenge: Smart Recipe Generator",
-      "description": "Smart Recipe Generator is an AI-powered kitchen assistant that helps you decide what to cook using the ingredients you already have. Simply enter the ingredients available in your kitchen along with your nutrition goals, such as protein and carbs, and the AI generates a personalized recipe.",
-      "url": "https://builder.aws.com/content/3GLgfZj5ggauwoaA8yWP5dam6iD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GM0VvP6opBnLSQxM0wrCD5vxAZ/Gemi.webp",
-      "authorName": "Sidda Deepika Reddy",
-      "authorAlias": "deepusid",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AqaIwpwelTdVOBMgk18SmXW0te.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
+      "id": "/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "title": "AIdeas Finalist: ASET – Academic Safety and Evidencing Truth",
+      "description": "ASET (Academic Safety and Evidencing Truth) is a scientific claim verification engine built  for the AI era — where information can be generated instantly, but trust cannot, to address the growing problem of hallucinated citations and  AI-generated information.\n\nInstead of probabilistic prediction, ASET retrieves, analyzes, and synthesizes evidence from 1.2M+ indexed research papers to produce literature-backed verification reports for claims extracted from text, documents, webpages, images, and videos.\n",
+      "url": "https://builder.aws.com/content/3C9Op6CoAM9vM5BFEnXNFSByj2g",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3CUv5Afza0Kjgaq4AqTEpyQRFdC/ASET.webp",
+      "authorName": "Om Singh",
+      "authorAlias": "jayom5797",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CyO4WlvE4D9zbIX3zeBgMV2viR.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
       "tags": [
-        "productivity",
-        "ai"
+        "social-impact",
+        "APJC",
+        "aideas-2025"
       ],
-      "publishedAt": "2026-07-11T11:15:02.541Z",
-      "likesCount": 7,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3GNr75cjhVbGjcrXZrnjbn8ycac",
-      "title": "Weekend Productivity Challenge: Momentum Motivation",
-      "description": "Most productivity tools assume the hard part is organizing your tasks. For me, the hard part was always starting one. Momentum gives some motivation if you say what you have to do.",
-      "url": "https://builder.aws.com/content/3GNr75cjhVbGjcrXZrnjbn8ycac",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GNuTJrl2IpZGBudgSJFwPiMnNl/Mome.webp",
-      "authorName": "Bryan Lundberg",
-      "authorAlias": "rednaxela",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GNvlXusIbqgHgH2EL1TX06IiTl.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [
-        "productivity"
-      ],
-      "publishedAt": "2026-07-12T02:51:25.575Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3G8pRVUD5FHOkcvqizWxSMy7oC7",
-      "title": "The 4x4: Database and Analytics Highlights",
-      "description": "4 community picks and 4 AWS picks about Databases (and Analytics!) on AWS",
-      "url": "https://builder.aws.com/content/3G8pRVUD5FHOkcvqizWxSMy7oC7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3G8pn3NaTzWdi5iqSFbj4ecTfqe/aws-.webp",
-      "authorName": "Corey Strausman",
-      "authorAlias": "coreydst",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39mZ0uGbYBmFkSpjfVl1CI669p7.webp",
-      "location": "NY, US",
-      "lat": 43.1561681,
-      "lng": -75.8449946,
-      "tags": [
-        "databases",
-        "analytics",
-        "aws-community-builders",
-        "aws-community",
-        "community"
-      ],
-      "publishedAt": "2026-07-06T19:07:31.197Z",
-      "likesCount": 32,
-      "commentsCount": 12
+      "publishedAt": "2026-04-17T20:11:08.527Z",
+      "likesCount": 3618,
+      "commentsCount": 345
     }
   ]
 }
