@@ -137,9 +137,51 @@ function projectMarker(cluster, phi, theta, width, height, scale) {
   };
 }
 
+function drawMarkers(canvas, markers, markerRgb, pixelRatio) {
+  const context = canvas?.getContext('2d');
+  if (!context) return;
+
+  context.clearRect(0, 0, canvas.width, canvas.height);
+
+  const [red, green, blue] = markerRgb.map((channel) => Math.round(channel * 255));
+  const color = `${red}, ${green}, ${blue}`;
+
+  for (const marker of [...markers].sort((a, b) => a.z - b.z)) {
+    const clusterScale = marker.size / SINGLE_MARKER_SIZE;
+    const radius = clamp(7 * clusterScale, 7, 13) * pixelRatio;
+    const edgeFade = clamp(marker.z / 0.16, 0, 1);
+    if (edgeFade <= 0) continue;
+
+    const halo = context.createRadialGradient(
+      marker.x,
+      marker.y,
+      radius * 0.45,
+      marker.x,
+      marker.y,
+      radius * 1.65
+    );
+    halo.addColorStop(0, `rgba(${color}, ${0.2 * edgeFade})`);
+    halo.addColorStop(1, `rgba(${color}, 0)`);
+    context.fillStyle = halo;
+    context.beginPath();
+    context.arc(marker.x, marker.y, radius * 1.65, 0, Math.PI * 2);
+    context.fill();
+
+    context.fillStyle = `rgba(${color}, ${0.98 * edgeFade})`;
+    context.beginPath();
+    context.arc(marker.x, marker.y, radius, 0, Math.PI * 2);
+    context.fill();
+
+    context.strokeStyle = `rgba(255, 255, 255, ${0.16 * edgeFade})`;
+    context.lineWidth = Math.max(1, pixelRatio * 0.75);
+    context.stroke();
+  }
+}
+
 export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand }) {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
+  const markerCanvasRef = useRef(null);
   const sizeRef = useRef({ width: 1, height: 1 });
   const phiRef = useRef(0);
   const thetaRef = useRef(0);
@@ -237,6 +279,10 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       const width = Math.max(1, Math.round(containerRef.current.clientWidth * pixelRatio));
       const height = Math.max(1, Math.round(containerRef.current.clientHeight * pixelRatio));
       sizeRef.current = { width, height };
+      if (markerCanvasRef.current) {
+        markerCanvasRef.current.width = width;
+        markerCanvasRef.current.height = height;
+      }
     };
 
     updateSize();
@@ -257,7 +303,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       glowColor: themeRef.current.darkMode ? [0.29, 0.56, 0.85] : [0.67, 0.82, 0.94],
       scale: getResponsiveScale(scaleRef.current, sizeRef.current.width, sizeRef.current.height),
       offset: [0, 0],
-      markers: clustersRef.current,
+      markers: [],
       opacity: 1,
       onRender: (state) => {
         const currentClusters = clustersRef.current;
@@ -291,7 +337,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         state.scale = getResponsiveScale(scaleRef.current, sizeRef.current.width, sizeRef.current.height);
         state.markerColor = theme.markerRgb;
         state.glowColor = theme.darkMode ? [0.29, 0.56, 0.85] : [0.67, 0.82, 0.94];
-        state.markers = currentClusters;
+        state.markers = [];
 
         projectedMarkersRef.current = currentClusters
           .map((cluster) =>
@@ -306,6 +352,13 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           )
           .filter(Boolean)
           .sort((a, b) => b.z - a.z);
+
+        drawMarkers(
+          markerCanvasRef.current,
+          projectedMarkersRef.current,
+          theme.markerRgb,
+          Math.min(window.devicePixelRatio || 1, 2)
+        );
       },
     });
 
@@ -555,6 +608,11 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         onPointerCancel={handlePointerCancel}
         onPointerLeave={handlePointerLeave}
         onWheel={handleWheel}
+      />
+      <canvas
+        ref={markerCanvasRef}
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-20 h-full w-full"
       />
     </div>
   );

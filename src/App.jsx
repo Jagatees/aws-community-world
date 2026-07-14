@@ -5,6 +5,7 @@ import NewsPanel from './components/NewsPanel';
 import ProfileCard from './components/ProfileCard';
 import TagFilter from './components/TagFilter';
 import KiroAvatarOverlay from './components/KiroAvatarOverlay';
+import ListScene from './components/ListScene';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
@@ -53,7 +54,7 @@ const DEFAULT_ROUTE_STATE = {
 };
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
-const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat'];
+const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'list'];
 const VALID_GLOBE_DESIGNS = new Set(GLOBE_DESIGNS);
 
 function getRouteStateFromUrl() {
@@ -140,10 +141,11 @@ export default function App() {
   const globeReady = !showSplash;
 
   const isCommunityBuilderView = activeCategory === 'community-builders';
-  const loadFullCommunityBuilders = isCommunityBuilderView && Boolean(selectedTag || selectedCountry);
+  const isListView = globeDesign === 'list';
+  const loadFullCommunityBuilders = isCommunityBuilderView && (isListView || Boolean(selectedTag || selectedCountry));
   const { error, members, loading } = useCategory(activeCategory, loadFullCommunityBuilders);
-  const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading;
-  const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading;
+  const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
+  const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading && !isListView;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
   const ActiveGlobeScene =
     !webGlAvailable
@@ -203,9 +205,8 @@ export default function App() {
     return counts;
   }, [isCommunityBuilderView, members]);
 
-  const filteredMembers = useMemo(() => {
+  const directoryMembers = useMemo(() => {
     return members.filter((member) => {
-      if (member.lat === 0 && member.lng === 0) return false;
       if (selectedTag && member.tag !== selectedTag) return false;
       if (selectedCountry) {
         const parts = member.location?.split(',') ?? [];
@@ -215,6 +216,11 @@ export default function App() {
       return true;
     });
   }, [members, selectedTag, selectedCountry]);
+
+  const filteredMembers = useMemo(
+    () => directoryMembers.filter((member) => member.lat !== 0 || member.lng !== 0),
+    [directoryMembers]
+  );
 
   const singaporeSpotlightMembers = useMemo(() => {
     if (activeCategory !== 'cloud-clubs') return [];
@@ -249,7 +255,8 @@ export default function App() {
   }, [selectedCountry, members]);
   const resolvedFlyToTarget = nearMeTarget ?? flyToTarget;
 
-  const isEmpty = !loading && !error && filteredMembers.length === 0;
+  const displayedMembers = isListView ? directoryMembers : filteredMembers;
+  const isEmpty = !loading && !error && displayedMembers.length === 0;
   const hudCount = isCommunityBuilderView && !loadFullCommunityBuilders
     ? (communityBuilderMeta.total ?? filteredMembers.length)
     : filteredMembers.length;
@@ -310,6 +317,7 @@ export default function App() {
     if (design === 'classic') return 'Mapbox';
     if (design === 'orbit') return 'Orbit';
     if (design === 'sleek') return 'Sleek';
+    if (design === 'list') return 'List';
     return design.charAt(0).toUpperCase() + design.slice(1);
   }
 
@@ -613,7 +621,15 @@ export default function App() {
             <div className="relative h-full min-h-0">
               {/* Globe — always fills the full area */}
               <div className="absolute inset-0">
-                {globeReady ? (
+                {isListView ? (
+                  <ListScene
+                    key="news-list"
+                    category="news"
+                    newsItems={newsItems}
+                    loading={newsLoading}
+                    darkMode={darkMode}
+                  />
+                ) : globeReady ? (
                   <Suspense
                     fallback={renderGlobeLoading()}
                   >
@@ -639,7 +655,7 @@ export default function App() {
                   </div>
                 )}
 
-                {globeReady && newsLoading && (
+                {!isListView && globeReady && newsLoading && (
                   <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
                     <div
                       className="flex items-center gap-3 rounded-full px-4 py-2 text-sm font-semibold"
@@ -687,7 +703,7 @@ export default function App() {
                     </div>
 
                     <div
-                      className="flex items-center rounded-full p-1"
+                      className={`${isListView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
                       style={{
                         background: styleControlBg,
                         border: `1px solid ${styleControlBorder}`,
@@ -724,7 +740,7 @@ export default function App() {
                       onClick={handleNearMe}
                       onMouseEnter={() => setNearMeHover(true)}
                       onMouseLeave={() => setNearMeHover(false)}
-                      className="rounded-full px-4 py-1 text-xs font-semibold"
+                      className={`${isListView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
                       style={{
                         backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
                         color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
@@ -741,7 +757,7 @@ export default function App() {
                   </div>
                 </div>
 
-                {!newsLoading && newsMarkers.length === 0 && (
+                {!isListView && !newsLoading && newsMarkers.length === 0 && (
                   <div
                     className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center"
                     style={{ color: '#8B9BAA' }}
@@ -756,7 +772,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={() => setNewsPanelOpen((v) => !v)}
-                className="absolute z-30 flex items-center gap-2 rounded-full px-3 py-2 text-xs font-semibold shadow-lg transition-all"
+                className={`${isListView ? 'hidden' : 'flex'} absolute z-30 items-center gap-2 rounded-full px-3 py-2 text-xs font-semibold shadow-lg transition-all`}
                 style={{
                   top: '1rem',
                   right: newsPanelOpen ? 'calc(min(460px, 100vw) + 0.75rem)' : '1rem',
@@ -789,7 +805,7 @@ export default function App() {
 
               {/* News panel — slides in from right, overlays the globe */}
               <div
-                className="absolute inset-y-0 right-0 z-20 flex flex-col"
+                className={`${isListView ? 'hidden' : 'flex'} absolute inset-y-0 right-0 z-20 flex-col`}
                 style={{
                   width: 'min(460px, 100vw)',
                   transform: newsPanelOpen ? 'translateX(0)' : 'translateX(100%)',
@@ -811,7 +827,16 @@ export default function App() {
             </div>
           ) : (
             <>
-              {globeReady ? (
+              {isListView ? (
+                <ListScene
+                  key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedCountry ?? 'all'}-list`}
+                  category={activeCategory}
+                  members={directoryMembers}
+                  loading={loading}
+                  darkMode={darkMode}
+                  onItemClick={handleMarkerClick}
+                />
+              ) : globeReady ? (
                 <Suspense
                   fallback={renderGlobeLoading()}
                 >
@@ -842,7 +867,7 @@ export default function App() {
                 </div>
               )}
 
-              {globeReady && loading && (
+              {!isListView && globeReady && loading && (
                 <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
                   <div
                     className="flex items-center gap-3 rounded-full px-4 py-2 text-sm font-semibold"
@@ -861,7 +886,7 @@ export default function App() {
               )}
 
               <div
-                className="absolute top-4 left-4 z-20 pointer-events-none"
+                className={`${isListView ? 'hidden' : ''} absolute top-4 left-4 z-20 pointer-events-none`}
                 style={{
                   background: darkMode ? 'rgba(8, 16, 24, 0.78)' : 'rgba(255, 255, 255, 0.86)',
                   border: `1px solid ${darkMode ? 'rgba(62, 95, 123, 0.4)' : 'rgba(160, 187, 212, 0.72)'}`,
@@ -973,7 +998,7 @@ export default function App() {
                       </div>
 
                       <div
-                        className="flex items-center rounded-full p-1"
+                        className={`${isListView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
                         style={{
                           background: styleControlBg,
                           border: `1px solid ${styleControlBorder}`,
@@ -1025,7 +1050,7 @@ export default function App() {
                         onClick={handleNearMe}
                         onMouseEnter={() => setNearMeHover(true)}
                         onMouseLeave={() => setNearMeHover(false)}
-                        className="rounded-full px-4 py-1 text-xs font-semibold"
+                        className={`${isListView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
                         style={{
                           backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
                           color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
@@ -1064,7 +1089,7 @@ export default function App() {
                 </div>
               </div>
 
-              {isEmpty && (
+              {!isListView && isEmpty && (
                 <div
                   className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center"
                   style={{ color: '#8B9BAA' }}
