@@ -11,7 +11,9 @@ export default function CountryDropdown({
   countries,
   countryCounts = {},
   selectedCountry,
+  selectedCountries = [],
   onCountryChange,
+  multiSelect = false,
   buttonLabel = 'All Countries',
   allLabel = 'All Countries',
   allowAll = true,
@@ -69,6 +71,16 @@ export default function CountryDropdown({
   const inputBg = darkMode ? 'rgba(9, 19, 28, 0.72)' : 'rgba(240, 247, 255, 0.95)';
   const inputBorder = darkMode ? 'rgba(115, 145, 171, 0.32)' : 'rgba(160, 187, 212, 0.72)';
   const inputPlaceholder = darkMode ? '#7E93A7' : '#6C879F';
+  const activeCountries = multiSelect
+    ? selectedCountries
+    : selectedCountry
+      ? [selectedCountry]
+      : [];
+  const triggerLabel = activeCountries.length === 0
+    ? buttonLabel
+    : activeCountries.length === 1
+      ? activeCountries[0]
+      : `${activeCountries.length} Countries`;
 
   const filteredCountries = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -89,8 +101,22 @@ export default function CountryDropdown({
   }
 
   function selectCountry(country) {
-    onCountryChange(country);
-    closeMenu();
+    if (!multiSelect) {
+      onCountryChange(country);
+      closeMenu();
+      return;
+    }
+
+    if (!country) {
+      onCountryChange([]);
+      return;
+    }
+
+    onCountryChange(
+      activeCountries.includes(country)
+        ? activeCountries.filter((selected) => selected !== country)
+        : [...activeCountries, country]
+    );
   }
 
   const menu = open && createPortal(
@@ -155,6 +181,7 @@ export default function CountryDropdown({
 
       <ul
         role="listbox"
+        aria-multiselectable={multiSelect || undefined}
         style={{
           maxHeight: `${MENU_HEIGHT - 58}px`,
           overflowY: 'auto',
@@ -165,14 +192,14 @@ export default function CountryDropdown({
       >
         {allowAll && (
           <CountryOption
-            selected={!selectedCountry}
-            color={!selectedCountry ? '#FF9900' : menuText}
+            selected={activeCountries.length === 0}
+            color={activeCountries.length === 0 ? '#FF9900' : menuText}
             menuHover={menuHover}
-            selectedCountry={selectedCountry}
             onClick={() => selectCountry(null)}
           >
             <span style={{ fontSize: '1.1rem', lineHeight: 1 }}>🌍</span>
-            <span>{allLabel}</span>
+            <span style={{ flex: 1 }}>{allLabel}</span>
+            {multiSelect && <SelectionCheck selected={activeCountries.length === 0} muted={inputPlaceholder} />}
           </CountryOption>
         )}
 
@@ -180,7 +207,7 @@ export default function CountryDropdown({
           const code = getCountryCode(country);
           const flag = code ? countryCodeToFlag(code) : '';
           const count = countryCounts[country] ?? 0;
-          const isSelected = selectedCountry === country;
+          const isSelected = activeCountries.includes(country);
 
           return (
             <CountryOption
@@ -188,14 +215,14 @@ export default function CountryDropdown({
               selected={isSelected}
               color={isSelected ? '#FF9900' : menuText}
               menuHover={menuHover}
-              selectedCountry={selectedCountry}
-              onClick={() => selectCountry(isSelected && allowAll ? null : country)}
+              onClick={() => selectCountry(!multiSelect && isSelected && allowAll ? null : country)}
             >
               <span style={{ fontSize: '1.1rem', lineHeight: 1, minWidth: '1.4rem', textAlign: 'center' }}>
                 {flag}
               </span>
               <span style={{ flex: 1 }}>{country}</span>
               {count > 0 && <span style={{ fontSize: '0.7rem', opacity: 0.55 }}>{count}</span>}
+              {multiSelect && <SelectionCheck selected={isSelected} muted={inputPlaceholder} />}
             </CountryOption>
           );
         })}
@@ -239,7 +266,7 @@ export default function CountryDropdown({
           borderRadius: 0,
           border: 'none',
           background: 'transparent',
-          color: selectedCountry ? '#FF9900' : inactiveText,
+          color: activeCountries.length ? '#FF9900' : inactiveText,
           fontWeight: 600,
           whiteSpace: 'nowrap',
           cursor: 'pointer',
@@ -248,7 +275,7 @@ export default function CountryDropdown({
         }}
       >
         <span style={{ minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis' }}>
-          {selectedCountry || buttonLabel}
+          {triggerLabel}
         </span>
         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ flexShrink: 0 }}>
           <polyline points="6 9 12 15 18 9" />
@@ -259,7 +286,19 @@ export default function CountryDropdown({
   );
 }
 
-function CountryOption({ selected, color, menuHover, selectedCountry, onClick, children }) {
+function SelectionCheck({ selected, muted }) {
+  return (
+    <span
+      className="flex h-4 w-4 flex-shrink-0 items-center justify-center rounded border text-[10px]"
+      style={{ borderColor: selected ? '#FF9900' : muted, color: selected ? '#FF9900' : 'transparent' }}
+      aria-hidden="true"
+    >
+      ✓
+    </span>
+  );
+}
+
+function CountryOption({ selected, color, menuHover, onClick, children }) {
   return (
     <li
       role="option"
@@ -278,10 +317,10 @@ function CountryOption({ selected, color, menuHover, selectedCountry, onClick, c
         background: selected ? 'rgba(255,153,0,0.1)' : 'transparent',
       }}
       onMouseEnter={(e) => {
-        if (!selected || selectedCountry) e.currentTarget.style.background = menuHover;
+        e.currentTarget.style.background = menuHover;
       }}
       onMouseLeave={(e) => {
-        if (!selected) e.currentTarget.style.background = 'transparent';
+        e.currentTarget.style.background = selected ? 'rgba(255,153,0,0.1)' : 'transparent';
       }}
     >
       {children}

@@ -40,6 +40,7 @@ function normalizeMembers(raw, category) {
     country: item.country ?? '',
     builderCount: item.builderCount ?? 0,
     clusterOnly: Boolean(item.clusterOnly),
+    socialLinks: item.socialLinks && typeof item.socialLinks === 'object' ? item.socialLinks : {},
   }));
 }
 

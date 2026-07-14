@@ -16,7 +16,7 @@
  * @property {string} [heroType]
  * @property {string} [builderType]
  * @property {string} [specialization]
- * @property {{ name: string, imageUrl: string }[]} [ledBy]
+ * @property {{ name: string, imageUrl: string, profileUrl?: string, socialLinks?: { linkedin?: string, github?: string, x?: string, devto?: string, youtube?: string, facebook?: string, repost?: string, blog?: string, website?: string } }[]} [ledBy]
  * @property {boolean} [isNew]
  * @property {string} [eventDate]
  * @property {string} [description]
@@ -24,6 +24,7 @@
  * @property {string} [country]
  * @property {number} [builderCount]
  * @property {boolean} [clusterOnly]
+ * @property {{ linkedin?: string, github?: string, x?: string, devto?: string, youtube?: string, facebook?: string, repost?: string, blog?: string, website?: string }} [socialLinks]
  */
 
 /**

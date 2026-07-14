@@ -1,5 +1,6 @@
 import { useRef, useLayoutEffect, useEffect } from 'react';
 import CountryDropdown from './CountryDropdown';
+import RegionDropdown from './RegionDropdown';
 
 /** @typedef {import('../types.js').CategoryKey} CategoryKey */
 
@@ -19,8 +20,10 @@ const TABS = [
  *   darkMode: boolean;
  *   countries: string[];
  *   countryCounts: Record<string, number>;
- *   selectedCountry: string | null;
- *   onCountryChange: (country: string | null) => void;
+ *   selectedRegions: string[];
+ *   onRegionChange: (regions: string[]) => void;
+ *   selectedCountries: string[];
+ *   onCountryChange: (countries: string[]) => void;
  * }} props
  */
 export default function TabNav({
@@ -29,7 +32,11 @@ export default function TabNav({
   darkMode,
   countries,
   countryCounts = {},
-  selectedCountry,
+  regions = [],
+  regionCounts = {},
+  selectedRegions,
+  onRegionChange,
+  selectedCountries,
   onCountryChange,
 }) {
   const surface = darkMode ? 'rgba(27, 40, 54, 0.62)' : 'rgba(255, 255, 255, 0.72)';
@@ -141,7 +148,7 @@ export default function TabNav({
           );
         })}
 
-        {!!countries.length && (
+        {(regions.length > 0 || countries.length > 0) && (
           <div
             style={{
               marginLeft: '10px',
@@ -154,18 +161,30 @@ export default function TabNav({
               borderLeft: `1px solid ${divider}`,
             }}
           >
-            <CountryDropdown
-              darkMode={darkMode}
-              countries={countries}
-              countryCounts={countryCounts}
-              selectedCountry={selectedCountry}
-              onCountryChange={onCountryChange}
-              className="px-3 py-1 text-xs"
-              buttonStyle={{
-                color: selectedCountry ? '#FF9900' : inactiveText,
-                background: 'transparent',
-              }}
-            />
+            {regions.length > 0 && (
+              <RegionDropdown
+                darkMode={darkMode}
+                regions={regions}
+                regionCounts={regionCounts}
+                selectedRegions={selectedRegions}
+                onRegionChange={onRegionChange}
+              />
+            )}
+            {countries.length > 0 && (
+              <CountryDropdown
+                darkMode={darkMode}
+                countries={countries}
+                countryCounts={countryCounts}
+                selectedCountries={selectedCountries}
+                onCountryChange={onCountryChange}
+                multiSelect
+                className="px-3 py-1 text-xs"
+                buttonStyle={{
+                  color: selectedCountries.length ? '#FF9900' : inactiveText,
+                  background: 'transparent',
+                }}
+              />
+            )}
           </div>
         )}
       </nav>

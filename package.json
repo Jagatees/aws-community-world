@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "scrape": "node scripts/scrape-community.mjs",
-    "update:community-data": "node scripts/update-community-data.mjs && node scripts/build-community-builder-summary.mjs",
+    "update:community-data": "node scripts/update-community-data.mjs && node scripts/enrich-builder-profiles.mjs && node scripts/build-community-builder-summary.mjs",
+    "update:builder-profiles": "node scripts/enrich-builder-profiles.mjs",
     "update:news": "node scripts/update-builder-news.mjs",
     "update:kiro-events": "node scripts/update-kiro-events.mjs",
     "build:community-builder-summary": "node scripts/build-community-builder-summary.mjs"

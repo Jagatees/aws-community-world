@@ -10,6 +10,7 @@ import GlobeErrorBoundary from './components/GlobeErrorBoundary';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 import communityBuilderMeta from './data/community-builders-meta.json';
+import { getRegionForCountry, REGIONS } from './utils/countryRegions';
 
 const SplashScreen = lazy(() => import('./components/SplashScreen'));
 
@@ -47,7 +48,8 @@ const SINGAPORE_SCHOOL_COORDS = [
 const DEFAULT_ROUTE_STATE = {
   activeCategory: 'heroes',
   selectedTag: null,
-  selectedCountry: null,
+  selectedRegions: [],
+  selectedCountries: [],
   globeDesign: 'orbit',
   darkMode: true,
   singaporeSpotlight: false,
@@ -57,6 +59,16 @@ const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
 const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'list'];
 const VALID_GLOBE_DESIGNS = new Set(GLOBE_DESIGNS);
 
+function getMemberCountry(member) {
+  if (member?.country) return member.country;
+  const parts = member?.location?.split(',') ?? [];
+  return parts[parts.length - 1]?.trim() || null;
+}
+
+function getRouteSelections(params, key) {
+  return [...new Set(params.getAll(key).map((value) => value.trim()).filter(Boolean))];
+}
+
 function getRouteStateFromUrl() {
   if (typeof window === 'undefined') return DEFAULT_ROUTE_STATE;
 
@@ -65,12 +77,13 @@ function getRouteStateFromUrl() {
   const view = params.get('view');
   const theme = params.get('theme');
   const spotlight = params.get('sg') === '1';
-  const hasShareState = ['tab', 'tag', 'country', 'view', 'theme', 'sg'].some((key) => params.has(key));
+  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'sg'].some((key) => params.has(key));
 
   return {
     activeCategory: spotlight ? 'cloud-clubs' : VALID_CATEGORIES.has(tab) ? tab : DEFAULT_ROUTE_STATE.activeCategory,
     selectedTag: params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
-    selectedCountry: params.get('country') || (spotlight ? 'Singapore' : DEFAULT_ROUTE_STATE.selectedCountry),
+    selectedRegions: spotlight ? ['asia'] : getRouteSelections(params, 'region'),
+    selectedCountries: spotlight ? ['Singapore'] : getRouteSelections(params, 'country'),
     globeDesign: spotlight ? 'classic' : VALID_GLOBE_DESIGNS.has(view) ? view : DEFAULT_ROUTE_STATE.globeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
     singaporeSpotlight: spotlight,
@@ -78,13 +91,14 @@ function getRouteStateFromUrl() {
   };
 }
 
-function writeRouteStateToUrl({ activeCategory, selectedTag, selectedCountry, globeDesign, darkMode, singaporeSpotlight }) {
+function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, singaporeSpotlight }) {
   if (typeof window === 'undefined') return;
 
   const params = new URLSearchParams();
   if (activeCategory !== DEFAULT_ROUTE_STATE.activeCategory) params.set('tab', activeCategory);
   if (selectedTag) params.set('tag', selectedTag);
-  if (selectedCountry) params.set('country', selectedCountry);
+  selectedRegions.forEach((region) => params.append('region', region));
+  selectedCountries.forEach((country) => params.append('country', country));
   if (globeDesign !== DEFAULT_ROUTE_STATE.globeDesign) params.set('view', globeDesign);
   if (!darkMode) params.set('theme', 'light');
   if (singaporeSpotlight) params.set('sg', '1');
@@ -122,7 +136,8 @@ export default function App() {
   const [selectedMember, setSelectedMember] = useState(null);
   const [selectedNewsItems, setSelectedNewsItems] = useState([]);
   const [selectedTag, setSelectedTag] = useState(routeState.selectedTag);
-  const [selectedCountry, setSelectedCountry] = useState(routeState.selectedCountry);
+  const [selectedRegions, setSelectedRegions] = useState(routeState.selectedRegions);
+  const [selectedCountries, setSelectedCountries] = useState(routeState.selectedCountries);
   const [darkMode, setDarkMode] = useState(routeState.darkMode);
   const [globeDesign, setGlobeDesign] = useState(routeState.globeDesign);
   const [zoomCommand, setZoomCommand] = useState({ direction: null, nonce: 0 });
@@ -142,7 +157,9 @@ export default function App() {
 
   const isCommunityBuilderView = activeCategory === 'community-builders';
   const isListView = globeDesign === 'list';
-  const loadFullCommunityBuilders = isCommunityBuilderView && (isListView || Boolean(selectedTag || selectedCountry));
+  const loadFullCommunityBuilders = isCommunityBuilderView && (
+    isListView || Boolean(selectedTag || selectedRegions.length || selectedCountries.length)
+  );
   const { error, members, loading } = useCategory(activeCategory, loadFullCommunityBuilders);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading && !isListView;
@@ -182,11 +199,7 @@ export default function App() {
 
     const set = new Set(
       members
-        .map((member) => {
-          if (!member.location) return null;
-          const parts = member.location.split(',');
-          return parts[parts.length - 1].trim();
-        })
+        .map(getMemberCountry)
         .filter(Boolean)
     );
     return [...set].sort();
@@ -198,24 +211,43 @@ export default function App() {
     const counts = {};
     members.forEach((member) => {
       if (!member.location) return;
-      const parts = member.location.split(',');
-      const country = parts[parts.length - 1].trim();
+      const country = getMemberCountry(member);
+      if (!country) return;
       counts[country] = (counts[country] ?? 0) + 1;
     });
     return counts;
   }, [isCommunityBuilderView, members]);
 
+  const regionCounts = useMemo(() => {
+    const counts = {};
+    Object.entries(countryCounts).forEach(([country, count]) => {
+      const region = getRegionForCountry(country);
+      if (region) counts[region] = (counts[region] ?? 0) + count;
+    });
+    return counts;
+  }, [countryCounts]);
+
+  const regions = useMemo(
+    () => REGIONS.filter((region) => (regionCounts[region.id] ?? 0) > 0),
+    [regionCounts]
+  );
+
+  const regionCountries = useMemo(
+    () => selectedRegions.length
+      ? countries.filter((country) => selectedRegions.includes(getRegionForCountry(country)))
+      : countries,
+    [countries, selectedRegions]
+  );
+
   const directoryMembers = useMemo(() => {
     return members.filter((member) => {
       if (selectedTag && member.tag !== selectedTag) return false;
-      if (selectedCountry) {
-        const parts = member.location?.split(',') ?? [];
-        const country = parts[parts.length - 1]?.trim();
-        if (country !== selectedCountry) return false;
-      }
+      const country = getMemberCountry(member);
+      if (selectedRegions.length && !selectedRegions.includes(getRegionForCountry(country))) return false;
+      if (selectedCountries.length && !selectedCountries.includes(country)) return false;
       return true;
     });
-  }, [members, selectedTag, selectedCountry]);
+  }, [members, selectedTag, selectedRegions, selectedCountries]);
 
   const filteredMembers = useMemo(
     () => directoryMembers.filter((member) => member.lat !== 0 || member.lng !== 0),
@@ -239,12 +271,13 @@ export default function App() {
   }, [activeCategory, members]);
 
   const flyToTarget = useMemo(() => {
-    if (!selectedCountry) return null;
+    if (!selectedCountries.length) return null;
+
+    const selectedCountrySet = new Set(selectedCountries);
 
     const matching = members.filter((member) => {
       if (member.lat === 0 && member.lng === 0) return false;
-      const parts = member.location?.split(',') ?? [];
-      return parts[parts.length - 1]?.trim() === selectedCountry;
+      return selectedCountrySet.has(getMemberCountry(member));
     });
 
     if (!matching.length) return null;
@@ -252,7 +285,7 @@ export default function App() {
     const lat = matching.reduce((sum, member) => sum + member.lat, 0) / matching.length;
     const lng = matching.reduce((sum, member) => sum + member.lng, 0) / matching.length;
     return { lat, lng };
-  }, [selectedCountry, members]);
+  }, [selectedCountries, members]);
   const resolvedFlyToTarget = nearMeTarget ?? flyToTarget;
 
   const displayedMembers = isListView ? directoryMembers : filteredMembers;
@@ -262,7 +295,7 @@ export default function App() {
     : filteredMembers.length;
   const hudSubLabel = isCommunityBuilderView && !loadFullCommunityBuilders
     ? `${(communityBuilderMeta.mappedTotal ?? filteredMembers.length).toLocaleString()} mapped across ${members.length.toLocaleString()} locations`
-    : selectedTag || selectedCountry
+    : selectedTag || selectedRegions.length || selectedCountries.length
       ? `filtered / ${members.length.toLocaleString()} total`
       : 'members worldwide';
   const activeError = isNewsView ? newsError : error;
@@ -374,7 +407,7 @@ export default function App() {
       (cluster?.clusterOnly || cluster?.builderCount || cluster?.name?.includes('Community Builders in'))
     ) {
       const parts = cluster.location?.split(',') ?? [];
-      setSelectedCountry(cluster.country || parts[parts.length - 1]?.trim() || cluster.location);
+      setSelectedCountries([cluster.country || parts[parts.length - 1]?.trim() || cluster.location]);
       return;
     }
 
@@ -397,10 +430,20 @@ export default function App() {
     setSelectedMember(null);
     setSelectedNewsItems([]);
     setSelectedTag(null);
-    setSelectedCountry(null);
+    setSelectedRegions([]);
+    setSelectedCountries([]);
     setSingaporeSpotlight(null);
     setActiveCategory(category);
     if (category === 'news') setNewsPanelOpen(true);
+  }, []);
+
+  const handleRegionChange = useCallback((regions) => {
+    setSelectedRegions(regions);
+    if (regions.length) {
+      setSelectedCountries((current) => (
+        current.filter((country) => regions.includes(getRegionForCountry(country)))
+      ));
+    }
   }, []);
 
   const triggerZoom = useCallback((direction) => {
@@ -436,7 +479,8 @@ export default function App() {
   const handleSingaporeSpotlight = useCallback(() => {
     if (singaporeSpotlight) {
       setSelectedTag(null);
-      setSelectedCountry(null);
+      setSelectedRegions([]);
+      setSelectedCountries([]);
       setNearMeTarget(null);
       setSingaporeSpotlight(null);
       setGlobeDesign('orbit');
@@ -444,7 +488,8 @@ export default function App() {
     }
 
     setSelectedTag(null);
-    setSelectedCountry('Singapore');
+    setSelectedRegions(['asia']);
+    setSelectedCountries(['Singapore']);
     setNearMeTarget({ ...SINGAPORE_CENTER, nonce: Date.now() });
     setGlobeDesign('classic');
     setSingaporeSpotlight({ nonce: Date.now() });
@@ -467,12 +512,13 @@ export default function App() {
     writeRouteStateToUrl({
       activeCategory,
       selectedTag,
-      selectedCountry,
+      selectedRegions,
+      selectedCountries,
       globeDesign,
       darkMode,
       singaporeSpotlight: Boolean(singaporeSpotlight),
     });
-  }, [activeCategory, darkMode, globeDesign, selectedCountry, selectedTag, singaporeSpotlight]);
+  }, [activeCategory, darkMode, globeDesign, selectedCountries, selectedRegions, selectedTag, singaporeSpotlight]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -481,7 +527,8 @@ export default function App() {
       setSelectedNewsItems([]);
       setActiveCategory(nextRouteState.activeCategory);
       setSelectedTag(nextRouteState.selectedTag);
-      setSelectedCountry(nextRouteState.selectedCountry);
+      setSelectedRegions(nextRouteState.selectedRegions);
+      setSelectedCountries(nextRouteState.selectedCountries);
       setGlobeDesign(nextRouteState.globeDesign);
       setDarkMode(nextRouteState.darkMode);
       setNewsPanelOpen(nextRouteState.activeCategory === 'news');
@@ -519,10 +566,14 @@ export default function App() {
           activeCategory={activeCategory}
           onChange={handleCategoryChange}
           darkMode={darkMode}
-          countries={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? [] : countries}
+          countries={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? [] : regionCountries}
           countryCounts={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
-          selectedCountry={selectedCountry}
-          onCountryChange={setSelectedCountry}
+          regions={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? [] : regions}
+          regionCounts={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? {} : regionCounts}
+          selectedRegions={selectedRegions}
+          onRegionChange={handleRegionChange}
+          selectedCountries={selectedCountries}
+          onCountryChange={setSelectedCountries}
         />
 
         {!isCommunityDayView && !isNewsView && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
@@ -829,7 +880,7 @@ export default function App() {
             <>
               {isListView ? (
                 <ListScene
-                  key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedCountry ?? 'all'}-list`}
+                  key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-list`}
                   category={activeCategory}
                   members={directoryMembers}
                   loading={loading}
@@ -856,7 +907,7 @@ export default function App() {
                           members: singaporeSpotlightMembers,
                         } : null,
                       },
-                      `${activeCategory}-${globeDesign}-${selectedTag ?? 'all'}-${selectedCountry ?? 'all'}-${darkMode}-${singaporeSpotlight?.nonce ?? 'global'}`
+                      `${activeCategory}-${globeDesign}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-${darkMode}-${singaporeSpotlight?.nonce ?? 'global'}`
                     )}
                     {activeCategory === 'kiro-ambassadors' && !loading && <KiroAvatarOverlay />}
                   </div>

@@ -75,7 +75,8 @@ Keep `.env.local` private; it is ignored by Git.
 - `npm run preview` previews the production build locally
 - `npm run lint` runs ESLint
 - `npm run scrape` runs the scraping pipeline entry script
-- `npm run update:community-data` scrapes the AWS Heroes, Community Builders, User Groups, and Student Builder Groups directories, handles pagination, geocodes new locations, and rebuilds the Community Builder cluster summary
+- `npm run update:community-data` scrapes the AWS Heroes, Community Builders, User Groups, and Student Builder Groups directories, handles pagination, geocodes new locations, adds public social links from Builder Center profiles, and rebuilds the Community Builder cluster summary
+- `npm run update:builder-profiles` refreshes only the optional public social links shown on Community Builder, Hero, and Student Builder Group leader cards
 - `npm run update:news` refreshes the Builder Center news feed
 - `npm run update:kiro-events` refreshes Kiro event data
 

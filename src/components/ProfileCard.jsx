@@ -10,6 +10,86 @@ const CATEGORY_LABELS = {
   'kiro-events': 'Kiro Event',
 };
 
+const SOCIAL_LINK_META = [
+  { key: 'linkedin', label: 'LinkedIn' },
+  { key: 'github', label: 'GitHub' },
+  { key: 'x', label: 'X' },
+  { key: 'devto', label: 'DEV' },
+  { key: 'youtube', label: 'YouTube' },
+  { key: 'facebook', label: 'Facebook' },
+  { key: 'repost', label: 'AWS re:Post' },
+  { key: 'blog', label: 'Blog' },
+  { key: 'website', label: 'Website' },
+];
+
+function SocialIcon({ type }) {
+  const commonProps = {
+    'aria-hidden': true,
+    className: 'h-4 w-4',
+    fill: 'none',
+    viewBox: '0 0 24 24',
+  };
+
+  switch (type) {
+    case 'linkedin':
+      return (
+        <svg {...commonProps} fill="currentColor">
+          <path d="M5.2 8.3H2.4V21h2.8V8.3ZM3.8 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM8.2 8.3H11V10h.1c.4-.8 1.4-2.1 4.1-2.1 4.4 0 5.2 2.8 5.2 6.6V21h-2.9v-5.8c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21H8.2V8.3Z" />
+        </svg>
+      );
+    case 'github':
+      return (
+        <svg {...commonProps} fill="currentColor">
+          <path fillRule="evenodd" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.7-1.1-4.7-5A3.9 3.9 0 0 1 6.7 8.6c-.1-.3-.5-1.3.1-2.8 0 0 .9-.3 2.8 1.1a9.7 9.7 0 0 1 5.1 0c1.9-1.3 2.8-1.1 2.8-1.1.6 1.5.2 2.5.1 2.8a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" clipRule="evenodd" />
+        </svg>
+      );
+    case 'x':
+      return (
+        <svg {...commonProps} fill="currentColor">
+          <path d="M18.6 3h3.1l-6.8 7.8L23 21h-6.4l-5-6.6L5.8 21H2.7l7.4-8.5L2.3 3h6.6l4.5 5.9L18.6 3Zm-1.1 16h1.7L8 4.9H6.2L17.5 19Z" />
+        </svg>
+      );
+    case 'devto':
+      return (
+        <svg {...commonProps} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+          <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
+        </svg>
+      );
+    case 'youtube':
+      return (
+        <svg {...commonProps} fill="currentColor">
+          <path d="M22.5 7.1a2.8 2.8 0 0 0-2-2C18.7 4.6 12 4.6 12 4.6s-6.7 0-8.5.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 4.9 2.8 2.8 0 0 0 2 2c1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-4.9ZM9.8 15.4V8.6l5.8 3.4-5.8 3.4Z" />
+        </svg>
+      );
+    case 'facebook':
+      return (
+        <svg {...commonProps} fill="currentColor">
+          <path d="M13.8 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5H17V3.6c-.8-.1-1.6-.2-2.4-.2-2.4 0-4.1 1.5-4.1 4.2v2.3H7.8V13h2.7v8h3.3Z" />
+        </svg>
+      );
+    case 'repost':
+      return (
+        <svg {...commonProps} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+          <path d="M17 3.5 20.5 7 17 10.5M3.5 11V9a2 2 0 0 1 2-2h15M7 20.5 3.5 17 7 13.5M20.5 13v2a2 2 0 0 1-2 2h-15" />
+        </svg>
+      );
+    case 'blog':
+      return (
+        <svg {...commonProps} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+          <path d="M6 3h9l4 4v14H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+          <path d="M14 3v5h5M8 13h8M8 17h6" />
+        </svg>
+      );
+    default:
+      return (
+        <svg {...commonProps} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18" />
+        </svg>
+      );
+  }
+}
+
 function LoadingSpinner({ size = 16 }) {
   return (
     <span
@@ -92,6 +172,82 @@ function NewMemberBadge({ compact = false }) {
     >
       NEW
     </span>
+  );
+}
+
+function SocialLinks({ socialLinks, darkMode, compact = false }) {
+  const links = SOCIAL_LINK_META
+    .map((meta) => ({ ...meta, url: socialLinks?.[meta.key] }))
+    .filter((link) => link.url);
+
+  if (!links.length) return null;
+
+  const borderColor = darkMode ? 'rgba(139, 155, 170, 0.42)' : 'rgba(90, 122, 153, 0.38)';
+  const textColor = darkMode ? '#DCE7F0' : '#17324B';
+  const backgroundColor = darkMode ? 'rgba(15, 25, 35, 0.48)' : 'rgba(240, 247, 255, 0.82)';
+
+  return (
+    <div
+      className={compact ? 'mt-2 flex flex-wrap gap-1' : 'flex max-w-sm flex-wrap justify-center gap-2'}
+      aria-label="Public social links"
+    >
+      {links.map((link) => (
+        <a
+          key={link.key}
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={link.label}
+          aria-label={`Open ${link.label} for this member`}
+          className={`inline-flex items-center justify-center rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${compact ? 'h-7 w-7' : 'h-9 w-9'}`}
+          style={{
+            border: `1px solid ${borderColor}`,
+            color: textColor,
+            backgroundColor,
+            outlineColor: '#FF9900',
+          }}
+          onMouseEnter={(event) => {
+            event.currentTarget.style.borderColor = '#FF9900';
+            event.currentTarget.style.color = '#FF9900';
+          }}
+          onMouseLeave={(event) => {
+            event.currentTarget.style.borderColor = borderColor;
+            event.currentTarget.style.color = textColor;
+          }}
+        >
+          <SocialIcon type={link.key} />
+        </a>
+      ))}
+    </div>
+  );
+}
+
+function StudentLeaderSocialLinks({ member, darkMode, compact = false }) {
+  const leaders = Array.isArray(member.ledBy)
+    ? member.ledBy.filter((leader) => leader?.socialLinks && Object.keys(leader.socialLinks).length > 0)
+    : [];
+
+  if (!leaders.length) return null;
+
+  const nameColor = darkMode ? '#DCE7F0' : '#17324B';
+  const cardBg = darkMode ? 'rgba(15, 25, 35, 0.45)' : 'rgba(240, 247, 255, 0.82)';
+  const borderColor = darkMode ? 'rgba(62, 95, 123, 0.36)' : 'rgba(150, 179, 205, 0.48)';
+
+  return (
+    <div className={compact ? 'mt-2 flex flex-col gap-1.5' : 'flex flex-col gap-2'}>
+      {leaders.map((leader, index) => (
+        <div
+          key={leader.profileUrl || `${leader.name || 'leader'}-${index}`}
+          className={compact ? 'rounded-lg px-2 py-1.5' : 'rounded-xl px-3 py-2.5'}
+          style={{ backgroundColor: cardBg, border: `1px solid ${borderColor}` }}
+        >
+          <p className={compact ? 'text-[11px] font-semibold' : 'text-xs font-semibold'} style={{ color: nameColor }}>
+            {leader.name || 'Student Builder Group leader'}
+          </p>
+          <SocialLinks socialLinks={leader.socialLinks} darkMode={darkMode} compact />
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -264,6 +420,7 @@ function CloudClubSingleView({ member, darkMode, url }) {
           </a>
         )}
       </div>
+      <StudentLeaderSocialLinks member={member} darkMode={darkMode} />
     </div>
   );
 }
@@ -319,6 +476,7 @@ function SingleMemberView({ member, darkMode }) {
           {member.location}
         </p>
       )}
+      <SocialLinks socialLinks={member.socialLinks} darkMode={darkMode} />
       {isEvent && member.description && (
         <p className="max-w-sm text-center text-sm leading-6" style={{ color: mutedColor }}>
           {member.description}
@@ -377,6 +535,9 @@ function ClusterListView({ members, darkMode }) {
                   Led by {getLeaderNames(m).join(', ')}
                 </p>
               )}
+              {m.category === 'cloud-clubs' && (
+                <StudentLeaderSocialLinks member={m} darkMode={darkMode} compact />
+              )}
               {m.heroType && (
                 <p className="text-xs font-medium" style={{ color: '#FF9900' }}>
                   {m.heroType}
@@ -387,6 +548,7 @@ function ClusterListView({ members, darkMode }) {
               <p className="text-xs" style={{ color: mutedColor }}>
                 {m.location}
               </p>
+              <SocialLinks socialLinks={m.socialLinks} darkMode={darkMode} compact />
             </div>
             {(m.profileUrl || m.joinUrl) && (
               <a

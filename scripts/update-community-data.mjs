@@ -27,6 +27,10 @@ const ONLY = new Set(
 const MAX_LOAD_CLICKS = Number.parseInt(process.env.COMMUNITY_DATA_MAX_LOAD_CLICKS || '200', 10);
 const BASELINE_REF = process.env.COMMUNITY_DATA_BASELINE_REF || '';
 const INFER_BUILDER_LOCATIONS = process.env.COMMUNITY_DATA_INFER_BUILDER_LOCATIONS === '1';
+const HERO_PROFILE_CONCURRENCY = Math.max(
+  1,
+  Number.parseInt(process.env.COMMUNITY_DATA_HERO_PROFILE_CONCURRENCY || '4', 10),
+);
 
 const geoCache = existsSync(GEO_CACHE_FILE)
   ? JSON.parse(readFileSync(GEO_CACHE_FILE, 'utf8'))
@@ -285,7 +289,8 @@ async function scrapeHeroes(page) {
   const existing = readBaselineJson('heroes.json');
   const existingMap = existingBy(existing, 'hero_page_url');
   const existingByNameLocation = new Map(existing.map((hero) => [locationKey(hero), hero]));
-  const withCoordinates = await addCoordinates(mergeCoordinates(rawHeroes, existing, 'hero_page_url'));
+  const heroesWithProfiles = await addHeroBuilderProfileUrls(page, rawHeroes, existingMap);
+  const withCoordinates = await addCoordinates(mergeCoordinates(heroesWithProfiles, existing, 'hero_page_url'));
   const heroes = withCoordinates.map((hero) => {
     const previous = findPrevious(hero, existingMap, existingByNameLocation, 'hero_page_url');
     return {
@@ -297,6 +302,68 @@ async function scrapeHeroes(page) {
   });
   if (!DRY_RUN && heroes.length < 50) throw new Error(`Heroes scrape returned only ${heroes.length} records`);
   writeJson('heroes.json', heroes);
+}
+
+function normalizeBuilderProfileUrl(href) {
+  try {
+    const url = new URL(href, 'https://builder.aws.com');
+    const alias = decodeURIComponent(url.pathname.split('/').filter(Boolean).at(-1) ?? '').replace(/^@/, '');
+    if (!alias || url.pathname.includes('/community/heroes/')) return '';
+    return `https://builder.aws.com/community/@${alias}`;
+  } catch {
+    return '';
+  }
+}
+
+async function addHeroBuilderProfileUrls(page, heroes, existingMap) {
+  const enriched = heroes.map((hero) => ({
+    ...hero,
+    builderProfileUrl: existingMap.get(hero.hero_page_url)?.builderProfileUrl || '',
+  }));
+  const pendingIndexes = enriched
+    .map((hero, index) => (hero.builderProfileUrl ? -1 : index))
+    .filter((index) => index >= 0);
+
+  if (!pendingIndexes.length) return enriched;
+
+  console.log(` Resolving ${pendingIndexes.length} Hero Builder Center profiles...`);
+  let cursor = 0;
+  let completed = 0;
+
+  async function worker() {
+    const detailPage = await page.context().newPage();
+    try {
+      while (cursor < pendingIndexes.length) {
+        const index = pendingIndexes[cursor];
+        cursor += 1;
+        const hero = enriched[index];
+
+        try {
+          await detailPage.goto(hero.hero_page_url, { waitUntil: 'domcontentloaded', timeout: 45_000 });
+          const activityLink = detailPage.getByRole('link', { name: 'View Builder Center activity', exact: true });
+          const href = await activityLink.getAttribute('href', { timeout: 12_000 });
+          enriched[index] = {
+            ...hero,
+            builderProfileUrl: normalizeBuilderProfileUrl(href),
+          };
+        } catch (error) {
+          console.warn(`Could not resolve Builder Center profile for ${hero.name}: ${error.message}`);
+        }
+
+        completed += 1;
+        if (completed % 25 === 0 || completed === pendingIndexes.length) {
+          console.log(` Resolved ${completed}/${pendingIndexes.length} Hero profile pages`);
+        }
+      }
+    } finally {
+      await detailPage.close();
+    }
+  }
+
+  await Promise.all(
+    Array.from({ length: Math.min(HERO_PROFILE_CONCURRENCY, pendingIndexes.length) }, () => worker()),
+  );
+  return enriched;
 }
 
 async function scrapeCommunityBuilders(page) {
@@ -531,6 +598,7 @@ function extractDirectoryGroups(kind) {
         leadersByHref.set(href, {
           name: text || existing.name || image?.getAttribute('alt')?.trim() || '',
           imageUrl: image?.getAttribute('src') || existing.imageUrl || '',
+          profileUrl: new URL(href, window.location.origin).toString(),
         });
       }
 
@@ -601,7 +669,7 @@ async function scrapeStudentBuilderGroups(page) {
       location: group.location,
       joinUrl: group.joinUrl,
       profileUrl: group.profileUrl,
-      ledBy: previous?.ledBy?.length ? previous.ledBy : group.ledBy,
+      ledBy: mergeStudentLeaders(group.ledBy, previous?.ledBy),
       lat: group.lat,
       lng: group.lng,
       isNew: !previous,
@@ -612,13 +680,38 @@ async function scrapeStudentBuilderGroups(page) {
   writeJson('cloud-clubs.json', groups);
 }
 
+function mergeStudentLeaders(currentLeaders = [], previousLeaders = []) {
+  if (!currentLeaders.length) return previousLeaders;
+
+  const previousByName = new Map(
+    previousLeaders
+      .filter((leader) => leader?.name)
+      .map((leader) => [normalizedLookupValue(leader.name), leader]),
+  );
+
+  return currentLeaders.map((leader, index) => {
+    const previous = previousByName.get(normalizedLookupValue(leader.name))
+      || (currentLeaders.length === previousLeaders.length ? previousLeaders[index] : null);
+    const profileUrl = leader.profileUrl || previous?.profileUrl || '';
+    const merged = {
+      ...previous,
+      name: previous?.name || leader.name,
+      imageUrl: previous?.imageUrl || leader.imageUrl,
+      ...(profileUrl ? { profileUrl } : {}),
+    };
+
+    return merged;
+  });
+}
+
 async function main() {
   const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage({
+  const context = await browser.newContext({
     userAgent:
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
     viewport: { width: 1440, height: 1200 },
   });
+  const page = await context.newPage();
 
   try {
     if (ONLY.size === 0 || ONLY.has('heroes')) await scrapeHeroes(page);
