@@ -11,6 +11,7 @@ const TABS = [
   { label: 'Student Builder Groups', key: 'cloud-clubs' },
   { label: 'Kiro', key: 'kiro-ambassadors' },
   { label: 'News', key: 'news' },
+  { label: 'Experimental', key: 'experimental' },
 ];
 
 /**

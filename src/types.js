@@ -1,5 +1,5 @@
 /**
- * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'aws-community-day-singapore' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'kiro-events'} CategoryKey
+ * @typedef {'heroes' | 'experimental' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'aws-community-day-singapore' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'kiro-events'} CategoryKey
  */
 
 /**
@@ -12,6 +12,7 @@
  * @property {number} lat       - Geographic latitude
  * @property {number} lng       - Geographic longitude
  * @property {string} [profileUrl]
+ * @property {string} [builderProfileUrl]
  * @property {string} [tag]
  * @property {string} [heroType]
  * @property {string} [builderType]

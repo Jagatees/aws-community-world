@@ -7,6 +7,7 @@ import TagFilter from './components/TagFilter';
 import KiroAvatarOverlay from './components/KiroAvatarOverlay';
 import ListScene from './components/ListScene';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
+import ExperimentalHeroDex from './components/ExperimentalHeroDex';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 import communityBuilderMeta from './data/community-builders-meta.json';
@@ -16,6 +17,7 @@ const SplashScreen = lazy(() => import('./components/SplashScreen'));
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
+  experimental: '#30D6F4',
   'community-builders': '#1A9C3E',
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
@@ -27,6 +29,7 @@ const CATEGORY_COLORS = {
 
 const CATEGORY_LABELS = {
   heroes: 'Heroes',
+  experimental: 'Experimental',
   'community-builders': 'Community Builders',
   'user-groups': 'User Groups',
   'cloud-clubs': 'Student Builder Groups',
@@ -153,6 +156,7 @@ export default function App() {
   const selectedNewsFlyTarget = flyToOverride;
   const isCommunityDayView = activeCategory === 'aws-community-day-singapore';
   const isNewsView = activeCategory === 'news';
+  const isExperimentalView = activeCategory === 'experimental';
   const globeReady = !showSplash;
 
   const isCommunityBuilderView = activeCategory === 'community-builders';
@@ -566,17 +570,17 @@ export default function App() {
           activeCategory={activeCategory}
           onChange={handleCategoryChange}
           darkMode={darkMode}
-          countries={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? [] : regionCountries}
-          countryCounts={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
-          regions={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? [] : regions}
-          regionCounts={isCommunityDayView || isNewsView || isKiroView || isAwsAmbassadorView ? {} : regionCounts}
+          countries={isCommunityDayView || isNewsView || isExperimentalView || isKiroView || isAwsAmbassadorView ? [] : regionCountries}
+          countryCounts={isCommunityDayView || isNewsView || isExperimentalView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
+          regions={isCommunityDayView || isNewsView || isExperimentalView || isKiroView || isAwsAmbassadorView ? [] : regions}
+          regionCounts={isCommunityDayView || isNewsView || isExperimentalView || isKiroView || isAwsAmbassadorView ? {} : regionCounts}
           selectedRegions={selectedRegions}
           onRegionChange={handleRegionChange}
           selectedCountries={selectedCountries}
           onCountryChange={setSelectedCountries}
         />
 
-        {!isCommunityDayView && !isNewsView && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
+        {!isCommunityDayView && !isNewsView && !isExperimentalView && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -603,7 +607,9 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          {isCommunityDayView ? (
+          {isExperimentalView ? (
+            <ExperimentalHeroDex members={members} loading={loading} darkMode={darkMode} />
+          ) : isCommunityDayView ? (
             <Suspense fallback={renderGlobeLoading()}>
               <AwsCommunityDaySingaporeScene darkMode={darkMode} />
             </Suspense>
@@ -1153,7 +1159,7 @@ export default function App() {
           )}
         </div>
 
-        {!isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
+        {!isNewsView && !isExperimentalView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
           <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
         )}
 

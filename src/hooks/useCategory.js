@@ -5,6 +5,7 @@ const categoryRequestCache = new Map();
 
 const DATA_LOADERS = {
   heroes: () => import('../data/heroes.json'),
+  experimental: () => import('../data/heroes.json'),
   'community-builders': () => import('../data/community-builders.json'),
   'user-groups': () => import('../data/user-groups.json'),
   'cloud-clubs': () => import('../data/cloud-clubs.json'),
@@ -24,6 +25,7 @@ function normalizeMembers(raw, category) {
     name: item.name ?? '',
     avatarUrl: item.avatarUrl ?? item.image_url ?? '',
     profileUrl: item.profileUrl ?? item.hero_page_url ?? item.joinUrl ?? '',
+    builderProfileUrl: item.builderProfileUrl ?? '',
     location: item.location ?? '',
     lat: item.lat ?? 0,
     lng: item.lng ?? 0,
