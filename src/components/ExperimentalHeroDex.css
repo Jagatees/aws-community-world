@@ -507,18 +507,22 @@
   position: absolute;
   z-index: 5;
   bottom: clamp(0.8rem, 2.5vh, 1.7rem);
-  left: clamp(1rem, 3vw, 2.5rem);
+  right: clamp(1rem, 3vw, 2.5rem);
   display: flex;
   align-items: center;
-  gap: 1rem;
-  transform: none;
+  gap: 0.25rem;
+  padding: 0.3rem;
+  border: 1px solid rgba(104, 148, 180, 0.38);
+  border-radius: 999px;
+  background: rgba(12, 25, 36, 0.9);
+  box-shadow: 0 14px 34px rgba(3, 12, 21, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
 }
 
 @media (max-width: 900px) {
   .hero-dex__controls {
     bottom: 5.25rem;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0.9rem;
   }
 }
 
@@ -536,6 +540,13 @@
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
+.hero-dex__controls > button {
+  border-color: transparent;
+  color: #b7c6d2;
+  background: transparent;
+  box-shadow: none;
+}
+
 .hero-dex__controls > button:hover,
 .hero-dex__controls > button:focus-visible,
 .hero-scan__footer > button:hover,
@@ -545,14 +556,6 @@
 .hero-dex__controls svg,
 .hero-scan__footer svg { width: 1.05rem; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
-.hero-dex__controls > div { display: flex; align-items: center; gap: 0.6rem; }
-.hero-dex__controls p { margin: 0; font-size: 0.66rem; line-height: 1.1; white-space: nowrap; }
-.hero-dex__controls p strong,
-.hero-dex__controls p small { display: block; }
-.hero-dex__controls p small { margin-top: 0.22rem; color: color-mix(in srgb, currentColor 52%, transparent); font: 0.56rem Consolas, monospace; }
-.hero-dex__drag-icon { display: flex; align-items: flex-end; gap: 2px; height: 1rem; transform: rotate(90deg); }
-.hero-dex__drag-icon i { width: 2px; height: 70%; background: currentColor; border-radius: 3px; }
-.hero-dex__drag-icon i:nth-child(2) { height: 100%; }
 
 /* Expanded scanner */
 .hero-scan {
@@ -843,6 +846,19 @@
   background: rgba(var(--dex-accent-rgb), 0.14);
 }
 
+.hero-dex__controls > button:hover,
+.hero-dex__controls > button:focus-visible {
+  border-color: #ffb000;
+  color: #ffd54a;
+  background: rgba(255, 153, 0, 0.14);
+}
+
+.hero-dex__controls > button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .hero-scan {
   color: #f2f3f3;
   background:
@@ -993,8 +1009,6 @@
   .hero-dex__hex { width: 4.9rem; }
   .hero-dex__hex { --hex-responsive-scale: 0.9; }
   .hero-dex__tooltip { display: none; }
-  .hero-dex__controls p small { display: none; }
-
   .hero-scan { display: block; padding-bottom: 5rem; }
   .hero-scan__header { position: sticky; top: 0; grid-template-columns: 1fr auto; padding: 0.75rem; }
   .hero-scan__back { font-size: 0; }

@@ -14,7 +14,7 @@ const SOCIAL_LABELS = {
   repost: 'Repost',
 };
 
-const AWS_HERO_PLACEHOLDER_URL = 'https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35.png';
+const AWS_HERO_PLACEHOLDER_URL = 'https://d1.awsstatic.com/getting-started-guides/new-heros-nov-2022/AWS-Heroes%20program-community-heroes_logo_dark.efe13e0d50fdf64d8a4524bf876d79a64dd82488.png';
 const COMMUNITY_BUILDER_LOGO_URL = 'https://3sky.github.io/awscb-content-catalog/Logo.png';
 const STUDENT_BUILDER_LOGO_URL = '/student-builder-group-logo.png';
 const AUTO_ORBIT_SPEED = 0.00012;
@@ -134,7 +134,6 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
   const [selectedHero, setSelectedHero] = useState(null);
   const [scanTransition, setScanTransition] = useState(null);
   const [query, setQuery] = useState('');
-  const [memberType, setMemberType] = useState('all');
   const config = CATEGORY_CONFIG[category] ?? CATEGORY_CONFIG.heroes;
   const rotationRef = useRef(0);
   const targetRotationRef = useRef(0);
@@ -149,21 +148,15 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
   const dragDistance = useRef(0);
   const suppressClickRef = useRef(false);
 
-  const memberTypes = useMemo(
-    () => [...new Set(members.map(config.filterValue).filter(Boolean))].sort(),
-    [config, members]
-  );
-
   const filteredHeroes = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return members.filter((member) => {
-      if (memberType !== 'all' && config.filterValue(member) !== memberType) return false;
       if (!normalizedQuery) return true;
       return [member.name, config.filterValue(member), member.location]
         .filter(Boolean)
         .some((value) => value.toLowerCase().includes(normalizedQuery));
     });
-  }, [config, memberType, members, query]);
+  }, [config, members, query]);
 
   const animateRotation = useCallback(() => {
     if (animationFrameRef.current !== null) return;
@@ -433,24 +426,7 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
               }}
               placeholder={`Search ${config.plural}`}
             />
-            <kbd>/</kbd>
           </label>
-          {memberTypes.length > 0 && (
-            <label className="hero-dex__select">
-              <span className="sr-only">Filter by {config.filterLabel}</span>
-              <select
-                value={memberType}
-                onChange={(event) => {
-                  setMemberType(event.target.value);
-                  resetRotation();
-                }}
-              >
-                <option value="all">All {config.filterLabel}s</option>
-                {memberTypes.map((type) => <option key={type} value={type}>{type}</option>)}
-              </select>
-              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
-            </label>
-          )}
         </div>
       </header>
 
@@ -542,7 +518,7 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
           <div className="hero-dex__empty">
             <span>00</span>
             <h2>No records found</h2>
-            <button type="button" onClick={() => { setQuery(''); setMemberType('all'); resetRotation(); }}>Clear filters</button>
+            <button type="button" onClick={() => { setQuery(''); resetRotation(); }}>Clear search</button>
           </div>
         )}
       </div>
@@ -551,10 +527,6 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
         <button type="button" onClick={() => rotate(-1)} disabled={!filteredHeroes.length} aria-label="Rotate left">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
         </button>
-        <div>
-          <span className="hero-dex__drag-icon" aria-hidden="true"><i /><i /><i /></span>
-          <p><strong>Drag or scroll</strong><small>Continuous orbit · hover to pause</small></p>
-        </div>
         <button type="button" onClick={() => rotate(1)} disabled={!filteredHeroes.length} aria-label="Rotate right">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
         </button>

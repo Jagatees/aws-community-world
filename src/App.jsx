@@ -170,6 +170,9 @@ export default function App() {
   const isCommunityBuilderView = activeCategory === 'community-builders';
   const isListView = globeDesign === 'list';
   const isIconView = globeDesign === 'icons';
+  const availableGlobeDesigns = GLOBE_DESIGNS.filter(
+    (design) => design !== 'icons' || ICON_VIEW_CATEGORIES.has(activeCategory)
+  );
   const loadFullCommunityBuilders = isCommunityBuilderView && (
     isListView || isIconView || Boolean(selectedTag || selectedRegions.length || selectedCountries.length)
   );
@@ -340,6 +343,10 @@ export default function App() {
   const styleControlBg = darkMode ? 'rgba(8, 16, 24, 0.78)' : 'rgba(255, 255, 255, 0.86)';
   const styleControlBorder = darkMode ? 'rgba(76, 109, 138, 0.45)' : 'rgba(160, 187, 212, 0.85)';
   const styleControlText = darkMode ? '#DCE7F0' : '#17324B';
+  const viewControlBg = 'rgba(12, 25, 36, 0.9)';
+  const viewControlBorder = 'rgba(104, 148, 180, 0.38)';
+  const viewControlText = '#B7C6D2';
+  const viewControlShadow = '0 14px 34px rgba(3, 12, 21, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.04)';
   const globeLoadingBg = darkMode ? 'rgba(7, 16, 25, 0.76)' : 'rgba(255, 255, 255, 0.8)';
   const globeLoadingBorder = darkMode ? 'rgba(62, 95, 123, 0.4)' : 'rgba(160, 187, 212, 0.72)';
   const globeLoadingText = darkMode ? '#A7BDCF' : '#537190';
@@ -347,24 +354,28 @@ export default function App() {
   function designButtonStyles(design) {
     const active = globeDesign === design;
     return {
-      backgroundColor: active ? '#FF9900' : 'transparent',
-      color: active ? '#0F1923' : styleControlText,
+      position: 'relative',
+      zIndex: 1,
+      backgroundColor: 'transparent',
+      color: active ? '#FFD54A' : viewControlText,
       cursor: 'pointer',
-      minWidth: '52px',
-      minHeight: '44px',
+      minWidth: '64px',
+      minHeight: '40px',
       display: 'inline-flex',
       alignItems: 'center',
       justifyContent: 'center',
       touchAction: 'manipulation',
+      transition: 'color 220ms ease, transform 160ms ease',
     };
   }
 
   function designButtonLabel(design) {
-    if (design === 'classic') return 'Mapbox';
-    if (design === 'orbit') return 'Orbit';
-    if (design === 'sleek') return 'Sleek';
-    if (design === 'icons') return 'Icons';
-    if (design === 'list') return 'List';
+    if (design === 'classic') return 'Atlas';
+    if (design === 'orbit') return 'Earth';
+    if (design === 'sleek') return 'Minimal';
+    if (design === 'flat') return 'Map';
+    if (design === 'icons') return 'Gallery';
+    if (design === 'list') return 'Directory';
     return design.charAt(0).toUpperCase() + design.slice(1);
   }
 
@@ -580,7 +591,6 @@ export default function App() {
       <div className="relative z-10 flex min-h-0 flex-1 flex-col">
         <Header
           darkMode={darkMode}
-          onToggleDark={() => setDarkMode((value) => !value)}
           activeSection={activeSection}
           onSectionChange={handleSectionChange}
         />
@@ -770,21 +780,41 @@ export default function App() {
                 >
                   <div className="flex items-stretch gap-3">
                     <div
-                      className="flex items-center rounded-full p-1"
+                      className="grid items-center rounded-full p-1"
                       style={{
-                        background: styleControlBg,
-                        border: `1px solid ${styleControlBorder}`,
+                        position: 'relative',
+                        gridTemplateColumns: `repeat(${availableGlobeDesigns.length}, minmax(64px, 1fr))`,
+                        background: viewControlBg,
+                        border: `1px solid ${viewControlBorder}`,
+                        boxShadow: viewControlShadow,
                         backdropFilter: 'blur(14px)',
                         WebkitBackdropFilter: 'blur(14px)',
                       }}
                       aria-label="Globe design switcher"
                     >
-                      {GLOBE_DESIGNS.filter((design) => design !== 'icons').map((d) => (
+                      <span
+                        aria-hidden="true"
+                        style={{
+                          position: 'absolute',
+                          left: '4px',
+                          top: '4px',
+                          bottom: '4px',
+                          width: `calc((100% - 8px) / ${availableGlobeDesigns.length})`,
+                          borderRadius: '999px',
+                          background: '#0B111B',
+                          boxShadow: 'inset 0 0 0 1px #FF9900, 0 5px 16px rgba(3, 12, 21, 0.38)',
+                          transform: `translate3d(${Math.max(0, availableGlobeDesigns.indexOf(globeDesign)) * 100}%, 0, 0)`,
+                          transition: 'transform 380ms cubic-bezier(0.22, 1, 0.36, 1)',
+                          willChange: 'transform',
+                          pointerEvents: 'none',
+                        }}
+                      />
+                      {availableGlobeDesigns.map((d) => (
                         <button
                           key={d}
                           type="button"
                           onClick={() => setGlobeDesign(d)}
-                          className="rounded-full px-3 py-1 text-xs font-semibold transition-colors capitalize"
+                          className="rounded-full px-3 py-1 text-xs font-semibold capitalize active:scale-[0.97]"
                           style={designButtonStyles(d)}
                         >
                           {designButtonLabel(d)}
@@ -795,8 +825,9 @@ export default function App() {
                     <div
                       className={`${isListView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
                       style={{
-                        background: styleControlBg,
-                        border: `1px solid ${styleControlBorder}`,
+                        background: viewControlBg,
+                        border: `1px solid ${viewControlBorder}`,
+                        boxShadow: viewControlShadow,
                         backdropFilter: 'blur(14px)',
                         WebkitBackdropFilter: 'blur(14px)',
                       }}
@@ -807,9 +838,9 @@ export default function App() {
                           key={dir}
                           type="button"
                           onClick={() => triggerZoom(dir)}
-                          className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
+                          className="map-zoom-button rounded-full px-3 py-1 text-sm font-semibold"
                           style={{
-                            color: styleControlText,
+                            color: viewControlText,
                             minWidth: '44px',
                             minHeight: '44px',
                             display: 'inline-flex',
@@ -832,13 +863,15 @@ export default function App() {
                       onMouseLeave={() => setNearMeHover(false)}
                       className={`${isListView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
                       style={{
-                        backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
-                        color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
+                        backgroundColor: nearMeLoading ? '#182735' : nearMeHover ? '#182B3A' : viewControlBg,
+                        color: nearMeLoading ? '#6F8291' : nearMeHover ? '#FFD54A' : viewControlText,
                         minHeight: '44px',
-                        border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
+                        border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : viewControlBorder}`,
+                        boxShadow: viewControlShadow,
                         transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
                         cursor: nearMeLoading ? 'wait' : 'pointer',
                         touchAction: 'manipulation',
+                        whiteSpace: 'nowrap',
                       }}
                       aria-label="Near me"
                     >
@@ -1046,21 +1079,41 @@ export default function App() {
                   {!singaporeSpotlight && (
                     <>
                       <div
-                        className="flex items-center rounded-full p-1"
+                        className="grid items-center rounded-full p-1"
                         style={{
-                          background: styleControlBg,
-                          border: `1px solid ${styleControlBorder}`,
+                          position: 'relative',
+                          gridTemplateColumns: `repeat(${availableGlobeDesigns.length}, minmax(64px, 1fr))`,
+                          background: viewControlBg,
+                          border: `1px solid ${viewControlBorder}`,
+                          boxShadow: viewControlShadow,
                           backdropFilter: 'blur(14px)',
                           WebkitBackdropFilter: 'blur(14px)',
                         }}
                         aria-label="Globe design switcher"
                       >
-                        {GLOBE_DESIGNS.filter((design) => design !== 'icons' || ICON_VIEW_CATEGORIES.has(activeCategory)).map((design) => (
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            position: 'absolute',
+                            left: '4px',
+                            top: '4px',
+                            bottom: '4px',
+                            width: `calc((100% - 8px) / ${availableGlobeDesigns.length})`,
+                            borderRadius: '999px',
+                            background: '#0B111B',
+                            boxShadow: 'inset 0 0 0 1px #FF9900, 0 5px 16px rgba(3, 12, 21, 0.38)',
+                            transform: `translate3d(${Math.max(0, availableGlobeDesigns.indexOf(globeDesign)) * 100}%, 0, 0)`,
+                            transition: 'transform 380ms cubic-bezier(0.22, 1, 0.36, 1)',
+                            willChange: 'transform',
+                            pointerEvents: 'none',
+                          }}
+                        />
+                        {availableGlobeDesigns.map((design) => (
                           <button
                             key={design}
                             type="button"
                             onClick={() => setGlobeDesign(design)}
-                            className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                            className="rounded-full px-3 py-1 text-xs font-semibold active:scale-[0.97]"
                             style={designButtonStyles(design)}
                           >
                             {designButtonLabel(design)}
@@ -1071,8 +1124,9 @@ export default function App() {
                       <div
                             className={`${isListView || isIconView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
                         style={{
-                          background: styleControlBg,
-                          border: `1px solid ${styleControlBorder}`,
+                          background: viewControlBg,
+                          border: `1px solid ${viewControlBorder}`,
+                          boxShadow: viewControlShadow,
                           backdropFilter: 'blur(14px)',
                           WebkitBackdropFilter: 'blur(14px)',
                         }}
@@ -1081,9 +1135,9 @@ export default function App() {
                         <button
                           type="button"
                           onClick={() => triggerZoom('out')}
-                          className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
+                          className="map-zoom-button rounded-full px-3 py-1 text-sm font-semibold"
                           style={{
-                            color: styleControlText,
+                            color: viewControlText,
                             minWidth: '44px',
                             minHeight: '44px',
                             display: 'inline-flex',
@@ -1099,9 +1153,9 @@ export default function App() {
                         <button
                           type="button"
                           onClick={() => triggerZoom('in')}
-                          className="rounded-full px-3 py-1 text-sm font-semibold transition-colors"
+                          className="map-zoom-button rounded-full px-3 py-1 text-sm font-semibold"
                           style={{
-                            color: styleControlText,
+                            color: viewControlText,
                             minWidth: '44px',
                             minHeight: '44px',
                             display: 'inline-flex',
@@ -1123,13 +1177,15 @@ export default function App() {
                         onMouseLeave={() => setNearMeHover(false)}
                       className={`${isListView || isIconView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
                         style={{
-                          backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
-                          color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
+                          backgroundColor: nearMeLoading ? '#182735' : nearMeHover ? '#182B3A' : viewControlBg,
+                          color: nearMeLoading ? '#6F8291' : nearMeHover ? '#FFD54A' : viewControlText,
                           minHeight: '44px',
-                          border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : styleControlBorder}`,
+                          border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : viewControlBorder}`,
+                          boxShadow: viewControlShadow,
                           transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
                           cursor: nearMeLoading ? 'wait' : 'pointer',
                           touchAction: 'manipulation',
+                          whiteSpace: 'nowrap',
                         }}
                         aria-label="Near me"
                       >

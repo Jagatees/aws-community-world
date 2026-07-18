@@ -1,109 +1,191 @@
 # AWS Community Globe
 
-An interactive experience for discovering the AWS community around the world.
+An interactive world for discovering the people, groups, events, and stories that make up the global AWS community.
 
-This project helps people explore AWS Community Heroes, Community Builders, User Groups, and Student Builder Groups across countries and regions through a more visual and interactive map experience.
+[Open the live globe](https://awscommunityglobe.click/) · [Report an issue](https://github.com/Jagatees/aws-community-world/issues)
 
-## Why I Built This
+![AWS Community Globe preview](public/preview.jpg)
 
-I wanted to make it easier to discover the people and communities shaping AWS locally and globally.
+## About the project
 
-Today, a lot of community discovery happens across separate pages, directories, and platforms. That works, but it is not always the easiest way to understand how broad, active, and connected the AWS community really is.
+AWS community information lives across several directories, event pages, and publishing platforms. AWS Community Globe brings those sources into one visual experience so people can explore who is building nearby, discover communities in other regions, and see the scale of the ecosystem.
 
-This project is my attempt to turn community discovery into something more:
+The project is built in public and is not an official AWS product.
 
-- visual
-- intuitive
-- interactive
-- useful for people trying to find nearby communities or explore other regions
+## Explore
 
-Whether someone wants to find a local AWS User Group, discover Community Builders in another country, or simply see how wide the AWS ecosystem really is, this project is designed to make that journey easier.
+### Community
 
-## What It Does
+- **Heroes** — browse AWS Heroes by specialization and location.
+- **Community Builders** — explore Builders worldwide, including country-level summaries and public Builder profiles.
+- **User Groups** — find local AWS User Groups represented by country flags.
+- **Student Builder Groups** — discover university and student-led AWS communities and their leaders.
+- **Kiro Ambassadors** — an early view of the growing Kiro community.
 
-- Browse AWS community members and groups through an interactive world experience
-- Explore AWS Community Heroes, Community Builders, User Groups, and Student Builder Groups
-- Filter by country and tag
-- Switch between multiple map experiences: Classic globe, Sleek globe, and Flat map
-- Open profile cards for people and communities
-- Jump to random visible members with spotlight controls
+### Events and news
 
-## Tech Stack
+- **Kiro Events** — discover upcoming Kiro events and open their registration pages.
+- **Community Days** — explore upcoming and previous AWS Community Days around the world.
+- **Builder News** — read the latest and trending posts from AWS Builder Center in a map-linked news panel.
+- **AWS Community Day Singapore** — a dedicated agenda, venue, map, and session-planning experience at `/community-day-singapore/`.
 
-- React 19
-- Vite
+## View modes
+
+The floating view switcher uses product-facing names instead of renderer names:
+
+| View | Internal renderer | Best for |
+| --- | --- | --- |
+| **Earth** | `globe.gl` | Photorealistic exploration, profile markers, and avatar clustering |
+| **Atlas** | Mapbox globe | Vector geography, precise navigation, and Mapbox-powered 3D scenes |
+| **Minimal** | `cobe` | A lightweight, low-detail globe overview |
+| **Map** | Mapbox flat map | Familiar two-dimensional geographic browsing |
+| **Gallery** | Custom React archive | Visually browsing profiles without using a map |
+| **Directory** | Custom React list | Scanning and opening records in a conventional list |
+
+The selected view is shown by a fluid sliding control and is stored in the URL, so a specific view can be shared.
+
+## Interaction highlights
+
+- **Merged profile clusters** — nearby Heroes, Community Builders, and Student Builder Groups combine into a segmented circular avatar on Earth and Atlas.
+- **Zoom-driven separation** — merged portraits smoothly separate as the camera moves closer.
+- **Program-specific fallbacks** — missing photos use the official AWS Community Hero, AWS Community Builder, or Student Builder Group artwork.
+- **Smart cluster totals** — Community Builder country summaries retain their complete Builder count while previewing real member portraits.
+- **Region, country, and specialty filters** — narrow the globe without losing the current view.
+- **Near Me** — use browser geolocation to move the map toward the visitor's location.
+- **Profile details** — open people, group leaders, social links, Builder profiles, event pages, and registration links.
+- **Live route state** — tab, filters, view, theme, and special views are reflected in query parameters.
+- **Singapore 3D spotlight** — Student Builder Groups include a focused Mapbox-powered Singapore experience.
+- **Responsive controls** — touch-friendly zoom, navigation, filtering, and view switching.
+- **Graceful fallbacks** — the app can fall back to a flat SVG world map when WebGL is unavailable.
+
+## Current data snapshot
+
+The checked-in data currently contains:
+
+| Dataset | Records |
+| --- | ---: |
+| AWS Heroes | 252 |
+| AWS Community Builders | 3,037 |
+| AWS User Groups | 575 |
+| AWS Student Builder Groups | 896 |
+| AWS Community Days | 38 |
+| Kiro Events | 8 |
+| Builder News | 10 latest + 10 trending |
+
+Counts change as the data scripts are run and new directory snapshots are committed.
+
+## Tech stack
+
+- React 19 and Vite 8
 - Tailwind CSS 4
-- `globe.gl` for the classic 3D globe
-- `cobe` for the lightweight sleek globe mode
-- `d3-geo`, `topojson-client`, and `world-atlas` for the flat map view
-- Node.js scripts for scraping, geocoding, and preparing community data
+- `globe.gl` for the photorealistic Earth view
+- Mapbox GL JS for Atlas, Map, and 3D spotlight experiences
+- `cobe` for the Minimal globe
+- `d3-geo`, `topojson-client`, and `world-atlas` for the WebGL fallback map
+- Phosphor Icons
+- Playwright-based data collection and browser verification
+- Vercel Analytics and Speed Insights
+- AWS Amplify hosting configuration
 
-## Project Goals
+## Running locally
 
-- Make AWS community discovery more accessible
-- Show the global reach of the AWS ecosystem in a more engaging way
-- Help people find relevant communities by region and interest
-- Build something useful in public while learning through iteration
+Requirements:
 
-## Running Locally
+- Node.js 22 or newer
+- npm
+
+Install dependencies and start Vite:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open:
+Open [http://localhost:5173](http://localhost:5173).
 
-```bash
-http://localhost:5173
-```
+Earth, Minimal, Gallery, Directory, and the SVG fallback run without an environment file.
 
-No environment file or AWS credentials are required to run the app. The default 3D globe works without additional configuration.
+### Enable Mapbox views
 
-The Satellite and Flat map views optionally use Mapbox. To enable them, copy `.env.example` to `.env.local` and add your own public Mapbox token:
+Atlas, Map, and Mapbox-powered 3D experiences require a public Mapbox token. Copy `.env.example` to `.env.local` and replace the example value:
 
 ```env
 VITE_MAP_BOX=pk.your_mapbox_public_token_here
 ```
 
-Keep `.env.local` private; it is ignored by Git.
+Do not commit `.env.local`; it is ignored by Git.
 
-## Available Scripts
+## Available commands
 
-- `npm run dev` starts the local development server
-- `npm run build` creates a production build
-- `npm run preview` previews the production build locally
-- `npm run lint` runs ESLint
-- `npm run scrape` runs the scraping pipeline entry script
-- `npm run update:community-data` scrapes the AWS Heroes, Community Builders, User Groups, and Student Builder Groups directories, handles pagination, geocodes new locations, adds public social links from Builder Center profiles, and rebuilds the Community Builder cluster summary
-- `npm run update:builder-profiles` refreshes only the optional public social links shown on Community Builder, Hero, and Student Builder Group leader cards
-- `npm run update:news` refreshes the Builder Center news feed
-- `npm run update:kiro-events` refreshes Kiro event data
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local Vite development server |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint across the project |
+| `npm run scrape` | Run the community scraping entry script |
+| `npm run update:community-data` | Refresh community directories, enrich profiles, geocode new locations, and rebuild Community Builder summaries |
+| `npm run update:builder-profiles` | Refresh optional public social links from Builder profiles |
+| `npm run update:news` | Refresh the Builder Center latest and trending feeds |
+| `npm run update:kiro-events` | Refresh Kiro event data |
+| `npm run build:community-builder-summary` | Rebuild the lightweight country-level Community Builder dataset |
 
-## Automated Data Refresh
+## Data pipeline
 
-GitHub Actions keeps the app data fresh:
+The source datasets live in [`src/data`](src/data). The scripts in [`scripts`](scripts) handle scraping, enrichment, geocoding, normalization, and summary generation.
 
-- Builder Center news refreshes once per day.
-- Kiro events refresh once per day.
-- AWS community directory data refreshes once per day from:
-  - `https://builder.aws.com/community/heroes`
-  - `https://builder.aws.com/community/community-builders`
-  - `https://builder.aws.com/community/user-groups`
-  - `https://builder.aws.com/community/student-builder-groups`
+The main community refresh targets these public AWS Builder Center directories:
 
-The community-data runner loads all available directory rows before saving, including pages with "Load more", "View More", or similar pagination buttons. It preserves the JSON shapes used by the app tabs and commits updates to `src/data/*.json` plus the geocoding cache.
+- [AWS Heroes](https://builder.aws.com/community/heroes)
+- [AWS Community Builders](https://builder.aws.com/community/community-builders)
+- [AWS User Groups](https://builder.aws.com/community/user-groups)
+- [AWS Student Builder Groups](https://builder.aws.com/community/student-builder-groups)
 
-Manual handling should only be needed if AWS changes the page markup/selectors, requires login, presents a captcha, or blocks headless browser access. In that case, inspect the failed GitHub Actions logs, update `scripts/update-community-data.mjs` selectors/extraction logic, and run the workflow manually after the fix.
+The refresh pipeline handles paginated directory interfaces such as “Load more” and “View More,” preserves the JSON shape expected by the app, and avoids replacing usable portraits with Builder Center's unshipped default-avatar paths.
+
+### Automation status
+
+The repository currently includes one scheduled GitHub Actions workflow:
+
+- **Builder News** runs daily at 01:00 UTC and commits changes to `src/data/news.json` when the feed changes.
+
+Community directory and Kiro event refresh commands are currently run manually. Additional scheduled workflows can be added later after their scraping reliability and source-change handling are proven.
+
+## Project structure
+
+```text
+src/
+  components/   UI, maps, globes, cards, directories, and event experiences
+  data/         Checked-in community, event, and news datasets
+  hooks/        Category loading, news loading, and globe rotation behavior
+  utils/        Flags, regions, marker helpers, and portrait clustering
+scripts/        Scraping, enrichment, geocoding, export, and summary scripts
+public/         Static images, icons, sprites, and social preview assets
+api/            Serverless endpoints used by dedicated experiences
+```
+
+## Production and deployment
+
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+
+[`amplify.yml`](amplify.yml) installs dependencies with `npm ci`, builds the Vite app, and publishes the `dist/` directory. The production site is available at [awscommunityglobe.click](https://awscommunityglobe.click/).
+
+## Contributing
+
+Issues and focused pull requests are welcome. Useful contributions include:
+
+- correcting community or event data
+- improving accessibility and mobile behavior
+- making scrapers more resilient to source changes
+- improving map performance and marker clarity
+- adding reliable tests for interactions and data normalization
+
+Please run `npm run lint` and `npm run build` before opening a pull request.
 
 ## Status
 
-This project is still actively being improved. The core idea is already in place, and I am continuing to refine the experience, interactions, and data quality.
-
-## Build In Public
-
-I’m building a new way to discover the AWS community around the world.
-
-The goal is simple: make it easier to find the people and communities shaping AWS locally and globally.
-
-Still in progress, but I’m excited about the idea of making community discovery more interactive and useful for everyone in the ecosystem.
+AWS Community Globe is actively evolving. Data completeness depends on public source availability, geocoding quality, and upstream page structures. Some tabs and special experiences are intentionally early-stage.

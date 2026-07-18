@@ -3,8 +3,6 @@ import ListScene from './ListScene';
 import communityDays from '../data/community-days.json';
 import { getRegionForCountry } from '../utils/countryRegions';
 
-const SOURCE_URL = 'https://builder.aws.com/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs/aws-community-days-where-builders-learn-together';
-
 function formatDate(event) {
   const formatter = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'short', year: 'numeric' });
   const start = formatter.format(new Date(`${event.date}T12:00:00`));
@@ -83,8 +81,6 @@ export default function CommunityDaysScene({
     });
   }, [now, selectedCountries, selectedRegions]);
 
-  const upcomingCount = events.filter((event) => event.eventStatus === 'upcoming').length;
-  const pastCount = events.length - upcomingCount;
   const openOfficialSite = useCallback((payload) => {
     const event = Array.isArray(payload) ? payload[0] : payload;
     if (event?.profileUrl) window.open(event.profileUrl, '_blank', 'noopener,noreferrer');
@@ -119,27 +115,22 @@ export default function CommunityDaysScene({
       )}
 
       {!isListView && <div
-        className="pointer-events-none absolute left-4 top-4 z-20 max-w-[min(390px,calc(100vw-2rem))] rounded-2xl px-5 py-4"
-        style={{ background: panelBackground, border: `1px solid ${panelBorder}`, backdropFilter: 'blur(16px)' }}
+        className="pointer-events-none absolute left-4 top-4 z-20 min-w-[110px] rounded-xl px-3.5 py-2.5"
+        style={{ background: panelBackground, border: `1px solid ${panelBorder}`, backdropFilter: 'blur(14px)' }}
       >
-        <p className="text-[11px] font-bold uppercase tracking-[0.17em]" style={{ color: '#FF9900' }}>Community-built events</p>
-        <h1 className="mt-1 text-xl font-black tracking-[-0.025em]" style={{ color: heading }}>AWS Community Days 2026</h1>
-        <p className="mt-2 text-xs leading-5" style={{ color: muted }}>
-          Hover for the countdown. Red markers have ended; orange markers are still ahead.
-        </p>
-        <div className="mt-3 flex gap-4 text-xs font-bold" style={{ color: heading }}>
-          <span><i className="mr-1.5 inline-block h-2 w-2 rounded-full bg-[#FF9900]" />{upcomingCount} upcoming</span>
-          <span><i className="mr-1.5 inline-block h-2 w-2 rounded-full bg-[#D22C2C]" />{pastCount} ended</span>
+        <div className="mb-1.5 flex items-center gap-2">
+          <span className="relative inline-flex h-2.5 w-2.5 shrink-0 items-center justify-center">
+            <span className="absolute h-2.5 w-2.5 rounded-full bg-[#FF9900] [animation:live-ring_2s_ease-out_infinite]" />
+            <span className="relative block h-2 w-2 rounded-full bg-[#FF9900]" />
+          </span>
+          <span className="text-[0.7rem] font-bold uppercase tracking-[0.08em]" style={{ color: darkMode ? '#A7BDCF' : '#537190' }}>
+            Community Days
+          </span>
         </div>
-        <a
-          href={SOURCE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pointer-events-auto mt-3 inline-flex text-xs font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-          style={{ color: '#FF9900', outlineColor: '#FF9900' }}
-        >
-          View the AWS source article ↗
-        </a>
+        <div className="text-[1.55rem] font-black leading-none tracking-[-0.02em] tabular-nums" style={{ color: heading }}>
+          {events.length.toLocaleString()}
+        </div>
+        <div className="mt-1 text-[0.68rem] font-medium" style={{ color: muted }}>events worldwide</div>
       </div>}
 
       <div className="absolute bottom-5 left-1/2 z-30 -translate-x-1/2">

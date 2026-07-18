@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { createPortraitFallback, createPortraitGroupAvatar, getMapboxPortraitSeparation, getPortraitGroupCount, PORTRAIT_GROUP_CATEGORIES } from '../utils/portraitGroupMarker';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -75,7 +76,7 @@ function clusterMembers(members) {
   return clusters;
 }
 
-function createClusterElement(cluster, { color, darkMode, onClick }) {
+function createClusterElement(cluster, { category, color, darkMode, separation, onClick }) {
   const communityDay = cluster.members.find((member) => member.category === 'community-days');
   const userGroup = cluster.members.find((member) => member.category === 'user-groups');
   const userGroupFlagUrl = userGroup ? getMemberCountryFlagUrl(userGroup) : '';
@@ -127,9 +128,13 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
   const images = cluster.members
     .map((member) => ({ src: getMemberImage(member), name: member.name }))
     .filter((member) => member.src)
-    .slice(0, MAX_CLUSTER_AVATARS);
+    .slice(0, PORTRAIT_GROUP_CATEGORIES.has(category) ? 3 : MAX_CLUSTER_AVATARS);
 
-  if (communityDay) {
+  if (PORTRAIT_GROUP_CATEGORIES.has(category) && getPortraitGroupCount(cluster) > 1) {
+    frame.style.width = '76px';
+    frame.style.height = '64px';
+    frame.appendChild(createPortraitGroupAvatar(cluster, { category, color, darkMode, separation }));
+  } else if (communityDay) {
     const flag = document.createElement('img');
     flag.src = getCountryFlagUrl(communityDay.country);
     flag.alt = `${communityDay.country} flag`;
@@ -200,6 +205,8 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
       countBadge.style.lineHeight = '1';
       frame.appendChild(countBadge);
     }
+  } else if (PORTRAIT_GROUP_CATEGORIES.has(category) && images.length === 0) {
+    frame.appendChild(createPortraitFallback(category, darkMode));
   } else if (images.length > 0) {
     images.forEach((member, index) => {
       const img = document.createElement('img');
@@ -261,7 +268,7 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
     }
   }
 
-  if (!communityDay && !userGroupFlagUrl && images.length > 0 && cluster.members.length > MAX_CLUSTER_AVATARS) {
+  if (!PORTRAIT_GROUP_CATEGORIES.has(category) && !communityDay && !userGroupFlagUrl && images.length > 0 && cluster.members.length > MAX_CLUSTER_AVATARS) {
     const badge = document.createElement('div');
     badge.textContent = `+${cluster.members.length - MAX_CLUSTER_AVATARS}`;
     badge.style.position = 'absolute';
@@ -616,13 +623,15 @@ export default function MapboxGlobeScene({
         ? '#D22C2C'
         : heatmapEnabled ? getHeatColor(cluster.members.length) : CATEGORY_COLORS[category] ?? '#FF9900';
       const element = createClusterElement(cluster, {
+        category,
         color,
         darkMode,
+        separation: getMapboxPortraitSeparation(mapRef.current?.getZoom() ?? 1),
         onClick: () => {
           const map = mapRef.current;
           if (!map) return;
 
-          if (cluster.members.length > 1 && map.getZoom() < 2.8) {
+          if (getPortraitGroupCount(cluster) > 1 && map.getZoom() < 2.8) {
             map.easeTo({
               center: [cluster.lng, cluster.lat],
               zoom: Math.min(map.getZoom() + 1.1, 4.2),
@@ -733,6 +742,8 @@ export default function MapboxGlobeScene({
         const visible = (vec.x * centerVec.x) + (vec.y * centerVec.y) + (vec.z * centerVec.z) >= cutoff;
         const onScreen = project.x >= -80 && project.x <= width + 80 && project.y >= -80 && project.y <= height + 80;
         const hideForSingaporeSpotlight = singaporeActive && cluster.members.some((member) => member.location?.includes('Singapore'));
+        const portraitMarker = element.querySelector('[data-portrait-cluster-marker]');
+        portraitMarker?.style.setProperty('--portrait-separation', getMapboxPortraitSeparation(map.getZoom()).toFixed(3));
 
         element.style.transform = `translate(-50%, -50%) translate(${project.x}px, ${project.y}px)`;
         element.style.opacity = visible && onScreen && !hideForSingaporeSpotlight ? '1' : '0';

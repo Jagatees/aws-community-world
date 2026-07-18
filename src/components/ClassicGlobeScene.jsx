@@ -22,6 +22,228 @@ const MARKER_ALTITUDE = 0.06;
 const MIN_CAMERA_DISTANCE_FACTOR = 1.01;
 const CLASSIC_ZOOM_SPEED = 0.65;
 const CLASSIC_DAMPING_FACTOR = 0.14;
+const HERO_CLUSTER_PREVIEW_COUNT = 3;
+const HERO_CLUSTER_SEPARATION_START_ALTITUDE = 2.05;
+const HERO_CLUSTER_SEPARATION_END_ALTITUDE = 1.2;
+const AWS_HERO_PLACEHOLDER_URL = 'https://d1.awsstatic.com/getting-started-guides/new-heros-nov-2022/AWS-Heroes%20program-community-heroes_logo_dark.efe13e0d50fdf64d8a4524bf876d79a64dd82488.png';
+const COMMUNITY_BUILDER_PLACEHOLDER_URL = 'https://3sky.github.io/awscb-content-catalog/Logo.png';
+const STUDENT_BUILDER_PLACEHOLDER_URL = '/student-builder-group-logo.png';
+const PORTRAIT_GROUP_CATEGORIES = new Set(['heroes', 'community-builders', 'cloud-clubs']);
+const CATEGORY_PLACEHOLDER_URLS = {
+  heroes: AWS_HERO_PLACEHOLDER_URL,
+  'community-builders': COMMUNITY_BUILDER_PLACEHOLDER_URL,
+  'cloud-clubs': STUDENT_BUILDER_PLACEHOLDER_URL,
+};
+
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
+}
+
+function getHeroClusterSeparation(altitude) {
+  return clamp(
+    (HERO_CLUSTER_SEPARATION_START_ALTITUDE - altitude)
+      / (HERO_CLUSTER_SEPARATION_START_ALTITUDE - HERO_CLUSTER_SEPARATION_END_ALTITUDE),
+    0,
+    1
+  );
+}
+
+function getPortraitGroupCount(cluster) {
+  if (cluster.members.length === 1 && cluster.members[0]?.clusterOnly) {
+    return cluster.members[0].builderCount || 1;
+  }
+  return cluster.members.length;
+}
+
+function getPortraitGroupMembers(cluster) {
+  if (cluster.members.length === 1 && cluster.members[0]?.clusterOnly && cluster.members[0].ledBy?.length) {
+    return cluster.members[0].ledBy.map((leader, index) => ({
+      ...cluster.members[0],
+      id: `${cluster.members[0].id}-preview-${index}`,
+      name: leader.name || cluster.members[0].name,
+      avatarUrl: leader.imageUrl || '',
+      clusterOnly: false,
+    }));
+  }
+  return cluster.members;
+}
+
+function getPortraitCategoryLabel(category) {
+  if (category === 'community-builders') return 'Community Builders';
+  if (category === 'cloud-clubs') return 'Student Builder Groups';
+  return 'Heroes';
+}
+
+function getSectorPath(index, count) {
+  if (count <= 1) return 'M 50 0 A 50 50 0 1 1 49.99 0 Z';
+
+  const startAngle = -Math.PI / 2 + (index / count) * Math.PI * 2;
+  const endAngle = -Math.PI / 2 + ((index + 1) / count) * Math.PI * 2;
+  const startX = 50 + Math.cos(startAngle) * 50;
+  const startY = 50 + Math.sin(startAngle) * 50;
+  const endX = 50 + Math.cos(endAngle) * 50;
+  const endY = 50 + Math.sin(endAngle) * 50;
+  const largeArc = endAngle - startAngle > Math.PI ? 1 : 0;
+  return `M 50 50 L ${startX} ${startY} A 50 50 0 ${largeArc} 1 ${endX} ${endY} Z`;
+}
+
+function createHeroGroupAvatar(cluster, { category, color, darkMode, separation = 0 }) {
+  const previewMembers = getPortraitGroupMembers(cluster).slice(0, HERO_CLUSTER_PREVIEW_COUNT);
+  const placeholderUrl = CATEGORY_PLACEHOLDER_URLS[category] || AWS_HERO_PLACEHOLDER_URL;
+  const svgNamespace = 'http://www.w3.org/2000/svg';
+  const root = document.createElement('div');
+  root.dataset.portraitClusterMarker = 'true';
+  root.style.setProperty('--hero-separation', String(separation));
+  root.style.position = 'relative';
+  root.style.width = '76px';
+  root.style.height = '64px';
+
+  const segmented = document.createElementNS(svgNamespace, 'svg');
+  segmented.setAttribute('viewBox', '0 0 100 100');
+  segmented.setAttribute('aria-hidden', 'true');
+  segmented.style.position = 'absolute';
+  segmented.style.left = '50%';
+  segmented.style.top = '50%';
+  segmented.style.width = '46px';
+  segmented.style.height = '46px';
+  segmented.style.overflow = 'visible';
+  segmented.style.opacity = 'calc(1 - var(--hero-separation))';
+  segmented.style.transform = 'translate(-50%, -50%) scale(calc(1 - var(--hero-separation) * .08))';
+  segmented.style.transition = 'opacity 80ms linear';
+
+  const defs = document.createElementNS(svgNamespace, 'defs');
+  segmented.appendChild(defs);
+  previewMembers.forEach((member, index) => {
+    const clipId = `${cluster.heroClusterId}-sector-${index}`.replace(/[^a-zA-Z0-9_-]/g, '-');
+    const clip = document.createElementNS(svgNamespace, 'clipPath');
+    clip.id = clipId;
+    const sector = document.createElementNS(svgNamespace, 'path');
+    sector.setAttribute('d', getSectorPath(index, previewMembers.length));
+    clip.appendChild(sector);
+    defs.appendChild(clip);
+
+    const group = document.createElementNS(svgNamespace, 'g');
+    group.setAttribute('clip-path', `url(#${clipId})`);
+    const imageUrl = getMemberImage(member);
+    if (imageUrl) {
+      const image = document.createElementNS(svgNamespace, 'image');
+      image.setAttribute('href', imageUrl);
+      image.setAttribute('x', '0');
+      image.setAttribute('y', '0');
+      image.setAttribute('width', '100');
+      image.setAttribute('height', '100');
+      image.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+      group.appendChild(image);
+    } else {
+      const fallback = document.createElementNS(svgNamespace, 'rect');
+      fallback.setAttribute('width', '100');
+      fallback.setAttribute('height', '100');
+      fallback.setAttribute('fill', category === 'heroes' ? '#232F3E' : (darkMode ? '#152534' : '#FFFFFF'));
+      group.appendChild(fallback);
+      const logo = document.createElementNS(svgNamespace, 'image');
+      logo.setAttribute('href', placeholderUrl);
+      logo.setAttribute('x', '18');
+      logo.setAttribute('y', '25');
+      logo.setAttribute('width', '64');
+      logo.setAttribute('height', '50');
+      logo.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+      group.appendChild(logo);
+    }
+    segmented.appendChild(group);
+  });
+
+  if (previewMembers.length > 1) {
+    previewMembers.forEach((_, index) => {
+      const separator = document.createElementNS(svgNamespace, 'path');
+      separator.setAttribute('d', getSectorPath(index, previewMembers.length));
+      separator.setAttribute('fill', 'none');
+      separator.setAttribute('stroke', darkMode ? '#F8FAFC' : '#172A3A');
+      separator.setAttribute('stroke-width', '3.5');
+      separator.setAttribute('stroke-linejoin', 'round');
+      separator.setAttribute('vector-effect', 'non-scaling-stroke');
+      segmented.appendChild(separator);
+    });
+  }
+
+  const outline = document.createElementNS(svgNamespace, 'circle');
+  outline.setAttribute('cx', '50');
+  outline.setAttribute('cy', '50');
+  outline.setAttribute('r', '48');
+  outline.setAttribute('fill', 'none');
+  outline.setAttribute('stroke', darkMode ? '#0B1824' : '#FFFFFF');
+  outline.setAttribute('stroke-width', '5');
+  segmented.appendChild(outline);
+
+  previewMembers.forEach((member, index) => {
+    const angle = previewMembers.length === 2
+      ? (index === 0 ? Math.PI : 0)
+      : -Math.PI / 2 + (index / previewMembers.length) * Math.PI * 2;
+    const x = Math.cos(angle) * 21;
+    const y = Math.sin(angle) * 15;
+    const avatar = document.createElement('div');
+    avatar.style.position = 'absolute';
+    avatar.style.left = '50%';
+    avatar.style.top = '50%';
+    avatar.style.width = '30px';
+    avatar.style.height = '30px';
+    avatar.style.display = 'grid';
+    avatar.style.placeItems = 'center';
+    avatar.style.overflow = 'hidden';
+    avatar.style.borderRadius = '999px';
+    avatar.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+    avatar.style.background = index % 2 === 0 ? color : (darkMode ? '#23384A' : '#DCEAF5');
+    avatar.style.boxShadow = `0 2px 9px ${darkMode ? 'rgba(0,0,0,.42)' : 'rgba(23,50,75,.25)'}`;
+    avatar.style.opacity = 'var(--hero-separation)';
+    avatar.style.transform = `translate(-50%, -50%) translate(calc(${x}px * var(--hero-separation)), calc(${y}px * var(--hero-separation))) scale(calc(.82 + var(--hero-separation) * .18))`;
+    avatar.style.willChange = 'transform, opacity';
+    const imageUrl = getMemberImage(member);
+    if (imageUrl) {
+      const image = document.createElement('img');
+      image.src = imageUrl;
+      image.alt = '';
+      image.draggable = false;
+      image.style.width = '100%';
+      image.style.height = '100%';
+      image.style.objectFit = 'cover';
+      avatar.appendChild(image);
+    } else {
+      const logo = document.createElement('img');
+      logo.src = placeholderUrl;
+      logo.alt = '';
+      logo.draggable = false;
+      logo.style.width = '100%';
+      logo.style.height = '100%';
+      logo.style.padding = '5px';
+      logo.style.objectFit = 'contain';
+      logo.style.background = category === 'heroes' ? '#232F3E' : (darkMode ? '#152534' : '#FFFFFF');
+      avatar.appendChild(logo);
+    }
+    root.appendChild(avatar);
+  });
+
+  const countBadge = document.createElement('div');
+  countBadge.textContent = String(getPortraitGroupCount(cluster));
+  countBadge.style.position = 'absolute';
+  countBadge.style.left = '50%';
+  countBadge.style.top = '50%';
+  countBadge.style.minWidth = '23px';
+  countBadge.style.height = '23px';
+  countBadge.style.padding = '0 5px';
+  countBadge.style.borderRadius = '999px';
+  countBadge.style.display = 'grid';
+  countBadge.style.placeItems = 'center';
+  countBadge.style.background = color;
+  countBadge.style.color = '#0F1923';
+  countBadge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+  countBadge.style.fontSize = '9px';
+  countBadge.style.fontWeight = '900';
+  countBadge.style.transform = 'translate(calc(8px + var(--hero-separation) * 17px), calc(8px + var(--hero-separation) * 10px))';
+  countBadge.style.willChange = 'transform';
+
+  root.appendChild(segmented);
+  root.appendChild(countBadge);
+  return root;
+}
 
 function formatLiveCountdown(targetValue, prefix = '') {
   const difference = new Date(targetValue).getTime() - Date.now();
@@ -54,7 +276,11 @@ function clusterMembers(members) {
   return clusters;
 }
 
-function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
+function getHeroClusterId(category, cluster) {
+  return `${category}-${cluster.lat.toFixed(3)}-${cluster.lng.toFixed(3)}-${getPortraitGroupCount(cluster)}`;
+}
+
+function createClusterElement(cluster, { category, color, darkMode, portraitCluster, clusterSeparation, onClick, onWheel }) {
   const communityDay = cluster.members.find((member) => member.category === 'community-days');
   const userGroup = cluster.members.find((member) => member.category === 'user-groups');
   const userGroupFlagUrl = userGroup ? getMemberCountryFlagUrl(userGroup) : '';
@@ -96,9 +322,14 @@ function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
   const images = cluster.members
     .map((member) => ({ src: getMemberImage(member), name: member.name }))
     .filter((member) => member.src)
-    .slice(0, MAX_CLUSTER_AVATARS);
+    .slice(0, portraitCluster ? HERO_CLUSTER_PREVIEW_COUNT : MAX_CLUSTER_AVATARS);
 
-  if (communityDay) {
+  if (portraitCluster && getPortraitGroupCount(cluster) > 1) {
+    frame.style.width = '76px';
+    frame.style.height = '64px';
+    frame.appendChild(createHeroGroupAvatar(cluster, { category, color, darkMode, separation: clusterSeparation }));
+    button.title = `${getPortraitGroupCount(cluster)} ${getPortraitCategoryLabel(category)}. Click to zoom in.`;
+  } else if (communityDay) {
     const flag = document.createElement('img');
     flag.src = getCountryFlagUrl(communityDay.country);
     flag.alt = `${communityDay.country} flag`;
@@ -169,6 +400,21 @@ function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
       countBadge.style.lineHeight = '1';
       frame.appendChild(countBadge);
     }
+  } else if (portraitCluster && images.length === 0) {
+    const logo = document.createElement('img');
+    logo.src = CATEGORY_PLACEHOLDER_URLS[category];
+    logo.alt = getPortraitCategoryLabel(category);
+    logo.width = 34;
+    logo.height = 34;
+    logo.draggable = false;
+    logo.style.width = '34px';
+    logo.style.height = '34px';
+    logo.style.padding = '6px';
+    logo.style.objectFit = 'contain';
+    logo.style.borderRadius = '999px';
+    logo.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+    logo.style.background = category === 'heroes' ? '#232F3E' : (darkMode ? '#152534' : '#FFFFFF');
+    frame.appendChild(logo);
   } else if (images.length > 0) {
     images.forEach((member, index) => {
       const img = document.createElement('img');
@@ -230,7 +476,7 @@ function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
     }
   }
 
-  if (!communityDay && !userGroupFlagUrl && images.length > 0 && cluster.members.length > MAX_CLUSTER_AVATARS) {
+  if (!portraitCluster && !communityDay && !userGroupFlagUrl && images.length > 0 && cluster.members.length > MAX_CLUSTER_AVATARS) {
     const badge = document.createElement('div');
     badge.textContent = `+${cluster.members.length - MAX_CLUSTER_AVATARS}`;
     badge.style.position = 'absolute';
@@ -399,6 +645,26 @@ export default function ClassicGlobeScene({
   }, [category]);
 
   useEffect(() => {
+    const globe = globeRef.current;
+    const controls = globe?.controls();
+    if (!globe || !controls || !PORTRAIT_GROUP_CATEGORIES.has(category)) return undefined;
+
+    const updateHeroClustersForZoom = () => {
+      const altitude = globe.pointOfView().altitude;
+      const separation = getHeroClusterSeparation(altitude);
+      containerRef.current?.querySelectorAll('[data-portrait-cluster-marker]').forEach((marker) => {
+        marker.style.setProperty('--hero-separation', separation.toFixed(3));
+      });
+    };
+    controls.addEventListener('change', updateHeroClustersForZoom);
+    const frame = window.requestAnimationFrame(updateHeroClustersForZoom);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      controls.removeEventListener('change', updateHeroClustersForZoom);
+    };
+  }, [category]);
+
+  useEffect(() => {
     if (!globeRef.current || !containerRef.current) return;
 
     const observer = new ResizeObserver(() => {
@@ -423,10 +689,10 @@ export default function ClassicGlobeScene({
     const controls = globeRef.current.controls();
     if (!controls) return;
 
-    if (zoomCommand.direction === 'in' && typeof controls.dollyIn === 'function') {
-      controls.dollyIn(1.25);
-    } else if (zoomCommand.direction === 'out' && typeof controls.dollyOut === 'function') {
+    if (zoomCommand.direction === 'in' && typeof controls.dollyOut === 'function') {
       controls.dollyOut(1.25);
+    } else if (zoomCommand.direction === 'out' && typeof controls.dollyIn === 'function') {
+      controls.dollyIn(1.25);
     }
 
     controls.update?.();
@@ -444,7 +710,11 @@ export default function ClassicGlobeScene({
     const container = containerRef.current;
     const clusters = category === 'community-days' && communityDaysExpanded
       ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMembers(members);
+      : clusterMembers(members).map((cluster) => (
+        PORTRAIT_GROUP_CATEGORIES.has(category)
+          ? { ...cluster, heroClusterId: getHeroClusterId(category, cluster) }
+          : cluster
+      ));
     const color = CATEGORY_COLORS[category] ?? '#FF9900';
 
     globeRef.current
@@ -454,24 +724,41 @@ export default function ClassicGlobeScene({
       .htmlLng((point) => point.lng)
       .htmlAltitude(() => MARKER_ALTITUDE)
       .htmlTransitionDuration(0)
-      .htmlElement((point) =>
-        createClusterElement(point, {
+      .htmlElement((point) => {
+        const forwardWheel = (event) => {
+          const wheelTarget = container.querySelector('canvas');
+          if (!wheelTarget) return;
+          wheelTarget.dispatchEvent(new WheelEvent('wheel', {
+            deltaX: event.deltaX,
+            deltaY: event.deltaY,
+            deltaMode: event.deltaMode,
+            clientX: event.clientX,
+            clientY: event.clientY,
+            bubbles: true,
+            cancelable: true,
+          }));
+        };
+
+        return createClusterElement(point, {
+          category,
           color,
           darkMode,
-          onWheel: (event) => {
-            const wheelTarget = container.querySelector('canvas');
-            if (!wheelTarget) return;
-            wheelTarget.dispatchEvent(new WheelEvent('wheel', {
-              deltaX: event.deltaX,
-              deltaY: event.deltaY,
-              deltaMode: event.deltaMode,
-              clientX: event.clientX,
-              clientY: event.clientY,
-              bubbles: true,
-              cancelable: true,
-            }));
-          },
+          portraitCluster: PORTRAIT_GROUP_CATEGORIES.has(category),
+          clusterSeparation: PORTRAIT_GROUP_CATEGORIES.has(category)
+            ? getHeroClusterSeparation(globeRef.current.pointOfView().altitude)
+            : 0,
+          onWheel: forwardWheel,
           onClick: () => {
+            if (PORTRAIT_GROUP_CATEGORIES.has(category) && getPortraitGroupCount(point) > 1) {
+              const altitude = globeRef.current.pointOfView().altitude;
+              if (altitude > 1.45) {
+                globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.28 }, 700);
+              } else {
+                onMarkerClick(point.members);
+              }
+              onPointerEvent();
+              return;
+            }
             if (category === 'community-days' && point.members.length > 1) {
               globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.3 }, 800);
               return;
@@ -480,9 +767,9 @@ export default function ClassicGlobeScene({
             const payload = point.members.length === 1 ? point.members[0] : point.members;
             onMarkerClick(payload);
           },
-        })
-      );
-  }, [members, category, darkMode, onMarkerClick, communityDaysExpanded]);
+        });
+      });
+  }, [members, category, darkMode, onMarkerClick, communityDaysExpanded, onPointerEvent]);
 
   useEffect(() => {
     if (category !== 'community-days' || !containerRef.current) return undefined;
