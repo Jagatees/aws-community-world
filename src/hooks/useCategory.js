@@ -5,11 +5,11 @@ const categoryRequestCache = new Map();
 
 const DATA_LOADERS = {
   heroes: () => import('../data/heroes.json'),
-  experimental: () => import('../data/heroes.json'),
   'community-builders': () => import('../data/community-builders.json'),
   'user-groups': () => import('../data/user-groups.json'),
   'cloud-clubs': () => import('../data/cloud-clubs.json'),
   'kiro-ambassadors': () => import('../data/kiro-ambassadors.json'),
+  'kiro-events': () => import('../data/kiro-events.json'),
   'aws-ambassadors': () => import('../data/aws-ambassadors.json'),
 };
 
@@ -50,18 +50,6 @@ async function loadCategoryData(category, loadFullCommunityBuilders) {
   if (category === 'community-builders' && !loadFullCommunityBuilders) {
     const mod = await import('../data/community-builders-clusters.json');
     return normalizeMembers(mod.default, category);
-  }
-
-  if (category === 'kiro-ambassadors') {
-    const [ambassadors, events] = await Promise.all([
-      import('../data/kiro-ambassadors.json'),
-      import('../data/kiro-events.json'),
-    ]);
-
-    return [
-      ...normalizeMembers(ambassadors.default, 'kiro-ambassadors'),
-      ...normalizeMembers(events.default, 'kiro-events'),
-    ];
   }
 
   const loader = DATA_LOADERS[category];

@@ -1,0 +1,192 @@
+import { createElement, useCallback, useMemo } from 'react';
+import ListScene from './ListScene';
+import communityDays from '../data/community-days.json';
+
+const SOURCE_URL = 'https://builder.aws.com/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs/aws-community-days-where-builders-learn-together';
+
+function formatDate(event) {
+  const formatter = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'short', year: 'numeric' });
+  const start = formatter.format(new Date(`${event.date}T12:00:00`));
+  if (!event.endDate) return start;
+  return `${start} – ${formatter.format(new Date(`${event.endDate}T12:00:00`))}`;
+}
+
+function countdownTo(date, now) {
+  const difference = new Date(`${date}T00:00:00`).getTime() - now.getTime();
+  if (difference <= 0) return 'Happening today';
+  const totalSeconds = Math.floor(difference / 1000);
+  const days = Math.floor(totalSeconds / 86_400);
+  const hours = Math.floor((totalSeconds % 86_400) / 3_600);
+  const minutes = Math.floor((totalSeconds % 3_600) / 60);
+  const seconds = totalSeconds % 60;
+  return `${days}d ${hours}h ${minutes}m ${seconds}s to go`;
+}
+
+const COMMUNITY_DAY_VIEWS = ['orbit', 'classic', 'sleek', 'flat', 'list'];
+
+function viewLabel(view) {
+  if (view === 'classic') return 'Mapbox';
+  return view.charAt(0).toUpperCase() + view.slice(1);
+}
+
+export default function CommunityDaysScene({
+  darkMode,
+  Scene: ActiveScene,
+  globeDesign,
+  onDesignChange,
+  zoomCommand,
+  onZoom,
+  onNearMe,
+  nearMeLoading,
+  flyToTarget,
+}) {
+  const now = useMemo(() => new Date(), []);
+
+  const events = useMemo(() => {
+    const upcomingByCountry = new Map();
+    communityDays
+      .filter((event) => new Date(`${event.endDate || event.date}T23:59:59`) >= now)
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .forEach((event) => {
+        if (!upcomingByCountry.has(event.country)) upcomingByCountry.set(event.country, event);
+      });
+
+    return communityDays.map((event) => {
+      const eventEnded = new Date(`${event.endDate || event.date}T23:59:59`) < now;
+      const nextLocalEvent = upcomingByCountry.get(event.country);
+      const countdownLabel = eventEnded
+        ? nextLocalEvent
+          ? `Next in ${event.country}: ${countdownTo(nextLocalEvent.date, now)}`
+          : `Ended · stay tuned for the next ${event.country} Community Day`
+        : countdownTo(event.date, now);
+      const countdownEvent = eventEnded ? nextLocalEvent : event;
+
+      return {
+        ...event,
+        category: 'community-days',
+        eventStatus: eventEnded ? 'past' : 'upcoming',
+        eventDateLabel: formatDate(event),
+        eventDate: formatDate(event),
+        tag: eventEnded ? 'Ended' : 'Upcoming',
+        countdownLabel,
+        countdownAt: countdownEvent ? `${countdownEvent.date}T00:00:00` : '',
+        countdownPrefix: eventEnded && nextLocalEvent ? `Next in ${event.country}: ` : '',
+        avatarUrl: '',
+      };
+    });
+  }, [now]);
+
+  const upcomingCount = events.filter((event) => event.eventStatus === 'upcoming').length;
+  const pastCount = events.length - upcomingCount;
+  const openOfficialSite = useCallback((payload) => {
+    const event = Array.isArray(payload) ? payload[0] : payload;
+    if (event?.profileUrl) window.open(event.profileUrl, '_blank', 'noopener,noreferrer');
+  }, []);
+
+  const panelBackground = darkMode ? 'rgba(8, 16, 24, 0.84)' : 'rgba(255, 255, 255, 0.9)';
+  const panelBorder = darkMode ? 'rgba(92, 120, 145, 0.46)' : 'rgba(150, 179, 205, 0.72)';
+  const heading = darkMode ? '#FFFFFF' : '#0F1923';
+  const muted = darkMode ? '#A7BDCF' : '#537190';
+  const controlBackground = darkMode ? 'rgba(8, 16, 24, 0.86)' : 'rgba(255, 255, 255, 0.92)';
+  const controlText = darkMode ? '#DCE7F0' : '#17324B';
+  const isListView = globeDesign === 'list';
+
+  return (
+    <section className="relative h-full min-h-0 overflow-hidden" aria-label="AWS Community Days globe">
+      {isListView ? (
+        <ListScene
+          category="community-days"
+          members={events}
+          darkMode={darkMode}
+          onItemClick={openOfficialSite}
+        />
+      ) : (
+        createElement(ActiveScene, {
+          category: 'community-days',
+          members: events,
+          onMarkerClick: openOfficialSite,
+          darkMode,
+          zoomCommand,
+          flyToTarget,
+        })
+      )}
+
+      {!isListView && <div
+        className="pointer-events-none absolute left-4 top-4 z-20 max-w-[min(390px,calc(100vw-2rem))] rounded-2xl px-5 py-4"
+        style={{ background: panelBackground, border: `1px solid ${panelBorder}`, backdropFilter: 'blur(16px)' }}
+      >
+        <p className="text-[11px] font-bold uppercase tracking-[0.17em]" style={{ color: '#FF9900' }}>Community-built events</p>
+        <h1 className="mt-1 text-xl font-black tracking-[-0.025em]" style={{ color: heading }}>AWS Community Days 2026</h1>
+        <p className="mt-2 text-xs leading-5" style={{ color: muted }}>
+          Hover for the countdown. Red markers have ended; orange markers are still ahead.
+        </p>
+        <div className="mt-3 flex gap-4 text-xs font-bold" style={{ color: heading }}>
+          <span><i className="mr-1.5 inline-block h-2 w-2 rounded-full bg-[#FF9900]" />{upcomingCount} upcoming</span>
+          <span><i className="mr-1.5 inline-block h-2 w-2 rounded-full bg-[#D22C2C]" />{pastCount} ended</span>
+        </div>
+        <a
+          href={SOURCE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pointer-events-auto mt-3 inline-flex text-xs font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ color: '#FF9900', outlineColor: '#FF9900' }}
+        >
+          View the AWS source article ↗
+        </a>
+      </div>}
+
+      <div className="absolute bottom-5 left-1/2 z-30 -translate-x-1/2">
+        <div className="flex items-stretch gap-3">
+          <div
+            className="flex items-center rounded-full p-1"
+            style={{ background: controlBackground, border: `1px solid ${panelBorder}`, backdropFilter: 'blur(14px)' }}
+            aria-label="Community Days view switcher"
+          >
+            {COMMUNITY_DAY_VIEWS.map((view) => {
+              const active = globeDesign === view;
+              return (
+                <button
+                  key={view}
+                  type="button"
+                  onClick={() => onDesignChange(view)}
+                  className="rounded-full px-3 py-1 text-xs font-semibold transition-colors"
+                  style={{
+                    minWidth: '52px',
+                    minHeight: '44px',
+                    color: active ? '#0F1923' : controlText,
+                    background: active ? '#FF9900' : 'transparent',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {viewLabel(view)}
+                </button>
+              );
+            })}
+          </div>
+
+          {!isListView && (
+            <>
+              <div
+                className="flex items-center rounded-full p-1"
+                style={{ background: controlBackground, border: `1px solid ${panelBorder}`, backdropFilter: 'blur(14px)' }}
+                aria-label="Zoom controls"
+              >
+                <button type="button" onClick={() => onZoom('out')} aria-label="Zoom out" className="min-h-11 min-w-11 rounded-full text-sm font-bold" style={{ color: controlText }}>−</button>
+                <button type="button" onClick={() => onZoom('in')} aria-label="Zoom in" className="min-h-11 min-w-11 rounded-full text-sm font-bold" style={{ color: controlText }}>+</button>
+              </div>
+              <button
+                type="button"
+                onClick={onNearMe}
+                disabled={nearMeLoading}
+                className="min-h-11 rounded-full px-4 text-xs font-bold transition-colors"
+                style={{ background: controlBackground, border: `1px solid ${panelBorder}`, color: controlText, cursor: nearMeLoading ? 'wait' : 'pointer' }}
+              >
+                {nearMeLoading ? 'Locating…' : 'Near Me'}
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}

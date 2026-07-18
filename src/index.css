@@ -150,6 +150,51 @@ body {
   to { background-position-x: -1056px; }
 }
 
+.section-mode-switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.75rem;
+  min-height: 32px;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.035), 0 0 16px rgba(54, 188, 255, 0.12);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.section-mode-switch {
+  -webkit-text-fill-color: transparent;
+  background-image:
+    linear-gradient(100deg, #ff304f 0%, #ff9f1c 16%, #ffe600 32%, #29e36f 48%, #24c8ff 64%, #475dff 80%, #d83cff 100%),
+    linear-gradient(rgba(15, 25, 35, 0.78), rgba(15, 25, 35, 0.78)),
+    linear-gradient(110deg, #ff304f 0%, #ffe600 24%, #29e36f 42%, #24c8ff 60%, #475dff 78%, #d83cff 100%);
+  background-size: 260% 100%, 100% 100%, 260% 100%;
+  background-position: 130% 0, 0 0, 130% 0;
+  background-clip: text, padding-box, border-box;
+  -webkit-background-clip: text, padding-box, border-box;
+  animation: section-mode-shimmer 3.6s linear infinite;
+}
+
+.section-mode-switch:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07), 0 0 20px rgba(71, 93, 255, 0.28);
+  transform: translateY(-1px);
+}
+
+.section-mode-switch:active {
+  transform: translateY(0) scale(0.98);
+}
+
+@keyframes section-mode-shimmer {
+  to { background-position: -130% 0, 0 0, -130% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-mode-switch { animation: none; }
+}
+
 @keyframes kiro-orbit-globe {
   0%, 100% { transform: translate3d(calc(-31vw + var(--kiro-repel-x)), calc(-21vh + var(--kiro-repel-y)), 0) rotate(-6deg) scale(0.9); }
   18% { transform: translate3d(calc(-6vw + var(--kiro-repel-x)), calc(-31vh + var(--kiro-repel-y)), 0) rotate(4deg) scale(1.02); }
@@ -180,17 +225,9 @@ body {
 }
 
 .kiro-buddy-sprite {
-  width: 180px;
-  height: 170px;
-  background-image: url('/kiro_buddy_sprite_sheet_enhanced.png');
-  background-repeat: no-repeat;
-  background-size: 2508px 2508px;
-  background-position: -215px -220px;
-  animation: kiro-buddy-working 1.15s steps(11, end) infinite;
+  width: 160px;
+  height: 160px;
+  border-radius: 36px;
+  background: url('/kiro-ambassador-icon.svg') center / cover no-repeat;
   filter: drop-shadow(0 18px 34px rgba(80, 58, 150, 0.32));
-}
-
-@keyframes kiro-buddy-working {
-  from { background-position: -215px -220px; }
-  to   { background-position: -2327px -220px; }
 }

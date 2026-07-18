@@ -7,7 +7,7 @@ import TagFilter from './components/TagFilter';
 import KiroAvatarOverlay from './components/KiroAvatarOverlay';
 import ListScene from './components/ListScene';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
-import ExperimentalHeroDex from './components/ExperimentalHeroDex';
+import IconArchiveScene from './components/ExperimentalHeroDex';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 import communityBuilderMeta from './data/community-builders-meta.json';
@@ -17,25 +17,25 @@ const SplashScreen = lazy(() => import('./components/SplashScreen'));
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
-  experimental: '#30D6F4',
   'community-builders': '#1A9C3E',
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
   'aws-community-day-singapore': '#FF9900',
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
+  'community-days': '#FF9900',
   'aws-ambassadors': '#2D72D2',
 };
 
 const CATEGORY_LABELS = {
   heroes: 'Heroes',
-  experimental: 'Experimental',
   'community-builders': 'Community Builders',
   'user-groups': 'User Groups',
   'cloud-clubs': 'Student Builder Groups',
   'aws-community-day-singapore': 'AWS Community Day Singapore',
   'kiro-ambassadors': 'Kiro',
   'kiro-events': 'Kiro Events',
+  'community-days': 'Community Days',
   'aws-ambassadors': 'AWS Ambassador',
 };
 
@@ -59,8 +59,10 @@ const DEFAULT_ROUTE_STATE = {
 };
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
-const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'list'];
+const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'icons', 'list'];
 const VALID_GLOBE_DESIGNS = new Set(GLOBE_DESIGNS);
+const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors']);
+const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'news']);
 
 function getMemberCountry(member) {
   if (member?.country) return member.country;
@@ -87,7 +89,11 @@ function getRouteStateFromUrl() {
     selectedTag: params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
     selectedRegions: spotlight ? ['asia'] : getRouteSelections(params, 'region'),
     selectedCountries: spotlight ? ['Singapore'] : getRouteSelections(params, 'country'),
-    globeDesign: spotlight ? 'classic' : VALID_GLOBE_DESIGNS.has(view) ? view : DEFAULT_ROUTE_STATE.globeDesign,
+    globeDesign: spotlight
+      ? 'classic'
+      : VALID_GLOBE_DESIGNS.has(view)
+        ? view
+        : DEFAULT_ROUTE_STATE.globeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
     singaporeSpotlight: spotlight,
     hasShareState,
@@ -130,6 +136,7 @@ const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
 const SvgFlatMapScene = lazy(() => import('./components/FlatMapScene'));
 const AwsCommunityDaySingaporeScene = lazy(() => import('./components/AwsCommunityDaySingaporeScene'));
+const CommunityDaysScene = lazy(() => import('./components/CommunityDaysScene'));
 
 export default function App() {
   const [routeState] = useState(() => getRouteStateFromUrl());
@@ -155,14 +162,16 @@ export default function App() {
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isCommunityDayView = activeCategory === 'aws-community-day-singapore';
+  const isCommunityDaysView = activeCategory === 'community-days';
   const isNewsView = activeCategory === 'news';
-  const isExperimentalView = activeCategory === 'experimental';
+  const activeSection = EVENT_CATEGORIES.has(activeCategory) ? 'events' : 'community';
   const globeReady = !showSplash;
 
   const isCommunityBuilderView = activeCategory === 'community-builders';
   const isListView = globeDesign === 'list';
+  const isIconView = globeDesign === 'icons';
   const loadFullCommunityBuilders = isCommunityBuilderView && (
-    isListView || Boolean(selectedTag || selectedRegions.length || selectedCountries.length)
+    isListView || isIconView || Boolean(selectedTag || selectedRegions.length || selectedCountries.length)
   );
   const { error, members, loading } = useCategory(activeCategory, loadFullCommunityBuilders);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
@@ -354,6 +363,7 @@ export default function App() {
     if (design === 'classic') return 'Mapbox';
     if (design === 'orbit') return 'Orbit';
     if (design === 'sleek') return 'Sleek';
+    if (design === 'icons') return 'Icons';
     if (design === 'list') return 'List';
     return design.charAt(0).toUpperCase() + design.slice(1);
   }
@@ -438,8 +448,14 @@ export default function App() {
     setSelectedCountries([]);
     setSingaporeSpotlight(null);
     setActiveCategory(category);
+    if (EVENT_CATEGORIES.has(category)) setGlobeDesign('orbit');
+    else if (category === 'kiro-ambassadors') setGlobeDesign('orbit');
     if (category === 'news') setNewsPanelOpen(true);
   }, []);
+
+  const handleSectionChange = useCallback((section) => {
+    handleCategoryChange(section === 'events' ? 'kiro-events' : 'heroes');
+  }, [handleCategoryChange]);
 
   const handleRegionChange = useCallback((regions) => {
     setSelectedRegions(regions);
@@ -565,22 +581,25 @@ export default function App() {
         <Header
           darkMode={darkMode}
           onToggleDark={() => setDarkMode((value) => !value)}
+          activeSection={activeSection}
+          onSectionChange={handleSectionChange}
         />
         <TabNav
           activeCategory={activeCategory}
           onChange={handleCategoryChange}
           darkMode={darkMode}
-          countries={isCommunityDayView || isNewsView || isExperimentalView || isKiroView || isAwsAmbassadorView ? [] : regionCountries}
-          countryCounts={isCommunityDayView || isNewsView || isExperimentalView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
-          regions={isCommunityDayView || isNewsView || isExperimentalView || isKiroView || isAwsAmbassadorView ? [] : regions}
-          regionCounts={isCommunityDayView || isNewsView || isExperimentalView || isKiroView || isAwsAmbassadorView ? {} : regionCounts}
+          countries={activeSection === 'events' || isCommunityDayView || isKiroView || isAwsAmbassadorView ? [] : regionCountries}
+          countryCounts={activeSection === 'events' || isCommunityDayView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
+          regions={activeSection === 'events' || isCommunityDayView || isKiroView || isAwsAmbassadorView ? [] : regions}
+          regionCounts={activeSection === 'events' || isCommunityDayView || isKiroView || isAwsAmbassadorView ? {} : regionCounts}
           selectedRegions={selectedRegions}
           onRegionChange={handleRegionChange}
           selectedCountries={selectedCountries}
           onCountryChange={setSelectedCountries}
+          section={activeSection}
         />
 
-        {!isCommunityDayView && !isNewsView && !isExperimentalView && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
+        {!isCommunityDayView && !isCommunityDaysView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -607,8 +626,20 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          {isExperimentalView ? (
-            <ExperimentalHeroDex members={members} loading={loading} darkMode={darkMode} />
+          {isCommunityDaysView ? (
+            <Suspense fallback={renderGlobeLoading('Loading Community Days...')}>
+              <CommunityDaysScene
+                darkMode={darkMode}
+                Scene={ActiveGlobeScene}
+                globeDesign={globeDesign}
+                onDesignChange={setGlobeDesign}
+                zoomCommand={zoomCommand}
+                onZoom={triggerZoom}
+                onNearMe={handleNearMe}
+                nearMeLoading={nearMeLoading}
+                flyToTarget={resolvedFlyToTarget}
+              />
+            </Suspense>
           ) : isCommunityDayView ? (
             <Suspense fallback={renderGlobeLoading()}>
               <AwsCommunityDaySingaporeScene darkMode={darkMode} />
@@ -746,7 +777,7 @@ export default function App() {
                       }}
                       aria-label="Globe design switcher"
                     >
-                      {GLOBE_DESIGNS.map((d) => (
+                      {GLOBE_DESIGNS.filter((design) => design !== 'icons').map((d) => (
                         <button
                           key={d}
                           type="button"
@@ -884,7 +915,15 @@ export default function App() {
             </div>
           ) : (
             <>
-              {isListView ? (
+              {isIconView ? (
+                <IconArchiveScene
+                  key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-icons`}
+                  category={activeCategory}
+                  members={directoryMembers}
+                  loading={loading}
+                  darkMode={darkMode}
+                />
+              ) : isListView ? (
                 <ListScene
                   key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-list`}
                   category={activeCategory}
@@ -924,7 +963,7 @@ export default function App() {
                 </div>
               )}
 
-              {!isListView && globeReady && loading && (
+              {!isListView && !isIconView && globeReady && loading && (
                 <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
                   <div
                     className="flex items-center gap-3 rounded-full px-4 py-2 text-sm font-semibold"
@@ -943,7 +982,7 @@ export default function App() {
               )}
 
               <div
-                className={`${isListView ? 'hidden' : ''} absolute top-4 left-4 z-20 pointer-events-none`}
+                className={`${isListView || isIconView ? 'hidden' : ''} absolute top-4 left-4 z-20 pointer-events-none`}
                 style={{
                   background: darkMode ? 'rgba(8, 16, 24, 0.78)' : 'rgba(255, 255, 255, 0.86)',
                   border: `1px solid ${darkMode ? 'rgba(62, 95, 123, 0.4)' : 'rgba(160, 187, 212, 0.72)'}`,
@@ -1000,33 +1039,6 @@ export default function App() {
                 </div>
               </div>
 
-              {activeCategory === 'kiro-ambassadors' && (
-                <a
-                  href="https://kiro.dev/events/submit/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute top-4 right-4 z-20 rounded-full px-4 py-2 text-xs font-bold transition-colors"
-                  style={{
-                    background: darkMode ? 'rgba(8, 16, 24, 0.82)' : 'rgba(255, 255, 255, 0.9)',
-                    border: '1px solid #7B61FF',
-                    color: darkMode ? '#FFFFFF' : '#241A47',
-                    boxShadow: darkMode ? '0 14px 32px rgba(0, 0, 0, 0.28)' : '0 14px 30px rgba(60, 77, 120, 0.14)',
-                    backdropFilter: 'blur(14px)',
-                    WebkitBackdropFilter: 'blur(14px)',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#7B61FF';
-                    e.currentTarget.style.color = '#FFFFFF';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = darkMode ? 'rgba(8, 16, 24, 0.82)' : 'rgba(255, 255, 255, 0.9)';
-                    e.currentTarget.style.color = darkMode ? '#FFFFFF' : '#241A47';
-                  }}
-                >
-                  Submit Event Here
-                </a>
-              )}
-
               <div className="absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
                 <div className="flex items-stretch gap-3">
                   {!singaporeSpotlight && (
@@ -1041,7 +1053,7 @@ export default function App() {
                         }}
                         aria-label="Globe design switcher"
                       >
-                        {GLOBE_DESIGNS.map((design) => (
+                        {GLOBE_DESIGNS.filter((design) => design !== 'icons' || ICON_VIEW_CATEGORIES.has(activeCategory)).map((design) => (
                           <button
                             key={design}
                             type="button"
@@ -1055,7 +1067,7 @@ export default function App() {
                       </div>
 
                       <div
-                        className={`${isListView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
+                            className={`${isListView || isIconView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
                         style={{
                           background: styleControlBg,
                           border: `1px solid ${styleControlBorder}`,
@@ -1107,7 +1119,7 @@ export default function App() {
                         onClick={handleNearMe}
                         onMouseEnter={() => setNearMeHover(true)}
                         onMouseLeave={() => setNearMeHover(false)}
-                        className={`${isListView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
+                      className={`${isListView || isIconView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
                         style={{
                           backgroundColor: nearMeLoading ? '#53657A' : nearMeHover ? '#FF9900' : 'transparent',
                           color: nearMeLoading ? '#A7BDCF' : nearMeHover ? '#0F1923' : styleControlText,
@@ -1159,7 +1171,7 @@ export default function App() {
           )}
         </div>
 
-        {!isNewsView && !isExperimentalView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
+        {!isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
           <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
         )}
 

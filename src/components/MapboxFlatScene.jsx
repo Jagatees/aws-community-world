@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { createNewMemberBadgeElement, getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -10,6 +10,7 @@ const CATEGORY_COLORS = {
   'cloud-clubs': '#BF0816',
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
+  'community-days': '#FF9900',
   'aws-ambassadors': '#2D72D2',
   news: '#FF9900',
   events: '#7B61FF',
@@ -19,6 +20,17 @@ const CLUSTER_TOLERANCE = 0.5;
 const MAX_CLUSTER_AVATARS = 4;
 const TOKEN = import.meta.env.VITE_MAP_BOX ?? '';
 const MAPBOX_STYLE_URL = 'mapbox://styles/mapbox/satellite-streets-v12';
+
+function formatLiveCountdown(targetValue, prefix = '') {
+  const difference = new Date(targetValue).getTime() - Date.now();
+  if (!Number.isFinite(difference) || difference <= 0) return `${prefix}Happening today`;
+  const totalSeconds = Math.floor(difference / 1000);
+  const days = Math.floor(totalSeconds / 86_400);
+  const hours = Math.floor((totalSeconds % 86_400) / 3_600);
+  const minutes = Math.floor((totalSeconds % 3_600) / 60);
+  const seconds = totalSeconds % 60;
+  return `${prefix}${days}d ${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s to go`;
+}
 
 function getHeatColor(size) {
   if (size >= 12) return '#BF0816';
@@ -48,11 +60,15 @@ function clusterMembers(members) {
 }
 
 function createClusterElement(cluster, { color, darkMode, onClick }) {
+  const communityDay = cluster.members.find((member) => member.category === 'community-days');
+  const isPastCommunityDay = Boolean(communityDay) && cluster.members.every((member) => member.eventStatus === 'past');
   const button = document.createElement('button');
   button.type = 'button';
   button.setAttribute(
     'aria-label',
-    `${cluster.members.length} member${cluster.members.length > 1 ? 's' : ''} at this location`
+    communityDay
+      ? `${cluster.members.length} Community Day${cluster.members.length > 1 ? 's' : ''} at this location`
+      : `${cluster.members.length} member${cluster.members.length > 1 ? 's' : ''} at this location`
   );
   button.style.display = 'flex';
   button.style.alignItems = 'center';
@@ -77,12 +93,53 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
   frame.style.minWidth = cluster.members.length > 1 ? '52px' : '34px';
   frame.style.minHeight = cluster.members.length > 1 ? '40px' : '34px';
 
+  if (communityDay) {
+    frame.style.borderRadius = '999px';
+    frame.style.boxShadow = isPastCommunityDay
+      ? '0 0 0 10px rgba(210, 44, 44, 0.15)'
+      : '0 0 0 8px rgba(255, 153, 0, 0.12)';
+  }
+
   const images = cluster.members
     .map((member) => ({ src: getMemberImage(member), name: member.name }))
     .filter((member) => member.src)
     .slice(0, MAX_CLUSTER_AVATARS);
 
-  if (images.length > 0) {
+  if (communityDay) {
+    const flag = document.createElement('img');
+    flag.src = getCountryFlagUrl(communityDay.country);
+    flag.alt = `${communityDay.country} flag`;
+    flag.width = 30;
+    flag.height = 30;
+    flag.style.width = '30px';
+    flag.style.height = '30px';
+    flag.style.objectFit = 'cover';
+    flag.style.borderRadius = '999px';
+    flag.style.border = `3px solid ${color}`;
+    flag.style.background = color;
+    frame.appendChild(flag);
+
+    if (cluster.members.length > 1) {
+      const countBadge = document.createElement('div');
+      countBadge.textContent = `+${cluster.members.length - 1}`;
+      countBadge.style.position = 'absolute';
+      countBadge.style.right = '-8px';
+      countBadge.style.bottom = '-6px';
+      countBadge.style.minWidth = '20px';
+      countBadge.style.height = '20px';
+      countBadge.style.padding = '0 5px';
+      countBadge.style.borderRadius = '999px';
+      countBadge.style.display = 'flex';
+      countBadge.style.alignItems = 'center';
+      countBadge.style.justifyContent = 'center';
+      countBadge.style.background = color;
+      countBadge.style.color = '#FFFFFF';
+      countBadge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+      countBadge.style.fontSize = '10px';
+      countBadge.style.fontWeight = '800';
+      frame.appendChild(countBadge);
+    }
+  } else if (images.length > 0) {
     images.forEach((member, index) => {
       const img = document.createElement('img');
       img.src = member.src;
@@ -170,6 +227,46 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
   }
 
   button.appendChild(frame);
+
+  if (communityDay) {
+    const tooltip = document.createElement('div');
+    tooltip.style.position = 'absolute';
+    tooltip.style.left = '50%';
+    tooltip.style.bottom = 'calc(100% + 18px)';
+    tooltip.style.width = 'min(280px, 72vw)';
+    tooltip.style.padding = '12px 14px';
+    tooltip.style.borderRadius = '12px';
+    tooltip.style.background = darkMode ? 'rgba(8, 16, 24, 0.96)' : 'rgba(255, 255, 255, 0.97)';
+    tooltip.style.border = `1px solid ${isPastCommunityDay ? 'rgba(210,44,44,.62)' : 'rgba(255,153,0,.58)'}`;
+    tooltip.style.color = darkMode ? '#FFFFFF' : '#0F1923';
+    tooltip.style.boxShadow = '0 14px 32px rgba(0,0,0,.34)';
+    tooltip.style.transform = 'translate(-50%, 6px)';
+    tooltip.style.opacity = '0';
+    tooltip.style.visibility = 'hidden';
+    tooltip.style.pointerEvents = 'none';
+    tooltip.style.transition = 'opacity 160ms ease, transform 160ms ease, visibility 160ms ease';
+    tooltip.style.zIndex = '30';
+    tooltip.innerHTML = `
+      <strong style="display:block;font-size:13px;line-height:1.3">${communityDay.name}</strong>
+      <span style="display:block;margin-top:4px;font-size:11px;color:${darkMode ? '#A7BDCF' : '#537190'}">${communityDay.eventDateLabel} · ${communityDay.location}</span>
+      <span class="community-day-countdown" data-countdown-at="${communityDay.countdownAt || ''}" data-countdown-prefix="${communityDay.countdownPrefix || ''}" style="display:block;margin-top:8px;font-size:11px;font-weight:800;color:${color}">${communityDay.countdownLabel}</span>
+    `;
+    button.appendChild(tooltip);
+    const showTooltip = () => {
+      tooltip.style.opacity = '1';
+      tooltip.style.visibility = 'visible';
+      tooltip.style.transform = 'translate(-50%, 0)';
+    };
+    const hideTooltip = () => {
+      tooltip.style.opacity = '0';
+      tooltip.style.visibility = 'hidden';
+      tooltip.style.transform = 'translate(-50%, 6px)';
+    };
+    button.onmouseenter = showTooltip;
+    button.onmouseleave = hideTooltip;
+    button.onfocus = showTooltip;
+    button.onblur = hideTooltip;
+  }
   button.onpointerdown = (event) => event.stopPropagation();
   button.onpointerup = (event) => event.stopPropagation();
   button.onclick = (event) => {
@@ -194,8 +291,14 @@ export default function MapboxFlatScene({
   const mapRef = useRef(null);
   const markersRef = useRef([]);
   const resizeTimerRef = useRef(null);
+  const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
 
-  const clusters = useMemo(() => clusterMembers(members), [members]);
+  const clusters = useMemo(
+    () => category === 'community-days' && communityDaysExpanded
+      ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
+      : clusterMembers(members),
+    [members, category, communityDaysExpanded]
+  );
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current || !TOKEN) return;
@@ -267,6 +370,19 @@ export default function MapboxFlatScene({
 
   useEffect(() => {
     const map = mapRef.current;
+    if (!map || category !== 'community-days') return undefined;
+
+    const updateExpansion = () => setCommunityDaysExpanded(map.getZoom() >= 2.6);
+    map.on('zoomend', updateExpansion);
+    const frame = window.requestAnimationFrame(updateExpansion);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      map.off('zoomend', updateExpansion);
+    };
+  }, [category]);
+
+  useEffect(() => {
+    const map = mapRef.current;
     if (!map) return;
 
     let raf1 = 0;
@@ -296,7 +412,10 @@ export default function MapboxFlatScene({
     markersRef.current = [];
 
     markersRef.current = clusters.map((cluster) => {
-      const color = heatmapEnabled ? getHeatColor(cluster.members.length) : CATEGORY_COLORS[category] ?? '#FF9900';
+      const isPastCommunityDay = category === 'community-days' && cluster.members.every((member) => member.eventStatus === 'past');
+      const color = isPastCommunityDay
+        ? '#D22C2C'
+        : heatmapEnabled ? getHeatColor(cluster.members.length) : CATEGORY_COLORS[category] ?? '#FF9900';
       const element = createClusterElement(cluster, {
         color,
         darkMode,
@@ -334,6 +453,19 @@ export default function MapboxFlatScene({
       markersRef.current = [];
     };
   }, [clusters, category, darkMode, heatmapEnabled, onMarkerClick]);
+
+  useEffect(() => {
+    if (category !== 'community-days') return undefined;
+    const updateCountdowns = () => {
+      markersRef.current.forEach(({ element }) => {
+        const countdown = element.querySelector('.community-day-countdown[data-countdown-at]');
+        if (countdown) countdown.textContent = formatLiveCountdown(countdown.dataset.countdownAt, countdown.dataset.countdownPrefix);
+      });
+    };
+    updateCountdowns();
+    const interval = window.setInterval(updateCountdowns, 1000);
+    return () => window.clearInterval(interval);
+  }, [category, communityDaysExpanded]);
 
   useEffect(() => {
     const map = mapRef.current;

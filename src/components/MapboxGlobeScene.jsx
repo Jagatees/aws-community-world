@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { createNewMemberBadgeElement, getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -13,6 +13,7 @@ const CATEGORY_COLORS = {
   'aws-ambassadors': '#2D72D2',
   news: '#FF9900',
   events: '#7B61FF',
+  'community-days': '#FF9900',
 };
 
 const CLUSTER_TOLERANCE = 0.5;
@@ -28,6 +29,18 @@ function getHeatColor(size) {
   if (size >= 7) return '#FF9900';
   if (size >= 4) return '#F2CC0C';
   return '#2D72D2';
+}
+
+function formatLiveCountdown(targetValue, prefix = '') {
+  const difference = new Date(targetValue).getTime() - Date.now();
+  if (!Number.isFinite(difference) || difference <= 0) return `${prefix}Happening today`;
+
+  const totalSeconds = Math.floor(difference / 1000);
+  const days = Math.floor(totalSeconds / 86_400);
+  const hours = Math.floor((totalSeconds % 86_400) / 3_600);
+  const minutes = Math.floor((totalSeconds % 3_600) / 60);
+  const seconds = totalSeconds % 60;
+  return `${prefix}${days} days ${String(hours).padStart(2, '0')} hours ${String(minutes).padStart(2, '0')} minutes ${String(seconds).padStart(2, '0')} seconds`;
 }
 
 function toVector(lat, lng) {
@@ -63,11 +76,15 @@ function clusterMembers(members) {
 }
 
 function createClusterElement(cluster, { color, darkMode, onClick }) {
+  const communityDay = cluster.members.find((member) => member.category === 'community-days');
+  const isPastCommunityDay = Boolean(communityDay) && cluster.members.every((member) => member.eventStatus === 'past');
   const button = document.createElement('button');
   button.type = 'button';
   button.setAttribute(
     'aria-label',
-    `${cluster.members.length} member${cluster.members.length > 1 ? 's' : ''} at this location`
+    communityDay
+      ? `${cluster.members.length} Community Day${cluster.members.length > 1 ? 's' : ''} at this location`
+      : `${cluster.members.length} member${cluster.members.length > 1 ? 's' : ''} at this location`
   );
   button.style.display = 'flex';
   button.style.alignItems = 'center';
@@ -84,6 +101,12 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
   button.style.filter = 'drop-shadow(0 10px 22px rgba(0, 0, 0, 0.42))';
   button.style.willChange = 'transform, opacity';
 
+  if (communityDay) {
+    button.style.filter = isPastCommunityDay
+      ? 'drop-shadow(0 0 22px rgba(210, 44, 44, 0.9))'
+      : 'drop-shadow(0 0 18px rgba(255, 153, 0, 0.72))';
+  }
+
   const frame = document.createElement('div');
   frame.style.display = 'flex';
   frame.style.alignItems = 'center';
@@ -92,12 +115,53 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
   frame.style.minWidth = cluster.members.length > 1 ? '52px' : '34px';
   frame.style.minHeight = cluster.members.length > 1 ? '40px' : '34px';
 
+  if (communityDay) {
+    frame.style.borderRadius = '999px';
+    frame.style.boxShadow = isPastCommunityDay
+      ? '0 0 0 12px rgba(210, 44, 44, 0.16), 0 0 0 24px rgba(210, 44, 44, 0.06)'
+      : '0 0 0 9px rgba(255, 153, 0, 0.12)';
+  }
+
   const images = cluster.members
     .map((member) => ({ src: getMemberImage(member), name: member.name }))
     .filter((member) => member.src)
     .slice(0, MAX_CLUSTER_AVATARS);
 
-  if (images.length > 0) {
+  if (communityDay) {
+    const flag = document.createElement('img');
+    flag.src = getCountryFlagUrl(communityDay.country);
+    flag.alt = `${communityDay.country} flag`;
+    flag.width = 30;
+    flag.height = 30;
+    flag.style.width = '30px';
+    flag.style.height = '30px';
+    flag.style.objectFit = 'cover';
+    flag.style.borderRadius = '999px';
+    flag.style.border = `3px solid ${color}`;
+    flag.style.background = color;
+    frame.appendChild(flag);
+
+    if (cluster.members.length > 1) {
+      const countBadge = document.createElement('div');
+      countBadge.textContent = `+${cluster.members.length - 1}`;
+      countBadge.style.position = 'absolute';
+      countBadge.style.right = '-8px';
+      countBadge.style.bottom = '-6px';
+      countBadge.style.minWidth = '20px';
+      countBadge.style.height = '20px';
+      countBadge.style.padding = '0 5px';
+      countBadge.style.borderRadius = '999px';
+      countBadge.style.display = 'flex';
+      countBadge.style.alignItems = 'center';
+      countBadge.style.justifyContent = 'center';
+      countBadge.style.background = color;
+      countBadge.style.color = '#FFFFFF';
+      countBadge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+      countBadge.style.fontSize = '10px';
+      countBadge.style.fontWeight = '800';
+      frame.appendChild(countBadge);
+    }
+  } else if (images.length > 0) {
     images.forEach((member, index) => {
       const img = document.createElement('img');
       img.src = member.src;
@@ -185,6 +249,51 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
   }
 
   button.appendChild(frame);
+
+  if (communityDay) {
+    const tooltip = document.createElement('div');
+    tooltip.style.position = 'absolute';
+    tooltip.style.left = '50%';
+    tooltip.style.bottom = 'calc(100% + 18px)';
+    tooltip.style.width = 'min(280px, 72vw)';
+    tooltip.style.padding = '12px 14px';
+    tooltip.style.borderRadius = '12px';
+    tooltip.style.background = darkMode ? 'rgba(8, 16, 24, 0.96)' : 'rgba(255, 255, 255, 0.97)';
+    tooltip.style.border = `1px solid ${isPastCommunityDay ? 'rgba(225, 74, 74, 0.7)' : 'rgba(255, 153, 0, 0.72)'}`;
+    tooltip.style.color = darkMode ? '#FFFFFF' : '#0F1923';
+    tooltip.style.textAlign = 'left';
+    tooltip.style.opacity = '0';
+    tooltip.style.transform = 'translate(-50%, 8px)';
+    tooltip.style.transition = 'opacity 180ms ease, transform 180ms ease';
+    tooltip.style.pointerEvents = 'none';
+    tooltip.style.boxShadow = '0 18px 44px rgba(0, 0, 0, 0.34)';
+    tooltip.style.zIndex = '10';
+    const officialSiteHint = communityDay.profileUrl
+      ? `<span style="display:block;margin-top:6px;font-size:10px;color:${darkMode ? '#8B9BAA' : '#6B8196'}">Click to open the official event site ↗</span>`
+      : '';
+    tooltip.innerHTML = `
+      <strong style="display:block;font-size:13px;line-height:1.3">${communityDay.name}</strong>
+      <span style="display:block;margin-top:4px;font-size:11px;color:${darkMode ? '#A7BDCF' : '#537190'}">${communityDay.eventDateLabel} · ${communityDay.location}</span>
+      <span class="community-day-countdown" style="display:block;margin-top:8px;font-size:11px;font-weight:800;color:${isPastCommunityDay ? '#FF7B7B' : '#FF9900'}">${communityDay.countdownLabel}</span>
+      ${officialSiteHint}`;
+    button.appendChild(tooltip);
+    const countdown = tooltip.querySelector('.community-day-countdown');
+    if (countdown && communityDay.countdownAt) {
+      countdown.dataset.countdownAt = communityDay.countdownAt;
+      countdown.dataset.countdownPrefix = communityDay.countdownPrefix || '';
+      countdown.textContent = formatLiveCountdown(communityDay.countdownAt, communityDay.countdownPrefix);
+    }
+    button.onmouseenter = () => {
+      tooltip.style.opacity = '1';
+      tooltip.style.transform = 'translate(-50%, 0)';
+    };
+    button.onmouseleave = () => {
+      tooltip.style.opacity = '0';
+      tooltip.style.transform = 'translate(-50%, 8px)';
+    };
+    button.onfocus = button.onmouseenter;
+    button.onblur = button.onmouseleave;
+  }
   button.onpointerdown = (event) => event.stopPropagation();
   button.onpointerup = (event) => event.stopPropagation();
   button.onclick = (event) => {
@@ -271,7 +380,7 @@ function createSingaporeSpotlightElement(member, index, darkMode) {
   avatar.style.overflow = 'hidden';
   avatar.style.boxShadow = '0 0 0 4px rgba(191, 8, 22, 0.28), 0 0 24px rgba(255, 153, 0, 0.45)';
 
-  const imageUrl = member.ledBy?.find((leader) => leader?.imageUrl)?.imageUrl || member.avatarUrl;
+  const imageUrl = getMemberImage(member);
   if (imageUrl) {
     const image = document.createElement('img');
     image.src = imageUrl;
@@ -332,9 +441,15 @@ export default function MapboxGlobeScene({
   const markersRef = useRef([]);
   const singaporeSpotlightRef = useRef([]);
   const resizeTimerRef = useRef(null);
+  const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
   const singaporeSpotlightActive = category === 'cloud-clubs' && Boolean(singaporeSpotlight?.nonce);
 
-  const clusters = useMemo(() => clusterMembers(members), [members]);
+  const clusters = useMemo(
+    () => category === 'community-days' && communityDaysExpanded
+      ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
+      : clusterMembers(members),
+    [members, category, communityDaysExpanded]
+  );
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current || !TOKEN) return;
@@ -415,6 +530,19 @@ export default function MapboxGlobeScene({
 
   useEffect(() => {
     const map = mapRef.current;
+    if (!map || category !== 'community-days') return undefined;
+
+    const updateExpansion = () => setCommunityDaysExpanded(map.getZoom() >= 3);
+    map.on('zoomend', updateExpansion);
+    const frame = window.requestAnimationFrame(updateExpansion);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      map.off('zoomend', updateExpansion);
+    };
+  }, [category, singaporeSpotlightActive]);
+
+  useEffect(() => {
+    const map = mapRef.current;
     if (!map) return;
 
     let raf1 = 0;
@@ -444,7 +572,10 @@ export default function MapboxGlobeScene({
     markersRef.current = [];
 
     markersRef.current = clusters.map((cluster) => {
-      const color = heatmapEnabled ? getHeatColor(cluster.members.length) : CATEGORY_COLORS[category] ?? '#FF9900';
+      const isPastCommunityDay = category === 'community-days' && cluster.members.every((member) => member.eventStatus === 'past');
+      const color = isPastCommunityDay
+        ? '#D22C2C'
+        : heatmapEnabled ? getHeatColor(cluster.members.length) : CATEGORY_COLORS[category] ?? '#FF9900';
       const element = createClusterElement(cluster, {
         color,
         darkMode,
@@ -483,6 +614,22 @@ export default function MapboxGlobeScene({
       markersRef.current = [];
     };
   }, [clusters, category, darkMode, heatmapEnabled, onMarkerClick]);
+
+  useEffect(() => {
+    if (category !== 'community-days') return undefined;
+
+    const updateCountdowns = () => {
+      markersRef.current.forEach(({ element }) => {
+        const countdown = element.querySelector('.community-day-countdown[data-countdown-at]');
+        if (!countdown) return;
+        countdown.textContent = formatLiveCountdown(countdown.dataset.countdownAt, countdown.dataset.countdownPrefix);
+      });
+    };
+
+    updateCountdowns();
+    const interval = window.setInterval(updateCountdowns, 1000);
+    return () => window.clearInterval(interval);
+  }, [category]);
 
   useEffect(() => {
     const overlay = overlayRef.current;

@@ -4,14 +4,18 @@ import RegionDropdown from './RegionDropdown';
 
 /** @typedef {import('../types.js').CategoryKey} CategoryKey */
 
-const TABS = [
+const COMMUNITY_TABS = [
   { label: 'Heroes', key: 'heroes' },
   { label: 'Community Builders', key: 'community-builders' },
   { label: 'User Groups', key: 'user-groups' },
   { label: 'Student Builder Groups', key: 'cloud-clubs' },
-  { label: 'Kiro', key: 'kiro-ambassadors' },
+  { label: 'Kiro Ambassadors', key: 'kiro-ambassadors' },
+];
+
+const EVENT_TABS = [
+  { label: 'Kiro Events', key: 'kiro-events' },
+  { label: 'Community Days', key: 'community-days' },
   { label: 'News', key: 'news' },
-  { label: 'Experimental', key: 'experimental' },
 ];
 
 /**
@@ -25,6 +29,7 @@ const TABS = [
  *   onRegionChange: (regions: string[]) => void;
  *   selectedCountries: string[];
  *   onCountryChange: (countries: string[]) => void;
+ *   section: 'community' | 'events';
  * }} props
  */
 export default function TabNav({
@@ -39,6 +44,7 @@ export default function TabNav({
   onRegionChange,
   selectedCountries,
   onCountryChange,
+  section = 'community',
 }) {
   const surface = darkMode ? 'rgba(27, 40, 54, 0.62)' : 'rgba(255, 255, 255, 0.72)';
   const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.92)';
@@ -122,7 +128,7 @@ export default function TabNav({
           }}
         />
 
-        {TABS.map(({ label, key }) => {
+        {(section === 'events' ? EVENT_TABS : COMMUNITY_TABS).map(({ label, key }) => {
           const isActive = key === activeCategory;
           return (
             <button

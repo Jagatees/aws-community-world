@@ -2,9 +2,11 @@
  * @param {{
  *   darkMode: boolean,
  *   onToggleDark: () => void,
+ *   activeSection: 'community' | 'events',
+ *   onSectionChange: (section: 'community' | 'events') => void,
  * }} props
  */
-export default function Header({ darkMode, onToggleDark }) {
+export default function Header({ darkMode, onToggleDark, activeSection, onSectionChange }) {
   const surface = darkMode ? 'rgba(27, 40, 54, 0.7)' : 'rgba(255, 255, 255, 0.78)';
   const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.95)';
   const text = darkMode ? '#FFFFFF' : '#0F1923';
@@ -22,7 +24,19 @@ export default function Header({ darkMode, onToggleDark }) {
     >
       <span style={{ color: '#FF9900' }} className="font-bold text-lg tracking-tight">AWS</span>
       <span style={{ color: border }} className="text-lg select-none">|</span>
-      <span style={{ color: text }} className="font-semibold text-base">Community Globe</span>
+      <span className="inline-flex items-center text-base font-semibold" style={{ color: text }}>
+        <button
+          type="button"
+          onClick={() => onSectionChange(activeSection === 'community' ? 'events' : 'community')}
+          aria-label={`Switch to ${activeSection === 'community' ? 'Event' : 'Community'} Globe`}
+          title={`Switch to ${activeSection === 'community' ? 'Event' : 'Community'} Globe`}
+          className="section-mode-switch focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ outlineColor: '#FF9900', cursor: 'pointer' }}
+        >
+          {activeSection === 'community' ? 'Community' : 'Event'}
+        </button>
+        <span>&nbsp;Globe</span>
+      </span>
 
       <div className="flex-1" />
 

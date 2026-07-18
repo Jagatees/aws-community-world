@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import './ExperimentalHeroDex.css';
+import { countryCodeToFlag, getCountryCode } from '../utils/countryFlags';
+import { getMemberImage } from '../utils/memberMarkers';
 
 const SOCIAL_LABELS = {
   linkedin: 'LinkedIn',
@@ -14,6 +16,8 @@ const SOCIAL_LABELS = {
 };
 
 const AWS_HERO_PLACEHOLDER_URL = 'https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35.png';
+const COMMUNITY_BUILDER_LOGO_URL = 'https://3sky.github.io/awscb-content-catalog/Logo.png';
+const STUDENT_BUILDER_LOGO_URL = '/student-builder-group-logo.png';
 const AUTO_ORBIT_SPEED = 0.00012;
 const SCAN_EXIT_DURATION = 180;
 const SCAN_ENTER_DURATION = 360;
@@ -38,28 +42,68 @@ function recordNumber(hero, members) {
   return String(Math.max(0, index) + 1).padStart(3, '0');
 }
 
-function Portrait({ hero, eager = false }) {
+const CATEGORY_CONFIG = {
+  heroes: {
+    eyebrow: 'AWS community // heroes', title: 'Hero archive',
+    description: 'Rotate the vault. Open a tile to scan a hero record.', singular: 'AWS Hero', plural: 'heroes',
+    filterLabel: 'hero type', filterValue: (member) => member.heroType, fallbackLogo: AWS_HERO_PLACEHOLDER_URL,
+  },
+  'community-builders': {
+    eyebrow: 'AWS community // community builders', title: 'Builder archive',
+    description: 'Explore Community Builders from around the world.', singular: 'Community Builder', plural: 'community builders',
+    filterLabel: 'specialty', filterValue: (member) => member.specialization || member.tag, fallbackLogo: COMMUNITY_BUILDER_LOGO_URL,
+  },
+  'user-groups': {
+    eyebrow: 'AWS community // user groups', title: 'User group archive',
+    description: 'Browse AWS User Groups by country and city.', singular: 'AWS User Group', plural: 'user groups',
+    filterLabel: '', filterValue: () => '',
+  },
+  'cloud-clubs': {
+    eyebrow: 'AWS community // student builders', title: 'Student Builder archive',
+    description: 'Discover student-led AWS communities worldwide.', singular: 'Student Builder Group', plural: 'student builder groups',
+    filterLabel: '', filterValue: () => '', fallbackLogo: STUDENT_BUILDER_LOGO_URL,
+  },
+  'kiro-ambassadors': {
+    eyebrow: 'Kiro community // ambassadors', title: 'Kiro Ambassador archive',
+    description: 'Meet the Kiro Ambassadors representing the community.', singular: 'Kiro Ambassador', plural: 'Kiro ambassadors',
+    filterLabel: '', filterValue: () => '', fallbackLogo: '/kiro-ambassador-icon.svg',
+  },
+};
+
+function getMemberCountry(member) {
+  if (member?.country) return member.country;
+  return member?.location?.split(',').at(-1)?.trim() || '';
+}
+
+function Portrait({ hero, category, config, eager = false }) {
   const [failedUrl, setFailedUrl] = useState(null);
   const [loadedUrl, setLoadedUrl] = useState(null);
   const [placeholderFailed, setPlaceholderFailed] = useState(false);
-  const imageLoaded = loadedUrl === hero?.avatarUrl;
+  const imageUrl = getMemberImage(hero);
+  const imageLoaded = loadedUrl === imageUrl;
 
-  if (!hero?.avatarUrl || failedUrl === hero.avatarUrl) {
+  if (!imageUrl || failedUrl === imageUrl) {
+    const countryFlag = category === 'user-groups'
+      ? countryCodeToFlag(getCountryCode(getMemberCountry(hero)))
+      : '';
+
     return (
       <span className="hero-dex__placeholder">
-        {placeholderFailed ? (
+        {countryFlag ? (
+          <span className="hero-dex__flag" role="img" aria-label={`${getMemberCountry(hero)} flag`}>{countryFlag}</span>
+        ) : placeholderFailed || !config.fallbackLogo ? (
           <span className="hero-dex__initials">{initials(hero?.name)}</span>
         ) : (
           <img
             className="hero-dex__placeholder-logo"
-            src={AWS_HERO_PLACEHOLDER_URL}
+            src={config.fallbackLogo}
             alt=""
             loading="eager"
             draggable="false"
             onError={() => setPlaceholderFailed(true)}
           />
         )}
-        <strong>AWS HEROES</strong>
+        {!countryFlag && <strong>{config.singular.toUpperCase()}</strong>}
       </span>
     );
   }
@@ -71,23 +115,24 @@ function Portrait({ hero, eager = false }) {
       </span>
       <img
         className="hero-dex__portrait-image"
-        src={hero.avatarUrl}
-        alt=""
+        src={imageUrl}
+        alt={`${hero.name} leader`}
         loading={eager ? 'eager' : 'lazy'}
         draggable="false"
-        onLoad={() => setLoadedUrl(hero.avatarUrl)}
-        onError={() => setFailedUrl(hero.avatarUrl)}
+        onLoad={() => setLoadedUrl(imageUrl)}
+        onError={() => setFailedUrl(imageUrl)}
       />
     </span>
   );
 }
 
-export default function ExperimentalHeroDex({ members, loading, darkMode }) {
+export default function IconArchiveScene({ category = 'heroes', members, loading, darkMode }) {
   const [rotation, setRotation] = useState(0);
   const [selectedHero, setSelectedHero] = useState(null);
   const [scanTransition, setScanTransition] = useState(null);
   const [query, setQuery] = useState('');
-  const [heroType, setHeroType] = useState('all');
+  const [memberType, setMemberType] = useState('all');
+  const config = CATEGORY_CONFIG[category] ?? CATEGORY_CONFIG.heroes;
   const rotationRef = useRef(0);
   const targetRotationRef = useRef(0);
   const animationFrameRef = useRef(null);
@@ -101,21 +146,21 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
   const dragDistance = useRef(0);
   const suppressClickRef = useRef(false);
 
-  const heroTypes = useMemo(
-    () => [...new Set(members.map((member) => member.heroType).filter(Boolean))].sort(),
-    [members]
+  const memberTypes = useMemo(
+    () => [...new Set(members.map(config.filterValue).filter(Boolean))].sort(),
+    [config, members]
   );
 
   const filteredHeroes = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return members.filter((member) => {
-      if (heroType !== 'all' && member.heroType !== heroType) return false;
+      if (memberType !== 'all' && config.filterValue(member) !== memberType) return false;
       if (!normalizedQuery) return true;
-      return [member.name, member.heroType, member.location]
+      return [member.name, config.filterValue(member), member.location]
         .filter(Boolean)
         .some((value) => value.toLowerCase().includes(normalizedQuery));
     });
-  }, [heroType, members, query]);
+  }, [config, memberType, members, query]);
 
   const animateRotation = useCallback(() => {
     if (animationFrameRef.current !== null) return;
@@ -355,20 +400,20 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
     : -1;
 
   return (
-    <section className={`hero-dex ${darkMode ? 'hero-dex--dark' : 'hero-dex--light'}`} aria-label="Experimental AWS Heroes archive">
+    <section className={`hero-dex ${darkMode ? 'hero-dex--dark' : 'hero-dex--light'}`} aria-label={`${config.title} icon view`}>
       <div className="hero-dex__grid" aria-hidden="true" />
       <div className="hero-dex__scanline" aria-hidden="true" />
 
       <header className="hero-dex__masthead">
         <div className="hero-dex__identity">
-          <span className="hero-dex__eyebrow"><i /> AWS community // experimental</span>
-          <h1>Hero archive</h1>
-          <p>Rotate the vault. Open a tile to scan a hero record.</p>
+          <span className="hero-dex__eyebrow"><i /> {config.eyebrow}</span>
+          <h1>{config.title}</h1>
+          <p>{config.description}</p>
         </div>
 
         <div className="hero-dex__tools">
           <label className="hero-dex__search">
-            <span className="sr-only">Search heroes</span>
+            <span className="sr-only">Search {config.plural}</span>
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="11" cy="11" r="6.5" />
               <path d="m16 16 4 4" />
@@ -379,24 +424,26 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
                 setQuery(event.target.value);
                 resetRotation();
               }}
-              placeholder="Search name or location"
+              placeholder={`Search ${config.plural}`}
             />
             <kbd>/</kbd>
           </label>
-          <label className="hero-dex__select">
-            <span className="sr-only">Filter by hero type</span>
-            <select
-              value={heroType}
-              onChange={(event) => {
-                setHeroType(event.target.value);
-                resetRotation();
-              }}
-            >
-              <option value="all">All hero types</option>
-              {heroTypes.map((type) => <option key={type} value={type}>{type}</option>)}
-            </select>
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
-          </label>
+          {memberTypes.length > 0 && (
+            <label className="hero-dex__select">
+              <span className="sr-only">Filter by {config.filterLabel}</span>
+              <select
+                value={memberType}
+                onChange={(event) => {
+                  setMemberType(event.target.value);
+                  resetRotation();
+                }}
+              >
+                <option value="all">All {config.filterLabel}s</option>
+                {memberTypes.map((type) => <option key={type} value={type}>{type}</option>)}
+              </select>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+            </label>
+          )}
         </div>
       </header>
 
@@ -413,7 +460,7 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
         {loading ? (
           <div className="hero-dex__loading">
             <span className="hero-dex__loader" />
-            <p>Indexing hero records</p>
+            <p>Indexing {config.plural}</p>
           </div>
         ) : filteredHeroes.length ? (
           <div className="hero-dex__tiles">
@@ -468,15 +515,15 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
                     '--slot-tilt': `${slotSide * -16}deg`,
                   }}
                   onClick={() => openHero(hero)}
-                  aria-label={`Open ${hero.name}, ${hero.heroType}`}
+                  aria-label={`Open ${hero.name}, ${config.filterValue(hero) || config.singular}`}
                 >
                   <span className="hero-dex__hex-frame">
-                    <span className="hero-dex__hex-image"><Portrait hero={hero} eager={distance < 2} /></span>
+                    <span className="hero-dex__hex-image"><Portrait hero={hero} category={category} config={config} eager={distance < 2} /></span>
                     <span className="hero-dex__hex-sheen" />
                   </span>
                   <span className="hero-dex__tooltip">
                     <strong>{hero.name}</strong>
-                    <small>{hero.heroType}</small>
+                    <small>{config.filterValue(hero) || config.singular}</small>
                   </span>
                 </button>
               );
@@ -488,7 +535,7 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
           <div className="hero-dex__empty">
             <span>00</span>
             <h2>No records found</h2>
-            <button type="button" onClick={() => { setQuery(''); setHeroType('all'); resetRotation(); }}>Clear filters</button>
+            <button type="button" onClick={() => { setQuery(''); setMemberType('all'); resetRotation(); }}>Clear filters</button>
           </div>
         )}
       </div>
@@ -511,14 +558,14 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
           className={`hero-scan ${scanTransition ? `hero-scan--${scanTransition}` : ''}`}
           aria-modal="true"
           role="dialog"
-          aria-label={`${selectedHero.name} hero record`}
+          aria-label={`${selectedHero.name} ${config.singular} record`}
         >
           <div className="hero-scan__backdrop" aria-hidden="true">
             {[-2, -1, 0, 1, 2].map((offset) => {
               const hero = filteredHeroes[wrapIndex(selectedIndex + offset, filteredHeroes.length)];
               return (
                 <span key={hero.id} style={{ '--ghost-offset': offset }}>
-                  <Portrait hero={hero} />
+                  <Portrait hero={hero} category={category} config={config} />
                 </span>
               );
             })}
@@ -533,7 +580,7 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
             </button>
             <div className="hero-scan__title">
               <span>#{recordNumber(selectedHero, members)}</span>
-              <div><p>AWS Hero record</p><h2>{selectedHero.name}</h2></div>
+              <div><p>{config.singular} record</p><h2>{selectedHero.name}</h2></div>
             </div>
             <div className="hero-scan__header-actions">
               <span className="hero-scan__status"><i /> Record online</span>
@@ -547,7 +594,7 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
             <aside className="hero-scan__panel hero-scan__panel--left">
               <p className="hero-scan__panel-label">Profile data</p>
               <dl>
-                <div><dt>Classification</dt><dd>{selectedHero.heroType || 'AWS Hero'}</dd></div>
+                <div><dt>Classification</dt><dd>{config.filterValue(selectedHero) || config.singular}</dd></div>
                 <div><dt>Location</dt><dd>{selectedHero.location || 'Not listed'}</dd></div>
                 <div>
                   <dt>Coordinates</dt>
@@ -566,10 +613,10 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
             <div className="hero-scan__portrait-wrap">
               <div className="hero-scan__reticle" aria-hidden="true"><span /><span /><span /></div>
               <div className="hero-scan__portrait">
-                <Portrait key={selectedHero.id} hero={selectedHero} eager />
+                <Portrait key={selectedHero.id} hero={selectedHero} category={category} config={config} eager />
                 <div className="hero-scan__portrait-lines" aria-hidden="true" />
               </div>
-              <span className="hero-scan__classification">{selectedHero.heroType || 'AWS Hero'}</span>
+              <span className="hero-scan__classification">{config.filterValue(selectedHero) || config.singular}</span>
             </div>
 
             <aside className="hero-scan__panel hero-scan__panel--right">
@@ -598,7 +645,7 @@ export default function ExperimentalHeroDex({ members, loading, darkMode }) {
             </button>
             <div className="hero-scan__actions">
               {selectedHero.profileUrl && (
-                <a href={selectedHero.profileUrl} target="_blank" rel="noopener noreferrer">Open hero page <span>↗</span></a>
+                <a href={selectedHero.profileUrl} target="_blank" rel="noopener noreferrer">Open profile <span>↗</span></a>
               )}
               {selectedHero.builderProfileUrl && (
                 <a className="hero-scan__secondary" href={selectedHero.builderProfileUrl} target="_blank" rel="noopener noreferrer">Builder profile <span>↗</span></a>

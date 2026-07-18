@@ -10,6 +10,7 @@ const CATEGORY_COLORS = {
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
   'kiro-events': '#7B61FF',
+  'community-days': '#FF9900',
   'aws-ambassadors': '#2D72D2',
   'aws-community-day-singapore': '#FF9900',
   'news': '#FF9900',

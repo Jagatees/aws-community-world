@@ -1,5 +1,5 @@
 /**
- * @typedef {'heroes' | 'experimental' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'aws-community-day-singapore' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'kiro-events'} CategoryKey
+ * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'aws-community-day-singapore' | 'community-days' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'kiro-events'} CategoryKey
  */
 
 /**

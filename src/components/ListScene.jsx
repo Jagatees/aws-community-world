@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { getMemberImage } from '../utils/memberMarkers';
 
 const PAGE_SIZE = 60;
 
@@ -9,6 +10,7 @@ const CATEGORY_LABELS = {
   'cloud-clubs': 'Student Builder Groups',
   'kiro-ambassadors': 'Kiro Ambassadors',
   'kiro-events': 'Kiro Events',
+  'community-days': 'AWS Community Days',
   news: 'Builder Center News',
 };
 
@@ -49,9 +51,10 @@ function formatDate(value) {
 }
 
 function DirectoryCard({ item, category, darkMode, onSelect }) {
+  const [imageFailed, setImageFailed] = useState(false);
   const isNews = category === 'news';
   const title = isNews ? item.title : item.name;
-  const imageUrl = isNews ? item.authorAvatarUrl : item.avatarUrl;
+  const imageUrl = isNews ? item.authorAvatarUrl : getMemberImage(item);
   const url = isNews ? item.url : item.profileUrl || item.joinUrl;
   const eyebrow = isNews
     ? item.authorName || 'AWS Builder Center'
@@ -76,13 +79,14 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
         event.currentTarget.style.transform = '';
       }}
     >
-      {imageUrl ? (
+      {imageUrl && !imageFailed ? (
         <img
           src={imageUrl}
           alt={title}
           className="h-12 w-12 flex-shrink-0 rounded-xl object-cover"
           style={{ border: '1px solid rgba(255, 153, 0, 0.5)', background: '#0F1923' }}
           loading="lazy"
+          onError={() => setImageFailed(true)}
         />
       ) : (
         <div

@@ -22,12 +22,57 @@ function compactPlaceLabel(value) {
 }
 
 export function getMemberImage(member) {
-  if (member.avatarUrl) return member.avatarUrl;
+  if (isUsableMemberImage(member?.avatarUrl)) return member.avatarUrl;
   if (Array.isArray(member.ledBy)) {
-    const leaderImage = member.ledBy.find((leader) => leader?.imageUrl)?.imageUrl;
+    const leaderImage = member.ledBy.find((leader) => isUsableMemberImage(leader?.imageUrl))?.imageUrl;
     if (leaderImage) return leaderImage;
   }
   return '';
+}
+
+const COUNTRY_CODES = {
+  Argentina: 'ar',
+  Armenia: 'am',
+  Australia: 'au',
+  Bolivia: 'bo',
+  Brazil: 'br',
+  Bulgaria: 'bg',
+  Cameroon: 'cm',
+  Canada: 'ca',
+  Chile: 'cl',
+  China: 'cn',
+  Ecuador: 'ec',
+  Germany: 'de',
+  'Hong Kong': 'hk',
+  Hungary: 'hu',
+  India: 'in',
+  Italy: 'it',
+  Kenya: 'ke',
+  Libya: 'ly',
+  Malaysia: 'my',
+  Malta: 'mt',
+  Netherlands: 'nl',
+  'New Zealand': 'nz',
+  Nigeria: 'ng',
+  Philippines: 'ph',
+  Poland: 'pl',
+  Singapore: 'sg',
+  Slovenia: 'si',
+  Spain: 'es',
+  'United States': 'us',
+};
+
+export function getCountryFlagUrl(country) {
+  const code = COUNTRY_CODES[String(country ?? '').trim()];
+  return code ? `https://flagcdn.com/w80/${code}.png` : '';
+}
+
+export function isUsableMemberImage(url) {
+  if (typeof url !== 'string' || !url.trim()) return false;
+
+  // This path belongs to the Builder Profile site and is not shipped by this app.
+  // Treat it as a missing portrait so the UI renders its own fallback badge.
+  return !url.includes('/assets/default-avatar-');
 }
 
 export function getMemberBadgeLabel(member) {
