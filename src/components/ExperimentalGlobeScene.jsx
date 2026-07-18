@@ -11,9 +11,9 @@ const CARD_ANGLE_STEP = 0.22;
 const CARD_SCALE = 0.0086;
 const FRONT_LAYER_DEPTH = 0.35;
 const RING_CONFIG = [
-  { y: 2.12, radiusX: 5.15, radiusZ: 1.75, phase: -0.08, direction: 1 },
+  { y: 0.93, radiusX: 5.15, radiusZ: 1.75, phase: -0.08, direction: 1 },
   { y: 0, radiusX: 5.75, radiusZ: 2.1, phase: 0.04, direction: -1 },
-  { y: -2.12, radiusX: 5.15, radiusZ: 1.75, phase: 0.12, direction: 1 },
+  { y: -0.93, radiusX: 5.15, radiusZ: 1.75, phase: 0.12, direction: 1 },
 ];
 
 function clamp(value, min, max) {
