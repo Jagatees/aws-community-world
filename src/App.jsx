@@ -588,10 +588,10 @@ export default function App() {
           activeCategory={activeCategory}
           onChange={handleCategoryChange}
           darkMode={darkMode}
-          countries={activeSection === 'events' || isCommunityDayView || isKiroView || isAwsAmbassadorView ? [] : regionCountries}
-          countryCounts={activeSection === 'events' || isCommunityDayView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
-          regions={activeSection === 'events' || isCommunityDayView || isKiroView || isAwsAmbassadorView ? [] : regions}
-          regionCounts={activeSection === 'events' || isCommunityDayView || isKiroView || isAwsAmbassadorView ? {} : regionCounts}
+          countries={isCommunityDayView || isKiroView || isAwsAmbassadorView ? [] : regionCountries}
+          countryCounts={isCommunityDayView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
+          regions={isCommunityDayView || isKiroView || isAwsAmbassadorView ? [] : regions}
+          regionCounts={isCommunityDayView || isKiroView || isAwsAmbassadorView ? {} : regionCounts}
           selectedRegions={selectedRegions}
           onRegionChange={handleRegionChange}
           selectedCountries={selectedCountries}
@@ -638,6 +638,8 @@ export default function App() {
                 onNearMe={handleNearMe}
                 nearMeLoading={nearMeLoading}
                 flyToTarget={resolvedFlyToTarget}
+                selectedRegions={selectedRegions}
+                selectedCountries={selectedCountries}
               />
             </Suspense>
           ) : isCommunityDayView ? (
@@ -1192,7 +1194,12 @@ export default function App() {
 
     {showSplash && (
       <Suspense fallback={<div style={{ position: 'absolute', inset: 0, background: '#07111a' }} />}>
-        <SplashScreen onStart={handleSplashStart} exiting={splashExiting} />
+        <SplashScreen
+          onStart={handleSplashStart}
+          exiting={splashExiting}
+          activeSection={activeSection}
+          onSectionChange={handleSectionChange}
+        />
       </Suspense>
     )}
     </div>

@@ -180,6 +180,10 @@ function SocialLinks({ socialLinks, darkMode, compact = false }) {
     .map((meta) => ({ ...meta, url: socialLinks?.[meta.key] }))
     .filter((link) => link.url);
 
+  return <SocialLinkButtons links={links} darkMode={darkMode} compact={compact} />;
+}
+
+function SocialLinkButtons({ links, darkMode, compact = false, ariaLabel = 'Public social links' }) {
   if (!links.length) return null;
 
   const borderColor = darkMode ? 'rgba(139, 155, 170, 0.42)' : 'rgba(90, 122, 153, 0.38)';
@@ -189,16 +193,16 @@ function SocialLinks({ socialLinks, darkMode, compact = false }) {
   return (
     <div
       className={compact ? 'mt-2 flex flex-wrap gap-1' : 'flex max-w-sm flex-wrap justify-center gap-2'}
-      aria-label="Public social links"
+      aria-label={ariaLabel}
     >
       {links.map((link) => (
         <a
-          key={link.key}
+          key={link.id || link.key}
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
           title={link.label}
-          aria-label={`Open ${link.label} for this member`}
+          aria-label={link.ariaLabel || `Open ${link.label} for this member`}
           className={`inline-flex items-center justify-center rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${compact ? 'h-7 w-7' : 'h-9 w-9'}`}
           style={{
             border: `1px solid ${borderColor}`,
@@ -223,31 +227,24 @@ function SocialLinks({ socialLinks, darkMode, compact = false }) {
 }
 
 function StudentLeaderSocialLinks({ member, darkMode, compact = false }) {
-  const leaders = Array.isArray(member.ledBy)
-    ? member.ledBy.filter((leader) => leader?.socialLinks && Object.keys(leader.socialLinks).length > 0)
-    : [];
-
-  if (!leaders.length) return null;
-
-  const nameColor = darkMode ? '#DCE7F0' : '#17324B';
-  const cardBg = darkMode ? 'rgba(15, 25, 35, 0.45)' : 'rgba(240, 247, 255, 0.82)';
-  const borderColor = darkMode ? 'rgba(62, 95, 123, 0.36)' : 'rgba(150, 179, 205, 0.48)';
+  const links = (Array.isArray(member.ledBy) ? member.ledBy : []).flatMap((leader, leaderIndex) => (
+    SOCIAL_LINK_META
+      .map((meta) => ({
+        ...meta,
+        id: `${leaderIndex}-${meta.key}-${leader?.socialLinks?.[meta.key] || ''}`,
+        url: leader?.socialLinks?.[meta.key],
+        ariaLabel: `Open ${meta.label} for ${leader?.name || 'this group leader'}`,
+      }))
+      .filter((link) => link.url)
+  ));
 
   return (
-    <div className={compact ? 'mt-2 flex flex-col gap-1.5' : 'flex flex-col gap-2'}>
-      {leaders.map((leader, index) => (
-        <div
-          key={leader.profileUrl || `${leader.name || 'leader'}-${index}`}
-          className={compact ? 'rounded-lg px-2 py-1.5' : 'rounded-xl px-3 py-2.5'}
-          style={{ backgroundColor: cardBg, border: `1px solid ${borderColor}` }}
-        >
-          <p className={compact ? 'text-[11px] font-semibold' : 'text-xs font-semibold'} style={{ color: nameColor }}>
-            {leader.name || 'Student Builder Group leader'}
-          </p>
-          <SocialLinks socialLinks={leader.socialLinks} darkMode={darkMode} compact />
-        </div>
-      ))}
-    </div>
+    <SocialLinkButtons
+      links={links}
+      darkMode={darkMode}
+      compact={compact}
+      ariaLabel="Student Builder Group leader social links"
+    />
   );
 }
 

@@ -10,6 +10,7 @@ const DATA_LOADERS = {
   'cloud-clubs': () => import('../data/cloud-clubs.json'),
   'kiro-ambassadors': () => import('../data/kiro-ambassadors.json'),
   'kiro-events': () => import('../data/kiro-events.json'),
+  'community-days': () => import('../data/community-days.json'),
   'aws-ambassadors': () => import('../data/aws-ambassadors.json'),
 };
 

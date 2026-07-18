@@ -4,8 +4,10 @@ import communityBuilders from '../data/community-builders.json';
 import userGroups from '../data/user-groups.json';
 import studentBuilderGroups from '../data/cloud-clubs.json';
 import kiroAmbassadors from '../data/kiro-ambassadors.json';
+import kiroEvents from '../data/kiro-events.json';
+import communityDays from '../data/community-days.json';
 
-const STATS = [
+const COMMUNITY_STATS = [
   { label: 'Heroes', count: heroes.length, color: '#FF9900' },
   { label: 'Community Builders', count: communityBuilders.length, color: '#1A9C3E' },
   { label: 'User Groups', count: userGroups.length, color: '#00A1C9' },
@@ -13,7 +15,11 @@ const STATS = [
   { label: 'Kiro Ambassadors', count: kiroAmbassadors.length, color: '#8B5CF6' },
 ];
 
-const TOTAL = STATS.reduce((sum, stat) => sum + stat.count, 0);
+const EVENT_STATS = [
+  { label: 'Kiro Events', count: kiroEvents.length, color: '#8B5CF6' },
+  { label: 'Community Days', count: communityDays.length, color: '#FF9900' },
+];
+
 const SPLASH_GLOBE_ROTATION_SPEED = 0.035;
 const SPLASH_MARKER_COUNT = 80;
 
@@ -207,8 +213,11 @@ function OrbitGlobe() {
   );
 }
 
-export default function SplashScreen({ onStart, exiting }) {
+export default function SplashScreen({ onStart, exiting, activeSection = 'community', onSectionChange }) {
   const [showGlobe, setShowGlobe] = useState(false);
+  const isEvents = activeSection === 'events';
+  const stats = isEvents ? EVENT_STATS : COMMUNITY_STATS;
+  const total = stats.reduce((sum, stat) => sum + stat.count, 0);
 
   useEffect(() => {
     if (exiting) return undefined;
@@ -275,7 +284,7 @@ export default function SplashScreen({ onStart, exiting }) {
             marginBottom: '0.6rem',
           }}
         >
-          AWS Community
+          AWS
         </div>
 
         <h1
@@ -288,7 +297,17 @@ export default function SplashScreen({ onStart, exiting }) {
             marginBottom: '1rem',
           }}
         >
-          Community Globe
+          <button
+            key={activeSection}
+            type="button"
+            className="section-mode-switch splash-section-switch"
+            onClick={() => onSectionChange?.(isEvents ? 'community' : 'events')}
+            aria-label={`Switch to ${isEvents ? 'Community' : 'Event'} Globe`}
+            title={`Switch to ${isEvents ? 'Community' : 'Event'} Globe`}
+          >
+            {isEvents ? 'Event' : 'Community'}
+          </button>{' '}
+          <span>Globe</span>
         </h1>
 
         <div
@@ -312,7 +331,7 @@ export default function SplashScreen({ onStart, exiting }) {
               letterSpacing: '-0.02em',
             }}
           >
-            <AnimatedNumber target={TOTAL} duration={1600} />
+            <AnimatedNumber key={activeSection} target={total} duration={1600} />
           </div>
           <div
             style={{
@@ -322,12 +341,12 @@ export default function SplashScreen({ onStart, exiting }) {
               marginTop: '0.4rem',
             }}
           >
-            Community members worldwide
+            {isEvents ? 'Upcoming events worldwide' : 'Community members worldwide'}
           </div>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', marginBottom: '2.5rem' }}>
-          {STATS.map((stat, i) => (
+          {stats.map((stat, i) => (
             <div key={stat.label} style={{ display: 'flex', alignItems: 'center', gap: '0.7rem' }}>
               <div
                 style={{
@@ -383,7 +402,7 @@ export default function SplashScreen({ onStart, exiting }) {
             e.currentTarget.style.boxShadow = '0 4px 22px rgba(255, 153, 0, 0.38)';
           }}
         >
-          Explore the Globe
+          Explore the {isEvents ? 'Event' : 'Community'} Globe
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
             <path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>

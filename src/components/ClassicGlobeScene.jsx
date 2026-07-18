@@ -1,7 +1,7 @@
 import { useEffect, useRef, useCallback, useState } from 'react';
 import Globe from 'globe.gl';
 import { useAutoRotate } from '../hooks/useAutoRotate';
-import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -56,6 +56,8 @@ function clusterMembers(members) {
 
 function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
   const communityDay = cluster.members.find((member) => member.category === 'community-days');
+  const userGroup = cluster.members.find((member) => member.category === 'user-groups');
+  const userGroupFlagUrl = userGroup ? getMemberCountryFlagUrl(userGroup) : '';
   const isPastCommunityDay = Boolean(communityDay) && cluster.members.every((member) => member.eventStatus === 'past');
   const markerColor = isPastCommunityDay ? '#D22C2C' : color;
   const button = document.createElement('button');
@@ -130,6 +132,43 @@ function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
       countBadge.style.fontWeight = '800';
       frame.appendChild(countBadge);
     }
+  } else if (userGroupFlagUrl) {
+    const flag = document.createElement('img');
+    flag.src = userGroupFlagUrl;
+    flag.alt = `${getMemberCountry(userGroup)} flag`;
+    flag.width = 30;
+    flag.height = 30;
+    flag.draggable = false;
+    flag.style.width = '30px';
+    flag.style.height = '30px';
+    flag.style.objectFit = 'cover';
+    flag.style.borderRadius = '999px';
+    flag.style.border = `3px solid ${color}`;
+    flag.style.background = color;
+    flag.style.boxShadow = `0 0 0 2px ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+    frame.appendChild(flag);
+
+    if (cluster.members.length > 1) {
+      const countBadge = document.createElement('div');
+      countBadge.textContent = `+${cluster.members.length - 1}`;
+      countBadge.style.position = 'absolute';
+      countBadge.style.right = '-6px';
+      countBadge.style.bottom = '-6px';
+      countBadge.style.minWidth = '20px';
+      countBadge.style.height = '20px';
+      countBadge.style.padding = '0 5px';
+      countBadge.style.borderRadius = '999px';
+      countBadge.style.display = 'flex';
+      countBadge.style.alignItems = 'center';
+      countBadge.style.justifyContent = 'center';
+      countBadge.style.background = color;
+      countBadge.style.color = '#0F1923';
+      countBadge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
+      countBadge.style.fontSize = '10px';
+      countBadge.style.fontWeight = '800';
+      countBadge.style.lineHeight = '1';
+      frame.appendChild(countBadge);
+    }
   } else if (images.length > 0) {
     images.forEach((member, index) => {
       const img = document.createElement('img');
@@ -191,7 +230,7 @@ function createClusterElement(cluster, { color, darkMode, onClick, onWheel }) {
     }
   }
 
-  if (cluster.members.length > MAX_CLUSTER_AVATARS) {
+  if (!communityDay && !userGroupFlagUrl && images.length > 0 && cluster.members.length > MAX_CLUSTER_AVATARS) {
     const badge = document.createElement('div');
     badge.textContent = `+${cluster.members.length - MAX_CLUSTER_AVATARS}`;
     badge.style.position = 'absolute';

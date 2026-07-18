@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import './ExperimentalHeroDex.css';
-import { countryCodeToFlag, getCountryCode } from '../utils/countryFlags';
-import { getMemberImage } from '../utils/memberMarkers';
+import { getMemberCountry, getMemberCountryFlagUrl, getMemberImage } from '../utils/memberMarkers';
 
 const SOCIAL_LABELS = {
   linkedin: 'LinkedIn',
@@ -70,27 +69,31 @@ const CATEGORY_CONFIG = {
   },
 };
 
-function getMemberCountry(member) {
-  if (member?.country) return member.country;
-  return member?.location?.split(',').at(-1)?.trim() || '';
-}
-
 function Portrait({ hero, category, config, eager = false }) {
   const [failedUrl, setFailedUrl] = useState(null);
+  const [failedFlagUrl, setFailedFlagUrl] = useState(null);
   const [loadedUrl, setLoadedUrl] = useState(null);
   const [placeholderFailed, setPlaceholderFailed] = useState(false);
   const imageUrl = getMemberImage(hero);
   const imageLoaded = loadedUrl === imageUrl;
 
   if (!imageUrl || failedUrl === imageUrl) {
-    const countryFlag = category === 'user-groups'
-      ? countryCodeToFlag(getCountryCode(getMemberCountry(hero)))
+    const countryFlagUrl = category === 'user-groups'
+      ? getMemberCountryFlagUrl(hero)
       : '';
+    const showCountryFlag = countryFlagUrl && failedFlagUrl !== countryFlagUrl;
 
     return (
       <span className="hero-dex__placeholder">
-        {countryFlag ? (
-          <span className="hero-dex__flag" role="img" aria-label={`${getMemberCountry(hero)} flag`}>{countryFlag}</span>
+        {showCountryFlag ? (
+          <img
+            className="hero-dex__flag"
+            src={countryFlagUrl}
+            alt={`${getMemberCountry(hero)} flag`}
+            loading={eager ? 'eager' : 'lazy'}
+            draggable="false"
+            onError={() => setFailedFlagUrl(countryFlagUrl)}
+          />
         ) : placeholderFailed || !config.fallbackLogo ? (
           <span className="hero-dex__initials">{initials(hero?.name)}</span>
         ) : (
@@ -103,7 +106,7 @@ function Portrait({ hero, category, config, eager = false }) {
             onError={() => setPlaceholderFailed(true)}
           />
         )}
-        {!countryFlag && <strong>{config.singular.toUpperCase()}</strong>}
+        {!showCountryFlag && <strong>{config.singular.toUpperCase()}</strong>}
       </span>
     );
   }
@@ -400,7 +403,11 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
     : -1;
 
   return (
-    <section className={`hero-dex ${darkMode ? 'hero-dex--dark' : 'hero-dex--light'}`} aria-label={`${config.title} icon view`}>
+    <section
+      className={`hero-dex ${darkMode ? 'hero-dex--dark' : 'hero-dex--light'}`}
+      data-category={category}
+      aria-label={`${config.title} icon view`}
+    >
       <div className="hero-dex__grid" aria-hidden="true" />
       <div className="hero-dex__scanline" aria-hidden="true" />
 

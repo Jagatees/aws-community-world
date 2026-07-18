@@ -16,6 +16,7 @@
     "build:community-builder-summary": "node scripts/build-community-builder-summary.mjs"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "@tailwindcss/vite": "^4.2.2",
     "@vercel/analytics": "^2.0.1",
     "@vercel/blob": "^2.5.0",

@@ -1,6 +1,7 @@
 import { createElement, useCallback, useMemo } from 'react';
 import ListScene from './ListScene';
 import communityDays from '../data/community-days.json';
+import { getRegionForCountry } from '../utils/countryRegions';
 
 const SOURCE_URL = 'https://builder.aws.com/content/3Dj1piMsfZG5aSDK1q6bHfzPOqs/aws-community-days-where-builders-learn-together';
 
@@ -39,6 +40,8 @@ export default function CommunityDaysScene({
   onNearMe,
   nearMeLoading,
   flyToTarget,
+  selectedRegions = [],
+  selectedCountries = [],
 }) {
   const now = useMemo(() => new Date(), []);
 
@@ -73,8 +76,12 @@ export default function CommunityDaysScene({
         countdownPrefix: eventEnded && nextLocalEvent ? `Next in ${event.country}: ` : '',
         avatarUrl: '',
       };
+    }).filter((event) => {
+      if (selectedRegions.length && !selectedRegions.includes(getRegionForCountry(event.country))) return false;
+      if (selectedCountries.length && !selectedCountries.includes(event.country)) return false;
+      return true;
     });
-  }, [now]);
+  }, [now, selectedCountries, selectedRegions]);
 
   const upcomingCount = events.filter((event) => event.eventStatus === 'upcoming').length;
   const pastCount = events.length - upcomingCount;

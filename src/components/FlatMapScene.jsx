@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { geoGraticule10, geoNaturalEarth1, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import countriesTopo from 'world-atlas/countries-110m.json';
-import { getMemberBadgeLabel, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { getMemberBadgeLabel, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -327,10 +327,66 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                 const stackOffsetX = visibleImages.length > 1 ? stackWidth / 2 : clusterAvatarSize / 2;
                 const badgeCount = Math.max(0, marker.members.length - visibleImages.length);
                 const markerHasNewMember = hasNewMember(marker.members);
+                const userGroupFlagUrl = category === 'user-groups'
+                  ? getMemberCountryFlagUrl(marker.members[0])
+                  : '';
+                const flagSize = marker.size * 2;
 
                 return (
                   <g key={`${marker.lat}-${marker.lng}-${marker.members.length}`} transform={`translate(${marker.x} ${marker.y})`}>
-                    {visibleImages.length > 0 ? (
+                    {userGroupFlagUrl ? (
+                      <>
+                        <circle
+                          r={marker.size * 1.08}
+                          fill={markerColor}
+                          opacity="0.3"
+                          filter="url(#flat-marker-glow)"
+                          pointerEvents="none"
+                        />
+                        <clipPath id={`flat-flag-clip-${markerId}`}>
+                          <circle r={flagSize / 2} />
+                        </clipPath>
+                        <image
+                          href={userGroupFlagUrl}
+                          x={-flagSize / 2}
+                          y={-flagSize / 2}
+                          width={flagSize}
+                          height={flagSize}
+                          preserveAspectRatio="xMidYMid slice"
+                          clipPath={`url(#flat-flag-clip-${markerId})`}
+                          pointerEvents="none"
+                        />
+                        <circle
+                          r={flagSize / 2}
+                          fill="transparent"
+                          stroke={markerColor}
+                          strokeWidth="3"
+                          pointerEvents="none"
+                        />
+                        {marker.members.length > 1 && (
+                          <g transform={`translate(${marker.size * 0.72} ${marker.size * 0.72})`}>
+                            <circle
+                              r={Math.max(7, marker.size * 0.44)}
+                              fill={markerColor}
+                              stroke={darkMode ? '#09131c' : '#ffffff'}
+                              strokeWidth="2"
+                              pointerEvents="none"
+                            />
+                            <text
+                              y="1"
+                              textAnchor="middle"
+                              dominantBaseline="middle"
+                              fill="#0F1923"
+                              fontSize="8"
+                              fontWeight="800"
+                              pointerEvents="none"
+                            >
+                              +{marker.members.length - 1}
+                            </text>
+                          </g>
+                        )}
+                      </>
+                    ) : visibleImages.length > 0 ? (
                       <>
                         <ellipse
                           cx={visibleImages.length > 1 ? -stackOffsetX / 2 + clusterAvatarSize / 2 : 0}

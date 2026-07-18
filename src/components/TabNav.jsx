@@ -18,6 +18,17 @@ const EVENT_TABS = [
   { label: 'News', key: 'news' },
 ];
 
+const CATEGORY_ACCENTS = {
+  heroes: '#FF9900',
+  'community-builders': '#1A9C3E',
+  'user-groups': '#00A1C9',
+  'cloud-clubs': '#BF0816',
+  'kiro-ambassadors': '#8B5CF6',
+  'kiro-events': '#7B61FF',
+  'community-days': '#FF9900',
+  news: '#FF9900',
+};
+
 /**
  * @param {{
  *   activeCategory: CategoryKey;
@@ -52,6 +63,7 @@ export default function TabNav({
   const activeText = darkMode ? '#FFFFFF' : '#0F1923';
   const inactiveText = darkMode ? '#8B9BAA' : '#5a7a99';
   const divider = darkMode ? 'rgba(115, 145, 171, 0.34)' : 'rgba(134, 162, 190, 0.5)';
+  const activeAccent = CATEGORY_ACCENTS[activeCategory] ?? '#FF9900';
 
   const navRef = useRef(null);
   const indicatorRef = useRef(null);
@@ -121,10 +133,10 @@ export default function TabNav({
             position: 'absolute',
             bottom: 0,
             height: '3px',
-            backgroundColor: '#FF9900',
+            backgroundColor: activeAccent,
             borderRadius: '2px 2px 0 0',
             pointerEvents: 'none',
-            boxShadow: '0 0 8px rgba(255, 153, 0, 0.55)',
+            boxShadow: `0 0 8px color-mix(in srgb, ${activeAccent} 65%, transparent)`,
           }}
         />
 
@@ -187,7 +199,7 @@ export default function TabNav({
                 multiSelect
                 className="px-3 py-1 text-xs"
                 buttonStyle={{
-                  color: selectedCountries.length ? '#FF9900' : inactiveText,
+                  color: selectedCountries.length ? activeAccent : inactiveText,
                   background: 'transparent',
                 }}
               />

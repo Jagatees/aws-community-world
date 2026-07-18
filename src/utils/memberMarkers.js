@@ -1,3 +1,5 @@
+import { getCountryCode } from './countryFlags';
+
 function tokenizeName(name) {
   return String(name ?? '')
     .trim()
@@ -30,41 +32,19 @@ export function getMemberImage(member) {
   return '';
 }
 
-const COUNTRY_CODES = {
-  Argentina: 'ar',
-  Armenia: 'am',
-  Australia: 'au',
-  Bolivia: 'bo',
-  Brazil: 'br',
-  Bulgaria: 'bg',
-  Cameroon: 'cm',
-  Canada: 'ca',
-  Chile: 'cl',
-  China: 'cn',
-  Ecuador: 'ec',
-  Germany: 'de',
-  'Hong Kong': 'hk',
-  Hungary: 'hu',
-  India: 'in',
-  Italy: 'it',
-  Kenya: 'ke',
-  Libya: 'ly',
-  Malaysia: 'my',
-  Malta: 'mt',
-  Netherlands: 'nl',
-  'New Zealand': 'nz',
-  Nigeria: 'ng',
-  Philippines: 'ph',
-  Poland: 'pl',
-  Singapore: 'sg',
-  Slovenia: 'si',
-  Spain: 'es',
-  'United States': 'us',
-};
-
 export function getCountryFlagUrl(country) {
-  const code = COUNTRY_CODES[String(country ?? '').trim()];
-  return code ? `https://flagcdn.com/w80/${code}.png` : '';
+  const code = getCountryCode(String(country ?? '').trim());
+  return code ? `https://flagcdn.com/w80/${code.toLowerCase()}.png` : '';
+}
+
+export function getMemberCountry(member) {
+  if (member?.country) return String(member.country).trim();
+  const locationParts = String(member?.location ?? '').split(',');
+  return locationParts.at(-1)?.trim() || '';
+}
+
+export function getMemberCountryFlagUrl(member) {
+  return getCountryFlagUrl(getMemberCountry(member));
 }
 
 export function isUsableMemberImage(url) {
