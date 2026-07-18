@@ -1,14 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
+const GLOBE_MODES = [
+  { id: 'community', label: 'Community', description: 'People and groups' },
+  { id: 'events', label: 'Event', description: 'Events and updates' },
+  { id: 'experimental', label: 'Experimental', description: 'Digital portrait orbit' },
+];
 
 /**
  * @param {{
  *   darkMode: boolean,
- *   activeSection: 'community' | 'events',
- *   onSectionChange: (section: 'community' | 'events') => void,
+ *   activeSection: 'community' | 'events' | 'experimental',
+ *   onSectionChange: (section: 'community' | 'events' | 'experimental') => void,
  * }} props
  */
 export default function Header({ darkMode, activeSection, onSectionChange }) {
   const [repoStats, setRepoStats] = useState({ stars: 6, forks: 3 });
+  const [modeMenuOpen, setModeMenuOpen] = useState(false);
+  const modeMenuRef = useRef(null);
   const surface = darkMode ? 'rgba(27, 40, 54, 0.7)' : 'rgba(255, 255, 255, 0.78)';
   const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.95)';
   const text = darkMode ? '#FFFFFF' : '#0F1923';
@@ -38,6 +46,21 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
     return () => controller.abort();
   }, []);
 
+  useEffect(() => {
+    if (!modeMenuOpen) return undefined;
+
+    const closeMenu = (event) => {
+      if (event.key === 'Escape' || !modeMenuRef.current?.contains(event.target)) setModeMenuOpen(false);
+    };
+
+    window.addEventListener('keydown', closeMenu);
+    window.addEventListener('pointerdown', closeMenu);
+    return () => {
+      window.removeEventListener('keydown', closeMenu);
+      window.removeEventListener('pointerdown', closeMenu);
+    };
+  }, [modeMenuOpen]);
+
   return (
     <header
       className="relative z-30 w-full px-4 py-2 flex items-center gap-3"
@@ -50,19 +73,42 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
     >
       <span style={{ color: '#FF9900' }} className="font-bold text-lg tracking-tight">AWS</span>
       <span style={{ color: border }} className="text-lg select-none">|</span>
-      <span className="inline-flex items-center text-base font-semibold" style={{ color: text }}>
+      <div ref={modeMenuRef} className="globe-mode-picker text-base font-semibold" style={{ color: text }}>
         <button
           type="button"
-          onClick={() => onSectionChange(activeSection === 'community' ? 'events' : 'community')}
-          aria-label={`Switch to ${activeSection === 'community' ? 'Event' : 'Community'} Globe`}
-          title={`Switch to ${activeSection === 'community' ? 'Event' : 'Community'} Globe`}
+          onClick={() => setModeMenuOpen((open) => !open)}
+          aria-label="Choose globe experience"
+          aria-haspopup="menu"
+          aria-expanded={modeMenuOpen}
           className="section-mode-switch focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           style={{ outlineColor: '#FF9900', cursor: 'pointer' }}
         >
-          {activeSection === 'community' ? 'Community' : 'Event'}
+          <span>{GLOBE_MODES.find((mode) => mode.id === activeSection)?.label ?? 'Community'}</span>
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 6 3 3 3-3" /></svg>
         </button>
         <span>&nbsp;Globe</span>
-      </span>
+
+        {modeMenuOpen && (
+          <div className="globe-mode-menu" role="menu" aria-label="Globe experiences">
+            {GLOBE_MODES.map((mode) => (
+              <button
+                key={mode.id}
+                type="button"
+                role="menuitemradio"
+                aria-checked={activeSection === mode.id}
+                className={activeSection === mode.id ? 'is-active' : ''}
+                onClick={() => {
+                  onSectionChange(mode.id);
+                  setModeMenuOpen(false);
+                }}
+              >
+                <span><strong>{mode.label} Globe</strong><small>{mode.description}</small></span>
+                {activeSection === mode.id && <i aria-hidden="true" />}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
 
       <div className="flex-1" />
 

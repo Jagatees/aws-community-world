@@ -156,9 +156,10 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 6.75rem;
+  width: auto;
+  min-width: 7.25rem;
   min-height: 32px;
-  padding: 0.25rem 0;
+  padding: 0.25rem 0.55rem 0.25rem 0.7rem;
   border: 1px solid rgba(126, 232, 255, 0.32);
   border-radius: 0.5rem;
   background-color: transparent;
@@ -194,6 +195,57 @@ body {
 .section-mode-switch:active {
   transform: translateY(0) scale(0.98);
 }
+
+.section-mode-switch > span { flex: 1; }
+.section-mode-switch > svg {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.3rem;
+  fill: none;
+  stroke: #7ee8ff;
+  stroke-width: 1.8;
+  transition: transform 200ms ease;
+}
+.section-mode-switch[aria-expanded="true"] > svg { transform: rotate(180deg); }
+
+.globe-mode-picker { position: relative; display: inline-flex; align-items: center; }
+.globe-mode-menu {
+  position: absolute;
+  top: calc(100% + 0.65rem);
+  left: 0;
+  z-index: 80;
+  width: 15.5rem;
+  padding: 0.35rem;
+  border: 1px solid rgba(91, 137, 169, 0.44);
+  border-radius: 0.85rem;
+  background: rgba(8, 20, 31, 0.96);
+  box-shadow: 0 20px 46px rgba(1, 8, 15, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  animation: globe-mode-menu-in 180ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.globe-mode-menu button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.68rem 0.75rem;
+  border: 0;
+  border-radius: 0.62rem;
+  color: #a9bbc8;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+.globe-mode-menu button:hover,
+.globe-mode-menu button:focus-visible { color: #fff; background: rgba(80, 184, 219, 0.12); outline: none; transform: translateX(2px); }
+.globe-mode-menu button.is-active { color: #ffd54a; background: rgba(255, 153, 0, 0.1); }
+.globe-mode-menu button span { display: flex; flex-direction: column; gap: 0.12rem; }
+.globe-mode-menu button strong { font-size: 0.76rem; }
+.globe-mode-menu button small { color: #657d8d; font-size: 0.63rem; font-weight: 500; }
+.globe-mode-menu button i { width: 0.42rem; height: 0.42rem; border-radius: 50%; background: #ff9900; box-shadow: 0 0 10px rgba(255, 153, 0, 0.8); }
+
+@keyframes globe-mode-menu-in { from { opacity: 0; transform: translateY(-0.4rem) scale(0.97); } }
 
 .section-mode-switch::after {
   content: "Click me";
