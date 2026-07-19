@@ -31,8 +31,14 @@ const PINCH_MIN_DISTANCE = 24;
 function clusterMembers(members) {
   const clusters = [];
   for (const member of members) {
+    if (member.forceSeparateMarker) {
+      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
+      continue;
+    }
+
     const existing = clusters.find(
       (c) =>
+        !c.forceSeparateMarker &&
         Math.abs(c.lat - member.lat) <= CLUSTER_TOLERANCE &&
         Math.abs(c.lng - member.lng) <= CLUSTER_TOLERANCE
     );

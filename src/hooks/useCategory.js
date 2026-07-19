@@ -43,6 +43,7 @@ function normalizeMembers(raw, category) {
     country: item.country ?? '',
     builderCount: item.builderCount ?? 0,
     clusterOnly: Boolean(item.clusterOnly),
+    forceSeparateMarker: Boolean(item.forceSeparateMarker),
     socialLinks: item.socialLinks && typeof item.socialLinks === 'object' ? item.socialLinks : {},
   }));
 }

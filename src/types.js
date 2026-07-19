@@ -25,6 +25,7 @@
  * @property {string} [country]
  * @property {number} [builderCount]
  * @property {boolean} [clusterOnly]
+ * @property {boolean} [forceSeparateMarker]
  * @property {{ linkedin?: string, github?: string, x?: string, devto?: string, youtube?: string, facebook?: string, repost?: string, blog?: string, website?: string }} [socialLinks]
  */
 

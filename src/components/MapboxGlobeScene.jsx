@@ -60,8 +60,14 @@ function clusterMembers(members) {
   const clusters = [];
 
   for (const member of members) {
+    if (member.forceSeparateMarker) {
+      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
+      continue;
+    }
+
     const existing = clusters.find(
       (cluster) =>
+        !cluster.forceSeparateMarker &&
         Math.abs(cluster.lat - member.lat) <= CLUSTER_TOLERANCE &&
         Math.abs(cluster.lng - member.lng) <= CLUSTER_TOLERANCE
     );
@@ -79,6 +85,7 @@ function clusterMembers(members) {
 function createClusterElement(cluster, { category, color, darkMode, separation, onClick }) {
   const communityDay = cluster.members.find((member) => member.category === 'community-days');
   const userGroup = cluster.members.find((member) => member.category === 'user-groups');
+  const singleMember = cluster.members.length === 1 ? cluster.members[0] : null;
   const userGroupFlagUrl = userGroup ? getMemberCountryFlagUrl(userGroup) : '';
   const isPastCommunityDay = Boolean(communityDay) && cluster.members.every((member) => member.eventStatus === 'past');
   const button = document.createElement('button');
@@ -87,7 +94,9 @@ function createClusterElement(cluster, { category, color, darkMode, separation, 
     'aria-label',
     communityDay
       ? `${cluster.members.length} Community Day${cluster.members.length > 1 ? 's' : ''} at this location`
-      : `${cluster.members.length} member${cluster.members.length > 1 ? 's' : ''} at this location`
+      : singleMember
+        ? `${singleMember.name} — ${singleMember.location}`
+        : `${cluster.members.length} members at this location`
   );
   button.style.display = 'flex';
   button.style.alignItems = 'center';

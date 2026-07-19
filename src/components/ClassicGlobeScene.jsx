@@ -260,8 +260,14 @@ function formatLiveCountdown(targetValue, prefix = '') {
 function clusterMembers(members) {
   const clusters = [];
   for (const member of members) {
+    if (member.forceSeparateMarker) {
+      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
+      continue;
+    }
+
     const existing = clusters.find(
       (cluster) =>
+        !cluster.forceSeparateMarker &&
         Math.abs(cluster.lat - member.lat) <= CLUSTER_TOLERANCE &&
         Math.abs(cluster.lng - member.lng) <= CLUSTER_TOLERANCE
     );

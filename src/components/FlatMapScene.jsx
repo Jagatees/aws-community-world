@@ -51,7 +51,20 @@ function clusterProjectedMembers(members, projection, zoomLevel) {
     if (!projected) continue;
 
     const [x, y] = projected;
+    if (member.forceSeparateMarker) {
+      clusters.push({
+        lat: member.lat,
+        lng: member.lng,
+        x,
+        y,
+        members: [member],
+        forceSeparateMarker: true,
+      });
+      continue;
+    }
+
     const existing = clusters.find((cluster) => {
+      if (cluster.forceSeparateMarker) return false;
       const dx = cluster.x - x;
       const dy = cluster.y - y;
       return Math.hypot(dx, dy) <= threshold;
