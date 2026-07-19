@@ -188,4 +188,4 @@ Please run `npm run lint` and `npm run build` before opening a pull request.
 
 ## Status
 
-AWS Community Globe is actively evolving. Data completeness depends on public source availability, geocoding quality, and upstream page structures. Some tabs and special experiences are intentionally early-stage.
+AWS Community Globe reached **Version 1.0** in July 2026. The globe remains actively maintained, and the Experimental Globe is intentionally a playground for new ideas and surprise features. Data completeness depends on public source availability, geocoding quality, and upstream page structures.

@@ -66,6 +66,96 @@ function createAvatarElement(hero) {
   return wrapper;
 }
 
+function createEventElement(event) {
+  const isKiro = event.category === 'kiro-events';
+  const color = isKiro ? '#8B5CF6' : '#FF9900';
+  const dateValue = event.date || event.startsAt;
+  const date = dateValue ? new Date(dateValue.includes('T') ? dateValue : `${dateValue}T12:00:00`) : null;
+  const day = date && !Number.isNaN(date.getTime()) ? date.getDate() : '--';
+  const wrapper = document.createElement('div');
+  wrapper.title = event.name;
+  wrapper.style.cssText = `
+    position: relative;
+    width: 40px;
+    height: 46px;
+    display: grid;
+    place-items: start center;
+    pointer-events: none;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    filter: drop-shadow(0 7px 8px rgba(0,0,0,0.5));
+  `;
+
+  const pin = document.createElement('span');
+  pin.style.cssText = `
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid ${color};
+    border-radius: 50% 50% 50% 5px;
+    background: linear-gradient(135deg, ${color} 0 16%, rgba(8, 22, 36, 0.98) 17% 100%);
+    box-shadow: 0 0 0 4px ${color}24, inset 0 0 0 1px rgba(255,255,255,0.1);
+    transform: rotate(-45deg);
+  `;
+
+  const face = document.createElement('span');
+  face.style.cssText = `
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    transform: rotate(45deg);
+    color: #FFFFFF;
+    line-height: 1;
+  `;
+
+  const brand = document.createElement('span');
+  brand.style.cssText = `
+    color: ${color};
+    font-size: ${isKiro ? '5px' : '6px'};
+    font-weight: 900;
+    letter-spacing: 0.08em;
+  `;
+  brand.textContent = isKiro ? 'KIRO' : 'AWS';
+
+  const dateNumber = document.createElement('span');
+  dateNumber.style.cssText = `
+    display: grid;
+    place-items: center;
+    min-width: 15px;
+    height: 12px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.1);
+    font-size: 10px;
+    font-weight: 900;
+  `;
+  dateNumber.textContent = `${day}`;
+
+  const pulse = document.createElement('span');
+  pulse.style.cssText = `
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    width: 14px;
+    height: 4px;
+    border-radius: 50%;
+    background: ${color};
+    opacity: 0.28;
+    transform: translateX(-50%);
+    filter: blur(2px);
+  `;
+
+  face.append(brand, dateNumber);
+  pin.appendChild(face);
+  wrapper.append(pin, pulse);
+  return wrapper;
+}
+
 function shuffled(values) {
   const next = [...values];
   for (let index = next.length - 1; index > 0; index -= 1) {
@@ -75,7 +165,7 @@ function shuffled(values) {
   return next;
 }
 
-function OrbitGlobe() {
+function OrbitGlobe({ isEvents }) {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
   const rafRef = useRef(null);
@@ -88,17 +178,33 @@ function OrbitGlobe() {
     let cancelled = false;
 
     // Load globe.gl and heroes data in parallel — both are separate lazy chunks
+    const markerDataPromise = isEvents
+      ? Promise.all([
+        import('../data/community-days.json'),
+        import('../data/kiro-events.json'),
+      ]).then(([{ default: communityDays }, { default: kiroEvents }]) => [
+        ...communityDays.map((event) => ({ ...event, category: 'community-days' })),
+        ...kiroEvents.map((event) => ({ ...event, category: 'kiro-events' })),
+      ])
+      : import('../data/heroes.json').then(({ default: heroes }) => heroes);
+
     Promise.all([
       import('globe.gl'),
-      import('../data/heroes.json'),
-    ]).then(([{ default: Globe }, { default: heroesRaw }]) => {
+      markerDataPromise,
+    ]).then(([{ default: Globe }, markerData]) => {
       if (cancelled || !containerRef.current) return;
 
-      // Take a geographically spread sample, then randomize the reveal order.
-      const markers = shuffled(heroesRaw
-        .filter(h => h.image_url && h.lat && h.lng && !(h.lat === 0 && h.lng === 0))
-        .filter((_, i) => i % 3 === 0)
-        .slice(0, SPLASH_MARKER_COUNT));
+      const validMarkers = markerData.filter((marker) => (
+        Number.isFinite(Number(marker.lat)) &&
+        Number.isFinite(Number(marker.lng)) &&
+        !(Number(marker.lat) === 0 && Number(marker.lng) === 0)
+      ));
+      const markers = shuffled(isEvents
+        ? validMarkers
+        : validMarkers
+          .filter((hero) => hero.image_url)
+          .filter((_, index) => index % 3 === 0)
+          .slice(0, SPLASH_MARKER_COUNT));
 
       let globe;
       try {
@@ -123,7 +229,7 @@ function OrbitGlobe() {
         .htmlLng('lng')
         .htmlAltitude(0.06)
         .htmlTransitionDuration(0)
-        .htmlElement(createAvatarElement);
+        .htmlElement(isEvents ? createEventElement : createAvatarElement);
 
       const controls = globe.controls();
       if (controls) {
@@ -185,7 +291,7 @@ function OrbitGlobe() {
       container.innerHTML = '';
       globeRef.current = null;
     };
-  }, []);
+  }, [isEvents]);
 
   if (failed) {
     return (
@@ -421,7 +527,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
           transform: exiting ? 'scale(1.06)' : 'scale(1)',
         }}
       >
-        {showGlobe && !exiting ? <OrbitGlobe /> : (
+        {showGlobe && !exiting ? <OrbitGlobe isEvents={isEvents} /> : (
           <div
             aria-hidden="true"
             style={{
