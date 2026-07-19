@@ -64,6 +64,7 @@ export default function TabNav({
   const inactiveText = darkMode ? '#8B9BAA' : '#5a7a99';
   const divider = darkMode ? 'rgba(115, 145, 171, 0.34)' : 'rgba(134, 162, 190, 0.5)';
   const activeAccent = CATEGORY_ACCENTS[activeCategory] ?? '#FF9900';
+  const hasFilters = regions.length > 0 || countries.length > 0;
 
   const navRef = useRef(null);
   const indicatorRef = useRef(null);
@@ -112,7 +113,12 @@ export default function TabNav({
 
   return (
     <div
+      className={`category-nav-shell${hasFilters ? ' has-filters' : ''}`}
       style={{
+        '--category-nav-surface': surface,
+        '--category-nav-border': border,
+        '--category-active-bg': activeBg,
+        '--category-accent': activeAccent,
         backgroundColor: surface,
         backdropFilter: 'blur(18px)',
         WebkitBackdropFilter: 'blur(18px)',
@@ -123,12 +129,14 @@ export default function TabNav({
         ref={navRef}
         role="tablist"
         aria-label="Community categories"
+        className="category-tab-list"
         style={{ display: 'flex', alignItems: 'center', overflowX: 'auto', scrollbarWidth: 'none', position: 'relative' }}
       >
         {/* Sliding indicator bar */}
         <div
           ref={indicatorRef}
           aria-hidden="true"
+          className="category-tab-indicator"
           style={{
             position: 'absolute',
             bottom: 0,
@@ -149,9 +157,10 @@ export default function TabNav({
               role="tab"
               aria-selected={isActive}
               onClick={() => onChange(key)}
+              className="category-tab-button"
               style={{
                 padding: '12px 20px',
-                background: isActive ? activeBg : 'transparent',
+                background: 'transparent',
                 color: isActive ? activeText : inactiveText,
                 border: 'none',
                 borderBottom: '3px solid transparent',
@@ -166,20 +175,22 @@ export default function TabNav({
             </button>
           );
         })}
+      </nav>
 
-        {(regions.length > 0 || countries.length > 0) && (
-          <div
-            style={{
-              marginLeft: '10px',
-              marginRight: '12px',
-              paddingLeft: '14px',
-              flexShrink: 0,
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0',
-              borderLeft: `1px solid ${divider}`,
-            }}
-          >
+      {hasFilters && (
+        <div
+          className="category-filter-list"
+          style={{
+            marginLeft: '10px',
+            marginRight: '12px',
+            paddingLeft: '14px',
+            flexShrink: 0,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0',
+            borderLeft: `1px solid ${divider}`,
+          }}
+        >
             {regions.length > 0 && (
               <RegionDropdown
                 darkMode={darkMode}
@@ -204,9 +215,8 @@ export default function TabNav({
                 }}
               />
             )}
-          </div>
-        )}
-      </nav>
+        </div>
+      )}
     </div>
   );
 }

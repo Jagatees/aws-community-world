@@ -64,6 +64,13 @@ const VALID_GLOBE_DESIGNS = new Set(GLOBE_DESIGNS);
 const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors']);
 const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'news']);
 
+function getResponsiveDefaultGlobeDesign() {
+  if (typeof window === 'undefined') return DEFAULT_ROUTE_STATE.globeDesign;
+  return window.matchMedia('(max-width: 767px), (pointer: coarse), (prefers-reduced-motion: reduce)').matches
+    ? 'sleek'
+    : DEFAULT_ROUTE_STATE.globeDesign;
+}
+
 function getMemberCountry(member) {
   if (member?.country) return member.country;
   const parts = member?.location?.split(',') ?? [];
@@ -83,6 +90,7 @@ function getRouteStateFromUrl() {
   const theme = params.get('theme');
   const spotlight = params.get('sg') === '1';
   const experimental = view === 'experimental';
+  const defaultGlobeDesign = getResponsiveDefaultGlobeDesign();
   const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'sg'].some((key) => params.has(key));
 
   return {
@@ -96,7 +104,7 @@ function getRouteStateFromUrl() {
       ? 'classic'
       : VALID_GLOBE_DESIGNS.has(view)
         ? view
-        : DEFAULT_ROUTE_STATE.globeDesign,
+        : defaultGlobeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
     singaporeSpotlight: experimental ? false : spotlight,
     hasShareState,
@@ -468,8 +476,9 @@ export default function App() {
     setSelectedCountries([]);
     setSingaporeSpotlight(null);
     setActiveCategory(category);
-    if (EVENT_CATEGORIES.has(category)) setGlobeDesign('orbit');
-    else if (category === 'kiro-ambassadors') setGlobeDesign('orbit');
+    if (EVENT_CATEGORIES.has(category) || category === 'kiro-ambassadors') {
+      setGlobeDesign(getResponsiveDefaultGlobeDesign());
+    }
     if (category === 'news') setNewsPanelOpen(true);
   }, []);
 
@@ -481,7 +490,7 @@ export default function App() {
     }
 
     handleCategoryChange(section === 'events' ? 'kiro-events' : 'heroes');
-    setGlobeDesign('orbit');
+    setGlobeDesign(getResponsiveDefaultGlobeDesign());
   }, [handleCategoryChange]);
 
   const handleRegionChange = useCallback((regions) => {
@@ -793,7 +802,7 @@ export default function App() {
 
                 {/* Globe controls */}
                 <div
-                  className="absolute bottom-5 z-20"
+                  className="mobile-globe-controls absolute bottom-5 z-20"
                   style={{ left: newsPanelOpen ? '50%' : '50%', transform: 'translateX(-50%)' }}
                 >
                   <div className="flex items-stretch gap-3">
@@ -801,6 +810,7 @@ export default function App() {
                       className="grid items-center rounded-full p-1"
                       style={{
                         position: 'relative',
+                        '--design-count': availableGlobeDesigns.length,
                         gridTemplateColumns: `repeat(${availableGlobeDesigns.length}, minmax(64px, 1fr))`,
                         background: viewControlBg,
                         border: `1px solid ${viewControlBorder}`,
@@ -1092,7 +1102,7 @@ export default function App() {
                 </div>
               </div>}
 
-              <div className="absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
+              <div className="mobile-globe-controls absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
                 <div className="flex items-stretch gap-3">
                   {!singaporeSpotlight && !isExperimentalView && (
                     <>
@@ -1100,6 +1110,7 @@ export default function App() {
                         className="grid items-center rounded-full p-1"
                         style={{
                           position: 'relative',
+                          '--design-count': availableGlobeDesigns.length,
                           gridTemplateColumns: `repeat(${availableGlobeDesigns.length}, minmax(64px, 1fr))`,
                           background: viewControlBg,
                           border: `1px solid ${viewControlBorder}`,

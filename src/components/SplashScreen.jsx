@@ -1,23 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
-import heroes from '../data/heroes.json';
-import communityBuilders from '../data/community-builders.json';
-import userGroups from '../data/user-groups.json';
-import studentBuilderGroups from '../data/cloud-clubs.json';
-import kiroAmbassadors from '../data/kiro-ambassadors.json';
-import kiroEvents from '../data/kiro-events.json';
-import communityDays from '../data/community-days.json';
-
 const COMMUNITY_STATS = [
-  { label: 'Heroes', count: heroes.length, color: '#FF9900' },
-  { label: 'Community Builders', count: communityBuilders.length, color: '#1A9C3E' },
-  { label: 'User Groups', count: userGroups.length, color: '#00A1C9' },
-  { label: 'Student Builder Groups', count: studentBuilderGroups.length, color: '#BF0816' },
-  { label: 'Kiro Ambassadors', count: kiroAmbassadors.length, color: '#8B5CF6' },
+  { label: 'Heroes', count: 252, color: '#FF9900' },
+  { label: 'Community Builders', count: 3037, color: '#1A9C3E' },
+  { label: 'User Groups', count: 575, color: '#00A1C9' },
+  { label: 'Student Builder Groups', count: 896, color: '#BF0816' },
+  { label: 'Kiro Ambassadors', count: 2, color: '#8B5CF6' },
 ];
 
 const EVENT_STATS = [
-  { label: 'Kiro Events', count: kiroEvents.length, color: '#8B5CF6' },
-  { label: 'Community Days', count: communityDays.length, color: '#FF9900' },
+  { label: 'Kiro Events', count: 8, color: '#8B5CF6' },
+  { label: 'Community Days', count: 38, color: '#FF9900' },
 ];
 
 const SPLASH_GLOBE_ROTATION_SPEED = 0.035;
@@ -186,6 +178,10 @@ function OrbitGlobe() {
       });
       timersRef.current = [];
       if (globeRef.current?._observer) globeRef.current._observer.disconnect();
+      const renderer = globeRef.current?.renderer?.();
+      globeRef.current?._destructor?.();
+      renderer?.dispose?.();
+      renderer?.forceContextLoss?.();
       container.innerHTML = '';
       globeRef.current = null;
     };
@@ -215,12 +211,15 @@ function OrbitGlobe() {
 
 export default function SplashScreen({ onStart, exiting, activeSection = 'community', onSectionChange }) {
   const [showGlobe, setShowGlobe] = useState(false);
+  const [allowInteractiveGlobe] = useState(() => (
+    !window.matchMedia('(max-width: 767px), (pointer: coarse), (prefers-reduced-motion: reduce)').matches
+  ));
   const isEvents = activeSection === 'events';
   const stats = isEvents ? EVENT_STATS : COMMUNITY_STATS;
   const total = stats.reduce((sum, stat) => sum + stat.count, 0);
 
   useEffect(() => {
-    if (exiting) return undefined;
+    if (exiting || !allowInteractiveGlobe) return undefined;
 
     let cancelled = false;
     let timeoutId = 0;
@@ -241,7 +240,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
       cancelled = true;
       window.clearTimeout(timeoutId);
     };
-  }, [exiting]);
+  }, [allowInteractiveGlobe, exiting]);
 
   return (
     <div

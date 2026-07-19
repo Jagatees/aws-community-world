@@ -625,6 +625,10 @@ export default function ClassicGlobeScene({
 
     return () => {
       stopLoop();
+      const renderer = globe.renderer?.();
+      globe._destructor?.();
+      renderer?.dispose?.();
+      renderer?.forceContextLoss?.();
       container.innerHTML = '';
       globeRef.current = null;
     };

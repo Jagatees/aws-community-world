@@ -133,8 +133,8 @@ export default function CommunityDaysScene({
         <div className="mt-1 text-[0.68rem] font-medium" style={{ color: muted }}>events worldwide</div>
       </div>}
 
-      <div className="absolute bottom-5 left-1/2 z-30 -translate-x-1/2">
-        <div className="flex items-stretch gap-3">
+      <div className="community-days-controls absolute bottom-3 left-1/2 z-30 -translate-x-1/2 sm:bottom-5">
+        <div className="flex flex-col items-center gap-2 sm:flex-row sm:items-stretch sm:gap-3">
           <div
             className="flex items-center rounded-full p-1"
             style={{ background: controlBackground, border: `1px solid ${panelBorder}`, backdropFilter: 'blur(14px)' }}
