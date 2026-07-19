@@ -1,5 +1,5 @@
 /**
- * AWS Community Globe — Data Scraper
+ * AWS Globe — Data Scraper
  *
  * Scrapes the AWS Heroes page from builder.aws.com using Playwright,
  * geocodes member locations via Nominatim (OpenStreetMap), and writes

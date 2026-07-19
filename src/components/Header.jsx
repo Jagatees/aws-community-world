@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const GLOBE_MODES = [
   { id: 'community', label: 'Community', description: 'People and groups' },
-  { id: 'events', label: 'Event', description: 'Events and updates' },
+  { id: 'events', label: 'Events', description: 'Events and latest news' },
   { id: 'experimental', label: 'Experimental', description: 'A playground for new ideas and surprise features' },
 ];
 
@@ -71,13 +71,16 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
         WebkitBackdropFilter: 'blur(18px)',
       }}
     >
-      <span style={{ color: '#FF9900' }} className="font-bold text-lg tracking-tight">AWS</span>
+      <div className="inline-flex items-baseline gap-1 text-lg font-bold tracking-tight" aria-label="AWS Globe">
+        <span style={{ color: '#FF9900' }}>AWS</span>
+        <span style={{ color: text }}>Globe</span>
+      </div>
       <span style={{ color: border }} className="text-lg select-none">|</span>
       <div ref={modeMenuRef} className="globe-mode-picker text-base font-semibold" style={{ color: text }}>
         <button
           type="button"
           onClick={() => setModeMenuOpen((open) => !open)}
-          aria-label="Choose globe experience"
+          aria-label="Choose AWS Globe content"
           aria-haspopup="menu"
           aria-expanded={modeMenuOpen}
           className="section-mode-switch focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
@@ -86,10 +89,8 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
           <span>{GLOBE_MODES.find((mode) => mode.id === activeSection)?.label ?? 'Community'}</span>
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 6 3 3 3-3" /></svg>
         </button>
-        <span className="globe-mode-label">&nbsp;Globe</span>
-
         {modeMenuOpen && (
-          <div className="globe-mode-menu" role="menu" aria-label="Globe experiences">
+          <div className="globe-mode-menu" role="menu" aria-label="AWS Globe content">
             {GLOBE_MODES.map((mode) => (
               <button
                 key={mode.id}
@@ -102,7 +103,7 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
                   setModeMenuOpen(false);
                 }}
               >
-                <span><strong>{mode.label} Globe</strong><small>{mode.description}</small></span>
+                <span><strong>{mode.label}</strong><small>{mode.description}</small></span>
                 {activeSection === mode.id && <i aria-hidden="true" />}
               </button>
             ))}

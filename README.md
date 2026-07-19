@@ -1,14 +1,14 @@
-# AWS Community Globe
+# AWS Globe
 
 An interactive world for discovering the people, groups, events, and stories that make up the global AWS community.
 
 [Open the live globe](https://awscommunityglobe.click/) · [Report an issue](https://github.com/Jagatees/aws-community-world/issues)
 
-![AWS Community Globe preview](public/preview.jpg)
+![AWS Globe preview](public/preview.jpg)
 
 ## About the project
 
-AWS community information lives across several directories, event pages, and publishing platforms. AWS Community Globe brings those sources into one visual experience so people can explore who is building nearby, discover communities in other regions, and see the scale of the ecosystem.
+AWS information lives across community directories, event pages, and publishing platforms. AWS Globe brings those sources into one visual experience so people can discover members nearby, explore events worldwide, and read the latest Builder Center news.
 
 The project is built in public and is not an official AWS product.
 
@@ -188,4 +188,4 @@ Please run `npm run lint` and `npm run build` before opening a pull request.
 
 ## Status
 
-AWS Community Globe reached **Version 1.0** in July 2026. The globe remains actively maintained, and the Experimental Globe is intentionally a playground for new ideas and surprise features. Data completeness depends on public source availability, geocoding quality, and upstream page structures.
+AWS Globe reached **Version 1.0** in July 2026. The globe remains actively maintained, and Experimental is intentionally a playground for new ideas and surprise features. Data completeness depends on public source availability, geocoding quality, and upstream page structures.

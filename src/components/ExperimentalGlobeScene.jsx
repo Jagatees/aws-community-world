@@ -1,8 +1,10 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import createGlobe from 'cobe';
 import * as THREE from 'three';
 import { CSS3DObject, CSS3DRenderer } from 'three/addons/renderers/CSS3DRenderer.js';
 import { getMemberImage } from '../utils/memberMarkers';
+import ExperimentalEventReveal from './ExperimentalEventReveal';
+import ExperimentalGlobalInfra from './ExperimentalGlobalInfra';
 import './ExperimentalGlobeScene.css';
 
 const HERO_PLACEHOLDER = 'https://d1.awsstatic.com/getting-started-guides/new-heros-nov-2022/AWS-Heroes%20program-community-heroes_logo_dark.efe13e0d50fdf64d8a4524bf876d79a64dd82488.png';
@@ -53,7 +55,7 @@ function makePortraitElement(member, image, onMarkerClick) {
   return button;
 }
 
-export default function ExperimentalGlobeScene({ members, onMarkerClick, cardOpen }) {
+function HeroOrbitScene({ members, onMarkerClick, cardOpen }) {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
   const backLayerRef = useRef(null);
@@ -227,5 +229,44 @@ export default function ExperimentalGlobeScene({ members, onMarkerClick, cardOpe
       <div ref={frontLayerRef} className="experimental-globe__css3d experimental-globe__css3d--front" />
       <div className="experimental-globe__scan" aria-hidden="true" />
     </section>
+  );
+}
+
+const EXPERIMENTS = [
+  { id: 'hero-orbit', label: 'Hero Orbit', description: 'Browse AWS Heroes' },
+  { id: 'event-reveal', label: 'Event Reveal', description: 'Play a cinematic globe intro' },
+  { id: 'global-infra', label: 'Global Infra', description: 'Explore AWS infrastructure' },
+];
+
+export default function ExperimentalGlobeScene(props) {
+  const [experiment, setExperiment] = useState('hero-orbit');
+
+  return (
+    <div className="experimental-lab">
+      <nav className="experimental-lab__picker" aria-label="Choose an experiment">
+        {EXPERIMENTS.map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            className={experiment === item.id ? 'is-active' : ''}
+            aria-pressed={experiment === item.id}
+            onClick={() => setExperiment(item.id)}
+          >
+            <span>{item.label}</span>
+            <small>{item.description}</small>
+          </button>
+        ))}
+      </nav>
+
+      <div className="experimental-lab__stage">
+        {experiment === 'hero-orbit' ? (
+          <HeroOrbitScene {...props} />
+        ) : experiment === 'event-reveal' ? (
+          <ExperimentalEventReveal />
+        ) : (
+          <ExperimentalGlobalInfra />
+        )}
+      </div>
+    </div>
   );
 }
