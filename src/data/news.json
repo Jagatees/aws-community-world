@@ -1,200 +1,226 @@
 {
-  "updatedAt": "2026-07-18T03:53:21.521Z",
+  "updatedAt": "2026-07-19T04:20:04.929Z",
   "latest": [
     {
-      "id": "/content/3Geq23BuFEFwRNdJ06NTloYwmx7",
-      "title": "Weekend Agent Challenge: Daybreak",
-      "description": "I build fast and lose track of what I've shipped. This always-on AWS agent wakes on a schedule, scans all 49 of my public GitHub repos with Amazon Nova, and emails a short brief before I even sit down: what is live, what has gone quiet, what needs a README, plus three things to fix. Built on Lambda, EventBridge Scheduler, Bedrock, and SES. It runs on its own and reports back, read-only. It reports, I decide.",
-      "url": "https://builder.aws.com/content/3Geq23BuFEFwRNdJ06NTloYwmx7",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GewD9JQa3WOnFe7UmoIWBTSot9/hero.webp",
-      "authorName": "La Shara Cordero",
-      "authorAlias": "earlgreyhot1701",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/39a69CaMcB18d0e1payNr9yRIBP.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3GhnQJtz6oo5cwZaVwjSCAbmoqD",
+      "title": "AWS DevOps Agent: Aprender del error para automatizar con confianza",
+      "description": "En el mundo de DevOps existe una frase muy conocida: \"Fail fast, learn faster\". El objetivo no es evitar los errores por completo, sino detectarlos rápidamente, comprender su causa y convertir cada fallo en una oportunidad para mejorar. Con la llegada de la inteligencia artificial, esta filosofía está evolucionando gracias a los agentes inteligentes para DevOps.",
+      "url": "https://builder.aws.com/content/3GhnQJtz6oo5cwZaVwjSCAbmoqD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ghnfr37uBQiyf5Rz4OM2efCoE7/devo.webp",
+      "authorName": "Yindra Carolina Torres Guzman",
+      "authorAlias": "yindr4",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35g8y29EbOoeHqa3RmkH7mWyypO.webp",
+      "location": "CO",
+      "lat": 4.099917,
+      "lng": -72.9088133,
       "tags": [
         "agents",
-        "aws-lambda",
-        "amazon-eventbridge",
-        "amazon-nova",
-        "aws-cloudwatch"
+        "agentic-interactions",
+        "ai",
+        "ai-agents",
+        "devops"
       ],
-      "publishedAt": "2026-07-18T03:41:24.723Z",
+      "publishedAt": "2026-07-19T03:48:42.154Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3GV3XpDecphQppsscwCa3lGlYSK",
-      "title": "From Messy Bank Statements to AI Insights in 48h: An AWS-Native AI Money Coach System Design",
-      "description": "From Messy Bank Statements to AI Insights in 48h: An AWS-Native AI Money Coach System Design",
-      "url": "https://builder.aws.com/content/3GV3XpDecphQppsscwCa3lGlYSK",
-      "imageUrl": "",
-      "authorName": "HuyHoang",
-      "authorAlias": "huyhoang269",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GEH7UCrfMVUemQa0N6aiTYueev.webp",
-      "location": "VN",
-      "lat": 15.9266657,
-      "lng": 107.9650855,
+      "id": "/content/3GhmUA7pUBirIj7U5ooup4hI3UH",
+      "title": "Agentes de IA para FinOps: el siguiente paso en la optimización de costos en la nube",
+      "description": "Exploro cómo los agentes de inteligencia artificial pueden transformar FinOps en AWS, automatizando el análisis de costos, detectando oportunidades de optimización y convirtiendo datos complejos en recomendaciones inteligentes para una mejor toma de decisiones.\n",
+      "url": "https://builder.aws.com/content/3GhmUA7pUBirIj7U5ooup4hI3UH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GhmwzuanV1QTAeGBeRAi1Cwq7L/Chat.webp",
+      "authorName": "Yindra Carolina Torres Guzman",
+      "authorAlias": "yindr4",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35g8y29EbOoeHqa3RmkH7mWyypO.webp",
+      "location": "CO",
+      "lat": 4.099917,
+      "lng": -72.9088133,
       "tags": [
-        "agents",
-        "amazon-ecs",
-        "amazon-sqs",
-        "infrastructure"
+        "finops",
+        "finops-culture",
+        "agentic-ai",
+        "agents"
       ],
-      "publishedAt": "2026-07-18T03:40:00.784Z",
+      "publishedAt": "2026-07-19T03:40:59.894Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/39BULlCETO0cfxlSVNkegwXrZey",
-      "title": "Understanding KMS and EBS/S3 encryption",
-      "description": "On this article, I delve a little deeper on envelope encryption - a very important topic that needs to be understood in order to apropriately understand security on AWS. ",
-      "url": "https://builder.aws.com/content/39BULlCETO0cfxlSVNkegwXrZey",
-      "imageUrl": "",
-      "authorName": "Marcelo Andrade",
-      "authorAlias": "marcelodevsres",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2b33GhOH99isN644at6cVuXSaMT.webp",
+      "id": "/content/3GhjjxCvPchHCRbHPJCC6OyTQmB",
+      "title": "Why Building Projects Is No Longer Enough: The 2026 Tech Hiring Playbook",
+      "description": "Building software in private won't cut it anymore—companies want to see how you think, fail, and iterate. This guide outlines how to build a credible online presence and prove your technical skills using real-world cloud architectures.",
+      "url": "https://builder.aws.com/content/3GhjjxCvPchHCRbHPJCC6OyTQmB",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ghl0NKTTFrv7zaUxsvh4rOtYyf/Whats.webp",
+      "authorName": "Mubashar Ghazi",
+      "authorAlias": "mubasharghazi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/309WxQ5VDA3pmUxb2CEVzSu4261.webp",
       "location": "",
       "lat": 0,
       "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-07-18T03:36:17.676Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GeuvL4C67HfRhYx2mFwR3RJpn3",
-      "title": "From PRD to Dashboard: Unifying Telecom Orders Across 5 Systems with Kiro",
-      "description": "A hands-on data engineering project from KiroVerse Workshop Series Week 5 (July 17, AWS Office Manila) - building a unified telecom order tracking platform across 5 legacy provisioning systems using Kiro's spec-driven development workflow.",
-      "url": "https://builder.aws.com/content/3GeuvL4C67HfRhYx2mFwR3RJpn3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GewsWCf1Z100mEGg7QNf5w7Xtp/Scre.webp",
-      "authorName": "Marc Sandrino",
-      "authorAlias": "cardinalseen",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38LkTDHepTWwVEsLAWGLx2RygH6.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
       "tags": [
-        "aws-data-pipeline",
-        "kiro",
-        "data"
+        "career",
+        "ai-engineering",
+        "software-engineering",
+        "engineering-practices",
+        "aws-community"
       ],
-      "publishedAt": "2026-07-18T03:33:04.057Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3GesuNoSCduuA3RSLO8i9L4Cf0Y",
-      "title": "A Simple Guide to Route Tables and Internet Gateways in AWS",
-      "description": "Understand the basics of AWS route tables and internet gateways, and how they control network traffic in your VPC.",
-      "url": "https://builder.aws.com/content/3GesuNoSCduuA3RSLO8i9L4Cf0Y",
-      "imageUrl": "",
-      "authorName": "Irfan Satrio",
-      "authorAlias": "irfanstra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApDENxFEbE4aiD2wFbDM8PxttA.webp",
-      "location": "ID",
-      "lat": -2.4833826,
-      "lng": 117.8902853,
-      "tags": [
-        "aws-networking"
-      ],
-      "publishedAt": "2026-07-18T03:00:49.358Z",
-      "likesCount": 0,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Ges0IQJcXQDQjyRkdJZbQ0wxUV",
-      "title": "A Simple Guide to Route Tables and Internet Gateways in AWS",
-      "description": "Understand the basics of AWS route tables and internet gateways, and how they control network traffic in your VPC.",
-      "url": "https://builder.aws.com/content/3Ges0IQJcXQDQjyRkdJZbQ0wxUV",
-      "imageUrl": "",
-      "authorName": "Irfan Satrio",
-      "authorAlias": "irfanstra",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ApDENxFEbE4aiD2wFbDM8PxttA.webp",
-      "location": "ID",
-      "lat": -2.4833826,
-      "lng": 117.8902853,
-      "tags": [],
-      "publishedAt": "2026-07-18T02:58:36.945Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Geoqix2ERBIGCS9uFU0LD3neQm",
-      "title": "Amazon Quick Getting Started Guide: The AI Workspace Built Into AWS",
-      "description": "I have always wanted to build a personal knowledge graph. Something that connects my Slack conversations, emails, local files, and project context into one searchable, intelligent layer. I tried Obsidian for a while, and it is great for note-taking. But it always felt disconnected from my actual workflow. And if you want cloud sync, you are paying extra for it.",
-      "url": "https://builder.aws.com/content/3Geoqix2ERBIGCS9uFU0LD3neQm",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Gep85LKnidQw4vvGg3tNhvKLy0/amaz.webp",
-      "authorName": "NaveenKumar Namachivayam",
-      "authorAlias": "naveenkumar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yfHrFcqfFndQybEV8bdVZRJOGW.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [
-        "amazon-quicksight",
-        "artificial-intelligence"
-      ],
-      "publishedAt": "2026-07-18T02:29:46.237Z",
+      "publishedAt": "2026-07-19T03:28:11.341Z",
       "likesCount": 1,
       "commentsCount": 0
     },
     {
-      "id": "/content/3GaikRo09qOjBNZM51FfRyRSLPb",
-      "title": "Weekend Agent Challenge: PULSE — Your Autonomous AI Chief of Staff",
-      "description": "Every morning, before I check my phone, a brief is already waiting for me. It covers my meetings, flags urgent emails, surfaces GitHub PRs that need review, tells me the weather, and gives me a priority score for the day. I did not ask for it. I did not click anything. An autonomous agent running on AWS assembled it while I was asleep.\nThat agent is PULSE — a Personal Unified Life and Productivity Executive that runs entirely unattended, triggered by a schedule, powered by Amazon Bedrock.",
-      "url": "https://builder.aws.com/content/3GaikRo09qOjBNZM51FfRyRSLPb",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GalD35f1BG6KaaEZgdN0rxSIfk/7a90.webp",
-      "authorName": "Reetika",
-      "authorAlias": "reetikadev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GYJSD9Ed8DwAnHnnmu1yI7rxaN.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3GhhitQ0vWi1uY8zjJ149qeXF8r",
+      "title": "Weekend Agent Challenge: My AI Pulse — The Agent That Keeps You AI-Ready Before Your Workday Starts",
+      "description": "Before your workday begins, My AI Pulse scans GitHub, Hacker News, and AWS updates, separates what matters from what is merely loud, and brings you three signals worth knowing. Choose 5, 10, or 15 minutes and turn today’s signal into a skill you can actually use.",
+      "url": "https://builder.aws.com/content/3GhhitQ0vWi1uY8zjJ149qeXF8r",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GhiJrFLdG3DtrJAx3JvyQ8UZtN/myAI.webp",
+      "authorName": "Noor Aftab",
+      "authorAlias": "nooratskilium",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "ai",
+        "women-in-tech",
+        "amazon-bedrock",
+        "agents",
+        "amazon-s3"
+      ],
+      "publishedAt": "2026-07-19T03:25:59.544Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GhcGHcTTPLOL3fmKPdgcRfoREs",
+      "title": "De un sueño en el aula a construir una comunidad AWS",
+      "description": "Apasionada por la computación en la nube y el desarrollo de comunidades tecnológicas. Fundadora del semillero de investigación en computación en la nube de UNIMINUTO y líder de **AWS User Group Mosquera**, donde promuevo espacios de aprendizaje, colaboración e innovación. Mi propósito es acercar las tecnologías AWS a estudiantes y profesionales, inspirando a más personas a construir su carrera en la nube mediante eventos, talleres y experiencias prácticas.\n",
+      "url": "https://builder.aws.com/content/3GhcGHcTTPLOL3fmKPdgcRfoREs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GhkHKC7yh79l8CRqe8P9fZli3N/Whats.webp",
+      "authorName": "Yindra Carolina Torres Guzman",
+      "authorAlias": "yindr4",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35g8y29EbOoeHqa3RmkH7mWyypO.webp",
+      "location": "CO",
+      "lat": 4.099917,
+      "lng": -72.9088133,
+      "tags": [
+        "aws-community-day-2025",
+        "aws-community-day-2026",
+        "aws-community",
+        "community",
+        "community-events"
+      ],
+      "publishedAt": "2026-07-19T03:24:09.363Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3GhK0PIcwZYxW48gQyRdxU5dXDI",
+      "title": "Weekend Agent Challenge: Mumu - Personal Daily Intelligence Agent",
+      "description": "Mumu is a fully serverless personal agent that briefs me every morning, audits my spending every evening. All on its own, on a schedule, with no server to keep alive. It is written in Go, deployed with Terraform, and reasons with Amazon Nova Pro on Amazon Bedrock.",
+      "url": "https://builder.aws.com/content/3GhK0PIcwZYxW48gQyRdxU5dXDI",
+      "imageUrl": "",
+      "authorName": "Muhammad Sumon Molla Selim",
+      "authorAlias": "sumonmselim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GYnMQTiepL85Tupr7acbUzu0LX.webp",
+      "location": "NL",
+      "lat": 52.2434979,
+      "lng": 5.6343227,
       "tags": [
         "agents"
       ],
-      "publishedAt": "2026-07-16T15:59:36.019Z",
-      "likesCount": 2,
+      "publishedAt": "2026-07-19T00:14:34.776Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3GhBDXc6vy44pBcRBEGndMI9al7",
+      "title": "An Omikuji App Where Quantum Physics Decides Your Luck",
+      "description": "This fortune-telling app never rolls random numbers. A real quantum circuit decides your luck instead, and this post explains how, in plain English.",
+      "url": "https://builder.aws.com/content/3GhBDXc6vy44pBcRBEGndMI9al7",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GhBvYq7isQxsfG1j3RFIguc9f6/thum.webp",
+      "authorName": "Yuuki Yamashita",
+      "authorAlias": "yama3133",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3FWVCcfHbidAGAtFkxBQi8ynRB3.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "amazon-braket",
+        "aws-lambda",
+        "serverless",
+        "vercel"
+      ],
+      "publishedAt": "2026-07-18T22:37:24.870Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3GgmvHcV2SY0oOcWcdB1ffdKhBM",
+      "title": "Weekend Agent Challenge: Sift - The AI Agent That Briefs You Every Day",
+      "description": "Skip the endless scrolling. Sift scans the web, remembers previous updates, filters repeated news, and sends a fresh AI-powered daily briefing.",
+      "url": "https://builder.aws.com/content/3GgmvHcV2SY0oOcWcdB1ffdKhBM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GgzhkI5esq5ZX1H5sWhzFpdr3s/Scre.webp",
+      "authorName": "Siva Abishikth Mylavarapu",
+      "authorAlias": "abi12386",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AsFS6IKVmwuzwlSN5L3Pst9aS7.webp",
+      "location": "DC, US",
+      "lat": 38.8938474,
+      "lng": -76.9880428,
+      "tags": [
+        "agents",
+        "kiro",
+        "amazon-cloudwatch"
+      ],
+      "publishedAt": "2026-07-18T21:23:09.539Z",
+      "likesCount": 1,
       "commentsCount": 0
     },
     {
-      "id": "/content/3GegHPOqnCSO5VO6LGTvdlshq40",
-      "title": "Belém do Pará na era da Inteligência Artificial: reflexões sobre o novo Data Center da Amazônia",
-      "description": "Como estudante de Engenharia de Software da Universidade do Estado do Pará (UEPA) e moradora de Belém, compartilho uma reflexão sobre o que a chegada de um grande data center representa para a Amazônia, considerando seus impactos tecnológicos, sociais e ambientais.",
-      "url": "https://builder.aws.com/content/3GegHPOqnCSO5VO6LGTvdlshq40",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Gei7SfbUcBkODHfNFVCDMVvv5t/82fa.webp",
-      "authorName": "Nicole Lobo",
-      "authorAlias": "devnicolelobo",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C8mFBivBsBjDlpUVG7P8XMKMTH.webp",
-      "location": "PA, BR",
-      "lat": -4.7493933,
-      "lng": -52.8973006,
-      "tags": [],
-      "publishedAt": "2026-07-18T01:34:34.762Z",
+      "id": "/content/3Gh0P5XayjW2yGueNZJNhPn2uIJ",
+      "title": "Weekend Agent Challenge: PulseAgent",
+      "description": " PulseAgent is an always-on AWS agent that collects developer updates, summarizes them with Amazon Bedrock Nova, and delivers a personalized briefing by email every morning.",
+      "url": "https://builder.aws.com/content/3Gh0P5XayjW2yGueNZJNhPn2uIJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Gh0sH6EY5mkdkDz8NghpnhOssk/Gene.webp",
+      "authorName": "Ram Thaker",
+      "authorAlias": "ramthaker123",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/37QvpmfkeTmBo8elO3hPE2N9bqm.webp",
+      "location": "SE",
+      "lat": 59.6749712,
+      "lng": 14.5208584,
+      "tags": [
+        "agents",
+        "challenge",
+        "amazon-bedrock",
+        "serverless"
+      ],
+      "publishedAt": "2026-07-18T21:13:28.253Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3GeSNLsdQRvEIS5kZz7qsh7iy8D",
-      "title": "Weekend Agent Challenge: Daily Walk Scheduler",
-      "description": "If you're like me, you like to walk for health.  This Agent looks at weather to schedule 2 30-minute walks for you.  ",
-      "url": "https://builder.aws.com/content/3GeSNLsdQRvEIS5kZz7qsh7iy8D",
-      "imageUrl": "",
-      "authorName": "Jason Kao",
-      "authorAlias": "jsonk",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wHoOjUn036AK7W73FDmtPAbj7R.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3GguimAG444GXRQqV4cBwgLCKD2",
+      "title": "Weekend Agent Challenge: CloudTrail Geo-Alert Agent",
+      "description": "An always-on security agent that monitors AWS API calls across an organization using CloudTrail, resolves source IPs to countries with MaxMind GeoLite2, and generates AI-powered threat reports via Amazon Bedrock Nova — all triggered automatically by EventBridge, with no human interaction required.",
+      "url": "https://builder.aws.com/content/3GguimAG444GXRQqV4cBwgLCKD2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GgvgkpkpU59Bni0EBfw23IgHjw/Chat.webp",
+      "authorName": "Carlos Biagolini",
+      "authorAlias": "cbiagolini",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
       "tags": [
         "agents",
+        "challenge",
+        "aws-builders",
+        "ai",
         "amazon-bedrock"
       ],
-      "publishedAt": "2026-07-17T23:49:43.289Z",
-      "likesCount": 1,
-      "commentsCount": 0
+      "publishedAt": "2026-07-18T20:42:14.635Z",
+      "likesCount": 4,
+      "commentsCount": 2
     }
   ],
   "trending": [
@@ -218,8 +244,8 @@
         "web-development"
       ],
       "publishedAt": "2026-07-17T20:21:49.337Z",
-      "likesCount": 13,
-      "commentsCount": 36
+      "likesCount": 41,
+      "commentsCount": 72
     },
     {
       "id": "/content/3GRbzT6GpH1Zt1sl48WHaJXssNy",
@@ -235,7 +261,7 @@
       "lng": -3.2765753,
       "tags": [],
       "publishedAt": "2026-07-13T10:18:38.685Z",
-      "likesCount": 56,
+      "likesCount": 58,
       "commentsCount": 328
     },
     {
@@ -256,31 +282,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-07-15T18:02:53.696Z",
-      "likesCount": 91,
-      "commentsCount": 84
-    },
-    {
-      "id": "/content/3GdRHf0GucqKUyoaqORAc8giHOF",
-      "title": "AWS Strands Agents vs LangChain: A Practical Guide to Choosing the Right Framework",
-      "description": "I learned LangChain at work, then saw AWS Strands Agents' tool-calling loop and wondered: is this the same thing with a different name? \nThis article is the real answer, not a spec-sheet comparison, covering who owns the control logic (you vs. the model), boilerplate and debugging, deployment via Bedrock AgentCore vs. self-managed stacks, and a decision checklist for each. Includes a companion repo with both frameworks built side by side, tested live against Bedrock, so you can run them yourself.",
-      "url": "https://builder.aws.com/content/3GdRHf0GucqKUyoaqORAc8giHOF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GdsCxbBGPNJcIeovYK474HC24p/1_co.webp",
-      "authorName": "Carla Marcela Florida Roman",
-      "authorAlias": "carlicode",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uYnLyAiBA8FoNMJNQ2srSIJ8Ow.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai-agents",
-        "strands-agents",
-        "strands",
-        "artificial-intelligence",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-07-17T18:38:22.554Z",
-      "likesCount": 17,
-      "commentsCount": 7
+      "likesCount": 102,
+      "commentsCount": 110
     },
     {
       "id": "/content/3GYxQQ4lhMKlcikLWNEzbYGHmpZ",
@@ -302,8 +305,8 @@
         "ai"
       ],
       "publishedAt": "2026-07-16T01:09:26.718Z",
-      "likesCount": 56,
-      "commentsCount": 47
+      "likesCount": 59,
+      "commentsCount": 57
     },
     {
       "id": "/content/3GRa9SXYrvzHyDSwtftiFAwYubw",
@@ -325,46 +328,31 @@
         "web-development"
       ],
       "publishedAt": "2026-07-13T10:50:27.264Z",
-      "likesCount": 62,
-      "commentsCount": 107
+      "likesCount": 71,
+      "commentsCount": 119
     },
     {
-      "id": "/content/3Gd8ZtFfZXcmzKrd3PLElJUsBO3",
-      "title": "Weekend Agent Challenge: Stale Repo Watcher",
-      "description": "An always-on agent that checks a GitHub repo for stale issues and PRs on a schedule, summarizes them with Amazon Bedrock (Nova Micro), and emails a prioritized nudge report — built with Lambda, EventBridge Scheduler, SNS, and Bedrock.",
-      "url": "https://builder.aws.com/content/3Gd8ZtFfZXcmzKrd3PLElJUsBO3",
-      "imageUrl": "",
-      "authorName": "Shikaram Ruthika",
-      "authorAlias": "sruthika",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GMfkD82q5XgY64LmCjqHlHXFkg.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3GdRHf0GucqKUyoaqORAc8giHOF",
+      "title": "AWS Strands Agents vs LangChain: A Practical Guide to Choosing the Right Framework",
+      "description": "I learned LangChain at work, then saw AWS Strands Agents' tool-calling loop and wondered: is this the same thing with a different name? \nThis article is the real answer, not a spec-sheet comparison, covering who owns the control logic (you vs. the model), boilerplate and debugging, deployment via Bedrock AgentCore vs. self-managed stacks, and a decision checklist for each. Includes a companion repo with both frameworks built side by side, tested live against Bedrock, so you can run them yourself.",
+      "url": "https://builder.aws.com/content/3GdRHf0GucqKUyoaqORAc8giHOF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GdsCxbBGPNJcIeovYK474HC24p/1_co.webp",
+      "authorName": "Carla Marcela Florida Roman",
+      "authorAlias": "carlicode",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uYnLyAiBA8FoNMJNQ2srSIJ8Ow.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
-        "agents"
+        "ai-agents",
+        "strands-agents",
+        "strands",
+        "artificial-intelligence",
+        "agentic-ai"
       ],
-      "publishedAt": "2026-07-17T12:35:21.615Z",
-      "likesCount": 9,
-      "commentsCount": 13
-    },
-    {
-      "id": "/content/3Gcen2J3OgyaiGrf7vBlMZoeJWF",
-      "title": "Weekend Agent Challenge: Study Buddy AI Agent",
-      "description": "An always-on AI-powered study assistant that automatically generates daily interview preparation content using AWS Lambda, Amazon EventBridge Scheduler, Gemini AI, and email notifications. Every morning, it delivers personalized aptitude, coding, SQL, AWS, DSA, and AI learning material directly to the user's inbox.",
-      "url": "https://builder.aws.com/content/3Gcen2J3OgyaiGrf7vBlMZoeJWF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GcfPmjprrHr2mgwBweTFZief08/Chat.webp",
-      "authorName": "Swetha",
-      "authorAlias": "swetha28",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agents"
-      ],
-      "publishedAt": "2026-07-17T08:09:44.696Z",
-      "likesCount": 16,
-      "commentsCount": 10
+      "publishedAt": "2026-07-17T18:38:22.554Z",
+      "likesCount": 22,
+      "commentsCount": 11
     },
     {
       "id": "/content/3GaLFVRxe5C6RodDMIbIya4MDyf",
@@ -380,8 +368,31 @@
       "lng": 0,
       "tags": [],
       "publishedAt": "2026-07-16T12:32:43.669Z",
-      "likesCount": 24,
-      "commentsCount": 22
+      "likesCount": 29,
+      "commentsCount": 24
+    },
+    {
+      "id": "/content/3GguimAG444GXRQqV4cBwgLCKD2",
+      "title": "Weekend Agent Challenge: CloudTrail Geo-Alert Agent",
+      "description": "An always-on security agent that monitors AWS API calls across an organization using CloudTrail, resolves source IPs to countries with MaxMind GeoLite2, and generates AI-powered threat reports via Amazon Bedrock Nova — all triggered automatically by EventBridge, with no human interaction required.",
+      "url": "https://builder.aws.com/content/3GguimAG444GXRQqV4cBwgLCKD2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3GgvgkpkpU59Bni0EBfw23IgHjw/Chat.webp",
+      "authorName": "Carlos Biagolini",
+      "authorAlias": "cbiagolini",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp",
+      "location": "SP, BR",
+      "lat": -22.0702705,
+      "lng": -48.4333875,
+      "tags": [
+        "agents",
+        "challenge",
+        "aws-builders",
+        "ai",
+        "amazon-bedrock"
+      ],
+      "publishedAt": "2026-07-18T20:42:14.635Z",
+      "likesCount": 4,
+      "commentsCount": 2
     },
     {
       "id": "/content/3GZRuLskaXawmGL2cYN3kOcJkva",
@@ -399,6 +410,25 @@
       "publishedAt": "2026-07-16T05:03:15.000Z",
       "likesCount": 17,
       "commentsCount": 26
+    },
+    {
+      "id": "/content/3Gd8ZtFfZXcmzKrd3PLElJUsBO3",
+      "title": "Weekend Agent Challenge: Stale Repo Watcher",
+      "description": "An always-on agent that checks a GitHub repo for stale issues and PRs on a schedule, summarizes them with Amazon Bedrock (Nova Micro), and emails a prioritized nudge report — built with Lambda, EventBridge Scheduler, SNS, and Bedrock.",
+      "url": "https://builder.aws.com/content/3Gd8ZtFfZXcmzKrd3PLElJUsBO3",
+      "imageUrl": "",
+      "authorName": "Shikaram Ruthika",
+      "authorAlias": "sruthika",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GMfkD82q5XgY64LmCjqHlHXFkg.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agents"
+      ],
+      "publishedAt": "2026-07-17T12:35:21.615Z",
+      "likesCount": 10,
+      "commentsCount": 14
     }
   ]
 }
