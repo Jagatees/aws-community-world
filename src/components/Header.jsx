@@ -21,6 +21,7 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
   const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.95)';
   const text = darkMode ? '#FFFFFF' : '#0F1923';
   const muted = darkMode ? '#8B9BAA' : '#5a7a99';
+  const activeModeLabel = GLOBE_MODES.find((mode) => mode.id === activeSection)?.label ?? 'Community';
 
   useEffect(() => {
     const controller = new AbortController();
@@ -71,11 +72,8 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
         WebkitBackdropFilter: 'blur(18px)',
       }}
     >
-      <div className="inline-flex items-baseline gap-1 text-lg font-bold tracking-tight" aria-label="AWS Globe">
-        <span style={{ color: '#FF9900' }}>AWS</span>
-        <span style={{ color: text }}>Globe</span>
-      </div>
-      <span style={{ color: border }} className="text-lg select-none">|</span>
+      <span className="text-lg font-bold tracking-tight" style={{ color: '#FF9900' }}>AWS</span>
+      <span style={{ color: border }} className="text-lg select-none" aria-hidden="true">|</span>
       <div ref={modeMenuRef} className="globe-mode-picker text-base font-semibold" style={{ color: text }}>
         <button
           type="button"
@@ -86,7 +84,7 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
           className="section-mode-switch focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           style={{ outlineColor: '#FF9900', cursor: 'pointer' }}
         >
-          <span>{GLOBE_MODES.find((mode) => mode.id === activeSection)?.label ?? 'Community'}</span>
+          <span>{activeModeLabel}</span>
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 6 3 3 3-3" /></svg>
         </button>
         {modeMenuOpen && (
@@ -110,6 +108,12 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
           </div>
         )}
       </div>
+      <span
+        className="text-lg font-bold tracking-tight"
+        style={{ color: text }}
+      >
+        Globe
+      </span>
 
       <div className="flex-1" />
 
