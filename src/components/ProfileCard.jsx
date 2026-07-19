@@ -376,7 +376,7 @@ function CloudClubSingleView({ member, darkMode, url }) {
   const borderColor = darkMode ? 'rgba(62, 95, 123, 0.42)' : 'rgba(150, 179, 205, 0.55)';
 
   return (
-    <div className="flex flex-col gap-3 pt-2">
+    <div className="pt-2">
       <div
         className="flex items-start gap-3 rounded-xl p-3"
         style={{ backgroundColor: cardBg, border: `1px solid ${borderColor}` }}
@@ -391,6 +391,7 @@ function CloudClubSingleView({ member, darkMode, url }) {
               Led by {leaderNames.join(', ')}
             </p>
           )}
+          <StudentLeaderSocialLinks member={member} darkMode={darkMode} compact />
           {member.location && (
             <p className="mt-0.5 text-sm" style={{ color: mutedColor }}>
               {member.location}
@@ -417,7 +418,6 @@ function CloudClubSingleView({ member, darkMode, url }) {
           </a>
         )}
       </div>
-      <StudentLeaderSocialLinks member={member} darkMode={darkMode} />
     </div>
   );
 }
