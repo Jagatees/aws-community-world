@@ -9,13 +9,15 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "scrape": "node scripts/scrape-community.mjs",
-    "update:community-data": "node scripts/update-community-data.mjs && node scripts/enrich-builder-profiles.mjs && node scripts/build-community-builder-summary.mjs",
+    "update:community-data": "node scripts/update-community-data.mjs && node scripts/enrich-builder-profiles.mjs && node scripts/build-community-builder-summary.mjs && node scripts/update-growth-history.mjs",
     "update:builder-profiles": "node scripts/enrich-builder-profiles.mjs",
     "update:news": "node scripts/update-builder-news.mjs",
-    "update:kiro-events": "node scripts/update-kiro-events.mjs",
-    "build:community-builder-summary": "node scripts/build-community-builder-summary.mjs"
+    "update:kiro-events": "node scripts/update-kiro-events.mjs && node scripts/update-growth-history.mjs",
+    "update:growth-history": "node scripts/update-growth-history.mjs",
+    "build:community-builder-summary": "node scripts/build-community-builder-summary.mjs && node scripts/update-growth-history.mjs"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@phosphor-icons/react": "^2.1.10",
     "@tailwindcss/vite": "^4.2.2",
     "@vercel/analytics": "^2.0.1",
@@ -24,6 +26,7 @@
     "cobe": "^0.6.4",
     "d3-geo": "^3.1.1",
     "globe.gl": "^2.45.1",
+    "gsap": "^3.15.0",
     "h3-js": "^4.4.0",
     "mapbox-gl": "^3.22.0",
     "react": "^19.2.4",

@@ -46,6 +46,7 @@ The selected view is shown by a fluid sliding control and is stored in the URL, 
 
 ## Interaction highlights
 
+- **Community insights dashboard** — open Insights from the main content dropdown to animate through historical snapshots, record movement, datasets, and regions.
 - **Merged profile clusters** — nearby Heroes, Community Builders, and Student Builder Groups combine into a segmented circular avatar on Earth and Atlas.
 - **Zoom-driven separation** — merged portraits smoothly separate as the camera moves closer.
 - **Program-specific fallbacks** — missing photos use the official AWS Community Hero, AWS Community Builder, or Student Builder Group artwork.
@@ -128,6 +129,7 @@ Do not commit `.env.local`; it is ignored by Git.
 | `npm run update:builder-profiles` | Refresh optional public social links from Builder profiles |
 | `npm run update:news` | Refresh the Builder Center latest and trending feeds |
 | `npm run update:kiro-events` | Refresh Kiro event data |
+| `npm run update:growth-history` | Capture or replace today's regional directory snapshot |
 | `npm run build:community-builder-summary` | Rebuild the lightweight country-level Community Builder dataset |
 
 ## Data pipeline
@@ -142,6 +144,14 @@ The main community refresh targets these public AWS Builder Center directories:
 - [AWS Student Builder Groups](https://builder.aws.com/community/student-builder-groups)
 
 The refresh pipeline handles paginated directory interfaces such as “Load more” and “View More,” preserves the JSON shape expected by the app, and avoids replacing usable portraits with Builder Center's unshipped default-avatar paths.
+
+### Regional snapshot history
+
+[`src/data/community-growth-history.json`](src/data/community-growth-history.json) is the lightweight data store for the Community Insights dashboard. The generator reconstructs meaningful historical states from Git, adds the current working-tree state, and records totals, regional coverage, identity additions/removals, continuity, confidence flags, and upcoming-event signals for Heroes, Community Builders, User Groups, Student Builder Groups, Kiro Events, and Community Days.
+
+Community and Kiro refresh commands rebuild this file automatically. Analytically identical commits are collapsed, and a same-day refresh replaces the working snapshot instead of creating a duplicate. Run `npm run update:growth-history` after any other manual dataset update that should be reflected in Insights. The default snapshot date uses `Asia/Singapore`; `GROWTH_SNAPSHOT_DATE=YYYY-MM-DD` can be supplied for a controlled backfill.
+
+Identity comparisons use stable public IDs where available and normalized names otherwise, including normalization across the Cloud Club to Student Builder Group rename. The dashboard labels large source or scraper discontinuities so they are not presented as verified membership churn. These snapshots measure records captured from public AWS sources; they are not attendance or engagement analytics.
 
 ### Automation status
 

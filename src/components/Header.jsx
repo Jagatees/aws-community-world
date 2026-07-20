@@ -3,14 +3,15 @@ import { useEffect, useRef, useState } from 'react';
 const GLOBE_MODES = [
   { id: 'community', label: 'Community', description: 'People and groups' },
   { id: 'events', label: 'Events', description: 'Events and latest news' },
+  { id: 'insights', label: 'Insights', description: 'Community intelligence dashboard' },
   { id: 'experimental', label: 'Experimental', description: 'A playground for new ideas and surprise features' },
 ];
 
 /**
  * @param {{
  *   darkMode: boolean,
- *   activeSection: 'community' | 'events' | 'experimental',
- *   onSectionChange: (section: 'community' | 'events' | 'experimental') => void,
+ *   activeSection: 'community' | 'events' | 'insights' | 'experimental',
+ *   onSectionChange: (section: 'community' | 'events' | 'insights' | 'experimental') => void,
  * }} props
  */
 export default function Header({ darkMode, activeSection, onSectionChange }) {

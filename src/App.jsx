@@ -14,6 +14,7 @@ import communityBuilderMeta from './data/community-builders-meta.json';
 import { getRegionForCountry, REGIONS } from './utils/countryRegions';
 
 const SplashScreen = lazy(() => import('./components/SplashScreen'));
+const InsightsDashboard = lazy(() => import('./components/TrendsDashboard'));
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -60,7 +61,7 @@ const DEFAULT_ROUTE_STATE = {
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
 const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'icons', 'list', 'experimental'];
-const VALID_GLOBE_DESIGNS = new Set(GLOBE_DESIGNS);
+const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights']);
 const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors']);
 const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'news']);
 
@@ -90,23 +91,26 @@ function getRouteStateFromUrl() {
   const theme = params.get('theme');
   const spotlight = params.get('sg') === '1';
   const experimental = view === 'experimental';
+  const insights = view === 'insights' || view === 'trends';
   const defaultGlobeDesign = getResponsiveDefaultGlobeDesign();
   const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'sg'].some((key) => params.has(key));
 
   return {
-    activeCategory: experimental ? 'heroes' : spotlight ? 'cloud-clubs' : VALID_CATEGORIES.has(tab) ? tab : DEFAULT_ROUTE_STATE.activeCategory,
-    selectedTag: experimental ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
-    selectedRegions: experimental ? [] : spotlight ? ['asia'] : getRouteSelections(params, 'region'),
-    selectedCountries: experimental ? [] : spotlight ? ['Singapore'] : getRouteSelections(params, 'country'),
+    activeCategory: experimental || insights ? 'heroes' : spotlight ? 'cloud-clubs' : VALID_CATEGORIES.has(tab) ? tab : DEFAULT_ROUTE_STATE.activeCategory,
+    selectedTag: experimental || insights ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
+    selectedRegions: experimental || insights ? [] : spotlight ? ['asia'] : getRouteSelections(params, 'region'),
+    selectedCountries: experimental || insights ? [] : spotlight ? ['Singapore'] : getRouteSelections(params, 'country'),
     globeDesign: experimental
       ? 'experimental'
+      : insights
+      ? 'insights'
       : spotlight
       ? 'classic'
       : VALID_GLOBE_DESIGNS.has(view)
         ? view
         : defaultGlobeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
-    singaporeSpotlight: experimental ? false : spotlight,
+    singaporeSpotlight: experimental || insights ? false : spotlight,
     hasShareState,
   };
 }
@@ -178,13 +182,16 @@ export default function App() {
   const isNewsView = activeCategory === 'news';
   const activeSection = globeDesign === 'experimental'
     ? 'experimental'
-    : EVENT_CATEGORIES.has(activeCategory) ? 'events' : 'community';
+    : globeDesign === 'insights'
+      ? 'insights'
+      : EVENT_CATEGORIES.has(activeCategory) ? 'events' : 'community';
   const globeReady = !showSplash;
 
   const isCommunityBuilderView = activeCategory === 'community-builders';
   const isListView = globeDesign === 'list';
   const isIconView = globeDesign === 'icons';
   const isExperimentalView = globeDesign === 'experimental';
+  const isInsightsView = globeDesign === 'insights';
   const availableGlobeDesigns = GLOBE_DESIGNS.filter(
     (design) => design !== 'experimental' && (design !== 'icons' || ICON_VIEW_CATEGORIES.has(activeCategory))
   );
@@ -489,6 +496,12 @@ export default function App() {
       return;
     }
 
+    if (section === 'insights') {
+      handleCategoryChange('heroes');
+      setGlobeDesign('insights');
+      return;
+    }
+
     handleCategoryChange(section === 'events' ? 'kiro-events' : 'heroes');
     setGlobeDesign(getResponsiveDefaultGlobeDesign());
   }, [handleCategoryChange]);
@@ -619,7 +632,7 @@ export default function App() {
           activeSection={activeSection}
           onSectionChange={handleSectionChange}
         />
-        {!isExperimentalView && (
+        {!isExperimentalView && !isInsightsView && (
           <TabNav
             activeCategory={activeCategory}
             onChange={handleCategoryChange}
@@ -636,7 +649,7 @@ export default function App() {
           />
         )}
 
-        {!isExperimentalView && !isCommunityDayView && !isCommunityDaysView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
+        {!isExperimentalView && !isInsightsView && !isCommunityDayView && !isCommunityDaysView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -652,7 +665,7 @@ export default function App() {
           </div>
         )}
 
-        {activeError && (
+        {activeError && !isInsightsView && (
           <div
             role="alert"
             className="px-4 py-2 text-center text-sm"
@@ -663,7 +676,11 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          {isCommunityDaysView ? (
+          {isInsightsView ? (
+            <Suspense fallback={renderGlobeLoading('Loading community insights...')}>
+              <InsightsDashboard darkMode={darkMode} />
+            </Suspense>
+          ) : isCommunityDaysView ? (
             <Suspense fallback={renderGlobeLoading('Loading Community Days...')}>
               <CommunityDaysScene
                 darkMode={darkMode}
@@ -1256,9 +1273,10 @@ export default function App() {
               )}
             </>
           )}
+
         </div>
 
-        {!isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
+        {!isInsightsView && !isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
           <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
         )}
 
