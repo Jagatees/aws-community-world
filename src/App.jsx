@@ -12,6 +12,7 @@ import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 import communityBuilderMeta from './data/community-builders-meta.json';
 import { getRegionForCountry, REGIONS } from './utils/countryRegions';
+import { COUNTRY_SPOTLIGHTS } from './config/countrySpotlights';
 
 const SplashScreen = lazy(() => import('./components/SplashScreen'));
 const InsightsDashboard = lazy(() => import('./components/TrendsDashboard'));
@@ -40,15 +41,6 @@ const CATEGORY_LABELS = {
   'aws-ambassadors': 'AWS Ambassador',
 };
 
-const SINGAPORE_CENTER = { lat: 1.3521, lng: 103.8198 };
-const SINGAPORE_SCHOOL_COORDS = [
-  { match: 'Nanyang Polytechnic', lat: 1.3799, lng: 103.8493 },
-  { match: 'Singapore Institute of Management', lat: 1.3297, lng: 103.7754 },
-  { match: 'Singapore Institute of Technology', lat: 1.4126, lng: 103.9101 },
-  { match: 'Singapore Management University', lat: 1.2966, lng: 103.8501 },
-  { match: 'National University of Singapore', lat: 1.2966, lng: 103.7764 },
-];
-
 const DEFAULT_ROUTE_STATE = {
   activeCategory: 'heroes',
   selectedTag: null,
@@ -56,7 +48,7 @@ const DEFAULT_ROUTE_STATE = {
   selectedCountries: [],
   globeDesign: 'orbit',
   darkMode: true,
-  singaporeSpotlight: false,
+  countrySpotlight: null,
 };
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
@@ -89,33 +81,37 @@ function getRouteStateFromUrl() {
   const tab = params.get('tab');
   const view = params.get('view');
   const theme = params.get('theme');
-  const spotlight = params.get('sg') === '1';
+  const spotlightCountry = params.get('sl') === '1'
+    ? 'Sri Lanka'
+    : params.get('sg') === '1'
+      ? 'Singapore'
+      : null;
   const experimental = view === 'experimental';
   const insights = view === 'insights' || view === 'trends';
   const defaultGlobeDesign = getResponsiveDefaultGlobeDesign();
-  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'sg'].some((key) => params.has(key));
+  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'sg', 'sl'].some((key) => params.has(key));
 
   return {
-    activeCategory: experimental || insights ? 'heroes' : spotlight ? 'cloud-clubs' : VALID_CATEGORIES.has(tab) ? tab : DEFAULT_ROUTE_STATE.activeCategory,
+    activeCategory: experimental || insights ? 'heroes' : spotlightCountry ? 'cloud-clubs' : VALID_CATEGORIES.has(tab) ? tab : DEFAULT_ROUTE_STATE.activeCategory,
     selectedTag: experimental || insights ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
-    selectedRegions: experimental || insights ? [] : spotlight ? ['asia'] : getRouteSelections(params, 'region'),
-    selectedCountries: experimental || insights ? [] : spotlight ? ['Singapore'] : getRouteSelections(params, 'country'),
+    selectedRegions: experimental || insights ? [] : spotlightCountry ? ['asia'] : getRouteSelections(params, 'region'),
+    selectedCountries: experimental || insights ? [] : spotlightCountry ? [spotlightCountry] : getRouteSelections(params, 'country'),
     globeDesign: experimental
       ? 'experimental'
       : insights
       ? 'insights'
-      : spotlight
+      : spotlightCountry
       ? 'classic'
       : VALID_GLOBE_DESIGNS.has(view)
         ? view
         : defaultGlobeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
-    singaporeSpotlight: experimental || insights ? false : spotlight,
+    countrySpotlight: experimental || insights ? null : spotlightCountry,
     hasShareState,
   };
 }
 
-function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, singaporeSpotlight }) {
+function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, countrySpotlight }) {
   if (typeof window === 'undefined') return;
 
   const params = new URLSearchParams();
@@ -125,7 +121,8 @@ function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, se
   selectedCountries.forEach((country) => params.append('country', country));
   if (globeDesign !== DEFAULT_ROUTE_STATE.globeDesign) params.set('view', globeDesign);
   if (!darkMode) params.set('theme', 'light');
-  if (singaporeSpotlight) params.set('sg', '1');
+  const spotlightQueryKey = COUNTRY_SPOTLIGHTS[countrySpotlight]?.queryKey;
+  if (spotlightQueryKey) params.set(spotlightQueryKey, '1');
 
   const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}${window.location.hash}`;
   const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
@@ -150,6 +147,7 @@ const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
 const SvgFlatMapScene = lazy(() => import('./components/FlatMapScene'));
+const SriLanka3DScene = lazy(() => import('./components/SriLanka3DScene'));
 const AwsCommunityDaySingaporeScene = lazy(() => import('./components/AwsCommunityDaySingaporeScene'));
 const CommunityDaysScene = lazy(() => import('./components/CommunityDaysScene'));
 const ExperimentalGlobeScene = lazy(() => import('./components/ExperimentalGlobeScene'));
@@ -169,11 +167,17 @@ export default function App() {
   const [zoomCommand, setZoomCommand] = useState({ direction: null, nonce: 0 });
   const [newsPanelOpen, setNewsPanelOpen] = useState(routeState.activeCategory === 'news');
   const [flyToOverride, setFlyToOverride] = useState(null);
-  const [nearMeTarget, setNearMeTarget] = useState(routeState.singaporeSpotlight ? { ...SINGAPORE_CENTER, nonce: 1 } : null);
+  const [nearMeTarget, setNearMeTarget] = useState(
+    routeState.countrySpotlight
+      ? { ...COUNTRY_SPOTLIGHTS[routeState.countrySpotlight].center, nonce: 1 }
+      : null
+  );
   const [nearMeLoading, setNearMeLoading] = useState(false);
   const [nearMeError, setNearMeError] = useState(null);
   const [nearMeHover, setNearMeHover] = useState(false);
-  const [singaporeSpotlight, setSingaporeSpotlight] = useState(routeState.singaporeSpotlight ? { nonce: 1 } : null);
+  const [countrySpotlight, setCountrySpotlight] = useState(
+    routeState.countrySpotlight ? { country: routeState.countrySpotlight, nonce: 1 } : null
+  );
   const [webGlAvailable] = useState(canCreateWebGlContext);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
@@ -192,6 +196,7 @@ export default function App() {
   const isIconView = globeDesign === 'icons';
   const isExperimentalView = globeDesign === 'experimental';
   const isInsightsView = globeDesign === 'insights';
+  const isSriLanka3DView = activeCategory === 'cloud-clubs' && countrySpotlight?.country === 'Sri Lanka';
   const availableGlobeDesigns = GLOBE_DESIGNS.filter(
     (design) => design !== 'experimental' && (design !== 'icons' || ICON_VIEW_CATEGORIES.has(activeCategory))
   );
@@ -294,21 +299,11 @@ export default function App() {
     [directoryMembers]
   );
 
-  const singaporeSpotlightMembers = useMemo(() => {
-    if (activeCategory !== 'cloud-clubs') return [];
+  const countrySpotlightMembers = useMemo(() => {
+    if (activeCategory !== 'cloud-clubs' || countrySpotlight?.country !== 'Singapore') return [];
 
-    return members
-      .filter((member) => member.location?.includes('Singapore'))
-      .map((member, index) => {
-        const school = SINGAPORE_SCHOOL_COORDS.find((entry) => member.name.includes(entry.match));
-        return {
-          ...member,
-          lat: school?.lat ?? member.lat,
-          lng: school?.lng ?? member.lng,
-          spotlightIndex: index,
-        };
-      });
-  }, [activeCategory, members]);
+    return members.filter((member) => getMemberCountry(member) === countrySpotlight.country);
+  }, [activeCategory, countrySpotlight, members]);
 
   const flyToTarget = useMemo(() => {
     if (!selectedCountries.length) return null;
@@ -481,7 +476,7 @@ export default function App() {
     setSelectedTag(null);
     setSelectedRegions([]);
     setSelectedCountries([]);
-    setSingaporeSpotlight(null);
+    setCountrySpotlight(null);
     setActiveCategory(category);
     if (EVENT_CATEGORIES.has(category) || category === 'kiro-ambassadors') {
       setGlobeDesign(getResponsiveDefaultGlobeDesign());
@@ -545,24 +540,27 @@ export default function App() {
     );
   }, []);
 
-  const handleSingaporeSpotlight = useCallback(() => {
-    if (singaporeSpotlight) {
+  const handleCountrySpotlight = useCallback((country) => {
+    if (countrySpotlight) {
       setSelectedTag(null);
       setSelectedRegions([]);
       setSelectedCountries([]);
       setNearMeTarget(null);
-      setSingaporeSpotlight(null);
+      setCountrySpotlight(null);
       setGlobeDesign('orbit');
       return;
     }
 
+    const spotlight = COUNTRY_SPOTLIGHTS[country];
+    if (!spotlight) return;
+
     setSelectedTag(null);
     setSelectedRegions(['asia']);
-    setSelectedCountries(['Singapore']);
-    setNearMeTarget({ ...SINGAPORE_CENTER, nonce: Date.now() });
+    setSelectedCountries([country]);
+    setNearMeTarget({ ...spotlight.center, nonce: Date.now() });
     setGlobeDesign('classic');
-    setSingaporeSpotlight({ nonce: Date.now() });
-  }, [singaporeSpotlight]);
+    setCountrySpotlight({ country, nonce: Date.now() });
+  }, [countrySpotlight]);
 
   // Highlight only — no globe fly (used when clicking title/image in panel)
   const handleSelectNewsItem = useCallback((item) => {
@@ -585,9 +583,9 @@ export default function App() {
       selectedCountries,
       globeDesign,
       darkMode,
-      singaporeSpotlight: Boolean(singaporeSpotlight),
+      countrySpotlight: countrySpotlight?.country ?? null,
     });
-  }, [activeCategory, darkMode, globeDesign, selectedCountries, selectedRegions, selectedTag, singaporeSpotlight]);
+  }, [activeCategory, countrySpotlight?.country, darkMode, globeDesign, selectedCountries, selectedRegions, selectedTag]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -601,8 +599,13 @@ export default function App() {
       setGlobeDesign(nextRouteState.globeDesign);
       setDarkMode(nextRouteState.darkMode);
       setNewsPanelOpen(nextRouteState.activeCategory === 'news');
-      setNearMeTarget(nextRouteState.singaporeSpotlight ? { ...SINGAPORE_CENTER, nonce: Date.now() } : null);
-      setSingaporeSpotlight(nextRouteState.singaporeSpotlight ? { nonce: Date.now() } : null);
+      const spotlight = COUNTRY_SPOTLIGHTS[nextRouteState.countrySpotlight];
+      setNearMeTarget(spotlight ? { ...spotlight.center, nonce: Date.now() } : null);
+      setCountrySpotlight(
+        nextRouteState.countrySpotlight
+          ? { country: nextRouteState.countrySpotlight, nonce: Date.now() }
+          : null
+      );
       if (nextRouteState.hasShareState) setShowSplash(false);
     };
 
@@ -1016,23 +1019,28 @@ export default function App() {
                 <Suspense
                   fallback={renderGlobeLoading()}
                 >
-                  <div key={`${globeDesign}-${singaporeSpotlight?.nonce ?? 'global'}`} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
+                  <div key={`${globeDesign}-${countrySpotlight?.country ?? 'global'}-${countrySpotlight?.nonce ?? 0}`} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
                     {renderInteractiveScene(
-                      ActiveGlobeScene,
+                      isSriLanka3DView ? SriLanka3DScene : ActiveGlobeScene,
                       {
                         category: activeCategory,
-                        members: filteredMembers,
+                        members: isSriLanka3DView ? members : filteredMembers,
                         onMarkerClick: handleMarkerClick,
                         cardOpen: !!selectedMember,
                         darkMode,
                         flyToTarget: resolvedFlyToTarget,
                         zoomCommand,
-                        singaporeSpotlight: activeCategory === 'cloud-clubs' ? {
-                          ...singaporeSpotlight,
-                          members: singaporeSpotlightMembers,
-                        } : null,
+                        ...(isSriLanka3DView
+                          ? { spotlightNonce: countrySpotlight.nonce }
+                          : {
+                              countrySpotlight: activeCategory === 'cloud-clubs' && countrySpotlight ? {
+                                ...COUNTRY_SPOTLIGHTS[countrySpotlight.country],
+                                ...countrySpotlight,
+                                members: countrySpotlightMembers,
+                              } : null,
+                            }),
                       },
-                      `${activeCategory}-${globeDesign}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-${darkMode}-${singaporeSpotlight?.nonce ?? 'global'}`
+                      `${activeCategory}-${globeDesign}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-${darkMode}-${countrySpotlight?.country ?? 'global'}-${countrySpotlight?.nonce ?? 0}`
                     )}
                     {activeCategory === 'kiro-ambassadors' && !loading && <KiroAvatarOverlay />}
                   </div>
@@ -1121,7 +1129,7 @@ export default function App() {
 
               <div className="mobile-globe-controls absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
                 <div className="flex items-stretch gap-3">
-                  {!singaporeSpotlight && !isExperimentalView && (
+                  {!countrySpotlight && !isExperimentalView && (
                     <>
                       <div
                         className="grid items-center rounded-full p-1"
@@ -1241,23 +1249,47 @@ export default function App() {
                   )}
 
                   {activeCategory === 'cloud-clubs' && (
-                    <button
-                      type="button"
-                      onClick={handleSingaporeSpotlight}
-                      className="rounded-full px-4 py-1 text-xs font-semibold"
-                      style={{
-                        backgroundColor: singaporeSpotlight ? '#BF0816' : 'transparent',
-                        color: singaporeSpotlight ? '#FFFFFF' : styleControlText,
-                        minHeight: '44px',
-                        border: `1px solid ${singaporeSpotlight ? '#BF0816' : styleControlBorder}`,
-                        transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
-                        cursor: 'pointer',
-                        touchAction: 'manipulation',
-                      }}
-                      aria-label="Singapore 3D spotlight"
-                    >
-                      {singaporeSpotlight ? 'Global View' : 'Singapore 3D'}
-                    </button>
+                    countrySpotlight ? (
+                      <button
+                        type="button"
+                        onClick={() => handleCountrySpotlight(countrySpotlight.country)}
+                        className="rounded-full px-4 py-1 text-xs font-semibold"
+                        style={{
+                          backgroundColor: '#BF0816',
+                          color: '#FFFFFF',
+                          minHeight: '44px',
+                          border: '1px solid #BF0816',
+                          transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
+                          cursor: 'pointer',
+                          touchAction: 'manipulation',
+                        }}
+                        aria-label={`Exit ${countrySpotlight.country} 3D spotlight`}
+                      >
+                        Global View
+                      </button>
+                    ) : (
+                      Object.keys(COUNTRY_SPOTLIGHTS).map((country) => (
+                        <button
+                          key={country}
+                          type="button"
+                          onClick={() => handleCountrySpotlight(country)}
+                          className="rounded-full px-4 py-1 text-xs font-semibold"
+                          style={{
+                            backgroundColor: 'transparent',
+                            color: styleControlText,
+                            minHeight: '44px',
+                            border: `1px solid ${styleControlBorder}`,
+                            transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
+                            cursor: 'pointer',
+                            touchAction: 'manipulation',
+                            whiteSpace: 'nowrap',
+                          }}
+                          aria-label={`${country} 3D spotlight`}
+                        >
+                          {country} 3D
+                        </button>
+                      ))
+                    )
                   )}
                 </div>
               </div>

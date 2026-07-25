@@ -3,6 +3,7 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 import { createPortraitFallback, createPortraitGroupAvatar, getMapboxPortraitSeparation, getPortraitGroupCount, PORTRAIT_GROUP_CATEGORIES } from '../utils/portraitGroupMarker';
+import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -17,13 +18,11 @@ const CATEGORY_COLORS = {
   'community-days': '#FF9900',
 };
 
-const CLUSTER_TOLERANCE = 0.5;
 const MAX_CLUSTER_AVATARS = 4;
 const TOKEN = import.meta.env.VITE_MAP_BOX ?? '';
 const MAPBOX_STYLE_URL = 'mapbox://styles/mapbox/satellite-streets-v12';
 const MAPBOX_3D_STYLE_URL = 'mapbox://styles/mapbox/streets-v12';
 const HORIZON_CUTOFF_DEGREES = 96;
-const SINGAPORE_SPOTLIGHT_CENTER = { lat: 1.335, lng: 103.84 };
 
 function getHeatColor(size) {
   if (size >= 12) return '#BF0816';
@@ -54,32 +53,6 @@ function toVector(lat, lng) {
     y: Math.sin(latRad),
     z: cosLat * Math.sin(lngRad),
   };
-}
-
-function clusterMembers(members) {
-  const clusters = [];
-
-  for (const member of members) {
-    if (member.forceSeparateMarker) {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
-      continue;
-    }
-
-    const existing = clusters.find(
-      (cluster) =>
-        !cluster.forceSeparateMarker &&
-        Math.abs(cluster.lat - member.lat) <= CLUSTER_TOLERANCE &&
-        Math.abs(cluster.lng - member.lng) <= CLUSTER_TOLERANCE
-    );
-
-    if (existing) {
-      existing.members.push(member);
-    } else {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member] });
-    }
-  }
-
-  return clusters;
 }
 
 function createClusterElement(cluster, { category, color, darkMode, separation, onClick }) {
@@ -359,7 +332,23 @@ function createClusterElement(cluster, { category, color, darkMode, separation, 
   return button;
 }
 
-function applyMapbox3dTreatment(map) {
+function applyMapbox3dTreatment(map, terrainEnabled = false) {
+  if (terrainEnabled) {
+    try {
+      if (!map.getSource('aws-community-terrain')) {
+        map.addSource('aws-community-terrain', {
+          type: 'raster-dem',
+          url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+          tileSize: 512,
+          maxzoom: 14,
+        });
+      }
+      map.setTerrain({ source: 'aws-community-terrain', exaggeration: 1.35 });
+    } catch {
+      // Terrain requires a compatible Mapbox style and source.
+    }
+  }
+
   try {
     map.setFog({
       color: 'rgb(186, 210, 235)',
@@ -395,7 +384,7 @@ function applyMapbox3dTreatment(map) {
 
 }
 
-function createSingaporeSpotlightElement(member, index, darkMode) {
+function createCountrySpotlightElement(member, index, darkMode) {
   const wrapper = document.createElement('button');
   wrapper.type = 'button';
   wrapper.setAttribute('aria-label', member.name);
@@ -488,21 +477,21 @@ export default function MapboxGlobeScene({
   flyToTarget,
   zoomCommand,
   heatmapEnabled = false,
-  singaporeSpotlight = null,
+  countrySpotlight = null,
 }) {
   const containerRef = useRef(null);
   const overlayRef = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef([]);
-  const singaporeSpotlightRef = useRef([]);
+  const countrySpotlightRef = useRef([]);
   const resizeTimerRef = useRef(null);
   const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
-  const singaporeSpotlightActive = category === 'cloud-clubs' && Boolean(singaporeSpotlight?.nonce);
+  const countrySpotlightActive = category === 'cloud-clubs' && Boolean(countrySpotlight?.nonce);
 
   const clusters = useMemo(
     () => category === 'community-days' && communityDaysExpanded
       ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMembers(members),
+      : clusterMembersByCoordinates(members),
     [members, category, communityDaysExpanded]
   );
 
@@ -513,17 +502,17 @@ export default function MapboxGlobeScene({
 
     const map = new mapboxgl.Map({
       container: containerRef.current,
-      style: singaporeSpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
-      projection: singaporeSpotlightActive ? 'mercator' : 'globe',
-      center: singaporeSpotlightActive ? [SINGAPORE_SPOTLIGHT_CENTER.lng, SINGAPORE_SPOTLIGHT_CENTER.lat] : [0, 18],
-      zoom: singaporeSpotlightActive ? 11.85 : 0.98,
-      pitch: singaporeSpotlightActive ? 68 : 0,
-      bearing: singaporeSpotlightActive ? -24 : 0,
+      style: countrySpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
+      projection: countrySpotlightActive ? 'mercator' : 'globe',
+      center: countrySpotlightActive ? [countrySpotlight.center.lng, countrySpotlight.center.lat] : [0, 18],
+      zoom: countrySpotlightActive ? countrySpotlight.zoom : 0.98,
+      pitch: countrySpotlightActive ? countrySpotlight.pitch : 0,
+      bearing: countrySpotlightActive ? countrySpotlight.bearing : 0,
       attributionControl: false,
     });
 
     mapRef.current = map;
-    if (singaporeSpotlightActive) {
+    if (countrySpotlightActive) {
       map.dragRotate.enable();
       map.touchZoomRotate.enableRotation();
     } else {
@@ -531,7 +520,7 @@ export default function MapboxGlobeScene({
       map.touchZoomRotate.disableRotation();
     }
     map.on('style.load', () => {
-      applyMapbox3dTreatment(map);
+      applyMapbox3dTreatment(map, countrySpotlightActive);
     });
 
     const scheduleResize = () => {
@@ -575,13 +564,21 @@ export default function MapboxGlobeScene({
       cleanupResize();
       resizeObserver.disconnect();
       markersRef.current.forEach(({ element }) => element.remove());
-      singaporeSpotlightRef.current.forEach(({ element }) => element.remove());
+      countrySpotlightRef.current.forEach(({ element }) => element.remove());
       markersRef.current = [];
-      singaporeSpotlightRef.current = [];
+      countrySpotlightRef.current = [];
       map.remove();
       mapRef.current = null;
     };
-  }, [singaporeSpotlightActive]);
+  }, [
+    countrySpotlight?.bearing,
+    countrySpotlight?.center.lat,
+    countrySpotlight?.center.lng,
+    countrySpotlight?.country,
+    countrySpotlight?.pitch,
+    countrySpotlight?.zoom,
+    countrySpotlightActive,
+  ]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -594,7 +591,7 @@ export default function MapboxGlobeScene({
       window.cancelAnimationFrame(frame);
       map.off('zoomend', updateExpansion);
     };
-  }, [category, singaporeSpotlightActive]);
+  }, [category, countrySpotlightActive]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -693,16 +690,16 @@ export default function MapboxGlobeScene({
     const map = mapRef.current;
     if (!overlay || !map) return;
 
-    singaporeSpotlightRef.current.forEach(({ element }) => element.remove());
-    singaporeSpotlightRef.current = [];
+    countrySpotlightRef.current.forEach(({ element }) => element.remove());
+    countrySpotlightRef.current = [];
 
-    const members = singaporeSpotlight?.members ?? [];
-    if (!singaporeSpotlight?.nonce || category !== 'cloud-clubs' || members.length === 0) return;
+    const members = countrySpotlight?.members ?? [];
+    if (!countrySpotlight?.nonce || category !== 'cloud-clubs' || members.length === 0) return;
 
     const createSpotlightElements = () => {
-      singaporeSpotlightRef.current.forEach(({ element }) => element.remove());
-      singaporeSpotlightRef.current = members.map((member, index) => {
-        const element = createSingaporeSpotlightElement(member, index, darkMode);
+      countrySpotlightRef.current.forEach(({ element }) => element.remove());
+      countrySpotlightRef.current = members.map((member, index) => {
+        const element = createCountrySpotlightElement(member, index, darkMode);
         element.onclick = (event) => {
           event.stopPropagation();
           onMarkerClick(member);
@@ -712,26 +709,37 @@ export default function MapboxGlobeScene({
       });
     };
 
-    const flyIntoSingapore = () => {
-      applyMapbox3dTreatment(map);
+    const flyIntoCountry = () => {
+      applyMapbox3dTreatment(map, true);
       createSpotlightElements();
       map.flyTo({
-        center: [SINGAPORE_SPOTLIGHT_CENTER.lng, SINGAPORE_SPOTLIGHT_CENTER.lat],
-        zoom: 11.85,
-        pitch: 68,
-        bearing: -24,
+        center: [countrySpotlight.center.lng, countrySpotlight.center.lat],
+        zoom: countrySpotlight.zoom,
+        pitch: countrySpotlight.pitch,
+        bearing: countrySpotlight.bearing,
         duration: 1700,
         essential: true,
       });
     };
 
-    flyIntoSingapore();
+    flyIntoCountry();
 
     return () => {
-      singaporeSpotlightRef.current.forEach(({ element }) => element.remove());
-      singaporeSpotlightRef.current = [];
+      countrySpotlightRef.current.forEach(({ element }) => element.remove());
+      countrySpotlightRef.current = [];
     };
-  }, [category, darkMode, onMarkerClick, singaporeSpotlight?.members, singaporeSpotlight?.nonce]);
+  }, [
+    category,
+    countrySpotlight?.bearing,
+    countrySpotlight?.center.lat,
+    countrySpotlight?.center.lng,
+    countrySpotlight?.members,
+    countrySpotlight?.nonce,
+    countrySpotlight?.pitch,
+    countrySpotlight?.zoom,
+    darkMode,
+    onMarkerClick,
+  ]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -743,25 +751,26 @@ export default function MapboxGlobeScene({
       const cutoff = Math.cos((HORIZON_CUTOFF_DEGREES * Math.PI) / 180);
       const width = map.getCanvas().clientWidth;
       const height = map.getCanvas().clientHeight;
-      const singaporeActive = category === 'cloud-clubs' && Boolean(singaporeSpotlight?.nonce);
+      const spotlightActive = category === 'cloud-clubs' && Boolean(countrySpotlight?.nonce);
 
       markersRef.current.forEach(({ cluster, element }) => {
         const project = map.project([cluster.lng, cluster.lat]);
         const vec = toVector(cluster.lat, cluster.lng);
         const visible = (vec.x * centerVec.x) + (vec.y * centerVec.y) + (vec.z * centerVec.z) >= cutoff;
         const onScreen = project.x >= -80 && project.x <= width + 80 && project.y >= -80 && project.y <= height + 80;
-        const hideForSingaporeSpotlight = singaporeActive && cluster.members.some((member) => member.location?.includes('Singapore'));
+        const hideForCountrySpotlight = spotlightActive
+          && cluster.members.some((member) => getMemberCountry(member) === countrySpotlight.country);
         const portraitMarker = element.querySelector('[data-portrait-cluster-marker]');
         portraitMarker?.style.setProperty('--portrait-separation', getMapboxPortraitSeparation(map.getZoom()).toFixed(3));
 
         element.style.transform = `translate(-50%, -50%) translate(${project.x}px, ${project.y}px)`;
-        element.style.opacity = visible && onScreen && !hideForSingaporeSpotlight ? '1' : '0';
-        element.style.visibility = visible && onScreen && !hideForSingaporeSpotlight ? 'visible' : 'hidden';
-        element.style.pointerEvents = visible && onScreen && !hideForSingaporeSpotlight ? 'auto' : 'none';
+        element.style.opacity = visible && onScreen && !hideForCountrySpotlight ? '1' : '0';
+        element.style.visibility = visible && onScreen && !hideForCountrySpotlight ? 'visible' : 'hidden';
+        element.style.pointerEvents = visible && onScreen && !hideForCountrySpotlight ? 'auto' : 'none';
         element.style.zIndex = String(Math.round(project.y * 1000));
       });
 
-      singaporeSpotlightRef.current.forEach(({ member, element, index }) => {
+      countrySpotlightRef.current.forEach(({ member, element, index }) => {
         const project = map.project([member.lng, member.lat]);
         const heightOffset = 120 + (index % 3) * 24;
         const visible = project.x >= -120 && project.x <= width + 120 && project.y >= -180 && project.y <= height + 120;
@@ -786,12 +795,12 @@ export default function MapboxGlobeScene({
       map.off('zoom', updateOverlay);
       map.off('resize', updateOverlay);
     };
-  }, [category, singaporeSpotlight?.nonce]);
+  }, [category, countrySpotlight?.country, countrySpotlight?.nonce]);
 
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !flyToTarget) return;
-    if (category === 'cloud-clubs' && singaporeSpotlight?.nonce) return;
+    if (category === 'cloud-clubs' && countrySpotlight?.nonce) return;
 
     map.flyTo({
       center: [flyToTarget.lng, flyToTarget.lat],
@@ -799,7 +808,7 @@ export default function MapboxGlobeScene({
       duration: 1000,
       essential: true,
     });
-  }, [category, flyToTarget, singaporeSpotlight?.nonce]);
+  }, [category, countrySpotlight?.nonce, flyToTarget]);
 
   useEffect(() => {
     const map = mapRef.current;

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import createGlobe from 'cobe';
+import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -13,7 +14,6 @@ const CATEGORY_COLORS = {
   'news': '#FF9900',
 };
 
-const CLUSTER_TOLERANCE = 0.5;
 const AUTO_ROTATE_SPEED = 0.003;
 const DRAG_SENSITIVITY = 0.005;
 const MAX_TILT = Math.PI / 3;
@@ -27,29 +27,6 @@ const MIN_SCALE = 0.8;
 const MAX_SCALE = 1.85;
 const WHEEL_ZOOM_SENSITIVITY = 0.0009;
 const PINCH_MIN_DISTANCE = 24;
-
-function clusterMembers(members) {
-  const clusters = [];
-  for (const member of members) {
-    if (member.forceSeparateMarker) {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
-      continue;
-    }
-
-    const existing = clusters.find(
-      (c) =>
-        !c.forceSeparateMarker &&
-        Math.abs(c.lat - member.lat) <= CLUSTER_TOLERANCE &&
-        Math.abs(c.lng - member.lng) <= CLUSTER_TOLERANCE
-    );
-    if (existing) {
-      existing.members.push(member);
-    } else {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member] });
-    }
-  }
-  return clusters;
-}
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
@@ -221,7 +198,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
 
   const clusters = useMemo(
     () =>
-      clusterMembers(members).map((cluster) => ({
+      clusterMembersByCoordinates(members).map((cluster) => ({
         ...cluster,
         location: [cluster.lat, cluster.lng],
         size:

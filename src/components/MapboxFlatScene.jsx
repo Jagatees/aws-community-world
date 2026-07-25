@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -16,7 +17,6 @@ const CATEGORY_COLORS = {
   events: '#7B61FF',
 };
 
-const CLUSTER_TOLERANCE = 0.5;
 const MAX_CLUSTER_AVATARS = 4;
 const TOKEN = import.meta.env.VITE_MAP_BOX ?? '';
 const MAPBOX_STYLE_URL = 'mapbox://styles/mapbox/satellite-streets-v12';
@@ -37,32 +37,6 @@ function getHeatColor(size) {
   if (size >= 7) return '#FF9900';
   if (size >= 4) return '#F2CC0C';
   return '#2D72D2';
-}
-
-function clusterMembers(members) {
-  const clusters = [];
-
-  for (const member of members) {
-    if (member.forceSeparateMarker) {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
-      continue;
-    }
-
-    const existing = clusters.find(
-      (cluster) =>
-        !cluster.forceSeparateMarker &&
-        Math.abs(cluster.lat - member.lat) <= CLUSTER_TOLERANCE &&
-        Math.abs(cluster.lng - member.lng) <= CLUSTER_TOLERANCE
-    );
-
-    if (existing) {
-      existing.members.push(member);
-    } else {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member] });
-    }
-  }
-
-  return clusters;
 }
 
 function createClusterElement(cluster, { color, darkMode, onClick }) {
@@ -344,7 +318,7 @@ export default function MapboxFlatScene({
   const clusters = useMemo(
     () => category === 'community-days' && communityDaysExpanded
       ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMembers(members),
+      : clusterMembersByCoordinates(members),
     [members, category, communityDaysExpanded]
   );
 
