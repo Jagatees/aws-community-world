@@ -143,11 +143,10 @@ function applySocialLinks(entity, profileUrl, socialsByAlias) {
   const alias = getAlias(profileUrl);
   if (!alias || !socialsByAlias.has(alias)) return entity;
 
-  const { socialLinks: _previousSocialLinks, ...baseEntity } = entity;
   const socialLinks = socialsByAlias.get(alias);
-  return Object.keys(socialLinks).length > 0
-    ? { ...baseEntity, socialLinks }
-    : baseEntity;
+  if (Object.keys(socialLinks).length === 0) return entity;
+
+  return { ...entity, socialLinks };
 }
 
 function hasSocialLinks(entity) {

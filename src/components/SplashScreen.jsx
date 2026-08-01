@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 const COMMUNITY_STATS = [
   { label: 'Heroes', count: 252, color: '#FF9900' },
-  { label: 'Community Builders', count: 3037, color: '#1A9C3E' },
-  { label: 'User Groups', count: 575, color: '#00A1C9' },
+  { label: 'Community Builders', count: 3038, color: '#1A9C3E' },
+  { label: 'User Groups', count: 582, color: '#00A1C9' },
   { label: 'Student Builder Groups', count: 896, color: '#BF0816' },
   { label: 'Kiro Ambassadors', count: 2, color: '#8B5CF6' },
 ];
