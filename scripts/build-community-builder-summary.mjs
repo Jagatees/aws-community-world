@@ -55,11 +55,22 @@ for (const builder of raw) {
   };
 
   existing.builderCount += 1;
-  if (existing.sampleBuilders.length < 4) {
-    existing.sampleBuilders.push({
-      name: builder.name,
-      imageUrl: builder.avatarUrl || '',
-    });
+  const previewBuilder = {
+    name: builder.name,
+    imageUrl: builder.avatarUrl || '',
+    ...(builder.isNew ? { isNew: true } : {}),
+  };
+
+  if (builder.isNew) {
+    existing.isNew = true;
+    existing.newBuilderCount = (existing.newBuilderCount ?? 0) + 1;
+    existing.newBuilders = [...(existing.newBuilders ?? []), previewBuilder];
+    existing.sampleBuilders = [
+      previewBuilder,
+      ...existing.sampleBuilders.filter((sample) => sample.name !== builder.name),
+    ].slice(0, 4);
+  } else if (existing.sampleBuilders.length < 4) {
+    existing.sampleBuilders.push(previewBuilder);
   }
   clustersByKey.set(key, existing);
 }
@@ -80,6 +91,7 @@ const meta = {
   updatedAt: new Date().toISOString(),
   total: raw.length,
   mappedTotal: clusters.reduce((sum, cluster) => sum + cluster.builderCount, 0),
+  newTotal: raw.filter((builder) => builder.isNew).length,
   tags: [...tags].sort(),
   countries,
   countryCounts: Object.fromEntries([...countryCounts.entries()].sort((a, b) => a[0].localeCompare(b[0]))),
