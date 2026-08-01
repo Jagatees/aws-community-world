@@ -6798,6 +6798,11 @@
     "clusterOnly": true,
     "sampleBuilders": [
       {
+        "name": "Nikhil Purva",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg",
+        "isNew": true
+      },
+      {
         "name": "Bhupendra Bhati",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3ApyQhRFvikLmfdiSRyOiCBS6gL.webp"
       },
@@ -6808,14 +6813,15 @@
       {
         "name": "Kanak Vyas",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3AqpIfflrdWd5pfSm6Ffg38XxNz.webp"
-      },
-      {
-        "name": "Nikhil Purva",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
       }
     ],
     "ledBy": [
       {
+        "name": "Nikhil Purva",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg",
+        "isNew": true
+      },
+      {
         "name": "Bhupendra Bhati",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3ApyQhRFvikLmfdiSRyOiCBS6gL.webp"
       },
@@ -6826,10 +6832,15 @@
       {
         "name": "Kanak Vyas",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3AqpIfflrdWd5pfSm6Ffg38XxNz.webp"
-      },
+      }
+    ],
+    "isNew": true,
+    "newBuilderCount": 1,
+    "newBuilders": [
       {
         "name": "Nikhil Purva",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg",
+        "isNew": true
       }
     ]
   },
@@ -7210,7 +7221,8 @@
     "sampleBuilders": [
       {
         "name": "Sarthak Sharma",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg",
+        "isNew": true
       },
       {
         "name": "Suraj",
@@ -7224,7 +7236,8 @@
     "ledBy": [
       {
         "name": "Sarthak Sharma",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg",
+        "isNew": true
       },
       {
         "name": "Suraj",
@@ -7233,6 +7246,15 @@
       {
         "name": "Vinod Kumar",
         "imageUrl": "https://avatars.builderprofile.aws.dev/38T0OQojYEyhKh3h9guvJoLh3Ui.webp"
+      }
+    ],
+    "isNew": true,
+    "newBuilderCount": 1,
+    "newBuilders": [
+      {
+        "name": "Sarthak Sharma",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg",
+        "isNew": true
       }
     ]
   },

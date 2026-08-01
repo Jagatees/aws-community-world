@@ -1,4 +1,5 @@
 import { lazy, Suspense, useState, useCallback, useEffect, useMemo } from 'react';
+import { SparkleIcon } from '@phosphor-icons/react';
 import Header from './components/Header';
 import TabNav from './components/TabNav';
 import NewsPanel from './components/NewsPanel';
@@ -7,6 +8,7 @@ import TagFilter from './components/TagFilter';
 import KiroAvatarOverlay from './components/KiroAvatarOverlay';
 import ListScene from './components/ListScene';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
+import NewArrivalsPanel from './components/NewArrivalsPanel';
 import IconArchiveScene from './components/ExperimentalHeroDex';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
@@ -57,6 +59,7 @@ const DEFAULT_ROUTE_STATE = {
   globeDesign: 'orbit',
   darkMode: true,
   singaporeSpotlight: false,
+  newOnly: false,
 };
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
@@ -64,6 +67,7 @@ const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'icons', 'list', 'ex
 const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights']);
 const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors']);
 const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'news']);
+const NEW_ARRIVAL_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs']);
 
 function getResponsiveDefaultGlobeDesign() {
   if (typeof window === 'undefined') return DEFAULT_ROUTE_STATE.globeDesign;
@@ -90,13 +94,21 @@ function getRouteStateFromUrl() {
   const view = params.get('view');
   const theme = params.get('theme');
   const spotlight = params.get('sg') === '1';
+  const newOnly = params.get('new') === '1';
   const experimental = view === 'experimental';
   const insights = view === 'insights' || view === 'trends';
   const defaultGlobeDesign = getResponsiveDefaultGlobeDesign();
-  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'sg'].some((key) => params.has(key));
+  const resolvedCategory = experimental || insights
+    ? 'heroes'
+    : spotlight
+      ? 'cloud-clubs'
+      : VALID_CATEGORIES.has(tab)
+        ? tab
+        : DEFAULT_ROUTE_STATE.activeCategory;
+  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'sg', 'new'].some((key) => params.has(key));
 
   return {
-    activeCategory: experimental || insights ? 'heroes' : spotlight ? 'cloud-clubs' : VALID_CATEGORIES.has(tab) ? tab : DEFAULT_ROUTE_STATE.activeCategory,
+    activeCategory: resolvedCategory,
     selectedTag: experimental || insights ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
     selectedRegions: experimental || insights ? [] : spotlight ? ['asia'] : getRouteSelections(params, 'region'),
     selectedCountries: experimental || insights ? [] : spotlight ? ['Singapore'] : getRouteSelections(params, 'country'),
@@ -111,11 +123,12 @@ function getRouteStateFromUrl() {
         : defaultGlobeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
     singaporeSpotlight: experimental || insights ? false : spotlight,
+    newOnly: !experimental && !insights && NEW_ARRIVAL_CATEGORIES.has(resolvedCategory) && newOnly,
     hasShareState,
   };
 }
 
-function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, singaporeSpotlight }) {
+function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, singaporeSpotlight, newOnly }) {
   if (typeof window === 'undefined') return;
 
   const params = new URLSearchParams();
@@ -126,6 +139,7 @@ function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, se
   if (globeDesign !== DEFAULT_ROUTE_STATE.globeDesign) params.set('view', globeDesign);
   if (!darkMode) params.set('theme', 'light');
   if (singaporeSpotlight) params.set('sg', '1');
+  if (newOnly) params.set('new', '1');
 
   const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}${window.location.hash}`;
   const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
@@ -173,6 +187,7 @@ export default function App() {
   const [nearMeLoading, setNearMeLoading] = useState(false);
   const [nearMeError, setNearMeError] = useState(null);
   const [nearMeHover, setNearMeHover] = useState(false);
+  const [newOnly, setNewOnly] = useState(routeState.newOnly);
   const [singaporeSpotlight, setSingaporeSpotlight] = useState(routeState.singaporeSpotlight ? { nonce: 1 } : null);
   const [webGlAvailable] = useState(canCreateWebGlContext);
   // Only fly when the user explicitly pressed Locate, not on every selection
@@ -196,7 +211,7 @@ export default function App() {
     (design) => design !== 'experimental' && (design !== 'icons' || ICON_VIEW_CATEGORIES.has(activeCategory))
   );
   const loadFullCommunityBuilders = isCommunityBuilderView && (
-    isListView || isIconView || Boolean(selectedTag || selectedRegions.length || selectedCountries.length)
+    isListView || isIconView || newOnly || Boolean(selectedTag || selectedRegions.length || selectedCountries.length)
   );
   const { error, members, loading } = useCategory(activeCategory, loadFullCommunityBuilders);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
@@ -281,13 +296,14 @@ export default function App() {
 
   const directoryMembers = useMemo(() => {
     return members.filter((member) => {
+      if (newOnly && !member.isNew) return false;
       if (selectedTag && member.tag !== selectedTag) return false;
       const country = getMemberCountry(member);
       if (selectedRegions.length && !selectedRegions.includes(getRegionForCountry(country))) return false;
       if (selectedCountries.length && !selectedCountries.includes(country)) return false;
       return true;
     });
-  }, [members, selectedTag, selectedRegions, selectedCountries]);
+  }, [members, newOnly, selectedTag, selectedRegions, selectedCountries]);
 
   const filteredMembers = useMemo(
     () => directoryMembers.filter((member) => member.lat !== 0 || member.lng !== 0),
@@ -329,11 +345,22 @@ export default function App() {
   const resolvedFlyToTarget = nearMeTarget ?? flyToTarget;
 
   const displayedMembers = isListView ? directoryMembers : filteredMembers;
+  const newMemberCount = isCommunityBuilderView && !loadFullCommunityBuilders
+    ? (communityBuilderMeta.newTotal ?? 0)
+    : members.filter((member) => member.isNew).length;
+  const newArrivals = useMemo(
+    () => directoryMembers
+      .filter((member) => member.isNew)
+      .sort((a, b) => a.name.localeCompare(b.name)),
+    [directoryMembers]
+  );
   const isEmpty = !loading && !error && displayedMembers.length === 0;
   const hudCount = isCommunityBuilderView && !loadFullCommunityBuilders
     ? (communityBuilderMeta.total ?? filteredMembers.length)
     : filteredMembers.length;
-  const hudSubLabel = isCommunityBuilderView && !loadFullCommunityBuilders
+  const hudSubLabel = newOnly
+    ? 'new this month'
+    : isCommunityBuilderView && !loadFullCommunityBuilders
     ? `${(communityBuilderMeta.mappedTotal ?? filteredMembers.length).toLocaleString()} mapped across ${members.length.toLocaleString()} locations`
     : selectedTag || selectedRegions.length || selectedCountries.length
       ? `filtered / ${members.length.toLocaleString()} total`
@@ -482,6 +509,7 @@ export default function App() {
     setSelectedRegions([]);
     setSelectedCountries([]);
     setSingaporeSpotlight(null);
+    setNewOnly(false);
     setActiveCategory(category);
     if (EVENT_CATEGORIES.has(category) || category === 'kiro-ambassadors') {
       setGlobeDesign(getResponsiveDefaultGlobeDesign());
@@ -545,7 +573,32 @@ export default function App() {
     );
   }, []);
 
+  const handleNewOnlyToggle = useCallback(() => {
+    const next = !newOnly;
+    setSelectedMember(null);
+    setNearMeTarget(null);
+    setNearMeError(null);
+
+    if (next) {
+      setSelectedTag(null);
+      setSelectedRegions([]);
+      setSelectedCountries([]);
+      setSingaporeSpotlight(null);
+    }
+
+    setNewOnly(next);
+  }, [newOnly]);
+
+  const handleLocateNewArrival = useCallback((member) => {
+    if (!Number.isFinite(member?.lat) || !Number.isFinite(member?.lng)) return;
+    if (member.lat === 0 && member.lng === 0) return;
+
+    setNearMeTarget({ lat: member.lat, lng: member.lng, nonce: Date.now() });
+  }, []);
+
   const handleSingaporeSpotlight = useCallback(() => {
+    setNewOnly(false);
+
     if (singaporeSpotlight) {
       setSelectedTag(null);
       setSelectedRegions([]);
@@ -586,8 +639,9 @@ export default function App() {
       globeDesign,
       darkMode,
       singaporeSpotlight: Boolean(singaporeSpotlight),
+      newOnly,
     });
-  }, [activeCategory, darkMode, globeDesign, selectedCountries, selectedRegions, selectedTag, singaporeSpotlight]);
+  }, [activeCategory, darkMode, globeDesign, newOnly, selectedCountries, selectedRegions, selectedTag, singaporeSpotlight]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -601,6 +655,7 @@ export default function App() {
       setGlobeDesign(nextRouteState.globeDesign);
       setDarkMode(nextRouteState.darkMode);
       setNewsPanelOpen(nextRouteState.activeCategory === 'news');
+      setNewOnly(nextRouteState.newOnly);
       setNearMeTarget(nextRouteState.singaporeSpotlight ? { ...SINGAPORE_CENTER, nonce: Date.now() } : null);
       setSingaporeSpotlight(nextRouteState.singaporeSpotlight ? { nonce: Date.now() } : null);
       if (nextRouteState.hasShareState) setShowSplash(false);
@@ -1237,6 +1292,30 @@ export default function App() {
                       >
                         {nearMeLoading ? 'Locating...' : 'Near Me'}
                       </button>
+
+                      {NEW_ARRIVAL_CATEGORIES.has(activeCategory) && (newMemberCount > 0 || newOnly) ? (
+                        <button
+                          type="button"
+                          onClick={handleNewOnlyToggle}
+                          className="new-arrivals-toggle rounded-full px-4 py-1 text-xs font-semibold"
+                          style={{
+                            backgroundColor: newOnly ? '#FF9900' : viewControlBg,
+                            color: newOnly ? '#0F1923' : viewControlText,
+                            minHeight: '44px',
+                            border: `1px solid ${newOnly ? '#FF9900' : viewControlBorder}`,
+                            boxShadow: viewControlShadow,
+                            transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease',
+                            cursor: 'pointer',
+                            touchAction: 'manipulation',
+                            whiteSpace: 'nowrap',
+                          }}
+                          aria-label={`${newOnly ? 'Show all' : 'Show'} new ${CATEGORY_LABELS[activeCategory] ?? 'community members'}`}
+                          aria-pressed={newOnly}
+                        >
+                          <SparkleIcon size={14} weight="fill" aria-hidden="true" />
+                          <span>{newOnly ? 'Show All' : `New ${newMemberCount}`}</span>
+                        </button>
+                      ) : null}
                     </>
                   )}
 
@@ -1268,9 +1347,21 @@ export default function App() {
                   style={{ color: '#8B9BAA' }}
                 >
                   <span style={{ fontSize: '2.5rem' }}>🌐</span>
-                  <p className="mt-3 text-sm">No results for the selected filters.</p>
+                  <p className="mt-3 text-sm">{newOnly ? 'No new arrivals in this category.' : 'No results for the selected filters.'}</p>
                 </div>
               )}
+
+              {newOnly && !isListView && !isIconView ? (
+                <NewArrivalsPanel
+                  category={activeCategory}
+                  members={newArrivals}
+                  loading={loading}
+                  darkMode={darkMode}
+                  onClose={handleNewOnlyToggle}
+                  onLocate={handleLocateNewArrival}
+                  onSelect={handleMarkerClick}
+                />
+              ) : null}
             </>
           )}
 
