@@ -87,6 +87,10 @@ function hasCoordinates(entry) {
     && !(Number(entry.lat) === 0 && Number(entry.lng) === 0);
 }
 
+function hasStoredCoordinates(entry) {
+  return Number.isFinite(entry?.lat) && Number.isFinite(entry?.lng);
+}
+
 async function geocode(location) {
   if (!location || ['virtual', 'online'].includes(location.toLowerCase())) {
     return { lat: 0, lng: 0 };
@@ -133,7 +137,7 @@ async function addCoordinates(records) {
   const enriched = [];
 
   for (const record of records) {
-    const coords = hasCoordinates(record)
+    const coords = hasStoredCoordinates(record)
       ? { lat: Number(record.lat), lng: Number(record.lng) }
       : DRY_RUN
         ? { lat: 0, lng: 0 }
@@ -218,6 +222,18 @@ function existingBy(existingRecords, key) {
   return new Map(existingRecords.filter((record) => record?.[key]).map((record) => [record[key], record]));
 }
 
+function uniqueExistingBy(existingRecords, valueForRecord) {
+  const matches = new Map();
+
+  for (const record of existingRecords) {
+    const value = valueForRecord(record);
+    if (!value) continue;
+    matches.set(value, matches.has(value) ? null : record);
+  }
+
+  return new Map([...matches].filter(([, record]) => record));
+}
+
 function normalizedLookupValue(value) {
   return String(value ?? '').trim().toLowerCase();
 }
@@ -238,13 +254,13 @@ function mergeCoordinates(records, existingRecords, key) {
   const existing = existingBy(existingRecords, key);
   const existingByNameLocation = new Map(
     existingRecords
-      .filter(hasCoordinates)
+      .filter(hasStoredCoordinates)
       .map((record) => [locationKey(record), record]),
   );
 
   return records.map((record) => {
     const previous = existing.get(record[key]) || existingByNameLocation.get(locationKey(record));
-    if (!previous || !hasCoordinates(previous)) return record;
+    if (!previous || !hasStoredCoordinates(previous)) return record;
 
     return {
       ...record,
@@ -289,10 +305,23 @@ async function scrapeHeroes(page) {
   const existing = readBaselineJson('heroes.json');
   const existingMap = existingBy(existing, 'hero_page_url');
   const existingByNameLocation = new Map(existing.map((hero) => [locationKey(hero), hero]));
-  const heroesWithProfiles = await addHeroBuilderProfileUrls(page, rawHeroes, existingMap);
-  const withCoordinates = await addCoordinates(mergeCoordinates(heroesWithProfiles, existing, 'hero_page_url'));
+  const existingByImage = uniqueExistingBy(
+    existing,
+    (hero) => normalizedLookupValue(hero.image_url),
+  );
+  const previousForHero = (hero) => (
+    findPrevious(hero, existingMap, existingByNameLocation, 'hero_page_url')
+    || existingByImage.get(normalizedLookupValue(hero.image_url))
+  );
+  const heroesWithProfiles = await addHeroBuilderProfileUrls(page, rawHeroes, previousForHero);
+  const heroesWithStoredCoordinates = heroesWithProfiles.map((hero) => {
+    const previous = previousForHero(hero);
+    if (!previous || !hasStoredCoordinates(previous)) return hero;
+    return { ...hero, lat: Number(previous.lat), lng: Number(previous.lng) };
+  });
+  const withCoordinates = await addCoordinates(heroesWithStoredCoordinates);
   const heroes = withCoordinates.map((hero) => {
-    const previous = findPrevious(hero, existingMap, existingByNameLocation, 'hero_page_url');
+    const previous = previousForHero(hero);
     return {
       ...previous,
       id: previous?.id || stableId(hero.hero_page_url),
@@ -315,10 +344,10 @@ function normalizeBuilderProfileUrl(href) {
   }
 }
 
-async function addHeroBuilderProfileUrls(page, heroes, existingMap) {
+async function addHeroBuilderProfileUrls(page, heroes, previousForHero) {
   const enriched = heroes.map((hero) => ({
     ...hero,
-    builderProfileUrl: existingMap.get(hero.hero_page_url)?.builderProfileUrl || '',
+    builderProfileUrl: previousForHero(hero)?.builderProfileUrl || '',
   }));
   const pendingIndexes = enriched
     .map((hero, index) => (hero.builderProfileUrl ? -1 : index))
@@ -407,9 +436,16 @@ async function scrapeCommunityBuilders(page) {
 
   const existing = readBaselineJson('community-builders.json');
   const existingMap = existingBy(existing, 'profileUrl');
+  const existingByName = uniqueExistingBy(
+    existing,
+    (builder) => normalizedLookupValue(builder.name),
+  );
   const buildersWithKnownLocations = scrapedBuilders.map((builder) => ({
     ...builder,
-    location: builder.location || existingMap.get(builder.profile_url)?.location || '',
+    location: builder.location
+      || existingMap.get(builder.profile_url)?.location
+      || existingByName.get(normalizedLookupValue(builder.name))?.location
+      || '',
   }));
   const rawBuilders = INFER_BUILDER_LOCATIONS
     ? await enrichBuilderLocationsFromFilter(page, buildersWithKnownLocations)
@@ -424,7 +460,8 @@ async function scrapeCommunityBuilders(page) {
 
   const builders = withCoordinates.map((builder) => {
     const previous = existingMap.get(builder.profile_url)
-      || existingByNameLocation.get(locationKey(builder));
+      || existingByNameLocation.get(locationKey(builder))
+      || existingByName.get(normalizedLookupValue(builder.name));
     return {
       ...previous,
       id: previous?.id || stableId(builder.profile_url),
