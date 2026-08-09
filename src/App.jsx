@@ -63,7 +63,7 @@ const DEFAULT_ROUTE_STATE = {
 };
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
-const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'icons', 'list', 'experimental'];
+const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'geolibre', 'icons', 'list', 'experimental'];
 const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights']);
 const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors']);
 const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'news']);
@@ -167,6 +167,7 @@ const SvgFlatMapScene = lazy(() => import('./components/FlatMapScene'));
 const AwsCommunityDaySingaporeScene = lazy(() => import('./components/AwsCommunityDaySingaporeScene'));
 const CommunityDaysScene = lazy(() => import('./components/CommunityDaysScene'));
 const ExperimentalGlobeScene = lazy(() => import('./components/ExperimentalGlobeScene'));
+const GeoLibreScene = lazy(() => import('./components/GeoLibreScene'));
 
 export default function App() {
   const [routeState] = useState(() => getRouteStateFromUrl());
@@ -205,6 +206,7 @@ export default function App() {
   const isCommunityBuilderView = activeCategory === 'community-builders';
   const isListView = globeDesign === 'list';
   const isIconView = globeDesign === 'icons';
+  const isGeoLibreView = globeDesign === 'geolibre';
   const isExperimentalView = globeDesign === 'experimental';
   const isInsightsView = globeDesign === 'insights';
   const availableGlobeDesigns = GLOBE_DESIGNS.filter(
@@ -218,7 +220,9 @@ export default function App() {
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading && !isListView;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
   const ActiveGlobeScene =
-    !webGlAvailable
+    isGeoLibreView
+      ? GeoLibreScene
+      : !webGlAvailable
       ? SvgFlatMapScene
       : globeDesign === 'experimental'
         ? ExperimentalGlobeScene
@@ -425,6 +429,7 @@ export default function App() {
     if (design === 'orbit') return 'Earth';
     if (design === 'sleek') return 'Minimal';
     if (design === 'flat') return 'Map';
+    if (design === 'geolibre') return 'GeoLibre';
     if (design === 'icons') return 'Gallery';
     if (design === 'list') return 'Directory';
     return design.charAt(0).toUpperCase() + design.slice(1);
@@ -923,7 +928,7 @@ export default function App() {
                     </div>
 
                     <div
-                      className={`${isListView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
+                      className={`${isListView || isGeoLibreView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
                       style={{
                         background: viewControlBg,
                         border: `1px solid ${viewControlBorder}`,
@@ -961,7 +966,7 @@ export default function App() {
                       onClick={handleNearMe}
                       onMouseEnter={() => setNearMeHover(true)}
                       onMouseLeave={() => setNearMeHover(false)}
-                      className={`${isListView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
+                      className={`${isListView || isGeoLibreView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
                       style={{
                         backgroundColor: nearMeLoading ? '#182735' : nearMeHover ? '#182B3A' : viewControlBg,
                         color: nearMeLoading ? '#6F8291' : nearMeHover ? '#FFD54A' : viewControlText,
@@ -1223,7 +1228,7 @@ export default function App() {
                       </div>
 
                       <div
-                            className={`${isListView || isIconView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
+                            className={`${isListView || isIconView || isGeoLibreView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
                         style={{
                           background: viewControlBg,
                           border: `1px solid ${viewControlBorder}`,
@@ -1276,7 +1281,7 @@ export default function App() {
                         onClick={handleNearMe}
                         onMouseEnter={() => setNearMeHover(true)}
                         onMouseLeave={() => setNearMeHover(false)}
-                      className={`${isListView || isIconView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
+                      className={`${isListView || isIconView || isGeoLibreView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
                         style={{
                           backgroundColor: nearMeLoading ? '#182735' : nearMeHover ? '#182B3A' : viewControlBg,
                           color: nearMeLoading ? '#6F8291' : nearMeHover ? '#FFD54A' : viewControlText,

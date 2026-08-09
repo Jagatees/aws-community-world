@@ -1,0 +1,48 @@
+.geolibre-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #020915;
+}
+
+.geolibre-scene__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  opacity: 0;
+  transition: opacity 320ms ease;
+}
+
+.geolibre-scene__frame.is-ready { opacity: 1; }
+
+.geolibre-scene__loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #a9bdcc;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+}
+
+.geolibre-scene__loading span {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 153, 0, 0.24);
+  border-top-color: #ff9900;
+  border-radius: 50%;
+  animation: geolibre-scene-spin 760ms linear infinite;
+}
+
+@keyframes geolibre-scene-spin { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .geolibre-scene__frame { transition: none; }
+  .geolibre-scene__loading span { animation-duration: 1.5s; }
+}

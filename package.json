@@ -14,7 +14,8 @@
     "update:news": "node scripts/update-builder-news.mjs",
     "update:kiro-events": "node scripts/update-kiro-events.mjs && node scripts/update-growth-history.mjs",
     "update:growth-history": "node scripts/update-growth-history.mjs",
-    "build:community-builder-summary": "node scripts/build-community-builder-summary.mjs && node scripts/update-growth-history.mjs"
+    "build:community-builder-summary": "node scripts/build-community-builder-summary.mjs && node scripts/update-growth-history.mjs",
+    "build:geolibre": "node scripts/build-geolibre-projects.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

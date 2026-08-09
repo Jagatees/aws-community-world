@@ -2213,12 +2213,13 @@ body {
   }
 
   .mobile-globe-controls [aria-label="Globe design switcher"] {
-    grid-template-columns: repeat(var(--design-count), minmax(58px, 1fr)) !important;
+    grid-template-columns: repeat(var(--design-count), minmax(52px, 1fr)) !important;
   }
 
   .mobile-globe-controls [aria-label="Globe design switcher"] button {
-    min-width: 58px !important;
-    padding-inline: 0.55rem !important;
+    min-width: 52px !important;
+    padding-inline: 0.4rem !important;
+    font-size: 0.68rem !important;
   }
 
   .header-repo-link {

@@ -21,10 +21,11 @@ function countdownTo(date, now) {
   return `${days}d ${hours}h ${minutes}m ${seconds}s to go`;
 }
 
-const COMMUNITY_DAY_VIEWS = ['orbit', 'classic', 'sleek', 'flat', 'list'];
+const COMMUNITY_DAY_VIEWS = ['orbit', 'classic', 'sleek', 'flat', 'geolibre', 'list'];
 
 function viewLabel(view) {
   if (view === 'classic') return 'Mapbox';
+  if (view === 'geolibre') return 'GeoLibre';
   return view.charAt(0).toUpperCase() + view.slice(1);
 }
 
@@ -93,6 +94,7 @@ export default function CommunityDaysScene({
   const controlBackground = darkMode ? 'rgba(8, 16, 24, 0.86)' : 'rgba(255, 255, 255, 0.92)';
   const controlText = darkMode ? '#DCE7F0' : '#17324B';
   const isListView = globeDesign === 'list';
+  const isGeoLibreView = globeDesign === 'geolibre';
 
   return (
     <section className="relative h-full min-h-0 overflow-hidden" aria-label="AWS Community Days globe">
@@ -162,7 +164,7 @@ export default function CommunityDaysScene({
             })}
           </div>
 
-          {!isListView && (
+          {!isListView && !isGeoLibreView && (
             <>
               <div
                 className="flex items-center rounded-full p-1"
