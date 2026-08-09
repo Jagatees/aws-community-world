@@ -11,6 +11,7 @@ const PROJECT_FILES = {
   'community-days': 'community-days',
   news: 'news',
 };
+const PROJECT_VERSION = 'faces-1';
 
 function getProjectBaseUrl() {
   if (typeof window === 'undefined') return 'https://www.awscommunityglobe.click/geolibre';
@@ -24,7 +25,7 @@ export default function GeoLibreScene({ category = 'heroes' }) {
   const [ready, setReady] = useState(false);
   const projectFile = PROJECT_FILES[category] || PROJECT_FILES.heroes;
   const embedUrl = useMemo(() => {
-    const projectUrl = `${getProjectBaseUrl()}/${projectFile}.geolibre.json`;
+    const projectUrl = `${getProjectBaseUrl()}/${projectFile}.geolibre.json?v=${PROJECT_VERSION}`;
     return `https://web.geolibre.app/?url=${encodeURIComponent(projectUrl)}&maponly&theme=dark&welcome=0`;
   }, [projectFile]);
 
