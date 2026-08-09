@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
+import * as maplibregl from 'maplibre-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import 'maplibre-gl/dist/maplibre-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 import { createPortraitFallback, createPortraitGroupAvatar, getMapboxPortraitSeparation, getPortraitGroupCount, PORTRAIT_GROUP_CATEGORIES } from '../utils/portraitGroupMarker';
 
@@ -22,6 +24,7 @@ const MAX_CLUSTER_AVATARS = 4;
 const TOKEN = import.meta.env.VITE_MAP_BOX ?? '';
 const MAPBOX_STYLE_URL = 'mapbox://styles/mapbox/satellite-streets-v12';
 const MAPBOX_3D_STYLE_URL = 'mapbox://styles/mapbox/streets-v12';
+const GEOLIBRE_STYLE_URL = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 const HORIZON_CUTOFF_DEGREES = 96;
 const SINGAPORE_SPOTLIGHT_CENTER = { lat: 1.335, lng: 103.84 };
 
@@ -489,6 +492,7 @@ export default function MapboxGlobeScene({
   zoomCommand,
   heatmapEnabled = false,
   singaporeSpotlight = null,
+  variant = 'mapbox',
 }) {
   const containerRef = useRef(null);
   const overlayRef = useRef(null);
@@ -498,6 +502,8 @@ export default function MapboxGlobeScene({
   const resizeTimerRef = useRef(null);
   const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
   const singaporeSpotlightActive = category === 'cloud-clubs' && Boolean(singaporeSpotlight?.nonce);
+  const geoLibreMode = variant === 'geolibre';
+  const mapEnabled = geoLibreMode || Boolean(TOKEN);
 
   const clusters = useMemo(
     () => category === 'community-days' && communityDaysExpanded
@@ -507,14 +513,17 @@ export default function MapboxGlobeScene({
   );
 
   useEffect(() => {
-    if (!containerRef.current || mapRef.current || !TOKEN) return;
+    if (!containerRef.current || mapRef.current || !mapEnabled) return;
 
-    mapboxgl.accessToken = TOKEN;
+    const MapEngine = geoLibreMode ? maplibregl : mapboxgl;
+    if (!geoLibreMode) mapboxgl.accessToken = TOKEN;
 
-    const map = new mapboxgl.Map({
+    const map = new MapEngine.Map({
       container: containerRef.current,
-      style: singaporeSpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
-      projection: singaporeSpotlightActive ? 'mercator' : 'globe',
+      style: geoLibreMode
+        ? GEOLIBRE_STYLE_URL
+        : singaporeSpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
+      ...(!geoLibreMode ? { projection: singaporeSpotlightActive ? 'mercator' : 'globe' } : {}),
       center: singaporeSpotlightActive ? [SINGAPORE_SPOTLIGHT_CENTER.lng, SINGAPORE_SPOTLIGHT_CENTER.lat] : [0, 18],
       zoom: singaporeSpotlightActive ? 11.85 : 0.98,
       pitch: singaporeSpotlightActive ? 68 : 0,
@@ -531,7 +540,22 @@ export default function MapboxGlobeScene({
       map.touchZoomRotate.disableRotation();
     }
     map.on('style.load', () => {
-      applyMapbox3dTreatment(map);
+      if (geoLibreMode) {
+        try {
+          map.setProjection({ type: 'globe' });
+        } catch {
+          // Older MapLibre releases can already carry the projection in the style.
+        }
+        try {
+          map.setSky({
+            'atmosphere-blend': ['interpolate', ['linear'], ['zoom'], 0, 1, 5, 1, 7, 0],
+          });
+        } catch {
+          // The globe still renders when atmosphere controls are unavailable.
+        }
+      } else {
+        applyMapbox3dTreatment(map);
+      }
     });
 
     const scheduleResize = () => {
@@ -581,7 +605,7 @@ export default function MapboxGlobeScene({
       map.remove();
       mapRef.current = null;
     };
-  }, [singaporeSpotlightActive]);
+  }, [geoLibreMode, mapEnabled, singaporeSpotlightActive]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -816,7 +840,7 @@ export default function MapboxGlobeScene({
     <div className={`relative h-full w-full overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}>
       <div className="aws-globe-pattern" />
 
-      {!TOKEN ? (
+      {!mapEnabled ? (
         <div className="relative z-10 flex h-full items-center justify-center p-6">
           <div
             className="max-w-md rounded-[24px] px-5 py-4 text-center"
