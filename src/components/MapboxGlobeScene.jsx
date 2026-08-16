@@ -28,6 +28,9 @@ const GEOLIBRE_STYLE_URLS = {
   dark: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
 };
+const GEOLIBRE_SATELLITE_SOURCE_ID = 'aws-geolibre-satellite-source';
+const GEOLIBRE_SATELLITE_LAYER_ID = 'aws-geolibre-satellite-layer';
+const GEOLIBRE_SATELLITE_TILES = 'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg';
 const HORIZON_CUTOFF_DEGREES = 96;
 const SINGAPORE_SPOTLIGHT_CENTER = { lat: 1.335, lng: 103.84 };
 
@@ -423,6 +426,43 @@ function applyGeoLibreTreatment(map, darkMode) {
     });
   } catch {
     // The basemap remains usable when atmosphere controls are unavailable.
+  }
+
+  try {
+    if (!map.getSource(GEOLIBRE_SATELLITE_SOURCE_ID)) {
+      map.addSource(GEOLIBRE_SATELLITE_SOURCE_ID, {
+        type: 'raster',
+        tiles: [GEOLIBRE_SATELLITE_TILES],
+        tileSize: 256,
+        minzoom: 0,
+        maxzoom: 14,
+        attribution: 'Sentinel-2 cloudless imagery © EOX IT Services GmbH · modified Copernicus Sentinel data 2020',
+      });
+    }
+
+    if (!map.getLayer(GEOLIBRE_SATELLITE_LAYER_ID)) {
+      const firstLabelLayer = map.getStyle().layers?.find((layer) => layer.type === 'symbol')?.id;
+      const beforeLayerId = map.getLayer('boundary_country_outline')
+        ? 'boundary_country_outline'
+        : firstLabelLayer;
+
+      map.addLayer({
+        id: GEOLIBRE_SATELLITE_LAYER_ID,
+        type: 'raster',
+        source: GEOLIBRE_SATELLITE_SOURCE_ID,
+        paint: {
+          'raster-opacity': darkMode ? 0.88 : 0.98,
+          'raster-brightness-min': darkMode ? 0.02 : 0.08,
+          'raster-brightness-max': darkMode ? 0.78 : 1,
+          'raster-contrast': darkMode ? 0.14 : 0.06,
+          'raster-saturation': darkMode ? -0.08 : 0.04,
+          'raster-fade-duration': 0,
+          'raster-resampling': 'linear',
+        },
+      }, beforeLayerId);
+    }
+  } catch {
+    // Fall back to the vector basemap if the satellite source is unavailable.
   }
 
   if (!darkMode) return;
