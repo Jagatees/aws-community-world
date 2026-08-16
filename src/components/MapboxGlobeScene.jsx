@@ -24,7 +24,10 @@ const MAX_CLUSTER_AVATARS = 4;
 const TOKEN = import.meta.env.VITE_MAP_BOX ?? '';
 const MAPBOX_STYLE_URL = 'mapbox://styles/mapbox/satellite-streets-v12';
 const MAPBOX_3D_STYLE_URL = 'mapbox://styles/mapbox/streets-v12';
-const GEOLIBRE_STYLE_URL = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
+const GEOLIBRE_STYLE_URLS = {
+  dark: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
+  light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+};
 const HORIZON_CUTOFF_DEGREES = 96;
 const SINGAPORE_SPOTLIGHT_CENTER = { lat: 1.335, lng: 103.84 };
 
@@ -398,6 +401,57 @@ function applyMapbox3dTreatment(map) {
 
 }
 
+function applyGeoLibreTreatment(map, darkMode) {
+  try {
+    map.setProjection({ type: 'globe' });
+  } catch {
+    // Older MapLibre releases can already carry the projection in the style.
+  }
+
+  try {
+    map.setSky({
+      'sky-color': darkMode ? '#071019' : '#DCEEFF',
+      'horizon-color': darkMode ? '#4F7897' : '#FFFFFF',
+      'fog-color': darkMode ? '#183148' : '#DCEEFF',
+      'atmosphere-blend': ['interpolate', ['linear'], ['zoom'], 0, 0.72, 5, 0.72, 7, 0],
+    });
+    map.setLight({
+      anchor: 'map',
+      color: '#FFFFFF',
+      intensity: darkMode ? 0.9 : 0.72,
+      position: [1.5, 90, 80],
+    });
+  } catch {
+    // The basemap remains usable when atmosphere controls are unavailable.
+  }
+
+  if (!darkMode) return;
+
+  // CARTO Dark Matter uses #0e0e0e for almost every land layer. On a globe
+  // that makes the continents disappear into space, so lift the land and
+  // country boundaries while preserving the dark theme.
+  const landLayerIds = [
+    'landcover',
+    'park_national_park',
+    'park_nature_reserve',
+    'landuse',
+  ];
+
+  landLayerIds.forEach((layerId) => {
+    if (map.getLayer(layerId)) map.setPaintProperty(layerId, 'fill-color', '#253746');
+  });
+
+  if (map.getLayer('background')) map.setPaintProperty('background', 'background-color', '#253746');
+  if (map.getLayer('water')) map.setPaintProperty('water', 'fill-color', '#071B2A');
+  if (map.getLayer('boundary_country_outline')) {
+    map.setPaintProperty('boundary_country_outline', 'line-color', 'rgba(170, 203, 226, 0.78)');
+    map.setPaintProperty('boundary_country_outline', 'line-width', 1.15);
+  }
+  if (map.getLayer('boundary_country_inner')) {
+    map.setPaintProperty('boundary_country_inner', 'line-color', 'rgba(128, 167, 196, 0.68)');
+  }
+}
+
 function createSingaporeSpotlightElement(member, index, darkMode) {
   const wrapper = document.createElement('button');
   wrapper.type = 'button';
@@ -521,7 +575,7 @@ export default function MapboxGlobeScene({
     const map = new MapEngine.Map({
       container: containerRef.current,
       style: geoLibreMode
-        ? GEOLIBRE_STYLE_URL
+        ? GEOLIBRE_STYLE_URLS[darkMode ? 'dark' : 'light']
         : singaporeSpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
       ...(!geoLibreMode ? { projection: singaporeSpotlightActive ? 'mercator' : 'globe' } : {}),
       center: singaporeSpotlightActive ? [SINGAPORE_SPOTLIGHT_CENTER.lng, SINGAPORE_SPOTLIGHT_CENTER.lat] : [0, 18],
@@ -541,18 +595,7 @@ export default function MapboxGlobeScene({
     }
     map.on('style.load', () => {
       if (geoLibreMode) {
-        try {
-          map.setProjection({ type: 'globe' });
-        } catch {
-          // Older MapLibre releases can already carry the projection in the style.
-        }
-        try {
-          map.setSky({
-            'atmosphere-blend': ['interpolate', ['linear'], ['zoom'], 0, 1, 5, 1, 7, 0],
-          });
-        } catch {
-          // The globe still renders when atmosphere controls are unavailable.
-        }
+        applyGeoLibreTreatment(map, darkMode);
       } else {
         applyMapbox3dTreatment(map);
       }
@@ -605,7 +648,7 @@ export default function MapboxGlobeScene({
       map.remove();
       mapRef.current = null;
     };
-  }, [geoLibreMode, mapEnabled, singaporeSpotlightActive]);
+  }, [darkMode, geoLibreMode, mapEnabled, singaporeSpotlightActive]);
 
   useEffect(() => {
     const map = mapRef.current;
