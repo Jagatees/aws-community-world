@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import createGlobe from 'cobe';
+import { getCountryCode } from '../utils/countryFlags';
+import { getCountryFlagUrl, getMemberCountry } from '../utils/memberMarkers';
 import './GlobeScene.css';
 
 const CATEGORY_COLORS = {
@@ -15,7 +17,7 @@ const CATEGORY_COLORS = {
 };
 
 const CLUSTER_TOLERANCE = 0.5;
-const AUTO_ROTATE_SPEED = 0.003;
+const AUTO_ROTATE_RADIANS_PER_SECOND = 0.045;
 const DRAG_SENSITIVITY = 0.005;
 const MAX_TILT = Math.PI / 3;
 const IDLE_TIMEOUT_MS = 3000;
@@ -206,9 +208,18 @@ function drawMarkers(canvas, markers, markerRgb, pixelRatio) {
 function getClusterLabel(cluster, category) {
   const categoryLabel = CATEGORY_LABELS[category] ?? { icon: '●', singular: 'Member', plural: 'Members' };
   const count = cluster.members.length;
+  const countries = cluster.members
+    .map((member) => getMemberCountry(member))
+    .filter(Boolean);
+  const countryCodes = [...new Set(countries.map((country) => getCountryCode(country)).filter(Boolean))];
+  const country = countryCodes.length === 1
+    ? countries.find((value) => getCountryCode(value) === countryCodes[0]) || ''
+    : '';
 
   return {
     icon: categoryLabel.icon,
+    country,
+    flagUrl: country ? getCountryFlagUrl(country) : '',
     text: count > 1
       ? `${count} ${categoryLabel.plural} here`
       : cluster.members[0]?.name || categoryLabel.singular,
@@ -256,6 +267,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   const activePointersRef = useRef(new Map());
   const labelElementsRef = useRef(new Map());
   const visibleLabelKeysRef = useRef(new Set());
+  const lastRenderTimeRef = useRef(null);
 
   const markerColor = CATEGORY_COLORS[category] ?? '#FF9900';
   const markerRgb = useMemo(() => hexToRgb01(markerColor), [markerColor]);
@@ -358,12 +370,17 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       onRender: (state) => {
         const currentClusters = clustersRef.current;
         const theme = themeRef.current;
+        const renderTime = performance.now();
+        const elapsedSeconds = lastRenderTimeRef.current === null
+          ? 0
+          : Math.min((renderTime - lastRenderTimeRef.current) / 1000, 0.05);
+        lastRenderTimeRef.current = renderTime;
 
         if (animationRef.current) {
           if (animationRef.current.startTime === null) {
-            animationRef.current.startTime = performance.now();
+            animationRef.current.startTime = renderTime;
           }
-          const elapsed = performance.now() - animationRef.current.startTime;
+          const elapsed = renderTime - animationRef.current.startTime;
           const progress = clamp(elapsed / animationRef.current.duration, 0, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
           phiRef.current = animationRef.current.startPhi + (animationRef.current.targetPhi - animationRef.current.startPhi) * eased;
@@ -375,7 +392,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           !markerFocusLockedRef.current &&
           !pointerStateRef.current.active
         ) {
-          phiRef.current += AUTO_ROTATE_SPEED;
+          phiRef.current += AUTO_ROTATE_RADIANS_PER_SECOND * elapsedSeconds;
         }
 
         state.width = sizeRef.current.width;
@@ -746,15 +763,32 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
             type="button"
             className={`minimal-marker-label ${darkMode ? 'minimal-marker-label--dark' : 'minimal-marker-label--light'}`}
             style={{ '--minimal-marker-color': markerColor }}
-            aria-label={cluster.label.text}
-            title={cluster.label.text}
+            aria-label={`${cluster.label.text}${cluster.label.country ? ` · ${cluster.label.country}` : ''}`}
+            title={`${cluster.label.text}${cluster.label.country ? ` · ${cluster.label.country}` : ''}`}
             onPointerDown={(event) => event.stopPropagation()}
             onClick={(event) => {
               event.stopPropagation();
               handleLabelClick(cluster);
             }}
           >
-            <span className="minimal-marker-label__icon" aria-hidden="true">{cluster.label.icon}</span>
+            <span
+              className={`minimal-marker-label__icon${cluster.label.flagUrl ? ' minimal-marker-label__icon--flag' : ''}`}
+              aria-hidden="true"
+            >
+              {cluster.label.flagUrl ? (
+                <img
+                  src={cluster.label.flagUrl}
+                  alt=""
+                  draggable="false"
+                  onError={(event) => {
+                    const icon = event.currentTarget.parentElement;
+                    if (!icon) return;
+                    icon.classList.remove('minimal-marker-label__icon--flag');
+                    icon.textContent = cluster.label.icon;
+                  }}
+                />
+              ) : cluster.label.icon}
+            </span>
             <span className="minimal-marker-label__text">{cluster.label.text}</span>
           </button>
         ))}

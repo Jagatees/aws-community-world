@@ -84,6 +84,21 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
 }
 
+.minimal-marker-label__icon--flag {
+  width: 21px;
+  height: 15px;
+  flex-basis: 21px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.minimal-marker-label__icon--flag img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .minimal-marker-label__text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -102,6 +117,12 @@
     height: 15px;
     flex-basis: 15px;
     font-size: 9px;
+  }
+
+  .minimal-marker-label__icon--flag {
+    width: 19px;
+    height: 14px;
+    flex-basis: 19px;
   }
 }
 
