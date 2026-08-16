@@ -32,7 +32,6 @@ const GEOLIBRE_SATELLITE_SOURCE_ID = 'aws-geolibre-satellite-source';
 const GEOLIBRE_SATELLITE_LAYER_ID = 'aws-geolibre-satellite-layer';
 const GEOLIBRE_SATELLITE_TILES = 'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg';
 const HORIZON_CUTOFF_DEGREES = 96;
-const SINGAPORE_SPOTLIGHT_CENTER = { lat: 1.335, lng: 103.84 };
 
 function getHeatColor(size) {
   if (size >= 12) return '#BF0816';
@@ -492,7 +491,7 @@ function applyGeoLibreTreatment(map, darkMode) {
   }
 }
 
-function createSingaporeSpotlightElement(member, index, darkMode) {
+function createCountrySpotlightElement(member, index, darkMode) {
   const wrapper = document.createElement('button');
   wrapper.type = 'button';
   wrapper.setAttribute('aria-label', member.name);
@@ -585,18 +584,18 @@ export default function MapboxGlobeScene({
   flyToTarget,
   zoomCommand,
   heatmapEnabled = false,
-  singaporeSpotlight = null,
+  countrySpotlight = null,
   variant = 'mapbox',
 }) {
   const containerRef = useRef(null);
   const overlayRef = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef([]);
-  const singaporeSpotlightRef = useRef([]);
+  const countrySpotlightRef = useRef([]);
   const resizeTimerRef = useRef(null);
   const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
-  const singaporeSpotlightActive = category === 'cloud-clubs' && Boolean(singaporeSpotlight?.nonce);
   const geoLibreMode = variant === 'geolibre';
+  const countrySpotlightActive = !geoLibreMode && category === 'cloud-clubs' && Boolean(countrySpotlight?.nonce);
   const mapEnabled = geoLibreMode || Boolean(TOKEN);
 
   const clusters = useMemo(
@@ -616,17 +615,17 @@ export default function MapboxGlobeScene({
       container: containerRef.current,
       style: geoLibreMode
         ? GEOLIBRE_STYLE_URLS[darkMode ? 'dark' : 'light']
-        : singaporeSpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
-      ...(!geoLibreMode ? { projection: singaporeSpotlightActive ? 'mercator' : 'globe' } : {}),
-      center: singaporeSpotlightActive ? [SINGAPORE_SPOTLIGHT_CENTER.lng, SINGAPORE_SPOTLIGHT_CENTER.lat] : [0, 18],
-      zoom: singaporeSpotlightActive ? 11.85 : 0.98,
-      pitch: singaporeSpotlightActive ? 68 : 0,
-      bearing: singaporeSpotlightActive ? -24 : 0,
+        : countrySpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
+      ...(!geoLibreMode ? { projection: countrySpotlightActive ? 'mercator' : 'globe' } : {}),
+      center: countrySpotlightActive ? [countrySpotlight.center.lng, countrySpotlight.center.lat] : [0, 18],
+      zoom: countrySpotlightActive ? countrySpotlight.zoom : 0.98,
+      pitch: countrySpotlightActive ? countrySpotlight.pitch : 0,
+      bearing: countrySpotlightActive ? countrySpotlight.bearing : 0,
       attributionControl: false,
     });
 
     mapRef.current = map;
-    if (singaporeSpotlightActive) {
+    if (countrySpotlightActive) {
       map.dragRotate.enable();
       map.touchZoomRotate.enableRotation();
     } else {
@@ -682,13 +681,24 @@ export default function MapboxGlobeScene({
       cleanupResize();
       resizeObserver.disconnect();
       markersRef.current.forEach(({ element }) => element.remove());
-      singaporeSpotlightRef.current.forEach(({ element }) => element.remove());
+      countrySpotlightRef.current.forEach(({ element }) => element.remove());
       markersRef.current = [];
-      singaporeSpotlightRef.current = [];
+      countrySpotlightRef.current = [];
       map.remove();
       mapRef.current = null;
     };
-  }, [darkMode, geoLibreMode, mapEnabled, singaporeSpotlightActive]);
+  }, [
+    countrySpotlight?.bearing,
+    countrySpotlight?.center?.lat,
+    countrySpotlight?.center?.lng,
+    countrySpotlight?.country,
+    countrySpotlight?.pitch,
+    countrySpotlight?.zoom,
+    countrySpotlightActive,
+    darkMode,
+    geoLibreMode,
+    mapEnabled,
+  ]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -701,7 +711,7 @@ export default function MapboxGlobeScene({
       window.cancelAnimationFrame(frame);
       map.off('zoomend', updateExpansion);
     };
-  }, [category, singaporeSpotlightActive]);
+  }, [category, countrySpotlightActive]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -800,16 +810,16 @@ export default function MapboxGlobeScene({
     const map = mapRef.current;
     if (!overlay || !map) return;
 
-    singaporeSpotlightRef.current.forEach(({ element }) => element.remove());
-    singaporeSpotlightRef.current = [];
+    countrySpotlightRef.current.forEach(({ element }) => element.remove());
+    countrySpotlightRef.current = [];
 
-    const members = singaporeSpotlight?.members ?? [];
-    if (!singaporeSpotlight?.nonce || category !== 'cloud-clubs' || members.length === 0) return;
+    const members = countrySpotlight?.members ?? [];
+    if (!countrySpotlight?.nonce || category !== 'cloud-clubs' || members.length === 0) return;
 
     const createSpotlightElements = () => {
-      singaporeSpotlightRef.current.forEach(({ element }) => element.remove());
-      singaporeSpotlightRef.current = members.map((member, index) => {
-        const element = createSingaporeSpotlightElement(member, index, darkMode);
+      countrySpotlightRef.current.forEach(({ element }) => element.remove());
+      countrySpotlightRef.current = members.map((member, index) => {
+        const element = createCountrySpotlightElement(member, index, darkMode);
         element.onclick = (event) => {
           event.stopPropagation();
           onMarkerClick(member);
@@ -819,26 +829,37 @@ export default function MapboxGlobeScene({
       });
     };
 
-    const flyIntoSingapore = () => {
+    const flyIntoCountry = () => {
       applyMapbox3dTreatment(map);
       createSpotlightElements();
       map.flyTo({
-        center: [SINGAPORE_SPOTLIGHT_CENTER.lng, SINGAPORE_SPOTLIGHT_CENTER.lat],
-        zoom: 11.85,
-        pitch: 68,
-        bearing: -24,
+        center: [countrySpotlight.center.lng, countrySpotlight.center.lat],
+        zoom: countrySpotlight.zoom,
+        pitch: countrySpotlight.pitch,
+        bearing: countrySpotlight.bearing,
         duration: 1700,
         essential: true,
       });
     };
 
-    flyIntoSingapore();
+    flyIntoCountry();
 
     return () => {
-      singaporeSpotlightRef.current.forEach(({ element }) => element.remove());
-      singaporeSpotlightRef.current = [];
+      countrySpotlightRef.current.forEach(({ element }) => element.remove());
+      countrySpotlightRef.current = [];
     };
-  }, [category, darkMode, onMarkerClick, singaporeSpotlight?.members, singaporeSpotlight?.nonce]);
+  }, [
+    category,
+    countrySpotlight?.bearing,
+    countrySpotlight?.center?.lat,
+    countrySpotlight?.center?.lng,
+    countrySpotlight?.members,
+    countrySpotlight?.nonce,
+    countrySpotlight?.pitch,
+    countrySpotlight?.zoom,
+    darkMode,
+    onMarkerClick,
+  ]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -850,25 +871,26 @@ export default function MapboxGlobeScene({
       const cutoff = Math.cos((HORIZON_CUTOFF_DEGREES * Math.PI) / 180);
       const width = map.getCanvas().clientWidth;
       const height = map.getCanvas().clientHeight;
-      const singaporeActive = category === 'cloud-clubs' && Boolean(singaporeSpotlight?.nonce);
+      const spotlightActive = category === 'cloud-clubs' && Boolean(countrySpotlight?.nonce);
 
       markersRef.current.forEach(({ cluster, element }) => {
         const project = map.project([cluster.lng, cluster.lat]);
         const vec = toVector(cluster.lat, cluster.lng);
         const visible = (vec.x * centerVec.x) + (vec.y * centerVec.y) + (vec.z * centerVec.z) >= cutoff;
         const onScreen = project.x >= -80 && project.x <= width + 80 && project.y >= -80 && project.y <= height + 80;
-        const hideForSingaporeSpotlight = singaporeActive && cluster.members.some((member) => member.location?.includes('Singapore'));
+        const hideForCountrySpotlight = spotlightActive
+          && cluster.members.some((member) => getMemberCountry(member) === countrySpotlight.country);
         const portraitMarker = element.querySelector('[data-portrait-cluster-marker]');
         portraitMarker?.style.setProperty('--portrait-separation', getMapboxPortraitSeparation(map.getZoom()).toFixed(3));
 
         element.style.transform = `translate(-50%, -50%) translate(${project.x}px, ${project.y}px)`;
-        element.style.opacity = visible && onScreen && !hideForSingaporeSpotlight ? '1' : '0';
-        element.style.visibility = visible && onScreen && !hideForSingaporeSpotlight ? 'visible' : 'hidden';
-        element.style.pointerEvents = visible && onScreen && !hideForSingaporeSpotlight ? 'auto' : 'none';
+        element.style.opacity = visible && onScreen && !hideForCountrySpotlight ? '1' : '0';
+        element.style.visibility = visible && onScreen && !hideForCountrySpotlight ? 'visible' : 'hidden';
+        element.style.pointerEvents = visible && onScreen && !hideForCountrySpotlight ? 'auto' : 'none';
         element.style.zIndex = String(Math.round(project.y * 1000));
       });
 
-      singaporeSpotlightRef.current.forEach(({ member, element, index }) => {
+      countrySpotlightRef.current.forEach(({ member, element, index }) => {
         const project = map.project([member.lng, member.lat]);
         const heightOffset = 120 + (index % 3) * 24;
         const visible = project.x >= -120 && project.x <= width + 120 && project.y >= -180 && project.y <= height + 120;
@@ -893,12 +915,12 @@ export default function MapboxGlobeScene({
       map.off('zoom', updateOverlay);
       map.off('resize', updateOverlay);
     };
-  }, [category, singaporeSpotlight?.nonce]);
+  }, [category, countrySpotlight?.country, countrySpotlight?.nonce]);
 
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !flyToTarget) return;
-    if (category === 'cloud-clubs' && singaporeSpotlight?.nonce) return;
+    if (category === 'cloud-clubs' && countrySpotlight?.nonce) return;
 
     map.flyTo({
       center: [flyToTarget.lng, flyToTarget.lat],
@@ -906,7 +928,7 @@ export default function MapboxGlobeScene({
       duration: 1000,
       essential: true,
     });
-  }, [category, flyToTarget, singaporeSpotlight?.nonce]);
+  }, [category, countrySpotlight?.nonce, flyToTarget]);
 
   useEffect(() => {
     const map = mapRef.current;

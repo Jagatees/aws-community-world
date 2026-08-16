@@ -9,11 +9,13 @@ import KiroAvatarOverlay from './components/KiroAvatarOverlay';
 import ListScene from './components/ListScene';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
 import NewArrivalsPanel from './components/NewArrivalsPanel';
+import Country3DControl from './components/Country3DControl';
 import IconArchiveScene from './components/ExperimentalHeroDex';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 import communityBuilderMeta from './data/community-builders-meta.json';
 import { getRegionForCountry, REGIONS } from './utils/countryRegions';
+import { COUNTRY_SPOTLIGHTS, getCountrySpotlightFromParams } from './config/countrySpotlights';
 
 const SplashScreen = lazy(() => import('./components/SplashScreen'));
 const InsightsDashboard = lazy(() => import('./components/TrendsDashboard'));
@@ -23,7 +25,6 @@ const CATEGORY_COLORS = {
   'community-builders': '#1A9C3E',
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
-  'aws-community-day-singapore': '#FF9900',
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'community-days': '#FF9900',
@@ -35,21 +36,11 @@ const CATEGORY_LABELS = {
   'community-builders': 'Community Builders',
   'user-groups': 'User Groups',
   'cloud-clubs': 'Student Builder Groups',
-  'aws-community-day-singapore': 'AWS Community Day Singapore',
   'kiro-ambassadors': 'Kiro',
   'kiro-events': 'Kiro Events',
   'community-days': 'Community Days',
   'aws-ambassadors': 'AWS Ambassador',
 };
-
-const SINGAPORE_CENTER = { lat: 1.3521, lng: 103.8198 };
-const SINGAPORE_SCHOOL_COORDS = [
-  { match: 'Nanyang Polytechnic', lat: 1.3799, lng: 103.8493 },
-  { match: 'Singapore Institute of Management', lat: 1.3297, lng: 103.7754 },
-  { match: 'Singapore Institute of Technology', lat: 1.4126, lng: 103.9101 },
-  { match: 'Singapore Management University', lat: 1.2966, lng: 103.8501 },
-  { match: 'National University of Singapore', lat: 1.2966, lng: 103.7764 },
-];
 
 const DEFAULT_ROUTE_STATE = {
   activeCategory: 'heroes',
@@ -58,7 +49,7 @@ const DEFAULT_ROUTE_STATE = {
   selectedCountries: [],
   globeDesign: 'orbit',
   darkMode: true,
-  singaporeSpotlight: false,
+  countrySpotlight: null,
   newOnly: false,
 };
 
@@ -93,7 +84,7 @@ function getRouteStateFromUrl() {
   const tab = params.get('tab');
   const view = params.get('view');
   const theme = params.get('theme');
-  const spotlight = params.get('sg') === '1';
+  const spotlight = getCountrySpotlightFromParams(params);
   const newOnly = params.get('new') === '1';
   const experimental = view === 'experimental';
   const insights = view === 'insights' || view === 'trends';
@@ -105,13 +96,15 @@ function getRouteStateFromUrl() {
       : VALID_CATEGORIES.has(tab)
         ? tab
         : DEFAULT_ROUTE_STATE.activeCategory;
-  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'sg', 'new'].some((key) => params.has(key));
+  const spotlightKeys = Object.values(COUNTRY_SPOTLIGHTS).map(({ queryKey }) => queryKey);
+  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'new', ...spotlightKeys]
+    .some((key) => params.has(key));
 
   return {
     activeCategory: resolvedCategory,
     selectedTag: experimental || insights ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
-    selectedRegions: experimental || insights ? [] : spotlight ? ['asia'] : getRouteSelections(params, 'region'),
-    selectedCountries: experimental || insights ? [] : spotlight ? ['Singapore'] : getRouteSelections(params, 'country'),
+    selectedRegions: experimental || insights ? [] : spotlight ? [getRegionForCountry(spotlight.country)] : getRouteSelections(params, 'region'),
+    selectedCountries: experimental || insights ? [] : spotlight ? [spotlight.country] : getRouteSelections(params, 'country'),
     globeDesign: experimental
       ? 'experimental'
       : insights
@@ -122,13 +115,13 @@ function getRouteStateFromUrl() {
         ? view
         : defaultGlobeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
-    singaporeSpotlight: experimental || insights ? false : spotlight,
+    countrySpotlight: experimental || insights ? null : spotlight?.country ?? null,
     newOnly: !experimental && !insights && NEW_ARRIVAL_CATEGORIES.has(resolvedCategory) && newOnly,
     hasShareState,
   };
 }
 
-function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, singaporeSpotlight, newOnly }) {
+function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, countrySpotlight, newOnly }) {
   if (typeof window === 'undefined') return;
 
   const params = new URLSearchParams();
@@ -138,7 +131,8 @@ function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, se
   selectedCountries.forEach((country) => params.append('country', country));
   if (globeDesign !== DEFAULT_ROUTE_STATE.globeDesign) params.set('view', globeDesign);
   if (!darkMode) params.set('theme', 'light');
-  if (singaporeSpotlight) params.set('sg', '1');
+  const spotlightQueryKey = COUNTRY_SPOTLIGHTS[countrySpotlight]?.queryKey;
+  if (spotlightQueryKey) params.set(spotlightQueryKey, '1');
   if (newOnly) params.set('new', '1');
 
   const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}${window.location.hash}`;
@@ -164,7 +158,6 @@ const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
 const SvgFlatMapScene = lazy(() => import('./components/FlatMapScene'));
-const AwsCommunityDaySingaporeScene = lazy(() => import('./components/AwsCommunityDaySingaporeScene'));
 const CommunityDaysScene = lazy(() => import('./components/CommunityDaysScene'));
 const ExperimentalGlobeScene = lazy(() => import('./components/ExperimentalGlobeScene'));
 const GeoLibreScene = lazy(() => import('./components/GeoLibreScene'));
@@ -184,16 +177,21 @@ export default function App() {
   const [zoomCommand, setZoomCommand] = useState({ direction: null, nonce: 0 });
   const [newsPanelOpen, setNewsPanelOpen] = useState(routeState.activeCategory === 'news');
   const [flyToOverride, setFlyToOverride] = useState(null);
-  const [nearMeTarget, setNearMeTarget] = useState(routeState.singaporeSpotlight ? { ...SINGAPORE_CENTER, nonce: 1 } : null);
+  const [nearMeTarget, setNearMeTarget] = useState(
+    routeState.countrySpotlight
+      ? { ...COUNTRY_SPOTLIGHTS[routeState.countrySpotlight].center, nonce: 1 }
+      : null
+  );
   const [nearMeLoading, setNearMeLoading] = useState(false);
   const [nearMeError, setNearMeError] = useState(null);
   const [nearMeHover, setNearMeHover] = useState(false);
   const [newOnly, setNewOnly] = useState(routeState.newOnly);
-  const [singaporeSpotlight, setSingaporeSpotlight] = useState(routeState.singaporeSpotlight ? { nonce: 1 } : null);
+  const [countrySpotlight, setCountrySpotlight] = useState(
+    routeState.countrySpotlight ? { country: routeState.countrySpotlight, nonce: 1 } : null
+  );
   const [webGlAvailable] = useState(canCreateWebGlContext);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
-  const isCommunityDayView = activeCategory === 'aws-community-day-singapore';
   const isCommunityDaysView = activeCategory === 'community-days';
   const isNewsView = activeCategory === 'news';
   const activeSection = globeDesign === 'experimental'
@@ -297,6 +295,10 @@ export default function App() {
       : countries,
     [countries, selectedRegions]
   );
+  const country3dCountries = useMemo(
+    () => countries.filter((country) => Boolean(getRegionForCountry(country))),
+    [countries]
+  );
 
   const directoryMembers = useMemo(() => {
     return members.filter((member) => {
@@ -314,21 +316,20 @@ export default function App() {
     [directoryMembers]
   );
 
-  const singaporeSpotlightMembers = useMemo(() => {
-    if (activeCategory !== 'cloud-clubs') return [];
+  const countrySpotlightMembers = useMemo(() => {
+    if (activeCategory !== 'cloud-clubs' || !countrySpotlight?.country) return [];
+
+    const spotlight = COUNTRY_SPOTLIGHTS[countrySpotlight.country];
+    if (!spotlight) return [];
 
     return members
-      .filter((member) => member.location?.includes('Singapore'))
-      .map((member, index) => {
-        const school = SINGAPORE_SCHOOL_COORDS.find((entry) => member.name.includes(entry.match));
-        return {
-          ...member,
-          lat: school?.lat ?? member.lat,
-          lng: school?.lng ?? member.lng,
-          spotlightIndex: index,
-        };
-      });
-  }, [activeCategory, members]);
+      .filter((member) => getMemberCountry(member) === spotlight.country)
+      .map((member, index) => ({
+        ...member,
+        ...(spotlight.memberCoordinates?.[member.id] ?? {}),
+        spotlightIndex: index,
+      }));
+  }, [activeCategory, countrySpotlight, members]);
 
   const flyToTarget = useMemo(() => {
     if (!selectedCountries.length) return null;
@@ -513,7 +514,7 @@ export default function App() {
     setSelectedTag(null);
     setSelectedRegions([]);
     setSelectedCountries([]);
-    setSingaporeSpotlight(null);
+    setCountrySpotlight(null);
     setNewOnly(false);
     setActiveCategory(category);
     if (EVENT_CATEGORIES.has(category) || category === 'kiro-ambassadors') {
@@ -588,7 +589,7 @@ export default function App() {
       setSelectedTag(null);
       setSelectedRegions([]);
       setSelectedCountries([]);
-      setSingaporeSpotlight(null);
+      setCountrySpotlight(null);
     }
 
     setNewOnly(next);
@@ -601,26 +602,29 @@ export default function App() {
     setNearMeTarget({ lat: member.lat, lng: member.lng, nonce: Date.now() });
   }, []);
 
-  const handleSingaporeSpotlight = useCallback(() => {
+  const handleCountrySpotlight = useCallback((country) => {
     setNewOnly(false);
 
-    if (singaporeSpotlight) {
+    if (countrySpotlight) {
       setSelectedTag(null);
       setSelectedRegions([]);
       setSelectedCountries([]);
       setNearMeTarget(null);
-      setSingaporeSpotlight(null);
+      setCountrySpotlight(null);
       setGlobeDesign('orbit');
       return;
     }
 
+    const spotlight = COUNTRY_SPOTLIGHTS[country];
+    if (!spotlight) return;
+
     setSelectedTag(null);
-    setSelectedRegions(['asia']);
-    setSelectedCountries(['Singapore']);
-    setNearMeTarget({ ...SINGAPORE_CENTER, nonce: Date.now() });
+    setSelectedRegions([getRegionForCountry(country)]);
+    setSelectedCountries([country]);
+    setNearMeTarget({ ...spotlight.center, nonce: Date.now() });
     setGlobeDesign('classic');
-    setSingaporeSpotlight({ nonce: Date.now() });
-  }, [singaporeSpotlight]);
+    setCountrySpotlight({ country, nonce: Date.now() });
+  }, [countrySpotlight]);
 
   // Highlight only — no globe fly (used when clicking title/image in panel)
   const handleSelectNewsItem = useCallback((item) => {
@@ -643,10 +647,10 @@ export default function App() {
       selectedCountries,
       globeDesign,
       darkMode,
-      singaporeSpotlight: Boolean(singaporeSpotlight),
+      countrySpotlight: countrySpotlight?.country ?? null,
       newOnly,
     });
-  }, [activeCategory, darkMode, globeDesign, newOnly, selectedCountries, selectedRegions, selectedTag, singaporeSpotlight]);
+  }, [activeCategory, countrySpotlight?.country, darkMode, globeDesign, newOnly, selectedCountries, selectedRegions, selectedTag]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -661,8 +665,13 @@ export default function App() {
       setDarkMode(nextRouteState.darkMode);
       setNewsPanelOpen(nextRouteState.activeCategory === 'news');
       setNewOnly(nextRouteState.newOnly);
-      setNearMeTarget(nextRouteState.singaporeSpotlight ? { ...SINGAPORE_CENTER, nonce: Date.now() } : null);
-      setSingaporeSpotlight(nextRouteState.singaporeSpotlight ? { nonce: Date.now() } : null);
+      const spotlight = COUNTRY_SPOTLIGHTS[nextRouteState.countrySpotlight];
+      setNearMeTarget(spotlight ? { ...spotlight.center, nonce: Date.now() } : null);
+      setCountrySpotlight(
+        nextRouteState.countrySpotlight
+          ? { country: nextRouteState.countrySpotlight, nonce: Date.now() }
+          : null
+      );
       if (nextRouteState.hasShareState) setShowSplash(false);
     };
 
@@ -697,10 +706,10 @@ export default function App() {
             activeCategory={activeCategory}
             onChange={handleCategoryChange}
             darkMode={darkMode}
-            countries={isCommunityDayView || isKiroView || isAwsAmbassadorView ? [] : regionCountries}
-            countryCounts={isCommunityDayView || isKiroView || isAwsAmbassadorView ? {} : countryCounts}
-            regions={isCommunityDayView || isKiroView || isAwsAmbassadorView ? [] : regions}
-            regionCounts={isCommunityDayView || isKiroView || isAwsAmbassadorView ? {} : regionCounts}
+            countries={isKiroView || isAwsAmbassadorView ? [] : regionCountries}
+            countryCounts={isKiroView || isAwsAmbassadorView ? {} : countryCounts}
+            regions={isKiroView || isAwsAmbassadorView ? [] : regions}
+            regionCounts={isKiroView || isAwsAmbassadorView ? {} : regionCounts}
             selectedRegions={selectedRegions}
             onRegionChange={handleRegionChange}
             selectedCountries={selectedCountries}
@@ -709,7 +718,7 @@ export default function App() {
           />
         )}
 
-        {!isExperimentalView && !isInsightsView && !isCommunityDayView && !isCommunityDaysView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
+        {!isExperimentalView && !isInsightsView && !isCommunityDaysView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -755,10 +764,6 @@ export default function App() {
                 selectedRegions={selectedRegions}
                 selectedCountries={selectedCountries}
               />
-            </Suspense>
-          ) : isCommunityDayView ? (
-            <Suspense fallback={renderGlobeLoading()}>
-              <AwsCommunityDaySingaporeScene darkMode={darkMode} />
             </Suspense>
           ) : isKiroView || isAwsAmbassadorView ? (
             <div className="relative h-full min-h-0 overflow-hidden">
@@ -1076,7 +1081,7 @@ export default function App() {
                 <Suspense
                   fallback={renderGlobeLoading()}
                 >
-                  <div key={`${globeDesign}-${singaporeSpotlight?.nonce ?? 'global'}`} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
+                  <div key={`${globeDesign}-${countrySpotlight?.country ?? 'global'}-${countrySpotlight?.nonce ?? 0}`} style={{ width: '100%', height: '100%', animation: 'globe-scene-in 0.4s ease both' }}>
                     {renderInteractiveScene(
                       ActiveGlobeScene,
                       {
@@ -1087,12 +1092,13 @@ export default function App() {
                         darkMode,
                         flyToTarget: resolvedFlyToTarget,
                         zoomCommand,
-                        singaporeSpotlight: activeCategory === 'cloud-clubs' ? {
-                          ...singaporeSpotlight,
-                          members: singaporeSpotlightMembers,
+                        countrySpotlight: activeCategory === 'cloud-clubs' && countrySpotlight ? {
+                          ...COUNTRY_SPOTLIGHTS[countrySpotlight.country],
+                          ...countrySpotlight,
+                          members: countrySpotlightMembers,
                         } : null,
                       },
-                      `${activeCategory}-${globeDesign}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-${darkMode}-${singaporeSpotlight?.nonce ?? 'global'}`
+                      `${activeCategory}-${globeDesign}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-${darkMode}-${countrySpotlight?.country ?? 'global'}-${countrySpotlight?.nonce ?? 0}`
                     )}
                     {activeCategory === 'kiro-ambassadors' && !loading && <KiroAvatarOverlay />}
                   </div>
@@ -1181,7 +1187,7 @@ export default function App() {
 
               <div className="mobile-globe-controls absolute bottom-5 left-1/2 z-20 -translate-x-1/2">
                 <div className="flex items-stretch gap-3">
-                  {!singaporeSpotlight && !isExperimentalView && (
+                  {!countrySpotlight && !isExperimentalView && (
                     <>
                       <div
                         className="grid items-center rounded-full p-1"
@@ -1325,23 +1331,14 @@ export default function App() {
                   )}
 
                   {activeCategory === 'cloud-clubs' && (
-                    <button
-                      type="button"
-                      onClick={handleSingaporeSpotlight}
-                      className="rounded-full px-4 py-1 text-xs font-semibold"
-                      style={{
-                        backgroundColor: singaporeSpotlight ? '#BF0816' : 'transparent',
-                        color: singaporeSpotlight ? '#FFFFFF' : styleControlText,
-                        minHeight: '44px',
-                        border: `1px solid ${singaporeSpotlight ? '#BF0816' : styleControlBorder}`,
-                        transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
-                        cursor: 'pointer',
-                        touchAction: 'manipulation',
-                      }}
-                      aria-label="Singapore 3D spotlight"
-                    >
-                      {singaporeSpotlight ? 'Global View' : 'Singapore 3D'}
-                    </button>
+                    <Country3DControl
+                      activeCountry={countrySpotlight?.country ?? null}
+                      countries={country3dCountries}
+                      countryCounts={countryCounts}
+                      darkMode={darkMode}
+                      onExit={() => handleCountrySpotlight(countrySpotlight?.country)}
+                      onOpenCountry={handleCountrySpotlight}
+                    />
                   )}
                 </div>
               </div>
