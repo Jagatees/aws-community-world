@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import createGlobe from 'cobe';
+import './GlobeScene.css';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -27,6 +28,23 @@ const MIN_SCALE = 0.8;
 const MAX_SCALE = 1.85;
 const WHEEL_ZOOM_SENSITIVITY = 0.0009;
 const PINCH_MIN_DISTANCE = 24;
+const LABEL_FOCUS_START = 0.34;
+const LABEL_FOCUS_FULL = 0.62;
+const LABEL_COLLISION_PADDING = 5;
+const MAX_DESKTOP_LABELS = 18;
+const MAX_MOBILE_LABELS = 8;
+
+const CATEGORY_LABELS = {
+  'heroes': { icon: '✦', singular: 'Hero', plural: 'Heroes' },
+  'community-builders': { icon: '◆', singular: 'Community Builder', plural: 'Community Builders' },
+  'user-groups': { icon: '●', singular: 'User Group', plural: 'User Groups' },
+  'cloud-clubs': { icon: '☁', singular: 'Cloud Club', plural: 'Cloud Clubs' },
+  'kiro-ambassadors': { icon: '◇', singular: 'Kiro Ambassador', plural: 'Kiro Ambassadors' },
+  'kiro-events': { icon: '◆', singular: 'Kiro Event', plural: 'Kiro Events' },
+  'community-days': { icon: '▣', singular: 'Community Day', plural: 'Community Days' },
+  'aws-ambassadors': { icon: '▲', singular: 'AWS Ambassador', plural: 'AWS Ambassadors' },
+  'news': { icon: '↗', singular: 'Story', plural: 'Stories' },
+};
 
 function clusterMembers(members) {
   const clusters = [];
@@ -185,6 +203,27 @@ function drawMarkers(canvas, markers, markerRgb, pixelRatio) {
   }
 }
 
+function getClusterLabel(cluster, category) {
+  const categoryLabel = CATEGORY_LABELS[category] ?? { icon: '●', singular: 'Member', plural: 'Members' };
+  const count = cluster.members.length;
+
+  return {
+    icon: categoryLabel.icon,
+    text: count > 1
+      ? `${count} ${categoryLabel.plural} here`
+      : cluster.members[0]?.name || categoryLabel.singular,
+  };
+}
+
+function rectanglesOverlap(first, second) {
+  return !(
+    first.right + LABEL_COLLISION_PADDING < second.left ||
+    first.left > second.right + LABEL_COLLISION_PADDING ||
+    first.bottom + LABEL_COLLISION_PADDING < second.top ||
+    first.top > second.bottom + LABEL_COLLISION_PADDING
+  );
+}
+
 export default function GlobeScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand }) {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
@@ -215,14 +254,17 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     startScale: BASE_SCALE,
   });
   const activePointersRef = useRef(new Map());
+  const labelElementsRef = useRef(new Map());
+  const visibleLabelKeysRef = useRef(new Set());
 
   const markerColor = CATEGORY_COLORS[category] ?? '#FF9900';
   const markerRgb = useMemo(() => hexToRgb01(markerColor), [markerColor]);
 
   const clusters = useMemo(
     () =>
-      clusterMembers(members).map((cluster) => ({
+      clusterMembers(members).map((cluster, index) => ({
         ...cluster,
+        key: `${cluster.members[0]?.id ?? cluster.members[0]?.name ?? 'marker'}-${cluster.lat}-${cluster.lng}-${index}`,
         location: [cluster.lat, cluster.lng],
         size:
           cluster.members.length > 1
@@ -232,8 +274,9 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
             )
             : SINGLE_MARKER_SIZE,
         color: markerRgb,
+        label: getClusterLabel(cluster, category),
       })),
-    [members, markerRgb]
+    [category, members, markerRgb]
   );
 
   useEffect(() => {
@@ -317,6 +360,9 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         const theme = themeRef.current;
 
         if (animationRef.current) {
+          if (animationRef.current.startTime === null) {
+            animationRef.current.startTime = performance.now();
+          }
           const elapsed = performance.now() - animationRef.current.startTime;
           const progress = clamp(elapsed / animationRef.current.duration, 0, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
@@ -366,6 +412,65 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           theme.markerRgb,
           Math.min(window.devicePixelRatio || 1, 2)
         );
+
+        const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+        const cssWidth = sizeRef.current.width / pixelRatio;
+        const maxVisibleLabels = cssWidth < 640 ? MAX_MOBILE_LABELS : MAX_DESKTOP_LABELS;
+        const occupiedRectangles = [];
+        const nextVisibleLabelKeys = new Set();
+        const labelCandidates = projectedMarkersRef.current
+          .filter((marker) => marker.z >= LABEL_FOCUS_START)
+          .sort((first, second) => {
+            const clusterPriority = second.members.length - first.members.length;
+            return clusterPriority || second.z - first.z;
+          });
+
+        for (const marker of labelCandidates) {
+          if (nextVisibleLabelKeys.size >= maxVisibleLabels) break;
+
+          const element = labelElementsRef.current.get(marker.key);
+          if (!element) continue;
+
+          const x = marker.x / pixelRatio;
+          const y = marker.y / pixelRatio;
+          const dotRadius = clamp(7 * (marker.size / SINGLE_MARKER_SIZE), 7, 13);
+          const labelWidth = Math.min(226, Math.max(92, 45 + marker.label.text.length * 6.4));
+          const labelHeight = 28;
+          const labelBottom = y - dotRadius - 9;
+          const rectangle = {
+            left: x - labelWidth / 2,
+            right: x + labelWidth / 2,
+            top: labelBottom - labelHeight,
+            bottom: labelBottom,
+          };
+
+          if (occupiedRectangles.some((occupied) => rectanglesOverlap(rectangle, occupied))) continue;
+
+          occupiedRectangles.push(rectangle);
+          nextVisibleLabelKeys.add(marker.key);
+
+          const focus = clamp(
+            (marker.z - LABEL_FOCUS_START) / (LABEL_FOCUS_FULL - LABEL_FOCUS_START),
+            0,
+            1
+          );
+          element.style.setProperty('--minimal-label-x', `${x}px`);
+          element.style.setProperty('--minimal-label-y', `${labelBottom}px`);
+          element.style.setProperty('--minimal-label-scale', String(0.92 + focus * 0.08));
+          element.style.opacity = String(focus);
+          element.style.visibility = focus > 0.04 ? 'visible' : 'hidden';
+          element.style.pointerEvents = focus > 0.55 ? 'auto' : 'none';
+        }
+
+        visibleLabelKeysRef.current.forEach((key) => {
+          if (nextVisibleLabelKeys.has(key)) return;
+          const element = labelElementsRef.current.get(key);
+          if (!element) return;
+          element.style.opacity = '0';
+          element.style.visibility = 'hidden';
+          element.style.pointerEvents = 'none';
+        });
+        visibleLabelKeysRef.current = nextVisibleLabelKeys;
       },
     });
 
@@ -392,7 +497,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   function animateToLocation(lat, lng, duration = 800) {
     const target = getRotationForLocation(lat, lng);
     animationRef.current = {
-      startTime: performance.now(),
+      startTime: null,
       duration,
       startPhi: phiRef.current,
       startTheta: thetaRef.current,
@@ -599,6 +704,15 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     event.currentTarget.style.cursor = 'grab';
   }
 
+  function handleLabelClick(cluster) {
+    markerFocusLockedRef.current = true;
+    autoRotateEnabledRef.current = false;
+    if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    animateToLocation(cluster.lat, cluster.lng);
+    const payload = cluster.members.length === 1 ? cluster.members[0] : cluster.members;
+    onMarkerClick(payload);
+  }
+
   return (
     <div
       ref={containerRef}
@@ -621,6 +735,30 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-20 h-full w-full"
       />
+      <div className="pointer-events-none absolute inset-0 z-30" aria-label="Visible globe locations">
+        {clusters.map((cluster) => (
+          <button
+            key={cluster.key}
+            ref={(element) => {
+              if (element) labelElementsRef.current.set(cluster.key, element);
+              else labelElementsRef.current.delete(cluster.key);
+            }}
+            type="button"
+            className={`minimal-marker-label ${darkMode ? 'minimal-marker-label--dark' : 'minimal-marker-label--light'}`}
+            style={{ '--minimal-marker-color': markerColor }}
+            aria-label={cluster.label.text}
+            title={cluster.label.text}
+            onPointerDown={(event) => event.stopPropagation()}
+            onClick={(event) => {
+              event.stopPropagation();
+              handleLabelClick(cluster);
+            }}
+          >
+            <span className="minimal-marker-label__icon" aria-hidden="true">{cluster.label.icon}</span>
+            <span className="minimal-marker-label__text">{cluster.label.text}</span>
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

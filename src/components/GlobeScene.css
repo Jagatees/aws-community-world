@@ -1,0 +1,112 @@
+.minimal-marker-label {
+  --minimal-label-x: 0px;
+  --minimal-label-y: 0px;
+  --minimal-label-scale: 0.92;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  max-width: min(226px, 46vw);
+  min-height: 28px;
+  padding: 5px 9px 5px 6px;
+  border: 1px solid color-mix(in srgb, var(--minimal-marker-color) 62%, transparent);
+  border-radius: 7px;
+  box-shadow:
+    0 9px 24px rgba(0, 0, 0, 0.28),
+    0 0 18px color-mix(in srgb, var(--minimal-marker-color) 16%, transparent);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform:
+    translate3d(var(--minimal-label-x), var(--minimal-label-y), 0)
+    translate(-50%, -100%)
+    scale(var(--minimal-label-scale));
+  transform-origin: 50% 100%;
+  transition:
+    opacity 150ms ease,
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+  will-change: transform, opacity;
+}
+
+.minimal-marker-label::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1px;
+  height: 8px;
+  background: linear-gradient(var(--minimal-marker-color), transparent);
+  opacity: 0.8;
+}
+
+.minimal-marker-label--dark {
+  color: #f7fbff;
+  background: color-mix(in srgb, var(--minimal-marker-color) 68%, rgba(7, 16, 25, 0.96));
+  backdrop-filter: blur(10px);
+}
+
+.minimal-marker-label--light {
+  color: #0f1923;
+  background: color-mix(in srgb, var(--minimal-marker-color) 28%, rgba(255, 255, 255, 0.96));
+  backdrop-filter: blur(10px);
+}
+
+.minimal-marker-label:hover,
+.minimal-marker-label:focus-visible {
+  border-color: color-mix(in srgb, var(--minimal-marker-color) 88%, white);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.34),
+    0 0 22px color-mix(in srgb, var(--minimal-marker-color) 30%, transparent);
+  outline: none;
+}
+
+.minimal-marker-label__icon {
+  display: inline-grid;
+  flex: 0 0 17px;
+  width: 17px;
+  height: 17px;
+  place-items: center;
+  border-radius: 4px;
+  color: #fff;
+  background: color-mix(in srgb, var(--minimal-marker-color) 82%, #08121c);
+  font-size: 10px;
+  font-weight: 900;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.minimal-marker-label__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 639px) {
+  .minimal-marker-label {
+    max-width: 42vw;
+    min-height: 25px;
+    padding: 4px 7px 4px 5px;
+    font-size: 10px;
+  }
+
+  .minimal-marker-label__icon {
+    width: 15px;
+    height: 15px;
+    flex-basis: 15px;
+    font-size: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .minimal-marker-label {
+    transition: none;
+  }
+}
