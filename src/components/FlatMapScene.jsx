@@ -3,6 +3,7 @@ import { geoGraticule10, geoNaturalEarth1, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import countriesTopo from 'world-atlas/countries-110m.json';
 import { getMemberBadgeLabel, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -41,53 +42,14 @@ function getPanBounds(zoomLevel) {
   };
 }
 
-function clusterProjectedMembers(members, projection, zoomLevel) {
-  const threshold = clamp(44 / zoomLevel, 12, 44);
-  const clusters = [];
-
-  for (const member of members) {
-    const projected = projection([member.lng, member.lat]);
-    if (!projected) continue;
+function clusterProjectedMembers(members, projection) {
+  return clusterMembersByCoordinates(members).flatMap((cluster) => {
+    const projected = projection([cluster.lng, cluster.lat]);
+    if (!projected) return [];
 
     const [x, y] = projected;
-    if (member.forceSeparateMarker) {
-      clusters.push({
-        lat: member.lat,
-        lng: member.lng,
-        x,
-        y,
-        members: [member],
-        forceSeparateMarker: true,
-      });
-      continue;
-    }
-
-    const existing = clusters.find((cluster) => {
-      if (cluster.forceSeparateMarker) return false;
-      const dx = cluster.x - x;
-      const dy = cluster.y - y;
-      return Math.hypot(dx, dy) <= threshold;
-    });
-
-    if (existing) {
-      existing.members.push(member);
-      const count = existing.members.length;
-      existing.x = ((existing.x * (count - 1)) + x) / count;
-      existing.y = ((existing.y * (count - 1)) + y) / count;
-      existing.lat = ((existing.lat * (count - 1)) + member.lat) / count;
-      existing.lng = ((existing.lng * (count - 1)) + member.lng) / count;
-    } else {
-      clusters.push({
-        lat: member.lat,
-        lng: member.lng,
-        x,
-        y,
-        members: [member],
-      });
-    }
-  }
-
-  return clusters;
+    return [{ ...cluster, x, y }];
+  });
 }
 
 function buildProjection(activeTarget) {
@@ -143,7 +105,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
 
     const path = geoPath(projection);
     const countryFeatures = feature(countriesTopo, countriesTopo.objects.countries).features;
-    const clusteredMarkers = clusterProjectedMembers(members, projection, effectiveZoom).map((cluster) => ({
+    const clusteredMarkers = clusterProjectedMembers(members, projection).map((cluster) => ({
       ...cluster,
       size: cluster.members.length > 1 ? Math.min(34, 14 + Math.sqrt(cluster.members.length) * 4) : 10,
     }));
@@ -154,7 +116,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
       graticulePath: path(geoGraticule10()),
       markers: clusteredMarkers,
     };
-  }, [activeTarget, members, manualZoom, effectiveZoom]);
+  }, [activeTarget, members, manualZoom]);
 
   const markerColor = CATEGORY_COLORS[category] ?? '#FF9900';
   const panelBg = darkMode ? 'rgba(10, 18, 27, 0.78)' : 'rgba(255, 255, 255, 0.86)';

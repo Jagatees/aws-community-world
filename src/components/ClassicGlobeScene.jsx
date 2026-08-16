@@ -2,6 +2,7 @@ import { useEffect, useRef, useCallback, useState } from 'react';
 import Globe from 'globe.gl';
 import { useAutoRotate } from '../hooks/useAutoRotate';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -15,7 +16,6 @@ const CATEGORY_COLORS = {
   'news': '#FF9900',
 };
 
-const CLUSTER_TOLERANCE = 0.5;
 const MAX_CLUSTER_AVATARS = 4;
 const MARKER_ALTITUDE = 0.06;
 const MIN_CAMERA_DISTANCE_FACTOR = 1.01;
@@ -254,31 +254,6 @@ function formatLiveCountdown(targetValue, prefix = '') {
   const minutes = Math.floor((totalSeconds % 3_600) / 60);
   const seconds = totalSeconds % 60;
   return `${prefix}${days}d ${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s to go`;
-}
-
-function clusterMembers(members) {
-  const clusters = [];
-  for (const member of members) {
-    if (member.forceSeparateMarker) {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
-      continue;
-    }
-
-    const existing = clusters.find(
-      (cluster) =>
-        !cluster.forceSeparateMarker &&
-        Math.abs(cluster.lat - member.lat) <= CLUSTER_TOLERANCE &&
-        Math.abs(cluster.lng - member.lng) <= CLUSTER_TOLERANCE
-    );
-
-    if (existing) {
-      existing.members.push(member);
-    } else {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member] });
-    }
-  }
-
-  return clusters;
 }
 
 function getHeroClusterId(category, cluster) {
@@ -719,7 +694,7 @@ export default function ClassicGlobeScene({
     const container = containerRef.current;
     const clusters = category === 'community-days' && communityDaysExpanded
       ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMembers(members).map((cluster) => (
+      : clusterMembersByCoordinates(members).map((cluster) => (
         PORTRAIT_GROUP_CATEGORIES.has(category)
           ? { ...cluster, heroClusterId: getHeroClusterId(category, cluster) }
           : cluster

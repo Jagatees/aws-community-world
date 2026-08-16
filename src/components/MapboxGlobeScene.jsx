@@ -5,6 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 import { createPortraitFallback, createPortraitGroupAvatar, getMapboxPortraitSeparation, getPortraitGroupCount, PORTRAIT_GROUP_CATEGORIES } from '../utils/portraitGroupMarker';
+import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -19,7 +20,6 @@ const CATEGORY_COLORS = {
   'community-days': '#FF9900',
 };
 
-const CLUSTER_TOLERANCE = 0.5;
 const MAX_CLUSTER_AVATARS = 4;
 const TOKEN = import.meta.env.VITE_MAP_BOX ?? '';
 const MAPBOX_STYLE_URL = 'mapbox://styles/mapbox/satellite-streets-v12';
@@ -62,32 +62,6 @@ function toVector(lat, lng) {
     y: Math.sin(latRad),
     z: cosLat * Math.sin(lngRad),
   };
-}
-
-function clusterMembers(members) {
-  const clusters = [];
-
-  for (const member of members) {
-    if (member.forceSeparateMarker) {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
-      continue;
-    }
-
-    const existing = clusters.find(
-      (cluster) =>
-        !cluster.forceSeparateMarker &&
-        Math.abs(cluster.lat - member.lat) <= CLUSTER_TOLERANCE &&
-        Math.abs(cluster.lng - member.lng) <= CLUSTER_TOLERANCE
-    );
-
-    if (existing) {
-      existing.members.push(member);
-    } else {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member] });
-    }
-  }
-
-  return clusters;
 }
 
 function createClusterElement(cluster, { category, color, darkMode, separation, onClick }) {
@@ -601,7 +575,7 @@ export default function MapboxGlobeScene({
   const clusters = useMemo(
     () => category === 'community-days' && communityDaysExpanded
       ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMembers(members),
+      : clusterMembersByCoordinates(members),
     [members, category, communityDaysExpanded]
   );
 

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import createGlobe from 'cobe';
 import { getCountryCode } from '../utils/countryFlags';
 import { getCountryFlagUrl, getMemberCountry } from '../utils/memberMarkers';
+import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 import './GlobeScene.css';
 
 const CATEGORY_COLORS = {
@@ -16,7 +17,6 @@ const CATEGORY_COLORS = {
   'news': '#FF9900',
 };
 
-const CLUSTER_TOLERANCE = 0.5;
 const AUTO_ROTATE_RADIANS_PER_SECOND = 0.045;
 const DRAG_SENSITIVITY = 0.005;
 const MAX_TILT = Math.PI / 3;
@@ -47,29 +47,6 @@ const CATEGORY_LABELS = {
   'aws-ambassadors': { icon: '▲', singular: 'AWS Ambassador', plural: 'AWS Ambassadors' },
   'news': { icon: '↗', singular: 'Story', plural: 'Stories' },
 };
-
-function clusterMembers(members) {
-  const clusters = [];
-  for (const member of members) {
-    if (member.forceSeparateMarker) {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member], forceSeparateMarker: true });
-      continue;
-    }
-
-    const existing = clusters.find(
-      (c) =>
-        !c.forceSeparateMarker &&
-        Math.abs(c.lat - member.lat) <= CLUSTER_TOLERANCE &&
-        Math.abs(c.lng - member.lng) <= CLUSTER_TOLERANCE
-    );
-    if (existing) {
-      existing.members.push(member);
-    } else {
-      clusters.push({ lat: member.lat, lng: member.lng, members: [member] });
-    }
-  }
-  return clusters;
-}
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
@@ -274,7 +251,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
 
   const clusters = useMemo(
     () =>
-      clusterMembers(members).map((cluster, index) => ({
+      clusterMembersByCoordinates(members).map((cluster, index) => ({
         ...cluster,
         key: `${cluster.members[0]?.id ?? cluster.members[0]?.name ?? 'marker'}-${cluster.lat}-${cluster.lng}-${index}`,
         location: [cluster.lat, cluster.lng],
