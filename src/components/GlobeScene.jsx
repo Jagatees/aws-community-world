@@ -26,8 +26,8 @@ const CLUSTER_MARKER_BASE_SIZE = 0.038;
 const CLUSTER_MARKER_STEP = 0.006;
 const CLUSTER_MARKER_MAX_SIZE = 0.06;
 const BASE_SCALE = 0.95;
-const MIN_SCALE = 0.8;
-const MAX_SCALE = 1.85;
+const MIN_SCALE = 0.6;
+const MAX_SCALE = 3.0;
 const WHEEL_ZOOM_SENSITIVITY = 0.0009;
 const PINCH_MIN_DISTANCE = 24;
 const LABEL_FOCUS_START = 0.34;
@@ -40,7 +40,7 @@ const CATEGORY_LABELS = {
   'heroes': { icon: '✦', singular: 'Hero', plural: 'Heroes' },
   'community-builders': { icon: '◆', singular: 'Community Builder', plural: 'Community Builders' },
   'user-groups': { icon: '●', singular: 'User Group', plural: 'User Groups' },
-  'cloud-clubs': { icon: '☁', singular: 'Cloud Club', plural: 'Cloud Clubs' },
+  'cloud-clubs': { icon: '☁', singular: 'Student Builder Group', plural: 'Student Builder Groups' },
   'kiro-ambassadors': { icon: '◇', singular: 'Kiro Ambassador', plural: 'Kiro Ambassadors' },
   'kiro-events': { icon: '◆', singular: 'Kiro Event', plural: 'Kiro Events' },
   'community-days': { icon: '▣', singular: 'Community Day', plural: 'Community Days' },

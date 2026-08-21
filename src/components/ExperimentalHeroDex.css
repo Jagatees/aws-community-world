@@ -628,7 +628,7 @@
 .hero-scan__title { display: flex; align-items: center; gap: 0.9rem; }
 .hero-scan__title > span { color: rgba(120, 231, 249, 0.38); font: 800 clamp(2rem, 5vw, 4.5rem)/0.8 Consolas, monospace; letter-spacing: -0.08em; }
 .hero-scan__title p { margin: 0 0 0.18rem; color: #70d8e9; font: 0.55rem Consolas, monospace; letter-spacing: 0.17em; text-transform: uppercase; }
-.hero-scan__title h2 { margin: 0; max-width: 40vw; overflow: hidden; text-overflow: ellipsis; color: #f4fdff; font-size: clamp(1.2rem, 2.2vw, 2rem); line-height: 1; letter-spacing: -0.04em; text-transform: capitalize; white-space: nowrap; }
+.hero-scan__title h2 { margin: 0; max-width: 40vw; overflow: hidden; text-overflow: ellipsis; color: #f4fdff; font-size: clamp(1.2rem, 2.2vw, 2rem); line-height: 1; letter-spacing: -0.04em; text-transform: none; white-space: nowrap; }
 .hero-scan__status { justify-self: end; display: flex; align-items: center; gap: 0.45rem; color: #8ddfec; font: 0.58rem Consolas, monospace; letter-spacing: 0.08em; text-transform: uppercase; }
 .hero-scan__status i { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: #51e8c2; box-shadow: 0 0 12px #51e8c2; animation: status-pulse 1.8s ease infinite; }
 .hero-scan__header-actions { justify-self: end; display: flex; align-items: center; gap: 0.9rem; }
@@ -859,6 +859,72 @@
   transform: none;
 }
 
+.hero-dex__scrub-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--dex-line);
+  background: var(--dex-panel);
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.08), 0 12px 32px rgba(0, 12, 21, 0.35);
+  min-width: min(24rem, 55vw);
+}
+
+.hero-dex__scrub-count {
+  font-family: Consolas, "SFMono-Regular", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--dex-cyan-bright);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.hero-dex__scrub-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(var(--dex-accent-rgb), 0.22);
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.hero-dex__scrub-slider:hover {
+  background: rgba(var(--dex-accent-rgb), 0.38);
+}
+
+.hero-dex__scrub-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--dex-cyan);
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 12px var(--dex-cyan-bright);
+  cursor: grab;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.hero-dex__scrub-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+  background: var(--dex-cyan-bright);
+}
+
+.hero-dex__scrub-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--dex-cyan);
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 12px var(--dex-cyan-bright);
+  cursor: grab;
+}
+
 .hero-scan {
   color: #f2f3f3;
   background:
@@ -937,6 +1003,122 @@
 .hero-scan__channels a:focus-visible { border-color: rgba(var(--dex-accent-rgb), 0.52); background: rgba(var(--dex-accent-rgb), 0.12); }
 .hero-scan__channels a i { color: var(--dex-cyan-bright); }
 .hero-scan__channels p { color: #9aa7b5; }
+
+.hero-scan__leaders {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 0.8rem;
+  max-height: 14rem;
+  overflow-y: auto;
+  padding-right: 0.35rem;
+}
+.hero-scan,
+.hero-scan__leaders,
+.hero-scan__channels,
+.hero-scan__panel,
+.hero-scan__body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dex-cyan) rgba(19, 26, 34, 0.6);
+}
+
+.hero-scan::-webkit-scrollbar,
+.hero-scan__leaders::-webkit-scrollbar,
+.hero-scan__channels::-webkit-scrollbar,
+.hero-scan__panel::-webkit-scrollbar,
+.hero-scan__body::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.hero-scan::-webkit-scrollbar-track,
+.hero-scan__leaders::-webkit-scrollbar-track,
+.hero-scan__channels::-webkit-scrollbar-track,
+.hero-scan__panel::-webkit-scrollbar-track,
+.hero-scan__body::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+  background: rgba(19, 26, 34, 0.6);
+  border-radius: 6px;
+  border: 1px solid rgba(var(--dex-accent-rgb), 0.15);
+}
+
+.hero-scan::-webkit-scrollbar-thumb,
+.hero-scan__leaders::-webkit-scrollbar-thumb,
+.hero-scan__channels::-webkit-scrollbar-thumb,
+.hero-scan__panel::-webkit-scrollbar-thumb,
+.hero-scan__body::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background: var(--dex-cyan);
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(var(--dex-accent-rgb), 0.6);
+}
+
+.hero-scan::-webkit-scrollbar-thumb:hover,
+.hero-scan__leaders::-webkit-scrollbar-thumb:hover,
+.hero-scan__channels::-webkit-scrollbar-thumb:hover,
+.hero-scan__panel::-webkit-scrollbar-thumb:hover,
+.hero-scan__body::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dex-cyan-bright);
+}
+
+.hero-scan__leader-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(var(--dex-accent-rgb), 0.22);
+  background: rgba(var(--dex-accent-rgb), 0.06);
+}
+
+.hero-scan__leader-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.hero-scan__leader-avatar {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--dex-cyan);
+  flex-shrink: 0;
+}
+
+.hero-scan__leader-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.hero-scan__leader-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #f2f3f3;
+}
+
+.hero-scan__leader-profile {
+  font-size: 0.68rem;
+  color: var(--dex-cyan-bright);
+  text-decoration: none;
+}
+
+.hero-scan__leader-profile:hover {
+  text-decoration: underline;
+}
+
+.hero-scan__channels--compact {
+  gap: 0.35rem;
+}
+
+.hero-scan__channels--compact a {
+  padding: 0.2rem 0.45rem;
+  font-size: 0.68rem;
+}
+
 .hero-scan__signal > div i { background: var(--dex-cyan); box-shadow: 0 0 8px rgba(var(--dex-accent-rgb), 0.38); }
 .hero-scan__signal strong { color: var(--dex-cyan-bright); }
 

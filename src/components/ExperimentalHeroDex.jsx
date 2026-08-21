@@ -41,6 +41,12 @@ function recordNumber(hero, members) {
   return String(Math.max(0, index) + 1).padStart(3, '0');
 }
 
+function formatName(name = '') {
+  return String(name)
+    .replace(/\bGroup At\b/gi, 'Group at')
+    .replace(/\bClub At\b/gi, 'Club at');
+}
+
 const CATEGORY_CONFIG = {
   heroes: {
     eyebrow: 'AWS community // heroes', title: 'Hero archive',
@@ -395,6 +401,10 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
     ? filteredHeroes.findIndex((hero) => hero.id === selectedHero.id)
     : -1;
 
+  const activeIndex = filteredHeroes.length
+    ? wrapIndex(Math.round(rotation), filteredHeroes.length)
+    : 0;
+
   return (
     <section
       className={`hero-dex ${darkMode ? 'hero-dex--dark' : 'hero-dex--light'}`}
@@ -451,66 +461,66 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
               const columnCount = Math.ceil(filteredHeroes.length / 3);
               const visibleColumnCount = Math.min(19, columnCount);
               return [0, 1, 2].flatMap((row) => {
-              const rowDirection = row === 1 ? 1 : -1;
-              const rowRotation = rotation * rowDirection;
-              const centerColumn = Math.round(rowRotation);
-              const startColumn = centerColumn - Math.floor((visibleColumnCount - 1) / 2);
-              const visibleColumns = Array.from({ length: visibleColumnCount }, (_, index) => startColumn + index);
+                const rowDirection = row === 1 ? 1 : -1;
+                const rowRotation = rotation * rowDirection;
+                const centerColumn = Math.round(rowRotation);
+                const startColumn = centerColumn - Math.floor((visibleColumnCount - 1) / 2);
+                const visibleColumns = Array.from({ length: visibleColumnCount }, (_, index) => startColumn + index);
 
-              return visibleColumns.map((logicalColumn) => {
-              const groupIndex = wrapIndex(logicalColumn, columnCount);
-              const memberIndex = groupIndex * 3 + row;
-              if (memberIndex >= filteredHeroes.length) return null;
+                return visibleColumns.map((logicalColumn) => {
+                  const groupIndex = wrapIndex(logicalColumn, columnCount);
+                  const memberIndex = groupIndex * 3 + row;
+                  if (memberIndex >= filteredHeroes.length) return null;
 
-              const hero = filteredHeroes[memberIndex];
-              const relativeColumn = logicalColumn - rowRotation;
-              const distance = Math.abs(relativeColumn);
-              const slotDistance = Math.abs(logicalColumn - centerColumn);
-              const slotSide = logicalColumn === centerColumn
-                ? (row === 0 ? -1 : row === 2 ? 1 : 0)
-                : Math.sign(logicalColumn - centerColumn);
-              const angleDegrees = relativeColumn * 13.2;
-              const angleRadians = angleDegrees * (Math.PI / 180);
-              const cosine = Math.cos(angleRadians);
-              const depthRatio = (cosine + 1) / 2;
-              const scale = 0.64 + depthRatio * 0.36;
-              const yBase = row === 0 ? 18 : row === 1 ? 50 : 82;
-              const isCenter = logicalColumn === centerColumn && row === 1;
+                  const hero = filteredHeroes[memberIndex];
+                  const relativeColumn = logicalColumn - rowRotation;
+                  const distance = Math.abs(relativeColumn);
+                  const slotDistance = Math.abs(logicalColumn - centerColumn);
+                  const slotSide = logicalColumn === centerColumn
+                    ? (row === 0 ? -1 : row === 2 ? 1 : 0)
+                    : Math.sign(logicalColumn - centerColumn);
+                  const angleDegrees = relativeColumn * 13.2;
+                  const angleRadians = angleDegrees * (Math.PI / 180);
+                  const cosine = Math.cos(angleRadians);
+                  const depthRatio = (cosine + 1) / 2;
+                  const scale = 0.64 + depthRatio * 0.36;
+                  const yBase = row === 0 ? 18 : row === 1 ? 50 : 82;
+                  const isCenter = logicalColumn === centerColumn && row === 1;
 
-              return (
-                <button
-                  type="button"
-                  key={hero.id}
-                  className={`hero-dex__hex ${isCenter ? 'hero-dex__hex--center' : ''}`}
-                  data-carousel-row={row === 0 ? 'top' : row === 1 ? 'middle' : 'bottom'}
-                  data-idle-direction={row === 1 ? 'left' : 'right'}
-                  style={{
-                    '--hex-shift-x': `${Math.sin(angleRadians) * 47}vw`,
-                    '--hex-y': `${yBase}%`,
-                    '--hex-scale': scale,
-                    '--hex-turn': `${-angleDegrees * 0.82}deg`,
-                    '--hex-opacity': Math.max(0.08, Math.min(1, (cosine + 0.2) / 1.2)),
-                    '--hex-layer': Math.round(80 + cosine * 40),
-                    '--slot-delay': `${70 + row * 90 + slotDistance * 28}ms`,
-                    '--slot-x': `${slotSide * (row === 1 ? 7.5 : 3.8)}rem`,
-                    '--slot-y': row === 0 ? '-6rem' : row === 2 ? '6rem' : '0rem',
-                    '--slot-flip': `${slotSide * 78}deg`,
-                    '--slot-tilt': `${slotSide * -16}deg`,
-                  }}
-                  onClick={() => openHero(hero)}
-                  aria-label={`Open ${hero.name}, ${config.filterValue(hero) || config.singular}`}
-                >
-                  <span className="hero-dex__hex-frame">
-                    <span className="hero-dex__hex-image"><Portrait hero={hero} category={category} config={config} eager={distance < 2} /></span>
-                    <span className="hero-dex__hex-sheen" />
-                  </span>
-                  <span className="hero-dex__tooltip">
-                    <strong>{hero.name}</strong>
-                    <small>{config.filterValue(hero) || config.singular}</small>
-                  </span>
-                </button>
-              );
-              });
+                  return (
+                    <button
+                      type="button"
+                      key={hero.id}
+                      className={`hero-dex__hex ${isCenter ? 'hero-dex__hex--center' : ''}`}
+                      data-carousel-row={row === 0 ? 'top' : row === 1 ? 'middle' : 'bottom'}
+                      data-idle-direction={row === 1 ? 'left' : 'right'}
+                      style={{
+                        '--hex-shift-x': `${Math.sin(angleRadians) * 47}vw`,
+                        '--hex-y': `${yBase}%`,
+                        '--hex-scale': scale,
+                        '--hex-turn': `${-angleDegrees * 0.82}deg`,
+                        '--hex-opacity': Math.max(0.08, Math.min(1, (cosine + 0.2) / 1.2)),
+                        '--hex-layer': Math.round(80 + cosine * 40),
+                        '--slot-delay': `${70 + row * 90 + slotDistance * 28}ms`,
+                        '--slot-x': `${slotSide * (row === 1 ? 7.5 : 3.8)}rem`,
+                        '--slot-y': row === 0 ? '-6rem' : row === 2 ? '6rem' : '0rem',
+                        '--slot-flip': `${slotSide * 78}deg`,
+                        '--slot-tilt': `${slotSide * -16}deg`,
+                      }}
+                      onClick={() => openHero(hero)}
+                      aria-label={`Open ${hero.name}, ${config.filterValue(hero) || config.singular}`}
+                    >
+                      <span className="hero-dex__hex-frame">
+                        <span className="hero-dex__hex-image"><Portrait hero={hero} category={category} config={config} eager={distance < 2} /></span>
+                        <span className="hero-dex__hex-sheen" />
+                      </span>
+                      <span className="hero-dex__tooltip">
+                        <strong>{formatName(hero.name)}</strong>
+                        <small>{config.filterValue(hero) || config.singular}</small>
+                      </span>
+                    </button>
+                  );
+                });
               });
             })()}
           </div>
@@ -527,6 +537,28 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
         <button type="button" onClick={() => rotate(-1)} disabled={!filteredHeroes.length} aria-label="Rotate left">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
         </button>
+
+        <div className="hero-dex__scrub-bar">
+          <span className="hero-dex__scrub-count">
+            {filteredHeroes.length
+              ? `${String(activeIndex + 1).padStart(3, '0')} / ${String(filteredHeroes.length).padStart(3, '0')}`
+              : '000 / 000'}
+          </span>
+          <input
+            type="range"
+            min={0}
+            max={Math.max(0, filteredHeroes.length - 1)}
+            value={activeIndex}
+            onChange={(e) => {
+              const val = parseInt(e.target.value, 10);
+              moveToRotation(val);
+            }}
+            disabled={!filteredHeroes.length}
+            className="hero-dex__scrub-slider"
+            aria-label="Scroll through archive"
+          />
+        </div>
+
         <button type="button" onClick={() => rotate(1)} disabled={!filteredHeroes.length} aria-label="Rotate right">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
         </button>
@@ -537,7 +569,7 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
           className={`hero-scan ${scanTransition ? `hero-scan--${scanTransition}` : ''}`}
           aria-modal="true"
           role="dialog"
-          aria-label={`${selectedHero.name} ${config.singular} record`}
+          aria-label={`${formatName(selectedHero.name)} ${config.singular} record`}
         >
           <div className="hero-scan__backdrop" aria-hidden="true">
             {[-2, -1, 0, 1, 2].map((offset) => {
@@ -559,7 +591,7 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
             </button>
             <div className="hero-scan__title">
               <span>#{recordNumber(selectedHero, members)}</span>
-              <div><p>{config.singular} record</p><h2>{selectedHero.name}</h2></div>
+              <div><p>{config.singular} record</p><h2>{formatName(selectedHero.name)}</h2></div>
             </div>
             <div className="hero-scan__header-actions">
               <span className="hero-scan__status"><i /> Record online</span>
@@ -599,16 +631,74 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
             </div>
 
             <aside className="hero-scan__panel hero-scan__panel--right">
-              <p className="hero-scan__panel-label">Connected channels</p>
-              <div className="hero-scan__channels">
-                {Object.entries(selectedHero.socialLinks ?? {}).length ? (
-                  Object.entries(selectedHero.socialLinks).map(([network, url]) => (
-                    <a key={network} href={url} target="_blank" rel="noopener noreferrer">
-                      <span>{SOCIAL_LABELS[network] ?? network}</span><i>↗</i>
-                    </a>
-                  ))
-                ) : <p>No public social channels listed.</p>}
-              </div>
+              <p className="hero-scan__panel-label">
+                {Array.isArray(selectedHero.ledBy) && selectedHero.ledBy.length ? 'Group Leaders & Channels' : 'Connected channels'}
+              </p>
+              {Array.isArray(selectedHero.ledBy) && selectedHero.ledBy.length > 0 ? (
+                <div className="hero-scan__leaders">
+                  {selectedHero.ledBy.map((leader, index) => {
+                    const leaderLinks = Object.entries(leader.socialLinks ?? {});
+                    return (
+                      <div key={index} className="hero-scan__leader-card">
+                        <div className="hero-scan__leader-header">
+                          {leader.imageUrl && !leader.imageUrl.includes('default-avatar') && (
+                            <img
+                              src={leader.imageUrl}
+                              alt={leader.name}
+                              className="hero-scan__leader-avatar"
+                              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                            />
+                          )}
+                          <div className="hero-scan__leader-info">
+                            <strong className="hero-scan__leader-name">{leader.name || 'Leader'}</strong>
+                            {leader.profileUrl && (
+                              <a
+                                href={leader.profileUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hero-scan__leader-profile"
+                              >
+                                Builder Profile ↗
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                        {leaderLinks.length > 0 && (
+                          <div className="hero-scan__channels hero-scan__channels--compact">
+                            {leaderLinks.map(([network, url]) => (
+                              <a key={network} href={url} target="_blank" rel="noopener noreferrer">
+                                <span>{SOCIAL_LABELS[network] ?? network}</span><i>↗</i>
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="hero-scan__channels">
+                  {Object.entries(selectedHero.socialLinks ?? {}).length ? (
+                    Object.entries(selectedHero.socialLinks).map(([network, url]) => (
+                      <a key={network} href={url} target="_blank" rel="noopener noreferrer">
+                        <span>{SOCIAL_LABELS[network] ?? network}</span><i>↗</i>
+                      </a>
+                    ))
+                  ) : <p>No public social channels listed.</p>}
+                </div>
+              )}
+              {Array.isArray(selectedHero.ledBy) && selectedHero.ledBy.length > 0 && Object.entries(selectedHero.socialLinks ?? {}).length > 0 && (
+                <div style={{ marginTop: '0.6rem' }}>
+                  <p className="hero-scan__panel-label" style={{ fontSize: '0.65rem', marginBottom: '0.4rem' }}>Group Channels</p>
+                  <div className="hero-scan__channels">
+                    {Object.entries(selectedHero.socialLinks).map(([network, url]) => (
+                      <a key={network} href={url} target="_blank" rel="noopener noreferrer">
+                        <span>{SOCIAL_LABELS[network] ?? network}</span><i>↗</i>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
               <div className="hero-scan__signal">
                 <span>Profile link</span>
                 <div><i /><i /><i /><i /><i /></div>
