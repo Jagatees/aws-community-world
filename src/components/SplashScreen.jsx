@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
+import MobileHomeGlobe from './MobileHomeGlobe';
+import './SplashScreen.css';
+
 const COMMUNITY_STATS = [
   { label: 'Heroes', count: 252, color: '#FF9900' },
   { label: 'Community Builders', count: 3038, color: '#1A9C3E' },
@@ -315,8 +318,111 @@ function OrbitGlobe({ isEvents }) {
   );
 }
 
+const MOBILE_COMMUNITY_STATS = [
+  { value: '250', label: 'Heroes', icon: 'heroes' },
+  { value: '2.8K', label: 'Builders', icon: 'builders' },
+  { value: 'Global', label: 'Events', icon: 'events' },
+];
+
+const MOBILE_EVENT_STATS = [
+  { value: '8', label: 'Kiro events', icon: 'heroes' },
+  { value: '38', label: 'Community days', icon: 'builders' },
+  { value: 'Live', label: 'Worldwide', icon: 'events' },
+];
+
+function MobileStatIcon({ type }) {
+  if (type === 'events') {
+    return (
+      <svg viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="4" y="6" width="20" height="18" rx="3" />
+        <path d="M9 3v6M19 3v6M4 11h20M9 16h3M16 16h3M9 20h3" />
+      </svg>
+    );
+  }
+
+  if (type === 'builders') {
+    return (
+      <svg viewBox="0 0 28 28" aria-hidden="true">
+        <circle cx="14" cy="8" r="4" />
+        <path d="M6 25v-3c0-4.4 3.6-8 8-8s8 3.6 8 8v3M22 11a3.5 3.5 0 0 1 0 7" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 28 28" aria-hidden="true">
+      <circle cx="10" cy="9" r="4" />
+      <circle cx="20" cy="11" r="3" />
+      <path d="M2 24v-2c0-4.4 3.6-8 8-8s8 3.6 8 8v2M19 16c3.9 0 7 2.7 7 6v2" />
+    </svg>
+  );
+}
+
+function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) {
+  const isEvents = activeSection === 'events';
+  const stats = isEvents ? MOBILE_EVENT_STATS : MOBILE_COMMUNITY_STATS;
+
+  return (
+    <section
+      className={`mobile-home${exiting ? ' mobile-home--exiting' : ''}`}
+      aria-labelledby="mobile-home-title"
+    >
+      <div className="mobile-home__ambient" aria-hidden="true" />
+      <header className="mobile-home__header">
+        <div className="mobile-home__brand" aria-label="AWS Globe home">
+          <span>AWS</span> Globe
+        </div>
+        <button
+          type="button"
+          className="mobile-home__mode"
+          onClick={() => onSectionChange?.(isEvents ? 'community' : 'events')}
+          aria-label={`Switch to ${isEvents ? 'Community' : 'Events'} home`}
+        >
+          {isEvents ? 'Events' : 'Community'}
+          <svg viewBox="0 0 14 14" aria-hidden="true"><path d="m4 5 3 3 3-3" /></svg>
+        </button>
+      </header>
+
+      <main className="mobile-home__main">
+        <div className="mobile-home__copy">
+          <h1 id="mobile-home-title">
+            {isEvents ? <>Explore AWS<br />Community Events</> : <>Explore the<br />AWS Community</>}
+          </h1>
+          <p>{isEvents
+            ? 'Meetups, community days and builder events — all around the world.'
+            : 'People, groups and events — all around the world.'}</p>
+        </div>
+
+        <div className="mobile-home__globe-stage">
+          <MobileHomeGlobe isEvents={isEvents} />
+        </div>
+
+        <button type="button" className="mobile-home__enter" onClick={onStart}>
+          Enter the Globe
+          <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h11M10 5l4 4-4 4" /></svg>
+        </button>
+
+        <dl className="mobile-home__stats" aria-label={isEvents ? 'Event totals' : 'Community totals'}>
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <dt>
+                <MobileStatIcon type={stat.icon} />
+                <strong>{stat.value}</strong>
+              </dt>
+              <dd>{stat.label}</dd>
+            </div>
+          ))}
+        </dl>
+      </main>
+    </section>
+  );
+}
+
 export default function SplashScreen({ onStart, exiting, activeSection = 'community', onSectionChange }) {
   const [showGlobe, setShowGlobe] = useState(false);
+  const [useMobileHome] = useState(() => (
+    window.matchMedia('(max-width: 767px), (pointer: coarse) and (max-width: 1023px)').matches
+  ));
   const [allowInteractiveGlobe] = useState(() => (
     !window.matchMedia('(max-width: 767px), (pointer: coarse), (prefers-reduced-motion: reduce)').matches
   ));
@@ -347,6 +453,17 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
       window.clearTimeout(timeoutId);
     };
   }, [allowInteractiveGlobe, exiting]);
+
+  if (useMobileHome) {
+    return (
+      <MobileSplashHome
+        onStart={onStart}
+        exiting={exiting}
+        activeSection={activeSection}
+        onSectionChange={onSectionChange}
+      />
+    );
+  }
 
   return (
     <div

@@ -3,15 +3,7 @@ import { SparkleIcon } from '@phosphor-icons/react';
 import Header from './components/Header';
 import TabNav from './components/TabNav';
 import MobileNavigation from './components/MobileNavigation';
-import NewsPanel from './components/NewsPanel';
-import ProfileCard from './components/ProfileCard';
-import TagFilter from './components/TagFilter';
-import KiroAvatarOverlay from './components/KiroAvatarOverlay';
-import ListScene from './components/ListScene';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
-import NewArrivalsPanel from './components/NewArrivalsPanel';
-import Country3DControl from './components/Country3DControl';
-import IconArchiveScene from './components/ExperimentalHeroDex';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 import communityBuilderMeta from './data/community-builders-meta.json';
@@ -20,6 +12,14 @@ import { COUNTRY_SPOTLIGHTS, getCountrySpotlightFromParams } from './config/coun
 
 const SplashScreen = lazy(() => import('./components/SplashScreen'));
 const InsightsDashboard = lazy(() => import('./components/TrendsDashboard'));
+const NewsPanel = lazy(() => import('./components/NewsPanel'));
+const ProfileCard = lazy(() => import('./components/ProfileCard'));
+const TagFilter = lazy(() => import('./components/TagFilter'));
+const KiroAvatarOverlay = lazy(() => import('./components/KiroAvatarOverlay'));
+const ListScene = lazy(() => import('./components/ListScene'));
+const NewArrivalsPanel = lazy(() => import('./components/NewArrivalsPanel'));
+const Country3DControl = lazy(() => import('./components/Country3DControl'));
+const IconArchiveScene = lazy(() => import('./components/ExperimentalHeroDex'));
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -156,7 +156,8 @@ function canCreateWebGlContext() {
   }
 }
 
-const CobeGlobeScene = lazy(() => import('./components/GlobeScene'));
+const loadCobeGlobeScene = () => import('./components/GlobeScene');
+const CobeGlobeScene = lazy(loadCobeGlobeScene);
 const ClassicGlobeScene = lazy(() => import('./components/ClassicGlobeScene'));
 const MapboxGlobeScene = lazy(() => import('./components/MapboxGlobeScene'));
 const MapboxFlatScene = lazy(() => import('./components/MapboxFlatScene'));
@@ -234,6 +235,15 @@ export default function App() {
         : globeDesign === 'sleek'
           ? CobeGlobeScene
           : ClassicGlobeScene;
+
+  useEffect(() => {
+    if (!showSplash || globeDesign !== 'sleek') return undefined;
+
+    // Prepare the lightweight mobile renderer behind the splash so the user's
+    // first Explore tap does not pay an extra network and compilation pause.
+    const preloadTimer = window.setTimeout(loadCobeGlobeScene, 150);
+    return () => window.clearTimeout(preloadTimer);
+  }, [globeDesign, showSplash]);
 
   function renderInteractiveScene(Scene, props, resetKey) {
     return (
@@ -643,6 +653,8 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    if (showSplash) return;
+
     writeRouteStateToUrl({
       activeCategory,
       selectedTag,
@@ -653,7 +665,7 @@ export default function App() {
       countrySpotlight: countrySpotlight?.country ?? null,
       newOnly,
     });
-  }, [activeCategory, countrySpotlight?.country, darkMode, globeDesign, newOnly, selectedCountries, selectedRegions, selectedTag]);
+  }, [activeCategory, countrySpotlight?.country, darkMode, globeDesign, newOnly, selectedCountries, selectedRegions, selectedTag, showSplash]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -767,7 +779,9 @@ export default function App() {
               borderBottom: darkMode ? '1px solid rgba(45, 63, 80, 0.55)' : '1px solid rgba(208, 220, 232, 0.8)',
             }}
           >
-            <TagFilter tags={tags} selected={selectedTag} onChange={setSelectedTag} darkMode={darkMode} />
+            <Suspense fallback={null}>
+              <TagFilter tags={tags} selected={selectedTag} onChange={setSelectedTag} darkMode={darkMode} />
+            </Suspense>
           </div>
         )}
 
@@ -868,13 +882,15 @@ export default function App() {
               {/* Globe — always fills the full area */}
               <div className="absolute inset-0">
                 {isListView ? (
-                  <ListScene
-                    key="news-list"
-                    category="news"
-                    newsItems={newsItems}
-                    loading={newsLoading}
-                    darkMode={darkMode}
-                  />
+                  <Suspense fallback={renderGlobeLoading()}>
+                    <ListScene
+                      key="news-list"
+                      category="news"
+                      newsItems={newsItems}
+                      loading={newsLoading}
+                      darkMode={darkMode}
+                    />
+                  </Suspense>
                 ) : globeReady ? (
                   <Suspense
                     fallback={renderGlobeLoading()}
@@ -1084,36 +1100,42 @@ export default function App() {
                   pointerEvents: newsPanelOpen ? 'auto' : 'none',
                 }}
               >
-                <NewsPanel
-                  darkMode={darkMode}
-                  news={news}
-                  loading={newsLoading}
-                  selectedItems={selectedNewsItems}
-                  onSelectItem={handleSelectNewsItem}
-                  onLocate={handleLocateNewsItem}
-                  onClose={() => setNewsPanelOpen(false)}
-                />
+                <Suspense fallback={null}>
+                  <NewsPanel
+                    darkMode={darkMode}
+                    news={news}
+                    loading={newsLoading}
+                    selectedItems={selectedNewsItems}
+                    onSelectItem={handleSelectNewsItem}
+                    onLocate={handleLocateNewsItem}
+                    onClose={() => setNewsPanelOpen(false)}
+                  />
+                </Suspense>
               </div>
             </div>
           ) : (
             <>
               {isIconView ? (
-                <IconArchiveScene
-                  key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-icons`}
-                  category={activeCategory}
-                  members={directoryMembers}
-                  loading={loading}
-                  darkMode={darkMode}
-                />
+                <Suspense fallback={renderGlobeLoading()}>
+                  <IconArchiveScene
+                    key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-icons`}
+                    category={activeCategory}
+                    members={directoryMembers}
+                    loading={loading}
+                    darkMode={darkMode}
+                  />
+                </Suspense>
               ) : isListView ? (
-                <ListScene
-                  key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-list`}
-                  category={activeCategory}
-                  members={directoryMembers}
-                  loading={loading}
-                  darkMode={darkMode}
-                  onItemClick={handleMarkerClick}
-                />
+                <Suspense fallback={renderGlobeLoading()}>
+                  <ListScene
+                    key={`${activeCategory}-${selectedTag ?? 'all'}-${selectedRegions.join('|') || 'all-regions'}-${selectedCountries.join('|') || 'all'}-list`}
+                    category={activeCategory}
+                    members={directoryMembers}
+                    loading={loading}
+                    darkMode={darkMode}
+                    onItemClick={handleMarkerClick}
+                  />
+                </Suspense>
               ) : globeReady ? (
                 <Suspense
                   fallback={renderGlobeLoading()}
@@ -1368,14 +1390,16 @@ export default function App() {
                   )}
 
                   {activeCategory === 'cloud-clubs' && (
-                    <Country3DControl
-                      activeCountry={countrySpotlight?.country ?? null}
-                      countries={country3dCountries}
-                      countryCounts={countryCounts}
-                      darkMode={darkMode}
-                      onExit={() => handleCountrySpotlight(countrySpotlight?.country)}
-                      onOpenCountry={handleCountrySpotlight}
-                    />
+                    <Suspense fallback={null}>
+                      <Country3DControl
+                        activeCountry={countrySpotlight?.country ?? null}
+                        countries={country3dCountries}
+                        countryCounts={countryCounts}
+                        darkMode={darkMode}
+                        onExit={() => handleCountrySpotlight(countrySpotlight?.country)}
+                        onOpenCountry={handleCountrySpotlight}
+                      />
+                    </Suspense>
                   )}
                 </div>
               </div>
@@ -1391,15 +1415,17 @@ export default function App() {
               )}
 
               {newOnly && !isListView && !isIconView ? (
-                <NewArrivalsPanel
-                  category={activeCategory}
-                  members={newArrivals}
-                  loading={loading}
-                  darkMode={darkMode}
-                  onClose={handleNewOnlyToggle}
-                  onLocate={handleLocateNewArrival}
-                  onSelect={handleMarkerClick}
-                />
+                <Suspense fallback={null}>
+                  <NewArrivalsPanel
+                    category={activeCategory}
+                    members={newArrivals}
+                    loading={loading}
+                    darkMode={darkMode}
+                    onClose={handleNewOnlyToggle}
+                    onLocate={handleLocateNewArrival}
+                    onSelect={handleMarkerClick}
+                  />
+                </Suspense>
               ) : null}
             </>
           )}
@@ -1407,7 +1433,9 @@ export default function App() {
         </div>
 
         {!isInsightsView && !isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
-          <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
+          <Suspense fallback={null}>
+            <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
+          </Suspense>
         )}
 
         {nearMeError && (

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import createGlobe from 'cobe';
-import { getCountryCode } from '../utils/countryFlags';
-import { getCountryFlagUrl, getMemberCountry } from '../utils/memberMarkers';
+import { countryCodeToFlag, getCountryCode } from '../utils/countryFlags';
+import { getMemberCountry } from '../utils/memberMarkers';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 import './GlobeScene.css';
 
@@ -35,6 +35,11 @@ const LABEL_FOCUS_FULL = 0.62;
 const LABEL_COLLISION_PADDING = 5;
 const MAX_DESKTOP_LABELS = 18;
 const MAX_MOBILE_LABELS = 8;
+const LABEL_POOL_SIZE = MAX_DESKTOP_LABELS;
+const MOBILE_MAX_PIXEL_RATIO = 1.5;
+const DESKTOP_MAX_PIXEL_RATIO = 2;
+const MOBILE_MAP_SAMPLES = 10000;
+const DESKTOP_MAP_SAMPLES = 16000;
 
 const CATEGORY_LABELS = {
   'heroes': { icon: '✦', singular: 'Hero', plural: 'Heroes' },
@@ -67,6 +72,21 @@ function getResponsiveScale(scale, width, height) {
       : 1;
 
   return scale * landscapeFactor;
+}
+
+function getRendererProfile(container) {
+  const isCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  const isMobile = container.clientWidth < 768
+    || (isCoarsePointer && container.clientWidth < 1024);
+
+  return {
+    isMobile,
+    pixelRatio: Math.min(
+      window.devicePixelRatio || 1,
+      isMobile ? MOBILE_MAX_PIXEL_RATIO : DESKTOP_MAX_PIXEL_RATIO
+    ),
+    mapSamples: isMobile ? MOBILE_MAP_SAMPLES : DESKTOP_MAP_SAMPLES,
+  };
 }
 
 function getPointerDistance(pointers) {
@@ -196,7 +216,7 @@ function getClusterLabel(cluster, category) {
   return {
     icon: categoryLabel.icon,
     country,
-    flagUrl: country ? getCountryFlagUrl(country) : '',
+    flag: countryCodes.length === 1 ? countryCodeToFlag(countryCodes[0]) : '',
     text: count > 1
       ? `${count} ${categoryLabel.plural} here`
       : cluster.members[0]?.name || categoryLabel.singular,
@@ -242,8 +262,10 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     startScale: BASE_SCALE,
   });
   const activePointersRef = useRef(new Map());
-  const labelElementsRef = useRef(new Map());
-  const visibleLabelKeysRef = useRef(new Set());
+  const labelElementsRef = useRef([]);
+  const assignedLabelClustersRef = useRef([]);
+  const pixelRatioRef = useRef(1);
+  const prefersReducedMotionRef = useRef(false);
   const lastRenderTimeRef = useRef(null);
 
   const markerColor = CATEGORY_COLORS[category] ?? '#FF9900';
@@ -287,7 +309,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     if (!flyToTarget) return;
     const target = getRotationForLocation(flyToTarget.lat, flyToTarget.lng);
     animationRef.current = {
-      startTime: performance.now(),
+      startTime: null,
       duration: 1000,
       startPhi: phiRef.current,
       startTheta: thetaRef.current,
@@ -312,9 +334,15 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   useEffect(() => {
     if (!canvasRef.current || !containerRef.current) return;
 
+    const rendererProfile = getRendererProfile(containerRef.current);
+    const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    pixelRatioRef.current = rendererProfile.pixelRatio;
+    prefersReducedMotionRef.current = reducedMotionQuery.matches;
+    if (reducedMotionQuery.matches) autoRotateEnabledRef.current = false;
+
     const updateSize = () => {
       if (!containerRef.current) return;
-      const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+      const pixelRatio = pixelRatioRef.current;
       const width = Math.max(1, Math.round(containerRef.current.clientWidth * pixelRatio));
       const height = Math.max(1, Math.round(containerRef.current.clientHeight * pixelRatio));
       sizeRef.current = { width, height };
@@ -327,14 +355,14 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     updateSize();
 
     const globe = createGlobe(canvasRef.current, {
-      devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
+      devicePixelRatio: rendererProfile.pixelRatio,
       width: sizeRef.current.width,
       height: sizeRef.current.height,
       phi: phiRef.current,
       theta: thetaRef.current,
       dark: themeRef.current.darkMode ? 1 : 0,
       diffuse: themeRef.current.darkMode ? 1.1 : 1.35,
-      mapSamples: 16000,
+      mapSamples: rendererProfile.mapSamples,
       mapBrightness: themeRef.current.darkMode ? 5 : 6,
       mapBaseBrightness: themeRef.current.darkMode ? 0.05 : 0.18,
       baseColor: themeRef.current.darkMode ? [0.06, 0.1, 0.16] : [0.33, 0.42, 0.5],
@@ -365,6 +393,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           if (progress === 1) animationRef.current = null;
         } else if (
           autoRotateEnabledRef.current &&
+          !prefersReducedMotionRef.current &&
           !pauseRotationRef.current &&
           !markerFocusLockedRef.current &&
           !pointerStateRef.current.active
@@ -404,14 +433,13 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           markerCanvasRef.current,
           projectedMarkersRef.current,
           theme.markerRgb,
-          Math.min(window.devicePixelRatio || 1, 2)
+          pixelRatioRef.current
         );
 
-        const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
-        const cssWidth = sizeRef.current.width / pixelRatio;
-        const maxVisibleLabels = cssWidth < 640 ? MAX_MOBILE_LABELS : MAX_DESKTOP_LABELS;
+        const pixelRatio = pixelRatioRef.current;
+        const maxVisibleLabels = rendererProfile.isMobile ? MAX_MOBILE_LABELS : MAX_DESKTOP_LABELS;
         const occupiedRectangles = [];
-        const nextVisibleLabelKeys = new Set();
+        let nextPoolIndex = 0;
         const labelCandidates = projectedMarkersRef.current
           .filter((marker) => marker.z >= LABEL_FOCUS_START)
           .sort((first, second) => {
@@ -420,10 +448,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           });
 
         for (const marker of labelCandidates) {
-          if (nextVisibleLabelKeys.size >= maxVisibleLabels) break;
-
-          const element = labelElementsRef.current.get(marker.key);
-          if (!element) continue;
+          if (nextPoolIndex >= maxVisibleLabels) break;
 
           const x = marker.x / pixelRatio;
           const y = marker.y / pixelRatio;
@@ -441,7 +466,22 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           if (occupiedRectangles.some((occupied) => rectanglesOverlap(rectangle, occupied))) continue;
 
           occupiedRectangles.push(rectangle);
-          nextVisibleLabelKeys.add(marker.key);
+          const element = labelElementsRef.current[nextPoolIndex];
+          if (!element) continue;
+
+          const labelSignature = `${marker.key}|${marker.label.text}|${marker.label.country}|${marker.label.flag}`;
+          if (element.dataset.labelSignature !== labelSignature) {
+            const accessibleLabel = `${marker.label.text}${marker.label.country ? ` · ${marker.label.country}` : ''}`;
+            const iconElement = element.querySelector('.minimal-marker-label__icon');
+            const textElement = element.querySelector('.minimal-marker-label__text');
+            element.dataset.labelSignature = labelSignature;
+            element.setAttribute('aria-label', accessibleLabel);
+            element.setAttribute('title', accessibleLabel);
+            iconElement?.classList.toggle('minimal-marker-label__icon--flag', Boolean(marker.label.flag));
+            if (iconElement) iconElement.textContent = marker.label.flag || marker.label.icon;
+            if (textElement) textElement.textContent = marker.label.text;
+          }
+          assignedLabelClustersRef.current[nextPoolIndex] = marker;
 
           const focus = clamp(
             (marker.z - LABEL_FOCUS_START) / (LABEL_FOCUS_FULL - LABEL_FOCUS_START),
@@ -452,27 +492,68 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           element.style.setProperty('--minimal-label-y', `${labelBottom}px`);
           element.style.setProperty('--minimal-label-scale', String(0.92 + focus * 0.08));
           element.style.opacity = String(focus);
-          element.style.visibility = focus > 0.04 ? 'visible' : 'hidden';
-          element.style.pointerEvents = focus > 0.55 ? 'auto' : 'none';
+          const isVisible = focus > 0.04;
+          const isInteractive = focus > 0.55;
+          if (element.dataset.visible !== String(isVisible)) {
+            element.dataset.visible = String(isVisible);
+            element.style.visibility = isVisible ? 'visible' : 'hidden';
+            element.setAttribute('aria-hidden', isVisible ? 'false' : 'true');
+          }
+          if (element.dataset.interactive !== String(isInteractive)) {
+            element.dataset.interactive = String(isInteractive);
+            element.style.pointerEvents = isInteractive ? 'auto' : 'none';
+            element.tabIndex = isInteractive ? 0 : -1;
+          }
+          nextPoolIndex += 1;
         }
 
-        visibleLabelKeysRef.current.forEach((key) => {
-          if (nextVisibleLabelKeys.has(key)) return;
-          const element = labelElementsRef.current.get(key);
-          if (!element) return;
+        for (let index = nextPoolIndex; index < LABEL_POOL_SIZE; index += 1) {
+          const element = labelElementsRef.current[index];
+          if (!element || !assignedLabelClustersRef.current[index]) continue;
           element.style.opacity = '0';
           element.style.visibility = 'hidden';
           element.style.pointerEvents = 'none';
-        });
-        visibleLabelKeysRef.current = nextVisibleLabelKeys;
+          element.setAttribute('aria-hidden', 'true');
+          element.tabIndex = -1;
+          element.dataset.visible = 'false';
+          element.dataset.interactive = 'false';
+          assignedLabelClustersRef.current[index] = null;
+        }
       },
     });
 
+    let isIntersecting = true;
+    let rendererPaused = false;
+    const setRendererPaused = (paused) => {
+      if (rendererPaused === paused) return;
+      rendererPaused = paused;
+      globe.toggle();
+      if (!paused) lastRenderTimeRef.current = null;
+    };
+    const syncRendererVisibility = () => {
+      setRendererPaused(document.hidden || !isIntersecting);
+    };
+    const handleReducedMotionChange = (event) => {
+      prefersReducedMotionRef.current = event.matches;
+      if (event.matches) autoRotateEnabledRef.current = false;
+      else if (!pauseRotationRef.current && !markerFocusLockedRef.current) autoRotateEnabledRef.current = true;
+    };
+    const intersectionObserver = new IntersectionObserver(([entry]) => {
+      isIntersecting = entry?.isIntersecting ?? true;
+      syncRendererVisibility();
+    }, { threshold: 0.01 });
+
     const observer = new ResizeObserver(updateSize);
     observer.observe(containerRef.current);
+    intersectionObserver.observe(containerRef.current);
+    document.addEventListener('visibilitychange', syncRendererVisibility);
+    reducedMotionQuery.addEventListener('change', handleReducedMotionChange);
 
     return () => {
       observer.disconnect();
+      intersectionObserver.disconnect();
+      document.removeEventListener('visibilitychange', syncRendererVisibility);
+      reducedMotionQuery.removeEventListener('change', handleReducedMotionChange);
       if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
       globe.destroy();
     };
@@ -482,7 +563,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     autoRotateEnabledRef.current = false;
     if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
     idleTimerRef.current = setTimeout(() => {
-      if (!markerFocusLockedRef.current && !pauseRotationRef.current) {
+      if (!prefersReducedMotionRef.current && !markerFocusLockedRef.current && !pauseRotationRef.current) {
         autoRotateEnabledRef.current = true;
       }
     }, IDLE_TIMEOUT_MS);
@@ -546,7 +627,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     if (!canvasRef.current) return null;
 
     const rect = canvasRef.current.getBoundingClientRect();
-    const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+    const pixelRatio = pixelRatioRef.current;
     const x = (event.clientX - rect.left) * pixelRatio;
     const y = (event.clientY - rect.top) * pixelRatio;
 
@@ -699,6 +780,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   }
 
   function handleLabelClick(cluster) {
+    if (!cluster) return;
     markerFocusLockedRef.current = true;
     autoRotateEnabledRef.current = false;
     if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
@@ -730,43 +812,25 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         className="pointer-events-none absolute inset-0 z-20 h-full w-full"
       />
       <div className="pointer-events-none absolute inset-0 z-30" aria-label="Visible globe locations">
-        {clusters.map((cluster) => (
+        {Array.from({ length: LABEL_POOL_SIZE }, (_, index) => (
           <button
-            key={cluster.key}
+            key={index}
             ref={(element) => {
-              if (element) labelElementsRef.current.set(cluster.key, element);
-              else labelElementsRef.current.delete(cluster.key);
+              labelElementsRef.current[index] = element;
             }}
             type="button"
             className={`minimal-marker-label ${darkMode ? 'minimal-marker-label--dark' : 'minimal-marker-label--light'}`}
             style={{ '--minimal-marker-color': markerColor }}
-            aria-label={`${cluster.label.text}${cluster.label.country ? ` · ${cluster.label.country}` : ''}`}
-            title={`${cluster.label.text}${cluster.label.country ? ` · ${cluster.label.country}` : ''}`}
+            aria-hidden="true"
+            tabIndex={-1}
             onPointerDown={(event) => event.stopPropagation()}
             onClick={(event) => {
               event.stopPropagation();
-              handleLabelClick(cluster);
+              handleLabelClick(assignedLabelClustersRef.current[index]);
             }}
           >
-            <span
-              className={`minimal-marker-label__icon${cluster.label.flagUrl ? ' minimal-marker-label__icon--flag' : ''}`}
-              aria-hidden="true"
-            >
-              {cluster.label.flagUrl ? (
-                <img
-                  src={cluster.label.flagUrl}
-                  alt=""
-                  draggable="false"
-                  onError={(event) => {
-                    const icon = event.currentTarget.parentElement;
-                    if (!icon) return;
-                    icon.classList.remove('minimal-marker-label__icon--flag');
-                    icon.textContent = cluster.label.icon;
-                  }}
-                />
-              ) : cluster.label.icon}
-            </span>
-            <span className="minimal-marker-label__text">{cluster.label.text}</span>
+            <span className="minimal-marker-label__icon" aria-hidden="true" />
+            <span className="minimal-marker-label__text" />
           </button>
         ))}
       </div>

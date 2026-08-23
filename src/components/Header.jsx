@@ -25,27 +25,38 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
   const activeModeLabel = GLOBE_MODES.find((mode) => mode.id === activeSection)?.label ?? 'Community';
 
   useEffect(() => {
+    if (!window.matchMedia('(min-width: 640px)').matches) return undefined;
+
     const controller = new AbortController();
-
-    fetch('https://api.github.com/repos/Jagatees/aws-community-world', {
-      headers: { Accept: 'application/vnd.github+json' },
-      signal: controller.signal,
-    })
-      .then((response) => {
-        if (!response.ok) throw new Error(`GitHub returned ${response.status}`);
-        return response.json();
+    const refreshStats = () => {
+      fetch('https://api.github.com/repos/Jagatees/aws-community-world', {
+        headers: { Accept: 'application/vnd.github+json' },
+        signal: controller.signal,
       })
-      .then((repository) => {
-        setRepoStats({
-          stars: repository.stargazers_count ?? 0,
-          forks: repository.forks_count ?? 0,
+        .then((response) => {
+          if (!response.ok) throw new Error(`GitHub returned ${response.status}`);
+          return response.json();
+        })
+        .then((repository) => {
+          setRepoStats({
+            stars: repository.stargazers_count ?? 0,
+            forks: repository.forks_count ?? 0,
+          });
+        })
+        .catch((error) => {
+          if (error.name !== 'AbortError') console.warn('Could not refresh GitHub repository stats.', error);
         });
-      })
-      .catch((error) => {
-        if (error.name !== 'AbortError') console.warn('Could not refresh GitHub repository stats.', error);
-      });
+    };
 
-    return () => controller.abort();
+    const idleId = 'requestIdleCallback' in window
+      ? window.requestIdleCallback(refreshStats, { timeout: 2500 })
+      : window.setTimeout(refreshStats, 1200);
+
+    return () => {
+      controller.abort();
+      if ('cancelIdleCallback' in window) window.cancelIdleCallback(idleId);
+      else window.clearTimeout(idleId);
+    };
   }, []);
 
   useEffect(() => {

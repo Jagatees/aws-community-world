@@ -6,7 +6,8 @@ import sharp from 'sharp';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'src', 'data');
-const OUTPUT_DIR = path.join(ROOT, 'public', 'geolibre');
+// GeoLibre project files are optional local exports, not runtime web assets.
+const OUTPUT_DIR = path.join(ROOT, 'tmp', 'geolibre');
 const MARKER_CACHE_DIR = path.join(ROOT, 'node_modules', '.cache', 'geolibre-markers');
 const BASEMAP = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 const MARKER_SIZE = 64;
