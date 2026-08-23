@@ -22,6 +22,12 @@ function AnimatedNumber({ target, duration = 1800, delay = 0 }) {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
+    const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reducedMotionQuery.matches) {
+      const reducedMotionFrame = requestAnimationFrame(() => setValue(target));
+      return () => cancelAnimationFrame(reducedMotionFrame);
+    }
+
     let raf;
     const timeoutId = setTimeout(() => {
       let startTime = null;
@@ -319,48 +325,22 @@ function OrbitGlobe({ isEvents }) {
 }
 
 const MOBILE_COMMUNITY_STATS = [
-  { value: '250', label: 'Heroes', icon: 'heroes' },
-  { value: '2.8K', label: 'Builders', icon: 'builders' },
-  { value: 'Global', label: 'Events', icon: 'events' },
+  { key: 'heroes', count: 252, label: 'Heroes' },
+  { key: 'builders', count: 3038, label: 'Builders', fullLabel: 'Community Builders' },
+  { key: 'groups', count: 583, label: 'User groups', fullLabel: 'User Groups' },
+  { key: 'students', count: 897, label: 'Students', fullLabel: 'Student Builder Groups' },
+  { key: 'kiro', count: 2, label: 'Kiro', fullLabel: 'Kiro Ambassadors' },
 ];
 
 const MOBILE_EVENT_STATS = [
-  { value: '8', label: 'Kiro events', icon: 'heroes' },
-  { value: '38', label: 'Community days', icon: 'builders' },
-  { value: 'Live', label: 'Worldwide', icon: 'events' },
+  { key: 'kiro', count: 8, label: 'Kiro events', fullLabel: 'Kiro Events' },
+  { key: 'community-days', count: 38, label: 'Community days', fullLabel: 'Community Days' },
 ];
-
-function MobileStatIcon({ type }) {
-  if (type === 'events') {
-    return (
-      <svg viewBox="0 0 28 28" aria-hidden="true">
-        <rect x="4" y="6" width="20" height="18" rx="3" />
-        <path d="M9 3v6M19 3v6M4 11h20M9 16h3M16 16h3M9 20h3" />
-      </svg>
-    );
-  }
-
-  if (type === 'builders') {
-    return (
-      <svg viewBox="0 0 28 28" aria-hidden="true">
-        <circle cx="14" cy="8" r="4" />
-        <path d="M6 25v-3c0-4.4 3.6-8 8-8s8 3.6 8 8v3M22 11a3.5 3.5 0 0 1 0 7" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg viewBox="0 0 28 28" aria-hidden="true">
-      <circle cx="10" cy="9" r="4" />
-      <circle cx="20" cy="11" r="3" />
-      <path d="M2 24v-2c0-4.4 3.6-8 8-8s8 3.6 8 8v2M19 16c3.9 0 7 2.7 7 6v2" />
-    </svg>
-  );
-}
 
 function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) {
   const isEvents = activeSection === 'events';
   const stats = isEvents ? MOBILE_EVENT_STATS : MOBILE_COMMUNITY_STATS;
+  const total = stats.reduce((sum, stat) => sum + stat.count, 0);
 
   return (
     <section
@@ -368,33 +348,29 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
       aria-labelledby="mobile-home-title"
     >
       <div className="mobile-home__ambient" aria-hidden="true" />
-      <header className="mobile-home__header">
-        <div className="mobile-home__brand" aria-label="AWS Globe home">
-          <span>AWS</span> Globe
-        </div>
-        <button
-          type="button"
-          className="mobile-home__mode"
-          onClick={() => onSectionChange?.(isEvents ? 'community' : 'events')}
-          aria-label={`Switch to ${isEvents ? 'Community' : 'Events'} home`}
-        >
-          {isEvents ? 'Events' : 'Community'}
-          <svg viewBox="0 0 14 14" aria-hidden="true"><path d="m4 5 3 3 3-3" /></svg>
-        </button>
-      </header>
 
       <main className="mobile-home__main">
+        <div className="mobile-home__globe-stage">
+          <MobileHomeGlobe isEvents={isEvents} />
+        </div>
+
         <div className="mobile-home__copy">
+          <span className="mobile-home__eyebrow">AWS</span>
           <h1 id="mobile-home-title">
-            {isEvents ? <>Explore AWS<br />Community Events</> : <>Explore the<br />AWS Community</>}
+            <button
+              type="button"
+              className="mobile-home__headline-mode"
+              onClick={() => onSectionChange?.(isEvents ? 'community' : 'events')}
+              aria-label={`Switch to ${isEvents ? 'Community' : 'Events'} Globe`}
+            >
+              <span className="mobile-home__click-hint" aria-hidden="true">Click me</span>
+              {isEvents ? 'Event' : 'Community'}
+            </button>{' '}
+            <span>Globe</span>
           </h1>
           <p>{isEvents
             ? 'Meetups, community days and builder events — all around the world.'
             : 'People, groups and events — all around the world.'}</p>
-        </div>
-
-        <div className="mobile-home__globe-stage">
-          <MobileHomeGlobe isEvents={isEvents} />
         </div>
 
         <button type="button" className="mobile-home__enter" onClick={onStart}>
@@ -402,17 +378,36 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
           <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h11M10 5l4 4-4 4" /></svg>
         </button>
 
-        <dl className="mobile-home__stats" aria-label={isEvents ? 'Event totals' : 'Community totals'}>
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <dt>
-                <MobileStatIcon type={stat.icon} />
-                <strong>{stat.value}</strong>
-              </dt>
-              <dd>{stat.label}</dd>
-            </div>
-          ))}
-        </dl>
+        <section
+          className={`mobile-home__stats${isEvents ? ' mobile-home__stats--events' : ''}`}
+          aria-label={isEvents ? 'Event totals' : 'Community totals'}
+        >
+          <div className="mobile-home__stats-total">
+            <strong><AnimatedNumber key={`${activeSection}-total`} target={total} duration={1600} /></strong>
+            <p>{isEvents ? 'Events worldwide' : 'Community members worldwide'}</p>
+          </div>
+          <dl className="mobile-home__stats-breakdown">
+            {stats.map((stat, index) => (
+              <div
+                key={stat.key}
+                className={`mobile-home__stat mobile-home__stat--${stat.key}`}
+                aria-label={`${stat.count.toLocaleString()} ${stat.fullLabel ?? stat.label}`}
+              >
+                <dt>
+                  <strong>
+                    <AnimatedNumber
+                      key={`${activeSection}-${stat.key}`}
+                      target={stat.count}
+                      duration={1350}
+                      delay={180 + index * 80}
+                    />
+                  </strong>
+                </dt>
+                <dd>{stat.label}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
       </main>
     </section>
   );
