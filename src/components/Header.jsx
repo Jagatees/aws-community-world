@@ -73,8 +73,8 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
         WebkitBackdropFilter: 'blur(18px)',
       }}
     >
-      <span className="text-lg font-bold tracking-tight" style={{ color: '#FF9900' }}>AWS</span>
-      <span style={{ color: border }} className="text-lg select-none" aria-hidden="true">|</span>
+      <span className="app-brand-aws text-lg font-bold tracking-tight" style={{ color: '#FF9900' }}>AWS</span>
+      <span style={{ color: border }} className="app-brand-divider text-lg select-none" aria-hidden="true">|</span>
       <div ref={modeMenuRef} className="globe-mode-picker text-base font-semibold" style={{ color: text }}>
         <button
           type="button"
@@ -110,13 +110,13 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
         )}
       </div>
       <span
-        className="text-lg font-bold tracking-tight"
+        className="app-brand-globe text-lg font-bold tracking-tight"
         style={{ color: text }}
       >
         Globe
       </span>
 
-      <div className="flex-1" />
+      <div className="header-spacer flex-1" />
 
       {/* LinkedIn link */}
       <a
@@ -125,7 +125,7 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
         rel="noopener noreferrer"
         aria-label="Connect with the creator on LinkedIn"
         title="Connect with the creator on LinkedIn"
-        className="inline-flex items-center gap-1.5 rounded px-1 py-1 transition-colors"
+        className="header-external-link inline-flex items-center gap-1.5 rounded px-1 py-1 transition-colors"
         style={{ color: muted }}
         onMouseEnter={(event) => (event.currentTarget.style.color = '#FF9900')}
         onMouseLeave={(event) => (event.currentTarget.style.color = muted)}
@@ -143,7 +143,7 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
         rel="noopener noreferrer"
         aria-label="Join AWSome Updates on Telegram for tech news"
         title="Join my Telegram channel for tech news"
-        className="inline-flex items-center gap-1.5 rounded px-1 py-1 transition-colors"
+        className="header-external-link inline-flex items-center gap-1.5 rounded px-1 py-1 transition-colors"
         style={{ color: muted }}
         onMouseEnter={(event) => (event.currentTarget.style.color = '#FF9900')}
         onMouseLeave={(event) => (event.currentTarget.style.color = muted)}
@@ -161,7 +161,7 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
         rel="noopener noreferrer"
         aria-label={`GitHub repository, ${repoStats.stars} stars and ${repoStats.forks} forks`}
         title={`${repoStats.stars} stars · ${repoStats.forks} forks`}
-        className="header-repo-link inline-flex items-center gap-2 rounded px-1 py-1 transition-colors"
+        className="header-external-link header-repo-link inline-flex items-center gap-2 rounded px-1 py-1 transition-colors"
         style={{ color: muted }}
         onMouseEnter={(event) => (event.currentTarget.style.color = '#FF9900')}
         onMouseLeave={(event) => (event.currentTarget.style.color = muted)}

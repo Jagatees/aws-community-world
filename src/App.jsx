@@ -2,6 +2,7 @@ import { lazy, Suspense, useState, useCallback, useEffect, useMemo } from 'react
 import { SparkleIcon } from '@phosphor-icons/react';
 import Header from './components/Header';
 import TabNav from './components/TabNav';
+import MobileNavigation from './components/MobileNavigation';
 import NewsPanel from './components/NewsPanel';
 import ProfileCard from './components/ProfileCard';
 import TagFilter from './components/TagFilter';
@@ -29,6 +30,7 @@ const CATEGORY_COLORS = {
   'kiro-events': '#7B61FF',
   'community-days': '#FF9900',
   'aws-ambassadors': '#2D72D2',
+  news: '#FF9900',
 };
 
 const CATEGORY_LABELS = {
@@ -40,6 +42,7 @@ const CATEGORY_LABELS = {
   'kiro-events': 'Kiro Events',
   'community-days': 'Community Days',
   'aws-ambassadors': 'AWS Ambassador',
+  news: 'News',
 };
 
 const DEFAULT_ROUTE_STATE = {
@@ -718,9 +721,43 @@ export default function App() {
           />
         )}
 
+        {!showSplash && !isExperimentalView && !isInsightsView && (
+          <MobileNavigation
+            darkMode={darkMode}
+            section={activeSection}
+            activeCategory={activeCategory}
+            activeLabel={CATEGORY_LABELS[activeCategory] ?? activeCategory}
+            resultCount={isNewsView ? newsItems.length : hudCount}
+            onCategoryChange={handleCategoryChange}
+            regions={isKiroView || isAwsAmbassadorView ? [] : regions}
+            regionCounts={isKiroView || isAwsAmbassadorView ? {} : regionCounts}
+            selectedRegions={selectedRegions}
+            onRegionChange={handleRegionChange}
+            countries={isKiroView || isAwsAmbassadorView ? [] : regionCountries}
+            countryCounts={isKiroView || isAwsAmbassadorView ? {} : countryCounts}
+            selectedCountries={selectedCountries}
+            onCountryChange={setSelectedCountries}
+            tags={!isCommunityDaysView && !isNewsView && !isKiroView && !isAwsAmbassadorView && hasTagFilters ? tags : []}
+            selectedTag={selectedTag}
+            onTagChange={setSelectedTag}
+            globeDesign={globeDesign}
+            globeDesigns={availableGlobeDesigns}
+            onGlobeDesignChange={setGlobeDesign}
+            globeDesignLabel={designButtonLabel}
+            onNearMe={handleNearMe}
+            nearMeLoading={nearMeLoading}
+            canUseNearMe={!isListView && !isIconView && !isGeoLibreView}
+            onThemeChange={setDarkMode}
+            newOnly={newOnly}
+            newMemberCount={newMemberCount}
+            canShowNewArrivals={NEW_ARRIVAL_CATEGORIES.has(activeCategory) && (newMemberCount > 0 || newOnly)}
+            onNewOnlyToggle={handleNewOnlyToggle}
+          />
+        )}
+
         {!isExperimentalView && !isInsightsView && !isCommunityDaysView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
-            className="flex items-center gap-2 overflow-x-auto px-4 py-2"
+            className="desktop-tag-filter-bar flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
               backgroundColor: filterBarBg,
               backdropFilter: 'blur(18px)',
