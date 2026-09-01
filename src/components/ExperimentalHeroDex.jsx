@@ -41,6 +41,41 @@ function recordNumber(hero, members) {
   return String(Math.max(0, index) + 1).padStart(3, '0');
 }
 
+function LeaderAvatar({ leader }) {
+  const [failed, setFailed] = useState(false);
+  const imageUrl = leader.imageUrl;
+  const showImage = imageUrl && !imageUrl.includes('default-avatar') && !failed;
+
+  return showImage ? (
+    <img
+      className="hero-scan__leader-avatar"
+      src={imageUrl}
+      alt=""
+      loading="lazy"
+      onError={() => setFailed(true)}
+    />
+  ) : (
+    <span className="hero-scan__leader-avatar hero-scan__leader-avatar--fallback" aria-hidden="true">
+      {initials(leader.name)}
+    </span>
+  );
+}
+
+function SocialChannels({ links, compact = false }) {
+  const entries = Object.entries(links ?? {}).filter(([, url]) => Boolean(url));
+  if (!entries.length) return null;
+
+  return (
+    <div className={`hero-scan__channels ${compact ? 'hero-scan__channels--compact' : ''}`}>
+      {entries.map(([network, url]) => (
+        <a key={network} href={url} target="_blank" rel="noopener noreferrer">
+          <span>{SOCIAL_LABELS[network] ?? network}</span><i>↗</i>
+        </a>
+      ))}
+    </div>
+  );
+}
+
 const CATEGORY_CONFIG = {
   heroes: {
     eyebrow: 'AWS community // heroes', title: 'Hero archive',
@@ -157,6 +192,11 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
         .some((value) => value.toLowerCase().includes(normalizedQuery));
     });
   }, [config, members, query]);
+  const columnCount = Math.ceil(filteredHeroes.length / 3);
+  const activeColumn = columnCount ? wrapIndex(Math.round(rotation), columnCount) : 0;
+  const activeRecordIndex = filteredHeroes.length
+    ? Math.min(activeColumn * 3 + 1, filteredHeroes.length - 1)
+    : 0;
 
   const animateRotation = useCallback(() => {
     if (animationFrameRef.current !== null) return;
@@ -448,7 +488,6 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
         ) : filteredHeroes.length ? (
           <div className="hero-dex__tiles">
             {(() => {
-              const columnCount = Math.ceil(filteredHeroes.length / 3);
               const visibleColumnCount = Math.min(19, columnCount);
               return [0, 1, 2].flatMap((row) => {
               const rowDirection = row === 1 ? 1 : -1;
@@ -523,10 +562,38 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
         )}
       </div>
 
-      <footer className="hero-dex__controls">
+      <footer
+        className="hero-dex__controls"
+        onMouseEnter={pauseCarousel}
+        onMouseLeave={resumeCarousel}
+        onFocusCapture={pauseCarousel}
+        onBlurCapture={(event) => {
+          if (!event.currentTarget.contains(event.relatedTarget)) resumeCarousel();
+        }}
+      >
         <button type="button" onClick={() => rotate(-1)} disabled={!filteredHeroes.length} aria-label="Rotate left">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
         </button>
+        <div className="hero-dex__scrub-bar">
+          <span className="hero-dex__scrub-count" aria-hidden="true">
+            {filteredHeroes.length
+              ? `${String(activeRecordIndex + 1).padStart(3, '0')} / ${String(filteredHeroes.length).padStart(3, '0')}`
+              : '000 / 000'}
+          </span>
+          <input
+            type="range"
+            min={0}
+            max={Math.max(0, columnCount - 1)}
+            value={activeColumn}
+            onChange={(event) => moveToRotation(Number.parseInt(event.target.value, 10))}
+            disabled={!filteredHeroes.length}
+            className="hero-dex__scrub-slider"
+            aria-label="Move through archive columns"
+            aria-valuetext={filteredHeroes.length
+              ? `Centered record ${activeRecordIndex + 1} of ${filteredHeroes.length}`
+              : 'No archive records'}
+          />
+        </div>
         <button type="button" onClick={() => rotate(1)} disabled={!filteredHeroes.length} aria-label="Rotate right">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
         </button>
@@ -543,7 +610,7 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
             {[-2, -1, 0, 1, 2].map((offset) => {
               const hero = filteredHeroes[wrapIndex(selectedIndex + offset, filteredHeroes.length)];
               return (
-                <span key={hero.id} style={{ '--ghost-offset': offset }}>
+                <span key={`${hero.id}:${offset}`} style={{ '--ghost-offset': offset }}>
                   <Portrait hero={hero} category={category} config={config} />
                 </span>
               );
@@ -599,16 +666,40 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
             </div>
 
             <aside className="hero-scan__panel hero-scan__panel--right">
-              <p className="hero-scan__panel-label">Connected channels</p>
-              <div className="hero-scan__channels">
-                {Object.entries(selectedHero.socialLinks ?? {}).length ? (
-                  Object.entries(selectedHero.socialLinks).map(([network, url]) => (
-                    <a key={network} href={url} target="_blank" rel="noopener noreferrer">
-                      <span>{SOCIAL_LABELS[network] ?? network}</span><i>↗</i>
-                    </a>
-                  ))
-                ) : <p>No public social channels listed.</p>}
-              </div>
+              <p className="hero-scan__panel-label">
+                {selectedHero.ledBy?.length ? 'Group leaders' : 'Connected channels'}
+              </p>
+              {selectedHero.ledBy?.length ? (
+                <div className="hero-scan__leaders">
+                  {selectedHero.ledBy.map((leader) => (
+                    <section className="hero-scan__leader-card" key={leader.profileUrl || leader.name}>
+                      <div className="hero-scan__leader-header">
+                        <LeaderAvatar leader={leader} />
+                        <div className="hero-scan__leader-info">
+                          <strong className="hero-scan__leader-name">{leader.name || 'Group leader'}</strong>
+                          {leader.profileUrl && (
+                            <a className="hero-scan__leader-profile" href={leader.profileUrl} target="_blank" rel="noopener noreferrer">
+                              Builder profile <span aria-hidden="true">↗</span>
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                      <SocialChannels links={leader.socialLinks} compact />
+                    </section>
+                  ))}
+                </div>
+              ) : (
+                <SocialChannels links={selectedHero.socialLinks} />
+              )}
+              {!selectedHero.ledBy?.length && !Object.keys(selectedHero.socialLinks ?? {}).length && (
+                <p className="hero-scan__empty-channels">No public social channels listed.</p>
+              )}
+              {selectedHero.ledBy?.length > 0 && Object.keys(selectedHero.socialLinks ?? {}).length > 0 && (
+                <div className="hero-scan__group-channels">
+                  <p className="hero-scan__panel-label">Group channels</p>
+                  <SocialChannels links={selectedHero.socialLinks} />
+                </div>
+              )}
               <div className="hero-scan__signal">
                 <span>Profile link</span>
                 <div><i /><i /><i /><i /><i /></div>
