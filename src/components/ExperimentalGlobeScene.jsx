@@ -5,6 +5,7 @@ import { CSS3DObject, CSS3DRenderer } from 'three/addons/renderers/CSS3DRenderer
 import { getMemberImage } from '../utils/memberMarkers';
 import ExperimentalEventReveal from './ExperimentalEventReveal';
 import ExperimentalGlobalInfra from './ExperimentalGlobalInfra';
+import ExperimentalPixelMap from './ExperimentalPixelMap';
 import './ExperimentalGlobeScene.css';
 
 const HERO_PLACEHOLDER = 'https://d1.awsstatic.com/getting-started-guides/new-heros-nov-2022/AWS-Heroes%20program-community-heroes_logo_dark.efe13e0d50fdf64d8a4524bf876d79a64dd82488.png';
@@ -233,6 +234,7 @@ function HeroOrbitScene({ members, onMarkerClick, cardOpen }) {
 }
 
 const EXPERIMENTS = [
+  { id: 'pixel-build', label: 'Country Mosaic', description: 'One square per country' },
   { id: 'hero-orbit', label: 'Hero Orbit', description: 'Browse AWS Heroes' },
   { id: 'event-reveal', label: 'Event Reveal', description: 'Play a cinematic globe intro' },
   { id: 'global-infra', label: 'Global Infra', description: 'Explore AWS infrastructure' },
@@ -259,7 +261,9 @@ export default function ExperimentalGlobeScene(props) {
       </nav>
 
       <div className="experimental-lab__stage">
-        {experiment === 'hero-orbit' ? (
+        {experiment === 'pixel-build' ? (
+          <ExperimentalPixelMap />
+        ) : experiment === 'hero-orbit' ? (
           <HeroOrbitScene {...props} />
         ) : experiment === 'event-reveal' ? (
           <ExperimentalEventReveal />
