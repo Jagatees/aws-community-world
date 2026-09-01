@@ -506,6 +506,15 @@ export default function TrendsDashboard() {
     return { ...entry, net: hasComparison ? data.changes?.net ?? 0 : 0, hasComparison };
   });
   const largestRegion = [...regionRows].sort((left, right) => right.current - left.current)[0] ?? null;
+  const growthDriver = [...momentumItems]
+    .filter((entry) => CORE_CATEGORY_IDS.has(entry.id) && entry.hasComparison)
+    .sort((left, right) => right.net - left.net)[0] ?? null;
+  const growthDriverShare = coreDelta > 0 && growthDriver?.net > 0
+    ? Math.round((growthDriver.net / coreDelta) * 1000) / 10
+    : null;
+  const growthDriverQuality = growthDriver
+    ? selectedSnapshot?.categories?.[growthDriver.id]?.changes?.quality?.confidence ?? 'baseline'
+    : 'baseline';
 
   useGSAP(() => {
     if (!dashboardRef.current || prefersReducedMotion()) return undefined;
@@ -553,9 +562,9 @@ export default function TrendsDashboard() {
       <div className="insights-ambient insights-ambient-two" aria-hidden="true" />
       <header className="regional-trends-header trends-dashboard-header">
         <div>
-          <span className="regional-trends-eyebrow">AWS community intelligence</span>
-          <h1>The community, in motion.</h1>
-          <p>A living view of who is building, where networks are growing, and what changed between public directory snapshots.</p>
+          <span className="regional-trends-eyebrow">AWS community pulse</span>
+          <h1>Community analytics</h1>
+          <p>Track directory growth, regional movement, identity changes, and the next wave of community activity.</p>
         </div>
         <div className="trends-dashboard-status" aria-label={`Snapshot ${selectedSnapshotIndex + 1} of ${snapshots.length}`} key={selectedSnapshot.date}>
           <span><i aria-hidden="true" /> Snapshot {selectedSnapshotIndex + 1} of {snapshots.length}</span>
@@ -564,7 +573,17 @@ export default function TrendsDashboard() {
       </header>
 
       <div className="regional-trends-content trends-dashboard-content">
-        <section className="insights-briefing-grid" aria-label="Community executive summary">
+        <nav className="insights-view-nav" aria-label="Insights sections">
+          <a href="#insights-overview" className="is-active">Overview</a>
+          <a href="#insights-movement">Movement</a>
+          <a href="#insights-regions">Regions</a>
+          <a href="#insights-events">Events</a>
+          <span>{snapshots.length} snapshots · {formatDate(snapshots[0].date, { year: false })} to {formatDate(snapshots.at(-1).date, { year: false })}</span>
+        </nav>
+
+        <SnapshotNavigator snapshots={snapshots} selectedIndex={selectedSnapshotIndex} onChange={setSelectedSnapshotIndex} />
+
+        <section id="insights-overview" className="insights-briefing-grid" aria-label="Community executive summary">
           <article className="insights-footprint-card insights-panel">
             <div className="insights-footprint-topline">
               <span>{snapshotIsLatest ? 'Live community footprint' : 'Historical community footprint'}</span>
@@ -583,9 +602,7 @@ export default function TrendsDashboard() {
           <MomentumBars items={momentumItems} selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
         </section>
 
-        <SnapshotNavigator snapshots={snapshots} selectedIndex={selectedSnapshotIndex} onChange={setSelectedSnapshotIndex} />
-
-        <section className="insights-dataset-switcher" aria-labelledby="dataset-switcher-title">
+        <section id="insights-movement" className="insights-dataset-switcher" aria-labelledby="dataset-switcher-title">
           <div className="insights-section-intro">
             <div>
               <span>Dataset explorer</span>
@@ -656,7 +673,30 @@ export default function TrendsDashboard() {
           </aside>
         </div>
 
-        <div className="trends-analysis-grid">
+        <section className="insights-reading-card" aria-labelledby="snapshot-reading-title">
+          <div className="insights-reading-copy">
+            <span>Snapshot readout</span>
+            <h2 id="snapshot-reading-title">
+              {growthDriverShare !== null
+                ? `${growthDriver.shortLabel} drove ${growthDriverShare}% of core network expansion.`
+                : coreDelta < 0
+                  ? `The core network contracted by ${Math.abs(coreDelta).toLocaleString()} records.`
+                  : 'The core network held steady in this snapshot.'}
+            </h2>
+            <p>
+              {growthDriverShare !== null
+                ? `${growthDriver.label} added a net ${growthDriver.net.toLocaleString()} records while the four core directories grew by ${coreDelta.toLocaleString()} overall.`
+                : 'Use the dataset controls above to inspect which directories and regions shaped the result.'}
+            </p>
+          </div>
+          <div className="insights-reading-facts">
+            <span><small>Growth driver</small><strong>{growthDriver?.shortLabel ?? 'No change'}</strong></span>
+            <span><small>Signal confidence</small><strong className={`is-${growthDriverQuality}`}>{growthDriverQuality}</strong></span>
+            <span><small>Next 30 days</small><strong>{analytics.upcoming.next30Days} events</strong></span>
+          </div>
+        </section>
+
+        <div id="insights-regions" className="trends-analysis-grid">
           <section className="trends-region-leaderboard" aria-labelledby="region-leaderboard-title">
             <div className="trends-dashboard-section-heading">
               <div>
@@ -711,7 +751,7 @@ export default function TrendsDashboard() {
           </section>
         </div>
 
-        <section className="trends-upcoming-section" aria-labelledby="upcoming-title">
+        <section id="insights-events" className="trends-upcoming-section" aria-labelledby="upcoming-title">
           <div className="trends-upcoming-summary">
             <span className="regional-trends-eyebrow">Forward signal · latest data</span>
             <strong><AnimatedNumber value={analytics.upcoming.total} /></strong>
