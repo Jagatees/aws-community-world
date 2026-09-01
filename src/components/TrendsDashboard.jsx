@@ -2,6 +2,7 @@ import { useMemo, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import growthHistory from '../data/community-growth-history.json';
+import kiroAmbassadors from '../data/kiro-ambassadors.json';
 import { getRegionLabel, REGIONS } from '../utils/countryRegions';
 
 const CATEGORIES = [
@@ -12,6 +13,7 @@ const CATEGORIES = [
   { id: 'community-days', label: 'Community Days', shortLabel: 'Community Days', color: '#FFB74D' },
   { id: 'kiro-events', label: 'Kiro Events', shortLabel: 'Kiro Events', color: '#8B7CF6' },
 ];
+const CORE_CATEGORY_IDS = new Set(['community-builders', 'heroes', 'user-groups', 'cloud-clubs']);
 
 const EMPTY_REGIONS = Object.fromEntries(REGIONS.map((region) => [region.id, 0]));
 const EMPTY_CHANGES = {
@@ -323,7 +325,100 @@ function EventItem({ event }) {
   return <a className="trends-event-item" href={event.url} target="_blank" rel="noopener noreferrer">{content}</a>;
 }
 
-export default function TrendsDashboard({ darkMode }) {
+function CompositionDonut({ items, total, selectedCategory, onSelectCategory }) {
+  const segments = items.reduce((result, item) => {
+    const percent = total > 0 ? (item.total / total) * 100 : 0;
+    const offset = result.reduce((sum, segment) => sum + segment.percent, 0);
+    return [...result, { ...item, percent, offset }];
+  }, []);
+
+  return (
+    <article className="insights-composition-card insights-panel">
+      <div className="insights-panel-heading">
+        <div>
+          <span>Community mix</span>
+          <h2>What makes up the network</h2>
+        </div>
+        <small>Core directories</small>
+      </div>
+      <div className="insights-composition-body">
+        <div className="insights-donut-wrap">
+          <svg viewBox="0 0 120 120" role="img" aria-label="Community directory composition">
+            <circle cx="60" cy="60" r="44" pathLength="100" className="insights-donut-track" />
+            {segments.map((segment) => (
+              <circle
+                key={segment.id}
+                cx="60"
+                cy="60"
+                r="44"
+                pathLength="100"
+                className={`insights-donut-segment${segment.id === selectedCategory ? ' is-selected' : ''}`}
+                style={{ '--segment-color': segment.color }}
+                strokeDasharray={`${segment.percent} ${100 - segment.percent}`}
+                strokeDashoffset={-segment.offset}
+              >
+                <title>{`${segment.label}: ${segment.total.toLocaleString()} (${Math.round(segment.percent)}%)`}</title>
+              </circle>
+            ))}
+          </svg>
+          <span><strong>{total.toLocaleString()}</strong><small>core records</small></span>
+        </div>
+        <div className="insights-composition-legend">
+          {segments.map((segment) => (
+            <button
+              type="button"
+              key={segment.id}
+              className={segment.id === selectedCategory ? 'is-selected' : ''}
+              style={{ '--segment-color': segment.color }}
+              onClick={() => onSelectCategory(segment.id)}
+            >
+              <i aria-hidden="true" />
+              <span>{segment.shortLabel}</span>
+              <strong>{Math.round(segment.percent)}%</strong>
+            </button>
+          ))}
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function MomentumBars({ items, selectedCategory, onSelectCategory }) {
+  const maxMovement = Math.max(...items.map((item) => Math.abs(item.net)), 1);
+
+  return (
+    <article className="insights-momentum-card insights-panel">
+      <div className="insights-panel-heading">
+        <div>
+          <span>Latest movement</span>
+          <h2>Momentum by dataset</h2>
+        </div>
+        <small>Net vs prior</small>
+      </div>
+      <div className="insights-momentum-chart" role="list" aria-label="Net movement by dataset">
+        {items.map((item) => {
+          const magnitude = (Math.abs(item.net) / maxMovement) * 46;
+          return (
+            <button
+              type="button"
+              role="listitem"
+              key={item.id}
+              className={`insights-momentum-row${item.id === selectedCategory ? ' is-selected' : ''}`}
+              style={{ '--bar-color': item.color, '--bar-width': `${magnitude}%` }}
+              onClick={() => onSelectCategory(item.id)}
+            >
+              <span>{item.shortLabel}</span>
+              <i aria-hidden="true"><b className={getDeltaClass(item.net)} /></i>
+              <strong className={getDeltaClass(item.net)}>{item.hasComparison ? formatDelta(item.net) : '—'}</strong>
+            </button>
+          );
+        })}
+      </div>
+    </article>
+  );
+}
+
+export default function TrendsDashboard() {
   const dashboardRef = useRef(null);
   const snapshots = growthHistory.snapshots;
   const analytics = growthHistory.analytics;
@@ -386,20 +481,46 @@ export default function TrendsDashboard({ darkMode }) {
     .sort((left, right) => right[1] - left[1])[0];
   const selectedQuality = snapshotChanges.quality ?? EMPTY_CHANGES.quality;
   const snapshotIsLatest = selectedSnapshotIndex === snapshots.length - 1;
+  const coreCategories = CATEGORIES.filter((entry) => CORE_CATEGORY_IDS.has(entry.id));
+  const coreStats = coreCategories.reduce((result, entry) => {
+    const data = selectedSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
+    result.total += data.total;
+    result.classified += data.classified;
+    return result;
+  }, { total: 0, classified: 0 });
+  const previousCoreTotal = coreCategories.reduce((total, entry) => (
+    total + (previousSnapshot?.categories?.[entry.id]?.total ?? 0)
+  ), 0);
+  const coreDelta = previousSnapshot ? coreStats.total - previousCoreTotal : 0;
+  const coreCoverage = coreStats.total ? Math.round((coreStats.classified / coreStats.total) * 1000) / 10 : 0;
+  const ambassadorCount = snapshotIsLatest ? kiroAmbassadors.length : 0;
+  const communityFootprint = coreStats.total + ambassadorCount;
+  const compositionItems = coreCategories.map((entry) => ({
+    ...entry,
+    total: selectedSnapshot?.categories?.[entry.id]?.total ?? 0,
+  }));
+  const momentumItems = CATEGORIES.map((entry) => {
+    const data = selectedSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
+    const previousData = previousSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
+    const hasComparison = previousData.total > 0 && data.changes?.quality?.confidence !== 'baseline';
+    return { ...entry, net: hasComparison ? data.changes?.net ?? 0 : 0, hasComparison };
+  });
+  const largestRegion = [...regionRows].sort((left, right) => right.current - left.current)[0] ?? null;
 
   useGSAP(() => {
     if (!dashboardRef.current || prefersReducedMotion()) return undefined;
     const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
     timeline
       .fromTo('.trends-dashboard-header > *', { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.62, stagger: 0.08 })
-      .fromTo('.trends-snapshot-explorer', { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55 }, '-=0.3')
-      .fromTo('.trends-category-card', { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, stagger: 0.05 }, '-=0.28');
+      .fromTo('.insights-briefing-grid > *', { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, stagger: 0.08 }, '-=0.3')
+      .fromTo('.trends-snapshot-explorer', { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45 }, '-=0.25')
+      .fromTo('.insights-dataset-tab', { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, stagger: 0.035 }, '-=0.2');
     return () => timeline.kill();
   }, { scope: dashboardRef });
 
   useGSAP(() => {
     if (!dashboardRef.current || prefersReducedMotion()) return undefined;
-    const kpis = dashboardRef.current.querySelectorAll('.trends-kpi-card');
+    const kpis = dashboardRef.current.querySelectorAll('.insights-signal-stat');
     const regions = dashboardRef.current.querySelectorAll('.trends-region-row');
     const timeline = gsap.timeline({ defaults: { overwrite: true } });
     timeline
@@ -419,22 +540,22 @@ export default function TrendsDashboard({ darkMode }) {
       className="regional-trends-panel trends-dashboard insights-dashboard"
       style={{
         '--trends-accent': category.color,
-        '--trends-panel-bg': darkMode ? '#08141E' : '#EEF6FC',
-        '--trends-panel-surface': darkMode ? 'rgba(20, 40, 55, 0.82)' : 'rgba(255, 255, 255, 0.88)',
-        '--trends-panel-surface-strong': darkMode ? '#142B3D' : '#FFFFFF',
-        '--trends-panel-border': darkMode ? 'rgba(100, 141, 173, 0.25)' : 'rgba(135, 170, 198, 0.42)',
-        '--trends-panel-text': darkMode ? '#F2F7FA' : '#102A40',
-        '--trends-panel-muted': darkMode ? '#8EA5B7' : '#617F98',
-        '--trends-panel-faint': darkMode ? '#5D7486' : '#7793AA',
+        '--trends-panel-bg': '#07141B',
+        '--trends-panel-surface': 'rgba(14, 31, 42, 0.86)',
+        '--trends-panel-surface-strong': '#102838',
+        '--trends-panel-border': 'rgba(112, 151, 177, 0.22)',
+        '--trends-panel-text': '#F2F7FA',
+        '--trends-panel-muted': '#96AABC',
+        '--trends-panel-faint': '#678196',
       }}
     >
       <div className="insights-ambient insights-ambient-one" aria-hidden="true" />
       <div className="insights-ambient insights-ambient-two" aria-hidden="true" />
       <header className="regional-trends-header trends-dashboard-header">
         <div>
-          <span className="regional-trends-eyebrow">Community intelligence</span>
-          <h1>Community insights</h1>
-          <p>Move through the project’s history to see directory growth, identity movement, regional momentum, and upcoming activity.</p>
+          <span className="regional-trends-eyebrow">AWS community intelligence</span>
+          <h1>The community, in motion.</h1>
+          <p>A living view of who is building, where networks are growing, and what changed between public directory snapshots.</p>
         </div>
         <div className="trends-dashboard-status" aria-label={`Snapshot ${selectedSnapshotIndex + 1} of ${snapshots.length}`} key={selectedSnapshot.date}>
           <span><i aria-hidden="true" /> Snapshot {selectedSnapshotIndex + 1} of {snapshots.length}</span>
@@ -443,86 +564,65 @@ export default function TrendsDashboard({ darkMode }) {
       </header>
 
       <div className="regional-trends-content trends-dashboard-content">
+        <section className="insights-briefing-grid" aria-label="Community executive summary">
+          <article className="insights-footprint-card insights-panel">
+            <div className="insights-footprint-topline">
+              <span>{snapshotIsLatest ? 'Live community footprint' : 'Historical community footprint'}</span>
+              <small>{formatDate(selectedSnapshot.date)}</small>
+            </div>
+            <strong className="insights-footprint-total"><AnimatedNumber value={communityFootprint} /></strong>
+            <h2>people and local communities in the core network</h2>
+            <p>Builders, Heroes, user groups, student groups{ambassadorCount ? `, and ${ambassadorCount} Kiro ambassadors` : ''} visible in the current public data.</p>
+            <div className="insights-footprint-metrics">
+              <span><small>Net change</small><strong className={previousSnapshot ? getDeltaClass(coreDelta) : 'is-flat'}>{previousSnapshot ? formatDelta(coreDelta) : '—'}</strong></span>
+              <span><small>Region mapped</small><strong>{coreCoverage}%</strong></span>
+              <span><small>Data sources</small><strong>4 core</strong></span>
+            </div>
+          </article>
+          <CompositionDonut items={compositionItems} total={coreStats.total} selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
+          <MomentumBars items={momentumItems} selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
+        </section>
+
         <SnapshotNavigator snapshots={snapshots} selectedIndex={selectedSnapshotIndex} onChange={setSelectedSnapshotIndex} />
 
-        <section className="trends-dashboard-overview" aria-labelledby="trends-overview-title">
-          <div className="trends-dashboard-section-heading">
+        <section className="insights-dataset-switcher" aria-labelledby="dataset-switcher-title">
+          <div className="insights-section-intro">
             <div>
-              <span>{snapshotIsLatest ? 'Latest snapshot' : 'Historical snapshot'}</span>
-              <h2 id="trends-overview-title">What we tracked on {formatDate(selectedSnapshot.date, { year: false })}</h2>
+              <span>Dataset explorer</span>
+              <h2 id="dataset-switcher-title">Choose a signal to investigate</h2>
             </div>
-            <p><AnimatedNumber value={selectedGlobal.total} /> records · {selectedGlobalCoverage}% region mapped · {selectedGlobal.tracked}/6 datasets active</p>
+            <p>{selectedGlobal.total.toLocaleString()} records across {selectedGlobal.tracked} active datasets · {selectedGlobalCoverage}% mapped</p>
           </div>
-
-          <div className="trends-category-grid">
+          <div className="insights-dataset-rail">
             {CATEGORIES.map((entry) => {
               const data = selectedSnapshot.categories?.[entry.id] ?? EMPTY_CATEGORY;
               const changes = data.changes ?? EMPTY_CHANGES;
-              const selected = entry.id === selectedCategory;
               const previousData = previousSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
               const hasComparison = previousData.total > 0 && changes.quality?.confidence !== 'baseline';
               return (
                 <button
                   type="button"
                   key={entry.id}
-                  className={`trends-category-card${selected ? ' is-selected' : ''}`}
+                  className={`insights-dataset-tab${entry.id === selectedCategory ? ' is-selected' : ''}`}
                   style={{ '--category-color': entry.color }}
-                  aria-pressed={selected}
+                  aria-pressed={entry.id === selectedCategory}
                   onClick={() => setSelectedCategory(entry.id)}
                 >
-                  <span className="trends-category-dot" aria-hidden="true" />
-                  <span className="trends-category-label">{entry.shortLabel}</span>
-                  <strong><AnimatedNumber value={data.total} /></strong>
-                  <small>{data.total > 0 ? `${data.coveragePercent}% mapped` : 'Not tracked yet'}</small>
-                  <span className={`trends-category-delta ${hasComparison ? getDeltaClass(changes.net) : 'is-flat'}`}>
-                    {hasComparison ? `${formatDelta(changes.net)} vs prior snapshot` : 'Baseline snapshot'}
-                  </span>
+                  <i aria-hidden="true" />
+                  <span><small>{entry.shortLabel}</small><strong>{data.total.toLocaleString()}</strong></span>
+                  <em className={hasComparison ? getDeltaClass(changes.net) : 'is-flat'}>{hasComparison ? formatDelta(changes.net) : '—'}</em>
                 </button>
               );
             })}
           </div>
         </section>
 
-        <section className="trends-dashboard-detail" aria-labelledby="trends-detail-title">
+        <div className="insights-primary-grid">
+          <section className="trends-timeline-card" aria-labelledby="timeline-title">
           <div className="trends-dashboard-section-heading">
             <div>
-              <span>Selected dataset</span>
-              <h2 id="trends-detail-title">{category.label}</h2>
-            </div>
-            <p>{snapshotHasComparison ? `Compared with ${formatDate(previousSnapshot?.date)}` : 'First tracked snapshot'}</p>
-          </div>
-
-          <div className="trends-kpi-grid">
-            <article className="trends-kpi-card is-primary">
-              <span>Snapshot total</span>
-              <strong><AnimatedNumber value={categoryData.total} /></strong>
-              <small>{categoryData.total > 0 ? `${categoryData.coveragePercent}% assigned to a region` : 'Dataset unavailable at this point'}</small>
-            </article>
-            <article className="trends-kpi-card">
-              <span>Change from previous</span>
-              <strong className={snapshotHasComparison ? getDeltaClass(snapshotChanges.net) : 'is-flat'}>
-                {snapshotHasComparison ? <AnimatedNumber value={Math.abs(snapshotChanges.net)} prefix={snapshotChanges.net > 0 ? '+' : snapshotChanges.net < 0 ? '−' : ''} /> : '—'}
-              </strong>
-              <small>{snapshotHasComparison ? `${previousCategoryData.total.toLocaleString()} in the prior snapshot` : 'No earlier comparison available'}</small>
-            </article>
-            <article className="trends-kpi-card">
-              <span>Identity movement</span>
-              <strong><em>+<AnimatedNumber value={snapshotChanges.added} /></em> <b>−<AnimatedNumber value={snapshotChanges.removed} /></b></strong>
-              <small>Observed additions and removals in this snapshot</small>
-            </article>
-            <article className="trends-kpi-card">
-              <span>Record continuity</span>
-              <strong>{retentionPercent === null ? '—' : <AnimatedNumber value={retentionPercent} suffix="%" decimals={1} />}</strong>
-              <small>{snapshotChanges.retained.toLocaleString()} prior identities retained</small>
-            </article>
-          </div>
-        </section>
-
-        <section className="trends-timeline-card" aria-labelledby="timeline-title">
-          <div className="trends-dashboard-section-heading">
-            <div>
-              <span>Animated trajectory</span>
-              <h2 id="timeline-title">Directory size over time</h2>
+              <span>{category.label}</span>
+              <h2 id="timeline-title">Directory trajectory</h2>
             </div>
             <div className="trends-chart-legend">
               <span><i className="is-stable" /> Stable snapshot</span>
@@ -537,7 +637,24 @@ export default function TrendsDashboard({ darkMode }) {
             <span><small>Fastest percentage growth</small><strong>{fastestRateRegion?.label ?? 'Not available'}</strong><em>{fastestRateRegion ? `${formatDelta(fastestRateRegion.growthPercent)}%` : 'No positive growth'}</em></span>
           </div>
           <p className="trends-chart-hint">Tip: select any point on the graph to jump directly to that snapshot.</p>
-        </section>
+          </section>
+
+          <aside className="insights-signal-card insights-panel" aria-labelledby="signal-card-title">
+            <div className="insights-signal-header" style={{ '--signal-color': category.color }}>
+              <i aria-hidden="true" />
+              <span>Selected signal</span>
+              <h2 id="signal-card-title">{category.label}</h2>
+              <p>{snapshotHasComparison ? `Compared with ${formatDate(previousSnapshot?.date)}` : 'First tracked snapshot'}</p>
+            </div>
+            <div className="insights-signal-stats">
+              <span className="insights-signal-stat is-total"><small>Snapshot total</small><strong><AnimatedNumber value={categoryData.total} /></strong><em>{categoryData.coveragePercent}% region mapped</em></span>
+              <span className="insights-signal-stat"><small>Net movement</small><strong className={snapshotHasComparison ? getDeltaClass(snapshotChanges.net) : 'is-flat'}>{snapshotHasComparison ? formatDelta(snapshotChanges.net) : '—'}</strong><em>vs previous snapshot</em></span>
+              <span className="insights-signal-stat"><small>Observed entries</small><strong><b>+{snapshotChanges.added.toLocaleString()}</b> <i>−{snapshotChanges.removed.toLocaleString()}</i></strong><em>added / no longer present</em></span>
+              <span className="insights-signal-stat"><small>Record continuity</small><strong>{retentionPercent === null ? '—' : `${retentionPercent}%`}</strong><em>{snapshotChanges.retained.toLocaleString()} identities retained</em></span>
+              <span className="insights-signal-stat"><small>Largest region</small><strong>{largestRegion?.label ?? '—'}</strong><em>{largestRegion ? `${largestRegion.current.toLocaleString()} records` : 'Not available'}</em></span>
+            </div>
+          </aside>
+        </div>
 
         <div className="trends-analysis-grid">
           <section className="trends-region-leaderboard" aria-labelledby="region-leaderboard-title">
