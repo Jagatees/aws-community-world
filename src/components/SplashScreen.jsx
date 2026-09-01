@@ -4,9 +4,9 @@ import './SplashScreen.css';
 
 const COMMUNITY_STATS = [
   { label: 'Heroes', count: 252, color: '#FF9900' },
-  { label: 'Community Builders', count: 3038, color: '#1A9C3E' },
-  { label: 'User Groups', count: 582, color: '#00A1C9' },
-  { label: 'Student Builder Groups', count: 896, color: '#BF0816' },
+  { label: 'Community Builders', count: 3036, color: '#1A9C3E' },
+  { label: 'User Groups', count: 599, color: '#00A1C9' },
+  { label: 'Student Builder Groups', count: 1022, color: '#BF0816' },
   { label: 'Kiro Ambassadors', count: 2, color: '#8B5CF6' },
 ];
 
@@ -326,9 +326,9 @@ function OrbitGlobe({ isEvents }) {
 
 const MOBILE_COMMUNITY_STATS = [
   { key: 'heroes', count: 252, label: 'Heroes' },
-  { key: 'builders', count: 3038, label: 'Builders', fullLabel: 'Community Builders' },
-  { key: 'groups', count: 583, label: 'User groups', fullLabel: 'User Groups' },
-  { key: 'students', count: 897, label: 'Students', fullLabel: 'Student Builder Groups' },
+  { key: 'builders', count: 3036, label: 'Builders', fullLabel: 'Community Builders' },
+  { key: 'groups', count: 599, label: 'User groups', fullLabel: 'User Groups' },
+  { key: 'students', count: 1022, label: 'Students', fullLabel: 'Student Builder Groups' },
   { key: 'kiro', count: 2, label: 'Kiro', fullLabel: 'Kiro Ambassadors' },
 ];
 

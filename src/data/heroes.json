@@ -235,7 +235,7 @@
     "id": "d5e0c93e-05b4-8535-63fc-cf12128de5b1",
     "name": "Amy Tseng",
     "hero_type": "Data Hero",
-    "location": "VA, United States",
+    "location": "MD, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/2xn4xnWHKZn3KA7fGfNijlTu646.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/AmyTseng",
     "lat": 37.1232245,
@@ -583,7 +583,7 @@
     "id": "deecd6f6-1669-f1d1-0700-fbfe59f909a5",
     "name": "Brian LeRoux",
     "hero_type": "Serverless Hero",
-    "location": "",
+    "location": "BC, Canada",
     "image_url": "https://avatars.builderprofile.aws.dev/2zutA3NzzefvvMsk6aPnhssZYa1.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/BrianLeRoux",
     "lat": 61.0666922,
@@ -624,7 +624,9 @@
       "github": "https://github.com/bryanchasko",
       "x": "https://x.com/bryanchasko",
       "youtube": "https://twitch.tv/bryanChasko",
-      "blog": "https://clouddelnorte.org/"
+      "blog": "https://bryanchasko.com/",
+      "facebook": "https://www.facebook.com/AWSUGCloudDelNorte/",
+      "website": "https://clouddelnorte.org/"
     }
   },
   {
@@ -953,7 +955,7 @@
     "id": "a7cf02ba-4a25-f2c4-a400-3e33ba064bfc",
     "name": "Dhaval Nagar",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "Gujarat, India",
     "image_url": "https://avatars.builderprofile.aws.dev/2zs3LIAApmE2DwUr1d3QUhKLRgi.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/DhavalNagar",
     "lat": 22.3511148,
@@ -1120,7 +1122,7 @@
     "id": "b2ae997a-dfc7-c026-aa24-1fb40824678f",
     "name": "Efi Merdler-Kravitz",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "Israel",
     "image_url": "https://avatars.builderprofile.aws.dev/2ZRokEWh7dNad3PKGiDPs0A0Zxq.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/EfiMerdlerKravitz",
     "lat": 30.8124247,
@@ -1454,7 +1456,7 @@
     "id": "3f663013-7a24-fab5-4baf-2bcd4ccf58f5",
     "name": "Hidetoshi Matsui",
     "hero_type": "Serverless Hero",
-    "location": "United States",
+    "location": "Japan",
     "image_url": "https://avatars.builderprofile.aws.dev/2xnThPjHM4GLBmmOqEJYR1u8JZ0.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/HidetoshiMatsui",
     "lat": 36.5748441,
@@ -1567,7 +1569,7 @@
     "id": "5470637a-956d-c130-455c-5b9f399eff42",
     "name": "Ilanchezhian Ganesamurthy",
     "hero_type": "Community Hero",
-    "location": "Tamil Nadu, India",
+    "location": "Karnataka, India",
     "image_url": "https://avatars.builderprofile.aws.dev/2ozAobl8GlBoOn4fZyWFBj63S35.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/IlanchezhianGanesamurthy",
     "lat": 22.3511148,
@@ -1583,7 +1585,7 @@
     "id": "0dd74ee5-960b-64a0-6a33-2fcb7b2b4634",
     "name": "Ivonne Roberts",
     "hero_type": "Serverless Hero",
-    "location": "",
+    "location": "CA, United States",
     "image_url": "https://avatars.builderprofile.aws.dev/31pXalI1QjibAYe0INUtvUC6GaM.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/IvonneRoberts",
     "lat": 39.7837304,
@@ -1654,12 +1656,17 @@
     "name": "Jayesh Bapu Ahire",
     "hero_type": "AI Hero",
     "location": "CA, United States",
-    "image_url": "/assets/default-avatar-light-LR35u67I.svg",
+    "image_url": "https://avatars.builderprofile.aws.dev/3IfpidliuBuOBitfl1zJl8VXui7.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/JayeshBapuAhire",
     "lat": 39.7837304,
     "lng": -100.445882,
     "isNew": false,
-    "builderProfileUrl": "https://builder.aws.com/community/@jbahire"
+    "builderProfileUrl": "https://builder.aws.com/community/@jbahire",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/jayesh-ahire",
+      "github": "https://github.com/jbahire",
+      "x": "https://x.com/jayesh_ahire1"
+    }
   },
   {
     "id": "65dcb5ba-09a8-b112-e245-6ff5560f1eb3",
@@ -2076,7 +2083,7 @@
     "id": "ef71e831-4425-5d0e-724c-5788b461d20e",
     "name": "Kyuhyun Byun",
     "hero_type": "Serverless Hero",
-    "location": "",
+    "location": "South Korea",
     "image_url": "https://avatars.builderprofile.aws.dev/2ubjP9EODRtHHGab418HWwkBoj9.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/KyuhyunByun",
     "lat": 36.638392,
@@ -2663,7 +2670,7 @@
     "name": "Monica Colangelo",
     "hero_type": "DevTools Hero",
     "location": "Italy",
-    "image_url": "https://avatars.builderprofile.aws.dev/2vdQJRRGEwZjk9TmqN4tVvS5dPE.webp",
+    "image_url": "https://avatars.builderprofile.aws.dev/3IHWOrO14khRH27JgN1Mqyav9DK.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/MonicaColangelo",
     "lat": 42.6384261,
     "lng": 12.674297,
@@ -2899,23 +2906,6 @@
     }
   },
   {
-    "id": "0034a92f-1df6-8951-70c8-beac80214c39",
-    "name": "Park SangUk",
-    "hero_type": "Community Hero",
-    "location": "South Korea",
-    "image_url": "https://avatars.builderprofile.aws.dev/36Y7otKTWd9XSIc1lo3Fg4kOHTI.webp",
-    "hero_page_url": "https://builder.aws.com/community/heroes/ParkSangUk",
-    "lat": 36.638392,
-    "lng": 127.6961188,
-    "isNew": false,
-    "builderProfileUrl": "https://builder.aws.com/community/@sanguk",
-    "socialLinks": {
-      "linkedin": "https://www.linkedin.com/in/sanguk-park-b3288721",
-      "github": "https://github.com/polo149278",
-      "x": "https://x.com/polo149278"
-    }
-  },
-  {
     "id": "569cbf1a-b46e-41db-1a59-9bd74589f4fb",
     "name": "Parthasarathi Balasubramanian",
     "hero_type": "Community Hero",
@@ -3086,7 +3076,7 @@
     "name": "Raphael Jambalos",
     "hero_type": "Community Hero",
     "location": "Philippines",
-    "image_url": "/assets/default-avatar-light-LR35u67I.svg",
+    "image_url": "https://avatars.builderprofile.aws.dev/3HVHZQl0IgkfdAvVUnWKtYcDmXU.webp",
     "hero_page_url": "https://builder.aws.com/community/heroes/RaphaelJambalos",
     "lat": 12.7503486,
     "lng": 122.7312101,
@@ -3426,7 +3416,7 @@
   },
   {
     "id": "cec8f75f-eb31-5192-e91f-7b18664abfb3",
-    "name": "Sang Woon Par",
+    "name": "Sang Woon Park",
     "hero_type": "Serverless Hero",
     "location": "South Korea",
     "image_url": "https://avatars.builderprofile.aws.dev/2ojyRC6Rv6syevFHLQKT4fqKc9Z.webp",
@@ -3437,6 +3427,24 @@
     "builderProfileUrl": "https://builder.aws.com/community/@serverless",
     "socialLinks": {
       "linkedin": "https://www.linkedin.com/in/spark323/"
+    }
+  },
+  {
+    "id": "0034a92f-1df6-8951-70c8-beac80214c39",
+    "name": "SangUk Park",
+    "hero_type": "Community Hero",
+    "location": "South Korea",
+    "image_url": "https://avatars.builderprofile.aws.dev/36Y7otKTWd9XSIc1lo3Fg4kOHTI.webp",
+    "hero_page_url": "https://builder.aws.com/community/heroes/ParkSangUk",
+    "lat": 36.638392,
+    "lng": 127.6961188,
+    "isNew": false,
+    "builderProfileUrl": "https://builder.aws.com/community/@sanguk",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/sanguk-park-b3288721",
+      "github": "https://github.com/polo149278",
+      "x": "https://x.com/polo149278",
+      "facebook": "https://www.facebook.com/sanguk.park.37"
     }
   },
   {
@@ -3699,10 +3707,12 @@
     "isNew": false,
     "builderProfileUrl": "https://builder.aws.com/community/@slobodan",
     "socialLinks": {
-      "linkedin": "https://www.linkedin.com/in/sstojanovic",
+      "linkedin": "https://www.linkedin.com/in/sstojanovic/",
       "github": "https://github.com/stojanovic",
       "x": "https://x.com/slobodan_",
-      "devto": "https://dev.to/slobodan"
+      "devto": "https://dev.to/slobodan",
+      "blog": "https://slobodan.me/",
+      "website": "https://competitortracker.io/"
     }
   },
   {
@@ -3960,7 +3970,7 @@
     "isNew": false,
     "builderProfileUrl": "https://builder.aws.com/community/@trista0zero",
     "socialLinks": {
-      "linkedin": "https://www.linkedin.com/in/panjuan",
+      "linkedin": "https://www.linkedin.com/in/panjuan/",
       "x": "https://x.com/tristaZero"
     }
   },

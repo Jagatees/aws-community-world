@@ -660,7 +660,15 @@ async function scrapeUserGroups(page) {
   process.stdout.write('Scraping user groups...');
   await gotoDirectoryPage(page, PAGES.userGroups, 'a[href]');
 
-  const rawGroups = await page.evaluate(extractDirectoryGroups, 'user');
+  const extractedGroups = await page.evaluate(extractDirectoryGroups, 'user');
+  const rawGroups = [];
+  const seenNameLocations = new Set();
+  for (const group of extractedGroups) {
+    const key = locationKey(group);
+    if (seenNameLocations.has(key)) continue;
+    seenNameLocations.add(key);
+    rawGroups.push(group);
+  }
   const existing = readBaselineJson('user-groups.json');
   const existingMap = existingBy(existing, 'joinUrl');
   const existingByNameLocation = new Map(existing.map((group) => [locationKey(group), group]));
@@ -686,17 +694,151 @@ async function scrapeUserGroups(page) {
   writeJson('user-groups.json', groups);
 }
 
+function normalizedStudentGroupName(value) {
+  return String(value ?? '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/^aws\s+(?:(?:student builder group|cloud club|sbg)\s+at\s+)/, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .replace(/\s+/g, ' ');
+}
+
+function studentGroupLeaderProfiles(group) {
+  return (group?.ledBy || [])
+    .map((leader) => normalizedLookupValue(leader?.profileUrl))
+    .filter(Boolean);
+}
+
+function studentGroupCity(group) {
+  return normalizedLookupValue(group?.location?.split(',')[0])
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
+function matchStudentGroups(currentGroups, existingGroups) {
+  const matches = new Map();
+  const claimedExistingIds = new Set();
+
+  const unmatchedCurrent = () => currentGroups.filter((group) => !matches.has(group));
+  const unmatchedExisting = () => existingGroups.filter((group) => !claimedExistingIds.has(group.id));
+
+  function claimUnique(valueForCurrent, valueForExisting = valueForCurrent) {
+    const currentByValue = new Map();
+    for (const group of unmatchedCurrent()) {
+      const value = valueForCurrent(group);
+      if (!value) continue;
+      currentByValue.set(value, currentByValue.has(value) ? null : group);
+    }
+
+    const existingByValue = new Map();
+    for (const group of unmatchedExisting()) {
+      const value = valueForExisting(group);
+      if (!value) continue;
+      existingByValue.set(value, existingByValue.has(value) ? null : group);
+    }
+
+    for (const [value, current] of currentByValue) {
+      if (!current) continue;
+      const previous = existingByValue.get(value);
+      if (!previous) continue;
+      matches.set(current, previous);
+      claimedExistingIds.add(previous.id);
+    }
+  }
+
+  claimUnique((group) => normalizedLookupValue(group.joinUrl));
+  claimUnique(locationKey);
+  claimUnique((group) => normalizedLookupValue(group.name));
+  claimUnique((group) => normalizedStudentGroupName(group.name));
+
+  const currentByLeader = new Map();
+  for (const group of unmatchedCurrent()) {
+    for (const profileUrl of studentGroupLeaderProfiles(group)) {
+      const groups = currentByLeader.get(profileUrl) || [];
+      groups.push(group);
+      currentByLeader.set(profileUrl, groups);
+    }
+  }
+
+  const existingByLeader = new Map();
+  for (const group of unmatchedExisting()) {
+    for (const profileUrl of studentGroupLeaderProfiles(group)) {
+      const groups = existingByLeader.get(profileUrl) || [];
+      groups.push(group);
+      existingByLeader.set(profileUrl, groups);
+    }
+  }
+
+  for (const [profileUrl, currentMatches] of currentByLeader) {
+    const existingMatches = existingByLeader.get(profileUrl) || [];
+    if (currentMatches.length !== 1 || existingMatches.length !== 1) continue;
+
+    const [current] = currentMatches;
+    const [previous] = existingMatches;
+    if (matches.has(current) || claimedExistingIds.has(previous.id)) continue;
+    matches.set(current, previous);
+    claimedExistingIds.add(previous.id);
+  }
+
+  const containmentCandidates = [];
+  for (const current of unmatchedCurrent()) {
+    const currentName = normalizedStudentGroupName(current.name);
+    const currentCity = studentGroupCity(current);
+    if (currentName.length < 16 || !currentCity) continue;
+
+    for (const previous of unmatchedExisting()) {
+      const previousName = normalizedStudentGroupName(previous.name);
+      if (studentGroupCity(previous) !== currentCity || previousName.length < 16) continue;
+      if (!currentName.includes(previousName) && !previousName.includes(currentName)) continue;
+      containmentCandidates.push({ current, previous });
+    }
+  }
+
+  const candidateCountsByCurrent = new Map();
+  const candidateCountsByPrevious = new Map();
+  for (const candidate of containmentCandidates) {
+    candidateCountsByCurrent.set(
+      candidate.current,
+      (candidateCountsByCurrent.get(candidate.current) || 0) + 1,
+    );
+    candidateCountsByPrevious.set(
+      candidate.previous.id,
+      (candidateCountsByPrevious.get(candidate.previous.id) || 0) + 1,
+    );
+  }
+
+  for (const { current, previous } of containmentCandidates) {
+    if (candidateCountsByCurrent.get(current) !== 1) continue;
+    if (candidateCountsByPrevious.get(previous.id) !== 1) continue;
+    if (matches.has(current) || claimedExistingIds.has(previous.id)) continue;
+    matches.set(current, previous);
+    claimedExistingIds.add(previous.id);
+  }
+
+  return matches;
+}
+
 async function scrapeStudentBuilderGroups(page) {
   process.stdout.write('Scraping student builder groups...');
   await gotoDirectoryPage(page, PAGES.studentBuilderGroups, 'a[href]');
 
   const rawGroups = await page.evaluate(extractDirectoryGroups, 'student');
   const existing = readBaselineJson('cloud-clubs.json');
-  const existingMap = existingBy(existing, 'joinUrl');
-  const existingByNameLocation = new Map(existing.map((group) => [locationKey(group), group]));
-  const withCoordinates = await addCoordinates(mergeCoordinates(rawGroups, existing, 'joinUrl'));
+  const previousByGroup = matchStudentGroups(rawGroups, existing);
+  const previousByJoinUrl = new Map(
+    rawGroups.map((group) => [group.joinUrl, previousByGroup.get(group)]),
+  );
+  const groupsWithStoredCoordinates = rawGroups.map((group) => {
+    const previous = previousByGroup.get(group);
+    if (!previous || !hasStoredCoordinates(previous)) return group;
+    return { ...group, lat: Number(previous.lat), lng: Number(previous.lng) };
+  });
+  const withCoordinates = await addCoordinates(groupsWithStoredCoordinates);
   const groups = withCoordinates.map((group) => {
-    const previous = existingMap.get(group.joinUrl) || existingByNameLocation.get(locationKey(group));
+    const previous = previousByJoinUrl.get(group.joinUrl);
     return {
       ...previous,
       id: previous?.id || stableId(group.joinUrl),
@@ -720,6 +862,11 @@ async function scrapeStudentBuilderGroups(page) {
 function mergeStudentLeaders(currentLeaders = [], previousLeaders = []) {
   if (!currentLeaders.length) return previousLeaders;
 
+  const previousByProfileUrl = new Map(
+    previousLeaders
+      .filter((leader) => leader?.profileUrl)
+      .map((leader) => [normalizedLookupValue(leader.profileUrl), leader]),
+  );
   const previousByName = new Map(
     previousLeaders
       .filter((leader) => leader?.name)
@@ -727,7 +874,8 @@ function mergeStudentLeaders(currentLeaders = [], previousLeaders = []) {
   );
 
   return currentLeaders.map((leader, index) => {
-    const previous = previousByName.get(normalizedLookupValue(leader.name))
+    const previous = previousByProfileUrl.get(normalizedLookupValue(leader.profileUrl))
+      || previousByName.get(normalizedLookupValue(leader.name))
       || (currentLeaders.length === previousLeaders.length ? previousLeaders[index] : null);
     const profileUrl = leader.profileUrl || previous?.profileUrl || '';
     const merged = {
