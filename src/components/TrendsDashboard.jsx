@@ -103,144 +103,76 @@ function AnimatedNumber({ value, prefix = '', suffix = '', decimals = 0 }) {
   return <span ref={numberRef} className="trends-animated-number" data-value={displayValue} aria-label={displayValue} />;
 }
 
-function TimelineChart({ points, color, categoryLabel, selectedDate, onSelectDate }) {
-  const chartRef = useRef(null);
-  const cursorRef = useRef(null);
-  const previousCursorX = useRef(null);
-  const width = 900;
-  const height = 250;
-  const padding = { top: 24, right: 22, bottom: 44, left: 56 };
-  const values = points.map((point) => point.total);
-  const rawMin = values.length ? Math.min(...values) : 0;
-  const rawMax = values.length ? Math.max(...values) : 1;
-  const range = Math.max(1, rawMax - rawMin);
-  const min = Math.max(0, rawMin - range * 0.12);
-  const max = rawMax + range * 0.12;
-  const plotWidth = width - padding.left - padding.right;
-  const plotHeight = height - padding.top - padding.bottom;
-  const positioned = points.map((point, index) => ({
-    ...point,
-    x: padding.left + (points.length === 1 ? plotWidth / 2 : (index / (points.length - 1)) * plotWidth),
-    y: padding.top + ((max - point.total) / Math.max(1, max - min)) * plotHeight,
-  }));
-  const linePath = positioned.map((point, index) => `${index === 0 ? 'M' : 'L'} ${point.x} ${point.y}`).join(' ');
-  const areaPath = positioned.length
-    ? `${linePath} L ${positioned.at(-1).x} ${padding.top + plotHeight} L ${positioned[0].x} ${padding.top + plotHeight} Z`
-    : '';
-  const middle = positioned[Math.floor((positioned.length - 1) / 2)];
-  const axisPoints = positioned.length <= 2 ? positioned : [positioned[0], middle, positioned.at(-1)];
-  const selectedPoint = positioned.find((point) => point.date === selectedDate);
-
-  useGSAP(() => {
-    if (!chartRef.current || positioned.length === 0) return undefined;
-    const line = chartRef.current.querySelector('.trends-chart-line');
-    const area = chartRef.current.querySelector('.trends-chart-area');
-    const dots = chartRef.current.querySelectorAll('.trends-chart-point');
-    if (!line) return undefined;
-
-    if (prefersReducedMotion()) {
-      gsap.set([line, area, dots], { clearProps: 'all' });
-      return undefined;
-    }
-
-    const length = line.getTotalLength();
-    const timeline = gsap.timeline();
-    timeline
-      .set(line, { strokeDasharray: length, strokeDashoffset: length })
-      .fromTo(area, { opacity: 0, scaleX: 0.25, transformOrigin: 'left center' }, { opacity: 1, scaleX: 1, duration: 0.85, ease: 'power2.out' }, 0)
-      .to(line, { strokeDashoffset: 0, duration: 1.15, ease: 'power2.inOut' }, 0.05)
-      .fromTo(dots, { scale: 0, opacity: 0, transformOrigin: 'center', transformBox: 'fill-box' }, { scale: 1, opacity: 1, duration: 0.35, stagger: 0.035, ease: 'back.out(2)' }, 0.42);
-    return () => timeline.kill();
-  }, { scope: chartRef, dependencies: [categoryLabel], revertOnUpdate: true });
-
-  useGSAP(() => {
-    if (!cursorRef.current || !selectedPoint) return undefined;
-    const cursorDelta = previousCursorX.current === null ? 0 : previousCursorX.current - selectedPoint.x;
-    previousCursorX.current = selectedPoint.x;
-
-    if (prefersReducedMotion()) {
-      gsap.set(cursorRef.current, { x: 0, opacity: 1 });
-      return undefined;
-    }
-
-    const pulse = cursorRef.current.querySelector('.trends-chart-selected-pulse');
-    const timeline = gsap.timeline();
-    timeline.fromTo(cursorRef.current, { x: cursorDelta, opacity: 0.35 }, { x: 0, opacity: 1, duration: 0.55, ease: 'power3.out' });
-    const pulseTween = gsap.fromTo(pulse, { scale: 0.7, opacity: 0.8, transformOrigin: 'center', transformBox: 'fill-box' }, { scale: 2, opacity: 0, duration: 1.35, repeat: -1, ease: 'power1.out' });
-    return () => {
-      timeline.kill();
-      pulseTween.kill();
-    };
-  }, { scope: chartRef, dependencies: [selectedPoint?.x, categoryLabel], revertOnUpdate: true });
-
-  if (positioned.length === 0) {
-    return <div className="trends-timeline-chart is-empty">This dataset was not tracked in the selected period.</div>;
+function SnapshotBarChart({ points, color, categoryLabel, selectedDate, onSelectDate }) {
+  if (points.length === 0) {
+    return <div className="insights-snapshot-bars is-empty">This dataset was not tracked in the selected period.</div>;
   }
 
+  const values = points.map((point) => point.total);
+  const rawMin = Math.min(...values);
+  const rawMax = Math.max(...values);
+  const range = Math.max(1, rawMax - rawMin);
+  const baseline = Math.max(0, rawMin - range * 0.12);
+  const scale = Math.max(1, rawMax - baseline);
+  const selectedIndex = Math.max(0, points.findIndex((point) => point.date === selectedDate));
+  const selectedPoint = points[selectedIndex] ?? points.at(-1);
+  const previousPoint = points[selectedIndex - 1] ?? null;
+  const selectedDelta = previousPoint ? selectedPoint.total - previousPoint.total : null;
+  const axisValues = [rawMax, Math.round((rawMax + baseline) / 2), Math.round(baseline)];
+  const middlePoint = points[Math.floor((points.length - 1) / 2)];
+
   return (
-    <div className="trends-timeline-chart" ref={chartRef}>
-      <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`${categoryLabel} directory total over time`}>
-        <defs>
-          <linearGradient id="trends-area-gradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor={color} stopOpacity="0.35" />
-            <stop offset="100%" stopColor={color} stopOpacity="0" />
-          </linearGradient>
-          <filter id="trends-point-glow" x="-80%" y="-80%" width="260%" height="260%">
-            <feGaussianBlur stdDeviation="3" result="blur" />
-            <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-          </filter>
-        </defs>
-        {[0, 0.5, 1].map((ratio) => {
-          const y = padding.top + plotHeight * ratio;
-          const value = Math.round(max - (max - min) * ratio);
-          return (
-            <g key={ratio}>
-              <line x1={padding.left} x2={width - padding.right} y1={y} y2={y} className="trends-chart-grid-line" />
-              <text x={padding.left - 12} y={y + 4} textAnchor="end" className="trends-chart-axis-label">{value.toLocaleString()}</text>
-            </g>
-          );
-        })}
-        <path d={areaPath} fill="url(#trends-area-gradient)" className="trends-chart-area" />
-        <path d={linePath} fill="none" stroke={color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" className="trends-chart-line" />
-        {positioned.map((point) => {
-          const confidence = point.quality?.confidence;
-          const pointColor = confidence === 'low' ? '#FF7B72' : confidence === 'medium' ? '#FFD166' : color;
-          const activate = () => onSelectDate(point.date);
-          return (
-            <g
-              key={`${point.date}-${point.total}`}
-              className={`trends-chart-point-control${point.date === selectedDate ? ' is-selected' : ''}`}
-              role="button"
-              tabIndex="0"
-              aria-label={`Show ${formatDate(point.date)} snapshot with ${point.total.toLocaleString()} records`}
-              onClick={activate}
-              onKeyDown={(event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                  event.preventDefault();
-                  activate();
-                }
-              }}
-            >
-              <circle cx={point.x} cy={point.y} r="14" className="trends-chart-hit-target" />
-              <circle cx={point.x} cy={point.y} r={confidence === 'low' ? 5.2 : 4} fill={pointColor} stroke="var(--trends-panel-bg)" strokeWidth="2" className="trends-chart-point">
-                <title>{`${formatDate(point.date)}: ${point.total.toLocaleString()} records${confidence === 'low' ? ' · source discontinuity flagged' : ''}`}</title>
-              </circle>
-            </g>
-          );
-        })}
-        {selectedPoint && (
-          <g ref={cursorRef} className="trends-chart-selection" aria-hidden="true">
-            <line x1={selectedPoint.x} x2={selectedPoint.x} y1={padding.top - 6} y2={padding.top + plotHeight + 5} />
-            <circle cx={selectedPoint.x} cy={selectedPoint.y} r="9" fill="none" stroke={color} strokeWidth="2" filter="url(#trends-point-glow)" />
-            <circle cx={selectedPoint.x} cy={selectedPoint.y} r="8" fill="none" stroke={color} strokeWidth="2" className="trends-chart-selected-pulse" />
-          </g>
-        )}
-        {axisPoints.filter(Boolean).map((point, index) => (
-          <text key={`axis-${point.date}-${index}`} x={point.x} y={height - 12} textAnchor={point === positioned[0] ? 'start' : point === positioned.at(-1) ? 'end' : 'middle'} className="trends-chart-axis-label">
-            {formatDate(point.date, { year: false })}
-          </text>
-        ))}
-      </svg>
+    <div className="insights-snapshot-bars" style={{ '--snapshot-bar-color': color, '--snapshot-bar-count': points.length }}>
+      <div className="insights-snapshot-bars-summary">
+        <span>
+          <small>Selected snapshot</small>
+          <strong>{selectedPoint.total.toLocaleString()}</strong>
+          <em>{formatDate(selectedPoint.date)}</em>
+        </span>
+        <span>
+          <small>Change from prior</small>
+          <strong className={selectedDelta === null ? 'is-flat' : getDeltaClass(selectedDelta)}>{selectedDelta === null ? '—' : formatDelta(selectedDelta)}</strong>
+          <em>{previousPoint ? `from ${previousPoint.total.toLocaleString()} records` : 'First tracked snapshot'}</em>
+        </span>
+      </div>
+
+      <div className="insights-snapshot-bars-stage">
+        <div className="insights-snapshot-bars-axis" aria-hidden="true">
+          {axisValues.map((value) => <span key={value}>{value.toLocaleString()}</span>)}
+        </div>
+        <div className="insights-snapshot-bars-plot" role="list" aria-label={`${categoryLabel} totals across ${points.length} snapshots`}>
+          {points.map((point) => {
+            const height = 12 + ((point.total - baseline) / scale) * 88;
+            const confidence = point.quality?.confidence ?? 'baseline';
+            const selected = point.date === selectedDate;
+            return (
+              <button
+                type="button"
+                role="listitem"
+                key={`${point.date}-${point.total}`}
+                className={`insights-snapshot-bar is-${confidence}${selected ? ' is-selected' : ''}`}
+                style={{ '--snapshot-bar-height': `${height}%` }}
+                aria-label={`Show ${formatDate(point.date)} snapshot with ${point.total.toLocaleString()} records`}
+                aria-pressed={selected}
+                onClick={() => onSelectDate(point.date)}
+              >
+                <span>{point.total.toLocaleString()}</span>
+                <i aria-hidden="true" />
+              </button>
+            );
+          })}
+        </div>
+      </div>
+      <div className="insights-snapshot-bars-dates" aria-hidden="true">
+        <span>{formatDate(points[0].date, { year: false })}</span>
+        <span>{formatDate(middlePoint.date, { year: false })}</span>
+        <span>{formatDate(points.at(-1).date, { year: false })}</span>
+      </div>
+      <div className="insights-snapshot-bars-key" aria-label="Snapshot confidence legend">
+        <span><i className="is-high" /> Stable source</span>
+        <span><i className="is-medium" /> Coverage change</span>
+        <span><i className="is-low" /> Source discontinuity</span>
+      </div>
     </div>
   );
 }
@@ -639,21 +571,17 @@ export default function TrendsDashboard() {
           <div className="trends-dashboard-section-heading">
             <div>
               <span>{category.label}</span>
-              <h2 id="timeline-title">Directory trajectory</h2>
+              <h2 id="timeline-title">Snapshot comparison</h2>
             </div>
-            <div className="trends-chart-legend">
-              <span><i className="is-stable" /> Stable snapshot</span>
-              <span><i className="is-caution" /> Coverage change</span>
-              <span><i className="is-discontinuity" /> Source discontinuity</span>
-            </div>
+            <span className="insights-static-chart-badge">Static view · {series.length} snapshots</span>
           </div>
-          <TimelineChart points={series} color={category.color} categoryLabel={category.label} selectedDate={selectedSnapshot.date} onSelectDate={selectSnapshotDate} />
+          <SnapshotBarChart points={series} color={category.color} categoryLabel={category.label} selectedDate={selectedSnapshot.date} onSelectDate={selectSnapshotDate} />
           <div className="trends-timeline-insights">
             <span><small>Peak through this snapshot</small><strong>{peak.total.toLocaleString()}</strong><em>{peak.date ? formatDate(peak.date) : 'Not tracked yet'}</em></span>
             <span><small>Largest region gain</small><strong>{growthLeader ? getRegionLabel(growthLeader.id) : 'No positive growth'}</strong><em>{growthLeader ? `${formatDelta(growthLeader.net)} records` : 'In this comparison'}</em></span>
             <span><small>Fastest percentage growth</small><strong>{fastestRateRegion?.label ?? 'Not available'}</strong><em>{fastestRateRegion ? `${formatDelta(fastestRateRegion.growthPercent)}%` : 'No positive growth'}</em></span>
           </div>
-          <p className="trends-chart-hint">Tip: select any point on the graph to jump directly to that snapshot.</p>
+          <p className="trends-chart-hint">Select any bar to inspect that saved snapshot.</p>
           </section>
 
           <aside className="insights-signal-card insights-panel" aria-labelledby="signal-card-title">
