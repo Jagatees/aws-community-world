@@ -1,57 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
+import { HOME_CATEGORY_STYLES, HOME_COMMUNITY_MARKERS } from '../data/home-community-markers';
 
-const FEATURED_COMMUNITY_MARKERS = [
-  {
-    name: 'Eric Hammond',
-    role: 'AWS Hero',
-    location: [36.7014631, -118.755997],
-    image: 'https://avatars.builderprofile.aws.dev/33vCwXSpdxwSBdTJ8TUDXJ6fAhd.webp',
-  },
-  {
-    name: 'Ahmed Bebars',
-    role: 'AWS Hero',
-    location: [43.1561681, -75.8449946],
-    image: 'https://avatars.builderprofile.aws.dev/2txHZkGOcPLHIJePpB9WYeBQm0A.webp',
-  },
-  {
-    name: 'Evandro Pires',
-    role: 'AWS Hero',
-    location: [-27.0628367, -51.114965],
-    image: 'https://avatars.builderprofile.aws.dev/2rdAqmtWNzU4osBkrPD4YCeNXG5.webp',
-  },
-  {
-    name: 'Johannes Koch',
-    role: 'AWS Hero',
-    location: [50.6080651, 9.0284647],
-    image: 'https://avatars.builderprofile.aws.dev/36KBlzxUDq2hYEnJ9XOXyZ95ksu.webp',
-  },
-  {
-    name: 'Adeline Makokha',
-    role: 'AWS Hero',
-    location: [1.4419683, 38.4313975],
-    image: 'https://avatars.builderprofile.aws.dev/2wgFP8OQQF2IVoiQjgp9sXvvA5u.webp',
-  },
-  {
-    name: 'Bhuvaneswari Subramani',
-    role: 'AWS Hero',
-    location: [14.9562045, 75.7896741],
-    image: 'https://avatars.builderprofile.aws.dev/313RMAfKSMMsye5jT8OnybwA2ES.webp',
-  },
-  {
-    name: 'Steve Teo',
-    role: 'AWS Hero',
-    location: [1.357107, 103.8194992],
-    image: 'https://avatars.builderprofile.aws.dev/2omF42CTAVY7WPOgXj1Hsq0XEcJ.webp',
-  },
-  {
-    name: 'Peter Sbarski',
-    role: 'AWS Hero',
-    location: [-24.7761086, 134.755],
-    image: 'https://avatars.builderprofile.aws.dev/3683uy1NlM1Da5NNhCQpShuXRzX.webp',
-  },
-];
+const CATEGORY_MARKER_COLORS = Object.values(HOME_CATEGORY_STYLES)
+  .map(({ markerColor }) => markerColor);
 
-const COMMUNITY_MARKERS = [
+const COMMUNITY_LOCATIONS = [
   { location: [37.8, -122.4], size: 0.055 },
   { location: [40.7, -74], size: 0.07 },
   { location: [19.4, -99.1], size: 0.035 },
@@ -64,10 +17,17 @@ const COMMUNITY_MARKERS = [
   { location: [1.35, 103.8], size: 0.06 },
   { location: [35.7, 139.7], size: 0.055 },
   { location: [-33.9, 151.2], size: 0.05 },
-  ...FEATURED_COMMUNITY_MARKERS.map(({ location }) => ({
-    location,
+];
+
+const COMMUNITY_MARKERS = [
+  ...COMMUNITY_LOCATIONS.map((marker, index) => ({
+    ...marker,
+    color: CATEGORY_MARKER_COLORS[index % CATEGORY_MARKER_COLORS.length],
+  })),
+  ...HOME_COMMUNITY_MARKERS.map(({ lat, lng, markerColor }) => ({
+    location: [lat, lng],
     size: 0.052,
-    color: [1, 0.58, 0.04],
+    color: markerColor,
   })),
 ];
 
@@ -94,6 +54,9 @@ const GLOBE_WIDTH_RATIO = 1.45;
 const GLOBE_OFFSET_RATIO = 0.4;
 const GLOBE_THETA = 0.16;
 const MAX_VISIBLE_LABELS = 2;
+const LABEL_EDGE_MARGIN = 70;
+const LABEL_COLLISION_WIDTH = 140;
+const LABEL_COLLISION_HEIGHT = 46;
 
 function getResponsiveGlobeScale(width, height) {
   const scaleForWidth = (width * GLOBE_WIDTH_RATIO) / (height * 0.8);
@@ -161,21 +124,28 @@ export default function MobileHomeGlobe({ isEvents = false }) {
       const maxLabelY = cssSize.height < 700
         ? cssSize.height * 0.62
         : cssSize.height * 0.72;
-      const projected = FEATURED_COMMUNITY_MARKERS.map((marker, index) => ({
+      const projected = HOME_COMMUNITY_MARKERS.map((marker, index) => ({
         index,
-        ...projectMarker(marker.location, phi, cssSize.width, cssSize.height, globeScale),
+        ...projectMarker([marker.lat, marker.lng], phi, cssSize.width, cssSize.height, globeScale),
       }));
-      const visibleIndexes = new Set(projected
+      const visibleMarkers = projected
         .filter(({ x, y, depth }) => (
           depth > 0.28 &&
-          x > 42 &&
-          x < cssSize.width - 42 &&
+          x > LABEL_EDGE_MARGIN &&
+          x < cssSize.width - LABEL_EDGE_MARGIN &&
           y > 110 &&
           y < maxLabelY
         ))
         .sort((first, second) => second.depth - first.depth)
-        .slice(0, MAX_VISIBLE_LABELS)
-        .map(({ index }) => index));
+        .reduce((selected, marker) => {
+          if (selected.length >= MAX_VISIBLE_LABELS) return selected;
+          const overlaps = selected.some((visibleMarker) => (
+            Math.abs(marker.x - visibleMarker.x) < LABEL_COLLISION_WIDTH &&
+            Math.abs(marker.y - visibleMarker.y) < LABEL_COLLISION_HEIGHT
+          ));
+          return overlaps ? selected : [...selected, marker];
+        }, []);
+      const visibleIndexes = new Set(visibleMarkers.map(({ index }) => index));
 
       projected.forEach(({ index, x, y, depth }) => {
         const label = labelRefs.current[index];
@@ -183,6 +153,7 @@ export default function MobileHomeGlobe({ isEvents = false }) {
         const visible = visibleIndexes.has(index);
         const markerScale = 0.92 + Math.max(0, depth) * 0.08;
         label.style.opacity = visible ? '1' : '0';
+        label.style.visibility = visible ? 'visible' : 'hidden';
         label.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, calc(-100% - 0.75rem)) scale(${markerScale})`;
       });
     };
@@ -264,19 +235,27 @@ export default function MobileHomeGlobe({ isEvents = false }) {
       {!failed && <canvas ref={canvasRef} aria-hidden="true" />}
       {!failed && !isEvents && (
         <div className="mobile-home__marker-layer" aria-hidden="true">
-          {FEATURED_COMMUNITY_MARKERS.map((marker, index) => (
+          {HOME_COMMUNITY_MARKERS.map((marker, index) => (
             <div
               key={marker.name}
               ref={(element) => { labelRefs.current[index] = element; }}
               className="mobile-home__person-marker"
+              style={{
+                '--marker-accent': marker.color,
+                '--marker-accent-rgb': marker.rgb,
+              }}
             >
-              <img
-                src={marker.image}
-                alt=""
-                loading="eager"
-                onError={(event) => { event.currentTarget.style.display = 'none'; }}
-              />
-              <span>
+              {marker.image ? (
+                <img
+                  src={marker.image}
+                  alt=""
+                  loading="eager"
+                  onError={(event) => { event.currentTarget.style.display = 'none'; }}
+                />
+              ) : (
+                <span className="mobile-home__marker-badge">{marker.badge}</span>
+              )}
+              <span className="mobile-home__marker-copy">
                 <strong>{marker.name}</strong>
                 <small>{marker.role}</small>
               </span>

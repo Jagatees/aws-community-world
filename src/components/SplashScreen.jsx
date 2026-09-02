@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import MobileHomeGlobe from './MobileHomeGlobe';
+import { HOME_COMMUNITY_MARKERS } from '../data/home-community-markers';
 import './SplashScreen.css';
 
 const COMMUNITY_STATS = [
@@ -16,7 +17,6 @@ const EVENT_STATS = [
 ];
 
 const SPLASH_GLOBE_ROTATION_SPEED = 0.035;
-const SPLASH_MARKER_COUNT = 80;
 
 function AnimatedNumber({ target, duration = 1800, delay = 0 }) {
   const [value, setValue] = useState(0);
@@ -51,27 +51,67 @@ function AnimatedNumber({ target, duration = 1800, delay = 0 }) {
   return <span>{value.toLocaleString()}</span>;
 }
 
-function createAvatarElement(hero) {
+function createAvatarElement(marker) {
   const wrapper = document.createElement('div');
+  wrapper.title = `${marker.name} · ${marker.role}`;
   wrapper.style.cssText = `
+    position: relative;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    border: 2px solid #FF9900;
-    overflow: hidden;
     pointer-events: none;
-    background: #0d1e2e;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,153,0,0.25);
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   `;
+
+  const face = document.createElement('span');
+  face.style.cssText = `
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: 2px solid ${marker.color};
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: #0d1e2e;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.55), 0 0 0 3px rgba(${marker.rgb},0.16);
+    font: 800 ${marker.badge.length > 2 ? '7px' : '9px'}/1 Arial, sans-serif;
+    letter-spacing: -0.02em;
+  `;
+
+  const categoryDot = document.createElement('span');
+  categoryDot.style.cssText = `
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #071522;
+    border-radius: 50%;
+    background: ${marker.color};
+  `;
+
+  const showBadge = () => {
+    face.textContent = marker.badge;
+  };
+
+  if (!marker.image) {
+    showBadge();
+    wrapper.append(face, categoryDot);
+    return wrapper;
+  }
+
   const img = document.createElement('img');
-  img.src = hero.image_url;
-  img.alt = hero.name;
+  img.src = marker.image;
+  img.alt = marker.name;
   img.draggable = false;
   img.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;';
-  img.onerror = () => { wrapper.style.display = 'none'; };
-  wrapper.appendChild(img);
+  img.onerror = () => {
+    img.remove();
+    showBadge();
+  };
+  face.appendChild(img);
+  wrapper.append(face, categoryDot);
   return wrapper;
 }
 
@@ -186,7 +226,7 @@ function OrbitGlobe({ isEvents }) {
     const container = containerRef.current;
     let cancelled = false;
 
-    // Load globe.gl and heroes data in parallel — both are separate lazy chunks
+    // Event data stays lazy; the home globe uses the small balanced preview set.
     const markerDataPromise = isEvents
       ? Promise.all([
         import('../data/community-days.json'),
@@ -195,7 +235,7 @@ function OrbitGlobe({ isEvents }) {
         ...communityDays.map((event) => ({ ...event, category: 'community-days' })),
         ...kiroEvents.map((event) => ({ ...event, category: 'kiro-events' })),
       ])
-      : import('../data/heroes.json').then(({ default: heroes }) => heroes);
+      : Promise.resolve(HOME_COMMUNITY_MARKERS);
 
     Promise.all([
       import('globe.gl'),
@@ -208,12 +248,7 @@ function OrbitGlobe({ isEvents }) {
         Number.isFinite(Number(marker.lng)) &&
         !(Number(marker.lat) === 0 && Number(marker.lng) === 0)
       ));
-      const markers = shuffled(isEvents
-        ? validMarkers
-        : validMarkers
-          .filter((hero) => hero.image_url)
-          .filter((_, index) => index % 3 === 0)
-          .slice(0, SPLASH_MARKER_COUNT));
+      const markers = isEvents ? shuffled(validMarkers) : validMarkers;
 
       let globe;
       try {

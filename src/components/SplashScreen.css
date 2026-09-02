@@ -204,12 +204,13 @@
   align-items: center;
   gap: 0.42rem;
   padding: 0.28rem 0.5rem 0.28rem 0.3rem;
-  border: 1px solid rgba(255, 174, 48, 0.72);
+  border: 1px solid rgba(var(--marker-accent-rgb, 255, 153, 0), 0.78);
   border-radius: 0.62rem;
   color: #f7fbff;
   background: rgba(5, 17, 27, 0.88);
-  box-shadow: 0 8px 22px rgba(1, 8, 14, 0.42), 0 0 16px rgba(255, 153, 0, 0.1);
+  box-shadow: 0 8px 22px rgba(1, 8, 14, 0.42), 0 0 16px rgba(var(--marker-accent-rgb, 255, 153, 0), 0.14);
   opacity: 0;
+  visibility: hidden;
   backdrop-filter: blur(10px) saturate(120%);
   transition: opacity 180ms ease;
   will-change: transform, opacity;
@@ -221,7 +222,7 @@
   left: 50%;
   width: 1px;
   height: 0.78rem;
-  background: linear-gradient(#ffad27, rgba(255, 173, 39, 0.12));
+  background: linear-gradient(var(--marker-accent, #ffad27), rgba(var(--marker-accent-rgb, 255, 153, 0), 0.12));
   content: '';
 }
 
@@ -232,8 +233,8 @@
   width: 0.32rem;
   height: 0.32rem;
   border-radius: 50%;
-  background: #ffad27;
-  box-shadow: 0 0 0 0.2rem rgba(255, 153, 0, 0.18), 0 0 0.7rem rgba(255, 153, 0, 0.7);
+  background: var(--marker-accent, #ffad27);
+  box-shadow: 0 0 0 0.2rem rgba(var(--marker-accent-rgb, 255, 153, 0), 0.18), 0 0 0.7rem rgba(var(--marker-accent-rgb, 255, 153, 0), 0.7);
   content: '';
 }
 
@@ -242,10 +243,26 @@
   height: 1.55rem;
   flex: 0 0 auto;
   border-radius: 0.42rem;
+  outline: 1px solid rgba(var(--marker-accent-rgb, 255, 153, 0), 0.64);
   object-fit: cover;
 }
 
-.mobile-home__person-marker > span {
+.mobile-home__marker-badge {
+  width: 1.55rem;
+  height: 1.55rem;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(var(--marker-accent-rgb, 255, 153, 0), 0.72);
+  border-radius: 0.42rem;
+  color: #ffffff;
+  background: rgba(var(--marker-accent-rgb, 255, 153, 0), 0.2);
+  font-size: 0.48rem;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+
+.mobile-home__marker-copy {
   display: grid;
   min-width: 0;
   gap: 0.08rem;
@@ -265,7 +282,7 @@
 }
 
 .mobile-home__person-marker small {
-  color: #ffb64a;
+  color: var(--marker-accent, #ffb64a);
   font-size: 0.49rem;
   font-weight: 650;
   letter-spacing: 0.02em;
