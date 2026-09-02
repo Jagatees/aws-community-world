@@ -73,128 +73,56 @@ function getPortraitCategoryLabel(category) {
   return 'Heroes';
 }
 
-function getSectorPath(index, count) {
-  if (count <= 1) return 'M 50 0 A 50 50 0 1 1 49.99 0 Z';
+function getAvatarLayout(count, index) {
+  if (count === 1) {
+    return { size: 36, x: 0, y: 0, spreadX: 0, spreadY: 0, zIndex: 2 };
+  }
 
-  const startAngle = -Math.PI / 2 + (index / count) * Math.PI * 2;
-  const endAngle = -Math.PI / 2 + ((index + 1) / count) * Math.PI * 2;
-  const startX = 50 + Math.cos(startAngle) * 50;
-  const startY = 50 + Math.sin(startAngle) * 50;
-  const endX = 50 + Math.cos(endAngle) * 50;
-  const endY = 50 + Math.sin(endAngle) * 50;
-  const largeArc = endAngle - startAngle > Math.PI ? 1 : 0;
-  return `M 50 50 L ${startX} ${startY} A 50 50 0 ${largeArc} 1 ${endX} ${endY} Z`;
+  if (count === 2) {
+    return index === 0
+      ? { size: 34, x: -10, y: 0, spreadX: -5, spreadY: 0, zIndex: 2 }
+      : { size: 34, x: 10, y: 0, spreadX: 5, spreadY: 0, zIndex: 1 };
+  }
+
+  const layouts = [
+    { size: 34, x: 0, y: 7, spreadX: 0, spreadY: 1, zIndex: 3 },
+    { size: 29, x: -16, y: -7, spreadX: -5, spreadY: -2, zIndex: 2 },
+    { size: 29, x: 16, y: -7, spreadX: 5, spreadY: -2, zIndex: 1 },
+  ];
+  return layouts[index];
 }
 
 function createHeroGroupAvatar(cluster, { category, color, darkMode, separation = 0 }) {
   const previewMembers = getPortraitGroupMembers(cluster).slice(0, HERO_CLUSTER_PREVIEW_COUNT);
   const placeholderUrl = CATEGORY_PLACEHOLDER_URLS[category] || AWS_HERO_PLACEHOLDER_URL;
-  const svgNamespace = 'http://www.w3.org/2000/svg';
   const root = document.createElement('div');
   root.dataset.portraitClusterMarker = 'true';
   root.style.setProperty('--hero-separation', String(separation));
   root.style.position = 'relative';
-  root.style.width = '76px';
-  root.style.height = '64px';
-
-  const segmented = document.createElementNS(svgNamespace, 'svg');
-  segmented.setAttribute('viewBox', '0 0 100 100');
-  segmented.setAttribute('aria-hidden', 'true');
-  segmented.style.position = 'absolute';
-  segmented.style.left = '50%';
-  segmented.style.top = '50%';
-  segmented.style.width = '46px';
-  segmented.style.height = '46px';
-  segmented.style.overflow = 'visible';
-  segmented.style.opacity = 'calc(1 - var(--hero-separation))';
-  segmented.style.transform = 'translate(-50%, -50%) scale(calc(1 - var(--hero-separation) * .08))';
-  segmented.style.transition = 'opacity 80ms linear';
-
-  const defs = document.createElementNS(svgNamespace, 'defs');
-  segmented.appendChild(defs);
-  previewMembers.forEach((member, index) => {
-    const clipId = `${cluster.heroClusterId}-sector-${index}`.replace(/[^a-zA-Z0-9_-]/g, '-');
-    const clip = document.createElementNS(svgNamespace, 'clipPath');
-    clip.id = clipId;
-    const sector = document.createElementNS(svgNamespace, 'path');
-    sector.setAttribute('d', getSectorPath(index, previewMembers.length));
-    clip.appendChild(sector);
-    defs.appendChild(clip);
-
-    const group = document.createElementNS(svgNamespace, 'g');
-    group.setAttribute('clip-path', `url(#${clipId})`);
-    const imageUrl = getMemberImage(member);
-    if (imageUrl) {
-      const image = document.createElementNS(svgNamespace, 'image');
-      image.setAttribute('href', imageUrl);
-      image.setAttribute('x', '0');
-      image.setAttribute('y', '0');
-      image.setAttribute('width', '100');
-      image.setAttribute('height', '100');
-      image.setAttribute('preserveAspectRatio', 'xMidYMid slice');
-      group.appendChild(image);
-    } else {
-      const fallback = document.createElementNS(svgNamespace, 'rect');
-      fallback.setAttribute('width', '100');
-      fallback.setAttribute('height', '100');
-      fallback.setAttribute('fill', category === 'heroes' ? '#232F3E' : (darkMode ? '#152534' : '#FFFFFF'));
-      group.appendChild(fallback);
-      const logo = document.createElementNS(svgNamespace, 'image');
-      logo.setAttribute('href', placeholderUrl);
-      logo.setAttribute('x', '18');
-      logo.setAttribute('y', '25');
-      logo.setAttribute('width', '64');
-      logo.setAttribute('height', '50');
-      logo.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-      group.appendChild(logo);
-    }
-    segmented.appendChild(group);
-  });
-
-  if (previewMembers.length > 1) {
-    previewMembers.forEach((_, index) => {
-      const separator = document.createElementNS(svgNamespace, 'path');
-      separator.setAttribute('d', getSectorPath(index, previewMembers.length));
-      separator.setAttribute('fill', 'none');
-      separator.setAttribute('stroke', darkMode ? '#F8FAFC' : '#172A3A');
-      separator.setAttribute('stroke-width', '3.5');
-      separator.setAttribute('stroke-linejoin', 'round');
-      separator.setAttribute('vector-effect', 'non-scaling-stroke');
-      segmented.appendChild(separator);
-    });
-  }
-
-  const outline = document.createElementNS(svgNamespace, 'circle');
-  outline.setAttribute('cx', '50');
-  outline.setAttribute('cy', '50');
-  outline.setAttribute('r', '48');
-  outline.setAttribute('fill', 'none');
-  outline.setAttribute('stroke', darkMode ? '#0B1824' : '#FFFFFF');
-  outline.setAttribute('stroke-width', '5');
-  segmented.appendChild(outline);
+  root.style.width = '78px';
+  root.style.height = '58px';
 
   previewMembers.forEach((member, index) => {
-    const angle = previewMembers.length === 2
-      ? (index === 0 ? Math.PI : 0)
-      : -Math.PI / 2 + (index / previewMembers.length) * Math.PI * 2;
-    const x = Math.cos(angle) * 21;
-    const y = Math.sin(angle) * 15;
+    const layout = getAvatarLayout(previewMembers.length, index);
     const avatar = document.createElement('div');
     avatar.style.position = 'absolute';
     avatar.style.left = '50%';
     avatar.style.top = '50%';
-    avatar.style.width = '30px';
-    avatar.style.height = '30px';
+    avatar.style.width = `${layout.size}px`;
+    avatar.style.height = `${layout.size}px`;
     avatar.style.display = 'grid';
     avatar.style.placeItems = 'center';
     avatar.style.overflow = 'hidden';
     avatar.style.borderRadius = '999px';
     avatar.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
-    avatar.style.background = index % 2 === 0 ? color : (darkMode ? '#23384A' : '#DCEAF5');
-    avatar.style.boxShadow = `0 2px 9px ${darkMode ? 'rgba(0,0,0,.42)' : 'rgba(23,50,75,.25)'}`;
-    avatar.style.opacity = 'var(--hero-separation)';
-    avatar.style.transform = `translate(-50%, -50%) translate(calc(${x}px * var(--hero-separation)), calc(${y}px * var(--hero-separation))) scale(calc(.82 + var(--hero-separation) * .18))`;
-    avatar.style.willChange = 'transform, opacity';
+    avatar.style.background = category === 'heroes' ? '#232F3E' : (darkMode ? '#152534' : '#FFFFFF');
+    avatar.style.boxShadow = index === 0
+      ? `0 0 0 1px ${color}, 0 5px 12px rgba(0, 0, 0, ${darkMode ? '.42' : '.24'})`
+      : `0 3px 9px rgba(0, 0, 0, ${darkMode ? '.38' : '.2'})`;
+    avatar.style.transform = `translate(-50%, -50%) translate(calc(${layout.x}px + var(--hero-separation) * ${layout.spreadX}px), calc(${layout.y}px + var(--hero-separation) * ${layout.spreadY}px))`;
+    avatar.style.transition = 'transform 90ms linear';
+    avatar.style.willChange = 'transform';
+    avatar.style.zIndex = String(layout.zIndex);
     const imageUrl = getMemberImage(member);
     if (imageUrl) {
       const image = document.createElement('img');
@@ -232,14 +160,17 @@ function createHeroGroupAvatar(cluster, { category, color, darkMode, separation 
   countBadge.style.display = 'grid';
   countBadge.style.placeItems = 'center';
   countBadge.style.background = color;
-  countBadge.style.color = '#0F1923';
+  countBadge.style.color = category === 'cloud-clubs' ? '#FFFFFF' : '#0F1923';
   countBadge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
   countBadge.style.fontSize = '9px';
   countBadge.style.fontWeight = '900';
-  countBadge.style.transform = 'translate(calc(8px + var(--hero-separation) * 17px), calc(8px + var(--hero-separation) * 10px))';
+  countBadge.style.lineHeight = '1';
+  countBadge.style.boxShadow = `0 3px 8px rgba(0, 0, 0, ${darkMode ? '.38' : '.2'})`;
+  countBadge.style.transform = 'translate(calc(11px + var(--hero-separation) * 4px), calc(8px + var(--hero-separation) * 2px))';
+  countBadge.style.transition = 'transform 90ms linear';
   countBadge.style.willChange = 'transform';
+  countBadge.style.zIndex = '4';
 
-  root.appendChild(segmented);
   root.appendChild(countBadge);
   return root;
 }
@@ -305,8 +236,8 @@ function createClusterElement(cluster, { category, color, darkMode, portraitClus
     .slice(0, portraitCluster ? HERO_CLUSTER_PREVIEW_COUNT : MAX_CLUSTER_AVATARS);
 
   if (portraitCluster && getPortraitGroupCount(cluster) > 1) {
-    frame.style.width = '76px';
-    frame.style.height = '64px';
+    frame.style.width = '78px';
+    frame.style.height = '58px';
     frame.appendChild(createHeroGroupAvatar(cluster, { category, color, darkMode, separation: clusterSeparation }));
     button.title = `${getPortraitGroupCount(cluster)} ${getPortraitCategoryLabel(category)}. Click to zoom in.`;
   } else if (communityDay) {

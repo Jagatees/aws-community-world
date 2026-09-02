@@ -37,117 +37,56 @@ export function getMapboxPortraitSeparation(zoom) {
   return Math.min(Math.max((zoom - 1.15) / 1.75, 0), 1);
 }
 
-function getSectorPath(index, count) {
-  const startAngle = -Math.PI / 2 + (index / count) * Math.PI * 2;
-  const endAngle = -Math.PI / 2 + ((index + 1) / count) * Math.PI * 2;
-  const startX = 50 + Math.cos(startAngle) * 50;
-  const startY = 50 + Math.sin(startAngle) * 50;
-  const endX = 50 + Math.cos(endAngle) * 50;
-  const endY = 50 + Math.sin(endAngle) * 50;
-  return `M 50 50 L ${startX} ${startY} A 50 50 0 0 1 ${endX} ${endY} Z`;
+function getAvatarLayout(count, index) {
+  if (count === 1) {
+    return { size: 36, x: 0, y: 0, spreadX: 0, spreadY: 0, zIndex: 2 };
+  }
+
+  if (count === 2) {
+    return index === 0
+      ? { size: 34, x: -10, y: 0, spreadX: -5, spreadY: 0, zIndex: 2 }
+      : { size: 34, x: 10, y: 0, spreadX: 5, spreadY: 0, zIndex: 1 };
+  }
+
+  const layouts = [
+    { size: 34, x: 0, y: 7, spreadX: 0, spreadY: 1, zIndex: 3 },
+    { size: 29, x: -16, y: -7, spreadX: -5, spreadY: -2, zIndex: 2 },
+    { size: 29, x: 16, y: -7, spreadX: 5, spreadY: -2, zIndex: 1 },
+  ];
+  return layouts[index];
 }
 
 export function createPortraitGroupAvatar(cluster, { category, color, darkMode, separation = 0 }) {
   const previewMembers = getPortraitGroupMembers(cluster).slice(0, PREVIEW_COUNT);
   const placeholderUrl = getPortraitPlaceholder(category);
-  const svgNamespace = 'http://www.w3.org/2000/svg';
   const root = document.createElement('div');
   root.dataset.portraitClusterMarker = 'true';
   root.style.setProperty('--portrait-separation', String(separation));
   root.style.position = 'relative';
-  root.style.width = '76px';
-  root.style.height = '64px';
-
-  const merged = document.createElementNS(svgNamespace, 'svg');
-  merged.setAttribute('viewBox', '0 0 100 100');
-  merged.setAttribute('aria-hidden', 'true');
-  merged.style.position = 'absolute';
-  merged.style.left = '50%';
-  merged.style.top = '50%';
-  merged.style.width = '46px';
-  merged.style.height = '46px';
-  merged.style.overflow = 'visible';
-  merged.style.opacity = 'calc(1 - var(--portrait-separation))';
-  merged.style.transform = 'translate(-50%, -50%) scale(calc(1 - var(--portrait-separation) * .08))';
-
-  const defs = document.createElementNS(svgNamespace, 'defs');
-  merged.appendChild(defs);
-  previewMembers.forEach((member, index) => {
-    const clipId = `atlas-${category}-${cluster.lat}-${cluster.lng}-${index}`.replace(/[^a-zA-Z0-9_-]/g, '-');
-    const sectorPath = getSectorPath(index, previewMembers.length);
-    const clip = document.createElementNS(svgNamespace, 'clipPath');
-    clip.id = clipId;
-    const clipShape = document.createElementNS(svgNamespace, 'path');
-    clipShape.setAttribute('d', sectorPath);
-    clip.appendChild(clipShape);
-    defs.appendChild(clip);
-
-    const group = document.createElementNS(svgNamespace, 'g');
-    group.setAttribute('clip-path', `url(#${clipId})`);
-    const imageUrl = getMemberImage(member);
-    if (imageUrl) {
-      const image = document.createElementNS(svgNamespace, 'image');
-      image.setAttribute('href', imageUrl);
-      image.setAttribute('width', '100');
-      image.setAttribute('height', '100');
-      image.setAttribute('preserveAspectRatio', 'xMidYMid slice');
-      group.appendChild(image);
-    } else {
-      const background = document.createElementNS(svgNamespace, 'rect');
-      background.setAttribute('width', '100');
-      background.setAttribute('height', '100');
-      background.setAttribute('fill', category === 'heroes' ? '#232F3E' : (darkMode ? '#152534' : '#FFFFFF'));
-      group.appendChild(background);
-      const logo = document.createElementNS(svgNamespace, 'image');
-      logo.setAttribute('href', placeholderUrl);
-      logo.setAttribute('x', '18');
-      logo.setAttribute('y', '20');
-      logo.setAttribute('width', '64');
-      logo.setAttribute('height', '60');
-      logo.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-      group.appendChild(logo);
-    }
-    merged.appendChild(group);
-
-    const separator = document.createElementNS(svgNamespace, 'path');
-    separator.setAttribute('d', sectorPath);
-    separator.setAttribute('fill', 'none');
-    separator.setAttribute('stroke', darkMode ? '#F8FAFC' : '#172A3A');
-    separator.setAttribute('stroke-width', '3.5');
-    separator.setAttribute('stroke-linejoin', 'round');
-    merged.appendChild(separator);
-  });
-
-  const outline = document.createElementNS(svgNamespace, 'circle');
-  outline.setAttribute('cx', '50');
-  outline.setAttribute('cy', '50');
-  outline.setAttribute('r', '48');
-  outline.setAttribute('fill', 'none');
-  outline.setAttribute('stroke', darkMode ? '#0B1824' : '#FFFFFF');
-  outline.setAttribute('stroke-width', '5');
-  merged.appendChild(outline);
+  root.style.width = '78px';
+  root.style.height = '58px';
 
   previewMembers.forEach((member, index) => {
-    const angle = previewMembers.length === 2
-      ? (index === 0 ? Math.PI : 0)
-      : -Math.PI / 2 + (index / previewMembers.length) * Math.PI * 2;
-    const x = Math.cos(angle) * 21;
-    const y = Math.sin(angle) * 15;
+    const layout = getAvatarLayout(previewMembers.length, index);
     const avatar = document.createElement('div');
     avatar.style.position = 'absolute';
     avatar.style.left = '50%';
     avatar.style.top = '50%';
-    avatar.style.width = '30px';
-    avatar.style.height = '30px';
+    avatar.style.width = `${layout.size}px`;
+    avatar.style.height = `${layout.size}px`;
     avatar.style.display = 'grid';
     avatar.style.placeItems = 'center';
     avatar.style.overflow = 'hidden';
     avatar.style.borderRadius = '999px';
     avatar.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
-    avatar.style.background = darkMode ? '#152534' : '#FFFFFF';
-    avatar.style.boxShadow = '0 2px 9px rgba(0,0,0,.34)';
-    avatar.style.opacity = 'var(--portrait-separation)';
-    avatar.style.transform = `translate(-50%, -50%) translate(calc(${x}px * var(--portrait-separation)), calc(${y}px * var(--portrait-separation))) scale(calc(.82 + var(--portrait-separation) * .18))`;
+    avatar.style.background = category === 'heroes' ? '#232F3E' : (darkMode ? '#152534' : '#FFFFFF');
+    avatar.style.boxShadow = index === 0
+      ? `0 0 0 1px ${color}, 0 5px 12px rgba(0, 0, 0, ${darkMode ? '.42' : '.24'})`
+      : `0 3px 9px rgba(0, 0, 0, ${darkMode ? '.38' : '.2'})`;
+    avatar.style.transform = `translate(-50%, -50%) translate(calc(${layout.x}px + var(--portrait-separation) * ${layout.spreadX}px), calc(${layout.y}px + var(--portrait-separation) * ${layout.spreadY}px))`;
+    avatar.style.transition = 'transform 90ms linear';
+    avatar.style.willChange = 'transform';
+    avatar.style.zIndex = String(layout.zIndex);
     const imageUrl = getMemberImage(member);
     const image = document.createElement('img');
     image.src = imageUrl || placeholderUrl;
@@ -173,13 +112,17 @@ export function createPortraitGroupAvatar(cluster, { category, color, darkMode, 
   countBadge.style.display = 'grid';
   countBadge.style.placeItems = 'center';
   countBadge.style.background = color;
-  countBadge.style.color = '#0F1923';
+  countBadge.style.color = category === 'cloud-clubs' ? '#FFFFFF' : '#0F1923';
   countBadge.style.border = `2px solid ${darkMode ? '#0B1824' : '#FFFFFF'}`;
   countBadge.style.fontSize = '9px';
   countBadge.style.fontWeight = '900';
-  countBadge.style.transform = 'translate(calc(8px + var(--portrait-separation) * 17px), calc(8px + var(--portrait-separation) * 10px))';
+  countBadge.style.lineHeight = '1';
+  countBadge.style.boxShadow = `0 3px 8px rgba(0, 0, 0, ${darkMode ? '.38' : '.2'})`;
+  countBadge.style.transform = 'translate(calc(11px + var(--portrait-separation) * 4px), calc(8px + var(--portrait-separation) * 2px))';
+  countBadge.style.transition = 'transform 90ms linear';
+  countBadge.style.willChange = 'transform';
+  countBadge.style.zIndex = '4';
 
-  root.appendChild(merged);
   root.appendChild(countBadge);
   return root;
 }

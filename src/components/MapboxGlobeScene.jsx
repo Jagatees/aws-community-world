@@ -122,8 +122,8 @@ function createClusterElement(cluster, { category, color, darkMode, separation, 
     .slice(0, PORTRAIT_GROUP_CATEGORIES.has(category) ? 3 : MAX_CLUSTER_AVATARS);
 
   if (PORTRAIT_GROUP_CATEGORIES.has(category) && getPortraitGroupCount(cluster) > 1) {
-    frame.style.width = '76px';
-    frame.style.height = '64px';
+    frame.style.width = '78px';
+    frame.style.height = '58px';
     frame.appendChild(createPortraitGroupAvatar(cluster, { category, color, darkMode, separation }));
   } else if (communityDay) {
     const flag = document.createElement('img');
