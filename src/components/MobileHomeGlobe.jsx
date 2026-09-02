@@ -89,12 +89,18 @@ const EVENT_MARKERS = [
 const MAX_PIXEL_RATIO = 1.25;
 const MAP_SAMPLES = 9000;
 const ROTATION_SPEED = 0.0022;
-const GLOBE_SCALE = 1.3;
+const MAX_GLOBE_SCALE = 1.02;
+const GLOBE_WIDTH_RATIO = 1.45;
 const GLOBE_OFFSET_RATIO = 0.4;
 const GLOBE_THETA = 0.16;
 const MAX_VISIBLE_LABELS = 2;
 
-function projectMarker([latitude, longitude], phi, width, height) {
+function getResponsiveGlobeScale(width, height) {
+  const scaleForWidth = (width * GLOBE_WIDTH_RATIO) / (height * 0.8);
+  return Math.min(MAX_GLOBE_SCALE, scaleForWidth);
+}
+
+function projectMarker([latitude, longitude], phi, width, height, globeScale) {
   const latitudeRadians = latitude * Math.PI / 180;
   const longitudeRadians = longitude * Math.PI / 180;
   const cosLatitude = Math.cos(latitudeRadians);
@@ -109,11 +115,11 @@ function projectMarker([latitude, longitude], phi, width, height) {
   const viewX = worldX * cosPhi + worldZ * sinPhi;
   const viewY = worldX * sinPhi * sinTheta + worldY * cosTheta - worldZ * cosPhi * sinTheta;
   const viewZ = -worldX * sinPhi * cosTheta + worldY * sinTheta + worldZ * cosPhi * cosTheta;
-  const radius = GLOBE_SCALE * 0.4 * height;
+  const radius = globeScale * 0.4 * height;
 
   return {
     x: width / 2 + viewX * radius,
-    y: height / 2 - viewY * radius + GLOBE_SCALE * height * GLOBE_OFFSET_RATIO / 2,
+    y: height / 2 - viewY * radius + globeScale * height * GLOBE_OFFSET_RATIO / 2,
     depth: viewZ,
   };
 }
@@ -134,6 +140,7 @@ export default function MobileHomeGlobe({ isEvents = false }) {
     const pixelRatio = Math.min(window.devicePixelRatio || 1, MAX_PIXEL_RATIO);
     const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     let phi = -0.35;
+    let globeScale = MAX_GLOBE_SCALE;
     let globe = null;
     let cancelled = false;
     let isIntersecting = true;
@@ -144,6 +151,7 @@ export default function MobileHomeGlobe({ isEvents = false }) {
       cssSize.height = Math.max(1, container.clientHeight);
       size.width = Math.max(1, Math.round(cssSize.width * pixelRatio));
       size.height = Math.max(1, Math.round(cssSize.height * pixelRatio));
+      globeScale = getResponsiveGlobeScale(cssSize.width, cssSize.height);
     };
     updateSize();
 
@@ -155,7 +163,7 @@ export default function MobileHomeGlobe({ isEvents = false }) {
         : cssSize.height * 0.72;
       const projected = FEATURED_COMMUNITY_MARKERS.map((marker, index) => ({
         index,
-        ...projectMarker(marker.location, phi, cssSize.width, cssSize.height),
+        ...projectMarker(marker.location, phi, cssSize.width, cssSize.height, globeScale),
       }));
       const visibleIndexes = new Set(projected
         .filter(({ x, y, depth }) => (
@@ -213,7 +221,7 @@ export default function MobileHomeGlobe({ isEvents = false }) {
           baseColor: [0.08, 0.16, 0.24],
           markerColor: [1, 0.45, 0],
           glowColor: [0.2, 0.56, 0.9],
-          scale: GLOBE_SCALE,
+          scale: globeScale,
           offset: [0, Math.round(size.height * GLOBE_OFFSET_RATIO)],
           markers: isEvents ? EVENT_MARKERS : COMMUNITY_MARKERS,
           opacity: 1,
@@ -223,6 +231,7 @@ export default function MobileHomeGlobe({ isEvents = false }) {
             state.height = size.height;
             state.phi = phi;
             state.theta = GLOBE_THETA;
+            state.scale = globeScale;
             state.offset = [0, Math.round(size.height * GLOBE_OFFSET_RATIO)];
             positionLabels();
           },
