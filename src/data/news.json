@@ -1,224 +1,225 @@
 {
-  "updatedAt": "2026-09-03T05:27:59.154Z",
+  "updatedAt": "2026-09-04T05:32:58.820Z",
   "latest": [
     {
-      "id": "/content/3InubmlvAA6XQpVxjD3qGtllWc6",
-      "title": "What is AWS and how cloud computing works?",
-      "description": "AWS, or Amazon Web Services, is a cloud platform that lets you use computing power, storage, databases, and other IT resources over the internet without owning physical servers. Cloud computing works by delivering these resources on demand, so you can start small, scale quickly, and pay only for what you use.",
-      "url": "https://builder.aws.com/content/3InubmlvAA6XQpVxjD3qGtllWc6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Inv5Or0UyrjUeoTZWt3etCiuzV/7776.webp",
-      "authorName": "Fahad Sk",
-      "authorAlias": "fahad777",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IlG1v5zE2yXfmneCbWZyYxWuhZ.webp",
-      "location": "West Bengal, IN",
-      "lat": 22.9964948,
-      "lng": 87.6855882,
-      "tags": [
-        "ai",
-        "aws-builders",
-        "all-builders-welcome",
-        "aws-community-builders",
-        "aws-student-builders-groups"
-      ],
-      "publishedAt": "2026-09-03T05:24:18.405Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3InuLUWowqGsUW4FOBAsJ0KqprD",
-      "title": "I Deleted My EC2 Instance. Did I Delete My Data?",
-      "description": "What happens to your data when you terminate an EC2 instance? Learn how EBS, snapshots, and Delete on Termination determine what survives.",
-      "url": "https://builder.aws.com/content/3InuLUWowqGsUW4FOBAsJ0KqprD",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Inuwch59q8P6Rcn8VxfkTsSrIH/cove.webp",
-      "authorName": "Nusna Rabik",
-      "authorAlias": "fathimanusna7",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IY3YuRZn3AUJlQbufvhdiQzWCy.webp",
+      "id": "/content/3Iqh8H30WZ0B77CSqp9R0X2CSqI",
+      "title": "AWS Free Tier for Students: A Beginner’s Guide to Learning Cloud Computing",
+      "description": "Learn how students can use AWS Free Tier to practise cloud computing, build projects, and develop practical skills while managing cloud costs responsibly.",
+      "url": "https://builder.aws.com/content/3Iqh8H30WZ0B77CSqp9R0X2CSqI",
+      "imageUrl": "",
+      "authorName": "Dasuni Jayasundara",
+      "authorAlias": "hjmydjayasundara",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IqlGaDaL3I4xCKZGkFMimxPOXk.webp",
       "location": "LK",
       "lat": 7.5554942,
       "lng": 80.7137847,
       "tags": [
+        "aws-certification",
         "amazon-ec2",
-        "amazon-ebs",
-        "cloud-storage",
-        "storage"
+        "docker",
+        "artificial-intelligence"
       ],
-      "publishedAt": "2026-09-03T05:22:49.761Z",
-      "likesCount": 4,
+      "publishedAt": "2026-09-04T05:29:57.598Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3IqkpVtCjBSJDIDKMtlE4wYK0pJ",
+      "title": "How to Architect a Secure 3-Tier Network on AWS with $0 NAT Gateway Costs",
+      "description": "A practical architectural guide for cloud students on designing isolated VPC subnets, Security Group chaining, and avoiding unexpected NAT Gateway charges on AWS Free Tier.",
+      "url": "https://builder.aws.com/content/3IqkpVtCjBSJDIDKMtlE4wYK0pJ",
+      "imageUrl": "",
+      "authorName": "SILVA K.K.D.",
+      "authorAlias": "kithsara",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IPs5KKYoNFSTfNQRV45EVYSTzl.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "architecture",
+        "vpc",
+        "security"
+      ],
+      "publishedAt": "2026-09-04T05:29:51.431Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3IqjT1sa6gY6zWdciPsScyAuAqM",
+      "title": "Building Generative AI Applications with Amazon Bedrock",
+      "description": "Learn how Amazon Bedrock makes it easier to build generative AI applications using foundation models through AWS, without managing the underlying machine learning infrastructure.",
+      "url": "https://builder.aws.com/content/3IqjT1sa6gY6zWdciPsScyAuAqM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Iqkrdn5H0AB12yIrbJbzYXSUqm/clou.webp",
+      "authorName": "nandini",
+      "authorAlias": "nandini191205",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ip3WihLy3dH8KMr8WMFMtQWTxN.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-bedrock",
+        "generative-ai",
+        "aws-cloudformation",
+        "artificial-intelligence"
+      ],
+      "publishedAt": "2026-09-04T05:28:28.073Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3IqjDI2IfC488HugthNsT7SKQpa",
+      "title": "Production-Grade ECS Fargate: How to Architect Scalable, Zero-Downtime Microservices",
+      "description": "A practical guide to architecting isolated environments, zero-downtime rolling deployments, and automated CI/CD pipelines on AWS ECS Fargate with GitHub Actions and Terraform.",
+      "url": "https://builder.aws.com/content/3IqjDI2IfC488HugthNsT7SKQpa",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Iqkb1rujNZLCNuZ95KqOylx5Bt/aws-a.webp",
+      "authorName": "Muhammad Usman",
+      "authorAlias": "musmankhan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IjKCg0ANQabT5UInJ5buBKWEYz.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "devops",
+        "aws-fargate",
+        "elastic-load-balancing",
+        "containers",
+        "amazon-elastic-container-registry"
+      ],
+      "publishedAt": "2026-09-04T05:26:36.281Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3IpW0GXjKlNBuJdIuhgkhONg2B6",
+      "title": "Designing Enterprise-Grade LLM Agent Architectures on AWS: Security, Resilience, and Architectural Trade-Offs",
+      "description": "Why single-agent architectures fail in production and how to architect decoupled, least-privileged multi-agent systems on AWS. A deep architectural guide covering the Hierarchical Supervisor pattern, defense-in-depth security with VPC PrivateLink and Bedrock Guardrails, fault tolerance with circuit breakers, and concrete trade-off decisions (ADRs) for enterprise AI.",
+      "url": "https://builder.aws.com/content/3IpW0GXjKlNBuJdIuhgkhONg2B6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3IqHtfNCIpAOSPWb2HTc8EwUMOI/cover.webp",
+      "authorName": "diego rafael flores gonzales",
+      "authorAlias": "diegointhecloud",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AafDEuxGpUlyxtg1RpnUx9kxHh.webp",
+      "location": "PE",
+      "lat": -6.8699697,
+      "lng": -75.0458515,
+      "tags": [
+        "amazon-bedrock",
+        "agentic-ai",
+        "solutions-architect",
+        "ai-security",
+        "multi-agent-orchestrator"
+      ],
+      "publishedAt": "2026-09-04T05:23:46.538Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3IowYgIUSpTAUdK0SQngKI8Ja7i",
+      "title": "Building a Cloud-Native DevOps Platform with CI/CD, Docker & Kubernetes",
+      "description": "Explore how a modern application moves from development to production using Docker, CI/CD, Kubernetes, cloud infrastructure, monitoring, and automated deployments. This article walks through the architecture, workflow, and key DevOps practices behind the platform.",
+      "url": "https://builder.aws.com/content/3IowYgIUSpTAUdK0SQngKI8Ja7i",
+      "imageUrl": "",
+      "authorName": "adharsh u",
+      "authorAlias": "adharshunni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IK0CzyKZjWS2oD5M23hV3Wwhuo.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agent-to-agent",
+        "agents",
+        "agentic-interactions",
+        "agentic-ide",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-09-04T05:20:56.559Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3IqhqYRYeRG9IuRYuWv2CZGVw3L",
+      "title": "AWS Multi-Account Strategy Explained: Organizations, Control Tower and Cloud Governance",
+      "description": "As AWS environments grow, managing everything inside a single AWS account can become difficult. A multi-account strategy helps organizations separate workloads, improve security, control access, simplify billing, and establish governance.\n\nThis article explains AWS Organizations, Organizational Units (OUs), Service Control Policies (SCPs), AWS Control Tower, account separation, centralized governance, and multi-account best practices using practical cloud infrastructure examples.",
+      "url": "https://builder.aws.com/content/3IqhqYRYeRG9IuRYuWv2CZGVw3L",
+      "imageUrl": "",
+      "authorName": "Balamanikandan S",
+      "authorAlias": "balamanikandanb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IRIQzjtp31AFBnlDgeR2WQfQOP.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-organizations",
+        "cloud-operations",
+        "cloud-security",
+        "govcloud",
+        "multi-cloud"
+      ],
+      "publishedAt": "2026-09-04T05:15:39.039Z",
+      "likesCount": 3,
       "commentsCount": 2
     },
     {
-      "id": "/content/3Inuf7fYC1f5yygUPdUuLK0bzch",
-      "title": "What I Wish I Knew Before Starting AWS",
-      "description": "A collection of lessons and beginner mistakes that students may encounter when starting their AWS journey.",
-      "url": "https://builder.aws.com/content/3Inuf7fYC1f5yygUPdUuLK0bzch",
+      "id": "/content/3IqieatLmIoTAMGUfCoEKpNmzf0",
+      "title": "Like this comment u r reading now and will will like your whole account post",
+      "description": "Like this comment u r reading now and will will like your whole account post",
+      "url": "https://builder.aws.com/content/3IqieatLmIoTAMGUfCoEKpNmzf0",
       "imageUrl": "",
-      "authorName": "Shubham Kumar Sharma",
-      "authorAlias": "shubhamsharma3",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ii8HcQtUgTnlLeVOEk4KO0wxu8.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-09-03T05:20:39.997Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Int4znznTP17tHfw0QWUEu0Wc9",
-      "title": "What Actually Happens When You Open an AWS Website?",
-      "description": "What happens after you hit Enter? Trace an AWS request from Route 53 and networking to Load Balancers, EC2, security, and your application.",
-      "url": "https://builder.aws.com/content/3Int4znznTP17tHfw0QWUEu0Wc9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3IntZI2OOdtFBABL5Q3ohwyJWzc/aws-.webp",
-      "authorName": "Nusna Rabik",
-      "authorAlias": "fathimanusna7",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IY3YuRZn3AUJlQbufvhdiQzWCy.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
+      "authorName": "Rahul Chaudhary",
+      "authorAlias": "rahulchaudhary",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IOXstlxavxjsxi7UZRhgr70tQs.webp",
+      "location": "NP",
+      "lat": 28.3780464,
+      "lng": 83.9999901,
       "tags": [
-        "dns",
-        "amazon-ec2",
-        "aws-networking",
-        "load-balancer"
+        "ai",
+        "ai-engineering"
       ],
-      "publishedAt": "2026-09-03T05:12:17.553Z",
+      "publishedAt": "2026-09-04T05:10:59.047Z",
       "likesCount": 4,
-      "commentsCount": 1
+      "commentsCount": 3
     },
     {
-      "id": "/content/3InsX7XwIlBFfuOF1mhCrn1S8Ia",
-      "title": "🚀 21 Badges, One Community — Let’s Unlock Them All! 🏆",
-      "description": "Let’s connect, share tips, resources, and experiences to help each other unlock all 21 AWS Builder badges. Join the challenge, share your progress, and let’s reach 21/21 together! 🚀☁️",
-      "url": "https://builder.aws.com/content/3InsX7XwIlBFfuOF1mhCrn1S8Ia",
+      "id": "/content/3IqiJXEoMWRvKQjPjhqU3ayR6M4",
+      "title": "Lets make it easier for the badge (Get 10 likes in 5 of your comments)",
+      "description": "lets commment and like ",
+      "url": "https://builder.aws.com/content/3IqiJXEoMWRvKQjPjhqU3ayR6M4",
       "imageUrl": "",
-      "authorName": "Aryan Raj",
-      "authorAlias": "aryanraj004",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IP4Zu65QDVt89gpvXRwPrDKhCB.webp",
+      "authorName": "Rahul Chaudhary",
+      "authorAlias": "rahulchaudhary",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IOXstlxavxjsxi7UZRhgr70tQs.webp",
+      "location": "NP",
+      "lat": 28.3780464,
+      "lng": 83.9999901,
+      "tags": [
+        "ai",
+        "agents",
+        "ai-engineering"
+      ],
+      "publishedAt": "2026-09-04T05:08:16.863Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3IqghWIjiEz9cc6uLEHUpCdpw1h",
+      "title": "From 0 to 21: A Student’s Roadmap to AWS Builder Center Badges",
+      "description": "Trying to understand the AWS Student Rewards badge system?\nThis practical roadmap breaks down the activities, streaks, and community participation that can help students work toward 21 Builder Center badges and the certification reward milestone.",
+      "url": "https://builder.aws.com/content/3IqghWIjiEz9cc6uLEHUpCdpw1h",
+      "imageUrl": "",
+      "authorName": "Shubha Singh",
+      "authorAlias": "shubha05",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3InnzEJKGlhjcp80yzXxnZaG6uR.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
+        "ai-for-developers",
         "aws-builders",
         "aws-certification",
-        "aws-community",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-09-03T05:06:16.575Z",
-      "likesCount": 3,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3Inq7qJNqPOU2ZhxgToIZNk8ZAc",
-      "title": "Getting Started with AWS Skill Builder: A Beginner's Roadmap to Learning Cloud for Free",
-      "description": "A step-by-step guide for complete beginners: how to create your free AWS Skill Builder account, choose the right learning path, test your knowledge, get hands-on practice, and build momentum toward your first AWS certification — using mostly free resources.",
-      "url": "https://builder.aws.com/content/3Inq7qJNqPOU2ZhxgToIZNk8ZAc",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3InsFbT2G52RXpMIxNOgOv6VN1z/Gemi-.webp",
-      "authorName": "Mohamed Shazan",
-      "authorAlias": "shazan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IVNscz7B8wvVvw5nLIn47CqYKI.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "cloud-practitioner",
-        "multi-cloud",
-        "cloud-security",
-        "ai",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-09-03T05:01:07.820Z",
-      "likesCount": 3,
-      "commentsCount": 5
-    },
-    {
-      "id": "/content/3Ins5lKce2JmdcpXpQ7VOdr61QO",
-      "title": "AWS Lambda",
-      "description": " AWS Lambda",
-      "url": "https://builder.aws.com/content/3Ins5lKce2JmdcpXpQ7VOdr61QO",
-      "imageUrl": "",
-      "authorName": "Vardhak Patel",
-      "authorAlias": "vardhak",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IftApqPVnSIkyLLTiuIxrYgRXb.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-lambda",
-        "serverless",
-        "active-directory",
-        "amazon-dynamodb",
-        "cloud-migration"
-      ],
-      "publishedAt": "2026-09-03T05:00:23.329Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3IlhiRC2BufY8QF0cZcfDxFyI7y",
-      "title": "Building Autonomous AI Agents on AWS: A Complete Guide to Bedrock, Lambda, and Kiro",
-      "description": "The shift from simple conversational AI to Agentic AI represents a massive leap forward for cloud architects and developers. Instead of merely generating text, autonomous agents can reason, execute complex workflows, and integrate directly with enterprise cloud infrastructure.\n\nIf you are an AWS Builder looking to construct resilient, production-ready AI agents, combining Amazon Bedrock Agents, AWS Lambda, and modern development frameworks like Kiro provides a powerful, serverless foundation.",
-      "url": "https://builder.aws.com/content/3IlhiRC2BufY8QF0cZcfDxFyI7y",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Inr7EA191AgyCNl7atXDgSn0Bd/kiro.webp",
-      "authorName": "Devendra Kumar",
-      "authorAlias": "devendra76",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IiJrV1HzOpkQ5jSFYnXV9aaQJD.webp",
-      "location": "Rajasthan, IN",
-      "lat": 26.8105777,
-      "lng": 73.7684549,
-      "tags": [
-        "agentic-ai",
-        "agentic-ide",
-        "advertising-marketing-industry",
-        "agents",
-        "agent-to-agent"
-      ],
-      "publishedAt": "2026-09-03T04:50:41.859Z",
-      "likesCount": 5,
-      "commentsCount": 6
-    },
-    {
-      "id": "/content/3Inquna0etIBH8AIeuTt2NlXkZR",
-      "title": "Let's get those badges!",
-      "description": "We can help each other",
-      "url": "https://builder.aws.com/content/3Inquna0etIBH8AIeuTt2NlXkZR",
-      "imageUrl": "",
-      "authorName": "Gabriel Lopez Romero",
-      "authorAlias": "gabostero",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IjdjPPlBQpqao3Kjd4BlyIzwZR.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
-      "tags": [
-        "ai",
-        "students",
-        "student-builders",
         "aws-community"
       ],
-      "publishedAt": "2026-09-03T04:50:12.915Z",
+      "publishedAt": "2026-09-04T05:01:22.783Z",
       "likesCount": 8,
-      "commentsCount": 14
-    },
-    {
-      "id": "/content/3InpgWLeBgYRtYVBkuTDr5YadAH",
-      "title": "Building Smarter AWS Solutions: How AI Can Help Students Learn Cloud Computing",
-      "description": "AI can make AWS easier for students by simplifying complex cloud concepts, explaining services, and helping beginners make better decisions while building projects.",
-      "url": "https://builder.aws.com/content/3InpgWLeBgYRtYVBkuTDr5YadAH",
-      "imageUrl": "",
-      "authorName": "Shivang Kesarwani",
-      "authorAlias": "shivangkesarwani",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3InjvnwEm0TSAtPmlVW2ropokXb.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "ai",
-        "aws-wickr",
-        "data-science",
-        "cloud-storage"
-      ],
-      "publishedAt": "2026-09-03T04:47:07.904Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "commentsCount": 5
     }
   ],
   "trending": [
@@ -236,8 +237,8 @@
       "lng": 83.9999901,
       "tags": [],
       "publishedAt": "2026-09-02T07:16:27.923Z",
-      "likesCount": 713,
-      "commentsCount": 1618
+      "likesCount": 1118,
+      "commentsCount": 2577
     },
     {
       "id": "/content/3IclyRfTAFYnIzVHWICEHmueUwk",
@@ -255,8 +256,31 @@
         "amazon-ec2"
       ],
       "publishedAt": "2026-08-30T06:41:58.503Z",
-      "likesCount": 1207,
-      "commentsCount": 1348
+      "likesCount": 1341,
+      "commentsCount": 1489
+    },
+    {
+      "id": "/content/3Ip7YNGGcvTHISghQNRHv8qn4yN",
+      "title": "Let’s Like and Support Each Other’s Content 👍",
+      "description": "Let’s support each other by liking and commenting on articles and discussions. I’ll check out and support your content, and you can do the same for mine. Let’s help each other grow and become more active in the AWS Builder Center community!",
+      "url": "https://builder.aws.com/content/3Ip7YNGGcvTHISghQNRHv8qn4yN",
+      "imageUrl": "",
+      "authorName": "Md Aaqil",
+      "authorAlias": "aaqil30",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ip0MHfMU2sDNCbMc9spZmTmB8v.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "community",
+        "aws-builders",
+        "networking",
+        "students",
+        "aws-student-builders-groups"
+      ],
+      "publishedAt": "2026-09-03T15:39:57.575Z",
+      "likesCount": 231,
+      "commentsCount": 250
     },
     {
       "id": "/content/3IexjyLPBktgDAnqmIPmTUVbZOE",
@@ -278,8 +302,8 @@
         "aws-builders"
       ],
       "publishedAt": "2026-08-31T01:24:58.401Z",
-      "likesCount": 1122,
-      "commentsCount": 1192
+      "likesCount": 1216,
+      "commentsCount": 1308
     },
     {
       "id": "/content/3IkU8g3AArOpQsxy2TvpZz2ayF3",
@@ -301,8 +325,8 @@
         "kubernetes"
       ],
       "publishedAt": "2026-09-02T00:21:33.864Z",
-      "likesCount": 405,
-      "commentsCount": 367
+      "likesCount": 580,
+      "commentsCount": 533
     },
     {
       "id": "/content/3IdX9pGsUbbEWSInj1UKlUuVppv",
@@ -322,66 +346,31 @@
         "builder-center"
       ],
       "publishedAt": "2026-08-30T15:16:56.760Z",
-      "likesCount": 749,
-      "commentsCount": 852
+      "likesCount": 827,
+      "commentsCount": 923
     },
     {
-      "id": "/content/3InlnddPuNyc2qSb1wYD43xXNt4",
-      "title": "AWS FREE CREDITS",
-      "description": "For receiving the badges offered by AWS Builder center",
-      "url": "https://builder.aws.com/content/3InlnddPuNyc2qSb1wYD43xXNt4",
+      "id": "/content/3Ik7kzfpfQnlcam8FYX1sremmpU",
+      "title": "This Article Is Only For Liking My Comments ! How To Get \" MeaningFull Contributer\" Badge ?",
+      "description": "Please Read This Article Properly ! ",
+      "url": "https://builder.aws.com/content/3Ik7kzfpfQnlcam8FYX1sremmpU",
       "imageUrl": "",
-      "authorName": "Angad Sudan",
-      "authorAlias": "pal1010",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IjZzB7pF96z6HbLnTjhaKpd4F3.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "authorName": "Muhammad Rawaha",
+      "authorAlias": "rawahaimran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ig9l7b4fXRd8e8ays0DjKsl4KS.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
       "tags": [
-        "aws-academy"
+        "aws-builders",
+        "amazon-ec2",
+        "cloud-concepts",
+        "aws-student-builders-groups",
+        "student-builders"
       ],
-      "publishedAt": "2026-09-03T04:07:38.851Z",
-      "likesCount": 11,
-      "commentsCount": 17
-    },
-    {
-      "id": "/content/3Inquna0etIBH8AIeuTt2NlXkZR",
-      "title": "Let's get those badges!",
-      "description": "We can help each other",
-      "url": "https://builder.aws.com/content/3Inquna0etIBH8AIeuTt2NlXkZR",
-      "imageUrl": "",
-      "authorName": "Gabriel Lopez Romero",
-      "authorAlias": "gabostero",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IjdjPPlBQpqao3Kjd4BlyIzwZR.webp",
-      "location": "AR",
-      "lat": -34.9964963,
-      "lng": -64.9672817,
-      "tags": [
-        "ai",
-        "students",
-        "student-builders",
-        "aws-community"
-      ],
-      "publishedAt": "2026-09-03T04:50:12.915Z",
-      "likesCount": 8,
-      "commentsCount": 14
-    },
-    {
-      "id": "/content/3ImJ8DOV61WpGt8ODwexXv9ECXj",
-      "title": "Lets make it easier for the badge (Get 10 likes in 5 of your comments)",
-      "description": "Here we go",
-      "url": "https://builder.aws.com/content/3ImJ8DOV61WpGt8ODwexXv9ECXj",
-      "imageUrl": "",
-      "authorName": "Aryan Vijaykar",
-      "authorAlias": "aryanvijaykar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3C2LkVcVAtIJ93HLtFBvLv9KL5R.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [],
-      "publishedAt": "2026-09-02T15:41:37.850Z",
-      "likesCount": 71,
-      "commentsCount": 121
+      "publishedAt": "2026-09-01T21:22:50.543Z",
+      "likesCount": 78,
+      "commentsCount": 75
     },
     {
       "id": "/content/3Idg4jXbRmkEbxYitrQ7LlzboK7",
@@ -402,28 +391,52 @@
         "student-builders"
       ],
       "publishedAt": "2026-08-30T14:49:16.158Z",
-      "likesCount": 406,
-      "commentsCount": 647
+      "likesCount": 446,
+      "commentsCount": 717
     },
     {
-      "id": "/content/3IYPWbbLaoeRdEl2zXNHLYjPRBA",
-      "title": "Guía definitiva: cómo obtener Skill Builder Premium, un voucher de certificación y AWS Credits completamente gratis",
-      "description": "Si eres estudiante universitario, AWS te está regalando las herramientas para aprender la nube, construir proyectos y certificarte. Esta es la guía completa para reclamarlas, paso a paso.",
-      "url": "https://builder.aws.com/content/3IYPWbbLaoeRdEl2zXNHLYjPRBA",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3IYcwhNQtsQgbM7yNKHNooznnVZ/01_h.webp",
-      "authorName": "Alejandra Bricio",
-      "authorAlias": "abricio",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3FWGxh6WS4ZjiM0ZWonsIVpvOdX.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
+      "id": "/content/3Ip7mrRXH3TNDnLRxMmsuNjIZe6",
+      "title": "🚀 I Built a Simple Cloud File Uploader Using Python & Amazon S3",
+      "description": "☁️ A Python-based file uploader using Amazon S3.\n\nThe idea is simple:\n\nSelect a file → Python sends it to AWS → Amazon S3 stores it securely.\n\nBut this small project helped me understand several important cloud concepts at once.",
+      "url": "https://builder.aws.com/content/3Ip7mrRXH3TNDnLRxMmsuNjIZe6",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ip8Nu5SrgbepEQE3PDGYbWS5Fm/Chat.webp",
+      "authorName": "Arya Jadhav",
+      "authorAlias": "aryajadh0879",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IfkhbL2S9GZ59EDIC1nlw0KbmY.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
       "tags": [
-        "students",
+        "python",
+        "amazon-s3",
+        "aws-cloudformation",
+        "aws-skill-builder",
+        "students"
+      ],
+      "publishedAt": "2026-09-03T15:43:29.527Z",
+      "likesCount": 89,
+      "commentsCount": 66
+    },
+    {
+      "id": "/content/3ImLU9IXhZoUW1h2ModJJ1pyVrk",
+      "title": "The Win-Win Strategy for the 4 Hardest Badges.",
+      "description": "The Win-Win Strategy for the 4 Hardest Badges\nDiscover a collaborative, win-win approach to unlocking the four community-driven badges in the AWS Builder Center Student Challenge. Learn how to work with peers to easily achieve the goals that are normally out of your direct control.\n\n",
+      "url": "https://builder.aws.com/content/3ImLU9IXhZoUW1h2ModJJ1pyVrk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3IoEDu6IfCNJV0Ig98zIzPxfGoV/Scre.webp",
+      "authorName": "PAVITHRA S",
+      "authorAlias": "pavibuilds",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IlkHtHCi9Cj5yFFf8as6ePS1yA.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai-practitioner",
+        "cloud-practitioner",
         "aws-student-builders-groups"
       ],
-      "publishedAt": "2026-08-28T17:55:40.836Z",
-      "likesCount": 479,
-      "commentsCount": 784
+      "publishedAt": "2026-09-03T08:01:39.576Z",
+      "likesCount": 83,
+      "commentsCount": 126
     }
   ]
 }
