@@ -4,6 +4,7 @@ import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { chromium } from 'playwright';
+import { includeStudentGroupAdditions } from './student-group-additions.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -825,7 +826,13 @@ async function scrapeStudentBuilderGroups(page) {
   process.stdout.write('Scraping student builder groups...');
   await gotoDirectoryPage(page, PAGES.studentBuilderGroups, 'a[href]');
 
-  const rawGroups = await page.evaluate(extractDirectoryGroups, 'student');
+  const scrapedGroups = await page.evaluate(extractDirectoryGroups, 'student');
+  // Check upstream completeness before supplementing the directory.
+  if (!DRY_RUN && scrapedGroups.length < 50) throw new Error(`Student Builder Groups scrape returned only ${scrapedGroups.length} records`);
+  const rawGroups = includeStudentGroupAdditions(
+    scrapedGroups,
+    readJson(join(DATA_DIR, 'student-builder-group-additions.json')),
+  );
   const existing = readBaselineJson('cloud-clubs.json');
   const previousByGroup = matchStudentGroups(rawGroups, existing);
   const previousByJoinUrl = new Map(

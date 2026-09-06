@@ -7,6 +7,7 @@ const SINGAPORE_MEMBER_COORDINATES = {
 };
 
 const SRI_LANKA_MEMBER_COORDINATES = {
+  '6f834652-2287-d7a3-c7c8-5ce063e231cc': { lat: 6.808281, lng: 79.993129 },
   '5928bb9a-028e-64aa-b504-1f90bbc4a618': { lat: 6.97364, lng: 79.916247 },
   '51790e13-ffca-c88f-3bf9-2e5f8c107300': { lat: 6.906182, lng: 79.870942 },
   '11053f59-689f-661a-602a-c70918854ef3': { lat: 9.683871, lng: 80.023202 },
