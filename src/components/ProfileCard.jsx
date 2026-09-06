@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import AddToCalendar from './AddToCalendar';
 
 const CATEGORY_LABELS = {
   heroes: 'Hero',
@@ -398,7 +399,7 @@ function CloudClubSingleView({ member, darkMode, url }) {
             </p>
           )}
         </div>
-        {url && (
+      {url && (
           <a
             href={url}
             target="_blank"
@@ -474,6 +475,14 @@ function SingleMemberView({ member, darkMode }) {
         </p>
       )}
       <SocialLinks socialLinks={member.socialLinks} darkMode={darkMode} />
+      {member.category === 'kiro-ambassadors' && member.sourceUrl && (
+        <div className="text-center text-xs leading-5" style={{ color: mutedColor }}>
+          <p>Approximate {member.coordinatePrecision === 'country' ? 'country' : 'city'} location.</p>
+          <a href={member.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Ambassador source</a>
+          {member.verifiedAt && <span> · Verified {member.verifiedAt}</span>}
+        </div>
+      )}
+      {isEvent && <AddToCalendar event={member} />}
       {isEvent && member.description && (
         <p className="max-w-sm text-center text-sm leading-6" style={{ color: mutedColor }}>
           {member.description}
@@ -503,6 +512,22 @@ function SingleMemberView({ member, darkMode }) {
 }
 
 function ClusterListView({ members, darkMode }) {
+  const [query, setQuery] = useState('');
+  const [page, setPage] = useState(0);
+  const listRef = useRef(null);
+  const pageSize = 30;
+  const matchingMembers = useMemo(() => {
+    const search = query.trim().toLocaleLowerCase();
+    return search ? members.filter((member) => [member.name, member.location, member.tag, ...getLeaderNames(member)]
+      .filter(Boolean).join(' ').toLocaleLowerCase().includes(search)) : members;
+  }, [members, query]);
+  const currentPage = Math.min(page, Math.max(0, Math.ceil(matchingMembers.length / pageSize) - 1));
+  const start = currentPage * pageSize;
+  const shownMembers = matchingMembers.slice(start, start + pageSize);
+  const changePage = (nextPage) => {
+    setPage(nextPage);
+    if (listRef.current) listRef.current.scrollTop = 0;
+  };
   const nameColor = darkMode ? '#FFFFFF' : '#0F1923';
   const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
   const itemBg = darkMode ? '#0F1923' : '#f0f7ff';
@@ -510,10 +535,19 @@ function ClusterListView({ members, darkMode }) {
   return (
     <div className="flex w-full min-w-0 flex-col gap-1 overflow-hidden">
       <h2 className="mb-2 text-center text-base font-bold" style={{ color: nameColor }}>
-        {members.length} members at this location
+        {members.length.toLocaleString()} {members.every((member) => member.category === 'user-groups' || member.category === 'cloud-clubs') ? 'groups' : 'members'} in this selection
       </h2>
-      <ul className="flex max-h-[360px] flex-col gap-2 overflow-y-auto overflow-x-hidden pr-1">
-        {members.map((m) => (
+      {members.length > pageSize && (
+        <label className="mb-2">
+          <span className="sr-only">Search this selection</span>
+          <input type="search" value={query} placeholder="Search names or locations"
+            onChange={(event) => { setQuery(event.target.value); changePage(0); }}
+            className="min-h-11 w-full rounded-lg border px-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            style={{ background: itemBg, color: nameColor, borderColor: mutedColor, outlineColor: '#FF9900' }} />
+        </label>
+      )}
+      <ul ref={listRef} className="flex max-h-[min(360px,45dvh)] flex-col gap-2 overflow-y-auto overflow-x-hidden pr-1">
+        {shownMembers.map((m) => (
           <li
             key={m.id}
             className="flex items-start gap-3 rounded-lg p-3"
@@ -561,6 +595,16 @@ function ClusterListView({ members, darkMode }) {
           </li>
         ))}
       </ul>
+      {matchingMembers.length === 0 && <p className="py-5 text-center text-sm" style={{ color: mutedColor }}>No matching names or locations.</p>}
+      {members.length > pageSize && (
+        <nav aria-label="Selection pages" className="mt-3 flex items-center justify-between gap-3 text-sm" style={{ color: nameColor }}>
+          <button type="button" disabled={currentPage === 0} onClick={() => changePage(currentPage - 1)} className="min-h-11 rounded border px-3 disabled:opacity-40">Previous</button>
+          <span role="status" className="text-center text-xs" style={{ color: mutedColor }}>
+            {matchingMembers.length ? `${start + 1}–${start + shownMembers.length} of ${matchingMembers.length.toLocaleString()}` : '0 results'}
+          </span>
+          <button type="button" disabled={start + pageSize >= matchingMembers.length} onClick={() => changePage(currentPage + 1)} className="min-h-11 rounded border px-3 disabled:opacity-40">Next</button>
+        </nav>
+      )}
     </div>
   );
 }
@@ -573,14 +617,31 @@ export default function ProfileCard({ member, onClose, darkMode }) {
   const cardBorder = darkMode ? 'rgba(45, 63, 80, 0.8)' : 'rgba(208, 220, 232, 0.95)';
 
   useEffect(() => {
+    const previousFocus = document.activeElement;
+    const focusable = () => [...(cardRef.current?.querySelectorAll('button:not(:disabled), a[href], input, [tabindex="0"]') ?? [])];
+    focusable()[0]?.focus();
     function handleOutsideClick(e) {
       if (cardRef.current && !cardRef.current.contains(e.target)) {
         onClose();
       }
     }
+    function handleKeyDown(event) {
+      if (event.key === 'Escape') onClose();
+      if (event.key !== 'Tab') return;
+      const controls = focusable();
+      const first = controls[0];
+      const last = controls.at(-1);
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+    }
 
     document.addEventListener('pointerdown', handleOutsideClick);
-    return () => document.removeEventListener('pointerdown', handleOutsideClick);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', handleOutsideClick);
+      document.removeEventListener('keydown', handleKeyDown);
+      if (previousFocus?.isConnected) previousFocus.focus();
+    };
   }, [onClose]);
 
   return (

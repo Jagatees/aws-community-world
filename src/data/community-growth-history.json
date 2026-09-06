@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-01T16:44:41.640Z",
+  "updatedAt": "2026-09-06T11:51:11.747Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -8795,7 +8795,9 @@
     {
       "date": "2026-09-02",
       "source": {
-        "type": "working-tree"
+        "type": "git",
+        "commit": "49ccac1",
+        "subject": "feat: integrate Sri Lanka community improvements"
       },
       "categories": {
         "heroes": {
@@ -9762,24 +9764,386 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-09-06",
+      "source": {
+        "type": "working-tree"
+      },
+      "categories": {
+        "heroes": {
+          "total": 252,
+          "classified": 238,
+          "unclassified": 14,
+          "coveragePercent": 94.4,
+          "regions": {
+            "north-america": 53,
+            "south-america": 11,
+            "europe": 73,
+            "asia": 80,
+            "africa": 6,
+            "oceania": 15
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 252,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "community-builders": {
+          "total": 3036,
+          "classified": 2859,
+          "unclassified": 177,
+          "coveragePercent": 94.2,
+          "regions": {
+            "north-america": 504,
+            "south-america": 256,
+            "europe": 559,
+            "asia": 1183,
+            "africa": 259,
+            "oceania": 98
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 3036,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "user-groups": {
+          "total": 599,
+          "classified": 598,
+          "unclassified": 1,
+          "coveragePercent": 99.8,
+          "regions": {
+            "north-america": 107,
+            "south-america": 97,
+            "europe": 162,
+            "asia": 182,
+            "africa": 32,
+            "oceania": 18
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 599,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "cloud-clubs": {
+          "total": 1022,
+          "classified": 1009,
+          "unclassified": 13,
+          "coveragePercent": 98.7,
+          "regions": {
+            "north-america": 136,
+            "south-america": 118,
+            "europe": 30,
+            "asia": 632,
+            "africa": 88,
+            "oceania": 5
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 1022,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "kiro-events": {
+          "total": 4,
+          "classified": 3,
+          "unclassified": 1,
+          "coveragePercent": 75,
+          "regions": {
+            "north-america": 2,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 1,
+            "africa": 0,
+            "oceania": 0
+          },
+          "changes": {
+            "added": 3,
+            "removed": 7,
+            "net": -4,
+            "retained": 1,
+            "addedByRegion": {
+              "north-america": 1,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 1,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 1,
+              "south-america": 0,
+              "europe": 1,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 1,
+            "removedUnclassified": 5,
+            "addedItems": [
+              {
+                "name": "AWS Community Day Cebu 2026 - Morning Labs",
+                "location": "Cebu, Philippines",
+                "country": "Philippines",
+                "region": "asia",
+                "url": "https://awsugcebu.org"
+              },
+              {
+                "name": "AWS Community Day Vadodara 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://acd26.awsugvad.in/"
+              },
+              {
+                "name": "CUSEC 2027",
+                "location": "Canada",
+                "country": "Canada",
+                "region": "north-america",
+                "url": "https://www.cusec.net/"
+              }
+            ],
+            "removedItems": [
+              {
+                "name": "AI Engineer World Fair",
+                "location": "San Francisco, CA, United States",
+                "country": "United States",
+                "region": "north-america",
+                "url": "https://www.ai.engineer/worldsfair"
+              },
+              {
+                "name": "CUTC Transform Promptathon",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://luma.com/cutc26"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1519749011865600000"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1524822441984000000"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1529895872102400000"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1534969302220800000"
+              },
+              {
+                "name": "WeAreDevelopers World Congress (EMEA)",
+                "location": "Berlin, Germany",
+                "country": "Germany",
+                "region": "europe",
+                "url": "https://www.wearedevelopers.com/world-congress/"
+              }
+            ],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        },
+        "community-days": {
+          "total": 38,
+          "classified": 38,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 5,
+            "south-america": 9,
+            "europe": 9,
+            "asia": 10,
+            "africa": 3,
+            "oceania": 2
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 38,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        }
+      }
     }
   ],
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-09-02",
-      "daysCovered": 157
+      "endDate": "2026-09-06",
+      "daysCovered": 161
     },
     "global": {
-      "totalRecords": 4955,
+      "totalRecords": 4951,
       "classifiedRecords": 4745,
       "coveragePercent": 95.8,
-      "snapshots": 19
+      "snapshots": 20
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-02",
+        "currentDate": "2026-09-06",
         "baselineTotal": 262,
         "currentTotal": 252,
         "currentCoveragePercent": 94.4,
@@ -10301,7 +10665,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-02",
+        "currentDate": "2026-09-06",
         "baselineTotal": 2494,
         "currentTotal": 3036,
         "currentCoveragePercent": 94.2,
@@ -10872,7 +11236,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-02",
+        "currentDate": "2026-09-06",
         "baselineTotal": 608,
         "currentTotal": 599,
         "currentCoveragePercent": 99.8,
@@ -11611,7 +11975,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-02",
+        "currentDate": "2026-09-06",
         "baselineTotal": 623,
         "currentTotal": 1022,
         "currentCoveragePercent": 98.7,
@@ -12575,34 +12939,63 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-09-02",
+        "currentDate": "2026-09-06",
         "baselineTotal": 17,
-        "currentTotal": 8,
-        "currentCoveragePercent": 37.5,
+        "currentTotal": 4,
+        "currentCoveragePercent": 75,
         "periodChange": {
-          "added": 0,
-          "removed": 9,
-          "net": -9,
-          "retained": 8,
-          "retentionPercent": 47.1,
+          "added": 3,
+          "removed": 16,
+          "net": -13,
+          "retained": 1,
+          "retentionPercent": 5.9,
           "addedByRegion": {
-            "north-america": 0,
+            "north-america": 1,
             "south-america": 0,
             "europe": 0,
-            "asia": 0,
+            "asia": 1,
             "africa": 0,
             "oceania": 0
           },
           "removedByRegion": {
-            "north-america": 2,
+            "north-america": 3,
             "south-america": 0,
-            "europe": 1,
+            "europe": 2,
             "asia": 4,
             "africa": 0,
             "oceania": 0
           },
-          "addedItems": [],
+          "addedItems": [
+            {
+              "name": "AWS Community Day Cebu 2026 - Morning Labs",
+              "location": "Cebu, Philippines",
+              "country": "Philippines",
+              "region": "asia",
+              "url": "https://awsugcebu.org"
+            },
+            {
+              "name": "AWS Community Day Vadodara 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://acd26.awsugvad.in/"
+            },
+            {
+              "name": "CUSEC 2027",
+              "location": "Canada",
+              "country": "Canada",
+              "region": "north-america",
+              "url": "https://www.cusec.net/"
+            }
+          ],
           "removedItems": [
+            {
+              "name": "AI Engineer World Fair",
+              "location": "San Francisco, CA, United States",
+              "country": "United States",
+              "region": "north-america",
+              "url": "https://www.ai.engineer/worldsfair"
+            },
             {
               "name": "AWS Summit Madrid",
               "location": "Madrid, Spain",
@@ -12623,6 +13016,13 @@
               "country": "Philippines",
               "region": "asia",
               "url": "https://luma.com/k4ji88wh"
+            },
+            {
+              "name": "CUTC Transform Promptathon",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://luma.com/cutc26"
             },
             {
               "name": "HackOn With Amazon 6.0",
@@ -12653,6 +13053,34 @@
               "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1514675581747200000"
             },
             {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1519749011865600000"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1524822441984000000"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1529895872102400000"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1534969302220800000"
+            },
+            {
               "name": "Miro × Kiro LA hackathon: from board to build",
               "location": "Los Angeles, CA, United States",
               "country": "United States",
@@ -12665,6 +13093,13 @@
               "country": "United States",
               "region": "north-america",
               "url": "https://luma.com/lxd25i7a"
+            },
+            {
+              "name": "WeAreDevelopers World Congress (EMEA)",
+              "location": "Berlin, Germany",
+              "country": "Germany",
+              "region": "europe",
+              "url": "https://www.wearedevelopers.com/world-congress/"
             }
           ]
         },
@@ -12683,15 +13118,15 @@
           },
           "europe": {
             "start": 2,
-            "current": 1,
-            "net": -1,
-            "growthPercent": -50
+            "current": 0,
+            "net": -2,
+            "growthPercent": -100
           },
           "asia": {
             "start": 4,
-            "current": 0,
-            "net": -4,
-            "growthPercent": -100
+            "current": 1,
+            "net": -3,
+            "growthPercent": -75
           },
           "africa": {
             "start": 0,
@@ -12722,20 +13157,12 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-06-17",
-          "added": 0,
-          "removed": 2,
-          "net": -2,
-          "retained": 8,
+          "date": "2026-09-06",
+          "added": 3,
+          "removed": 7,
+          "net": -4,
+          "retained": 1,
           "addedByRegion": {
-            "north-america": 0,
-            "south-america": 0,
-            "europe": 0,
-            "asia": 0,
-            "africa": 0,
-            "oceania": 0
-          },
-          "removedByRegion": {
             "north-america": 1,
             "south-america": 0,
             "europe": 0,
@@ -12743,23 +13170,88 @@
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 0,
-          "removedUnclassified": 0,
-          "addedItems": [],
-          "removedItems": [
+          "removedByRegion": {
+            "north-america": 1,
+            "south-america": 0,
+            "europe": 1,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
+          },
+          "addedUnclassified": 1,
+          "removedUnclassified": 5,
+          "addedItems": [
             {
-              "name": "HackOn With Amazon 6.0",
-              "location": "India",
-              "country": "India",
+              "name": "AWS Community Day Cebu 2026 - Morning Labs",
+              "location": "Cebu, Philippines",
+              "country": "Philippines",
               "region": "asia",
-              "url": "https://unstop.com/hackathons/hackon-with-amazon-60-amazon-1682652"
+              "url": "https://awsugcebu.org"
             },
             {
-              "name": "Miro × Kiro NYC hackathon: from board to build",
-              "location": "New York, NY, United States",
+              "name": "AWS Community Day Vadodara 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://acd26.awsugvad.in/"
+            },
+            {
+              "name": "CUSEC 2027",
+              "location": "Canada",
+              "country": "Canada",
+              "region": "north-america",
+              "url": "https://www.cusec.net/"
+            }
+          ],
+          "removedItems": [
+            {
+              "name": "AI Engineer World Fair",
+              "location": "San Francisco, CA, United States",
               "country": "United States",
               "region": "north-america",
-              "url": "https://luma.com/lxd25i7a"
+              "url": "https://www.ai.engineer/worldsfair"
+            },
+            {
+              "name": "CUTC Transform Promptathon",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://luma.com/cutc26"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1519749011865600000"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1524822441984000000"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1529895872102400000"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1534969302220800000"
+            },
+            {
+              "name": "WeAreDevelopers World Congress (EMEA)",
+              "location": "Berlin, Germany",
+              "country": "Germany",
+              "region": "europe",
+              "url": "https://www.wearedevelopers.com/world-congress/"
             }
           ],
           "quality": {
@@ -12773,7 +13265,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-09-02",
+        "currentDate": "2026-09-06",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -13103,26 +13595,17 @@
       }
     },
     "upcoming": {
-      "total": 30,
-      "next30Days": 13,
+      "total": 32,
+      "next30Days": 19,
       "byRegion": {
-        "north-america": 3,
-        "south-america": 7,
+        "north-america": 4,
+        "south-america": 6,
         "europe": 9,
-        "asia": 7,
+        "asia": 8,
         "africa": 2,
         "oceania": 2
       },
       "items": [
-        {
-          "name": "AWS Community Day Ecuador",
-          "location": "Cuenca, Ecuador",
-          "country": "Ecuador",
-          "region": "south-america",
-          "url": "https://day.awscommunity.ec/",
-          "category": "community-days",
-          "date": "2026-09-05T12:00:00.000Z"
-        },
         {
           "name": "AWS Community Day Poland",
           "location": "Warsaw, Poland",
@@ -13140,6 +13623,24 @@
           "url": "",
           "category": "community-days",
           "date": "2026-09-09T12:00:00.000Z"
+        },
+        {
+          "name": "AWS Community Day Vadodara 2026",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://acd26.awsugvad.in/",
+          "category": "kiro-events",
+          "date": "2026-09-12T00:00:00.000Z"
+        },
+        {
+          "name": "AWS Community Day Cebu 2026 - Morning Labs",
+          "location": "Cebu, Philippines",
+          "country": "Philippines",
+          "region": "asia",
+          "url": "https://awsugcebu.org",
+          "category": "kiro-events",
+          "date": "2026-09-12T09:00:00.000Z"
         },
         {
           "name": "AWS Community Day Argentina",
@@ -13284,15 +13785,6 @@
           "url": "https://www.dmvcommunityday.com/",
           "category": "community-days",
           "date": "2026-10-09T12:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Armenia",
-          "location": "Yerevan, Armenia",
-          "country": "Armenia",
-          "region": "asia",
-          "url": "https://aws-community-day.am/",
-          "category": "community-days",
-          "date": "2026-10-10T12:00:00.000Z"
         }
       ]
     },

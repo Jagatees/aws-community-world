@@ -1,4 +1,4 @@
-name: Update Builder News
+name: Update Community Feeds
 
 on:
   workflow_dispatch:
@@ -8,13 +8,22 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: community-feed-refresh
+  cancel-in-progress: false
+
 jobs:
   update-news:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Singapore
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -27,12 +36,20 @@ jobs:
       - name: Refresh Builder Center news
         run: npm run update:news
 
+      - name: Refresh Kiro RSS and Insights history
+        run: npm run update:kiro-events
+
+      - name: Validate production build
+        run: npm run build
+
       - name: Commit updated news feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/news.json
-          git diff --staged --quiet || git commit -m "chore: refresh Builder Center news"
+          git add src/data/news.json src/data/kiro-events.json src/data/community-growth-history.json scripts/.geo-cache.json
+          git diff --staged --quiet || git commit -m "chore: refresh community feeds and insights"
 
       - name: Push changes
-        run: git push
+        run: |
+          git pull --rebase
+          git push

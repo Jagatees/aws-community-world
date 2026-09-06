@@ -15,6 +15,7 @@ const COMMUNITY_TABS = [
 const EVENT_TABS = [
   { label: 'Kiro Events', key: 'kiro-events' },
   { label: 'Community Days', key: 'community-days' },
+  { label: 'AWS Builder Lofts', key: 'builder-lofts' },
   { label: 'News', key: 'news' },
 ];
 
@@ -26,6 +27,7 @@ const CATEGORY_ACCENTS = {
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'community-days': '#FF9900',
+  'builder-lofts': '#FFB454',
   news: '#FF9900',
 };
 

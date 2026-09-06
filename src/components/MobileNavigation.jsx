@@ -28,6 +28,7 @@ const COMMUNITY_CATEGORIES = [
 const EVENT_CATEGORIES = [
   { key: 'kiro-events', label: 'Kiro Events', accent: '#7B61FF' },
   { key: 'community-days', label: 'Community Days', accent: '#FF9900' },
+  { key: 'builder-lofts', label: 'AWS Builder Lofts', accent: '#FFB454' },
   { key: 'news', label: 'News', accent: '#FF9900' },
 ];
 

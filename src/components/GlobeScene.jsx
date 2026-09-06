@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef } from 'react';
 import createGlobe from 'cobe';
 import { countryCodeToFlag, getCountryCode } from '../utils/countryFlags';
-import { getMemberCountry } from '../utils/memberMarkers';
-import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
+import { getMemberCountry, getRepresentedMemberCount } from '../utils/memberMarkers';
+import { buildGlobeClusterLevels, getGlobeClusterLevel } from '../utils/globeClusters';
 import './GlobeScene.css';
 
 const CATEGORY_COLORS = {
@@ -13,6 +13,7 @@ const CATEGORY_COLORS = {
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'community-days': '#FF9900',
+  'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
   'news': '#FF9900',
 };
@@ -36,8 +37,8 @@ const LABEL_COLLISION_PADDING = 5;
 const MAX_DESKTOP_LABELS = 18;
 const MAX_MOBILE_LABELS = 8;
 const LABEL_POOL_SIZE = MAX_DESKTOP_LABELS;
-const MOBILE_MAX_PIXEL_RATIO = 1.5;
-const DESKTOP_MAX_PIXEL_RATIO = 2;
+const MOBILE_MAX_PIXEL_RATIO = 1.25;
+const DESKTOP_MAX_PIXEL_RATIO = 1.5;
 const MOBILE_MAP_SAMPLES = 10000;
 const DESKTOP_MAP_SAMPLES = 16000;
 
@@ -49,6 +50,7 @@ const CATEGORY_LABELS = {
   'kiro-ambassadors': { icon: '◇', singular: 'Kiro Ambassador', plural: 'Kiro Ambassadors' },
   'kiro-events': { icon: '◆', singular: 'Kiro Event', plural: 'Kiro Events' },
   'community-days': { icon: '▣', singular: 'Community Day', plural: 'Community Days' },
+  'builder-lofts': { icon: '▣', singular: 'Builder Loft', plural: 'Builder Lofts' },
   'aws-ambassadors': { icon: '▲', singular: 'AWS Ambassador', plural: 'AWS Ambassadors' },
   'news': { icon: '↗', singular: 'Story', plural: 'Stories' },
 };
@@ -119,12 +121,8 @@ function latLngToVector(lat, lng) {
   };
 }
 
-function getCameraSpacePosition(lat, lng, phi, theta) {
-  const point = latLngToVector(lat, lng);
-  const cosPhi = Math.cos(phi);
-  const sinPhi = Math.sin(phi);
-  const cosTheta = Math.cos(theta);
-  const sinTheta = Math.sin(theta);
+function getCameraSpacePosition(point, rotation) {
+  const { cosPhi, sinPhi, cosTheta, sinTheta } = rotation;
 
   return {
     x: point.x * cosPhi + point.z * sinPhi,
@@ -143,8 +141,8 @@ function getRotationForLocation(lat, lng) {
   };
 }
 
-function projectMarker(cluster, phi, theta, width, height, scale) {
-  const cameraPoint = getCameraSpacePosition(cluster.lat, cluster.lng, phi, theta);
+function projectMarker(cluster, rotation, width, height, scale) {
+  const cameraPoint = getCameraSpacePosition(cluster.vector, rotation);
   if (cameraPoint.z <= 0) return null;
 
   const radiusBase = Math.min(width, height) / 2;
@@ -152,16 +150,43 @@ function projectMarker(cluster, phi, theta, width, height, scale) {
   const ndcX = (0.8 * cameraPoint.x * scale) / aspect;
   const ndcY = 0.8 * cameraPoint.y * scale;
 
-  return {
-    ...cluster,
-    x: ((ndcX + 1) / 2) * width,
-    y: ((1 - ndcY) / 2) * height,
-    z: cameraPoint.z,
-    radius: Math.max(14, cluster.size * radiusBase * 1.9),
-  };
+  const x = ((ndcX + 1) / 2) * width;
+  const y = ((1 - ndcY) / 2) * height;
+  const radius = Math.max(14, cluster.size * radiusBase * 1.9);
+  if (x < -radius || x > width + radius || y < -radius || y > height + radius) return null;
+
+  // Reuse the projected record while the globe rotates instead of allocating
+  // another object for every location on every animation frame.
+  cluster.x = x;
+  cluster.y = y;
+  cluster.z = cameraPoint.z;
+  cluster.radius = radius;
+  return cluster;
 }
 
-function drawMarkers(canvas, markers, markerRgb, pixelRatio) {
+function createMarkerSprite(radius, color, pixelRatio) {
+  const sprite = document.createElement('canvas');
+  sprite.width = sprite.height = Math.ceil(radius * 3.4 + 2);
+  const context = sprite.getContext('2d');
+  const center = sprite.width / 2;
+  const halo = context.createRadialGradient(center, center, radius * 0.45, center, center, radius * 1.65);
+  halo.addColorStop(0, `rgba(${color}, 0.2)`);
+  halo.addColorStop(1, `rgba(${color}, 0)`);
+  context.fillStyle = halo;
+  context.beginPath();
+  context.arc(center, center, radius * 1.65, 0, Math.PI * 2);
+  context.fill();
+  context.fillStyle = `rgba(${color}, 0.98)`;
+  context.beginPath();
+  context.arc(center, center, radius, 0, Math.PI * 2);
+  context.fill();
+  context.strokeStyle = 'rgba(255, 255, 255, 0.16)';
+  context.lineWidth = Math.max(1, pixelRatio * 0.75);
+  context.stroke();
+  return sprite;
+}
+
+function drawMarkers(canvas, markers, markerRgb, pixelRatio, spriteCache) {
   const context = canvas?.getContext('2d');
   if (!context) return;
 
@@ -170,41 +195,28 @@ function drawMarkers(canvas, markers, markerRgb, pixelRatio) {
   const [red, green, blue] = markerRgb.map((channel) => Math.round(channel * 255));
   const color = `${red}, ${green}, ${blue}`;
 
-  for (const marker of [...markers].sort((a, b) => a.z - b.z)) {
+  // Markers already have front-to-back order for hit testing.
+  for (let index = markers.length - 1; index >= 0; index -= 1) {
+    const marker = markers[index];
     const clusterScale = marker.size / SINGLE_MARKER_SIZE;
-    const radius = clamp(7 * clusterScale, 7, 13) * pixelRatio;
+    const radius = Math.round(clamp(7 * clusterScale, 7, 13) * pixelRatio);
     const edgeFade = clamp(marker.z / 0.16, 0, 1);
     if (edgeFade <= 0) continue;
-
-    const halo = context.createRadialGradient(
-      marker.x,
-      marker.y,
-      radius * 0.45,
-      marker.x,
-      marker.y,
-      radius * 1.65
-    );
-    halo.addColorStop(0, `rgba(${color}, ${0.2 * edgeFade})`);
-    halo.addColorStop(1, `rgba(${color}, 0)`);
-    context.fillStyle = halo;
-    context.beginPath();
-    context.arc(marker.x, marker.y, radius * 1.65, 0, Math.PI * 2);
-    context.fill();
-
-    context.fillStyle = `rgba(${color}, ${0.98 * edgeFade})`;
-    context.beginPath();
-    context.arc(marker.x, marker.y, radius, 0, Math.PI * 2);
-    context.fill();
-
-    context.strokeStyle = `rgba(255, 255, 255, ${0.16 * edgeFade})`;
-    context.lineWidth = Math.max(1, pixelRatio * 0.75);
-    context.stroke();
+    const key = `${color}:${radius}:${pixelRatio}`;
+    let sprite = spriteCache.get(key);
+    if (!sprite) {
+      sprite = createMarkerSprite(radius, color, pixelRatio);
+      spriteCache.set(key, sprite);
+    }
+    context.globalAlpha = edgeFade;
+    context.drawImage(sprite, marker.x - sprite.width / 2, marker.y - sprite.height / 2);
   }
+  context.globalAlpha = 1;
 }
 
 function getClusterLabel(cluster, category) {
   const categoryLabel = CATEGORY_LABELS[category] ?? { icon: '●', singular: 'Member', plural: 'Members' };
-  const count = cluster.members.length;
+  const count = getRepresentedMemberCount(cluster.members);
   const countries = cluster.members
     .map((member) => getMemberCountry(member))
     .filter(Boolean);
@@ -217,8 +229,10 @@ function getClusterLabel(cluster, category) {
     icon: categoryLabel.icon,
     country,
     flag: countryCodes.length === 1 ? countryCodeToFlag(countryCodes[0]) : '',
-    text: count > 1
-      ? `${count} ${categoryLabel.plural} here`
+    text: category === 'builder-lofts' && count === 1
+      ? `${cluster.members[0].city} · ${cluster.members[0].status === 'open' ? 'Open' : 'Announced'}`
+      : count > 1
+      ? `${count} ${categoryLabel.plural} ${cluster.isApproximate ? 'nearby' : 'here'}`
       : cluster.members[0]?.name || categoryLabel.singular,
   };
 }
@@ -242,7 +256,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   const scaleRef = useRef(BASE_SCALE);
   const animationRef = useRef(null);
   const projectedMarkersRef = useRef([]);
-  const clustersRef = useRef([]);
+  const clusterLevelsRef = useRef([[], [], []]);
   const themeRef = useRef({ darkMode: true, markerRgb: [1, 0.6, 0] });
   const idleTimerRef = useRef(null);
   const autoRotateEnabledRef = useRef(true);
@@ -267,35 +281,40 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   const pixelRatioRef = useRef(1);
   const prefersReducedMotionRef = useRef(false);
   const lastRenderTimeRef = useRef(null);
+  const wakeRendererRef = useRef(() => {});
 
   const markerColor = CATEGORY_COLORS[category] ?? '#FF9900';
   const markerRgb = useMemo(() => hexToRgb01(markerColor), [markerColor]);
 
-  const clusters = useMemo(
+  const clusterLevels = useMemo(
     () =>
-      clusterMembersByCoordinates(members).map((cluster, index) => ({
+      buildGlobeClusterLevels(members).map((level) => level.map((cluster, index) => ({
         ...cluster,
         key: `${cluster.members[0]?.id ?? cluster.members[0]?.name ?? 'marker'}-${cluster.lat}-${cluster.lng}-${index}`,
         location: [cluster.lat, cluster.lng],
+        vector: latLngToVector(cluster.lat, cluster.lng),
+        count: getRepresentedMemberCount(cluster.members),
         size:
-          cluster.members.length > 1
+          getRepresentedMemberCount(cluster.members) > 1
             ? Math.min(
-              CLUSTER_MARKER_BASE_SIZE + Math.sqrt(cluster.members.length - 1) * CLUSTER_MARKER_STEP,
+              CLUSTER_MARKER_BASE_SIZE + Math.sqrt(getRepresentedMemberCount(cluster.members) - 1) * CLUSTER_MARKER_STEP,
               CLUSTER_MARKER_MAX_SIZE
             )
             : SINGLE_MARKER_SIZE,
         color: markerRgb,
         label: getClusterLabel(cluster, category),
-      })),
+      }))),
     [category, members, markerRgb]
   );
 
   useEffect(() => {
-    clustersRef.current = clusters;
-  }, [clusters]);
+    clusterLevelsRef.current = clusterLevels;
+    wakeRendererRef.current();
+  }, [clusterLevels]);
 
   useEffect(() => {
     themeRef.current = { darkMode, markerRgb };
+    wakeRendererRef.current();
   }, [darkMode, markerRgb]);
 
   useEffect(() => {
@@ -303,6 +322,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     if (!cardOpen) {
       markerFocusLockedRef.current = false;
     }
+    wakeRendererRef.current();
   }, [cardOpen]);
 
   useEffect(() => {
@@ -316,6 +336,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       targetPhi: phiRef.current + normalizeAngle(target.phi - phiRef.current),
       targetTheta: clamp(target.theta, -MAX_TILT, MAX_TILT),
     };
+    wakeRendererRef.current();
   }, [flyToTarget]);
 
   useEffect(() => {
@@ -329,6 +350,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
 
     autoRotateEnabledRef.current = false;
     if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    wakeRendererRef.current();
   }, [zoomCommand]);
 
   useEffect(() => {
@@ -340,6 +362,27 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     prefersReducedMotionRef.current = reducedMotionQuery.matches;
     if (reducedMotionQuery.matches) autoRotateEnabledRef.current = false;
 
+    let globe;
+    let isIntersecting = true;
+    let rendererPaused = false;
+    let previousFrame = null;
+    const spriteCache = new Map();
+    const shouldAutoRotate = () => autoRotateEnabledRef.current
+      && !prefersReducedMotionRef.current
+      && !pauseRotationRef.current
+      && !markerFocusLockedRef.current
+      && !pointerStateRef.current.active;
+    const setRendererPaused = (paused) => {
+      if (!globe || rendererPaused === paused) return;
+      rendererPaused = paused;
+      if (!paused) lastRenderTimeRef.current = null;
+      globe.toggle(!paused);
+    };
+    const wakeRenderer = () => {
+      if (!document.hidden && isIntersecting) setRendererPaused(false);
+    };
+    wakeRendererRef.current = wakeRenderer;
+
     const updateSize = () => {
       if (!containerRef.current) return;
       const pixelRatio = pixelRatioRef.current;
@@ -350,11 +393,13 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         markerCanvasRef.current.width = width;
         markerCanvasRef.current.height = height;
       }
+      previousFrame = null;
+      wakeRenderer();
     };
 
     updateSize();
 
-    const globe = createGlobe(canvasRef.current, {
+    globe = createGlobe(canvasRef.current, {
       devicePixelRatio: rendererProfile.pixelRatio,
       width: sizeRef.current.width,
       height: sizeRef.current.height,
@@ -373,7 +418,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       markers: [],
       opacity: 1,
       onRender: (state) => {
-        const currentClusters = clustersRef.current;
+        const currentClusters = clusterLevelsRef.current[getGlobeClusterLevel(scaleRef.current)];
         const theme = themeRef.current;
         const renderTime = performance.now();
         const elapsedSeconds = lastRenderTimeRef.current === null
@@ -391,13 +436,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           phiRef.current = animationRef.current.startPhi + (animationRef.current.targetPhi - animationRef.current.startPhi) * eased;
           thetaRef.current = animationRef.current.startTheta + (animationRef.current.targetTheta - animationRef.current.startTheta) * eased;
           if (progress === 1) animationRef.current = null;
-        } else if (
-          autoRotateEnabledRef.current &&
-          !prefersReducedMotionRef.current &&
-          !pauseRotationRef.current &&
-          !markerFocusLockedRef.current &&
-          !pointerStateRef.current.active
-        ) {
+        } else if (shouldAutoRotate()) {
           phiRef.current += AUTO_ROTATE_RADIANS_PER_SECOND * elapsedSeconds;
         }
 
@@ -413,37 +452,48 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         state.scale = getResponsiveScale(scaleRef.current, sizeRef.current.width, sizeRef.current.height);
         state.markerColor = theme.markerRgb;
         state.glowColor = theme.darkMode ? [0.29, 0.56, 0.85] : [0.67, 0.82, 0.94];
-        state.markers = [];
 
-        projectedMarkersRef.current = currentClusters
-          .map((cluster) =>
-            projectMarker(
-              cluster,
-              phiRef.current,
-              thetaRef.current,
-              sizeRef.current.width,
-              sizeRef.current.height,
-              getResponsiveScale(scaleRef.current, sizeRef.current.width, sizeRef.current.height)
-            )
-          )
-          .filter(Boolean)
-          .sort((a, b) => b.z - a.z);
+        // A selected card, manual zoom or reduced-motion preference can leave
+        // the globe completely still. Stop the GPU loop until an interaction,
+        // resize, data change or rotation timer requests another frame.
+        if (!animationRef.current && !shouldAutoRotate() && !pointerStateRef.current.active) {
+          setRendererPaused(true);
+        }
+        if (previousFrame?.phi === state.phi && previousFrame.theta === state.theta
+          && previousFrame.scale === state.scale && previousFrame.width === state.width
+          && previousFrame.height === state.height && previousFrame.clusters === currentClusters
+          && previousFrame.markerRgb === theme.markerRgb) return;
+        previousFrame = { phi: state.phi, theta: state.theta, scale: state.scale,
+          width: state.width, height: state.height, clusters: currentClusters, markerRgb: theme.markerRgb };
+
+        const rotation = { cosPhi: Math.cos(state.phi), sinPhi: Math.sin(state.phi),
+          cosTheta: Math.cos(state.theta), sinTheta: Math.sin(state.theta) };
+        const projected = [];
+        for (const cluster of currentClusters) {
+          const marker = projectMarker(cluster, rotation, state.width, state.height, state.scale);
+          if (marker) projected.push(marker);
+        }
+        projected.sort((a, b) => b.z - a.z);
+        projectedMarkersRef.current = projected;
 
         drawMarkers(
           markerCanvasRef.current,
           projectedMarkersRef.current,
           theme.markerRgb,
-          pixelRatioRef.current
+          pixelRatioRef.current,
+          spriteCache
         );
 
         const pixelRatio = pixelRatioRef.current;
+        const viewportWidth = state.width / pixelRatio;
+        const viewportHeight = state.height / pixelRatio;
         const maxVisibleLabels = rendererProfile.isMobile ? MAX_MOBILE_LABELS : MAX_DESKTOP_LABELS;
         const occupiedRectangles = [];
         let nextPoolIndex = 0;
         const labelCandidates = projectedMarkersRef.current
           .filter((marker) => marker.z >= LABEL_FOCUS_START)
           .sort((first, second) => {
-            const clusterPriority = second.members.length - first.members.length;
+            const clusterPriority = second.count - first.count;
             return clusterPriority || second.z - first.z;
           });
 
@@ -453,7 +503,8 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           const x = marker.x / pixelRatio;
           const y = marker.y / pixelRatio;
           const dotRadius = clamp(7 * (marker.size / SINGLE_MARKER_SIZE), 7, 13);
-          const labelWidth = Math.min(226, Math.max(92, 45 + marker.label.text.length * 6.4));
+          const labelWidth = Math.min(226, viewportWidth * (viewportWidth <= 639 ? 0.42 : 0.46),
+            Math.max(92, 45 + marker.label.text.length * 6.4));
           const labelHeight = 28;
           const labelBottom = y - dotRadius - 9;
           const rectangle = {
@@ -463,6 +514,8 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
             bottom: labelBottom,
           };
 
+          if (rectangle.left < 8 || rectangle.right > viewportWidth - 8
+            || rectangle.top < 8 || rectangle.bottom > viewportHeight - 8) continue;
           if (occupiedRectangles.some((occupied) => rectanglesOverlap(rectangle, occupied))) continue;
 
           occupiedRectangles.push(rectangle);
@@ -522,14 +575,6 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       },
     });
 
-    let isIntersecting = true;
-    let rendererPaused = false;
-    const setRendererPaused = (paused) => {
-      if (rendererPaused === paused) return;
-      rendererPaused = paused;
-      globe.toggle();
-      if (!paused) lastRenderTimeRef.current = null;
-    };
     const syncRendererVisibility = () => {
       setRendererPaused(document.hidden || !isIntersecting);
     };
@@ -537,6 +582,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       prefersReducedMotionRef.current = event.matches;
       if (event.matches) autoRotateEnabledRef.current = false;
       else if (!pauseRotationRef.current && !markerFocusLockedRef.current) autoRotateEnabledRef.current = true;
+      wakeRenderer();
     };
     const intersectionObserver = new IntersectionObserver(([entry]) => {
       isIntersecting = entry?.isIntersecting ?? true;
@@ -555,6 +601,8 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       document.removeEventListener('visibilitychange', syncRendererVisibility);
       reducedMotionQuery.removeEventListener('change', handleReducedMotionChange);
       if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+      wakeRendererRef.current = () => {};
+      spriteCache.clear();
       globe.destroy();
     };
   }, []);
@@ -565,8 +613,10 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     idleTimerRef.current = setTimeout(() => {
       if (!prefersReducedMotionRef.current && !markerFocusLockedRef.current && !pauseRotationRef.current) {
         autoRotateEnabledRef.current = true;
+        wakeRendererRef.current();
       }
     }, IDLE_TIMEOUT_MS);
+    wakeRendererRef.current();
   }
 
   function animateToLocation(lat, lng, duration = 800) {
@@ -579,6 +629,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       targetPhi: phiRef.current + normalizeAngle(target.phi - phiRef.current),
       targetTheta: clamp(target.theta, -MAX_TILT, MAX_TILT),
     };
+    wakeRendererRef.current();
   }
 
   function getActivePointers() {

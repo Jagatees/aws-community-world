@@ -52,13 +52,11 @@
 .minimal-marker-label--dark {
   color: #f7fbff;
   background: color-mix(in srgb, var(--minimal-marker-color) 68%, rgba(7, 16, 25, 0.96));
-  backdrop-filter: blur(10px);
 }
 
 .minimal-marker-label--light {
   color: #0f1923;
   background: color-mix(in srgb, var(--minimal-marker-color) 28%, rgba(255, 255, 255, 0.96));
-  backdrop-filter: blur(10px);
 }
 
 .minimal-marker-label:hover,

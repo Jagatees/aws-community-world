@@ -48,7 +48,8 @@ const EVENT_MARKERS = [
 
 const MAX_PIXEL_RATIO = 1.25;
 const MAP_SAMPLES = 9000;
-const ROTATION_SPEED = 0.0022;
+const HOME_ROTATION_SPEED = 0.0011;
+const EVENT_ROTATION_SPEED = 0.0022;
 const MAX_GLOBE_SCALE = 1.02;
 const GLOBE_WIDTH_RATIO = 1.45;
 const GLOBE_OFFSET_RATIO = 0.4;
@@ -197,7 +198,9 @@ export default function MobileHomeGlobe({ isEvents = false }) {
           markers: isEvents ? EVENT_MARKERS : COMMUNITY_MARKERS,
           opacity: 1,
           onRender: (state) => {
-            if (!reducedMotionQuery.matches) phi += ROTATION_SPEED;
+            if (!reducedMotionQuery.matches) {
+              phi += isEvents ? EVENT_ROTATION_SPEED : HOME_ROTATION_SPEED;
+            }
             state.width = size.width;
             state.height = size.height;
             state.phi = phi;

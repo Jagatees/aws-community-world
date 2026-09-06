@@ -1,8 +1,9 @@
 import { useEffect, useRef, useCallback, useState } from 'react';
 import Globe from 'globe.gl';
 import { useAutoRotate } from '../hooks/useAutoRotate';
-import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
+import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, getRepresentedMemberCount, hasNewMember } from '../utils/memberMarkers';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
+import { groupGlobeLocations } from '../utils/globeClusters';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -12,6 +13,7 @@ const CATEGORY_COLORS = {
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'community-days': '#FF9900',
+  'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
   'news': '#FF9900',
 };
@@ -48,10 +50,7 @@ function getHeroClusterSeparation(altitude) {
 }
 
 function getPortraitGroupCount(cluster) {
-  if (cluster.members.length === 1 && cluster.members[0]?.clusterOnly) {
-    return cluster.members[0].builderCount || 1;
-  }
-  return cluster.members.length;
+  return getRepresentedMemberCount(cluster.members);
 }
 
 function getPortraitGroupMembers(cluster) {
@@ -92,12 +91,11 @@ function getAvatarLayout(count, index) {
   return layouts[index];
 }
 
-function createHeroGroupAvatar(cluster, { category, color, darkMode, separation = 0 }) {
+function createHeroGroupAvatar(cluster, { category, color, darkMode }) {
   const previewMembers = getPortraitGroupMembers(cluster).slice(0, HERO_CLUSTER_PREVIEW_COUNT);
   const placeholderUrl = CATEGORY_PLACEHOLDER_URLS[category] || AWS_HERO_PLACEHOLDER_URL;
   const root = document.createElement('div');
   root.dataset.portraitClusterMarker = 'true';
-  root.style.setProperty('--hero-separation', String(separation));
   root.style.position = 'relative';
   root.style.width = '78px';
   root.style.height = '58px';
@@ -121,7 +119,6 @@ function createHeroGroupAvatar(cluster, { category, color, darkMode, separation 
       : `0 3px 9px rgba(0, 0, 0, ${darkMode ? '.38' : '.2'})`;
     avatar.style.transform = `translate(-50%, -50%) translate(calc(${layout.x}px + var(--hero-separation) * ${layout.spreadX}px), calc(${layout.y}px + var(--hero-separation) * ${layout.spreadY}px))`;
     avatar.style.transition = 'transform 90ms linear';
-    avatar.style.willChange = 'transform';
     avatar.style.zIndex = String(layout.zIndex);
     const imageUrl = getMemberImage(member);
     if (imageUrl) {
@@ -168,7 +165,6 @@ function createHeroGroupAvatar(cluster, { category, color, darkMode, separation 
   countBadge.style.boxShadow = `0 3px 8px rgba(0, 0, 0, ${darkMode ? '.38' : '.2'})`;
   countBadge.style.transform = 'translate(calc(11px + var(--hero-separation) * 4px), calc(8px + var(--hero-separation) * 2px))';
   countBadge.style.transition = 'transform 90ms linear';
-  countBadge.style.willChange = 'transform';
   countBadge.style.zIndex = '4';
 
   root.appendChild(countBadge);
@@ -191,7 +187,7 @@ function getHeroClusterId(category, cluster) {
   return `${category}-${cluster.lat.toFixed(3)}-${cluster.lng.toFixed(3)}-${getPortraitGroupCount(cluster)}`;
 }
 
-function createClusterElement(cluster, { category, color, darkMode, portraitCluster, clusterSeparation, onClick, onWheel }) {
+function createClusterElement(cluster, { category, color, darkMode, portraitCluster, compactOverview, onClick, onWheel }) {
   const communityDay = cluster.members.find((member) => member.category === 'community-days');
   const userGroup = cluster.members.find((member) => member.category === 'user-groups');
   const userGroupFlagUrl = userGroup ? getMemberCountryFlagUrl(userGroup) : '';
@@ -199,9 +195,12 @@ function createClusterElement(cluster, { category, color, darkMode, portraitClus
   const markerColor = isPastCommunityDay ? '#D22C2C' : color;
   const button = document.createElement('button');
   button.type = 'button';
-  button.setAttribute('aria-label', communityDay
+  button.dataset.globeMarker = cluster.isApproximate ? 'area' : 'location';
+  button.setAttribute('aria-label', category === 'builder-lofts'
+    ? `${cluster.members[0].city} Builder Loft · ${cluster.members[0].status === 'open' ? 'Open' : 'Announced'} · approximate city location`
+    : communityDay
     ? `${cluster.members.length} Community Day${cluster.members.length > 1 ? 's' : ''} at this location`
-    : `${cluster.members.length} member${cluster.members.length > 1 ? 's' : ''} at this location`);
+    : `${getPortraitGroupCount(cluster)} ${category === 'user-groups' || category === 'cloud-clubs' ? 'groups' : 'members'} ${cluster.isApproximate ? 'in this area. Zoom in to see source locations.' : 'at this location'}`);
   button.style.display = 'flex';
   button.style.alignItems = 'center';
   button.style.justifyContent = 'center';
@@ -235,10 +234,24 @@ function createClusterElement(cluster, { category, color, darkMode, portraitClus
     .filter((member) => member.src)
     .slice(0, portraitCluster ? HERO_CLUSTER_PREVIEW_COUNT : MAX_CLUSTER_AVATARS);
 
-  if (portraitCluster && getPortraitGroupCount(cluster) > 1) {
+  if (cluster.isApproximate || (compactOverview && getPortraitGroupCount(cluster) > 1)) {
+    frame.textContent = getPortraitGroupCount(cluster).toLocaleString();
+    frame.style.minWidth = '34px';
+    frame.style.minHeight = '34px';
+    frame.style.padding = '0 7px';
+    frame.style.borderRadius = '50%';
+    frame.style.border = `2px solid ${darkMode ? '#132535' : '#FFFFFF'}`;
+    frame.style.background = color;
+    frame.style.color = category === 'cloud-clubs' ? '#FFFFFF' : '#0F1923';
+    frame.style.fontSize = '12px';
+    frame.style.fontWeight = '800';
+    frame.style.fontVariantNumeric = 'tabular-nums';
+    button.title = `${getPortraitGroupCount(cluster).toLocaleString()} ${category === 'user-groups' || category === 'cloud-clubs' ? 'groups' : 'members'} ${cluster.isApproximate ? 'in this area' : 'at this location'}. Click to zoom in.`;
+    button.style.filter = 'none';
+  } else if (portraitCluster && getPortraitGroupCount(cluster) > 1) {
     frame.style.width = '78px';
     frame.style.height = '58px';
-    frame.appendChild(createHeroGroupAvatar(cluster, { category, color, darkMode, separation: clusterSeparation }));
+    frame.appendChild(createHeroGroupAvatar(cluster, { category, color, darkMode }));
     button.title = `${getPortraitGroupCount(cluster)} ${getPortraitCategoryLabel(category)}. Click to zoom in.`;
   } else if (communityDay) {
     const flag = document.createElement('img');
@@ -470,7 +483,19 @@ function createClusterElement(cluster, { category, color, darkMode, portraitClus
     onClick();
   };
 
+  button.querySelectorAll('img').forEach((image) => {
+    image.loading = 'lazy';
+    image.decoding = 'async';
+  });
   return button;
+}
+
+function getLocationCellDegrees(altitude) {
+  return altitude >= 2.2 ? 18 : altitude >= 1.5 ? 9 : altitude >= 1 ? 4.5 : 0;
+}
+
+function motionDuration(duration) {
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : duration;
 }
 
 export default function ClassicGlobeScene({
@@ -485,6 +510,7 @@ export default function ClassicGlobeScene({
   const containerRef = useRef(null);
   const globeRef = useRef(null);
   const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
+  const [locationCellDegrees, setLocationCellDegrees] = useState(18);
   const { startLoop, stopLoop, onPointerEvent, pause, resume } = useAutoRotate(globeRef);
 
   useEffect(() => {
@@ -497,6 +523,7 @@ export default function ClassicGlobeScene({
     const container = containerRef.current;
     container.style.touchAction = 'none';
     container.style.overscrollBehavior = 'none';
+    container.style.setProperty('--hero-separation', '0');
 
     const globe = Globe()(container);
     globe
@@ -507,7 +534,12 @@ export default function ClassicGlobeScene({
       .globeImageUrl('/textures/earth-blue-marble.jpg')
       .bumpImageUrl('/textures/earth-topology.png')
       .showGraticules(false)
+      .enablePointerInteraction(false)
       .pointOfView({ lat: 20, lng: 0, altitude: 2.5 });
+
+    const pixelRatio = Math.min(window.devicePixelRatio || 1, window.matchMedia('(max-width: 767px)').matches ? 1.25 : 1.5);
+    globe.renderer().setPixelRatio(pixelRatio);
+    globe.postProcessingComposer().setPixelRatio(pixelRatio);
 
     const controls = globe.controls();
     if (controls) {
@@ -520,9 +552,20 @@ export default function ClassicGlobeScene({
 
     globeRef.current = globe;
     startLoop();
+    const syncVisibility = () => {
+      if (document.hidden) {
+        globe.pauseAnimation();
+        stopLoop();
+      } else {
+        globe.resumeAnimation();
+        startLoop();
+      }
+    };
+    document.addEventListener('visibilitychange', syncVisibility);
+    syncVisibility();
 
     // Keep the CSS2D avatar overlay below app popups/cards.
-    requestAnimationFrame(() => {
+    const overlayFrame = requestAnimationFrame(() => {
       const canvas = container.querySelector('canvas');
       if (canvas) {
         canvas.style.touchAction = 'none';
@@ -535,6 +578,8 @@ export default function ClassicGlobeScene({
     });
 
     return () => {
+      cancelAnimationFrame(overlayFrame);
+      document.removeEventListener('visibilitychange', syncVisibility);
       stopLoop();
       const renderer = globe.renderer?.();
       globe._destructor?.();
@@ -544,6 +589,25 @@ export default function ClassicGlobeScene({
       globeRef.current = null;
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const globe = globeRef.current;
+    const controls = globe?.controls();
+    if (!controls) return undefined;
+    let previousLevel;
+    const updateDetail = () => {
+      const nextLevel = getLocationCellDegrees(globe.pointOfView().altitude);
+      if (nextLevel === previousLevel) return;
+      previousLevel = nextLevel;
+      setLocationCellDegrees(nextLevel);
+    };
+    controls.addEventListener('change', updateDetail);
+    const frame = requestAnimationFrame(updateDetail);
+    return () => {
+      cancelAnimationFrame(frame);
+      controls.removeEventListener('change', updateDetail);
+    };
+  }, []);
 
   useEffect(() => {
     const globe = globeRef.current;
@@ -564,12 +628,13 @@ export default function ClassicGlobeScene({
     const controls = globe?.controls();
     if (!globe || !controls || !PORTRAIT_GROUP_CATEGORIES.has(category)) return undefined;
 
+    let previousSeparation;
     const updateHeroClustersForZoom = () => {
       const altitude = globe.pointOfView().altitude;
-      const separation = getHeroClusterSeparation(altitude);
-      containerRef.current?.querySelectorAll('[data-portrait-cluster-marker]').forEach((marker) => {
-        marker.style.setProperty('--hero-separation', separation.toFixed(3));
-      });
+      const separation = getHeroClusterSeparation(altitude).toFixed(3);
+      if (separation === previousSeparation) return;
+      previousSeparation = separation;
+      containerRef.current?.style.setProperty('--hero-separation', separation);
     };
     controls.addEventListener('change', updateHeroClustersForZoom);
     const frame = window.requestAnimationFrame(updateHeroClustersForZoom);
@@ -596,8 +661,9 @@ export default function ClassicGlobeScene({
 
   useEffect(() => {
     if (!globeRef.current || !flyToTarget) return;
-    globeRef.current.pointOfView({ lat: flyToTarget.lat, lng: flyToTarget.lng, altitude: 1.5 }, 1000);
-  }, [flyToTarget]);
+    globeRef.current.pointOfView({ lat: flyToTarget.lat, lng: flyToTarget.lng, altitude: 1.5 }, motionDuration(1000));
+    onPointerEvent();
+  }, [flyToTarget, onPointerEvent]);
 
   useEffect(() => {
     if (!globeRef.current || !zoomCommand?.direction) return;
@@ -623,9 +689,13 @@ export default function ClassicGlobeScene({
     if (!globeRef.current || !containerRef.current) return;
 
     const container = containerRef.current;
+    const sourceLocations = clusterMembersByCoordinates(members);
+    const displayLocations = members.length > 128 && locationCellDegrees > 0 && category !== 'community-days'
+      ? groupGlobeLocations(sourceLocations, locationCellDegrees)
+      : sourceLocations;
     const clusters = category === 'community-days' && communityDaysExpanded
       ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMembersByCoordinates(members).map((cluster) => (
+      : displayLocations.map((cluster) => (
         PORTRAIT_GROUP_CATEGORIES.has(category)
           ? { ...cluster, heroClusterId: getHeroClusterId(category, cluster) }
           : cluster
@@ -659,15 +729,20 @@ export default function ClassicGlobeScene({
           color,
           darkMode,
           portraitCluster: PORTRAIT_GROUP_CATEGORIES.has(category),
-          clusterSeparation: PORTRAIT_GROUP_CATEGORIES.has(category)
-            ? getHeroClusterSeparation(globeRef.current.pointOfView().altitude)
-            : 0,
+          compactOverview: members.length > 128 && locationCellDegrees >= 18,
           onWheel: forwardWheel,
           onClick: () => {
+            if (point.isApproximate) {
+              const altitude = globeRef.current.pointOfView().altitude;
+              const nextAltitude = altitude >= 2.2 ? 1.8 : altitude >= 1.5 ? 1.2 : 0.8;
+              globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: nextAltitude }, motionDuration(600));
+              onPointerEvent();
+              return;
+            }
             if (PORTRAIT_GROUP_CATEGORIES.has(category) && getPortraitGroupCount(point) > 1) {
               const altitude = globeRef.current.pointOfView().altitude;
               if (altitude > 1.45) {
-                globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.28 }, 700);
+                globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.28 }, motionDuration(700));
               } else {
                 onMarkerClick(point.members);
               }
@@ -675,16 +750,18 @@ export default function ClassicGlobeScene({
               return;
             }
             if (category === 'community-days' && point.members.length > 1) {
-              globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.3 }, 800);
+              globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.3 }, motionDuration(800));
+              onPointerEvent();
               return;
             }
-            globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.8 }, 800);
+            globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.8 }, motionDuration(800));
+            onPointerEvent();
             const payload = point.members.length === 1 ? point.members[0] : point.members;
             onMarkerClick(payload);
           },
         });
       });
-  }, [members, category, darkMode, onMarkerClick, communityDaysExpanded, onPointerEvent]);
+  }, [members, category, darkMode, onMarkerClick, communityDaysExpanded, locationCellDegrees, onPointerEvent]);
 
   useEffect(() => {
     if (category !== 'community-days' || !containerRef.current) return undefined;

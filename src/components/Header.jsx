@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
+import CommunitySubmission from './CommunitySubmission';
 
 const GLOBE_MODES = [
   { id: 'community', label: 'Community', description: 'People and groups' },
-  { id: 'events', label: 'Events', description: 'Events and latest news' },
+  { id: 'events', label: 'Events', description: 'Events, Builder Lofts and news' },
   { id: 'insights', label: 'Insights', description: 'Community intelligence dashboard' },
   { id: 'experimental', label: 'Experimental', description: 'A playground for new ideas and surprise features' },
 ];
@@ -96,7 +97,7 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
           className="section-mode-switch focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           style={{ outlineColor: '#FF9900', cursor: 'pointer' }}
         >
-          <span>{activeModeLabel}</span>
+          <span key={activeSection} className="section-label-enter">{activeModeLabel}</span>
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 6 3 3 3-3" /></svg>
         </button>
         {modeMenuOpen && (
@@ -128,6 +129,7 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
       </span>
 
       <div className="header-spacer flex-1" />
+      <CommunitySubmission darkMode={darkMode} />
 
       {/* LinkedIn link */}
       <a

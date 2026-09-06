@@ -1,5 +1,7 @@
 import { getCountryCode } from './countryFlags';
 
+export { getRepresentedMemberCount } from './memberCounts';
+
 function tokenizeName(name) {
   return String(name ?? '')
     .trim()
@@ -56,6 +58,7 @@ export function isUsableMemberImage(url) {
 }
 
 export function getMemberBadgeLabel(member) {
+  if (member?.category === 'builder-lofts') return compactPlaceLabel(member.city || member.location?.split(',')[0]) || 'AWS';
   if (member?.clusterOnly && member?.builderCount) {
     if (member.builderCount >= 1000) return `${Math.round(member.builderCount / 100) / 10}K`;
     return String(member.builderCount);

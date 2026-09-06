@@ -2,21 +2,24 @@ import { useEffect, useRef, useState } from 'react';
 import MobileHomeGlobe from './MobileHomeGlobe';
 import { HOME_COMMUNITY_MARKERS } from '../data/home-community-markers';
 import './SplashScreen.css';
+import kiroEvents from '../data/kiro-events.json';
+import kiroAmbassadors from '../data/kiro-ambassadors.json';
 
 const COMMUNITY_STATS = [
   { label: 'Heroes', count: 252, color: '#FF9900' },
   { label: 'Community Builders', count: 3036, color: '#1A9C3E' },
   { label: 'User Groups', count: 599, color: '#00A1C9' },
   { label: 'Student Builder Groups', count: 1022, color: '#BF0816' },
-  { label: 'Kiro Ambassadors', count: 2, color: '#8B5CF6' },
+  { label: 'Kiro Ambassadors', count: kiroAmbassadors.length, color: '#8B5CF6' },
 ];
 
 const EVENT_STATS = [
-  { label: 'Kiro Events', count: 8, color: '#8B5CF6' },
+  { label: 'Kiro Events', count: kiroEvents.length, color: '#8B5CF6' },
   { label: 'Community Days', count: 38, color: '#FF9900' },
 ];
 
-const SPLASH_GLOBE_ROTATION_SPEED = 0.035;
+const HOME_GLOBE_ROTATION_SPEED = 0.018;
+const EVENT_GLOBE_ROTATION_SPEED = 0.035;
 
 function AnimatedNumber({ target, duration = 1800, delay = 0 }) {
   const [value, setValue] = useState(0);
@@ -297,7 +300,7 @@ function OrbitGlobe({ isEvents }) {
           const pov = globeRef.current.pointOfView();
           globeRef.current.pointOfView({
             lat: pov.lat,
-            lng: pov.lng + SPLASH_GLOBE_ROTATION_SPEED,
+            lng: pov.lng + (isEvents ? EVENT_GLOBE_ROTATION_SPEED : HOME_GLOBE_ROTATION_SPEED),
             altitude: pov.altitude,
           });
         }
@@ -364,11 +367,11 @@ const MOBILE_COMMUNITY_STATS = [
   { key: 'builders', count: 3036, label: 'Builders', fullLabel: 'Community Builders' },
   { key: 'groups', count: 599, label: 'User groups', fullLabel: 'User Groups' },
   { key: 'students', count: 1022, label: 'Students', fullLabel: 'Student Builder Groups' },
-  { key: 'kiro', count: 2, label: 'Kiro', fullLabel: 'Kiro Ambassadors' },
+  { key: 'kiro', count: kiroAmbassadors.length, label: 'Kiro', fullLabel: 'Kiro Ambassadors' },
 ];
 
 const MOBILE_EVENT_STATS = [
-  { key: 'kiro', count: 8, label: 'Kiro events', fullLabel: 'Kiro Events' },
+  { key: 'kiro', count: kiroEvents.length, label: 'Kiro events', fullLabel: 'Kiro Events' },
   { key: 'community-days', count: 38, label: 'Community days', fullLabel: 'Community Days' },
 ];
 

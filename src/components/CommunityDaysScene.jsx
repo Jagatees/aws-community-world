@@ -21,18 +21,12 @@ function countdownTo(date, now) {
   return `${days}d ${hours}h ${minutes}m ${seconds}s to go`;
 }
 
-const COMMUNITY_DAY_VIEWS = ['orbit', 'classic', 'sleek', 'flat', 'geolibre', 'list'];
-
-function viewLabel(view) {
-  if (view === 'classic') return 'Mapbox';
-  if (view === 'geolibre') return 'GeoLibre';
-  return view.charAt(0).toUpperCase() + view.slice(1);
-}
-
 export default function CommunityDaysScene({
   darkMode,
   Scene: ActiveScene,
   globeDesign,
+  globeDesigns,
+  globeDesignLabel,
   onDesignChange,
   zoomCommand,
   onZoom,
@@ -141,8 +135,9 @@ export default function CommunityDaysScene({
             className="flex items-center rounded-full p-1"
             style={{ background: controlBackground, border: `1px solid ${panelBorder}`, backdropFilter: 'blur(14px)' }}
             aria-label="Community Days view switcher"
+            role="group"
           >
-            {COMMUNITY_DAY_VIEWS.map((view) => {
+            {globeDesigns.map((view) => {
               const active = globeDesign === view;
               return (
                 <button
@@ -157,8 +152,9 @@ export default function CommunityDaysScene({
                     background: active ? '#FF9900' : 'transparent',
                     cursor: 'pointer',
                   }}
+                  aria-pressed={active}
                 >
-                  {viewLabel(view)}
+                  {globeDesignLabel(view)}
                 </button>
               );
             })}

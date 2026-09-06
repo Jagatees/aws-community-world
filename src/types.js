@@ -1,5 +1,5 @@
 /**
- * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'community-days' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'kiro-events'} CategoryKey
+ * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'community-days' | 'builder-lofts' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'kiro-events'} CategoryKey
  */
 
 /**
@@ -23,6 +23,15 @@
  * @property {string} [description]
  * @property {string} [ctaLabel]
  * @property {string} [country]
+ * @property {string} [city]
+ * @property {'open' | 'announced'} [status]
+ * @property {string} [address]
+ * @property {string} [accessNote]
+ * @property {'venue' | 'city' | 'country'} [coordinatePrecision]
+ * @property {string[]} [offerings]
+ * @property {string} [announcementDate]
+ * @property {string} [sourceUrl]
+ * @property {string} [verifiedAt]
  * @property {number} [builderCount]
  * @property {boolean} [clusterOnly]
  * @property {boolean} [forceSeparateMarker]

@@ -12,6 +12,7 @@ const CATEGORY_COLORS = {
   'cloud-clubs': '#BF0816',
   'kiro-events': '#7B61FF',
   'community-days': '#FF9900',
+  'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
   'news': '#FF9900',
 };
@@ -25,6 +26,8 @@ const MIN_ZOOM = 1;
 const MAX_ZOOM = 12;
 const ZOOM_STEP = 1.35;
 const WHEEL_ZOOM_SENSITIVITY = 0.0015;
+const COUNTRY_FEATURES = feature(countriesTopo, countriesTopo.objects.countries).features;
+const GRATICULE = geoGraticule10();
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
@@ -99,21 +102,31 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
       : (flyToTarget ?? focusedTarget);
   const effectiveZoom = activeTarget ? manualZoom * FOCUS_SCALE : manualZoom;
 
-  const { pathGenerator, countries, graticulePath, markers } = useMemo(() => {
+  const { countries, graticulePath, markers } = useMemo(() => {
     const projection = buildProjection(activeTarget ? { lat: activeTarget.lat, lng: activeTarget.lng } : null);
     projection.scale(projection.scale() * manualZoom);
 
     const path = geoPath(projection);
-    const countryFeatures = feature(countriesTopo, countriesTopo.objects.countries).features;
-    const clusteredMarkers = clusterProjectedMembers(members, projection).map((cluster) => ({
-      ...cluster,
-      size: cluster.members.length > 1 ? Math.min(34, 14 + Math.sqrt(cluster.members.length) * 4) : 10,
-    }));
+    const clusteredMarkers = clusterProjectedMembers(members, projection).map((cluster) => {
+      const visibleImages = [];
+      for (const member of cluster.members) {
+        const src = getMemberImage(member);
+        if (src) visibleImages.push({ src, name: member.name });
+        if (visibleImages.length === MAX_CLUSTER_AVATARS) break;
+      }
+      return {
+        ...cluster,
+        size: cluster.members.length > 1 ? Math.min(34, 14 + Math.sqrt(cluster.members.length) * 4) : 10,
+        visibleImages,
+        hasNewMember: hasNewMember(cluster.members),
+      };
+    });
 
     return {
-      pathGenerator: path,
-      countries: countryFeatures,
-      graticulePath: path(geoGraticule10()),
+      // Panning moves the SVG group; its country paths and avatar previews do
+      // not change. Keep that work out of pointer-move renders.
+      countries: COUNTRY_FEATURES.map((country) => ({ id: country.id ?? country.properties?.name, path: path(country) ?? '' })),
+      graticulePath: path(GRATICULE),
       markers: clusteredMarkers,
     };
   }, [activeTarget, members, manualZoom]);
@@ -274,8 +287,8 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
               <g>
                 {countries.map((country) => (
                   <path
-                    key={country.id ?? country.properties?.name}
-                    d={pathGenerator(country) ?? ''}
+                    key={country.id}
+                    d={country.path}
                     fill={countryFill}
                     stroke={countryStroke}
                     strokeWidth="0.9"
@@ -285,12 +298,9 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
               </g>
 
               <g>
-              {markers.map((marker) => {
+              {markers.filter((marker) => marker.x + pan.x >= -80 && marker.x + pan.x <= MAP_WIDTH + 80 && marker.y + pan.y >= -80 && marker.y + pan.y <= MAP_HEIGHT + 80).map((marker) => {
                 const payload = marker.members.length === 1 ? marker.members[0] : marker.members;
-                const visibleImages = marker.members
-                  .map((member) => ({ src: getMemberImage(member), name: member.name }))
-                  .filter((member) => member.src)
-                  .slice(0, MAX_CLUSTER_AVATARS);
+                const visibleImages = marker.visibleImages;
                 const markerId = `${marker.lat}-${marker.lng}-${marker.members.length}`.replace(/[^a-zA-Z0-9_-]/g, '-');
                 const singleAvatarSize = marker.size * 2.05;
                 const clusterAvatarSize = Math.max(16, marker.size * 1.18);
@@ -300,7 +310,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                   : 0;
                 const stackOffsetX = visibleImages.length > 1 ? stackWidth / 2 : clusterAvatarSize / 2;
                 const badgeCount = Math.max(0, marker.members.length - visibleImages.length);
-                const markerHasNewMember = hasNewMember(marker.members);
+                const markerHasNewMember = marker.hasNewMember;
                 const userGroupFlagUrl = category === 'user-groups'
                   ? getMemberCountryFlagUrl(marker.members[0])
                   : '';

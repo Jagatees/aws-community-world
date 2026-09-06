@@ -25,6 +25,8 @@ const MONTHS = {
 };
 
 const LOCATION_RULES = [
+  [/cebu/i, 'Cebu, Philippines'],
+  [/cusec/i, 'Canada'],
   [/amsterdam|outsystems/i, 'Amsterdam, Netherlands'],
   [/madrid/i, 'Madrid, Spain'],
   [/kumamoto/i, 'Kumamoto, Japan'],
@@ -102,8 +104,7 @@ function parseDateLine(dateLine, fallbackYear) {
   const normalized = dateLine.replace(/\s+/g, ' ').trim();
   const rangeMatch = normalized.match(/^([A-Z][a-z]{2})\s+(\d{1,2})(?:[–-]([A-Z][a-z]{2})?\s?(\d{1,2}))?,\s*(\d{4})(?:\s+(.*))?$/);
   if (!rangeMatch) {
-    const fallback = new Date(Date.UTC(fallbackYear, 0, 1, 23, 59, 59));
-    return { startsAt: fallback.toISOString(), endsAt: fallback.toISOString(), endDateKey: `${fallbackYear}-01-01`, dateOnly: true };
+    throw new Error(`Unrecognized Kiro event date: ${dateLine} (feed year ${fallbackYear}). Existing data was preserved.`);
   }
 
   const [, startMonthText, startDayText, endMonthText, endDayText, yearText, timeText = ''] = rangeMatch;
@@ -207,6 +208,7 @@ function buildButtonLabel(category) {
 
 async function main() {
   const response = await fetch(FEED_URL, {
+    signal: AbortSignal.timeout(30000),
     headers: { accept: 'application/rss+xml, application/xml, text/xml', 'User-Agent': USER_AGENT },
   });
 
@@ -215,6 +217,7 @@ async function main() {
   }
 
   const xml = await response.text();
+  if (!/<rss[\s>]/i.test(xml) || !/<channel[\s>]/i.test(xml)) throw new Error('Invalid Kiro RSS response; existing data was preserved.');
   const now = process.env.KIRO_EVENTS_NOW ? new Date(process.env.KIRO_EVENTS_NOW) : new Date();
   const todayLocalKey = [
     now.getFullYear(),
@@ -233,7 +236,7 @@ async function main() {
     const id = item.guid || item.link || `kiro-event-${index}`;
     const location = inferLocation(item);
     const coords = await geocodeLocation(location, id);
-    const { startsAt, endsAt } = parseDateLine(item.dateLine, fallbackYear);
+    const { startsAt, endsAt, dateOnly } = parseDateLine(item.dateLine, fallbackYear);
 
     return {
       id,
@@ -248,6 +251,7 @@ async function main() {
       eventDate: item.dateLine,
       startsAt,
       endsAt,
+      calendarAllDay: dateOnly || !/\bUTC\b/i.test(item.dateLine),
       description: item.summary,
       ctaLabel: buildButtonLabel(item.category || ''),
       isLivestream: (item.category || '').toLowerCase() === 'livestreams',

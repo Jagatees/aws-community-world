@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { getMemberImage } from '../utils/memberMarkers';
+import AddToCalendar from './AddToCalendar';
 
 const PAGE_SIZE = 60;
 
@@ -11,6 +12,7 @@ const CATEGORY_LABELS = {
   'kiro-ambassadors': 'Kiro Ambassadors',
   'kiro-events': 'Kiro Events',
   'community-days': 'AWS Community Days',
+  'builder-lofts': 'AWS Builder Lofts',
   news: 'Builder Center News',
 };
 
@@ -129,6 +131,7 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
           {isNews && item.publishedAt ? <span>{formatDate(item.publishedAt)}</span> : null}
           {item.isNew ? <span className="font-bold" style={{ color: '#FF9900' }}>New</span> : null}
         </div>
+        {['kiro-events', 'community-days'].includes(category) && <div className="mt-3"><AddToCalendar event={item} /></div>}
       </div>
 
       {url ? (

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 const categoryCache = new Map();
 const categoryRequestCache = new Map();
+const EMPTY_MEMBERS = [];
 
 const DATA_LOADERS = {
   heroes: () => import('../data/heroes.json'),
@@ -11,6 +12,7 @@ const DATA_LOADERS = {
   'kiro-ambassadors': () => import('../data/kiro-ambassadors.json'),
   'kiro-events': () => import('../data/kiro-events.json'),
   'community-days': () => import('../data/community-days.json'),
+  'builder-lofts': () => import('../data/builder-lofts.json'),
   'aws-ambassadors': () => import('../data/aws-ambassadors.json'),
 };
 
@@ -38,9 +40,30 @@ function normalizeMembers(raw, category) {
     ledBy: Array.isArray(item.ledBy) ? item.ledBy : [],
     isNew: Boolean(item.isNew),
     eventDate: item.eventDate ?? '',
+    date: item.date,
+    endDate: item.endDate,
+    startsAt: item.startsAt,
+    endsAt: item.endsAt,
+    calendarAllDay: item.calendarAllDay,
     description: item.description ?? '',
     ctaLabel: item.ctaLabel ?? '',
     country: item.country ?? '',
+    ...(category === 'kiro-ambassadors' ? {
+      sourceUrl: item.sourceUrl,
+      verifiedAt: item.verifiedAt,
+      coordinatePrecision: item.coordinatePrecision,
+    } : {}),
+    ...(category === 'builder-lofts' ? {
+      city: item.city,
+      status: item.status,
+      address: item.address,
+      accessNote: item.accessNote,
+      coordinatePrecision: item.coordinatePrecision,
+      offerings: item.offerings ?? [],
+      announcementDate: item.announcementDate,
+      sourceUrl: item.sourceUrl,
+      verifiedAt: item.verifiedAt,
+    } : {}),
     builderCount: item.builderCount ?? 0,
     clusterOnly: Boolean(item.clusterOnly),
     forceSeparateMarker: Boolean(item.forceSeparateMarker),
@@ -69,50 +92,20 @@ async function loadCategoryData(category, loadFullCommunityBuilders) {
  * @returns {{ members: import('../types').Member[], loading: boolean, error: string|null }}
  */
 export function useCategory(category, loadFullCommunityBuilders = false) {
-  const [members, setMembers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [result, setResult] = useState(null);
+  const enabled = Boolean(category && category !== 'news');
+  const cacheKey = `${category}:${loadFullCommunityBuilders ? 'full' : 'summary'}`;
 
   useEffect(() => {
-    if (!category) return;
-    if (category === 'news') {
-      const frame = window.requestAnimationFrame(() => {
-        setMembers([]);
-        setLoading(false);
-        setError(null);
-      });
-
-      return () => window.cancelAnimationFrame(frame);
-    }
+    if (!enabled || categoryCache.has(cacheKey)) return;
 
     let cancelled = false;
-    const cacheKey = `${category}:${loadFullCommunityBuilders ? 'full' : 'summary'}`;
-    const cachedMembers = categoryCache.get(cacheKey);
-
-    if (cachedMembers) {
-      const frame = window.requestAnimationFrame(() => {
-        setMembers(cachedMembers);
-        setLoading(false);
-        setError(null);
-      });
-
-      return () => {
-        cancelled = true;
-        window.cancelAnimationFrame(frame);
-      };
-    }
-
-    const loadingFrame = window.requestAnimationFrame(() => {
-      if (!cancelled) {
-        setLoading(true);
-        setError(null);
-      }
-    });
 
     let request = categoryRequestCache.get(cacheKey);
     if (!request) {
       request = loadCategoryData(category, loadFullCommunityBuilders).then((normalized) => {
         categoryCache.set(cacheKey, normalized);
+        categoryRequestCache.delete(cacheKey);
         return normalized;
       });
       categoryRequestCache.set(cacheKey, request);
@@ -121,24 +114,28 @@ export function useCategory(category, loadFullCommunityBuilders = false) {
     request
       .then((normalized) => {
         if (!cancelled) {
-          setMembers(normalized);
-          setLoading(false);
+          setResult({ cacheKey, members: normalized, error: null });
         }
       })
       .catch(() => {
         categoryRequestCache.delete(cacheKey);
         if (!cancelled) {
-          setError('Could not load community data.');
-          setMembers([]);
-          setLoading(false);
+          setResult({ cacheKey, members: EMPTY_MEMBERS, error: 'Could not load community data.' });
         }
       });
 
     return () => {
       cancelled = true;
-      window.cancelAnimationFrame(loadingFrame);
     };
-  }, [category, loadFullCommunityBuilders]);
+  }, [cacheKey, category, enabled, loadFullCommunityBuilders]);
 
-  return { members, loading, error };
+  // Never hand a new renderer the previous category's members while its data loads.
+  // Cached tabs are ready on the first render, without an extra animation-frame delay.
+  const members = enabled ? categoryCache.get(cacheKey) : EMPTY_MEMBERS;
+  const currentResult = enabled && result?.cacheKey === cacheKey ? result : null;
+  return {
+    members: members ?? currentResult?.members ?? EMPTY_MEMBERS,
+    loading: enabled && !members && !currentResult,
+    error: currentResult?.error ?? null,
+  };
 }

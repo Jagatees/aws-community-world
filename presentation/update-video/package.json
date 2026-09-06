@@ -1,0 +1,14 @@
+{
+  "name": "aws-globe-update-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "remotion render src/index.tsx UpdateVideo ../exports/aws-globe-update-v3.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.419",
+    "remotion": "4.0.419",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  }
+}

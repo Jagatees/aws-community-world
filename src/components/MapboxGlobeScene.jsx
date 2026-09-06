@@ -18,6 +18,7 @@ const CATEGORY_COLORS = {
   news: '#FF9900',
   events: '#7B61FF',
   'community-days': '#FF9900',
+  'builder-lofts': '#FFB454',
 };
 
 const MAX_CLUSTER_AVATARS = 4;
@@ -74,7 +75,9 @@ function createClusterElement(cluster, { category, color, darkMode, separation, 
   button.type = 'button';
   button.setAttribute(
     'aria-label',
-    communityDay
+    category === 'builder-lofts' && singleMember
+      ? `${singleMember.city} Builder Loft · ${singleMember.status === 'open' ? 'Open' : 'Announced'} · approximate city location`
+      : communityDay
       ? `${cluster.members.length} Community Day${cluster.members.length > 1 ? 's' : ''} at this location`
       : singleMember
         ? `${singleMember.name} — ${singleMember.location}`
@@ -93,7 +96,6 @@ function createClusterElement(cluster, { category, color, darkMode, separation, 
   button.style.pointerEvents = 'auto';
   button.style.transform = 'translate(-50%, -50%)';
   button.style.filter = 'drop-shadow(0 10px 22px rgba(0, 0, 0, 0.42))';
-  button.style.willChange = 'transform, opacity';
 
   if (communityDay) {
     button.style.filter = isPastCommunityDay
@@ -116,10 +118,13 @@ function createClusterElement(cluster, { category, color, darkMode, separation, 
       : '0 0 0 9px rgba(255, 153, 0, 0.12)';
   }
 
-  const images = cluster.members
-    .map((member) => ({ src: getMemberImage(member), name: member.name }))
-    .filter((member) => member.src)
-    .slice(0, PORTRAIT_GROUP_CATEGORIES.has(category) ? 3 : MAX_CLUSTER_AVATARS);
+  const images = [];
+  const previewLimit = PORTRAIT_GROUP_CATEGORIES.has(category) ? 3 : MAX_CLUSTER_AVATARS;
+  for (const member of cluster.members) {
+    const src = getMemberImage(member);
+    if (src) images.push({ src, name: member.name });
+    if (images.length === previewLimit) break;
+  }
 
   if (PORTRAIT_GROUP_CATEGORIES.has(category) && getPortraitGroupCount(cluster) > 1) {
     frame.style.width = '78px';
@@ -206,6 +211,7 @@ function createClusterElement(cluster, { category, color, darkMode, separation, 
       img.width = images.length > 1 ? 24 : 30;
       img.height = images.length > 1 ? 24 : 30;
       img.draggable = false;
+      img.decoding = 'async';
       img.style.width = `${img.width}px`;
       img.style.height = `${img.height}px`;
       img.style.objectFit = 'cover';
@@ -565,12 +571,34 @@ export default function MapboxGlobeScene({
   const overlayRef = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef([]);
+  const onMarkerClickRef = useRef(onMarkerClick);
   const countrySpotlightRef = useRef([]);
   const resizeTimerRef = useRef(null);
   const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
   const geoLibreMode = variant === 'geolibre';
   const countrySpotlightActive = !geoLibreMode && category === 'cloud-clubs' && Boolean(countrySpotlight?.nonce);
   const mapEnabled = geoLibreMode || Boolean(TOKEN);
+  const spotlightLongitude = countrySpotlight?.center?.lng;
+  const spotlightLatitude = countrySpotlight?.center?.lat;
+  const spotlightZoom = countrySpotlight?.zoom;
+  const spotlightPitch = countrySpotlight?.pitch;
+  const spotlightBearing = countrySpotlight?.bearing;
+  // Share the map's lifecycle with its overlay subscriptions when the renderer
+  // or country view changes. Theme changes also recreate the GeoLibre style.
+  const mapOptions = useMemo(() => ({
+    style: geoLibreMode
+      ? GEOLIBRE_STYLE_URLS[darkMode ? 'dark' : 'light']
+      : countrySpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
+    ...(!geoLibreMode ? { projection: countrySpotlightActive ? 'mercator' : 'globe' } : {}),
+    center: countrySpotlightActive ? [spotlightLongitude, spotlightLatitude] : [0, 18],
+    zoom: countrySpotlightActive ? spotlightZoom : 0.98,
+    pitch: countrySpotlightActive ? spotlightPitch : 0,
+    bearing: countrySpotlightActive ? spotlightBearing : 0,
+  }), [geoLibreMode, darkMode, countrySpotlightActive, spotlightLongitude, spotlightLatitude, spotlightZoom, spotlightPitch, spotlightBearing]);
+
+  useEffect(() => {
+    onMarkerClickRef.current = onMarkerClick;
+  }, [onMarkerClick]);
 
   const clusters = useMemo(
     () => category === 'community-days' && communityDaysExpanded
@@ -587,14 +615,7 @@ export default function MapboxGlobeScene({
 
     const map = new MapEngine.Map({
       container: containerRef.current,
-      style: geoLibreMode
-        ? GEOLIBRE_STYLE_URLS[darkMode ? 'dark' : 'light']
-        : countrySpotlightActive ? MAPBOX_3D_STYLE_URL : MAPBOX_STYLE_URL,
-      ...(!geoLibreMode ? { projection: countrySpotlightActive ? 'mercator' : 'globe' } : {}),
-      center: countrySpotlightActive ? [countrySpotlight.center.lng, countrySpotlight.center.lat] : [0, 18],
-      zoom: countrySpotlightActive ? countrySpotlight.zoom : 0.98,
-      pitch: countrySpotlightActive ? countrySpotlight.pitch : 0,
-      bearing: countrySpotlightActive ? countrySpotlight.bearing : 0,
+      ...mapOptions,
       attributionControl: false,
     });
 
@@ -654,25 +675,14 @@ export default function MapboxGlobeScene({
     return () => {
       cleanupResize();
       resizeObserver.disconnect();
-      markersRef.current.forEach(({ element }) => element.remove());
+      markersRef.current.forEach(({ element }) => element?.remove());
       countrySpotlightRef.current.forEach(({ element }) => element.remove());
       markersRef.current = [];
       countrySpotlightRef.current = [];
       map.remove();
       mapRef.current = null;
     };
-  }, [
-    countrySpotlight?.bearing,
-    countrySpotlight?.center?.lat,
-    countrySpotlight?.center?.lng,
-    countrySpotlight?.country,
-    countrySpotlight?.pitch,
-    countrySpotlight?.zoom,
-    countrySpotlightActive,
-    darkMode,
-    geoLibreMode,
-    mapEnabled,
-  ]);
+  }, [mapOptions, countrySpotlightActive, darkMode, geoLibreMode, mapEnabled]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -685,7 +695,7 @@ export default function MapboxGlobeScene({
       window.cancelAnimationFrame(frame);
       map.off('zoomend', updateExpansion);
     };
-  }, [category, countrySpotlightActive]);
+  }, [category, mapOptions, countrySpotlightActive, darkMode, geoLibreMode, mapEnabled]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -714,7 +724,7 @@ export default function MapboxGlobeScene({
     const overlay = overlayRef.current;
     if (!overlay) return;
 
-    markersRef.current.forEach(({ element }) => element.remove());
+    markersRef.current.forEach(({ element }) => element?.remove());
     markersRef.current = [];
 
     markersRef.current = clusters.map((cluster) => {
@@ -722,7 +732,7 @@ export default function MapboxGlobeScene({
       const color = isPastCommunityDay
         ? '#D22C2C'
         : heatmapEnabled ? getHeatColor(cluster.members.length) : CATEGORY_COLORS[category] ?? '#FF9900';
-      const element = createClusterElement(cluster, {
+      const createElement = () => createClusterElement(cluster, {
         category,
         color,
         darkMode,
@@ -748,27 +758,33 @@ export default function MapboxGlobeScene({
           });
 
           const payload = cluster.members.length === 1 ? cluster.members[0] : cluster.members;
-          onMarkerClick(payload);
+          onMarkerClickRef.current(payload);
         },
       });
 
-      overlay.appendChild(element);
-
-      return { cluster, element };
+      return {
+        cluster,
+        vector: toVector(cluster.lat, cluster.lng),
+        hiddenBySpotlight: countrySpotlightActive && cluster.members.some((member) => getMemberCountry(member) === countrySpotlight?.country),
+        createElement,
+        element: null,
+      };
     });
+    mapRef.current?.triggerRepaint();
 
     return () => {
-      markersRef.current.forEach(({ element }) => element.remove());
+      markersRef.current.forEach(({ element }) => element?.remove());
       markersRef.current = [];
     };
-  }, [clusters, category, darkMode, heatmapEnabled, onMarkerClick]);
+  }, [clusters, category, darkMode, heatmapEnabled, mapOptions, countrySpotlightActive, countrySpotlight?.country]);
 
   useEffect(() => {
     if (category !== 'community-days') return undefined;
 
     const updateCountdowns = () => {
-      markersRef.current.forEach(({ element }) => {
-        const countdown = element.querySelector('.community-day-countdown[data-countdown-at]');
+      if (document.hidden) return;
+      markersRef.current.forEach(({ element, countdown }) => {
+        if (!element?.isConnected) return;
         if (!countdown) return;
         countdown.textContent = formatLiveCountdown(countdown.dataset.countdownAt, countdown.dataset.countdownPrefix);
       });
@@ -796,7 +812,7 @@ export default function MapboxGlobeScene({
         const element = createCountrySpotlightElement(member, index, darkMode);
         element.onclick = (event) => {
           event.stopPropagation();
-          onMarkerClick(member);
+          onMarkerClickRef.current(member);
         };
         overlay.appendChild(element);
         return { member, element, index };
@@ -832,36 +848,75 @@ export default function MapboxGlobeScene({
     countrySpotlight?.pitch,
     countrySpotlight?.zoom,
     darkMode,
-    onMarkerClick,
+    mapOptions,
   ]);
 
   useEffect(() => {
     const map = mapRef.current;
-    if (!map) return undefined;
+    const overlay = overlayRef.current;
+    if (!map || !overlay) return undefined;
+
+    let previousCamera = '';
+    let previousMarkers = null;
+    let previousSpotlights = null;
+    const cutoff = Math.cos((HORIZON_CUTOFF_DEGREES * Math.PI) / 180);
+    const invalidateOverlay = () => { previousCamera = ''; };
+    const resumeOverlay = () => {
+      if (document.hidden) return;
+      invalidateOverlay();
+      map.triggerRepaint();
+    };
 
     const updateOverlay = () => {
+      if (document.hidden) return;
       const center = map.getCenter();
-      const centerVec = toVector(center.lat, center.lng);
-      const cutoff = Math.cos((HORIZON_CUTOFF_DEGREES * Math.PI) / 180);
       const width = map.getCanvas().clientWidth;
       const height = map.getCanvas().clientHeight;
-      const spotlightActive = category === 'cloud-clubs' && Boolean(countrySpotlight?.nonce);
+      const zoom = map.getZoom();
+      const camera = `${center.lat}:${center.lng}:${zoom}:${map.getPitch()}:${map.getBearing()}:${width}:${height}`;
+      // Tile loads can emit render events while the camera is stationary. Only
+      // project the collection once per changed frame, never on move + zoom too.
+      if (camera === previousCamera && previousMarkers === markersRef.current && previousSpotlights === countrySpotlightRef.current) return;
+      previousCamera = camera;
+      previousMarkers = markersRef.current;
+      previousSpotlights = countrySpotlightRef.current;
+      const centerVec = toVector(center.lat, center.lng);
+      const separation = getMapboxPortraitSeparation(zoom).toFixed(3);
 
-      markersRef.current.forEach(({ cluster, element }) => {
+      markersRef.current.forEach((marker) => {
+        const { cluster, vector: vec } = marker;
+        const onFront = countrySpotlightActive || (vec.x * centerVec.x) + (vec.y * centerVec.y) + (vec.z * centerVec.z) >= cutoff;
+        if (marker.hiddenBySpotlight || !onFront) {
+          if (marker.element?.isConnected) marker.element.remove();
+          return;
+        }
         const project = map.project([cluster.lng, cluster.lat]);
-        const vec = toVector(cluster.lat, cluster.lng);
-        const visible = (vec.x * centerVec.x) + (vec.y * centerVec.y) + (vec.z * centerVec.z) >= cutoff;
         const onScreen = project.x >= -80 && project.x <= width + 80 && project.y >= -80 && project.y <= height + 80;
-        const hideForCountrySpotlight = spotlightActive
-          && cluster.members.some((member) => getMemberCountry(member) === countrySpotlight.country);
-        const portraitMarker = element.querySelector('[data-portrait-cluster-marker]');
-        portraitMarker?.style.setProperty('--portrait-separation', getMapboxPortraitSeparation(map.getZoom()).toFixed(3));
-
-        element.style.transform = `translate(-50%, -50%) translate(${project.x}px, ${project.y}px)`;
-        element.style.opacity = visible && onScreen && !hideForCountrySpotlight ? '1' : '0';
-        element.style.visibility = visible && onScreen && !hideForCountrySpotlight ? 'visible' : 'hidden';
-        element.style.pointerEvents = visible && onScreen && !hideForCountrySpotlight ? 'auto' : 'none';
-        element.style.zIndex = String(Math.round(project.y * 1000));
+        if (!onScreen) {
+          if (marker.element?.isConnected) marker.element.remove();
+          return;
+        }
+        // Offscreen groups never create DOM or request avatar images. Cache a
+        // visited marker so panning it back into view does not rebuild it.
+        if (!marker.element) {
+          marker.element = marker.createElement();
+          marker.portrait = marker.element.querySelector('[data-portrait-cluster-marker]');
+          marker.countdown = marker.element.querySelector('.community-day-countdown[data-countdown-at]');
+        }
+        const { element, portrait } = marker;
+        if (portrait && marker.separation !== separation) {
+          portrait.style.setProperty('--portrait-separation', separation);
+          marker.separation = separation;
+        }
+        const x = project.x.toFixed(1);
+        const y = project.y.toFixed(1);
+        if (marker.x !== x || marker.y !== y) {
+          element.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+          element.style.zIndex = String(Math.round(project.y * 1000));
+          marker.x = x;
+          marker.y = y;
+        }
+        if (!element.isConnected) overlay.appendChild(element);
       });
 
       countrySpotlightRef.current.forEach(({ member, element, index }) => {
@@ -878,18 +933,16 @@ export default function MapboxGlobeScene({
     };
 
     map.on('render', updateOverlay);
-    map.on('move', updateOverlay);
-    map.on('zoom', updateOverlay);
-    map.on('resize', updateOverlay);
+    map.on('style.load', invalidateOverlay);
+    document.addEventListener('visibilitychange', resumeOverlay);
     updateOverlay();
 
     return () => {
       map.off('render', updateOverlay);
-      map.off('move', updateOverlay);
-      map.off('zoom', updateOverlay);
-      map.off('resize', updateOverlay);
+      map.off('style.load', invalidateOverlay);
+      document.removeEventListener('visibilitychange', resumeOverlay);
     };
-  }, [category, countrySpotlight?.country, countrySpotlight?.nonce]);
+  }, [mapOptions, countrySpotlightActive, darkMode, geoLibreMode, mapEnabled]);
 
   useEffect(() => {
     const map = mapRef.current;

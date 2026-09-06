@@ -12,6 +12,7 @@ const CATEGORY_COLORS = {
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'community-days': '#FF9900',
+  'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
   news: '#FF9900',
   events: '#7B61FF',
@@ -49,7 +50,9 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
   button.type = 'button';
   button.setAttribute(
     'aria-label',
-    communityDay
+    singleMember?.category === 'builder-lofts'
+      ? `${singleMember.city} Builder Loft · ${singleMember.status === 'open' ? 'Open' : 'Announced'} · approximate city location`
+      : communityDay
       ? `${cluster.members.length} Community Day${cluster.members.length > 1 ? 's' : ''} at this location`
       : singleMember
         ? `${singleMember.name} — ${singleMember.location}`
@@ -68,7 +71,6 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
   button.style.pointerEvents = 'auto';
   button.style.transform = 'translate(-50%, -50%)';
   button.style.filter = 'drop-shadow(0 10px 22px rgba(0, 0, 0, 0.42))';
-  button.style.willChange = 'transform, opacity';
 
   const frame = document.createElement('div');
   frame.style.display = 'flex';
@@ -85,10 +87,12 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
       : '0 0 0 8px rgba(255, 153, 0, 0.12)';
   }
 
-  const images = cluster.members
-    .map((member) => ({ src: getMemberImage(member), name: member.name }))
-    .filter((member) => member.src)
-    .slice(0, MAX_CLUSTER_AVATARS);
+  const images = [];
+  for (const member of cluster.members) {
+    const src = getMemberImage(member);
+    if (src) images.push({ src, name: member.name });
+    if (images.length === MAX_CLUSTER_AVATARS) break;
+  }
 
   if (communityDay) {
     const flag = document.createElement('img');
@@ -169,6 +173,7 @@ function createClusterElement(cluster, { color, darkMode, onClick }) {
       img.width = images.length > 1 ? 24 : 30;
       img.height = images.length > 1 ? 24 : 30;
       img.draggable = false;
+      img.decoding = 'async';
       img.style.width = `${img.width}px`;
       img.style.height = `${img.height}px`;
       img.style.objectFit = 'cover';
@@ -312,8 +317,13 @@ export default function MapboxFlatScene({
   const overlayRef = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef([]);
+  const onMarkerClickRef = useRef(onMarkerClick);
   const resizeTimerRef = useRef(null);
   const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
+
+  useEffect(() => {
+    onMarkerClickRef.current = onMarkerClick;
+  }, [onMarkerClick]);
 
   const clusters = useMemo(
     () => category === 'community-days' && communityDaysExpanded
@@ -383,7 +393,7 @@ export default function MapboxFlatScene({
     return () => {
       cleanupResize();
       resizeObserver.disconnect();
-      markersRef.current.forEach(({ element }) => element.remove());
+      markersRef.current.forEach(({ element }) => element?.remove());
       markersRef.current = [];
       map.remove();
       mapRef.current = null;
@@ -430,7 +440,7 @@ export default function MapboxFlatScene({
     const overlay = overlayRef.current;
     if (!overlay) return;
 
-    markersRef.current.forEach(({ element }) => element.remove());
+    markersRef.current.forEach(({ element }) => element?.remove());
     markersRef.current = [];
 
     markersRef.current = clusters.map((cluster) => {
@@ -438,7 +448,7 @@ export default function MapboxFlatScene({
       const color = isPastCommunityDay
         ? '#D22C2C'
         : heatmapEnabled ? getHeatColor(cluster.members.length) : CATEGORY_COLORS[category] ?? '#FF9900';
-      const element = createClusterElement(cluster, {
+      const createElement = () => createClusterElement(cluster, {
         color,
         darkMode,
         onClick: () => {
@@ -462,25 +472,26 @@ export default function MapboxFlatScene({
           });
 
           const payload = cluster.members.length === 1 ? cluster.members[0] : cluster.members;
-          onMarkerClick(payload);
+          onMarkerClickRef.current(payload);
         },
       });
 
-      overlay.appendChild(element);
-      return { cluster, element };
+      return { cluster, createElement, element: null };
     });
+    mapRef.current?.triggerRepaint();
 
     return () => {
-      markersRef.current.forEach(({ element }) => element.remove());
+      markersRef.current.forEach(({ element }) => element?.remove());
       markersRef.current = [];
     };
-  }, [clusters, category, darkMode, heatmapEnabled, onMarkerClick]);
+  }, [clusters, category, darkMode, heatmapEnabled]);
 
   useEffect(() => {
     if (category !== 'community-days') return undefined;
     const updateCountdowns = () => {
-      markersRef.current.forEach(({ element }) => {
-        const countdown = element.querySelector('.community-day-countdown[data-countdown-at]');
+      if (document.hidden) return;
+      markersRef.current.forEach(({ element, countdown }) => {
+        if (!element?.isConnected) return;
         if (countdown) countdown.textContent = formatLiveCountdown(countdown.dataset.countdownAt, countdown.dataset.countdownPrefix);
       });
     };
@@ -491,35 +502,61 @@ export default function MapboxFlatScene({
 
   useEffect(() => {
     const map = mapRef.current;
-    if (!map) return undefined;
+    const overlay = overlayRef.current;
+    if (!map || !overlay) return undefined;
+
+    let previousCamera = '';
+    let previousMarkers = null;
+    const resumeOverlay = () => {
+      if (document.hidden) return;
+      previousCamera = '';
+      map.triggerRepaint();
+    };
 
     const updateOverlay = () => {
+      if (document.hidden) return;
       const width = map.getCanvas().clientWidth;
       const height = map.getCanvas().clientHeight;
+      const center = map.getCenter();
+      const camera = `${center.lat}:${center.lng}:${map.getZoom()}:${width}:${height}`;
+      if (camera === previousCamera && previousMarkers === markersRef.current) return;
+      previousCamera = camera;
+      previousMarkers = markersRef.current;
 
-      markersRef.current.forEach(({ cluster, element }) => {
+      markersRef.current.forEach((marker) => {
+        const { cluster } = marker;
         const project = map.project([cluster.lng, cluster.lat]);
         const visible = project.x >= -80 && project.x <= width + 80 && project.y >= -80 && project.y <= height + 80;
-
-        element.style.transform = `translate(-50%, -50%) translate(${project.x}px, ${project.y}px)`;
-        element.style.opacity = visible ? '1' : '0';
-        element.style.visibility = visible ? 'visible' : 'hidden';
-        element.style.pointerEvents = visible ? 'auto' : 'none';
-        element.style.zIndex = String(Math.round(project.y * 1000));
+        if (!visible) {
+          if (marker.element?.isConnected) marker.element.remove();
+          return;
+        }
+        // Create avatars only when their location enters the viewport. Reuse
+        // detached markers when revisiting a location instead of rebuilding DOM.
+        if (!marker.element) {
+          marker.element = marker.createElement();
+          marker.countdown = marker.element.querySelector('.community-day-countdown[data-countdown-at]');
+        }
+        const { element } = marker;
+        const x = project.x.toFixed(1);
+        const y = project.y.toFixed(1);
+        if (marker.x !== x || marker.y !== y) {
+          element.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+          element.style.zIndex = String(Math.round(project.y * 1000));
+          marker.x = x;
+          marker.y = y;
+        }
+        if (!element.isConnected) overlay.appendChild(element);
       });
     };
 
     map.on('render', updateOverlay);
-    map.on('move', updateOverlay);
-    map.on('zoom', updateOverlay);
-    map.on('resize', updateOverlay);
+    document.addEventListener('visibilitychange', resumeOverlay);
     updateOverlay();
 
     return () => {
       map.off('render', updateOverlay);
-      map.off('move', updateOverlay);
-      map.off('zoom', updateOverlay);
-      map.off('resize', updateOverlay);
+      document.removeEventListener('visibilitychange', resumeOverlay);
     };
   }, []);
 

@@ -85,13 +85,13 @@ export function createPortraitGroupAvatar(cluster, { category, color, darkMode, 
       : `0 3px 9px rgba(0, 0, 0, ${darkMode ? '.38' : '.2'})`;
     avatar.style.transform = `translate(-50%, -50%) translate(calc(${layout.x}px + var(--portrait-separation) * ${layout.spreadX}px), calc(${layout.y}px + var(--portrait-separation) * ${layout.spreadY}px))`;
     avatar.style.transition = 'transform 90ms linear';
-    avatar.style.willChange = 'transform';
     avatar.style.zIndex = String(layout.zIndex);
     const imageUrl = getMemberImage(member);
     const image = document.createElement('img');
     image.src = imageUrl || placeholderUrl;
     image.alt = '';
     image.draggable = false;
+    image.decoding = 'async';
     image.style.width = '100%';
     image.style.height = '100%';
     image.style.objectFit = imageUrl ? 'cover' : 'contain';
@@ -120,7 +120,6 @@ export function createPortraitGroupAvatar(cluster, { category, color, darkMode, 
   countBadge.style.boxShadow = `0 3px 8px rgba(0, 0, 0, ${darkMode ? '.38' : '.2'})`;
   countBadge.style.transform = 'translate(calc(11px + var(--portrait-separation) * 4px), calc(8px + var(--portrait-separation) * 2px))';
   countBadge.style.transition = 'transform 90ms linear';
-  countBadge.style.willChange = 'transform';
   countBadge.style.zIndex = '4';
 
   root.appendChild(countBadge);

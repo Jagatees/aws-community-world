@@ -1,716 +1,237 @@
-import { useMemo, useRef, useState } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import { useMemo, useState } from 'react';
+import { ArrowLeftIcon, ArrowRightIcon, ArrowUpRightIcon, CaretDownIcon } from '@phosphor-icons/react';
+import { geoNaturalEarth1, geoPath, geoGraticule10 } from 'd3-geo';
+import { feature } from 'topojson-client';
+import worldAtlas from 'world-atlas/countries-110m.json';
 import growthHistory from '../data/community-growth-history.json';
-import kiroAmbassadors from '../data/kiro-ambassadors.json';
-import { getRegionLabel, REGIONS } from '../utils/countryRegions';
+import { getRegionForCountry, REGIONS } from '../utils/countryRegions';
+import './TrendsDashboard.css';
+import AddToCalendar from './AddToCalendar';
+import { getMonthlySnapshots } from '../utils/monthlySnapshots';
 
-const CATEGORIES = [
-  { id: 'community-builders', label: 'Community Builders', shortLabel: 'Builders', color: '#35B858' },
-  { id: 'heroes', label: 'AWS Heroes', shortLabel: 'Heroes', color: '#FF9900' },
-  { id: 'user-groups', label: 'User Groups', shortLabel: 'User Groups', color: '#00A1C9' },
-  { id: 'cloud-clubs', label: 'Student Builder Groups', shortLabel: 'Student Groups', color: '#E15262' },
-  { id: 'community-days', label: 'Community Days', shortLabel: 'Community Days', color: '#FFB74D' },
-  { id: 'kiro-events', label: 'Kiro Events', shortLabel: 'Kiro Events', color: '#8B7CF6' },
+const DIRECTORIES = [
+  { id: 'community-builders', label: 'Community Builders', short: 'Builders' },
+  { id: 'heroes', label: 'AWS Heroes', short: 'Heroes' },
+  { id: 'user-groups', label: 'User Groups', short: 'User groups' },
+  { id: 'cloud-clubs', label: 'Student Builder Groups', short: 'Student groups' },
 ];
-const CORE_CATEGORY_IDS = new Set(['community-builders', 'heroes', 'user-groups', 'cloud-clubs']);
-
-const EMPTY_REGIONS = Object.fromEntries(REGIONS.map((region) => [region.id, 0]));
-const EMPTY_CHANGES = {
-  added: 0,
-  removed: 0,
-  net: 0,
-  retained: 0,
-  addedByRegion: EMPTY_REGIONS,
-  removedByRegion: EMPTY_REGIONS,
-  addedItems: [],
-  removedItems: [],
-  quality: { confidence: 'baseline', comparable: false, reasons: ['No earlier comparable snapshot.'] },
+const DATASETS = [
+  { id: 'all', label: 'Core community', short: 'The whole community' },
+  ...DIRECTORIES,
+  { id: 'community-days', label: 'Community Days', short: 'Community Days' },
+  { id: 'kiro-events', label: 'Kiro Events', short: 'Kiro events' },
+];
+const ZERO_REGIONS = Object.fromEntries(REGIONS.map(({ id }) => [id, 0]));
+const BASELINE = { confidence: 'baseline', comparable: false, reasons: ['No earlier comparison is available.'] };
+const EMPTY_DATA = {
+  total: 0, classified: 0, unclassified: 0, coveragePercent: 0, regions: ZERO_REGIONS,
+  changes: { added: 0, removed: 0, retained: 0, net: 0, addedItems: [], removedItems: [], quality: BASELINE },
 };
-const EMPTY_CATEGORY = {
-  total: 0,
-  classified: 0,
-  unclassified: 0,
-  coveragePercent: 0,
-  regions: EMPTY_REGIONS,
-  changes: EMPTY_CHANGES,
-};
+const REGION_CENTERS = { 'north-america': [-107, 40], 'south-america': [-61, -15], europe: [18, 51], asia: [103, 34], africa: [21, 1], oceania: [136, -25] };
+const formatNumber = (value) => Number(value || 0).toLocaleString('en-SG');
+const formatAxis = (value) => value >= 1000 ? `${Number(value / 1000).toLocaleString('en-SG', { maximumFractionDigits: 1 })}k` : formatNumber(value);
+const formatDelta = (value) => `${value > 0 ? '+' : value < 0 ? '−' : ''}${formatNumber(Math.abs(value))}`;
+const deltaClass = (value) => value > 0 ? 'obs-positive' : value < 0 ? 'obs-negative' : 'obs-neutral';
+const externalUrl = (value) => /^https?:\/\//i.test(value || '');
+const percent = (part, total) => total > 0 ? Math.round(part / total * 1000) / 10 : 0;
 
-function formatDate(date, options = {}) {
+function formatDate(date, year = true) {
   if (!date) return 'No date';
-  const value = String(date).includes('T') ? date : `${date}T00:00:00Z`;
-  return new Intl.DateTimeFormat('en-SG', {
-    day: 'numeric',
-    month: 'short',
-    year: options.year === false ? undefined : 'numeric',
-    timeZone: 'UTC',
-  }).format(new Date(value));
+  return new Intl.DateTimeFormat('en-SG', { day: 'numeric', month: 'short', ...(year ? { year: 'numeric' } : {}), timeZone: 'UTC' })
+    .format(new Date(String(date).includes('T') ? date : `${date}T00:00:00Z`));
 }
 
-function formatDelta(delta) {
-  if (delta > 0) return `+${delta.toLocaleString()}`;
-  return delta.toLocaleString();
+function getData(snapshot, category) {
+  if (category !== 'all') return snapshot?.categories?.[category] ?? EMPTY_DATA;
+  const datasets = DIRECTORIES.map((entry) => ({ ...entry, data: snapshot?.categories?.[entry.id] ?? EMPTY_DATA }));
+  const result = datasets.reduce((sum, { label, data }) => {
+    sum.total += data.total;
+    sum.classified += data.classified;
+    sum.unclassified += data.unclassified;
+    for (const { id } of REGIONS) sum.regions[id] += data.regions?.[id] ?? 0;
+    for (const key of ['added', 'removed', 'retained', 'net']) sum.changes[key] += data.changes?.[key] ?? 0;
+    for (const key of ['addedItems', 'removedItems']) sum.changes[key].push(...(data.changes?.[key] ?? []).map((item) => ({ ...item, directory: label })));
+    return sum;
+  }, { total: 0, classified: 0, unclassified: 0, regions: { ...ZERO_REGIONS }, changes: { added: 0, removed: 0, retained: 0, net: 0, addedItems: [], removedItems: [] } });
+  const confidence = ['low', 'medium', 'baseline', 'high'].find((value) => datasets.some(({ data }) => data.changes?.quality?.confidence === value)) ?? 'baseline';
+  const reasons = datasets.flatMap(({ label, data }) => (data.changes?.quality?.confidence === confidence ? (data.changes.quality.reasons ?? []).map((reason) => `${label}: ${reason}`) : []));
+  result.coveragePercent = percent(result.classified, result.total);
+  result.changes.quality = { confidence, comparable: confidence === 'high' || confidence === 'medium', reasons };
+  return result;
 }
 
-function getDeltaClass(delta) {
-  if (delta > 0) return 'is-up';
-  if (delta < 0) return 'is-down';
-  return 'is-flat';
-}
+// Geography and saved series are prepared once; the atlas needs no render loop.
+const landFeatures = feature(worldAtlas, worldAtlas.objects.countries).features.filter((country) => String(country.id) !== '010');
+const projection = geoNaturalEarth1().fitExtent([[16, 26], [884, 435]], { type: 'FeatureCollection', features: landFeatures });
+const mapPath = geoPath(projection);
+const LAND = landFeatures.map((country) => ({ id: country.id, region: getRegionForCountry(country.properties.name), path: mapPath(country) }));
+const GRATICULE = mapPath(geoGraticule10());
+const SNAPSHOTS = growthHistory.snapshots;
+const MONTHLY_SNAPSHOTS = getMonthlySnapshots(SNAPSHOTS);
+const SERIES = Object.fromEntries(DATASETS.map(({ id }) => {
+  const all = SNAPSHOTS.map((snapshot, index) => ({ date: snapshot.date, index, ...getData(snapshot, id) }));
+  const first = all.findIndex(({ total }) => total > 0);
+  return [id, first < 0 ? [] : all.slice(first)];
+}));
 
-function isExternalUrl(value) {
-  return /^https?:\/\//i.test(value || '');
-}
-
-function prefersReducedMotion() {
-  return typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-}
-
-function AnimatedNumber({ value, prefix = '', suffix = '', decimals = 0 }) {
-  const numberRef = useRef(null);
-  const previousValue = useRef(0);
-
-  useGSAP(() => {
-    if (!numberRef.current) return undefined;
-    const render = (nextValue) => {
-      const formatted = decimals > 0
-        ? Number(nextValue).toLocaleString(undefined, { minimumFractionDigits: decimals, maximumFractionDigits: decimals })
-        : Math.round(nextValue).toLocaleString();
-      numberRef.current.dataset.value = `${prefix}${formatted}${suffix}`;
-    };
-
-    if (prefersReducedMotion()) {
-      render(value);
-      previousValue.current = value;
-      return undefined;
-    }
-
-    const counter = { value: previousValue.current };
-    const tween = gsap.to(counter, {
-      value,
-      duration: 0.72,
-      ease: 'power3.out',
-      overwrite: true,
-      onUpdate: () => render(counter.value),
-      onComplete: () => render(value),
-    });
-    previousValue.current = value;
-    return () => tween.kill();
-  }, { dependencies: [value, prefix, suffix, decimals] });
-
-  const initial = decimals > 0 ? Number(value).toFixed(decimals) : Math.round(value).toLocaleString();
-  const displayValue = `${prefix}${initial}${suffix}`;
-  return <span ref={numberRef} className="trends-animated-number" data-value={displayValue} aria-label={displayValue} />;
-}
-
-function SnapshotBarChart({ points, color, categoryLabel, selectedDate, onSelectDate }) {
-  if (points.length === 0) {
-    return <div className="insights-snapshot-bars is-empty">This dataset was not tracked in the selected period.</div>;
-  }
-
-  const values = points.map((point) => point.total);
-  const rawMin = Math.min(...values);
-  const rawMax = Math.max(...values);
-  const range = Math.max(1, rawMax - rawMin);
-  const baseline = Math.max(0, rawMin - range * 0.12);
-  const scale = Math.max(1, rawMax - baseline);
-  const selectedIndex = Math.max(0, points.findIndex((point) => point.date === selectedDate));
-  const selectedPoint = points[selectedIndex] ?? points.at(-1);
-  const previousPoint = points[selectedIndex - 1] ?? null;
-  const selectedDelta = previousPoint ? selectedPoint.total - previousPoint.total : null;
-  const axisValues = [rawMax, Math.round((rawMax + baseline) / 2), Math.round(baseline)];
-  const middlePoint = points[Math.floor((points.length - 1) / 2)];
-
+function WorldMap({ data, regionRows, selectedRegion, onSelectRegion }) {
+  const max = Math.max(...regionRows.map(({ current }) => current), 1);
+  const selected = regionRows.find(({ id }) => id === selectedRegion);
   return (
-    <div className="insights-snapshot-bars" style={{ '--snapshot-bar-color': color, '--snapshot-bar-count': points.length }}>
-      <div className="insights-snapshot-bars-summary">
-        <span>
-          <small>Selected snapshot</small>
-          <strong>{selectedPoint.total.toLocaleString()}</strong>
-          <em>{formatDate(selectedPoint.date)}</em>
-        </span>
-        <span>
-          <small>Change from prior</small>
-          <strong className={selectedDelta === null ? 'is-flat' : getDeltaClass(selectedDelta)}>{selectedDelta === null ? '—' : formatDelta(selectedDelta)}</strong>
-          <em>{previousPoint ? `from ${previousPoint.total.toLocaleString()} records` : 'First tracked snapshot'}</em>
-        </span>
-      </div>
-
-      <div className="insights-snapshot-bars-stage">
-        <div className="insights-snapshot-bars-axis" aria-hidden="true">
-          {axisValues.map((value) => <span key={value}>{value.toLocaleString()}</span>)}
-        </div>
-        <div className="insights-snapshot-bars-plot" role="list" aria-label={`${categoryLabel} totals across ${points.length} snapshots`}>
-          {points.map((point) => {
-            const height = 12 + ((point.total - baseline) / scale) * 88;
-            const confidence = point.quality?.confidence ?? 'baseline';
-            const selected = point.date === selectedDate;
-            return (
-              <button
-                type="button"
-                role="listitem"
-                key={`${point.date}-${point.total}`}
-                className={`insights-snapshot-bar is-${confidence}${selected ? ' is-selected' : ''}`}
-                style={{ '--snapshot-bar-height': `${height}%` }}
-                aria-label={`Show ${formatDate(point.date)} snapshot with ${point.total.toLocaleString()} records`}
-                aria-pressed={selected}
-                onClick={() => onSelectDate(point.date)}
-              >
-                <span>{point.total.toLocaleString()}</span>
-                <i aria-hidden="true" />
-              </button>
-            );
-          })}
-        </div>
-      </div>
-      <div className="insights-snapshot-bars-dates" aria-hidden="true">
-        <span>{formatDate(points[0].date, { year: false })}</span>
-        <span>{formatDate(middlePoint.date, { year: false })}</span>
-        <span>{formatDate(points.at(-1).date, { year: false })}</span>
-      </div>
-      <div className="insights-snapshot-bars-key" aria-label="Snapshot confidence legend">
-        <span><i className="is-high" /> Stable source</span>
-        <span><i className="is-medium" /> Coverage change</span>
-        <span><i className="is-low" /> Source discontinuity</span>
-      </div>
+    <div className="obs-atlas">
+      <div className="obs-atlas-heading"><span><b>01</b> The global picture</span><span>Choose a region <ArrowUpRightIcon size={13} /></span></div>
+      <svg className="obs-world-map" viewBox="0 0 900 475" aria-label="World map with six selectable regional directory totals">
+        <defs>
+          <pattern id="obs-land-dots" patternUnits="userSpaceOnUse" width="4" height="4"><circle cx="2" cy="2" r="0.9" fill="var(--obs-map-dot)" /></pattern>
+          <pattern id="obs-selected-dots" patternUnits="userSpaceOnUse" width="4" height="4"><circle cx="2" cy="2" r="1" fill="var(--obs-accent)" /></pattern>
+        </defs>
+        <path d={GRATICULE} className="obs-map-grid" aria-hidden="true" />
+        <g aria-hidden="true">{LAND.map((country) => <path key={country.id} d={country.path} className={`obs-land${country.region === selectedRegion ? ' obs-land-selected' : ''}`} />)}</g>
+        {regionRows.map((region) => {
+          const [x, y] = projection(REGION_CENTERS[region.id]);
+          const radius = region.current > 0 ? Math.max(4, Math.sqrt(region.current / max) * 20) : 0;
+          const active = region.id === selectedRegion;
+          const labelY = region.id === 'europe' ? -34 : 38;
+          return (
+            <g key={region.id} transform={`translate(${x},${y})`} className={`obs-map-marker${active ? ' obs-map-marker-active' : ''}`} role="button" tabIndex={0} aria-pressed={active} aria-label={`${region.label}, ${formatNumber(region.current)} records, ${percent(region.current, data.total)} percent of selected dataset`} onClick={() => onSelectRegion(region.id)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); onSelectRegion(region.id); } }}>
+              <circle r="27" className="obs-marker-hit" />
+              <circle r={Math.max(radius, 4) + 7} className="obs-marker-ring" />
+              {radius > 0 && <circle r={radius} className="obs-marker-disc" />}
+              <circle r="3" className="obs-marker-center" />
+              <text y={labelY} className="obs-marker-label">{region.label}</text>
+              <text y={labelY + 17} className="obs-marker-value">{formatNumber(region.current)}</text>
+            </g>
+          );
+        })}
+      </svg>
+      <div className="obs-map-footer"><div className="obs-map-selection"><span className="obs-crosshair" aria-hidden="true">+</span><div><span>{selected?.label ?? 'Select a region'}</span><strong>{selected ? `${percent(selected.current, data.total)}% of this dataset` : 'Explore regional totals'}</strong></div></div><p>Circles compare regional totals.<br />Locations are regional, not individual.</p></div>
     </div>
   );
 }
 
-function SnapshotNavigator({ snapshots, selectedIndex, onChange }) {
-  const snapshot = snapshots[selectedIndex];
-  const progress = snapshots.length > 1 ? (selectedIndex / (snapshots.length - 1)) * 100 : 100;
-  const sourceLabel = snapshot.source?.type === 'working-tree'
-    ? 'Current working tree'
-    : snapshot.source?.subject || 'Git snapshot';
-
+function HistoryChart({ points, selectedIndex, onSelect, label }) {
+  if (!points.length) return <div className="obs-empty">No saved observations for this directory yet.</div>;
+  const left = 62;
+  const right = 800;
+  const top = 36;
+  const bottom = 235;
+  const max = Math.max(...points.map(({ total }) => total), 1);
+  const power = 10 ** Math.floor(Math.log10(max));
+  const ceiling = Math.ceil(max / power / 2) * power * 2;
+  const start = Date.parse(points[0].date);
+  const end = Date.parse(points.at(-1).date);
+  const plot = points.map((point) => ({ ...point, x: left + (Date.parse(point.date) - start) / Math.max(end - start, 1) * (right - left), y: bottom - point.total / ceiling * (bottom - top) }));
+  const line = plot.map((point, index) => `${index ? 'L' : 'M'}${point.x},${point.y}`).join(' ');
+  const area = `${line} L${plot.at(-1).x},${bottom} L${plot[0].x},${bottom} Z`;
+  const selected = plot.find(({ index }) => index === selectedIndex);
+  const labelX = selected ? Math.max(88, Math.min(right - 50, selected.x)) : 0;
+  const labelY = selected ? Math.max(5, selected.y - 36) : 0;
   return (
-    <section className="trends-snapshot-explorer" aria-labelledby="snapshot-explorer-title">
-      <div className="trends-snapshot-copy">
-        <span className="regional-trends-eyebrow">Time machine</span>
-        <h2 id="snapshot-explorer-title">Explore every saved snapshot</h2>
-        <p>Drag through history or use the arrows. Every metric, region, and change feed updates to that moment.</p>
-      </div>
-      <div className="trends-snapshot-control">
-        <div className="trends-snapshot-current" key={snapshot.date}>
-          <span>Snapshot {selectedIndex + 1} of {snapshots.length}</span>
-          <strong>{formatDate(snapshot.date)}</strong>
-          <small>{sourceLabel}</small>
-        </div>
-        <div className="trends-snapshot-slider-row">
-          <button type="button" aria-label="Previous snapshot" disabled={selectedIndex === 0} onClick={() => onChange(selectedIndex - 1)}>←</button>
-          <input
-            type="range"
-            min="0"
-            max={snapshots.length - 1}
-            step="1"
-            value={selectedIndex}
-            aria-label="Select historical snapshot"
-            style={{ '--snapshot-progress': `${progress}%` }}
-            onInput={(event) => onChange(Number(event.currentTarget.value))}
-            onChange={(event) => onChange(Number(event.target.value))}
-          />
-          <button type="button" aria-label="Next snapshot" disabled={selectedIndex === snapshots.length - 1} onClick={() => onChange(selectedIndex + 1)}>→</button>
-        </div>
-        <div className="trends-snapshot-range-labels" aria-hidden="true">
-          <span>{formatDate(snapshots[0].date, { year: false })}</span>
-          <button type="button" disabled={selectedIndex === snapshots.length - 1} onClick={() => onChange(snapshots.length - 1)}>Jump to latest</button>
-          <span>{formatDate(snapshots.at(-1).date, { year: false })}</span>
-        </div>
-      </div>
-    </section>
+    <div className="obs-history-plot">
+      <svg viewBox="0 0 820 275" aria-label={`${label} history. Time runs left to right; totals start at zero.`}>
+        <defs><linearGradient id="obs-history-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="var(--obs-accent)" stopOpacity="0.24" /><stop offset="100%" stopColor="var(--obs-accent)" stopOpacity="0" /></linearGradient></defs>
+        {[0, 0.5, 1].map((fraction) => <g key={fraction} aria-hidden="true"><line x1={left} x2={right} y1={bottom - fraction * (bottom - top)} y2={bottom - fraction * (bottom - top)} className="obs-chart-grid" /><text x={left - 12} y={bottom - fraction * (bottom - top) + 4} textAnchor="end" className="obs-chart-axis">{formatAxis(ceiling * fraction)}</text></g>)}
+        <path d={area} fill="url(#obs-history-fill)" aria-hidden="true" /><path d={line} className="obs-chart-line" aria-hidden="true" />
+        {selected && <line x1={selected.x} x2={selected.x} y1={top} y2={bottom} className="obs-chart-guide" aria-hidden="true" />}
+        {plot.map((point) => <g key={point.date} className={`obs-chart-point${point.index === selectedIndex ? ' obs-chart-point-active' : ''}${point.changes.quality?.confidence === 'low' ? ' obs-chart-point-caution' : ''}`} role="button" tabIndex={0} aria-pressed={point.index === selectedIndex} aria-label={`${formatDate(point.date)}, ${formatNumber(point.total)} records, ${point.changes.quality?.confidence ?? 'baseline'} confidence`} onClick={() => onSelect(point.index)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); onSelect(point.index); } }}><title>{formatDate(point.date)} · {formatNumber(point.total)} records</title><circle cx={point.x} cy={point.y} r="10" className="obs-chart-hit" /><circle cx={point.x} cy={point.y} r="3.6" className="obs-chart-dot" /></g>)}
+        {selected && <g className="obs-chart-callout" aria-hidden="true" pointerEvents="none"><rect x={labelX - 40} y={labelY} width="80" height="26" rx="4" /><text x={labelX} y={labelY + 17} textAnchor="middle">{formatNumber(selected.total)}</text></g>}
+        <text x={left} y="263" className="obs-chart-axis">{formatDate(points[0].date, false)}</text>
+        {points.length > 2 && <text x={(left + right) / 2} y="263" textAnchor="middle" className="obs-chart-axis">{formatDate(new Date((start + end) / 2).toISOString(), false)}</text>}
+        {points.length > 1 && <text x={right} y="263" textAnchor="end" className="obs-chart-axis">{formatDate(points.at(-1).date, false)}</text>}
+      </svg>
+      {!selected && <p className="obs-chart-untracked">This directory was not yet tracked on the selected date. Choose a later observation to explore it.</p>}
+      <div className="obs-chart-caption"><span><i /> Saved observations <b className="obs-caution-dot" /> Source discontinuity</span><span>Select any point to travel through time</span></div>
+    </div>
   );
 }
 
-function ChangeItem({ item, type }) {
-  const content = (
-    <>
-      <span className={`trends-change-symbol is-${type}`} aria-hidden="true">{type === 'added' ? '+' : '−'}</span>
-      <span>
-        <strong>{item.name}</strong>
-        <small>{item.location}</small>
-      </span>
-    </>
-  );
-  if (!isExternalUrl(item.url)) return <div className="trends-change-item">{content}</div>;
-  return <a className="trends-change-item" href={item.url} target="_blank" rel="noopener noreferrer">{content}</a>;
+function ChangeList({ title, items, total, kind, expanded }) {
+  const visible = items.slice(0, expanded ? undefined : 5);
+  return <div className="obs-change-list"><h3><span>{title}</span><strong>{kind === 'added' ? '+' : '−'}{formatNumber(total)}</strong></h3>{visible.length ? visible.map((item, index) => {
+    const content = <><span><strong>{item.name}</strong><small>{[item.directory, item.location].filter(Boolean).join(' · ')}</small></span>{externalUrl(item.url) && <ArrowUpRightIcon size={15} />}</>;
+    return externalUrl(item.url) ? <a key={`${item.name}-${index}`} href={item.url} target="_blank" rel="noopener noreferrer">{content}</a> : <div key={`${item.name}-${index}`} className="obs-change-person">{content}</div>;
+  }) : <p>No {kind === 'added' ? 'new' : 'missing'} identities in this snapshot.</p>}{visible.length > 0 && <small className="obs-sample-note">Showing {visible.length} of {formatNumber(total)} observed identities. Saved samples may be incomplete.</small>}</div>;
 }
 
-function EventItem({ event }) {
+function EventLink({ event }) {
   const date = new Date(event.date);
-  const dateBadge = (
-    <span className="trends-event-date" aria-hidden="true">
-      <small>{new Intl.DateTimeFormat('en-SG', { month: 'short', timeZone: 'UTC' }).format(date)}</small>
-      <strong>{new Intl.DateTimeFormat('en-SG', { day: '2-digit', timeZone: 'UTC' }).format(date)}</strong>
-    </span>
-  );
-  const content = (
-    <>
-      {dateBadge}
-      <span className="trends-event-copy">
-        <strong>{event.name}</strong>
-        <small>{event.location} · {event.category === 'community-days' ? 'Community Day' : 'Kiro'}</small>
-      </span>
-    </>
-  );
-  if (!isExternalUrl(event.url)) return <div className="trends-event-item">{content}</div>;
-  return <a className="trends-event-item" href={event.url} target="_blank" rel="noopener noreferrer">{content}</a>;
+  const content = <><time className="obs-event-date" dateTime={event.date}><span>{new Intl.DateTimeFormat('en-SG', { month: 'short', timeZone: 'UTC' }).format(date)}</span><strong>{new Intl.DateTimeFormat('en-SG', { day: '2-digit', timeZone: 'UTC' }).format(date)}</strong></time><span className="obs-event-description"><small>{event.category === 'community-days' ? 'Community Day' : 'Kiro event'}</small><strong>{event.name.replace(/^AWS Community Day\s*/i, '')}</strong><span>{event.location}</span></span>{externalUrl(event.url) && <ArrowUpRightIcon size={19} />}</>;
+  return <div className="obs-event-entry">{externalUrl(event.url) ? <a className="obs-event" href={event.url} target="_blank" rel="noopener noreferrer">{content}</a> : <div className="obs-event">{content}</div>}<AddToCalendar event={event} /></div>;
 }
 
-function CompositionDonut({ items, total, selectedCategory, onSelectCategory }) {
-  const segments = items.reduce((result, item) => {
-    const percent = total > 0 ? (item.total / total) * 100 : 0;
-    const offset = result.reduce((sum, segment) => sum + segment.percent, 0);
-    return [...result, { ...item, percent, offset }];
-  }, []);
-
-  return (
-    <article className="insights-composition-card insights-panel">
-      <div className="insights-panel-heading">
-        <div>
-          <span>Community mix</span>
-          <h2>What makes up the network</h2>
-        </div>
-        <small>Core directories</small>
-      </div>
-      <div className="insights-composition-body">
-        <div className="insights-donut-wrap">
-          <svg viewBox="0 0 120 120" role="img" aria-label="Community directory composition">
-            <circle cx="60" cy="60" r="44" pathLength="100" className="insights-donut-track" />
-            {segments.map((segment) => (
-              <circle
-                key={segment.id}
-                cx="60"
-                cy="60"
-                r="44"
-                pathLength="100"
-                className={`insights-donut-segment${segment.id === selectedCategory ? ' is-selected' : ''}`}
-                style={{ '--segment-color': segment.color }}
-                strokeDasharray={`${segment.percent} ${100 - segment.percent}`}
-                strokeDashoffset={-segment.offset}
-              >
-                <title>{`${segment.label}: ${segment.total.toLocaleString()} (${Math.round(segment.percent)}%)`}</title>
-              </circle>
-            ))}
-          </svg>
-          <span><strong>{total.toLocaleString()}</strong><small>core records</small></span>
-        </div>
-        <div className="insights-composition-legend">
-          {segments.map((segment) => (
-            <button
-              type="button"
-              key={segment.id}
-              className={segment.id === selectedCategory ? 'is-selected' : ''}
-              style={{ '--segment-color': segment.color }}
-              onClick={() => onSelectCategory(segment.id)}
-            >
-              <i aria-hidden="true" />
-              <span>{segment.shortLabel}</span>
-              <strong>{Math.round(segment.percent)}%</strong>
-            </button>
-          ))}
-        </div>
-      </div>
-    </article>
-  );
-}
-
-function MomentumBars({ items, selectedCategory, onSelectCategory }) {
-  const maxMovement = Math.max(...items.map((item) => Math.abs(item.net)), 1);
-
-  return (
-    <article className="insights-momentum-card insights-panel">
-      <div className="insights-panel-heading">
-        <div>
-          <span>Latest movement</span>
-          <h2>Momentum by dataset</h2>
-        </div>
-        <small>Net vs prior</small>
-      </div>
-      <div className="insights-momentum-chart" role="list" aria-label="Net movement by dataset">
-        {items.map((item) => {
-          const magnitude = (Math.abs(item.net) / maxMovement) * 46;
-          return (
-            <button
-              type="button"
-              role="listitem"
-              key={item.id}
-              className={`insights-momentum-row${item.id === selectedCategory ? ' is-selected' : ''}`}
-              style={{ '--bar-color': item.color, '--bar-width': `${magnitude}%` }}
-              onClick={() => onSelectCategory(item.id)}
-            >
-              <span>{item.shortLabel}</span>
-              <i aria-hidden="true"><b className={getDeltaClass(item.net)} /></i>
-              <strong className={getDeltaClass(item.net)}>{item.hasComparison ? formatDelta(item.net) : '—'}</strong>
-            </button>
-          );
-        })}
-      </div>
-    </article>
-  );
-}
-
-export default function TrendsDashboard() {
-  const dashboardRef = useRef(null);
-  const snapshots = growthHistory.snapshots;
-  const analytics = growthHistory.analytics;
-  const [selectedCategory, setSelectedCategory] = useState('community-builders');
-  const [selectedSnapshotIndex, setSelectedSnapshotIndex] = useState(Math.max(0, snapshots.length - 1));
-  const category = CATEGORIES.find((entry) => entry.id === selectedCategory) ?? CATEGORIES[0];
-  const selectedSnapshot = snapshots[selectedSnapshotIndex];
-  const previousSnapshot = snapshots[selectedSnapshotIndex - 1] ?? null;
-  const categoryData = selectedSnapshot?.categories?.[selectedCategory] ?? EMPTY_CATEGORY;
-  const previousCategoryData = previousSnapshot?.categories?.[selectedCategory] ?? EMPTY_CATEGORY;
-  const snapshotChanges = categoryData.changes ?? EMPTY_CHANGES;
-  const snapshotHasComparison = Boolean(previousSnapshot && previousCategoryData.total > 0 && snapshotChanges.quality?.confidence !== 'baseline');
-  const selectedGlobal = CATEGORIES.reduce((result, entry) => {
-    const data = selectedSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
-    result.total += data.total;
-    result.classified += data.classified;
-    if (data.total > 0) result.tracked += 1;
-    return result;
-  }, { total: 0, classified: 0, tracked: 0 });
-  const selectedGlobalCoverage = selectedGlobal.total ? Math.round((selectedGlobal.classified / selectedGlobal.total) * 1000) / 10 : 0;
-  const retentionPercent = previousCategoryData.total > 0
-    ? Math.round((snapshotChanges.retained / previousCategoryData.total) * 1000) / 10
-    : null;
-
-  const series = useMemo(() => (
-    snapshots
-      .map((snapshot, snapshotIndex) => ({
-        date: snapshot.date,
-        snapshotIndex,
-        total: snapshot.categories?.[selectedCategory]?.total ?? 0,
-        quality: snapshot.categories?.[selectedCategory]?.changes?.quality,
-      }))
-      .filter((snapshot) => snapshot.total > 0)
-  ), [selectedCategory, snapshots]);
-
-  const selectedSeries = series.filter((point) => point.snapshotIndex <= selectedSnapshotIndex);
-  const peak = selectedSeries.reduce((best, point) => (point.total > best.total ? point : best), { total: 0, date: null });
-  const regionRows = REGIONS.map((region) => {
-    const current = categoryData.regions?.[region.id] ?? 0;
-    const previous = previousCategoryData.regions?.[region.id] ?? 0;
-    const net = current - previous;
-    return {
-      ...region,
-      current,
-      previous,
-      net,
-      growthPercent: previous > 0 ? Math.round((net / previous) * 1000) / 10 : current > 0 ? null : 0,
-      added: snapshotChanges.addedByRegion?.[region.id] ?? 0,
-      removed: snapshotChanges.removedByRegion?.[region.id] ?? 0,
-    };
-  }).sort((left, right) => right.net - left.net || right.current - left.current);
-  const maxRegionCurrent = Math.max(...regionRows.map((region) => region.current), 1);
-  const growthLeader = regionRows.find((region) => region.net > 0) ?? null;
-  const fastestRateRegion = regionRows
-    .filter((region) => region.growthPercent !== null && region.growthPercent > 0)
-    .sort((left, right) => right.growthPercent - left.growthPercent)[0] ?? null;
-  const recentAdded = snapshotChanges.addedItems?.slice(0, 5) ?? [];
-  const recentRemoved = snapshotChanges.removedItems?.slice(0, 5) ?? [];
-  const upcomingRegion = Object.entries(analytics.upcoming.byRegion)
-    .sort((left, right) => right[1] - left[1])[0];
-  const selectedQuality = snapshotChanges.quality ?? EMPTY_CHANGES.quality;
-  const snapshotIsLatest = selectedSnapshotIndex === snapshots.length - 1;
-  const coreCategories = CATEGORIES.filter((entry) => CORE_CATEGORY_IDS.has(entry.id));
-  const coreStats = coreCategories.reduce((result, entry) => {
-    const data = selectedSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
-    result.total += data.total;
-    result.classified += data.classified;
-    return result;
-  }, { total: 0, classified: 0 });
-  const previousCoreTotal = coreCategories.reduce((total, entry) => (
-    total + (previousSnapshot?.categories?.[entry.id]?.total ?? 0)
-  ), 0);
-  const coreDelta = previousSnapshot ? coreStats.total - previousCoreTotal : 0;
-  const coreCoverage = coreStats.total ? Math.round((coreStats.classified / coreStats.total) * 1000) / 10 : 0;
-  const ambassadorCount = snapshotIsLatest ? kiroAmbassadors.length : 0;
-  const communityFootprint = coreStats.total + ambassadorCount;
-  const compositionItems = coreCategories.map((entry) => ({
-    ...entry,
-    total: selectedSnapshot?.categories?.[entry.id]?.total ?? 0,
-  }));
-  const momentumItems = CATEGORIES.map((entry) => {
-    const data = selectedSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
-    const previousData = previousSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
-    const hasComparison = previousData.total > 0 && data.changes?.quality?.confidence !== 'baseline';
-    return { ...entry, net: hasComparison ? data.changes?.net ?? 0 : 0, hasComparison };
+export default function TrendsDashboard({ darkMode = true }) {
+  const [selectedIndex, setSelectedIndex] = useState(Math.max(0, SNAPSHOTS.length - 1));
+  const [categoryId, setCategoryId] = useState('all');
+  const [regionId, setRegionId] = useState('asia');
+  const [regionSort, setRegionSort] = useState('total');
+  const [expandedChanges, setExpandedChanges] = useState(null);
+  const snapshot = SNAPSHOTS[selectedIndex];
+  const previousSnapshot = SNAPSHOTS[selectedIndex - 1];
+  const category = DATASETS.find(({ id }) => id === categoryId);
+  const data = useMemo(() => getData(snapshot, categoryId), [snapshot, categoryId]);
+  const previous = useMemo(() => getData(previousSnapshot, categoryId), [previousSnapshot, categoryId]);
+  const changes = data.changes ?? EMPTY_DATA.changes;
+  const quality = changes.quality ?? BASELINE;
+  const hasComparison = Boolean(previousSnapshot && previous.total > 0 && quality.confidence !== 'baseline');
+  const caution = hasComparison && quality.comparable === false;
+  const coverageChanged = hasComparison && Math.abs(data.coveragePercent - previous.coveragePercent) >= 5;
+  const points = SERIES[categoryId];
+  const peak = points.filter(({ index }) => index <= selectedIndex).reduce((best, point) => point.total > best.total ? point : best, { total: 0, date: null });
+  const regions = REGIONS.map((region) => {
+    const current = data.regions?.[region.id] ?? 0;
+    const before = previous.regions?.[region.id] ?? 0;
+    return { ...region, current, before, net: hasComparison ? current - before : 0 };
   });
-  const largestRegion = [...regionRows].sort((left, right) => right.current - left.current)[0] ?? null;
-  const growthDriver = [...momentumItems]
-    .filter((entry) => CORE_CATEGORY_IDS.has(entry.id) && entry.hasComparison)
-    .sort((left, right) => right.net - left.net)[0] ?? null;
-  const growthDriverShare = coreDelta > 0 && growthDriver?.net > 0
-    ? Math.round((growthDriver.net / coreDelta) * 1000) / 10
-    : null;
-  const growthDriverQuality = growthDriver
-    ? selectedSnapshot?.categories?.[growthDriver.id]?.changes?.quality?.confidence ?? 'baseline'
-    : 'baseline';
-
-  useGSAP(() => {
-    if (!dashboardRef.current || prefersReducedMotion()) return undefined;
-    const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
-    timeline
-      .fromTo('.trends-dashboard-header > *', { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.62, stagger: 0.08 })
-      .fromTo('.insights-briefing-grid > *', { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, stagger: 0.08 }, '-=0.3')
-      .fromTo('.trends-snapshot-explorer', { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45 }, '-=0.25')
-      .fromTo('.insights-dataset-tab', { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, stagger: 0.035 }, '-=0.2');
-    return () => timeline.kill();
-  }, { scope: dashboardRef });
-
-  useGSAP(() => {
-    if (!dashboardRef.current || prefersReducedMotion()) return undefined;
-    const kpis = dashboardRef.current.querySelectorAll('.insights-signal-stat');
-    const regions = dashboardRef.current.querySelectorAll('.trends-region-row');
-    const timeline = gsap.timeline({ defaults: { overwrite: true } });
-    timeline
-      .fromTo(kpis, { y: 12, opacity: 0.35 }, { y: 0, opacity: 1, duration: 0.42, stagger: 0.045, ease: 'power2.out' })
-      .fromTo(regions, { x: -10, opacity: 0.3 }, { x: 0, opacity: 1, duration: 0.34, stagger: 0.035, ease: 'power2.out' }, 0.08);
-    return () => timeline.kill();
-  }, { scope: dashboardRef, dependencies: [selectedCategory, selectedSnapshotIndex], revertOnUpdate: true });
-
-  const selectSnapshotDate = (date) => {
-    const nextIndex = snapshots.findIndex((snapshot) => snapshot.date === date);
-    if (nextIndex >= 0) setSelectedSnapshotIndex(nextIndex);
-  };
+  const sortedRegions = [...regions].sort((a, b) => regionSort === 'change' ? b.net - a.net || b.current - a.current : b.current - a.current);
+  const regionCount = regions.filter(({ current }) => current > 0).length;
+  const selectedRegion = regions.find(({ id }) => id === regionId);
+  const isLatest = selectedIndex === SNAPSHOTS.length - 1;
+  const changesKey = `${snapshot.date}-${categoryId}`;
+  const showAllChanges = expandedChanges === changesKey;
+  const upcoming = growthHistory.analytics.upcoming;
+  const latestDate = SNAPSHOTS.at(-1).date;
+  const previousLabel = previousSnapshot ? formatDate(previousSnapshot.date, false) : 'No previous snapshot';
+  const selectedMonth = snapshot.date.slice(0, 7);
+  const monthIndex = MONTHLY_SNAPSHOTS.findIndex(({ month }) => month === selectedMonth);
 
   return (
-    <main
-      ref={dashboardRef}
-      className="regional-trends-panel trends-dashboard insights-dashboard"
-      style={{
-        '--trends-accent': category.color,
-        '--trends-panel-bg': '#07141B',
-        '--trends-panel-surface': 'rgba(14, 31, 42, 0.86)',
-        '--trends-panel-surface-strong': '#102838',
-        '--trends-panel-border': 'rgba(112, 151, 177, 0.22)',
-        '--trends-panel-text': '#F2F7FA',
-        '--trends-panel-muted': '#96AABC',
-        '--trends-panel-faint': '#678196',
-      }}
-    >
-      <div className="insights-ambient insights-ambient-one" aria-hidden="true" />
-      <div className="insights-ambient insights-ambient-two" aria-hidden="true" />
-      <header className="regional-trends-header trends-dashboard-header">
-        <div>
-          <span className="regional-trends-eyebrow">AWS community pulse</span>
-          <h1>Community analytics</h1>
-          <p>Track directory growth, regional movement, identity changes, and the next wave of community activity.</p>
-        </div>
-        <div className="trends-dashboard-status" aria-label={`Snapshot ${selectedSnapshotIndex + 1} of ${snapshots.length}`} key={selectedSnapshot.date}>
-          <span><i aria-hidden="true" /> Snapshot {selectedSnapshotIndex + 1} of {snapshots.length}</span>
-          <strong>{formatDate(selectedSnapshot.date)}</strong>
-        </div>
-      </header>
-
-      <div className="regional-trends-content trends-dashboard-content">
-        <nav className="insights-view-nav" aria-label="Insights sections">
-          <a href="#insights-overview" className="is-active">Overview</a>
-          <a href="#insights-movement">Movement</a>
-          <a href="#insights-regions">Regions</a>
-          <a href="#insights-events">Events</a>
-          <span>{snapshots.length} snapshots · {formatDate(snapshots[0].date, { year: false })} to {formatDate(snapshots.at(-1).date, { year: false })}</span>
-        </nav>
-
-        <SnapshotNavigator snapshots={snapshots} selectedIndex={selectedSnapshotIndex} onChange={setSelectedSnapshotIndex} />
-
-        <section id="insights-overview" className="insights-briefing-grid" aria-label="Community executive summary">
-          <article className="insights-footprint-card insights-panel">
-            <div className="insights-footprint-topline">
-              <span>{snapshotIsLatest ? 'Live community footprint' : 'Historical community footprint'}</span>
-              <small>{formatDate(selectedSnapshot.date)}</small>
+    <main className={`community-observatory${darkMode ? '' : ' community-observatory-light'}`} aria-label="AWS community analytics">
+      <div className="obs-page">
+        <header className="obs-masthead">
+          <a className="obs-wordmark" href="#obs-global"><span className="obs-wordmark-symbol" aria-hidden="true">◎</span><span>Community <strong>observatory</strong></span></a>
+          <div className="obs-date-control">
+            <span className="obs-date-status" id="obs-selected-date"><i /> {formatDate(snapshot.date)}{isLatest ? ' · Latest' : ''}</span>
+            <div className="obs-date-buttons">
+              <button type="button" aria-label="Previous month" disabled={monthIndex === 0} onClick={() => setSelectedIndex(MONTHLY_SNAPSHOTS[monthIndex - 1].index)}><ArrowLeftIcon size={15} /></button>
+              <select aria-label="Choose snapshot month" aria-describedby="obs-selected-date" title="Latest saved day in each month. Choose chart points for other dates." value={selectedMonth} onChange={(event) => setSelectedIndex(MONTHLY_SNAPSHOTS.find(({ month }) => month === event.target.value).index)}>
+                {MONTHLY_SNAPSHOTS.map(({ month, date }) => <option key={month} value={month}>{new Intl.DateTimeFormat('en-SG', { month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`))}</option>)}
+              </select>
+              <button type="button" aria-label="Next month" disabled={monthIndex === MONTHLY_SNAPSHOTS.length - 1} onClick={() => setSelectedIndex(MONTHLY_SNAPSHOTS[monthIndex + 1].index)}><ArrowRightIcon size={15} /></button>
             </div>
-            <strong className="insights-footprint-total"><AnimatedNumber value={communityFootprint} /></strong>
-            <h2>people and local communities in the core network</h2>
-            <p>Builders, Heroes, user groups, student groups{ambassadorCount ? `, and ${ambassadorCount} Kiro ambassadors` : ''} visible in the current public data.</p>
-            <div className="insights-footprint-metrics">
-              <span><small>Net change</small><strong className={previousSnapshot ? getDeltaClass(coreDelta) : 'is-flat'}>{previousSnapshot ? formatDelta(coreDelta) : '—'}</strong></span>
-              <span><small>Region mapped</small><strong>{coreCoverage}%</strong></span>
-              <span><small>Data sources</small><strong>4 core</strong></span>
-            </div>
-          </article>
-          <CompositionDonut items={compositionItems} total={coreStats.total} selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
-          <MomentumBars items={momentumItems} selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
+            {!isLatest && <button type="button" className="obs-latest-link" onClick={() => setSelectedIndex(SNAPSHOTS.length - 1)}>Back to latest</button>}
+          </div>
+        </header>
+
+        <section id="obs-global" className="obs-hero" aria-labelledby="obs-title">
+          <div className="obs-hero-story"><p className="obs-eyebrow"><span /> One community. Worldwide.</p><h1 id="obs-title">A world of<br /><em>builders.</em></h1><p className="obs-hero-deck">The people, places, and local communities building with AWS. See the bigger picture.</p><div className="obs-hero-metric" aria-live="polite" aria-atomic="true"><span>{categoryId === 'all' ? 'Across the core community' : category.label}</span><strong>{formatNumber(data.total)}<i>.</i></strong><div className="obs-metric-caption"><span>directory records</span><span className={`obs-delta ${hasComparison ? deltaClass(changes.net) : 'obs-neutral'}`}>{hasComparison ? `${formatDelta(changes.net)}${caution ? '*' : ''}` : 'Baseline'} <small>{hasComparison ? `since ${previousLabel}` : 'No earlier comparison'}</small></span></div></div><p className="obs-record-note">{categoryId === 'all' ? 'Four directories. Profiles and groups may overlap across programs.' : data.total ? 'Observed public records in this directory.' : 'This directory was not yet tracked on the selected date.'}{caution ? ' * A source change affects this comparison.' : ''}</p></div>
+          <WorldMap data={data} regionRows={regions} selectedRegion={regionId} onSelectRegion={setRegionId} />
+          <div className="obs-reach-strip"><span><strong>{String(regionCount).padStart(2, '0')}</strong> regions represented</span><span><strong>{data.coveragePercent}%</strong> region mapped</span><span><strong>{points.length}</strong> saved observations</span><a href="#obs-history">Explore the data <ArrowRightIcon size={17} /></a></div>
         </section>
 
-        <section id="insights-movement" className="insights-dataset-switcher" aria-labelledby="dataset-switcher-title">
-          <div className="insights-section-intro">
-            <div>
-              <span>Dataset explorer</span>
-              <h2 id="dataset-switcher-title">Choose a signal to investigate</h2>
-            </div>
-            <p>{selectedGlobal.total.toLocaleString()} records across {selectedGlobal.tracked} active datasets · {selectedGlobalCoverage}% mapped</p>
-          </div>
-          <div className="insights-dataset-rail">
-            {CATEGORIES.map((entry) => {
-              const data = selectedSnapshot.categories?.[entry.id] ?? EMPTY_CATEGORY;
-              const changes = data.changes ?? EMPTY_CHANGES;
-              const previousData = previousSnapshot?.categories?.[entry.id] ?? EMPTY_CATEGORY;
-              const hasComparison = previousData.total > 0 && changes.quality?.confidence !== 'baseline';
-              return (
-                <button
-                  type="button"
-                  key={entry.id}
-                  className={`insights-dataset-tab${entry.id === selectedCategory ? ' is-selected' : ''}`}
-                  style={{ '--category-color': entry.color }}
-                  aria-pressed={entry.id === selectedCategory}
-                  onClick={() => setSelectedCategory(entry.id)}
-                >
-                  <i aria-hidden="true" />
-                  <span><small>{entry.shortLabel}</small><strong>{data.total.toLocaleString()}</strong></span>
-                  <em className={hasComparison ? getDeltaClass(changes.net) : 'is-flat'}>{hasComparison ? formatDelta(changes.net) : '—'}</em>
-                </button>
-              );
-            })}
-          </div>
-        </section>
+        <nav className="obs-datasets" aria-label="Choose a directory">{DATASETS.map((entry) => { const item = getData(snapshot, entry.id); return <button type="button" key={entry.id} aria-pressed={categoryId === entry.id} className={categoryId === entry.id ? 'obs-dataset-active' : ''} onClick={() => setCategoryId(entry.id)}><span>{entry.short}</span><strong>{formatNumber(item.total)}</strong>{entry.id === categoryId && <span className="obs-tab-indicator" aria-hidden="true" />}</button>; })}</nav>
 
-        <div className="insights-primary-grid">
-          <section className="trends-timeline-card" aria-labelledby="timeline-title">
-          <div className="trends-dashboard-section-heading">
-            <div>
-              <span>{category.label}</span>
-              <h2 id="timeline-title">Snapshot comparison</h2>
-            </div>
-            <span className="insights-static-chart-badge">Static view · {series.length} snapshots</span>
-          </div>
-          <SnapshotBarChart points={series} color={category.color} categoryLabel={category.label} selectedDate={selectedSnapshot.date} onSelectDate={selectSnapshotDate} />
-          <div className="trends-timeline-insights">
-            <span><small>Peak through this snapshot</small><strong>{peak.total.toLocaleString()}</strong><em>{peak.date ? formatDate(peak.date) : 'Not tracked yet'}</em></span>
-            <span><small>Largest region gain</small><strong>{growthLeader ? getRegionLabel(growthLeader.id) : 'No positive growth'}</strong><em>{growthLeader ? `${formatDelta(growthLeader.net)} records` : 'In this comparison'}</em></span>
-            <span><small>Fastest percentage growth</small><strong>{fastestRateRegion?.label ?? 'Not available'}</strong><em>{fastestRateRegion ? `${formatDelta(fastestRateRegion.growthPercent)}%` : 'No positive growth'}</em></span>
-          </div>
-          <p className="trends-chart-hint">Select any bar to inspect that saved snapshot.</p>
-          </section>
-
-          <aside className="insights-signal-card insights-panel" aria-labelledby="signal-card-title">
-            <div className="insights-signal-header" style={{ '--signal-color': category.color }}>
-              <i aria-hidden="true" />
-              <span>Selected signal</span>
-              <h2 id="signal-card-title">{category.label}</h2>
-              <p>{snapshotHasComparison ? `Compared with ${formatDate(previousSnapshot?.date)}` : 'First tracked snapshot'}</p>
-            </div>
-            <div className="insights-signal-stats">
-              <span className="insights-signal-stat is-total"><small>Snapshot total</small><strong><AnimatedNumber value={categoryData.total} /></strong><em>{categoryData.coveragePercent}% region mapped</em></span>
-              <span className="insights-signal-stat"><small>Net movement</small><strong className={snapshotHasComparison ? getDeltaClass(snapshotChanges.net) : 'is-flat'}>{snapshotHasComparison ? formatDelta(snapshotChanges.net) : '—'}</strong><em>vs previous snapshot</em></span>
-              <span className="insights-signal-stat"><small>Observed entries</small><strong><b>+{snapshotChanges.added.toLocaleString()}</b> <i>−{snapshotChanges.removed.toLocaleString()}</i></strong><em>added / no longer present</em></span>
-              <span className="insights-signal-stat"><small>Record continuity</small><strong>{retentionPercent === null ? '—' : `${retentionPercent}%`}</strong><em>{snapshotChanges.retained.toLocaleString()} identities retained</em></span>
-              <span className="insights-signal-stat"><small>Largest region</small><strong>{largestRegion?.label ?? '—'}</strong><em>{largestRegion ? `${largestRegion.current.toLocaleString()} records` : 'Not available'}</em></span>
-            </div>
-          </aside>
+        <div id="obs-history" className="obs-analysis">
+          <section className="obs-timeline" aria-labelledby="obs-history-title"><div className="obs-section-heading"><div><p className="obs-eyebrow">02 / Through time</p><h2 id="obs-history-title">The story over time.</h2></div><span className="obs-subtle-label">{category.label}<br />{formatDate(snapshot.date)}</span></div><HistoryChart points={points} selectedIndex={selectedIndex} onSelect={setSelectedIndex} label={category.label} /><dl className="obs-chart-stats"><div><dt>Peak through this date</dt><dd>{peak.date ? formatNumber(peak.total) : '—'}<small>{peak.date ? formatDate(peak.date, false) : 'Not tracked yet'}</small></dd></div><div><dt>Observed change</dt><dd className={hasComparison ? deltaClass(changes.net) : 'obs-neutral'}>{hasComparison ? formatDelta(changes.net) : '—'}<small>{hasComparison ? `vs ${previousLabel}${caution ? ' · source change' : ''}` : 'No earlier comparison'}</small></dd></div><div><dt>Identity continuity</dt><dd>{hasComparison ? `${percent(changes.retained, previous.total)}%` : '—'}<small>{hasComparison ? `${formatNumber(changes.retained)} matched records` : 'No earlier comparison'}</small></dd></div></dl></section>
+          <section className="obs-regions" aria-labelledby="obs-regions-title"><div className="obs-section-heading"><div><p className="obs-eyebrow">03 / Regional reach</p><h2 id="obs-regions-title">Where we gather.</h2></div><select aria-label="Sort regions" value={regionSort} onChange={(event) => setRegionSort(event.target.value)}><option value="total">By size</option><option value="change">By change</option></select></div>{coverageChanged && <p className="obs-region-coverage">Region mapping changed from {previous.coveragePercent}% to {data.coveragePercent}%. Location updates may affect these deltas.</p>}<div className="obs-region-list">{sortedRegions.map((region, index) => <button type="button" key={region.id} className={`obs-region-row${region.id === regionId ? ' obs-region-active' : ''}`} aria-pressed={region.id === regionId} onClick={() => setRegionId(region.id)}><span className="obs-region-rank">{String(index + 1).padStart(2, '0')}</span><span className="obs-region-name">{region.label}<i><b style={{ width: `${percent(region.current, Math.max(...regions.map(({ current }) => current), 1))}%` }} /></i></span><strong>{formatNumber(region.current)}<small className={hasComparison ? deltaClass(region.net) : 'obs-neutral'}>{hasComparison ? formatDelta(region.net) : '—'}</small></strong></button>)}</div><p className="obs-region-caption">{selectedRegion?.label}: {percent(selectedRegion?.current ?? 0, data.total)}% of selected records. {formatNumber(data.unclassified)} records have no mapped region.</p></section>
         </div>
 
-        <section className="insights-reading-card" aria-labelledby="snapshot-reading-title">
-          <div className="insights-reading-copy">
-            <span>Snapshot readout</span>
-            <h2 id="snapshot-reading-title">
-              {growthDriverShare !== null
-                ? `${growthDriver.shortLabel} drove ${growthDriverShare}% of core network expansion.`
-                : coreDelta < 0
-                  ? `The core network contracted by ${Math.abs(coreDelta).toLocaleString()} records.`
-                  : 'The core network held steady in this snapshot.'}
-            </h2>
-            <p>
-              {growthDriverShare !== null
-                ? `${growthDriver.label} added a net ${growthDriver.net.toLocaleString()} records while the four core directories grew by ${coreDelta.toLocaleString()} overall.`
-                : 'Use the dataset controls above to inspect which directories and regions shaped the result.'}
-            </p>
-          </div>
-          <div className="insights-reading-facts">
-            <span><small>Growth driver</small><strong>{growthDriver?.shortLabel ?? 'No change'}</strong></span>
-            <span><small>Signal confidence</small><strong className={`is-${growthDriverQuality}`}>{growthDriverQuality}</strong></span>
-            <span><small>Next 30 days</small><strong>{analytics.upcoming.next30Days} events</strong></span>
-          </div>
+        <section className="obs-evidence" aria-label="Snapshot details and methodology">
+          <details className="obs-disclosure"><summary><span className="obs-disclosure-number">04</span><span><strong>Behind the changes</strong><small>{hasComparison ? `${formatNumber(changes.added)} newly observed · ${formatNumber(changes.removed)} no longer present` : 'A starting point for future comparisons'}</small></span><span className="obs-disclosure-action">Explore identities <CaretDownIcon size={16} /></span></summary><div className="obs-disclosure-content"><p className="obs-detail-intro">{category.label} · {formatDate(snapshot.date)}. These are observed directory changes, not verified membership changes.</p>{hasComparison ? <><div className="obs-change-columns"><ChangeList title="Newly observed" items={changes.addedItems ?? []} total={changes.added} kind="added" expanded={showAllChanges} /><ChangeList title="No longer present" items={changes.removedItems ?? []} total={changes.removed} kind="removed" expanded={showAllChanges} /></div>{(changes.addedItems?.length > 5 || changes.removedItems?.length > 5) && <button className="obs-text-button" type="button" aria-expanded={showAllChanges} onClick={() => setExpandedChanges(showAllChanges ? null : changesKey)}>{showAllChanges ? 'Show fewer identities' : 'Show all saved identities'} <ArrowRightIcon size={15} /></button>}</> : <p className="obs-empty">{data.total ? 'Choose a later observation to see additions and removals.' : 'This directory was not yet tracked. Choose a later observation.'}</p>}</div></details>
+          <details className={`obs-disclosure${caution ? ' obs-disclosure-caution' : ''}`}><summary><span className="obs-disclosure-number">i</span><span><strong>{caution ? 'A source change deserves a closer look' : 'A little context for these numbers'}</strong><small>{caution ? 'Directory or identity changes can resemble community growth' : 'Public snapshots, geographic coverage, and comparison confidence'}</small></span><span className="obs-disclosure-action">{quality.confidence} confidence <CaretDownIcon size={16} /></span></summary><div className="obs-disclosure-content obs-methodology"><div><h3>Reading the data</h3><p>Totals count directory records, including people and local groups. A person may appear in more than one program. Source redesigns, missing locations, and name changes can affect comparisons.</p><p>Regional deltas compare totals with the previous snapshot. Location corrections can move records between regions without adding or removing an identity.</p></div><div><h3>This observation</h3><ul>{(quality.reasons?.length ? quality.reasons : BASELINE.reasons).map((reason, index) => <li key={index}>{reason}</li>)}</ul><p>Snapshot dates use {growthHistory.snapshotTimeZone} time. Comparison confidence comes from the saved data.</p></div></div></details>
         </section>
 
-        <div id="insights-regions" className="trends-analysis-grid">
-          <section className="trends-region-leaderboard" aria-labelledby="region-leaderboard-title">
-            <div className="trends-dashboard-section-heading">
-              <div>
-                <span>Regional movement</span>
-                <h2 id="region-leaderboard-title">Where change happened</h2>
-              </div>
-              <p>{snapshotHasComparison ? 'Versus prior snapshot' : 'Snapshot baseline'}</p>
-            </div>
-            <div className="trends-region-table">
-              {regionRows.map((region, index) => (
-                <article key={region.id} className="trends-region-row">
-                  <span className="trends-region-rank">{String(index + 1).padStart(2, '0')}</span>
-                  <span className="trends-region-main">
-                    <strong>{region.label}</strong>
-                    <i><b style={{ width: `${(region.current / maxRegionCurrent) * 100}%` }} /></i>
-                    <small>+{region.added.toLocaleString()} observed · −{region.removed.toLocaleString()} missing</small>
-                  </span>
-                  <span className="trends-region-total"><strong>{region.current.toLocaleString()}</strong><small>snapshot</small></span>
-                  <span className={`trends-region-net ${getDeltaClass(region.net)}`}><strong>{formatDelta(region.net)}</strong><small>{region.growthPercent === null ? 'new' : `${formatDelta(region.growthPercent)}%`}</small></span>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section className="trends-change-feed" aria-labelledby="change-feed-title">
-            <div className="trends-dashboard-section-heading">
-              <div>
-                <span>Snapshot movement</span>
-                <h2 id="change-feed-title">What changed here</h2>
-              </div>
-              <p>{formatDate(selectedSnapshot.date)}</p>
-            </div>
-            {snapshotHasComparison ? (
-              <>
-                <div className="trends-change-summary">
-                  <span className="is-up">+{snapshotChanges.added.toLocaleString()} added</span>
-                  <span className="is-down">−{snapshotChanges.removed.toLocaleString()} removed</span>
-                  <small>{selectedQuality.confidence === 'high' ? 'Stable comparison' : `${selectedQuality.confidence} confidence`}</small>
-                </div>
-                <div className="trends-change-columns">
-                  <div>
-                    <h3>Newly observed</h3>
-                    {recentAdded.length > 0 ? recentAdded.map((item) => <ChangeItem key={`added-${item.name}-${item.location}`} item={item} type="added" />) : <p>No new records in this snapshot.</p>}
-                  </div>
-                  <div>
-                    <h3>No longer present</h3>
-                    {recentRemoved.length > 0 ? recentRemoved.map((item) => <ChangeItem key={`removed-${item.name}-${item.location}`} item={item} type="removed" />) : <p>No removals in this snapshot.</p>}
-                  </div>
-                </div>
-              </>
-            ) : <p className="trends-empty-copy">This is the first comparable state for this dataset, so movement starts with the next snapshot.</p>}
-          </section>
-        </div>
-
-        <section id="insights-events" className="trends-upcoming-section" aria-labelledby="upcoming-title">
-          <div className="trends-upcoming-summary">
-            <span className="regional-trends-eyebrow">Forward signal · latest data</span>
-            <strong><AnimatedNumber value={analytics.upcoming.total} /></strong>
-            <h2 id="upcoming-title">Upcoming events tracked</h2>
-            <p>{analytics.upcoming.next30Days} happen in the next 30 days. {upcomingRegion ? `${getRegionLabel(upcomingRegion[0])} has the largest mapped pipeline with ${upcomingRegion[1]}.` : ''}</p>
-          </div>
-          <div className="trends-upcoming-list">
-            {analytics.upcoming.items.slice(0, 6).map((event) => <EventItem key={`${event.category}-${event.name}-${event.date}`} event={event} />)}
-          </div>
-        </section>
-
-        <section className="trends-quality-section" aria-labelledby="quality-title">
-          <div className="trends-quality-copy">
-            <span className="regional-trends-eyebrow">Snapshot confidence</span>
-            <h2 id="quality-title">Observed change, not verified membership churn</h2>
-            <p>Git snapshots capture what the public source and scraper returned. Directory migrations, missing locations, and source redesigns can look like sudden growth or loss.</p>
-          </div>
-          <div className="trends-quality-flags">
-            {(selectedQuality.reasons?.length ? selectedQuality.reasons : ['No quality note was recorded.']).slice(0, 3).map((reason, index) => (
-              <article key={`${selectedSnapshot.date}-${index}`}>
-                <span className={`is-${selectedQuality.confidence}`}>{selectedQuality.confidence}</span>
-                <strong>{formatDate(selectedSnapshot.date)}</strong>
-                <p>{reason}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <footer className="regional-trends-footnote trends-dashboard-footnote">
-          Identity comparisons use stable public profile IDs or normalized names. Cloud Club and Student Builder Group names are normalized across the program rename. Selectors animate the saved JSON snapshots without changing the underlying data.
-        </footer>
+        <section id="obs-events" className="obs-events" aria-labelledby="obs-events-title"><div className="obs-events-intro"><div><p className="obs-eyebrow">05 / Beyond the screen</p><h2 id="obs-events-title">Meet the community<span>.</span></h2><p>Good things happen when builders get together.</p></div><div className="obs-event-outlook"><strong>{upcoming.total}<span>events ahead</span></strong><p>As of {formatDate(latestDate)}<br />{upcoming.next30Days} scheduled in the following 30 days</p></div></div><div className="obs-event-grid">{upcoming.items.slice(0, 6).map((event) => <EventLink key={`${event.category}-${event.name}-${event.date}`} event={event} />)}</div>{!upcoming.items.length && <p className="obs-empty">No upcoming events were recorded in the latest observation.</p>}<p className="obs-event-note">Event outlook uses the latest saved snapshot, including when you explore history. Dates may have passed since this data was saved.</p></section>
+        <footer className="obs-footer"><span className="obs-footer-mark">◎ <strong>Built around community.</strong></span><span>Public data. A shared perspective.</span><a href="#obs-global">Back to the world <ArrowUpRightIcon size={15} /></a></footer>
       </div>
     </main>
   );

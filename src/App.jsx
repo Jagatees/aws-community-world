@@ -20,6 +20,7 @@ const ListScene = lazy(() => import('./components/ListScene'));
 const NewArrivalsPanel = lazy(() => import('./components/NewArrivalsPanel'));
 const Country3DControl = lazy(() => import('./components/Country3DControl'));
 const IconArchiveScene = lazy(() => import('./components/ExperimentalHeroDex'));
+const BuilderLoftsScene = lazy(() => import('./components/BuilderLoftsScene'));
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -29,6 +30,7 @@ const CATEGORY_COLORS = {
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'community-days': '#FF9900',
+  'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
   news: '#FF9900',
 };
@@ -41,6 +43,7 @@ const CATEGORY_LABELS = {
   'kiro-ambassadors': 'Kiro',
   'kiro-events': 'Kiro Events',
   'community-days': 'Community Days',
+  'builder-lofts': 'AWS Builder Lofts',
   'aws-ambassadors': 'AWS Ambassador',
   news: 'News',
 };
@@ -59,9 +62,27 @@ const DEFAULT_ROUTE_STATE = {
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
 const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'geolibre', 'icons', 'list', 'experimental'];
 const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights']);
+const MOBILE_GLOBE_DESIGNS = ['sleek', 'flat', 'icons', 'list'];
+const DESKTOP_GLOBE_DESIGNS = ['orbit', 'sleek', 'flat', 'icons', 'list'];
+const COMPACT_VIEWPORT_QUERY = '(max-width: 767px), (max-height: 480px) and (max-width: 900px)';
 const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors']);
-const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'news']);
+const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'builder-lofts', 'news']);
 const NEW_ARRIVAL_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs']);
+
+function isCompactViewport() {
+  return typeof window !== 'undefined' && window.matchMedia(COMPACT_VIEWPORT_QUERY).matches;
+}
+
+function getPublicGlobeDesigns() {
+  return isCompactViewport() ? MOBILE_GLOBE_DESIGNS : DESKTOP_GLOBE_DESIGNS;
+}
+
+function getAvailableGlobeDesigns(compactViewport, category) {
+  const supportedDesigns = compactViewport ? MOBILE_GLOBE_DESIGNS : DESKTOP_GLOBE_DESIGNS;
+  return supportedDesigns.filter(
+    (design) => design !== 'icons' || ICON_VIEW_CATEGORIES.has(category)
+  );
+}
 
 function getResponsiveDefaultGlobeDesign() {
   if (typeof window === 'undefined') return DEFAULT_ROUTE_STATE.globeDesign;
@@ -99,6 +120,9 @@ function getRouteStateFromUrl() {
       : VALID_CATEGORIES.has(tab)
         ? tab
         : DEFAULT_ROUTE_STATE.activeCategory;
+  const publicGlobeDesigns = getPublicGlobeDesigns();
+  const supportedPublicView = publicGlobeDesigns.includes(view)
+    && (view !== 'icons' || ICON_VIEW_CATEGORIES.has(resolvedCategory));
   const spotlightKeys = Object.values(COUNTRY_SPOTLIGHTS).map(({ queryKey }) => queryKey);
   const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'new', ...spotlightKeys]
     .some((key) => params.has(key));
@@ -114,7 +138,7 @@ function getRouteStateFromUrl() {
       ? 'insights'
       : spotlight
       ? 'classic'
-      : VALID_GLOBE_DESIGNS.has(view)
+      : VALID_GLOBE_DESIGNS.has(view) && supportedPublicView
         ? view
         : defaultGlobeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
@@ -193,10 +217,12 @@ export default function App() {
   const [countrySpotlight, setCountrySpotlight] = useState(
     routeState.countrySpotlight ? { country: routeState.countrySpotlight, nonce: 1 } : null
   );
+  const [compactViewport, setCompactViewport] = useState(isCompactViewport);
   const [webGlAvailable] = useState(canCreateWebGlContext);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
   const isCommunityDaysView = activeCategory === 'community-days';
+  const isBuilderLoftsView = activeCategory === 'builder-lofts';
   const isNewsView = activeCategory === 'news';
   const activeSection = globeDesign === 'experimental'
     ? 'experimental'
@@ -211,13 +237,14 @@ export default function App() {
   const isGeoLibreView = globeDesign === 'geolibre';
   const isExperimentalView = globeDesign === 'experimental';
   const isInsightsView = globeDesign === 'insights';
-  const availableGlobeDesigns = GLOBE_DESIGNS.filter(
-    (design) => design !== 'experimental' && (design !== 'icons' || ICON_VIEW_CATEGORIES.has(activeCategory))
+  const availableGlobeDesigns = useMemo(
+    () => getAvailableGlobeDesigns(compactViewport, activeCategory),
+    [activeCategory, compactViewport]
   );
   const loadFullCommunityBuilders = isCommunityBuilderView && (
     isListView || isIconView || newOnly || Boolean(selectedTag || selectedRegions.length || selectedCountries.length)
   );
-  const { error, members, loading } = useCategory(activeCategory, loadFullCommunityBuilders);
+  const { error, members, loading } = useCategory(showSplash || isInsightsView ? null : activeCategory, loadFullCommunityBuilders);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading && !isListView;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
@@ -244,6 +271,25 @@ export default function App() {
     const preloadTimer = window.setTimeout(loadCobeGlobeScene, 150);
     return () => window.clearTimeout(preloadTimer);
   }, [globeDesign, showSplash]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(COMPACT_VIEWPORT_QUERY);
+    const updateViewport = (event) => {
+      const nextCompactViewport = event.matches;
+      setCompactViewport(nextCompactViewport);
+      setGlobeDesign((currentDesign) => {
+        if (currentDesign === 'experimental' || currentDesign === 'insights' || currentDesign === 'classic') {
+          return currentDesign;
+        }
+        const nextDesigns = getAvailableGlobeDesigns(nextCompactViewport, activeCategory);
+        return nextDesigns.includes(currentDesign)
+          ? currentDesign
+          : nextCompactViewport ? 'sleek' : 'orbit';
+      });
+    };
+    mediaQuery.addEventListener?.('change', updateViewport);
+    return () => mediaQuery.removeEventListener?.('change', updateViewport);
+  }, [activeCategory]);
 
   function renderInteractiveScene(Scene, props, resetKey) {
     return (
@@ -442,7 +488,7 @@ export default function App() {
     if (design === 'classic') return 'Atlas';
     if (design === 'orbit') return 'Earth';
     if (design === 'sleek') return 'Minimal';
-    if (design === 'flat') return 'Map';
+    if (design === 'flat') return compactViewport ? 'Advanced Map' : 'Map';
     if (design === 'geolibre') return 'GeoLibre';
     if (design === 'icons') return 'Gallery';
     if (design === 'list') return 'Directory';
@@ -501,8 +547,8 @@ export default function App() {
       activeCategory === 'community-builders' &&
       (cluster?.clusterOnly || cluster?.builderCount || cluster?.name?.includes('Community Builders in'))
     ) {
-      const parts = cluster.location?.split(',') ?? [];
-      setSelectedCountries([cluster.country || parts[parts.length - 1]?.trim() || cluster.location]);
+      const clusterMembers = Array.isArray(member) ? member : [member];
+      setSelectedCountries([...new Set(clusterMembers.map(getMemberCountry).filter(Boolean))]);
       return;
     }
 
@@ -532,9 +578,16 @@ export default function App() {
     setActiveCategory(category);
     if (EVENT_CATEGORIES.has(category) || category === 'kiro-ambassadors') {
       setGlobeDesign(getResponsiveDefaultGlobeDesign());
+    } else {
+      setGlobeDesign((currentDesign) => {
+        const nextDesigns = getAvailableGlobeDesigns(compactViewport, category);
+        return nextDesigns.includes(currentDesign)
+          ? currentDesign
+          : compactViewport ? 'sleek' : 'orbit';
+      });
     }
     if (category === 'news') setNewsPanelOpen(true);
-  }, []);
+  }, [compactViewport]);
 
   const handleSectionChange = useCallback((section) => {
     if (section === 'experimental') {
@@ -624,7 +677,7 @@ export default function App() {
       setSelectedCountries([]);
       setNearMeTarget(null);
       setCountrySpotlight(null);
-      setGlobeDesign('orbit');
+      setGlobeDesign(getResponsiveDefaultGlobeDesign());
       return;
     }
 
@@ -800,12 +853,31 @@ export default function App() {
             <Suspense fallback={renderGlobeLoading('Loading community insights...')}>
               <InsightsDashboard darkMode={darkMode} />
             </Suspense>
+          ) : isBuilderLoftsView ? (
+            <Suspense fallback={renderGlobeLoading('Loading AWS Builder Lofts...')}>
+              <BuilderLoftsScene
+                members={filteredMembers}
+                loading={loading}
+                darkMode={darkMode}
+                Scene={ActiveGlobeScene}
+                renderScene={renderInteractiveScene}
+                globeDesign={globeDesign}
+                globeDesigns={availableGlobeDesigns}
+                globeDesignLabel={designButtonLabel}
+                onDesignChange={setGlobeDesign}
+                zoomCommand={zoomCommand}
+                onZoom={triggerZoom}
+                flyToTarget={resolvedFlyToTarget}
+              />
+            </Suspense>
           ) : isCommunityDaysView ? (
             <Suspense fallback={renderGlobeLoading('Loading Community Days...')}>
               <CommunityDaysScene
                 darkMode={darkMode}
                 Scene={ActiveGlobeScene}
                 globeDesign={globeDesign}
+                globeDesigns={availableGlobeDesigns}
+                globeDesignLabel={designButtonLabel}
                 onDesignChange={setGlobeDesign}
                 zoomCommand={zoomCommand}
                 onZoom={triggerZoom}
@@ -954,6 +1026,7 @@ export default function App() {
                         WebkitBackdropFilter: 'blur(14px)',
                       }}
                       aria-label="Globe design switcher"
+                      role="group"
                     >
                       <span
                         aria-hidden="true"
@@ -979,6 +1052,7 @@ export default function App() {
                           onClick={() => setGlobeDesign(d)}
                           className="rounded-full px-3 py-1 text-xs font-semibold capitalize active:scale-[0.97]"
                           style={designButtonStyles(d)}
+                          aria-pressed={globeDesign === d}
                         >
                           {designButtonLabel(d)}
                         </button>
@@ -1261,6 +1335,7 @@ export default function App() {
                           WebkitBackdropFilter: 'blur(14px)',
                         }}
                         aria-label="Globe design switcher"
+                        role="group"
                       >
                         <span
                           aria-hidden="true"
@@ -1286,6 +1361,7 @@ export default function App() {
                             onClick={() => setGlobeDesign(design)}
                             className="rounded-full px-3 py-1 text-xs font-semibold active:scale-[0.97]"
                             style={designButtonStyles(design)}
+                            aria-pressed={globeDesign === design}
                           >
                             {designButtonLabel(design)}
                           </button>
