@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-06T11:51:11.747Z",
+  "updatedAt": "2026-09-07T05:40:57.205Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -9768,7 +9768,9 @@
     {
       "date": "2026-09-06",
       "source": {
-        "type": "working-tree"
+        "type": "git",
+        "commit": "1c05df7",
+        "subject": "feat: publish globe redesign, insights, lofts and community tools"
       },
       "categories": {
         "heroes": {
@@ -9913,28 +9915,28 @@
           }
         },
         "cloud-clubs": {
-          "total": 1022,
-          "classified": 1009,
+          "total": 1023,
+          "classified": 1010,
           "unclassified": 13,
           "coveragePercent": 98.7,
           "regions": {
             "north-america": 136,
             "south-america": 118,
             "europe": 30,
-            "asia": 632,
+            "asia": 633,
             "africa": 88,
             "oceania": 5
           },
           "changes": {
-            "added": 0,
+            "added": 1,
             "removed": 0,
-            "net": 0,
+            "net": 1,
             "retained": 1022,
             "addedByRegion": {
               "north-america": 0,
               "south-america": 0,
               "europe": 0,
-              "asia": 0,
+              "asia": 1,
               "africa": 0,
               "oceania": 0
             },
@@ -9948,7 +9950,15 @@
             },
             "addedUnclassified": 0,
             "removedUnclassified": 0,
-            "addedItems": [],
+            "addedItems": [
+              {
+                "name": "AWS Student Builder Group at Institute of Technology, University of Moratuwa",
+                "location": "Homagama, Sri Lanka",
+                "country": "Sri Lanka",
+                "region": "asia",
+                "url": "https://www.meetup.com/aws-sbg-at-itum/"
+              }
+            ],
             "removedItems": [],
             "quality": {
               "confidence": "high",
@@ -10126,24 +10136,314 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-09-07",
+      "source": {
+        "type": "working-tree"
+      },
+      "categories": {
+        "heroes": {
+          "total": 252,
+          "classified": 238,
+          "unclassified": 14,
+          "coveragePercent": 94.4,
+          "regions": {
+            "north-america": 53,
+            "south-america": 11,
+            "europe": 73,
+            "asia": 80,
+            "africa": 6,
+            "oceania": 15
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 252,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "community-builders": {
+          "total": 3036,
+          "classified": 2859,
+          "unclassified": 177,
+          "coveragePercent": 94.2,
+          "regions": {
+            "north-america": 504,
+            "south-america": 256,
+            "europe": 559,
+            "asia": 1183,
+            "africa": 259,
+            "oceania": 98
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 3036,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "user-groups": {
+          "total": 599,
+          "classified": 598,
+          "unclassified": 1,
+          "coveragePercent": 99.8,
+          "regions": {
+            "north-america": 107,
+            "south-america": 97,
+            "europe": 162,
+            "asia": 182,
+            "africa": 32,
+            "oceania": 18
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 599,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "cloud-clubs": {
+          "total": 1023,
+          "classified": 1010,
+          "unclassified": 13,
+          "coveragePercent": 98.7,
+          "regions": {
+            "north-america": 136,
+            "south-america": 118,
+            "europe": 30,
+            "asia": 633,
+            "africa": 88,
+            "oceania": 5
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 1023,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "kiro-events": {
+          "total": 4,
+          "classified": 3,
+          "unclassified": 1,
+          "coveragePercent": 75,
+          "regions": {
+            "north-america": 2,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 1,
+            "africa": 0,
+            "oceania": 0
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 4,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        },
+        "community-days": {
+          "total": 38,
+          "classified": 38,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 5,
+            "south-america": 9,
+            "europe": 9,
+            "asia": 10,
+            "africa": 3,
+            "oceania": 2
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 38,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        }
+      }
     }
   ],
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-09-06",
-      "daysCovered": 161
+      "endDate": "2026-09-07",
+      "daysCovered": 162
     },
     "global": {
-      "totalRecords": 4951,
-      "classifiedRecords": 4745,
+      "totalRecords": 4952,
+      "classifiedRecords": 4746,
       "coveragePercent": 95.8,
-      "snapshots": 20
+      "snapshots": 21
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-06",
+        "currentDate": "2026-09-07",
         "baselineTotal": 262,
         "currentTotal": 252,
         "currentCoveragePercent": 94.4,
@@ -10665,7 +10965,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-06",
+        "currentDate": "2026-09-07",
         "baselineTotal": 2494,
         "currentTotal": 3036,
         "currentCoveragePercent": 94.2,
@@ -11236,7 +11536,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-06",
+        "currentDate": "2026-09-07",
         "baselineTotal": 608,
         "currentTotal": 599,
         "currentCoveragePercent": 99.8,
@@ -11975,21 +12275,21 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-06",
+        "currentDate": "2026-09-07",
         "baselineTotal": 623,
-        "currentTotal": 1022,
+        "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
         "periodChange": {
-          "added": 803,
+          "added": 804,
           "removed": 404,
-          "net": 399,
+          "net": 400,
           "retained": 219,
           "retentionPercent": 35.2,
           "addedByRegion": {
             "north-america": 112,
             "south-america": 115,
             "europe": 19,
-            "asia": 477,
+            "asia": 478,
             "africa": 66,
             "oceania": 5
           },
@@ -12447,9 +12747,9 @@
           },
           "asia": {
             "start": 353,
-            "current": 632,
-            "net": 279,
-            "growthPercent": 79
+            "current": 633,
+            "net": 280,
+            "growthPercent": 79.3
           },
           "africa": {
             "start": 61,
@@ -12467,479 +12767,64 @@
         "growthLeader": {
           "region": "asia",
           "start": 353,
-          "current": 632,
-          "net": 279,
-          "growthPercent": 79
+          "current": 633,
+          "net": 280,
+          "growthPercent": 79.3
         },
         "mostRepresented": {
           "region": "asia",
-          "total": 632
+          "total": 633
         },
         "peak": {
-          "date": "2026-09-02",
-          "total": 1022
+          "date": "2026-09-06",
+          "total": 1023
         },
         "latestMovement": {
-          "date": "2026-09-02",
-          "added": 672,
-          "removed": 547,
-          "net": 125,
-          "retained": 350,
+          "date": "2026-09-06",
+          "added": 1,
+          "removed": 0,
+          "net": 1,
+          "retained": 1022,
           "addedByRegion": {
-            "north-america": 86,
-            "south-america": 107,
-            "europe": 17,
-            "asia": 396,
-            "africa": 54,
-            "oceania": 5
+            "north-america": 0,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 1,
+            "africa": 0,
+            "oceania": 0
           },
           "removedByRegion": {
-            "north-america": 87,
-            "south-america": 86,
-            "europe": 30,
-            "asia": 277,
-            "africa": 48,
-            "oceania": 4
+            "north-america": 0,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
           },
-          "addedUnclassified": 7,
-          "removedUnclassified": 15,
+          "addedUnclassified": 0,
+          "removedUnclassified": 0,
           "addedItems": [
             {
-              "name": "AWS Student Builder Group at - State University of Ceara - Itaperi Campus",
-              "location": "Fortaleza, Brazil",
-              "country": "Brazil",
-              "region": "south-america",
-              "url": "https://www.meetup.com/aws-sbg-at-state-university-of-ceara-itaperi-campus/"
-            },
-            {
-              "name": "AWS Student Builder Group at 1337 Coding School - Khouribga Campus",
-              "location": "Ben Guerir, Morocco",
-              "country": "Morocco",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-1337-coding-school-khouribga-campus"
-            },
-            {
-              "name": "AWS Student Builder Group at Aarupadai Veedu Institute of Technology",
-              "location": "Paiyanur, India",
-              "country": "India",
+              "name": "AWS Student Builder Group at Institute of Technology, University of Moratuwa",
+              "location": "Homagama, Sri Lanka",
+              "country": "Sri Lanka",
               "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-aarupadai-veedu-institute-of-technology-chennai/"
-            },
-            {
-              "name": "AWS Student Builder Group at Abdul Wali Khan University Mardan - Sheikh Maltoon Campus",
-              "location": "Mardan, Pakistan",
-              "country": "Pakistan",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-abdul-wali-khan-university-mardan-sheikh-maltoon/"
-            },
-            {
-              "name": "AWS Student Builder Group at Abdullah Gul University - Sumer Campus",
-              "location": "Kayseri, Turkiye",
-              "country": "Turkiye",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-abdullah-gul-university-sumer-campus/"
-            },
-            {
-              "name": "AWS Student Builder Group at Academy of Technology - Adisaptagram",
-              "location": "Adisaptagram, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-academy-of-technology-adisaptagram"
-            },
-            {
-              "name": "AWS Student Builder Group at Addis Ababa University - College of Technology and Built Environment",
-              "location": "Addis Ababa, Ethiopia",
-              "country": "Ethiopia",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-addis-ababa-univ-college-of-tech-built-env/"
-            },
-            {
-              "name": "AWS Student Builder Group at Adithya Institute of Technology",
-              "location": "Coimbatore, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-adithya-institute-of-technology/"
-            },
-            {
-              "name": "AWS Student Builder Group at Adnan Menderes University",
-              "location": "Aydin, Turkiye",
-              "country": "Turkiye",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-adnan-menderes-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Advanced College of Engineering and Management",
-              "location": "Kathmandu, Nepal",
-              "country": "Nepal",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-advanced-college-engineering-management/"
-            },
-            {
-              "name": "AWS Student Builder Group at African Leadership College of Higher Education - Mauritius Campus",
-              "location": "Pamplemousses, Mauritius",
-              "country": "Mauritius",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-african-leadership-coll-of-higher-edu-mauritius/"
-            },
-            {
-              "name": "AWS Student Builder Group at African Leadership University - Rwanda Campus",
-              "location": "Kigali, Rwanda",
-              "country": "Rwanda",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-african-leadership-university-rwanda-campus/"
-            },
-            {
-              "name": "AWS Student Builder Group at Air University - E-9 Campus Islamabad",
-              "location": "Islamabad, Pakistan",
-              "country": "Pakistan",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-air-university-e9-campus-islamabad/"
-            },
-            {
-              "name": "AWS Student Builder Group at Ajeenkya D.Y Patil School Of Engineering",
-              "location": "Pune, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-ajeenkya-dy-patil-school-of-engineering"
-            },
-            {
-              "name": "AWS Student Builder Group at Algoma University - Brampton Campus",
-              "location": "Ontario, Canada",
-              "country": "Canada",
-              "region": "north-america",
-              "url": "https://www.meetup.com/aws-sbg-at-algoma-university-brampton-campus"
-            },
-            {
-              "name": "AWS Student Builder Group at Aliko Dangote University of Science and Technology",
-              "location": "Kano, Nigeria",
-              "country": "Nigeria",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-aliko-dangote-university-of-science-technology/"
-            },
-            {
-              "name": "AWS Student Builder Group at Allama Iqbal Open University - H-8 Campus",
-              "location": "Islamabad, Pakistan",
-              "country": "Pakistan",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-allama-iqbal-open-university-h-8-campus/"
-            },
-            {
-              "name": "AWS Student Builder Group at Allenhouse Business School",
-              "location": "Kanpur, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-allenhouse-business-school/"
-            },
-            {
-              "name": "AWS Student Builder Group at Alshifa Institute of Health Sciences",
-              "location": "Narowal, Pakistan",
-              "country": "Pakistan",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-al-shifa-institute-of-health-sciences/"
-            },
-            {
-              "name": "AWS Student Builder Group at Alves Faria University Center - Perimetral Campus",
-              "location": "Goiania, Brazil",
-              "country": "Brazil",
-              "region": "south-america",
-              "url": "https://www.meetup.com/aws-sbg-at-alves-faria-university-center-perimetral-campus"
-            },
-            {
-              "name": "AWS Student Builder Group at Amal Jyothi College of Engineering",
-              "location": "Kottayam, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-amal-jyothi-college-of-engineering/"
-            },
-            {
-              "name": "AWS Student Builder Group at Amity University - Jaipur Campus",
-              "location": "Jaipur, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-amity-university-jaipur-campus/"
-            },
-            {
-              "name": "AWS Student Builder Group at Amity University - Kolkata Campus",
-              "location": "Kolkata, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-amity-university-kolkata-campus/"
-            },
-            {
-              "name": "AWS Student Builder Group at Amity University - Noida Campus",
-              "location": "Noida, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-amity-university-noida-campus"
-            },
-            {
-              "name": "AWS Student Builder Group at Amity University - Patna Campus",
-              "location": "Patna, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-amity-university-patna-campus/"
-            },
-            {
-              "name": "AWS Student Builder Group at Amrita Vishwa Vidyapeetham - Bengaluru Campus",
-              "location": "Bengaluru, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-amrita-vishwa-vidyapeetham-bengaluru/"
-            },
-            {
-              "name": "AWS Student Builder Group at Anahuac Mayab University",
-              "location": "Merida, Mexico",
-              "country": "Mexico",
-              "region": "north-america",
-              "url": "https://www.meetup.com/aws-sbg-at-anahuac-mayab-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Anil Neerukonda Institute of Technology and Sciences",
-              "location": "Bheemunipatnam, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-anil-neerukonda-institute-of-tech-sciences/"
-            },
-            {
-              "name": "AWS Student Builder Group at Annasaheb Chudaman Patil College of Engineering",
-              "location": "Navi Mumbai, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-annasaheb-chudaman-patil-coll-of-eng"
-            },
-            {
-              "name": "AWS Student Builder Group at Apex University - VT Road Campus",
-              "location": "Jaipur, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-apex-university-vt-road-campus/"
+              "url": "https://www.meetup.com/aws-sbg-at-itum/"
             }
           ],
-          "removedItems": [
-            {
-              "name": "AWS SBG at Institute of Tech-Rajiv Gandhi Technical Uni",
-              "location": "Bhopal, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-institute-of-tech-rajiv-gandhi-technical-uni"
-            },
-            {
-              "name": "AWS SBG at Kakatiya Institute of Tech and Science for Women",
-              "location": "Nizamabad, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-kakatiya-institute-of-tech-and-science-for-women"
-            },
-            {
-              "name": "AWS SBG at Vidyalankar Inst of Technology, Vadala, Mumbai",
-              "location": "Vadala, Mumbai, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-vidyalankar-inst-of-technology-vadala-mumbai"
-            },
-            {
-              "name": "AWS Student Builder Group at 1337 Coding School",
-              "location": "Khouribga, Morocco",
-              "country": "Morocco",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-1337/"
-            },
-            {
-              "name": "AWS Student Builder Group at Abdul Wali Khan University Mardan",
-              "location": "Mardan, Pakistan",
-              "country": "Pakistan",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-abdul-wali-khan-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Abdullah Gul University",
-              "location": "kayseri, Turkiye",
-              "country": "Turkiye",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-abdullah-gul-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Academy of Technology",
-              "location": "Hooghly, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-academy-of-technology/"
-            },
-            {
-              "name": "AWS Student Builder Group at Addis Ababa University",
-              "location": "Addis Abeba, Ethiopia",
-              "country": "Ethiopia",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-addis-ababa-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at African Leadership University",
-              "location": "Kigali, Rwanda",
-              "country": "Rwanda",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-african-leadership-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Air University Islamabad",
-              "location": "Islamabad, Pakistan",
-              "country": "Pakistan",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-air-univ-islamabad/"
-            },
-            {
-              "name": "AWS Student Builder Group at Ajeenky D.Y Patil School of Engineering",
-              "location": "Pune, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-ajeenky-d-y-patil-school-of-engineering/"
-            },
-            {
-              "name": "AWS Student Builder Group at Al-Shifa Institute of Health Sciences, Narowal",
-              "location": "Narowal, Pakistan",
-              "country": "Pakistan",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-al-shifa-institute-of-health-sciences-narowal/"
-            },
-            {
-              "name": "AWS Student Builder Group at Algoma University",
-              "location": "Brampton, Canada",
-              "country": "Canada",
-              "region": "north-america",
-              "url": "https://www.meetup.com/aws-sbg-at-algoma-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Aliko Dangote University Of Science And Technology, Wudil",
-              "location": "Kano, Nigeria",
-              "country": "Nigeria",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-aliko-dangote-university-science-tech/"
-            },
-            {
-              "name": "AWS Student Builder Group at Amity University Chhattisgarh",
-              "location": "Raipur, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-amity-university-chhattisgarh/"
-            },
-            {
-              "name": "AWS Student Builder Group at Anand International College of Engineering, Jaipur",
-              "location": "India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-anand-international-college-of-engineering/"
-            },
-            {
-              "name": "AWS Student Builder Group at Anil Neerukonda Institute of Techology and Sciences",
-              "location": "Visakhapatnam, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-anil-neerukonda-institute-of-tech-science/"
-            },
-            {
-              "name": "AWS Student Builder Group at Anjuman-i-Islam's M.H. Saboo Siddik College of Engineering",
-              "location": "Mumbai, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-m-h-saboo-siddik-college-of-engineering"
-            },
-            {
-              "name": "AWS Student Builder Group at Ankara University",
-              "location": "Ankara, Turkiye",
-              "country": "Turkiye",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-ankara-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Annasaheb Chudaman Patil College of Engineering, Kharghar - Navi Mumbai",
-              "location": "Kharghar, Navi Mumbai, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-ac-patil-college-of-engineering/"
-            },
-            {
-              "name": "AWS Student Builder Group at Apex University",
-              "location": "Jaipur, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-apex-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at APJ Abdul Kalam Technical University",
-              "location": "Kochi, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-apj-abdul-kalam-technical-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Arab Academy for Science, Technology and Maritime Transport",
-              "location": "Alexandria, Egypt",
-              "country": "Egypt",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-arab-academy-for-sci-tech-maritime/"
-            },
-            {
-              "name": "AWS Student Builder Group at Arab Open University",
-              "location": "Cairo, Egypt",
-              "country": "Egypt",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-sbg-at-arabopenuniversity/"
-            },
-            {
-              "name": "AWS Student Builder Group at Araraquara College of Technology",
-              "location": "Araraquara, Brazil",
-              "country": "Brazil",
-              "region": "south-america",
-              "url": "https://www.meetup.com/aws-sbg-at-araraquara-college-of-technology/"
-            },
-            {
-              "name": "AWS Student Builder Group at Army Institute of Business Administration, Sylhet, Bangladesh",
-              "location": "Sylhet, Bangladesh",
-              "country": "Bangladesh",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-army-institute-of-business-adminstration/"
-            },
-            {
-              "name": "AWS Student Builder Group at Associacao Educacional Dom Bosco",
-              "location": "Rio de Janeiro, Brazil",
-              "country": "Brazil",
-              "region": "south-america",
-              "url": "https://www.meetup.com/aws-sbg-at-associacao-educacional-dom-bosco/"
-            },
-            {
-              "name": "AWS Student Builder Group at Ateneo de Davao University",
-              "location": "Davao City, Philippines",
-              "country": "Philippines",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-ateneo-de-davao-university/"
-            },
-            {
-              "name": "AWS Student Builder Group at Autonomous University of the State of Mexico",
-              "location": "Toluca, Mexico",
-              "country": "Mexico",
-              "region": "north-america",
-              "url": "https://www.meetup.com/aws-sbg-at-autonomous-university-of-the-state-of-mexico/"
-            },
-            {
-              "name": "AWS Student Builder Group at B.S. Abdur Rahman Crescent Institute of Science and Technology",
-              "location": "Bangalore urban (Bengaluru), India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-sbg-at-b-s-abdur-rahman-crescent-inst-of-science-tech/"
-            }
-          ],
+          "removedItems": [],
           "quality": {
-            "confidence": "low",
-            "comparable": false,
+            "confidence": "high",
+            "comparable": true,
             "reasons": [
-              "Directory size changed 14%; this may reflect a source or scraper discontinuity.",
-              "Observed identity turnover was 119%; treat additions and removals cautiously."
+              "Stable directory shape and geographic coverage."
             ]
           }
         }
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-09-06",
+        "currentDate": "2026-09-07",
         "baselineTotal": 17,
         "currentTotal": 4,
         "currentCoveragePercent": 75,
@@ -13265,7 +13150,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-09-06",
+        "currentDate": "2026-09-07",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
