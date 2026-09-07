@@ -23,6 +23,7 @@ function countdownTo(date, now) {
 
 export default function CommunityDaysScene({
   darkMode,
+  lightweight = false,
   Scene: ActiveScene,
   globeDesign,
   globeDesigns,
@@ -105,6 +106,7 @@ export default function CommunityDaysScene({
           members: events,
           onMarkerClick: openOfficialSite,
           darkMode,
+          lightweight,
           zoomCommand,
           flyToTarget,
         })

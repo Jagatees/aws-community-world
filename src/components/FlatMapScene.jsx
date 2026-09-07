@@ -75,7 +75,7 @@ function buildProjection(activeTarget) {
   return projection;
 }
 
-export default function FlatMapScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand, hideControls = false }) {
+export default function FlatMapScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand, hideControls = false, lightweight = false }) {
   const [focusedTarget, setFocusedTarget] = useState(null);
   const [manualZoom, setManualZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
@@ -109,7 +109,9 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
     const path = geoPath(projection);
     const clusteredMarkers = clusterProjectedMembers(members, projection).map((cluster) => {
       const visibleImages = [];
-      for (const member of cluster.members) {
+      // Phones use initials; decoding hundreds of full-size portraits can
+      // exhaust Safari's page memory even without a WebGL map.
+      for (const member of lightweight ? [] : cluster.members) {
         const src = getMemberImage(member);
         if (src) visibleImages.push({ src, name: member.name });
         if (visibleImages.length === MAX_CLUSTER_AVATARS) break;
@@ -129,7 +131,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
       graticulePath: path(GRATICULE),
       markers: clusteredMarkers,
     };
-  }, [activeTarget, members, manualZoom]);
+  }, [activeTarget, members, manualZoom, lightweight]);
 
   const markerColor = CATEGORY_COLORS[category] ?? '#FF9900';
   const panelBg = darkMode ? 'rgba(10, 18, 27, 0.78)' : 'rgba(255, 255, 255, 0.86)';
@@ -198,9 +200,13 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
   function handlePointerMove(event) {
     if (!dragStateRef.current.active || dragStateRef.current.pointerId !== event.pointerId) return;
 
-    const dx = event.clientX - dragStateRef.current.startX;
-    const dy = event.clientY - dragStateRef.current.startY;
-    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+    // Pan is expressed in SVG units, while pointer events use CSS pixels.
+    const svg = event.currentTarget.querySelector('svg');
+    const rect = svg.getBoundingClientRect();
+    const scale = Math.min(rect.width / MAP_WIDTH, rect.height / MAP_HEIGHT) || 1;
+    const dx = (event.clientX - dragStateRef.current.startX) / scale;
+    const dy = (event.clientY - dragStateRef.current.startY) / scale;
+    if (Math.abs(dx * scale) > 3 || Math.abs(dy * scale) > 3) {
       dragStateRef.current.moved = true;
       suppressClickRef.current = true;
     }
@@ -245,9 +251,9 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
             background: panelBg,
             border: `1px solid ${panelBorder}`,
             boxShadow: darkMode ? '0 28px 70px rgba(0, 0, 0, 0.38)' : '0 24px 60px rgba(86, 116, 145, 0.16)',
-            backdropFilter: 'blur(18px)',
-            WebkitBackdropFilter: 'blur(18px)',
-            aspectRatio: `${MAP_WIDTH} / ${MAP_HEIGHT}`,
+            backdropFilter: lightweight ? 'none' : 'blur(18px)',
+            WebkitBackdropFilter: lightweight ? 'none' : 'blur(18px)',
+            aspectRatio: lightweight ? undefined : `${MAP_WIDTH} / ${MAP_HEIGHT}`,
             cursor: isDragging ? 'grabbing' : 'grab',
           }}
         >
@@ -260,8 +266,8 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
             }}
           />
 
-          <svg viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} className="relative z-10 h-full w-full" aria-label="Flat world map">
-            <defs>
+          <svg viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} className={`relative z-10 w-full ${lightweight ? 'block h-auto' : 'h-full'}`} aria-label="Flat world map">
+            {!lightweight && <defs>
               <filter id="flat-marker-glow" x="-200%" y="-200%" width="400%" height="400%">
                 <feGaussianBlur stdDeviation="7" result="blur" />
                 <feMerge>
@@ -269,7 +275,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                   <feMergeNode in="SourceGraphic" />
                 </feMerge>
               </filter>
-            </defs>
+            </defs>}
 
             <rect x="0" y="0" width={MAP_WIDTH} height={MAP_HEIGHT} fill={oceanFill} opacity="0.88" />
 
@@ -311,7 +317,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                 const stackOffsetX = visibleImages.length > 1 ? stackWidth / 2 : clusterAvatarSize / 2;
                 const badgeCount = Math.max(0, marker.members.length - visibleImages.length);
                 const markerHasNewMember = marker.hasNewMember;
-                const userGroupFlagUrl = category === 'user-groups'
+                const userGroupFlagUrl = !lightweight && category === 'user-groups'
                   ? getMemberCountryFlagUrl(marker.members[0])
                   : '';
                 const flagSize = marker.size * 2;
@@ -324,7 +330,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                           r={marker.size * 1.08}
                           fill={markerColor}
                           opacity="0.3"
-                          filter="url(#flat-marker-glow)"
+                          filter={lightweight ? undefined : 'url(#flat-marker-glow)'}
                           pointerEvents="none"
                         />
                         <clipPath id={`flat-flag-clip-${markerId}`}>
@@ -379,7 +385,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                           ry={visibleImages.length > 1 ? clusterAvatarSize * 0.9 : singleAvatarSize * 0.6}
                           fill={markerColor}
                           opacity="0.22"
-                          filter="url(#flat-marker-glow)"
+                          filter={lightweight ? undefined : 'url(#flat-marker-glow)'}
                           pointerEvents="none"
                         />
                         {visibleImages.length === 1 ? (
@@ -468,7 +474,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                           r={marker.size * 0.88}
                           fill={markerColor}
                           opacity="0.28"
-                          filter="url(#flat-marker-glow)"
+                          filter={lightweight ? undefined : 'url(#flat-marker-glow)'}
                           pointerEvents="none"
                         />
                         <circle
@@ -548,6 +554,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                       r={Math.max(marker.size + 12, singleAvatarSize * 0.8, clusterAvatarSize + 12)}
                       fill="transparent"
                       data-marker-interactive="true"
+                      aria-label={marker.members.length === 1 ? marker.members[0].name : `${marker.members.length} members at this location`}
                       pointerEvents="all"
                       style={{ cursor: 'pointer' }}
                       onClick={() => {
@@ -574,7 +581,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
 
           {!hideControls && (
             <>
-              <div
+              {!lightweight && <div
                 className="pointer-events-none absolute left-5 top-5 rounded-full px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase"
                 style={{
                   color: darkMode ? '#A7BDCF' : '#537190',
@@ -585,9 +592,9 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                 }}
               >
                 Flat Map
-              </div>
+              </div>}
 
-              <div className="absolute right-5 top-5 flex items-center gap-2" style={{ zIndex: 20 }}>
+              <div className={lightweight ? 'relative flex items-center justify-center gap-2 px-2 py-3' : 'absolute right-5 top-5 flex items-center gap-2'} style={{ zIndex: 20 }}>
                 <div
                   data-map-control="true"
                   className="rounded-full px-3 py-1 text-[11px] font-semibold"

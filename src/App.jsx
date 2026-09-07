@@ -218,6 +218,7 @@ export default function App() {
     routeState.countrySpotlight ? { country: routeState.countrySpotlight, nonce: 1 } : null
   );
   const [compactViewport, setCompactViewport] = useState(isCompactViewport);
+  const lightweightMap = compactViewport || (typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches);
   const [webGlAvailable] = useState(canCreateWebGlContext);
   // Only fly when the user explicitly pressed Locate, not on every selection
   const selectedNewsFlyTarget = flyToOverride;
@@ -258,7 +259,7 @@ export default function App() {
       : globeDesign === 'classic'
       ? MapboxGlobeScene
       : globeDesign === 'flat'
-        ? MapboxFlatScene
+        ? lightweightMap ? SvgFlatMapScene : MapboxFlatScene
         : globeDesign === 'sleek'
           ? CobeGlobeScene
           : ClassicGlobeScene;
@@ -295,9 +296,9 @@ export default function App() {
     return (
       <GlobeErrorBoundary
         resetKey={resetKey}
-        fallback={<SvgFlatMapScene {...props} />}
+        fallback={<SvgFlatMapScene {...props} lightweight />}
       >
-        <Scene {...props} />
+        <Scene {...props} lightweight={lightweightMap} />
       </GlobeErrorBoundary>
     );
   }
@@ -488,7 +489,7 @@ export default function App() {
     if (design === 'classic') return 'Atlas';
     if (design === 'orbit') return 'Earth';
     if (design === 'sleek') return 'Minimal';
-    if (design === 'flat') return compactViewport ? 'Advanced Map' : 'Map';
+    if (design === 'flat') return 'Map';
     if (design === 'geolibre') return 'GeoLibre';
     if (design === 'icons') return 'Gallery';
     if (design === 'list') return 'Directory';
@@ -874,6 +875,7 @@ export default function App() {
             <Suspense fallback={renderGlobeLoading('Loading Community Days...')}>
               <CommunityDaysScene
                 darkMode={darkMode}
+                lightweight={lightweightMap}
                 Scene={ActiveGlobeScene}
                 globeDesign={globeDesign}
                 globeDesigns={availableGlobeDesigns}
