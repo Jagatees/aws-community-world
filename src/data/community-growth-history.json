@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-10T05:35:33.821Z",
+  "updatedAt": "2026-09-11T05:37:00.606Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -10138,7 +10138,7 @@
       }
     },
     {
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "source": {
         "type": "working-tree"
       },
@@ -10431,8 +10431,8 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-09-10",
-      "daysCovered": 165
+      "endDate": "2026-09-11",
+      "daysCovered": 166
     },
     "global": {
       "totalRecords": 4952,
@@ -10443,7 +10443,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-10",
+        "currentDate": "2026-09-11",
         "baselineTotal": 262,
         "currentTotal": 252,
         "currentCoveragePercent": 94.4,
@@ -10965,7 +10965,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-10",
+        "currentDate": "2026-09-11",
         "baselineTotal": 2494,
         "currentTotal": 3036,
         "currentCoveragePercent": 94.2,
@@ -11536,7 +11536,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-10",
+        "currentDate": "2026-09-11",
         "baselineTotal": 608,
         "currentTotal": 599,
         "currentCoveragePercent": 99.8,
@@ -12275,7 +12275,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-10",
+        "currentDate": "2026-09-11",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -12824,7 +12824,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-09-10",
+        "currentDate": "2026-09-11",
         "baselineTotal": 17,
         "currentTotal": 4,
         "currentCoveragePercent": 75,
@@ -13150,7 +13150,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-09-10",
+        "currentDate": "2026-09-11",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -13481,7 +13481,7 @@
     },
     "upcoming": {
       "total": 30,
-      "next30Days": 18,
+      "next30Days": 20,
       "byRegion": {
         "north-america": 4,
         "south-america": 6,
