@@ -39,7 +39,7 @@ try {
     await scene.getByText('Ended events worldwide', { exact: true }).waitFor();
     await scene.getByText('12', { exact: true }).waitFor();
     assert.equal(new URL(page.url()).searchParams.get('eventStatus'), 'ended');
-    if (mobile) assert.equal(await page.locator('.mobile-active-category strong').innerText(), '12');
+    if (mobile) assert.equal(await page.locator('.mobile-active-category').count(), 0);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     await page.screenshot({ path: `tmp/event-status-qa/${mobile ? 'mobile' : 'desktop'}.png` });
 

@@ -841,8 +841,6 @@ export default function App() {
             darkMode={darkMode}
             section={activeSection}
             activeCategory={activeCategory}
-            activeLabel={CATEGORY_LABELS[activeCategory] ?? activeCategory}
-            resultCount={isNewsView ? newsItems.length : isListView || isIconView ? directoryMembers.length : hudCount}
             onCategoryChange={handleCategoryChange}
             regions={isKiroView || isAwsAmbassadorView ? [] : regions}
             regionCounts={isKiroView || isAwsAmbassadorView ? {} : regionCounts}

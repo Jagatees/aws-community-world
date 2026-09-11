@@ -66,8 +66,6 @@ export default function MobileNavigation({
   darkMode,
   section,
   activeCategory,
-  activeLabel,
-  resultCount,
   onCategoryChange,
   regions = [],
   regionCounts = {},
@@ -101,7 +99,6 @@ export default function MobileNavigation({
   const filterCount = selectedRegions.length + selectedCountries.length + (selectedTag ? 1 : 0) + (newOnly ? 1 : 0) + (eventStatus !== 'all' ? 1 : 0);
   const hasLocationFilters = regions.length > 0 || countries.length > 0;
   const hasFilters = hasLocationFilters || tags.length > 0 || eventStatus !== 'all';
-  const formattedCount = Number.isFinite(resultCount) ? resultCount.toLocaleString() : null;
 
   useEffect(() => {
     if (!openPanel) return undefined;
@@ -154,20 +151,8 @@ export default function MobileNavigation({
         />
       )}
 
-      {!openPanel && (
+      {!openPanel && canUseNearMe && (
         <div className="mobile-navigation-floating-actions">
-          <button
-            type="button"
-            className="mobile-active-category"
-            onClick={() => togglePanel('categories')}
-            aria-label={`Change category. Current category: ${activeLabel}`}
-          >
-            <span className="mobile-active-category-dot" aria-hidden="true" />
-            <span>{activeLabel}</span>
-            {formattedCount && <strong>{formattedCount}</strong>}
-          </button>
-
-          {canUseNearMe && (
             <button
               type="button"
               className="mobile-near-me"
@@ -178,7 +163,6 @@ export default function MobileNavigation({
               <CrosshairIcon size={19} weight={nearMeLoading ? 'duotone' : 'bold'} aria-hidden="true" />
               <span>{nearMeLoading ? 'Locating' : 'Near me'}</span>
             </button>
-          )}
         </div>
       )}
 

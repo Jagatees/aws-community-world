@@ -58,7 +58,7 @@ try {
 
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${baseUrl}/?tab=kiro-events&view=sleek`);
-  await page.getByRole('button', { name: 'Change category. Current category: Kiro Events' }).click();
+  await page.getByRole('button', { name: 'Categories', exact: true }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Builder Lofts', exact: true }).click();
   await cities.waitFor();
   assert.equal(await cities.getByRole('button').count(), 4);

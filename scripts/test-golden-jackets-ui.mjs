@@ -61,7 +61,7 @@ try {
   await mobile.getByRole('button', { name: 'Golden Jackets', exact: true }).click();
   await mobile.getByRole('heading', { name: 'Golden Jackets', exact: true }).waitFor();
   await mobile.getByText(`${records.length} entries`, { exact: true }).waitFor();
-  assert.equal(await mobile.locator('.mobile-active-category strong').innerText(), String(records.length));
+  assert.equal(await mobile.locator('.mobile-active-category').count(), 0);
   assert.ok(await mobile.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
   await mobile.waitForFunction(() => {
     const portrait = document.querySelector('article img');
