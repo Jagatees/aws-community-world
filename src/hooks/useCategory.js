@@ -14,6 +14,7 @@ const DATA_LOADERS = {
   'community-days': () => import('../data/community-days.json'),
   'builder-lofts': () => import('../data/builder-lofts.json'),
   'aws-ambassadors': () => import('../data/aws-ambassadors.json'),
+  'golden-jackets': () => import('../data/golden-jackets.json'),
 };
 
 /**
@@ -46,10 +47,15 @@ function normalizeMembers(raw, category) {
     endsAt: item.endsAt,
     calendarAllDay: item.calendarAllDay,
     description: item.description ?? '',
+    organization: item.organization ?? '',
+    role: item.role ?? '',
     ctaLabel: item.ctaLabel ?? '',
     country: item.country ?? '',
-    ...(category === 'kiro-ambassadors' ? {
+    ...(['kiro-ambassadors', 'aws-ambassadors', 'golden-jackets'].includes(category) ? {
       sourceUrl: item.sourceUrl,
+      sourceLabel: item.sourceLabel,
+      recognitionStatus: item.recognitionStatus,
+      locationSourceUrl: item.locationSourceUrl,
       verifiedAt: item.verifiedAt,
       coordinatePrecision: item.coordinatePrecision,
     } : {}),

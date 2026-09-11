@@ -77,6 +77,16 @@ function SocialChannels({ links, compact = false }) {
 }
 
 const CATEGORY_CONFIG = {
+  'golden-jackets': {
+    eyebrow: 'AWS community // golden jackets', title: 'Golden Jacket archive',
+    description: 'A growing directory of publicly documented recipients, including alumni.', singular: 'Golden Jacket recipient', plural: 'golden jacket recipients',
+    filterLabel: 'source', filterValue: (member) => member.tag,
+  },
+  'aws-ambassadors': {
+    eyebrow: 'AWS partners // ambassadors', title: 'AWS Ambassador archive',
+    description: 'Meet AWS Ambassadors from the global partner community.', singular: 'AWS Ambassador', plural: 'AWS ambassadors',
+    filterLabel: 'specialty', filterValue: (member) => member.tag,
+  },
   heroes: {
     eyebrow: 'AWS community // heroes', title: 'Hero archive',
     description: 'Rotate the vault. Open a tile to scan a hero record.', singular: 'AWS Hero', plural: 'heroes',
@@ -187,7 +197,7 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
     const normalizedQuery = query.trim().toLowerCase();
     return members.filter((member) => {
       if (!normalizedQuery) return true;
-      return [member.name, config.filterValue(member), member.location]
+      return [member.name, config.filterValue(member), member.location, member.organization, member.role]
         .filter(Boolean)
         .some((value) => value.toLowerCase().includes(normalizedQuery));
     });
@@ -642,10 +652,16 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
               <dl>
                 <div><dt>Classification</dt><dd>{config.filterValue(selectedHero) || config.singular}</dd></div>
                 <div><dt>Location</dt><dd>{selectedHero.location || 'Not listed'}</dd></div>
+                {['aws-ambassadors', 'golden-jackets'].includes(category) && <>
+                  <div><dt>Partner</dt><dd>{selectedHero.organization || 'Not listed'}</dd></div>
+                  <div><dt>Role</dt><dd>{selectedHero.role || 'Not listed'}</dd></div>
+                  <div><dt>Map precision</dt><dd>{selectedHero.coordinatePrecision ? `Approximate ${selectedHero.coordinatePrecision}` : 'Not mapped'}</dd></div>
+                </>}
+                {category === 'golden-jackets' && <div><dt>Recognition</dt><dd>{selectedHero.recognitionStatus === 'alumni' ? 'Alumni' : 'Documented recipient'} · current certifications may differ</dd></div>}
                 <div>
                   <dt>Coordinates</dt>
                   <dd className="hero-scan__mono">
-                    {Number.isFinite(selectedHero.lat) && Number.isFinite(selectedHero.lng)
+                    {Number.isFinite(selectedHero.lat) && Number.isFinite(selectedHero.lng) && (selectedHero.lat !== 0 || selectedHero.lng !== 0)
                       ? `${selectedHero.lat.toFixed(2)} / ${selectedHero.lng.toFixed(2)}`
                       : 'Not mapped'}
                   </dd>
@@ -714,8 +730,9 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
               Previous
             </button>
             <div className="hero-scan__actions">
+              {category === 'golden-jackets' && selectedHero.sourceUrl && <a href={selectedHero.sourceUrl} target="_blank" rel="noopener noreferrer">Recognition source <span>↗</span></a>}
               {selectedHero.profileUrl && (
-                <a href={selectedHero.profileUrl} target="_blank" rel="noopener noreferrer">Open profile <span>↗</span></a>
+                <a href={selectedHero.profileUrl} target="_blank" rel="noopener noreferrer">{selectedHero.ctaLabel || 'Open profile'} <span>↗</span></a>
               )}
               {selectedHero.builderProfileUrl && (
                 <a className="hero-scan__secondary" href={selectedHero.builderProfileUrl} target="_blank" rel="noopener noreferrer">Builder profile <span>↗</span></a>

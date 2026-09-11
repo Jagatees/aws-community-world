@@ -14,6 +14,7 @@ const CATEGORY_COLORS = {
   'community-days': '#FF9900',
   'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
+  'golden-jackets': '#D4AF37',
   news: '#FF9900',
   events: '#7B61FF',
 };

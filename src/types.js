@@ -1,5 +1,5 @@
 /**
- * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'community-days' | 'builder-lofts' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'kiro-events'} CategoryKey
+ * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'community-days' | 'builder-lofts' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'golden-jackets' | 'kiro-events'} CategoryKey
  */
 
 /**
@@ -21,6 +21,8 @@
  * @property {boolean} [isNew]
  * @property {string} [eventDate]
  * @property {string} [description]
+ * @property {string} [organization]
+ * @property {string} [role]
  * @property {string} [ctaLabel]
  * @property {string} [country]
  * @property {string} [city]
@@ -31,6 +33,9 @@
  * @property {string[]} [offerings]
  * @property {string} [announcementDate]
  * @property {string} [sourceUrl]
+ * @property {string} [sourceLabel]
+ * @property {string} [locationSourceUrl]
+ * @property {'recipient' | 'alumni'} [recognitionStatus]
  * @property {string} [verifiedAt]
  * @property {number} [builderCount]
  * @property {boolean} [clusterOnly]

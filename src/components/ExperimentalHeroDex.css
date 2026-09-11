@@ -51,6 +51,22 @@
   --dex-accent-deep: #5b21b6;
 }
 
+.hero-dex[data-category="aws-ambassadors"] {
+  --dex-cyan: #2d72d2;
+  --dex-cyan-bright: #83b5ff;
+  --dex-accent-rgb: 45, 114, 210;
+  --dex-accent-soft: #e3efff;
+  --dex-accent-deep: #1d4f98;
+}
+
+.hero-dex[data-category="golden-jackets"] {
+  --dex-cyan: #d4af37;
+  --dex-cyan-bright: #ffe28a;
+  --dex-accent-rgb: 212, 175, 55;
+  --dex-accent-soft: #fff6d6;
+  --dex-accent-deep: #876914;
+}
+
 .hero-dex--light {
   --dex-panel: rgba(255, 255, 255, 0.86);
   --dex-line: rgba(173, 83, 0, 0.25);

@@ -23,12 +23,14 @@ const COMMUNITY_CATEGORIES = [
   { key: 'user-groups', label: 'User Groups', accent: '#00A1C9' },
   { key: 'cloud-clubs', label: 'Student Builder Groups', accent: '#BF0816' },
   { key: 'kiro-ambassadors', label: 'Kiro Ambassadors', accent: '#8B5CF6' },
+  { key: 'golden-jackets', label: 'Golden Jackets', accent: '#D4AF37' },
+  { key: 'aws-ambassadors', label: 'Ambassadors', accent: '#2D72D2' },
 ];
 
 const EVENT_CATEGORIES = [
   { key: 'kiro-events', label: 'Kiro Events', accent: '#7B61FF' },
   { key: 'community-days', label: 'Community Days', accent: '#FF9900' },
-  { key: 'builder-lofts', label: 'AWS Builder Lofts', accent: '#FFB454' },
+  { key: 'builder-lofts', label: 'Builder Lofts', accent: '#FFB454' },
   { key: 'news', label: 'News', accent: '#FF9900' },
 ];
 

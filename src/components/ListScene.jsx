@@ -10,9 +10,11 @@ const CATEGORY_LABELS = {
   'user-groups': 'AWS User Groups',
   'cloud-clubs': 'Student Builder Groups',
   'kiro-ambassadors': 'Kiro Ambassadors',
+  'aws-ambassadors': 'Ambassadors',
+  'golden-jackets': 'Golden Jackets',
   'kiro-events': 'Kiro Events',
   'community-days': 'AWS Community Days',
-  'builder-lofts': 'AWS Builder Lofts',
+  'builder-lofts': 'Builder Lofts',
   news: 'Builder Center News',
 };
 
@@ -37,6 +39,8 @@ function getSearchText(item) {
     item.builderType,
     item.specialization,
     item.description,
+    item.organization,
+    item.role,
     ...(item.tags ?? []),
     ...(item.ledBy ?? []).map((leader) => leader?.name),
   ]
@@ -62,7 +66,7 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
     ? item.authorName || 'AWS Builder Center'
     : item.heroType || item.builderType || item.tag || CATEGORY_LABELS[item.category] || CATEGORY_LABELS[category];
   const leaders = (item.ledBy ?? []).map((leader) => leader?.name).filter(Boolean);
-  const secondary = leaders.length > 0 ? `Led by ${leaders.join(', ')}` : item.location;
+  const secondary = leaders.length > 0 ? `Led by ${leaders.join(', ')}` : item.location || (['aws-ambassadors', 'golden-jackets'].includes(category) ? 'Country not confirmed' : '');
   const cardBg = darkMode ? 'rgba(12, 21, 31, 0.76)' : 'rgba(255, 255, 255, 0.9)';
   const border = darkMode ? 'rgba(62, 95, 123, 0.38)' : 'rgba(160, 187, 212, 0.62)';
   const heading = darkMode ? '#FFFFFF' : '#0F1923';
@@ -119,7 +123,7 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
           </h2>
         )}
 
-        {isNews && item.description ? (
+        {(isNews || ['aws-ambassadors', 'golden-jackets'].includes(category)) && item.description ? (
           <p className="mt-2 line-clamp-2 text-sm leading-5" style={{ color: body }}>
             {item.description}
           </p>
@@ -142,7 +146,7 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
           className="flex min-h-9 flex-shrink-0 items-center rounded-lg px-3 text-xs font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           style={{ color: '#FF9900', border: '1px solid rgba(255, 153, 0, 0.55)', outlineColor: '#FF9900' }}
         >
-          {isNews ? 'Read' : item.category === 'kiro-events' ? item.ctaLabel || 'Join' : 'Open'}
+          {isNews ? 'Read' : item.ctaLabel || (item.category === 'kiro-events' ? 'Join' : 'Open')}
         </a>
       ) : null}
     </article>
@@ -180,6 +184,7 @@ export default function ListScene({ category, members = [], newsItems = [], load
             <h1 className="mt-2 text-2xl font-black tracking-[-0.025em] md:text-3xl" style={{ color: heading }}>
               {title}
             </h1>
+            {category === 'golden-jackets' && <p className="mt-2 max-w-xl text-sm leading-6" style={{ color: body }}>A growing directory from AWS and community sources, including past recipients. Current certification status may differ.</p>}
             <p className="mt-2 text-sm" style={{ color: body }}>
               {loading ? 'Loading entries…' : `${filteredItems.length.toLocaleString()} ${filteredItems.length === 1 ? 'entry' : 'entries'}`}
             </p>

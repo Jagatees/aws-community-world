@@ -27,7 +27,7 @@ export default function CommunitySubmission({ darkMode }) {
         <label>What would you like to add?<select name="kind" value={kind} onChange={e => setKind(e.target.value)}><option value="profile">Profile or community group</option><option value="event">Event</option></select></label>
         <label>{kind === 'event' ? 'Event name' : 'Person or group name'}<input name="name" required maxLength={100} autoComplete="off" /></label>
         <div className="submission-row">
-          <label>Category<select name="category" key={kind}>{(kind === 'event' ? ['Kiro Event', 'Community Day', 'Builder Loft event', 'Other event'] : ['AWS Hero', 'Community Builder', 'User Group', 'Student Builder Group', 'Kiro Ambassador', 'AWS Ambassador', 'Other']).map(label => <option key={label}>{label}</option>)}</select></label>
+          <label>Category<select name="category" key={kind}>{(kind === 'event' ? ['Kiro Event', 'Community Day', 'Builder Loft event', 'Other event'] : ['AWS Hero', 'Community Builder', 'User Group', 'Student Builder Group', 'Kiro Ambassador', 'AWS Ambassador', 'Golden Jacket recipient', 'Other']).map(label => <option key={label}>{label}</option>)}</select></label>
           <label>City / country<input name="location" required maxLength={100} placeholder="Or Online" /></label>
         </div>
         <label>Official profile or event link<input name="source" type="url" required maxLength={350} placeholder="https://…" /></label>

@@ -15,6 +15,7 @@ const CATEGORY_COLORS = {
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
   'aws-ambassadors': '#2D72D2',
+  'golden-jackets': '#D4AF37',
   news: '#FF9900',
   events: '#7B61FF',
   'community-days': '#FF9900',

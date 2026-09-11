@@ -15,6 +15,7 @@ const CATEGORY_COLORS = {
   'community-days': '#FF9900',
   'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
+  'golden-jackets': '#D4AF37',
   'news': '#FF9900',
 };
 
@@ -52,6 +53,7 @@ const CATEGORY_LABELS = {
   'community-days': { icon: '▣', singular: 'Community Day', plural: 'Community Days' },
   'builder-lofts': { icon: '▣', singular: 'Builder Loft', plural: 'Builder Lofts' },
   'aws-ambassadors': { icon: '▲', singular: 'AWS Ambassador', plural: 'AWS Ambassadors' },
+  'golden-jackets': { icon: '★', singular: 'Golden Jacket recipient', plural: 'Golden Jacket recipients' },
   'news': { icon: '↗', singular: 'Story', plural: 'Stories' },
 };
 

@@ -32,6 +32,7 @@ const CATEGORY_COLORS = {
   'community-days': '#FF9900',
   'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
+  'golden-jackets': '#D4AF37',
   news: '#FF9900',
 };
 
@@ -43,8 +44,9 @@ const CATEGORY_LABELS = {
   'kiro-ambassadors': 'Kiro',
   'kiro-events': 'Kiro Events',
   'community-days': 'Community Days',
-  'builder-lofts': 'AWS Builder Lofts',
-  'aws-ambassadors': 'AWS Ambassador',
+  'builder-lofts': 'Builder Lofts',
+  'aws-ambassadors': 'Ambassadors',
+  'golden-jackets': 'Golden Jackets',
   news: 'News',
 };
 
@@ -65,7 +67,7 @@ const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights']);
 const MOBILE_GLOBE_DESIGNS = ['sleek', 'flat', 'icons', 'list'];
 const DESKTOP_GLOBE_DESIGNS = ['orbit', 'sleek', 'flat', 'icons', 'list'];
 const COMPACT_VIEWPORT_QUERY = '(max-width: 767px), (max-height: 480px) and (max-width: 900px)';
-const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors']);
+const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors', 'aws-ambassadors', 'golden-jackets']);
 const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'builder-lofts', 'news']);
 const NEW_ARRIVAL_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs']);
 
@@ -409,7 +411,7 @@ export default function App() {
   }, [selectedCountries, members]);
   const resolvedFlyToTarget = nearMeTarget ?? flyToTarget;
 
-  const displayedMembers = isListView ? directoryMembers : filteredMembers;
+  const displayedMembers = isListView || isIconView ? directoryMembers : filteredMembers;
   const newMemberCount = isCommunityBuilderView && !loadFullCommunityBuilders
     ? (communityBuilderMeta.newTotal ?? 0)
     : members.filter((member) => member.isNew).length;
@@ -793,7 +795,7 @@ export default function App() {
             section={activeSection}
             activeCategory={activeCategory}
             activeLabel={CATEGORY_LABELS[activeCategory] ?? activeCategory}
-            resultCount={isNewsView ? newsItems.length : hudCount}
+            resultCount={isNewsView ? newsItems.length : isListView || isIconView ? directoryMembers.length : hudCount}
             onCategoryChange={handleCategoryChange}
             regions={isKiroView || isAwsAmbassadorView ? [] : regions}
             regionCounts={isKiroView || isAwsAmbassadorView ? {} : regionCounts}
@@ -1244,6 +1246,14 @@ export default function App() {
                 </div>
               )}
 
+              {['aws-ambassadors', 'golden-jackets'].includes(activeCategory) && !isListView && !isIconView && !loading && (
+                <div className="absolute left-4 top-4 z-10 max-w-[min(280px,calc(100%-2rem))] rounded-xl border p-3 text-xs leading-5" style={{ background: viewControlBg, borderColor: viewControlBorder, color: styleControlText }}>
+                  <strong>{CATEGORY_LABELS[activeCategory]} · {filteredMembers.length} mapped / {directoryMembers.length} profiles</strong>
+                  <p>{activeCategory === 'golden-jackets' ? 'A growing directory of documented recipients. Pins show approximate locations; all profiles are in the directory.' : 'Pins show approximate countries. Profiles without confirmed locations are in the directory.'}</p>
+                  <button type="button" className="mt-1 font-semibold underline underline-offset-2" onClick={() => setGlobeDesign('list')}>Open directory</button>
+                </div>
+              )}
+
               {!isListView && !isIconView && globeReady && loading && (
                 <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
                   <div
@@ -1262,7 +1272,7 @@ export default function App() {
                 </div>
               )}
 
-              {!isExperimentalView && <div
+              {!isExperimentalView && !['aws-ambassadors', 'golden-jackets'].includes(activeCategory) && <div
                 className={`${isListView || isIconView ? 'hidden' : ''} absolute top-4 left-4 z-20 pointer-events-none`}
                 style={{
                   background: darkMode ? 'rgba(8, 16, 24, 0.78)' : 'rgba(255, 255, 255, 0.86)',

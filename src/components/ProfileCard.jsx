@@ -8,6 +8,7 @@ const CATEGORY_LABELS = {
   'cloud-clubs': 'Student Builder Group',
   'kiro-ambassadors': 'Kiro Ambassador',
   'aws-ambassadors': 'AWS Ambassador',
+  'golden-jackets': 'Golden Jacket recipient',
   'kiro-events': 'Kiro Event',
 };
 
@@ -429,7 +430,7 @@ function SingleMemberView({ member, darkMode }) {
   const isGroup = member.category === 'user-groups' || member.category === 'cloud-clubs';
   const isEvent = member.category === 'kiro-events';
   const isHero = member.category === 'heroes';
-  const label = isEvent ? (member.ctaLabel || 'Join Event') : isGroup ? 'Join' : isHero ? 'View Profile' : 'Follow';
+  const label = member.ctaLabel || (isEvent ? 'Join Event' : isGroup ? 'Join' : isHero ? 'View Profile' : 'Follow');
   const url = member.profileUrl || member.joinUrl;
 
   if (member.category === 'cloud-clubs') {
@@ -464,6 +465,9 @@ function SingleMemberView({ member, darkMode }) {
       )}
       <CommunityBuilderMeta member={member} darkMode={darkMode} />
       <LedByMeta member={member} darkMode={darkMode} />
+      {['aws-ambassadors', 'golden-jackets'].includes(member.category) && member.description && (
+        <p className="text-center text-sm leading-6" style={{ color: mutedColor }}>{member.description}</p>
+      )}
       {isEvent && member.eventDate && (
         <p className="text-sm font-semibold" style={{ color: '#FF9900' }}>
           {member.eventDate}
@@ -475,11 +479,13 @@ function SingleMemberView({ member, darkMode }) {
         </p>
       )}
       <SocialLinks socialLinks={member.socialLinks} darkMode={darkMode} />
-      {member.category === 'kiro-ambassadors' && member.sourceUrl && (
+      {['kiro-ambassadors', 'aws-ambassadors', 'golden-jackets'].includes(member.category) && member.sourceUrl && (
         <div className="text-center text-xs leading-5" style={{ color: mutedColor }}>
-          <p>Approximate {member.coordinatePrecision === 'country' ? 'country' : 'city'} location.</p>
-          <a href={member.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Ambassador source</a>
-          {member.verifiedAt && <span> · Verified {member.verifiedAt}</span>}
+          <p>{member.coordinatePrecision ? `Approximate ${member.coordinatePrecision} location.` : 'Country not confirmed. Not placed on the globe.'}</p>
+          <a href={member.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{member.sourceLabel || 'Ambassador source'}</a>
+          {member.verifiedAt && <span> · {member.category === 'golden-jackets' ? 'Source checked' : 'Verified'} {member.verifiedAt}</span>}
+          {member.category === 'golden-jackets' && <p>{member.recognitionStatus === 'alumni' ? 'Listed as alumni by the source community.' : 'Publicly documented recognition.'} Current certification status may differ.</p>}
+          {member.locationSourceUrl && member.locationSourceUrl !== member.sourceUrl && <a href={member.locationSourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Location source</a>}
         </div>
       )}
       {isEvent && <AddToCalendar event={member} />}
@@ -516,9 +522,10 @@ function ClusterListView({ members, darkMode }) {
   const [page, setPage] = useState(0);
   const listRef = useRef(null);
   const pageSize = 30;
+  const canSearch = members.length >= 10;
   const matchingMembers = useMemo(() => {
     const search = query.trim().toLocaleLowerCase();
-    return search ? members.filter((member) => [member.name, member.location, member.tag, ...getLeaderNames(member)]
+    return search ? members.filter((member) => [member.name, member.location, member.tag, member.heroType, member.builderType, member.specialization, member.organization, member.role, ...getLeaderNames(member)]
       .filter(Boolean).join(' ').toLocaleLowerCase().includes(search)) : members;
   }, [members, query]);
   const currentPage = Math.min(page, Math.max(0, Math.ceil(matchingMembers.length / pageSize) - 1));
@@ -537,7 +544,7 @@ function ClusterListView({ members, darkMode }) {
       <h2 className="mb-2 text-center text-base font-bold" style={{ color: nameColor }}>
         {members.length.toLocaleString()} {members.every((member) => member.category === 'user-groups' || member.category === 'cloud-clubs') ? 'groups' : 'members'} in this selection
       </h2>
-      {members.length > pageSize && (
+      {canSearch && (
         <label className="mb-2">
           <span className="sr-only">Search this selection</span>
           <input type="search" value={query} placeholder="Search names or locations"
@@ -589,7 +596,7 @@ function ClusterListView({ members, darkMode }) {
                 className="mt-1 flex-shrink-0 rounded border px-3 py-1 text-xs font-semibold"
                 style={{ borderColor: '#FF9900', color: '#FF9900' }}
               >
-                {m.category === 'kiro-events' ? (m.ctaLabel || 'Join Event') : m.category === 'user-groups' || m.category === 'cloud-clubs' ? 'Join' : 'Follow'}
+                {m.ctaLabel || (m.category === 'kiro-events' ? 'Join Event' : m.category === 'user-groups' || m.category === 'cloud-clubs' ? 'Join' : 'Follow')}
               </a>
             )}
           </li>

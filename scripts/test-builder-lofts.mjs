@@ -9,7 +9,7 @@ try {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
   await page.goto(`${baseUrl}/?tab=kiro-events&view=sleek`);
-  await page.getByRole('tab', { name: 'AWS Builder Lofts', exact: true }).click();
+  await page.getByRole('tab', { name: 'Builder Lofts', exact: true }).click();
   const cities = page.getByRole('navigation', { name: 'Choose a Builder Loft' });
   await cities.waitFor();
   assert.equal(await cities.getByRole('button').count(), 4);
@@ -37,7 +37,7 @@ try {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${baseUrl}/?tab=kiro-events&view=sleek`);
   await page.getByRole('button', { name: 'Change category. Current category: Kiro Events' }).click();
-  await page.getByRole('dialog').getByRole('button', { name: 'AWS Builder Lofts', exact: true }).click();
+  await page.getByRole('dialog').getByRole('button', { name: 'Builder Lofts', exact: true }).click();
   await cities.waitFor();
   assert.equal(await cities.getByRole('button').count(), 4);
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
