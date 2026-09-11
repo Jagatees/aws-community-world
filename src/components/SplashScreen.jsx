@@ -3,20 +3,27 @@ import MobileHomeGlobe from './MobileHomeGlobe';
 import { HOME_COMMUNITY_MARKERS } from '../data/home-community-markers';
 import './SplashScreen.css';
 import kiroEvents from '../data/kiro-events.json';
-import kiroAmbassadors from '../data/kiro-ambassadors.json';
+import communityDays from '../data/community-days.json';
+import communityCounts from 'virtual:home-community-counts';
+import { isUpcomingEvent } from '../utils/upcomingEvents';
 
 const COMMUNITY_STATS = [
-  { label: 'Heroes', count: 252, color: '#FF9900' },
-  { label: 'Community Builders', count: 3036, color: '#1A9C3E' },
-  { label: 'User Groups', count: 599, color: '#00A1C9' },
-  { label: 'Student Builder Groups', count: 1022, color: '#BF0816' },
-  { label: 'Kiro Ambassadors', count: kiroAmbassadors.length, color: '#8B5CF6' },
+  { key: 'heroes', label: 'Heroes', count: communityCounts.heroes, color: '#FF9900' },
+  { key: 'builders', label: 'Community Builders', count: communityCounts['community-builders'], color: '#1A9C3E' },
+  { key: 'groups', label: 'User Groups', count: communityCounts['user-groups'], color: '#00A1C9' },
+  { key: 'students', label: 'Student Builder Groups', count: communityCounts['cloud-clubs'], color: '#BF0816' },
+  { key: 'kiro', label: 'Kiro Ambassadors', count: communityCounts['kiro-ambassadors'], color: '#8B5CF6' },
+  { key: 'golden-jackets', label: 'Golden Jackets', count: communityCounts['golden-jackets'], color: '#D4AF37' },
+  { key: 'aws-ambassadors', label: 'AWS Ambassadors', count: communityCounts['aws-ambassadors'], color: '#2D72D2' },
 ];
 
-const EVENT_STATS = [
-  { label: 'Kiro Events', count: kiroEvents.length, color: '#8B5CF6' },
-  { label: 'Community Days', count: 38, color: '#FF9900' },
-];
+function getEventStats() {
+  const now = new Date();
+  return [
+    { key: 'kiro', label: 'Kiro Events', count: kiroEvents.filter(event => isUpcomingEvent(event, now)).length, color: '#8B5CF6' },
+    { key: 'community-days', label: 'Community Days', count: communityDays.filter(event => isUpcomingEvent(event, now)).length, color: '#FF9900' },
+  ];
+}
 
 const HOME_GLOBE_ROTATION_SPEED = 0.018;
 const EVENT_GLOBE_ROTATION_SPEED = 0.035;
@@ -247,6 +254,7 @@ function OrbitGlobe({ isEvents }) {
       if (cancelled || !containerRef.current) return;
 
       const validMarkers = markerData.filter((marker) => (
+        (!isEvents || isUpcomingEvent(marker)) &&
         Number.isFinite(Number(marker.lat)) &&
         Number.isFinite(Number(marker.lng)) &&
         !(Number(marker.lat) === 0 && Number(marker.lng) === 0)
@@ -362,22 +370,9 @@ function OrbitGlobe({ isEvents }) {
   );
 }
 
-const MOBILE_COMMUNITY_STATS = [
-  { key: 'heroes', count: 252, label: 'Heroes' },
-  { key: 'builders', count: 3036, label: 'Builders', fullLabel: 'Community Builders' },
-  { key: 'groups', count: 599, label: 'User groups', fullLabel: 'User Groups' },
-  { key: 'students', count: 1022, label: 'Students', fullLabel: 'Student Builder Groups' },
-  { key: 'kiro', count: kiroAmbassadors.length, label: 'Kiro', fullLabel: 'Kiro Ambassadors' },
-];
-
-const MOBILE_EVENT_STATS = [
-  { key: 'kiro', count: kiroEvents.length, label: 'Kiro events', fullLabel: 'Kiro Events' },
-  { key: 'community-days', count: 38, label: 'Community days', fullLabel: 'Community Days' },
-];
-
 function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) {
   const isEvents = activeSection === 'events';
-  const stats = isEvents ? MOBILE_EVENT_STATS : MOBILE_COMMUNITY_STATS;
+  const stats = isEvents ? getEventStats() : COMMUNITY_STATS;
   const total = stats.reduce((sum, stat) => sum + stat.count, 0);
 
   return (
@@ -422,7 +417,7 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
         >
           <div className="mobile-home__stats-total">
             <strong><AnimatedNumber key={`${activeSection}-total`} target={total} duration={1600} /></strong>
-            <p>{isEvents ? 'Events worldwide' : 'Community members worldwide'}</p>
+            <p>{isEvents ? 'Upcoming events worldwide' : 'Community directory entries'}</p>
           </div>
           <dl className="mobile-home__stats-breakdown">
             {stats.map((stat, index) => (
@@ -460,7 +455,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
     !window.matchMedia('(max-width: 767px), (pointer: coarse), (prefers-reduced-motion: reduce)').matches
   ));
   const isEvents = activeSection === 'events';
-  const stats = isEvents ? EVENT_STATS : COMMUNITY_STATS;
+  const stats = isEvents ? getEventStats() : COMMUNITY_STATS;
   const total = stats.reduce((sum, stat) => sum + stat.count, 0);
 
   useEffect(() => {
@@ -519,7 +514,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
 
       {/* Left panel */}
       <div
-        className="relative z-10 flex flex-col justify-center px-10 lg:px-16 xl:px-20"
+        className="splash-summary relative z-10 flex flex-col px-10 lg:px-16 xl:px-20"
         style={{
           width: '48%',
           minWidth: '300px',
@@ -596,7 +591,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
               marginTop: '0.4rem',
             }}
           >
-            {isEvents ? 'Upcoming events worldwide' : 'Community members worldwide'}
+            {isEvents ? 'Upcoming events worldwide' : 'Community directory entries'}
           </div>
         </div>
 
@@ -663,8 +658,9 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
           </svg>
         </button>
 
-        <div style={{ marginTop: '2rem', color: '#3D5168', fontSize: '0.72rem', letterSpacing: '0.04em' }}>
-          Data from AWS Builder Center
+        <div className="splash-source">
+          {isEvents ? 'Data from Kiro and AWS Community Days' : 'Data from AWS and community directories'}
+          {!isEvents && <span>People may appear in more than one program.</span>}
         </div>
       </div>
 

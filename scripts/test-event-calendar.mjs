@@ -2,6 +2,24 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { createEventCalendar } from '../src/utils/eventCalendar.js';
 import { buildSubmissionUrl } from '../src/utils/communitySubmission.js';
+import { isUpcomingEvent } from '../src/utils/upcomingEvents.js';
+
+test('homepage counts keep ongoing all-day events and exclude past or undated events', () => {
+  const now = new Date(2026, 8, 11, 17, 30);
+  assert.equal(isUpcomingEvent({ date: '2026-09-10' }, now), false);
+  assert.equal(isUpcomingEvent({ date: '2026-09-11' }, now), true);
+  assert.equal(isUpcomingEvent({ date: '2026-09-10', endDate: '2026-09-12' }, now), true);
+  assert.equal(isUpcomingEvent({ startsAt: '2026-09-11T00:00:00Z', calendarAllDay: true }, now), true);
+  assert.equal(isUpcomingEvent({}, now), false);
+  assert.equal(isUpcomingEvent({ date: 'unknown' }, now), false);
+});
+
+test('homepage timed events expire at the published end instant', () => {
+  const event = { startsAt: '2026-09-11T09:00:00+08:00', endsAt: '2026-09-11T10:00:00+08:00' };
+  assert.equal(isUpcomingEvent(event, new Date('2026-09-11T01:30:00Z')), true);
+  assert.equal(isUpcomingEvent(event, new Date('2026-09-11T02:00:01Z')), false);
+  assert.equal(isUpcomingEvent({ startsAt: 'invalid' }), false);
+});
 
 test('all-day multi-day event uses exclusive end across a year boundary', () => {
   const ics = createEventCalendar({ name: 'Community Day', category: 'community-days', date: '2026-12-31', endDate: '2027-01-02' });

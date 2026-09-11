@@ -1,3 +1,31 @@
+.splash-summary {
+  overflow-y: auto;
+  padding-block: 2rem;
+}
+
+.splash-summary > * {
+  flex-shrink: 0;
+}
+
+.splash-summary > :first-child {
+  margin-top: auto;
+}
+
+.splash-summary > :last-child {
+  margin-bottom: auto;
+}
+
+.splash-source {
+  margin-top: 1.5rem;
+  color: #8295a6;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.splash-source span {
+  display: block;
+}
+
 .mobile-home {
   position: absolute;
   inset: 0;
@@ -385,8 +413,8 @@
 .mobile-home__stats-breakdown {
   display: grid;
   min-width: 0;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem 0;
   padding-top: 0.68rem;
 }
 
@@ -405,6 +433,10 @@
 
 .mobile-home__stat + .mobile-home__stat {
   border-left: 1px solid rgba(104, 139, 165, 0.14);
+}
+
+.mobile-home__stat:nth-child(4n + 1) {
+  border-left: 0;
 }
 
 .mobile-home__stat::before {
@@ -454,6 +486,14 @@
 
 .mobile-home__stat--kiro {
   color: #9b72ff;
+}
+
+.mobile-home__stat--golden-jackets {
+  color: #d4af37;
+}
+
+.mobile-home__stat--aws-ambassadors {
+  color: #5898ee;
 }
 
 @media (max-width: 350px) {
