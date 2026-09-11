@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
-// Send only directory counts to the homepage, keeping full profiles lazy-loaded.
+// Send only counts to the homepage, keeping full profiles and news lazy-loaded.
 function homeCommunityCounts() {
   const moduleId = 'virtual:home-community-counts'
   const resolvedId = `\0${moduleId}`
@@ -22,6 +22,10 @@ function homeCommunityCounts() {
       }
       const counts = Object.fromEntries(categories.map(category => [category, readData(category).length]))
       counts['community-builders'] = readData('community-builders-meta').total
+      counts['builder-lofts'] = readData('builder-lofts').length
+      const news = readData('news')
+      counts.news = new Set([...news.latest.slice(0, 10), ...news.trending.slice(0, 10)]
+        .map(article => article.id || article.url)).size
       return `export default ${JSON.stringify(counts)}`
     },
   }

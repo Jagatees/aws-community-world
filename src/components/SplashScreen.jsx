@@ -22,6 +22,8 @@ function getEventStats() {
   return [
     { key: 'kiro', label: 'Kiro Events', count: kiroEvents.filter(event => isUpcomingEvent(event, now)).length, color: '#8B5CF6' },
     { key: 'community-days', label: 'Community Days', count: communityDays.filter(event => isUpcomingEvent(event, now)).length, color: '#FF9900' },
+    { key: 'builder-lofts', label: 'Builder Lofts', count: communityCounts['builder-lofts'], color: '#FFB454', detail: 'Open & announced locations', excludeFromTotal: true },
+    { key: 'news', label: 'News', count: communityCounts.news, color: '#FF9900', detail: 'Latest & trending articles', excludeFromTotal: true },
   ];
 }
 
@@ -373,7 +375,7 @@ function OrbitGlobe({ isEvents }) {
 function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) {
   const isEvents = activeSection === 'events';
   const stats = isEvents ? getEventStats() : COMMUNITY_STATS;
-  const total = stats.reduce((sum, stat) => sum + stat.count, 0);
+  const total = stats.reduce((sum, stat) => sum + (stat.excludeFromTotal ? 0 : stat.count), 0);
 
   return (
     <section
@@ -402,7 +404,7 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
             <span>Globe</span>
           </h1>
           <p>{isEvents
-            ? 'Meetups, community days and builder events — all around the world.'
+            ? 'Events, Builder Lofts and community news — all around the world.'
             : 'People, groups and events — all around the world.'}</p>
         </div>
 
@@ -413,7 +415,7 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
 
         <section
           className={`mobile-home__stats${isEvents ? ' mobile-home__stats--events' : ''}`}
-          aria-label={isEvents ? 'Event totals' : 'Community totals'}
+          aria-label={isEvents ? 'Events, spaces and news' : 'Community totals'}
         >
           <div className="mobile-home__stats-total">
             <strong><AnimatedNumber key={`${activeSection}-total`} target={total} duration={1600} /></strong>
@@ -424,7 +426,7 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
               <div
                 key={stat.key}
                 className={`mobile-home__stat mobile-home__stat--${stat.key}`}
-                aria-label={`${stat.count.toLocaleString()} ${stat.fullLabel ?? stat.label}`}
+                aria-label={`${stat.count.toLocaleString()} ${stat.label}${stat.detail ? `: ${stat.detail}` : ''}`}
               >
                 <dt>
                   <strong>
@@ -436,7 +438,7 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
                     />
                   </strong>
                 </dt>
-                <dd>{stat.label}</dd>
+                <dd>{stat.label}{stat.detail && <small>{stat.detail}</small>}</dd>
               </div>
             ))}
           </dl>
@@ -456,7 +458,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
   ));
   const isEvents = activeSection === 'events';
   const stats = isEvents ? getEventStats() : COMMUNITY_STATS;
-  const total = stats.reduce((sum, stat) => sum + stat.count, 0);
+  const total = stats.reduce((sum, stat) => sum + (stat.excludeFromTotal ? 0 : stat.count), 0);
 
   useEffect(() => {
     if (exiting || !allowInteractiveGlobe) return undefined;
@@ -597,7 +599,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', marginBottom: '2.5rem' }}>
           {stats.map((stat, i) => (
-            <div key={stat.label} style={{ display: 'flex', alignItems: 'center', gap: '0.7rem' }}>
+            <div key={stat.label} className={stat.key === 'builder-lofts' ? 'splash-stat--extra' : undefined} style={{ display: 'flex', alignItems: 'center', gap: '0.7rem' }}>
               <div
                 style={{
                   width: '8px',
@@ -619,7 +621,10 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
               >
                 {stat.countLabel ?? <AnimatedNumber target={stat.count} duration={1400} delay={200 + i * 80} />}
               </span>
-              <span style={{ color: '#8B9BAA', fontSize: '0.88rem' }}>{stat.label}</span>
+              <span style={{ color: '#8B9BAA', fontSize: '0.88rem' }}>
+                {stat.label}
+                {stat.detail && <small className="splash-stat-detail">{stat.detail}</small>}
+              </span>
             </div>
           ))}
         </div>
@@ -659,7 +664,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
         </button>
 
         <div className="splash-source">
-          {isEvents ? 'Data from Kiro and AWS Community Days' : 'Data from AWS and community directories'}
+          {isEvents ? 'Data from Kiro, AWS Community Days and AWS Builder Center' : 'Data from AWS and community directories'}
           {!isEvents && <span>People may appear in more than one program.</span>}
         </div>
       </div>

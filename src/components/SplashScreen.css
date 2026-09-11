@@ -26,6 +26,18 @@
   display: block;
 }
 
+.splash-stat--extra {
+  margin-top: 0.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(116, 157, 187, 0.2);
+}
+
+.splash-stat-detail {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.7rem;
+}
+
 .mobile-home {
   position: absolute;
   inset: 0;
@@ -422,6 +434,23 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.mobile-home__stats--events .mobile-home__stat:nth-child(odd) {
+  border-left: 0;
+}
+
+.mobile-home__stats--events .mobile-home__stat:nth-child(n + 3) {
+  padding-top: 0.7rem;
+  border-top: 1px solid rgba(104, 139, 165, 0.14);
+}
+
+.mobile-home__stat dd small {
+  display: block;
+  max-width: 8rem;
+  margin-top: 0.25rem;
+  font-size: 0.6rem;
+  line-height: 1.3;
+}
+
 .mobile-home__stat {
   position: relative;
   display: grid;
@@ -494,6 +523,14 @@
 
 .mobile-home__stat--aws-ambassadors {
   color: #5898ee;
+}
+
+.mobile-home__stat--builder-lofts {
+  color: #ffb454;
+}
+
+.mobile-home__stat--news {
+  color: #ff9900;
 }
 
 @media (max-width: 350px) {
