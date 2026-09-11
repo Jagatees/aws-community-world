@@ -4,6 +4,7 @@ import Header from './components/Header';
 import TabNav from './components/TabNav';
 import MobileNavigation from './components/MobileNavigation';
 import EventStatusFilter from './components/EventStatusFilter';
+import GlobeViewControls from './components/GlobeViewControls';
 import { matchesEventStatus } from './utils/upcomingEvents';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
 import { useCategory } from './hooks/useCategory';
@@ -786,6 +787,16 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
+  const globeControls = <GlobeViewControls
+    globeDesign={globeDesign}
+    availableGlobeDesigns={availableGlobeDesigns}
+    onDesignChange={setGlobeDesign}
+    designButtonLabel={designButtonLabel}
+    onZoom={triggerZoom}
+    onNearMe={handleNearMe}
+    nearMeLoading={nearMeLoading}
+  />;
+
   return (
     <div style={{ height: '100dvh', overflow: 'hidden', position: 'relative' }}>
     <div
@@ -861,7 +872,7 @@ export default function App() {
           />
         )}
 
-        {!isExperimentalView && !isInsightsView && !isCommunityDaysView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
+        {!isExperimentalView && !isInsightsView && !isCommunityDaysView && !isBuilderLoftsView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="desktop-tag-filter-bar flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -910,6 +921,9 @@ export default function App() {
           ) : isBuilderLoftsView ? (
             <Suspense fallback={renderGlobeLoading('Loading AWS Builder Lofts...')}>
               <BuilderLoftsScene
+                controls={globeControls}
+                selectedTag={selectedTag}
+                onTagChange={setSelectedTag}
                 members={filteredMembers}
                 loading={loading}
                 darkMode={darkMode}
@@ -1064,115 +1078,7 @@ export default function App() {
                   </div>
                 )}
 
-                {/* Globe controls */}
-                <div
-                  className="mobile-globe-controls absolute bottom-5 z-20"
-                  style={{ left: newsPanelOpen ? '50%' : '50%', transform: 'translateX(-50%)' }}
-                >
-                  <div className="flex items-stretch gap-3">
-                    <div
-                      className="grid items-center rounded-full p-1"
-                      style={{
-                        position: 'relative',
-                        '--design-count': availableGlobeDesigns.length,
-                        gridTemplateColumns: `repeat(${availableGlobeDesigns.length}, minmax(64px, 1fr))`,
-                        background: viewControlBg,
-                        border: `1px solid ${viewControlBorder}`,
-                        boxShadow: viewControlShadow,
-                        backdropFilter: 'blur(14px)',
-                        WebkitBackdropFilter: 'blur(14px)',
-                      }}
-                      aria-label="Globe design switcher"
-                      role="group"
-                    >
-                      <span
-                        aria-hidden="true"
-                        style={{
-                          position: 'absolute',
-                          left: '4px',
-                          top: '4px',
-                          bottom: '4px',
-                          width: `calc((100% - 8px) / ${availableGlobeDesigns.length})`,
-                          borderRadius: '999px',
-                          background: '#0B111B',
-                          boxShadow: 'inset 0 0 0 1px #FF9900, 0 5px 16px rgba(3, 12, 21, 0.38)',
-                          transform: `translate3d(${Math.max(0, availableGlobeDesigns.indexOf(globeDesign)) * 100}%, 0, 0)`,
-                          transition: 'transform 380ms cubic-bezier(0.22, 1, 0.36, 1)',
-                          willChange: 'transform',
-                          pointerEvents: 'none',
-                        }}
-                      />
-                      {availableGlobeDesigns.map((d) => (
-                        <button
-                          key={d}
-                          type="button"
-                          onClick={() => setGlobeDesign(d)}
-                          className="rounded-full px-3 py-1 text-xs font-semibold capitalize active:scale-[0.97]"
-                          style={designButtonStyles(d)}
-                          aria-pressed={globeDesign === d}
-                        >
-                          {designButtonLabel(d)}
-                        </button>
-                      ))}
-                    </div>
-
-                    <div
-                      className={`${isListView || isGeoLibreView ? 'hidden' : 'flex'} items-center rounded-full p-1`}
-                      style={{
-                        background: viewControlBg,
-                        border: `1px solid ${viewControlBorder}`,
-                        boxShadow: viewControlShadow,
-                        backdropFilter: 'blur(14px)',
-                        WebkitBackdropFilter: 'blur(14px)',
-                      }}
-                      aria-label="Zoom controls"
-                    >
-                      {[['out', '-'], ['in', '+']].map(([dir, label]) => (
-                        <button
-                          key={dir}
-                          type="button"
-                          onClick={() => triggerZoom(dir)}
-                          className="map-zoom-button rounded-full px-3 py-1 text-sm font-semibold"
-                          style={{
-                            color: viewControlText,
-                            minWidth: '44px',
-                            minHeight: '44px',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            cursor: 'pointer',
-                            touchAction: 'manipulation',
-                          }}
-                          aria-label={`Zoom ${dir}`}
-                        >
-                          {label}
-                        </button>
-                      ))}
-                    </div>
-
-                    <button
-                      type="button"
-                      onClick={handleNearMe}
-                      onMouseEnter={() => setNearMeHover(true)}
-                      onMouseLeave={() => setNearMeHover(false)}
-                      className={`${isListView || isGeoLibreView ? 'hidden' : ''} rounded-full px-4 py-1 text-xs font-semibold`}
-                      style={{
-                        backgroundColor: nearMeLoading ? '#182735' : nearMeHover ? '#182B3A' : viewControlBg,
-                        color: nearMeLoading ? '#6F8291' : nearMeHover ? '#FFD54A' : viewControlText,
-                        minHeight: '44px',
-                        border: `1px solid ${nearMeHover && !nearMeLoading ? '#FF9900' : viewControlBorder}`,
-                        boxShadow: viewControlShadow,
-                        transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
-                        cursor: nearMeLoading ? 'wait' : 'pointer',
-                        touchAction: 'manipulation',
-                        whiteSpace: 'nowrap',
-                      }}
-                      aria-label="Near me"
-                    >
-                      {nearMeLoading ? 'Locating...' : 'Near Me'}
-                    </button>
-                  </div>
-                </div>
+                {globeControls}
 
                 {!isListView && !newsLoading && newsMarkers.length === 0 && (
                   <div

@@ -1,5 +1,5 @@
-import { createElement, useCallback, useState } from 'react';
-import { ArrowUpRight, Buildings, CaretRight, GlobeHemisphereWest, MapPin, Minus, Plus } from '@phosphor-icons/react';
+import { createElement, useCallback, useEffect, useRef, useState } from 'react';
+import { ArrowUpRight, Buildings, CaretLeft, CaretRight, GlobeHemisphereWest, MapPin, X } from '@phosphor-icons/react';
 import './BuilderLoftsScene.css';
 
 function LoftStatus({ status }) {
@@ -58,14 +58,15 @@ export default function BuilderLoftsScene({
   Scene,
   renderScene = (ActiveScene, props) => createElement(ActiveScene, props),
   globeDesign,
-  globeDesigns = [],
-  globeDesignLabel = (view) => view,
-  onDesignChange,
+  controls,
+  selectedTag,
+  onTagChange,
   zoomCommand,
-  onZoom,
   flyToTarget,
 }) {
   const [selection, setSelection] = useState(null);
+  const [panelOpen, setPanelOpen] = useState(true);
+  const toggleRef = useRef(null);
   const selectedLoft = members.find((loft) => loft.id === selection?.id) || members[0];
   const memberKey = members.map((loft) => loft.id).join('|');
   // A manual city choice takes precedence until a parent filter changes the map target or visible cities.
@@ -76,9 +77,22 @@ export default function BuilderLoftsScene({
   const openCount = members.filter((loft) => loft.status === 'open').length;
   const announcedCount = members.filter((loft) => loft.status === 'announced').length;
 
+  const closePanel = useCallback(() => {
+    setPanelOpen(false);
+    requestAnimationFrame(() => toggleRef.current?.focus());
+  }, []);
+
+  useEffect(() => {
+    if (!panelOpen || isDirectory) return undefined;
+    const onKeyDown = event => { if (event.key === 'Escape') closePanel(); };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [panelOpen, isDirectory, closePanel]);
+
   const selectLoft = useCallback((payload) => {
     const loft = Array.isArray(payload) ? payload[0] : payload;
     if (!loft || !members.some((member) => member.id === loft.id)) return;
+    setPanelOpen(true);
     setSelection({
       id: loft.id,
       target: { lat: loft.lat, lng: loft.lng },
@@ -87,18 +101,34 @@ export default function BuilderLoftsScene({
     });
   }, [flyToTarget, memberKey, members]);
 
-  return (
-    <section className={`builder-lofts${darkMode ? ' builder-lofts--dark' : ''}${isDirectory ? ' builder-lofts--directory' : ''}`} aria-labelledby="builder-lofts-title">
+  const heading = (
       <header className="lofts-heading">
         <div>
           <h1 id="builder-lofts-title">AWS Builder <span>Lofts</span><Buildings size={27} weight="duotone" aria-hidden="true" /></h1>
           <p>Free spaces to meet, learn and build with the AWS community.</p>
         </div>
+        {!isDirectory && <button className="lofts-panel-close" type="button" onClick={closePanel} aria-label="Close lofts panel"><X size={18} aria-hidden="true" /></button>}
         {!loading && members.length > 0 && <div className="lofts-network-status" aria-label={`${openCount} open lofts and ${announcedCount} announced lofts in this view`}>
           <span><i className="lofts-open-dot" aria-hidden="true" />{openCount} open</span>
           <span><i className="lofts-announced-dot" aria-hidden="true" />{announcedCount} announced</span>
         </div>}
+        <div className="lofts-status-filter" role="group" aria-label="Loft status">
+          {[null, 'Open', 'Announced'].map(status => (
+            <button key={status || 'all'} type="button" aria-pressed={selectedTag === status || (!selectedTag && !status)} onClick={() => onTagChange?.(status)}>{status || 'All'}</button>
+          ))}
+        </div>
       </header>
+  );
+
+  const state = loading ? (
+    <div className="lofts-state" role="status"><Buildings size={36} weight="duotone" aria-hidden="true" /><h2>Finding the lofts</h2><p>Loading the global directory.</p><div className="lofts-skeleton" aria-hidden="true"><span /><span /><span /></div></div>
+  ) : members.length === 0 ? (
+    <div className="lofts-state" role="status"><GlobeHemisphereWest size={40} weight="duotone" aria-hidden="true" /><h2>No lofts in this view</h2><p>Try another region, country or status to explore the network.</p></div>
+  ) : null;
+
+  return (
+    <section className={`builder-lofts${darkMode ? ' builder-lofts--dark' : ''}${isDirectory ? ' builder-lofts--directory' : ''}${panelOpen ? ' builder-lofts--panel-open' : ''}`} aria-label="AWS Builder Lofts">
+      {isDirectory && heading}
 
       <div className="lofts-content">
         {!isDirectory && <div className="lofts-map" aria-label="Builder Loft locations around the world">
@@ -114,31 +144,17 @@ export default function BuilderLoftsScene({
             }, `builder-lofts-${globeDesign}`)}
           </div>
           <div className="lofts-map-caption"><GlobeHemisphereWest size={16} aria-hidden="true" /> Select a city to explore its loft</div>
-          {onZoom && globeDesign !== 'geolibre' && <div className="lofts-zoom" role="group" aria-label="Loft map zoom">
-            <button type="button" onClick={() => onZoom('in')} aria-label="Zoom in"><Plus size={18} /></button>
-            <button type="button" onClick={() => onZoom('out')} aria-label="Zoom out"><Minus size={18} /></button>
-          </div>}
         </div>}
 
-        {loading ? (
-          <div className="lofts-state" role="status">
-            <Buildings size={36} weight="duotone" aria-hidden="true" />
-            <h2>Finding the lofts</h2>
-            <p>Loading the global directory.</p>
-            <div className="lofts-skeleton" aria-hidden="true"><span /><span /><span /></div>
-          </div>
-        ) : members.length === 0 ? (
-          <div className="lofts-state" role="status">
-            <GlobeHemisphereWest size={40} weight="duotone" aria-hidden="true" />
-            <h2>No lofts in this view</h2>
-            <p>Try another region, country or status to explore the network.</p>
-          </div>
-        ) : isDirectory ? (
+        {isDirectory ? state || (
           <div className="lofts-directory" aria-label="Builder Loft directory">
             {members.map((loft) => <LoftDetails key={loft.id} loft={loft} directory />)}
           </div>
         ) : (
-          <aside className="lofts-panel" aria-label="Explore Builder Lofts">
+          <aside id="lofts-panel" className="lofts-panel" aria-label="Explore Builder Lofts" inert={!panelOpen} aria-hidden={!panelOpen}>
+            {heading}
+            <div className="lofts-panel-body">
+            {state || <>
             <div className="lofts-panel-heading"><h2>Explore the lofts</h2><span>{members.length} {members.length === 1 ? 'location' : 'locations'}</span></div>
             <nav className="lofts-city-list" aria-label="Choose a Builder Loft">
               {members.map((loft) => (
@@ -150,17 +166,17 @@ export default function BuilderLoftsScene({
               ))}
             </nav>
             {selectedLoft && <div className="lofts-selected-detail" aria-live="polite" aria-atomic="true"><LoftDetails loft={selectedLoft} /></div>}
+            </>}
+            </div>
           </aside>
         )}
       </div>
 
-      <footer className="lofts-toolbar">
-        <p>City pins show approximate locations.</p>
-        <div className="lofts-view-switcher" role="group" aria-label="Builder Lofts view">
-          {globeDesigns.map((view) => <button key={view} type="button" aria-pressed={globeDesign === view} onClick={() => onDesignChange?.(view)}>{globeDesignLabel(view)}</button>)}
-        </div>
-        <span className="lofts-source-note">Locations from official AWS sources</span>
-      </footer>
+      {!isDirectory && <button ref={toggleRef} className="lofts-panel-toggle" type="button" aria-expanded={panelOpen} aria-controls="lofts-panel" onClick={() => setPanelOpen(open => !open)}>
+        {panelOpen ? <CaretLeft size={14} aria-hidden="true" /> : <CaretRight size={14} aria-hidden="true" />}
+        {panelOpen ? 'Hide Lofts' : 'Explore Lofts'}
+      </button>}
+      <div className="lofts-globe-controls">{controls}</div>
     </section>
   );
 }
