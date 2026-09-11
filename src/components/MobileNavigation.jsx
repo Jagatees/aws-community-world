@@ -92,13 +92,15 @@ export default function MobileNavigation({
   newMemberCount,
   canShowNewArrivals,
   onNewOnlyToggle,
+  eventStatus = 'all',
+  onEventStatusChange,
 }) {
   const [openPanel, setOpenPanel] = useState(null);
   const categories = section === 'events' ? EVENT_CATEGORIES : COMMUNITY_CATEGORIES;
   const accent = categories.find((category) => category.key === activeCategory)?.accent ?? '#FF9900';
-  const filterCount = selectedRegions.length + selectedCountries.length + (selectedTag ? 1 : 0) + (newOnly ? 1 : 0);
+  const filterCount = selectedRegions.length + selectedCountries.length + (selectedTag ? 1 : 0) + (newOnly ? 1 : 0) + (eventStatus !== 'all' ? 1 : 0);
   const hasLocationFilters = regions.length > 0 || countries.length > 0;
-  const hasFilters = hasLocationFilters || tags.length > 0;
+  const hasFilters = hasLocationFilters || tags.length > 0 || eventStatus !== 'all';
   const formattedCount = Number.isFinite(resultCount) ? resultCount.toLocaleString() : null;
 
   useEffect(() => {
@@ -128,6 +130,7 @@ export default function MobileNavigation({
     onCountryChange([]);
     onTagChange(null);
     if (newOnly) onNewOnlyToggle();
+    onEventStatusChange?.('all');
   }
 
   return (

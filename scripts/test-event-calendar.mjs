@@ -2,7 +2,23 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { createEventCalendar } from '../src/utils/eventCalendar.js';
 import { buildSubmissionUrl } from '../src/utils/communitySubmission.js';
-import { isUpcomingEvent } from '../src/utils/upcomingEvents.js';
+import { isUpcomingEvent, matchesEventStatus } from '../src/utils/upcomingEvents.js';
+
+test('event filters distinguish ended, ongoing, future and undated entries', () => {
+  const now = new Date(2026, 8, 11, 23, 59, 59);
+  const past = { date: '2026-09-10' };
+  const ongoing = { date: '2026-09-10', endDate: '2026-09-11' };
+  const future = { date: '2026-09-12' };
+  for (const event of [past, ongoing, future, {}]) assert.equal(matchesEventStatus(event, 'all', now), true);
+  assert.equal(matchesEventStatus(past, 'ended', now), true);
+  assert.equal(matchesEventStatus(past, 'upcoming', now), false);
+  assert.equal(matchesEventStatus(ongoing, 'upcoming', now), true);
+  assert.equal(matchesEventStatus(ongoing, 'ended', now), false);
+  assert.equal(matchesEventStatus(future, 'upcoming', now), true);
+  assert.equal(matchesEventStatus({}, 'ended', now), false);
+  assert.equal(matchesEventStatus({}, 'upcoming', now), false);
+  assert.equal(matchesEventStatus(ongoing, 'ended', new Date(2026, 8, 12)), true);
+});
 
 test('homepage counts keep ongoing all-day events and exclude past or undated events', () => {
   const now = new Date(2026, 8, 11, 17, 30);

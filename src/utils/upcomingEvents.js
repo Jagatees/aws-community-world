@@ -8,3 +8,11 @@ export function isUpcomingEvent(event, now = new Date()) {
   const endTime = Date.parse(event.endsAt || event.startsAt);
   return Number.isFinite(endTime) && endTime >= now.getTime();
 }
+
+export function matchesEventStatus(event, status = 'all', now = new Date()) {
+  if (status === 'all') return true;
+  const lastDate = event.endDate || event.endsAt || event.date || event.startsAt;
+  // Undated events belong only in All, never in Ended by default.
+  if (!lastDate || !Number.isFinite(Date.parse(lastDate))) return false;
+  return status === 'upcoming' ? isUpcomingEvent(event, now) : !isUpcomingEvent(event, now);
+}

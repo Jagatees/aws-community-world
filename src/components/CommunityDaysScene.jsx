@@ -2,6 +2,7 @@ import { createElement, useCallback, useMemo } from 'react';
 import ListScene from './ListScene';
 import communityDays from '../data/community-days.json';
 import { getRegionForCountry } from '../utils/countryRegions';
+import { isUpcomingEvent, matchesEventStatus } from '../utils/upcomingEvents';
 
 function formatDate(event) {
   const formatter = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'short', year: 'numeric' });
@@ -36,20 +37,21 @@ export default function CommunityDaysScene({
   flyToTarget,
   selectedRegions = [],
   selectedCountries = [],
+  eventStatus = 'all',
+  now,
 }) {
-  const now = useMemo(() => new Date(), []);
 
   const events = useMemo(() => {
     const upcomingByCountry = new Map();
     communityDays
-      .filter((event) => new Date(`${event.endDate || event.date}T23:59:59`) >= now)
+      .filter((event) => isUpcomingEvent(event, now))
       .sort((a, b) => a.date.localeCompare(b.date))
       .forEach((event) => {
         if (!upcomingByCountry.has(event.country)) upcomingByCountry.set(event.country, event);
       });
 
     return communityDays.map((event) => {
-      const eventEnded = new Date(`${event.endDate || event.date}T23:59:59`) < now;
+      const eventEnded = !isUpcomingEvent(event, now);
       const nextLocalEvent = upcomingByCountry.get(event.country);
       const countdownLabel = eventEnded
         ? nextLocalEvent
@@ -71,11 +73,12 @@ export default function CommunityDaysScene({
         avatarUrl: '',
       };
     }).filter((event) => {
+      if (!matchesEventStatus(event, eventStatus, now)) return false;
       if (selectedRegions.length && !selectedRegions.includes(getRegionForCountry(event.country))) return false;
       if (selectedCountries.length && !selectedCountries.includes(event.country)) return false;
       return true;
     });
-  }, [now, selectedCountries, selectedRegions]);
+  }, [now, selectedCountries, selectedRegions, eventStatus]);
 
   const openOfficialSite = useCallback((payload) => {
     const event = Array.isArray(payload) ? payload[0] : payload;
@@ -97,6 +100,7 @@ export default function CommunityDaysScene({
         <ListScene
           category="community-days"
           members={events}
+          emptyMessage="No events match these filters."
           darkMode={darkMode}
           onItemClick={openOfficialSite}
         />
@@ -128,8 +132,19 @@ export default function CommunityDaysScene({
         <div className="text-[1.55rem] font-black leading-none tracking-[-0.02em] tabular-nums" style={{ color: heading }}>
           {events.length.toLocaleString()}
         </div>
-        <div className="mt-1 text-[0.68rem] font-medium" style={{ color: muted }}>events worldwide</div>
+        <div className="mt-1 text-[0.68rem] font-medium" style={{ color: muted }}>
+          {eventStatus === 'all' ? 'All events' : eventStatus === 'ended' ? 'Ended events' : 'Upcoming events'}
+          {selectedRegions.length || selectedCountries.length ? ' · filtered' : ' worldwide'}
+        </div>
       </div>}
+
+      {!isListView && events.length === 0 && (
+        <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center" role="status">
+          <p className="rounded-xl px-5 py-4 text-sm" style={{ background: panelBackground, color: heading }}>
+            No {eventStatus === 'all' ? '' : eventStatus} events match these filters.
+          </p>
+        </div>
+      )}
 
       <div className="community-days-controls absolute bottom-3 left-1/2 z-30 -translate-x-1/2 sm:bottom-5">
         <div className="flex flex-col items-center gap-2 sm:flex-row sm:items-stretch sm:gap-3">

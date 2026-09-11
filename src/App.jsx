@@ -3,6 +3,8 @@ import { SparkleIcon } from '@phosphor-icons/react';
 import Header from './components/Header';
 import TabNav from './components/TabNav';
 import MobileNavigation from './components/MobileNavigation';
+import EventStatusFilter from './components/EventStatusFilter';
+import { matchesEventStatus } from './utils/upcomingEvents';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
@@ -59,6 +61,7 @@ const DEFAULT_ROUTE_STATE = {
   darkMode: true,
   countrySpotlight: null,
   newOnly: false,
+  eventStatus: 'all',
 };
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
@@ -69,6 +72,7 @@ const DESKTOP_GLOBE_DESIGNS = ['orbit', 'sleek', 'flat', 'icons', 'list'];
 const COMPACT_VIEWPORT_QUERY = '(max-width: 767px), (max-height: 480px) and (max-width: 900px)';
 const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors', 'aws-ambassadors', 'golden-jackets']);
 const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'builder-lofts', 'news']);
+const TIMED_EVENT_CATEGORIES = new Set(['kiro-events', 'community-days']);
 const NEW_ARRIVAL_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs']);
 
 function isCompactViewport() {
@@ -126,7 +130,7 @@ function getRouteStateFromUrl() {
   const supportedPublicView = publicGlobeDesigns.includes(view)
     && (view !== 'icons' || ICON_VIEW_CATEGORIES.has(resolvedCategory));
   const spotlightKeys = Object.values(COUNTRY_SPOTLIGHTS).map(({ queryKey }) => queryKey);
-  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'new', ...spotlightKeys]
+  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'new', 'eventStatus', ...spotlightKeys]
     .some((key) => params.has(key));
 
   return {
@@ -146,11 +150,13 @@ function getRouteStateFromUrl() {
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
     countrySpotlight: experimental || insights ? null : spotlight?.country ?? null,
     newOnly: !experimental && !insights && NEW_ARRIVAL_CATEGORIES.has(resolvedCategory) && newOnly,
+    eventStatus: TIMED_EVENT_CATEGORIES.has(resolvedCategory) && ['upcoming', 'ended'].includes(params.get('eventStatus'))
+      ? params.get('eventStatus') : 'all',
     hasShareState,
   };
 }
 
-function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, countrySpotlight, newOnly }) {
+function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, countrySpotlight, newOnly, eventStatus }) {
   if (typeof window === 'undefined') return;
 
   const params = new URLSearchParams();
@@ -163,6 +169,7 @@ function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, se
   const spotlightQueryKey = COUNTRY_SPOTLIGHTS[countrySpotlight]?.queryKey;
   if (spotlightQueryKey) params.set(spotlightQueryKey, '1');
   if (newOnly) params.set('new', '1');
+  if (TIMED_EVENT_CATEGORIES.has(activeCategory) && eventStatus !== 'all') params.set('eventStatus', eventStatus);
 
   const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}${window.location.hash}`;
   const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
@@ -216,6 +223,19 @@ export default function App() {
   const [nearMeError, setNearMeError] = useState(null);
   const [nearMeHover, setNearMeHover] = useState(false);
   const [newOnly, setNewOnly] = useState(routeState.newOnly);
+  const [eventStatus, setEventStatus] = useState(routeState.eventStatus);
+  const [eventNow, setEventNow] = useState(() => new Date());
+  const isTimedEventView = TIMED_EVENT_CATEGORIES.has(activeCategory);
+  useEffect(() => {
+    if (!isTimedEventView || showSplash) return undefined;
+    const refresh = () => setEventNow(new Date());
+    const timer = window.setInterval(refresh, 60_000);
+    window.addEventListener('focus', refresh);
+    return () => {
+      window.clearInterval(timer);
+      window.removeEventListener('focus', refresh);
+    };
+  }, [isTimedEventView, showSplash]);
   const [countrySpotlight, setCountrySpotlight] = useState(
     routeState.countrySpotlight ? { country: routeState.countrySpotlight, nonce: 1 } : null
   );
@@ -362,7 +382,7 @@ export default function App() {
     [countries]
   );
 
-  const directoryMembers = useMemo(() => {
+  const locationFilteredMembers = useMemo(() => {
     return members.filter((member) => {
       if (newOnly && !member.isNew) return false;
       if (selectedTag && member.tag !== selectedTag) return false;
@@ -372,6 +392,15 @@ export default function App() {
       return true;
     });
   }, [members, newOnly, selectedTag, selectedRegions, selectedCountries]);
+
+  const directoryMembers = useMemo(() => isTimedEventView
+    ? locationFilteredMembers.filter(member => matchesEventStatus(member, eventStatus, eventNow))
+    : locationFilteredMembers, [locationFilteredMembers, isTimedEventView, eventStatus, eventNow]);
+  const eventStatusCounts = useMemo(() => ({
+    all: locationFilteredMembers.length,
+    upcoming: locationFilteredMembers.filter(member => matchesEventStatus(member, 'upcoming', eventNow)).length,
+    ended: locationFilteredMembers.filter(member => matchesEventStatus(member, 'ended', eventNow)).length,
+  }), [locationFilteredMembers, eventNow]);
 
   const filteredMembers = useMemo(
     () => directoryMembers.filter((member) => member.lat !== 0 || member.lng !== 0),
@@ -425,7 +454,9 @@ export default function App() {
   const hudCount = isCommunityBuilderView && !loadFullCommunityBuilders
     ? (communityBuilderMeta.total ?? filteredMembers.length)
     : filteredMembers.length;
-  const hudSubLabel = newOnly
+  const hudSubLabel = isTimedEventView
+    ? `${eventStatus === 'all' ? 'All' : eventStatus === 'ended' ? 'Ended' : 'Upcoming'} events${selectedRegions.length || selectedCountries.length || selectedTag ? ' · filtered' : ' worldwide'}`
+    : newOnly
     ? 'new this month'
     : isCommunityBuilderView && !loadFullCommunityBuilders
     ? `${(communityBuilderMeta.mappedTotal ?? filteredMembers.length).toLocaleString()} mapped across ${members.length.toLocaleString()} locations`
@@ -578,6 +609,8 @@ export default function App() {
     setSelectedCountries([]);
     setCountrySpotlight(null);
     setNewOnly(false);
+    setEventStatus('all');
+    setEventNow(new Date());
     setActiveCategory(category);
     if (EVENT_CATEGORIES.has(category) || category === 'kiro-ambassadors') {
       setGlobeDesign(getResponsiveDefaultGlobeDesign());
@@ -720,8 +753,9 @@ export default function App() {
       darkMode,
       countrySpotlight: countrySpotlight?.country ?? null,
       newOnly,
+      eventStatus,
     });
-  }, [activeCategory, countrySpotlight?.country, darkMode, globeDesign, newOnly, selectedCountries, selectedRegions, selectedTag, showSplash]);
+  }, [activeCategory, countrySpotlight?.country, darkMode, globeDesign, newOnly, eventStatus, selectedCountries, selectedRegions, selectedTag, showSplash]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -736,6 +770,8 @@ export default function App() {
       setDarkMode(nextRouteState.darkMode);
       setNewsPanelOpen(nextRouteState.activeCategory === 'news');
       setNewOnly(nextRouteState.newOnly);
+      setEventStatus(nextRouteState.eventStatus);
+      setEventNow(new Date());
       const spotlight = COUNTRY_SPOTLIGHTS[nextRouteState.countrySpotlight];
       setNearMeTarget(spotlight ? { ...spotlight.center, nonce: Date.now() } : null);
       setCountrySpotlight(
@@ -820,6 +856,8 @@ export default function App() {
             newMemberCount={newMemberCount}
             canShowNewArrivals={NEW_ARRIVAL_CATEGORIES.has(activeCategory) && (newMemberCount > 0 || newOnly)}
             onNewOnlyToggle={handleNewOnlyToggle}
+            eventStatus={isTimedEventView ? eventStatus : 'all'}
+            onEventStatusChange={setEventStatus}
           />
         )}
 
@@ -839,6 +877,19 @@ export default function App() {
               <TagFilter tags={tags} selected={selectedTag} onChange={setSelectedTag} darkMode={darkMode} />
             </Suspense>
           </div>
+        )}
+
+        {!showSplash && isTimedEventView && !isExperimentalView && !isInsightsView && (
+          <EventStatusFilter
+            value={eventStatus}
+            counts={eventStatusCounts}
+            darkMode={darkMode}
+            onChange={(status) => {
+              setEventStatus(status);
+              setEventNow(new Date());
+              setSelectedMember(null);
+            }}
+          />
         )}
 
         {activeError && !isInsightsView && (
@@ -876,6 +927,8 @@ export default function App() {
           ) : isCommunityDaysView ? (
             <Suspense fallback={renderGlobeLoading('Loading Community Days...')}>
               <CommunityDaysScene
+                eventStatus={eventStatus}
+                now={eventNow}
                 darkMode={darkMode}
                 lightweight={lightweightMap}
                 Scene={ActiveGlobeScene}
@@ -1212,6 +1265,7 @@ export default function App() {
                     loading={loading}
                     darkMode={darkMode}
                     onItemClick={handleMarkerClick}
+                    emptyMessage={isTimedEventView ? 'No events match these filters.' : undefined}
                   />
                 </Suspense>
               ) : globeReady ? (

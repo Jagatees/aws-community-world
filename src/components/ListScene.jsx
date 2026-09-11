@@ -153,7 +153,7 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
   );
 }
 
-export default function ListScene({ category, members = [], newsItems = [], loading = false, darkMode, onItemClick }) {
+export default function ListScene({ category, members = [], newsItems = [], loading = false, darkMode, onItemClick, emptyMessage }) {
   const [query, setQuery] = useState('');
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const items = category === 'news' ? newsItems : members;
@@ -248,10 +248,10 @@ export default function ListScene({ category, members = [], newsItems = [], load
         ) : (
           <div className="mt-12 rounded-2xl px-6 py-14 text-center" style={{ background: inputBg, border: `1px solid ${border}` }}>
             <p className="text-base font-bold" style={{ color: heading }}>
-              {query ? 'No matching entries' : 'No entries available yet'}
+              {query ? 'No matching entries' : emptyMessage || 'No entries available yet'}
             </p>
             <p className="mt-2 text-sm" style={{ color: body }}>
-              {query ? 'Try a different name, location or specialty.' : 'Check back as the community directory grows.'}
+              {query ? 'Try a different name, location or specialty.' : emptyMessage ? 'Try All events or change the location filters.' : 'Check back as the community directory grows.'}
             </p>
           </div>
         )}
