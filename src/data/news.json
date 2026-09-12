@@ -1,210 +1,234 @@
 {
-  "updatedAt": "2026-09-11T05:36:58.492Z",
+  "updatedAt": "2026-09-12T05:24:04.447Z",
   "latest": [
     {
-      "id": "/content/3JASHYIl3GSgRw3qu3GPeTAvsSj",
-      "title": "AWS IAM: The Key to Secure Cloud Access",
-      "description": "A practical introduction to AWS Identity and Access Management (IAM), covering users, groups, roles, policies, permissions, and security best practices. This article shares my hands-on learning with AWS CLI and Bash automation, including real-world examples of managing access securely in AWS.",
-      "url": "https://builder.aws.com/content/3JASHYIl3GSgRw3qu3GPeTAvsSj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JAWgDl2jMNc2E6geJvdE9QE9zF/Chat.webp",
-      "authorName": "Muhammad Subhan",
-      "authorAlias": "subhancloud",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J3fTGULjXZwvTJSHEVMUl4C66h.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "aws-iam-identity-center",
-        "iam",
-        "aws-builders",
-        "aws-cli",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-09-11T05:29:33.615Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3JAV3Nqd8h4CbUogpHeWvt9TCYb",
-      "title": "AWS S3 — Hands-On Security & Storage Practice",
-      "description": "Hands-on practice with Amazon S3 covering storage, security, versioning, lifecycle management, automation, and cross-region replication.",
-      "url": "https://builder.aws.com/content/3JAV3Nqd8h4CbUogpHeWvt9TCYb",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JAVwZ0WkPnS0TGWOPRi4FyjdDc/wp10.webp",
-      "authorName": "Syed Tajasir Ali",
-      "authorAlias": "tajasir",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3INRNNcRumNhAQhhZFuVcjK2zjb.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "cybersecurity",
-        "cloud-security",
-        "amazon-s3",
-        "aws-cli",
-        "lifecycle"
-      ],
-      "publishedAt": "2026-09-11T05:23:24.460Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3JAUwWLr78TCbWqLQVbjC9lZXw9",
-      "title": "Weekend Deployment Challenge: PromptForge",
-      "description": "PromptForge is an AI-powered prompt optimization tool that transforms rough ideas into clear, structured, and effective prompts for AI assistants.\n\nInstead of spending time figuring out how to phrase a prompt, users enter a simple idea, select a desired goal and detail level, and PromptForge generates an improved, copy-ready prompt using Amazon Nova Lite through Amazon Bedrock.",
-      "url": "https://builder.aws.com/content/3JAUwWLr78TCbWqLQVbjC9lZXw9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JAVpXEic9sTfWNiGld5Pb4zNZo/Prom.webp",
-      "authorName": "Mohammed Ansari",
-      "authorAlias": "ansari21153",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GiPbEstgxMEfPT27xbN8EzABGW.webp",
-      "location": "Karnataka, IN",
-      "lat": 14.9562045,
-      "lng": 75.7896741,
-      "tags": [
-        "deployment"
-      ],
-      "publishedAt": "2026-09-11T05:21:58.895Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3IzM2Xvo1BL5fJeLCP2T8y1w8DC",
-      "title": "\"Connection Timed Out\" on EC2: How to Diagnose It Properly (and What AWS Connect Assist Does That You Can't)",
-      "description": "\"Connection timed out\" tells you nothing about what's actually wrong. Here's the eight-link chain every EC2 connection depends on, what AWS Connect Assist adds on top of it, what it costs per second, and the one category of break that no tool can ever fix.",
-      "url": "https://builder.aws.com/content/3IzM2Xvo1BL5fJeLCP2T8y1w8DC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3IzOXlcMvUh6sIxFT8Eilik5o1R/Conn.webp",
-      "authorName": "Uche Ugochukwu",
-      "authorAlias": "lightcloud",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38iQVOM6ntbTflJTz1DsW2urKsz.webp",
-      "location": "NG",
-      "lat": 9.6000359,
-      "lng": 7.9999721,
-      "tags": [
-        "amazon-connect",
-        "ai",
-        "ai-assisted",
-        "ai-agents",
-        "ai-services"
-      ],
-      "publishedAt": "2026-09-11T05:21:25.440Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3JAVJ2X4ycc2VXXXSJAITtY96KU",
-      "title": "AWS Regions et Availability Zones : comprendre la haute disponibilité",
-      "description": "Une explication simple des Regions, Availability Zones et choix de localisation pour concevoir des applications AWS plus résilientes.",
-      "url": "https://builder.aws.com/content/3JAVJ2X4ycc2VXXXSJAITtY96KU",
+      "id": "/content/3JDKrxNPkMM7Z87gfpAGC1vurch",
+      "title": "Agents for Humans: Building Vouch and Learning Where an Agent Should Stop",
+      "description": "article 1 of 3 on my Agents for Humans journey",
+      "url": "https://builder.aws.com/content/3JDKrxNPkMM7Z87gfpAGC1vurch",
       "imageUrl": "",
-      "authorName": "BOUMBIEGOU-LARDJA",
-      "authorAlias": "donald37",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IhNh7EXALuNbd8lqoMge4UjtaW.webp",
-      "location": "TG",
-      "lat": 8.7800265,
-      "lng": 1.0199765,
+      "authorName": "Mark Brazinski",
+      "authorAlias": "quietmoose",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
       "tags": [],
-      "publishedAt": "2026-09-11T05:18:02.976Z",
+      "publishedAt": "2026-09-12T05:22:30.162Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3JAV4I6EQW5AHYD7mTa9QVDN9kE",
-      "title": "IAM sur AWS : appliquer le principe du moindre privilège",
-      "description": "Une introduction pratique à IAM pour comprendre les utilisateurs, les rôles et les permissions minimales nécessaires sur AWS.",
-      "url": "https://builder.aws.com/content/3JAV4I6EQW5AHYD7mTa9QVDN9kE",
-      "imageUrl": "",
-      "authorName": "BOUMBIEGOU-LARDJA",
-      "authorAlias": "donald37",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IhNh7EXALuNbd8lqoMge4UjtaW.webp",
-      "location": "TG",
-      "lat": 8.7800265,
-      "lng": 1.0199765,
-      "tags": [],
-      "publishedAt": "2026-09-11T05:16:07.299Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3J59P5MVjjOgepFHJYeMQHNjc98",
-      "title": "Amazon S3 ou Amazon EBS : comprendre la différence",
-      "description": "Une comparaison simple entre le stockage objet Amazon S3 et le stockage en blocs Amazon EBS, avec des exemples utiles pour débuter sur AWS.",
-      "url": "https://builder.aws.com/content/3J59P5MVjjOgepFHJYeMQHNjc98",
-      "imageUrl": "",
-      "authorName": "BOUMBIEGOU-LARDJA",
-      "authorAlias": "donald37",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IhNh7EXALuNbd8lqoMge4UjtaW.webp",
-      "location": "TG",
-      "lat": 8.7800265,
-      "lng": 1.0199765,
-      "tags": [],
-      "publishedAt": "2026-09-11T05:14:05.768Z",
-      "likesCount": 1,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3JASsDJzjmcYyVjtHgHID7YW0BR",
-      "title": "Building a Simple Application Architecture with EC2, VPC, RDS, and Docker on AWS",
-      "description": "Understanding individual AWS services is only the beginning. In this article, I explore how EC2, VPC, RDS, and Docker can work together to create a simple and practical architecture for running a backend application in the AWS Cloud.",
-      "url": "https://builder.aws.com/content/3JASsDJzjmcYyVjtHgHID7YW0BR",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JAUp4uXysDGGMPTuX0CLI0lsES/aws_.webp",
-      "authorName": "Sampath M Chandimal",
-      "authorAlias": "sampathweligala",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J4jJp3vVj72iKdDkjosdNRvEUx.webp",
+      "id": "/content/3JDJF5gEb0gcbgerE1eD1ZH4TDK",
+      "title": "Enforce IMDSv2 on Every EC2 Instance: Here's Why",
+      "description": "Learn how EC2's IMDSv2 blocks SSRF-based credential theft, and how to enforce it across your AWS account without breaking existing workloads.",
+      "url": "https://builder.aws.com/content/3JDJF5gEb0gcbgerE1eD1ZH4TDK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JDL6cfGlQd5Yk20k46FPfD6Qfj/2-pn.webp",
+      "authorName": "Ramla Hussain",
+      "authorAlias": "ramlahussain",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IYESfzNXzqNzHVw6cvV5jIOHOE.webp",
       "location": "LK",
       "lat": 7.5554942,
       "lng": 80.7137847,
       "tags": [
+        "iam",
         "amazon-ec2",
-        "amazon-rds",
-        "vpc",
-        "architecture",
-        "ai"
+        "cloud-security",
+        "aws-community-builders",
+        "ai-security"
       ],
-      "publishedAt": "2026-09-11T05:12:45.977Z",
+      "publishedAt": "2026-09-12T05:22:20.033Z",
       "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3JDK0sLs4iuAGM3VDk83Qhs3Wux",
+      "title": "AWS CloudTrail: Logging Every Action in Your Account",
+      "description": "How CloudTrail records account activity and why every AWS account needs it turned on.",
+      "url": "https://builder.aws.com/content/3JDK0sLs4iuAGM3VDk83Qhs3Wux",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JDKIvXZj9AQompAw2toeUAPMcq/614d.webp",
+      "authorName": "Aditya Zalte",
+      "authorAlias": "adityaza",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ISa173z4lg18AjKz7QY4ZTcobY.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-cloudtrail",
+        "logging"
+      ],
+      "publishedAt": "2026-09-12T05:16:05.928Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3JD6v2n6LWFRe94u9Laix8Y3fzX",
+      "title": "Weekend Deployment Challenge: My Portfolio Site",
+      "description": "A portfolio site, deployed and live. This cover image shows a browser window displaying the finished portfolio page, connected to an S3 bucket icon representing where the site's files are stored and served from — with a laptop on the other side standing in for the visitor loading the page. It's a simple visual for a simple architecture: no servers, no backend, just static files hosted directly on Amazon S3.",
+      "url": "https://builder.aws.com/content/3JD6v2n6LWFRe94u9Laix8Y3fzX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JD7kBgDePUAuQ8wy1Z0dVxofIb/Chat.webp",
+      "authorName": "Gokul S",
+      "authorAlias": "gokul06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3FtKQn2bXcu4PA2YUpzpLXeVs97.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "deployment"
+      ],
+      "publishedAt": "2026-09-12T05:14:28.307Z",
+      "likesCount": 2,
       "commentsCount": 0
     },
     {
-      "id": "/content/3JAToOJfmw8DiUv7O9gxQMDL8Js",
-      "title": "We Were Paying for Storage We Didn't Need — Here's How We Found (and Fixed) It",
-      "description": "A field report from cutting our S3 and EBS bill without touching application code",
-      "url": "https://builder.aws.com/content/3JAToOJfmw8DiUv7O9gxQMDL8Js",
+      "id": "/content/3JCOmWogl8qV28mlLHKi9Ffhf58",
+      "title": "Automating reports with AWS DevOps Agent",
+      "description": "A team already running AWS DevOps Agent can automate recurring SRE/Dev team reports on the same managed service instead of building and operating their own custom solution. This post shows what that takes: a few MCP tools for data, metrics, and email, plus a skill, a custom agent, and a trigger configured in the DevOps Agent's web app.",
+      "url": "https://builder.aws.com/content/3JCOmWogl8qV28mlLHKi9Ffhf58",
       "imageUrl": "",
-      "authorName": "Vikram Dagar",
-      "authorAlias": "vikramdagar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IRhk8N3iJW9QoX2wzckq3lbheP.webp",
+      "authorName": "Sana",
+      "authorAlias": "iqbsana",
+      "authorAvatarUrl": "",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-09-12T05:14:05.419Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3JDJ32DRwps9vyPsao0mNk5u1Kc",
+      "title": "Getting Started with Cyber Security on AWS: A Builder's Guide",
+      "description": "A practical, foundational guide for AWS builders on how to secure your cloud environment, covering Identity and Access Management (IAM), network security, and threat detection",
+      "url": "https://builder.aws.com/content/3JDJ32DRwps9vyPsao0mNk5u1Kc",
+      "imageUrl": "",
+      "authorName": "Krushna Santosh Maind",
+      "authorAlias": "krushnamaind2005",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JDDt7xKzKsGGd5I4qgFHyueUlA.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-09-12T05:10:49.668Z",
+      "likesCount": 2,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3JDIPWWOFv9ItrMfmrFYf532Sjj",
+      "title": "AWS Transit Gateway Explained: Simplifying Multi-VPC and Multi-Account Networking",
+      "description": "AWS Transit Gateway provides a centralized network connectivity model that can connect multiple VPCs and other supported networks through a central transit hub.",
+      "url": "https://builder.aws.com/content/3JDIPWWOFv9ItrMfmrFYf532Sjj",
+      "imageUrl": "",
+      "authorName": "Balamanikandan S",
+      "authorAlias": "balamanikandanb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IRIQzjtp31AFBnlDgeR2WQfQOP.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
-        "agents",
-        "advanced-networking",
-        "agentic-ai",
-        "agent-toolkit",
-        "agile"
+        "aws-builders",
+        "aws-capabilities",
+        "aws-community",
+        "aws-community-builders",
+        "aws-community-day"
       ],
-      "publishedAt": "2026-09-11T05:05:13.844Z",
-      "likesCount": 4,
-      "commentsCount": 3
+      "publishedAt": "2026-09-12T05:10:42.539Z",
+      "likesCount": 0,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3JAPfy0GqEq1DGgplpcTBkwBM4U",
-      "title": "Prompt Caching Isn't Enough",
-      "description": "Prompt caching only discounts input tokens. Map where an AI agent can cache and add semantic and reasoning caches that cut agent costs up to 85%.",
-      "url": "https://builder.aws.com/content/3JAPfy0GqEq1DGgplpcTBkwBM4U",
+      "id": "/content/3JDHwydHQvnNGP6rlSStYPsqa1u",
+      "title": "Mastering AWS Custom AMIs: How to Build, Capture, and Scale Your \"Golden Image\"",
+      "description": "WordPress LAMP Stack (Apache, MariaDB, PHP) pre-configured on Amazon Linux 2023.",
+      "url": "https://builder.aws.com/content/3JDHwydHQvnNGP6rlSStYPsqa1u",
       "imageUrl": "",
-      "authorName": "Elizabeth Fuentes",
-      "authorAlias": "elizabethfuentes12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CSBf5bdZzoVAHaUcvj9jikM3pY.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [],
-      "publishedAt": "2026-09-11T05:02:56.956Z",
-      "likesCount": 4,
-      "commentsCount": 2
+      "authorName": "Muhammad Mudassir",
+      "authorAlias": "mudassir1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IWtVlR1IE7tTsh6kqu4TNXa9ZP.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "ai",
+        "amazon-api-gateway",
+        "amazon-cloudwatch",
+        "amazon-ec2",
+        "amazon-ecs"
+      ],
+      "publishedAt": "2026-09-12T05:05:25.439Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3JDCRXUAqCdhzi7GnWeGjiUhu7W",
+      "title": "Weekend Deployment Challenge: Portfolio App",
+      "description": "Stop paying $20/month for web hosting. Learn how to deploy your portfolio on AWS S3 + CloudFront with custom SSL and automated CI/CD for pennies.Master cloud primitives. Deploy your static website on Amazon S3 and CloudFront with zero-trust security, global CDN caching, and automated CI/CD.",
+      "url": "https://builder.aws.com/content/3JDCRXUAqCdhzi7GnWeGjiUhu7W",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JDIm5Qe6gQLRSkJBhaTkkzWFPe/clou.webp",
+      "authorName": "Yashvi Kothari",
+      "authorAlias": "yashvikothari",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362mIfy2uQdL4eBeAhYPGwzv22d.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "development"
+      ],
+      "publishedAt": "2026-09-12T05:04:27.440Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3J23o69tKi3w1fH03AiwRXnFd2L",
+      "title": "AWS: More Than Just Cloud Storage — Understanding Amazon Web Services & How It Works",
+      "description": "What is AWS, and why should students learn it? ☁️\nAWS (Amazon Web Services) is much more than cloud storage. It is a powerful cloud computing platform that provides services for computing, storage, databases, security, serverless applications, AI/ML, and much more.In this article, I explain AWS in a beginner-friendly way, including how cloud computing works and how services such as EC2, S3, RDS, Lambda, and IAM work together to build real-world applications.",
+      "url": "https://builder.aws.com/content/3J23o69tKi3w1fH03AiwRXnFd2L",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JDHr3w576xMM3rmeha0ipQWyBc/Chat.webp",
+      "authorName": "DARPAN KUMAR",
+      "authorAlias": "darpankumarai07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ilv1ri7IIhUMBpyZH1gFgDjpE5.webp",
+      "location": "Bihar, IN",
+      "lat": 25.6440845,
+      "lng": 85.906508,
+      "tags": [
+        "agentic-ai",
+        "awsreinvent2023",
+        "aws-ai-chips",
+        "aws-ambassador",
+        "aws-api"
+      ],
+      "publishedAt": "2026-09-12T04:58:05.389Z",
+      "likesCount": 2,
+      "commentsCount": 0
     }
   ],
   "trending": [
+    {
+      "id": "/content/3JD29WTr0KQKNPBJazlSagmANuB",
+      "title": "AWS Secrets Manager: A Simple Introduction to Managing Secrets",
+      "description": "A beginner-friendly introduction to AWS Secrets Manager and how developers can securely store and manage sensitive information such as passwords, API keys, and database credentials.",
+      "url": "https://builder.aws.com/content/3JD29WTr0KQKNPBJazlSagmANuB",
+      "imageUrl": "",
+      "authorName": "Palak Garg",
+      "authorAlias": "palakgarg",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3HfOwjtW7J7v1yOeCwq0CHm8vhW.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-secrets-manager",
+        "secrets-manager",
+        "aws-student-builders-groups",
+        "students",
+        "student-builders"
+      ],
+      "publishedAt": "2026-09-12T02:47:48.238Z",
+      "likesCount": 120,
+      "commentsCount": 90
+    },
     {
       "id": "/content/3J5t5qBFaKoDfyPcuyBl0m8Odjr",
       "title": "Understanding RAG: How Generative AI Can Use Your Own Data",
@@ -222,8 +246,8 @@
         "rag"
       ],
       "publishedAt": "2026-09-09T14:04:15.767Z",
-      "likesCount": 1234,
-      "commentsCount": 1005
+      "likesCount": 1558,
+      "commentsCount": 1286
     },
     {
       "id": "/content/3J2wB3qOYQJlpj2lyffsRwVu4EH",
@@ -243,8 +267,8 @@
         "tech"
       ],
       "publishedAt": "2026-09-08T13:02:55.268Z",
-      "likesCount": 1198,
-      "commentsCount": 931
+      "likesCount": 1403,
+      "commentsCount": 1103
     },
     {
       "id": "/content/3IyNgLtC5aiWhgpx5DK1FI0XGca",
@@ -266,8 +290,8 @@
         "serverless"
       ],
       "publishedAt": "2026-09-06T23:21:06.273Z",
-      "likesCount": 1609,
-      "commentsCount": 1268
+      "likesCount": 1700,
+      "commentsCount": 1340
     },
     {
       "id": "/content/3IwoEes7fJlGPVnExkYf0cHeEEN",
@@ -289,8 +313,8 @@
         "agentic-ai"
       ],
       "publishedAt": "2026-09-10T13:07:12.507Z",
-      "likesCount": 252,
-      "commentsCount": 162
+      "likesCount": 565,
+      "commentsCount": 383
     },
     {
       "id": "/content/3Itm1jw1XTYkWWa5WUqrtKckBWB",
@@ -306,8 +330,8 @@
       "lng": 107.9650855,
       "tags": [],
       "publishedAt": "2026-09-05T07:11:40.812Z",
-      "likesCount": 1107,
-      "commentsCount": 861
+      "likesCount": 1182,
+      "commentsCount": 917
     },
     {
       "id": "/content/3J3IXva84GOXDKVKD40drybGlzX",
@@ -329,29 +353,25 @@
         "aws-academy"
       ],
       "publishedAt": "2026-09-08T16:11:57.120Z",
-      "likesCount": 407,
-      "commentsCount": 278
+      "likesCount": 525,
+      "commentsCount": 378
     },
     {
-      "id": "/content/3J9p4Kgt5cUu2rEK7W3xUB8LTuC",
-      "title": "Agents for Humans: the part of my StayQuiet agent not visible in the demo",
-      "description": "Why my background rental-host agent lets Python decide who gets interrupted, while Strands on Bedrock only drafts grounded replies — plus the 6 deterministic tools and offline cache that saved the demo.",
-      "url": "https://builder.aws.com/content/3J9p4Kgt5cUu2rEK7W3xUB8LTuC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3J9qBDKR1e5LUQeZiiFdH1Fq7LC/B2b-.webp",
-      "authorName": "Cesar Zevallos",
-      "authorAlias": "cesar0",
-      "authorAvatarUrl": "",
-      "location": "FI",
-      "lat": 63.2467777,
-      "lng": 25.9209164,
-      "tags": [
-        "agentic-ai",
-        "amazon-bedrock",
-        "python"
-      ],
-      "publishedAt": "2026-09-10T23:41:08.129Z",
-      "likesCount": 40,
-      "commentsCount": 23
+      "id": "/content/3JBpWu9Qv7YXuZEpOQDaj8RsdOd",
+      "title": "AWS Cost Optimization: 10 Practical Ways to Reduce Your Cloud Bill",
+      "description": "AWS makes it easy to scale infrastructure, but without regular cost monitoring, unused and over-provisioned resources can quickly increase your monthly bill. This article covers 10 practical AWS cost-optimization techniques, including rightsizing EC2 instances, identifying idle resources, optimizing storage, monitoring data transfer, and using AWS Cost Explorer and budgets effectively.",
+      "url": "https://builder.aws.com/content/3JBpWu9Qv7YXuZEpOQDaj8RsdOd",
+      "imageUrl": "",
+      "authorName": "Umer Farooq",
+      "authorAlias": "dexecuters",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JBoMK3cS9KpxRQw7BGsYZ2gFMu.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [],
+      "publishedAt": "2026-09-11T16:34:47.411Z",
+      "likesCount": 86,
+      "commentsCount": 53
     },
     {
       "id": "/content/3J90m9yKyMFj4tj8eaRFtddZpu1",
@@ -371,27 +391,8 @@
         "amazon-bedrock-agents"
       ],
       "publishedAt": "2026-09-10T16:36:35.806Z",
-      "likesCount": 69,
-      "commentsCount": 50
-    },
-    {
-      "id": "/content/3J0FNXzpbX2WkA3Y79Scs9ciKZT",
-      "title": "7 Lambda + Step Functions Patterns That Will Save Your Sanity in Production",
-      "description": "Battle-tested serverless best practices for orchestrating Lambda with Step Functions — from error handling to cost control — so your workflows don't fall over at 3am.",
-      "url": "https://builder.aws.com/content/3J0FNXzpbX2WkA3Y79Scs9ciKZT",
-      "imageUrl": "",
-      "authorName": "Shalini",
-      "authorAlias": "shalinisivasankaran",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IUkj0Qgmr2yO7MmEuFAMgcXUyd.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "aws-lambda"
-      ],
-      "publishedAt": "2026-09-07T14:09:46.523Z",
-      "likesCount": 441,
-      "commentsCount": 261
+      "likesCount": 188,
+      "commentsCount": 135
     },
     {
       "id": "/content/3J9JrmIRpqIr37XuLb0NKS1dedU",
@@ -413,8 +414,8 @@
         "builder-center"
       ],
       "publishedAt": "2026-09-10T20:00:28.653Z",
-      "likesCount": 41,
-      "commentsCount": 35
+      "likesCount": 151,
+      "commentsCount": 119
     }
   ]
 }
