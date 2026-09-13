@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-12T05:24:06.427Z",
+  "updatedAt": "2026-09-13T05:39:17.520Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -10138,7 +10138,7 @@
       }
     },
     {
-      "date": "2026-09-12",
+      "date": "2026-09-13",
       "source": {
         "type": "working-tree"
       },
@@ -10332,23 +10332,23 @@
           }
         },
         "kiro-events": {
-          "total": 4,
-          "classified": 3,
-          "unclassified": 1,
-          "coveragePercent": 75,
+          "total": 2,
+          "classified": 2,
+          "unclassified": 0,
+          "coveragePercent": 100,
           "regions": {
             "north-america": 2,
             "south-america": 0,
             "europe": 0,
-            "asia": 1,
+            "asia": 0,
             "africa": 0,
             "oceania": 0
           },
           "changes": {
             "added": 0,
-            "removed": 0,
-            "net": 0,
-            "retained": 4,
+            "removed": 2,
+            "net": -2,
+            "retained": 2,
             "addedByRegion": {
               "north-america": 0,
               "south-america": 0,
@@ -10361,14 +10361,29 @@
               "north-america": 0,
               "south-america": 0,
               "europe": 0,
-              "asia": 0,
+              "asia": 1,
               "africa": 0,
               "oceania": 0
             },
             "addedUnclassified": 0,
-            "removedUnclassified": 0,
+            "removedUnclassified": 1,
             "addedItems": [],
-            "removedItems": [],
+            "removedItems": [
+              {
+                "name": "AWS Community Day Cebu 2026 - Morning Labs",
+                "location": "Cebu, Philippines",
+                "country": "Philippines",
+                "region": "asia",
+                "url": "https://awsugcebu.org"
+              },
+              {
+                "name": "AWS Community Day Vadodara 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://acd26.awsugvad.in/"
+              }
+            ],
             "quality": {
               "confidence": "high",
               "comparable": true,
@@ -10431,19 +10446,19 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-09-12",
-      "daysCovered": 167
+      "endDate": "2026-09-13",
+      "daysCovered": 168
     },
     "global": {
-      "totalRecords": 4952,
-      "classifiedRecords": 4746,
-      "coveragePercent": 95.8,
+      "totalRecords": 4950,
+      "classifiedRecords": 4745,
+      "coveragePercent": 95.9,
       "snapshots": 21
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-12",
+        "currentDate": "2026-09-13",
         "baselineTotal": 262,
         "currentTotal": 252,
         "currentCoveragePercent": 94.4,
@@ -10965,7 +10980,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-12",
+        "currentDate": "2026-09-13",
         "baselineTotal": 2494,
         "currentTotal": 3036,
         "currentCoveragePercent": 94.2,
@@ -11536,7 +11551,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-12",
+        "currentDate": "2026-09-13",
         "baselineTotal": 608,
         "currentTotal": 599,
         "currentCoveragePercent": 99.8,
@@ -12275,7 +12290,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-12",
+        "currentDate": "2026-09-13",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -12824,21 +12839,21 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-09-12",
+        "currentDate": "2026-09-13",
         "baselineTotal": 17,
-        "currentTotal": 4,
-        "currentCoveragePercent": 75,
+        "currentTotal": 2,
+        "currentCoveragePercent": 100,
         "periodChange": {
-          "added": 3,
+          "added": 1,
           "removed": 16,
-          "net": -13,
+          "net": -15,
           "retained": 1,
           "retentionPercent": 5.9,
           "addedByRegion": {
             "north-america": 1,
             "south-america": 0,
             "europe": 0,
-            "asia": 1,
+            "asia": 0,
             "africa": 0,
             "oceania": 0
           },
@@ -12851,20 +12866,6 @@
             "oceania": 0
           },
           "addedItems": [
-            {
-              "name": "AWS Community Day Cebu 2026 - Morning Labs",
-              "location": "Cebu, Philippines",
-              "country": "Philippines",
-              "region": "asia",
-              "url": "https://awsugcebu.org"
-            },
-            {
-              "name": "AWS Community Day Vadodara 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://acd26.awsugvad.in/"
-            },
             {
               "name": "CUSEC 2027",
               "location": "Canada",
@@ -13009,9 +13010,9 @@
           },
           "asia": {
             "start": 4,
-            "current": 1,
-            "net": -3,
-            "growthPercent": -75
+            "current": 0,
+            "net": -4,
+            "growthPercent": -100
           },
           "africa": {
             "start": 0,
@@ -13042,30 +13043,31 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-09-06",
-          "added": 3,
-          "removed": 7,
-          "net": -4,
-          "retained": 1,
+          "date": "2026-09-13",
+          "added": 0,
+          "removed": 2,
+          "net": -2,
+          "retained": 2,
           "addedByRegion": {
-            "north-america": 1,
+            "north-america": 0,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
+          },
+          "removedByRegion": {
+            "north-america": 0,
             "south-america": 0,
             "europe": 0,
             "asia": 1,
             "africa": 0,
             "oceania": 0
           },
-          "removedByRegion": {
-            "north-america": 1,
-            "south-america": 0,
-            "europe": 1,
-            "asia": 0,
-            "africa": 0,
-            "oceania": 0
-          },
-          "addedUnclassified": 1,
-          "removedUnclassified": 5,
-          "addedItems": [
+          "addedUnclassified": 0,
+          "removedUnclassified": 1,
+          "addedItems": [],
+          "removedItems": [
             {
               "name": "AWS Community Day Cebu 2026 - Morning Labs",
               "location": "Cebu, Philippines",
@@ -13079,64 +13081,6 @@
               "country": "Online",
               "region": null,
               "url": "https://acd26.awsugvad.in/"
-            },
-            {
-              "name": "CUSEC 2027",
-              "location": "Canada",
-              "country": "Canada",
-              "region": "north-america",
-              "url": "https://www.cusec.net/"
-            }
-          ],
-          "removedItems": [
-            {
-              "name": "AI Engineer World Fair",
-              "location": "San Francisco, CA, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://www.ai.engineer/worldsfair"
-            },
-            {
-              "name": "CUTC Transform Promptathon",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://luma.com/cutc26"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1519749011865600000"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1524822441984000000"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1529895872102400000"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.com/events/1374034175430230016/1427356508974485664/1534969302220800000"
-            },
-            {
-              "name": "WeAreDevelopers World Congress (EMEA)",
-              "location": "Berlin, Germany",
-              "country": "Germany",
-              "region": "europe",
-              "url": "https://www.wearedevelopers.com/world-congress/"
             }
           ],
           "quality": {
@@ -13150,7 +13094,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-09-12",
+        "currentDate": "2026-09-13",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -13480,62 +13424,17 @@
       }
     },
     "upcoming": {
-      "total": 30,
-      "next30Days": 20,
+      "total": 25,
+      "next30Days": 15,
       "byRegion": {
         "north-america": 4,
-        "south-america": 6,
+        "south-america": 5,
         "europe": 8,
-        "asia": 8,
+        "asia": 5,
         "africa": 1,
         "oceania": 2
       },
       "items": [
-        {
-          "name": "AWS Community Day Vadodara 2026",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://acd26.awsugvad.in/",
-          "category": "kiro-events",
-          "date": "2026-09-12T00:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Cebu 2026 - Morning Labs",
-          "location": "Cebu, Philippines",
-          "country": "Philippines",
-          "region": "asia",
-          "url": "https://awsugcebu.org",
-          "category": "kiro-events",
-          "date": "2026-09-12T09:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Argentina",
-          "location": "Buenos Aires, Argentina",
-          "country": "Argentina",
-          "region": "south-america",
-          "url": "https://www.awsarg.org/",
-          "category": "community-days",
-          "date": "2026-09-12T12:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Vadodara",
-          "location": "Vadodara, India",
-          "country": "India",
-          "region": "asia",
-          "url": "https://acd26.awsugvad.in/",
-          "category": "community-days",
-          "date": "2026-09-12T12:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Cebu",
-          "location": "Cebu, Philippines",
-          "country": "Philippines",
-          "region": "asia",
-          "url": "",
-          "category": "community-days",
-          "date": "2026-09-12T12:00:00.000Z"
-        },
         {
           "name": "AWS Community Day DACH",
           "location": "Berlin, Germany",
@@ -13670,6 +13569,51 @@
           "url": "https://awscommunityday.com.br/nordeste/",
           "category": "community-days",
           "date": "2026-10-10T12:00:00.000Z"
+        },
+        {
+          "name": "AWS Miami Community Day",
+          "location": "Miami, United States",
+          "country": "United States",
+          "region": "north-america",
+          "url": "https://awscommunitydaysoflo.com/",
+          "category": "community-days",
+          "date": "2026-10-14T12:00:00.000Z"
+        },
+        {
+          "name": "AWS Community Day Australia",
+          "location": "Brisbane, Australia",
+          "country": "Australia",
+          "region": "oceania",
+          "url": "https://awscommunitydayaus.com/",
+          "category": "community-days",
+          "date": "2026-10-16T12:00:00.000Z"
+        },
+        {
+          "name": "AWS Community Day Malta",
+          "location": "St Julian's, Malta",
+          "country": "Malta",
+          "region": "europe",
+          "url": "https://www.awscommunityday.mt/",
+          "category": "community-days",
+          "date": "2026-10-16T12:00:00.000Z"
+        },
+        {
+          "name": "AWS Community Day Spain",
+          "location": "Santiago, Spain",
+          "country": "Spain",
+          "region": "europe",
+          "url": "https://awscommunity.es/",
+          "category": "community-days",
+          "date": "2026-10-17T12:00:00.000Z"
+        },
+        {
+          "name": "AWS Community Day Adria",
+          "location": "Ljubljana, Slovenia",
+          "country": "Slovenia",
+          "region": "europe",
+          "url": "https://awscommunityadria.com/",
+          "category": "community-days",
+          "date": "2026-10-22T12:00:00.000Z"
         }
       ]
     },
