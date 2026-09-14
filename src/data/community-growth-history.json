@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-13T05:39:17.520Z",
+  "updatedAt": "2026-09-14T05:46:55.971Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -10140,7 +10140,9 @@
     {
       "date": "2026-09-13",
       "source": {
-        "type": "working-tree"
+        "type": "git",
+        "commit": "380c0fe",
+        "subject": "chore: refresh community feeds and insights"
       },
       "categories": {
         "heroes": {
@@ -10441,24 +10443,314 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-09-14",
+      "source": {
+        "type": "working-tree"
+      },
+      "categories": {
+        "heroes": {
+          "total": 252,
+          "classified": 238,
+          "unclassified": 14,
+          "coveragePercent": 94.4,
+          "regions": {
+            "north-america": 53,
+            "south-america": 11,
+            "europe": 73,
+            "asia": 80,
+            "africa": 6,
+            "oceania": 15
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 252,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "community-builders": {
+          "total": 3036,
+          "classified": 2859,
+          "unclassified": 177,
+          "coveragePercent": 94.2,
+          "regions": {
+            "north-america": 504,
+            "south-america": 256,
+            "europe": 559,
+            "asia": 1183,
+            "africa": 259,
+            "oceania": 98
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 3036,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "user-groups": {
+          "total": 599,
+          "classified": 598,
+          "unclassified": 1,
+          "coveragePercent": 99.8,
+          "regions": {
+            "north-america": 107,
+            "south-america": 97,
+            "europe": 162,
+            "asia": 182,
+            "africa": 32,
+            "oceania": 18
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 599,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "cloud-clubs": {
+          "total": 1023,
+          "classified": 1010,
+          "unclassified": 13,
+          "coveragePercent": 98.7,
+          "regions": {
+            "north-america": 136,
+            "south-america": 118,
+            "europe": 30,
+            "asia": 633,
+            "africa": 88,
+            "oceania": 5
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 1023,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "kiro-events": {
+          "total": 2,
+          "classified": 2,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 2,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 2,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        },
+        "community-days": {
+          "total": 38,
+          "classified": 38,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 5,
+            "south-america": 9,
+            "europe": 9,
+            "asia": 10,
+            "africa": 3,
+            "oceania": 2
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 38,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        }
+      }
     }
   ],
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-09-13",
-      "daysCovered": 168
+      "endDate": "2026-09-14",
+      "daysCovered": 169
     },
     "global": {
       "totalRecords": 4950,
       "classifiedRecords": 4745,
       "coveragePercent": 95.9,
-      "snapshots": 21
+      "snapshots": 22
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-13",
+        "currentDate": "2026-09-14",
         "baselineTotal": 262,
         "currentTotal": 252,
         "currentCoveragePercent": 94.4,
@@ -10980,7 +11272,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-13",
+        "currentDate": "2026-09-14",
         "baselineTotal": 2494,
         "currentTotal": 3036,
         "currentCoveragePercent": 94.2,
@@ -11551,7 +11843,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-13",
+        "currentDate": "2026-09-14",
         "baselineTotal": 608,
         "currentTotal": 599,
         "currentCoveragePercent": 99.8,
@@ -12290,7 +12582,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-13",
+        "currentDate": "2026-09-14",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -12839,7 +13131,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-09-13",
+        "currentDate": "2026-09-14",
         "baselineTotal": 17,
         "currentTotal": 2,
         "currentCoveragePercent": 100,
@@ -13094,7 +13386,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-09-13",
+        "currentDate": "2026-09-14",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
