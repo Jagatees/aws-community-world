@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-19T05:29:11.088Z",
+  "updatedAt": "2026-09-20T05:42:19.833Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -10445,7 +10445,7 @@
       }
     },
     {
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "source": {
         "type": "working-tree"
       },
@@ -10738,8 +10738,8 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-09-19",
-      "daysCovered": 174
+      "endDate": "2026-09-20",
+      "daysCovered": 175
     },
     "global": {
       "totalRecords": 4950,
@@ -10750,7 +10750,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-19",
+        "currentDate": "2026-09-20",
         "baselineTotal": 262,
         "currentTotal": 252,
         "currentCoveragePercent": 94.4,
@@ -11272,7 +11272,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-19",
+        "currentDate": "2026-09-20",
         "baselineTotal": 2494,
         "currentTotal": 3036,
         "currentCoveragePercent": 94.2,
@@ -11843,7 +11843,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-19",
+        "currentDate": "2026-09-20",
         "baselineTotal": 608,
         "currentTotal": 599,
         "currentCoveragePercent": 99.8,
@@ -12582,7 +12582,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-19",
+        "currentDate": "2026-09-20",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -13131,7 +13131,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-09-19",
+        "currentDate": "2026-09-20",
         "baselineTotal": 17,
         "currentTotal": 2,
         "currentCoveragePercent": 100,
@@ -13386,7 +13386,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-09-19",
+        "currentDate": "2026-09-20",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -13716,26 +13716,17 @@
       }
     },
     "upcoming": {
-      "total": 22,
-      "next30Days": 16,
+      "total": 21,
+      "next30Days": 15,
       "byRegion": {
         "north-america": 4,
-        "south-america": 5,
+        "south-america": 4,
         "europe": 6,
         "asia": 5,
         "africa": 1,
         "oceania": 1
       },
       "items": [
-        {
-          "name": "AWS Community Day Curitiba",
-          "location": "Curitiba, Brazil",
-          "country": "Brazil",
-          "region": "south-america",
-          "url": "https://awscommunityday.com.br/#sul",
-          "category": "community-days",
-          "date": "2026-09-19T12:00:00.000Z"
-        },
         {
           "name": "AWS Community Day The Netherlands",
           "location": "Amsterdam, Netherlands",
@@ -13906,6 +13897,15 @@
           "url": "https://awscommunityday.com.br/norte/",
           "category": "community-days",
           "date": "2026-10-31T12:00:00.000Z"
+        },
+        {
+          "name": "AWS Community Day Belém",
+          "location": "Belém, Brazil",
+          "country": "Brazil",
+          "region": "south-america",
+          "url": "https://awscommunityday.com.br/#norte",
+          "category": "community-days",
+          "date": "2026-11-14T12:00:00.000Z"
         }
       ]
     },
