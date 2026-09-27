@@ -1,215 +1,206 @@
 {
-  "updatedAt": "2026-09-26T05:50:39.918Z",
+  "updatedAt": "2026-09-27T06:12:21.606Z",
   "latest": [
     {
-      "id": "/content/3JqpJpL492aD9BYUxs2DSsXRVjl",
-      "title": "From Jev to Laya: What I Learned Building Three Demos",
-      "description": "Experiments with category mapping, message screening, and model specialization. September 2026.",
-      "url": "https://builder.aws.com/content/3JqpJpL492aD9BYUxs2DSsXRVjl",
+      "id": "/content/3Jtm2vPpvUY5nXgBeJuPdARsZro",
+      "title": "What Is Cloud Computing? A Beginner’s Introduction",
+      "description": "Cloud computing is becoming an important part of modern technology. In this article, I’ll share some basic cloud concepts, real-world examples, and what I’m learning as a beginner.",
+      "url": "https://builder.aws.com/content/3Jtm2vPpvUY5nXgBeJuPdARsZro",
       "imageUrl": "",
-      "authorName": "debojitr",
-      "authorAlias": "deboroy",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Hl43WShB4uhZgnK1hlRAdDp8ZP.webp",
-      "location": "AU",
-      "lat": -24.7761086,
-      "lng": 134.755,
+      "authorName": "chanikya devu",
+      "authorAlias": "chanikyadevu",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JXTGQJXCHpaLAXsWid3pG3iqZh.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
       "tags": [],
-      "publishedAt": "2026-09-26T05:48:08.154Z",
-      "likesCount": 2,
-      "commentsCount": 0
+      "publishedAt": "2026-09-27T06:00:12.947Z",
+      "likesCount": 12,
+      "commentsCount": 9
     },
     {
-      "id": "/content/3JquvxIJ3mGC63LIh3XMkozwjhf",
-      "title": "My First Steps into AWS as a Computer Engineering Student",
-      "description": "Starting my AWS journey as a Computer Engineering undergraduate, exploring cloud computing, AWS services, and the lessons I’m learning along the way.",
-      "url": "https://builder.aws.com/content/3JquvxIJ3mGC63LIh3XMkozwjhf",
-      "imageUrl": "",
-      "authorName": "Sewmini Dasunika",
-      "authorAlias": "sewminidasunika604",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JpSRlf4AaNgyGcuKFvwzpxQSDA.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
+      "id": "/content/3Jtjue4HUtgPkPlqslxS2kxcGhi",
+      "title": "Choosing a Research Topic: Multimodal Phishing Detection with Explainability",
+      "description": "How I picked a research paper topic for a Scopus-indexed conference requirement, and why explainability became the focus rather than just detection accuracy.",
+      "url": "https://builder.aws.com/content/3Jtjue4HUtgPkPlqslxS2kxcGhi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Jtm1sspYUjPcjgzytsGs5zZDA1/4fbc0.webp",
+      "authorName": "Kishan Singh",
+      "authorAlias": "kishancodes",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IwqCk4NRmV5f6qAJrIuTCLtb5p.webp",
+      "location": "Jharkhand, IN",
+      "lat": 23.4559809,
+      "lng": 85.2557301,
       "tags": [
-        "students",
-        "cloud-concepts",
-        "learn",
-        "project",
-        "beginner-projects"
+        "machine-learning",
+        "ai",
+        "cybersecurity"
       ],
-      "publishedAt": "2026-09-26T05:43:00.802Z",
-      "likesCount": 8,
+      "publishedAt": "2026-09-27T05:55:52.270Z",
+      "likesCount": 12,
+      "commentsCount": 12
+    },
+    {
+      "id": "/content/3JXBhacxjb5mf5F3F6hkHP2bt3o",
+      "title": "Building a Simple Machine Learning Project on AWS: A Beginner’s Guide",
+      "description": "beginner-friendly guide to understanding how AWS services can be used to build, store, deploy, and monitor a simple machine learning project.",
+      "url": "https://builder.aws.com/content/3JXBhacxjb5mf5F3F6hkHP2bt3o",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JtllWuQP0HKnpI3z6Xvd52sMWO/4956.webp",
+      "authorName": "DHIVYADARSHINI.I AIDS",
+      "authorAlias": "dhivyadarshini",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JrGD4ELnMLColTNdYs5ewDsIkn.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "ai",
+        "machine-learning",
+        "amazon-cloudfront"
+      ],
+      "publishedAt": "2026-09-27T05:53:58.056Z",
+      "likesCount": 4,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3JtjPeMbfrdVAoQJyeFcQkrvsvA",
+      "title": "Understanding Serverless Computing with AWS Lambda",
+      "description": "Learn how AWS Lambda enables developers to run code without managing servers, respond to events and build scalable cloud applications with a serverless approach.",
+      "url": "https://builder.aws.com/content/3JtjPeMbfrdVAoQJyeFcQkrvsvA",
+      "imageUrl": "",
+      "authorName": "Taneesha Malve",
+      "authorAlias": "taneeshamalve",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IrIru97TxwJuJuYWFYY3dYv7JP.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-lambda",
+        "serverless"
+      ],
+      "publishedAt": "2026-09-27T05:49:27.011Z",
+      "likesCount": 5,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3JtkK6oKFZg61X9H11FvpoXtq9B",
+      "title": "AWS Trends in 2026: What’s Shaping Cloud Computing Today",
+      "description": "Explore the latest AWS trends in 2026, from agentic AI and AI-native development to serverless, data analytics, observability, and sustainable cloud.",
+      "url": "https://builder.aws.com/content/3JtkK6oKFZg61X9H11FvpoXtq9B",
+      "imageUrl": "",
+      "authorName": "Ande UdayKiran",
+      "authorAlias": "uday05",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IRvtbJuyK0Iy6m8qVmYuH2XKbz.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-ai-chips",
+        "all-builders-welcome",
+        "aspiring-builders",
+        "aws-builders",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-09-27T05:43:56.970Z",
+      "likesCount": 5,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3JthyyEBkFvqYVs4FHlobuEKzeX",
+      "title": "Practice place AWS",
+      "description": "Use to practice AWS without money",
+      "url": "https://builder.aws.com/content/3JthyyEBkFvqYVs4FHlobuEKzeX",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JtjjITYfR2fWKuAue8zxyxDRgc/IMG_.webp",
+      "authorName": "Md Afzal karim",
+      "authorAlias": "afzal2001",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JtdqVl2r3i9dNka8vDLwcyQoeY.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "learning-and-development"
+      ],
+      "publishedAt": "2026-09-27T05:41:03.030Z",
+      "likesCount": 3,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3JtjNLPCxjN3fMRbqOMpattU7Ih",
+      "title": "My First Journey with AWS: Building in the Cloud",
+      "description": "Cloud computing has transformed the way developers build, learn, and innovate. For me, AWS was more than just a collection of services—it was a platform that turned ideas into real projects.",
+      "url": "https://builder.aws.com/content/3JtjNLPCxjN3fMRbqOMpattU7Ih",
+      "imageUrl": "",
+      "authorName": "A NAGAVINOD",
+      "authorAlias": "nagavinod",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IcYAcQNLJtcZoTVSJiJzbbWyqh.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [],
+      "publishedAt": "2026-09-27T05:35:38.688Z",
+      "likesCount": 7,
       "commentsCount": 6
     },
     {
-      "id": "/content/3Jqu7hYvKZQV45ji2WgzrFQmbXo",
-      "title": "🤖 Starting My AWS Certified AI Practitioner Journey 🚀",
-      "description": "Starting my journey toward the AWS Certified AI Practitioner certification! 🤖☁️ Exploring AI, ML, Generative AI, and AWS services while sharing what I learn with the community. 🚀",
-      "url": "https://builder.aws.com/content/3Jqu7hYvKZQV45ji2WgzrFQmbXo",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JqvFVzavx7gratzKdy9lNS8PBW/ai-p.webp",
-      "authorName": "Chitturi Devi Chaitanya",
-      "authorAlias": "devichaitanya",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J7aK9b9iyoXvI1SAF4aQ7lXWjD.webp",
+      "id": "/content/3Jtiz3yZzDKpuPoy22k67WlQ7hj",
+      "title": "HOW AWS CAN BE USED TO DETECT SCAM MESSAGES AND IMAGES",
+      "description": "This article explores how AWS and AI can be used to detect potential scams in messages and images. It explains a simple architecture using Amazon S3, AWS Lambda, API Gateway, and Amazon SageMaker to process content, identify suspicious patterns, and provide users with useful warning signs before they take action.",
+      "url": "https://builder.aws.com/content/3Jtiz3yZzDKpuPoy22k67WlQ7hj",
+      "imageUrl": "",
+      "authorName": "Harinath. S",
+      "authorAlias": "harinath98",
+      "authorAvatarUrl": "",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [],
+      "publishedAt": "2026-09-27T05:33:05.023Z",
+      "likesCount": 2,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3JtilNWkkcaJGc4ZX7MbTmL8jMG",
+      "title": "Amazon Bedrock: Building Generative AI Applications on AWS",
+      "description": "Amazon Bedrock provides managed access to foundation models and the building blocks needed to develop generative AI applications. This article explains how Bedrock works and explores capabilities such as foundation models, Knowledge Bases, Agents, Guardrails, Prompt Management, model evaluation, customization, and Bedrock Runtime. It also shows how these components can come together to build production-ready AI applications on AWS",
+      "url": "https://builder.aws.com/content/3JtilNWkkcaJGc4ZX7MbTmL8jMG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JtjhuJbSIDYnEVMJj9st3qHUb8/Scre.webp",
+      "authorName": "Fathima rasha",
+      "authorAlias": "fathimarasha",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ByT2mh5dq8GUgh4DLyI4TBcLmi.webp",
+      "location": "Kerala, IN",
+      "lat": 10.3528744,
+      "lng": 76.5120396,
+      "tags": [
+        "ai",
+        "aws-community-builders",
+        "student-builders",
+        "aws-student-builders-groups",
+        "students"
+      ],
+      "publishedAt": "2026-09-27T05:32:28.129Z",
+      "likesCount": 5,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3Jtfudae2V4HVbw80LeXrBtsbsp",
+      "title": "From Prompt to Production: Building a Secure AI Assistant on AWS",
+      "description": "Learn how to design a practical AI assistant on AWS using Amazon Bedrock, AWS Lambda, API Gateway, DynamoDB, IAM, and CloudWatch. This guide explains the architecture, request flow, security considerations, scalability, and production best practices behind a cloud-native AI application.",
+      "url": "https://builder.aws.com/content/3Jtfudae2V4HVbw80LeXrBtsbsp",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JtiRGwtjry97gmGGQYHKWzMj82/Imag.webp",
+      "authorName": "Kartik Jagdale",
+      "authorAlias": "kartikjagdaale",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Je5ZDWr7Ydo3KoqUPQCIodTBnD.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
         "ai",
         "amazon-bedrock",
-        "api",
-        "amazon-api-gateway",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-09-26T05:42:22.512Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3Jqt8zLNlVNuFBMv8BULXNW5lup",
-      "title": "Step-by-Step: Hosting a Static Website on Amazon S3",
-      "description": "Learn how to easily host a fast, secure, and cost-effective static HTML/CSS website using Amazon S3. This step-by-step tutorial is perfect for AWS beginners looking to build their very first practical cloud project!",
-      "url": "https://builder.aws.com/content/3Jqt8zLNlVNuFBMv8BULXNW5lup",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JquzuaiQYz8Pdojmr64p1NwykS/aws-.webp",
-      "authorName": "Adarsh Agrahari",
-      "authorAlias": "adrsh",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JqsNaZmgKUfR16koYLp9R9VpLc.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "beginner-projects",
-        "amazon-s3",
-        "tutorials"
-      ],
-      "publishedAt": "2026-09-26T05:40:03.425Z",
-      "likesCount": 3,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3JquQFILkE5zKK5ahAri7VVpprA",
-      "title": "Getting Started with AI Agents on Amazon Bedrock",
-      "description": "Learn the basic concepts behind AI agents and how Amazon Bedrock can be used to build applications that reason, use tools, and interact with external systems.",
-      "url": "https://builder.aws.com/content/3JquQFILkE5zKK5ahAri7VVpprA",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JqugajYvUltbYOi8i3pwOT0ZVo/Chat.webp",
-      "authorName": "Aditya Agrawal",
-      "authorAlias": "aditya30ag",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Jonh3rOfnXDQ7NXCQP8gOYaqt0.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agent-hooks",
-        "agents",
-        "agentic-ai",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-09-26T05:37:42.095Z",
-      "likesCount": 3,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3JqtlH5GSlp40HBM5oSgx5gxnm6",
-      "title": "From Zero to Live: The Mindset Shift That Helps You Actually Ship on AWS",
-      "description": "Stuck in feature creep or deployment anxiety? Learn how shrinking your MVP scope and setting up early CI/CD transforms perfectionism into a deployed AWS project.",
-      "url": "https://builder.aws.com/content/3JqtlH5GSlp40HBM5oSgx5gxnm6",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JquKZFpgKFsdnJBDJch75tIez3/Gemi.webp",
-      "authorName": "Md Injamul Islam",
-      "authorAlias": "injamul",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JZpuLmaDh0aOZrBgSB4C2Qcohy.webp",
-      "location": "West Bengal, IN",
-      "lat": 22.9964948,
-      "lng": 87.6855882,
-      "tags": [
-        "hackathon",
-        "architecture",
+        "aws-lambda",
         "serverless",
-        "beginner-projects"
+        "aws-cloudwatch"
       ],
-      "publishedAt": "2026-09-26T05:34:43.273Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3JqssW6X0mM0tD1JSBNrk36c6Ju",
-      "title": "Turning Experiments into Intelligent Systems",
-      "description": "I’m a Computer Science Engineering student exploring the intersection of AI, Machine Learning, Deep Learning, and Cloud Computing. I enjoy taking an idea from a simple experiment to a functional solution—whether it involves computer vision, data-driven applications, or intelligent automation.",
-      "url": "https://builder.aws.com/content/3JqssW6X0mM0tD1JSBNrk36c6Ju",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JqtcqDMKNClEriQTdrFzJucvAV/Arti.webp",
-      "authorName": "Shubham Jena",
-      "authorAlias": "shubham0528",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JUToVtdmbZj9UHOWwUL7go7GI9.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agents",
-        "advanced-networking",
-        "agentic-interactions",
-        "advertising-marketing-industry",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-09-26T05:29:00.249Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Jqrujyqlj6Eb8H8hHYABgxbQJu",
-      "title": "Building a Multi-Agent AI Research System with RAG, LangGraph and Gemini",
-      "description": "Exploring how multiple AI agents, RAG, web search, and LLMs can work together to automate research and generate structured reports.",
-      "url": "https://builder.aws.com/content/3Jqrujyqlj6Eb8H8hHYABgxbQJu",
-      "imageUrl": "",
-      "authorName": "Kishor Mate",
-      "authorAlias": "kishor123",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JYY2bZjp2P4C1tmvEql2WRF8dG.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [],
-      "publishedAt": "2026-09-26T05:16:04.392Z",
-      "likesCount": 10,
-      "commentsCount": 7
-    },
-    {
-      "id": "/content/3JqqqCcUeXEb7Ej5isKwhcmsKdT",
-      "title": "Moving Beyond ClickOps: The Intimidation and Freedom of Infrastructure as Code",
-      "description": "The AWS Management Console is visual and comfortable, but real cloud engineering begins when you stop clicking. An honest reflection on the steep transition from ClickOps to Infrastructure as Code, and why the initial vertigo is completely worth it.",
-      "url": "https://builder.aws.com/content/3JqqqCcUeXEb7Ej5isKwhcmsKdT",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JqrTK1AJKePWMY0iLjifQHdKwT/1000.webp",
-      "authorName": "Juan Naranjo",
-      "authorAlias": "guerrero11",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IKK6SU4W0hR44h81zFCPkPsKas.webp",
-      "location": "EC",
-      "lat": -1.3397668,
-      "lng": -79.3666965,
-      "tags": [
-        "infrastructure-as-code",
-        "devops",
-        "aws-cloudformation",
-        "developer",
-        "terraform"
-      ],
-      "publishedAt": "2026-09-26T05:11:05.609Z",
-      "likesCount": 6,
+      "publishedAt": "2026-09-27T05:29:40.555Z",
+      "likesCount": 4,
       "commentsCount": 3
-    },
-    {
-      "id": "/content/3JqqjtAyqQEGE7adXl584qa6lzA",
-      "title": "AWS Elastic Beanstalk – Simplifying Application Deployment",
-      "description": "AWS Elastic Beanstalk – Simplifying Application Deployment",
-      "url": "https://builder.aws.com/content/3JqqjtAyqQEGE7adXl584qa6lzA",
-      "imageUrl": "",
-      "authorName": "Nikhil",
-      "authorAlias": "vectornd",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IRJ8Z32XWqgvqLMf9oU78SThA2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agile"
-      ],
-      "publishedAt": "2026-09-26T05:05:30.468Z",
-      "likesCount": 7,
-      "commentsCount": 7
     }
   ],
   "trending": [
@@ -229,8 +220,8 @@
         "challenge"
       ],
       "publishedAt": "2026-09-25T00:41:20.495Z",
-      "likesCount": 627,
-      "commentsCount": 512
+      "likesCount": 1285,
+      "commentsCount": 1154
     },
     {
       "id": "/content/3JVlS5EVmqlZEcNMWMNeJhln9Sp",
@@ -250,8 +241,8 @@
         "hackathon"
       ],
       "publishedAt": "2026-09-18T18:54:10.304Z",
-      "likesCount": 2194,
-      "commentsCount": 1670
+      "likesCount": 2324,
+      "commentsCount": 1786
     },
     {
       "id": "/content/3JQdqqBy4Dz5chUEbku3ooeDiXh",
@@ -267,8 +258,8 @@
       "lng": -120.737257,
       "tags": [],
       "publishedAt": "2026-09-18T00:17:33.796Z",
-      "likesCount": 2691,
-      "commentsCount": 2297
+      "likesCount": 2741,
+      "commentsCount": 2376
     },
     {
       "id": "/content/3JNtXeZax1v5f73FkGvm6EBoQrz",
@@ -287,8 +278,25 @@
         "aws-community"
       ],
       "publishedAt": "2026-09-15T23:29:40.054Z",
-      "likesCount": 2230,
-      "commentsCount": 1586
+      "likesCount": 2298,
+      "commentsCount": 1644
+    },
+    {
+      "id": "/content/3JVxSt0eLCUFivz63h9RFbQtmLv",
+      "title": "Zero to Shipped - FAQs",
+      "description": "List of commonly asked questions related to the Zero to shipped hackathon",
+      "url": "https://builder.aws.com/content/3JVxSt0eLCUFivz63h9RFbQtmLv",
+      "imageUrl": "",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-09-18T19:38:21.468Z",
+      "likesCount": 879,
+      "commentsCount": 592
     },
     {
       "id": "/content/3Jaj0q8Rxetby5rTOclfSLejBbZ",
@@ -310,25 +318,8 @@
         "python"
       ],
       "publishedAt": "2026-09-20T14:20:20.182Z",
-      "likesCount": 1208,
-      "commentsCount": 1752
-    },
-    {
-      "id": "/content/3JVxSt0eLCUFivz63h9RFbQtmLv",
-      "title": "Zero to Shipped - FAQs",
-      "description": "List of commonly asked questions related to the Zero to shipped hackathon",
-      "url": "https://builder.aws.com/content/3JVxSt0eLCUFivz63h9RFbQtmLv",
-      "imageUrl": "",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-09-18T19:38:21.468Z",
-      "likesCount": 733,
-      "commentsCount": 480
+      "likesCount": 1320,
+      "commentsCount": 1839
     },
     {
       "id": "/content/3JZCWttwisf6WxqNTuFg1Z8EnEF",
@@ -350,8 +341,8 @@
         "serverless"
       ],
       "publishedAt": "2026-09-20T00:17:38.830Z",
-      "likesCount": 1054,
-      "commentsCount": 985
+      "likesCount": 1151,
+      "commentsCount": 1074
     },
     {
       "id": "/content/3JWzS0steluUjgZupKreuZXK5cO",
@@ -373,8 +364,8 @@
         "amazon-ses"
       ],
       "publishedAt": "2026-09-19T04:22:57.724Z",
-      "likesCount": 1460,
-      "commentsCount": 1165
+      "likesCount": 1506,
+      "commentsCount": 1213
     },
     {
       "id": "/content/3JQdUYne1ujIvtoLgWiV7iBGklF",
@@ -395,8 +386,8 @@
         "aws-free-tier"
       ],
       "publishedAt": "2026-09-17T23:00:30.785Z",
-      "likesCount": 2375,
-      "commentsCount": 2156
+      "likesCount": 2415,
+      "commentsCount": 2190
     },
     {
       "id": "/content/3JZbv8bGd93EIOM7PfkZPf2GnCS",
@@ -416,8 +407,8 @@
         "aws-certification"
       ],
       "publishedAt": "2026-09-20T02:38:37.881Z",
-      "likesCount": 744,
-      "commentsCount": 644
+      "likesCount": 889,
+      "commentsCount": 778
     }
   ]
 }
