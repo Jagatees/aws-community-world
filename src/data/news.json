@@ -1,224 +1,219 @@
 {
-  "updatedAt": "2026-09-29T06:34:24.025Z",
+  "updatedAt": "2026-09-30T06:17:09.638Z",
   "latest": [
     {
-      "id": "/content/3JxyTnWxKa33wMmvzSHMxqfpkM1",
-      "title": "AWS Cloud Deployment for Beginners: Build, Deploy & Secure a Static Website with S3, CloudFront and IAM 🚀",
-      "description": "Learn how to deploy a static website using Amazon S3 and CloudFront while understanding how AWS IAM helps control access. This beginner-friendly guide explains the architecture, role of each service, security considerations, common mistakes, and the key lessons I learned while starting my AWS cloud journey.",
-      "url": "https://builder.aws.com/content/3JxyTnWxKa33wMmvzSHMxqfpkM1",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JzUgMlElrn0fx8CzTMF2XWtFrz/clou.webp",
-      "authorName": "Abhay Shankar Mishra",
-      "authorAlias": "abhaymishra04",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JxyOoTqFbcZ8XjTyEaNEISqrrn.webp",
-      "location": "Jharkhand, IN",
-      "lat": 23.4559809,
-      "lng": 85.2557301,
+      "id": "/content/3K2Grm8AMSXl4T7Rfy68TtMylQW",
+      "title": "What I Learned About AWS Lambda",
+      "description": "While learning AWS, I came across Lambda and found the idea of running code without managing a server very interesting. Here is my simple understanding of how Lambda works and why I want to use it in my projects.",
+      "url": "https://builder.aws.com/content/3K2Grm8AMSXl4T7Rfy68TtMylQW",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3K2Hwje6aNPWMJink3hVBBgpP3C/1000.webp",
+      "authorName": "Dnyaneshwar Patil",
+      "authorAlias": "dnyaneshwar09",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JXtPnqjC4Y9HtIkOquSHygqUD1.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "advertising-marketing-industry",
-        "amazon-s3",
-        "aws-community",
-        "aws-codepipeline",
-        "aws-cloud-clubs"
+        "aws-lambda",
+        "software-engineering",
+        "aspiring-developer",
+        "java"
       ],
-      "publishedAt": "2026-09-29T06:33:29.120Z",
-      "likesCount": 2,
+      "publishedAt": "2026-09-30T06:16:42.843Z",
+      "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3JzSUCuMaGkubrTwc8kbJkvvfYt",
-      "title": "Inside an AI Agent on AWS: Following One Request from Prompt to Reply",
-      "description": "A beginner-friendly walkthrough of one AI agent request on AWS, covering identity, runtime, model reasoning, tool calls, memory and tracing with Amazon Bedrock and AgentCore.",
-      "url": "https://builder.aws.com/content/3JzSUCuMaGkubrTwc8kbJkvvfYt",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JzTGuue8T5Y3Hs4tpLogH9ojUR/0f58.webp",
-      "authorName": "Giridhar Manohar Kotwal",
-      "authorAlias": "kotwalgiri96",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IOcOfvjAxYP7GWo6cSTR6tpaHD.webp",
+      "id": "/content/3K2HmucHua8Q8fg9xOZPzOLJcjy",
+      "title": "From AWS Learner to Cloud Builder: Building My Own Path",
+      "description": "Learning AWS is not only about completing courses. It is about experimenting, building projects, solving problems, and gradually turning knowledge into real cloud skills.",
+      "url": "https://builder.aws.com/content/3K2HmucHua8Q8fg9xOZPzOLJcjy",
+      "imageUrl": "",
+      "authorName": "riteshlande",
+      "authorAlias": "riteshlande1115",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Jzm2Vd97wqz3udmIsKxLLeyOAJ.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-builders",
+        "aws-community-builders",
+        "learn",
+        "students",
+        "student-builders"
+      ],
+      "publishedAt": "2026-09-30T06:16:14.088Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3JwN5BvhDpUnfOcuXMqbJ39G310",
+      "title": "I Started Learning AWS. Then I Checked My Bill.",
+      "description": "Warning for AWS Beginners: AWS makes it easy to create powerful cloud resources, but it’s also easy to accidentally create costs. Before launching a service, always check its pricing, understand what you are creating, and remember to stop, delete, or optimize resources you no longer need. A few minutes of checking can prevent an unexpected AWS bill.",
+      "url": "https://builder.aws.com/content/3JwN5BvhDpUnfOcuXMqbJ39G310",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3K2Hf73xP7ptWnNs9q1QMUaAwCD/3-pn.webp",
+      "authorName": "Neeraj Soni",
+      "authorAlias": "neeraj0301",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JNDwz6zpaeIXGVBq63ZJeXvqwa.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "amazon-ec2",
+        "amazon-cloudwatch",
+        "aws-lambda",
+        "amazon-s3",
+        "cost"
+      ],
+      "publishedAt": "2026-09-30T06:16:05.300Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3K2HN7f1b9M2cx9eMRfmjCSkxBf",
+      "title": "Building a Digital Farm Management Portal: From Idea to Deployment",
+      "description": "A practical journey of designing and developing a digital farm management portal for managing farmers, farms, animals, and vaccination records, with a roadmap toward AWS-powered cloud deployment.",
+      "url": "https://builder.aws.com/content/3K2HN7f1b9M2cx9eMRfmjCSkxBf",
+      "imageUrl": "",
+      "authorName": "KAVIN Jayaram",
+      "authorAlias": "kavinkj",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JqxI5NUNCBlJR5HOUflxgHc9Fl.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-cloudformation",
+        "web-development"
+      ],
+      "publishedAt": "2026-09-30T06:15:12.097Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3K2H0UqcucDyCJncN34nliqWHEO",
+      "title": "How AWS Powers the Digital World ?",
+      "description": "Behind the Scenes",
+      "url": "https://builder.aws.com/content/3K2H0UqcucDyCJncN34nliqWHEO",
+      "imageUrl": "",
+      "authorName": "Priyansh Porwal",
+      "authorAlias": "priyanshporwal",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JfxS4OZ5YpTHSUaAmHe4lbtsXZ.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-09-30T06:12:23.471Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3K2Grh7Cz0CMCG2fSxaUvyNrKsF",
+      "title": "The Real Cost of Running AI Agents on AWS: A Breakdown Nobody Talks About",
+      "description": "Model costs are just the start. Here's a full breakdown of what running AI agents on AWS actually costs, guardrails, policies, retrieval, and more.",
+      "url": "https://builder.aws.com/content/3K2Grh7Cz0CMCG2fSxaUvyNrKsF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3K2H6rXBYTiGzBRNSM2IhgqOxNj/cora.webp",
+      "authorName": "Naveen G",
+      "authorAlias": "naveen15",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36t9Fs5MA6HnbMaOoRbR87lw00D.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agentic-ai",
+        "artificial-intelligence"
+      ],
+      "publishedAt": "2026-09-30T06:11:02.524Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3K29nOdwKOXkGoI9YjDScRLfpea",
+      "title": "Your AI Agent Can Be Green and Still Be Failing",
+      "description": "Traditional monitoring can show an AI agent as healthy while the user experience is failing. This article explores the production metrics that matter for agentic AI, including task success, tool selection, cost, latency, and evaluation, and how observability can help teams detect failures beyond infrastructure health.",
+      "url": "https://builder.aws.com/content/3K29nOdwKOXkGoI9YjDScRLfpea",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3K2Gzggre07uKHON3CNpdiHo49q/aws-.webp",
+      "authorName": "Rushikesh Bobade",
+      "authorAlias": "rushikesh369",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JMxP5N7EgzuowhnEvVqn5zOduf.webp",
       "location": "Maharashtra, IN",
       "lat": 19.5670323,
       "lng": 76.4164557,
       "tags": [
         "agentic-ai",
-        "amazon-bedrock-agentcore",
-        "aws-lambda",
-        "serverless",
-        "amazon-bedrock"
+        "amazon-bedrock",
+        "generative-ai",
+        "ai-agents",
+        "ai-assisted-workflows"
       ],
-      "publishedAt": "2026-09-29T06:29:53.172Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3JzQtRX0uG3X0HILMskRhhpM5Hy",
-      "title": "NGINX as a Reverse Proxy",
-      "description": "A reverse proxy is a server that sits between the client and the backend server.\nInstead of the client directly communicating with the backend, the client sends the request to the reverse proxy.",
-      "url": "https://builder.aws.com/content/3JzQtRX0uG3X0HILMskRhhpM5Hy",
-      "imageUrl": "",
-      "authorName": "Surya Sah",
-      "authorAlias": "suraj321",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JuYVc5LaAKuY0X7rwE2wMUBcuW.webp",
-      "location": "NP",
-      "lat": 28.3780464,
-      "lng": 83.9999901,
-      "tags": [
-        "nginx",
-        "ai-engineering",
-        "backend",
-        "devops"
-      ],
-      "publishedAt": "2026-09-29T06:22:27.582Z",
-      "likesCount": 6,
-      "commentsCount": 7
-    },
-    {
-      "id": "/content/3JzTEIEJNCe2cX4YS76msHZ4Xo5",
-      "title": "How to Build and Deploy a Serverless Web API with AWS Lambda and API Gateway",
-      "description": "Learn how to build, configure, and deploy a scalable, cost-effective serverless REST API using AWS Lambda, Amazon API Gateway, and Node.js in under 15 minutes.",
-      "url": "https://builder.aws.com/content/3JzTEIEJNCe2cX4YS76msHZ4Xo5",
-      "imageUrl": "",
-      "authorName": "Nandhanasree Myilsamy",
-      "authorAlias": "nandhana0807",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Jj2xk1sqIHhXaspLU0mqima3gG.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-lambda",
-        "api-gateway",
-        "serverless",
-        "web-development"
-      ],
-      "publishedAt": "2026-09-29T06:22:25.098Z",
-      "likesCount": 5,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3JzScf0hgfgyZx6Rp7hqwNrB8vR",
-      "title": "Building a Serverless Web Application Using AWS Lambda, API Gateway, and DynamoDB",
-      "description": "Learn how to build a simple scalable web application using AWS Lambda, API Gateway, and Amazon DynamoDB without managing traditional servers.",
-      "url": "https://builder.aws.com/content/3JzScf0hgfgyZx6Rp7hqwNrB8vR",
-      "imageUrl": "",
-      "authorName": "Vikas Shingne",
-      "authorAlias": "vikasshingne",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JzRqt2qU8g0l5WsrstkpX6PC0r.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "ai-engineering",
-        "amazon-api-gateway",
-        "amazon-dynamodb",
-        "microsoft"
-      ],
-      "publishedAt": "2026-09-29T06:18:54.641Z",
-      "likesCount": 4,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3JzSibKb7k47eJwzijNfJEIkUq1",
-      "title": "Building an Event-Driven Alert System with AWS Lambda and Amazon SNS",
-      "description": "Learn how to create a serverless, event-driven architecture using AWS Lambda and Amazon SNS. This step-by-step guide covers setting up automated email notifications triggered by cloud events to build reliable monitoring workflows.",
-      "url": "https://builder.aws.com/content/3JzSibKb7k47eJwzijNfJEIkUq1",
-      "imageUrl": "",
-      "authorName": "Jahnavi Kondeti",
-      "authorAlias": "jahnavii25",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "agentic-ide",
-        "agentic-interactions",
-        "agents",
-        "agent-hooks"
-      ],
-      "publishedAt": "2026-09-29T06:17:37.225Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3JzSZZ6yrx7V11NVKUzz5vOinGH",
-      "title": "“Building a Cost-Efficient Serverless Application with AWS Lambda”",
-      "description": "Serverless Architactures using AWS lambda",
-      "url": "https://builder.aws.com/content/3JzSZZ6yrx7V11NVKUzz5vOinGH",
-      "imageUrl": "",
-      "authorName": "Darshan",
-      "authorAlias": "bboy7",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IinOtAPHynldVrMrNYLTQm2cK3.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-lambda",
-        "cost"
-      ],
-      "publishedAt": "2026-09-29T06:16:02.473Z",
-      "likesCount": 4,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3JzSQYMOpUrXUInvF2vZaMSWoza",
-      "title": "Building an Event-Driven Alert System with AWS Lambda and Amazon SNS",
-      "description": "Learn how to create a serverless, event-driven architecture using AWS Lambda and Amazon SNS. This step-by-step guide covers setting up automated email notifications triggered by cloud events to build reliable monitoring workflows.",
-      "url": "https://builder.aws.com/content/3JzSQYMOpUrXUInvF2vZaMSWoza",
-      "imageUrl": "",
-      "authorName": "JANNU SARAN",
-      "authorAlias": "saranjannu",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agent-toolkit",
-        "agent-to-agent"
-      ],
-      "publishedAt": "2026-09-29T06:14:28.598Z",
-      "likesCount": 6,
-      "commentsCount": 4
-    },
-    {
-      "id": "/content/3JzRyP53dfuUbaLY4fVtxlAG9CY",
-      "title": "Building a Scalable Entity Resolution Pipeline for 1.7M Records: Amazon ML Challenge 2026",
-      "description": "End-to-end Machine Learning pipeline for large-scale Business Entity Resolution (1.73M entities) using Dual-Key Hash Blocking, 8-D similarity feature engineering, and precision-tuned LightGBM (Amazon ML Challenge 2026).",
-      "url": "https://builder.aws.com/content/3JzRyP53dfuUbaLY4fVtxlAG9CY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JzSGgP2MjcU1ezziqHHfiRlaHK/Amazo.webp",
-      "authorName": "Srinivas Sriraman",
-      "authorAlias": "srinivas2305",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JaIdPNMlgurRrYWrLV9PMfR1jv.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "machine-learning",
-        "python",
-        "data-engineering"
-      ],
-      "publishedAt": "2026-09-29T06:14:00.604Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3JzS1CAyi9Cw3YemwwBPjOWBWjB",
-      "title": "Zero-Cost AWS Apps for Students",
-      "description": "Host your Next.js and Python portfolio projects on AWS without spending a dime. Learn how to maximize the Free Tier and build a zero-cost architecture.",
-      "url": "https://builder.aws.com/content/3JzS1CAyi9Cw3YemwwBPjOWBWjB",
-      "imageUrl": "",
-      "authorName": "Moksh Reddy",
-      "authorAlias": "mokshr",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JRcbjxy0txU29QpPY6o4odCMYf.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "architecture",
-        "students",
-        "student-builders",
-        "aws-student-builders-groups"
-      ],
-      "publishedAt": "2026-09-29T06:11:12.976Z",
-      "likesCount": 12,
+      "publishedAt": "2026-09-30T06:09:49.934Z",
+      "likesCount": 0,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3JqxsQ8eh3tNi0JuGbJs9RmCw57",
+      "title": "Secure Your New AWS Account in 60 Minutes: A Practical Beginner's Security Checklist",
+      "description": "A step-by-step checklist for locking down a fresh AWS account: protect the root user, set up least-privilege access, turn on logging and threat detection, and add spending guardrails. Built for students and first-time builders.",
+      "url": "https://builder.aws.com/content/3JqxsQ8eh3tNi0JuGbJs9RmCw57",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3K2GsOHuPPynZFbL8lud2SVdeXU/down.webp",
+      "authorName": "Kushan Rathnayake",
+      "authorAlias": "hunt007",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JUNlk4ILkWO79Ln9h8ZIZL4HR9.webp",
+      "location": "LK",
+      "lat": 7.5554942,
+      "lng": 80.7137847,
+      "tags": [
+        "cybersecurity",
+        "iam",
+        "beginner-projects",
+        "getting-started",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-09-30T06:04:24.179Z",
+      "likesCount": 8,
+      "commentsCount": 6
+    },
+    {
+      "id": "/content/3K2FVrBg4tsF8E4qkqFRcD5k5uI",
+      "title": "What Happens When an AWS Lambda Function Fails?",
+      "description": "What happens when a Lambda function fails? This article explores Lambda retries, Amazon SQS, Dead-Letter Queues, idempotency, and monitoring through a practical order-processing example.",
+      "url": "https://builder.aws.com/content/3K2FVrBg4tsF8E4qkqFRcD5k5uI",
+      "imageUrl": "",
+      "authorName": "Venkatesh",
+      "authorAlias": "venkatesh2801",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JOjgz3BxcDFRcMHbOq66itwXoS.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-lambda",
+        "serverless",
+        "amazon-sqs",
+        "reliability"
+      ],
+      "publishedAt": "2026-09-30T05:57:54.800Z",
+      "likesCount": 7,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3K2D5FskfbIJVeAXLnGrvlh0ypz",
+      "title": "Building a Serverless Web API with AWS Lambda and Amazon API Gateway",
+      "description": "Learn how to build and deploy a simple serverless REST API using AWS Lambda and Amazon API Gateway, without managing servers.",
+      "url": "https://builder.aws.com/content/3K2D5FskfbIJVeAXLnGrvlh0ypz",
+      "imageUrl": "",
+      "authorName": "Gokul .K",
+      "authorAlias": "gokul6366",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3K2CmrYvs35tGj9p4PxmFB7zNgM.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-api",
+        "aws-lambda",
+        "serverless"
+      ],
+      "publishedAt": "2026-09-30T05:49:30.074Z",
+      "likesCount": 17,
+      "commentsCount": 13
     }
   ],
   "trending": [
@@ -238,8 +233,8 @@
         "challenge"
       ],
       "publishedAt": "2026-09-25T00:41:20.495Z",
-      "likesCount": 1938,
-      "commentsCount": 1830
+      "likesCount": 2140,
+      "commentsCount": 2078
     },
     {
       "id": "/content/3JVlS5EVmqlZEcNMWMNeJhln9Sp",
@@ -259,8 +254,8 @@
         "hackathon"
       ],
       "publishedAt": "2026-09-18T18:54:10.304Z",
-      "likesCount": 2594,
-      "commentsCount": 2021
+      "likesCount": 2750,
+      "commentsCount": 2150
     },
     {
       "id": "/content/3JQdqqBy4Dz5chUEbku3ooeDiXh",
@@ -276,8 +271,8 @@
       "lng": -120.737257,
       "tags": [],
       "publishedAt": "2026-09-18T00:17:33.796Z",
-      "likesCount": 2895,
-      "commentsCount": 2507
+      "likesCount": 2971,
+      "commentsCount": 2572
     },
     {
       "id": "/content/3JqLz8W5m8iK7CAriRICp6nk2M1",
@@ -299,8 +294,8 @@
         "security"
       ],
       "publishedAt": "2026-09-26T02:11:08.908Z",
-      "likesCount": 600,
-      "commentsCount": 532
+      "likesCount": 955,
+      "commentsCount": 837
     },
     {
       "id": "/content/3JVxSt0eLCUFivz63h9RFbQtmLv",
@@ -316,72 +311,8 @@
       "lng": -120.737257,
       "tags": [],
       "publishedAt": "2026-09-18T19:38:21.468Z",
-      "likesCount": 1236,
-      "commentsCount": 869
-    },
-    {
-      "id": "/content/3JNtXeZax1v5f73FkGvm6EBoQrz",
-      "title": "Introducing Polls on AWS Builder Center",
-      "description": "Starting today, builders can ask the community a question, collect votes, and see results right from the Home feed.",
-      "url": "https://builder.aws.com/content/3JNtXeZax1v5f73FkGvm6EBoQrz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JNuu9TZAopeRjBAkBCZ8iIpjKw/aws-.webp",
-      "authorName": "Rick Suttles",
-      "authorAlias": "ricksuttles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "builder-center",
-        "aws-community"
-      ],
-      "publishedAt": "2026-09-15T23:29:40.054Z",
-      "likesCount": 2427,
-      "commentsCount": 1742
-    },
-    {
-      "id": "/content/3Jaj0q8Rxetby5rTOclfSLejBbZ",
-      "title": "Beyond Text Extraction: Building a Defensible Case Intelligence Engine on AWS",
-      "description": "Why extracting text with OCR and LLMs isn't enough for high-stakes decisions. Learn how Samanvay models claims, provenance, and a deterministic decision boundary on AWS to make automated decisions reproducible and auditable.\n",
-      "url": "https://builder.aws.com/content/3Jaj0q8Rxetby5rTOclfSLejBbZ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JazUTHKEslMCZIMbGNXajBQWsZ/Cove.webp",
-      "authorName": "Harsh Singh",
-      "authorAlias": "hashsingh910",
-      "authorAvatarUrl": "",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "generative-ai",
-        "architecture",
-        "serverless",
-        "machine-learning",
-        "python"
-      ],
-      "publishedAt": "2026-09-20T14:20:20.182Z",
-      "likesCount": 1485,
-      "commentsCount": 1969
-    },
-    {
-      "id": "/content/3Ht0WRTgZ8pFJpYlNovLAPQg5KG",
-      "title": "Introducing the AWS Builder app",
-      "description": "Starting today, you can access AWS Builder Center from a native app on iOS and Android.",
-      "url": "https://builder.aws.com/content/3Ht0WRTgZ8pFJpYlNovLAPQg5KG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3HtHSh9kZPuhd22UjdhfRmbQHgD/webs.webp",
-      "authorName": "Rick Suttles",
-      "authorAlias": "ricksuttles",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "aws-builders",
-        "builder-center",
-        "mobile"
-      ],
-      "publishedAt": "2026-09-17T21:17:08.200Z",
-      "likesCount": 841,
-      "commentsCount": 697
+      "likesCount": 1329,
+      "commentsCount": 932
     },
     {
       "id": "/content/3Js5dKTU1oZrbeNKcpTHcbtPrd6",
@@ -403,31 +334,94 @@
         "ai-agents"
       ],
       "publishedAt": "2026-09-26T19:08:50.746Z",
-      "likesCount": 179,
-      "commentsCount": 157
+      "likesCount": 471,
+      "commentsCount": 425
     },
     {
-      "id": "/content/3JZCWttwisf6WxqNTuFg1Z8EnEF",
-      "title": "[EN] ChDB or DuckDB on AWS Lambda: A Technical Comparison — #1 Environment Setup",
-      "description": "Reviewing and understanding the different ways to install DuckDB and ChDB, along with their respective extensions, within AWS Lambda, with the goal of conducting a technical comparison to understand how these options impact the use of AWS Lambda when developing data pipelines.",
-      "url": "https://builder.aws.com/content/3JZCWttwisf6WxqNTuFg1Z8EnEF",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JZKYVdXLPyZyTE2iYJzgYTfkrR/46e2.webp",
-      "authorName": "Carlos Chicata",
-      "authorAlias": "ferchicata49",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B9gO2DnQ9yhcrz6FLvZUPz6pdJ.webp",
-      "location": "PE",
-      "lat": -6.8699697,
-      "lng": -75.0458515,
+      "id": "/content/3JNtXeZax1v5f73FkGvm6EBoQrz",
+      "title": "Introducing Polls on AWS Builder Center",
+      "description": "Starting today, builders can ask the community a question, collect votes, and see results right from the Home feed.",
+      "url": "https://builder.aws.com/content/3JNtXeZax1v5f73FkGvm6EBoQrz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JNuu9TZAopeRjBAkBCZ8iIpjKw/aws-.webp",
+      "authorName": "Rick Suttles",
+      "authorAlias": "ricksuttles",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
       "tags": [
-        "aws-lambda",
-        "data-processing",
-        "data-engineering",
-        "analytics",
-        "serverless"
+        "builder-center",
+        "aws-community"
       ],
-      "publishedAt": "2026-09-20T00:17:38.830Z",
-      "likesCount": 1291,
-      "commentsCount": 1222
+      "publishedAt": "2026-09-15T23:29:40.054Z",
+      "likesCount": 2473,
+      "commentsCount": 1779
+    },
+    {
+      "id": "/content/3Ht0WRTgZ8pFJpYlNovLAPQg5KG",
+      "title": "Introducing the AWS Builder app",
+      "description": "Starting today, you can access AWS Builder Center from a native app on iOS and Android.",
+      "url": "https://builder.aws.com/content/3Ht0WRTgZ8pFJpYlNovLAPQg5KG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3HtHSh9kZPuhd22UjdhfRmbQHgD/webs.webp",
+      "authorName": "Rick Suttles",
+      "authorAlias": "ricksuttles",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/38V9yDQnuj2SyBhbIAJMhbQyCvB.webp",
+      "location": "CA, US",
+      "lat": 36.7014631,
+      "lng": -118.755997,
+      "tags": [
+        "aws-builders",
+        "builder-center",
+        "mobile"
+      ],
+      "publishedAt": "2026-09-17T21:17:08.200Z",
+      "likesCount": 967,
+      "commentsCount": 784
+    },
+    {
+      "id": "/content/3JwWE03s95N8cy0QtDSjRTpmMhs",
+      "title": "From Kubernetes Basics to EKS: My Hands-On Learning Journey with Pods, Deployments, YAML, and Docker",
+      "description": "A practical beginner’s journey through Kubernetes and Amazon EKS, covering Pods, Services, Deployments, ReplicaSets, YAML manifests, troubleshooting, and Docker fundamentals with hands-on examples.",
+      "url": "https://builder.aws.com/content/3JwWE03s95N8cy0QtDSjRTpmMhs",
+      "imageUrl": "",
+      "authorName": "Pradnya",
+      "authorAlias": "pradnyakapadne12",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JfzphMITWknvQJ8Z894lYYhom1.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "kubernetes",
+        "amazon-eks",
+        "docker",
+        "devops"
+      ],
+      "publishedAt": "2026-09-28T05:19:26.360Z",
+      "likesCount": 166,
+      "commentsCount": 171
+    },
+    {
+      "id": "/content/3Jaj0q8Rxetby5rTOclfSLejBbZ",
+      "title": "Beyond Text Extraction: Building a Defensible Case Intelligence Engine on AWS",
+      "description": "Why extracting text with OCR and LLMs isn't enough for high-stakes decisions. Learn how Samanvay models claims, provenance, and a deterministic decision boundary on AWS to make automated decisions reproducible and auditable.\n",
+      "url": "https://builder.aws.com/content/3Jaj0q8Rxetby5rTOclfSLejBbZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3JazUTHKEslMCZIMbGNXajBQWsZ/Cove.webp",
+      "authorName": "Harsh Singh",
+      "authorAlias": "hashsingh910",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "generative-ai",
+        "architecture",
+        "serverless",
+        "machine-learning",
+        "python"
+      ],
+      "publishedAt": "2026-09-20T14:20:20.182Z",
+      "likesCount": 1547,
+      "commentsCount": 2035
     }
   ]
 }
