@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import createGlobe from 'cobe';
 import { countryCodeToFlag, getCountryCode } from '../utils/countryFlags';
-import { getMemberCountry, getRepresentedMemberCount } from '../utils/memberMarkers';
+import { getMemberCountry, getRepresentedMemberCount, hasNewMember } from '../utils/memberMarkers';
 import { buildGlobeClusterLevels, getGlobeClusterLevel } from '../utils/globeClusters';
 import './GlobeScene.css';
 
@@ -212,6 +212,24 @@ function drawMarkers(canvas, markers, markerRgb, pixelRatio, spriteCache) {
     }
     context.globalAlpha = edgeFade;
     context.drawImage(sprite, marker.x - sprite.width / 2, marker.y - sprite.height / 2);
+    if (marker.hasNewMember) {
+      const width = 30 * pixelRatio;
+      const height = 16 * pixelRatio;
+      const x = marker.x + radius - width / 2;
+      const y = marker.y - radius - height / 2;
+      context.fillStyle = '#FF9900';
+      context.strokeStyle = '#0B1824';
+      context.lineWidth = 2 * pixelRatio;
+      context.beginPath();
+      context.roundRect(x, y, width, height, height / 2);
+      context.fill();
+      context.stroke();
+      context.fillStyle = '#0F1923';
+      context.font = `900 ${8 * pixelRatio}px system-ui, sans-serif`;
+      context.textAlign = 'center';
+      context.textBaseline = 'middle';
+      context.fillText('NEW', x + width / 2, y + height / 2);
+    }
   }
   context.globalAlpha = 1;
 }
@@ -296,6 +314,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         location: [cluster.lat, cluster.lng],
         vector: latLngToVector(cluster.lat, cluster.lng),
         count: getRepresentedMemberCount(cluster.members),
+        hasNewMember: hasNewMember(cluster),
         size:
           getRepresentedMemberCount(cluster.members) > 1
             ? Math.min(
@@ -524,12 +543,13 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           const element = labelElementsRef.current[nextPoolIndex];
           if (!element) continue;
 
-          const labelSignature = `${marker.key}|${marker.label.text}|${marker.label.country}|${marker.label.flag}`;
+          const labelSignature = `${marker.key}|${marker.label.text}|${marker.label.country}|${marker.label.flag}|${marker.hasNewMember}`;
           if (element.dataset.labelSignature !== labelSignature) {
-            const accessibleLabel = `${marker.label.text}${marker.label.country ? ` · ${marker.label.country}` : ''}`;
+            const accessibleLabel = `${marker.label.text}${marker.label.country ? ` · ${marker.label.country}` : ''}${marker.hasNewMember ? ' · New in this directory' : ''}`;
             const iconElement = element.querySelector('.minimal-marker-label__icon');
             const textElement = element.querySelector('.minimal-marker-label__text');
             element.dataset.labelSignature = labelSignature;
+            element.dataset.newMember = String(marker.hasNewMember);
             element.setAttribute('aria-label', accessibleLabel);
             element.setAttribute('title', accessibleLabel);
             iconElement?.classList.toggle('minimal-marker-label__icon--flag', Boolean(marker.label.flag));

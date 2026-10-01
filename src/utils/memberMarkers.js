@@ -97,14 +97,17 @@ export function getMemberBadgeLabel(member) {
 }
 
 export function hasNewMember(value) {
-  const members = Array.isArray(value) ? value : [value];
-  return members.some((member) => member?.isNew);
+  if (Array.isArray(value)) return value.some(hasNewMember);
+  if (Array.isArray(value?.members)) return value.members.some(hasNewMember);
+  if (typeof value?.isNew === 'boolean') return value.isNew;
+  return Boolean(value?.clusterOnly && value.newBuilderCount > 0);
 }
 
 export function createNewMemberBadgeElement(darkMode) {
   const badge = document.createElement('span');
+  badge.dataset.newMemberBadge = 'true';
   badge.textContent = 'NEW';
-  badge.title = 'New community builder';
+  badge.title = 'New in this directory';
   badge.style.position = 'absolute';
   badge.style.right = '-8px';
   badge.style.top = '-8px';

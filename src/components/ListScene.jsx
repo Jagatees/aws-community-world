@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { getMemberImage } from '../utils/memberMarkers';
 import AddToCalendar from './AddToCalendar';
+import NewMemberBadge from './NewMemberBadge';
 
 const PAGE_SIZE = 60;
 
@@ -85,24 +86,27 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
         event.currentTarget.style.transform = '';
       }}
     >
-      {imageUrl && !imageFailed ? (
-        <img
-          src={imageUrl}
-          alt={title}
-          className="h-12 w-12 flex-shrink-0 rounded-xl object-cover"
-          style={{ border: '1px solid rgba(255, 153, 0, 0.5)', background: '#0F1923' }}
-          loading="lazy"
-          onError={() => setImageFailed(true)}
-        />
-      ) : (
-        <div
-          className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-xs font-black"
-          style={{ background: 'rgba(255, 153, 0, 0.14)', color: '#FF9900', border: '1px solid rgba(255, 153, 0, 0.32)' }}
-          aria-hidden="true"
-        >
-          {getInitials(title)}
-        </div>
-      )}
+      <div className="relative flex-shrink-0">
+        {imageUrl && !imageFailed ? (
+          <img
+            src={imageUrl}
+            alt={title}
+            className="h-12 w-12 flex-shrink-0 rounded-xl object-cover"
+            style={{ border: '1px solid rgba(255, 153, 0, 0.5)', background: '#0F1923' }}
+            loading="lazy"
+            onError={() => setImageFailed(true)}
+          />
+        ) : (
+          <div
+            className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-xs font-black"
+            style={{ background: 'rgba(255, 153, 0, 0.14)', color: '#FF9900', border: '1px solid rgba(255, 153, 0, 0.32)' }}
+            aria-hidden="true"
+          >
+            {getInitials(title)}
+          </div>
+        )}
+        {item.isNew && <NewMemberBadge compact overIcon darkMode={darkMode} />}
+      </div>
 
       <div className="min-w-0 flex-1">
         <p className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#FF9900' }}>
@@ -133,7 +137,6 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
           {secondary ? <span className="truncate">{secondary}</span> : null}
           {item.eventDate ? <span>{item.eventDate}</span> : null}
           {isNews && item.publishedAt ? <span>{formatDate(item.publishedAt)}</span> : null}
-          {item.isNew ? <span className="font-bold" style={{ color: '#FF9900' }}>New</span> : null}
         </div>
         {['kiro-events', 'community-days'].includes(category) && <div className="mt-3"><AddToCalendar event={item} /></div>}
       </div>

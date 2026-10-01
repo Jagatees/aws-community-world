@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-30T06:17:11.644Z",
+  "updatedAt": "2026-10-01T01:33:32.083Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -10445,49 +10445,100 @@
       }
     },
     {
-      "date": "2026-09-30",
+      "date": "2026-10-01",
       "source": {
         "type": "working-tree"
       },
       "categories": {
         "heroes": {
-          "total": 252,
-          "classified": 238,
-          "unclassified": 14,
-          "coveragePercent": 94.4,
+          "total": 255,
+          "classified": 246,
+          "unclassified": 9,
+          "coveragePercent": 96.5,
           "regions": {
-            "north-america": 53,
-            "south-america": 11,
-            "europe": 73,
-            "asia": 80,
+            "north-america": 54,
+            "south-america": 13,
+            "europe": 75,
+            "asia": 83,
             "africa": 6,
             "oceania": 15
           },
           "changes": {
-            "added": 0,
-            "removed": 0,
-            "net": 0,
-            "retained": 252,
+            "added": 5,
+            "removed": 2,
+            "net": 3,
+            "retained": 250,
             "addedByRegion": {
-              "north-america": 0,
-              "south-america": 0,
-              "europe": 0,
-              "asia": 0,
+              "north-america": 1,
+              "south-america": 1,
+              "europe": 1,
+              "asia": 2,
               "africa": 0,
               "oceania": 0
             },
             "removedByRegion": {
               "north-america": 0,
-              "south-america": 0,
-              "europe": 0,
+              "south-america": 1,
+              "europe": 1,
               "asia": 0,
               "africa": 0,
               "oceania": 0
             },
             "addedUnclassified": 0,
             "removedUnclassified": 0,
-            "addedItems": [],
-            "removedItems": [],
+            "addedItems": [
+              {
+                "name": "Avinash Shashikant Dalvi",
+                "location": "Bengaluru, India",
+                "country": "India",
+                "region": "asia",
+                "url": "https://builder.aws.com/community/@aviboy2006"
+              },
+              {
+                "name": "Chris Farris",
+                "location": "Portugal",
+                "country": "Portugal",
+                "region": "europe",
+                "url": "https://builder.aws.com/community/@chrisatroom17"
+              },
+              {
+                "name": "Damian Gitto Olguin",
+                "location": "Argentina",
+                "country": "Argentina",
+                "region": "south-america",
+                "url": "https://builder.aws.com/community/@dolguin"
+              },
+              {
+                "name": "Joanne Skiles",
+                "location": "Orlando, United States",
+                "country": "United States",
+                "region": "north-america",
+                "url": "https://builder.aws.com/community/@drjoanneskiles"
+              },
+              {
+                "name": "Xiaofei Li",
+                "location": "Shanghai, China",
+                "country": "China",
+                "region": "asia",
+                "url": "https://builder.aws.com/community/@xiaofei"
+              }
+            ],
+            "removedItems": [
+              {
+                "name": "Chris Farris [AWS Hero]",
+                "location": "Portugal",
+                "country": "Portugal",
+                "region": "europe",
+                "url": "https://builder.aws.com/community/@chrisatroom17"
+              },
+              {
+                "name": "Damian Olguin",
+                "location": "Argentina",
+                "country": "Argentina",
+                "region": "south-america",
+                "url": "https://builder.aws.com/community/@dolguin"
+              }
+            ],
             "quality": {
               "confidence": "high",
               "comparable": true,
@@ -10498,29 +10549,29 @@
           }
         },
         "community-builders": {
-          "total": 3036,
-          "classified": 2859,
-          "unclassified": 177,
-          "coveragePercent": 94.2,
+          "total": 3039,
+          "classified": 2872,
+          "unclassified": 167,
+          "coveragePercent": 94.5,
           "regions": {
-            "north-america": 504,
-            "south-america": 256,
-            "europe": 559,
-            "asia": 1183,
-            "africa": 259,
+            "north-america": 506,
+            "south-america": 257,
+            "europe": 566,
+            "asia": 1182,
+            "africa": 263,
             "oceania": 98
           },
           "changes": {
-            "added": 0,
+            "added": 3,
             "removed": 0,
-            "net": 0,
+            "net": 3,
             "retained": 3036,
             "addedByRegion": {
               "north-america": 0,
-              "south-america": 0,
-              "europe": 0,
+              "south-america": 1,
+              "europe": 1,
               "asia": 0,
-              "africa": 0,
+              "africa": 1,
               "oceania": 0
             },
             "removedByRegion": {
@@ -10533,7 +10584,29 @@
             },
             "addedUnclassified": 0,
             "removedUnclassified": 0,
-            "addedItems": [],
+            "addedItems": [
+              {
+                "name": "BANTANTOULA",
+                "location": "Côte d’Ivoire",
+                "country": "Côte d’Ivoire",
+                "region": "africa",
+                "url": "https://builder.aws.com/community/@bantantoula"
+              },
+              {
+                "name": "Pravin Mishra",
+                "location": "Finland",
+                "country": "Finland",
+                "region": "europe",
+                "url": "https://builder.aws.com/community/@pravinmishra"
+              },
+              {
+                "name": "Tiago Xavier Matos",
+                "location": "Brazil",
+                "country": "Brazil",
+                "region": "south-america",
+                "url": "https://builder.aws.com/community/@tiagotxm"
+              }
+            ],
             "removedItems": [],
             "quality": {
               "confidence": "high",
@@ -10545,43 +10618,143 @@
           }
         },
         "user-groups": {
-          "total": 599,
-          "classified": 598,
+          "total": 609,
+          "classified": 608,
           "unclassified": 1,
           "coveragePercent": 99.8,
           "regions": {
-            "north-america": 107,
-            "south-america": 97,
-            "europe": 162,
+            "north-america": 113,
+            "south-america": 98,
+            "europe": 164,
             "asia": 182,
-            "africa": 32,
+            "africa": 33,
             "oceania": 18
           },
           "changes": {
-            "added": 0,
-            "removed": 0,
-            "net": 0,
-            "retained": 599,
+            "added": 12,
+            "removed": 2,
+            "net": 10,
+            "retained": 597,
             "addedByRegion": {
-              "north-america": 0,
-              "south-america": 0,
-              "europe": 0,
-              "asia": 0,
-              "africa": 0,
+              "north-america": 6,
+              "south-america": 2,
+              "europe": 2,
+              "asia": 1,
+              "africa": 1,
               "oceania": 0
             },
             "removedByRegion": {
               "north-america": 0,
-              "south-america": 0,
+              "south-america": 1,
               "europe": 0,
-              "asia": 0,
+              "asia": 1,
               "africa": 0,
               "oceania": 0
             },
             "addedUnclassified": 0,
             "removedUnclassified": 0,
-            "addedItems": [],
-            "removedItems": [],
+            "addedItems": [
+              {
+                "name": "AWS Egypt Meetup",
+                "location": "Cairo, Egypt",
+                "country": "Egypt",
+                "region": "africa",
+                "url": "https://www.meetup.com/awsegyptmeetup/"
+              },
+              {
+                "name": "AWS Mississauga User Group",
+                "location": "Mississauga, Canada",
+                "country": "Canada",
+                "region": "north-america",
+                "url": "https://www.meetup.com/meetup-group-lgybodvb/"
+              },
+              {
+                "name": "AWS UG Cúcuta",
+                "location": "Cúcuta, Colombia",
+                "country": "Colombia",
+                "region": "south-america",
+                "url": "https://www.meetup.com/aws-ug-cucuta"
+              },
+              {
+                "name": "AWS User Group BuildHers+ Philippines",
+                "location": "Philippines, Philippines",
+                "country": "Philippines",
+                "region": "asia",
+                "url": "https://www.meetup.com/awsug-buildhers"
+              },
+              {
+                "name": "AWS User Group Cardenas",
+                "location": "Cardenas, Mexico",
+                "country": "Mexico",
+                "region": "north-america",
+                "url": "https://www.meetup.com/aws-ug-cardenas/"
+              },
+              {
+                "name": "AWS User Group DO-Santo Domingo",
+                "location": "Santo Domingo, Dominican Republic",
+                "country": "Dominican Republic",
+                "region": "north-america",
+                "url": "https://www.meetup.com/awsusergroupsantodomingo/"
+              },
+              {
+                "name": "AWS User Group Edo. Méx. Cuautitlán Izcalli",
+                "location": "Cuautitlán Izcalli, Mexico",
+                "country": "Mexico",
+                "region": "north-america",
+                "url": "https://www.meetup.com/aws-user-group-edo-mex-zona-norte/"
+              },
+              {
+                "name": "AWS User Group Honduras",
+                "location": "Honduras",
+                "country": "Honduras",
+                "region": "north-america",
+                "url": "https://www.meetup.com/aws-user-group-honduras/"
+              },
+              {
+                "name": "AWS User Group Mannheim",
+                "location": "Mannheim, Germany",
+                "country": "Germany",
+                "region": "europe",
+                "url": "https://www.meetup.com/aws-user-group-mannheim/"
+              },
+              {
+                "name": "AWS User Group Mariachi Builders",
+                "location": "Guadalajara, Mexico",
+                "country": "Mexico",
+                "region": "north-america",
+                "url": "https://www.meetup.com/aws-user-group-mariachi-builders/"
+              },
+              {
+                "name": "AWS User Group Serverless Colombia",
+                "location": "Colombia",
+                "country": "Colombia",
+                "region": "south-america",
+                "url": "https://www.meetup.com/aws-user-group-serverless-colombia/"
+              },
+              {
+                "name": "AWS Women Utrecht User Group",
+                "location": "Utrecht, Netherlands",
+                "country": "Netherlands",
+                "region": "europe",
+                "url": "https://www.meetup.com/aws-usergroup-women-utrecht/"
+              }
+            ],
+            "removedItems": [
+              {
+                "name": "AWS User Group BuildHers+",
+                "location": "Manila, Philippines",
+                "country": "Philippines",
+                "region": "asia",
+                "url": "https://www.meetup.com/AWS-Usergroup-PH-Women/"
+              },
+              {
+                "name": "AWS User Group Cúcuta",
+                "location": "Cúcuta, Colombia",
+                "country": "Colombia",
+                "region": "south-america",
+                "url": "https://www.meetup.com/es/aws-user-group-cucuta/"
+              }
+            ],
             "quality": {
               "confidence": "high",
               "comparable": true,
@@ -10738,40 +10911,40 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-09-30",
-      "daysCovered": 185
+      "endDate": "2026-10-01",
+      "daysCovered": 186
     },
     "global": {
-      "totalRecords": 4950,
-      "classifiedRecords": 4745,
-      "coveragePercent": 95.9,
+      "totalRecords": 4966,
+      "classifiedRecords": 4776,
+      "coveragePercent": 96.2,
       "snapshots": 22
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-30",
+        "currentDate": "2026-10-01",
         "baselineTotal": 262,
-        "currentTotal": 252,
-        "currentCoveragePercent": 94.4,
+        "currentTotal": 255,
+        "currentCoveragePercent": 96.5,
         "periodChange": {
-          "added": 23,
-          "removed": 33,
-          "net": -10,
-          "retained": 229,
-          "retentionPercent": 87.4,
+          "added": 27,
+          "removed": 34,
+          "net": -7,
+          "retained": 228,
+          "retentionPercent": 87,
           "addedByRegion": {
-            "north-america": 5,
+            "north-america": 6,
             "south-america": 3,
-            "europe": 5,
-            "asia": 8,
+            "europe": 6,
+            "asia": 10,
             "africa": 0,
             "oceania": 0
           },
           "removedByRegion": {
             "north-america": 9,
             "south-america": 1,
-            "europe": 11,
+            "europe": 12,
             "asia": 9,
             "africa": 0,
             "oceania": 0
@@ -10792,7 +10965,21 @@
               "url": "https://builder.aws.com/community/@austen"
             },
             {
-              "name": "Damian Olguin",
+              "name": "Avinash Shashikant Dalvi",
+              "location": "Bengaluru, India",
+              "country": "India",
+              "region": "asia",
+              "url": "https://builder.aws.com/community/@aviboy2006"
+            },
+            {
+              "name": "Chris Farris",
+              "location": "Portugal",
+              "country": "Portugal",
+              "region": "europe",
+              "url": "https://builder.aws.com/community/@chrisatroom17"
+            },
+            {
+              "name": "Damian Gitto Olguin",
               "location": "Argentina",
               "country": "Argentina",
               "region": "south-america",
@@ -10832,6 +11019,13 @@
               "country": "China",
               "region": "asia",
               "url": "https://builder.aws.com/community/@mikeyfan"
+            },
+            {
+              "name": "Joanne Skiles",
+              "location": "Orlando, United States",
+              "country": "United States",
+              "region": "north-america",
+              "url": "https://builder.aws.com/community/@drjoanneskiles"
             },
             {
               "name": "Joshua Arvin Lat (ARVS)",
@@ -10932,6 +11126,13 @@
               "url": "https://builder.aws.com/community/@vlaaaaaaad"
             },
             {
+              "name": "Xiaofei Li",
+              "location": "Shanghai, China",
+              "country": "China",
+              "region": "asia",
+              "url": "https://builder.aws.com/community/@xiaofei"
+            },
+            {
               "name": "Zainab",
               "location": "Location unavailable",
               "country": null,
@@ -10981,6 +11182,13 @@
               "country": "Germany",
               "region": "europe",
               "url": "https://builder.aws.com/community/@boyand"
+            },
+            {
+              "name": "Chris Farris [AWS Hero]",
+              "location": "Portugal",
+              "country": "Portugal",
+              "region": "europe",
+              "url": "https://builder.aws.com/community/@chrisatroom17"
             },
             {
               "name": "Damian Antonio Gitto Olguin",
@@ -11142,40 +11350,33 @@
               "country": "Germany",
               "region": "europe",
               "url": "https://builder.aws.com/community/@sbstjn"
-            },
-            {
-              "name": "Ved Vaghela",
-              "location": "India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://builder.aws.com/community/@dimplevaghela"
             }
           ]
         },
         "regionGrowth": {
           "north-america": {
             "start": 54,
-            "current": 53,
-            "net": -1,
-            "growthPercent": -1.9
+            "current": 54,
+            "net": 0,
+            "growthPercent": 0
           },
           "south-america": {
             "start": 10,
-            "current": 11,
-            "net": 1,
-            "growthPercent": 10
+            "current": 13,
+            "net": 3,
+            "growthPercent": 30
           },
           "europe": {
             "start": 86,
-            "current": 73,
-            "net": -13,
-            "growthPercent": -15.1
+            "current": 75,
+            "net": -11,
+            "growthPercent": -12.8
           },
           "asia": {
             "start": 77,
-            "current": 80,
-            "net": 3,
-            "growthPercent": 3.9
+            "current": 83,
+            "net": 6,
+            "growthPercent": 7.8
           },
           "africa": {
             "start": 5,
@@ -11193,37 +11394,37 @@
         "growthLeader": {
           "region": "asia",
           "start": 77,
-          "current": 80,
-          "net": 3,
-          "growthPercent": 3.9
+          "current": 83,
+          "net": 6,
+          "growthPercent": 7.8
         },
         "mostRepresented": {
           "region": "asia",
-          "total": 80
+          "total": 83
         },
         "peak": {
           "date": "2026-03-30",
           "total": 263
         },
         "latestMovement": {
-          "date": "2026-09-02",
-          "added": 2,
+          "date": "2026-10-01",
+          "added": 5,
           "removed": 2,
-          "net": 0,
+          "net": 3,
           "retained": 250,
           "addedByRegion": {
-            "north-america": 0,
-            "south-america": 0,
-            "europe": 0,
+            "north-america": 1,
+            "south-america": 1,
+            "europe": 1,
             "asia": 2,
             "africa": 0,
             "oceania": 0
           },
           "removedByRegion": {
             "north-america": 0,
-            "south-america": 0,
-            "europe": 0,
-            "asia": 2,
+            "south-america": 1,
+            "europe": 1,
+            "asia": 0,
             "africa": 0,
             "oceania": 0
           },
@@ -11231,34 +11432,55 @@
           "removedUnclassified": 0,
           "addedItems": [
             {
-              "name": "Sang Woon Park",
-              "location": "South Korea",
-              "country": "South Korea",
+              "name": "Avinash Shashikant Dalvi",
+              "location": "Bengaluru, India",
+              "country": "India",
               "region": "asia",
-              "url": "https://builder.aws.com/community/@serverless"
+              "url": "https://builder.aws.com/community/@aviboy2006"
             },
             {
-              "name": "SangUk Park",
-              "location": "South Korea",
-              "country": "South Korea",
+              "name": "Chris Farris",
+              "location": "Portugal",
+              "country": "Portugal",
+              "region": "europe",
+              "url": "https://builder.aws.com/community/@chrisatroom17"
+            },
+            {
+              "name": "Damian Gitto Olguin",
+              "location": "Argentina",
+              "country": "Argentina",
+              "region": "south-america",
+              "url": "https://builder.aws.com/community/@dolguin"
+            },
+            {
+              "name": "Joanne Skiles",
+              "location": "Orlando, United States",
+              "country": "United States",
+              "region": "north-america",
+              "url": "https://builder.aws.com/community/@drjoanneskiles"
+            },
+            {
+              "name": "Xiaofei Li",
+              "location": "Shanghai, China",
+              "country": "China",
               "region": "asia",
-              "url": "https://builder.aws.com/community/@sanguk"
+              "url": "https://builder.aws.com/community/@xiaofei"
             }
           ],
           "removedItems": [
             {
-              "name": "Park SangUk",
-              "location": "South Korea",
-              "country": "South Korea",
-              "region": "asia",
-              "url": "https://builder.aws.com/community/@sanguk"
+              "name": "Chris Farris [AWS Hero]",
+              "location": "Portugal",
+              "country": "Portugal",
+              "region": "europe",
+              "url": "https://builder.aws.com/community/@chrisatroom17"
             },
             {
-              "name": "Sang Woon Par",
-              "location": "South Korea",
-              "country": "South Korea",
-              "region": "asia",
-              "url": "https://builder.aws.com/community/@serverless"
+              "name": "Damian Olguin",
+              "location": "Argentina",
+              "country": "Argentina",
+              "region": "south-america",
+              "url": "https://builder.aws.com/community/@dolguin"
             }
           ],
           "quality": {
@@ -11272,22 +11494,22 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-30",
+        "currentDate": "2026-10-01",
         "baselineTotal": 2494,
-        "currentTotal": 3036,
-        "currentCoveragePercent": 94.2,
+        "currentTotal": 3039,
+        "currentCoveragePercent": 94.5,
         "periodChange": {
-          "added": 1107,
+          "added": 1110,
           "removed": 565,
-          "net": 542,
+          "net": 545,
           "retained": 1929,
           "retentionPercent": 77.3,
           "addedByRegion": {
-            "north-america": 188,
+            "north-america": 191,
             "south-america": 131,
-            "europe": 127,
-            "asia": 401,
-            "africa": 110,
+            "europe": 132,
+            "asia": 402,
+            "africa": 112,
             "oceania": 30
           },
           "removedByRegion": {
@@ -11392,9 +11614,9 @@
             },
             {
               "name": "Abhishek Gujjar",
-              "location": "Location unavailable",
-              "country": null,
-              "region": null,
+              "location": "NL, Canada",
+              "country": "Canada",
+              "region": "north-america",
               "url": "https://builder.aws.com/community/@abhishekgujjar"
             },
             {
@@ -11469,9 +11691,9 @@
             },
             {
               "name": "Agnes Olorundare",
-              "location": "Nigeria",
-              "country": "Nigeria",
-              "region": "africa",
+              "location": "United Kingdom",
+              "country": "United Kingdom",
+              "region": "europe",
               "url": "https://builder.aws.com/community/@agnes"
             },
             {
@@ -11726,33 +11948,33 @@
         "regionGrowth": {
           "north-america": {
             "start": 364,
-            "current": 504,
-            "net": 140,
-            "growthPercent": 38.5
+            "current": 506,
+            "net": 142,
+            "growthPercent": 39
           },
           "south-america": {
             "start": 160,
-            "current": 256,
-            "net": 96,
-            "growthPercent": 60
+            "current": 257,
+            "net": 97,
+            "growthPercent": 60.6
           },
           "europe": {
             "start": 563,
-            "current": 559,
-            "net": -4,
-            "growthPercent": -0.7
+            "current": 566,
+            "net": 3,
+            "growthPercent": 0.5
           },
           "asia": {
             "start": 1048,
-            "current": 1183,
-            "net": 135,
-            "growthPercent": 12.9
+            "current": 1182,
+            "net": 134,
+            "growthPercent": 12.8
           },
           "africa": {
             "start": 224,
-            "current": 259,
-            "net": 35,
-            "growthPercent": 15.6
+            "current": 263,
+            "net": 39,
+            "growthPercent": 17.4
           },
           "oceania": {
             "start": 82,
@@ -11764,37 +11986,37 @@
         "growthLeader": {
           "region": "north-america",
           "start": 364,
-          "current": 504,
-          "net": 140,
-          "growthPercent": 38.5
+          "current": 506,
+          "net": 142,
+          "growthPercent": 39
         },
         "mostRepresented": {
           "region": "asia",
-          "total": 1183
+          "total": 1182
         },
         "peak": {
           "date": "2026-05-07",
           "total": 3546
         },
         "latestMovement": {
-          "date": "2026-09-02",
-          "added": 1,
-          "removed": 3,
-          "net": -2,
-          "retained": 3035,
+          "date": "2026-10-01",
+          "added": 3,
+          "removed": 0,
+          "net": 3,
+          "retained": 3036,
           "addedByRegion": {
             "north-america": 0,
-            "south-america": 0,
+            "south-america": 1,
             "europe": 1,
             "asia": 0,
-            "africa": 0,
+            "africa": 1,
             "oceania": 0
           },
           "removedByRegion": {
-            "north-america": 1,
+            "north-america": 0,
             "south-america": 0,
             "europe": 0,
-            "asia": 2,
+            "asia": 0,
             "africa": 0,
             "oceania": 0
           },
@@ -11802,36 +12024,28 @@
           "removedUnclassified": 0,
           "addedItems": [
             {
-              "name": "Sébastien Stormacq",
-              "location": "France",
-              "country": "France",
+              "name": "BANTANTOULA",
+              "location": "Côte d’Ivoire",
+              "country": "Côte d’Ivoire",
+              "region": "africa",
+              "url": "https://builder.aws.com/community/@bantantoula"
+            },
+            {
+              "name": "Pravin Mishra",
+              "location": "Finland",
+              "country": "Finland",
               "region": "europe",
-              "url": "https://builder.aws.com/community/@sebsto2"
-            }
-          ],
-          "removedItems": [
-            {
-              "name": "Adi Ziv",
-              "location": "Israel",
-              "country": "Israel",
-              "region": "asia",
-              "url": "https://builder.aws.com/community/@adiziv"
+              "url": "https://builder.aws.com/community/@pravinmishra"
             },
             {
-              "name": "aysha dheesan banu A",
-              "location": "India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://builder.aws.com/community/@dhees1980"
-            },
-            {
-              "name": "Jerry Karran",
-              "location": "United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://builder.aws.com/community/@jerryk"
+              "name": "Tiago Xavier Matos",
+              "location": "Brazil",
+              "country": "Brazil",
+              "region": "south-america",
+              "url": "https://builder.aws.com/community/@tiagotxm"
             }
           ],
+          "removedItems": [],
           "quality": {
             "confidence": "high",
             "comparable": true,
@@ -11843,30 +12057,30 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-30",
+        "currentDate": "2026-10-01",
         "baselineTotal": 608,
-        "currentTotal": 599,
+        "currentTotal": 609,
         "currentCoveragePercent": 99.8,
         "periodChange": {
-          "added": 70,
-          "removed": 79,
-          "net": -9,
-          "retained": 529,
-          "retentionPercent": 87,
+          "added": 81,
+          "removed": 80,
+          "net": 1,
+          "retained": 528,
+          "retentionPercent": 86.8,
           "addedByRegion": {
-            "north-america": 9,
-            "south-america": 17,
-            "europe": 10,
-            "asia": 30,
+            "north-america": 15,
+            "south-america": 19,
+            "europe": 12,
+            "asia": 31,
             "africa": 4,
             "oceania": 0
           },
           "removedByRegion": {
             "north-america": 17,
-            "south-america": 5,
+            "south-america": 6,
             "europe": 28,
-            "asia": 15,
-            "africa": 12,
+            "asia": 16,
+            "africa": 11,
             "oceania": 2
           },
           "addedItems": [
@@ -11892,6 +12106,13 @@
               "url": "https://www.meetup.com/awsglobalcommunitygatherings"
             },
             {
+              "name": "AWS Mississauga User Group",
+              "location": "Mississauga, Canada",
+              "country": "Canada",
+              "region": "north-america",
+              "url": "https://www.meetup.com/meetup-group-lgybodvb/"
+            },
+            {
               "name": "AWS UG Cloud Del Norte",
               "location": "El Paso, Texas, United States",
               "country": "United States",
@@ -11899,11 +12120,18 @@
               "url": "https://www.meetup.com/awsugclouddelnorte/"
             },
             {
+              "name": "AWS UG Cúcuta",
+              "location": "Cúcuta, Colombia",
+              "country": "Colombia",
+              "region": "south-america",
+              "url": "https://www.meetup.com/aws-ug-cucuta"
+            },
+            {
               "name": "AWS UG Maputo",
               "location": "Maputo, Mozambique",
               "country": "Mozambique",
               "region": "africa",
-              "url": "https://www.meetup.com/aws-ug-maputo"
+              "url": "https://www.meetup.com/aws-maputo"
             },
             {
               "name": "AWS User Group - Takoradi",
@@ -11969,6 +12197,13 @@
               "url": "https://www.meetup.com/aws-ug-containers"
             },
             {
+              "name": "AWS User Group BuildHers+ Philippines",
+              "location": "Philippines, Philippines",
+              "country": "Philippines",
+              "region": "asia",
+              "url": "https://www.meetup.com/awsug-buildhers"
+            },
+            {
               "name": "AWS User Group Cairo",
               "location": "Cairo, Egypt",
               "country": "Egypt",
@@ -11976,11 +12211,11 @@
               "url": "https://www.meetup.com/aws-ug-giza/"
             },
             {
-              "name": "AWS User Group Canindeyú",
+              "name": "AWS User Group Canindeyu",
               "location": "Canindeyú, Paraguay",
               "country": "Paraguay",
               "region": "south-america",
-              "url": "https://www.meetup.com/aws-user-group-canindeyu"
+              "url": "https://www.meetup.com/aws-user-group-canindeyu/"
             },
             {
               "name": "AWS User Group Canoas",
@@ -11988,6 +12223,13 @@
               "country": "Brazil",
               "region": "south-america",
               "url": "https://www.meetup.com/aws-user-group-canoas/"
+            },
+            {
+              "name": "AWS User Group Cardenas",
+              "location": "Cardenas, Mexico",
+              "country": "Mexico",
+              "region": "north-america",
+              "url": "https://www.meetup.com/aws-ug-cardenas/"
             },
             {
               "name": "AWS User Group Chile",
@@ -12011,11 +12253,25 @@
               "url": "https://www.meetup.com/aws-user-group-san-jose-costa-rica/"
             },
             {
+              "name": "AWS User Group DO-Santo Domingo",
+              "location": "Santo Domingo, Dominican Republic",
+              "country": "Dominican Republic",
+              "region": "north-america",
+              "url": "https://www.meetup.com/awsusergroupsantodomingo/"
+            },
+            {
               "name": "AWS User Group Düsseldorf",
               "location": "Düsseldorf, Germany",
               "country": "Germany",
               "region": "europe",
               "url": "https://www.meetup.com/aws-user-group-dusseldorf/"
+            },
+            {
+              "name": "AWS User Group Edo. Méx. Cuautitlán Izcalli",
+              "location": "Cuautitlán Izcalli, Mexico",
+              "country": "Mexico",
+              "region": "north-america",
+              "url": "https://www.meetup.com/aws-user-group-edo-mex-zona-norte/"
             },
             {
               "name": "AWS User Group Faisalabad",
@@ -12032,53 +12288,11 @@
               "url": "https://www.meetup.com/aws-user-group-fortaleza/"
             },
             {
-              "name": "AWS User Group Jogja",
-              "location": "Jogja, Indonesia",
-              "country": "Indonesia",
-              "region": "asia",
-              "url": "https://www.meetup.com/awsugjogja/"
-            },
-            {
-              "name": "AWS User Group Kozhikode",
-              "location": "Kozhikode, India",
-              "country": "India",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-user-group-kozhikode/"
-            },
-            {
-              "name": "AWS User Group Kumasi",
-              "location": "Kumasi, Ghana",
-              "country": "Ghana",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-user-group-kumasi"
-            },
-            {
-              "name": "AWS User Group Lithuania",
-              "location": "Vilnius, Lithuania",
-              "country": "Lithuania",
-              "region": "europe",
-              "url": "https://www.meetup.com/aws-user-group-lithuania/"
-            },
-            {
-              "name": "AWS User Group Malang",
-              "location": "Malang, Indonesia",
-              "country": "Indonesia",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-user-group-malang/"
-            },
-            {
-              "name": "AWS User Group Midlands & West Ireland (Galway-Limerick-Athlone)",
-              "location": "Galway, Ireland",
-              "country": "Ireland",
-              "region": "europe",
-              "url": "https://www.meetup.com/aws-user-group-midlands-west-ireland"
-            },
-            {
-              "name": "AWS User Group Niš",
-              "location": "Niš, Serbia",
-              "country": "Serbia",
-              "region": "europe",
-              "url": "https://www.meetup.com/aws-user-group-nis/"
+              "name": "AWS User Group Honduras",
+              "location": "Honduras",
+              "country": "Honduras",
+              "region": "north-america",
+              "url": "https://www.meetup.com/aws-user-group-honduras/"
             }
           ],
           "removedItems": [
@@ -12095,13 +12309,6 @@
               "country": "Jordan",
               "region": "asia",
               "url": "https://www.meetup.com/aws-jordan/"
-            },
-            {
-              "name": "AWS Egypt Meetup",
-              "location": "Cairo, Egypt",
-              "country": "Egypt",
-              "region": "africa",
-              "url": "https://www.meetup.com/awsegyptmeetup/"
             },
             {
               "name": "AWS Ontario Virtual User Group",
@@ -12209,6 +12416,13 @@
               "url": "https://www.meetup.com/awsusergroupbueacm/"
             },
             {
+              "name": "AWS User Group BuildHers+",
+              "location": "Manila, Philippines",
+              "country": "Philippines",
+              "region": "asia",
+              "url": "https://www.meetup.com/AWS-Usergroup-PH-Women/"
+            },
+            {
               "name": "AWS User Group Catania",
               "location": "Catania, Italy",
               "country": "Italy",
@@ -12265,6 +12479,13 @@
               "url": "https://www.meetup.com/aws-user-group-cremona/"
             },
             {
+              "name": "AWS User Group Cúcuta",
+              "location": "Cúcuta, Colombia",
+              "country": "Colombia",
+              "region": "south-america",
+              "url": "https://www.meetup.com/es/aws-user-group-cucuta/"
+            },
+            {
               "name": "AWS User Group Dominican Republic",
               "location": "Santo Domingo, Dominican Republic",
               "country": "Dominican Republic",
@@ -12284,34 +12505,27 @@
               "country": "Guatemala",
               "region": "north-america",
               "url": "https://www.meetup.com/aws-user-group-escuintla/"
-            },
-            {
-              "name": "AWS User Group France- Côte d'Azur",
-              "location": "Côte d'Azur, France",
-              "country": "France",
-              "region": "europe",
-              "url": "https://www.meetup.com/aws-cote-dazur/"
             }
           ]
         },
         "regionGrowth": {
           "north-america": {
             "start": 115,
-            "current": 107,
-            "net": -8,
-            "growthPercent": -7
+            "current": 113,
+            "net": -2,
+            "growthPercent": -1.7
           },
           "south-america": {
             "start": 86,
-            "current": 97,
-            "net": 11,
-            "growthPercent": 12.8
+            "current": 98,
+            "net": 12,
+            "growthPercent": 14
           },
           "europe": {
             "start": 180,
-            "current": 162,
-            "net": -18,
-            "growthPercent": -10
+            "current": 164,
+            "net": -16,
+            "growthPercent": -8.9
           },
           "asia": {
             "start": 167,
@@ -12321,9 +12535,9 @@
           },
           "africa": {
             "start": 40,
-            "current": 32,
-            "net": -8,
-            "growthPercent": -20
+            "current": 33,
+            "net": -7,
+            "growthPercent": -17.5
           },
           "oceania": {
             "start": 20,
@@ -12344,231 +12558,133 @@
           "total": 182
         },
         "peak": {
-          "date": "2026-03-29",
-          "total": 608
+          "date": "2026-10-01",
+          "total": 609
         },
         "latestMovement": {
-          "date": "2026-09-02",
-          "added": 22,
-          "removed": 6,
-          "net": 16,
-          "retained": 577,
+          "date": "2026-10-01",
+          "added": 12,
+          "removed": 2,
+          "net": 10,
+          "retained": 597,
           "addedByRegion": {
-            "north-america": 5,
-            "south-america": 3,
-            "europe": 6,
-            "asia": 6,
-            "africa": 2,
+            "north-america": 6,
+            "south-america": 2,
+            "europe": 2,
+            "asia": 1,
+            "africa": 1,
             "oceania": 0
           },
           "removedByRegion": {
-            "north-america": 2,
-            "south-america": 0,
+            "north-america": 0,
+            "south-america": 1,
             "europe": 0,
-            "asia": 3,
-            "africa": 1,
+            "asia": 1,
+            "africa": 0,
             "oceania": 0
           },
           "addedUnclassified": 0,
           "removedUnclassified": 0,
           "addedItems": [
             {
-              "name": "Atlanta AWS User Group",
-              "location": "Atlanta, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://www.meetup.com/atlanta-aws-user-group/"
-            },
-            {
-              "name": "AWS Global Community Gatherings",
-              "location": "Japan, Japan",
-              "country": "Japan",
-              "region": "asia",
-              "url": "https://www.meetup.com/awsglobalcommunitygatherings"
-            },
-            {
-              "name": "AWS UG Cloud Del Norte",
-              "location": "El Paso, Texas, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://www.meetup.com/awsugclouddelnorte/"
-            },
-            {
-              "name": "AWS UG Maputo",
-              "location": "Maputo, Mozambique",
-              "country": "Mozambique",
+              "name": "AWS Egypt Meetup",
+              "location": "Cairo, Egypt",
+              "country": "Egypt",
               "region": "africa",
-              "url": "https://www.meetup.com/aws-ug-maputo"
+              "url": "https://www.meetup.com/awsegyptmeetup/"
             },
             {
-              "name": "AWS User Group Abidjan",
-              "location": "Abidjan, Côte d'Ivoire",
-              "country": "Côte d'Ivoire",
-              "region": "africa",
-              "url": "https://www.meetup.com/fr-FR/groupe-meetup-abidjan-amazon-web-services/"
+              "name": "AWS Mississauga User Group",
+              "location": "Mississauga, Canada",
+              "country": "Canada",
+              "region": "north-america",
+              "url": "https://www.meetup.com/meetup-group-lgybodvb/"
             },
             {
-              "name": "AWS User Group AI/ML India",
-              "location": "Ahmedabad, India",
-              "country": "India",
+              "name": "AWS UG Cúcuta",
+              "location": "Cúcuta, Colombia",
+              "country": "Colombia",
+              "region": "south-america",
+              "url": "https://www.meetup.com/aws-ug-cucuta"
+            },
+            {
+              "name": "AWS User Group BuildHers+ Philippines",
+              "location": "Philippines, Philippines",
+              "country": "Philippines",
               "region": "asia",
-              "url": "https://www.meetup.com/awsaimlindia/"
+              "url": "https://www.meetup.com/awsug-buildhers"
             },
             {
-              "name": "AWS User Group Bodensee",
-              "location": "Bodensee, Germany",
+              "name": "AWS User Group Cardenas",
+              "location": "Cardenas, Mexico",
+              "country": "Mexico",
+              "region": "north-america",
+              "url": "https://www.meetup.com/aws-ug-cardenas/"
+            },
+            {
+              "name": "AWS User Group DO-Santo Domingo",
+              "location": "Santo Domingo, Dominican Republic",
+              "country": "Dominican Republic",
+              "region": "north-america",
+              "url": "https://www.meetup.com/awsusergroupsantodomingo/"
+            },
+            {
+              "name": "AWS User Group Edo. Méx. Cuautitlán Izcalli",
+              "location": "Cuautitlán Izcalli, Mexico",
+              "country": "Mexico",
+              "region": "north-america",
+              "url": "https://www.meetup.com/aws-user-group-edo-mex-zona-norte/"
+            },
+            {
+              "name": "AWS User Group Honduras",
+              "location": "Honduras",
+              "country": "Honduras",
+              "region": "north-america",
+              "url": "https://www.meetup.com/aws-user-group-honduras/"
+            },
+            {
+              "name": "AWS User Group Mannheim",
+              "location": "Mannheim, Germany",
               "country": "Germany",
               "region": "europe",
-              "url": "https://www.meetup.com/aws-user-group-bodensee/"
+              "url": "https://www.meetup.com/aws-user-group-mannheim/"
             },
             {
-              "name": "AWS User Group Bosnia (Mostar)",
-              "location": "Mostar, Bosnia & Herzegovina",
-              "country": "Bosnia & Herzegovina",
-              "region": "europe",
-              "url": "https://www.meetup.com/aws-user-group-bosnia/"
-            },
-            {
-              "name": "AWS User Group Budapest (Containers and AI/ML)",
-              "location": "Budapest, Hungary",
-              "country": "Hungary",
-              "region": "europe",
-              "url": "https://www.meetup.com/aws-ug-containers"
-            },
-            {
-              "name": "AWS User Group Canoas",
-              "location": "Canoas, Brazil",
-              "country": "Brazil",
-              "region": "south-america",
-              "url": "https://www.meetup.com/aws-user-group-canoas/"
-            },
-            {
-              "name": "AWS User Group Chile",
-              "location": "Santiago, Chile",
-              "country": "Chile",
-              "region": "south-america",
-              "url": "https://www.meetup.com/AWS-User-Group-Chile/"
-            },
-            {
-              "name": "AWS User Group Costa Rica",
-              "location": "San Jose, Costa Rica",
-              "country": "Costa Rica",
+              "name": "AWS User Group Mariachi Builders",
+              "location": "Guadalajara, Mexico",
+              "country": "Mexico",
               "region": "north-america",
-              "url": "https://www.meetup.com/aws-user-group-san-jose-costa-rica/"
+              "url": "https://www.meetup.com/aws-user-group-mariachi-builders/"
             },
             {
-              "name": "AWS User Group Jogja",
-              "location": "Jogja, Indonesia",
-              "country": "Indonesia",
-              "region": "asia",
-              "url": "https://www.meetup.com/awsugjogja/"
-            },
-            {
-              "name": "AWS User Group Karachi",
-              "location": "Karachi, Pakistan",
-              "country": "Pakistan",
-              "region": "asia",
-              "url": "https://www.meetup.com/aws-ug-karachi/"
-            },
-            {
-              "name": "AWS User Group Parauapebas",
-              "location": "Parauapebas, Brazil",
-              "country": "Brazil",
+              "name": "AWS User Group Serverless Colombia",
+              "location": "Colombia",
+              "country": "Colombia",
               "region": "south-america",
-              "url": "https://www.meetup.com/aws-user-group-parauapebas"
+              "url": "https://www.meetup.com/aws-user-group-serverless-colombia/"
             },
             {
-              "name": "AWS User Group Plymouth",
-              "location": "Plymouth, United Kingdom",
-              "country": "United Kingdom",
+              "name": "AWS Women Utrecht User Group",
+              "location": "Utrecht, Netherlands",
+              "country": "Netherlands",
               "region": "europe",
-              "url": "https://www.meetup.com/amazon-web-services-aws-user-group-plymouth/"
-            },
-            {
-              "name": "AWS User Group Sarajevo",
-              "location": "Sarajevo, Bosnia & Herzegovina",
-              "country": "Bosnia & Herzegovina",
-              "region": "europe",
-              "url": "https://www.meetup.com/AWS-User-Group-Sarajevo/"
-            },
-            {
-              "name": "AWS User Group Vilnius",
-              "location": "Vilnius, Lithuania",
-              "country": "Lithuania",
-              "region": "europe",
-              "url": "https://www.meetup.com/aws-user-group-vilnius-lithuania"
-            },
-            {
-              "name": "AWS_MN",
-              "location": "Minnesota, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://www.meetup.com/aws_mn"
-            },
-            {
-              "name": "Data & AI User Group",
-              "location": "Virtual, China",
-              "country": "China",
-              "region": "asia",
-              "url": "https://awscommunity.cn/specialized/data-ai/"
-            },
-            {
-              "name": "Kiro User Group",
-              "location": "Virtual, China",
-              "country": "China",
-              "region": "asia",
-              "url": "https://awscommunity.cn/specialized/kiro/"
-            },
-            {
-              "name": "Richmond AWS User Group",
-              "location": "Richmond, VA, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://www.meetup.com/rawsugar/"
+              "url": "https://www.meetup.com/aws-usergroup-women-utrecht/"
             }
           ],
           "removedItems": [
             {
-              "name": "AWS Community Jordan",
-              "location": "Amman, Jordan",
-              "country": "Jordan",
+              "name": "AWS User Group BuildHers+",
+              "location": "Manila, Philippines",
+              "country": "Philippines",
               "region": "asia",
-              "url": "https://www.meetup.com/aws-jordan/"
+              "url": "https://www.meetup.com/AWS-Usergroup-PH-Women/"
             },
             {
-              "name": "AWS User Group Chattisgarh",
-              "location": "Raipur, India",
-              "country": "India",
-              "region": "asia",
-              "url": "TBD"
-            },
-            {
-              "name": "AWS User Group Guastatoya",
-              "location": "El Progreso, Guatemala",
-              "country": "Guatemala",
-              "region": "north-america",
-              "url": "https://www.meetup.com/aws-ug-el-progreso/"
-            },
-            {
-              "name": "AWS User Group Jaffna",
-              "location": "Jaffna, Sri Lanka",
-              "country": "Sri Lanka",
-              "region": "asia",
-              "url": "https://www.meetup.com/awsugjaffna"
-            },
-            {
-              "name": "AWS User Group Liberia",
-              "location": "Monrovia, Liberia",
-              "country": "Liberia",
-              "region": "africa",
-              "url": "https://www.meetup.com/aws-liberia/"
-            },
-            {
-              "name": "AWS User Group San Salvador",
-              "location": "San Salvador, El Salvador",
-              "country": "El Salvador",
-              "region": "north-america",
-              "url": "https://www.meetup.com/es-es/aws-user-group-san-salvador/"
+              "name": "AWS User Group Cúcuta",
+              "location": "Cúcuta, Colombia",
+              "country": "Colombia",
+              "region": "south-america",
+              "url": "https://www.meetup.com/es/aws-user-group-cucuta/"
             }
           ],
           "quality": {
@@ -12582,7 +12698,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-09-30",
+        "currentDate": "2026-10-01",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -13131,7 +13247,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-09-30",
+        "currentDate": "2026-10-01",
         "baselineTotal": 17,
         "currentTotal": 2,
         "currentCoveragePercent": 100,
@@ -13386,7 +13502,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-09-30",
+        "currentDate": "2026-10-01",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -13717,7 +13833,7 @@
     },
     "upcoming": {
       "total": 18,
-      "next30Days": 14,
+      "next30Days": 15,
       "byRegion": {
         "north-america": 4,
         "south-america": 4,

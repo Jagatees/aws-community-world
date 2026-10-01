@@ -525,7 +525,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                       </>
                     )}
                     {markerHasNewMember && (
-                      <g transform={`translate(${Math.max(marker.size, singleAvatarSize / 2, clusterAvatarSize / 2) + 10} -14)`}>
+                      <g data-new-member-badge="true" transform={`translate(${Math.max(marker.size, singleAvatarSize / 2, clusterAvatarSize / 2) + 10} -14)`}>
                         <rect
                           x="-15"
                           y="-8"

@@ -28,10 +28,12 @@ const ONLY = new Set(
 const MAX_LOAD_CLICKS = Number.parseInt(process.env.COMMUNITY_DATA_MAX_LOAD_CLICKS || '200', 10);
 const BASELINE_REF = process.env.COMMUNITY_DATA_BASELINE_REF || '';
 const INFER_BUILDER_LOCATIONS = process.env.COMMUNITY_DATA_INFER_BUILDER_LOCATIONS === '1';
+const EVIDENCE_DIR = process.env.COMMUNITY_DATA_EVIDENCE_DIR || '';
 const HERO_PROFILE_CONCURRENCY = Math.max(
   1,
   Number.parseInt(process.env.COMMUNITY_DATA_HERO_PROFILE_CONCURRENCY || '4', 10),
 );
+const pendingWrites = new Map();
 
 const geoCache = existsSync(GEO_CACHE_FILE)
   ? JSON.parse(readFileSync(GEO_CACHE_FILE, 'utf8'))
@@ -68,14 +70,30 @@ function readBaselineJson(fileName) {
 }
 
 function writeJson(fileName, data) {
-  const filePath = join(DATA_DIR, fileName);
+  if (EVIDENCE_DIR) {
+    writeFileSync(join(EVIDENCE_DIR, `source-${fileName}`), `${JSON.stringify(data, null, 2)}\n`);
+  }
   if (DRY_RUN) {
     console.log(`[dry-run] Would save ${data.length} records to src/data/${fileName}`);
     return;
   }
-
-  writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`);
-  console.log(`Saved ${data.length} records to src/data/${fileName}`);
+  const baseline = readBaselineJson(fileName);
+  // The saved globe can include verified entries absent from the live directory;
+  // allow that difference while still rejecting major drops after full pagination.
+  if (baseline.length && data.length < Math.ceil(baseline.length * 0.9)) {
+    throw new Error(`${fileName} returned ${data.length} records versus ${baseline.length} in the baseline; refusing a possible partial refresh`);
+  }
+  if (new Set(data.map((record) => record.id)).size !== data.length) {
+    throw new Error(`${fileName} contains duplicate identities; refusing to save`);
+  }
+  const currentIds = new Set(data.map((record) => record.id));
+  const missing = baseline.filter((record) => !currentIds.has(record.id));
+  if (missing.length) {
+    console.warn(`${fileName}: keeping ${missing.length} baseline records absent from the source until removal can be verified: ${missing.map((record) => record.name).join('; ')}`);
+    data.push(...missing.map((record) => ({ ...record, isNew: false })));
+  }
+  pendingWrites.set(fileName, data);
+  console.log(`Prepared ${data.length} records for src/data/${fileName}`);
 }
 
 function sleep(ms) {
@@ -92,18 +110,42 @@ function hasStoredCoordinates(entry) {
   return Number.isFinite(entry?.lat) && Number.isFinite(entry?.lng);
 }
 
+function normalizedGeocodeLocation(location) {
+  const parts = String(location || '').split(',').map((part) => part.trim()).filter(Boolean);
+  return parts.length > 1 && parts.every((part) => part.toLowerCase() === parts[0].toLowerCase())
+    ? parts[0]
+    : String(location || '').trim();
+}
+
+function canReuseCoordinates(current, previous) {
+  if (!hasStoredCoordinates(previous)) return false;
+  const nextLocation = normalizedGeocodeLocation(current.location).toLowerCase();
+  const oldLocation = normalizedGeocodeLocation(previous.location).toLowerCase();
+  if (!nextLocation || nextLocation === oldLocation) return true;
+  // A country-only directory value can retain a previously known city in that country.
+  return !nextLocation.includes(',') && nextLocation === oldLocation.split(',').at(-1)?.trim();
+}
+
+function preferredProfileImage(currentImage, previousImage) {
+  const usable = (value) => /^https?:\/\//i.test(value || '') && !/default-avatar/i.test(value);
+  if (usable(currentImage)) return currentImage;
+  if (usable(previousImage)) return previousImage;
+  return currentImage || previousImage || '';
+}
+
 async function geocode(location) {
   if (!location || ['virtual', 'online'].includes(location.toLowerCase())) {
     return { lat: 0, lng: 0 };
   }
 
-  const key = location.trim().toLowerCase();
+  const queryLocation = normalizedGeocodeLocation(location);
+  const key = queryLocation.trim().toLowerCase();
   if (geoCache[key]) return geoCache[key];
 
   await sleep(1_100);
 
-  const searchQueries = [location];
-  const parts = location.split(',').map((part) => part.trim()).filter(Boolean);
+  const searchQueries = [queryLocation];
+  const parts = queryLocation.split(',').map((part) => part.trim()).filter(Boolean);
   if (parts.length > 1) searchQueries.push(parts[0]);
 
   for (const query of searchQueries) {
@@ -187,13 +229,18 @@ async function loadAll(page, itemSelector) {
     ).catch(() => {});
 
     const nextCount = await page.locator(itemSelector).count().catch(() => previousCount);
-    if (nextCount <= previousCount) return;
+    if (nextCount <= previousCount) {
+      if (await button.isVisible().catch(() => false)) {
+        throw new Error(`Pagination stalled at ${nextCount} items for ${page.url()}`);
+      }
+      return;
+    }
 
     previousCount = nextCount;
     process.stdout.write(` [+${clicks + 1}]`);
   }
 
-  if (MAX_LOAD_CLICKS >= 200) {
+  if (!DRY_RUN || MAX_LOAD_CLICKS >= 200) {
     throw new Error(`Stopped after too many pagination clicks for ${page.url()}`);
   }
 
@@ -261,7 +308,7 @@ function mergeCoordinates(records, existingRecords, key) {
 
   return records.map((record) => {
     const previous = existing.get(record[key]) || existingByNameLocation.get(locationKey(record));
-    if (!previous || !hasStoredCoordinates(previous)) return record;
+    if (!previous || !canReuseCoordinates(record, previous)) return record;
 
     return {
       ...record,
@@ -310,14 +357,19 @@ async function scrapeHeroes(page) {
     existing,
     (hero) => normalizedLookupValue(hero.image_url),
   );
+  const existingByName = uniqueExistingBy(
+    existing,
+    (hero) => normalizedLookupValue(hero.name),
+  );
   const previousForHero = (hero) => (
     findPrevious(hero, existingMap, existingByNameLocation, 'hero_page_url')
     || existingByImage.get(normalizedLookupValue(hero.image_url))
+    || existingByName.get(normalizedLookupValue(hero.name))
   );
   const heroesWithProfiles = await addHeroBuilderProfileUrls(page, rawHeroes, previousForHero);
   const heroesWithStoredCoordinates = heroesWithProfiles.map((hero) => {
     const previous = previousForHero(hero);
-    if (!previous || !hasStoredCoordinates(previous)) return hero;
+    if (!previous || !canReuseCoordinates(hero, previous)) return hero;
     return { ...hero, lat: Number(previous.lat), lng: Number(previous.lng) };
   });
   const withCoordinates = await addCoordinates(heroesWithStoredCoordinates);
@@ -327,6 +379,7 @@ async function scrapeHeroes(page) {
       ...previous,
       id: previous?.id || stableId(hero.hero_page_url),
       ...hero,
+      image_url: preferredProfileImage(hero.image_url, previous?.image_url),
       isNew: !previous,
     };
   });
@@ -467,7 +520,7 @@ async function scrapeCommunityBuilders(page) {
       ...previous,
       id: previous?.id || stableId(builder.profile_url),
       name: builder.name,
-      avatarUrl: builder.image_url,
+      avatarUrl: preferredProfileImage(builder.image_url, previous?.avatarUrl),
       category: 'community-builders',
       location: builder.location,
       tag: builder.specialization,
@@ -662,20 +715,28 @@ async function scrapeUserGroups(page) {
   await gotoDirectoryPage(page, PAGES.userGroups, 'a[href]');
 
   const extractedGroups = await page.evaluate(extractDirectoryGroups, 'user');
+  const groupsByJoinUrl = new Map(extractedGroups.map((group) => [normalizedGroupJoinUrl(group.joinUrl), group]));
   const rawGroups = [];
   const seenNameLocations = new Set();
-  for (const group of extractedGroups) {
+  for (const group of groupsByJoinUrl.values()) {
     const key = locationKey(group);
     if (seenNameLocations.has(key)) continue;
     seenNameLocations.add(key);
     rawGroups.push(group);
   }
   const existing = readBaselineJson('user-groups.json');
-  const existingMap = existingBy(existing, 'joinUrl');
+  const existingMap = uniqueExistingBy(existing, (group) => normalizedGroupJoinUrl(group.joinUrl));
   const existingByNameLocation = new Map(existing.map((group) => [locationKey(group), group]));
-  const withCoordinates = await addCoordinates(mergeCoordinates(rawGroups, existing, 'joinUrl'));
+  const previousForGroup = (group) => existingMap.get(normalizedGroupJoinUrl(group.joinUrl))
+    || existingByNameLocation.get(locationKey(group));
+  const withCoordinates = await addCoordinates(rawGroups.map((group) => {
+    const previous = previousForGroup(group);
+    return previous && canReuseCoordinates(group, previous)
+      ? { ...group, lat: Number(previous.lat), lng: Number(previous.lng) }
+      : group;
+  }));
   const groups = withCoordinates.map((group) => {
-    const previous = existingMap.get(group.joinUrl) || existingByNameLocation.get(locationKey(group));
+    const previous = previousForGroup(group);
     return {
       ...previous,
       id: previous?.id || stableId(group.joinUrl),
@@ -693,6 +754,24 @@ async function scrapeUserGroups(page) {
 
   if (!DRY_RUN && groups.length < 100) throw new Error(`User Groups scrape returned only ${groups.length} records`);
   writeJson('user-groups.json', groups);
+}
+
+function normalizedGroupJoinUrl(value) {
+  const normalized = String(value || '')
+    .trim()
+    .replace(/\/+$/, '')
+    .toLowerCase()
+    .replace(/(meetup\.com)\/[a-z]{2}(?:-[a-z]{2})?\//, '$1/');
+  // Both Meetup addresses identify BuildHers+ Philippines, verified October 2026.
+  // Other groups in the same city may be independent, so do not match by city alone.
+  if (normalized === 'https://www.meetup.com/awsug-buildhers') {
+    return 'https://www.meetup.com/aws-usergroup-ph-women';
+  }
+  // The upstream directory lists both addresses for the same Cúcuta chapter.
+  if (normalized === 'https://www.meetup.com/aws-ug-cucuta') {
+    return 'https://www.meetup.com/aws-user-group-cucuta';
+  }
+  return normalized;
 }
 
 function normalizedStudentGroupName(value) {
@@ -840,7 +919,7 @@ async function scrapeStudentBuilderGroups(page) {
   );
   const groupsWithStoredCoordinates = rawGroups.map((group) => {
     const previous = previousByGroup.get(group);
-    if (!previous || !hasStoredCoordinates(previous)) return group;
+    if (!previous || !canReuseCoordinates(group, previous)) return group;
     return { ...group, lat: Number(previous.lat), lng: Number(previous.lng) };
   });
   const withCoordinates = await addCoordinates(groupsWithStoredCoordinates);
@@ -912,6 +991,12 @@ async function main() {
     if (ONLY.size === 0 || ONLY.has('student-builder-groups')) await scrapeStudentBuilderGroups(page);
   } finally {
     await browser.close();
+  }
+
+  // Do not replace any directory until every requested scrape has passed its checks.
+  for (const [fileName, data] of pendingWrites) {
+    writeFileSync(join(DATA_DIR, fileName), `${JSON.stringify(data, null, 2)}\n`);
+    console.log(`Saved ${data.length} records to src/data/${fileName}`);
   }
 
   console.log('Community data refresh complete.');

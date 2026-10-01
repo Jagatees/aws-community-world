@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import AddToCalendar from './AddToCalendar';
+import NewMemberBadge from './NewMemberBadge';
+import { getMemberBadgeLabel } from '../utils/memberMarkers';
 
 const CATEGORY_LABELS = {
   heroes: 'Hero',
@@ -124,11 +126,23 @@ function LoadingAvatarImage({ src, alt, className, style, wrapperClassName = '',
   );
 }
 
+function AvatarFallback({ name, className, style }) {
+  return (
+    <span
+      className={`inline-flex flex-shrink-0 items-center justify-center rounded-full text-xs font-black ${className}`}
+      style={{ backgroundColor: '#0F1923', color: '#FF9900', ...style }}
+      aria-hidden="true"
+    >
+      {getMemberBadgeLabel({ name })}
+    </span>
+  );
+}
+
 function LoadingAvatarImageContent({ src, alt, className, style, wrapperClassName = '', spinnerSize = 16 }) {
   const [loading, setLoading] = useState(Boolean(src));
   const [failed, setFailed] = useState(false);
 
-  if (failed) return null;
+  if (failed) return <AvatarFallback name={alt} className={`${className} ${wrapperClassName}`} style={style} />;
 
   return (
     <span
@@ -157,22 +171,6 @@ function LoadingAvatarImageContent({ src, alt, className, style, wrapperClassNam
           transition: 'opacity 0.18s ease',
         }}
       />
-    </span>
-  );
-}
-
-function NewMemberBadge({ compact = false }) {
-  return (
-    <span
-      title="New community builder"
-      className={`inline-flex items-center justify-center rounded-full font-black leading-none ${compact ? 'px-1.5 py-0.5 text-[8px]' : 'px-2 py-1 text-[10px]'}`}
-      style={{
-        backgroundColor: '#FF9900',
-        color: '#0F1923',
-        letterSpacing: '0.04em',
-      }}
-    >
-      NEW
     </span>
   );
 }
@@ -290,7 +288,7 @@ function LeaderAvatarStack({ member, fallbackName, fallbackImageUrl, size = 'md'
 
   const imageUrl = leaderImages[0] || fallbackImageUrl;
   if (!imageUrl) {
-    return null;
+    return <AvatarFallback name={fallbackName} className={avatarSizeClass} style={{ border: '2px solid #FF9900' }} />;
   }
 
   return (
@@ -383,7 +381,10 @@ function CloudClubSingleView({ member, darkMode, url }) {
         className="flex items-start gap-3 rounded-xl p-3"
         style={{ backgroundColor: cardBg, border: `1px solid ${borderColor}` }}
       >
-        <LeaderAvatarStack member={member} fallbackName={member.name} fallbackImageUrl={member.avatarUrl} />
+        <div className="relative flex-shrink-0">
+          <LeaderAvatarStack member={member} fallbackName={member.name} fallbackImageUrl={member.avatarUrl} />
+          {member.isNew && <NewMemberBadge compact overIcon darkMode={darkMode} />}
+        </div>
         <div className="min-w-0 flex-1">
           <h2 className="text-sm font-bold leading-tight" style={{ color: nameColor }}>
             {member.name}
@@ -439,19 +440,23 @@ function SingleMemberView({ member, darkMode }) {
 
   return (
     <div className="flex flex-col items-center gap-3 pt-2">
-      {member.avatarUrl && (
-        <LoadingAvatarImage
-          src={member.avatarUrl}
-          alt={member.name}
-          className="h-16 w-16 rounded-full object-cover"
-          style={{ border: '2px solid #FF9900' }}
-          spinnerSize={18}
-        />
+      {(member.avatarUrl || member.isNew) && (
+        <div className="relative">
+          {member.avatarUrl && (
+            <LoadingAvatarImage
+              src={member.avatarUrl}
+              alt={member.name}
+              className="h-16 w-16 rounded-full object-cover"
+              style={{ border: '2px solid #FF9900' }}
+              spinnerSize={18}
+            />
+          )}
+          {member.isNew && <NewMemberBadge overIcon={Boolean(member.avatarUrl)} darkMode={darkMode} />}
+        </div>
       )}
       <h2 className="text-center text-lg font-bold leading-tight" style={{ color: nameColor }}>
         {member.name}
       </h2>
-      {member.isNew && <NewMemberBadge />}
       <span
         className="rounded-full px-3 py-1 text-xs font-semibold"
         style={{ backgroundColor: '#FF9900', color: '#0F1923' }}
@@ -560,12 +565,14 @@ function ClusterListView({ members, darkMode }) {
             className="flex items-start gap-3 rounded-lg p-3"
             style={{ backgroundColor: itemBg }}
           >
-            <LeaderAvatarStack member={m} fallbackName={m.name} fallbackImageUrl={m.avatarUrl} size="sm" />
+            <div className="relative flex-shrink-0">
+              <LeaderAvatarStack member={m} fallbackName={m.name} fallbackImageUrl={m.avatarUrl} size="sm" />
+              {m.isNew && <NewMemberBadge compact overIcon darkMode={darkMode} />}
+            </div>
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold leading-tight" style={{ color: nameColor }}>
                 <span className="inline-flex min-w-0 flex-wrap items-center gap-1.5">
                   <span className="min-w-0 break-words">{m.name}</span>
-                  {m.isNew && <NewMemberBadge compact />}
                 </span>
               </p>
               {m.category === 'cloud-clubs' && getLeaderNames(m).length > 0 && (

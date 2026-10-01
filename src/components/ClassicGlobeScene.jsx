@@ -61,6 +61,7 @@ function getPortraitGroupMembers(cluster) {
       id: `${cluster.members[0].id}-preview-${index}`,
       name: leader.name || cluster.members[0].name,
       avatarUrl: leader.imageUrl || '',
+      isNew: Boolean(leader.isNew),
       clusterOnly: false,
     }));
   }

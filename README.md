@@ -74,9 +74,9 @@ The checked-in data currently contains:
 
 | Dataset | Records |
 | --- | ---: |
-| AWS Heroes | 252 |
-| AWS Community Builders | 3,036 |
-| AWS User Groups | 599 |
+| AWS Heroes | 255 |
+| AWS Community Builders | 3,039 |
+| AWS User Groups | 609 |
 | AWS Student Builder Groups | 1,023 |
 | Kiro Ambassadors | 7 |
 | Golden Jackets | 68 |
@@ -89,6 +89,8 @@ The checked-in data currently contains:
 Golden Jackets currently has 64 mapped profiles across five countries and includes two labeled alumni. Ambassadors has 134 mapped profiles across 18 countries. For these two categories, the globe counts mapped profiles; Directory and Gallery include profiles without confirmed locations. Golden Jacket recognition does not assert that every certification remains current.
 
 Counts reflect the checked-in JSON files and change as refresh scripts are run.
+
+The [1 October 2026 refresh](docs/monthly-community-refresh-2026-10-01.md) adds three Community Builders, three newly recognized Heroes, and ten User Groups. New records have a `NEW` badge over their marker or portrait, including in grouped markers, Minimal, Gallery, Directory, and profile details. The badge means new in that directory; existing Builders newly recognized as Heroes are not counted as new people in the community.
 
 ## Tech stack
 

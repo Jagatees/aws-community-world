@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import './ExperimentalHeroDex.css';
 import { getMemberCountry, getMemberCountryFlagUrl, getMemberImage } from '../utils/memberMarkers';
+import NewMemberBadge from './NewMemberBadge';
 
 const SOCIAL_LABELS = {
   linkedin: 'LinkedIn',
@@ -553,6 +554,7 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
                     <span className="hero-dex__hex-image"><Portrait hero={hero} category={category} config={config} eager={distance < 2} /></span>
                     <span className="hero-dex__hex-sheen" />
                   </span>
+                  {hero.isNew && <NewMemberBadge overIcon darkMode={darkMode} style={{ top: '9%', right: '10%' }} />}
                   <span className="hero-dex__tooltip">
                     <strong>{hero.name}</strong>
                     <small>{config.filterValue(hero) || config.singular}</small>
@@ -674,9 +676,12 @@ export default function IconArchiveScene({ category = 'heroes', members, loading
 
             <div className="hero-scan__portrait-wrap">
               <div className="hero-scan__reticle" aria-hidden="true"><span /><span /><span /></div>
-              <div className="hero-scan__portrait">
-                <Portrait key={selectedHero.id} hero={selectedHero} category={category} config={config} eager />
-                <div className="hero-scan__portrait-lines" aria-hidden="true" />
+              <div className="relative">
+                <div className="hero-scan__portrait">
+                  <Portrait key={selectedHero.id} hero={selectedHero} category={category} config={config} eager />
+                  <div className="hero-scan__portrait-lines" aria-hidden="true" />
+                </div>
+                {selectedHero.isNew && <NewMemberBadge overIcon darkMode={darkMode} style={{ top: '20%' }} />}
               </div>
               <span className="hero-scan__classification">{config.filterValue(selectedHero) || config.singular}</span>
             </div>
