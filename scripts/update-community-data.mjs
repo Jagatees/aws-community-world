@@ -97,13 +97,18 @@ async function geocode(location) {
     return { lat: 0, lng: 0 };
   }
 
-  const key = location.trim().toLowerCase();
+  const locationParts = location.split(',').map((part) => part.trim()).filter(Boolean);
+  const queryLocation = locationParts.length > 1
+    && locationParts.every((part) => part.toLowerCase() === locationParts[0].toLowerCase())
+    ? locationParts[0]
+    : location.trim();
+  const key = queryLocation.toLowerCase();
   if (geoCache[key]) return geoCache[key];
 
   await sleep(1_100);
 
-  const searchQueries = [location];
-  const parts = location.split(',').map((part) => part.trim()).filter(Boolean);
+  const searchQueries = [queryLocation];
+  const parts = queryLocation.split(',').map((part) => part.trim()).filter(Boolean);
   if (parts.length > 1) searchQueries.push(parts[0]);
 
   for (const query of searchQueries) {
@@ -448,9 +453,12 @@ async function scrapeCommunityBuilders(page) {
       || existingByName.get(normalizedLookupValue(builder.name))?.location
       || '',
   }));
+  const buildersWithProfileLocations = await enrichBuilderLocationsFromProfiles(
+    buildersWithKnownLocations,
+  );
   const rawBuilders = INFER_BUILDER_LOCATIONS
-    ? await enrichBuilderLocationsFromFilter(page, buildersWithKnownLocations)
-    : buildersWithKnownLocations;
+    ? await enrichBuilderLocationsFromFilter(page, buildersWithProfileLocations)
+    : buildersWithProfileLocations;
   const existingByNameLocation = new Map(existing.map((builder) => [locationKey(builder), builder]));
   const withCoordinates = await addCoordinates(
     mergeCoordinates(rawBuilders, existing.map((builder) => ({
@@ -482,6 +490,60 @@ async function scrapeCommunityBuilders(page) {
 
   if (!DRY_RUN && builders.length < 100) throw new Error(`Community Builders scrape returned only ${builders.length} records`);
   writeJson('community-builders.json', builders);
+}
+
+async function enrichBuilderLocationsFromProfiles(builders) {
+  const pendingIndexes = builders
+    .map((builder, index) => (builder.location ? -1 : index))
+    .filter((index) => index >= 0);
+  if (!pendingIndexes.length) return builders;
+
+  console.log(` Resolving ${pendingIndexes.length} missing Builder locations from public profiles...`);
+  const enriched = [...builders];
+  const countryNames = new Intl.DisplayNames(['en'], { type: 'region' });
+  let cursor = 0;
+  let resolved = 0;
+
+  async function worker() {
+    while (cursor < pendingIndexes.length) {
+      const index = pendingIndexes[cursor];
+      cursor += 1;
+      const builder = enriched[index];
+      const alias = decodeURIComponent(new URL(builder.profile_url).pathname.split('/@')[1] || '').trim();
+      if (!alias) continue;
+
+      try {
+        const response = await fetch('https://api.builder.aws.com/ums/getProfileByAlias', {
+          method: 'POST',
+          headers: {
+            accept: 'application/json, text/plain, */*',
+            'content-type': 'application/json',
+            origin: 'https://builder.aws.com',
+            referer: 'https://builder.aws.com/',
+            'user-agent': 'aws-community-world-scraper/1.0',
+            'builder-session-token': 'dummy',
+          },
+          body: JSON.stringify({ alias }),
+        });
+        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+        const payload = await response.json();
+        const countryCode = payload?.profile?.location?.displayLocation?.countryRegion
+          ?.trim()
+          .toUpperCase();
+        const country = countryCode ? countryNames.of(countryCode) : '';
+        if (country) {
+          enriched[index] = { ...builder, location: country };
+          resolved += 1;
+        }
+      } catch (error) {
+        console.warn(`Could not resolve Builder location for ${builder.name}: ${error.message}`);
+      }
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(8, pendingIndexes.length) }, () => worker()));
+  console.log(` Resolved ${resolved}/${pendingIndexes.length} missing Builder locations from public profiles`);
+  return enriched;
 }
 
 async function getLocationFilterButton(page) {
@@ -664,19 +726,44 @@ async function scrapeUserGroups(page) {
   const extractedGroups = await page.evaluate(extractDirectoryGroups, 'user');
   const rawGroups = [];
   const seenNameLocations = new Set();
+  const duplicateGroupIndexes = new Map();
   for (const group of extractedGroups) {
+    const duplicateKey = [
+      normalizedGroupJoinUrl(group.joinUrl),
+      normalizedLookupValue(group.location)
+        .normalize('NFKD')
+        .replace(/[\u0300-\u036f]/g, ''),
+    ].join('|');
+    const duplicateIndex = duplicateGroupIndexes.get(duplicateKey);
+    if (duplicateIndex !== undefined) {
+      rawGroups[duplicateIndex] = group;
+      continue;
+    }
+    duplicateGroupIndexes.set(duplicateKey, rawGroups.length);
+
     const key = locationKey(group);
     if (seenNameLocations.has(key)) continue;
     seenNameLocations.add(key);
     rawGroups.push(group);
   }
   const existing = readBaselineJson('user-groups.json');
-  const existingMap = existingBy(existing, 'joinUrl');
+  const existingMap = uniqueExistingBy(
+    existing,
+    (group) => normalizedGroupJoinUrl(group.joinUrl),
+  );
   const existingByNameLocation = new Map(existing.map((group) => [locationKey(group), group]));
-  const withCoordinates = await addCoordinates(mergeCoordinates(rawGroups, existing, 'joinUrl'));
-  const groups = withCoordinates.map((group) => {
-    const previous = existingMap.get(group.joinUrl) || existingByNameLocation.get(locationKey(group));
-    return {
+  const previousForGroup = (group) => (
+    existingByNameLocation.get(locationKey(group))
+    || existingMap.get(normalizedGroupJoinUrl(group.joinUrl))
+  );
+  const withCoordinates = await addCoordinates(rawGroups.map((group) => {
+    const previous = previousForGroup(group);
+    if (!previous || !hasStoredCoordinates(previous)) return group;
+    return { ...group, lat: Number(previous.lat), lng: Number(previous.lng) };
+  }));
+  const groups = Array.from(new Map(withCoordinates.map((group) => {
+    const previous = previousForGroup(group);
+    const record = {
       ...previous,
       id: previous?.id || stableId(group.joinUrl),
       name: group.name,
@@ -689,10 +776,31 @@ async function scrapeUserGroups(page) {
       lng: group.lng,
       isNew: !previous,
     };
-  });
+    return [record.id, record];
+  })).values());
 
   if (!DRY_RUN && groups.length < 100) throw new Error(`User Groups scrape returned only ${groups.length} records`);
   writeJson('user-groups.json', groups);
+}
+
+function normalizedGroupJoinUrl(value) {
+  const normalized = String(value || '')
+    .trim()
+    .replace(/\/+$/, '')
+    .toLowerCase()
+    .replace(/(meetup\.com)\/[a-z]{2}(?:-[a-z]{2})?\//, '$1/');
+
+  // Both Meetup addresses identify BuildHers+ Philippines.
+  if (normalized === 'https://www.meetup.com/awsug-buildhers') {
+    return 'https://www.meetup.com/aws-usergroup-ph-women';
+  }
+
+  // The upstream directory currently lists both addresses for the same Cucuta chapter.
+  if (normalized === 'https://www.meetup.com/aws-ug-cucuta') {
+    return 'https://www.meetup.com/aws-user-group-cucuta';
+  }
+
+  return normalized;
 }
 
 function normalizedStudentGroupName(value) {

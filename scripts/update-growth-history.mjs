@@ -114,9 +114,15 @@ function getRecordIdentity(categoryId, entry) {
   if (categoryId === 'community-builders') {
     return `builder:${entry.id || normalizeUrl(getProfileUrl(entry)) || normalizeText(entry.name)}`;
   }
-  if (categoryId === 'heroes') return `hero:${normalizeText(entry.name)}`;
-  if (categoryId === 'user-groups') return `user-group:${normalizeText(entry.name)}`;
-  if (categoryId === 'cloud-clubs') return `student-group:${normalizeGroupName(entry.name)}`;
+  if (categoryId === 'heroes') {
+    return `hero:${entry.id || normalizeUrl(getProfileUrl(entry)) || normalizeText(entry.name)}`;
+  }
+  if (categoryId === 'user-groups') {
+    return `user-group:${entry.id || normalizeUrl(getProfileUrl(entry)) || normalizeText(entry.name)}`;
+  }
+  if (categoryId === 'cloud-clubs') {
+    return `student-group:${entry.id || normalizeGroupName(entry.name)}`;
+  }
   if (categoryId === 'community-days') return `community-day:${entry.id || `${normalizeText(entry.name)}:${entry.date || ''}`}`;
   if (categoryId === 'kiro-events') return `kiro-event:${entry.id || normalizeUrl(getProfileUrl(entry)) || normalizeText(entry.name)}`;
   return `${categoryId}:${entry.id || normalizeText(entry.name)}`;
