@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-02T06:40:43.750Z",
+  "updatedAt": "2026-10-03T06:02:01.134Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -10910,7 +10910,7 @@
       }
     },
     {
-      "date": "2026-10-02",
+      "date": "2026-10-03",
       "source": {
         "type": "working-tree"
       },
@@ -11104,10 +11104,10 @@
           }
         },
         "kiro-events": {
-          "total": 2,
+          "total": 9,
           "classified": 2,
-          "unclassified": 0,
-          "coveragePercent": 100,
+          "unclassified": 7,
+          "coveragePercent": 22.2,
           "regions": {
             "north-america": 2,
             "south-america": 0,
@@ -11117,9 +11117,9 @@
             "oceania": 0
           },
           "changes": {
-            "added": 0,
+            "added": 7,
             "removed": 0,
-            "net": 0,
+            "net": 7,
             "retained": 2,
             "addedByRegion": {
               "north-america": 0,
@@ -11137,9 +11137,59 @@
               "africa": 0,
               "oceania": 0
             },
-            "addedUnclassified": 0,
+            "addedUnclassified": 7,
             "removedUnclassified": 0,
-            "addedItems": [],
+            "addedItems": [
+              {
+                "name": "AWS Student Community Day Thane 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://awsscdthane.in"
+              },
+              {
+                "name": "Build Over Nights: Kiro x Quick Hackathon",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://buildovernights.com/"
+              },
+              {
+                "name": "CloudNativeGeo (CNG) Forum 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://2026.cloudnativegeo.org/"
+              },
+              {
+                "name": "Hackday Islamabad 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://luma.com/jih8rso5"
+              },
+              {
+                "name": "Islamabad Hack 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://luma.com/jih8rso5"
+              },
+              {
+                "name": "Kiro University Challenge",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://kiro.dev/2026/university"
+              },
+              {
+                "name": "Young Talent Programme for AI in Finance (YTP-AIF)",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://www.ibf.org.sg/home/for-financial-institutions/talent-development-and-training-support/develop-young-talent/ytp-aif"
+              }
+            ],
             "removedItems": [],
             "quality": {
               "confidence": "high",
@@ -11203,19 +11253,19 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-02",
-      "daysCovered": 187
+      "endDate": "2026-10-03",
+      "daysCovered": 188
     },
     "global": {
-      "totalRecords": 4966,
+      "totalRecords": 4973,
       "classifiedRecords": 4776,
-      "coveragePercent": 96.2,
+      "coveragePercent": 96,
       "snapshots": 23
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-02",
+        "currentDate": "2026-10-03",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -11786,7 +11836,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-02",
+        "currentDate": "2026-10-03",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -12349,7 +12399,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-02",
+        "currentDate": "2026-10-03",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -12990,7 +13040,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-02",
+        "currentDate": "2026-10-03",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -13539,14 +13589,14 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-02",
+        "currentDate": "2026-10-03",
         "baselineTotal": 17,
-        "currentTotal": 2,
-        "currentCoveragePercent": 100,
+        "currentTotal": 9,
+        "currentCoveragePercent": 22.2,
         "periodChange": {
-          "added": 1,
+          "added": 8,
           "removed": 16,
-          "net": -15,
+          "net": -8,
           "retained": 1,
           "retentionPercent": 5.9,
           "addedByRegion": {
@@ -13567,11 +13617,60 @@
           },
           "addedItems": [
             {
+              "name": "AWS Student Community Day Thane 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://awsscdthane.in"
+            },
+            {
+              "name": "Build Over Nights: Kiro x Quick Hackathon",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://buildovernights.com/"
+            },
+            {
+              "name": "CloudNativeGeo (CNG) Forum 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://2026.cloudnativegeo.org/"
+            },
+            {
               "name": "CUSEC 2027",
               "location": "Canada",
               "country": "Canada",
               "region": "north-america",
               "url": "https://www.cusec.net/"
+            },
+            {
+              "name": "Hackday Islamabad 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://luma.com/jih8rso5"
+            },
+            {
+              "name": "Islamabad Hack 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://luma.com/jih8rso5"
+            },
+            {
+              "name": "Kiro University Challenge",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://kiro.dev/2026/university"
+            },
+            {
+              "name": "Young Talent Programme for AI in Finance (YTP-AIF)",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://www.ibf.org.sg/home/for-financial-institutions/talent-development-and-training-support/develop-young-talent/ytp-aif"
             }
           ],
           "removedItems": [
@@ -13743,10 +13842,10 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-09-13",
-          "added": 0,
-          "removed": 2,
-          "net": -2,
+          "date": "2026-10-03",
+          "added": 7,
+          "removed": 0,
+          "net": 7,
           "retained": 2,
           "addedByRegion": {
             "north-america": 0,
@@ -13760,29 +13859,64 @@
             "north-america": 0,
             "south-america": 0,
             "europe": 0,
-            "asia": 1,
+            "asia": 0,
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 0,
-          "removedUnclassified": 1,
-          "addedItems": [],
-          "removedItems": [
+          "addedUnclassified": 7,
+          "removedUnclassified": 0,
+          "addedItems": [
             {
-              "name": "AWS Community Day Cebu 2026 - Morning Labs",
-              "location": "Cebu, Philippines",
-              "country": "Philippines",
-              "region": "asia",
-              "url": "https://awsugcebu.org"
-            },
-            {
-              "name": "AWS Community Day Vadodara 2026",
+              "name": "AWS Student Community Day Thane 2026",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://acd26.awsugvad.in/"
+              "url": "https://awsscdthane.in"
+            },
+            {
+              "name": "Build Over Nights: Kiro x Quick Hackathon",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://buildovernights.com/"
+            },
+            {
+              "name": "CloudNativeGeo (CNG) Forum 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://2026.cloudnativegeo.org/"
+            },
+            {
+              "name": "Hackday Islamabad 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://luma.com/jih8rso5"
+            },
+            {
+              "name": "Islamabad Hack 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://luma.com/jih8rso5"
+            },
+            {
+              "name": "Kiro University Challenge",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://kiro.dev/2026/university"
+            },
+            {
+              "name": "Young Talent Programme for AI in Finance (YTP-AIF)",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://www.ibf.org.sg/home/for-financial-institutions/talent-development-and-training-support/develop-young-talent/ytp-aif"
             }
           ],
+          "removedItems": [],
           "quality": {
             "confidence": "high",
             "comparable": true,
@@ -13794,7 +13928,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-02",
+        "currentDate": "2026-10-03",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -14124,25 +14258,34 @@
       }
     },
     "upcoming": {
-      "total": 18,
-      "next30Days": 16,
+      "total": 22,
+      "next30Days": 20,
       "byRegion": {
         "north-america": 4,
         "south-america": 4,
-        "europe": 5,
+        "europe": 4,
         "asia": 3,
         "africa": 1,
         "oceania": 1
       },
       "items": [
         {
-          "name": "AWS Community Day Italy",
-          "location": "Rome, Italy",
-          "country": "Italy",
-          "region": "europe",
-          "url": "https://www.awscommunityday.it/",
-          "category": "community-days",
-          "date": "2026-10-02T12:00:00.000Z"
+          "name": "Build Over Nights: Kiro x Quick Hackathon",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://buildovernights.com/",
+          "category": "kiro-events",
+          "date": "2026-10-03T00:00:00.000Z"
+        },
+        {
+          "name": "AWS Student Community Day Thane 2026",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://awsscdthane.in",
+          "category": "kiro-events",
+          "date": "2026-10-03T08:00:00.000Z"
         },
         {
           "name": "CUTC Montreal",
@@ -14181,6 +14324,24 @@
           "date": "2026-10-03T12:00:00.000Z"
         },
         {
+          "name": "Hackday Islamabad 2026",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://luma.com/jih8rso5",
+          "category": "kiro-events",
+          "date": "2026-10-04T09:00:00.000Z"
+        },
+        {
+          "name": "CloudNativeGeo (CNG) Forum 2026",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://2026.cloudnativegeo.org/",
+          "category": "kiro-events",
+          "date": "2026-10-06T09:00:00.000Z"
+        },
+        {
           "name": "AWS DMV Community Day",
           "location": "Washington D.C., United States",
           "country": "United States",
@@ -14188,6 +14349,15 @@
           "url": "https://www.dmvcommunityday.com/",
           "category": "community-days",
           "date": "2026-10-09T12:00:00.000Z"
+        },
+        {
+          "name": "Islamabad Hack 2026",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://luma.com/jih8rso5",
+          "category": "kiro-events",
+          "date": "2026-10-10T09:30:00.000Z"
         },
         {
           "name": "AWS Community Day Armenia",
@@ -14278,24 +14448,6 @@
           "url": "https://awscommunityday.com.br/norte/",
           "category": "community-days",
           "date": "2026-10-31T12:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Belém",
-          "location": "Belém, Brazil",
-          "country": "Brazil",
-          "region": "south-america",
-          "url": "https://awscommunityday.com.br/#norte",
-          "category": "community-days",
-          "date": "2026-11-14T12:00:00.000Z"
-        },
-        {
-          "name": "CUSEC 2027",
-          "location": "Canada",
-          "country": "Canada",
-          "region": "north-america",
-          "url": "https://www.cusec.net/",
-          "category": "kiro-events",
-          "date": "2027-01-07T00:00:00.000Z"
         }
       ]
     },
