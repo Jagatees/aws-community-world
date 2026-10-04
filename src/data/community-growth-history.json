@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-03T06:02:01.134Z",
+  "updatedAt": "2026-10-04T06:37:02.649Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -10912,7 +10912,9 @@
     {
       "date": "2026-10-03",
       "source": {
-        "type": "working-tree"
+        "type": "git",
+        "commit": "a896092",
+        "subject": "chore: refresh community feeds and insights"
       },
       "categories": {
         "heroes": {
@@ -11248,24 +11250,329 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-10-04",
+      "source": {
+        "type": "working-tree"
+      },
+      "categories": {
+        "heroes": {
+          "total": 255,
+          "classified": 246,
+          "unclassified": 9,
+          "coveragePercent": 96.5,
+          "regions": {
+            "north-america": 54,
+            "south-america": 13,
+            "europe": 75,
+            "asia": 83,
+            "africa": 6,
+            "oceania": 15
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 255,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "community-builders": {
+          "total": 3039,
+          "classified": 2872,
+          "unclassified": 167,
+          "coveragePercent": 94.5,
+          "regions": {
+            "north-america": 506,
+            "south-america": 257,
+            "europe": 566,
+            "asia": 1182,
+            "africa": 263,
+            "oceania": 98
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 3039,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "user-groups": {
+          "total": 609,
+          "classified": 608,
+          "unclassified": 1,
+          "coveragePercent": 99.8,
+          "regions": {
+            "north-america": 113,
+            "south-america": 98,
+            "europe": 164,
+            "asia": 182,
+            "africa": 33,
+            "oceania": 18
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 609,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "cloud-clubs": {
+          "total": 1023,
+          "classified": 1010,
+          "unclassified": 13,
+          "coveragePercent": 98.7,
+          "regions": {
+            "north-america": 136,
+            "south-america": 118,
+            "europe": 30,
+            "asia": 633,
+            "africa": 88,
+            "oceania": 5
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 1023,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "kiro-events": {
+          "total": 7,
+          "classified": 1,
+          "unclassified": 6,
+          "coveragePercent": 14.3,
+          "regions": {
+            "north-america": 1,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
+          },
+          "changes": {
+            "added": 0,
+            "removed": 2,
+            "net": -2,
+            "retained": 7,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 1,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 1,
+            "addedItems": [],
+            "removedItems": [
+              {
+                "name": "AWS Student Community Day Thane 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://awsscdthane.in"
+              },
+              {
+                "name": "CUTC Montreal",
+                "location": "Montreal, Canada",
+                "country": "Canada",
+                "region": "north-america",
+                "url": "https://luma.com/cutc26mtl"
+              }
+            ],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        },
+        "community-days": {
+          "total": 38,
+          "classified": 38,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 5,
+            "south-america": 9,
+            "europe": 9,
+            "asia": 10,
+            "africa": 3,
+            "oceania": 2
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 38,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        }
+      }
     }
   ],
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-03",
-      "daysCovered": 188
+      "endDate": "2026-10-04",
+      "daysCovered": 189
     },
     "global": {
-      "totalRecords": 4973,
-      "classifiedRecords": 4776,
-      "coveragePercent": 96,
-      "snapshots": 23
+      "totalRecords": 4971,
+      "classifiedRecords": 4775,
+      "coveragePercent": 96.1,
+      "snapshots": 24
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-03",
+        "currentDate": "2026-10-04",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -11836,7 +12143,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-03",
+        "currentDate": "2026-10-04",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -12399,7 +12706,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-03",
+        "currentDate": "2026-10-04",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -13040,7 +13347,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-03",
+        "currentDate": "2026-10-04",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -13589,16 +13896,16 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-03",
+        "currentDate": "2026-10-04",
         "baselineTotal": 17,
-        "currentTotal": 9,
-        "currentCoveragePercent": 22.2,
+        "currentTotal": 7,
+        "currentCoveragePercent": 14.3,
         "periodChange": {
-          "added": 8,
-          "removed": 16,
-          "net": -8,
-          "retained": 1,
-          "retentionPercent": 5.9,
+          "added": 7,
+          "removed": 17,
+          "net": -10,
+          "retained": 0,
+          "retentionPercent": 0,
           "addedByRegion": {
             "north-america": 1,
             "south-america": 0,
@@ -13608,7 +13915,7 @@
             "oceania": 0
           },
           "removedByRegion": {
-            "north-america": 3,
+            "north-america": 4,
             "south-america": 0,
             "europe": 2,
             "asia": 4,
@@ -13616,13 +13923,6 @@
             "oceania": 0
           },
           "addedItems": [
-            {
-              "name": "AWS Student Community Day Thane 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://awsscdthane.in"
-            },
             {
               "name": "Build Over Nights: Kiro x Quick Hackathon",
               "location": "Online",
@@ -13701,6 +14001,13 @@
               "country": "Philippines",
               "region": "asia",
               "url": "https://luma.com/k4ji88wh"
+            },
+            {
+              "name": "CUTC Montreal",
+              "location": "Montreal, Canada",
+              "country": "Canada",
+              "region": "north-america",
+              "url": "https://luma.com/cutc26mtl"
             },
             {
               "name": "CUTC Transform Promptathon",
@@ -13791,9 +14098,9 @@
         "regionGrowth": {
           "north-america": {
             "start": 4,
-            "current": 2,
-            "net": -2,
-            "growthPercent": -50
+            "current": 1,
+            "net": -3,
+            "growthPercent": -75
           },
           "south-america": {
             "start": 0,
@@ -13835,18 +14142,18 @@
         },
         "mostRepresented": {
           "region": "north-america",
-          "total": 2
+          "total": 1
         },
         "peak": {
           "date": "2026-06-04",
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-10-03",
-          "added": 7,
-          "removed": 0,
-          "net": 7,
-          "retained": 2,
+          "date": "2026-10-04",
+          "added": 0,
+          "removed": 2,
+          "net": -2,
+          "retained": 7,
           "addedByRegion": {
             "north-america": 0,
             "south-america": 0,
@@ -13856,16 +14163,17 @@
             "oceania": 0
           },
           "removedByRegion": {
-            "north-america": 0,
+            "north-america": 1,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 7,
-          "removedUnclassified": 0,
-          "addedItems": [
+          "addedUnclassified": 0,
+          "removedUnclassified": 1,
+          "addedItems": [],
+          "removedItems": [
             {
               "name": "AWS Student Community Day Thane 2026",
               "location": "Online",
@@ -13874,49 +14182,13 @@
               "url": "https://awsscdthane.in"
             },
             {
-              "name": "Build Over Nights: Kiro x Quick Hackathon",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://buildovernights.com/"
-            },
-            {
-              "name": "CloudNativeGeo (CNG) Forum 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://2026.cloudnativegeo.org/"
-            },
-            {
-              "name": "Hackday Islamabad 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://luma.com/jih8rso5"
-            },
-            {
-              "name": "Islamabad Hack 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://luma.com/jih8rso5"
-            },
-            {
-              "name": "Kiro University Challenge",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://kiro.dev/2026/university"
-            },
-            {
-              "name": "Young Talent Programme for AI in Finance (YTP-AIF)",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://www.ibf.org.sg/home/for-financial-institutions/talent-development-and-training-support/develop-young-talent/ytp-aif"
+              "name": "CUTC Montreal",
+              "location": "Montreal, Canada",
+              "country": "Canada",
+              "region": "north-america",
+              "url": "https://luma.com/cutc26mtl"
             }
           ],
-          "removedItems": [],
           "quality": {
             "confidence": "high",
             "comparable": true,
@@ -13928,7 +14200,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-03",
+        "currentDate": "2026-10-04",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -14258,71 +14530,17 @@
       }
     },
     "upcoming": {
-      "total": 22,
-      "next30Days": 20,
+      "total": 16,
+      "next30Days": 14,
       "byRegion": {
-        "north-america": 4,
-        "south-america": 4,
-        "europe": 4,
-        "asia": 3,
+        "north-america": 3,
+        "south-america": 3,
+        "europe": 3,
+        "asia": 2,
         "africa": 1,
         "oceania": 1
       },
       "items": [
-        {
-          "name": "Build Over Nights: Kiro x Quick Hackathon",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://buildovernights.com/",
-          "category": "kiro-events",
-          "date": "2026-10-03T00:00:00.000Z"
-        },
-        {
-          "name": "AWS Student Community Day Thane 2026",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://awsscdthane.in",
-          "category": "kiro-events",
-          "date": "2026-10-03T08:00:00.000Z"
-        },
-        {
-          "name": "CUTC Montreal",
-          "location": "Montreal, Canada",
-          "country": "Canada",
-          "region": "north-america",
-          "url": "https://luma.com/cutc26mtl",
-          "category": "kiro-events",
-          "date": "2026-10-03T09:30:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Salvador",
-          "location": "Salvador, Brazil",
-          "country": "Brazil",
-          "region": "south-america",
-          "url": "https://awscommunityday.com.br/#nordeste",
-          "category": "community-days",
-          "date": "2026-10-03T12:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Bulgaria",
-          "location": "Sofia, Bulgaria",
-          "country": "Bulgaria",
-          "region": "europe",
-          "url": "https://www.aws-community-day.bg/",
-          "category": "community-days",
-          "date": "2026-10-03T12:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Davao",
-          "location": "Davao, Philippines",
-          "country": "Philippines",
-          "region": "asia",
-          "url": "",
-          "category": "community-days",
-          "date": "2026-10-03T12:00:00.000Z"
-        },
         {
           "name": "Hackday Islamabad 2026",
           "location": "Online",
@@ -14448,6 +14666,24 @@
           "url": "https://awscommunityday.com.br/norte/",
           "category": "community-days",
           "date": "2026-10-31T12:00:00.000Z"
+        },
+        {
+          "name": "AWS Community Day Belém",
+          "location": "Belém, Brazil",
+          "country": "Brazil",
+          "region": "south-america",
+          "url": "https://awscommunityday.com.br/#norte",
+          "category": "community-days",
+          "date": "2026-11-14T12:00:00.000Z"
+        },
+        {
+          "name": "CUSEC 2027",
+          "location": "Canada",
+          "country": "Canada",
+          "region": "north-america",
+          "url": "https://www.cusec.net/",
+          "category": "kiro-events",
+          "date": "2027-01-07T00:00:00.000Z"
         }
       ]
     },
