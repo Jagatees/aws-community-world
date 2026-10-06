@@ -1,205 +1,239 @@
 {
-  "updatedAt": "2026-10-05T06:32:43.071Z",
+  "updatedAt": "2026-10-06T07:10:35.729Z",
   "latest": [
     {
-      "id": "/content/3K5C6IiUOytJLiEqxxNYbLDL5Sl",
-      "title": "Behind the Scenes: EC2 Compute Capacity",
-      "description": "A look behind the infrastructure that powers Amazon EC2, covering physical hosts, virtualization, the Nitro System, instance types, and compute capacity across Availability Zones.",
-      "url": "https://builder.aws.com/content/3K5C6IiUOytJLiEqxxNYbLDL5Sl",
+      "id": "/content/3KJHcrZvUsNSRbjeJ5PpREPcqC8",
+      "title": "Amazon S3 Explained: A Beginner’s Guide to Cloud Storage on AWS",
+      "description": "Understand how Amazon S3 stores and manages data in the cloud, including buckets, objects, storage classes, security, versioning, and practical application use cases.",
+      "url": "https://builder.aws.com/content/3KJHcrZvUsNSRbjeJ5PpREPcqC8",
       "imageUrl": "",
-      "authorName": "Beyza Atay",
-      "authorAlias": "byz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JskMGJLv9XVWjwrUdWN6cBL9XO.webp",
-      "location": "TR",
-      "lat": 39.294076,
-      "lng": 35.2316631,
-      "tags": [
-        "amazon-ec2",
-        "compute",
-        "infrastructure",
-        "aws-nitro-system",
-        "availability-zones"
-      ],
-      "publishedAt": "2026-10-05T06:31:01.168Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3K06oybdO4RzeQCbQAORpYU8mob",
-      "title": "System 1 model workflows in AWS - overview and implementation, part 1: System 1-driven Step Functions human escalation workflow",
-      "description": "System 1 is a new paradigm in the world of AI and one of the hottest topics so far, but how do you bring one to your workflows while retaining complete control over the model, hosting and costs?Jev was the first, however now open-source alternatives exist like Decider-2B or Laya. In this post we will learn how you can deploy a Step Functions workflow in AWS that decides based on the human input if the human escalation is needed or if the LLM can handle the response safely",
-      "url": "https://builder.aws.com/content/3K06oybdO4RzeQCbQAORpYU8mob",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KEzDGebV75sgsriU4HyIgoAP1t/Gemin.webp",
-      "authorName": "Yevhenii",
-      "authorAlias": "vamdemon",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KEzH7pI6pbWpd17SXnzwp4SsIu.webp",
-      "location": "DE",
-      "lat": 51.1638175,
-      "lng": 10.4478313,
-      "tags": [],
-      "publishedAt": "2026-10-05T06:29:25.856Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3KGQ2Cp6m5c8KidQHDDyHx5ZzVm",
-      "title": "I Built a Daily Email Bot with AWS Lambda: A Zero-Cost Student Project",
-      "description": "A complete record of how I built a daily reminder email bot using AWS Lambda, EventBridge, and SES—entirely within the free tier, with the pitfalls I hit and reusable code you can copy.",
-      "url": "https://builder.aws.com/content/3KGQ2Cp6m5c8KidQHDDyHx5ZzVm",
-      "imageUrl": "",
-      "authorName": "DAI RUIRAN",
-      "authorAlias": "dairuiran",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JMtP6TgbScz0D5xbBu5amXObFU.webp",
-      "location": "HK",
-      "lat": 22.2818333,
-      "lng": 114.1582831,
-      "tags": [
-        "aws-lambda",
-        "amazon-ses",
-        "amazon-eventbridge",
-        "cost-control-automation"
-      ],
-      "publishedAt": "2026-10-05T06:29:09.384Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3KGOYWGraCFuaVnjKSqo7RCpWzf",
-      "title": "AWS Lambda: Running Code Without Managing Servers ⚡",
-      "description": "A beginner-friendly look at AWS Lambda—what serverless really means, how Lambda works with triggers, and how SQS and CloudWatch fit into the picture. ⚡☁️",
-      "url": "https://builder.aws.com/content/3KGOYWGraCFuaVnjKSqo7RCpWzf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KGQsGlfvo3nKdkOIsli9oMAMRv/aws_.webp",
-      "authorName": "Lakshmi Lohitha Boddu",
-      "authorAlias": "lakshmilohitha",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IZtTQUvkvRLog1N68CzUKwOVrq.webp",
+      "authorName": "Nemalan L B",
+      "authorAlias": "nemalanlb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Jcpi68bupkfZYwKg0Fqlew0C3q.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-10-05T06:27:33.381Z",
-      "likesCount": 3,
-      "commentsCount": 2
+      "tags": [
+        "serverless",
+        "ai-services",
+        "cloud-storage",
+        "data-storage"
+      ],
+      "publishedAt": "2026-10-06T07:10:16.366Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3KGPod6PwuqKBaUIpIcLgo458YG",
-      "title": "A beginner's Guide to cloud practitioner",
-      "description": "Here I have tried my best to explain what is cloud practitioner exam and how to approach it.",
-      "url": "https://builder.aws.com/content/3KGPod6PwuqKBaUIpIcLgo458YG",
+      "id": "/content/3KJKrVWyLcRrxjJcvLZnlKcnvMK",
+      "title": "Automating EBS Backups with AWS Backup",
+      "description": "Learn how to use backup vaults, IAM roles, backup plans, retention, and tags to automate EBS backups on AWS.",
+      "url": "https://builder.aws.com/content/3KJKrVWyLcRrxjJcvLZnlKcnvMK",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KJKwwQIjCAd1w4oW3VSfuW4roh/PixP.webp",
+      "authorName": "Trần Đồng",
+      "authorAlias": "dtran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B6Wcligt2FUBBpm6YcfMcxxz3P.webp",
+      "location": "VN",
+      "lat": 15.9266657,
+      "lng": 107.9650855,
+      "tags": [
+        "amazon-ebs"
+      ],
+      "publishedAt": "2026-10-06T07:09:51.903Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3KJJZIeqKHef2jRUXican8oxp0x",
+      "title": "Our Fourth AWS UG Trivandrum Meetup: A Full Room and a Big Announcement",
+      "description": "Our fourth AWS UG Trivandrum meetup filled Travancore Hall with builders for sessions on scaling databases and production-ready AI agents. Here's a look back at the day, the people behind it, and the announcement we've been waiting to share.",
+      "url": "https://builder.aws.com/content/3KJJZIeqKHef2jRUXican8oxp0x",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KJL0l2Xposx4fp7OtMNtHWDfLl/IMG_.webp",
+      "authorName": "Farzan F A",
+      "authorAlias": "farzanfa07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DcQpb0cnsyVKr0GiM81I5CWHEd.webp",
+      "location": "Kerala, IN",
+      "lat": 10.3528744,
+      "lng": 76.5120396,
+      "tags": [
+        "meetup",
+        "community",
+        "community-events"
+      ],
+      "publishedAt": "2026-10-06T07:08:54.244Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3KJJdtEcNNhnKEYfZcgyRtZjOLe",
+      "title": "Leveling Up: What I Learned After My First Week in AWS Builder Center",
+      "description": "Sharing my progress, my experience with the AWS Builder Center streaks and badges, and the next core cloud services I am diving into.",
+      "url": "https://builder.aws.com/content/3KJJdtEcNNhnKEYfZcgyRtZjOLe",
       "imageUrl": "",
-      "authorName": "Jatin",
-      "authorAlias": "jatin08",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JdDzTYTfeGuuLUa1e53W0r7GZs.webp",
-      "location": "Madhya Pradesh, IN",
-      "lat": 23.8143419,
-      "lng": 77.5340719,
+      "authorName": "Varnika",
+      "authorAlias": "varni270706",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IlTJrsAQumTyKZtlG0jF95AaJk.webp",
+      "location": "Uttar Pradesh, IN",
+      "lat": 27.1303344,
+      "lng": 80.859666,
+      "tags": [
+        "builder-center",
+        "aws-community",
+        "aspiring-builders",
+        "all-builders-welcome",
+        "students"
+      ],
+      "publishedAt": "2026-10-06T07:08:46.366Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3KJIdrzpuPmtJ6OqYPY9p7XOafv",
+      "title": "AWS Fundamentals: Understanding Amazon EC2 for Beginners",
+      "description": "This beginner-friendly article introduces the AWS Shared Responsibility Model, a fundamental concept for understanding security in the AWS Cloud. It explains how security responsibilities are divided between AWS and its customers, covering infrastructure security, data protection, identity and access management, operating system security, and resource configuration.",
+      "url": "https://builder.aws.com/content/3KJIdrzpuPmtJ6OqYPY9p7XOafv",
+      "imageUrl": "",
+      "authorName": "ATHAVAN BERNIER",
+      "authorAlias": "athavanbernier29",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KGDmjOPwDKZ6jEazJoqXrx4HXx.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
       "tags": [],
-      "publishedAt": "2026-10-05T06:27:12.347Z",
+      "publishedAt": "2026-10-06T07:05:43.616Z",
       "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3KJJvKE7mytDuMmRRJUZ4Beziu7",
+      "title": "Building a FastAPI Backend with MongoDB: A Practical Guide",
+      "description": "Learn how to build a REST API using FastAPI and MongoDB, configure authentication and CORS, organize API routes, and run the backend locally for a modern web application.",
+      "url": "https://builder.aws.com/content/3KJJvKE7mytDuMmRRJUZ4Beziu7",
+      "imageUrl": "",
+      "authorName": "RITHIKA S",
+      "authorAlias": "rithika1",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KDTRsvqVqVID96IdI3RvddWP5q.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aideas-2025"
+      ],
+      "publishedAt": "2026-10-06T07:00:26.612Z",
+      "likesCount": 10,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3KJJd8z381PW1NjHzDBBUY6iOXk",
+      "title": "Lambda Managed Instances: Feature Gaps and Wishlist for Multi-Region, Multi-Tenant Production Workloads",
+      "description": "Lambda Managed Instances (GA Dec 2025) delivers 90-minute timeouts, multi-concurrency, Nitro isolation, and EC2 pricing. Production fleets need: cold-start elimination for burst traffic, cross-capacity-provider workload isolation, per-function instance type targeting, granular scaling controls, multi-region replication, cost attribution per function, and observability metrics beyond basic CPU/concurrency throttles.\"\ncategory: \"AWS Feature Requests",
+      "url": "https://builder.aws.com/content/3KJJd8z381PW1NjHzDBBUY6iOXk",
+      "imageUrl": "",
+      "authorName": "Gaurav Sethi",
+      "authorAlias": "gaurav0s",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IYjWwgGcPYnWnQ5lxMsUXjnzPz.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-lambda",
+        "amazon-ec2",
+        "cost-allocation",
+        "vmware-cloud-aws"
+      ],
+      "publishedAt": "2026-10-06T07:00:13.803Z",
+      "likesCount": 3,
       "commentsCount": 1
     },
     {
-      "id": "/content/3KGQJkex0wma6UYB67SW70LcFa7",
-      "title": "Stop Treating Logs Like Text Files",
-      "description": "Logs are one of the most valuable debugging tools in a distributed system—but only if you can actually search, correlate, and understand them. Here’s how structured logging on AWS can turn noisy logs into useful application telemetry.",
-      "url": "https://builder.aws.com/content/3KGQJkex0wma6UYB67SW70LcFa7",
+      "id": "/content/3KJJnW99r22GwkH86quvTCWoV37",
+      "title": "Building a FastAPI Backend with MongoDB: A Practical Guide",
+      "description": "Learn how to build a REST API using FastAPI and MongoDB, configure authentication and CORS, organize API routes, and run the backend locally for a modern web application.",
+      "url": "https://builder.aws.com/content/3KJJnW99r22GwkH86quvTCWoV37",
       "imageUrl": "",
-      "authorName": "Abhilash",
-      "authorAlias": "abhilash52",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J7lm0NNFcC0rkTnce9GeyRfQ9O.webp",
+      "authorName": "ROSHAN A AIDS",
+      "authorAlias": "roshan67",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JcjOgXkzyOhSZV35vPXWifHwrx.webp",
       "location": "Tamil Nadu, IN",
       "lat": 11.3323723,
       "lng": 78.6098639,
       "tags": [
-        "aws-cloudwatch",
-        "logging"
+        "ai21-labs"
       ],
-      "publishedAt": "2026-10-05T06:26:08.892Z",
-      "likesCount": 4,
-      "commentsCount": 6
+      "publishedAt": "2026-10-06T06:59:21.418Z",
+      "likesCount": 11,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3KGQADFzuXVTpg1UIUjEdpfbvcw",
-      "title": "AWS en Ekoparty 2026!",
-      "description": "Charlas de seguridad e IA, DevChats de la comunidad y swag de AWS del 7 al 9 de octubre en Ekoparty 2026.",
-      "url": "https://builder.aws.com/content/3KGQADFzuXVTpg1UIUjEdpfbvcw",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KGQVgnD4LY5lBlWcZOhfB3eoR4/TDC-.webp",
-      "authorName": "Nelly from AWS",
-      "authorAlias": "nelly",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Jk2djZsvCwWzyzTHoQKs3WL6FG.webp",
-      "location": "MX",
-      "lat": 23.6585116,
-      "lng": -102.0077097,
-      "tags": [],
-      "publishedAt": "2026-10-05T06:25:33.748Z",
-      "likesCount": 1,
+      "id": "/content/3KJHw5PP3P0bUnJrCGZ0mP9NBZB",
+      "title": "5 AWS Services I Use as a Beginner Cloud Intern, Explained Simply",
+      "description": "A fresher's plain-language guide to EC2, S3, IAM, CloudWatch and VPC, with what each one actually does and how I've used them so far.",
+      "url": "https://builder.aws.com/content/3KJHw5PP3P0bUnJrCGZ0mP9NBZB",
+      "imageUrl": "",
+      "authorName": "SRINITHIYA M",
+      "authorAlias": "sylvie27",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KHfsvGZ7sRsANtFbqYPgAmmK8T.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-community",
+        "beginner-projects",
+        "multi-cloud",
+        "devops",
+        "students"
+      ],
+      "publishedAt": "2026-10-06T06:57:44.953Z",
+      "likesCount": 3,
       "commentsCount": 1
     },
     {
-      "id": "/content/3KGPD9QVzzjX3xcwQIHZAig70qb",
-      "title": "AWS IAM Explained Simply: Who Can Do What in Your AWS Account",
-      "description": "a simple guide to IAM on Amazon web services",
-      "url": "https://builder.aws.com/content/3KGPD9QVzzjX3xcwQIHZAig70qb",
+      "id": "/content/3KJIjSydut1r0DMMyXkGUn3mpxd",
+      "title": "Lambda Managed Instances: When to Leave Default Compute — 90-Min Timeout, Multi-Concurrency, and Cost Break-Even",
+      "description": "Lambda Managed Instances now supports a 90-minute timeout on asynchronous invocations, runs multi-concurrent executions inside EC2 Nitro containers, and bills via instance-based EC2 pricing with a 15% management fee. Here's the concurrency model, tenancy isolation, and when the cost break-even favors Managed Instances over default Lambda compute.",
+      "url": "https://builder.aws.com/content/3KJIjSydut1r0DMMyXkGUn3mpxd",
       "imageUrl": "",
-      "authorName": "Mustufa Ismail",
-      "authorAlias": "mustufaismail",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IMq8pEukcRr9gjKEPiNCy5UDeT.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "iam"
-      ],
-      "publishedAt": "2026-10-05T06:20:54.068Z",
-      "likesCount": 5,
-      "commentsCount": 7
-    },
-    {
-      "id": "/content/3KGPDAxRwM8dosquY7xIlECqYhj",
-      "title": "Building a Scalable Web Application with EC2, Application Load Balancer, and Auto Scaling",
-      "description": "Learn how Amazon EC2, Application Load Balancer, and Auto Scaling work together to build a scalable and highly available web application on AWS.",
-      "url": "https://builder.aws.com/content/3KGPDAxRwM8dosquY7xIlECqYhj",
-      "imageUrl": "",
-      "authorName": "GOPI KRISHNAN",
-      "authorAlias": "gopzz",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JOVEwZLJYTEQe6ulvWIAgxlXFJ.webp",
+      "authorName": "Gaurav Sethi",
+      "authorAlias": "gaurav0s",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IYjWwgGcPYnWnQ5lxMsUXjnzPz.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
+        "aws-lambda",
         "amazon-ec2",
-        "load-balancer",
-        "elastic-load-balancing",
-        "load-balancing"
+        "cost-allocation",
+        "timeouts",
+        "vmware-cloud-aws"
       ],
-      "publishedAt": "2026-10-05T06:14:30.030Z",
-      "likesCount": 7,
-      "commentsCount": 8
-    },
-    {
-      "id": "/content/3KGP84db1G8yJTXFRgtOb9HFV6m",
-      "title": "AWS Bedrock: Building Generative AI Applications on AWS",
-      "description": "Amazon Bedrock makes it easier to build and deploy generative AI applications without managing complex AI infrastructure. This article explores how Bedrock provides access to foundation models, supports scalable AI solutions, and integrates with AWS services. Learn how developers can use Amazon Bedrock to build intelligent applications such as chatbots, content generators, and AI-powered assistants.",
-      "url": "https://builder.aws.com/content/3KGP84db1G8yJTXFRgtOb9HFV6m",
-      "imageUrl": "",
-      "authorName": "Devendra Singh",
-      "authorAlias": "devendra24",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IwN5rprGRer5ihrcVYgMm6XlLh.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agents",
-        "agentic-interactions",
-        "agentic-ide",
-        "agentic-ai",
-        "agent-hooks"
-      ],
-      "publishedAt": "2026-10-05T06:14:28.665Z",
-      "likesCount": 5,
+      "publishedAt": "2026-10-06T06:56:15.912Z",
+      "likesCount": 3,
       "commentsCount": 1
     }
   ],
   "trending": [
+    {
+      "id": "/content/3KEVif6a4fc900VVCpHnWPhRrKM",
+      "title": "How I Trained the Best 2B Strands Decider: Beating the Official Strands Model and the 2B Leaders, Top 3 in Text, Image and Multimodal",
+      "description": "I unlocked image input in Strands Decider, then trained four 2B-class checkpoints that beat the published v19 and, by my estimate, take the top 3 spots on the 2B text board, #2 on images and the best text+image slot. This is the full engineering story: the benchmark rules, a 27B yes/no teacher, a base-model bake-off, a calibration fix, a text+image model that broke and was repaired, and an unseen-task check against the 2B leaders. All scores are local and unofficial.",
+      "url": "https://builder.aws.com/content/3KEVif6a4fc900VVCpHnWPhRrKM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KEYZOhgosHmGukeRHUWTDyxmZH/00-c.webp",
+      "authorName": "Vivek Raja P S",
+      "authorAlias": "vivekraja",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtzCHy721bhrSH5RUFS9U140dt.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "llm",
+        "strands",
+        "large-language-model",
+        "machine-learning",
+        "training"
+      ],
+      "publishedAt": "2026-10-04T14:32:11.658Z",
+      "likesCount": 1099,
+      "commentsCount": 889
+    },
     {
       "id": "/content/3KAEcp0iiXcgoCcgJPyJbvyjzvH",
       "title": "Pour one out for Infrastructure Composer",
@@ -218,8 +252,25 @@
         "career"
       ],
       "publishedAt": "2026-10-03T01:54:47.579Z",
-      "likesCount": 1591,
-      "commentsCount": 1338
+      "likesCount": 1798,
+      "commentsCount": 1510
+    },
+    {
+      "id": "/content/3KIgHRnesTvJVqlyuEyHRSFGn9B",
+      "title": "A Physical AI Robot Episode Judge That Knows When It Does Not Know: Strands Decider in Strands Robots",
+      "description": "I added Strands Decider as an opt-in episode-judge backend in strands-labs/robots. It labels a recorded robot episode with one HTTP request (about 1.8 s), returns calibrated probabilities, and writes a label only when it is confident. On a 12-episode MuJoCo test it wrote zero wrong labels and left every unsure episode, with its probabilities, for the existing VLM judge.",
+      "url": "https://builder.aws.com/content/3KIgHRnesTvJVqlyuEyHRSFGn9B",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KIgxxf7PGb8nSCCjWXZO6H24yh/00-c.webp",
+      "authorName": "Vivek Raja P S",
+      "authorAlias": "vivekraja",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtzCHy721bhrSH5RUFS9U140dt.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-10-06T01:39:52.303Z",
+      "likesCount": 32,
+      "commentsCount": 23
     },
     {
       "id": "/content/3KAllYz1klwl4zjpW5lGpZM4KmB",
@@ -241,8 +292,8 @@
         "aws-amplify"
       ],
       "publishedAt": "2026-10-03T06:26:49.184Z",
-      "likesCount": 619,
-      "commentsCount": 465
+      "likesCount": 933,
+      "commentsCount": 703
     },
     {
       "id": "/content/3K9FTklEfYhRd0OnZQw71ww76gu",
@@ -263,31 +314,8 @@
         "csharp"
       ],
       "publishedAt": "2026-10-02T17:27:57.668Z",
-      "likesCount": 1102,
-      "commentsCount": 894
-    },
-    {
-      "id": "/content/3KEVif6a4fc900VVCpHnWPhRrKM",
-      "title": "How I Trained the Best 2B Strands Decider: Beating the Official Strands Model and the 2B Leaders, Top 3 in Text, Image and Multimodal",
-      "description": "I unlocked image input in Strands Decider, then trained four 2B-class checkpoints that beat the published v19 and, by my estimate, take the top 3 spots on the 2B text board, #2 on images and the best text+image slot. This is the full engineering story: the benchmark rules, a 27B yes/no teacher, a base-model bake-off, a calibration fix, a text+image model that broke and was repaired, and an unseen-task check against the 2B leaders. All scores are local and unofficial.",
-      "url": "https://builder.aws.com/content/3KEVif6a4fc900VVCpHnWPhRrKM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KEYZOhgosHmGukeRHUWTDyxmZH/00-c.webp",
-      "authorName": "Vivek Raja P S",
-      "authorAlias": "vivekraja",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtzCHy721bhrSH5RUFS9U140dt.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "llm",
-        "strands",
-        "large-language-model",
-        "machine-learning",
-        "training"
-      ],
-      "publishedAt": "2026-10-04T14:32:11.658Z",
-      "likesCount": 91,
-      "commentsCount": 49
+      "likesCount": 1243,
+      "commentsCount": 1008
     },
     {
       "id": "/content/3KBnayKMhM9CM347Ad1ojsw3xpk",
@@ -309,8 +337,8 @@
         "devops"
       ],
       "publishedAt": "2026-10-03T15:52:20.594Z",
-      "likesCount": 235,
-      "commentsCount": 235
+      "likesCount": 374,
+      "commentsCount": 345
     },
     {
       "id": "/content/3KDr9B86XGR1MzRG5F144aprq6p",
@@ -318,7 +346,7 @@
       "description": "A proof-of-concept that takes a card transaction from raw signals to an auditable, human-reviewable decision: using Amazon SageMaker, Amazon Bedrock, and Aurora.",
       "url": "https://builder.aws.com/content/3KDr9B86XGR1MzRG5F144aprq6p",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KERZTo5cVBhTiIwRNu9bJHWFTN/Scre.webp",
-      "authorName": "Debapriya",
+      "authorName": "Debapriya Dey",
       "authorAlias": "priya2203",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3I8OUiVHpDkMxEwmvN9ORFUv5H1.webp",
       "location": "DE",
@@ -328,52 +356,8 @@
         "agents"
       ],
       "publishedAt": "2026-10-04T13:39:19.969Z",
-      "likesCount": 48,
-      "commentsCount": 50
-    },
-    {
-      "id": "/content/3KAMs34M0Q8CdPFVdA4KGRqpdsU",
-      "title": "Strands Decider 2B: Local Setup and Testing",
-      "description": "Step-by-step guide to install, configure, and run AWS Strands Decider 2B locally using WSL2, including API testing and Multi-RAG routing examples.",
-      "url": "https://builder.aws.com/content/3KAMs34M0Q8CdPFVdA4KGRqpdsU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KByHhKQdYfe80EBoVJijmamooV/Chat.webp",
-      "authorName": "Ujjwalkumar B Soni",
-      "authorAlias": "ujjwalkumarbsoni",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JmjgJxKYuFHPr8WXYEYPFiG1sI.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai",
-        "agentic-ai",
-        "rag",
-        "strands",
-        "strands-agents"
-      ],
-      "publishedAt": "2026-10-03T03:01:59.450Z",
-      "likesCount": 213,
-      "commentsCount": 141
-    },
-    {
-      "id": "/content/3KCheTNQrZ9JqB4g7V2FgFxiadk",
-      "title": "tf-nag: offline AWS Solutions checks for Terraform plans",
-      "description": "tf-nag is an offline Terraform plan scanner for the AWS Solutions rules (cdk-nag/AWS Config lineage). No credentials, no network. Catch misconfigs in PRs.",
-      "url": "https://builder.aws.com/content/3KCheTNQrZ9JqB4g7V2FgFxiadk",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KCkXJ6wcZ3AbACqlTTNtnQHC4m/cove.webp",
-      "authorName": "Vu Dao",
-      "authorAlias": "vumdao",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Ysa3hIhnU0e7vsgeHvG1tb0OIW.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "terraform",
-        "cloud-security",
-        "security"
-      ],
-      "publishedAt": "2026-10-03T23:24:42.073Z",
-      "likesCount": 71,
-      "commentsCount": 42
+      "likesCount": 181,
+      "commentsCount": 124
     },
     {
       "id": "/content/3KEHR5yCvwXkK8thQh7XGAMSjub",
@@ -395,31 +379,52 @@
         "data-protection"
       ],
       "publishedAt": "2026-10-04T12:48:31.520Z",
-      "likesCount": 33,
-      "commentsCount": 30
+      "likesCount": 113,
+      "commentsCount": 78
     },
     {
-      "id": "/content/3KAkQtZUumPqCrwfbXyp8H4m6bH",
-      "title": "AWS IAM Security Best Practices: The Enterprise Zero Trust Guide",
-      "description": "Master AWS IAM security with enterprise Zero Trust practices for ABAC, OIDC, IMDSv2, SCPs, RCPs, detection, CI/CD guardrails, vendors, and IAM automation.",
-      "url": "https://builder.aws.com/content/3KAkQtZUumPqCrwfbXyp8H4m6bH",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KAyfdEl9cX2D69OHPh8eAhrt0d/Secu.webp",
-      "authorName": "Yashvi Kothari",
-      "authorAlias": "yashvikothari",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362mIfy2uQdL4eBeAhYPGwzv22d.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3KAMs34M0Q8CdPFVdA4KGRqpdsU",
+      "title": "Strands Decider 2B: Local Setup and Testing",
+      "description": "Step-by-step guide to install, configure, and run AWS Strands Decider 2B locally using WSL2, including API testing and Multi-RAG routing examples.",
+      "url": "https://builder.aws.com/content/3KAMs34M0Q8CdPFVdA4KGRqpdsU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KByHhKQdYfe80EBoVJijmamooV/Chat.webp",
+      "authorName": "Ujjwalkumar B Soni",
+      "authorAlias": "ujjwalkumarbsoni",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JmjgJxKYuFHPr8WXYEYPFiG1sI.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
       "tags": [
-        "aws-iam-identity-center",
-        "iam",
-        "security",
-        "cloud-security",
-        "aws-identity-and-access-management"
+        "ai",
+        "agentic-ai",
+        "rag",
+        "strands",
+        "strands-agents"
       ],
-      "publishedAt": "2026-10-03T08:07:38.867Z",
-      "likesCount": 64,
-      "commentsCount": 69
+      "publishedAt": "2026-10-03T03:01:59.450Z",
+      "likesCount": 252,
+      "commentsCount": 173
+    },
+    {
+      "id": "/content/3KCheTNQrZ9JqB4g7V2FgFxiadk",
+      "title": "tf-nag: offline AWS Solutions checks for Terraform plans",
+      "description": "tf-nag is an offline Terraform plan scanner for the AWS Solutions rules (cdk-nag/AWS Config lineage). No credentials, no network. Catch misconfigs in PRs.",
+      "url": "https://builder.aws.com/content/3KCheTNQrZ9JqB4g7V2FgFxiadk",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KCkXJ6wcZ3AbACqlTTNtnQHC4m/cove.webp",
+      "authorName": "Vu Dao",
+      "authorAlias": "vumdao",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Ysa3hIhnU0e7vsgeHvG1tb0OIW.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "terraform",
+        "cloud-security",
+        "security"
+      ],
+      "publishedAt": "2026-10-03T23:24:42.073Z",
+      "likesCount": 118,
+      "commentsCount": 67
     }
   ]
 }
