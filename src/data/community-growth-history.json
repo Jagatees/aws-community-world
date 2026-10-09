@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-08T06:59:14.720Z",
+  "updatedAt": "2026-10-09T07:08:02.125Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -12488,7 +12488,7 @@
       }
     },
     {
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "source": {
         "type": "working-tree"
       },
@@ -12781,8 +12781,8 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-08",
-      "daysCovered": 193
+      "endDate": "2026-10-09",
+      "daysCovered": 194
     },
     "global": {
       "totalRecords": 4970,
@@ -12793,7 +12793,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-08",
+        "currentDate": "2026-10-09",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -13364,7 +13364,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-08",
+        "currentDate": "2026-10-09",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -13927,7 +13927,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-08",
+        "currentDate": "2026-10-09",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -14568,7 +14568,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-08",
+        "currentDate": "2026-10-09",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -15117,7 +15117,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-08",
+        "currentDate": "2026-10-09",
         "baselineTotal": 17,
         "currentTotal": 6,
         "currentCoveragePercent": 16.7,
@@ -15429,7 +15429,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-08",
+        "currentDate": "2026-10-09",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -15759,8 +15759,8 @@
       }
     },
     "upcoming": {
-      "total": 16,
-      "next30Days": 14,
+      "total": 15,
+      "next30Days": 13,
       "byRegion": {
         "north-america": 3,
         "south-america": 3,
@@ -15770,15 +15770,6 @@
         "oceania": 1
       },
       "items": [
-        {
-          "name": "Kiro University for Mahidol - Mahidol Hackathon in October",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://muit.mahidol.ac.th/mu-ai-community-2026/",
-          "category": "kiro-events",
-          "date": "2026-10-08T00:00:00.000Z"
-        },
         {
           "name": "AWS DMV Community Day",
           "location": "Washington D.C., United States",

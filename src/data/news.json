@@ -1,220 +1,220 @@
 {
-  "updatedAt": "2026-10-08T06:59:12.591Z",
+  "updatedAt": "2026-10-09T07:08:00.025Z",
   "latest": [
     {
-      "id": "/content/3KOxd1ntA7Wq25BNiYwShhXbzW3",
-      "title": "The Diamond Model of Intrusion Analysis in AWS",
-      "description": "Explore the Diamond Model of Intrusion Analysis and how it can be applied to AWS security. Learn how Adversary, Capability, Infrastructure, and Victim connect to help security teams understand attacks and investigate threats. See how AWS services such as Amazon GuardDuty, AWS CloudTrail, Amazon Detective, IAM, Amazon Macie, and AWS Security Hub provide valuable visibility for detecting suspicious activity, analyzing incidents, and strengthening cloud security.",
-      "url": "https://builder.aws.com/content/3KOxd1ntA7Wq25BNiYwShhXbzW3",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KOxzPsya5d0tnalbCBvJHCRzZY/AWS-.webp",
-      "authorName": "Richard Dizon Jr",
-      "authorAlias": "chard",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JWmTBIF2Om0SjDNqQVYBE5AQKx.webp",
-      "location": "PH",
-      "lat": 12.7503486,
-      "lng": 122.7312101,
-      "tags": [
-        "cybersecurity",
-        "cloud-security",
-        "security",
-        "security-and-compliance",
-        "security-identity"
-      ],
-      "publishedAt": "2026-10-08T06:58:28.869Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3KOxaICKNF9gk3yFJ0C0zabXdZr",
-      "title": "Lesser Known AWS Features — Day 16: AWS Systems Manager Automation",
-      "description": "Day 16 of my AWS learning journey: Today I explored AWS Systems Manager Automation, and this was one of those features I didn't know much about before.",
-      "url": "https://builder.aws.com/content/3KOxaICKNF9gk3yFJ0C0zabXdZr",
-      "imageUrl": "",
-      "authorName": "Nikunj Purohit",
-      "authorAlias": "nik06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JgUMbqkB5KX1Rw7psyAevLpMfR.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "aws-management-console",
-        "aws-firewall-manager",
-        "aws-audit-manager",
-        "autonomous-agents"
-      ],
-      "publishedAt": "2026-10-08T06:57:33.459Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3KOwALE7mzZeZ48dh80pCBmr6Ci",
-      "title": "Waterlog Watch: AI-verified flood alerts on AWS",
-      "description": "Turning monsoon photos into a live, AI-verified flood map and route checker with Lambda, DynamoDB, Amazon Location Service and Bedrock.",
-      "url": "https://builder.aws.com/content/3KOwALE7mzZeZ48dh80pCBmr6Ci",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KOxADnswVY0Et4m8oQtEjdKPSD/wate.webp",
-      "authorName": "Abinivesh M",
-      "authorAlias": "abiniveshm",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IwCdjQVwTxYY89JIAsfMYUDxPK.webp",
+      "id": "/content/3KRnUemloxXKlSybUwIVNyRoVsH",
+      "title": "The Future of Cloud Computing\nGive me the paragraph, discription,",
+      "description": "The future of cloud computing is expected to be more advanced, intelligent, and secure. Technologies such as Artificial Intelligence (AI), Machine Learning (ML), the Internet of Things (IoT), and edge computing are making cloud services more powerful. Businesses can use cloud platforms to store large amounts of data, develop applications, and improve their services.",
+      "url": "https://builder.aws.com/content/3KRnUemloxXKlSybUwIVNyRoVsH",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KRnvwLaVTrcbzSuQjMiB12bSTf/1000.webp",
+      "authorName": "VIGNESHWARAMOORTHI R",
+      "authorAlias": "vigneshwaramoorthi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KNJKIw0RJs8TTcEvGDabhltCex.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
-        "hackathon",
-        "serverless",
-        "amazon-bedrock",
-        "amazon-location-service",
-        "sustainability"
+        "ai-assisted",
+        "agents",
+        "agent-to-agent",
+        "ai",
+        "aideas-2025"
       ],
-      "publishedAt": "2026-10-08T06:56:12.513Z",
+      "publishedAt": "2026-10-09T07:05:04.080Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3KRmboGPT6C2n1HnULU3NdwVgbv",
+      "title": "Your AWS Application Is Running. But Is It Actually Healthy?",
+      "description": "An application can be running and still have problems. Learn how AWS monitoring helps detect errors, performance issues, and failures.",
+      "url": "https://builder.aws.com/content/3KRmboGPT6C2n1HnULU3NdwVgbv",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KRo2AjvqUExrnVQmzaDwMOPGek/1000.webp",
+      "authorName": "Reshma",
+      "authorAlias": "reshma28",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JdMtrY1tpspHQ1T5FsVfjjvKgj.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "amazon-cloudwatch",
+        "amazon-ec2",
+        "monitoring",
+        "observability",
+        "cloud-concepts"
+      ],
+      "publishedAt": "2026-10-09T07:03:34.504Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3KRi9xzxU4V23mLr0SITdyKVV29",
+      "title": "When 40% Give Up Before Hello World: Why I Built an AI Twin for AWS Student Builders",
+      "description": "How I built StudentPathOS, an AI companion that cuts AWS student onboarding from 3 hours to 15 minutes with live verification, portal comparisons, and milestone celebrations.",
+      "url": "https://builder.aws.com/content/3KRi9xzxU4V23mLr0SITdyKVV29",
+      "imageUrl": "",
+      "authorName": "Donald Raph",
+      "authorAlias": "donaldraph",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3FMgat0cYlpuSA3JX6HAGxPhyWU.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "agents",
+        "student-builders",
+        "students",
+        "aws-student-builders-groups"
+      ],
+      "publishedAt": "2026-10-09T07:02:39.478Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3KOxTs4Ze1Dm1SkS6RwfnpWbyVk",
-      "title": "From AI Ideas to Real-World Solutions with AWS",
-      "description": "Discover how AWS can help turn AI concepts into practical, scalable solutions for real-world challenges.",
-      "url": "https://builder.aws.com/content/3KOxTs4Ze1Dm1SkS6RwfnpWbyVk",
-      "imageUrl": "",
-      "authorName": "Anamika chauhan",
-      "authorAlias": "anamii12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3K2E6YDjayTcnfNYsqrVJj3GUuQ.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-10-08T06:55:53.978Z",
+      "id": "/content/3KRjByDwqB8BIg00Nd6WFUDHPCQ",
+      "title": "I Built Fuuud AI, a Gentle Agent That Helps You Find the Right Care",
+      "description": "Fuuud AI is an agent built on Amazon Bedrock that helps people find the right doctor, hospital, or pharmacy, and knows when to point someone to emergency help instead of chatting.",
+      "url": "https://builder.aws.com/content/3KRjByDwqB8BIg00Nd6WFUDHPCQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KRkEGRmsuPFeIAZJa3cgNS2BHd/Scre.webp",
+      "authorName": "Favour Chigozirim",
+      "authorAlias": "gozirimdev",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IDcqyhDn2OqyUaSm8nWC9Hd85M.webp",
+      "location": "NG",
+      "lat": 9.6000359,
+      "lng": 7.9999721,
+      "tags": [
+        "agents"
+      ],
+      "publishedAt": "2026-10-09T07:00:59.828Z",
       "likesCount": 1,
       "commentsCount": 0
     },
     {
-      "id": "/content/3KOwqtyJjLldCyXR05M9Hbnis3N",
-      "title": "AWS IAM: Understanding Identity, Roles, Policies, and Least-Privilege Security",
-      "description": "When developers start working with AWS, they quickly encounter a common question:\n\nWho is allowed to access this AWS resource?\n\nCan a Lambda function read from an S3 bucket?\nCan an EC2 instance access DynamoDB?\nCan one AWS account access another account?\nCan a developer deploy resources but not delete production infrastructure?\n\nThese questions are handled primarily through AWS Identity and Access Management (IAM).\n",
-      "url": "https://builder.aws.com/content/3KOwqtyJjLldCyXR05M9Hbnis3N",
-      "imageUrl": "",
-      "authorName": "Himanshu Chaubey",
-      "authorAlias": "himanshubuilds",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IXWjeBp60BWWGU76JmB1jX1QFR.webp",
-      "location": "Delhi, IN",
-      "lat": 28.6664535,
-      "lng": 77.2169781,
+      "id": "/content/3KREBwp4ep0tkVVDGYvdv1uHPf4",
+      "title": "\"Please hold\": teaching a phone agent to wait politely while it searches",
+      "description": "When our voice agent searched its knowledge base, callers heard seconds of silence and talked over it. Here is how we added hold music, kept every word the caller said during the search, and checked every change against real calls with per-call telemetry in Amazon S3.",
+      "url": "https://builder.aws.com/content/3KREBwp4ep0tkVVDGYvdv1uHPf4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KRJZITy7taJoSNOmH08RewSmxx/Chat.webp",
+      "authorName": "Kiet Tran Tan",
+      "authorAlias": "kenzytran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3HLGXEIKbbEIySQOpAtNPGhEDOe.webp",
+      "location": "VN",
+      "lat": 15.9266657,
+      "lng": 107.9650855,
       "tags": [
-        "aws-academy",
-        "aws-ai-chips",
-        "aws-ai-league",
-        "aws-ambassador",
-        "aws-amplify"
-      ],
-      "publishedAt": "2026-10-08T06:53:52.897Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3KOxF3zTupKovN13vDbUVWQGnqg",
-      "title": "AWS in Disaster Management: How Cloud Computing Can Help During Emergencies",
-      "description": "From floods and earthquakes to large-scale emergencies, disaster response requires fast access to information and reliable communication. This article explores how AWS cloud technologies can support emergency data management, communication, monitoring, and decision-making.",
-      "url": "https://builder.aws.com/content/3KOxF3zTupKovN13vDbUVWQGnqg",
-      "imageUrl": "",
-      "authorName": "DARSHAN S",
-      "authorAlias": "darshan4748q",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JVeeLs3kLVgJ3IEE0mCojKl76l.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ide",
-        "agentic-ai",
-        "advanced-networking",
         "agents"
       ],
-      "publishedAt": "2026-10-08T06:52:30.940Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3KOp6uwQJUV72Wu9spAeuM3gJ1U",
-      "title": "What is Bedrock Managed Agent (powered by OpenAI)?",
-      "description": "Amazon Bedrock Managed Agents powered by OpenAI combines the reasoning capabilities of OpenAI models with AWS-managed agent infrastructure. Instead of building a traditional application where every step of an investigation has to be explicitly coded, a managed agent can understand an objective, reason through the problem, select the appropriate tools and skills, execute those tools, evaluate the results, and continue the investigation until it has enough evidence to provide an answer.",
-      "url": "https://builder.aws.com/content/3KOp6uwQJUV72Wu9spAeuM3gJ1U",
-      "imageUrl": "",
-      "authorName": "Kumar, Gyanesh",
-      "authorAlias": "gyhere",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/31ZGdniEyJ2RpxWhFb651i2WA40.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
-      "tags": [],
-      "publishedAt": "2026-10-08T06:50:15.629Z",
+      "publishedAt": "2026-10-09T07:00:46.017Z",
       "likesCount": 0,
       "commentsCount": 0
     },
     {
-      "id": "/content/3KOwTSqYBIkG83eVtDxf0chB8wE",
-      "title": "Building an AI-Powered Application on AWS: From Data to Intelligent Predictions",
-      "description": "Artificial intelligence is becoming part of everyday applications. This article explores how AWS services can be combined to build an AI-powered application, from collecting data to deploying a machine learning model and generating predictions.",
-      "url": "https://builder.aws.com/content/3KOwTSqYBIkG83eVtDxf0chB8wE",
-      "imageUrl": "",
-      "authorName": "DARSHAN S",
-      "authorAlias": "darshan4748q",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JVeeLs3kLVgJ3IEE0mCojKl76l.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
+      "id": "/content/3KRiI9kyTcKiaNaTr7CNL9t1JzT",
+      "title": "Build an Agent Weekend Challenge: Billsense",
+      "description": "An AWS bill-explainer agent that tells you whether to worry first, then why, with a Panic Meter, plain-English answers and charts from Cost Explorer data.",
+      "url": "https://builder.aws.com/content/3KRiI9kyTcKiaNaTr7CNL9t1JzT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KRkwmCd3gW3WlsGRzkiCUowhGg/Bill.webp",
+      "authorName": "Thirumalaiboobathi B",
+      "authorAlias": "thirumalaiboobathi2",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EsfUWXMWAbu49n4kxeDo7LAX4k.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
       "tags": [
-        "agentic-ai",
-        "agent-hooks",
         "agents",
-        "ai"
+        "amazon-bedrock-agents",
+        "challenge",
+        "builder-center"
       ],
-      "publishedAt": "2026-10-08T06:46:17.624Z",
-      "likesCount": 4,
-      "commentsCount": 6
+      "publishedAt": "2026-10-09T07:00:44.089Z",
+      "likesCount": 0,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3KOvqz7EpNlPWOHBssMoNwcXWt5",
-      "title": "AWS Free Tier: How Beginners Can Learn Cloud Without Unexpected Bills",
-      "description": "Starting AWS as a beginner can be exciting, but understanding cloud costs is just as important as learning cloud services. Here are some practical habits I’m using to learn AWS responsibly and avoid unexpected charges.",
-      "url": "https://builder.aws.com/content/3KOvqz7EpNlPWOHBssMoNwcXWt5",
-      "imageUrl": "",
-      "authorName": "Thummar Ayush",
-      "authorAlias": "ayushthummar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KEfQxiSs1jg7oK8GSRLORDjbLN.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
-      "tags": [
-        "aws-builders",
-        "aws-certification",
-        "aws-cloud-financial-management",
-        "cloud-networking",
-        "cloud-practitioner"
-      ],
-      "publishedAt": "2026-10-08T06:43:14.394Z",
-      "likesCount": 4,
-      "commentsCount": 9
-    },
-    {
-      "id": "/content/3KOunrKVCXcOie8wef2ioLbzdYW",
-      "title": "Building a Highly Available Amazon EKS Cluster with Terraform: A Step-by-Step Guide",
-      "description": "Learn how to provision an Amazon EKS environment using Terraform, including the VPC, public and private subnets, IAM roles, managed node groups, and Kubernetes workloads. This hands-on guide also covers deployment validation, high availability, and application rollback.",
-      "url": "https://builder.aws.com/content/3KOunrKVCXcOie8wef2ioLbzdYW",
-      "imageUrl": "",
-      "authorName": "Pradnya",
-      "authorAlias": "pradnyakapadne12",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JfzphMITWknvQJ8Z894lYYhom1.webp",
+      "id": "/content/3K9Na82cA4JL0oSLoET8D11ZtZe",
+      "title": "Weekend Challenge: Untangle",
+      "description": "A sixty second ramble goes in. One sentence you actually said comes back, along with the thing you were avoiding saying. Here is how I built it on Lambda, Transcribe and Bedrock in a weekend, and the one design decision that made people stop treating it like a chatbot.",
+      "url": "https://builder.aws.com/content/3K9Na82cA4JL0oSLoET8D11ZtZe",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KRhoMbXN5NcnZvjCahFRWlllqG/03-r.webp",
+      "authorName": "Tanseer Khan",
+      "authorAlias": "tanseer",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3GZU2zO12zEbgzdOPVheH2LQvuY.webp",
       "location": "Maharashtra, IN",
       "lat": 19.5670323,
       "lng": 76.4164557,
       "tags": [
-        "amazon-eks",
-        "terraform",
-        "aws-api",
-        "devops",
-        "kubernetes"
+        "agents",
+        "agentic-ai"
       ],
-      "publishedAt": "2026-10-08T06:41:08.010Z",
+      "publishedAt": "2026-10-09T07:00:26.034Z",
+      "likesCount": 0,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3KRlbrrO5lHezzPDLiYRdl2aXBg",
+      "title": "5 IAM Mistakes I Made Giving an AI Agent Access to My AWS Account",
+      "description": "Giving an AI agent access to your AWS account feels like a shortcut until its permissions get out of hand. This article covers five IAM mistakes that turn a helpful assistant into a security risk, and how to fix each one. You will learn to build least-privilege action groups, scope each role to a single job, and use short-lived credentials. You will also see what happens when a poisoned input tricks an over-permissioned agent into acting for an attacker. Copy-ready policy examples are included for each fix.",
+      "url": "https://builder.aws.com/content/3KRlbrrO5lHezzPDLiYRdl2aXBg",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KRmsNFUOArkS1boY3u3czJWz4w/Acce.webp",
+      "authorName": "Tejswini",
+      "authorAlias": "teju25",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JfbUeRdyd5V4wguVloIMZP7xm9.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-api",
+        "ai",
+        "cybersecurity"
+      ],
+      "publishedAt": "2026-10-09T06:58:50.718Z",
       "likesCount": 2,
-      "commentsCount": 2
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3KRlyx9iFuti1uDg1wLmE80RBCW",
+      "title": "From Learner to Builder: My Journey into AWS Cloud Computing",
+      "description": "Starting with cloud computing can feel overwhelming, but learning one concept at a time makes it easier. Discover how beginners can learn AWS, build hands-on projects, explore cloud services, and grow their skills through consistent practice and community learning.",
+      "url": "https://builder.aws.com/content/3KRlyx9iFuti1uDg1wLmE80RBCW",
+      "imageUrl": "",
+      "authorName": "DAVULURI TANMAYI",
+      "authorAlias": "tanmayi2704",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KB9zmKHI3Vm8r1IuqNZmY26h54.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "active-directory",
+        "aws-batch",
+        "guardrails",
+        "multi-language",
+        "rag"
+      ],
+      "publishedAt": "2026-10-09T06:54:51.028Z",
+      "likesCount": 1,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3JDaOYuRKSgJSmbKwjHdfQFTrL3",
+      "title": "Building a Generative AI Chatbot with Amazon Bedrock, Claude 3 Haiku, LangChain, and Streamlit",
+      "description": "Learn how to build and deploy a Streamlit chatbot using Amazon Bedrock and Claude 3 Haiku on AWS EC2. This hands-on guide covers environment setup, IAM permissions, Python dependencies, deployment steps, troubleshooting, and making your AI chatbot accessible through a web browser.",
+      "url": "https://builder.aws.com/content/3JDaOYuRKSgJSmbKwjHdfQFTrL3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KRmHrjnR5lWXP6gP8VYkDHW9gN/Cove.webp",
+      "authorName": "Mohammed Zubair",
+      "authorAlias": "zubairquazi",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BpriV4UXntr7ZTmjZXeTrFbrdS.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "agents",
+        "amazon-bedrock",
+        "chatbots",
+        "generative-ai",
+        "aws-community-builders"
+      ],
+      "publishedAt": "2026-10-09T06:54:48.489Z",
+      "likesCount": 0,
+      "commentsCount": 0
     }
   ],
   "trending": [
@@ -238,8 +238,30 @@
         "strands-agents"
       ],
       "publishedAt": "2026-10-07T22:53:14.165Z",
-      "likesCount": 207,
-      "commentsCount": 153
+      "likesCount": 1274,
+      "commentsCount": 1073
+    },
+    {
+      "id": "/content/3KNjANY7DHUjTKcxmx8WeOBhiT8",
+      "title": "AWS MCP Server... Now in 6 New Regions",
+      "description": "The AWS MCP Server is now available in six more AWS Regions... Singapore, Sydney, Tokyo, Ireland, London, and Oregon. If you're using AWS in one of those regions, and working with AI coding assistants (Claude, Codex, Cursor, Kiro, etc), this is for you. Read more... 👇",
+      "url": "https://builder.aws.com/content/3KNjANY7DHUjTKcxmx8WeOBhiT8",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KNkkbrlfd0DUOw3z43UEm3WgDN/aws-.webp",
+      "authorName": "Aaron Hunter",
+      "authorAlias": "aaronshunter",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33A3uVNjbdEhLP8xH0KNtY6s8So.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "agent-toolkit",
+        "aws-mcp-server",
+        "regions",
+        "newsletter"
+      ],
+      "publishedAt": "2026-10-07T20:41:03.996Z",
+      "likesCount": 302,
+      "commentsCount": 226
     },
     {
       "id": "/content/3KIgHRnesTvJVqlyuEyHRSFGn9B",
@@ -255,8 +277,8 @@
       "lng": 78.6677428,
       "tags": [],
       "publishedAt": "2026-10-06T01:39:52.303Z",
-      "likesCount": 1601,
-      "commentsCount": 1353
+      "likesCount": 1748,
+      "commentsCount": 1470
     },
     {
       "id": "/content/3KIKNWVQnY1pr1PAmzSavzjwg33",
@@ -276,8 +298,8 @@
         "community-events"
       ],
       "publishedAt": "2026-10-06T06:34:24.548Z",
-      "likesCount": 1092,
-      "commentsCount": 789
+      "likesCount": 1279,
+      "commentsCount": 929
     },
     {
       "id": "/content/3KLe1Nz2CJUxuYyFbU7TQH4mnKy",
@@ -299,8 +321,8 @@
         "sysops"
       ],
       "publishedAt": "2026-10-07T02:46:36.672Z",
-      "likesCount": 214,
-      "commentsCount": 181
+      "likesCount": 329,
+      "commentsCount": 252
     },
     {
       "id": "/content/3KEVif6a4fc900VVCpHnWPhRrKM",
@@ -322,8 +344,28 @@
         "training"
       ],
       "publishedAt": "2026-10-04T14:32:11.658Z",
-      "likesCount": 1520,
-      "commentsCount": 1216
+      "likesCount": 1551,
+      "commentsCount": 1235
+    },
+    {
+      "id": "/content/3KQYoLu7XiQSn6r13bPEE8jeKTj",
+      "title": "AWS Lambda Response Streaming for Kotlin and Java",
+      "description": "Implementing HTTP response streaming behind API Gateway without writing a custom JVM runtime or adding Lambda layers.",
+      "url": "https://builder.aws.com/content/3KQYoLu7XiQSn6r13bPEE8jeKTj",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KQZjbYoVo48cTCWNPr2Gb1i1Sh/Dolo.webp",
+      "authorName": "Elena van Engelen - Maslova",
+      "authorAlias": "elenavanengelen",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uENrgSUyPcERmzE79GReGYWod3.webp",
+      "location": "NL",
+      "lat": 52.2434979,
+      "lng": 5.6343227,
+      "tags": [
+        "aws-lambda",
+        "amazon-api-gateway"
+      ],
+      "publishedAt": "2026-10-08T20:43:31.897Z",
+      "likesCount": 45,
+      "commentsCount": 28
     },
     {
       "id": "/content/3KI3kOmIKrCX0aXOQ0uSBBBlSBP",
@@ -343,30 +385,31 @@
         "builder-center"
       ],
       "publishedAt": "2026-10-07T12:26:49.773Z",
-      "likesCount": 131,
-      "commentsCount": 77
+      "likesCount": 206,
+      "commentsCount": 119
     },
     {
-      "id": "/content/3KNjANY7DHUjTKcxmx8WeOBhiT8",
-      "title": "AWS MCP Server... Now in 6 New Regions",
-      "description": "The AWS MCP Server is now available in six more AWS Regions... Singapore, Sydney, Tokyo, Ireland, London, and Oregon. If you're using AWS in one of those regions, and working with AI coding assistants (Claude, Codex, Cursor, Kiro, etc), this is for you. Read more... 👇",
-      "url": "https://builder.aws.com/content/3KNjANY7DHUjTKcxmx8WeOBhiT8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KNkkbrlfd0DUOw3z43UEm3WgDN/aws-.webp",
-      "authorName": "Aaron Hunter",
-      "authorAlias": "aaronshunter",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33A3uVNjbdEhLP8xH0KNtY6s8So.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "id": "/content/3KOxhO3MOCRbNKMtuzJB3O3tSmS",
+      "title": "A Token Without a Name: Bedrock Cost Attribution",
+      "description": "How we trace every Amazon Bedrock token to a user, team and feature with CUR 2.0 IAM principal data, invocation logs and Amazon Managed Grafana.",
+      "url": "https://builder.aws.com/content/3KOxhO3MOCRbNKMtuzJB3O3tSmS",
+      "imageUrl": "",
+      "authorName": "Roman Ceresnak",
+      "authorAlias": "romanceresnak",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2u1Xuxq0KmGqbFSr9lQJgGjU6Ly.webp",
+      "location": "SK",
+      "lat": 48.7411522,
+      "lng": 19.4528646,
       "tags": [
-        "agent-toolkit",
-        "aws-mcp-server",
-        "regions",
-        "newsletter"
+        "amazon-bedrock",
+        "finops",
+        "cost-optimization",
+        "generative-ai",
+        "architecture"
       ],
-      "publishedAt": "2026-10-07T20:41:03.996Z",
-      "likesCount": 31,
-      "commentsCount": 15
+      "publishedAt": "2026-10-08T07:10:52.611Z",
+      "likesCount": 25,
+      "commentsCount": 27
     },
     {
       "id": "/content/3KAEcp0iiXcgoCcgJPyJbvyjzvH",
@@ -386,53 +429,8 @@
         "career"
       ],
       "publishedAt": "2026-10-03T01:54:47.579Z",
-      "likesCount": 1901,
-      "commentsCount": 1608
-    },
-    {
-      "id": "/content/3KAllYz1klwl4zjpW5lGpZM4KmB",
-      "title": "Building NourishNet: A Serverless Food-Redistribution Platform with AWS and Kiro",
-      "description": "This describes building a serverless food-redistribution platform for the Zero to Shipped Hackathon with the help of AWS and Kiro",
-      "url": "https://builder.aws.com/content/3KAllYz1klwl4zjpW5lGpZM4KmB",
-      "imageUrl": "",
-      "authorName": "Sandeep Chakravartty",
-      "authorAlias": "scha54",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BcROEaxczgRlB4MDYwPmdxpheX.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "kiro-with-pro",
-        "amazon-cognito",
-        "amazon-dynamodb",
-        "aws-amplify"
-      ],
-      "publishedAt": "2026-10-03T06:26:49.184Z",
-      "likesCount": 1041,
-      "commentsCount": 798
-    },
-    {
-      "id": "/content/3K9FTklEfYhRd0OnZQw71ww76gu",
-      "title": "Building Resilient Serverless Architectures in SQS, Net Lambda and Dead Letter queues with Terraform",
-      "description": "Build a cost-effective, resilient event pipeline using AWS Lambda (.NET 10), Amazon SQS, and Terraform. Learn how to isolate failed messages with ReportBatchItemFailures, configure DLQs, and handle SQS Redrive.",
-      "url": "https://builder.aws.com/content/3K9FTklEfYhRd0OnZQw71ww76gu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3K9FgJYFSbUETEYm7S0VgVxFqzt/https.webp",
-      "authorName": "Joao Oliveira",
-      "authorAlias": "joaooliveira889",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3HMuUBLjy6MolP5SYsZccQnRwF1.webp",
-      "location": "MG, BR",
-      "lat": -18.5264844,
-      "lng": -44.1588654,
-      "tags": [
-        "serverless",
-        "amazon-sqs",
-        "aws-lambda",
-        "csharp"
-      ],
-      "publishedAt": "2026-10-02T17:27:57.668Z",
-      "likesCount": 1320,
-      "commentsCount": 1077
+      "likesCount": 1922,
+      "commentsCount": 1615
     }
   ]
 }
