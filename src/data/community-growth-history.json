@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-09T07:08:02.125Z",
+  "updatedAt": "2026-10-10T06:40:35.640Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -12488,7 +12488,7 @@
       }
     },
     {
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "source": {
         "type": "working-tree"
       },
@@ -12682,10 +12682,10 @@
           }
         },
         "kiro-events": {
-          "total": 6,
+          "total": 5,
           "classified": 1,
-          "unclassified": 5,
-          "coveragePercent": 16.7,
+          "unclassified": 4,
+          "coveragePercent": 20,
           "regions": {
             "north-america": 1,
             "south-america": 0,
@@ -12696,9 +12696,9 @@
           },
           "changes": {
             "added": 0,
-            "removed": 0,
-            "net": 0,
-            "retained": 6,
+            "removed": 1,
+            "net": -1,
+            "retained": 5,
             "addedByRegion": {
               "north-america": 0,
               "south-america": 0,
@@ -12716,9 +12716,17 @@
               "oceania": 0
             },
             "addedUnclassified": 0,
-            "removedUnclassified": 0,
+            "removedUnclassified": 1,
             "addedItems": [],
-            "removedItems": [],
+            "removedItems": [
+              {
+                "name": "CloudNativeGeo (CNG) Forum 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://2026.cloudnativegeo.org/"
+              }
+            ],
             "quality": {
               "confidence": "high",
               "comparable": true,
@@ -12781,11 +12789,11 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-09",
-      "daysCovered": 194
+      "endDate": "2026-10-10",
+      "daysCovered": 195
     },
     "global": {
-      "totalRecords": 4970,
+      "totalRecords": 4969,
       "classifiedRecords": 4775,
       "coveragePercent": 96.1,
       "snapshots": 28
@@ -12793,7 +12801,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-09",
+        "currentDate": "2026-10-10",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -13364,7 +13372,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-09",
+        "currentDate": "2026-10-10",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -13927,7 +13935,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-09",
+        "currentDate": "2026-10-10",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -14568,7 +14576,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-09",
+        "currentDate": "2026-10-10",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -15117,14 +15125,14 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-09",
+        "currentDate": "2026-10-10",
         "baselineTotal": 17,
-        "currentTotal": 6,
-        "currentCoveragePercent": 16.7,
+        "currentTotal": 5,
+        "currentCoveragePercent": 20,
         "periodChange": {
-          "added": 6,
+          "added": 5,
           "removed": 17,
-          "net": -11,
+          "net": -12,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
@@ -15144,13 +15152,6 @@
             "oceania": 0
           },
           "addedItems": [
-            {
-              "name": "CloudNativeGeo (CNG) Forum 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://2026.cloudnativegeo.org/"
-            },
             {
               "name": "CUSEC 2027",
               "location": "Canada",
@@ -15363,11 +15364,11 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-10-07",
-          "added": 3,
+          "date": "2026-10-10",
+          "added": 0,
           "removed": 1,
-          "net": 2,
-          "retained": 3,
+          "net": -1,
+          "retained": 5,
           "addedByRegion": {
             "north-america": 0,
             "south-america": 0,
@@ -15384,31 +15385,9 @@
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 3,
+          "addedUnclassified": 0,
           "removedUnclassified": 1,
-          "addedItems": [
-            {
-              "name": "CloudNativeGeo (CNG) Forum 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://2026.cloudnativegeo.org/"
-            },
-            {
-              "name": "Hackday Islamabad 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://luma.com/jih8rso5"
-            },
-            {
-              "name": "Kiro University for Mahidol - Mahidol Hackathon in October",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://muit.mahidol.ac.th/mu-ai-community-2026/"
-            }
-          ],
+          "addedItems": [],
           "removedItems": [
             {
               "name": "CloudNativeGeo (CNG) Forum 2026",
@@ -15429,7 +15408,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-09",
+        "currentDate": "2026-10-10",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -15759,10 +15738,10 @@
       }
     },
     "upcoming": {
-      "total": 15,
-      "next30Days": 13,
+      "total": 14,
+      "next30Days": 12,
       "byRegion": {
-        "north-america": 3,
+        "north-america": 2,
         "south-america": 3,
         "europe": 3,
         "asia": 2,
@@ -15770,15 +15749,6 @@
         "oceania": 1
       },
       "items": [
-        {
-          "name": "AWS DMV Community Day",
-          "location": "Washington D.C., United States",
-          "country": "United States",
-          "region": "north-america",
-          "url": "https://www.dmvcommunityday.com/",
-          "category": "community-days",
-          "date": "2026-10-09T12:00:00.000Z"
-        },
         {
           "name": "Hackday Islamabad 2026",
           "location": "Online",
