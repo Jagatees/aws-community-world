@@ -1,100 +1,177 @@
 {
-  "updatedAt": "2026-10-14T05:47:55.980Z",
+  "updatedAt": "2026-10-15T05:32:56.571Z",
   "latest": [
     {
-      "id": "/content/3KfkrDxstSZf8UqJ2uUbsVdspkN",
-      "title": "AWS IAM Policies, Groups, and Roles: A Beginner's Guide",
-      "description": "Learn AWS IAM policies, groups, and roles with simple explanations, practical examples, key differences, and security best practices for beginners.",
-      "url": "https://builder.aws.com/content/3KfkrDxstSZf8UqJ2uUbsVdspkN",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KfluTvKI5InB2cXKzPY7DT750Z/Desi.webp",
-      "authorName": "Thilina Jayamal",
-      "authorAlias": "thilinajayamal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JSiUhmnAWBB3DotMRNeffEZUoG.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
+      "id": "/content/3KiYJrRbEt0VXN4PHTwUNhvRWqs",
+      "title": "Is Your AWS Environment Really Secure? 5 Hands-On Tests",
+      "description": "Don’t just configure security. Prove it works.",
+      "url": "https://builder.aws.com/content/3KiYJrRbEt0VXN4PHTwUNhvRWqs",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KiYdKZ4H5TasbERyVLdfPc7YNo/Whats.webp",
+      "authorName": "SUMIT KUMAR",
+      "authorAlias": "sumit8445",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KgLUVeEtUMEBDqGt9db1AWFb5x.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
         "cybersecurity",
         "cloud-security",
-        "network-security",
-        "application-security",
-        "security"
+        "security-and-compliance",
+        "aws-identity-and-access-management",
+        "network-security"
       ],
-      "publishedAt": "2026-10-14T05:46:37.127Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "publishedAt": "2026-10-15T05:28:42.009Z",
+      "likesCount": 4,
+      "commentsCount": 4
     },
     {
-      "id": "/content/3KfieAAcJQEabm5cVW4SUETMGsl",
-      "title": "💸 10 Mistakes I Made as an AWS Beginner (And How to Avoid Them)",
-      "description": "A guide highlighting 10 common mistakes beginners make when starting with AWS, covering hidden billing traps, critical security flaws like hardcoded keys, and actionable habits to build safely.",
-      "url": "https://builder.aws.com/content/3KfieAAcJQEabm5cVW4SUETMGsl",
-      "imageUrl": "",
-      "authorName": "VIJAYARAGAVAN G",
-      "authorAlias": "vijayaragavan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KKCMwsid8aB8RquQD2ZS3Y7TNW.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "student-builders",
-        "aws-student-builders-groups",
-        "students"
-      ],
-      "publishedAt": "2026-10-14T05:42:55.011Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3KfjkSuBVgGXSsEcLjwNlUv2V8P",
-      "title": "Lesser Known AWS Features — Day 22: GuardDuty RDS Protection",
-      "description": "Today I came across a GuardDuty capability that I found really interesting: RDS Protection for data activity.",
-      "url": "https://builder.aws.com/content/3KfjkSuBVgGXSsEcLjwNlUv2V8P",
-      "imageUrl": "",
-      "authorName": "Nikunj Purohit",
-      "authorAlias": "nik06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JgUMbqkB5KX1Rw7psyAevLpMfR.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "ai-security",
-        "cloud-security",
-        "cybersecurity",
-        "amazon-guardduty"
-      ],
-      "publishedAt": "2026-10-14T05:30:47.588Z",
-      "likesCount": 6,
-      "commentsCount": 8
-    },
-    {
-      "id": "/content/3KfjIQdPponTp4a0FPw1WNwziAj",
-      "title": "Introduction to Docker: What It Is and Why We Need It 🐳",
-      "description": "In this article, I explore Docker basics, containerization, installation, pulling images, and running my first container. A beginner-friendly step toward understanding how Docker makes application deployment easier in DevOps.\n",
-      "url": "https://builder.aws.com/content/3KfjIQdPponTp4a0FPw1WNwziAj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Kfk1FE7e3RbQSKfEDw7qaaq8zK/OIP-.webp",
-      "authorName": "Shresth Gupta",
-      "authorAlias": "shresthgupta",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JYCwEN8g07M2Q48BrVq8BiIo1y.webp",
+      "id": "/content/3KiWhSefqPPaFnGOGM9jjRorwLM",
+      "title": "DevSecOps in Practice: Bringing Security Into Every Stage of CI/CD",
+      "description": "Learn how to integrate dependency scanning, secret detection, and container image checks into a CI/CD pipeline. This article covers practical ways to prioritize findings and set deployment rules without slowing down development.",
+      "url": "https://builder.aws.com/content/3KiWhSefqPPaFnGOGM9jjRorwLM",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KiYTXRa4hEAbPOu7iazPuQhvpr/DevS.webp",
+      "authorName": "kanishk",
+      "authorAlias": "101kanishk",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IOzfbpN0Y0cHqkvenYjc6AKxc5.webp",
       "location": "Uttar Pradesh, IN",
       "lat": 27.1303344,
       "lng": 80.859666,
       "tags": [
-        "docker",
-        "aws-academy",
-        "linux",
-        "devops"
+        "ai-security",
+        "security",
+        "security-group",
+        "security-hub",
+        "cybersecurity"
       ],
-      "publishedAt": "2026-10-14T05:30:41.746Z",
+      "publishedAt": "2026-10-15T05:24:45.370Z",
+      "likesCount": 3,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3KiXtLJ5sdvaDUoDjHDjHzdc8RN",
+      "title": "The Invisible Cloud: Building Self-Healing Systems with AWS",
+      "description": "Explore how AWS enables self-healing cloud infrastructure through automated monitoring, intelligent recovery, and scalable architecture. Discover how services like Amazon CloudWatch, EC2 Auto Scaling, and Elastic Load Balancing help build resilient applications that recover from failures with minimal manual intervention. A look into the future of reliable cloud engineering and DevOps automation.",
+      "url": "https://builder.aws.com/content/3KiXtLJ5sdvaDUoDjHDjHzdc8RN",
+      "imageUrl": "",
+      "authorName": "AADI GUPTA",
+      "authorAlias": "aadidev24",
+      "authorAvatarUrl": "",
+      "location": "Uttar Pradesh, IN",
+      "lat": 27.1303344,
+      "lng": 80.859666,
+      "tags": [
+        "devops",
+        "reliability",
+        "self-development"
+      ],
+      "publishedAt": "2026-10-15T05:22:12.827Z",
+      "likesCount": 4,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3JOMwuQOhgZ9u1TcX2OZQaLf18v",
+      "title": "🚀 Your Web App. Now on Lambda. ☁️",
+      "description": "Deploy your Node.js app with less setup. AWS Lambda Web Functions brings concurrent requests, active CPU billing, and multi-region deployment to your familiar web frameworks. Here’s what’s new and why it matters. ⚡",
+      "url": "https://builder.aws.com/content/3JOMwuQOhgZ9u1TcX2OZQaLf18v",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KiYPVm4fRNkNmnIWfJDgNEVd6a/Your.webp",
+      "authorName": "KARTHIKEYA DEVARAJ P",
+      "authorAlias": "karthikeya8164",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IekKd3bgXGYNHb8htF6odekahW.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "web-development",
+        "cloud-concepts",
+        "serverless",
+        "ai",
+        "javascript"
+      ],
+      "publishedAt": "2026-10-15T05:19:42.112Z",
+      "likesCount": 4,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3KiXIZ290r1oAyhChaqxDXAJCMk",
+      "title": "Building a Cloud Cost Optimization Engine on AWS: A Beginner's Guide",
+      "description": "Learn how to identify unnecessary cloud spending, monitor AWS resource usage, and optimize cloud costs using practical strategies. This article explores the key concepts, tools, and best practices that students and developers can use to build more cost-efficient cloud infrastructure.",
+      "url": "https://builder.aws.com/content/3KiXIZ290r1oAyhChaqxDXAJCMk",
+      "imageUrl": "",
+      "authorName": "Govind Sharma",
+      "authorAlias": "govindsharma",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ISo1D9xmUCDIFSgY8VK7vu8XzJ.webp",
+      "location": "Uttar Pradesh, IN",
+      "lat": 27.1303344,
+      "lng": 80.859666,
+      "tags": [],
+      "publishedAt": "2026-10-15T05:17:07.328Z",
       "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3KiWrCRrw2vB5wp8CH5LFeBxAv0",
+      "title": "What If Your Application Could Scale Without You Managing a Single Server?",
+      "description": "What if your application could scale with demand without you managing the underlying servers? Explore how serverless computing works, how AWS Lambda enables event-driven applications, its cost benefits, real-world use cases, and the trade-offs developers should understand.",
+      "url": "https://builder.aws.com/content/3KiWrCRrw2vB5wp8CH5LFeBxAv0",
+      "imageUrl": "",
+      "authorName": "Likhitha",
+      "authorAlias": "likhithak",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Je1CCvgVtqN2j0wyAuNs6GliqV.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "serverless",
+        "aws-lambda",
+        "cloud-concepts"
+      ],
+      "publishedAt": "2026-10-15T05:14:12.550Z",
+      "likesCount": 6,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3KiWaDZtJPjSsILC2DdqVIYo5LO",
+      "title": "GitOps with Argo CD: Automating Kubernetes Deployments",
+      "description": "Discover how GitOps simplifies Kubernetes application deployments by using Git as the single source of truth. Learn how Argo CD continuously monitors repositories, synchronizes Kubernetes resources, detects configuration drift, and enables reliable automated deployments.",
+      "url": "https://builder.aws.com/content/3KiWaDZtJPjSsILC2DdqVIYo5LO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KiWzr6WUXD4yydvA7pGwlosdyB/GitO.webp",
+      "authorName": "ISHWAR GOSAVI",
+      "authorAlias": "ishwar329",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JOqtHNmqjnSTgjRIwAGoO2iqjH.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "gitops",
+        "kubernetes"
+      ],
+      "publishedAt": "2026-10-15T05:12:35.104Z",
+      "likesCount": 4,
       "commentsCount": 2
     },
     {
-      "id": "/content/3Kfid22XINKwRLCR3ZaNPRxgxQE",
-      "title": "💡 Beyond Writing Code: How I Would Build a Cloud System That Knows When to Save Money",
-      "description": "Exploring how students and developers can design smarter AWS architectures that balance performance, reliability, and cost",
-      "url": "https://builder.aws.com/content/3Kfid22XINKwRLCR3ZaNPRxgxQE",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KfjC7vJ0KZBTRwZwvddOavfUIM/AWS-.webp",
+      "id": "/content/3KiWpxVosy8Nk0vIsVXtZcRRJNC",
+      "title": "The Hidden Curriculum: What Your Classroom Never Teaches You",
+      "description": "want to know??",
+      "url": "https://builder.aws.com/content/3KiWpxVosy8Nk0vIsVXtZcRRJNC",
+      "imageUrl": "",
+      "authorName": "Rin",
+      "authorAlias": "rinnohara",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IdijO3277xhC66kZwlkN0XmQ3n.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-10-15T05:11:29.385Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3KiW96evcXnpSceQEcM9H81MnqY",
+      "title": "What Happens When Your Cloud Application Fails at 3 AM? Designing Systems That Recover Automatically",
+      "description": "Exploring how AWS services can help developers build applications that detect failures, recover gracefully, and remain reliable.",
+      "url": "https://builder.aws.com/content/3KiW96evcXnpSceQEcM9H81MnqY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KiWh0anCDGyphXewR0SEqGSbM4/AWS-.webp",
       "authorName": "Ayush Gupta",
       "authorAlias": "ayushgupta8541",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Kfi4ieHpV1ULXBbAOly4b7Z8vE.webp",
@@ -102,127 +179,55 @@
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
-        "cost-optimization",
-        "aws-lambda"
+        "amazon-cloudwatch",
+        "serverless",
+        "architecture"
       ],
-      "publishedAt": "2026-10-14T05:25:36.925Z",
+      "publishedAt": "2026-10-15T05:09:59.582Z",
       "likesCount": 3,
-      "commentsCount": 3
+      "commentsCount": 4
     },
     {
-      "id": "/content/3KfiuKp3sdIA8HZB7TSrFva7Lml",
-      "title": "My AWS AI Wishlist: Building the Future of Intelligent Cloud Computing 🚀",
-      "description": "Exploring my AWS AI Wishlist for 2026! Sharing innovative ideas to make cloud AI smarter, more accessible, affordable, and developer-friendly through automation, generative AI, and AWS services.\n",
-      "url": "https://builder.aws.com/content/3KfiuKp3sdIA8HZB7TSrFva7Lml",
+      "id": "/content/3KiWAw8G9cBrYogSs7Qh6uHlPIG",
+      "title": "🚀 Exploring Agentic AI on AWS",
+      "description": "Learned how Agentic AI goes beyond traditional chatbots by planning tasks, using tools, and executing multi-step workflows with AWS services like Amazon Bedrock and AWS Lambda.",
+      "url": "https://builder.aws.com/content/3KiWAw8G9cBrYogSs7Qh6uHlPIG",
       "imageUrl": "",
-      "authorName": "Sanjai A",
-      "authorAlias": "sanjaiashok",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KeNZMTKOMYSqfepxxU5AFCfb5q.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "ai",
-        "ai-agents",
-        "ai-assisted",
-        "machine-learning"
-      ],
-      "publishedAt": "2026-10-14T05:23:56.822Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3KfirfqIZwPhvXHfX2CPmmJ9y0M",
-      "title": "Getting Started with AWS Cloud Computing: A Beginner's Guide",
-      "description": "Discover the fundamentals of cloud computing with Amazon Web Services (AWS). This article explores essential AWS services, the benefits of cloud technology, and how beginners can start building their cloud computing skills",
-      "url": "https://builder.aws.com/content/3KfirfqIZwPhvXHfX2CPmmJ9y0M",
-      "imageUrl": "",
-      "authorName": "Devesh Gour",
-      "authorAlias": "deveshgour",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3K8pcwXkEVsM5xzLoJbBosERZVI.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-academy",
-        "aws-builders",
-        "aws-batch",
-        "aws-cloudwatch",
-        "aws-cloud-development-kit"
-      ],
-      "publishedAt": "2026-10-14T05:23:24.465Z",
-      "likesCount": 2,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3KfhPysZKmLULbTCboGClZlsGXQ",
-      "title": "Architecture in the Era of Quantum-Agentic Meshes",
-      "description": "Discover how autonomous AI agentic networks and room-temperature quantum nodes are converging to redefine modern cloud infrastructure and decentralize real-time global compute.\n\n",
-      "url": "https://builder.aws.com/content/3KfhPysZKmLULbTCboGClZlsGXQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KfhiE9AIgwo112bkuOwr8wqv3A/8424.webp",
-      "authorName": "L Hemanth",
-      "authorAlias": "hemanth11zx",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KJAADSkQOHBQl6MScWUuQhWC5X.webp",
+      "authorName": "Dhivya I",
+      "authorAlias": "dhivya372007",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Jz9jKwcR2salR3F6hzieecgaSA.webp",
       "location": "Tamil Nadu, IN",
       "lat": 11.3323723,
       "lng": 78.6098639,
-      "tags": [
-        "quality-assurance",
-        "artificial-intelligence",
-        "serverless"
-      ],
-      "publishedAt": "2026-10-14T05:13:13.723Z",
-      "likesCount": 3,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3Kfhj01TFFr7r4PRDZiFGMrxyhx",
-      "title": "Beyond Traditional Cloud: How AWS Is Powering Generative AI Applications",
-      "description": "Generative AI is changing how developers build modern applications. Discover how AWS services such as Amazon Bedrock, Amazon S3, AWS Lambda, and Amazon CloudWatch work together to build scalable, secure, and practical AI-powered solutions.",
-      "url": "https://builder.aws.com/content/3Kfhj01TFFr7r4PRDZiFGMrxyhx",
-      "imageUrl": "",
-      "authorName": "Srikar",
-      "authorAlias": "srikarpuyal",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JY36K6Mrkt7K4TeHkMJ5UMFqJL.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "generative-ai",
-        "amazon-bedrock",
-        "aws-lambda",
-        "amazon-s3",
-        "artificial-intelligence"
-      ],
-      "publishedAt": "2026-10-14T05:12:53.597Z",
-      "likesCount": 2,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3KfhQLMngXN8CQMeIvZS5WmQtbs",
-      "title": "Building Modern Applications on AWS",
-      "description": "Learn about the services and architecture patterns used for modern cloud applications.",
-      "url": "https://builder.aws.com/content/3KfhQLMngXN8CQMeIvZS5WmQtbs",
-      "imageUrl": "",
-      "authorName": "Vassuuuuuuuuuuu",
-      "authorAlias": "vassuuu21",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J26IDTnZuYHQV1zpgDD4PIAqy2.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-amplify",
-        "development",
-        "architecture",
-        "modernization"
-      ],
-      "publishedAt": "2026-10-14T05:09:57.608Z",
-      "likesCount": 4,
+      "tags": [],
+      "publishedAt": "2026-10-15T05:07:05.279Z",
+      "likesCount": 1,
       "commentsCount": 1
     }
   ],
   "trending": [
+    {
+      "id": "/content/3KgCcMfiqJA5UAJpuQsTImwXnut",
+      "title": "Let's Strands Decider our Role-Playing Game",
+      "description": "If you build agents that call tools, you can let them act when they're sure and ask when they're not.\nThat is the job Strands Decider does. It is a small decision model that answers a typed question (yes/no, pick one, or a score) in a few hundred milliseconds on a laptop. ",
+      "url": "https://builder.aws.com/content/3KgCcMfiqJA5UAJpuQsTImwXnut",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KghJVCuwPpvVb3XYJOdzkhJtRL/stran.webp",
+      "authorName": "TheWitcherish",
+      "authorAlias": "thewitcherish",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36z33C86T7M6qLzBQlWKDWLhTsm.webp",
+      "location": "Bavaria, DE",
+      "lat": 48.9467562,
+      "lng": 11.4038717,
+      "tags": [
+        "strands-agents",
+        "strands-decider-2b",
+        "strands",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-10-14T14:24:11.095Z",
+      "likesCount": 226,
+      "commentsCount": 192
+    },
     {
       "id": "/content/3KapoPCPUzMUYbNYn6Ui7cbibES",
       "title": "How we ran the Kiro University Challenge as a community build-along: 141 builders at AWS User Group Madurai",
@@ -243,8 +248,8 @@
         "aws-heroes"
       ],
       "publishedAt": "2026-10-12T13:04:59.475Z",
-      "likesCount": 1579,
-      "commentsCount": 1358
+      "likesCount": 1850,
+      "commentsCount": 1574
     },
     {
       "id": "/content/3KaWtmNdVddVKKlLty4PatcWIcx",
@@ -266,49 +271,8 @@
         "ai"
       ],
       "publishedAt": "2026-10-12T10:03:23.313Z",
-      "likesCount": 659,
-      "commentsCount": 528
-    },
-    {
-      "id": "/content/3KUizOgkEDknWU5gkvLMwWl4Y1c",
-      "title": "AWS Community Day Adria - A conference that changes lives and careers",
-      "description": "AWS Community Day Adria is the biggest AWS-related event in the Adriatic / Balkans region and the biggest AWS Community Day in Europe. Organized by the community, for the community.",
-      "url": "https://builder.aws.com/content/3KUizOgkEDknWU5gkvLMwWl4Y1c",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KVFEp2HACgVDPhECAnCUgcwSEd/AWS_.webp",
-      "authorName": "Dzenan Dzevlan",
-      "authorAlias": "dzenandzevlan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2omwFicAuiRduEvc5mhtUjDQdsA.webp",
-      "location": "BA",
-      "lat": 44.3053476,
-      "lng": 17.5961467,
-      "tags": [
-        "aws-community",
-        "aws-community-day"
-      ],
-      "publishedAt": "2026-10-10T12:33:39.067Z",
-      "likesCount": 1680,
-      "commentsCount": 1380
-    },
-    {
-      "id": "/content/3KecudZKtHSnyRQPLEOihppWx7I",
-      "title": "Happy 5th birthday AWS Fargate!",
-      "description": "A recap of all the improvements in AWS Fargate since its initial launch in 2017.",
-      "url": "https://builder.aws.com/content/3KecudZKtHSnyRQPLEOihppWx7I",
-      "imageUrl": "",
-      "authorName": "Maish Saidel-Keesing",
-      "authorAlias": "maishsk",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wJRIyXpI52B8dISZb1NToBvz8F.webp",
-      "location": "IL",
-      "lat": 30.8124247,
-      "lng": 34.8594762,
-      "tags": [
-        "containers",
-        "video",
-        "aws-fargate"
-      ],
-      "publishedAt": "2026-10-13T20:01:53.876Z",
-      "likesCount": 42,
-      "commentsCount": 27
+      "likesCount": 1062,
+      "commentsCount": 851
     },
     {
       "id": "/content/3KckJ2rftgKIBrb5NlvBHHmCPtH",
@@ -327,8 +291,72 @@
         "amazon-bedrock"
       ],
       "publishedAt": "2026-10-13T04:09:32.545Z",
-      "likesCount": 162,
-      "commentsCount": 104
+      "likesCount": 439,
+      "commentsCount": 332
+    },
+    {
+      "id": "/content/3KUizOgkEDknWU5gkvLMwWl4Y1c",
+      "title": "AWS Community Day Adria - A conference that changes lives and careers",
+      "description": "AWS Community Day Adria is the biggest AWS-related event in the Adriatic / Balkans region and the biggest AWS Community Day in Europe. Organized by the community, for the community.",
+      "url": "https://builder.aws.com/content/3KUizOgkEDknWU5gkvLMwWl4Y1c",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KVFEp2HACgVDPhECAnCUgcwSEd/AWS_.webp",
+      "authorName": "Dzenan Dzevlan",
+      "authorAlias": "dzenandzevlan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2omwFicAuiRduEvc5mhtUjDQdsA.webp",
+      "location": "BA",
+      "lat": 44.3053476,
+      "lng": 17.5961467,
+      "tags": [
+        "aws-community",
+        "aws-community-day"
+      ],
+      "publishedAt": "2026-10-10T12:33:39.067Z",
+      "likesCount": 1712,
+      "commentsCount": 1419
+    },
+    {
+      "id": "/content/3KeP5Ow0BZUP6u2G9PPjskuCtPi",
+      "title": "Lambda Web Functions - Because Your Express App Deserves Better Than a Lambda Adapter",
+      "description": "Lambda Web Functions lets you deploy your port-listening Node.js web apps to Lambda with zero code changes. Multi-concurrent execution, active CPU billing, and global deployment in one command. The adapter era is over.",
+      "url": "https://builder.aws.com/content/3KeP5Ow0BZUP6u2G9PPjskuCtPi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KeZngY5002cBtoud5LxUM5nQVp/AWS-.webp",
+      "authorName": "Vishal Alhat",
+      "authorAlias": "weshallaws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35SeCLVKcGiksCvxLqOvbOfdRL7.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-lambda",
+        "serverless",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-10-13T19:38:34.069Z",
+      "likesCount": 134,
+      "commentsCount": 99
+    },
+    {
+      "id": "/content/3KfNidrS170VdRoKLSXoW5lk1yl",
+      "title": "OpenTelemetry: How to Eliminate Vendor Lock-in and Master Modern Observability",
+      "description": "Every engineering team eventually encounters the same observability dilemma: you adopt an all-in-one monitoring tool to gain visibility into your microservices. A few years later, pricing spikes, a better competitor emerges, or your architecture evolves beyond what that platform handles well.",
+      "url": "https://builder.aws.com/content/3KfNidrS170VdRoKLSXoW5lk1yl",
+      "imageUrl": "",
+      "authorName": "Jhonnatan GIl",
+      "authorAlias": "jthan24",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKa9YPeYMUJR0GBhXpvgaQgYP.webp",
+      "location": "CO",
+      "lat": 4.099917,
+      "lng": -72.9088133,
+      "tags": [
+        "open-telemetry",
+        "observability",
+        "devops-pro",
+        "microservices",
+        "amazon-cloudwatch"
+      ],
+      "publishedAt": "2026-10-14T02:28:17.375Z",
+      "likesCount": 47,
+      "commentsCount": 36
     },
     {
       "id": "/content/3KRx3G8JMf1G06ZFu2dDEdE2DLw",
@@ -349,8 +377,8 @@
         "model-routing"
       ],
       "publishedAt": "2026-10-09T08:29:44.459Z",
-      "likesCount": 971,
-      "commentsCount": 776
+      "likesCount": 997,
+      "commentsCount": 798
     },
     {
       "id": "/content/3KQYoLu7XiQSn6r13bPEE8jeKTj",
@@ -369,8 +397,8 @@
         "amazon-api-gateway"
       ],
       "publishedAt": "2026-10-08T20:43:31.897Z",
-      "likesCount": 1513,
-      "commentsCount": 1347
+      "likesCount": 1532,
+      "commentsCount": 1364
     },
     {
       "id": "/content/3KUqlHngj6cAk31pqtM4oMKaHx7",
@@ -392,54 +420,8 @@
         "devops"
       ],
       "publishedAt": "2026-10-10T09:25:29.438Z",
-      "likesCount": 384,
-      "commentsCount": 309
-    },
-    {
-      "id": "/content/3KNzMek3U1WL6S49viNEhHeFZmC",
-      "title": "Strands Box on AWS Lambda MicroVMs: a kernel per agent, a policy per command, and a fleet to run them with microvm-ctl",
-      "description": "Strands Box checks every shell command, file and request an agent makes against a Dogwood policy. Lambda MicroVMs give the agent its own kernel. I built Box for aarch64 Linux, ran it inside Lambda MicroVMs, and drove fleets with microvm-ctl: 83 ms per box, 22.7 boxes/s per 1 GB VM, 64 of 64 correct across 8 VMs, a playground app, and the bugs I hit.",
-      "url": "https://builder.aws.com/content/3KNzMek3U1WL6S49viNEhHeFZmC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KO0tlOEra2ySzwI1syTI66O8np/cove.webp",
-      "authorName": "Vivek Raja P S",
-      "authorAlias": "vivekraja",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AtzCHy721bhrSH5RUFS9U140dt.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-lambda",
-        "strands",
-        "agents",
-        "ai-agents",
-        "strands-agents"
-      ],
-      "publishedAt": "2026-10-07T22:53:14.165Z",
-      "likesCount": 2009,
-      "commentsCount": 1777
-    },
-    {
-      "id": "/content/3KWlaZL2o95iYZyqLVITatDPyOo",
-      "title": "De Blind Spots a Claridad Total: Por Qué las Trazas Distribuidas Son Imprescindibles en Microservicios",
-      "description": "En la era de los monolitos, entender qué sucedía cuando un usuario hacía clic en un botón era relativamente sencillo: bastaba con revisar los registros agregados del servidor web y seguir la pila de llamadas (stack trace) en un único proceso.",
-      "url": "https://builder.aws.com/content/3KWlaZL2o95iYZyqLVITatDPyOo",
-      "imageUrl": "",
-      "authorName": "Jhonnatan GIl",
-      "authorAlias": "jthan24",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKa9YPeYMUJR0GBhXpvgaQgYP.webp",
-      "location": "CO",
-      "lat": 4.099917,
-      "lng": -72.9088133,
-      "tags": [
-        "software-architecture",
-        "devops",
-        "devops-pro",
-        "microservices",
-        "observability"
-      ],
-      "publishedAt": "2026-10-11T01:15:41.556Z",
-      "likesCount": 161,
-      "commentsCount": 98
+      "likesCount": 414,
+      "commentsCount": 334
     }
   ]
 }
