@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-15T05:32:58.565Z",
+  "updatedAt": "2026-10-16T05:26:10.246Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -13095,7 +13095,7 @@
       }
     },
     {
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "source": {
         "type": "working-tree"
       },
@@ -13289,10 +13289,10 @@
           }
         },
         "kiro-events": {
-          "total": 3,
+          "total": 5,
           "classified": 1,
-          "unclassified": 2,
-          "coveragePercent": 33.3,
+          "unclassified": 4,
+          "coveragePercent": 20,
           "regions": {
             "north-america": 1,
             "south-america": 0,
@@ -13302,9 +13302,9 @@
             "oceania": 0
           },
           "changes": {
-            "added": 0,
+            "added": 2,
             "removed": 0,
-            "net": 0,
+            "net": 2,
             "retained": 3,
             "addedByRegion": {
               "north-america": 0,
@@ -13322,9 +13322,24 @@
               "africa": 0,
               "oceania": 0
             },
-            "addedUnclassified": 0,
+            "addedUnclassified": 2,
             "removedUnclassified": 0,
-            "addedItems": [],
+            "addedItems": [
+              {
+                "name": "AWS re:Invent 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://aws.amazon.com/events/reinvent/"
+              },
+              {
+                "name": "Kiroween 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://kiroween.devpost.com/"
+              }
+            ],
             "removedItems": [],
             "quality": {
               "confidence": "high",
@@ -13388,11 +13403,11 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-15",
-      "daysCovered": 200
+      "endDate": "2026-10-16",
+      "daysCovered": 201
     },
     "global": {
-      "totalRecords": 4967,
+      "totalRecords": 4969,
       "classifiedRecords": 4775,
       "coveragePercent": 96.1,
       "snapshots": 30
@@ -13400,7 +13415,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-15",
+        "currentDate": "2026-10-16",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -13971,7 +13986,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-15",
+        "currentDate": "2026-10-16",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -14534,7 +14549,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-15",
+        "currentDate": "2026-10-16",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -15175,7 +15190,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-15",
+        "currentDate": "2026-10-16",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -15724,14 +15739,14 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-15",
+        "currentDate": "2026-10-16",
         "baselineTotal": 17,
-        "currentTotal": 3,
-        "currentCoveragePercent": 33.3,
+        "currentTotal": 5,
+        "currentCoveragePercent": 20,
         "periodChange": {
-          "added": 3,
+          "added": 5,
           "removed": 17,
-          "net": -14,
+          "net": -12,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
@@ -15752,6 +15767,13 @@
           },
           "addedItems": [
             {
+              "name": "AWS re:Invent 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://aws.amazon.com/events/reinvent/"
+            },
+            {
               "name": "CUSEC 2027",
               "location": "Canada",
               "country": "Canada",
@@ -15764,6 +15786,13 @@
               "country": "Online",
               "region": null,
               "url": "https://muit.mahidol.ac.th/mu-ai-community-2026/"
+            },
+            {
+              "name": "Kiroween 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://kiroween.devpost.com/"
             },
             {
               "name": "Young Talent Programme for AI in Finance (YTP-AIF)",
@@ -15949,10 +15978,10 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-10-11",
-          "added": 0,
-          "removed": 2,
-          "net": -2,
+          "date": "2026-10-16",
+          "added": 2,
+          "removed": 0,
+          "net": 2,
           "retained": 3,
           "addedByRegion": {
             "north-america": 0,
@@ -15970,25 +15999,25 @@
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 0,
-          "removedUnclassified": 2,
-          "addedItems": [],
-          "removedItems": [
+          "addedUnclassified": 2,
+          "removedUnclassified": 0,
+          "addedItems": [
             {
-              "name": "Hackday Islamabad 2026",
+              "name": "AWS re:Invent 2026",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://luma.com/jih8rso5"
+              "url": "https://aws.amazon.com/events/reinvent/"
             },
             {
-              "name": "Islamabad Hack 2026",
+              "name": "Kiroween 2026",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://forms.gle/EyMvrP2oc3hZf2rX6"
+              "url": "https://kiroween.devpost.com/"
             }
           ],
+          "removedItems": [],
           "quality": {
             "confidence": "high",
             "comparable": true,
@@ -16000,7 +16029,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-15",
+        "currentDate": "2026-10-16",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -16330,8 +16359,8 @@
       }
     },
     "upcoming": {
-      "total": 9,
-      "next30Days": 7,
+      "total": 11,
+      "next30Days": 9,
       "byRegion": {
         "north-america": 1,
         "south-america": 2,
@@ -16387,6 +16416,15 @@
           "date": "2026-10-22T12:00:00.000Z"
         },
         {
+          "name": "Kiroween 2026",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://kiroween.devpost.com/",
+          "category": "kiro-events",
+          "date": "2026-10-30T00:00:00.000Z"
+        },
+        {
           "name": "AWS Women User Group Abuja Community Day",
           "location": "Abuja, Nigeria",
           "country": "Nigeria",
@@ -16412,6 +16450,15 @@
           "url": "https://awscommunityday.com.br/#norte",
           "category": "community-days",
           "date": "2026-11-14T12:00:00.000Z"
+        },
+        {
+          "name": "AWS re:Invent 2026",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://aws.amazon.com/events/reinvent/",
+          "category": "kiro-events",
+          "date": "2026-11-30T00:00:00.000Z"
         },
         {
           "name": "CUSEC 2027",
