@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-17T05:18:57.285Z",
+  "updatedAt": "2026-10-18T05:25:21.827Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -13402,7 +13402,7 @@
       }
     },
     {
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "source": {
         "type": "working-tree"
       },
@@ -13695,8 +13695,8 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-17",
-      "daysCovered": 202
+      "endDate": "2026-10-18",
+      "daysCovered": 203
     },
     "global": {
       "totalRecords": 4969,
@@ -13707,7 +13707,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-17",
+        "currentDate": "2026-10-18",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -14278,7 +14278,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-17",
+        "currentDate": "2026-10-18",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -14841,7 +14841,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-17",
+        "currentDate": "2026-10-18",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -15482,7 +15482,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-17",
+        "currentDate": "2026-10-18",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -16031,7 +16031,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-17",
+        "currentDate": "2026-10-18",
         "baselineTotal": 17,
         "currentTotal": 5,
         "currentCoveragePercent": 20,
@@ -16321,7 +16321,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-17",
+        "currentDate": "2026-10-18",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -16651,26 +16651,17 @@
       }
     },
     "upcoming": {
-      "total": 9,
-      "next30Days": 7,
+      "total": 8,
+      "next30Days": 6,
       "byRegion": {
         "north-america": 1,
         "south-america": 2,
-        "europe": 2,
+        "europe": 1,
         "asia": 1,
         "africa": 1,
         "oceania": 0
       },
       "items": [
-        {
-          "name": "AWS Community Day Spain",
-          "location": "Santiago, Spain",
-          "country": "Spain",
-          "region": "europe",
-          "url": "https://awscommunity.es/",
-          "category": "community-days",
-          "date": "2026-10-17T12:00:00.000Z"
-        },
         {
           "name": "AWS Community Day Adria",
           "location": "Ljubljana, Slovenia",

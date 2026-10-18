@@ -1,94 +1,261 @@
 {
-  "updatedAt": "2026-10-17T05:18:54.572Z",
+  "updatedAt": "2026-10-18T05:25:19.258Z",
   "latest": [
     {
-      "id": "/content/3Ko9tOn5mpT216voj6ITMBWEVb8",
-      "title": "Getting Started with AWS: A Practical Cloud Learning Guide for Students",
-      "description": "Explore how students can learn AWS through hands-on practice, cloud projects, deployment tools, and cost-effective learning strategies. This guide covers essential AWS services and practical tips for building real-world cloud computing skills.",
-      "url": "https://builder.aws.com/content/3Ko9tOn5mpT216voj6ITMBWEVb8",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KoAYNMUUKzMgjJHhyUgAvCr3Nd/Gett.webp",
-      "authorName": "Akhil Charan Kumar Pujari",
-      "authorAlias": "akhilcharankumar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ko8auOyg4Kit0OvAE3rKQOSxVh.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
+      "id": "/content/3Kr1FX6ZA4Yiae2IFvKOpdpKm2y",
+      "title": "Understanding Amazon EC2 Key Pairs: Creation, Formats, and Security",
+      "description": "Learn how Amazon EC2 key pairs handle asymmetric authentication for cloud instances. This guide covers RSA vs. ED25519 key types, setting secure SSH permissions, and best practices to safeguard production workloads.",
+      "url": "https://builder.aws.com/content/3Kr1FX6ZA4Yiae2IFvKOpdpKm2y",
+      "imageUrl": "",
+      "authorName": "Khilchand",
+      "authorAlias": "khil76",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JihxKdP6GFiIs4dpsmcX8mbe80.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
       "tags": [
-        "amazon-cloudwatch",
-        "amazon-bedrock",
-        "aws-lambda",
         "amazon-ec2",
-        "amazon-s3"
+        "security-group",
+        "cloud-security",
+        "ssh",
+        "cloud-concepts"
       ],
-      "publishedAt": "2026-10-17T05:08:11.954Z",
-      "likesCount": 7,
-      "commentsCount": 7
+      "publishedAt": "2026-10-18T05:23:49.464Z",
+      "likesCount": 2,
+      "commentsCount": 1
     },
     {
-      "id": "/content/3Ko7vYBP4LFQwNld3BoVC1ZVWYd",
-      "title": "5 Costly AWS Mistakes I Made in My First Cloud Project (and How to Avoid Them)",
-      "description": "A surprise AWS bill is every cloud builder's worst nightmare. Here are 5 silent billing traps—from zombie NAT gateways to runaway CloudWatch logs—and the exact fixes to save you money.",
-      "url": "https://builder.aws.com/content/3Ko7vYBP4LFQwNld3BoVC1ZVWYd",
-      "imageUrl": "",
-      "authorName": "Tanishka Gupta",
-      "authorAlias": "tani30",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J8n4pWsJrUH1MCEfYMP2pcAHFi.webp",
-      "location": "Uttar Pradesh, IN",
-      "lat": 27.1303344,
-      "lng": 80.859666,
+      "id": "/content/3Knn2UWwT7d5SllZMqha0mbyFvr",
+      "title": "Beyond Servers: The Rise of AI-Powered, Sustainable Data Centers",
+      "description": "What happens when the world's digital infrastructure must power millions of AI requests while managing heat, energy consumption, and reliability? Welcome to the next generation of data centers! Discover how artificial intelligence, liquid cooling, intelligent automation, cloud computing, and sustainable engineering are transforming modern data centers—and how AWS is helping shape the infrastructure behind tomorrow's digital world.",
+      "url": "https://builder.aws.com/content/3Knn2UWwT7d5SllZMqha0mbyFvr",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Kr1I1xOmfeQ9IxJH6NOil3b6qJ/arti.webp",
+      "authorName": "Shinde Ritesh Bhalchandra",
+      "authorAlias": "riteshshinde",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KFyXMv6ZlTuErfSImFxyD7tMcI.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
       "tags": [
-        "aws-lambda",
-        "cost-savings",
-        "cost-optimization",
-        "aws-cloud-development-kit"
+        "data-center",
+        "cloud-networking",
+        "machine-learning",
+        "sustainability"
       ],
-      "publishedAt": "2026-10-17T04:51:01.573Z",
-      "likesCount": 11,
-      "commentsCount": 8
+      "publishedAt": "2026-10-18T05:20:20.557Z",
+      "likesCount": 5,
+      "commentsCount": 3
     },
     {
-      "id": "/content/3Ko4ghcogrNu4IjaxnmWQUJR6NM",
-      "title": "Your AWS Application Is Running — But Is It Actually Secure?",
-      "description": "An application can run perfectly while exposing sensitive data or allowing excessive access. Explore six common AWS security mistakes, understand their potential impact, and learn practical ways to reduce risk using least-privilege IAM policies, secure S3 configurations, network controls, CloudTrail, and AWS Config.",
-      "url": "https://builder.aws.com/content/3Ko4ghcogrNu4IjaxnmWQUJR6NM",
+      "id": "/content/3KqzDbPAATbrKoMDBmHwSicMY6T",
+      "title": "Getting Started with AWS: A Beginner’s Guide to Cloud Computing",
+      "description": "Learn the fundamentals of Amazon Web Services (AWS), explore essential cloud services, and understand how to deploy scalable, reliable, and cost-effective applications in the cloud.",
+      "url": "https://builder.aws.com/content/3KqzDbPAATbrKoMDBmHwSicMY6T",
       "imageUrl": "",
-      "authorName": "karpurapu sivani",
-      "authorAlias": "sivani2026",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J2Lv8VVgtTvTzRC4T80QVLetIr.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [],
-      "publishedAt": "2026-10-17T04:21:27.542Z",
-      "likesCount": 28,
-      "commentsCount": 17
-    },
-    {
-      "id": "/content/3Ko4IgyGJ3Tzs8qatEX9eSzcEAS",
-      "title": "5 AWS Features I Wish I Knew Earlier as a Student",
-      "description": "Five useful AWS features that beginners can easily overlook, from browser-based development and safer EC2 access to cost alerts, IAM security analysis and smarter storage choices.",
-      "url": "https://builder.aws.com/content/3Ko4IgyGJ3Tzs8qatEX9eSzcEAS",
-      "imageUrl": "",
-      "authorName": "M Vamsi Krishna",
-      "authorAlias": "mvamsikrishna",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JoqDz9vNrlj12WcRa5JY6eeYgw.webp",
+      "authorName": "Revanth Ganesh",
+      "authorAlias": "revanthganesh64",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JZX9kNNROttDHRZ6V2RxOpe43T.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [
-        "aws-certification",
-        "aws-student-builders-groups",
+        "aws-cloud9",
+        "cloud-networking",
+        "cloud-operations",
+        "cloud-practitioner",
+        "cloud-storage"
+      ],
+      "publishedAt": "2026-10-18T05:07:44.239Z",
+      "likesCount": 10,
+      "commentsCount": 9
+    },
+    {
+      "id": "/content/3KX7mqBPBWOjvhhdKqfNLpQp2P3",
+      "title": "Understanding Amazon S3 Explained for Beginners: Buckets, Objects, Storage Classes, and Security",
+      "description": "A beginner-friendly guide to Amazon S3 covering buckets, objects, object keys, storage classes, versioning, and security, with simple examples of AWS cloud storage.",
+      "url": "https://builder.aws.com/content/3KX7mqBPBWOjvhhdKqfNLpQp2P3",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Kr0WZNsUm3Ma2tmDzwG0FHHhhk/Unde.webp",
+      "authorName": "Varadraj Jadhav",
+      "authorAlias": "varadrajjadhav028",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KIcjYG2LABVoUB0wfFQqN51oeK.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
         "students",
-        "aws-academy",
+        "amazon-s3",
+        "storage",
+        "beginner-projects",
         "aws-builders"
       ],
-      "publishedAt": "2026-10-17T04:20:10.893Z",
-      "likesCount": 13,
-      "commentsCount": 8
+      "publishedAt": "2026-10-18T05:07:07.443Z",
+      "likesCount": 7,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3KqvP2JXnLH7rSbp67TgGtoD4Ir",
+      "title": "Los cangrejos es la forma definitiva de la Vida, ¿Pero, Porque?",
+      "description": "Por siglos, la biología evolutiva ha intentado descifrar un fenómeno curioso que moldean a la diversidad de la vida. Este fenómeno es la carcinización (El diseño del cangrejo es el diseño biológico mas perfecto y repetidos de la naturaleza)",
+      "url": "https://builder.aws.com/content/3KqvP2JXnLH7rSbp67TgGtoD4Ir",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KqxTG7wpNPnKkhJYDLUvE8lYAt/imag.webp",
+      "authorName": "Marco Alejandro Lopez Velasquez",
+      "authorAlias": "kiris54",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KewsbX1HgeLsNm6DCs2CdjI7ET.webp",
+      "location": "BO",
+      "lat": -17.0568696,
+      "lng": -64.9912286,
+      "tags": [
+        "lifecycle",
+        "ai"
+      ],
+      "publishedAt": "2026-10-18T04:50:01.886Z",
+      "likesCount": 7,
+      "commentsCount": 6
+    },
+    {
+      "id": "/content/3KqvQbnoPtzp1lizxt5JZMpaUEx",
+      "title": "Amazon Bedrock RAG vs Fine-Tuning: Which Should You Use?",
+      "description": "Compare RAG and fine-tuning in Amazon Bedrock using a policy assistant example, with practical checks for retrieval, evaluation, and data freshness.",
+      "url": "https://builder.aws.com/content/3KqvQbnoPtzp1lizxt5JZMpaUEx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Kqw1QMOpVDEiPd2dEh2mX5ejD3/RAG-.webp",
+      "authorName": "Anuvik Thota",
+      "authorAlias": "anuvikt01",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3K79SYPvzeQSav3j7ooWD19IVQv.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [
+        "amazon-bedrock",
+        "agentic-ai",
+        "rag",
+        "machine-learning"
+      ],
+      "publishedAt": "2026-10-18T04:40:54.124Z",
+      "likesCount": 7,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3KlMvYPW3HNDcXJTkdcWfqQ6jtf",
+      "title": "🇵🇪 De Perú a Chile: Nuestra participación como speakers en el AWS Student Community Day Chile 2026 🇨🇱",
+      "description": "Desde Perú hasta Santiago de Chile, compartiremos nuestra pasión por la tecnología en el AWS Student Community Day Chile 2026. Una oportunidad para llevar nuestros conocimientos sobre DevOps, colaboración y trazabilidad del código a la comunidad tecnológica internacional.",
+      "url": "https://builder.aws.com/content/3KlMvYPW3HNDcXJTkdcWfqQ6jtf",
+      "imageUrl": "",
+      "authorName": "Salvador Aldair Quispe Cardenas",
+      "authorAlias": "salvador20",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3K25IUDORcpqh2bWHXFSe5e5o2Y.webp",
+      "location": "PE",
+      "lat": -6.8699697,
+      "lng": -75.0458515,
+      "tags": [],
+      "publishedAt": "2026-10-18T04:38:46.162Z",
+      "likesCount": 5,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3KqvKEaFRokXJAUaaC8kIANdKse",
+      "title": "From Vulnerability Scanning to AI-Powered Penetration Testing: Inside AWS Continuum",
+      "description": "Explore how AI-powered penetration testing is changing cloud application security. Discover how AWS Continuum helps developers investigate vulnerabilities, validate potential attack paths, and integrate security testing into software delivery workflows. Learn about the opportunities, limitations, and best practices for building more secure cloud-native applications.",
+      "url": "https://builder.aws.com/content/3KqvKEaFRokXJAUaaC8kIANdKse",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KqvwrBThLvrHV1G8XxhdsZTNjR/AWS-.webp",
+      "authorName": "Ishwarya RV",
+      "authorAlias": "ishu957",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JpEoV3o2KpceQDCZ6lZeNHFtVZ.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "cybersecurity",
+        "ci-cd",
+        "application-security",
+        "generative-ai",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-10-18T04:36:19.740Z",
+      "likesCount": 4,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3Kquf0Q1etzLyC01V3z6NjRo50p",
+      "title": "Understanding Serverless Computing on AWS: A Beginner's Guide",
+      "description": "An introductory guide to serverless concepts on AWS, including services like AWS Lambda and their key benefits over traditional infrastructure.",
+      "url": "https://builder.aws.com/content/3Kquf0Q1etzLyC01V3z6NjRo50p",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KqvFlu4QDthJ6m6UlMzCbGfxdb/2171.webp",
+      "authorName": "Krishna Malakar",
+      "authorAlias": "krishnamalakar05",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JfndXU5xwPUkG0uzgpgSCBhe1z.webp",
+      "location": "Madhya Pradesh, IN",
+      "lat": 23.8143419,
+      "lng": 77.5340719,
+      "tags": [
+        "ai"
+      ],
+      "publishedAt": "2026-10-18T04:30:28.298Z",
+      "likesCount": 6,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3KqumRdYi8yczoCDMqdB2wUOtJt",
+      "title": "Article: Why Every Developer Should Learn Amazon S3",
+      "description": "This article explores Amazon S3 and why it is an important AWS service for developers.",
+      "url": "https://builder.aws.com/content/3KqumRdYi8yczoCDMqdB2wUOtJt",
+      "imageUrl": "",
+      "authorName": "ayushi garg",
+      "authorAlias": "ayushigarg2346",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IgTFh0U9ud3BzQi8jrLG769644.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-cloud9",
+        "cloud-concepts",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-10-18T04:27:44.171Z",
+      "likesCount": 4,
+      "commentsCount": 3
+    }
+  ],
+  "trending": [
+    {
+      "id": "/content/3KlPXlX5Ogm1jRH3fVDPcjBirjU",
+      "title": "Why CodeBuild Didn't Work Out for Self-Hosted GitHub Actions Runners at Scale",
+      "description": "CodeBuild looked like the obvious managed choice for self-hosted GitHub Actions runners. At scale it did not hold up: slow starts, instance limits, webhook quotas, queue times and pricing.",
+      "url": "https://builder.aws.com/content/3KlPXlX5Ogm1jRH3fVDPcjBirjU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KlS1GN1f4vNQsuAtfg9ACzOkrH/aws-.webp",
+      "authorName": "Philipp Garbe",
+      "authorAlias": "pgarbe",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xpdbFas1bD6DeGQrhmky1wv35r.webp",
+      "location": "Bavaria, DE",
+      "lat": 48.9467562,
+      "lng": 11.4038717,
+      "tags": [
+        "aws-codebuild",
+        "github"
+      ],
+      "publishedAt": "2026-10-16T06:02:14.864Z",
+      "likesCount": 963,
+      "commentsCount": 807
+    },
+    {
+      "id": "/content/3KjqYhmc8dD3n0pvNn0jOYtxq8z",
+      "title": "Terms & Conditions: What repeated decision would you hand to an agent?",
+      "description": "Official terms for the weekend challenge running October 16 - 19.",
+      "url": "https://builder.aws.com/content/3KjqYhmc8dD3n0pvNn0jOYtxq8z",
+      "imageUrl": "",
+      "authorName": "Ben Fowler",
+      "authorAlias": "benfowleraws",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
+      "location": "OR, US",
+      "lat": 43.9792797,
+      "lng": -120.737257,
+      "tags": [],
+      "publishedAt": "2026-10-15T16:33:07.508Z",
+      "likesCount": 1596,
+      "commentsCount": 1270
     },
     {
       "id": "/content/3Ko26QSMcGkZhGFcYaBnRNOKNYz",
-      "title": "El 20% del examen AWS Certified AI Practitioner (AIF-001) no es sobre IA: Es sobre Gobernanza y Observabilidad",
+      "title": "El 20% del examen AWS Certified AI Practitioner (AIF-C01) no es sobre IA: Es sobre Gobernanza y Observabilidad",
       "description": "Por qué saber sobre redes neuronales no es suficiente si no sabes auditar, monitorear y gestionar la infraestructura que sostiene tus modelos en producción.",
       "url": "https://builder.aws.com/content/3Ko26QSMcGkZhGFcYaBnRNOKNYz",
       "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ko2Z0ucS96SqTN1kFL4avhaKcL/Gemin.webp",
@@ -106,131 +273,8 @@
         "amazon-sagemaker"
       ],
       "publishedAt": "2026-10-17T04:01:31.739Z",
-      "likesCount": 18,
-      "commentsCount": 10
-    },
-    {
-      "id": "/content/3Ko1gOULKVxPjsNlg8uwukJElVj",
-      "title": "AWS Backup: 6 Habits That Make Restores Boring",
-      "description": "Nobody remembers the backup that worked — they remember the restore that didn't. Here are six habits I follow with AWS Backup so a restore is just another Tuesday, not a fire drill.",
-      "url": "https://builder.aws.com/content/3Ko1gOULKVxPjsNlg8uwukJElVj",
-      "imageUrl": "",
-      "authorName": "Satyam Raj",
-      "authorAlias": "satyamraj3",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ItluJcE6Nv2VxvBnnCGuXBuZn9.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-backup",
-        "backup"
-      ],
-      "publishedAt": "2026-10-17T03:54:44.751Z",
-      "likesCount": 10,
-      "commentsCount": 14
-    },
-    {
-      "id": "/content/3KnzM0seiWIa55M2qP21xsPz1kI",
-      "title": "Seguridad en AWS: GuardDuty, Detective y Security Hub",
-      "description": "La seguridad como un atributo de calidad, no un paso opcional en nuestra infraestructura...",
-      "url": "https://builder.aws.com/content/3KnzM0seiWIa55M2qP21xsPz1kI",
-      "imageUrl": "",
-      "authorName": "Andrés",
-      "authorAlias": "andres1103",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IhhRsM7FQSnnaO5wShVk42OQrD.webp",
-      "location": "CO",
-      "lat": 4.099917,
-      "lng": -72.9088133,
-      "tags": [],
-      "publishedAt": "2026-10-17T03:36:54.836Z",
-      "likesCount": 9,
-      "commentsCount": 8
-    },
-    {
-      "id": "/content/3Knxg4jdGY7LvOguKpVEnv0DfIC",
-      "title": "Latest AWS Service Updates: Transforming Serverless Compute for Builders",
-      "description": "A quick roundup of the most significant recent AWS Lambda announcements, including new execution models like Web Functions, MicroVMs, and major performance enhancements for container workloads.",
-      "url": "https://builder.aws.com/content/3Knxg4jdGY7LvOguKpVEnv0DfIC",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KnxznRCvi1RGXu6vxK0GL2y84V/Gemi.webp",
-      "authorName": "Muzammal Ali",
-      "authorAlias": "muzammal2013",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IBitY4eqKd53DGtFiZnAU58QsP.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
-      "tags": [
-        "aws-lambda",
-        "containers",
-        "newsletter"
-      ],
-      "publishedAt": "2026-10-17T03:25:24.522Z",
-      "likesCount": 7,
-      "commentsCount": 12
-    },
-    {
-      "id": "/content/3KnwrJEUVc5JMEEx6eg9pEWP60i",
-      "title": "AWS Amplify: Building and Deploying Full-Stack Applications",
-      "description": "Explore AWS Amplify and learn how it helps developers build, connect, and deploy web and mobile applications using AWS cloud services.",
-      "url": "https://builder.aws.com/content/3KnwrJEUVc5JMEEx6eg9pEWP60i",
-      "imageUrl": "",
-      "authorName": "Palak Garg",
-      "authorAlias": "palakgarg",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3HfOwjtW7J7v1yOeCwq0CHm8vhW.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-amplify",
-        "aws-student-builders-groups",
-        "students",
-        "student-builders",
-        "learn"
-      ],
-      "publishedAt": "2026-10-17T03:16:02.920Z",
-      "likesCount": 20,
-      "commentsCount": 13
-    },
-    {
-      "id": "/content/3KnuuqCP6buhRUQYQDcF6aZXcWi",
-      "title": "7 Common AWS Cloud Security Misconfigurations and How to Prevent Them",
-      "description": "Learn how small cloud configuration mistakes can create major security risks. This practical guide covers IAM permissions, Amazon S3 exposure, network access, credentials, logging, encryption, and threat detection—with actionable steps to help you build a more secure AWS environment.",
-      "url": "https://builder.aws.com/content/3KnuuqCP6buhRUQYQDcF6aZXcWi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KnvbNxKz4gazzGyJhsb2oW5pUb/0a66.webp",
-      "authorName": "Jeetchocha",
-      "authorAlias": "chochajeet",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KfD51mttYl2qMevUnG5lIJDI1P.webp",
-      "location": "Gujarat, IN",
-      "lat": 22.3850051,
-      "lng": 71.745261,
-      "tags": [
-        "aws-community-day",
-        "aws-builders",
-        "serverless",
-        "amazon-s3",
-        "devops"
-      ],
-      "publishedAt": "2026-10-17T03:08:05.550Z",
-      "likesCount": 10,
-      "commentsCount": 5
-    }
-  ],
-  "trending": [
-    {
-      "id": "/content/3KjqYhmc8dD3n0pvNn0jOYtxq8z",
-      "title": "Terms & Conditions: What repeated decision would you hand to an agent?",
-      "description": "Official terms for the weekend challenge running October 16 - 19.",
-      "url": "https://builder.aws.com/content/3KjqYhmc8dD3n0pvNn0jOYtxq8z",
-      "imageUrl": "",
-      "authorName": "Ben Fowler",
-      "authorAlias": "benfowleraws",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/32vefVeKX0eeUgdH0NLwJ1FeBdz.webp",
-      "location": "OR, US",
-      "lat": 43.9792797,
-      "lng": -120.737257,
-      "tags": [],
-      "publishedAt": "2026-10-15T16:33:07.508Z",
-      "likesCount": 1244,
-      "commentsCount": 989
+      "likesCount": 211,
+      "commentsCount": 157
     },
     {
       "id": "/content/3KgCcMfiqJA5UAJpuQsTImwXnut",
@@ -251,8 +295,31 @@
         "ai-agents"
       ],
       "publishedAt": "2026-10-14T14:24:11.095Z",
-      "likesCount": 1550,
-      "commentsCount": 1357
+      "likesCount": 1641,
+      "commentsCount": 1415
+    },
+    {
+      "id": "/content/3KoeaHI0OJDIT4hxNZwzGFYPjAQ",
+      "title": "AWS Detection Engineering: Build Smarter Threat Detection With GuardDuty, CloudTrail & Security Lake",
+      "description": "Learn how to turn AWS security logs into actionable threat detections using real-world architecture patterns, IAM monitoring, automated alerting, and GuardDuty correlation. Explore practical Terraform, Athena SQL, and incident-response examples to build a more reliable cloud security detection pipeline.",
+      "url": "https://builder.aws.com/content/3KoeaHI0OJDIT4hxNZwzGFYPjAQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KogoMs8Ncy0dViMw18U37ahHcq/AWS-.webp",
+      "authorName": "Yashvi Kothari",
+      "authorAlias": "yashvikothari",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362mIfy2uQdL4eBeAhYPGwzv22d.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-cloudtrail",
+        "threat-detection",
+        "cloud-security",
+        "cybersecurity",
+        "security"
+      ],
+      "publishedAt": "2026-10-17T09:53:37.577Z",
+      "likesCount": 80,
+      "commentsCount": 65
     },
     {
       "id": "/content/3KijTQzrMre2aaRuj6Ea4j8BGXG",
@@ -273,28 +340,8 @@
         "ai-assisted"
       ],
       "publishedAt": "2026-10-15T07:00:17.560Z",
-      "likesCount": 494,
-      "commentsCount": 417
-    },
-    {
-      "id": "/content/3KlPXlX5Ogm1jRH3fVDPcjBirjU",
-      "title": "Why CodeBuild Didn't Work Out for Self-Hosted GitHub Actions Runners at Scale",
-      "description": "CodeBuild looked like the obvious managed choice for self-hosted GitHub Actions runners. At scale it did not hold up: slow starts, instance limits, webhook quotas, queue times and pricing.",
-      "url": "https://builder.aws.com/content/3KlPXlX5Ogm1jRH3fVDPcjBirjU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KlS1GN1f4vNQsuAtfg9ACzOkrH/aws-.webp",
-      "authorName": "Philipp Garbe",
-      "authorAlias": "pgarbe",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xpdbFas1bD6DeGQrhmky1wv35r.webp",
-      "location": "Bavaria, DE",
-      "lat": 48.9467562,
-      "lng": 11.4038717,
-      "tags": [
-        "aws-codebuild",
-        "github"
-      ],
-      "publishedAt": "2026-10-16T06:02:14.864Z",
-      "likesCount": 38,
-      "commentsCount": 24
+      "likesCount": 627,
+      "commentsCount": 503
     },
     {
       "id": "/content/3Kmq7qFIfnOixHgPThNNxexmosN",
@@ -314,8 +361,31 @@
         "serverless"
       ],
       "publishedAt": "2026-10-16T19:39:02.893Z",
-      "likesCount": 30,
-      "commentsCount": 19
+      "likesCount": 104,
+      "commentsCount": 61
+    },
+    {
+      "id": "/content/3KnCIDWgUFcZgbQWZ4zcdgd74gq",
+      "title": "A Theory Board for Book Fans",
+      "description": "I wanted to build something I actually cared about. So I built Theory Trove, an anonymous fan theory board for the Maasverse.",
+      "url": "https://builder.aws.com/content/3KnCIDWgUFcZgbQWZ4zcdgd74gq",
+      "imageUrl": "",
+      "authorName": "Jen Magruder",
+      "authorAlias": "stratajen",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ar8NhlGLFcYCYlmv3TMSIk2l1A.webp",
+      "location": "VA, US",
+      "lat": 37.1232245,
+      "lng": -78.4927721,
+      "tags": [
+        "application-load-balancer",
+        "amazon-ecs",
+        "aws-fargate",
+        "amazon-dynamodb",
+        "amazon-sns"
+      ],
+      "publishedAt": "2026-10-16T20:55:22.884Z",
+      "likesCount": 52,
+      "commentsCount": 34
     },
     {
       "id": "/content/3KapoPCPUzMUYbNYn6Ui7cbibES",
@@ -337,31 +407,8 @@
         "aws-heroes"
       ],
       "publishedAt": "2026-10-12T13:04:59.475Z",
-      "likesCount": 2017,
-      "commentsCount": 1714
-    },
-    {
-      "id": "/content/3Ko26QSMcGkZhGFcYaBnRNOKNYz",
-      "title": "El 20% del examen AWS Certified AI Practitioner (AIF-001) no es sobre IA: Es sobre Gobernanza y Observabilidad",
-      "description": "Por qué saber sobre redes neuronales no es suficiente si no sabes auditar, monitorear y gestionar la infraestructura que sostiene tus modelos en producción.",
-      "url": "https://builder.aws.com/content/3Ko26QSMcGkZhGFcYaBnRNOKNYz",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3Ko2Z0ucS96SqTN1kFL4avhaKcL/Gemin.webp",
-      "authorName": "Jhonnatan GIl",
-      "authorAlias": "jthan24",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKa9YPeYMUJR0GBhXpvgaQgYP.webp",
-      "location": "CO",
-      "lat": 4.099917,
-      "lng": -72.9088133,
-      "tags": [
-        "ai",
-        "aws-certification",
-        "machine-learning",
-        "cloud-security",
-        "amazon-sagemaker"
-      ],
-      "publishedAt": "2026-10-17T04:01:31.739Z",
-      "likesCount": 18,
-      "commentsCount": 10
+      "likesCount": 2028,
+      "commentsCount": 1725
     },
     {
       "id": "/content/3Kjo7HGBJp4BthdBjpPFLNLauw0",
@@ -383,52 +430,8 @@
         "amazon-sns"
       ],
       "publishedAt": "2026-10-15T19:13:09.676Z",
-      "likesCount": 51,
-      "commentsCount": 39
-    },
-    {
-      "id": "/content/3KiUQrzQzDenesxntPtRcGIIPys",
-      "title": "Jev 1.14.0 vs 1.13.0 on Kyoto-ben, measured",
-      "description": "Jev 1.14.0 is out in preview and jev-latest moves to it in a week. I re-ran my Kyoto-dialect test set on both versions before the switch.",
-      "url": "https://builder.aws.com/content/3KiUQrzQzDenesxntPtRcGIIPys",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KiUreRJT8R9mFHkRermaH3c066/thum.webp",
-      "authorName": "Yuuki Yamashita",
-      "authorAlias": "yama3133",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3HQiitOjH5VnlPOtySV3lYZlSeu.webp",
-      "location": "JP",
-      "lat": 36.5748441,
-      "lng": 139.2394179,
-      "tags": [
-        "agentic-ai",
-        "iam",
-        "amazon-bedrock"
-      ],
-      "publishedAt": "2026-10-15T04:56:09.704Z",
-      "likesCount": 100,
-      "commentsCount": 76
-    },
-    {
-      "id": "/content/3KaWtmNdVddVKKlLty4PatcWIcx",
-      "title": "Three Lessons from Kiro Nights Nairobi - Build, Break and Deploy with Kiro",
-      "description": "What creating a culture of innovation through the AWS AI/ML User Group Kenya taught us after organizing Kiro Nights Nairobi to Build, Break and Deploy with Kiro. Three lessons from a 2-hour buildathon using Kiro and deployment on AWS. ",
-      "url": "https://builder.aws.com/content/3KaWtmNdVddVKKlLty4PatcWIcx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3KaXgq4zlAYwECC4eYFjUIwPtog/2026.webp",
-      "authorName": "Kevin Tuei",
-      "authorAlias": "kevintuei",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2dlOScWFRE0SsZGrNsfjz7xvS1G.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "agentic-ide",
-        "agentic-ai",
-        "kiro",
-        "aws-user-groups",
-        "ai"
-      ],
-      "publishedAt": "2026-10-12T10:03:23.313Z",
-      "likesCount": 1241,
-      "commentsCount": 986
+      "likesCount": 94,
+      "commentsCount": 71
     }
   ]
 }
