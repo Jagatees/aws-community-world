@@ -12,6 +12,8 @@
     "update:community-data": "node scripts/update-community-data.mjs && node scripts/enrich-builder-profiles.mjs && node scripts/build-community-builder-summary.mjs && node scripts/update-growth-history.mjs",
     "update:builder-profiles": "node scripts/enrich-builder-profiles.mjs",
     "update:news": "node scripts/update-builder-news.mjs",
+    "update:builder-events": "node scripts/update-builder-events.mjs",
+    "update:workshops": "node scripts/update-workshops.mjs",
     "update:kiro-events": "node scripts/update-kiro-events.mjs && node scripts/update-growth-history.mjs",
     "update:aws-ambassadors": "node scripts/update-aws-ambassadors.mjs",
     "update:golden-jackets": "node scripts/update-golden-jackets.mjs",

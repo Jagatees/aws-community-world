@@ -1,6 +1,7 @@
 import { useRef, useLayoutEffect, useEffect } from 'react';
 import CountryDropdown from './CountryDropdown';
 import RegionDropdown from './RegionDropdown';
+import { MagnifyingGlassIcon, XIcon } from '@phosphor-icons/react';
 
 /** @typedef {import('../types.js').CategoryKey} CategoryKey */
 
@@ -15,8 +16,8 @@ const COMMUNITY_TABS = [
 ];
 
 const EVENT_TABS = [
+  { label: 'Builder Center Events', key: 'builder-events' },
   { label: 'Kiro Events', key: 'kiro-events' },
-  { label: 'Community Days', key: 'community-days' },
   { label: 'Builder Lofts', key: 'builder-lofts' },
   { label: 'News', key: 'news' },
 ];
@@ -30,6 +31,7 @@ const CATEGORY_ACCENTS = {
   'aws-ambassadors': '#2D72D2',
   'golden-jackets': '#D4AF37',
   'kiro-events': '#7B61FF',
+  'builder-events': '#32C9D3',
   'community-days': '#FF9900',
   'builder-lofts': '#FFB454',
   news: '#FF9900',
@@ -62,6 +64,8 @@ export default function TabNav({
   selectedCountries,
   onCountryChange,
   section = 'community',
+  searchQuery = '',
+  onSearchChange,
 }) {
   const surface = darkMode ? 'rgba(27, 40, 54, 0.62)' : 'rgba(255, 255, 255, 0.72)';
   const border = darkMode ? 'rgba(45, 63, 80, 0.7)' : 'rgba(208, 220, 232, 0.92)';
@@ -134,7 +138,7 @@ export default function TabNav({
       <nav
         ref={navRef}
         role="tablist"
-        aria-label="Community categories"
+        aria-label={section === 'events' ? 'Event categories' : 'Community categories'}
         className="category-tab-list"
         style={{ display: 'flex', alignItems: 'center', overflowX: 'auto', scrollbarWidth: 'none', position: 'relative' }}
       >
@@ -222,6 +226,25 @@ export default function TabNav({
               />
             )}
         </div>
+      )}
+
+      {!['news', 'builder-events', 'kiro-events'].includes(activeCategory) && (
+        <label className="directory-search" style={{ color: inactiveText }}>
+          <MagnifyingGlassIcon size={16} weight="bold" aria-hidden="true" />
+          <span className="sr-only">Search this directory</span>
+          <input
+            type="search"
+            value={searchQuery}
+            onChange={(event) => onSearchChange?.(event.target.value)}
+            placeholder="Search people, groups or places"
+            aria-label={`Search ${activeCategory.replaceAll('-', ' ')}`}
+          />
+          {searchQuery && (
+            <button type="button" onClick={() => onSearchChange?.('')} aria-label="Clear search">
+              <XIcon size={14} weight="bold" aria-hidden="true" />
+            </button>
+          )}
+        </label>
       )}
     </div>
   );

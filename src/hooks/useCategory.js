@@ -11,6 +11,7 @@ const DATA_LOADERS = {
   'cloud-clubs': () => import('../data/cloud-clubs.json'),
   'kiro-ambassadors': () => import('../data/kiro-ambassadors.json'),
   'kiro-events': () => import('../data/kiro-events.json'),
+  'builder-events': () => import('../data/builder-events.json'),
   'community-days': () => import('../data/community-days.json'),
   'builder-lofts': () => import('../data/builder-lofts.json'),
   'aws-ambassadors': () => import('../data/aws-ambassadors.json'),
@@ -51,6 +52,13 @@ function normalizeMembers(raw, category) {
     role: item.role ?? '',
     ctaLabel: item.ctaLabel ?? '',
     country: item.country ?? '',
+    ...(category === 'builder-events' ? {
+      city: item.city, countryCode: item.countryCode, eventFormat: item.eventFormat,
+      timeZone: item.timeZone, tags: item.tags ?? [], access: item.access,
+      coordinatePrecision: item.coordinatePrecision, coordinateSource: item.coordinateSource,
+      sourceUrl: item.sourceUrl, sourceLabel: item.sourceLabel, verifiedAt: item.verifiedAt,
+      registrationCount: item.registrationCount, organizerAlias: item.organizerAlias,
+    } : {}),
     ...(['kiro-ambassadors', 'aws-ambassadors', 'golden-jackets'].includes(category) ? {
       sourceUrl: item.sourceUrl,
       sourceLabel: item.sourceLabel,

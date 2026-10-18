@@ -1,11 +1,16 @@
 import assert from 'node:assert/strict';
-import { mkdir } from 'node:fs/promises';
+import { mkdir, readFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
+import { matchesEventStatus } from '../src/utils/upcomingEvents.js';
 
 const baseUrl = process.env.COMMUNITY_TEST_URL || 'http://127.0.0.1:4173';
 const browser = await chromium.launch({ headless: true });
 await mkdir('tmp/event-status-qa', { recursive: true });
 const errors = [];
+const kiroEvents = JSON.parse(await readFile('src/data/kiro-events.json', 'utf8'));
+const kiroUpcoming = kiroEvents.filter(event => matchesEventStatus(event, 'upcoming', new Date('2026-09-11T04:00:00Z'), 'Asia/Singapore')).length;
+const kiroEnded = kiroEvents.filter(event => matchesEventStatus(event, 'ended', new Date('2026-09-11T04:00:00Z'), 'Asia/Singapore')).length;
+const entriesLabel = count => `${count} ${count === 1 ? 'entry' : 'entries'}`;
 try {
   for (const mobile of [false, true]) {
     const page = await browser.newPage({
@@ -59,10 +64,10 @@ try {
     }
 
     await page.goto(`${baseUrl}/?tab=kiro-events&view=list&eventStatus=ended`);
-    await filter.getByRole('button', { name: 'All 4', exact: true }).waitFor();
-    await page.getByText('No events match these filters.', { exact: true }).waitFor();
-    await filter.getByRole('button', { name: 'Upcoming 4', exact: true }).click();
-    await page.getByText('4 entries', { exact: true }).waitFor();
+    await filter.getByRole('button', { name: `All ${kiroEvents.length}`, exact: true }).waitFor();
+    await page.getByText(kiroEnded ? entriesLabel(kiroEnded) : 'No events match these filters.', { exact: true }).waitFor();
+    await filter.getByRole('button', { name: `Upcoming ${kiroUpcoming}`, exact: true }).click();
+    await page.getByText(kiroUpcoming ? entriesLabel(kiroUpcoming) : 'No events match these filters.', { exact: true }).waitFor();
     await page.goto(`${baseUrl}/?tab=builder-lofts`);
     assert.equal(await filter.count(), 0);
     await page.close();

@@ -1,0 +1,83 @@
+import assert from 'node:assert/strict';
+import { readFile, mkdir } from 'node:fs/promises';
+import { chromium } from 'playwright';
+
+const base = process.env.COMMUNITY_TEST_URL || 'http://127.0.0.1:5175';
+const catalog = JSON.parse(await readFile('src/data/workshops.json', 'utf8'));
+const bedrock = catalog.services.find(service => service.name === 'Amazon Bedrock');
+const workshops = catalog.workshops.filter(workshop => workshop.serviceIds.includes(bedrock.id));
+const zero = catalog.services.find(service => !catalog.workshops.some(workshop => workshop.serviceIds.includes(service.id)));
+const browser = await chromium.launch();
+const errors = [];
+await mkdir('tmp/workshops/qa', { recursive: true });
+try {
+  for (const mobile of [false, true]) {
+    const page = await browser.newPage({ viewport: mobile ? { width: 390, height: 844 } : { width: 1440, height: 1000 }, isMobile: mobile, hasTouch: mobile, reducedMotion: 'reduce' });
+    page.setDefaultTimeout(10000);
+    page.on('pageerror', error => errors.push(error.message));
+    await page.goto(`${base}/?tab=kiro-events&view=list`);
+    await page.getByRole('button', { name: 'Choose AWS Globe content' }).click();
+    await page.getByRole('menuitemradio', { name: /^Workshops/ }).click();
+    await page.getByRole('heading', { name: 'Explore AWS services', exact: true }).waitFor();
+    assert.equal(new URL(page.url()).searchParams.get('view'), 'workshops');
+    assert.equal(await page.locator('.workshop-service').count(), 24);
+    assert.equal(await page.getByRole('region', { name: 'Kiro event filters' }).count(), 0);
+    await page.screenshot({ path: `tmp/workshops/qa/${mobile ? 'mobile' : 'desktop'}-services.png` });
+    await page.getByRole('button', { name: 'Show more services', exact: true }).click();
+    assert.equal(await page.locator('.workshop-service').count(), 48);
+    await page.getByRole('textbox', { name: 'Search AWS services' }).fill('bedrock');
+    await page.getByRole('button', { name: `Amazon Bedrock, ${workshops.length} workshops`, exact: true }).click();
+    await page.getByRole('heading', { name: 'Amazon Bedrock', exact: true }).waitFor();
+    assert.equal(new URL(page.url()).searchParams.get('service'), bedrock.id);
+    assert.equal(await page.getByRole('status').textContent(), `${workshops.length} workshops`);
+    assert.equal(await page.getByRole('textbox', { name: 'Search workshops' }).inputValue(), '');
+    const level = workshops.find(workshop => workshop.level).level;
+    await page.getByLabel('Level', { exact: true }).selectOption(level);
+    const expected = workshops.filter(workshop => workshop.level === level);
+    assert.equal(await page.locator('.workshop-result').count(), Math.min(24, expected.length));
+    await page.reload();
+    await page.getByRole('heading', { name: 'Amazon Bedrock', exact: true }).waitFor();
+    assert.equal(await page.getByLabel('Level', { exact: true }).inputValue(), level);
+    await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
+    assert.equal(await page.getByRole('status').textContent(), `${workshops.length} workshops`);
+    await page.getByRole('textbox', { name: 'Search workshops' }).fill('no-such-workshop-xyz');
+    await page.getByRole('heading', { name: 'No workshops match these filters' }).waitFor();
+    await page.getByRole('button', { name: 'Clear search' }).click();
+    await page.getByRole('button', { name: 'Switch to light theme' }).click();
+    await page.screenshot({ path: `tmp/workshops/qa/${mobile ? 'mobile' : 'desktop'}-results-light.png` });
+    assert.equal(await page.locator('.workshops-page').getAttribute('data-theme'), 'light');
+    for (const href of await page.locator('.workshop-open').evaluateAll(links => links.map(link => link.href))) assert.match(new URL(href).hostname, /(^|\.)workshops\.aws$/);
+    await page.getByRole('button', { name: 'All services', exact: true }).click();
+    await page.getByRole('heading', { name: 'Explore AWS services', exact: true }).waitFor();
+    await page.goBack();
+    await page.getByRole('heading', { name: 'Amazon Bedrock', exact: true }).waitFor();
+    await page.goto(`${base}/?view=workshops&service=${zero.id}`);
+    await page.getByRole('heading', { name: `No workshops for ${zero.name} yet`, exact: true }).waitFor();
+    await page.getByRole('button', { name: 'Browse all workshops' }).click();
+    assert.equal(await page.getByRole('status').textContent(), `${catalog.workshops.length} workshops`);
+    await page.getByLabel('Language', { exact: true }).selectOption('ja');
+    assert.equal(await page.getByRole('status').textContent(), `${catalog.workshops.filter(workshop => workshop.languages.includes('ja')).length} workshops`);
+    await page.getByLabel('Duration', { exact: true }).selectOption('short');
+    assert.equal(await page.locator('.workshop-result').count(), catalog.workshops.filter(workshop => workshop.languages.includes('ja') && workshop.durationHours > 0 && workshop.durationHours <= 1).length);
+    await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
+    await page.getByLabel('Sort by', { exact: true }).selectOption('duration');
+    assert.match(await page.locator('.workshop-result').first().innerText(), /1 hour/);
+    if (mobile) {
+      await page.setViewportSize({ width: 320, height: 568 });
+      assert.equal(await page.locator('.workshops-page').evaluate(el => el.scrollWidth <= el.clientWidth), true);
+      await page.getByRole('button', { name: 'Choose AWS Globe content' }).click();
+      const menu = await page.getByRole('menu', { name: 'AWS Globe content' }).boundingBox();
+      assert.ok(menu.x >= 0 && menu.x + menu.width <= 320 && menu.y + menu.height <= 568);
+      await page.keyboard.press('Escape');
+      await page.setViewportSize({ width: 1024, height: 768 });
+      assert.equal(new URL(page.url()).searchParams.get('view'), 'workshops');
+    }
+    await page.getByRole('button', { name: 'Choose AWS Globe content' }).click();
+    await page.getByRole('menuitemradio', { name: /^Events / }).click();
+    await page.getByRole('region', { name: 'Builder Center event filters' }).waitFor();
+    assert.equal(new URL(page.url()).searchParams.get('service'), null);
+    await page.close();
+  }
+  assert.deepEqual(errors, []);
+  console.log('Workshop UI passed: desktop/mobile, menu, search, service navigation, filters, links, reload, history, themes, pagination, empty states and event navigation.');
+} finally { await browser.close(); }

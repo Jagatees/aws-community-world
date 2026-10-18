@@ -11,6 +11,7 @@ const CATEGORY_COLORS = {
   'user-groups': '#00A1C9',
   'cloud-clubs': '#BF0816',
   'kiro-events': '#7B61FF',
+  'builder-events': '#32C9D3',
   'community-days': '#FF9900',
   'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',

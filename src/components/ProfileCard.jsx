@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import AddToCalendar from './AddToCalendar';
 import NewMemberBadge from './NewMemberBadge';
 import { getMemberBadgeLabel } from '../utils/memberMarkers';
+import './ProfileCard.css';
 
 const CATEGORY_LABELS = {
   heroes: 'Hero',
@@ -12,6 +13,8 @@ const CATEGORY_LABELS = {
   'aws-ambassadors': 'AWS Ambassador',
   'golden-jackets': 'Golden Jacket recipient',
   'kiro-events': 'Kiro Event',
+  'builder-events': 'Builder Center Event',
+  'community-days': 'Community Day',
 };
 
 const SOCIAL_LINK_META = [
@@ -425,11 +428,24 @@ function CloudClubSingleView({ member, darkMode, url }) {
   );
 }
 
+function EventDescription({ description, darkMode }) {
+  const [expanded, setExpanded] = useState(false);
+  const descriptionId = useId();
+  const text = description.trim();
+  const hasMore = text.length > 320;
+  const preview = text.slice(0, 320).replace(/\s+\S*$/, '').trimEnd();
+
+  return <div className="profile-event-description" style={{ color: darkMode ? '#B1C1CE' : '#4c657b' }}>
+    <p id={descriptionId}>{hasMore && !expanded ? `${preview}…` : text}</p>
+    {hasMore && <button type="button" className="profile-description-toggle" aria-expanded={expanded} aria-controls={descriptionId} onClick={() => setExpanded(value => !value)}>{expanded ? 'Show less' : 'Show more'}</button>}
+  </div>;
+}
+
 function SingleMemberView({ member, darkMode }) {
   const nameColor = darkMode ? '#FFFFFF' : '#0F1923';
   const mutedColor = darkMode ? '#8B9BAA' : '#5a7a99';
   const isGroup = member.category === 'user-groups' || member.category === 'cloud-clubs';
-  const isEvent = member.category === 'kiro-events';
+  const isEvent = ['kiro-events', 'builder-events', 'community-days'].includes(member.category);
   const isHero = member.category === 'heroes';
   const label = member.ctaLabel || (isEvent ? 'Join Event' : isGroup ? 'Join' : isHero ? 'View Profile' : 'Follow');
   const url = member.profileUrl || member.joinUrl;
@@ -473,9 +489,9 @@ function SingleMemberView({ member, darkMode }) {
       {['aws-ambassadors', 'golden-jackets'].includes(member.category) && member.description && (
         <p className="text-center text-sm leading-6" style={{ color: mutedColor }}>{member.description}</p>
       )}
-      {isEvent && member.eventDate && (
+      {isEvent && (member.eventDate || member.date) && (
         <p className="text-sm font-semibold" style={{ color: '#FF9900' }}>
-          {member.eventDate}
+          {member.eventDate || [member.date, member.endDate].filter(Boolean).join(' – ')}
         </p>
       )}
       {member.location && (
@@ -493,13 +509,17 @@ function SingleMemberView({ member, darkMode }) {
           {member.locationSourceUrl && member.locationSourceUrl !== member.sourceUrl && <a href={member.locationSourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Location source</a>}
         </div>
       )}
-      {isEvent && <AddToCalendar event={member} />}
-      {isEvent && member.description && (
-        <p className="max-w-sm text-center text-sm leading-6" style={{ color: mutedColor }}>
-          {member.description}
-        </p>
+      {member.category === 'builder-events' && (
+        <div className="text-center text-xs leading-5" style={{ color: mutedColor }}>
+          <p>{member.eventFormat} · {member.access}{member.tag ? ` · #${member.tag}` : ''}</p>
+          <p>{member.eventFormat === 'Online' ? 'Online event — no physical pin.' : member.coordinatePrecision === 'city' ? 'Approximate city location. Check the event page for the venue.' : member.coordinatePrecision === 'venue' ? 'Published event location.' : 'Location TBA — not placed on the globe.'}</p>
+          <p>AWS Builder Center{member.verifiedAt && ` · Updated ${new Intl.DateTimeFormat('en-SG', { dateStyle: 'medium' }).format(new Date(member.verifiedAt))}`}</p>
+        </div>
       )}
-      {url && (
+      {isEvent && member.description && (
+        <EventDescription key={`${member.id}-${member.description}`} description={member.description} darkMode={darkMode} />
+      )}
+      {!isEvent && url && (
         <a
           href={url}
           target="_blank"
@@ -626,8 +646,10 @@ function ClusterListView({ members, darkMode }) {
 export default function ProfileCard({ member, onClose, darkMode }) {
   const cardRef = useRef(null);
   const isCluster = Array.isArray(member);
+  const isEvent = !isCluster && ['builder-events', 'kiro-events', 'community-days'].includes(member.category);
+  const eventUrl = isEvent ? member.profileUrl || member.joinUrl : null;
 
-  const cardBg = darkMode ? 'rgba(27, 40, 54, 0.88)' : 'rgba(255, 255, 255, 0.94)';
+  const cardBg = darkMode ? 'rgba(27, 40, 54, 0.97)' : 'rgba(255, 255, 255, 0.97)';
   const cardBorder = darkMode ? 'rgba(45, 63, 80, 0.8)' : 'rgba(208, 220, 232, 0.95)';
 
   useEffect(() => {
@@ -669,7 +691,8 @@ export default function ProfileCard({ member, onClose, darkMode }) {
     >
       <div
         ref={cardRef}
-        className="relative w-[min(92vw,540px)] p-5"
+        className="profile-card relative w-[min(92vw,540px)]"
+        data-theme={darkMode ? 'dark' : 'light'}
         style={{
           backgroundColor: cardBg,
           border: `1px solid ${cardBorder}`,
@@ -685,9 +708,12 @@ export default function ProfileCard({ member, onClose, darkMode }) {
         aria-modal="true"
         aria-label={isCluster ? 'Cluster members' : (member.name ?? 'Member profile')}
       >
-        <button
+        <div className="profile-card-header" style={{ color: darkMode ? '#B1C1CE' : '#4c657b' }}>
+          <span>{isEvent ? 'Event details' : isCluster ? 'Selection' : 'Profile'}</span>
+          <button
+          type="button"
           onClick={onClose}
-          className="absolute right-3 top-3 text-lg leading-none transition-colors"
+          className="profile-card-close text-lg leading-none transition-colors"
           style={{ color: '#8B9BAA' }}
           onMouseEnter={(e) => {
             e.currentTarget.style.color = darkMode ? '#FFFFFF' : '#0F1923';
@@ -697,14 +723,21 @@ export default function ProfileCard({ member, onClose, darkMode }) {
           }}
           aria-label="Close"
         >
-          x
-        </button>
+          <span aria-hidden="true">×</span>
+          </button>
+        </div>
 
-        {isCluster ? (
-          <ClusterListView members={member} darkMode={darkMode} />
-        ) : (
-          <SingleMemberView member={member} darkMode={darkMode} />
-        )}
+        <div className="profile-card-body" key={isCluster ? 'cluster' : member.id}>
+          {isCluster ? (
+            <ClusterListView members={member} darkMode={darkMode} />
+          ) : (
+            <SingleMemberView member={member} darkMode={darkMode} />
+          )}
+        </div>
+        {isEvent && <div className="profile-card-actions" style={{ borderColor: cardBorder }}>
+          <AddToCalendar event={member} />
+          {eventUrl && <a href={eventUrl} target="_blank" rel="noopener noreferrer" className="profile-event-link">{member.ctaLabel || 'Join Event'} <span aria-hidden="true">↗</span></a>}
+        </div>}
       </div>
     </div>
   );

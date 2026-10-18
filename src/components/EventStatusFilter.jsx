@@ -1,9 +1,10 @@
 import './EventStatusFilter.css';
 
 const OPTIONS = [
-  { value: 'upcoming', label: 'Upcoming' },
-  { value: 'ended', label: 'Ended' },
-  { value: 'all', label: 'All' },
+  { value: 'all', label: 'All', description: 'All events' },
+  { value: 'today', label: 'Today', description: 'Scheduled for today or ongoing, in your time zone' },
+  { value: 'upcoming', label: 'Upcoming', description: 'Starting tomorrow or later, in your time zone' },
+  { value: 'ended', label: 'Ended', description: 'Events that have finished' },
 ];
 
 export default function EventStatusFilter({ value, onChange, counts, darkMode }) {
@@ -16,6 +17,7 @@ export default function EventStatusFilter({ value, onChange, counts, darkMode })
             key={option.value}
             type="button"
             aria-pressed={value === option.value}
+            title={option.description}
             onClick={() => onChange(option.value)}
           >
             {option.label}

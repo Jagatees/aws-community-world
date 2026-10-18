@@ -133,7 +133,7 @@ export default function CommunityDaysScene({
           {events.length.toLocaleString()}
         </div>
         <div className="mt-1 text-[0.68rem] font-medium" style={{ color: muted }}>
-          {eventStatus === 'all' ? 'All events' : eventStatus === 'ended' ? 'Ended events' : 'Upcoming events'}
+          {eventStatus === 'all' ? 'All events' : eventStatus === 'today' ? 'Today’s events' : eventStatus === 'ended' ? 'Ended events' : 'Upcoming events'}
           {selectedRegions.length || selectedCountries.length ? ' · filtered' : ' worldwide'}
         </div>
       </div>}

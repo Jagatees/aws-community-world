@@ -4,8 +4,12 @@ import Header from './components/Header';
 import TabNav from './components/TabNav';
 import MobileNavigation from './components/MobileNavigation';
 import EventStatusFilter from './components/EventStatusFilter';
+import BuilderEventFilters from './components/BuilderEventFilters';
+import { DEFAULT_EVENT_FILTERS, readEventFilters, matchesBuilderEventFilters, sortBuilderEvents } from './utils/builderEvents';
+import { DEFAULT_WORKSHOP_FILTERS, readWorkshopFilters, writeWorkshopParams } from './utils/workshops';
 import GlobeViewControls from './components/GlobeViewControls';
-import { matchesEventStatus } from './utils/upcomingEvents';
+import { getEventStatus, matchesEventStatus } from './utils/upcomingEvents';
+import { calendarDateKey, validCalendarMonth } from './utils/eventCalendarView';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
@@ -20,10 +24,12 @@ const ProfileCard = lazy(() => import('./components/ProfileCard'));
 const TagFilter = lazy(() => import('./components/TagFilter'));
 const KiroAvatarOverlay = lazy(() => import('./components/KiroAvatarOverlay'));
 const ListScene = lazy(() => import('./components/ListScene'));
+const EventCalendarScene = lazy(() => import('./components/EventCalendarScene'));
 const NewArrivalsPanel = lazy(() => import('./components/NewArrivalsPanel'));
 const Country3DControl = lazy(() => import('./components/Country3DControl'));
 const IconArchiveScene = lazy(() => import('./components/ExperimentalHeroDex'));
 const BuilderLoftsScene = lazy(() => import('./components/BuilderLoftsScene'));
+const WorkshopsPage = lazy(() => import('./components/WorkshopsPage'));
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -32,6 +38,7 @@ const CATEGORY_COLORS = {
   'cloud-clubs': '#BF0816',
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
+  'builder-events': '#32C9D3',
   'community-days': '#FF9900',
   'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
@@ -46,6 +53,7 @@ const CATEGORY_LABELS = {
   'cloud-clubs': 'Student Builder Groups',
   'kiro-ambassadors': 'Kiro',
   'kiro-events': 'Kiro Events',
+  'builder-events': 'Builder Center Events',
   'community-days': 'Community Days',
   'builder-lofts': 'Builder Lofts',
   'aws-ambassadors': 'Ambassadors',
@@ -63,17 +71,19 @@ const DEFAULT_ROUTE_STATE = {
   countrySpotlight: null,
   newOnly: false,
   eventStatus: 'all',
+  searchQuery: '',
 };
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
-const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'geolibre', 'icons', 'list', 'experimental'];
-const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights']);
-const MOBILE_GLOBE_DESIGNS = ['sleek', 'flat', 'icons', 'list'];
-const DESKTOP_GLOBE_DESIGNS = ['orbit', 'sleek', 'flat', 'icons', 'list'];
+const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'geolibre', 'icons', 'list', 'calendar', 'experimental'];
+const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights', 'workshops']);
+const MOBILE_GLOBE_DESIGNS = ['sleek', 'flat', 'icons', 'list', 'calendar'];
+const DESKTOP_GLOBE_DESIGNS = ['orbit', 'sleek', 'flat', 'icons', 'list', 'calendar'];
 const COMPACT_VIEWPORT_QUERY = '(max-width: 767px), (max-height: 480px) and (max-width: 900px)';
 const ICON_VIEW_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs', 'kiro-ambassadors', 'aws-ambassadors', 'golden-jackets']);
-const EVENT_CATEGORIES = new Set(['kiro-events', 'community-days', 'builder-lofts', 'news']);
-const TIMED_EVENT_CATEGORIES = new Set(['kiro-events', 'community-days']);
+const EVENT_CATEGORIES = new Set(['builder-events', 'kiro-events', 'community-days', 'builder-lofts', 'news']);
+const TIMED_EVENT_CATEGORIES = new Set(['builder-events', 'kiro-events', 'community-days']);
+const EVENT_TOOLBAR_CATEGORIES = new Set(['builder-events', 'kiro-events']);
 const NEW_ARRIVAL_CATEGORIES = new Set(['heroes', 'community-builders', 'user-groups', 'cloud-clubs']);
 
 function isCompactViewport() {
@@ -87,7 +97,7 @@ function getPublicGlobeDesigns() {
 function getAvailableGlobeDesigns(compactViewport, category) {
   const supportedDesigns = compactViewport ? MOBILE_GLOBE_DESIGNS : DESKTOP_GLOBE_DESIGNS;
   return supportedDesigns.filter(
-    (design) => design !== 'icons' || ICON_VIEW_CATEGORIES.has(category)
+    (design) => (design !== 'icons' || ICON_VIEW_CATEGORIES.has(category)) && (design !== 'calendar' || TIMED_EVENT_CATEGORIES.has(category))
   );
 }
 
@@ -99,6 +109,7 @@ function getResponsiveDefaultGlobeDesign() {
 }
 
 function getMemberCountry(member) {
+  if (member?.category === 'builder-events') return member.country || '';
   if (member?.country) return member.country;
   const parts = member?.location?.split(',') ?? [];
   return parts[parts.length - 1]?.trim() || null;
@@ -117,10 +128,12 @@ function getRouteStateFromUrl() {
   const theme = params.get('theme');
   const spotlight = getCountrySpotlightFromParams(params);
   const newOnly = params.get('new') === '1';
+  const searchQuery = params.get('q')?.trim() ?? '';
   const experimental = view === 'experimental';
   const insights = view === 'insights' || view === 'trends';
+  const workshops = view === 'workshops';
   const defaultGlobeDesign = getResponsiveDefaultGlobeDesign();
-  const resolvedCategory = experimental || insights
+  const resolvedCategory = experimental || insights || workshops
     ? 'heroes'
     : spotlight
       ? 'cloud-clubs'
@@ -129,35 +142,43 @@ function getRouteStateFromUrl() {
         : DEFAULT_ROUTE_STATE.activeCategory;
   const publicGlobeDesigns = getPublicGlobeDesigns();
   const supportedPublicView = publicGlobeDesigns.includes(view)
-    && (view !== 'icons' || ICON_VIEW_CATEGORIES.has(resolvedCategory));
+    && (view !== 'icons' || ICON_VIEW_CATEGORIES.has(resolvedCategory))
+    && (view !== 'calendar' || TIMED_EVENT_CATEGORIES.has(resolvedCategory));
   const spotlightKeys = Object.values(COUNTRY_SPOTLIGHTS).map(({ queryKey }) => queryKey);
-  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'new', 'eventStatus', ...spotlightKeys]
+  const hasShareState = ['tab', 'tag', 'region', 'country', 'view', 'theme', 'new', 'eventStatus', 'q', ...spotlightKeys]
     .some((key) => params.has(key));
 
   return {
     activeCategory: resolvedCategory,
-    selectedTag: experimental || insights ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
-    selectedRegions: experimental || insights ? [] : spotlight ? [getRegionForCountry(spotlight.country)] : getRouteSelections(params, 'region'),
-    selectedCountries: experimental || insights ? [] : spotlight ? [spotlight.country] : getRouteSelections(params, 'country'),
+    selectedTag: experimental || insights || workshops ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
+    selectedRegions: experimental || insights || workshops ? [] : spotlight ? [getRegionForCountry(spotlight.country)] : getRouteSelections(params, 'region'),
+    selectedCountries: experimental || insights || workshops ? [] : spotlight ? [spotlight.country] : getRouteSelections(params, 'country'),
     globeDesign: experimental
       ? 'experimental'
       : insights
       ? 'insights'
+      : workshops
+      ? 'workshops'
       : spotlight
       ? 'classic'
       : VALID_GLOBE_DESIGNS.has(view) && supportedPublicView
         ? view
         : defaultGlobeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
-    countrySpotlight: experimental || insights ? null : spotlight?.country ?? null,
-    newOnly: !experimental && !insights && NEW_ARRIVAL_CATEGORIES.has(resolvedCategory) && newOnly,
-    eventStatus: TIMED_EVENT_CATEGORIES.has(resolvedCategory) && ['upcoming', 'ended'].includes(params.get('eventStatus'))
+    countrySpotlight: experimental || insights || workshops ? null : spotlight?.country ?? null,
+    newOnly: !experimental && !insights && !workshops && NEW_ARRIVAL_CATEGORIES.has(resolvedCategory) && newOnly,
+    eventStatus: TIMED_EVENT_CATEGORIES.has(resolvedCategory) && ['all', 'today', 'upcoming', 'ended'].includes(params.get('eventStatus'))
       ? params.get('eventStatus') : 'all',
+    eventFilters: resolvedCategory === 'builder-events' ? readEventFilters(params)
+      : resolvedCategory === 'kiro-events' ? { ...DEFAULT_EVENT_FILTERS, sort: readEventFilters(params).sort } : DEFAULT_EVENT_FILTERS,
+    calendarMonth: validCalendarMonth(params.get('month')) ? params.get('month') : calendarDateKey(new Date()).slice(0, 7),
+    workshopFilters: readWorkshopFilters(params),
+    searchQuery: experimental || insights || resolvedCategory === 'news' ? '' : searchQuery,
     hasShareState,
   };
 }
 
-function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, countrySpotlight, newOnly, eventStatus }) {
+function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, selectedCountries, globeDesign, darkMode, countrySpotlight, newOnly, eventStatus, eventFilters, calendarMonth, searchQuery, workshopFilters }) {
   if (typeof window === 'undefined') return;
 
   const params = new URLSearchParams();
@@ -166,11 +187,19 @@ function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, se
   selectedRegions.forEach((region) => params.append('region', region));
   selectedCountries.forEach((country) => params.append('country', country));
   if (globeDesign !== DEFAULT_ROUTE_STATE.globeDesign) params.set('view', globeDesign);
+  if (globeDesign === 'calendar' && validCalendarMonth(calendarMonth)) params.set('month', calendarMonth);
   if (!darkMode) params.set('theme', 'light');
   const spotlightQueryKey = COUNTRY_SPOTLIGHTS[countrySpotlight]?.queryKey;
   if (spotlightQueryKey) params.set(spotlightQueryKey, '1');
   if (newOnly) params.set('new', '1');
-  if (TIMED_EVENT_CATEGORIES.has(activeCategory) && eventStatus !== 'all') params.set('eventStatus', eventStatus);
+  if (TIMED_EVENT_CATEGORIES.has(activeCategory) && (eventStatus !== 'all' || activeCategory === 'builder-events')) params.set('eventStatus', eventStatus);
+  if (activeCategory === 'builder-events') {
+    if (eventFilters.format !== 'all') params.set('format', eventFilters.format);
+    if (eventFilters.city) params.set('city', eventFilters.city);
+  }
+  if (EVENT_TOOLBAR_CATEGORIES.has(activeCategory) && eventFilters.sort !== 'soonest') params.set('sort', eventFilters.sort);
+  if (searchQuery.trim() && activeCategory !== 'news') params.set('q', searchQuery.trim());
+  if (globeDesign === 'workshops') writeWorkshopParams(params, workshopFilters);
 
   const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}${window.location.hash}`;
   const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
@@ -225,8 +254,13 @@ export default function App() {
   const [nearMeHover, setNearMeHover] = useState(false);
   const [newOnly, setNewOnly] = useState(routeState.newOnly);
   const [eventStatus, setEventStatus] = useState(routeState.eventStatus);
+  const [eventFilters, setEventFilters] = useState(routeState.eventFilters || DEFAULT_EVENT_FILTERS);
+  const [workshopFilters, setWorkshopFilters] = useState(routeState.workshopFilters || DEFAULT_WORKSHOP_FILTERS);
+  const [calendarMonth, setCalendarMonth] = useState(routeState.calendarMonth);
+  const [searchQuery, setSearchQuery] = useState(routeState.searchQuery);
   const [eventNow, setEventNow] = useState(() => new Date());
   const isTimedEventView = TIMED_EVENT_CATEGORIES.has(activeCategory);
+  const isEventToolbarView = EVENT_TOOLBAR_CATEGORIES.has(activeCategory);
   useEffect(() => {
     if (!isTimedEventView || showSplash) return undefined;
     const refresh = () => setEventNow(new Date());
@@ -252,23 +286,27 @@ export default function App() {
     ? 'experimental'
     : globeDesign === 'insights'
       ? 'insights'
+      : globeDesign === 'workshops'
+        ? 'workshops'
       : EVENT_CATEGORIES.has(activeCategory) ? 'events' : 'community';
   const globeReady = !showSplash;
 
   const isCommunityBuilderView = activeCategory === 'community-builders';
   const isListView = globeDesign === 'list';
+  const isCalendarView = globeDesign === 'calendar';
   const isIconView = globeDesign === 'icons';
   const isGeoLibreView = globeDesign === 'geolibre';
   const isExperimentalView = globeDesign === 'experimental';
   const isInsightsView = globeDesign === 'insights';
+  const isWorkshopsView = globeDesign === 'workshops';
   const availableGlobeDesigns = useMemo(
     () => getAvailableGlobeDesigns(compactViewport, activeCategory),
     [activeCategory, compactViewport]
   );
   const loadFullCommunityBuilders = isCommunityBuilderView && (
-    isListView || isIconView || newOnly || Boolean(selectedTag || selectedRegions.length || selectedCountries.length)
+    isListView || isIconView || newOnly || Boolean(searchQuery || selectedTag || selectedRegions.length || selectedCountries.length)
   );
-  const { error, members, loading } = useCategory(showSplash || isInsightsView ? null : activeCategory, loadFullCommunityBuilders);
+  const { error, members, loading } = useCategory(showSplash || isInsightsView || isWorkshopsView ? null : activeCategory, loadFullCommunityBuilders);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading && !isListView;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
@@ -302,7 +340,7 @@ export default function App() {
       const nextCompactViewport = event.matches;
       setCompactViewport(nextCompactViewport);
       setGlobeDesign((currentDesign) => {
-        if (currentDesign === 'experimental' || currentDesign === 'insights' || currentDesign === 'classic') {
+        if (currentDesign === 'experimental' || currentDesign === 'insights' || currentDesign === 'workshops' || currentDesign === 'classic') {
           return currentDesign;
         }
         const nextDesigns = getAvailableGlobeDesigns(nextCompactViewport, activeCategory);
@@ -384,27 +422,57 @@ export default function App() {
   );
 
   const locationFilteredMembers = useMemo(() => {
+    const normalizedQuery = searchQuery.trim().toLocaleLowerCase();
     return members.filter((member) => {
       if (newOnly && !member.isNew) return false;
-      if (selectedTag && member.tag !== selectedTag) return false;
+      if (selectedTag && member.tag !== selectedTag && !member.tags?.includes(selectedTag)) return false;
+      if (activeCategory === 'builder-events' && !matchesBuilderEventFilters(member, eventFilters)) return false;
       const country = getMemberCountry(member);
       if (selectedRegions.length && !selectedRegions.includes(getRegionForCountry(country))) return false;
       if (selectedCountries.length && !selectedCountries.includes(country)) return false;
+      if (normalizedQuery) {
+        const searchableText = [
+          member.name,
+          member.title,
+          member.hero_type,
+          member.location,
+          member.country,
+          member.city,
+          member.address,
+          member.tag,
+          member.tags,
+          member.eventFormat,
+          member.role,
+          member.company,
+          member.organization,
+          member.ledBy,
+          member.offerings,
+          member.recognitionStatus,
+          member.description,
+        ].filter(Boolean).join(' ').toLocaleLowerCase();
+        if (!searchableText.includes(normalizedQuery)) return false;
+      }
       return true;
     });
-  }, [members, newOnly, selectedTag, selectedRegions, selectedCountries]);
+  }, [members, newOnly, searchQuery, selectedTag, selectedRegions, selectedCountries, activeCategory, eventFilters]);
 
-  const directoryMembers = useMemo(() => isTimedEventView
-    ? locationFilteredMembers.filter(member => matchesEventStatus(member, eventStatus, eventNow))
-    : locationFilteredMembers, [locationFilteredMembers, isTimedEventView, eventStatus, eventNow]);
-  const eventStatusCounts = useMemo(() => ({
-    all: locationFilteredMembers.length,
-    upcoming: locationFilteredMembers.filter(member => matchesEventStatus(member, 'upcoming', eventNow)).length,
-    ended: locationFilteredMembers.filter(member => matchesEventStatus(member, 'ended', eventNow)).length,
-  }), [locationFilteredMembers, eventNow]);
+  const directoryMembers = useMemo(() => {
+    const events = isTimedEventView ? locationFilteredMembers.filter(member => matchesEventStatus(member, eventStatus, eventNow)) : locationFilteredMembers;
+    return EVENT_TOOLBAR_CATEGORIES.has(activeCategory) ? sortBuilderEvents(events, eventFilters.sort) : events;
+  }, [locationFilteredMembers, isTimedEventView, eventStatus, eventNow, activeCategory, eventFilters.sort]);
+  const eventStatusCounts = useMemo(() => {
+    const counts = { all: locationFilteredMembers.length, today: 0, upcoming: 0, ended: 0 };
+    if (isTimedEventView) {
+      for (const event of locationFilteredMembers) {
+        const status = getEventStatus(event, eventNow);
+        if (status) counts[status] += 1;
+      }
+    }
+    return counts;
+  }, [locationFilteredMembers, eventNow, isTimedEventView]);
 
   const filteredMembers = useMemo(
-    () => directoryMembers.filter((member) => member.lat !== 0 || member.lng !== 0),
+    () => directoryMembers.filter((member) => Number.isFinite(member.lat) && Number.isFinite(member.lng) && (member.lat !== 0 || member.lng !== 0)),
     [directoryMembers]
   );
 
@@ -441,7 +509,7 @@ export default function App() {
   }, [selectedCountries, members]);
   const resolvedFlyToTarget = nearMeTarget ?? flyToTarget;
 
-  const displayedMembers = isListView || isIconView ? directoryMembers : filteredMembers;
+  const displayedMembers = isListView || isCalendarView || isIconView ? directoryMembers : filteredMembers;
   const newMemberCount = isCommunityBuilderView && !loadFullCommunityBuilders
     ? (communityBuilderMeta.newTotal ?? 0)
     : members.filter((member) => member.isNew).length;
@@ -456,12 +524,12 @@ export default function App() {
     ? (communityBuilderMeta.total ?? filteredMembers.length)
     : filteredMembers.length;
   const hudSubLabel = isTimedEventView
-    ? `${eventStatus === 'all' ? 'All' : eventStatus === 'ended' ? 'Ended' : 'Upcoming'} events${selectedRegions.length || selectedCountries.length || selectedTag ? ' · filtered' : ' worldwide'}`
+    ? `${eventStatus === 'all' ? 'All events' : eventStatus === 'today' ? 'Today’s events' : eventStatus === 'ended' ? 'Ended events' : 'Upcoming events'}${searchQuery || selectedRegions.length || selectedCountries.length || selectedTag ? ' · filtered' : ' worldwide'}`
     : newOnly
     ? 'new this month'
     : isCommunityBuilderView && !loadFullCommunityBuilders
     ? `${(communityBuilderMeta.mappedTotal ?? filteredMembers.length).toLocaleString()} mapped across ${members.length.toLocaleString()} locations`
-    : selectedTag || selectedRegions.length || selectedCountries.length
+    : searchQuery || selectedTag || selectedRegions.length || selectedCountries.length
       ? `filtered / ${members.length.toLocaleString()} total`
       : 'members worldwide';
   const activeError = isNewsView ? newsError : error;
@@ -611,6 +679,8 @@ export default function App() {
     setCountrySpotlight(null);
     setNewOnly(false);
     setEventStatus('all');
+    setEventFilters(DEFAULT_EVENT_FILTERS);
+    setSearchQuery('');
     setEventNow(new Date());
     setActiveCategory(category);
     if (EVENT_CATEGORIES.has(category) || category === 'kiro-ambassadors') {
@@ -627,7 +697,12 @@ export default function App() {
   }, [compactViewport]);
 
   const handleSectionChange = useCallback((section) => {
-    if (section === 'experimental') {
+    if (section === 'workshops') {
+      handleCategoryChange('heroes');
+      setWorkshopFilters(DEFAULT_WORKSHOP_FILTERS);
+      setGlobeDesign('workshops');
+      return;
+    }    if (section === 'experimental') {
       handleCategoryChange('heroes');
       setGlobeDesign('experimental');
       return;
@@ -639,7 +714,7 @@ export default function App() {
       return;
     }
 
-    handleCategoryChange(section === 'events' ? 'kiro-events' : 'heroes');
+    handleCategoryChange(section === 'events' ? 'builder-events' : 'heroes');
     setGlobeDesign(getResponsiveDefaultGlobeDesign());
   }, [handleCategoryChange]);
 
@@ -755,8 +830,12 @@ export default function App() {
       countrySpotlight: countrySpotlight?.country ?? null,
       newOnly,
       eventStatus,
+      eventFilters,
+      calendarMonth,
+      searchQuery,
+      workshopFilters,
     });
-  }, [activeCategory, countrySpotlight?.country, darkMode, globeDesign, newOnly, eventStatus, selectedCountries, selectedRegions, selectedTag, showSplash]);
+  }, [activeCategory, countrySpotlight?.country, darkMode, globeDesign, newOnly, eventStatus, eventFilters, calendarMonth, searchQuery, workshopFilters, selectedCountries, selectedRegions, selectedTag, showSplash]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -772,6 +851,10 @@ export default function App() {
       setNewsPanelOpen(nextRouteState.activeCategory === 'news');
       setNewOnly(nextRouteState.newOnly);
       setEventStatus(nextRouteState.eventStatus);
+      setEventFilters(nextRouteState.eventFilters || DEFAULT_EVENT_FILTERS);
+      setWorkshopFilters(nextRouteState.workshopFilters || DEFAULT_WORKSHOP_FILTERS);
+      setCalendarMonth(nextRouteState.calendarMonth);
+      setSearchQuery(nextRouteState.searchQuery);
       setEventNow(new Date());
       const spotlight = COUNTRY_SPOTLIGHTS[nextRouteState.countrySpotlight];
       setNearMeTarget(spotlight ? { ...spotlight.center, nonce: Date.now() } : null);
@@ -819,7 +902,7 @@ export default function App() {
           activeSection={activeSection}
           onSectionChange={handleSectionChange}
         />
-        {!isExperimentalView && !isInsightsView && (
+        {!isExperimentalView && !isInsightsView && !isWorkshopsView && (
           <TabNav
             activeCategory={activeCategory}
             onChange={handleCategoryChange}
@@ -833,10 +916,12 @@ export default function App() {
             selectedCountries={selectedCountries}
             onCountryChange={setSelectedCountries}
             section={activeSection}
+            searchQuery={searchQuery}
+            onSearchChange={setSearchQuery}
           />
         )}
 
-        {!showSplash && !isExperimentalView && !isInsightsView && (
+        {!showSplash && !isExperimentalView && !isInsightsView && !isWorkshopsView && (
           <MobileNavigation
             darkMode={darkMode}
             section={activeSection}
@@ -859,18 +944,22 @@ export default function App() {
             globeDesignLabel={designButtonLabel}
             onNearMe={handleNearMe}
             nearMeLoading={nearMeLoading}
-            canUseNearMe={!isListView && !isIconView && !isGeoLibreView}
+            canUseNearMe={!isListView && !isCalendarView && !isIconView && !isGeoLibreView}
             onThemeChange={setDarkMode}
             newOnly={newOnly}
             newMemberCount={newMemberCount}
             canShowNewArrivals={NEW_ARRIVAL_CATEGORIES.has(activeCategory) && (newMemberCount > 0 || newOnly)}
             onNewOnlyToggle={handleNewOnlyToggle}
             eventStatus={isTimedEventView ? eventStatus : 'all'}
+            extraFilterCount={activeCategory === 'builder-events' ? Number(eventFilters.format !== 'all') + Number(Boolean(eventFilters.city)) : 0}
+            onClearExtraFilters={() => setEventFilters(DEFAULT_EVENT_FILTERS)}
             onEventStatusChange={setEventStatus}
+            searchQuery={searchQuery}
+            onSearchChange={setSearchQuery}
           />
         )}
 
-        {!isExperimentalView && !isInsightsView && !isCommunityDaysView && !isBuilderLoftsView && !isNewsView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
+        {!isExperimentalView && !isInsightsView && !isWorkshopsView && !isCommunityDaysView && !isBuilderLoftsView && !isNewsView && !isEventToolbarView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="desktop-tag-filter-bar flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -888,7 +977,7 @@ export default function App() {
           </div>
         )}
 
-        {!showSplash && isTimedEventView && !isExperimentalView && !isInsightsView && (
+        {!showSplash && isTimedEventView && !isEventToolbarView && !isExperimentalView && !isInsightsView && (
           <EventStatusFilter
             value={eventStatus}
             counts={eventStatusCounts}
@@ -901,7 +990,27 @@ export default function App() {
           />
         )}
 
-        {activeError && !isInsightsView && (
+        {!showSplash && isEventToolbarView && (
+          <BuilderEventFilters
+            key={activeCategory} category={activeCategory}
+            members={members.filter(event => !selectedCountries.length || selectedCountries.includes(getMemberCountry(event)))}
+            results={directoryMembers}
+            filters={eventFilters}
+            onChange={(filters) => { setEventFilters(filters); setSelectedMember(null); }}
+            searchQuery={searchQuery} onSearchChange={setSearchQuery}
+            selectedTag={selectedTag} onTagChange={setSelectedTag}
+            eventStatus={eventStatus} eventStatusCounts={eventStatusCounts}
+            onEventStatusChange={(status) => {
+              setEventStatus(status);
+              setEventNow(new Date());
+              setSelectedMember(null);
+            }}
+            darkMode={darkMode} isListView={isListView} onOpenDirectory={() => setGlobeDesign('list')}
+            isCalendarView={isCalendarView} onOpenCalendar={() => setGlobeDesign('calendar')}
+          />
+        )}
+
+        {activeError && !isInsightsView && !isWorkshopsView && (
           <div
             role="alert"
             className="px-4 py-2 text-center text-sm"
@@ -912,10 +1021,38 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          {isInsightsView ? (
+          {isWorkshopsView ? (
+            <Suspense fallback={renderGlobeLoading('Loading AWS workshops...')}>
+              <WorkshopsPage darkMode={darkMode} onThemeChange={setDarkMode} filters={workshopFilters} searchQuery={searchQuery}
+                onChange={(filters, { search = searchQuery, navigate = false } = {}) => {
+                  if (navigate) {
+                    const params = new URLSearchParams({ view: 'workshops' });
+                    if (!darkMode) params.set('theme', 'light');
+                    if (search.trim()) params.set('q', search.trim());
+                    writeWorkshopParams(params, filters);
+                    const nextUrl = `${window.location.pathname}?${params}${window.location.hash}`;
+                    if (nextUrl !== `${window.location.pathname}${window.location.search}${window.location.hash}`) window.history.pushState(null, '', nextUrl);
+                  }
+                  setWorkshopFilters(filters);
+                  setSearchQuery(search);
+                }}
+              />
+            </Suspense>
+          ) : isInsightsView ? (
             <Suspense fallback={renderGlobeLoading('Loading community insights...')}>
               <InsightsDashboard darkMode={darkMode} />
             </Suspense>
+          ) : isCalendarView ? (
+            <div className="relative h-full min-h-0 overflow-hidden">
+              <Suspense fallback={renderGlobeLoading('Loading event calendar...')}>
+                <EventCalendarScene
+                  events={directoryMembers} loading={loading} darkMode={darkMode}
+                  title={CATEGORY_LABELS[activeCategory]} month={calendarMonth}
+                  onMonthChange={setCalendarMonth} onSelect={handleMarkerClick}
+                />
+              </Suspense>
+              {globeControls}
+            </div>
           ) : isBuilderLoftsView ? (
             <Suspense fallback={renderGlobeLoading('Loading AWS Builder Lofts...')}>
               <BuilderLoftsScene
@@ -1169,7 +1306,10 @@ export default function App() {
                     loading={loading}
                     darkMode={darkMode}
                     onItemClick={handleMarkerClick}
-                    emptyMessage={isTimedEventView ? 'No events match these filters.' : undefined}
+                    emptyMessage={searchQuery ? `No entries match “${searchQuery}”.` : isTimedEventView ? 'No events match these filters.' : undefined}
+                    preserveOrder={isEventToolbarView}
+                    emptyHint={searchQuery ? 'Try a different name, location or specialty.' : undefined}
+                    hideSearch
                   />
                 </Suspense>
               ) : globeReady ? (
@@ -1456,7 +1596,7 @@ export default function App() {
                   style={{ color: '#8B9BAA' }}
                 >
                   <span style={{ fontSize: '2.5rem' }}>🌐</span>
-                  <p className="mt-3 text-sm">{newOnly ? 'No new arrivals in this category.' : 'No results for the selected filters.'}</p>
+                  <p className="mt-3 max-w-sm px-5 text-center text-sm">{activeCategory === 'builder-events' && directoryMembers.length ? 'These events have no physical map location. Open the directory to explore them.' : searchQuery ? `No results for “${searchQuery}”.` : newOnly ? 'No new arrivals in this category.' : 'No results for the selected filters.'}</p>
                 </div>
               )}
 
@@ -1478,7 +1618,7 @@ export default function App() {
 
         </div>
 
-        {!isInsightsView && !isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
+        {!isInsightsView && !isWorkshopsView && !isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
           <Suspense fallback={null}>
             <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
           </Suspense>

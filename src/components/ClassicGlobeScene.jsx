@@ -12,6 +12,7 @@ const CATEGORY_COLORS = {
   'cloud-clubs': '#BF0816',
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
+  'builder-events': '#32C9D3',
   'community-days': '#FF9900',
   'builder-lofts': '#FFB454',
   'aws-ambassadors': '#2D72D2',
@@ -200,6 +201,8 @@ function createClusterElement(cluster, { category, color, darkMode, portraitClus
   button.dataset.globeMarker = cluster.isApproximate ? 'area' : 'location';
   button.setAttribute('aria-label', category === 'builder-lofts'
     ? `${cluster.members[0].city} Builder Loft · ${cluster.members[0].status === 'open' ? 'Open' : 'Announced'} · approximate city location`
+    : category === 'builder-events'
+    ? cluster.members.length === 1 ? cluster.members[0].name : `${cluster.members.length} Builder Center events at this location`
     : communityDay
     ? `${cluster.members.length} Community Day${cluster.members.length > 1 ? 's' : ''} at this location`
     : `${getPortraitGroupCount(cluster)} ${category === 'user-groups' || category === 'cloud-clubs' ? 'groups' : 'members'} ${cluster.isApproximate ? 'in this area. Zoom in to see source locations.' : 'at this location'}`);

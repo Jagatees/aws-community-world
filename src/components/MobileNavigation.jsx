@@ -7,6 +7,7 @@ import {
   GithubLogoIcon,
   GlobeHemisphereWestIcon,
   LinkedinLogoIcon,
+  MagnifyingGlassIcon,
   MoonIcon,
   SparkleIcon,
   SquaresFourIcon,
@@ -28,8 +29,8 @@ const COMMUNITY_CATEGORIES = [
 ];
 
 const EVENT_CATEGORIES = [
+  { key: 'builder-events', label: 'Builder Center Events', accent: '#32C9D3' },
   { key: 'kiro-events', label: 'Kiro Events', accent: '#7B61FF' },
-  { key: 'community-days', label: 'Community Days', accent: '#FF9900' },
   { key: 'builder-lofts', label: 'Builder Lofts', accent: '#FFB454' },
   { key: 'news', label: 'News', accent: '#FF9900' },
 ];
@@ -92,11 +93,15 @@ export default function MobileNavigation({
   onNewOnlyToggle,
   eventStatus = 'all',
   onEventStatusChange,
+  searchQuery = '',
+  onSearchChange,
+  extraFilterCount = 0,
+  onClearExtraFilters,
 }) {
   const [openPanel, setOpenPanel] = useState(null);
   const categories = section === 'events' ? EVENT_CATEGORIES : COMMUNITY_CATEGORIES;
   const accent = categories.find((category) => category.key === activeCategory)?.accent ?? '#FF9900';
-  const filterCount = selectedRegions.length + selectedCountries.length + (selectedTag ? 1 : 0) + (newOnly ? 1 : 0) + (eventStatus !== 'all' ? 1 : 0);
+  const filterCount = selectedRegions.length + selectedCountries.length + (selectedTag ? 1 : 0) + (newOnly ? 1 : 0) + (eventStatus !== 'all' ? 1 : 0) + (searchQuery ? 1 : 0) + extraFilterCount;
   const hasLocationFilters = regions.length > 0 || countries.length > 0;
   const hasFilters = hasLocationFilters || tags.length > 0 || eventStatus !== 'all';
 
@@ -128,6 +133,8 @@ export default function MobileNavigation({
     onTagChange(null);
     if (newOnly) onNewOnlyToggle();
     onEventStatusChange?.('all');
+    onSearchChange?.('');
+    onClearExtraFilters?.();
   }
 
   return (
@@ -212,6 +219,24 @@ export default function MobileNavigation({
 
             {openPanel === 'filters' && (
               <>
+                {activeCategory !== 'news' && (
+                  <label className="mobile-directory-search">
+                    <MagnifyingGlassIcon size={18} weight="bold" aria-hidden="true" />
+                    <span className="sr-only">Search this directory</span>
+                    <input
+                      type="search"
+                      value={searchQuery}
+                      onChange={(event) => onSearchChange?.(event.target.value)}
+                      placeholder="Search people, groups or places"
+                      aria-label={`Search ${activeCategory.replaceAll('-', ' ')}`}
+                    />
+                    {searchQuery && (
+                      <button type="button" onClick={() => onSearchChange?.('')} aria-label="Clear search">
+                        <XIcon size={15} weight="bold" aria-hidden="true" />
+                      </button>
+                    )}
+                  </label>
+                )}
                 <div className="mobile-sheet-section-heading">
                   <div>
                     <h3>Location</h3>

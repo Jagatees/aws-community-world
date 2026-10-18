@@ -1,5 +1,5 @@
 /**
- * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'community-days' | 'builder-lofts' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'golden-jackets' | 'kiro-events'} CategoryKey
+ * @typedef {'heroes' | 'community-builders' | 'user-groups' | 'cloud-clubs' | 'community-days' | 'builder-lofts' | 'news' | 'kiro-ambassadors' | 'aws-ambassadors' | 'golden-jackets' | 'kiro-events' | 'builder-events'} CategoryKey
  */
 
 /**
@@ -20,6 +20,10 @@
  * @property {{ name: string, imageUrl: string, profileUrl?: string, socialLinks?: { linkedin?: string, github?: string, x?: string, devto?: string, youtube?: string, facebook?: string, repost?: string, blog?: string, website?: string } }[]} [ledBy]
  * @property {boolean} [isNew]
  * @property {string} [eventDate]
+ * @property {'In person' | 'Online' | 'Hybrid'} [eventFormat]
+ * @property {string} [timeZone]
+ * @property {string[]} [tags]
+ * @property {'Public' | 'Approval required'} [access]
  * @property {string} [description]
  * @property {string} [organization]
  * @property {string} [role]

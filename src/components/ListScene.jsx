@@ -14,6 +14,7 @@ const CATEGORY_LABELS = {
   'aws-ambassadors': 'Ambassadors',
   'golden-jackets': 'Golden Jackets',
   'kiro-events': 'Kiro Events',
+  'builder-events': 'Builder Center Events',
   'community-days': 'AWS Community Days',
   'builder-lofts': 'Builder Lofts',
   news: 'Builder Center News',
@@ -75,7 +76,7 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
 
   return (
     <article
-      className="group flex min-w-0 items-start gap-4 rounded-2xl p-4 transition-all duration-200"
+      className={`group flex min-w-0 items-start gap-4 rounded-2xl p-4 transition-all duration-200${category === 'builder-events' ? ' builder-event-card' : ''}`}
       style={{ background: cardBg, border: `1px solid ${border}`, backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)' }}
       onMouseEnter={(event) => {
         event.currentTarget.style.borderColor = 'rgba(255, 153, 0, 0.58)';
@@ -127,7 +128,7 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
           </h2>
         )}
 
-        {(isNews || ['aws-ambassadors', 'golden-jackets'].includes(category)) && item.description ? (
+        {(isNews || ['builder-events', 'aws-ambassadors', 'golden-jackets'].includes(category)) && item.description ? (
           <p className="mt-2 line-clamp-2 text-sm leading-5" style={{ color: body }}>
             {item.description}
           </p>
@@ -136,9 +137,10 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
         <div className="mt-2 flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1 text-xs" style={{ color: body }}>
           {secondary ? <span className="truncate">{secondary}</span> : null}
           {item.eventDate ? <span>{item.eventDate}</span> : null}
+          {item.eventFormat && <span>{item.eventFormat} · {item.access}</span>}
           {isNews && item.publishedAt ? <span>{formatDate(item.publishedAt)}</span> : null}
         </div>
-        {['kiro-events', 'community-days'].includes(category) && <div className="mt-3"><AddToCalendar event={item} /></div>}
+        {['builder-events', 'kiro-events', 'community-days'].includes(category) && <div className="mt-3"><AddToCalendar event={item} /></div>}
       </div>
 
       {url ? (
@@ -156,7 +158,7 @@ function DirectoryCard({ item, category, darkMode, onSelect }) {
   );
 }
 
-export default function ListScene({ category, members = [], newsItems = [], loading = false, darkMode, onItemClick, emptyMessage }) {
+export default function ListScene({ category, members = [], newsItems = [], loading = false, darkMode, onItemClick, emptyMessage, emptyHint, hideSearch = false, preserveOrder = false }) {
   const [query, setQuery] = useState('');
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const items = category === 'news' ? newsItems : members;
@@ -164,8 +166,8 @@ export default function ListScene({ category, members = [], newsItems = [], load
   const filteredItems = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase();
     const result = normalizedQuery ? items.filter((item) => getSearchText(item).includes(normalizedQuery)) : items;
-    return [...result].sort((a, b) => (a.name || a.title || '').localeCompare(b.name || b.title || ''));
-  }, [items, query]);
+    return preserveOrder ? result : [...result].sort((a, b) => (a.name || a.title || '').localeCompare(b.name || b.title || ''));
+  }, [items, query, preserveOrder]);
 
   const shownItems = filteredItems.slice(0, visibleCount);
   const title = CATEGORY_LABELS[category] || 'Community directory';
@@ -193,7 +195,7 @@ export default function ListScene({ category, members = [], newsItems = [], load
             </p>
           </div>
 
-          <label className="w-full md:max-w-sm">
+          {!hideSearch && <label className="w-full md:max-w-sm">
             <span className="sr-only">Search {title}</span>
             <div className="flex min-h-11 items-center gap-3 rounded-xl px-4" style={{ background: inputBg, border: `1px solid ${border}` }}>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" style={{ color: body }}>
@@ -212,7 +214,7 @@ export default function ListScene({ category, members = [], newsItems = [], load
                 style={{ color: heading }}
               />
             </div>
-          </label>
+          </label>}
         </div>
 
         {loading && items.length === 0 ? (
@@ -254,7 +256,7 @@ export default function ListScene({ category, members = [], newsItems = [], load
               {query ? 'No matching entries' : emptyMessage || 'No entries available yet'}
             </p>
             <p className="mt-2 text-sm" style={{ color: body }}>
-              {query ? 'Try a different name, location or specialty.' : emptyMessage ? 'Try All events or change the location filters.' : 'Check back as the community directory grows.'}
+              {query ? 'Try a different name, location or specialty.' : emptyHint || (emptyMessage ? 'Try All events or change the location filters.' : 'Check back as the community directory grows.')}
             </p>
           </div>
         )}

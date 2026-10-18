@@ -1,0 +1,141 @@
+.walking-world { display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden; }
+.world-topbar { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px 20px; flex-shrink: 0; border-bottom: 1px solid var(--ws-border); }
+.world-topbar h1 { display: flex; align-items: center; gap: 9px; font-size: 19px; font-weight: 650; letter-spacing: -.025em; white-space: nowrap; }
+.world-topbar h1 > svg { color: var(--ws-accent); }
+.world-top-actions { display: flex; gap: 8px; align-items: center; }
+.world-top-actions .workshop-button { padding: 8px 12px; }
+.world-viewport { position: relative; min-height: 0; flex: 1; overflow: hidden; background: #91b7e5; isolation: isolate; }
+.world-canvas { position: absolute; inset: 0; }
+.world-canvas canvas { display: block; width: 100%; height: 100%; outline: none; cursor: grab; touch-action: none; }
+.world-canvas canvas:active { cursor: grabbing; }
+.world-canvas canvas:focus-visible { outline: 2px solid #ffc269; outline-offset: -2px; }
+.world-location { position: absolute; top: 22px; left: 24px; max-width: min(420px, calc(100% - 48px)); padding: 12px 15px; border: 1px solid #e8e9ef4d; border-radius: 13px; background: #24384ad9; backdrop-filter: blur(12px); color: #fff7ea; pointer-events: none; }
+.world-location > span { display: block; color: #c7f5ec; font-size: 8px; font-weight: 700; letter-spacing: .13em; }
+.world-location h2 { font-size: clamp(19px, 2vw, 25px); letter-spacing: -.03em; font-weight: 650; margin-top: 5px; line-height: 1.25; }
+.world-location p { font-size: 10px; margin-top: 5px; line-height: 1.5; color: #dce8ee; }
+.world-crosshair { position: absolute; top: 50%; left: 50%; width: 5px; height: 5px; border: 1px solid #ffffffd9; box-shadow: 0 0 0 1px #274c5b66; border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+.world-walk-controls { position: absolute; bottom: 55px; left: 22px; display: flex; gap: 15px; align-items: flex-end; color: #fff; }
+.world-direction-pad { display: grid; grid-template-columns: repeat(3, 42px); grid-template-rows: repeat(2, 42px); gap: 4px; }
+.world-direction-pad button:first-child { grid-column: 2; }
+.world-direction-pad button:nth-child(2) { grid-column: 1; }
+.world-walk-controls button { display: grid; place-items: center; background: #143342dc; border: 1px solid #819da5; border-radius: 7px; font-size: 19px; touch-action: none; user-select: none; -webkit-user-select: none; }
+.world-walk-controls button:hover, .world-walk-controls button:active { background: #315a69; border-color: #ffc46e; }
+.world-look-pad { display: flex; flex-direction: column; gap: 5px; align-items: center; }
+.world-look-pad button { width: 33px; height: 28px; font-size: 14px; }
+.world-look-pad span { font-size: 9px; color: #fff; text-shadow: 0 1px 4px #000; }
+.world-help { position: absolute; bottom: 0; left: 0; right: 0; min-height: 36px; padding: 8px 22px; display: flex; gap: 13px; align-items: center; color: #eaf3f3; font-size: 10px; background: #102d3be8; }
+.world-help kbd { font: inherit; color: #fff; font-weight: 650; }
+.world-help button { color: #ffd192; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+.world-help .world-escape { color: #a9c1c8; }
+.world-interaction { position: absolute; bottom: 65px; left: 50%; transform: translateX(-50%); width: min(430px, 40%); }
+.world-interaction button { display: flex; align-items: center; text-align: left; width: 100%; gap: 12px; padding: 12px 16px; border: 1px solid #ffd5a0; border-radius: 9px; background: #123744ef; box-shadow: 0 6px 24px #14343e35; color: #fff; }
+.world-interaction button:hover { background: #264e59; }
+.world-interaction kbd { display: grid; place-items: center; width: 27px; height: 29px; font: 650 13px system-ui; background: #ffbf63; color: #233944; border-radius: 4px; flex-shrink: 0; }
+.world-interaction button > span { flex: 1; min-width: 0; }
+.world-interaction strong { display: block; font-size: 12px; line-height: 1.4; }
+.world-interaction small { display: block; font-size: 10px; line-height: 1.5; color: #c9e1e5; margin-top: 4px; }
+.world-interaction button > svg { flex-shrink: 0; }
+.world-interaction > p { text-align: center; font-size: 11px; color: #fff; background: #173c4cb5; border-radius: 6px; padding: 8px 12px; }
+.world-interaction .is-closed { border-color: #b7c2c3; }
+.world-map { position: absolute; width: 115px; bottom: 57px; right: 22px; background: #263858ee; border: 1px solid #b6c8ed; border-radius: 9px; overflow: hidden; color: #d5e8e6; }
+.world-map svg { display: block; width: 100%; height: 112px; opacity: .9; }
+.world-map span { display: block; font-size: 9px; padding: 6px; text-align: center; }
+.world-exit, .world-home { position: absolute; display: flex; align-items: center; gap: 7px; top: 20px; right: 22px; background: #143742e8; color: #fff; padding: 10px 13px; border: 1px solid #9cb7bd; border-radius: 7px; font-size: 11px; }
+.world-home { top: auto; right: 23px; bottom: 209px; width: 34px; height: 34px; justify-content: center; padding: 0; }
+.world-kiro { position: absolute; top: 20px; right: 22px; width: 230px; color: #f7f0ff; border: 1px solid #b59bdc; border-radius: 10px; background: #261c3bed; box-shadow: 0 6px 28px #19122b30; }
+.world-call-kiro { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 11px 12px; border-radius: 9px; }
+.world-call-kiro:hover { background: #4b3266; }
+.world-call-kiro img { flex-shrink: 0; border-radius: 8px; }
+.world-call-kiro strong, .world-call-kiro small { display: block; }
+.world-call-kiro strong { font-size: 12px; font-weight: 650; }
+.world-call-kiro small { font-size: 9px; margin-top: 4px; color: #dbcaef; }
+.world-kiro-progress { padding: 0 12px 11px; }
+.world-kiro-progress p { font-size: 11px; line-height: 1.5; margin: 2px 0 8px; }
+.world-kiro-progress > strong { display: block; font-size: 12px; line-height: 1.5; }
+.world-kiro-progress > small { display: block; font-size: 10px; color: #d4c0ed; margin: 4px 0; }
+.world-kiro-progress > button { color: #e9d6ff; font-size: 10px; text-decoration: underline; text-underline-offset: 3px; padding: 6px 0 0; }
+.world-kiro-intro { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.world-kiro-intro img { border-radius: 10px; }
+.world-kiro-intro h2 { margin: 0; }
+.world-panel { position: absolute; z-index: 5; top: 12px; right: 12px; bottom: 12px; width: min(400px, calc(100% - 24px)); padding: 20px 22px 26px; overflow-y: auto; overscroll-behavior: contain; border-radius: 12px; border: 1px solid var(--ws-border); background: var(--ws-panel); box-shadow: 0 14px 60px #0a263b50; scrollbar-width: thin; }
+.world-panel-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.world-panel-top > span { color: var(--ws-muted); font-size: 9px; font-weight: 700; letter-spacing: .12em; }
+.world-panel-top button { display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid var(--ws-border); border-radius: 6px; }
+.world-panel h2 { font-size: 21px; line-height: 1.4; font-weight: 650; letter-spacing: -.025em; margin-bottom: 12px; }
+.world-panel h2:focus { outline: none; }
+.world-panel-note { font-size: 12px; color: var(--ws-muted); line-height: 1.6; margin: 12px 0; }
+.world-panel .workshop-select { max-width: none; margin: 14px 0; }
+.world-panel .workshop-check { margin: 2px 0 4px; }
+.world-directory-items { display: flex; flex-direction: column; gap: 3px; margin: 15px 0; }
+.world-directory-items button { display: flex; align-items: center; gap: 11px; border: 1px solid transparent; border-radius: 6px; padding: 11px 7px; text-align: left; }
+.world-directory-items button:hover { background: var(--ws-soft); border-color: var(--ws-border); }
+.world-directory-items button > img { width: 36px; height: 36px; object-fit: contain; flex-shrink: 0; }
+.world-directory-items button > svg { flex-shrink: 0; width: 16px; color: var(--ws-muted); }
+.world-directory-items button > span { flex: 1; min-width: 0; }
+.world-directory-items strong { display: block; font-size: 12px; line-height: 1.5; font-weight: 600; }
+.world-directory-items small { display: block; font-size: 10px; color: var(--ws-muted); margin-top: 4px; line-height: 1.6; }
+.world-directory-items b { color: var(--ws-accent); font-size: 13px; flex-shrink: 0; }
+.world-street-list { display: flex; flex-direction: column; gap: 8px; margin: 18px 0; }
+.world-street-list > button { display: flex; align-items: center; gap: 12px; padding: 14px 10px; text-align: left; border: 1px solid var(--ws-border); border-left: 3px solid var(--street-color); border-radius: 7px; }
+.world-street-list > button:hover { background: var(--ws-soft); border-color: var(--street-color); }
+.world-street-marker { color: var(--street-color); flex-shrink: 0; }
+.world-street-list > button > span:nth-child(2) { flex: 1; min-width: 0; }
+.world-street-list strong { display: block; font-size: 13px; font-weight: 650; line-height: 1.4; }
+.world-street-list small { display: block; font-size: 10px; color: var(--ws-muted); margin-top: 3px; line-height: 1.4; }
+.world-street-list span > span { display: block; font-size: 10px; color: var(--ws-muted); margin-top: 7px; line-height: 1.5; }
+.world-street-list > button > svg { flex-shrink: 0; }
+.world-text-button { display: inline-flex; align-items: center; gap: 7px; color: var(--ws-accent); font-size: 12px; padding: 13px 0; }
+.world-text-button:hover { text-decoration: underline; }
+.workshop-world-detail > img { width: 48px; height: 48px; margin: 12px 0; }
+.workshop-world-detail p { color: var(--ws-muted); font-size: 13px; line-height: 1.8; margin: 18px 0; }
+.workshop-world-item-meta { display: flex; flex-wrap: wrap; gap: 10px; color: var(--ws-accent); font-size: 11px; }
+.workshop-world-detail > small { display: block; color: var(--ws-muted); font-size: 10px; line-height: 1.7; }
+.workshop-world-detail .workshop-button { width: 100%; margin: 23px 0 9px; }
+.world-unavailable { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 30px; background: var(--ws-bg); text-align: center; }
+.world-unavailable h2 { font-size: 22px; }
+.world-unavailable p { font-size: 13px; color: var(--ws-muted); max-width: 350px; line-height: 1.7; }
+@media (max-width: 800px) {
+  .world-topbar { padding: 10px 12px; gap: 8px; }
+  .world-topbar h1 { font-size: 16px; }
+  .world-top-actions .workshop-button { padding: 8px; }
+  .world-location { top: 14px; left: 16px; padding: 10px 12px; }
+  .world-location h2 { font-size: 23px; }
+  .world-interaction { bottom: 164px; width: min(430px, calc(100% - 32px)); }
+  .world-interaction > p { display: none; }
+  .world-help { padding: 9px 14px; font-size: 9px; gap: 10px; }
+  .world-escape { display: none; }
+  .world-walk-controls { left: 16px; bottom: 55px; }
+  .world-map { width: 88px; right: 16px; bottom: 53px; }
+  .world-map svg { height: 84px; }
+  .world-home { right: 16px; bottom: 178px; }
+  .world-exit { top: auto; bottom: 64px; right: 16px; }
+  .world-kiro { top: 111px; right: 16px; width: 205px; }
+  .world-kiro.is-guiding { width: min(310px, calc(100% - 32px)); }
+  .world-call-kiro { padding: 8px 10px; }
+  .world-call-kiro small { font-size: 8px; }
+  .world-kiro-progress { padding: 0 10px 8px; }
+  .world-panel { top: 8px; right: 8px; bottom: 8px; width: min(400px, calc(100% - 16px)); padding: 16px; }
+}
+@media (max-width: 560px) {
+  .world-topbar { flex-wrap: wrap; }
+  .world-topbar h1 { font-size: 17px; }
+  .world-top-actions { width: 100%; gap: 6px; flex-wrap: wrap; }
+  .world-top-actions .workshop-button { font-size: 11px; gap: 5px; }
+  .world-top-actions .workshop-theme { width: 30px; height: 30px; flex-shrink: 0; }
+  .world-top-actions .workshop-theme { margin-left: auto; }
+  .world-location h2 { font-size: 21px; }
+  .world-location p { font-size: 10px; max-width: 260px; }
+  .world-direction-pad { grid-template-columns: repeat(3, 42px); grid-template-rows: repeat(2, 42px); }
+  .world-help > span:first-child { font-size: 0; }
+  .world-help > span:first-child::after { content: 'Hold arrows to walk · Drag the world to look'; font-size: 9px; }
+  .world-help button { font-size: 9px; }
+  .world-interaction strong { font-size: 11px; }
+  .world-interaction small { font-size: 9px; }
+  .world-interaction kbd { display: none; }
+}
+@media (max-height: 500px) and (min-width: 561px) {
+  .world-location h2 { font-size: 18px; }
+  .world-location p, .world-map, .world-home { display: none; }
+  .world-kiro { top: 12px; right: 12px; width: 210px; }
+  .world-interaction { bottom: 50px; width: 42%; }
+}

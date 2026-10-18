@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { createEventCalendar } from '../src/utils/eventCalendar.js';
 import { buildSubmissionUrl } from '../src/utils/communitySubmission.js';
-import { isUpcomingEvent, matchesEventStatus } from '../src/utils/upcomingEvents.js';
+import { getEventStatus, isUpcomingEvent, matchesEventStatus } from '../src/utils/upcomingEvents.js';
 
 test('event filters distinguish ended, ongoing, future and undated entries', () => {
   const now = new Date(2026, 8, 11, 23, 59, 59);
@@ -12,12 +12,43 @@ test('event filters distinguish ended, ongoing, future and undated entries', () 
   for (const event of [past, ongoing, future, {}]) assert.equal(matchesEventStatus(event, 'all', now), true);
   assert.equal(matchesEventStatus(past, 'ended', now), true);
   assert.equal(matchesEventStatus(past, 'upcoming', now), false);
-  assert.equal(matchesEventStatus(ongoing, 'upcoming', now), true);
+  assert.equal(matchesEventStatus(ongoing, 'upcoming', now), false);
+  assert.equal(matchesEventStatus(ongoing, 'today', now), true);
   assert.equal(matchesEventStatus(ongoing, 'ended', now), false);
   assert.equal(matchesEventStatus(future, 'upcoming', now), true);
   assert.equal(matchesEventStatus({}, 'ended', now), false);
   assert.equal(matchesEventStatus({}, 'upcoming', now), false);
+  assert.equal(matchesEventStatus({}, 'today', now), false);
   assert.equal(matchesEventStatus(ongoing, 'ended', new Date(2026, 8, 12)), true);
+});
+
+test('Today and Upcoming use the calendar viewer time zone', () => {
+  const now = new Date('2026-10-16T16:30:00Z');
+  const event = { startsAt: '2026-10-17T07:30:00Z', endsAt: '2026-10-17T09:00:00Z' };
+  assert.equal(getEventStatus(event, now, 'Asia/Singapore'), 'today');
+  assert.equal(getEventStatus(event, now, 'America/Los_Angeles'), 'upcoming');
+  assert.equal(getEventStatus(event, new Date(event.endsAt), 'Asia/Singapore'), 'ended');
+  assert.equal(getEventStatus({ startsAt: '2026-10-18T00:00:00+08:00', endsAt: '2026-10-18T01:00:00+08:00' }, now, 'Asia/Singapore'), 'upcoming');
+});
+
+test('overnight and multi-day events stay in Today until they end', () => {
+  const event = { startsAt: '2026-10-16T22:00:00+08:00', endsAt: '2026-10-17T02:00:00+08:00' };
+  assert.equal(getEventStatus(event, new Date('2026-10-17T01:00:00+08:00'), 'Asia/Singapore'), 'today');
+  assert.equal(getEventStatus(event, new Date('2026-10-17T02:00:00+08:00'), 'Asia/Singapore'), 'ended');
+  const multiDay = { date: '2026-10-16', endDate: '2026-10-18' };
+  assert.equal(getEventStatus(multiDay, new Date('2026-10-18T23:59:59+08:00'), 'Asia/Singapore'), 'today');
+  assert.equal(getEventStatus(multiDay, new Date('2026-10-19T00:00:00+08:00'), 'Asia/Singapore'), 'ended');
+});
+
+test('status handles DST, exclusive midnight endings, and invalid dates', () => {
+  const event = { startsAt: '2026-11-01T06:15:00Z', endsAt: '2026-11-01T07:00:00Z' };
+  assert.equal(getEventStatus(event, new Date('2026-11-01T05:30:00Z'), 'America/New_York'), 'today');
+  const midnightEnd = { startsAt: '2026-10-16T22:00:00+08:00', endsAt: '2026-10-17T00:00:00+08:00' };
+  assert.equal(getEventStatus(midnightEnd, new Date('2026-10-17T00:00:00+08:00'), 'Asia/Singapore'), 'ended');
+  for (const bad of [{}, { date: '2026-02-30' }, { startsAt: 'invalid' }, { startsAt: '2026-10-18T00:00:00Z', endsAt: '2026-10-17T00:00:00Z' }]) {
+    assert.equal(getEventStatus(bad), null);
+    assert.equal(matchesEventStatus(bad, 'all'), true);
+  }
 });
 
 test('homepage counts keep ongoing all-day events and exclude past or undated events', () => {

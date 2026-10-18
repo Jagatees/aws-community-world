@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import CommunitySubmission from './CommunitySubmission';
 
 const GLOBE_MODES = [
   { id: 'community', label: 'Community', description: 'People and groups' },
   { id: 'events', label: 'Events', description: 'Events, Builder Lofts and news' },
+  { id: 'workshops', label: 'Workshops', description: 'Hands-on learning, organized by AWS service' },
   { id: 'insights', label: 'Insights', description: 'Community intelligence dashboard' },
   { id: 'experimental', label: 'Experimental', description: 'A playground for new ideas and surprise features' },
 ];
@@ -11,8 +11,8 @@ const GLOBE_MODES = [
 /**
  * @param {{
  *   darkMode: boolean,
- *   activeSection: 'community' | 'events' | 'insights' | 'experimental',
- *   onSectionChange: (section: 'community' | 'events' | 'insights' | 'experimental') => void,
+ *   activeSection: 'community' | 'events' | 'workshops' | 'insights' | 'experimental',
+ *   onSectionChange: (section: 'community' | 'events' | 'workshops' | 'insights' | 'experimental') => void,
  * }} props
  */
 export default function Header({ darkMode, activeSection, onSectionChange }) {
@@ -129,7 +129,6 @@ export default function Header({ darkMode, activeSection, onSectionChange }) {
       </span>
 
       <div className="header-spacer flex-1" />
-      <CommunitySubmission darkMode={darkMode} />
 
       {/* LinkedIn link */}
       <a

@@ -28,11 +28,13 @@ The community tabs use this order on desktop and mobile:
 
 ### Events and news
 
-- **Kiro Events** — discover upcoming Kiro events and open their registration pages.
-- **Community Days** — explore upcoming and previous AWS Community Days around the world.
+- **Builder Center Events** — explore published AWS community events with search, status, format, country, city, topic, and date sorting. Physical events appear on the globe; online events stay in the directory. Event details preserve the published time zone and link to the official registration instructions.
+- **Kiro Events** — discover Kiro events with the same compact date toolbar, expandable search and sorting, and directory/calendar shortcuts as Builder Center Events. Kiro topics appear as quick pills, and registration links still open the original event pages.
 - **Builder Lofts** — explore AWS builder spaces in San Francisco, Berlin, Hyderabad, and São Paulo, with open/announced status, offerings, access information, and official links.
 - **News** — read the latest and trending posts from AWS Builder Center in a map-linked news panel.
 - **AWS Community Day Singapore** — a dedicated agenda, venue, map, and session-planning experience at `/community-day-singapore/`.
+
+Community Days published on Builder Center appear under **Builder Center Events**. The separate Community Days navigation tab has been retired. Its existing dataset and saved `/?tab=community-days` links remain available because the Builder Center feed does not cover every entry in that directory.
 
 ## View modes
 
@@ -83,6 +85,7 @@ The checked-in data currently contains:
 | Ambassadors | 360 |
 | AWS Community Days | 38 |
 | Kiro Events | 4 |
+| Builder Center Events | 48 |
 | Builder Lofts | 4 |
 | Builder News | 10 latest + 10 trending |
 
@@ -127,8 +130,13 @@ Example routes:
 - Golden Jackets: `/?tab=golden-jackets`
 - Golden Jacket directory: `/?tab=golden-jackets&view=list`
 - Builder Lofts: `/?tab=builder-lofts`
+- Builder Center Events: `/?tab=builder-events`
+- Online events: `/?tab=builder-events&view=list&format=Online`
+- Event calendar: `/?tab=builder-events&view=calendar` (also available for Kiro Events and saved Community Days links)
 
 The shortened navigation labels do not change the existing route keys.
+
+Event tabs include a **Calendar** view with month navigation, a month picker, a Today shortcut, and a selected-day agenda. Search, location, format, topic, and status filters carry across views. Timed events use the viewer's time zone; all-day events retain their published dates, and multi-day events appear on every applicable day. Click an event for details, its source link, or a calendar download. The selected month is shareable with `&month=2026-10`.
 
 Earth, Minimal, Gallery, Directory, and the SVG fallback run without an environment file.
 
@@ -154,6 +162,7 @@ Do not commit `.env.local`; it is ignored by Git.
 | `npm run update:community-data` | Refresh community directories, enrich profiles, geocode new locations, and rebuild Community Builder summaries |
 | `npm run update:builder-profiles` | Refresh optional public social links from Builder profiles |
 | `npm run update:news` | Refresh the Builder Center latest and trending feeds |
+| `npm run update:builder-events` | Refresh published Builder Center events and cache approximate city coordinates |
 | `npm run update:kiro-events` | Refresh Kiro event data |
 | `npm run update:aws-ambassadors` | Refresh the official AWS Ambassador directory, preserving country-level location provenance |
 | `npm run update:golden-jackets` | Refresh documented Golden Jacket recipients from reviewed AWS biographies and Golden Jackets Brazil |
@@ -161,6 +170,10 @@ Do not commit `.env.local`; it is ignored by Git.
 | `npm run build:community-builder-summary` | Rebuild the lightweight country-level Community Builder dataset |
 
 ## Data pipeline
+
+Builder Center Events use the anonymous public listing behind [Builder Center Events](https://builder.aws.com/connect/events). The importer follows pagination (including empty pages with continuation tokens), deduplicates event IDs, validates records before replacing the snapshot, and rejects an empty or unexpectedly reduced feed. Public listings requiring host approval are labeled **Approval required**; invite-only records are excluded. Only publicly visible event data is retained, with no attendee-only addresses, meeting links, or internal user IDs. Published public coordinates take priority; other physical events use city-level OpenStreetMap/Nominatim geocoding cached in `scripts/.builder-events-geo-cache.json`. Online or unresolved locations never receive invented map pins. Events remain source-specific and may also appear in the Kiro tab or the retained Community Days directory.
+
+Refresh with `npm run update:builder-events`; the existing daily Community Feeds workflow includes this command. The UI shows the snapshot check date, preserves filter state in the URL, and defaults to **All**. Status pills appear in the order **All, Today, Upcoming, Ended**. In the viewer's time zone, Today includes events scheduled for today or still ongoing, Upcoming starts tomorrow, and Ended includes completed events. All-day events remain in Today through their final published date; undated events appear only in All. Counts refresh every minute and when the window regains focus. Check data and import edge cases with `node scripts/test-builder-events.mjs`; browser checks use `node scripts/test-builder-events-ui.mjs` against Vite on port 5175 (or set `COMMUNITY_TEST_URL`).
 
 Golden Jackets combine explicit recipient statements in [AWS Ambassador biographies](https://aws.amazon.com/partners/ambassadors/) with the recipient and alumni sections of [Golden Jackets Brazil](https://goldenjacketsbrazil.com/), an independent community directory. Certification counts alone are not used as proof of recognition. Challengers and rising members are excluded; alumni are labeled separately. This is a growing directory of recognition history, not a complete global list or a current certification-status check. Known cross-source identities are merged, and each profile retains its source and source-check date. Brazil locations use the existing city geocoding cache, falling back to an explicitly labeled country center. Profiles without confirmed countries remain off the map. Refresh with `npm run update:golden-jackets`; validate with `node scripts/test-golden-jackets.mjs` and `node scripts/test-golden-jackets-ui.mjs` (Vite port 5174, or `COMMUNITY_TEST_URL`).
 

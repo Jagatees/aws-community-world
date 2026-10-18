@@ -535,6 +535,8 @@ body {
   left: 0;
   z-index: 80;
   width: 15.5rem;
+  max-height: calc(100dvh - 5rem);
+  overflow-y: auto;
   padding: 0.35rem;
   border: 1px solid rgba(91, 137, 169, 0.44);
   border-radius: 0.85rem;
@@ -706,6 +708,67 @@ body {
   align-items: stretch;
 }
 
+.directory-search {
+  display: flex;
+  width: min(19rem, 26vw);
+  min-width: 13rem;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.42rem 0.7rem 0.42rem 0.1rem;
+  padding: 0 0.65rem;
+  border: 1px solid var(--category-nav-border);
+  border-radius: 0.7rem;
+  background: color-mix(in srgb, var(--category-nav-surface) 76%, transparent);
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.directory-search:focus-within {
+  border-color: var(--category-accent);
+  background: var(--category-nav-surface);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--category-accent) 16%, transparent);
+}
+
+.directory-search input,
+.mobile-directory-search input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+}
+
+.directory-search input {
+  font-size: 0.76rem;
+}
+
+.directory-search input::placeholder,
+.mobile-directory-search input::placeholder {
+  color: currentColor;
+  opacity: 0.62;
+}
+
+.directory-search button,
+.mobile-directory-search button {
+  display: grid;
+  width: 1.7rem;
+  height: 1.7rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 0;
+  border-radius: 0.45rem;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.directory-search button:hover,
+.mobile-directory-search button:hover {
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
 .category-tab-list {
   min-width: 0;
   flex: 1;
@@ -733,6 +796,28 @@ body {
   .mobile-navigation button,
   .mobile-navigation a {
     -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-directory-search {
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 1rem;
+    padding: 0 0.75rem;
+    border: 1px solid var(--mobile-nav-border);
+    border-radius: 0.78rem;
+    color: var(--mobile-nav-text);
+    background: var(--mobile-nav-surface-soft);
+  }
+
+  .mobile-directory-search:focus-within {
+    border-color: var(--mobile-nav-accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--mobile-nav-accent) 15%, transparent);
+  }
+
+  .mobile-directory-search input {
+    font-size: 0.76rem;
   }
 
   .mobile-navigation-backdrop {
@@ -1313,6 +1398,8 @@ body {
   }
 
   .section-mode-switch::after { display: none; }
+  .aws-shell-bg-light .section-mode-switch { color: #175a70; -webkit-text-fill-color: #175a70; }
+  .aws-shell-bg-light .section-mode-switch > svg { stroke: #175a70; }
   .section-mode-switch > svg { width: 0.78rem; height: 0.78rem; margin-left: 0.18rem; }
   .globe-mode-menu { right: 0; left: auto; width: min(15.5rem, calc(100vw - 1.5rem)); }
 

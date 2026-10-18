@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function GlobeViewControls({ globeDesign, availableGlobeDesigns, onDesignChange: setGlobeDesign, designButtonLabel, onZoom: triggerZoom, onNearMe: handleNearMe, nearMeLoading }) {
   const [nearMeHover, setNearMeHover] = useState(false);
-  const isListView = globeDesign === 'list';
+  const isListView = globeDesign === 'list' || globeDesign === 'calendar';
   const isGeoLibreView = globeDesign === 'geolibre';
   const viewControlBg = 'rgba(12, 25, 36, 0.9)';
   const viewControlBorder = 'rgba(104, 148, 180, 0.38)';

@@ -14,6 +14,7 @@ const CATEGORY_COLORS = {
   'cloud-clubs': '#BF0816',
   'kiro-ambassadors': '#8B5CF6',
   'kiro-events': '#7B61FF',
+  'builder-events': '#32C9D3',
   'aws-ambassadors': '#2D72D2',
   'golden-jackets': '#D4AF37',
   news: '#FF9900',

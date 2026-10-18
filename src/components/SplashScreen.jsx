@@ -3,7 +3,7 @@ import MobileHomeGlobe from './MobileHomeGlobe';
 import { HOME_COMMUNITY_MARKERS } from '../data/home-community-markers';
 import './SplashScreen.css';
 import kiroEvents from '../data/kiro-events.json';
-import communityDays from '../data/community-days.json';
+import builderEvents from '../data/builder-events.json';
 import communityCounts from 'virtual:home-community-counts';
 import { isUpcomingEvent } from '../utils/upcomingEvents';
 
@@ -20,8 +20,8 @@ const COMMUNITY_STATS = [
 function getEventStats() {
   const now = new Date();
   return [
+    { key: 'builder-events', label: 'Builder Center Events', count: builderEvents.filter(event => isUpcomingEvent(event, now)).length, color: '#32C9D3' },
     { key: 'kiro', label: 'Kiro Events', count: kiroEvents.filter(event => isUpcomingEvent(event, now)).length, color: '#8B5CF6' },
-    { key: 'community-days', label: 'Community Days', count: communityDays.filter(event => isUpcomingEvent(event, now)).length, color: '#FF9900' },
     { key: 'builder-lofts', label: 'Builder Lofts', count: communityCounts['builder-lofts'], color: '#FFB454', detail: 'Open & announced locations', excludeFromTotal: true },
     { key: 'news', label: 'News', count: communityCounts.news, color: '#FF9900', detail: 'Latest & trending articles', excludeFromTotal: true },
   ];
@@ -129,7 +129,7 @@ function createAvatarElement(marker) {
 
 function createEventElement(event) {
   const isKiro = event.category === 'kiro-events';
-  const color = isKiro ? '#8B5CF6' : '#FF9900';
+  const color = isKiro ? '#8B5CF6' : event.category === 'builder-events' ? '#32C9D3' : '#FF9900';
   const dateValue = event.date || event.startsAt;
   const date = dateValue ? new Date(dateValue.includes('T') ? dateValue : `${dateValue}T12:00:00`) : null;
   const day = date && !Number.isNaN(date.getTime()) ? date.getDate() : '--';
@@ -240,12 +240,9 @@ function OrbitGlobe({ isEvents }) {
 
     // Event data stays lazy; the home globe uses the small balanced preview set.
     const markerDataPromise = isEvents
-      ? Promise.all([
-        import('../data/community-days.json'),
-        import('../data/kiro-events.json'),
-      ]).then(([{ default: communityDays }, { default: kiroEvents }]) => [
-        ...communityDays.map((event) => ({ ...event, category: 'community-days' })),
+      ? import('../data/kiro-events.json').then(({ default: kiroEvents }) => [
         ...kiroEvents.map((event) => ({ ...event, category: 'kiro-events' })),
+        ...builderEvents,
       ])
       : Promise.resolve(HOME_COMMUNITY_MARKERS);
 
@@ -419,7 +416,7 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
         >
           <div className="mobile-home__stats-total">
             <strong><AnimatedNumber key={`${activeSection}-total`} target={total} duration={1600} /></strong>
-            <p>{isEvents ? 'Upcoming events worldwide' : 'Community directory entries'}</p>
+            <p>{isEvents ? 'Upcoming event listings worldwide' : 'Community directory entries'}</p>
           </div>
           <dl className="mobile-home__stats-breakdown">
             {stats.map((stat, index) => (
@@ -593,7 +590,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
               marginTop: '0.4rem',
             }}
           >
-            {isEvents ? 'Upcoming events worldwide' : 'Community directory entries'}
+            {isEvents ? 'Upcoming event listings worldwide' : 'Community directory entries'}
           </div>
         </div>
 
@@ -664,7 +661,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
         </button>
 
         <div className="splash-source">
-          {isEvents ? 'Data from Kiro, AWS Community Days and AWS Builder Center' : 'Data from AWS and community directories'}
+          {isEvents ? 'Data from Kiro and AWS Builder Center' : 'Data from AWS and community directories'}
           {!isEvents && <span>People may appear in more than one program.</span>}
         </div>
       </div>
