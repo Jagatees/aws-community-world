@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-10-16T19:02:39.432Z",
+  "checkedAt": "2026-10-19T05:42:55.988Z",
   "productCount": 235,
   "services": [
     {
@@ -5760,8 +5760,8 @@
     },
     {
       "id": "dd046ddd-9305-417e-b620-ac4ffc378690",
-      "title": "Build, Test, Optimize: Hands-On with Agentic AI with Connect Customer agentic CX Designer (ACXD)",
-      "description": "Stop watching demos. Start building! In this hands-on workshop, you'll build, test, and optimize agentic customer experiences yourself - and see how fast you can go from idea to live deployment. No code. No complexity. Just the power of AI-native tooling in your hands. This is an experience-first workshop where users can step into a prebuilt Amazon Connect environment and easily create a agentic experience using the agentic CX designer (ACXD).",
+      "title": "Build, Test, Optimize: Hands-On with Amazon Connect Customer agentic CX designer (ACXD)",
+      "description": "In this hands-on workshop, you build, test, and optimize an agentic self-service experience in Amazon Connect Customer using the agentic CX designer (ACXD). You start in a prebuilt Amazon Connect environment, pick one of ten industry scenarios, and take a conversational agent from its first prompt to a tested, deployed experience on chat and voice. No coding is required.",
       "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/dd046ddd-9305-417e-b620-ac4ffc378690",
       "services": [
         "Amazon Connect"
@@ -5781,7 +5781,7 @@
         "es",
         "pt"
       ],
-      "updatedAt": "2026-10-08T01:00:27Z",
+      "updatedAt": "2026-10-19T03:48:10Z",
       "createdAt": "2026-06-02T18:34:23Z",
       "sandboxAvailable": false
     },
