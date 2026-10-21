@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-10-20T05:39:51.624Z",
+  "checkedAt": "2026-10-21T05:42:49.995Z",
   "productCount": 235,
   "services": [
     {
@@ -3424,6 +3424,29 @@
       "sandboxAvailable": false
     },
     {
+      "id": "2052c4e9-c0ae-4e2d-bf88-f37bae6502dc",
+      "title": "Agent Toolkit for AWS",
+      "description": "Give your coding agent the tools, knowledge, and guardrails to build production-ready infrastructure on AWS.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/2052c4e9-c0ae-4e2d-bf88-f37bae6502dc",
+      "services": [
+        "Kiro"
+      ],
+      "serviceIds": [
+        "aws-kiro"
+      ],
+      "topics": [
+        "Builder Experience"
+      ],
+      "level": "200",
+      "durationHours": 1,
+      "languages": [
+        "en"
+      ],
+      "updatedAt": "2026-10-20T20:09:11Z",
+      "createdAt": "2026-09-03T12:05:49Z",
+      "sandboxAvailable": false
+    },
+    {
       "id": "7cb7c933-4024-4b69-a29a-b1159d6b909f",
       "title": "Agentic AI-Powered anomaly detection: Spotting anomalies in real-time",
       "description": "This hands-on workshop demonstrates how to implement real-time data processing using AWS data streaming services, combining Apache Kafka (MSK), Apache Flink (MSF), and Amazon Bedrock for Agentic AI integration.",
@@ -3905,7 +3928,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-09-04T09:44:21Z",
+      "updatedAt": "2026-10-20T11:17:43Z",
       "createdAt": "2023-10-06T19:07:28Z",
       "sandboxAvailable": false
     },
@@ -5488,7 +5511,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-07T02:39:09Z",
+      "updatedAt": "2026-10-20T13:59:29Z",
       "createdAt": "2023-06-01T20:56:31Z",
       "sandboxAvailable": false
     },
@@ -6842,7 +6865,7 @@
       "id": "ba8389fd-99a1-4010-a95e-d691a2c08311",
       "title": "Getting Started with Amazon WorkSpaces",
       "description": "In this lab, you'll learn how to deploy cloud desktops using Amazon WorkSpaces and the AWS Directory Service for your organizations end users.",
-      "url": "https://catalog.workshops.aws/workshops/ba8389fd-99a1-4010-a95e-d691a2c08311",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/ba8389fd-99a1-4010-a95e-d691a2c08311",
       "services": [
         "Amazon WorkSpaces"
       ],
@@ -6860,7 +6883,7 @@
         "ja",
         "fr"
       ],
-      "updatedAt": "2026-05-22T16:58:33Z",
+      "updatedAt": "2026-10-20T15:00:11Z",
       "createdAt": "2021-07-23T03:47:05Z",
       "sandboxAvailable": false
     },
@@ -6868,7 +6891,7 @@
       "id": "e324c13e-2ded-4da2-ad9c-f685305156ac",
       "title": "Getting Started with Amazon WorkSpaces applications",
       "description": "In this lab, you will learn how to deploy and stream desktop applications using Amazon WorkSpaces applications, a fully managed, secure application and desktop streaming service that runs on AWS.",
-      "url": "https://catalog.workshops.aws/workshops/e324c13e-2ded-4da2-ad9c-f685305156ac",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/e324c13e-2ded-4da2-ad9c-f685305156ac",
       "services": [
         "Amazon AppStream 2.0"
       ],
@@ -6885,7 +6908,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-05-22T16:58:33Z",
+      "updatedAt": "2026-10-20T18:04:12Z",
       "createdAt": "2021-07-22T17:50:14Z",
       "sandboxAvailable": false
     },
@@ -7303,7 +7326,7 @@
       "id": "c556569f-5a26-494f-88e1-bac5a55adf2a",
       "title": "InsuranceLake Quickstart",
       "description": "InsuranceLake is solution accelerator which helps you deploy ETL processes and data storage resources to create a serverless fit-for-purpose data lake for the Insurance industry. Participants will clone the public Github repository, deploy the CDK stack using Visual Code, and practice performing typical Insurance data transforms on sample written premium data. For a version of this workshop that does not require first deploying the application via CDK, see the InsuranceLake Deep Dive Workshop.",
-      "url": "https://catalog.workshops.aws/workshops/c556569f-5a26-494f-88e1-bac5a55adf2a",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/c556569f-5a26-494f-88e1-bac5a55adf2a",
       "services": [
         "Amazon QuickSight",
         "AWS Glue",
@@ -7324,7 +7347,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-02-04T18:26:53Z",
+      "updatedAt": "2026-10-20T19:49:18Z",
       "createdAt": "2023-12-18T17:18:50Z",
       "sandboxAvailable": false
     },
@@ -7870,6 +7893,33 @@
       "sandboxAvailable": false
     },
     {
+      "id": "dcf31eb4-6479-48ed-acc5-e58fe1f53656",
+      "title": "Multi-Agent Backtesting for Quant Developers by Bedrock AgentCore and Strands Agent SDK",
+      "description": "This workshop deploys multiple specialized agents, developed by Strands Agent SDK, deployed to Bedrock AgentCore, to transform trading ideas into backtested strategies from days to minutes: 1, Strategy Generator Agent - on Agentcore Runtime 2, Market Data Tool - Fetches market data on Agentcore Gateway 3, Backtest Tool - Backtests in Code Interpreter 4, Results Summary Agent - on Agentcore Runtime 5, Quant Agent to orchestrate the tools and agents above using Strands Agent SDK",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/dcf31eb4-6479-48ed-acc5-e58fe1f53656",
+      "services": [
+        "Amazon Bedrock AgentCore",
+        "Amazon Bedrock"
+      ],
+      "serviceIds": [
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-1"
+      ],
+      "topics": [
+        "Financial Services",
+        "Machine Learning (ML/AI)"
+      ],
+      "level": "300",
+      "durationHours": 3,
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "updatedAt": "2026-10-20T20:15:53Z",
+      "createdAt": "2026-04-17T12:46:28Z",
+      "sandboxAvailable": false
+    },
+    {
       "id": "4865ff9f-583e-4718-b75c-35344d4ea1c6",
       "title": "Next-gen agentic SaaS: Transforming to an agent-powered experience",
       "description": "The move to Agentic AI is having a profound impact on SaaS providers. For many, this will have a transformative effect on their business and architecture. This workshop will take an end-to-end pass through an agentic modernization, extracting functionality from an application and moving it into intelligent agents.",
@@ -7949,7 +7999,7 @@
         "de",
         "ko"
       ],
-      "updatedAt": "2026-10-16T08:33:45Z",
+      "updatedAt": "2026-10-20T23:43:33Z",
       "createdAt": "2025-09-01T21:06:27Z",
       "sandboxAvailable": true
     },
