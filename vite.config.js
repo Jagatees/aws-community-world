@@ -38,6 +38,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         communityDaySingapore: 'community-day-singapore/index.html',
+        slides: 'slides/index.html',
       },
     },
   },
