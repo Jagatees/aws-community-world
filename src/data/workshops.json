@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-10-21T05:42:49.995Z",
+  "checkedAt": "2026-10-22T05:45:12.127Z",
   "productCount": 235,
   "services": [
     {
@@ -3429,20 +3429,23 @@
       "description": "Give your coding agent the tools, knowledge, and guardrails to build production-ready infrastructure on AWS.",
       "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/2052c4e9-c0ae-4e2d-bf88-f37bae6502dc",
       "services": [
-        "Kiro"
+        "Kiro",
+        "AWS Tools and SDKs"
       ],
       "serviceIds": [
-        "aws-kiro"
+        "aws-kiro",
+        "aws-tools-and-sdks"
       ],
       "topics": [
-        "Builder Experience"
+        "Builder Experience",
+        "Generative AI"
       ],
       "level": "200",
       "durationHours": 1,
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-20T20:09:11Z",
+      "updatedAt": "2026-10-21T13:11:26Z",
       "createdAt": "2026-09-03T12:05:49Z",
       "sandboxAvailable": false
     },
@@ -3928,7 +3931,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-10-20T11:17:43Z",
+      "updatedAt": "2026-10-21T13:29:47Z",
       "createdAt": "2023-10-06T19:07:28Z",
       "sandboxAvailable": false
     },
@@ -4301,7 +4304,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-09-13T04:28:05Z",
+      "updatedAt": "2026-10-21T22:38:51Z",
       "createdAt": "2023-09-12T13:50:32Z",
       "sandboxAvailable": false
     },
@@ -5395,7 +5398,7 @@
         "en",
         "ko"
       ],
-      "updatedAt": "2026-09-09T16:40:36Z",
+      "updatedAt": "2026-10-21T17:42:41Z",
       "createdAt": "2023-03-03T19:32:57Z",
       "sandboxAvailable": false
     },
@@ -5667,7 +5670,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-09-19T11:57:41Z",
+      "updatedAt": "2026-10-21T15:25:17Z",
       "createdAt": "2026-05-26T18:29:49Z",
       "sandboxAvailable": false
     },
@@ -6696,7 +6699,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-08-14T23:34:37Z",
+      "updatedAt": "2026-10-21T22:12:54Z",
       "createdAt": "2026-01-14T03:46:03Z",
       "sandboxAvailable": false
     },
@@ -7523,14 +7526,15 @@
         "aws-kiro"
       ],
       "topics": [
-        "Builder Experience"
+        "Builder Experience",
+        "Generative AI"
       ],
       "level": "200",
       "durationHours": 4,
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-19T14:44:28Z",
+      "updatedAt": "2026-10-21T13:11:53Z",
       "createdAt": "2026-07-15T16:27:16Z",
       "sandboxAvailable": false
     },
@@ -7554,7 +7558,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-15T20:20:23Z",
+      "updatedAt": "2026-10-22T03:26:43Z",
       "createdAt": "2026-08-25T19:50:22Z",
       "sandboxAvailable": false
     },
@@ -7580,7 +7584,7 @@
         "ja",
         "fr"
       ],
-      "updatedAt": "2026-10-19T14:45:06Z",
+      "updatedAt": "2026-10-21T11:53:38Z",
       "createdAt": "2025-09-19T09:40:20Z",
       "sandboxAvailable": false
     },
@@ -7979,27 +7983,27 @@
       "description": "Welcome, brave adventurer, to the ultimate Strands framework quest! This comprehensive workshop will transform you from a coding apprentice into a master of AI agent orchestration. Through five epic chapters, you'll learn to create, equip, and command digital companions that can think, act, and collaborate like a legendary adventuring party.",
       "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/e1493217-4bc7-42f4-87d9-e231acd743bc",
       "services": [
-        "Amazon Bedrock",
         "Amazon Bedrock AgentCore",
+        "Amazon Bedrock",
         "AWS Tools and SDKs"
       ],
       "serviceIds": [
-        "amazon-bedrock-1",
         "amazon-bedrock-agentcore",
+        "amazon-bedrock-1",
         "aws-tools-and-sdks"
       ],
       "topics": [
         "Generative AI"
       ],
       "level": "300",
-      "durationHours": 2,
+      "durationHours": 3,
       "languages": [
         "en",
         "fr",
         "de",
         "ko"
       ],
-      "updatedAt": "2026-10-20T23:43:33Z",
+      "updatedAt": "2026-10-21T21:46:22Z",
       "createdAt": "2025-09-01T21:06:27Z",
       "sandboxAvailable": true
     },
@@ -8714,7 +8718,7 @@
         "zh",
         "ko"
       ],
-      "updatedAt": "2026-10-02T01:27:12Z",
+      "updatedAt": "2026-10-21T16:15:30Z",
       "createdAt": "2022-02-23T06:11:42Z",
       "sandboxAvailable": false
     },
