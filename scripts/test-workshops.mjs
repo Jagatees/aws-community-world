@@ -67,6 +67,9 @@ test('URL filters round-trip with enum validation and remove stale values', () =
   writeWorkshopParams(params, defaults);
   assert.equal(params.toString(), 'view=workshops');
   assert.deepEqual(readWorkshopFilters(new URLSearchParams('mode=invalid&level=900&sort=random&duration=0&language=invalid')), defaults);
+  const planner = { ...defaults, mode: 'plan' };
+  writeWorkshopParams(params, planner);
+  assert.deepEqual(readWorkshopFilters(params), planner);
 });
 
 test('snapshot links and service associations are valid, with no orphaned workshops', async () => {

@@ -10,7 +10,7 @@ const bounded = value => (value || '').trim().slice(0, 160);
 
 export function readWorkshopFilters(params) {
   return {
-    mode: params.get('mode') === 'world' ? 'world' : 'catalog',
+    mode: ['world', 'plan'].includes(params.get('mode')) ? params.get('mode') : 'catalog',
     browse: params.get('browse') === 'workshops' ? 'workshops' : 'services',
     service: bounded(params.get('service')), category: bounded(params.get('category')),
     level: Object.hasOwn(WORKSHOP_LEVELS, params.get('level')) ? params.get('level') : '',

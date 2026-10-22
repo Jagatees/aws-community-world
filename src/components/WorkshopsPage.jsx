@@ -13,6 +13,7 @@ const CATEGORIES = [...new Set(catalog.services.flatMap(service => service.categ
 const LANGUAGES = [...new Set(catalog.workshops.flatMap(workshop => workshop.languages))].sort((a, b) => languageName(a).localeCompare(languageName(b)));
 const PAGE_SIZE = 24;
 const WorkshopWorld = lazy(() => import('./WorkshopWorld'));
+const BuildPathPlanner = lazy(() => import('./BuildPathPlanner'));
 const updated = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(catalog.checkedAt));
 
 function ServiceIcon({ service }) {
@@ -79,9 +80,13 @@ export default function WorkshopsPage({ darkMode, onThemeChange, filters, onChan
     <WorkshopWorld darkMode={darkMode} onThemeChange={onThemeChange} filters={filters} onChange={onChange} searchQuery={searchQuery} />
   </Suspense>;
 
+  if (filters.mode === 'plan') return <Suspense fallback={<div className="workshop-world-loading" role="status">Building your learning path…</div>}>
+    <BuildPathPlanner darkMode={darkMode} initialServiceId={filters.service} onBack={() => onChange({ ...filters, mode: 'catalog' }, { navigate: true, search: '' })} />
+  </Suspense>;
+
   return <main className="workshops-page" data-theme={darkMode ? 'dark' : 'light'} ref={scrollRef} aria-label="AWS workshop explorer">
     <div className="workshops-inner">
-      <div className="workshop-topline"><span><BookOpenIcon size={17} /> WORKSHOP EXPLORER</span><div className="workshop-view-actions"><button type="button" className="workshop-button secondary" onClick={() => onChange({ ...filters, mode: 'world' }, { navigate: true, search: servicesView ? searchQuery : '' })}><CubeIcon size={18} /> 3D world</button><button type="button" className="workshop-theme" onClick={() => onThemeChange(!darkMode)} aria-label={`Switch to ${darkMode ? 'light' : 'dark'} theme`}>{darkMode ? <SunIcon size={20} /> : <MoonIcon size={20} />}</button></div></div>
+      <div className="workshop-topline"><span><BookOpenIcon size={17} /> WORKSHOP EXPLORER</span><div className="workshop-view-actions"><button type="button" className="workshop-button" onClick={() => navigate({ ...filters, mode: 'plan' })}><BookOpenIcon size={17} /> Build My Path</button><button type="button" className="workshop-button secondary" onClick={() => onChange({ ...filters, mode: 'world' }, { navigate: true, search: servicesView ? searchQuery : '' })}><CubeIcon size={18} /> 3D world</button><button type="button" className="workshop-theme" onClick={() => onThemeChange(!darkMode)} aria-label={`Switch to ${darkMode ? 'light' : 'dark'} theme`}>{darkMode ? <SunIcon size={20} /> : <MoonIcon size={20} />}</button></div></div>
       {filters.service && <button type="button" className="workshop-back" onClick={showServices}><ArrowLeftIcon size={16} /> All services</button>}
       <div className="workshop-heading">
         <div><h1 ref={headingRef} tabIndex={-1}>{filters.service ? service?.name || 'Service not found' : <>Find a workshop.<br /><span>Start with a service.</span></>}</h1><p>{filters.service ? service?.description || (service ? 'Hands-on learning for this AWS service or feature.' : 'This service link is not in the current catalog. Browse the directory to find a service.') : 'Pick the AWS service you want to learn. Find a hands-on workshop and start building.'}</p>{service?.url && <a className="workshop-service-link" href={service.url} target="_blank" rel="noopener noreferrer">Explore this service on AWS <ArrowSquareOutIcon size={14} /></a>}</div>

@@ -1,0 +1,45 @@
+{
+  "refreshedAt": "2026-10-19T00:04:34+08:00",
+  "cadence": "Monthly, on the first day of the month",
+  "catalogCheckedAt": "2026-10-16T19:02:39.432Z",
+  "paths": [
+    {
+      "id": "kiro-current-models",
+      "title": "Build with Kiro and today’s models",
+      "description": "A guided route from Kiro fundamentals to a Bedrock-powered agent you can secure, deploy, and evaluate.",
+      "modelCatalogUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "steps": [
+        {
+          "id": "kiro-foundations",
+          "label": "Get comfortable with Kiro",
+          "rationale": "Start with Kiro’s spec-driven workflow so you can plan and steer the build before adding model and agent complexity.",
+          "workshopId": "de3c344e-5cee-48a9-84e9-0292b7708734"
+        },
+        {
+          "id": "bedrock-and-kiro",
+          "label": "Build with Bedrock, Kiro, and agent tools",
+          "rationale": "Connect Kiro to Bedrock and learn how Strands and AgentCore fit into an agent-building workflow.",
+          "workshopId": "cdbce152-b193-43df-8099-908ee2d1a6e4"
+        },
+        {
+          "id": "responsible-ai",
+          "label": "Add safety checks",
+          "rationale": "Put responsible-use controls in place before exposing a generative AI application to users.",
+          "workshopId": "53c38a96-45e0-4019-967a-c73dcbe7a839"
+        },
+        {
+          "id": "agentcore-deploy",
+          "label": "Run an agent with AgentCore",
+          "rationale": "Move from a local prototype to the managed runtime and services used to operate agents on AWS.",
+          "workshopId": "c770f35f-90a9-4e02-8985-4ef912bddb77"
+        },
+        {
+          "id": "evaluate-and-observe",
+          "label": "Evaluate and observe the result",
+          "rationale": "Finish with evaluation and observability so you can measure quality and diagnose production behavior.",
+          "workshopId": "7b162876-713b-4ba9-88f8-524ee00d1f7c"
+        }
+      ]
+    }
+  ]
+}

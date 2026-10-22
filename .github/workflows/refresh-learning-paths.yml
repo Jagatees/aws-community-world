@@ -1,0 +1,54 @@
+name: Refresh curated learning paths
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: learning-path-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-paths:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Singapore
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh AWS workshop catalog
+        run: npm run update:workshops
+
+      - name: Rebuild curated path from the refreshed catalog
+        run: npm run refresh:learning-paths
+
+      - name: Validate path data and production build
+        run: |
+          node --test scripts/test-learning-paths.mjs
+          npm run build
+
+      - name: Commit refreshed path and workshop catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/workshops.json src/data/learning-paths.json
+          git diff --staged --quiet || git commit -m "chore: refresh curated learning path"
+          git pull --rebase
+          git push
