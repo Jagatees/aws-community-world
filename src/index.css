@@ -562,8 +562,20 @@ body {
 .globe-mode-menu button:hover,
 .globe-mode-menu button:focus-visible { color: #fff; background: rgba(80, 184, 219, 0.12); outline: none; transform: translateX(2px); }
 .globe-mode-menu button.is-active { color: #ffd54a; background: rgba(255, 153, 0, 0.1); }
-.globe-mode-menu button span { display: flex; flex-direction: column; gap: 0.12rem; }
-.globe-mode-menu button strong { font-size: 0.76rem; }
+.globe-mode-menu button > span { display: flex; flex-direction: column; gap: 0.12rem; }
+.globe-mode-menu button strong { display: flex; align-items: center; flex-wrap: wrap; gap: 0.45rem; font-size: 0.76rem; }
+.globe-mode-new {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 0.16rem 0.35rem;
+  border-radius: 999px;
+  background: #ff9900;
+  color: #0f1923;
+  font-size: 0.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
 .globe-mode-menu button small { color: #657d8d; font-size: 0.63rem; font-weight: 500; }
 .globe-mode-menu button i { width: 0.42rem; height: 0.42rem; border-radius: 50%; background: #ff9900; box-shadow: 0 0 10px rgba(255, 153, 0, 0.8); }
 
