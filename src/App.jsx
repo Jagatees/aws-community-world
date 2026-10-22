@@ -10,6 +10,7 @@ import { DEFAULT_WORKSHOP_FILTERS, readWorkshopFilters, writeWorkshopParams } fr
 import GlobeViewControls from './components/GlobeViewControls';
 import { getEventStatus, matchesEventStatus } from './utils/upcomingEvents';
 import { calendarDateKey, validCalendarMonth } from './utils/eventCalendarView';
+import { bookPositionFromSearch } from './utils/scrapbookBook';
 import GlobeErrorBoundary from './components/GlobeErrorBoundary';
 import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
@@ -30,6 +31,7 @@ const Country3DControl = lazy(() => import('./components/Country3DControl'));
 const IconArchiveScene = lazy(() => import('./components/ExperimentalHeroDex'));
 const BuilderLoftsScene = lazy(() => import('./components/BuilderLoftsScene'));
 const WorkshopsPage = lazy(() => import('./components/WorkshopsPage'));
+const ScrapbookScene = lazy(() => import('./components/ScrapbookScene'));
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -76,7 +78,7 @@ const DEFAULT_ROUTE_STATE = {
 
 const VALID_CATEGORIES = new Set(Object.keys(CATEGORY_LABELS));
 const GLOBE_DESIGNS = ['orbit', 'classic', 'sleek', 'flat', 'geolibre', 'icons', 'list', 'calendar', 'experimental'];
-const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights', 'workshops']);
+const VALID_GLOBE_DESIGNS = new Set([...GLOBE_DESIGNS, 'insights', 'workshops', 'scrapbook']);
 const MOBILE_GLOBE_DESIGNS = ['sleek', 'flat', 'icons', 'list', 'calendar'];
 const DESKTOP_GLOBE_DESIGNS = ['orbit', 'sleek', 'flat', 'icons', 'list', 'calendar'];
 const COMPACT_VIEWPORT_QUERY = '(max-width: 767px), (max-height: 480px) and (max-width: 900px)';
@@ -132,8 +134,10 @@ function getRouteStateFromUrl() {
   const experimental = view === 'experimental';
   const insights = view === 'insights' || view === 'trends';
   const workshops = view === 'workshops';
+  const scrapbook = view === 'scrapbook';
+  const standaloneView = experimental || insights || workshops || scrapbook;
   const defaultGlobeDesign = getResponsiveDefaultGlobeDesign();
-  const resolvedCategory = experimental || insights || workshops
+  const resolvedCategory = standaloneView
     ? 'heroes'
     : spotlight
       ? 'cloud-clubs'
@@ -150,30 +154,32 @@ function getRouteStateFromUrl() {
 
   return {
     activeCategory: resolvedCategory,
-    selectedTag: experimental || insights || workshops ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
-    selectedRegions: experimental || insights || workshops ? [] : spotlight ? [getRegionForCountry(spotlight.country)] : getRouteSelections(params, 'region'),
-    selectedCountries: experimental || insights || workshops ? [] : spotlight ? [spotlight.country] : getRouteSelections(params, 'country'),
+    selectedTag: standaloneView ? null : params.get('tag') || DEFAULT_ROUTE_STATE.selectedTag,
+    selectedRegions: standaloneView ? [] : spotlight ? [getRegionForCountry(spotlight.country)] : getRouteSelections(params, 'region'),
+    selectedCountries: standaloneView ? [] : spotlight ? [spotlight.country] : getRouteSelections(params, 'country'),
     globeDesign: experimental
       ? 'experimental'
       : insights
       ? 'insights'
       : workshops
       ? 'workshops'
+      : scrapbook
+      ? 'scrapbook'
       : spotlight
       ? 'classic'
       : VALID_GLOBE_DESIGNS.has(view) && supportedPublicView
         ? view
         : defaultGlobeDesign,
     darkMode: theme === 'light' ? false : DEFAULT_ROUTE_STATE.darkMode,
-    countrySpotlight: experimental || insights || workshops ? null : spotlight?.country ?? null,
-    newOnly: !experimental && !insights && !workshops && NEW_ARRIVAL_CATEGORIES.has(resolvedCategory) && newOnly,
+    countrySpotlight: standaloneView ? null : spotlight?.country ?? null,
+    newOnly: !standaloneView && NEW_ARRIVAL_CATEGORIES.has(resolvedCategory) && newOnly,
     eventStatus: TIMED_EVENT_CATEGORIES.has(resolvedCategory) && ['all', 'today', 'upcoming', 'ended'].includes(params.get('eventStatus'))
       ? params.get('eventStatus') : 'all',
     eventFilters: resolvedCategory === 'builder-events' ? readEventFilters(params)
       : resolvedCategory === 'kiro-events' ? { ...DEFAULT_EVENT_FILTERS, sort: readEventFilters(params).sort } : DEFAULT_EVENT_FILTERS,
     calendarMonth: validCalendarMonth(params.get('month')) ? params.get('month') : calendarDateKey(new Date()).slice(0, 7),
     workshopFilters: readWorkshopFilters(params),
-    searchQuery: experimental || insights || resolvedCategory === 'news' ? '' : searchQuery,
+    searchQuery: experimental || insights || scrapbook || resolvedCategory === 'news' ? '' : searchQuery,
     hasShareState,
   };
 }
@@ -200,6 +206,10 @@ function writeRouteStateToUrl({ activeCategory, selectedTag, selectedRegions, se
   if (EVENT_TOOLBAR_CATEGORIES.has(activeCategory) && eventFilters.sort !== 'soonest') params.set('sort', eventFilters.sort);
   if (searchQuery.trim() && activeCategory !== 'news') params.set('q', searchQuery.trim());
   if (globeDesign === 'workshops') writeWorkshopParams(params, workshopFilters);
+  if (globeDesign === 'scrapbook') {
+    // The scrapbook owns and validates its spread; retain it when shared filters change.
+    params.set('spread', String(bookPositionFromSearch(window.location.search)));
+  }
 
   const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}${window.location.hash}`;
   const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
@@ -288,6 +298,8 @@ export default function App() {
       ? 'insights'
       : globeDesign === 'workshops'
         ? 'workshops'
+      : globeDesign === 'scrapbook'
+        ? 'scrapbook'
       : EVENT_CATEGORIES.has(activeCategory) ? 'events' : 'community';
   const globeReady = !showSplash;
 
@@ -299,6 +311,7 @@ export default function App() {
   const isExperimentalView = globeDesign === 'experimental';
   const isInsightsView = globeDesign === 'insights';
   const isWorkshopsView = globeDesign === 'workshops';
+  const isScrapbookView = globeDesign === 'scrapbook';
   const availableGlobeDesigns = useMemo(
     () => getAvailableGlobeDesigns(compactViewport, activeCategory),
     [activeCategory, compactViewport]
@@ -306,7 +319,7 @@ export default function App() {
   const loadFullCommunityBuilders = isCommunityBuilderView && (
     isListView || isIconView || newOnly || Boolean(searchQuery || selectedTag || selectedRegions.length || selectedCountries.length)
   );
-  const { error, members, loading } = useCategory(showSplash || isInsightsView || isWorkshopsView ? null : activeCategory, loadFullCommunityBuilders);
+  const { error, members, loading } = useCategory(showSplash || isInsightsView || isWorkshopsView || isScrapbookView ? null : activeCategory, loadFullCommunityBuilders);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading && !isListView;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
@@ -340,7 +353,7 @@ export default function App() {
       const nextCompactViewport = event.matches;
       setCompactViewport(nextCompactViewport);
       setGlobeDesign((currentDesign) => {
-        if (currentDesign === 'experimental' || currentDesign === 'insights' || currentDesign === 'workshops' || currentDesign === 'classic') {
+        if (currentDesign === 'experimental' || currentDesign === 'insights' || currentDesign === 'workshops' || currentDesign === 'scrapbook' || currentDesign === 'classic') {
           return currentDesign;
         }
         const nextDesigns = getAvailableGlobeDesigns(nextCompactViewport, activeCategory);
@@ -697,6 +710,12 @@ export default function App() {
   }, [compactViewport]);
 
   const handleSectionChange = useCallback((section) => {
+    if (section === 'scrapbook') {
+      handleCategoryChange('heroes');
+      setGlobeDesign('scrapbook');
+      return;
+    }
+
     if (section === 'workshops') {
       handleCategoryChange('heroes');
       setWorkshopFilters(DEFAULT_WORKSHOP_FILTERS);
@@ -883,14 +902,14 @@ export default function App() {
   return (
     <div style={{ height: '100dvh', overflow: 'hidden', position: 'relative' }}>
     <div
-      className={`relative flex flex-col ${darkMode ? 'aws-shell-bg-dark' : 'aws-shell-bg-light'}`}
+      className={`relative flex flex-col ${darkMode || isScrapbookView ? 'aws-shell-bg-dark' : 'aws-shell-bg-light'}`}
       style={{ height: '100dvh', overflow: 'hidden' }}
     >
       <div className="aws-shell-pattern" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: darkMode
+          background: darkMode || isScrapbookView
             ? 'linear-gradient(180deg, rgba(9, 17, 26, 0.08) 0%, rgba(9, 17, 26, 0.36) 100%)'
             : 'linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(214, 229, 241, 0.22) 100%)',
         }}
@@ -898,11 +917,11 @@ export default function App() {
 
       <div className="relative z-10 flex min-h-0 flex-1 flex-col">
         <Header
-          darkMode={darkMode}
+          darkMode={isScrapbookView ? true : darkMode}
           activeSection={activeSection}
           onSectionChange={handleSectionChange}
         />
-        {!isExperimentalView && !isInsightsView && !isWorkshopsView && (
+        {!isExperimentalView && !isInsightsView && !isWorkshopsView && !isScrapbookView && (
           <TabNav
             activeCategory={activeCategory}
             onChange={handleCategoryChange}
@@ -921,7 +940,7 @@ export default function App() {
           />
         )}
 
-        {!showSplash && !isExperimentalView && !isInsightsView && !isWorkshopsView && (
+        {!showSplash && !isExperimentalView && !isInsightsView && !isWorkshopsView && !isScrapbookView && (
           <MobileNavigation
             darkMode={darkMode}
             section={activeSection}
@@ -959,7 +978,7 @@ export default function App() {
           />
         )}
 
-        {!isExperimentalView && !isInsightsView && !isWorkshopsView && !isCommunityDaysView && !isBuilderLoftsView && !isNewsView && !isEventToolbarView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
+        {!isExperimentalView && !isInsightsView && !isWorkshopsView && !isScrapbookView && !isCommunityDaysView && !isBuilderLoftsView && !isNewsView && !isEventToolbarView && activeCategory !== 'kiro-ambassadors' && !isKiroView && !isAwsAmbassadorView && hasTagFilters && (
           <div
             className="desktop-tag-filter-bar flex items-center gap-2 overflow-x-auto px-4 py-2"
             style={{
@@ -1010,7 +1029,7 @@ export default function App() {
           />
         )}
 
-        {activeError && !isInsightsView && !isWorkshopsView && (
+        {activeError && !isInsightsView && !isWorkshopsView && !isScrapbookView && (
           <div
             role="alert"
             className="px-4 py-2 text-center text-sm"
@@ -1021,7 +1040,11 @@ export default function App() {
         )}
 
         <div className="relative flex-1" style={{ minHeight: 0 }}>
-          {isWorkshopsView ? (
+          {isScrapbookView ? (
+            <Suspense fallback={renderGlobeLoading('Opening the community scrapbook...')}>
+              <ScrapbookScene />
+            </Suspense>
+          ) : isWorkshopsView ? (
             <Suspense fallback={renderGlobeLoading('Loading AWS workshops...')}>
               <WorkshopsPage darkMode={darkMode} onThemeChange={setDarkMode} filters={workshopFilters} searchQuery={searchQuery}
                 onChange={(filters, { search = searchQuery, navigate = false } = {}) => {
@@ -1618,13 +1641,13 @@ export default function App() {
 
         </div>
 
-        {!isInsightsView && !isWorkshopsView && !isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
+        {!isInsightsView && !isWorkshopsView && !isScrapbookView && !isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
           <Suspense fallback={null}>
             <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
           </Suspense>
         )}
 
-        {nearMeError && (
+        {nearMeError && !isScrapbookView && (
           <div
             className="absolute bottom-6 left-1/2 z-30 -translate-x-1/2 rounded-full px-4 py-2 text-xs font-semibold"
             style={{

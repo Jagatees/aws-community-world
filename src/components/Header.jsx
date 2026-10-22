@@ -4,6 +4,7 @@ const GLOBE_MODES = [
   { id: 'community', label: 'Community', description: 'People and groups' },
   { id: 'events', label: 'Events', description: 'Events, Builder Lofts and news' },
   { id: 'workshops', label: 'Workshops', description: 'Hands-on learning, organized by AWS service' },
+  { id: 'scrapbook', label: 'Scrapbook', description: 'A sticker-filled book of the AWS community' },
   { id: 'insights', label: 'Insights', description: 'Community intelligence dashboard' },
   { id: 'experimental', label: 'Experimental', description: 'A playground for new ideas and surprise features' },
 ];
@@ -11,8 +12,8 @@ const GLOBE_MODES = [
 /**
  * @param {{
  *   darkMode: boolean,
- *   activeSection: 'community' | 'events' | 'workshops' | 'insights' | 'experimental',
- *   onSectionChange: (section: 'community' | 'events' | 'workshops' | 'insights' | 'experimental') => void,
+ *   activeSection: 'community' | 'events' | 'workshops' | 'scrapbook' | 'insights' | 'experimental',
+ *   onSectionChange: (section: 'community' | 'events' | 'workshops' | 'scrapbook' | 'insights' | 'experimental') => void,
  * }} props
  */
 export default function Header({ darkMode, activeSection, onSectionChange }) {

@@ -1,0 +1,103 @@
+.sb-reactions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: max-content;
+  max-width: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-3px);
+  transition: opacity .16s ease, transform .16s ease;
+}
+
+.sb-reactable:hover > .sb-reactions,
+.sb-reactable:focus-within > .sb-reactions,
+.sb-reactions:focus-within,
+.sb-reactions.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.sb-reactions .sb-reaction-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 36px;
+  height: 28px;
+  margin: 0;
+  padding: 0 7px;
+  border: 1px solid #655b4133;
+  border-radius: 20px;
+  background: #fff9eaf5;
+  color: #69715d;
+  box-shadow: 0 1px 3px #41372714;
+  font-family: Scrapbook Sans, 'Segoe UI', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sb-reactions .sb-reaction-button > svg {
+  display: block;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+
+.sb-reactions .sb-reaction-button > span {
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+
+.sb-reactions .sb-reaction-button:hover {
+  border-color: #79856688;
+  background: #fffcf3;
+  color: #354d39;
+}
+
+.sb-reactions .sb-reaction-heart[aria-pressed=true] {
+  border-color: #b55e7566;
+  background: #fff0ed;
+  color: #a34263;
+}
+
+.sb-reactions .sb-reaction-thumbsup[aria-pressed=true] {
+  border-color: #71895877;
+  background: #f0f5e6;
+  color: #46623f;
+}
+
+.sb-reactions .sb-reaction-button:focus-visible {
+  outline: 2px solid #a15d23;
+  outline-offset: 3px;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .sb-reactions {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sb-reactions { transition: none; }
+}
+
+@media (forced-colors: active) {
+  .sb-reactions .sb-reaction-button { border: 1px solid ButtonText; }
+  .sb-reactions .sb-reaction-button[aria-pressed=true] { border: 2px solid Highlight; }
+}

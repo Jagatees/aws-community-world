@@ -1,0 +1,22 @@
+.sb-community-image{position:absolute;z-index:13;box-sizing:border-box;margin:0;padding:1.3% 1.3% 1.8%;background:#fffdf5;color:#3e5144;box-shadow:1px 3px 7px #3d352730,0 1px 2px #3d352720;touch-action:none;user-select:none;cursor:grab;outline:1px solid transparent;outline-offset:4px}
+.sb-community-image:active{cursor:grabbing}
+.sb-community-image.is-selected{z-index:19;outline:1px dashed #65785c}
+.sb-community-image:focus-visible{outline:2px solid #65785c}
+.sb-community-image .sb-community-image-photo{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;pointer-events:none;border-radius:0;background:#ece8dc}
+.sb-community-image figcaption{overflow:hidden;margin:0;padding-top:6%;font-family:Scrapbook Hand,'Comic Sans MS',cursive;font-size:clamp(10px,1.2cqw,18px);font-weight:400;line-height:1.15;text-align:center;white-space:nowrap;text-overflow:ellipsis}
+.sb-community-image .sb-image-caption-button,.sb-community-image .sb-image-caption-input{display:block;box-sizing:border-box;width:100%;min-width:0;margin:0;padding:2px;border:1px solid transparent;border-radius:3px;background:transparent;color:inherit;font:inherit;line-height:1.15;text-align:center;letter-spacing:normal}
+.sb-community-image .sb-image-caption-button{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;cursor:text;touch-action:manipulation}
+.sb-community-image .sb-image-caption-button:hover,.sb-community-image.is-selected .sb-image-caption-button{border-color:#65785c55;border-style:dashed}
+.sb-community-image .sb-image-caption-input{border:1px dashed #65785c;background:#f4f0df;outline:1px solid #65785c55;user-select:text;touch-action:manipulation}
+.sb-community-image .sb-image-caption-button:focus-visible{outline:2px solid #65785c;outline-offset:1px}
+.sb-image-actions{position:absolute;top:4px;right:4px;display:flex;flex-wrap:wrap;max-width:calc(100% - 8px);gap:1px;padding:3px;border-radius:8px;background:#263e35;box-shadow:0 2px 6px #102e1d33}
+.sb-image-actions button{display:grid;place-items:center;width:27px;height:27px;padding:0;border:0;border-radius:5px;background:transparent;color:#fbf4df;cursor:pointer;touch-action:manipulation}
+.sb-image-actions button:hover:not(:disabled){background:#fff2}
+.sb-image-actions button:disabled{opacity:.35;cursor:default}
+.sb-image-actions button:focus-visible{outline:2px solid #ffcf87;outline-offset:1px}
+.sb-image-actions button svg{display:block;width:15px;height:15px;pointer-events:none}
+.sb-image-actions .sb-image-move{cursor:grab;touch-action:none}
+.sb-image-actions .sb-image-move:active{cursor:grabbing}
+.sb-image-actions button:last-child{color:#edb7a6}
+@media(max-width:650px){.sb-community-image figcaption{font-size:clamp(10px,2cqw,16px)}}
+@media(forced-colors:active){.sb-community-image{border:1px solid CanvasText}.sb-image-actions{border:1px solid ButtonText}}
