@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-22T05:44:58.246Z",
+  "updatedAt": "2026-10-23T05:43:42.415Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -13402,7 +13402,7 @@
       }
     },
     {
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "source": {
         "type": "working-tree"
       },
@@ -13695,8 +13695,8 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-22",
-      "daysCovered": 207
+      "endDate": "2026-10-23",
+      "daysCovered": 208
     },
     "global": {
       "totalRecords": 4969,
@@ -13707,7 +13707,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-22",
+        "currentDate": "2026-10-23",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -14278,7 +14278,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-22",
+        "currentDate": "2026-10-23",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -14841,7 +14841,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-22",
+        "currentDate": "2026-10-23",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -15482,7 +15482,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-22",
+        "currentDate": "2026-10-23",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -16031,7 +16031,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-22",
+        "currentDate": "2026-10-23",
         "baselineTotal": 17,
         "currentTotal": 5,
         "currentCoveragePercent": 20,
@@ -16321,7 +16321,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-22",
+        "currentDate": "2026-10-23",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -16651,35 +16651,17 @@
       }
     },
     "upcoming": {
-      "total": 8,
-      "next30Days": 6,
+      "total": 6,
+      "next30Days": 4,
       "byRegion": {
         "north-america": 1,
         "south-america": 2,
-        "europe": 1,
-        "asia": 1,
+        "europe": 0,
+        "asia": 0,
         "africa": 1,
         "oceania": 0
       },
       "items": [
-        {
-          "name": "AWS Community Day Adria",
-          "location": "Ljubljana, Slovenia",
-          "country": "Slovenia",
-          "region": "europe",
-          "url": "https://awscommunityadria.com/",
-          "category": "community-days",
-          "date": "2026-10-22T12:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Hong Kong",
-          "location": "Hong Kong",
-          "country": "Hong Kong",
-          "region": "asia",
-          "url": "https://awscommunity.hk/",
-          "category": "community-days",
-          "date": "2026-10-22T12:00:00.000Z"
-        },
         {
           "name": "Kiroween 2026",
           "location": "Online",

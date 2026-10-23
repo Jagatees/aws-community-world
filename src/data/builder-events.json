@@ -1,71 +1,5 @@
 [
   {
-    "id": "builder-event-1a7a47f3-aead-346c-ae35-71da9e4cd3d6",
-    "name": "De la idea a producción: construyendo aplicaciones GenAI con Amazon Bedrock y Kiro",
-    "category": "builder-events",
-    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3K1E7QSRM63wbxVl8fjotNNgnoh/Chat.webp",
-    "profileUrl": "https://builder.aws.com/connect/event/1a7a47f3-aead-346c-ae35-71da9e4cd3d6",
-    "sourceUrl": "https://builder.aws.com/connect/event/1a7a47f3-aead-346c-ae35-71da9e4cd3d6",
-    "sourceLabel": "AWS Builder Center",
-    "description": "Descubre cómo combinar Kiro y Amazon Bedrock para transformar una idea en una aplicación de IA, desde la definición de requisitos y arquitectura hasta la implementación de modelos generativos y despliegue en AWS.",
-    "startsAt": "2026-10-23T00:30:00.000Z",
-    "endsAt": "2026-10-23T01:30:00.000Z",
-    "timeZone": "America/Guayaquil",
-    "eventDate": "22 Oct 2026, 7:30 – 8:30 pm (America/Guayaquil)",
-    "eventFormat": "Online",
-    "tag": "kiro-agent",
-    "tags": [
-      "kiro-agent"
-    ],
-    "country": "",
-    "countryCode": "",
-    "city": "",
-    "location": "Online",
-    "lat": 0,
-    "lng": 0,
-    "coordinatePrecision": null,
-    "coordinateSource": null,
-    "access": "Public",
-    "ctaLabel": "View event",
-    "organizerAlias": "aledpolo",
-    "registrationCount": 17,
-    "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
-  },
-  {
-    "id": "builder-event-cdea9d21-1556-3e72-9c52-b993b9d4f26e",
-    "name": "SDD con Kiro: Donde la especificación guía el código",
-    "category": "builder-events",
-    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3KKZVMtsEE5lOUdCcO44uq0gJNo/Meet.webp",
-    "profileUrl": "https://builder.aws.com/connect/event/cdea9d21-1556-3e72-9c52-b993b9d4f26e",
-    "sourceUrl": "https://builder.aws.com/connect/event/cdea9d21-1556-3e72-9c52-b993b9d4f26e",
-    "sourceLabel": "AWS Builder Center",
-    "description": "📅 Fecha: 22/Oct/2026\n⏰ Hora: 19:00\n📍 Ubicación: COFORGE\n\nÚnete a nosotros en esta sesión donde descubrirás cómo el desarrollo guiado por especificaciones (Spec-Driven Development) puede transformar la manera en que construimos software utilizando AWS Kiro.\n\nEn un entorno donde la Inteligencia Artificial nos permite generar código cada vez más rápido, definir correctamente qué queremos construir se vuelve fundamental. ¿Cómo podemos asegurarnos de que la implementación realmente refleje la intención del diseño?\n\nEn esta charla exploraremos cómo las especificaciones formales pueden ayudarnos a definir arquitecturas más claras, acelerar la generación de código y mantener una mejor alineación entre el diseño y la implementación.\nDurante la sesión, aprenderás a:\n\n✅ Comprender los fundamentos del Spec-Driven Development y su aplicación en proyectos de software.\n✅ Utilizar AWS Kiro para transformar especificaciones en implementaciones más estructuradas.\n✅ Definir arquitecturas y requisitos de manera clara antes de comenzar a generar código.\n✅ Reducir la deuda técnica mediante un proceso de desarrollo más organizado.\n✅ Mantener alineada la intención del diseño con la implementación.\n✅ Descubrir cómo integrar el desarrollo guiado por especificaciones en tu flujo de trabajo con IA.\n\nEsta charla es ideal para desarrolladores, arquitectos de software, ingenieros y profesionales tecnológicos que quieran explorar nuevas formas de construir software con IA, sin perder de vista la arquitectura, la calidad y las buenas prácticas de ingeniería.\n\nLa sesión será impartida por Josue Hernandez, quien nos guiará a través de los conceptos y prácticas del Spec-Driven Development utilizando AWS Kiro, mostrando cómo este enfoque puede cambiar la manera en que diseñamos y construimos software.\n\nEsta sesión es tu oportunidad perfecta para conocer nuevas formas de desarrollar con IA, experimentar con AWS Kiro, mejorar la forma en que defines y construyes tus proyectos, conectar con nuestra comunidad y seguir creciendo en tu camino profesional.\n\n¡Nos vemos en COFORGE, Ajolote! 💜🚀✨",
-    "startsAt": "2026-10-23T01:15:00.000Z",
-    "endsAt": "2026-10-23T03:30:00.000Z",
-    "timeZone": "America/Mexico_City",
-    "eventDate": "22 Oct 2026, 7:15 – 9:30 pm (America/Mexico_City)",
-    "eventFormat": "In person",
-    "tag": "kiro",
-    "tags": [
-      "kiro"
-    ],
-    "country": "Mexico",
-    "countryCode": "MX",
-    "city": "Cuauhtémoc",
-    "location": "Cuauhtémoc, Mexico, Mexico",
-    "lat": 19.4414715,
-    "lng": -99.1517322,
-    "coordinatePrecision": "city",
-    "coordinateSource": "OpenStreetMap / Nominatim",
-    "access": "Public",
-    "ctaLabel": "View event",
-    "organizerAlias": "luciomsp",
-    "registrationCount": 8,
-    "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
-  },
-  {
     "id": "builder-event-1b0ba9dc-1259-362a-8147-a601fb7b5a32",
     "name": "Agentic Football Cup | AWS Game Day",
     "category": "builder-events",
@@ -96,7 +30,7 @@
     "organizerAlias": "aitdemo1",
     "registrationCount": 13,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-9c2d6d27-eae3-3d47-ad05-55899477ed4b",
@@ -127,9 +61,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "katulubapaul",
-    "registrationCount": 10,
+    "registrationCount": 12,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-a0e8f852-8997-3ced-a591-4c317213e70b",
@@ -160,9 +94,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "afzama",
-    "registrationCount": 6,
+    "registrationCount": 7,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-0b33e61e-1696-373d-bcd9-351173b3c7e0",
@@ -193,9 +127,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "cybrpnk87",
-    "registrationCount": 35,
+    "registrationCount": 46,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-f9f83dee-be09-3201-8615-069b3b2b5e58",
@@ -226,9 +160,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "farzanfa07",
-    "registrationCount": 33,
+    "registrationCount": 41,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-851e9a65-5683-38e9-9205-8692f6d3daaf",
@@ -259,9 +193,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "toshal",
-    "registrationCount": 9,
+    "registrationCount": 21,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-fba92de1-6a60-37c7-9b8d-4c2e010ae176",
@@ -292,9 +226,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "vishalshakti",
-    "registrationCount": 33,
+    "registrationCount": 36,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-c2cfa18e-d91f-345c-98c0-241e06091467",
@@ -327,7 +261,7 @@
     "organizerAlias": "derocoxcloud",
     "registrationCount": 15,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-1d1561d7-47ac-38dd-9e7b-b394c3483652",
@@ -358,9 +292,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "hvillavicencio",
-    "registrationCount": 2,
+    "registrationCount": 3,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-23a989cc-e9e4-37aa-9b5c-9e33ee1d3954",
@@ -393,7 +327,7 @@
     "organizerAlias": "kinimod",
     "registrationCount": 5,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-e354ba4b-924c-3d1c-8bdf-5df9608bc3c5",
@@ -426,7 +360,7 @@
     "organizerAlias": "jdgoodall91",
     "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-e4d8ab5b-adde-34d8-ad94-697dd94fe492",
@@ -457,9 +391,42 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 22,
+    "registrationCount": 30,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
+  },
+  {
+    "id": "builder-event-e6d78d3e-9352-3afd-b8eb-203e1a4e433e",
+    "name": "AWS Women in Tech: Fireside Chat Series with Kathy Kam",
+    "category": "builder-events",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3L4ETMipPGK5x2iWq8AIaoMcls2/Fram.webp",
+    "profileUrl": "https://builder.aws.com/connect/event/e6d78d3e-9352-3afd-b8eb-203e1a4e433e",
+    "sourceUrl": "https://builder.aws.com/connect/event/e6d78d3e-9352-3afd-b8eb-203e1a4e433e",
+    "sourceLabel": "AWS Builder Center",
+    "description": "What does it take to build a long-term career in engineering while technology keeps changing?\n\nJoin Kathy Kam, who leads engineering for Kiro at AWS, for a conversation about growing as an engineer, taking on leadership opportunities, and adapting to new technology. With 25 years of experience building developer platforms, Kathy has worked on everything from foundational web technologies to cloud services and AI-powered developer tools.\n\nShe’ll share lessons from her career, what she has learned about leading engineering teams, and her advice for women who want to build and grow their careers in technology.\n\n  \nAbout the speaker\nKathy Kam leads engineering for Kiro at AWS. Over her 25-year career, she has built and led teams responsible for developer platforms across major technology companies. At AWS, she has led teams working on Amplify, AWS CDK, Amazon ECS, and the DevOps Agent. She also holds a patent for CSS Grid Layout and previously served on the Linux Foundation Board of Directors. Kathy is passionate about helping more women pursue careers in engineering leadership.",
+    "startsAt": "2026-10-27T21:00:00.000Z",
+    "endsAt": "2026-10-27T21:30:00.000Z",
+    "timeZone": "America/Los_Angeles",
+    "eventDate": "27 Oct 2026, 2:00 – 2:30 pm (America/Los_Angeles)",
+    "eventFormat": "Online",
+    "tag": "student-builders",
+    "tags": [
+      "student-builders"
+    ],
+    "country": "",
+    "countryCode": "",
+    "city": "",
+    "location": "Online",
+    "lat": 0,
+    "lng": 0,
+    "coordinatePrecision": null,
+    "coordinateSource": null,
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "rufeda",
+    "registrationCount": 1,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-6565e5b9-de26-3b3e-b848-051c3ef114fc",
@@ -492,7 +459,7 @@
     "organizerAlias": "ameliahr",
     "registrationCount": 6,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-b9ea386f-191c-376c-8be3-56d699b510ea",
@@ -523,9 +490,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 20,
+    "registrationCount": 29,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-53b20907-972a-36f8-8b8c-15da69f01fc6",
@@ -556,9 +523,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 51,
+    "registrationCount": 80,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-6c5ad90b-e60c-3568-96a1-cc6236d0ad17",
@@ -589,9 +556,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 12,
+    "registrationCount": 21,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-9b6c3419-8053-30c8-aa84-b74ca149145f",
@@ -624,7 +591,7 @@
     "organizerAlias": "ralphjs",
     "registrationCount": 16,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-1a086645-e00a-3795-b87a-86288050947d",
@@ -655,9 +622,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 14,
+    "registrationCount": 19,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-5d33e064-3ead-3994-9afa-d60b094e1fb1",
@@ -688,9 +655,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 17,
+    "registrationCount": 29,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-442d1a7b-4984-381f-a4ad-8931b80a7af7",
@@ -721,9 +688,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 36,
+    "registrationCount": 68,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-a4c60039-c421-3c3b-8bf1-39ba325eccc8",
@@ -754,9 +721,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 12,
+    "registrationCount": 18,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-9088945b-a80d-36c8-be73-6b6c416e219a",
@@ -787,9 +754,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 26,
+    "registrationCount": 48,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-3a574c55-03d5-3434-a0cb-52a19ffad6c4",
@@ -822,7 +789,7 @@
     "organizerAlias": "julissarparco",
     "registrationCount": 9,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-47ba8b6e-cf9f-3e8b-9743-b9bcf83146ca",
@@ -855,7 +822,7 @@
     "organizerAlias": "pogamacet",
     "registrationCount": 8,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-ecfb5ffe-ad13-3348-a477-a56fe2ab2d45",
@@ -888,7 +855,7 @@
     "organizerAlias": "liviamor",
     "registrationCount": 5,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-d6e7c9d3-02aa-3c57-8da2-84cfec7bdb23",
@@ -919,9 +886,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rufeda",
-    "registrationCount": 10,
+    "registrationCount": 20,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-93c511f1-5daf-3d50-9f61-f37cbdd5997a",
@@ -952,9 +919,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "natndlovu",
-    "registrationCount": 3,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-39489d9e-07d9-37d3-8798-e42df998571d",
@@ -987,7 +954,7 @@
     "organizerAlias": "mobeen",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-a2191024-58be-3f43-9f03-890e1e078d8f",
@@ -1020,7 +987,7 @@
     "organizerAlias": "mitulshahriyar",
     "registrationCount": 6,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-9e8905d4-b531-35dc-bf36-d208f4e20716",
@@ -1053,7 +1020,7 @@
     "organizerAlias": "juanpab1980",
     "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-b45b3128-b165-3257-aad3-afe52ee869a1",
@@ -1086,7 +1053,7 @@
     "organizerAlias": "bryanchasko",
     "registrationCount": 7,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-2333a0d8-ea21-32a1-b262-645fef7ce554",
@@ -1119,7 +1086,7 @@
     "organizerAlias": "sergiomondragon",
     "registrationCount": 6,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-e590b621-e5ca-3d74-afc1-5b68e2de4939",
@@ -1150,9 +1117,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "abhishekkushwaha",
-    "registrationCount": 0,
+    "registrationCount": 1,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-d9e0ec20-5b64-35e8-a260-4d04caeb88d5",
@@ -1183,9 +1150,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "almorgante",
-    "registrationCount": 31,
+    "registrationCount": 48,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-43920005-4a66-36d9-87ff-eff1229eb0d5",
@@ -1218,7 +1185,7 @@
     "organizerAlias": "relivnd",
     "registrationCount": 6,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-47a440fe-7cda-3fbd-b843-5f95aa8dbd97",
@@ -1251,7 +1218,7 @@
     "organizerAlias": "mbladh",
     "registrationCount": 3,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-4453a425-6938-3a75-af8e-ecd1d53be786",
@@ -1284,7 +1251,7 @@
     "organizerAlias": "kkeles",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-ae1e77e4-cbe7-3559-9b3b-2fb75cefe64d",
@@ -1315,9 +1282,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "margaretvaltierra",
-    "registrationCount": 3,
+    "registrationCount": 5,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-b14d784b-4324-33b8-951b-71e61279c1b1",
@@ -1348,9 +1315,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "robertoflores",
-    "registrationCount": 3,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-cd1e4f8c-1533-3e02-bd6d-0ede3553b409",
@@ -1360,7 +1327,7 @@
     "profileUrl": "https://builder.aws.com/connect/event/cd1e4f8c-1533-3e02-bd6d-0ede3553b409",
     "sourceUrl": "https://builder.aws.com/connect/event/cd1e4f8c-1533-3e02-bd6d-0ede3553b409",
     "sourceLabel": "AWS Builder Center",
-    "description": "Join us for the AWS User Group Surat November Meetup! ☁️\n\nConnect with fellow cloud enthusiasts, explore AWS concepts through a technical session, and share ideas with the community. Whether you’re starting your cloud journey or already working with AWS, everyone is welcome.\n\n🎤 Speaker: TBD\n📍 Venue: TBD\n📚 Session topic: To be announced\n\nStay tuned for more details!",
+    "description": "AWS User Group Surat is hosting two technical sessions on deploying and operating AI agents on AWS.\n\n \n\nMitul Sarvaiya, Founder and Principal Architect at Sarvaswa AI Labs, will speak about deploying agents on AgentCore Runtime. Abhishek Monpara, AWS Cloud Engineer at CloudGate, will cover self-hosting AI agents on ECS, including scaling and logging.\n\n \n\nDate: 14 November 2026\nTime: 10:00–11:30 AM IST\n\nVenue: DevX Co-working Space, 3rd Floor, Stalwart Insignia, University Airport Road, beside Shantiniketan, Piplod, Surat\n\n \n\nThe meetup is open to cloud and software engineers, architects, DevOps professionals, and students.",
     "startsAt": "2026-11-14T04:30:00.000Z",
     "endsAt": "2026-11-14T05:30:00.000Z",
     "timeZone": "Asia/Kolkata",
@@ -1381,9 +1348,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "nirmalpatel008",
-    "registrationCount": 26,
+    "registrationCount": 28,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-9e1b94fa-5389-37fa-aef6-da10ea535aae",
@@ -1416,7 +1383,7 @@
     "organizerAlias": "prisantos",
     "registrationCount": 11,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-edc07a1c-0049-30ce-a0fb-303fd3ed55ff",
@@ -1449,7 +1416,7 @@
     "organizerAlias": "derickrodrigues",
     "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-805e008a-fbee-3bde-9465-5c1ad0e1bc0c",
@@ -1480,9 +1447,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "sergiomondragon",
-    "registrationCount": 2,
+    "registrationCount": 3,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-8d261820-5975-3253-b782-7f0d0f158601",
@@ -1515,7 +1482,7 @@
     "organizerAlias": "haiyin",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-afc6e2e4-cc4c-3a4b-8a06-490992079fc5",
@@ -1548,7 +1515,40 @@
     "organizerAlias": "heyiyis",
     "registrationCount": 6,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
+  },
+  {
+    "id": "builder-event-d4401c2d-59fe-3c41-868f-832d2ee794f8",
+    "name": "AWS Skills Center Seattle Turns 5: The Celebration Event",
+    "category": "builder-events",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3L4AOnHP1swu8Wllsqlz15xoBnf/AWS_.webp",
+    "profileUrl": "https://builder.aws.com/connect/event/d4401c2d-59fe-3c41-868f-832d2ee794f8",
+    "sourceUrl": "https://builder.aws.com/connect/event/d4401c2d-59fe-3c41-868f-832d2ee794f8",
+    "sourceLabel": "AWS Builder Center",
+    "description": "🎉 Celebrate 5 Years of Building with the AWS Skills Center Seattle!\n\nJoin us for our 5-Year Anniversary Celebration!\n\n📅 Thursday, November 19, 2026\n\n🕓 4:00 – 7:00 PM\n\n📍 AWS Skills Center, Seattle\n\nFive years. Thousands of learners. One incredible community. We're throwing open our doors to celebrate everything we've built together — and we'd love for you to be part of it.\n\nCome for an evening of networking, food & drinks, inspiring stories, and a special fireside chat with AWS Chief Evangelist Jeff Barr. Whether you're a past learner, a future one, a partner, or a friend of the Skills Center, this night is for you.\n\n🗓️ Event Agenda — Thursday, Nov 19\n\n| Time               | What's Happening                                                                              |\n| ------------------ | --------------------------------------------------------------------------------------------- |\n| 4:00 – 4:30 PM | Check-In & Welcome — grab your event badge and raffle ticket, enjoy networking, food & drinks |\n| 4:30 – 4:40 PM | Opening Remarks — a look back at our 5-year journey                                           |\n| 4:40 – 5:30 PM | Learner Panel — current and past learners share their Cloud & AI journeys                     |\n| 5:45 – 6:30 PM | 🔥 Fireside Chat with Jeff Barr, Chief Evangelist of AWS                                  |\n| 6:30 – 6:35 PM | Cake Presentation & Raffle Winners 🎂                                                         |\n| 6:35 – 7:00 PM | Networking & Celebration — food, drinks, and good company                                     |\n\n✨ Make it a whole week!\n\nThe celebration is part of a full week of events (Nov 16–20) — AI Foundations, a Builder Fair \"mini re:Invent,\" hands-on workshops, and career-launch sessions. Ask us how to join the rest of the week too!\n\n📝 Reserve Your Spot\n\nSpace is limited — please register to help us plan food, drinks, and seating. We can't wait to celebrate with you!\n\n📧 Questions?\n\nContact [aws-skills-center-seattle@amazon.com](mailto:aws-skills-center-seattle@amazon.com)****",
+    "startsAt": "2026-11-20T00:00:00.000Z",
+    "endsAt": "2026-11-20T03:00:00.000Z",
+    "timeZone": "America/Los_Angeles",
+    "eventDate": "19 Nov 2026, 4:00 – 7:00 pm (America/Los_Angeles)",
+    "eventFormat": "In person",
+    "tag": "networking",
+    "tags": [
+      "networking"
+    ],
+    "country": "United States",
+    "countryCode": "US",
+    "city": "Seattle",
+    "location": "Seattle, WA, United States",
+    "lat": 47.6038321,
+    "lng": -122.330062,
+    "coordinatePrecision": "city",
+    "coordinateSource": "OpenStreetMap / Nominatim",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "megsul",
+    "registrationCount": 1,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-70464b97-f2fd-3d7d-85b1-d7c8e302e1f1",
@@ -1581,7 +1581,7 @@
     "organizerAlias": "ogemelody",
     "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-faaff241-e5d9-36b8-bc94-f59164cce9a4",
@@ -1614,7 +1614,7 @@
     "organizerAlias": "marcopiccardo",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-f2cc3b88-1634-3334-94b5-5528bf7d4323",
@@ -1647,21 +1647,21 @@
     "organizerAlias": "gmw",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
-    "id": "builder-event-785bb93a-c5cc-37c1-8aab-d3840effabd9",
-    "name": "Aws re:Invent watch Party",
+    "id": "builder-event-2d5b817a-0fa5-3dca-8f9a-985de1fb30dd",
+    "name": "re:Invent Watch & Build Party proposal,Amravati,",
     "category": "builder-events",
     "avatarUrl": "",
-    "profileUrl": "https://builder.aws.com/connect/event/785bb93a-c5cc-37c1-8aab-d3840effabd9",
-    "sourceUrl": "https://builder.aws.com/connect/event/785bb93a-c5cc-37c1-8aab-d3840effabd9",
+    "profileUrl": "https://builder.aws.com/connect/event/2d5b817a-0fa5-3dca-8f9a-985de1fb30dd",
+    "sourceUrl": "https://builder.aws.com/connect/event/2d5b817a-0fa5-3dca-8f9a-985de1fb30dd",
     "sourceLabel": "AWS Builder Center",
     "description": "",
-    "startsAt": "2026-11-30T10:30:00.000Z",
-    "endsAt": "2026-11-30T13:30:00.000Z",
-    "timeZone": "Asia/Calcutta",
-    "eventDate": "30 Nov 2026, 4:00 – 7:00 pm (Asia/Calcutta)",
+    "startsAt": "2026-11-29T05:30:00.000Z",
+    "endsAt": "2026-11-29T09:30:00.000Z",
+    "timeZone": "Asia/Kolkata",
+    "eventDate": "29 Nov 2026, 11:00 am – 3:00 pm (Asia/Kolkata)",
     "eventFormat": "In person",
     "tag": "agentic-ai",
     "tags": [
@@ -1669,18 +1669,51 @@
     ],
     "country": "India",
     "countryCode": "IN",
-    "city": "Patna",
-    "location": "Patna, Bihar, India",
-    "lat": 25.60134,
-    "lng": 85.13752,
-    "coordinatePrecision": "venue",
-    "coordinateSource": "AWS Builder Center",
+    "city": "Amravati",
+    "location": "Amravati, Maharashtra, India",
+    "lat": 20.9316219,
+    "lng": 77.7588455,
+    "coordinatePrecision": "city",
+    "coordinateSource": "OpenStreetMap / Nominatim",
     "access": "Public",
     "ctaLabel": "View event",
-    "organizerAlias": "atrajnishkumar",
-    "registrationCount": 3,
+    "organizerAlias": "yashsathe",
+    "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
+  },
+  {
+    "id": "builder-event-e1c5340e-ba50-34ae-adb1-a733f449cc52",
+    "name": "AWS re:Invent Watch & Build Party Lahore 2026",
+    "category": "builder-events",
+    "avatarUrl": "",
+    "profileUrl": "https://builder.aws.com/connect/event/e1c5340e-ba50-34ae-adb1-a733f449cc52",
+    "sourceUrl": "https://builder.aws.com/connect/event/e1c5340e-ba50-34ae-adb1-a733f449cc52",
+    "sourceLabel": "AWS Builder Center",
+    "description": "Join the AWS User Group Lahore and AWS Student Builder Group for a free, in-person AWS re Watch & Build Party, bringing the re experience to our local community.\n\nThis  event brings together developers, cloud professionals, AWS Partner teams, and students to watch selected re keynote and technical session recordings, explore new ideas, and build together using AWS services.\n\nWhat to expect:\n\n* Watch and discuss: Explore selected re announcements and technical sessions, with community discussions focused on generative AI and agentic applications.\n* Build hands-on: Participate in our planned workshop, “Building with Amazon Bedrock featuring Claude Code, Kiro, AgentCore, and Strands Agents.”\n* Connect with fellow builders: Meet community leaders, industry professionals, and students to exchange ideas, share experiences, and discover opportunities to collaborate.\n\nBring your laptop for the hands-on activities. The final agenda, viewing playlist, and workshop prerequisites will be shared before the event.\n\nCome ready to learn, build, and connect with Lahore’s AWS community!",
+    "startsAt": "2026-11-30T07:00:00.000Z",
+    "endsAt": "2026-11-30T10:00:00.000Z",
+    "timeZone": "Asia/Karachi",
+    "eventDate": "30 Nov 2026, 12:00 – 3:00 pm (Asia/Karachi)",
+    "eventFormat": "In person",
+    "tag": "aws-community",
+    "tags": [
+      "aws-community"
+    ],
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "city": "Lahore",
+    "location": "Lahore, Punjab, Pakistan",
+    "lat": 31.5656822,
+    "lng": 74.3141829,
+    "coordinatePrecision": "city",
+    "coordinateSource": "OpenStreetMap / Nominatim",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "sumama",
+    "registrationCount": 10,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-b2c32188-bfe7-30b4-abd9-fe0e70b8a46d",
@@ -1713,7 +1746,40 @@
     "organizerAlias": "nwoken",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
+  },
+  {
+    "id": "builder-event-c8c42bae-19fa-3f02-987a-3b93e52109da",
+    "name": "re:Invent Watch & Build Party in Addis Ababa",
+    "category": "builder-events",
+    "avatarUrl": "",
+    "profileUrl": "https://builder.aws.com/connect/event/c8c42bae-19fa-3f02-987a-3b93e52109da",
+    "sourceUrl": "https://builder.aws.com/connect/event/c8c42bae-19fa-3f02-987a-3b93e52109da",
+    "sourceLabel": "AWS Builder Center",
+    "description": "",
+    "startsAt": "2026-12-01T22:30:00.000Z",
+    "endsAt": "2026-12-02T03:00:00.000Z",
+    "timeZone": "Africa/Addis_Ababa",
+    "eventDate": "2 Dec 2026, 1:30 – 6:00 am (Africa/Addis_Ababa)",
+    "eventFormat": "In person",
+    "tag": "aws-builders",
+    "tags": [
+      "aws-builders"
+    ],
+    "country": "Ethiopia",
+    "countryCode": "ET",
+    "city": "Addis Ababa",
+    "location": "Addis Ababa, Ethiopia",
+    "lat": 9.0358119,
+    "lng": 38.7524315,
+    "coordinatePrecision": "city",
+    "coordinateSource": "OpenStreetMap / Nominatim",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "danieltech",
+    "registrationCount": 0,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-78f82152-7fae-371f-8adb-ad48fa1a8ac9",
@@ -1744,9 +1810,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "nitin8400",
-    "registrationCount": 74,
+    "registrationCount": 92,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-26f2c450-21b9-3b26-973e-f37e04a73b29",
@@ -1779,7 +1845,40 @@
     "organizerAlias": "pritamkumar99",
     "registrationCount": 3,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
+  },
+  {
+    "id": "builder-event-a0c82f2a-c0cd-3bd0-a0fb-edb2d6d19f03",
+    "name": "AWS re:Invent Watch & Build Party – Trichy Edition",
+    "category": "builder-events",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3L4GWmKVMWWV8dJfLmRyPLscXOH/AWS-.webp",
+    "profileUrl": "https://builder.aws.com/connect/event/a0c82f2a-c0cd-3bd0-a0fb-edb2d6d19f03",
+    "sourceUrl": "https://builder.aws.com/connect/event/a0c82f2a-c0cd-3bd0-a0fb-edb2d6d19f03",
+    "sourceLabel": "AWS Builder Center",
+    "description": "Join AWS User Group Trichy for an AWS re Watch & Build Party, in collaboration with the AWS Student Builder Group at J.J. College of Engineering and Technology.\n\n \n\nWe’ll watch selected AWS re sessions, discuss announcements, and explore how to use the services through hands-on building activities. Bring your questions, share ideas, and connect with students and cloud practitioners.\n\n \n\nWhether you’re getting started with AWS or already building on the cloud, you’re welcome to join. \n\n \n\nBring your laptop to take part in the hands-on activities.",
+    "startsAt": "2026-12-02T07:30:00.000Z",
+    "endsAt": "2026-12-02T11:30:00.000Z",
+    "timeZone": "Asia/Calcutta",
+    "eventDate": "2 Dec 2026, 1:00 – 5:00 pm (Asia/Calcutta)",
+    "eventFormat": "In person",
+    "tag": "reinvent",
+    "tags": [
+      "reinvent"
+    ],
+    "country": "India",
+    "countryCode": "IN",
+    "city": "Srirangam",
+    "location": "Srirangam, Tamil Nadu, India",
+    "lat": 10.8573308,
+    "lng": 78.6930848,
+    "coordinatePrecision": "city",
+    "coordinateSource": "OpenStreetMap / Nominatim",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "mahendranselva",
+    "registrationCount": 0,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-754ad1dd-4bb4-3429-8aaf-6ea891220b80",
@@ -1812,17 +1911,50 @@
     "organizerAlias": "mahendranselva",
     "registrationCount": 1,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
+  },
+  {
+    "id": "builder-event-314fab12-6494-3cf9-b9ec-719a636b37fc",
+    "name": "AWS re:Invent Watch & Build Party - Baite Edition",
+    "category": "builder-events",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3L3Kcl9dMzLLsnXuyXFKmibEkgS/Post.webp",
+    "profileUrl": "https://builder.aws.com/connect/event/314fab12-6494-3cf9-b9ec-719a636b37fc",
+    "sourceUrl": "https://builder.aws.com/connect/event/314fab12-6494-3cf9-b9ec-719a636b37fc",
+    "sourceLabel": "AWS Builder Center",
+    "description": "Join us for the AWS re:Invent Watch & Build Party in Meru City, where we are bringing the excitement and innovation of the world’s premier cloud computing conference directly to our local tech community!\n\n \n\nThis full-day event is designed for developers, cloud enthusiasts, and IT professionals who want to experience the best of AWS re:Invent without leaving Kenya.\n\n \n\nWhat to Expect\n\n \n\n* Watch: Catch the biggest product announcements, keynote highlights, and cutting-edge cloud innovations directly from the main AWS re:Invent 2026 stages.\n* Build: Dive into interactive, hands-on building sessions and labs. Bring your laptop and collaborate with peers to test out new AWS services and architectures in real-time.\n* Connect: Network with local cloud engineers, tech community leaders, and fellow innovators to share ideas, learn new skills, and strengthen the Meru tech ecosystem.\n\nEvent Details\n\n \n\n* Date: Thursday, December 3rd, 2026\n* Time: 9:00 AM – 5:00 PM EAT\n* Location: Meru City, Kenya (Specific Venue to be Announced)\n* Who Should Attend: Software engineers, cloud architects, IT students, and anyone eager to expand their cloud skills.\n\nPlease remember to bring your laptop and charger for the hands-on building sessions. Let’s learn, build, and innovate together!",
+    "startsAt": "2026-12-03T06:00:00.000Z",
+    "endsAt": "2026-12-03T14:00:00.000Z",
+    "timeZone": "Africa/Nairobi",
+    "eventDate": "3 Dec 2026, 9:00 am – 5:00 pm (Africa/Nairobi)",
+    "eventFormat": "In person",
+    "tag": "reinvent",
+    "tags": [
+      "reinvent"
+    ],
+    "country": "Kenya",
+    "countryCode": "KE",
+    "city": "Meru",
+    "location": "Meru, Meru, Kenya",
+    "lat": 0.0591156,
+    "lng": 37.6484058,
+    "coordinatePrecision": "city",
+    "coordinateSource": "OpenStreetMap / Nominatim",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "kevintuei",
+    "registrationCount": 0,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-8cb27ad9-ec79-35d9-ad94-b70571cc22af",
     "name": "AWS re:Invent Watch & Build Party - Colombo",
     "category": "builder-events",
-    "avatarUrl": "",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3L2TNVrqizDpW7kqXOdL0u77H9M/Imag.webp",
     "profileUrl": "https://builder.aws.com/connect/event/8cb27ad9-ec79-35d9-ad94-b70571cc22af",
     "sourceUrl": "https://builder.aws.com/connect/event/8cb27ad9-ec79-35d9-ad94-b70571cc22af",
     "sourceLabel": "AWS Builder Center",
-    "description": "",
+    "description": "Join for an evening of re:Invent highlights, networking and hands-on building with students and builders across Sri Lanka.",
     "startsAt": "2026-12-03T12:30:00.000Z",
     "endsAt": "2026-12-03T14:30:00.000Z",
     "timeZone": "Asia/Colombo",
@@ -1845,7 +1977,7 @@
     "organizerAlias": "bl4ckf0xk",
     "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-53544195-1771-3878-be6f-cb5b9268f0a8",
@@ -1878,7 +2010,40 @@
     "organizerAlias": "ameliahr",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
+  },
+  {
+    "id": "builder-event-6742d275-2349-3ff6-b244-f95df1287612",
+    "name": "AWS reWatch & Build Party Brasília 2026",
+    "category": "builder-events",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3L4RFxNEytMkNNjzW8O79sjdyEb/Fold.webp",
+    "profileUrl": "https://builder.aws.com/connect/event/6742d275-2349-3ff6-b244-f95df1287612",
+    "sourceUrl": "https://builder.aws.com/connect/event/6742d275-2349-3ff6-b244-f95df1287612",
+    "sourceLabel": "AWS Builder Center",
+    "description": "AWS re Watch & Build Party Brasília 2026 🇧🇷☁️\n\n📅 3 de dezembro de 2026\n🕕 A partir das 18h\n📍 Brasília, DF — formato híbrido\n🤝 Organização: AWS User Group Brasília + AWS Student Builder Group at UnB + AWS Staff + re:Invent Bar Raiser\n\nSobre o evento\n\nVamos trazer as novidades de Las Vegas diretamente para Brasília!\n\nO AWS re Watch & Build Party Brasília é um encontro especial para reunir estudantes, profissionais de tecnologia e entusiastas de Cloud em uma experiência de aprendizado, colaboração e networking durante a semana do AWS re 2026.\n\nA proposta é acompanhar os principais anúncios e lançamentos da AWS, conversar sobre novas possibilidades em Cloud e Inteligência Artificial e transformar conhecimento em prática por meio de atividades colaborativas e desafios no estilo Game Day.\n\nMais do que assistir às novidades, queremos explorar como essas tecnologias podem ser aplicadas em projetos reais, conectar a comunidade local ao ecossistema AWS e incentivar a próxima geração de builders a experimentar, construir e compartilhar soluções.\n\nO que vamos fazer?\n\n* ☁️ Watch: acompanhar conteúdos e novidades selecionados do AWS re 2026.\n* 🛠️ Build: explorar tecnologias AWS em atividades práticas e desafios colaborativos.\n* 🤝 Connect: conectar estudantes, profissionais e membros da comunidade para trocar experiências e criar novas oportunidades.\n\nPalestrantes\n\n🎤 Thayane Viana — Solutions Architect, Public Sector na AWS. Vai contribuir com sua experiência em arquitetura de soluções e tecnologias em nuvem no contexto do setor público.\n\n🎤 André Teixeira — Solutions Architect na AWS. Vai compartilhar sua perspectiva técnica sobre soluções e possibilidades do ecossistema AWS.\n\nOrganização\n\nO encontro é organizado por lideranças do AWS User Group Brasília e da comunidade estudantil:\n\n* Wagner Landim — Principal UG Leader\n* Priscila Araújo — Second UG Leader & re:Invent Bar Raiser\n* Savio Mendes — Principal UG Student Leader\n\n \n\n \n\n \n\n📣 Participe e venha construir o futuro com a comunidade AWS Brasília!\n\n \n\n\\#AWS #AWSreInvent #AWSUserGroup #AWSUGBrasilia #CloudComputing #AI #GameDay #UnB #TechCommunity #Brasilia",
+    "startsAt": "2026-12-03T21:00:00.000Z",
+    "endsAt": "2026-12-03T23:00:00.000Z",
+    "timeZone": "America/Sao_Paulo",
+    "eventDate": "3 Dec 2026, 6:00 – 8:00 pm (America/Sao_Paulo)",
+    "eventFormat": "Hybrid",
+    "tag": "reinvent",
+    "tags": [
+      "reinvent"
+    ],
+    "country": "Brazil",
+    "countryCode": "BR",
+    "city": "Brasilia",
+    "location": "Brasilia, DF, Brazil",
+    "lat": -15.77857,
+    "lng": -47.92877,
+    "coordinatePrecision": "venue",
+    "coordinateSource": "AWS Builder Center",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "prisantos",
+    "registrationCount": 2,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-b7c96054-0434-3801-92c4-ed3b1afedece",
@@ -1911,7 +2076,7 @@
     "organizerAlias": "devibhattarai",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-c331ca34-6cee-3a40-a2af-519caade7479",
@@ -1944,7 +2109,7 @@
     "organizerAlias": "ofon",
     "registrationCount": 1,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-de8a8b6e-f30b-35b9-8284-59eb39b7088b",
@@ -1977,7 +2142,7 @@
     "organizerAlias": "0xdera24",
     "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-88105936-4a6b-3346-9172-2f8ae36b22e2",
@@ -2010,7 +2175,40 @@
     "organizerAlias": "yash5755",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
+  },
+  {
+    "id": "builder-event-785bb93a-c5cc-37c1-8aab-d3840effabd9",
+    "name": "Aws re:Invent watch Party",
+    "category": "builder-events",
+    "avatarUrl": "",
+    "profileUrl": "https://builder.aws.com/connect/event/785bb93a-c5cc-37c1-8aab-d3840effabd9",
+    "sourceUrl": "https://builder.aws.com/connect/event/785bb93a-c5cc-37c1-8aab-d3840effabd9",
+    "sourceLabel": "AWS Builder Center",
+    "description": "",
+    "startsAt": "2026-12-04T10:30:00.000Z",
+    "endsAt": "2026-12-04T13:30:00.000Z",
+    "timeZone": "Asia/Calcutta",
+    "eventDate": "4 Dec 2026, 4:00 – 7:00 pm (Asia/Calcutta)",
+    "eventFormat": "In person",
+    "tag": "agentic-ai",
+    "tags": [
+      "agentic-ai"
+    ],
+    "country": "India",
+    "countryCode": "IN",
+    "city": "Patna",
+    "location": "Patna, Bihar, India",
+    "lat": 25.60134,
+    "lng": 85.13752,
+    "coordinatePrecision": "venue",
+    "coordinateSource": "AWS Builder Center",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "atrajnishkumar",
+    "registrationCount": 7,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-2b665dd8-bdc1-30d2-9412-9306b3120a98",
@@ -2043,7 +2241,7 @@
     "organizerAlias": "donaldraph",
     "registrationCount": 7,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-678555da-1041-337f-979d-7039168c905d",
@@ -2076,40 +2274,7 @@
     "organizerAlias": "yeshwanthlm",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
-  },
-  {
-    "id": "builder-event-e1c5340e-ba50-34ae-adb1-a733f449cc52",
-    "name": "AWS re:Invent Watch & Build Party Lahore 2026",
-    "category": "builder-events",
-    "avatarUrl": "",
-    "profileUrl": "https://builder.aws.com/connect/event/e1c5340e-ba50-34ae-adb1-a733f449cc52",
-    "sourceUrl": "https://builder.aws.com/connect/event/e1c5340e-ba50-34ae-adb1-a733f449cc52",
-    "sourceLabel": "AWS Builder Center",
-    "description": "Join the AWS User Group Lahore and AWS Student Builder Group for a free, in-person AWS re Watch & Build Party, bringing the re experience to our local community.\n\nThis  event brings together developers, cloud professionals, AWS Partner teams, and students to watch selected re keynote and technical session recordings, explore new ideas, and build together using AWS services.\n\nWhat to expect:\n\n* Watch and discuss: Explore selected re announcements and technical sessions, with community discussions focused on generative AI and agentic applications.\n* Build hands-on: Participate in our planned workshop, “Building with Amazon Bedrock featuring Claude Code, Kiro, AgentCore, and Strands Agents.”\n* Connect with fellow builders: Meet community leaders, industry professionals, and students to exchange ideas, share experiences, and discover opportunities to collaborate.\n\nBring your laptop for the hands-on activities. The final agenda, viewing playlist, and workshop prerequisites will be shared before the event.\n\nCome ready to learn, build, and connect with Lahore’s AWS community!",
-    "startsAt": "2026-12-04T11:00:00.000Z",
-    "endsAt": "2026-12-04T17:00:00.000Z",
-    "timeZone": "Asia/Karachi",
-    "eventDate": "4 Dec 2026, 4:00 – 10:00 pm (Asia/Karachi)",
-    "eventFormat": "In person",
-    "tag": "aws-community",
-    "tags": [
-      "aws-community"
-    ],
-    "country": "Pakistan",
-    "countryCode": "PK",
-    "city": "Lahore",
-    "location": "Lahore, Punjab, Pakistan",
-    "lat": 31.5656822,
-    "lng": 74.3141829,
-    "coordinatePrecision": "city",
-    "coordinateSource": "OpenStreetMap / Nominatim",
-    "access": "Public",
-    "ctaLabel": "View event",
-    "organizerAlias": "sumama",
-    "registrationCount": 10,
-    "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   },
   {
     "id": "builder-event-fa007ad2-abcc-3dc5-abf9-862337cc82b5",
@@ -2142,6 +2307,6 @@
     "organizerAlias": "0xdera24",
     "registrationCount": 1,
     "isLoftEvent": false,
-    "verifiedAt": "2026-10-22T05:44:58.732Z"
+    "verifiedAt": "2026-10-23T05:43:42.808Z"
   }
 ]
