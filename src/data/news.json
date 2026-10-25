@@ -1,116 +1,33 @@
 {
-  "updatedAt": "2026-10-24T05:22:33.413Z",
+  "updatedAt": "2026-10-25T05:40:33.465Z",
   "latest": [
     {
-      "id": "/content/3L7veMfdPcodVr83bDdNVenNAGj",
-      "title": "Signal to Story Router: a typed decision gate for inbound GTM leads",
-      "description": "Inbound lead gate for GTM advisory outreach. A Strands agent asks Decider 2B three typed questions about a founder or recruiter signal, then plain Python routes on the calibrated probability of outreach_worthy: PRIORITY (>=0.70), WARM (>=0.50), else SKIP. Only PRIORITY leads get a Nova Pro draft; failures fall back to WARM with human review and no draft. Runs on Bedrock AgentCore Runtime. In a live run of 12 leads, 3 got drafts. Reusable: swap the rubric, tune thresholds.",
-      "url": "https://builder.aws.com/content/3L7veMfdPcodVr83bDdNVenNAGj",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L7w8WQa06O7Jw15lhFutsQHqeF/deci.webp",
-      "authorName": "Doug Skinner",
-      "authorAlias": "gtmsos237",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KlNJ874guYbfWdYkkXlKWuPexD.webp",
-      "location": "CA, US",
-      "lat": 36.7014631,
-      "lng": -118.755997,
-      "tags": [
-        "strands-decider-2b",
-        "policy"
-      ],
-      "publishedAt": "2026-10-24T05:19:46.499Z",
-      "likesCount": 2,
-      "commentsCount": 2
-    },
-    {
-      "id": "/content/3L7xRQLCxbgZkQU20hKvAU41cXf",
-      "title": "My Journey into Cloud Computing: Why I’m Starting with AWS Cloud Practitioner",
-      "description": "A brief look into my motivation for learning cloud computing, why I chose the AWS Cloud Practitioner certification path, and how hands-on labs on AWS Skill Builder are helping me prepare as a student developer.",
-      "url": "https://builder.aws.com/content/3L7xRQLCxbgZkQU20hKvAU41cXf",
-      "imageUrl": "",
-      "authorName": "Gaurav Sharma",
-      "authorAlias": "gaurav0108",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3L7wmfU9GACQzxXvzwnwvgpJiuf.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "cloud-practitioner",
-        "beginner-projects"
-      ],
-      "publishedAt": "2026-10-24T05:18:45.539Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3L7xRzfs1mZxlPLsg8HB9XBmnyp",
-      "title": "Why Query Twice? Redis Caching for Beginners",
-      "description": "Learn how Redis caching reduces repeated database reads—and what happens when cached data gets old.",
-      "url": "https://builder.aws.com/content/3L7xRzfs1mZxlPLsg8HB9XBmnyp",
-      "imageUrl": "",
-      "authorName": "Pham Vu",
-      "authorAlias": "vu89",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IgbEeEL53ABFEOUjxabat5f7GN.webp",
-      "location": "VN",
-      "lat": 15.9266657,
-      "lng": 107.9650855,
-      "tags": [
-        "redis",
-        "backend",
-        "databases"
-      ],
-      "publishedAt": "2026-10-24T05:16:26.895Z",
-      "likesCount": 5,
-      "commentsCount": 5
-    },
-    {
-      "id": "/content/3L7wpm2L9jKhMnXvJplxGdedXMC",
-      "title": "Why “Build Projects” Is Half-Right Advice (And What’s Missing)",
-      "description": "Building projects is important, but getting the code to work is only the beginning. Discover how testing failures, making technical decisions, validating results, and documenting lessons can turn ordinary projects into stronger evidence of engineering ability.",
-      "url": "https://builder.aws.com/content/3L7wpm2L9jKhMnXvJplxGdedXMC",
-      "imageUrl": "",
-      "authorName": "Nisar Md",
-      "authorAlias": "mahammad01",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JgiRrGCpl7f2VlMBUIBpqR1MvE.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "software-development",
-        "career",
-        "students",
-        "programming"
-      ],
-      "publishedAt": "2026-10-24T05:15:33.065Z",
-      "likesCount": 4,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3L7vh5oZ5ZpKK9qBrzhW4poILpt",
-      "title": "Deploying a Node.js Application with Docker: A Beginner's Guide to Cloud Deployment",
-      "description": "Learn how Docker simplifies application deployment by packaging a Node.js application and its dependencies into a portable container. This beginner-friendly guide explains the workflow and how it can be extended to AWS.",
-      "url": "https://builder.aws.com/content/3L7vh5oZ5ZpKK9qBrzhW4poILpt",
-      "imageUrl": "",
-      "authorName": "Prithika",
-      "authorAlias": "prithika1203",
-      "authorAvatarUrl": "",
+      "id": "/content/3LAnqtzBIGtfp8nuVjW8Fr6Y3bG",
+      "title": "Lesser Known AWS Features — Day 33: AWS Continuum for Code Vulnerabilities",
+      "description": "While exploring some of the latest AWS security updates, I came across a feature that caught my attention: AWS Continuum for code vulnerabilities.",
+      "url": "https://builder.aws.com/content/3LAnqtzBIGtfp8nuVjW8Fr6Y3bG",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LAoDTFpM7ttG8Ksi3JjeHbHXGL/Imag.webp",
+      "authorName": "Nikunj Purohit",
+      "authorAlias": "nik06",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JgUMbqkB5KX1Rw7psyAevLpMfR.webp",
       "location": "Tamil Nadu, IN",
       "lat": 11.3323723,
       "lng": 78.6098639,
       "tags": [
-        "aws-cloud9",
-        "docker",
-        "devops"
+        "aws-identity-and-access-management",
+        "software-development",
+        "cloud-security"
       ],
-      "publishedAt": "2026-10-24T05:09:47.459Z",
-      "likesCount": 8,
-      "commentsCount": 4
+      "publishedAt": "2026-10-25T05:31:15.524Z",
+      "likesCount": 10,
+      "commentsCount": 10
     },
     {
-      "id": "/content/3L7viKrF6MJHuJIZIJgapyQr98t",
-      "title": "My AWS Learning Journey: Exploring AI and Cloud Computing",
-      "description": "I'm beginning my journey into AWS and cloud computing, exploring how artificial intelligence and cloud services can help developers build smarter applications. Here's what I'm learning and why I'm excited to get started.",
-      "url": "https://builder.aws.com/content/3L7viKrF6MJHuJIZIJgapyQr98t",
-      "imageUrl": "",
+      "id": "/content/3LAmqBiEjK5JMlz2EoUB4lF1oa2",
+      "title": "From Zero to AI App: A Beginner’s Roadmap to Building with AWS",
+      "description": "Want to build your first AI-powered application but don't know where to start? Explore a beginner-friendly roadmap to combining cloud computing, generative AI, and practical development skills using AWS.",
+      "url": "https://builder.aws.com/content/3LAmqBiEjK5JMlz2EoUB4lF1oa2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LAnY6tsge1I1cJP94Wl3ihXr3a/From.webp",
       "authorName": "Hemanth Kumar.R.C",
       "authorAlias": "hemanthkumar0778",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3L6YioqYUt1cv2K9EqEVLvAp0dJ.webp",
@@ -118,60 +35,126 @@
       "lat": 14.9562045,
       "lng": 75.7896741,
       "tags": [
-        "aws-academy",
+        "aws-builders",
         "generative-ai",
         "cloud-practitioner",
-        "learning-and-development"
+        "serverless",
+        "aws-cloud-development-kit"
       ],
-      "publishedAt": "2026-10-24T05:04:14.500Z",
-      "likesCount": 14,
-      "commentsCount": 11
+      "publishedAt": "2026-10-25T05:23:36.901Z",
+      "likesCount": 18,
+      "commentsCount": 12
     },
     {
-      "id": "/content/3L7vjEjYrogJ3rDRKwd5pBzuPI2",
-      "title": "Building AWS Projects on a Student Budget: A Practical Guide to Cost Awareness",
-      "description": "Learn how students can approach AWS project development with cost awareness, resource monitoring, and cleanup practices. This guide covers practical habits for building cloud projects while reducing the risk of unexpected charges.",
-      "url": "https://builder.aws.com/content/3L7vjEjYrogJ3rDRKwd5pBzuPI2",
+      "id": "/content/3LAmcEB2zKQ6U33LwsKbiC4ydWZ",
+      "title": "Istio on EKS",
+      "description": "Istio on EKS",
+      "url": "https://builder.aws.com/content/3LAmcEB2zKQ6U33LwsKbiC4ydWZ",
       "imageUrl": "",
-      "authorName": "ROHITH S A",
-      "authorAlias": "firsray",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3L7uxTOVcLWWsvnlX8twtucSmgN.webp",
+      "authorName": "warashiba",
+      "authorAlias": "calelin",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JDQ2UbNQLJ73FvfYrfDqEi0gAW.webp",
+      "location": "US",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "tags": [],
+      "publishedAt": "2026-10-25T05:18:38.074Z",
+      "likesCount": 9,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3LAlqHqP8F4aSoVftINsDkaJpHL",
+      "title": "Adding Guardrails to an Amazon Bedrock App",
+      "description": "Learn how to add Amazon Bedrock Guardrails to your app. Create a guardrail with content filters, a denied topic, and personal data protection, attach it to a Converse call in Python, and test it with a repeatable set of prompts.",
+      "url": "https://builder.aws.com/content/3LAlqHqP8F4aSoVftINsDkaJpHL",
+      "imageUrl": "",
+      "authorName": "Saman Siadati",
+      "authorAlias": "samansiadati",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ILjJwOIvDlJn1oFGlPpoj0ggUG.webp",
+      "location": "AU",
+      "lat": -24.7761086,
+      "lng": 134.755,
+      "tags": [
+        "guardrails",
+        "amazon-bedrock",
+        "api",
+        "python"
+      ],
+      "publishedAt": "2026-10-25T05:14:14.041Z",
+      "likesCount": 16,
+      "commentsCount": 12
+    },
+    {
+      "id": "/content/3LAllntGLqb8Q0oD7ExD0wJAvfV",
+      "title": "My First 3 AWS Services Every Beginner Should Learn",
+      "description": "I started my cloud journey 15 days ago on AWS Builder Center. As a beginner, I was confused with so many services.\n",
+      "url": "https://builder.aws.com/content/3LAllntGLqb8Q0oD7ExD0wJAvfV",
+      "imageUrl": "",
+      "authorName": "Harsh Pandey",
+      "authorAlias": "harshjitendra",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Iv08ymL3ldsXGYZsCQvW44xAaj.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "amazon-s3",
+        "aws-academy",
+        "aws-ai-league",
+        "aws-api",
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-10-25T05:10:36.445Z",
+      "likesCount": 16,
+      "commentsCount": 14
+    },
+    {
+      "id": "/content/3LAlLqB7irX1avwYg5Jlssd554b",
+      "title": "Your AWS Architecture Is Only as Strong as Its Weakest Link: 7 Lessons Every Cloud Engineer Should Know",
+      "description": "Explore seven essential lessons for building stronger AWS architectures. Learn how cloud engineers approach high availability, security, observability, cost optimization, serverless applications, Infrastructure as Code, and disaster recovery. Discover practical AWS best practices, understand common architectural challenges, and learn to design cloud systems that are more secure, reliable, scalable, and cost-efficient.",
+      "url": "https://builder.aws.com/content/3LAlLqB7irX1avwYg5Jlssd554b",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LAlf3Le7DwSIKrsu6UTm3A5xcK/AWS-.webp",
+      "authorName": "Sudip Paramanik",
+      "authorAlias": "sudipparamanik",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JzXk8QPU1qiGN9lOdykSvfTG9Y.webp",
+      "location": "West Bengal, IN",
+      "lat": 22.9964948,
+      "lng": 87.6855882,
+      "tags": [
+        "cloud-practitioner",
+        "cloud-security",
+        "infrastructure-as-code",
+        "observability",
+        "aws-workshops"
+      ],
+      "publishedAt": "2026-10-25T05:10:03.839Z",
+      "likesCount": 6,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3LAlJb5jX3RIK4nR6AYt5HQguhZ",
+      "title": "How to Host a Static Website on Amazon S3: A Beginner-Friendly Guide",
+      "description": "Learn how to host a static website on Amazon S3 using AWS. This step-by-step guide covers S3 bucket creation, static website hosting configuration, permissions, deployment, and testing your website.",
+      "url": "https://builder.aws.com/content/3LAlJb5jX3RIK4nR6AYt5HQguhZ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LAlhKXEyUMXsJ4KsysRBBT7lOB/Host.webp",
+      "authorName": "shivkumar Udas",
+      "authorAlias": "shivkumarudas01",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LAnATf68gMPT9FuMRERx3NEWKf.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-10-24T05:02:27.102Z",
-      "likesCount": 12,
-      "commentsCount": 7
-    },
-    {
-      "id": "/content/3L7rm8AajArSeWQlfFzTGdLyxVv",
-      "title": "I Built a Cloud Tripwire: Detecting Risky AWS Changes Before They Become Incidents",
-      "description": "What if you could detect an unexpected AWS security group change without constantly watching the console? In this hands-on lab, I'll walk through a simple CloudTrail, EventBridge, and SNS detection workflow, explain how to test it, and show where a basic alert can fail.",
-      "url": "https://builder.aws.com/content/3L7rm8AajArSeWQlfFzTGdLyxVv",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L7vL8J1z7wb5ir4droN2gahPt0/covi.webp",
-      "authorName": "Dhamini K",
-      "authorAlias": "dhmn06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KiyLY2XJDa7OCGb96iexPWibH5.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
       "tags": [
-        "aws-cloudtrail",
-        "amazon-sns",
-        "amazon-eventbridge",
-        "security-identity"
+        "amazon-s3"
       ],
-      "publishedAt": "2026-10-24T04:58:20.632Z",
-      "likesCount": 16,
-      "commentsCount": 11
+      "publishedAt": "2026-10-25T05:08:10.727Z",
+      "likesCount": 6,
+      "commentsCount": 3
     },
     {
-      "id": "/content/3L7tm79vjK4GnOiuVUIefXZajoG",
-      "title": "Stop Putting AWS Credentials in Your Code: A Beginner’s Guide to IAM Roles and Secure Access",
-      "description": "Learn how to protect AWS credentials, understand IAM roles and policies, configure secure local development, and avoid common cloud security mistakes. A practical beginner-friendly guide to building safer applications on AWS.",
-      "url": "https://builder.aws.com/content/3L7tm79vjK4GnOiuVUIefXZajoG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L7vS2aR8RKC5fiDr2d0Ryfr4w5/5fea.webp",
+      "id": "/content/3LAl2FTaLhORwMsASIYWasVJKzx",
+      "title": "AWS Says Everything Is Healthy. So Why Is Your App Broken?",
+      "description": "Is your application failing even though AWS resources appear healthy? Learn a practical troubleshooting workflow using Amazon CloudWatch, application logs, API status codes, database connectivity, metrics, and timeouts to identify and fix common cloud application failures.",
+      "url": "https://builder.aws.com/content/3LAl2FTaLhORwMsASIYWasVJKzx",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LAlSZrMGhBZwhydWZe23ZF08rf/AWS-.webp",
       "authorName": "Shruthi N",
       "authorAlias": "shruthiverse",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Ke7QhzyFzo96gdglkoBykadPeL.webp",
@@ -179,62 +162,62 @@
       "lat": 11.3323723,
       "lng": 78.6098639,
       "tags": [
-        "aws-api",
-        "cloud-security",
-        "iam",
-        "developer-tools",
-        "security-best-practices"
+        "amazon-cloudwatch",
+        "troubleshoot",
+        "devops",
+        "cloud-concepts"
       ],
-      "publishedAt": "2026-10-24T04:56:47.880Z",
-      "likesCount": 8,
+      "publishedAt": "2026-10-25T05:06:25.830Z",
+      "likesCount": 7,
       "commentsCount": 5
     },
     {
-      "id": "/content/3L7uMBENe5T39Q40HoGrWsblbYe",
-      "title": "Can AI Fix Your Security Bugs Without Breaking Production?",
-      "description": "AWS Continuum validates code vulnerabilities and proposes fixes. But should AI-generated security patches ever reach production without human approval?",
-      "url": "https://builder.aws.com/content/3L7uMBENe5T39Q40HoGrWsblbYe",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L7ugCabZgL8j3SfEooqibImIpe/AI-P.webp",
-      "authorName": "Nihal N",
-      "authorAlias": "nihal2107",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JKAT2NbZE0aZhKOtxAuuHLeDaP.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
+      "id": "/content/3LAjvUu9XygC6hDAacQIMBxPyRv",
+      "title": "AWS Cost Alert and Automatic Resource Cleanup: A Smarter Way to Manage Cloud Costs",
+      "description": "Amazon Web Services (AWS) provides a wide range of cloud services that help developers, students, startups, and businesses build and deploy applications. However, managing cloud costs can be challenging, especially for beginners who are still learning how different AWS services work.",
+      "url": "https://builder.aws.com/content/3LAjvUu9XygC6hDAacQIMBxPyRv",
+      "imageUrl": "",
+      "authorName": "Harsh Kaushik",
+      "authorAlias": "harshkaushik494",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J66LfwykeU04KMvGeWiRi7GcjO.webp",
+      "location": "Uttarakhand, IN",
+      "lat": 30.0417376,
+      "lng": 79.089691,
       "tags": [
-        "ai",
-        "cloud-security",
-        "devops",
-        "ai-agents",
-        "aws-lambda"
+        "cost-optimization",
+        "cost-savings",
+        "cost-allocation",
+        "cost",
+        "cost-control-automation"
       ],
-      "publishedAt": "2026-10-24T04:52:51.752Z",
-      "likesCount": 11,
+      "publishedAt": "2026-10-25T04:55:01.210Z",
+      "likesCount": 21,
       "commentsCount": 12
+    },
+    {
+      "id": "/content/3LAj1Ud24I4j6qIgIS951eq6jNP",
+      "title": "Focus on AI & Cloud",
+      "description": "From Cloud Computing to Cloud Intelligence: The Next Era of AI on AWS",
+      "url": "https://builder.aws.com/content/3LAj1Ud24I4j6qIgIS951eq6jNP",
+      "imageUrl": "",
+      "authorName": "Titas Garai",
+      "authorAlias": "titas",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JEXY8psF9nxU67chj4QtuQo2Za.webp",
+      "location": "West Bengal, IN",
+      "lat": 22.9964948,
+      "lng": 87.6855882,
+      "tags": [
+        "data-lakes",
+        "kinesis",
+        "amazon-msk",
+        "aws-glue"
+      ],
+      "publishedAt": "2026-10-25T04:48:12.855Z",
+      "likesCount": 22,
+      "commentsCount": 19
     }
   ],
   "trending": [
-    {
-      "id": "/content/3L6C4XiK9WgcsjdlNEOSdiI5ibJ",
-      "title": "无侵入监控和回放 Claude Code 会话执行过程",
-      "description": "Apache SkyWalking AI Sessionizer 可以直接读取本机已有的 Claude Code 记录，将对话、工具调用和子 Agent 的执行过程关联起来，在浏览器中查看。接入时不需要在 Claude Code 中安装插件或修改配置，使用 Sessionizer 之前留下的历史记录也可以回放。",
-      "url": "https://builder.aws.com/content/3L6C4XiK9WgcsjdlNEOSdiI5ibJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L6FgQPm3TfaH48tZfgD4Q74Yqj/sess.webp",
-      "authorName": "Wu Sheng",
-      "authorAlias": "wusheng",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AgtyAPOEA9U7IQiC3nChOcDV6A.webp",
-      "location": "CN",
-      "lat": 34.5412252,
-      "lng": 108.9237067,
-      "tags": [
-        "agentic-ai",
-        "observability",
-        "chinese"
-      ],
-      "publishedAt": "2026-10-23T15:07:30.790Z",
-      "likesCount": 52,
-      "commentsCount": 3
-    },
     {
       "id": "/content/3L7S42ucKvi4WO6uyLZvaUinDmL",
       "title": "Seeing the Whole System: My Talk at AWS Community Day Shenzhen 2026",
@@ -255,8 +238,29 @@
         "aws-community-day"
       ],
       "publishedAt": "2026-10-24T01:22:27.864Z",
-      "likesCount": 46,
-      "commentsCount": 2
+      "likesCount": 146,
+      "commentsCount": 16
+    },
+    {
+      "id": "/content/3L6C4XiK9WgcsjdlNEOSdiI5ibJ",
+      "title": "无侵入监控和回放 Claude Code 会话执行过程",
+      "description": "Apache SkyWalking AI Sessionizer 可以直接读取本机已有的 Claude Code 记录，将对话、工具调用和子 Agent 的执行过程关联起来，在浏览器中查看。接入时不需要在 Claude Code 中安装插件或修改配置，使用 Sessionizer 之前留下的历史记录也可以回放。",
+      "url": "https://builder.aws.com/content/3L6C4XiK9WgcsjdlNEOSdiI5ibJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L6FgQPm3TfaH48tZfgD4Q74Yqj/sess.webp",
+      "authorName": "Wu Sheng",
+      "authorAlias": "wusheng",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AgtyAPOEA9U7IQiC3nChOcDV6A.webp",
+      "location": "CN",
+      "lat": 34.5412252,
+      "lng": 108.9237067,
+      "tags": [
+        "agentic-ai",
+        "observability",
+        "chinese"
+      ],
+      "publishedAt": "2026-10-23T15:07:30.790Z",
+      "likesCount": 90,
+      "commentsCount": 4
     },
     {
       "id": "/content/3L132tiUCBzb84kben8sBAf1lXr",
@@ -278,8 +282,28 @@
         "serverless"
       ],
       "publishedAt": "2026-10-21T18:38:33.175Z",
-      "likesCount": 393,
-      "commentsCount": 313
+      "likesCount": 427,
+      "commentsCount": 322
+    },
+    {
+      "id": "/content/3L6LZ9w7VY1uZqOxVrWGEAxOcyQ",
+      "title": "New AWS Sign-up Experience - No Credit Card Required",
+      "description": "Experience much easier and faster sign up for AWS that enables you to start building quickly by using an existing sign-in method like Google, Apple, GitHub, and Amazon accounts. Get started immediately with preconfigured defaults, use projects to organize what you build, score up to $200 in free AWS credits, and transition to an Enterprise account when you need to.\n\n",
+      "url": "https://builder.aws.com/content/3L6LZ9w7VY1uZqOxVrWGEAxOcyQ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L6aSFgoDKleDxx2eJ3iw7o4AtN/F710.webp",
+      "authorName": "Faye Ellis",
+      "authorAlias": "faye",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uxnlBadcBqQkIKVluOfuD3wzin.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "aws-credits",
+        "aws-builders"
+      ],
+      "publishedAt": "2026-10-23T17:40:23.750Z",
+      "likesCount": 35,
+      "commentsCount": 6
     },
     {
       "id": "/content/3L50qXKr83Y2r9mA6ZsGhcc4cRJ",
@@ -301,28 +325,8 @@
         "openai"
       ],
       "publishedAt": "2026-10-23T04:25:26.750Z",
-      "likesCount": 101,
-      "commentsCount": 15
-    },
-    {
-      "id": "/content/3L6LZ9w7VY1uZqOxVrWGEAxOcyQ",
-      "title": "New AWS Sign-up Experience - No Credit Card Required",
-      "description": "Experience much easier and faster sign up for AWS that enables you to start building quickly by using an existing sign-in method like Google, Apple, GitHub, and Amazon accounts. Get started immediately with preconfigured defaults, use projects to organize what you build, score up to $200 in free AWS credits, and transition to an Enterprise account when you need to.\n\n",
-      "url": "https://builder.aws.com/content/3L6LZ9w7VY1uZqOxVrWGEAxOcyQ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L6aSFgoDKleDxx2eJ3iw7o4AtN/F710.webp",
-      "authorName": "Faye Ellis",
-      "authorAlias": "faye",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uxnlBadcBqQkIKVluOfuD3wzin.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "aws-credits",
-        "aws-builders"
-      ],
-      "publishedAt": "2026-10-23T17:40:23.750Z",
-      "likesCount": 15,
-      "commentsCount": 1
+      "likesCount": 113,
+      "commentsCount": 16
     },
     {
       "id": "/content/3L6sXVFBWsH5uK9F3oHKTydepCE",
@@ -338,8 +342,54 @@
       "lng": 12.674297,
       "tags": [],
       "publishedAt": "2026-10-23T20:14:45.189Z",
-      "likesCount": 11,
+      "likesCount": 17,
       "commentsCount": 0
+    },
+    {
+      "id": "/content/3L8fF5BSlgDjmJSZYMPBmoPo8Jh",
+      "title": "AWS IAM Hands-On Lab: Users, Groups & Permissions Explained",
+      "description": "Learn AWS IAM through a hands-on lab with 3 users, 3 groups, and real S3 and EC2 permission tests. Understand policies, access control, and least privilege.",
+      "url": "https://builder.aws.com/content/3L8fF5BSlgDjmJSZYMPBmoPo8Jh",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L949dzjYGowP892wcM1mvdX6T7/AWS-.webp",
+      "authorName": "Yashvi Kothari",
+      "authorAlias": "yashvikothari",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362mIfy2uQdL4eBeAhYPGwzv22d.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "iam",
+        "policy",
+        "amazon-s3",
+        "amazon-ec2",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-10-24T15:15:06.033Z",
+      "likesCount": 17,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3L8svCxsikdpAdtTlYXQOYyeIv2",
+      "title": "Cómo Preparar y Aprobar el AWS Certified AI Practitioner (AIF-C01) en 7 Días",
+      "description": "La inteligencia artificial generativa y el aprendizaje automático están transformando la arquitectura de software moderna a una velocidad sin precedentes.",
+      "url": "https://builder.aws.com/content/3L8svCxsikdpAdtTlYXQOYyeIv2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L8szissDaDC2dngqAYaLfc4YPD/Gemin.webp",
+      "authorName": "Jhonnatan GIl",
+      "authorAlias": "jthan24",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CbKa9YPeYMUJR0GBhXpvgaQgYP.webp",
+      "location": "CO",
+      "lat": 4.099917,
+      "lng": -72.9088133,
+      "tags": [
+        "machine-learning",
+        "artificial-intelligence",
+        "aws-certification",
+        "agentic-ai",
+        "devops"
+      ],
+      "publishedAt": "2026-10-24T13:09:26.331Z",
+      "likesCount": 17,
+      "commentsCount": 3
     },
     {
       "id": "/content/3L7RCAlgoKI0ZCFXhmjGbjJZ4Gu",
@@ -361,8 +411,8 @@
         "amazon-ecs"
       ],
       "publishedAt": "2026-10-24T02:07:05.806Z",
-      "likesCount": 25,
-      "commentsCount": 1
+      "likesCount": 28,
+      "commentsCount": 3
     },
     {
       "id": "/content/3L7kJCHKa9PJ5mSnRlPHhRYJHB0",
@@ -384,46 +434,7 @@
         "linux"
       ],
       "publishedAt": "2026-10-24T03:29:58.821Z",
-      "likesCount": 21,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3Kxtax0RdKkdzWCPyqMDV7YEmd9",
-      "title": "GenAI and AI agents on AWS: set up the account before you write any code",
-      "description": "This is the first practical article in the \"GenAI and AI agents on AWS\" hands-on series, and we start with the account setup.",
-      "url": "https://builder.aws.com/content/3Kxtax0RdKkdzWCPyqMDV7YEmd9",
-      "imageUrl": "",
-      "authorName": "Olha  Piliaieva",
-      "authorAlias": "codeaiflow",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ChtKLNPkR2uskdgC1hHRtjtqLY.webp",
-      "location": "PL",
-      "lat": 52.215933,
-      "lng": 19.134422,
-      "tags": [
-        "ai",
-        "agents",
-        "agentic-ai",
-        "iam"
-      ],
-      "publishedAt": "2026-10-20T18:39:01.193Z",
-      "likesCount": 705,
-      "commentsCount": 31
-    },
-    {
-      "id": "/content/3L7XJ5Xmu1CWwNvpX9qWgdhuiR7",
-      "title": "Auditar un pipeline de IaC después del provider de Terraform troyanizado",
-      "description": "El 8 de octubre, Zscaler ThreatLabz describió un provider de Terraform que se\ncomporta exactamente como un provider normal de AWS y también, en el momento en\nque Terraform lo carga, jala un loader de un dominio parecido e instala un robador\nde credenciales ( reporte ).",
-      "url": "https://builder.aws.com/content/3L7XJ5Xmu1CWwNvpX9qWgdhuiR7",
-      "imageUrl": "",
-      "authorName": "Franchesco Romero",
-      "authorAlias": "elchesco",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Jmp5yM2GAOADswu743IGB1DZfl.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-10-24T01:40:45.408Z",
-      "likesCount": 18,
+      "likesCount": 26,
       "commentsCount": 0
     }
   ]
