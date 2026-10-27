@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-26T05:45:51.285Z",
+  "updatedAt": "2026-10-27T05:58:27.055Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -13402,7 +13402,7 @@
       }
     },
     {
-      "date": "2026-10-26",
+      "date": "2026-10-27",
       "source": {
         "type": "working-tree"
       },
@@ -13596,12 +13596,12 @@
           }
         },
         "kiro-events": {
-          "total": 5,
-          "classified": 1,
-          "unclassified": 4,
-          "coveragePercent": 20,
+          "total": 15,
+          "classified": 2,
+          "unclassified": 13,
+          "coveragePercent": 13.3,
           "regions": {
-            "north-america": 1,
+            "north-america": 2,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
@@ -13609,12 +13609,12 @@
             "oceania": 0
           },
           "changes": {
-            "added": 0,
+            "added": 10,
             "removed": 0,
-            "net": 0,
+            "net": 10,
             "retained": 5,
             "addedByRegion": {
-              "north-america": 0,
+              "north-america": 1,
               "south-america": 0,
               "europe": 0,
               "asia": 0,
@@ -13629,9 +13629,80 @@
               "africa": 0,
               "oceania": 0
             },
-            "addedUnclassified": 0,
+            "addedUnclassified": 9,
             "removedUnclassified": 0,
-            "addedItems": [],
+            "addedItems": [
+              {
+                "name": "AI DevCon",
+                "location": "New York, NY, United States",
+                "country": "United States",
+                "region": "north-america",
+                "url": "https://tessl.io/devcon"
+              },
+              {
+                "name": "Escape from Labyrinth with Kiro",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Osaka Kiro Meetup",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://jawsug-ai.connpass.com/event/408139/"
+              },
+              {
+                "name": "Ship Happens: Ideate. Build. Ship.",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/"
+              },
+              {
+                "name": "SHPE National Convention",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://shpe.org/engage/events/national-convention/"
+              }
+            ],
             "removedItems": [],
             "quality": {
               "confidence": "high",
@@ -13695,19 +13766,19 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-26",
-      "daysCovered": 211
+      "endDate": "2026-10-27",
+      "daysCovered": 212
     },
     "global": {
-      "totalRecords": 4969,
-      "classifiedRecords": 4775,
-      "coveragePercent": 96.1,
+      "totalRecords": 4979,
+      "classifiedRecords": 4776,
+      "coveragePercent": 95.9,
       "snapshots": 31
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-26",
+        "currentDate": "2026-10-27",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -14278,7 +14349,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-26",
+        "currentDate": "2026-10-27",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -14841,7 +14912,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-26",
+        "currentDate": "2026-10-27",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -15482,7 +15553,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-26",
+        "currentDate": "2026-10-27",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -16031,18 +16102,18 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-26",
+        "currentDate": "2026-10-27",
         "baselineTotal": 17,
-        "currentTotal": 5,
-        "currentCoveragePercent": 20,
+        "currentTotal": 15,
+        "currentCoveragePercent": 13.3,
         "periodChange": {
-          "added": 5,
+          "added": 15,
           "removed": 17,
-          "net": -12,
+          "net": -2,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
-            "north-america": 1,
+            "north-america": 2,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
@@ -16059,6 +16130,13 @@
           },
           "addedItems": [
             {
+              "name": "AI DevCon",
+              "location": "New York, NY, United States",
+              "country": "United States",
+              "region": "north-america",
+              "url": "https://tessl.io/devcon"
+            },
+            {
               "name": "AWS re:Invent 2026",
               "location": "Online",
               "country": "Online",
@@ -16073,6 +16151,48 @@
               "url": "https://www.cusec.net/"
             },
             {
+              "name": "Escape from Labyrinth with Kiro",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
               "name": "Kiro University for Mahidol - Mahidol Hackathon in October",
               "location": "Online",
               "country": "Online",
@@ -16085,6 +16205,27 @@
               "country": "Online",
               "region": null,
               "url": "https://kiroween.devpost.com/"
+            },
+            {
+              "name": "Osaka Kiro Meetup",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://jawsug-ai.connpass.com/event/408139/"
+            },
+            {
+              "name": "Ship Happens: Ideate. Build. Ship.",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/"
+            },
+            {
+              "name": "SHPE National Convention",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://shpe.org/engage/events/national-convention/"
             },
             {
               "name": "Young Talent Programme for AI in Finance (YTP-AIF)",
@@ -16219,9 +16360,9 @@
         "regionGrowth": {
           "north-america": {
             "start": 4,
-            "current": 1,
-            "net": -3,
-            "growthPercent": -75
+            "current": 2,
+            "net": -2,
+            "growthPercent": -50
           },
           "south-america": {
             "start": 0,
@@ -16263,20 +16404,20 @@
         },
         "mostRepresented": {
           "region": "north-america",
-          "total": 1
+          "total": 2
         },
         "peak": {
           "date": "2026-06-04",
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-10-16",
-          "added": 2,
+          "date": "2026-10-27",
+          "added": 10,
           "removed": 0,
-          "net": 2,
-          "retained": 3,
+          "net": 10,
+          "retained": 5,
           "addedByRegion": {
-            "north-america": 0,
+            "north-america": 1,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
@@ -16291,22 +16432,78 @@
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 2,
+          "addedUnclassified": 9,
           "removedUnclassified": 0,
           "addedItems": [
             {
-              "name": "AWS re:Invent 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://aws.amazon.com/events/reinvent/"
+              "name": "AI DevCon",
+              "location": "New York, NY, United States",
+              "country": "United States",
+              "region": "north-america",
+              "url": "https://tessl.io/devcon"
             },
             {
-              "name": "Kiroween 2026",
+              "name": "Escape from Labyrinth with Kiro",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://kiroween.devpost.com/"
+              "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Kiro Office Hours",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+            },
+            {
+              "name": "Osaka Kiro Meetup",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://jawsug-ai.connpass.com/event/408139/"
+            },
+            {
+              "name": "Ship Happens: Ideate. Build. Ship.",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/"
+            },
+            {
+              "name": "SHPE National Convention",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://shpe.org/engage/events/national-convention/"
             }
           ],
           "removedItems": [],
@@ -16321,7 +16518,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-26",
+        "currentDate": "2026-10-27",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -16651,10 +16848,10 @@
       }
     },
     "upcoming": {
-      "total": 6,
-      "next30Days": 4,
+      "total": 16,
+      "next30Days": 11,
       "byRegion": {
-        "north-america": 1,
+        "north-america": 2,
         "south-america": 2,
         "europe": 0,
         "asia": 0,
@@ -16662,6 +16859,15 @@
         "oceania": 0
       },
       "items": [
+        {
+          "name": "SHPE National Convention",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://shpe.org/engage/events/national-convention/",
+          "category": "kiro-events",
+          "date": "2026-10-28T00:00:00.000Z"
+        },
         {
           "name": "Kiroween 2026",
           "location": "Online",
@@ -16681,6 +16887,24 @@
           "date": "2026-10-30T12:00:00.000Z"
         },
         {
+          "name": "Osaka Kiro Meetup",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://jawsug-ai.connpass.com/event/408139/",
+          "category": "kiro-events",
+          "date": "2026-10-30T19:00:00.000Z"
+        },
+        {
+          "name": "Ship Happens: Ideate. Build. Ship.",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/",
+          "category": "kiro-events",
+          "date": "2026-10-31T09:00:00.000Z"
+        },
+        {
           "name": "AWS Community Day Norte",
           "location": "Belém, Brazil",
           "country": "Brazil",
@@ -16688,6 +16912,33 @@
           "url": "https://awscommunityday.com.br/norte/",
           "category": "community-days",
           "date": "2026-10-31T12:00:00.000Z"
+        },
+        {
+          "name": "AI DevCon",
+          "location": "New York, NY, United States",
+          "country": "United States",
+          "region": "north-america",
+          "url": "https://tessl.io/devcon",
+          "category": "kiro-events",
+          "date": "2026-11-02T00:00:00.000Z"
+        },
+        {
+          "name": "Kiro Office Hours",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://discord.gg/kirodotdev?event=1427356508974485664",
+          "category": "kiro-events",
+          "date": "2026-11-02T17:30:00.000Z"
+        },
+        {
+          "name": "Escape from Labyrinth with Kiro",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/",
+          "category": "kiro-events",
+          "date": "2026-11-04T18:00:00.000Z"
         },
         {
           "name": "AWS Community Day Belém",
@@ -16699,6 +16950,15 @@
           "date": "2026-11-14T12:00:00.000Z"
         },
         {
+          "name": "Kiro Office Hours",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://discord.gg/kirodotdev?event=1427356508974485664",
+          "category": "kiro-events",
+          "date": "2026-11-16T17:30:00.000Z"
+        },
+        {
           "name": "AWS re:Invent 2026",
           "location": "Online",
           "country": "Online",
@@ -16706,6 +16966,33 @@
           "url": "https://aws.amazon.com/events/reinvent/",
           "category": "kiro-events",
           "date": "2026-11-30T00:00:00.000Z"
+        },
+        {
+          "name": "Kiro Office Hours",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://discord.gg/kirodotdev?event=1427356508974485664",
+          "category": "kiro-events",
+          "date": "2026-11-30T17:30:00.000Z"
+        },
+        {
+          "name": "Kiro Office Hours",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://discord.gg/kirodotdev?event=1427356508974485664",
+          "category": "kiro-events",
+          "date": "2026-12-14T17:30:00.000Z"
+        },
+        {
+          "name": "Kiro Office Hours",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://discord.gg/kirodotdev?event=1427356508974485664",
+          "category": "kiro-events",
+          "date": "2026-12-28T17:30:00.000Z"
         },
         {
           "name": "CUSEC 2027",

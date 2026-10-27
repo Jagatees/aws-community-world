@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-10-26T05:45:59.192Z",
+  "checkedAt": "2026-10-27T05:58:34.547Z",
   "productCount": 235,
   "services": [
     {
@@ -3931,7 +3931,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-10-21T13:29:47Z",
+      "updatedAt": "2026-10-26T19:31:41Z",
       "createdAt": "2023-10-06T19:07:28Z",
       "sandboxAvailable": false
     },
@@ -4069,7 +4069,7 @@
         "en",
         "ko"
       ],
-      "updatedAt": "2026-09-09T09:56:42Z",
+      "updatedAt": "2026-10-26T09:40:30Z",
       "createdAt": "2023-05-30T07:45:45Z",
       "sandboxAvailable": false
     },
@@ -4603,7 +4603,7 @@
       "id": "04e6e6c8-c19b-40f9-8cc7-945669ca86b4",
       "title": "Approaches to layered security on Amazon VPC",
       "description": "In this workshop, discover practical guidance that can help you build a secure Amazon Virtual Private Cloud (Amazon VPC). Using a hands-on approach, review Amazon VPC features such as subnets, security groups, flow logs, and routing. Then, learn how you can add on additional layers of security and how to securely ingress and egress VPC traffic with other services, such as Amazon Route 53 Resolver DNS Firewall, AWS Network Firewall, Gateway Load Balancer, Traffic Mirroring, AWS WAF, and more.",
-      "url": "https://catalog.workshops.aws/workshops/04e6e6c8-c19b-40f9-8cc7-945669ca86b4",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/04e6e6c8-c19b-40f9-8cc7-945669ca86b4",
       "services": [
         "Amazon Route 53",
         "Amazon Virtual Private Cloud (Amazon VPC)",
@@ -4623,7 +4623,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-06-12T13:46:10Z",
+      "updatedAt": "2026-10-26T18:19:26Z",
       "createdAt": "2022-08-04T07:14:33Z",
       "sandboxAvailable": false
     },
@@ -4733,7 +4733,7 @@
         "ko",
         "ja"
       ],
-      "updatedAt": "2026-09-29T13:29:43Z",
+      "updatedAt": "2026-10-26T21:39:07Z",
       "createdAt": "2023-01-17T17:01:11Z",
       "sandboxAvailable": false
     },
@@ -8198,7 +8198,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-19T21:00:24Z",
+      "updatedAt": "2026-10-26T16:44:15Z",
       "createdAt": "2026-09-28T07:49:51Z",
       "sandboxAvailable": false
     },
