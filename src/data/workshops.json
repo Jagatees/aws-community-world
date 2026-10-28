@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-10-27T05:58:34.547Z",
+  "checkedAt": "2026-10-28T06:37:08.496Z",
   "productCount": 235,
   "services": [
     {
@@ -3369,6 +3369,31 @@
       "sandboxAvailable": false
     },
     {
+      "id": "d2ed0c4d-732c-4df5-864a-5c5509d22977",
+      "title": "Add Real-Time Web Search to Your AI Agents on AWS",
+      "description": "Learn how to add real-time web search capabilities to AI agents and applications on AWS. Explore two paths: a managed MCP connector via AgentCore Gateway (works with any model) and the Bedrock built-in web search tool. Build agents using Strands SDK, LangChain, or raw tool-calling, and integrate with developer tools like Claude Code and Codex.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/d2ed0c4d-732c-4df5-864a-5c5509d22977",
+      "services": [
+        "Amazon Bedrock AgentCore",
+        "Amazon Bedrock"
+      ],
+      "serviceIds": [
+        "amazon-bedrock-agentcore",
+        "amazon-bedrock-1"
+      ],
+      "topics": [
+        "Machine Learning (ML/AI)"
+      ],
+      "level": "300",
+      "durationHours": 3,
+      "languages": [
+        "en"
+      ],
+      "updatedAt": "2026-10-27T20:34:36Z",
+      "createdAt": "2026-08-27T15:28:47Z",
+      "sandboxAvailable": false
+    },
+    {
       "id": "54c3335f-633f-4d47-a215-6d5694e18f7a",
       "title": "Advanced Development with Kiro CLI",
       "description": "This workshop is a follow-on training session to the introductory Q-Words session that dives into more advanced topics around context management, profile management, and model context protocol (MCP) servers. Participants should have a good understanding of Kiro CLI / Q Developer and have the CLI and IDE installed. They will walk away from this training with a better understanding how to use Kiro CLI on larger enterprise grade applications both greenfield and brownfield.",
@@ -3804,7 +3829,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-09-08T13:02:38Z",
+      "updatedAt": "2026-10-28T03:15:25Z",
       "createdAt": "2024-05-28T20:34:10Z",
       "sandboxAvailable": false
     },
@@ -5706,31 +5731,33 @@
       "sandboxAvailable": false
     },
     {
-      "id": "34f8e4fb-14de-4b10-8dee-d9e2b8db9eb2",
-      "title": "AWS Well-Architected Sustainability",
-      "description": "A set of educational workshops aligned with the Well Architected Sustainability Pillar https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html",
-      "url": "https://catalog.workshops.aws/workshops/34f8e4fb-14de-4b10-8dee-d9e2b8db9eb2",
+      "id": "b27726ff-5d62-49e8-bd26-b4e7f539230c",
+      "title": "Build an agentic AI system on Amazon EKS with CPU-only inference",
+      "description": "Build a multi-agent AI system on Amazon EKS Auto Mode that serves every model on CPU: a fine-tuned intent router and embedding model (ONNX, trained on CPU), a cross-encoder re-ranker, and a quantized generative analyst on llama.cpp grounded by RAG from OpenSearch. Amazon Bedrock generates synthetic training data, judges answers with a faithfulness gate, and handles edge cases small models cannot. A control test puts a frontier LLM in the same seat so you know if the small model is good enough.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/b27726ff-5d62-49e8-bd26-b4e7f539230c",
       "services": [
-        "Amazon CloudWatch",
-        "Amazon QuickSight",
-        "AWS Cost and Usage Report"
+        "Amazon Bedrock",
+        "Amazon Elastic Compute Cloud (Amazon EC2)",
+        "Amazon Elastic Kubernetes Service (Amazon EKS)"
       ],
       "serviceIds": [
-        "amazon-cloudwatch",
-        "amazon-quicksight",
-        "aws-cost-and-usage-report"
+        "amazon-bedrock-1",
+        "amazon-ec2",
+        "amazon-elastic-kubernetes-service-eks"
       ],
       "topics": [
-        "Management & Governance"
+        "Compute",
+        "Containers",
+        "Generative AI",
+        "Machine Learning (ML/AI)"
       ],
       "level": "300",
-      "durationHours": 8,
+      "durationHours": 3,
       "languages": [
-        "en",
-        "ja"
+        "en"
       ],
-      "updatedAt": "2026-02-12T22:21:46Z",
-      "createdAt": "2023-04-22T11:31:42Z",
+      "updatedAt": "2026-10-27T20:44:49Z",
+      "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
     {
@@ -7327,64 +7354,6 @@
       "sandboxAvailable": false
     },
     {
-      "id": "0a85653e-07e9-41a8-960a-2d1bb592331b",
-      "title": "InsuranceLake Deep Dive",
-      "description": "InsuranceLake is solution accelerator which helps you deploy ETL processes and data storage resources to create a serverless fit-for-purpose data lake for the Insurance industry. This workshop starts with a fully deployed serverless data lake solution in the account. Participants will interact with the ETL pipeline configuration, try out loading and transforming sample data, add transform definitions, visualize data, and configure GenBI tools in Quick Suite to gain insights into the data.",
-      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/0a85653e-07e9-41a8-960a-2d1bb592331b",
-      "services": [
-        "Amazon QuickSight",
-        "AWS Glue",
-        "AWS Step Functions"
-      ],
-      "serviceIds": [
-        "amazon-quicksight",
-        "aws-glue",
-        "aws-step-functions"
-      ],
-      "topics": [
-        "Analytics",
-        "Machine Learning (ML/AI)",
-        "Serverless"
-      ],
-      "level": "200",
-      "durationHours": 3,
-      "languages": [
-        "en"
-      ],
-      "updatedAt": "2026-10-23T13:53:48Z",
-      "createdAt": "2024-05-13T13:50:55Z",
-      "sandboxAvailable": false
-    },
-    {
-      "id": "c556569f-5a26-494f-88e1-bac5a55adf2a",
-      "title": "InsuranceLake Quickstart",
-      "description": "InsuranceLake is solution accelerator which helps you deploy ETL processes and data storage resources to create a serverless fit-for-purpose data lake for the Insurance industry. Participants will clone the public Github repository, deploy the CDK stack using Visual Code, and practice performing typical Insurance data transforms on sample written premium data. For a version of this workshop that does not require first deploying the application via CDK, see the InsuranceLake Deep Dive Workshop.",
-      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/c556569f-5a26-494f-88e1-bac5a55adf2a",
-      "services": [
-        "Amazon QuickSight",
-        "AWS Glue",
-        "AWS Step Functions"
-      ],
-      "serviceIds": [
-        "amazon-quicksight",
-        "aws-glue",
-        "aws-step-functions"
-      ],
-      "topics": [
-        "Analytics",
-        "Machine Learning (ML/AI)",
-        "Serverless"
-      ],
-      "level": "300",
-      "durationHours": 2,
-      "languages": [
-        "en"
-      ],
-      "updatedAt": "2026-10-20T19:49:18Z",
-      "createdAt": "2023-12-18T17:18:50Z",
-      "sandboxAvailable": false
-    },
-    {
       "id": "fff8e490-f397-43d2-ae26-737a6dc4ac68",
       "title": "Integrating IAM Access Analyzer into a CI/CD Pipeline",
       "description": "Want to analyze IAM policies at scale? Want your developers to write secure IAM policies? In this hands-on workshop, you are given the opportunity to build a CI/CD pipeline that validates IAM policies using IAM Access Analyzer and the IAM Policy Validator for AWS CloudFormation.",
@@ -7540,7 +7509,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-09-16T18:08:07Z",
+      "updatedAt": "2026-10-27T14:09:54Z",
       "createdAt": "2021-09-22T03:23:41Z",
       "sandboxAvailable": false
     },
@@ -7614,7 +7583,7 @@
         "ja",
         "fr"
       ],
-      "updatedAt": "2026-10-21T11:53:38Z",
+      "updatedAt": "2026-10-27T07:52:22Z",
       "createdAt": "2025-09-19T09:40:20Z",
       "sandboxAvailable": false
     },
@@ -8250,7 +8219,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-19T18:43:24Z",
+      "updatedAt": "2026-10-28T01:17:35Z",
       "createdAt": "2022-08-17T16:50:00Z",
       "sandboxAvailable": false
     },
@@ -8719,7 +8688,7 @@
         "zh",
         "ko"
       ],
-      "updatedAt": "2026-10-22T21:36:01Z",
+      "updatedAt": "2026-10-27T18:59:44Z",
       "createdAt": "2022-02-23T06:11:42Z",
       "sandboxAvailable": false
     },

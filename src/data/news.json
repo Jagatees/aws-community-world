@@ -1,223 +1,243 @@
 {
-  "updatedAt": "2026-10-27T05:58:24.381Z",
+  "updatedAt": "2026-10-28T06:36:58.870Z",
   "latest": [
     {
-      "id": "/content/3LGQfrHgTV7UiLyVGsNnz6AEq32",
-      "title": "Your AI Agent Works—But Is It Safe for Production?",
-      "description": "Learn how to build safer AI agents on AWS with limited permissions, human approval, cost controls, monitoring, and practical testing.",
-      "url": "https://builder.aws.com/content/3LGQfrHgTV7UiLyVGsNnz6AEq32",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LGVeF7YIEIbqESBrBydBuhHf1X/From.webp",
-      "authorName": "Jigar Vishwakarma",
-      "authorAlias": "jigarvishwakarma",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LEikbFapl78O9ewS3WrzbAOMSF.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "ai-engineering",
-        "ai-ml",
-        "aws-ambassador",
-        "aws-ai-chips"
-      ],
-      "publishedAt": "2026-10-27T05:55:33.824Z",
-      "likesCount": 4,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3LGVCpxpm0CuYMeqNmb5XNxdtAs",
-      "title": "AWS Student Builder Challenge – Who's Joining?",
-      "description": "I'm joining the AWS Student Builder Challenge to build my portfolio, explore AWS, and create something unique. Who's joining me?",
-      "url": "https://builder.aws.com/content/3LGVCpxpm0CuYMeqNmb5XNxdtAs",
+      "id": "/content/3LJPAk2BmlTuRgKtuQiA3nY116Y",
+      "title": "Automating Software Delivery with AWS: A Beginner’s Guide to CI/CD",
+      "description": "Building an application is only one part of software development. Developers also need a reliable way to test changes, package code, and deploy updates without introducing unnecessary errors. Continuous Integration and Continuous Delivery (CI/CD) help automate this process.",
+      "url": "https://builder.aws.com/content/3LJPAk2BmlTuRgKtuQiA3nY116Y",
       "imageUrl": "",
-      "authorName": "Muhammad Saadullah",
-      "authorAlias": "saadullah",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IUqiCePCFAN6JDGA5lUgmoUbJ4.webp",
-      "location": "PK",
-      "lat": 30.3308401,
-      "lng": 71.247499,
+      "authorName": "Mythili Dommati",
+      "authorAlias": "mythili1289",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J92ikWgy6jh6gTbLFi57fSANXf.webp",
+      "location": "Telangana, IN",
+      "lat": 17.8495919,
+      "lng": 79.1151663,
       "tags": [
-        "student-builders",
-        "aws-amplify",
-        "tech-journey",
-        "web-development"
-      ],
-      "publishedAt": "2026-10-27T05:54:36.876Z",
-      "likesCount": 4,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3LGV2KvdqX0aUzrZtV4w6axSqvY",
-      "title": "AWS Lambda Explained: How Serverless Computing Works, Where to Use It, and How to Build Your First Function",
-      "description": "Learn how AWS Lambda works, why developers and organizations use serverless computing, and how to build your first Lambda function. This practical guide covers event-driven architecture, real-world use cases, integration with other AWS services, a Node.js example, deployment steps, security best practices, and cost optimization.",
-      "url": "https://builder.aws.com/content/3LGV2KvdqX0aUzrZtV4w6axSqvY",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LGVYmwgCdFqBzrQDiPijFKnorr/AWS-.webp",
-      "authorName": "Nithin G",
-      "authorAlias": "nithing007",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JPlsY2NTpYtphKXkRH73bL0khH.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "aws-lambda",
-        "aws-sdk",
+        "aws-academy",
         "ci-cd",
-        "amazon-ec2"
+        "devops",
+        "software-development"
       ],
-      "publishedAt": "2026-10-27T05:54:27.819Z",
-      "likesCount": 4,
-      "commentsCount": 1
+      "publishedAt": "2026-10-28T06:33:13.329Z",
+      "likesCount": 5,
+      "commentsCount": 5
     },
     {
-      "id": "/content/3LGVRmdbbAsJzEZ7NeDs8X2UMax",
-      "title": "Give Your AI Coding Agent AWS Access—Safely: A Practical Guide",
-      "description": "Learn how to connect an AI coding agent to AWS using MCP while keeping your cloud environment secure through least-privilege IAM, read-only access, human approval, and CloudTrail auditing.",
-      "url": "https://builder.aws.com/content/3LGVRmdbbAsJzEZ7NeDs8X2UMax",
+      "id": "/content/3LJPJQu1vg04f7sSgqqIo3Jn2SA",
+      "title": "Add Generative AI to Your App with the Amazon Bedrock Converse API",
+      "description": "Adding generative AI to an application used to mean choosing a model provider, learning its API, managing keys, and rewriting everything when you wanted to try a different model. Amazon Bedrock simplifies this: one managed service, many foundation models, and your data stays inside your AWS account’s security boundary.",
+      "url": "https://builder.aws.com/content/3LJPJQu1vg04f7sSgqqIo3Jn2SA",
       "imageUrl": "",
-      "authorName": "Akash Raj",
-      "authorAlias": "akashrajofficial",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3Jr7GhfklmLGnOCErT4IXqrT4vh.webp",
-      "location": "Maharashtra, IN",
-      "lat": 19.5670323,
-      "lng": 76.4164557,
-      "tags": [
-        "ai",
-        "security",
-        "iam",
-        "devops"
-      ],
-      "publishedAt": "2026-10-27T05:54:23.285Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3LGTcP1yJ1e9yyzbz6lmT7f7J1s",
-      "title": "Can AI Predict Cold Chain Temperature Risks Before They Become Failures?",
-      "description": "Explore how IoT sensor data, machine learning, and AWS cloud services can help identify temperature risks earlier in cold storage. Learn about practical challenges such as missing readings, rare events, and reliable alerts.",
-      "url": "https://builder.aws.com/content/3LGTcP1yJ1e9yyzbz6lmT7f7J1s",
-      "imageUrl": "",
-      "authorName": "Mrigank Jaiswal",
-      "authorAlias": "mrigank06",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/33I6d26YXYE3wFtQx0kbi6B2jof.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-iot",
-        "machine-learning",
-        "artificial-intelligence",
-        "cloud-operations",
-        "analytics"
-      ],
-      "publishedAt": "2026-10-27T05:53:26.830Z",
-      "likesCount": 1,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3LGTVGpdM6ArLBwTcIeAUiADjag",
-      "title": "Give Your AI Coding Agent AWS Access—Safely",
-      "description": "Learn how MCP connects AI coding agents to AWS, with practical workflows, IAM permissions, security checks, and deployment safeguards.",
-      "url": "https://builder.aws.com/content/3LGTVGpdM6ArLBwTcIeAUiADjag",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LGUB3Lz9PEW2Q60iJWgORBgzUz/Gold.webp",
-      "authorName": "Jigar Vishwakarma",
-      "authorAlias": "jigarvishwakarma",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LEikbFapl78O9ewS3WrzbAOMSF.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "agentic-ai",
-        "ai-ml",
-        "aws-codebuild",
-        "amazon-bedrock",
-        "machine-learning"
-      ],
-      "publishedAt": "2026-10-27T05:42:57.293Z",
-      "likesCount": 18,
-      "commentsCount": 16
-    },
-    {
-      "id": "/content/3LGTgbyAxfbtyvzuHHnD9f3qCog",
-      "title": "My Cloud Computing Journey as a Student in India",
-      "description": "My introduction and learning goals on the AWS Builder Center.\n",
-      "url": "https://builder.aws.com/content/3LGTgbyAxfbtyvzuHHnD9f3qCog",
-      "imageUrl": "",
-      "authorName": "Denaboina swathi",
-      "authorAlias": "swath",
-      "authorAvatarUrl": "",
+      "authorName": "SANTHOSH M V",
+      "authorAlias": "santhoshmurugesan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KbuXBvP3b3xCm4CJ11Vw7wsElI.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
       "tags": [],
-      "publishedAt": "2026-10-27T05:41:05.510Z",
-      "likesCount": 7,
-      "commentsCount": 2
+      "publishedAt": "2026-10-28T06:32:53.856Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3LGSbexGHTBOHSJZLbBnkckdqSM",
-      "title": "Minha jornada de aprendizado em AWS e Cloud Computing",
-      "description": "Iniciando minha jornada de estudos em AWS, com foco em infraestrutura, redes, segurança e alta disponibilidade. Neste espaço, pretendo compartilhar projetos, desafios e aprendizados ao longo da minha evolução.",
-      "url": "https://builder.aws.com/content/3LGSbexGHTBOHSJZLbBnkckdqSM",
-      "imageUrl": "",
-      "authorName": "Givanildo Júnior",
-      "authorAlias": "givajj",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KBatZHWsaRgj0MJVPSbHY6V4C0.webp",
-      "location": "PB, BR",
-      "lat": -7.1219366,
-      "lng": -36.7246845,
-      "tags": [],
-      "publishedAt": "2026-10-27T05:37:00.365Z",
-      "likesCount": 2,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3LGRsuSYofnaL5bvfzHD7S2Nss1",
-      "title": "From Linux Basics to AWS Resource Monitoring: My DevOps Learning Journey",
-      "description": "Explore my DevOps learning journey, from mastering basic Linux commands and Bash scripting to automating AWS resource monitoring with the AWS CLI. Learn how I used shell scripting to collect information about Amazon S3, Amazon EC2, AWS Lambda, and AWS IAM, while exploring cron scheduling and remote server management with MobaXterm.",
-      "url": "https://builder.aws.com/content/3LGRsuSYofnaL5bvfzHD7S2Nss1",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LGSVWTWTd2znJ2RpEYAq28ox7J/From.webp",
-      "authorName": "Buddhi",
-      "authorAlias": "buddhi02",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KgRjUYVPTHzWFOp2dI5Rjcu8YM.webp",
+      "id": "/content/3LJOzc1sMrvhWWBpMiQrA4wpR7V",
+      "title": "Amazon CloudFront Explained: How to Make Your Website Faster Worldwide",
+      "description": "Why can a website load quickly for users in one country but slowly for users in another? In this article, I explore Amazon CloudFront, how content delivery networks work, and how CloudFront helps deliver website content with lower latency, improved performance, and better security.",
+      "url": "https://builder.aws.com/content/3LJOzc1sMrvhWWBpMiQrA4wpR7V",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LJPDuGdULXiNLhSnvy2ueHXMEO/Make.webp",
+      "authorName": "Sampath M Chandimal",
+      "authorAlias": "sampathweligala",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J4jJp3vVj72iKdDkjosdNRvEUx.webp",
       "location": "LK",
       "lat": 7.5554942,
       "lng": 80.7137847,
       "tags": [
-        "devops",
-        "linux",
-        "shell-scripting",
-        "cloud-concepts",
-        "aws-command-line-interface"
+        "amazon-cloudfront",
+        "amazon-s3",
+        "devops"
       ],
-      "publishedAt": "2026-10-27T05:33:45.641Z",
-      "likesCount": 10,
-      "commentsCount": 8
+      "publishedAt": "2026-10-28T06:31:43.767Z",
+      "likesCount": 1,
+      "commentsCount": 1
     },
     {
-      "id": "/content/3LGSic88DMEvgRawivmcgJH1rDL",
-      "title": "How to Get $100 in Free AWS Credits (Plus $100 More): A Step-by-Step Guide",
-      "description": "New to AWS? You can start with $100 in free credits and earn another $100 by completing five simple activities. Here’s exactly how to claim them, what to avoid, and how to make every dollar last.",
-      "url": "https://builder.aws.com/content/3LGSic88DMEvgRawivmcgJH1rDL",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LGSyQY29yjy9LWB3WjuzDgS1Im/Chat.webp",
-      "authorName": "Matthew Senthamizhan",
-      "authorAlias": "matthewsenthamizhan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KsJeqMwiJ2he4BueoLhhRW8nRA.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
+      "id": "/content/3LJOpY8gcrRV81zG3R8aZcBshQh",
+      "title": "Building Event-Driven Workflows with AWS Step Functions",
+      "description": "Explore how AWS Step Functions simplifies workflow orchestration with visual state machines, error handling, and coordination between cloud services.",
+      "url": "https://builder.aws.com/content/3LJOpY8gcrRV81zG3R8aZcBshQh",
+      "imageUrl": "",
+      "authorName": "ABHI RAM REDDY MOKILLA",
+      "authorAlias": "abhiram21",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J90gm3iLqCGNhx9yPmnOwODfWk.webp",
+      "location": "Telangana, IN",
+      "lat": 17.8495919,
+      "lng": 79.1151663,
       "tags": [
-        "aws-free-tier",
-        "ai",
-        "aws-credits",
-        "students",
-        "cloud-concepts"
+        "aws-academy",
+        "aws-step-functions",
+        "serverless",
+        "workflows",
+        "architecture"
       ],
-      "publishedAt": "2026-10-27T05:33:23.635Z",
+      "publishedAt": "2026-10-28T06:29:39.214Z",
+      "likesCount": 4,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3LJOjFjmIbCjZbPR6asKOCwQGA3",
+      "title": "Build a Serverless URL Shortener on AWS in 20 Minutes with Lambda, API Gateway, and DynamoDB",
+      "description": "Serverless is one of the quickest ways to get a real application running on AWS. You write the logic, AWS runs it, and you pay only when it’s used. In this tutorial we’ll build a URL shortener with an HTTP API, two Lambda functions, and a DynamoDB table, all defined as code with the AWS Serverless Application Model (SAM).\nBy the end you’ll have a live API that:\nAccepts a long URL and returns a short code ( POST /links )\n\nRedirects visitors from the short code to the original URL ( GET /{code} )\n\n",
+      "url": "https://builder.aws.com/content/3LJOjFjmIbCjZbPR6asKOCwQGA3",
+      "imageUrl": "",
+      "authorName": "SANTHOSH M V",
+      "authorAlias": "santhoshmurugesan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KbuXBvP3b3xCm4CJ11Vw7wsElI.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [],
+      "publishedAt": "2026-10-28T06:28:54.880Z",
+      "likesCount": 2,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3LJNCzTPreyOSzL0ivxVwdHH5Oq",
+      "title": "From Zero to Containers on AWS: A Beginner's Guide to Docker, Amazon ECR, and Amazon ECS",
+      "description": "Discover how containers simplify application deployment and how AWS services help you take an application from your local machine to the cloud. This beginner-friendly guide explains Docker, Amazon Elastic Container Registry (ECR), and Amazon Elastic Container Service (ECS), along with their roles in a practical container deployment workflow.",
+      "url": "https://builder.aws.com/content/3LJNCzTPreyOSzL0ivxVwdHH5Oq",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LJOdeSMVQITKaqPbO98jJVtgqi/1000.webp",
+      "authorName": "NAKUL BHATIA",
+      "authorAlias": "xeno7",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J2c83xL3kEem0JXB9slZocl5Oc.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "docker",
+        "aws-cli",
+        "aws-builders",
+        "cloud-security",
+        "cybersecurity"
+      ],
+      "publishedAt": "2026-10-28T06:28:09.525Z",
+      "likesCount": 2,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3LJNgaIJACUeTFwwN3cgcW7vUgv",
+      "title": "How Infrastructure as Code Simplifies Cloud Management",
+      "description": " Discover how Infrastructure as Code helps developers automate AWS resource provisioning, maintain consistent environments, and manage infrastructure changes reliably.",
+      "url": "https://builder.aws.com/content/3LJNgaIJACUeTFwwN3cgcW7vUgv",
+      "imageUrl": "",
+      "authorName": "ABHI RAM REDDY MOKILLA",
+      "authorAlias": "abhiram21",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J90gm3iLqCGNhx9yPmnOwODfWk.webp",
+      "location": "Telangana, IN",
+      "lat": 17.8495919,
+      "lng": 79.1151663,
+      "tags": [
+        "aws-academy",
+        "infrastructure-as-code",
+        "aws-cloudformation",
+        "devops"
+      ],
+      "publishedAt": "2026-10-28T06:22:49.132Z",
+      "likesCount": 16,
+      "commentsCount": 15
+    },
+    {
+      "id": "/content/3LJKUTGuX80Mz6JBgOo1fFUM6sP",
+      "title": "My third merged Serverless Land PR: semantic search with Bedrock and DynamoDB",
+      "description": "A technical walkthrough of API contracts, embeddings, DynamoDB vector indexes, IAM, deployment, and testing—plus a practical guide to contributing a Serverless Land pattern.",
+      "url": "https://builder.aws.com/content/3LJKUTGuX80Mz6JBgOo1fFUM6sP",
+      "imageUrl": "",
+      "authorName": "Vidit Shah",
+      "authorAlias": "vidit",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2tZA3sG5UlvgBsaNHjmOy1ymR5o.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "serverless",
+        "amazon-bedrock",
+        "amazon-dynamodb",
+        "aws-cdk",
+        "aws-lambda"
+      ],
+      "publishedAt": "2026-10-28T06:19:00.170Z",
+      "likesCount": 9,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3LGJK2UqXgWfU9bIalWLspi3cAO",
+      "title": "Amazon S3 Best Practices: Building Secure and Reliable Cloud Storage",
+      "description": "Cloud applications generate and store different types of data, including images, documents, backups, and application files. Choosing a reliable storage solution is important, but storing data in the cloud also requires careful attention to security, accessibility, and cost.",
+      "url": "https://builder.aws.com/content/3LGJK2UqXgWfU9bIalWLspi3cAO",
+      "imageUrl": "",
+      "authorName": "ABHI RAM REDDY MOKILLA",
+      "authorAlias": "abhiram21",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3J90gm3iLqCGNhx9yPmnOwODfWk.webp",
+      "location": "Telangana, IN",
+      "lat": 17.8495919,
+      "lng": 79.1151663,
+      "tags": [
+        "amazon-s3",
+        "cloud-storage",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-10-27T04:14:58.838Z",
+      "likesCount": 19,
+      "commentsCount": 18
+    },
+    {
+      "id": "/content/3LJMKOvjBqQXGjI1WbMheR3ZYuA",
+      "title": "Building Trustworthy AI Applications with Amazon Bedrock Knowledge Bases",
+      "description": "Learn how Retrieval-Augmented Generation (RAG) can help AI applications answer questions using your own documents. This practical guide explains the architecture, implementation workflow, Python example, and key considerations for building more reliable generative AI applications with Amazon Bedrock.",
+      "url": "https://builder.aws.com/content/3LJMKOvjBqQXGjI1WbMheR3ZYuA",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LJMuyZxWBif3aVS60kcF1dq3dO/Buil.webp",
+      "authorName": "Swati Verma",
+      "authorAlias": "snpyxd",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KmqFI2E4M0qWiHxtuUDSmSmfLJ.webp",
+      "location": "Uttar Pradesh, IN",
+      "lat": 27.1303344,
+      "lng": 80.859666,
+      "tags": [
+        "generative-ai",
+        "amazon-bedrock",
+        "artificial-intelligence",
+        "python",
+        "machine-learning"
+      ],
+      "publishedAt": "2026-10-28T06:13:05.536Z",
       "likesCount": 7,
-      "commentsCount": 6
+      "commentsCount": 8
     }
   ],
   "trending": [
+    {
+      "id": "/content/3LGfuTWE8JGxiQw9JpTGwYQNJeE",
+      "title": "Red team your agent before your customers do, with Strands Evals",
+      "description": "Red teaming in Strands Evals 1.7.0 runs adversarial conversations against your agent or harness. Attack a refund agent with GOAT, then check its tool calls, not just the score.",
+      "url": "https://builder.aws.com/content/3LGfuTWE8JGxiQw9JpTGwYQNJeE",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LGn6sjeCFMkWgYlFtZqKJlo5Ry/banne.webp",
+      "authorName": "TheWitcherish",
+      "authorAlias": "thewitcherish",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36z33C86T7M6qLzBQlWKDWLhTsm.webp",
+      "location": "Bavaria, DE",
+      "lat": 48.9467562,
+      "lng": 11.4038717,
+      "tags": [
+        "strands",
+        "strands-agents",
+        "agentic-ai",
+        "ai-security",
+        "agents"
+      ],
+      "publishedAt": "2026-10-27T08:19:00.797Z",
+      "likesCount": 127,
+      "commentsCount": 20
+    },
     {
       "id": "/content/3LEgWJQT3TbhuGgf47jISk0Ia6m",
       "title": "How to stop a Strands agent calling tools in the wrong order",
@@ -238,8 +258,8 @@
         "tutorials"
       ],
       "publishedAt": "2026-10-26T14:32:13.586Z",
-      "likesCount": 72,
-      "commentsCount": 6
+      "likesCount": 166,
+      "commentsCount": 22
     },
     {
       "id": "/content/3LB860PMSMhAGwIDvqi2Wc2afWz",
@@ -260,8 +280,8 @@
         "amazon-bedrock-agentcore"
       ],
       "publishedAt": "2026-10-25T08:18:04.591Z",
-      "likesCount": 210,
-      "commentsCount": 25
+      "likesCount": 253,
+      "commentsCount": 28
     },
     {
       "id": "/content/3LBYLRB9sEm2Yaxr6b3ETawgfwK",
@@ -281,31 +301,8 @@
         "observability"
       ],
       "publishedAt": "2026-10-25T12:21:04.565Z",
-      "likesCount": 96,
+      "likesCount": 108,
       "commentsCount": 5
-    },
-    {
-      "id": "/content/3LEOfhdkTBbB1f3MArt1TyqGSa4",
-      "title": "If AWS Were a Game, How Would You Start? My Experience at AWS Community Day Paraguay 🇵🇾",
-      "description": "What happens when AWS meets RPGs and video games? A look at my talk, how I used AWS to overcome a language barrier, and the wonderful people and moments that made AWS Community Day Paraguay so special. ",
-      "url": "https://builder.aws.com/content/3LEOfhdkTBbB1f3MArt1TyqGSa4",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LEX47V3PMewr0ScZy3YH8gw0AJ/Whats.webp",
-      "authorName": "Paloma Lataliza",
-      "authorAlias": "shescloud",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2xmjVhiRxYIuGmpX9eHxTRt3oeE.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "aws-heroes",
-        "foundational",
-        "aws-community-day",
-        "compute",
-        "cloud-security"
-      ],
-      "publishedAt": "2026-10-26T13:08:38.807Z",
-      "likesCount": 27,
-      "commentsCount": 2
     },
     {
       "id": "/content/3LFnqIzBNLkGSRluYc54NMD9vSV",
@@ -326,7 +323,53 @@
         "ai"
       ],
       "publishedAt": "2026-10-26T23:57:36.396Z",
-      "likesCount": 12,
+      "likesCount": 18,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3LEOfhdkTBbB1f3MArt1TyqGSa4",
+      "title": "If AWS Were a Game, How Would You Start? My Experience at AWS Community Day Paraguay 🇵🇾",
+      "description": "What happens when AWS meets RPGs and video games? A look at my talk, how I used AWS to overcome a language barrier, and the wonderful people and moments that made AWS Community Day Paraguay so special. ",
+      "url": "https://builder.aws.com/content/3LEOfhdkTBbB1f3MArt1TyqGSa4",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LEX47V3PMewr0ScZy3YH8gw0AJ/Whats.webp",
+      "authorName": "Paloma Lataliza",
+      "authorAlias": "shescloud",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LIQh17K0HluKSHwC32TpPZi8dm.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "aws-heroes",
+        "foundational",
+        "aws-community-day",
+        "compute",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-10-26T13:08:38.807Z",
+      "likesCount": 36,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3LEaFTT2umHi5VDbKEnZCxSy9QS",
+      "title": "Same Sonic, New Level: From Code to Cloud at DevOpsDays Florianópolis",
+      "description": "A new event, a better infrastructure setup, and a live deployment! Sharing how I improved my Terraform and Terragrunt project, made the modules more reusable, and brought a hands-on AWS experience to the stage.",
+      "url": "https://builder.aws.com/content/3LEaFTT2umHi5VDbKEnZCxSy9QS",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LHTF2jxmltQjc1ArIvJi0xmhXS/Scre.webp",
+      "authorName": "Paloma Lataliza",
+      "authorAlias": "shescloud",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LIQh17K0HluKSHwC32TpPZi8dm.webp",
+      "location": "BR",
+      "lat": -10.3333333,
+      "lng": -53.2,
+      "tags": [
+        "IaC",
+        "terraform",
+        "devops",
+        "aws-community",
+        "containers"
+      ],
+      "publishedAt": "2026-10-27T14:05:04.701Z",
+      "likesCount": 14,
       "commentsCount": 0
     },
     {
@@ -349,8 +392,31 @@
         "aws-community-day"
       ],
       "publishedAt": "2026-10-24T01:22:27.864Z",
-      "likesCount": 218,
-      "commentsCount": 23
+      "likesCount": 221,
+      "commentsCount": 24
+    },
+    {
+      "id": "/content/3LGTP9AmqtB5VNJaXSVjgrBwuaN",
+      "title": "Two Days, Two Student Communities, My AWS New Voices 2026 Experience",
+      "description": "I teach. I build. I share.\nBut AWS New Voices made me realise there is a difference between sharing knowledge and actually communicating it.\nThat difference showed up clearly across two days in September.",
+      "url": "https://builder.aws.com/content/3LGTP9AmqtB5VNJaXSVjgrBwuaN",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LHKt4mYgt5go6uAivhLYPe77rc/Gemi.webp",
+      "authorName": "KARTHI M",
+      "authorAlias": "karthim22",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wGD13bbsVmr8K2bx9Y31hiBTCt.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "aws-builders",
+        "aws-certification",
+        "community"
+      ],
+      "publishedAt": "2026-10-27T13:04:29.567Z",
+      "likesCount": 27,
+      "commentsCount": 0
     },
     {
       "id": "/content/3LE8dbbjxHWvOlldIqAFgyvnRLf",
@@ -366,68 +432,8 @@
       "lng": 0,
       "tags": [],
       "publishedAt": "2026-10-26T10:16:58.778Z",
-      "likesCount": 10,
+      "likesCount": 12,
       "commentsCount": 2
-    },
-    {
-      "id": "/content/3L6C4XiK9WgcsjdlNEOSdiI5ibJ",
-      "title": "无侵入监控和回放 Claude Code 会话执行过程",
-      "description": "Apache SkyWalking AI Sessionizer 可以直接读取本机已有的 Claude Code 记录，将对话、工具调用和子 Agent 的执行过程关联起来，在浏览器中查看。接入时不需要在 Claude Code 中安装插件或修改配置，使用 Sessionizer 之前留下的历史记录也可以回放。",
-      "url": "https://builder.aws.com/content/3L6C4XiK9WgcsjdlNEOSdiI5ibJ",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3L6FgQPm3TfaH48tZfgD4Q74Yqj/sess.webp",
-      "authorName": "Wu Sheng",
-      "authorAlias": "wusheng",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3AgtyAPOEA9U7IQiC3nChOcDV6A.webp",
-      "location": "CN",
-      "lat": 34.5412252,
-      "lng": 108.9237067,
-      "tags": [
-        "agentic-ai",
-        "observability",
-        "chinese"
-      ],
-      "publishedAt": "2026-10-23T15:07:30.790Z",
-      "likesCount": 124,
-      "commentsCount": 5
-    },
-    {
-      "id": "/content/3LEqleSvMBqNSJ05dKK961fM0et",
-      "title": "Crear agentes de IA en minutos con AgentCore harness",
-      "description": "Veamos cómo Amazon Bedrock AgentCore harness te permite crear, desplegar y escalar agentes de IA listos para producción en minutos, al convertir la complejidad de la infraestructura y la orquestación en configuración sencilla.",
-      "url": "https://builder.aws.com/content/3LEqleSvMBqNSJ05dKK961fM0et",
-      "imageUrl": "",
-      "authorName": "Guille Ojeda",
-      "authorAlias": "guilleojeda",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DjYBPbu9vwy8PKvo0yvGETVXwo.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai",
-        "agentic-ai",
-        "amazon-bedrock-agentcore",
-        "ai-agents"
-      ],
-      "publishedAt": "2026-10-26T15:51:45.828Z",
-      "likesCount": 13,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3LDWwhuAQorTwfj4pFOW9IDv6QX",
-      "title": "Amazon ECS Gateway Explained: A New Approach to ECS Ingress and Platform Engineering",
-      "description": "Amazon ECS Gateway simplifies ingress management by enabling platform teams to standardize networking while giving application teams a self-service way to expose their ECS services. Explore what ECS Gateway provisions behind the scenes, how service routing works, key architectural considerations, and what to validate before rolling it out. Less manual configuration, fewer operational bottlenecks, and a better developer experience.",
-      "url": "https://builder.aws.com/content/3LDWwhuAQorTwfj4pFOW9IDv6QX",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3LDXZCLRXBP2lp2oOw11HAfDJxW/ecs-.webp",
-      "authorName": "Ashish Kasaudhan",
-      "authorAlias": "ashishkasaudhan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2ZyzxWJL6fUBFALky7MmJYW9nAz.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [],
-      "publishedAt": "2026-10-26T04:51:15.903Z",
-      "likesCount": 14,
-      "commentsCount": 0
     }
   ]
 }
