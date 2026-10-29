@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-28T06:37:01.247Z",
+  "updatedAt": "2026-10-29T06:44:53.527Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -13765,7 +13765,7 @@
       }
     },
     {
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "source": {
         "type": "working-tree"
       },
@@ -14058,8 +14058,8 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-28",
-      "daysCovered": 213
+      "endDate": "2026-10-29",
+      "daysCovered": 214
     },
     "global": {
       "totalRecords": 4979,
@@ -14070,7 +14070,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-28",
+        "currentDate": "2026-10-29",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -14641,7 +14641,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-28",
+        "currentDate": "2026-10-29",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -15204,7 +15204,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-28",
+        "currentDate": "2026-10-29",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -15845,7 +15845,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-28",
+        "currentDate": "2026-10-29",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -16394,7 +16394,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-28",
+        "currentDate": "2026-10-29",
         "baselineTotal": 17,
         "currentTotal": 15,
         "currentCoveragePercent": 13.3,
@@ -16810,7 +16810,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-28",
+        "currentDate": "2026-10-29",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -17140,8 +17140,8 @@
       }
     },
     "upcoming": {
-      "total": 16,
-      "next30Days": 11,
+      "total": 15,
+      "next30Days": 10,
       "byRegion": {
         "north-america": 2,
         "south-america": 2,
@@ -17151,15 +17151,6 @@
         "oceania": 0
       },
       "items": [
-        {
-          "name": "SHPE National Convention",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://shpe.org/engage/events/national-convention/",
-          "category": "kiro-events",
-          "date": "2026-10-28T00:00:00.000Z"
-        },
         {
           "name": "Kiroween 2026",
           "location": "Online",

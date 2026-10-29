@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-10-28T06:37:08.496Z",
+  "checkedAt": "2026-10-29T06:45:01.444Z",
   "productCount": 235,
   "services": [
     {
@@ -3470,7 +3470,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-23T18:57:34Z",
+      "updatedAt": "2026-10-28T20:36:42Z",
       "createdAt": "2026-09-03T12:05:49Z",
       "sandboxAvailable": false
     },
@@ -4039,7 +4039,7 @@
         "en",
         "ja"
       ],
-      "updatedAt": "2026-09-22T21:57:35Z",
+      "updatedAt": "2026-10-28T21:02:55Z",
       "createdAt": "2023-02-16T15:45:34Z",
       "sandboxAvailable": false
     },
@@ -4386,7 +4386,7 @@
       "id": "2a5fc82d-2b5f-4105-83c2-91a1b4d7abfe",
       "title": "Amazon RDS for PostgreSQL Workshop",
       "description": "The RDS PostgreSQL workshop provides customers with hands-on experience using Amazon RDS for PostgreSQL. It uses a modular content format including foundational, intermediate, and advanced labs covering a wide range of RDS features and PostgreSQL topics.",
-      "url": "https://catalog.workshops.aws/workshops/2a5fc82d-2b5f-4105-83c2-91a1b4d7abfe",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/2a5fc82d-2b5f-4105-83c2-91a1b4d7abfe",
       "services": [
         "Amazon RDS for PostgreSQL"
       ],
@@ -4402,7 +4402,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-03-27T21:25:14Z",
+      "updatedAt": "2026-10-29T02:14:49Z",
       "createdAt": "2021-07-23T02:50:38Z",
       "sandboxAvailable": false
     },
@@ -5724,9 +5724,10 @@
       "languages": [
         "en",
         "ja",
+        "ko",
         "zh"
       ],
-      "updatedAt": "2026-08-28T14:30:59Z",
+      "updatedAt": "2026-10-28T11:11:55Z",
       "createdAt": "2025-02-10T20:07:44Z",
       "sandboxAvailable": false
     },
@@ -5756,7 +5757,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-27T20:44:49Z",
+      "updatedAt": "2026-10-28T11:04:57Z",
       "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
@@ -5832,9 +5833,10 @@
         "en",
         "ja",
         "es",
-        "pt"
+        "pt",
+        "ko"
       ],
-      "updatedAt": "2026-10-19T03:48:10Z",
+      "updatedAt": "2026-10-29T03:26:37Z",
       "createdAt": "2026-06-02T18:34:23Z",
       "sandboxAvailable": false
     },
@@ -7583,7 +7585,7 @@
         "ja",
         "fr"
       ],
-      "updatedAt": "2026-10-27T07:52:22Z",
+      "updatedAt": "2026-10-28T20:38:42Z",
       "createdAt": "2025-09-19T09:40:20Z",
       "sandboxAvailable": false
     },
