@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-30T06:47:38.004Z",
+  "updatedAt": "2026-10-31T06:36:41.241Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -13765,7 +13765,7 @@
       }
     },
     {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "source": {
         "type": "working-tree"
       },
@@ -13959,10 +13959,10 @@
           }
         },
         "kiro-events": {
-          "total": 15,
+          "total": 14,
           "classified": 2,
-          "unclassified": 13,
-          "coveragePercent": 13.3,
+          "unclassified": 12,
+          "coveragePercent": 14.3,
           "regions": {
             "north-america": 2,
             "south-america": 0,
@@ -13973,9 +13973,9 @@
           },
           "changes": {
             "added": 0,
-            "removed": 0,
-            "net": 0,
-            "retained": 15,
+            "removed": 1,
+            "net": -1,
+            "retained": 14,
             "addedByRegion": {
               "north-america": 0,
               "south-america": 0,
@@ -13993,9 +13993,17 @@
               "oceania": 0
             },
             "addedUnclassified": 0,
-            "removedUnclassified": 0,
+            "removedUnclassified": 1,
             "addedItems": [],
-            "removedItems": [],
+            "removedItems": [
+              {
+                "name": "Osaka Kiro Meetup",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://jawsug-ai.connpass.com/event/408139/"
+              }
+            ],
             "quality": {
               "confidence": "high",
               "comparable": true,
@@ -14058,11 +14066,11 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-10-30",
-      "daysCovered": 215
+      "endDate": "2026-10-31",
+      "daysCovered": 216
     },
     "global": {
-      "totalRecords": 4979,
+      "totalRecords": 4978,
       "classifiedRecords": 4776,
       "coveragePercent": 95.9,
       "snapshots": 32
@@ -14070,7 +14078,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-30",
+        "currentDate": "2026-10-31",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 96.5,
@@ -14641,7 +14649,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-30",
+        "currentDate": "2026-10-31",
         "baselineTotal": 2494,
         "currentTotal": 3039,
         "currentCoveragePercent": 94.5,
@@ -15204,7 +15212,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-30",
+        "currentDate": "2026-10-31",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -15845,7 +15853,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-10-30",
+        "currentDate": "2026-10-31",
         "baselineTotal": 623,
         "currentTotal": 1023,
         "currentCoveragePercent": 98.7,
@@ -16394,14 +16402,14 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-10-30",
+        "currentDate": "2026-10-31",
         "baselineTotal": 17,
-        "currentTotal": 15,
-        "currentCoveragePercent": 13.3,
+        "currentTotal": 14,
+        "currentCoveragePercent": 14.3,
         "periodChange": {
-          "added": 15,
+          "added": 14,
           "removed": 17,
-          "net": -2,
+          "net": -3,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
@@ -16497,13 +16505,6 @@
               "country": "Online",
               "region": null,
               "url": "https://kiroween.devpost.com/"
-            },
-            {
-              "name": "Osaka Kiro Meetup",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://jawsug-ai.connpass.com/event/408139/"
             },
             {
               "name": "Ship Happens: Ideate. Build. Ship.",
@@ -16703,13 +16704,13 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-10-27",
-          "added": 10,
-          "removed": 0,
-          "net": 10,
-          "retained": 5,
+          "date": "2026-10-31",
+          "added": 0,
+          "removed": 1,
+          "net": -1,
+          "retained": 14,
           "addedByRegion": {
-            "north-america": 1,
+            "north-america": 0,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
@@ -16724,81 +16725,18 @@
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 9,
-          "removedUnclassified": 0,
-          "addedItems": [
-            {
-              "name": "AI DevCon",
-              "location": "New York, NY, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://tessl.io/devcon"
-            },
-            {
-              "name": "Escape from Labyrinth with Kiro",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
+          "addedUnclassified": 0,
+          "removedUnclassified": 1,
+          "addedItems": [],
+          "removedItems": [
             {
               "name": "Osaka Kiro Meetup",
               "location": "Online",
               "country": "Online",
               "region": null,
               "url": "https://jawsug-ai.connpass.com/event/408139/"
-            },
-            {
-              "name": "Ship Happens: Ideate. Build. Ship.",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/"
-            },
-            {
-              "name": "SHPE National Convention",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://shpe.org/engage/events/national-convention/"
             }
           ],
-          "removedItems": [],
           "quality": {
             "confidence": "high",
             "comparable": true,
@@ -16810,7 +16748,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-10-30",
+        "currentDate": "2026-10-31",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -17140,44 +17078,17 @@
       }
     },
     "upcoming": {
-      "total": 15,
-      "next30Days": 10,
+      "total": 12,
+      "next30Days": 8,
       "byRegion": {
         "north-america": 2,
         "south-america": 2,
         "europe": 0,
         "asia": 0,
-        "africa": 1,
+        "africa": 0,
         "oceania": 0
       },
       "items": [
-        {
-          "name": "Kiroween 2026",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://kiroween.devpost.com/",
-          "category": "kiro-events",
-          "date": "2026-10-30T00:00:00.000Z"
-        },
-        {
-          "name": "AWS Women User Group Abuja Community Day",
-          "location": "Abuja, Nigeria",
-          "country": "Nigeria",
-          "region": "africa",
-          "url": "https://v0-aws-community-day.vercel.app/",
-          "category": "community-days",
-          "date": "2026-10-30T12:00:00.000Z"
-        },
-        {
-          "name": "Osaka Kiro Meetup",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://jawsug-ai.connpass.com/event/408139/",
-          "category": "kiro-events",
-          "date": "2026-10-30T19:00:00.000Z"
-        },
         {
           "name": "Ship Happens: Ideate. Build. Ship.",
           "location": "Online",
