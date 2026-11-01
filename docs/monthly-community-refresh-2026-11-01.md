@@ -9,7 +9,10 @@ The `community-refresh-november-2026` branch refreshes the four AWS Builder Cent
 - AWS User Groups: 609
 - AWS Student Builder Groups: 1,626
 - Kiro Ambassadors: 7
-- Five-category home total: 5,538
+- Five refreshed categories: 5,538
+- Golden Jackets: 68
+- AWS Ambassadors: 360
+- Full home/splash total: 5,966
 
 The refresh clears all prior `isNew` markers. It marks 605 records newly discovered against the start-of-run snapshot: two Community Builders and 603 Student Builder Groups. No new Heroes or User Groups were discovered.
 
