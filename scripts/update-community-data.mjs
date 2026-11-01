@@ -40,7 +40,12 @@ const geoCache = existsSync(GEO_CACHE_FILE)
   : {};
 
 function saveGeoCache() {
-  writeFileSync(GEO_CACHE_FILE, `${JSON.stringify(geoCache, null, 2)}\n`);
+  try {
+    writeFileSync(GEO_CACHE_FILE, `${JSON.stringify(geoCache, null, 2)}\n`);
+  } catch (error) {
+    // A transient Windows file lock must not discard a successful geocode.
+    console.warn(`Could not persist geocode cache: ${error.message}`);
+  }
 }
 
 function readJson(filePath, fallback = []) {
@@ -140,7 +145,8 @@ async function geocode(location) {
 
   const queryLocation = normalizedGeocodeLocation(location);
   const key = queryLocation.trim().toLowerCase();
-  if (geoCache[key]) return geoCache[key];
+  // Retry failed historical lookups instead of making a cached 0,0 permanent.
+  if (hasCoordinates(geoCache[key])) return geoCache[key];
 
   await sleep(1_100);
 
@@ -673,9 +679,18 @@ function extractDirectoryGroups(kind) {
     const joinUrl = joinLink.getAttribute('href') || '';
     if (!name || !joinUrl || joinUrl.startsWith('#')) continue;
 
+    const leaderLabels = new Set(
+      Array.from(container.querySelectorAll('a[href^="/community/@"]'))
+        .flatMap((link) => [link.textContent?.trim(), link.querySelector('img[alt]')?.getAttribute('alt')?.trim()])
+        .filter(Boolean),
+    );
     const lines = rawLines
       .filter((line) => line !== 'Join' && line !== 'Led by');
-    const location = lines.find((line) => line !== name && !line.includes('Join')) || '';
+    const location = lines.find((line) => (
+      line !== name
+      && !line.includes('Join')
+      && !leaderLabels.has(line)
+    )) || '';
 
     const ledBy = [];
     if (kind === 'student') {
@@ -905,7 +920,13 @@ async function scrapeStudentBuilderGroups(page) {
   process.stdout.write('Scraping student builder groups...');
   await gotoDirectoryPage(page, PAGES.studentBuilderGroups, 'a[href]');
 
-  const scrapedGroups = await page.evaluate(extractDirectoryGroups, 'student');
+  const scrapedGroups = (await page.evaluate(extractDirectoryGroups, 'student')).map((group) => (
+    group.joinUrl.replace(/\/+$/, '').toLowerCase()
+      === 'https://www.meetup.com/aws-sbg-at-univ-of-the-joinville-region-joinville-campus'
+      && !group.location
+      ? { ...group, location: 'Joinville, Brazil' }
+      : group
+  ));
   // Check upstream completeness before supplementing the directory.
   if (!DRY_RUN && scrapedGroups.length < 50) throw new Error(`Student Builder Groups scrape returned only ${scrapedGroups.length} records`);
   const rawGroups = includeStudentGroupAdditions(

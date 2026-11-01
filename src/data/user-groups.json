@@ -2145,7 +2145,7 @@
     "profileUrl": "https://www.meetup.com/aws-user-group-mannheim/",
     "lat": 49.4892913,
     "lng": 8.4673098,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "Space-UG_195",
@@ -3696,13 +3696,13 @@
     "isNew": false
   },
   {
-    "id": "Space-UG_358",
-    "name": "AWS User Group Maputo",
+    "id": "042a8cde-3010-8dec-19d3-501784a7663b",
+    "name": "AWS UG Maputo",
     "avatarUrl": "",
     "category": "user-groups",
     "location": "Maputo, Mozambique",
-    "joinUrl": "https://www.meetup.com/aws-maputo/",
-    "profileUrl": "https://www.meetup.com/aws-maputo/",
+    "joinUrl": "https://www.meetup.com/aws-maputo",
+    "profileUrl": "https://www.meetup.com/aws-maputo",
     "lat": -25.966213,
     "lng": 32.56745,
     "isNew": false
@@ -4140,15 +4140,15 @@
     "isNew": false
   },
   {
-    "id": "Space-UG_409",
-    "name": "AWS UG Rio Grande do Sul",
+    "id": "Space-UG_441",
+    "name": "AWS User Group Porto Alegre",
     "avatarUrl": "",
     "category": "user-groups",
-    "location": "Rio Grande do Sul, Brazil",
-    "joinUrl": "https://www.meetup.com/pt-br/aws-porto-alegre/",
-    "profileUrl": "https://www.meetup.com/pt-br/aws-porto-alegre/",
-    "lat": -29.8425284,
-    "lng": -53.7680577,
+    "location": "Porto Alegre, Brazil",
+    "joinUrl": "https://www.meetup.com/AWS-Porto-Alegre/",
+    "profileUrl": "https://www.meetup.com/AWS-Porto-Alegre/",
+    "lat": -30.0324999,
+    "lng": -51.2303767,
     "isNew": false
   },
   {
@@ -4524,18 +4524,6 @@
     "isNew": false
   },
   {
-    "id": "Space-UG_441",
-    "name": "AWS User Group Porto Alegre",
-    "avatarUrl": "",
-    "category": "user-groups",
-    "location": "Porto Alegre, Brazil",
-    "joinUrl": "https://www.meetup.com/AWS-Porto-Alegre/",
-    "profileUrl": "https://www.meetup.com/AWS-Porto-Alegre/",
-    "lat": -30.0324999,
-    "lng": -51.2303767,
-    "isNew": false
-  },
-  {
     "id": "Space-UG_444",
     "name": "AWS User Group Grande Tiêtê",
     "avatarUrl": "",
@@ -4716,15 +4704,15 @@
     "isNew": false
   },
   {
-    "id": "15348585-9daa-138b-07ba-07bcd390ca08",
-    "name": "AWS Women's User Groups Colombia",
+    "id": "Space-UG_468",
+    "name": "AWS Women Colombia",
     "avatarUrl": "",
     "category": "user-groups",
     "location": "Bogota, Colombia",
-    "joinUrl": "https://www.meetup.com/aws-women-colombia-user-group",
-    "profileUrl": "https://www.meetup.com/aws-women-colombia-user-group",
-    "lat": 4.6533817,
-    "lng": -74.0836331,
+    "joinUrl": "https://www.meetup.com/es/aws-women-colombia-user-group/",
+    "profileUrl": "https://www.meetup.com/es/aws-women-colombia-user-group/",
+    "lat": 4.7854606,
+    "lng": -75.788322,
     "isNew": false
   },
   {
@@ -4737,18 +4725,6 @@
     "profileUrl": "https://www.meetup.com/es-es/aws-user-group-tolima-y-cundinamrca/",
     "lat": 4.7002001,
     "lng": -74.2385058,
-    "isNew": false
-  },
-  {
-    "id": "Space-UG_468",
-    "name": "AWS Women Colombia",
-    "avatarUrl": "",
-    "category": "user-groups",
-    "location": "Bogota, Colombia",
-    "joinUrl": "https://www.meetup.com/es/aws-women-colombia-user-group/",
-    "profileUrl": "https://www.meetup.com/es/aws-women-colombia-user-group/",
-    "lat": 4.7854606,
-    "lng": -75.788322,
     "isNew": false
   },
   {
@@ -5112,15 +5088,15 @@
     "isNew": false
   },
   {
-    "id": "3429915b-dc6b-a5db-c9b2-2ced1950b785",
-    "name": "AWS User Group Minatitlán",
+    "id": "f058ae05-86d6-20b8-948f-3c9159967937",
+    "name": "AWS Users Group Minatitlan",
     "avatarUrl": "",
     "category": "user-groups",
-    "location": "Minatitlán, Mexico",
-    "joinUrl": "https://www.meetup.com/aws-users-group-minatitlan/",
-    "profileUrl": "https://www.meetup.com/aws-users-group-minatitlan/",
-    "lat": 17.992773,
-    "lng": -94.5567103,
+    "location": "Minatitlan, Mexico",
+    "joinUrl": "https://www.meetup.com/aws-users-group-minatitlan",
+    "profileUrl": "https://www.meetup.com/aws-users-group-minatitlan",
+    "lat": 21.394242727646603,
+    "lng": -99.40423576858365,
     "isNew": false
   },
   {
@@ -5377,7 +5353,7 @@
   },
   {
     "id": "Space-UG_535",
-    "name": "Amazon Web Services - Bay Area",
+    "name": "AWS Community SF Bay Area",
     "avatarUrl": "",
     "category": "user-groups",
     "location": "San Mateo, California, USA, United States",
@@ -5796,18 +5772,6 @@
     "isNew": false
   },
   {
-    "id": "Space-UG_580",
-    "name": "Richmond Cloud Wranglers",
-    "avatarUrl": "",
-    "category": "user-groups",
-    "location": "Richmond, Virginia, United States",
-    "joinUrl": "https://www.meetup.com/rvacloudwranglers/",
-    "profileUrl": "https://www.meetup.com/rvacloudwranglers/",
-    "lat": 37.5385087,
-    "lng": -77.43428,
-    "isNew": false
-  },
-  {
     "id": "Space-UG_582",
     "name": "AWS User Group West Palm Beach",
     "avatarUrl": "",
@@ -6129,18 +6093,6 @@
     "profileUrl": "https://www.meetup.com/aws-user-group-playa-vicente",
     "lat": 22.61906417257833,
     "lng": -100.51810809559036,
-    "isNew": false
-  },
-  {
-    "id": "f058ae05-86d6-20b8-948f-3c9159967937",
-    "name": "AWS Users Group Minatitlan",
-    "avatarUrl": "",
-    "category": "user-groups",
-    "location": "Minatitlan, Mexico",
-    "joinUrl": "https://www.meetup.com/aws-users-group-minatitlan",
-    "profileUrl": "https://www.meetup.com/aws-users-group-minatitlan",
-    "lat": 21.394242727646603,
-    "lng": -99.40423576858365,
     "isNew": false
   },
   {
@@ -6576,18 +6528,6 @@
     "isNew": false
   },
   {
-    "id": "042a8cde-3010-8dec-19d3-501784a7663b",
-    "name": "AWS UG Maputo",
-    "avatarUrl": "",
-    "category": "user-groups",
-    "location": "Maputo, Mozambique",
-    "joinUrl": "https://www.meetup.com/aws-maputo",
-    "profileUrl": "https://www.meetup.com/aws-maputo",
-    "lat": -25.966213,
-    "lng": 32.56745,
-    "isNew": false
-  },
-  {
     "id": "b83232de-7c69-b1f4-e641-4abd8b775d0a",
     "name": "AWS User Group Parauapebas",
     "avatarUrl": "",
@@ -6765,7 +6705,7 @@
     "profileUrl": "https://www.meetup.com/awsegyptmeetup/",
     "lat": 30.0443879,
     "lng": 31.2357257,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "e62a3fba-6e88-26d3-96fc-50ae1c7ad0d1",
@@ -6777,7 +6717,7 @@
     "profileUrl": "https://www.meetup.com/aws-user-group-edo-mex-zona-norte/",
     "lat": 19.6531356,
     "lng": -99.2145002,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7379f875-f5a6-41cc-bdcb-668527f3f469",
@@ -6789,7 +6729,7 @@
     "profileUrl": "https://www.meetup.com/aws-user-group-mariachi-builders/",
     "lat": 20.6720375,
     "lng": -103.338396,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "3a5e5a8e-340c-3623-5f53-aa7a3a0ac8fc",
@@ -6813,7 +6753,7 @@
     "profileUrl": "https://www.meetup.com/awsusergroupsantodomingo/",
     "lat": 18.4713858,
     "lng": -69.8918436,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "6b743685-e19d-8e6c-f9d8-e0cef7733f43",
@@ -6825,7 +6765,7 @@
     "profileUrl": "https://www.meetup.com/aws-usergroup-women-utrecht/",
     "lat": 52.0907006,
     "lng": 5.1215634,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "0cf8e2da-4f7f-991e-47ed-3a3fd26ec735",
@@ -6849,31 +6789,31 @@
     "profileUrl": "https://www.meetup.com/meetup-group-lgybodvb/",
     "lat": 43.5884727,
     "lng": -79.643658,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "fd53c099-f18c-f293-6bcb-d6c085ad87cf",
     "name": "AWS User Group Honduras",
     "avatarUrl": "",
     "category": "user-groups",
-    "location": "Honduras",
+    "location": "Honduras, Honduras",
     "joinUrl": "https://www.meetup.com/aws-user-group-honduras/",
     "profileUrl": "https://www.meetup.com/aws-user-group-honduras/",
     "lat": 15.2572432,
     "lng": -86.0755145,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "82091a2b-a208-3806-2b48-88f71b641a83",
     "name": "AWS User Group Serverless Colombia",
     "avatarUrl": "",
     "category": "user-groups",
-    "location": "Colombia",
+    "location": "Colombia, Colombia",
     "joinUrl": "https://www.meetup.com/aws-user-group-serverless-colombia/",
     "profileUrl": "https://www.meetup.com/aws-user-group-serverless-colombia/",
     "lat": 4.099917,
     "lng": -72.9088133,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "dea1d443-5350-ca86-1117-9e4748df9ca2",
@@ -6885,7 +6825,79 @@
     "profileUrl": "https://www.meetup.com/aws-ug-cardenas/",
     "lat": 18.1693695,
     "lng": -93.7052292,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "5ea3ab7e-02f0-4746-25a6-617eae8b027d",
+    "name": "AWS User Group Faisalabad",
+    "avatarUrl": "",
+    "category": "user-groups",
+    "location": "Faisalabad, Pakistan",
+    "joinUrl": "https://www.meetup.com/aws-user-group-faisalabad/",
+    "profileUrl": "https://www.meetup.com/aws-user-group-faisalabad/",
+    "lat": 0,
+    "lng": 0,
+    "isNew": false
+  },
+  {
+    "id": "Space-UG_358",
+    "name": "AWS User Group Maputo",
+    "avatarUrl": "",
+    "category": "user-groups",
+    "location": "Maputo, Mozambique",
+    "joinUrl": "https://www.meetup.com/aws-maputo/",
+    "profileUrl": "https://www.meetup.com/aws-maputo/",
+    "lat": -25.966213,
+    "lng": 32.56745,
+    "isNew": false
+  },
+  {
+    "id": "Space-UG_409",
+    "name": "AWS UG Rio Grande do Sul",
+    "avatarUrl": "",
+    "category": "user-groups",
+    "location": "Rio Grande do Sul, Brazil",
+    "joinUrl": "https://www.meetup.com/pt-br/aws-porto-alegre/",
+    "profileUrl": "https://www.meetup.com/pt-br/aws-porto-alegre/",
+    "lat": -29.8425284,
+    "lng": -53.7680577,
+    "isNew": false
+  },
+  {
+    "id": "15348585-9daa-138b-07ba-07bcd390ca08",
+    "name": "AWS Women's User Groups Colombia",
+    "avatarUrl": "",
+    "category": "user-groups",
+    "location": "Bogota, Colombia",
+    "joinUrl": "https://www.meetup.com/aws-women-colombia-user-group",
+    "profileUrl": "https://www.meetup.com/aws-women-colombia-user-group",
+    "lat": 4.6533817,
+    "lng": -74.0836331,
+    "isNew": false
+  },
+  {
+    "id": "3429915b-dc6b-a5db-c9b2-2ced1950b785",
+    "name": "AWS User Group Minatitlán",
+    "avatarUrl": "",
+    "category": "user-groups",
+    "location": "Minatitlán, Mexico",
+    "joinUrl": "https://www.meetup.com/aws-users-group-minatitlan/",
+    "profileUrl": "https://www.meetup.com/aws-users-group-minatitlan/",
+    "lat": 17.992773,
+    "lng": -94.5567103,
+    "isNew": false
+  },
+  {
+    "id": "Space-UG_580",
+    "name": "Richmond Cloud Wranglers",
+    "avatarUrl": "",
+    "category": "user-groups",
+    "location": "Richmond, Virginia, United States",
+    "joinUrl": "https://www.meetup.com/rvacloudwranglers/",
+    "profileUrl": "https://www.meetup.com/rvacloudwranglers/",
+    "lat": 37.5385087,
+    "lng": -77.43428,
+    "isNew": false
   },
   {
     "id": "Space-UG_009",
@@ -7173,18 +7185,6 @@
     "profileUrl": "https://www.meetup.com/aws-user-group-penang/",
     "lat": 5.4065013,
     "lng": 100.2559077,
-    "isNew": false
-  },
-  {
-    "id": "5ea3ab7e-02f0-4746-25a6-617eae8b027d",
-    "name": "AWS User Group Faisalabad",
-    "avatarUrl": "",
-    "category": "user-groups",
-    "location": "Faisalabad, Pakistan",
-    "joinUrl": "https://www.meetup.com/aws-user-group-faisalabad/",
-    "profileUrl": "https://www.meetup.com/aws-user-group-faisalabad/",
-    "lat": 0,
-    "lng": 0,
     "isNew": false
   },
   {

@@ -1,7 +1,7 @@
 [
   {
-    "id": "community-builders-cluster-49",
-    "name": "247 Community Builders in Japan",
+    "id": "community-builders-cluster-19",
+    "name": "246 Community Builders in Japan",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "Japan",
@@ -11,9 +11,13 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 247,
+    "builderCount": 246,
     "clusterOnly": true,
     "sampleBuilders": [
+      {
+        "name": "abetaku",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3FfimbBXWt9N8uGRkZdtpyIWjBy.webp"
+      },
       {
         "name": "Ai Hayakawa",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2yRa2ShDQFMQFOOX3gLYWhBRFuU.webp"
@@ -25,14 +29,14 @@
       {
         "name": "Akihisa Ikeda",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3Ap4LaKtirAFyKUkblA7hVLK105.webp"
-      },
-      {
-        "name": "AKIKO ISHIHARA",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AsSbsrEvEMMHOlUmzxQMdAFzGK.webp"
       }
     ],
     "ledBy": [
       {
+        "name": "abetaku",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3FfimbBXWt9N8uGRkZdtpyIWjBy.webp"
+      },
+      {
         "name": "Ai Hayakawa",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2yRa2ShDQFMQFOOX3gLYWhBRFuU.webp"
       },
@@ -43,16 +47,12 @@
       {
         "name": "Akihisa Ikeda",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3Ap4LaKtirAFyKUkblA7hVLK105.webp"
-      },
-      {
-        "name": "AKIKO ISHIHARA",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AsSbsrEvEMMHOlUmzxQMdAFzGK.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-29",
-    "name": "117 Community Builders in United Kingdom",
+    "id": "community-builders-cluster-30",
+    "name": "118 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "United Kingdom",
@@ -62,7 +62,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 117,
+    "builderCount": 118,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -103,7 +103,7 @@
   },
   {
     "id": "community-builders-cluster-16",
-    "name": "104 Community Builders in Nigeria",
+    "name": "107 Community Builders in Nigeria",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "Nigeria",
@@ -113,7 +113,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 104,
+    "builderCount": 107,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -154,7 +154,7 @@
   },
   {
     "id": "community-builders-cluster-9",
-    "name": "61 Community Builders in Nepal",
+    "name": "60 Community Builders in Nepal",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "Nepal",
@@ -164,7 +164,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 61,
+    "builderCount": 60,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -204,8 +204,8 @@
     ]
   },
   {
-    "id": "community-builders-cluster-34",
-    "name": "61 Community Builders in United States",
+    "id": "community-builders-cluster-35",
+    "name": "59 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "United States",
@@ -215,7 +215,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 61,
+    "builderCount": 59,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -255,7 +255,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-96",
+    "id": "community-builders-cluster-95",
     "name": "51 Community Builders in Kenya",
     "avatarUrl": "",
     "profileUrl": "",
@@ -358,7 +358,7 @@
   },
   {
     "id": "community-builders-cluster-4",
-    "name": "50 Community Builders in Maharashtra, India",
+    "name": "49 Community Builders in Maharashtra, India",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "Maharashtra, India",
@@ -368,7 +368,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 50,
+    "builderCount": 49,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -408,8 +408,8 @@
     ]
   },
   {
-    "id": "community-builders-cluster-41",
-    "name": "46 Community Builders in Mexico",
+    "id": "community-builders-cluster-42",
+    "name": "47 Community Builders in Mexico",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "Mexico",
@@ -419,12 +419,16 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 46,
+    "builderCount": 47,
     "clusterOnly": true,
     "sampleBuilders": [
       {
         "name": "Adriana Di Avila",
         "imageUrl": "https://avatars.builderprofile.aws.dev/33I0P1UYyNQfe1E5VCdU4HT2yJM.webp"
+      },
+      {
+        "name": "Alejandro Mercado Peña",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCiFBa2b6h4lk4wuz3wYMq97ob.webp"
       },
       {
         "name": "Alex Parra",
@@ -433,10 +437,6 @@
       {
         "name": "Alma Magaly Gonzalez",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3EKXt0fUKnkNvAb2SgvJOV8r7El.webp"
-      },
-      {
-        "name": "Ana Reyna",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3FNPbXvQi05xZQGobwf7aruNqfv.webp"
       }
     ],
     "ledBy": [
@@ -445,21 +445,21 @@
         "imageUrl": "https://avatars.builderprofile.aws.dev/33I0P1UYyNQfe1E5VCdU4HT2yJM.webp"
       },
       {
+        "name": "Alejandro Mercado Peña",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCiFBa2b6h4lk4wuz3wYMq97ob.webp"
+      },
+      {
         "name": "Alex Parra",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3DJfOxc7J3NEcObs4lWQSpWlIHl.webp"
       },
       {
         "name": "Alma Magaly Gonzalez",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3EKXt0fUKnkNvAb2SgvJOV8r7El.webp"
-      },
-      {
-        "name": "Ana Reyna",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3FNPbXvQi05xZQGobwf7aruNqfv.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-28",
+    "id": "community-builders-cluster-29",
     "name": "44 Community Builders in Sri Lanka",
     "avatarUrl": "",
     "profileUrl": "",
@@ -510,6 +510,159 @@
     ]
   },
   {
+    "id": "community-builders-cluster-12",
+    "name": "40 Community Builders in Pakistan",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Pakistan",
+    "country": "Pakistan",
+    "lat": 30.3308401,
+    "lng": 71.247499,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 40,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Abdul Hadi",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2ztVAhEaQdHuiO07WBdDVswnqar.webp"
+      },
+      {
+        "name": "Abdul Raheem",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3ACk5PIVuUJK2z5D3QNgkmbrHSF.webp"
+      },
+      {
+        "name": "Ahmed Khan",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3JiPZ8wT9quIV7LgoNEsDrIOzFo.webp"
+      },
+      {
+        "name": "Ali Bashir",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Aqw5g6c5PwnKxoWipehIx1EjZi.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Abdul Hadi",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2ztVAhEaQdHuiO07WBdDVswnqar.webp"
+      },
+      {
+        "name": "Abdul Raheem",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3ACk5PIVuUJK2z5D3QNgkmbrHSF.webp"
+      },
+      {
+        "name": "Ahmed Khan",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3JiPZ8wT9quIV7LgoNEsDrIOzFo.webp"
+      },
+      {
+        "name": "Ali Bashir",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Aqw5g6c5PwnKxoWipehIx1EjZi.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-33",
+    "name": "40 Community Builders in Poland",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Poland",
+    "country": "Poland",
+    "lat": 52.215933,
+    "lng": 19.134422,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 40,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Adam Świątkowski",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2YrjAd4BmXzRd407uqXfeo6ATuK.webp"
+      },
+      {
+        "name": "Aleksander Patschek",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Andrii Shykhov",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KdaBWgKI3QUx1NnTly9E429kI3.webp"
+      },
+      {
+        "name": "Anton Antanovich",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wKLO2OU8PoA7bpSq4HFvCiVvWg.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Adam Świątkowski",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2YrjAd4BmXzRd407uqXfeo6ATuK.webp"
+      },
+      {
+        "name": "Aleksander Patschek",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Andrii Shykhov",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KdaBWgKI3QUx1NnTly9E429kI3.webp"
+      },
+      {
+        "name": "Anton Antanovich",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wKLO2OU8PoA7bpSq4HFvCiVvWg.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-54",
+    "name": "39 Community Builders in India",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "India",
+    "country": "India",
+    "lat": 22.3511148,
+    "lng": 78.6677428,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 39,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Ajay Kumar Yadav",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/37yWRYFVmsC5Tz2I0MASxWIN7oG.webp"
+      },
+      {
+        "name": "Amandeep Singh Bajwa",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2bJAgGXCjhr7zudlHFnKDvPxJTb.webp"
+      },
+      {
+        "name": "Aniruddhkumar Fataniya",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3AZqIy5tcJvrH0N3EhHnh644XN7.webp"
+      },
+      {
+        "name": "Anuj Jain",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3AsaBsgyMej0UrUymqpGtXwNxKr.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Ajay Kumar Yadav",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/37yWRYFVmsC5Tz2I0MASxWIN7oG.webp"
+      },
+      {
+        "name": "Amandeep Singh Bajwa",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2bJAgGXCjhr7zudlHFnKDvPxJTb.webp"
+      },
+      {
+        "name": "Aniruddhkumar Fataniya",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3AZqIy5tcJvrH0N3EhHnh644XN7.webp"
+      },
+      {
+        "name": "Anuj Jain",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3AsaBsgyMej0UrUymqpGtXwNxKr.webp"
+      }
+    ]
+  },
+  {
     "id": "community-builders-cluster-7",
     "name": "39 Community Builders in Karnataka, India",
     "avatarUrl": "",
@@ -534,7 +687,7 @@
       },
       {
         "name": "Abhishek Gupta",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2mw7XtJ9ncpOCkpbbC8MGQvY7Tp.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KZgxyaRJKnIiUW6XdtnjUXjYHZ.webp"
       },
       {
         "name": "Abishek Subramanian",
@@ -552,7 +705,7 @@
       },
       {
         "name": "Abhishek Gupta",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2mw7XtJ9ncpOCkpbbC8MGQvY7Tp.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KZgxyaRJKnIiUW6XdtnjUXjYHZ.webp"
       },
       {
         "name": "Abishek Subramanian",
@@ -561,7 +714,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-159",
+    "id": "community-builders-cluster-158",
     "name": "39 Community Builders in Netherlands",
     "avatarUrl": "",
     "profileUrl": "",
@@ -612,109 +765,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-12",
-    "name": "39 Community Builders in Pakistan",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Pakistan",
-    "country": "Pakistan",
-    "lat": 30.3308401,
-    "lng": 71.247499,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 39,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Abdul Hadi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2ztVAhEaQdHuiO07WBdDVswnqar.webp"
-      },
-      {
-        "name": "Abdul Raheem",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3ACk5PIVuUJK2z5D3QNgkmbrHSF.webp"
-      },
-      {
-        "name": "Ahmed Khan",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3JiPZ8wT9quIV7LgoNEsDrIOzFo.webp"
-      },
-      {
-        "name": "Ali Bashir",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Aqw5g6c5PwnKxoWipehIx1EjZi.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Abdul Hadi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2ztVAhEaQdHuiO07WBdDVswnqar.webp"
-      },
-      {
-        "name": "Abdul Raheem",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3ACk5PIVuUJK2z5D3QNgkmbrHSF.webp"
-      },
-      {
-        "name": "Ahmed Khan",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3JiPZ8wT9quIV7LgoNEsDrIOzFo.webp"
-      },
-      {
-        "name": "Ali Bashir",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Aqw5g6c5PwnKxoWipehIx1EjZi.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-32",
-    "name": "39 Community Builders in Poland",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Poland",
-    "country": "Poland",
-    "lat": 52.215933,
-    "lng": 19.134422,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 39,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Adam Świątkowski",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2YrjAd4BmXzRd407uqXfeo6ATuK.webp"
-      },
-      {
-        "name": "Aleksander Patschek",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Andrii Shykhov",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2vOxtBSAgT5KeE4EHpHLjauRJt1.webp"
-      },
-      {
-        "name": "Anton Antanovich",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wKLO2OU8PoA7bpSq4HFvCiVvWg.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Adam Świątkowski",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2YrjAd4BmXzRd407uqXfeo6ATuK.webp"
-      },
-      {
-        "name": "Aleksander Patschek",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Andrii Shykhov",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2vOxtBSAgT5KeE4EHpHLjauRJt1.webp"
-      },
-      {
-        "name": "Anton Antanovich",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wKLO2OU8PoA7bpSq4HFvCiVvWg.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-118",
+    "id": "community-builders-cluster-117",
     "name": "39 Community Builders in Vietnam",
     "avatarUrl": "",
     "profileUrl": "",
@@ -816,7 +867,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-33",
+    "id": "community-builders-cluster-34",
     "name": "37 Community Builders in Spain",
     "avatarUrl": "",
     "profileUrl": "",
@@ -844,7 +895,7 @@
       },
       {
         "name": "Alvaro",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3HP0BtOpGD3r2io4tlbFqG1ml99.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3LGolDdo08T8vfQDApd8mMTjRQH.webp"
       }
     ],
     "ledBy": [
@@ -862,64 +913,13 @@
       },
       {
         "name": "Alvaro",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3HP0BtOpGD3r2io4tlbFqG1ml99.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-54",
-    "name": "36 Community Builders in India",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "India",
-    "country": "India",
-    "lat": 22.3511148,
-    "lng": 78.6677428,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 36,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Ajay Kumar Yadav",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/37yWRYFVmsC5Tz2I0MASxWIN7oG.webp"
-      },
-      {
-        "name": "Amandeep Singh Bajwa",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2bJAgGXCjhr7zudlHFnKDvPxJTb.webp"
-      },
-      {
-        "name": "Aniruddhkumar Fataniya",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AZqIy5tcJvrH0N3EhHnh644XN7.webp"
-      },
-      {
-        "name": "Anuj Jain",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AsaBsgyMej0UrUymqpGtXwNxKr.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Ajay Kumar Yadav",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/37yWRYFVmsC5Tz2I0MASxWIN7oG.webp"
-      },
-      {
-        "name": "Amandeep Singh Bajwa",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2bJAgGXCjhr7zudlHFnKDvPxJTb.webp"
-      },
-      {
-        "name": "Aniruddhkumar Fataniya",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AZqIy5tcJvrH0N3EhHnh644XN7.webp"
-      },
-      {
-        "name": "Anuj Jain",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AsaBsgyMej0UrUymqpGtXwNxKr.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3LGolDdo08T8vfQDApd8mMTjRQH.webp"
       }
     ]
   },
   {
     "id": "community-builders-cluster-72",
-    "name": "35 Community Builders in Peru",
+    "name": "36 Community Builders in Peru",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "Peru",
@@ -929,7 +929,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 35,
+    "builderCount": 36,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -969,7 +969,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-21",
+    "id": "community-builders-cluster-22",
     "name": "34 Community Builders in Gujarat, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1020,8 +1020,8 @@
     ]
   },
   {
-    "id": "community-builders-cluster-175",
-    "name": "32 Community Builders in South Korea",
+    "id": "community-builders-cluster-174",
+    "name": "33 Community Builders in South Korea",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "South Korea",
@@ -1031,7 +1031,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 32,
+    "builderCount": 33,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -1122,7 +1122,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-27",
+    "id": "community-builders-cluster-28",
     "name": "31 Community Builders in Philippines",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1173,8 +1173,8 @@
     ]
   },
   {
-    "id": "community-builders-cluster-82",
-    "name": "28 Community Builders in Israel",
+    "id": "community-builders-cluster-81",
+    "name": "30 Community Builders in Israel",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "Israel",
@@ -1184,7 +1184,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 28,
+    "builderCount": 30,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -1244,7 +1244,7 @@
       },
       {
         "name": "Alessandra Bilardi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2v07NRaj2jTtFW5zo2yhpYgTTC8.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KBIi7OTL1T38QTs7NOTqPRk7T9.webp"
       },
       {
         "name": "Andrea Carratta",
@@ -1262,7 +1262,7 @@
       },
       {
         "name": "Alessandra Bilardi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2v07NRaj2jTtFW5zo2yhpYgTTC8.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KBIi7OTL1T38QTs7NOTqPRk7T9.webp"
       },
       {
         "name": "Andrea Carratta",
@@ -1275,7 +1275,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-20",
+    "id": "community-builders-cluster-21",
     "name": "28 Community Builders in ON, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1377,7 +1377,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-43",
+    "id": "community-builders-cluster-44",
     "name": "26 Community Builders in France",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1428,7 +1428,58 @@
     ]
   },
   {
-    "id": "community-builders-cluster-178",
+    "id": "community-builders-cluster-134",
+    "name": "26 Community Builders in New Zealand",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "New Zealand",
+    "country": "New Zealand",
+    "lat": -41.5000831,
+    "lng": 172.8344077,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 26,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Ari Ramanathan",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2bazc6r9snun6wRX56td13UVzWd.webp"
+      },
+      {
+        "name": "Bryce",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3AuLheubgyb2GhP3QyJedRQz3Mr.webp"
+      },
+      {
+        "name": "Chamila",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wKblAhjYIhOA0q5SEdhhvUoHjI.webp"
+      },
+      {
+        "name": "Chiwai Chan",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Ari Ramanathan",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2bazc6r9snun6wRX56td13UVzWd.webp"
+      },
+      {
+        "name": "Bryce",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3AuLheubgyb2GhP3QyJedRQz3Mr.webp"
+      },
+      {
+        "name": "Chamila",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wKblAhjYIhOA0q5SEdhhvUoHjI.webp"
+      },
+      {
+        "name": "Chiwai Chan",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-177",
     "name": "25 Community Builders in Ghana",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1530,58 +1581,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-135",
-    "name": "24 Community Builders in New Zealand",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "New Zealand",
-    "country": "New Zealand",
-    "lat": -41.5000831,
-    "lng": 172.8344077,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 24,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Ari Ramanathan",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2bazc6r9snun6wRX56td13UVzWd.webp"
-      },
-      {
-        "name": "Bryce",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AuLheubgyb2GhP3QyJedRQz3Mr.webp"
-      },
-      {
-        "name": "Chamila",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wKblAhjYIhOA0q5SEdhhvUoHjI.webp"
-      },
-      {
-        "name": "Daniel Donbavand",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wNGutS9vvCMwFP9CaHdI95bAs7.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Ari Ramanathan",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2bazc6r9snun6wRX56td13UVzWd.webp"
-      },
-      {
-        "name": "Bryce",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AuLheubgyb2GhP3QyJedRQz3Mr.webp"
-      },
-      {
-        "name": "Chamila",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wKblAhjYIhOA0q5SEdhhvUoHjI.webp"
-      },
-      {
-        "name": "Daniel Donbavand",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wNGutS9vvCMwFP9CaHdI95bAs7.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-45",
+    "id": "community-builders-cluster-46",
     "name": "24 Community Builders in United Arab Emirates",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1683,7 +1683,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-100",
+    "id": "community-builders-cluster-99",
     "name": "23 Community Builders in SP, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1734,7 +1734,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-176",
+    "id": "community-builders-cluster-175",
     "name": "23 Community Builders in Türkiye",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1786,7 +1786,7 @@
   },
   {
     "id": "community-builders-cluster-11",
-    "name": "20 Community Builders in Egypt",
+    "name": "21 Community Builders in Egypt",
     "avatarUrl": "",
     "profileUrl": "",
     "location": "Egypt",
@@ -1796,7 +1796,7 @@
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
-    "builderCount": 20,
+    "builderCount": 21,
     "clusterOnly": true,
     "sampleBuilders": [
       {
@@ -1887,7 +1887,58 @@
     ]
   },
   {
-    "id": "community-builders-cluster-37",
+    "id": "community-builders-cluster-57",
+    "name": "19 Community Builders in Karnataka, India",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Karnataka, India",
+    "country": "India",
+    "lat": 14.9562045,
+    "lng": 75.7896741,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 19,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Ajit N K",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ar9hVYnauETg6WQnzaG4GB3hNI.webp"
+      },
+      {
+        "name": "Akshatha Laxmi",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Amin Ali",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3ByFxzDdmHrMJkVLbPMgyga4BEF.webp"
+      },
+      {
+        "name": "Atul Kishor Jaiswal",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3At1FPa6WIo4Kxqbdtki4A5hjun.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Ajit N K",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ar9hVYnauETg6WQnzaG4GB3hNI.webp"
+      },
+      {
+        "name": "Akshatha Laxmi",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Amin Ali",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3ByFxzDdmHrMJkVLbPMgyga4BEF.webp"
+      },
+      {
+        "name": "Atul Kishor Jaiswal",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3At1FPa6WIo4Kxqbdtki4A5hjun.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-38",
     "name": "19 Community Builders in NY, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1938,7 +1989,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-24",
+    "id": "community-builders-cluster-25",
     "name": "19 Community Builders in Telangana, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -1985,57 +2036,6 @@
       {
         "name": "Harsha Mathan",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2wCu5xIsxvAwPn0rXsOX3UU6tl1.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-57",
-    "name": "18 Community Builders in Karnataka, India",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Karnataka, India",
-    "country": "India",
-    "lat": 14.9562045,
-    "lng": 75.7896741,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 18,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Ajit N K",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ar9hVYnauETg6WQnzaG4GB3hNI.webp"
-      },
-      {
-        "name": "Akshatha Laxmi",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Amin Ali",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3ByFxzDdmHrMJkVLbPMgyga4BEF.webp"
-      },
-      {
-        "name": "Harish N",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AsnsYjFWK1h0FqHLVmqMUqQ3md.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Ajit N K",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ar9hVYnauETg6WQnzaG4GB3hNI.webp"
-      },
-      {
-        "name": "Akshatha Laxmi",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Amin Ali",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3ByFxzDdmHrMJkVLbPMgyga4BEF.webp"
-      },
-      {
-        "name": "Harish N",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AsnsYjFWK1h0FqHLVmqMUqQ3md.webp"
       }
     ]
   },
@@ -2091,7 +2091,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-38",
+    "id": "community-builders-cluster-39",
     "name": "17 Community Builders in Bolivia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2138,6 +2138,57 @@
       {
         "name": "Carla Marcela Florida Roman",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2uYnLyAiBA8FoNMJNQ2srSIJ8Ow.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-78",
+    "name": "17 Community Builders in Ecuador",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Ecuador",
+    "country": "Ecuador",
+    "lat": -1.3397668,
+    "lng": -79.3666965,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 17,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Alexander Cevallos",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3B6ZHnrLmiQ4wSsZidE3qPzcN4E.webp"
+      },
+      {
+        "name": "Bolivar David Llerena Fuenmayor",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/32rmgkgZLoyahW2AGX6h6JiG5eG.webp"
+      },
+      {
+        "name": "Cristopher Coronado",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wS1oi93sIjFIjpYIsNImZajqFT.webp"
+      },
+      {
+        "name": "cry.code",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3J4fhSQlpe7RCJ3eXQwbF4U7MSx.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Alexander Cevallos",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3B6ZHnrLmiQ4wSsZidE3qPzcN4E.webp"
+      },
+      {
+        "name": "Bolivar David Llerena Fuenmayor",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/32rmgkgZLoyahW2AGX6h6JiG5eG.webp"
+      },
+      {
+        "name": "Cristopher Coronado",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wS1oi93sIjFIjpYIsNImZajqFT.webp"
+      },
+      {
+        "name": "cry.code",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3J4fhSQlpe7RCJ3eXQwbF4U7MSx.webp"
       }
     ]
   },
@@ -2189,57 +2240,6 @@
       {
         "name": "Carlton Whitmore",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2ZPswko6LEh6ZVYbxuGE0SoDHbN.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-79",
-    "name": "16 Community Builders in Ecuador",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Ecuador",
-    "country": "Ecuador",
-    "lat": -1.3397668,
-    "lng": -79.3666965,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 16,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Alexander Cevallos",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3B6ZHnrLmiQ4wSsZidE3qPzcN4E.webp"
-      },
-      {
-        "name": "Bolivar David Llerena Fuenmayor",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/32rmgkgZLoyahW2AGX6h6JiG5eG.webp"
-      },
-      {
-        "name": "Cristopher Coronado",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wS1oi93sIjFIjpYIsNImZajqFT.webp"
-      },
-      {
-        "name": "cry.code",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3J4fhSQlpe7RCJ3eXQwbF4U7MSx.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Alexander Cevallos",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3B6ZHnrLmiQ4wSsZidE3qPzcN4E.webp"
-      },
-      {
-        "name": "Bolivar David Llerena Fuenmayor",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/32rmgkgZLoyahW2AGX6h6JiG5eG.webp"
-      },
-      {
-        "name": "Cristopher Coronado",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wS1oi93sIjFIjpYIsNImZajqFT.webp"
-      },
-      {
-        "name": "cry.code",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3J4fhSQlpe7RCJ3eXQwbF4U7MSx.webp"
       }
     ]
   },
@@ -2310,11 +2310,6 @@
     "clusterOnly": true,
     "sampleBuilders": [
       {
-        "name": "Pravin Mishra",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCZwCcWRKo72VSjmg6uGo3J5Ya.webp",
-        "isNew": true
-      },
-      {
         "name": "Aki Ristkari",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2plBIRxtjPl69DDpxTGjALmVlJY.webp"
       },
@@ -2325,15 +2320,14 @@
       {
         "name": "Ari Palo",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2yeSWfwdf09a9IbjkPV4vmJvsb0.webp"
+      },
+      {
+        "name": "Bruno Amaro Almeida",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3B4nOKvjDHCZtfyOh12rWcxv63h.webp"
       }
     ],
     "ledBy": [
       {
-        "name": "Pravin Mishra",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCZwCcWRKo72VSjmg6uGo3J5Ya.webp",
-        "isNew": true
-      },
-      {
         "name": "Aki Ristkari",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2plBIRxtjPl69DDpxTGjALmVlJY.webp"
       },
@@ -2344,20 +2338,15 @@
       {
         "name": "Ari Palo",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2yeSWfwdf09a9IbjkPV4vmJvsb0.webp"
-      }
-    ],
-    "isNew": true,
-    "newBuilderCount": 1,
-    "newBuilders": [
+      },
       {
-        "name": "Pravin Mishra",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCZwCcWRKo72VSjmg6uGo3J5Ya.webp",
-        "isNew": true
+        "name": "Bruno Amaro Almeida",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3B4nOKvjDHCZtfyOh12rWcxv63h.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-190",
+    "id": "community-builders-cluster-189",
     "name": "15 Community Builders in Taiwan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2408,7 +2397,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-36",
+    "id": "community-builders-cluster-37",
     "name": "14 Community Builders in Maharashtra, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2459,7 +2448,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-42",
+    "id": "community-builders-cluster-43",
     "name": "14 Community Builders in Myanmar (Burma)",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2483,7 +2472,7 @@
       },
       {
         "name": "Aung Myo Oo",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3FnZ4yfwh7635YVu74TuS9afs8D.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KGJUyo9X5w5tsFbFZtPGmFOlhh.webp"
       },
       {
         "name": "Hein Htet Win",
@@ -2501,7 +2490,7 @@
       },
       {
         "name": "Aung Myo Oo",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3FnZ4yfwh7635YVu74TuS9afs8D.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KGJUyo9X5w5tsFbFZtPGmFOlhh.webp"
       },
       {
         "name": "Hein Htet Win",
@@ -2510,7 +2499,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-168",
+    "id": "community-builders-cluster-167",
     "name": "14 Community Builders in NSW, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2561,7 +2550,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-172",
+    "id": "community-builders-cluster-171",
     "name": "13 Community Builders in Ireland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2632,7 +2621,7 @@
       },
       {
         "name": "Anand Joshi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3ArDjYgJ71SS8o6soSlSrpLsBsK.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KxPgWfPu5baxKViDgrBGz0GDNu.webp"
       },
       {
         "name": "Anna Astori",
@@ -2650,7 +2639,7 @@
       },
       {
         "name": "Anand Joshi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3ArDjYgJ71SS8o6soSlSrpLsBsK.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KxPgWfPu5baxKViDgrBGz0GDNu.webp"
       },
       {
         "name": "Anna Astori",
@@ -2663,7 +2652,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-48",
+    "id": "community-builders-cluster-49",
     "name": "13 Community Builders in Malaysia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2765,7 +2754,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-115",
+    "id": "community-builders-cluster-114",
     "name": "12 Community Builders in Baden-Wuerttemberg, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2816,7 +2805,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-212",
+    "id": "community-builders-cluster-210",
     "name": "12 Community Builders in Bavaria, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2867,7 +2856,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-155",
+    "id": "community-builders-cluster-154",
     "name": "12 Community Builders in Cameroon",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2918,7 +2907,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-99",
+    "id": "community-builders-cluster-98",
     "name": "12 Community Builders in IL, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -2969,7 +2958,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-142",
+    "id": "community-builders-cluster-141",
     "name": "12 Community Builders in MG, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3020,7 +3009,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-40",
+    "id": "community-builders-cluster-41",
     "name": "12 Community Builders in South Africa",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3048,7 +3037,7 @@
       },
       {
         "name": "Hennie Francis",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2vHK5zYPf9IYVCKWOh1h6sLbIXv.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K8LbFgED70MtbSeHSETn5bjhQM.webp"
       }
     ],
     "ledBy": [
@@ -3066,12 +3055,12 @@
       },
       {
         "name": "Hennie Francis",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2vHK5zYPf9IYVCKWOh1h6sLbIXv.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K8LbFgED70MtbSeHSETn5bjhQM.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-106",
+    "id": "community-builders-cluster-105",
     "name": "12 Community Builders in Switzerland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3122,7 +3111,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-179",
+    "id": "community-builders-cluster-178",
     "name": "11 Community Builders in Chile",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3193,7 +3182,7 @@
       },
       {
         "name": "Giovanni Martinez",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AqqWKmtE985uMAh19KeFHpGrOt.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K9NVzj3jE7JnfMvUFPXJXAY2Dd.webp"
       },
       {
         "name": "Jay Kachhadia",
@@ -3211,7 +3200,7 @@
       },
       {
         "name": "Giovanni Martinez",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AqqWKmtE985uMAh19KeFHpGrOt.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K9NVzj3jE7JnfMvUFPXJXAY2Dd.webp"
       },
       {
         "name": "Jay Kachhadia",
@@ -3224,7 +3213,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-262",
+    "id": "community-builders-cluster-260",
     "name": "11 Community Builders in Thailand",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3275,58 +3264,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-138",
-    "name": "10 Community Builders in Australia",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Australia",
-    "country": "Australia",
-    "lat": -24.7761086,
-    "lng": 134.755,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 10,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Arjen Schwarz",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2dFYirsXIZWMXDnDDnKjLhXxl1r.webp"
-      },
-      {
-        "name": "Khalid ElGazzar",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2Z0qbgl21zFyvTT4IJX8ZCj0y4B.webp"
-      },
-      {
-        "name": "Mahesh Pandey",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BTCBcMUlE8Cl9P6c1hnOGWiLP1.webp"
-      },
-      {
-        "name": "Malinda Kapuruge",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BNALxWRSV0EFiXMIXm3L8nKsYc.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Arjen Schwarz",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2dFYirsXIZWMXDnDDnKjLhXxl1r.webp"
-      },
-      {
-        "name": "Khalid ElGazzar",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2Z0qbgl21zFyvTT4IJX8ZCj0y4B.webp"
-      },
-      {
-        "name": "Mahesh Pandey",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BTCBcMUlE8Cl9P6c1hnOGWiLP1.webp"
-      },
-      {
-        "name": "Malinda Kapuruge",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BNALxWRSV0EFiXMIXm3L8nKsYc.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-86",
+    "id": "community-builders-cluster-85",
     "name": "10 Community Builders in Kerala, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3377,7 +3315,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-123",
+    "id": "community-builders-cluster-122",
     "name": "10 Community Builders in Rajasthan, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3428,7 +3366,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-203",
+    "id": "community-builders-cluster-201",
     "name": "10 Community Builders in Romania",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3452,7 +3390,7 @@
       },
       {
         "name": "dejanualex",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2jydjBn5F2fI1t6BhedajSGmYxu.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KI56bqEdPt1Xotxx7uVxN704YC.webp"
       },
       {
         "name": "Eduard Agavriloae",
@@ -3470,11 +3408,62 @@
       },
       {
         "name": "dejanualex",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2jydjBn5F2fI1t6BhedajSGmYxu.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KI56bqEdPt1Xotxx7uVxN704YC.webp"
       },
       {
         "name": "Eduard Agavriloae",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2uClzeYCEHqVFLyatZpxiUE8Z5Z.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-102",
+    "name": "10 Community Builders in SP, Brazil",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "SP, Brazil",
+    "country": "Brazil",
+    "lat": -22.0702705,
+    "lng": -48.4333875,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 10,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Ana Silva",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BJK4DicPNZPD1jcmFnnYtgNxsc.webp"
+      },
+      {
+        "name": "Carlos Biagolini",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KeS65nQdgeUdEfV5S0xG73oByx.webp"
+      },
+      {
+        "name": "Edesan Tomaz",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ap3Z6bAbYb90axtDyahlPrhEdi.webp"
+      },
+      {
+        "name": "Eduardo Lara",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3GGlsfJWfFSEUpvia5W7hQ851Xe.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Ana Silva",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BJK4DicPNZPD1jcmFnnYtgNxsc.webp"
+      },
+      {
+        "name": "Carlos Biagolini",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KeS65nQdgeUdEfV5S0xG73oByx.webp"
+      },
+      {
+        "name": "Edesan Tomaz",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ap3Z6bAbYb90axtDyahlPrhEdi.webp"
+      },
+      {
+        "name": "Eduardo Lara",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3GGlsfJWfFSEUpvia5W7hQ851Xe.webp"
       }
     ]
   },
@@ -3530,7 +3519,58 @@
     ]
   },
   {
-    "id": "community-builders-cluster-180",
+    "id": "community-builders-cluster-137",
+    "name": "9 Community Builders in Australia",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Australia",
+    "country": "Australia",
+    "lat": -24.7761086,
+    "lng": 134.755,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 9,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Arjen Schwarz",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2dFYirsXIZWMXDnDDnKjLhXxl1r.webp"
+      },
+      {
+        "name": "Mahesh Pandey",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BTCBcMUlE8Cl9P6c1hnOGWiLP1.webp"
+      },
+      {
+        "name": "Malinda Kapuruge",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BNALxWRSV0EFiXMIXm3L8nKsYc.webp"
+      },
+      {
+        "name": "Mehul Merchant",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/37we3zbHzCq8cyjPJN10MtDqALw.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Arjen Schwarz",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2dFYirsXIZWMXDnDDnKjLhXxl1r.webp"
+      },
+      {
+        "name": "Mahesh Pandey",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BTCBcMUlE8Cl9P6c1hnOGWiLP1.webp"
+      },
+      {
+        "name": "Malinda Kapuruge",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BNALxWRSV0EFiXMIXm3L8nKsYc.webp"
+      },
+      {
+        "name": "Mehul Merchant",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/37we3zbHzCq8cyjPJN10MtDqALw.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-179",
     "name": "9 Community Builders in CO, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3581,7 +3621,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-167",
+    "id": "community-builders-cluster-166",
     "name": "9 Community Builders in NC, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3632,58 +3672,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-103",
-    "name": "9 Community Builders in SP, Brazil",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "SP, Brazil",
-    "country": "Brazil",
-    "lat": -22.0702705,
-    "lng": -48.4333875,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 9,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Ana Silva",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BJK4DicPNZPD1jcmFnnYtgNxsc.webp"
-      },
-      {
-        "name": "Carlos Biagolini",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp"
-      },
-      {
-        "name": "Edesan Tomaz",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ap3Z6bAbYb90axtDyahlPrhEdi.webp"
-      },
-      {
-        "name": "Eduardo Lara",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3GGlsfJWfFSEUpvia5W7hQ851Xe.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Ana Silva",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BJK4DicPNZPD1jcmFnnYtgNxsc.webp"
-      },
-      {
-        "name": "Carlos Biagolini",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AtGg0dtiVDNzBMP0DrXdfpYgXr.webp"
-      },
-      {
-        "name": "Edesan Tomaz",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ap3Z6bAbYb90axtDyahlPrhEdi.webp"
-      },
-      {
-        "name": "Eduardo Lara",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3GGlsfJWfFSEUpvia5W7hQ851Xe.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-125",
+    "id": "community-builders-cluster-124",
     "name": "9 Community Builders in Ukraine",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3734,58 +3723,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-66",
-    "name": "9 Community Builders in Unknown",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Unknown",
-    "country": "Unknown",
-    "lat": 22.3511148,
-    "lng": 78.6677428,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 9,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Akhilesh Yadav",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wlHG1GSbX5C6v2T2mxRT3rvYSB.webp"
-      },
-      {
-        "name": "Amit Kayal",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Arbind Kumar Mahato",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Arbind Kumar Mahato (Tech Mahato)",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCx7WC7i3DPZU3XoeaSV61tWOa.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Akhilesh Yadav",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wlHG1GSbX5C6v2T2mxRT3rvYSB.webp"
-      },
-      {
-        "name": "Amit Kayal",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Arbind Kumar Mahato",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Arbind Kumar Mahato (Tech Mahato)",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCx7WC7i3DPZU3XoeaSV61tWOa.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-31",
+    "id": "community-builders-cluster-32",
     "name": "9 Community Builders in VA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3836,7 +3774,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-149",
+    "id": "community-builders-cluster-148",
     "name": "8 Community Builders in Belgium",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3887,7 +3825,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-98",
+    "id": "community-builders-cluster-97",
     "name": "8 Community Builders in Delhi, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3938,7 +3876,58 @@
     ]
   },
   {
-    "id": "community-builders-cluster-136",
+    "id": "community-builders-cluster-94",
+    "name": "8 Community Builders in Germany",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Germany",
+    "country": "Germany",
+    "lat": 51.1638175,
+    "lng": 10.4478313,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 8,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Alireza Davoudi",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Fedi",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wDQb2XJKzDJak6c5n9fV3A815d.webp"
+      },
+      {
+        "name": "John",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wD1tPqUtyter7Rtx0EUSTtRE1U.webp"
+      },
+      {
+        "name": "Manuel Vogel",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2pYcefz04yQ70Bx3EM2QDPQLDyG.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Alireza Davoudi",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Fedi",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wDQb2XJKzDJak6c5n9fV3A815d.webp"
+      },
+      {
+        "name": "John",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wD1tPqUtyter7Rtx0EUSTtRE1U.webp"
+      },
+      {
+        "name": "Manuel Vogel",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2pYcefz04yQ70Bx3EM2QDPQLDyG.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-135",
     "name": "8 Community Builders in Gujarat, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -3989,7 +3978,69 @@
     ]
   },
   {
-    "id": "community-builders-cluster-26",
+    "id": "community-builders-cluster-93",
+    "name": "8 Community Builders in Portugal",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Portugal",
+    "country": "Portugal",
+    "lat": 39.6621648,
+    "lng": -8.1353519,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 8,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Manuel Tarouca Martins",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K9N717ttgh4ptHvyW4hsNgRr9r.webp",
+        "isNew": true
+      },
+      {
+        "name": "Alicia Marianne Gonçalves",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/37wEVlDQ7aV2hnbGULRD24netow.webp"
+      },
+      {
+        "name": "André Vidigal",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDAjxHjGnmJmebiqttKmKiYMQ6.webp"
+      },
+      {
+        "name": "Diego Marques",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3DJfqcsjP1NhaVaRtDjTfh7bu4N.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Manuel Tarouca Martins",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K9N717ttgh4ptHvyW4hsNgRr9r.webp",
+        "isNew": true
+      },
+      {
+        "name": "Alicia Marianne Gonçalves",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/37wEVlDQ7aV2hnbGULRD24netow.webp"
+      },
+      {
+        "name": "André Vidigal",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDAjxHjGnmJmebiqttKmKiYMQ6.webp"
+      },
+      {
+        "name": "Diego Marques",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3DJfqcsjP1NhaVaRtDjTfh7bu4N.webp"
+      }
+    ],
+    "isNew": true,
+    "newBuilderCount": 1,
+    "newBuilders": [
+      {
+        "name": "Manuel Tarouca Martins",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K9N717ttgh4ptHvyW4hsNgRr9r.webp",
+        "isNew": true
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-27",
     "name": "8 Community Builders in QC, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4040,7 +4091,58 @@
     ]
   },
   {
-    "id": "community-builders-cluster-111",
+    "id": "community-builders-cluster-66",
+    "name": "8 Community Builders in Unknown",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Unknown",
+    "country": "Unknown",
+    "lat": 22.3511148,
+    "lng": 78.6677428,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 8,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Akhilesh Yadav",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wlHG1GSbX5C6v2T2mxRT3rvYSB.webp"
+      },
+      {
+        "name": "Amit Kayal",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Arbind Kumar Mahato (Tech Mahato)",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCx7WC7i3DPZU3XoeaSV61tWOa.webp"
+      },
+      {
+        "name": "Gauri Shirkande",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Akhilesh Yadav",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wlHG1GSbX5C6v2T2mxRT3rvYSB.webp"
+      },
+      {
+        "name": "Amit Kayal",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Arbind Kumar Mahato (Tech Mahato)",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCx7WC7i3DPZU3XoeaSV61tWOa.webp"
+      },
+      {
+        "name": "Gauri Shirkande",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-110",
     "name": "8 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4142,7 +4244,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-215",
+    "id": "community-builders-cluster-213",
     "name": "8 Community Builders in WA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4193,7 +4295,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-19",
+    "id": "community-builders-cluster-20",
     "name": "8 Community Builders in West Bengal, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4244,7 +4346,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-107",
+    "id": "community-builders-cluster-106",
     "name": "7 Community Builders in BC, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4295,7 +4397,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-177",
+    "id": "community-builders-cluster-176",
     "name": "7 Community Builders in Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4310,10 +4412,23 @@
     "clusterOnly": true,
     "sampleBuilders": [
       {
-        "name": "Tiago Xavier Matos",
-        "imageUrl": "",
-        "isNew": true
+        "name": "Caique",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BmIjXSB8M8acDXMLz3lM80uOYG.webp"
       },
+      {
+        "name": "Emmanuel Martins Raimundo",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/38O8hquxj7uZYEHw6rgawYh6o55.webp"
+      },
+      {
+        "name": "Filipe Almeida",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2c3DNa1JB7kTK834CEtY6aw12mw.webp"
+      },
+      {
+        "name": "Marcelo Andrade",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2b33GhOH99isN644at6cVuXSaMT.webp"
+      }
+    ],
+    "ledBy": [
       {
         "name": "Caique",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3BmIjXSB8M8acDXMLz3lM80uOYG.webp"
@@ -4325,85 +4440,10 @@
       {
         "name": "Filipe Almeida",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2c3DNa1JB7kTK834CEtY6aw12mw.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Tiago Xavier Matos",
-        "imageUrl": "",
-        "isNew": true
       },
       {
-        "name": "Caique",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BmIjXSB8M8acDXMLz3lM80uOYG.webp"
-      },
-      {
-        "name": "Emmanuel Martins Raimundo",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/38O8hquxj7uZYEHw6rgawYh6o55.webp"
-      },
-      {
-        "name": "Filipe Almeida",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2c3DNa1JB7kTK834CEtY6aw12mw.webp"
-      }
-    ],
-    "isNew": true,
-    "newBuilderCount": 1,
-    "newBuilders": [
-      {
-        "name": "Tiago Xavier Matos",
-        "imageUrl": "",
-        "isNew": true
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-95",
-    "name": "7 Community Builders in Germany",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Germany",
-    "country": "Germany",
-    "lat": 51.1638175,
-    "lng": 10.4478313,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 7,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Alireza Davoudi",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Fedi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wDQb2XJKzDJak6c5n9fV3A815d.webp"
-      },
-      {
-        "name": "John",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wD1tPqUtyter7Rtx0EUSTtRE1U.webp"
-      },
-      {
-        "name": "Manuel Vogel",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2pYcefz04yQ70Bx3EM2QDPQLDyG.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Alireza Davoudi",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Fedi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wDQb2XJKzDJak6c5n9fV3A815d.webp"
-      },
-      {
-        "name": "John",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wD1tPqUtyter7Rtx0EUSTtRE1U.webp"
-      },
-      {
-        "name": "Manuel Vogel",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2pYcefz04yQ70Bx3EM2QDPQLDyG.webp"
+        "name": "Marcelo Andrade",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2b33GhOH99isN644at6cVuXSaMT.webp"
       }
     ]
   },
@@ -4435,8 +4475,8 @@
         "imageUrl": "https://avatars.builderprofile.aws.dev/2xSUWIJ1pO5HePw1muK4wMNlApl.webp"
       },
       {
-        "name": "Jessica Boton",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+        "name": "Jessica Botón",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3LB5h6DD4gXIh7szyaJau8fj0Iv.webp"
       }
     ],
     "ledBy": [
@@ -4453,13 +4493,13 @@
         "imageUrl": "https://avatars.builderprofile.aws.dev/2xSUWIJ1pO5HePw1muK4wMNlApl.webp"
       },
       {
-        "name": "Jessica Boton",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+        "name": "Jessica Botón",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3LB5h6DD4gXIh7szyaJau8fj0Iv.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-91",
+    "id": "community-builders-cluster-90",
     "name": "7 Community Builders in Lebanon",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4510,7 +4550,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-150",
+    "id": "community-builders-cluster-149",
     "name": "7 Community Builders in Norway",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4557,57 +4597,6 @@
       {
         "name": "Lars Magelssen",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3BOSNYAECLq1BZDgX4TYLJGOLS0.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-94",
-    "name": "7 Community Builders in Portugal",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Portugal",
-    "country": "Portugal",
-    "lat": 39.6621648,
-    "lng": -8.1353519,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 7,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Alicia Marianne Gonçalves",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/37wEVlDQ7aV2hnbGULRD24netow.webp"
-      },
-      {
-        "name": "André Vidigal",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDAjxHjGnmJmebiqttKmKiYMQ6.webp"
-      },
-      {
-        "name": "Diego Marques",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3DJfqcsjP1NhaVaRtDjTfh7bu4N.webp"
-      },
-      {
-        "name": "Gabriel Florêncio Alves",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/38uQkTsTpEOHRxyXyJDYhU9pU8k.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Alicia Marianne Gonçalves",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/37wEVlDQ7aV2hnbGULRD24netow.webp"
-      },
-      {
-        "name": "André Vidigal",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDAjxHjGnmJmebiqttKmKiYMQ6.webp"
-      },
-      {
-        "name": "Diego Marques",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3DJfqcsjP1NhaVaRtDjTfh7bu4N.webp"
-      },
-      {
-        "name": "Gabriel Florêncio Alves",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/38uQkTsTpEOHRxyXyJDYhU9pU8k.webp"
       }
     ]
   },
@@ -4663,7 +4652,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-134",
+    "id": "community-builders-cluster-133",
     "name": "7 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4832,7 +4821,7 @@
     "sampleBuilders": [
       {
         "name": "Akhilesh Mishra",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wGa6ftd6zXft57MaYCAWtKsC1N.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KCZhCB3Vd2dOyruI0KFyvQB85u.webp"
       },
       {
         "name": "Alok Kumar",
@@ -4850,7 +4839,7 @@
     "ledBy": [
       {
         "name": "Akhilesh Mishra",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wGa6ftd6zXft57MaYCAWtKsC1N.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KCZhCB3Vd2dOyruI0KFyvQB85u.webp"
       },
       {
         "name": "Alok Kumar",
@@ -4918,7 +4907,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-148",
+    "id": "community-builders-cluster-147",
     "name": "6 Community Builders in Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -4969,7 +4958,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-85",
+    "id": "community-builders-cluster-84",
     "name": "6 Community Builders in Hamburg, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5020,7 +5009,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-39",
+    "id": "community-builders-cluster-40",
     "name": "6 Community Builders in Hungary",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5122,7 +5111,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-109",
+    "id": "community-builders-cluster-108",
     "name": "6 Community Builders in North Rhine-Westphalia, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5173,7 +5162,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-116",
+    "id": "community-builders-cluster-115",
     "name": "6 Community Builders in OH, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5224,7 +5213,69 @@
     ]
   },
   {
-    "id": "community-builders-cluster-253",
+    "id": "community-builders-cluster-142",
+    "name": "6 Community Builders in Telangana, India",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Telangana, India",
+    "country": "India",
+    "lat": 17.8495919,
+    "lng": 79.1151663,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 6,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Rishabh Singh",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3L6hCpnJt5mQWCDxCkB3LqMq3HB.webp",
+        "isNew": true
+      },
+      {
+        "name": "Arumulla Yaswanth Reddy",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/305XY0M5iqjhMfGOYwmYb2xzjuW.webp"
+      },
+      {
+        "name": "Pothuraju Jayakrishna Yadav",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BNoLEmjggWs1DjKlH7HxZG2cE2.webp"
+      },
+      {
+        "name": "RajeshReddy Bejadi",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3AtPeSzExRIiIJ9WGzN1CnhtxdO.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Rishabh Singh",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3L6hCpnJt5mQWCDxCkB3LqMq3HB.webp",
+        "isNew": true
+      },
+      {
+        "name": "Arumulla Yaswanth Reddy",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/305XY0M5iqjhMfGOYwmYb2xzjuW.webp"
+      },
+      {
+        "name": "Pothuraju Jayakrishna Yadav",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BNoLEmjggWs1DjKlH7HxZG2cE2.webp"
+      },
+      {
+        "name": "RajeshReddy Bejadi",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3AtPeSzExRIiIJ9WGzN1CnhtxdO.webp"
+      }
+    ],
+    "isNew": true,
+    "newBuilderCount": 1,
+    "newBuilders": [
+      {
+        "name": "Rishabh Singh",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3L6hCpnJt5mQWCDxCkB3LqMq3HB.webp",
+        "isNew": true
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-251",
     "name": "5 Community Builders in Andhra Pradesh, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5275,7 +5326,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-147",
+    "id": "community-builders-cluster-146",
     "name": "5 Community Builders in AZ, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5326,7 +5377,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-83",
+    "id": "community-builders-cluster-82",
     "name": "5 Community Builders in Bavaria, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5377,7 +5428,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-255",
+    "id": "community-builders-cluster-253",
     "name": "5 Community Builders in Czechia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5428,7 +5479,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-117",
+    "id": "community-builders-cluster-116",
     "name": "5 Community Builders in Hong Kong Island, Hong Kong",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5530,7 +5581,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-256",
+    "id": "community-builders-cluster-254",
     "name": "5 Community Builders in Lower Saxony, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5581,7 +5632,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-183",
+    "id": "community-builders-cluster-182",
     "name": "5 Community Builders in MG, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5632,7 +5683,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-228",
+    "id": "community-builders-cluster-226",
     "name": "5 Community Builders in MN, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5683,7 +5734,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-268",
+    "id": "community-builders-cluster-265",
     "name": "5 Community Builders in PA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5734,7 +5785,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-93",
+    "id": "community-builders-cluster-92",
     "name": "5 Community Builders in RJ, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5785,7 +5836,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-77",
+    "id": "community-builders-cluster-76",
     "name": "5 Community Builders in Serbia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5836,7 +5887,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-283",
+    "id": "community-builders-cluster-280",
     "name": "5 Community Builders in Slovakia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5887,58 +5938,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-143",
-    "name": "5 Community Builders in Telangana, India",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Telangana, India",
-    "country": "India",
-    "lat": 17.8495919,
-    "lng": 79.1151663,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 5,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Arumulla Yaswanth Reddy",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/305XY0M5iqjhMfGOYwmYb2xzjuW.webp"
-      },
-      {
-        "name": "Pothuraju Jayakrishna Yadav",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BNoLEmjggWs1DjKlH7HxZG2cE2.webp"
-      },
-      {
-        "name": "RajeshReddy Bejadi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AtPeSzExRIiIJ9WGzN1CnhtxdO.webp"
-      },
-      {
-        "name": "Sanjeev reddy",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ar9pTOqZ0c5jRdvs9fdryBWLTB.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Arumulla Yaswanth Reddy",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/305XY0M5iqjhMfGOYwmYb2xzjuW.webp"
-      },
-      {
-        "name": "Pothuraju Jayakrishna Yadav",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3BNoLEmjggWs1DjKlH7HxZG2cE2.webp"
-      },
-      {
-        "name": "RajeshReddy Bejadi",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3AtPeSzExRIiIJ9WGzN1CnhtxdO.webp"
-      },
-      {
-        "name": "Sanjeev reddy",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ar9pTOqZ0c5jRdvs9fdryBWLTB.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-225",
+    "id": "community-builders-cluster-223",
     "name": "5 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -5989,58 +5989,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-151",
-    "name": "5 Community Builders in Unknown",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Unknown",
-    "country": "Unknown",
-    "lat": 51.1638175,
-    "lng": 10.4478313,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 5,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Ayoub",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3DJkdyfLgncmtGbqEYXQwAddqov.webp"
-      },
-      {
-        "name": "Daniel Schroeder",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2eLsp0y9IIKMHRYtP3OqV2KPIZ9.webp"
-      },
-      {
-        "name": "Dhiraj",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uHOuMvHDWaJR2nLbOeoQ2adA7A.webp"
-      },
-      {
-        "name": "Steffen Gebert",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Ayoub",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3DJkdyfLgncmtGbqEYXQwAddqov.webp"
-      },
-      {
-        "name": "Daniel Schroeder",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2eLsp0y9IIKMHRYtP3OqV2KPIZ9.webp"
-      },
-      {
-        "name": "Dhiraj",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uHOuMvHDWaJR2nLbOeoQ2adA7A.webp"
-      },
-      {
-        "name": "Steffen Gebert",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-290",
+    "id": "community-builders-cluster-287",
     "name": "5 Community Builders in Uzbekistan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6142,7 +6091,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-108",
+    "id": "community-builders-cluster-107",
     "name": "4 Community Builders in Austria",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6193,7 +6142,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-47",
+    "id": "community-builders-cluster-48",
     "name": "4 Community Builders in Bosnia & Herzegovina",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6244,7 +6193,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-224",
+    "id": "community-builders-cluster-222",
     "name": "4 Community Builders in Bulgaria",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6295,7 +6244,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-292",
+    "id": "community-builders-cluster-289",
     "name": "4 Community Builders in Congo - Kinshasa",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6346,7 +6295,58 @@
     ]
   },
   {
-    "id": "community-builders-cluster-131",
+    "id": "community-builders-cluster-170",
+    "name": "4 Community Builders in Costa Rica",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Costa Rica",
+    "country": "Costa Rica",
+    "lat": 10.2735633,
+    "lng": -84.0739102,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 4,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Brayan Arrieta",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Aqpm3AiCxTIVWdI67FMqwEAvSg.webp"
+      },
+      {
+        "name": "Diana Castro",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2yT4BGODkdNwmPJwkz8zEogHWz5.webp"
+      },
+      {
+        "name": "Gerardo Arroyo Arce",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wztYjp8nLjR5dkHkkrJtVUbLdR.webp"
+      },
+      {
+        "name": "Jose David Urena",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KlBExjDVFGiaafcxYqdeQQ8FPk.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Brayan Arrieta",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Aqpm3AiCxTIVWdI67FMqwEAvSg.webp"
+      },
+      {
+        "name": "Diana Castro",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2yT4BGODkdNwmPJwkz8zEogHWz5.webp"
+      },
+      {
+        "name": "Gerardo Arroyo Arce",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wztYjp8nLjR5dkHkkrJtVUbLdR.webp"
+      },
+      {
+        "name": "Jose David Urena",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KlBExjDVFGiaafcxYqdeQQ8FPk.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-130",
     "name": "4 Community Builders in DE, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6397,7 +6397,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-157",
+    "id": "community-builders-cluster-156",
     "name": "4 Community Builders in Delhi, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6448,7 +6448,58 @@
     ]
   },
   {
-    "id": "community-builders-cluster-128",
+    "id": "community-builders-cluster-190",
+    "name": "4 Community Builders in GA, United States",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "GA, United States",
+    "country": "United States",
+    "lat": 32.3293809,
+    "lng": -83.1137366,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 4,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Cherif Fall",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ds8Bhulv3tr3d4kauutZIEpMIx.webp"
+      },
+      {
+        "name": "Kiran Elengickal",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3GZrsAk6K1Au7GFkFGjokzVNvbz.webp"
+      },
+      {
+        "name": "Neal Gamradt",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2dkzRUKh7CYD9G3R55jGxyyJfbo.webp"
+      },
+      {
+        "name": "Olusegun Omotunde",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2uC613P076Dw5ygPBLdZlyhZKfU.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Cherif Fall",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ds8Bhulv3tr3d4kauutZIEpMIx.webp"
+      },
+      {
+        "name": "Kiran Elengickal",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3GZrsAk6K1Au7GFkFGjokzVNvbz.webp"
+      },
+      {
+        "name": "Neal Gamradt",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2dkzRUKh7CYD9G3R55jGxyyJfbo.webp"
+      },
+      {
+        "name": "Olusegun Omotunde",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2uC613P076Dw5ygPBLdZlyhZKfU.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-127",
     "name": "4 Community Builders in Georgia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6499,7 +6550,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-202",
+    "id": "community-builders-cluster-200",
     "name": "4 Community Builders in GO, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6550,7 +6601,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-414",
+    "id": "community-builders-cluster-410",
     "name": "4 Community Builders in Haryana, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6601,7 +6652,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-169",
+    "id": "community-builders-cluster-168",
     "name": "4 Community Builders in Kowloon, Hong Kong",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6652,7 +6703,160 @@
     ]
   },
   {
-    "id": "community-builders-cluster-112",
+    "id": "community-builders-cluster-8",
+    "name": "4 Community Builders in MD, United States",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "MD, United States",
+    "country": "United States",
+    "lat": 39.5162401,
+    "lng": -76.9382069,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 4,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Aashish (AJ) Aacharya",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3COnjMEcOHhlgBib7ycZD10dBSm.webp"
+      },
+      {
+        "name": "Jofia Jose Prakash",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3As7wQ8UXccABhQFLLOG30YQzHb.webp"
+      },
+      {
+        "name": "Kenneth Barnes Jr. | USA",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2zjim6ckgU7lnfmkd7ISgf2jAKV.webp"
+      },
+      {
+        "name": "Matt Morgan",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wDbEhDnijo1N2xKyPDaGftTJgJ.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Aashish (AJ) Aacharya",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3COnjMEcOHhlgBib7ycZD10dBSm.webp"
+      },
+      {
+        "name": "Jofia Jose Prakash",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3As7wQ8UXccABhQFLLOG30YQzHb.webp"
+      },
+      {
+        "name": "Kenneth Barnes Jr. | USA",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2zjim6ckgU7lnfmkd7ISgf2jAKV.webp"
+      },
+      {
+        "name": "Matt Morgan",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wDbEhDnijo1N2xKyPDaGftTJgJ.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-77",
+    "name": "4 Community Builders in MI, United States",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "MI, United States",
+    "country": "United States",
+    "lat": 43.6211955,
+    "lng": -84.6824346,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 4,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Alex Patterson",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3LLH5bw0ONLUd8lPjgWpWShZjFi.webp"
+      },
+      {
+        "name": "Chris Ebert",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wWHADD0CXZSOOOlmDLE9EvspBJ.webp"
+      },
+      {
+        "name": "Michael Wahl",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2sY4vi9vAbTyzcNSjz16Ht7r57E.webp"
+      },
+      {
+        "name": "Timothy Patterson",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wE7rShhF5YZqNF8h83QYAQbiNN.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Alex Patterson",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3LLH5bw0ONLUd8lPjgWpWShZjFi.webp"
+      },
+      {
+        "name": "Chris Ebert",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wWHADD0CXZSOOOlmDLE9EvspBJ.webp"
+      },
+      {
+        "name": "Michael Wahl",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2sY4vi9vAbTyzcNSjz16Ht7r57E.webp"
+      },
+      {
+        "name": "Timothy Patterson",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wE7rShhF5YZqNF8h83QYAQbiNN.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-234",
+    "name": "4 Community Builders in MO, United States",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "MO, United States",
+    "country": "United States",
+    "lat": 38.7604815,
+    "lng": -92.5617875,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 4,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Eric",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Myles Loffler",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2waawDXn1HdiZGyVNV5a5WcPpXu.webp"
+      },
+      {
+        "name": "Pooja Shrestha",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/39JRBAHHXV9J8HtlnZ9a1LdCI9C.webp"
+      },
+      {
+        "name": "Sagar Neupane",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Jh94LkUS3hkKTc4FRevsdctKbo.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Eric",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Myles Loffler",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2waawDXn1HdiZGyVNV5a5WcPpXu.webp"
+      },
+      {
+        "name": "Pooja Shrestha",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/39JRBAHHXV9J8HtlnZ9a1LdCI9C.webp"
+      },
+      {
+        "name": "Sagar Neupane",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3Jh94LkUS3hkKTc4FRevsdctKbo.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-111",
     "name": "4 Community Builders in OR, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6703,7 +6907,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-165",
+    "id": "community-builders-cluster-164",
     "name": "4 Community Builders in Rajasthan, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6754,7 +6958,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-288",
+    "id": "community-builders-cluster-285",
     "name": "4 Community Builders in Shanghai, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6805,7 +7009,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-280",
+    "id": "community-builders-cluster-277",
     "name": "4 Community Builders in Tunisia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6856,7 +7060,58 @@
     ]
   },
   {
-    "id": "community-builders-cluster-161",
+    "id": "community-builders-cluster-150",
+    "name": "4 Community Builders in Unknown",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Unknown",
+    "country": "Unknown",
+    "lat": 51.1638175,
+    "lng": 10.4478313,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 4,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Ayoub",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3DJkdyfLgncmtGbqEYXQwAddqov.webp"
+      },
+      {
+        "name": "Daniel Schroeder",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2eLsp0y9IIKMHRYtP3OqV2KPIZ9.webp"
+      },
+      {
+        "name": "Steffen Gebert",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Tobias Schmidt",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wD6mY0v8qjdFTxQFMQC5av7ckJ.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Ayoub",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3DJkdyfLgncmtGbqEYXQwAddqov.webp"
+      },
+      {
+        "name": "Daniel Schroeder",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2eLsp0y9IIKMHRYtP3OqV2KPIZ9.webp"
+      },
+      {
+        "name": "Steffen Gebert",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Tobias Schmidt",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wD6mY0v8qjdFTxQFMQC5av7ckJ.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-160",
     "name": "4 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6907,7 +7162,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-154",
+    "id": "community-builders-cluster-153",
     "name": "3 Community Builders in Armenia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -6950,50 +7205,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-171",
-    "name": "3 Community Builders in Costa Rica",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Costa Rica",
-    "country": "Costa Rica",
-    "lat": 10.2735633,
-    "lng": -84.0739102,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 3,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Brayan Arrieta",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Aqpm3AiCxTIVWdI67FMqwEAvSg.webp"
-      },
-      {
-        "name": "Diana",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2yT4BGODkdNwmPJwkz8zEogHWz5.webp"
-      },
-      {
-        "name": "Gerardo Arroyo Arce",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wztYjp8nLjR5dkHkkrJtVUbLdR.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Brayan Arrieta",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Aqpm3AiCxTIVWdI67FMqwEAvSg.webp"
-      },
-      {
-        "name": "Diana",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2yT4BGODkdNwmPJwkz8zEogHWz5.webp"
-      },
-      {
-        "name": "Gerardo Arroyo Arce",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wztYjp8nLjR5dkHkkrJtVUbLdR.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-358",
+    "id": "community-builders-cluster-352",
     "name": "3 Community Builders in Croatia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7036,7 +7248,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-238",
+    "id": "community-builders-cluster-236",
     "name": "3 Community Builders in Cyprus",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7079,7 +7291,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-129",
+    "id": "community-builders-cluster-128",
     "name": "3 Community Builders in Denmark",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7122,14 +7334,14 @@
     ]
   },
   {
-    "id": "community-builders-cluster-329",
-    "name": "3 Community Builders in GA, United States",
+    "id": "community-builders-cluster-344",
+    "name": "3 Community Builders in Greece",
     "avatarUrl": "",
     "profileUrl": "",
-    "location": "GA, United States",
-    "country": "United States",
-    "lat": 32.3293809,
-    "lng": -83.1137366,
+    "location": "Greece",
+    "country": "Greece",
+    "lat": 38.9953683,
+    "lng": 21.9877132,
     "tag": "All Builders",
     "builderType": "Community Builder Cluster",
     "specialization": "",
@@ -7137,35 +7349,35 @@
     "clusterOnly": true,
     "sampleBuilders": [
       {
-        "name": "Kiran Elengickal",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3GZrsAk6K1Au7GFkFGjokzVNvbz.webp"
+        "name": "Maria Tzanidaki",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3He0yAyj62aXG2TGTeZJO2aoM0d.webp"
       },
       {
-        "name": "Neal Gamradt",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2dkzRUKh7CYD9G3R55jGxyyJfbo.webp"
+        "name": "Naim Gkamperlo",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BGsSaWgAHUin36vj2xHp2HGPn2.webp"
       },
       {
-        "name": "Olusegun Omotunde",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uC613P076Dw5ygPBLdZlyhZKfU.webp"
+        "name": "November",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/39YoymEZghm7CDXdpNyPCFU8kRQ.webp"
       }
     ],
     "ledBy": [
       {
-        "name": "Kiran Elengickal",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3GZrsAk6K1Au7GFkFGjokzVNvbz.webp"
+        "name": "Maria Tzanidaki",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3He0yAyj62aXG2TGTeZJO2aoM0d.webp"
       },
       {
-        "name": "Neal Gamradt",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2dkzRUKh7CYD9G3R55jGxyyJfbo.webp"
+        "name": "Naim Gkamperlo",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3BGsSaWgAHUin36vj2xHp2HGPn2.webp"
       },
       {
-        "name": "Olusegun Omotunde",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uC613P076Dw5ygPBLdZlyhZKfU.webp"
+        "name": "November",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/39YoymEZghm7CDXdpNyPCFU8kRQ.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-146",
+    "id": "community-builders-cluster-145",
     "name": "3 Community Builders in Haryana, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7208,7 +7420,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-81",
+    "id": "community-builders-cluster-80",
     "name": "3 Community Builders in Hesse, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7251,7 +7463,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-237",
+    "id": "community-builders-cluster-235",
     "name": "3 Community Builders in IA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7294,7 +7506,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-105",
+    "id": "community-builders-cluster-104",
     "name": "3 Community Builders in Japan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7380,50 +7592,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-8",
-    "name": "3 Community Builders in MD, United States",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "MD, United States",
-    "country": "United States",
-    "lat": 39.5162401,
-    "lng": -76.9382069,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 3,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Aashish (AJ) Aacharya",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3COnjMEcOHhlgBib7ycZD10dBSm.webp"
-      },
-      {
-        "name": "Kenneth Barnes Jr. | USA",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2zjim6ckgU7lnfmkd7ISgf2jAKV.webp"
-      },
-      {
-        "name": "Matt Morgan",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wDbEhDnijo1N2xKyPDaGftTJgJ.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Aashish (AJ) Aacharya",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3COnjMEcOHhlgBib7ycZD10dBSm.webp"
-      },
-      {
-        "name": "Kenneth Barnes Jr. | USA",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2zjim6ckgU7lnfmkd7ISgf2jAKV.webp"
-      },
-      {
-        "name": "Matt Morgan",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wDbEhDnijo1N2xKyPDaGftTJgJ.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-181",
+    "id": "community-builders-cluster-180",
     "name": "3 Community Builders in Mexico",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7442,12 +7611,12 @@
         "imageUrl": "https://avatars.builderprofile.aws.dev/3ApPxXUBl0fL3QU5SDhbAi1TQ7u.webp"
       },
       {
-        "name": "Dipayan",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2YrjHwYSJDaffvNTgDbUglRL58j.webp"
-      },
-      {
         "name": "Mario Meza",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2xbj0KEIPwAwtJQ6iwkok0MPICd.webp"
+      },
+      {
+        "name": "Dipayan",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2YrjHwYSJDaffvNTgDbUglRL58j.webp"
       }
     ],
     "ledBy": [
@@ -7456,103 +7625,17 @@
         "imageUrl": "https://avatars.builderprofile.aws.dev/3ApPxXUBl0fL3QU5SDhbAi1TQ7u.webp"
       },
       {
-        "name": "Dipayan",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2YrjHwYSJDaffvNTgDbUglRL58j.webp"
-      },
-      {
         "name": "Mario Meza",
         "imageUrl": "https://avatars.builderprofile.aws.dev/2xbj0KEIPwAwtJQ6iwkok0MPICd.webp"
+      },
+      {
+        "name": "Dipayan",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2YrjHwYSJDaffvNTgDbUglRL58j.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-195",
-    "name": "3 Community Builders in MI, United States",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "MI, United States",
-    "country": "United States",
-    "lat": 43.6211955,
-    "lng": -84.6824346,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 3,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Chris Ebert",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wWHADD0CXZSOOOlmDLE9EvspBJ.webp"
-      },
-      {
-        "name": "Michael Wahl",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2sY4vi9vAbTyzcNSjz16Ht7r57E.webp"
-      },
-      {
-        "name": "Timothy Patterson",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wE7rShhF5YZqNF8h83QYAQbiNN.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Chris Ebert",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wWHADD0CXZSOOOlmDLE9EvspBJ.webp"
-      },
-      {
-        "name": "Michael Wahl",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2sY4vi9vAbTyzcNSjz16Ht7r57E.webp"
-      },
-      {
-        "name": "Timothy Patterson",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wE7rShhF5YZqNF8h83QYAQbiNN.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-236",
-    "name": "3 Community Builders in MO, United States",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "MO, United States",
-    "country": "United States",
-    "lat": 38.7604815,
-    "lng": -92.5617875,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 3,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Eric",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Myles Loffler",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2waawDXn1HdiZGyVNV5a5WcPpXu.webp"
-      },
-      {
-        "name": "Pooja Shrestha",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/39JRBAHHXV9J8HtlnZ9a1LdCI9C.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Eric",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Myles Loffler",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2waawDXn1HdiZGyVNV5a5WcPpXu.webp"
-      },
-      {
-        "name": "Pooja Shrestha",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/39JRBAHHXV9J8HtlnZ9a1LdCI9C.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-258",
+    "id": "community-builders-cluster-256",
     "name": "3 Community Builders in Morocco",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7572,7 +7655,7 @@
       },
       {
         "name": "Karim Benkhira",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Fk2BUSOoGS1orBrhTS15JVwr6o.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KItvcVyRjxvAobIyzTF42PyQYZ.webp"
       },
       {
         "name": "Mohamed Amine ESSFALI",
@@ -7586,7 +7669,7 @@
       },
       {
         "name": "Karim Benkhira",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Fk2BUSOoGS1orBrhTS15JVwr6o.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KItvcVyRjxvAobIyzTF42PyQYZ.webp"
       },
       {
         "name": "Mohamed Amine ESSFALI",
@@ -7595,7 +7678,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-254",
+    "id": "community-builders-cluster-252",
     "name": "3 Community Builders in New Territories, Hong Kong",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7638,7 +7721,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-257",
+    "id": "community-builders-cluster-255",
     "name": "3 Community Builders in NSW, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7681,7 +7764,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-216",
+    "id": "community-builders-cluster-214",
     "name": "3 Community Builders in OK, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7767,7 +7850,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-232",
+    "id": "community-builders-cluster-230",
     "name": "3 Community Builders in Panama",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7810,7 +7893,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-204",
+    "id": "community-builders-cluster-202",
     "name": "3 Community Builders in Paraguay",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7853,7 +7936,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-365",
+    "id": "community-builders-cluster-360",
     "name": "3 Community Builders in Slovenia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7896,7 +7979,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-196",
+    "id": "community-builders-cluster-194",
     "name": "3 Community Builders in TN, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7939,7 +8022,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-44",
+    "id": "community-builders-cluster-45",
     "name": "3 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -7982,50 +8065,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-152",
-    "name": "3 Community Builders in United States",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "United States",
-    "country": "United States",
-    "lat": 9.6000359,
-    "lng": 7.9999721,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 3,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Azeez Halimat",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Stephen Oladele",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Ukeme Eseme",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2daoNi3Pp9PeFSMT5YWVocHxSFZ.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Azeez Halimat",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Stephen Oladele",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Ukeme Eseme",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2daoNi3Pp9PeFSMT5YWVocHxSFZ.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-197",
+    "id": "community-builders-cluster-195",
     "name": "3 Community Builders in WV, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8068,7 +8108,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-126",
+    "id": "community-builders-cluster-125",
     "name": "3 Community Builders in Zimbabwe",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8111,7 +8151,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-164",
+    "id": "community-builders-cluster-163",
     "name": "2 Community Builders in AB, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8146,7 +8186,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-141",
+    "id": "community-builders-cluster-140",
     "name": "2 Community Builders in AL, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8177,6 +8217,41 @@
       {
         "name": "Sai Harsha Vemula",
         "imageUrl": "https://avatars.builderprofile.aws.dev/3BP2L2SjwGXn1DZRpiKe0nZLDn7.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-354",
+    "name": "2 Community Builders in Beijing, China",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Beijing, China",
+    "country": "China",
+    "lat": 39.9057136,
+    "lng": 116.3912972,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 2,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Mayinchen",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/31ttOyRTdxo3ybFpwh98vOoNY3o.webp"
+      },
+      {
+        "name": "Xiaofei Li",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3HLRikZqqUwxFYJCmEx12HUY7Ak.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Mayinchen",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/31ttOyRTdxo3ybFpwh98vOoNY3o.webp"
+      },
+      {
+        "name": "Xiaofei Li",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3HLRikZqqUwxFYJCmEx12HUY7Ak.webp"
       }
     ]
   },
@@ -8251,7 +8326,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-327",
+    "id": "community-builders-cluster-323",
     "name": "2 Community Builders in Brandenburg, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8286,7 +8361,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-104",
+    "id": "community-builders-cluster-103",
     "name": "2 Community Builders in CA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8321,7 +8396,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-22",
+    "id": "community-builders-cluster-23",
     "name": "2 Community Builders in Chhattisgarh, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8356,7 +8431,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-158",
+    "id": "community-builders-cluster-157",
     "name": "2 Community Builders in Côte d’Ivoire",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8372,8 +8447,7 @@
     "sampleBuilders": [
       {
         "name": "BANTANTOULA",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3JdUuGJDqfjx9w1475NwkxLXPLk.webp",
-        "isNew": true
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3JdUuGJDqfjx9w1475NwkxLXPLk.webp"
       },
       {
         "name": "Habiba Adam Salisu",
@@ -8383,26 +8457,16 @@
     "ledBy": [
       {
         "name": "BANTANTOULA",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3JdUuGJDqfjx9w1475NwkxLXPLk.webp",
-        "isNew": true
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3JdUuGJDqfjx9w1475NwkxLXPLk.webp"
       },
       {
         "name": "Habiba Adam Salisu",
         "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
       }
-    ],
-    "isNew": true,
-    "newBuilderCount": 1,
-    "newBuilders": [
-      {
-        "name": "BANTANTOULA",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3JdUuGJDqfjx9w1475NwkxLXPLk.webp",
-        "isNew": true
-      }
     ]
   },
   {
-    "id": "community-builders-cluster-199",
+    "id": "community-builders-cluster-197",
     "name": "2 Community Builders in CT, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8437,7 +8501,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-344",
+    "id": "community-builders-cluster-338",
     "name": "2 Community Builders in DF, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8472,7 +8536,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-271",
+    "id": "community-builders-cluster-268",
     "name": "2 Community Builders in El Salvador",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8488,7 +8552,7 @@
     "sampleBuilders": [
       {
         "name": "Hector Zelaya",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDire7bSBvKuabqjWvTE8cFqEo.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KmrfDFjQBLRmnAzJ36Q6UZV4Hq.webp"
       },
       {
         "name": "Jose Flores",
@@ -8498,7 +8562,7 @@
     "ledBy": [
       {
         "name": "Hector Zelaya",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDire7bSBvKuabqjWvTE8cFqEo.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KmrfDFjQBLRmnAzJ36Q6UZV4Hq.webp"
       },
       {
         "name": "Jose Flores",
@@ -8507,7 +8571,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-243",
+    "id": "community-builders-cluster-241",
     "name": "2 Community Builders in GO, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8542,42 +8606,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-350",
-    "name": "2 Community Builders in Greece",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Greece",
-    "country": "Greece",
-    "lat": 38.9953683,
-    "lng": 21.9877132,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 2,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Maria Tzanidaki",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3He0yAyj62aXG2TGTeZJO2aoM0d.webp"
-      },
-      {
-        "name": "November",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/39YoymEZghm7CDXdpNyPCFU8kRQ.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Maria Tzanidaki",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3He0yAyj62aXG2TGTeZJO2aoM0d.webp"
-      },
-      {
-        "name": "November",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/39YoymEZghm7CDXdpNyPCFU8kRQ.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-361",
+    "id": "community-builders-cluster-356",
     "name": "2 Community Builders in Hesse, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8612,7 +8641,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-287",
+    "id": "community-builders-cluster-284",
     "name": "2 Community Builders in IN, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8647,7 +8676,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-410",
+    "id": "community-builders-cluster-406",
     "name": "2 Community Builders in Iraq",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8682,7 +8711,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-139",
+    "id": "community-builders-cluster-138",
     "name": "2 Community Builders in Kazakhstan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8717,7 +8746,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-252",
+    "id": "community-builders-cluster-250",
     "name": "2 Community Builders in Kowloon, Hong Kong",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8752,7 +8781,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-200",
+    "id": "community-builders-cluster-198",
     "name": "2 Community Builders in KS, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8787,7 +8816,42 @@
     ]
   },
   {
-    "id": "community-builders-cluster-163",
+    "id": "community-builders-cluster-281",
+    "name": "2 Community Builders in Lithuania",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Lithuania",
+    "country": "Lithuania",
+    "lat": 55.3500003,
+    "lng": 23.7499997,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 2,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Ivan Danilov",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDFrPuyvytga0xnMi3UrXTLSLs.webp"
+      },
+      {
+        "name": "Vytenis Sakalas",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3DO0uyiEvFXUMj5xtNnUCNpGliK.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Ivan Danilov",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDFrPuyvytga0xnMi3UrXTLSLs.webp"
+      },
+      {
+        "name": "Vytenis Sakalas",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3DO0uyiEvFXUMj5xtNnUCNpGliK.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-162",
     "name": "2 Community Builders in Mauritius",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8822,7 +8886,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-352",
+    "id": "community-builders-cluster-346",
     "name": "2 Community Builders in Montenegro",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8857,7 +8921,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-337",
+    "id": "community-builders-cluster-332",
     "name": "2 Community Builders in NB, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8892,7 +8956,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-144",
+    "id": "community-builders-cluster-143",
     "name": "2 Community Builders in NE, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8927,7 +8991,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-130",
+    "id": "community-builders-cluster-129",
     "name": "2 Community Builders in Nepal",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8962,7 +9026,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-351",
+    "id": "community-builders-cluster-345",
     "name": "2 Community Builders in Nigeria",
     "avatarUrl": "",
     "profileUrl": "",
@@ -8997,7 +9061,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-23",
+    "id": "community-builders-cluster-24",
     "name": "2 Community Builders in NL, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9032,7 +9096,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-314",
+    "id": "community-builders-cluster-310",
     "name": "2 Community Builders in NV, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9048,7 +9112,7 @@
     "sampleBuilders": [
       {
         "name": "Justin Cook",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3JFiyKlWGw1rdK8QtNQMY4ULHFi.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K9uABXewVjO6QnwjGL2n1qacTO.webp"
       },
       {
         "name": "Maria Christidi Noble",
@@ -9058,7 +9122,7 @@
     "ledBy": [
       {
         "name": "Justin Cook",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3JFiyKlWGw1rdK8QtNQMY4ULHFi.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3K9uABXewVjO6QnwjGL2n1qacTO.webp"
       },
       {
         "name": "Maria Christidi Noble",
@@ -9067,7 +9131,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-425",
+    "id": "community-builders-cluster-422",
     "name": "2 Community Builders in ON, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9137,7 +9201,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-428",
+    "id": "community-builders-cluster-425",
     "name": "2 Community Builders in QLD, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9172,7 +9236,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-302",
+    "id": "community-builders-cluster-298",
     "name": "2 Community Builders in RS, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9207,7 +9271,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-307",
+    "id": "community-builders-cluster-303",
     "name": "2 Community Builders in Rwanda",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9242,7 +9306,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-265",
+    "id": "community-builders-cluster-262",
     "name": "2 Community Builders in Saudi Arabia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9277,7 +9341,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-173",
+    "id": "community-builders-cluster-172",
     "name": "2 Community Builders in SC, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9312,7 +9376,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-101",
+    "id": "community-builders-cluster-100",
     "name": "2 Community Builders in SC, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9347,7 +9411,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-334",
+    "id": "community-builders-cluster-329",
     "name": "2 Community Builders in Singapore",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9382,7 +9446,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-241",
+    "id": "community-builders-cluster-239",
     "name": "2 Community Builders in Sri Lanka",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9417,7 +9481,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-437",
+    "id": "community-builders-cluster-434",
     "name": "2 Community Builders in Thailand",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9452,7 +9516,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-208",
+    "id": "community-builders-cluster-206",
     "name": "2 Community Builders in Uganda",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9487,7 +9551,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-242",
+    "id": "community-builders-cluster-240",
     "name": "2 Community Builders in United Arab Emirates",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9522,7 +9586,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-170",
+    "id": "community-builders-cluster-169",
     "name": "2 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9557,7 +9621,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-137",
+    "id": "community-builders-cluster-136",
     "name": "2 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9592,7 +9656,42 @@
     ]
   },
   {
-    "id": "community-builders-cluster-207",
+    "id": "community-builders-cluster-151",
+    "name": "2 Community Builders in United States",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "United States",
+    "country": "United States",
+    "lat": 9.6000359,
+    "lng": 7.9999721,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 2,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Azeez Halimat",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Stephen Oladele",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Azeez Halimat",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      },
+      {
+        "name": "Stephen Oladele",
+        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-205",
     "name": "2 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9627,7 +9726,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-298",
+    "id": "community-builders-cluster-295",
     "name": "2 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9662,7 +9761,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-338",
+    "id": "community-builders-cluster-333",
     "name": "2 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9697,7 +9796,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-364",
+    "id": "community-builders-cluster-359",
     "name": "2 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9732,7 +9831,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-443",
+    "id": "community-builders-cluster-440",
     "name": "2 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9767,77 +9866,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-234",
-    "name": "2 Community Builders in Unknown",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Unknown",
-    "country": "Unknown",
-    "lat": 39.294076,
-    "lng": 35.2316631,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 2,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Enes Cetinkaya",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2b0h5KTrD7uNtsOBh0QwSeVGCv4.webp"
-      },
-      {
-        "name": "Engin Bozaba",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wPnxvPIF8KMaHgzYVVpNbGTyiC.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Enes Cetinkaya",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2b0h5KTrD7uNtsOBh0QwSeVGCv4.webp"
-      },
-      {
-        "name": "Engin Bozaba",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wPnxvPIF8KMaHgzYVVpNbGTyiC.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-264",
-    "name": "2 Community Builders in Unknown",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Unknown",
-    "country": "Unknown",
-    "lat": 24.0002488,
-    "lng": 53.9994829,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 2,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Hameedullah Khan",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Muhammad Umar Amanat",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2waWGnKGhfIBlHmKK1AXauWMxrE.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Hameedullah Khan",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      },
-      {
-        "name": "Muhammad Umar Amanat",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2waWGnKGhfIBlHmKK1AXauWMxrE.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-375",
+    "id": "community-builders-cluster-371",
     "name": "2 Community Builders in VIC, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9872,7 +9901,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-409",
+    "id": "community-builders-cluster-405",
     "name": "2 Community Builders in VIC, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9907,7 +9936,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-301",
+    "id": "community-builders-cluster-297",
     "name": "2 Community Builders in WA, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9942,7 +9971,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-317",
+    "id": "community-builders-cluster-313",
     "name": "2 Community Builders in WA, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -9977,7 +10006,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-331",
+    "id": "community-builders-cluster-326",
     "name": "2 Community Builders in West Bengal, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10012,7 +10041,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-286",
+    "id": "community-builders-cluster-283",
     "name": "1 Community Builders in AB, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10039,7 +10068,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-407",
+    "id": "community-builders-cluster-403",
     "name": "1 Community Builders in AB, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10066,7 +10095,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-214",
+    "id": "community-builders-cluster-212",
     "name": "1 Community Builders in ACT, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10093,7 +10122,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-424",
+    "id": "community-builders-cluster-421",
     "name": "1 Community Builders in Afghanistan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10120,7 +10149,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-417",
+    "id": "community-builders-cluster-413",
     "name": "1 Community Builders in Albania",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10147,7 +10176,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-422",
+    "id": "community-builders-cluster-419",
     "name": "1 Community Builders in Algeria",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10174,7 +10203,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-239",
+    "id": "community-builders-cluster-237",
     "name": "1 Community Builders in Andhra Pradesh, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10201,7 +10230,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-227",
+    "id": "community-builders-cluster-225",
     "name": "1 Community Builders in Angola",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10228,7 +10257,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-245",
+    "id": "community-builders-cluster-243",
     "name": "1 Community Builders in AR, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10255,7 +10284,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-311",
+    "id": "community-builders-cluster-307",
     "name": "1 Community Builders in Argentina",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10282,7 +10311,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-393",
+    "id": "community-builders-cluster-389",
     "name": "1 Community Builders in Argentina",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10309,7 +10338,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-132",
+    "id": "community-builders-cluster-131",
     "name": "1 Community Builders in Austria",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10336,7 +10365,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-433",
+    "id": "community-builders-cluster-430",
     "name": "1 Community Builders in AZ, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10363,7 +10392,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-450",
+    "id": "community-builders-cluster-447",
     "name": "1 Community Builders in Azerbaijan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10390,7 +10419,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-442",
+    "id": "community-builders-cluster-439",
     "name": "1 Community Builders in BA, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10417,7 +10446,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-404",
+    "id": "community-builders-cluster-400",
     "name": "1 Community Builders in Baden-Wuerttemberg, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10444,7 +10473,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-88",
+    "id": "community-builders-cluster-87",
     "name": "1 Community Builders in Bahrain",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10471,7 +10500,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-270",
+    "id": "community-builders-cluster-267",
     "name": "1 Community Builders in Bahrain",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10498,7 +10527,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-230",
+    "id": "community-builders-cluster-228",
     "name": "1 Community Builders in Bavaria, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10525,7 +10554,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-391",
+    "id": "community-builders-cluster-387",
     "name": "1 Community Builders in Bavaria, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10552,7 +10581,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-281",
+    "id": "community-builders-cluster-278",
     "name": "1 Community Builders in BC, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10579,7 +10608,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-293",
+    "id": "community-builders-cluster-290",
     "name": "1 Community Builders in BC, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10606,7 +10635,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-426",
+    "id": "community-builders-cluster-423",
     "name": "1 Community Builders in BC, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10633,34 +10662,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-467",
-    "name": "1 Community Builders in Beijing, China",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Beijing, China",
-    "country": "China",
-    "lat": 39.9057136,
-    "lng": 116.3912972,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 1,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Xiaofei Li",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3HLRikZqqUwxFYJCmEx12HUY7Ak.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Xiaofei Li",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3HLRikZqqUwxFYJCmEx12HUY7Ak.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-92",
+    "id": "community-builders-cluster-91",
     "name": "1 Community Builders in Belarus",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10687,7 +10689,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-345",
+    "id": "community-builders-cluster-339",
     "name": "1 Community Builders in Berlin, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10714,7 +10716,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-362",
+    "id": "community-builders-cluster-357",
     "name": "1 Community Builders in Berlin, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10741,7 +10743,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-401",
+    "id": "community-builders-cluster-397",
     "name": "1 Community Builders in Berlin, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10768,7 +10770,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-369",
+    "id": "community-builders-cluster-364",
     "name": "1 Community Builders in Bihar, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10795,7 +10797,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-462",
+    "id": "community-builders-cluster-459",
     "name": "1 Community Builders in Bihar, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10822,7 +10824,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-359",
+    "id": "community-builders-cluster-353",
     "name": "1 Community Builders in Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10849,7 +10851,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-398",
+    "id": "community-builders-cluster-394",
     "name": "1 Community Builders in CA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10903,7 +10905,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-453",
+    "id": "community-builders-cluster-450",
     "name": "1 Community Builders in Cameroon",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10930,7 +10932,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-427",
+    "id": "community-builders-cluster-424",
     "name": "1 Community Builders in Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10957,7 +10959,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-140",
+    "id": "community-builders-cluster-139",
     "name": "1 Community Builders in CE, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -10984,7 +10986,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-273",
+    "id": "community-builders-cluster-270",
     "name": "1 Community Builders in CE, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11011,7 +11013,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-259",
+    "id": "community-builders-cluster-257",
     "name": "1 Community Builders in Chhattisgarh, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11038,7 +11040,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-432",
+    "id": "community-builders-cluster-429",
     "name": "1 Community Builders in China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11065,7 +11067,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-335",
+    "id": "community-builders-cluster-330",
     "name": "1 Community Builders in Chongqing, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11092,34 +11094,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-76",
-    "name": "1 Community Builders in Colombia",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Colombia",
-    "country": "Colombia",
-    "lat": 23.6585116,
-    "lng": -102.0077097,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 1,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Alejandro Mercado Peña",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCiFBa2b6h4lk4wuz3wYMq97ob.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Alejandro Mercado Peña",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wCiFBa2b6h4lk4wuz3wYMq97ob.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-310",
+    "id": "community-builders-cluster-306",
     "name": "1 Community Builders in Colombia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11146,7 +11121,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-198",
+    "id": "community-builders-cluster-196",
     "name": "1 Community Builders in DC, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11173,34 +11148,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-299",
-    "name": "1 Community Builders in DC, United States",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "DC, United States",
-    "country": "United States",
-    "lat": 39.7837304,
-    "lng": -100.445882,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 1,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Jofia Jose Prakash",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3As7wQ8UXccABhQFLLOG30YQzHb.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Jofia Jose Prakash",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3As7wQ8UXccABhQFLLOG30YQzHb.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-408",
+    "id": "community-builders-cluster-404",
     "name": "1 Community Builders in DE, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11227,7 +11175,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-449",
+    "id": "community-builders-cluster-446",
     "name": "1 Community Builders in Delhi, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11254,7 +11202,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-46",
+    "id": "community-builders-cluster-47",
     "name": "1 Community Builders in Egypt",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11281,7 +11229,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-235",
+    "id": "community-builders-cluster-233",
     "name": "1 Community Builders in Estonia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11308,7 +11256,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-278",
+    "id": "community-builders-cluster-275",
     "name": "1 Community Builders in Estonia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11335,7 +11283,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-373",
+    "id": "community-builders-cluster-368",
     "name": "1 Community Builders in Finland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11362,7 +11310,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-343",
+    "id": "community-builders-cluster-337",
     "name": "1 Community Builders in FL,",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11389,7 +11337,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-246",
+    "id": "community-builders-cluster-244",
     "name": "1 Community Builders in FL, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11416,7 +11364,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-296",
+    "id": "community-builders-cluster-293",
     "name": "1 Community Builders in FL, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11443,7 +11391,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-386",
+    "id": "community-builders-cluster-382",
     "name": "1 Community Builders in FL, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11470,7 +11418,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-326",
+    "id": "community-builders-cluster-322",
     "name": "1 Community Builders in France",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11497,7 +11445,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-470",
+    "id": "community-builders-cluster-465",
     "name": "1 Community Builders in France",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11551,7 +11499,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-186",
+    "id": "community-builders-cluster-185",
     "name": "1 Community Builders in GA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11578,7 +11526,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-330",
+    "id": "community-builders-cluster-325",
     "name": "1 Community Builders in GA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11605,7 +11553,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-394",
+    "id": "community-builders-cluster-390",
     "name": "1 Community Builders in GA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11632,7 +11580,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-156",
+    "id": "community-builders-cluster-155",
     "name": "1 Community Builders in Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11659,7 +11607,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-421",
+    "id": "community-builders-cluster-418",
     "name": "1 Community Builders in Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11686,7 +11634,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-383",
+    "id": "community-builders-cluster-379",
     "name": "1 Community Builders in Ghana",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11713,7 +11661,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-435",
+    "id": "community-builders-cluster-432",
     "name": "1 Community Builders in Guangdong, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11740,7 +11688,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-162",
+    "id": "community-builders-cluster-161",
     "name": "1 Community Builders in Hamburg, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11767,7 +11715,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-218",
+    "id": "community-builders-cluster-216",
     "name": "1 Community Builders in Henan, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11794,7 +11742,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-276",
+    "id": "community-builders-cluster-273",
     "name": "1 Community Builders in Hong Kong",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11821,7 +11769,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-321",
+    "id": "community-builders-cluster-317",
     "name": "1 Community Builders in Hong Kong Island, Hong Kong",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11848,7 +11796,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-312",
+    "id": "community-builders-cluster-308",
     "name": "1 Community Builders in Hubei, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11875,7 +11823,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-439",
+    "id": "community-builders-cluster-436",
     "name": "1 Community Builders in Iceland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11902,7 +11850,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-120",
+    "id": "community-builders-cluster-119",
     "name": "1 Community Builders in IL, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11929,7 +11877,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-379",
+    "id": "community-builders-cluster-375",
     "name": "1 Community Builders in IN, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11956,7 +11904,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-217",
+    "id": "community-builders-cluster-215",
     "name": "1 Community Builders in India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -11983,7 +11931,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-429",
+    "id": "community-builders-cluster-426",
     "name": "1 Community Builders in India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12010,7 +11958,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-114",
+    "id": "community-builders-cluster-113",
     "name": "1 Community Builders in Israel",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12037,7 +11985,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-97",
+    "id": "community-builders-cluster-96",
     "name": "1 Community Builders in Jharkhand, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12064,7 +12012,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-206",
+    "id": "community-builders-cluster-204",
     "name": "1 Community Builders in Jharkhand, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12091,7 +12039,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-210",
+    "id": "community-builders-cluster-208",
     "name": "1 Community Builders in Jiangsu, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12118,7 +12066,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-266",
+    "id": "community-builders-cluster-263",
     "name": "1 Community Builders in Jordan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12145,7 +12093,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-341",
+    "id": "community-builders-cluster-417",
     "name": "1 Community Builders in Karnataka, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12160,19 +12108,19 @@
     "clusterOnly": true,
     "sampleBuilders": [
       {
-        "name": "Logesh",
+        "name": "S Logesh",
         "imageUrl": "https://avatars.builderprofile.aws.dev/397JyA8YfYSSNJkpFV9IVp2z2lD.webp"
       }
     ],
     "ledBy": [
       {
-        "name": "Logesh",
+        "name": "S Logesh",
         "imageUrl": "https://avatars.builderprofile.aws.dev/397JyA8YfYSSNJkpFV9IVp2z2lD.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-226",
+    "id": "community-builders-cluster-224",
     "name": "1 Community Builders in Kowloon, Hong Kong",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12199,7 +12147,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-289",
+    "id": "community-builders-cluster-286",
     "name": "1 Community Builders in KS, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12226,7 +12174,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-356",
+    "id": "community-builders-cluster-350",
     "name": "1 Community Builders in KY, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12253,7 +12201,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-110",
+    "id": "community-builders-cluster-109",
     "name": "1 Community Builders in LA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12280,7 +12228,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-363",
+    "id": "community-builders-cluster-358",
     "name": "1 Community Builders in Latvia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12307,34 +12255,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-284",
-    "name": "1 Community Builders in Lithuania",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Lithuania",
-    "country": "Lithuania",
-    "lat": 55.3500003,
-    "lng": 23.7499997,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 1,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Ivan Danilov",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDFrPuyvytga0xnMi3UrXTLSLs.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Ivan Danilov",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2uDFrPuyvytga0xnMi3UrXTLSLs.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-385",
+    "id": "community-builders-cluster-381",
     "name": "1 Community Builders in Lower Saxony, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12361,7 +12282,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-357",
+    "id": "community-builders-cluster-351",
     "name": "1 Community Builders in Luxembourg",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12388,7 +12309,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-336",
+    "id": "community-builders-cluster-331",
     "name": "1 Community Builders in MA, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12415,7 +12336,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-219",
+    "id": "community-builders-cluster-217",
     "name": "1 Community Builders in Madhya Pradesh, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12442,7 +12363,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-434",
+    "id": "community-builders-cluster-431",
     "name": "1 Community Builders in Madhya Pradesh, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12469,7 +12390,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-390",
+    "id": "community-builders-cluster-386",
     "name": "1 Community Builders in Maharashtra, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12496,7 +12417,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-189",
+    "id": "community-builders-cluster-188",
     "name": "1 Community Builders in Malaysia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12523,7 +12444,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-282",
+    "id": "community-builders-cluster-279",
     "name": "1 Community Builders in Malta",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12550,7 +12471,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-153",
+    "id": "community-builders-cluster-152",
     "name": "1 Community Builders in MD, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12577,7 +12498,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-332",
+    "id": "community-builders-cluster-327",
     "name": "1 Community Builders in ME, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12604,7 +12525,34 @@
     ]
   },
   {
-    "id": "community-builders-cluster-303",
+    "id": "community-builders-cluster-349",
+    "name": "1 Community Builders in Mecklenburg-Vorpommern, Germany",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Mecklenburg-Vorpommern, Germany",
+    "country": "Germany",
+    "lat": 53.7735064,
+    "lng": 12.5755471,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 1,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Martin Mueller",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wtfgaMJghKIUqa2diIrhrQGOPd.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Martin Mueller",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wtfgaMJghKIUqa2diIrhrQGOPd.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-299",
     "name": "1 Community Builders in Mexico",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12631,7 +12579,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-295",
+    "id": "community-builders-cluster-292",
     "name": "1 Community Builders in MG, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12658,7 +12606,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-444",
+    "id": "community-builders-cluster-441",
     "name": "1 Community Builders in MG, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12685,7 +12633,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-300",
+    "id": "community-builders-cluster-296",
     "name": "1 Community Builders in MN, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12712,7 +12660,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-395",
+    "id": "community-builders-cluster-391",
     "name": "1 Community Builders in MS, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12739,7 +12687,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-340",
+    "id": "community-builders-cluster-335",
     "name": "1 Community Builders in Myanmar (Burma)",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12766,7 +12714,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-315",
+    "id": "community-builders-cluster-311",
     "name": "1 Community Builders in Netherlands",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12793,7 +12741,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-377",
+    "id": "community-builders-cluster-373",
     "name": "1 Community Builders in Netherlands",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12820,7 +12768,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-25",
+    "id": "community-builders-cluster-26",
     "name": "1 Community Builders in New Zealand",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12847,7 +12795,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-403",
+    "id": "community-builders-cluster-399",
     "name": "1 Community Builders in New Zealand",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12901,7 +12849,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-35",
+    "id": "community-builders-cluster-36",
     "name": "1 Community Builders in Nigeria",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12928,7 +12876,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-460",
+    "id": "community-builders-cluster-457",
     "name": "1 Community Builders in Nigeria",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12955,7 +12903,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-413",
+    "id": "community-builders-cluster-409",
     "name": "1 Community Builders in NJ, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -12982,7 +12930,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-122",
+    "id": "community-builders-cluster-121",
     "name": "1 Community Builders in North Macedonia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13009,7 +12957,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-231",
+    "id": "community-builders-cluster-229",
     "name": "1 Community Builders in North Rhine-Westphalia, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13025,18 +12973,18 @@
     "sampleBuilders": [
       {
         "name": "Emad Bawah",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3ApBf78e0xLZlqZqH5VqesT3ruC.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KJnCWIMfgDFO8H0Rj6Xb1wPHFE.webp"
       }
     ],
     "ledBy": [
       {
         "name": "Emad Bawah",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3ApBf78e0xLZlqZqH5VqesT3ruC.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KJnCWIMfgDFO8H0Rj6Xb1wPHFE.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-328",
+    "id": "community-builders-cluster-324",
     "name": "1 Community Builders in North Rhine-Westphalia, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13063,7 +13011,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-360",
+    "id": "community-builders-cluster-355",
     "name": "1 Community Builders in North Rhine-Westphalia, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13090,7 +13038,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-461",
+    "id": "community-builders-cluster-458",
     "name": "1 Community Builders in North Rhine-Westphalia, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13117,7 +13065,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-121",
+    "id": "community-builders-cluster-120",
     "name": "1 Community Builders in NSW, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13144,7 +13092,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-378",
+    "id": "community-builders-cluster-374",
     "name": "1 Community Builders in NSW, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13171,7 +13119,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-187",
+    "id": "community-builders-cluster-186",
     "name": "1 Community Builders in NY, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13198,7 +13146,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-222",
+    "id": "community-builders-cluster-220",
     "name": "1 Community Builders in NY, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13225,7 +13173,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-411",
+    "id": "community-builders-cluster-407",
     "name": "1 Community Builders in NY, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13279,7 +13227,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-309",
+    "id": "community-builders-cluster-305",
     "name": "1 Community Builders in ON, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13306,7 +13254,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-349",
+    "id": "community-builders-cluster-343",
     "name": "1 Community Builders in ON, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13333,7 +13281,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-387",
+    "id": "community-builders-cluster-383",
     "name": "1 Community Builders in ON, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13360,7 +13308,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-250",
+    "id": "community-builders-cluster-248",
     "name": "1 Community Builders in PA, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13387,7 +13335,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-174",
+    "id": "community-builders-cluster-173",
     "name": "1 Community Builders in PA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13414,7 +13362,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-263",
+    "id": "community-builders-cluster-261",
     "name": "1 Community Builders in Pakistan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13441,7 +13389,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-240",
+    "id": "community-builders-cluster-238",
     "name": "1 Community Builders in Palestine",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13468,7 +13416,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-416",
+    "id": "community-builders-cluster-412",
     "name": "1 Community Builders in PB, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13495,7 +13443,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-452",
+    "id": "community-builders-cluster-449",
     "name": "1 Community Builders in PB, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13522,7 +13470,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-182",
+    "id": "community-builders-cluster-181",
     "name": "1 Community Builders in PE, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13549,7 +13497,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-184",
+    "id": "community-builders-cluster-183",
     "name": "1 Community Builders in Peru",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13576,7 +13524,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-30",
+    "id": "community-builders-cluster-31",
     "name": "1 Community Builders in Poland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13603,7 +13551,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-90",
+    "id": "community-builders-cluster-89",
     "name": "1 Community Builders in Poland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13630,7 +13578,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-277",
+    "id": "community-builders-cluster-274",
     "name": "1 Community Builders in Poland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13657,7 +13605,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-441",
+    "id": "community-builders-cluster-438",
     "name": "1 Community Builders in Poland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13684,7 +13632,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-211",
+    "id": "community-builders-cluster-209",
     "name": "1 Community Builders in Portugal",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13711,7 +13659,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-247",
+    "id": "community-builders-cluster-245",
     "name": "1 Community Builders in Portugal",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13738,34 +13686,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-355",
-    "name": "1 Community Builders in Portugal",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Portugal",
-    "country": "Portugal",
-    "lat": 51.1638175,
-    "lng": 10.4478313,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 1,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Martin Mueller",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wtfgaMJghKIUqa2diIrhrQGOPd.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Martin Mueller",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wtfgaMJghKIUqa2diIrhrQGOPd.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-397",
+    "id": "community-builders-cluster-393",
     "name": "1 Community Builders in Portugal",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13792,7 +13713,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-464",
+    "id": "community-builders-cluster-461",
     "name": "1 Community Builders in PR, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13819,7 +13740,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-319",
+    "id": "community-builders-cluster-315",
     "name": "1 Community Builders in Punjab, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13846,7 +13767,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-320",
+    "id": "community-builders-cluster-316",
     "name": "1 Community Builders in Punjab, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13873,7 +13794,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-80",
+    "id": "community-builders-cluster-79",
     "name": "1 Community Builders in Rhineland-Palatinate, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13900,7 +13821,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-233",
+    "id": "community-builders-cluster-231",
     "name": "1 Community Builders in Rhineland-Palatinate, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13927,7 +13848,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-465",
+    "id": "community-builders-cluster-462",
     "name": "1 Community Builders in RI, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13954,7 +13875,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-323",
+    "id": "community-builders-cluster-319",
     "name": "1 Community Builders in RJ, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -13981,7 +13902,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-370",
+    "id": "community-builders-cluster-365",
     "name": "1 Community Builders in RN, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14008,7 +13929,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-274",
+    "id": "community-builders-cluster-271",
     "name": "1 Community Builders in RS, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14035,7 +13956,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-348",
+    "id": "community-builders-cluster-342",
     "name": "1 Community Builders in SA, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14062,7 +13983,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-325",
+    "id": "community-builders-cluster-321",
     "name": "1 Community Builders in Saarland, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14089,7 +14010,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-447",
+    "id": "community-builders-cluster-444",
     "name": "1 Community Builders in Saxony-Anhalt, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14116,7 +14037,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-221",
+    "id": "community-builders-cluster-219",
     "name": "1 Community Builders in SC, Brazil",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14143,7 +14064,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-451",
+    "id": "community-builders-cluster-448",
     "name": "1 Community Builders in Schleswig-Holstein, Germany",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14170,7 +14091,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-418",
+    "id": "community-builders-cluster-414",
     "name": "1 Community Builders in SD, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14197,7 +14118,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-347",
+    "id": "community-builders-cluster-341",
     "name": "1 Community Builders in Senegal",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14224,7 +14145,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-445",
+    "id": "community-builders-cluster-442",
     "name": "1 Community Builders in Shanghai, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14251,7 +14172,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-297",
+    "id": "community-builders-cluster-294",
     "name": "1 Community Builders in Sichuan, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14278,7 +14199,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-454",
+    "id": "community-builders-cluster-451",
     "name": "1 Community Builders in Sichuan, China",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14294,18 +14215,18 @@
     "sampleBuilders": [
       {
         "name": "Tian Deng",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ecg1CJ9D233XiXhvGwd3LXcenj.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KOjCTlWBOxuekpePIK1pwStDSu.webp"
       }
     ],
     "ledBy": [
       {
         "name": "Tian Deng",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/3Ecg1CJ9D233XiXhvGwd3LXcenj.webp"
+        "imageUrl": "https://avatars.builderprofile.aws.dev/3KOjCTlWBOxuekpePIK1pwStDSu.webp"
       }
     ]
   },
   {
-    "id": "community-builders-cluster-124",
+    "id": "community-builders-cluster-123",
     "name": "1 Community Builders in Singapore",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14332,7 +14253,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-376",
+    "id": "community-builders-cluster-372",
     "name": "1 Community Builders in Singapore",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14359,7 +14280,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-384",
+    "id": "community-builders-cluster-380",
     "name": "1 Community Builders in Singapore",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14386,7 +14307,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-399",
+    "id": "community-builders-cluster-395",
     "name": "1 Community Builders in SK, Canada",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14413,7 +14334,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-285",
+    "id": "community-builders-cluster-282",
     "name": "1 Community Builders in Slovakia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14440,7 +14361,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-457",
+    "id": "community-builders-cluster-454",
     "name": "1 Community Builders in Slovakia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14467,7 +14388,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-354",
+    "id": "community-builders-cluster-348",
     "name": "1 Community Builders in Slovenia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14494,7 +14415,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-84",
+    "id": "community-builders-cluster-83",
     "name": "1 Community Builders in Spain",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14521,7 +14442,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-113",
+    "id": "community-builders-cluster-112",
     "name": "1 Community Builders in Spain",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14548,7 +14469,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-251",
+    "id": "community-builders-cluster-249",
     "name": "1 Community Builders in Spain",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14575,7 +14496,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-389",
+    "id": "community-builders-cluster-385",
     "name": "1 Community Builders in Spain",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14602,7 +14523,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-415",
+    "id": "community-builders-cluster-411",
     "name": "1 Community Builders in Spain",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14629,7 +14550,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-436",
+    "id": "community-builders-cluster-433",
     "name": "1 Community Builders in Sri Lanka",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14656,7 +14577,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-405",
+    "id": "community-builders-cluster-401",
     "name": "1 Community Builders in Sweden",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14683,7 +14604,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-430",
+    "id": "community-builders-cluster-427",
     "name": "1 Community Builders in Sweden",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14710,7 +14631,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-446",
+    "id": "community-builders-cluster-443",
     "name": "1 Community Builders in Sweden",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14737,7 +14658,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-89",
+    "id": "community-builders-cluster-88",
     "name": "1 Community Builders in Switzerland",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14764,7 +14685,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-201",
+    "id": "community-builders-cluster-199",
     "name": "1 Community Builders in Taiwan",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14791,7 +14712,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-374",
+    "id": "community-builders-cluster-370",
     "name": "1 Community Builders in Telangana, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14818,7 +14739,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-396",
+    "id": "community-builders-cluster-392",
     "name": "1 Community Builders in Telangana, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14845,7 +14766,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-304",
+    "id": "community-builders-cluster-300",
     "name": "1 Community Builders in Togo",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14872,7 +14793,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-160",
+    "id": "community-builders-cluster-159",
     "name": "1 Community Builders in TX, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14899,7 +14820,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-244",
+    "id": "community-builders-cluster-242",
     "name": "1 Community Builders in TX, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14926,7 +14847,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-249",
+    "id": "community-builders-cluster-247",
     "name": "1 Community Builders in TX, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14953,7 +14874,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-400",
+    "id": "community-builders-cluster-396",
     "name": "1 Community Builders in TX, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -14980,7 +14901,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-412",
+    "id": "community-builders-cluster-408",
     "name": "1 Community Builders in TX, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15007,7 +14928,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-388",
+    "id": "community-builders-cluster-384",
     "name": "1 Community Builders in Ukraine",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15034,7 +14955,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-133",
+    "id": "community-builders-cluster-132",
     "name": "1 Community Builders in United Arab Emirates",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15061,7 +14982,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-272",
+    "id": "community-builders-cluster-269",
     "name": "1 Community Builders in United Arab Emirates",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15088,7 +15009,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-366",
+    "id": "community-builders-cluster-361",
     "name": "1 Community Builders in United Arab Emirates",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15115,7 +15036,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-368",
+    "id": "community-builders-cluster-363",
     "name": "1 Community Builders in United Arab Emirates",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15142,7 +15063,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-423",
+    "id": "community-builders-cluster-420",
     "name": "1 Community Builders in United Arab Emirates",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15196,7 +15117,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-220",
+    "id": "community-builders-cluster-218",
     "name": "1 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15223,7 +15144,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-269",
+    "id": "community-builders-cluster-266",
     "name": "1 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15250,7 +15171,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-279",
+    "id": "community-builders-cluster-276",
     "name": "1 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15277,7 +15198,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-306",
+    "id": "community-builders-cluster-302",
     "name": "1 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15304,7 +15225,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-440",
+    "id": "community-builders-cluster-437",
     "name": "1 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15331,7 +15252,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-448",
+    "id": "community-builders-cluster-445",
     "name": "1 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15358,7 +15279,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-463",
+    "id": "community-builders-cluster-460",
     "name": "1 Community Builders in United Kingdom",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15385,34 +15306,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-78",
-    "name": "1 Community Builders in United States",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "United States",
-    "country": "United States",
-    "lat": 43.6211955,
-    "lng": -84.6824346,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 1,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Alex Patterson",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2apLwNa7WPho4JBH0Kfbs9brLx5.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Alex Patterson",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2apLwNa7WPho4JBH0Kfbs9brLx5.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-87",
+    "id": "community-builders-cluster-86",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15439,7 +15333,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-102",
+    "id": "community-builders-cluster-101",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15466,7 +15360,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-127",
+    "id": "community-builders-cluster-126",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15493,34 +15387,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-194",
-    "name": "1 Community Builders in United States",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "United States",
-    "country": "United States",
-    "lat": -41.5000831,
-    "lng": 172.8344077,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 1,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Chiwai Chan",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Chiwai Chan",
-        "imageUrl": "/assets/default-avatar-light-LR35u67I.svg"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-205",
+    "id": "community-builders-cluster-203",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15547,7 +15414,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-213",
+    "id": "community-builders-cluster-211",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15574,7 +15441,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-223",
+    "id": "community-builders-cluster-221",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15601,7 +15468,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-275",
+    "id": "community-builders-cluster-272",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15628,7 +15495,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-291",
+    "id": "community-builders-cluster-288",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15655,7 +15522,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-294",
+    "id": "community-builders-cluster-291",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15682,7 +15549,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-305",
+    "id": "community-builders-cluster-301",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15709,7 +15576,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-308",
+    "id": "community-builders-cluster-304",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15736,7 +15603,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-313",
+    "id": "community-builders-cluster-309",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15763,7 +15630,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-318",
+    "id": "community-builders-cluster-314",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15790,7 +15657,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-342",
+    "id": "community-builders-cluster-336",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15817,7 +15684,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-353",
+    "id": "community-builders-cluster-347",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15844,7 +15711,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-367",
+    "id": "community-builders-cluster-362",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15871,7 +15738,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-371",
+    "id": "community-builders-cluster-366",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15898,7 +15765,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-406",
+    "id": "community-builders-cluster-402",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15925,7 +15792,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-419",
+    "id": "community-builders-cluster-415",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15952,7 +15819,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-438",
+    "id": "community-builders-cluster-435",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -15979,7 +15846,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-455",
+    "id": "community-builders-cluster-452",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16006,7 +15873,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-459",
+    "id": "community-builders-cluster-456",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16033,7 +15900,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-468",
+    "id": "community-builders-cluster-464",
     "name": "1 Community Builders in United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16060,7 +15927,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-119",
+    "id": "community-builders-cluster-118",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16087,7 +15954,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-145",
+    "id": "community-builders-cluster-144",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16114,7 +15981,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-166",
+    "id": "community-builders-cluster-165",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16141,7 +16008,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-188",
+    "id": "community-builders-cluster-187",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16168,7 +16035,34 @@
     ]
   },
   {
-    "id": "community-builders-cluster-248",
+    "id": "community-builders-cluster-232",
+    "name": "1 Community Builders in Unknown",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Unknown",
+    "country": "Unknown",
+    "lat": 39.294076,
+    "lng": 35.2316631,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 1,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Engin Bozaba",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wPnxvPIF8KMaHgzYVVpNbGTyiC.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Engin Bozaba",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2wPnxvPIF8KMaHgzYVVpNbGTyiC.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-246",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16195,7 +16089,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-260",
+    "id": "community-builders-cluster-258",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16222,7 +16116,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-261",
+    "id": "community-builders-cluster-259",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16249,7 +16143,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-316",
+    "id": "community-builders-cluster-312",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16276,7 +16170,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-322",
+    "id": "community-builders-cluster-318",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16303,7 +16197,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-324",
+    "id": "community-builders-cluster-320",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16330,7 +16224,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-346",
+    "id": "community-builders-cluster-340",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16357,7 +16251,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-372",
+    "id": "community-builders-cluster-367",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16384,7 +16278,34 @@
     ]
   },
   {
-    "id": "community-builders-cluster-381",
+    "id": "community-builders-cluster-369",
+    "name": "1 Community Builders in Unknown",
+    "avatarUrl": "",
+    "profileUrl": "",
+    "location": "Unknown",
+    "country": "Unknown",
+    "lat": 24.0002488,
+    "lng": 53.9994829,
+    "tag": "All Builders",
+    "builderType": "Community Builder Cluster",
+    "specialization": "",
+    "builderCount": 1,
+    "clusterOnly": true,
+    "sampleBuilders": [
+      {
+        "name": "Muhammad Umar Amanat",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2waWGnKGhfIBlHmKK1AXauWMxrE.webp"
+      }
+    ],
+    "ledBy": [
+      {
+        "name": "Muhammad Umar Amanat",
+        "imageUrl": "https://avatars.builderprofile.aws.dev/2waWGnKGhfIBlHmKK1AXauWMxrE.webp"
+      }
+    ]
+  },
+  {
+    "id": "community-builders-cluster-377",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16411,7 +16332,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-392",
+    "id": "community-builders-cluster-388",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16438,7 +16359,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-420",
+    "id": "community-builders-cluster-416",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16465,7 +16386,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-458",
+    "id": "community-builders-cluster-455",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16492,7 +16413,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-466",
+    "id": "community-builders-cluster-463",
     "name": "1 Community Builders in Unknown",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16519,34 +16440,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-469",
-    "name": "1 Community Builders in Unknown",
-    "avatarUrl": "",
-    "profileUrl": "",
-    "location": "Unknown",
-    "country": "Unknown",
-    "lat": 30.8124247,
-    "lng": 34.8594762,
-    "tag": "All Builders",
-    "builderType": "Community Builder Cluster",
-    "specialization": "",
-    "builderCount": 1,
-    "clusterOnly": true,
-    "sampleBuilders": [
-      {
-        "name": "Yuval Avidani",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wNAUs4lDTLzMk4802upamAjzcm.webp"
-      }
-    ],
-    "ledBy": [
-      {
-        "name": "Yuval Avidani",
-        "imageUrl": "https://avatars.builderprofile.aws.dev/2wNAUs4lDTLzMk4802upamAjzcm.webp"
-      }
-    ]
-  },
-  {
-    "id": "community-builders-cluster-185",
+    "id": "community-builders-cluster-184",
     "name": "1 Community Builders in Uruguay",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16573,7 +16467,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-209",
+    "id": "community-builders-cluster-207",
     "name": "1 Community Builders in UT, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16600,7 +16494,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-431",
+    "id": "community-builders-cluster-428",
     "name": "1 Community Builders in Uttrakhand, India",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16627,7 +16521,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-380",
+    "id": "community-builders-cluster-376",
     "name": "1 Community Builders in VA, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16654,7 +16548,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-402",
+    "id": "community-builders-cluster-398",
     "name": "1 Community Builders in VIC, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16681,7 +16575,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-382",
+    "id": "community-builders-cluster-378",
     "name": "1 Community Builders in Vietnam",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16708,7 +16602,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-456",
+    "id": "community-builders-cluster-453",
     "name": "1 Community Builders in WA, Australia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16735,7 +16629,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-333",
+    "id": "community-builders-cluster-328",
     "name": "1 Community Builders in WI, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16762,7 +16656,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-267",
+    "id": "community-builders-cluster-264",
     "name": "1 Community Builders in WY, United States",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16789,7 +16683,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-229",
+    "id": "community-builders-cluster-227",
     "name": "1 Community Builders in Zambia",
     "avatarUrl": "",
     "profileUrl": "",
@@ -16816,7 +16710,7 @@
     ]
   },
   {
-    "id": "community-builders-cluster-339",
+    "id": "community-builders-cluster-334",
     "name": "1 Community Builders in Zimbabwe",
     "avatarUrl": "",
     "profileUrl": "",
