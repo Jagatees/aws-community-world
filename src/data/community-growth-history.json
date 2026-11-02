@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-01T08:03:55.266Z",
+  "updatedAt": "2026-11-02T07:12:32.142Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -13402,9 +13402,674 @@
       }
     },
     {
+      "date": "2026-10-27",
+      "source": {
+        "type": "git",
+        "commit": "7f113ca",
+        "subject": "chore: refresh community feeds and insights"
+      },
+      "categories": {
+        "heroes": {
+          "total": 255,
+          "classified": 246,
+          "unclassified": 9,
+          "coveragePercent": 96.5,
+          "regions": {
+            "north-america": 54,
+            "south-america": 13,
+            "europe": 75,
+            "asia": 83,
+            "africa": 6,
+            "oceania": 15
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 255,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "community-builders": {
+          "total": 3039,
+          "classified": 2872,
+          "unclassified": 167,
+          "coveragePercent": 94.5,
+          "regions": {
+            "north-america": 506,
+            "south-america": 257,
+            "europe": 566,
+            "asia": 1182,
+            "africa": 263,
+            "oceania": 98
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 3039,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "user-groups": {
+          "total": 609,
+          "classified": 608,
+          "unclassified": 1,
+          "coveragePercent": 99.8,
+          "regions": {
+            "north-america": 113,
+            "south-america": 98,
+            "europe": 164,
+            "asia": 182,
+            "africa": 33,
+            "oceania": 18
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 609,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "cloud-clubs": {
+          "total": 1023,
+          "classified": 1010,
+          "unclassified": 13,
+          "coveragePercent": 98.7,
+          "regions": {
+            "north-america": 136,
+            "south-america": 118,
+            "europe": 30,
+            "asia": 633,
+            "africa": 88,
+            "oceania": 5
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 1023,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "kiro-events": {
+          "total": 15,
+          "classified": 2,
+          "unclassified": 13,
+          "coveragePercent": 13.3,
+          "regions": {
+            "north-america": 2,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
+          },
+          "changes": {
+            "added": 10,
+            "removed": 0,
+            "net": 10,
+            "retained": 5,
+            "addedByRegion": {
+              "north-america": 1,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 9,
+            "removedUnclassified": 0,
+            "addedItems": [
+              {
+                "name": "AI DevCon",
+                "location": "New York, NY, United States",
+                "country": "United States",
+                "region": "north-america",
+                "url": "https://tessl.io/devcon"
+              },
+              {
+                "name": "Escape from Labyrinth with Kiro",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              },
+              {
+                "name": "Osaka Kiro Meetup",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://jawsug-ai.connpass.com/event/408139/"
+              },
+              {
+                "name": "Ship Happens: Ideate. Build. Ship.",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/"
+              },
+              {
+                "name": "SHPE National Convention",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://shpe.org/engage/events/national-convention/"
+              }
+            ],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        },
+        "community-days": {
+          "total": 38,
+          "classified": 38,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 5,
+            "south-america": 9,
+            "europe": 9,
+            "asia": 10,
+            "africa": 3,
+            "oceania": 2
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 38,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "source": {
+        "type": "git",
+        "commit": "1383a13",
+        "subject": "chore: refresh community feeds and insights"
+      },
+      "categories": {
+        "heroes": {
+          "total": 255,
+          "classified": 246,
+          "unclassified": 9,
+          "coveragePercent": 96.5,
+          "regions": {
+            "north-america": 54,
+            "south-america": 13,
+            "europe": 75,
+            "asia": 83,
+            "africa": 6,
+            "oceania": 15
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 255,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "community-builders": {
+          "total": 3039,
+          "classified": 2872,
+          "unclassified": 167,
+          "coveragePercent": 94.5,
+          "regions": {
+            "north-america": 506,
+            "south-america": 257,
+            "europe": 566,
+            "asia": 1182,
+            "africa": 263,
+            "oceania": 98
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 3039,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "user-groups": {
+          "total": 609,
+          "classified": 608,
+          "unclassified": 1,
+          "coveragePercent": 99.8,
+          "regions": {
+            "north-america": 113,
+            "south-america": 98,
+            "europe": 164,
+            "asia": 182,
+            "africa": 33,
+            "oceania": 18
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 609,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "cloud-clubs": {
+          "total": 1023,
+          "classified": 1010,
+          "unclassified": 13,
+          "coveragePercent": 98.7,
+          "regions": {
+            "north-america": 136,
+            "south-america": 118,
+            "europe": 30,
+            "asia": 633,
+            "africa": 88,
+            "oceania": 5
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 1023,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "kiro-events": {
+          "total": 14,
+          "classified": 2,
+          "unclassified": 12,
+          "coveragePercent": 14.3,
+          "regions": {
+            "north-america": 2,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
+          },
+          "changes": {
+            "added": 0,
+            "removed": 1,
+            "net": -1,
+            "retained": 14,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 1,
+            "addedItems": [],
+            "removedItems": [
+              {
+                "name": "Osaka Kiro Meetup",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://jawsug-ai.connpass.com/event/408139/"
+              }
+            ],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        },
+        "community-days": {
+          "total": 38,
+          "classified": 38,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 5,
+            "south-america": 9,
+            "europe": 9,
+            "asia": 10,
+            "africa": 3,
+            "oceania": 2
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 38,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
       "date": "2026-11-01",
       "source": {
-        "type": "working-tree"
+        "type": "git",
+        "commit": "26fcc10",
+        "subject": "Merge latest main into November community refresh"
       },
       "categories": {
         "heroes": {
@@ -13890,12 +14555,12 @@
             "oceania": 0
           },
           "changes": {
-            "added": 7,
-            "removed": 0,
-            "net": 7,
-            "retained": 5,
+            "added": 0,
+            "removed": 2,
+            "net": -2,
+            "retained": 12,
             "addedByRegion": {
-              "north-america": 1,
+              "north-america": 0,
               "south-america": 0,
               "europe": 0,
               "asia": 0,
@@ -13910,59 +14575,314 @@
               "africa": 0,
               "oceania": 0
             },
-            "addedUnclassified": 6,
-            "removedUnclassified": 0,
-            "addedItems": [
+            "addedUnclassified": 0,
+            "removedUnclassified": 2,
+            "addedItems": [],
+            "removedItems": [
               {
-                "name": "AI DevCon",
-                "location": "New York, NY, United States",
-                "country": "United States",
-                "region": "north-america",
-                "url": "https://tessl.io/devcon"
-              },
-              {
-                "name": "Escape from Labyrinth with Kiro",
+                "name": "Ship Happens: Ideate. Build. Ship.",
                 "location": "Online",
                 "country": "Online",
                 "region": null,
-                "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
+                "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/"
               },
               {
-                "name": "Kiro Office Hours",
+                "name": "SHPE National Convention",
                 "location": "Online",
                 "country": "Online",
                 "region": null,
-                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-              },
-              {
-                "name": "Kiro Office Hours",
-                "location": "Online",
-                "country": "Online",
-                "region": null,
-                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-              },
-              {
-                "name": "Kiro Office Hours",
-                "location": "Online",
-                "country": "Online",
-                "region": null,
-                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-              },
-              {
-                "name": "Kiro Office Hours",
-                "location": "Online",
-                "country": "Online",
-                "region": null,
-                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-              },
-              {
-                "name": "Kiro Office Hours",
-                "location": "Online",
-                "country": "Online",
-                "region": null,
-                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+                "url": "https://shpe.org/engage/events/national-convention/"
               }
             ],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        },
+        "community-days": {
+          "total": 38,
+          "classified": 38,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 5,
+            "south-america": 9,
+            "europe": 9,
+            "asia": 10,
+            "africa": 3,
+            "oceania": 2
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 38,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "source": {
+        "type": "working-tree"
+      },
+      "categories": {
+        "heroes": {
+          "total": 255,
+          "classified": 248,
+          "unclassified": 7,
+          "coveragePercent": 97.3,
+          "regions": {
+            "north-america": 53,
+            "south-america": 14,
+            "europe": 76,
+            "asia": 85,
+            "africa": 6,
+            "oceania": 14
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 255,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "community-builders": {
+          "total": 3041,
+          "classified": 2891,
+          "unclassified": 150,
+          "coveragePercent": 95.1,
+          "regions": {
+            "north-america": 505,
+            "south-america": 259,
+            "europe": 572,
+            "asia": 1189,
+            "africa": 267,
+            "oceania": 99
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 3041,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "user-groups": {
+          "total": 609,
+          "classified": 608,
+          "unclassified": 1,
+          "coveragePercent": 99.8,
+          "regions": {
+            "north-america": 113,
+            "south-america": 98,
+            "europe": 164,
+            "asia": 182,
+            "africa": 33,
+            "oceania": 18
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 609,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "cloud-clubs": {
+          "total": 1626,
+          "classified": 1611,
+          "unclassified": 15,
+          "coveragePercent": 99.1,
+          "regions": {
+            "north-america": 187,
+            "south-america": 187,
+            "europe": 61,
+            "asia": 1019,
+            "africa": 146,
+            "oceania": 11
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 1626,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "kiro-events": {
+          "total": 12,
+          "classified": 2,
+          "unclassified": 10,
+          "coveragePercent": 16.7,
+          "regions": {
+            "north-america": 2,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 12,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
             "removedItems": [],
             "quality": {
               "confidence": "high",
@@ -14026,19 +14946,19 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-11-01",
-      "daysCovered": 217
+      "endDate": "2026-11-02",
+      "daysCovered": 218
     },
     "global": {
       "totalRecords": 5581,
       "classifiedRecords": 5398,
       "coveragePercent": 96.7,
-      "snapshots": 31
+      "snapshots": 34
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-01",
+        "currentDate": "2026-11-02",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 97.3,
@@ -14595,7 +15515,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-01",
+        "currentDate": "2026-11-02",
         "baselineTotal": 2494,
         "currentTotal": 3041,
         "currentCoveragePercent": 95.1,
@@ -15151,7 +16071,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-01",
+        "currentDate": "2026-11-02",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -15708,7 +16628,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-01",
+        "currentDate": "2026-11-02",
         "baselineTotal": 623,
         "currentTotal": 1626,
         "currentCoveragePercent": 99.1,
@@ -16469,7 +17389,7 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-11-01",
+        "currentDate": "2026-11-02",
         "baselineTotal": 17,
         "currentTotal": 12,
         "currentCoveragePercent": 16.7,
@@ -16758,12 +17678,12 @@
         },
         "latestMovement": {
           "date": "2026-11-01",
-          "added": 7,
-          "removed": 0,
-          "net": 7,
-          "retained": 5,
+          "added": 0,
+          "removed": 2,
+          "net": -2,
+          "retained": 12,
           "addedByRegion": {
-            "north-america": 1,
+            "north-america": 0,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
@@ -16778,60 +17698,25 @@
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 6,
-          "removedUnclassified": 0,
-          "addedItems": [
+          "addedUnclassified": 0,
+          "removedUnclassified": 2,
+          "addedItems": [],
+          "removedItems": [
             {
-              "name": "AI DevCon",
-              "location": "New York, NY, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://tessl.io/devcon"
-            },
-            {
-              "name": "Escape from Labyrinth with Kiro",
+              "name": "Ship Happens: Ideate. Build. Ship.",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
+              "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/"
             },
             {
-              "name": "Kiro Office Hours",
+              "name": "SHPE National Convention",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              "url": "https://shpe.org/engage/events/national-convention/"
             }
           ],
-          "removedItems": [],
           "quality": {
             "confidence": "high",
             "comparable": true,
@@ -16843,7 +17728,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-11-01",
+        "currentDate": "2026-11-02",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
