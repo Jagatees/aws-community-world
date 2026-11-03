@@ -1,71 +1,5 @@
 [
   {
-    "id": "builder-event-e590b621-e5ca-3d74-afc1-5b68e2de4939",
-    "name": "Build & Host Static Website on AWS S3",
-    "category": "builder-events",
-    "avatarUrl": "",
-    "profileUrl": "https://builder.aws.com/connect/event/e590b621-e5ca-3d74-afc1-5b68e2de4939",
-    "sourceUrl": "https://builder.aws.com/connect/event/e590b621-e5ca-3d74-afc1-5b68e2de4939",
-    "sourceLabel": "AWS Builder Center",
-    "description": "",
-    "startsAt": "2026-11-02T06:15:00.000Z",
-    "endsAt": "2026-11-02T08:15:00.000Z",
-    "timeZone": "Asia/Katmandu",
-    "eventDate": "2 Nov 2026, 12:00 – 2:00 pm (Asia/Katmandu)",
-    "eventFormat": "In person",
-    "tag": "amazon-s3",
-    "tags": [
-      "amazon-s3"
-    ],
-    "country": "Nepal",
-    "countryCode": "NP",
-    "city": "Janakpur",
-    "location": "Janakpur, Janakpur, Nepal",
-    "lat": 26.7284541,
-    "lng": 85.9249005,
-    "coordinatePrecision": "city",
-    "coordinateSource": "OpenStreetMap / Nominatim",
-    "access": "Public",
-    "ctaLabel": "View event",
-    "organizerAlias": "abhishekkushwaha",
-    "registrationCount": 13,
-    "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
-  },
-  {
-    "id": "builder-event-d9e0ec20-5b64-35e8-a260-4d04caeb88d5",
-    "name": "Hands-on Workshop | AWS Data User Group - Argentina | 02/11/2026",
-    "category": "builder-events",
-    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3KbNveW8dGrjW6uMVUoie0wXjDE/data.webp",
-    "profileUrl": "https://builder.aws.com/connect/event/d9e0ec20-5b64-35e8-a260-4d04caeb88d5",
-    "sourceUrl": "https://builder.aws.com/connect/event/d9e0ec20-5b64-35e8-a260-4d04caeb88d5",
-    "sourceLabel": "AWS Builder Center",
-    "description": "Del transaccional al lakehouse: full-load y CDC\n\nPasar de una base de datos transaccional a un entorno analítico es una necesidad fundacional de las arquitecturas data & AI-driven. En este workshop vamos a construir el primer tramo de una arquitectura lakehouse: un pipeline de ingesta que lleva los datos y sus cambios desde los sistemas operacionales hacia una capa de almacenamiento independiente.\n\n \n\n¿Qué vamos a hacer?\n\nPartimos de Aurora PostgreSQL para implementar la carga inicial y la replicación continua hacia Amazon S3 con AWS DMS. Veremos cómo esta integración genera automáticamente los metadatos en AWS Glue Data Catalog, sin necesidad de crawlers ni procesos adicionales de catalogación, y habilita consultas con Amazon Athena sobre los datos en S3. El objetivo es sentar las bases para el procesamiento y análisis posterior, separando las consultas analíticas de la base que sostiene la operación.\n\n \n\nDocumentación: https://aws.amazon.com/es/blogs/database/create-an-aws-glue-data-catalog-with-aws-dms/",
-    "startsAt": "2026-11-02T21:30:00.000Z",
-    "endsAt": "2026-11-03T00:30:00.000Z",
-    "timeZone": "America/Buenos_Aires",
-    "eventDate": "2 Nov 2026, 6:30 – 9:30 pm (America/Buenos_Aires)",
-    "eventFormat": "In person",
-    "tag": "data",
-    "tags": [
-      "data"
-    ],
-    "country": "Argentina",
-    "countryCode": "AR",
-    "city": "Buenos Aires City",
-    "location": "Buenos Aires City, Buenos Aires Autonomous City, Argentina",
-    "lat": -34.6095579,
-    "lng": -58.3887904,
-    "coordinatePrecision": "city",
-    "coordinateSource": "OpenStreetMap / Nominatim",
-    "access": "Public",
-    "ctaLabel": "View event",
-    "organizerAlias": "almorgante",
-    "registrationCount": 58,
-    "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
-  },
-  {
     "id": "builder-event-43920005-4a66-36d9-87ff-eff1229eb0d5",
     "name": "Architecting for Trust: Resilience & Sovereignty on AWS",
     "category": "builder-events",
@@ -94,9 +28,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "relivnd",
-    "registrationCount": 11,
+    "registrationCount": 15,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-8fb7f689-e033-39e4-950f-1e0f89234e0f",
@@ -127,9 +61,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "fredbrave",
-    "registrationCount": 5,
+    "registrationCount": 11,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-9bfa11c1-977d-3756-8c10-cb62ff6821b1",
@@ -160,9 +94,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "devopswithzack",
-    "registrationCount": 1,
+    "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-78293fc5-d09f-3d7c-91d2-583a3c89ff14",
@@ -193,9 +127,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "ndanukl",
-    "registrationCount": 3,
+    "registrationCount": 5,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-e9e40d00-c060-306a-ab9c-0e8cbdadd03e",
@@ -226,9 +160,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "ralphjs",
-    "registrationCount": 1,
+    "registrationCount": 5,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-1928cd71-54c1-3af7-b487-d8eec33a20f6",
@@ -259,9 +193,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "zizu",
-    "registrationCount": 4,
+    "registrationCount": 5,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-5012f9de-c9ab-36b6-9268-a3e7d9428a33",
@@ -292,9 +226,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "barbex88",
-    "registrationCount": 3,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-47a440fe-7cda-3fbd-b843-5f95aa8dbd97",
@@ -325,9 +259,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "mbladh",
-    "registrationCount": 3,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-4453a425-6938-3a75-af8e-ecd1d53be786",
@@ -358,9 +292,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "kkeles",
-    "registrationCount": 80,
+    "registrationCount": 81,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-ae1e77e4-cbe7-3559-9b3b-2fb75cefe64d",
@@ -391,9 +325,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "margaretvaltierra",
-    "registrationCount": 13,
+    "registrationCount": 18,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-b14d784b-4324-33b8-951b-71e61279c1b1",
@@ -424,9 +358,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "robertoflores",
-    "registrationCount": 4,
+    "registrationCount": 5,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-bc91cafc-fa1d-361b-bea8-e8f4c3576a2d",
@@ -457,9 +391,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "flyingotter",
-    "registrationCount": 2,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-cd1e4f8c-1533-3e02-bd6d-0ede3553b409",
@@ -490,9 +424,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "nirmalpatel008",
-    "registrationCount": 44,
+    "registrationCount": 47,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-9e1b94fa-5389-37fa-aef6-da10ea535aae",
@@ -523,9 +457,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "prisantos",
-    "registrationCount": 14,
+    "registrationCount": 15,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-edc07a1c-0049-30ce-a0fb-303fd3ed55ff",
@@ -556,9 +490,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "derickrodrigues",
-    "registrationCount": 10,
+    "registrationCount": 11,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-805e008a-fbee-3bde-9465-5c1ad0e1bc0c",
@@ -589,9 +523,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "sergiomondragon",
-    "registrationCount": 6,
+    "registrationCount": 7,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-9f5ec0a2-9517-3091-a236-f21bad2e5811",
@@ -622,9 +556,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "megsul",
-    "registrationCount": 27,
+    "registrationCount": 34,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-f84fac54-2b33-36cc-9606-fb1ea8bcfde5",
@@ -655,9 +589,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "megsul",
-    "registrationCount": 17,
+    "registrationCount": 22,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-6835ded9-8563-3717-ae91-4189f188aaca",
@@ -688,9 +622,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rakshachahar",
-    "registrationCount": 15,
+    "registrationCount": 19,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-cf84f182-eac0-3301-905c-6b30f2adc34e",
@@ -721,9 +655,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "megsul",
-    "registrationCount": 14,
+    "registrationCount": 18,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-8d261820-5975-3253-b782-7f0d0f158601",
@@ -754,9 +688,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "haiyin",
-    "registrationCount": 1,
+    "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-afc6e2e4-cc4c-3a4b-8a06-490992079fc5",
@@ -787,9 +721,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "heyiyis",
-    "registrationCount": 10,
+    "registrationCount": 12,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-d4401c2d-59fe-3c41-868f-832d2ee794f8",
@@ -820,9 +754,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "megsul",
-    "registrationCount": 36,
+    "registrationCount": 46,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-70464b97-f2fd-3d7d-85b1-d7c8e302e1f1",
@@ -853,9 +787,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "ogemelody",
-    "registrationCount": 7,
+    "registrationCount": 9,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-7ca600ed-69f4-3079-a0dd-2460c7f3e1c9",
@@ -886,9 +820,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "megsul",
-    "registrationCount": 30,
+    "registrationCount": 34,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-349b3f5c-bf38-3f26-b971-23778703b304",
@@ -919,9 +853,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "barbex88",
-    "registrationCount": 2,
+    "registrationCount": 3,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-ee45fccb-0b8d-3638-9f78-1d015c0523b9",
@@ -952,9 +886,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "sudosubin",
-    "registrationCount": 3,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-faaff241-e5d9-36b8-bc94-f59164cce9a4",
@@ -987,7 +921,7 @@
     "organizerAlias": "marcopiccardo",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-80986010-7ef2-31f1-a36d-2c424bfe5980",
@@ -1018,9 +952,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "ofwonogodwin",
-    "registrationCount": 1,
+    "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-772148ae-c031-3986-83ba-9c0af0f36b6e",
@@ -1053,7 +987,7 @@
     "organizerAlias": "ssantiago7",
     "registrationCount": 1,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-f29b4c2c-73ed-3f1a-a642-4fa108743f3a",
@@ -1086,7 +1020,7 @@
     "organizerAlias": "hamzarshd",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-f2cc3b88-1634-3334-94b5-5528bf7d4323",
@@ -1117,9 +1051,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "gmw",
-    "registrationCount": 3,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-2d5b817a-0fa5-3dca-8f9a-985de1fb30dd",
@@ -1150,9 +1084,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "yashsathe",
-    "registrationCount": 5,
+    "registrationCount": 11,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-12bd0bc7-66bb-3e18-b512-5cead7bc84b6",
@@ -1185,7 +1119,7 @@
     "organizerAlias": "zainamjed",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-e1c5340e-ba50-34ae-adb1-a733f449cc52",
@@ -1216,9 +1150,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "sumama",
-    "registrationCount": 16,
+    "registrationCount": 18,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-15ad56e2-4027-3faf-9c92-faad95d1360e",
@@ -1249,9 +1183,42 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "manish12",
-    "registrationCount": 27,
+    "registrationCount": 29,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
+  },
+  {
+    "id": "builder-event-3b911e0f-b839-3d7a-9746-90a978463639",
+    "name": "AWS re:Invent Watch & Build Party Islamabad 2026",
+    "category": "builder-events",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3LY9dQdnrgzyxZ4eH8JbolgrDXE/ABC_.webp",
+    "profileUrl": "https://builder.aws.com/connect/event/3b911e0f-b839-3d7a-9746-90a978463639",
+    "sourceUrl": "https://builder.aws.com/connect/event/3b911e0f-b839-3d7a-9746-90a978463639",
+    "sourceLabel": "AWS Builder Center",
+    "description": "AWS re:Invent Watch & Build Party Islamabad 2026\n\nFor one day, the AWS community comes together in Islamabad to celebrate AWS re:Invent 2026.\n\nHosted by the AWS Student Builder Group Air University Islamabad and AWS User Group Islamabad, this gathering brings together builders, students, developers, founders, and cloud professionals from across the community.\n\nWhat to expect:\n\n* Expert talks and technical sessions\n* Community discussions on Cloud, AI, Cybersecurity, and Emerging Technologies\n* Networking with students, builders, and industry professionals\n* Interactive activities and community engagement\n* Refreshments for attendees\n* AWS swag and giveaways (subject to availability)\n\nPlease note: Registration does not guarantee participation. Due to limited capacity, applications will be reviewed and selected attendees will receive a confirmation email with event details.",
+    "startsAt": "2026-12-01T08:00:00.000Z",
+    "endsAt": "2026-12-01T12:00:00.000Z",
+    "timeZone": "Asia/Karachi",
+    "eventDate": "1 Dec 2026, 1:00 – 5:00 pm (Asia/Karachi)",
+    "eventFormat": "In person",
+    "tag": "community-events",
+    "tags": [
+      "community-events"
+    ],
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "city": "Islamabad",
+    "location": "Islamabad, Islamabad, Pakistan",
+    "lat": 33.6938118,
+    "lng": 73.0651511,
+    "coordinatePrecision": "city",
+    "coordinateSource": "OpenStreetMap / Nominatim",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "anasriaz",
+    "registrationCount": 0,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-b2c32188-bfe7-30b4-abd9-fe0e70b8a46d",
@@ -1282,9 +1249,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "nwoken",
-    "registrationCount": 3,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-2e17488d-ef3e-3800-ac1a-2b9a729fb760",
@@ -1317,7 +1284,7 @@
     "organizerAlias": "unicorn",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-c8c42bae-19fa-3f02-987a-3b93e52109da",
@@ -1348,9 +1315,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "danieltech",
-    "registrationCount": 0,
+    "registrationCount": 1,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-efdafa9b-a278-32db-bb5d-512a3e48eb99",
@@ -1360,7 +1327,7 @@
     "profileUrl": "https://builder.aws.com/connect/event/efdafa9b-a278-32db-bb5d-512a3e48eb99",
     "sourceUrl": "https://builder.aws.com/connect/event/efdafa9b-a278-32db-bb5d-512a3e48eb99",
     "sourceLabel": "AWS Builder Center",
-    "description": "The year ender event for AWS Student Builder Group - University of Batangas\n\n \n\nThe biggest and largest gathering of builder of the Batangas Province!\n\n \n\n_See you there builders!_",
+    "description": "The year ender event for AWS Student Builder Group - University of Batangas\n\n \n\nThe biggest and largest gathering of builder in the Batangas Province!\n\n \n\n_See you there builders!_",
     "startsAt": "2026-12-02T00:00:00.000Z",
     "endsAt": "2026-12-02T05:00:00.000Z",
     "timeZone": "Asia/Manila",
@@ -1381,9 +1348,42 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "matthewdelgado",
-    "registrationCount": 0,
+    "registrationCount": 1,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
+  },
+  {
+    "id": "builder-event-d1ad4491-dd53-3d07-a083-aaa219ef39a9",
+    "name": "AWS re:Invent Watch & Build Party Jalandhar",
+    "category": "builder-events",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3LCHMWB7qw6EjYKG1GVweCPgcFh/rein.webp",
+    "profileUrl": "https://builder.aws.com/connect/event/d1ad4491-dd53-3d07-a083-aaa219ef39a9",
+    "sourceUrl": "https://builder.aws.com/connect/event/d1ad4491-dd53-3d07-a083-aaa219ef39a9",
+    "sourceLabel": "AWS Builder Center",
+    "description": "🎉 AWS re:Invent Watch & Build Party Jalandhar 2026\n\nBring the energy of AWS re:Invent to Punjab. Join 1,000+ students and early-career builders for a free, full-day, in-person event where we watch the biggest re:Invent announcements together, learn from industry experts, and build hands-on with AWS services.\n\n📅 Date: Friday, 2 December 2026\n🕘 Time: 9:00 AM to 5:00 PM IST\n📍 Venue: Lovely Professional University, Jalandhar, Punjab\n💸 Entry: Free (registration required)\n\n🚀 WHAT TO EXPECT\n\n🎬 re:Invent Keynote Highlights  \nThe biggest launches from re:Invent week in generative AI, compute, data, and developer tooling, screened in the main auditorium with a live host explaining what they mean for you.\n\n🎤 Industry Keynote and Expert Sessions  \nHear from industry speakers and AWS community experts on cloud, AI, and building a career as a developer.\n\n🛠️ Hands-on AWS Build Sprint  \nA 2.5-hour guided workshop with parallel Beginner and Intermediate tracks. Build real things on AWS with mentors beside you.\n\n🏆 GameDay-style Challenge and Quiz  \nCompete in teams, climb the live leaderboard, and win prizes.\n\n💡 Student Project Showcase  \nDemo what you've built and get feedback from experts.\n\n🤝 Expo Zone and Certification Help Desk  \nMeet community groups and sponsors, and get your AWS certification questions answered.\n\n🗓️ SCHEDULE (tentative)  \n9:00 AM: Check-in, badges, expo opens  \n10:00 AM: Welcome, keynote highlights, industry keynote  \n12:00 PM: Lunch, expo, networking  \n1:15 PM: Hands-on build sprint  \n3:45 PM: Project showcase, quiz, prizes  \n5:00 PM: Closing and group photo\n\n🎯 WHO SHOULD ATTEND  \nStudents and early-career builders from LPU and colleges across Punjab, whether you're writing your first line of cloud code or preparing for an AWS certification. All skill levels are welcome.\n\n🎒 WHAT TO BRING\n\n* Your laptop and charger\n* Your college ID card\n* An AWS Builder ID (create one at builder.aws.com before the event)\n* Curiosity and a builder's mindset\n\n📝 REGISTER  \nEarly Bird Registration will start soon !!",
+    "startsAt": "2026-12-02T03:30:00.000Z",
+    "endsAt": "2026-12-02T11:30:00.000Z",
+    "timeZone": "Asia/Calcutta",
+    "eventDate": "2 Dec 2026, 9:00 am – 5:00 pm (Asia/Calcutta)",
+    "eventFormat": "In person",
+    "tag": "reinvent",
+    "tags": [
+      "reinvent"
+    ],
+    "country": "India",
+    "countryCode": "IN",
+    "city": "Phagwara Sub-District",
+    "location": "Phagwara Sub-District, Punjab, India",
+    "lat": 31.25651,
+    "lng": 75.70587,
+    "coordinatePrecision": "venue",
+    "coordinateSource": "AWS Builder Center",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "ashishop",
+    "registrationCount": 9,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-78f82152-7fae-371f-8adb-ad48fa1a8ac9",
@@ -1414,9 +1414,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "nitin8400",
-    "registrationCount": 166,
+    "registrationCount": 172,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-26f2c450-21b9-3b26-973e-f37e04a73b29",
@@ -1447,9 +1447,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "pritamkumar99",
-    "registrationCount": 14,
+    "registrationCount": 19,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-76ab174f-b948-3df2-998f-6586e06b7375",
@@ -1480,9 +1480,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "faaizi",
-    "registrationCount": 6,
+    "registrationCount": 7,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-a0c82f2a-c0cd-3bd0-a0fb-edb2d6d19f03",
@@ -1513,9 +1513,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "mahendranselva",
-    "registrationCount": 11,
+    "registrationCount": 15,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-c77c1cfe-c2e1-3bcb-ad2d-1c6bf998744d",
@@ -1546,9 +1546,42 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "katulubapaul",
-    "registrationCount": 2,
+    "registrationCount": 3,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
+  },
+  {
+    "id": "builder-event-3ba525ee-a52a-3d5b-b61e-85b3f3c92725",
+    "name": "re:Invent Watch&Build Party",
+    "category": "builder-events",
+    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3LYGEEOVSHghTlEUQ18NIoEX45a/1000.webp",
+    "profileUrl": "https://builder.aws.com/connect/event/3ba525ee-a52a-3d5b-b61e-85b3f3c92725",
+    "sourceUrl": "https://builder.aws.com/connect/event/3ba525ee-a52a-3d5b-b61e-85b3f3c92725",
+    "sourceLabel": "AWS Builder Center",
+    "description": "Discover what’s next in cloud and AI — together.\n\nJoin students from across London for a free, beginner-friendly AWS re:Invent Watch & Build Party, hosted by the AWS Student Builder Group at Imperial College London.\n\nWe’re bringing the excitement of re:Invent to London through selected conference highlights, accessible talks and AWS project walkthroughs. Explore new ideas, see how projects come together, and meet fellow students interested in building with technology.\n\nOur planned programme includes:\n\n• re:Invent highlights — watch selected keynote and session content exploring cloud, AI and developer tools.\n\n• Short talks and discussion — explore emerging technologies and what they could mean for your next project.\n\n• AWS project walkthroughs — discover how a real idea becomes a working solution, from the problem and architecture to the AWS services and design decisions behind it.\n\n• Community networking — connect with students and members of the wider AWS community, exchange ideas and find potential collaborators.\n\nWhether you’re exploring AWS for the first time or already working on your own projects, you’re welcome. No previous AWS experience is required, and students from all disciplines can join.\n\nDate: Wednesday, 2 December 2026\nLocation: London — venue to be announced\nEntry: Free\n\nFinal timings, speakers and the full programme will be shared before the event.\n\nCome curious. Leave inspired to build.",
+    "startsAt": "2026-12-02T17:00:00.000Z",
+    "endsAt": "2026-12-02T20:00:00.000Z",
+    "timeZone": "Europe/London",
+    "eventDate": "2 Dec 2026, 5:00 – 8:00 pm (Europe/London)",
+    "eventFormat": "In person",
+    "tag": "reinvent",
+    "tags": [
+      "reinvent"
+    ],
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "city": "London",
+    "location": "London, England, United Kingdom",
+    "lat": 51.5074456,
+    "lng": -0.1277653,
+    "coordinatePrecision": "city",
+    "coordinateSource": "OpenStreetMap / Nominatim",
+    "access": "Public",
+    "ctaLabel": "View event",
+    "organizerAlias": "daisyfang",
+    "registrationCount": 0,
+    "isLoftEvent": false,
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-754ad1dd-4bb4-3429-8aaf-6ea891220b80",
@@ -1579,9 +1612,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "mahendranselva",
-    "registrationCount": 1,
+    "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-6b10f246-dac9-33b3-9ac5-e7a6eb887f55",
@@ -1614,40 +1647,7 @@
     "organizerAlias": "john50",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
-  },
-  {
-    "id": "builder-event-d1ad4491-dd53-3d07-a083-aaa219ef39a9",
-    "name": "AWS re:Invent Watch & Build Party Jalandhar",
-    "category": "builder-events",
-    "avatarUrl": "https://prod-assets.cosmic.aws.dev/a/3LCHMWB7qw6EjYKG1GVweCPgcFh/rein.webp",
-    "profileUrl": "https://builder.aws.com/connect/event/d1ad4491-dd53-3d07-a083-aaa219ef39a9",
-    "sourceUrl": "https://builder.aws.com/connect/event/d1ad4491-dd53-3d07-a083-aaa219ef39a9",
-    "sourceLabel": "AWS Builder Center",
-    "description": "🎉 AWS re:Invent Watch & Build Party Jalandhar 2026\n\nBring the energy of AWS re:Invent to Punjab. Join 1,000+ students and early-career builders for a free, full-day, in-person event where we watch the biggest re:Invent announcements together, learn from industry experts, and build hands-on with AWS services.\n\n📅 Date: Friday, 3 December 2026\n🕘 Time: 9:00 AM to 5:00 PM IST\n📍 Venue: Lovely Professional University, Jalandhar, Punjab\n💸 Entry: Free (registration required)\n\n🚀 WHAT TO EXPECT\n\n🎬 re:Invent Keynote Highlights\nThe biggest launches from re:Invent week in generative AI, compute, data, and developer tooling, screened in the main auditorium with a live host explaining what they mean for you.\n\n🎤 Industry Keynote and Expert Sessions\nHear from industry speakers and AWS community experts on cloud, AI, and building a career as a developer.\n\n🛠️ Hands-on AWS Build Sprint\nA 2.5-hour guided workshop with parallel Beginner and Intermediate tracks. Build real things on AWS with mentors beside you.\n\n🏆 GameDay-style Challenge and Quiz\nCompete in teams, climb the live leaderboard, and win prizes.\n\n💡 Student Project Showcase\nDemo what you've built and get feedback from experts.\n\n🤝 Expo Zone and Certification Help Desk\nMeet community groups and sponsors, and get your AWS certification questions answered.\n\n🗓️ SCHEDULE (tentative)\n9:00 AM: Check-in, badges, expo opens\n10:00 AM: Welcome, keynote highlights, industry keynote\n12:00 PM: Lunch, expo, networking\n1:15 PM: Hands-on build sprint\n3:45 PM: Project showcase, quiz, prizes\n5:00 PM: Closing and group photo\n\n🎯 WHO SHOULD ATTEND\nStudents and early-career builders from LPU and colleges across Punjab, whether you're writing your first line of cloud code or preparing for an AWS certification. All skill levels are welcome.\n\n🎒 WHAT TO BRING\n\n* Your laptop and charger\n* Your college ID card\n* An AWS Builder ID (create one at builder.aws.com before the event)\n* Curiosity and a builder's mindset\n\n📝 REGISTER\nEarly Bird Registration will start soon !!",
-    "startsAt": "2026-12-03T03:30:00.000Z",
-    "endsAt": "2026-12-03T11:30:00.000Z",
-    "timeZone": "Asia/Calcutta",
-    "eventDate": "3 Dec 2026, 9:00 am – 5:00 pm (Asia/Calcutta)",
-    "eventFormat": "In person",
-    "tag": "reinvent",
-    "tags": [
-      "reinvent"
-    ],
-    "country": "India",
-    "countryCode": "IN",
-    "city": "Phagwara Sub-District",
-    "location": "Phagwara Sub-District, Punjab, India",
-    "lat": 31.25651,
-    "lng": 75.70587,
-    "coordinatePrecision": "venue",
-    "coordinateSource": "AWS Builder Center",
-    "access": "Public",
-    "ctaLabel": "View event",
-    "organizerAlias": "ashishop",
-    "registrationCount": 7,
-    "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-314fab12-6494-3cf9-b9ec-719a636b37fc",
@@ -1678,9 +1678,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "kevintuei",
-    "registrationCount": 6,
+    "registrationCount": 7,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-8cb27ad9-ec79-35d9-ad94-b70571cc22af",
@@ -1713,7 +1713,7 @@
     "organizerAlias": "bl4ckf0xk",
     "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-8f995832-9f96-384d-8f08-24f0fa633acb",
@@ -1746,7 +1746,7 @@
     "organizerAlias": "robertoflores",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-be4d1b06-66e0-3703-9ad3-878656e7edad",
@@ -1779,7 +1779,7 @@
     "organizerAlias": "deeppambhar",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-53544195-1771-3878-be6f-cb5b9268f0a8",
@@ -1812,7 +1812,7 @@
     "organizerAlias": "ameliahr",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-46eba4b8-0e57-3ac2-aa3a-095b4249192f",
@@ -1845,7 +1845,7 @@
     "organizerAlias": "hugoj",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-1cfa4e7b-add1-3b7a-9d47-9e111f94d9ba",
@@ -1878,7 +1878,7 @@
     "organizerAlias": "claudiametz",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-6742d275-2349-3ff6-b244-f95df1287612",
@@ -1911,7 +1911,7 @@
     "organizerAlias": "prisantos",
     "registrationCount": 20,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-b7c96054-0434-3801-92c4-ed3b1afedece",
@@ -1944,7 +1944,7 @@
     "organizerAlias": "devibhattarai",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-eec07cf8-f973-3346-a3d3-d69278e4d117",
@@ -1977,7 +1977,7 @@
     "organizerAlias": "yapper",
     "registrationCount": 1,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-c331ca34-6cee-3a40-a2af-519caade7479",
@@ -2010,7 +2010,7 @@
     "organizerAlias": "ofon",
     "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-5cba1da5-4860-3a13-a203-5fbc33ff2b7a",
@@ -2041,9 +2041,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "sohamshelke",
-    "registrationCount": 78,
+    "registrationCount": 89,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-cff8fe09-b7f8-3c0b-8d3b-3e0e9e361f32",
@@ -2074,9 +2074,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "shlokshukla200",
-    "registrationCount": 1,
+    "registrationCount": 4,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-576c3bd5-e54f-3cfc-8b2a-c753d3464179",
@@ -2107,9 +2107,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "basantabc",
-    "registrationCount": 1,
+    "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-6266926c-cbed-3d3c-88d5-dd3e5e36ddd7",
@@ -2142,7 +2142,7 @@
     "organizerAlias": "ofwonogodwin",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-de8a8b6e-f30b-35b9-8284-59eb39b7088b",
@@ -2175,7 +2175,7 @@
     "organizerAlias": "0xdera24",
     "registrationCount": 7,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-88105936-4a6b-3346-9172-2f8ae36b22e2",
@@ -2208,7 +2208,7 @@
     "organizerAlias": "yash5755",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-785bb93a-c5cc-37c1-8aab-d3840effabd9",
@@ -2239,9 +2239,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "atrajnishkumar",
-    "registrationCount": 22,
+    "registrationCount": 25,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-2b665dd8-bdc1-30d2-9412-9306b3120a98",
@@ -2274,7 +2274,7 @@
     "organizerAlias": "donaldraph",
     "registrationCount": 12,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-678555da-1041-337f-979d-7039168c905d",
@@ -2307,7 +2307,7 @@
     "organizerAlias": "yeshwanthlm",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-31417613-763f-3c07-b520-991cffce8b84",
@@ -2340,7 +2340,7 @@
     "organizerAlias": "nileshtheekshana",
     "registrationCount": 2,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-8e0b836b-b68f-3b62-b261-e78c6ffd8685",
@@ -2371,9 +2371,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "villa121",
-    "registrationCount": 2,
+    "registrationCount": 3,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-4e30f835-e5e1-335e-824c-cb6f1d461f43",
@@ -2406,7 +2406,7 @@
     "organizerAlias": "hieunghi",
     "registrationCount": 0,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-05ba58eb-7a94-32e9-80fd-c01cd7aca053",
@@ -2437,9 +2437,9 @@
     "access": "Public",
     "ctaLabel": "View event",
     "organizerAlias": "rajathsais",
-    "registrationCount": 23,
+    "registrationCount": 34,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   },
   {
     "id": "builder-event-fa007ad2-abcc-3dc5-abf9-862337cc82b5",
@@ -2472,6 +2472,6 @@
     "organizerAlias": "0xdera24",
     "registrationCount": 3,
     "isLoftEvent": false,
-    "verifiedAt": "2026-11-02T07:12:32.816Z"
+    "verifiedAt": "2026-11-03T07:32:46.657Z"
   }
 ]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-02T07:12:32.142Z",
+  "updatedAt": "2026-11-03T07:32:46.081Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -14653,7 +14653,7 @@
       }
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "source": {
         "type": "working-tree"
       },
@@ -14847,10 +14847,10 @@
           }
         },
         "kiro-events": {
-          "total": 12,
+          "total": 11,
           "classified": 2,
-          "unclassified": 10,
-          "coveragePercent": 16.7,
+          "unclassified": 9,
+          "coveragePercent": 18.2,
           "regions": {
             "north-america": 2,
             "south-america": 0,
@@ -14861,9 +14861,9 @@
           },
           "changes": {
             "added": 0,
-            "removed": 0,
-            "net": 0,
-            "retained": 12,
+            "removed": 1,
+            "net": -1,
+            "retained": 11,
             "addedByRegion": {
               "north-america": 0,
               "south-america": 0,
@@ -14881,9 +14881,17 @@
               "oceania": 0
             },
             "addedUnclassified": 0,
-            "removedUnclassified": 0,
+            "removedUnclassified": 1,
             "addedItems": [],
-            "removedItems": [],
+            "removedItems": [
+              {
+                "name": "Kiro Office Hours",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              }
+            ],
             "quality": {
               "confidence": "high",
               "comparable": true,
@@ -14946,11 +14954,11 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-11-02",
-      "daysCovered": 218
+      "endDate": "2026-11-03",
+      "daysCovered": 219
     },
     "global": {
-      "totalRecords": 5581,
+      "totalRecords": 5580,
       "classifiedRecords": 5398,
       "coveragePercent": 96.7,
       "snapshots": 34
@@ -14958,7 +14966,7 @@
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-02",
+        "currentDate": "2026-11-03",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 97.3,
@@ -15515,7 +15523,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-02",
+        "currentDate": "2026-11-03",
         "baselineTotal": 2494,
         "currentTotal": 3041,
         "currentCoveragePercent": 95.1,
@@ -16071,7 +16079,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-02",
+        "currentDate": "2026-11-03",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -16628,7 +16636,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-02",
+        "currentDate": "2026-11-03",
         "baselineTotal": 623,
         "currentTotal": 1626,
         "currentCoveragePercent": 99.1,
@@ -17389,14 +17397,14 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-11-02",
+        "currentDate": "2026-11-03",
         "baselineTotal": 17,
-        "currentTotal": 12,
-        "currentCoveragePercent": 16.7,
+        "currentTotal": 11,
+        "currentCoveragePercent": 18.2,
         "periodChange": {
-          "added": 12,
+          "added": 11,
           "removed": 17,
-          "net": -5,
+          "net": -6,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
@@ -17443,13 +17451,6 @@
               "country": "Online",
               "region": null,
               "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
-            },
-            {
-              "name": "Kiro Office Hours",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
             },
             {
               "name": "Kiro Office Hours",
@@ -17677,11 +17678,11 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-11-01",
+          "date": "2026-11-03",
           "added": 0,
-          "removed": 2,
-          "net": -2,
-          "retained": 12,
+          "removed": 1,
+          "net": -1,
+          "retained": 11,
           "addedByRegion": {
             "north-america": 0,
             "south-america": 0,
@@ -17699,22 +17700,15 @@
             "oceania": 0
           },
           "addedUnclassified": 0,
-          "removedUnclassified": 2,
+          "removedUnclassified": 1,
           "addedItems": [],
           "removedItems": [
             {
-              "name": "Ship Happens: Ideate. Build. Ship.",
+              "name": "Kiro Office Hours",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://www.meetup.com/aws-sbg-at-dr-akhilesh-das-gupta-institute-prof-studies/"
-            },
-            {
-              "name": "SHPE National Convention",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://shpe.org/engage/events/national-convention/"
+              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
             }
           ],
           "quality": {
@@ -17728,7 +17722,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-11-02",
+        "currentDate": "2026-11-03",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -18058,10 +18052,10 @@
       }
     },
     "upcoming": {
-      "total": 10,
-      "next30Days": 7,
+      "total": 8,
+      "next30Days": 5,
       "byRegion": {
-        "north-america": 2,
+        "north-america": 1,
         "south-america": 1,
         "europe": 0,
         "asia": 0,
@@ -18069,24 +18063,6 @@
         "oceania": 0
       },
       "items": [
-        {
-          "name": "AI DevCon",
-          "location": "New York, NY, United States",
-          "country": "United States",
-          "region": "north-america",
-          "url": "https://tessl.io/devcon",
-          "category": "kiro-events",
-          "date": "2026-11-02T00:00:00.000Z"
-        },
-        {
-          "name": "Kiro Office Hours",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://discord.gg/kirodotdev?event=1427356508974485664",
-          "category": "kiro-events",
-          "date": "2026-11-02T17:30:00.000Z"
-        },
         {
           "name": "Escape from Labyrinth with Kiro",
           "location": "Online",

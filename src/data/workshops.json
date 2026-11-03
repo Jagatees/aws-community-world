@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-02T07:12:42.308Z",
+  "checkedAt": "2026-11-03T07:32:59.375Z",
   "productCount": 235,
   "services": [
     {
@@ -3625,7 +3625,7 @@
         "it",
         "es"
       ],
-      "updatedAt": "2026-10-08T11:12:47Z",
+      "updatedAt": "2026-11-02T15:01:13Z",
       "createdAt": "2025-09-25T16:01:54Z",
       "sandboxAvailable": false
     },
@@ -3652,9 +3652,11 @@
       "level": "300",
       "durationHours": 3,
       "languages": [
-        "en"
+        "en",
+        "es",
+        "pt"
       ],
-      "updatedAt": "2026-10-23T16:37:39Z",
+      "updatedAt": "2026-11-02T18:29:24Z",
       "createdAt": "2026-06-01T16:49:20Z",
       "sandboxAvailable": false
     },
@@ -4758,7 +4760,7 @@
         "ko",
         "ja"
       ],
-      "updatedAt": "2026-10-26T21:39:07Z",
+      "updatedAt": "2026-11-02T17:37:21Z",
       "createdAt": "2023-01-17T17:01:11Z",
       "sandboxAvailable": false
     },
@@ -5592,7 +5594,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-31T02:21:15Z",
+      "updatedAt": "2026-11-02T15:12:24Z",
       "createdAt": "2021-08-17T09:49:12Z",
       "sandboxAvailable": false
     },
@@ -5729,6 +5731,34 @@
       ],
       "updatedAt": "2026-10-28T11:11:55Z",
       "createdAt": "2025-02-10T20:07:44Z",
+      "sandboxAvailable": false
+    },
+    {
+      "id": "e136cc2e-ecf5-401e-9cf7-8189d25f7573",
+      "title": "Build a stablecoin payment processor using AWS serverless services",
+      "description": "In this Workshop, you will build a stablecoin payment processing system using AWS serverless architecture. Through hands-on labs, you will implement digital asset workflows using AWS Lambda functions, secure critical transaction data with AWS Key Management Service, and leverage Amazon DynamoDB for high-volume payment processing. This allows you to generate digital asset invoices, detect payments, and sweep funds into a secure treasury wallet.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/e136cc2e-ecf5-401e-9cf7-8189d25f7573",
+      "services": [
+        "AWS Lambda",
+        "Amazon DynamoDB",
+        "Amazon EventBridge"
+      ],
+      "serviceIds": [
+        "aws-lambda",
+        "amazon-dynamodb",
+        "amazon-eventbridge"
+      ],
+      "topics": [
+        "Web3",
+        "Blockchain"
+      ],
+      "level": "400",
+      "durationHours": 2,
+      "languages": [
+        "en"
+      ],
+      "updatedAt": "2026-11-02T17:38:14Z",
+      "createdAt": "2025-08-21T18:42:37Z",
       "sandboxAvailable": false
     },
     {
@@ -7585,7 +7615,7 @@
         "ja",
         "fr"
       ],
-      "updatedAt": "2026-10-30T18:01:44Z",
+      "updatedAt": "2026-11-02T16:13:42Z",
       "createdAt": "2025-09-19T09:40:20Z",
       "sandboxAvailable": false
     },
