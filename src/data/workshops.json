@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-03T07:32:59.375Z",
+  "checkedAt": "2026-11-04T07:14:38.388Z",
   "productCount": 235,
   "services": [
     {
@@ -3530,7 +3530,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-22T23:13:14Z",
+      "updatedAt": "2026-11-03T11:11:51Z",
       "createdAt": "2026-05-11T11:37:02Z",
       "sandboxAvailable": false
     },
@@ -5594,7 +5594,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-02T15:12:24Z",
+      "updatedAt": "2026-11-03T10:20:52Z",
       "createdAt": "2021-08-17T09:49:12Z",
       "sandboxAvailable": false
     },
@@ -5787,7 +5787,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-29T07:30:44Z",
+      "updatedAt": "2026-11-03T16:40:52Z",
       "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
@@ -6906,7 +6906,7 @@
     {
       "id": "c770f35f-90a9-4e02-8985-4ef912bddb77",
       "title": "Getting started with AgentCore (Official Workshop)",
-      "description": "Getting started on AgentCore: Let's build an end-to-end use case using Amazon Bedrock AgentCore.",
+      "description": "Getting started on AgentCore: Let's build an end-to-end use case using Amazon Bedrock AgentCore. The workshop currently uses AgentCore CLI V0.30.0. The Migration to Agentcore CLI V1 is in progress. Please do not upgrade your AgentCore CLI version.",
       "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/c770f35f-90a9-4e02-8985-4ef912bddb77",
       "services": [
         "Amazon Bedrock AgentCore"
@@ -6924,7 +6924,7 @@
         "ja",
         "zh"
       ],
-      "updatedAt": "2026-10-29T17:36:28Z",
+      "updatedAt": "2026-11-03T20:57:27Z",
       "createdAt": "2026-03-20T20:07:46Z",
       "sandboxAvailable": true
     },
@@ -7697,7 +7697,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-04T21:41:57Z",
+      "updatedAt": "2026-11-04T06:55:15Z",
       "createdAt": "2024-09-12T13:35:53Z",
       "sandboxAvailable": false
     },
@@ -8005,7 +8005,7 @@
         "de",
         "ko"
       ],
-      "updatedAt": "2026-10-23T19:02:50Z",
+      "updatedAt": "2026-11-03T13:51:30Z",
       "createdAt": "2025-09-01T21:06:27Z",
       "sandboxAvailable": true
     },
@@ -8722,7 +8722,7 @@
       ],
       "updatedAt": "2026-10-27T18:59:44Z",
       "createdAt": "2022-02-23T06:11:42Z",
-      "sandboxAvailable": false
+      "sandboxAvailable": true
     },
     {
       "id": "97978a0e-ccef-4e63-abc8-3df5c2712250",
