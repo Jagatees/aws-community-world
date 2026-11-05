@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { loadStudentGroupMapData } from '../utils/studentGroupData';
 
 const categoryCache = new Map();
 const categoryRequestCache = new Map();
@@ -87,8 +88,11 @@ function normalizeMembers(raw, category) {
 
 async function loadCategoryData(category, loadFullMembers) {
   if (category === 'cloud-clubs' && !loadFullMembers) {
-    const mod = await import('virtual:student-group-summary');
-    return normalizeMembers(mod.default, category);
+    const raw = await loadStudentGroupMapData(
+      () => import('virtual:student-group-summary'),
+      DATA_LOADERS['cloud-clubs']
+    );
+    return normalizeMembers(raw, category);
   }
 
   if (category === 'community-builders' && !loadFullMembers) {
@@ -112,6 +116,11 @@ async function loadCategoryData(category, loadFullMembers) {
  */
 export function useCategory(category, loadFullMembers = false) {
   const [result, setResult] = useState(null);
+  const [attempt, setAttempt] = useState(0);
+  const retry = useCallback(() => {
+    setResult(null);
+    setAttempt(value => value + 1);
+  }, []);
   const enabled = Boolean(category && category !== 'news');
   const cacheKey = `${category}:${loadFullMembers ? 'full' : 'summary'}`;
 
@@ -146,7 +155,7 @@ export function useCategory(category, loadFullMembers = false) {
     return () => {
       cancelled = true;
     };
-  }, [cacheKey, category, enabled, loadFullMembers]);
+  }, [cacheKey, category, enabled, loadFullMembers, attempt]);
 
   // Never hand a new renderer the previous category's members while its data loads.
   // Cached tabs are ready on the first render, without an extra animation-frame delay.
@@ -156,5 +165,6 @@ export function useCategory(category, loadFullMembers = false) {
     members: members ?? currentResult?.members ?? EMPTY_MEMBERS,
     loading: enabled && !members && !currentResult,
     error: currentResult?.error ?? null,
+    retry,
   };
 }

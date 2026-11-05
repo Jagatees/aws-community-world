@@ -321,7 +321,7 @@ export default function App() {
     isListView || isIconView || newOnly || Boolean(searchQuery || selectedTag || selectedRegions.length || selectedCountries.length)
   );
   const loadFullStudentGroups = activeCategory === 'cloud-clubs' && (isListView || isIconView || newOnly || Boolean(searchQuery));
-  const { error, members, loading } = useCategory(showSplash || isInsightsView || isWorkshopsView || isScrapbookView ? null : activeCategory, loadFullCommunityBuilders || loadFullStudentGroups);
+  const { error, members, loading, retry: retryCategory } = useCategory(showSplash || isInsightsView || isWorkshopsView || isScrapbookView ? null : activeCategory, loadFullCommunityBuilders || loadFullStudentGroups);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading && !isListView;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
@@ -1037,7 +1037,11 @@ export default function App() {
             className="px-4 py-2 text-center text-sm"
             style={{ backgroundColor: '#BF0816', color: '#FFFFFF' }}
           >
-            {activeError}
+            <span>{activeError}</span>
+            <div className="mt-2 flex flex-wrap justify-center gap-3">
+              {!isNewsView && <button type="button" className="min-h-11 rounded-lg border border-white/60 px-4 font-semibold" onClick={retryCategory}>Try again</button>}
+              <button type="button" className="min-h-11 rounded-lg border border-white/60 px-4 font-semibold" onClick={() => window.location.reload()}>Reload page</button>
+            </div>
           </div>
         )}
 
@@ -1444,12 +1448,12 @@ export default function App() {
                       fontVariantNumeric: 'tabular-nums',
                     }}
                   >
-                    {hudCount.toLocaleString()}
+                    {error ? '—' : hudCount.toLocaleString()}
                   </div>
                 )}
 
                 <div style={{ color: darkMode ? '#536475' : '#7a9ab8', fontSize: '0.68rem', marginTop: '3px', fontWeight: 500 }}>
-                  {hudSubLabel}
+                  {error ? 'Count unavailable' : hudSubLabel}
                 </div>
               </div>}
 
