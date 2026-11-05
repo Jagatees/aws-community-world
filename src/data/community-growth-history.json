@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-04T07:14:26.619Z",
+  "updatedAt": "2026-11-05T07:42:10.662Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -14953,7 +14953,7 @@
       }
     },
     {
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "source": {
         "type": "working-tree"
       },
@@ -15147,12 +15147,12 @@
           }
         },
         "kiro-events": {
-          "total": 11,
-          "classified": 2,
-          "unclassified": 9,
-          "coveragePercent": 18.2,
+          "total": 9,
+          "classified": 1,
+          "unclassified": 8,
+          "coveragePercent": 11.1,
           "regions": {
-            "north-america": 2,
+            "north-america": 1,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
@@ -15161,9 +15161,9 @@
           },
           "changes": {
             "added": 0,
-            "removed": 0,
-            "net": 0,
-            "retained": 11,
+            "removed": 2,
+            "net": -2,
+            "retained": 9,
             "addedByRegion": {
               "north-america": 0,
               "south-america": 0,
@@ -15173,7 +15173,7 @@
               "oceania": 0
             },
             "removedByRegion": {
-              "north-america": 0,
+              "north-america": 1,
               "south-america": 0,
               "europe": 0,
               "asia": 0,
@@ -15181,9 +15181,24 @@
               "oceania": 0
             },
             "addedUnclassified": 0,
-            "removedUnclassified": 0,
+            "removedUnclassified": 1,
             "addedItems": [],
-            "removedItems": [],
+            "removedItems": [
+              {
+                "name": "AI DevCon",
+                "location": "New York, NY, United States",
+                "country": "United States",
+                "region": "north-america",
+                "url": "https://tessl.io/devcon"
+              },
+              {
+                "name": "Escape from Labyrinth with Kiro",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
+              }
+            ],
             "quality": {
               "confidence": "high",
               "comparable": true,
@@ -15246,19 +15261,19 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-11-04",
-      "daysCovered": 220
+      "endDate": "2026-11-05",
+      "daysCovered": 221
     },
     "global": {
-      "totalRecords": 5580,
-      "classifiedRecords": 5398,
-      "coveragePercent": 96.7,
+      "totalRecords": 5578,
+      "classifiedRecords": 5397,
+      "coveragePercent": 96.8,
       "snapshots": 35
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-04",
+        "currentDate": "2026-11-05",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 97.3,
@@ -15815,7 +15830,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-04",
+        "currentDate": "2026-11-05",
         "baselineTotal": 2494,
         "currentTotal": 3041,
         "currentCoveragePercent": 95.1,
@@ -16371,7 +16386,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-04",
+        "currentDate": "2026-11-05",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -16928,7 +16943,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-04",
+        "currentDate": "2026-11-05",
         "baselineTotal": 623,
         "currentTotal": 1626,
         "currentCoveragePercent": 99.1,
@@ -17689,18 +17704,18 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-11-04",
+        "currentDate": "2026-11-05",
         "baselineTotal": 17,
-        "currentTotal": 11,
-        "currentCoveragePercent": 18.2,
+        "currentTotal": 9,
+        "currentCoveragePercent": 11.1,
         "periodChange": {
-          "added": 11,
+          "added": 9,
           "removed": 17,
-          "net": -6,
+          "net": -8,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
-            "north-america": 2,
+            "north-america": 1,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
@@ -17717,13 +17732,6 @@
           },
           "addedItems": [
             {
-              "name": "AI DevCon",
-              "location": "New York, NY, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://tessl.io/devcon"
-            },
-            {
               "name": "AWS re:Invent 2026",
               "location": "Online",
               "country": "Online",
@@ -17736,13 +17744,6 @@
               "country": "Canada",
               "region": "north-america",
               "url": "https://www.cusec.net/"
-            },
-            {
-              "name": "Escape from Labyrinth with Kiro",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
             },
             {
               "name": "Kiro Office Hours",
@@ -17919,9 +17920,9 @@
         "regionGrowth": {
           "north-america": {
             "start": 4,
-            "current": 2,
-            "net": -2,
-            "growthPercent": -50
+            "current": 1,
+            "net": -3,
+            "growthPercent": -75
           },
           "south-america": {
             "start": 0,
@@ -17963,18 +17964,18 @@
         },
         "mostRepresented": {
           "region": "north-america",
-          "total": 2
+          "total": 1
         },
         "peak": {
           "date": "2026-06-04",
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-11-03",
+          "date": "2026-11-05",
           "added": 0,
-          "removed": 1,
-          "net": -1,
-          "retained": 11,
+          "removed": 2,
+          "net": -2,
+          "retained": 9,
           "addedByRegion": {
             "north-america": 0,
             "south-america": 0,
@@ -17984,7 +17985,7 @@
             "oceania": 0
           },
           "removedByRegion": {
-            "north-america": 0,
+            "north-america": 1,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
@@ -17996,11 +17997,18 @@
           "addedItems": [],
           "removedItems": [
             {
-              "name": "Kiro Office Hours",
+              "name": "AI DevCon",
+              "location": "New York, NY, United States",
+              "country": "United States",
+              "region": "north-america",
+              "url": "https://tessl.io/devcon"
+            },
+            {
+              "name": "Escape from Labyrinth with Kiro",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://discord.gg/kirodotdev?event=1427356508974485664"
+              "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
             }
           ],
           "quality": {
@@ -18014,7 +18022,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-11-04",
+        "currentDate": "2026-11-05",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -18344,8 +18352,8 @@
       }
     },
     "upcoming": {
-      "total": 8,
-      "next30Days": 5,
+      "total": 7,
+      "next30Days": 4,
       "byRegion": {
         "north-america": 1,
         "south-america": 1,
@@ -18355,15 +18363,6 @@
         "oceania": 0
       },
       "items": [
-        {
-          "name": "Escape from Labyrinth with Kiro",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/",
-          "category": "kiro-events",
-          "date": "2026-11-04T18:00:00.000Z"
-        },
         {
           "name": "AWS Community Day Belém",
           "location": "Belém, Brazil",
