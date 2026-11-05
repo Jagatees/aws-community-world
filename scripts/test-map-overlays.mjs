@@ -8,7 +8,7 @@ export class Map {
   constructor() {
     this.handlers = {};
     this.center = { lat: 0, lng: 0 };
-    this.zoom = 3;
+    this.zoom = 12;
     this.projections = 0;
     this.removed = false;
     this.dragRotate = this.touchZoomRotate = { enable() {}, disable() {}, enableRotation() {}, disableRotation() {} };
