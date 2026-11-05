@@ -22,6 +22,7 @@ const SplashScreen = lazy(() => import('./components/SplashScreen'));
 const InsightsDashboard = lazy(() => import('./components/TrendsDashboard'));
 const NewsPanel = lazy(() => import('./components/NewsPanel'));
 const ProfileCard = lazy(() => import('./components/ProfileCard'));
+const StudentGroupProfileCard = lazy(() => import('./components/StudentGroupProfileCard'));
 const TagFilter = lazy(() => import('./components/TagFilter'));
 const KiroAvatarOverlay = lazy(() => import('./components/KiroAvatarOverlay'));
 const ListScene = lazy(() => import('./components/ListScene'));
@@ -319,7 +320,8 @@ export default function App() {
   const loadFullCommunityBuilders = isCommunityBuilderView && (
     isListView || isIconView || newOnly || Boolean(searchQuery || selectedTag || selectedRegions.length || selectedCountries.length)
   );
-  const { error, members, loading } = useCategory(showSplash || isInsightsView || isWorkshopsView || isScrapbookView ? null : activeCategory, loadFullCommunityBuilders);
+  const loadFullStudentGroups = activeCategory === 'cloud-clubs' && (isListView || isIconView || newOnly || Boolean(searchQuery));
+  const { error, members, loading } = useCategory(showSplash || isInsightsView || isWorkshopsView || isScrapbookView ? null : activeCategory, loadFullCommunityBuilders || loadFullStudentGroups);
   const isKiroView = activeCategory === 'kiro-ambassadors' && members.length === 0 && !loading && !isListView;
   const isAwsAmbassadorView = activeCategory === 'aws-ambassadors' && members.length === 0 && !loading && !isListView;
   const { news, loading: newsLoading, error: newsError } = useNews(isNewsView);
@@ -1643,7 +1645,9 @@ export default function App() {
 
         {!isInsightsView && !isWorkshopsView && !isScrapbookView && !isNewsView && !isKiroView && !isAwsAmbassadorView && selectedMember && (
           <Suspense fallback={null}>
-            <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
+            {activeCategory === 'cloud-clubs' ? (
+              <StudentGroupProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />
+            ) : <ProfileCard member={selectedMember} onClose={handleClose} darkMode={darkMode} />}
           </Suspense>
         )}
 

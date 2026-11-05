@@ -85,8 +85,13 @@ function normalizeMembers(raw, category) {
   }));
 }
 
-async function loadCategoryData(category, loadFullCommunityBuilders) {
-  if (category === 'community-builders' && !loadFullCommunityBuilders) {
+async function loadCategoryData(category, loadFullMembers) {
+  if (category === 'cloud-clubs' && !loadFullMembers) {
+    const mod = await import('virtual:student-group-summary');
+    return normalizeMembers(mod.default, category);
+  }
+
+  if (category === 'community-builders' && !loadFullMembers) {
     const mod = await import('../data/community-builders-clusters.json');
     return normalizeMembers(mod.default, category);
   }
@@ -102,13 +107,13 @@ async function loadCategoryData(category, loadFullCommunityBuilders) {
  * Loads community member data for the given category key.
  *
  * @param {import('../types').CategoryKey} category
- * @param {boolean} loadFullCommunityBuilders
+ * @param {boolean} loadFullMembers
  * @returns {{ members: import('../types').Member[], loading: boolean, error: string|null }}
  */
-export function useCategory(category, loadFullCommunityBuilders = false) {
+export function useCategory(category, loadFullMembers = false) {
   const [result, setResult] = useState(null);
   const enabled = Boolean(category && category !== 'news');
-  const cacheKey = `${category}:${loadFullCommunityBuilders ? 'full' : 'summary'}`;
+  const cacheKey = `${category}:${loadFullMembers ? 'full' : 'summary'}`;
 
   useEffect(() => {
     if (!enabled || categoryCache.has(cacheKey)) return;
@@ -117,7 +122,7 @@ export function useCategory(category, loadFullCommunityBuilders = false) {
 
     let request = categoryRequestCache.get(cacheKey);
     if (!request) {
-      request = loadCategoryData(category, loadFullCommunityBuilders).then((normalized) => {
+      request = loadCategoryData(category, loadFullMembers).then((normalized) => {
         categoryCache.set(cacheKey, normalized);
         categoryRequestCache.delete(cacheKey);
         return normalized;
@@ -141,7 +146,7 @@ export function useCategory(category, loadFullCommunityBuilders = false) {
     return () => {
       cancelled = true;
     };
-  }, [cacheKey, category, enabled, loadFullCommunityBuilders]);
+  }, [cacheKey, category, enabled, loadFullMembers]);
 
   // Never hand a new renderer the previous category's members while its data loads.
   // Cached tabs are ready on the first render, without an extra animation-frame delay.

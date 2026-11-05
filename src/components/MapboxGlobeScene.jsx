@@ -6,6 +6,8 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 import { createPortraitFallback, createPortraitGroupAvatar, getMapboxPortraitSeparation, getPortraitGroupCount, PORTRAIT_GROUP_CATEGORIES } from '../utils/portraitGroupMarker';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
+import { clusterMapLocations, createAreaClusterElement } from '../utils/mapClusters';
+import { useMapClusterStep } from '../hooks/useMapClusterStep';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -68,6 +70,7 @@ function toVector(lat, lng) {
 }
 
 function createClusterElement(cluster, { category, color, darkMode, separation, onClick }) {
+  if (cluster.isApproximate) return createAreaClusterElement(cluster, { color, darkMode, onClick });
   const communityDay = cluster.members.find((member) => member.category === 'community-days');
   const userGroup = cluster.members.find((member) => member.category === 'user-groups');
   const singleMember = cluster.members.length === 1 ? cluster.members[0] : null;
@@ -602,12 +605,7 @@ export default function MapboxGlobeScene({
     onMarkerClickRef.current = onMarkerClick;
   }, [onMarkerClick]);
 
-  const clusters = useMemo(
-    () => category === 'community-days' && communityDaysExpanded
-      ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMembersByCoordinates(members),
-    [members, category, communityDaysExpanded]
-  );
+  const sourceLocations = useMemo(() => clusterMembersByCoordinates(members), [members]);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current || !mapEnabled) return;
@@ -678,13 +676,21 @@ export default function MapboxGlobeScene({
       cleanupResize();
       resizeObserver.disconnect();
       markersRef.current.forEach(({ element }) => element?.remove());
-      countrySpotlightRef.current.forEach(({ element }) => element.remove());
+      countrySpotlightRef.current.forEach(({ element }) => element?.remove());
       markersRef.current = [];
       countrySpotlightRef.current = [];
       map.remove();
       mapRef.current = null;
     };
   }, [mapOptions, countrySpotlightActive, darkMode, geoLibreMode, mapEnabled]);
+
+  const clusterStep = useMapClusterStep(mapRef, mapOptions);
+  const clusters = useMemo(
+    () => category === 'community-days' && communityDaysExpanded
+      ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
+      : clusterMapLocations(sourceLocations, clusterStep, category),
+    [members, sourceLocations, clusterStep, category, communityDaysExpanded]
+  );
 
   useEffect(() => {
     const map = mapRef.current;
@@ -743,6 +749,11 @@ export default function MapboxGlobeScene({
           const map = mapRef.current;
           if (!map) return;
 
+          if (cluster.isApproximate) {
+            map.easeTo({ center: [cluster.lng, cluster.lat], zoom: Math.min(12, Math.floor(map.getZoom()) + 2), duration: 650 });
+            return;
+          }
+
           if (getPortraitGroupCount(cluster) > 1 && map.getZoom() < 2.8) {
             map.easeTo({
               center: [cluster.lng, cluster.lat],
@@ -797,61 +808,34 @@ export default function MapboxGlobeScene({
     return () => window.clearInterval(interval);
   }, [category]);
 
+  const spotlightLocations = useMemo(
+    () => clusterMembersByCoordinates(countrySpotlight?.members ?? []),
+    [countrySpotlight?.members]
+  );
+  const spotlightClusters = useMemo(
+    () => clusterMapLocations(spotlightLocations, clusterStep, 'cloud-clubs'),
+    [spotlightLocations, clusterStep]
+  );
+
   useEffect(() => {
-    const overlay = overlayRef.current;
     const map = mapRef.current;
-    if (!overlay || !map) return;
+    if (!map || !countrySpotlightActive) return;
+    applyMapbox3dTreatment(map);
+    const { center, zoom, pitch, bearing } = mapOptions;
+    map.flyTo({ center, zoom, pitch, bearing, duration: 1700, essential: true });
+  }, [countrySpotlightActive, countrySpotlight?.nonce, mapOptions]);
 
-    countrySpotlightRef.current.forEach(({ element }) => element.remove());
-    countrySpotlightRef.current = [];
-
-    const members = countrySpotlight?.members ?? [];
-    if (!countrySpotlight?.nonce || category !== 'cloud-clubs' || members.length === 0) return;
-
-    const createSpotlightElements = () => {
-      countrySpotlightRef.current.forEach(({ element }) => element.remove());
-      countrySpotlightRef.current = members.map((member, index) => {
-        const element = createCountrySpotlightElement(member, index, darkMode);
-        element.onclick = (event) => {
-          event.stopPropagation();
-          onMarkerClickRef.current(member);
-        };
-        overlay.appendChild(element);
-        return { member, element, index };
-      });
-    };
-
-    const flyIntoCountry = () => {
-      applyMapbox3dTreatment(map);
-      createSpotlightElements();
-      map.flyTo({
-        center: [countrySpotlight.center.lng, countrySpotlight.center.lat],
-        zoom: countrySpotlight.zoom,
-        pitch: countrySpotlight.pitch,
-        bearing: countrySpotlight.bearing,
-        duration: 1700,
-        essential: true,
-      });
-    };
-
-    flyIntoCountry();
-
+  useEffect(() => {
+    countrySpotlightRef.current.forEach(({ element }) => element?.remove());
+    countrySpotlightRef.current = countrySpotlightActive
+      ? spotlightClusters.map((cluster, index) => ({ cluster, index, element: null }))
+      : [];
+    mapRef.current?.triggerRepaint();
     return () => {
-      countrySpotlightRef.current.forEach(({ element }) => element.remove());
+      countrySpotlightRef.current.forEach(({ element }) => element?.remove());
       countrySpotlightRef.current = [];
     };
-  }, [
-    category,
-    countrySpotlight?.bearing,
-    countrySpotlight?.center?.lat,
-    countrySpotlight?.center?.lng,
-    countrySpotlight?.members,
-    countrySpotlight?.nonce,
-    countrySpotlight?.pitch,
-    countrySpotlight?.zoom,
-    darkMode,
-    mapOptions,
-  ]);
+  }, [countrySpotlightActive, spotlightClusters, darkMode, mapOptions]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -921,16 +905,41 @@ export default function MapboxGlobeScene({
         if (!element.isConnected) overlay.appendChild(element);
       });
 
-      countrySpotlightRef.current.forEach(({ member, element, index }) => {
-        const project = map.project([member.lng, member.lat]);
-        const heightOffset = 120 + (index % 3) * 24;
-        const visible = project.x >= -120 && project.x <= width + 120 && project.y >= -180 && project.y <= height + 120;
-
-        element.style.transform = `translate(-50%, -100%) translate(${project.x}px, ${project.y - heightOffset}px)`;
-        element.style.opacity = visible ? '1' : '0';
-        element.style.visibility = visible ? 'visible' : 'hidden';
-        element.style.pointerEvents = visible ? 'auto' : 'none';
-        element.style.zIndex = String(100000 + Math.round(project.y * 1000));
+      countrySpotlightRef.current.forEach((marker) => {
+        const { cluster, index } = marker;
+        const project = map.project([cluster.lng, cluster.lat]);
+        const single = cluster.members.length === 1;
+        const heightOffset = single ? 120 + (index % 3) * 24 : 0;
+        const visible = project.x >= -120 && project.x <= width + 120 && project.y >= -180 && project.y <= height + 180;
+        if (!visible) {
+          // Do not allocate avatars for offscreen campuses, or keep visited
+          // offscreen cards attached to the DOM.
+          marker.element?.remove();
+          return;
+        }
+        if (!marker.element) {
+          const onClick = () => {
+            if (cluster.isApproximate) {
+              map.easeTo({ center: [cluster.lng, cluster.lat], zoom: Math.min(12, Math.floor(map.getZoom()) + 2), duration: 650 });
+              return;
+            }
+            onMarkerClickRef.current(single ? cluster.members[0] : cluster.members);
+          };
+          marker.element = single
+            ? createCountrySpotlightElement(cluster.members[0], index, darkMode)
+            : createClusterElement(cluster, { category: 'cloud-clubs', color: '#BF0816', darkMode, onClick });
+          if (single) marker.element.onclick = (event) => { event.stopPropagation(); onClick(); };
+        }
+        const { element } = marker;
+        const x = project.x.toFixed(1);
+        const y = (project.y - heightOffset).toFixed(1);
+        if (marker.x !== x || marker.y !== y) {
+          element.style.transform = `translate(-50%, ${single ? '-100%' : '-50%'}) translate(${x}px, ${y}px)`;
+          element.style.zIndex = String(100000 + Math.round(project.y * 1000));
+          marker.x = x;
+          marker.y = y;
+        }
+        if (!element.isConnected) overlay.appendChild(element);
       });
     };
 

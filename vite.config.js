@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { studentGroupSummaryPlugin } from './scripts/student-group-summary.mjs'
 import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
 import tailwindcss from '@tailwindcss/vite'
@@ -43,6 +44,7 @@ export default defineConfig({
   },
   plugins: [
     homeCommunityCounts(),
+    studentGroupSummaryPlugin(),
     tailwindcss(),
     react(),
     babel({ presets: [reactCompilerPreset()] })

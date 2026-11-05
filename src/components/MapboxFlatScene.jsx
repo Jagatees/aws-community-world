@@ -3,6 +3,8 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
+import { clusterMapLocations, createAreaClusterElement } from '../utils/mapClusters';
+import { useMapClusterStep } from '../hooks/useMapClusterStep';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -43,6 +45,7 @@ function getHeatColor(size) {
 }
 
 function createClusterElement(cluster, { color, darkMode, onClick }) {
+  if (cluster.isApproximate) return createAreaClusterElement(cluster, { color, darkMode, onClick });
   const communityDay = cluster.members.find((member) => member.category === 'community-days');
   const userGroup = cluster.members.find((member) => member.category === 'user-groups');
   const singleMember = cluster.members.length === 1 ? cluster.members[0] : null;
@@ -327,12 +330,7 @@ export default function MapboxFlatScene({
     onMarkerClickRef.current = onMarkerClick;
   }, [onMarkerClick]);
 
-  const clusters = useMemo(
-    () => category === 'community-days' && communityDaysExpanded
-      ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMembersByCoordinates(members),
-    [members, category, communityDaysExpanded]
-  );
+  const sourceLocations = useMemo(() => clusterMembersByCoordinates(members), [members]);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current || !TOKEN) return;
@@ -402,6 +400,14 @@ export default function MapboxFlatScene({
     };
   }, []);
 
+  const clusterStep = useMapClusterStep(mapRef, TOKEN);
+  const clusters = useMemo(
+    () => category === 'community-days' && communityDaysExpanded
+      ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
+      : clusterMapLocations(sourceLocations, clusterStep, category),
+    [members, sourceLocations, clusterStep, category, communityDaysExpanded]
+  );
+
   useEffect(() => {
     const map = mapRef.current;
     if (!map || category !== 'community-days') return undefined;
@@ -456,6 +462,11 @@ export default function MapboxFlatScene({
         onClick: () => {
           const map = mapRef.current;
           if (!map) return;
+
+          if (cluster.isApproximate) {
+            map.easeTo({ center: [cluster.lng, cluster.lat], zoom: Math.min(12, Math.floor(map.getZoom()) + 2), duration: 650 });
+            return;
+          }
 
           if (cluster.members.length > 1 && map.getZoom() < 2.4) {
             map.easeTo({
