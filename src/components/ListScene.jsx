@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { getMemberImage } from '../utils/memberMarkers';
+import { getMemberSearchText } from '../utils/memberSearch';
 import AddToCalendar from './AddToCalendar';
 import NewMemberBadge from './NewMemberBadge';
 
@@ -28,27 +29,6 @@ function getInitials(value = '') {
     .map((part) => part[0])
     .join('')
     .toUpperCase() || 'AWS';
-}
-
-function getSearchText(item) {
-  return [
-    item.name,
-    item.title,
-    item.authorName,
-    item.location,
-    item.tag,
-    item.heroType,
-    item.builderType,
-    item.specialization,
-    item.description,
-    item.organization,
-    item.role,
-    ...(item.tags ?? []),
-    ...(item.ledBy ?? []).map((leader) => leader?.name),
-  ]
-    .filter(Boolean)
-    .join(' ')
-    .toLocaleLowerCase();
 }
 
 function formatDate(value) {
@@ -165,7 +145,7 @@ export default function ListScene({ category, members = [], newsItems = [], load
 
   const filteredItems = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase();
-    const result = normalizedQuery ? items.filter((item) => getSearchText(item).includes(normalizedQuery)) : items;
+    const result = normalizedQuery ? items.filter((item) => getMemberSearchText(item).includes(normalizedQuery)) : items;
     return preserveOrder ? result : [...result].sort((a, b) => (a.name || a.title || '').localeCompare(b.name || b.title || ''));
   }, [items, query, preserveOrder]);
 

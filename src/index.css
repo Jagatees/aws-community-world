@@ -777,6 +777,14 @@ body {
   font-size: 0.76rem;
 }
 
+/* These fields provide their own accessible clear button. */
+.directory-search input::-webkit-search-cancel-button,
+.mobile-directory-search input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
 .directory-search input::placeholder,
 .mobile-directory-search input::placeholder {
   color: currentColor;

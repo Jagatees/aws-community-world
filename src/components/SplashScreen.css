@@ -3,6 +3,29 @@
   padding-block: 2rem;
 }
 
+.home-section-trigger { pointer-events: auto; }
+.home-section-trigger.mobile-home__headline-mode { min-height: 44px; align-items: center; }
+.home-section-trigger.splash-section-switch::after { content: 'Click to switch'; }
+[data-home-section] { --home-section-accent: #ff9900; }
+[data-home-section='scrapbook'] { --home-section-accent: #f3a7ba; }
+[data-home-section='insights'] { --home-section-accent: #62d9e9; }
+[data-home-section='experimental'] { --home-section-accent: #b7a3ff; }
+.home-section-intro { max-width: 27rem; margin-bottom: 2rem; }
+.home-section-intro > p { color: #d5e0e8; font-size: clamp(1.1rem, 1.6vw, 1.4rem); line-height: 1.5; text-wrap: balance; }
+.home-section-features { display: grid; gap: 1.25rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+.home-section-features li { display: flex; align-items: flex-start; gap: .8rem; }
+.home-section-feature-dot { width: 7px; height: 7px; flex-shrink: 0; margin-top: .5rem; border-radius: 50%; background: var(--home-section-accent); }
+.home-section-features strong { color: #f1f5f8; font-size: .95rem; font-weight: 650; line-height: 1.4; }
+.home-section-features p { margin-top: .3rem; color: #9bafbf; font-size: .88rem; line-height: 1.5; }
+.home-section-visual { overflow: hidden; }
+.mobile-home--section .mobile-home__main { grid-template-rows: auto minmax(140px, 1fr) auto auto; gap: clamp(8px, 1.5dvh, 16px); }
+.mobile-home__section-art { min-height: 0; height: 100%; max-height: 340px; width: 100%; align-self: center; }
+.mobile-home--section .mobile-home__enter { align-self: center; margin-bottom: 0; }
+.mobile-home .home-section-features--compact { position: relative; z-index: 2; gap: .55rem; margin: 0; padding: .8rem 1rem; border: 1px solid rgba(116,157,187,.2); border-radius: 16px; background: rgba(5,15,24,.76); }
+.home-section-features--compact li { align-items: center; gap: .65rem; }
+.home-section-features--compact strong { font-size: .76rem; font-weight: 550; }
+.home-section-features--compact .home-section-feature-dot { width: 5px; height: 5px; margin: 0; }
+
 .splash-summary > * {
   flex-shrink: 0;
 }

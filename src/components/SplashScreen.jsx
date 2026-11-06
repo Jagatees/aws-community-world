@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import MobileHomeGlobe from './MobileHomeGlobe';
+import HomeSectionCycle from './HomeSectionCycle';
+import HomeSectionPreview from './HomeSectionPreview';
 import { HOME_COMMUNITY_MARKERS } from '../data/home-community-markers';
 import './SplashScreen.css';
 import kiroEvents from '../data/kiro-events.json';
@@ -25,6 +27,62 @@ function getEventStats() {
     { key: 'builder-lofts', label: 'Builder Lofts', count: communityCounts['builder-lofts'], color: '#FFB454', detail: 'Open & announced locations', excludeFromTotal: true },
     { key: 'news', label: 'News', count: communityCounts.news, color: '#FF9900', detail: 'Latest & trending articles', excludeFromTotal: true },
   ];
+}
+
+const SECTION_PREVIEWS = {
+  workshops: {
+    description: 'Choose an AWS service. Build something hands-on.',
+    action: 'Explore Workshops',
+    features: [
+      ['Find your service', 'Browse workshops by the AWS services you want to learn.'],
+      ['Learn by doing', 'Follow guided labs and try things for yourself.'],
+      ['Build your path', 'Plan your next steps, from first project to deeper skills.'],
+    ],
+    source: 'Hands-on learning from AWS Builder Center',
+  },
+  scrapbook: {
+    description: 'Your community memories, one page at a time.',
+    action: 'Open Scrapbook',
+    features: [
+      ['Make it yours', 'Arrange stickers, photos and notes on your pages.'],
+      ['Collect little moments', 'Celebrate the people and places in your AWS journey.'],
+      ['Keep creating', 'Return to your book and add your next memory.'],
+    ],
+    source: 'A personal scrapbook for your AWS community journey',
+  },
+  insights: {
+    description: 'See how the AWS community grows around the world.',
+    action: 'Explore Insights',
+    features: [
+      ['Explore global reach', 'Discover where community programs are represented.'],
+      ['Compare programs', 'Look across people, groups and locations.'],
+      ['Follow community growth', 'Explore changes through the available snapshots.'],
+    ],
+    source: 'Insights from AWS and community directory snapshots',
+  },
+  experimental: {
+    description: 'A playground for new ways to explore the community.',
+    action: 'Enter Experimental',
+    features: [
+      ['Country Mosaic', 'Discover the community through an interactive country view.'],
+      ['Hero Orbit & Event Reveal', 'Meet familiar faces and explore community events.'],
+      ['Global Infrastructure', 'Explore another side of the AWS world.'],
+    ],
+    source: 'Try the experiments and discover something unexpected',
+  },
+};
+
+function HomeSectionHighlights({ section, compact = false }) {
+  return (
+    <ul className={`home-section-features${compact ? ' home-section-features--compact' : ''}`}>
+      {SECTION_PREVIEWS[section].features.map(([title, description]) => (
+        <li key={title}>
+          <span className="home-section-feature-dot" aria-hidden="true" />
+          <div><strong>{title}</strong>{!compact && <p>{description}</p>}</div>
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 const HOME_GLOBE_ROTATION_SPEED = 0.018;
@@ -371,46 +429,45 @@ function OrbitGlobe({ isEvents }) {
 
 function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) {
   const isEvents = activeSection === 'events';
+  const content = SECTION_PREVIEWS[activeSection];
+  const isGlobe = !content;
   const stats = isEvents ? getEventStats() : COMMUNITY_STATS;
   const total = stats.reduce((sum, stat) => sum + (stat.excludeFromTotal ? 0 : stat.count), 0);
 
   return (
     <section
-      className={`mobile-home${exiting ? ' mobile-home--exiting' : ''}`}
+      className={`mobile-home${content ? ' mobile-home--section' : ''}${exiting ? ' mobile-home--exiting' : ''}`}
       aria-labelledby="mobile-home-title"
+      data-home-section={activeSection}
     >
       <div className="mobile-home__ambient" aria-hidden="true" />
 
       <main className="mobile-home__main">
-        <div className="mobile-home__globe-stage">
+        {isGlobe && <div className="mobile-home__globe-stage">
           <MobileHomeGlobe isEvents={isEvents} />
-        </div>
+        </div>}
 
         <div className="mobile-home__copy">
           <span className="mobile-home__eyebrow">AWS</span>
           <h1 id="mobile-home-title">
-            <button
-              type="button"
-              className="mobile-home__headline-mode"
-              onClick={() => onSectionChange?.(isEvents ? 'community' : 'events')}
-              aria-label={`Switch to ${isEvents ? 'Community' : 'Events'} Globe`}
-            >
-              <span className="mobile-home__click-hint" aria-hidden="true">Click me</span>
-              {isEvents ? 'Event' : 'Community'}
-            </button>{' '}
-            <span>Globe</span>
+            <HomeSectionCycle mobile activeSection={activeSection} onChange={onSectionChange} />
+            <span> Globe</span>
           </h1>
-          <p>{isEvents
+          <p aria-live="polite">{content ? content.description : isEvents
             ? 'Events, Builder Lofts and community news — all around the world.'
             : 'People, groups and events — all around the world.'}</p>
         </div>
 
+        {content && <div className="mobile-home__section-art">
+          <HomeSectionPreview key={activeSection} section={activeSection} compact stats={COMMUNITY_STATS} />
+        </div>}
+
         <button type="button" className="mobile-home__enter" onClick={onStart}>
-          Enter the Globe
+          {content ? content.action : 'Enter the Globe'}
           <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h11M10 5l4 4-4 4" /></svg>
         </button>
 
-        <section
+        {content ? <HomeSectionHighlights section={activeSection} compact /> : <section
           className={`mobile-home__stats${isEvents ? ' mobile-home__stats--events' : ''}`}
           aria-label={isEvents ? 'Events, spaces and news' : 'Community totals'}
         >
@@ -439,13 +496,14 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
               </div>
             ))}
           </dl>
-        </section>
+        </section>}
       </main>
     </section>
   );
 }
 
 export default function SplashScreen({ onStart, exiting, activeSection = 'community', onSectionChange }) {
+  const [previewSection, setPreviewSection] = useState(activeSection);
   const [showGlobe, setShowGlobe] = useState(false);
   const [useMobileHome] = useState(() => (
     window.matchMedia('(max-width: 767px), (pointer: coarse) and (max-width: 1023px)').matches
@@ -453,9 +511,15 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
   const [allowInteractiveGlobe] = useState(() => (
     !window.matchMedia('(max-width: 767px), (pointer: coarse), (prefers-reduced-motion: reduce)').matches
   ));
-  const isEvents = activeSection === 'events';
+  const isEvents = previewSection === 'events';
+  const content = SECTION_PREVIEWS[previewSection];
   const stats = isEvents ? getEventStats() : COMMUNITY_STATS;
   const total = stats.reduce((sum, stat) => sum + (stat.excludeFromTotal ? 0 : stat.count), 0);
+
+  function enterSelectedSection() {
+    onSectionChange?.(previewSection);
+    onStart();
+  }
 
   useEffect(() => {
     if (exiting || !allowInteractiveGlobe) return undefined;
@@ -484,17 +548,18 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
   if (useMobileHome) {
     return (
       <MobileSplashHome
-        onStart={onStart}
+        onStart={enterSelectedSection}
         exiting={exiting}
-        activeSection={activeSection}
-        onSectionChange={onSectionChange}
+        activeSection={previewSection}
+        onSectionChange={setPreviewSection}
       />
     );
   }
 
   return (
     <div
-      className="absolute inset-0 z-50 flex overflow-hidden aws-shell-bg-dark"
+      className="splash-home absolute inset-0 z-50 flex overflow-hidden aws-shell-bg-dark"
+      data-home-section={previewSection}
       style={{
         transition: 'opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), filter 0.65s cubic-bezier(0.4, 0, 0.2, 1)',
         opacity: exiting ? 0 : 1,
@@ -546,17 +611,8 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
             marginBottom: '1rem',
           }}
         >
-          <button
-            key={activeSection}
-            type="button"
-            className="section-mode-switch splash-section-switch"
-            onClick={() => onSectionChange?.(isEvents ? 'community' : 'events')}
-            aria-label={`Switch to ${isEvents ? 'Community' : 'Event'} Globe`}
-            title={`Switch to ${isEvents ? 'Community' : 'Event'} Globe`}
-          >
-            {isEvents ? 'Event' : 'Community'}
-          </button>{' '}
-          <span>Globe</span>
+          <HomeSectionCycle activeSection={previewSection} onChange={setPreviewSection} />
+          <span> Globe</span>
         </h1>
 
         <div
@@ -569,6 +625,10 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
           }}
         />
 
+        {content ? <div className="home-section-intro" aria-live="polite">
+          <p>{content.description}</p>
+          <HomeSectionHighlights section={previewSection} />
+        </div> : <>
         <div style={{ marginBottom: '1.75rem' }}>
           <div
             style={{
@@ -580,7 +640,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
               letterSpacing: '-0.02em',
             }}
           >
-            <AnimatedNumber key={activeSection} target={total} duration={1600} />
+            <AnimatedNumber key={previewSection} target={total} duration={1600} />
           </div>
           <div
             style={{
@@ -626,9 +686,11 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
           ))}
         </div>
 
+        </>}
+
         <button
           type="button"
-          onClick={onStart}
+          onClick={enterSelectedSection}
           style={{
             backgroundColor: '#FF9900',
             color: '#0F1923',
@@ -654,28 +716,28 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
             e.currentTarget.style.boxShadow = '0 4px 22px rgba(255, 153, 0, 0.38)';
           }}
         >
-          Explore the {isEvents ? 'Event' : 'Community'} Globe
+          {content ? content.action : `Explore the ${isEvents ? 'Event' : 'Community'} Globe`}
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
             <path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
 
         <div className="splash-source">
-          {isEvents ? 'Data from Kiro and AWS Builder Center' : 'Data from AWS and community directories'}
-          {!isEvents && <span>People may appear in more than one program.</span>}
+          {content ? content.source : isEvents ? 'Data from Kiro and AWS Builder Center' : 'Data from AWS and community directories'}
+          {previewSection === 'community' && <span>People may appear in more than one program.</span>}
         </div>
       </div>
 
-      {/* Right panel — orbit globe with real hero avatars */}
+      {/* Lightweight section previews; the selected destination loads on entry. */}
       <div
-        className="relative flex-1"
+        className="home-section-visual relative flex-1"
         style={{
           minWidth: 0,
           transition: 'transform 0.65s cubic-bezier(0.4, 0, 0.2, 1)',
           transform: exiting ? 'scale(1.06)' : 'scale(1)',
         }}
       >
-        {showGlobe && !exiting ? <OrbitGlobe isEvents={isEvents} /> : (
+        {content ? <HomeSectionPreview key={previewSection} section={previewSection} stats={COMMUNITY_STATS} /> : showGlobe && !exiting ? <OrbitGlobe isEvents={isEvents} /> : (
           <div
             aria-hidden="true"
             style={{

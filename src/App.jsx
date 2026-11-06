@@ -16,6 +16,7 @@ import { useCategory } from './hooks/useCategory';
 import { useNews } from './hooks/useNews';
 import communityBuilderMeta from './data/community-builders-meta.json';
 import { getRegionForCountry, REGIONS } from './utils/countryRegions';
+import { getMemberSearchText, getSearchFocusTarget } from './utils/memberSearch';
 import { COUNTRY_SPOTLIGHTS, getCountrySpotlightFromParams } from './config/countrySpotlights';
 
 const SplashScreen = lazy(() => import('./components/SplashScreen'));
@@ -446,28 +447,7 @@ export default function App() {
       const country = getMemberCountry(member);
       if (selectedRegions.length && !selectedRegions.includes(getRegionForCountry(country))) return false;
       if (selectedCountries.length && !selectedCountries.includes(country)) return false;
-      if (normalizedQuery) {
-        const searchableText = [
-          member.name,
-          member.title,
-          member.hero_type,
-          member.location,
-          member.country,
-          member.city,
-          member.address,
-          member.tag,
-          member.tags,
-          member.eventFormat,
-          member.role,
-          member.company,
-          member.organization,
-          member.ledBy,
-          member.offerings,
-          member.recognitionStatus,
-          member.description,
-        ].filter(Boolean).join(' ').toLocaleLowerCase();
-        if (!searchableText.includes(normalizedQuery)) return false;
-      }
+      if (normalizedQuery && !getMemberSearchText(member).includes(normalizedQuery)) return false;
       return true;
     });
   }, [members, newOnly, searchQuery, selectedTag, selectedRegions, selectedCountries, activeCategory, eventFilters]);
@@ -508,6 +488,10 @@ export default function App() {
   }, [activeCategory, countrySpotlight, members]);
 
   const flyToTarget = useMemo(() => {
+    if (searchQuery.trim()) {
+      const searchTarget = getSearchFocusTarget(filteredMembers);
+      if (searchTarget) return searchTarget;
+    }
     if (!selectedCountries.length) return null;
 
     const selectedCountrySet = new Set(selectedCountries);
@@ -522,7 +506,7 @@ export default function App() {
     const lat = matching.reduce((sum, member) => sum + member.lat, 0) / matching.length;
     const lng = matching.reduce((sum, member) => sum + member.lng, 0) / matching.length;
     return { lat, lng };
-  }, [selectedCountries, members]);
+  }, [selectedCountries, members, searchQuery, filteredMembers]);
   const resolvedFlyToTarget = nearMeTarget ?? flyToTarget;
 
   const displayedMembers = isListView || isCalendarView || isIconView ? directoryMembers : filteredMembers;
@@ -741,6 +725,11 @@ export default function App() {
     setGlobeDesign(getResponsiveDefaultGlobeDesign());
   }, [handleCategoryChange]);
 
+  const handleSearchChange = useCallback((query) => {
+    setSearchQuery(query);
+    setNearMeTarget(null);
+  }, []);
+
   const handleRegionChange = useCallback((regions) => {
     setSelectedRegions(regions);
     if (regions.length) {
@@ -943,7 +932,7 @@ export default function App() {
             onCountryChange={setSelectedCountries}
             section={activeSection}
             searchQuery={searchQuery}
-            onSearchChange={setSearchQuery}
+            onSearchChange={handleSearchChange}
           />
         )}
 
@@ -981,7 +970,7 @@ export default function App() {
             onClearExtraFilters={() => setEventFilters(DEFAULT_EVENT_FILTERS)}
             onEventStatusChange={setEventStatus}
             searchQuery={searchQuery}
-            onSearchChange={setSearchQuery}
+            onSearchChange={handleSearchChange}
           />
         )}
 
@@ -1023,7 +1012,7 @@ export default function App() {
             results={directoryMembers}
             filters={eventFilters}
             onChange={(filters) => { setEventFilters(filters); setSelectedMember(null); }}
-            searchQuery={searchQuery} onSearchChange={setSearchQuery}
+            searchQuery={searchQuery} onSearchChange={handleSearchChange}
             selectedTag={selectedTag} onTagChange={setSelectedTag}
             eventStatus={eventStatus} eventStatusCounts={eventStatusCounts}
             onEventStatusChange={(status) => {

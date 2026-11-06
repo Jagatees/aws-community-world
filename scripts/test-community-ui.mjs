@@ -25,6 +25,27 @@ try {
   await page.getByRole('button', { name: 'Directory', exact: true }).click();
   await page.getByRole('heading', { name: 'Student Builder Groups', exact: true }).waitFor();
   assert.equal(await page.locator('article').count(), 60);
+  // A leader's name must survive the main filter before the directory renders.
+  const mainSearch = page.getByRole('searchbox');
+  await mainSearch.fill('  JAGATEES  ');
+  await page.getByText('1 entry', { exact: true }).waitFor();
+  assert.equal(await page.locator('article').count(), 1);
+  await page.locator('article').getByRole('button', { name: 'AWS Student Builder Group at Singapore Institute of Technology', exact: true }).waitFor();
+  await page.locator('article').getByText('Led by Jagatees', { exact: true }).waitFor();
+  await page.getByRole('button', { name: 'Earth', exact: true }).click();
+  const searchMarker = page.locator('[data-globe-marker]:visible');
+  await searchMarker.first().waitFor();
+  assert.equal(await searchMarker.count(), 1, 'The matching Singapore group should be brought to the visible side of Earth');
+  await page.getByRole('button', { name: 'Directory', exact: true }).click();
+  await page.getByText('1 entry', { exact: true }).waitFor();
+  await mainSearch.fill('Singapore Institute of Technology');
+  await page.getByText('1 entry', { exact: true }).waitFor();
+  await mainSearch.fill('Singapore');
+  await page.waitForFunction(() => document.querySelectorAll('article').length > 1);
+  await page.locator('article').getByText('Led by Jagatees', { exact: true }).waitFor();
+  await mainSearch.fill('');
+  await page.waitForFunction(() => document.querySelectorAll('article').length === 60);
+  console.log('Main search finds a real group by leader name, group name and place');
   for (const [tab, heading, dataset] of [['Community Builders', 'Community Builders', 'community-builders'], ['User Groups', 'AWS User Groups', 'user-groups'], ['Heroes', 'AWS Heroes', 'heroes'], ['Community Builders', 'Community Builders', 'community-builders']]) {
     await page.getByRole('tab', { name: tab, exact: true }).click();
     await page.getByRole('heading', { name: heading, exact: true }).waitFor();

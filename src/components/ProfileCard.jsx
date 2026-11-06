@@ -2,6 +2,7 @@ import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import AddToCalendar from './AddToCalendar';
 import NewMemberBadge from './NewMemberBadge';
 import { getMemberBadgeLabel } from '../utils/memberMarkers';
+import { getMemberSearchText } from '../utils/memberSearch';
 import './ProfileCard.css';
 
 const CATEGORY_LABELS = {
@@ -549,8 +550,7 @@ function ClusterListView({ members, darkMode }) {
   const pageSize = 30;
   const matchingMembers = useMemo(() => {
     const search = query.trim().toLocaleLowerCase();
-    return search ? members.filter((member) => [member.name, member.location, member.city, member.country, member.tag, member.heroType, member.builderType, member.specialization, member.organization, member.role, ...getLeaderNames(member)]
-      .filter(Boolean).join(' ').toLocaleLowerCase().includes(search)) : members;
+    return search ? members.filter((member) => getMemberSearchText(member).includes(search)) : members;
   }, [members, query]);
   const currentPage = Math.min(page, Math.max(0, Math.ceil(matchingMembers.length / pageSize) - 1));
   const start = currentPage * pageSize;
