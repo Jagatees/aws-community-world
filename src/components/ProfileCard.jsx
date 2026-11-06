@@ -547,10 +547,9 @@ function ClusterListView({ members, darkMode }) {
   const [page, setPage] = useState(0);
   const listRef = useRef(null);
   const pageSize = 30;
-  const canSearch = members.length >= 10;
   const matchingMembers = useMemo(() => {
     const search = query.trim().toLocaleLowerCase();
-    return search ? members.filter((member) => [member.name, member.location, member.tag, member.heroType, member.builderType, member.specialization, member.organization, member.role, ...getLeaderNames(member)]
+    return search ? members.filter((member) => [member.name, member.location, member.city, member.country, member.tag, member.heroType, member.builderType, member.specialization, member.organization, member.role, ...getLeaderNames(member)]
       .filter(Boolean).join(' ').toLocaleLowerCase().includes(search)) : members;
   }, [members, query]);
   const currentPage = Math.min(page, Math.max(0, Math.ceil(matchingMembers.length / pageSize) - 1));
@@ -569,15 +568,13 @@ function ClusterListView({ members, darkMode }) {
       <h2 className="mb-2 text-center text-base font-bold" style={{ color: nameColor }}>
         {members.length.toLocaleString()} {members.every((member) => member.category === 'user-groups' || member.category === 'cloud-clubs') ? 'groups' : 'members'} in this selection
       </h2>
-      {canSearch && (
-        <label className="mb-2">
-          <span className="sr-only">Search this selection</span>
-          <input type="search" value={query} placeholder="Search names or locations"
-            onChange={(event) => { setQuery(event.target.value); changePage(0); }}
-            className="min-h-11 w-full rounded-lg border px-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-            style={{ background: itemBg, color: nameColor, borderColor: mutedColor, outlineColor: '#FF9900' }} />
-        </label>
-      )}
+      <label className="mb-2">
+        <span className="mb-1 block text-xs font-semibold" style={{ color: mutedColor }}>Search this selection</span>
+        <input type="search" value={query} placeholder="Search names, groups or locations"
+          onChange={(event) => { setQuery(event.target.value); changePage(0); }}
+          className="min-h-11 w-full rounded-lg border px-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ background: itemBg, color: nameColor, borderColor: mutedColor, outlineColor: '#FF9900' }} />
+      </label>
       <ul ref={listRef} className="flex max-h-[min(360px,45dvh)] flex-col gap-2 overflow-y-auto overflow-x-hidden pr-1">
         {shownMembers.map((m) => (
           <li
@@ -629,7 +626,7 @@ function ClusterListView({ members, darkMode }) {
           </li>
         ))}
       </ul>
-      {matchingMembers.length === 0 && <p className="py-5 text-center text-sm" style={{ color: mutedColor }}>No matching names or locations.</p>}
+      {matchingMembers.length === 0 && <p role="status" className="py-5 text-center text-sm" style={{ color: mutedColor }}>No matches in this selection. Try another search.</p>}
       {members.length > pageSize && (
         <nav aria-label="Selection pages" className="mt-3 flex items-center justify-between gap-3 text-sm" style={{ color: nameColor }}>
           <button type="button" disabled={currentPage === 0} onClick={() => changePage(currentPage - 1)} className="min-h-11 rounded border px-3 disabled:opacity-40">Previous</button>
@@ -727,7 +724,7 @@ export default function ProfileCard({ member, onClose, darkMode }) {
           </button>
         </div>
 
-        <div className="profile-card-body" key={isCluster ? 'cluster' : member.id}>
+        <div className="profile-card-body" key={isCluster ? JSON.stringify(member.map((entry) => [entry.category, entry.id])) : member.id}>
           {isCluster ? (
             <ClusterListView members={member} darkMode={darkMode} />
           ) : (

@@ -81,6 +81,30 @@ export default function TabNav({
   const buttonRefs = useRef({});
   const isFirstRender = useRef(true);
 
+  useEffect(() => {
+    const nav = navRef.current;
+    if (!nav) return undefined;
+
+    const scrollTabs = (event) => {
+      // Keep browser zoom and horizontal trackpad gestures native. Only the
+      // category strip translates a regular mouse wheel into sideways scroll.
+      if (event.ctrlKey || event.metaKey || event.defaultPrevented
+        || Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
+      const maxScroll = nav.scrollWidth - nav.clientWidth;
+      if (maxScroll <= 0 || event.deltaY === 0) return;
+      const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? nav.clientWidth : 1;
+      const nextScroll = Math.max(0, Math.min(maxScroll, nav.scrollLeft + event.deltaY * unit));
+      if (nextScroll === nav.scrollLeft) return;
+      event.preventDefault();
+      nav.scrollLeft = nextScroll;
+    };
+
+    // React's delegated wheel listener is passive, so attach directly to allow
+    // consuming vertical wheel movement while the tab strip can scroll.
+    nav.addEventListener('wheel', scrollTabs, { passive: false });
+    return () => nav.removeEventListener('wheel', scrollTabs);
+  }, []);
+
   useLayoutEffect(() => {
     const activeBtn = buttonRefs.current[activeCategory];
     const nav = navRef.current;

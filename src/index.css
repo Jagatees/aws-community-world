@@ -50,6 +50,21 @@
   gap: 0.38rem;
 }
 
+.new-arrivals-reopen {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 35;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
 .new-arrivals-toggle:hover {
   border-color: #ff9900 !important;
   color: #ffb84d;
@@ -316,6 +331,12 @@
 }
 
 @media (max-width: 767px) {
+  .new-arrivals-reopen {
+    top: auto;
+    right: 0.75rem;
+    bottom: calc(9rem + env(safe-area-inset-bottom));
+  }
+
   .new-arrivals-panel {
     top: auto;
     right: 0.75rem;

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { performance } from 'node:perf_hooks';
 import { test } from 'node:test';
-import { buildGlobeClusterLevels, getGlobeClusterLevel, groupGlobeLocations } from '../src/utils/globeClusters.js';
+import { buildEarthClusterLevels, buildGlobeClusterLevels, EARTH_CLUSTER_STEPS, getEarthClusterLevel, getEarthClusterZoomAltitude, getGlobeClusterLevel, groupGlobeLocations } from '../src/utils/globeClusters.js';
 import { clusterMembersByCoordinates } from '../src/utils/mapCoordinates.js';
 import { getRepresentedMemberCount } from '../src/utils/memberCounts.js';
 
@@ -14,7 +14,7 @@ test('large global data is bounded and every person survives each zoom level', (
   }));
   const original = JSON.stringify(members);
   const levels = buildGlobeClusterLevels(members);
-  for (const [index, maxGroups] of [200, 800, 3200].entries()) {
+  for (const [index, maxGroups] of [72, 288, 1152].entries()) {
     assert.ok(levels[index].length <= maxGroups);
     const retained = levels[index].flatMap((cluster) => cluster.members);
     assert.equal(retained.length, members.length);
@@ -56,6 +56,58 @@ test('small filtered sets remain at exact source locations', () => {
   }
 });
 
+test('Earth reveals source locations progressively and preserves every record', () => {
+  const members = Array.from({ length: 4000 }, (_, id) => ({
+    id, lat: -85 + ((id * 0.61803398875) % 1) * 170,
+    lng: -175 + ((id * 0.41421356237) % 1) * 350,
+  }));
+  const before = JSON.stringify(members);
+  const levels = buildEarthClusterLevels(members);
+  assert.equal(levels.length, EARTH_CLUSTER_STEPS.length);
+  for (const [index, level] of levels.entries()) {
+    const retained = level.flatMap((cluster) => cluster.members);
+    assert.equal(retained.length, members.length);
+    assert.equal(new Set(retained).size, members.length);
+    if (index) assert.ok(level.length >= levels[index - 1].length);
+    assert.ok(level.every((cluster) => cluster.members.some((member) =>
+      member.lat === cluster.lat && member.lng === cluster.lng)));
+  }
+  assert.equal(levels.at(-1).length, members.length);
+  assert.equal(JSON.stringify(members), before);
+});
+
+test('Earth detail thresholds resist zoom jitter and clicks always reveal the next level', () => {
+  assert.equal(getEarthClusterLevel(2.5), 0);
+  assert.equal(getEarthClusterLevel(0.1), 5);
+  for (const [index, threshold] of [2.2, 1.5, 1, 0.55, 0.25].entries()) {
+    assert.equal(getEarthClusterLevel(threshold * 0.99, index), index);
+    assert.equal(getEarthClusterLevel(threshold * 1.01, index + 1), index + 1);
+    assert.equal(getEarthClusterLevel(threshold * 0.94, index), index + 1);
+    assert.equal(getEarthClusterLevel(threshold * 1.06, index + 1), index);
+    assert.equal(getEarthClusterLevel(getEarthClusterZoomAltitude(index), index), index + 1);
+  }
+  assert.equal(getEarthClusterLevel(0.1, 0), 5, 'fast zoom can skip multiple levels');
+  assert.equal(getEarthClusterLevel(3, 5), 0);
+});
+
+test('Earth respects exact filtered locations, explicit markers and country-summary drilldowns', () => {
+  const nearby = [{ id: 'one', lat: 1, lng: 1 }, { id: 'two', lat: 1.01, lng: 1.01 }];
+  // Invalid entries must not make an otherwise small filtered result approximate.
+  const invalid = Array.from({ length: 200 }, () => ({ lat: NaN, lng: 1 }));
+  for (const level of buildEarthClusterLevels([...nearby, ...invalid])) {
+    assert.equal(level.length, 2);
+    assert.equal(level[0].isApproximate, undefined);
+  }
+  const members = Array.from({ length: 200 }, (_, id) => ({ id, lat: 1 + id / 10000, lng: 1 }));
+  members.push({ id: 'separate', lat: 1, lng: 1, forceSeparateMarker: true });
+  members.push({ id: 'summary', lat: 2, lng: 2, clusterOnly: true, builderCount: 318 });
+  for (const level of buildEarthClusterLevels(members)) {
+    assert.equal(level.find((cluster) => cluster.forceSeparateMarker).members[0].id, 'separate');
+    assert.deepEqual(level.find((cluster) => cluster.members[0].id === 'summary').members, [members.at(-1)]);
+    assert.equal(getRepresentedMemberCount(level.flatMap((cluster) => cluster.members)), 519);
+  }
+});
+
 test('poles and the antimeridian produce valid cells; invalid coordinates are excluded', () => {
   const pole = { lat: 90, lng: 180, members: [{ id: 'east' }] };
   const groups = groupGlobeLocations([pole, { lat: 90, lng: -180, members: [{ id: 'west' }] }], 18);
@@ -80,6 +132,13 @@ test('real community datasets retain all mapped records at every detail level', 
     if (file === 'heroes') assert.ok(levels[0].length < clusterMembersByCoordinates(mapped).length, 'crowded Hero cities must group at world zoom');
     const buildMs = performance.now() - started;
     for (const level of levels) assert.equal(level.reduce((sum, cluster) => sum + cluster.members.length, 0), mapped.length);
+    const earthLevels = buildEarthClusterLevels(members);
+    for (const level of earthLevels) assert.equal(level.reduce((sum, cluster) => sum + cluster.members.length, 0), mapped.length);
+    if (file === 'cloud-clubs') {
+      assert.ok(earthLevels[0].length < 40, 'Student overview should remain compact as the dataset grows');
+      assert.ok(earthLevels[3].length < clusterMembersByCoordinates(mapped).length / 2,
+        'close zoom must not abruptly expand every Student location');
+    }
     process.stdout.write(`${file}: ${mapped.length} records, ${clusterMembersByCoordinates(mapped).length} exact locations -> ${levels.map((level) => level.length).join('/')} zoom groups; ${buildMs.toFixed(2)}ms build\n`);
   }
 });

@@ -1,9 +1,9 @@
-import { useEffect, useRef, useCallback, useState } from 'react';
+import { useEffect, useRef, useCallback, useMemo, useState } from 'react';
 import Globe from 'globe.gl';
 import { useAutoRotate } from '../hooks/useAutoRotate';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, getRepresentedMemberCount, hasNewMember } from '../utils/memberMarkers';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
-import { groupGlobeLocations } from '../utils/globeClusters';
+import { buildEarthClusterLevels, getEarthClusterLevel, getEarthClusterZoomAltitude } from '../utils/globeClusters';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -22,6 +22,7 @@ const CATEGORY_COLORS = {
 
 const MAX_CLUSTER_AVATARS = 4;
 const MARKER_ALTITUDE = 0.06;
+const MARKER_VIEWPORT_PADDING = 96;
 const MIN_CAMERA_DISTANCE_FACTOR = 1.01;
 const CLASSIC_ZOOM_SPEED = 0.65;
 const CLASSIC_DAMPING_FACTOR = 0.14;
@@ -234,12 +235,19 @@ function createClusterElement(cluster, { category, color, darkMode, portraitClus
       : '0 0 0 8px rgba(255, 153, 0, 0.12)';
   }
 
-  const images = cluster.members
-    .map((member) => ({ src: getMemberImage(member), name: member.name }))
-    .filter((member) => member.src)
-    .slice(0, portraitCluster ? HERO_CLUSTER_PREVIEW_COUNT : MAX_CLUSTER_AVATARS);
+  const numericMarker = cluster.isApproximate || (compactOverview && getPortraitGroupCount(cluster) > 1);
+  const images = [];
+  // Count badges never request portraits, and other markers only need a small
+  // preview. Avoid scanning and allocating images for every member of a group.
+  if (!numericMarker) {
+    for (const member of cluster.members) {
+      const src = getMemberImage(member);
+      if (src) images.push({ src, name: member.name });
+      if (images.length >= (portraitCluster ? HERO_CLUSTER_PREVIEW_COUNT : MAX_CLUSTER_AVATARS)) break;
+    }
+  }
 
-  if (cluster.isApproximate || (compactOverview && getPortraitGroupCount(cluster) > 1)) {
+  if (numericMarker) {
     frame.textContent = getPortraitGroupCount(cluster).toLocaleString();
     frame.style.minWidth = '34px';
     frame.style.minHeight = '34px';
@@ -495,10 +503,6 @@ function createClusterElement(cluster, { category, color, darkMode, portraitClus
   return button;
 }
 
-function getLocationCellDegrees(altitude) {
-  return altitude >= 2.2 ? 18 : altitude >= 1.5 ? 9 : altitude >= 1 ? 4.5 : 0;
-}
-
 function motionDuration(duration) {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : duration;
 }
@@ -514,9 +518,34 @@ export default function ClassicGlobeScene({
 }) {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
+  const onMarkerClickRef = useRef(onMarkerClick);
+  const displayedClustersRef = useRef([]);
+  const syncVisibleMarkersRef = useRef(() => {});
   const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
-  const [locationCellDegrees, setLocationCellDegrees] = useState(18);
+  const [clusterLevel, setClusterLevel] = useState(0);
   const { startLoop, stopLoop, onPointerEvent, pause, resume } = useAutoRotate(globeRef);
+
+  const clusterLevels = useMemo(() => {
+    const levels = category === 'community-days'
+      ? [clusterMembersByCoordinates(members)]
+      : buildEarthClusterLevels(members);
+    return levels.map((level, detailLevel) => level.map((cluster) => ({
+      ...cluster,
+      detailLevel,
+      compactOverview: category !== 'community-days' && members.length > 128 && detailLevel < 4,
+      ...(PORTRAIT_GROUP_CATEGORIES.has(category) ? { heroClusterId: getHeroClusterId(category, cluster) } : {}),
+    })));
+  }, [members, category]);
+  const expandedCommunityDays = useMemo(() => category === 'community-days'
+    ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
+    : [], [members, category]);
+  const currentClusters = category === 'community-days'
+    ? communityDaysExpanded ? expandedCommunityDays : clusterLevels[0]
+    : clusterLevels[clusterLevel];
+
+  useEffect(() => {
+    onMarkerClickRef.current = onMarkerClick;
+  }, [onMarkerClick]);
 
   useEffect(() => {
     if (cardOpen) pause();
@@ -599,12 +628,12 @@ export default function ClassicGlobeScene({
     const globe = globeRef.current;
     const controls = globe?.controls();
     if (!controls) return undefined;
-    let previousLevel;
+    let previousLevel = 0;
     const updateDetail = () => {
-      const nextLevel = getLocationCellDegrees(globe.pointOfView().altitude);
+      const nextLevel = getEarthClusterLevel(globe.pointOfView().altitude, previousLevel);
       if (nextLevel === previousLevel) return;
       previousLevel = nextLevel;
-      setLocationCellDegrees(nextLevel);
+      setClusterLevel(nextLevel);
     };
     controls.addEventListener('change', updateDetail);
     const frame = requestAnimationFrame(updateDetail);
@@ -657,6 +686,7 @@ export default function ClassicGlobeScene({
         globeRef.current
           .width(containerRef.current.clientWidth)
           .height(containerRef.current.clientHeight);
+        syncVisibleMarkersRef.current();
       }
     });
 
@@ -693,54 +723,48 @@ export default function ClassicGlobeScene({
   useEffect(() => {
     if (!globeRef.current || !containerRef.current) return;
 
+    const globe = globeRef.current;
     const container = containerRef.current;
-    const sourceLocations = clusterMembersByCoordinates(members);
-    const displayLocations = members.length > 128 && locationCellDegrees > 0 && category !== 'community-days'
-      ? groupGlobeLocations(sourceLocations, locationCellDegrees)
-      : sourceLocations;
-    const clusters = category === 'community-days' && communityDaysExpanded
-      ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : displayLocations.map((cluster) => (
-        PORTRAIT_GROUP_CATEGORIES.has(category)
-          ? { ...cluster, heroClusterId: getHeroClusterId(category, cluster) }
-          : cluster
-      ));
+    const controls = globe.controls();
     const color = CATEGORY_COLORS[category] ?? '#FF9900';
+    const markerElements = new WeakMap();
+    const markerPositions = new WeakMap();
+    let visibleClusters = [];
+    let visibilityFrame = null;
 
-    globeRef.current
+    const forwardWheel = (event) => {
+      const wheelTarget = container.querySelector('canvas');
+      if (!wheelTarget) return;
+      wheelTarget.dispatchEvent(new WheelEvent('wheel', {
+        deltaX: event.deltaX,
+        deltaY: event.deltaY,
+        deltaMode: event.deltaMode,
+        clientX: event.clientX,
+        clientY: event.clientY,
+        bubbles: true,
+        cancelable: true,
+      }));
+    };
+
+    globe
       .pointsData([])
-      .htmlElementsData(clusters)
+      .htmlElementsData([])
       .htmlLat((point) => point.lat)
       .htmlLng((point) => point.lng)
       .htmlAltitude(() => MARKER_ALTITUDE)
       .htmlTransitionDuration(0)
       .htmlElement((point) => {
-        const forwardWheel = (event) => {
-          const wheelTarget = container.querySelector('canvas');
-          if (!wheelTarget) return;
-          wheelTarget.dispatchEvent(new WheelEvent('wheel', {
-            deltaX: event.deltaX,
-            deltaY: event.deltaY,
-            deltaMode: event.deltaMode,
-            clientX: event.clientX,
-            clientY: event.clientY,
-            bubbles: true,
-            cancelable: true,
-          }));
-        };
-
-        return createClusterElement(point, {
+        if (markerElements.has(point)) return markerElements.get(point);
+        const element = createClusterElement(point, {
           category,
           color,
           darkMode,
           portraitCluster: PORTRAIT_GROUP_CATEGORIES.has(category),
-          compactOverview: members.length > 128 && locationCellDegrees >= 18,
+          compactOverview: point.compactOverview,
           onWheel: forwardWheel,
           onClick: () => {
             if (point.isApproximate) {
-              const altitude = globeRef.current.pointOfView().altitude;
-              const nextAltitude = altitude >= 2.2 ? 1.8 : altitude >= 1.5 ? 1.2 : 0.8;
-              globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: nextAltitude }, motionDuration(600));
+              globe.pointOfView({ lat: point.lat, lng: point.lng, altitude: getEarthClusterZoomAltitude(point.detailLevel) }, motionDuration(600));
               onPointerEvent();
               return;
             }
@@ -749,7 +773,7 @@ export default function ClassicGlobeScene({
               if (altitude > 1.45) {
                 globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.28 }, motionDuration(700));
               } else {
-                onMarkerClick(point.members);
+                onMarkerClickRef.current(point.members);
               }
               onPointerEvent();
               return;
@@ -759,14 +783,79 @@ export default function ClassicGlobeScene({
               onPointerEvent();
               return;
             }
-            globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.8 }, motionDuration(800));
+            globe.pointOfView({ lat: point.lat, lng: point.lng, altitude: Math.min(globe.pointOfView().altitude, 1.8) }, motionDuration(800));
             onPointerEvent();
             const payload = point.members.length === 1 ? point.members[0] : point.members;
-            onMarkerClick(payload);
+            onMarkerClickRef.current(payload);
           },
         });
+        markerElements.set(point, element);
+        return element;
       });
-  }, [members, category, darkMode, onMarkerClick, communityDaysExpanded, locationCellDegrees, onPointerEvent]);
+
+    const updateVisibleMarkers = () => {
+      visibilityFrame = null;
+      if (document.hidden) return;
+      const camera = globe.camera();
+      const cameraPosition = camera.position;
+      const cameraDistance = Math.hypot(cameraPosition.x, cameraPosition.y, cameraPosition.z);
+      const radius = globe.getGlobeRadius();
+      const markerRadius = radius * (1 + MARKER_ALTITUDE);
+      // Raised markers remain visible a little beyond the surface horizon.
+      const horizon = Math.cos(Math.acos(Math.min(1, radius / cameraDistance))
+        + Math.acos(radius / markerRadius));
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+      const nextVisible = [];
+
+      for (const point of displayedClustersRef.current) {
+        let position = markerPositions.get(point);
+        if (!position) {
+          position = globe.getCoords(point.lat, point.lng, MARKER_ALTITUDE);
+          markerPositions.set(point, position);
+        }
+        const cameraDot = position.x * cameraPosition.x + position.y * cameraPosition.y
+          + position.z * cameraPosition.z;
+        // OrbitControls aim at the globe center. At extreme zoom the camera
+        // can sit below raised markers, whose 2D projections would be mirrored.
+        if (cameraDistance * cameraDistance - cameraDot <= camera.near * cameraDistance) continue;
+        const facing = cameraDot / (markerRadius * cameraDistance);
+        if (facing < horizon - 0.000001) continue;
+        const screen = globe.getScreenCoords(point.lat, point.lng, MARKER_ALTITUDE);
+        if (!Number.isFinite(screen.x) || !Number.isFinite(screen.y)
+          || screen.x < -MARKER_VIEWPORT_PADDING || screen.x > width + MARKER_VIEWPORT_PADDING
+          || screen.y < -MARKER_VIEWPORT_PADDING || screen.y > height + MARKER_VIEWPORT_PADDING) continue;
+        nextVisible.push(point);
+      }
+
+      // Camera movement usually changes positions, not the visible set. Let
+      // CSS2D move existing markers without rebuilding its scene or HTML.
+      if (nextVisible.length === visibleClusters.length
+        && nextVisible.every((point, index) => point === visibleClusters[index])) return;
+      visibleClusters = nextVisible;
+      globe.htmlElementsData(nextVisible);
+    };
+    const scheduleVisibleMarkers = () => {
+      if (visibilityFrame !== null || document.hidden) return;
+      visibilityFrame = requestAnimationFrame(updateVisibleMarkers);
+    };
+    syncVisibleMarkersRef.current = scheduleVisibleMarkers;
+    controls?.addEventListener('change', scheduleVisibleMarkers);
+    document.addEventListener('visibilitychange', scheduleVisibleMarkers);
+    scheduleVisibleMarkers();
+
+    return () => {
+      if (visibilityFrame !== null) cancelAnimationFrame(visibilityFrame);
+      controls?.removeEventListener('change', scheduleVisibleMarkers);
+      document.removeEventListener('visibilitychange', scheduleVisibleMarkers);
+      syncVisibleMarkersRef.current = () => {};
+    };
+  }, [clusterLevels, expandedCommunityDays, category, darkMode, onPointerEvent]);
+
+  useEffect(() => {
+    displayedClustersRef.current = currentClusters;
+    syncVisibleMarkersRef.current();
+  }, [currentClusters]);
 
   useEffect(() => {
     if (category !== 'community-days' || !containerRef.current) return undefined;

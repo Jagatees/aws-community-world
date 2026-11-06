@@ -264,6 +264,7 @@ export default function App() {
   const [nearMeError, setNearMeError] = useState(null);
   const [nearMeHover, setNearMeHover] = useState(false);
   const [newOnly, setNewOnly] = useState(routeState.newOnly);
+  const [newArrivalsOpen, setNewArrivalsOpen] = useState(routeState.newOnly);
   const [eventStatus, setEventStatus] = useState(routeState.eventStatus);
   const [eventFilters, setEventFilters] = useState(routeState.eventFilters || DEFAULT_EVENT_FILTERS);
   const [workshopFilters, setWorkshopFilters] = useState(routeState.workshopFilters || DEFAULT_WORKSHOP_FILTERS);
@@ -693,6 +694,7 @@ export default function App() {
     setSelectedCountries([]);
     setCountrySpotlight(null);
     setNewOnly(false);
+    setNewArrivalsOpen(false);
     setEventStatus('all');
     setEventFilters(DEFAULT_EVENT_FILTERS);
     setSearchQuery('');
@@ -792,6 +794,7 @@ export default function App() {
     }
 
     setNewOnly(next);
+    setNewArrivalsOpen(next);
   }, [newOnly]);
 
   const handleLocateNewArrival = useCallback((member) => {
@@ -803,6 +806,7 @@ export default function App() {
 
   const handleCountrySpotlight = useCallback((country) => {
     setNewOnly(false);
+    setNewArrivalsOpen(false);
 
     if (countrySpotlight) {
       setSelectedTag(null);
@@ -871,6 +875,7 @@ export default function App() {
       setDarkMode(nextRouteState.darkMode);
       setNewsPanelOpen(nextRouteState.activeCategory === 'news');
       setNewOnly(nextRouteState.newOnly);
+      setNewArrivalsOpen(nextRouteState.newOnly);
       setEventStatus(nextRouteState.eventStatus);
       setEventFilters(nextRouteState.eventFilters || DEFAULT_EVENT_FILTERS);
       setWorkshopFilters(nextRouteState.workshopFilters || DEFAULT_WORKSHOP_FILTERS);
@@ -1630,17 +1635,28 @@ export default function App() {
               )}
 
               {newOnly && !isListView && !isIconView ? (
-                <Suspense fallback={null}>
+                newArrivalsOpen ? <Suspense fallback={null}>
                   <NewArrivalsPanel
                     category={activeCategory}
                     members={newArrivals}
                     loading={loading}
                     darkMode={darkMode}
-                    onClose={handleNewOnlyToggle}
+                    onClose={() => setNewArrivalsOpen(false)}
                     onLocate={handleLocateNewArrival}
                     onSelect={handleMarkerClick}
                   />
-                </Suspense>
+                </Suspense> : (
+                  <button
+                    type="button"
+                    className="new-arrivals-reopen new-arrivals-toggle"
+                    onClick={() => setNewArrivalsOpen(true)}
+                    aria-label="Show new arrivals list"
+                    style={{ background: viewControlBg, color: viewControlText, borderColor: viewControlBorder, boxShadow: viewControlShadow }}
+                  >
+                    <SparkleIcon size={16} weight="fill" aria-hidden="true" />
+                    Show new arrivals list
+                  </button>
+                )
               ) : null}
             </>
           )}

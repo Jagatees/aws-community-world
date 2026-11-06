@@ -11,15 +11,16 @@ try {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
   await page.goto(`${baseUrl}/?tab=cloud-clubs&view=orbit`);
-  await page.waitForFunction(() => document.querySelectorAll('[data-globe-marker]').length > 20);
+  await page.waitForFunction(() => document.querySelectorAll('[data-globe-marker]').length > 0);
   const worldCount = await page.locator('[data-globe-marker]').count();
-  assert.ok(worldCount < 100, `World view should group 478 source locations, got ${worldCount}`);
+  assert.ok(worldCount < 50, `World view should mount only visible area clusters, got ${worldCount}`);
+  await page.evaluate(() => { window.originalAreaMarker = document.querySelector('[data-globe-marker="area"]'); });
   await page.locator('[data-globe-marker="area"]:visible').first().click();
-  await page.waitForFunction((previous) => document.querySelectorAll('[data-globe-marker]').length > previous, worldCount);
+  await page.waitForFunction(() => !window.originalAreaMarker.isConnected);
   await page.waitForTimeout(1000); // Allow the globe's camera/detail changes to settle.
   const zoomedCount = await page.locator('[data-globe-marker]').count();
-  assert.ok(zoomedCount > worldCount, `Settled zoom should reveal more locations: ${worldCount} → ${zoomedCount}`);
-  console.log(`Earth zoom reveals more locations: ${worldCount} → ${zoomedCount}`);
+  assert.ok(zoomedCount > 0 && zoomedCount < 100, `Settled zoom should retain a bounded visible marker set, got ${zoomedCount}`);
+  console.log(`Earth cluster zoom updates visible locations: ${worldCount} → ${zoomedCount}`);
 
   await page.getByRole('button', { name: 'Directory', exact: true }).click();
   await page.getByRole('heading', { name: 'Student Builder Groups', exact: true }).waitFor();
@@ -31,7 +32,8 @@ try {
     assert.equal(await page.locator('article').count(), 60);
   }
   await page.getByRole('searchbox').fill('zzzz-no-matching-person');
-  await page.getByText('No matching entries', { exact: true }).waitFor();
+  await page.getByText('No entries match “zzzz-no-matching-person”.', { exact: true }).waitFor();
+  assert.equal(await page.locator('article').count(), 0);
   console.log('Category switching, cached data, bounded directory and search pass');
 
   // Exercise the actual popup with a dense cluster, independently of geocoding.
