@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-06T07:38:47.695Z",
+  "updatedAt": "2026-11-07T14:57:40.109Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -15260,7 +15260,7 @@
       }
     },
     {
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "source": {
         "type": "working-tree"
       },
@@ -15454,10 +15454,10 @@
           }
         },
         "kiro-events": {
-          "total": 9,
+          "total": 13,
           "classified": 1,
-          "unclassified": 8,
-          "coveragePercent": 11.1,
+          "unclassified": 12,
+          "coveragePercent": 7.7,
           "regions": {
             "north-america": 1,
             "south-america": 0,
@@ -15467,9 +15467,9 @@
             "oceania": 0
           },
           "changes": {
-            "added": 0,
+            "added": 4,
             "removed": 0,
-            "net": 0,
+            "net": 4,
             "retained": 9,
             "addedByRegion": {
               "north-america": 0,
@@ -15487,9 +15487,38 @@
               "africa": 0,
               "oceania": 0
             },
-            "addedUnclassified": 0,
+            "addedUnclassified": 4,
             "removedUnclassified": 0,
-            "addedItems": [],
+            "addedItems": [
+              {
+                "name": "AI-Native Practitioner Programme (November Cohort)",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://ai.wonderlead.tech/home/"
+              },
+              {
+                "name": "AWS Student Community Day Mexico City",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/"
+              },
+              {
+                "name": "Build a game with Kiro in 30 minutes",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://luma.com/br61ma27"
+              },
+              {
+                "name": "LPC Hacks 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://lpchacks.com"
+              }
+            ],
             "removedItems": [],
             "quality": {
               "confidence": "high",
@@ -15553,19 +15582,19 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-11-06",
-      "daysCovered": 222
+      "endDate": "2026-11-07",
+      "daysCovered": 223
     },
     "global": {
-      "totalRecords": 5578,
+      "totalRecords": 5582,
       "classifiedRecords": 5397,
-      "coveragePercent": 96.8,
+      "coveragePercent": 96.7,
       "snapshots": 36
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-06",
+        "currentDate": "2026-11-07",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 97.3,
@@ -16122,7 +16151,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-06",
+        "currentDate": "2026-11-07",
         "baselineTotal": 2494,
         "currentTotal": 3041,
         "currentCoveragePercent": 95.1,
@@ -16678,7 +16707,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-06",
+        "currentDate": "2026-11-07",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -17235,7 +17264,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-06",
+        "currentDate": "2026-11-07",
         "baselineTotal": 623,
         "currentTotal": 1626,
         "currentCoveragePercent": 99.1,
@@ -17996,14 +18025,14 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-11-06",
+        "currentDate": "2026-11-07",
         "baselineTotal": 17,
-        "currentTotal": 9,
-        "currentCoveragePercent": 11.1,
+        "currentTotal": 13,
+        "currentCoveragePercent": 7.7,
         "periodChange": {
-          "added": 9,
+          "added": 13,
           "removed": 17,
-          "net": -8,
+          "net": -4,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
@@ -18024,11 +18053,32 @@
           },
           "addedItems": [
             {
+              "name": "AI-Native Practitioner Programme (November Cohort)",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://ai.wonderlead.tech/home/"
+            },
+            {
               "name": "AWS re:Invent 2026",
               "location": "Online",
               "country": "Online",
               "region": null,
               "url": "https://aws.amazon.com/events/reinvent/"
+            },
+            {
+              "name": "AWS Student Community Day Mexico City",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/"
+            },
+            {
+              "name": "Build a game with Kiro in 30 minutes",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://luma.com/br61ma27"
             },
             {
               "name": "CUSEC 2027",
@@ -18078,6 +18128,13 @@
               "country": "Online",
               "region": null,
               "url": "https://kiroween.devpost.com/"
+            },
+            {
+              "name": "LPC Hacks 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://lpchacks.com"
             },
             {
               "name": "Young Talent Programme for AI in Finance (YTP-AIF)",
@@ -18263,10 +18320,10 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-11-05",
-          "added": 0,
-          "removed": 2,
-          "net": -2,
+          "date": "2026-11-07",
+          "added": 4,
+          "removed": 0,
+          "net": 4,
           "retained": 9,
           "addedByRegion": {
             "north-america": 0,
@@ -18277,32 +18334,46 @@
             "oceania": 0
           },
           "removedByRegion": {
-            "north-america": 1,
+            "north-america": 0,
             "south-america": 0,
             "europe": 0,
             "asia": 0,
             "africa": 0,
             "oceania": 0
           },
-          "addedUnclassified": 0,
-          "removedUnclassified": 1,
-          "addedItems": [],
-          "removedItems": [
+          "addedUnclassified": 4,
+          "removedUnclassified": 0,
+          "addedItems": [
             {
-              "name": "AI DevCon",
-              "location": "New York, NY, United States",
-              "country": "United States",
-              "region": "north-america",
-              "url": "https://tessl.io/devcon"
-            },
-            {
-              "name": "Escape from Labyrinth with Kiro",
+              "name": "AI-Native Practitioner Programme (November Cohort)",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://www.meetup.com/amazon-web-services-rome/events/315496039/"
+              "url": "https://ai.wonderlead.tech/home/"
+            },
+            {
+              "name": "AWS Student Community Day Mexico City",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/"
+            },
+            {
+              "name": "Build a game with Kiro in 30 minutes",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://luma.com/br61ma27"
+            },
+            {
+              "name": "LPC Hacks 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://lpchacks.com"
             }
           ],
+          "removedItems": [],
           "quality": {
             "confidence": "high",
             "comparable": true,
@@ -18314,7 +18385,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-11-06",
+        "currentDate": "2026-11-07",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -18644,8 +18715,8 @@
       }
     },
     "upcoming": {
-      "total": 7,
-      "next30Days": 4,
+      "total": 11,
+      "next30Days": 8,
       "byRegion": {
         "north-america": 1,
         "south-america": 1,
@@ -18656,6 +18727,33 @@
       },
       "items": [
         {
+          "name": "Build a game with Kiro in 30 minutes",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://luma.com/br61ma27",
+          "category": "kiro-events",
+          "date": "2026-11-11T18:00:00.000Z"
+        },
+        {
+          "name": "AWS Student Community Day Mexico City",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/",
+          "category": "kiro-events",
+          "date": "2026-11-14T09:00:00.000Z"
+        },
+        {
+          "name": "LPC Hacks 2026",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://lpchacks.com",
+          "category": "kiro-events",
+          "date": "2026-11-14T10:00:00.000Z"
+        },
+        {
           "name": "AWS Community Day Belém",
           "location": "Belém, Brazil",
           "country": "Brazil",
@@ -18663,6 +18761,15 @@
           "url": "https://awscommunityday.com.br/#norte",
           "category": "community-days",
           "date": "2026-11-14T12:00:00.000Z"
+        },
+        {
+          "name": "AI-Native Practitioner Programme (November Cohort)",
+          "location": "Online",
+          "country": "Online",
+          "region": null,
+          "url": "https://ai.wonderlead.tech/home/",
+          "category": "kiro-events",
+          "date": "2026-11-16T00:00:00.000Z"
         },
         {
           "name": "Kiro Office Hours",
