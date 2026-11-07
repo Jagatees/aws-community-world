@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = path.join(__dirname, '..', 'src', 'data', 'kiro-events.json');
@@ -78,7 +78,7 @@ function getTag(block, tag) {
   return match ? decodeXml(match[1]) : '';
 }
 
-function parseItems(xml) {
+export function parseItems(xml) {
   return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map((match) => {
     const block = match[1];
     const description = stripHtml(getTag(block, 'description'));
@@ -100,15 +100,17 @@ function parseMonth(value) {
   return MONTHS[String(value).slice(0, 3).toLowerCase()];
 }
 
-function parseDateLine(dateLine, fallbackYear) {
+export function parseDateLine(dateLine, fallbackYear) {
   const normalized = dateLine.replace(/\s+/g, ' ').trim();
-  const rangeMatch = normalized.match(/^([A-Z][a-z]{2})\s+(\d{1,2})(?:[–-]([A-Z][a-z]{2})?\s?(\d{1,2}))?,\s*(\d{4})(?:\s+(.*))?$/);
+  const rangeMatch = normalized.match(/^([A-Z][a-z]{2})\s+(\d{1,2})(?:(?:,\s*(\d{4}))?\s*[–-]\s*([A-Z][a-z]{2})?\s?(\d{1,2}))?,\s*(\d{4})(?:\s+(.*))?$/);
   if (!rangeMatch) {
     throw new Error(`Unrecognized Kiro event date: ${dateLine} (feed year ${fallbackYear}). Existing data was preserved.`);
   }
 
-  const [, startMonthText, startDayText, endMonthText, endDayText, yearText, timeText = ''] = rangeMatch;
-  const year = Number(yearText);
+  const [, startMonthText, startDayText, startYearText, endMonthText, endDayText, endYearText, timeText = ''] = rangeMatch;
+  // Compact ranges share the trailing year; full ranges carry both years.
+  const startYear = Number(startYearText || endYearText);
+  const endYear = Number(endYearText);
   const startMonth = parseMonth(startMonthText);
   const endMonth = endMonthText ? parseMonth(endMonthText) : startMonth;
   const startDay = Number(startDayText);
@@ -133,13 +135,13 @@ function parseDateLine(dateLine, fallbackYear) {
     endMinute = Number(endTime[2]);
   }
 
-  const startsAt = new Date(Date.UTC(year, startMonth, startDay, startHour, startMinute, 0));
-  const endsAt = new Date(Date.UTC(year, endMonth, endDay, endHour, endMinute, 59));
+  const startsAt = new Date(Date.UTC(startYear, startMonth, startDay, startHour, startMinute, 0));
+  const endsAt = new Date(Date.UTC(endYear, endMonth, endDay, endHour, endMinute, 59));
 
   return {
-    startsAt: utc || startTime ? startsAt.toISOString() : new Date(Date.UTC(year, startMonth, startDay, 0, 0, 0)).toISOString(),
-    endsAt: utc || endTime ? endsAt.toISOString() : new Date(Date.UTC(year, endMonth, endDay, 23, 59, 59)).toISOString(),
-    endDateKey: `${year}-${String(endMonth + 1).padStart(2, '0')}-${String(endDay).padStart(2, '0')}`,
+    startsAt: utc || startTime ? startsAt.toISOString() : new Date(Date.UTC(startYear, startMonth, startDay, 0, 0, 0)).toISOString(),
+    endsAt: utc || endTime ? endsAt.toISOString() : new Date(Date.UTC(endYear, endMonth, endDay, 23, 59, 59)).toISOString(),
+    endDateKey: `${endYear}-${String(endMonth + 1).padStart(2, '0')}-${String(endDay).padStart(2, '0')}`,
     dateOnly: !startTime && !endTime,
   };
 }
@@ -264,7 +266,9 @@ async function main() {
   console.log(`Updated ${events.length} Kiro events at ${OUTPUT_PATH}`);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
