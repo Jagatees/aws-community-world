@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-06T07:38:58.092Z",
+  "checkedAt": "2026-11-08T06:55:22.925Z",
   "productCount": 235,
   "services": [
     {
@@ -3470,7 +3470,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-05T17:55:18Z",
+      "updatedAt": "2026-11-06T14:52:59Z",
       "createdAt": "2026-09-03T12:05:49Z",
       "sandboxAvailable": false
     },
@@ -3530,7 +3530,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-03T11:11:51Z",
+      "updatedAt": "2026-11-06T10:34:26Z",
       "createdAt": "2026-05-11T11:37:02Z",
       "sandboxAvailable": false
     },
@@ -3958,7 +3958,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-11-04T22:17:52Z",
+      "updatedAt": "2026-11-07T21:22:14Z",
       "createdAt": "2023-10-06T19:07:28Z",
       "sandboxAvailable": false
     },
@@ -5787,7 +5787,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-05T19:19:42Z",
+      "updatedAt": "2026-11-06T13:31:40Z",
       "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
@@ -6816,7 +6816,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-09-03T17:28:09Z",
+      "updatedAt": "2026-11-07T00:05:03Z",
       "createdAt": "2025-10-16T21:19:56Z",
       "sandboxAvailable": false
     },
@@ -7565,7 +7565,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-29T16:48:31Z",
+      "updatedAt": "2026-11-06T14:46:25Z",
       "createdAt": "2026-07-15T16:27:16Z",
       "sandboxAvailable": false
     },
@@ -7615,7 +7615,7 @@
         "ja",
         "fr"
       ],
-      "updatedAt": "2026-11-05T20:16:37Z",
+      "updatedAt": "2026-11-06T14:51:19Z",
       "createdAt": "2025-09-19T09:40:20Z",
       "sandboxAvailable": false
     },
@@ -7678,7 +7678,7 @@
     {
       "id": "20c036a0-46c9-4e64-b74f-cec28b4de423",
       "title": "MAM406 - Migrate & Modernize Windows to Linux and SQL to PostgreSQL with agentic AI",
-      "description": "Join this Activation Day to migrate and modernize Microsoft Server workloads to Amazon EC2 using AWS Application Migration Service and AWS Transform. This hands-on session leverages Kiro to accelerate planning and execution, covering best practices for rehosting, right-sizing, and optimizing licensing costs. Ideal for IT teams looking to reduce on-premises footprint and unlock cloud benefits.",
+      "description": "Facing rising Windows and SQL Server licensing costs? In this hands-on workshop, rehost a Windows IIS and SQL Server app to Amazon EC2 with AWS Transform MGN, then modernize it with agentic AI. Use AWS Transform to convert the schema to Amazon Aurora PostgreSQL and Kiro to convert the PHP code and build the infrastructure, then let AWS Transform containerize the app and deploy it to Amazon EKS. Leave with a repeatable pattern for migrating and modernizing your own Windows workloads.",
       "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/20c036a0-46c9-4e64-b74f-cec28b4de423",
       "services": [
         "Amazon Elastic Compute Cloud (Amazon EC2)",
@@ -7697,7 +7697,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-06T03:18:25Z",
+      "updatedAt": "2026-11-08T06:09:27Z",
       "createdAt": "2024-09-12T13:35:53Z",
       "sandboxAvailable": false
     },
@@ -8063,7 +8063,7 @@
         "ko",
         "ja"
       ],
-      "updatedAt": "2026-10-20T05:02:05Z",
+      "updatedAt": "2026-11-06T21:40:32Z",
       "createdAt": "2021-02-05T17:36:38Z",
       "sandboxAvailable": false
     },
