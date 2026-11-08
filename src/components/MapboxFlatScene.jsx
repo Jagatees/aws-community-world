@@ -3,8 +3,9 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
-import { clusterMapLocations, createAreaClusterElement } from '../utils/mapClusters';
-import { useMapClusterStep } from '../hooks/useMapClusterStep';
+import { createAreaClusterElement, zoomToMapCluster } from '../utils/mapClusters';
+import { useScreenMapClusters } from '../hooks/useScreenMapClusters';
+import { getMapMarkerPosition, hasMapMarkerTransitions, reconcileMapMarkers } from '../utils/mapMarkerTransitions';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -400,13 +401,14 @@ export default function MapboxFlatScene({
     };
   }, []);
 
-  const clusterStep = useMapClusterStep(mapRef, TOKEN);
-  const clusters = useMemo(
+  const displayedLocations = useMemo(
     () => category === 'community-days' && communityDaysExpanded
       ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMapLocations(sourceLocations, clusterStep, category),
-    [members, sourceLocations, clusterStep, category, communityDaysExpanded]
+      : sourceLocations,
+    [members, sourceLocations, category, communityDaysExpanded]
   );
+  const clusters = useScreenMapClusters(mapRef, TOKEN, displayedLocations, category);
+  const markerStyle = useMemo(() => ({}), [category, darkMode, heatmapEnabled]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -448,10 +450,9 @@ export default function MapboxFlatScene({
     const overlay = overlayRef.current;
     if (!overlay) return;
 
-    markersRef.current.forEach(({ element }) => element?.remove());
-    markersRef.current = [];
-
-    markersRef.current = clusters.map((cluster) => {
+    const animate = markersRef.current[0]?.styleKey === markerStyle
+      && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const nextMarkers = clusters.map((cluster) => {
       const isPastCommunityDay = category === 'community-days' && cluster.members.every((member) => member.eventStatus === 'past');
       const color = isPastCommunityDay
         ? '#D22C2C'
@@ -464,7 +465,7 @@ export default function MapboxFlatScene({
           if (!map) return;
 
           if (cluster.isApproximate) {
-            map.easeTo({ center: [cluster.lng, cluster.lat], zoom: Math.min(12, Math.floor(map.getZoom()) + 2), duration: 650 });
+            zoomToMapCluster(map, cluster);
             return;
           }
 
@@ -489,15 +490,11 @@ export default function MapboxFlatScene({
         },
       });
 
-      return { cluster, createElement, element: null };
+      return { cluster, createElement, element: null, styleKey: markerStyle };
     });
+    markersRef.current = reconcileMapMarkers(markersRef.current, nextMarkers, { animate });
     mapRef.current?.triggerRepaint();
-
-    return () => {
-      markersRef.current.forEach(({ element }) => element?.remove());
-      markersRef.current = [];
-    };
-  }, [clusters, category, darkMode, heatmapEnabled]);
+  }, [clusters, category, darkMode, heatmapEnabled, markerStyle]);
 
   useEffect(() => {
     if (category !== 'community-days') return undefined;
@@ -520,6 +517,7 @@ export default function MapboxFlatScene({
 
     let previousCamera = '';
     let previousMarkers = null;
+    let animationFrame = 0;
     const resumeOverlay = () => {
       if (document.hidden) return;
       previousCamera = '';
@@ -532,13 +530,15 @@ export default function MapboxFlatScene({
       const height = map.getCanvas().clientHeight;
       const center = map.getCenter();
       const camera = `${center.lat}:${center.lng}:${map.getZoom()}:${width}:${height}`;
-      if (camera === previousCamera && previousMarkers === markersRef.current) return;
+      if (camera === previousCamera && previousMarkers === markersRef.current && !hasMapMarkerTransitions(markersRef.current)) return;
       previousCamera = camera;
       previousMarkers = markersRef.current;
 
       markersRef.current.forEach((marker) => {
         const { cluster } = marker;
-        const project = map.project([cluster.lng, cluster.lat]);
+        const destination = map.project([cluster.lng, cluster.lat]);
+        const project = getMapMarkerPosition(marker, map, destination);
+        if (marker.disposed) return;
         const visible = project.x >= -80 && project.x <= width + 80 && project.y >= -80 && project.y <= height + 80;
         if (!visible) {
           if (marker.element?.isConnected) marker.element.remove();
@@ -561,6 +561,14 @@ export default function MapboxFlatScene({
         }
         if (!element.isConnected) overlay.appendChild(element);
       });
+      if (markersRef.current.some(marker => marker.disposed)) markersRef.current = markersRef.current.filter(marker => !marker.disposed);
+      previousMarkers = markersRef.current;
+      if (hasMapMarkerTransitions(markersRef.current) && !animationFrame) {
+        animationFrame = window.requestAnimationFrame(() => {
+          animationFrame = 0;
+          map.triggerRepaint();
+        });
+      }
     };
 
     map.on('render', updateOverlay);
@@ -568,6 +576,7 @@ export default function MapboxFlatScene({
     updateOverlay();
 
     return () => {
+      window.cancelAnimationFrame(animationFrame);
       map.off('render', updateOverlay);
       document.removeEventListener('visibilitychange', resumeOverlay);
     };

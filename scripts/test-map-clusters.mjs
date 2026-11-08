@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { performance } from 'node:perf_hooks';
 import { test } from 'node:test';
 import { clusterMembersByCoordinates } from '../src/utils/mapCoordinates.js';
-import { clusterMapLocations, getMapClusterStep } from '../src/utils/mapClusters.js';
+import { clusterMapLocations, getMapClusterStep, zoomToMapCluster } from '../src/utils/mapClusters.js';
 import { summarizeStudentGroups } from './student-group-summary.mjs';
 
 const groups = JSON.parse(readFileSync(new URL('../src/data/cloud-clubs.json', import.meta.url)));
@@ -51,6 +51,62 @@ test('zoom boundaries, source overrides and event expansion remain predictable',
   assert.equal(clusters.find(cluster => cluster.forceSeparateMarker).members.length, 1);
   assert.equal(clusters.find(cluster => cluster.members[0].clusterOnly).members[0].builderCount, 100);
   assert.equal(clusterMapLocations(locations, 45, 'community-days'), locations);
+});
+
+function createClickMap({ lng = 0, zoom = 3, width = 1000, height = 600 } = {}) {
+  return {
+    getCenter: () => ({ lng }),
+    getZoom: () => zoom,
+    getCanvas: () => ({ clientWidth: width, clientHeight: height }),
+    fitBounds(bounds, options) { this.fit = { bounds, options }; },
+    easeTo(options) { this.ease = options; },
+  };
+}
+
+test('cluster clicks fit every valid source location with room for markers', () => {
+  const map = createClickMap({ lng: 102 });
+  const cluster = { members: [
+    { lat: 1, lng: 100 }, { lat: 5, lng: 104 }, { lat: 2, lng: 101 },
+    { lat: 95, lng: 150 }, { lat: NaN, lng: 1 }, { lat: 1, lng: Infinity },
+  ] };
+  const original = structuredClone(cluster);
+  zoomToMapCluster(map, cluster);
+  assert.deepEqual(map.fit, {
+    bounds: [[100, 1], [104, 5]],
+    options: { padding: 64, duration: 650, maxZoom: 12 },
+  });
+  assert.equal(map.ease, undefined);
+  assert.deepEqual(cluster, original, 'fitting bounds must not change source locations or membership');
+});
+
+test('cluster click bounds use the shortest antimeridian interval near the camera world', () => {
+  const cluster = { members: [{ lat: -4, lng: 179 }, { lat: 6, lng: -179 }, { lat: 2, lng: 178 }] };
+  for (const [cameraLongitude, expectedWest] of [[179, 178], [-179, -182], [540, 538]]) {
+    const map = createClickMap({ lng: cameraLongitude });
+    zoomToMapCluster(map, cluster);
+    assert.deepEqual(map.fit.bounds, [[expectedWest, -4], [expectedWest + 3, 6]]);
+    assert.equal(map.fit.bounds[1][0] - map.fit.bounds[0][0], 3);
+  }
+});
+
+test('vertical groups fit bounds and use padding that leaves room on mobile', () => {
+  const map = createClickMap({ lng: 10, width: 320, height: 568 });
+  zoomToMapCluster(map, { members: [{ lat: 1, lng: 10 }, { lat: 2, lng: 10 }] });
+  assert.deepEqual(map.fit.bounds, [[10, 1], [10, 2]]);
+  assert.equal(map.fit.options.padding, 58);
+  assert.ok(map.fit.options.padding * 2 < map.getCanvas().clientWidth);
+  assert.equal(map.ease, undefined);
+});
+
+test('coincident cluster clicks zoom toward their location without degenerate bounds', () => {
+  const map = createClickMap({ lng: 179, zoom: 11.5 });
+  zoomToMapCluster(map, { members: [{ lat: 1, lng: 180 }, { lat: 1, lng: -180 }] });
+  assert.deepEqual(map.ease, { center: [180, 1], zoom: 12, duration: 650 });
+  assert.equal(map.fit, undefined);
+  const emptyMap = createClickMap();
+  zoomToMapCluster(emptyMap, { members: [{ lat: NaN, lng: 1 }] });
+  assert.equal(emptyMap.ease, undefined);
+  assert.equal(emptyMap.fit, undefined);
 });
 
 test('SBG map summary preserves identities, filters and portraits without profile details', () => {

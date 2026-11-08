@@ -6,8 +6,9 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 import { createPortraitFallback, createPortraitGroupAvatar, getMapboxPortraitSeparation, getPortraitGroupCount, PORTRAIT_GROUP_CATEGORIES } from '../utils/portraitGroupMarker';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
-import { clusterMapLocations, createAreaClusterElement } from '../utils/mapClusters';
-import { useMapClusterStep } from '../hooks/useMapClusterStep';
+import { createAreaClusterElement, zoomToMapCluster } from '../utils/mapClusters';
+import { useScreenMapClusters } from '../hooks/useScreenMapClusters';
+import { getMapMarkerPosition, hasMapMarkerTransitions, reconcileMapMarkers } from '../utils/mapMarkerTransitions';
 
 const CATEGORY_COLORS = {
   heroes: '#FF9900',
@@ -684,13 +685,14 @@ export default function MapboxGlobeScene({
     };
   }, [mapOptions, countrySpotlightActive, darkMode, geoLibreMode, mapEnabled]);
 
-  const clusterStep = useMapClusterStep(mapRef, mapOptions);
-  const clusters = useMemo(
+  const displayedLocations = useMemo(
     () => category === 'community-days' && communityDaysExpanded
       ? members.map((member) => ({ lat: member.lat, lng: member.lng, members: [member] }))
-      : clusterMapLocations(sourceLocations, clusterStep, category),
-    [members, sourceLocations, clusterStep, category, communityDaysExpanded]
+      : sourceLocations,
+    [members, sourceLocations, category, communityDaysExpanded]
   );
+  const clusters = useScreenMapClusters(mapRef, mapOptions, displayedLocations, category, !countrySpotlightActive);
+  const markerStyle = useMemo(() => ({}), [category, darkMode, heatmapEnabled, mapOptions, countrySpotlightActive, countrySpotlight?.country]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -732,10 +734,9 @@ export default function MapboxGlobeScene({
     const overlay = overlayRef.current;
     if (!overlay) return;
 
-    markersRef.current.forEach(({ element }) => element?.remove());
-    markersRef.current = [];
-
-    markersRef.current = clusters.map((cluster) => {
+    const animate = markersRef.current[0]?.styleKey === markerStyle
+      && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const nextMarkers = clusters.map((cluster) => {
       const isPastCommunityDay = category === 'community-days' && cluster.members.every((member) => member.eventStatus === 'past');
       const color = isPastCommunityDay
         ? '#D22C2C'
@@ -750,7 +751,7 @@ export default function MapboxGlobeScene({
           if (!map) return;
 
           if (cluster.isApproximate) {
-            map.easeTo({ center: [cluster.lng, cluster.lat], zoom: Math.min(12, Math.floor(map.getZoom()) + 2), duration: 650 });
+            zoomToMapCluster(map, cluster);
             return;
           }
 
@@ -781,15 +782,12 @@ export default function MapboxGlobeScene({
         hiddenBySpotlight: countrySpotlightActive && cluster.members.some((member) => getMemberCountry(member) === countrySpotlight?.country),
         createElement,
         element: null,
+        styleKey: markerStyle,
       };
     });
+    markersRef.current = reconcileMapMarkers(markersRef.current, nextMarkers, { animate });
     mapRef.current?.triggerRepaint();
-
-    return () => {
-      markersRef.current.forEach(({ element }) => element?.remove());
-      markersRef.current = [];
-    };
-  }, [clusters, category, darkMode, heatmapEnabled, mapOptions, countrySpotlightActive, countrySpotlight?.country]);
+  }, [clusters, category, darkMode, heatmapEnabled, mapOptions, countrySpotlightActive, countrySpotlight?.country, markerStyle]);
 
   useEffect(() => {
     if (category !== 'community-days') return undefined;
@@ -812,10 +810,7 @@ export default function MapboxGlobeScene({
     () => clusterMembersByCoordinates(countrySpotlight?.members ?? []),
     [countrySpotlight?.members]
   );
-  const spotlightClusters = useMemo(
-    () => clusterMapLocations(spotlightLocations, clusterStep, 'cloud-clubs'),
-    [spotlightLocations, clusterStep]
-  );
+  const spotlightClusters = useScreenMapClusters(mapRef, mapOptions, spotlightLocations, 'cloud-clubs');
 
   useEffect(() => {
     const map = mapRef.current;
@@ -826,16 +821,31 @@ export default function MapboxGlobeScene({
   }, [countrySpotlightActive, countrySpotlight?.nonce, mapOptions]);
 
   useEffect(() => {
-    countrySpotlightRef.current.forEach(({ element }) => element?.remove());
-    countrySpotlightRef.current = countrySpotlightActive
-      ? spotlightClusters.map((cluster, index) => ({ cluster, index, element: null }))
+    const animate = countrySpotlightRef.current[0]?.styleKey === markerStyle
+      && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const nextMarkers = countrySpotlightActive
+      ? spotlightClusters.map((cluster, index) => ({
+        cluster, index, element: null, styleKey: markerStyle,
+        heightOffset: cluster.members.length === 1 ? 120 + (index % 3) * 24 : 0,
+        createElement: () => {
+          const single = cluster.members.length === 1;
+          const onClick = () => {
+            const map = mapRef.current;
+            if (!map) return;
+            if (cluster.isApproximate) { zoomToMapCluster(map, cluster); return; }
+            onMarkerClickRef.current(single ? cluster.members[0] : cluster.members);
+          };
+          const element = single
+            ? createCountrySpotlightElement(cluster.members[0], index, darkMode)
+            : createClusterElement(cluster, { category: 'cloud-clubs', color: '#BF0816', darkMode, onClick });
+          if (single) element.onclick = event => { event.stopPropagation(); onClick(); };
+          return element;
+        },
+      }))
       : [];
+    countrySpotlightRef.current = reconcileMapMarkers(countrySpotlightRef.current, nextMarkers, { animate });
     mapRef.current?.triggerRepaint();
-    return () => {
-      countrySpotlightRef.current.forEach(({ element }) => element?.remove());
-      countrySpotlightRef.current = [];
-    };
-  }, [countrySpotlightActive, spotlightClusters, darkMode, mapOptions]);
+  }, [countrySpotlightActive, spotlightClusters, darkMode, mapOptions, markerStyle]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -845,6 +855,7 @@ export default function MapboxGlobeScene({
     let previousCamera = '';
     let previousMarkers = null;
     let previousSpotlights = null;
+    let animationFrame = 0;
     const cutoff = Math.cos((HORIZON_CUTOFF_DEGREES * Math.PI) / 180);
     const invalidateOverlay = () => { previousCamera = ''; };
     const resumeOverlay = () => {
@@ -862,7 +873,8 @@ export default function MapboxGlobeScene({
       const camera = `${center.lat}:${center.lng}:${zoom}:${map.getPitch()}:${map.getBearing()}:${width}:${height}`;
       // Tile loads can emit render events while the camera is stationary. Only
       // project the collection once per changed frame, never on move + zoom too.
-      if (camera === previousCamera && previousMarkers === markersRef.current && previousSpotlights === countrySpotlightRef.current) return;
+      if (camera === previousCamera && previousMarkers === markersRef.current && previousSpotlights === countrySpotlightRef.current
+        && !hasMapMarkerTransitions(markersRef.current) && !hasMapMarkerTransitions(countrySpotlightRef.current)) return;
       previousCamera = camera;
       previousMarkers = markersRef.current;
       previousSpotlights = countrySpotlightRef.current;
@@ -873,10 +885,12 @@ export default function MapboxGlobeScene({
         const { cluster, vector: vec } = marker;
         const onFront = countrySpotlightActive || (vec.x * centerVec.x) + (vec.y * centerVec.y) + (vec.z * centerVec.z) >= cutoff;
         if (marker.hiddenBySpotlight || !onFront) {
+          if (marker.transition) getMapMarkerPosition(marker, map, { x: 0, y: 0 });
           if (marker.element?.isConnected) marker.element.remove();
           return;
         }
-        const project = map.project([cluster.lng, cluster.lat]);
+        const project = getMapMarkerPosition(marker, map, map.project([cluster.lng, cluster.lat]));
+        if (marker.disposed) return;
         const onScreen = project.x >= -80 && project.x <= width + 80 && project.y >= -80 && project.y <= height + 80;
         if (!onScreen) {
           if (marker.element?.isConnected) marker.element.remove();
@@ -906,10 +920,11 @@ export default function MapboxGlobeScene({
       });
 
       countrySpotlightRef.current.forEach((marker) => {
-        const { cluster, index } = marker;
-        const project = map.project([cluster.lng, cluster.lat]);
+        const { cluster, heightOffset } = marker;
+        const destination = map.project([cluster.lng, cluster.lat]);
+        const project = getMapMarkerPosition(marker, map, { x: destination.x, y: destination.y - heightOffset });
+        if (marker.disposed) return;
         const single = cluster.members.length === 1;
-        const heightOffset = single ? 120 + (index % 3) * 24 : 0;
         const visible = project.x >= -120 && project.x <= width + 120 && project.y >= -180 && project.y <= height + 180;
         if (!visible) {
           // Do not allocate avatars for offscreen campuses, or keep visited
@@ -918,21 +933,11 @@ export default function MapboxGlobeScene({
           return;
         }
         if (!marker.element) {
-          const onClick = () => {
-            if (cluster.isApproximate) {
-              map.easeTo({ center: [cluster.lng, cluster.lat], zoom: Math.min(12, Math.floor(map.getZoom()) + 2), duration: 650 });
-              return;
-            }
-            onMarkerClickRef.current(single ? cluster.members[0] : cluster.members);
-          };
-          marker.element = single
-            ? createCountrySpotlightElement(cluster.members[0], index, darkMode)
-            : createClusterElement(cluster, { category: 'cloud-clubs', color: '#BF0816', darkMode, onClick });
-          if (single) marker.element.onclick = (event) => { event.stopPropagation(); onClick(); };
+          marker.element = marker.createElement();
         }
         const { element } = marker;
         const x = project.x.toFixed(1);
-        const y = (project.y - heightOffset).toFixed(1);
+        const y = project.y.toFixed(1);
         if (marker.x !== x || marker.y !== y) {
           element.style.transform = `translate(-50%, ${single ? '-100%' : '-50%'}) translate(${x}px, ${y}px)`;
           element.style.zIndex = String(100000 + Math.round(project.y * 1000));
@@ -941,6 +946,16 @@ export default function MapboxGlobeScene({
         }
         if (!element.isConnected) overlay.appendChild(element);
       });
+      if (markersRef.current.some(marker => marker.disposed)) markersRef.current = markersRef.current.filter(marker => !marker.disposed);
+      if (countrySpotlightRef.current.some(marker => marker.disposed)) countrySpotlightRef.current = countrySpotlightRef.current.filter(marker => !marker.disposed);
+      previousMarkers = markersRef.current;
+      previousSpotlights = countrySpotlightRef.current;
+      if ((hasMapMarkerTransitions(markersRef.current) || hasMapMarkerTransitions(countrySpotlightRef.current)) && !animationFrame) {
+        animationFrame = window.requestAnimationFrame(() => {
+          animationFrame = 0;
+          map.triggerRepaint();
+        });
+      }
     };
 
     map.on('render', updateOverlay);
@@ -949,6 +964,7 @@ export default function MapboxGlobeScene({
     updateOverlay();
 
     return () => {
+      window.cancelAnimationFrame(animationFrame);
       map.off('render', updateOverlay);
       map.off('style.load', invalidateOverlay);
       document.removeEventListener('visibilitychange', resumeOverlay);

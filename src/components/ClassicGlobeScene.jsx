@@ -4,6 +4,7 @@ import { useAutoRotate } from '../hooks/useAutoRotate';
 import { createNewMemberBadgeElement, getCountryFlagUrl, getMemberBadgeLabel, getMemberCountry, getMemberCountryFlagUrl, getMemberImage, getRepresentedMemberCount, hasNewMember } from '../utils/memberMarkers';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
 import { buildEarthClusterLevels, getEarthClusterLevel, getEarthClusterZoomAltitude } from '../utils/globeClusters';
+import { hasGlobeClusterTransitions, reconcileGlobeClusters, sampleGlobeClusters } from '../utils/globeClusterTransitions';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -521,6 +522,7 @@ export default function ClassicGlobeScene({
   const onMarkerClickRef = useRef(onMarkerClick);
   const displayedClustersRef = useRef([]);
   const syncVisibleMarkersRef = useRef(() => {});
+  const clusterScopeRef = useRef(null);
   const [communityDaysExpanded, setCommunityDaysExpanded] = useState(false);
   const [clusterLevel, setClusterLevel] = useState(0);
   const { startLoop, stopLoop, onPointerEvent, pause, resume } = useAutoRotate(globeRef);
@@ -542,6 +544,7 @@ export default function ClassicGlobeScene({
   const currentClusters = category === 'community-days'
     ? communityDaysExpanded ? expandedCommunityDays : clusterLevels[0]
     : clusterLevels[clusterLevel];
+  const clusterScope = useMemo(() => ({}), [clusterLevels, expandedCommunityDays, darkMode]);
 
   useEffect(() => {
     onMarkerClickRef.current = onMarkerClick;
@@ -729,8 +732,35 @@ export default function ClassicGlobeScene({
     const color = CATEGORY_COLORS[category] ?? '#FF9900';
     const markerElements = new WeakMap();
     const markerPositions = new WeakMap();
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let visibleClusters = [];
     let visibilityFrame = null;
+    let accessibilityPending = false;
+
+    const setMarkerAccessibility = (point, element, blocked) => {
+      element.inert = blocked;
+      element.style.pointerEvents = blocked ? 'none' : 'auto';
+      if (blocked) element.setAttribute('aria-hidden', 'true');
+      else element.removeAttribute('aria-hidden');
+      if (point.exiting) element.dataset.clusterExiting = 'true';
+      else delete element.dataset.clusterExiting;
+      if (point.exiting && blocked && reducedMotion.matches) element.style.opacity = '0';
+    };
+    const commitMarkerAccessibility = () => {
+      if (!accessibilityPending) return;
+      const active = visibleClusters.filter(point => !point.exiting);
+      if (active.some(point => !markerElements.get(point)?.isConnected)) return;
+      // The native layer commits asynchronously. Switch old and new click
+      // targets together once the new DOM is attached, before the next paint.
+      visibleClusters.forEach(point => {
+        const element = markerElements.get(point);
+        if (element) setMarkerAccessibility(point, element, point.exiting);
+      });
+      accessibilityPending = false;
+      scheduleVisibleMarkers();
+    };
+    const markerObserver = new MutationObserver(commitMarkerAccessibility);
+    markerObserver.observe(container, { childList: true, subtree: true });
 
     const forwardWheel = (event) => {
       const wheelTarget = container.querySelector('canvas');
@@ -755,47 +785,64 @@ export default function ClassicGlobeScene({
       .htmlTransitionDuration(0)
       .htmlElement((point) => {
         if (markerElements.has(point)) return markerElements.get(point);
-        const element = createClusterElement(point, {
+        const element = createClusterElement(point.cluster, {
           category,
           color,
           darkMode,
           portraitCluster: PORTRAIT_GROUP_CATEGORIES.has(category),
-          compactOverview: point.compactOverview,
+          compactOverview: point.cluster.compactOverview,
           onWheel: forwardWheel,
           onClick: () => {
-            if (point.isApproximate) {
-              globe.pointOfView({ lat: point.lat, lng: point.lng, altitude: getEarthClusterZoomAltitude(point.detailLevel) }, motionDuration(600));
+            if (point.exiting) return;
+            const cluster = point.cluster;
+            if (cluster.isApproximate) {
+              globe.pointOfView({ lat: cluster.lat, lng: cluster.lng, altitude: getEarthClusterZoomAltitude(cluster.detailLevel) }, motionDuration(600));
               onPointerEvent();
               return;
             }
-            if (PORTRAIT_GROUP_CATEGORIES.has(category) && getPortraitGroupCount(point) > 1) {
+            if (PORTRAIT_GROUP_CATEGORIES.has(category) && getPortraitGroupCount(cluster) > 1) {
               const altitude = globeRef.current.pointOfView().altitude;
               if (altitude > 1.45) {
-                globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.28 }, motionDuration(700));
+                globeRef.current.pointOfView({ lat: cluster.lat, lng: cluster.lng, altitude: 1.28 }, motionDuration(700));
               } else {
-                onMarkerClickRef.current(point.members);
+                onMarkerClickRef.current(cluster.members);
               }
               onPointerEvent();
               return;
             }
-            if (category === 'community-days' && point.members.length > 1) {
-              globeRef.current.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.3 }, motionDuration(800));
+            if (category === 'community-days' && cluster.members.length > 1) {
+              globeRef.current.pointOfView({ lat: cluster.lat, lng: cluster.lng, altitude: 1.3 }, motionDuration(800));
               onPointerEvent();
               return;
             }
-            globe.pointOfView({ lat: point.lat, lng: point.lng, altitude: Math.min(globe.pointOfView().altitude, 1.8) }, motionDuration(800));
+            globe.pointOfView({ lat: cluster.lat, lng: cluster.lng, altitude: Math.min(globe.pointOfView().altitude, 1.8) }, motionDuration(800));
             onPointerEvent();
-            const payload = point.members.length === 1 ? point.members[0] : point.members;
+            const payload = cluster.members.length === 1 ? cluster.members[0] : cluster.members;
             onMarkerClickRef.current(payload);
           },
         });
+        element.style.opacity = String(point.alpha);
+        setMarkerAccessibility(point, element, point.exiting || accessibilityPending);
         markerElements.set(point, element);
         return element;
       });
 
-    const updateVisibleMarkers = () => {
+    const updateVisibleMarkers = (now) => {
       visibilityFrame = null;
       if (document.hidden) return;
+      const moving = hasGlobeClusterTransitions(displayedClustersRef.current);
+      if (moving && reducedMotion.matches) {
+        displayedClustersRef.current.forEach(point => {
+          const element = markerElements.get(point);
+          if (point.exiting && element?.inert) element.style.opacity = '0';
+        });
+        const targets = displayedClustersRef.current.filter(point => !point.exiting).map(point => point.cluster);
+        displayedClustersRef.current = reconcileGlobeClusters(displayedClustersRef.current, targets, now, false);
+      }
+      sampleGlobeClusters(displayedClustersRef.current, now);
+      if (displayedClustersRef.current.some(point => point.complete)) {
+        displayedClustersRef.current = displayedClustersRef.current.filter(point => !point.complete);
+      }
       const camera = globe.camera();
       const cameraPosition = camera.position;
       const cameraDistance = Math.hypot(cameraPosition.x, cameraPosition.y, cameraPosition.z);
@@ -809,11 +856,16 @@ export default function ClassicGlobeScene({
       const nextVisible = [];
 
       for (const point of displayedClustersRef.current) {
-        let position = markerPositions.get(point);
-        if (!position) {
-          position = globe.getCoords(point.lat, point.lng, MARKER_ALTITUDE);
-          markerPositions.set(point, position);
+        const element = markerElements.get(point);
+        if (element) {
+          element.style.opacity = String(point.alpha);
         }
+        let cached = markerPositions.get(point);
+        if (!cached || cached.lat !== point.lat || cached.lng !== point.lng) {
+          cached = { lat: point.lat, lng: point.lng, position: globe.getCoords(point.lat, point.lng, MARKER_ALTITUDE) };
+          markerPositions.set(point, cached);
+        }
+        const position = cached.position;
         const cameraDot = position.x * cameraPosition.x + position.y * cameraPosition.y
           + position.z * cameraPosition.z;
         // OrbitControls aim at the globe center. At extreme zoom the camera
@@ -828,12 +880,40 @@ export default function ClassicGlobeScene({
         nextVisible.push(point);
       }
 
+      if (accessibilityPending) {
+        // A fast reversal or reduced-motion change may retire the original
+        // parent before the native replacement has attached. Keep its old
+        // click target until the same handoff commits the new targets.
+        visibleClusters.forEach(point => {
+          const element = markerElements.get(point);
+          if (point.exiting && element?.isConnected && !element.inert && !nextVisible.includes(point)) nextVisible.push(point);
+        });
+      }
+
       // Camera movement usually changes positions, not the visible set. Let
       // CSS2D move existing markers without rebuilding its scene or HTML.
-      if (nextVisible.length === visibleClusters.length
-        && nextVisible.every((point, index) => point === visibleClusters[index])) return;
-      visibleClusters = nextVisible;
-      globe.htmlElementsData(nextVisible);
+      const membershipChanged = nextVisible.length !== visibleClusters.length
+        || nextVisible.some((point, index) => point !== visibleClusters[index]);
+      if (membershipChanged) {
+        accessibilityPending ||= nextVisible.some(point => {
+          const element = markerElements.get(point);
+          return point.exiting && element?.isConnected && !element.inert;
+        });
+        visibleClusters = nextVisible;
+        if (!accessibilityPending) {
+          visibleClusters.forEach(point => {
+            const element = markerElements.get(point);
+            if (element) setMarkerAccessibility(point, element, point.exiting);
+          });
+        }
+        globe.htmlElementsData(nextVisible);
+      } else if (moving) {
+        // Refresh CSS2D world positions through the public accessor. Stable
+        // records keep their existing objects and DOM while coordinates move.
+        globe.htmlLat(point => point.lat);
+      }
+      commitMarkerAccessibility();
+      if (hasGlobeClusterTransitions(displayedClustersRef.current)) scheduleVisibleMarkers();
     };
     const scheduleVisibleMarkers = () => {
       if (visibilityFrame !== null || document.hidden) return;
@@ -846,6 +926,7 @@ export default function ClassicGlobeScene({
 
     return () => {
       if (visibilityFrame !== null) cancelAnimationFrame(visibilityFrame);
+      markerObserver.disconnect();
       controls?.removeEventListener('change', scheduleVisibleMarkers);
       document.removeEventListener('visibilitychange', scheduleVisibleMarkers);
       syncVisibleMarkersRef.current = () => {};
@@ -853,9 +934,11 @@ export default function ClassicGlobeScene({
   }, [clusterLevels, expandedCommunityDays, category, darkMode, onPointerEvent]);
 
   useEffect(() => {
-    displayedClustersRef.current = currentClusters;
+    const animate = clusterScopeRef.current === clusterScope && motionDuration(1) > 0;
+    displayedClustersRef.current = reconcileGlobeClusters(displayedClustersRef.current, currentClusters, performance.now(), animate);
+    clusterScopeRef.current = clusterScope;
     syncVisibleMarkersRef.current();
-  }, [currentClusters]);
+  }, [currentClusters, clusterScope]);
 
   useEffect(() => {
     if (category !== 'community-days' || !containerRef.current) return undefined;

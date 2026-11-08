@@ -4,6 +4,9 @@ import { feature } from 'topojson-client';
 import countriesTopo from 'world-atlas/countries-110m.json';
 import { getMemberBadgeLabel, getMemberCountryFlagUrl, getMemberImage, hasNewMember } from '../utils/memberMarkers';
 import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
+import { clusterScreenLocations } from '../utils/screenMapClusters';
+import { getRepresentedMemberCount } from '../utils/memberCounts';
+import { useSvgClusterAnimation } from '../hooks/useSvgClusterAnimation';
 
 const CATEGORY_COLORS = {
   'heroes': '#FF9900',
@@ -47,16 +50,6 @@ function getPanBounds(zoomLevel) {
   };
 }
 
-function clusterProjectedMembers(members, projection) {
-  return clusterMembersByCoordinates(members).flatMap((cluster) => {
-    const projected = projection([cluster.lng, cluster.lat]);
-    if (!projected) return [];
-
-    const [x, y] = projected;
-    return [{ ...cluster, x, y }];
-  });
-}
-
 function buildProjection(activeTarget) {
   const projection = geoNaturalEarth1();
   projection.fitExtent(
@@ -77,12 +70,14 @@ function buildProjection(activeTarget) {
   return projection;
 }
 
-export default function FlatMapScene({ category, members, onMarkerClick, cardOpen, darkMode, flyToTarget, zoomCommand, hideControls = false, lightweight = false }) {
+export default function FlatMapScene({ category, members, onMarkerClick, darkMode, flyToTarget, zoomCommand, hideControls = false, lightweight = false }) {
   const [focusedTarget, setFocusedTarget] = useState(null);
   const [manualZoom, setManualZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [resetViewLockedKey, setResetViewLockedKey] = useState(null);
+  const [svgScale, setSvgScale] = useState(1);
+  const svgRef = useRef(null);
   const dragStateRef = useRef({
     active: false,
     moved: false,
@@ -99,27 +94,44 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
 
   const activeTarget = resetViewLocked
     ? null
-    : cardOpen
-      ? (focusedTarget ?? flyToTarget)
-      : (flyToTarget ?? focusedTarget);
+    : focusedTarget?.sourceKey === flyToTargetKey ? focusedTarget : flyToTarget;
   const effectiveZoom = activeTarget ? manualZoom * FOCUS_SCALE : manualZoom;
+  const sourceLocations = useMemo(() => clusterMembersByCoordinates(members), [members]);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return undefined;
+    const measure = () => {
+      const rect = svg.getBoundingClientRect();
+      const scale = Math.min(rect.width / MAP_WIDTH, rect.height / MAP_HEIGHT);
+      if (scale > 0) setSvgScale(scale);
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(svg);
+    return () => observer.disconnect();
+  }, []);
 
   const { countries, graticulePath, markers } = useMemo(() => {
     const projection = buildProjection(activeTarget ? { lat: activeTarget.lat, lng: activeTarget.lng } : null);
     projection.scale(projection.scale() * manualZoom);
 
     const path = geoPath(projection);
-    const clusteredMarkers = clusterProjectedMembers(members, projection).map((cluster) => {
+    const radius = manualZoom >= MAX_ZOOM ? 0 : 48 / svgScale;
+    const clusteredMarkers = clusterScreenLocations(sourceLocations, projection, radius)
+      .filter(cluster => Number.isFinite(cluster.x) && Number.isFinite(cluster.y)).map((cluster) => {
       const visibleImages = [];
       // Phones use initials; decoding hundreds of full-size portraits can
       // exhaust Safari's page memory even without a WebGL map.
-      for (const member of lightweight ? [] : cluster.members) {
+      for (const member of lightweight || cluster.isApproximate ? [] : cluster.members) {
         const src = getMemberImage(member);
         if (src) visibleImages.push({ src, name: member.name });
         if (visibleImages.length === MAX_CLUSTER_AVATARS) break;
       }
       return {
         ...cluster,
+        key: cluster.members.map(member => member.id ?? `${member.name}:${member.lat}:${member.lng}`).join('|'),
+        count: getRepresentedMemberCount(cluster.members),
         size: cluster.members.length > 1 ? Math.min(34, 14 + Math.sqrt(cluster.members.length) * 4) : 10,
         visibleImages,
         hasNewMember: hasNewMember(cluster.members),
@@ -133,7 +145,9 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
       graticulePath: path(GRATICULE),
       markers: clusteredMarkers,
     };
-  }, [activeTarget, members, manualZoom, lightweight]);
+  }, [activeTarget, sourceLocations, manualZoom, lightweight, svgScale]);
+
+  const markerLayerRef = useSvgClusterAnimation(markers, `${category}:${darkMode}:${lightweight}`);
 
   const markerColor = CATEGORY_COLORS[category] ?? '#FF9900';
   const panelBg = darkMode ? 'rgba(10, 18, 27, 0.78)' : 'rgba(255, 255, 255, 0.86)';
@@ -235,6 +249,38 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
     setIsDragging(false);
   }
 
+  function selectMarker(marker) {
+    if (suppressClickRef.current) {
+      suppressClickRef.current = false;
+      return;
+    }
+    setResetViewLockedKey(null);
+    setPan({ x: 0, y: 0 });
+    if (marker.isApproximate) {
+      const projection = buildProjection(activeTarget);
+      projection.scale(projection.scale() * manualZoom);
+      const points = marker.members.map(member => projection([member.lng, member.lat]));
+      const xs = points.map(point => point[0]);
+      const ys = points.map(point => point[1]);
+      const minX = Math.min(...xs);
+      const maxX = Math.max(...xs);
+      const minY = Math.min(...ys);
+      const maxY = Math.max(...ys);
+      const [lng, lat] = projection.invert([(minX + maxX) / 2, (minY + maxY) / 2]);
+      const fit = Math.min(MAP_WIDTH * 0.72 / Math.max(1, maxX - minX), MAP_HEIGHT * 0.72 / Math.max(1, maxY - minY));
+      setFocusedTarget({ lat, lng, sourceKey: flyToTargetKey });
+      // Focusing adds its own scale; account for it when fitting the area.
+      setManualZoom(zoom => clamp(Math.max(zoom * 1.35, zoom * fit / (activeTarget ? 1 : FOCUS_SCALE)), MIN_ZOOM, MAX_ZOOM));
+      return;
+    }
+    setFocusedTarget({ lat: marker.lat, lng: marker.lng, sourceKey: flyToTargetKey });
+    if (marker.members.length > 1 && effectiveZoom < 4.5) {
+      setManualZoom(zoom => clamp(zoom * 1.7, MIN_ZOOM, MAX_ZOOM));
+      return;
+    }
+    onMarkerClick(marker.members.length === 1 ? marker.members[0] : marker.members);
+  }
+
   return (
     <div className={`relative h-full w-full overflow-hidden ${darkMode ? 'aws-globe-bg-dark' : 'aws-globe-bg-light'}`}>
       <div className="aws-globe-pattern" />
@@ -268,7 +314,7 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
             }}
           />
 
-          <svg viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} className={`relative z-10 w-full ${lightweight ? 'block h-auto' : 'h-full'}`} aria-label="Flat world map">
+          <svg ref={svgRef} viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} className={`relative z-10 w-full ${lightweight ? 'block h-auto' : 'h-full'}`} style={{ userSelect: 'none', WebkitUserSelect: 'none' }} aria-label="Flat world map">
             {!lightweight && <defs>
               <filter id="flat-marker-glow" x="-200%" y="-200%" width="400%" height="400%">
                 <feGaussianBlur stdDeviation="7" result="blur" />
@@ -305,9 +351,8 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                 ))}
               </g>
 
-              <g>
+              <g ref={markerLayerRef}>
               {markers.filter((marker) => marker.x + pan.x >= -80 && marker.x + pan.x <= MAP_WIDTH + 80 && marker.y + pan.y >= -80 && marker.y + pan.y <= MAP_HEIGHT + 80).map((marker) => {
-                const payload = marker.members.length === 1 ? marker.members[0] : marker.members;
                 const visibleImages = marker.visibleImages;
                 const markerId = `${marker.lat}-${marker.lng}-${marker.members.length}`.replace(/[^a-zA-Z0-9_-]/g, '-');
                 const singleAvatarSize = marker.size * 2.05;
@@ -319,14 +364,19 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                 const stackOffsetX = visibleImages.length > 1 ? stackWidth / 2 : clusterAvatarSize / 2;
                 const badgeCount = Math.max(0, marker.members.length - visibleImages.length);
                 const markerHasNewMember = marker.hasNewMember;
-                const userGroupFlagUrl = !lightweight && category === 'user-groups'
+                const userGroupFlagUrl = !lightweight && !marker.isApproximate && category === 'user-groups'
                   ? getMemberCountryFlagUrl(marker.members[0])
                   : '';
                 const flagSize = marker.size * 2;
 
                 return (
-                  <g key={`${marker.lat}-${marker.lng}-${marker.members.length}`} transform={`translate(${marker.x} ${marker.y})`}>
-                    {userGroupFlagUrl ? (
+                  <g key={marker.key} data-svg-cluster-key={marker.key} data-cluster-count={marker.count} transform={`translate(${marker.x} ${marker.y})`}>
+                    {marker.isApproximate ? (
+                      <>
+                        <circle r={22 / svgScale} fill={markerColor} stroke={darkMode ? '#FFFFFF' : '#0F1923'} strokeWidth={2 / svgScale} pointerEvents="none" />
+                        <text y={1 / svgScale} textAnchor="middle" dominantBaseline="middle" fill="#FFFFFF" fontSize={13 / svgScale} fontWeight="800" pointerEvents="none">{marker.count}</text>
+                      </>
+                    ) : userGroupFlagUrl ? (
                       <>
                         <circle
                           r={marker.size * 1.08}
@@ -553,25 +603,23 @@ export default function FlatMapScene({ category, members, onMarkerClick, cardOpe
                       </g>
                     )}
                     <circle
-                      r={Math.max(marker.size + 12, singleAvatarSize * 0.8, clusterAvatarSize + 12)}
+                      r={marker.isApproximate ? 22 / svgScale : Math.max(22 / svgScale, marker.size + 12, singleAvatarSize * 0.8, clusterAvatarSize + 12)}
                       fill="transparent"
                       data-marker-interactive="true"
-                      aria-label={marker.members.length === 1 ? marker.members[0].name : `${marker.members.length} members at this location`}
+                      data-map-cluster={marker.isApproximate ? 'area' : undefined}
+                      role="button"
+                      tabIndex={0}
+                      aria-label={marker.isApproximate
+                        ? `${marker.count} ${['cloud-clubs', 'user-groups'].includes(category) ? 'groups' : ['community-days', 'kiro-events', 'builder-events'].includes(category) ? 'events' : 'members'} in this area. Zoom in to explore.`
+                        : marker.members.length === 1 ? marker.members[0].name : `${marker.count} members at this location`}
                       pointerEvents="all"
                       style={{ cursor: 'pointer' }}
-                      onClick={() => {
-                        if (suppressClickRef.current) {
-                          suppressClickRef.current = false;
-                          return;
+                      onClick={() => selectMarker(marker)}
+                      onKeyDown={event => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                          event.preventDefault();
+                          selectMarker(marker);
                         }
-                        setResetViewLockedKey(null);
-                        setPan({ x: 0, y: 0 });
-                        setFocusedTarget({ lat: marker.lat, lng: marker.lng });
-                        if (marker.members.length > 1 && effectiveZoom < 4.5) {
-                          setManualZoom((zoom) => clamp(zoom * 1.7, MIN_ZOOM, MAX_ZOOM));
-                          return;
-                        }
-                        onMarkerClick(payload);
                       }}
                     />
                   </g>

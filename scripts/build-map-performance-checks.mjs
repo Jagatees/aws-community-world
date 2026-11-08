@@ -10,13 +10,7 @@ await mkdir(root, { recursive: true });
 const existing = await readFile('scripts/test-map-overlays.mjs', 'utf8');
 let fake = existing.split('const fakeMapModule = `')[1].split('`;')[0];
 fake = fake.replace('constructor() {', 'constructor(options = {}) {')
-  .replace('this.zoom = 12;', 'this.zoom = options.zoom ?? 12;')
-  .replace('flyTo() {}', `flyTo(options = {}) { this.easeTo(options); }`)
-  .replace('easeTo() {}', `easeTo(options = {}) {
-    if (options.center) this.center = { lng: options.center[0], lat: options.center[1] };
-    if (options.zoom !== undefined) this.zoom = options.zoom;
-    this.emit('zoom'); this.triggerRepaint();
-  }`);
+  .replace('this.zoom = 12;', 'this.zoom = options.zoom ?? 12;');
 await writeFile(resolve(root, 'fake-map.js'), fake);
 await writeFile(resolve(root, 'index.html'), '<meta charset="utf-8"><pre id="report">Running…</pre><div id="root" style="width:1000px;height:600px"></div><script type="module" src="/scripts/fixtures/map-performance-checks.jsx"></script>');
 await build({

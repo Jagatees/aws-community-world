@@ -3,6 +3,8 @@ import createGlobe from 'cobe';
 import { countryCodeToFlag, getCountryCode } from '../utils/countryFlags';
 import { getMemberCountry, getRepresentedMemberCount, hasNewMember } from '../utils/memberMarkers';
 import { buildGlobeClusterLevels, getGlobeClusterLevel } from '../utils/globeClusters';
+import { clusterMembersByCoordinates } from '../utils/mapCoordinates';
+import { hasGlobeClusterTransitions, reconcileGlobeClusters, sampleGlobeClusters } from '../utils/globeClusterTransitions';
 import './GlobeScene.css';
 
 const CATEGORY_COLORS = {
@@ -43,6 +45,11 @@ const MOBILE_MAX_PIXEL_RATIO = 1.25;
 const DESKTOP_MAX_PIXEL_RATIO = 1.5;
 const MOBILE_MAP_SAMPLES = 10000;
 const DESKTOP_MAP_SAMPLES = 16000;
+const EXACT_LOCATION_SCALE = 2.7;
+
+function getMinimalClusterLevel(scale) {
+  return scale >= EXACT_LOCATION_SCALE ? 3 : getGlobeClusterLevel(scale);
+}
 
 const CATEGORY_LABELS = {
   'heroes': { icon: '✦', singular: 'Hero', plural: 'Heroes' },
@@ -212,7 +219,7 @@ function drawMarkers(canvas, markers, markerRgb, pixelRatio, spriteCache) {
       sprite = createMarkerSprite(radius, color, pixelRatio);
       spriteCache.set(key, sprite);
     }
-    context.globalAlpha = edgeFade;
+    context.globalAlpha = edgeFade * (marker.alpha ?? 1);
     context.drawImage(sprite, marker.x - sprite.width / 2, marker.y - sprite.height / 2);
     if (marker.hasNewMember) {
       const width = 30 * pixelRatio;
@@ -309,8 +316,12 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
   const markerRgb = useMemo(() => hexToRgb01(markerColor), [markerColor]);
 
   const clusterLevels = useMemo(
-    () =>
-      buildGlobeClusterLevels(members).map((level) => level.map((cluster, index) => ({
+    () => {
+      const levels = buildGlobeClusterLevels(members);
+      const exactLocations = clusterMembersByCoordinates(members.filter(member =>
+        Number.isFinite(member.lat) && Number.isFinite(member.lng)
+        && member.lat >= -90 && member.lat <= 90 && member.lng >= -180 && member.lng <= 180));
+      return [...levels, exactLocations].map((level) => level.map((cluster, index) => ({
         ...cluster,
         key: `${cluster.members[0]?.id ?? cluster.members[0]?.name ?? 'marker'}-${cluster.lat}-${cluster.lng}-${index}`,
         location: [cluster.lat, cluster.lng],
@@ -326,7 +337,8 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
             : SINGLE_MARKER_SIZE,
         color: markerRgb,
         label: getClusterLabel(cluster, category),
-      }))),
+      })));
+    },
     [category, members, markerRgb]
   );
 
@@ -389,6 +401,9 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     let isIntersecting = true;
     let rendererPaused = false;
     let previousFrame = null;
+    let previousLevels = null;
+    let previousClusters = null;
+    let clusterRecords = [];
     const spriteCache = new Map();
     const shouldAutoRotate = () => autoRotateEnabledRef.current
       && !prefersReducedMotionRef.current
@@ -441,9 +456,18 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
       markers: [],
       opacity: 1,
       onRender: (state) => {
-        const currentClusters = clusterLevelsRef.current[getGlobeClusterLevel(scaleRef.current)];
+        const levels = clusterLevelsRef.current;
+        const currentClusters = levels[getMinimalClusterLevel(scaleRef.current)];
         const theme = themeRef.current;
         const renderTime = performance.now();
+        if (previousClusters !== currentClusters) {
+          clusterRecords = reconcileGlobeClusters(clusterRecords, currentClusters, renderTime,
+            previousLevels === levels && !prefersReducedMotionRef.current);
+          previousClusters = currentClusters;
+          previousLevels = levels;
+        }
+        sampleGlobeClusters(clusterRecords, renderTime);
+        const clusterAnimating = hasGlobeClusterTransitions(clusterRecords);
         const elapsedSeconds = lastRenderTimeRef.current === null
           ? 0
           : Math.min((renderTime - lastRenderTimeRef.current) / 1000, 0.05);
@@ -479,29 +503,35 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
         // A selected card, manual zoom or reduced-motion preference can leave
         // the globe completely still. Stop the GPU loop until an interaction,
         // resize, data change or rotation timer requests another frame.
-        if (!animationRef.current && !shouldAutoRotate() && !pointerStateRef.current.active) {
+        if (!animationRef.current && !shouldAutoRotate() && !pointerStateRef.current.active && !clusterAnimating) {
           setRendererPaused(true);
         }
         if (previousFrame?.phi === state.phi && previousFrame.theta === state.theta
           && previousFrame.scale === state.scale && previousFrame.width === state.width
           && previousFrame.height === state.height && previousFrame.clusters === currentClusters
-          && previousFrame.markerRgb === theme.markerRgb) return;
+          && previousFrame.markerRgb === theme.markerRgb && !clusterAnimating && !previousFrame.clusterAnimating) return;
         previousFrame = { phi: state.phi, theta: state.theta, scale: state.scale,
-          width: state.width, height: state.height, clusters: currentClusters, markerRgb: theme.markerRgb };
+          width: state.width, height: state.height, clusters: currentClusters, markerRgb: theme.markerRgb, clusterAnimating };
 
         const rotation = { cosPhi: Math.cos(state.phi), sinPhi: Math.sin(state.phi),
           cosTheta: Math.cos(state.theta), sinTheta: Math.sin(state.theta) };
         const projected = [];
-        for (const cluster of currentClusters) {
-          const marker = projectMarker(cluster, rotation, state.width, state.height, state.scale);
+        for (const record of clusterRecords) {
+          if (record.complete) continue;
+          if (record.vectorLat !== record.lat || record.vectorLng !== record.lng) {
+            record.vector = latLngToVector(record.lat, record.lng);
+            record.vectorLat = record.lat;
+            record.vectorLng = record.lng;
+          }
+          const marker = projectMarker(record, rotation, state.width, state.height, state.scale);
           if (marker) projected.push(marker);
         }
         projected.sort((a, b) => b.z - a.z);
-        projectedMarkersRef.current = projected;
+        projectedMarkersRef.current = projected.filter(marker => !marker.exiting);
 
         drawMarkers(
           markerCanvasRef.current,
-          projectedMarkersRef.current,
+          projected,
           theme.markerRgb,
           pixelRatioRef.current,
           spriteCache
@@ -568,9 +598,10 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
           element.style.setProperty('--minimal-label-x', `${x}px`);
           element.style.setProperty('--minimal-label-y', `${labelBottom}px`);
           element.style.setProperty('--minimal-label-scale', String(0.92 + focus * 0.08));
-          element.style.opacity = String(focus);
-          const isVisible = focus > 0.04;
-          const isInteractive = focus > 0.55;
+          const opacity = focus * marker.alpha;
+          element.style.opacity = String(opacity);
+          const isVisible = opacity > 0.04;
+          const isInteractive = opacity > 0.55;
           if (element.dataset.visible !== String(isVisible)) {
             element.dataset.visible = String(isVisible);
             element.style.visibility = isVisible ? 'visible' : 'hidden';
@@ -604,7 +635,16 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     };
     const handleReducedMotionChange = (event) => {
       prefersReducedMotionRef.current = event.matches;
-      if (event.matches) autoRotateEnabledRef.current = false;
+      if (event.matches) {
+        autoRotateEnabledRef.current = false;
+        if (animationRef.current) {
+          phiRef.current = animationRef.current.targetPhi;
+          thetaRef.current = animationRef.current.targetTheta;
+          animationRef.current = null;
+        }
+        if (previousClusters) clusterRecords = reconcileGlobeClusters(clusterRecords, previousClusters, performance.now(), false);
+        previousFrame = null;
+      }
       else if (!pauseRotationRef.current && !markerFocusLockedRef.current) autoRotateEnabledRef.current = true;
       wakeRenderer();
     };
@@ -645,6 +685,13 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
 
   function animateToLocation(lat, lng, duration = 800) {
     const target = getRotationForLocation(lat, lng);
+    if (prefersReducedMotionRef.current) {
+      phiRef.current += normalizeAngle(target.phi - phiRef.current);
+      thetaRef.current = clamp(target.theta, -MAX_TILT, MAX_TILT);
+      animationRef.current = null;
+      wakeRendererRef.current();
+      return;
+    }
     animationRef.current = {
       startTime: null,
       duration,
@@ -828,12 +875,7 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     const hitMarker = findHitMarker(event);
     if (!hitMarker) return;
 
-    markerFocusLockedRef.current = true;
-    autoRotateEnabledRef.current = false;
-    if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-    animateToLocation(hitMarker.lat, hitMarker.lng);
-    const payload = hitMarker.members.length === 1 ? hitMarker.members[0] : hitMarker.members;
-    onMarkerClick(payload);
+    selectGlobeCluster(hitMarker);
   }
 
   function handlePointerUp(event) {
@@ -854,14 +896,25 @@ export default function GlobeScene({ category, members, onMarkerClick, cardOpen,
     event.currentTarget.style.cursor = 'grab';
   }
 
-  function handleLabelClick(cluster) {
+  function selectGlobeCluster(cluster) {
     if (!cluster) return;
+    const source = cluster.cluster ?? cluster;
     markerFocusLockedRef.current = true;
     autoRotateEnabledRef.current = false;
     if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-    animateToLocation(cluster.lat, cluster.lng);
-    const payload = cluster.members.length === 1 ? cluster.members[0] : cluster.members;
+    if (source.isApproximate) {
+      const level = getMinimalClusterLevel(scaleRef.current);
+      scaleRef.current = [1.42, 2.23, 2.82][level] ?? MAX_SCALE;
+      animateToLocation(source.lat, source.lng);
+      return;
+    }
+    animateToLocation(source.lat, source.lng);
+    const payload = source.members.length === 1 ? source.members[0] : source.members;
     onMarkerClick(payload);
+  }
+
+  function handleLabelClick(cluster) {
+    selectGlobeCluster(cluster);
   }
 
   return (
