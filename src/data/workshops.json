@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-09T07:39:17.440Z",
+  "checkedAt": "2026-11-10T07:59:45.555Z",
   "productCount": 235,
   "services": [
     {
@@ -413,10 +413,10 @@
       "id": "amazon-ec2-spot-instances",
       "name": "Amazon EC2 Spot Instances",
       "description": "Run workloads for up to 90% off",
-      "category": "Cloud Financial Management",
+      "category": "Compute",
       "categories": [
-        "Cloud Financial Management",
-        "Compute"
+        "Compute",
+        "Cloud Financial Management"
       ],
       "url": "https://aws.amazon.com/ec2/spot/",
       "aliases": [],
@@ -1009,10 +1009,10 @@
       "id": "amazon-pinpoint",
       "name": "Amazon Pinpoint",
       "description": "Multichannel marketing communications",
-      "category": "Business Applications",
+      "category": "Front End Web & Mobile",
       "categories": [
-        "Business Applications",
-        "Front End Web & Mobile"
+        "Front End Web & Mobile",
+        "Business Applications"
       ],
       "url": "https://aws.amazon.com/pinpoint/",
       "aliases": [],
@@ -1063,18 +1063,6 @@
         "Blockchain"
       ],
       "url": "https://aws.amazon.com/qldb/",
-      "aliases": [],
-      "kind": "product"
-    },
-    {
-      "id": "amazon-quick",
-      "name": "Amazon Quick",
-      "description": "AI-powered assistant for work with research, business insights, automation, and no-code app building",
-      "category": "Business Applications",
-      "categories": [
-        "Business Applications"
-      ],
-      "url": "https://aws.amazon.com/quick/",
       "aliases": [],
       "kind": "product"
     },
@@ -1528,10 +1516,10 @@
       "id": "aws-appstudio",
       "name": "AWS App Studio",
       "description": "The fastest and easiest way to build enterprise-grade applications",
-      "category": "AI & Machine Learning",
+      "category": "Developer Tools",
       "categories": [
-        "AI & Machine Learning",
-        "Developer Tools"
+        "Developer Tools",
+        "AI & Machine Learning"
       ],
       "url": "https://aws.amazon.com/appstudio/",
       "aliases": [],
@@ -1858,10 +1846,10 @@
       "id": "aws-command-line-interface",
       "name": "AWS Command Line Interface (CLI)",
       "description": "Line Interface Unified tool to manage AWS services",
-      "category": "Management & Governance",
+      "category": "Developer Tools",
       "categories": [
-        "Management & Governance",
-        "Developer Tools"
+        "Developer Tools",
+        "Management & Governance"
       ],
       "url": "https://aws.amazon.com/cli/",
       "aliases": [],
@@ -1871,10 +1859,10 @@
       "id": "aws-compute-optimizer",
       "name": "AWS Compute Optimizer",
       "description": "Identify optimal AWS Compute resources",
-      "category": "Management & Governance",
+      "category": "Compute",
       "categories": [
-        "Management & Governance",
-        "Compute"
+        "Compute",
+        "Management & Governance"
       ],
       "url": "https://aws.amazon.com/compute-optimizer/",
       "aliases": [],
@@ -2247,10 +2235,10 @@
       "id": "aws-fargate",
       "name": "AWS Fargate",
       "description": "Serverless compute for containers",
-      "category": "Containers",
+      "category": "Compute",
       "categories": [
-        "Containers",
         "Compute",
+        "Containers",
         "Serverless"
       ],
       "url": "https://aws.amazon.com/fargate/",
@@ -2729,6 +2717,18 @@
       "kind": "product"
     },
     {
+      "id": "amazon-quick",
+      "name": "AWS Quick",
+      "description": "AI-powered workspace for work with research, business insights, automation, and no-code app building",
+      "category": "Business Applications",
+      "categories": [
+        "Business Applications"
+      ],
+      "url": "https://aws.amazon.com/quick/",
+      "aliases": [],
+      "kind": "product"
+    },
+    {
       "id": "aws-resilience-hub",
       "name": "AWS Resilience Hub",
       "description": "Prepare and protect your applications from disruptions",
@@ -3094,10 +3094,10 @@
       "id": "aws-well-architected-tool",
       "name": "AWS Well-Architected Tool",
       "description": "Review and improve your workloads",
-      "category": "Management & Governance",
+      "category": "Architecture Strategy",
       "categories": [
-        "Management & Governance",
-        "Architecture Strategy"
+        "Architecture Strategy",
+        "Management & Governance"
       ],
       "url": "https://aws.amazon.com/well-architected-tool/",
       "aliases": [],
@@ -3927,7 +3927,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-23T15:52:26Z",
+      "updatedAt": "2026-11-09T20:08:19Z",
       "createdAt": "2023-07-27T21:05:14Z",
       "sandboxAvailable": false
     },
@@ -4339,7 +4339,7 @@
       "id": "0135d1da-9f07-470c-9845-44ead3c78212",
       "title": "Amazon RDS for MySQL Workshop",
       "description": "This workshop covers the essential concepts required to effectively set up and manage databases on Amazon RDS for MySQL. Key sessions include high availability and disaster recovery (HA/DR), RDS Proxy, and a deep dive into configuring an active-active cluster using MySQL Group Replication. It also explores the Amazon Athena Federated Query feature, enabling you to run SQL queries across data stored in RDS for MySQL as well as data lakes hosted on Amazon S3.",
-      "url": "https://catalog.workshops.aws/workshops/0135d1da-9f07-470c-9845-44ead3c78212",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/0135d1da-9f07-470c-9845-44ead3c78212",
       "services": [
         "Amazon RDS for MySQL"
       ],
@@ -4355,7 +4355,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-07-07T08:48:50Z",
+      "updatedAt": "2026-11-10T06:53:43Z",
       "createdAt": "2021-07-23T02:39:45Z",
       "sandboxAvailable": false
     },
@@ -5120,7 +5120,7 @@
       "id": "6bff9693-78fe-4ab5-9695-0d85356f4d80",
       "title": "AWS HealthOmics: Modernizing Genomics from Storage to GenAI",
       "description": "Learn to modernize genomics workloads using AWS HealthOmics. This hands-on workshop covers genomic data storage with Reference and Sequence Stores, running WDL/Nextflow workflows, migrating nf-core pipelines, querying variant data with S3 Tables and Athena, and leveraging Kiro CLI for AI-assisted workflow development. Build production-ready genomics pipelines from storage to analysis.",
-      "url": "https://catalog.workshops.aws/workshops/6bff9693-78fe-4ab5-9695-0d85356f4d80",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/6bff9693-78fe-4ab5-9695-0d85356f4d80",
       "services": [
         "AWS HealthOmics",
         "Amazon S3 Tables",
@@ -5144,7 +5144,7 @@
         "en",
         "ko"
       ],
-      "updatedAt": "2026-06-14T22:28:08Z",
+      "updatedAt": "2026-11-10T00:41:33Z",
       "createdAt": "2025-06-21T03:22:20Z",
       "sandboxAvailable": false
     },
@@ -5787,7 +5787,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-09T04:37:01Z",
+      "updatedAt": "2026-11-09T22:13:06Z",
       "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
@@ -6275,7 +6275,7 @@
         "en",
         "ja"
       ],
-      "updatedAt": "2026-09-03T22:48:00Z",
+      "updatedAt": "2026-11-09T19:16:37Z",
       "createdAt": "2022-04-01T15:03:24Z",
       "sandboxAvailable": false
     },
@@ -6448,7 +6448,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-09-16T10:45:50Z",
+      "updatedAt": "2026-11-09T13:34:20Z",
       "createdAt": "2026-02-01T23:12:40Z",
       "sandboxAvailable": false
     },
@@ -6763,7 +6763,7 @@
         "pt",
         "es"
       ],
-      "updatedAt": "2026-10-22T16:14:00Z",
+      "updatedAt": "2026-11-09T23:11:00Z",
       "createdAt": "2026-05-08T22:52:59Z",
       "sandboxAvailable": false
     },
@@ -7697,7 +7697,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-08T06:09:27Z",
+      "updatedAt": "2026-11-09T20:39:30Z",
       "createdAt": "2024-09-12T13:35:53Z",
       "sandboxAvailable": false
     },
@@ -8720,7 +8720,7 @@
         "zh",
         "ko"
       ],
-      "updatedAt": "2026-10-27T18:59:44Z",
+      "updatedAt": "2026-11-10T03:09:10Z",
       "createdAt": "2022-02-23T06:11:42Z",
       "sandboxAvailable": true
     },
