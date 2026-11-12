@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-11T07:29:16.465Z",
+  "updatedAt": "2026-11-12T07:57:04.509Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -15583,7 +15583,9 @@
     {
       "date": "2026-11-11",
       "source": {
-        "type": "working-tree"
+        "type": "git",
+        "commit": "6119021",
+        "subject": "chore: refresh community feeds and insights"
       },
       "categories": {
         "heroes": {
@@ -15877,24 +15879,322 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-11-12",
+      "source": {
+        "type": "working-tree"
+      },
+      "categories": {
+        "heroes": {
+          "total": 255,
+          "classified": 248,
+          "unclassified": 7,
+          "coveragePercent": 97.3,
+          "regions": {
+            "north-america": 53,
+            "south-america": 14,
+            "europe": 76,
+            "asia": 85,
+            "africa": 6,
+            "oceania": 14
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 255,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "community-builders": {
+          "total": 3041,
+          "classified": 2891,
+          "unclassified": 150,
+          "coveragePercent": 95.1,
+          "regions": {
+            "north-america": 505,
+            "south-america": 259,
+            "europe": 572,
+            "asia": 1189,
+            "africa": 267,
+            "oceania": 99
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 3041,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "user-groups": {
+          "total": 609,
+          "classified": 608,
+          "unclassified": 1,
+          "coveragePercent": 99.8,
+          "regions": {
+            "north-america": 113,
+            "south-america": 98,
+            "europe": 164,
+            "asia": 182,
+            "africa": 33,
+            "oceania": 18
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 609,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "cloud-clubs": {
+          "total": 1626,
+          "classified": 1611,
+          "unclassified": 15,
+          "coveragePercent": 99.1,
+          "regions": {
+            "north-america": 187,
+            "south-america": 187,
+            "europe": 61,
+            "asia": 1019,
+            "africa": 146,
+            "oceania": 11
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 1626,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Stable directory shape and geographic coverage."
+              ]
+            }
+          }
+        },
+        "kiro-events": {
+          "total": 11,
+          "classified": 1,
+          "unclassified": 10,
+          "coveragePercent": 9.1,
+          "regions": {
+            "north-america": 1,
+            "south-america": 0,
+            "europe": 0,
+            "asia": 0,
+            "africa": 0,
+            "oceania": 0
+          },
+          "changes": {
+            "added": 0,
+            "removed": 1,
+            "net": -1,
+            "retained": 11,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 1,
+            "addedItems": [],
+            "removedItems": [
+              {
+                "name": "Build a game with Kiro in 30 minutes",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://luma.com/br61ma27"
+              }
+            ],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        },
+        "community-days": {
+          "total": 38,
+          "classified": 38,
+          "unclassified": 0,
+          "coveragePercent": 100,
+          "regions": {
+            "north-america": 5,
+            "south-america": 9,
+            "europe": 9,
+            "asia": 10,
+            "africa": 3,
+            "oceania": 2
+          },
+          "changes": {
+            "added": 0,
+            "removed": 0,
+            "net": 0,
+            "retained": 38,
+            "addedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "removedByRegion": {
+              "north-america": 0,
+              "south-america": 0,
+              "europe": 0,
+              "asia": 0,
+              "africa": 0,
+              "oceania": 0
+            },
+            "addedUnclassified": 0,
+            "removedUnclassified": 0,
+            "addedItems": [],
+            "removedItems": [],
+            "quality": {
+              "confidence": "high",
+              "comparable": true,
+              "reasons": [
+                "Event catalogs naturally add upcoming items and remove completed events."
+              ]
+            }
+          }
+        }
+      }
     }
   ],
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-11-11",
-      "daysCovered": 227
+      "endDate": "2026-11-12",
+      "daysCovered": 228
     },
     "global": {
-      "totalRecords": 5581,
+      "totalRecords": 5580,
       "classifiedRecords": 5397,
       "coveragePercent": 96.7,
-      "snapshots": 37
+      "snapshots": 38
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-11",
+        "currentDate": "2026-11-12",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 97.3,
@@ -16451,7 +16751,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-11",
+        "currentDate": "2026-11-12",
         "baselineTotal": 2494,
         "currentTotal": 3041,
         "currentCoveragePercent": 95.1,
@@ -17007,7 +17307,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-11",
+        "currentDate": "2026-11-12",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -17564,7 +17864,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-11",
+        "currentDate": "2026-11-12",
         "baselineTotal": 623,
         "currentTotal": 1626,
         "currentCoveragePercent": 99.1,
@@ -18325,14 +18625,14 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-11-11",
+        "currentDate": "2026-11-12",
         "baselineTotal": 17,
-        "currentTotal": 12,
-        "currentCoveragePercent": 8.3,
+        "currentTotal": 11,
+        "currentCoveragePercent": 9.1,
         "periodChange": {
-          "added": 12,
+          "added": 11,
           "removed": 17,
-          "net": -5,
+          "net": -6,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
@@ -18372,13 +18672,6 @@
               "country": "Online",
               "region": null,
               "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/"
-            },
-            {
-              "name": "Build a game with Kiro in 30 minutes",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://luma.com/br61ma27"
             },
             {
               "name": "CUSEC 2027",
@@ -18613,11 +18906,11 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-11-11",
+          "date": "2026-11-12",
           "added": 0,
           "removed": 1,
           "net": -1,
-          "retained": 12,
+          "retained": 11,
           "addedByRegion": {
             "north-america": 0,
             "south-america": 0,
@@ -18639,11 +18932,11 @@
           "addedItems": [],
           "removedItems": [
             {
-              "name": "Young Talent Programme for AI in Finance (YTP-AIF)",
+              "name": "Build a game with Kiro in 30 minutes",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://www.ibf.org.sg/home/for-financial-institutions/talent-development-and-training-support/develop-young-talent/ytp-aif"
+              "url": "https://luma.com/br61ma27"
             }
           ],
           "quality": {
@@ -18657,7 +18950,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-11-11",
+        "currentDate": "2026-11-12",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -18987,8 +19280,8 @@
       }
     },
     "upcoming": {
-      "total": 11,
-      "next30Days": 8,
+      "total": 10,
+      "next30Days": 7,
       "byRegion": {
         "north-america": 1,
         "south-america": 1,
@@ -18998,15 +19291,6 @@
         "oceania": 0
       },
       "items": [
-        {
-          "name": "Build a game with Kiro in 30 minutes",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://luma.com/br61ma27",
-          "category": "kiro-events",
-          "date": "2026-11-11T18:00:00.000Z"
-        },
         {
           "name": "AWS Student Community Day Mexico City",
           "location": "Online",

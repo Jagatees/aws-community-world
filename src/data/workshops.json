@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-11T07:29:28.370Z",
+  "checkedAt": "2026-11-12T07:57:14.807Z",
   "productCount": 235,
   "services": [
     {
@@ -4013,7 +4013,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-08-25T12:21:00Z",
+      "updatedAt": "2026-11-11T07:26:03Z",
       "createdAt": "2022-11-07T11:45:29Z",
       "sandboxAvailable": false
     },
@@ -4233,34 +4233,6 @@
       "sandboxAvailable": false
     },
     {
-      "id": "bc479913-643f-4adb-80a7-115626fba1c0",
-      "title": "Amazon Quick for Automotive & Manufacturing: From Data to Decisions",
-      "description": "Welcome! This hands-on workshop guides you through the key features of the Amazon Quick using a practical automotive and manufacturing scenario — from Chat and Spaces to Flows and QuickSight analytics, run end-to-end.",
-      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/bc479913-643f-4adb-80a7-115626fba1c0",
-      "services": [
-        "Amazon Quick Suite",
-        "Amazon QuickSight"
-      ],
-      "serviceIds": [
-        "catalog-amazon-quick-suite",
-        "amazon-quicksight"
-      ],
-      "topics": [
-        "Analytics",
-        "Automotive",
-        "Generative AI",
-        "Machine Learning (ML/AI)"
-      ],
-      "level": "200",
-      "durationHours": 3,
-      "languages": [
-        "en"
-      ],
-      "updatedAt": "2026-10-16T16:58:54Z",
-      "createdAt": "2026-09-22T12:42:32Z",
-      "sandboxAvailable": false
-    },
-    {
       "id": "18d0858d-b17f-4275-9150-8fd940f0b2d5",
       "title": "Amazon Quick for Energy & Utilities",
       "description": "Step into the role of a Energy Operations Director and learn Amazon Quick hands-on. Through progressive modules, you'll use AI-powered chat, Spaces, autonomous research, workflow automation, custom agents, and analytics to solve real renewable energy operations challenges, from wind turbine maintenance to solar performance and regulatory compliance. No ML expertise required. Available as an AWS event or self-paced.",
@@ -4454,7 +4426,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-10-05T22:33:39Z",
+      "updatedAt": "2026-11-11T19:48:10Z",
       "createdAt": "2021-07-23T02:57:29Z",
       "sandboxAvailable": true
     },
@@ -5144,7 +5116,7 @@
         "en",
         "ko"
       ],
-      "updatedAt": "2026-11-10T00:41:33Z",
+      "updatedAt": "2026-11-12T00:34:57Z",
       "createdAt": "2025-06-21T03:22:20Z",
       "sandboxAvailable": false
     },
@@ -5572,6 +5544,34 @@
       "sandboxAvailable": false
     },
     {
+      "id": "bc479913-643f-4adb-80a7-115626fba1c0",
+      "title": "AWS Quick for Automotive & Manufacturing: From Data to Decisions",
+      "description": "Welcome! This hands-on workshop guides you through the key features of the AWS Quick using a practical automotive and manufacturing scenario — from Chat and Spaces to Flows and QuickSight analytics, run end-to-end.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/bc479913-643f-4adb-80a7-115626fba1c0",
+      "services": [
+        "Amazon Quick Suite",
+        "Amazon QuickSight"
+      ],
+      "serviceIds": [
+        "catalog-amazon-quick-suite",
+        "amazon-quicksight"
+      ],
+      "topics": [
+        "Analytics",
+        "Automotive",
+        "Generative AI",
+        "Machine Learning (ML/AI)"
+      ],
+      "level": "200",
+      "durationHours": 3,
+      "languages": [
+        "en"
+      ],
+      "updatedAt": "2026-11-11T17:13:44Z",
+      "createdAt": "2026-09-22T12:42:32Z",
+      "sandboxAvailable": false
+    },
+    {
       "id": "9a27e484-7336-4ed0-8f90-f2747e4ac65c",
       "title": "AWS Serverless Developer Experience",
       "description": "This workshop is a hands-on training program to develop serverless skills using AWS SAM and SAM CLI. It focuses on practical, code-centric learning with real-world scenarios, covering distributed event-driven architectures, messaging patterns, orchestration, and observability. Participants will use open-source tools, Powertools for AWS, and CI/CD. Available in Python, TypeScript, Java, or .NET.",
@@ -5822,7 +5822,7 @@
       "id": "2ae99bf2-10df-444f-a21f-8ad0537a9bdd",
       "title": "Build Your First Graph Application with Amazon Neptune",
       "description": "Learn everything you need to know to get started with graph databases on Amazon Neptune. This includes how to set up, configure, and manage a Neptune Database cluster according to operational best practices, how to write graph queries, and how to integrate Neptune Database into a full end-to-end solution with a user interface.",
-      "url": "https://catalog.workshops.aws/workshops/2ae99bf2-10df-444f-a21f-8ad0537a9bdd",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/2ae99bf2-10df-444f-a21f-8ad0537a9bdd",
       "services": [
         "Amazon Neptune"
       ],
@@ -5838,7 +5838,7 @@
         "ja",
         "en"
       ],
-      "updatedAt": "2026-07-21T15:15:05Z",
+      "updatedAt": "2026-11-11T15:24:42Z",
       "createdAt": "2021-07-23T02:03:46Z",
       "sandboxAvailable": false
     },
@@ -5893,7 +5893,7 @@
         "es",
         "pt"
       ],
-      "updatedAt": "2026-11-11T01:10:59Z",
+      "updatedAt": "2026-11-12T03:38:40Z",
       "createdAt": "2026-05-21T00:21:17Z",
       "sandboxAvailable": true
     },
@@ -7615,7 +7615,7 @@
         "ja",
         "fr"
       ],
-      "updatedAt": "2026-11-10T10:46:03Z",
+      "updatedAt": "2026-11-11T14:30:14Z",
       "createdAt": "2025-09-19T09:40:20Z",
       "sandboxAvailable": false
     },
@@ -7697,7 +7697,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-09T20:39:30Z",
+      "updatedAt": "2026-11-11T13:47:57Z",
       "createdAt": "2024-09-12T13:35:53Z",
       "sandboxAvailable": false
     },
