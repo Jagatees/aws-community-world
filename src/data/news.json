@@ -1,223 +1,248 @@
 {
-  "updatedAt": "2026-11-14T07:20:03.166Z",
+  "updatedAt": "2026-11-15T07:32:31.171Z",
   "latest": [
     {
-      "id": "/content/3M5VbZOBYJ48qL79nUwylM7yN0p",
-      "title": "Securing the Cloud: A Beginner's Guide to AWS Security Best Practices",
-      "description": "Cloud security is more than just deploying resources—it's about protecting identities, data, applications, and infrastructure. This beginner-friendly guide explores essential AWS security best practices, including IAM, MFA, encryption, Amazon S3 security, network protection, CloudTrail, GuardDuty, and Security Hub. Learn how these services and security principles help build a safer and more resilient cloud environment.",
-      "url": "https://builder.aws.com/content/3M5VbZOBYJ48qL79nUwylM7yN0p",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M5VmeCRdPM8Vv1dz22h6Xt6206/1000.webp",
-      "authorName": "Dharshitha",
-      "authorAlias": "dharshitha2006",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KGpvw1uRu4B6M7qGrMBZEF0RlP.webp",
-      "location": "IN",
-      "lat": 22.3511148,
-      "lng": 78.6677428,
-      "tags": [
-        "aws-builders"
-      ],
-      "publishedAt": "2026-11-14T07:17:49.944Z",
-      "likesCount": 3,
-      "commentsCount": 1
-    },
-    {
-      "id": "/content/3M5UnVIUtbMVpw1DGAzwDJicXQl",
-      "title": "Dockerizing a Streaming Engine on AWS",
-      "description": "A hands-on guide to deploying Wowza Streaming Engine on AWS EC2 using Docker Compose. Learn how to build a cloud-based live streaming infrastructure, ingest RTMP streams from OBS Studio, deliver HLS streams to viewers using VLC, and restream live content to YouTube and other social media platforms.",
-      "url": "https://builder.aws.com/content/3M5UnVIUtbMVpw1DGAzwDJicXQl",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M5VjUJuM8DBtv3ZAndVz01Xg1S/w2-p.webp",
-      "authorName": "Mahmoud Khatib",
-      "authorAlias": "mahmoudkhatib",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rF2T8LV7ViP1hVDDKY4BxoLmMJ.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "livestreaming",
-        "marketplace",
-        "stream-processing",
-        "youtube"
-      ],
-      "publishedAt": "2026-11-14T07:17:43.010Z",
-      "likesCount": 3,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3M5UFEl3K7uekiSvUn7p0mHeIwi",
-      "title": "AWS VPC Explained: How AWS Networking Works Behind the Scenes",
-      "description": "Explore how Amazon VPC works and understand the fundamentals of AWS cloud networking. Learn about public and private subnets, Internet Gateways, route tables, Security Groups, and Network ACLs through simple explanations and real-world examples. A beginner-friendly guide to understanding how AWS resources communicate securely and how cloud network architecture is designed. 🚀",
-      "url": "https://builder.aws.com/content/3M5UFEl3K7uekiSvUn7p0mHeIwi",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M5V8mMJccEfQ0RKtA41mtLPXdK/AWS-.webp",
-      "authorName": "Sahana R",
-      "authorAlias": "saha01",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LXTtIRoK0SvdhbOboyfyqVpA1Z.webp",
+      "id": "/content/3M8KIcdKcpXx5iKclQ2UOuLQuvF",
+      "title": "Naan Irukken: Serverless Daily Check-In for Elderly Parents",
+      "description": "A one-tap daily check-in for parents living alone, with family escalation built on Step Functions task tokens, Lambda, DynamoDB and S3.",
+      "url": "https://builder.aws.com/content/3M8KIcdKcpXx5iKclQ2UOuLQuvF",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M8KZV9p6gTjljdVbxG9FeKocDX/cove.webp",
+      "authorName": "Thirumalaiboobathi B",
+      "authorAlias": "thirumalaiboobathi2",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3EsfUWXMWAbu49n4kxeDo7LAX4k.webp",
       "location": "Tamil Nadu, IN",
       "lat": 11.3323723,
       "lng": 78.6098639,
       "tags": [
-        "amazon-vpc",
-        "networking",
-        "cloud-security",
-        "cloud-networking",
-        "aws-networking"
+        "aws-sam",
+        "step-functions",
+        "hackathon"
       ],
-      "publishedAt": "2026-11-14T07:15:35.771Z",
-      "likesCount": 3,
-      "commentsCount": 3
-    },
-    {
-      "id": "/content/3M5B8HRH48zbJT6IJ9r64ZM4uuu",
-      "title": "What If You Could Run AWS Without AWS?",
-      "description": "What if you could build and test applications using AWS services without connecting to the actual AWS cloud? Meet AWS Emulator, a new tool from AWS that brings local AWS development to your machine. Let's see how it works, what makes it interesting, and why developers should pay attention.",
-      "url": "https://builder.aws.com/content/3M5B8HRH48zbJT6IJ9r64ZM4uuu",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M5TvpexkBYxlIloYHIlycMD89B/Deve.webp",
-      "authorName": "Sasivarnasarma",
-      "authorAlias": "sasivarnasarma",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IVRM2T70tMnLtQPduwvX2eKGXH.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "aws-cli",
-        "aws-sdk",
-        "sdk",
-        "agents",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-11-14T07:14:37.324Z",
-      "likesCount": 0,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3M5U7QNoGsuCoBssB66x1OY5OT9",
-      "title": "Building Secure and Scalable Serverless Applications with AWS",
-      "description": "Explore how AWS serverless services work together to build scalable applications without managing servers. Learn practical architecture patterns, security considerations, monitoring strategies, and cost optimization techniques.",
-      "url": "https://builder.aws.com/content/3M5U7QNoGsuCoBssB66x1OY5OT9",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M5UbfCFlQxtU0TWOqcvMWq8qVY/AWS-.webp",
-      "authorName": "Abdur Rahmaan Mohamed",
-      "authorAlias": "abdvrrahmaan",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LOyzTXESzVmgF59IhALORhigzm.webp",
-      "location": "QA",
-      "lat": 25.3336984,
-      "lng": 51.2295295,
-      "tags": [
-        "serverless",
-        "aws-serverless-application-repository",
-        "aws-lambda",
-        "cloud-concepts",
-        "aws-cloud-clubs"
-      ],
-      "publishedAt": "2026-11-14T07:08:54.973Z",
-      "likesCount": 7,
+      "publishedAt": "2026-11-15T07:26:05.406Z",
+      "likesCount": 5,
       "commentsCount": 4
     },
     {
-      "id": "/content/3M5TkZkVdRooQStILRkxny4sx4z",
-      "title": "Your VPN Knows Who Connected. Does It Know What They Connected From?",
-      "description": "User authentication is only one part of zero-trust access. Explore how AWS Client VPN device posture assessment uses device trust providers, Cedar policies, and continuous evaluation to make network access depend on device health.",
-      "url": "https://builder.aws.com/content/3M5TkZkVdRooQStILRkxny4sx4z",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M5UMwXEfAfNNtgvB7xoA7Mrg9l/AWS-.webp",
-      "authorName": "Rushikesh Bobade",
-      "authorAlias": "rushikesh369",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JMxP5N7EgzuowhnEvVqn5zOduf.webp",
+      "id": "/content/3M8KOD5thpMRaj05iSjV18VfXFa",
+      "title": "Data Lakes vs. Data Warehouses on AWS: Choosing the Right Storage Layer (Data Analytics Series – Part 4)",
+      "description": "Continuing our AWS Data Analytics Series: learn how to architect the storage layer after ETL/ELT pipelines by comparing Amazon S3 data lakes, Amazon Redshift data warehouses, and modern lakehouse patterns.",
+      "url": "https://builder.aws.com/content/3M8KOD5thpMRaj05iSjV18VfXFa",
+      "imageUrl": "",
+      "authorName": "AADHAVAN K",
+      "authorAlias": "aadhavank2008",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ISPcGUNRoFNc7KBGdt29CnpW75.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "data-analytics",
+        "amazon-s3",
+        "amazon-redshift",
+        "big-data",
+        "data-engineering"
+      ],
+      "publishedAt": "2026-11-15T07:24:14.332Z",
+      "likesCount": 3,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3M8JFki4rUbCAdfz4oPCNmgH9ID",
+      "title": "Serverless IoT: Bridging ESP32 Sensor Telemetry with AWS IoT Core and Spring Boot",
+      "description": "A complete guide to securely ingesting environmental data from ESP32 microcontrollers (using DHT11 and MQ-135 sensors) via AWS IoT Core, and processing the telemetry in real-time through a Java Spring Boot microservice.",
+      "url": "https://builder.aws.com/content/3M8JFki4rUbCAdfz4oPCNmgH9ID",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M8LQ7Ef5JvHbok51WwAR2ojO1j/Cove.webp",
+      "authorName": "Adarsh Ojha",
+      "authorAlias": "adarshojha1224",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KXgzhzzOs6rQQDTP68DV8nBafY.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "aws-iot",
+        "spring-boot",
+        "amazon-sqs",
+        "java",
+        "aws-edge-services"
+      ],
+      "publishedAt": "2026-11-15T07:23:23.960Z",
+      "likesCount": 5,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3M8KMwGoqSFCyTAFZNpu2r38grw",
+      "title": "Adding Nginx Behind an AWS ALB to Close Security Header and Rate-Limiting Gaps",
+      "description": "An Application Load Balancer handles TLS and routing well, but it can't set security headers, rate limit per client, or hide server details. A thin Nginx layer fills those gaps without changing application code.",
+      "url": "https://builder.aws.com/content/3M8KMwGoqSFCyTAFZNpu2r38grw",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M8LDYDr06CBimygmFqUpi9yW3E/alb-n.webp",
+      "authorName": "Nagulesh Nallusamy",
+      "authorAlias": "nagulesh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LaoOeLPfFuXBzjWzbjMcoTqAns.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "nginx",
+        "security",
+        "amazon-ecs",
+        "amazon-ec2",
+        "elastic-load-balancing"
+      ],
+      "publishedAt": "2026-11-15T07:21:49.218Z",
+      "likesCount": 2,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3M8JRIeWIpDfSPYJhnouiyIPVet",
+      "title": "AWS IAM Explained: Users, Groups, Roles and Policies",
+      "description": "Learn AWS Identity and Access Management from scratch. Understand IAM users, groups, roles, policies, permissions, and how to securely control access to AWS resources.",
+      "url": "https://builder.aws.com/content/3M8JRIeWIpDfSPYJhnouiyIPVet",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M8KTWKFdyqjPqkwTVoMYgHuXHK/AWS-.webp",
+      "authorName": "Mit",
+      "authorAlias": "mitparekh",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KgzypaohS5DIgs4vCegwE9ddoK.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "cloud-concepts",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-11-15T07:14:33.251Z",
+      "likesCount": 10,
+      "commentsCount": 9
+    },
+    {
+      "id": "/content/3M8JkF78h0jwZalhAfXd5mA61kK",
+      "title": "AWS IAM Explained: Why Identity and Access Management Is the Foundation of Cloud Security",
+      "description": "IAM decides who can do what in every AWS account. This guide explains users, groups, roles, and policies, how AWS evaluates a request, and the least-privilege habits that keep an account secure.",
+      "url": "https://builder.aws.com/content/3M8JkF78h0jwZalhAfXd5mA61kK",
+      "imageUrl": "",
+      "authorName": "Faizan Patel",
+      "authorAlias": "faizanpatel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JgnXDtKIlFyCFirPEvyOSZhj9T.webp",
       "location": "Maharashtra, IN",
       "lat": 19.5670323,
       "lng": 76.4164557,
       "tags": [
-        "prototype-to-production",
-        "cybersecurity",
-        "cloud-networking",
-        "vpc",
-        "aws-community-builders"
+        "iam",
+        "security",
+        "cloud-security",
+        "devops"
       ],
-      "publishedAt": "2026-11-14T07:05:40.857Z",
-      "likesCount": 7,
-      "commentsCount": 12
-    },
-    {
-      "id": "/content/3M5T0ETQuzEk2edqRN5vCrpN2mU",
-      "title": "My IBC 2026 Takeaways: AWS Cloud, MCP and the Agentic Future of Media",
-      "description": "Exploring key takeaways from IBC 2026, where cloud technologies, Model Context Protocol (MCP), and agentic AI are shaping the future of broadcast and media workflows. A look at how intelligent automation, interoperability, and AI-driven operations are transforming the media industry.",
-      "url": "https://builder.aws.com/content/3M5T0ETQuzEk2edqRN5vCrpN2mU",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M5TCXfFfeh1nzzROPhXl2AWAMe/1_Mlw.webp",
-      "authorName": "Mahmoud Khatib",
-      "authorAlias": "mahmoudkhatib",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rF2T8LV7ViP1hVDDKY4BxoLmMJ.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "ai",
-        "mcp",
-        "mcp-integration",
-        "media-services",
-        "agentic-ai"
-      ],
-      "publishedAt": "2026-11-14T06:59:49.348Z",
-      "likesCount": 2,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3M5QOlPLF5rNL7dcgV0P863ylQg",
-      "title": "Building and Deploying Microservices on AWS Using Docker, Amazon ECR, ECS, and Fargate",
-      "description": "A step-by-step technical guide to building and deploying containerized applications on AWS using Docker, Amazon ECR, Amazon ECS, and AWS Fargate. Learn how to create container images, store them in ECR, deploy applications using serverless containers, and test your deployment to establish a scalable microservices architecture.",
-      "url": "https://builder.aws.com/content/3M5QOlPLF5rNL7dcgV0P863ylQg",
-      "imageUrl": "",
-      "authorName": "Mahmoud Khatib",
-      "authorAlias": "mahmoudkhatib",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rF2T8LV7ViP1hVDDKY4BxoLmMJ.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "docker",
-        "amazon-ecr",
-        "aws-fargate",
-        "microservices",
-        "containers"
-      ],
-      "publishedAt": "2026-11-14T06:52:08.121Z",
+      "publishedAt": "2026-11-15T07:08:29.759Z",
       "likesCount": 10,
-      "commentsCount": 0
+      "commentsCount": 10
     },
     {
-      "id": "/content/3M5SdKxOb7Q7hLvLyPZar75V9YQ",
-      "title": "Don't forget to maintain the streak",
-      "description": "This is about aws builder",
-      "url": "https://builder.aws.com/content/3M5SdKxOb7Q7hLvLyPZar75V9YQ",
+      "id": "/content/3LpiIYHXOLtUjo0HQQwiyRLIOyJ",
+      "title": "From Chatbots to Action: A Practical Introduction to Agentic AI on AWS",
+      "description": "AI is moving beyond answering questions to taking meaningful actions. Explore how Agentic AI works, how AI agents use tools and memory, and how Amazon Bedrock AgentCore helps developers build and deploy practical AI agents on AWS.",
+      "url": "https://builder.aws.com/content/3LpiIYHXOLtUjo0HQQwiyRLIOyJ",
       "imageUrl": "",
-      "authorName": "Harrick Christo JP",
-      "authorAlias": "harrick",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3KG27sBTOU8q48ntl2Qvxaq3fGS.webp",
-      "location": "Tamil Nadu, IN",
-      "lat": 11.3323723,
-      "lng": 78.6098639,
-      "tags": [
-        "ai-agents"
-      ],
-      "publishedAt": "2026-11-14T06:51:33.060Z",
-      "likesCount": 13,
-      "commentsCount": 13
-    },
-    {
-      "id": "/content/3M5SSbqCmSP4YPVmd8oHqOY1cr3",
-      "title": "Securing Web Applications on AWS: A Practical Guide to Cloud Security Best Practices",
-      "description": "Learn how to secure a web application hosted on AWS using services such as IAM, AWS WAF, Amazon VPC, Secrets Manager, KMS, and CloudWatch. Explore practical security practices for managing access, protecting sensitive data, securing network traffic, and monitoring application activity through a layered AWS security architecture.",
-      "url": "https://builder.aws.com/content/3M5SSbqCmSP4YPVmd8oHqOY1cr3",
-      "imageUrl": "",
-      "authorName": "KISHORE K",
-      "authorAlias": "kishore0908",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LjrAFCdq4bK0ao8h2X7b2vbavg.webp",
+      "authorName": "GUNANITHI E",
+      "authorAlias": "gunanithi2007",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LYrJ2ffxsBvPr8V0CWBV4mq9zH.webp",
       "location": "IN",
       "lat": 22.3511148,
       "lng": 78.6677428,
-      "tags": [],
-      "publishedAt": "2026-11-14T06:49:50.098Z",
-      "likesCount": 8,
-      "commentsCount": 8
+      "tags": [
+        "agentic-ai",
+        "generative-ai",
+        "artificial-intelligence",
+        "aws-academy"
+      ],
+      "publishedAt": "2026-11-15T07:06:22.118Z",
+      "likesCount": 2,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3KpG4yD0IIskwUvKuqOgoi1OrM0",
+      "title": "Skill Bridge – From Skills to Shipped Projects",
+      "description": "SkillBridge connects students and professionals through skill discovery, collaborative learning, and real-world project development. Find teammates, build projects together, track contributions, and turn your skills into practical experience with an AWS-powered serverless platform.",
+      "url": "https://builder.aws.com/content/3KpG4yD0IIskwUvKuqOgoi1OrM0",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M8Id9ZhCb7O7nmeBlQe9PS3MFQ/Skil.webp",
+      "authorName": "G Dhilli Prasad",
+      "authorAlias": "dhilli9100",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3IN81XaIx8o4pozdrqyZwJJsL2L.webp",
+      "location": "Andhra Pradesh, IN",
+      "lat": 15.9240905,
+      "lng": 80.1863809,
+      "tags": [
+        "ai",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-11-15T06:58:00.906Z",
+      "likesCount": 19,
+      "commentsCount": 18
+    },
+    {
+      "id": "/content/3M8HleTpIGWAvv2cex07GQ2fcvP",
+      "title": "Amazon CloudWatch: Is Everything Healthy?",
+      "description": "CloudWatch collects numbers and logs from our AWS resources. For example, it can show how busy an EC2 server is.\n\nMetrics are numbers over time, like CPU use.\nLogs are written records of what an application did.\nAlarms send us a message when something goes wrong, for example when CPU use stays too high.",
+      "url": "https://builder.aws.com/content/3M8HleTpIGWAvv2cex07GQ2fcvP",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M8INL82lSI35tM2eiuHAhYO83w/aws_.webp",
+      "authorName": "Srinath Rao",
+      "authorAlias": "srinathrao0812",
+      "authorAvatarUrl": "",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agents",
+        "advertising-marketing-industry"
+      ],
+      "publishedAt": "2026-11-15T06:55:53.658Z",
+      "likesCount": 7,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3M8Dj3jwVHdHkzUAzCtfpy35xJJ",
+      "title": "Day 02: Linux Server Administration: Users, Groups and File Permissions",
+      "description": "How Linux decides who may do what: the kernel compares a process’s UID and group IDs with a file’s owner, group and mode, applies one class only, and checks every directory on the path. Then a shared deploy directory built with setgid, least-privilege sudo validated with visudo, and a “Permission denied” troubleshooting table.",
+      "url": "https://builder.aws.com/content/3M8Dj3jwVHdHkzUAzCtfpy35xJJ",
+      "imageUrl": "",
+      "authorName": "Ahmad Jawad",
+      "authorAlias": "ahmadjawad533",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LbZkr86UR3i3iS5swMOvJhUWbD.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "linux",
+        "devops",
+        "devops-pro",
+        "security",
+        "sysdev"
+      ],
+      "publishedAt": "2026-11-15T06:54:21.951Z",
+      "likesCount": 7,
+      "commentsCount": 5
     }
   ],
   "trending": [
+    {
+      "id": "/content/3M6k6kVxHtUMdM7E26vxSewCLSz",
+      "title": "What I Saw at KubeCon NA 2026",
+      "description": "After two talks, one workshop, and a week of hallway conversations at KubeCon NA 2026, my takeaway is that boring wins. Here’s what I learned about SLOs, observability, security, and the people who run it all.",
+      "url": "https://builder.aws.com/content/3M6k6kVxHtUMdM7E26vxSewCLSz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M6klegxtp87izu0lpPMUd6mejB/Scre.webp",
+      "authorName": "Julia Morgado",
+      "authorAlias": "juliafmorgado",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2dVfObFTDQY7wSNnHmb8gncv07e.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "kubernetes",
+        "open-telemetry",
+        "observability",
+        "cloud-security",
+        "amazon-eks"
+      ],
+      "publishedAt": "2026-11-14T17:47:17.688Z",
+      "likesCount": 50,
+      "commentsCount": 4
+    },
     {
       "id": "/content/3M2mbpp5dJgmuBnt0i9f5jcwFI8",
       "title": "AWS Emulator: First Impressions From a Real Serverless App",
@@ -238,8 +263,8 @@
         "aws-cdk"
       ],
       "publishedAt": "2026-11-13T11:26:26.608Z",
-      "likesCount": 103,
-      "commentsCount": 11
+      "likesCount": 167,
+      "commentsCount": 24
     },
     {
       "id": "/content/3M4WTxWA2Ez4N5SJDUf297udWiI",
@@ -260,8 +285,8 @@
         "reinvent-2025"
       ],
       "publishedAt": "2026-11-13T23:48:02.089Z",
-      "likesCount": 41,
-      "commentsCount": 2
+      "likesCount": 90,
+      "commentsCount": 11
     },
     {
       "id": "/content/3M4hsTVPFhdYMSzJOJWyTjeafQK",
@@ -283,8 +308,97 @@
         "generative-ai"
       ],
       "publishedAt": "2026-11-14T00:34:31.428Z",
-      "likesCount": 40,
+      "likesCount": 76,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3M7ZIJobkxhllQYoxfMcQxoQroy",
+      "title": "CALL \"DEPLOY\": I taught fixed-format COBOL to deploy AWS, with Kiro",
+      "description": "For Kiroween 2026 I resurrected COBOL as an infrastructure-as-code language. A real fixed-format COBOL program, checked by GnuCOBOL, becomes AWS CloudFormation and deploys a three-tier stack. This is how it works, and how Kiro steering, hooks and tests kept the AI honest.",
+      "url": "https://builder.aws.com/content/3M7ZIJobkxhllQYoxfMcQxoQroy",
+      "imageUrl": "",
+      "authorName": "Tetsuya Shibao",
+      "authorAlias": "midnight480",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/35rVmy70UMGI2UTLdg7NbvwJTPa.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "kiro",
+        "hackathon",
+        "aws-cloudformation",
+        "infrastructure-as-code",
+        "aws-mainframe-modernization"
+      ],
+      "publishedAt": "2026-11-15T00:54:47.907Z",
+      "likesCount": 14,
       "commentsCount": 1
+    },
+    {
+      "id": "/content/3M3q3xkDoKggJlRi9YgWnY0anML",
+      "title": "Clouds and Clocks: two penguins and a bit of chaos",
+      "description": "An AI agent can read an invoice better than many people. Should it also be allowed to write it into your ERP? Prompts, skills and markdown files make good behaviour more likely, but a model stays probabilistic, and business data has no room for “almost”. Laplace, Lorenz, Monod, Miles Davis and Popper never got rid of chance either: each found a way to live with it. This piece follows their story and ends with a the deterministic harness, sketched with Strands.",
+      "url": "https://builder.aws.com/content/3M3q3xkDoKggJlRi9YgWnY0anML",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M6h85NjodUmCVqp0Y0NPgDMLAI/cove.webp",
+      "authorName": "Maurizio Argoneto",
+      "authorAlias": "margoneto81",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2zbapcZotzGkvmbop2GILVgwAdg.webp",
+      "location": "IT",
+      "lat": 42.6384261,
+      "lng": 12.674297,
+      "tags": [
+        "agentic-ai",
+        "ai",
+        "strands",
+        "strands-agents",
+        "guardrails"
+      ],
+      "publishedAt": "2026-11-14T17:15:50.925Z",
+      "likesCount": 17,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3M6qB5AcPvbRX4K4c3QAUvGEkUy",
+      "title": "Automating My Web App Deployment with AWS CI/CD",
+      "description": "Deploy your web application with codepipeline",
+      "url": "https://builder.aws.com/content/3M6qB5AcPvbRX4K4c3QAUvGEkUy",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M6qIRjYXmh8yUZtENVxEU5h4SC/cicd-.webp",
+      "authorName": "Aarush Luthra",
+      "authorAlias": "aarush07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uDLvAymBPImlMekPeZ3hZckyM5.webp",
+      "location": "Uttrakhand, IN",
+      "lat": 30.0797977,
+      "lng": 78.3045766,
+      "tags": [
+        "ci-cd",
+        "aws-codepipeline",
+        "deployment",
+        "amazon-ec2"
+      ],
+      "publishedAt": "2026-11-14T18:43:39.676Z",
+      "likesCount": 13,
+      "commentsCount": 4
+    },
+    {
+      "id": "/content/3M6oE8i68TW9LKomqAcRDmPB1wJ",
+      "title": "Deploying Machine Learning Models with AWS SageMaker",
+      "description": "Starting with model deployment using SageMaker",
+      "url": "https://builder.aws.com/content/3M6oE8i68TW9LKomqAcRDmPB1wJ",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M6oOoszEdKWEXNDzVL7SzXg8Us/model.webp",
+      "authorName": "Aarush Luthra",
+      "authorAlias": "aarush07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uDLvAymBPImlMekPeZ3hZckyM5.webp",
+      "location": "Uttrakhand, IN",
+      "lat": 30.0797977,
+      "lng": 78.3045766,
+      "tags": [
+        "machine-learning",
+        "deployment",
+        "amazon-sagemaker"
+      ],
+      "publishedAt": "2026-11-14T18:23:57.724Z",
+      "likesCount": 10,
+      "commentsCount": 0
     },
     {
       "id": "/content/3LytpCABCdpSVyom2dv07I5PRq7",
@@ -305,8 +419,95 @@
         "responsible-ai"
       ],
       "publishedAt": "2026-11-11T23:14:40.665Z",
-      "likesCount": 179,
+      "likesCount": 182,
       "commentsCount": 20
+    },
+    {
+      "id": "/content/3M5QOlPLF5rNL7dcgV0P863ylQg",
+      "title": "Building and Deploying Microservices on AWS Using Docker, Amazon ECR, ECS, and Fargate",
+      "description": "A step-by-step technical guide to building and deploying containerized applications on AWS using Docker, Amazon ECR, Amazon ECS, and AWS Fargate. Learn how to create container images, store them in ECR, deploy applications using serverless containers, and test your deployment to establish a scalable microservices architecture.",
+      "url": "https://builder.aws.com/content/3M5QOlPLF5rNL7dcgV0P863ylQg",
+      "imageUrl": "",
+      "authorName": "Mahmoud Khatib",
+      "authorAlias": "mahmoudkhatib",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rF2T8LV7ViP1hVDDKY4BxoLmMJ.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [
+        "docker",
+        "amazon-ecr",
+        "aws-fargate",
+        "microservices",
+        "containers"
+      ],
+      "publishedAt": "2026-11-14T06:52:08.121Z",
+      "likesCount": 13,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3M3FZr1f3E9dGamImbXdqSXfa1G",
+      "title": "Supercharge AWS Emulator for AWS CDK Development with cdkd",
+      "description": "Combining cdkd with AWS Emulator removes the need for a .env file: cdkd configures the emulator connection and resolves Lambda environment variables directly from your CDK code. You can also route each service to either the emulator or real AWS, such as reading secrets from real AWS while writing to DynamoDB locally, and run Lambda code straight from source without redeploying after each change.",
+      "url": "https://builder.aws.com/content/3M3FZr1f3E9dGamImbXdqSXfa1G",
+      "imageUrl": "",
+      "authorName": "Kenta Goto",
+      "authorAlias": "kentagoto",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2btK3dDjbOe9yfOIua1go1c26h2.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "aws-cdk",
+        "aws-cloudformation",
+        "oss"
+      ],
+      "publishedAt": "2026-11-15T06:51:06.341Z",
+      "likesCount": 8,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3M6mzG1tilDasV6iEYskJpPbnsn",
+      "title": "Developing with Prompts: Building a Game Using Q CLI",
+      "description": "Using Q CLI to develop cool games",
+      "url": "https://builder.aws.com/content/3M6mzG1tilDasV6iEYskJpPbnsn",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M6nc3DEwwTu2JiWRtfKhPFTI4E/qcli-.webp",
+      "authorName": "Aarush Luthra",
+      "authorAlias": "aarush07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uDLvAymBPImlMekPeZ3hZckyM5.webp",
+      "location": "Uttrakhand, IN",
+      "lat": 30.0797977,
+      "lng": 78.3045766,
+      "tags": [
+        "amazon-q",
+        "cli"
+      ],
+      "publishedAt": "2026-11-14T18:13:59.736Z",
+      "likesCount": 9,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3M6mCJ11Wf9jLX4LWFUQEzSybM8",
+      "title": "Unpacking Containers: CloudWatch’s Role in Docker Monitoring",
+      "description": "Monitoring containers with Cloudwatch",
+      "url": "https://builder.aws.com/content/3M6mCJ11Wf9jLX4LWFUQEzSybM8",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M6mobZ00t8MEVhbsH902hG2JqZ/docke.webp",
+      "authorName": "Aarush Luthra",
+      "authorAlias": "aarush07",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uDLvAymBPImlMekPeZ3hZckyM5.webp",
+      "location": "Uttrakhand, IN",
+      "lat": 30.0797977,
+      "lng": 78.3045766,
+      "tags": [
+        "docker",
+        "aws-cloudwatch",
+        "containers",
+        "monitoring",
+        "monitoring-observability"
+      ],
+      "publishedAt": "2026-11-14T18:06:52.107Z",
+      "likesCount": 9,
+      "commentsCount": 0
     },
     {
       "id": "/content/3LxrYiSP7YwOa0mEShdZwK0fQUU",
@@ -352,11 +553,32 @@
       "commentsCount": 12
     },
     {
-      "id": "/content/3M5QOlPLF5rNL7dcgV0P863ylQg",
-      "title": "Building and Deploying Microservices on AWS Using Docker, Amazon ECR, ECS, and Fargate",
-      "description": "A step-by-step technical guide to building and deploying containerized applications on AWS using Docker, Amazon ECR, Amazon ECS, and AWS Fargate. Learn how to create container images, store them in ECR, deploy applications using serverless containers, and test your deployment to establish a scalable microservices architecture.",
-      "url": "https://builder.aws.com/content/3M5QOlPLF5rNL7dcgV0P863ylQg",
+      "id": "/content/3M8AvSoWG4q1mR9y7qb8Rfed2WQ",
+      "title": "All You Need Is Intent",
+      "description": "An Enterprise Readiness Model for AI-DLC in Cloud Infrastructure Delivery",
+      "url": "https://builder.aws.com/content/3M8AvSoWG4q1mR9y7qb8Rfed2WQ",
       "imageUrl": "",
+      "authorName": "YICHI",
+      "authorAlias": "yichi0516",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3M8A2rcBQhn0eMS51JgGYGY9gNB.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "ai-dlc",
+        "architecture",
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-11-15T05:57:49.172Z",
+      "likesCount": 28,
+      "commentsCount": 23
+    },
+    {
+      "id": "/content/3M5T0ETQuzEk2edqRN5vCrpN2mU",
+      "title": "My IBC 2026 Takeaways: AWS Cloud, MCP and the Agentic Future of Media",
+      "description": "Exploring key takeaways from IBC 2026, where cloud technologies, Model Context Protocol (MCP), and agentic AI are shaping the future of broadcast and media workflows. A look at how intelligent automation, interoperability, and AI-driven operations are transforming the media industry.",
+      "url": "https://builder.aws.com/content/3M5T0ETQuzEk2edqRN5vCrpN2mU",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M5TCXfFfeh1nzzROPhXl2AWAMe/1_Mlw.webp",
       "authorName": "Mahmoud Khatib",
       "authorAlias": "mahmoudkhatib",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rF2T8LV7ViP1hVDDKY4BxoLmMJ.webp",
@@ -364,14 +586,14 @@
       "lat": 0,
       "lng": 0,
       "tags": [
-        "docker",
-        "amazon-ecr",
-        "aws-fargate",
-        "microservices",
-        "containers"
+        "ai",
+        "mcp",
+        "mcp-integration",
+        "media-services",
+        "agentic-ai"
       ],
-      "publishedAt": "2026-11-14T06:52:08.121Z",
-      "likesCount": 10,
+      "publishedAt": "2026-11-14T06:59:49.348Z",
+      "likesCount": 8,
       "commentsCount": 0
     },
     {
@@ -394,7 +616,7 @@
         "aws-cdk"
       ],
       "publishedAt": "2026-11-13T20:00:31.371Z",
-      "likesCount": 15,
+      "likesCount": 17,
       "commentsCount": 0
     },
     {
@@ -417,30 +639,8 @@
         "zero-trust"
       ],
       "publishedAt": "2026-11-13T17:04:56.398Z",
-      "likesCount": 16,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3M2aSWNqNb3FsDb4AALq56b8bBe",
-      "title": "Building a Secure Cloud Network on AWS: A Hands-On Challenge with Public and Private Subnets",
-      "description": "A hands-on AWS networking challenge demonstrating how to design and implement a secure cloud network using Amazon VPC, public and private subnets, Internet Gateways, route tables, NAT Gateways, and security groups. This step-by-step guide covers network configuration, connectivity testing, and AWS networking best practices.",
-      "url": "https://builder.aws.com/content/3M2aSWNqNb3FsDb4AALq56b8bBe",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3M2bOZoXUD2fGRK56vgS9gq1xyp/1-pn.webp",
-      "authorName": "Mahmoud Khatib",
-      "authorAlias": "mahmoudkhatib",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2rF2T8LV7ViP1hVDDKY4BxoLmMJ.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "vpc",
-        "advanced-networking",
-        "firewall",
-        "amazon-ec2"
-      ],
-      "publishedAt": "2026-11-13T06:33:53.386Z",
-      "likesCount": 17,
-      "commentsCount": 2
+      "likesCount": 20,
+      "commentsCount": 1
     }
   ]
 }

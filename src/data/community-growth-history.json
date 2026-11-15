@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-14T07:20:06.207Z",
+  "updatedAt": "2026-11-15T07:32:34.410Z",
   "snapshotTimeZone": "Asia/Singapore",
   "identityMethod": "Category-specific stable public identity, with Cloud Club and Student Builder Group names normalized across the rename.",
   "snapshots": [
@@ -16181,7 +16181,7 @@
       }
     },
     {
-      "date": "2026-11-14",
+      "date": "2026-11-15",
       "source": {
         "type": "working-tree"
       },
@@ -16375,10 +16375,10 @@
           }
         },
         "kiro-events": {
-          "total": 11,
+          "total": 9,
           "classified": 1,
-          "unclassified": 10,
-          "coveragePercent": 9.1,
+          "unclassified": 8,
+          "coveragePercent": 11.1,
           "regions": {
             "north-america": 1,
             "south-america": 0,
@@ -16389,9 +16389,9 @@
           },
           "changes": {
             "added": 0,
-            "removed": 0,
-            "net": 0,
-            "retained": 11,
+            "removed": 2,
+            "net": -2,
+            "retained": 9,
             "addedByRegion": {
               "north-america": 0,
               "south-america": 0,
@@ -16409,9 +16409,24 @@
               "oceania": 0
             },
             "addedUnclassified": 0,
-            "removedUnclassified": 0,
+            "removedUnclassified": 2,
             "addedItems": [],
-            "removedItems": [],
+            "removedItems": [
+              {
+                "name": "AWS Student Community Day Mexico City",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/"
+              },
+              {
+                "name": "LPC Hacks 2026",
+                "location": "Online",
+                "country": "Online",
+                "region": null,
+                "url": "https://lpchacks.com"
+              }
+            ],
             "quality": {
               "confidence": "high",
               "comparable": true,
@@ -16474,19 +16489,19 @@
   "analytics": {
     "period": {
       "startDate": "2026-03-29",
-      "endDate": "2026-11-14",
-      "daysCovered": 230
+      "endDate": "2026-11-15",
+      "daysCovered": 231
     },
     "global": {
-      "totalRecords": 5580,
+      "totalRecords": 5578,
       "classifiedRecords": 5397,
-      "coveragePercent": 96.7,
+      "coveragePercent": 96.8,
       "snapshots": 39
     },
     "categories": {
       "heroes": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-14",
+        "currentDate": "2026-11-15",
         "baselineTotal": 262,
         "currentTotal": 255,
         "currentCoveragePercent": 97.3,
@@ -17043,7 +17058,7 @@
       },
       "community-builders": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-14",
+        "currentDate": "2026-11-15",
         "baselineTotal": 2494,
         "currentTotal": 3041,
         "currentCoveragePercent": 95.1,
@@ -17599,7 +17614,7 @@
       },
       "user-groups": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-14",
+        "currentDate": "2026-11-15",
         "baselineTotal": 608,
         "currentTotal": 609,
         "currentCoveragePercent": 99.8,
@@ -18156,7 +18171,7 @@
       },
       "cloud-clubs": {
         "baselineDate": "2026-03-29",
-        "currentDate": "2026-11-14",
+        "currentDate": "2026-11-15",
         "baselineTotal": 623,
         "currentTotal": 1626,
         "currentCoveragePercent": 99.1,
@@ -18917,14 +18932,14 @@
       },
       "kiro-events": {
         "baselineDate": "2026-06-04",
-        "currentDate": "2026-11-14",
+        "currentDate": "2026-11-15",
         "baselineTotal": 17,
-        "currentTotal": 11,
-        "currentCoveragePercent": 9.1,
+        "currentTotal": 9,
+        "currentCoveragePercent": 11.1,
         "periodChange": {
-          "added": 11,
+          "added": 9,
           "removed": 17,
-          "net": -6,
+          "net": -8,
           "retained": 0,
           "retentionPercent": 0,
           "addedByRegion": {
@@ -18957,13 +18972,6 @@
               "country": "Online",
               "region": null,
               "url": "https://aws.amazon.com/events/reinvent/"
-            },
-            {
-              "name": "AWS Student Community Day Mexico City",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/"
             },
             {
               "name": "CUSEC 2027",
@@ -19013,13 +19021,6 @@
               "country": "Online",
               "region": null,
               "url": "https://kiroween.devpost.com/"
-            },
-            {
-              "name": "LPC Hacks 2026",
-              "location": "Online",
-              "country": "Online",
-              "region": null,
-              "url": "https://lpchacks.com"
             }
           ],
           "removedItems": [
@@ -19198,11 +19199,11 @@
           "total": 17
         },
         "latestMovement": {
-          "date": "2026-11-12",
+          "date": "2026-11-15",
           "added": 0,
-          "removed": 1,
-          "net": -1,
-          "retained": 11,
+          "removed": 2,
+          "net": -2,
+          "retained": 9,
           "addedByRegion": {
             "north-america": 0,
             "south-america": 0,
@@ -19220,15 +19221,22 @@
             "oceania": 0
           },
           "addedUnclassified": 0,
-          "removedUnclassified": 1,
+          "removedUnclassified": 2,
           "addedItems": [],
           "removedItems": [
             {
-              "name": "Build a game with Kiro in 30 minutes",
+              "name": "AWS Student Community Day Mexico City",
               "location": "Online",
               "country": "Online",
               "region": null,
-              "url": "https://luma.com/br61ma27"
+              "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/"
+            },
+            {
+              "name": "LPC Hacks 2026",
+              "location": "Online",
+              "country": "Online",
+              "region": null,
+              "url": "https://lpchacks.com"
             }
           ],
           "quality": {
@@ -19242,7 +19250,7 @@
       },
       "community-days": {
         "baselineDate": "2026-07-18",
-        "currentDate": "2026-11-14",
+        "currentDate": "2026-11-15",
         "baselineTotal": 38,
         "currentTotal": 38,
         "currentCoveragePercent": 100,
@@ -19572,44 +19580,17 @@
       }
     },
     "upcoming": {
-      "total": 10,
-      "next30Days": 7,
+      "total": 7,
+      "next30Days": 5,
       "byRegion": {
         "north-america": 1,
-        "south-america": 1,
+        "south-america": 0,
         "europe": 0,
         "asia": 0,
         "africa": 0,
         "oceania": 0
       },
       "items": [
-        {
-          "name": "AWS Student Community Day Mexico City",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://www.meetup.com/aws-sbg-at-pan-american-university-cdmx/events/316597030/",
-          "category": "kiro-events",
-          "date": "2026-11-14T09:00:00.000Z"
-        },
-        {
-          "name": "LPC Hacks 2026",
-          "location": "Online",
-          "country": "Online",
-          "region": null,
-          "url": "https://lpchacks.com",
-          "category": "kiro-events",
-          "date": "2026-11-14T10:00:00.000Z"
-        },
-        {
-          "name": "AWS Community Day Belém",
-          "location": "Belém, Brazil",
-          "country": "Brazil",
-          "region": "south-america",
-          "url": "https://awscommunityday.com.br/#norte",
-          "category": "community-days",
-          "date": "2026-11-14T12:00:00.000Z"
-        },
         {
           "name": "AI-Native Practitioner Programme (November Cohort)",
           "location": "Online",
