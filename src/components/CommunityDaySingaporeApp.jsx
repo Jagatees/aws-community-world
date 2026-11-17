@@ -8,6 +8,8 @@ import './CommunityDaySingaporeApp.css';
 
 const FAVOURITES_KEY = 'community-day-singapore-favourites';
 const REMINDER_LEAD_MS = 5 * 60 * 1000;
+const EVENT_DAY_END = Date.parse(`${EVENT.date}T23:59:59.999+08:00`);
+const ORGANISER_URL = 'https://www.awsugsg.dev/';
 
 function sessionDate(session) {
   return new Date(`${EVENT.date}T${session.start}:00+08:00`);
@@ -58,13 +60,14 @@ export default function CommunityDaySingaporeApp() {
   const [routeId, setRouteId] = useState('downtown');
   const [routeStep, setRouteStep] = useState(0);
   const [currentTime, setCurrentTime] = useState(() => Date.now());
+  const eventEnded = currentTime > EVENT_DAY_END;
   const [theme, setTheme] = useState(() => (
     window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   ));
   const timers = useRef(new Map());
 
   useEffect(() => {
-    document.title = `${EVENT.name} · Live`;
+    document.title = `${EVENT.name} ${EVENT.date.slice(0, 4)} | AWS Community Globe`;
     navigator.serviceWorker?.register('/community-day-sw.js').catch(() => {});
     const clock = setInterval(() => setCurrentTime(Date.now()), 60_000);
     return () => clearInterval(clock);
@@ -145,7 +148,7 @@ export default function CommunityDaySingaporeApp() {
     <div className="cd-app" data-theme={theme}>
       <header className="cd-header">
         <div className="cd-topbar">
-          <a className="cd-wordmark" href="/community-day-singapore" aria-label="AWS Community Day Singapore home">
+          <a className="cd-wordmark" href="/community-day-singapore/" aria-label="AWS Community Day Singapore home">
             <span className="cd-wordmark-aws">AWS</span>
             <span className="cd-wordmark-rule" />
             <span>Community Day<br />Singapore</span>
@@ -154,7 +157,7 @@ export default function CommunityDaySingaporeApp() {
             <button className="cd-theme-toggle" type="button" onClick={() => setTheme((value) => value === 'dark' ? 'light' : 'dark')} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>
               {theme === 'dark' ? <Sun size={18} weight="bold" /> : <Moon size={18} weight="bold" />}
             </button>
-            <a className="cd-register" href="https://www.awsugsg.dev/" target="_blank" rel="noreferrer">Event site <ArrowRight size={16} weight="bold" /></a>
+            <a className="cd-register" href={ORGANISER_URL} target="_blank" rel="noreferrer">Event site <ArrowRight size={16} weight="bold" /></a>
           </div>
         </div>
       </header>
@@ -162,8 +165,8 @@ export default function CommunityDaySingaporeApp() {
       <section className="cd-hero" aria-labelledby="community-day-title">
         <div className="cd-hero-copy">
           <p className="cd-kicker">Built by the community</p>
-          <h1 id="community-day-title">AWS builders, together.</h1>
-          <p className="cd-hero-summary">Plan your day, save talks, find the venue and get there on time.</p>
+          <h1 id="community-day-title">{eventEnded ? 'AWS Community Day Singapore 2026' : 'AWS builders, together.'}</h1>
+          <p className="cd-hero-summary">{eventEnded ? 'Explore the venue and find the organiser’s programme for the 22 August 2026 event.' : 'Plan your day, save talks, find the venue and get there on time.'}</p>
           <div className="cd-hero-facts">
             <span><strong>22</strong><small>Aug 2026</small></span>
             <span><strong>09:00</strong><small>Doors open</small></span>
@@ -176,7 +179,17 @@ export default function CommunityDaySingaporeApp() {
       </section>
 
       <main className="cd-main">
-        {section === 'schedule' && (
+        {section === 'schedule' && eventEnded && (
+          <section className="cd-info-card" aria-label="Archived programme">
+            <CalendarBlank size={20} />
+            <div>
+              <strong>2026 programme</strong>
+              <p>Browse the talks and speakers on the <a href={ORGANISER_URL}>organiser’s event site</a>.</p>
+            </div>
+          </section>
+        )}
+
+        {section === 'schedule' && !eventEnded && (
           <>
             <div className="cd-controls">
               <div className="cd-segment cd-view-toggle" aria-label="Schedule view">
@@ -300,7 +313,7 @@ export default function CommunityDaySingaporeApp() {
 
       {notice && <div className={`cd-toast ${notice.tone}`} role="status">{notice.tone === 'success' ? <CheckCircle size={20} weight="fill" /> : <Bell size={20} />}<span>{notice.text}</span><button onClick={() => setNotice(null)} aria-label="Dismiss"><X size={16} /></button></div>}
 
-      {selectedSession && (
+      {selectedSession && !eventEnded && (
         <div className="cd-modal" role="dialog" aria-modal="true" aria-label={selectedSession.title}>
           <button className="cd-modal-backdrop" onClick={() => setSelectedSession(null)} aria-label="Close session details" />
           <div className="cd-modal-card">

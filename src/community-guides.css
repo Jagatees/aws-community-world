@@ -1,0 +1,91 @@
+:root {
+  color-scheme: dark;
+  font: 100%/1.6 system-ui, sans-serif;
+  color: #eaf2f8;
+  background: #0f1923;
+  --guide-muted: #b5c5d3;
+  --guide-link: #83d8f3;
+  --guide-accent: #ffb74d;
+  --guide-border: #344754;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at 85% 0, #19364a, transparent 34rem);
+}
+
+a {
+  color: var(--guide-link);
+  text-underline-offset: 0.2em;
+}
+
+a:hover { color: #c3efff; }
+a:focus-visible { outline: 2px solid var(--guide-accent); outline-offset: 4px; }
+
+.guide-header,
+.guide-main,
+.guide-footer {
+  width: min(100% - 2.5rem, 48rem);
+  margin-inline: auto;
+}
+
+.guide-header {
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--guide-border);
+}
+
+.guide-header a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: inherit;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.guide-main { padding-block: clamp(2rem, 7vw, 4.5rem) 2.75rem; }
+.guide-breadcrumbs { color: var(--guide-muted); font-size: 0.875rem; }
+.guide-breadcrumbs span { margin-inline: 0.35rem; }
+
+.guide-main h1 {
+  margin: 1rem 0 1.25rem;
+  font-size: clamp(2.25rem, 7vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.guide-main h2 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.25rem, 4vw, 1.65rem);
+  line-height: 1.25;
+}
+
+.guide-main p,
+.guide-main ul,
+.guide-main ol { max-width: 66ch; margin-block: 0 0.85rem; }
+.guide-main ul,
+.guide-main ol { padding-inline-start: 1.35rem; }
+.guide-main li + li { margin-top: 0.35rem; }
+.guide-main section { margin-top: 2rem; }
+.guide-lead { color: var(--guide-muted); font-size: 1.125rem; }
+
+.guide-action {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.65rem 1rem;
+  border-radius: 0.5rem;
+  color: #0f1923;
+  background: var(--guide-accent);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.guide-action:hover { color: #0f1923; background: #ffd28b; }
+
+.guide-footer {
+  padding-block: 1.25rem 2rem;
+  border-top: 1px solid var(--guide-border);
+  color: var(--guide-muted);
+  font-size: 0.9rem;
+}
