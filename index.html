@@ -6,33 +6,63 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWS Globe</title>
+    <title>AWS Community Globe | Find AWS Builders, Groups &amp; Events</title>
+    <meta name="description" content="Find AWS Community Builders, Heroes, local User Groups, Student Builder Groups, and community events worldwide on an interactive map." />
+    <link rel="canonical" href="https://www.awscommunityglobe.click/" />
 
-    <!-- Primary meta -->
-    <meta name="description" content="Explore AWS community members, events, and the latest news from around the world on one interactive globe." />
-
-    <!-- Open Graph (Facebook, WhatsApp, Slack, LinkedIn) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://awscommunityglobe.click/" />
-    <meta property="og:title" content="AWS Globe" />
-    <meta property="og:description" content="Explore AWS community members, events, and the latest news from around the world on one interactive globe." />
-    <meta property="og:image" content="https://awscommunityglobe.click/preview.jpg" />
+    <meta property="og:site_name" content="AWS Community Globe" />
+    <meta property="og:url" content="https://www.awscommunityglobe.click/" />
+    <meta property="og:title" content="AWS Community Globe | Find AWS Builders, Groups &amp; Events" />
+    <meta property="og:description" content="Find AWS Community Builders, Heroes, local User Groups, Student Builder Groups, and community events worldwide on an interactive map." />
+    <meta property="og:image" content="https://www.awscommunityglobe.click/preview.jpg" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="727" />
+    <meta property="og:image:alt" content="Preview of the AWS Community Globe" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://awscommunityglobe.click/" />
-    <meta name="twitter:title" content="AWS Globe" />
-    <meta name="twitter:description" content="Explore AWS community members, events, and the latest news from around the world on one interactive globe." />
-    <meta name="twitter:image" content="https://awscommunityglobe.click/preview.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AWS Community Globe",
+        "alternateName": ["AWS Globe", "AWS Community World"],
+        "url": "https://www.awscommunityglobe.click/",
+        "description": "An independent, open-source map and directory of AWS community members, groups, and events worldwide."
+      }
+    </script>
 
     <style>
       body { background-color: #0F1923; margin: 0; }
+      .globe-fallback {
+        max-width: 48rem;
+        margin-inline: auto;
+        padding: clamp(2rem, 8vw, 5rem) 1.5rem;
+        color: #fff;
+        font: 1rem/1.6 system-ui, sans-serif;
+      }
+      .globe-fallback h1 { margin: 0 0 1rem; font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 750; line-height: 1.1; }
+      .globe-fallback p { margin: 0 0 1.25rem; color: #c7d4df; }
+      .globe-fallback ul { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin: 0 0 1.5rem; padding: 0; list-style: none; }
+      .globe-fallback a { color: #ffb74d; text-decoration: underline; text-underline-offset: 0.2em; }
     </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main class="globe-fallback">
+        <h1>AWS Community Globe</h1>
+        <p>Discover AWS Heroes, Community Builders, User Groups, Student Builder Groups, and community events around the world.</p>
+        <nav aria-label="Explore the AWS community">
+          <ul>
+            <li><a href="/aws-community-builders/">AWS Community Builders</a></li>
+            <li><a href="/aws-user-groups/">AWS User Groups</a></li>
+            <li><a href="/aws-community-events/">AWS Community Events</a></li>
+          </ul>
+        </nav>
+        <p>AWS Community Globe is an independent <a href="https://github.com/Jagatees/aws-community-world">open-source community project</a>.</p>
+      </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

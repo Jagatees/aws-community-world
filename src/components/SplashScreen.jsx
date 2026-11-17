@@ -427,6 +427,16 @@ function OrbitGlobe({ isEvents }) {
   );
 }
 
+function CommunityGuideLinks() {
+  return (
+    <nav className="splash-guides" aria-label="AWS community guides">
+      <a href="/aws-community-builders/">Community Builders</a>
+      <a href="/aws-user-groups/">User Groups</a>
+      <a href="/aws-community-events/">Community Events</a>
+    </nav>
+  );
+}
+
 function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) {
   const isEvents = activeSection === 'events';
   const content = SECTION_PREVIEWS[activeSection];
@@ -456,6 +466,7 @@ function MobileSplashHome({ onStart, exiting, activeSection, onSectionChange }) 
           <p aria-live="polite">{content ? content.description : isEvents
             ? 'Events, Builder Lofts and community news — all around the world.'
             : 'People, groups and events — all around the world.'}</p>
+          {activeSection === 'community' && <CommunityGuideLinks />}
         </div>
 
         {content && <div className="mobile-home__section-art">
@@ -726,6 +737,7 @@ export default function SplashScreen({ onStart, exiting, activeSection = 'commun
           {content ? content.source : isEvents ? 'Data from Kiro and AWS Builder Center' : 'Data from AWS and community directories'}
           {previewSection === 'community' && <span>People may appear in more than one program.</span>}
         </div>
+        <CommunityGuideLinks />
       </div>
 
       {/* Lightweight section previews; the selected destination loads on entry. */}

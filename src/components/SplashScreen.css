@@ -49,6 +49,30 @@
   display: block;
 }
 
+.splash-guides {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.splash-guides a {
+  color: #a8def7;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  padding-block: 0.25rem;
+}
+
+.splash-guides a:hover { color: #f7fbff; }
+.splash-guides a:focus-visible { outline: 2px solid #83d8f3; outline-offset: 2px; }
+
+.mobile-home__copy .splash-guides {
+  margin-top: 0.35rem;
+  pointer-events: auto;
+}
+
 .splash-stat--extra {
   margin-top: 0.35rem;
   padding-top: 1rem;

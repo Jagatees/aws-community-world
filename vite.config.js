@@ -39,6 +39,9 @@ export default defineConfig({
       input: {
         main: 'index.html',
         communityDaySingapore: 'community-day-singapore/index.html',
+        communityBuildersGuide: 'aws-community-builders/index.html',
+        userGroupsGuide: 'aws-user-groups/index.html',
+        communityEventsGuide: 'aws-community-events/index.html',
       },
     },
   },
