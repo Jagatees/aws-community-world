@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-17T08:48:13.245Z",
+  "checkedAt": "2026-11-18T08:12:19.208Z",
   "productCount": 235,
   "services": [
     {
@@ -3370,7 +3370,7 @@
     },
     {
       "id": "d2ed0c4d-732c-4df5-864a-5c5509d22977",
-      "title": "Add Real-Time Web Search to Your AI Agents on AWS",
+      "title": "Add Web Search to Your AI Agents on AWS",
       "description": "Learn how to add real-time web search capabilities to AI agents and applications on AWS. Explore two paths: a managed MCP connector via AgentCore Gateway (works with any model) and the Bedrock built-in web search tool. Build agents using Strands SDK, LangChain, or raw tool-calling, and integrate with developer tools like Claude Code and Codex.",
       "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/d2ed0c4d-732c-4df5-864a-5c5509d22977",
       "services": [
@@ -3389,7 +3389,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-27T20:34:36Z",
+      "updatedAt": "2026-11-17T19:18:13Z",
       "createdAt": "2026-08-27T15:28:47Z",
       "sandboxAvailable": false
     },
@@ -3831,7 +3831,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-11-13T19:13:52Z",
+      "updatedAt": "2026-11-18T01:29:01Z",
       "createdAt": "2024-05-28T20:34:10Z",
       "sandboxAvailable": false
     },
@@ -4565,7 +4565,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-14T05:51:03Z",
+      "updatedAt": "2026-11-17T18:05:18Z",
       "createdAt": "2025-02-24T21:11:54Z",
       "sandboxAvailable": false
     },
@@ -4977,7 +4977,7 @@
         "ko",
         "ja"
       ],
-      "updatedAt": "2026-10-13T12:24:48Z",
+      "updatedAt": "2026-11-18T07:28:52Z",
       "createdAt": "2022-05-13T02:48:15Z",
       "sandboxAvailable": false
     },
@@ -5001,7 +5001,7 @@
         "en",
         "ja"
       ],
-      "updatedAt": "2026-09-07T01:46:19Z",
+      "updatedAt": "2026-11-18T08:01:10Z",
       "createdAt": "2022-08-13T09:55:07Z",
       "sandboxAvailable": false
     },
@@ -6035,7 +6035,7 @@
       "id": "63320e83-6abc-493d-83d8-f822584fb3cb",
       "title": "Building event-driven architectures on AWS",
       "description": "In this workshop we’ll cover the basics of event-driven design, using examples that involve Amazon EventBridge, Amazon SNS, Amazon SQS, AWS Lambda and more. You will learn how to choose the right AWS service for the job, as well as how to optimize for both cost and performance. Through hands on practice, this workshop will give you the skills bring event-driven design patterns into your own applications.",
-      "url": "https://catalog.workshops.aws/workshops/63320e83-6abc-493d-83d8-f822584fb3cb",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/63320e83-6abc-493d-83d8-f822584fb3cb",
       "services": [
         "Amazon EventBridge",
         "Amazon Simple Notification Service (Amazon SNS)",
@@ -6056,7 +6056,7 @@
         "ko",
         "ja"
       ],
-      "updatedAt": "2026-08-12T04:30:44Z",
+      "updatedAt": "2026-11-18T05:27:02Z",
       "createdAt": "2021-08-04T05:06:33Z",
       "sandboxAvailable": false
     },
@@ -6523,7 +6523,7 @@
         "zh",
         "es"
       ],
-      "updatedAt": "2026-11-17T00:00:00Z",
+      "updatedAt": "2026-11-17T21:04:47Z",
       "createdAt": "2025-12-16T20:02:46Z",
       "sandboxAvailable": false
     },
@@ -7673,32 +7673,6 @@
       ],
       "updatedAt": "2026-08-17T23:07:48Z",
       "createdAt": "2021-08-20T14:26:43Z",
-      "sandboxAvailable": false
-    },
-    {
-      "id": "20c036a0-46c9-4e64-b74f-cec28b4de423",
-      "title": "MAM406 - Migrate & Modernize Windows to Linux and SQL to PostgreSQL with agentic AI",
-      "description": "Facing rising Windows and SQL Server licensing costs? In this hands-on workshop, rehost a Windows IIS and SQL Server app to Amazon EC2 with AWS Transform MGN, then modernize it with agentic AI. Use AWS Transform to convert the schema to Amazon Aurora PostgreSQL and Kiro to convert the PHP code and build the infrastructure, then let AWS Transform containerize the app and deploy it to Amazon EKS. Leave with a repeatable pattern for migrating and modernizing your own Windows workloads.",
-      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/20c036a0-46c9-4e64-b74f-cec28b4de423",
-      "services": [
-        "Amazon Elastic Compute Cloud (Amazon EC2)",
-        "AWS Application Migration Service"
-      ],
-      "serviceIds": [
-        "amazon-ec2",
-        "cloudendure-migration"
-      ],
-      "topics": [
-        "Compute",
-        "Migration & Transfer"
-      ],
-      "level": "400",
-      "durationHours": 4,
-      "languages": [
-        "en"
-      ],
-      "updatedAt": "2026-11-16T14:55:03Z",
-      "createdAt": "2024-09-12T13:35:53Z",
       "sandboxAvailable": false
     },
     {
