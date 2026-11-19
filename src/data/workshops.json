@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-18T08:12:19.208Z",
+  "checkedAt": "2026-11-19T08:23:25.402Z",
   "productCount": 235,
   "services": [
     {
@@ -3594,42 +3594,6 @@
       "sandboxAvailable": false
     },
     {
-      "id": "1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef",
-      "title": "Agentic SecOps with Cybersecurity Agent Factory and Amazon Bedrock",
-      "description": "This workshop is intended to help candidates mitigate Security risks at scale with agentic security workflows and custom autonomous agents. this workflow contains agentic Incident response integrated with Amazon GuardDuty, IAM operations automation, Agentic Vulnerability management remediation workflow integrated with Amazon inspector, and Automated Posture violation remediation integration with aws security hub.",
-      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/1ff65006-cc4a-48fd-99c9-3ef1e3d7a5ef",
-      "services": [
-        "Amazon Bedrock",
-        "Amazon Inspector",
-        "AWS Security Hub"
-      ],
-      "serviceIds": [
-        "amazon-bedrock-1",
-        "amazon-inspector",
-        "aws-security-hub"
-      ],
-      "topics": [
-        "Cloud Operations",
-        "Generative AI",
-        "Security, Identity, and Compliance"
-      ],
-      "level": "400",
-      "durationHours": 4,
-      "languages": [
-        "en",
-        "ko",
-        "ja",
-        "zh",
-        "de",
-        "fr",
-        "it",
-        "es"
-      ],
-      "updatedAt": "2026-11-02T15:01:13Z",
-      "createdAt": "2025-09-25T16:01:54Z",
-      "sandboxAvailable": false
-    },
-    {
       "id": "db8dfbd8-fa29-4413-8fad-0e9586978be4",
       "title": "Agentic Transformation Workshop",
       "description": "Go from \"where should we use agents?\" to a deployed agentic use case using AWS Transform end-to-end. Discover business processes with EventStorming, identify where agents add value with Cognitive Complexity Analysis, run Agentic Readiness and Modernization analyses, build a prioritized roadmap, and execute an automated transformation — all with first-party AWS tooling including the atx CLI and Kiro CLI.",
@@ -3831,7 +3795,7 @@
         "ja",
         "ko"
       ],
-      "updatedAt": "2026-11-18T01:29:01Z",
+      "updatedAt": "2026-11-18T11:03:29Z",
       "createdAt": "2024-05-28T20:34:10Z",
       "sandboxAvailable": false
     },
@@ -4231,32 +4195,6 @@
       "updatedAt": "2026-08-24T09:37:00Z",
       "createdAt": "2021-05-29T00:57:16Z",
       "sandboxAvailable": false
-    },
-    {
-      "id": "18d0858d-b17f-4275-9150-8fd940f0b2d5",
-      "title": "Amazon Quick for Energy & Utilities",
-      "description": "Step into the role of a Energy Operations Director and learn Amazon Quick hands-on. Through progressive modules, you'll use AI-powered chat, Spaces, autonomous research, workflow automation, custom agents, and analytics to solve real renewable energy operations challenges, from wind turbine maintenance to solar performance and regulatory compliance. No ML expertise required. Available as an AWS event or self-paced.",
-      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/18d0858d-b17f-4275-9150-8fd940f0b2d5",
-      "services": [
-        "Amazon Quick Suite"
-      ],
-      "serviceIds": [
-        "catalog-amazon-quick-suite"
-      ],
-      "topics": [
-        "Business Applications",
-        "Energy",
-        "Generative AI",
-        "Machine Learning (ML/AI)"
-      ],
-      "level": "200",
-      "durationHours": 3,
-      "languages": [
-        "en"
-      ],
-      "updatedAt": "2026-09-24T15:58:59Z",
-      "createdAt": "2026-02-03T21:32:03Z",
-      "sandboxAvailable": true
     },
     {
       "id": "ca04310e-b365-49f4-830b-a02bb06658e9",
@@ -5084,7 +5022,7 @@
         "ja",
         "pt"
       ],
-      "updatedAt": "2026-09-22T14:54:59Z",
+      "updatedAt": "2026-11-18T19:34:28Z",
       "createdAt": "2021-08-21T00:06:51Z",
       "sandboxAvailable": false
     },
@@ -5572,6 +5510,32 @@
       "sandboxAvailable": false
     },
     {
+      "id": "18d0858d-b17f-4275-9150-8fd940f0b2d5",
+      "title": "AWS Quick for Energy & Utilities",
+      "description": "Step into the role of a Energy Operations Director and learn AWS Quick hands-on. Through progressive modules, you'll use AI-powered chat, Spaces, autonomous research, workflow automation, custom agents, and analytics to solve real renewable energy operations challenges, from wind turbine maintenance to solar performance and regulatory compliance. No ML expertise required. Available as an AWS event or self-paced.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/18d0858d-b17f-4275-9150-8fd940f0b2d5",
+      "services": [
+        "Amazon Quick Suite"
+      ],
+      "serviceIds": [
+        "catalog-amazon-quick-suite"
+      ],
+      "topics": [
+        "Business Applications",
+        "Energy",
+        "Generative AI",
+        "Machine Learning (ML/AI)"
+      ],
+      "level": "200",
+      "durationHours": 3,
+      "languages": [
+        "en"
+      ],
+      "updatedAt": "2026-11-18T17:15:44Z",
+      "createdAt": "2026-02-03T21:32:03Z",
+      "sandboxAvailable": true
+    },
+    {
       "id": "9a27e484-7336-4ed0-8f90-f2747e4ac65c",
       "title": "AWS Serverless Developer Experience",
       "description": "This workshop is a hands-on training program to develop serverless skills using AWS SAM and SAM CLI. It focuses on practical, code-centric learning with real-world scenarios, covering distributed event-driven architectures, messaging patterns, orchestration, and observability. Participants will use open-source tools, Powertools for AWS, and CI/CD. Available in Python, TypeScript, Java, or .NET.",
@@ -5764,7 +5728,7 @@
     {
       "id": "b27726ff-5d62-49e8-bd26-b4e7f539230c",
       "title": "Build an agentic AI system on Amazon EKS with CPU-only inference",
-      "description": "Build a multi-agent AI system on Amazon EKS Auto Mode that serves every model on CPU: a fine-tuned intent router and embedding model (ONNX, trained on CPU), a cross-encoder re-ranker, and a quantized generative analyst on llama.cpp grounded by RAG from OpenSearch. Amazon Bedrock generates synthetic training data, judges answers with a faithfulness gate, and handles edge cases small models cannot. A control test puts a frontier LLM in the same seat so you know if the small model is good enough.",
+      "description": "Build an agentic AI system on Amazon EKS Auto Mode that serves every model on CPU: a fine-tuned intent router and embedding model (ONNX, trained on CPU), a cross-encoder re-ranker, and a quantized generative analyst on llama.cpp grounded by RAG from OpenSearch. Amazon Bedrock generates synthetic training data, judges answers with a faithfulness gate, and handles edge cases small models cannot. A control test puts a frontier LLM in the same seat so you know if the small model is good enough.",
       "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/b27726ff-5d62-49e8-bd26-b4e7f539230c",
       "services": [
         "Amazon Bedrock",
@@ -5787,7 +5751,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-09T22:13:06Z",
+      "updatedAt": "2026-11-19T00:28:58Z",
       "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
@@ -6056,7 +6020,7 @@
         "ko",
         "ja"
       ],
-      "updatedAt": "2026-11-18T05:27:02Z",
+      "updatedAt": "2026-11-19T00:31:16Z",
       "createdAt": "2021-08-04T05:06:33Z",
       "sandboxAvailable": false
     },
@@ -7570,30 +7534,6 @@
       "sandboxAvailable": false
     },
     {
-      "id": "a2cc1410-c160-47ad-b0fd-28410f5cabb4",
-      "title": "Kiro Crew: The Autonomous Developer Workflow",
-      "description": "Kiro Crew is an open-source AI agent workspace that runs on your own hardware and keeps working between conversations. In this hands-on workshop you'll learn its workflow engine, define and teach your own agents, and compose a team of specialized agents. You'll give them persistent knowledge and memory, then schedule jobs that run overnight and brief you before your day starts. You leave with a working Kiro Crew setup you'll actually use for daily development.",
-      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/a2cc1410-c160-47ad-b0fd-28410f5cabb4",
-      "services": [
-        "Kiro"
-      ],
-      "serviceIds": [
-        "aws-kiro"
-      ],
-      "topics": [
-        "Builder Experience",
-        "Open Source Software (OSS)"
-      ],
-      "level": "300",
-      "durationHours": 3,
-      "languages": [
-        "en"
-      ],
-      "updatedAt": "2026-11-14T05:36:38Z",
-      "createdAt": "2026-08-25T19:50:22Z",
-      "sandboxAvailable": false
-    },
-    {
       "id": "de3c344e-5cee-48a9-84e9-0292b7708734",
       "title": "Kiro Express",
       "description": "Discover Kiro, your IDE build from the ground-up to seamlessly integrate AI agents into the development workflow. Explore how to use Kiro as your intelligent partner - helping to understand complex codebases, crystalize detailed requirements, and deliver quality solutions at unprecedented speed. You will iterate with Kiro to finalize your detailed design, before using Kiro to orchestrate AI agents and implement a fully working solution",
@@ -7673,6 +7613,32 @@
       ],
       "updatedAt": "2026-08-17T23:07:48Z",
       "createdAt": "2021-08-20T14:26:43Z",
+      "sandboxAvailable": false
+    },
+    {
+      "id": "20c036a0-46c9-4e64-b74f-cec28b4de423",
+      "title": "MAM406 - Migrate & Modernize Windows to Linux and SQL to PostgreSQL with agentic AI",
+      "description": "Facing rising Windows and SQL Server licensing costs? In this hands-on workshop, rehost a Windows IIS and SQL Server app to Amazon EC2 with AWS Transform MGN, then modernize it with agentic AI. Use AWS Transform to convert the schema to Amazon Aurora PostgreSQL and Kiro to convert the PHP code and build the infrastructure, then let AWS Transform containerize the app and deploy it to Amazon EKS. Leave with a repeatable pattern for migrating and modernizing your own Windows workloads.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/20c036a0-46c9-4e64-b74f-cec28b4de423",
+      "services": [
+        "Amazon Elastic Compute Cloud (Amazon EC2)",
+        "AWS Application Migration Service"
+      ],
+      "serviceIds": [
+        "amazon-ec2",
+        "cloudendure-migration"
+      ],
+      "topics": [
+        "Compute",
+        "Migration & Transfer"
+      ],
+      "level": "400",
+      "durationHours": 4,
+      "languages": [
+        "en"
+      ],
+      "updatedAt": "2026-11-18T23:21:22Z",
+      "createdAt": "2024-09-12T13:35:53Z",
       "sandboxAvailable": false
     },
     {
@@ -8071,7 +8037,7 @@
         "ko",
         "pt"
       ],
-      "updatedAt": "2026-10-09T12:13:47Z",
+      "updatedAt": "2026-11-18T17:52:43Z",
       "createdAt": "2024-04-19T19:49:12Z",
       "sandboxAvailable": false
     },
@@ -8173,7 +8139,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-10-26T16:44:15Z",
+      "updatedAt": "2026-11-18T10:44:11Z",
       "createdAt": "2026-09-28T07:49:51Z",
       "sandboxAvailable": false
     },
