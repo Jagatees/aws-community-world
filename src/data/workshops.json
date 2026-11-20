@@ -1,8 +1,8 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-19T08:23:25.402Z",
-  "productCount": 235,
+  "checkedAt": "2026-11-20T08:03:46.766Z",
+  "productCount": 233,
   "services": [
     {
       "id": "amazon-api-gateway",
@@ -780,18 +780,6 @@
         "Front End Web & Mobile"
       ],
       "url": "https://aws.amazon.com/location/",
-      "aliases": [],
-      "kind": "product"
-    },
-    {
-      "id": "amazon-lookout-for-equipment",
-      "name": "Amazon Lookout for Equipment",
-      "description": "Detect abnormal equipment behavior by analyzing sensor data",
-      "category": "AI & Machine Learning",
-      "categories": [
-        "AI & Machine Learning"
-      ],
-      "url": "https://aws.amazon.com/lookout-for-equipment/",
       "aliases": [],
       "kind": "product"
     },
@@ -2027,18 +2015,6 @@
       "kind": "product"
     },
     {
-      "id": "aws-deeplens",
-      "name": "AWS DeepLens",
-      "description": "Deep learning enabled video camera",
-      "category": "AI & Machine Learning",
-      "categories": [
-        "AI & Machine Learning"
-      ],
-      "url": "https://aws.amazon.com/deeplens/",
-      "aliases": [],
-      "kind": "product"
-    },
-    {
       "id": "aws-deepracer",
       "name": "AWS DeepRacer",
       "description": "Autonomous 1/18th scale race car, driven by ML",
@@ -2064,7 +2040,7 @@
       "kind": "product"
     },
     {
-      "id": "aws-devops-agent-(preview)",
+      "id": "aws-devops-agent-preview",
       "name": "AWS DevOps Agent",
       "description": "Drive operational excellence with a frontier agent that resolves and proactively prevents incidents",
       "category": "AI & Machine Learning",
@@ -3648,7 +3624,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-14T14:00:14Z",
+      "updatedAt": "2026-11-19T16:04:06Z",
       "createdAt": "2026-04-23T17:20:50Z",
       "sandboxAvailable": false
     },
@@ -4723,10 +4699,9 @@
       "level": "300",
       "durationHours": 1,
       "languages": [
-        "en",
-        "ja"
+        "en"
       ],
-      "updatedAt": "2026-08-17T16:40:20Z",
+      "updatedAt": "2026-11-19T19:18:38Z",
       "createdAt": "2026-03-12T06:13:42Z",
       "sandboxAvailable": false
     },
@@ -5022,7 +4997,7 @@
         "ja",
         "pt"
       ],
-      "updatedAt": "2026-11-18T19:34:28Z",
+      "updatedAt": "2026-11-19T16:01:23Z",
       "createdAt": "2021-08-21T00:06:51Z",
       "sandboxAvailable": false
     },
@@ -5335,7 +5310,7 @@
         "en",
         "ko"
       ],
-      "updatedAt": "2026-10-21T17:42:41Z",
+      "updatedAt": "2026-11-19T15:53:04Z",
       "createdAt": "2023-03-03T19:32:57Z",
       "sandboxAvailable": false
     },
@@ -5558,7 +5533,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-03T10:20:52Z",
+      "updatedAt": "2026-11-20T02:24:32Z",
       "createdAt": "2021-08-17T09:49:12Z",
       "sandboxAvailable": false
     },
@@ -5751,7 +5726,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-19T00:28:58Z",
+      "updatedAt": "2026-11-19T21:54:39Z",
       "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
@@ -6473,7 +6448,7 @@
         "AWS DevOps Agent"
       ],
       "serviceIds": [
-        "aws-devops-agent-(preview)"
+        "aws-devops-agent-preview"
       ],
       "topics": [
         "Cloud Operations"
@@ -6487,7 +6462,7 @@
         "zh",
         "es"
       ],
-      "updatedAt": "2026-11-17T21:04:47Z",
+      "updatedAt": "2026-11-19T14:03:02Z",
       "createdAt": "2025-12-16T20:02:46Z",
       "sandboxAvailable": false
     },
@@ -7555,7 +7530,7 @@
         "ja",
         "fr"
       ],
-      "updatedAt": "2026-11-11T14:30:14Z",
+      "updatedAt": "2026-11-19T10:02:19Z",
       "createdAt": "2025-09-19T09:40:20Z",
       "sandboxAvailable": false
     },
@@ -7637,7 +7612,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-18T23:21:22Z",
+      "updatedAt": "2026-11-19T19:44:38Z",
       "createdAt": "2024-09-12T13:35:53Z",
       "sandboxAvailable": false
     },
