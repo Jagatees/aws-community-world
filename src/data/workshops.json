@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-20T08:03:46.766Z",
+  "checkedAt": "2026-11-21T07:58:39.224Z",
   "productCount": 233,
   "services": [
     {
@@ -3506,7 +3506,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-06T10:34:26Z",
+      "updatedAt": "2026-11-20T17:30:50Z",
       "createdAt": "2026-05-11T11:37:02Z",
       "sandboxAvailable": false
     },
@@ -3627,31 +3627,6 @@
       "updatedAt": "2026-11-19T16:04:06Z",
       "createdAt": "2026-04-23T17:20:50Z",
       "sandboxAvailable": false
-    },
-    {
-      "id": "8e739a82-fe61-4dde-90a7-c055e778dc2e",
-      "title": "AI-DLC Workshop",
-      "description": "Learn AI-Driven Development Life Cycle (AI-DLC), a human-centric methodology where AI drives the workflow and you make the decisions. Using Kiro CLI, go hands-on from inception to operations: guide AI planning sessions, apply Domain-Driven Design, and build a complete application end-to-end. Trade weeks-long cycles for hours. Built for developers, product owners, and technical leaders ready to put human-AI collaboration to work.",
-      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/8e739a82-fe61-4dde-90a7-c055e778dc2e",
-      "services": [
-        "Kiro"
-      ],
-      "serviceIds": [
-        "aws-kiro"
-      ],
-      "topics": [
-        "Builder Experience",
-        "Generative AI"
-      ],
-      "level": "300",
-      "durationHours": 4,
-      "languages": [
-        "en",
-        "es"
-      ],
-      "updatedAt": "2026-09-14T15:31:55Z",
-      "createdAt": "2025-10-30T22:59:59Z",
-      "sandboxAvailable": true
     },
     {
       "id": "9981f1a1-abdc-49b5-8387-cb01d238bb78",
@@ -4394,7 +4369,7 @@
         "en",
         "ko"
       ],
-      "updatedAt": "2026-11-15T21:55:29Z",
+      "updatedAt": "2026-11-20T12:28:39Z",
       "createdAt": "2022-10-28T20:15:49Z",
       "sandboxAvailable": false
     },
@@ -5310,7 +5285,7 @@
         "en",
         "ko"
       ],
-      "updatedAt": "2026-11-19T15:53:04Z",
+      "updatedAt": "2026-11-20T18:45:11Z",
       "createdAt": "2023-03-03T19:32:57Z",
       "sandboxAvailable": false
     },
@@ -5533,7 +5508,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-20T02:24:32Z",
+      "updatedAt": "2026-11-20T23:30:35Z",
       "createdAt": "2021-08-17T09:49:12Z",
       "sandboxAvailable": false
     },
@@ -5726,7 +5701,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-19T21:54:39Z",
+      "updatedAt": "2026-11-20T23:19:45Z",
       "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
@@ -6702,7 +6677,7 @@
         "pt",
         "es"
       ],
-      "updatedAt": "2026-11-14T08:48:32Z",
+      "updatedAt": "2026-11-21T05:45:00Z",
       "createdAt": "2026-05-08T22:52:59Z",
       "sandboxAvailable": false
     },
@@ -7509,6 +7484,30 @@
       "sandboxAvailable": false
     },
     {
+      "id": "a2cc1410-c160-47ad-b0fd-28410f5cabb4",
+      "title": "Kiro Crew: The Autonomous Developer Workflow",
+      "description": "Kiro Crew is an open-source AI agent workspace that runs on your own hardware and keeps working between conversations. In this hands-on workshop you'll learn its workflow engine, define and teach your own agents, and compose a team of specialized agents. You'll give them persistent knowledge and memory, then schedule jobs that run overnight and brief you before your day starts. You leave with a working Kiro Crew setup you'll actually use for daily development.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/a2cc1410-c160-47ad-b0fd-28410f5cabb4",
+      "services": [
+        "Kiro"
+      ],
+      "serviceIds": [
+        "aws-kiro"
+      ],
+      "topics": [
+        "Builder Experience",
+        "Open Source Software (OSS)"
+      ],
+      "level": "300",
+      "durationHours": 3,
+      "languages": [
+        "en"
+      ],
+      "updatedAt": "2026-11-20T10:44:12Z",
+      "createdAt": "2026-08-25T19:50:22Z",
+      "sandboxAvailable": false
+    },
+    {
       "id": "de3c344e-5cee-48a9-84e9-0292b7708734",
       "title": "Kiro Express",
       "description": "Discover Kiro, your IDE build from the ground-up to seamlessly integrate AI agents into the development workflow. Explore how to use Kiro as your intelligent partner - helping to understand complex codebases, crystalize detailed requirements, and deliver quality solutions at unprecedented speed. You will iterate with Kiro to finalize your detailed design, before using Kiro to orchestrate AI agents and implement a fully working solution",
@@ -7838,6 +7837,33 @@
       ],
       "updatedAt": "2026-10-23T03:11:22Z",
       "createdAt": "2026-04-17T12:46:28Z",
+      "sandboxAvailable": false
+    },
+    {
+      "id": "601421a3-c420-4f09-8a90-09f03cd9da3e",
+      "title": "Navigating LLM Inference on AWS: Bedrock, SageMaker, HyperPod, and EKS",
+      "description": "AWS gives you several ways to serve and optimize large language models (LLM), from a fully managed API to a Kubernetes cluster you run yourself. In this workshop you learn about these different options: you run models on four AWS services and optimize them using different techniques.",
+      "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/601421a3-c420-4f09-8a90-09f03cd9da3e",
+      "services": [
+        "Amazon Bedrock",
+        "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "Amazon SageMaker"
+      ],
+      "serviceIds": [
+        "amazon-bedrock-1",
+        "amazon-elastic-kubernetes-service-eks",
+        "amazon-sagemaker-1"
+      ],
+      "topics": [
+        "Generative AI"
+      ],
+      "level": "300",
+      "durationHours": 7,
+      "languages": [
+        "en"
+      ],
+      "updatedAt": "2026-11-20T16:26:35Z",
+      "createdAt": "2026-09-07T10:15:55Z",
       "sandboxAvailable": false
     },
     {
@@ -8225,7 +8251,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-13T16:35:49Z",
+      "updatedAt": "2026-11-20T11:37:05Z",
       "createdAt": "2025-05-01T21:40:55Z",
       "sandboxAvailable": false
     },
