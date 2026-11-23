@@ -1,224 +1,215 @@
 {
-  "updatedAt": "2026-11-22T07:45:18.722Z",
+  "updatedAt": "2026-11-23T08:34:34.005Z",
   "latest": [
     {
-      "id": "/content/3MS7fek4DDWgGEp2AI11cAtCyZy",
-      "title": "Say Goodbye to Surprise Cloud Bills: A Deep Dive into AWS's New Official Open-Source Local Emulator",
-      "description": "Discover how AWS's official open-source local emulator lets you build, test, and run cloud services entirely offline with zero cost or credit cards required. Includes a hands-on walkthrough for S3, DynamoDB, and the AWS CLI.",
-      "url": "https://builder.aws.com/content/3MS7fek4DDWgGEp2AI11cAtCyZy",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MS8KqTRgtrETzsnOR0JdHdMrHi/aws_.webp",
-      "authorName": "Hermon Hagos",
-      "authorAlias": "heribest",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LwsflKK6eDTS3nTy50zvMcKaNl.webp",
-      "location": "ET",
-      "lat": 10.2116702,
-      "lng": 38.6521203,
+      "id": "/content/3MV59l10NMyOI9jwnXnHubLfi6t",
+      "title": "Scaling VPC Connectivity with Transit Gateway",
+      "description": "Learn how AWS Transit Gateway simplifies VPC connectivity, routing, and network scaling",
+      "url": "https://builder.aws.com/content/3MV59l10NMyOI9jwnXnHubLfi6t",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV5CNaMuzgufuXSmsNXP9iTAg2/PixP.webp",
+      "authorName": "Tran Dong",
+      "authorAlias": "dtran",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3B6Wcligt2FUBBpm6YcfMcxxz3P.webp",
+      "location": "VN",
+      "lat": 15.9266657,
+      "lng": 107.9650855,
       "tags": [
-        "aws-api",
-        "open-source",
-        "developer-tools",
-        "compute",
-        "student-builders"
+        "aws-transit-gateway"
       ],
-      "publishedAt": "2026-11-22T07:29:34.677Z",
-      "likesCount": 18,
-      "commentsCount": 14
+      "publishedAt": "2026-11-23T08:34:20.331Z",
+      "likesCount": 0,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3MS7PUv1sCE3HDlJpCOq6vcKSFg",
-      "title": "Building an Innovative Student Solution: Turning Ideas into Real-World Impact.",
-      "description": "Discover how a student-led idea can transform into a practical digital solution using technology, creativity, and innovation to solve real-world problems.",
-      "url": "https://builder.aws.com/content/3MS7PUv1sCE3HDlJpCOq6vcKSFg",
-      "imageUrl": "",
-      "authorName": "Aastha Verma",
-      "authorAlias": "aastha336",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3MNnDtPStYabucdt4T9uXpIAIjx.webp",
-      "location": "Madhya Pradesh, IN",
-      "lat": 23.8143419,
-      "lng": 77.5340719,
-      "tags": [
-        "aws-builders",
-        "aws-community-builders"
-      ],
-      "publishedAt": "2026-11-22T07:27:10.999Z",
-      "likesCount": 12,
-      "commentsCount": 9
-    },
-    {
-      "id": "/content/3MS6gQXMzuPTVC7XUkmqxELEtAf",
-      "title": "Cut Your AWS Bill Without Sacrificing Performance: 5 FinOps Habits Every Builder Needs",
-      "description": "A hands-on FinOps checklist for AWS developers and architects—covering S3 storage tiering, idle NAT Gateways, right-sizing compute, CloudWatch log retention, and automated budget alerts.",
-      "url": "https://builder.aws.com/content/3MS6gQXMzuPTVC7XUkmqxELEtAf",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MS785B2yVYDsVX5uiyZ4jc8FRA/1000.webp",
-      "authorName": "K k v v s Satyanarayana",
-      "authorAlias": "veeravasu",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3K3NP8Xqn3Bma8qDVRP8lhshIe0.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "amazon-s3",
-        "finops",
-        "aws-cloud9",
-        "student-builders",
-        "students"
-      ],
-      "publishedAt": "2026-11-22T07:19:30.689Z",
-      "likesCount": 9,
-      "commentsCount": 7
-    },
-    {
-      "id": "/content/3MS5MVzk3RwUJWvEqxonhGVjyJw",
-      "title": "RAG – How AI Learns to Give Smarter and More Accurate Answers",
-      "description": "Discover how Retrieval-Augmented Generation (RAG) is making Generative AI smarter! Learn how AI retrieves information from external sources to generate more relevant and informative answers.",
-      "url": "https://builder.aws.com/content/3MS5MVzk3RwUJWvEqxonhGVjyJw",
-      "imageUrl": "",
-      "authorName": "KOTHA  VIJENDRA",
-      "authorAlias": "vijendra78",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LYrPLNZWBvcYWkvFnwL8lDhUqh.webp",
-      "location": "Andhra Pradesh, IN",
-      "lat": 15.9240905,
-      "lng": 80.1863809,
-      "tags": [
-        "generative-ai",
-        "artificial-intelligence",
-        "machine-learning",
-        "deep-learning",
-        "rag"
-      ],
-      "publishedAt": "2026-11-22T07:10:57.158Z",
-      "likesCount": 17,
-      "commentsCount": 18
-    },
-    {
-      "id": "/content/3MS5RNyviVg058jir6rXoObjJb2",
-      "title": "Day 09: Docker Compose: Running Multi-Container Applications",
-      "description": "Declare a web service, a PostgreSQL database, a network and a named volume in one compose.yaml and start them with one command. Covers health-check-gated startup with depends_on and why it is not application readiness, what down and down -v remove, and where single-host Compose ends and an orchestrator begins.",
-      "url": "https://builder.aws.com/content/3MS5RNyviVg058jir6rXoObjJb2",
-      "imageUrl": "",
-      "authorName": "Ahmad Jawad",
-      "authorAlias": "ahmadjawad533",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LbZkr86UR3i3iS5swMOvJhUWbD.webp",
+      "id": "/content/3MV4T8Ef93ZmENdE5SllYOTuE6I",
+      "title": "Real-World AWS Architecture: Deploying a Secure E-Commerce Application",
+      "description": "Imagine a growing e-commerce company that wants to move its online shopping platform to AWS.\n\nInitially, the application runs on a single server. As customer traffic increases, the company starts experiencing slow response times, security concerns, and downtime.\n\nThe challenge is to build an architecture that can handle increasing traffic while keeping customer data secure.\n\nLet's see how AWS can solve this problem.",
+      "url": "https://builder.aws.com/content/3MV4T8Ef93ZmENdE5SllYOTuE6I",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV4t7lF2D3gRHRAn6VOrpqgrvS/Real.webp",
+      "authorName": "Regna",
+      "authorAlias": "regna",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3K2w8okG7vvyPog644lVyrFmdJF.webp",
       "location": "PK",
       "lat": 30.3308401,
       "lng": 71.247499,
       "tags": [
-        "docker",
-        "docker-compose",
-        "devops",
-        "containers"
+        "amazon-ec2",
+        "amazon-rds",
+        "amazon-vpc",
+        "devops"
       ],
-      "publishedAt": "2026-11-22T07:10:08.077Z",
-      "likesCount": 7,
-      "commentsCount": 2
+      "publishedAt": "2026-11-23T08:30:33.548Z",
+      "likesCount": 1,
+      "commentsCount": 0
     },
     {
-      "id": "/content/3MS5Bpek9gWApB9zdPpP06jxc7V",
-      "title": "Building a Secure AWS Network: Understanding VPC Architecture, Private Subnets, NAT, Routing and Network Isolation",
-      "description": "What actually happens when an application communicates with the internet, AWS services, and a database inside the cloud? This article explores how Amazon VPC networking, subnet segmentation, route tables, NAT gateways, security groups, and VPC endpoints work together to build a secure and resilient cloud architecture.",
-      "url": "https://builder.aws.com/content/3MS5Bpek9gWApB9zdPpP06jxc7V",
+      "id": "/content/3MS8Q4s3eiWq0QflheNCpZQ112m",
+      "title": "Your AI Agent Has AWS Access. What Happens If Someone Hacks It?",
+      "description": "What happens when an AI agent with AWS permissions encounters a malicious prompt or attempts an unauthorized action? Explore the security risks of AI agents, , excessive IAM permissions, unauthorized tool execution, and sensitive data exposure. Learn how Amazon Bedrock Guardrails,  Lambda, application-level authorization, human approval,  can help build more secure AI-powered cloud applications. Includes a practical architecture, illustrative Python example, security checklist, and AWS references.",
+      "url": "https://builder.aws.com/content/3MS8Q4s3eiWq0QflheNCpZQ112m",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV4kjxZz5FMQlngA4pBXKonLxe/Secu.webp",
+      "authorName": "Aryan kumar",
+      "authorAlias": "aaryankumar2004",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JSruxNObjTuPKbFSsG03N0uEMZ.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agentic-ai",
+        "amazon-bedrock",
+        "aws-lambda",
+        "generative-ai",
+        "cloud-security"
+      ],
+      "publishedAt": "2026-11-23T08:30:23.368Z",
+      "likesCount": 1,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3MUzZIbYAuvk2QyIfg7Ka88fiUz",
+      "title": "Route Easy Questions to a Cheaper Model: A Cost-Aware LLM Router on Amazon Bedrock",
+      "description": "Build a small-model router and prompt caching for a chatbot, then prove with your own numbers whether they save money without making the answers worse. Deploy, verify, and clean up included.",
+      "url": "https://builder.aws.com/content/3MUzZIbYAuvk2QyIfg7Ka88fiUz",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV0lyVyCE79YVmCX1ooo3H5R2V/arch.webp",
+      "authorName": "Abdul Hakim",
+      "authorAlias": "ahakim",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3A7ukV52gMO7Vu9Z14kxDmLEQYy.webp",
+      "location": "ID",
+      "lat": -2.4833826,
+      "lng": 117.8902853,
+      "tags": [
+        "amazon-bedrock",
+        "aws-lambda",
+        "cost-optimization",
+        "generative-ai",
+        "amazon-cloudwatch"
+      ],
+      "publishedAt": "2026-11-23T08:29:18.065Z",
+      "likesCount": 2,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3MV3u1bcWbZgfADnOitPHBXZK8Y",
+      "title": "Automating Image Upload and Processing Using AWS Cloud Services",
+      "description": "This project demonstrates how to automate image uploading and processing using AWS cloud services. Images uploaded to Amazon S3 can trigger AWS Lambda functions to perform automated processing tasks such as resizing, format conversion, and image organization. The project highlights event-driven architecture, serverless computing, and cloud automation while providing a scalable solution for managing digital images.",
+      "url": "https://builder.aws.com/content/3MV3u1bcWbZgfADnOitPHBXZK8Y",
       "imageUrl": "",
-      "authorName": "Bhavya Hariramani",
-      "authorAlias": "bhavya0503",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JmJdyD0IJihiud2trbhRLpmydo.webp",
+      "authorName": "SARANYA",
+      "authorAlias": "saranya004",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3K8hC1TMLjndYvrYmZgpgzxmPM7.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "agentic-interactions",
+        "agentic-ide",
+        "agentic-ai",
+        "advertising-marketing-industry",
+        "advanced-networking"
+      ],
+      "publishedAt": "2026-11-23T08:23:21.256Z",
+      "likesCount": 7,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3MQv0FiPAYLc2ubiFwlnQ2xmTqT",
+      "title": "The Agent Is Just Another Client: Safe Database Writes with Strands Agents on AWS",
+      "description": "Learn how a chat agent can add plants and log actions in DynamoDB through the same validated code as your REST endpoints, with user and garden IDs that the model can never supply or change.",
+      "url": "https://builder.aws.com/content/3MQv0FiPAYLc2ubiFwlnQ2xmTqT",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV1ftQfQxeWGpCDZFYjcfLx5YU/stran.webp",
+      "authorName": "Marika Bergman",
+      "authorAlias": "marikabergman",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3M1IRwwL80PC305Mhg5IknMiP4E.webp",
+      "location": "",
+      "lat": 0,
+      "lng": 0,
+      "tags": [],
+      "publishedAt": "2026-11-23T08:20:53.335Z",
+      "likesCount": 5,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3MV3AXvCyDJ6b8mLwuIBUcuzlew",
+      "title": "Understanding CI/CD Pipelines: A Practical Guide to Continuous Integration and Deployment on AWS",
+      "description": "Learn how modern engineering teams ship features faster and safer by automating code building, testing, and release workflows. Explore the core stages of an automated release pipeline and discover how AWS Developer Tools and GitHub Actions power reliable cloud deployments.",
+      "url": "https://builder.aws.com/content/3MV3AXvCyDJ6b8mLwuIBUcuzlew",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV3YZZRbJltPT7d98yMdWvm58d/devop.webp",
+      "authorName": "Devadharshini S",
+      "authorAlias": "devasuyamburajan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3LxvnDA32ZEjVIKk3AaAfdc4sbh.webp",
       "location": "Tamil Nadu, IN",
       "lat": 11.3323723,
       "lng": 78.6098639,
       "tags": [
-        "aws-academy",
-        "cloud-concepts",
-        "aws-networking"
+        "devops",
+        "aws-lambda"
       ],
-      "publishedAt": "2026-11-22T07:06:55.561Z",
-      "likesCount": 9,
-      "commentsCount": 8
+      "publishedAt": "2026-11-23T08:19:41.968Z",
+      "likesCount": 5,
+      "commentsCount": 4
     },
     {
-      "id": "/content/3MS4WQffqhBf8Ul7Cb714n23Wpo",
-      "title": "A duplicate-event checklist for a first AWS agent project",
-      "description": "A reading-based design exercise connecting emulator tests, idempotent tools, and least-privilege access. Includes concrete failure cases to consider before a small agent can change anything.",
-      "url": "https://builder.aws.com/content/3MS4WQffqhBf8Ul7Cb714n23Wpo",
+      "id": "/content/3MV1LFWDOrNclYEfHPUVdouvXOR",
+      "title": "How to Design a Scalable Backend for a Multi-Tenant SaaS Application on AWS",
+      "description": "Designing a scalable multi-tenant SaaS backend on AWS is really about managing boundaries—between tenants, data, permissions, services, and failure domains. This guide covers the key architectural decisions: defining a tenant model, enforcing tenant-aware authorization, choosing compute, isolating data and caches, handling noisy neighbors, adding async processing, building tenant-aware observability, and planning for failure—without over-engineering version one.",
+      "url": "https://builder.aws.com/content/3MV1LFWDOrNclYEfHPUVdouvXOR",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV2zRKss8GaouitADIvXvufINM/How-.webp",
+      "authorName": "Thomas Shellby",
+      "authorAlias": "thomasshellby",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3MUxiljBM39gm4ief6jnQVUi3Rv.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "backend"
+      ],
+      "publishedAt": "2026-11-23T08:16:43.779Z",
+      "likesCount": 8,
+      "commentsCount": 6
+    },
+    {
+      "id": "/content/3MV2fjk8JYGyvDKUikDeoOLQtnD",
+      "title": "Day 3: AWS Elastic Compute Cloud (EC2) – Configuring, Scaling, and Monitoring Instances",
+      "description": "Day 3 of my AWS learning journey! Today, I'm exploring Amazon EC2, understanding instance types, configuring security groups and key pairs, and learning how to scale and monitor cloud servers using EC2 Auto Scaling and Amazon CloudWatch. This article also includes practical AWS CLI commands and hands-on learning activities.",
+      "url": "https://builder.aws.com/content/3MV2fjk8JYGyvDKUikDeoOLQtnD",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV2tMbqVru7PWqdqssxP5PFVjK/Gemi.webp",
+      "authorName": "Muhammad Ahmad",
+      "authorAlias": "ahmad360",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3MNTt86uMa8IPb6mgUWe5sP9doI.webp",
+      "location": "PK",
+      "lat": 30.3308401,
+      "lng": 71.247499,
+      "tags": [
+        "amazon-ec2",
+        "compute",
+        "devops"
+      ],
+      "publishedAt": "2026-11-23T08:15:24.119Z",
+      "likesCount": 5,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3JQ0WWGnwm0rvJAEjHYTMxkYuck",
+      "title": "Building a Cloud Culture from Scratch: Lessons from Our First Two Months as an AWS Student Builder Group",
+      "description": "How we launched the AWS Student Builder Group at NIT Nagaland, grew to 190+ student builders in 60 days, and what we learned from running hands-on cloud workshops on campus.",
+      "url": "https://builder.aws.com/content/3JQ0WWGnwm0rvJAEjHYTMxkYuck",
       "imageUrl": "",
-      "authorName": "Brendan Purcell",
-      "authorAlias": "purcelb",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3MS3SPhkwsBve10qM3dzm1MOKw0.webp",
-      "location": "US",
-      "lat": 39.7837304,
-      "lng": -100.445882,
+      "authorName": "Md Meraj Alam",
+      "authorAlias": "merajwe",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3InTRpbsSKonLksTi5y98uRyawh.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
       "tags": [
-        "agents"
-      ],
-      "publishedAt": "2026-11-22T06:58:56.589Z",
-      "likesCount": 16,
-      "commentsCount": 12
-    },
-    {
-      "id": "/content/3MS456bqGomPZOHOdZ1kFjHbd2h",
-      "title": "From Manual Deployments to GitOps: Managing Kubernetes on AWS with Amazon EKS",
-      "description": "As applications grow, deploying and managing them manually becomes increasingly difficult. Development teams need a reliable way to deploy applications, maintain consistent environments, recover from failures, and track infrastructure changes.",
-      "url": "https://builder.aws.com/content/3MS456bqGomPZOHOdZ1kFjHbd2h",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MS4WmdXoMJq79PG3Rjvj0inKdz/From.webp",
-      "authorName": "Hirushi Sammani",
-      "authorAlias": "hiru23",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3JUCGHAOXdowDIfV4TUQp5qp8Yn.webp",
-      "location": "LK",
-      "lat": 7.5554942,
-      "lng": 80.7137847,
-      "tags": [
-        "kubernetes",
-        "amazon-eks",
-        "gitops",
-        "ci-cd"
-      ],
-      "publishedAt": "2026-11-22T06:58:14.542Z",
-      "likesCount": 14,
-      "commentsCount": 10
-    },
-    {
-      "id": "/content/3MRZzZkiEjYH4ZYgHaMRwJtM6gM",
-      "title": "AWS Serverless Made Simple: From a Button Click to a Confirmation Email",
-      "description": "Learn how Lambda, SQS, and SES work together through a familiar student event example. Follow simple diagrams, try a short Lambda exercise, and discover why “request accepted” doesn’t always mean the work is finished.",
-      "url": "https://builder.aws.com/content/3MRZzZkiEjYH4ZYgHaMRwJtM6gM",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MS3XPeMVAaSTEcK1i3Kmr6ApK8/serv.webp",
-      "authorName": "Pawan Joshi",
-      "authorAlias": "pawanjoshidev",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3DeEE7BzuCPZ12jlU5gwyymCdBN.webp",
-      "location": "Uttrakhand, IN",
-      "lat": 30.0797977,
-      "lng": 78.3045766,
-      "tags": [
-        "serverless",
-        "aws-lambda",
-        "aws-community",
+        "students",
         "aws-student-builders-groups",
-        "student-builders"
+        "student-builders",
+        "aws-community-builders",
+        "amazon-ec2"
       ],
-      "publishedAt": "2026-11-22T06:54:44.163Z",
+      "publishedAt": "2026-11-23T08:12:33.597Z",
       "likesCount": 10,
-      "commentsCount": 14
-    },
-    {
-      "id": "/content/3MS3qIGuZfUDqXvzyGT17imkrLx",
-      "title": "Ia dólar",
-      "description": "Venda em questão de seguro",
-      "url": "https://builder.aws.com/content/3MS3qIGuZfUDqXvzyGT17imkrLx",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MS3xMN1OKuNNuIAeY5XMNfJqG9/IMG_0.webp",
-      "authorName": "Lucas Barbosa",
-      "authorAlias": "lucas141213",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3MS3N9sgwhPnGv6gr6B6k5Rkznx.webp",
-      "location": "BR",
-      "lat": -10.3333333,
-      "lng": -53.2,
-      "tags": [
-        "ai-chips",
-        "ai-agents",
-        "ai-ml",
-        "advertising-marketing-industry",
-        "agentic-ide"
-      ],
-      "publishedAt": "2026-11-22T06:54:40.463Z",
-      "likesCount": 0,
-      "commentsCount": 0
+      "commentsCount": 8
     }
   ],
   "trending": [
@@ -241,15 +232,15 @@
         "celebrate"
       ],
       "publishedAt": "2026-11-21T22:47:32.810Z",
-      "likesCount": 35,
-      "commentsCount": 0
+      "likesCount": 114,
+      "commentsCount": 12
     },
     {
       "id": "/content/3MRVhU5nDlNAnCcdaoEnuHiKodf",
       "title": "Migrate GPU Podcast rendering from EC2 to Serverless on Lambda Managed Instances (LMI) with 90 min async runs",
       "description": "Our video podcast renders on a GPU once a week, and an AI agent runs it. What it took to move that to Lambda Managed Instances, cut the render from 5 hours to about 1, and keep the agent away from the GPU bill.",
       "url": "https://builder.aws.com/content/3MRVhU5nDlNAnCcdaoEnuHiKodf",
-      "imageUrl": "",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MT9wiIJ10Q0MT3SqAlrkXQdb1w/Unkn.webp",
       "authorName": "Vivek V [AWS Hero]",
       "authorAlias": "vivekv",
       "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/34DwFQJnDUppt3Mj3KMm28HvMGK.webp",
@@ -264,8 +255,73 @@
         "podcast"
       ],
       "publishedAt": "2026-11-22T02:19:23.205Z",
-      "likesCount": 41,
-      "commentsCount": 3
+      "likesCount": 109,
+      "commentsCount": 14
+    },
+    {
+      "id": "/content/3MTwuWTcVFXH7BoMEQ3Wj22JbOY",
+      "title": "Your S3 Traffic Is Paying a Toll It Doesn't Owe: A Free Gateway Endpoint Cut NAT Data Processing by 93% in One Production VPC",
+      "description": "A free S3 gateway endpoint cut NAT data processing by about 93% in one production VPC. Measure your own NAT cost, add the endpoint with Terraform, avoid the aws:SourceIp bucket policy trap, prove the saving, and take home a 10-point checklist.",
+      "url": "https://builder.aws.com/content/3MTwuWTcVFXH7BoMEQ3Wj22JbOY",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MU2R69WqTYhOYC6JPNvCNGQpdT/cove.webp",
+      "authorName": "Abhishek Joshi [Alumni Advisor]",
+      "authorAlias": "abhishek52",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3An724WkpkAD8zK6fUcdh3TklOf.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "amazon-vpc",
+        "amazon-s3",
+        "nat-gateway",
+        "cost-optimization",
+        "cloud-operations"
+      ],
+      "publishedAt": "2026-11-22T23:41:44.524Z",
+      "likesCount": 19,
+      "commentsCount": 1
+    },
+    {
+      "id": "/content/3MUmQcCf2f38icTvclivrBFeyO6",
+      "title": "Your AI Agent Works in a Demo. Why Isn't It Production-Ready? Agent Harness Through the Lens of PMs and Architects",
+      "description": "Agent Harness Through the Lens of PMs and Architects",
+      "url": "https://builder.aws.com/content/3MUmQcCf2f38icTvclivrBFeyO6",
+      "imageUrl": "",
+      "authorName": "Hui-Ju Cheng (Ruru Cheng)",
+      "authorAlias": "rurucheng",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2yU4zDxcoDeSr1ZZfy89Chq95zU.webp",
+      "location": "TW",
+      "lat": 23.9739374,
+      "lng": 120.9820179,
+      "tags": [
+        "agentic-ai"
+      ],
+      "publishedAt": "2026-11-23T06:07:28.669Z",
+      "likesCount": 21,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3MTWY5oxT4iMFmf1s2stywI9Fv8",
+      "title": "Move Over, Cost Explorer: How to Build an AWS FinOps Agent",
+      "description": "Instead of clicking through endless dashboard filters, what if you could simply talk to your cloud bill?\nWant to see a live demo querying real AWS billing data? Watch the complete video walkthrough on YouTube:  https://www.youtube.com/watch?v=POwmna0IP3A\n",
+      "url": "https://builder.aws.com/content/3MTWY5oxT4iMFmf1s2stywI9Fv8",
+      "imageUrl": "",
+      "authorName": "Lingesh B",
+      "authorAlias": "lingeshb",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wFvGNTJaYetWEmZPcszeiPfYOU.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "agentic-ai",
+        "finops",
+        "cost-optimization",
+        "cost-savings",
+        "ai"
+      ],
+      "publishedAt": "2026-11-22T19:19:46.258Z",
+      "likesCount": 19,
+      "commentsCount": 1
     },
     {
       "id": "/content/3MMlW5YAQBRGgDGX7yjuakmW0Cj",
@@ -287,8 +343,76 @@
         "conference"
       ],
       "publishedAt": "2026-11-20T11:32:37.741Z",
-      "likesCount": 158,
-      "commentsCount": 24
+      "likesCount": 193,
+      "commentsCount": 38
+    },
+    {
+      "id": "/content/3MSnA8jHqAHh4nAL6xyvJCkZlKE",
+      "title": "Rebuilding a legacy PHP app from AI-written specs",
+      "description": "I ran Reverse Spec Flow on a 300-line PHP app, rebuilt it in TypeScript from the specs alone, and deployed it to AWS. Steps, gates, and costs.",
+      "url": "https://builder.aws.com/content/3MSnA8jHqAHh4nAL6xyvJCkZlKE",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MSnIc5zXPlESMtz9yCJMAIWSbc/thum.webp",
+      "authorName": "Yuuki Yamashita",
+      "authorAlias": "yama3133",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3HQiitOjH5VnlPOtySV3lYZlSeu.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "agentic-ai",
+        "amazon-s3",
+        "claude-code",
+        "typescript",
+        "php"
+      ],
+      "publishedAt": "2026-11-22T13:15:53.304Z",
+      "likesCount": 31,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3MUhCotYoRMD651a5G6yxe17UDl",
+      "title": "Building an Automated Receipt Processing Pipeline Using AWS Serverless Services",
+      "description": "Automate receipt data extraction, storage and email notifications using Amazon S3, AWS Lambda, Amazon Textract, Amazon DynamoDB and Amazon SES.",
+      "url": "https://builder.aws.com/content/3MUhCotYoRMD651a5G6yxe17UDl",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MUi63oY2z0nLJQfKMTtGCMoCSz/hh-jp.webp",
+      "authorName": "Snigdha Chaudhari",
+      "authorAlias": "snigdhac",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3MEAo16LZQWKJsicqpDAyU79lJn.webp",
+      "location": "Maharashtra, IN",
+      "lat": 19.5670323,
+      "lng": 76.4164557,
+      "tags": [
+        "aws-lambda",
+        "data-automation-api",
+        "amazon-textract",
+        "amazon-ses",
+        "amazon-s3"
+      ],
+      "publishedAt": "2026-11-23T05:28:27.383Z",
+      "likesCount": 10,
+      "commentsCount": 2
+    },
+    {
+      "id": "/content/3MUw8t7TpDRhfDogMGxobKKx1jt",
+      "title": "AWS Emulator Hands-on: Build Your Own S3 File Manager Locally",
+      "description": "Create a web application that uploads, lists and downloads files from an emulated Amazon S3 bucket using Python, Flask, Boto3 and uv. Then verify the same files using AWS CLI.",
+      "url": "https://builder.aws.com/content/3MUw8t7TpDRhfDogMGxobKKx1jt",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MV1MHI6h0Y0KAxsHrggysZ4LGw/aws-.webp",
+      "authorName": "Bhavesh Gohel",
+      "authorAlias": "bhaveshgohel",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3CsZIDHF4l0n4wzdos6lFNoOV4o.webp",
+      "location": "Gujarat, IN",
+      "lat": 22.3850051,
+      "lng": 71.745261,
+      "tags": [
+        "amazon-s3",
+        "aws-builders",
+        "aws-cli",
+        "getting-started"
+      ],
+      "publishedAt": "2026-11-23T08:04:02.181Z",
+      "likesCount": 9,
+      "commentsCount": 0
     },
     {
       "id": "/content/3MPfkwBCA7Hr8x08DEZ8eQxdBsb",
@@ -310,8 +434,31 @@
         "security-best-practices"
       ],
       "publishedAt": "2026-11-21T10:55:23.024Z",
-      "likesCount": 63,
-      "commentsCount": 10
+      "likesCount": 67,
+      "commentsCount": 12
+    },
+    {
+      "id": "/content/3MUZ4hHebg7OYmGKTR5FCcNQqSi",
+      "title": "Triage before you investigate: Strands + AWS DevOps Agent, where the LLM proposes and code decides",
+      "description": "A Strands agent on Lambda decides whether AWS DevOps Agent should investigate: the LLM proposes, code decides, Cedar gates. Terraform repo included.",
+      "url": "https://builder.aws.com/content/3MUZ4hHebg7OYmGKTR5FCcNQqSi",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MUajIzccyIzWATizeGGUHR30xG/cove.webp",
+      "authorName": "Sourabh Choubey",
+      "authorAlias": "sourabchoubey",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2uCJMvQ3bdip9ukLf9gURTvh6ax.webp",
+      "location": "Karnataka, IN",
+      "lat": 14.9562045,
+      "lng": 75.7896741,
+      "tags": [
+        "strands-agents",
+        "amazon-bedrock-agents",
+        "serverless",
+        "aws-cloudwatch",
+        "observability"
+      ],
+      "publishedAt": "2026-11-23T05:11:43.278Z",
+      "likesCount": 4,
+      "commentsCount": 0
     },
     {
       "id": "/content/3MRicpZBcs5KAaNblnZvL0tGOVD",
@@ -330,8 +477,31 @@
         "vpc"
       ],
       "publishedAt": "2026-11-22T03:59:28.058Z",
-      "likesCount": 19,
-      "commentsCount": 0
+      "likesCount": 26,
+      "commentsCount": 3
+    },
+    {
+      "id": "/content/3MSAukBNstMQYTgkRUWmKJKyjYQ",
+      "title": "D2 AWS Security Automation: S3, NLB and Malware Response",
+      "description": "Learn practical AWS security automation for IAM incidents, S3 public access, NLB traffic analysis, GuardDuty malware findings, and safe remediation.",
+      "url": "https://builder.aws.com/content/3MSAukBNstMQYTgkRUWmKJKyjYQ",
+      "imageUrl": "",
+      "authorName": "Yashvi Kothari",
+      "authorAlias": "yashvikothari",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/362mIfy2uQdL4eBeAhYPGwzv22d.webp",
+      "location": "IN",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "tags": [
+        "cloud-security",
+        "aws-certification",
+        "incident-response",
+        "amazon-guardduty",
+        "aws-config"
+      ],
+      "publishedAt": "2026-11-22T08:20:02.904Z",
+      "likesCount": 24,
+      "commentsCount": 2
     },
     {
       "id": "/content/3MR88hXrT0NqXSlkzWBMclXZW8q",
@@ -350,7 +520,74 @@
         "amazon-bedrock"
       ],
       "publishedAt": "2026-11-22T00:59:21.091Z",
-      "likesCount": 28,
+      "likesCount": 34,
+      "commentsCount": 5
+    },
+    {
+      "id": "/content/3MU09KegUhnIAMXlXNY0buDqntO",
+      "title": "$90, $18, $3.90… Where Does the Chatbot Bill Stop?",
+      "description": "Walking an AWS support bot down the open-weight model shelf at list price, and keeping score of what each dollar bought.",
+      "url": "https://builder.aws.com/content/3MU09KegUhnIAMXlXNY0buDqntO",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MU16yxkB2IhD7sMztiZz4L0EOt/Gemin.webp",
+      "authorName": "Hiroshi MAEKAWA",
+      "authorAlias": "dairappa",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3BFJirepSiVvJa4UGZD6ewgDDZM.webp",
+      "location": "JP",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "tags": [
+        "ai-agents",
+        "amazon-bedrock",
+        "architecture"
+      ],
+      "publishedAt": "2026-11-23T00:30:11.327Z",
+      "likesCount": 6,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3MTDikItsi7QRi4nSmpbzovxx2J",
+      "title": "1/5 Is Not Bigger Than 1/3: Building an Evidence-First Assistant for Class 5 Fractions",
+      "description": "Code scores the answers, a rules engine weighs the evidence, a tamper-evident log records it, and the teacher decides. Here is how I built ClassBridge AI to show a child's thinking without judging the child.",
+      "url": "https://builder.aws.com/content/3MTDikItsi7QRi4nSmpbzovxx2J",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MUaijb1je2g3kZGJxzNhCNs0Ku/Clas.webp",
+      "authorName": "Vijayaraghavan Vashudevan",
+      "authorAlias": "vijayaraghavan",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/36BHgdwW4kHH36bOtQJ4ppK5CuW.webp",
+      "location": "Tamil Nadu, IN",
+      "lat": 11.3323723,
+      "lng": 78.6098639,
+      "tags": [
+        "aws-lambda",
+        "amazon-api-gateway",
+        "amazon-cognito",
+        "amazon-bedrock",
+        "amazon-cloudwatch"
+      ],
+      "publishedAt": "2026-11-23T04:12:12.503Z",
+      "likesCount": 12,
+      "commentsCount": 0
+    },
+    {
+      "id": "/content/3MStL3LqQUZ2F2NuZZ45F2cy0h2",
+      "title": "One Chat, Three Clouds: An A2UI 1.0 Agent Mesh Over A2A on Google Cloud, AWS and Azure",
+      "description": "Three A2UI 1.0 currency agents, one per cloud, joined over A2A behind one AG-UI coordinator. Google ADK and Gemini, Strands and Amazon Nova, Microsoft Agent Framework and Azure OpenAI answer in the same chat, one at a time or all three at once.",
+      "url": "https://builder.aws.com/content/3MStL3LqQUZ2F2NuZZ45F2cy0h2",
+      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MStPv77XlO0x3YcR6BXfCPzcCy/buil.webp",
+      "authorName": "xbill9",
+      "authorAlias": "xbill9",
+      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/3ARwslOX2QZFMj6bJsgVb3XweH7.webp",
+      "location": "NY, US",
+      "lat": 43.1561681,
+      "lng": -75.8449946,
+      "tags": [
+        "generative-ai",
+        "agentic-ai",
+        "amazon-bedrock",
+        "amazon-nova",
+        "strands-agents"
+      ],
+      "publishedAt": "2026-11-22T13:57:45.282Z",
+      "likesCount": 15,
       "commentsCount": 0
     },
     {
@@ -373,8 +610,8 @@
         "amazon-bedrock"
       ],
       "publishedAt": "2026-11-22T04:30:30.465Z",
-      "likesCount": 17,
-      "commentsCount": 1
+      "likesCount": 21,
+      "commentsCount": 2
     },
     {
       "id": "/content/3MRZeZg48SzWihvANW6zOY9dXsk",
@@ -396,48 +633,8 @@
         "amazon-eventbridge"
       ],
       "publishedAt": "2026-11-22T04:05:31.419Z",
-      "likesCount": 17,
-      "commentsCount": 0
-    },
-    {
-      "id": "/content/3MLGMhcFd7188pmp271SPzbDgsr",
-      "title": "I Let Claude Code Create My AWS Account",
-      "description": "No credit card, no access keys, no IAM setup. With agentic account creation, one Claude Code prompt handles sign-up, setup, and deployment.",
-      "url": "https://builder.aws.com/content/3MLGMhcFd7188pmp271SPzbDgsr",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MLJCyWErULMGsyosoIZuWutk3m/I-Le.webp",
-      "authorName": "Rohini Gaonkar",
-      "authorAlias": "rohinigaonkar",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2Z5Kk4rOHmIm54J4SIu8tSwIyI1.webp",
-      "location": "",
-      "lat": 0,
-      "lng": 0,
-      "tags": [
-        "agent-toolkit",
-        "claude-code",
-        "ai",
-        "getting-started",
-        "quick-start"
-      ],
-      "publishedAt": "2026-11-19T21:48:31.682Z",
-      "likesCount": 160,
-      "commentsCount": 63
-    },
-    {
-      "id": "/content/3MQIBrdEqqLPj8JsjVcwfPDxVKG",
-      "title": "Route 53 Can Finally Health-Check Your Private Endpoints. I Tested the Failover",
-      "description": "Route 53 Private Endpoint Health Checks bring native DNS failover to workloads on private IPs. I tested an EC2 lab with a 10-second check interval and a three-failure threshold, and confirmed failover to a standby within 36.2 seconds",
-      "url": "https://builder.aws.com/content/3MQIBrdEqqLPj8JsjVcwfPDxVKG",
-      "imageUrl": "https://prod-assets.cosmic.aws.dev/a/3MQKwzeWC9mbqxIQCw5ubr6sma4/cove.webp",
-      "authorName": "Tinh Truong",
-      "authorAlias": "tinhtq",
-      "authorAvatarUrl": "https://avatars.builderprofile.aws.dev/2wCgc7Q53bgCGStSSOGIw8CgM6D.webp",
-      "location": "VN",
-      "lat": 15.9266657,
-      "lng": 107.9650855,
-      "tags": [],
-      "publishedAt": "2026-11-21T16:13:30.870Z",
-      "likesCount": 28,
-      "commentsCount": 2
+      "likesCount": 22,
+      "commentsCount": 1
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://builder.aws.com/build/workshops",
   "servicesSourceUrl": "https://aws.amazon.com/products/",
-  "checkedAt": "2026-11-22T07:45:31.944Z",
+  "checkedAt": "2026-11-23T08:34:48.227Z",
   "productCount": 233,
   "services": [
     {
@@ -5559,12 +5559,9 @@
       "level": "300",
       "durationHours": 1,
       "languages": [
-        "en",
-        "ko",
-        "ja",
-        "fr"
+        "en"
       ],
-      "updatedAt": "2026-09-21T18:24:09Z",
+      "updatedAt": "2026-11-22T23:29:45Z",
       "createdAt": "2025-08-08T21:07:38Z",
       "sandboxAvailable": true
     },
@@ -5701,7 +5698,7 @@
       "languages": [
         "en"
       ],
-      "updatedAt": "2026-11-21T15:46:12Z",
+      "updatedAt": "2026-11-22T20:51:34Z",
       "createdAt": "2026-05-19T14:29:06Z",
       "sandboxAvailable": false
     },
@@ -6820,7 +6817,7 @@
     {
       "id": "c770f35f-90a9-4e02-8985-4ef912bddb77",
       "title": "Getting started with AgentCore (Official Workshop)",
-      "description": "Getting started on AgentCore: Let's build an end-to-end use case using Amazon Bedrock AgentCore. The workshop currently uses AgentCore CLI V0.30.0. The Migration to Agentcore CLI V1 is in progress. Please do not upgrade your AgentCore CLI version.",
+      "description": "Getting started on AgentCore: Let's build an end-to-end use case using Amazon Bedrock AgentCore. The Getting started with Agentcore workshop will be available with AgentCore CLI v1 on Nov 23rd/24th.",
       "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/c770f35f-90a9-4e02-8985-4ef912bddb77",
       "services": [
         "Amazon Bedrock AgentCore"
@@ -6838,7 +6835,7 @@
         "ja",
         "zh"
       ],
-      "updatedAt": "2026-11-03T20:57:27Z",
+      "updatedAt": "2026-11-22T20:39:28Z",
       "createdAt": "2026-03-20T20:07:46Z",
       "sandboxAvailable": true
     },
