@@ -533,6 +533,24 @@ body {
   transform: translateY(-1px);
 }
 
+/* Keep header labels readable in Safari, including landscape phones using the
+   desktop layout. Clipped gradients on a parent can hide animated child text. */
+.app-header .section-mode-switch {
+  color: #7ee8ff;
+  -webkit-text-fill-color: currentColor;
+  background-image: none;
+  animation: none;
+}
+
+.aws-shell-bg-light .app-header .section-mode-switch {
+  color: #175a70;
+  -webkit-text-fill-color: currentColor;
+}
+
+.aws-shell-bg-light .app-header .section-mode-switch > svg {
+  stroke: #175a70;
+}
+
 .section-mode-switch:active {
   transform: translateY(0) scale(0.98);
 }
